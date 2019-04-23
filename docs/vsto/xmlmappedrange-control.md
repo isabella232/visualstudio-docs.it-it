@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ee0bc8b74c9a9006c9ac0a59d95da5708e62489
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105682"
 ---
 # <a name="xmlmappedrange-control"></a>Controllo XmlMappedRange
   Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo è un intervallo che viene creato solo quando un elemento dello schema non ripetuto viene eseguito il mapping a una cella in Microsoft Office Excel. Ad esempio, quando il `maxOccurs` attributo di un elemento dello schema è uguale a 1. Dopo che Visual Studio crea l'intervallo mappato XML, è possibile programmare contrastarla direttamente senza dover passare attraverso il modello a oggetti Excel. È possibile eliminare solo un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo all'interno di Excel quando viene rimosso il mapping dell'elemento.
@@ -41,21 +41,21 @@ ms.locfileid: "56597894"
 ## <a name="events"></a>Eventi
  Gli eventi disponibili per il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo sono:
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>
 
 ## <a name="see-also"></a>Vedere anche
 - [Automazione di Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md)

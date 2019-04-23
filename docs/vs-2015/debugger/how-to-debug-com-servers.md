@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088314"
 ---
 # <a name="how-to-debug-com-servers"></a>Procedura: Eseguire il debug di server COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Il debug delle applicazioni server COM pone alcuni problemi che non sono sempre 
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Per eseguire il debug di un'applicazione server senza informazioni sul contenitore  
   
-1.  Avviare il debug del server come applicazione normale.  
+1. Avviare il debug del server come applicazione normale.  
   
-2.  Impostare i punti di interruzione nel modo desiderato.  
+2. Impostare i punti di interruzione nel modo desiderato.  
   
-3.  Avviare l'applicazione contenitore.  
+3. Avviare l'applicazione contenitore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)   

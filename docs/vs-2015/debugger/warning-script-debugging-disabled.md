@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b44c260e00ae5ef8b0d23e7aede139563ff22d98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105591"
 ---
 # <a name="warning-script-debugging-disabled"></a>Avviso: Debug degli script disabilitato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Il debug degli script è attualmente disabilitato in Internet Explorer
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Per abilitare il debug di script in Internet Explorer  
   
-1.  Scegliere **Opzioni Internet** dal menu **Strumenti** di Internet Explorer.  
+1. Scegliere **Opzioni Internet** dal menu **Strumenti** di Internet Explorer.  
   
-2.  Nella finestra di dialogo **Opzioni Internet** fare clic sulla scheda **Avanzate** .  
+2. Nella finestra di dialogo **Opzioni Internet** fare clic sulla scheda **Avanzate** .  
   
-3.  Nella casella **Impostazioni** della scheda **Avanzate**, cercare la categoria **Esplorazione**.  
+3. Nella casella **Impostazioni** della scheda **Avanzate**, cercare la categoria **Esplorazione**.  
   
-4.  Deselezionare **Disabilita debugging degli script (Internet Explorer)**.  
+4. Deselezionare **Disabilita debugging degli script (Internet Explorer)**.  
   
-5.  Fare clic su **OK**.  
+5. Fare clic su **OK**.  
   
-6.  Chiudere e riavviare Internet Explorer.  
+6. Chiudere e riavviare Internet Explorer.  
   
      Le nuove impostazioni risulteranno ora attive.  
   

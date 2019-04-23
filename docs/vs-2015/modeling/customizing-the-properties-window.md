@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088795"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ ms.locfileid: "58967229"
 ### <a name="default-property-forwarding-cases"></a>Casi di inoltro di proprietà predefiniti  
  Quando l'utente seleziona una forma o connettore o da un elemento in Esplora risorse, le proprietà seguenti vengono visualizzate nella finestra Proprietà:  
   
--   Le proprietà di dominio definite nella classe di dominio dell'elemento del modello, inclusi quelli che sono definiti nelle classi di base. Un'eccezione riguarda le proprietà di dominio per cui è stato impostato **è visualizzabile** a `False`.  
+- Le proprietà di dominio definite nella classe di dominio dell'elemento del modello, inclusi quelli che sono definiti nelle classi di base. Un'eccezione riguarda le proprietà di dominio per cui è stato impostato **è visualizzabile** a `False`.  
   
--   I nomi degli elementi collegati tramite relazioni che hanno una molteplicità di 0..1. Fornisce un metodo pratico per visualizzare, facoltativamente, collegata elementi, anche se non è stato definito un mapping di connettori per la relazione.  
+- I nomi degli elementi collegati tramite relazioni che hanno una molteplicità di 0..1. Fornisce un metodo pratico per visualizzare, facoltativamente, collegata elementi, anche se non è stato definito un mapping di connettori per la relazione.  
   
--   Proprietà di dominio della relazione di incorporamento che ha come destinazione l'elemento. Poiché le relazioni di incorporamento in genere non vengono visualizzate in modo esplicito, ciò consente all'utente di visualizzare le relative proprietà.  
+- Proprietà di dominio della relazione di incorporamento che ha come destinazione l'elemento. Poiché le relazioni di incorporamento in genere non vengono visualizzate in modo esplicito, ciò consente all'utente di visualizzare le relative proprietà.  
   
--   Proprietà di dominio definite nella forma selezionata o il connettore.  
+- Proprietà di dominio definite nella forma selezionata o il connettore.  
   
 ### <a name="adding-property-forwarding"></a>Aggiunta di inoltro di proprietà  
  Per inoltrare una proprietà, si definisce un descrittore di tipi di dominio. Se si dispone di una relazione di dominio tra due classi di dominio, è possibile utilizzare un descrittore di tipi di dominio per impostare una proprietà di dominio nella prima classe per il valore della proprietà del dominio nella classe di dominio di secondo. Ad esempio, se si dispone di una relazione tra un **libro** della classe di dominio e un **autore** della classe di dominio, è possibile usare un descrittore di tipi di dominio per rendere il **nome** proprietà di un Del libro **autore** vengono visualizzate nella finestra Proprietà quando l'utente seleziona il libro.  
@@ -69,29 +69,29 @@ ms.locfileid: "58967229"
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Per inoltrare una proprietà da un altro elemento  
   
-1.  Creare un [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione che contiene almeno due classi, che in questo esempio vengono chiamate **libro** e **autore**. Deve essere presente una relazione di entrambi i tipi tra **libro** e **autore**.  
+1. Creare un [!INCLUDE[dsl](../includes/dsl-md.md)] soluzione che contiene almeno due classi, che in questo esempio vengono chiamate **libro** e **autore**. Deve essere presente una relazione di entrambi i tipi tra **libro** e **autore**.  
   
      La molteplicità del ruolo di origine (il ruolo del **libro** lato) deve essere 0..1 1 o 1, in modo che ogni **libro** presenta uno **autore**.  
   
-2.  In **DSL Explorer**, fare doppio clic il **libro** della classe di dominio e quindi fare clic su **aggiungere nuovo DomainTypeDescriptor**.  
+2. In **DSL Explorer**, fare doppio clic il **libro** della classe di dominio e quindi fare clic su **aggiungere nuovo DomainTypeDescriptor**.  
   
      Un nodo denominato **percorsi di descrittori di proprietà personalizzate** viene visualizzata sotto il **descrittore di tipo personalizzato** nodo.  
   
-3.  Fare doppio clic il **descrittore di tipo personalizzato** nodo e quindi fare clic su **aggiungere nuovo PropertyPath**.  
+3. Fare doppio clic il **descrittore di tipo personalizzato** nodo e quindi fare clic su **aggiungere nuovo PropertyPath**.  
   
      Un nuovo percorso della proprietà viene visualizzata sotto il **percorsi di descrittori di proprietà personalizzato** nodo.  
   
-4.  Selezionare il nuovo percorso della proprietà e il **proprietà** impostare nella finestra **percorso proprietà** al percorso dell'elemento del modello appropriato.  
+4. Selezionare il nuovo percorso della proprietà e il **proprietà** impostare nella finestra **percorso proprietà** al percorso dell'elemento del modello appropriato.  
   
      È possibile modificare il percorso in una visualizzazione albero, fare clic sulla freccia in giù a destra di questa proprietà. Per altre informazioni sui percorsi di dominio, vedere [sintassi del percorso di dominio](../modeling/domain-path-syntax.md). Quando è stato modificato, il percorso dovrebbe essere simile **BookReferencesAuthor.Author/! Autore**.  
   
-5.  Impostare **proprietà** per il **Name** proprietà del dominio **autore**.  
+5. Impostare **proprietà** per il **Name** proprietà del dominio **autore**.  
   
-6.  Impostare **NomeVisualizzato** al **autore nome**.  
+6. Impostare **NomeVisualizzato** al **autore nome**.  
   
-7.  Trasforma tutti i modelli, compilare ed eseguire il linguaggio DSL.  
+7. Trasforma tutti i modelli, compilare ed eseguire il linguaggio DSL.  
   
-8.  In un diagramma del modello, creare un libro, un autore e collegarle usando la relazione di riferimento. Selezionare l'elemento "book" e nella finestra proprietà si dovrebbe essere il nome dell'autore oltre alle proprietà del libro. Modificare il nome dell'autore collegato, o collegare il libro a un altro autore e osservare che il nome dell'autore del libro è stato modificato.  
+8. In un diagramma del modello, creare un libro, un autore e collegarle usando la relazione di riferimento. Selezionare l'elemento "book" e nella finestra proprietà si dovrebbe essere il nome dell'autore oltre alle proprietà del libro. Modificare il nome dell'autore collegato, o collegare il libro a un altro autore e osservare che il nome dell'autore del libro è stato modificato.  
   
 ## <a name="custom-property-editors"></a>Editor di proprietà personalizzati  
  Finestra delle proprietà fornisce un valore appropriato predefinito funzioni di modifica per il tipo di ogni proprietà di dominio. Ad esempio, per un tipo enumerato, l'utente visualizza un elenco di riepilogo a discesa e per una proprietà numerica, l'utente può immettere cifre. Questo vale solo per i tipi incorporati. Se si specifica un tipo esterno, l'utente sarà in grado di visualizzare i valori della proprietà, ma non modificarlo.  
@@ -116,14 +116,14 @@ ms.locfileid: "58967229"
   
 2. Aggiungere il tipo per il **tipi di dominio** elencare, a meno che non si è già stato fatto.  
   
-   1.  Aprire dsldefinition. DSL e nella **DSL Explorer**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo tipo esterno**.  
+   1. Aprire dsldefinition. DSL e nella **DSL Explorer**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo tipo esterno**.  
   
         Una nuova voce viene visualizzata sotto il **tipi di dominio** nodo.  
   
        > [!WARNING]
        >  La voce di menu per il nodo radice DSL, non il **tipi di dominio** nodo.  
   
-   2.  Nella finestra Proprietà, impostare il nome e lo spazio dei nomi del nuovo tipo.  
+   2. Nella finestra Proprietà, impostare il nome e lo spazio dei nomi del nuovo tipo.  
   
 3. Aggiungere una proprietà di dominio a una classe di dominio nel modo usuale.  
   
@@ -149,9 +149,9 @@ ms.locfileid: "58967229"
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Per definire una proprietà di dominio del nome file  
   
-1.  Aggiungere una proprietà di dominio a una classe di dominio nella definizione DSL.  
+1. Aggiungere una proprietà di dominio a una classe di dominio nella definizione DSL.  
   
-2.  Selezionare la nuova proprietà. Nel **attributo personalizzato** campo nella finestra Proprietà, immettere il seguente attributo. Per immettere questo attributo, fare clic sui puntini di sospensione **[...]**  e quindi immettere il nome dell'attributo e i parametri separatamente:  
+2. Selezionare la nuova proprietà. Nel **attributo personalizzato** campo nella finestra Proprietà, immettere il seguente attributo. Per immettere questo attributo, fare clic sui puntini di sospensione **[...]**  e quindi immettere il nome dell'attributo e i parametri separatamente:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ ms.locfileid: "58967229"
   
     ```  
   
-3.  Lasciare il tipo della proprietà del dominio usata l'impostazione predefinita del **stringa**.  
+3. Lasciare il tipo della proprietà del dominio usata l'impostazione predefinita del **stringa**.  
   
-4.  Per testare l'editor, verificare che gli utenti possono aprire l'editor di nome file per modificare le proprietà di dominio.  
+4. Per testare l'editor, verificare che gli utenti possono aprire l'editor di nome file per modificare le proprietà di dominio.  
   
-    1.  Premere CTRL+F5 o F5. Nella soluzione di debug, aprire un file di test. Creare un elemento della classe di dominio e selezionarlo.  
+    1. Premere CTRL+F5 o F5. Nella soluzione di debug, aprire un file di test. Creare un elemento della classe di dominio e selezionarlo.  
   
-    2.  Nella finestra Proprietà, selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]** .  
+    2. Nella finestra Proprietà, selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]** .  
   
-    3.  Fare clic sui puntini di sospensione. Viene visualizzata una finestra di dialogo file. Selezionare un file e chiudere la finestra di dialogo. Il percorso del file è ora il valore della proprietà del dominio.  
+    3. Fare clic sui puntini di sospensione. Viene visualizzata una finestra di dialogo file. Selezionare un file e chiudere la finestra di dialogo. Il percorso del file è ora il valore della proprietà del dominio.  
   
 ### <a name="defining-your-own-property-editor"></a>Che definisce il proprio editor di proprietà  
  È possibile definire il proprio editor. È consigliabile impostare tale per consentire all'utente di modificare un tipo che sono stati definiti o per modificare un tipo standard in modo speciale. Ad esempio, è possibile consentire all'utente di immettere una stringa che rappresenta una formula.  

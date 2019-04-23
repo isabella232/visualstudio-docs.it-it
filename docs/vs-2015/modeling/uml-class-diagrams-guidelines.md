@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608b5c37975c49e4e90cdf9edd923121350735e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088886"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,14 +36,14 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
 > [!NOTE]
 >  In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, che è possibile creare e usare per visualizzare il codice programma. Visualizzare [progettazione e visualizzazione classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="Using"></a> Usando i diagrammi classi UML  
+## <a name="Using"></a> Usando i diagrammi classi UML  
  È possibile usare un diagramma classi UML per vari scopi:  
   
--   Per fornire una descrizione indipendente dall'implementazione dei tipi usati in un sistema e passati tra i componenti.  
+- Per fornire una descrizione indipendente dall'implementazione dei tipi usati in un sistema e passati tra i componenti.  
   
      Ad esempio, il tipo Ordinazione pasto potrebbe essere implementato nel codice .NET a livello aziendale, in XML in corrispondenza delle interfacce tra componenti, in SQL nel database e in HTML nell'interfaccia utente. Nonostante tali implementazioni siano diverse nei dettagli, la relazione tra un tipo Ordinazione pasto e altri tipi, ad esempio Menu e Pagamento, è sempre la stessa. Il diagramma classi UML consente di illustrare tali relazioni separatamente dalle implementazioni.  
   
--   Per chiarire il glossario di termini usati per la comunicazione tra l'applicazione e gli utenti e nelle descrizioni delle esigenze degli utenti. Visualizzare [modellare i requisiti utente](../modeling/model-user-requirements.md).  
+- Per chiarire il glossario di termini usati per la comunicazione tra l'applicazione e gli utenti e nelle descrizioni delle esigenze degli utenti. Visualizzare [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
      Si considerino ad esempio le descrizioni di storie utente, di casi di utilizzo o di altri requisiti di un'applicazione ristorante. In tali descrizioni vengono usati termini come Menu, Ordine, Pasto, Prezzo, Pagamento e così via. È possibile creare un diagramma classi UML che definisca le relazioni tra questi termini riducendo in questo modo il rischio di incoerenze nelle descrizioni dei requisiti nonché nell'interfaccia utente e nei documenti della guida.  
   
@@ -78,7 +78,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi classi  
+## <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi classi  
  Per informazioni di riferimento sugli elementi in diagrammi classi UML, vedere [diagrammi classi UML: informazioni di riferimento](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
@@ -86,35 +86,35 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
 #### <a name="to-create-a-uml-class-diagram"></a>Per creare un diagramma classi UML  
   
-1.  Nel **Architecture** menu, scegliere **nuovo diagramma livello o UML**.  
+1. Nel **Architecture** menu, scegliere **nuovo diagramma livello o UML**.  
   
-2.  Sotto **modelli**, scegliere **diagramma classi UML**.  
+2. Sotto **modelli**, scegliere **diagramma classi UML**.  
   
-3.  Assegnare un nome al diagramma.  
+3. Assegnare un nome al diagramma.  
   
-4.  Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**, quindi scegliere **OK**.  
+4. Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**, quindi scegliere **OK**.  
   
      Un nuovo diagramma classi viene visualizzata con il **UMLClass diagramma** della casella degli strumenti. La casella degli strumenti contiene le relazioni e gli elementi necessari.  
   
 #### <a name="to-draw-a-uml-class-diagram"></a>Per creare un tipo di diagramma classi UML  
   
-1.  Per creare un tipo, scegliere il **classe**, **interfaccia** oppure **enumerazione** strumento nella casella degli strumenti e quindi fare clic su una parte vuota del diagramma. Se non è possibile visualizzare la casella degli strumenti, premere CTRL+ALT+X.  
+1. Per creare un tipo, scegliere il **classe**, **interfaccia** oppure **enumerazione** strumento nella casella degli strumenti e quindi fare clic su una parte vuota del diagramma. Se non è possibile visualizzare la casella degli strumenti, premere CTRL+ALT+X.  
   
-2.  Per aggiungere attributi oppure operazioni per i tipi o valori letterali a un'enumerazione, scegliere il **attributi**, **operazioni** oppure **valori letterali** intestazione nel tipo e premere INVIO.  
+2. Per aggiungere attributi oppure operazioni per i tipi o valori letterali a un'enumerazione, scegliere il **attributi**, **operazioni** oppure **valori letterali** intestazione nel tipo e premere INVIO.  
   
      È possibile scrivere una firma, ad esempio `f(x:Boolean):Integer`. Visualizzare [attributi e operazioni](#AttributesAndOperations).  
   
      Per aggiungere rapidamente diversi elementi, premere INVIO due volte alla fine di ogni elemento. È possibile usare i tasti di direzione per spostarsi verso l'alto e verso il basso nell'elenco.  
   
-3.  Per espandere o comprimere un tipo, scegliere l'icona con la freccia di espansione in alto a sinistra. È anche possibile espandere e comprimere le **attributi** e **operazioni** sezione di una classe o interfaccia.  
+3. Per espandere o comprimere un tipo, scegliere l'icona con la freccia di espansione in alto a sinistra. È anche possibile espandere e comprimere le **attributi** e **operazioni** sezione di una classe o interfaccia.  
   
-4.  Per creare collegamenti di associazioni, ereditarietà o dipendenza tra i tipi, fare clic sullo strumento di relazione appropriato, quindi sul tipo di origine e infine sul tipo di destinazione.  
+4. Per creare collegamenti di associazioni, ereditarietà o dipendenza tra i tipi, fare clic sullo strumento di relazione appropriato, quindi sul tipo di origine e infine sul tipo di destinazione.  
   
-5.  Per creare i tipi in un pacchetto, creare un pacchetto tramite il **pacchetto** dello strumento e quindi creare nuovi tipi e i pacchetti all'interno del pacchetto. È anche possibile usare il comando copia per copiare i tipi e incollarli in un pacchetto.  
+5. Per creare i tipi in un pacchetto, creare un pacchetto tramite il **pacchetto** dello strumento e quindi creare nuovi tipi e i pacchetti all'interno del pacchetto. È anche possibile usare il comando copia per copiare i tipi e incollarli in un pacchetto.  
   
-6.  Ogni diagramma è una visualizzazione in un modello condiviso tra altri diagrammi nello stesso progetto. Per visualizzare una visualizzazione albero del modello completo, scegliere **View**, **Other Windows**, **Esplora modelli UML**.  
+6. Ogni diagramma è una visualizzazione in un modello condiviso tra altri diagrammi nello stesso progetto. Per visualizzare una visualizzazione albero del modello completo, scegliere **View**, **Other Windows**, **Esplora modelli UML**.  
   
-##  <a name="UsingTypes"></a> Usando le classi, interfacce ed enumerazioni  
+## <a name="UsingTypes"></a> Usando le classi, interfacce ed enumerazioni  
  Sono disponibili tre tipi standard di classificatore nella casella degli strumenti, Queste sono denominate *tipi* nell'intero documento.  
   
  ![Una classe, un'enumerazione e un'interfaccia](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
@@ -125,9 +125,9 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
 - Usa un' **enumerazione** (3) per rappresentare un tipo che ha un numero limitato di valori letterali, ad esempio `Stop` e `Go`.  
   
-  -   Aggiungere i valori letterali all'enumerazione. Assegnare a ognuno un nome distinto.  
+  - Aggiungere i valori letterali all'enumerazione. Assegnare a ognuno un nome distinto.  
   
-  -   Se si vuole, è anche possibile fornire un valore numerico per ogni valore letterale. Aprire il menu di scelta rapida per il valore letterale nell'enumerazione, scegliere **delle proprietà**e quindi digitare un numero nel **valore** campo il **proprietà** finestra.  
+  - Se si vuole, è anche possibile fornire un valore numerico per ogni valore letterale. Aprire il menu di scelta rapida per il valore letterale nell'enumerazione, scegliere **delle proprietà**e quindi digitare un numero nel **valore** campo il **proprietà** finestra.  
   
   Assegnare a ogni tipo un nome univoco.  
   
@@ -154,7 +154,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Per creare una classe da una linea di vita, aprire il menu di scelta rapida per la linea di vita e quindi scegliere **Crea classe** oppure **Crea interfaccia**. Vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-##  <a name="AttributesAndOperations"></a> Attributi e operazioni  
+## <a name="AttributesAndOperations"></a> Attributi e operazioni  
  Un attributo (4) è un valore denominato che ogni istanza di un tipo può avere. L'accesso a un attributo non modifica lo stato dell'istanza.  
   
  Un'operazione (5) è un metodo o una funzione che le istanze del tipo possono eseguire. Può restituire un valore. Se relativo **isQuery** proprietà è true, non può modificare lo stato dell'istanza.  
@@ -167,9 +167,9 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Per informazioni dettagliate su tutte le proprietà da impostare, vedere:  
   
--   [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Proprietà di attributi in diagrammi classi UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Proprietà di operazioni in diagrammi classi UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Tipi di attributi e di operazioni  
  Ciascuna *tipo* di un attributo o operazione e ogni tipo di parametro, può essere uno dei seguenti:  
@@ -214,9 +214,9 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   
  Se la molteplicità è maggiore di 1, è anche possibile impostare le proprietà seguenti:  
   
--   **IsOrdered** : se true, la raccolta ha un ordine definito.  
+- **IsOrdered** : se true, la raccolta ha un ordine definito.  
   
--   **IsUnique** : se true, non sono presenti valori duplicati nella raccolta.  
+- **IsUnique** : se true, non sono presenti valori duplicati nella raccolta.  
   
 ### <a name="visibility"></a>Visibility  
  *Visibilità* indica se l'attributo o l'operazione è possibile accedere di fuori della definizione della classe. I valori consentiti sono:  
@@ -330,7 +330,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  In genere, la firma completa viene visualizzata nel diagramma solo durante la modifica. Al termine della modifica, le proprietà aggiuntive vengono nascoste. Se si desidera vedere sempre la firma completa, aprire il menu di scelta rapida per il tipo e quindi scegliere **Mostra firma completa**.  
   
-##  <a name="Associations"></a> Creazione e uso di associazioni  
+## <a name="Associations"></a> Creazione e uso di associazioni  
  Usare un'associazione per rappresentare qualsiasi tipo di collegamento tra due elementi, indipendentemente dal modo in cui il collegamento viene implementato nel software. È possibile ad esempio usare un'associazione per rappresentare un puntatore in C#, una relazione in un database o un riferimento incrociato da una parte di un file XML all'altra. Può rappresentare un'associazione tra oggetti nel mondo reale, quali la terra e il sole. L'associazione non specifica il modo in cui il collegamento è rappresentato, ma solo che l'informazione esiste.  
   
 ### <a name="properties-of-an-association"></a>Proprietà di un'associazione  
@@ -362,7 +362,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Associazione equivalente e attributi](../modeling/media/uml-classguideattrib.png "UML_ClassGuideAttrib")  
   
-##  <a name="Inheritance"></a> Ereditarietà  
+## <a name="Inheritance"></a> Ereditarietà  
  Usare la **ereditarietà** lo strumento per creare le relazioni seguenti:  
   
 - Oggetto *generalizzazione* relazione tra un tipo specializzato e un tipo generale  
@@ -405,7 +405,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  ![Realizzazione con connettore e simbolo](../modeling/media/uml-classguiderealize.png "UML_ClassGuideRealize")  
   
-##  <a name="Templates"></a> Tipi di modello  
+## <a name="Templates"></a> Tipi di modello  
  È possibile definire un tipo generico o di modello contenente parametri di altri tipi o valori.  
   
  È possibile ad esempio creare un Dizionario generico contenente parametri dei tipi chiave e valore:  
@@ -446,29 +446,29 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-use-a-template-type"></a>Per usare un tipo di modello  
   
-1.  Creare un nuovo tipo, ad esempio `AddressTable`.  
+1. Creare un nuovo tipo, ad esempio `AddressTable`.  
   
-2.  Aprire il menu di scelta rapida per il nuovo tipo e quindi scegliere **proprietà**.  
+2. Aprire il menu di scelta rapida per il nuovo tipo e quindi scegliere **proprietà**.  
   
-3.  Nel **Template Binding** proprietà, selezionare il tipo di modello, ad esempio `Dictionary`, nell'elenco a discesa.  
+3. Nel **Template Binding** proprietà, selezionare il tipo di modello, ad esempio `Dictionary`, nell'elenco a discesa.  
   
-4.  Espandere la **Template Binding** proprietà.  
+4. Espandere la **Template Binding** proprietà.  
   
      Verrà visualizzata una riga per ogni parametro del tipo di modello.  
   
-5.  Impostare ogni parametro su un valore appropriato. Impostare ad esempio il parametro `Key` su una classe denominata `Name`.  
+5. Impostare ogni parametro su un valore appropriato. Impostare ad esempio il parametro `Key` su una classe denominata `Name`.  
   
-##  <a name="Packages"></a> Pacchetti  
+## <a name="Packages"></a> Pacchetti  
  In un diagrammi classi UML è possibile visualizzare i pacchetti. Un pacchetto è un contenitore per altri elementi del modello. È possibile creare qualsiasi elemento in un pacchetto. Quando nel diagramma si sposta un pacchetto, si sposteranno anche gli elementi in esso contenuti.  
   
  È possibile usare il controllo di compressione/espansione per nascondere o visualizzare il contenuto del pacchetto.  
   
  Visualizzare [definire pacchetti e spazi dei nomi](../modeling/define-packages-and-namespaces.md).  
   
-##  <a name="generating"></a> Generazione di codice da diagrammi classi UML  
+## <a name="generating"></a> Generazione di codice da diagrammi classi UML  
  Per avviare l'implementazione di classi in un diagramma classi UML, è possibile generare codice C# o personalizzare modelli per la generazione di codice. Per avviare la generazione di codice usando i modelli C# forniti:  
   
--   Aprire il menu di scelta rapida del diagramma o un elemento, scegliere **genera codice**e quindi impostare le proprietà necessarie.  
+- Aprire il menu di scelta rapida del diagramma o un elemento, scegliere **genera codice**e quindi impostare le proprietà necessarie.  
   
      Per altre informazioni su come impostare queste proprietà e personalizzare i modelli disponibili, vedere [generare il codice da diagrammi classi UML](../modeling/generate-code-from-uml-class-diagrams.md).  
   

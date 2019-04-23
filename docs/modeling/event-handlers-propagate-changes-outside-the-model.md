@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940777"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096881"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>I gestori eventi propagano le modifiche al di fuori del modello
 
@@ -25,21 +25,21 @@ L'area grafica e altri controlli dell'interfaccia utente sono esempi di risorse 
 
 ### <a name="to-define-a-store-event"></a>Per definire un evento di archiviazione
 
-1.  Scegliere il tipo di evento che si vuole monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. I più usati sono tipi di evento:
+1. Scegliere il tipo di evento che si vuole monitorare. Per un elenco completo, esaminare le proprietà di <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Ogni proprietà corrisponde a un tipo di evento. I più usati sono tipi di evento:
 
-    -   `ElementAdded` -attivato quando un elemento del modello, viene creato il collegamento di relazione, forma o connettore.
+    - `ElementAdded` -attivato quando un elemento del modello, viene creato il collegamento di relazione, forma o connettore.
 
-    -   ElementPropertyChanged - attivato quando il valore di un `Normal` della proprietà di dominio viene modificata. L'evento viene generato solo se i valori nuovi e precedenti non sono uguali. L'evento non può essere applicato alle proprietà di archiviazione calcolate e personalizzate.
+    - ElementPropertyChanged - attivato quando il valore di un `Normal` della proprietà di dominio viene modificata. L'evento viene generato solo se i valori nuovi e precedenti non sono uguali. L'evento non può essere applicato alle proprietà di archiviazione calcolate e personalizzate.
 
          Non può essere applicato alle proprietà del ruolo che corrispondono ai collegamenti di relazione. Usare invece `ElementAdded` per monitorare la relazione di dominio.
 
-    -   `ElementDeleted` -attivato dopo un elemento del modello, relazione, forma o connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma lo sarà non presentano relazioni tra gli altri elementi.
+    - `ElementDeleted` -attivato dopo un elemento del modello, relazione, forma o connettore è stato eliminato. È comunque possibile accedere i valori delle proprietà dell'elemento, ma lo sarà non presentano relazioni tra gli altri elementi.
 
-2.  Aggiungere una definizione di classe parziale per _Dslutente_**DocData** in un file di codice separato nella **DslPackage** progetto.
+2. Aggiungere una definizione di classe parziale per _Dslutente_**DocData** in un file di codice separato nella **DslPackage** progetto.
 
-3.  Scrivere il codice dell'evento come un metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desidera accedere `DocData`.
+3. Scrivere il codice dell'evento come un metodo, come nell'esempio seguente. Può essere `static`, a meno che non si desidera accedere `DocData`.
 
-4.  Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se si dispone di più di un gestore, è possibile registrarli tutti nella stessa posizione.
+4. Eseguire l'override `OnDocumentLoaded()` per registrare il gestore. Se si dispone di più di un gestore, è possibile registrarli tutti nella stessa posizione.
 
 Il percorso del codice di registrazione non critico. `DocView.LoadView()` è un percorso alternativo.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Se si scrive un evento che aggiorna l'archivio:
 
--   Usare `store.InUndoRedoOrRollback` per evitare di apportare modifiche agli elementi del modello di annullamento. Il gestore delle transazioni imposterà tutti gli elementi nell'archivio di tornare allo stato originale.
+- Usare `store.InUndoRedoOrRollback` per evitare di apportare modifiche agli elementi del modello di annullamento. Il gestore delle transazioni imposterà tutti gli elementi nell'archivio di tornare allo stato originale.
 
--   Usare `store.InSerializationTransaction` per evitare di apportare modifiche mentre il modello viene caricato dal file.
+- Usare `store.InSerializationTransaction` per evitare di apportare modifiche mentre il modello viene caricato dal file.
 
--   Le modifiche causerà un'ulteriore eventi venga attivato. Assicurarsi di evitare un ciclo infinito.
+- Le modifiche causerà un'ulteriore eventi venga attivato. Assicurarsi di evitare un ciclo infinito.
 
 ## <a name="store-event-types"></a>Store i tipi di evento
 

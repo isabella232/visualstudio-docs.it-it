@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 535ae11811db3117448bf619c0391b852bd65c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d60f88c4d1532a03922f12f21bb9b455ef5d84d8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105552"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ Le applicazioni sul computer di sviluppo vengono in genere eseguite con autorizz
   
 ### <a name="to-enable-debugging-with-restricted-permissions"></a>Per abilitare il debug con autorizzazioni limitate  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  In **Creazione progetti**fare clic sulla scheda **Sicurezza** .  
+2. In **Creazione progetti**fare clic sulla scheda **Sicurezza** .  
   
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
+3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
-4.  Fare clic su **Avanzate** .  
+4. Fare clic su **Avanzate** .  
   
-5.  Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
+5. Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
   
      Quando si esegue il debug dell'applicazione, un eventuale tentativo di accedere a un'autorizzazione che non fa parte del set di autorizzazioni genererà un'eccezione di sicurezza.  
   
 ### <a name="to-specify-a-url-for-debugging"></a>Per specificare un URL per il debug  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  In **Creazione progetti**fare clic sulla scheda **Sicurezza** .  
+2. In **Creazione progetti**fare clic sulla scheda **Sicurezza** .  
   
-3.  Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
+3. Selezionare la casella di controllo **Abilita impostazioni di sicurezza ClickOnce** e quindi selezionare il pulsante di opzione **È un'applicazione con attendibilità parziale** .  
   
-4.  Fare clic su **Avanzate** .  
+4. Fare clic su **Avanzate** .  
   
-5.  Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
+5. Selezionare la casella di controllo **Esegui debug dell'applicazione con il set di autorizzazioni selezionato** e quindi fare clic su **OK**.  
   
-6.  Nella casella di testo **Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL** immettere un URL o un percorso di rete.  
+6. Nella casella di testo **Esegui debug dell'applicazione come se fosse stata scaricata dal seguente URL** immettere un URL o un percorso di rete.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

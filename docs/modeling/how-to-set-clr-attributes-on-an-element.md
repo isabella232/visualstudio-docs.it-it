@@ -11,31 +11,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b890a5d3d5c48ad3841075a8ae818d2d37d44f98
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8954aa6a42e743617080bb6918508273c1dd9528
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946626"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089107"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Procedura: Impostare gli attributi CLR in un elemento
 Gli attributi personalizzati sono speciali attributi che possono essere aggiunti a diagrammi, forme, connettori e gli elementi del dominio. È possibile aggiungere qualsiasi attributo che eredita dal `System.Attribute` classe.
 
 ### <a name="to-add-a-custom-attribute"></a>Per aggiungere un attributo personalizzato
 
-1.  Nel **DSL Explorer**, selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.
+1. Nel **DSL Explorer**, selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.
 
-2.  Nel **delle proprietà** finestra, accanto al **Custom Attributes** proprietà, fare clic su Sfoglia (**...** ) icona.
+2. Nel **delle proprietà** finestra, accanto al **Custom Attributes** proprietà, fare clic su Sfoglia (**...** ) icona.
 
      Il **Modifica attributi** verrà visualizzata la finestra di dialogo.
 
-3.  Nel **Name** colonna, fare clic su  **\<Aggiungi attributo >** e digitare il nome dell'attributo. Premere INVIO.
+3. Nel **Name** colonna, fare clic su  **\<Aggiungi attributo >** e digitare il nome dell'attributo. Premere INVIO.
 
-4.  La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo (ad esempio, `string`), quindi premere INVIO.
+4. La riga sotto il nome dell'attributo Mostra le parentesi. In questa riga digitare un tipo di parametro per l'attributo (ad esempio, `string`), quindi premere INVIO.
 
-5.  Nel **proprietà Name** colonna, digitare un nome appropriato, ad esempio, `MyString`.
+5. Nel **proprietà Name** colonna, digitare un nome appropriato, ad esempio, `MyString`.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
      Il **Custom Attributes** proprietà Visualizza ora l'attributo nel formato seguente:
 

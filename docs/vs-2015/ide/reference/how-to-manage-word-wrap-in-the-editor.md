@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088041"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: Gestire ritorno a capo automatico nell'Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "59656011"
   
 #### <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico  
   
-1.  Scegliere **Opzioni** dal menu **Strumenti**.  
+1. Scegliere **Opzioni** dal menu **Strumenti**.  
   
-2.  Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.  
+2. Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.  
   
      oppure  
   
      Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.  
   
-3.  In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.  
+3. In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.  
   
      Se l'opzione **A capo automatico** è selezionata, l'opzione **Mostra icone per ritorno a capo automatico** è abilitata.  
   
-4.  Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.  
+4. Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.  
   
     > [!NOTE]
     >  Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.  

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 20bfe541204d302699c37129f95476fb43541797
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088756"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Per creare la cartella controllo della versione per il set di regole dei criteri di archiviazione  
   
-1.  Nelle [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], espandere il nodo del progetto team e quindi fare clic su **controllo del codice sorgente**.  
+1. Nelle [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], espandere il nodo del progetto team e quindi fare clic su **controllo del codice sorgente**.  
   
-2.  Nel **cartelle** riquadro, fare clic sul progetto team e quindi fare clic su **nuova cartella**.  
+2. Nel **cartelle** riquadro, fare clic sul progetto team e quindi fare clic su **nuova cartella**.  
   
-3.  Nel riquadro di controllo del codice sorgente principale, fare doppio clic su **nuova cartella**, fare clic su **rinominare**e digitare un nome per la regola del set di cartelle.  
+3. Nel riquadro di controllo del codice sorgente principale, fare doppio clic su **nuova cartella**, fare clic su **rinominare**e digitare un nome per la regola del set di cartelle.  
   
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Per creare il set di regole dei criteri di archiviazione  
   
-1.  Nel **File** dal menu **New**, quindi fare clic su **File**.  
+1. Nel **File** dal menu **New**, quindi fare clic su **File**.  
   
-2.  Nel **categorie** fare clic su **generali**.  
+2. Nel **categorie** fare clic su **generali**.  
   
-3.  Nel **modelli** elenco, fare doppio clic su **Set di regole di analisi codice**.  
+3. Nel **modelli** elenco, fare doppio clic su **Set di regole di analisi codice**.  
   
-4.  Specificare le regole da includere nel set di regole e quindi salvare il file del set di regole per la cartella di set di regole creato.  
+4. Specificare le regole da includere nel set di regole e quindi salvare il file del set di regole per la cartella di set di regole creato.  
   
      Per altre informazioni, vedere [la creazione di set di regole personalizzate](../code-quality/creating-custom-code-analysis-rule-sets.md)  
   
 #### <a name="to-add-the-rule-set-file-to-version-control"></a>Per aggiungere la regola di set di file al controllo della versione  
   
-1.  Nelle **Esplora controllo codice sorgente**, fare doppio clic su nuova cartella e quindi fare clic su **aggiungere elementi alla cartella**.  
+1. Nelle **Esplora controllo codice sorgente**, fare doppio clic su nuova cartella e quindi fare clic su **aggiungere elementi alla cartella**.  
   
      Per altre informazioni, vedere [controllo della versione](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
-2.  Scegliere il set di regole file creato e quindi fare clic su **fine**.  
+2. Scegliere il set di regole file creato e quindi fare clic su **fine**.  
   
      Il file viene aggiunto al controllo del codice sorgente ed estratto automaticamente.  
   
-3.  Nel **Esplora controllo codice sorgente** finestra Dettagli, fare doppio clic il nome del file e quindi fare clic su **archiviare modifiche in sospeso**.  
+3. Nel **Esplora controllo codice sorgente** finestra Dettagli, fare doppio clic il nome del file e quindi fare clic su **archiviare modifiche in sospeso**.  
   
-4.  Nel **Check-in** della finestra di dialogo è possibile aggiungere un commento e quindi fare clic su **Archivia**.  
+4. Nel **Check-in** della finestra di dialogo è possibile aggiungere un commento e quindi fare clic su **Archivia**.  
   
     > [!NOTE]
     >  Se si è già configurato un criterio di controllo dell'analisi codice per il progetto team ed è stata selezionata la **Consenti archiviazione dei soli file che fanno parte della soluzione corrente**, si attiverà un avviso di errore nel criterio. Nella finestra di dialogo di errore dei criteri, selezionare **ora errore criteri e continua archiviazione**. Aggiungere un commento richiesto e quindi fare clic su **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Per specificare la regola di set di file come i criteri di controllo  
   
-1.  Nel **Team** dal menu **le impostazioni del progetto Team**, quindi fare clic su **controllo del codice sorgente**.  
+1. Nel **Team** dal menu **le impostazioni del progetto Team**, quindi fare clic su **controllo del codice sorgente**.  
   
-2.  Fare clic su **dei criteri di archiviazione**, quindi fare clic su **Add**.  
+2. Fare clic su **dei criteri di archiviazione**, quindi fare clic su **Add**.  
   
-3.  Nel **dei criteri di archiviazione** elenco, fare doppio clic su **analisi del codice**e assicurarsi che il **Attiva analisi codice per il codice gestito** casella di controllo è selezionata.  
+3. Nel **dei criteri di archiviazione** elenco, fare doppio clic su **analisi del codice**e assicurarsi che il **Attiva analisi codice per il codice gestito** casella di controllo è selezionata.  
   
-4.  Nel **eseguire questo set di regole** fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente >**.  
+4. Nel **eseguire questo set di regole** fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente >**.  
   
-5.  Digitare il percorso del file del set di regole di criteri di archiviazione nel controllo della versione.  
+5. Digitare il percorso del file del set di regole di criteri di archiviazione nel controllo della versione.  
   
      Il percorso deve essere conforme alla sintassi seguente:  
   
@@ -93,29 +93,29 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
     > [!NOTE]
     >  È possibile copiare il percorso usando una delle seguenti procedure in **Esplora controllo codice sorgente**:  
   
-    -   Nel **cartelle** riquadro, fare clic sulla cartella che contiene il file del set di regole. Copiare il percorso della cartella in cui viene visualizzato nel controllo della versione di **origine** , quindi digitare il nome del file del set di regole manualmente.  
+    - Nel **cartelle** riquadro, fare clic sulla cartella che contiene il file del set di regole. Copiare il percorso della cartella in cui viene visualizzato nel controllo della versione di **origine** , quindi digitare il nome del file del set di regole manualmente.  
   
-    -   Nella finestra dei dettagli fare doppio clic su file del set di regole e quindi fare clic su **proprietà**. Nel **generali** scheda, copiare il valore nella **nome Server**.  
+    - Nella finestra dei dettagli fare doppio clic su file del set di regole e quindi fare clic su **proprietà**. Nel **generali** scheda, copiare il valore nella **nome Server**.  
   
 ## <a name="synchronizing-code-projects-to-the-check-in-policy-rule-set"></a>Sincronizzazione dei progetti di codice per il Set di regole dei criteri di archiviazione  
  Specificare una regola di criteri di archiviazione di progetti team impostato come il set di regole di analisi codice di una configurazione di progetto di codice nella finestra di dialogo proprietà del progetto di codice. Se il set di regole si trova nella stessa unità come progetto di codice, un percorso relativo viene utilizzato per specificare set di regole se il percorso è selezionato nella finestra di dialogo file. Strutture di controllo Abilita il percorso relativo le impostazioni delle proprietà del progetto sia portabile in altri computer che usano la versione locale simile.  
   
 #### <a name="to-specify-a-team-project-rule-set-as-the-rule-set-of-a-code-project"></a>Per specificare una regola del progetto team impostata come set di regole di un progetto di codice  
   
-1.  Se necessario, recuperare la cartella set di regole dei criteri di archiviazione e i file dal controllo della versione.  
+1. Se necessario, recuperare la cartella set di regole dei criteri di archiviazione e i file dal controllo della versione.  
   
      È possibile eseguire questo passaggio **Esplora controllo codice sorgente** facendo clic con il set di regole cartella e quindi scegliendo **Leggi ultima versione**.  
   
-2.  Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.  
+2. Nelle **Esplora soluzioni**, fare clic sul progetto codice e quindi fare clic su **proprietà**.  
   
-3.  **Fare clic su analisi del codice**.  
+3. **Fare clic su analisi del codice**.  
   
-4.  Se necessario, selezionare le opzioni appropriate nel **Configuration** e **piattaforma** Elenca.  
+4. Se necessario, selezionare le opzioni appropriate nel **Configuration** e **piattaforma** Elenca.  
   
-5.  Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato utilizzando la configurazione specificata, selezionare la **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo.  
+5. Per eseguire l'analisi del codice ogni volta che il progetto di codice viene compilato utilizzando la configurazione specificata, selezionare la **Abilita analisi codice su compilazione (definisce la costante CODE_ANALYSIS)** casella di controllo.  
   
-6.  Per ignorare i codice nei componenti da altre società, selezionare la **non visualizzare i risultati dal codice generato** casella di controllo.  
+6. Per ignorare i codice nei componenti da altre società, selezionare la **non visualizzare i risultati dal codice generato** casella di controllo.  
   
-7.  Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
+7. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
   
-8.  Specificare la versione locale del file del set di regole di criteri di archiviazione.
+8. Specificare la versione locale del file del set di regole di criteri di archiviazione.

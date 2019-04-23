@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884b054503ef94c84ef267d562897c93cded9948
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105324"
 ---
 # <a name="walkthrough-display-signature-help"></a>Procedura dettagliata: Visualizzare la Guida di firma
 Supporto per la firma (detta anche *le informazioni sul parametro*) consente di visualizzare la firma di un metodo in una descrizione comando quando un utente digita il carattere iniziale dell'elenco parametri (in genere una parentesi di apertura). Com'è digitati un parametro e il separatore di parametro (in genere una virgola), la descrizione comando viene aggiornato per mostrare il parametro successivo in grassetto. È possibile definire supporto firma nei modi seguenti: nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e visualizzare la Guida di firma per il solo tipo o visualizzare la Guida di firma per un tipo di contenuto esistente (ad esempio, "text"). Questa procedura dettagliata viene illustrato come visualizzare la Guida di firma per il tipo di contenuto "text".
@@ -31,13 +31,13 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF
 
-1.  Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `SignatureHelpTest`.
+1. Creare un progetto c# VSIX. (Nelle **nuovo progetto** finestra di dialogo, seleziona **Visual c# / Extensibility**, quindi **progetto VSIX**.) Assegnare alla soluzione il nome `SignatureHelpTest`.
 
-2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creare un'estensione con un modello di elemento editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Eliminare i file di classe esistenti.
+3. Eliminare i file di classe esistenti.
 
-4.  Aggiungere i riferimenti seguenti al progetto e assicurarsi che **CopyLocal** è impostata su `false`:
+4. Aggiungere i riferimenti seguenti al progetto e assicurarsi che **CopyLocal** è impostata su `false`:
 
      Microsoft.VisualStudio.Editor
 
@@ -54,39 +54,39 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>Per implementare le firme di supporto firma e i parametri
 
-1.  Aggiungere un file di classe e assegnargli il nome `SignatureHelpSource`.
+1. Aggiungere un file di classe e assegnargli il nome `SignatureHelpSource`.
 
-2.  Aggiungere le istruzioni import seguenti.
+2. Aggiungere le istruzioni import seguenti.
 
      [!code-vb[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_1.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_1.cs)]
 
-3.  Aggiungere una classe denominata `TestParameter` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.
+3. Aggiungere una classe denominata `TestParameter` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.
 
      [!code-vb[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_2.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_2.cs)]
 
-4.  Aggiungere un costruttore che imposta tutte le proprietà.
+4. Aggiungere un costruttore che imposta tutte le proprietà.
 
      [!code-vb[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_3.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_3.cs)]
 
-5.  Aggiungere le proprietà di <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.
+5. Aggiungere le proprietà di <xref:Microsoft.VisualStudio.Language.Intellisense.IParameter>.
 
      [!code-vb[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_4.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_4.cs)]
 
-6.  Aggiungere una classe denominata `TestSignature` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.
+6. Aggiungere una classe denominata `TestSignature` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignature>.
 
      [!code-vb[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_5.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_5.cs)]
 
-7.  Aggiungere alcuni campi privati.
+7. Aggiungere alcuni campi privati.
 
      [!code-vb[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_6.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_6.cs)]
 
-8.  Aggiungere un costruttore che imposta i campi e sottoscrive il <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
+8. Aggiungere un costruttore che imposta i campi e sottoscrive il <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> evento.
 
      [!code-vb[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_7.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_7.cs)]
@@ -131,37 +131,37 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-implement-the-signature-help-source"></a>Per implementare l'origine supporto firma
 
-1.  Aggiungere una classe denominata `TestSignatureHelpSource` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.
+1. Aggiungere una classe denominata `TestSignatureHelpSource` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>.
 
      [!code-vb[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_15.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_15.cs)]
 
-2.  Aggiungere un riferimento al buffer di testo.
+2. Aggiungere un riferimento al buffer di testo.
 
      [!code-vb[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_16.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_16.cs)]
 
-3.  Aggiungere un costruttore che imposta il buffer di testo e il provider dell'origine supporto firma.
+3. Aggiungere un costruttore che imposta il buffer di testo e il provider dell'origine supporto firma.
 
      [!code-vb[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_17.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_17.cs)]
 
-4.  Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>. In questo esempio, le firme sono impostati come hardcoded, ma in un'implementazione completa si otterrebbe queste informazioni nella documentazione di linguaggio.
+4. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.AugmentSignatureHelpSession%2A>. In questo esempio, le firme sono impostati come hardcoded, ma in un'implementazione completa si otterrebbe queste informazioni nella documentazione di linguaggio.
 
      [!code-vb[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_18.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_18.cs)]
 
-5.  Il metodo helper `CreateSignature()` viene fornito solo a scopo illustrativo.
+5. Il metodo helper `CreateSignature()` viene fornito solo a scopo illustrativo.
 
      [!code-vb[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_19.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_19.cs)]
 
-6.  Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. In questo esempio sono presenti solo due firme, ognuno dei quali include due parametri. Di conseguenza, questo metodo non è obbligatorio. In un'implementazione più completa, in cui più di un'origine supporto firma è disponibile, questo metodo viene utilizzato per stabilire se l'origine di supporto firma con priorità più alta possibile fornire una firma corrispondente. Se non è possibile, il metodo restituisce null e l'origine successiva priorità più elevata viene chiesto di fornire una corrispondenza.
+6. Implementare il metodo <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource.GetBestMatch%2A>. In questo esempio sono presenti solo due firme, ognuno dei quali include due parametri. Di conseguenza, questo metodo non è obbligatorio. In un'implementazione più completa, in cui più di un'origine supporto firma è disponibile, questo metodo viene utilizzato per stabilire se l'origine di supporto firma con priorità più alta possibile fornire una firma corrispondente. Se non è possibile, il metodo restituisce null e l'origine successiva priorità più elevata viene chiesto di fornire una corrispondenza.
 
      [!code-vb[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_20.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_20.cs)]
 
-7.  Implementare il `Dispose()` metodo:
+7. Implementare il `Dispose()` metodo:
 
      [!code-vb[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_21.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_21.cs)]
@@ -171,12 +171,12 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-implement-the-signature-help-source-provider"></a>Per implementare il provider di origine supporto firma
 
-1.  Aggiungere una classe denominata `TestSignatureHelpSourceProvider` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>ed esportarlo con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, una <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> impostato su "text" e un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> di Before = "default".
+1. Aggiungere una classe denominata `TestSignatureHelpSourceProvider` che implementa <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>ed esportarlo con un <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, una <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> impostato su "text" e un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> di Before = "default".
 
      [!code-vb[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_22.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#22](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_22.cs)]
 
-2.  Implementare <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> creando il `TestSignatureHelpSource`.
+2. Implementare <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider.TryCreateSignatureHelpSource%2A> creando il `TestSignatureHelpSource`.
 
      [!code-vb[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_23.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#23](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_23.cs)]
@@ -186,27 +186,27 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-implement-the-command-handler"></a>Per implementare il gestore del comando
 
-1.  Aggiungere una classe denominata `TestSignatureHelpCommand` che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+1. Aggiungere una classe denominata `TestSignatureHelpCommand` che implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
      [!code-vb[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_24.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#24](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_24.cs)]
 
-2.  Aggiungere campi privati per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> adapter (che consente di aggiungere il gestore comando ai gestori di catena di comando), la visualizzazione di testo, il broker di supporto firma e sessione, un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>e la successiva <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+2. Aggiungere campi privati per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> adapter (che consente di aggiungere il gestore comando ai gestori di catena di comando), la visualizzazione di testo, il broker di supporto firma e sessione, un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>e la successiva <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
      [!code-vb[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_25.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#25](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_25.cs)]
 
-3.  Aggiungere un costruttore per inizializzare i campi e per aggiungere il filtro di comando per la catena di filtri di comando.
+3. Aggiungere un costruttore per inizializzare i campi e per aggiungere il filtro di comando per la catena di filtri di comando.
 
      [!code-vb[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_26.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#26](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_26.cs)]
 
-4.  Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodo per attivare la sessione di supporto firma quando il filtro di comando riceve una parentesi di apertura carattere "(" carattere dopo uno dei nomi di metodo noto e per chiudere la sessione quando viene ricevuta una parentesi di chiusura")" mentre la sessione è ancora attiva. In ogni caso, il comando viene inoltrato.
+4. Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metodo per attivare la sessione di supporto firma quando il filtro di comando riceve una parentesi di apertura carattere "(" carattere dopo uno dei nomi di metodo noto e per chiudere la sessione quando viene ricevuta una parentesi di chiusura")" mentre la sessione è ancora attiva. In ogni caso, il comando viene inoltrato.
 
      [!code-vb[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_27.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#27](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_27.cs)]
 
-5.  Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo in modo che venga sempre inoltra il comando.
+5. Implementare il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo in modo che venga sempre inoltra il comando.
 
      [!code-vb[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_28.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#28](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_28.cs)]
@@ -216,17 +216,17 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 ### <a name="to-implement-the-signature-help-command-provider"></a>Per implementare il provider di comandi supporto firma
 
-1.  Aggiungere una classe denominata `TestSignatureHelpController` che implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ed esportarlo con la <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, e <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.
+1. Aggiungere una classe denominata `TestSignatureHelpController` che implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> ed esportarlo con la <xref:Microsoft.VisualStudio.Utilities.NameAttribute>, <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>, e <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>.
 
      [!code-vb[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_29.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#29](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_29.cs)]
 
-2.  Importa il <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (usato per ottenere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, dato il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> oggetto), il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (usato per trovare la parola corrente) e il <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (per attivare la sessione di supporto firma).
+2. Importa il <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> (usato per ottenere il <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, dato il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> oggetto), il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> (usato per trovare la parola corrente) e il <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker> (per attivare la sessione di supporto firma).
 
      [!code-vb[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_30.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#30](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_30.cs)]
 
-3.  Implementare il <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metodo creando il `TestSignatureCommandHandler`.
+3. Implementare il <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> metodo creando il `TestSignatureCommandHandler`.
 
      [!code-vb[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-signature-help_31.vb)]
      [!code-csharp[VSSDKSignatureHelpTest#31](../extensibility/codesnippet/CSharp/walkthrough-displaying-signature-help_31.cs)]
@@ -236,13 +236,13 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 
 #### <a name="to-build-and-test-the-signaturehelptest-solution"></a>Per compilare e testare la soluzione SignatureHelpTest
 
-1.  Compilare la soluzione.
+1. Compilare la soluzione.
 
-2.  Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
+2. Quando si esegue questo progetto nel debugger, viene avviata una seconda istanza di Visual Studio.
 
-3.  Creare un file di testo e digitare un testo che include la parola "add" oltre a una parentesi di apertura.
+3. Creare un file di testo e digitare un testo che include la parola "add" oltre a una parentesi di apertura.
 
-4.  Dopo aver digitato la parentesi di apertura, si dovrebbe essere una descrizione comando che visualizza un elenco di due firme per i `add()` (metodo).
+4. Dopo aver digitato la parentesi di apertura, si dovrebbe essere una descrizione comando che visualizza un elenco di due firme per i `add()` (metodo).
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

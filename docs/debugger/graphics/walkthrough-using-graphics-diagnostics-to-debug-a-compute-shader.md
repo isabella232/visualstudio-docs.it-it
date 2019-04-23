@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Uso di diagnostica della grafica per eseguire il Debug di un Compute Shader | Microsoft Docs'
+title: 'Procedura dettagliata: Usare diagnostica della grafica per eseguire il Debug di un Compute Shader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105370"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: utilizzo della diagnostica della grafica per eseguire il debug di un compute shader
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader
 Questa procedura dettagliata illustra come usare gli strumenti di diagnostica della grafica di Visual Studio per esaminare un compute shader che genera risultati errati.
 
  In questa procedura dettagliata vengono illustrate le attività seguenti:
 
--   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
+- Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
 
--   Uso dello **Stack di chiamate eventi di grafica** per determinare quale compute shader viene eseguito da un evento DirectCompute `Dispatch`.
+- Uso dello **Stack di chiamate eventi di grafica** per determinare quale compute shader viene eseguito da un evento DirectCompute `Dispatch`.
 
--   Uso della finestra **Fasi pipeline grafica** e del debugger HLSL per esaminare il compute shader che è l'origine del problema.
+- Uso della finestra **Fasi pipeline grafica** e del debugger HLSL per esaminare il compute shader che è l'origine del problema.
 
 ## <a name="scenario"></a>Scenario
  In questo scenario è stata scritta una simulazione di dinamica del fluidi in cui viene usato DirectCompute per eseguire le parti con calcoli complessi dell'aggiornamento della simulazione. Quando l'applicazione viene eseguita, il rendering del dataset e l'interfaccia utente sono corretti, ma la simulazione non si comporta come previsto. Usando Diagnostica della grafica, è possibile acquisire il problema in un log di grafica in modo da poter eseguire il debug dell'applicazione. Nell'app, il problema si presenta nel modo seguente:
@@ -88,7 +88,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
 
     ![Debug del compute shader IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. Per arrestare il debug del compute shader, nella barra degli strumenti **Debug** scegliere **Arresta debug** (tastiera: MAIUSC+F5).
+4. Per arrestare il debug del compute shader, nella **Debug** sulla barra degli strumenti, scegliere **arresta debug** (tastiera: MAIUSC + F5).
 
 5. Selezionare quindi il secondo evento `Dispatch` e avviare il debug del compute shader come nel passaggio precedente. 
 

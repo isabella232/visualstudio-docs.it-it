@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 49b5e5b7c36b09e08932fcb414478849a12a7c7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088145"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Scelta tra pacchetti VSPackage condivisi e con versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ Versioni diverse di Visual Studio possono coesistere nello stesso computer. I pa
 ## <a name="shared-vspackages"></a>Pacchetti VSPackage condivisi  
  Usando un pacchetto VSPackage condiviso è appropriato quando si usa il pacchetto VSPackage stesso in più versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per implementare un package VS condivisi, è necessario eseguire i passaggi seguenti:  
   
--   Rendere compatibili con più versioni del pacchetto VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Due modalità di esecuzione sono pertanto disponibili:  
+- Rendere compatibili con più versioni del pacchetto VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Due modalità di esecuzione sono pertanto disponibili:  
   
-    -   Limitare il pacchetto VSPackage per usare solo le funzionalità dalla versione meno recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportate.  
+    - Limitare il pacchetto VSPackage per usare solo le funzionalità dalla versione meno recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportate.  
   
-    -   Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi che sono supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    - Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi che sono supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Registrare il VSPackage in modo appropriato. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md) e [registrazione di pacchetti VSPackage gestiti](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Registrare il VSPackage in modo appropriato. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md) e [registrazione di pacchetti VSPackage gestiti](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
--   Registrare le estensioni di file in modo appropriato. Per altre informazioni, vedere [la registrazione di estensioni di File per le distribuzioni Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+- Registrare le estensioni di file in modo appropriato. Per altre informazioni, vedere [la registrazione di estensioni di File per le distribuzioni Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Creare un programma di installazione che consente di distribuire il pacchetto VSPackage per le versioni appropriate di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e [gestione dei componenti](../extensibility/internals/component-management.md).  
+- Creare un programma di installazione che consente di distribuire il pacchetto VSPackage per le versioni appropriate di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e [gestione dei componenti](../extensibility/internals/component-management.md).  
   
--   Risolvere il problema dei conflitti di registrazione. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md).  
+- Risolvere il problema dei conflitti di registrazione. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md).  
   
--   Assicurarsi che i file sia condivisi sia con controllo delle versioni rispettino per consentire l'installazione sicura e la rimozione di più versioni di conteggio dei riferimenti. Per altre informazioni, vedere [gestione dei componenti](../extensibility/internals/component-management.md).  
+- Assicurarsi che i file sia condivisi sia con controllo delle versioni rispettino per consentire l'installazione sicura e la rimozione di più versioni di conteggio dei riferimenti. Per altre informazioni, vedere [gestione dei componenti](../extensibility/internals/component-management.md).  
   
 ## <a name="versioned-vspackages"></a>Pacchetti VSPackage con controllo delle versioni  
  Sotto la strategia di VSPackage con controllo delle versioni, si crea un pacchetto VSPackage per ogni versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportate. Questa operazione è appropriata se si prevede di sfruttare i vantaggi dei servizi forniti dalle versioni più recenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], perché ogni pacchetto VSPackage può evolversi senza influire sulle altre. Tuttavia, la strategia di creazione di più file binari, da una singola codebase o da più basi di codice indipendenti, con controllo delle versioni può comportare ulteriori attività iniziali di sviluppo più la strategia condivisa. Inoltre, operazioni di configurazione aggiuntivi potrebbero essere necessari perché è necessario creare un programma di installazione separato per ogni versione né di un unico programma di installazione che rileva le versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che siano installati e che supporta il pacchetto VSPackage.  

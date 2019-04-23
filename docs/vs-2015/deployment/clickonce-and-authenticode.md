@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089081"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
   
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:  
   
--   Acquistandone uno da un fornitore di certificati.  
+- Acquistandone uno da un fornitore di certificati.  
   
--   Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.  
+- Ricevendone uno da un gruppo dell'organizzazione responsabile della creazione di certificati digitali.  
   
--   Generando un certificato personalizzato con MakeCert.exe, incluso in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Generando un certificato personalizzato con MakeCert.exe, incluso in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Vantaggi derivanti dall'uso di Autorità di certificazione  
  Un certificato generato mediante l'utilità MakeCert.exe viene comunemente definito *autocertificato* o *certificato di prova*. Questo tipo di certificato agisce in modo analogo ai file con estensione snk in .NET Framework. È costituito esclusivamente da una coppia di chiavi crittografiche pubbliche/private e non contiene informazioni verificabili sull'editore. Gli autocertificati consentono di distribuire applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] con un elevato livello di attendibilità in una rete intranet. Tuttavia, quando sono eseguite in un computer client, queste applicazioni vengono identificate da [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] come provenienti da un editore sconosciuto. Per impostazione predefinita, non è possibile usare la distribuzione di applicazioni attendibili per le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmate con autocertificati e distribuite su Internet.  
@@ -61,15 +61,15 @@ Authenticode * è una tecnologia Microsoft che usa la crittografia standard del 
 ### <a name="updating-expired-certificates"></a>Aggiornamento di certificati scaduti  
  Nelle versioni precedenti di .NET Framework, l'aggiornamento di un'applicazione con certificato scaduto può determinare l'interruzione dell'applicazione stessa. Per risolvere il problema, usare uno dei metodi seguenti:  
   
--   Aggiornare .NET Framework alla versione 2.0 SP1 o successiva su Windows XP oppure alla versione 3.5 o successiva su Windows Vista.  
+- Aggiornare .NET Framework alla versione 2.0 SP1 o successiva su Windows XP oppure alla versione 3.5 o successiva su Windows Vista.  
   
--   Disinstallare l'applicazione e reinstallare una nuova versione con un certificato valido.  
+- Disinstallare l'applicazione e reinstallare una nuova versione con un certificato valido.  
   
--   Creare un assembly della riga di comando che aggiorna il certificato. Nell' [articolo del Supporto tecnico Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)sono disponibili informazioni dettagliate su questa procedura.  
+- Creare un assembly della riga di comando che aggiorna il certificato. Nell' [articolo del Supporto tecnico Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)sono disponibili informazioni dettagliate su questa procedura.  
   
 ### <a name="storing-certificates"></a>Archiviazione dei certificati  
   
--   È possibile archiviare i certificati nel file system, come file con estensione pfx, oppure all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità MakeCert.exe archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione pfx. Mage.exe e MageUI.exe, gli strumenti di [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , consentono di usare certificati archiviati in entrambi i modi.  
+- È possibile archiviare i certificati nel file system, come file con estensione pfx, oppure all'interno di un contenitore di chiavi. Un utente su un dominio Windows può avere più contenitori di chiavi. Per impostazione predefinita, l'utilità MakeCert.exe archivia i certificati nel contenitore di chiavi personale, a meno che non venga specificato di salvarli in un file con estensione pfx. Mage.exe e MageUI.exe, gli strumenti di [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] per la creazione di distribuzioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , consentono di usare certificati archiviati in entrambi i modi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   

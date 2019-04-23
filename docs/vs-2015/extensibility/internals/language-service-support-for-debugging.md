@@ -11,12 +11,12 @@ ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7be41a5078e9f8dc009dda0d34394092234cd7e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c61f7fa7e698e2c01cadb1dbb36a321c6e656e35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089185"
 ---
 # <a name="language-service-support-for-debugging"></a>Supporto dei servizi di linguaggio per il debug
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Un servizio di linguaggio può fornire funzionalità che supportano un debugger 
   
  Tuttavia, è necessario disporre di un analizzatore di espressioni per eseguire il debug del linguaggio. L'analizzatore di espressioni è responsabile per la valutazione delle espressioni che producono valori durante il debug. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere:  
   
--   [Analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
+- [Analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)  
   
--   [Esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
+- [Esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)  
   
 ## <a name="compiler-output"></a>Output del compilatore  
  Il tipo di compilatore determina ciò che è necessario eseguire per implementare il debug per la propria lingua. Se il compilatore ha come destinazione il sistema operativo Windows e scrive un file con estensione pdb, che è possibile eseguire il debug di programmi con il codice nativo, debug del motore è integrato in Visual Studio. Se il compilatore produce Microsoft intermediate language (MSIL), è possibile eseguire il debug di programmi con il codice gestito, debug motore, è anche integrato in Visual Studio. Se il compilatore è destinato a un sistema operativo proprietario o un ambiente di runtime diverse, è necessario scrivere il proprio motore di debug.  

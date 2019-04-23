@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a01220c1c8dc21bc770c509aacfe345fd3107ae5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105565"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associare controlli alle immagini di un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "59666136"
   
 ## <a name="bind-a-picture-in-a-database-to-a-control"></a>Associare un'immagine in un database a un controllo  
   
-1.  Assicurarsi che l'area di progettazione che si desidera aggiungere il controllo viene aperto in WPF Designer o in Progettazione Windows Form.  
+1. Assicurarsi che l'area di progettazione che si desidera aggiungere il controllo viene aperto in WPF Designer o in Progettazione Windows Form.  
   
-2.  Nel **Zdroje dat** finestra, espandere la tabella desiderata o per visualizzare le colonne o proprietà dell'oggetto.  
+2. Nel **Zdroje dat** finestra, espandere la tabella desiderata o per visualizzare le colonne o proprietà dell'oggetto.  
   
-3.  Selezionare la colonna o proprietà che contiene i dati di immagine e selezionare uno dei seguenti controlli dal relativo elenco di controllo elenco a discesa:  
+3. Selezionare la colonna o proprietà che contiene i dati di immagine e selezionare uno dei seguenti controlli dal relativo elenco di controllo elenco a discesa:  
   
-    -   Se la finestra di progettazione WPF è aperto, selezionare **immagine**.  
+    - Se la finestra di progettazione WPF è aperto, selezionare **immagine**.  
   
-    -   Se la finestra di progettazione Windows Form è aperto, selezionare **PictureBox**.  
+    - Se la finestra di progettazione Windows Form è aperto, selezionare **PictureBox**.  
   
-    -   In alternativa, è possibile selezionare un altro controllo che supporta il data binding e in grado di visualizzare immagini. Se il controllo che si desidera utilizzare non è presente nell'elenco dei controlli disponibili, è possibile aggiungerlo all'elenco e quindi selezionarlo. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    - In alternativa, è possibile selezionare un altro controllo che supporta il data binding e in grado di visualizzare immagini. Se il controllo che si desidera utilizzare non è presente nell'elenco dei controlli disponibili, è possibile aggiungerlo all'elenco e quindi selezionarlo. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

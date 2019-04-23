@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: c4f431dba7f9732333812f64b44db52358071996
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658799"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097167"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con app Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
  Considerazioni speciali per il controllo della versione con Unity:  
   
-1.  Unity tiene traccia dei metadati relativi alle risorse del gioco in una singola libreria opaca, nascosta per impostazione predefinita. Per mantenere sincronizzati i file e i metadati, è necessario per rendere visibili i metadati e archiviarli in blocchi più gestibili. Per informazioni dettagliate, vedere [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso di sistemi di controllo della versione esterni con Unity) nella documentazione di Unity.  
+1. Unity tiene traccia dei metadati relativi alle risorse del gioco in una singola libreria opaca, nascosta per impostazione predefinita. Per mantenere sincronizzati i file e i metadati, è necessario per rendere visibili i metadati e archiviarli in blocchi più gestibili. Per informazioni dettagliate, vedere [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (Uso di sistemi di controllo della versione esterni con Unity) nella documentazione di Unity.  
   
-2.  Non tutti i file e tutte le cartelle in un progetto Unity sono appropriati per il controllo del codice sorgente, come descritto anche nel collegamento precedente. È necessario aggiungere le cartelle Assets e ProjectSettings, mentre Library e Temp non devono essere aggiunte. Per un elenco aggiuntivo dei file generati che non vengono sottoposti al controllo del codice sorgente, vedere la discussione [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) (Come usare Git per il controllo del codice sorgente di Unity3D) in StackOverflow. Molti sviluppatori hanno anche discusso di questo argomento in modo indipendente.  
+2. Non tutti i file e tutte le cartelle in un progetto Unity sono appropriati per il controllo del codice sorgente, come descritto anche nel collegamento precedente. È necessario aggiungere le cartelle Assets e ProjectSettings, mentre Library e Temp non devono essere aggiunte. Per un elenco aggiuntivo dei file generati che non vengono sottoposti al controllo del codice sorgente, vedere la discussione [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) (Come usare Git per il controllo del codice sorgente di Unity3D) in StackOverflow. Molti sviluppatori hanno anche discusso di questo argomento in modo indipendente.  
   
-3.  Le risorse binarie in un progetto Unity, ad esempio trame e file audio, possono richiedere una grande quantità di spazio di archiviazione. Diversi sistemi di controllo del codice sorgente, come Git, memorizzano una copia univoca di un file per ogni modifica apportata, anche se la modifica interessa solo una piccola parte del file. Ciò può causare un aumento eccessivo dell'archivio Git. Per risolvere questo problema, gli sviluppatori Unity scelgono spesso di aggiungere al repository solo le risorse finali e usare un modo diverso per mantenere una cronologia di lavoro delle risorse, ad esempio OneDrive, DropBox o git-annex. Questo approccio funziona perché tali attività in genere non richiedono il controllo della versione insieme alle modifiche del codice sorgente. In genere, gli sviluppatori impostano anche la modalità di serializzazione delle risorse dell'editor di progetto sull'opzione per forzare il testo per archiviare i file delle scene in formato testo anziché binario, in modo da consentire operazioni di unione nel controllo del codice sorgente. Per informazioni dettagliate, vedere [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Impostazioni dell'editor) nella documentazione di Unity.  
+3. Le risorse binarie in un progetto Unity, ad esempio trame e file audio, possono richiedere una grande quantità di spazio di archiviazione. Diversi sistemi di controllo del codice sorgente, come Git, memorizzano una copia univoca di un file per ogni modifica apportata, anche se la modifica interessa solo una piccola parte del file. Ciò può causare un aumento eccessivo dell'archivio Git. Per risolvere questo problema, gli sviluppatori Unity scelgono spesso di aggiungere al repository solo le risorse finali e usare un modo diverso per mantenere una cronologia di lavoro delle risorse, ad esempio OneDrive, DropBox o git-annex. Questo approccio funziona perché tali attività in genere non richiedono il controllo della versione insieme alle modifiche del codice sorgente. In genere, gli sviluppatori impostano anche la modalità di serializzazione delle risorse dell'editor di progetto sull'opzione per forzare il testo per archiviare i file delle scene in formato testo anziché binario, in modo da consentire operazioni di unione nel controllo del codice sorgente. Per informazioni dettagliate, vedere [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Impostazioni dell'editor) nella documentazione di Unity.  
   
 ## <a name="build"></a>Compilazione  
  Collegamento di riferimento: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  

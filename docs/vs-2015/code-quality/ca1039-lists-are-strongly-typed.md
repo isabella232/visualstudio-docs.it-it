@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097115"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Gli elenchi sono fortemente tipizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58966037"
 ## <a name="cause"></a>Causa
  Il tipo pubblico o protetto il tipo implementa <xref:System.Collections.IList?displayProperty=fullName> ma non fornisce un metodo fortemente tipizzato per uno o più delle operazioni seguenti:
 
--   IList.Item
+- IList.Item
 
--   IList
+- IList
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList. Insert
+- IList. Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Descrizione della regola
  Questa regola richiede <xref:System.Collections.IList> membri implementazioni per fornire fortemente tipizzati in modo che gli utenti non è necessario eseguire il cast di argomenti per il <xref:System.Object?displayProperty=fullName> digitare quando usano la funzionalità fornita dall'interfaccia. Il <xref:System.Collections.IList> viene implementata mediante raccolte di oggetti che è possibile accedere tramite indice. Questa regola presuppone che il tipo che implementa <xref:System.Collections.IList> esegue questa operazione per gestire una raccolta di istanze di un tipo più sicuro <xref:System.Object>.

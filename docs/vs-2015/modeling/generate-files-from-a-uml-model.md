@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03b2cf5b03ea7f2cfc2d8fa90346ac47c1e4ae84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d58a8b98cb27527f3d4c464119fb5543f88e8ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954745"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088977"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generare file da un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Da un modello UML, è possibile generare codice programma, schemi, documenti, ri
   
   In questo argomento termina con una discussione sulle [come usare la generazione di testo](#What). Per altre informazioni, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md).  
   
-##  <a name="Command"></a> Generazione di file da un comando di menu  
+## <a name="Command"></a> Generazione di file da un comando di menu  
  È possibile usare i modelli di testo pre-elaborati in un comando di menu UML. Nel codice del modello di testo o in una classe parziale separata, è possibile leggere il modello visualizzato dal diagramma.  
   
  Per altre informazioni su queste funzionalità, leggere gli argomenti seguenti:  
@@ -134,37 +134,37 @@ Type Class2 ::
           Attribute3 : string   
 ```  
   
-##  <a name="Application"></a> Generazione di file da un'applicazione  
+## <a name="Application"></a> Generazione di file da un'applicazione  
  È possibile generare file da un'applicazione che legge un modello UML. A tale scopo, è metodo più flessibile e affidabile di accedere al modello e i relativi elementi [Modelbus di Visual Studio](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
  È anche possibile usare l'API di base per caricare il modello e passarlo ai modelli di testo usando le stesse tecniche della sezione precedente. Per altre informazioni sul caricamento di un modello, vedere [leggere un modello UML nel codice programma](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Design"></a> Generazione di file in fase di progettazione  
+## <a name="Design"></a> Generazione di file in fase di progettazione  
  Se il progetto ha un metodo standard di interpretazione di UML come codice, è possibile creare modelli di testo che consentono di generare il codice all'interno del progetto da un modello UML. In genere si ha una soluzione che contiene il progetto del modello UML e uno o più progetti per il codice dell'applicazione. Ogni progetto di codice può contenere diversi modelli che generano il codice del programma, le risorse e i file di configurazione in base al contenuto del modello. Lo sviluppatore può eseguire tutti i modelli facendo il **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni. Il codice del programma viene generato in genere sotto forma di classi parziali per semplificare l'integrazione manuale delle parti scritte.  
   
  Un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di questo tipo può essere distribuito sotto forma di modello, in modo che ogni membro di un team possa creare allo stesso modo progetti che generano codice da un modello. In genere, il modello fa parte di un pacchetto di estensioni che include vincoli di convalida relativi al modello per garantire che le precondizioni per il codice di generazione vengano soddisfatte.  
   
 ### <a name="outline-procedure-for-generating-files"></a>Procedura relativa alla struttura per la generazione di file  
   
--   Per aggiungere un modello a un progetto, selezionare **modello di testo** nella finestra di dialogo Aggiungi nuovo File. È possibile aggiungere un modello alla maggior parte dei tipi di progetto, ma non ai progetti di modellazione.  
+- Per aggiungere un modello a un progetto, selezionare **modello di testo** nella finestra di dialogo Aggiungi nuovo File. È possibile aggiungere un modello alla maggior parte dei tipi di progetto, ma non ai progetti di modellazione.  
   
--   La proprietà Custom Tools del file modello deve essere **TextTemplatingFileGenerator**, e l'estensione del nome file deve essere. tt.  
+- La proprietà Custom Tools del file modello deve essere **TextTemplatingFileGenerator**, e l'estensione del nome file deve essere. tt.  
   
--   Il modello deve avere almeno una direttiva di output:  
+- Il modello deve avere almeno una direttiva di output:  
   
      `<#@ output extension=".cs" #>`  
   
      Impostare il campo delle estensioni in base al linguaggio del progetto.  
   
--   Per consentire al codice di generazione nel modello di accedere al modello, scrivere le direttive `<#@ assembly #>` per gli assembly necessari per leggere un modello UML. Usare `ModelingProject.LoadReadOnly()` per aprire il modello. Per altre informazioni, vedere [leggere un modello UML nel codice programma](../modeling/read-a-uml-model-in-program-code.md).  
+- Per consentire al codice di generazione nel modello di accedere al modello, scrivere le direttive `<#@ assembly #>` per gli assembly necessari per leggere un modello UML. Usare `ModelingProject.LoadReadOnly()` per aprire il modello. Per altre informazioni, vedere [leggere un modello UML nel codice programma](../modeling/read-a-uml-model-in-program-code.md).  
   
--   Il modello viene eseguito quando viene salvato e quando fa clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
+- Il modello viene eseguito quando viene salvato e quando fa clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
   
--   Per altre informazioni su questo tipo di modello, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
+- Per altre informazioni su questo tipo di modello, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
   
--   In un progetto standard sono presenti più modelli che generano file diversi dallo stesso modello. La prima parte di tutti i modelli sarà uguale. Per ridurre questa duplicazione, spostare le parti comuni in un file di testo separato, quindi richiamarle usando la direttiva `<#@include file="common.txt"#>` in ogni modello.  
+- In un progetto standard sono presenti più modelli che generano file diversi dallo stesso modello. La prima parte di tutti i modelli sarà uguale. Per ridurre questa duplicazione, spostare le parti comuni in un file di testo separato, quindi richiamarle usando la direttiva `<#@include file="common.txt"#>` in ogni modello.  
   
--   È anche possibile definire un processore di direttive specializzato che consente di fornire i parametri al processo di generazione del testo. Per altre informazioni, vedere [personalizzazione di trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).  
+- È anche possibile definire un processore di direttive specializzato che consente di fornire i parametri al processo di generazione del testo. Per altre informazioni, vedere [personalizzazione di trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).  
   
 ### <a name="example"></a>Esempio  
  Questo esempio genera una classe C# per ogni classe UML nel modello di origine.  
@@ -173,19 +173,19 @@ Type Class2 ::
   
 1. Creare un diagramma classi UML in un progetto di modellazione in una nuova soluzione.  
   
-   1.  Nel **Architecture** menu, fare clic su **nuovo diagramma**.  
+   1. Nel **Architecture** menu, fare clic su **nuovo diagramma**.  
   
-   2.  Selezionare **diagramma classi UML**.  
+   2. Selezionare **diagramma classi UML**.  
   
-   3.  Seguire le istruzioni per creare una nuova soluzione e un progetto di modellazione.  
+   3. Seguire le istruzioni per creare una nuova soluzione e un progetto di modellazione.  
   
-   4.  Aggiungere alcune classi al diagramma trascinando lo strumento Classe UML dalla casella degli strumenti.  
+   4. Aggiungere alcune classi al diagramma trascinando lo strumento Classe UML dalla casella degli strumenti.  
   
-   5.  Salvare il file.  
+   5. Salvare il file.  
   
 2. Creare un progetto C# o Visual Basic nella stessa soluzione.  
   
-   -   In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual C#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
+   - In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **nuovo progetto**. Sotto **modelli installati**, fare clic su **Visual Basic** oppure **Visual c#** e quindi selezionare un tipo di progetto, ad esempio **applicazione Console**.  
   
 3. Aggiungere un file di testo normale al progetto C# o Visual Basic. Il file conterrà codice condiviso se si vogliono scrivere più modelli di testo.  
   
@@ -203,9 +203,9 @@ Type Class2 ::
   
 6. Esaminare il codice nel file secondario. Deve contenere una classe per ogni classe UML nel modello.  
   
-   1.  In un progetto di Visual Basic, fare clic su **Mostra tutti i file** sulla barra degli strumenti Esplora soluzioni.  
+   1. In un progetto di Visual Basic, fare clic su **Mostra tutti i file** sulla barra degli strumenti Esplora soluzioni.  
   
-   2.  Espandere il nodo del file del modello in Esplora soluzioni.  
+   2. Espandere il nodo del file del modello in Esplora soluzioni.  
   
 #### <a name="content-of-the-shared-text-file"></a>Contenuto del file di testo condiviso  
  In questo esempio il file è denominato SharedTemplateCode.txt e si trova nella stessa cartella dei modelli di testo.  
@@ -296,23 +296,23 @@ namespace Test{
 }  
 ```  
   
-##  <a name="What"></a> Come usare la generazione di testo  
+## <a name="What"></a> Come usare la generazione di testo  
  La reale potenza della modellazione viene raggiunta quando si usano i modelli per la progettazione a livello di requisiti o di architettura. È possibile usare i modelli di testo per eseguire alcune attività di trasformazione di concetti di alto livello in codice. In molti casi non si ottiene una corrispondenza univoca tra gli elementi nei modelli UML e nelle classi o in altre parti del codice del programma.  
   
  Inoltre, la trasformazione dipende dal dominio del problema specifico. Non esiste un mapping universale tra modelli e codice.  
   
  Ecco alcuni esempi di generazione del codice dai modelli:  
   
--   **Linee di prodotti**. Fabrikam, Inc. crea e installa sistemi di gestione dei bagagli negli aeroporti. La maggior parte del software delle varie installazioni è simile, mentre la configurazione del software dipende dal macchinario di gestione dei bagagli installato e dalla modalità di interconnessione dei componenti mediante i nastri trasportatori. All'inizio di un contratto, gli analisti di Fabrikam discutono dei requisiti con il management dell'aeroporto e acquisiscono il piano dell'hardware usando un diagramma di attività UML. Da questo modello il team di sviluppo genera i file di configurazione, il codice del programma, i piani e i documenti dell'utente. Il lavoro viene completato con aggiunte e modifiche manuali al codice. Con l'aumentare dell'esperienza, il team è in grado di estendere l'ambito del materiale generato.  
+- **Linee di prodotti**. Fabrikam, Inc. crea e installa sistemi di gestione dei bagagli negli aeroporti. La maggior parte del software delle varie installazioni è simile, mentre la configurazione del software dipende dal macchinario di gestione dei bagagli installato e dalla modalità di interconnessione dei componenti mediante i nastri trasportatori. All'inizio di un contratto, gli analisti di Fabrikam discutono dei requisiti con il management dell'aeroporto e acquisiscono il piano dell'hardware usando un diagramma di attività UML. Da questo modello il team di sviluppo genera i file di configurazione, il codice del programma, i piani e i documenti dell'utente. Il lavoro viene completato con aggiunte e modifiche manuali al codice. Con l'aumentare dell'esperienza, il team è in grado di estendere l'ambito del materiale generato.  
   
--   **I modelli**. Gli sviluppatori in Contoso, Ltd costruiscono spesso siti Web e progettano lo schema di navigazione usando i diagrammi classi UML. Ogni pagina Web viene rappresentata da una classe e le associazioni rappresentano i collegamenti di navigazione. Gli sviluppatori generano gran parte del codice di un sito Web dal modello. Ogni pagina Web corrisponde a diverse classi e voci del file di risorse.  Questo metodo offre il vantaggio di poter costruire ogni pagina in modo conforme a un unico motivo, rendendolo quindi più affidabile e flessibile rispetto al codice scritto a mano. Il motivo si trova nei modelli di generazione, mentre il modello viene usato per acquisire gli aspetti variabili.  
+- **I modelli**. Gli sviluppatori in Contoso, Ltd costruiscono spesso siti Web e progettano lo schema di navigazione usando i diagrammi classi UML. Ogni pagina Web viene rappresentata da una classe e le associazioni rappresentano i collegamenti di navigazione. Gli sviluppatori generano gran parte del codice di un sito Web dal modello. Ogni pagina Web corrisponde a diverse classi e voci del file di risorse.  Questo metodo offre il vantaggio di poter costruire ogni pagina in modo conforme a un unico motivo, rendendolo quindi più affidabile e flessibile rispetto al codice scritto a mano. Il motivo si trova nei modelli di generazione, mentre il modello viene usato per acquisire gli aspetti variabili.  
   
--   **Gli schemi**. Humongous Insurance ha migliaia di sistemi in tutto il mondo. Questi sistemi usano database, linguaggi e interfacce diversi. Il team di architettura centrale pubblica internamente modelli per i concetti e i processi aziendali. Da questi modelli i team locali generano parte dei propri schemi di database e di scambio, le dichiarazioni nel codice del programma e così via. La presentazione grafica dei modelli consente ai team di discutere le proposte. I team creano più diagrammi che mostrano i subset del modello che si applicano a diverse aree aziendali. Usano anche i colori per evidenziare le aree soggette a modifiche.  
+- **Gli schemi**. Humongous Insurance ha migliaia di sistemi in tutto il mondo. Questi sistemi usano database, linguaggi e interfacce diversi. Il team di architettura centrale pubblica internamente modelli per i concetti e i processi aziendali. Da questi modelli i team locali generano parte dei propri schemi di database e di scambio, le dichiarazioni nel codice del programma e così via. La presentazione grafica dei modelli consente ai team di discutere le proposte. I team creano più diagrammi che mostrano i subset del modello che si applicano a diverse aree aziendali. Usano anche i colori per evidenziare le aree soggette a modifiche.  
   
 ## <a name="important-techniques-for-generating-artifacts"></a>Tecniche importanti per la generazione di elementi  
  Negli esempi precedenti i modelli sono stati usati per diversi scopi aziendali e l'interpretazione degli elementi di modellazione, come le classi e le attività, varia da un'applicazione all'altra. Le tecniche seguenti sono utili quando si generano gli elementi dai modelli.  
   
--   **I profili**. Anche in un'unica area aziendale, l'interpretazione di un tipo di elemento può variare. Ad esempio, in un diagramma sito Web alcune classi possono rappresentare le pagine Web, mentre altre i blocchi di contenuto. Per semplificare la registrazione di queste differenze per gli utenti, definire gli stereotipi. Gli stereotipi consentono anche di collegare altre proprietà da applicare agli elementi dello stesso tipo. Gli stereotipi vengono forniti all'interno dei profili. Per altre informazioni, vedere [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md).  
+- **I profili**. Anche in un'unica area aziendale, l'interpretazione di un tipo di elemento può variare. Ad esempio, in un diagramma sito Web alcune classi possono rappresentare le pagine Web, mentre altre i blocchi di contenuto. Per semplificare la registrazione di queste differenze per gli utenti, definire gli stereotipi. Gli stereotipi consentono anche di collegare altre proprietà da applicare agli elementi dello stesso tipo. Gli stereotipi vengono forniti all'interno dei profili. Per altre informazioni, vedere [definire un profilo per estendere UML](../modeling/define-a-profile-to-extend-uml.md).  
   
      Nel codice del modello è facile accedere agli stereotipi definiti in un oggetto. Ad esempio:  
   
@@ -322,14 +322,14 @@ namespace Test{
        (s => s.Profile == profile && s.Name == stereo ); }  
     ```  
   
--   **Modelli vincolati**. Non tutti i modelli che è possibile creare sono validi per qualsiasi scopo. Ad esempio, nei modelli per la gestione dei bagagli negli aeroporti di Fabrikam non sarebbe appropriato avere un banco dell'accettazione senza un nastro trasportatore in uscita. È possibile definire le funzioni di convalida che consentono agli utenti di rispettare questi vincoli. Per altre informazioni, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).  
+- **Modelli vincolati**. Non tutti i modelli che è possibile creare sono validi per qualsiasi scopo. Ad esempio, nei modelli per la gestione dei bagagli negli aeroporti di Fabrikam non sarebbe appropriato avere un banco dell'accettazione senza un nastro trasportatore in uscita. È possibile definire le funzioni di convalida che consentono agli utenti di rispettare questi vincoli. Per altre informazioni, vedere [definire vincoli di convalida per i modelli UML](../modeling/define-validation-constraints-for-uml-models.md).  
   
--   **Mantenere le modifiche manuali**. Solo alcuni file della soluzione possono essere generati da un modello. Nella maggior parte dei casi è necessario aggiungere o modificare il contenuto generato manualmente. Tuttavia, è importante che queste modifiche manuali vengano mantenute quando la trasformazione del modello viene eseguita di nuovo.  
+- **Mantenere le modifiche manuali**. Solo alcuni file della soluzione possono essere generati da un modello. Nella maggior parte dei casi è necessario aggiungere o modificare il contenuto generato manualmente. Tuttavia, è importante che queste modifiche manuali vengano mantenute quando la trasformazione del modello viene eseguita di nuovo.  
   
      Se i modelli generano codice [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] linguaggi, in modo che gli sviluppatori possono aggiungere i metodi e codice devono generare le classi parziali. Inoltre, è utile generare ogni classe sotto forma di coppia: una classe di base astratta che contiene i metodi e una classe a eredità che contiene solo il costruttore. In questo modo, gli sviluppatori possono eseguire l'override dei metodi. Per l'override dell'inizializzazione è necessario usare un metodo separato invece dei costruttori.  
   
      Se un modello genera XML e altri tipi di output, può risultare più difficile mantenere separato il contenuto manuale da quello generato. Un metodo consiste nel creare un'attività nel processo di compilazione che combini i due file. Un altro metodo è pensato per gli sviluppatori e consente di modificare una copia locale del modello di generazione.  
   
--   **Spostare il codice in un assembly separato**. Non si consiglia di scrivere grandi quantità di codice nei modelli. È preferibile mantenere il contenuto generato separato dal calcolo. I modelli di testo non sono supportati correttamente per la modifica del codice.  
+- **Spostare il codice in un assembly separato**. Non si consiglia di scrivere grandi quantità di codice nei modelli. È preferibile mantenere il contenuto generato separato dal calcolo. I modelli di testo non sono supportati correttamente per la modifica del codice.  
   
      Al contrario, se è necessario eseguire calcoli sostanziali per generare il testo, compilare queste funzioni in un assembly separato e chiamarne i metodi dal modello.

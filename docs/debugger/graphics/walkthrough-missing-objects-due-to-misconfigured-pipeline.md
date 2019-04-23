@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097609"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: oggetti mancanti a causa di una pipeline configurata in modo non corretto
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.
 
  In questa procedura dettagliata vengono illustrate le attività seguenti:
 
--   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
+- Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
 
--   Uso della finestra **Fasi pipeline grafica** per esaminare l'effetto della chiamata dell'API Direct3D `DrawIndexed` .
+- Uso della finestra **Fasi pipeline grafica** per esaminare l'effetto della chiamata dell'API Direct3D `DrawIndexed` .
 
--   Esame del contesto di dispositivo per confermare la mancata impostazione di una fase degli shader.
+- Esame del contesto di dispositivo per confermare la mancata impostazione di una fase degli shader.
 
--   Uso della finestra **Fasi pipeline grafica** insieme a **Stack di chiamate eventi di grafica** per semplificare l'individuazione del pixel shader non impostato.
+- Uso della finestra **Fasi pipeline grafica** insieme a **Stack di chiamate eventi di grafica** per semplificare l'individuazione del pixel shader non impostato.
 
 ## <a name="scenario"></a>Scenario
  Quando un oggetto è mancante in un'app 3D, a volte il problema è dovuto alla mancata impostazione di una delle fasi degli shader prima del rendering dell'oggetto. Nelle app con esigenze di rendering semplici, l'origine di questo errore si trova in genere all'interno dello stack di chiamate della chiamata di disegno dell'oggetto. Tuttavia, per motivi di ottimizzazione, alcune app riuniscono in batch gli oggetti che hanno in comune programmi shader, trame o altri dati per ridurre al minimo il sovraccarico prodotto dalle modifiche di stato. In queste app l'origine dell'errore potrebbe essere nascosta nel sistema di batch, anziché trovarsi nello stack di chiamate della chiamata di disegno. Poiché lo scenario di questa procedura dettagliata descrive un'app con esigenze di rendering semplici, l'origine dell'errore si trova nello stack di chiamate.

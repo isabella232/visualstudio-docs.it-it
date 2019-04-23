@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105305"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: Creazione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Processori di direttiva * funzionano aggiungendo codice per il *classe transform
 
  Di seguito vengono illustrate le attività incluse nella procedura dettagliata:  
 
--   Creazione di un processore di direttiva personalizzato  
+- Creazione di un processore di direttiva personalizzato  
 
--   Registrazione del processore di direttiva  
+- Registrazione del processore di direttiva  
 
--   Test del processore di direttiva  
+- Test del processore di direttiva  
 
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario disporre di:  
 
--   Visual Studio 2010  
+- Visual Studio 2010  
 
--   Visual Studio 2010 SDK  
+- Visual Studio 2010 SDK  
 
 ## <a name="creating-a-custom-directive-processor"></a>Creazione di un processore di direttiva personalizzato  
  In questa procedura dettagliata viene creato un processore di direttiva personalizzato. Si aggiunge una direttiva personalizzata che legge un file XML, lo archivia in una variabile <xref:System.Xml.XmlDocument> e lo espone tramite una proprietà. Nella sezione "Test del processore di direttiva", si utilizza questa proprietà in un modello di testo per accedere al file XML.  
@@ -83,18 +83,18 @@ End Property
 
 #### <a name="to-create-a-custom-directive-processor"></a>Per creare un processore di direttiva personalizzato  
 
-1.  In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato CustomDP.  
+1. In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato CustomDP.  
 
     > [!NOTE]
     >  Se si desidera installare il processore di direttiva su più di un computer, è meglio utilizzare un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) e includere un file .pkgdef nell'estensione. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).  
 
-2.  Aggiungere riferimenti a questi assembly:  
+2. Aggiungere riferimenti a questi assembly:  
 
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
 
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
 
-3.  Sostituire il codice nel **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.  
+3. Sostituire il codice nel **Class1** con il codice seguente. Questo codice definisce una classe CustomDirectiveProcessor che eredita dalla classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa i metodi necessari.  
 
     ```csharp  
     using System;  
@@ -606,11 +606,11 @@ End Property
     End Namespace  
     ```  
 
-4.  Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] solo, aprire il **Project** dal menu **proprietà CustomDP**. Nel **Application** nella scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.  
+4. Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] solo, aprire il **Project** dal menu **proprietà CustomDP**. Nel **Application** nella scheda **spazio dei nomi radice**, eliminare il valore predefinito, `CustomDP`.  
 
-5.  Nel menu **File** fare clic su **Salva tutto**.  
+5. Nel menu **File** fare clic su **Salva tutto**.  
 
-6.  Scegliere **Compila soluzione** dal menu **Compila**.  
+6. Scegliere **Compila soluzione** dal menu **Compila**.  
 
 ### <a name="build-the-project"></a>Compilare il progetto  
  Compilare il progetto. Scegliere **Compila soluzione** dal menu **Compila**.  
@@ -684,12 +684,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Per creare un file XML da utilizzare nel test del processore di direttiva  
 
-1.  Creare un file di testo denominato `DocFile.xml` usando qualsiasi editor di testo (ad esempio Blocco note).  
+1. Creare un file di testo denominato `DocFile.xml` usando qualsiasi editor di testo (ad esempio Blocco note).  
 
     > [!NOTE]
     >  È possibile creare questo file in qualsiasi percorso, ad esempio C:\Test\DocFile.xml.  
 
-2.  Aggiungere quanto segue al file di testo:  
+2. Aggiungere quanto segue al file di testo:  
 
     ```  
     <?xml version="1.0"?>  
@@ -730,17 +730,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>  
     ```  
 
-3.  Salvare e chiudere il file.  
+3. Salvare e chiudere il file.  
 
 #### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>Per creare un modello di testo per testare il processore di direttiva  
 
-1.  In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato TemplateTest.  
+1. In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato TemplateTest.  
 
-2.  Aggiungere un nuovo file modello di testo denominato TestDP.tt.  
+2. Aggiungere un nuovo file modello di testo denominato TestDP.tt.  
 
-3.  Assicurarsi che il **Custom Tool** proprietà di TestDP.tt sia impostata su `TextTemplatingFileGenerator`.  
+3. Assicurarsi che il **Custom Tool** proprietà di TestDP.tt sia impostata su `TextTemplatingFileGenerator`.  
 
-4.  Modificare il contenuto di TestDP.tt nel testo seguente.  
+4. Modificare il contenuto di TestDP.tt nel testo seguente.  
 
     > [!NOTE]
     >  Assicurarsi di sostituire la stringa <`YOUR PATH>` con il percorso del file DocFile. Xml.  
@@ -832,15 +832,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  In questo esempio, il valore del parametro `Processor` è `CustomDirectiveProcessor`. Il valore del parametro `Processor` deve corrispondere al nome della chiave del Registro di sistema per il processore.  
 
-5.  Nel menu **File** fare clic su **Salva tutto**.  
+5. Nel menu **File** fare clic su **Salva tutto**.  
 
 #### <a name="to-test-the-directive-processor"></a>Per testare il processore di direttiva  
 
-1.  Nelle **Esplora soluzioni**, fare doppio clic su TestDP.tt e quindi fare clic su **Esegui strumento personalizzato**.  
+1. Nelle **Esplora soluzioni**, fare doppio clic su TestDP.tt e quindi fare clic su **Esegui strumento personalizzato**.  
 
      Per la [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] gli utenti, TestDP. txt potrebbe non essere visualizzato nella **Esplora soluzioni** per impostazione predefinita. Per visualizzare tutti i file assegnati al progetto, aprire il **Project** dal menu **Mostra tutti i file**.  
 
-2.  Nelle **Esplora soluzioni**, espandere il nodo TestDP. txt e quindi fare doppio clic su TestDP. txt per aprirlo nell'editor.  
+2. Nelle **Esplora soluzioni**, espandere il nodo TestDP. txt e quindi fare doppio clic su TestDP. txt per aprirlo nell'editor.  
 
      Verrà visualizzato l'output di testo generato. L'output dovrebbe essere simile al seguente:  
 
@@ -879,7 +879,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>Per aggiungere codice HTML al testo generato  
 
-1.  Sostituire il codice in TestDP.tt con il seguente. Il codice HTML è evidenziato. Assicurarsi di sostituire la stringa `YOUR PATH` con il percorso del file DocFile. Xml.  
+1. Sostituire il codice in TestDP.tt con il seguente. Il codice HTML è evidenziato. Assicurarsi di sostituire la stringa `YOUR PATH` con il percorso del file DocFile. Xml.  
 
     > [!NOTE]
     >  Apri altri \<# e chiusura #> tag separano il codice dell'istruzione dai tag HTML.  
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>  
     ```  
 
-2.  Nel **File** menu, fare clic su **Salva TestDP**.  
+2. Nel **File** menu, fare clic su **Salva TestDP**.  
 
-3.  Per visualizzare l'output in un browser, in **Esplora soluzioni**, fare doppio clic su TestDP. htm e fare clic su **Visualizza nel Browser**.  
+3. Per visualizzare l'output in un browser, in **Esplora soluzioni**, fare doppio clic su TestDP. htm e fare clic su **Visualizza nel Browser**.  
 
      L'output deve corrispondere al testo originale con la differenza che deve essere in formato HTML. Ogni nome di elemento deve essere visualizzato in grassetto.

@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764116"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097479"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Procedura: Modello di terreno 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Questo documento illustra come usare l'editor dei modelli per creare un modello 
   
  Questo documento illustra le attività seguenti:  
   
--   Aggiunta di oggetti a una scena  
+- Aggiunta di oggetti a una scena  
   
--   Selezione di facce e punti  
+- Selezione di facce e punti  
   
--   Traslazione delle selezioni  
+- Traslazione delle selezioni  
   
--   Utilizzo dello strumento **Suddividi faccia**  
+- Utilizzo dello strumento **Suddividi faccia**  
   
--   Aggiunta di un frame a un oggetto nell'area di progettazione  
+- Aggiunta di un frame a un oggetto nell'area di progettazione  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Creazione di un modello di terreno 3D  
  È possibile creare un terreno 3D suddividendo un piano in modo da creare facce aggiuntive e quindi manipolando i vertici in modo da creare caratteristiche del terreno interessanti.  

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628390"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096998"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estendere la distribuzione e creazione di pacchetti di SharePoint
   È possibile estendere il processo di creazione di pacchetti e distribuzione per i progetti SharePoint.
@@ -35,9 +35,9 @@ ms.locfileid: "56628390"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Eseguire codice quando una soluzione di SharePoint viene distribuita o ritratto
  È possibile gestire gli eventi per eseguire attività aggiuntive quando una soluzione SharePoint viene distribuita o ritratta. Visual Studio genera eventi che è possibile gestire negli scenari seguenti:
 
--   Prima e dopo l'esecuzione di ogni passaggio di distribuzione per un elemento di progetto SharePoint. Per altre informazioni, vedere [Procedura: Eseguire codice quando vengono eseguiti i passaggi di distribuzione](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Prima e dopo l'esecuzione di ogni passaggio di distribuzione per un elemento di progetto SharePoint. Per altre informazioni, vedere [Procedura: Eseguire codice quando vengono eseguiti i passaggi di distribuzione](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Prima e dopo che un progetto SharePoint viene distribuito o ritratto. Per altre informazioni, vedere [Procedura: Eseguire codice quando un progetto SharePoint viene distribuito o ritratto](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Prima e dopo che un progetto SharePoint viene distribuito o ritratto. Per altre informazioni, vedere [Procedura: Eseguire codice quando un progetto SharePoint viene distribuito o ritratto](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Gestire i conflitti di distribuzione
  Alcuni tipi di elementi di progetto SharePoint, tra cui moduli, Web part, istanze di elenco e tipi di contenuto, forniscono la risoluzione incorporata dei conflitti di distribuzione. Quando si distribuisce una soluzione che contiene uno di questi elementi di progetto, Visual Studio verifica innanzitutto se esiste già un file nel sito di SharePoint con lo stesso nome, URL o ID come file nell'elemento che si sta distribuendo. Se si verifica un conflitto, Visual Studio è in grado di risolvere automaticamente il conflitto o di chiedere conferma all'utente per determinare se desidera risolvere il conflitto o annullare la distribuzione in Visual Studio. Per altre informazioni, vedere [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
