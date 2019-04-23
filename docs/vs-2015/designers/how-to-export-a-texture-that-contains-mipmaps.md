@@ -9,23 +9,23 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 732fa9a5d32916545b281a006cbeeaa93771f3ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f525f4b31a3535f6ea7b89d0443402240365cc7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088652"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: esportare una trama che contiene mipmap
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procedura: Esportare una trama che contiene mipmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La pipeline di contenuti immagine può generare mipmap da un'immagine di origine come parte della fase di compilazione del progetto. Se non è necessario specificare manualmente il contenuto dell'immagine di ogni livello MIP, operazione che è possibile eseguire per ottenere alcuni effetti, la creazione di mipmap in fase di compilazione garantisce che il contenuto mipmap sia sempre sincronizzato e consente di eliminare i costi di prestazione per generare mipmap in fase di esecuzione.  
   
  Questo documento illustra le attività seguenti:  
   
--   Configurazione dell'immagine di origine che deve essere elaborata dalla pipeline di contenuti immagine.  
+- Configurazione dell'immagine di origine che deve essere elaborata dalla pipeline di contenuti immagine.  
   
--   Configurazione di pipeline di contenuti immagine per generare mipmap.  
+- Configurazione di pipeline di contenuti immagine per generare mipmap.  
   
 ## <a name="exporting-mipmaps"></a>Esportazione di mipmap  
  La creazione di mipmap offre un livello di dettaglio automatico sullo spazio della schermata per aree con trame in giochi 3D o in app. Migliora le prestazioni di rendering di un gioco o di un'app pre-elaborando versioni a campionamento ridotto di una trama in modo che l'intera trama non debba essere elaborata ogni volta che viene campionata.  

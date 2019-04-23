@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106329"
 ---
 # <a name="integration-with-xml-editor"></a>Integrazione con l'editor XML
 
 Progettazione XML Schema è integrato con l'editor XML. Se si modifica un file XSD nell'editor XML, la modifica si rifletterà nel [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se si dispone di [visualizzazione grafico](../xml-tools/graph-view.md) o il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) aperta, la modifica si rifletterà anche presenti. È possibile spostarsi tra Progettazione XML Schema e l'editor XML nei modi seguenti:
 
--   Nell'editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.
+- Nell'editor XML, fare doppio clic su un nodo e selezionare **Mostra in XML Schema Explorer**.
 
--   Nella visualizzazione grafico e la **XML Schema Explorer**, fare doppio clic su un nodo, o fare doppio clic su un nodo e selezionare **Visualizza codice**. Nella visualizzazione modello di contenuto, fare doppio clic su un nodo e selezionare **Visualizza codice**.
+- Nella visualizzazione grafico e la **XML Schema Explorer**, fare doppio clic su un nodo, o fare doppio clic su un nodo e selezionare **Visualizza codice**. Nella visualizzazione modello di contenuto, fare doppio clic su un nodo e selezionare **Visualizza codice**.
 
 Lo screenshot seguente mostra uno Schema XML aperto nel **XML Schema Explorer**. Il **XML Schema Explorer** consente di visualizzare l'insieme in una visualizzazione struttura ad albero dello schema. L'editor XML consente di visualizzare la visualizzazione di testo del nodo attualmente attivo nel **XML Schema Explorer**.
 

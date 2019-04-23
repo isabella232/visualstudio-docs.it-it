@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07bd9e469d090ffb97e166ce943397b51aedd497
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105019"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvare i dati in una transazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-create-the-new-windows-project"></a>Per creare il nuovo progetto Windows  
   
-1.  In Visual Studio sul **File** menu, creare un nuovo **progetto**.  
+1. In Visual Studio sul **File** menu, creare un nuovo **progetto**.  
   
-2.  Denominare il progetto **SavingDataInATransactionWalkthrough**.  
+2. Denominare il progetto **SavingDataInATransactionWalkthrough**.  
   
-3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **SavingDataInATransactionWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.  
   
@@ -53,27 +53,27 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Nel **Data** dal menu**Mostra origini dati**.  
+1. Nel **Data** dal menu**Mostra origini dati**.  
   
-2.  Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
+2. Nella finestra **Origini dati** selezionare **Aggiungi nuova origine dati** per avviare la **Configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
+3. Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
   
-4.  Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
+4. Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
   
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
          -oppure-  
   
-    -   Selezionare **Nuova connessione** per avviare la finestra di dialogo **Aggiungi/Modifica connessione** e creare una connessione al database Northwind.  
+    - Selezionare **Nuova connessione** per avviare la finestra di dialogo **Aggiungi/Modifica connessione** e creare una connessione al database Northwind.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
+5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.  
+6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione** schermata, seleziona **successivo**.  
   
-7.  Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.  
+7. Nel **Scegli oggetti di Database** schermata, quindi espandere il **tabelle** nodo.  
   
-8.  Selezionare il `Customers` e `Orders` tabelle e quindi selezionare **fine**.  
+8. Selezionare il `Customers` e `Orders` tabelle e quindi selezionare **fine**.  
   
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle `Customers` e `Orders` vengono visualizzate nella finestra **Origini dati**.  
   
@@ -82,13 +82,13 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>Per creare dati associati a controlli nel form di Windows  
   
--   Nel **Zdroje dat** finestra, espandere il **clienti** nodo.  
+- Nel **Zdroje dat** finestra, espandere il **clienti** nodo.  
   
--   Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
+- Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
   
      Nel form vengono visualizzati un controllo <xref:System.Windows.Forms.DataGridView> e un controllo ToolStrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Trascinare i relativi **ordini** nodo (non principale **ordini** nodo, ma il nodo della tabella figlio correlata riportato di seguito il **Fax** colonna) nel form sotto la  **CustomersDataGridView**.  
+- Trascinare i relativi **ordini** nodo (non principale **ordini** nodo, ma il nodo della tabella figlio correlata riportato di seguito il **Fax** colonna) nel form sotto la  **CustomersDataGridView**.  
   
      Nel form verrà visualizzato un oggetto <xref:System.Windows.Forms.DataGridView>. Un oggetto OrdersTableAdapter e <xref:System.Windows.Forms.BindingSource> vengono visualizzati nella barra dei componenti.  
   
@@ -97,9 +97,9 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Per aggiungere un riferimento al file DLL System.Transactions.  
   
-1.  Nel **Project** dal menu**Aggiungi riferimento**.  
+1. Nel **Project** dal menu**Aggiungi riferimento**.  
   
-2.  Selezionare **System. Transactions**(nelle **.NET** scheda), quindi selezionare **OK**.  
+2. Selezionare **System. Transactions**(nelle **.NET** scheda), quindi selezionare **OK**.  
   
      Al progetto viene aggiunto un riferimento a **System.Transactions**.  
   
@@ -117,38 +117,38 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
    L'ordine di riconciliazione delle modifiche ai dati correlati è il seguente:  
   
--   Eliminare i record figlio. (In questo caso, eliminare i record di `Orders` tabella.)  
+- Eliminare i record figlio. (In questo caso, eliminare i record di `Orders` tabella.)  
   
--   Eliminare i record padre. (In questo caso, eliminare i record di `Customers` tabella.)  
+- Eliminare i record padre. (In questo caso, eliminare i record di `Customers` tabella.)  
   
--   Inserire i record padre. (In questo caso, inserire i record nella `Customers` tabella.)  
+- Inserire i record padre. (In questo caso, inserire i record nella `Customers` tabella.)  
   
--   Inserire i record figlio. (In questo caso, inserire i record nella `Orders` tabella.)  
+- Inserire i record figlio. (In questo caso, inserire i record nella `Orders` tabella.)  
   
 #### <a name="to-delete-existing-orders"></a>Per eliminare gli ordini esistenti  
   
--   Aggiungere il metodo `DeleteOrders` seguente in **Form1**:  
+- Aggiungere il metodo `DeleteOrders` seguente in **Form1**:  
   
      [!code-csharp[VbRaddataSaving#5](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#5)]
      [!code-vb[VbRaddataSaving#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#5)]  
   
 #### <a name="to-delete-existing-customers"></a>Per eliminare i clienti esistenti  
   
--   Aggiungere il metodo `DeleteCustomers` seguente in **Form1**:  
+- Aggiungere il metodo `DeleteCustomers` seguente in **Form1**:  
   
      [!code-csharp[VbRaddataSaving#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#6)]
      [!code-vb[VbRaddataSaving#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#6)]  
   
 #### <a name="to-add-new-customers"></a>Per aggiungere nuovi clienti  
   
--   Aggiungere il metodo `AddNewCustomers` seguente in **Form1**:  
+- Aggiungere il metodo `AddNewCustomers` seguente in **Form1**:  
   
      [!code-csharp[VbRaddataSaving#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#7)]
      [!code-vb[VbRaddataSaving#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#7)]  
   
 #### <a name="to-add-new-orders"></a>Per aggiungere nuovi ordini  
   
--   Aggiungere il metodo `AddNewOrders` seguente in **Form1**:  
+- Aggiungere il metodo `AddNewOrders` seguente in **Form1**:  
   
      [!code-csharp[VbRaddataSaving#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#8)]
      [!code-vb[VbRaddataSaving#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#8)]  
@@ -157,7 +157,7 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 #### <a name="to-run-the-application"></a>Per eseguire l'applicazione  
   
--   Selezionare **F5** per eseguire l'applicazione.  
+- Selezionare **F5** per eseguire l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

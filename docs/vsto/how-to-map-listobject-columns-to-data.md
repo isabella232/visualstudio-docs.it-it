@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6e693bf216cedf2734d78ca13662739981f235
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092695"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Procedura: Eseguire il mapping delle colonne ListObject ai dati
   Quando si associa un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> a un oggetto <xref:System.Data.DataTable>, è possibile che non si voglia visualizzare tutte le colonne in un elenco o che alcune colonne non siano associate a dati. È possibile mappare le colonne da visualizzare nel <xref:Microsoft.Office.Tools.Excel.ListObject> quando si chiama il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> .
@@ -31,17 +31,17 @@ ms.locfileid: "56639895"
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Per mappare una tabella dati alle colonne in un elenco
 
-1.  Creare l'oggetto <xref:System.Data.DataTable> a livello di classe.
+1. Creare l'oggetto <xref:System.Data.DataTable> a livello di classe.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2.  Aggiungere le colonne di esempio e i dati nel `Startup` gestore dell'evento del `Sheet1` classe (in un progetto a livello di documento) o `ThisAddIn` classe (in un progetto di componente aggiuntivo VSTO).
+2. Aggiungere le colonne di esempio e i dati nel `Startup` gestore dell'evento del `Sheet1` classe (in un progetto a livello di documento) o `ThisAddIn` classe (in un progetto di componente aggiuntivo VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3.  Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. L'oggetto elenco verrà associato all'oggetto appena creato <xref:System.Data.DataTable>, ma l'ordine delle colonne nell'oggetto elenco sarà diverso dall'ordine vengono visualizzati nei <xref:System.Data.DataTable>.
+3. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. L'oggetto elenco verrà associato all'oggetto appena creato <xref:System.Data.DataTable>, ma l'ordine delle colonne nell'oggetto elenco sarà diverso dall'ordine vengono visualizzati nei <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
@@ -51,7 +51,7 @@ ms.locfileid: "56639895"
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Per specificare una colonna non mappata durante il mapping delle colonne ListObject
 
-1.  Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. Usare una stringa vuota per indicare dove viene aggiunta una colonna non mappata, in questo caso tra la colonna del titolo e la colonna del cognome.
+1. Chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passare i nomi delle colonne nell'ordine in cui dovrebbero essere visualizzate. Usare una stringa vuota per indicare dove viene aggiunta una colonna non mappata, in questo caso tra la colonna del titolo e la colonna del cognome.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]

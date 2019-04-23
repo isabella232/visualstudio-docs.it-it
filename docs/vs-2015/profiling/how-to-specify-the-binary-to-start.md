@@ -15,37 +15,37 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098428"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare l'inizio del file binario
+# <a name="how-to-specify-the-binary-to-start"></a>Procedura: Specificare il file binario da avviare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per profilare file binari, ad esempio le DLL, è necessario immettere informazioni nella finestra di dialogo **Pagine delle proprietà di \<destinazione>**. Queste informazioni indicano dove il progetto DLL può trovare l'applicazione chiamante.  
   
  **Requisiti**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>Per specificare l'eseguibile da avviare  
   
-1.  In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul file binario di destinazione e quindi scegliere **Proprietà**.  
+1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sul file binario di destinazione e quindi scegliere **Proprietà**.  
   
-2.  Nella finestra di dialogo **Pagine delle proprietà** fare clic sulle proprietà di **Avvio**.  
+2. Nella finestra di dialogo **Pagine delle proprietà** fare clic sulle proprietà di **Avvio**.  
   
-3.  Selezionare la casella di controllo **Eseguire l'override delle impostazioni progetto**.  
+3. Selezionare la casella di controllo **Eseguire l'override delle impostazioni progetto**.  
   
-4.  Nella casella di testo **Eseguibile da avviare** specificare il percorso del file.  
+4. Nella casella di testo **Eseguibile da avviare** specificare il percorso del file.  
   
-5.  Nella casella di testo **Argomenti** specificare gli argomenti necessari per avviare l'applicazione.  
+5. Nella casella di testo **Argomenti** specificare gli argomenti necessari per avviare l'applicazione.  
   
-6.  Nella casella di testo **Directory di lavoro** specificare il percorso della directory.  
+6. Nella casella di testo **Directory di lavoro** specificare il percorso della directory.  
   
-7.  Fare clic su **OK**.  
+7. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configurazione di sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

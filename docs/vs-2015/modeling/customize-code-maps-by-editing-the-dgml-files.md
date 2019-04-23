@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98d754bfc5f68acf693f37f98347c8c60075beaa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "59001805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088730"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
 > [!NOTE]
 >  Per creare mappe codice, è necessario usare Visual Studio Enterprise. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.  
   
-##  <a name="OrganizeNodes"></a> Raggruppare elementi di codice  
+## <a name="OrganizeNodes"></a> Raggruppare elementi di codice  
  È possibile aggiungere nuovi gruppi o convertire i nodi esistenti in un gruppo.  
   
 1. Aprire il file con estensione dgml in un editor di testo o XML.  
@@ -80,12 +80,12 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
     Per altre informazioni sul `Category` dell'attributo, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories).  
   
-##  <a name="ChangeGraphStyle"></a> Modificare lo stile della mappa  
+## <a name="ChangeGraphStyle"></a> Modificare lo stile della mappa  
  È possibile modificare il colore di sfondo e del bordo della mappa modificando il file con estensione dgml della mappa. Per modificare lo stile degli elementi di codice e collegamenti, vedere [modificare lo stile degli elementi di codice e collegamenti](#Highlight).  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Nell'elemento `<DirectedGraph>` aggiungere uno qualsiasi dei seguenti attributi per modificarne lo stile:  
+2. Nell'elemento `<DirectedGraph>` aggiungere uno qualsiasi dei seguenti attributi per modificarne lo stile:  
   
      Colore di sfondo  
   
@@ -108,25 +108,25 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a> Modificare lo stile degli elementi di codice e collegamenti  
+## <a name="Highlight"></a> Modificare lo stile degli elementi di codice e collegamenti  
   
-###  <a name="CreateCustomStyles"></a>   
+### <a name="CreateCustomStyles"></a>   
  È possibile applicare stili personalizzati agli elementi di codice seguenti:  
   
--   Singoli elementi di codice e collegamenti  
+- Singoli elementi di codice e collegamenti  
   
--   Gruppi di elementi di codice e collegamenti  
+- Gruppi di elementi di codice e collegamenti  
   
--   Gruppi di elementi di codice e collegamenti in base a determinate condizioni  
+- Gruppi di elementi di codice e collegamenti in base a determinate condizioni  
   
 > [!TIP]
 >  Se sono presenti stili ripetuti in molti elementi di codice o collegamenti, è possibile applicare una categoria quegli elementi di codice oppure ai collegamenti e quindi applicare uno stile a quella categoria. Per altre informazioni, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories) e [assegnare proprietà a elementi di codice e collegamenti](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Per applicare uno stile personalizzato a un singolo elemento di codice  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Individuare l'elemento `<Node/>` dell'elemento di codice. Aggiungere uno qualsiasi di questi attributi per personalizzarne lo stile:  
+2. Individuare l'elemento `<Node/>` dell'elemento di codice. Aggiungere uno qualsiasi di questi attributi per personalizzarne lo stile:  
   
      Colore di sfondo  
   
@@ -215,11 +215,11 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
 ##### <a name="to-apply-a-custom-style-to-a-single-link"></a>Per applicare uno stile personalizzato a un singolo collegamento  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
+2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
   
-3.  Nell'elemento `<Link/>` aggiungere uno qualsiasi dei seguenti attributi per personalizzarne lo stile:  
+3. Nell'elemento `<Link/>` aggiungere uno qualsiasi dei seguenti attributi per personalizzarne lo stile:  
   
      Colore di contorno e punta della freccia  
   
@@ -376,11 +376,11 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
  In questo esempio:  
   
-1.  Se `Coverage` è > 80, quindi impostare il `Background` proprietà verde.  
+1. Se `Coverage` è > 80, quindi impostare il `Background` proprietà verde.  
   
-2.  Se invece `Coverage` è > 50, quindi impostare il `Background` proprietà di una sfumatura di arancione in base al valore del `Coverage` proprietà.  
+2. Se invece `Coverage` è > 50, quindi impostare il `Background` proprietà di una sfumatura di arancione in base al valore del `Coverage` proprietà.  
   
-3.  Diversamente impostare la proprietà `Background` su una sfumatura di rosso in base al valore della proprietà `Coverage`.  
+3. Diversamente impostare la proprietà `Background` su una sfumatura di rosso in base al valore della proprietà `Coverage`.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -438,14 +438,14 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a> Assegnare proprietà a elementi di codice e collegamenti  
+## <a name="AssignProperties"></a> Assegnare proprietà a elementi di codice e collegamenti  
  È possibile organizzare elementi di codice e collegamenti mediante l'assegnazione di proprietà. Ad esempio, è possibile selezionare elementi di codice con proprietà specifiche in modo che sia possibile raggrupparli, modificarne lo stile o nasconderli.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Per assegnare una proprietà a un elemento di codice  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Ad esempio:  
+2. Individuare l'elemento `<Node/>` per tale elemento di codice. Specificare il nome della proprietà e il relativo valore. Ad esempio:  
   
     ```xml  
     <Nodes>  
@@ -453,7 +453,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
     </Nodes>  
     ```  
   
-3.  Aggiungere un elemento `<Property/>` alla sezione `<Properties>` per specificare attributi quali il nome visibile e il tipo di dati:  
+3. Aggiungere un elemento `<Property/>` alla sezione `<Properties>` per specificare attributi quali il nome visibile e il tipo di dati:  
   
     ```xml  
     <Properties>  
@@ -463,11 +463,11 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
 #### <a name="to-assign-a-property-to-a-link"></a>Per assegnare una proprietà a un collegamento  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
+2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
   
-3.  Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Ad esempio:  
+3. Nell'elemento `<Node/>` specificare il nome della proprietà e il relativo valore. Ad esempio:  
   
     ```xml  
     <Links>  
@@ -475,7 +475,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
     </Links>  
     ```  
   
-4.  Aggiungere un elemento `<Property/>` alla sezione `<Properties>` per specificare attributi quali il nome visibile e il tipo di dati:  
+4. Aggiungere un elemento `<Property/>` alla sezione `<Properties>` per specificare attributi quali il nome visibile e il tipo di dati:  
   
     ```xml  
     <Properties>  
@@ -483,16 +483,16 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a> Assegnare categorie a elementi di codice e collegamenti  
+## <a name="AssignCategories"></a> Assegnare categorie a elementi di codice e collegamenti  
  Nelle sezioni seguenti viene illustrato come è possibile organizzare elementi di codice mediante l'assegnazione di categorie e come è possibile creare categorie gerarchiche che consentono di organizzare elementi di codice e aggiungere attributi alle categorie figlio tramite l'ereditarietà.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>Per assegnare una categoria a un elemento di codice  
   
--   Aprire il file con estensione dgml in un editor di testo o XML.  
+- Aprire il file con estensione dgml in un editor di testo o XML.  
   
--   Individuare l'elemento `<Node/>` per l'elemento di codice desiderato.  
+- Individuare l'elemento `<Node/>` per l'elemento di codice desiderato.  
   
--   Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:  
+- Nell'elemento `<Node/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:  
   
     ```xml  
     <Nodes>  
@@ -510,11 +510,11 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
 #### <a name="to-assign-a-category-to-a-link"></a>Per assegnare una categoria a un collegamento  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
+2. Individuare l'elemento `<Link/>` che contiene i nomi dell'elemento di codice sorgente e di quello di destinazione.  
   
-3.  Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:  
+3. Nell'elemento `<Link/>` aggiungere un attributo `Category` per specificare il nome della categoria. Ad esempio:  
   
     ```xml  
     <Links>  
@@ -522,7 +522,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
     </Links>  
     ```  
   
-4.  Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile utilizzare l'attributo `Label` per specificare il testo visualizzato per tale categoria:  
+4. Aggiungere un elemento `<Category/>` alla sezione `<Categories>` in modo che sia possibile utilizzare l'attributo `Label` per specificare il testo visualizzato per tale categoria:  
   
     ```xml  
     <Categories>  
@@ -532,9 +532,9 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
 #### <a name="to-create-hierarchical-categories"></a>Per creare categorie gerarchiche  
   
-1.  Aprire il file con estensione dgml in un editor di testo o XML.  
+1. Aprire il file con estensione dgml in un editor di testo o XML.  
   
-2.  Aggiungere un elemento `<Category/>` per la categoria padre, quindi aggiungere l'attributo `BasedOn` all'elemento `<Category/>` della categoria figlio.  
+2. Aggiungere un elemento `<Category/>` per la categoria padre, quindi aggiungere l'attributo `BasedOn` all'elemento `<Category/>` della categoria figlio.  
   
      Ad esempio:  
   
@@ -554,7 +554,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
      In questo esempio lo sfondo di `MyFirstNode` è verde perché il relativo attributo `Category` eredita l'attributo `Background` di `MyParentCategory`.  
   
-##  <a name="AddReferences"></a> Collegare documenti o URL a elementi di codice e collegamenti  
+## <a name="AddReferences"></a> Collegare documenti o URL a elementi di codice e collegamenti  
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.  
   
 > [!CAUTION]
@@ -562,13 +562,13 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
  Ad esempio, è possibile collegare i seguenti elementi di codice:  
   
--   Per descrivere le modifiche apportate a una classe, è possibile collegare l'URL di un elemento di codice di lavoro, un documento o un altro file con estensione dgml all'elemento di codice relativo a una classe.  
+- Per descrivere le modifiche apportate a una classe, è possibile collegare l'URL di un elemento di codice di lavoro, un documento o un altro file con estensione dgml all'elemento di codice relativo a una classe.  
   
--   È possibile collegare un diagramma livello a un elemento di codice di gruppo che rappresenta un livello nell'architettura logica del software.  
+- È possibile collegare un diagramma livello a un elemento di codice di gruppo che rappresenta un livello nell'architettura logica del software.  
   
--   Per visualizzare altre informazioni su un componente che espone un'interfaccia, è possibile collegare un diagramma dei componenti all'elemento di codice relativo a tale interfaccia.  
+- Per visualizzare altre informazioni su un componente che espone un'interfaccia, è possibile collegare un diagramma dei componenti all'elemento di codice relativo a tale interfaccia.  
   
--   Collegare un elemento di codice a un elemento di lavoro di Team Foundation Server o bug o ad altre informazioni che sono correlati all'elemento di codice.  
+- Collegare un elemento di codice a un elemento di lavoro di Team Foundation Server o bug o ad altre informazioni che sono correlati all'elemento di codice.  
   
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Per collegare un documento o un URL a un elemento di codice  
   
@@ -602,13 +602,13 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
   
    2. Nella sezione `<Properties>`:  
   
-      1.  Aggiungere un elemento `<Property/>` per ogni nuovo tipo di riferimento.  
+      1. Aggiungere un elemento `<Property/>` per ogni nuovo tipo di riferimento.  
   
-      2.  Impostare l'attributo `Id` sul nome dell'attributo del nuovo riferimento.  
+      2. Impostare l'attributo `Id` sul nome dell'attributo del nuovo riferimento.  
   
-      3.  Aggiungere il `IsReference` dell'attributo e impostarlo `True` affinché il riferimento venga visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.  
+      3. Aggiungere il `IsReference` dell'attributo e impostarlo `True` affinché il riferimento venga visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.  
   
-      4.  Usare la `Label` attributo per specificare il testo visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.  
+      4. Usare la `Label` attributo per specificare il testo visualizzato dell'elemento di codice **Vai a riferimento** menu di scelta rapida.  
   
       Ad esempio:  
   

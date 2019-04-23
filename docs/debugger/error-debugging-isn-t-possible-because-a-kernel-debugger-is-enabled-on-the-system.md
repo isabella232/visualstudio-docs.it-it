@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d876298fd202b96fc6519e5056ca7dd297e386ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 63666302bcbf9f8f44c6121b583f0cf7b259f3ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096972"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Errore: Debug non è&#39;t possibili perché nel sistema è attivato un Debugger del Kernel
 Quando si esegue il debug del codice gestito, è possibile che venga visualizzato il seguente messaggio di errore:
@@ -56,7 +56,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-in-the-current-session"></a>Per disabilitare il debug del kernel nella sessione corrente
 
--   Al prompt dei comandi, digitare:
+- Al prompt dei comandi, digitare:
 
     ```cmd
     Kdbgctrl.exe -d
@@ -64,23 +64,23 @@ Debugging isn't possible because a kernel debugger is enabled on the system
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-windows-vista-and-windows-7"></a>Per disabilitare il debug del kernel per tutte le sessioni (Windows Vista e Windows 7)
 
-1.  Al prompt dei comandi, digitare:
+1. Al prompt dei comandi, digitare:
 
     ```cmd
     bcdedit /debug off
     ```
 
-2.  Riavviare il computer.
+2. Riavviare il computer.
 
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Per disabilitare il debug del kernel per tutte le sessioni (altri sistemi operativi Windows)
 
-1.  Individuare boot.ini nell'unità di sistema, in genere C:\\. Il file boot.ini potrebbe essere nascosto e di sola lettura. Per visualizzarlo, è pertanto necessario utilizzare il seguente comando:
+1. Individuare boot.ini nell'unità di sistema, in genere C:\\. Il file boot.ini potrebbe essere nascosto e di sola lettura. Per visualizzarlo, è pertanto necessario utilizzare il seguente comando:
 
     ```cmd
     dir /ASH
     ```
 
-2.  Aprire boot.ini utilizzando Blocco note e rimuovere le seguenti opzioni:
+2. Aprire boot.ini utilizzando Blocco note e rimuovere le seguenti opzioni:
 
     ```cmd
     /debug
@@ -88,13 +88,13 @@ Debugging isn't possible because a kernel debugger is enabled on the system
     /baudrate
     ```
 
-3.  Riavviare il computer.
+3. Riavviare il computer.
 
 #### <a name="to-debug-with-the-kernel-debugger"></a>Per eseguire il debug con il debugger del kernel
 
-1.  Se il debugger del kernel è collegato, verrà visualizzato un messaggio che chiede se si desidera continuare a eseguire il debug. Scegliere il pulsante per continuare.
+1. Se il debugger del kernel è collegato, verrà visualizzato un messaggio che chiede se si desidera continuare a eseguire il debug. Scegliere il pulsante per continuare.
 
-2.  È possibile che venga generata un'eccezione `User break exception(Int 3).`. In questo caso, digitare il seguente comando del debugger del kernel per continuare a eseguire il debug:
+2. È possibile che venga generata un'eccezione `User break exception(Int 3).`. In questo caso, digitare il seguente comando del debugger del kernel per continuare a eseguire il debug:
 
      `gn`
 

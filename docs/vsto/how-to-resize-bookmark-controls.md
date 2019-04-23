@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090719"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Procedura: Ridimensionare i controlli Bookmark
   Le dimensioni di un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> vengono impostate quando il controllo viene aggiunto a un documento di Microsoft Office Word. È anche possibile ridimensionare tale controllo in un secondo momento.
@@ -47,15 +47,15 @@ ms.locfileid: "56644952"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Per ridimensionare un segnalibro in un progetto a livello di documento in fase di progettazione
 
-1.  Selezionare il segnalibro nella finestra **Proprietà** .
+1. Selezionare il segnalibro nella finestra **Proprietà** .
 
-2.  Aumentare o ridurre il valore della proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
+2. Aumentare o ridurre il valore della proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> .
 
-3.  Aumentare o ridurre il valore della proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
+3. Aumentare o ridurre il valore della proprietà <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> .
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Per ridimensionare un segnalibro in un progetto a livello di documento in fase di esecuzione
 
-1.  Modificare il <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> delle proprietà di un <xref:Microsoft.Office.Tools.Word.Bookmark> è stato creato in fase di esecuzione o in fase di progettazione.
+1. Modificare il <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> delle proprietà di un <xref:Microsoft.Office.Tools.Word.Bookmark> è stato creato in fase di esecuzione o in fase di progettazione.
 
      L'esempio di codice seguente aggiunge cinque caratteri all'inizio di un segnalibro denominato `SampleBookmark`. In questo codice si presuppone che prima del segnalibro siano presenti almeno cinque caratteri di testo.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644952"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Per ridimensionare un segnalibro in un progetto di componente aggiuntivo VSTO in fase di esecuzione
 
-1.  Modificare il <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> delle proprietà di un <xref:Microsoft.Office.Tools.Word.Bookmark> creato in fase di esecuzione.
+1. Modificare il <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> delle proprietà di un <xref:Microsoft.Office.Tools.Word.Bookmark> creato in fase di esecuzione.
 
      L'esempio di codice seguente crea un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> che contiene il testo del primo paragrafo del documento attivo, quindi rimuove cinque caratteri dall'inizio e dalla fine dell'oggetto <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644952"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Per ricreare un segnalibro in un progetto a livello di documento in fase di progettazione
 
-1.  Selezionare il testo da includere nel nuovo controllo <xref:Microsoft.Office.Tools.Word.Bookmark> .
+1. Selezionare il testo da includere nel nuovo controllo <xref:Microsoft.Office.Tools.Word.Bookmark> .
 
-2.  Scegliere **Segnalibro** dal menu **Inserisci**.
+2. Scegliere **Segnalibro** dal menu **Inserisci**.
 
-3.  Nella finestra di dialogo **Segnalibro** selezionare il nome del segnalibro da ridimensionare e scegliere **Aggiungi**.
+3. Nella finestra di dialogo **Segnalibro** selezionare il nome del segnalibro da ridimensionare e scegliere **Aggiungi**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Aggiungere controlli segnalibro ai documenti di Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

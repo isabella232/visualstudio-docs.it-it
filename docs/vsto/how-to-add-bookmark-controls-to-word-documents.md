@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07afb43ebe34e5bbaba045bf26e83dbf51ed4bc4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104525"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Procedura: Aggiungere controlli segnalibro ai documenti di Word
   Nei progetti a livello di documento, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli al documento nel progetto in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli a qualsiasi documento aperto in fase di esecuzione.
@@ -38,7 +38,7 @@ ms.locfileid: "56631276"
 
   Per altre informazioni sulle <xref:Microsoft.Office.Tools.Word.Bookmark> controlli, vedere [Bookmark (controllo)](../vsto/bookmark-control.md).
 
-##  <a name="designtime"></a> Aggiungere i controlli Bookmark in fase di progettazione
+## <a name="designtime"></a> Aggiungere i controlli Bookmark in fase di progettazione
  Sono disponibili varie modalità di aggiunta di controlli <xref:Microsoft.Office.Tools.Word.Bookmark> al documento in un progetto a livello di documento in fase di progettazione:
 
 - Dalla **Casella degli strumenti**di Visual Studio.
@@ -57,27 +57,27 @@ ms.locfileid: "56631276"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Per aggiungere un controllo Bookmark a un documento dalla casella degli strumenti
 
-1.  Aprire la **Casella degli strumenti** e fare clic sulla scheda **Controlli Word** .
+1. Aprire la **Casella degli strumenti** e fare clic sulla scheda **Controlli Word** .
 
-2.  Trascinare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.
+2. Trascinare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nel documento.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi controllo Bookmark** .
 
-3.  Selezionare il testo o altri elementi che si desidera includere nel segnalibro.
+3. Selezionare il testo o altri elementi che si desidera includere nel segnalibro.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
      Se non si vuole mantenere il nome del segnalibro predefinito, è possibile modificarlo nella finestra **Proprietà** .
 
 #### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>Per aggiungere un controllo Bookmark a un documento in Word
 
-1.  Nel documento ospitato nella finestra di progettazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] posizionare il cursore dove si vuole aggiungere il segnalibro o selezionare il testo che deve essere racchiuso nel segnalibro.
+1. Nel documento ospitato nella finestra di progettazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] posizionare il cursore dove si vuole aggiungere il segnalibro o selezionare il testo che deve essere racchiuso nel segnalibro.
 
-2.  Nella scheda **Inserisci** della barra multifunzione fare clic sul pulsante **Segnalibro** nel gruppo **Collegamenti** .
+2. Nella scheda **Inserisci** della barra multifunzione fare clic sul pulsante **Segnalibro** nel gruppo **Collegamenti** .
 
-3.  Nella finestra di dialogo **Segnalibro** digitare il nome del nuovo segnalibro e fare clic su **Aggiungi**.
+3. Nella finestra di dialogo **Segnalibro** digitare il nome del nuovo segnalibro e fare clic su **Aggiungi**.
 
-##  <a name="runtimedoclevel"></a> Aggiungere i controlli Bookmark in fase di esecuzione in un progetto a livello di documento
+## <a name="runtimedoclevel"></a> Aggiungere i controlli Bookmark in fase di esecuzione in un progetto a livello di documento
  È possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> consente di controllare a livello di codice al documento in fase di esecuzione usando metodi del <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> proprietà del `ThisDocument` classe nel progetto. Ci sono due overload di metodo che è possibile usare per aggiungere un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nei modi seguenti:
 
 - Aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> in corrispondenza di un intervallo specificato.
@@ -88,7 +88,7 @@ ms.locfileid: "56631276"
 
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Per aggiungere un controllo Bookmark a un documento a livello di codice
 
-1.  Nel gestore eventi `ThisDocument_Startup` nel progetto inserire il codice seguente per aggiungere il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> al primo paragrafo nel documento.
+1. Nel gestore eventi `ThisDocument_Startup` nel progetto inserire il codice seguente per aggiungere il controllo <xref:Microsoft.Office.Tools.Word.Bookmark> al primo paragrafo nel documento.
 
      [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
@@ -96,7 +96,7 @@ ms.locfileid: "56631276"
     > [!NOTE]
     >  Se si vuole creare un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> da un oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>esistente, usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark>esistente.
 
-##  <a name="runtimeaddin"></a> Aggiungere i controlli Bookmark in fase di esecuzione in un progetto di componente aggiuntivo VSTO
+## <a name="runtimeaddin"></a> Aggiungere i controlli Bookmark in fase di esecuzione in un progetto di componente aggiuntivo VSTO
  È possibile aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark> controlli a livello di codice a qualsiasi documento aperto in fase di esecuzione usando un componente aggiuntivo VSTO. A tale scopo, generare un elemento host <xref:Microsoft.Office.Tools.Word.Document> basato su un documento aperto e quindi usare i metodi della proprietà <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> di tale elemento host. Ci sono due overload di metodo che è possibile usare per aggiungere un controllo <xref:Microsoft.Office.Tools.Word.Bookmark> nei modi seguenti:
 
 - Aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> in corrispondenza di un intervallo specificato.
@@ -109,7 +109,7 @@ ms.locfileid: "56631276"
 
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Per aggiungere un controllo Bookmark in corrispondenza di un intervallo specificato
 
-1.  Usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Range> dove si vuole aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Range> dove si vuole aggiungere <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      L'esempio di codice seguente aggiunge un nuovo oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> all'inizio del documento attivo. Per usare questo esempio, eseguire il codice dal gestore eventi `ThisAddIn_Startup` in un progetto di componente aggiuntivo VSTO di Word.
 
@@ -118,7 +118,7 @@ ms.locfileid: "56631276"
 
 #### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>Per aggiungere un controllo Bookmark basato su un controllo Bookmark nativo
 
-1.  Usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> esistente che si vuole usare come base per il nuovo oggetto <xref:Microsoft.Office.Tools.Word.Bookmark>.
+1. Usare il metodo <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> e passare l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> esistente che si vuole usare come base per il nuovo oggetto <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
      L'esempio di codice seguente crea un nuovo oggetto <xref:Microsoft.Office.Tools.Word.Bookmark> basato sul primo oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> nel documento attivo. Per usare questo esempio, eseguire il codice dal gestore eventi `ThisAddIn_Startup` in un progetto di componente aggiuntivo VSTO di Word.
 

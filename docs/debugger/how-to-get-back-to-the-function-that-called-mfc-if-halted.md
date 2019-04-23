@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430c1814e83dbd8410b0f172a15d879bb221cf3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114886"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Procedura: Tornare alla funzione che ha chiamato MFC se interrotta
 
@@ -42,7 +42,7 @@ Talvolta è possibile che il codice si interrompa nel message pump. In questo ca
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Passare alla funzione da cui è stato chiamato MFC
 
--   Usare la finestra **Stack di chiamate**.
+- Usare la finestra **Stack di chiamate**.
 
 ## <a name="see-also"></a>Vedere anche
 

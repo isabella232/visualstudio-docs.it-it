@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104330"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "54755038"
   
  È possibile effettuare le seguenti operazioni:  
   
--   Cercare e scaricare set di contenuti, definiti anche libri.  
+- Cercare e scaricare set di contenuti, definiti anche libri.  
   
--   Visualizzare il sommario e cercare gli argomenti in base al titolo.  
+- Visualizzare il sommario e cercare gli argomenti in base al titolo.  
   
--   Cercare gli argomenti nell'indice.  
+- Cercare gli argomenti nell'indice.  
   
--   Cercare informazioni tramite la ricerca full-text.  
+- Cercare informazioni tramite la ricerca full-text.  
   
--   Visualizzare e stampare gli argomenti, nonché contrassegnarli con un segnalibro.  
+- Visualizzare e stampare gli argomenti, nonché contrassegnarli con un segnalibro.  
   
 ## <a name="navigating-the-help-viewer"></a>Navigazione in Help Viewer  
  È possibile cercare informazioni nel contenuto installato usando le schede di navigazione, visualizzare il contenuto installato nella scheda o nelle schede dell'argomento e gestire il contenuto usando la scheda **Gestisci contenuto**. È anche possibile eseguire attività aggiuntive mediante i pulsanti della barra degli strumenti e trovare altre informazioni nell'angolo inferiore destro della finestra.  

@@ -12,49 +12,49 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8680d26020e361fa337e7447b26a7e9a89fc7e2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2fd696e5d1ac30fda19a53490bd494305d4fd82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098454"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Procedura: utilizzare frammenti di codice racchiusi
+# <a name="how-to-use-surround-with-code-snippets"></a>Procedura: Usare frammenti di codice racchiusi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nelle procedure illustrate di seguito viene descritto come usare frammenti di codice racchiusi. I frammenti di codice racchiusi sono disponibili in tre modi: tramite un tasto di scelta rapida, dal menu Modifica e tramite il menu di scelta rapida.  
   
 ### <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Per usare frammenti di codice racchiusi tramite tasti di scelta rapida  
   
-1.  Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
+1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
   
-2.  Nell'Editor di codice selezionare il testo da racchiudere.  
+2. Nell'Editor di codice selezionare il testo da racchiudere.  
   
-3.  Premere CTRL+K, CTRL+S.  
+3. Premere CTRL+K, CTRL+S.  
   
-4.  Selezionare un frammento di codice nell'elenco tramite il mouse oppure digitare il nome del frammento e premere TAB o INVIO.  
+4. Selezionare un frammento di codice nell'elenco tramite il mouse oppure digitare il nome del frammento e premere TAB o INVIO.  
   
 ### <a name="to-use-surround-with-code-snippets-through-the-edit-menu"></a>Per usare frammenti di codice racchiusi tramite il menu Modifica  
   
-1.  Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
+1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
   
-2.  Nell'Editor di codice selezionare il testo da racchiudere.  
+2. Nell'Editor di codice selezionare il testo da racchiudere.  
   
-3.  Scegliere **IntelliSense** dal menu **Modifica** e selezionare il comando **Racchiudi tra**.  
+3. Scegliere **IntelliSense** dal menu **Modifica** e selezionare il comando **Racchiudi tra**.  
   
-4.  Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere TAB o INVIO.  
+4. Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere TAB o INVIO.  
   
      In alternativa, è possibile digitare il nome del frammento di codice e premere TAB o INVIO.  
   
 ### <a name="to-use-surround-with-code-snippets-through-the-context-menu"></a>Per usare frammenti di codice racchiusi tramite il menu di scelta rapida  
   
-1.  Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
+1. Nell'IDE di Visual Studio aprire il file che si vuole modificare.  
   
-2.  Nell'Editor di codice selezionare il testo da racchiudere.  
+2. Nell'Editor di codice selezionare il testo da racchiudere.  
   
-3.  Fare clic con il pulsante destro del mouse sul testo selezionato e selezionare il comando **Racchiudi tra** nel menu di scelta rapida.  
+3. Fare clic con il pulsante destro del mouse sul testo selezionato e selezionare il comando **Racchiudi tra** nel menu di scelta rapida.  
   
-4.  Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere TAB o INVIO.  
+4. Selezionare il frammento di codice dallo strumento per l'inserimento di frammenti di codice e quindi premere TAB o INVIO.  
   
      In alternativa, è possibile digitare il nome del frammento di codice e premere TAB o INVIO.  
   

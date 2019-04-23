@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: configurare il comportamento di richiesta di attendibilità di ClickOnce | Microsoft Docs'
+title: 'Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2869e76b0b5fd70515701352d257530480f0920
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ec30f3200b5a1df587713a2ee2394f52e3fb333
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093215"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procedura: Configurare il comportamento di richiesta di attendibilità di ClickOnce
 È possibile configurare la richiesta di attendibilità ClickOnce per controllare se gli utenti finali disponibile l'opzione di installazione di applicazioni ClickOnce, ad esempio applicazioni Windows Forms, le applicazioni Windows Presentation Foundation, le applicazioni console, browser WPF le applicazioni e soluzioni Office. Per configurare la richiesta di attendibilità, impostando le chiavi del Registro di sistema nel computer di ogni utente finale.
 
  Nella tabella seguente mostra le opzioni di configurazione che possono essere applicate a ognuna delle cinque aree (Internet, siti non attendibili, Computer1, LocalIntranet e siti attendibili).
 
-|Opzione|Valore dell'impostazione del Registro di sistema|Description|
+|Opzione|Valore dell'impostazione del Registro di sistema|Descrizione|
 |------------|----------------------------|-----------------|
 |Abilitare la richiesta di attendibilità.|`Enabled`|La richiesta di attendibilità di ClickOnce è visualizzato in modo che gli utenti finali possono concedere l'attendibilità delle applicazioni ClickOnce.|
 |Limitare la richiesta di attendibilità.|`AuthenticodeRequired`|La richiesta di attendibilità di ClickOnce viene visualizzata solo se le applicazioni ClickOnce sono firmate con un certificato che identifica il server di pubblicazione.|
@@ -53,19 +53,19 @@ ms.locfileid: "56618133"
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per abilitare la richiesta di attendibilità di ClickOnce con l'editor del Registro di sistema
 
-1.  Aprire l'editor del Registro di sistema:
+1. Aprire l'editor del Registro di sistema:
 
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.
 
-    2.  Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
+    2. Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
 
-2.  Trovare la chiave del Registro di sistema seguente:
+2. Trovare la chiave del Registro di sistema seguente:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se la chiave non esiste, crearla.
 
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
 
     |Sottochiave del valore stringa|Value|
     |-------------------------|-----------|
@@ -79,9 +79,9 @@ ms.locfileid: "56618133"
 
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Per abilitare a livello di codice la richiesta di attendibilità di ClickOnce
 
-1.  Creare un Visual Basic o l'oggetto visivo C# console di applicazione in Visual Studio.
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.
 
-2.  Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
+2. Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -105,28 +105,28 @@ ms.locfileid: "56618133"
     key.Close();
     ```
 
-3.  Compilare ed eseguire l'applicazione.
+3. Compilare ed eseguire l'applicazione.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Limitare la richiesta di attendibilità di ClickOnce
  Limitare la richiesta di attendibilità in modo che le soluzioni devono essere firmate con i certificati Authenticode con identità nota prima che vengono richiesto agli utenti di prendere una decisione di attendibilità.
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per limitare la richiesta di attendibilità di ClickOnce tramite l'editor del Registro di sistema
 
-1.  Aprire l'editor del Registro di sistema:
+1. Aprire l'editor del Registro di sistema:
 
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.
 
-    2.  Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
+    2. Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
 
-2.  Trovare la chiave del Registro di sistema seguente:
+2. Trovare la chiave del Registro di sistema seguente:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se la chiave non esiste, crearla.
 
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
 
-    |Sottochiave del valore stringa|Valore|
+    |Sottochiave del valore stringa|Value|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -136,9 +136,9 @@ ms.locfileid: "56618133"
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Per limitare a livello di codice la richiesta di attendibilità di ClickOnce
 
-1.  Creare un Visual Basic o l'oggetto visivo C# console di applicazione in Visual Studio.
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.
 
-2.  Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
+2. Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -162,26 +162,26 @@ ms.locfileid: "56618133"
     key.Close();
     ```
 
-3.  Compilare ed eseguire l'applicazione.
+3. Compilare ed eseguire l'applicazione.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Disabilita la richiesta di attendibilità di ClickOnce
  È possibile disabilitare la richiesta di attendibilità in modo che gli utenti finali non viene forniti l'opzione per installare le soluzioni che non sono già considerati attendibili nel loro criteri di sicurezza.
 
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Per disabilitare la richiesta di attendibilità di ClickOnce utilizzando l'editor del Registro di sistema
 
-1.  Aprire l'editor del Registro di sistema:
+1. Aprire l'editor del Registro di sistema:
 
-    1.  Fare clic su **avviare**, quindi fare clic su **eseguire**.
+    1. Fare clic su **avviare**, quindi fare clic su **eseguire**.
 
-    2.  Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
+    2. Nel **aperto** , digitare `regedit`, quindi fare clic su **OK**.
 
-2.  Trovare la chiave del Registro di sistema seguente:
+2. Trovare la chiave del Registro di sistema seguente:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se la chiave non esiste, crearla.
 
-3.  Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
+3. Aggiungere le seguenti sottochiavi come **valore stringa**, se non esistono già, con i valori associati illustrati nella tabella seguente.
 
     |Sottochiave del valore stringa|Value|
     |-------------------------|-----------|
@@ -193,9 +193,9 @@ ms.locfileid: "56618133"
 
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Per disabilitare a livello di codice la richiesta di attendibilità di ClickOnce
 
-1.  Creare un Visual Basic o l'oggetto visivo C# console di applicazione in Visual Studio.
+1. Creare un'applicazione console Visual Basic o Visual c# in Visual Studio.
 
-2.  Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
+2. Aprire il *Program. vb* oppure *Program.cs* file per la modifica e aggiungere il codice seguente.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -220,7 +220,7 @@ ms.locfileid: "56618133"
 
     ```
 
-3.  Compilare ed eseguire l'applicazione.
+3. Compilare ed eseguire l'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
@@ -229,7 +229,7 @@ ms.locfileid: "56618133"
 - [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Procedura: Aggiungere un autore attendibile a un computer client per applicazioni ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [Procedura: Firmare nuovamente manifesti di applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

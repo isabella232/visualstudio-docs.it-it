@@ -1,5 +1,5 @@
 ---
-title: 'CA3009: Esaminare il codice per le vulnerabilità di inserimento XML'
+title: 'CA3009: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XML injection'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 2daf2713175e9a512a31454ff4b76ef994bb809c
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084622"
 ---
-# <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Esaminare il codice per le vulnerabilità di inserimento XML
+# <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Esaminare il codice per verificare la presenza di vulnerabilità di tipo XML injection
 
 |||
 |-|-|

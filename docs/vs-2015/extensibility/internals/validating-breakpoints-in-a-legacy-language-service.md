@@ -11,12 +11,12 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 075644dc36a25c723f51e7c518cbaf6de8a8bc1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093306"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Convalida dei punti di interruzione in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Un punto di interruzione indica che l'esecuzione del programma deve essere inter
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementazione del supporto per la convalida dei punti di interruzione  
   
--   Il <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo è data la posizione del punto di interruzione. L'implementazione deve decidere se il percorso sia valido e indicare questo restituendo un intervallo di testo che identifica il codice associato la posizione di riga del punto di interruzione.  
+- Il <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo è data la posizione del punto di interruzione. L'implementazione deve decidere se il percorso sia valido e indicare questo restituendo un intervallo di testo che identifica il codice associato la posizione di riga del punto di interruzione.  
   
--   Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso sia valido, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se non è valido.  
+- Restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> se il percorso sia valido, o <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se non è valido.  
   
--   Se il punto di interruzione è valido e il punto di interruzione viene evidenziato l'intervallo di testo.  
+- Se il punto di interruzione è valido e il punto di interruzione viene evidenziato l'intervallo di testo.  
   
--   Se il punto di interruzione non è valido, un messaggio di errore viene visualizzato nella barra di stato.  
+- Se il punto di interruzione non è valido, un messaggio di errore viene visualizzato nella barra di stato.  
   
 ### <a name="example"></a>Esempio  
  In questo esempio viene illustrata un'implementazione del <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodo che chiama il parser per ottenere l'intervallo di codice (se presente) in corrispondenza della posizione specificata.  

@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbb215efc6ddeabda860b3f0cc218f388f8eaeee
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 398d92065b1ff1b5447017c7a21fc0def1e0da52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093137"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName
   
 ## <a name="remarks"></a>Osservazioni  
   
--   Deve essere usata come parte di un comando `devenv /build`, /`clean`, `/rebuild` o `/deploy`.  
+- Deve essere usata come parte di un comando `devenv /build`, /`clean`, `/rebuild` o `/deploy`.  
   
--   Racchiudere le stringhe che includono spazi tra virgolette doppie.  
+- Racchiudere le stringhe che includono spazi tra virgolette doppie.  
   
--   Le informazioni di riepilogo per le compilazioni, compresi gli errori, vengono visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.  
+- Le informazioni di riepilogo per le compilazioni, compresi gli errori, vengono visualizzate nella finestra **Comando** o in qualsiasi file di log specificato con l'opzione `/out`.  
   
 ## <a name="example"></a>Esempio  
  Questo esempio compila il progetto `CSharpConsoleApp` usando la configurazione di compilazione del progetto `Debug` all'interno della configurazione della soluzione `Debug` di `MySolution`.  

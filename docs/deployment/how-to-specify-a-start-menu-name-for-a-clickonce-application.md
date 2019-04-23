@@ -1,5 +1,5 @@
 ---
-title: "Procedura: specificare il nome dal Menu Start per un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: Specificare il nome dal Menu Start per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635618"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085116"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procedura: Specificare il nome di un'applicazione ClickOnce per il menu Start
 Quando un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è installata per l'uso sia online che offline, viene aggiunta una voce per il **avviare** dal menu e il **Aggiungi / Rimuovi programmi** elenco. Per impostazione predefinita, il nome visualizzato è identico al nome dell'assembly dell'applicazione, ma è possibile modificare il nome visualizzato, impostando **Product name** nel **Publish Options** nella finestra di dialogo.
@@ -36,17 +36,17 @@ Quando un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appl
 
 ### <a name="to-specify-a-start-menu-name"></a>Per specificare un nome di menu Start
 
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2.  Fare clic sulla scheda **Pubblica**.
+2. Fare clic sulla scheda **Pubblica**.
 
-3.  Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.
+3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.
 
-4.  Fare clic su **descrizione**.
+4. Fare clic su **descrizione**.
 
-5.  Nel **Publish Options** finestra di dialogo immettere il nome da visualizzare nella **Product name**.
+5. Nel **Publish Options** finestra di dialogo immettere il nome da visualizzare nella **Product name**.
 
-6.  Facoltativamente, è possibile immettere un nome di server di pubblicazione nel **nome dell'editore**.
+6. Facoltativamente, è possibile immettere un nome di server di pubblicazione nel **nome dell'editore**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

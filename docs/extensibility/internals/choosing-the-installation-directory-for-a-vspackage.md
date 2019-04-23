@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106267"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Scegliere la directory di installazione per un pacchetto VSPackage
 Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file system dell'utente. Il percorso dipende se il pacchetto VSPackage gestito o non gestiti, il regime di controllo delle versioni side-by-side e scelta dell'utente.
@@ -47,15 +47,15 @@ Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file syst
 
  Il [gestire i pacchetti VSPackage](../../extensibility/managing-vspackages.md) articolo indica che le voci del Registro di sistema consentono di controllare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] effettivamente Cerca un pacchetto VSPackage satellite DLL. Tuttavia, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricare una DLL satellite in una sottodirectory denominata per un valore LCID, nell'ordine seguente:
 
-1.  Default LCID (identificatore LCID di Visual Studio, ad esempio *\1033* per la lingua inglese)
+1. Default LCID (identificatore LCID di Visual Studio, ad esempio *\1033* per la lingua inglese)
 
-2.  Identificatore LCID predefinito con la varietà di lingua predefinita.
+2. Identificatore LCID predefinito con la varietà di lingua predefinita.
 
-3.  Identificatore LCID predefinito di sistema.
+3. Identificatore LCID predefinito di sistema.
 
-4.  Sistema LCID predefinito con la varietà di lingua predefinita.
+4. Sistema LCID predefinito con la varietà di lingua predefinita.
 
-5.  STATI UNITI Inglese (*. \1033* oppure *. \0x409*).
+5. STATI UNITI Inglese (*. \1033* oppure *. \0x409*).
 
 Se la DLL VSPackage contiene delle risorse e il **SatelliteDll\DllName** voce del Registro di sistema fa riferimento ad esso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricarli nell'ordine sopra indicato.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969166"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104211"
 ---
 # <a name="how-to-view-script-documents"></a>Procedura: Visualizzare documenti script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i file
   
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server  
   
-1.  In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.  
+1. In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.  
   
-2.  Fare doppio clic sul file script che si desidera visualizzare.  
+2. Fare doppio clic sul file script che si desidera visualizzare.  
   
      Il file script sul lato server verrà aperto in una finestra di origine.  
   
 ### <a name="to-view-a-client-side-script-document"></a>Per visualizzare un documento script sul lato client  
   
-1.  In **Esplora soluzioni** aprire il nodo **Documenti script**.  
+1. In **Esplora soluzioni** aprire il nodo **Documenti script**.  
   
-2.  Fare doppio clic sul file script che si desidera visualizzare.  
+2. Fare doppio clic sul file script che si desidera visualizzare.  
   
      Il file script sul lato client verrà aperto in una finestra di origine.  
   

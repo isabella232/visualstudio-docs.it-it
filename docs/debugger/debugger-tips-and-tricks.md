@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097323"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Informazioni su consigli e suggerimenti relativi alla produttività per il Debugger di Visual Studio
 
@@ -74,17 +74,17 @@ Modificando il flusso di esecuzione è possibile eseguire operazioni come testar
 
 #### <a name="to-create-an-object-id"></a>Per creare un ID di oggetto
 
-1.  Impostare un punto di interruzione in prossimità di una variabile che si vuole tenere traccia.
+1. Impostare un punto di interruzione in prossimità di una variabile che si vuole tenere traccia.
 
-2.  Avviare il debugger (**F5**) e interrompere nel punto di interruzione.
+2. Avviare il debugger (**F5**) e interrompere nel punto di interruzione.
 
 3. Trovare la variabile nel **variabili locali** finestra (**Debug > Windows > variabili locali**), la variabile e scegliere **Crea ID oggetto**.
 
     ![Creare un ID di oggetto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Questa variabile è l'ID oggetto.
+4. Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Questa variabile è l'ID oggetto.
 
-5.  Fare doppio clic la variabile dell'ID oggetto e scegli **Aggiungi espressione di controllo**.
+5. Fare doppio clic la variabile dell'ID oggetto e scegli **Aggiungi espressione di controllo**.
 
 Per altre informazioni, vedere [creare un ID di oggetto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Se è necessario eseguire il debug di tipi di problemi comuni per le app a threa
 
 #### <a name="to-show-threads-in-your-source-code"></a>Per visualizzare i thread nel codice sorgente
 
-1.  Durante il debug, fare clic sui **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") nel **Debug** sulla barra degli strumenti.
+1. Durante il debug, fare clic sui **Mostra thread nell'origine** pulsante ![Mostra thread nell'origine](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") nel **Debug** sulla barra degli strumenti.
 
-2.  All'estrema sinistra della finestra, In questa riga, viene visualizzato un *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
+2. All'estrema sinistra della finestra, In questa riga, viene visualizzato un *marcatore del thread* icona ![marcatore del Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") che due fili. Il marcatore del thread indica l'interruzione di un thread in questa posizione.
 
     Si noti che un marcatore del thread potrebbe essere parzialmente nascosta da un punto di interruzione.
 
-3.  Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto.
+3. Posizionare il puntatore del mouse sul marcatore del thread. Viene visualizzato un suggerimento dati. in cui è indicato il nome e il numero ID di ciascun thread interrotto.
 
     È anche possibile visualizzare il percorso del thread dei [finestra Stack in parallelo](../debugger/get-started-debugging-multithreaded-apps.md).
 

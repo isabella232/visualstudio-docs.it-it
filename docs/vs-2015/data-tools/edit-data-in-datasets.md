@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105006"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
   
 #### <a name="to-delete-records-from-a-data-table"></a>Per eliminare i record da una tabella dati  
   
--   Chiamare il <xref:System.Data.DataRow.Delete%2A> metodo di un <xref:System.Data.DataRow>.  
+- Chiamare il <xref:System.Data.DataRow.Delete%2A> metodo di un <xref:System.Data.DataRow>.  
   
      Questo metodo non rimuove fisicamente il record. Al contrario, li contrassegna per l'eliminazione.  
   
@@ -83,7 +83,7 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Per determinare se sono state apportate modifiche alle righe  
   
--   Chiamare il <xref:System.Data.DataSet.HasChanges%2A> metodo per verificare la presenza di un set di dati delle righe modificate.  
+- Chiamare il <xref:System.Data.DataSet.HasChanges%2A> metodo per verificare la presenza di un set di dati delle righe modificate.  
   
      Nell'esempio seguente viene illustrato come controllare il valore restituito dal <xref:System.Data.DataSet.HasChanges%2A> metodo per rilevare se sono presenti tutte le righe modificate in un set di dati denominato `NorthwindDataset1`:  
   
@@ -95,7 +95,7 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Per determinare il tipo di modifiche sono state apportate a una riga  
   
--   Passare un <xref:System.Data.DataRowState> valore per il <xref:System.Data.DataSet.HasChanges%2A> (metodo).  
+- Passare un <xref:System.Data.DataRowState> valore per il <xref:System.Data.DataSet.HasChanges%2A> (metodo).  
   
      Nell'esempio seguente viene illustrato come verificare un set di dati denominato `NorthwindDataset1` per determinare se sono state aggiunte nuove righe a esso:  
   
@@ -105,9 +105,9 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
 ## <a name="to-locate-rows-that-have-errors"></a>Per individuare le righe con errori  
  Quando si lavora con le singole colonne e righe di dati, possono verificarsi errori. È possibile controllare la `HasErrors` proprietà per determinare se sono presenti errori un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, o <xref:System.Data.DataRow>.  
   
-1.  Controllare il `HasErrors` proprietà per vedere se sono presenti errori nel set di dati.  
+1. Controllare il `HasErrors` proprietà per vedere se sono presenti errori nel set di dati.  
   
-2.  Se il `HasErrors` è di proprietà `true`, scorrere le raccolte di tabelle e quindi l'attraverso le righe, per trovare la riga con l'errore.  
+2. Se il `HasErrors` è di proprietà `true`, scorrere le raccolte di tabelle e quindi l'attraverso le righe, per trovare la riga con l'errore.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

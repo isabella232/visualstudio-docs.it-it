@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084572"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Risolvere gli errori nelle soluzioni Office
   Questi problemi possono verificarsi quando si eseguono le attività seguenti durante lo sviluppo di soluzioni Office in Visual Studio:
 
--   [Creare, aggiornare e aprire i progetti](#creating)
+- [Creare, aggiornare e aprire i progetti](#creating)
 
--   [Usare le finestre di progettazione](#designers)
+- [Usare le finestre di progettazione](#designers)
 
--   [Scrivi codice](#code)
+- [Scrivi codice](#code)
 
--   [Compilare i progetti](#building)
+- [Compilare i progetti](#building)
 
--   [Eseguire il debug di progetti](#debugging)
+- [Eseguire il debug di progetti](#debugging)
 
-##  <a name="creating"></a> Creare, aggiornare e aprire i progetti
+## <a name="creating"></a> Creare, aggiornare e aprire i progetti
  Gli errori seguenti possono verificarsi quando si creano o si aprono progetti di Office.
 
 ### <a name="the-project-cannot-be-created"></a>Non è possibile creare il progetto
@@ -60,13 +60,13 @@ ms.locfileid: "56610911"
 
  Questi errori possono verificarsi quando si cerca di creare un progetto basato su una cartella di lavoro in cui le informazioni personali sono state rimosse tramite Controllo documento. Per evitare questo errore, eseguire la procedura seguente prima di creare il progetto.
 
-1.  Aprire la cartella di lavoro in Excel.
+1. Aprire la cartella di lavoro in Excel.
 
-2.  In Excel aprire il Centro protezione.
+2. In Excel aprire il Centro protezione.
 
-3.  Nel **opzioni sulla Privacy** scheda chiara il **Rimuovi le informazioni personale dalle proprietà del file al salvataggio** casella di controllo.
+3. Nel **opzioni sulla Privacy** scheda chiara il **Rimuovi le informazioni personale dalle proprietà del file al salvataggio** casella di controllo.
 
-4.  Salvare la cartella di lavoro e chiudere Excel.
+4. Salvare la cartella di lavoro e chiudere Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Non è possibile aprire un progetto dopo la migrazione
  Dopo la migrazione di una soluzione Office a Microsoft Office 2010, non è possibile aprire il progetto in un computer di sviluppo in cui è installato solo Microsoft Office System 2007. Potrebbero venire visualizzati gli errori seguenti.
@@ -84,17 +84,17 @@ ms.locfileid: "56610911"
 
  Dopo aver completato l'aggiornamento del progetto, è possibile disinstallare Visual Studio 2005 Tools per Office Second Edition Runtime dal computer di sviluppo se non viene usato da altre soluzioni Office.
 
-##  <a name="designers"></a> Usare le finestre di progettazione
+## <a name="designers"></a> Usare le finestre di progettazione
  Gli errori seguenti possono verificarsi quando si lavora con la finestra di progettazione di documenti, cartelle di lavoro o fogli di lavoro nei progetti a livello di documento.
 
 ### <a name="designer-failed-to-load-correctly"></a>Finestra di progettazione non è riuscito a caricare correttamente
  Visual Studio non può aprire la finestra di progettazione nei casi seguenti:
 
--   Excel o Word è già aperto ed è visualizzata una finestra di dialogo modale. Per aprire la finestra di progettazione, verificare se in Excel o in Word è aperta una finestra di dialogo modale e chiudere eventuali finestre di dialogo modali aperte. Se non ci sono finestre di dialogo modali aperte, potrebbe essere necessario eseguire altre azioni affinché Excel o Word risponda.
+- Excel o Word è già aperto ed è visualizzata una finestra di dialogo modale. Per aprire la finestra di progettazione, verificare se in Excel o in Word è aperta una finestra di dialogo modale e chiudere eventuali finestre di dialogo modali aperte. Se non ci sono finestre di dialogo modali aperte, potrebbe essere necessario eseguire altre azioni affinché Excel o Word risponda.
 
--   Il progetto corrente è in fase di debug. Per aprire la finestra di progettazione, interrompere o terminare il debug.
+- Il progetto corrente è in fase di debug. Per aprire la finestra di progettazione, interrompere o terminare il debug.
 
--   Un componente aggiuntivo VSTO di Excel installato nel computer di sviluppo provoca la visualizzazione di una finestra di dialogo all'avvio di Excel. Per creare un progetto a livello di documento di Excel, è prima necessario disabilitare il componente aggiuntivo VSTO.
+- Un componente aggiuntivo VSTO di Excel installato nel computer di sviluppo provoca la visualizzazione di una finestra di dialogo all'avvio di Excel. Per creare un progetto a livello di documento di Excel, è prima necessario disabilitare il componente aggiuntivo VSTO.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>I controlli vengono visualizzati come rettangoli neri nel documento o foglio di lavoro
  Se si raggruppano i controlli in un documento o in un foglio di lavoro, Visual Studio non li riconosce più. Non sono accessibile controlli raggruppati nella **proprietà** finestra e vengono visualizzati come rettangoli neri nel documento o foglio di lavoro. Per ripristinare le relative funzionalità, è necessario separare i controlli.
@@ -105,10 +105,10 @@ ms.locfileid: "56610911"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Il comando Inserisci ClipArt non esegue alcuna operazione nella finestra di progettazione di Visual Studio
  Quando Excel o Word è aperto nella finestra di progettazione di Visual Studio, fare clic sui **ClipArt** pulsante il **illustrazioni** della barra multifunzione non è possibile apre il **ClipArt** riquadro attività. Per aggiungere ClipArt, è necessario aprire la copia della cartella di lavoro o del documento che si trova nella cartella principale del progetto (non la copia è nel *\bin* cartella) all'esterno di Visual Studio, aggiungere la ClipArt e quindi salvare la cartella di lavoro o il documento.
 
-##  <a name="code"></a> Scrivere codice
+## <a name="code"></a> Scrivere codice
  Gli errori seguenti possono verificarsi quando si scrive codice nei progetti di Office.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi di oggetti di Office non sono accessibili quando si usa c#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Alcuni eventi di oggetti di Office non sono accessibili quando si usa C\#
  In alcuni casi, potrebbe venire visualizzato un errore del compilatore simile al seguente quando si tenta di accedere a un evento specifico di un'istanza di un tipo di assembly di interoperabilità primario di Office in un progetto Visual C#.
 
  "Ambiguità tra 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' e 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook'"
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Anche se l'importazione dello spazio dei nomi di Word o Excel e hanno accesso a tutte le classi al suo interno, è necessario qualificare completamente tutti i tipi con Word o Excel per rimuovere l'ambiguità dello spazio dei nomi.
 
-##  <a name="building"></a> Compilare i progetti
+## <a name="building"></a> Compilare i progetti
  Gli errori seguenti possono verificarsi quando si compilano progetti di Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Non è possibile compilare un progetto a livello di documento che si basa su un documento con autorizzazioni limitate
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Si verificano errori del compilatore dopo l'eliminazione di un controllo NamedRange
  Se si elimina un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> da un foglio di lavoro che non è il foglio di lavoro attivo nella finestra di progettazione, il codice generato automaticamente potrebbe non venire rimosso dal progetto e potrebbero verificarsi errori del compilatore. Per assicurarsi che il codice venga rimosso, è consigliabile selezionare sempre il foglio di lavoro contenente il controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> per renderlo attivo prima di eliminare il controllo. Se il codice generato automaticamente non viene eliminato quando si elimina il controllo, è possibile fare in modo che venga eliminato dalla finestra di progettazione attivando il foglio di lavoro e apportando una modifica, in modo che il foglio di lavoro venga contrassegnato come modificato. Quando si ricompila il progetto, il codice viene rimosso.
 
-##  <a name="debugging"></a> Eseguire il debug di progetti
+## <a name="debugging"></a> Eseguire il debug di progetti
  Gli errori seguenti possono verificarsi quando si esegue il debug di progetti di Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Richiesta di disinstallazione viene visualizzata quando si pubblica e si installa una soluzione nel computer di sviluppo

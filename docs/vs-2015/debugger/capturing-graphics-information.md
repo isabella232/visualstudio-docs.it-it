@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114229"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Per configurare le opzioni di acquisizione di diagnostica della grafica  
   
-1.  Nella barra dei menu scegliere Strumenti, Opzioni. Verrà visualizzata la finestra di dialogo Opzioni.  
+1. Nella barra dei menu scegliere Strumenti, Opzioni. Verrà visualizzata la finestra di dialogo Opzioni.  
   
-2.  Nell'elenco di categorie delle opzioni a sinistra scegliere Diagnostica grafica, quindi configurare le opzioni desiderate di Diagnostica grafica.  
+2. Nell'elenco di categorie delle opzioni a sinistra scegliere Diagnostica grafica, quindi configurare le opzioni desiderate di Diagnostica grafica.  
   
      **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)**  
      Selezionare questa casella per raccogliere gli stack di chiamate. Per impostazione predefinita, gli stack di chiamate non vengono raccolti. Per acquisire gli stack di chiamate, assicurarsi che la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)** sia selezionata e quindi impostare l'opzione **per indicatori _draw, dispatch, present e perf** (predefinita) per raccogliere solo gli stack di chiamate più importanti oppure l'opzione **per tutto** per raccogliere tutti gli stack di chiamate. Per interrompere la raccolta degli stack di chiamate in un momento successivo, deselezionare la casella di controllo **Raccogli stack di chiamate durante l'acquisizione (rallenta l'acquisizione)**.  

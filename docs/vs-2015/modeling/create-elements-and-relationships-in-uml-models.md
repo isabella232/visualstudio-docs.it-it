@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099273"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Creare elementi e relazioni nei modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Per creare un'associazione  
   
-1.  Ottenere il proprietario dell'associazione, che in genere è il pacchetto o un modello contenente la fine dell'origine della relazione.  
+1. Ottenere il proprietario dell'associazione, che in genere è il pacchetto o un modello contenente la fine dell'origine della relazione.  
   
-2.  Richiamare il metodo di creazione sul proprietario.  
+2. Richiamare il metodo di creazione sul proprietario.  
   
-3.  Impostare le proprietà della relazione, ad esempio il relativo nome.  
+3. Impostare le proprietà della relazione, ad esempio il relativo nome.  
   
      Ad esempio:  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Impostare le proprietà di ogni classe della relazione. Esistono sempre due `MemberEnds`. Ad esempio:  
+4. Impostare le proprietà di ogni classe della relazione. Esistono sempre due `MemberEnds`. Ad esempio:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Quando si elimina un elemento dal modello:  
   
--   Vengono eliminate anche tutte le relazioni che si collegano ad esso.  
+- Vengono eliminate anche tutte le relazioni che si collegano ad esso.  
   
--   Vengono eliminate anche tutte le forme che l'hanno rappresentato in un diagramma.  
+- Vengono eliminate anche tutte le forme che l'hanno rappresentato in un diagramma.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)   

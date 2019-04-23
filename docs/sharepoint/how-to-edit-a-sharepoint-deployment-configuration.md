@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07788a8d45068b34e5e480c3a8aae8563c907791
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093709"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: Modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, si potrebbe eseguire un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. È possibile creare o modificare le configurazioni di distribuzione poiché non è possibile modificare le configurazioni predefinite e a livello di codice aggiunte.
@@ -28,15 +28,15 @@ ms.locfileid: "56646187"
 
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Per creare una configurazione di distribuzione di SharePoint
 
-1.  Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project**, _ProjectName_**proprietà**.
+1. Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project**, _ProjectName_**proprietà**.
 
-2.  Nel **SharePoint** scheda, scegliere il **New** pulsante.
+2. Nel **SharePoint** scheda, scegliere il **New** pulsante.
 
      Il **Aggiungi nuova configurazione distribuzione** verrà visualizzata la finestra di dialogo.
 
-3.  Nel **nome** testo casella, immettere un nome per la configurazione della distribuzione.
+3. Nel **nome** testo casella, immettere un nome per la configurazione della distribuzione.
 
-4.  Nel **passaggi di distribuzione disponibili** riquadro, scegliere i passaggi che si desidera aggiungere alla configurazione della distribuzione, scegliere il (**>**), quindi scegliere il **OK** pulsante.
+4. Nel **passaggi di distribuzione disponibili** riquadro, scegliere i passaggi che si desidera aggiungere alla configurazione della distribuzione, scegliere il (**>**), quindi scegliere il **OK** pulsante.
 
     > [!NOTE]
     >  Se è stato configurato un comando di pre-distribuzione o post-distribuzione, questi passaggi da eseguire solo se sono state aggiunte a una configurazione di distribuzione personalizzato.
@@ -45,11 +45,11 @@ ms.locfileid: "56646187"
 
 #### <a name="to-change-the-active-deployment-configuration"></a>Per modificare la configurazione distribuzione attiva
 
-1.  Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project** > **\<*NomeProgetto*> Proprietà**.
+1. Nelle **Esplora soluzioni**, scegliere un progetto SharePoint e quindi nella barra dei menu, scegliere **Project** > **\<*NomeProgetto*> Proprietà**.
 
-2.  Scegliere il **SharePoint** scheda.
+2. Scegliere il **SharePoint** scheda.
 
-3.  Nel **configurazione distribuzione attiva** casella di riepilogo, scegliere il nome della configurazione di distribuzione che si desidera utilizzare.
+3. Nel **configurazione distribuzione attiva** casella di riepilogo, scegliere il nome della configurazione di distribuzione che si desidera utilizzare.
 
 ## <a name="see-also"></a>Vedere anche
 - [Il pacchetto e distribuire soluzioni di SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

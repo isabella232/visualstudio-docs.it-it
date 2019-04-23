@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088678"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso di utilizzo a documenti e diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ ms.locfileid: "58969197"
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Per aprire un documento associato a un elemento  
   
--   Nel diagramma caso di utilizzo, fare doppio clic sulla forma dell'elemento.  
+- Nel diagramma caso di utilizzo, fare doppio clic sulla forma dell'elemento.  
   
      Il documento associato si apre.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Per collegare un caso di utilizzo a un diagramma o a un file nella stessa soluzione  
   
-1.  Disegnare un diagramma, ad esempio un diagramma di sequenza o di attività, per illustrare uno scenario del caso di utilizzo.  
+1. Disegnare un diagramma, ad esempio un diagramma di sequenza o di attività, per illustrare uno scenario del caso di utilizzo.  
   
-2.  Tornare al diagramma caso di utilizzo.  
+2. Tornare al diagramma caso di utilizzo.  
   
-3.  Trascinare il diagramma o il file da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
+3. Trascinare il diagramma o il file da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
   
-4.  Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
+4. Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Per eseguire il collegamento a un file di soluzione, ad esempio un documento di Word o una presentazione di PowerPoint  
   
-1.  Aggiungere il documento alla soluzione.  
+1. Aggiungere il documento alla soluzione.  
   
-    1.  Spostare il documento di Word nella stessa cartella di Windows della soluzione.  
+    1. Spostare il documento di Word nella stessa cartella di Windows della soluzione.  
   
-    2.  In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **elemento esistente**.  
+    2. In Esplora soluzioni fare doppio clic la soluzione, scegliere **Add**, quindi fare clic su **elemento esistente**.  
   
-    3.  Passare al documento di Word e fare clic su **Add**.  
+    3. Passare al documento di Word e fare clic su **Add**.  
   
          Il documento di Word viene visualizzato in una cartella della soluzione in Esplora soluzioni.  
   
-2.  Trascinare il documento di Word da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
+2. Trascinare il documento di Word da Esplora soluzioni in una parte vuota del diagramma caso di utilizzo.  
   
      Viene visualizzato un nuovo elemento.  
   
-3.  Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
+3. Collegamento dall'elemento per il caso di utilizzo usando una **dipendenza**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Per eseguire il collegamento a un documento condiviso, un elemento OneNote o una pagina Web  
   
-1.  Ottenere l'URL dell'elemento condiviso. Può trattarsi, ad esempio, un percorso che inizia file rete»\\\\', o una pagina web o URL di Sharepoint inizia con 'http://' o un collegamento a una sezione, pagina o paragrafo iniziale ' onenote:'.  
+1. Ottenere l'URL dell'elemento condiviso. Può trattarsi, ad esempio, un percorso che inizia file rete»\\\\', o una pagina web o URL di Sharepoint inizia con 'http://' o un collegamento a una sezione, pagina o paragrafo iniziale ' onenote:'.  
   
-2.  Nella casella degli strumenti, fare clic su **artefatto** e quindi fare clic nel diagramma caso di utilizzo.  
+2. Nella casella degli strumenti, fare clic su **artefatto** e quindi fare clic nel diagramma caso di utilizzo.  
   
-3.  Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
+3. Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
   
     > [!NOTE]
     >  Se si desidera fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da '\\\\'), o in un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word alla soluzione, fare doppio clic la soluzione in Esplora soluzioni, scegliere **Add** e quindi fare clic su **elemento esistente**.  

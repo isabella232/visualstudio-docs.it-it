@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115159"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Associare a processi in esecuzione con il debugger di Visual Studio
 È possibile collegare il debugger di Visual Studio a un processo in esecuzione in un computer locale o remoto. Dopo l'esecuzione del processo, selezionare **Debug** > **Connetti a processo** oppure premere **Ctrl**+**Alt** + **P** in Visual Studio e utilizzare il **Connetti a processo** finestra di dialogo per collegare il debugger al processo.
@@ -43,7 +43,7 @@ ms.locfileid: "59366406"
 > [!TIP]
 > Non si è sicuri se usare **Connetti a processo** per lo scenario di debug? Visualizzare [comuni scenari di debug](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Connettersi a un processo in esecuzione nel computer locale
+## <a name="BKMK_Attach_to_a_running_process"></a> Connettersi a un processo in esecuzione nel computer locale
 
 Per riconnettere rapidamente un processo si era connessi in precedenza, vedere [riassocia a un processo](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Per eseguire il debug di un processo in un computer remoto, vedere [connettersi 
 >[!NOTE]
 >È possibile collegare più App per il debug, ma solo un'app è attiva nel debugger alla volta. È possibile impostare l'app attiva in Visual Studio **posizione di Debug** sulla barra degli strumenti oppure **processi** finestra.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Connettersi a un processo in un computer remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Connettersi a un processo in un computer remoto
 
 È anche possibile selezionare un computer remoto nel **Connetti a processo** nella finestra di dialogo consente di visualizzare un elenco di processi disponibili in esecuzione in tale computer e collegare a una o più dei processi per il debug. Il debugger remoto (*msvsmon.exe*) deve essere in esecuzione nel computer remoto. Per altre informazioni, vedere [debug remoto](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Per scenari di debug remoti, è necessario disporre del codice sorgente (o una c
 
 In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Studio senza accesso all'origine se i file di simboli corretto sono presenti con l'app. Per impostazione predefinita, questo richiede una build di debug. Per altre informazioni, vedere [specificare i file di simboli e origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Risolvere gli errori di connessione
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Risolvere gli errori di connessione
  I processi in esecuzione a cui il debugger tenta di connettersi possono contenere uno o più tipi di codice. I tipi di codice a cui il debugger può connettersi vengono visualizzati e selezionati nella finestra di dialogo **Seleziona tipo di codice** .
 
  In alcuni casi il debugger riesce a connettersi a un tipo di codice ma non a un altro. Questa situazione può verificarsi quando si tenta di stabilire una connessione a un processo in esecuzione in un computer remoto, nel quale potrebbero essere stati installati i componenti per il debug remoto solo per alcuni tipi di codice. Può inoltre verificarsi quando si tenta di stabilire una connessione a due o più processi per il debug diretto di un database. Durante il debug SQL è supportata esclusivamente la connessione a un singolo processo.
@@ -199,19 +199,19 @@ In alcuni scenari di debug locale, è possibile eseguire il debug in Visual Stud
 
  **Per ottenere informazioni specifiche sulla causa dell'errore di connessione a un tipo di codice:**
 
-1.  Disconnettersi dal processo. Nel **Debug** dal menu **Disconnetti tutto**.
+1. Disconnettersi dal processo. Nel **Debug** dal menu **Disconnetti tutto**.
 
-1.  Riassocia a processo, selezionando solo il tipo di codice che non è stato possibile collegare.
+1. Riassocia a processo, selezionando solo il tipo di codice che non è stato possibile collegare.
 
-    1.  Nella finestra di dialogo **Connetti a processo** selezionare il processo nell'elenco **Processi disponibili**.
+    1. Nella finestra di dialogo **Connetti a processo** selezionare il processo nell'elenco **Processi disponibili**.
 
-    2.  Selezionare **seleziona**.
+    2. Selezionare **seleziona**.
 
-    3.  Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare gli altri tipi di codice.
+    3. Nella finestra di dialogo **Seleziona tipo di codice** selezionare il pulsante di opzione **Esegui il debug di questi tipi di codice** e il tipo di codice per cui si è verificato il problema di connessione. Deselezionare gli altri tipi di codice.
 
-    4.  Scegliere **OK**.
+    4. Scegliere **OK**.
 
-    5.  Nel **Connetti a processo** finestra di dialogo **Attach**.
+    5. Nel **Connetti a processo** finestra di dialogo **Attach**.
 
     La connessione non verrà eseguita e verrà visualizzato un messaggio di errore specifico.
 

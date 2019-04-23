@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ce412da98d05d70864a6932021912a6f03f6a7b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092175"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ Nella gestione dei dati in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visu
   
  Le funzionalità aggiuntive comprendono:  
   
--   Supporto dei frammenti di codice XML, inclusi i frammenti generati da uno schema.  
+- Supporto dei frammenti di codice XML, inclusi i frammenti generati da uno schema.  
   
--   Struttura del documento, in modo da consentire l'espansione e la compressione degli elementi.  
+- Struttura del documento, in modo da consentire l'espansione e la compressione degli elementi.  
   
--   Possibilità di eseguire le trasformazioni XSLT e di visualizzarne i risultati in formato testo, XML o HTML.  
+- Possibilità di eseguire le trasformazioni XSLT e di visualizzarne i risultati in formato testo, XML o HTML.  
   
--   Possibilità di generare schemi XSD (XML Schema Definition Language) dal documento di istanza XML.  
+- Possibilità di generare schemi XSD (XML Schema Definition Language) dal documento di istanza XML.  
   
--   Supporto per la modifica dei fogli di stile XSLT, incluso il supporto IntelliSense.  
+- Supporto per la modifica dei fogli di stile XSLT, incluso il supporto IntelliSense.  
   
--   XML Schema Explorer  
+- XML Schema Explorer  
   
 ## <a name="xml-schema-designer"></a>Progettazione XML Schema  
  Progettazione XML Schema è integrato con Microsoft Visual Studio 2010 e con l'editor XML per consentire di usare gli schemi XSD (XML Schema Definition Language).  

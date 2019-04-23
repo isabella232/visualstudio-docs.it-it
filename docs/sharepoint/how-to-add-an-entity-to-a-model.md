@@ -17,32 +17,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a51786cc8a448bf8b7348917df58cef43468619
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089458"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procedura: Aggiungere un'entità a un modello
   Per creare un'entità, aggiungere un controllo dell'entità da Visual Studio **casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati (BDC).
 
 ### <a name="to-add-an-entity-to-the-model"></a>Per aggiungere un'entità al modello
 
-1.  Creare un progetto di integrazione applicativa dei dati o aprire un progetto di integrazione applicativa dei dati esistente. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
+1. Creare un progetto di integrazione applicativa dei dati o aprire un progetto di integrazione applicativa dei dati esistente. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
 
-2.  Nel **casella degli strumenti**, dal **BusinessDataCatalog** gruppo, aggiungere un' **entità** controllo nella finestra di progettazione.
+2. Nel **casella degli strumenti**, dal **BusinessDataCatalog** gruppo, aggiungere un' **entità** controllo nella finestra di progettazione.
 
      La nuova entità viene visualizzata nella finestra di progettazione. Visual Studio aggiunge un `<Entity>` elemento al codice XML del file di modello di integrazione applicativa dei dati nel progetto. Per altre informazioni sugli attributi di un elemento di entità, vedere [entità](http://go.microsoft.com/fwlink/?LinkId=169296).
 
-3.  Nella finestra di progettazione, aprire il menu di scelta rapida per l'entità, scegliere **Add**, quindi scegliere **identificatore**.
+3. Nella finestra di progettazione, aprire il menu di scelta rapida per l'entità, scegliere **Add**, quindi scegliere **identificatore**.
 
      Viene visualizzato un nuovo identificatore dell'entità.
 
     > [!NOTE]
     >  È possibile modificare il nome dell'entità e l'identificatore di **proprietà** finestra.
 
-4.  Definire i campi dell'entità in una classe. È possibile aggiungere una nuova classe al progetto o utilizzare una classe esistente creata tramite altri strumenti, ad esempio il Object Relational Designer (O/R Designer). Nell'esempio seguente viene illustrata una classe di entità denominata Contact.
+4. Definire i campi dell'entità in una classe. È possibile aggiungere una nuova classe al progetto o utilizzare una classe esistente creata tramite altri strumenti, ad esempio il Object Relational Designer (O/R Designer). Nell'esempio seguente viene illustrata una classe di entità denominata Contact.
 
      [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
      [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]

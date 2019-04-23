@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086377"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
@@ -24,59 +24,59 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a un XML schema
 
-1.  Nel **File** dal menu **New**, fare clic su **File**.
+1. Nel **File** dal menu **New**, fare clic su **File**.
 
-2.  Selezionare **File XML** nel **modelli** riquadro e fare clic su **Open**.
+2. Selezionare **File XML** nel **modelli** riquadro e fare clic su **Open**.
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3.  Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia (**...** ) sul **schemi** campo.
+3. Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia (**...** ) sul **schemi** campo.
 
      Il **schemi XSD** verrà visualizzata la finestra di dialogo.
 
-4.  Fare clic su **Aggiungi**.
+4. Fare clic su **Aggiungi**.
 
      Il **Apri Schema XSD** verrà visualizzata la finestra di dialogo.
 
-5.  Selezionare il *HireDate* del file e fare clic su **Open**.
+5. Selezionare il *HireDate* del file e fare clic su **Open**.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
      Lo schema XML è ora associato al documento XML. Lo schema XML viene usato per convalidare il documento. Viene anche usato da IntelliSense per inserire elementi validi nell'elenco dei membri.
 
 ## <a name="to-add-data"></a>Per aggiungere dati
 
-1.  Digitare `<` nel riquadro dell'editor.
+1. Digitare `<` nel riquadro dell'editor.
 
      Nell'elenco dei membri vengono visualizzati gli elementi possibili:
 
-    -   **!-** per aggiungere un commento.
+    - **!-** per aggiungere un commento.
 
-    -   **! Tipo di documento** per aggiungere un tipo di documento.
+    - **! Tipo di documento** per aggiungere un tipo di documento.
 
-    -   **?** per aggiungere un'istruzione di elaborazione.
+    - **?** per aggiungere un'istruzione di elaborazione.
 
-    -   **Employee** per aggiungere l'elemento radice.
+    - **Employee** per aggiungere l'elemento radice.
 
-2.  Selezionare **<!-** per aggiungere un nodo di tipo comment e premere **invio**.
+2. Selezionare **<!-** per aggiungere un nodo di tipo comment e premere **invio**.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
-3.  Digitare **verifica file XML**.
+3. Digitare **verifica file XML**.
 
-4.  In una nuova riga, digitare `<`e selezionare **employee** dall'elenco dei membri.
+4. In una nuova riga, digitare `<`e selezionare **employee** dall'elenco dei membri.
 
      L'editor aggiunge l'inizio di un elemento XML, `<employee`. A questo punto è possibile aggiungere attributi all'elemento o chiudere il tag di inizio digitando `>`.
 
-5.  Digitare `>` per chiudere il tag.
+5. Digitare `>` per chiudere il tag.
 
-6.  L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Il **ToolTip** viene visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'ID'**.
+6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Il **ToolTip** viene visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'ID'**.
 
-7.  Tipo di `<` e selezionare **ID** dall'elenco dei membri. Digitare quindi `>`.
+7. Tipo di `<` e selezionare **ID** dall'elenco dei membri. Digitare quindi `>`.
 
      L'editor aggiunge l'elemento XML, `<ID></ID>`, e posiziona il cursore dopo il tag di inizio identificatore.
 
-8.  Tipo di **abc**.
+8. Tipo di **abc**.
 
      Il **abc** testo ha una sottolineatura ondulata. Il **ToolTip** viene visualizzato il messaggio: **L'elemento 'Identificatore' ha un valore non valido in base al relativo tipo di dati**.
 
@@ -104,11 +104,11 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 ## <a name="to-save-the-xml-document"></a>Per salvare il documento XML
 
-1.  Dal **File** dal menu **Salva con nome**.
+1. Dal **File** dal menu **Salva con nome**.
 
      Il **Salva File con nome** verrà visualizzata la finestra di dialogo. Il nome file predefinito è *"XMLFile1"*.
 
-2.  Immettere il nome del file e il percorso per il documento XML e fare clic su **salvare**.
+2. Immettere il nome del file e il percorso per il documento XML e fare clic su **salvare**.
 
 ## <a name="hiredatexsd-file"></a>file HireDate XSD
 

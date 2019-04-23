@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40442d9cf740bd4122aaf48f82fdba425aff261e
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084239"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 
@@ -24,7 +24,7 @@ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/d
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Per abilitare il linguaggio DSL da parte MEF
 
-1.  Creare una nuova cartella denominata **MefExtension** all'interno di **DslPackage** progetto. Aggiungere i file seguenti:
+1. Creare una nuova cartella denominata **MefExtension** all'interno di **DslPackage** progetto. Aggiungere i file seguenti:
 
      Nome file: `CommandExtensionVSCT.tt`
 
@@ -72,7 +72,7 @@ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/d
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Creare una nuova cartella denominata **MefExtension** all'interno di **Dsl** progetto. Aggiungere i file seguenti:
+2. Creare una nuova cartella denominata **MefExtension** all'interno di **Dsl** progetto. Aggiungere i file seguenti:
 
      Nome file: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -95,7 +95,7 @@ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/d
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Aggiungere la riga seguente al file esistente denominato **Dslpackage\commands.vsct.**:
+3. Aggiungere la riga seguente al file esistente denominato **Dslpackage\commands.vsct.**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -103,17 +103,17 @@ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/d
 
     Inserire la riga alla fine dell'istruzione `<Include>` direttiva.
 
-4.  Aprire *Dsldefinition*.
+4. Aprire *Dsldefinition*.
 
-5.  In Esplora DSL, selezionare **editor\convalida**.
+5. In Esplora DSL, selezionare **editor\convalida**.
 
-6.  Nella finestra Proprietà, assicurarsi che almeno una delle proprietà denominata **viene utilizzato** è `true`.
+6. Nella finestra Proprietà, assicurarsi che almeno una delle proprietà denominata **viene utilizzato** è `true`.
 
-7.  Nel **Esplora soluzioni** sulla barra degli strumenti, fare clic su **Trasforma tutti i modelli**.
+7. Nel **Esplora soluzioni** sulla barra degli strumenti, fare clic su **Trasforma tutti i modelli**.
 
      File sussidiari vengono visualizzati di sotto di ogni file aggiunto.
 
-8.  Compilare ed eseguire la soluzione per verificare che sia ancora funzionante.
+8. Compilare ed eseguire la soluzione per verificare che sia ancora funzionante.
 
 Il linguaggio DSL è ora abilitata per il framework MEF. È possibile scrivere i comandi di menu, gestori di movimenti e vincoli di convalida come estensioni MEF. È possibile scrivere queste estensioni alla soluzione DSL insieme ad altro codice personalizzato. Inoltre, utente o altri sviluppatori possono scrivere separate le estensioni di Visual Studio che estendono il linguaggio DSL.
 
@@ -123,7 +123,7 @@ Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è
 
 ### <a name="to-create-a-dsl-extension-vsix"></a>Per creare una DSL estensione VSIX
 
-1. Creare una nuova **libreria di classi** progetto.
+1. Creare un nuovo progetto **Libreria di classi**.
 
 2. Nel nuovo progetto, aggiungere un riferimento all'assembly del linguaggio DSL.
 
@@ -135,15 +135,15 @@ Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è
 
 3. Aggiungere riferimenti agli assembly .NET seguenti:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
 4. Creare una nuova **progetto VSIX** progetto.
 

@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091668"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procedura: Usare AsyncPackage per caricare pacchetti VSPackage in background
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -18,7 +18,7 @@ ms.locfileid: "58965695"
 Il caricamento e l'inizializzazione di un pacchetto di Visual Studio può comportare i/o disco. Se questo tipo i/o si verifica nel thread UI, può causare problemi di velocità di risposta. Per risolvere questo problema, Visual Studio 2015 è stato introdotto il <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe che consente il caricamento del pacchetto in un thread in background.  
   
 ## <a name="creating-an-asyncpackage"></a>Creazione di un AsyncPackage  
- È possibile iniziare creando un progetto VSIX (**File / nuovo / progetto / Visual C# / Extensibility / progetto VSIX**) e l'aggiunta di un pacchetto VSPackage per il progetto (fare clic con il pulsante destro sul progetto e **Aggiungi/nuovo elemento / C# elemento/estendibilità/Visual Il pacchetto di Studio**). È quindi possibile creare i servizi e aggiungere tali servizi per il pacchetto.  
+ È possibile iniziare creando un progetto VSIX (**File / nuovo / progetto / Visual c# / Extensibility / progetto VSIX**) e l'aggiunta di un pacchetto VSPackage per il progetto (fare clic con il pulsante destro sul progetto e **Aggiungi/nuovo elemento / c# elemento/estendibilità/Visual Il pacchetto di Studio**). È quindi possibile creare i servizi e aggiungere tali servizi per il pacchetto.  
   
 1. Derivare il pacchetto da <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Convertire un pacchetto VSPackage esistente in AsyncPackage  
  La maggior parte del lavoro è analoga alla creazione di una nuova **AsyncPackage**. È necessario seguire i passaggi da 1 a 5 precedenti. È anche necessario richiedere particolare attenzione in quanto segue:  
   
-1.  Ricordarsi di rimuovere il **inizializzare** override nel pacchetto.  
+1. Ricordarsi di rimuovere il **inizializzare** override nel pacchetto.  
   
-2.  Evitare i deadlock: Possono essere nascosti RPC nel codice che si verificano in un thread in background. È necessario assicurarsi che se si effettua una chiamata RPC (ad esempio **GetService**), è necessario uno (1) passare al thread principale o (2) usare la versione dell'API in presenza di una asincrona esiste (ad esempio **GetServiceAsync**).  
+2. Evitare i deadlock: Possono essere nascosti RPC nel codice che si verificano in un thread in background. È necessario assicurarsi che se si effettua una chiamata RPC (ad esempio **GetService**), è necessario uno (1) passare al thread principale o (2) usare la versione dell'API in presenza di una asincrona esiste (ad esempio **GetServiceAsync**).  
   
-3.  Non passare tra i thread troppo frequentemente. Provare a localizzare il lavoro che può essere eseguita in un thread in background. In questo modo si riduce il tempo di caricamento.  
+3. Non passare tra i thread troppo frequentemente. Provare a localizzare il lavoro che può essere eseguita in un thread in background. In questo modo si riduce il tempo di caricamento.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Esecuzione di query su servizi da AsyncPackage  
  Un' **AsyncPackage** può o potrebbe non essere caricato in modo asincrono in base al chiamante. Ad esempio,  

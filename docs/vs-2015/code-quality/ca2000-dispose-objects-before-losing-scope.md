@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085038"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminare gli oggetti prima che siano esterni all'ambito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58964052"
   
  Di seguito sono alcune situazioni in cui l'istruzione using non è sufficiente per proteggere gli oggetti IDisposable e può causare CA2000 si verifichi.  
   
--   Restituzione di un oggetto disposable richiede che l'oggetto viene costruito in un blocco try/finally all'esterno una tramite blocco.  
+- Restituzione di un oggetto disposable richiede che l'oggetto viene costruito in un blocco try/finally all'esterno una tramite blocco.  
   
--   L'inizializzazione dei membri di un oggetto disposable non deve essere eseguita nel costruttore dell'uso di un'istruzione.  
+- L'inizializzazione dei membri di un oggetto disposable non deve essere eseguita nel costruttore dell'uso di un'istruzione.  
   
--   Costruttori protetti solo da un gestore di eccezioni di annidamento. Ad esempio,  
+- Costruttori protetti solo da un gestore di eccezioni di annidamento. Ad esempio,  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58964052"
   
      fa sì che CA2000 perché un errore nella costruzione dell'oggetto StreamReader può comportare l'oggetto FileStream mai in fase di chiusura.  
   
--   Oggetti dinamici devono usare un oggetto di ombreggiatura per implementare il modello Dispose di oggetti IDisposable.  
+- Oggetti dinamici devono usare un oggetto di ombreggiatura per implementare il modello Dispose di oggetti IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi  
  Non eliminare un avviso da questa regola a meno che non sia stato chiamato un metodo sull'oggetto che chiama `Dispose`, come <xref:System.IO.Stream.Close%2A>, o se il metodo che ha generato l'avviso restituisce un oggetto IDisposable che fa il wrapping dell'oggetto.  

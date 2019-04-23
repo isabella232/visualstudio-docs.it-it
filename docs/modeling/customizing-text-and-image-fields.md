@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088561"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento decorator di testo in una forma, è rappresentato da un TextField. Per esempi dell'inizializzazione di TextFields e altri ShapeFields, esaminare Dsl\GeneratedCode\Shapes.cs alla soluzione DSL.
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Per creare una sottoclasse di ImageField
 
-1.  Impostare il **genera una derivata doppia** proprietà della classe della forma padre nella definizione DSL.
+1. Impostare il **genera una derivata doppia** proprietà della classe della forma padre nella definizione DSL.
 
-2.  Eseguire l'override di `InitializeShapeFields` metodo della classe della forma.
+2. Eseguire l'override di `InitializeShapeFields` metodo della classe della forma.
 
-    -   Creare un nuovo file di codice nel progetto DSL e scrivere una definizione di classe parziale per la classe shape. Sostituire la definizione del metodo non esiste.
+    - Creare un nuovo file di codice nel progetto DSL e scrivere una definizione di classe parziale per la classe shape. Sostituire la definizione del metodo non esiste.
 
-3.  Esaminare il codice del `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
+3. Esaminare il codice del `InitializeShapeFields` in DSL\GeneratedCode\Shapes.cs.
 
      Nel metodo di override, chiamare il metodo di base e quindi creare un'istanza della classe campo immagine. Utilizzare questa opzione per sostituire il campo immagine normale nel `shapeFields` elenco.
 

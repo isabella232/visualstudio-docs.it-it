@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 939198eb18dd8fd572f1bd5bf3f4a21b44a5cf2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105344"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
 
--   `<# Standard control blocks #>` può contenere istruzioni.
+- `<# Standard control blocks #>` può contenere istruzioni.
 
--   `<#= Expression control blocks #>` può contenere espressioni.
+- `<#= Expression control blocks #>` può contenere espressioni.
 
--   `<#+ Class feature control blocks #>` può contenere metodi, campi e proprietà.
+- `<#+ Class feature control blocks #>` può contenere metodi, campi e proprietà.
 
 ## <a name="standard-control-block"></a>Blocco di controllo standard
  I blocchi di controllo standard contengono istruzioni. Ad esempio, il blocco standard seguente ottiene i nomi di tutti gli attributi nel documento XML:
@@ -145,17 +145,17 @@ Some text.
 
  Quando si usano i blocchi di controllo, è necessario tenere presenti le considerazioni seguenti:
 
--   **Lingua.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. (Per ulteriori informazioni sul `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
+- **Lingua.** In un modello di testo è possibile usare codice C# o Visual Basic. Il linguaggio predefinito è C#, ma è possibile specificare Visual Basic nel parametro `language` della direttiva `template`. (Per ulteriori informazioni sul `template` direttiva, vedere [direttive di modello di testo T4](../modeling/t4-text-template-directives.md).)
 
      Il linguaggio usato nei blocchi di controllo non ha nulla a che fare con il linguaggio o il formato del testo generato in un modello di testo. È possibile generare codice C# usando codice Visual Basic o viceversa.
 
      È possibile usare un solo linguaggio in un modello di testo specifico, compresi tutti i modelli di testo presenti nella direttiva `include`.
 
--   **Variabili locali.** Tutto il codice dei blocchi di controllo standard e dell'espressione in un modello di testo viene generato come metodo singolo. È pertanto necessario assicurarsi che non sorgano conflitti con i nomi delle variabili locali. Se si desidera includere altri modelli di testo, è necessario assicurarsi che i nomi delle variabili siano univoci per tutti i modelli inclusi. Un modo per garantire questo risultato consiste nell'aggiungere a ogni nome di variabile locale una stringa che identifichi il modello di testo in cui la variabile è stata dichiarata.
+- **Variabili locali.** Tutto il codice dei blocchi di controllo standard e dell'espressione in un modello di testo viene generato come metodo singolo. È pertanto necessario assicurarsi che non sorgano conflitti con i nomi delle variabili locali. Se si desidera includere altri modelli di testo, è necessario assicurarsi che i nomi delle variabili siano univoci per tutti i modelli inclusi. Un modo per garantire questo risultato consiste nell'aggiungere a ogni nome di variabile locale una stringa che identifichi il modello di testo in cui la variabile è stata dichiarata.
 
      È inoltre consigliabile inizializzare le variabili locali su valori ragionevoli al momento della dichiarazione, in particolare quando si includono più modelli di testo.
 
--   **Annidamento di blocchi di controllo.** I blocchi di controllo non possono essere annidati l'uno nell'altro. Prima di aprirne un altro, è sempre necessario terminare un blocco di controllo specifico. Ad esempio, di seguito viene illustrato come stampare testo in un blocco espressione come parte di un blocco di controllo standard.
+- **Annidamento di blocchi di controllo.** I blocchi di controllo non possono essere annidati l'uno nell'altro. Prima di aprirne un altro, è sempre necessario terminare un blocco di controllo specifico. Ad esempio, di seguito viene illustrato come stampare testo in un blocco espressione come parte di un blocco di controllo standard.
 
     ```
     <#
@@ -167,4 +167,4 @@ Some text.
     <# } #>
     ```
 
--   **Il refactoring.** Per garantire la brevità e la comprensibilità dei modelli di testo, è consigliabile evitare di usare codice ripetitivo eseguendo il factoring del codice riutilizzabile all'interno di funzioni di supporto nei blocchi della funzionalità di classe o creando una classe di modello di testo personale che eredita dalla classe Microsoft.VisualStudio.TextTemplating.TextTransformation.
+- **Il refactoring.** Per garantire la brevità e la comprensibilità dei modelli di testo, è consigliabile evitare di usare codice ripetitivo eseguendo il factoring del codice riutilizzabile all'interno di funzioni di supporto nei blocchi della funzionalità di classe o creando una classe di modello di testo personale che eredita dalla classe Microsoft.VisualStudio.TextTemplating.TextTransformation.

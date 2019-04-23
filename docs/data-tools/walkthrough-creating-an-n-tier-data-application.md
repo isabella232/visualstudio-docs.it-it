@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: creazione di un'applicazione dati a più livelli"
+title: "Procedura dettagliata: Creazione di un'applicazione dati a più livelli"
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091824"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: Creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -30,23 +30,23 @@ In questa procedura dettagliata è illustrato come separare il codice del datase
 
 Durante questa procedura dettagliata, si eseguire la procedura seguente:
 
--   Creare una nuova soluzione a più livelli che contiene più progetti.
+- Creare una nuova soluzione a più livelli che contiene più progetti.
 
--   Aggiungere due progetti di libreria di classi alla soluzione a più livelli.
+- Aggiungere due progetti di libreria di classi alla soluzione a più livelli.
 
--   Creare un dataset tipizzato con la **Configurazione guidata origine dati**.
+- Creare un dataset tipizzato con la **Configurazione guidata origine dati**.
 
--   Separare il generato [TableAdapter](create-and-configure-tableadapters.md) e il codice di set di dati in progetti discreti.
+- Separare il generato [TableAdapter](create-and-configure-tableadapters.md) e il codice di set di dati in progetti discreti.
 
--   Creare un servizio Windows Communication Foundation (WCF) per effettuare chiamate nel livello di accesso ai dati.
+- Creare un servizio Windows Communication Foundation (WCF) per effettuare chiamate nel livello di accesso ai dati.
 
--   Creare funzioni nel servizio per recuperare i dati dal livello di accesso ai dati.
+- Creare funzioni nel servizio per recuperare i dati dal livello di accesso ai dati.
 
--   Creare un'applicazione Windows Forms come livello di presentazione.
+- Creare un'applicazione Windows Form come livello di presentazione.
 
--   Creare i controlli Windows Form associati all'origine dati.
+- Creare i controlli Windows Form associati all'origine dati.
 
--   Scrivere il codice per popolare le tabelle dati.
+- Scrivere il codice per popolare le tabelle dati.
 
 ![collegamento a video](../data-tools/media/playvideo.gif) per una versione video di questo argomento, vedere [Video How to: Creazione di un'applicazione dati a più livelli](http://go.microsoft.com/fwlink/?LinkId=115188).
 
@@ -77,7 +77,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **libreria di classi** tipo di progetto.
 
@@ -104,7 +104,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
  Il passaggio successivo consiste nella creazione di un dataset tipizzato. I dataset tipizzati sono creati con la classe dataset (incluso `DataTables` classi) e il `TableAdapter` classi in un singolo progetto. Tutte le classi vengono generate in un unico file. Quando si separa il set di dati e TableAdapter in progetti diversi, è la classe di set di dati che viene spostata in altro progetto, lasciando il `TableAdapter` classi nel progetto originale. Pertanto, è possibile creare il set di dati nel progetto che alla fine conterrà gli oggetti TableAdapter (il progetto DataAccessTier). Creare il set di dati usando il **configurazione guidata origine dati**.
 
 > [!NOTE]
-> Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [procedura: installare database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
+> Per creare la connessione, è necessario avere accesso al database di esempio Northwind. Per informazioni su come configurare il database di esempio Northwind, vedere [come: Installare i database di esempio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Per creare il dataset
 
@@ -154,7 +154,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 5. Scegliere **Compila soluzione** dal menu **Compila**.
 
-   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o  *NorthwindDataSet.Dataset.Designer.cs*).
+   Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero set di dati (`DataAccessTier`) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (`DataEntityTier`) contiene il set di dati tipizzato: *NorthwindDataSet* (o *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
@@ -284,7 +284,7 @@ Questa procedura dettagliata viene illustrato come accedere a livello di accesso
 5. Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Creare un livello di presentazione per visualizzare i dati dal servizio dati
- Ora che la soluzione contiene il servizio dati che dispone di metodi, la chiamata che i dati a livelli di accesso, creare un altro progetto che effettua chiamate nel servizio dati e presentare i dati agli utenti. In questa procedura dettagliata, creare un'applicazione Windows Forms. Si tratta del livello di presentazione dell'applicazione a più livelli.
+ Ora che la soluzione contiene il servizio dati che dispone di metodi, la chiamata che i dati a livelli di accesso, creare un altro progetto che effettua chiamate nel servizio dati e presentare i dati agli utenti. In questa procedura dettagliata, creare un'applicazione Windows Form; si tratta del livello di presentazione dell'applicazione a più livelli.
 
 ### <a name="to-create-the-presentation-tier-project"></a>Per creare il progetto livello di presentazione
 
@@ -301,7 +301,7 @@ Impostiamo la **PresentationTier** progetto come progetto di avvio per la soluzi
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Impostazione del nuovo livello del progetto come progetto di avvio
 
--   In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **PresentationTier** e scegliere **Imposta come progetto di avvio**.
+- In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **PresentationTier** e scegliere **Imposta come progetto di avvio**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Aggiungere i riferimenti al livello presentazione
  Per accedere ai metodi nel servizio, l'applicazione client PresentationTier richiede un riferimento al servizio dati. È richiesto inoltre un riferimento al dataset per abilitare la condivisione dei tipi da parte del servizio WCF. Fino a quando non si abilita tipo di condivisione tramite il servizio dati, il codice aggiunto per la classe dataset parziale non è disponibile a livello di presentazione. Perché è in genere aggiungere il codice, ad esempio il codice di convalida per la riga e la colonna modifica gli eventi di una tabella di dati, è probabile che si accedere al codice dal client.
@@ -361,7 +361,7 @@ Impostiamo la **PresentationTier** progetto come progetto di avvio per la soluzi
 Il valore predefinito per `maxReceivedMessageSize` non è sufficientemente grande da contenere i dati recuperati dal `Customers` e `Orders` tabelle. Nei passaggi seguenti, è possibile aumentare il valore su 6553600. Si modifica il valore nel client, che aggiorna automaticamente il riferimento al servizio.
 
 > [!NOTE]
-> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per ulteriori informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Per aumentare il valore di maxReceivedMessageSize
 
@@ -375,9 +375,9 @@ Eseguire l'applicazione premendo **F5**. I dati di `Customers` e `Orders` tabell
 ## <a name="next-steps"></a>Passaggi successivi
  A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazioni dopo il salvataggio dei dati correlati nell'applicazione basata su Windows. È possibile ad esempio apportare i seguenti miglioramenti a questa applicazione:
 
--   Aggiungere la convalida al dataset.
+- Aggiungere la convalida al dataset.
 
--   Aggiungere al servizio altri metodi per l'aggiornamento dei dati nel database.
+- Aggiungere al servizio altri metodi per l'aggiornamento dei dati nel database.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115068"
 ---
 # <a name="viewing-the-structure-of-code"></a>Visualizzazione della struttura del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "54801212"
 > [!NOTE]
 >  L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.  
   
-##  <a name="BKMK_ClassView"></a> Visualizzazione classi (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Visualizzazione classi (Visual Basic, C#, C++)  
  **Visualizzazione classi** viene visualizzato come parte di **Esplora soluzioni** nonché in una finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).  
   
  Non è necessario compilare un progetto per visualizzarne gli elementi in **Visualizzazione classi**. La finestra viene aggiornata quando si modifica il codice nel progetto.  
@@ -110,7 +110,7 @@ ms.locfileid: "54801212"
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|  
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Gerarchia di chiamata (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Gerarchia di chiamata (Visual Basic, C#, C++)  
  La finestra **Gerarchia di chiamata** visualizza dove viene chiamato un determinato metodo (o proprietà o costruttore) ed elenca i metodi chiamati da quel metodo. È possibile visualizzare più livelli di grafico delle chiamate, che mostra le relazioni chiamante/chiamato tra i metodi di un ambito specificato.  
   
  È possibile visualizzare la finestra **Gerarchia di chiamata** selezionando un metodo (o proprietà o costruttore) e quindi scegliendo **View Class Hierarchy** (Visualizza gerarchia di classi) nel menu di scelta rapida. La visualizzazione dovrebbe essere simile all’immagine seguente:  
@@ -135,7 +135,7 @@ Finestra Gerarchia di chiamata
 |**Copia**|Copia il nodo selezionato (ma non i sottonodi).|  
 |**Aggiorna**|Aggiorna le informazioni.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti  
+## <a name="BKMK_ObjectBrowser"></a> Visualizzatore oggetti  
  Il **Visualizzatore oggetti** visualizza le descrizioni del codice nei progetti.  
   
  È possibile filtrare ciò che si vuole visualizzare nel **Visualizzatore oggetti**. Usando l'elenco a discesa nella parte superiore della finestra, è possibile scegliere una delle seguenti opzioni:  
@@ -194,7 +194,7 @@ Finestra Gerarchia di chiamata
 |**Vai a riferimento**|Visualizza un riferimento al tipo o membro nel codice sorgente, se disponibile.|  
 |**Visualizza gerarchia delle chiamate**|Visualizza il metodo selezionato nella finestra **Gerarchia di chiamata**.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Finestra Definizione codice (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Finestra Definizione codice (C#, C++)  
  La finestra **Definizione codice** visualizza la definizione di un membro o tipo selezionato nel progetto attivo. È possibile selezionare il tipo o il membro nell'editor di codice o in una finestra di visualizzazione del codice.  
   
  Anche se questa finestra è di sola lettura, è possibile impostarvi punti di interruzione o segnalibri. Per modificare la definizione visualizzata scegliere **Modifica definizione** nel menu di scelta rapida. Verrà quindi aperto il file di origine nell'editor di codice e verrà spostato nel punto di inserimento sulla riga in cui inizia la definizione.  

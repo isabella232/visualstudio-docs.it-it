@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085928"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 Barra di spostamento nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e membri nel file. I tipi vengono visualizzati nell'elenco a tendina a sinistra e i membri vengono visualizzati in destra elenco a discesa. Quando l'utente seleziona un tipo, il cursore viene posizionato nella prima riga del tipo. Quando l'utente seleziona un membro, il cursore viene posizionato sulla definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate per riflettere il percorso corrente del punto di inserimento.
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   Un'implementazione del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo in genere esegue i passaggi seguenti:
 
-1.  Ottenere un elenco delle dichiarazioni correnti del file di origine.
+1. Ottenere un elenco delle dichiarazioni correnti del file di origine.
 
      Esistono diversi modi per popolare gli elenchi. Un approccio consiste nel creare un metodo personalizzato nella versione del <xref:Microsoft.VisualStudio.Package.LanguageService> classe che chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con un motivo di analisi personalizzata che restituisce un elenco di tutte le dichiarazioni. Potrebbe essere un altro approccio per chiamare il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo direttamente dal <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo con il motivo per l'analisi personalizzata. Un terzo approccio potrebbe essere per memorizzare nella cache le dichiarazioni nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe restituito dall'ultima operazione di analisi completa nel <xref:Microsoft.VisualStudio.Package.LanguageService> classe e recuperare queste informazioni dalla <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).
 
-2.  Inserire o aggiornare l'elenco dei tipi.
+2. Inserire o aggiornare l'elenco dei tipi.
 
      Il contenuto dell'elenco dei tipi sia in grado di essere aggiornato quando l'origine è stato modificato o se si è scelto di modificare lo stile del testo dei tipi di base la posizione corrente del cursore. Si noti che questa posizione viene passata per il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).
 
-3.  Determinare il tipo per selezionare nell'elenco di tipi di base la posizione corrente del cursore.
+3. Determinare il tipo per selezionare nell'elenco di tipi di base la posizione corrente del cursore.
 
      È possibile cercare le dichiarazioni che sono state ottenute nel passaggio 1 per trovare il tipo che include la posizione corrente del cursore e quindi eseguire ricerche nell'elenco di tipi per tale tipo determinare il relativo indice nell'elenco dei tipi.
 
-4.  Inserire o aggiornare l'elenco dei membri in base al tipo selezionato.
+4. Inserire o aggiornare l'elenco dei membri in base al tipo selezionato.
 
      L'elenco dei membri riflette ciò che è attualmente visualizzato nei **membri** elenco a discesa. Il contenuto dell'elenco di membri debba essere aggiornato se l'origine è stato modificato o se si visualizzano solo i membri del tipo selezionato e il tipo selezionato è stato modificato. Se si sceglie di visualizzare tutti i membri nel file di origine, lo stile di testo di ogni membro nell'elenco deve essere aggiornato se il tipo selezionato è stato modificato.
 
-5.  Determinare i membri da selezionare nell'elenco dei membri in base alla posizione del punto di inserimento corrente.
+5. Determinare i membri da selezionare nell'elenco dei membri in base alla posizione del punto di inserimento corrente.
 
      Cercare le dichiarazioni che sono state ottenute nel passaggio 1 per il membro che contiene la posizione corrente del cursore, quindi eseguire ricerche nell'elenco di membri per il membro determinare il relativo indice nell'elenco dei membri.
 
-6.  Restituire `true` se sono state apportate modifiche per gli elenchi o le selezioni in entrambi gli elenchi.
+6. Restituire `true` se sono state apportate modifiche per gli elenchi o le selezioni in entrambi gli elenchi.

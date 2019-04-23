@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648655"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105727"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere statistiche dell'applicazione tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** abilita il campionamento.  
+   - **/globalsampleon** abilita il campionamento.  
 
-   -   **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.  
+   - **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.  
 
 3. Riavviare il computer.  
 
@@ -73,9 +73,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 6. Connettere il profiler al processo di lavoro ASP.NET. Digitare: **VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` specifica l'ID processo del processo di lavoro ASP.NET; `ProcName` specifica il nome del processo di lavoro. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.  
+   - `PID` specifica l'ID processo del processo di lavoro ASP.NET; `ProcName` specifica il nome del processo di lavoro. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.  
 
-   -   Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa 100 volte al secondo in un processore da 1 GHz. È possibile specificare una delle opzioni di **VSPerfCmd** seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.  
+   - Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa 100 volte al secondo in un processore da 1 GHz. È possibile specificare una delle opzioni di **VSPerfCmd** seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.  
 
    |Evento di campionamento|Descrizione|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
    |[/counter](../profiling/counter.md) **:** `Config`|Imposta l'evento e l'intervallo di campionamento sul contatore delle prestazioni del processore e sull'intervallo specificati in `Config`.|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.|  
 
-   -   **targetclr:** `Version` specifica la versione di CLR da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.  
+   - **targetclr:** `Version` specifica la versione di CLR da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.  
 
 ## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
  Mentre è in esecuzione l'applicazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni di **VSPerfCmd.exe**. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
 
-1.  Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:  
+1. Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:  
 
-    -   Digitare **VSPerfCmd /detach**  
+    - Digitare **VSPerfCmd /detach**  
 
          -oppure-  
 
-    -   Chiudere il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+    - Chiudere il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
 
-2.  Arrestare il profiler. Digitare: **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2. Arrestare il profiler. Digitare: **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 
-3.  (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:  
+3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:  
 
      **VSPerfCmd /globaloff**  
 
-4.  Riavviare il computer.  
+4. Riavviare il computer.  
 
 ## <a name="see-also"></a>Vedere anche  
  [Profilatura di applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

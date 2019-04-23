@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087144"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammi di attività UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Un' *diagramma di attività* viene visualizzato un processo di business o un pro
 |13|**Azione invia segnale**|Azione che invia un messaggio o un segnale a un'altra attività o a un thread simultaneo nella stessa attività. Il tipo e il contenuto del messaggio sono dati dal titolo dell'azione o vengono specificati nei commenti aggiuntivi.<br /><br /> L'azione può inviare dati nel segnale che può essere passato all'azione in un flusso oggetto o un pin di input (16).|  
 |14|**Azione accetta evento**|Azione che attende un messaggio o un segnale prima di poter continuare. Il tipo del messaggio che può essere ricevuto dall'azione è dato dal titolo dell'azione o specificato nei commenti aggiuntivi.<br /><br /> Se l'azione non ha un flusso di controllo in ingresso, produce un token quando riceve un messaggio.<br /><br /> L'azione può ricevere dati nel segnale che può essere passato su un flusso oggetto o un pin di input (17).<br /><br /> -   **IsUnmarshall** : se true, possono essere presenti diversi pin di output tipizzati e i dati sono unmarshalling. Se false, tutti i dati vengono visualizzati in un unico pin.|  
   
-###  <a name="DataFlow"></a> Flussi di dati  
+### <a name="DataFlow"></a> Flussi di dati  
  È possibile descrivere il flusso di dati da un'azione a un altra. Per altre informazioni sugli elementi usati in questa sezione, vedere la sezione relativa alla creazione di flussi di dati dell'argomento Linee guida per la creazione di un diagramma di attività.  
   
  ![Diagramma di attività che mostra un flusso di dati](../modeling/media/uml-actovdata.png "UML_ActOvData")  

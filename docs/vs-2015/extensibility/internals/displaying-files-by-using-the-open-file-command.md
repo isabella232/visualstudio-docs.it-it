@@ -12,12 +12,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 286f310765db6fff14f6b134c6107ff1c9e36215
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96953d77e82dfcec79257da47845ece8281ec869
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970130"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106098"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Visualizzazione di file tramite il comando Apri file
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che 
   
  Quando un utente fa clic il **Apri File** comando le **File** dal menu e seleziona un file dal **Apri File** si verifica il processo seguente nella finestra di dialogo.  
   
-1.  Usa la tabella documenti in esecuzione, l'IDE determina se il file è già aperto in un progetto.  
+1. Usa la tabella documenti in esecuzione, l'IDE determina se il file è già aperto in un progetto.  
   
-    -   Se il file è aperto, l'IDE riemerga la finestra.  
+    - Se il file è aperto, l'IDE riemerga la finestra.  
   
-    -   Se il file non è aperto, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> per ogni progetto per determinare quale progetto è possibile aprire il file di query.  
+    - Se il file non è aperto, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> per ogni progetto per determinare quale progetto è possibile aprire il file di query.  
   
         > [!NOTE]
         >  Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.  
   
-2.  Ogni progetto risponde con un livello di priorità che indica l'importanza viene posizionato sul progetto aprire il file.  
+2. Ogni progetto risponde con un livello di priorità che indica l'importanza viene posizionato sul progetto aprire il file.  
   
-3.  L'IDE Usa i criteri seguenti per determinare quale progetto apre il file:  
+3. L'IDE Usa i criteri seguenti per determinare quale progetto apre il file:  
   
-    -   Il file verrà aperto il progetto che risponde con la priorità più alta (DP_Intrinsic). Se più di un progetto risponde con la priorità, il progetto prima di rispondere apre il file.  
+    - Il file verrà aperto il progetto che risponde con la priorità più alta (DP_Intrinsic). Se più di un progetto risponde con la priorità, il progetto prima di rispondere apre il file.  
   
-    -   Se risponde alcun progetto con la priorità più alta (DP_Intrinsic), ma tutti i progetti risponde con la priorità stesso, inferiore, il progetto attivo apre il file. Se nessun progetto è attivo, il progetto prima di rispondere apre il file.  
+    - Se risponde alcun progetto con la priorità più alta (DP_Intrinsic), ma tutti i progetti risponde con la priorità stesso, inferiore, il progetto attivo apre il file. Se nessun progetto è attivo, il progetto prima di rispondere apre il file.  
   
-    -   Se nessun progetto attesta la proprietà del file (DP_Unsupported), il progetto file esterni si apre il file.  
+    - Se nessun progetto attesta la proprietà del file (DP_Unsupported), il progetto file esterni si apre il file.  
   
          Se viene creata un'istanza del progetto file esterni, il progetto è sempre risponde con il valore DP_CanAddAsExternal. Questo valore indica che il progetto può aprire il file. Questo progetto viene utilizzato per ospitare i file aperti che non sono in qualsiasi altro progetto. L'elenco di elementi in questo progetto non è persistente; Questo progetto è visibile nel **Esplora soluzioni** solo quando viene usato per aprire un file.  
   
          Se il progetto file esterni non indica che è possibile aprire il file, un'istanza del progetto non è stata creata. In questo caso, l'IDE crea un'istanza del progetto file esterni e indica al progetto per aprire il file.  
   
-4.  Non appena l'IDE determina che il file viene aperto il progetto, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodo su tale progetto.  
+4. Non appena l'IDE determina che il file viene aperto il progetto, chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> metodo su tale progetto.  
   
-5.  Il progetto è quindi possibile aprire il file usando un editor specifico del progetto o un editor standard. Per altre informazioni, vedere [Procedura: Aprire Editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md) e [come: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md), rispettivamente.  
+5. Il progetto è quindi possibile aprire il file usando un editor specifico del progetto o un editor standard. Per altre informazioni, vedere [Procedura: Aprire Editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md) e [come: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md), rispettivamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Visualizzazione di file tramite l'apertura con il comando](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   

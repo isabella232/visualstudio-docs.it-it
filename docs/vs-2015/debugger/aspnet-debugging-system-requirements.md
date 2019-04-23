@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097128"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Debug ASP.NET: Requisiti di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo argomento vengono descritti i requisiti software e di sicurezza per gli scenari di debug di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
--   Debug locale in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e l'applicazione Web vengono eseguiti nello stesso computer. Questo scenario presenta due varianti:  
+- Debug locale in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e l'applicazione Web vengono eseguiti nello stesso computer. Questo scenario presenta due varianti:  
   
-    -   Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede nel file system.  
+    - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede nel file system.  
   
-    -   Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede in un sito Web IIS.  
+    - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede in un sito Web IIS.  
   
--   Il debug remoto in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è in esecuzione in un computer client ed esegue il debug di un'applicazione Web in esecuzione in un computer server remoto.  
+- Il debug remoto in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è in esecuzione in un computer client ed esegue il debug di un'applicazione Web in esecuzione in un computer server remoto.  
   
 ## <a name="security-requirements"></a>Requisiti di sicurezza  
  Per il debug remoto, i computer locale e remoto devono appartenere a una configurazione di dominio o di gruppo di lavoro.  

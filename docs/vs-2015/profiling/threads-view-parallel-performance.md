@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114795"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funz
 ## <a name="usage"></a>Utilizzo  
  Ecco in che modo è possibile usare la visualizzazione Thread:  
   
--   Identificazione dei motivi per cui l'interfaccia utente di un'app non risponde durante alcune fasi di esecuzione.  
+- Identificazione dei motivi per cui l'interfaccia utente di un'app non risponde durante alcune fasi di esecuzione.  
   
--   Identificazione della quantità di tempo trascorso in un blocco dovuto a sincronizzazione, I/O, errori di pagina e altri eventi.  
+- Identificazione della quantità di tempo trascorso in un blocco dovuto a sincronizzazione, I/O, errori di pagina e altri eventi.  
   
--   Identificazione del grado di interferenza da altri processi in esecuzione nel sistema.  
+- Identificazione del grado di interferenza da altri processi in esecuzione nel sistema.  
   
--   Identificazione dei problemi di bilanciamento del carico per l'esecuzione parallela.  
+- Identificazione dei problemi di bilanciamento del carico per l'esecuzione parallela.  
   
--   Identificazione delle cause di scalabilità non ottimale o assente, ad esempio i motivi per cui le prestazioni di un'app parallela non migliorano quando sono disponibili più core logici.  
+- Identificazione delle cause di scalabilità non ottimale o assente, ad esempio i motivi per cui le prestazioni di un'app parallela non migliorano quando sono disponibili più core logici.  
   
--   Individuazione del livello di concorrenza nell'app, per agevolare la parallelizzazione.  
+- Individuazione del livello di concorrenza nell'app, per agevolare la parallelizzazione.  
   
--   Individuazione delle dipendenze tra thread di lavoro e percorsi critici di esecuzione.  
+- Individuazione delle dipendenze tra thread di lavoro e percorsi critici di esecuzione.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Analisi di intervalli di tempo specifici e thread  
  La visualizzazione Thread mostra una sequenza temporale. È possibile usare le funzionalità di zoom e panoramica all'interno della sequenza temporale per esaminare gli intervalli specifici e i thread dell'applicazione. Sull'asse x viene rappresentato il tempo mentre sull'asse y sono riportati diversi canali:  

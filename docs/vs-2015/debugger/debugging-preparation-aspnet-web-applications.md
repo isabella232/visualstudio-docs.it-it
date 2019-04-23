@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5e454eec00c2530190834974cd946838a0947
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092422"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Debug della preparazione: Applicazioni Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di 
   
 ### <a name="to-create-a-web-forms-application"></a>Per creare un'applicazione Web Form  
   
-1.  Nel **File** menu, scegliere **nuovo sito Web**.  
+1. Nel **File** menu, scegliere **nuovo sito Web**.  
   
-2.  Nel **nuovo sito Web** finestra di dialogo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **sito Web**.  
+2. Nel **nuovo sito Web** finestra di dialogo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] **sito Web**.  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
 ### <a name="to-debug-your-web-form"></a>Per eseguire il debug del Web Form  
   
-1.  Impostare uno o più punti di interruzione nelle funzioni e nei gestori eventi.  
+1. Impostare uno o più punti di interruzione nelle funzioni e nei gestori eventi.  
   
      Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
-2.  Quando viene raggiunto un punto di interruzione, eseguire il codice un'istruzione alla volta all'interno della funzione. Osservare l'esecuzione del codice finché non si individua il problema.  
+2. Quando viene raggiunto un punto di interruzione, eseguire il codice un'istruzione alla volta all'interno della funzione. Osservare l'esecuzione del codice finché non si individua il problema.  
   
      Per altre informazioni, vedere [esecuzione di istruzioni](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) e [Script e il debug di applicazioni Web](../debugger/debugging-web-applications-and-script.md).  
   
@@ -54,13 +54,13 @@ Il [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modello sito Web consente di 
   
 #### <a name="to-change-the-default-debug-configuration"></a>Per modificare la configurazione di debug predefinita  
   
-1.  Nelle **Esplora soluzioni**, il sito Web e scegliere **pagine delle proprietà** per aprire il **pagine delle proprietà** nella finestra di dialogo.  
+1. Nelle **Esplora soluzioni**, il sito Web e scegliere **pagine delle proprietà** per aprire il **pagine delle proprietà** nella finestra di dialogo.  
   
-2.  Fare clic su **opzioni di avvio**.  
+2. Fare clic su **opzioni di avvio**.  
   
-3.  Impostare **azione di avvio** alla pagina Web che devono essere visualizzata per primi.  
+3. Impostare **azione di avvio** alla pagina Web che devono essere visualizzata per primi.  
   
-4.  Sotto **debugger**, assicurarsi che **debug ASP.NET** sia selezionata.  
+4. Sotto **debugger**, assicurarsi che **debug ASP.NET** sia selezionata.  
   
      Per altre informazioni, vedere [le impostazioni delle pagine delle proprietà per i progetti Web](../debugger/property-pages-settings-for-web-projects.md).  
   

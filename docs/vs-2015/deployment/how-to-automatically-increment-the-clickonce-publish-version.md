@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d779e364f5cbe7bc4b90e0a77ab3fb825a7b6c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab2dc62add13db9af1186a8974ffe5694a98e62e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083503"
 ---
 # <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>Procedura: Incrementare automaticamente il numero di versione pubblicazione dell'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] del
   
 ### <a name="to-disable-automatically-incrementing-the-publish-version"></a>Per disabilitare a incremento automatico della versione di pubblicazione  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Fare clic sulla scheda **Pubblica**.  
+2. Fare clic sulla scheda **Pubblica**.  
   
-3.  Nel **Publish Version** sezione, deselezionare le **incrementa automaticamente revisione a ogni versione** casella di controllo.  
+3. Nel **Publish Version** sezione, deselezionare le **incrementa automaticamente revisione a ogni versione** casella di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Versione di pubblicazione di set di ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)   

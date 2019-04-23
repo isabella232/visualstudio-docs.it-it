@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114769"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 
@@ -85,7 +85,7 @@ In alcuni casi, è opportuno consentire all'utente finale di personalizzare l'in
 
 ![Tools &gt; Options dialog](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301-a_ToolsOptionsDialog")<br />Strumenti &gt; finestra di dialogo Opzioni
 
-##  <a name="BKMK_TheVSColorService"></a> VSColor Service
+## <a name="BKMK_TheVSColorService"></a> VSColor Service
 
 Visual Studio offre un servizio colori ambiente, denominato anche VSColor service o il servizio di colore della shell. Questo servizio consente di associare i valori di colore degli elementi dell'interfaccia utente per un set contenente i colori per ogni tema colori di nome-valore. VSColor service deve essere usato per tutti gli elementi dell'interfaccia utente, in modo da colori automaticamente cambiano per riflettere il tema selezionato dall'utente corrente, in modo che l'interfaccia utente associato al servizio colori ambiente si integreranno con nuovi temi nelle future versioni di Visual Studio.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Scelta di colori a contrasto elevato
+## <a name="BKMK_ChoosingHighContrastColors"></a> Scelta di colori a contrasto elevato
 
 ### <a name="overview"></a>Panoramica
 
@@ -330,7 +330,7 @@ Molti elementi dell'interfaccia utente comuni già definiti colori a contrasto e
 | WindowFrame | -Bordo IDE |
 | WindowText | -In primo piano della scheda Nascondi automaticamente<br />-In primo piano della scheda finestra strumento selezionato<br />-Scheda della finestra documento con stato non attivo e in primo piano deselezionato o con stato non attivo della scheda provvisoria<br />-Ad albero in primo piano predefinito di visualizzazione e al passaggio del mouse sul glifo non selezionato<br />-Bordo selezionato scheda della finestra strumento<br />-Barra di scorrimento del glifo, del bordo e sfondo del cursore |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Esposizione di colori per gli utenti finali
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Esposizione di colori per gli utenti finali
 
 ### <a name="overview"></a>Panoramica
 

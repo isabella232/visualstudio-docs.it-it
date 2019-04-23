@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dba1ec7a21c0340db8b89124892edf78db2e04c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5e85bc7a5bac87692448aab393056fa1db5edbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083998"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Errore: Autenticazione Kerberos non riuscita
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>Per verificare la corretta risoluzione del nome del computer host del debugger da parte del DNS del computer di destinazione  
   
-1.  Nel computer di destinazione, aprire il menu **Start**, scegliere **Accessori**, quindi fare clic su **Prompt dei comandi**.  
+1. Nel computer di destinazione, aprire il menu **Start**, scegliere **Accessori**, quindi fare clic su **Prompt dei comandi**.  
   
-2.  Nella finestra del **prompt dei comandi** digitare:  
+2. Nella finestra del **prompt dei comandi** digitare:  
   
     ```  
     ping <debugger_host_computer_name>  
     ```  
   
-3.  Nella prima riga della risposta `ping` viene indicato il nome completo del computer e l'indirizzo IP restituito dal DNS per il computer specificato.  
+3. Nella prima riga della risposta `ping` viene indicato il nome completo del computer e l'indirizzo IP restituito dal DNS per il computer specificato.  
   
-4.  Nel computer host del debugger, aprire la finestra del **prompt dei comandi** ed eseguire `ipconfig`.  
+4. Nel computer host del debugger, aprire la finestra del **prompt dei comandi** ed eseguire `ipconfig`.  
   
-5.  Confrontare i valori degli indirizzi IP.  
+5. Confrontare i valori degli indirizzi IP.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)   

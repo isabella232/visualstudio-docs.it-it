@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58955995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114106"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
   
  In questa procedura dettagliata vengono illustrate le attività seguenti:  
   
--   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
+- Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.  
   
--   Uso della finestra **Fasi pipeline grafica** per esaminare l'effetto della chiamata dell'API Direct3D `DrawIndexed` .  
+- Uso della finestra **Fasi pipeline grafica** per esaminare l'effetto della chiamata dell'API Direct3D `DrawIndexed` .  
   
--   Esame del contesto di dispositivo per confermare la mancata impostazione di una fase degli shader.  
+- Esame del contesto di dispositivo per confermare la mancata impostazione di una fase degli shader.  
   
--   Uso della finestra **Fasi pipeline grafica** insieme a **Stack di chiamate eventi di grafica** per semplificare l'individuazione del pixel shader non impostato.  
+- Uso della finestra **Fasi pipeline grafica** insieme a **Stack di chiamate eventi di grafica** per semplificare l'individuazione del pixel shader non impostato.  
   
 ## <a name="scenario"></a>Scenario  
  Quando un oggetto è mancante in un'app 3D, a volte il problema è dovuto alla mancata impostazione di una delle fasi degli shader prima del rendering dell'oggetto. Nelle app con esigenze di rendering semplici, l'origine di questo errore si trova in genere all'interno dello stack di chiamate della chiamata di disegno dell'oggetto. Tuttavia, per motivi di ottimizzazione, alcune app riuniscono in batch gli oggetti che hanno in comune programmi shader, trame o altri dati per ridurre al minimo il sovraccarico prodotto dalle modifiche di stato. In queste app l'origine dell'errore potrebbe essere nascosta nel sistema di batch, anziché trovarsi nello stack di chiamate della chiamata di disegno. Poiché lo scenario di questa procedura dettagliata descrive un'app con esigenze di rendering semplici, l'origine dell'errore si trova nello stack di chiamate.  

@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baf26fb00a53e4680d44caf5fb8b2f2c5bd5f4c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773376"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098890"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente utilizzando i log dei test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
   
  **Requisiti**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>Perché si deve eseguire questa operazione?  
  I log sono presentati in un formato che consente il debug rapido degli errori.  
@@ -32,9 +32,9 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 ### <a name="step-1-enable-logging"></a>Passaggio 1: Abilitare la registrazione  
  A seconda dello scenario in uso, abilitare la registrazione usando uno dei metodi seguenti.  
   
--   Selezionare .NET Framework versione 4 senza file App.config nel progetto di test  
+- Selezionare .NET Framework versione 4 senza file App.config nel progetto di test  
   
-    -   Aprire il file **QTAgent32_40.exe.config**.  
+    - Aprire il file **QTAgent32_40.exe.config**.  
   
          Per impostazione predefinita, il file si trova in **\<drive>:\Programmi (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
   
@@ -42,9 +42,9 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
   
          Salvare il file.  
   
--   Selezionare .NET Framework versione 4.5 senza file App.config nel progetto di test  
+- Selezionare .NET Framework versione 4.5 senza file App.config nel progetto di test  
   
-    -   Aprire il file **QTAgent32.exe.config**.  
+    - Aprire il file **QTAgent32.exe.config**.  
   
          Per impostazione predefinita, il file si trova in **\<drive>:\Programmi (x86)\Microsoft Visual Studio 12.0\Common7\IDE**.  
   
@@ -52,33 +52,33 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
   
          Salvare il file.  
   
--   File App.config presente nel progetto di test  
+- File App.config presente nel progetto di test  
   
-    -   Aprire il file App.config nel progetto.  
+    - Aprire il file App.config nel progetto.  
   
          Aggiungere il codice seguente nel nodo di configurazione:  
   
          `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`  
   
--   Abilitare la registrazione dal codice di test stesso  
+- Abilitare la registrazione dal codice di test stesso  
   
-    -   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
+    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;  
   
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: eseguire il test codificato dell'interfaccia utente e visualizzare il log  
+### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: Eseguire il test codificato dell'interfaccia utente e visualizzare il log  
  Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file **QTAgent32.exe.config**, verrà visualizzato un collegamento di output nei risultati di Esplora test. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".  
   
-1.  Dal menu **TEST** scegliere **Windows**, quindi selezionare **Esplora test**.  
+1. Dal menu **TEST** scegliere **Windows**, quindi selezionare **Esplora test**.  
   
-2.  Scegliere **Compila soluzione** dal menu **Compila**.  
+2. Scegliere **Compila soluzione** dal menu **Compila**.  
   
-3.  In Esplora test selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.  
+3. In Esplora test selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.  
   
      I test automatizzati verranno eseguiti e segnaleranno se sono stati superati o se hanno avuto esito negativo.  
   
     > [!TIP]
     >  Per visualizzare Esplora test dal menu **Test**, selezionare **Windows**, quindi scegliere **Esplora test**.  
   
-4.  Scegliere il collegamento **Output** nei risultati di Esplora test.  
+4. Scegliere il collegamento **Output** nei risultati di Esplora test.  
   
      ![Collegamento Output in Esplora test](../test/media/cuit-htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
@@ -86,7 +86,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
   
      ![Collegamenti dei risultati e dell'output del codificato dell'interfaccia utente](../test/media/cuit-htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
-5.  Scegliere il collegamento UITestActionLog.html.  
+5. Scegliere il collegamento UITestActionLog.html.  
   
      Il log verrà visualizzato nel browser Web.  
   
@@ -94,7 +94,7 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
   
 ## <a name="q--a"></a>Domande e risposte  
   
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>D: Che cosa è accaduto alla chiave EnableHtmlLogger?  
+### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>D: Cosa è successo alla chiave EnableHtmlLogger?  
  Nelle versioni precedenti di Visual Studio sono presenti altre due impostazioni di configurazione per abilitare il logger html nel test codificato dell'interfaccia utente:  
   
 ```  

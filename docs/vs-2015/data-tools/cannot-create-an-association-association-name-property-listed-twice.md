@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091577"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Impossibile creare un'associazione &lt;nome associazione&gt;. La stessa proprietà è elencata più volte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Impossibile creare un'associazione \<nome associazione>. La stessa proprietà è
   
 ### <a name="to-resolve-this-condition"></a>Risoluzione del problema  
   
--   Esaminare il messaggio e prendere nota della proprietà specificata in esso.  
+- Esaminare il messaggio e prendere nota della proprietà specificata in esso.  
   
--   Fare clic su **OK** per chiudere la finestra del messaggio.  
+- Fare clic su **OK** per chiudere la finestra del messaggio.  
   
--   Controllare le **Proprietà associazione** e rimuovere le voci duplicate.  
+- Controllare le **Proprietà associazione** e rimuovere le voci duplicate.  
   
--   Fare clic su **OK**.  
+- Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

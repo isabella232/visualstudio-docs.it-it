@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088626"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Procedura: Recuperano una cartella in base al nome
   Questo esempio Ottiene un riferimento a una cartella personalizzata denominata e quindi Visualizza il contenuto della cartella.
@@ -30,7 +30,7 @@ ms.locfileid: "56620889"
 ## <a name="compile-the-code"></a>Compilare il codice
  L'esempio presenta i requisiti seguenti:
 
--   Una cartella denominata TestFolder.
+- Una cartella denominata TestFolder.
 
 ## <a name="see-also"></a>Vedere anche
 - [Con le cartelle di lavoro](../vsto/working-with-folders.md)

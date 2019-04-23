@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113950"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Se l'applicazione tenta di usare un riferimento interrotto, viene generato un er
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Per correggere un riferimento interrotto modificando il percorso del riferimento  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**.  
   
-2.  Viene visualizzata la finestra **Creazione progetti**.  
+2. Viene visualizzata la finestra **Creazione progetti**.  
   
-3.  Se si usa Visual Basic, selezionare la pagina **Riferimenti** e fare clic sul pulsante **Percorsi riferimento**. Nella finestra di dialogo **Percorsi riferimento** digitare il percorso della cartella che contiene l'elemento a cui si vuole fare riferimento nel campo **Cartella** e quindi fare clic sul pulsante **Aggiungi cartella**.  
+3. Se si usa Visual Basic, selezionare la pagina **Riferimenti** e fare clic sul pulsante **Percorsi riferimento**. Nella finestra di dialogo **Percorsi riferimento** digitare il percorso della cartella che contiene l'elemento a cui si vuole fare riferimento nel campo **Cartella** e quindi fare clic sul pulsante **Aggiungi cartella**.  
   
      -oppure-  
   
@@ -69,20 +69,20 @@ Se l'applicazione tenta di usare un riferimento interrotto, viene generato un er
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Per correggere un riferimento interrotto a causa di un file che non esiste più nell'unità  
   
--   Eliminare il riferimento.  
+- Eliminare il riferimento.  
   
--   Se il riferimento si trova in un'altra posizione all'interno del computer, leggerlo da quella posizione.  
+- Se il riferimento si trova in un'altra posizione all'interno del computer, leggerlo da quella posizione.  
   
--   Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>File di riferimento rinominato  
  È possibile che il file a cui viene fatto riferimento sia stato rinominato.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Per correggere un riferimento interrotto a causa della ridenominazione di un file  
   
--   Eliminare il riferimento e quindi aggiungere un riferimento al nuovo nome.  
+- Eliminare il riferimento e quindi aggiungere un riferimento al nuovo nome.  
   
--   Se il riferimento si trova in un'altra posizione all'interno del computer, è necessario leggerlo da quella posizione. Per altre informazioni su come eseguire l'operazione, vedere [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Se il riferimento si trova in un'altra posizione all'interno del computer, è necessario leggerlo da quella posizione. Per altre informazioni su come eseguire l'operazione, vedere [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>Errore durante la connessione o l'autenticazione di rete  
  I file possono risultare inaccessibili per molte cause, ad esempio una connessione di rete non funzionante o un'operazione di autenticazione non riuscita. Ogni causa può avere una soluzione univoca; è possibile ad esempio che sia necessario contattare il proprio amministratore locale per accedere alle risorse necessarie. Tuttavia, l'eliminazione del riferimento e la correzione del codice in cui viene usato è un'opzione sempre valida. Per altre informazioni, vedere [NIB Procedura: Aggiungere o rimuovere riferimenti usando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091291"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedura: Usare la ricerca in Progettazione flussi di lavoro
 
@@ -23,13 +23,13 @@ Per facilitare la creazione di flussi di lavoro più grandi e complesse, è poss
 
 Ricerca veloce consente di trovare quanto segue nella finestra di progettazione:
 
--   Proprietà degli oggetti <xref:System.Activities.Activity>, <xref:System.Activities.Statements.FlowNode>, <xref:System.Activities.Statements.State>, transizioni, nonché altri elementi di controllo del flusso personalizzati.
+- Proprietà degli oggetti <xref:System.Activities.Activity>, <xref:System.Activities.Statements.FlowNode>, <xref:System.Activities.Statements.State>, transizioni, nonché altri elementi di controllo del flusso personalizzati.
 
--   Variabili
+- Variabili
 
--   Argomenti
+- Argomenti
 
--   Espressioni
+- Espressioni
 
 ### <a name="use-quick-find"></a>Usare la ricerca veloce
 
@@ -47,8 +47,8 @@ Cerca nei file individua le stringhe nei file del flusso di lavoro, inclusi i fi
 
 ### <a name="use-find-in-files"></a>Usare Cerca nei file
 
-1.  In Visual Studio, premere **Ctrl**+**MAIUSC**+**F**, o selezionare **modifica**  >   **Trova e sostituisci** > **Cerca nei file**.
+1. In Visual Studio, premere **Ctrl**+**MAIUSC**+**F**, o selezionare **modifica**  >   **Trova e sostituisci** > **Cerca nei file**.
 
-2.  Immettere l'elemento cercato nel **Find what** nella casella di testo e fare clic su **Trova tutto**.
+2. Immettere l'elemento cercato nel **Find what** nella casella di testo e fare clic su **Trova tutto**.
 
-3.  Il risultato di ricerca viene visualizzato nei **risultati di ricerca** visualizzazione. Fare doppio clic su un elemento del risultato consente di passare all'attività che contiene la corrispondenza nella finestra di progettazione del flusso di lavoro.
+3. Il risultato di ricerca viene visualizzato nei **risultati di ricerca** visualizzazione. Fare doppio clic su un elemento del risultato consente di passare all'attività che contiene la corrispondenza nella finestra di progettazione del flusso di lavoro.

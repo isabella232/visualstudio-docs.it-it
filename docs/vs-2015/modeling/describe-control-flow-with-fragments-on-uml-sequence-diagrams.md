@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107086"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
   
  Gli elementi mostrati nella figura sono i seguenti.  
   
-1.  Un frammento combinato. Esistono diversi tipi di frammenti combinati. Questo esempio è un frammento combinato Alt, che è possibile usare per indicare che possono verificarsi sequenze alternative di messaggi.  
+1. Un frammento combinato. Esistono diversi tipi di frammenti combinati. Questo esempio è un frammento combinato Alt, che è possibile usare per indicare che possono verificarsi sequenze alternative di messaggi.  
   
-2.  Operandi interazione. Ogni frammento combinato contiene almeno un operando interazione, che può contenere messaggi, utilizzi interazione e frammenti combinati di dimensioni minori. In questo esempio il frammento combinato Alt include due operazioni di interazione che mostrano sequenze alternative di messaggi.  
+2. Operandi interazione. Ogni frammento combinato contiene almeno un operando interazione, che può contenere messaggi, utilizzi interazione e frammenti combinati di dimensioni minori. In questo esempio il frammento combinato Alt include due operazioni di interazione che mostrano sequenze alternative di messaggi.  
   
-3.  È possibile selezionare ogni operando interazione separatamente facendo clic al suo interno. In questo esempio è selezionato l'operando interazione superiore, in modo da poter visualizzare il suo limite. In genere, è visibile solo la linea di separazione tra gli operandi interazione.  
+3. È possibile selezionare ogni operando interazione separatamente facendo clic al suo interno. In questo esempio è selezionato l'operando interazione superiore, in modo da poter visualizzare il suo limite. In genere, è visibile solo la linea di separazione tra gli operandi interazione.  
   
     > [!NOTE]
     >  Per selezionare l'operando interazione superiore, è necessario fare clic non troppo vicino alla parte superiore del frammento combinato.  
   
-4.  Clausole guard. È possibile assegnare una clausola guard a ogni operando interazione. La clausola guard descrive la condizione in cui verranno eseguiti i messaggi all'interno dell'operando interazione.  
+4. Clausole guard. È possibile assegnare una clausola guard a ogni operando interazione. La clausola guard descrive la condizione in cui verranno eseguiti i messaggi all'interno dell'operando interazione.  
   
 ## <a name="creating-combined-fragments"></a>Creazione di frammenti combinati  
  Per un elenco dei tipi di frammento che è possibile creare, vedere [Tipi di frammento combinato](#KindsOfFragment).  
@@ -97,12 +97,12 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Per impostare o visualizzare le proprietà di un frammento combinato  
   
--   Fare clic con il pulsante destro del mouse sul titolo del frammento combinato e quindi scegliere **Proprietà**.  
+- Fare clic con il pulsante destro del mouse sul titolo del frammento combinato e quindi scegliere **Proprietà**.  
   
     > [!NOTE]
     >  Tipi diversi di frammento combinato hanno proprietà diverse.  
   
-##  <a name="KindsOfFragment"></a> Tipi di frammento combinato  
+## <a name="KindsOfFragment"></a> Tipi di frammento combinato  
   
 ### <a name="fragments-describing-control-flow"></a>Frammenti che descrivono il flusso di controllo  
  Un diagramma di sequenza semplice mostra solo una sequenza tipica. È possibile usare i tipi di frammenti combinati indicati di seguito per descrivere le variazioni che possono verificarsi in occasioni diverse.  

@@ -16,12 +16,12 @@ ms.technology: vs-ide-general
 ms.topic: reference
 ms.workload:
 - multiple
-ms.openlocfilehash: db30c3d74a7742daa3c9cf7225bc2a38062dc6e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099390"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per il riconoscimento di Monitor per estensioni di Visual Studio
 Versioni precedenti a Visual Studio 2019 era relativo contesto di riconoscimento DPI imposta sistema compatibile con, piuttosto che per ogni monitoraggio compatibili con DPI (PMA). Esecuzione della consapevolezza del sistema ha restituito un oggetto visivo con funzionalità ridotto verifichi (i tipi di carattere, ad esempio sfocati o le icone) ogni volta che Visual Studio doveva eseguire il rendering su monitor con fattori di scala diversa o remoto in computer con configurazioni diverse, ad esempio (diverse Windows scalabilità).
@@ -39,9 +39,9 @@ Vedere la [sviluppo di applicazioni Desktop DPI elevato in Windows](https://docs
 
 ## <a name="enabling-pma"></a>Abilitazione PMA
 Per abilitare PMA in Visual Studio, è necessario soddisfare i requisiti seguenti:
-1)  Windows 10 April 2018 Update (v1803, RS4) o versione successiva
-2)  Versione RTM di .NET framework 4.8 o versione successiva
-3)  Visual Studio 2019 con il ["Ottimizzare il rendering per le schermate con densità di pixel diversa"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) opzione abilitata
+1) Windows 10 April 2018 Update (v1803, RS4) o versione successiva
+2) Versione RTM di .NET framework 4.8 o versione successiva
+3) Visual Studio 2019 con il ["Ottimizzare il rendering per le schermate con densità di pixel diversa"](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box?view=vs-2019) opzione abilitata
 
 Una volta soddisfatti questi requisiti, Visual Studio verrà abilitata automaticamente la modalità PMA nell'intero processo.
 
@@ -203,6 +203,7 @@ La maggior parte delle operazioni di calcolo dell'interfaccia utente che avviene
 Se viene eseguita la migrazione di una finestra degli strumenti non WPF per supportare pienamente PMA, è necessario rifiutare esplicitamente CLMM. A tale scopo, deve essere implementata una nuova interfaccia: IVsDpiAware.
 
 C#:
+
 ```cs
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 public interface IVsDpiAeware
@@ -213,6 +214,7 @@ public interface IVsDpiAeware
 ```
  
 C++:
+
 ```cpp
 IVsDpiAware : public IUnknown
 {
@@ -245,6 +247,7 @@ enum __VSDPIMODE
 Interfaccia utente legacy che non viene aggiornata per supportare la modalità PMA, potrebbero essere necessari modifiche di lieve entità recarsi a lavoro mentre Visual Studio è in esecuzione in modalità PMA. Una correzione di questo tipo consiste nel verificare che l'interfaccia utente in cui viene creato il DpiAwarenessContext a destra. Per forzare l'interfaccia utente in un particolare DpiAwarenessContext, è possibile accedere a un ambito DPI con il codice seguente:
 
 C#:
+
 ```cs
 using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 {
@@ -254,6 +257,7 @@ using (DpiAwareness.EnterDpiScope(DpiAwarenessContext.SystemAware))
 ```
 
 C++:
+
 ```cpp
 void MyClass::ShowDialog()
 {

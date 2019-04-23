@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093930"
 ---
 # <a name="sccgetprojpath-function"></a>Funzione SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa funzione richiede all'utente un percorso di progetto, che è una stringa che è significativa solo per il plug-in del controllo del codice sorgente. Viene chiamato quando l'utente è:  
   
--   Crea un nuovo progetto  
+- Crea un nuovo progetto  
   
--   Aggiunta di un progetto esistente al controllo della versione  
+- Aggiunta di un progetto esistente al controllo della versione  
   
--   Tentativo di trovare un progetto di controllo di versione esistente  
+- Tentativo di trovare un progetto di controllo di versione esistente  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -72,13 +72,13 @@ SCCRTN SccGetProjPath (
   
 |In ingresso|Interpretazione|  
 |--------------|--------------------|  
-|true|L'utente può creare un nuovo progetto.|  
-|false|L'utente non è stato possibile creare un nuovo progetto.|  
+|TRUE|L'utente può creare un nuovo progetto.|  
+|FALSE|L'utente non è stato possibile creare un nuovo progetto.|  
   
 |In uscita|Interpretazione|  
 |--------------|--------------------|  
-|true|È stato creato un nuovo progetto.|  
-|false|È stato selezionato un progetto esistente.|  
+|TRUE|È stato creato un nuovo progetto.|  
+|FALSE|È stato selezionato un progetto esistente.|  
   
 ## <a name="return-value"></a>Valore restituito  
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:  

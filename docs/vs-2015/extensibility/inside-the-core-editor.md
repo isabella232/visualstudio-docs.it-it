@@ -10,12 +10,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083361"
 ---
 # <a name="inside-the-core-editor"></a>All'interno l'Editor principale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale è un set di n
   
  Di seguito sono riportati alcuni aspetti importanti dell'editor principale:  
   
--   Buffer di testo  
+- Buffer di testo  
   
--   Visualizzazione di testo  
+- Visualizzazione di testo  
   
--   Finestra del codice  
+- Finestra del codice  
   
--   Marcatori di testo  
+- Marcatori di testo  
   
--   Gestione di testo  
+- Gestione di testo  
   
--   Integrazione con servizi di linguaggio  
+- Integrazione con servizi di linguaggio  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Creazione di un'istanza dell'editor principale tramite l'API legacy](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  

@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5226f5c235b3af10fba4fd0fab3ee44ceb72a93e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106631"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accedere direttamente al database mediante un oggetto TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Oltre al `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, vengono creati ogg
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Per inserire nuovi record direttamente in un database  
   
--   Chiamata dell'oggetto TableAdapter `Insert` , passando i valori per ogni colonna come parametri. La procedura seguente usa il `Region` tabella il databaseas Northwind un esempio.  
+- Chiamata dell'oggetto TableAdapter `Insert` , passando i valori per ogni colonna come parametri. La procedura seguente usa il `Region` tabella il databaseas Northwind un esempio.  
   
     > [!NOTE]
     >  Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.  
@@ -55,7 +55,7 @@ Oltre al `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, vengono creati ogg
   
 #### <a name="to-update-records-directly-in-a-database"></a>Per aggiornare i record direttamente in un database  
   
--   Chiamata dell'oggetto TableAdapter `Update` , passando i valori originale e nuovi per ogni colonna come parametri.  
+- Chiamata dell'oggetto TableAdapter `Update` , passando i valori originale e nuovi per ogni colonna come parametri.  
   
     > [!NOTE]
     >  Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.  
@@ -65,7 +65,7 @@ Oltre al `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, vengono creati ogg
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Per eliminare i record direttamente da un database  
   
--   Chiamata dell'oggetto TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` (metodo). La procedura seguente usa il `Region` tabella il databaseas Northwind un esempio.  
+- Chiamata dell'oggetto TableAdapter `Delete` , passando i valori per ogni colonna come parametri del `Delete` (metodo). La procedura seguente usa il `Region` tabella il databaseas Northwind un esempio.  
   
     > [!NOTE]
     >  Se non si dispone di un'istanza disponibile, creare un'istanza di oggetto TableAdapter che si desidera utilizzare.  

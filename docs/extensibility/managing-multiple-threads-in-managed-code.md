@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084752"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Procedura: Gestire più thread in codice gestito
 Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni che abbia le operazioni eseguite su thread diversi dal thread dell'interfaccia utente di Visual Studio, è necessario seguire le linee guida indicate di seguito. È possibile mantenere reattivo il thread dell'interfaccia utente perché non è necessario attendere per il lavoro in un altro thread per il completamento. È possibile rendere il codice più efficiente, perché non si dispone di un thread aggiuntivo che occupano lo spazio dello stack e si può rendere più affidabili e facili da eseguire il debug perché è evitare blocchi e deadlock.
@@ -25,7 +25,7 @@ Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni c
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Passare dal thread dell'interfaccia utente a un thread in background
 
-1.  Se si è sul thread UI e si desidera eseguire le attività asincrone in un thread in background, usare `Task.Run()`:
+1. Se si è sul thread UI e si desidera eseguire le attività asincrone in un thread in background, usare `Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni c
 
     ```
 
-2.  Se si è sul thread UI e si vuole bloccare in modo sincrono durante le operazioni di lavoro in un thread in background, usare il <xref:System.Threading.Tasks.TaskScheduler> proprietà `TaskScheduler.Default` all'interno di <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Se si è sul thread UI e si vuole bloccare in modo sincrono durante le operazioni di lavoro in un thread in background, usare il <xref:System.Threading.Tasks.TaskScheduler> proprietà `TaskScheduler.Default` all'interno di <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni c
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Passare da un thread in background al thread dell'interfaccia utente
 
-1.  Se si usa un thread in background e si desidera eseguire un'operazione sul thread dell'interfaccia utente, usare <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Se si usa un thread in background e si desidera eseguire un'operazione sul thread dell'interfaccia utente, usare <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

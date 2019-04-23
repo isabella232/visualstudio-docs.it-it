@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085377"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ NOTA]
 ## <a name="dataset-workflow"></a>Flusso di lavoro di set di dati
  Visual Studio fornisce numerosi strumenti per semplificare l'utilizzo di set di dati. Il flusso di lavoro end-to-end base è:
 
--   Usare la **Zdroj dat** finestra per creare un nuovo set di dati da uno o più origini dati. Usare la **Progettazione Dataset** per configurare il set di dati e impostare le relative proprietà. Ad esempio, è necessario specificare quali tabelle dall'origine dati da includere e le colonne da ogni tabella. Scegliere con attenzione conservare la quantità di memoria che richiede il set di dati. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
+- Usare la **Zdroj dat** finestra per creare un nuovo set di dati da uno o più origini dati. Usare la **Progettazione Dataset** per configurare il set di dati e impostare le relative proprietà. Ad esempio, è necessario specificare quali tabelle dall'origine dati da includere e le colonne da ogni tabella. Scegliere con attenzione conservare la quantità di memoria che richiede il set di dati. Per altre informazioni, vedere [Create and configure datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md) (Creare e configurare set di dati).
 
--   Specificare le relazioni tra le tabelle in modo che le chiavi esterne vengono gestite correttamente. Per altre informazioni, vedere [compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Specificare le relazioni tra le tabelle in modo che le chiavi esterne vengono gestite correttamente. Per altre informazioni, vedere [compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md).
 
--   Usare la **configurazione guidata TableAdapter** per specificare la query o stored procedure in grado di popolare il set di dati e le operazioni di database (update, delete e così via) da implementare. Per altre informazioni, vedere gli argomenti seguenti:
+- Usare la **configurazione guidata TableAdapter** per specificare la query o stored procedure in grado di popolare il set di dati e le operazioni di database (update, delete e così via) da implementare. Per altre informazioni, vedere gli argomenti seguenti:
 
-    -   [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [Modificare i dati nei set di dati](../data-tools/edit-data-in-datasets.md)
+    - [Modificare i dati nei set di dati](../data-tools/edit-data-in-datasets.md)
 
-    -   [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
+    - [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
 
-    -   [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
+    - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 
--   Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Abilita [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Abilita [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
--   Usare la **Zdroje dat** finestra consente di associare i controlli dell'interfaccia utente per il set di dati o le singole colonne e per specificare quali colonne sono modificabili dall'utente. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Usare la **Zdroje dat** finestra consente di associare i controlli dell'interfaccia utente per il set di dati o le singole colonne e per specificare quali colonne sono modificabili dall'utente. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Architettura a più livelli e i set di dati
  Per informazioni sui set di dati nelle applicazioni a più livelli, vedere [lavorare con i set di dati nelle applicazioni a n livelli](../data-tools/work-with-datasets-in-n-tier-applications.md).

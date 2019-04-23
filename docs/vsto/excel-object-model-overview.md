@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3db6031a7934d72a3784f08ff7c6c3e5018d26c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104544"
 ---
 # <a name="excel-object-model-overview"></a>Cenni preliminari sul modello a oggetti di Excel
   Per sviluppare soluzioni che utilizzano Microsoft Office Excel, è possibile interagire con gli oggetti forniti dal modello a oggetti di Excel. In questo argomento vengono introdotti gli oggetti più importanti:
@@ -41,7 +41,7 @@ ms.locfileid: "56628585"
 
   Il modello a oggetti è strettamente basato sull'interfaccia utente. L’oggetto <xref:Microsoft.Office.Interop.Excel.Application> rappresenta l'intera applicazione e ogni oggetto <xref:Microsoft.Office.Interop.Excel.Workbook> contiene una raccolta di oggetti `Worksheet`. La principale astrazione che rappresenta le celle è l’oggetto <xref:Microsoft.Office.Interop.Excel.Range> che consente di lavorare con singole celle o gruppi di celle.
 
-  Oltre al modello di oggetto di Excel, progetti di Office in Visual Studio forniscono *elementi host* e *controlli host* che estendono alcuni oggetti nel modello a oggetti Excel. Gli elementi host e i controlli host si comportano come gli oggetti di Excel che estendono, ma dispongono anche di funzionalità aggiuntive, ad esempio funzionalità di data binding ed eventi aggiuntivi. Per altre informazioni, vedere [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md) e [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).
+  Oltre al modello di oggetto di Excel, progetti di Office in Visual Studio forniscono *elementi host* e *controlli host* che estendono alcuni oggetti nel modello a oggetti Excel. Gli elementi host e i controlli host si comportano come gli oggetti di Excel che estendono, ma dispongono anche di funzionalità aggiuntive, ad esempio funzionalità di associazione dati ed eventi aggiuntivi. Per altre informazioni, vedere [automatizzare Excel usando oggetti estesi](../vsto/automating-excel-by-using-extended-objects.md) e [elementi Host e host Cenni preliminari sui controlli](../vsto/host-items-and-host-controls-overview.md).
 
   In questo argomento viene illustrato brevemente il modello a oggetti di Excel. Per le risorse in cui altre informazioni sull'intero modello a oggetti Excel, vedere [usare la documentazione del modello a oggetti Excel](#ExcelOMDocumentation).
 
@@ -99,7 +99,7 @@ ms.locfileid: "56628585"
 
  Visual Studio estende l’oggetto <xref:Microsoft.Office.Interop.Excel.Range> fornendo i tipi <xref:Microsoft.Office.Tools.Excel.NamedRange> e <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>. Questi tipi hanno la maggior parte delle medesime funzionalità di un oggetto <xref:Microsoft.Office.Interop.Excel.Range>, nonché nuove funzionalità, quali la funzionalità di data binding, e nuovi eventi. Per altre informazioni, vedere [NamedRange control](../vsto/namedrange-control.md) e [controllo XmlMappedRange](../vsto/xmlmappedrange-control.md).
 
-##  <a name="ExcelOMDocumentation"></a> Uso della documentazione sul modello a oggetti di Excel
+## <a name="ExcelOMDocumentation"></a> Uso della documentazione sul modello a oggetti di Excel
  Per informazioni complete sul modello a oggetti di Excel, è possibile utilizzare il riferimento di assembly di interoperabilità primario di Excel e il riferimento del modello a oggetti VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Riferimento all'assembly di interoperabilità primario

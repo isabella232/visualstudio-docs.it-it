@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098441"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  L'architettura di un sistema può essere suddivisa in due aree:  
   
--   [Progettazione di alto livello](#Structure). Descrive i componenti principali e la loro modalità di interazione per soddisfare ogni requisito. Se il sistema è di grandi dimensioni, ogni componente può disporre del proprio progetto di alto livello che mostra come è costituito da componenti più piccoli.  
+- [Progettazione di alto livello](#Structure). Descrive i componenti principali e la loro modalità di interazione per soddisfare ogni requisito. Se il sistema è di grandi dimensioni, ogni componente può disporre del proprio progetto di alto livello che mostra come è costituito da componenti più piccoli.  
   
--   [Schemi progettuali](#Patterns) e le convenzioni usate in tutte le progettazioni dei componenti. Un modello descrive un particolare approccio per realizzare un obiettivo di programmazione. Usando gli stessi schemi in tutta una progettazione, il team può ridurre il costo delle modifiche e dello sviluppo di nuovo software.  
+- [Schemi progettuali](#Patterns) e le convenzioni usate in tutte le progettazioni dei componenti. Un modello descrive un particolare approccio per realizzare un obiettivo di programmazione. Usando gli stessi schemi in tutta una progettazione, il team può ridurre il costo delle modifiche e dello sviluppo di nuovo software.  
   
-##  <a name="Structure"></a> Progettazione di alto livello  
+## <a name="Structure"></a> Progettazione di alto livello  
  Un progetto di alto livello descrive i componenti principali del sistema e il modo in cui interagiscono tra loro per raggiungere gli obiettivi della progettazione. Le attività nell'elenco seguente sono coinvolte nello sviluppo della progettazione di alto livello, anche se non necessariamente in una determinata sequenza.  
   
  Se si sta aggiornando il codice esistente, è possibile iniziare descrivendo i componenti principali. Verificare di comprendere le modifiche ai requisiti dell'utente e quindi aggiungere o modificare le interazioni tra i componenti. Se si sta sviluppando un nuovo sistema, iniziare individuando le funzionalità principali di esigenze degli utenti. È possibile esplorare le sequenze di interazioni per i casi di utilizzo principali e quindi consolidare le sequenze in una progettazione del componente.  
   
  In ogni caso, è utile per sviluppare le diverse attività in parallelo e sviluppare il codice e i test in una fase iniziale. Evitare di tentare di completare uno di questi aspetti prima di avviarne un altro. In genere, i requisiti e la comprensione del modo migliore per progettare il sistema verrà modificato durante la scrittura e il test del codice. Di conseguenza, è necessario iniziare a individuare e codificare le funzionalità principali dei requisiti e della progettazione. Inserire i dettagli nelle iterazioni successive del progetto.  
   
--   [Informazioni sui requisiti](#Requirements). Il punto di partenza di qualsiasi progettazione è una chiara comprensione delle esigenze degli utenti.  
+- [Informazioni sui requisiti](#Requirements). Il punto di partenza di qualsiasi progettazione è una chiara comprensione delle esigenze degli utenti.  
   
--   [Modelli architettonici](#BigDecisions). Le scelte effettuate sulle tecnologie principali e gli elementi architettonici del sistema.  
+- [Modelli architettonici](#BigDecisions). Le scelte effettuate sulle tecnologie principali e gli elementi architettonici del sistema.  
   
--   [Componenti e relative interfacce](#Components). È possibile creare diagrammi dei componenti per mostrare le parti principali del sistema e le interfacce tramite cui interagiscono tra loro. Le interfacce di ogni componente includono tutti i messaggi identificati nei diagrammi di sequenza.  
+- [Componenti e relative interfacce](#Components). È possibile creare diagrammi dei componenti per mostrare le parti principali del sistema e le interfacce tramite cui interagiscono tra loro. Le interfacce di ogni componente includono tutti i messaggi identificati nei diagrammi di sequenza.  
   
--   [Interazioni tra componenti](#Interactions). Per ogni caso di utilizzo, evento o messaggio in arrivo, è possibile creare un diagramma di sequenza che mostra il modo in cui interagiscono i componenti principali del sistema per ottenere la risposta richiesta.  
+- [Interazioni tra componenti](#Interactions). Per ogni caso di utilizzo, evento o messaggio in arrivo, è possibile creare un diagramma di sequenza che mostra il modo in cui interagiscono i componenti principali del sistema per ottenere la risposta richiesta.  
   
--   [Modello di dati di componenti e interfacce](#Data). È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.  
+- [Modello di dati di componenti e interfacce](#Data). È possibile creare diagrammi classi per descrivere le informazioni passate tra componenti e archiviate all'interno dei componenti.  
   
-##  <a name="Requirements"></a> Informazioni sui requisiti  
+## <a name="Requirements"></a> Informazioni sui requisiti  
  La progettazione di alto livello di un'applicazione completa viene sviluppata più efficacemente con un modello requisiti o altra descrizione delle esigenze degli utenti. Per altre informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
   
  Se il sistema che si sta sviluppando è un componente in un sistema più grande, parte o tutti i requisiti potrebbero essere incorporati nelle interfacce di programmazione.  
@@ -78,7 +78,7 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
   La quantità di dettagli che devono essere inseriti in un modello di requisiti o architettonico dipende dalla scala del progetto e dalle dimensioni e dalla distribuzione del team. Un piccolo team su un progetto breve non po' andare oltre il disegno di un diagramma classi dei concetti aziendali e alcuni schemi progettuali; un progetto di grandi dimensioni distribuito su più aree ha bisogno di più dettagli.  
   
-##  <a name="BigDecisions"></a> Modelli di architettura  
+## <a name="BigDecisions"></a> Modelli di architettura  
  Nelle prime fasi di sviluppo è necessario scegliere le principali tecnologie e gli elementi da cui dipende la progettazione. Le aree in cui devono essere apportate queste scelte includono quanto segue:  
   
 - Scelte di tecnologia di base, ad esempio la scelta tra un database e un file system e la scelta tra un'applicazione di rete e un client Web e così via.  
@@ -91,7 +91,7 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
   Le selezioni effettuate influiscono sulla modalità di utilizzo e di interpretazione del modello architettonico. Ad esempio, in un sistema che usa un database, le associazioni in un diagramma classi potrebbero rappresentare relazioni o chiavi esterne nel database, mentre in un sistema basato su file XML, le associazioni potrebbero indicare riferimenti incrociati che usano XPath. In un sistema distribuito i messaggi in un diagramma di sequenza possono rappresentare messaggi su una connessione; in un'applicazione indipendente, possono rappresentare chiamate di funzione.  
   
-##  <a name="Components"></a> Componenti e relative interfacce  
+## <a name="Components"></a> Componenti e relative interfacce  
  Le indicazioni principali di questa sezione sono le seguenti:  
   
 - Creare diagrammi dei componenti per mostrare le parti principali del sistema.  
@@ -111,17 +111,17 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Un diagramma dei componenti tipico per un sistema di grandi dimensioni può includere componenti come i seguenti:  
   
--   Presentazione. Il componente che fornisce l'accesso all'utente, in genere in esecuzione in un Web browser.  
+- Presentazione. Il componente che fornisce l'accesso all'utente, in genere in esecuzione in un Web browser.  
   
--   Componenti del servizio Web. Fornisce la connessione tra client e server.  
+- Componenti del servizio Web. Fornisce la connessione tra client e server.  
   
--   Controller del caso di utilizzo. Eseguire i passaggi di ogni scenario utente.  
+- Controller del caso di utilizzo. Eseguire i passaggi di ogni scenario utente.  
   
--   Attività principali dell'azienda. Contiene classi che si basano su classi nel modello dei requisiti, implementa le operazioni principali e impone i vincoli aziendali.  
+- Attività principali dell'azienda. Contiene classi che si basano su classi nel modello dei requisiti, implementa le operazioni principali e impone i vincoli aziendali.  
   
--   Database. Archivia gli oggetti business.  
+- Database. Archivia gli oggetti business.  
   
--   Registrazione e gestione degli errori dei componenti.  
+- Registrazione e gestione degli errori dei componenti.  
   
 ### <a name="dependencies-between-components"></a>Dipendenze tra componenti  
  Oltre ai componenti, è possibile visualizzare le reciproche dipendenze. Una freccia di dipendenza tra due componenti mostra che le modifiche nella progettazione di uno influisce sulla progettazione dell'altro. Ciò accade solitamente perché un componente usa direttamente o indirettamente i servizi o le funzioni fornite da un altro componente.  
@@ -178,7 +178,7 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
   L'utilizzo di interfacce richieste è preferibile all'utilizzo delle parti. Sebbene la progettazione può richiedere più tempo, il sistema risultante è più flessibile. È anche più semplice testare separatamente i componenti. In questo modo sono possibili meno accoppiamenti nei piani di sviluppo.  
   
-##  <a name="Interactions"></a> Interazioni tra componenti  
+## <a name="Interactions"></a> Interazioni tra componenti  
  Le indicazioni principali di questa sezione sono le seguenti:  
   
 - Identificare i casi di utilizzo del sistema.  
@@ -196,11 +196,11 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
 ### <a name="identifying-the-initiating-events"></a>Identificazione degli eventi di inizializzazione  
  Le operazioni eseguite dalla maggior parte dei sistemi software possono essere divise in modo semplice in base alle risposte fornite a input o eventi diversi. L'evento di inizializzazione potrebbe essere uno dei seguenti:  
   
--   La prima azione in un caso di utilizzo. Può essere nel modello requisiti un passaggio in un caso di utilizzo o un'azione in un diagramma di attività. Per altre informazioni, [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md) e [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+- La prima azione in un caso di utilizzo. Può essere nel modello requisiti un passaggio in un caso di utilizzo o un'azione in un diagramma di attività. Per altre informazioni, [diagrammi caso d'uso UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md) e [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
--   Un messaggio a un'interfaccia programmatica. Se il sistema che si sta sviluppando è un componente in un sistema più grande, deve essere descritto come un'operazione in una delle interfacce del componente. Visualizzare [componenti e relative interfacce](#Components).  
+- Un messaggio a un'interfaccia programmatica. Se il sistema che si sta sviluppando è un componente in un sistema più grande, deve essere descritto come un'operazione in una delle interfacce del componente. Visualizzare [componenti e relative interfacce](#Components).  
   
--   Una determinata condizione che viene monitorata dal sistema o un evento normale, ad esempio un'ora del giorno.  
+- Una determinata condizione che viene monitorata dal sistema o un evento normale, ad esempio un'ora del giorno.  
   
 ### <a name="describe-the-computations"></a>Descrivere i calcoli  
  Creare diagrammi di sequenza per mostrare come i componenti rispondono all'evento iniziale.  
@@ -218,14 +218,14 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  È utile aggiungere commenti a diagrammi di attività o di sequenza, per prendere nota del risultato ottenuto dopo ogni operazione. È anche possibile scrivere l'effetto di ogni operazione nel relativo **postcondizione locale** proprietà.  
   
-###  <a name="Data"></a> Modello di dati di componenti e interfacce  
+### <a name="Data"></a> Modello di dati di componenti e interfacce  
  Definire i parametri e restituire valori di ogni operazione nelle interfacce del componente. Laddove le operazioni rappresentano chiamate come ad esempio richieste di servizio Web, i parametri sono quelle informazioni che vengono inviate come parte della richiesta. Se vengono restituiti valori diversi da un'operazione, è possibile usare parametri con il **direzione** impostata su **Out**.  
   
  Ogni parametro e il valore restituito dispongono di un tipo. È possibile definire questi tipi mediante Diagrammi classi UML. Non è necessario rappresentare il dettaglio di implementazione in questi diagrammi. Se, ad esempio, si descrivono i dati trasmessi come XML, è possibile usare un'associazione per rappresentare qualsiasi tipo di riferimento incrociato tra nodi XML e usare classi per rappresentare i nodi.  
   
  Usare i commenti per descrivere i vincoli aziendali sulle associazioni e sugli attributi. Se, ad esempio, tutti gli elementi nell'ordine del cliente devono provenire dallo stesso fornitore, è possibile descrivere tale situazione mediante il riferimento alle associazioni tra gli articoli dell'ordine e gli elementi nel catalogo dei prodotti e tra l'elemento del catalogo e il fornitore.  
   
-##  <a name="Patterns"></a> Modelli di progettazione  
+## <a name="Patterns"></a> Modelli di progettazione  
  Uno schema progettuale è una struttura sulla modalità di progettazione di un particolare aspetto del software, specialmente uno che ricorre in parti diverse del sistema. Adottando un approccio uniforme nel progetto, è possibile ridurre il costo di progettazione, garantire la coerenza nell'interfaccia utente e ridurre i costi di comprensione e modifica del codice.  
   
  Alcuni schemi progettuali generali, ad esempio Observer sono ben conosciuti e ampiamente applicabili. Sono anche disponibili modelli che possono essere applicati solo al progetto. Ad esempio, in un sistema di vendite Web, saranno disponibili diverse operazioni nel codice dove vengono apportate modifiche all'ordine del cliente. Per assicurarsi che lo stato dell'ordine venga visualizzato in modo accurato in ogni fase, tutte queste operazioni devono seguire un particolare protocollo per aggiornare il database.  
@@ -236,25 +236,25 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
  Uno schema progettuale viene descritto in un documento e in genere include le seguenti parti:ne viene descritto in un documento e in genere include le seguenti parti:  
   
--   Nome.  
+- Nome.  
   
--   Descrizione del contesto in cui è applicabile. In base a quali criteri uno sviluppatore deve pensare di applicare questo modello?  
+- Descrizione del contesto in cui è applicabile. In base a quali criteri uno sviluppatore deve pensare di applicare questo modello?  
   
--   Breve spiegazione del problema da risolvere.  
+- Breve spiegazione del problema da risolvere.  
   
--   Modello delle parti principali e relative relazioni. Potrebbe trattarsi di classi o componenti e interfacce, con associazioni e dipendenze tra di loro. Gli elementi in genere rientrano in due categorie:  
+- Modello delle parti principali e relative relazioni. Potrebbe trattarsi di classi o componenti e interfacce, con associazioni e dipendenze tra di loro. Gli elementi in genere rientrano in due categorie:  
   
-    -   Elementi che lo sviluppatore deve replicare in ogni parte del codice in cui viene usato il modello. È possibile usare i tipi di modello per descriverli. Per altre informazioni, vedere [diagrammi caso d'uso UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
+    - Elementi che lo sviluppatore deve replicare in ogni parte del codice in cui viene usato il modello. È possibile usare i tipi di modello per descriverli. Per altre informazioni, vedere [diagrammi caso d'uso UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
   
-    -   Elementi che descrivono le classi di framework che lo sviluppatore deve usare.  
+    - Elementi che descrivono le classi di framework che lo sviluppatore deve usare.  
   
--   Modello delle interazioni tra le parti, usando i diagrammi di sequenza o di attività.  
+- Modello delle interazioni tra le parti, usando i diagrammi di sequenza o di attività.  
   
--   Convenzioni di denominazione.  
+- Convenzioni di denominazione.  
   
--   Descrizione di come il modello risolve il problema.  
+- Descrizione di come il modello risolve il problema.  
   
--   Descrizione delle variazioni che gli sviluppatori potrebbero essere in grado di adottare.  
+- Descrizione delle variazioni che gli sviluppatori potrebbero essere in grado di adottare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modificare modelli e diagrammi UML](../modeling/edit-uml-models-and-diagrams.md)   

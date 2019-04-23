@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092864"
 ---
 # <a name="event-logging-for-office-solutions"></a>Registrazione degli eventi per le soluzioni Office
   È possibile usare il Visualizzatore eventi di Windows per visualizzare i messaggi di eccezione acquisiti da [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] quando si installano o disinstallano soluzioni Office. Questi messaggi del registratore eventi possono essere usati per risolvere i problemi di installazione e di distribuzione.
@@ -32,19 +32,19 @@ ms.locfileid: "56628884"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Per leggere il registro eventi in Windows Server 2003 e Windows XP
 
-1.  Aprire **Strumenti di amministrazione**nel Pannello di controllo.
+1. Aprire **Strumenti di amministrazione**nel Pannello di controllo.
 
-2.  Avviare il **Visualizzatore eventi**.
+2. Avviare il **Visualizzatore eventi**.
 
-3.  Nell'elenco dei registri eventi, selezionare **Applicazione**.
+3. Nell'elenco dei registri eventi, selezionare **Applicazione**.
 
-4.  Scegliere **Filtro** dal menu **Visualizza**.
+4. Scegliere **Filtro** dal menu **Visualizza**.
 
-5.  Selezionare **VSTO 4.0** nell'elenco **Origine evento**.
+5. Selezionare **VSTO 4.0** nell'elenco **Origine evento**.
 
-6.  Per gli eventi di installazione, digitare **4096** nella casella **ID evento**.
+6. Per gli eventi di installazione, digitare **4096** nella casella **ID evento**.
 
-7.  Fare clic su **OK** per visualizzare l'elenco filtrato.
+7. Fare clic su **OK** per visualizzare l'elenco filtrato.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Per leggere il registro eventi in Windows 7, Windows Vista e Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628884"
 
 ### <a name="to-disable-the-event-log"></a>Per disabilitare il registro eventi
 
-1.  Aprire **Sistema**nel Pannello di controllo.
+1. Aprire **Sistema**nel Pannello di controllo.
 
-2.  Nella scheda **Avanzate** fare clic su **Variabili di ambiente**.
+2. Nella scheda **Avanzate** fare clic su **Variabili di ambiente**.
 
-3.  Nel riquadro **Variabili di sistema** , fare clic su **Nuovo**.
+3. Nel riquadro **Variabili di sistema** , fare clic su **Nuovo**.
 
-4.  Nella finestra di dialogo **Nuova variabile di sistema** , digitare **VSTO_EVENTLOGDISABLED** nella casella **Nome variabile** .
+4. Nella finestra di dialogo **Nuova variabile di sistema** , digitare **VSTO_EVENTLOGDISABLED** nella casella **Nome variabile** .
 
-5.  Nella casella **Valore variabile** , digitare **1**.
+5. Nella casella **Valore variabile** , digitare **1**.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Distribuire una soluzione Office](../vsto/deploying-an-office-solution.md)

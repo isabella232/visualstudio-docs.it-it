@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097401"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Linee guida per la manutenzione per applicazioni della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Quando si distribuisce un'applicazione shell isolata di Visual Studio, è necess
   
  Quando si usano azioni personalizzate in un programma di installazione, è necessario assicurarsi che ogni azione personalizzata in fase di installazione deve avere un'azione personalizzata corrispondente per annullare l'azione quando l'utente Disinstalla l'applicazione. Se i programma di installazione non riesce a fornire corrispondente Disinstalla azione personalizzata, la rimozione dell'applicazione verrà lasciato installazione parziale.  
   
--   Un'azione personalizzata che si basa su una versione specifica di un file o hash di valori avrà esito negativo quando gli aggiornamenti software modificare queste versioni o valori hash. In questo caso l'azione personalizzata è necessario aggiornare manualmente questi valori. Se le versioni di un file o hash di valori sono condivisi tra le versioni di prodotto, si verifica un problema aggiuntivo. Evitare di questa dipendenza laddove possibile.  
+- Un'azione personalizzata che si basa su una versione specifica di un file o hash di valori avrà esito negativo quando gli aggiornamenti software modificare queste versioni o valori hash. In questo caso l'azione personalizzata è necessario aggiornare manualmente questi valori. Se le versioni di un file o hash di valori sono condivisi tra le versioni di prodotto, si verifica un problema aggiuntivo. Evitare di questa dipendenza laddove possibile.  
   
 ### <a name="accounting-for-shared-files"></a>Tenendo conto dei file condivisi  
  File condivisi con gli stessi nomi e vengono installati nello stesso percorso per più prodotti. Questi prodotti possono variare nella versione, Stock mantenendo Unit (SKU) o entrambi, e i prodotti possono coesistere in un determinato computer. Tuttavia, i file condivisi creano problemi di manutenzione per diversi motivi:  
   
--   L'aggiornamento di file condivisi può causare problemi di compatibilità delle applicazioni perché un aggiornamento a un'applicazione può cambiare la versione di un file utilizzato da una seconda applicazione che non è stata aggiornata. Programmi di installazione per i prodotti che condividono i file di conteggio dei riferimenti ai file condivisi. Pertanto, la disinstallazione di un prodotto non influenza i file condivisi oltre la riduzione del conteggio delle istanze installate.  
+- L'aggiornamento di file condivisi può causare problemi di compatibilità delle applicazioni perché un aggiornamento a un'applicazione può cambiare la versione di un file utilizzato da una seconda applicazione che non è stata aggiornata. Programmi di installazione per i prodotti che condividono i file di conteggio dei riferimenti ai file condivisi. Pertanto, la disinstallazione di un prodotto non influenza i file condivisi oltre la riduzione del conteggio delle istanze installate.  
   
--   Il programma di installazione Quick Fix Engineering (QFE) consente di ripristinare le versioni dei file per le versioni dei prodotti che ha eseguito il programma di installazione QFE. Questo processo interruzioni potenzialmente di un'applicazione che ha recapitato un file condiviso aggiornato.
+- Il programma di installazione Quick Fix Engineering (QFE) consente di ripristinare le versioni dei file per le versioni dei prodotti che ha eseguito il programma di installazione QFE. Questo processo interruzioni potenzialmente di un'applicazione che ha recapitato un file condiviso aggiornato.

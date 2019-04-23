@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d9836702b00b51d1e2dbe1cd64687c892feaba4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964569"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084882"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,16 +57,16 @@ Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo
   
  Questo valore specifica il tipo di progetto del modello verrà creato e deve contenere uno dei valori seguenti:  
   
--   `CSharp`: Specifica che il modello crea un [!INCLUDE[csprcs](../includes/csprcs-md.md)] progetto o un elemento.  
+- `CSharp`: Specifica che il modello crea un [!INCLUDE[csprcs](../includes/csprcs-md.md)] progetto o un elemento.  
   
--   `VisualBasic`: Specifica che il modello crea un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] progetto o un elemento.  
+- `VisualBasic`: Specifica che il modello crea un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] progetto o un elemento.  
   
--   `Web`: Specifica che il modello crea un progetto Web o un elemento. Se il `ProjectType` elemento Event contiene questo valore, il linguaggio del progetto o elemento è definito nel [elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Specifica che il modello crea un progetto Web o un elemento. Se il `ProjectType` elemento Event contiene questo valore, il linguaggio del progetto o elemento è definito nel [elemento ProjectSubType (modelli di Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Note  
  `ProjectType` è un elemento figlio obbligatorio di `TemplateData`.  
   
- Il valore della `ProjectType` elemento specifica in cui il modello è disponibile nel **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo. Ad esempio, un modello con un `ProjectType` pari a `CSharp` viene visualizzata sotto il **Visual C#** nodo nel **nuovo progetto** nella finestra di dialogo.  
+ Il valore della `ProjectType` elemento specifica in cui il modello è disponibile nel **nuovo progetto** o **Aggiungi nuovo elemento** nella finestra di dialogo. Ad esempio, un modello con un `ProjectType` pari a `CSharp` viene visualizzata sotto il **Visual c#** nodo nel **nuovo progetto** nella finestra di dialogo.  
   
  Un sottotipo di modello può essere specificato usando il [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) elemento.  
   

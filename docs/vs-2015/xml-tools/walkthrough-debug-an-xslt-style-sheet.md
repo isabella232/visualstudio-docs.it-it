@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085103"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procedura dettagliata: debug di un foglio di stile XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Operazioni preliminari per la procedura dettagliata  
   
-1.  Chiudere eventuali soluzioni aperte.  
+1. Chiudere eventuali soluzioni aperte.  
   
-2.  Copiare i due file di esempio nel computer locale.  
+2. Copiare i due file di esempio nel computer locale.  
   
 ## <a name="start-debugging"></a>Avvia debug  
   
@@ -59,19 +59,19 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
   
 #### <a name="to-use-the-watch-window"></a>Per usare la finestra Espressioni di controllo  
   
-1.  Dal **Debug** dal menu **Windows**, scegliere **Watch**e fare clic su **Watch1**.  
+1. Dal **Debug** dal menu **Windows**, scegliere **Watch**e fare clic su **Watch1**.  
   
      In questo modo viene visualizzata la finestra Espressione di controllo 1.  
   
-2.  Tipo di `$bookAverage` nella **nome** campo e premere INVIO.  
+2. Tipo di `$bookAverage` nella **nome** campo e premere INVIO.  
   
      Il valore della variabile `$bookAverage` viene visualizzato nella finestra.  
   
-3.  Tipo di `self::node()` nella **nome** campo e premere INVIO.  
+3. Tipo di `self::node()` nella **nome** campo e premere INVIO.  
   
      `self::node()` è un'espressione XPath che restituisce il nodo di contesto corrente. Il valore dell'espressione XPath `self::node()` costituisce il primo nodo libro.  Il valore verrà modificato durante le fasi della trasformazione.  
   
-4.  Espandere il nodo `self::node()`, quindi il nodo `price`.  
+4. Espandere il nodo `self::node()`, quindi il nodo `price`.  
   
      Ciò consente di visualizzare il valore del prezzo del libro e di confrontarlo facilmente con il valore `$bookAverage`. Poiché il prezzo del libro è maggiore del prezzo medio, la condizione `xsl:if` dovrebbe essere eseguita correttamente.  
   
@@ -80,19 +80,19 @@ Nei passaggi della procedura dettagliata viene illustrato come usare il debugger
   
 #### <a name="to-step-through-the-code"></a>Per eseguire il codice un'istruzione alla volta  
   
-1.  Premere **F5** per continuare.  
+1. Premere **F5** per continuare.  
   
      Poiché il nodo del primo libro ha soddisfatto la condizione `xsl:if`, il nodo libro viene aggiunto alla finestra di output XSL. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul secondo nodo libro nel file books.xml.  
   
      Nella finestra Watch1 il valore `self::node()` viene modificato nel secondo nodo libro. Analizzando il valore dell'elemento prezzo, è possibile determinare che il prezzo è maggiore del prezzo medio e che pertanto la condizione `xsl:if` non dovrebbe essere eseguita correttamente.  
   
-2.  Premere **F5** per continuare.  
+2. Premere **F5** per continuare.  
   
      Poiché il secondo nodo libro non soddisfa la condizione `xsl:if`, il nodo libro non viene aggiunto alla finestra di output XSL. Il debugger continua l'esecuzione se non viene posizionato di nuovo sull'elemento `xsl:if` nel foglio di stile. Il debugger è ora posizionato sul terzo nodo `book` nel file books.xml.  
   
      Nella finestra Watch1 il valore `self::node()` viene modificato nel terzo nodo libro. Analizzando il valore dell'elemento `price`, è possibile determinare che il prezzo è inferiore al prezzo medio e che pertanto la condizione `xsl:if` dovrebbe essere eseguita correttamente.  
   
-3.  Premere **F5** per continuare.  
+3. Premere **F5** per continuare.  
   
      Poiché la condizione `xsl:if` è stata soddisfatta, il terzo libro viene aggiunto alla finestra di output XSL. Tutti i libri nel documento XML sono stati elaborati e il debugger si arresta.  
   

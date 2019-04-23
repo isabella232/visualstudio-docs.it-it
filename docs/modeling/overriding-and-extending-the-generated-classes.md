@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d3c90d955ba412a75005ab47627c1901df57891
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085629"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Override ed estensione delle classi generate
 
@@ -54,9 +54,9 @@ Tuttavia, è possibile eseguire l'override di questi metodi impostando il **gene
 
 Ad esempio, nell'esempio Library.dsl, il `CirculationBook` classe di dominio ha la `Generates``Double Derived` impostata su `true`. Il codice generato per tale classe di dominio contiene due classi:
 
--   `CirculationBookBase`, che è una classe astratta e che contiene tutte le proprietà e metodi.
+- `CirculationBookBase`, che è una classe astratta e che contiene tutte le proprietà e metodi.
 
--   `CirculationBook`, che deriva da `CirculationBookBase`. È vuoto, eccetto propri costruttori.
+- `CirculationBook`, che deriva da `CirculationBookBase`. È vuoto, eccetto propri costruttori.
 
 Per eseguire l'override di qualsiasi metodo, si crea una definizione parziale della classe derivata, ad esempio `CirculationBook`. È possibile eseguire l'override di entrambi i metodi generati e i metodi ereditati dal framework di modellazione.
 

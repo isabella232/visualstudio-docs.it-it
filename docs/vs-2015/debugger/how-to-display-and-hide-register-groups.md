@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 088313e4452e2606b1908430c81c69446346775c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b7408100bbbda5533a65a3a55715fc46088f6061
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106358"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Procedura: Visualizzare e nascondere gruppi di registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ La finestra **Registri** è disponibile solo se il debug a livello di indirizzo 
   
 ### <a name="to-display-or-hide-register-groups"></a>Per visualizzare o nascondere i gruppi di registri  
   
-1.  Fare clic con il pulsante destro del mouse sulla finestra **Registri**.  
+1. Fare clic con il pulsante destro del mouse sulla finestra **Registri**.  
   
-2.  Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.  
+2. Scegliere i gruppi di registri da visualizzare o nascondere dal menu di scelta rapida.  
   
      I gruppi di registri non supportati dall'hardware per il quale si sta eseguendo il debug sono disabilitati nel menu di scelta rapida e non possono essere selezionati.  
   

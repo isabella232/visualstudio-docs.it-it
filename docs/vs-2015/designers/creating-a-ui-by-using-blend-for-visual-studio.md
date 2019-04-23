@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80c8d385e0c78461df5b7938d356ec43a481e46e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082958"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 
  **Contenuto dell'argomento**:
 
--   [Panoramica del pannello Strumenti](#Tools)
+- [Panoramica del pannello Strumenti](#Tools)
 
--   [Panoramica del pannello Asset](#Assets)
+- [Panoramica del pannello Asset](#Assets)
 
--   [Panoramica del pannello Oggetti e sequenza temporale](#Objects)
+- [Panoramica del pannello Oggetti e sequenza temporale](#Objects)
 
--   [Panoramica del pannello Proprietà](#Properties)
+- [Panoramica del pannello Proprietà](#Properties)
 
-##  <a name="Tools"></a> Panoramica del pannello Strumenti
+## <a name="Tools"></a> Panoramica del pannello Strumenti
  È possibile usare il pannello **Strumenti** in Blend per Visual Studio per creare e modificare oggetti nell'applicazione. Per creare oggetti, si seleziona lo strumento e si disegna sulla tavola da disegno con il mouse.
 
  ![Pannello Strumenti](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [barra degli strumenti](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a>Panoramica del pannello Asset
+## <a name="Assets"></a>Panoramica del pannello Asset
  Tutti i controlli sono disponibili nel pannello **Assets**, che è simile alla **Casella degli strumenti** in Visual Studio. Oltre ai controlli, nel pannello **Assets** è disponibile tutto ciò che può essere aggiunto alla tavola da disegno, inclusi gli stili, gli elementi multimediali, i comportamenti e gli effetti.
 
  ![Pannello Asset](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 |![](../designers/media/b1-4.png "B1_4")|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
 |![](../designers/media/b1-5.png "B1_5")|**Descrizione** Consente di visualizzare una descrizione della categoria o sottocategoria di asset selezionata.|
 
-##  <a name="Objects"></a> Panoramica del pannello Oggetti e sequenza temporale
+## <a name="Objects"></a> Panoramica del pannello Oggetti e sequenza temporale
  Usare questo pannello per organizzare gli oggetti nella tavola da disegno e, se si vuole, per animarli.
 
  ![Pannello Oggetti e sequenza temporale in modalità animazione](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,7 +93,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
 |![](../designers/media/b1-15.png "B1_15")|**Zoom sequenza temporale** Consente di impostare la risoluzione di zoom della sequenza temporale. Lo zoom avanti permette di modificare un'animazione a un maggior livello di dettaglio, mentre lo zoom indietro permette di ottenere una panoramica del comportamento di un'animazione su periodi di tempo più lunghi. Se si applica lo zoom avanti, ma non è possibile impostare un fotogramma chiave nella posizione corrispondente all'istante desiderato, verificare che la risoluzione di snap sia sufficientemente elevata.|
 |![Callout 16](../designers/media/b5-label-16.png "b5_label_16")|**Area di composizione della sequenza temporale** Consente di visualizzare la sequenza temporale e spostare i fotogrammi chiave trascinandoli o usando i relativi menu di scelta rapida.|
 
-##  <a name="Properties"></a>Panoramica del pannello Proprietà
+## <a name="Properties"></a>Panoramica del pannello Proprietà
  Usare questo pannello per visualizzare e modificare le proprietà di un oggetto. È anche possibile impostarle direttamente sulla tavola da disegno. In questo caso, le modifiche alle proprietà si rifletteranno nel pannello **Proprietà**.
 
  ![Pannello Proprietà](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")

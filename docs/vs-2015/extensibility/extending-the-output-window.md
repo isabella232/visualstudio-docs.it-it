@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105409"
 ---
 # <a name="extending-the-output-window"></a>Estensione della finestra di output
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Creazione di un'estensione che usa il riquadro di Output  
  È possibile creare un'estensione che esercita diversi aspetti del riquadro di Output.  
   
-1.  Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Creare un progetto VSIX denominato `TestOutput` con un comando di menu denominato **TestOutput**. Per altre informazioni, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Aggiungere i riferimenti seguenti:  
+2. Aggiungere i riferimenti seguenti:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  In TestOutput.cs, aggiungere la seguente istruzione using:  
+3. In TestOutput.cs, aggiungere la seguente istruzione using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  In TestOutput.cs, eliminare il metodo ShowMessageBox. Aggiungere lo stub del metodo seguente:  
+4. In TestOutput.cs, eliminare il metodo ShowMessageBox. Aggiungere lo stub del metodo seguente:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }  
     ```  
   
-5.  Nel costruttore TestOutput, modificare il gestore del comando a OutputCommandHandler. Questa è la parte che aggiunge i comandi:  
+5. Nel costruttore TestOutput, modificare il gestore del comando a OutputCommandHandler. Questa è la parte che aggiunge i comandi:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ Il **Output** finestra è un set di riquadri di testo di lettura/scrittura. Visu
     }  
     ```  
   
-6.  Le sezioni seguenti includono diversi metodi che mostrano diverse modalità di gestione con il riquadro di Output. È possibile chiamare questi metodi al corpo del metodo OutputCommandHandler(). Ad esempio, il codice seguente aggiunge il metodo CreatePane() fornito nella sezione successiva.  
+6. Le sezioni seguenti includono diversi metodi che mostrano diverse modalità di gestione con il riquadro di Output. È possibile chiamare questi metodi al corpo del metodo OutputCommandHandler(). Ad esempio, il codice seguente aggiunge il metodo CreatePane() fornito nella sezione successiva.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

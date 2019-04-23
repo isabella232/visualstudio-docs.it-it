@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione errori e avvisi (C#) | Microsoft Docs
+title: Modifica e continuazione errori e avvisi (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58965741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085090"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Errori e avvisi di Modifica e continuazione (C#)
 È stata apportata una modifica a una sezione di codice che non è consentita in Modifica e continuazione di Visual C#.  
@@ -79,11 +79,11 @@ ms.locfileid: "58965741"
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  Scegliere **Annulla** dal menu **Debug** per annullare la modifica.  
+1. Scegliere **Annulla** dal menu **Debug** per annullare la modifica.  
   
      -oppure-  
   
-2.  Terminare la sessione di debug, apportare le modifiche, quindi avviare una nuova sessione di debug.  
+2. Terminare la sessione di debug, apportare le modifiche, quindi avviare una nuova sessione di debug.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Modifica e continuazione (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

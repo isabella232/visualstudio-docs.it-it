@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74d1be80fff92a8663582ba4e51e65ecc224ef1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: a442ed4a81cac312c675d9dd6d83a8901e939f15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093982"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering e catene di scambio.
@@ -28,18 +28,18 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
 > [!NOTE]
 >  L'hardware potrebbe non supportare completamente MSAA per tutti i formati. Se una di queste varianti dovesse incorrere in un limite hardware che non è possibile aggirare, la relativa colonna nella tabella di riepilogo delle prestazioni resterà vuota e verrà visualizzato un messaggio di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Queste varianti eseguono l'override degli argomenti relativi conteggio e alla qualità dei campioni nelle chiamate a `ID3DDevice::CreateTexture2D` che creano destinazioni di rendering. In particolare, tali parametri vengono sottoposti a override nei casi seguenti:
 
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato in `pDesc` descrive una destinazione di rendering, ossia:
 
-  -   Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.
+  - Il membro BindFlags presenta il flag D3D11_BIND_TARGET o il flag D3D11_BIND_DEPTH_STENCIL impostato.
 
-  -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT.
+  - Il membro Usage è impostato su D3D11_USAGE_DEFAULT.
 
-  -   Il membro CPUAccessFlags è impostato su 0.
+  - Il membro CPUAccessFlags è impostato su 0.
 
-  -   Il membro MipLevels è impostato su 1.
+  - Il membro MipLevels è impostato su 1.
 
 - Il dispositivo supporta il conteggio dei campioni (0, 2 o 4) e la qualità degli stessi (0) necessari per il formato della destinazione di rendering richiesta (membro D3D11_TEXTURE2D_DESC::Format), così come determinato da `ID3D11Device::CheckMultisampleQualityLevels`.
 

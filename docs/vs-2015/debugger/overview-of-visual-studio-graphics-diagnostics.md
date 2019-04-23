@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc0d040c899e137910449faeb14c8e241fad812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2dc0d0bf4efd8c30d874a24e94d3933d2eef713a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097186"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "58969881"
 
 ##### <a name="to-open-the-directx-control-panel"></a>Per aprire il pannello di controllo DirectX
 
--   Nella barra dei menu scegliere **Debug**, **Grafica**, **Pannello di controllo DirectX**.
+- Nella barra dei menu scegliere **Debug**, **Grafica**, **Pannello di controllo DirectX**.
 
 ## <a name="graphics-analyzer"></a>Analizzatore grafica
  Analizzatore grafica di Visual Studio è un'interfaccia dedicata per l'esame dei problemi di prestazioni e di rendering in frame già acquisiti. All'interno di Analizzatore grafica sono disponibili diversi strumenti che semplificano la visualizzazione e la comprensione del comportamento di rendering dell'app. Ogni strumento espone informazioni di tipo diverso sul frame in esame. Gli strumenti sono progettati per un uso sinergico e consentono di isolare in modo intuitivo l'origine di un problema di rendering, a partire dalla sua comparsa nel buffer frame.

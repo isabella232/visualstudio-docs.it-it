@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66ca625d0c9c6f2442576e997928b7b42760936a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105067"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagrammi di attività UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
   Per informazioni di riferimento sugli elementi in diagrammi di attività, vedere [diagrammi di attività UML: informazioni di riferimento](../modeling/uml-activity-diagrams-reference.md).  
   
-##  <a name="Relationships"></a> Relazione con altri diagrammi  
+## <a name="Relationships"></a> Relazione con altri diagrammi  
  Se si traccia un diagramma di attività per descrivere un processo aziendale o il modo in cui gli utenti usano il sistema, è possibile scegliere un diagramma caso di utilizzo per mostrare una visualizzazione diversa delle stesse informazioni. Nel diagramma caso di utilizzo le azioni vengono tracciate come casi di utilizzo. Assegnare ai casi di utilizzo gli stessi nomi delle azioni corrispondenti. Ecco i vantaggi della visualizzazione dei casi di utilizzo, che permettono di:  
   
 - Mostrare in un unico diagramma il modo in cui azioni/casi di utilizzo più grandi sono costituiti da elementi più piccoli, usando la relazione Include.  
@@ -56,51 +56,51 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
   In un diagramma di attività è possibile mostrare il flusso di dati passati tra le azioni. Vedere la sezione sulla [descrizione del flusso di dati](#DataFlows). Un diagramma di attività non descrive la struttura dei dati. Per questo scopo, è possibile tracciare un diagramma classi UML. Per informazioni vedere [diagrammi classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md).  
   
-##  <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi di attività  
+## <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi di attività  
  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-draw-an-activity-diagram"></a>Per tracciare un diagramma di attività  
   
-1.  Nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
+1. Nel **Architecture** menu, fare clic su **nuovo diagramma livello o UML**.  
   
-2.  Sotto **modelli**, fare clic su **diagramma attività UML**.  
+2. Sotto **modelli**, fare clic su **diagramma attività UML**.  
   
-3.  Assegnare un nome al diagramma.  
+3. Assegnare un nome al diagramma.  
   
-4.  Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**.  
+4. Nelle **aggiungere al progetto di modellazione**, selezionare un progetto di modellazione esistente nella soluzione, o **creare un nuovo progetto di modellazione**.  
   
 #### <a name="to-draw-elements-on-an-activity-diagram"></a>Per tracciare elementi in un diagramma attività  
   
-1.  Trascinare gli elementi dalla Casella degli strumenti nel diagramma.  
+1. Trascinare gli elementi dalla Casella degli strumenti nel diagramma.  
   
      Iniziare inserendo le attività principali nel diagramma, quindi connetterle e infine aggiungere i tocchi finali, come i nodi iniziali e finali.  
   
     > [!NOTE]
     >  Non è possibile trascinare elementi esistenti nel diagramma da Esplora modelli UML.  
   
-2.  Per collegare gli elementi, eseguire le operazioni seguenti:  
+2. Per collegare gli elementi, eseguire le operazioni seguenti:  
   
-    1.  Nel **diagramma di attività** della casella degli strumenti, fare clic su **connettore**.  
+    1. Nel **diagramma di attività** della casella degli strumenti, fare clic su **connettore**.  
   
-    2.  Nel diagramma fare clic sull'elemento di origine.  
+    2. Nel diagramma fare clic sull'elemento di origine.  
   
-    3.  Fare clic sull'elemento di destinazione.  
+    3. Fare clic sull'elemento di destinazione.  
   
         > [!NOTE]
         >  Per usare uno strumento più volte, fare doppio clic sullo strumento nella Casella degli strumenti.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Per spostare un'attività in un altro pacchetto  
   
--   Nelle **Esplora modelli UML**, trascinare l'attività in un pacchetto.  
+- Nelle **Esplora modelli UML**, trascinare l'attività in un pacchetto.  
   
      \- oppure -  
   
--   Nelle **Esplora modelli UML**, fare doppio clic su attività e fare clic su **Taglia**. Quindi fare doppio clic su pacchetto e fare clic su **Incolla**.  
+- Nelle **Esplora modelli UML**, fare doppio clic su attività e fare clic su **Taglia**. Quindi fare doppio clic su pacchetto e fare clic su **Incolla**.  
   
     > [!NOTE]
     >  L'attività verrà visualizzata in Esplora modelli UML solo quando si aggiunge il primo elemento al diagramma.  
   
-##  <a name="SimpleControlFlow"></a> Descrizione del flusso di controllo  
+## <a name="SimpleControlFlow"></a> Descrizione del flusso di controllo  
  Un diagramma di attività descrive un processo aziendale o un algoritmo software come una serie di azioni. Le frecce del connettore mostrano il modo in cui il controllo viene passato in sequenza da un'azione alla successiva. In genere, un'azione può iniziare solo dopo che è stata completata quella precedente.  
   
  La figura seguente è un esempio di come è possibile mostrare una sequenza di azioni con azioni, connettori, rami e cicli. Ogni elemento viene descritto più dettagliatamente nelle sezioni seguenti.  
@@ -124,18 +124,18 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
 ### <a name="describing-decisions-and-loops"></a>Descrizione di decisioni e cicli  
   
--   Usare un **nodo decisione** (3) per indicare un punto in cui il risultato di una decisione determina il passaggio successivo. È possibile tracciare tutti i percorsi di uscita desiderati.  
+- Usare un **nodo decisione** (3) per indicare un punto in cui il risultato di una decisione determina il passaggio successivo. È possibile tracciare tutti i percorsi di uscita desiderati.  
   
--   Se il diagramma di attività viene usato per rappresentare parte di un'applicazione, è consigliabile definire guard (4) in modo che sia chiaro quando è necessario seguire un determinato percorso. Il pulsante destro del connettore, fare clic su **proprietà**e il **proprietà** finestra, digitare un valore per il **Guard** campo.  
+- Se il diagramma di attività viene usato per rappresentare parte di un'applicazione, è consigliabile definire guard (4) in modo che sia chiaro quando è necessario seguire un determinato percorso. Il pulsante destro del connettore, fare clic su **proprietà**e il **proprietà** finestra, digitare un valore per il **Guard** campo.  
   
--   Non è sempre necessario definire guard. Ad esempio, se il diagramma di attività viene usato per descrivere un processo aziendale o un protocollo di interazione, un ramo definisce l'intervallo di opzioni aperte all'utente o ai componenti che interagiscono.  
+- Non è sempre necessario definire guard. Ad esempio, se il diagramma di attività viene usato per descrivere un processo aziendale o un protocollo di interazione, un ramo definisce l'intervallo di opzioni aperte all'utente o ai componenti che interagiscono.  
   
--   Usare un **nodo di tipo Merge** (5) per riunire due o più flussi alternativi che rami in corrispondenza di un **nodo decisione**.  
+- Usare un **nodo di tipo Merge** (5) per riunire due o più flussi alternativi che rami in corrispondenza di un **nodo decisione**.  
   
     > [!NOTE]
     >  È consigliabile usare un **nodo unione** per riunire flussi alternativi, invece di riunire flussi in corrispondenza di un'azione. Nell'esempio, non sarebbe corretto per la connessione dal nodo decisione direttamente nel **voce di Menu scegliere**. Il motivo è che un'azione non inizia fino a quando i thread di controllo non arrivano a tutti i connettori in ingresso. Di conseguenza, è consigliabile riunire solo i flussi simultanei in corrispondenza di un'azione. Per altre informazioni, vedere [flussi simultanei](#Concurrent).  
   
--   Usare rami per descrivere i cicli, come mostrato nell'esempio.  
+- Usare rami per descrivere i cicli, come mostrato nell'esempio.  
   
     > [!NOTE]
     >  Provare ad annidare i cicli in modo ben strutturato, come in un codice programma. Se si descrive un processo aziendale esistente, questo comportamento potrebbe offrire alcune opportunità per migliorarlo.  
@@ -143,13 +143,13 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
 ### <a name="starting-the-activity"></a>Avvio dell'attività  
  Esistono due modi per indicare punti di ingresso in un'attività:  
   
--   **Nodo iniziale**  
+- **Nodo iniziale**  
   
      Crearne uno **iniziale dei nodi** (6) per indicare la prima azione dell'attività.  
   
      Questo metodo è particolarmente utile quando si descrive una sottoattività o quando non è necessario dichiarare in modo esplicito che cosa avvia l'attività. Ad esempio, l'attività Ordinare un pasto inizia chiaramente quando un cliente ha fame.  
   
--   **Nodo accetta evento**  
+- **Nodo accetta evento**  
   
      Creare **nodi accetta evento**, come descritto nella sezione [flussi simultanei](#Concurrent), per indicare l'inizio di un thread che risponde a un evento specifico, ad esempio un input dell'utente. Non specificare un flusso in ingresso nel nodo. L'omissione di un flusso in ingresso indica che un thread verrà avviato ogni volta che si verifica l'evento.  
   
@@ -158,9 +158,9 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
 ### <a name="ending-the-activity"></a>Fine dell'attività  
  Usa un' **nodo finale attività** (7) per indicare la fine di un'attività.  
   
--   Quando un thread di controllo raggiunge un' **nodo finale attività**, azioni simultanee dell'attività e le sottoattività terminano.  
+- Quando un thread di controllo raggiunge un' **nodo finale attività**, azioni simultanee dell'attività e le sottoattività terminano.  
   
--   È possibile usare più di un nodo finale attività per ridurre la complessità causata da connettori aggiuntivi.  
+- È possibile usare più di un nodo finale attività per ridurre la complessità causata da connettori aggiuntivi.  
   
 ### <a name="interrupting-the-activity"></a>Interruzione dell'attività  
  Per descrivere il modo in cui il flusso ordinario di un'attività può essere interrotto, ad esempio se l'utente decide di annullare il processo, è possibile creare un nodo accetta evento che attende l'evento. Per altre informazioni, vedere la sezione [flussi simultanei](#Concurrent). Creare un flusso di controllo da tale elemento a un nodo finale attività (7).  
@@ -174,12 +174,12 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
   Le forme semplici non fanno parte del modello UML e non vengono visualizzate in Esplora modelli UML.  
   
-##  <a name="DataFlows"></a> Descrizione del flusso di dati  
+## <a name="DataFlows"></a> Descrizione del flusso di dati  
  È possibile descrivere i dati passati da e verso un'attività in due modi diversi:  
   
--   Usa un' **nodo oggetto**. Si tratta del metodo più semplice per descrivere il flusso delle informazioni tra attività. Un nodo oggetto è come una variabile in un programma. Rappresenta un elemento che può contenere uno o più valori passati da un'azione a un'altra.  
+- Usa un' **nodo oggetto**. Si tratta del metodo più semplice per descrivere il flusso delle informazioni tra attività. Un nodo oggetto è come una variabile in un programma. Rappresenta un elemento che può contenere uno o più valori passati da un'azione a un'altra.  
   
--   Usa un' **Pin di Output** e un **Pin di Input**. Questo metodo permette di descrivere separatamente gli output da un'azione e gli input a un'altra. I pin sono come i parametri in un programma. I pin rappresentano le porte in cui gli oggetti possono entrare e uscire da un'azione.  
+- Usa un' **Pin di Output** e un **Pin di Input**. Questo metodo permette di descrivere separatamente gli output da un'azione e gli input a un'altra. I pin sono come i parametri in un programma. I pin rappresentano le porte in cui gli oggetti possono entrare e uscire da un'azione.  
   
     > [!NOTE]
     >  Per una panoramica degli elementi usati in questa sezione, vedere la sezione flussi di dati dell'argomento [diagrammi di attività UML: informazioni di riferimento](../modeling/uml-activity-diagrams-reference.md).  
@@ -207,17 +207,17 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
  È possibile specificare il modo in cui vengono archiviate le voci in un buffer impostando le proprietà del nodo oggetto:  
   
--   Impostare il **Ordering** proprietà:  
+- Impostare il **Ordering** proprietà:  
   
-    -   **Non ordinata** per specificare un ordine casuale o non specificato. (impostazione predefinita).  
+    - **Non ordinata** per specificare un ordine casuale o non specificato. (impostazione predefinita).  
   
-    -   **Ordinati** per specificare un ordine in base a una chiave specifica.  
+    - **Ordinati** per specificare un ordine in base a una chiave specifica.  
   
-    -   **FIFO** per specificare un ordine di first in, First-Out.  
+    - **FIFO** per specificare un ordine di first in, First-Out.  
   
-    -   **LIFO** per specificare un ordine last-in, First-Out.  
+    - **LIFO** per specificare un ordine last-in, First-Out.  
   
--   Impostare il **limite superiore** proprietà per specificare il numero massimo di oggetti che possono essere contenuti nel buffer. Il valore predefinito è *, che significa che non esiste alcun limite.  
+- Impostare il **limite superiore** proprietà per specificare il numero massimo di oggetti che possono essere contenuti nel buffer. Il valore predefinito è *, che significa che non esiste alcun limite.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Descrizione del flusso di dati con pin di input e di output  
  Usa un' **Pin di Output** e un **Pin di Input** per descrivere separatamente gli output da un'azione e gli input a un altro.  
@@ -236,16 +236,16 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
  In alternativa, è possibile specificare che il flusso oggetto includa una trasformazione che converte i dati tra il tipo del pin di output e il tipo del pin di input. La trasformazione più comune di questo genere estrae semplicemente la parte appropriata da un tipo più grande. L'esempio nella figura implica la presenza di una trasformazione che estrae l'indirizzo di spedizione dai dettagli dell'ordine.  
   
-##  <a name="Details"></a> Definizione di un'azione in modo più dettagliato  
+## <a name="Details"></a> Definizione di un'azione in modo più dettagliato  
  Oltre a usare il nome dell'azione per indicare in modo chiaro il risultato che deve essere generalmente ottenuto, ecco alcuni modi per aggiungere altri dettagli a un'azione:  
   
--   Scrivere una descrizione più dettagliata nel **corpo** proprietà. Ad esempio, è possibile scrivere un frammento di codice programma o pseudo-codice oppure una descrizione completa dei risultati ottenuti.  
+- Scrivere una descrizione più dettagliata nel **corpo** proprietà. Ad esempio, è possibile scrivere un frammento di codice programma o pseudo-codice oppure una descrizione completa dei risultati ottenuti.  
   
--   Sostituire l'azione con un'azione chiama comportamento e descriverne il comportamento dettagliato in un diagramma di attività separato. Visualizzare [descrizione di sottoattività con azioni chiama comportamento](#Subactivities).  
+- Sostituire l'azione con un'azione chiama comportamento e descriverne il comportamento dettagliato in un diagramma di attività separato. Visualizzare [descrizione di sottoattività con azioni chiama comportamento](#Subactivities).  
   
--   Impostare l'azione **Local Postconditions** e **Local Preconditions** le proprietà per descrivere il risultato più dettagliatamente. Per altre informazioni, vedere [definizione di postcondizioni e precondizioni](#Postcondition).  
+- Impostare l'azione **Local Postconditions** e **Local Preconditions** le proprietà per descrivere il risultato più dettagliatamente. Per altre informazioni, vedere [definizione di postcondizioni e precondizioni](#Postcondition).  
   
-###  <a name="Subactivities"></a> Descrizione di sottoattività con azioni chiama comportamento  
+### <a name="Subactivities"></a> Descrizione di sottoattività con azioni chiama comportamento  
  È possibile descrivere il comportamento dettagliato di un'azione usando un diagramma di attività separato. Un comportamento chiamato è un diagramma di attività rappresentato nel diagramma di attività principale tramite un'azione chiama comportamento. È anche possibile usare l'azione chiama comportamento per descrivere il comportamento condiviso tra attività diverse, in modo da non dover tracciare la sottoattività più volte.  
   
  Nella figura seguente il diagramma 1 mostra un'attività che include un'azione chiama comportamento, mentre il diagramma 2 mostra il diagramma della sottoattività che mostra il comportamento chiamato.  
@@ -254,22 +254,22 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
 ##### <a name="to-describe-a-sub-activity-with-a-call-behavior-action"></a>Per descrivere una sottoattività con un'azione chiama comportamento  
   
-1.  Per creare il diagramma per la sottoattività, in **Esplora soluzioni**, fare doppio clic su un progetto di modellazione, scegliere **Add**, quindi fare clic su **nuovo elemento**.  
+1. Per creare il diagramma per la sottoattività, in **Esplora soluzioni**, fare doppio clic su un progetto di modellazione, scegliere **Add**, quindi fare clic su **nuovo elemento**.  
   
-2.  Nel **Aggiungi nuovo elemento** nella finestra di dialogo **modelli** fare clic su **diagramma di attività** e nel **nome** casella digitare il nome che si intende assegnare i **azione chiama comportamento**.  
+2. Nel **Aggiungi nuovo elemento** nella finestra di dialogo **modelli** fare clic su **diagramma di attività** e nel **nome** casella digitare il nome che si intende assegnare i **azione chiama comportamento**.  
   
-3.  Tracciare il flusso di lavoro dettagliato per la sottoattività. Si tratta del comportamento chiamato.  
+3. Tracciare il flusso di lavoro dettagliato per la sottoattività. Si tratta del comportamento chiamato.  
   
-    -   Nel diagramma della sottoattività chiamata, il **iniziale dei nodi** indica dove inizia il controllo quando viene richiamato il comportamento chiamato. Il **nodo finale attività** illustra dove controllo deve tornare all'attività padre.  
+    - Nel diagramma della sottoattività chiamata, il **iniziale dei nodi** indica dove inizia il controllo quando viene richiamato il comportamento chiamato. Il **nodo finale attività** illustra dove controllo deve tornare all'attività padre.  
   
-4.  Impostare il **comportamento** proprietà delle **azione chiama comportamento** per fare riferimento al diagramma del comportamento chiamato.  
+4. Impostare il **comportamento** proprietà delle **azione chiama comportamento** per fare riferimento al diagramma del comportamento chiamato.  
   
     > [!NOTE]
     >  Diagramma della sottoattività deve contenere alcuni elementi su di esso o il diagramma non saranno disponibile nell'elenco a discesa per il **comportamento** proprietà. Inoltre, l'icona di tridente non verrà visualizzato nei **azione chiama comportamento** forma fino a quando non si imposta relativo **comportamento** proprietà.  
   
-5.  Impostare il **Is Synchronous** proprietà dell'azione per indicare se l'attività attende il completamento dell'attività chiamata.  
+5. Impostare il **Is Synchronous** proprietà dell'azione per indicare se l'attività attende il completamento dell'attività chiamata.  
   
-    -   Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima che venga completato l'attività chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
+    - Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima che venga completato l'attività chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
   
 ### <a name="describing-data-flow-in-and-out-of-sub-activities"></a>Descrizione del flusso di dati da e verso sottoattività  
  È possibile descrivere il flusso di dati da e verso sottoattività allo stesso modo in cui si usano i parametri nel software.  
@@ -285,7 +285,7 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
   ![Blocca sulla mappa azione chiama comportamento per i parametri di attività](../modeling/media/uml-actguidesub.png "UML_ActGuideSub")  
   
-###  <a name="Postcondition"></a> Definizione di postcondizioni e precondizioni  
+### <a name="Postcondition"></a> Definizione di postcondizioni e precondizioni  
  È possibile usare la **Local Postconditions** e **Local Preconditions** le proprietà per specificare in modo dettagliato il risultato di un'azione. Queste proprietà descrivono l'effetto dell'azione senza indicare il modo in cui viene ottenuto.  
   
  Per impostare queste proprietà, fare doppio clic su azione e quindi fare clic su **proprietà**. Digitare i valori per le proprietà nella finestra Proprietà.  
@@ -311,15 +311,15 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
 ### <a name="describing-calls-to-operations"></a>Descrizione di chiamate a operazioni  
  In genere, un'azione descrive il lavoro eseguito da qualsiasi combinazione di persone, software o computer. Tuttavia, è possibile usare un'azione chiama operazione per descrivere una chiamata a una funzione o a un metodo specifico del software.  
   
--   Impostare il nome dell'azione chiama operazione per indicare l'operazione chiamata e l'oggetto o il componente su cui viene chiamata.  
+- Impostare il nome dell'azione chiama operazione per indicare l'operazione chiamata e l'oggetto o il componente su cui viene chiamata.  
   
--   Aggiungere pin di input e di output all'azione chiama operazione per descrivere i parametri e i valori restituiti.  
+- Aggiungere pin di input e di output all'azione chiama operazione per descrivere i parametri e i valori restituiti.  
   
--   È possibile impostare il **Is Synchronous** proprietà dell'azione per indicare se l'attività attende il completamento dell'operazione.  
+- È possibile impostare il **Is Synchronous** proprietà dell'azione per indicare se l'attività attende il completamento dell'operazione.  
   
-    -   Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima del completamento dell'operazione chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
+    - Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima del completamento dell'operazione chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
   
-##  <a name="Concurrent"></a> Flussi simultanei  
+## <a name="Concurrent"></a> Flussi simultanei  
  È possibile usare la **nodo Fork** e il **nodo Join** per descrivere due o più thread di attività che possono essere eseguite nello stesso momento.  
   
  ![I nodi fork e join mostrano flussi simultanei](../modeling/media/uml-actguideconcurrent.png "UML_ActGuideConcurrent")  
@@ -336,22 +336,22 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
 #### <a name="sending-a-signal"></a>Invio di un segnale  
  Usare un'azione invia segnale (3) per indicare che un segnale o un messaggio di qualche tipo viene inviato ad altri processi o attività. Usare il nome dell'azione per indicare il tipo di messaggio inviato.  
   
--   Controllare immediatamente i passaggi all'azione successiva nel flusso di controllo, se presente.  
+- Controllare immediatamente i passaggi all'azione successiva nel flusso di controllo, se presente.  
   
--   Non è possibile usare un'azione invia segnale per descrivere il modo in cui il processo risponde a qualsiasi informazione restituita. A questo scopo, usare invece un'azione accetta evento separata.  
+- Non è possibile usare un'azione invia segnale per descrivere il modo in cui il processo risponde a qualsiasi informazione restituita. A questo scopo, usare invece un'azione accetta evento separata.  
   
--   È possibile mostrare il flusso di dati in ingresso in un'azione invia segnale, per indicare quali dati possono essere inviati con il messaggio in uscita. Per altre informazioni, vedere [descrizione del flusso di dati](#DataFlows).  
+- È possibile mostrare il flusso di dati in ingresso in un'azione invia segnale, per indicare quali dati possono essere inviati con il messaggio in uscita. Per altre informazioni, vedere [descrizione del flusso di dati](#DataFlows).  
   
 #### <a name="waiting-for-a-signal-or-event"></a>Attesa di un segnale o un evento  
  Usare un'azione accetta evento (4) per indicare che questa attività attende un evento esterno o un messaggio in arrivo. Usare il nome dell'azione per indicare il tipo di evento atteso.  
   
--   Per mostrare che l'attività attende un evento o un messaggio esterno in un punto specifico del suo flusso, tracciare un'azione accetta evento con un flusso in ingresso, nella posizione appropriata nell'attività.  
+- Per mostrare che l'attività attende un evento o un messaggio esterno in un punto specifico del suo flusso, tracciare un'azione accetta evento con un flusso in ingresso, nella posizione appropriata nell'attività.  
   
--   Per mostrare che l'attività può rispondere a un evento o un messaggio esterno in qualsiasi momento, tracciare un'azione accetta evento senza alcun flusso in ingresso. Quando si verifica l'evento esterno denominato, inizierà un nuovo thread nell'attività, a partire dall'azione accetta evento.  
+- Per mostrare che l'attività può rispondere a un evento o un messaggio esterno in qualsiasi momento, tracciare un'azione accetta evento senza alcun flusso in ingresso. Quando si verifica l'evento esterno denominato, inizierà un nuovo thread nell'attività, a partire dall'azione accetta evento.  
   
--   Non è possibile usare un'azione accetta evento per descrivere qualsiasi valore restituito al mittente del segnale. Per questo scopo, usare un'azione invia segnale separata.  
+- Non è possibile usare un'azione accetta evento per descrivere qualsiasi valore restituito al mittente del segnale. Per questo scopo, usare un'azione invia segnale separata.  
   
--   È possibile mostrare i flussi di dati in uscita dall'azione, per indicare il modo in cui l'attività elabora i dati ricevuti nel segnale. Se si desidera mostrare più di un flusso di output, è necessario impostare il **IsUnmarshall** proprietà dell'azione accetta evento, indicante che l'azione analizza il segnale in ingresso nei suoi componenti separati. Per altre informazioni, vedere [descrizione del flusso di dati](#DataFlows).  
+- È possibile mostrare i flussi di dati in uscita dall'azione, per indicare il modo in cui l'attività elabora i dati ricevuti nel segnale. Se si desidera mostrare più di un flusso di output, è necessario impostare il **IsUnmarshall** proprietà dell'azione accetta evento, indicante che l'azione analizza il segnale in ingresso nei suoi componenti separati. Per altre informazioni, vedere [descrizione del flusso di dati](#DataFlows).  
   
 ### <a name="describing-multiple-data-flows"></a>Descrizione di più flussi di dati  
  È possibile tracciare più flussi di controllo o flussi oggetto provenienti da un'azione per indicare l'emergere di più thread al termine dell'azione. L'effetto assomiglia a quello di un nodo fork, ad eccezione del fatto che è possibile usare una combinazione di flussi di controllo e flussi oggetto.  
@@ -398,31 +398,31 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
 - Aggiungere un commento al pin di input o di output.  
   
-  -   Per distinguere questa descrizione da un commento generale, è possibile iniziare il commento con <\<**trasformazione**>> o <\<**selezione**>>.  
+  - Per distinguere questa descrizione da un commento generale, è possibile iniziare il commento con <\<**trasformazione**>> o <\<**selezione**>>.  
   
 - Specificare la trasformazione o la selezione in modo dettagliato in un diagramma di attività separato.  
   
-  -   Se si usa questo metodo, aggiungere comunque un commento, per chiarire ai lettori che la trasformazione è stata definita.  
+  - Se si usa questo metodo, aggiungere comunque un commento, per chiarire ai lettori che la trasformazione è stata definita.  
   
 ##### <a name="to-specify-a-transformation-or-selection-in-a-separate-activity-diagram"></a>Per specificare una trasformazione o una selezione in un diagramma di attività separato  
   
 1. Creare un nuovo diagramma di attività in cui descrivere il flusso di trasformazione o selezione.  
   
-   -   Nel **Esplora soluzioni**, fare clic sul progetto, scegliere **Add**, fare clic su **nuovo elemento**, quindi fare clic su **diagramma di attività**. Assegnare al diagramma un nome appropriato per il flusso di trasformazione o selezione. Fare clic su **Aggiungi**.  
+   - Nel **Esplora soluzioni**, fare clic sul progetto, scegliere **Add**, fare clic su **nuovo elemento**, quindi fare clic su **diagramma di attività**. Assegnare al diagramma un nome appropriato per il flusso di trasformazione o selezione. Fare clic su **Aggiungi**.  
   
 2. Nel nuovo diagramma:  
   
-   1.  Creare due nodi parametro attività, uno per il flusso di input e uno per il flusso di output.  
+   1. Creare due nodi parametro attività, uno per il flusso di input e uno per il flusso di output.  
   
-   2.  Creare azioni interconnesse con flussi oggetto. In questo modo viene mostrato il funzionamento della trasformazione o della selezione.  
+   2. Creare azioni interconnesse con flussi oggetto. In questo modo viene mostrato il funzionamento della trasformazione o della selezione.  
   
 3. In qualsiasi diagramma in cui si vuole usare la trasformazione o la selezione eseguire le operazioni seguenti:  
   
-   1.  Creare un flusso oggetto, ovvero un connettore da o verso un pin di input o di output, un nodo oggetto o un nodo parametro attività.  
+   1. Creare un flusso oggetto, ovvero un connettore da o verso un pin di input o di output, un nodo oggetto o un nodo parametro attività.  
   
-   2.  Fare doppio clic su flusso oggetto e quindi fare clic su **proprietà**.  
+   2. Fare doppio clic su flusso oggetto e quindi fare clic su **proprietà**.  
   
-   3.  Nel **Transformation** oppure **selezione** proprietà, selezionare il diagramma in cui è stato specificato il flusso di trasformazione o selezione.  
+   3. Nel **Transformation** oppure **selezione** proprietà, selezionare il diagramma in cui è stato specificato il flusso di trasformazione o selezione.  
   
    È anche possibile definire una selezione per un nodo oggetto e in singoli pin di input e di output. Definire un'attività di selezione come nella procedura precedente e quindi impostare il **selezione** proprietà del nodo oggetto, o un pin di input o output.  
   

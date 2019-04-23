@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087769"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 
@@ -45,15 +45,15 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
 
  È consigliabile non modificare direttamente il codice generato, perché le modifiche andranno perse quando si ricompilerà la soluzione. Invece, per personalizzare il linguaggio DSL:
 
--   Regolare i diversi parametri nella definizione DSL.
+- Regolare i diversi parametri nella definizione DSL.
 
--   Scrivere le classi parziali in file di codice separati, per eseguire l'override dei metodi definiti nelle classi generate o ereditati da esse. In alcuni casi, è necessario impostare il **genera una derivata doppia** opzione di una classe nella definizione DSL, per poter eseguire l'override di un metodo generato.
+- Scrivere le classi parziali in file di codice separati, per eseguire l'override dei metodi definiti nelle classi generate o ereditati da esse. In alcuni casi, è necessario impostare il **genera una derivata doppia** opzione di una classe nella definizione DSL, per poter eseguire l'override di un metodo generato.
 
--   Impostare le opzioni nella definizione DSL che causano il codice generato fornire 'gli hook del ' per il proprio codice.
+- Impostare le opzioni nella definizione DSL che causano il codice generato fornire 'gli hook del ' per il proprio codice.
 
      Ad esempio, se si impostano i **ha un costruttore personalizzato** opzione di una classe di dominio e quindi compilare la soluzione, verranno visualizzati messaggi di errore. Quando si fa doppio clic su uno di questi messaggi di errore, nel codice generato verranno visualizzati commenti che spiegano che cosa debba contenere il codice personalizzato.
 
--   Scrivere i modelli di testo per generare il codice specifico dell'applicazione. È possibile usare file di inclusione per condividere le parti dei modelli che sono comuni a più progetti ed è possibile creare modelli di progetto di Visual Studio per impostare i progetti inizializzati con la propria struttura di file.
+- Scrivere i modelli di testo per generare il codice specifico dell'applicazione. È possibile usare file di inclusione per condividere le parti dei modelli che sono comuni a più progetti ed è possibile creare modelli di progetto di Visual Studio per impostare i progetti inizializzati con la propria struttura di file.
 
 ## <a name="generated-files-in-dsl"></a>File generati in DSL
  I seguenti file generati vengono visualizzati nei **Dsl** progetto.

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: specificare il percorso in cui gli utenti finali eseguiranno l'installazione da | Microsoft Docs"
+title: "Procedura: Specificare il percorso in cui gli utenti finali eseguiranno l'installazione da | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2470c6ff8603bc100ee515b046efcf2436cb0b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bd447f0d68eb729c0bd25a65e99e871d7927c49b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087673"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: Specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione, la posizione in cui gli utenti potranno scaricare e installare l'applicazione non è necessariamente la posizione in cui inizialmente l'applicazione viene pubblicata. Ad esempio, in alcune organizzazioni lo sviluppatore può pubblicare un'applicazione in un server di gestione temporanea e quindi un amministratore potrebbe spostare l'applicazione in un server Web.
@@ -31,15 +31,15 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 
  Il `Installation URL` può impostare la proprietà il **Publish** pagina del **creazione progetti**.
 
- **Nota** il `Installation URL` proprietà può essere impostata inoltre mediante il **pubblicazione guidata**. Per altre informazioni, vedere [procedura: pubblicare un'applicazione ClickOnce mediante la pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ **Nota** il `Installation URL` proprietà può essere impostata inoltre mediante il **pubblicazione guidata**. Per altre informazioni, vedere [Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-specify-an-installation-url"></a>Per specificare un URL di installazione
 
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2.  Fare clic sulla scheda **Pubblica**.
+2. Fare clic sulla scheda **Pubblica**.
 
-3.  Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato *http://www.microsoft.com/ApplicationName*, o un percorso UNC nel formato  *\\\Server\ApplicationName*.
+3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato *http://www.microsoft.com/ApplicationName*, o un percorso UNC nel formato  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

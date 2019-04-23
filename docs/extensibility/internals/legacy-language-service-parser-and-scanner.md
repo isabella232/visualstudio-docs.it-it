@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd16fa286c4e6343e69644caa60525a988e180e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092305"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanner e parser dei servizi di linguaggio legacy
 Il parser è il cuore del servizio di linguaggio. Le classi di lingua di Framework di pacchetto gestito (MPF) richiedono un parser del linguaggio per selezionare le informazioni sul codice di visualizzazione. Un parser separa il testo in token lessicale e quindi identifica i token dal tipo e funzionalità.
@@ -80,29 +80,29 @@ namespace MyNamespace
 
  Si supponga che il servizio di linguaggio supporta le parentesi graffe corrispondenti.
 
-1.  L'utente digita una parentesi graffa di chiusura (}).
+1. L'utente digita una parentesi graffa di chiusura (}).
 
-2.  La parentesi graffa viene inserita in corrispondenza del cursore nel file di origine e il cursore viene spostato in uno.
+2. La parentesi graffa viene inserita in corrispondenza del cursore nel file di origine e il cursore viene spostato in uno.
 
-3.  Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> nel metodo il <xref:Microsoft.VisualStudio.Package.Source> classe viene chiamata con parentesi graffa di chiusura tipizzato.
+3. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> nel metodo il <xref:Microsoft.VisualStudio.Package.Source> classe viene chiamata con parentesi graffa di chiusura tipizzato.
 
-4.  Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metodo nel <xref:Microsoft.VisualStudio.Package.Source> classe per ottenere il token in corrispondenza della posizione appena prima della posizione corrente del cursore. Questo token corrisponde a parentesi graffa di chiusura tipizzato).
+4. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metodo nel <xref:Microsoft.VisualStudio.Package.Source> classe per ottenere il token in corrispondenza della posizione appena prima della posizione corrente del cursore. Questo token corrisponde a parentesi graffa di chiusura tipizzato).
 
-    1.  Il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodo su di <xref:Microsoft.VisualStudio.Package.Colorizer> oggetto per ottenere tutti i token nella riga corrente.
+    1. Il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodo su di <xref:Microsoft.VisualStudio.Package.Colorizer> oggetto per ottenere tutti i token nella riga corrente.
 
-    2.  Il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodo su di <xref:Microsoft.VisualStudio.Package.IScanner> oggetto con il testo della riga corrente.
+    2. Il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> metodo su di <xref:Microsoft.VisualStudio.Package.IScanner> oggetto con il testo della riga corrente.
 
-    3.  Il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodo chiama ripetutamente il <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodo su di <xref:Microsoft.VisualStudio.Package.IScanner> oggetto per raccogliere tutti i token dalla riga corrente.
+    3. Il <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> metodo chiama ripetutamente il <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> metodo su di <xref:Microsoft.VisualStudio.Package.IScanner> oggetto per raccogliere tutti i token dalla riga corrente.
 
-    4.  Il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metodo chiama un metodo privato nel <xref:Microsoft.VisualStudio.Package.Source> classe per ottenere il token che contiene la posizione desiderata e passa l'elenco dei token ottenuto dal <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (metodo).
+    4. Il <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> metodo chiama un metodo privato nel <xref:Microsoft.VisualStudio.Package.Source> classe per ottenere il token che contiene la posizione desiderata e passa l'elenco dei token ottenuto dal <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (metodo).
 
-5.  Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo cerca un flag trigger token <xref:Microsoft.VisualStudio.Package.TokenTriggers> nel token restituito dal <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> (metodo), vale a dire il token che rappresenta la parentesi graffa di chiusura).
+5. Il <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> metodo cerca un flag trigger token <xref:Microsoft.VisualStudio.Package.TokenTriggers> nel token restituito dal <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> (metodo), vale a dire il token che rappresenta la parentesi graffa di chiusura).
 
-6.  Se il trigger di flag del <xref:Microsoft.VisualStudio.Package.TokenTriggers> viene trovato, il <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodo nel <xref:Microsoft.VisualStudio.Package.Source> classe è denominata.
+6. Se il trigger di flag del <xref:Microsoft.VisualStudio.Package.TokenTriggers> viene trovato, il <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodo nel <xref:Microsoft.VisualStudio.Package.Source> classe è denominata.
 
-7.  Il <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodo avvia un'operazione di analisi con il valore di motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason>. Questa operazione chiama infine il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se l'analisi asincrono è abilitato, la chiamata al <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo si verifica su un thread in background.
+7. Il <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> metodo avvia un'operazione di analisi con il valore di motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason>. Questa operazione chiama infine il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se l'analisi asincrono è abilitato, la chiamata al <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo si verifica su un thread in background.
 
-8.  Quando viene completata l'operazione di analisi, un gestore di completamento interna (noto anche come un metodo di callback) denominato `HandleMatchBracesResponse` viene chiamato <xref:Microsoft.VisualStudio.Package.Source> classe. Questa chiamata viene eseguita automaticamente dal <xref:Microsoft.VisualStudio.Package.LanguageService> classe base, non dal parser.
+8. Quando viene completata l'operazione di analisi, un gestore di completamento interna (noto anche come un metodo di callback) denominato `HandleMatchBracesResponse` viene chiamato <xref:Microsoft.VisualStudio.Package.Source> classe. Questa chiamata viene eseguita automaticamente dal <xref:Microsoft.VisualStudio.Package.LanguageService> classe base, non dal parser.
 
 9. Il `HandleMatchBracesResponse` Ottiene l'elenco di intervalli dal <xref:Microsoft.VisualStudio.Package.AuthoringSink> oggetto archiviato nel <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto. (Un intervallo è un <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> struttura che specifica un intervallo di caratteri e le righe nel file di origine.) Questo elenco di intervalli contiene in genere due intervalli, rispettivamente per l'apertura e la parentesi graffe di chiusura.
 

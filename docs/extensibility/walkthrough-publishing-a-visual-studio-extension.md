@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093348"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Procedura dettagliata: Pubblicare un'estensione di Visual Studio
 
@@ -30,7 +30,7 @@ Questa procedura dettagliata illustra come pubblicare un'estensione di Visual St
 
 Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono validi per ogni tipo di estensione.
 
-1. Creare un pacchetto VSPackage in C# denominato `TestPublish` che dispone di un comando di menu. Per altre informazioni, vedere [creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
+1. Creare un pacchetto VSPackage in c# denominato `TestPublish` che dispone di un comando di menu. Per altre informazioni, vedere [creare la prima estensione: Hello World](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Creare un pacchetto di estensione
 
@@ -80,27 +80,27 @@ Questo articolo usa un'estensione VSPackage predefinito, ma i passaggi sono vali
 
     * **ID VSIX** è l'identificatore univoco utilizzato per l'estensione per Visual Studio. Questo identificatore è obbligatorio se si vuole avere l'estensione aggiornate automaticamente. Questo identificatore viene popolato automaticamente dal *vsixmanifest* file.
 
-   * **Logo** che viene usato per l'estensione. Questo logo viene popolato automaticamente dal *vsixmanifest* file se specificato.
+    * **Logo** che viene usato per l'estensione. Questo logo viene popolato automaticamente dal *vsixmanifest* file se specificato.
 
-     * **Descrizione breve** delle funzionalità dell'estensione. Questa descrizione viene popolato automaticamente dal *vsixmanifest* file.
+    * **Descrizione breve** delle funzionalità dell'estensione. Questa descrizione viene popolato automaticamente dal *vsixmanifest* file.
 
-     * **Panoramica** è un buon punto da includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
+    * **Panoramica** è un buon punto da includere le schermate e informazioni dettagliate sulla funzione associata l'estensione.
 
-     * **Le versioni di Visual Studio supportate** consente di scegliere quali versioni di Visual Studio funzionalità sarà disponibile l'estensione. L'estensione viene installata solo per tali versioni.
+    * **Le versioni di Visual Studio supportate** consente di scegliere quali versioni di Visual Studio funzionalità sarà disponibile l'estensione. L'estensione viene installata solo per tali versioni.
 
-     * * * Supportato edition consente di scegliere quali edizioni di Visual Studio sarà disponibile l'estensione di Visual Studio. L'estensione viene installata solo per queste edizioni.
+    * * * Supportato edition consente di scegliere quali edizioni di Visual Studio sarà disponibile l'estensione di Visual Studio. L'estensione viene installata solo per queste edizioni.
 
-     * **Tipo**. Il tipo più comune delle estensioni sono **strumenti**.
+    * **Tipo**. Il tipo più comune delle estensioni sono **strumenti**.
 
-     * **Categorie**. Selezionare un massimo di tre che sono una soluzione ottimale per l'estensione.
+    * **Categorie**. Selezionare un massimo di tre che sono una soluzione ottimale per l'estensione.
 
-     * **I tag** sono parole chiave che consentono agli utenti di trovare l'estensione. I tag consentono di aumentare la rilevanza di ricerca delle estensioni nel Marketplace.
+    * **I tag** sono parole chiave che consentono agli utenti di trovare l'estensione. I tag consentono di aumentare la rilevanza di ricerca delle estensioni nel Marketplace.
 
-     * **Categoria di prezzi** è il costo dell'estensione.
+    * **Categoria di prezzi** è il costo dell'estensione.
 
-     * **Repository del codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
+    * **Repository del codice sorgente** consente di condividere un collegamento al codice sorgente con la community.
 
-     * **Consenti domande e risposte per l'estensione** consente agli utenti di lasciare domande nella pagina di voce di estensione.
+    * **Consenti domande e risposte per l'estensione** consente agli utenti di lasciare domande nella pagina di voce di estensione.
 
 9. Fare clic su **Salva e carica**. Pagina Gestisci visualizzata questa opzione di nuovo il server di pubblicazione. L'estensione non è ancora stata pubblicata. Per pubblicare l'estensione, fare clic sull'estensione e selezionare **Rendi pubblico**. È possibile visualizzare come l'estensione sarà simile in Marketplace, selezionando **Visualizza l'estensione**. Per i numeri di acquisizione, fare clic su **report**. Per apportare modifiche all'estensione, fare clic su **modifica**.
 

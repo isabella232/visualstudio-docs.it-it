@@ -11,30 +11,30 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfa174ca228adcd404edb3e91733731f975ed732
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106644"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in corrispondenza del quale è possibile definire gli strumenti di modellazione:  
   
-1.  Definire un linguaggio specifico di dominio (DSL) mediante il diagramma di definizione DSL. È possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessarie per generare il codice e altri elementi.  
+1. Definire un linguaggio specifico di dominio (DSL) mediante il diagramma di definizione DSL. È possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessarie per generare il codice e altri elementi.  
   
      Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).  
   
-2.  Ottimizzare il linguaggio DSL utilizzando le funzionalità più avanzate della definizione DSL. Ad esempio, è possibile visualizzare collegamenti aggiuntivi quando l'utente crea un elemento. Queste tecniche vengono realizzate nella definizione DSL e alcune richiedono poche righe di codice del programma.  
+2. Ottimizzare il linguaggio DSL utilizzando le funzionalità più avanzate della definizione DSL. Ad esempio, è possibile visualizzare collegamenti aggiuntivi quando l'utente crea un elemento. Queste tecniche vengono realizzate nella definizione DSL e alcune richiedono poche righe di codice del programma.  
   
-3.  Estendere gli strumenti di modellazione usando codice programma. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL.  Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+3. Estendere gli strumenti di modellazione usando codice programma. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL.  Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 > [!NOTE]
 >  Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di ricompilare la soluzione.  
   
-##  <a name="customShapes"></a> In questa sezione  
+## <a name="customShapes"></a> In questa sezione  
   
 |Per ottenere questo effetto|Fare riferimento a questo argomento|  
 |----------------------------|-------------------------|  

@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33928df6dd1151dc79dd07c966985666d2e7fd19
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: aa0735f25b7e6b0007172c8c42eb06222a0425fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086858"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associare controlli WPF a un servizio di dati WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,57 +68,57 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-create-the-service-project"></a>Per creare il progetto di servizio  
   
-1.  Avviare Visual Studio.  
+1. Avviare Visual Studio.  
   
-2.  Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
+2. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
-3.  Espandere **Visual C#** o **Visual Basic**, quindi selezionare **Web**.  
+3. Espandere **Visual C#** o **Visual Basic**, quindi selezionare **Web**.  
   
-4.  Selezionare il modello di progetto **Applicazione Web ASP.NET**.  
+4. Selezionare il modello di progetto **Applicazione Web ASP.NET**.  
   
-5.  Nel **Name** , digitare `AdventureWorksService` e fare clic su **OK**.  
+5. Nel **Name** , digitare `AdventureWorksService` e fare clic su **OK**.  
   
      Visual Studio crea il `AdventureWorksService` progetto.  
   
-6.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Default.aspx** e scegliere **Elimina**. Questo file non è necessario per la procedura dettagliata.  
+6. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Default.aspx** e scegliere **Elimina**. Questo file non è necessario per la procedura dettagliata.  
   
 ## <a name="create-an-entity-data-model-for-the-service"></a>Creare un Entity Data Model per il servizio  
  Per esporre i dati in un'applicazione usando un'istanza di [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], è necessario definire un modello di dati per il servizio. Il [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] supporta due tipi di modelli di dati: Entity Data Model e modelli di dati personalizzate che vengono definiti utilizzando oggetti common language runtime (CLR) che implementano il <xref:System.Linq.IQueryable%601> interfaccia. In questa procedura dettagliata, viene creato un modello Entity Data Model per il modello di dati.  
   
 #### <a name="to-create-an-entity-data-model"></a>Per creare un modello Entity Data Model  
   
-1.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
+1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
-2.  Nell'elenco Modelli installati fare clic su **Dati**, quindi selezionare l'elemento di progetto **ADO.NET Entity Data Model**.  
+2. Nell'elenco Modelli installati fare clic su **Dati**, quindi selezionare l'elemento di progetto **ADO.NET Entity Data Model**.  
   
-3.  Modificare il nome in `AdventureWorksModel.edmx`, fare clic su **Add**.  
+3. Modificare il nome in `AdventureWorksModel.edmx`, fare clic su **Add**.  
   
      Verrà aperta la **Procedura guidata Entity Data Model**.  
   
-4.  Nella pagina **Scegli contenuto del modello** fare clic su **Genera da database**, quindi su **Avanti**.  
+4. Nella pagina **Scegli contenuto del modello** fare clic su **Genera da database**, quindi su **Avanti**.  
   
-5.  Nella pagina **Seleziona connessione dati** selezionare una delle opzioni seguenti:  
+5. Nella pagina **Seleziona connessione dati** selezionare una delle opzioni seguenti:  
   
-    -   Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.  
+    - Selezionare la connessione dati al database di esempio AdventureWorksLT nell'elenco a discesa, se presente.  
   
-    -   Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.  
+    - Fare clic su **Nuova connessione** e creare una connessione al database AdventureWorksLT.  
   
-6.  Nella pagina **Seleziona connessione dati** verificare che l'opzione **Salva impostazioni di connessione entità in App.Config come** sia selezionata, quindi fare clic su **Avanti**.  
+6. Nella pagina **Seleziona connessione dati** verificare che l'opzione **Salva impostazioni di connessione entità in App.Config come** sia selezionata, quindi fare clic su **Avanti**.  
   
-7.  Nella pagina **Seleziona oggetti di database** espandere **Tabelle**, quindi selezionare la tabella **SalesOrderHeader**.  
+7. Nella pagina **Seleziona oggetti di database** espandere **Tabelle**, quindi selezionare la tabella **SalesOrderHeader**.  
   
-8.  Scegliere **Fine**.  
+8. Scegliere **Fine**.  
   
 ## <a name="create-the-service"></a>Creare il servizio  
  Creare un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] per esporre i dati in Entity Data Model in un'applicazione WPF.  
   
 #### <a name="to-create-the-service"></a>Per creare il servizio  
   
-1.  Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.  
+1. Scegliere **Aggiungi nuovo elemento** dal menu **Progetto**.  
   
-2.  Nell'elenco Modelli installati, fare clic su **Web**, quindi selezionare la **WCF Data Services** elemento del progetto.  
+2. Nell'elenco Modelli installati, fare clic su **Web**, quindi selezionare la **WCF Data Services** elemento del progetto.  
   
-3.  Nel **Name** , digitare `AdventureWorksService.svc`, fare clic su **Add**.  
+3. Nel **Name** , digitare `AdventureWorksService.svc`, fare clic su **Add**.  
   
      Visual Studio aggiunge il `AdventureWorksService.svc` al progetto.  
   
@@ -127,41 +127,41 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-configure-the-service"></a>Per configurare il servizio  
   
-1.  Nel `AdventureWorks.svc` file di codice, sostituire il `AdventureWorksService` con il codice seguente dichiarazione di classe.  
+1. Nel `AdventureWorks.svc` file di codice, sostituire il `AdventureWorksService` con il codice seguente dichiarazione di classe.  
   
      [!code-csharp[Data_WPFWCF#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs#1)]
      [!code-vb[Data_WPFWCF#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb#1)]  
   
      Questo codice aggiorna il `AdventureWorksService` classe, in modo che derivi da un <xref:System.Data.Services.DataService%601> che opera sul `AdventureWorksLTEntities` oggetto classe del contesto del modello Entity Data Model. Aggiorna inoltre il metodo `InitializeService` per consentire ai client del servizio l'accesso completo in lettura/scrittura all'entità `SalesOrderHeader`.  
   
-2.  Compilare il progetto e verificare che non siano presenti errori.  
+2. Compilare il progetto e verificare che non siano presenti errori.  
   
 ## <a name="create-the-wpf-client-application"></a>Creare l'applicazione client WPF  
  Per visualizzare i dati di [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], creare una nuova applicazione WPF con un'origine dati basata sul servizio. Più avanti in questa procedura dettagliata, verranno aggiunti all'applicazione i controlli associati a dati.  
   
 #### <a name="to-create-the-wpf-client-application"></a>Per creare l'applicazione client WPF  
   
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi** e selezionare **Nuovo progetto**.  
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo della soluzione, scegliere **Aggiungi** e selezionare **Nuovo progetto**.  
   
-2.  Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** o **Visual Basic**, quindi selezionare **Finestre**.  
+2. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** o **Visual Basic**, quindi selezionare **Finestre**.  
   
-3.  Selezionare il modello di progetto **Applicazione WPF**.  
+3. Selezionare il modello di progetto **Applicazione WPF**.  
   
-4.  Nella casella **Nome** digitare `AdventureWorksSalesEditor` e fare clic su **OK**.  
+4. Nella casella **Nome** digitare `AdventureWorksSalesEditor` e fare clic su **OK**.  
   
      Visual Studio aggiunge il `AdventureWorksSalesEditor` progetto alla soluzione.  
   
-5.  Scegliere **Mostra origini dati** dal menu **Dati**.  
+5. Scegliere **Mostra origini dati** dal menu **Dati**.  
   
      Verrà visualizzata la finestra **Origini dati**.  
   
-6.  Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
+6. Nella finestra **Origini dati** fare clic su **Aggiungi nuova origine dati**.  
   
      Verrà avviata la **Configurazione guidata origine dati**.  
   
-7.  Nella pagina **Seleziona un tipo di origine dati** della procedura guidata selezionare **Servizio**, quindi fare clic su **Avanti**.  
+7. Nella pagina **Seleziona un tipo di origine dati** della procedura guidata selezionare **Servizio**, quindi fare clic su **Avanti**.  
   
-8.  Nella finestra di dialogo **Aggiungi riferimento al servizio** fare clic su **Individua**.  
+8. Nella finestra di dialogo **Aggiungi riferimento al servizio** fare clic su **Individua**.  
   
      Visual Studio cerca i servizi disponibili nella soluzione corrente e aggiunge `AdventureWorksService.svc` all'elenco dei servizi disponibili nel **Services** casella.  
   
@@ -180,11 +180,11 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-create-the-window-layout"></a>Per creare il layout della finestra  
   
-1.  Nelle **Esplora soluzioni**, fare doppio clic sul file MainWindow. Xaml.  
+1. Nelle **Esplora soluzioni**, fare doppio clic sul file MainWindow. Xaml.  
   
      La finestra verrà aperta in WPF Designer.  
   
-2.  Nella visualizzazione [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] della finestra di progettazione aggiungere il codice seguente tra i tag `<Grid>`:  
+2. Nella visualizzazione [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] della finestra di progettazione aggiungere il codice seguente tra i tag `<Grid>`:  
   
     ```  
     <Grid.RowDefinitions>  
@@ -196,7 +196,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>  
     ```  
   
-3.  Compilare il progetto.  
+3. Compilare il progetto.  
   
 ## <a name="create-the-data-bound-controls"></a>Creare i controlli con associazione a dati  
  Creare controlli che visualizzano i record cliente trascinando il `SalesOrderHeaders` dal nodo il **Zdroje dat** finestra di progettazione.  
@@ -231,20 +231,20 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 7. Impostare la proprietà **IsReadOnly** per ognuna delle caselle di testo seguenti:  
   
-   -   **Purchase Order Number**  
+   - **Purchase Order Number**  
   
-   -   **Sales Order ID**  
+   - **Sales Order ID**  
   
-   -   **Sales Order Number**  
+   - **Sales Order Number**  
   
 ## <a name="load-the-data-from-the-service"></a>Caricare i dati dal servizio  
  Usare l'oggetto proxy del servizio per caricare i dati di vendita dal servizio. Assegnare quindi i dati restituiti per l'origine dati per il <xref:System.Windows.Data.CollectionViewSource> nella finestra WPF.  
   
 #### <a name="to-load-the-data-from-the-service"></a>Per caricare i dati dal servizio  
   
-1.  Nella finestra di progettazione, per creare il `Window_Loaded` gestore eventi, fare doppio clic sul collegamento: **MainWindow**.  
+1. Nella finestra di progettazione, per creare il `Window_Loaded` gestore eventi, fare doppio clic sul collegamento: **MainWindow**.  
   
-2.  Sostituire il gestore eventi con il codice seguente. Assicurarsi di sostituire l'indirizzo *localhost* in questo codice con l'indirizzo dell'host locale nel computer di sviluppo.  
+2. Sostituire il gestore eventi con il codice seguente. Assicurarsi di sostituire l'indirizzo *localhost* in questo codice con l'indirizzo dell'host locale nel computer di sviluppo.  
   
      [!code-csharp[Data_WPFWCF#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFWCF#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#2)]  
@@ -254,20 +254,20 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Per consentire agli utenti di esplorare i record delle vendite  
   
-1.  Nella finestra di progettazione fare doppio clic sul pulsante **<** nell'area della finestra.  
+1. Nella finestra di progettazione fare doppio clic sul pulsante **<** nell'area della finestra.  
   
      Visual Studio apre il file code-behind e crea un nuovo gestore eventi `backButton_Click` per l'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.  
   
-2.  Aggiungere il codice seguente al gestore eventi `backButton_Click` generato:  
+2. Aggiungere il codice seguente al gestore eventi `backButton_Click` generato:  
   
      [!code-csharp[Data_WPFWCF#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFWCF#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#3)]  
   
-3.  Tornare alla finestra di progettazione e fare doppio clic sul pulsante **>**.  
+3. Tornare alla finestra di progettazione e fare doppio clic sul pulsante **>**.  
   
      Visual Studio apre il file code-behind e crea un nuovo gestore eventi `nextButton_Click` per l'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.  
   
-4.  Aggiungere il codice seguente al gestore eventi `nextButton_Click` generato:  
+4. Aggiungere il codice seguente al gestore eventi `nextButton_Click` generato:  
   
      [!code-csharp[Data_WPFWCF#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]  
@@ -277,11 +277,11 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Per aggiungere la possibilità di salvare le modifiche ai record delle vendite  
   
-1.  Nella finestra di progettazione fare doppio clic sul pulsante **Salva modifiche**.  
+1. Nella finestra di progettazione fare doppio clic sul pulsante **Salva modifiche**.  
   
      Visual Studio apre il file code-behind e crea un nuovo gestore eventi `saveButton_Click` per l'evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click>.  
   
-2.  Aggiungere il codice seguente al gestore eventi `saveButton_Click`.  
+2. Aggiungere il codice seguente al gestore eventi `saveButton_Click`.  
   
      [!code-csharp[Data_WPFWCF#5](../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs#5)]
      [!code-vb[Data_WPFWCF#5](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#5)]  
@@ -291,36 +291,36 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione  
   
-1.  Sul **compilare** menu, fare clic su **Compila soluzione**. Verificare che la soluzione venga compilata senza errori.  
+1. Sul **compilare** menu, fare clic su **Compila soluzione**. Verificare che la soluzione venga compilata senza errori.  
   
-2.  Premere **CTRL+F5**.  
+2. Premere **CTRL+F5**.  
   
      Visual Studio avvia il progetto **AdventureWorksService** senza eseguirne il debug.  
   
-3.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksSalesEditor**.  
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto **AdventureWorksSalesEditor**.  
   
-4.  Scegliere **Debug** dal menu di scelta rapida, quindi **Avvia nuova istanza**.  
+4. Scegliere **Debug** dal menu di scelta rapida, quindi **Avvia nuova istanza**.  
   
      Verrà eseguita l'applicazione. Verificare quanto segue:  
   
-    -   Nelle caselle di testo vengono visualizzati campi di dati diversi dal primo record di vendite il cui ID ordine vendite è **71774**.  
+    - Nelle caselle di testo vengono visualizzati campi di dati diversi dal primo record di vendite il cui ID ordine vendite è **71774**.  
   
-    -   È possibile fare clic sui pulsanti **>** o **<** per spostarsi tra gli altri record delle vendite.  
+    - È possibile fare clic sui pulsanti **>** o **<** per spostarsi tra gli altri record delle vendite.  
   
-5.  In uno dei record delle vendite digitare del testo nella casella **Commento**, quindi fare clic su **Salva modifiche**.  
+5. In uno dei record delle vendite digitare del testo nella casella **Commento**, quindi fare clic su **Salva modifiche**.  
   
-6.  Chiudere l'applicazione, quindi avviarla di nuovo da Visual Studio.  
+6. Chiudere l'applicazione, quindi avviarla di nuovo da Visual Studio.  
   
-7.  Passare al record delle vendite modificato e verificare che la modifica sia presente dopo avere chiuso e riaperto l'applicazione.  
+7. Passare al record delle vendite modificato e verificare che la modifica sia presente dopo avere chiuso e riaperto l'applicazione.  
   
-8.  Chiudere l'applicazione.  
+8. Chiudere l'applicazione.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  Dopo avere completato questa procedura dettagliata, è possibile eseguire le attività correlate seguenti:  
   
--   Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [WPF di associare controlli a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md).  
+- Imparare a usare la finestra **Origini dati** in Visual Studio per associare i controlli WPF ad altri tipi di origini dati. Per altre informazioni, vedere [WPF di associare controlli a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md).  
   
--   Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
+- Imparare a usare la finestra **Origini dati** in Visual Studio per visualizzare i dati correlati, ovvero i dati in una relazione padre-figlio, nei controlli WPF. Per altre informazioni, vedere [Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   

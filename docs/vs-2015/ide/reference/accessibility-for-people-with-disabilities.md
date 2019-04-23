@@ -13,18 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87f8f60985f9dfe8629cfd96bcffc9926b8a56e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093761"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilità per utenti con particolari esigenze
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i servizi offerti, in modo che tutti gli utenti siano in grado di usarli. Negli argomenti riportati di seguito vengono fornite informazioni su funzionalità, prodotti e servizi che rendono Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] più accessibile per le persone affette da disabilità.  
   
--   [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)  
+- [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md) (Funzionalità di accessibilità di Visual Studio)  
   
--   [Funzionalità di accessibilità di Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)
+- [Funzionalità di accessibilità di Help Viewer](../../ide/accessibility-features-of-the-help-viewer.md)

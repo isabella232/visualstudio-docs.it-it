@@ -10,12 +10,12 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b47cfde4bbc228aa31d911a9499b74e12b78250c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff53700dcd6a80f841108d5a2b486dcb0ba7a11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090842"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Scelta di implementazione di un pacchetto VSPackage di controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ In questa sezione vengono illustrate le scelte di plug-in controllo codice sorge
   
  Se si desidera implementare una soluzione di controllo di origine che fornisce la flessibilità e controllo più completo tramite l'interfaccia utente e la logica di controllo di origine, è preferibile la route di integrazione origine pacchetto controllo. È possibile:  
   
-1.  Registrare il proprio controllo del codice sorgente VSPackage (vedere [registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1. Registrare il proprio controllo del codice sorgente VSPackage (vedere [registrazione e selezione](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Sostituire il controllo del codice sorgente predefinite dell'interfaccia utente con l'interfaccia utente personalizzata (vedere [interfaccia utente personalizzata](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
+2. Sostituire il controllo del codice sorgente predefinite dell'interfaccia utente con l'interfaccia utente personalizzata (vedere [interfaccia utente personalizzata](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Specificare i glifi da utilizzare e gestire gli eventi del glifo di Esplora soluzioni (vedere [controllo Glyph](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3. Specificare i glifi da utilizzare e gestire gli eventi del glifo di Esplora soluzioni (vedere [controllo Glyph](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Gestire gli eventi di Query modificare e salvare Query (vedere [salvataggio delle Query Edit Query](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4. Gestire gli eventi di Query modificare e salvare Query (vedere [salvataggio delle Query Edit Query](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un plug-in del controllo del codice sorgente](../../extensibility/internals/creating-a-source-control-plug-in.md)

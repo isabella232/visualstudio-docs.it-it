@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105487"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Le edizioni di Visual Studio supportate per la visualizzazione &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Di seguito sono riportati gli elenchi delle versioni di Visual Studio che sono s
 ## <a name="deployment-editions"></a>Edizioni per la distribuzione
  [!INCLUDE[dsl](../includes/dsl-md.md)] supporta le configurazioni seguenti per la distribuzione dei linguaggi specifici di dominio compilati:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Visual Studio Shell (modalità integrata) pacchetto ridistribuibile
+- Visual Studio Shell (modalità integrata) pacchetto ridistribuibile
 
--   Pacchetto ridistribuibile Visual Studio Shell (modalità isolata)
+- Pacchetto ridistribuibile Visual Studio Shell (modalità isolata)
 
 > [!NOTE]
 >  Per rendere un linguaggio DSL può essere eseguita su un prodotto Shell, è necessario impostare il **edizione supportata di Visual Studio** campo nel manifesto dell'estensione. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).

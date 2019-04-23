@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089753"
 ---
 # <a name="command-implementation"></a>Implementazione del comando
 Per implementare un comando in un pacchetto VSPackage, è necessario eseguire le attività seguenti:
 
-1.  Nel *vsct* file, configurare un gruppo di comandi e quindi aggiungervi il comando. Per altre informazioni, vedere [file table (vsct) di Visual Studio comando](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. Nel *vsct* file, configurare un gruppo di comandi e quindi aggiungervi il comando. Per altre informazioni, vedere [file table (vsct) di Visual Studio comando](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Registrare il comando con Visual Studio.
+2. Registrare il comando con Visual Studio.
 
-3.  Implementare il comando.
+3. Implementare il comando.
 
 Le sezioni seguenti illustrano come registrare e implementare i comandi.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Metodi QueryStatus
  Se si implementa il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metodo o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> (metodo), cercare il GUID del comando set a cui appartiene il comando e l'ID del comando. Attenersi alle seguenti indicazioni:
 
--   Se non viene riconosciuto il GUID, deve restituire l'implementazione di uno dei due metodi <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Se non viene riconosciuto il GUID, deve restituire l'implementazione di uno dei due metodi <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Se l'implementazione di uno dei due metodi riconosce il GUID, ma non ha implementato il comando, quindi il metodo deve restituire <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Se l'implementazione di uno dei due metodi riconosce il GUID, ma non ha implementato il comando, quindi il metodo deve restituire <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Se l'implementazione di uno dei due metodi riconosce il GUID e il comando, quindi il metodo deve impostare il campo flag dei comandi di ogni comando (nelle `prgCmds` parametro) con i seguenti <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
+- Se l'implementazione di uno dei due metodi riconosce il GUID e il comando, quindi il metodo deve impostare il campo flag dei comandi di ogni comando (nelle `prgCmds` parametro) con i seguenti <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
 
-    -   `OLECMDF_SUPPORTED`: Il comando è supportato.
+    - `OLECMDF_SUPPORTED`: Il comando è supportato.
 
-    -   `OLECMDF_INVISIBLE`: Il comando non deve essere visibile.
+    - `OLECMDF_INVISIBLE`: Il comando non deve essere visibile.
 
-    -   `OLECMDF_LATCHED`: Il comando viene attivato e viene visualizzato per sono state controllate.
+    - `OLECMDF_LATCHED`: Il comando viene attivato e viene visualizzato per sono state controllate.
 
-    -   `OLECMDF_ENABLED`: Il comando è abilitato.
+    - `OLECMDF_ENABLED`: Il comando è abilitato.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: Il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: Il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.
 
-    -   `OLECMDF_NINCHED`: Il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).
+    - `OLECMDF_NINCHED`: Il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).
 
--   Se il comando è stato definito nel *vsct* file con il `TextChanges` flag, impostare i parametri seguenti:
+- Se il comando è stato definito nel *vsct* file con il `TextChanges` flag, impostare i parametri seguenti:
 
-    -   Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.
+    - Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.
 
-    -   Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.
+    - Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.
 
 Inoltre, assicurarsi che il contesto corrente non è una funzione di automazione, a meno che il comando è concepito appositamente per la gestione delle funzioni di automazione.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Cattura delle informazioni grafica | Microsoft Docs'
+title: 'Procedura dettagliata: Acquisizione di informazioni grafiche | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092253"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: cattura delle informazioni grafica
+# <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per acquisire manualmente informazioni grafiche da un'app Direct3D.
 
  In questa procedura dettagliata vengono illustrate le attività seguenti:
 
--   Associazione di Diagnostica grafica all'app
+- Associazione di Diagnostica grafica all'app
 
--   Acquisizione di informazioni grafiche
+- Acquisizione di informazioni grafiche
 
 ## <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
  Per usare gli strumenti di diagnostica grafica, occorre prima di tutto acquisire le informazioni grafiche necessarie. Per abilitare l'acquisizione, usare il comando **Avvia diagnostica** per associare Diagnostica grafica all'app all'avvio.
@@ -56,7 +56,7 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
 ## <a name="next-steps"></a>Passaggi successivi
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche manualmente. Come passaggio successivo, prendere in considerare questa opzione:
 
--   Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Capturing Graphics Information](capturing-graphics-information.md)

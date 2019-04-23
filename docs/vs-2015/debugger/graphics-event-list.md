@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59001128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105630"
 ---
 # <a name="graphics-event-list"></a>Elenco eventi grafici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Usare l'Elenco eventi di grafica in Analizzatore grafica di Visual Studio per es
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Per modificare la modalità di visualizzazione dell'elenco di eventi  
   
--   Nella finestra **Elenco eventi grafici** , sopra l'elenco degli eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **Cronologia** o la visualizzazione **Chiamate di disegno** .  
+- Nella finestra **Elenco eventi grafici** , sopra l'elenco degli eventi, individuare l'elenco a discesa **Visualizza** e scegliere la visualizzazione **Cronologia** o la visualizzazione **Chiamate di disegno** .  
   
 ### <a name="filtering-events"></a>Filtro degli eventi  
  La casella Cerca, situata nell'angolo superiore destro della finestra **Elenco eventi grafici** consente di filtrare l'elenco di eventi in modo da includere solo gli eventi i cui nomi contengono determinate parole chiave. È possibile specificare singole parole chiave, ad esempio `Vertex`, come mostrato nella figura precedente, oppure un elenco di parole chiave separate da punti e virgola, come `Draw;Primitive`, per visualizzare solo gli eventi il cui nome contiene `Draw` o `Primitive` . Le ricerche sono sensibili agli spazi. Ad esempio, `VSSet` e `VS Set` sono differenti. Fare quindi attenzione a formulare le ricerche nel modo corretto.  

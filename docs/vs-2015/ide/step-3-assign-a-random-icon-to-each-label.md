@@ -9,26 +9,26 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 993f6533a5d654ab183fdee587f4968d7bff8c4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3562b74939fe9207ddcf10e98bd0b4d0d7d1bead
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085987"
 ---
-# <a name="step-3-assign-a-random-icon-to-each-label"></a>Passaggio 3: assegnare un'icona casuale a ogni etichetta
+# <a name="step-3-assign-a-random-icon-to-each-label"></a>Passaggio 3: Assegnare un'icona casuale a ogni etichetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stesse celle a ogni gioco. Per evitare questa situazione, assegnare casualmente le icone a controlli etichetta nel form tramite un metodo `AssignIconsToSquares()`.  
   
 ### <a name="to-assign-a-random-icon-to-each-label"></a>Per assegnare un'icona casuale a ogni etichetta  
   
-1.  Prima di aggiungere il codice seguente, considerare come funziona il metodo. È presente una nuova parola chiave: `foreach` in Visual C# e `For Each` in Visual Basic. Una delle righe è appositamente impostata come commento; la spiegazione è riportata al fondo della procedura.  
+1. Prima di aggiungere il codice seguente, considerare come funziona il metodo. È presente una nuova parola chiave: `foreach` in Visual C# e `For Each` in Visual Basic. Una delle righe è appositamente impostata come commento; la spiegazione è riportata al fondo della procedura.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#2)]  
   
-2.  Aggiungere il metodo `AssignIconsToSquares()` come illustrato nel passaggio precedente. È possibile inserirlo immediatamente dopo il codice aggiunto durante il [Passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+2. Aggiungere il metodo `AssignIconsToSquares()` come illustrato nel passaggio precedente. È possibile inserirlo immediatamente dopo il codice aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
      Come enunciato in precedenza, nel metodo `AssignIconsToSquares()` è presente una novità: un ciclo `foreach` in Visual C# e `For Each` in Visual Basic. È possibile utilizzare un ciclo `For Each` ogni qualvolta si desidera eseguire la stessa azione ripetutamente. In questo caso, eseguire le stesse istruzioni per ogni etichetta in TableLayoutPanel, come spiegato tramite il codice seguente. Nella prima riga viene creata una variabile denominata `control` in cui viene archiviato ogni controllo, uno alla volta, mentre sul controllo vengono eseguite le istruzioni incluse nel ciclo.  
   
@@ -38,7 +38,7 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
     > [!NOTE]
     >  I nomi "iconLabel" e "control" vengono utilizzati in quanto nomi descrittivi. È possibile sostituirli con altri nomi senza che il codice ne risulti pregiudicato, a condizione che si modifichi il nome in ogni istruzione all'interno del ciclo.  
   
-     Il metodo `AssignIconsToSquares()` scorre ogni controllo etichetta in TableLayoutPanel ed esegue le stesse istruzioni per ognuno di essi. Tali istruzioni prendono un'icona casuale dall'elenco aggiunto durante il [Passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Nell'elenco sono state incluse coppie di icone, in modo tale da poter assegnare una coppia di icone ai controlli etichetta casuali.  
+     Il metodo `AssignIconsToSquares()` scorre ogni controllo etichetta in TableLayoutPanel ed esegue le stesse istruzioni per ognuno di essi. Tali istruzioni traggono un'icona casuale dall'elenco aggiunto in [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). Nell'elenco sono state incluse coppie di icone, in modo tale da poter assegnare una coppia di icone ai controlli etichetta casuali.  
   
      Analizzare attentamente il codice eseguito all'interno del ciclo `foreach` o `For Each`. Questo codice viene riprodotto di seguito.  
   
@@ -47,9 +47,9 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
   
      Nella prima riga viene convertita la variabile `control` in un'etichetta denominata `iconLabel`. La riga successiva è un'istruzione `if` che verifica se la conversione è stata eseguita correttamente. In caso affermativo, vengono eseguite le istruzioni contenute nell'istruzione `if`. Come già illustrato nelle esercitazioni precedenti, l'istruzione `if` consente di valutare qualsiasi condizione specificata. Nella prima riga nell'istruzione `if` viene creata una variabile denominata `randomNumber` contenente un numero casuale che corrisponde a uno degli elementi nell'elenco di icone. A questo scopo, viene utilizzato il metodo `Next` dell'oggetto `Random` creato precedentemente. Il metodo `Next` restituisce il numero casuale. In questa riga viene inoltre utilizzata la proprietà `Count` dell'elenco `icons` per determinare l'intervallo da cui scegliere il numero casuale. Nella riga successiva viene assegnato uno degli elementi dell'elenco di icone alla proprietà `Text` dell'etichetta. La riga impostata come commento viene descritta più avanti in questo argomento. Infine, nell'ultima riga dell'istruzione `if` l'icona aggiunta al form viene rimossa dall'elenco.  
   
-     Tenere presente che, in caso di dubbi sulle operazioni eseguite in alcune parti del codice, è possibile posizionare il puntatore del mouse su un elemento di codice ed esaminare la descrizione comando visualizzata. È inoltre possibile scorrere ogni riga di codice mentre il programma è in esecuzione utilizzando il debugger di Visual Studio. Per altre informazioni, vedere [How do I: Il passaggio con il Debugger di Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) oppure [spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md) per altre informazioni.  
+     Tenere presente che, in caso di dubbi sulle operazioni eseguite in alcune parti del codice, è possibile posizionare il puntatore del mouse su un elemento di codice ed esaminare la descrizione comando visualizzata. È inoltre possibile scorrere ogni riga di codice mentre il programma è in esecuzione utilizzando il debugger di Visual Studio. Vedere [ricerca per categorie Il passaggio con il Debugger di Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) oppure [spostarsi nel codice con il Debugger](../debugger/navigating-through-code-with-the-debugger.md) per altre informazioni.  
   
-3.  Per riempire la tavola da gioco con icone, è necessario chiamare il metodo di `AssignIconsToSquares()` non appena il programma viene avviato. Se si usa Visual C#, aggiungere un'istruzione immediatamente dopo la chiamata al metodo `InitializeComponent()` nel *costruttore*`Form1`, in modo che il form chiami il nuovo metodo e questo venga configurato prima di essere visualizzato. I costruttori vengono chiamati quando si crea un nuovo oggetto, ad esempio una classe o uno struct. Per altre informazioni, vedere [Costruttori (Guida per programmatori C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) o [Utilizzo di costruttori e distruttori](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) in Visual Basic.  
+3. Per riempire la tavola da gioco con icone, è necessario chiamare il metodo di `AssignIconsToSquares()` non appena il programma viene avviato. Se si usa Visual C#, aggiungere un'istruzione immediatamente dopo la chiamata al metodo `InitializeComponent()` nel *costruttore*`Form1`, in modo che il form chiami il nuovo metodo e questo venga configurato prima di essere visualizzato. I costruttori vengono chiamati quando si crea un nuovo oggetto, ad esempio una classe o uno struct. Per altre informazioni, vedere [Costruttori (Guida per programmatori C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) o [Utilizzo di costruttori e distruttori](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) in Visual Basic.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   
@@ -61,9 +61,9 @@ Non sarebbe particolarmente impegnativo visualizzare le icone sempre nelle stess
     End Sub  
     ```  
   
-4.  Salvare ed eseguire il programma. Dovrebbe visualizzare un form con icone casuali assegnate a ogni etichetta.  
+4. Salvare ed eseguire il programma. Dovrebbe visualizzare un form con icone casuali assegnate a ogni etichetta.  
   
-5.  Chiudere il programma, quindi eseguirlo nuovamente. Icone diverse sono ora assegnate a ogni etichetta, come mostrato nell'immagine seguente.  
+5. Chiudere il programma, quindi eseguirlo nuovamente. Icone diverse sono ora assegnate a ogni etichetta, come mostrato nell'immagine seguente.  
   
      ![Gioco di abbinamenti con icone casuali](../ide/media/express-tut4step3.png "Express_Tut4Step3")  
 Gioco di abbinamenti con icone casuali  
@@ -73,15 +73,15 @@ Gioco di abbinamenti con icone casuali
     > [!TIP]
     >  Un altro modo per nascondere controlli quali le etichette consiste nell'impostare la relativa proprietà **Visible** su `False`.  
   
-6.  Per nascondere le icone, arrestare il programma e rimuovere i contrassegni di commento per la riga di codice commentata nel ciclo `For Each`.  
+6. Per nascondere le icone, arrestare il programma e rimuovere i contrassegni di commento per la riga di codice commentata nel ciclo `For Each`.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#15](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#15)]
      [!code-vb[VbExpressTutorial4Step2_3_4#15](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#15)]  
   
-7.  Nella barra dei menu fare clic sul pulsante **Salva tutto** per salvare il programma, quindi eseguirlo. Le icone sembrano essere scomparse, è presente soltanto uno sfondo blu. Le icone tuttavia sono assegnate casualmente e sono ancora al loro posto. Essendo dello stesso colore dello sfondo, le icone non vengono visualizzate dal giocatore. Dopo tutto, non sarebbe un gioco particolarmente impegnativo se il giocatore potesse visualizzare subito tutte le icone!  
+7. Nella barra dei menu fare clic sul pulsante **Salva tutto** per salvare il programma, quindi eseguirlo. Le icone sembrano essere scomparse, è presente soltanto uno sfondo blu. Le icone tuttavia sono assegnate casualmente e sono ancora al loro posto. Essendo dello stesso colore dello sfondo, le icone non vengono visualizzate dal giocatore. Dopo tutto, non sarebbe un gioco particolarmente impegnativo se il giocatore potesse visualizzare subito tutte le icone!  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
--   Per andare al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Aggiungere un gestore degli eventi Click a ogni etichetta](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Aggiungere un gestore eventi Click a ogni etichetta](../ide/step-4-add-a-click-event-handler-to-each-label.md).  
   
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).

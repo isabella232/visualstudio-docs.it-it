@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105431"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -150,12 +150,13 @@ Se si usa Azure SDK 2.6 o versioni successive e si vuole specificare un'origine 
 
 Se si usa Azure SDK 2.5 e si vuole specificare un'origine dati personalizzata, è possibile aggiungerla alla sezione `WindowsEventLog` del file diagnostics.wadcfgx, come nell'esempio seguente:
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Contatori delle prestazioni
 Le informazioni sui contatori delle prestazioni possono semplificare l'individuazione dei colli di bottiglia e l'ottimizzazione delle prestazioni del sistema e delle applicazioni. Per altre informazioni, vedere [Creare e usare contatori di prestazioni in un'applicazione Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Per acquisire contatori delle prestazioni, selezionare la casella di controllo **Abilita il trasferimento di contatori delle prestazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei registri eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. Selezionare le caselle di controllo per i contatori delle prestazioni da tracciare.
 

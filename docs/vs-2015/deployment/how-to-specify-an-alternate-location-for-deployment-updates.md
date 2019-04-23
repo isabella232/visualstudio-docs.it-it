@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087939"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "58955544"
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Specifica un percorso alternativo per gli aggiornamenti con MageUI.exe (utilità basata su Windows Form)  
   
-1.  Aprire un prompt dei comandi di .NET Framework e digitare:  
+1. Aprire un prompt dei comandi di .NET Framework e digitare:  
   
      **mageui.exe**  
   
-2.  Nel **File** menu, scegliere **aprire** per aprire il manifesto di distribuzione dell'applicazione.  
+2. Nel **File** menu, scegliere **aprire** per aprire il manifesto di distribuzione dell'applicazione.  
   
-3.  Selezionare la scheda **Opzioni di distribuzione**.  
+3. Selezionare la scheda **Opzioni di distribuzione**.  
   
-4.  Nella casella di testo denominato **posizione avviare**, immettere l'URL della directory che conterrà il manifesto di distribuzione degli aggiornamenti dell'applicazione.  
+4. Nella casella di testo denominato **posizione avviare**, immettere l'URL della directory che conterrà il manifesto di distribuzione degli aggiornamenti dell'applicazione.  
   
-5.  Salvare il manifesto di distribuzione.  
+5. Salvare il manifesto di distribuzione.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Specifica un percorso alternativo per gli aggiornamenti con Mage.exe  
   
-1.  Aprire un prompt dei comandi di .NET Framework.  
+1. Aprire un prompt dei comandi di .NET Framework.  
   
-2.  Impostare il percorso di aggiornamento usando il comando seguente. In questo esempio **HelloWorld.exe.application** è il percorso per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione, che ha sempre l'estensione Application, e **http://adatum.com/Update/Path** è l'URL che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controllerà gli aggiornamenti dell'applicazione.  
+2. Impostare il percorso di aggiornamento usando il comando seguente. In questo esempio **HelloWorld.exe.application** è il percorso per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto dell'applicazione, che ha sempre l'estensione Application, e **http://adatum.com/Update/Path** è l'URL che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] controllerà gli aggiornamenti dell'applicazione.  
   
      **Mage-aggiornare HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Salvare il file.  
+3. Salvare il file.  
   
     > [!NOTE]
     >  È ora necessario firmarlo nuovamente con Mage.exe. Per altre informazioni, vedere [Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

@@ -1,5 +1,5 @@
 ---
-title: Rinominare il Refactoring (C#) | Microsoft Docs
+title: Rinominare il Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114731"
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58967353"
   
 #### <a name="to-rename-an-identifier"></a>Per rinominare un identificatore  
   
-1.  Creare un'applicazione console denominata `RenameIdentifier` quindi sostituire `Program` con il codice di esempio seguente.  
+1. Creare un'applicazione console denominata `RenameIdentifier` quindi sostituire `Program` con il codice di esempio seguente.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58967353"
     }  
     ```  
   
-2.  Posizionare il cursore sulla `MethodB`, nella dichiarazione del metodo o la chiamata al metodo.  
+2. Posizionare il cursore sulla `MethodB`, nella dichiarazione del metodo o la chiamata al metodo.  
   
-3.  Dal **refactoring** dal menu **rinominare**. Il **Rinomina** verrà visualizzata la finestra di dialogo.  
+3. Dal **refactoring** dal menu **rinominare**. Il **Rinomina** verrà visualizzata la finestra di dialogo.  
   
      È anche possibile fare doppio clic sul cursore, scegliere **refactoring** nel menu di scelta rapida, quindi **rinominare** per visualizzare il **rinominare** nella finestra di dialogo.  
   
-4.  Nel **nuovo nome** digitare `MethodC`.  
+4. Nel **nuovo nome** digitare `MethodC`.  
   
-5.  Selezionare il **ricerca nei commenti** casella di controllo.  
+5. Selezionare il **ricerca nei commenti** casella di controllo.  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
-7.  Nel **Anteprima modifiche** finestra di dialogo, fare clic su **applica**.  
+7. Nel **Anteprima modifiche** finestra di dialogo, fare clic su **applica**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Per rinominare un identificatore usando gli smart tag  
   
-1.  Creare un'applicazione console denominata `RenameIdentifier` quindi sostituire `Program` con il codice di esempio seguente.  
+1. Creare un'applicazione console denominata `RenameIdentifier` quindi sostituire `Program` con il codice di esempio seguente.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58967353"
     }  
     ```  
   
-2.  Nella dichiarazione per `MethodB`digitare o backspace l'identificatore del metodo. Verrà visualizzato un messaggio di smart tag di sotto di questo identificatore.  
+2. Nella dichiarazione per `MethodB`digitare o backspace l'identificatore del metodo. Verrà visualizzato un messaggio di smart tag di sotto di questo identificatore.  
   
     > [!NOTE]
     >  È possibile richiamare solo il refactoring di ridenominazione usando gli smart tag in una dichiarazione di un identificatore.  
   
-3.  Digitare il tasto di scelta rapida MAIUSC + ALT + F10 e quindi premere la freccia giù per visualizzare il menu smart tag.  
+3. Digitare il tasto di scelta rapida MAIUSC + ALT + F10 e quindi premere la freccia giù per visualizzare il menu smart tag.  
   
      -oppure-  
   
      Spostare il puntatore del mouse su prompt dei comandi di smart tag per visualizzare lo smart tag. Quindi spostare il puntatore del mouse sullo smart tag e fare clic sulla freccia verso il basso per visualizzare il menu smart tag.  
   
-4.  Selezionare il **rinominare '\<identifer1 >' a '\<identifier2 >'** voce di menu per richiamare il refactoring di ridenominazione senza un'anteprima delle modifiche al codice. Tutti i riferimenti a  **\<identifer1 >** verrà automaticamente aggiornato a  **\<identifier2 >**.  
+4. Selezionare il **rinominare '\<identifer1 >' a '\<identifier2 >'** voce di menu per richiamare il refactoring di ridenominazione senza un'anteprima delle modifiche al codice. Tutti i riferimenti a  **\<identifer1 >** verrà automaticamente aggiornato a  **\<identifier2 >**.  
   
      -oppure-  
   

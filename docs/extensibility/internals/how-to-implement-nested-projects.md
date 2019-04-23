@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104994"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: Implementare progetti annidati
 
@@ -24,18 +24,18 @@ Quando si crea un tipo di progetto annidato, esistono alcuni passaggi aggiuntivi
 
 ## <a name="create-nested-projects"></a>Creare i progetti annidati
 
-1.  L'ambiente di sviluppo integrato (IDE) carica le informazioni di avvio e file di progetto del progetto padre chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia. Il progetto principale viene creato e aggiunto alla soluzione.
+1. L'ambiente di sviluppo integrato (IDE) carica le informazioni di avvio e file di progetto del progetto padre chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia. Il progetto principale viene creato e aggiunto alla soluzione.
 
     > [!NOTE]
     > A questo punto, è abbastanza recente del processo per il progetto principale creare il progetto annidato perché è necessario creare il progetto principale prima di possono creare i progetti figlio. Dopo questa sequenza, il progetto principale può applicare le impostazioni per i progetti figlio e i progetti figlio possono acquisire le informazioni dai progetti padre se necessario. Questa sequenza è se è necessario nel client, ad esempio controllo del codice sorgente (SCC) e **Esplora soluzioni**.
 
      Il progetto padre deve attendere il <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metodo deve essere chiamato dall'IDE prima può creare annidato (figlio) o più progetti.
 
-2.  Le chiamate IDE `QueryInterface` del progetto padre per <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Se la chiamata ha esito positivo, le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metodo dell'elemento padre per aprire tutti i progetti annidati per il progetto padre.
+2. Le chiamate IDE `QueryInterface` del progetto padre per <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Se la chiamata ha esito positivo, le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metodo dell'elemento padre per aprire tutti i progetti annidati per il progetto padre.
 
-3.  Le chiamate di progetto padre il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metodo per notificare ai listener che i progetti annidati sta per essere creata. Controllo del codice sorgente, ad esempio, è in ascolto in modo da sapere se si verificano nell'ordine i passaggi nel processo di creazione del progetto e soluzione. Se si verificano i passaggi non in ordine, la soluzione potrebbe non essere registrata con controllo del codice sorgente in modo corretto.
+3. Le chiamate di progetto padre il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> metodo per notificare ai listener che i progetti annidati sta per essere creata. Controllo del codice sorgente, ad esempio, è in ascolto in modo da sapere se si verificano nell'ordine i passaggi nel processo di creazione del progetto e soluzione. Se si verificano i passaggi non in ordine, la soluzione potrebbe non essere registrata con controllo del codice sorgente in modo corretto.
 
-4.  Le chiamate di progetto padre <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metodo o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodo su ciascuno dei relativi progetti figlio.
+4. Le chiamate di progetto padre <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> metodo o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> metodo su ciascuno dei relativi progetti figlio.
 
      Si passa <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> per il `AddVirtualProject` metodo per indicare che il progetto virtuale (annidato) deve essere aggiunte alla finestra progetto, esclusa dalla compilazione, aggiunto al controllo del codice sorgente e così via. `VSADDVPFLAGS` Consente di controllare la visibilità del progetto annidata e indicare quali funzionalità è associato ad esso.
 
@@ -43,15 +43,15 @@ Quando si crea un tipo di progetto annidato, esistono alcuni passaggi aggiuntivi
 
      Se non è presente alcuna GUID disponibili, ad esempio quando si aggiunge un nuovo progetto annidato, la soluzione crea uno per il progetto al momento viene aggiunto all'elemento padre. È responsabilità del progetto padre per rendere persistente tale GUID nel file di progetto del progetto. Se si elimina un progetto annidato, anche il GUID per il progetto può essere eliminato.
 
-5.  Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodo su ogni progetto figlio del progetto padre.
+5. Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> metodo su ogni progetto figlio del progetto padre.
 
      Il progetto padre deve implementare `IVsParentProject` se si desidera nidificare i progetti. Ma l'elemento padre del progetto mai chiamate `QueryInterface` per `IVsParentProject` anche se sono progetti principali in esso contenuti. La soluzione gestisce la chiamata a `IVsParentProject` e, se è implementato, chiama il metodo `OpenChildren` per creare i progetti annidati. `AddVirtualProjectEX` viene sempre chiamato da `OpenChildren`. Non si dovrebbe mai essere chiamato dal progetto padre per mantenere la gerarchia di eventi di creazione nell'ordine.
 
-6.  Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodo sul progetto figlio.
+6. Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> metodo sul progetto figlio.
 
-7.  Le chiamate di progetto padre il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metodo per notificare ai listener che siano stati creati i progetti figlio per l'elemento padre.
+7. Le chiamate di progetto padre il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> metodo per notificare ai listener che siano stati creati i progetti figlio per l'elemento padre.
 
-8.  Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metodo sul progetto padre dopo l'apertura di tutti i progetti figlio.
+8. Le chiamate dell'IDE di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> metodo sul progetto padre dopo l'apertura di tutti i progetti figlio.
 
      Se non esiste già, il progetto principale viene creato un GUID per ogni progetto annidato chiamando `CoCreateGuid`.
 

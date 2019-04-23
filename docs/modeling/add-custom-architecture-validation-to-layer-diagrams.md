@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096907"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze
 
@@ -75,7 +75,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Per aggiungere la convalida dei livelli a un progetto VSIX separato
 
-1. Creare una nuova **libreria di classi** progetto. Questo progetto conterrà la classe di convalida dei livelli.
+1. Creare un nuovo progetto **Libreria di classi**. Questo progetto conterrà la classe di convalida dei livelli.
 
 2. Trovare o creare un **progetto VSIX** nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**.
 
@@ -83,9 +83,9 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 4. In **source.extension.vsixmanifest**aggiungere il progetto di convalida dei livelli come componente MEF in **Asset**.
 
-    1.  Scegliere **Nuovo**.
+    1. Scegliere **Nuovo**.
 
-    2.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
+    2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
 
          **Tipo** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 5. È anche necessario aggiungere il progetto come convalida dei livelli:
 
-    1.  Scegliere **Nuovo**.
+    1. Scegliere **Nuovo**.
 
-    2.  Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
+    2. Nella finestra di dialogo **Aggiungi nuovo asset** impostare:
 
          **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla usando la tastiera.
 
@@ -125,7 +125,7 @@ Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e 
 
 9. Per installare l'estensione VSIX nell'istanza principale di Visual Studio o in un altro computer, trovare il **VSIX** del file nei **bin** directory del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse
 
-##  <a name="programming"></a> Programmazione della convalida
+## <a name="programming"></a> Programmazione della convalida
 
 Per definire un'estensione di convalida dei livelli, è necessario definire una classe con le caratteristiche seguenti:
 
@@ -194,7 +194,7 @@ Ogni nodo e ogni collegamento hanno una o più categorie che specificano il tipo
 
 I collegamenti dai livelli agli elementi nel codice sono associati alla categoria "Rappresenta".
 
-##  <a name="debugging"></a> Debug della convalida
+## <a name="debugging"></a> Debug della convalida
 
 Per eseguire il debug dell'estensione di convalida dei livelli, premere CTRL+F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire o creare un modello di livello. Questo modello deve essere associato al codice e deve avere almeno una dipendenza.
 
@@ -226,7 +226,7 @@ Avviare sempre l'istanza sperimentale premendo CTRL+F5 (**Avvia senza eseguire d
 
 Per installare l'estensione di convalida in un computer in cui è installata una versione appropriata di Visual Studio, aprire il file VSIX nel computer di destinazione.
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

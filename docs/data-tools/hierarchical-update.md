@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089315"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 
@@ -87,9 +87,9 @@ Il codice di salvataggio generato contiene anche una riga di codice che chiama i
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Per aggiornare il codice in modo da eseguire il commit delle modifiche apportate alle tabelle correlate prima del salvataggio
 
-1.  Fare doppio clic sul pulsante **Salva** in <xref:System.Windows.Forms.BindingNavigator> per aprire **Form1** nell'editor del codice.
+1. Fare doppio clic sul pulsante **Salva** in <xref:System.Windows.Forms.BindingNavigator> per aprire **Form1** nell'editor del codice.
 
-2.  Aggiungere una riga di codice per chiamare il metodo `OrdersBindingSource.EndEdit` dopo la riga che chiama il metodo `CustomersBindingSource.EndEdit`. Il codice nell'evento Click del pulsante **Salva** deve essere simile al seguente:
+2. Aggiungere una riga di codice per chiamare il metodo `OrdersBindingSource.EndEdit` dopo la riga che chiama il metodo `CustomersBindingSource.EndEdit`. Il codice nell'evento Click del pulsante **Salva** deve essere simile al seguente:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -97,15 +97,15 @@ Il codice di salvataggio generato contiene anche una riga di codice che chiama i
 Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correlata prima di salvare i dati in un database, potrebbe anche essere necessario eseguire il commit dei record padre appena creati prima di aggiungere i nuovi record figlio in un set di dati. In altre parole, si potrebbe essere necessario aggiungere il nuovo record padre (`Customer`) al set di dati prima che i vincoli di chiave esterni abilitare nuovi record figlio (`Orders`) da aggiungere al set di dati. A tale scopo, è possibile usare l'evento figlio `BindingSource.AddingNew`.
 
 > [!NOTE]
-> Se è necessario eseguire il commit nuovi record padre dipende dal tipo di controllo che consente di eseguire l'associazione all'origine dati. In questa procedura dettagliata, singoli controlli consentono di eseguire l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre invece sono stati visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>, questo aggiuntivi <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per i record padre non sarebbe necessario chiamare. perché la funzionalità di data binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.
+> Se è necessario eseguire il commit nuovi record padre dipende dal tipo di controllo che consente di eseguire l'associazione all'origine dati. In questa procedura dettagliata, singoli controlli consentono di eseguire l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre invece sono stati visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>, questo aggiuntivi <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per i record padre non sarebbe necessario chiamare. perché la funzionalità di data-binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Per aggiungere il codice per eseguire il commit dei record padre nel set di dati prima dell'aggiunta dei nuovi record figlio
 
-1.  Creare un gestore eventi per l'evento `OrdersBindingSource.AddingNew`.
+1. Creare un gestore eventi per l'evento `OrdersBindingSource.AddingNew`.
 
-    -   Aprire **Form1** nella visualizzazione progettazione, selezionare **OrdersBindingSource** nella barra dei componenti, selezionare **eventi** nel **proprietà** finestra e quindi fare doppio clic il **AddingNew** evento.
+    - Aprire **Form1** nella visualizzazione progettazione, selezionare **OrdersBindingSource** nella barra dei componenti, selezionare **eventi** nel **proprietà** finestra e quindi fare doppio clic il **AddingNew** evento.
 
-2.  Aggiungere una riga di codice al gestore dell'evento che chiama il `CustomersBindingSource.EndEdit` (metodo). Il codice nel gestore eventi `OrdersBindingSource_AddingNew` deve essere simile al seguente:
+2. Aggiungere una riga di codice al gestore dell'evento che chiama il `CustomersBindingSource.EndEdit` (metodo). Il codice nel gestore eventi `OrdersBindingSource_AddingNew` deve essere simile al seguente:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
@@ -121,9 +121,9 @@ Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterMana
 |Member|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|
-|Proprietà`BackUpDataSetBeforeUpdate` |Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
+|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
 |*tableName* `TableAdapter` proprietà|Rappresenta un `TableAdapter`. Generato `TableAdapterManager` contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, viene generato un set di dati con una tabella Customers e Orders con un `TableAdapterManager` che contiene `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
-|Proprietà`UpdateOrder` |Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
+|Proprietà `UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
 
 ## <a name="see-also"></a>Vedere anche
 

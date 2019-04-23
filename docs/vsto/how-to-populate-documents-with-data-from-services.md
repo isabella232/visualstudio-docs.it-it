@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082789"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Procedura: Popolare documenti con dati provenienti da servizi
 
@@ -33,21 +33,21 @@ L'esempio seguente mostra come aggiungere controlli con associazione ai dati ai 
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Per popolare un progetto a livello di documento con i dati da un servizio web
 
-1.  Aprire la finestra **Origini dati** e creare un'origine dati del servizio per il progetto. Per altre informazioni, vedere [Add new data sources](../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
+1. Aprire la finestra **Origini dati** e creare un'origine dati del servizio per il progetto. Per altre informazioni, vedere [Add new data sources](../data-tools/add-new-data-sources.md) (Aggiungere nuove origini dati).
 
-2.  Trascinare la tabella o il campo desiderato dalla finestra **Origini dati** al documento.
+2. Trascinare la tabella o il campo desiderato dalla finestra **Origini dati** al documento.
 
      Viene creato un controllo nel documento, un oggetto <xref:System.Windows.Forms.BindingSource> associato alla classe di oggetti nel progetto e classi per il servizio.
 
-3.  Nel codice, creare un'istanza della classe del servizio web cui si è connessi nel passaggio 1.
+3. Nel codice, creare un'istanza della classe del servizio web cui si è connessi nel passaggio 1.
 
-4.  Se sono presenti proprietà necessarie per la comunicazione con il servizio web, creare istanze di queste proprietà.
+4. Se sono presenti proprietà necessarie per la comunicazione con il servizio web, creare istanze di queste proprietà.
 
-5.  Creare e inviare una richiesta di dati usando i metodi esposti dal servizio Web e le eventuali istanze delle proprietà create nel passaggio 4.
+5. Creare e inviare una richiesta di dati usando i metodi esposti dal servizio Web e le eventuali istanze delle proprietà create nel passaggio 4.
 
      I metodi utilizzabili variano a seconda del servizio web offre.
 
-6.  Assegnare la risposta di dati dal servizio web per il <xref:System.Windows.Forms.BindingSource.DataSource%2A> proprietà del <xref:System.Windows.Forms.BindingSource>.
+6. Assegnare la risposta di dati dal servizio web per il <xref:System.Windows.Forms.BindingSource.DataSource%2A> proprietà del <xref:System.Windows.Forms.BindingSource>.
 
 Quando si esegue il progetto, i controlli visualizzano il primo record nell'origine dati. È possibile abilitare lo scorrimento dei record gestendo gli eventi di valuta tramite gli oggetti in <xref:System.Windows.Forms.BindingSource>.
 

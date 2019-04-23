@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104923"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
   
  Per attivare un nodo, fare doppio clic oppure premere **invio** quando si seleziona il nodo.  
   
--   L'attivazione di un nodo consente di aprire il file in cui questo nodo è definito (se non è già aperto) e di selezionare il nodo nel file.  
+- L'attivazione di un nodo consente di aprire il file in cui questo nodo è definito (se non è già aperto) e di selezionare il nodo nel file.  
   
--   L'attivazione di un nodo di file consente di aprire il file selezionato (se non è già aperto) e di evidenziare il nodo `<schema>`.  
+- L'attivazione di un nodo di file consente di aprire il file selezionato (se non è già aperto) e di evidenziare il nodo `<schema>`.  
   
--   L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.  
+- L'attivazione di un nodo set di schemi o spazio dei nomi non esegue alcuna operazione.  
   
 ## <a name="draging-and-dropping-nodes"></a>Trascinamento e rilascio di nodi  
  È possibile trascinare nodi globali, nodi di file e nodi spazio dei nomi su una visualizzazione di Progettazione XSD. Se la visualizzazione corrente è il [visualizzazione iniziale](../xml-tools/start-view.md), trascinare un nodo sulla visualizzazione verrà aperto il [visualizzazione grafico](../xml-tools/graph-view.md). Se la visualizzazione corrente è il [visualizzazione modello di contenuto](../xml-tools/content-model-view.md) o visualizzazione grafico, la visualizzazione non cambierà quando si elimina un nodo su di esso.  
@@ -82,13 +82,13 @@ XML Schema Explorer è integrato con Microsoft Visual Studio e con l'editor XML 
   
 ## <a name="in-this-section"></a>In questa sezione  
   
--   [Ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md)  
+- [Ricerche nel set di schemi](../xml-tools/searching-the-schema-set.md)  
   
--   [Ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Ordinamento, filtro e raggruppamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Menu di scelta rapida](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Integrazione di valori letterali XML con XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Aggiungere nodi all'area di lavoro da XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086429"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che gli elementi dell'interfaccia siano coerenti con funzionalità simili, usare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
 
- Questo articolo descrive gli elementi dell'interfaccia utente comuni e i nomi di token usati da questi elementi, a cui è possibile fare riferimento durante la compilazione di un'interfaccia utente simile. Per informazioni specifiche su come accedere a questi token di colore, vedere [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+Questo articolo descrive gli elementi dell'interfaccia utente comuni e i nomi di token usati da questi elementi, a cui è possibile fare riferimento durante la compilazione di un'interfaccia utente simile. Per informazioni specifiche su come accedere a questi token di colore, vedere [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Assicurarsi di usare correttamente i nomi di token:
+Assicurarsi di usare correttamente i nomi di token:
 
--   **Usare i nomi di token basati su funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse e se il colore associato alla casella combinata cambia, potrebbe non essere più appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
+- **Usare i nomi di token basati su funzione e non al colore stesso.** I colori condivisi comuni sono associati a elementi dell'interfaccia specifici e destinati solo a essere usati per le stesse funzionalità o altre simili. Ad esempio, evitare di riutilizzare il colore di una casella combinata premuta per un'animazione di stato rotante solo perché si ha una preferenza per questo colore. Le funzioni della casella combinata e dell'animazione sono diverse e se il colore associato alla casella combinata cambia, potrebbe non essere più appropriato per l'elemento animazione. Un uso coerente del colore aiuta a orientare correttamente gli utenti e a impedire confusione.
 
--   **Usare colori di sfondo e del testo nella combinazione corretta.** I colori di sfondo destinati a essere usati con il testo implicano un colore del testo associato. Non usare colori del testo diversi da quelli specificati per un determinato sfondo. Se non esiste un colore del testo associato, non usare il colore di sfondo per alcuna superficie in cui si prevede di visualizzare testo. Combinazioni di colori di sfondo e del testo diverse potrebbero produrre un'interfaccia illeggibile.
+- **Usare colori di sfondo e del testo nella combinazione corretta.** I colori di sfondo destinati a essere usati con il testo implicano un colore del testo associato. Non usare colori del testo diversi da quelli specificati per un determinato sfondo. Se non esiste un colore del testo associato, non usare il colore di sfondo per alcuna superficie in cui si prevede di visualizzare testo. Combinazioni di colori di sfondo e del testo diverse potrebbero produrre un'interfaccia illeggibile.
 
--   **Usare colori dei controlli appropriati per la rispettiva posizione.** In determinati stati alcuni controlli di Visual Studio non hanno colori di sfondo e dei bordi separati. Al contrario, selezionano questi colori dalle superfici sottostanti. Assicurarsi di usare sempre i nomi di token appropriati per la posizione in cui si posiziona il controllo.
+- **Usare colori dei controlli appropriati per la rispettiva posizione.** In determinati stati alcuni controlli di Visual Studio non hanno colori di sfondo e dei bordi separati. Al contrario, selezionano questi colori dalle superfici sottostanti. Assicurarsi di usare sempre i nomi di token appropriati per la posizione in cui si posiziona il controllo.
 
 > [!IMPORTANT]
->  Non usare i token trovati nelle categorie "Pagina iniziale" o "Cider".
+> Non usare i token trovati nelle categorie "Pagina iniziale" o "Cider".
 
 ## <a name="command-structures"></a>Strutture dei comandi
 
-###  <a name="BKMK_CommandMenus"></a> Menus
- I menu possono trovarsi in diverse posizioni all'interno di Visual Studio: barra dei menu principale, incorporata in finestre di documento o lo strumento, o sul pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.
+### <a name="BKMK_CommandMenus"></a> Menus
 
- ![Menu con linea rossa](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+I menu possono trovarsi in diverse posizioni all'interno di Visual Studio: barra dei menu principale, incorporata in finestre di documento o lo strumento, o sul pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.
 
- Usare…
- -   Ogni volta che è necessario creare un menu personalizzato.
+![Menu con linea rossa](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303 000_MenuRedline")
+
+Usare…
+- Ogni volta che è necessario creare un menu personalizzato.
 
 - Quando un nuovo componente dell'interfaccia utente deve corrispondere ai menu di Visual Studio.
 
-  Non usare...
-  Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.
+Non usare...
+Il colore di sfondo da solo. Usare sempre la combinazione sfondo/primo piano specificata.
 
 #### <a name="menu-title"></a>Titolo del menu
- I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo, nonché da un glifo facoltativo, in genere quando il menu si trova in una barra dei comandi.
 
- ![Titolo menu con linea rossa](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+I titoli dei menu sono costituiti da uno sfondo, un bordo e il testo del titolo, nonché da un glifo facoltativo, in genere quando il menu si trova in una barra dei comandi.
 
- Usare...
+![Titolo menu con linea rossa](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303 001_MenuTitleRedline")
+
+Usare...
 Ogni volta che si crea un titolo di menu personalizzato.
 
- Non usare...
- -   Per qualsiasi elemento che non deve corrispondere sempre al titolo del menu.
+Non usare...
+- Per qualsiasi elemento che non deve corrispondere sempre al titolo del menu.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -192,15 +195,16 @@ Ogni volta che si crea un titolo di menu personalizzato.
   nessuno
 
 #### <a name="menu"></a>Menu
- Una singola voce di menu è costituita dal testo del menu e da un'icona facoltativa, una casella di controllo o un glifo del sottomenu. Il colore di sfondo e del testo cambiano al passaggio del mouse. Questo token di colore è una coppia sfondo/primo piano.
 
- ![Voci di menu con linea rossa](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+Una singola voce di menu è costituita dal testo del menu e da un'icona facoltativa, una casella di controllo o un glifo del sottomenu. Il colore di sfondo e del testo cambiano al passaggio del mouse. Questo token di colore è una coppia sfondo/primo piano.
 
- Usare...
+![Voci di menu con linea rossa](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303 009_MenuItemRedline")
+
+Usare...
 Per qualsiasi elenco a discesa avviato da una barra dei menu o una barra dei comandi.
 
- Non usare...
- -   Per qualsiasi elenco a discesa presente in un altro contesto.
+Non usare...
+- Per qualsiasi elenco a discesa presente in un altro contesto.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -351,32 +355,34 @@ Per qualsiasi elenco a discesa avviato da una barra dei menu o una barra dei com
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Barra dei comandi
- La barra dei comandi può essere visualizzata in più posizioni all'interno dell'IDE di Visual Studio, in particolare nello scaffale dei comandi e come incorporata nelle finestre degli strumenti e dei documenti.
 
- In generale, usare sempre l'implementazione della barra dei menu standard fornita dall'ambiente di Visual Studio. L'uso del meccanismo standard garantisce che tutti i dettagli visivi vengano visualizzati correttamente e che gli elementi interattivi abbiano un comportamento coerente con gli altri controlli della barra dei comandi di Visual Studio. Tuttavia, se è necessario compilare una barra dei comandi personalizzata, assicurarsi di applicare lo stile corretto usando i nomi di token seguenti.
+La barra dei comandi può essere visualizzata in più posizioni all'interno dell'IDE di Visual Studio, in particolare nello scaffale dei comandi e come incorporata nelle finestre degli strumenti e dei documenti.
 
- ![Sulla barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
+In generale, usare sempre l'implementazione della barra dei menu standard fornita dall'ambiente di Visual Studio. L'uso del meccanismo standard garantisce che tutti i dettagli visivi vengano visualizzati correttamente e che gli elementi interattivi abbiano un comportamento coerente con gli altri controlli della barra dei comandi di Visual Studio. Tuttavia, se è necessario compilare una barra dei comandi personalizzata, assicurarsi di applicare lo stile corretto usando i nomi di token seguenti.
 
- ![Overflow button redline](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+![Sulla barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
- Usare...
+![Overflow button redline](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+
+Usare...
 Nelle posizioni in cui è necessaria una barra dei comandi incorporata, ma non è possibile usare l'implementazione della barra dei comandi standard di Visual Studio.
 
- Non usare...
- -   Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.
+Non usare...
+- Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.
 
--   Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.
+- Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.
 
 #### <a name="command-bar-group"></a>Gruppo della barra dei comandi
- Un gruppo della barra dei comandi è costituito da un set correlato di controlli della barra dei comandi e può contenere un numero qualsiasi di pulsanti, pulsanti di menu combinato, menu a discesa, caselle combinate o menu. I colori per questi controlli sono determinati da nomi di token separati e vengono descritti singolarmente in altre sezioni di questa guida. Viene usata una linea di separazione per dividere un gruppo della barra dei comandi in sottogruppi correlati.
 
- ![Gruppo della barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+Un gruppo della barra dei comandi è costituito da un set correlato di controlli della barra dei comandi e può contenere un numero qualsiasi di pulsanti, pulsanti di menu combinato, menu a discesa, caselle combinate o menu. I colori per questi controlli sono determinati da nomi di token separati e vengono descritti singolarmente in altre sezioni di questa guida. Viene usata una linea di separazione per dividere un gruppo della barra dei comandi in sottogruppi correlati.
 
- Usare...
+![Gruppo della barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303 020_CommandBarGroupRedline")
+
+Usare...
 Nelle posizioni in cui è necessaria una barra dei comandi incorporata, ma non è possibile usare l'implementazione della barra dei comandi standard di Visual Studio.
 
- Non usare...
- -   Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.
+Non usare...
+- Per gli elementi dell'interfaccia utente che non sono simili a una barra dei comandi.
 
 - Per i componenti della barra dei comandi diversi da quelli per cui sono specificati i nomi di token.
 
@@ -407,15 +413,16 @@ Nelle posizioni in cui è necessaria una barra dei comandi incorporata, ma non �
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Icone dei comandi
- ![Icona del comando con linea rossa](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- ![Icona del comando con linea rossa](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+![Icona del comando con linea rossa](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303 021_CommandIconRedline1")
 
- Usare...
+![Icona del comando con linea rossa](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303 022_CommandIconRedline2")
+
+Usare...
 Per qualsiasi pulsante che verrà posizionato su una barra dei comandi.
 
- Non usare...
- -   Per i controlli che hanno nomi di token propri.
+Non usare...
+- Per i controlli che hanno nomi di token propri.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -551,20 +558,20 @@ Per qualsiasi pulsante che verrà posizionato su una barra dei comandi.
 
   N/D
 
-####  <a name="BKMK_CommandComboBox"></a> Casella combinata
+#### <a name="BKMK_CommandComboBox"></a> Casella combinata
 
 > [!IMPORTANT]
->  Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
- Usare…
- -   Quando si compilano caselle combinate personalizzate.
+Usare…
+- Quando si compilano caselle combinate personalizzate.
 
 - Quando si crea un controllo della barra dei comandi simile a una casella combinata.
 
   Non usare...
-  -   Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.
+  - Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della barra dei comandi.
 
 - Quando si ha accesso a una casella combinata con stile.
 
@@ -798,18 +805,18 @@ Per qualsiasi pulsante che verrà posizionato su una barra dei comandi.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Elenco a discesa
+#### <a name="BKMK_CommandDropDown"></a> Elenco a discesa
 
 > [!IMPORTANT]
->  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![Drop&#45;down redline](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
+![Drop&#45;down redline](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
 
- Usare…
+Usare…
 Quando si creano controlli elenco a discesa personalizzati.
 
- Non usare...
- -   Per qualsiasi elemento che non è simile a un elenco a discesa.
+Non usare...
+- Per qualsiasi elemento che non è simile a un elenco a discesa.
 
 - Per caselle combinate o pulsanti di menu combinato.
 
@@ -1010,15 +1017,16 @@ Quando si creano controlli elenco a discesa personalizzati.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Pulsante di menu combinato
- I pulsanti di menu combinato condividono molti nomi di token con altri controlli della barra dei comandi, come pulsanti, menu e testo della barra dei comandi. Tutti i nomi di token dei pulsanti a discesa e di azione necessari vengono ripetuti qui per praticità. Gli elenchi a discesa dei pulsanti di menu combinato sono implementazioni dei [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)della barra dei comandi.
 
- ![Pulsante di menu combinato con linea rossa](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+I pulsanti di menu combinato condividono molti nomi di token con altri controlli della barra dei comandi, come pulsanti, menu e testo della barra dei comandi. Tutti i nomi di token dei pulsanti a discesa e di azione necessari vengono ripetuti qui per praticità. Gli elenchi a discesa dei pulsanti di menu combinato sono implementazioni dei [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)della barra dei comandi.
 
- Usare…
+![Pulsante di menu combinato con linea rossa](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303 053_SplitButtonRedline")
+
+Usare…
 Quando si compila un pulsante di menu combinato personalizzato.
 
- Non usare...
- -   Per altri tipi di pulsanti.
+Non usare...
+- Per altri tipi di pulsanti.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -1425,7 +1433,7 @@ Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la she
   Quando si creano schede dei documenti personalizzate.
 
   Non usare...
-  -   Per schede provvisorie (anteprima).
+  - Per schede provvisorie (anteprima).
 
 - Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.
 
@@ -1538,15 +1546,16 @@ Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la she
  Impostato sullo stesso colore dello sfondo.
 
 #### <a name="preview-tab"></a>Scheda anteprima
- La scheda anteprima è visualizzata sul lato destro del canale delle schede dei documenti quando l'utente fa clic su un elemento nella finestra degli strumenti Esplora soluzione. Questa scheda funge da anteprima del documento e offre all'utente anche l'opzione di mantenere il documento aperto sul lato sinistro del canale delle schede dei documenti. Può essere aperta una sola scheda anteprima per volta. Le schede anteprima hanno sia uno sfondo sia stati selezionati, come le schede aperte, e possono avere stato attivo o non attivo quando sono attive.
 
- ![Scheda Anteprima con linea rossa](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+La scheda anteprima è visualizzata sul lato destro del canale delle schede dei documenti quando l'utente fa clic su un elemento nella finestra degli strumenti Esplora soluzione. Questa scheda funge da anteprima del documento e offre all'utente anche l'opzione di mantenere il documento aperto sul lato sinistro del canale delle schede dei documenti. Può essere aperta una sola scheda anteprima per volta. Le schede anteprima hanno sia uno sfondo sia stati selezionati, come le schede aperte, e possono avere stato attivo o non attivo quando sono attive.
 
- Usare…
+![Scheda Anteprima con linea rossa](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303 078_PreviewTabRedline")
+
+Usare…
 In qualsiasi punto in cui si crea un'anteprima provvisoria e alcuni elementi devono corrispondere al colore della scheda anteprima.
 
- Non usare...
- -   Per qualsiasi tipo di documento o scheda non provvisorio (anteprima).
+Non usare...
+- Per qualsiasi tipo di documento o scheda non provvisorio (anteprima).
 
 - Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.
 
@@ -1661,15 +1670,16 @@ In qualsiasi punto in cui si crea un'anteprima provvisoria e alcuni elementi dev
   Impostato sullo stesso colore dello sfondo.
 
 #### <a name="document-overflow-button"></a>Pulsante di overflow dei documenti
- Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.
 
- ![Overflow redline](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.
 
- Usare…
+![Overflow redline](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+
+Usare…
 Quando si crea un pulsante di overflow dei documenti personalizzato.
 
- Non usare...
- -   Per un'interfaccia utente che non è simile a un pulsante di overflow.
+Non usare...
+- Per un'interfaccia utente che non è simile a un pulsante di overflow.
 
 - Per i pulsanti di overflow della barra dei comandi.
 
@@ -1895,13 +1905,14 @@ Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la she
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Pulsanti della barra del titolo
- ![Pulsante della barra del titolo con linea rossa](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
 
- Usare…
+![Pulsante della barra del titolo con linea rossa](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303 095_TitleBarButtonRedline")
+
+Usare…
 Per i pulsanti visualizzati nell'interfaccia utente che usa token di colore della barra del titolo delle finestre degli strumenti.
 
- Non usare...
- -   Per i pulsanti visualizzati in altre posizioni.
+Non usare...
+- Per i pulsanti visualizzati in altre posizioni.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -2227,7 +2238,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
   Quando si progetta una casella di ricerca personalizzata.
 
   Non usare...
-  -   Per qualsiasi elemento diverso da una casella di ricerca.
+  - Per qualsiasi elemento diverso da una casella di ricerca.
 
 - Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.
 
@@ -2516,17 +2527,18 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
   nessuno
 
 #### <a name="search-drop-down-lists"></a>Elenchi a discesa di ricerca
- Il menu a discesa della casella di ricerca può essere leggermente più complesso rispetto ad altri menu a discesa in Visual Studio. Le sezioni "ricerche suggerite" e "opzioni di ricerca" possono essere visualizzate singolarmente o insieme nel menu e ognuna ha un colore diverso. Una linea separa le due sezioni quando sono visualizzate insieme e un bordo circonda l'intero menu a discesa.
 
- ![Elenco di ricerca&#45;verso il basso con linea rossa](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+Il menu a discesa della casella di ricerca può essere leggermente più complesso rispetto ad altri menu a discesa in Visual Studio. Le sezioni "ricerche suggerite" e "opzioni di ricerca" possono essere visualizzate singolarmente o insieme nel menu e ognuna ha un colore diverso. Una linea separa le due sezioni quando sono visualizzate insieme e un bordo circonda l'intero menu a discesa.
 
- Usare…
- -   Quando si crea un elenco a discesa di ricerca personalizzato.
+![Elenco di ricerca&#45;verso il basso con linea rossa](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303 124_SearchDropdownRedline")
+
+Usare…
+- Quando si crea un elenco a discesa di ricerca personalizzato.
 
 - I nomi di token appropriati per i componenti dell'elenco corretti.
 
   Non usare...
-  -   Per elenchi a discesa visualizzati in altri contesti.
+  - Per elenchi a discesa visualizzati in altri contesti.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -2906,16 +2918,17 @@ Quando si crea un'interfaccia utente che deve corrispondere alle barre di scorri
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Visualizzazione struttura ad albero
- Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Visualizzazione classi, implementano uno schema organizzativo gerarchico i cui colori sono controllati dai nomi di colore nella categoria TreeView. Tutti gli elementi in una visualizzazione albero hanno colori di sfondo e del testo. Gli elementi che hanno elementi figlio annidati hanno anche glifi che indicano se ogni elemento è espanso o compresso.
+### <a name="BKMK_TreeView"></a> Visualizzazione struttura ad albero
 
- ![Visualizzazione albero con linea rossa](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+Diverse finestre degli strumenti, tra cui Esplora soluzioni, Esplora server e Visualizzazione classi, implementano uno schema organizzativo gerarchico i cui colori sono controllati dai nomi di colore nella categoria TreeView. Tutti gli elementi in una visualizzazione albero hanno colori di sfondo e del testo. Gli elementi che hanno elementi figlio annidati hanno anche glifi che indicano se ogni elemento è espanso o compresso.
 
- Usare…
+![Visualizzazione albero con linea rossa](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303 147_TreeViewRedline")
+
+Usare…
 In qualsiasi punto in cui è necessario implementare una visualizzazione organizzativa gerarchica.
 
- Non usare...
- -   Per qualsiasi elemento che non è simile a una visualizzazione albero.
+Non usare...
+- Per qualsiasi elemento che non è simile a una visualizzazione albero.
 
 - In qualsiasi combinazione sfondo/primo piano diversa da quella specificata.
 
@@ -3332,13 +3345,14 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Controlli casella combinata/casella di riepilogo a discesa
- ![Drop&#45;down&#47;combo box redline](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
- Usare…
+![Drop&#45;down&#47;combo box redline](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
+
+Usare…
 Per elenchi a discesa e caselle combinate che fanno parte dell'area dei documenti.
 
- Non usare...
- -   Per qualsiasi interfaccia utente diversa da un elenco a discesa o una casella combinata.
+Non usare...
+- Per qualsiasi interfaccia utente diversa da un elenco a discesa o una casella combinata.
 
 - Per un controllo [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) o [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) nella barra dei comandi.
 
@@ -3690,17 +3704,18 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
  nessuno
 
 ## <a name="manifest-designer"></a>Finestra Progettazione manifesto
- La finestra Progettazione manifesto è stata progettata come strumento per semplificare la modifica del file manifesto in progetti Windows 8 e Windows Phone 8. Benché non sia disponibile per l'utilizzo alcun framework condiviso, potrebbe essere appropriato fare in modo che il layout di progettazione e i colori delle schede di orientamento/spostamento corrispondano alla struttura complessiva. Per altre informazioni sui dettagli del layout, vedere [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Finestra di progettazione manifesto con linea rossa](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+La finestra Progettazione manifesto è stata progettata come strumento per semplificare la modifica del file manifesto in progetti Windows 8 e Windows Phone 8. Benché non sia disponibile per l'utilizzo alcun framework condiviso, potrebbe essere appropriato fare in modo che il layout di progettazione e i colori delle schede di orientamento/spostamento corrispondano alla struttura complessiva. Per altre informazioni sui dettagli del layout, vedere [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Usare…
- -   Per le finestre di progettazione simili alla finestra Progettazione manifesto.
+![Finestra di progettazione manifesto con linea rossa](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303 175_ManifestDesignerRedline")
+
+Usare…
+- Per le finestre di progettazione simili alla finestra Progettazione manifesto.
 
 - Invece di usare controlli scheda comuni nella parte superiore di un editor all'interno dell'area dei documenti.
 
-  Non usare...
-  -   Se sono presenti più di sei schede.
+Non usare...
+- Se sono presenti più di sei schede.
 
 - Per qualsiasi interfaccia utente non strutturata come la finestra Progettazione manifesto.
 
@@ -3964,15 +3979,16 @@ Per qualsiasi altro tipo di interfaccia utente.
 ## <a name="shell"></a>Shell
 
 ### <a name="background"></a>Sfondo
- Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un colore a tinta unita che ricopre l'intero IDE. Il livello superiore si trova sotto lo scaffale dei comandi tra i canali Nascondi automaticamente della finestra degli strumenti, nei bordi destro e sinistro dell'IDE. A partire da Visual Studio 2013, i livelli superiore e inferiore dello sfondo sono impostati sullo stesso colore dei temi Chiaro e Scuro.
 
- ![Sfondo della shell con linea rossa](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+Lo sfondo dell'ambiente è costituito da due livelli. Il livello inferiore è un colore a tinta unita che ricopre l'intero IDE. Il livello superiore si trova sotto lo scaffale dei comandi tra i canali Nascondi automaticamente della finestra degli strumenti, nei bordi destro e sinistro dell'IDE. A partire da Visual Studio 2013, i livelli superiore e inferiore dello sfondo sono impostati sullo stesso colore dei temi Chiaro e Scuro.
 
- Usare…
+![Sfondo della shell con linea rossa](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303 187_ShellBackgroundRedline")
+
+Usare…
 Per i punti che devono corrispondere allo sfondo dell'ambiente di Visual Studio.
 
- Non usare...
- -   Come riempimento per i punti che non sono superfici di sfondo.
+Non usare...
+- Come riempimento per i punti che non sono superfici di sfondo.
 
 - Come sfondo su cui si vuole posizionare elementi in primo piano.
 
@@ -4009,17 +4025,18 @@ Per i punti che devono corrispondere allo sfondo dell'ambiente di Visual Studio.
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Scaffale dei comandi
- Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi, uno per il punto in cui si trova la barra dei menu e l'altro per il punto in cui si trova la barra dei comandi. Un singolo gruppo della barra dei comandi ha valori di colore di sfondo propri, che vengono descritti in modo più dettagliato nella sezione "Barra dei comandi". Il testo della barra dei menu e della barra dei comandi viene descritto nelle rispettive sezioni.
 
- ![Scaffale dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+Due set di nomi di token vengono usati per gli sfondi dello scaffale dei comandi, uno per il punto in cui si trova la barra dei menu e l'altro per il punto in cui si trova la barra dei comandi. Un singolo gruppo della barra dei comandi ha valori di colore di sfondo propri, che vengono descritti in modo più dettagliato nella sezione "Barra dei comandi". Il testo della barra dei menu e della barra dei comandi viene descritto nelle rispettive sezioni.
 
- Usare…
- -   Per le aree in cui si posizionano menu o barre degli strumenti.
+![Scaffale dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303 188_CommandShelfRedline")
+
+Usare…
+- Per le aree in cui si posizionano menu o barre degli strumenti.
 
 - con lo sfondo corretto /? corretta in primo piano.
 
-  Non usare...
-  Per aree che non sono simili a uno scaffale dei comandi.
+Non usare...
+Per aree che non sono simili a uno scaffale dei comandi.
 
   Componente
 

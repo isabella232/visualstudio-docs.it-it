@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663362"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082945"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserire i controlli e modificarne il comportamento in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
   
  **Contenuto dell'argomento:**  
   
--   [Aggiungere controlli alla tavola da disegno](#Insert)  
+- [Aggiungere controlli alla tavola da disegno](#Insert)  
   
--   [Impostare i controlli per l'esecuzione di operazioni](#Modify)  
+- [Impostare i controlli per l'esecuzione di operazioni](#Modify)  
   
-##  <a name="Insert"></a> Aggiungere controlli alla tavola da disegno  
+## <a name="Insert"></a> Aggiungere controlli alla tavola da disegno  
  È possibile trascinare controlli dal pannello **Asset** nella **tavola da disegno**e quindi modificarli nella finestra **Proprietà** .  
   
  ![Blend &#45; Assets &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ I controlli consentono agli utenti di interagire con l'app. È possibile usarli 
   
  Per creare un controllo, selezionare un oggetto. Scegliere quindi **Crea controllo** dal menu **Strumenti**.  
   
-##  <a name="Modify"></a> Impostare i controlli per l'esecuzione di operazioni  
+## <a name="Modify"></a> Impostare i controlli per l'esecuzione di operazioni  
  I controlli possono eseguire azioni durante le interazioni degli utenti, ad esempio possono avviare un'animazione, aggiornare un'origine dati o riprodurre un video.  
   
  Per impostare i controlli per l'esecuzione di operazioni, usare *trigger*, *comportamenti*ed *eventi* .  

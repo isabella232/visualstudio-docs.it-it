@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969401"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113989"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o C# oppure è possibile generare un report HTML.  
+Il processo di trasformazione del modello testo accetta un file di modello di testo come input e genera un nuovo file di testo come output. Ad esempio, è possibile usare i modelli di testo per generare codice Visual Basic o c# oppure è possibile generare un report HTML.  
   
  Tre componenti di partecipano a questo processo: il motore, l'host e i processori di direttiva. Il motore controlla il processo. interagisce con l'host e il processore di direttiva per generare il file di output. L'host fornisce qualsiasi interazione con l'ambiente, ad esempio l'individuazione di assembly e file. Il processore di direttiva aggiunge funzionalità, ad esempio la lettura dei dati da un file XML o un database.  
   
@@ -41,19 +41,19 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
 ## <a name="the-host"></a>L'host  
  L'host è responsabile per qualsiasi elemento che si riferisce all'ambiente all'esterno del processo di trasformazione, incluse le seguenti:  
   
--   Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.  
+- Individuazione file di testo e binari richiesti dal motore o un processore di direttiva. L'host può cercare le directory e global assembly cache per individuare gli assembly. L'host può individuare il codice di processore di direttiva personalizzato per il motore. L'host può anche individuare e leggere i file di testo e restituire il rispettivo contenuto sotto forma di stringhe.  
   
--   Fornendo elenchi di assembly standard e gli spazi dei nomi che vengono utilizzati dal motore per creare la classe transformation generata.  
+- Fornendo elenchi di assembly standard e gli spazi dei nomi che vengono utilizzati dal motore per creare la classe transformation generata.  
   
--   Fornire il dominio dell'applicazione che viene usato quando il motore compila ed esegue la classe transformation generata. Un dominio di applicazione separata viene utilizzato per proteggere l'applicazione host dagli errori nel codice del modello.  
+- Fornire il dominio dell'applicazione che viene usato quando il motore compila ed esegue la classe transformation generata. Un dominio di applicazione separata viene utilizzato per proteggere l'applicazione host dagli errori nel codice del modello.  
   
--   La scrittura del file di output generato.  
+- La scrittura del file di output generato.  
   
--   Impostazione dell'estensione predefinita per il file di output generato.  
+- Impostazione dell'estensione predefinita per il file di output generato.  
   
--   La gestione degli errori di trasformazione del modello testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gli errori vengono visualizzati nella finestra di messaggio di errore.)  
+- La gestione degli errori di trasformazione del modello testo. Ad esempio, l'host può visualizzare gli errori nell'interfaccia utente o scriverli in un file. (In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gli errori vengono visualizzati nella finestra di messaggio di errore.)  
   
--   Se un utente ha definito una direttiva senza fornire un valore, che fornisce un valore di parametro obbligatorio. Il processore di direttiva è possibile specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se presente.  
+- Se un utente ha definito una direttiva senza fornire un valore, che fornisce un valore di parametro obbligatorio. Il processore di direttiva è possibile specificare il nome della direttiva e il parametro e chiedere all'host di fornire un valore predefinito se presente.  
   
 ## <a name="directives-and-directive-processors"></a>Direttive e i processori di direttiva  
  Una direttiva è un comando nel modello di testo. Fornisce i parametri per il processo di generazione. In genere, le direttive definiscono l'origine e il tipo di modello o altri tipi di input e l'estensione del file di output.  

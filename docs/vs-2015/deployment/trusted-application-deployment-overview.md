@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105838"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
   Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione di applicazioni attendibili:  
   
-1.  Ottenere un certificato per l'editore.  
+1. Ottenere un certificato per l'editore.  
   
-2.  Aggiungere l'editore all'archivio Editori attendibili in tutti i client.  
+2. Aggiungere l'editore all'archivio Editori attendibili in tutti i client.  
   
-3.  Creare l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
+3. Creare l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
-4.  Firmare il manifesto della distribuzione con il certificato dell'editore.  
+4. Firmare il manifesto della distribuzione con il certificato dell'editore.  
   
-5.  Pubblicare la distribuzione dell'applicazione nei computer client.  
+5. Pubblicare la distribuzione dell'applicazione nei computer client.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Ottenere un certificato per l'editore  
  I certificati digitali sono un componente principale del sistema di sicurezza e autenticazione Microsoft Authenticode. Authenticode è una parte standard del sistema operativo Windows. Tutte le applicazioni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] devono essere firmate con un certificato digitale, a prescindere se partecipano alla distribuzione di applicazioni attendibili. Per una spiegazione completa di come funziona Authenticode con [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vedere [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
   
  Se non si distribuisce l'applicazione in un ambiente desktop gestito, sono disponibili le seguenti opzioni per aggiungere un certificato all'archivio Editori attendibili:  
   
--   Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName> .  
+- Spazio dei nomi <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   CertMgr.exe, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per altre informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, che è un componente di Internet Explorer e pertanto è presente in Windows 98 e tutte le versioni successive. Per altre informazioni, vedere [Certmgr.exe (strumento di gestione certificati)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Creare un'applicazione ClickOnce  
  Un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è un'applicazione client [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinata con file manifesto che descrivono l'applicazione e forniscono i parametri di installazione. È possibile convertire il programma in applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando il comando **Publish** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. In alternativa, è possibile generare tutti i file richiesti per la distribuzione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando gli strumenti inclusi in [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Per informazioni dettagliate sui [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098467"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] un'
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Per specificare una pagina Web personalizzata per un'applicazione ClickOnce  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Selezionare il **pubblica** riquadro.  
+2. Selezionare il **pubblica** riquadro.  
   
-3.  Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
+3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
   
-4.  Fare clic su **distribuzione**.  
+4. Fare clic su **distribuzione**.  
   
-5.  Nel **Publish Options** finestra di dialogo, assicurarsi che le **distribuzione Apri pagina web dopo la pubblicazione** casella di controllo è selezionata (deve essere selezionato per impostazione predefinita).  
+5. Nel **Publish Options** finestra di dialogo, assicurarsi che le **distribuzione Apri pagina web dopo la pubblicazione** casella di controllo è selezionata (deve essere selezionato per impostazione predefinita).  
   
-6.  Nel **pagina web di distribuzione:** casella, immettere il nome della pagina Web e quindi fare clic su **OK**.  
+6. Nel **pagina web di distribuzione:** casella, immettere il nome della pagina Web e quindi fare clic su **OK**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Per impedire l'avvio ogni volta che si pubblica la pagina di pubblicazione  
   
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.  
   
-2.  Selezionare il **pubblica** riquadro.  
+2. Selezionare il **pubblica** riquadro.  
   
-3.  Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
+3. Fare clic sui **le opzioni** pulsante per aprire il **Publish Options** nella finestra di dialogo.  
   
-4.  Fare clic su **distribuzione**.  
+4. Fare clic su **distribuzione**.  
   
-5.  Nel **Publish Options** della finestra di dialogo deseleziona le **pagina web di distribuzione aperto dopo la pubblicazione** casella di controllo.  
+5. Nel **Publish Options** della finestra di dialogo deseleziona le **pagina web di distribuzione aperto dopo la pubblicazione** casella di controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6766fa98d6141005ed88d623ef8608035593a2a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8059c3573ef04335386b50d41459b9527d2c3c8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089555"
 ---
 # <a name="mstateflags-field"></a>campo m_stateFlags
 Archivia le informazioni sullo stato corrente del <xref:System.Threading.Tasks.Task> oggetto.
@@ -37,15 +37,15 @@ Archivia le informazioni sullo stato corrente del <xref:System.Threading.Tasks.T
 
  Questo membro può essere qualsiasi combinazione dei valori seguenti:
 
--   [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
+- [TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)
 
--   [TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)
+- [TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)
 
--   [TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)
+- [TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)
 
--   [TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)
+- [TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)
 
--   [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
+- [TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Classe Task](../../extensibility/debugger/task-class-internal-members.md)

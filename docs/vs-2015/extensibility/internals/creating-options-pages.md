@@ -11,12 +11,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 319d889d2763662cda92d815ce45a3becfcab8cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954795"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106124"
 ---
 # <a name="creating-options-pages"></a>Creazione di pagine di opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] framework di pacchetto gesti
   
  Poiché l'ambiente di un'istanza dell'oggetto che implementa un particolare **opzioni del menu Strumenti** pagina quando tale particolare pagina viene visualizzato dall'IDE:  
   
--   Oggetto **scelta degli strumenti** pagina deve essere implementata nel proprio oggetto e non per l'oggetto che implementa un pacchetto VSPackage.  
+- Oggetto **scelta degli strumenti** pagina deve essere implementata nel proprio oggetto e non per l'oggetto che implementa un pacchetto VSPackage.  
   
--   Un oggetto non può implementare più **opzioni del menu Strumenti** pagine.  
+- Un oggetto non può implementare più **opzioni del menu Strumenti** pagine.  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>La registrazione come Provider di pagina di opzioni degli strumenti  
  Una configurazione dell'utente supporta VSPackage attraverso **opzioni degli strumenti** pagine indica gli oggetti che li fornisce **opzioni degli strumenti** pagine applicando le istanze di <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> applicato per i <xref:Microsoft.VisualStudio.Shell.Package>implementazione.  

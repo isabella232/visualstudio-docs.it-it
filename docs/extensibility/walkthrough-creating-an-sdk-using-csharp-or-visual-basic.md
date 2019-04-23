@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086637"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK tramite C# o Visual Basic
 In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:
 
--   [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [Per creare il componente SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [Per creare il progetto di estensione SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [Per creare il progetto di estensione SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [Per creare un'app di esempio che usa la libreria di classi](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Per creare il componente SimpleMath Windows Runtime
+## <a name="createClassLibrary"></a> Per creare il componente SimpleMath Windows Runtime
 
 1. Nella barra dei menu, scegliere **File** > **New** > **nuovo progetto**.
 
@@ -54,25 +54,25 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
 
 9. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **SimpleMath** nodo del progetto e quindi scegliere **compilare**.
 
-##  <a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX
+## <a name="createVSIX"></a> Per creare il progetto di estensione SimpleMathVSIX
 
-1.  Nel menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, scegliere **Add** > **nuovo progetto**.
+1. Nel menu di scelta rapida per il **soluzione 'SimpleMath'** nodo, scegliere **Add** > **nuovo progetto**.
 
-2.  Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.
+2. Nell'elenco dei modelli, espandere **Visual c#** o **Visual Basic**, scegliere il **estendibilità** nodo, quindi scegliere il **progetto VSIX** modello.
 
-3.  Nel **nome** , specificare **SimpleMathVSIX**, quindi scegliere il **OK** pulsante.
+3. Nel **nome** , specificare **SimpleMathVSIX**, quindi scegliere il **OK** pulsante.
 
-4.  Nelle **Esplora soluzioni**, scegliere il **vsixmanifest** elemento.
+4. Nelle **Esplora soluzioni**, scegliere il **vsixmanifest** elemento.
 
-5.  Sulla barra dei menu scegliere **Visualizza** > **Codice**.
+5. Sulla barra dei menu scegliere **Visualizza** > **Codice**.
 
-6.  Sostituire il codice XML esistente con il codice XML seguente:
+6. Sostituire il codice XML esistente con il codice XML seguente:
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  Nelle **Esplora soluzioni**, scegliere il **SimpleMathVSIX** progetto.
+7. Nelle **Esplora soluzioni**, scegliere il **SimpleMathVSIX** progetto.
 
-8.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+8. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
 9. Nell'elenco degli **gli elementi comuni**, espandere **dati**, quindi scegliere **File XML**.
 
@@ -83,6 +83,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
 12. Sostituisci il contenuto del file con il codice XML riportato di seguito:
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
 
 30. Scegliere il **installare** pulsante, attendere il completamento dell'installazione e quindi riavviare Visual Studio.
 
-##  <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi
+## <a name="createSample"></a> Per creare un'app di esempio che usa la libreria di classi
 
 1. Nella barra dei menu, scegliere **File** > **New** > **nuovo progetto**.
 
@@ -176,6 +178,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
 10. Nelle **Esplora soluzioni**aprire **MainPage. XAML**e sostituirne il contenuto con il seguente XAML:
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

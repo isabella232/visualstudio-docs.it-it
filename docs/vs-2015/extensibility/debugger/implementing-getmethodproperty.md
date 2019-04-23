@@ -11,12 +11,12 @@ ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3199b5c1a812052735f62c48a882fcd409d93c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d35088da401f6f7545f9e69285d25e48cdbbef75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969656"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085325"
 ---
 # <a name="implementing-getmethodproperty"></a>Implementazione di GetMethodProperty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58969656"
   
  Questa implementazione di `IDebugExpressionEvaluator::GetMethodProperty` esegue le attività seguenti:  
   
-1.  Le chiamate [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)passando la [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) oggetto. Il provider di simboli (SP) restituisce un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) che rappresenta il metodo che contiene l'indirizzo specificato.  
+1. Le chiamate [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)passando la [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) oggetto. Il provider di simboli (SP) restituisce un [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) che rappresenta il metodo che contiene l'indirizzo specificato.  
   
-2.  Ottiene il [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) dal `IDebugContainerField`.  
+2. Ottiene il [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) dal `IDebugContainerField`.  
   
-3.  Crea un'istanza di una classe (chiamati `CFieldProperty` in questo esempio) che implementa il [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaccia e contiene il `IDebugMethodField` oggetto restituito dal provider di servizi.  
+3. Crea un'istanza di una classe (chiamati `CFieldProperty` in questo esempio) che implementa il [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interfaccia e contiene il `IDebugMethodField` oggetto restituito dal provider di servizi.  
   
-4.  Restituisce il `IDebugProperty2` dell'interfaccia dal `CFieldProperty` oggetto.  
+4. Restituisce il `IDebugProperty2` dell'interfaccia dal `CFieldProperty` oggetto.  
   
 ## <a name="managed-code"></a>Codice gestito  
  In questo esempio viene illustrata un'implementazione di `IDebugExpressionEvaluator::GetMethodProperty` nel codice gestito.  

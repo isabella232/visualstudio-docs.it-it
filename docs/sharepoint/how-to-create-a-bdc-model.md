@@ -13,32 +13,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d82678df0da5932dd33c08a6e3066462df204f6e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596503"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106657"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procedura: Creare un modello di integrazione applicativa dei dati
   È possibile creare un modello di integrazione applicativa dei dati (BDC) usando il modello per tale tipo di elemento e quindi aggiungere il modello a qualsiasi progetto SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md). Per altre informazioni su come progettare il modello, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-bdc-project"></a>Per creare un progetto di integrazione applicativa dei dati
 
-1.  Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
     > [!NOTE]
     >  Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegli **File** > **nuovo progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2.  In presenza di una **Visual Basic** oppure **Visual c#**, scegliere **Office/SharePoint**, **soluzioni SharePoint**.
+2. In presenza di una **Visual Basic** oppure **Visual c#**, scegliere **Office/SharePoint**, **soluzioni SharePoint**.
 
-3.  Nel **modelli** riquadro, scegliere il **SharePoint 2013 - progetto vuoto** elemento e quindi scegliere il **OK** pulsante.
+3. Nel **modelli** riquadro, scegliere il **SharePoint 2013 - progetto vuoto** elemento e quindi scegliere il **OK** pulsante.
 
      Il **Personalizzazione guidata SharePoint** apre.
 
-4.  Nel **specificare il livello di sito e la sicurezza per il debug** pagina, specificare l'URL di un sito di SharePoint nel computer locale, scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **Finish** pulsante.
+4. Nel **specificare il livello di sito e la sicurezza per il debug** pagina, specificare l'URL di un sito di SharePoint nel computer locale, scegliere il **Distribuisci come soluzione farm** pulsante di opzione e quindi scegliere il **Finish** pulsante.
 
      Si testerà il modello nel sito di SharePoint specificato.
 
@@ -47,13 +47,13 @@ ms.locfileid: "56596503"
 
      Viene creato un progetto SharePoint vuoto.
 
-5.  Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
+5. Nella barra dei menu scegliere **Progetto** > **Aggiungi nuovo elemento**.
 
-6.  Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **Office/SharePoint** nodo.
+6. Nel **Aggiungi nuovo elemento** finestra di dialogo scegliere la **Office/SharePoint** nodo.
 
-7.  Nell'elenco dei modelli di SharePoint, scegliere **Business Data Connectivity Model (solo soluzione Farm)**.
+7. Nell'elenco dei modelli di SharePoint, scegliere **Business Data Connectivity Model (solo soluzione Farm)**.
 
-8.  Nel **Name** casella, specificare un nome per il modello di integrazione applicativa dei dati e quindi scegliere il **Add** pulsante.
+8. Nel **Name** casella, specificare un nome per il modello di integrazione applicativa dei dati e quindi scegliere il **Add** pulsante.
 
      Oggetto **Business Data Connectivity Model** elemento viene aggiunto al progetto. Per impostazione predefinita, il modello viene visualizzato nella finestra di progettazione integrazione applicativa dei dati. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
 

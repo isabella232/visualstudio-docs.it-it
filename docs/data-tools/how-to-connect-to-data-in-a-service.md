@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: connettersi ai dati di un servizio'
+title: 'Procedura: Connettersi ai dati di un servizio'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085961"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedura: Connettersi ai dati di un servizio
 
@@ -36,20 +36,20 @@ Dopo il completamento della procedura guidata, viene aggiunto al progetto un rif
 
 ## <a name="to-connect-your-application-to-a-service"></a>Per connettere l'applicazione a un servizio
 
-1.  Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
+1. Scegliere **Aggiungi nuova origine dati** dal menu **Dati**.
 
-2.  Selezionare **Service** nel **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
+2. Selezionare **Service** nel **scegliere un tipo di origine dati** e quindi fare clic su **Avanti**.
 
-3.  Immettere l'indirizzo del servizio che si desidera usare oppure fare clic su **Discover** per individuare servizi nella soluzione corrente e quindi fare clic su **Vai**.
+3. Immettere l'indirizzo del servizio che si desidera usare oppure fare clic su **Discover** per individuare servizi nella soluzione corrente e quindi fare clic su **Vai**.
 
-4.  Facoltativamente, è possibile digitare un nuovo **Namespace** al posto del valore predefinito.
+4. Facoltativamente, è possibile digitare un nuovo **Namespace** al posto del valore predefinito.
 
     > [!NOTE]
     > Fare clic su **avanzate** per aprire il [nella finestra di dialogo Configura riferimento al servizio](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Fare clic su **OK** per aggiungere un riferimento al servizio al progetto.
+5. Fare clic su **OK** per aggiungere un riferimento al servizio al progetto.
 
-6.  Scegliere **Fine**.
+6. Scegliere **Fine**.
 
      L'origine dati viene aggiunta alla finestra **Origini dati**.
 
