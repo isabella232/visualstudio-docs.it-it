@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083959"
 ---
 # <a name="signing-in-to-visual-studio"></a>Accesso a Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ ms.locfileid: "56842294"
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Perché accedere a Visual Studio?
  Accedendo a Visual Studio si otterranno i seguenti vantaggi:
 
--   **Concede l'accesso a una vasta gamma di vantaggi** del programma Visual Studio Dev Essentials, compresi software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
+- **Concede l'accesso a una vasta gamma di vantaggi** del programma Visual Studio Dev Essentials, compresi software gratuito, formazione, supporto e altro ancora. Per altre informazioni, vedere [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) .
 
--   **Sincronizza le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicati immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincronizza le impostazioni di Visual Studio** : le impostazioni personalizzate, ad esempio le combinazioni di tasti, il layout della finestra e il tema colori, vengono applicati immediatamente quando si accede a Visual Studio da qualsiasi dispositivo. Vedere [Impostazioni sincronizzate in Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
--   **Sblocca Visual Studio Express Edition in modo permanente** : è possibile usare qualsiasi edizione di Visual Studio Express per la durata desiderata, anziché essere vincolati al periodo di valutazione di 30 giorni.
+- **Sblocca Visual Studio Express Edition in modo permanente** : è possibile usare qualsiasi edizione di Visual Studio Express per la durata desiderata, anziché essere vincolati al periodo di valutazione di 30 giorni.
 
--   **Sblocca Visual Studio Community Edition** anziché essere vincolati al periodo di valutazione di 30 giorni.
+- **Sblocca Visual Studio Community Edition** anziché essere vincolati al periodo di valutazione di 30 giorni.
 
--   **Estende il periodo di valutazione per Visual Studio** : è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni.
+- **Estende il periodo di valutazione per Visual Studio** : è possibile usare Visual Studio Professional o Visual Studio Enterprise per 90 giorni, anziché essere vincolati al periodo di valutazione di 30 giorni.
 
--   **Sblocca Visual Studio se si usa un account associato a una sottoscrizione MSDN o VSO**. Vedere [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Sblocca Visual Studio se si usa un account associato a una sottoscrizione MSDN o VSO**. Vedere [Come sbloccare Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
--   **Si collega automaticamente a servizi come Azure e Visual Studio Team Services** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
+- **Si collega automaticamente a servizi come Azure e Visual Studio Team Services** nell'IDE senza richiedere di nuovo le credenziali per lo stesso account.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Come accedere a Visual Studio
  Quando si avvia Visual Studio per la prima volta, viene richiesto di accedere e fornire alcune informazioni di registrazione di base. Si deve scegliere un account Microsoft o un account aziendale o dell'istituto di istruzione che è più rappresentativo. Se non si hanno questi account Microsoft, è possibile crearne uno Microsoft gratuitamente. Vedere [Come posso iscrivermi a un account Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
@@ -53,12 +53,12 @@ ms.locfileid: "56842294"
 ## <a name="to-change-your-profile-information"></a>Per modificare le informazioni sul profilo
  In **File &#124; Impostazioni account** è possibile visualizzare e aggiornare le informazioni sul profilo e la licenza di Visual Studio. Per modificare le informazioni sul profilo, come il proprio nome account, l'immagine avatar o l'indirizzo di posta elettronica:
 
-1.  Andare a **File &#124; Impostazioni account**.
+1. Andare a **File &#124; Impostazioni account**.
 
-2.  Nella finestra di dialogo **Impostazioni account** scegliere il collegamento **Gestisci profilo di Visual Studio** .
+2. Nella finestra di dialogo **Impostazioni account** scegliere il collegamento **Gestisci profilo di Visual Studio** .
 
-3.  Nella pagina **Informazioni Microsoft** del browser scegliere il pulsante **Modifica informazioni** .
+3. Nella pagina **Informazioni Microsoft** del browser scegliere il pulsante **Modifica informazioni** .
 
-4.  Modificare le impostazioni desiderate.
+4. Modificare le impostazioni desiderate.
 
-5.  Al termine, scegliere il pulsante **Salva modifiche** .
+5. Al termine, scegliere il pulsante **Salva modifiche** .

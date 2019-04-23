@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2caee9a39df18bfed0dc48a9c0266721500ddeca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654941"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084778"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 2. Provare a usare l'esempio iniziale forniti dal modello:  
 
-   1.  Trasforma tutti i modelli.  
+   1. Trasforma tutti i modelli.  
 
-   2.  Compilare ed eseguire il codice di esempio (**CTRL+F5**).  
+   2. Compilare ed eseguire il codice di esempio (**CTRL+F5**).  
 
-   3.  Nell'istanza sperimentale di Visual Studio, aprire il `Sample` file nel progetto di debug.  
+   3. Nell'istanza sperimentale di Visual Studio, aprire il `Sample` file nel progetto di debug.  
 
         Si noti che viene visualizzato in un controllo Windows Form.  
 
@@ -54,17 +54,17 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
    Nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], si noti che i punti seguenti circa soluzione DSL:  
 
--   `DslDefinition.dsl` non contiene alcun elemento diagramma. Questo avviene perché non si utilizzerà i diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si assocerà un Form Windows al modello e gli elementi nel form verranno visualizzato il modello.  
+- `DslDefinition.dsl` non contiene alcun elemento diagramma. Questo avviene perché non si utilizzerà i diagrammi DSL per visualizzare i modelli di istanza di questo DSL. Al contrario, si assocerà un Form Windows al modello e gli elementi nel form verranno visualizzato il modello.  
 
--   Oltre al `Dsl` e `DslPackage` progetti, la soluzione contiene un terzo progetto denominato `UI.` **UI** progetto contiene la definizione di un controllo Windows Form. `DslPackage` dipende `UI`, e `UI` dipende `Dsl`.  
+- Oltre al `Dsl` e `DslPackage` progetti, la soluzione contiene un terzo progetto denominato `UI.` **UI** progetto contiene la definizione di un controllo Windows Form. `DslPackage` dipende `UI`, e `UI` dipende `Dsl`.  
 
--   Nel `DslPackage` progetto `UI\DocView.cs` contiene il codice che visualizza il controllo Windows Form che è definito nel `UI` progetto.  
+- Nel `DslPackage` progetto `UI\DocView.cs` contiene il codice che visualizza il controllo Windows Form che è definito nel `UI` progetto.  
 
--   Il `UI` progetto contiene un esempio reale di un controllo modulo associato per il linguaggio DSL. Tuttavia, non funzionerà dopo avere modificato la definizione DSL. Il `UI` progetto contiene:  
+- Il `UI` progetto contiene un esempio reale di un controllo modulo associato per il linguaggio DSL. Tuttavia, non funzionerà dopo avere modificato la definizione DSL. Il `UI` progetto contiene:  
 
-    -   Una classe di Windows Form denominata `ModelViewControl`.  
+    - Una classe di Windows Form denominata `ModelViewControl`.  
 
-    -   Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.  
+    - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.  
 
 ### <a name="about-the-ui-project"></a>Sul progetto dell'interfaccia utente  
  Quando si aggiorna il file di definizione DSL per definire il proprio DSL, è necessario aggiornare il controllo nel `UI` progetto per visualizzare il linguaggio DSL. A differenza di `Dsl` e `DslPackage` progetti, il codice di esempio `UI` progetto non viene generato da `DslDefinitionl.dsl`. È possibile aggiungere i file con estensione tt per generare il codice se si desidera, sebbene questa procedura non è descritta in questa procedura dettagliata.  
@@ -76,34 +76,34 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 #### <a name="to-update-the-dsl-definition"></a>Per aggiornare la definizione DSL  
 
-1.  Aprire dsldefinition. DSL nella finestra di progettazione DSL.  
+1. Aprire dsldefinition. DSL nella finestra di progettazione DSL.  
 
-2.  Elimina **ExampleElement**  
+2. Elimina **ExampleElement**  
 
-3.  Rinominare il **ExampleModel** della classe di dominio per `Farm`.  
+3. Rinominare il **ExampleModel** della classe di dominio per `Farm`.  
 
      Assegnare le proprietà di dominio aggiuntivo denominate `Size` typu **Int32**, e `IsOrganic` di tipo **booleano**.  
 
     > [!NOTE]
     >  Se si elimina la classe di dominio radice e quindi creare una nuova radice, sarà necessario reimpostare la proprietà di classe radice dell'Editor. Nelle **DSL Explorer**, selezionare **Editor**. Quindi, nella finestra Proprietà impostare **classe radice** a `Farm`.  
 
-4.  Usare la **della classe di dominio denominato** lo strumento per creare le classi di dominio seguenti:  
+4. Usare la **della classe di dominio denominato** lo strumento per creare le classi di dominio seguenti:  
 
-    -   `Field` – Impostarne una proprietà di dominio aggiuntivo denominata `Size`.  
+    - `Field` – Impostarne una proprietà di dominio aggiuntivo denominata `Size`.  
 
-    -   `Animal` -Nella finestra Proprietà impostare **modificatore di ereditarietà** al **astratta**.  
+    - `Animal` -Nella finestra Proprietà impostare **modificatore di ereditarietà** al **astratta**.  
 
-5.  Usare la **della classe di dominio** lo strumento per creare le classi seguenti:  
+5. Usare la **della classe di dominio** lo strumento per creare le classi seguenti:  
 
-    -   `Sheep`  
+    - `Sheep`  
 
-    -   `Goat`  
+    - `Goat`  
 
-6.  Usare la **ereditarietà** dello strumento per rendere `Goat` e `Sheep` ereditare `Animal`.  
+6. Usare la **ereditarietà** dello strumento per rendere `Goat` e `Sheep` ereditare `Animal`.  
 
-7.  Usare la **incorporamento** dello strumento per incorporare `Field` e `Animal` sotto `Farm`.  
+7. Usare la **incorporamento** dello strumento per incorporare `Field` e `Animal` sotto `Farm`.  
 
-8.  È possibile ordinare il diagramma. Per ridurre il numero di elementi duplicati, usare il **portare sottoalbero qui** dal menu di scelta rapida di elementi foglia.  
+8. È possibile ordinare il diagramma. Per ridurre il numero di elementi duplicati, usare il **portare sottoalbero qui** dal menu di scelta rapida di elementi foglia.  
 
 9. **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni.  
 
@@ -117,13 +117,13 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Per definire il modello DSL come origine dati  
 
-1.  Nel **Data** menu, scegliere **Mostra origini dati**.  
+1. Nel **Data** menu, scegliere **Mostra origini dati**.  
 
      Verrà visualizzata la finestra **Origini dati**.  
 
      Scegli **Aggiungi nuova origine dati**. Viene avviata la **Configurazione guidata origine dati**.  
 
-2.  Scegli **oggetti**, **successivo**.  
+2. Scegli **oggetti**, **successivo**.  
 
      Espandere **Dsl**, **Company.FarmApp**e selezionare **Farm**, che è la classe radice del modello. Scegliere **Fine**.  
 
@@ -181,7 +181,7 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Per completare le associazioni per il linguaggio DSL  
 
-1.  Aggiungere il codice seguente in un file di codice separato nella **dell'interfaccia utente** progetto:  
+1. Aggiungere il codice seguente in un file di codice separato nella **dell'interfaccia utente** progetto:  
 
     ```csharp  
     using System.ComponentModel;  
@@ -207,7 +207,7 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
     }  
     ```  
 
-2.  Nel **DslPackage** del progetto, modificare **DslPackage\DocView.tt** per aggiornare la definizione di variabile seguente:  
+2. Nel **DslPackage** del progetto, modificare **DslPackage\DocView.tt** per aggiornare la definizione di variabile seguente:  
 
     ```csharp  
     string viewControlTypeName = "FarmControl";  
@@ -218,18 +218,18 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 #### <a name="to-test-the-dsl"></a>Per testare il linguaggio DSL  
 
-1.  Compilare ed eseguire la soluzione.  
+1. Compilare ed eseguire la soluzione.  
 
-2.  Nell'istanza sperimentale di Visual Studio, aprire il **esempio** file.  
+2. Nell'istanza sperimentale di Visual Studio, aprire il **esempio** file.  
 
-3.  Nel **FarmApp Explorer**, aprire il menu di scelta rapida nel **Farm** nodo radice, quindi scegliere **aggiungere nuovo Goat**.  
+3. Nel **FarmApp Explorer**, aprire il menu di scelta rapida nel **Farm** nodo radice, quindi scegliere **aggiungere nuovo Goat**.  
 
      `Goat1` viene visualizzato nei **animali** visualizzazione.  
 
     > [!WARNING]
     >  È necessario usare il menu di scelta rapida nel **Farm** nodo, non il **animali** nodo.  
 
-4.  Selezionare il **Farm** nodo radice e visualizzarne le proprietà.  
+4. Selezionare il **Farm** nodo radice e visualizzarne le proprietà.  
 
      Nella visualizzazione form, modificare il **Name** oppure **dimensioni** della farm.  
 
@@ -239,13 +239,13 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 #### <a name="to-make-the-properties-update-immediately"></a>Per rendere le proprietà di aggiornamento immediato  
 
-1.  Nella visualizzazione progettazione di FarmControl.cs, selezionare un campo semplice, ad esempio nome, dimensioni o IsOrganic.  
+1. Nella visualizzazione progettazione di FarmControl.cs, selezionare un campo semplice, ad esempio nome, dimensioni o IsOrganic.  
 
-2.  Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)**.  
+2. Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)**.  
 
      Nel **formattazione e associazione avanzata** finestra di dialogo, sotto **modalità aggiornamento origine dati**, scegliere **OnPropertyChanged**.  
 
-3.  Compilare ed eseguire la soluzione.  
+3. Compilare ed eseguire la soluzione.  
 
      Verificare che quando si modifica il contenuto del campo, la proprietà corrispondente di immediatamente la modifica del modello Farm.  
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083517"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 Questo controllo del codice sorgente del plug-in di test viene illustrata l'area immissione soluzioni o progetti di controllo del codice sorgente e il loro recupero dal controllo del codice sorgente.
@@ -41,15 +41,15 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 
--   Per ogni tipo di progetto supportati, un utente deve essere in grado di "Add a" e "Aperto" dal controllo del codice sorgente.
+- Per ogni tipo di progetto supportati, un utente deve essere in grado di "Add a" e "Aperto" dal controllo del codice sorgente.
 
--   Quando viene aggiunto un progetto al controllo del codice sorgente, un oggetto corrispondente \< *NomeProgetto*> vspscc (file di progetto hint) viene creato. Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.
+- Quando viene aggiunto un progetto al controllo del codice sorgente, un oggetto corrispondente \< *NomeProgetto*> vspscc (file di progetto hint) viene creato. Contiene informazioni di connessione e l'elenco di file esclusione. Non eliminare questo file perché contiene informazioni specifiche per il progetto.
 
--   Quando viene aggiunta una soluzione al controllo del codice sorgente, un oggetto corrispondente \< *SolutionName*> viene creato il file. vssscc (tripla S). Il file di testo contiene le informazioni di connessione e un elenco di file di esclusione, simile al file dei suggerimenti di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.
+- Quando viene aggiunta una soluzione al controllo del codice sorgente, un oggetto corrispondente \< *SolutionName*> viene creato il file. vssscc (tripla S). Il file di testo contiene le informazioni di connessione e un elenco di file di esclusione, simile al file dei suggerimenti di progetto. Questo file è temporaneo ed esiste solo nel database del controllo del codice sorgente.
 
--   Quando viene aperta una soluzione dal controllo del codice sorgente, un' \< *SolutionName*> file .vsscc (S double) che esiste solo nel database di controllo di origine, viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.
+- Quando viene aperta una soluzione dal controllo del codice sorgente, un' \< *SolutionName*> file .vsscc (S double) che esiste solo nel database di controllo di origine, viene creato in locale in un file temporaneo. Questo file contiene il percorso dalla cartella di connessione della soluzione per il file della soluzione. Questo file è temporaneo e la copia locale viene eliminata quando l'operazione "Apri dal controllo del codice sorgente" è stata completata.
 
--   Dopo l'aggiunta di un progetto di controllo del codice sorgente, è possibile eseguire le azioni di controllo sorgente su di esso (estrazione, Get e così via).
+- Dopo l'aggiunta di un progetto di controllo del codice sorgente, è possibile eseguire le azioni di controllo sorgente su di esso (estrazione, Get e così via).
 
 ## <a name="test-cases"></a>Test case
  Di seguito sono specifici test case per l'aggiunta a / Open dall'area di test di controllo del codice sorgente.

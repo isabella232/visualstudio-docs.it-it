@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083336"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile personalizzare l'aspetto e il comportamento della finestra Proprietà. Nella definizione DSL, si definiscono le proprietà di dominio in ogni classe di dominio. Per impostazione predefinita, quando si seleziona un'istanza della classe, in un diagramma o in Esplora modelli, ogni proprietà di dominio è elencato nella finestra Proprietà. Ciò consente di visualizzare e modificare i valori delle proprietà di dominio, anche se non li mappata a campi della forma nel diagramma.
@@ -47,13 +47,13 @@ Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile persona
 ### <a name="default-property-forwarding-cases"></a>Casi di inoltro di proprietà predefiniti
  Quando l'utente seleziona una forma o connettore o da un elemento in Esplora risorse, le proprietà seguenti vengono visualizzate nella finestra Proprietà:
 
--   Le proprietà di dominio definite nella classe di dominio dell'elemento del modello, inclusi quelli che sono definiti nelle classi di base. Un'eccezione riguarda le proprietà di dominio per cui è stato impostato **è visualizzabile** a `False`.
+- Le proprietà di dominio definite nella classe di dominio dell'elemento del modello, inclusi quelli che sono definiti nelle classi di base. Un'eccezione riguarda le proprietà di dominio per cui è stato impostato **è visualizzabile** a `False`.
 
--   I nomi degli elementi collegati tramite relazioni che hanno una molteplicità di 0..1. Fornisce un metodo pratico per visualizzare, facoltativamente, collegata elementi, anche se non è stato definito un mapping di connettori per la relazione.
+- I nomi degli elementi collegati tramite relazioni che hanno una molteplicità di 0..1. Fornisce un metodo pratico per visualizzare, facoltativamente, collegata elementi, anche se non è stato definito un mapping di connettori per la relazione.
 
--   Proprietà di dominio della relazione di incorporamento che ha come destinazione l'elemento. Poiché le relazioni di incorporamento in genere non vengono visualizzate in modo esplicito, ciò consente all'utente di visualizzare le relative proprietà.
+- Proprietà di dominio della relazione di incorporamento che ha come destinazione l'elemento. Poiché le relazioni di incorporamento in genere non vengono visualizzate in modo esplicito, ciò consente all'utente di visualizzare le relative proprietà.
 
--   Proprietà di dominio definite nella forma selezionata o il connettore.
+- Proprietà di dominio definite nella forma selezionata o il connettore.
 
 ### <a name="adding-property-forwarding"></a>Aggiunta di inoltro di proprietà
  Per inoltrare una proprietà, si definisce un descrittore di tipi di dominio. Se si dispone di una relazione di dominio tra due classi di dominio, è possibile utilizzare un descrittore di tipi di dominio per impostare una proprietà di dominio nella prima classe per il valore della proprietà del dominio nella classe di dominio di secondo. Ad esempio, se si dispone di una relazione tra un **libro** della classe di dominio e un **autore** della classe di dominio, è possibile usare un descrittore di tipi di dominio per rendere il **nome** proprietà di un Del libro **autore** vengono visualizzate nella finestra Proprietà quando l'utente seleziona il libro.
@@ -112,14 +112,14 @@ Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile persona
 
 2. Aggiungere il tipo per il **tipi di dominio** elencare, a meno che non si è già stato fatto.
 
-   1.  Aprire dsldefinition. DSL e nella **DSL Explorer**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo tipo esterno**.
+   1. Aprire dsldefinition. DSL e nella **DSL Explorer**, fare clic sul nodo radice e quindi fare clic su **Aggiungi nuovo tipo esterno**.
 
         Una nuova voce viene visualizzata sotto il **tipi di dominio** nodo.
 
        > [!WARNING]
        >  La voce di menu per il nodo radice DSL, non il **tipi di dominio** nodo.
 
-   2.  Nella finestra Proprietà, impostare il nome e lo spazio dei nomi del nuovo tipo.
+   2. Nella finestra Proprietà, impostare il nome e lo spazio dei nomi del nuovo tipo.
 
 3. Aggiungere una proprietà di dominio a una classe di dominio nel modo usuale.
 
@@ -144,9 +144,9 @@ Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile persona
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Per definire una proprietà di dominio del nome file
 
-1.  Aggiungere una proprietà di dominio a una classe di dominio nella definizione DSL.
+1. Aggiungere una proprietà di dominio a una classe di dominio nella definizione DSL.
 
-2.  Selezionare la nuova proprietà. Nel **attributo personalizzato** campo nella finestra Proprietà, immettere il seguente attributo. Per immettere questo attributo, fare clic sui puntini di sospensione **[...]**  e quindi immettere il nome dell'attributo e i parametri separatamente:
+2. Selezionare la nuova proprietà. Nel **attributo personalizzato** campo nella finestra Proprietà, immettere il seguente attributo. Per immettere questo attributo, fare clic sui puntini di sospensione **[...]**  e quindi immettere il nome dell'attributo e i parametri separatamente:
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ Nel linguaggio specifico di dominio (DSL) in Visual Studio, è possibile persona
 
     ```
 
-3.  Lasciare il tipo della proprietà del dominio usata l'impostazione predefinita del **stringa**.
+3. Lasciare il tipo della proprietà del dominio usata l'impostazione predefinita del **stringa**.
 
-4.  Per testare l'editor, verificare che gli utenti possono aprire l'editor di nome file per modificare le proprietà di dominio.
+4. Per testare l'editor, verificare che gli utenti possono aprire l'editor di nome file per modificare le proprietà di dominio.
 
-    1.  Premere CTRL+F5 o F5. Nella soluzione di debug, aprire un file di test. Creare un elemento della classe di dominio e selezionarlo.
+    1. Premere CTRL+F5 o F5. Nella soluzione di debug, aprire un file di test. Creare un elemento della classe di dominio e selezionarlo.
 
-    2.  Nella finestra Proprietà, selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]** .
+    2. Nella finestra Proprietà, selezionare la proprietà di dominio. Il campo del valore Mostra i puntini di sospensione **[...]** .
 
-    3.  Fare clic sui puntini di sospensione. Viene visualizzata una finestra di dialogo file. Selezionare un file e chiudere la finestra di dialogo. Il percorso del file è ora il valore della proprietà del dominio.
+    3. Fare clic sui puntini di sospensione. Viene visualizzata una finestra di dialogo file. Selezionare un file e chiudere la finestra di dialogo. Il percorso del file è ora il valore della proprietà del dominio.
 
 ### <a name="defining-your-own-property-editor"></a>Che definisce il proprio editor di proprietà
  È possibile definire il proprio editor. È consigliabile impostare tale per consentire all'utente di modificare un tipo che sono stati definiti o per modificare un tipo standard in modo speciale. Ad esempio, è possibile consentire all'utente di immettere una stringa che rappresenta una formula.

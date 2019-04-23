@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084479"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Errore: Controllo di sicurezza non riuscito. Il servizio di amministrazione IIS non ha risposto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Questo errore si verifica quando il servizio di amministrazione IIS non risponde
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Reinstallare IIS tramite il pannello di controllo **Installazione applicazioni**.  
+- Reinstallare IIS tramite il pannello di controllo **Installazione applicazioni**.  
   
--   -oppure-  
+- -oppure-  
   
--   Disinstallare IIS dal computer mediante Installazione applicazioni in Pannello di controllo. Se è stato disinstallato IIS ma si verificano ancora problemi, controllare il Registro di sistema e accertarsi che questa chiave non esista più:  
+- Disinstallare IIS dal computer mediante Installazione applicazioni in Pannello di controllo. Se è stato disinstallato IIS ma si verificano ancora problemi, controllare il Registro di sistema e accertarsi che questa chiave non esista più:  
   
     ```  
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
@@ -44,7 +44,7 @@ Questo errore si verifica quando il servizio di amministrazione IIS non risponde
   
      -oppure-  
   
--   Disabilitare il servizio di amministrazione IIS tramite il pannello di controllo Strumenti di amministrazione. In questo modo il servizio IIS verrà disabilitato sul proprio computer.  
+- Disabilitare il servizio di amministrazione IIS tramite il pannello di controllo Strumenti di amministrazione. In questo modo il servizio IIS verrà disabilitato sul proprio computer.  
   
      Dopo aver eseguito uno di questi tre passaggi, riavviare il computer.  
   

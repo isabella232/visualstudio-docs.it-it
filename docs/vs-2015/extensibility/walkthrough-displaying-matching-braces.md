@@ -10,12 +10,12 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b1d6833a3dca2ce8b076574ecb4b9856a6e9d79
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084934"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,50 +29,50 @@ ms.locfileid: "58969212"
   
 #### <a name="to-create-a-mef-project"></a>Per creare un progetto MEF  
   
-1.  Creare un progetto di classificatore editor. Assegnare alla soluzione il nome `BraceMatchingTest`.  
+1. Creare un progetto di classificatore editor. Assegnare alla soluzione il nome `BraceMatchingTest`.  
   
-2.  Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Aggiungere un modello di elemento di classificatore Editor al progetto. Per altre informazioni, vedere [creazione di un'estensione con un modello di elemento Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Eliminare i file di classe esistenti.  
+3. Eliminare i file di classe esistenti.  
   
 ## <a name="implementing-a-brace-matching-tagger"></a>Implementare una Tagger di corrispondenza parentesi graffe  
  Per ottenere un'effetto simile a quello usato in Visual Studio di evidenziazione parentesi graffe, è possibile implementare un tagger del tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. Il codice seguente viene illustrato come definire il tagger per coppie di parentesi graffe a qualsiasi livello di annidamento. In questo esempio, la parentesi graffa coppie []. [], e {} definiti nel costruttore tagger, ma in un'implementazione del linguaggio completa le coppie di parentesi graffa rilevanti deve essere definite nella specifica del linguaggio.  
   
 #### <a name="to-implement-a-brace-matching-tagger"></a>Per implementare una tagger di corrispondenza parentesi graffe  
   
-1.  Aggiungere un file di classe e denominarla corrispondenza parentesi graffe.  
+1. Aggiungere un file di classe e denominarla corrispondenza parentesi graffe.  
   
-2.  Importare gli spazi dei nomi seguenti.  
+2. Importare gli spazi dei nomi seguenti.  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3.  Definire una classe `BraceMatchingTagger` che eredita da <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> di tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3. Definire una classe `BraceMatchingTagger` che eredita da <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> di tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4.  Aggiungere le proprietà per la visualizzazione di testo, il buffer di origine e il punto dello snapshot corrente e anche un set di coppie di parentesi graffe.  
+4. Aggiungere le proprietà per la visualizzazione di testo, il buffer di origine e il punto dello snapshot corrente e anche un set di coppie di parentesi graffe.  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5.  Nel costruttore del tagger, impostare le proprietà e sottoscrivere gli eventi di modifica visualizzazione <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In questo esempio, a scopo illustrativo, le coppie corrispondente vengono definite anche nel costruttore.  
+5. Nel costruttore del tagger, impostare le proprietà e sottoscrivere gli eventi di modifica visualizzazione <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. In questo esempio, a scopo illustrativo, le coppie corrispondente vengono definite anche nel costruttore.  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6.  Come parte di <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementazione, dichiarare un evento TagsChanged.  
+6. Come parte di <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementazione, dichiarare un evento TagsChanged.  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7.  I gestori eventi aggiornano la posizione corrente del cursore del `CurrentChar` proprietà e generare l'evento TagsChanged.  
+7. I gestori eventi aggiornano la posizione corrente del cursore del `CurrentChar` proprietà e generare l'evento TagsChanged.  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8.  Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodo per la corrispondenza delle parentesi graffe di uno quando il carattere corrente è una parentesi graffa aperta o se il carattere precedente è una parentesi graffa di chiusura, come in Visual Studio. Quando viene trovata la corrispondenza, questo metodo crea un'istanza di due tag, uno per la parentesi graffa aperta e uno per la parentesi graffa di chiusura.  
+8. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> metodo per la corrispondenza delle parentesi graffe di uno quando il carattere corrente è una parentesi graffa aperta o se il carattere precedente è una parentesi graffa di chiusura, come in Visual Studio. Quando viene trovata la corrispondenza, questo metodo crea un'istanza di due tag, uno per la parentesi graffa aperta e uno per la parentesi graffa di chiusura.  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
@@ -92,12 +92,12 @@ ms.locfileid: "58969212"
   
 #### <a name="to-implement-a-brace-matching-tagger-provider"></a>Implementare un provider di tagger parentesi graffa corrispondente  
   
-1.  Dichiarare un provider di tagger che eredita da <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, denominarlo BraceMatchingTaggerProvider ed esportarlo con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> impostato su "text" e un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Dichiarare un provider di tagger che eredita da <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, denominarlo BraceMatchingTaggerProvider ed esportarlo con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> impostato su "text" e un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> di <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2.  Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodo per creare un'istanza di un BraceMatchingTagger.  
+2. Implementare il <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> metodo per creare un'istanza di un BraceMatchingTagger.  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
@@ -107,11 +107,11 @@ ms.locfileid: "58969212"
   
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Per compilare e testare soluzioni BraceMatchingTest  
   
-1.  Compilare la soluzione.  
+1. Compilare la soluzione.  
   
-2.  Quando si esegue questo progetto nel debugger, viene creata una seconda istanza di Visual Studio.  
+2. Quando si esegue questo progetto nel debugger, viene creata una seconda istanza di Visual Studio.  
   
-3.  Creare un file di testo e digitare un testo che include parentesi graffe corrispondenti.  
+3. Creare un file di testo e digitare un testo che include parentesi graffe corrispondenti.  
   
     ```  
     hello {  
@@ -122,7 +122,7 @@ ms.locfileid: "58969212"
     {hello}  
     ```  
   
-4.  Quando si posiziona il cursore prima di una parentesi graffa aperta, sia la parentesi graffa e la parentesi graffa di chiusura corrispondente dovrebbe essere evidenziata. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, sia la parentesi graffa e la parentesi graffa di apertura corrisponda dovrebbe essere evidenziata.  
+4. Quando si posiziona il cursore prima di una parentesi graffa aperta, sia la parentesi graffa e la parentesi graffa di chiusura corrispondente dovrebbe essere evidenziata. Quando si posiziona il cursore subito dopo la parentesi graffa di chiusura, sia la parentesi graffa e la parentesi graffa di apertura corrisponda dovrebbe essere evidenziata.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083946"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook
   Creare un'area del modulo per estendere un modulo standard o personalizzato di Microsoft Office Outlook usando la procedura guidata **Nuova area del modulo di Outlook** . È possibile creare una nuova area del modulo e progettare l'interfaccia utente in Visual Studio oppure importare un'area del modulo progettata in Outlook e aggiungere codice Visual Basic o C#.
@@ -33,26 +33,26 @@ ms.locfileid: "56610619"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Per aggiungere una nuova area del modulo a un progetto di Outlook
 
-1.  Aprire o creare un progetto di componente aggiuntivo VSTO di Outlook in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Aprire o creare un progetto di componente aggiuntivo VSTO di Outlook in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  In **Esplora soluzioni**selezionare il nodo del progetto di componente aggiuntivo VSTO di Outlook.
+2. In **Esplora soluzioni**selezionare il nodo del progetto di componente aggiuntivo VSTO di Outlook.
 
-3.  Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
+3. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-4.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Area del modulo di Outlook**.
+4. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Area del modulo di Outlook**.
 
-5.  Nella casella **Nome** digitare un nome per l'area del modulo, quindi scegliere **Aggiungi**.
+5. Nella casella **Nome** digitare un nome per l'area del modulo, quindi scegliere **Aggiungi**.
 
      Il **area del modulo NewOutlook** Avvia procedura guidata.
 
-6.  Nella pagina **Selezionare la modalità di creazione dell'area del modulo** scegliere se si vuole progettare l'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva o importare un'area del modulo progettata in Outlook.
+6. Nella pagina **Selezionare la modalità di creazione dell'area del modulo** scegliere se si vuole progettare l'area del modulo trascinando i controlli gestiti in una finestra di progettazione visiva o importare un'area del modulo progettata in Outlook.
 
     > [!NOTE]
     >  Se si sceglie di importare un'area del modulo progettata in Outlook, quindi è necessario specificare il percorso di una risorsa di archiviazione di modulo di Outlook (*OFS*) file. Non è possibile aggiungere controlli gestiti a un'area del modulo progettata in Outlook, ma solo aggiungere codice associato all'interfaccia utente esistente. Per altre informazioni, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
 
-7.  Nella pagina **Selezionare il tipo di area del modulo da creare** esaminare i tipi di area del modulo e selezionarne uno, quindi scegliere **Avanti**. Per altre informazioni sui tipi di area del modulo, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
+7. Nella pagina **Selezionare il tipo di area del modulo da creare** esaminare i tipi di area del modulo e selezionarne uno, quindi scegliere **Avanti**. Per altre informazioni sui tipi di area del modulo, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
 
-8.  Nella casella **Nome** della pagina **Fornire un testo descrittivo e selezionare le preferenze di visualizzazione** digitare un nome per l'area del modulo. Per i tipi di area del modulo di sostituzione e di sostituzione completa, sono disponibili anche le caselle **Titolo** e **Descrizione** .
+8. Nella casella **Nome** della pagina **Fornire un testo descrittivo e selezionare le preferenze di visualizzazione** digitare un nome per l'area del modulo. Per i tipi di area del modulo di sostituzione e di sostituzione completa, sono disponibili anche le caselle **Titolo** e **Descrizione** .
 
      Per informazioni su in cui vengono visualizzati il nome, titolo e descrizione in Outlook quando si distribuisce l'area del modulo, vedere [aree del modulo Outlook creare](../vsto/creating-outlook-form-regions.md).
 

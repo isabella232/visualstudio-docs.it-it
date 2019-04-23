@@ -11,12 +11,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b9878760c6a51aa49518f82123ef7075fad06dbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56aeb6a43cea18513a422741289a08a5b7c901c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084238"
 ---
 # <a name="command-availability"></a>Disponibilità dei comandi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ Il contesto di Visual Studio determina quali comandi sono disponibili. Il contes
 ## <a name="command-contexts"></a>Contesti dei comandi  
  I contesti dei comandi seguenti sono i più comuni.  
   
--   **IDE** comandi forniti dall'IDE sono sempre disponibili.  
+- **IDE** comandi forniti dall'IDE sono sempre disponibili.  
   
--   **VSPackage** i VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.  
+- **VSPackage** i VSPackage possono definire quando i comandi devono essere visualizzate o nascoste.  
   
--   **Progetto** i comandi di progetto vengono visualizzati solo per il progetto attualmente selezionato.  
+- **Progetto** i comandi di progetto vengono visualizzati solo per il progetto attualmente selezionato.  
   
--   **Editor** editor solo uno possono essere attive contemporaneamente. Sono disponibili comandi dall'editor attivo. Un editor collabora con un servizio di linguaggio. Il servizio di linguaggio deve elaborare i relativi comandi nel contesto dell'editor associata.  
+- **Editor** editor solo uno possono essere attive contemporaneamente. Sono disponibili comandi dall'editor attivo. Un editor collabora con un servizio di linguaggio. Il servizio di linguaggio deve elaborare i relativi comandi nel contesto dell'editor associata.  
   
--   **Tipo di file** un editor può caricare più di un tipo di file. I comandi disponibili possono variare a seconda del tipo di file.  
+- **Tipo di file** un editor può caricare più di un tipo di file. I comandi disponibili possono variare a seconda del tipo di file.  
   
--   **Finestra attiva** l'ultima finestra di documento attivo imposta il contesto dell'interfaccia utente per i tasti di scelta rapida. Tuttavia, una finestra degli strumenti con una tabella di chiave di associazione che è simile al Web browser interno è stato possibile impostare anche il contesto dell'interfaccia utente. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diversi GUID. Dopo aver registrata una finestra degli strumenti, è sempre disponibile nel **vista** menu.  
+- **Finestra attiva** l'ultima finestra di documento attivo imposta il contesto dell'interfaccia utente per i tasti di scelta rapida. Tuttavia, una finestra degli strumenti con una tabella di chiave di associazione che è simile al Web browser interno è stato possibile impostare anche il contesto dell'interfaccia utente. Per le finestre di documento a più schede, ad esempio l'editor HTML, ogni scheda ha un contesto di comandi diversi GUID. Dopo aver registrata una finestra degli strumenti, è sempre disponibile nel **vista** menu.  
   
--   **Contesto dell'interfaccia utente** contesti dell'interfaccia utente sono identificati da valori del <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> classe, ad esempio <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> quando viene compilata la soluzione, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> quando il debugger è attivo. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.  
+- **Contesto dell'interfaccia utente** contesti dell'interfaccia utente sono identificati da valori del <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT> classe, ad esempio <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid> quando viene compilata la soluzione, o <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid> quando il debugger è attivo. Più contesti dell'interfaccia utente possono essere attivi contemporaneamente.  
   
 ## <a name="defining-custom-context-guids"></a>Che definisce i GUID di contesto personalizzato  
  Se un contesto di comandi appropriata che GUID non è già definito, è possibile definire uno nel pacchetto VSPackage e programmarlo per essere attivi o inattivi in base alle esigenze per controllare la visibilità dei comandi.  
   
-1.  Registra i GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> (metodo).  
+1. Registra i GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> (metodo).  
   
-2.  Ottenere lo stato di un GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> (metodo).  
+2. Ottenere lo stato di un GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> (metodo).  
   
-3.  Attivare e disattivare i GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> (metodo).  
+3. Attivare e disattivare i GUID di contesto chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> (metodo).  
   
     > [!CAUTION]
     >  Assicurarsi che il pacchetto VSPackage non interferenze con qualsiasi contesto esistente GUID perché altri pacchetti VSPackage potrebbero dipendono da essi.  

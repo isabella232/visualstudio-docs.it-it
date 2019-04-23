@@ -10,35 +10,35 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80aed463b2d8ef9d083940a8966574e778623ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085522"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione dei servizi di linguaggio e dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'editor fornisce punti di estensione che è possibile estendere come parti componente Managed Extensibility Framework (MEF), tra cui la maggior parte delle funzionalità del servizio linguaggio. Ecco le categorie di punto di estensione principale:  
   
--   Tipi di contenuto  
+- Tipi di contenuto  
   
--   Tipi di classificazione e formati di classificazione  
+- Tipi di classificazione e formati di classificazione  
   
--   Le barre di scorrimento e i margini  
+- Le barre di scorrimento e i margini  
   
--   Tag  
+- Tag  
   
--   Aree di controllo  
+- Aree di controllo  
   
--   Processori del mouse  
+- Processori del mouse  
   
--   Gestori di rilascio  
+- Gestori di rilascio  
   
--   Opzioni  
+- Opzioni  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>Estensione di tipi di contenuto  
  I tipi di contenuto sono le definizioni dei tipi di testo gestite dall'editor, ad esempio, "text", "code" o "CSharp". Definire un nuovo tipo di contenuto dichiarando una variabile del tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> e fornendo il nuovo tipo di contenuto di un nome univoco. Per registrare il tipo di contenuto con l'editor, esportarlo con gli attributi seguenti:  
@@ -409,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: il formato di testo per il quale il gestore del trascinamento è valido. I formati seguenti vengono gestiti in ordine di priorità dal valore più alto al più basso:  
   
-  1.  Formati personalizzati  
+  1. Formati personalizzati  
   
-  2.  FileDrop  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  DIF  
+  6. DIF  
   
-  7.  Impostazioni locali  
+  7. Impostazioni locali  
   
-  8.  Tavolozza  
+  8. Tavolozza  
   
   9. PenData  
   
@@ -507,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Implementazione di un'origine di IntelliSense  
  Per personalizzare un'origine, è necessario implementare uno (o più) delle interfacce di origine seguenti:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Inoltre, è necessario implementare un provider dello stesso tipo:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  È necessario esportare il provider con gli attributi seguenti:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome dell'origine.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: il nome dell'origine.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") a cui si applica l'origine.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: il tipo di contenuto (ad esempio, "text" o "code") a cui si applica l'origine.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui l'origine deve essere visualizzato (in relazione ad altre origini).  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: l'ordine in cui l'origine deve essere visualizzato (in relazione ad altre origini).  
   
--   Nell'esempio seguente illustra gli attributi di esportazione in un provider di origine di completamento.  
+- Nell'esempio seguente illustra gli attributi di esportazione in un provider di origine di completamento.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  

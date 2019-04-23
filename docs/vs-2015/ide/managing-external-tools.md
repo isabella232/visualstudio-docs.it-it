@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866766"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084041"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "58866766"
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Strumenti disponibili nel Menu Strumenti di Visual Studio  
  È possibile chiamare i seguenti strumenti dal menu **Strumenti** in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È anche possibile chiamare gli strumenti nella finestra **Avvio veloce** usando il nome. Ad esempio, per chiamare GuidGen.exe, digitare **Crea GUID**.  
   
-1.  Crea GUID: genera un GUID.  
+1. Crea GUID: genera un GUID.  
   
-2.  Ricerca errori: ottiene un messaggio di errore dal valore immesso. Per altre informazioni, vedere [Riferimenti a ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Ricerca errori: ottiene un messaggio di errore dal valore immesso. Per altre informazioni, vedere [Riferimenti a ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
+3. Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
   
-4.  PreEmptive Protection - Dotfuscator: Protegge programmi .NET da attacchi di reverse engineering.  
+4. PreEmptive Protection - Dotfuscator: Protegge programmi .NET da attacchi di reverse engineering.  
   
-5.  SPY + +: Consente di visualizzare graficamente i processi, thread, windows e i messaggi della finestra.  
+5. SPY + +: Consente di visualizzare graficamente i processi, thread, windows e i messaggi della finestra.  
   
-6.  Editor configurazione servizi WCF: Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
+6. Editor configurazione servizi WCF: Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
   
 > [!WARNING]
 >  È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ ms.locfileid: "58866766"
 ## <a name="adding-new-tools"></a>Aggiunta di nuovi strumenti  
  È possibile aggiungere uno strumento esterno al menu **Strumenti**. Aprire la finestra di dialogo **Strumenti esterni**, fare clic su **Aggiungi**, quindi inserire le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:  
   
-1.  Titolo: Apri percorso File  
+1. Titolo: Apri percorso File  
   
-2.  Comando: explorer.exe  
+2. Comando: explorer.exe  
   
-3.  Argomenti: /root, "$(ItemDir)"  
+3. Argomenti: /root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Strumenti esterni - Argomenti  
  Gli argomenti seguenti sono variabili di Visual Studio assegnate all'avvio di uno strumento esterno. I collegamenti a strumenti esterni come Notepad o Spy++ possono essere elencati nel menu **Strumenti** usando la finestra di dialogo Strumenti esterni.  

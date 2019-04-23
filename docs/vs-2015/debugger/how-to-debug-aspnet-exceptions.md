@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967878"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083712"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Procedura: Eseguire il debug di eccezioni ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Il debug delle eccezioni è una parte importante dello sviluppo di una potente a
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Per attivare il debug delle eccezioni ASP.NET con Just My Code  
   
-1.  Scegliere **Eccezioni** dal menu **Debug**.  
+1. Scegliere **Eccezioni** dal menu **Debug**.  
   
      Verrà visualizzata la finestra di dialogo **Eccezioni**.  
   
-2.  Nella riga **Eccezioni Common Language Runtime** selezionare **Generata** o **Non gestita dall'utente**.  
+2. Nella riga **Eccezioni Common Language Runtime** selezionare **Generata** o **Non gestita dall'utente**.  
   
      Per utilizzare l'impostazione **Non gestita dall'utente**, è necessario attivare **Just My Code**.  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Procedure ottimali per la gestione delle eccezioni ASP.NET  
   
--   Collocare blocchi `try … catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Ad esempio, se l'applicazione effettua chiamate a un servizio Web XML o direttamente a un Server SQL, il codice dovrebbe trovarsi nel **try... catch** blocca perché vi sono numerose eccezioni che possono verificarsi.
+- Collocare blocchi `try … catch` attorno al codice che può generare eccezioni anticipabili e gestibili. Ad esempio, se l'applicazione effettua chiamate a un servizio Web XML o direttamente a un Server SQL, il codice dovrebbe trovarsi nel **try... catch** blocca perché vi sono numerose eccezioni che possono verificarsi.
