@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054781"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Per trovare una riga in un dataset tipizzato con un valore di chiave primaria  
   
--   Per individuare una riga, chiamare l'oggetto fortemente tipizzato `FindBy` metodo che usa la chiave primaria della tabella.  
+- Per individuare una riga, chiamare l'oggetto fortemente tipizzato `FindBy` metodo che usa la chiave primaria della tabella.  
   
      Nell'esempio seguente, il `CustomerID` colonna è la chiave primaria del `Customers` tabella. Ciò significa che il generato `FindBy` metodo `FindByCustomerID`. L'esempio illustra come assegnare una determinata <xref:System.Data.DataRow> a una variabile usando il generato `FindBy` (metodo).  
   
@@ -42,7 +42,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Per trovare una riga in un dataset non tipizzato con un valore di chiave primaria  
   
--   Chiamare il <xref:System.Data.DataRowCollection.Find%2A> metodo di un <xref:System.Data.DataRowCollection> insieme, passando la chiave primaria come parametro.  
+- Chiamare il <xref:System.Data.DataRowCollection.Find%2A> metodo di un <xref:System.Data.DataRowCollection> insieme, passando la chiave primaria come parametro.  
   
      Nell'esempio seguente viene illustrato come dichiarare una nuova riga chiamata `foundRow` e assegnare il valore restituito del <xref:System.Data.DataRowCollection.Find%2A> (metodo). Se la chiave primaria è trovata, il contenuto dell'indice di colonna 1 viene visualizzato in una finestra di messaggio.  
   
@@ -53,7 +53,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Per trovare le righe in base ai valori in qualsiasi colonna  
   
--   Le tabelle di dati vengono create con la<xref:System.Data.DataTable.Select%2A> metodo, che restituisce una matrice di <xref:System.Data.DataRow>s basato sull'espressione passata al <xref:System.Data.DataTable.Select%2A> (metodo). Per altre informazioni sulla creazione di espressioni valide, vedere la sezione "Sintassi di espressione" della pagina about il <xref:System.Data.DataColumn.Expression%2A> proprietà.  
+- Le tabelle di dati vengono create con la<xref:System.Data.DataTable.Select%2A> metodo, che restituisce una matrice di <xref:System.Data.DataRow>s basato sull'espressione passata al <xref:System.Data.DataTable.Select%2A> (metodo). Per altre informazioni sulla creazione di espressioni valide, vedere la sezione "Sintassi di espressione" della pagina about il <xref:System.Data.DataColumn.Expression%2A> proprietà.  
   
      Nell'esempio seguente viene illustrato come utilizzare il <xref:System.Data.DataTable.Select%2A> metodo di <xref:System.Data.DataTable> per individuare le righe specifiche.  
   
@@ -82,14 +82,14 @@ Inoltre, entrambe le tabelle devono essere occupata dai dati per tutti i record 
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Per restituire i record di un record padre selezionato figlio  
   
--   Chiamare il <xref:System.Data.DataRow.GetChildRows%2A> metodo di uno specifico `Customers` dei dati di riga e restituire una matrice di righe dal `Orders` tabella:  
+- Chiamare il <xref:System.Data.DataRow.GetChildRows%2A> metodo di uno specifico `Customers` dei dati di riga e restituire una matrice di righe dal `Orders` tabella:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Per restituire il record padre di un record figlio selezionato  
   
--   Chiamare il <xref:System.Data.DataRow.GetParentRow%2A> metodo di uno specifico `Orders` riga di dati e restituire una singola riga dal `Customers` tabella:  
+- Chiamare il <xref:System.Data.DataRow.GetParentRow%2A> metodo di uno specifico `Orders` riga di dati e restituire una singola riga dal `Customers` tabella:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

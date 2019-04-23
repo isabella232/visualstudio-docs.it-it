@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052213"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Eseguire app di Windows Phone nell'emulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
  Insieme a Visual Studio, l'emulatore offre un ambiente completo in cui puoi progettare, sviluppare e testare le app Windows Phone, nonché eseguirne il debug.  
   
-##  <a name="BKMK_run"></a> Eseguire un'app Windows Phone nell'emulatore  
+## <a name="BKMK_run"></a> Eseguire un'app Windows Phone nell'emulatore  
  Quando sviluppi un'app Windows Phone, puoi usare l'emulatore Windows Phone per distribuire e testare rapidamente l'app. Ti consigliamo, tuttavia, di testare l'app in un dispositivo Windows Phone reale prima di pubblicarla in Windows Phone Store. In questo modo potrai provare l'app sperimentando la stessa esperienza che proverà l'utente.  
   
  Quando esegui un'app Windows Phone per la prima volta nell'emulatore Windows Phone, si verificano gli eventi seguenti:  
@@ -50,17 +50,17 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
 > [!TIP]
 >  Quando testi l'app nell'emulatore, lascia aperto l'emulatore tra le sessioni di debug per poter eseguire di nuovo l'app rapidamente.  
   
-###  <a name="BKMK_vs"></a> Eseguire un'app da Visual Studio  
+### <a name="BKMK_vs"></a> Eseguire un'app da Visual Studio  
   
 ##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Per distribuire ed eseguire un'app da Visual Studio  
   
-1.  In Visual Studio apri un progetto Windows Phone.  
+1. In Visual Studio apri un progetto Windows Phone.  
   
-2.  Nel **Standard** sulla barra degli strumenti, selezionare uno degli emulatori disponibili.  
+2. Nel **Standard** sulla barra degli strumenti, selezionare uno degli emulatori disponibili.  
   
      ![Elenco di immagini dell'emulatore Windows Phone](../debugger/media/wp-emulator-list.png "WP_Emulator_list")  
   
-3.  Per distribuire ed eseguire l'app con il debug, scegliere il **Debug** menu, fare clic su **Avvia debug**, oppure premere F5.  
+3. Per distribuire ed eseguire l'app con il debug, scegliere il **Debug** menu, fare clic su **Avvia debug**, oppure premere F5.  
   
      Distribuire ed eseguire l'app senza debug, scegliere il **Debug** menu, fare clic su **Avvia senza eseguire debug**, oppure premere Ctrl + F5.  
   
@@ -80,32 +80,32 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Per riavviare un'app senza eseguire il debug  
   
-1.  Nell'emulatore, nella schermata iniziale, scorri rapidamente verso sinistra per visualizzare l'elenco di app.  
+1. Nell'emulatore, nella schermata iniziale, scorri rapidamente verso sinistra per visualizzare l'elenco di app.  
   
-2.  Nell'elenco tocca l'icona dell'app. L'app viene riavviata senza eseguire il debug.  
+2. Nell'elenco tocca l'icona dell'app. L'app viene riavviata senza eseguire il debug.  
   
 ##### <a name="to-deactivate-a-running-app"></a>Per disattivare un'app in esecuzione  
   
-1.  Prima di eseguire l'app, in Visual Studio, fare clic sul progetto in Esplora soluzioni e quindi selezionare **delle proprietà** per aprire **creazione progetti**.  
+1. Prima di eseguire l'app, in Visual Studio, fare clic sul progetto in Esplora soluzioni e quindi selezionare **delle proprietà** per aprire **creazione progetti**.  
   
-2.  In **creazione progetti**via il **Debug** pagina, lasciare il **per la rimozione definitiva al momento della disattivazione durante il debug** casella deselezionata se si desidera che l'app passi a un'inattive stato quando disattivata. Seleziona la casella di controllo se desideri che l'app venga rimossa definitivamente quando viene disattivata.  
+2. In **creazione progetti**via il **Debug** pagina, lasciare il **per la rimozione definitiva al momento della disattivazione durante il debug** casella deselezionata se si desidera che l'app passi a un'inattive stato quando disattivata. Seleziona la casella di controllo se desideri che l'app venga rimossa definitivamente quando viene disattivata.  
   
-3.  Nel **Debug** menu, fare clic su **Avvia debug**, oppure premere F5 per eseguire l'app.  
+3. Nel **Debug** menu, fare clic su **Avvia debug**, oppure premere F5 per eseguire l'app.  
   
-4.  Nell'emulatore, premere il **avviare** pulsante. Viene visualizzata la schermata iniziale e l'app viene disattivata. L'app passa a uno stato inattivo oppure viene rimossa definitivamente, a seconda dell'impostazione delle **per la rimozione definitiva al momento della disattivazione durante il debug** casella di controllo.  
+4. Nell'emulatore, premere il **avviare** pulsante. Viene visualizzata la schermata iniziale e l'app viene disattivata. L'app passa a uno stato inattivo oppure viene rimossa definitivamente, a seconda dell'impostazione delle **per la rimozione definitiva al momento della disattivazione durante il debug** casella di controllo.  
   
 ##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>Per riattivare un'app inattiva o rimossa definitivamente  
   
--   Nell'emulatore, premere il **nuovamente** per tornare all'app. Se sei passato ad altre pagine o hai aperto un'altra app, si potrebbe essere necessario premere il **nuovamente** pulsante più di una volta per riattivare l'app.  
+- Nell'emulatore, premere il **nuovamente** per tornare all'app. Se sei passato ad altre pagine o hai aperto un'altra app, si potrebbe essere necessario premere il **nuovamente** pulsante più di una volta per riattivare l'app.  
   
      La sessione di debug viene ripresa. Se il debugger si è scollegato dall'app, potrebbe essere necessario premere F5 per riprendere la sessione di debug.  
   
-###  <a name="BKMK_depltool"></a> Eseguire un'app con lo strumento distribuzione applicazione  
+### <a name="BKMK_depltool"></a> Eseguire un'app con lo strumento distribuzione applicazione  
  È anche possibile usare lo strumento distribuzione applicazione Windows Phone (**AppDeploy.exe**) per eseguire l'app nell'emulatore. Questo strumento è un'app autonoma che viene installata al momento dell'installazione degli strumenti di sviluppo di Windows Phone.  
   
  Per altre informazioni, vedi [app di distribuzione di Windows Phone 8.1 con lo strumento distribuzione applicazione](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
-##  <a name="BKMK_toolbar"></a> Configurare l'emulatore Windows Phone con la barra degli strumenti dell'emulatore  
+## <a name="BKMK_toolbar"></a> Configurare l'emulatore Windows Phone con la barra degli strumenti dell'emulatore  
  La tabella seguente mostra i pulsanti di configurazione disponibili sulla barra degli strumenti dell'emulatore.  
   
 |Pulsanti della barra degli strumenti|Opzioni di configurazione|  
@@ -114,7 +114,7 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
 |![Orientamento sulla barra degli strumenti dell'emulatore Windows Phone](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Configurazione dell'orientamento dell'emulatore**<br /><br /> Puoi modificare l'orientamento nell'emulatore Windows Phone scegliendo una delle tre opzioni disponibili: verticale, orizzontale verso sinistra o orizzontale verso destra. Le dimensioni dell'emulatore non cambiano quando modifichi l'orientamento.<br /><br /> Per modificare l'orientamento, scegliere il **Ruota a sinistra** pulsante o il **Ruota a destra** pulsante.|  
 |![Ridimensionare le opzioni nella barra degli strumenti dell'emulatore Windows Phone](../debugger/media/wp-emulator-size.png "WP_Emulator_size")|**Configurare le dimensioni dell'emulatore**<br /><br /> Puoi modificare le dimensioni dell'emulatore sullo schermo del computer host. I punti per pollice (DPI, Dots Per Inch) per l'emulatore sono basati sul valore DPI del monitor host, indipendentemente dal valore dello zoom.<br /><br /> -Per adattare l'emulatore allo schermo, scegliere il **adatta allo schermo** pulsante.<br />-Per modificare l'impostazione dello zoom, scegliere il **Zoom** pulsante. Il **Zoom** verrà visualizzata la finestra di dialogo. Nel **Zoom** finestra di dialogo immettere un valore di zoom compreso tra 33 e 100.|  
   
-##  <a name="BKMK_buttons"></a> Usare i pulsanti hardware simulati nell'emulatore  
+## <a name="BKMK_buttons"></a> Usare i pulsanti hardware simulati nell'emulatore  
  Per simulare l'utilizzo dei pulsanti hardware di un telefono, puoi usare i pulsanti hardware simulati sul lato destro dello schermo dell'emulatore.  
   
 - Scegliere il **Power** pulsante per simulare l'attivazione e disattivare la visualizzazione. Fai clic e tieni premuto per simulare lo spegnimento del telefono.  
@@ -133,7 +133,7 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
    ![I pulsanti nell'emulatore Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> Usare la tastiera del computer con l'emulatore  
+## <a name="BKMK_tasks_kbd"></a> Usare la tastiera del computer con l'emulatore  
  L'emulatore consente di mappare la tastiera hardware del computer di sviluppo alla tastiera di un dispositivo Windows Phone. Il comportamento dei tasti corrisponde a quello in un dispositivo Windows Phone.  
   
  Per impostazione predefinita, la tastiera hardware non è abilitata. Questa implementazione equivale a una tastiera scorrevole che deve essere distribuita per poter essere usata. Prima di abilitare la tastiera hardware, l'emulatore accetta l'input solo dai tasti CTRL.  
@@ -165,7 +165,7 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
 |PGSU|Abilita la tastiera hardware (solo per l'emulatore di Windows 8/8.1).|Non applicabile per l'emulatore di Windows 10.|  
 |PGGIÙ|Disabilita la tastiera hardware (solo per l'emulatore di Windows 8/8.1).|Non applicabile per l'emulatore di Windows 10.|  
   
-##  <a name="BKMK_checkpoints"></a> Salvare e caricare checkpoint personalizzati  
+## <a name="BKMK_checkpoints"></a> Salvare e caricare checkpoint personalizzati  
  Salvare uno snapshot dello stato dell'emulatore utilizzando il **checkpoint** scheda nell'emulatore **strumenti aggiuntivi**. Questa funzionalità è utile se testi frequentemente l'app con gli stessi dati e le stesse impostazioni.  
   
  Se, ad esempio, l'app richiede diversi contatti, puoi creare i record dei contatti una volta e salvare uno snapshot dell'emulatore. In caso contrario, dovrai ricreare i record dei contatti ogni volta che avvii l'emulatore.  
@@ -186,7 +186,7 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
   ![Scheda checkpoints dell'emulatore Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> Acquisire schermate nell'emulatore  
+## <a name="BKMK_tasks_shot"></a> Acquisire schermate nell'emulatore  
  Puoi creare schermate delle app Windows Phone usando lo strumento per l'acquisizione delle schermate disponibile nella finestra Strumenti aggiunti. Lo strumento crea file PNG corrispondenti alla risoluzione dell'emulatore in esecuzione.  
   
  ![Screenshot del Windows Phone emulatore](../debugger/media/wp-emulator-screenshots.png "WP_Emulator_screenshots")  
@@ -217,6 +217,6 @@ L'emulatore di Windows Phone fornisce un ambiente virtualizzato che ti consente 
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Per disabilitare i contatori della frequenza dei fotogrammi nell'emulatore prima di acquisire le schermate  
   
--   Specifica una build di rilascio in Visual Studio. Dopo aver specificato una build di rilascio, avviare l'app selezionando il **Deploy _[nome app]_**  sul collegamento di **compilare** menu.  
+- Specifica una build di rilascio in Visual Studio. Dopo aver specificato una build di rilascio, avviare l'app selezionando il **Deploy _[nome app]_**  sul collegamento di **compilare** menu.  
   
--   In alternativa, puoi impostare come commento la riga di codice nel file app.xaml.cs o app.xaml.vb che imposta il valore di `EnableFrameRateCounter` su `true`.
+- In alternativa, puoi impostare come commento la riga di codice nel file app.xaml.cs o app.xaml.vb che imposta il valore di `EnableFrameRateCounter` su `true`.

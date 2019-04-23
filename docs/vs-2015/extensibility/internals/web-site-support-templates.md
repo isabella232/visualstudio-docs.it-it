@@ -10,12 +10,12 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fce793b077460f2c141de0a75d612bb9254f7b3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca7768f31219328648d457d188086e0185e2ffc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044374"
 ---
 # <a name="web-site-support-templates"></a>Modelli di supporto per siti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,66 +35,66 @@ ms.locfileid: "58970033"
 ## <a name="project-templates"></a>Modelli di progetto  
  Modelli di progetto sito Web vengono utilizzati per creare nuovi siti Web in risposta al **nuovo sito Web** comando le **File** menu. Attualmente sono supportati tre tipi di progetto di sito Web:  
   
--   Progetti di sito Web vuoto  
+- Progetti di sito Web vuoto  
   
--   Progetti di siti Web  
+- Progetti di siti Web  
   
--   Progetti di servizi Web  
+- Progetti di servizi Web  
   
 ### <a name="empty-web-site-projects"></a>Progetti di sito Web vuoto  
  Questi file creano un nuovo sito Web vuoto in risposta al **sito Web vuoto** comando, che è disponibile dopo aver scelto **nuovo sito Web** sul **File** menu:  
   
--   EmptyWeb.vstemplate  
+- EmptyWeb.vstemplate  
   
      Il file di modello che descrive la creazione del nuovo sito Web vuoto.  
   
--   EmptyWeb.webproj  
+- EmptyWeb.webproj  
   
      Questo file è un elemento del sistema del modello di progetto. Il riferimento al file di progetto nel file EmptyWeb.vstemplate soddisfa.  
   
 ### <a name="web-site-projects"></a>Progetti di siti Web  
  Questi file creano un nuovo sito Web in risposta al **sito Web ASP.NET** comando, che è disponibile dopo aver scelto **nuovo sito Web** sul **File** menu:  
   
--   Default.aspx  
+- Default.aspx  
   
      La home page predefinita per il nuovo sito Web. L'attributo della lingua specifica la lingua di codebehind e l'attributo CodeFile specifica il file dipendente che contiene il codice di codebehind associato a questa pagina.  
   
--   Default. aspx. *estensione*  
+- Default. aspx. *estensione*  
   
      Il file dipendente che contiene il codice sottostante per la home page predefinita. La lingua di codebehind determina la *estensione* di questo file.  
   
--   web.config  
+- web.config  
   
      Il file di configurazione web.site radice.  
   
--   WebApplication.vstemplate  
+- WebApplication.vstemplate  
   
      Il file di modello che determina il contenuto della soluzione di siti Web e forza la creazione della cartella App_Data.  
   
--   WebApplication.webproj  
+- WebApplication.webproj  
   
      Questo file è un elemento del sistema del modello di progetto. Il riferimento al file di progetto nel file WebApplication.vstemplate soddisfa.  
   
 ### <a name="web-service-projects"></a>Progetti di servizi Web  
  Questi file creano un nuovo sito Web in risposta al **servizio Web ASP.NET** comando disponibile dopo aver scelto **nuovo sito Web** sul **File** menu:  
   
--   Service.asmx  
+- Service.asmx  
   
      La pagina HTML per il nuovo servizio Web. L'attributo della lingua specifica la lingua di codebehind e l'attributo CodeBehind specifica il file dipendente che contiene il codice di codebehind associato al servizio.  
   
--   Servizio. *extension*  
+- Servizio. *extension*  
   
      Il file dipendente che implementa la classe del servizio. La lingua di codebehind determina la *estensione* di questo file.  
   
--   web.config  
+- web.config  
   
--   Il file di configurazione web.site radice.  
+- Il file di configurazione web.site radice.  
   
--   WebService.vstemplate  
+- WebService.vstemplate  
   
      Il file di modello che determina il contenuto della soluzione di siti Web e forza la creazione delle cartelle App_Data e App_Code. Il servizio. *estensione* file viene copiato nella cartella App_Code.  
   
--   WebService.webproj  
+- WebService.webproj  
   
      Questo file è un elemento del sistema del modello di progetto. Il riferimento al file di progetto nel file WebService.vstemplate soddisfa.  
   
@@ -104,33 +104,33 @@ ms.locfileid: "58970033"
 ## <a name="project-item-templates"></a>I modelli di progetto  
  I modelli di progetto sito Web consentono di aggiungere nuove pagine Web a un sito Web in risposta al **Aggiungi elemento esistente** comando. Questi tipi di pagine Web sono attualmente supportati:  
   
--   Nuova classe  
+- Nuova classe  
   
--   Nuova pagina HTML  
+- Nuova pagina HTML  
   
--   Nuovo modulo Web  
+- Nuovo modulo Web  
   
--   Nuova pagina master  
+- Nuova pagina master  
   
 ### <a name="new-class"></a>Nuova classe  
  Questo modello crea un nuovo file di origine che definisce una classe vuota in risposta al **Aggiungi una nuova classe** comando.  
   
--   Class. *extension*  
+- Class. *extension*  
   
      File di origine che implementa la classe vuota. La lingua di codebehind determina la *estensione* di questo file.  
   
--   Class.vstemplate  
+- Class.vstemplate  
   
      Il file di modello che crea il file di origine e determina il relativo contenuto.  
   
 ### <a name="new-html-page"></a>Nuova pagina HTML  
  Questo modello crea una nuova pagina Web in risposta al **Aggiungi nuova pagina HTML** comando.  
   
--   HTMLPage.htm  
+- HTMLPage.htm  
   
      Il contenuto inizio della pagina Web. Questa pagina Web non include in genere alcun file dipendente codebehind associato. Per creare una pagina intelligente con un file codebehind associati, usare invece il modello Web Form.  
   
--   HTMLPage.vstemplate  
+- HTMLPage.vstemplate  
   
      Il file di modello che crea la pagina Web e determina il relativo contenuto.  
   
@@ -141,27 +141,27 @@ ms.locfileid: "58970033"
   
  Per creare una pagina di contenuto per una pagina master selezionata, selezionare **Seleziona pagina master**.  
   
--   WebForm.aspx  
+- WebForm.aspx  
   
      Il contenuto inizio della pagina Web. Questa pagina Web non dispone di alcun file dipendente codebehind associato.  
   
--   WebForm_cb.aspx  
+- WebForm_cb.aspx  
   
      Il contenuto inizio della pagina Web. Questa pagina Web è un file dipendente codebehind associato.  
   
--   Codebehind. *extension*  
+- Codebehind. *extension*  
   
      Il file dipendente che implementa la classe di Web Form. La lingua di codebehind determina la *estensione* di questo file.  
   
--   ContentPage.aspx  
+- ContentPage.aspx  
   
      Il contenuto inizio della pagina Web come una pagina di contenuto. Questa pagina Web non dispone di alcun file dipendente codebehind associato.  
   
--   ContentPage_cb.aspx  
+- ContentPage_cb.aspx  
   
      Il contenuto inizio della pagina Web come una pagina di contenuto. Questa pagina Web è un file dipendente codebehind associato.  
   
--   WebForm.vstemplate  
+- WebForm.vstemplate  
   
      Il file di modello che determina il contenuto della nuova pagina web e il file dei dipendenti, se presente.  
   
@@ -170,19 +170,19 @@ ms.locfileid: "58970033"
   
  Per creare un file di origine dipendente codebehind, selezionare **Inserisci codice in file separati**. In caso contrario, una singola pagina Web viene creata con un blocco di script vuoto e nessun \<% % pagina > direttive per associare un file dipendente.  
   
--   MasterPage.master  
+- MasterPage.master  
   
      Il contenuto inizio della pagina master. Questa pagina master non include alcun file dipendente codebehind associato.  
   
--   MasterPage_cb.master  
+- MasterPage_cb.master  
   
      Il contenuto inizio della pagina master. Questa pagina master è un file dipendente codebehind associato.  
   
--   Codebehind.*extension*  
+- Codebehind.*extension*  
   
      Il file dipendente che implementa la classe di pagina master. La lingua di codebehind determina la *estensione* di questo file.  
   
--   MasterPage.vstemplate  
+- MasterPage.vstemplate  
   
      Il file di modello che determina il contenuto della nuova pagina master e il file dei dipendenti, se presente.  
   

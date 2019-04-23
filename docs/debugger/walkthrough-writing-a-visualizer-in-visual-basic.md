@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050889"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic
 In questa procedura dettagliata viene descritto come utilizzare [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] per scrivere un visualizzatore semplice che consente di visualizzare il contenuto di una stringa in una finestra di messaggio di Windows Form. Questo visualizzatore semplice di stringhe è un esempio base per illustrare la creazione di visualizzatori per altri tipi di dati più applicabili ai progetti.
@@ -106,15 +106,15 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 ### <a name="to-add-systemwindowsforms"></a>Per aggiungere System.Windows.Forms
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti** e scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
 2. Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, seleziona **Sfoglia**e trovare il Forms.
 
     È possibile trovare la DLL nella *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-3.  Fare clic su **OK**.
+3. Fare clic su **OK**.
 
-4.  In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `Imports`:
+4. In DebuggerSide.cs aggiungere l'istruzione seguente alle istruzioni `Imports`:
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Per visualizzare l'output del visualizzatore in una finestra di dialogo
 
-1.  Nel metodo `Show` aggiungere la riga di codice seguente:
+1. Nel metodo `Show` aggiungere la riga di codice seguente:
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
      Questo codice di esempio non include la gestione degli errori. In un vero visualizzatore o in un qualsiasi altro tipo di applicazione è consigliabile includere la gestione degli errori.
 
-2.  Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
 
 ## <a name="add-the-necessary-attribute"></a>Aggiungere l'attributo necessario
  Il codice sul lato debugger è stato completato. È tuttavia necessario eseguire un altro passaggio, ovvero specificare l'attributo che indica al lato dell'oggetto del debug la raccolta di classi che comprende il visualizzatore.
 
 ### <a name="to-add-the-debugee-side-code"></a>Per aggiungere il codice del lato oggetto del debug
 
-1.  Aggiungere il codice di attributo seguente a DebuggerSide.vb, dopo le istruzioni `Imports` ma prima di `namespace MyFirstVisualizer`:
+1. Aggiungere il codice di attributo seguente a DebuggerSide.vb, dopo le istruzioni `Imports` ma prima di `namespace MyFirstVisualizer`:
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
+2. Scegliere **Compila MyFirstVisualizer** dal menu **Compila**. La compilazione del progetto dovrebbe avvenire senza problemi. Correggere gli eventuali errori di compilazione prima di continuare.
 
 ## <a name="create-a-test-harness"></a>Creare un test harness
  A questo punto il visualizzatore è pronto. Se la procedura è stata completata in modo corretto, è possibile compilare il visualizzatore e installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Prima di installare un visualizzatore in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è tuttavia consigliabile testarlo per assicurarsi che funzioni in modo corretto. Di seguito viene descritto come creare un test harness per eseguire il visualizzatore senza installarlo in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -183,17 +183,17 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Per aggiungere riferimenti necessari a MyTestConsole
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **MyTestConsole**, quindi scegliere **Aggiungi riferimento** dal menu di scelta rapida.
 
-2.  Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, fare clic su DebuggerVisualizers.
+2. Nel **Aggiungi riferimento** finestra di dialogo il **Sfoglia** scheda, fare clic su DebuggerVisualizers.
 
-3.  Fare clic su **OK**.
+3. Fare clic su **OK**.
 
-4.  Fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere nuovamente **Aggiungi riferimento**.
+4. Fare clic con il pulsante destro del mouse su **MyTestConsole** e scegliere nuovamente **Aggiungi riferimento**.
 
-5.  Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Progetti** e selezionare MyFirstVisualizer.
+5. Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **Progetti** e selezionare MyFirstVisualizer.
 
-6.  Fare clic su **OK**.
+6. Fare clic su **OK**.
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Completare il test harness ed eseguire il test del visualizzatore
  A questo punto verrà aggiunto il codice per completare il test harness.

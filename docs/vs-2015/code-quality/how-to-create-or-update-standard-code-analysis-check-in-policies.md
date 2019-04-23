@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58965805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053156"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ ms.locfileid: "58965805"
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Per aprire l'editor Criteri di archiviazione  
   
-1.  In Team Explorer, fare clic sul nome del progetto team, scegliere **le impostazioni del progetto Team**, quindi fare clic su **controllo del codice sorgente**.  
+1. In Team Explorer, fare clic sul nome del progetto team, scegliere **le impostazioni del progetto Team**, quindi fare clic su **controllo del codice sorgente**.  
   
-2.  Nel **controllo del codice sorgente** finestra di dialogo, seleziona la **dei criteri di archiviazione** scheda.  
+2. Nel **controllo del codice sorgente** finestra di dialogo, seleziona la **dei criteri di archiviazione** scheda.  
   
-3.  Eseguire una delle operazioni seguenti:  
+3. Eseguire una delle operazioni seguenti:  
   
-    -   Fare clic su **Add** per creare un nuovo criterio di controllo.  
+    - Fare clic su **Add** per creare un nuovo criterio di controllo.  
   
-    -   Fare doppio clic su esistente **analisi del codice** degli elementi nella **tipo di criterio** elenco per modificare i criteri.  
+    - Fare doppio clic su esistente **analisi del codice** degli elementi nella **tipo di criterio** elenco per modificare i criteri.  
   
 ### <a name="to-set-policy-options"></a>Per impostare le opzioni dei criteri  
   
--   Selezionare o deselezionare le opzioni seguenti:  
+- Selezionare o deselezionare le opzioni seguenti:  
   
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ ms.locfileid: "58965805"
     |**Applicare analisi del codice C/C++ (/analyze)**|Richiede che tutti i progetti C o C++ deve essere compilato con la /ANALYZE opzione del compilatore per eseguire l'analisi del codice prima che possano essere archiviati.|  
     |**Applicare l'analisi del codice per il codice gestito**|Richiede che tutti i progetti gestiti Esegui analisi del codice e compilare prima che possano essere archiviati.|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>Per specificare un set di regole gestite  
   
--   Dal **eseguire questo set di regole** elencare, usare uno dei metodi seguenti:  
+- Dal **eseguire questo set di regole** elencare, usare uno dei metodi seguenti:  
   
-    -   Selezionare un set di regole standard Microsoft.  
+    - Selezionare un set di regole standard Microsoft.  
   
-    -   Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >**, quindi digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:  
+    - Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >**, quindi digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Per altre informazioni su come creare ed implementare una regola di criteri di archiviazione personalizzati, vedere [criteri di controllo che implementa personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    - Per altre informazioni su come creare ed implementare una regola di criteri di archiviazione personalizzati, vedere [criteri di controllo che implementa personalizzati per codice gestito](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione e uso di criteri di archiviazione di analisi codice](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

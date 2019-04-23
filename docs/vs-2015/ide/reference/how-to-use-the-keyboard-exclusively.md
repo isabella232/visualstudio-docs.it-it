@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c4cb5e4eadafb4ce3ea7600a2a179689945b9f16
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051583"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: utilizzare esclusivamente la tastiera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,48 +51,48 @@ ms.locfileid: "59655361"
   
 #### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Per impostare le opzioni di una finestra di dialogo tramite tastiera  
   
-1.  Usare **TAB** o **MAIUSC + TAB** per spostarsi in alto o in basso tra i controlli della finestra di dialogo.  
+1. Usare **TAB** o **MAIUSC + TAB** per spostarsi in alto o in basso tra i controlli della finestra di dialogo.  
   
-2.  Per modificare le impostazioni delle opzioni:  
+2. Per modificare le impostazioni delle opzioni:  
   
-    -   Per modificare la selezione di un pulsante di opzione, usare **Freccia SU** e **Freccia GIÙ**.  
+    - Per modificare la selezione di un pulsante di opzione, usare **Freccia SU** e **Freccia GIÙ**.  
   
-    -   Per selezionare o deselezionare una casella di controllo, usare la **BARRA SPAZIATRICE**.  
+    - Per selezionare o deselezionare una casella di controllo, usare la **BARRA SPAZIATRICE**.  
   
-    -   Per un elenco a discesa, usare **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.  
+    - Per un elenco a discesa, usare **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.  
   
-    -   Per azionare un pulsante, premere **INVIO**.  
+    - Per azionare un pulsante, premere **INVIO**.  
   
-    -   Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa all'interno di una griglia, usare **MAIUSC** + **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.  
+    - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa all'interno di una griglia, usare **MAIUSC** + **ALT** + **FRECCIA GIÙ** per visualizzare le voci e quindi usare **FRECCIA SU** e **FRECCIA GIÙ** per selezionare un'altra voce.  
   
 ## <a name="window-and-file-navigation"></a>Spostamento tra finestre e file  
  L'IDE prevede diversi modi per spostarsi tra le finestre aperte di documenti e strumenti tramite la tastiera. Con la tastiera è anche possibile spostare e ancorare le finestre degli strumenti in posizioni diverse.  
   
 #### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Per spostarsi da una finestra all'altra e da uno strumento all'altro all'interno dell'IDE tramite tastiera  
   
--   Per passare da un file all'altro in un editor o in una finestra di progettazione, scegliere CTRL + TAB per visualizzare lo strumento di spostamento dell'IDE con l'opzione **File attivi** selezionata. Scegliere Invio per passare alla finestra evidenziata.  
+- Per passare da un file all'altro in un editor o in una finestra di progettazione, scegliere CTRL + TAB per visualizzare lo strumento di spostamento dell'IDE con l'opzione **File attivi** selezionata. Scegliere Invio per passare alla finestra evidenziata.  
   
--   Per spostarsi tra finestre degli strumenti ancorate, scegliere Alt + F7 per visualizzare lo strumento di spostamento dell'IDE con l'opzione **Finestre degli strumenti attive** selezionata. Scegliere Invio per passare alla finestra evidenziata.  
+- Per spostarsi tra finestre degli strumenti ancorate, scegliere Alt + F7 per visualizzare lo strumento di spostamento dell'IDE con l'opzione **Finestre degli strumenti attive** selezionata. Scegliere Invio per passare alla finestra evidenziata.  
   
 #### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Per spostare e ancorare finestre degli strumenti tramite la tastiera  
   
-1.  Passare alla finestra degli strumenti che si vuole spostare, assegnando a questa lo stato attivo.  
+1. Passare alla finestra degli strumenti che si vuole spostare, assegnando a questa lo stato attivo.  
   
-2.  Nel menu **Finestra** fare clic su **Finestra ancorata**.  
+2. Nel menu **Finestra** fare clic su **Finestra ancorata**.  
   
-3.  Premere **ALT** + **Spazio** e quindi scegliere **Sposta**.  
+3. Premere **ALT** + **Spazio** e quindi scegliere **Sposta**.  
   
      Verrà visualizzata la guida a forma di rombo per l'ancoraggio.  
   
-4.  Usare i tasti di **DIREZIONE** per spostare la finestra in una nuova posizione.  
+4. Usare i tasti di **DIREZIONE** per spostare la finestra in una nuova posizione.  
   
      Durante l'uso dei tasti di **DIREZIONE** il puntatore del mouse si sposta con la finestra.  
   
-5.  Quando si raggiunge la nuova posizione, usare i tasti di **DIREZIONE** per spostare il puntatore del mouse sulla parte corretta della guida a forma di rombo.  
+5. Quando si raggiunge la nuova posizione, usare i tasti di **DIREZIONE** per spostare il puntatore del mouse sulla parte corretta della guida a forma di rombo.  
   
      Nella nuova posizione di ancoraggio viene visualizzato il contorno della finestra degli strumenti.  
   
-6.  Premere **INVIO**.  
+6. Premere **INVIO**.  
   
      La finestra degli strumenti scatterà in posizione nella nuova posizione di ancoraggio.  
   

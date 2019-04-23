@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051472"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procedura: Usare la finestra di progettazione variabili
 
@@ -25,13 +25,13 @@ La finestra di progettazione variabili consente di creare variabili da usare in 
 
 ## <a name="to-create-a-new-variable"></a>Per creare una nuova variabile
 
-1.  Aprire una soluzione del flusso di lavoro o attività in Visual Studio.
+1. Aprire una soluzione del flusso di lavoro o attività in Visual Studio.
 
-2.  Nell'area di progettazione selezionare un'attività nel flusso di lavoro.
+2. Nell'area di progettazione selezionare un'attività nel flusso di lavoro.
 
-3.  Aprire la finestra di progettazione variabile facendo il **variabili** pulsante nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
+3. Aprire la finestra di progettazione variabile facendo il **variabili** pulsante nell'angolo inferiore sinistro dell'area di progettazione. Verrà visualizzata la finestra di progettazione variabili.
 
-4.  Fare clic sulla riga vuota denominata **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile con i valori predefiniti seguenti: variablex per il **Name** dove x è di tipo integer e un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabili univoci,  **Stringa** per il **tipo di variabile**, e **sequenza** per i **ambito**. Non vengono aggiunti valori per **predefinito**. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
+4. Fare clic sulla riga vuota denominata **Crea variabile**. Verrà aggiunta una nuova riga con una nuova variabile con i valori predefiniti seguenti: variablex per il **Name** dove x è di tipo integer e un valore iniziale pari a 1 che viene incrementato automaticamente per creare nomi di variabili univoci,  **Stringa** per il **tipo di variabile**, e **sequenza** per i **ambito**. Non vengono aggiunti valori per **predefinito**. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.
 
     > [!NOTE]
     > Per eliminare una variabile, selezionare la variabile facendovi clic sopra e quindi premere il **eliminare** chiave.
@@ -40,4 +40,4 @@ La finestra di progettazione variabili consente di creare variabili da usare in 
 
 - [Uso di Progettazione flussi di lavoro](developing-applications-with-the-workflow-designer.md)
 - [Variabili e argomenti](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
-- [Procedura: Utilizzare la finestra di progettazione argomenti](../workflow-designer/how-to-use-the-argument-designer.md)
+- [Procedura: Usare la finestra di progettazione argomenti](../workflow-designer/how-to-use-the-argument-designer.md)

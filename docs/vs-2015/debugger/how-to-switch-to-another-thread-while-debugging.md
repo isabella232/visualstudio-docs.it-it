@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58955936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052441"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging"></a>Procedura: Passare a un altro Thread durante il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ Quando si esegue il debug di un'applicazione multithreading, è possibile utiliz
   
 ### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>Per passare a un thread visualizzato nella finestra Thread  
   
--   Fare doppio clic sul thread.  
+- Fare doppio clic sul thread.  
   
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>Per passare a un thread in una finestra di origine  
   
--   Nella barra di navigazione a sinistra, fare doppio clic su un indicatore del thread, scegliere **passare a**, quindi fare clic sul nome del thread al quale si desidera passare. Nel menu di scelta rapida vengono visualizzati solo i thread presenti in quella determinata posizione.  
+- Nella barra di navigazione a sinistra, fare doppio clic su un indicatore del thread, scegliere **passare a**, quindi fare clic sul nome del thread al quale si desidera passare. Nel menu di scelta rapida vengono visualizzati solo i thread presenti in quella determinata posizione.  
   
      Se viene visualizzato alcun indicatore, fare doppio clic nella **thread** finestra e verificare che **Mostra thread nell'origine** sia selezionata.  
   
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Per passare a un thread nella barra degli strumenti Posizione di debug  
   
-1.  Nel **posizione di Debug** sulla barra degli strumenti, fare clic sui **Thread** casella.  
+1. Nel **posizione di Debug** sulla barra degli strumenti, fare clic sui **Thread** casella.  
   
-2.  Nell'elenco, fare clic sul thread al quale si desidera passare.  
+2. Nell'elenco, fare clic sul thread al quale si desidera passare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire il debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)

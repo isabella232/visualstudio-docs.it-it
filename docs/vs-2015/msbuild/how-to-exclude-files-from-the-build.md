@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052559"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Per includere tutti i file con estensione cs o vb, tranne Form2  
   
--   Usare uno degli attributi `Include` e `Exclude` seguenti:  
+- Usare uno degli attributi `Include` e `Exclude` seguenti:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Per includere tutti i file con estensione cs o vb, tranne Form2 e Form3  
   
--   Usare uno degli attributi `Include` e `Exclude` seguenti:  
+- Usare uno degli attributi `Include` e `Exclude` seguenti:  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Per includere tutti i file con estensione jpg nelle sottodirectory della directory Images tranne quelli nella directory Version2  
   
--   Usare gli attributi `Include` e `Exclude` seguenti:  
+- Usare gli attributi `Include` e `Exclude` seguenti:  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Per includere il file Formula.vb solo nelle build di versione  
   
--   Usare un attributo `Condition` simile al seguente:  
+- Usare un attributo `Condition` simile al seguente:  
   
     ```  
     <Compile  

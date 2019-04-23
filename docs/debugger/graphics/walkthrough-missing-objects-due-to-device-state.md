@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047452"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo
 Questa procedura dettagliata descrive come usare Diagnostica grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa della configurazione non corretta dello stato del dispositivo.
 
  Questa procedura dettagliata illustra come:
 
--   Usare l' **Elenco eventi di grafica** per individuare le possibili origini del problema.
+- Usare l' **Elenco eventi di grafica** per individuare le possibili origini del problema.
 
--   Usare la finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .
+- Usare la finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .
 
--   Usare la finestra **Cronologia pixel grafica** per individuare il problema più nello specifico.
+- Usare la finestra **Cronologia pixel grafica** per individuare il problema più nello specifico.
 
--   Controllare lo stato del dispositivo per individuare potenziali problemi o errori di configurazione.
+- Controllare lo stato del dispositivo per individuare potenziali problemi o errori di configurazione.
 
 ## <a name="scenario"></a>Scenario
  Uno dei motivi per cui gli oggetti potrebbero non apparire nelle posizioni previste in un'app 3D è un errore di configurazione del dispositivo di grafica che causa l'esclusione dal rendering degli oggetti. Ad esempio, quando l'ordine dei vertici causa il culling erroneo dei triangoli o quando la funzione di test di profondità causa il rifiuto di tutti i pixel nell'oggetto.

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050760"
 ---
 # <a name="test-area-6-delete"></a>Area di test 6: Eliminare
 Quest'area del plug-in test di controllo del codice sorgente illustra le azioni di eliminazione.
@@ -36,13 +36,13 @@ Quest'area del plug-in test di controllo del codice sorgente illustra le azioni 
 ## <a name="expected-behavior"></a>Comportamento previsto
  Il comportamento previsto per i test case nell'area di test di delete è:
 
--   Elemento eliminato non è più visibile all'interno **Esplora soluzioni**.
+- Elemento eliminato non è più visibile all'interno **Esplora soluzioni**.
 
--   L'elemento padre del progetto eliminato o dell'elemento è stato estratto in base alle esigenze (eventualmente con un messaggio di richiesta.)
+- L'elemento padre del progetto eliminato o dell'elemento è stato estratto in base alle esigenze (eventualmente con un messaggio di richiesta.)
 
--   Dopo avere eliminato un checked out o elemento aggiunto, non viene visualizzato nei **archiviazioni in sospeso** finestra.
+- Dopo avere eliminato un checked out o elemento aggiunto, non viene visualizzato nei **archiviazioni in sospeso** finestra.
 
--   L'elemento è ancora presente all'interno dell'archivio di controllo di origine, anche dopo l'eliminazione e deve essere eliminato manualmente.
+- L'elemento è ancora presente all'interno dell'archivio di controllo di origine, anche dopo l'eliminazione e deve essere eliminato manualmente.
 
 |Operazione|Passi del test|Per verificare i risultati previsti|
 |------------|----------------|--------------------------------|

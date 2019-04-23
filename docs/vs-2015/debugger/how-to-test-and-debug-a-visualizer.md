@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d19fa9b1859e97b115ca0799520456c102fecac9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044096"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Procedura: Testare un visualizzatore ed eseguirne il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il deb
   
 ### <a name="to-create-a-visualizer-development-host"></a>Per creare un host di sviluppo del visualizzatore  
   
-1.  Nella classe del lato debugger includere un metodo statico che consenta di creare un oggetto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> e di chiamare il relativo metodo di visualizzazione:  
+1. Nella classe del lato debugger includere un metodo statico che consenta di creare un oggetto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> e di chiamare il relativo metodo di visualizzazione:  
   
     ```  
     public static void TestShowVisualizer(object objectToVisualize)  
@@ -48,7 +48,7 @@ Dopo avere scritto un visualizzatore, è necessario testarlo ed eseguirne il deb
   
      Come parametri per la costruzione dell'host vengono utilizzati l'oggetto dati che verrà mostrato nel visualizzatore (`objectToVisualize`) e il tipo della classe del lato debugger.  
   
-2.  Aggiungere l'istruzione riportata di seguito per chiamare `TestShowVisualizer`. Se il visualizzatore è stato creato in una libreria di classi, sarà necessario creare un eseguibile per chiamare la libreria di classi e inserire questa istruzione nell'eseguibile:  
+2. Aggiungere l'istruzione riportata di seguito per chiamare `TestShowVisualizer`. Se il visualizzatore è stato creato in una libreria di classi, sarà necessario creare un eseguibile per chiamare la libreria di classi e inserire questa istruzione nell'eseguibile:  
   
     ```  
     DebuggerSide.TestShowVisualizer(myString);  

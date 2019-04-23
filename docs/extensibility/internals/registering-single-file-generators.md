@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047189"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario registrarlo così [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile crearne un'istanza e la associa a un particolare tipo di progetto.
@@ -38,15 +38,15 @@ Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../
 
 2. Creare una chiave del Registro di sistema nell'oggetto desiderato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive in generatori\\*GUID* in cui *GUID* è il GUID definito dal sistema di progetto o un servizio del linguaggio specifico. Il nome della chiave diventa il nome a livello di uno strumento personalizzato. La chiave degli strumenti personalizzate presenta i seguenti valori:
 
-   -   (Predefinito)
+   - (Predefinito)
 
         Facoltativo. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo ma consigliato.
 
-   -   CLSID
+   - CLSID
 
         Obbligatorio. Specifica l'identificatore della libreria di classi del componente COM che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Obbligatorio. Indica se i tipi dai file generati da questo strumento personalizzato vengono resi disponibili per finestre di progettazione visiva. Il valore di questo parametro deve essere (zero) 0 per i tipi non è disponibili per finestre di progettazione visiva o 1 (uno) per i tipi disponibili per finestre di progettazione visiva.
 

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050933"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automazione di Word usando oggetti estesi
   Quando si sviluppano soluzioni Word in Visual Studio, è possibile usare *elementi host* e *controlli host*nelle soluzioni. Si tratta di oggetti che estendono determinati oggetti usati comunemente nel modello a oggetti di Word (cioè, il modello a oggetti esposto dall'assembly di interoperabilità primario per Word), come ad esempio gli oggetti <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> . Gli oggetti estesi si comportano come gli oggetti di Word su cui sono basati, ma aggiungono ulteriori eventi e funzionalità di data binding agli oggetti.
@@ -46,13 +46,13 @@ ms.locfileid: "56598271"
 
  Per altre informazioni sui controlli host da poter usare in progetti Word, vedere i seguenti argomenti:
 
--   [Controlli del contenuto](../vsto/content-controls.md)
+- [Controlli del contenuto](../vsto/content-controls.md)
 
--   [Bookmark (controllo)](../vsto/bookmark-control.md)
+- [Bookmark (controllo)](../vsto/bookmark-control.md)
 
--   [Controllo XMLNode](../vsto/xmlnode-control.md)
+- [Controllo XMLNode](../vsto/xmlnode-control.md)
 
--   [Controllo XMLNodes](../vsto/xmlnodes-control.md)
+- [Controllo XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md)

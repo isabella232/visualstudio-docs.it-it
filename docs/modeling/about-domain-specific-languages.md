@@ -9,26 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046821"
 ---
 # <a name="about-domain-specific-languages"></a>Informazioni sui linguaggi specifici del dominio
 
-A differenza di un linguaggio generico come C# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.
+A differenza di un linguaggio generico come c# o UML, un linguaggio specifico di dominio (DSL) è progettato per esprimere le istruzioni in una particolare area problematica o dominio.
 
 DSL Well-Known includere espressioni regolari e SQL. Ogni linguaggio specifico di dominio è preferibile rispetto a un linguaggio generico per descrivere le operazioni su stringhe di testo o un database, ma molto peggiori per descrivere le idee che esulano dall'ambito di un proprio. Singoli settori hanno anche le proprie soluzioni DSL. Ad esempio, nel settore delle telecomunicazioni, chiamare descrizione lingue vengono ampiamente utilizzate per specificare la sequenza degli stati in una chiamata telefonica e in modalità wireless nel settore di viaggio standard che DSL viene usato per descrivere ogni nuova prenotazione dei voli.
 
 L'azienda e il progetto utilizza inoltre set speciale di concetti che può essere descritta con un linguaggio DSL. Ad esempio, è possibile definire un linguaggio DSL di una di queste applicazioni:
 
--   Piano di percorsi di navigazione in un sito Web.
+- Piano di percorsi di navigazione in un sito Web.
 
--   Collegare i diagrammi dei componenti elettronici.
+- Collegare i diagrammi dei componenti elettronici.
 
--   Reti di nastri trasportatori e attrezzature per un aeroporto di gestione dei bagagli.
+- Reti di nastri trasportatori e attrezzature per un aeroporto di gestione dei bagagli.
 
 Quando si progetta un linguaggio DSL, si definisce una *della classe di dominio* per ognuno dei concetti importanti nel dominio, ad esempio una pagina web, lamp o aeroporto banco. Si definiscono *relazioni di dominio* come collegamento ipertestuale, trasmissione o un nastro trasportatore per collegare i concetti.
 
@@ -114,12 +114,12 @@ Un linguaggio specifico di dominio può offrire i vantaggi seguenti:
 
 La maggior parte dei team di sviluppo software che usano linguaggi specifici di dominio seguire questi passaggi per creare e usare i propri modelli:
 
--   Il team consente di distinguere le parti variabili del dominio dalle parti che non cambiano mai.
+- Il team consente di distinguere le parti variabili del dominio dalle parti che non cambiano mai.
 
--   Gli sviluppatori di scrivere codice per le parti fisse e lasciare i punti di estensione per le parti variabili.
+- Gli sviluppatori di scrivere codice per le parti fisse e lasciare i punti di estensione per le parti variabili.
 
--   Il responsabile dello sviluppo di software o il progettista crea un linguaggio specifico di dominio che incorpora i modelli di progettazione delle parti fisse del dominio e i punti di estensione per le parti variabili.
+- Il responsabile dello sviluppo di software o il progettista crea un linguaggio specifico di dominio che incorpora i modelli di progettazione delle parti fisse del dominio e i punti di estensione per le parti variabili.
 
--   Il responsabile dello sviluppo di software o il progettista distribuisce il linguaggio specifico di dominio per gli sviluppatori delle diverse applicazioni che produce il team.
+- Il responsabile dello sviluppo di software o il progettista distribuisce il linguaggio specifico di dominio per gli sviluppatori delle diverse applicazioni che produce il team.
 
--   Ogni sviluppatore crea un modello che si applica all'applicazione specifica.
+- Ogni sviluppatore crea un modello che si applica all'applicazione specifica.

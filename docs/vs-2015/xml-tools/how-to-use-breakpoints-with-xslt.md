@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965905"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052324"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procedura: dei punti di interruzione con XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ ms.locfileid: "58965905"
   
 #### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>Per impostare un punto di interruzione in un foglio di stile  
   
-1.  Aprire un foglio di stile nell'editor XML.  
+1. Aprire un foglio di stile nell'editor XML.  
   
-2.  Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
+2. Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
   
-3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.  
+3. Fare clic sul pulsante Sfoglia (**...** ) sul **Input** campo della finestra delle proprietà del documento.  
   
-4.  Individuare il documento di origine XML e fare clic su **aperto**.  
+4. Individuare il documento di origine XML e fare clic su **aperto**.  
   
      In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.  
   
-5.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
+5. Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
   
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Impostazione di un punto di interruzione nel documento di origine XML  
  È possibile impostare punti di interruzione su elementi, attributi, nodo dello spazio dei nomi, commenti, istruzioni di elaborazione e nodi di tipo text di un documento di origine XML. Non è possibile impostare un punto di interruzione sul nodo del documento o su un nodo di spazio dei nomi ereditato dall'elemento padre.  
   
 #### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>Per impostare un punto di interruzione nel documento di origine XML  
   
-1.  Aprire il documento XML nell'editor XML.  
+1. Aprire il documento XML nell'editor XML.  
   
-2.  Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
+2. Posizionare il cursore in corrispondenza della posizione del punto di interruzione, fare doppio clic su, scegliere **punto di interruzione**, fare clic su **Inserisci punto di interruzione**.  
   
-3.  Fare clic sul pulsante Sfoglia (**...** ) sul **Stylesheet** campo della finestra delle proprietà del documento.  
+3. Fare clic sul pulsante Sfoglia (**...** ) sul **Stylesheet** campo della finestra delle proprietà del documento.  
   
-4.  Individuare il documento di origine XML e fare clic su **aperto**.  
+4. Individuare il documento di origine XML e fare clic su **aperto**.  
   
      In questo modo viene impostato il file del documento di origine usato per la trasformazione XSLT.  
   
-5.  Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
+5. Scegliere il **Debug XSLT** pulsante sulla barra degli strumenti Editor XML.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Eseguire il debug di un foglio di stile XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

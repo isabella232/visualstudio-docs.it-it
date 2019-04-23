@@ -9,14 +9,14 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34db2b987f64329ead90ab6570fd98b78eb4934f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 42b1610736d7f53d85dffb98313bcab55bb10afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046617"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: connettere il profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un servizio .NET per raccogliere dati di concorrenza tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un servizio [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e raccogliere dati di concorrenza di thread e processi tramite il metodo di campionamento.  
@@ -33,21 +33,21 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
   
 #### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>Per connettere il profiler a un servizio .NET Framework  
   
-1.  Installare il servizio.  
+1. Installare il servizio.  
   
-2.  Aprire una finestra dei comandi.  
+2. Aprire una finestra dei comandi.  
   
-3.  Inizializzare le variabili di ambiente di profilatura. Tipo:  
+3. Inizializzare le variabili di ambiente di profilatura. Tipo:  
   
      [VSPerfClrEnv](../profiling/vsperfclrenv.md) **/globalsampleon** [**/samplelineoff**]  
   
-    -   **/globalsampleon** abilita il campionamento.  
+    - **/globalsampleon** abilita il campionamento.  
   
-    -   **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.  
+    - **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.  
   
-4.  Riavviare il computer.  
+4. Riavviare il computer.  
   
-5.  Avvia il profiler. Tipo:  
+5. Avvia il profiler. Tipo:  
   
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency  /output:** `OutputFile` [`Options`]  
   
@@ -66,22 +66,22 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
     |[/automark](../profiling/automark.md) **:** `Interval`|Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms.|  
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.|  
   
-6.  Se necessario, avviare il servizio.  
+6. Se necessario, avviare il servizio.  
   
-7.  Connettere il profiler al servizio. Tipo:  
+7. Connettere il profiler al servizio. Tipo:  
   
      **VSPerfCmd /attach:** `PID` [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
   
-    -   `PID` specifica l'ID o il nome del processo del servizio. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
+    - `PID` specifica l'ID o il nome del processo del servizio. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
   
-    -   **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.  
+    - **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.  
   
 ## <a name="controlling-data-collection"></a>Controllo della raccolta di dati  
  Mentre è in esecuzione il servizio, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni VSPerfCmd.exe. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
   
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
   
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -89,21 +89,21 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
     |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID o dal nome di processo. **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo specifico.|  
   
--   È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. Gli indicatori possono essere usati per filtrare i dati nei rapporti e nelle visualizzazioni dei dati del profiler. Le seguenti coppie di opzioni VSPerfCmd consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. Gli indicatori possono essere usati per filtrare i dati nei rapporti e nelle visualizzazioni dei dati del profiler. Le seguenti coppie di opzioni VSPerfCmd consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
   
 ## <a name="ending-the-profiling-session"></a>Arresto della sessione di profilatura  
  Per terminare una sessione di profilatura, non deve essere in corso una raccolta di dati dal profiler. È possibile interrompere la raccolta dei dati da un'applicazione profilata con il metodo di concorrenza interrompendo il servizio oppure richiamando l'opzione **VSPerfCmd /detach**. È quindi possibile richiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura, ma la configurazione di sistema non viene reimpostata fino al riavvio del computer.  
   
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
   
-1.  Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione.  
+1. Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione.  
   
-    -   Arrestare il servizio.  
+    - Arrestare il servizio.  
   
-         oppure  
+         -oppure-  
   
-    -   Digitare **VSPerfCmd /detach**.  
+    - Digitare **VSPerfCmd /detach**.  
   
-2.  Arrestare il profiler. Tipo:  
+2. Arrestare il profiler. Tipo:  
   
      **VSPerfCmd**  [Shutdown](../profiling/shutdown.md)

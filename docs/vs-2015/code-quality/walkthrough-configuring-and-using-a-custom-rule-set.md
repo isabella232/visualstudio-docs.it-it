@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 14f67aee6bba5f0cafc67a4a16184f3b769a2bae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052064"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
  In questa procedura dettagliata, avanzerà questi processi:  
   
--   Creare una libreria di classi.  
+- Creare una libreria di classi.  
   
--   Selezionare il **regole base delle linee guida di progettazione Microsoft** set di regole di analisi del codice.  
+- Selezionare il **regole base delle linee guida di progettazione Microsoft** set di regole di analisi del codice.  
   
--   Aggiungere il proprio codice alla classe.  
+- Aggiungere il proprio codice alla classe.  
   
--   Esegui analisi del codice.  
+- Esegui analisi del codice.  
   
--   Personalizzare il set di regole.  
+- Personalizzare il set di regole.  
   
--   Esegui analisi del codice e vedere come il set di regole comportamento delle personalizzazioni.  
+- Esegui analisi del codice e vedere come il set di regole comportamento delle personalizzazioni.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]o [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="using-rule-sets-with-code-analysis"></a>Utilizza regole, viene impostato con l'analisi del codice  
  Innanzitutto, creare una libreria di classi semplici.  
@@ -49,9 +49,9 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
 1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**.  
   
-2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual C#**.  
+2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#**.  
   
-3. Sotto **Visual C#**, selezionare **libreria di classi**.  
+3. Sotto **Visual c#**, selezionare **libreria di classi**.  
   
 4. Nel **Name** casella di testo, digitare **RuleSetSample** e quindi fare clic su **OK**.  
   
@@ -148,9 +148,9 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
 #### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Esegui analisi codice sul progetto RuleSetSample per la seconda volta  
   
-1.  Nel **Analyze** menu, fare clic su **Esegui analisi del codice RuleSetSample**.  
+1. Nel **Analyze** menu, fare clic su **Esegui analisi del codice RuleSetSample**.  
   
-2.  Nella finestra Elenco errori, si noti che quando si fa clic **avvisi**, non si visualizzata più il segno di CA1704 per la regola "Gli identificatori devono essere digitati correttamente".  
+2. Nella finestra Elenco errori, si noti che quando si fa clic **avvisi**, non si visualizzata più il segno di CA1704 per la regola "Gli identificatori devono essere digitati correttamente".  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Configura analisi codice per un progetto di codice gestito](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   

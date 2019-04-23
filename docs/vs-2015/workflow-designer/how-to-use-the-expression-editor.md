@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057186"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedura: Usare l’editor espressioni
 L'editor espressioni è un controllo di [!INCLUDE[wfd1](../includes/wfd1-md.md)] usato in molte attività del flusso di lavoro per immettere e valutare queste espressioni. L'editor espressioni fornisce un'esperienza di modifica IDE completa che include, tra le altre funzionalità, IntelliSense, colorazione, ParamInfo, controllo errori di ortografia durante la digitazione. Il compilatore convalida l'espressione dopo che è stata immessa. Se l'espressione non è valida, viene visualizzata un'icona di errore. È possibile aprire l'editor anche come un **Editor di espressioni** nella finestra di dialogo.  
@@ -25,29 +25,29 @@ L'editor espressioni è un controllo di [!INCLUDE[wfd1](../includes/wfd1-md.md)]
   
  Il **Editor di espressioni** si comporta come segue:  
   
--   Se lo stato attivo non è sull'editor espressioni, si presenta come un controllo TextBlock normale.  
+- Se lo stato attivo non è sull'editor espressioni, si presenta come un controllo TextBlock normale.  
   
--   Quando lo stato attivo è sull'editor espressioni, si presenta e si comporta come un controllo dell'editor espressioni. Dopo aver perso lo stato attivo, si presenta nuovamente come un normale controllo TextBlock.  
+- Quando lo stato attivo è sull'editor espressioni, si presenta e si comporta come un controllo dell'editor espressioni. Dopo aver perso lo stato attivo, si presenta nuovamente come un normale controllo TextBlock.  
   
--   Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.  
+- Se si imposta lo stato attivo sull'editor espressioni in un oggetto progettazione flussi di lavoro riallocato, si comporta come oggetto TextBox. Quando nell'oggetto progettazione flussi di lavoro riallocato si perde lo stato attivo, l'editor espressioni si presenta nuovamente come un normale oggetto TextBlock.  
   
 > [!NOTE]
 >  IntelliSense per l'editor espressioni e disponibile solo in [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Sia in [!INCLUDE[vs2010](../includes/vs2010-md.md)] che nel caso di scenari di riallocazione, il compilatore convalida l'espressione dopo che è stata immessa e nell'editor espressioni viene visualizzata un'icona di errore se l'espressione non è valida.  
   
 ### <a name="using-the-expression-editor"></a>Uso dell’editor espressioni  
   
-1.  In [!INCLUDE[vs2010](../includes/vs2010-md.md)] aprire un progetto flusso di lavoro nuovo o esistente.  
+1. In [!INCLUDE[vs2010](../includes/vs2010-md.md)] aprire un progetto flusso di lavoro nuovo o esistente.  
   
-2.  Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.  
+2. Aggiungere, ad esempio, l'attività <xref:System.Activities.Statements.Assign> al flusso di lavoro.  
   
     > [!NOTE]
     >  Più attività del flusso di lavoro presentano editor espressioni. Gli oggetti TextBlock vengono inoltre visualizzati nella finestra di progettazione variabili, nella finestra di progettazione argomenti e nella finestra di progettazione argomenti dinamici. L'attività <xref:System.Activities.Statements.Assign> viene usata come esempio.  
   
-3.  Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.  
+3. Fare clic sull'editor espressioni sinistro nell'ActivityDesigner per l'attività <xref:System.Activities.Statements.Assign>.  
   
      Le stringhe con filigrana di colore grigio  **\<al >** e  **\<immettere un'espressione VB >** è il valore predefinito di stringhe di testo per gli editor di espressioni nel <xref:System.Activities.Statements.Assign> attività.  
   
-4.  Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.  
+4. Immettere l'espressione. Se si immette una stringa, assicurarsi di inserire la stringa tra virgolette. Se si sceglie di associare l'argomento dell'espressione a una variabile, non usare le virgolette.  
   
      Al termine, selezionare un'area esterna all'editor espressioni per trasferire lo stato attivo in un'altra parte della finestra di progettazione. In questo modo il compilatore convalida l'espressione, come descritto precedentemente.  
   

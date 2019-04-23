@@ -8,60 +8,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056126"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Pattern compositi combinano gli elementi di interazione e progettazione di configurazioni distinte. Alcuni dei modelli compositi più importanti in Visual Studio per quanto riguarda la coerenza includono:
 
--   [Visualizzazione dei dati](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
+- [Visualizzazione dei dati](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
 
--   [Per gli oggetti dell'interfaccia utente e la lettura](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+- [Per gli oggetti dell'interfaccia utente e la lettura](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
--   [Modelli di selezione](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+- [Modelli di selezione](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
--   [Persistenza e il salvataggio delle impostazioni](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+- [Persistenza e il salvataggio delle impostazioni](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
--   [Input tocco](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+- [Input tocco](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-##  <a name="BKMK_DataVisualization"></a> Visualizzazione dei dati
+## <a name="BKMK_DataVisualization"></a> Visualizzazione dei dati
 
 ### <a name="overview"></a>Panoramica
  I grafici sono una modalità visiva per aggregare e visualizzare i dati allo scopo di migliorare il processo decisionale. Consentono agli utenti di fronte a una grande quantità di dati, ma vale a dire little vedere ciò che merita attenzione e ciò che potrebbe essere necessario un'azione.
 
  L'utente trarranno vantaggio da un grafico se viene soddisfatta una delle condizioni seguenti:
 
--   Consente il grafico agli utenti di identificare le attività che potervi intervenire?
+- Consente il grafico agli utenti di identificare le attività che potervi intervenire?
 
--   Il grafico consentirà agli utenti prevedere le conseguenze di potenziali modifiche?
+- Il grafico consentirà agli utenti prevedere le conseguenze di potenziali modifiche?
 
--   Il grafico consentirà agli utenti di individuare tendenze e identificare i modelli?
+- Il grafico consentirà agli utenti di individuare tendenze e identificare i modelli?
 
--   Il grafico consentirà agli utenti di prendere decisioni migliori?
+- Il grafico consentirà agli utenti di prendere decisioni migliori?
 
--   Il grafico aiuterà rispondere a domande specifiche che gli utenti possono avere nel contesto specificato?
+- Il grafico aiuterà rispondere a domande specifiche che gli utenti possono avere nel contesto specificato?
 
 #### <a name="general-rules-for-charts"></a>Regole generali per i grafici
 
--   Chiaramente dati etichetta. Nelle illustrazioni senza spiegazioni sono semplicemente belle immagini.
+- Chiaramente dati etichetta. Nelle illustrazioni senza spiegazioni sono semplicemente belle immagini.
 
--   Avviare assi da zero per evitare le proporzioni di inclinazione. Le dimensioni di lunghezza e indicatore di riga sono importanti indicatori visivi per comprendere le relazioni tra i punti dati.
+- Avviare assi da zero per evitare le proporzioni di inclinazione. Le dimensioni di lunghezza e indicatore di riga sono importanti indicatori visivi per comprendere le relazioni tra i punti dati.
 
--   Creare grafici, non infografiche. Infografiche sono artistiche rappresentazioni dei dati e l'obiettivo principale è storytelling visual. I grafici possono (e dovrebbero) essere visivamente accattivante, ma lasciare che i dati parlino da soli.
+- Creare grafici, non infografiche. Infografiche sono artistiche rappresentazioni dei dati e l'obiettivo principale è storytelling visual. I grafici possono (e dovrebbero) essere visivamente accattivante, ma lasciare che i dati parlino da soli.
 
--   Evitare skeumorphism, grafici grafici a barre, hashmark a contrasto elevato e altri tocchi infografica.
+- Evitare skeumorphism, grafici grafici a barre, hashmark a contrasto elevato e altri tocchi infografica.
 
--   Non utilizzare effetti 3D come elemento decorativo. Utilizzarle solo se è effettivamente parte integrante di capacità dell'utente di comprendere le informazioni.
+- Non utilizzare effetti 3D come elemento decorativo. Utilizzarle solo se è effettivamente parte integrante di capacità dell'utente di comprendere le informazioni.
 
--   Evitare di utilizzare più linee e riempimenti, più di due colori possono rendere difficili da leggere e interpretare correttamente questo tipo di grafico.
+- Evitare di utilizzare più linee e riempimenti, più di due colori possono rendere difficili da leggere e interpretare correttamente questo tipo di grafico.
 
--   Non utilizzare un grafico (o qualsiasi illustrazione) come unico mezzo di comprendere un concetto o l'interazione con i dati. Questo presenta difficoltà per gli utenti con problemi visivi.
+- Non utilizzare un grafico (o qualsiasi illustrazione) come unico mezzo di comprendere un concetto o l'interazione con i dati. Questo presenta difficoltà per gli utenti con problemi visivi.
 
--   Non usare i grafici come elementi decorativi o gratuiti in una pagina. In altre parole, se non aggiunta un grafico che qualsiasi valore o la Guida utenti risolvere un problema, non utilizzarlo.
+- Non usare i grafici come elementi decorativi o gratuiti in una pagina. In altre parole, se non aggiunta un grafico che qualsiasi valore o la Guida utenti risolvere un problema, non utilizzarlo.
 
 ### <a name="chart-types"></a>Tipi di grafico
  Tipi di grafico utilizzato in Visual Studio includono i grafici a barre, grafici a linee, un grafico a torta modificato nota come grafico ad anello o "grafico ad anello," sequenze temporali, a dispersione tracciati (detti anche "grafici a del cluster") e i diagrammi di Gantt. Ogni tipo di grafico è utile per la comunicazione di un tipo di informazioni diverso.
@@ -81,7 +81,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 |![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|
 |![Swatch B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|
 
-##  <a name="BKMK_OnObjectUI"></a> Per gli oggetti dell'interfaccia utente e la lettura
+## <a name="BKMK_OnObjectUI"></a> Per gli oggetti dell'interfaccia utente e la lettura
  In questa sezione fornisce il contesto di visualizzazione, noto anche come visualizzazione rapida codice, un tipo di interfaccia utente per gli oggetti univoci a Visual Studio.
 
 ### <a name="overview"></a>Panoramica
@@ -92,9 +92,9 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 - Interfaccia utente per gli oggetti in Visual Studio è sia inline o a virgola mobile e durevole o temporaneo.
 
-  -   Visualizzazione rapida di codice, un tipo di interfaccia utente per gli oggetti in Visual Studio è in linea e durevole.
+  - Visualizzazione rapida di codice, un tipo di interfaccia utente per gli oggetti in Visual Studio è in linea e durevole.
 
-  -   CodeLens, un tipo di interfaccia utente per gli oggetti in Visual Studio, è temporaneo e a virgola mobile
+  - CodeLens, un tipo di interfaccia utente per gli oggetti in Visual Studio, è temporaneo e a virgola mobile
 
   Comprendere il funzionamento di un frammento di codice o trovare dettagli su tale codice, spesso richiede uno sviluppatore cambiare contesto e passare a altro contenuto o un'altra finestra. Questi cambiamenti di contesto possono essere problematica, perché gli utenti possono perdere concentrarsi sulle loro attività originale se gli utenti lasciano le finestra principale. Inoltre, recupero che back contesto originale può essere difficile, soprattutto se cambio windows ha causato il codice originale venga nascosto da altra interfaccia utente.
 
@@ -106,11 +106,11 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 #### <a name="relationships-between-master-and-detail-content"></a>Relazioni tra schema e i dettagli del contenuto
  Le informazioni al momento della particolare attenzione viene usate per visualizzare una relazione tra il contenuto che l'utente è concentrato sul (il contenuto di "master") e altre correlate contenuto (il contenuto "detail"). In questo modello, il contenuto di dettaglio è chiaramente correlato al contenuto, l'utente sta collaborando e può essere visualizzata vicino al contenuto principale. Informazioni aggiuntive o informazioni che non possono essere riassunto senza sovraccaricare il contenuto master devono seguire un altro modello, ad esempio una finestra degli strumenti.
 
--   **Sempre** visualizzare il contenuto di dettaglio in stretta vicinanza al contenuto principale.
+- **Sempre** visualizzare il contenuto di dettaglio in stretta vicinanza al contenuto principale.
 
--   **Sempre** assicurarsi che il contenuto di dettaglio consente comunque all'utente di rimanere concentrati sul contenuto master. Spesso, il modo migliore per ottenere questo risultato è per il rendering del contenuto di dettaglio come vicino il contenuto master come possibili. Questa operazione può essere eseguita per il rendering del contenuto di dettagli in una finestra popup accanto al contenuto principale o eseguendo il rendering dell'inline del contenuto dettaglio sotto il contenuto di master.
+- **Sempre** assicurarsi che il contenuto di dettaglio consente comunque all'utente di rimanere concentrati sul contenuto master. Spesso, il modo migliore per ottenere questo risultato è per il rendering del contenuto di dettaglio come vicino il contenuto master come possibili. Questa operazione può essere eseguita per il rendering del contenuto di dettagli in una finestra popup accanto al contenuto principale o eseguendo il rendering dell'inline del contenuto dettaglio sotto il contenuto di master.
 
--   **Mai** usare informazioni al momento della attenzione che indirizza l'utente dal contenuto principale. Se gli utenti devono visualizzare il contenuto del dettaglio separatamente, esporre un'azione esplicita che consente all'utente di eseguire questa operazione.
+- **Mai** usare informazioni al momento della attenzione che indirizza l'utente dal contenuto principale. Se gli utenti devono visualizzare il contenuto del dettaglio separatamente, esporre un'azione esplicita che consente all'utente di eseguire questa operazione.
 
 #### <a name="design-details"></a>Dettagli di progettazione
  Dopo aver determinato che per gli oggetti dell'interfaccia utente è la scelta giusta, sono disponibili quattro considerazioni di progettazione principale:
@@ -131,123 +131,123 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 ### <a name="on-object-ui-components"></a>Componenti dell'interfaccia utente per gli oggetti
 
-1.  Tipo di contenitore (Visualizzatore di contenuto)
+1. Tipo di contenitore (Visualizzatore di contenuto)
 
-    -   Virgola mobile
+    - Virgola mobile
 
-    -   Inline
+    - Inline
 
-2.  Tipo di contenuto
+2. Tipo di contenuto
 
-    -   Messaggio informativo: i dati che potrebbero essere statico o dinamico
+    - Messaggio informativo: i dati che potrebbero essere statico o dinamico
 
-    -   Eseguibili: i comandi modificare il contenuto principale
+    - Eseguibili: i comandi modificare il contenuto principale
 
-    -   Per la navigazione: collegamenti che visualizzano l'utente a un'altra finestra o applicazione, ad esempio MSDN
+    - Per la navigazione: collegamenti che visualizzano l'utente a un'altra finestra o applicazione, ad esempio MSDN
 
-3.  Movimenti
+3. Movimenti
 
-    -   Chiamata
+    - Chiamata
 
-    -   Licenziamento
+    - Licenziamento
 
-    -   L'aggiunta
+    - L'aggiunta
 
-    -   Altre interazioni
+    - Altre interazioni
 
-4.  Modello di persistenza ed eseguire il commit
+4. Modello di persistenza ed eseguire il commit
 
-    -   Temporaneo
+    - Temporaneo
 
-    -   Durevole
+    - Durevole
 
-    -   Automatico
+    - Automatico
 
-    -   On demand
+    - On demand
 
-5.  Indicatori di ambiente (facoltativi)
+5. Indicatori di ambiente (facoltativi)
 
-    -   Sottolineatura a zigzag
+    - Sottolineatura a zigzag
 
-    -   Icona smart tag
+    - Icona smart tag
 
-    -   Altri indicatori di ambiente
+    - Altri indicatori di ambiente
 
 #### <a name="container-content-presenter-type"></a>Tipo di contenitore (Visualizzatore di contenuto)
  Esistono due principali opzioni disponibili per presentare il contenuto nel punto di attenzione:
 
-1.  **Inline:** un presentatore inline, ad esempio la visualizzazione rapida che è stato introdotto nell'Editor di Visual Studio 2013 codice rende lo spazio per nuovi contenuti spostando il contenuto esistente.
+1. **Inline:** un presentatore inline, ad esempio la visualizzazione rapida che è stato introdotto nell'Editor di Visual Studio 2013 codice rende lo spazio per nuovi contenuti spostando il contenuto esistente.
 
-    -   **Preferisce** Presenter inline se si prevede che gli utenti desiderano dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto presente.
+    - **Preferisce** Presenter inline se si prevede che gli utenti desiderano dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto presente.
 
-    -   **Evitare** Presenter inline se si prevede che gli utenti sarà possibile visualizzare rapidamente le informazioni è presente, quindi continuare con le principali attività con un'interruzione minima.
+    - **Evitare** Presenter inline se si prevede che gli utenti sarà possibile visualizzare rapidamente le informazioni è presente, quindi continuare con le principali attività con un'interruzione minima.
 
-2.  **Numeri reali:** un presentatore a virgola mobile è posizionato il più vicino al contenuto selezionato possibile ma non modifica il layout del contenuto esistente. Varie strategie possono essere impiegate, ad esempio visualizzando un pannello del contenuto mobile tramite il più vicino di spazio disponibile per il simbolo selezionato.
+2. **Numeri reali:** un presentatore a virgola mobile è posizionato il più vicino al contenuto selezionato possibile ma non modifica il layout del contenuto esistente. Varie strategie possono essere impiegate, ad esempio visualizzando un pannello del contenuto mobile tramite il più vicino di spazio disponibile per il simbolo selezionato.
 
-    -   **Preferisce** mobile Presenter se si prevede che gli utenti sarà possibile visualizzare rapidamente le informazioni è presente, quindi continuare con le principali attività con un'interruzione minima.
+    - **Preferisce** mobile Presenter se si prevede che gli utenti sarà possibile visualizzare rapidamente le informazioni è presente, quindi continuare con le principali attività con un'interruzione minima.
 
-    -   **Evitare** mobile Presenter se si prevede che gli utenti dovranno dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto è presente.
+    - **Evitare** mobile Presenter se si prevede che gli utenti dovranno dedicare una quantità significativa di tempo che fa riferimento a o l'interazione con il contenuto è presente.
 
 #### <a name="content-type"></a>Tipo di contenuto
  Esistono tre tipi principali di contenuto che possono essere visualizzati all'interno di qualsiasi contenitore dell'interfaccia utente per gli oggetti. È possibile visualizzare qualsiasi combinazione di questi tipi di informazioni. I tre tipi sono:
 
-1.  **Messaggio informativo:** la maggior parte per gli oggetti contenitori dell'interfaccia utente visualizzerà un tipo di contenuto informativo. Il contenuto può rappresentare informazioni sullo stato attuale dell'ambiente o può rappresentare informazioni su uno stato potenziale futura dell'ambiente. Ad esempio, può essere usato per mostrare l'effetto di un comando specifico, ad esempio un'operazione di refactoring, sul codice esistente.
+1. **Messaggio informativo:** la maggior parte per gli oggetti contenitori dell'interfaccia utente visualizzerà un tipo di contenuto informativo. Il contenuto può rappresentare informazioni sullo stato attuale dell'ambiente o può rappresentare informazioni su uno stato potenziale futura dell'ambiente. Ad esempio, può essere usato per mostrare l'effetto di un comando specifico, ad esempio un'operazione di refactoring, sul codice esistente.
 
-    -   **Sempre** usare la rappresentazione canonica di informazioni da visualizzare. Ad esempio, codice dovrebbe essere simile a code, completa con l'evidenziazione della sintassi e deve rispettare qualsiasi tipo di carattere e altre impostazioni di ambiente impostate dall'utente.
+    - **Sempre** usare la rappresentazione canonica di informazioni da visualizzare. Ad esempio, codice dovrebbe essere simile a code, completa con l'evidenziazione della sintassi e deve rispettare qualsiasi tipo di carattere e altre impostazioni di ambiente impostate dall'utente.
 
-    -   **Sempre** considerare il supporto di tutte le azioni sul contenuto informativo che sarebbe possibile se le stesse informazioni viene presentate come contenuto master. Ad esempio, se il codice esistente all'interno di un contenitore dell'interfaccia utente per gli oggetti di presentazione, consigliabile prendere in considerazione che supportano la possibilità di esplorare e modificare tale codice.
+    - **Sempre** considerare il supporto di tutte le azioni sul contenuto informativo che sarebbe possibile se le stesse informazioni viene presentate come contenuto master. Ad esempio, se il codice esistente all'interno di un contenitore dell'interfaccia utente per gli oggetti di presentazione, consigliabile prendere in considerazione che supportano la possibilità di esplorare e modificare tale codice.
 
-    -   **Sempre** è consigliabile usare un colore di sfondo diverso se la presentazione di contenuto informativo che rappresenta uno stato futuro potenziale.
+    - **Sempre** è consigliabile usare un colore di sfondo diverso se la presentazione di contenuto informativo che rappresenta uno stato futuro potenziale.
 
-2.  Eseguibili: alcuni contenitori dell'interfaccia utente per gli oggetti verranno offrono la possibilità di eseguire alcune azioni sul contenuto master, ad esempio eseguire un'operazione di refactoring.
+2. Eseguibili: alcuni contenitori dell'interfaccia utente per gli oggetti verranno offrono la possibilità di eseguire alcune azioni sul contenuto master, ad esempio eseguire un'operazione di refactoring.
 
-    -   **Sempre** posizionare i comandi utilizzabili separatamente dal contenuto informativo.
+    - **Sempre** posizionare i comandi utilizzabili separatamente dal contenuto informativo.
 
-    -   **Sempre** abilitare e disabilitare le azioni quando appropriato.
+    - **Sempre** abilitare e disabilitare le azioni quando appropriato.
 
-    -   **Sempre** fare riferimento alle linee guida standard per rappresentare comandi all'interno delle finestre di dialogo.
+    - **Sempre** fare riferimento alle linee guida standard per rappresentare comandi all'interno delle finestre di dialogo.
 
-    -   **Sempre** mantenere il numero di azioni esposte in un contenitore dell'interfaccia utente per gli oggetti di inattività minimo. L'interazione con l'interfaccia utente per gli oggetti deve essere un'esperienza semplice e veloce. L'utente non necessario impiegare energia sulla gestione di contenitore per gli oggetti dell'interfaccia utente stesso.
+    - **Sempre** mantenere il numero di azioni esposte in un contenitore dell'interfaccia utente per gli oggetti di inattività minimo. L'interazione con l'interfaccia utente per gli oggetti deve essere un'esperienza semplice e veloce. L'utente non necessario impiegare energia sulla gestione di contenitore per gli oggetti dell'interfaccia utente stesso.
 
-    -   **Sempre** prendere in considerazione come e quando un contenitore dell'interfaccia utente per gli oggetti verrà chiuse o chiusa. Come procedura consigliata, qualsiasi azione che si conclude la finestra di dialogo tra il master e di dettaglio del contenuto deve chiudere anche il contenitore dell'interfaccia utente per gli oggetti quando viene richiamata l'azione.
+    - **Sempre** prendere in considerazione come e quando un contenitore dell'interfaccia utente per gli oggetti verrà chiuse o chiusa. Come procedura consigliata, qualsiasi azione che si conclude la finestra di dialogo tra il master e di dettaglio del contenuto deve chiudere anche il contenitore dell'interfaccia utente per gli oggetti quando viene richiamata l'azione.
 
-3.  **Spostamento:** alcuni per gli oggetti contenitori dell'interfaccia utente includono collegamenti che visualizzano l'utente a un'altra finestra o applicazione, ad esempio l'apertura di un articolo MSDN in web browser dell'utente.
+3. **Spostamento:** alcuni per gli oggetti contenitori dell'interfaccia utente includono collegamenti che visualizzano l'utente a un'altra finestra o applicazione, ad esempio l'apertura di un articolo MSDN in web browser dell'utente.
 
-    -   **Sempre** anteporre un collegamento per la navigazione con "Apri" in modo che gli utenti non saranno sorpresi da cui si accede ad alcuni altri contenuti.
+    - **Sempre** anteporre un collegamento per la navigazione con "Apri" in modo che gli utenti non saranno sorpresi da cui si accede ad alcuni altri contenuti.
 
-    -   **Sempre** separare i collegamenti di navigazione tra i collegamenti di utilità pratici.
+    - **Sempre** separare i collegamenti di navigazione tra i collegamenti di utilità pratici.
 
 #### <a name="ambient-indicators-optional"></a>Indicatori di ambiente (facoltativi)
  Gli indicatori di ambiente possono essere meno evidenti, incluso il testo visualizzato in un colore a contrasto rispetto al resto del codice, o ovvio, compresi i simboli tickler come sottolineature a zigzag e icone di smart tag. Gli indicatori di ambiente di comunicare la disponibilità di informazioni aggiuntive e pertinenti. In teoria, forniscono informazioni utili anche senza richiedere all'utente di interagire con essi.
 
--   **Sempre** posizionare un indicatore di ambiente in modo che non si distaccherà o sovraccaricare l'utente. Se non è possibile posizionare un indicatore di ambiente in modo tale, prendere in considerazione un'altra soluzione.
+- **Sempre** posizionare un indicatore di ambiente in modo che non si distaccherà o sovraccaricare l'utente. Se non è possibile posizionare un indicatore di ambiente in modo tale, prendere in considerazione un'altra soluzione.
 
--   **Sempre** posizionare più vicino possibile al contenuto che è correlato l'indicatore di ambiente.
+- **Sempre** posizionare più vicino possibile al contenuto che è correlato l'indicatore di ambiente.
 
--   **Sempre** tenta di creare un indicatore che riepiloga le informazioni che vengono resi disponibili. Si consiglia di fornire un conteggio del numero di elementi di dati disponibili (ad esempio, "3 riferimenti" anziché semplicemente "Riferimenti") o pensare a un altro modo per riepilogare i dati.
+- **Sempre** tenta di creare un indicatore che riepiloga le informazioni che vengono resi disponibili. Si consiglia di fornire un conteggio del numero di elementi di dati disponibili (ad esempio, "3 riferimenti" anziché semplicemente "Riferimenti") o pensare a un altro modo per riepilogare i dati.
 
-    -   In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
+    - In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
 
--   **Mai** aggiungere ulteriori indicatori rispetto a un utente può richiedere ragionevolmente per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono loro ambiente se richiedono overflow e altri controlli di gestione per spostarle nella visualizzazione.
+- **Mai** aggiungere ulteriori indicatori rispetto a un utente può richiedere ragionevolmente per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono loro ambiente se richiedono overflow e altri controlli di gestione per spostarle nella visualizzazione.
 
 #### <a name="gestures"></a>Movimenti
  Un aspetto fondamentale che consente all'utente di concentrare l'attenzione sul contenuto del master è da che supportano i movimenti destro per aprire e chiudere il contenuto di dettagli aggiuntivi.
 
--   **Sempre** richiedono all'utente di eseguire alcuni movimenti esplicito per aprire il contenuto aggiuntivo. I movimenti open comuni includono:
+- **Sempre** richiedono all'utente di eseguire alcuni movimenti esplicito per aprire il contenuto aggiuntivo. I movimenti open comuni includono:
 
-    -   **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
+    - **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
 
-    -   **Comando esplicita:** presenter inline
+    - **Comando esplicita:** presenter inline
 
-    -   **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
+    - **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
 
--   **Sempre** ignorare il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.
+- **Sempre** ignorare il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.
 
--   **Sempre** prendere in considerazione il contesto dell'interfaccia utente per gli oggetti. Per contenuto Presenter che consentono l'interazione all'interno del contenitore, valutare attentamente se si desidera visualizzare informazioni aggiuntive sul passaggio del mouse, che è probabile che sia problematica per flusso di lavoro dell'utente.
+- **Sempre** prendere in considerazione il contesto dell'interfaccia utente per gli oggetti. Per contenuto Presenter che consentono l'interazione all'interno del contenitore, valutare attentamente se si desidera visualizzare informazioni aggiuntive sul passaggio del mouse, che è probabile che sia problematica per flusso di lavoro dell'utente.
 
--   **Mai** visualizzare il contenuto al passaggio del mouse che sembra essere modificabile o invita l'interazione dell'utente. Questo comportamento può causare frustrazione utenti se tentano di spostare il cursore sul contenuto del dettaglio, come il comportamento standard per una descrizione comando consiste nel chiudere immediatamente quando il cursore non è più posizionato master contenuto che l'ha prodotta.
+- **Mai** visualizzare il contenuto al passaggio del mouse che sembra essere modificabile o invita l'interazione dell'utente. Questo comportamento può causare frustrazione utenti se tentano di spostare il cursore sul contenuto del dettaglio, come il comportamento standard per una descrizione comando consiste nel chiudere immediatamente quando il cursore non è più posizionato master contenuto che l'ha prodotta.
 
-##  <a name="BKMK_SelectionModels"></a> Modelli di selezione
+## <a name="BKMK_SelectionModels"></a> Modelli di selezione
 
 ### <a name="overview"></a>Panoramica
  Un modello di selezione è il meccanismo utilizzato per indicare e confermare le operazioni su uno o più oggetti di interesse all'interno dell'interfaccia utente. Questo argomento vengono illustrati i modelli di interazione di selezione all'interno degli editor di documento di Visual Studio: gli editor di testo, aree di progettazione e le superfici di modellazione.
@@ -317,11 +317,11 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 #### <a name="interaction"></a>Interazione
  Selezione degli oggetti grafici può essere complessi e dipende da numerosi fattori:
 
--   **Modello di selezione principale dell'editor.** Gli editor che contengono gli oggetti grafici sono anche utilizzabile per modificare il testo o griglie. L'editor, ad esempio, potrebbe essere un editor di testo che supporta anche la posizione di oggetti grafici, ad esempio la finestra di progettazione XAML di Visual Studio. Supporto di più tipi di oggetto può influire sul modo in cui l'utente seleziona i gruppi costituiti da diversi tipi di oggetti.
+- **Modello di selezione principale dell'editor.** Gli editor che contengono gli oggetti grafici sono anche utilizzabile per modificare il testo o griglie. L'editor, ad esempio, potrebbe essere un editor di testo che supporta anche la posizione di oggetti grafici, ad esempio la finestra di progettazione XAML di Visual Studio. Supporto di più tipi di oggetto può influire sul modo in cui l'utente seleziona i gruppi costituiti da diversi tipi di oggetti.
 
--   **Supporto per gli stati di selezione primaria e secondaria.** Un editor può fornire selezione primaria e secondaria degli Stati, in modo che gli oggetti possono essere modificati all'unisono, allineati tra loro, ridimensionati insieme, e così via.
+- **Supporto per gli stati di selezione primaria e secondaria.** Un editor può fornire selezione primaria e secondaria degli Stati, in modo che gli oggetti possono essere modificati all'unisono, allineati tra loro, ridimensionati insieme, e così via.
 
--   **Supporto di modifica sul posto.** Editor è anche possono consentire il contenuto dei rispettivi oggetti di grafici da modificare. Ad esempio, una forma di rettangolo potrebbe anche contenere testo all'interno che può essere modificato dall'utente. Inoltre, che il testo potrebbe essere centrato o giustificato. La modifica sul posto implica un livello più dettagliato dell'interazione dell'utente e pertanto richiede un set appropriato di segnali visivi per presentare le informazioni sullo stato all'utente.
+- **Supporto di modifica sul posto.** Editor è anche possono consentire il contenuto dei rispettivi oggetti di grafici da modificare. Ad esempio, una forma di rettangolo potrebbe anche contenere testo all'interno che può essere modificato dall'utente. Inoltre, che il testo potrebbe essere centrato o giustificato. La modifica sul posto implica un livello più dettagliato dell'interazione dell'utente e pertanto richiede un set appropriato di segnali visivi per presentare le informazioni sullo stato all'utente.
 
 #### <a name="mouse-interaction"></a>Interazione del mouse
 
@@ -390,7 +390,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
  **Selezione primaria con due selezioni secondarie**
 
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto di selezione di oggetti grafici
+#### <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aspetto di selezione di oggetti grafici
  Quadratini di ridimensionamento sono quadratini disegnate in un modello rettangolare intorno alla casella di delimitazione dell'oggetto. Il grafico seguente mostra esempi dei vari stati che può disporre di un oggetto grafico con handle di ridimensionamento e aspetto modifica sul posto. Le dimensioni dei punti di controllo devono essere collegate al bordo della finestra ed edge le metriche usando il **GetSystemMetrics** API.
 
 | Stato | Aspetto | Dettagli su Visual |
@@ -445,11 +445,11 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
  Trascinare nel corpo elenco effettua una delle tre operazioni:
 
--   Avvia una selezione per area, se l'elenco supporta l'elemento e la selezione tramite mouse si trova nello spazio vuoto
+- Avvia una selezione per area, se l'elenco supporta l'elemento e la selezione tramite mouse si trova nello spazio vuoto
 
--   Avvia un'operazione di trascinamento della selezione se la cella dell'elenco o la riga supporta da un'origine di trascinamento
+- Avvia un'operazione di trascinamento della selezione se la cella dell'elenco o la riga supporta da un'origine di trascinamento
 
--   Seleziona la riga corrente
+- Seleziona la riga corrente
 
 ##### <a name="in-place-editing"></a>La modifica sul posto
  Quando è consentita la modifica sul posto, sono disponibili due modelli di base: selezione di controllo e la proprietà di modifica semplice. Con un controllo di modifica semplice, il contenuto è evidenziato e pronto per l'input non appena viene attivata la modifica sul posto dell'utente. In cui viene implementata una selezione di proprietà, il pulsante che richiama la selezione di proprietà viene visualizzato una volta che viene attivata la modalità di modifica sul posto e la selezione corrente non sia più evidenziata. Il pulsante di selezione deve essere allineato a destra della cella. Per esempi di modifica sul posto, vedere la **finestra delle proprietà** e **elenco attività** in Visual Studio.
@@ -457,21 +457,21 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 ##### <a name="keyboard-support"></a>Supporto per la tastiera
  Supporto per la tastiera per la selezione negli elenchi ed griglie segue le convenzioni standard di Windows:
 
--   Tasti di direzione esplorare l'elenco, se si seleziona ogni riga/cella come lo stato attivo viene spostato.
+- Tasti di direzione esplorare l'elenco, se si seleziona ogni riga/cella come lo stato attivo viene spostato.
 
--   MAIUSC + freccia esegue una selezione contigua nella direzione dei tasti di direzione.
+- MAIUSC + freccia esegue una selezione contigua nella direzione dei tasti di direzione.
 
--   CTRL + freccia seguita da attiva o disattiva la barra spaziatrice tra l'aggiunta e rimozione di elementi dell'elenco dalla selezione, la creazione di una selezione non contiguo.
+- CTRL + freccia seguita da attiva o disattiva la barra spaziatrice tra l'aggiunta e rimozione di elementi dell'elenco dalla selezione, la creazione di una selezione non contiguo.
 
--   Per le griglie contenenti le gerarchie annidate, il tasto freccia destra consente di espandere una riga padre e il tasto freccia sinistra comprime uno.
+- Per le griglie contenenti le gerarchie annidate, il tasto freccia destra consente di espandere una riga padre e il tasto freccia sinistra comprime uno.
 
--   Il tasto Tab sposta lo stato attivo tra le celle nella riga corrente, se le celle possono essere modificate.
+- Il tasto Tab sposta lo stato attivo tra le celle nella riga corrente, se le celle possono essere modificate.
 
--   Il tasto INVIO esegue il comando predefinito sull'elemento nell'elenco (spesso **aperto**).
+- Il tasto INVIO esegue il comando predefinito sull'elemento nell'elenco (spesso **aperto**).
 
--   Il tasto F2 Attiva modifica sul posto per la cella attualmente selezionata.
+- Il tasto F2 Attiva modifica sul posto per la cella attualmente selezionata.
 
-##  <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenza e il salvataggio delle impostazioni
+## <a name="BKMK_PersistenceAndSavingSettings"></a> Persistenza e il salvataggio delle impostazioni
 
 ### <a name="overview"></a>Panoramica
  Anche se ogni componente software in Visual Studio è in genere responsabile per il proprio stato e la persistenza, Visual Studio Salva automaticamente le impostazioni in alcuni casi, ad esempio con posizioni e le dimensioni di finestra. Nella tabella seguente è una combinazione di impostazioni che richiedono un utente esplicito o programmato azione da intraprendere e le impostazioni salvate automaticamente.
@@ -488,17 +488,17 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
  Ciò che l'utente sta facendo e quando si esegue, determina se un'impostazione viene salvata in memoria (durante la sessione), salvata su disco (in più sessioni come un'impostazione del Registro di sistema), come parte del file di progetto o soluzione stesso, come parte di **soluzione Opzioni (con estensione suo)** file oppure come un impostazioni personalizzate del file che solo tale componente software è a conoscenza. La tabella precedente illustra diversi eventi in corrispondenza del quale è possano salvare le impostazioni. Tuttavia, esistono altri casi in cui si potrebbe voler salvare lo stato:
 
--   Quando l'utente modifica posizione all'interno di una finestra o finestra di dialogo
+- Quando l'utente modifica posizione all'interno di una finestra o finestra di dialogo
 
--   Quando l'utente trasferisce lo stato attivo a un'altra finestra
+- Quando l'utente trasferisce lo stato attivo a un'altra finestra
 
--   Quando l'utente passa dalla progettazione alla modalità di debug
+- Quando l'utente passa dalla progettazione alla modalità di debug
 
--   Quando l'utente si disconnette il proprio account
+- Quando l'utente si disconnette il proprio account
 
--   Quando il computer entra in ibernazione o arrestato
+- Quando il computer entra in ibernazione o arrestato
 
--   Quando il disco rigido/computer sta per essere riformattato e configurare di nuovo
+- Quando il disco rigido/computer sta per essere riformattato e configurare di nuovo
 
 ### <a name="window-configurations"></a>Configurazioni di finestre
  Una configurazione di finestre è la presentazione di base dell'ambiente di sviluppo: si tratta di un schema costituito l'elenco delle finestre degli strumenti presente e il modo in cui sono disposte. Per windows gestiti dall'IDE (windows IDE), le informazioni sul layout vengono resi persistenti per ogni utente, in modo che quando si avvia un utente dell'IDE, il layout di finestra viene visualizzato lo stesso come quando rimangono valide terminato Visual Studio. Lo stato e la posizione di windows dell'IDE viene mantenuto in un file di opzioni personalizzate in formato XML. Finestre degli strumenti che vengono create dai pacchetti caricati nell'IDE di rendere persistenti le informazioni sullo stato nel Registro di sistema e potrebbero o non sia per ogni utente.
@@ -506,17 +506,17 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 #### <a name="profile-specific-layouts"></a>Layout per il profilo
  Ogni profilo includerà i layout delle finestre degli strumenti, organizzati in modo familiare agli utenti specifici degli sviluppatori (agli sviluppatori di Visual C++ prevedono di vedere le **Esplora soluzioni** sul lato sinistro dell'IDE, mentre gli sviluppatori c# prevedono di vedere la  **Esplora soluzioni** sulla destra). Layout delle finestre per il profilo vengono caricate dopo che l'utente sceglie un profilo di avvio. Un autore del pacchetto deve determinare il layout di finestra più adatto per l'esperienza dei clienti, sapendo che le modifiche apportate dall'utente per la configurazione della finestra quindi vengono rese persistenti.
 
-##  <a name="BKMK_TouchInput"></a> Input tocco
+## <a name="BKMK_TouchInput"></a> Input tocco
  Gli utenti stanno utilizzando i prodotti di sviluppo Microsoft nei dispositivi di tocco. Tuttavia, esistono le barriere che rendono difficile usare gli strumenti di sviluppo nei dispositivi di tocco. Gli utenti si aspettano i prodotti per offrire un'esperienza touch affidabile e precisa. Lo scopo di queste linee guida è per guidare le decisioni sulle quali funzionalità di tocco di incorporare e per favorire un'esperienza touch coerente tra Visual Studio e i prodotti correlati.
 
 ### <a name="levels-of-experience"></a>Livelli di esperienza
  I seguenti livelli di esperienza sono utili per fungere da una Guida che consente ai team decide quali capacità del tocco per offrire in base al relativo livello desiderato di interesse di investimento in contatto.
 
--   Il **esperienza di base** è per i team che vogliono fornire touch funzionalità in modo da non termina dei messaggi non recapitabili in tutto il proprio lavoro.
+- Il **esperienza di base** è per i team che vogliono fornire touch funzionalità in modo da non termina dei messaggi non recapitabili in tutto il proprio lavoro.
 
--   Il **ottimizzato esperienza** è per i team che vogliono offrire più funzionalità di tocco comuni (ad esempio quelli disponibili in genere nelle applicazioni browser internet).
+- Il **ottimizzato esperienza** è per i team che vogliono offrire più funzionalità di tocco comuni (ad esempio quelli disponibili in genere nelle applicazioni browser internet).
 
--   Il **elevati esperienza** è per i team che vogliono aggiungere le funzionalità di questo tipo come movimenti o altre funzionalità facoltative che possono rendere le loro applicazioni touch-first descrittivo.
+- Il **elevati esperienza** è per i team che vogliono aggiungere le funzionalità di questo tipo come movimenti o altre funzionalità facoltative che possono rendere le loro applicazioni touch-first descrittivo.
 
 ||Esperienza di base|Esperienza ottimizzata|Esperienza con privilegi elevato|
 |-|----------------------|--------------------------|-------------------------|

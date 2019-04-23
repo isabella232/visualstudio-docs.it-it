@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051908"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 
  Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilitare la funzionalità per tutte le estensioni o solo per estensioni specifiche.
 
--   Per disabilitare gli aggiornamenti automatici per tutte le estensioni, fare clic sul collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Estensioni e aggiornamenti** e deselezionare **Aggiorna automaticamente le estensioni**.
+- Per disabilitare gli aggiornamenti automatici per tutte le estensioni, fare clic sul collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Estensioni e aggiornamenti** e deselezionare **Aggiorna automaticamente le estensioni**.
 
--   Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti** .
+- Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti** .
 
 > [!NOTE]
 >  A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).

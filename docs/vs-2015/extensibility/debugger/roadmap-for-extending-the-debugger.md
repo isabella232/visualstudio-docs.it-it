@@ -11,12 +11,12 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c5995de05d5861ff407006d5926081a5b76c8b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050985"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Questa documentazione vengono fornite informazioni di riferimento e Guida per l'
   
  Il compilatore e il relativo output determinare cosa è necessario eseguire per implementare il debug nel prodotto. Se il compilatore:  
   
--   Ha come destinazione di Windows nativo del sistema operativo e scrive un. Il file PDB, eseguire il debug di programmi con il motore di debug di codice nativo (DE), integrata in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Non occorre implementare un analizzatore DE o un'espressione. L'analizzatore di espressioni viene scritto per la sintassi del linguaggio di programmazione C++.  
+- Ha come destinazione di Windows nativo del sistema operativo e scrive un. Il file PDB, eseguire il debug di programmi con il motore di debug di codice nativo (DE), integrata in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Non occorre implementare un analizzatore DE o un'espressione. L'analizzatore di espressioni viene scritto per la sintassi del linguaggio di programmazione C++.  
   
--   Produce Microsoft intermediate language (MSIL) di output, è possibile eseguire il debug di programmi con il motore di debug di codice gestito, DE, che è anche integrato in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Di conseguenza, è necessario implementare solo un analizzatore di espressioni. Un analizzatore di espressioni di esempio viene fornito automaticamente. Per altre informazioni, vedere i seguenti argomenti:  
+- Produce Microsoft intermediate language (MSIL) di output, è possibile eseguire il debug di programmi con il motore di debug di codice gestito, DE, che è anche integrato in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Di conseguenza, è necessario implementare solo un analizzatore di espressioni. Un analizzatore di espressioni di esempio viene fornito automaticamente. Per altre informazioni, vedere i seguenti argomenti:  
   
      [Valutazione dell'espressione](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
@@ -41,7 +41,7 @@ Questa documentazione vengono fornite informazioni di riferimento e Guida per l'
   
      [Scrittura di un analizzatore di espressioni di Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   Destinato a un proprietario o un altro ambiente di runtime del sistema operativo, è necessario scrivere il proprio DE. Viene fornita un'esercitazione che crea un semplice DE utilizzando ATL COM. Per altre informazioni, vedere i seguenti argomenti:  
+- Destinato a un proprietario o un altro ambiente di runtime del sistema operativo, è necessario scrivere il proprio DE. Viene fornita un'esercitazione che crea un semplice DE utilizzando ATL COM. Per altre informazioni, vedere i seguenti argomenti:  
   
      [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   

@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045776"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: specificare l'icona di un'applicazione (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare un'icona dell'applicazione (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La proprietà `Icon` per un progetto specifica il file icona (.ico) che verrà visualizzato per l'applicazione compilata in Esplora file e nella barra delle applicazioni di Windows.  
@@ -32,18 +32,18 @@ La proprietà `Icon` per un progetto specifica il file icona (.ico) che verrà v
   
 ### <a name="to-specify-an-application-icon"></a>Per specificare l'icona di un'applicazione  
   
-1.  In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.  
+1. In **Esplora soluzioni** scegliere un nodo progetto, non il nodo **Soluzione**.  
   
-2.  Sulla barra dei menu scegliere **Progetto**, **Proprietà**.  
+2. Sulla barra dei menu scegliere **Progetto**, **Proprietà**.  
   
-3.  Quando si apre **Creazione progetti**, scegliere la scheda **Applicazione**.  
+3. Quando si apre **Creazione progetti**, scegliere la scheda **Applicazione**.  
   
-4.  **(Visual Basic)** Nell'elenco **Icona** scegliere un file icona con estensione ico.  
+4. **(Visual Basic)** Nell'elenco **Icona** scegliere un file icona con estensione ico.  
   
      **C#** Accanto all'elenco **Icona** scegliere il pulsante **\<Sfoglia** e selezionare il percorso del file icona desiderato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
- [Managing Application Properties](../ide/application-properties.md)(Gestione delle proprietà delle applicazioni)  
+ [Managing Application Properties](../ide/application-properties.md) (Gestione delle proprietà delle applicazioni)  
  [Procedura: Aggiungere o rimuovere risorse](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
