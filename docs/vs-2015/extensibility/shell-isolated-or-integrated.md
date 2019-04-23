@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968801"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116381"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolata o integrata)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "58968801"
 >  Se si raccolgono i dati di utilizzo separato dai tuoi clienti tramite l'applicazione, è necessario fornire preavviso appropriato per gli utenti dell'applicazione è raccogliere.  Quando si distribuisce il software di shell isolata o integrata come parte dell'applicazione, in base alla licenza di Visual Studio Software Development Kit, è necessario includere uno dei seguenti:  
 > 
 > - il contratto di licenza utente finale come parte della licenza dell'applicazione  
->   -   il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
+>   - il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
   
 ## <a name="additional-resources"></a>Risorse aggiuntive  
  Per altre informazioni sui pacchetti ridistribuibili, vedere la [download di Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) sito Web.  

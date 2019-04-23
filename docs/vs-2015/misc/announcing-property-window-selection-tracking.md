@@ -13,27 +13,27 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 1ef6984a21099bfad013ef97534d9984fa81d10d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089263"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Specifica della traccia della selezione per la finestra Proprietà
 Se si desidera utilizzare con il **delle proprietà** finestra o il **proprietà** pagine, ad esempio, un modulo, testo o una selezione per il quale si desidera visualizzare le proprietà, è necessario avere una conoscenza approfondita di come si selezione delle coordinate. Ad esempio, è necessario sapere se si dispone di selezione singola o le selezioni multiple. È quindi necessario annunciare il tipo di selezione (uno o più) per l'IDE usando il <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaccia. Questa interfaccia fornisce le informazioni necessarie per la **proprietà** finestra.  
   
 ### <a name="to-announce-selection-to-the-environment"></a>Per annunciare selezione all'ambiente  
   
-1.  Chiamare `QueryInterface` per <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
+1. Chiamare `QueryInterface` per <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>.  
   
-    1.  A tale scopo, utilizzare il puntatore sito passato alla visualizzazione al momento della creazione.  
+    1. A tale scopo, utilizzare il puntatore sito passato alla visualizzazione al momento della creazione.  
   
-    2.  Chiamare `QueryService` dalla vista per la `SID_STrackSelection` servizio.  
+    2. Chiamare `QueryService` dalla vista per la `SID_STrackSelection` servizio.  
   
          Restituisce un puntatore a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.  
   
-2.  Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> metodo ogni volta che cambia la selezione e passare un puntatore a un oggetto che implementa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
+2. Chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> metodo ogni volta che cambia la selezione e passare un puntatore a un oggetto che implementa <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.  
   
      L'oggetto contenitore di selezione è possibile usare una o più selezioni e contiene le informazioni di selezione in un `IDispatch` oggetto. Chiama il <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> metodo invia una notifica la **proprietà** finestra modificata la selezione. Il **delle proprietà** finestra Usa quindi gli oggetti nelle <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> per determinare se una o più selezioni si sono verificati e quali sono le selezioni per l'oggetto effettivo.  
   

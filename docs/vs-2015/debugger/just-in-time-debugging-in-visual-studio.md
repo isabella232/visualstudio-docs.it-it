@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001440"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116173"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debug JIT in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
 
 - È necessario disporre [installato Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) per visualizzare le informazioni dettagliate sull'errore e provare a eseguirne il debug. Visualizzare [tramite JIT](#BKMK_Using_JIT) per istruzioni dettagliate. Se è Impossibile risolvere l'errore e correggere l'app, contattare il proprietario dell'app per risolvere l'errore.
 
-##  <a name="BKMK_Enabling"></a> Abilitare o disabilitare Just-In-Time il debug
+## <a name="BKMK_Enabling"></a> Abilitare o disabilitare Just-In-Time il debug
  È possibile abilitare o disabilitare il debug da Visual Studio Just-In-Time **Strumenti / opzioni** nella finestra di dialogo.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Per abilitare o disabilitare il debug JIT
@@ -73,36 +73,36 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Per disabilitare il debug JIT modificando il Registro di sistema
 
-1.  Nel **avviare** menu, cercare ed eseguire `regedit.exe`
+1. Nel **avviare** menu, cercare ed eseguire `regedit.exe`
 
-2.  Nel **dell'Editor del Registro di sistema** finestra, individuare ed eliminare le voci del Registro di sistema seguenti:
+2. Nel **dell'Editor del Registro di sistema** finestra, individuare ed eliminare le voci del Registro di sistema seguenti:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  Se il computer è in esecuzione un sistema operativo a 64 bit, eliminare anche le voci del Registro di sistema seguenti:
+3. Se il computer è in esecuzione un sistema operativo a 64 bit, eliminare anche le voci del Registro di sistema seguenti:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  Fare attenzione a non eliminare o modificare altre chiavi del Registro di sistema.
+4. Fare attenzione a non eliminare o modificare altre chiavi del Registro di sistema.
 
-5.  Chiudi il **dell'Editor del Registro di sistema** finestra.
+5. Chiudi il **dell'Editor del Registro di sistema** finestra.
 
 > [!NOTE]
 >  Se si sta tentando di disabilitare il debug per un'app sul lato server Just-In-Time e questi passaggi non consentono di risolvere il problema, disattivare il debug sul lato server nelle impostazioni dell'applicazione IIS e riprovare.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Per attivare il debug JIT di Windows Form
 
-1.  Per impostazione predefinita, le applicazioni Windows Forms dispongono di un gestore eccezioni di livello superiore che consente al programma di proseguire l'esecuzione quando è possibile un ripristino. Ad esempio, se l'applicazione Windows Form genera un'eccezione non gestita, verrà visualizzato una finestra di dialogo simile alla seguente:
+1. Per impostazione predefinita, le applicazioni Windows Forms dispongono di un gestore eccezioni di livello superiore che consente al programma di proseguire l'esecuzione quando è possibile un ripristino. Ad esempio, se l'applicazione Windows Form genera un'eccezione non gestita, verrà visualizzato una finestra di dialogo simile alla seguente:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Per abilitare Just-In-Time il debug di un'applicazione Windows Forms, è necessario eseguire i passaggi aggiuntivi seguenti:
 
-2.  Impostare il `jitDebugging` valore per `true` nel `system.windows.form` sezione Machine. config o  *\<nome applicazione >*. file exe. config:
+2. Impostare il `jitDebugging` valore per `true` nel `system.windows.form` sezione Machine. config o  *\<nome applicazione >*. file exe. config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
     </configuration>
     ```
 
-3.  In un'applicazione Windows Form C++ è anche necessario impostare `DebuggableAttribute` in un file con estensione config o nel codice. Se si esegue la compilazione con [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e senza [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), il compilatore imposta automaticamente questo attributo. Se si desidera eseguire il debug di una build di rilascio non ottimizzata, tuttavia, è necessario procedere alla configurazione. A tale scopo, è possibile aggiungere la riga seguente al file AssemblyInfo.cpp dell'applicazione:
+3. In un'applicazione Windows Form C++ è anche necessario impostare `DebuggableAttribute` in un file con estensione config o nel codice. Se si esegue la compilazione con [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e senza [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), il compilatore imposta automaticamente questo attributo. Se si desidera eseguire il debug di una build di rilascio non ottimizzata, tuttavia, è necessario procedere alla configurazione. A tale scopo, è possibile aggiungere la riga seguente al file AssemblyInfo.cpp dell'applicazione:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -125,9 +125,9 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
 
  Quando si installa Visual Studio, il debug JIT è abilitato per impostazione predefinita.
 
- Ai fini di questa sezione, ci assicureremo un'app console C# in Visual Studio che genera un <xref:System.NullReferenceException>.
+ Ai fini di questa sezione, ci assicureremo un'app console c# in Visual Studio che genera un <xref:System.NullReferenceException>.
 
- In Visual Studio, creare un'app console C# (**File / nuovo / progetto / Visual C# / applicazione Console**) denominata **ThrowsNullException**. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ In Visual Studio, creare un'app console c# (**File / nuovo / progetto / Visual c# / applicazione Console**) denominata **ThrowsNullException**. Per altre informazioni sulla creazione di progetti in Visual Studio, vedere [procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Quando si apre il progetto in Visual Studio, aprire il file Program.cs. Sostituire il metodo Main () con il codice seguente, che stampa una riga nella console e quindi genera un'eccezione NullReferenceException:
 
@@ -144,7 +144,7 @@ static void Main(string[] args)
 
  Compilare la soluzione (in Visual Studio, scegliere **Build / Ricompila soluzione**). È possibile scegliere il Debug o la configurazione di rilascio. Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
- Il processo di compilazione crea un ThrowsNullException.exe eseguibile. È possibile trovarlo nella cartella in cui la creazione del progetto C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** oppure **...\ThrowsNullException\ThrowsNullException\bin\Release**.
+ Il processo di compilazione crea un ThrowsNullException.exe eseguibile. È possibile trovarlo nella cartella in cui la creazione del progetto c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** oppure **...\ThrowsNullException\ThrowsNullException\bin\Release**.
 
  Fare doppio clic il ThrowsNullException.exe. Si dovrebbe essere una finestra di comando simile al seguente:
 
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  I messaggi di errore elencati di seguito sono associati al debug JIT.
 
--   **Impossibile connettersi al processo bloccato. Il programma specificato non è un programma Windows o MS-DOS.**
+- **Impossibile connettersi al processo bloccato. Il programma specificato non è un programma Windows o MS-DOS.**
 
      Questo errore si verifica quando si prova a connettersi a un processo in esecuzione come utente diverso.
 
      Per risolvere questo problema, avviare Visual Studio, aprire il **Connetti a processo** dalla finestra di dialogo il **Debug** menu e trovare il processo che si desidera eseguire il debug nel **processi disponibili**elenco. Se non si conosce il nome del processo, esaminare i **Debugger JIT di Visual Studio** finestra di dialogo e annotare l'ID del processo. Selezionare il processo nel **processi disponibili** elenco e fare clic su **Attach**. Nel **Debugger JIT di Visual Studio** finestra di dialogo, fare clic su **No** per chiudere la finestra di dialogo.
 
--   **Impossibile avviare il debugger perché nessun utente è connesso.**
+- **Impossibile avviare il debugger perché nessun utente è connesso.**
 
      Questo errore si verifica quando il debug JIT tenta di avviare Visual Studio in un computer in cui nessun utente è connesso alla console. Poiché nessun utente è connesso, non esiste una sessione utente nella quale visualizzare la finestra di dialogo del debug JIT.
 
      Per correggere questo problema, connettersi al computer.
 
--   **Classe non registrata.**
+- **Classe non registrata.**
 
      Questo errore indica che il debugger ha tentato di creare una classe COM non registrata, probabilmente a causa di un problema di installazione.
 

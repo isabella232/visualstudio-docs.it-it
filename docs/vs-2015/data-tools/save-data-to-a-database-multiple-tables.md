@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118214"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
  Le attività illustrate nella procedura dettagliata sono le seguenti:  
   
--   Creazione di una nuova **applicazioni Windows** progetto.  
+- Creazione di una nuova **applicazioni Windows** progetto.  
   
--   Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
--   Impostazione dei controlli degli elementi di [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Impostazione dei controlli degli elementi di [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.  
+- Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.  
   
--   Modifica di alcuni record in ogni tabella nel set di dati.  
+- Modifica di alcuni record in ogni tabella nel set di dati.  
   
--   Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.  
+- Modifica del codice per inviare nuovamente al database i dati aggiornati nel set di dati.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare questa procedura dettagliata, è necessario:  
   
--   Accedere al database di esempio Northwind.
+- Accedere al database di esempio Northwind.
   
 ## <a name="create-the-windows-application"></a>Creare l'applicazione di Windows  
  Il primo passaggio consiste nel creare un **applicazioni Windows**. L'assegnazione di un nome al progetto è facoltativa durante questo passaggio, ma viene assegnato un nome perché è comunque prevista salvandolo in un secondo momento.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Per creare il nuovo progetto applicazione Windows  
   
-1.  Nel **File** menu, creare un nuovo progetto.  
+1. Nel **File** menu, creare un nuovo progetto.  
   
-2.  Denominare il progetto `UpdateMultipleTablesWalkthrough`.  
+2. Denominare il progetto `UpdateMultipleTablesWalkthrough`.  
   
-3.  Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **UpdateMultipleTablesWalkthrough** viene creato e aggiunto in **Esplora soluzioni**.  
   
@@ -73,27 +73,27 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   
-1.  Nel **Data** dal menu**Mostra origini dati**.  
+1. Nel **Data** dal menu**Mostra origini dati**.  
   
-2.  Nel **Zdroje dat** finestra, seleziona**Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
+2. Nel **Zdroje dat** finestra, seleziona**Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.  
   
-3.  Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
+3. Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**e quindi selezionare **Next**.  
   
-4.  Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
+4. Nel **scegliere la connessione dati**eseguire schermata una delle operazioni seguenti:  
   
-    -   Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
+    - Selezionare la connessione dati al database di esempio Northwind nell'elenco a discesa, se presente.  
   
          -oppure-  
   
-    -   Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.  
+    - Selezionare **Nuova connessione** per aprire la finestra di dialogo **Aggiungi/Modifica connessione**.  
   
-5.  Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
+5. Se il database richiede una password, selezionare l'opzione per includere dati sensibili e quindi selezionare **successivo**.  
   
-6.  Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**, selezionare **successivo**.  
+6. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**, selezionare **successivo**.  
   
-7.  Nel **Scegli oggetti di Database**schermata, quindi espandere il **tabelle** nodo.  
+7. Nel **Scegli oggetti di Database**schermata, quindi espandere il **tabelle** nodo.  
   
-8.  Selezionare il **clienti** e **ordini** tabelle e quindi selezionare **fine**.  
+8. Selezionare il **clienti** e **ordini** tabelle e quindi selezionare **fine**.  
   
      L'oggetto **NorthwindDataSet** viene aggiunto al progetto e le tabelle vengono visualizzate nella finestra **Origini dati**.  
   
@@ -102,20 +102,20 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Per impostare il tipo di rilascio degli elementi della finestra Origini dati  
   
-1.  Nel **Zdroje dat** finestra, espandere il **clienti** nodo.  
+1. Nel **Zdroje dat** finestra, espandere il **clienti** nodo.  
   
-2.  Nel **clienti** nodo, seleziona **dettagli** dall'elenco di controllo per impostare il controllo della **clienti** tabella sui singoli controlli. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+2. Nel **clienti** nodo, seleziona **dettagli** dall'elenco di controllo per impostare il controllo della **clienti** tabella sui singoli controlli. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 ## <a name="create-the-data-bound-form"></a>Creare il form con associazione a dati  
  È possibile creare i controlli associati a dati trascinando elementi dalla finestra **Origini dati** nel form.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Per creare controlli associati a dati nel form  
   
-1.  Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
+1. Trascinare il nodo **Customers** principale dalla finestra **Origini dati** in **Form1**.  
   
      Il form mostra i controlli associati a dati con etichette descrittive e un controllo Toolstrip (<xref:System.Windows.Forms.BindingNavigator>) per lo spostamento all'interno dei record. Nella barra dei componenti vengono visualizzati gli oggetti [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
-2.  Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.  
+2. Trascinare il nodo **Orders** correlato dalla finestra **Origini dati** in **Form1**.  
   
     > [!NOTE]
     >  Il nodo **Orders** correlato si trova sotto la colonna **Fax** ed è un nodo figlio del nodo **Customers**.  
@@ -130,9 +130,9 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 #### <a name="to-add-update-logic-to-the-application"></a>Per aggiungere la logica di aggiornamento all'applicazione  
   
-1.  Selezionare il **salvare** pulsante la <xref:System.Windows.Forms.BindingNavigator>. Si aprirà l'Editor di codice per il `bindingNavigatorSaveItem_Click` gestore dell'evento.  
+1. Selezionare il **salvare** pulsante la <xref:System.Windows.Forms.BindingNavigator>. Si aprirà l'Editor di codice per il `bindingNavigatorSaveItem_Click` gestore dell'evento.  
   
-2.  Sostituire il codice nel gestore eventi per chiamare i metodi `Update` degli oggetti TableAdapter correlati. Il codice seguente crea innanzitutto tre tabelle dati temporanee in cui inserire le informazioni aggiornate per ogni <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> e <xref:System.Data.DataRowState>). Gli aggiornamenti vengono quindi eseguiti nell'ordine corretto. Il codice dovrebbe essere simile al seguente:  
+2. Sostituire il codice nel gestore eventi per chiamare i metodi `Update` degli oggetti TableAdapter correlati. Il codice seguente crea innanzitutto tre tabelle dati temporanee in cui inserire le informazioni aggiornate per ogni <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> e <xref:System.Data.DataRowState>). Gli aggiornamenti vengono quindi eseguiti nell'ordine corretto. Il codice dovrebbe essere simile al seguente:  
   
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]  
@@ -141,20 +141,20 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 #### <a name="to-test-the-application"></a>Per eseguire il test dell'applicazione  
   
-1.  Selezionare **F5**.  
+1. Selezionare **F5**.  
   
-2.  Apportare alcune modifiche ai dati di uno o più record di ogni tabella.  
+2. Apportare alcune modifiche ai dati di uno o più record di ogni tabella.  
   
-3.  Selezionare il pulsante **Salva**.  
+3. Selezionare il pulsante **Salva**.  
   
-4.  Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.  
+4. Controllare i valori presenti nel database per verificare che le modifiche siano state salvate.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati nell'applicazione Windows. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:  
   
--   Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Procedura: Modificare un set di dati](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Procedura: Modificare un set di dati](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

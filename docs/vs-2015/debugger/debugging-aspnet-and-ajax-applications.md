@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964577"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116784"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Debug di applicazioni ASP.NET e AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il debug di applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è simile a quello di Windows Form o qualsiasi altra applicazione Windows poiché entrambi i tipi di applicazione impiegano controlli ed eventi. Tuttavia, esistono anche differenze sostanziali tra i due tipi di applicazioni:  
   
--   Tenere traccia dello stato è un'operazione più complessa in un'applicazione Web.  
+- Tenere traccia dello stato è un'operazione più complessa in un'applicazione Web.  
   
--   In un'applicazione Windows, il codice di cui eseguire il debug si trova essenzialmente in un punto, mentre per un'applicazione Web il codice può essere sul client e sul server. Mentre il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è tutto sul server, il codice JavaScript o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] potrebbe trovarsi anche sul client.  
+- In un'applicazione Windows, il codice di cui eseguire il debug si trova essenzialmente in un punto, mentre per un'applicazione Web il codice può essere sul client e sul server. Mentre il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] è tutto sul server, il codice JavaScript o [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] potrebbe trovarsi anche sul client.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Preparazione al debug di ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

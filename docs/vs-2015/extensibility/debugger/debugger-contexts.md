@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116238"
 ---
 # <a name="debugger-contexts"></a>Contesti del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debug, il motore di debug (DE) opera contemporaneamente in diversi contesti di distinti, come indicato di seguito:  
   
--   Contesto del codice, che descrive la posizione corrente nel flusso di esecuzione del programma.  
+- Contesto del codice, che descrive la posizione corrente nel flusso di esecuzione del programma.  
   
--   Il contesto di documentazione o la posizione, che descrive la posizione corrente all'interno di un documento di origine.  
+- Il contesto di documentazione o la posizione, che descrive la posizione corrente all'interno di un documento di origine.  
   
--   Il contesto di valutazione espressione, che descrive il contesto nel quale espressione valutazione verrà eseguita.  
+- Il contesto di valutazione espressione, che descrive il contesto nel quale espressione valutazione verrà eseguita.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Contesto del codice](../../extensibility/debugger/code-context.md)  

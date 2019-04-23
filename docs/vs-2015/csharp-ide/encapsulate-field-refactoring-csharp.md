@@ -1,5 +1,5 @@
 ---
-title: Incapsula campo Refactoring (C#) | Microsoft Docs
+title: Incapsula campo Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116602"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring Incapsula campo (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Il **Incapsula campo** operazione di refactoring consente di creare rapidamente 
   
 ### <a name="to-create-a-property-from-a-field"></a>Per creare una proprietà da un campo  
   
-1.  Creare un'applicazione console denominata `EncapsulateFieldExample` quindi sostituire `Program` con il codice di esempio seguente.  
+1. Creare un'applicazione console denominata `EncapsulateFieldExample` quindi sostituire `Program` con il codice di esempio seguente.  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ Il **Incapsula campo** operazione di refactoring consente di creare rapidamente 
     }  
     ```  
   
-2.  Nel [Editor di codice](../ide/writing-code-in-the-code-and-text-editor.md), posizionare il cursore nella dichiarazione, sul nome del campo che si vuole incapsulare. Nell'esempio seguente, posizionare il cursore sulla parola `width`:  
+2. Nel [Editor di codice](../ide/writing-code-in-the-code-and-text-editor.md), posizionare il cursore nella dichiarazione, sul nome del campo che si vuole incapsulare. Nell'esempio seguente, posizionare il cursore sulla parola `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  Nel **refactoring** menu, fare clic su **Incapsula campo**.  
+3. Nel **refactoring** menu, fare clic su **Incapsula campo**.  
   
      Il **Incapsula campo** verrà visualizzata la finestra di dialogo.  
   
@@ -72,11 +72,11 @@ Il **Incapsula campo** operazione di refactoring consente di creare rapidamente 
   
      È anche possibile fare doppio clic sul cursore, scegliere **refactoring**e quindi fare clic su **Incapsula campo** per visualizzare il **Incapsula campo** nella finestra di dialogo.  
   
-4.  Specificare le impostazioni.  
+4. Specificare le impostazioni.  
   
-5.  Premere INVIO oppure fare clic sui **OK** pulsante.  
+5. Premere INVIO oppure fare clic sui **OK** pulsante.  
   
-6.  Se è stata selezionata la **Anteprima modifiche riferimento** opzione, il **Anteprima modifiche riferimento** verrà visualizzata la finestra. Scegliere il **applica** pulsante.  
+6. Se è stata selezionata la **Anteprima modifiche riferimento** opzione, il **Anteprima modifiche riferimento** verrà visualizzata la finestra. Scegliere il **applica** pulsante.  
   
      Nel file di origine verrà visualizzato il codice delle funzioni di accesso `get` e `set` seguenti:  
   

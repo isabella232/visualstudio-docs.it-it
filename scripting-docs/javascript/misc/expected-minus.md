@@ -14,19 +14,19 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22d60c7029ce64ba8c8a7b130da3bbddce9b7f6b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117278"
 ---
 # <a name="expected--"></a>Previsto '-'
 Si ha provato a creare un'espressione regolare letterali, ma non include una delle barre (/). Come vengono scritti valori letterali stringa come caratteri all'interno di una coppia di virgolette doppie, valori letterali di espressioni regolari sono espressi come caratteri all'interno di una coppia di caratteri di barra (/).  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Inserire una barra rovesciata finale per contrassegnare la fine dell'espressione regolare.  
+- Inserire una barra rovesciata finale per contrassegnare la fine dell'espressione regolare.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Oggetto di espressione regolare](../../javascript/reference/regular-expression-object-javascript.md)   

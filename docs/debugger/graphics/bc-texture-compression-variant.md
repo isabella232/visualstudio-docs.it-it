@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680425"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094086"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante di compressione della trama BC
 Abilita la compressione a blocchi in tutte le trame con un formato di pixel che è una variante del formato B8G8R8X8, B8G8R8A8 o R8G8B8A8.
@@ -23,18 +23,18 @@ Abilita la compressione a blocchi in tutte le trame con un formato di pixel che 
 
  Se le trame sono adatte per la compressione basata su blocchi e non serve una fedeltà dei colori perfetta, valutare l'uso di un formato con compressione a blocchi per ridurre l'utilizzo della memoria e della larghezza di banda.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Per comprimere le trame, usare un formato di compressione basato su blocchi in ogni chiamata a `ID3DDevice::CreateTexture2D` che crea una trama di origine. In particolare, le trame vengono compresse quando:
 
 - L'oggetto `D3D11_TEXTURE2D_DESC` passato a `pDesc` descrive una risorsa shader che non cambia, ovvero:
 
-  -   Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.
+  - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.
 
-  -   Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.
+  - Il membro Usage è impostato su D3D11_USAGE_DEFAULT o su D3D11_USAGE_IMMUTABLE.
 
-  -   Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).
+  - Il membro CPUAccessFlags è impostato su 0 (nessun accesso alla CPU).
 
-  -   Il membro Count del membro SamplerDesc è impostato su 1 (nessun anti-aliasing multicampione).
+  - Il membro Count del membro SamplerDesc è impostato su 1 (nessun anti-aliasing multicampione).
 
 - Vengono forniti i dati iniziali alla chiamata a `CreateTexture2D`.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638530"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117889"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale
   Il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo del <xref:Microsoft.Office.Interop.Excel.Range> consente di inserire automaticamente un intervallo in un foglio di lavoro con i valori. In genere, il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo viene usato per archiviare in modo incrementale aumentando o diminuendo i valori in un intervallo. È possibile specificare il comportamento, fornendo una costante facoltativa dal <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumerazione.
@@ -29,9 +29,9 @@ ms.locfileid: "56638530"
 
  Quando si usa, è necessario specificare due intervalli <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   L'intervallo che chiama il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo, che specifica il punto di partenza del riempimento e contiene un valore iniziale.
+- L'intervallo che chiama il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo, che specifica il punto di partenza del riempimento e contiene un valore iniziale.
 
--   L'intervallo che si desidera compilare, passato come parametro per il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (metodo). Questo intervallo di destinazione deve includere l'intervallo che contiene il valore iniziale.
+- L'intervallo che si desidera compilare, passato come parametro per il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (metodo). Questo intervallo di destinazione deve includere l'intervallo che contiene il valore iniziale.
 
     > [!NOTE]
     >  Non è possibile passare un <xref:Microsoft.Office.Tools.Excel.NamedRange> invece di controllare il <xref:Microsoft.Office.Interop.Excel.Range>. Per altre informazioni, vedere [limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -45,11 +45,11 @@ ms.locfileid: "56638530"
 
  Nell'esempio si presuppone che si compila tre aree:
 
--   La colonna B consiste nell'includere cinque giorni lavorativi. Il valore iniziale, digitare **lunedì** nella cella B1.
+- La colonna B consiste nell'includere cinque giorni lavorativi. Il valore iniziale, digitare **lunedì** nella cella B1.
 
--   La colonna C consiste nell'includere cinque mesi. Il valore iniziale, digitare **gennaio** nella cella C1.
+- La colonna C consiste nell'includere cinque mesi. Il valore iniziale, digitare **gennaio** nella cella C1.
 
--   La colonna D consiste nell'includere una serie di numeri, con incrementi di due per ogni riga. Per i valori iniziali, digitare **4** nella cella D1 e **6** nella cella D2.
+- La colonna D consiste nell'includere una serie di numeri, con incrementi di due per ogni riga. Per i valori iniziali, digitare **4** nella cella D1 e **6** nella cella D2.
 
 ## <a name="see-also"></a>Vedere anche
 - [Lavorare con intervalli](../vsto/working-with-ranges.md)

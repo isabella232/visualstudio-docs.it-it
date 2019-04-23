@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117544"
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
   L'elemento della barra multifunzione (XML) consente di personalizzare una barra multifunzione utilizzando XML. Se si desidera personalizzare la barra multifunzione in modo che non è supportato dall'elemento barra multifunzione (finestra di progettazione visiva), usare l'elemento della barra multifunzione (XML). Per un confronto delle operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602023"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definire il comportamento della barra multifunzione personalizzata
  È possibile rispondere alle azioni dell'utente, ad esempio la selezione di un pulsante della barra multifunzione, creando *metodi di callback*. I metodi di callback sono simili agli eventi nei controlli Windows Form, ma vengono identificati da un attributo nel codice XML dell'elemento dell'interfaccia utente. I metodi vengono scritti nella classe Ribbon e un controllo chiama il metodo con lo stesso nome del valore dell'attributo. Ad esempio, è possibile creare un metodo di callback che viene chiamato quando un utente fa clic su un pulsante della barra multifunzione. Per creare un metodo di callback, sono necessari due passaggi:
 
--   Assegnare un attributo a un controllo nel file XML della barra multifunzione che identifica un metodo di callback nel codice.
+- Assegnare un attributo a un controllo nel file XML della barra multifunzione che identifica un metodo di callback nel codice.
 
--   Definire il metodo di callback nella classe Ribbon.
+- Definire il metodo di callback nella classe Ribbon.
 
 > [!NOTE]
 >  Outlook richiede un ulteriore passaggio. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602023"
 
  Ci sono molti tipi diversi di metodi di callback che è possibile assegnare ai controlli della barra multifunzione. Per un elenco completo dei metodi di callback disponibili per ogni controllo, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 3 di 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definire i metodi di callback
+### <a name="CallBackMethods"></a> Definire i metodi di callback
  Definire i metodi di callback nella classe Ribbon nel file di codice della barra multifunzione. Un metodo di callback presenta diversi requisiti:
 
 - Deve essere dichiarato come pubblico.
@@ -93,7 +93,7 @@ ms.locfileid: "56602023"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Riferimento al file XML della barra multifunzione
+## <a name="RibbonDescriptorFile"></a> Riferimento al file XML della barra multifunzione
  È possibile definire la barra multifunzione personalizzata aggiungendo elementi e attributi del file XML della barra multifunzione. Per impostazione predefinita, il file XML della barra multifunzione contiene il codice XML seguente.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602023"
 
  Gli elementi e gli attributi predefiniti nel file XML della barra multifunzione sono un piccolo subset degli elementi e degli attributi disponibili. Per un elenco completo degli attributi ed elementi disponibili, vedere l'articolo tecnico [personalizzare l'interfaccia utente della barra multifunzione di Office (2007) per gli sviluppatori (parte 2 di 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Riferimento alla classe Ribbon
+## <a name="RibbonExtensionClass"></a> Riferimento alla classe Ribbon
  Visual Studio genera la classe Ribbon nel file di codice della barra multifunzione. Aggiungere i metodi di callback per i controlli della barra multifunzione a questa classe. Questa classe implementa l'interfaccia <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  La tabella seguente descrive i metodi predefiniti della classe.

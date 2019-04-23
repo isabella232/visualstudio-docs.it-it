@@ -8,12 +8,12 @@ ms.assetid: 7028d440-d16d-4b08-9b94-eb8cc93b25fc
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f180642cf40c28bafcaf16eb68c36fc157914f11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfe754203ae9b4e951de5beef8cd829f9d7716bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116654"
 ---
 # <a name="getting-service-information-from-the-settings-store"></a>Recupero delle informazioni sui servizi dall'archivio delle impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,9 +22,9 @@ ms.locfileid: "58965595"
   
 ### <a name="to-list-the-available-services"></a>Per elencare i servizi disponibili  
   
-1.  Creare un progetto VSIX denominato FindServicesExtension e quindi aggiungere un comando personalizzato denominato FindServicesCommand. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Creare un progetto VSIX denominato FindServicesExtension e quindi aggiungere un comando personalizzato denominato FindServicesCommand. Per altre informazioni su come creare un comando personalizzato, vedere [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  In FindServicesCommand.cs, aggiungere quanto segue usando istruzioni:  
+2. In FindServicesCommand.cs, aggiungere quanto segue usando istruzioni:  
   
     ```vb  
     using System.Collections.Generic;  
@@ -33,7 +33,7 @@ ms.locfileid: "58965595"
     using System.Windows.Forms;  
     ```  
   
-3.  Ottenere l'archivio delle impostazioni di configurazione, quindi trovare la Sottoraccolta servizi denominato. Questa raccolta include tutti i servizi disponibili. Nel metodo MenuItemCommand, rimuovere il codice esistente e sostituirlo con quanto segue:  
+3. Ottenere l'archivio delle impostazioni di configurazione, quindi trovare la Sottoraccolta servizi denominato. Questa raccolta include tutti i servizi disponibili. Nel metodo MenuItemCommand, rimuovere il codice esistente e sostituirlo con quanto segue:  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -52,9 +52,9 @@ ms.locfileid: "58965595"
     }  
     ```  
   
-4.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
+4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
   
-5.  Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.  
+5. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.  
   
      Dovrebbe elencare tutti i servizi di una finestra di messaggio.  
   
@@ -63,7 +63,7 @@ ms.locfileid: "58965595"
 ## <a name="finding-a-specific-service"></a>Ricerca di un servizio specifico  
  È anche possibile usare il <xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A> metodo per determinare se è installato un particolare servizio. È necessario conoscere il tipo della classe del servizio.  
   
-1.  In MenuItemCallback del progetto è stato creato nella procedura precedente, eseguire la ricerca dell'archivio delle impostazioni di configurazione per il `Services` raccolta che include la Sottoraccolta denominato dal GUID del servizio. In questo caso verrà cercato il servizio della Guida.  
+1. In MenuItemCallback del progetto è stato creato nella procedura precedente, eseguire la ricerca dell'archivio delle impostazioni di configurazione per il `Services` raccolta che include la Sottoraccolta denominato dal GUID del servizio. In questo caso verrà cercato il servizio della Guida.  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -78,8 +78,8 @@ ms.locfileid: "58965595"
     }  
     ```  
   
-2.  Compilare il progetto e avviare il debug.  
+2. Compilare il progetto e avviare il debug.  
   
-3.  Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.  
+3. Nell'istanza sperimentale, sul **degli strumenti** menu, fare clic su **FindServicesCommand richiamare**.  
   
      Verrà visualizzato un messaggio con il testo **della Guida servizio disponibili:** seguito da **True** oppure **False**. Per verificare questa impostazione, è possibile usare un editor del Registro di sistema, come illustrato nei passaggi precedenti.

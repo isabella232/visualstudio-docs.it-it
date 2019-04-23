@@ -10,12 +10,12 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fbf30d1fdb4fcce1e28a3c10c9949f1a11eae529
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58965809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117876"
 ---
 # <a name="editor-factories"></a>Factory dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Una factory dell'editor crea gli oggetti di editor e li inserisce in una cornice
 ## <a name="the-editor-factory-registration-process"></a>Il processo di registrazione Factory Editor  
  Il processo seguente si verifica quando Visual Studio carica l'editor utilizzando la factory dell'editor:  
   
-1.  Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chiamate al sistema di progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chiamate al sistema di progetto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Questo metodo restituisce la factory dell'editor. Ritardi di Visual Studio il caricamento del pacchetto dell'editor, tuttavia, fino a quando un sistema di progetto effettivamente necessaria per l'editor.  
+2. Questo metodo restituisce la factory dell'editor. Ritardi di Visual Studio il caricamento del pacchetto dell'editor, tuttavia, fino a quando un sistema di progetto effettivamente necessaria per l'editor.  
   
-3.  Quando l'editor è un sistema di progetto, Visual Studio chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un metodo specializzato che restituisce la visualizzazione del documento sia il documento di oggetti dati.  
+3. Quando l'editor è un sistema di progetto, Visual Studio chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, un metodo specializzato che restituisce la visualizzazione del documento sia il documento di oggetti dati.  
   
-4.  Se viene chiamato da Visual Studio per il factory editor con <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> restituiscono un oggetto dati del documento sia un oggetto visualizzazione del documento, Visual Studio quindi crea la finestra del documento, inserisce l'oggetto visualizzazione del documento in esso e produce una voce nel documento in esecuzione tabella (RDT) per l'oggetto dati del documento.  
+4. Se viene chiamato da Visual Studio per il factory editor con <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> restituiscono un oggetto dati del documento sia un oggetto visualizzazione del documento, Visual Studio quindi crea la finestra del documento, inserisce l'oggetto visualizzazione del documento in esso e produce una voce nel documento in esecuzione tabella (RDT) per l'oggetto dati del documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

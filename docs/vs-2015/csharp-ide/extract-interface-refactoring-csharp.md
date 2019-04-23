@@ -1,5 +1,5 @@
 ---
-title: Estrai interfaccia Refactoring (C#) | Microsoft Docs
+title: Estrai interfaccia Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116745"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring Estrai interfaccia (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice
   
 ### <a name="to-use-extract-interface"></a>Usare Estrai interfaccia  
   
-1.  Creare un'applicazione console denominata `ExtractInterface`, quindi sostituire `Program` con il codice seguente  
+1. Creare un'applicazione console denominata `ExtractInterface`, quindi sostituire `Program` con il codice seguente  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice
     }  
     ```  
   
-2.  Con il cursore è posizionato in `MethodB`, fare clic su **Estrai interfaccia** sul **effettuare il refactoring** menu.  
+2. Con il cursore è posizionato in `MethodB`, fare clic su **Estrai interfaccia** sul **effettuare il refactoring** menu.  
   
      Il **Estrai interfaccia** verrà visualizzata la finestra di dialogo.  
   
@@ -53,9 +53,9 @@ Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice
   
      È anche possibile fare doppio clic il mouse, scegliere **refactoring**e quindi fare clic su **Estrai interfaccia** per visualizzare il **Estrai interfaccia** nella finestra di dialogo.  
   
-3.  Fare clic su **Seleziona tutto**.  
+3. Fare clic su **Seleziona tutto**.  
   
-4.  Fare clic su **OK**.  
+4. Fare clic su **OK**.  
   
      Vengono visualizzati il nuovo file, IProtoA.cs e il codice seguente:  
   

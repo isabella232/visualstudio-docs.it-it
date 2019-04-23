@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116615"
 ---
 # <a name="context-operator-c"></a>Operatore di contesto (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'operatore di contesto in C++ può essere usato per qualificare la posizione di un punto di interruzione, il nome di una variabile o un'espressione. L'operatore di contesto è utile per specificare un nome da un ambito esterno che altrimenti sarebbe nascosto da un nome locale.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintassi  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintassi  
  Il contesto può essere specificato in due modi:  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      Le parentesi graffe devono contenere due virgole e il nome o il percorso completo del modulo (file eseguibile o DLL).  
   
@@ -48,7 +48,7 @@ L'operatore di contesto in C++ può essere usato per qualificare la posizione di
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *module*!*expression*  
+2. *module*!*expression*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ L'operatore di contesto in C++ può essere usato per qualificare la posizione di
   
   Quando l'analizzatore di espressioni rileva un simbolo in un'espressione, ne esegue la ricerca nel seguente ordine:  
   
-1.  Ambito lessicale verso l'esterno, a partire dal blocco corrente, serie di istruzioni racchiuse tra parentesi graffe, verso il blocco di inclusione. Il blocco corrente è il codice contenente la posizione corrente, ovvero l'indirizzo del puntatore all'istruzione.  
+1. Ambito lessicale verso l'esterno, a partire dal blocco corrente, serie di istruzioni racchiuse tra parentesi graffe, verso il blocco di inclusione. Il blocco corrente è il codice contenente la posizione corrente, ovvero l'indirizzo del puntatore all'istruzione.  
   
-2.  Ambito della funzione. Funzione corrente.  
+2. Ambito della funzione. Funzione corrente.  
   
-3.  Ambito della classe, se la posizione corrente si trova all'interno di una funzione membro C++. Nell'ambito della classe sono incluse tutte le classi base. L'analizzatore di espressioni usa le regole di dominanza normali.  
+3. Ambito della classe, se la posizione corrente si trova all'interno di una funzione membro C++. Nell'ambito della classe sono incluse tutte le classi base. L'analizzatore di espressioni usa le regole di dominanza normali.  
   
-4.  Simboli globali nel modulo corrente.  
+4. Simboli globali nel modulo corrente.  
   
-5.  Simboli pubblici nel programma corrente.
+5. Simboli pubblici nel programma corrente.

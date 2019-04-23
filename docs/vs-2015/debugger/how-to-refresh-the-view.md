@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d6849aef52007368f742b25423a52c034d1475
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1d0170d11ffaba831fdd68caa7249d0002526414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089614"
 ---
 # <a name="how-to-refresh-the-view"></a>Procedura: Aggiornare la visualizzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Spy + + cattura un' "istantanea" tabelle di sistema e consente di aggiornare una
   
 ### <a name="to-refresh-the-currently-active-view"></a>Per aggiornare la visualizzazione attualmente attiva  
   
--   Scegliere **aggiornare** dal **finestra** menu o fare clic il **Aggiorna** pulsante sulla barra degli strumenti.  
+- Scegliere **aggiornare** dal **finestra** menu o fare clic il **Aggiorna** pulsante sulla barra degli strumenti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di Spy++](../debugger/using-spy-increment.md)   

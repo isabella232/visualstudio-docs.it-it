@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117824"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un rapporto calltrace degli strumenti di profilatura
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un profilo rapporto calltrace degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.  
@@ -29,9 +29,9 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../i
   
 ### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace  
   
-1.  Aprire una finestra del **prompt dei comandi**.  
+1. Aprire una finestra del **prompt dei comandi**.  
   
-2.  Al prompt dei comandi digitare il seguente comando:  
+2. Al prompt dei comandi digitare il seguente comando:  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
@@ -42,5 +42,5 @@ Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../i
     |Xml|Genera un report in formato XML.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [Procedura: Raccogliere Event Tracing for Windows (ETW) Data](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [API degli strumenti di profilatura](../profiling/profiling-tools-apis.md)

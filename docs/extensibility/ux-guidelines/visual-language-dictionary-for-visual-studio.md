@@ -6,12 +6,12 @@ ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
 manager: jillfra
-ms.openlocfilehash: b550f75731874da5581c967034cd91260674f974
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3e36b9deb2d5837927d239232cafbcac15dfe406
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117512"
 ---
 # <a name="visual-language-dictionary"></a>Dizionario del linguaggio visivo
 
@@ -19,24 +19,24 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 
 ## <a name="general-guidelines"></a>Indicazioni generali
 
--   Questi concetti visual devono essere usati in modo coerente con le relative definizioni di dizionario. In caso contrario, si rischia di confondere gli utenti, che si aspettano elementi comuni per hanno un significato coerente.
+- Questi concetti visual devono essere usati in modo coerente con le relative definizioni di dizionario. In caso contrario, si rischia di confondere gli utenti, che si aspettano elementi comuni per hanno un significato coerente.
 
--   Scegliere solo i concetti più importanti o rilevanti per l'utilizzo di visualizzazione di icone, in modo che le immagini più facili da trovare e nitido.
+- Scegliere solo i concetti più importanti o rilevanti per l'utilizzo di visualizzazione di icone, in modo che le immagini più facili da trovare e nitido.
 
--   Usare solo uno o due concetti in ogni immagine.
+- Usare solo uno o due concetti in ogni immagine.
 
--   Per altre strategie per le icone di progettazione, vedere [progettazione icona](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).
+- Per altre strategie per le icone di progettazione, vedere [progettazione icona](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign).
 
 **Passare alla sezione:**
 
-1.  [Concetti relativi A-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
-2.  [Prodotti e piattaforme](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
-3.  [Concetti comuni usando le frecce](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
-4.  [Indicatori di stato](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
+1. [Concetti relativi A-Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)
+2. [Prodotti e piattaforme](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDProducts)
+3. [Concetti comuni usando le frecce](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDArrows)
+4. [Indicatori di stato](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDStatus)
 
-##  <a name="BKMK_VLDConcepts"></a> Concetti relativi A-Z
+## <a name="BKMK_VLDConcepts"></a> Concetti relativi A-Z
 
-###  <a name="BKMK_VLDConceptsA"></a> A
+### <a name="BKMK_VLDConceptsA"></a> A
 
 | Concetto | Icona principale | Altri esempi | Note |
 | - | - | - | - |
@@ -61,7 +61,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Registrazione audio** | ![Icona registrazione audio](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![Icona Disattiva registrazione](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />Disattiva registrazione<br />![Icona record dello schermo e della voce](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />Schermata di record e vocale | |
 | **Autosum** | ![Icona Somma automatica](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
 
-###  <a name="BKMK_VLDConceptsB"></a> B
+### <a name="BKMK_VLDConceptsB"></a> B
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Business** | ![Icona business](../../extensibility/ux-guidelines/media/vld_c_business.png "VLD_C_Business") | ![Icona di modello modello di business](../../extensibility/ux-guidelines/media/vld_c_business_businessmodeltemplate.png "VLD_C_Business_BusinessModelTemplate")<br />Modello di Business<br />![Icona di origine dati di oggetti business](../../extensibility/ux-guidelines/media/vld_c_business_businessobjectsdatasource.png "VLD_C_Business_BusinessObjectsDataSource")<br />Origine dei dati di oggetti business<br />![Icona business online](../../extensibility/ux-guidelines/media/vld_c_business_onlinebusiness.png "VLD_C_Business_OnlineBusiness")<br />Business online ||
 | **Pulsante** |![Icona del pulsante](../../extensibility/ux-guidelines/media/vld_c_button.png "VLD_C_Button") | ![Icona Aggiungi pulsante](../../extensibility/ux-guidelines/media/vld_c_button_addbutton.png "VLD_C_Button_AddButton")<br />Pulsante Aggiungi<br />![Icona pulsante immagine](../../extensibility/ux-guidelines/media/vld_c_button_imagebutton.png "VLD_C_Button_ImageButton")<br />Pulsante immagine<br />![Icona pulsante collegato](../../extensibility/ux-guidelines/media/vld_c_button_linkedbutton.png "VLD_C_Button_LinkedButton")<br />Pulsante collegato ||
 
-###  <a name="BKMK_VLDConceptsC"></a> C
+### <a name="BKMK_VLDConceptsC"></a> C
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -116,7 +116,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Espressione personalizzata**<br />Stima | ![Icona espressione personalizzata](../../extensibility/ux-guidelines/media/vld_c_customexpression.png "VLD_C_CustomExpression") | ![Stima di data mining](../../extensibility/ux-guidelines/media/vld_c_customexpression_dataminingprediction.png "VLD_C_CustomExpression_DataMiningPrediction")<br />Stima data mining ||
 | **Taglia** | ![Icona Taglia](../../extensibility/ux-guidelines/media/vld_c_cut.png "VLD_C_Cut") |||
 
-###  <a name="BKMK_VLDConceptsD"></a> D
+### <a name="BKMK_VLDConceptsD"></a> D
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -135,10 +135,10 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Document**<br />File | ![Icona documento](../../extensibility/ux-guidelines/media/vld_c_document.png "VLD_C_Document") | ![Icona raccolta documenti](../../extensibility/ux-guidelines/media/vld_c_document_documentslibrary.png "VLD_C_Document_DocumentsLibrary")<br />Raccolta di documenti<br />![Icona download file](../../extensibility/ux-guidelines/media/vld_c_document_filedownload.png "VLD_C_Document_FileDownload")<br />Download di file<br />![Icona Formatta documento](../../extensibility/ux-guidelines/media/vld_c_document_formatdocument.png "VLD_C_Document_FormatDocument") <br />Formatta documento ||
 | **Drive** | ![Icona unità](../../extensibility/ux-guidelines/media/vld_c_drive.png "VLD_C_Drive") | ![Icona unità CD](../../extensibility/ux-guidelines/media/vld_c_drive_cddrive.png "VLD_C_Drive_CDDrive")<br />Unità CD-ROM ||
 | **Driver** | ![Icona driver](../../extensibility/ux-guidelines/media/vld_c_driver.png "VLD_C_Driver") | ![Icona di modello di pacchetto di driver](../../extensibility/ux-guidelines/media/vld_c_driver_driverpackagetemplate.png "VLD_C_Driver_DriverPackageTemplate")<br />Modello di pacchetto di driver<br />![Icona Esplora gruppo di test del driver](../../extensibility/ux-guidelines/media/vld_c_driver_drivertestgroupexplorer.png "VLD_C_Driver_DriverTestGroupExplorer")<br />Esplora gruppo di test del driver<br />![Icona di modello driver di rete NDIS](../../extensibility/ux-guidelines/media/vld_c_driver_networkndisdrivertemplate.png "VLD_C_Driver_NetworkNDISDriverTemplate")<br />Modello di driver NDIS della rete ||
-| **Dynamic** | ![Dynamic icon](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![Icona del controllo dinamico ASP.NET](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />Controllo dinamico ASP.NET<br />![C&#35; icona di sito Web dei dati dinamici](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />Sito Web dei dati dinamici C#<br />![Icona di validator dinamico](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />Validator dinamico ||
+| **Dynamic** | ![Dynamic icon](../../extensibility/ux-guidelines/media/vld_c_dynamic.png "VLD_C_Dynamic") | ![Icona del controllo dinamico ASP.NET](../../extensibility/ux-guidelines/media/vld_c_dynamic_aspnetdynamiccontrol.png "VLD_C_Dynamic_ASPNETDynamicControl")<br />Controllo dinamico ASP.NET<br />![C&#35; icona di sito Web dei dati dinamici](../../extensibility/ux-guidelines/media/vld_c_dynamic_csdynamicdatawebsite.png "VLD_C_Dynamic_CSDynamicDataWebsite")<br />Sito Web dei dati dinamici c#<br />![Icona di validator dinamico](../../extensibility/ux-guidelines/media/vld_c_dynamic_dynamicvalidator.png "VLD_C_Dynamic_DynamicValidator")<br />Validator dinamico ||
 | **Valore dinamico** | ![Icona del valore dinamico](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue.png "VLD_C_DynamicValue") | ![Icona di copia dynamicvalue](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_copydynamicvalue.png "VLD_C_DynamicValue_CopyDynamicValue")<br />Copia valore dinamico<br />![Icona del valore dinamico vuoto](../../extensibility/ux-guidelines/media/vld_c_dynamicvalue_emptydynamicvalue.png "VLD_C_DynamicValue_EmptyDynamicValue")<br />Valore dinamico vuoto ||
 
-###  <a name="BKMK_VLDConceptsE"></a> E
+### <a name="BKMK_VLDConceptsE"></a> E
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -152,7 +152,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Espandi/Comprimi** | ![Icona di espansione](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![contratto &#40;verbo&#41; icona](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || Il **Espandi/Comprimi** vengono usate nelle situazioni di layout icone per indicare che sarà preferibile ridurre lo spazio tra due elementi. |
 | **Export**<br />*Uguale a "Open"*| ![Icona Esporta](../../extensibility/ux-guidelines/media/vld_c_export.png "VLD_C_Export") | ![Icona Esporta filtro](../../extensibility/ux-guidelines/media/vld_c_export_exportfilter.png "VLD_C_Export_ExportFilter")<br />Esporta filtro<br />![Icona Esporta dati rapporto](../../extensibility/ux-guidelines/media/vld_c_export_exportreportdata.png "VLD_C_Export_ExportReportData") <br />Esportare i dati del report<br />![Icona filtro Esporta rapporto](../../extensibility/ux-guidelines/media/vld_c_export_exportreportfilter.png "VLD_C_Export_ExportReportFilter")<br />Filtro Esporta rapporto ||
 
-###  <a name="BKMK_VLDConceptsF"></a> F
+### <a name="BKMK_VLDConceptsF"></a> F
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -169,7 +169,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Friend** | ![Icona amico](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
 | **Function**<br />Espressione<br />*Uguale a "Effetti" e "Variabile (globale)"* | ![Icona funzione](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![Icona di avviso funzione](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />Avviso (funzione)<br />![Icona funzione pagina WPF](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />Funzione di pagina WPF ||
 
-###  <a name="BKMK_VLDConceptsG"></a> G
+### <a name="BKMK_VLDConceptsG"></a> G
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -180,7 +180,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Layout web griglia** | ![Icona layout web griglia](../../extensibility/ux-guidelines/media/vld_c_gridweblayout.png "VLD_C_GridWebLayout") | ![Icona dell'elemento griglia](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridelement.png "VLD_C_GridWebLayout_GridElement")<br />Elemento Grid<br />![Icona dell'elemento di barra di divisione griglia](../../extensibility/ux-guidelines/media/vld_c_gridweblayout_gridsplitterelement.png "VLD_C_GridWebLayout_GridSplitterElement")<br />Elemento barra di divisione griglia ||
 | **Raggruppamento** | ![Icona raggruppamento](../../extensibility/ux-guidelines/media/vld_c_grouping.png "VLD_C_Grouping") | ![Icona del gruppo di finestra di dialogo](../../extensibility/ux-guidelines/media/vld_c_grouping_dialoggroup.png "VLD_C_Grouping_DialogGroup")<br />Gruppo di finestra di dialogo<br />![Team icon](../../extensibility/ux-guidelines/media/vld_c_grouping_team.png "VLD_C_Grouping_Team")<br />Team<br />![Icona macchine virtuali](../../extensibility/ux-guidelines/media/vld_c_grouping_virtualmachines.png "VLD_C_Grouping_VirtualMachines")<br />Macchine virtuali| Stack di più oggetti uno sopra l'altro rappresenta il concetto di **raggruppamento** o molteplicità. |
 
-###  <a name="BKMK_VLDConceptsH"></a> H
+### <a name="BKMK_VLDConceptsH"></a> H
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -188,7 +188,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Cronologia** | ![Icona cronologia](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **Home** | ![Icona Home](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![Icona schermata iniziale di LightSwitch](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />Schermata iniziale di LightSwitch ||
 
-###  <a name="BKMK_VLDConceptsI"></a> I
+### <a name="BKMK_VLDConceptsI"></a> I
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -201,14 +201,14 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Interface** | ![Icona interfaccia](../../extensibility/ux-guidelines/media/vld_c_interface.png "VLD_C_Interface") | ![Icona implementa interfaccia](../../extensibility/ux-guidelines/media/vld_c_interface_implementinterface.png "VLD_C_Interface_ImplementInterface")<br />Implementare l'interfaccia ||
 | **Item** | ![Icona dell'elemento](../../extensibility/ux-guidelines/media/vld_c_item.png "VLD_C_Item") | ![Icona dell'elemento di copia](../../extensibility/ux-guidelines/media/vld_c_item_copyitem.png "VLD_C_Item_CopyItem")<br />Copia elemento<br />![Creare l'icona dell'elemento di elenco](../../extensibility/ux-guidelines/media/vld_c_item_createlistitem.png "VLD_C_Item_CreateListItem")<br />Crea elemento di elenco<br />![Icona Archivia voce](../../extensibility/ux-guidelines/media/vld_c_item_checkinitem.png "VLD_C_Item_CheckInItem")<br />Elemento archiviato ||
 
-###  <a name="BKMK_VLDConceptsK"></a> K
+### <a name="BKMK_VLDConceptsK"></a> K
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
 | **Key**<br />Autorizzazione, ID | ![Icona della chiave](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![Icona nuova chiave](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />Nuova chiave<br />![Icona autorizzazione](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />Autorizzazioni<br />![Icona di ID elemento corrente](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />Ottenere l'ID dell'elemento corrente ||
 | **Indicatore di prestazioni chiave (KPI)** | ![Icona dell'indicatore KPI](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![Icona Elimina KPI](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />Elimina KPI<br />![Icona visualizzazione browser KPI](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />Visualizzazione di esplorazione degli indicatori KPI<br />![Indicatore KPI con icona di errore](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />Indicatore KPI con errore ||
 
-###  <a name="BKMK_VLDConceptsL"></a> L
+### <a name="BKMK_VLDConceptsL"></a> L
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -218,7 +218,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Log** | ![Log icon](../../extensibility/ux-guidelines/media/vld_c_log.png "VLD_C_Log") | ![Icona Proprietà catalogo](../../extensibility/ux-guidelines/media/vld_c_log_catalogproperties.png "VLD_C_Log_CatalogProperties")<br />Proprietà catalogo<br />![Icona log azioni](../../extensibility/ux-guidelines/media/vld_c_log_actionlog.png "VLD_C_Log_ActionLog")<br />Log delle azioni<br />![Icona del piano di test connessione](../../extensibility/ux-guidelines/media/vld_c_log_connecttestplan.png "VLD_C_Log_ConnectTestPlan")<br />Connettere il piano di test ||
 | **Loop** | ![Loop icon](../../extensibility/ux-guidelines/media/vld_c_loop.png "VLD_C_Loop") | ![Aggiunta o inserimento icona di ciclo condizionale](../../extensibility/ux-guidelines/media/vld_c_loop_addorinsertconditionalloop.png "VLD_C_Loop_AddOrInsertConditionalLoop")<br />Aggiunta o inserimento di ciclo condizionale<br />![Icona di ciclo condizionale](../../extensibility/ux-guidelines/media/vld_c_loop_conditionalloop.png "VLD_C_Loop_ConditionalLoop")<br />Ciclo condizionale ||
 
-###  <a name="BKMK_VLDConceptsM"></a> M
+### <a name="BKMK_VLDConceptsM"></a> M
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -241,7 +241,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Modulo** | ![Icona modulo](../../extensibility/ux-guidelines/media/vld_c_module.png "VLD_C_Module") | ![Icona di progetto di modulo di tipo merge](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleproject.png "VLD_C_Module_MergeModuleProject")<br />Progetto di modulo di tipo merge<br />![Icona Aggiungi modulo](../../extensibility/ux-guidelines/media/vld_c_module_addmodule.png "VLD_C_Module_AddModule")<br />Aggiungi modulo<br />![Icona di esclusione di tipo merge](../../extensibility/ux-guidelines/media/vld_c_module_mergemoduleexclude.png "VLD_C_Module_MergeModuleExclude")<br />Esclusione di modulo di tipo merge ||
 | **Sposta** | ![Icona Sposta](../../extensibility/ux-guidelines/media/vld_c_move.png "VLD_C_Move") |||
 
-###  <a name="BKMK_VLDConceptsN"></a> N
+### <a name="BKMK_VLDConceptsN"></a> N
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -251,14 +251,14 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Nonsubstantive (nascosti o un modello)**<br />*Uguale a "Virtuali"* | ![Icona non essenziale](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive.png "VLD_C_Nonsubstantive") | ![Icona campo nascosto](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfield.png "VLD_C_Nonsubstantive_HiddenField")<br />Campo nascosto<br />![Icona cartella nascosta](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_hiddenfolder.png "VLD_C_Nonsubstantive_HiddenFolder")<br />Cartella nascosta<br />![Icona di modello dinamico](../../extensibility/ux-guidelines/media/vld_c_nonsubstantive_dynamictemplate.png "VLD_C_Nonsubstantive_DynamicTemplate")<br />Modello dinamico | Un contorno punteggiato di un oggetto indica che si tratta **nascosti o basate su modelli**. |
 | **Nota** | ![Icona Nota](../../extensibility/ux-guidelines/media/vld_c_note.png "VLD_C_Note") |||
 
-###  <a name="BKMK_VLDConceptsO"></a> O
+### <a name="BKMK_VLDConceptsO"></a> O
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
 | **Apri**<br />*Uguale a "Export"* | ![Open icon](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![Icona Apri allegato](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />Apri allegato<br />![Icona Apri risultato confronto](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />Apri risultato confronto<br />![Icona finestra di dialogo Apri file](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />Finestra di dialogo Apri file ||
 | **Output** | ![Output icon](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
 
-###  <a name="BKMK_VLDConceptsP"></a> P
+### <a name="BKMK_VLDConceptsP"></a> P
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -277,13 +277,13 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Procedure**<br />Finestra Interattiva | ![Icona routine](../../extensibility/ux-guidelines/media/vld_c_procedure.png "VLD_C_Procedure") | ![Icona finestra interattiva di Python](../../extensibility/ux-guidelines/media/vld_c_procedure_pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow")<br />Finestra interattiva di Python<br />![Icona di avviso di routine](../../extensibility/ux-guidelines/media/vld_c_procedure_procedurewarning.png "VLD_C_Procedure_ProcedureWarning")<br />Avviso di procedure<br />![Icona stored procedure](../../extensibility/ux-guidelines/media/vld_c_procedure_storedprocedure.png "VLD_C_Procedure_StoredProcedure")<br />Stored procedure ||
 | **Property**<br />Impostazioni, configurazioni | ![Icona della proprietà](../../extensibility/ux-guidelines/media/vld_c_property.png "VLD_C_Property") | ![Icona Aggiungi proprietà](../../extensibility/ux-guidelines/media/vld_c_property_addproperty.png "VLD_C_Property_AddProperty")<br />Aggiungi proprietà<br />![Icona di avviso di proprietà estese](../../extensibility/ux-guidelines/media/vld_c_property_extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning")<br />Proprietà estesa&mdash;avviso<br />![Icona nuova proprietà](../../extensibility/ux-guidelines/media/vld_c_property_newproperty.png "VLD_C_Property_NewProperty")<br />Nuova proprietà ||
 
-###  <a name="BKMK_VLDConceptsQ"></a> Q
+### <a name="BKMK_VLDConceptsQ"></a> Q
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
 | **Query** | ![Icona query](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![Icona Modifica query](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />Modifica query<br />![Icona di estensione query](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />Estensione di query<br />![Icona query rapide](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />Query rapida ||
 
-###  <a name="BKMK_VLDConceptsR"></a> R
+### <a name="BKMK_VLDConceptsR"></a> R
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -301,7 +301,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Regola** | ![Icona della regola](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![Icona nuova regola di estrazione](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />Nuova regola di estrazione<br />![Nuova icona di regola di soglia](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />Nuova regola di soglia<br />![Icona nuova regola di convalida](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />Nuova regola di convalida ||
 | **Righello**<br />Misura, Guida | ![Icona righello](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![Modalità misurazione sull'icona](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />Modalità misurazione attiva<br />![Icona unità di misura](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />Unità di misura ||
 
-###  <a name="BKMK_VLDConceptsS"></a> S
+### <a name="BKMK_VLDConceptsS"></a> S
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -322,7 +322,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Foglio di stile** | ![Icona foglio di stile](../../extensibility/ux-guidelines/media/vld_c_stylesheet.png "VLD_C_StyleSheet") | ![Icona foglio di stile New](../../extensibility/ux-guidelines/media/vld_c_stylesheet_newstylesheet.png "VLD_C_StyleSheet_NewStyleSheet")<br />Nuovo foglio di stile<br />![Icona foglio di stile Allega](../../extensibility/ux-guidelines/media/vld_c_stylesheet_attachstylesheet.png "VLD_C_StyleSheet_AttachStyleSheet")<br />Associa foglio di stile ||
 | **Sincronizza**<br />Aggiorna | ![Icona Sincronizza](../../extensibility/ux-guidelines/media/vld_c_synchronize.png "VLD_C_Synchronize") | ![Updated JavaScript icon](../../extensibility/ux-guidelines/media/vld_c_synchronize_updatedjavascript.png "VLD_C_Synchronize_UpdatedJavaScript")<br />JavaScript aggiornato<br />![Icona Richiama elementi di aggiornamento del database](../../extensibility/ux-guidelines/media/vld_c_synchronize_databaseupdateditems.png "VLD_C_Synchronize_DatabaseUpdatedItems")<br />Articoli aggiornati nel database<br />![Sync icon](../../extensibility/ux-guidelines/media/vld_c_synchronize_sync.png "VLD_C_Synchronize_Sync")<br />Sincronizzazione ||
 
-###  <a name="BKMK_VLDConceptsT"></a> T
+### <a name="BKMK_VLDConceptsT"></a> T
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -338,7 +338,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Attiva/disattiva** | ![Icona Attiva/disattiva](../../extensibility/ux-guidelines/media/vld_c_toggle.png "VLD_C_Toggle") | ![Attiva/Disattiva tutte le icone dei punti di interruzione](../../extensibility/ux-guidelines/media/vld_c_toggle_toggleallbreakpoints.png "VLD_C_Toggle_ToggleAllBreakpoints")<br />Attiva/Disattiva tutti i punti di interruzione<br />![Icona Attiva/disattiva](../../extensibility/ux-guidelines/media/vld_c_toggle_toggle.png "VLD_C_Toggle_Toggle")<br />Toggle ||
 | **Casella degli strumenti** | ![Icona casella degli strumenti](../../extensibility/ux-guidelines/media/vld_c_toolbox.png "VLD_C_Toolbox") | ![Icona del controllo della casella degli strumenti WinForm](../../extensibility/ux-guidelines/media/vld_c_toolbox_winformtoolboxcontrol.png "VLD_C_Toolbox_WinformToolboxControl")<br />Controllo della casella degli strumenti WinForm<br />![Icona del controllo della casella degli strumenti WPF](../../extensibility/ux-guidelines/media/vld_c_toolbox_wpftoolboxcontrol.png "VLD_C_Toolbox_WPFToolboxControl")<br />Controllo della casella degli strumenti WPF ||
 
-###  <a name="BKMK_VLDConceptsU"></a> U
+### <a name="BKMK_VLDConceptsU"></a> U
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -347,7 +347,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **User**<br />Ruolo di profilo | ![Icona utente](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![Icona Aggiungi utente](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />Aggiungere l'utente<br />![Aggiungere l'icona del controllo utente web](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />Aggiungi controllo utente web<br />![Utente SQL&#45;icona di tipi definiti](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />Tipi definiti dall'utente SQL ||
 | **Interfaccia utente**<br />Interfaccia utente | ![Icona dell'interfaccia utente](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
 
-###  <a name="BKMK_VLDConceptsV"></a> V
+### <a name="BKMK_VLDConceptsV"></a> V
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -358,7 +358,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Virtual**<br />*Uguale a "Nonsubstantive (nascosti o un modello)"* | ![Icona virtuale](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![Icona di ambiente virtuale](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />Ambiente virtuale ||
 | **Visible** | ![Icona visibile](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![Icona maschera o Nascondi](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />Maschera o Nascondi ||
 
-###  <a name="BKMK_VLDConceptsW"></a> W
+### <a name="BKMK_VLDConceptsW"></a> W
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
@@ -367,19 +367,19 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Wizard** | ![Icona della procedura guidata](../../extensibility/ux-guidelines/media/vld_c_wizard.png "VLD_C_Wizard") | ![Icona di creazione guidata livello mappa](../../extensibility/ux-guidelines/media/vld_c_wizard_maplayerwizard.png "VLD_C_Wizard_MapLayerWizard")<br />Creazione guidata livello mappa<br />![Icona della procedura guidata classe MFC](../../extensibility/ux-guidelines/media/vld_c_wizard_mfcclasswizard.png "VLD_C_Wizard_MFCCLassWizard")<br />Creazione guidata classe MFC<br />![Icona della procedura guidata mappa](../../extensibility/ux-guidelines/media/vld_c_wizard_mapwizard.png "VLD_C_Wizard_MapWizard")<br />Creazione guidata mappa ||
 | **Elemento di lavoro** | ![Icona dell'elemento di lavoro](../../extensibility/ux-guidelines/media/vld_c_workitem.png "VLD_C_WorkItem") | ![Passare all'icona dell'elemento di lavoro](../../extensibility/ux-guidelines/media/vld_c_workitem_gotoworkitem.png "VLD_C_WorkItem_GoToWorkItem")<br />Vai a elemento di lavoro<br />![Icona query elemento di lavoro](../../extensibility/ux-guidelines/media/vld_c_workitem_workitemquery.png "VLD_C_WorkItem_WorkItemQuery")<br />Query elemento di lavoro ||
 
-###  <a name="BKMK_VLDConceptsY"></a> Y
+### <a name="BKMK_VLDConceptsY"></a> Y
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
 | **Yield** | ![Icona yield](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
 
-###  <a name="BKMK_VLDConceptsZ"></a> Z
+### <a name="BKMK_VLDConceptsZ"></a> Z
 
 | Concetto | Icona principale | Altri esempi | Note |
 | --- | --- | --- | --- |
 | **Zoom** | ![Icona dello zoom](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![Icona Zoom avanti](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />Fare zoom avanti<br />![Icona Zoom indietro](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />Fare zoom indietro ||
 
-##  <a name="BKMK_VLDProducts"></a> Prodotti e piattaforme
+## <a name="BKMK_VLDProducts"></a> Prodotti e piattaforme
 
 | Concetto | Icona principale | Altri esempi |
 | --- | --- | --- |
@@ -389,13 +389,13 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **CoffeeScript** | ![CoffeeScript icon](../../extensibility/ux-guidelines/media/vld_p_coffeescript.png "VLD_P_CoffeeScript") ||
 | **Crystal Reports** | ![Icona di Crystal Reports](../../extensibility/ux-guidelines/media/vld_p_crystalreports.png "VLD_P_CrystalReports") | ![Icona di Crystal Reports](../../extensibility/ux-guidelines/media/vld_p_crystalreports_crystalreports.png "VLD_P_CrystalReports_CrystalReports")<br />Crystal Reports |
 | **GitHub** |![Icona di Github](../../extensibility/ux-guidelines/media/vld_p_github.png "VLD_P_Github") ||
-| **LightSwitch** | ![Icona di LightSwitch](../../extensibility/ux-guidelines/media/vld_p_lightswitch.png "VLD_P_LightSwitch") | ![C&#35; icona di libreria di estensioni LightSwitch](../../extensibility/ux-guidelines/media/vld_p_lightswitch_cslightswitchextensionlibrary.png "VLD_P_LightSwitch_CSLightSwitchExtensionLibrary")<br />Libreria di estensioni LightSwitch C# |
+| **LightSwitch** | ![Icona di LightSwitch](../../extensibility/ux-guidelines/media/vld_p_lightswitch.png "VLD_P_LightSwitch") | ![C&#35; icona di libreria di estensioni LightSwitch](../../extensibility/ux-guidelines/media/vld_p_lightswitch_cslightswitchextensionlibrary.png "VLD_P_LightSwitch_CSLightSwitchExtensionLibrary")<br />Libreria di estensioni LightSwitch c# |
 | **Mercury** | ![Icona di Mercury](../../extensibility/ux-guidelines/media/vld_p_mercury.png "VLD_P_Mercury") ||
 | **Microsoft Foundation Class.**<br />MFC | ![MFC icon](../../extensibility/ux-guidelines/media/vld_p_mfc.png "VLD_P_MFC") | ![Icona del progetto controllo ActiveX MFC](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcactivexcontrolproject.png "VLD_P_MFC_MFCActiveXControlProject")<br />Progetto controllo ActiveX MFC<br />![Icona di progetto dell'applicazione MFC](../../extensibility/ux-guidelines/media/vld_p_mfc_mfcapplicationproject.png "VLD_P_MFC_MFCApplicationProject")<br />Progetto di applicazione MFC<br />![C&#43; &#43; icona di progetto DLL MFC](../../extensibility/ux-guidelines/media/vld_p_mfc_cppmfcdllproject.png "VLD_P_MFC_CPPMFCDLLProject")<br />Progetto DLL MFC C++ |
 | **WCF** | ![WCF icon](../../extensibility/ux-guidelines/media/vld_p_wcf.png "VLD_P_WCF") | ![Icona di WCF data services](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfdataservices.png "VLD_P_WCF_WCFDataServices")<br />Servizi dati WCF<br />![Progetto di servizi WCF F&#35; icona](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectfs.png "VLD_P_WCF_WCFProjectFS")<br />Progetto di servizi WCFF#<br />![Icona per VB del progetto WCF](../../extensibility/ux-guidelines/media/vld_p_wcf_wcfprojectvb.png "VLD_P_WCF_WCFProjectVB")<br />Progetto di servizi WCF VB |
 | **WF** | ![WF icon](../../extensibility/ux-guidelines/media/vld_p_wf.png "VLD_P_WF") | ![Progetto WF C&#35; icona](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectcs.png "VLD_P_WF_WFProjectCS")<br />C# del progetto WF<br />![Icona per VB del progetto WF](../../extensibility/ux-guidelines/media/vld_p_wf_wfprojectvb.png "VLD_P_WF_WFProjectVB")<br />Progetto WF VB |
 
-##  <a name="BKMK_VLDArrows"></a> Concetti comuni usando le frecce
+## <a name="BKMK_VLDArrows"></a> Concetti comuni usando le frecce
 
 | Concetto | Icona principale | Altri esempi |
 | --- | --- | --- | --- |
@@ -411,7 +411,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **dipendenza** | ![Icona della dipendenza](../../extensibility/ux-guidelines/media/vld_a_dependency.png "VLD_A_Dependency") ||
 | **Selezione diretta** | ![Icona di selezione diretta](../../extensibility/ux-guidelines/media/vld_a_directselection.png "VLD_A_DirectSelection") ||
 | **Giù**<br />Download | ![Icona giù](../../extensibility/ux-guidelines/media/vld_a_down.png "VLD_A_Down") | ![Icona delle impostazioni web di download](../../extensibility/ux-guidelines/media/vld_a_down_downloadwebsettings.png "VLD_A_Down_DownloadWebSettings")<br />Il download delle impostazioni web<br />![Icona di cartella di download](../../extensibility/ux-guidelines/media/vld_a_down_downloadfolder.png "VLD_A_Down_DownloadFolder")<br />Cartella download<br />![Ordinamento crescente icona](../../extensibility/ux-guidelines/media/vld_a_down_sortascending.png "VLD_A_Down_SortAscending")<br />Ordinamento crescente |
-| **Dynamic** | ![Dynamic icon](../../extensibility/ux-guidelines/media/vld_a_dynamic.png "VLD_A_Dynamic") | ![Icona del controllo dinamico ASP.NET](../../extensibility/ux-guidelines/media/vld_a_dynamic_aspnetdynamiccontrol.png "VLD_A_Dynamic_ASPNETDynamicControl")<br />Controllo dinamico ASP.NET<br />![Dynamic validator icon](../../extensibility/ux-guidelines/media/vld_a_dynamic_dynamicvalidator.png "VLD_A_Dynamic_DynamicValidator")<br />Validator dinamico<br />![C&#35; icona di sito Web dei dati dinamici](../../extensibility/ux-guidelines/media/vld_a_dynamic_csdynamicdatawebsite.png "VLD_A_Dynamic_CSDynamicDataWebsite")<br />Sito Web dei dati dinamici C# |
+| **Dynamic** | ![Dynamic icon](../../extensibility/ux-guidelines/media/vld_a_dynamic.png "VLD_A_Dynamic") | ![Icona del controllo dinamico ASP.NET](../../extensibility/ux-guidelines/media/vld_a_dynamic_aspnetdynamiccontrol.png "VLD_A_Dynamic_ASPNETDynamicControl")<br />Controllo dinamico ASP.NET<br />![Dynamic validator icon](../../extensibility/ux-guidelines/media/vld_a_dynamic_dynamicvalidator.png "VLD_A_Dynamic_DynamicValidator")<br />Validator dinamico<br />![C&#35; icona di sito Web dei dati dinamici](../../extensibility/ux-guidelines/media/vld_a_dynamic_csdynamicdatawebsite.png "VLD_A_Dynamic_CSDynamicDataWebsite")<br />Sito Web dei dati dinamici c# |
 | **Espandere** | ![Icona di espansione](../../extensibility/ux-guidelines/media/vld_a_expand.png "VLD_A_Expand") ||
 | **Export** | ![Icona Esporta](../../extensibility/ux-guidelines/media/vld_a_export.png "VLD_A_Export") | ![Icona Esporta filtro](../../extensibility/ux-guidelines/media/vld_a_export_exportfilter.png "VLD_A_Export_ExportFilter")<br />Esporta filtro<br />![Filtro Esporta rapporto &#40;dati&#41;](../../extensibility/ux-guidelines/media/vld_a_export_exportreportfilter_data.png "VLD_A_Export_ExportReportFilter_data")<br />Filtro Esporta rapporto (dati)<br />![Filtro Esporta rapporto](../../extensibility/ux-guidelines/media/vld_a_export_exportreportfilter.png "VLD_A_Export_ExportReportFilter")<br />Filtro Esporta rapporto |
 | **(Glifo) di** | ![&#40;Icona di&#41; backup sull'icona](../../extensibility/ux-guidelines/media/vld_a_glyphup.png "VLD_A_GlyphUp") ||
@@ -437,7 +437,7 @@ Visual Studio Usa un linguaggio visivo comune per illustrare i concetti che sono
 | **Operazione di annullamento**<br />Ripristinare, ripristinare | ![Undo icon](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![Icona di ripristino immagine](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />Ripristino immagine<br />![Icona Rimuovi commento](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />Rimuovi commento |
 | **Su**<br />Carica | ![Icona su](../../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up") | ![Icona parametro upload file](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />Parametro upload per il file<br />![Un livello sopra l'icona](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />Un livello superiore |
 
-##  <a name="BKMK_VLDStatus"></a> Indicatori di stato
+## <a name="BKMK_VLDStatus"></a> Indicatori di stato
 
 | Concetto | Icona principale | Altri esempi |
 | --- | --- | --- |

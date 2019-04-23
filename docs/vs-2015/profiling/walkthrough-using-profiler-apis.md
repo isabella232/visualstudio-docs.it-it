@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: uso delle API del profiler | Microsoft Docs'
+title: 'Procedura dettagliata: Uso delle API del profiler | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090803"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: utilizzo delle API del profiler
+# <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Usando le API di Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso delle API di Strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le API del profiler consentono di limitare la quantità di dati raccolti durante la profilatura della strumentazione.  
@@ -34,12 +34,12 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
   
  Per il codice nativo, le API del profiler di Visual Studio API si trovano in VSPerf.dll. Il file di intestazione VSPerf.h e la libreria di importazione VSPerf.lib si trovano nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni.  
   
- Per il codice gestito, le API del profiler si trovano in Microsoft.VisualStudio.Profiler.dll. Questa DLL è disponibile nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.  
+ Per il codice gestito, le API del profiler si trovano in Microsoft.VisualStudio.Profiler.dll. Questa DLL è disponibile nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:  
   
- [Procedura: Scegliere un metodo di raccolta](../profiling/how-to-choose-collection-methods.md)  
+ [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md)  
   
  [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>Per creare il codice per il profilo  
   
-1.  Creare un nuovo progetto C# in Visual Studio o usare una compilazione avviata tramite riga di comando, a seconda delle preferenze.  
+1. Creare un nuovo progetto C# in Visual Studio o usare una compilazione avviata tramite riga di comando, a seconda delle preferenze.  
   
     > [!NOTE]
     >  La compilazione deve fare riferimento alla libreria Microsoft.VisualStudio.Profiler.dll che si trova nella directory Microsoft Visual Studio 9\Team Tools\Strumenti per le prestazioni.  
   
-2.  Copiare il codice riportato di seguito e incollarlo nel progetto:  
+2. Copiare il codice riportato di seguito e incollarlo nel progetto:  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Per raccogliere e visualizzare i dati nella riga di comando  
   
-1.  Compilare una versione di debug del codice di esempio creato nella procedura dettagliata illustrata in precedenza per la creazione di codice per il profilo.  
+1. Compilare una versione di debug del codice di esempio creato nella procedura dettagliata illustrata in precedenza per la creazione di codice per il profilo.  
   
-2.  Per profilare un'applicazione gestita, digitare il comando seguente e impostare le variabili di ambiente appropriate:  
+2. Per profilare un'applicazione gestita, digitare il comando seguente e impostare le variabili di ambiente appropriate:  
   
      **VsPefCLREnv /traceon**  
   
-3.  Digitare il comando seguente:**VSInstr \<filename>.exe**  
+3. Digitare il comando seguente:**VSInstr \<filename>.exe**  
   
-4.  Digitare il comando seguente: **VSPerfCmd /start:trace /output:\<filename>.vsp**  
+4. Digitare il comando seguente: **VSPerfCmd /start:trace /output:\<filename>.vsp**  
   
-5.  Digitare il comando seguente:**VSPerfCmd /globaloff**  
+5. Digitare il comando seguente:**VSPerfCmd /globaloff**  
   
-6.  Uscire dal programma.  
+6. Uscire dal programma.  
   
-7.  Digitare il comando seguente:**VSPerfCmd /shutdown**  
+7. Digitare il comando seguente:**VSPerfCmd /shutdown**  
   
-8.  Digitare il comando seguente: **VSPerfReport /calltrace:\<filename>.vsp**  
+8. Digitare il comando seguente: **VSPerfReport /calltrace:\<filename>.vsp**  
   
      Viene creato un file con estensione csv nella directory corrente con i dati sulle prestazioni risultanti.  
   

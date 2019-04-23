@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117629"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: creare e rimuovere dipendenze di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
   
 ### <a name="to-remove-dependencies-from-projects"></a>Per rimuovere dipendenze dai progetti  
   
-1.  Selezionare un progetto in Esplora soluzioni.  
+1. Selezionare un progetto in Esplora soluzioni.  
   
-2.  Nel menu **Proprietà** scegliere **Dipendenze progetto**.  
+2. Nel menu **Proprietà** scegliere **Dipendenze progetto**.  
   
      Viene visualizzata la finestra di dialogo **Dipendenze progetto**.  
   
     > [!NOTE]
     >  L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
   
-3.  Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
+3. Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
   
-4.  Nel campo **Dipendente da** deselezionare le caselle di controllo accanto agli altri progetti che non sono più dipendenze del progetto specificato.  
+4. Nel campo **Dipendente da** deselezionare le caselle di controllo accanto agli altri progetti che non sono più dipendenze del progetto specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967070"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117941"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Barra di spostamento nella parte superiore della visualizzazione dell'editor con
  Quando si sposta il punto di inserimento, il <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> (metodo). La base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chiamate al metodo il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo nel <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe per aggiornare lo stato della barra di spostamento. Si passa un set di <xref:Microsoft.VisualStudio.Package.DropDownMember> oggetti a questo metodo. Ogni oggetto rappresenta una voce nell'elenco a discesa.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>Il contenuto della barra di spostamento  
- La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco dei tipi include tutti i tipi disponibili nel file di origine corrente. I nomi dei tipi includono le informazioni dello spazio dei nomi completo. Di seguito è riportato un esempio di codice C# con due tipi:  
+ La barra di spostamento contiene in genere un elenco di tipi e un elenco di membri. L'elenco dei tipi include tutti i tipi disponibili nel file di origine corrente. I nomi dei tipi includono le informazioni dello spazio dei nomi completo. Di seguito è riportato un esempio di codice c# con due tipi:  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Un'implementazione del <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo in genere esegue i passaggi seguenti:  
   
-1.  Ottenere un elenco delle dichiarazioni correnti del file di origine.  
+1. Ottenere un elenco delle dichiarazioni correnti del file di origine.  
   
      Esistono diversi modi per popolare gli elenchi. Un approccio consiste nel creare un metodo personalizzato nella versione del <xref:Microsoft.VisualStudio.Package.LanguageService> classe che chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo con un motivo di analisi personalizzata che restituisce un elenco di tutte le dichiarazioni. Potrebbe essere un altro approccio per chiamare il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodo direttamente dal <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metodo con il motivo per l'analisi personalizzata. Un terzo approccio potrebbe essere per memorizzare nella cache le dichiarazioni nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe restituito dall'ultima operazione di analisi completa nel <xref:Microsoft.VisualStudio.Package.LanguageService> classe e recuperare queste informazioni dalla <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).  
   
-2.  Inserire o aggiornare l'elenco dei tipi.  
+2. Inserire o aggiornare l'elenco dei tipi.  
   
      Il contenuto dell'elenco dei tipi sia in grado di essere aggiornato quando l'origine è stato modificato o se si è scelto di modificare lo stile del testo dei tipi di base la posizione corrente del cursore. Si noti che questa posizione viene passata per il <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (metodo).  
   
-3.  Determinare il tipo per selezionare nell'elenco di tipi di base la posizione corrente del cursore.  
+3. Determinare il tipo per selezionare nell'elenco di tipi di base la posizione corrente del cursore.  
   
      È possibile cercare le dichiarazioni che sono state ottenute nel passaggio 1 per trovare il tipo che include la posizione corrente del cursore e quindi eseguire ricerche nell'elenco di tipi per tale tipo determinare il relativo indice nell'elenco dei tipi.  
   
-4.  Inserire o aggiornare l'elenco dei membri in base al tipo selezionato.  
+4. Inserire o aggiornare l'elenco dei membri in base al tipo selezionato.  
   
      L'elenco dei membri riflette ciò che è attualmente visualizzato nei **membri** elenco a discesa. Il contenuto dell'elenco di membri debba essere aggiornato se l'origine è stato modificato o se si visualizzano solo i membri del tipo selezionato e il tipo selezionato è stato modificato. Se si sceglie di visualizzare tutti i membri nel file di origine, lo stile di testo di ogni membro nell'elenco deve essere aggiornato se il tipo selezionato è stato modificato.  
   
-5.  Determinare i membri da selezionare nell'elenco dei membri in base alla posizione del punto di inserimento corrente.  
+5. Determinare i membri da selezionare nell'elenco dei membri in base alla posizione del punto di inserimento corrente.  
   
      Cercare le dichiarazioni che sono state ottenute nel passaggio 1 per il membro che contiene la posizione corrente del cursore, quindi eseguire ricerche nell'elenco di membri per il membro determinare il relativo indice nell'elenco dei membri.  
   
-6.  Restituire `true` se sono state apportate modifiche per gli elenchi o le selezioni in entrambi gli elenchi.
+6. Restituire `true` se sono state apportate modifiche per gli elenchi o le selezioni in entrambi gli elenchi.

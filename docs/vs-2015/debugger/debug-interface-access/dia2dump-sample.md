@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd52c635d5ade1bef73176601d6957ba5859723b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a817720c1ad73b666e0c9a586bb583120a2533c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092019"
 ---
 # <a name="dia2dump-sample"></a>Esempio Dia2dump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,23 +28,23 @@ Esempio Dia2dump viene installato con Visual Studio e contiene il database di or
   
 ### <a name="to-install-the-sample"></a>Per installare l'esempio  
   
-1.  Verificare che il sistema soddisfi tutti i requisiti di installazione descritti nella pagina di avvio installazione di Visual Studio.  
+1. Verificare che il sistema soddisfi tutti i requisiti di installazione descritti nella pagina di avvio installazione di Visual Studio.  
   
-2.  Installare Visual Studio e seguire tutte le istruzioni di installazione e configurazione per gli esempi inclusi.  
+2. Installare Visual Studio e seguire tutte le istruzioni di installazione e configurazione per gli esempi inclusi.  
   
 #### <a name="to-build-the-sample"></a>Per compilare l'esempio  
   
-1.  Aprire il file Dia2dump.sln in Visual Studio. (Se necessario, Visual Studio verrà prima di tutto informazioni utili per aggiornare il progetto Dia2dump.)  
+1. Aprire il file Dia2dump.sln in Visual Studio. (Se necessario, Visual Studio verrà prima di tutto informazioni utili per aggiornare il progetto Dia2dump.)  
   
-2.  Nelle pagine delle proprietà di progetto, nelle **C/C++** &#124; **generali** &#124; **directory di inclusione aggiuntive** proprietà, specificare il `..\DIA SDK\include` directory. In questo modo si garantisce che il compilatore possa trovare il file dia2.h.  
+2. Nelle pagine delle proprietà di progetto, nelle **C/C++** &#124; **generali** &#124; **directory di inclusione aggiuntive** proprietà, specificare il `..\DIA SDK\include` directory. In questo modo si garantisce che il compilatore possa trovare il file dia2.h.  
   
-3.  Nel menu **Compila** fare clic su **Ricompila soluzione**.  
+3. Nel menu **Compila** fare clic su **Ricompila soluzione**.  
   
-4.  Chiudere Visual Studio.  
+4. Chiudere Visual Studio.  
   
 #### <a name="to-run-the-sample"></a>Per eseguire l'esempio  
   
-1.  Aprire un prompt dei comandi e digitare quanto segue:  
+1. Aprire un prompt dei comandi e digitare quanto segue:  
   
     ```  
     dia2dump filename  

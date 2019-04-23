@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117720"
 ---
 # <a name="mssccprjscc-file"></a>File MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Quando una soluzione di Visual Studio o un progetto viene inserito nel controllo
   
  Un controllo del codice sorgente del plug-in che supporta il MSSCCPRJ. File SCC deve rispettare le linee guida seguenti:  
   
--   Può essere presente solo uno MSSCCPRJ. File di controllo del codice sorgente per ogni directory.  
+- Può essere presente solo uno MSSCCPRJ. File di controllo del codice sorgente per ogni directory.  
   
--   Un MSSCCPRJ. File SCC può contenere il "AuxPath" e "ProjName" per più file sottoposti al controllo del codice sorgente all'interno di una determinata directory.  
+- Un MSSCCPRJ. File SCC può contenere il "AuxPath" e "ProjName" per più file sottoposti al controllo del codice sorgente all'interno di una determinata directory.  
   
--   La stringa "AuxPath" non deve avere le offerte in essa contenuti. È consentito avere virgolette intorno a esso come delimitatori (ad esempio, una coppia di virgolette doppie possa essere consente di indicare una stringa vuota). L'IDE rimuoverà tutte le offerte dalla stringa "AuxPath" quando viene letta dal MSSCCPRJ. File di controllo del codice sorgente.  
+- La stringa "AuxPath" non deve avere le offerte in essa contenuti. È consentito avere virgolette intorno a esso come delimitatori (ad esempio, una coppia di virgolette doppie possa essere consente di indicare una stringa vuota). L'IDE rimuoverà tutte le offerte dalla stringa "AuxPath" quando viene letta dal MSSCCPRJ. File di controllo del codice sorgente.  
   
--   La stringa "Nomeprogetto" nel MSSCCPRJ. File SCC deve corrispondere esattamente alla stringa restituita dal `SccGetProjPath` (funzione). Se la stringa restituita dalla funzione contiene virgolette, la stringa nel MSSCCPRJ. File SCC deve includere le virgolette intorno a esso e viceversa.  
+- La stringa "Nomeprogetto" nel MSSCCPRJ. File SCC deve corrispondere esattamente alla stringa restituita dal `SccGetProjPath` (funzione). Se la stringa restituita dalla funzione contiene virgolette, la stringa nel MSSCCPRJ. File SCC deve includere le virgolette intorno a esso e viceversa.  
   
--   Un MSSCCPRJ. File SCC viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.  
+- Un MSSCCPRJ. File SCC viene creato o aggiornato ogni volta che un file viene inserito nel controllo del codice sorgente.  
   
--   Se un MSSCCPRJ. File SCC viene eliminato, un provider deve generarla di nuovo la volta successiva che esegue un'operazione di controllo codice sorgente relativi a tale directory.  
+- Se un MSSCCPRJ. File SCC viene eliminato, un provider deve generarla di nuovo la volta successiva che esegue un'operazione di controllo codice sorgente relativi a tale directory.  
   
--   Un MSSCCPRJ. File SCC deve seguire rigorosamente il formato definito.  
+- Un MSSCCPRJ. File SCC deve seguire rigorosamente il formato definito.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato di File di controllo del codice sorgente  
  Seguito è riportato un esempio del MSSCCPRJ. Formato di file di controllo del codice sorgente (i numeri di riga vengono forniti solo come guida e non devono essere incluse nel corpo del file):  

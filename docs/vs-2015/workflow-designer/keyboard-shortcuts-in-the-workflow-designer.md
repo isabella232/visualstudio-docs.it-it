@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117304"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 È possibile accedere a tutte le principali funzionalità di [!INCLUDE[wfd1](../includes/wfd1-md.md)] dalla tastiera.  
@@ -54,13 +54,13 @@ ms.locfileid: "58970157"
   
 - Per connettere le attività:  
   
-  1.  Selezionare l'attività di origine usando il tasto TAB.  
+  1. Selezionare l'attività di origine usando il tasto TAB.  
   
-  2.  Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.  
+  2. Premere CTRL+E, M il numero di volte necessario per spostare lo stato attivo sull'attività di destinazione.  
   
-  3.  Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.  
+  3. Premere CTRL+E, S per aggiungere l'attività di destinazione alla selezione.  
   
-  4.  Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.  
+  4. Premere CTRL+E, F per aggiungere il connettore dall'origine alla destinazione.  
   
   Note sulla connessione delle attività dalla tastiera:  
   
@@ -73,18 +73,18 @@ ms.locfileid: "58970157"
 ### <a name="expression-editing"></a>Modifica dell'espressione  
  Per impostazione predefinita, i tasti di scelta rapida predefiniti per la modifica del testo [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] si applicano nell'editor espressioni in [!INCLUDE[wfd2](../includes/wfd2-md.md)] con le limitazioni seguenti:  
   
--   La modifica del mapping dei tasti di scelta rapida per i comandi seguenti non ha effetto. In caso di modifica di un'espressione, è possibile accedere a questi comandi solo mediante i tasti di scelta rapida predefiniti.  
+- La modifica del mapping dei tasti di scelta rapida per i comandi seguenti non ha effetto. In caso di modifica di un'espressione, è possibile accedere a questi comandi solo mediante i tasti di scelta rapida predefiniti.  
   
-    1.  Taglia  
+    1. Taglia  
   
-    2.  Copia  
+    2. Copia  
   
-    3.  Incolla  
+    3. Incolla  
   
-    4.  Seleziona tutto  
+    4. Seleziona tutto  
   
-    5.  Annulla  
+    5. Annulla  
   
-    6.  Ripristina  
+    6. Ripristina  
   
--   Per modificare il mapping dei tasti di scelta rapida per i comandi di modifica delle espressioni all'interno di [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)], modificare i collegamenti nell'ambito di [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.
+- Per modificare il mapping dei tasti di scelta rapida per i comandi di modifica delle espressioni all'interno di [!INCLUDE[wfd2](../includes/wfd2-md.md)] in [!INCLUDE[vs2010](../includes/vs2010-md.md)], modificare i collegamenti nell'ambito di [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Le modifiche apportate nell'ambito dell'Editor di testo non si applicano automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

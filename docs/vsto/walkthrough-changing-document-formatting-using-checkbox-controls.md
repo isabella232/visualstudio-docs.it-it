@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b4137a6f024a9a4f752af7c9e19fd946a1c282
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 284b7f501d729a89ff31ab9fee187d3f3e19d4b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090143"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Procedura dettagliata: Modificare la formattazione dei documenti mediante controlli CheckBox
   Questa procedura dettagliata illustra come usare i controlli Windows Form in una personalizzazione a livello di documento per Microsoft Office Word per modificare la formattazione del testo.
@@ -41,16 +41,16 @@ ms.locfileid: "59653892"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Creare il progetto
  Il primo passaggio consiste nel creare un progetto Documento di Word.
 
 ### <a name="create-a-new-project"></a>Creare un nuovo progetto
 
-1.  Creare un progetto documento di Word con il nome **formattazione in Word**. Nella procedura guidata, selezionare **creare un nuovo documento**.
+1. Creare un progetto documento di Word con il nome **formattazione in Word**. Nella procedura guidata, selezionare **creare un nuovo documento**.
 
      Per altre informazioni, vedere [Procedura: Creare progetti di Office in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -61,29 +61,29 @@ ms.locfileid: "59653892"
 
 ### <a name="add-three-check-boxes"></a>Aggiungere tre caselle di controllo
 
-1.  Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.
+1. Verificare che il documento sia aperto nella finestra di progettazione di Visual Studio.
 
-2.  Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare il primo <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> controllo al documento.
+2. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare il primo <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> controllo al documento.
 
-3.  Nella finestra **Proprietà** modificare le seguenti proprietà:
+3. Nella finestra **Proprietà** modificare le seguenti proprietà:
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**applyBoldFont**|
     |**per**|**Grassetto**|
 
-4.  Premere **invio** per posizionare il cursore sotto la prima casella di controllo.
+4. Premere **invio** per posizionare il cursore sotto la prima casella di controllo.
 
-5.  Aggiungere una seconda casella di controllo al documento riportato di seguito il `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.
+5. Aggiungere una seconda casella di controllo al documento riportato di seguito il `ApplyBoldFont` casella di controllo e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
     |**Name**|**applyItalicFont**|
     |**per**|**Corsivo**|
 
-6.  Premere **invio** per spostare il punto di inserimento seguente la seconda casella di controllo.
+6. Premere **invio** per spostare il punto di inserimento seguente la seconda casella di controllo.
 
-7.  Aggiungere una terza casella di controllo al documento riportato di seguito il `ApplyItalicFont` casella di controllo e modificare le proprietà seguenti.
+7. Aggiungere una terza casella di controllo al documento riportato di seguito il `ApplyItalicFont` casella di controllo e modificare le proprietà seguenti.
 
     |Proprietà|Valore|
     |--------------|-----------|
@@ -113,28 +113,28 @@ ms.locfileid: "59653892"
 
 ### <a name="change-formatting-when-a-check-box-is-selected"></a>Modificare la formattazione quando è selezionata una casella di controllo
 
-1.  Fare doppio clic su `ThisDocument` nelle **Esplora soluzioni**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
+1. Fare doppio clic su `ThisDocument` nelle **Esplora soluzioni**, quindi fare clic su **Visualizza codice** menu di scelta rapida.
 
-2.  Per C# , aggiungere le seguenti costanti per il **ThisDocument** classe.
+2. Per C# , aggiungere le seguenti costanti per il **ThisDocument** classe.
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]
 
-3.  Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyBoldFont` casella di controllo.
+3. Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyBoldFont` casella di controllo.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]
 
-4.  Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyItalicFont` casella di controllo.
+4. Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyItalicFont` casella di controllo.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]
 
-5.  Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyUnderlineFont` casella di controllo.
+5. Aggiungere il codice seguente per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del `applyUnderlineFont` casella di controllo.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]
 
-6.  In C#, è necessario aggiungere i gestori eventi per le caselle di testo per il <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+6. In C#, è necessario aggiungere i gestori eventi per le caselle di testo per il <xref:Microsoft.Office.Tools.Word.Document.Startup> evento. Per informazioni su come creare gestori eventi, vedere [come: Creare i gestori eventi nei progetti di Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]
 
@@ -143,18 +143,18 @@ ms.locfileid: "59653892"
 
 ### <a name="test-your-document"></a>Testare il documento
 
-1.  Premere **F5** per eseguire il progetto.
+1. Premere **F5** per eseguire il progetto.
 
-2.  Selezionare o deselezionare una casella di controllo.
+2. Selezionare o deselezionare una casella di controllo.
 
-3.  Verificare che il testo è formattato correttamente.
+3. Verificare che il testo è formattato correttamente.
 
 ## <a name="next-steps"></a>Passaggi successivi
  Questa procedura dettagliata illustra le nozioni di base usando le caselle di controllo e a livello di programmazione cambiando il testo, formattazione nei documenti di Word. Ecco alcune possibili attività successive:
 
--   Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
+- Usare un pulsante per popolare una casella di testo. Per altre informazioni, vedere [Procedura dettagliata: Visualizzare il testo in una casella di testo in un documento tramite un pulsante](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).
 
--   Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Uso di pulsanti di opzione per selezionare gli stili del grafico. Per altre informazioni, vedere [Procedura dettagliata: Aggiornare un grafico in un documento mediante pulsanti di opzione](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedure dettagliate con Word](../vsto/walkthroughs-using-word.md)

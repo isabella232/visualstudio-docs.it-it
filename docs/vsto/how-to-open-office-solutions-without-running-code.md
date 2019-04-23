@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117200"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procedura: Aprire soluzioni Office senza eseguire codice
   Una soluzione di Microsoft Office creata con le estensioni di codice gestito viene eseguito anche se l'impostazione di sicurezza nell'applicazione Office dell'utente finale è impostato sul livello più alto. Questo avviene perché la protezione di codice degli assembly .NET è gestita da Microsoft .NET Framework, non da Microsoft Office.
@@ -36,7 +36,7 @@ ms.locfileid: "56616131"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Per ignorare l'assembly usando il tasto MAIUSC
 
--   Aprire i documenti e cartelle di lavoro dei **File** menu tenendo premuto il **MAIUSC** chiave per impedire la generazione di eventi di inizializzazione mentre è aperto il documento di Word ed Excel.
+- Aprire i documenti e cartelle di lavoro dei **File** menu tenendo premuto il **MAIUSC** chiave per impedire la generazione di eventi di inizializzazione mentre è aperto il documento di Word ed Excel.
 
     > [!NOTE]
     >  Se si apre un documento o una cartella di lavoro dal **Guida introduttiva** riquadro attività, tenendo premuto **MAIUSC** non bypassano il codice. Inoltre, tenendo premuto MAIUSC non impedisce gli eventi generati dopo aver aperto il documento.
@@ -45,7 +45,7 @@ ms.locfileid: "56616131"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Per ignorare un assembly, è possibile rinominare o rimuoverlo
 
--   Se si dispone delle autorizzazioni necessarie nel computer in cui si trova l'assembly, è possibile rinominare o rimuovere l'assembly in modo che il documento o la cartella di lavoro non riesce a trovarla. Ciò comporta un errore viene generato ogni volta che viene aperto il documento di Office.
+- Se si dispone delle autorizzazioni necessarie nel computer in cui si trova l'assembly, è possibile rinominare o rimuovere l'assembly in modo che il documento o la cartella di lavoro non riesce a trovarla. Ciò comporta un errore viene generato ogni volta che viene aperto il documento di Office.
 
      Se la soluzione viene usata da più persone, questo metodo impedisce la soluzione di esecuzione per tutti gli elementi. Ciò può essere utile se viene rilevato un problema nel codice o un server di riferimento e si vuole arrestare tutti gli utenti di eseguirlo.
 
