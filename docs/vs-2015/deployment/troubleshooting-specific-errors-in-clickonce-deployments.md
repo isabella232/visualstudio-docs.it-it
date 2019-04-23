@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043196"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Risoluzione di errori specifici nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Viene visualizzato il messaggio di errore, "Impossibile recuperare l'applicazione. I file mancanti nella distribuzione"o"download dell'applicazione è stata interrotta, verificare la presenza di errori di rete e riprovare più tardi."  
  Questo messaggio indica che uno o più file cui fatto riferimento il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesti non possono essere scaricati. Il modo più semplice per eseguire il debug di questo errore consiste nel provare a scaricare l'URL che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è non è possibile eseguire il download. Ecco alcune possibili cause:  
   
--   Se il file di log indica "(403) accesso negato" o "(404) non trovata", verificare che il server Web sia configurato in modo che non blocca il download di questo file. Per altre informazioni, vedere [Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Se il file di log indica "(403) accesso negato" o "(404) non trovata", verificare che il server Web sia configurato in modo che non blocca il download di questo file. Per altre informazioni, vedere [Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Se il file con estensione config è bloccato dal server, vedere la sezione "errore di Download quando si prova a installare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione che dispone di un file con estensione config" più avanti in questo argomento.  
+- Se il file con estensione config è bloccato dal server, vedere la sezione "errore di Download quando si prova a installare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione che dispone di un file con estensione config" più avanti in questo argomento.  
   
--   Determinare se ciò si è verificato perché la `deploymentProvider` URL nel manifesto di distribuzione fa riferimento a un percorso diverso rispetto all'URL utilizzato per l'attivazione.  
+- Determinare se ciò si è verificato perché la `deploymentProvider` URL nel manifesto di distribuzione fa riferimento a un percorso diverso rispetto all'URL utilizzato per l'attivazione.  
   
--   Assicurarsi che tutti i file siano presenti sul server. il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log dovrebbero essere il file non trovato.  
+- Assicurarsi che tutti i file siano presenti sul server. il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log dovrebbero essere il file non trovato.  
   
--   Verificare se sono presenti problemi di connettività di rete; è possibile ricevere questo messaggio se il computer client era offline durante il download.  
+- Verificare se sono presenti problemi di connettività di rete; è possibile ricevere questo messaggio se il computer client era offline durante il download.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Errore di download quando si prova a installare un'applicazione ClickOnce che dispone di un file con estensione config  
  Per impostazione predefinita, un'applicazione basata su Visual Basic Windows include un file app. config. Esisterà un problema quando un utente prova a installare da un server Web che usa Windows Server 2003, poiché tale sistema operativo blocca l'installazione dei file con estensione config per motivi di sicurezza. Per abilitare il file con estensione config da installare, fare clic su **estensione di file ". deploy"** nel **Publish Options** nella finestra di dialogo.  
@@ -67,11 +67,11 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>È stato aggiornato l'applicazione nel server, ma il client non scarica l'aggiornamento  
  Questo problema potrebbe essere risolto eseguendo una delle attività seguenti:  
   
--   Esaminare il `deploymentProvider` URL nel manifesto di distribuzione. Assicurarsi che si siano aggiornando i bit nello stesso percorso che `deploymentProvider` punta a.  
+- Esaminare il `deploymentProvider` URL nel manifesto di distribuzione. Assicurarsi che si siano aggiornando i bit nello stesso percorso che `deploymentProvider` punta a.  
   
--   Verificare l'intervallo di aggiornamento nel manifesto di distribuzione. Se questo intervallo è impostato a intervalli periodici, ad esempio una volta ogni sei ore, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] non analizza per un aggiornamento prima che sia trascorso questo intervallo. È possibile modificare il manifesto per cercare un aggiornamento ogni volta che viene avviata l'applicazione. Modifica dell'intervallo di aggiornamento è un'opzione utile durante la fase di sviluppo per verificare gli aggiornamenti vengono installati, ma rallenta l'attivazione dell'applicazione.  
+- Verificare l'intervallo di aggiornamento nel manifesto di distribuzione. Se questo intervallo è impostato a intervalli periodici, ad esempio una volta ogni sei ore, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] non analizza per un aggiornamento prima che sia trascorso questo intervallo. È possibile modificare il manifesto per cercare un aggiornamento ogni volta che viene avviata l'applicazione. Modifica dell'intervallo di aggiornamento è un'opzione utile durante la fase di sviluppo per verificare gli aggiornamenti vengono installati, ma rallenta l'attivazione dell'applicazione.  
   
--   Provare ad avviare nuovamente l'applicazione nel menu Start. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sia stato rilevato l'aggiornamento in background, ma verrà richiesto di installare i bit alla successiva attivazione.  
+- Provare ad avviare nuovamente l'applicazione nel menu Start. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sia stato rilevato l'aggiornamento in background, ma verrà richiesto di installare i bit alla successiva attivazione.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante l'aggiornamento viene visualizzato un errore con la voce di log seguenti: "Il riferimento nella distribuzione non corrisponde all'identità definita nel manifesto dell'applicazione"  
  Questo errore può verificarsi perché è stata modificata manualmente i manifesti dell'applicazione e della distribuzione e hanno causato la descrizione dell'identità di un assembly in un manifesto di perdere la sincronizzazione con le altre. L'identità di un assembly è costituito da nome, versione, impostazioni cultura e token di chiave pubblica. Esaminare le descrizioni di identità nei manifesti e correggere eventuali differenze.  
@@ -84,9 +84,9 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
   
  È consigliabile eseguire le operazioni seguenti:  
   
--   Verificare che l'identità del manifesto della distribuzione, il manifesto dell'applicazione e identità dell'applicazione principale. EXE siano tutti univoci.  
+- Verificare che l'identità del manifesto della distribuzione, il manifesto dell'applicazione e identità dell'applicazione principale. EXE siano tutti univoci.  
   
--   Verificare che i percorsi dei file non sono più di 100 caratteri. Se l'applicazione contiene i percorsi di file che sono troppo lunghi, si possono superare le limitazioni relative al percorso massimo che è possibile archiviare. Provare ad abbreviare i percorsi e reinstallare.  
+- Verificare che i percorsi dei file non sono più di 100 caratteri. Se l'applicazione contiene i percorsi di file che sono troppo lunghi, si possono superare le limitazioni relative al percorso massimo che è possibile archiviare. Provare ad abbreviare i percorsi e reinstallare.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Attributo PrivatePath impostazioni nel file di configurazione dell'applicazione non vengono rispettate  
  Per usare PrivatePath (percorsi di sondaggio di Fusion), l'applicazione deve richiedere l'autorizzazione di attendibilità totale. Provare a modificare il manifesto dell'applicazione per richiedere l'attendibilità totale e quindi riprovare.  
@@ -115,9 +115,9 @@ In questo argomento vengono elencati gli errori comuni che possono verificarsi q
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Si è tentato di accedere con un certificato nell'archivio dei certificati e una casella ricevuto alcun messaggio  
  Nel **firma** finestra di dialogo, è necessario:  
   
--   Selezionare **firma con un certificato archiviato**, e  
+- Selezionare **firma con un certificato archiviato**, e  
   
--   Selezionare un certificato dall'elenco. il primo certificato non è selezionata l'impostazione predefinita.  
+- Selezionare un certificato dall'elenco. il primo certificato non è selezionata l'impostazione predefinita.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Fare clic sul pulsante "Sign non" genera un'eccezione  
  Questo problema è un bug noto. Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i manifesti sono deve essere firmato. Selezionare una delle opzioni di firma e quindi fare clic su **OK**.  

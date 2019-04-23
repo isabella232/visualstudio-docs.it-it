@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 020fdd0f2b315b876790e86b0e16c047cfd44db2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043760"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Salvare, Salva e Salva tutto gestione dei comandi per un editor personalizzato
   
  Questa procedura è descritta nei passaggi seguenti:  
   
-1.  Per il **salvare** e **Salva con nome** comandi, nell'ambiente viene usato il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> del servizio per determinare la finestra del documento attivo e in questo modo gli elementi che devono essere salvate. Dopo che è noto che la finestra del documento attivo, l'ambiente Cerca il puntatore di gerarchia e l'identificatore dell'elemento (ID elemento) per il documento nella tabella documenti in esecuzione. Per altre informazioni, vedere [tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md).  
+1. Per il **salvare** e **Salva con nome** comandi, nell'ambiente viene usato il <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> del servizio per determinare la finestra del documento attivo e in questo modo gli elementi che devono essere salvate. Dopo che è noto che la finestra del documento attivo, l'ambiente Cerca il puntatore di gerarchia e l'identificatore dell'elemento (ID elemento) per il documento nella tabella documenti in esecuzione. Per altre informazioni, vedere [tabella documenti in esecuzione](../../extensibility/internals/running-document-table.md).  
   
      Per il comando Salva tutto, l'ambiente utilizza le informazioni nella tabella documenti in esecuzione per compilare l'elenco di tutti gli elementi da salvare.  
   
-2.  Quando la soluzione riceve un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamata, scorre il set di elementi selezionati (vale a dire le selezioni multiple esposte dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio).  
+2. Quando la soluzione riceve un <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> chiamata, scorre il set di elementi selezionati (vale a dire le selezioni multiple esposte dal <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servizio).  
   
-3.  Su ogni elemento nella selezione, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodo per determinare se il comando di menu Salva deve essere abilitato. Se uno o più elementi vengono modificati, è abilitato il comando Salva. Se la gerarchia Usa un editor standard, i delegati di gerarchia per l'esecuzione di query modificato lo stato per l'editor chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> (metodo).  
+3. Su ogni elemento nella selezione, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IsItemDirty%2A> metodo per determinare se il comando di menu Salva deve essere abilitato. Se uno o più elementi vengono modificati, è abilitato il comando Salva. Se la gerarchia Usa un editor standard, i delegati di gerarchia per l'esecuzione di query modificato lo stato per l'editor chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.IsDocDataDirty%2A> (metodo).  
   
-4.  Su ogni elemento selezionato è stato modificato, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metodo sulle gerarchie appropriate.  
+4. Su ogni elemento selezionato è stato modificato, la soluzione Usa il puntatore di gerarchia per chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.SaveItem%2A> metodo sulle gerarchie appropriate.  
   
      Nel caso di un editor personalizzato, la comunicazione tra l'oggetto dati del documento e il progetto è privata. In questo modo, eventuali problemi di persistenza speciali vengono gestiti tra questi due oggetti.  
   

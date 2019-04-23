@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054730"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Aggiunta di un pulsante alla barra degli strumenti di Esplora soluzioni  
  In questa sezione della procedura dettagliata viene illustrato come aggiungere un pulsante per la **Esplora soluzioni** sulla barra degli strumenti. Quando si fa clic sul pulsante, viene eseguito il codice nel metodo di callback.  
   
-1.  Nel file ToolbarButtonPackage.vsct, passare al `<Symbols>` sezione. Il `<GuidSymbol>` nodo contiene il gruppo di menu e comandi che è stato generato dal modello di pacchetto. Aggiungere un `<IDSymbol>` elemento per questo nodo per dichiarare il gruppo che conterrà il comando.  
+1. Nel file ToolbarButtonPackage.vsct, passare al `<Symbols>` sezione. Il `<GuidSymbol>` nodo contiene il gruppo di menu e comandi che è stato generato dal modello di pacchetto. Aggiungere un `<IDSymbol>` elemento per questo nodo per dichiarare il gruppo che conterrà il comando.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  Nel `<Groups>` sezione, dopo la voce di gruppo esistente, definire il nuovo gruppo di cui è stato dichiarato nel passaggio precedente.  
+2. Nel `<Groups>` sezione, dopo la voce di gruppo esistente, definire il nuovo gruppo di cui è stato dichiarato nel passaggio precedente.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la
   
      Impostando l'elemento padre coppia GUID: ID `guidSHLMainMenu` e `IDM_VS_TOOL_PROJWIN` inserisce questo gruppo di nel **Esplora soluzioni** sulla barra degli strumenti e impostare un valore ad alta priorità vengono suddivisi, dopo che gli altri gruppi di comandi.  
   
-3.  Nel `<Buttons>` , quindi modificare l'ID padre dell'oggetto generato `<Button>` voce in modo da riflettere il gruppo definito nel passaggio precedente. Modificato `<Button>` elemento dovrebbe essere simile al seguente:  
+3. Nel `<Buttons>` , quindi modificare l'ID padre dell'oggetto generato `<Button>` voce in modo da riflettere il gruppo definito nel passaggio precedente. Modificato `<Button>` elemento dovrebbe essere simile al seguente:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la
     </Button>  
     ```  
   
-4.  Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
+4. Compilare il progetto e avviare il debug. Viene visualizzata l'istanza sperimentale.  
   
      Il **Esplora soluzioni** sulla barra degli strumenti deve visualizzare il nuovo pulsante di comando a destra dei pulsanti esistenti. L'icona del pulsante è barratura.  
   
-5.  Fare clic sul pulsante nuovo.  
+5. Fare clic sul pulsante nuovo.  
   
      Una finestra di dialogo con il messaggio **ToolbarButtonPackage all'interno di SolutionToolbar.ToolbarButton.MenuItemCallback()** deve essere visualizzato.  
   

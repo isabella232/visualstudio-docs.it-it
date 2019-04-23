@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053567"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: visualizzare, salvare e configurare file di log di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,25 +25,25 @@ Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualiz
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Per visualizzare il file di log di compilazione per un progetto C++  
   
-1.  In **Esplora risorse** o **Esplora file** aprire il file seguente: \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
+1. In **Esplora risorse** o **Esplora file** aprire il file seguente: \\...\Visual Studio *Version*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Per creare un file di log di compilazione per un progetto di codice gestito  
   
-1.  Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
+1. Nella barra dei menu scegliere **Compilazione**, **Compila soluzione**.  
   
-2.  Nella finestra **Output** evidenziare le informazioni di compilazione e quindi copiarle negli Appunti.  
+2. Nella finestra **Output** evidenziare le informazioni di compilazione e quindi copiarle negli Appunti.  
   
-3.  Aprire un editor di testo, ad esempio Blocco note, incollare le informazioni nel file e quindi salvarlo.  
+3. Aprire un editor di testo, ad esempio Blocco note, incollare le informazioni nel file e quindi salvarlo.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Per modificare la quantità di informazioni inclusa nel log di compilazione  
   
-1.  Nella barra dei menu scegliere **Strumenti**, **Opzioni**.  
+1. Nella barra dei menu scegliere **Strumenti**, **Opzioni**.  
   
-2.  Nella pagina **Progetti e soluzioni** scegliere la pagina **Compila ed esegui**.  
+2. Nella pagina **Progetti e soluzioni** scegliere la pagina **Compila ed esegui**.  
   
-3.  Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.  
+3. Nell'elenco **Livello di dettaglio output in compilazione progetto MSBuild** scegliere uno dei valori seguenti e quindi scegliere il pulsante **OK**.  
   
-    |Livello di dettaglio|Descrizione|  
+    |Livello di dettaglio|Description|  
     |---------------------|-----------------|  
     |Quiet|Visualizza solo un riepilogo della compilazione.|  
     |Minimal|Visualizza un riepilogo della compilazione e gli errori, gli avvisi e i messaggi classificati con priorità elevata.|  

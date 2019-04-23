@@ -12,12 +12,12 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f068b0b442f6f358d71948ecc2a4d0d21870a6a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2b47598e4102eefaa671fd5f362975aae0f4d53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059813"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementazione della colorazione della sintassi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,33 +33,33 @@ Quando il servizio di linguaggio fornisce la colorazione della sintassi, il pars
   
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Passaggi seguiti da un Editor per colorare il testo  
   
-1.  L'editor Ottiene il colorizzatore chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> oggetto.  
+1. L'editor Ottiene il colorizzatore chiamando il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> metodo su di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> oggetto.  
   
-2.  Le chiamate di editor la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodo per determinare se il colorizzatore richiede lo stato di ogni riga venga mantenuto di fuori il colorizzatore.  
+2. Le chiamate di editor la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> metodo per determinare se il colorizzatore richiede lo stato di ogni riga venga mantenuto di fuori il colorizzatore.  
   
-3.  Se il colorizzatore richiede lo stato venga mantenuto di fuori il colorizzatore, l'editor chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodo per ottenere lo stato della prima riga.  
+3. Se il colorizzatore richiede lo stato venga mantenuto di fuori il colorizzatore, l'editor chiama il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> metodo per ottenere lo stato della prima riga.  
   
-4.  Per ogni riga nel buffer, chiama l'editor di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodo, che esegue i passaggi seguenti:  
+4. Per ogni riga nel buffer, chiama l'editor di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metodo, che esegue i passaggi seguenti:  
   
-    1.  La riga di testo viene passata a uno scanner per convertire il testo in token. Ogni token specifica il testo del token e il tipo di token.  
+    1. La riga di testo viene passata a uno scanner per convertire il testo in token. Ogni token specifica il testo del token e il tipo di token.  
   
-    2.  Il tipo di token viene convertito in un indice in un elenco di elementi colorabili.  
+    2. Il tipo di token viene convertito in un indice in un elenco di elementi colorabili.  
   
-    3.  Le informazioni del token viene utilizzate per compilare una matrice in modo che ogni elemento della matrice corrisponde a un carattere nella riga. I valori archiviati nella matrice sono gli indici nell'elenco di elementi colorabili.  
+    3. Le informazioni del token viene utilizzate per compilare una matrice in modo che ogni elemento della matrice corrisponde a un carattere nella riga. I valori archiviati nella matrice sono gli indici nell'elenco di elementi colorabili.  
   
-    4.  Viene restituito lo stato alla fine della riga per ogni riga.  
+    4. Viene restituito lo stato alla fine della riga per ogni riga.  
   
-5.  Se il colorizzatore richiede lo stato venga mantenuto, l'editor memorizza nella cache lo stato per tale riga.  
+5. Se il colorizzatore richiede lo stato venga mantenuto, l'editor memorizza nella cache lo stato per tale riga.  
   
-6.  L'editor esegue il rendering della riga di testo utilizzando le informazioni restituite dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> (metodo). La procedura da adottare è la seguente:  
+6. L'editor esegue il rendering della riga di testo utilizzando le informazioni restituite dal <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> (metodo). La procedura da adottare è la seguente:  
   
-    1.  Per ogni carattere nella riga, ottenere l'indice dell'elemento colorabile.  
+    1. Per ogni carattere nella riga, ottenere l'indice dell'elemento colorabile.  
   
-    2.  Se si usa gli elementi colorabili predefiniti, accedere a elenco di elementi colorabili dell'editor.  
+    2. Se si usa gli elementi colorabili predefiniti, accedere a elenco di elementi colorabili dell'editor.  
   
-    3.  In caso contrario, chiamare il servizio di linguaggio <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodo per ottenere un elemento colorabile.  
+    3. In caso contrario, chiamare il servizio di linguaggio <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metodo per ottenere un elemento colorabile.  
   
-    4.  Usare le informazioni dell'elemento colorabile per il rendering del testo nella visualizzazione.  
+    4. Usare le informazioni dell'elemento colorabile per il rendering del testo nella visualizzazione.  
   
 ## <a name="managed-package-framework-colorizer"></a>Colorizzatore Framework di pacchetto gestito  
  Il framework di pacchetto gestito (MPF) fornisce tutte le classi necessarie per implementare un colorizzatore. Classe del servizio di linguaggio deve ereditare il <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i metodi richiesti. È necessario fornire un scanner e parser implementando la <xref:Microsoft.VisualStudio.Package.IScanner> interfaccia e restituire un'istanza di tale interfaccia dal <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> metodo (uno dei metodi che devono essere implementati nel <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Per altre informazioni, vedere [colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).  

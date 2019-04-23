@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057433"
 ---
 # <a name="create-custom-editors-and-designers"></a>Creare finestre di progettazione ed editor personalizzati
+
 L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi tipi di editor:
 
 - L'editor principale di Visual Studio
@@ -29,10 +30,11 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
 
 - Finestre di progettazione
 
-  Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.
+Le informazioni seguenti consentono di scegliere il tipo dell'editor che è necessario.
 
 ## <a name="types-of-editor"></a>Tipi di editor
- Per informazioni su editor principale di Visual Studio, vedere [estendere l'editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md).
+
+Per informazioni su editor principale di Visual Studio, vedere [estendere l'editor e servizi di linguaggio](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Editor personalizzati
  Un editor personalizzato è quello che è progettato per funzionare in circostanze particolari. Ad esempio, si potrebbe creare un editor la cui funzione consiste nel leggere e scrivere dati in un repository specifico, ad esempio un server Microsoft Exchange. Se si desidera un editor che funziona con solo il tipo di progetto o se si desidera che un editor che ha solo alcuni comandi specifici, scegliere un editor personalizzato. Si noti tuttavia che gli utenti non saranno in grado di utilizzare un editor personalizzato per modificare standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetti.
@@ -70,24 +72,36 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
    Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione da `DP_External`. Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per tale.
 
 ## <a name="in-this-section"></a>In questa sezione
-- [Procedura dettagliata: Creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md) spiega come creare un editor personalizzato.
 
-- [Procedura dettagliata: Aggiungere funzionalità a un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) spiega come aggiungere funzionalità a un editor personalizzato.
+[Procedura dettagliata: Creare un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Viene illustrato come creare un editor personalizzato.
 
-- [Configurazione di inizializzazione e i metadati della finestra di progettazione](../extensibility/designer-initialization-and-metadata-configuration.md) viene illustrato come inizializzare una finestra di progettazione.
+[Procedura dettagliata: Aggiungere funzionalità a un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Viene illustrato come aggiungere funzionalità a un editor personalizzato.
 
-- [Fornire supporto dell'annullamento alle finestre di progettazione](../extensibility/supplying-undo-support-to-designers.md) viene spiegato come fornire supporto per l'annullamento per le finestre di progettazione.
+[Configurazione di inizializzazione e i metadati della finestra di progettazione](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Viene illustrato come inizializzare una finestra di progettazione.
 
-- [Colorazione della sintassi negli editor personalizzati](../extensibility/syntax-coloring-in-custom-editors.md) illustra la differenza tra nell'editor principale e negli editor personalizzati di colorazione della sintassi.
+[Alimentatore supporto dell'annullamento alle finestre di progettazione](../extensibility/supplying-undo-support-to-designers.md)\
+Viene illustrato come fornire supporto per l'annullamento per le finestre di progettazione.
 
-- [Documento vista dati e documento negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md) viene illustrato come implementare i dati del documento e le visualizzazioni di documento negli editor personalizzati.
+[Colorazione della sintassi negli editor personalizzati](../extensibility/syntax-coloring-in-custom-editors.md)\
+Illustra la differenza tra nell'editor principale e negli editor personalizzati di colorazione della sintassi.
+
+[I dati del documento e visualizzazione documento negli editor personalizzati](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Viene illustrato come implementare i dati del documento e le visualizzazioni di documento negli editor personalizzati.
 
 ## <a name="related-sections"></a>Sezioni correlate
-- [Le interfacce legacy nell'editor](../extensibility/legacy-interfaces-in-the-editor.md) viene spiegato come accedere all'editor di base tramite l'API legacy.
 
-- [Sviluppare un servizio di linguaggio legacy](../extensibility/internals/developing-a-legacy-language-service.md) viene illustrato come implementare un servizio di linguaggio.
+[Interfacce legacy nell'editor](../extensibility/legacy-interfaces-in-the-editor.md)\
+Viene illustrato come accedere all'editor di base tramite l'API legacy.
 
-- [Altre parti di Visual Studio estendono](../extensibility/extending-other-parts-of-visual-studio.md) spiega come creare elementi dell'interfaccia utente che corrispondono al resto del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Sviluppare un servizio di linguaggio legacy](../extensibility/internals/developing-a-legacy-language-service.md)\
+Viene illustrato come implementare un servizio di linguaggio.
+
+[Estendere altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Viene illustrato come creare elementi dell'interfaccia utente che corrispondono al resto del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vedere anche
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055366"
 ---
 # <a name="how-to-debug-injected-code"></a>Procedura: Eseguire il debug di codice inserito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ NOTA]
   
 ### <a name="to-turn-on-source-annotation"></a>Per attivare l'annotazione del codice sorgente  
   
--   Fare clic con il pulsante destro del mouse sulla finestra **Disassembly** e scegliere **Mostra codice sorgente** dal menu di scelta rapida.  
+- Fare clic con il pulsante destro del mouse sulla finestra **Disassembly** e scegliere **Mostra codice sorgente** dal menu di scelta rapida.  
   
      Se si conosce la posizione di un attributo in una finestra di origine, sarà possibile usare il menu di scelta rapida per trovare il codice inserito nella finestra **Disassembly**.  
   
 ### <a name="to-view-injected-code"></a>Per visualizzare il codice inserito  
   
-1.  Il debugger deve essere in modalità di interruzione.  
+1. Il debugger deve essere in modalità di interruzione.  
   
-2.  In una finestra di codice sorgente, portare il cursore davanti all'attributo di cui si desidera visualizzare il codice inserito.  
+2. In una finestra di codice sorgente, portare il cursore davanti all'attributo di cui si desidera visualizzare il codice inserito.  
   
-3.  Fare clic con il pulsante destro del mouse e scegliere **Vai a disassembly** dal menu di scelta rapida.  
+3. Fare clic con il pulsante destro del mouse e scegliere **Vai a disassembly** dal menu di scelta rapida.  
   
      Se l'attributo si trova vicino al punto di esecuzione corrente, sarà possibile scegliere la finestra **Disassembly** dal menu **Debug**.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Per visualizzare il codice disassembly al punto di esecuzione corrente  
   
-1.  Il debugger deve essere in modalità di interruzione.  
+1. Il debugger deve essere in modalità di interruzione.  
   
-2.  Scegliere **Finestre** dal menu **Debug** e fare clic su **Disassembly**.  
+2. Scegliere **Finestre** dal menu **Debug** e fare clic su **Disassembly**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

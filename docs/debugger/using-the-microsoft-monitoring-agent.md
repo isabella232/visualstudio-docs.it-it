@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 335782f93d7bd0cd9a82c258a0fee3b87d50e72b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232580"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043122"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Uso di Microsoft Monitoring Agent (C#, Visual Basic)
 
@@ -26,57 +26,57 @@ ms.locfileid: "59232580"
 
  Prima di iniziare, verificare di avere a disposizione l'origine e i simboli corrispondenti per il codice compilato e distribuito. In questo modo è possibile passare direttamente al codice dell'applicazione quando si avvia il debug e la navigazione degli eventi di diagnostica nel log IntelliTrace. [Configurare le compilazioni](../debugger/diagnose-problems-after-deployment.md) in modo che Visual Studio possa rilevare e aprire automaticamente l'origine corrispondente per il codice distribuito.
 
-1.  [Passaggio 1: Configurazione di Microsoft Monitoring Agent](#SetUpMonitoring)
+1. [Passaggio 1: Configurazione di Microsoft Monitoring Agent](#SetUpMonitoring)
 
-2.  [Passaggio 2: Avvio del monitoraggio dell'applicazione](#MonitorEvents)
+2. [Passaggio 2: Avvio del monitoraggio dell'applicazione](#MonitorEvents)
 
-3.  [Passaggio 3: Salvare gli eventi registrati](#SaveEvents)
+3. [Passaggio 3: Salvare gli eventi registrati](#SaveEvents)
 
-##  <a name="SetUpMonitoring"></a> Passaggio 1: Configurazione di Microsoft Monitoring Agent
+## <a name="SetUpMonitoring"></a> Passaggio 1: Configurazione di Microsoft Monitoring Agent
 
  Configurare l'agente autonomo nel server Web in modo che il monitoraggio locale venga eseguito senza modificare l'applicazione. Se è si usa System Center 2012, vedere [Installazione di Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).
 
-###  <a name="SetUpStandaloneMMA"></a> Configurare l'agente autonomo
+### <a name="SetUpStandaloneMMA"></a> Configurare l'agente autonomo
 
-1.  Verificare che:
+1. Verificare che:
 
-    -   Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).
+    - Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).
 
-    -   Nel server Web è disponibile .NET Framework 3.5, 4 o 4.5.
+    - Nel server Web è disponibile .NET Framework 3.5, 4 o 4.5.
 
-    -   Nel server Web è in esecuzione Windows PowerShell 3.0 o versione successiva. [D: Cosa fare se nel computer è installato Windows PowerShell 2.0?](#PowerShell2)
+    - Nel server Web è in esecuzione Windows PowerShell 3.0 o versione successiva. [D: Cosa fare se nel computer è installato Windows PowerShell 2.0?](#PowerShell2)
 
-    -   L'utente ha le autorizzazioni di amministratore per il server Web per eseguire comandi di PowerShell e riciclare il pool di applicazioni all'avvio del monitoraggio.
+    - L'utente ha le autorizzazioni di amministratore per il server Web per eseguire comandi di PowerShell e riciclare il pool di applicazioni all'avvio del monitoraggio.
 
-    -   Qualsiasi versione precedente di Microsoft Monitoring Agent è stata disinstallata.
+    - Qualsiasi versione precedente di Microsoft Monitoring Agent è stata disinstallata.
 
-2.  [Scaricare la versione gratuita di Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)a 32 bit ( **MMASetup-i386.exe** ) o a 64 bit ( **MMASetup-AMD64.exe**) dall'Area download Microsoft nel server Web.
+2. [Scaricare la versione gratuita di Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)a 32 bit ( **MMASetup-i386.exe** ) o a 64 bit ( **MMASetup-AMD64.exe**) dall'Area download Microsoft nel server Web.
 
-3.  Per avviare l'installazione guidata eseguire il file eseguibile scaricato.
+3. Per avviare l'installazione guidata eseguire il file eseguibile scaricato.
 
-4.  Creare una directory sicura nel server Web dove archiviare i log di IntelliTrace, ad esempio **C:\IntelliTraceLogs**.
+4. Creare una directory sicura nel server Web dove archiviare i log di IntelliTrace, ad esempio **C:\IntelliTraceLogs**.
 
      Assicurarsi di creare questa directory prima di iniziare il monitoraggio. Per evitare il rallentamento dell'app, scegliere una posizione in un disco ad alta velocità locale non troppo attivo.
 
     > [!IMPORTANT]
     >  I log IntelliTrace possono contenere dati personali e sensibili. Limitare questa directory solo alle identità in cui devono essere usati i file. Controllare i criteri aziendali sulla privacy.
 
-5.  Per eseguire un monitoraggio dettagliato a livello di funzione o per monitorare le applicazioni SharePoint, concedere al pool di applicazioni in cui è ospitata l'applicazione Web o SharePoint le autorizzazioni di lettura e scrittura per la directory dei log IntelliTrace. [D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)
+5. Per eseguire un monitoraggio dettagliato a livello di funzione o per monitorare le applicazioni SharePoint, concedere al pool di applicazioni in cui è ospitata l'applicazione Web o SharePoint le autorizzazioni di lettura e scrittura per la directory dei log IntelliTrace. [D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)
 
 ### <a name="q--a"></a>Domande e risposte
 
-####  <a name="PowerShell2"></a> D: Cosa fare se nel computer è installato Windows PowerShell 2.0?
+#### <a name="PowerShell2"></a> D: Cosa fare se nel computer è installato Windows PowerShell 2.0?
  **R:** Si consiglia di usare PowerShell 3.0. In caso contrario, sarà necessario importare i cmdlet di PowerShell di Microsoft Monitoring Agent ogni volta che si esegue PowerShell. Non sarà neanche possibile accedere al contenuto scaricabile della Guida.
 
-1.  Aprire una finestra del prompt dei comandi **Windows PowerShell ISE** o **Windows PowerShell** come amministratore.
+1. Aprire una finestra del prompt dei comandi **Windows PowerShell ISE** o **Windows PowerShell** come amministratore.
 
-2.  Importare il modulo di PowerShell di Microsoft Monitoring Agent dal percorso di installazione predefinito:
+2. Importare il modulo di PowerShell di Microsoft Monitoring Agent dal percorso di installazione predefinito:
 
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**
 
-3.  [Visitare TechNet](http://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.
+3. [Visitare TechNet](http://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.
 
-####  <a name="FullPermissionsITLog"></a> D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?
+#### <a name="FullPermissionsITLog"></a> D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?
  **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:
 
 - Per configurare le autorizzazioni con il comando Windows **icacls** :
@@ -93,28 +93,28 @@ ms.locfileid: "59232580"
 
 - Per configurare le autorizzazioni con Esplora risorse (o Esplora file):
 
-  1.  Aprire **Proprietà** per la directory dei log IntelliTrace.
+  1. Aprire **Proprietà** per la directory dei log IntelliTrace.
 
-  2.  Nella scheda **Sicurezza** , scegliere **Modifica**, **Aggiungi**.
+  2. Nella scheda **Sicurezza** , scegliere **Modifica**, **Aggiungi**.
 
-  3.  Assicurarsi che nella casella **Selezionare questo tipo di oggetto** sia visualizzato **Entità di sicurezza predefinite** . Se non è disponibile, scegliere **Tipi di oggetto** per aggiungerlo.
+  3. Assicurarsi che nella casella **Selezionare questo tipo di oggetto** sia visualizzato **Entità di sicurezza predefinite** . Se non è disponibile, scegliere **Tipi di oggetto** per aggiungerlo.
 
-  4.  Verificare che il computer locale sia visualizzato nella casella **Da questo percorso** . Se non è disponibile, scegliere **Percorsi** per modificarlo.
+  4. Verificare che il computer locale sia visualizzato nella casella **Da questo percorso** . Se non è disponibile, scegliere **Percorsi** per modificarlo.
 
-  5.  Nella casella **Immettere i nomi degli oggetti da selezionare** aggiungere il pool di applicazioni per l'app Web o l'applicazione SharePoint.
+  5. Nella casella **Immettere i nomi degli oggetti da selezionare** aggiungere il pool di applicazioni per l'app Web o l'applicazione SharePoint.
 
-  6.  Scegliere **Controlla nomi** per risolvere il nome. Scegliere **OK**.
+  6. Scegliere **Controlla nomi** per risolvere il nome. Scegliere **OK**.
 
-  7.  Verificare che il pool di applicazioni disponga delle autorizzazioni di **lettura ed esecuzione**.
+  7. Verificare che il pool di applicazioni disponga delle autorizzazioni di **lettura ed esecuzione**.
 
-##  <a name="MonitorEvents"></a> Passaggio 2: Avvio del monitoraggio dell'applicazione
+## <a name="MonitorEvents"></a> Passaggio 2: Avvio del monitoraggio dell'applicazione
  Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).
 
-1.  Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.
+1. Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.
 
      ![Aprire Windows PowerShell come amministratore](../debugger/media/ffr_powershellrunadmin.png "FFR_PowerShellRunAdmin")
 
-2.  Eseguire il comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) per avviare il monitoraggio dell'applicazione. In questo modo verranno riavviate tutte le applicazioni Web nel server Web.
+2. Eseguire il comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) per avviare il monitoraggio dell'applicazione. In questo modo verranno riavviate tutte le applicazioni Web nel server Web.
 
      Di seguito è riportata la sintassi breve:
 
@@ -142,11 +142,11 @@ ms.locfileid: "59232580"
 
      Per altre informazioni sulla sintassi completa e altri esempi, eseguire il comando **get-help Start-WebApplicationMonitoring -detailed** o **get-help Start-WebApplicationMonitoring -examples**.
 
-3.  Per controllare lo stato di tutte le applicazioni Web monitorate, eseguire il comando [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) .
+3. Per controllare lo stato di tutte le applicazioni Web monitorate, eseguire il comando [Get-WebApplicationMonitoringStatus](http://go.microsoft.com/fwlink/?LinkID=313685) .
 
 ### <a name="q--a"></a>Domande e risposte
 
-####  <a name="Minimizing"></a> D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?
+#### <a name="Minimizing"></a> D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?
  **R:** Con Microsoft Monitoring Agent è possibile raccogliere moltissimi dati e l'impatto sulle prestazioni dell'applicazione dipende dai dati che si sceglie di raccogliere e da come avviene la raccolta. Esistono dei metodi per ottenere la maggior quantità di dati possibile senza rallentare l'app:
 
 - Per le applicazioni Web e SharePoint, l'agente registra i dati per ogni applicazione in cui è condiviso il pool di applicazioni specificato. Ciò potrebbe rallentare qualsiasi applicazione in cui è condiviso lo stesso pool di applicazioni, anche se è possibile limitare la raccolta ai moduli per una singola applicazione. Per evitare di rallentare le altre applicazioni, inserire ogni applicazione nel proprio pool di applicazioni.
@@ -161,9 +161,9 @@ ms.locfileid: "59232580"
 
    Ad esempio:
 
-  -   Disabilitare gli eventi di Windows Workflow per le applicazioni che non usano Windows Workflow.
+  - Disabilitare gli eventi di Windows Workflow per le applicazioni che non usano Windows Workflow.
 
-  -   Disabilitare gli eventi del Registro di sistema per le applicazioni che accedono a questo registro, senza tuttavia riscontrare problemi con le relative impostazioni.
+  - Disabilitare gli eventi del Registro di sistema per le applicazioni che accedono a questo registro, senza tuttavia riscontrare problemi con le relative impostazioni.
 
 - Rivedere i moduli per i quali l'agente raccoglie i dati nel piano di raccolta. Modificare il piano di raccolta in modo da includere solo i moduli desiderati.
 
@@ -228,7 +228,7 @@ Il tipo `Employee` ha i seguenti attributi: `Id`, `Name`e `HomeAddress`. Esiste 
 
 L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente non registra informazioni sull'oggetto `Address` , eccetto se era Null oppure no. L'agente non registra nemmeno i dati sulle variabili locali nel metodo `AlterEmployee` , a meno che non vengano usate da altri metodi come parametri; in questo caso vengono registrate come parametri di metodo.
 
-##  <a name="SaveEvents"></a> Passaggio 3: Salvare gli eventi registrati
+## <a name="SaveEvents"></a> Passaggio 3: Salvare gli eventi registrati
  Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).
 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvataggio degli eventi registrati continuando il monitoraggio

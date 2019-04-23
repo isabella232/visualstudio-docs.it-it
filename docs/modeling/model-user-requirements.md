@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058525"
 ---
 # <a name="model-user-requirements"></a>Modellare i requisiti utente
 
@@ -56,7 +56,7 @@ Un modello di requisiti offre un vantaggio maggiore se viene usato per concentra
 
 La maggior parte dei tipi di diagrammi può essere usata per altri scopi. Per una panoramica dei tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 Una regola di business è un requisito non associato a un particolare caso di utilizzo e deve essere osservata in tutto il sistema.
 
@@ -76,19 +76,19 @@ Per altre informazioni, vedere gli argomenti seguenti:
 |-|-|
 |Come sviluppare codice che soddisfi le regole di business|[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 Esistono diverse categorie di requisiti per la qualità del servizio. Di seguito vengono forniti alcuni esempi:
 
--   Prestazioni
+- Prestazioni
 
--   Sicurezza
+- Sicurezza
 
--   Usabilità
+- Usabilità
 
--   Affidabilità
+- Affidabilità
 
--   Efficienza
+- Efficienza
 
 È possibile includere alcuni di questi requisiti nelle descrizioni di casi di utilizzo specifici. Gli altri requisiti non sono specifici dei casi di utilizzo e vengono scritti più efficacemente in un documento separato. Quando possibile, è utile rispettare il vocabolario definito dal modello di requisiti. Nell'esempio seguente le parole principali usate nel requisito sono i titoli di attori, casi di utilizzo e classi delle illustrazioni precedenti:
 

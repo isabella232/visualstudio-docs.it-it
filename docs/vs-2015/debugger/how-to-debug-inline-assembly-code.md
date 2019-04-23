@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055106"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedura: Eseguire il debug di codice assembly inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ NOTA]
   
 #### <a name="to-debug-inline-assembly-code"></a>Per eseguire il debug di codice assembly inline  
   
-1.  Usare la finestra **Disassembly** per visualizzare le istruzioni dell'assembly.  
+1. Usare la finestra **Disassembly** per visualizzare le istruzioni dell'assembly.  
   
-2.  Usare la finestra **Registri** per visualizzare il contenuto del registro.  
+2. Usare la finestra **Registri** per visualizzare il contenuto del registro.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   

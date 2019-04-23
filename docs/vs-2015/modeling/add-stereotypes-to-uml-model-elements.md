@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d60d20e7fd62ee05b6c74f580ef60e23c577c96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969988"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043646"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Aggiungere stereotipi a elementi del modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,51 +29,51 @@ ms.locfileid: "58969988"
   
 ### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Per collegare un profilo a un modello o a un pacchetto  
   
-1.  Aprire **Esplora modelli UML**. Nel **architettura** dal menu **Windows**, quindi fare clic su **Esplora modelli UML**.  
+1. Aprire **Esplora modelli UML**. Nel **architettura** dal menu **Windows**, quindi fare clic su **Esplora modelli UML**.  
   
-2.  Individuare un pacchetto o un modello contenente tutti gli elementi a cui applicare gli stereotipi nel profilo.  
+2. Individuare un pacchetto o un modello contenente tutti gli elementi a cui applicare gli stereotipi nel profilo.  
   
-3.  Fare doppio clic il pacchetto o il modello e quindi fare clic su **proprietà**.  
+3. Fare doppio clic il pacchetto o il modello e quindi fare clic su **proprietà**.  
   
-4.  Nel **proprietà** impostare nella finestra di **profili** proprietà per i profili che contengono gli stereotipi che si desidera utilizzare.  
+4. Nel **proprietà** impostare nella finestra di **profili** proprietà per i profili che contengono gli stereotipi che si desidera utilizzare.  
   
      Gli stereotipi del profilo ora saranno disponibili in tutti gli elementi all'interno del modello o del pacchetto. Se il pacchetto contiene altri pacchetti, gli stereotipi saranno disponibili anche negli elementi negli altri pacchetti.  
   
 ### <a name="to-add-stereotypes-to-model-elements-or-relationships"></a>Per aggiungere stereotipi a elementi del modello o a relazioni  
   
-1.  Fare doppio clic sull'elemento del modello o la relazione, in un diagramma o nel **Esplora modelli UML**, quindi fare clic su **proprietà**.  
+1. Fare doppio clic sull'elemento del modello o la relazione, in un diagramma o nel **Esplora modelli UML**, quindi fare clic su **proprietà**.  
   
     > [!NOTE]
     >  Per aggiungere gli stessi stereotipi a più elementi, è possibile selezionare più elementi e quindi fare clic con il pulsante destro del mouse su uno di essi.  
   
-2.  Scegliere il **stereotipi** proprietà e selezionare gli stereotipi che si desidera applicare.  
+2. Scegliere il **stereotipi** proprietà e selezionare gli stereotipi che si desidera applicare.  
   
      Gli stereotipi selezionati vengono visualizzati tra «frecce di espansione» nell'elemento del modello, per la maggior parte dei tipi di elemento e di relazione.  
   
     > [!NOTE]
     >  Se non è possibile visualizzare il **stereotipi** proprietà, o se lo stereotipo desiderato non viene visualizzata, verificare che l'elemento del modello si trova all'interno di un pacchetto o un modello a cui è stato collegato il profilo appropriato.  
   
-3.  Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la **stereotipi** proprietà.  
+3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la **stereotipi** proprietà.  
   
 ### <a name="to-create-model-elements-within-a-package"></a>Per creare elementi del modello in un pacchetto  
   
-1.  Creare un pacchetto in un diagramma classi UML, o nel **Esplora modelli UML**.  
+1. Creare un pacchetto in un diagramma classi UML, o nel **Esplora modelli UML**.  
   
-2.  Aggiungere gli elementi del modello al pacchetto in uno dei modi seguenti:  
+2. Aggiungere gli elementi del modello al pacchetto in uno dei modi seguenti:  
   
-    -   In un diagramma classi UML fare clic sullo strumento per un elemento e quindi fare clic all'interno del pacchetto nel diagramma.  
-  
-         \- oppure -  
-  
-    -   In Esplora modelli UML, fare clic sul pacchetto, scegliere **Add**, quindi fare clic su un tipo di elemento.  
+    - In un diagramma classi UML fare clic sullo strumento per un elemento e quindi fare clic all'interno del pacchetto nel diagramma.  
   
          \- oppure -  
   
-    -   In Esplora modelli UML trascinare un elemento esistente nel pacchetto.  
+    - In Esplora modelli UML, fare clic sul pacchetto, scegliere **Add**, quindi fare clic su un tipo di elemento.  
   
          \- oppure -  
   
-    -   Collegare un diagramma al pacchetto e quindi creare gli elementi nel diagramma.  
+    - In Esplora modelli UML trascinare un elemento esistente nel pacchetto.  
+  
+         \- oppure -  
+  
+    - Collegare un diagramma al pacchetto e quindi creare gli elementi nel diagramma.  
   
          A tale scopo, fare doppio clic su una parte vuota del diagramma e quindi fare clic su **proprietà**. Nel **delle proprietà** impostare nella finestra **pacchetto collegato** per il pacchetto desiderato.  
   

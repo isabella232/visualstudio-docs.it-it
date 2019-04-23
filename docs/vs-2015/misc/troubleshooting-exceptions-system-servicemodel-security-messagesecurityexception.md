@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058876"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Risoluzione dei problemi relativi ad eccezioni: System.ServiceModel.Security.MessageSecurityException
 Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione viene generata quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina che un messaggio non è protetto correttamente oppure è stato manomesso. Questo errore si verifica il più delle volte quando le condizioni indicate di seguito si verificano contemporaneamente:  
   
--   Si utilizza un riferimento al servizio WCF su una connessione remota, ad esempio Connessione desktop remoto o Servizi terminal, per comunicare con un servizio WCF (con estensione svc) in un sito Web o in un progetto di applicazione Web.  
+- Si utilizza un riferimento al servizio WCF su una connessione remota, ad esempio Connessione desktop remoto o Servizi terminal, per comunicare con un servizio WCF (con estensione svc) in un sito Web o in un progetto di applicazione Web.  
   
--   Non si dispone di autorizzazioni di amministrazione per il sito remoto.  
+- Non si dispone di autorizzazioni di amministrazione per il sito remoto.  
   
--   Le richieste a localhost sul sito remoto vengono gestite dal server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
+- Le richieste a localhost sul sito remoto vengono gestite dal server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 ## <a name="associated-tips"></a>Suggerimenti associati  
  **Risolvere i problemi di autenticazione NTLM quando si usa il Server di sviluppo ASP.Net.**  
@@ -78,11 +78,11 @@ Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione v
   
 #### <a name="to-turn-off-ntlm-security"></a>Per disattivare la sicurezza NTLM  
   
-1.  In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nome del sito Web e scegliere **Pagine delle proprietà**.  
+1. In **Esplora soluzioni**, fare clic con il pulsante destro del mouse sul nome del sito Web e scegliere **Pagine delle proprietà**.  
   
-2.  Scegliere **Opzioni di avvio**, quindi deselezionare la casella di controllo **Autenticazione NTLM** .  
+2. Scegliere **Opzioni di avvio**, quindi deselezionare la casella di controllo **Autenticazione NTLM** .  
   
-3.  Fare clic su **OK**.  
+3. Fare clic su **OK**.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

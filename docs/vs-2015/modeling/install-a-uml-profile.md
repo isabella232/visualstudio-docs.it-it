@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043445"
 ---
 # <a name="install-a-uml-profile"></a>Installare un profilo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ ms.locfileid: "58968478"
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Per installare un profilo UML nel computer  
   
-1.  Il profilo dovrebbe essere stato fornito sotto forma di file con estensione di Visual Studio (`.vsix`). Nello stesso file potrebbero essere presenti altre funzionalità.  
+1. Il profilo dovrebbe essere stato fornito sotto forma di file con estensione di Visual Studio (`.vsix`). Nello stesso file potrebbero essere presenti altre funzionalità.  
   
      Spostare il file `.vsix` in una posizione pratica nel file computer.  
   
-2.  Fare doppio clic sul file `.vsix` in Esplora risorse (o Esplora file) oppure aprirlo in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Fare doppio clic sul file `.vsix` in Esplora risorse (o Esplora file) oppure aprirlo in [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Fare clic su **installare** nella finestra di dialogo visualizzata.  
+3. Fare clic su **installare** nella finestra di dialogo visualizzata.  
   
-4.  Per disinstallare o disabilitare temporaneamente l'estensione, aprire **Gestione estensioni** dalle **strumenti** menu.  
+4. Per disinstallare o disabilitare temporaneamente l'estensione, aprire **Gestione estensioni** dalle **strumenti** menu.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Per disinstallare o disabilitare un'estensione profilo  
   
-1.  In Visual Studio **degli strumenti** menu, fare clic su **gestore estensioni del**.  
+1. In Visual Studio **degli strumenti** menu, fare clic su **gestore estensioni del**.  
   
-2.  Fare clic sull'estensione che si desidera rimuovere e quindi fare clic su **disabilitare** oppure **Disinstalla**.  
+2. Fare clic sull'estensione che si desidera rimuovere e quindi fare clic su **disabilitare** oppure **Disinstalla**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Personalizzare il modello con profili e stereotipi](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

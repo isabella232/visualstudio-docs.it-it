@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057160"
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Dove:  
   
--   **Categoria della regola** -la categoria in cui è definita la regola. Per altre informazioni sulle categorie di regole di analisi del codice, vedere [analisi del codice per gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Categoria della regola** -la categoria in cui è definita la regola. Per altre informazioni sulle categorie di regole di analisi del codice, vedere [analisi del codice per gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id regola** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX:FriendlyTypeName.  
+- **Id regola** -l'identificatore della regola. Il supporto include sia un nome breve e a lungo per l'identificatore della regola. Il nome breve è CAXXXX; il nome lungo è CAXXXX:FriendlyTypeName.  
   
--   **Giustificazione** -il testo che consente di documentare il motivo dell'eliminazione del messaggio.  
+- **Giustificazione** -il testo che consente di documentare il motivo dell'eliminazione del messaggio.  
   
--   **Id messaggio** -identificatore univoco di un problema per ogni messaggio.  
+- **Id messaggio** -identificatore univoco di un problema per ogni messaggio.  
   
--   **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. Gli ambiti supportati includono quanto segue:  
+- **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. Gli ambiti supportati includono quanto segue:  
   
-    -   Modulo  
+    - Modulo  
   
-    -   Spazio dei nomi  
+    - Spazio dei nomi  
   
-    -   Risorsa  
+    - Risorsa  
   
-    -   Tipo  
+    - Tipo  
   
-    -   Member  
+    - Member  
   
--   **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.  
+- **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.  
   
 ## <a name="suppressmessage-usage"></a>Utilizzo SuppressMessage  
  Avvisi dell'analisi codice vengono soppressi a livello di a cui un'istanza di **SuppressMessage** viene applicato l'attributo. Lo scopo di questo è uno stretto accoppiamento le informazioni di eliminazione per il codice in cui si verifica la violazione.  

@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967835"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043680"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Sono disponibili un'ampia gamma di problemi relativi alla [!INCLUDE[ndptecclick]
   
  Se è stata modificata manualmente i manifesti di distribuzione o dell'applicazione, si potrebbe avere involontariamente danneggiato li. Impedendo così una corretta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installazione. È possibile eseguire il debug di tali errori in fase di esecuzione facendo clic **dettagli** nel **ClickOnce errore** nella finestra di dialogo e la lettura del messaggio di errore nel log. Il log verrà visualizzato uno dei seguenti messaggi:  
   
--   Una descrizione dell'errore di sintassi e il numero di riga e carattere posizione in cui si è verificato l'errore.  
+- Una descrizione dell'errore di sintassi e il numero di riga e carattere posizione in cui si è verificato l'errore.  
   
--   Il nome di un elemento o attributo utilizzato in violazione dello schema del manifesto. Se è stato aggiunto manualmente XML per i manifesti, è necessario confrontare le aggiunte agli schemi del manifesto. Per altre informazioni, vedere [del manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) e [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+- Il nome di un elemento o attributo utilizzato in violazione dello schema del manifesto. Se è stato aggiunto manualmente XML per i manifesti, è necessario confrontare le aggiunte agli schemi del manifesto. Per altre informazioni, vedere [del manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) e [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
   
--   Un conflitto tra ID. Riferimenti delle dipendenze nei manifesti di distribuzione e dell'applicazione devono essere univoci in entrambi i `name` e `publicKeyToken` attributi. Se entrambi gli attributi corrispondono tra qualsiasi due elementi all'interno di un manifesto, l'analisi del manifesto non riuscirà.  
+- Un conflitto tra ID. Riferimenti delle dipendenze nei manifesti di distribuzione e dell'applicazione devono essere univoci in entrambi i `name` e `publicKeyToken` attributi. Se entrambi gli attributi corrispondono tra qualsiasi due elementi all'interno di un manifesto, l'analisi del manifesto non riuscirà.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauzioni relative alla modifica manuale dei manifesti o applicazioni  
  Quando si aggiorna un manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione sia il manifesto di distribuzione. Il manifesto di distribuzione contiene un riferimento al manifesto dell'applicazione che include l'hash del file e la relativa firma digitale.  

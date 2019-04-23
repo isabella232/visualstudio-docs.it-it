@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a781fc290a9be795cf48cf08c062711376bd6acc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058480"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,37 +37,37 @@ ms.locfileid: "58966357"
 > [!NOTE]
 >  Se si desidera creare i propri comandi di menu, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a> I comandi che è possibile modificare?  
+## <a name="what"></a> I comandi che è possibile modificare?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Per trovare i comandi modificabili  
   
-1.  Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file C# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.  
+1. Nel `DslPackage` progetto aprire `GeneratedCode\CommandSet.cs`. Questo file c# è reperibile in Esplora soluzioni come file secondario del `CommandSet.tt`.  
   
-2.  Trovare le classi in questo file i cui nomi terminano con "`CommandSet`", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet`.  
+2. Trovare le classi in questo file i cui nomi terminano con "`CommandSet`", ad esempio `Language1CommandSet` e `Language1ClipboardCommandSet`.  
   
-3.  In ogni classe di set di comandi digitare "`override`" seguito da uno spazio. IntelliSense mostrerà un elenco dei metodi di cui è possibile eseguire l'override. Ogni comando ha una coppia di metodi i cui nomi iniziano con "`ProcessOnStatus`" e "`ProcessOnMenu`".  
+3. In ogni classe di set di comandi digitare "`override`" seguito da uno spazio. IntelliSense mostrerà un elenco dei metodi di cui è possibile eseguire l'override. Ogni comando ha una coppia di metodi i cui nomi iniziano con "`ProcessOnStatus`" e "`ProcessOnMenu`".  
   
-4.  Prendere nota delle classi di set di comandi contenenti il comando che si vuole modificare.  
+4. Prendere nota delle classi di set di comandi contenenti il comando che si vuole modificare.  
   
-5.  Chiudere il file senza salvare le modifiche.  
+5. Chiudere il file senza salvare le modifiche.  
   
     > [!NOTE]
     >  In genere, è opportuno non modificare i file che sono stati generati. Eventuali modifiche andranno perse la volta successiva che i file verranno generati.  
   
-##  <a name="extend"></a> Estendere la classe di set di comandi appropriata  
+## <a name="extend"></a> Estendere la classe di set di comandi appropriata  
  Creare un nuovo file contenente una dichiarazione parziale della classe di set di comandi.  
   
 #### <a name="to-extend-the-command-set-class"></a>Per estendere la classe di set di comandi  
   
-1.  In Esplora soluzioni, nel progetto DslPackage aprire la cartella GeneratedCode, cercare in CommandSet.tt e aprire il file CommandSet.cs generato. Prendere nota dello spazio dei nomi e del nome della prima classe definita qui. Può, ad esempio, essere visualizzato:  
+1. In Esplora soluzioni, nel progetto DslPackage aprire la cartella GeneratedCode, cercare in CommandSet.tt e aprire il file CommandSet.cs generato. Prendere nota dello spazio dei nomi e del nome della prima classe definita qui. Può, ad esempio, essere visualizzato:  
   
      `namespace Company.Language1`  
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  Nelle **DslPackage**, creare una cartella denominata **Custom Code**. In questa cartella, creare un nuovo file di classe denominato `CommandSet.cs`.  
+2. Nelle **DslPackage**, creare una cartella denominata **Custom Code**. In questa cartella, creare un nuovo file di classe denominato `CommandSet.cs`.  
   
-3.  Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:  
+3. Nel nuovo file scrivere una dichiarazione parziale con lo stesso spazio dei nomi e lo stesso nome della classe parziale generata. Ad esempio:  
   
     ```  
     using System;  
@@ -79,7 +79,7 @@ ms.locfileid: "58966357"
   
      **Nota** se si usa il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.  
   
-##  <a name="override"></a> Eseguire l'override del comando  
+## <a name="override"></a> Eseguire l'override del comando  
  La maggior parte dei comandi sono associati due metodi: Il metodo con un nome, ad esempio `ProcessOnStatus`... determina se il comando deve essere visibile e abilitato. Viene chiamato quando l'utente fa clic con il pulsante destro del mouse sul diagramma e deve essere eseguito rapidamente e senza apportare modifiche. `ProcessOnMenu`... viene chiamato quando l'utente fa clic sul comando e deve eseguire la funzione del comando. Potrebbe essere necessario eseguire l'override di uno o entrambi i metodi.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Per cambiare la situazione in cui il comando viene visualizzato in un menu  

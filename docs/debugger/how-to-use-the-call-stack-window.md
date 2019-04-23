@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059279"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Visualizzare lo stack di chiamate e utilizzare la finestra Stack di chiamate nel debugger
 
@@ -60,7 +60,7 @@ Lo stack frame in cui è attualmente posizionato il puntatore di esecuzione è c
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Visualizzare il codice non utente nella finestra Stack di chiamate
 
--   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Mostra codice esterno**.
+- Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Mostra codice esterno**.
 
 Codice non utente è un codice che non viene visualizzato quando [Just My Code](../debugger/just-my-code.md) è abilitata. Nel codice gestito, i frame del codice non utente sono nascoste per impostazione predefinita. La notazione seguente viene visualizzato al posto le cornici di codice non utente:
 
@@ -68,29 +68,29 @@ Codice non utente è un codice che non viene visualizzato quando [Just My Code](
 
 ## <a name="bkmk_switch"></a> Passare a un altro stack frame (modifica il contesto di debug)
 
-1.  Nel **Stack di chiamate** finestra, pulsante destro del mouse lo stack frame con codice e i dati che si desidera visualizzare.
+1. Nel **Stack di chiamate** finestra, pulsante destro del mouse lo stack frame con codice e i dati che si desidera visualizzare.
 
     O, è possibile fare doppio clic su un frame nel **Stack di chiamate** finestra per passare a quel frame.
 
-2.  Selezionare **Passa al frame**.
+2. Selezionare **Passa al frame**.
 
      Viene visualizzata una freccia verde ricurva accanto al frame dello stack che è stato selezionato. Il puntatore di esecuzione rimarrà nel frame originale, sempre contrassegnato dalla freccia gialla. Se si sceglie **Esegui** o **Continua** dal menu **Debug**, l'esecuzione continuerà nel frame originale, non nel frame selezionato.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Visualizzare il codice sorgente per una funzione nello stack di chiamate
 
--   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si vuole esaminare il codice sorgente e selezionare **Vai a codice sorgente**.
+- Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si vuole esaminare il codice sorgente e selezionare **Vai a codice sorgente**.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Eseguire una funzione specifica dalla finestra Stack di chiamate
 
--  Nel **Stack di chiamate** finestra, selezionare la funzione, fare doppio clic su, quindi scegliere **Esegui fino al cursore**.
+- Nel **Stack di chiamate** finestra, selezionare la funzione, fare doppio clic su, quindi scegliere **Esegui fino al cursore**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Impostare un punto di interruzione nel punto di uscita di una chiamata di funzione
 
--   Visualizzare [impostare un punto di interruzione in una funzione dello stack di chiamate](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Visualizzare [impostare un punto di interruzione in una funzione dello stack di chiamate](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Visualizzare le chiamate a o da un altro thread
 
--   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Includi chiamate da e verso altri thread**.
+- Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Includi chiamate da e verso altri thread**.
 
 ## <a name="visually-trace-the-call-stack"></a>Tracciare visivamente lo stack di chiamate
 
@@ -104,11 +104,11 @@ In Visual Studio Enterprise (solo), è possibile visualizzare le mappe codice pe
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Visualizzare il codice disassembly per una funzione nello stack di chiamate (C#, C++, Visual Basic, F#)
 
--   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.
+- Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.
 
 ## <a name="change-the-optional-information-displayed"></a>Scegliere quali informazioni opzionali visualizzate
 
--   Fare doppio clic nella **Stack di chiamate** finestra e impostare o deselezionare **mostrano \<**  _le informazioni che desidera_ **>**.
+- Fare doppio clic nella **Stack di chiamate** finestra e impostare o deselezionare **mostrano \<**  _le informazioni che desidera_ **>**.
 
 ## <a name="bkmk_symbols"></a> Caricare i simboli per un modulo (C#, C++, Visual Basic, F#)
 
@@ -118,25 +118,25 @@ Vedere [Specificare file di simboli (con estensione pdb) e di origine](../debugg
 
 ### <a name="to-load-symbols"></a>Per caricare i simboli
 
-1.  Nel **Stack di chiamate** finestra, pulsante destro del mouse sul frame dello stack per i simboli non vengono caricati. Il frame verrà disattivato (rappresentato in grigio).
+1. Nel **Stack di chiamate** finestra, pulsante destro del mouse sul frame dello stack per i simboli non vengono caricati. Il frame verrà disattivato (rappresentato in grigio).
 
-2.  Puntare **caricare i simboli** e quindi selezionare **server dei simboli Microsoft** (se disponibile), o selezionare il percorso dei simboli.
+2. Puntare **caricare i simboli** e quindi selezionare **server dei simboli Microsoft** (se disponibile), o selezionare il percorso dei simboli.
 
 ### <a name="to-set-the-symbol-path"></a>Per impostare il percorso dei simboli
 
-1.  Nella finestra **Stack di chiamate** scegliere **Impostazioni simboli** nel menu di scelta rapida.
+1. Nella finestra **Stack di chiamate** scegliere **Impostazioni simboli** nel menu di scelta rapida.
 
      Viene visualizzata la finestra di dialogo **Opzioni** con la pagina **Simboli**.
 
-2.  Selezionare **delle impostazioni dei simboli**.
+2. Selezionare **delle impostazioni dei simboli**.
 
-3.  Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.
+3. Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.
 
      Viene visualizzato un cursore nella casella **Percorsi dei file di simboli (pdb)**.
 
-4.  Immettere un nome di percorso di directory nel percorso simboli nel computer in cui si esegue il debug. Per eseguire il debug locale e remoto, questo è un percorso nel computer locale.
+4. Immettere un nome di percorso di directory nel percorso simboli nel computer in cui si esegue il debug. Per eseguire il debug locale e remoto, questo è un percorso nel computer locale.
 
-5.  Selezionare **OK** per chiudere la **opzioni** nella finestra di dialogo.
+5. Selezionare **OK** per chiudere la **opzioni** nella finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b37fe476c7654cc21a3b81f4a68aa4abc0348bb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054482"
 ---
 # <a name="support-for-settings-categories"></a>Supporto per le categorie di impostazioni
 Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -29,11 +29,11 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
   
  Il framework di pacchetto gestito (MPF) supporta la creazione di categorie di impostazioni con un minimo di codice aggiuntivo.  
   
--   Un VSPackage viene creato per fornire un contenitore per la categoria mediante la creazione di una sottoclasse della classe <xref:Microsoft.VisualStudio.Shell.Package>.  
+- Un VSPackage viene creato per fornire un contenitore per la categoria mediante la creazione di una sottoclasse della classe <xref:Microsoft.VisualStudio.Shell.Package>.  
   
--   La categoria stessa viene creata mediante la derivazione dalla classe <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+- La categoria stessa viene creata mediante la derivazione dalla classe <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
--   Le due vengono connesse con il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Le due vengono connesse con il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Supporto per le categorie di impostazioni  
  La classe <xref:Microsoft.VisualStudio.Shell.Package> offre il supporto per la creazione di categorie. La classe <xref:Microsoft.VisualStudio.Shell.DialogPage> implementa una categoria. L'implementazione predefinita di <xref:Microsoft.VisualStudio.Shell.DialogPage> offre le sue proprietà pubbliche all'utente come categoria. Per altre informazioni, vedere [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

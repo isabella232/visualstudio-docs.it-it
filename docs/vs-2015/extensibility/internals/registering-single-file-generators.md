@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970260"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055418"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../
   
 ### <a name="to-register-a-custom-tool"></a>Per registrare uno strumento personalizzato  
   
-1.  Registrare il DLL dello strumento personalizzato sia nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registro di sistema locale o nel Registro di sistema in HKEY_CLASSES_ROOT.  
+1. Registrare il DLL dello strumento personalizzato sia nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registro di sistema locale o nel Registro di sistema in HKEY_CLASSES_ROOT.  
   
      Ad esempio, ecco le informazioni di registrazione per lo strumento personalizzato a MSDataSetGenerator gestito, che viene fornito con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Creare una chiave del Registro di sistema nell'oggetto desiderato [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive in generatori\\*GUID* in cui *GUID* è il GUID definito dal sistema di progetto o un servizio del linguaggio specifico. Il nome della chiave diventa il nome a livello di uno strumento personalizzato. La chiave degli strumenti personalizzate presenta i seguenti valori:  
+2. Creare una chiave del Registro di sistema nell'oggetto desiderato [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive in generatori\\*GUID* in cui *GUID* è il GUID definito dal sistema di progetto o un servizio del linguaggio specifico. Il nome della chiave diventa il nome a livello di uno strumento personalizzato. La chiave degli strumenti personalizzate presenta i seguenti valori:  
   
-    -   (Predefinito)  
+    - (Predefinito)  
   
          Facoltativo. Fornisce una descrizione intuitiva dello strumento personalizzato. Questo parametro è facoltativo ma consigliato.  
   
-    -   CLSID  
+    - CLSID  
   
          Obbligatorio. Specifica l'identificatore della libreria di classi del componente COM che implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Obbligatorio. Indica se i tipi dai file generati da questo strumento personalizzato vengono resi disponibili per finestre di progettazione visiva. Il valore di questo parametro deve essere (zero) 0 per i tipi non è disponibili per finestre di progettazione visiva o 1 (uno) per i tipi disponibili per finestre di progettazione visiva.  
   

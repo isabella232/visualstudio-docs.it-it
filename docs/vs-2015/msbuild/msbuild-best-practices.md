@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043421"
 ---
 # <a name="msbuild-best-practices"></a>Procedure consigliate di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni riportate di seguito:  
   
--   I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare  
+- I valori di proprietà predefiniti vengono gestiti meglio con l'attributo `Condition` e non dichiarando una proprietà il cui valore predefinito può essere sottoposto a override nella riga di comando. Ad esempio, usare  
   
      `<MyProperty Condition="$(MyProperty)" == ''>`  
   
@@ -32,7 +32,7 @@ Per la scrittura degli script di MSBuild è consigliabile seguire le indicazioni
   
      `</MyProperty>`  
   
--   Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.  
+- Evitare i caratteri jolly quando si selezionano elementi. Al contrario, specificare i file in modo esplicito. Ciò semplifica l'individuazione degli errori che possono verificarsi quando si aggiungono o si eliminano file.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Advanced Concepts](../msbuild/msbuild-advanced-concepts.md) (Concetti avanzati)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055662"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procedura dettagliata: Generare codice tramite modelli di testo
 
@@ -83,9 +83,9 @@ In questo progetto viene usato un singolo file di modello per generare le classi
 
 È possibile applicare questa tecnica a qualsiasi progetto di codice. Questa procedura dettagliata usa un progetto C# e ai fini di test si userà un'applicazione console.
 
-1.  Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.
+1. Nel menu **File** fare clic su **Nuovo** e poi su **Progetto**.
 
-2.  Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
+2. Fare clic sul nodo **Visual C#** e poi, nel riquadro **Modelli** , su **Applicazione console**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Aggiungere un file XML prototipo al progetto
 
@@ -93,13 +93,13 @@ Lo scopo di questo file è fornire esempi dei tipi di nodo XML che l'applicazion
 
 Il file deve far parte del progetto in modo che il modello possa leggerlo, ma non sarà integrato nell'applicazione compilata.
 
-1.  In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi** e quindi su **Nuovo elemento**.
 
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **File XML** dal riquadro **Modelli** .
 
-3.  Aggiungere il contenuto di esempio al file.
+3. Aggiungere il contenuto di esempio al file.
 
-4.  Per questa procedura dettagliata assegnare al file il nome `exampleXml.xml`. Impostare il contenuto del file in modo che sia l'XML mostrato nella sezione precedente.
+4. Per questa procedura dettagliata assegnare al file il nome `exampleXml.xml`. Impostare il contenuto del file in modo che sia l'XML mostrato nella sezione precedente.
 
 ### <a name="add-a-test-code-file"></a>Aggiungere un file di codice di test
 
@@ -131,20 +131,20 @@ Un test più completo potrebbe controllare l'output di questa funzione di test c
 
 Aggiungere un file di modello di testo e impostare l'estensione di output *cs*.
 
-1.  In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.
+1. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul progetto, fare clic su **Aggiungi**e quindi su **Nuovo elemento**.
 
-2.  Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .
 
     > [!NOTE]
     > Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.
 
-3.  Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
+3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.
 
      Questa modifica consentirà il codice del modello ottenere l'accesso ai servizi di Visual Studio.
 
-4.  Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
+4. Nella direttiva di output cambiare l'attributo di estensione in ".cs", in modo che il modello generi un file C#. In un progetto Visual Basic è necessario modificarlo in ".vb".
 
-5.  Salvare il file. In questa fase il file di modello di testo deve contenere le righe seguenti:
+5. Salvare il file. In questa fase il file di modello di testo deve contenere le righe seguenti:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ Per rigenerare le classi quando viene modificato il file XML di esempio, fare cl
 
 Questa procedura dettagliata illustra diverse tecniche e vantaggi della generazione del codice:
 
--   La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
+- La*generazione del codice* è la creazione di parte del codice sorgente dell'applicazione da un *modello*. Il modello contiene le informazioni in un formato adatto per il dominio dell'applicazione e può cambiare durante la vita dell'applicazione.
 
--   La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.
+- La tipizzazione forte è uno dei vantaggi della generazione del codice. Mentre il modello rappresenta le informazioni in un formato più adatto all'utente, il codice generato consente ad altre parti dell'applicazione di gestire le informazioni mediante un set di tipi.
 
--   IntelliSense e il compilatore consentono di creare codice conforme allo schema del modello, sia quando si scrive nuovo codice che quando lo schema viene aggiornato.
+- IntelliSense e il compilatore consentono di creare codice conforme allo schema del modello, sia quando si scrive nuovo codice che quando lo schema viene aggiornato.
 
--   L'aggiunta di un singolo file di modello non complicato a un progetto può fornire questi vantaggi.
+- L'aggiunta di un singolo file di modello non complicato a un progetto può fornire questi vantaggi.
 
--   Un modello di testo può essere sviluppato e testato rapidamente e in modo incrementale.
+- Un modello di testo può essere sviluppato e testato rapidamente e in modo incrementale.
 
 In questa procedura dettagliata il codice del programma viene effettivamente generato da un'istanza del modello, un esempio rappresentativo dei file XML che l'applicazione elaborerà. In un approccio più formale, lo schema XML sarebbe l'input del modello, nella forma di un file con estensione .xsd o di una definizione di linguaggio specifica del dominio. Tale approccio potrebbe facilitare la determinazione da parte del modello di caratteristiche quali la molteplicità di una relazione.
 

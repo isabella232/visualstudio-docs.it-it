@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb3a96889d96911f43e7c8c271cea12951f9cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056118"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: Intercettare un clic su una forma o su un elemento Decorator
 Le procedure seguenti viene illustrato come intercettare un clic su una forma o un elemento decorator di icona. Consente di intercettare i clic, doppio clic, trascina, e altri movimenti e rendere l'elemento di rispondere.
@@ -43,11 +43,11 @@ public partial class MyShape // change
 
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Per intercettare un clic su un elemento decorator di icona
 
-1.  Aprire o creare una soluzione DSL.
+1. Aprire o creare una soluzione DSL.
 
-2.  Scegliere o creare una forma che contiene un elemento decorator icona ed eseguirne il mapping a una classe di dominio.
+2. Scegliere o creare una forma che contiene un elemento decorator icona ed eseguirne il mapping a una classe di dominio.
 
-3.  In un file di codice separato dai file del `GeneratedCode` cartella, creare la nuova sottoclasse di ImageField:
+3. In un file di codice separato dai file del `GeneratedCode` cartella, creare la nuova sottoclasse di ImageField:
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -85,7 +85,7 @@ public partial class MyShape // change
 
      È consigliabile impostare gestiti su true se non si desidera l'evento deve essere passato alla forma che lo contiene.
 
-4.  Override del metodo InitializeShapeFields in classs la forma aggiungendo la seguente definizione di classe parziale.
+4. Override del metodo InitializeShapeFields in classs la forma aggiungendo la seguente definizione di classe parziale.
 
     ```csharp
     public partial class MyShape // change
@@ -112,9 +112,9 @@ public partial class MyShape // change
     }
     ```
 
-1.  Compilare ed eseguire la soluzione.
+1. Compilare ed eseguire la soluzione.
 
-2.  Fare doppio clic sull'icona in un'istanza della forma. Messaggio di prova risulterà.
+2. Fare doppio clic sull'icona in un'istanza della forma. Messaggio di prova risulterà.
 
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Intercettazione fa clic e trascina su elenchi di CompartmentShape
  L'esempio seguente consente di riordinare gli elementi in una forma raggruppamento trascinandoli. Per eseguire questo codice:
@@ -131,19 +131,19 @@ public partial class MyShape // change
 
    In sintesi, il codice funzioni come indicato di seguito. In questo esempio `ClassShape` è il nome della forma del raggruppamento.
 
--   A ogni istanza di compartment è associato un set di gestori di eventi del mouse al momento della creazione.
+- A ogni istanza di compartment è associato un set di gestori di eventi del mouse al momento della creazione.
 
--   Il `ClassShape.MouseDown` eventi archivia l'elemento corrente.
+- Il `ClassShape.MouseDown` eventi archivia l'elemento corrente.
 
--   Quando il mouse viene spostato all'esterno dell'elemento corrente, viene creata un'istanza di MouseAction, che imposta il cursore e acquisisce il mouse fino a quando non viene rilasciato.
+- Quando il mouse viene spostato all'esterno dell'elemento corrente, viene creata un'istanza di MouseAction, che imposta il cursore e acquisisce il mouse fino a quando non viene rilasciato.
 
      Per evitare interferenze tra le altre azioni del mouse, ad esempio selezionare il testo di un elemento, MouseAction non viene creata fino a quando il mouse è uscito dell'elemento originale.
 
      Un'alternativa alla creazione di una MouseAction sarebbe sufficiente per l'ascolto delle MouseUp. Tuttavia, questo metodo non funziona correttamente se l'utente rilascia il puntatore del mouse dopo averla trascinata di fuori del raggruppamento. MouseAction è in grado di eseguire l'azione appropriata indipendentemente da dove il mouse viene rilasciato.
 
--   Quando il puntatore del mouse viene rilasciato, MouseAction.MouseUp riorganizzare l'ordine dei collegamenti tra gli elementi del modello.
+- Quando il puntatore del mouse viene rilasciato, MouseAction.MouseUp riorganizzare l'ordine dei collegamenti tra gli elementi del modello.
 
--   La modifica dell'ordine di ruolo viene attivata una regola che aggiorna la visualizzazione. Questo comportamento è già definito ed è necessario alcun codice aggiuntivo.
+- La modifica dell'ordine di ruolo viene attivata una regola che aggiorna la visualizzazione. Questo comportamento è già definito ed è necessario alcun codice aggiuntivo.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

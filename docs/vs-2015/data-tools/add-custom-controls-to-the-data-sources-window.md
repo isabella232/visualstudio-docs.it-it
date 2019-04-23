@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccdec180c8e38216a230813e1ffdf7ca98281c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055639"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,46 +40,46 @@ Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di proget
 > [!NOTE]
 >  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="customizinglist"></a> Personalizzare l'elenco dei controlli associabili per un tipo di dati  
+## <a name="customizinglist"></a> Personalizzare l'elenco dei controlli associabili per un tipo di dati  
  Per aggiungere o rimuovere i controlli dall'elenco dei controlli disponibili per gli elementi di **Zdroje dat** finestra con un tipo di dati specifico, eseguire la procedura seguente.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Per selezionare i controlli a essere elencati per un tipo di dati  
   
-1.  Assicurarsi che sia aperta la finestra di progettazione Windows Form o WPF Designer.  
+1. Assicurarsi che sia aperta la finestra di progettazione Windows Form o WPF Designer.  
   
-2.  Nel **Zdroje dat** finestra, fare clic su un elemento che fa parte di un'origine dati è stato aggiunto alla finestra e quindi scegliere il menu di scelta rapida per l'elemento.  
+2. Nel **Zdroje dat** finestra, fare clic su un elemento che fa parte di un'origine dati è stato aggiunto alla finestra e quindi scegliere il menu di scelta rapida per l'elemento.  
   
-3.  Nel menu di riepilogo a discesa, fare clic su **Personalizza**. Si apre una delle finestre di dialogo seguenti:  
+3. Nel menu di riepilogo a discesa, fare clic su **Personalizza**. Si apre una delle finestre di dialogo seguenti:  
   
-    -   Se la finestra di progettazione Windows Form è aperto, il **personalizzazione dell'interfaccia utente di dati** pagina della **opzioni** verrà visualizzata la finestra di dialogo.  
+    - Se la finestra di progettazione Windows Form è aperto, il **personalizzazione dell'interfaccia utente di dati** pagina della **opzioni** verrà visualizzata la finestra di dialogo.  
   
-    -   Se la finestra di progettazione WPF è aperta, il **Personalizza associazione controlli** verrà visualizzata la finestra di dialogo.  
+    - Se la finestra di progettazione WPF è aperta, il **Personalizza associazione controlli** verrà visualizzata la finestra di dialogo.  
   
-4.  Nella finestra di dialogo, selezionare un tipo di dati dal **tipo di dati** elenco a discesa.  
+4. Nella finestra di dialogo, selezionare un tipo di dati dal **tipo di dati** elenco a discesa.  
   
-    -   Per personalizzare l'elenco di controlli per una tabella o oggetto, selezionare **[elenco]**.  
+    - Per personalizzare l'elenco di controlli per una tabella o oggetto, selezionare **[elenco]**.  
   
-    -   Per personalizzare l'elenco di controlli per una colonna di una tabella o una proprietà di un oggetto, selezionare il tipo di dati della colonna o proprietà nell'archivio dati sottostante.  
+    - Per personalizzare l'elenco di controlli per una colonna di una tabella o una proprietà di un oggetto, selezionare il tipo di dati della colonna o proprietà nell'archivio dati sottostante.  
   
-    -   Per personalizzare l'elenco di controlli per visualizzare gli oggetti dati che includono forme definite dall'utente, selezionare **[altro]**. Ad esempio, selezionare **[altro]** se l'applicazione include un controllo personalizzato che consente di visualizzare i dati da più di una proprietà di un oggetto specifico.  
+    - Per personalizzare l'elenco di controlli per visualizzare gli oggetti dati che includono forme definite dall'utente, selezionare **[altro]**. Ad esempio, selezionare **[altro]** se l'applicazione include un controllo personalizzato che consente di visualizzare i dati da più di una proprietà di un oggetto specifico.  
   
-5.  Nel **associati a controlli** selezionare ogni controllo che si desidera rendere disponibili per il tipo di dati selezionato o annullare la selezione di tutti i controlli che si desidera rimuovere dall'elenco.  
+5. Nel **associati a controlli** selezionare ogni controllo che si desidera rendere disponibili per il tipo di dati selezionato o annullare la selezione di tutti i controlli che si desidera rimuovere dall'elenco.  
   
     > [!NOTE]
     >  Se il controllo che si desidera selezionare non viene visualizzato nei **associati a controlli** casella, è necessario aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiunta di controlli per l'elenco di controlli associati a un tipo di dati](#addingcontrols).  
   
-6.  Fare clic su **OK**.  
+6. Fare clic su **OK**.  
   
-7.  Nel **Zdroje dat** finestra, fare clic su un elemento dei dati di tipo che sono stati appena associati uno o più controlli e quindi scegliere il menu di scelta rapida per l'elemento.  
+7. Nel **Zdroje dat** finestra, fare clic su un elemento dei dati di tipo che sono stati appena associati uno o più controlli e quindi scegliere il menu di scelta rapida per l'elemento.  
   
      I controlli selezionati nel **associati a controlli** casella vengono ora visualizzati nel menu di riepilogo a discesa per l'elemento.  
   
-##  <a name="addingcontrols"></a> Addcontrols all'elenco dei controlli associati a un tipo di dati  
+## <a name="addingcontrols"></a> Addcontrols all'elenco dei controlli associati a un tipo di dati  
  Se si desidera associare un controllo a un tipo di dati, ma il controllo non viene visualizzato nei **associati a controlli** casella, è necessario aggiungere il controllo all'elenco. Il controllo deve essere posizionato nella soluzione corrente o in un assembly di riferimento. Deve anche essere disponibile nel **casella degli strumenti**, e hanno un attributo che specifica il comportamento di associazione dati del controllo.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>Per aggiungere controlli all'elenco dei controlli associati  
   
-1.  Aggiungere il controllo desiderato per il **casella degli strumenti** facendo clic con il **della casella degli strumenti** e scegliendo **Scegli elementi**.  
+1. Aggiungere il controllo desiderato per il **casella degli strumenti** facendo clic con il **della casella degli strumenti** e scegliendo **Scegli elementi**.  
   
      Il controllo deve avere uno dei seguenti attributi.  
   
@@ -89,9 +89,9 @@ Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di proget
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implementare questo attributo per i controlli che visualizzano elenchi (o tabelle) dei dati, ad esempio un <xref:System.Windows.Forms.DataGridView>.|  
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implementare questo attributo per i controlli che visualizzano elenchi (o tabelle) di dati, ma anche necessità di presentare una singola colonna o proprietà, ad esempio un <xref:System.Windows.Forms.ComboBox>.|  
   
-2.  Per i moduli di Windows, nel **opzioni** finestra di dialogo, aprire il **personalizzazione dell'interfaccia utente dati** pagina. In alternativa, per WPF, aprire il **Personalizza associazione controlli** nella finestra di dialogo. Per altre informazioni, vedere [personalizzazione dell'elenco di controlli associabili per un tipo di dati](#customizinglist).  
+2. Per i moduli di Windows, nel **opzioni** finestra di dialogo, aprire il **personalizzazione dell'interfaccia utente dati** pagina. In alternativa, per WPF, aprire il **Personalizza associazione controlli** nella finestra di dialogo. Per altre informazioni, vedere [personalizzazione dell'elenco di controlli associabili per un tipo di dati](#customizinglist).  
   
-3.  Nel **associati a controlli** casella, il controllo appena aggiunto per il **della casella degli strumenti** dovrebbe ora essere visualizzato.  
+3. Nel **associati a controlli** casella, il controllo appena aggiunto per il **della casella degli strumenti** dovrebbe ora essere visualizzato.  
   
     > [!NOTE]
     >  Solo i controlli che si trovano all'interno della soluzione corrente o in un assembly di riferimento possono essere aggiunti all'elenco dei controlli associati. (I controlli devono inoltre implementare uno degli attributi di associazione dati nella tabella precedente.) Per associare dati a un controllo personalizzato che non è disponibile nel **Zdroje dat** finestra, trascinare il controllo dal **della casella degli strumenti** nell'area di progettazione e quindi trascina l'elemento da associare dal **dati Origini** finestra al controllo.  

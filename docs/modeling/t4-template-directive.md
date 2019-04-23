@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059006"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 
@@ -96,7 +96,7 @@ Se si imposta il valore di questo attributo su `true`, viene aggiunta una propri
 
 Poiché il tipo di questa proprietà dipende dal tipo di host, è utile solo se si scrive un modello di testo che funziona solo con un host specifico. È applicabile alla [modelli della fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md), ma non [modelli in fase di esecuzione](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile usare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
+Quando `hostspecific` viene `true` e si usa Visual Studio, è possibile eseguire il cast `this.Host` a IServiceProvider per accedere alle funzionalità di Visual Studio. È inoltre possibile utilizzare `Host.ResolvePath(filename)` per ottenere il percorso assoluto di un file nel progetto. Ad esempio:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Codice dell'applicazione per richiamare DerivedTemplate1:
- ```csharp
+Codice dell'applicazione per richiamare DerivedTemplate1:
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Output risultante:
- ```
+Output risultante:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fd3e7867b74c9dab923e91fd76424e88b309743
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 1631f1b93f79c21914f990620f7e0047c301163f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931611"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054326"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 
@@ -31,49 +31,49 @@ Ad esempio, si consideri una tabella di `Orders` in un database di vendite. Ogni
 
 ## <a name="to-create-a-lookup-table"></a>Per creare una tabella di ricerca
 
-1.  Aggiungere uno dei seguenti tipi di origini dati con dati correlati al progetto:
+1. Aggiungere uno dei seguenti tipi di origini dati con dati correlati al progetto:
 
-    -   Set di dati o Entity Data Model.
+    - Set di dati o Entity Data Model.
 
-    -   WCF Data Service, servizio WCF o un servizio web. Per altre informazioni, vedere [procedura: connettersi ai dati in un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).
+    - WCF Data Service, servizio WCF o un servizio web. Per altre informazioni, vedere [Procedura: Connettersi ai dati di un servizio](../data-tools/how-to-connect-to-data-in-a-service.md).
 
-    -   Oggetti. Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
+    - Oggetti. Per altre informazioni, vedere [associazione agli oggetti in Visual Studio](bind-objects-in-visual-studio.md).
 
     > [!NOTE]
     > Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.
 
-2.  Aprire il **WPF Designer**e assicurarsi che la finestra di progettazione contiene un contenitore che è una destinazione di rilascio validi per gli elementi nel **Zdroje dat** finestra.
+2. Aprire il **WPF Designer**e assicurarsi che la finestra di progettazione contiene un contenitore che è una destinazione di rilascio validi per gli elementi nel **Zdroje dat** finestra.
 
      Per altre informazioni sulle destinazioni di rilascio validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 
-3.  Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.
+3. Scegliere **Mostra origini dati** dal menu **Dati** per aprire la finestra **Origini dati**.
 
-4.  Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre o l'oggetto e la tabella figlio correlata o l'oggetto.
+4. Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre o l'oggetto e la tabella figlio correlata o l'oggetto.
 
     > [!NOTE]
     > La tabella figlio correlata o l'oggetto è il nodo che viene visualizzato come nodo figlio espandibile sotto la tabella padre o l'oggetto.
 
-5.  Fare clic sul menu a discesa per il nodo figlio e selezionare **dettagli**.
+5. Fare clic sul menu a discesa per il nodo figlio e selezionare **dettagli**.
 
-6.  Espandere il nodo figlio.
+6. Espandere il nodo figlio.
 
-7.  Sotto il nodo figlio, fare clic sul menu a discesa scegliere per l'elemento che correla i dati padre e figlio. (Nell'esempio precedente, questo è il **CustomerID** nodo.) Selezionare uno dei seguenti tipi di controlli che supportano il binding di ricerca:
+7. Sotto il nodo figlio, fare clic sul menu a discesa scegliere per l'elemento che correla i dati padre e figlio. (Nell'esempio precedente, questo è il **CustomerID** nodo.) Selezionare uno dei seguenti tipi di controlli che supportano il binding di ricerca:
 
-    -   **ComboBox**
+    - **ComboBox**
 
-    -   **ListBox**
+    - **ListBox**
 
-    -   **ListView**
+    - **ListView**
 
         > [!NOTE]
         > Se il **ListBox** oppure **ListView** controllo non viene visualizzato nell'elenco, è possibile aggiungere questi controlli per l'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-    -   Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector>.
+    - Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector>.
 
         > [!NOTE]
         > Per informazioni su come aggiungere controlli personalizzati per l'elenco dei controlli è possono selezionare per gli elementi di **Zdroje dat** finestra, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-8.  Trascinare il nodo figlio dal **Zdroje dat** finestra in un contenitore in WPF designer. (Nell'esempio precedente, il nodo figlio è il **ordini** nodo.)
+8. Trascinare il nodo figlio dal **Zdroje dat** finestra in un contenitore in WPF designer. (Nell'esempio precedente, il nodo figlio è il **ordini** nodo.)
 
      Visual Studio genera XAML che crea nuovi controlli associati a dati per ognuno degli elementi che si trascinano. il XAML aggiunge anche un nuovo <xref:System.Windows.Data.CollectionViewSource> per la tabella figlio o un oggetto alle risorse di destinazione di rilascio. Per alcune origini dati, Visual Studio genera inoltre il codice per caricare i dati nella tabella o dell'oggetto. Per altre informazioni, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
 

@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9916a46089e1d3381f1bc1f41dd5b7c0178c964
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054001"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dati prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.  
@@ -32,13 +32,13 @@ Dalla finestra pagina della sessione di profilatura è possibile controllare int
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Per sospendere, riprendere o arrestare la profilatura  
   
--   Nella pagina della sessione di profilatura:  
+- Nella pagina della sessione di profilatura:  
   
-    -   Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.  
+    - Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.  
   
-    -   Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.  
+    - Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.  
   
-    -   Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.  
+    - Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   

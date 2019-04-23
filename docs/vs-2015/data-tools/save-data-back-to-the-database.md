@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056809"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   
  Per la seconda riga, tuttavia, il `Update` metodo automaticamente richiama il comando di correggere i dati e li trasmette al database. La sintassi dell'istruzione SQL specifica dipende dal dialetto di SQL supportata dall'archivio dati sottostante. Ma le caratteristiche generali seguenti di istruzione SQL sono degni di nota:  
   
--   Istruzione SQL è un'istruzione UPDATE. L'adapter è in grado di utilizzare un'istruzione UPDATE, perché il valore della <xref:System.Data.DataRow.RowState%2A> è di proprietà <xref:System.Data.DataRowState>.  
+- Istruzione SQL è un'istruzione UPDATE. L'adapter è in grado di utilizzare un'istruzione UPDATE, perché il valore della <xref:System.Data.DataRow.RowState%2A> è di proprietà <xref:System.Data.DataRowState>.  
   
--   Istruzione SQL include una clausola WHERE che indica che la destinazione dell'istruzione UPDATE è la riga in cui `CustomerID = 'c400'`. Questa parte dell'istruzione SELECT distingue la riga di destinazione da tutti gli altri, perché il `CustomerID` è la chiave primaria della tabella di destinazione. Le informazioni per la clausola WHERE è derivata dalla versione originale del record (`DataRowVersion.Original`), nel caso in cui sono stati modificati i valori necessari per identificare la riga.  
+- Istruzione SQL include una clausola WHERE che indica che la destinazione dell'istruzione UPDATE è la riga in cui `CustomerID = 'c400'`. Questa parte dell'istruzione SELECT distingue la riga di destinazione da tutti gli altri, perché il `CustomerID` è la chiave primaria della tabella di destinazione. Le informazioni per la clausola WHERE è derivata dalla versione originale del record (`DataRowVersion.Original`), nel caso in cui sono stati modificati i valori necessari per identificare la riga.  
   
--   Istruzione SQL include la clausola SET per impostare i nuovi valori delle colonne modificate.  
+- Istruzione SQL include la clausola SET per impostare i nuovi valori delle colonne modificate.  
   
     > [!NOTE]
     >  Se il TableAdapter `UpdateCommand` proprietà è stata impostata sul nome di una stored procedure, l'adapter non ne crea un'istruzione SQL. Al contrario, richiama la stored procedure con i parametri appropriati passati.  

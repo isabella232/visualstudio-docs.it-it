@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5d619a18fa38c09b25f2d8367f3f767ac5bdc11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054444"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,19 +107,19 @@ Le destinazioni devono venire ordinate se l'input per una destinazione dipende d
 ## <a name="determining-the-target-build-order"></a>Determinazione dell'ordine di compilazione delle destinazioni  
  MSBuild determina l'ordine di compilazione delle destinazioni, come segue:  
   
-1.  Vengono eseguite le destinazioni `InitialTargets`.  
+1. Vengono eseguite le destinazioni `InitialTargets`.  
   
-2.  Vengono eseguite le destinazioni specificate nella riga di comando dall'opzione **/target**. Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.  
+2. Vengono eseguite le destinazioni specificate nella riga di comando dall'opzione **/target**. Se non si specifica alcuna destinazione nella riga di comando, vengono eseguite le destinazioni `DefaultTargets`. Se nessuna delle due destinazioni è presente, viene eseguita la prima destinazione rilevata.  
   
-3.  Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.  
+3. Viene valutato l'attributo `Condition` della destinazione. Se l'attributo `Condition` è presente e restituisce `false`, la destinazione non viene eseguita e non ha effetto sulla compilazione.  
   
-4.  Prima che venga eseguita una destinazione, ne vengono eseguite le destinazioni `DependsOnTargets`.  
+4. Prima che venga eseguita una destinazione, ne vengono eseguite le destinazioni `DependsOnTargets`.  
   
-5.  Prima che venga eseguita una destinazione, vengono eseguite le destinazioni che la elencano in un attributo `BeforeTargets`.  
+5. Prima che venga eseguita una destinazione, vengono eseguite le destinazioni che la elencano in un attributo `BeforeTargets`.  
   
-6.  Prima che venga eseguita una destinazione, ne vengono confrontati gli attributi `Inputs` e `Outputs`. Se MSBuild determina che sono presenti file di output scaduti rispetto al file o ai file di input corrispondenti, MSBuild esegue la destinazione. In caso contrario, MSBuild ignora la destinazione.  
+6. Prima che venga eseguita una destinazione, ne vengono confrontati gli attributi `Inputs` e `Outputs`. Se MSBuild determina che sono presenti file di output scaduti rispetto al file o ai file di input corrispondenti, MSBuild esegue la destinazione. In caso contrario, MSBuild ignora la destinazione.  
   
-7.  Dopo che una destinazione viene eseguita o ignorata, vengono eseguite le destinazioni che la elencano in un attributo `AfterTargets`.  
+7. Dopo che una destinazione viene eseguita o ignorata, vengono eseguite le destinazioni che la elencano in un attributo `AfterTargets`.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Destinazioni](../msbuild/msbuild-targets.md)
