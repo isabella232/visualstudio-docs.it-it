@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082581"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importare gli elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.
@@ -119,9 +119,9 @@ ms.locfileid: "56645147"
 
  Quando viene visualizzato questo errore, l'elemento non viene creato. Questo problema si verifica più spesso nei moduli importati. Per evitare questo problema, eseguire le operazioni seguenti:
 
--   Quando si immettono nomi di progetti nella finestra di dialogo **Aggiungi nuovo progetto** , usare nomi brevi.
+- Quando si immettono nomi di progetti nella finestra di dialogo **Aggiungi nuovo progetto** , usare nomi brevi.
 
--   Creare il progetto in una posizione il più vicino possibile alla cartella radice, in modo da abbreviare il percorso.
+- Creare il progetto in una posizione il più vicino possibile alla cartella radice, in modo da abbreviare il percorso.
 
 ## <a name="the-sharepointproductversion-attribute"></a>L'attributo SharePointProductVersion
  Quando si importa una soluzione creata in una versione precedente di SharePoint come [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] o [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], impostare il valore dell'attributo SharePointProductVersion su 12.0 nel manifesto del pacchetto o inserire un controllo di gestione script in tutte le pagine Web importate e lasciare l'attributo SharePointProductVersion impostato su 14.0. In caso contrario, i Web Form importati non vengono visualizzati in SharePoint.

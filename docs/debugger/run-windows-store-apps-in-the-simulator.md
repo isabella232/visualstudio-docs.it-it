@@ -13,105 +13,113 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 628683ae87bc53d59a61e13d3c21d45bfa4eee79
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 30952d191d6163e6ba82491342b5084e8e3f67b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083205"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Eseguire app UWP nel simulatore
+
 Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che simula un'app UWP. In genere, è opportuno eseguire il debug nel computer locale, un dispositivo connesso o un computer remoto. Tuttavia, in alcuni scenari, è possibile usare il simulatore di Visual Studio per emulare una dimensione dello schermo fisico diverso e risoluzione. È anche possibile simulare i comuni eventi di rotazione e tocco e simulare le proprietà di connessione di rete.
 
- Il simulatore offre un ambiente in cui è possibile progettare, sviluppare, eseguire il debug e testare App UWP. Tuttavia, prima di pubblicare l'app in Microsoft Store, è necessario testare l'app in un dispositivo reale.
+Il simulatore offre un ambiente in cui è possibile progettare, sviluppare, eseguire il debug e testare App UWP. Tuttavia, prima di pubblicare l'app in Microsoft Store, è necessario testare l'app in un dispositivo reale.
 
- Il simulatore di Visual Studio per le app UWP non viene eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.
+Il simulatore di Visual Studio per le app UWP non viene eseguito in un ambiente isolato nel computer locale. Di conseguenza, gli errori che si verificano nel simulatore, ad esempio un errore irreversibile a livello di sistema, può influenzare l'intero computer.
 
 > [!IMPORTANT]
->  Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione.
+> Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione.
 
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione
- Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante nel debugger **Standard** sulla barra degli strumenti. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo.
+## <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione
 
- ![L'esecuzione nel simulatore](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
+Per eseguire l'app UWP nel simulatore, scegli **simulatore** dall'elenco a discesa elenco accanto al **Avvia debug** pulsante nel debugger **Standard** sulla barra degli strumenti. Questa opzione è disponibile solo se l'app **minima piattaforma di destinazione. Versione** è minore o uguale al sistema operativo nel computer di sviluppo.
 
-##  <a name="BKMK_Choose_an_interaction_mode"></a> Scegliere una modalità di interazione
- È possibile scegliere le modalità di interazione seguenti
+![L'esecuzione nel simulatore](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
--   ![Pulsante modalità mouse](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") modalità Mouse: imposta la modalità di interazione sui movimenti del mouse. I movimenti del mouse includono clic, doppio clic e trascinamento.
+## <a name="BKMK_Choose_an_interaction_mode"></a> Scegliere una modalità di interazione
 
--   ![Pulsante emulazione tocco di avvio](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulazione tocco di avvio: imposta la modalità di interazione sui movimenti tocco di un singolo dito. Gli eventi di un singolo dito includono tocco, trascinamento e scorrimento rapido.
+È possibile scegliere la modalità di interazione seguenti:
 
-     ![Destinazione simulatore un dito](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") l'icona di bersaglio singolo indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.
+- ![Pulsante modalità mouse](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") modalità Mouse: imposta la modalità di interazione sui movimenti del mouse. I movimenti del mouse includono clic, doppio clic e trascinamento.
 
-     ![Destinazione touch un dito](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.
+- ![Pulsante emulazione tocco di avvio](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") emulazione tocco di avvio: imposta la modalità di interazione sui movimenti tocco di un singolo dito. Gli eventi di un singolo dito includono tocco, trascinamento e scorrimento rapido.
+
+   ![Destinazione simulatore un dito](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
+   
+   L'icona di bersaglio singolo indica la posizione degli eventi nel simulatore. Usa il mouse per posizionare il puntatore.
+
+   ![Destinazione touch un dito](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
+   
+   Premere il pulsante sinistro del mouse per attivare la modalità tocco. Ad esempio, fai clic sul pulsante per simulare un tocco o premi e tieni premuto il pulsante mentre trascini o scorri rapidamente.
 
 ## <a name="pinch-and-zoom"></a>Zoom indietro/avanti
- Imposta la modalità di interazione per i movimenti zoom indietro e avanti di due dita.
 
--   ![Destinazione di simulatore due dita](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")
+Imposta la modalità di interazione per i movimenti zoom indietro e avanti di due dita.
 
-     La doppia icona di destinazione indica la posizione di due dita sullo schermo del dispositivo.
+![Destinazione di simulatore due dita](../debugger/media/simulator_twofinger.png)
 
-    -   Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.
+La doppia icona di destinazione indica la posizione di due dita sullo schermo del dispositivo.
 
-    -   Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.
+- Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.
 
--   -   ![Avvicinare le dita, eseguire lo zoom avanti e destinazioni di rotazione](../debugger/media/simulator_twofingerengaged.png "SIMULATOR_TwoFingerEngaged")
+- Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.
 
-         Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.
+![Destinazioni di rotazione, zoom indietro e zoom avanti](../debugger/media/simulator_twofingerengaged.png)
 
-    -   Premi il pulsante sinistro e ruota la rotellina del mouse in avanti (lontano da te) per fare zoom indietro.
+- Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.
+
+- Premi il pulsante sinistro e ruota la rotellina del mouse in avanti (lontano da te) per fare zoom indietro.
 
 ## <a name="object-rotation"></a>Rotazione di oggetti
- Il pulsante **Rotazione emulazione tocco** imposta la modalità di interazione sui movimenti di rotazione usando due dita.
 
--   -   Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.
+Il pulsante **Rotazione emulazione tocco** imposta la modalità di interazione sui movimenti di rotazione usando due dita.
 
-    -   Ruota la rotellina del mouse avanti o indietro per modificare l'orientamento simulato delle due dita prima di ruotare l'oggetto.
+- Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo. Ruota la rotellina del mouse avanti o indietro per modificare l'orientamento simulato delle due dita prima di ruotare l'oggetto.
 
--   -   Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per ruotare l'oggetto in senso antiorario. Mente ruoti la rotella del mouse, una delle due icone di destinazione ruota intorno all'altra per indicare la dimensione relativa della rotazione.
+- Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per ruotare l'oggetto in senso antiorario. Mente ruoti la rotella del mouse, una delle due icone di destinazione ruota intorno all'altra per indicare la dimensione relativa della rotazione.
 
-    -   Premi il pulsante sinistro e ruota la rotellina del mouse avanti (lontano di te) per ruotare l'oggetto in senso orario.
+- Premi il pulsante sinistro e ruota la rotellina del mouse avanti (lontano di te) per ruotare l'oggetto in senso orario.
 
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Abilitare o disabilitare la modalità Sempre in primo piano
+## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Abilitare o disabilitare la modalità Sempre in primo piano
  Puoi impostare la finestra del simulatore in modo che sia sempre in primo piano rispetto ad altre finestre. Il pulsante **Attiva/disattiva finestra in primo piano** abilita o disabilita la modalità **Sempre in primo piano** della finestra del simulatore.
 
-##  <a name="BKMK_Change_the_device_orientation"></a> Modificare l'orientamento del dispositivo
+## <a name="BKMK_Change_the_device_orientation"></a> Modificare l'orientamento del dispositivo
  Puoi modificare l'orientamento verticale e orizzontale del dispositivo ruotando il simulatore di 90 gradi in qualsiasi direzione.
 
 > [!NOTE]
->  Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.
+> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.
 
 > [!NOTE]
->  Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.
+> Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.
 
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modificare le dimensioni e la risoluzione dello schermo simulate
+## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modificare le dimensioni e la risoluzione dello schermo simulate
  Per modificare le dimensioni e la risoluzione dello schermo simulate, scegliere il pulsante **Cambia risoluzione** nella tavolozza e scegliere una nuova dimensione e una nuova risoluzione dall'elenco.
 
  Le dimensioni e la risoluzione dello schermo sono elencate come *Larghezza schermo in pollici, larghezza in pixel X altezza in pixel*. Come noterai, le dimensioni e la risoluzione dello schermo sono simulate. Le coordinate della posizione nel simulatore vengono convertite nelle coordinate delle dimensioni e della risoluzione del dispositivo selezionato.
 
 > [!NOTE]
->  Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per altre informazioni, vedere [intro progettazione e l'interfaccia utente](/windows/uwp/layout/design-and-ui-intro). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.
+> Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per altre informazioni, vedere [intro progettazione e l'interfaccia utente](/windows/uwp/layout/design-and-ui-intro). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.
 
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Acquisire una schermata dell'app da inviare a Microsoft Store
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Acquisire una schermata dell'app da inviare a Microsoft Store
  Quando si invia un'app in Microsoft Store, è necessario includere alcune schermate dell'app.
 
 > [!NOTE]
->  La schermata viene salvato con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .
+> La schermata viene salvato con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .
 
--   Per creare schermate dell'app dal simulatore, scegli il pulsante **Acquisisce la schermata negli Appunti** .
+- Per creare schermate dell'app dal simulatore, scegli il pulsante **Acquisisce la schermata negli Appunti** .
 
--   Per impostare il percorso in cui si trovano la schermate, scegliere il pulsante **Impostazioni cattura di schermata** e scegliere il percorso dal menu di scelta rapida.
+- Per impostare il percorso in cui si trovano la schermate, scegliere il pulsante **Impostazioni cattura di schermata** e scegliere il percorso dal menu di scelta rapida.
 
-     ![Menu di scelta rapida impostazioni screenshot](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")
+   ![Menu di scelta rapida Impostazioni cattura di schermata](../debugger/media/simulator_screenshotsettingscntxmnu.png)
 
-##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete
- È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Vedere [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+## <a name="BKMK_Simulate_network_connection_properties"></a> Simulare le proprietà di connessione di rete
 
- Per eseguire il debug o il test del codice in grado di rilevare i costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite l'oggetto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
+È possibile consentire agli utenti dell'app di gestire il costo delle connessioni di rete a consumo mantenendo il controllo sulle modifiche dello stato relative ai costi della connessione di rete o del piano dati e consentendo all'app di usare queste informazioni per evitare di dover sostenere costi aggiuntivi per il roaming o il superamento di un limite di trasferimento dati specificato. Le API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) consentono di rispondere agli eventi [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) e [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) che consentono l'accesso. Vedere [Avvio rapido: Gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
- Per simulare le proprietà di rete:
+Per eseguire il debug o il test del codice in grado di rilevare i costi di rete, il simulatore può simulare le proprietà di una rete esposte tramite l'oggetto [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) restituito da [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
+
+Per simulare le proprietà di rete:
 
 1. Sulla barra degli strumenti del simulatore scegliere **Modifica proprietà di rete** .
 
@@ -129,24 +137,26 @@ Il simulatore di Visual Studio per le app UWP è un'applicazione desktop che sim
 
 7. Scegliere **Imposta proprietà** per simulare le proprietà di rete generando un evento [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) in primo piano e un [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) in background di tipo **NetworkStateChange**.
 
-   **Altre informazioni sulla gestione delle connessioni di rete**
+Per altre informazioni sulla gestione connessioni di rete, vedere:
 
-   [Guida introduttiva: Gestione dei vincoli di costo per le reti a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Avvio rapido: La gestione dei vincoli di costo di rete a consumo](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
-   [Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
+[Esempio di informazioni di rete](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
-   [Analizzare il consumo di energia](../profiling/analyze-energy-use-in-store-apps.md)
+[Analizzare il consumo di energia](../profiling/analyze-energy-use-in-store-apps.md)
 
-   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
+[Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
-   [Come rispondere agli eventi di sistema con attività in background](/previous-versions/windows/apps/hh977058(v=win.10))
+[Come rispondere agli eventi di sistema con attività in background](/previous-versions/windows/apps/hh977058(v=win.10))
 
-   [Come attivare eventi di sospensione, ripresa e background nelle app UWP](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
+[Come attivare eventi di sospensione, ripresa e background nelle app UWP](how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)
 
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Spostarsi nel simulatore con la tastiera
- È possibile passare la barra degli strumenti simulatore premendo **CTRL + ALT + freccia** per spostare lo stato attivo dalla finestra del simulatore alla barra degli strumenti di simulatore. Utilizza **Freccia su** e **Freccia giù** per spostarti tra i pulsanti della barra degli strumenti.
+## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Spostarsi nel simulatore con la tastiera
 
- È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
+È possibile passare la barra degli strumenti simulatore premendo **CTRL + ALT + freccia** per spostare lo stato attivo dalla finestra del simulatore alla barra degli strumenti di simulatore. Utilizza **Freccia su** e **Freccia giù** per spostarti tra i pulsanti della barra degli strumenti.
+
+È possibile arrestare il simulatore premendo **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Eseguire app da Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)

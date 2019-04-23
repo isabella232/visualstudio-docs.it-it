@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082893"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
@@ -23,23 +23,23 @@ ms.locfileid: "58416110"
 
  Per altre informazioni sui diagrammi delle dipendenze, vedere:
 
--   [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
+- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
 
--   [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
 
--   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
+- [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
 
-##  <a name="prereqs"></a> Requisiti
+## <a name="prereqs"></a> Requisiti
 
 È necessario verificare che nel computer in cui si vogliono sviluppare le estensioni del livello sia installato quanto segue:
 
--   Visual Studio
+- Visual Studio
 
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)
 
--   Modeling SDK per Visual Studio
+- Modeling SDK per Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

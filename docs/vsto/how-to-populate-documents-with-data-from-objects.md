@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865788"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083030"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedura: Popolare documenti con dati da oggetti
 
@@ -28,11 +28,11 @@ L'accesso ai dati di un oggetto dati è uguale sia nei progetti a livello di doc
 
 Per popolare il documento con i dati di un oggetto, è necessario completare tre passaggi di base:
 
--   Aggiungere al documento un controllo che è possibile associare ai dati.
+- Aggiungere al documento un controllo che è possibile associare ai dati.
 
--   Aggiungere un oggetto dati al documento.
+- Aggiungere un oggetto dati al documento.
 
--   Connettere l'oggetto dati a BindingSource
+- Connettere l'oggetto dati a BindingSource
 
 ## <a name="to-add-a-data-object"></a>Per aggiungere un oggetto dati
 
@@ -48,23 +48,23 @@ Nei progetti di componente aggiuntivo VSTO è possibile creare controlli e assoc
 
 Per connettere l'oggetto dati a BindingSource:
 
-1.  Trascinare il campo dati desiderato dalla finestra **Origini dati** al documento in modo da creare automaticamente un controllo.
+1. Trascinare il campo dati desiderato dalla finestra **Origini dati** al documento in modo da creare automaticamente un controllo.
 
-2.  Nel codice creare un'istanza del tipo di oggetto selezionato per l'origine dati.
+2. Nel codice creare un'istanza del tipo di oggetto selezionato per l'origine dati.
 
-3.  Assegnare l'istanza alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> dell'oggetto <xref:System.Windows.Forms.BindingSource>.
+3. Assegnare l'istanza alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> dell'oggetto <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Progetti a livello di applicazione
 
 Per connettere l'oggetto dati a BindingSource:
 
-1.  Nel codice creare un'istanza del tipo di oggetto associato all'origine dati.
+1. Nel codice creare un'istanza del tipo di oggetto associato all'origine dati.
 
-2.  Creare un'istanza di un oggetto <xref:System.Windows.Forms.BindingSource>.
+2. Creare un'istanza di un oggetto <xref:System.Windows.Forms.BindingSource>.
 
-3.  Assegnare l'istanza dell'origine dati alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> dell'oggetto <xref:System.Windows.Forms.BindingSource>.
+3. Assegnare l'istanza dell'origine dati alla proprietà <xref:System.Windows.Forms.BindingSource.DataSource%2A> dell'oggetto <xref:System.Windows.Forms.BindingSource>.
 
-4.  Aggiungere l'origine dati come data binding al controllo.
+4. Aggiungere l'origine dati come data binding al controllo.
 
 ## <a name="see-also"></a>Vedere anche
 

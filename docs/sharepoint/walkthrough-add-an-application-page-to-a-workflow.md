@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 930252a509466fa65a7cbdf2eabac35cfeb25081
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083040"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procedura dettagliata: Aggiungere una pagina dell'applicazione a un flusso di lavoro
   Questa procedura dettagliata illustra come aggiungere una pagina dell'applicazione che consente di visualizzare i dati derivati da un flusso di lavoro a un progetto di flusso di lavoro. Essendo basato su progetto descritto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -38,22 +38,22 @@ ms.locfileid: "54865830"
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
 
--   Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
+- Edizioni supportate di [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   Inoltre necessario aver completato il progetto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
+- Inoltre necessario aver completato il progetto nell'argomento [procedura dettagliata: Creare un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
 ## <a name="ammend-the-workflow-code"></a>Ammend il codice del flusso di lavoro
  In primo luogo, aggiungere una riga di codice per il flusso di lavoro per impostare il valore della colonna risultato all'importo della nota spese. Questo valore viene usato in un secondo momento nel calcolo delle spese report riepilogo.
 
 #### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>Per impostare il valore della colonna risultato nel flusso di lavoro
 
-1.  Caricare il progetto completato dall'argomento [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Caricare il progetto completato dall'argomento [procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Aprire il codice per *Workflow1.cs* oppure *Workflow1.vb* (a seconda del linguaggio di programmazione).
+2. Aprire il codice per *Workflow1.cs* oppure *Workflow1.vb* (a seconda del linguaggio di programmazione).
 
-3.  In fondo il `createTask1_MethodInvoking` metodo, aggiungere il codice seguente:
+3. In fondo il `createTask1_MethodInvoking` metodo, aggiungere il codice seguente:
 
     ```vb
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =
@@ -70,11 +70,11 @@ ms.locfileid: "54865830"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>Per aggiungere una pagina dell'applicazione al progetto
 
-1.  Scegliere il progetto ExpenseReport e quindi nella barra dei menu scegliere **Project** > **Aggiungi nuovo elemento**.
+1. Scegliere il progetto ExpenseReport e quindi nella barra dei menu scegliere **Project** > **Aggiungi nuovo elemento**.
 
-2.  Nel **modelli** riquadro, scegliere il **pagina dell'applicazione** modello, usare il nome predefinito per l'elemento del progetto (**ApplicationPage1.aspx**) e scegliere il **Add** pulsante.
+2. Nel **modelli** riquadro, scegliere il **pagina dell'applicazione** modello, usare il nome predefinito per l'elemento del progetto (**ApplicationPage1.aspx**) e scegliere il **Add** pulsante.
 
-3.  Nel [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] di ApplicationPage1.aspx, sostituire il `PlaceHolderMain` sezione con il codice seguente:
+3. Nel [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] di ApplicationPage1.aspx, sostituire il `PlaceHolderMain` sezione con il codice seguente:
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">
@@ -88,7 +88,7 @@ ms.locfileid: "54865830"
 
      Questo codice aggiunge una tabella alla pagina con un titolo.
 
-4.  Aggiungere un titolo alla pagina dell'applicazione mediante la sostituzione di `PlaceHolderPageTitleInTitleArea` sezione con il codice seguente:
+4. Aggiungere un titolo alla pagina dell'applicazione mediante la sostituzione di `PlaceHolderPageTitleInTitleArea` sezione con il codice seguente:
 
     ```aspx-csharp
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >
@@ -101,9 +101,9 @@ ms.locfileid: "54865830"
 
 #### <a name="to-code-the-application-page"></a>Scrivere codice della pagina dell'applicazione
 
-1.  Scegliere il **ApplicationPage1.aspx** nodo, quindi nella barra dei menu, scegliere **View** > **codice** per visualizzare il code-behind della pagina dell'applicazione.
+1. Scegliere il **ApplicationPage1.aspx** nodo, quindi nella barra dei menu, scegliere **View** > **codice** per visualizzare il code-behind della pagina dell'applicazione.
 
-2.  Sostituire il **usando** oppure **importazione** istruzioni (a seconda del linguaggio di programmazione) nella parte superiore della classe con quanto segue:
+2. Sostituire il **usando** oppure **importazione** istruzioni (a seconda del linguaggio di programmazione) nella parte superiore della classe con quanto segue:
 
     ```vb
     Imports System
@@ -131,7 +131,7 @@ ms.locfileid: "54865830"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  Aggiungere al metodo `Page_Load` il codice seguente:
+3. Aggiungere al metodo `Page_Load` il codice seguente:
 
     ```vb
     Try
@@ -343,9 +343,9 @@ ms.locfileid: "54865830"
 
  È possibile altre informazioni su come progettare contenuto pagina di SharePoint tramite Visual Web Designer in Visual Studio vedere gli argomenti seguenti:
 
--   [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
+- [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
--   [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
+- [Creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).
 
 ## <a name="see-also"></a>Vedere anche
 
