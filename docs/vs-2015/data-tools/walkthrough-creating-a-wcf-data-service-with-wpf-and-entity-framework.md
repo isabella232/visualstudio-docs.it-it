@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107047"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
  In questa procedura dettagliata vengono illustrate le seguenti operazioni:  
   
--   Creare un'applicazione Web per ospitare un servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creare un'applicazione Web per ospitare un servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Creazione di un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] che rappresenta la tabella Customers nel database Northwind.  
+- Creazione di un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] che rappresenta la tabella Customers nel database Northwind.  
   
--   Creare un oggetto [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creare un oggetto [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creare un'applicazione client e aggiungere un riferimento al servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Abilitazione del data binding al servizio e generazione dell'interfaccia utente.  
+- Abilitazione del data binding al servizio e generazione dell'interfaccia utente.  
   
--   Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.  
+- Aggiunta facoltativa di funzionalità di filtraggio all'applicazione.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:  
   
--   Il database di esempio Northwind.  
+- Il database di esempio Northwind.  
   
      Se questo database non è presente nel computer di sviluppo, è possibile scaricarlo dall' [Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Per istruzioni, vedere [download dei database di esempio](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
 5. Nella pagina **Seleziona connessione dati** , eseguire una delle operazioni seguenti:  
   
-   -   Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.  
+   - Nell'elenco a discesa scegliere una connessione dati al database di esempio Northwind, se disponibile.  
   
         -oppure-  
   
-   -   Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).  
+   - Scegliere il pulsante **Nuova connessione** per configurare una nuova connessione dati. Per altre informazioni, vedere [aggiungere le nuove connessioni](../data-tools/add-new-connections.md).  
   
 6. Se il database richiede una password, scegliere il pulsante di opzione **Sì, includi i dati sensibili nella stringa di connessione**, quindi scegliere **Avanti**.  
   
@@ -236,11 +236,11 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
 #### <a name="to-add-filtering-by-city"></a>Per aggiungere il filtraggio in base alla città  
   
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Form1.vb** o **Form1.cs** e scegliere **Apri**.  
+1. In **Esplora soluzioni** aprire il menu di scelta rapida per il nodo **Form1.vb** o **Form1.cs** e scegliere **Apri**.  
   
-2.  Aggiungere al form un controllo <xref:System.Windows.Forms.TextBox> e un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti**.  
+2. Aggiungere al form un controllo <xref:System.Windows.Forms.TextBox> e un controllo <xref:System.Windows.Forms.Button> dalla **Casella degli strumenti**.  
   
-3.  Aprire il menu di scelta rapida per il <xref:System.Windows.Forms.Button> controllo e scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel `Button1_Click` gestore dell'evento:  
+3. Aprire il menu di scelta rapida per il <xref:System.Windows.Forms.Button> controllo e scegliere **Visualizza codice**, quindi aggiungere il codice seguente nel `Button1_Click` gestore dell'evento:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
     }  
     ```  
   
-4.  Nel codice precedente, sostituire `http://localhost:53161/NorthwindCustomers.svc` con l'URL del gestore eventi `Form1_Load`.  
+4. Nel codice precedente, sostituire `http://localhost:53161/NorthwindCustomers.svc` con l'URL del gestore eventi `Form1_Load`.  
   
-5.  Nella barra dei menu, scegliere **Debug**, **Avvia debug** per eseguire l'applicazione.  
+5. Nella barra dei menu, scegliere **Debug**, **Avvia debug** per eseguire l'applicazione.  
   
-6.  Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.  
+6. Nella casella di testo immettere **London**, quindi scegliere il pulsante. Verranno visualizzati solo i clienti di Londra.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Servizi Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

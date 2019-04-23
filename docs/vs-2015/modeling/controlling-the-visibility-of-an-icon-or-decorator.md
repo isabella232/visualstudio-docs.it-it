@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cbfffc3983c8270058591edcca6d6188c9791102
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107179"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
 1. Nel diagramma di definizione DSL, aggiungere alla classe di forma di icone o gli elementi Decorator di testo che si desidera visualizzare.  
   
-   1.  Fare doppio clic la classe di forma, scegliere **Add**e quindi scegliere il tipo obbligatorio dell'elemento decorator.  
+   1. Fare doppio clic la classe di forma, scegliere **Add**e quindi scegliere il tipo obbligatorio dell'elemento decorator.  
   
-   2.  Impostare l'elemento decorator **posizione** proprietà. Più di un elemento decorator può avere la stessa posizione. Ad esempio, si potrebbe avere icone Launcher per maschio e femmina nella stessa posizione di condivisione.  
+   2. Impostare l'elemento decorator **posizione** proprietà. Più di un elemento decorator può avere la stessa posizione. Ad esempio, si potrebbe avere icone Launcher per maschio e femmina nella stessa posizione di condivisione.  
   
-   3.  Impostare il **icona predefinita** proprietà di un elemento decorator di icona.  
+   3. Impostare il **icona predefinita** proprietà di un elemento decorator di icona.  
   
 2. Selezionare la mappa elementi diagramma, ovvero la linea grigia tra la classe di forma e la classe di dominio nel diagramma di definizione DSL.  
   
@@ -44,7 +44,7 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
     In caso contrario, fare clic sul menu a discesa e passare alla classe in cui si trova la proprietà o relazioni.  
   
-   -   Per evitare una segnalazione di errore, non devono passare tramite una relazione contrassegnata con "*" nello strumento di navigazione.  
+   - Per evitare una segnalazione di errore, non devono passare tramite una relazione contrassegnata con "*" nello strumento di navigazione.  
   
 6. Impostare il **proprietà Filter** a una proprietà di dominio. Ad esempio, il sesso.  
   
@@ -60,7 +60,7 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Controllare la visibilità di un elemento decorator in base a una formula  
   
-1.  Aggiungere una proprietà calcolata del dominio per la classe di dominio. Nel **proprietà** finestra, impostare i valori seguenti:  
+1. Aggiungere una proprietà calcolata del dominio per la classe di dominio. Nel **proprietà** finestra, impostare i valori seguenti:  
   
      **IsBrowsable =**`False`**-questo modo si nasconde la proprietà da parte dell'utente**  
   
@@ -72,27 +72,27 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
      Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).  
   
-2.  Verificare la nuova proprietà di controllare la visibilità dell'elemento decorator.  
+2. Verificare la nuova proprietà di controllare la visibilità dell'elemento decorator.  
   
-    1.  Selezionare la mappa elementi diagramma, ovvero la linea grigia dalla classe di dominio alla forma. Nel **dettagli DSL** finestra, aprire il **DecoratorMap** scheda.  
+    1. Selezionare la mappa elementi diagramma, ovvero la linea grigia dalla classe di dominio alla forma. Nel **dettagli DSL** finestra, aprire il **DecoratorMap** scheda.  
   
-    2.  Verificare i **filtro di visibilità** casella.  
+    2. Verificare i **filtro di visibilità** casella.  
   
-    3.  Nelle **proprietà Filter**, selezionare la proprietà del controllo **DecoratorControl**.  
+    3. Nelle **proprietà Filter**, selezionare la proprietà del controllo **DecoratorControl**.  
   
-    4.  Sotto **voci visibilità**, immettere `True`.  
+    4. Sotto **voci visibilità**, immettere `True`.  
   
-3.  Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
+3. Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni.  
   
-4.  Fare clic su **Compila soluzione** nel **compilazione** menu.  
+4. Fare clic su **Compila soluzione** nel **compilazione** menu.  
   
-5.  Fare doppio clic la segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".  
+5. Fare doppio clic la segnalazione di errori che è apparsa: "*ClasseUtente* non contiene una definizione per GetDecoratorControlValue...".  
   
      Consente di aprire l'editor di testo in dsl\generatedcode\domainclasses.cs. Il messaggio di errore evidenziato precedente è un commento che viene chiesto di aggiungere un metodo.  
   
-6.  Si noti lo spazio dei nomi, classe e sul metodo che non sono presenti.  Ad esempio, Company.FamilyTree.Person.GetDecoratorControlValue().  
+6. Si noti lo spazio dei nomi, classe e sul metodo che non sono presenti.  Ad esempio, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7.  In un file di codice separato, scrivere una definizione di classe parziale che contiene il metodo mancante. Ad esempio:  
+7. In un file di codice separato, scrivere una definizione di classe parziale che contiene il metodo mancante. Ad esempio:  
   
     ```  
     namespace Company.FamilyTree  
@@ -105,7 +105,7 @@ Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in un
   
      Per altre informazioni sulla personalizzazione del modello con il codice del programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-8.  Ricompilare ed eseguire la soluzione.  
+8. Ricompilare ed eseguire la soluzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Definizione di forme e connettori](../modeling/defining-shapes-and-connectors.md)   

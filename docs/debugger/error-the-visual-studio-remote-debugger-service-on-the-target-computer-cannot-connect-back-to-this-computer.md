@@ -1,5 +1,5 @@
 ---
-title: 'Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer'
+title: 'Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 823e4517deda68fc807c83373d26fc38740383c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713880"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107158"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
 Il messaggio di errore viene visualizzato per segnalare che l'account utente utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio non è in grado di eseguire l'autenticazione per la connessione al computer dal quale viene eseguito il debug.
 
  Nella tabella riportata di seguito sono indicati gli account in grado di accedere al computer:
@@ -31,48 +31,48 @@ Il messaggio di errore viene visualizzato per segnalare che l'account utente uti
 |||||
 |-|-|-|-|
 ||Account LocalSystem|Account di dominio|Account locali con lo stesso nome utente e la stessa password in entrambi i computer|
-|Entrambi i computer nello stesso dominio|Sì|Yes|Sì|
-|Entrambi i computer in domini con trust bidirezionale|No|No|Sì|
-|Uno o entrambi i computer in un gruppo di lavoro|No|No|Sì|
-|Computer in domini diversi|No|No|Sì|
+|Entrambi i computer nello stesso dominio|Yes|Yes|Yes|
+|Entrambi i computer in domini con trust bidirezionale|No|No|Yes|
+|Uno o entrambi i computer in un gruppo di lavoro|No|No|Yes|
+|Computer in domini diversi|No|No|Yes|
 
  Inoltre:
 
--   L'account utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio deve essere un account amministrativo nel computer remoto in modo da poter eseguire il debug di qualsiasi processo.
+- L'account utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio deve essere un account amministrativo nel computer remoto in modo da poter eseguire il debug di qualsiasi processo.
 
--   È anche necessario assegnare a questo account il privilegio `Log on as a service` nel computer remoto che utilizza lo strumento di amministrazione **Criteri di sicurezza locali**.
+- È anche necessario assegnare a questo account il privilegio `Log on as a service` nel computer remoto che utilizza lo strumento di amministrazione **Criteri di sicurezza locali**.
 
--   Se si intende utilizzare un accesso al computer con account locale, è necessario eseguire il servizio Debugger remoto di Visual Studio con un account locale.
+- Se si intende utilizzare un accesso al computer con account locale, è necessario eseguire il servizio Debugger remoto di Visual Studio con un account locale.
 
 ### <a name="to-correct-this-error"></a>Per correggere l'errore
 
-1.  Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per altre informazioni, vedere [debug remoto](../debugger/remote-debugging.md).
+1. Assicurarsi che il servizio Debugger remoto di Visual Studio sia configurato in modo corretto nel computer remoto. Per altre informazioni, vedere [debug remoto](../debugger/remote-debugging.md).
 
-2.  Eseguire il servizio Debugger remoto utilizzando un account in grado di accedere al computer host del debugger, come indicato nella tabella precedente.
+2. Eseguire il servizio Debugger remoto utilizzando un account in grado di accedere al computer host del debugger, come indicato nella tabella precedente.
 
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Per aggiungere un privilegio "Accesso come servizio"
 
-1.  Nel menu **Start** scegliere **Pannello di controllo**.
+1. Nel menu **Start** scegliere **Pannello di controllo**.
 
-2.  Se necessario, nel Pannello di controllo scegliere **Passa alla visualizzazione classica**.
+2. Se necessario, nel Pannello di controllo scegliere **Passa alla visualizzazione classica**.
 
-3.  Fare doppio clic su **Strumenti di amministrazione**.
+3. Fare doppio clic su **Strumenti di amministrazione**.
 
-4.  Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.
+4. Nella finestra Strumenti di amministrazione fare doppio clic su **Criteri di sicurezza locali**.
 
-5.  Nella finestra **Impostazioni sicurezza locale** espandere la cartella **Criteri locali**.
+5. Nella finestra **Impostazioni sicurezza locale** espandere la cartella **Criteri locali**.
 
-6.  Scegliere **Assegnazione diritti utente**.
+6. Scegliere **Assegnazione diritti utente**.
 
-7.  Nella colonna **Criteri** fare doppio clic su **Accedi come servizio** per visualizzare le assegnazioni dei criteri di gruppo locali correnti nella finestra di dialogo **Accedi come servizio**.
+7. Nella colonna **Criteri** fare doppio clic su **Accedi come servizio** per visualizzare le assegnazioni dei criteri di gruppo locali correnti nella finestra di dialogo **Accedi come servizio**.
 
-8.  Per aggiungere nuovi utenti, fare clic sul pulsante **Aggiungi utente o gruppo**.
+8. Per aggiungere nuovi utenti, fare clic sul pulsante **Aggiungi utente o gruppo**.
 
 9. Al termine, scegliere **OK**.
 
 ### <a name="to-work-around-this-error"></a>Per risolvere il problema
 
--   Eseguire Remote Debugging Monitor come applicazione anziché come servizio.
+- Eseguire Remote Debugging Monitor come applicazione anziché come servizio.
 
 ## <a name="see-also"></a>Vedere anche
 - [Errori e risoluzione dei problemi relativi al debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)

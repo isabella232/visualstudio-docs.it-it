@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106455"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La proprietà &lt;nome della proprietà&gt; non può essere eliminato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ La proprietà \<nome proprietà > non può essere eliminato perché è impostato
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1.  In Progettazione relazionale oggetti selezionare la linea di ereditarietà che connette le classi di dati indicate nel messaggio di errore.  
+1. In Progettazione relazionale oggetti selezionare la linea di ereditarietà che connette le classi di dati indicate nel messaggio di errore.  
   
-2.  Impostare **Proprietà Discriminator** su una diversa proprietà.  
+2. Impostare **Proprietà Discriminator** su una diversa proprietà.  
   
-3.  Provare a eliminare nuovamente la proprietà.  
+3. Provare a eliminare nuovamente la proprietà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

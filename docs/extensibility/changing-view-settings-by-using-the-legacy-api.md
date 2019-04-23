@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697598"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106488"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Modificare le impostazioni di visualizzazione tramite l'API legacy
 Impostazioni per la funzionalità dell'editor principale, ad esempio a capo, margine di selezione e lo spazio virtuale, possono essere modificate dall'utente tramite il **opzioni** nella finestra di dialogo. Tuttavia, è anche possibile modificare queste impostazioni a livello di codice.
@@ -25,13 +25,13 @@ Impostazioni per la funzionalità dell'editor principale, ad esempio a capo, mar
 
  Di seguito è il processo tipico per la modifica delle impostazioni di visualizzazione per un'istanza dell'editor principale.
 
-1.  Chiamare `QueryInterface` di (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia.
+1. Chiamare `QueryInterface` di (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) per il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia.
 
-2.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo, specificando il valore GUID_EditPropCategory_View_MasterSettings per il `rguidCategory` parametro.
+2. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodo, specificando il valore GUID_EditPropCategory_View_MasterSettings per il `rguidCategory` parametro.
 
      Questa operazione restituisce un puntatore al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfaccia, che contiene il set di proprietà forzato per la visualizzazione. In modo permanente vengono forzate le impostazioni in questo gruppo. Se un'impostazione non è presente in questo gruppo, quindi seguirà le opzioni specificate nel **opzioni** nella finestra di dialogo o i comandi dell'utente.
 
-3.  Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metodo, specificando il valore di impostazioni appropriate nel `idprop` parametro.
+3. Chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> metodo, specificando il valore di impostazioni appropriate nel `idprop` parametro.
 
      Ad esempio, per forzare il ritorno a capo automatico, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> e specificare il valore, VSEDITPROPID_ViewLangOpt_WordWrap `vt` per il `idprop` parametro. In questa chiamata `vt` è una variante di tipo VT_BOOL e `vt.boolVal` è VARIANT_TRUE.
 

@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106456"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Procedura: Utilizzare la finestra Stack di chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ Tramite la finestra **Stack di chiamate** è possibile visualizzare le chiamate 
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Per visualizzare la finestra Stack di chiamate in modalità di interruzione o di esecuzione  
   
--   Nel **Debug** dal menu **Windows** e quindi fare clic su **Stack di chiamate**.  
+- Nel **Debug** dal menu **Windows** e quindi fare clic su **Stack di chiamate**.  
   
 ### <a name="to-change-the-optional-information-displayed"></a>Per scegliere quali informazioni opzionali visualizzare  
   
--   Fare doppio clic il **Stack di chiamate** finestra e impostare o deselezionare **mostrano \<**  _le informazioni che desidera_ **>**.  
+- Fare doppio clic il **Stack di chiamate** finestra e impostare o deselezionare **mostrano \<**  _le informazioni che desidera_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Per visualizzare i frame del codice non utente nella finestra Stack di chiamate  
   
--   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Mostra codice esterno**.  
+- Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Mostra codice esterno**.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>Per passare a un altro stack frame  
   
-1.  Nel **Stack di chiamate** finestra, fare doppio clic su frame con codice e i dati che si desidera visualizzare.  
+1. Nel **Stack di chiamate** finestra, fare doppio clic su frame con codice e i dati che si desidera visualizzare.  
   
-2.  Selezionare **Passa al frame**.  
+2. Selezionare **Passa al frame**.  
   
      Accanto al frame selezionato verrà visualizzata una freccia verde ricurva. Il puntatore di esecuzione rimarrà nel frame originale, sempre contrassegnato dalla freccia gialla. Se si sceglie **Esegui** o **Continua** dal menu **Debug**, l'esecuzione continuerà nel frame originale, non nel frame selezionato.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>Per visualizzare le chiamate da o verso altri thread  
   
--   Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Includi chiamate da e verso altri thread**.  
+- Fare clic con il pulsante destro del mouse sulla finestra **Stack di chiamate** e selezionare **Includi chiamate da e verso altri thread**.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>Per visualizzare il codice sorgente di una funzione dello stack di chiamate  
   
--   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si vuole esaminare il codice sorgente e selezionare **Vai a codice sorgente**.  
+- Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si vuole esaminare il codice sorgente e selezionare **Vai a codice sorgente**.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>Per rilevare visivamente lo stack di chiamate  
   
-1.  Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegli **Mostra Stack di chiamate nella mappa del codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)  
+1. Nella finestra **Stack di chiamate** aprire il menu di scelta rapida. Scegli **Mostra Stack di chiamate nella mappa del codice**. (Tastiera: **CTRL** + **MAIUSC** + **`**)  
   
      Visualizzare [mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Per visualizzare il codice disassembly di una funzione dello stack di chiamate  
   
--   Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.  
+- Nella finestra **Stack di chiamate** fare clic con il pulsante destro del mouse sulla funzione della quale si desidera esaminare il codice del disassembly e selezionare **Vai a disassembly**.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>Per eseguire una funzione specifica dalla finestra Stack di chiamate  
   
--  Nel **Stack di chiamate** finestra, selezionare la funzione, pulsante destro del mouse e scegliere **Esegui fino al cursore**.  
+- Nel **Stack di chiamate** finestra, selezionare la funzione, pulsante destro del mouse e scegliere **Esegui fino al cursore**.  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Per impostare un punto di interruzione in corrispondenza del punto di uscita di una chiamata di funzione  
   
--   Visualizzare [impostare un punto di interruzione in una funzione dello stack di chiamate](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
+- Visualizzare [impostare un punto di interruzione in una funzione dello stack di chiamate](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
   
 ### <a name="to-load-symbols-for-a-module"></a>Per caricare i simboli per un modulo  
   
--   Nel **Stack di chiamate** finestra, fare doppio clic il frame che mostra il modulo contenente i simboli che si desidera ricaricare e selezionare **Carica simboli**.  
+- Nel **Stack di chiamate** finestra, fare doppio clic il frame che mostra il modulo contenente i simboli che si desidera ricaricare e selezionare **Carica simboli**.  
   
 ## <a name="loading-symbols"></a>Caricamento dei simboli  
  Nella finestra **Stack di chiamate** è possibile caricare i simboli di debug per un codice che non ne dispone. Questi simboli possono essere simboli di sistema o .NET Framework scaricati dai server dei simboli pubblici Microsoft o simboli contenuti in un percorso nel computer del quale si esegue il debug.  
@@ -117,25 +117,25 @@ Tramite la finestra **Stack di chiamate** è possibile visualizzare le chiamate 
   
 #### <a name="to-load-symbols"></a>Per caricare i simboli  
   
-1.  Nel **Stack di chiamate** finestra, pulsante destro del mouse il frame per i simboli non caricati. Il frame verrà disattivato (rappresentato in grigio).  
+1. Nel **Stack di chiamate** finestra, pulsante destro del mouse il frame per i simboli non caricati. Il frame verrà disattivato (rappresentato in grigio).  
   
-2.  Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
+2. Puntare **Carica simboli da** e quindi fare clic su **server dei simboli Microsoft** oppure **percorso dei simboli**.  
   
 #### <a name="to-set-the-symbol-path"></a>Per impostare il percorso dei simboli  
   
-1.  Nella finestra **Stack di chiamate** scegliere **Impostazioni simboli** nel menu di scelta rapida.  
+1. Nella finestra **Stack di chiamate** scegliere **Impostazioni simboli** nel menu di scelta rapida.  
   
      Viene visualizzata la finestra di dialogo **Opzioni** con la pagina **Simboli**.  
   
-2.  Fare clic su **delle impostazioni dei simboli**.  
+2. Fare clic su **delle impostazioni dei simboli**.  
   
-3.  Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.  
+3. Nella finestra di dialogo **Opzioni** fare clic sull'icona della cartella.  
   
      Viene visualizzato un cursore nella casella **Percorsi dei file di simboli (pdb)**.  
   
-4.  Digitare il percorso di directory del simbolo sul computer del quale si esegue il debug. Per il debug locale, è il computer locale. Per il debug remoto, è il computer remoto.  
+4. Digitare il percorso di directory del simbolo sul computer del quale si esegue il debug. Per il debug locale, è il computer locale. Per il debug remoto, è il computer remoto.  
   
-5.  Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
+5. Fare clic su **OK** per chiudere la finestra di dialogo **Opzioni**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Codice misto e informazioni mancanti nella finestra Stack di chiamate](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   

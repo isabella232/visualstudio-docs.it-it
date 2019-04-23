@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c10dd5661cafd5deeef66d8a65b0ddb61738125
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105728"
 ---
 # <a name="intellitrace-features"></a>Funzionalità di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,12 +43,12 @@ ms.locfileid: "58968560"
 > [!NOTE]
 >  L'ambito di tutte le impostazioni nella pagina delle opzioni di **IntelliTrace** è Visual Studio nel suo insieme, non i singoli progetti o le singole soluzioni. Una modifica di queste impostazioni si applica a tutte le istanze di Visual Studio, le sessioni di debug tutti e tutti i progetti o soluzioni.  
   
-##  <a name="ChooseEvents"></a> Scegliere gli eventi registrati da IntelliTrace  
+## <a name="ChooseEvents"></a> Scegliere gli eventi registrati da IntelliTrace  
  È possibile attivare o disattivare la registrazione di eventi di IntelliTrace specifici.  
   
  Se il debug è in corso, interromperlo. Passare a **Strumenti / opzioni / IntelliTrace / eventi di IntelliTrace**. Scegliere gli eventi di IntelliTrace per registrare.  
   
-##  <a name="GoingFurther"></a> Raccogli eventi di IntelliTrace e informazioni di chiamata  
+## <a name="GoingFurther"></a> Raccogli eventi di IntelliTrace e informazioni di chiamata  
  Questo non è abilitato per impostazione predefinita, ma IntelliTrace è in grado di registrare le chiamate di metodo insieme agli eventi. Per abilitare la raccolta di chiamate passano al metodo **Strumenti / opzioni / IntelliTrace / generale**e selezionare **eventi IntelliTrace e informazioni sulle chiamate**.  
   
  In tal modo è possibile visualizzare la cronologia dello stack di chiamate e scorrere in avanti e indietro le chiamate nel codice. IntelliTrace registra i dati, ad esempio nomi delle funzioni, punti di ingresso e uscita delle funzioni e alcuni valori di parametri e valori restituiti.  
@@ -75,14 +75,14 @@ ms.locfileid: "58968560"
 ### <a name="search-for-a-line-or-method-in-intellitrace"></a>Cerca una riga o metodo in IntelliTrace  
  È possibile cercare i metodi solo quando è state abilitate informazioni sulla chiamata di metodo. È possibile cercare la cronologia di IntelliTrace per un metodo o una riga specifica. Durante l'esecuzione del debugger viene interrotto, fare clic con il pulsante destro del mouse all'interno del corpo della funzione per visualizzare il menu di scelta rapida e fare clic su **Cerca questa riga in IntelliTrace** o **Cerca questo metodo in IntelliTrace**.  
   
-###  <a name="ControlCallData"></a> Controllare quante informazioni di chiamata vengono registrate da IntelliTrace  
+### <a name="ControlCallData"></a> Controllare quante informazioni di chiamata vengono registrate da IntelliTrace  
  Per impostazione predefinita IntelliTrace registra le informazioni per tutti i moduli utilizzati nella soluzione. È possibile disporre delle registrazioni delle informazioni sulle chiamate di IntelliTrace solo per i moduli di interesse. Nelle **Strumenti / opzioni / IntelliTrace / moduli**, è possibile specificare i moduli da includere o moduli per escludere da IntelliTrace. IntelliTrace verrà raccolti solo gli eventi originati da moduli che è stato specificato e le chiamate al metodo che si sono verificati all'interno di moduli che si è interessati.  
   
  Per aggiungere più moduli, utilizzare il carattere jolly * all'inizio o alla fine della stringa. Per i nomi dei moduli, utilizzare nomi di file e non nomi di assembly. I percorsi file non sono accettati.  
   
  Provare a ridurre al minimo il numero di moduli. È possibile ottenere prestazioni migliori perché non ci sono meno dati da raccogliere. Si ottiene anche meno rumore nell'interfaccia utente perché non ci sono meno dati passino attraverso.  
   
-##  <a name="SaveSession"></a> Salvataggio dei dati IntelliTrace per file  
+## <a name="SaveSession"></a> Salvataggio dei dati IntelliTrace per file  
  È possibile salvare i dati raccolti da IntelliTrace dovrà **Debug / IntelliTrace / Salva sessione di IntelliTrace** mentre si esegue il debug e l'applicazione è in stato di interruzione. La voce di menu è disabilitata e non sarà in grado di salvare i dati che raccolti da IntelliTrace se l'applicazione è ancora in esecuzione o se si interrompe il debug.  
   
  È possibile configurare IntelliTrace per salvare automaticamente in un file visitando **Strumenti / opzioni / IntelliTrace / avanzate** e selezionando **le registrazioni IntelliTrace di Store in questa directory**. È inoltre possibile configurare una dimensione fissa per il file generato, provocando IntelliTrace per sovrascrivere i dati meno recenti quando si esaurisce lo spazio. Visual Studio crea due file per ogni sessione di IntelliTrace quando vengono salvati automaticamente e il processo di hosting di Visual Studio (vshost.exe) è attivato.  

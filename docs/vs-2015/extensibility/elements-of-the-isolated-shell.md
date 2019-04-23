@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968398"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106605"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementi della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "58968398"
   
  Quando viene eseguita l'applicazione, le impostazioni del Registro di sistema sono definite nella sequenza seguente:  
   
-1.  La chiave del Registro di sistema per l'applicazione viene creata.  
+1. La chiave del Registro di sistema per l'applicazione viene creata.  
   
-2.  Il Registro di sistema viene aggiornato dal file con estensione pkgdef dell'applicazione mediante la definizione di voci e chiavi specificate.  
+2. Il Registro di sistema viene aggiornato dal file con estensione pkgdef dell'applicazione mediante la definizione di voci e chiavi specificate.  
   
-3.  Per ogni pacchetto che fa parte dell'applicazione, il Registro di sistema viene aggiornato dal file con estensione pkgdef dello stesso pacchetto. Ogni pacchetto è definito nel file con estensione pkgdef dell'applicazione per il \Packages $ $RootKey\\{*vsPackageGuid*} chiave per il pacchetto.  
+3. Per ogni pacchetto che fa parte dell'applicazione, il Registro di sistema viene aggiornato dal file con estensione pkgdef dello stesso pacchetto. Ogni pacchetto è definito nel file con estensione pkgdef dell'applicazione per il \Packages $ $RootKey\\{*vsPackageGuid*} chiave per il pacchetto.  
   
-4.  Il Registro di sistema viene aggiornato dal AppEnvConfig.pkgdef e BaseConfig.pkgdef nel *percorso di installazione di Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform directory. Questi file sono parte di Visual Studio e far parte del pacchetto ridistribuibile Visual Studio Shell (modalità isolata).  
+4. Il Registro di sistema viene aggiornato dal AppEnvConfig.pkgdef e BaseConfig.pkgdef nel *percorso di installazione di Visual Studio SDK*\Common7\IDE\ShellExtensions\Platform directory. Questi file sono parte di Visual Studio e far parte del pacchetto ridistribuibile Visual Studio Shell (modalità isolata).  
   
-5.  Il Registro di sistema viene aggiornato dal file con estensione pkgundef dell'applicazione rimuovendo le voci e chiavi specificate.  
+5. Il Registro di sistema viene aggiornato dal file con estensione pkgundef dell'applicazione rimuovendo le voci e chiavi specificate.  
   
 ## <a name="run-time-settings"></a>Impostazioni di Run-Time  
  Quando un utente avvia l'applicazione shell isolata, chiama il punto di ingresso di avvio della shell di Visual Studio. Le impostazioni dell'applicazione sono definite all'avvio dell'applicazione, come indicato di seguito:  
