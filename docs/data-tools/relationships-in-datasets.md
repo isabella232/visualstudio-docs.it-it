@@ -15,30 +15,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 611accb591b63f31ffe6a14535d470f2807f0e99
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093793"
 ---
 # <a name="create-relationships-between-datasets"></a>Creare relazioni tra set di dati
 I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati con il **configurazione guidata origine dati**, o il **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto per l'utente.
 
 Il <xref:System.Data.DataRelation> oggetto esegue due funzioni:
 
--   Può rendere disponibili i record correlati a un record che si sta lavorando. Fornisce i record figlio in presenza di un record padre (<xref:System.Data.DataRow.GetChildRows%2A>) e un record padre se si lavora con un record figlio (<xref:System.Data.DataRow.GetParentRow%2A>).
+- Può rendere disponibili i record correlati a un record che si sta lavorando. Fornisce i record figlio in presenza di un record padre (<xref:System.Data.DataRow.GetChildRows%2A>) e un record padre se si lavora con un record figlio (<xref:System.Data.DataRow.GetParentRow%2A>).
 
--   È possibile applicare vincoli per l'integrità referenziale, ad esempio l'eliminazione di record figlio correlati quando si elimina un record padre.
+- È possibile applicare vincoli per l'integrità referenziale, ad esempio l'eliminazione di record figlio correlati quando si elimina un record padre.
 
 È importante comprendere la differenza tra un join e la funzione di un <xref:System.Data.DataRelation> oggetto. In un join, i record vengono ricavati dalle tabelle padre e figlio e inserire in un unico set di record. Quando si usa un <xref:System.Data.DataRelation> dell'oggetto, non viene creato alcun nuovo set di record. Al contrario, la DataRelation rileva la relazione tra tabelle e mantiene sincronizzata record padre e figlio.
 
 ## <a name="datarelation-objects-and-constraints"></a>I vincoli e oggetti DataRelation
 Oggetto <xref:System.Data.DataRelation> oggetto viene usato anche per creare e imporre i vincoli seguenti:
 
--   Un vincolo univoco, che garantisce che una colonna nella tabella non contiene duplicati.
+- Un vincolo univoco, che garantisce che una colonna nella tabella non contiene duplicati.
 
--   Un vincolo foreign key, che può essere usato per mantenere l'integrità referenziale tra una tabella padre e figlio in un set di dati.
+- Un vincolo foreign key, che può essere usato per mantenere l'integrità referenziale tra una tabella padre e figlio in un set di dati.
 
 I vincoli specificati in un <xref:System.Data.DataRelation> oggetto vengono implementate automaticamente la creazione di oggetti appropriati o impostando proprietà. Se si crea un vincolo foreign key tramite il <xref:System.Data.DataRelation> (oggetto), le istanze del <xref:System.Data.ForeignKeyConstraint> classe vengono aggiunti per il <xref:System.Data.DataRelation> dell'oggetto <xref:System.Data.DataRelation.ChildKeyConstraint%2A> proprietà.
 
@@ -47,18 +47,18 @@ Viene implementato un vincolo unique impostando semplicemente il <xref:System.Da
 ### <a name="referential-integrity-rules"></a>Regole di integrità referenziale
 Come parte del vincolo di chiave esterna, è possibile specificare regole di integrità referenziale in tre punti:
 
--   Quando viene aggiornato un record padre
+- Quando viene aggiornato un record padre
 
--   Quando viene eliminato un record padre
+- Quando viene eliminato un record padre
 
--   Quando una modifica è accettata o rifiutata
+- Quando una modifica è accettata o rifiutata
 
 Le regole che è possibile apportare siano specificate nel <xref:System.Data.Rule> enumerazione ed elencate nella tabella seguente.
 
 |Regola del vincolo di chiave esterna|Operazione|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|È anche apportare la modifica (aggiornamento o eliminazione) apportata al record padre nei record correlati nella tabella figlio.|
-|<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nel record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", vale a dire, non dispongono di alcuna relazione con i record padre. **Nota:** utilizzando questa regola può comportare dati non validi nella tabella figlio.|
+|<xref:System.Data.Rule.SetNull>|I record figlio non vengono eliminati, ma la chiave esterna nel record figlio è impostata su <xref:System.DBNull>. Con questa impostazione, i record figlio possono essere lasciati come "orfani", vale a dire, non dispongono di alcuna relazione con i record padre. **Nota:** Con questa regola può comportare dati non validi nella tabella figlio.|
 |<xref:System.Data.Rule.SetDefault>|La chiave esterna nei record figlio correlati è impostata sul valore predefinito (come stabilito in base alla colonna <xref:System.Data.DataColumn.DefaultValue%2A> proprietà).|
 |<xref:System.Data.Rule.None>|Viene apportata alcuna modifica ai record figlio correlati. Con questa impostazione, i record figlio possono contenere riferimenti ai record padre non valido.|
 
@@ -76,33 +76,33 @@ Le relazioni tra tabelle di dati vengono visualizzati come righe nel **Progettaz
 
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Per creare una relazione tra due tabelle dati
 
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.
+2. Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.
 
      Il **relazione** verrà visualizzata la finestra di dialogo, popolamento il **tabella figlio** casella con la tabella che è stato trascinato il **relazione** dell'oggetto in.
 
-3.  Selezionare la tabella padre di **tabella padre** casella. La tabella padre contiene record sul lato "uno" di una relazione uno-a-molti.
+3. Selezionare la tabella padre di **tabella padre** casella. La tabella padre contiene record sul lato "uno" di una relazione uno-a-molti.
 
-4.  Verificare che la tabella figlio corretto sia visualizzata nei **tabella figlio** casella. La tabella figlio contiene i record sul lato "molti" di una relazione uno-a-molti.
+4. Verificare che la tabella figlio corretto sia visualizzata nei **tabella figlio** casella. La tabella figlio contiene i record sul lato "molti" di una relazione uno-a-molti.
 
-5.  Digitare un nome per la relazione nel **nome** casella o lasciare il nome predefinito basato sulle tabelle selezionate. Si tratta del nome dell'effettivo <xref:System.Data.DataRelation> oggetto nel codice.
+5. Digitare un nome per la relazione nel **nome** casella o lasciare il nome predefinito basato sulle tabelle selezionate. Si tratta del nome dell'effettivo <xref:System.Data.DataRelation> oggetto nel codice.
 
-6.  Selezionare le colonne che uniscono in join le tabelle nel **colonne chiave** e **colonne di chiavi esterne** Elenca.
+6. Selezionare le colonne che uniscono in join le tabelle nel **colonne chiave** e **colonne di chiavi esterne** Elenca.
 
-7.  Scegliere se creare una relazione, vincolo o entrambi.
+7. Scegliere se creare una relazione, vincolo o entrambi.
 
-8.  Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
-9. Impostare le regole da applicare quando si apportano modifiche ai record in queste tabelle. Per ulteriori informazioni, vedere <xref:System.Data.Rule>.
+9. Impostare le regole da applicare quando si apportano modifiche ai record in queste tabelle. Per altre informazioni, vedere <xref:System.Data.Rule>.
 
 10. Fare clic su **OK** per creare la relazione. Verrà visualizzata una linea di relazione nella finestra di progettazione tra le due tabelle.
 
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Per visualizzare un nome della relazione nella finestra di progettazione set di dati
 
-1.  Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [procedura dettagliata: creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura dettagliata: Creazione di un set di dati in Progettazione Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
-2.  Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.
+2. Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.
 
 ## <a name="see-also"></a>Vedere anche
 

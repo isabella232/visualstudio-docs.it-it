@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093124"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Finestra di dialogo Editor raccolta di tipi
 
@@ -31,16 +31,16 @@ La tabella seguente descrive gli elementi dell'interfaccia utente di **raccolta 
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Per visualizzare Editor raccolta di tipi per le attività Send e Receive
 
-1.  Selezionare il **inviare** oppure **ricezione** attività nella visualizzazione progettazione.
+1. Selezionare il **inviare** oppure **ricezione** attività nella visualizzazione progettazione.
 
-2.  Premere **F4** per visualizzare i **proprietà** finestra.
+2. Premere **F4** per visualizzare i **proprietà** finestra.
 
-3.  Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **KnownTypes** proprietà.
+3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **KnownTypes** proprietà.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Per visualizzare Editor raccolta di tipi per l'attività InvokeMethod
 
-1.  Selezionare il **InvokeMethod** attività nella visualizzazione progettazione.
+1. Selezionare il **InvokeMethod** attività nella visualizzazione progettazione.
 
-2.  Premere **F4** per visualizzare i **proprietà** finestra.
+2. Premere **F4** per visualizzare i **proprietà** finestra.
 
-3.  Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **GenericTypeArguments** proprietà.
+3. Nel **delle proprietà** finestra, fare clic sul pulsante dei puntini di sospensione accanto alle **GenericTypeArguments** proprietà.

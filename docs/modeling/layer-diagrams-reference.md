@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093488"
 ---
 # <a name="dependency-diagrams-reference"></a>I diagrammi delle dipendenze: riferimenti
 
@@ -40,13 +40,13 @@ Per informazioni su quali edizioni di Visual Studio supportano questa funzionali
 
 Usare un diagramma delle dipendenze per eseguire le attività seguenti:
 
--   Comunicare l'architettura logica esistente o desiderata del sistema.
+- Comunicare l'architettura logica esistente o desiderata del sistema.
 
--   Individuare i conflitti tra il codice esistente e l'architettura desiderata.
+- Individuare i conflitti tra il codice esistente e l'architettura desiderata.
 
--   Visualizzare l'impatto delle modifiche nell'architettura desiderata in caso di refactoring, aggiornamento o evoluzione del sistema.
+- Visualizzare l'impatto delle modifiche nell'architettura desiderata in caso di refactoring, aggiornamento o evoluzione del sistema.
 
--   Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.
+- Rafforzare l'architettura desiderata durante lo sviluppo e la manutenzione del codice includendo la convalida con le operazioni di archiviazione e compilazione.
 
 In questo argomento vengono descritti gli elementi che è possibile usare in un diagramma di dipendenza. Per altre informazioni su come creare e disegnare i diagrammi delle dipendenze, vedere [diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md). Per altre informazioni sui modelli di livello, visitare il [sito Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -68,17 +68,17 @@ Nella tabella seguente vengono descritti gli elementi che è possibile usare in 
 
 È possibile collegare ogni livello a elementi nella soluzione, come progetti, classi, spazi dei nomi, file di progetto e altre parti del software. Il numero specificato su un livello indica il numero di elementi a esso collegati. Tuttavia, nell'interpretare il numero di elementi in un livello, ricordare quanto segue:
 
--   Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.
+- Se un livello è collegato a un elemento contenente altri elementi, ma non è collegato direttamente ad altri elementi, il numero include solo l'elemento collegato. Tuttavia, gli altri elementi vengono inclusi per l'analisi durante la convalida dei livelli.
 
      Ad esempio, se un livello è collegato a un solo spazio dei nomi, il numero degli elementi collegati sarà 1, anche se lo spazio dei nomi contiene classi. Se il livello è collegato anche a ciascuna classe dello spazio dei nomi, il numero includerà le classi collegate.
 
--   Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.
+- Se un livello contiene altri livelli collegati a elementi, anche il livello contenitore sarà collegato a tali elementi nonostante il numero raffigurato sul livello contenitore non includa quegli elementi.
 
 Per altre informazioni sul collegamento di livelli ed elementi, vedere:
 
--   [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
 
--   [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Esaminare gli elementi collegati
 

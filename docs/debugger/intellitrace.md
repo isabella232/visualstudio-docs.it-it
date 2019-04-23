@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098649"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ ms.locfileid: "59232697"
 > [!NOTE]
 > Se si desidera eseguire il debug di un processo già in esecuzione, è possibile raccogliere eventi di IntelliTrace solo (nessuna informazione di chiamata). È possibile collegare a un processo a 32 o 64 bit del computer locale. Non vengono raccolti gli eventi che si verificano prima di collegare al processo.
 
-##  <a name="IntelliTraceVSTraditional"></a> Perché eseguire il debug con IntelliTrace?
+## <a name="IntelliTraceVSTraditional"></a> Perché eseguire il debug con IntelliTrace?
 
 Il debug tradizionale o *attivo* mostra solo lo stato corrente dell'applicazione con dati limitati sugli eventi passati. È necessario dedurre tali eventi dallo stato corrente dell'applicazione oppure ricrearli rieseguendo l'applicazione.
 
@@ -97,7 +97,7 @@ Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica 
 
      Si tratta di un'opzione utile per diagnosticare problemi con le app in fase di distribuzione. Visualizzare [usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Quali dati raccoglie IntelliTrace?
+## <a name="WhatData"></a> Quali dati raccoglie IntelliTrace?
 
 **Raccogliere informazioni sugli eventi**
 

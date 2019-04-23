@@ -1,5 +1,5 @@
 ---
-title: "Procedura: includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: Includere un File di dati in un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093878"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: Includere un file di dati in un'applicazione ClickOnce
 Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installata è assegnata una directory di dati sul disco locale del computer di destinazione in cui l'applicazione può gestire i propri dati. File di dati possono includere file di qualsiasi tipo: file di testo, file XML o anche i database di Microsoft Access (*mdb*) file. Le procedure seguenti illustrano come aggiungere un file di dati di qualsiasi tipo nel [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.
@@ -60,25 +60,25 @@ Ogni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installat
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Per includere un file di dati usando MageUI.exe
 
-1.  Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.
+1. Aggiungere il file di dati alla directory dell'applicazione con il resto del file dell'applicazione.
 
-2.  In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.
+2. In genere, la directory dell'applicazione è una directory contrassegnata con la versione corrente di distribuzione, ad esempio, v1.0.0.0.
 
-3.  Nel **File** menu, fare clic su **aprire** per aprire il manifesto dell'applicazione.
+3. Nel **File** menu, fare clic su **aprire** per aprire il manifesto dell'applicazione.
 
-4.  Selezionare il **file** scheda.
+4. Selezionare il **file** scheda.
 
-5.  Nella casella di testo nella parte superiore della scheda, immettere la directory che contiene i file dell'applicazione e quindi fare clic su **Popola**.
+5. Nella casella di testo nella parte superiore della scheda, immettere la directory che contiene i file dell'applicazione e quindi fare clic su **Popola**.
 
      Il file di dati verrà visualizzato nella griglia.
 
-6.  Impostare il **tipo di File** valore del file di dati **dati**.
+6. Impostare il **tipo di File** valore del file di dati **dati**.
 
-7.  Salvare il manifesto dell'applicazione e quindi firmare nuovamente il file.
+7. Salvare il manifesto dell'applicazione e quindi firmare nuovamente il file.
 
      *MageUI.exe* chiederà di firmare nuovamente il file.
 
-8.  Firmare nuovamente il manifesto di distribuzione
+8. Firmare nuovamente il manifesto di distribuzione
 
      È necessario firmare nuovamente il manifesto di distribuzione perché il relativo hash del manifesto dell'applicazione è stata modificata.
 

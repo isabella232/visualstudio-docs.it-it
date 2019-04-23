@@ -9,12 +9,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2663049a818782e8af11f9c85454152e5e5d83db
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 51a7aed986eb031ab6493c9c38939d782d2864ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092877"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un dati di intervallo dettagliati del servizio e raccogliere Native tramite la riga di comando del Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati  
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.  
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
@@ -86,13 +86,13 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura  
 
-1.  Arrestare il servizio da Gestione controllo servizi.  
+1. Arrestare il servizio da Gestione controllo servizi.  
 
-2.  Arrestare il profiler. Tipo:  
+2. Arrestare il profiler. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.  
+3. Sostituire il modulo instrumentato con l'originale. Se necessario, riconfigurare il tipo di avvio del servizio.  
 
 ## <a name="see-also"></a>Vedere anche  
  [Profilatura di servizi](../profiling/command-line-profiling-of-services.md)   

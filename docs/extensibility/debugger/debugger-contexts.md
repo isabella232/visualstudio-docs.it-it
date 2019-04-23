@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098935"
 ---
 # <a name="debugger-contexts"></a>Contesti del debugger
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debug, il motore di debug (DE) opera contemporaneamente in diversi contesti di distinti, come indicato di seguito:
 
--   Contesto del codice, che descrive la posizione corrente nel flusso di esecuzione del programma.
+- Contesto del codice, che descrive la posizione corrente nel flusso di esecuzione del programma.
 
--   Il contesto di documentazione o la posizione, che descrive la posizione corrente all'interno di un documento di origine.
+- Il contesto di documentazione o la posizione, che descrive la posizione corrente all'interno di un documento di origine.
 
--   Il contesto di valutazione espressione, che descrive il contesto nel quale espressione valutazione verrà eseguita.
+- Il contesto di valutazione espressione, che descrive il contesto nel quale espressione valutazione verrà eseguita.
 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Contesto codice](../../extensibility/debugger/code-context.md) contesto del codice esamina come un indirizzo nel flusso di istruzioni del programma in fase di esecuzione le architetture oggi e lingue non convenzionale, dove codice non può essere rappresentato da istruzioni, ma altri mezzi.

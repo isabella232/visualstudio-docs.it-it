@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093462"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: Creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild
   È possibile compilare, pulire e convalidare un pacchetto di SharePoint (*wsp*) usando le attività della riga di comando di MSBuild in un computer di sviluppo. È anche possibile usare questi comandi per automatizzare il processo di compilazione mediante Team Foundation Server in un computer di compilazione.
@@ -26,11 +26,11 @@ ms.locfileid: "56624399"
 
 #### <a name="to-build-a-sharepoint-package"></a>Per compilare un pacchetto di SharePoint
 
-1.  Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi** > **Accessori** > **prompt dei comandi**.
+1. Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi** > **Accessori** > **prompt dei comandi**.
 
-2.  Passare alla directory in cui si trova il progetto SharePoint.
+2. Passare alla directory in cui si trova il progetto SharePoint.
 
-3.  Immettere il comando seguente per creare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
+3. Immettere il comando seguente per creare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624399"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Per eliminare un pacchetto di SharePoint
 
-1.  Aprire una finestra del prompt dei comandi.
+1. Aprire una finestra del prompt dei comandi.
 
-2.  Passare alla directory in cui si trova il progetto SharePoint.
+2. Passare alla directory in cui si trova il progetto SharePoint.
 
-3.  Immettere il comando seguente per eliminare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
+3. Immettere il comando seguente per eliminare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624399"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Per convalidare un pacchetto di SharePoint
 
-1.  Aprire una finestra del prompt dei comandi.
+1. Aprire una finestra del prompt dei comandi.
 
-2.  Passare alla directory in cui si trova il progetto SharePoint.
+2. Passare alla directory in cui si trova il progetto SharePoint.
 
-3.  Immettere il comando seguente per convalidare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
+3. Immettere il comando seguente per convalidare un pacchetto per il progetto. Sostituire *ProjectFileName* con il nome del progetto.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624399"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Per impostare una proprietà in un pacchetto di SharePoint
 
-1.  Aprire una finestra del prompt dei comandi.
+1. Aprire una finestra del prompt dei comandi.
 
-2.  Passare alla directory in cui si trova il progetto SharePoint.
+2. Passare alla directory in cui si trova il progetto SharePoint.
 
-3.  Immettere il comando seguente per impostare una proprietà in un pacchetto per il progetto. Sostituire *PropertyName* con la proprietà che si desidera impostare.
+3. Immettere il comando seguente per impostare una proprietà in un pacchetto per il progetto. Sostituire *PropertyName* con la proprietà che si desidera impostare.
 
     ```cmd
     msbuild /property:PropertyName=Value

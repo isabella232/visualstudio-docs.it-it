@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098584"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Reimpostare, nominare e passare da un layout di finestra all'altro
  È possibile ripristinare il layout di finestra originale dell'IDE per la raccolta delle impostazioni utilizzando il comando **Reimposta layout finestra** . Quando si esegue questo comando, si verificano le seguenti azioni:
 
--   Tutte le finestre vengono spostate nelle rispettive posizioni predefinite.
+- Tutte le finestre vengono spostate nelle rispettive posizioni predefinite.
 
--   Le finestre chiuse nel layout di finestra predefinito vengono chiuse.
+- Le finestre chiuse nel layout di finestra predefinito vengono chiuse.
 
--   Le finestre aperte nel layout di finestra predefinito vengono aperte.
+- Le finestre aperte nel layout di finestra predefinito vengono aperte.
 
 ### <a name="create-and-save-custom-layouts"></a>Creare e salvare layout personalizzati
  Visual Studio 2015 consente di salvare fino a dieci layout di finestra personalizzati e spostarsi rapidamente da un layout all'altro. La seguente procedura illustra come creare, salvare, richiamare e gestire layout personalizzati con cui vengono usati più monitor grazie a finestre degli strumenti ancorate e mobili.
@@ -133,29 +133,29 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Creare un progetto per interfaccia utente e personalizzare il layout
 
-1.  Nella finestra di dialogo **Nuovo progetto** crear un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
+1. Nella finestra di dialogo **Nuovo progetto** crear un'applicazione desktop WPF di Visual C# e assegnarle il nome desiderato. Si supponga che questo sia il progetto in cui si lavorerà sull'interfaccia utente e che quindi si voglia dare più spazio alla finestra di progettazione spostando quindi le altre finestre degli strumenti.
 
-2.  Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
+2. Se sono disponibili più monitor, spostare le finestre **Esplora soluzioni** e **Proprietà** sul secondo monitor. In un sistema con un solo monitor provare a chiudere tutte le finestre eccetto quella di progettazione.
 
-3.  Premere **CTRL+ALT+X** per visualizzare la Casella degli strumenti. Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla sull'uno o sull'altro monitor.
+3. Premere **CTRL+ALT+X** per visualizzare la Casella degli strumenti. Se la finestra è ancorata, trascinarla in modo da spostarla nel punto in cui si vuole posizionarla sull'uno o sull'altro monitor.
 
-4.  Premere F5 per attivare la modalità di debug in Visual Studio. Regolare la posizione delle finestre di debug Auto, Stack di chiamate e Output nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
+4. Premere F5 per attivare la modalità di debug in Visual Studio. Regolare la posizione delle finestre di debug Auto, Stack di chiamate e Output nel modo desiderato. Il layout che si sta per creare verrà applicato sia alla modalità di modifica che a quella di debug.
 
-5.  Quando i layout in modalità di modifica o di debug sono quelli voluti, dal menu principale scegliere **Finestra >Salva layout finestra**. Assegnare a questo layout il nome “Finestra di progettazione”.
+5. Quando i layout in modalità di modifica o di debug sono quelli voluti, dal menu principale scegliere **Finestra >Salva layout finestra**. Assegnare a questo layout il nome “Finestra di progettazione”.
 
      Notare che al nuovo layout viene assegnato il tasto di scelta rapida successivo dell'elenco riservato CTRL+ALT+1...0.
 
 ##### <a name="create-a-database-project-and-layout"></a>Creare un layout e un progetto di database
 
-1.  Aggiungere un nuovo progetto **Database SQL Server** alla soluzione.
+1. Aggiungere un nuovo progetto **Database SQL Server** alla soluzione.
 
-2.  In Esplora soluzioni fare clic con il pulsante destro del mouse sul nuovo progetto e scegliere **Visualizza in Esplora oggetti**. Verrà visualizzata la finestra **Esplora oggetti di SQL Server** che consente di accedere a tabelle, viste e altri oggetti nel database. È possibile impostare la finestra come mobile o lasciarla ancorata. Regolare le altre finestre degli strumenti nel modo desiderato. Per maggior realismo è possibile aggiungere un database effettivo, ma questa operazione non è necessaria ai fini di questa procedura dettagliata.
+2. In Esplora soluzioni fare clic con il pulsante destro del mouse sul nuovo progetto e scegliere **Visualizza in Esplora oggetti**. Verrà visualizzata la finestra **Esplora oggetti di SQL Server** che consente di accedere a tabelle, viste e altri oggetti nel database. È possibile impostare la finestra come mobile o lasciarla ancorata. Regolare le altre finestre degli strumenti nel modo desiderato. Per maggior realismo è possibile aggiungere un database effettivo, ma questa operazione non è necessaria ai fini di questa procedura dettagliata.
 
-3.  Quando il layout è quello voluto, dal menu principale scegliere **Finestra > Salva layout finestra**. Assegnare a questo layout il nome “Progetto di database”. Non è necessario creare per questo progetto anche un layout per la modalità di debug.
+3. Quando il layout è quello voluto, dal menu principale scegliere **Finestra > Salva layout finestra**. Assegnare a questo layout il nome “Progetto di database”. Non è necessario creare per questo progetto anche un layout per la modalità di debug.
 
 ##### <a name="switch-between-the-layouts"></a>Passare da un layout a un altro
 
-1.  Per passare da un layout a un altro, usare le abbreviazioni da tastiera oppure dal menu principale scegliere **Finestra > Applica layout finestra**.
+1. Per passare da un layout a un altro, usare le abbreviazioni da tastiera oppure dal menu principale scegliere **Finestra > Applica layout finestra**.
 
      ![Menu applica layout finestra](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gestire o effettuare il roaming dei layout
 
-1.  Per rimuovere, rinominare o riordinare il layout personalizzato, scegliere **Finestra > Gestisci layout finestra**. Se si sposta un layout, l'associazione principale viene adattata automaticamente alla nuova posizione nell'elenco. Le associazioni non possono essere modificate diversamente, di conseguenza è possibile archiviare un massimo di 10 layout alla volta.
+1. Per rimuovere, rinominare o riordinare il layout personalizzato, scegliere **Finestra > Gestisci layout finestra**. Se si sposta un layout, l'associazione principale viene adattata automaticamente alla nuova posizione nell'elenco. Le associazioni non possono essere modificate diversamente, di conseguenza è possibile archiviare un massimo di 10 layout alla volta.
 
      ![Gestisci layout finestra](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

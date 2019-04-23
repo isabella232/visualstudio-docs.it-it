@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092565"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Procedura: Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello di integrazione applicativa dei dati (BDC) mediante la creazione di associazioni. Visual Studio genera i metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.
@@ -35,29 +35,29 @@ ms.locfileid: "56645121"
 
 ### <a name="to-create-an-association-between-entities"></a>Per creare un'associazione tra entità
 
-1.  Nel **BusinessDataConnectivity** scheda della finestra del **della casella degli strumenti**, scegliere il **associazione** elemento.
+1. Nel **BusinessDataConnectivity** scheda della finestra del **della casella degli strumenti**, scegliere il **associazione** elemento.
 
-2.  Nella finestra di progettazione dell'integrazione applicativa dei dati scegliere l'entità di origine, quindi l'entità di destinazione.
+2. Nella finestra di progettazione dell'integrazione applicativa dei dati scegliere l'entità di origine, quindi l'entità di destinazione.
 
      Il **Editor di associazione** viene visualizzata.
 
-3.  Se si desidera creare un'associazione basata su chiavi esterne, selezionare la **associazione chiave esterna** casella di controllo.
+3. Se si desidera creare un'associazione basata su chiavi esterne, selezionare la **associazione chiave esterna** casella di controllo.
 
-    1.  Nel **ID origine** della colonna della **Mapping identificatori** tabella, scegliere l'identificatore accanto a ogni descrittore di tipo corrispondente visualizzato nella **campo** colonna.
+    1. Nel **ID origine** della colonna della **Mapping identificatori** tabella, scegliere l'identificatore accanto a ogni descrittore di tipo corrispondente visualizzato nella **campo** colonna.
 
          Ad esempio, nel **ID di origine** colonna, selezionare `ContactID` accanto al `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descrittore di tipo e il `ReadItem.salesOrder.SalesOrder.ContactID` descrittore di tipo.
 
-4.  Se si desidera creare un'associazione senza chiave esterna, deselezionare il **associazione chiave esterna** casella di controllo.
+4. Se si desidera creare un'associazione senza chiave esterna, deselezionare il **associazione chiave esterna** casella di controllo.
 
-5.  Fare clic sul pulsante **OK** .
+5. Fare clic sul pulsante **OK** .
 
-6.  Nella finestra di progettazione integrazione applicativa dei dati, verrà visualizzata una linea che rappresenta l'associazione tra entità di origine e l'entità di destinazione.
+6. Nella finestra di progettazione integrazione applicativa dei dati, verrà visualizzata una linea che rappresenta l'associazione tra entità di origine e l'entità di destinazione.
 
      Visual Studio aggiunge un metodo AssociationNavigator alla classe del servizio dell'entità di destinazione e la classe di servizio dell'entità di origine. Per altre informazioni sui metodi AssociationNavigator, vedere [operazioni supportate](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  Nel metodo AssociationNavigator dell'entità di origine, aggiungere il codice che restituisce una raccolta di entità di destinazione.
+7. Nel metodo AssociationNavigator dell'entità di origine, aggiungere il codice che restituisce una raccolta di entità di destinazione.
 
-8.  Nel metodo AssociationNavigator dell'entità di destinazione, aggiungere il codice che restituisce l'entità di origine correlati.
+8. Nel metodo AssociationNavigator dell'entità di destinazione, aggiungere il codice che restituisce l'entità di origine correlati.
 
      Per esempi di metodi AssociationNavigator, vedere [creare un'associazione tra entità](../sharepoint/creating-an-association-between-entities.md).
 
