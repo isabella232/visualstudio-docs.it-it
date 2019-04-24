@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967811"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054939"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Consentire all'utente di trascinamento della selezione di elementi.**  
  Vedere [How to: Aggiungere un gestore di trascinamento e rilascio](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento  
+## <a name="customizeLinks"></a> Personalizzazione del comportamento di Copia collegamento  
  Quando l'utente copia un elemento, il comportamento standard prevede che gli eventuali elementi incorporati vengano anch'essi copiati. È possibile modificare il comportamento di copia standard. Nella definizione DSL, selezionare un ruolo a un lato della relazione e nella finestra Proprietà impostare il **propaga copia** valore.  
   
  ![Proprietà copia del ruolo del dominio propaga](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Definire due metodi nella classe ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` che determina se l'elemento di origine può essere trascinato nella forma, connettore o diagramma di destinazione.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` che determina se l'elemento di origine può essere trascinato nella forma, connettore o diagramma di destinazione.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` che combina l'elemento di origine nella destinazione.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` che combina l'elemento di origine nella destinazione.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` viene chiamato per stabilire il feedback da visualizzare per l'utente durante lo spostamento del mouse nel diagramma. I parametri per il metodo sono costituiti dall'elemento su cui sta passando il mouse e dai dati sull'origine da cui è stata eseguita l'operazione di trascinamento. L'utente può trascinare da qualsiasi punto dello schermo. L'oggetto di origine può quindi essere di diversi tipi e può essere serializzato in diversi formati. Se l'origine è un modello DSL o UML, il parametro dati è la serializzazione di un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Le operazioni di trascinamento, di copia e quelle eseguite mediante la casella degli strumenti usano ElementGroupPrototypes per rappresentare frammenti di modelli.  
