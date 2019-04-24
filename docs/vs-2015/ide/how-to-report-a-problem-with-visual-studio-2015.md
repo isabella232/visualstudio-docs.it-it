@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083649"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Come segnalare un problema con Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Fare clic sull'icona di feedback utente accanto ad **Avvio veloce** nella barra 
 
 ## <a name="describe-the-problem"></a>Descrivere il problema
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Inserire un titolo descrittivo per il problema in modo da consentirne l'invio al team di Visual Studio dedicato.
 
@@ -49,15 +49,15 @@ Scegliere **Includi uno screenshot** per inviare la schermata corrente a Microso
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fornire una traccia e un dump di heap (facoltativo)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  I file di traccia e di dump di heap sono utili per diagnosticare i problemi.   Siamo grati agli utenti che usano lo strumento Segnala un problema per registrare la procedura che consente di riprodurre il problema e inviare i dati a Microsoft.
+1. I file di traccia e di dump di heap sono utili per diagnosticare i problemi.   Siamo grati agli utenti che usano lo strumento Segnala un problema per registrare la procedura che consente di riprodurre il problema e inviare i dati a Microsoft.
 
-2.  Fare clic sulla freccia di espansione accanto a **Registrare le azioni per riprodurre il problema**. Se il problema causa il blocco o l'arresto anomalo di Visual Studio, aprire un'altra istanza di Visual Studio e selezionarla nella visualizzazione elenco.
+2. Fare clic sulla freccia di espansione accanto a **Registrare le azioni per riprodurre il problema**. Se il problema causa il blocco o l'arresto anomalo di Visual Studio, aprire un'altra istanza di Visual Studio e selezionarla nella visualizzazione elenco.
 
-3.  Fare clic su **Avvia registrazione** e completare i passaggi per riprodurre il problema. Al termine, fare clic sul pulsante **Arresta registrazione** nella finestra mobile.
+3. Fare clic su **Avvia registrazione** e completare i passaggi per riprodurre il problema. Al termine, fare clic sul pulsante **Arresta registrazione** nella finestra mobile.
 
-4.  Attendere alcuni minuti mentre Visual Studio raccoglie e comprime le informazioni registrate. Quando il processo di raccolta è completato, la finestra di dialogo avrà un aspetto simile al seguente:
+4. Attendere alcuni minuti mentre Visual Studio raccoglie e comprime le informazioni registrate. Quando il processo di raccolta è completato, la finestra di dialogo avrà un aspetto simile al seguente:
 
      ![Registrare un file di traccia](../ide/media/record-a-trace-file.png "Registrare un file di traccia")
 

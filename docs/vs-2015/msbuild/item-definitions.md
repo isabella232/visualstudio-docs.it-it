@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090759"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668494"
   
  L'elemento *ItemDefinitionGroup* viene visualizzato immediatamente dopo l'elemento [Project](../msbuild/project-element-msbuild.md) nel file di progetto. Le definizioni degli elementi offrono le funzionalità seguenti:  
   
--   È possibile definire metadati predefiniti globali per gli elementi all'esterno di una destinazione. In altri termini, gli stessi metadati si applicano a tutti gli elementi del tipo specificato.  
+- È possibile definire metadati predefiniti globali per gli elementi all'esterno di una destinazione. In altri termini, gli stessi metadati si applicano a tutti gli elementi del tipo specificato.  
   
--   I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)  
+- I tipi di elemento possono presentare più definizioni. Quando al tipo vengono aggiunte altre specifiche di metadati, l'ultima ha la precedenza. \(I metadati seguono lo stesso ordine di importazione delle proprietà.\)  
   
--   I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio `MT;STD_CALL;DEBUG;UNICODE`.  
+- I metadati possono essere additivi. Ad esempio, i valori CDefines vengono accumulati in modo condizionale, a seconda delle proprietà impostate. Ad esempio `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   I metadati possono essere rimossi.  
+- I metadati possono essere rimossi.  
   
--   È possibile usare condizioni per controllare l'inclusione di metadati.  
+- È possibile usare condizioni per controllare l'inclusione di metadati.  
   
 ## <a name="item-metadata-default-values"></a>Valori predefiniti dei metadati degli elementi  
  I metadati degli elementi definiti in un ItemDefinitionGroup sono solo una dichiarazione di metadati predefiniti. I metadati non vengono applicati a meno che non sia definito un elemento che usa un ItemGroup per contenere i valori dei metadati.  
@@ -66,21 +66,21 @@ ms.locfileid: "59668494"
 ## <a name="value-sources"></a>Origini dei valori  
  I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da molte origini diverse, come indicato di seguito:  
   
--   Proprietà PropertyGroup  
+- Proprietà PropertyGroup  
   
--   Elemento da un ItemDefinitionGroup  
+- Elemento da un ItemDefinitionGroup  
   
--   Trasformazione dell'elemento in un elemento ItemDefinitionGroup  
+- Trasformazione dell'elemento in un elemento ItemDefinitionGroup  
   
--   Variabile di ambiente  
+- Variabile di ambiente  
   
--   Proprietà globale \(dalla riga di comando di MSBuild.exe\)  
+- Proprietà globale \(dalla riga di comando di MSBuild.exe\)  
   
--   Proprietà riservata  
+- Proprietà riservata  
   
--   Metadati noti in un elemento di un ItemDefinitionGroup  
+- Metadati noti in un elemento di un ItemDefinitionGroup  
   
--   Sezione CDATA \<\!\[CDATA\[nessun dato analizzato\]\]\>  
+- Sezione CDATA \<\!\[CDATA\[nessun dato analizzato\]\]\>  
   
 > [!NOTE]
 >  I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.  
