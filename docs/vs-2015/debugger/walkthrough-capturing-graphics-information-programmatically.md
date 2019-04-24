@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093107"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
  L'acquisizione a livello di codice è utile in scenari quali ad esempio:  
   
--   Iniziare l'acquisizione a livello di codice quando l'app grafica non usa la presentazione della catena di scambio, ad esempio quando esegue il rendering su una trama.  
+- Iniziare l'acquisizione a livello di codice quando l'app grafica non usa la presentazione della catena di scambio, ad esempio quando esegue il rendering su una trama.  
   
--   Iniziare l'acquisizione a livello di codice quando l'app non esegue il rendering, ad esempio quando usa DirectCompute per eseguire calcoli.  
+- Iniziare l'acquisizione a livello di codice quando l'app non esegue il rendering, ad esempio quando usa DirectCompute per eseguire calcoli.  
   
--   Chiamare `CaptureCurrentFrame`quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.  
+- Chiamare `CaptureCurrentFrame`quando un problema di rendering è difficile da prevedere e acquisire nei test manuali, ma può essere previsto a livello di codice usando le informazioni sullo stato dell'app in fase di esecuzione.  
   
-##  <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 8.1  
+## <a name="CaptureDX11_2"></a> Acquisizione a livello di codice in Windows 8.1  
  Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice nelle app che usano l'API DirectX 11.2 su Windows 8.1, che usa il metodo di acquisizione affidabile. Per informazioni sull'acquisizione a livello di codice nelle app che usano versioni precedenti di DirectX in Windows 8.0, vedere [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) più avanti in questa procedura dettagliata.  
   
  Questa sezione illustra l'esecuzione delle attività seguenti:  
   
--   Preparazione dell'app per usare l'acquisizione a livello di codice  
+- Preparazione dell'app per usare l'acquisizione a livello di codice  
   
--   Ottenere l'interfaccia IDXGraphicsAnalysis  
+- Ottenere l'interfaccia IDXGraphicsAnalysis  
   
--   Acquisizione di informazioni grafiche  
+- Acquisizione di informazioni grafiche  
   
 > [!NOTE]
 >  Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per fornire funzionalità di acquisizione, Windows 8.1 supporta direttamente l'acquisizione mediante Direct3D 11.2. Di conseguenza, per l'acquisizione a livello di codice in Windows 8.1 non è più necessario installare Remote Tools.  
@@ -48,7 +48,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Per includere le intestazioni per l'acquisizione a livello di codice  
   
--   Includere le intestazioni nel file di origine in cui verrà definita l'interfaccia IDXGraphicsAnalysis:  
+- Includere le intestazioni nel file di origine in cui verrà definita l'interfaccia IDXGraphicsAnalysis:  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Per ottenere l'interfaccia IDXGraphicsAnalysis  
   
--   Usare il codice seguente per associare l'interfaccia IDXGraphicsAnalysis all'interfaccia di debug DXGI.  
+- Usare il codice seguente per associare l'interfaccia IDXGraphicsAnalysis all'interfaccia di debug DXGI.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ##### <a name="to-capture-graphics-information"></a>Per acquisire informazioni grafiche  
   
--   Per iniziare ad acquisire informazioni grafiche, usare `BeginCapture`:  
+- Per iniziare ad acquisire informazioni grafiche, usare `BeginCapture`:  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Questa parte della procedura dettagliata illustra l'acquisizione a livello di codice per Windows 8.0 e versioni precedenti che usano l'API DirectX 11.1, che usa il metodo di acquisizione legacy. Per informazioni sull'acquisizione a livello di codice nelle app che usano DirectX 11.2 in Windows 8.1, vedere [Acquisizione a livello di codice in Windows 8.1](#CaptureDX11_2) in precedenza in questa procedura dettagliata.  
   
  Questa sezione illustra le attività seguenti:  
   
--   Preparazione del computer per usare l'acquisizione a livello di codice  
+- Preparazione del computer per usare l'acquisizione a livello di codice  
   
--   Preparazione dell'app per usare l'acquisizione a livello di codice  
+- Preparazione dell'app per usare l'acquisizione a livello di codice  
   
--   Configurazione del nome e del percorso del file del log di grafica  
+- Configurazione del nome e del percorso del file del log di grafica  
   
--   Uso dell'API `CaptureCurrentFrame`  
+- Uso dell'API `CaptureCurrentFrame`  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Preparazione del computer per usare l'acquisizione a livello di codice  
  L'API di acquisizione a livello di codice usa Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per rendere disponibili funzionalità di acquisizione. Nel computer in cui verrà eseguita l'app devono essere installati gli strumenti remoti, anche se si usa l'acquisizione a livello di codice nel computer locale. Quando si usa l'acquisizione a livello di codice nel computer locale, non è necessario che[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sia in esecuzione.  
@@ -157,9 +157,9 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Per preparare l'app all'acquisizione di informazioni grafiche a livello di codice  
   
-1.  Assicurarsi che l'intestazione `vsgcapture.h` sia inclusa nel codice sorgente dell'app. Può essere inclusa in una sola posizione, ad esempio nel file di codice sorgente in cui si chiamerà l'API di acquisizione a livello di codice o in un file di intestazione precompilato per chiamare l'API da più file di codice sorgente.  
+1. Assicurarsi che l'intestazione `vsgcapture.h` sia inclusa nel codice sorgente dell'app. Può essere inclusa in una sola posizione, ad esempio nel file di codice sorgente in cui si chiamerà l'API di acquisizione a livello di codice o in un file di intestazione precompilato per chiamare l'API da più file di codice sorgente.  
   
-2.  Nel codice sorgente dell'app, ogni volta che si vuole acquisire il resto del frame corrente, chiamare `g_pVsgDbg->CaptureCurrentFrame()`. Questo metodo non accetta parametri e non restituisce un valore.  
+2. Nel codice sorgente dell'app, ogni volta che si vuole acquisire il resto del frame corrente, chiamare `g_pVsgDbg->CaptureCurrentFrame()`. Questo metodo non accetta parametri e non restituisce un valore.  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Configurazione del nome e del percorso del file del log di grafica  
  Il log di grafica viene creato nel percorso definito dalle macro `DONT_SAVE_VSGLOG_TO_TEMP` e `VSG_DEFAULT_RUN_FILENAME` .  
@@ -196,7 +196,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
 ## <a name="next-steps"></a>Passaggi successivi  
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche a livello di codice. Come passaggio successivo, prendere in considerare questa opzione:  
   
--   Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Acquisizione di informazioni grafiche](../debugger/walkthrough-capturing-graphics-information.md)   

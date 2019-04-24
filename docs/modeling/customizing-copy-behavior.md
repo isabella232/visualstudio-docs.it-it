@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109829"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio di specifico di dominio (DSL) creato con la visualizzazione e Visual Studio Modeling SDK, è possibile modificare cosa accade quando l'utente copia e Incolla gli elementi.
@@ -242,7 +242,7 @@ Vedere [How to: Aggiungere un gestore di trascinamento e rilascio](../modeling/h
 
 1. In un nuovo file del progetto DSL creare una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs**.
+2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs.**.
 
     Nella classe diagramma sovrascrivere <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> per restituire un'istanza della sottoclasse ElementOperations. È necessario restituire la stessa istanza ad ogni chiamata.
 
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Definire due metodi nella classe ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` che determina se l'elemento di origine può essere trascinato nella forma, connettore o diagramma di destinazione.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` che determina se l'elemento di origine può essere trascinato nella forma, connettore o diagramma di destinazione.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` che combina l'elemento di origine nella destinazione.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` che combina l'elemento di origine nella destinazione.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` viene chiamato per stabilire il feedback da visualizzare per l'utente durante lo spostamento del mouse nel diagramma. I parametri per il metodo sono costituiti dall'elemento su cui sta passando il mouse e dai dati sull'origine da cui è stata eseguita l'operazione di trascinamento. L'utente può trascinare da qualsiasi punto dello schermo. L'oggetto di origine può quindi essere di diversi tipi e può essere serializzato in diversi formati. Se l'origine è un modello DSL o UML, il parametro dati è la serializzazione di un oggetto <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Le operazioni di trascinamento, di copia e quelle eseguite mediante la casella degli strumenti usano ElementGroupPrototypes per rappresentare frammenti di modelli.
