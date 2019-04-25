@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044303"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,22 +68,22 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
--   Una copia autorizzata di Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
+- Una copia autorizzata di Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
   
--   Una copia di .NET Framework 4.5.1, scaricabile dal [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) sito Web.  
+- Una copia di .NET Framework 4.5.1, scaricabile dal sito Web di [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779).  
   
-##  <a name="InstallingSoftware"></a> Installazione del software nei computer  
+## <a name="InstallingSoftware"></a> Installazione del software nei computer  
  Innanzitutto, configurare il computer host e quindi configurare il computer di compilazione.  
   
  Installando Visual Studio nel computer host, vengono creati i file e le impostazioni che verranno successivamente copiate nel computer di compilazione. È possibile installare Visual Studio in un computer x86 o x64, ma l'architettura del computer di compilazione deve corrispondere a quella del computer host.  
   
 #### <a name="to-install-software-on-the-computers"></a>Per installare il software nei computer  
   
-1.  Nel computer host installare Visual Studio.  
+1. Nel computer host installare Visual Studio.  
   
-2.  Nel computer di compilazione installare .NET Framework 4.5. Per verificare la corretta installazione, assicurarsi che il valore della chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version inizi con "4.5".  
+2. Nel computer di compilazione installare .NET Framework 4.5. Per verificare la corretta installazione, assicurarsi che il valore della chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version inizi con "4.5".  
   
-##  <a name="CopyingFiles"></a> Copia dei file dal computer host nel computer di compilazione  
+## <a name="CopyingFiles"></a> Copia dei file dal computer host nel computer di compilazione  
  In questa sezione viene descritta la copia di file specifici, compilatori, strumenti di compilazione, risorse di MSBuild e impostazioni del Registro di sistema dal computer host nel computer di compilazione. Queste istruzioni presuppongono che sia stato installato Visual Studio nel percorso predefinito nel computer host. In caso contrario, modificare i passaggi di conseguenza.  
   
 - In un computer x86 il percorso predefinito è C:\Programmi\Microsoft Visual Studio 11.0\  
@@ -125,97 +125,97 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
 2. Copiare le seguenti cartelle in modo ricorsivo dal computer host nel computer di compilazione:  
   
-   -   %Programmi%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   - %Programmi%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-   -   %Programmi%\Common Files\Merge Modules\  
+   - %Programmi%\Common Files\Merge Modules\  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\VC\  
+   - %Programmi%\Microsoft Visual Studio 11.0\VC\  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-   -   %Programmi%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   - %Programmi%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-   -   %Programmi%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
+   - %Programmi%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-   -   %Programmi%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
+   - %Programmi%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
 3. Copiare questi file dal computer host nel computer di compilazione:  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
 4. Le librerie di runtime di Visual C++ seguenti sono necessarie solo se si eseguono output di compilazione nel computer di compilazione, ad esempio come parte di un test automatizzato. I file in genere si trovano in sottocartelle nel percorso %Programmi%\Microsoft Visual Studio 11.0\VC\redist\x86\ o %Programmi%\Microsoft Visual Studio 11.0\VC\redist\x64\, in base all'architettura di sistema. Nei sistemi x86 copiare i file binari x86 nella cartella \Windows\System32\. Nei sistemi x64 copiare i file binari x86 nella cartella Windows\SysWOW64\ e i file binari x64 nella cartella Windows\System32\.  
   
-   -   \Microsoft.VC110.ATL\atl110.dll  
+   - \Microsoft.VC110.ATL\atl110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcp110.dll  
+   - \Microsoft.VC110.CRT\msvcp110.dll  
   
-   -   \Microsoft.VC110.CRT\msvcr110.dll  
+   - \Microsoft.VC110.CRT\msvcr110.dll  
   
-   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   - \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110.dll  
+   - \Microsoft.VC110.MFC\mfc110.dll  
   
-   -   \Microsoft.VC110.MFC\mfc110u.dll  
+   - \Microsoft.VC110.MFC\mfc110u.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110.dll  
+   - \Microsoft.VC110.MFC\mfcm110.dll  
   
-   -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   - \Microsoft.VC110.MFC\mfcm110u.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   - \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
 5. Copiare solo i seguenti file dalla cartella \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ nel computer di compilazione, come descritto in [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Non deve essere copiato alcun altro file.  
   
-   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   - \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   - \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   - \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
-##  <a name="CreatingRegistry"></a> Creazione delle impostazioni del Registro di sistema  
+## <a name="CreatingRegistry"></a> Creazione delle impostazioni del Registro di sistema  
  È necessario creare voci nel Registro di sistema per configurare le impostazioni di MSBuild.  
   
 #### <a name="to-create-registry-settings"></a>Per creare impostazioni del Registro di sistema  
@@ -277,12 +277,12 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
-##  <a name="SettingEnvVariables"></a> Impostazione delle variabili di ambiente nel computer di compilazione  
+## <a name="SettingEnvVariables"></a> Impostazione delle variabili di ambiente nel computer di compilazione  
  Per usare MSBuild nel computer di compilazione, è necessario impostare le variabili di ambiente PATH. È possibile utilizzare vcvarsall.bat per impostare le variabili oppure configurarle manualmente.  
   
 #### <a name="to-use-vcvarsallbat-to-set-environment-variables"></a>Per utilizzare vcvarsall.bat per impostare le variabili di ambiente  
   
--   Aprire una finestra del prompt dei comandi nel computer di compilazione ed eseguire %Programmi%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.  
+- Aprire una finestra del prompt dei comandi nel computer di compilazione ed eseguire %Programmi%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat. È possibile utilizzare un argomento della riga di comando per specificare il set di strumenti che si desidera utilizzare, ad esempio x86, x64 nativo o compilatore incrociato x64. Se non si specifica un argomento della riga di comando, viene utilizzato il set di strumenti x86.  
   
      Nella tabella seguente vengono descritti gli argomenti supportati di vcvarsall.bat:  
   
@@ -298,7 +298,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
 1. Per configurare manualmente l'ambiente dalla riga di comando, aggiungere il seguente percorso alla variabile di ambiente PATH:  
   
-   -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE  
+   - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE  
   
 2. Facoltativamente, è possibile aggiungere i seguenti percorsi alla variabile di ambiente PATH per rendere più facile l'utilizzo di MSBuild per compilare le soluzioni.  
   
@@ -314,20 +314,20 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
    - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
-##  <a name="InstallingMSBuildToGAC"></a> Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione  
+## <a name="InstallingMSBuildToGAC"></a> Installazione degli assembly di MSBuild nella Global Assembly Cache (GAC) nel computer di compilazione  
  MSBuild richiede che siano installati assembly aggiuntivi nella GAC del computer di compilazione.  
   
 #### <a name="to-copy-assemblies-from-the-host-computer-and-install-them-on-the-build-computer"></a>Per copiare gli assembly dal computer host e installarli nel computer di compilazione  
   
-1.  Copiare gli assembly seguenti dal computer host nel computer di compilazione. Poiché saranno installati nella GAC, la posizione nel computer di compilazione in cui verranno copiati non è rilevante.  
+1. Copiare gli assembly seguenti dal computer host nel computer di compilazione. Poiché saranno installati nella GAC, la posizione nel computer di compilazione in cui verranno copiati non è rilevante.  
   
-    -   %Programmi%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
+    - %Programmi%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.Build.CPPTasks.Common.v110.dll  
   
-    -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
+    - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\CommonExtensions\Microsoft\VC\Project\Microsoft.VisualStudio.Project.VisualC.VCProjectEngine.dll  
   
-    -   %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
+    - %Programmi%\Microsoft Visual Studio 11.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.VCProjectEngine.dll  
   
-2.  Per installare assembly nella GAC, individuare gacutil.exe nel computer di compilazione. Tale file in genere si trova in %Programmi%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se questa cartella non viene trovata, ripetere i passaggi illustrati nella sezione [Copia dei file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) di questa procedura dettagliata.  
+2. Per installare assembly nella GAC, individuare gacutil.exe nel computer di compilazione. Tale file in genere si trova in %Programmi%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\\. Se questa cartella non viene trovata, ripetere i passaggi illustrati nella sezione [Copia dei file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) di questa procedura dettagliata.  
   
      Aprire una finestra del prompt dei comandi con diritti amministrativi ed eseguire questo comando per ogni file:  
   
@@ -336,7 +336,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
     > [!NOTE]
     >  Affinché un assembly venga installato completamente nella GAC, potrebbe essere necessario riavviare il computer.  
   
-##  <a name="BuildingProjects"></a> Compilazione di progetti  
+## <a name="BuildingProjects"></a> Compilazione di progetti  
  È possibile utilizzare Team Foundation Build per compilare progetti e soluzioni [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] oppure è possibile compilarli dalla riga di comando. Quando si utilizza Team Foundation Build per compilare i progetti, viene richiamato il file eseguibile di MSBuild che corrisponde all'architettura di sistema.  Nella riga di comando è possibile usare MSBuild a 32 bit oppure a 64 bit ed è possibile scegliere l'architettura di MSBuild impostando la variabile di ambiente PATH o richiamando direttamente il file eseguibile specifico per l'architettura di MSBuild.  
   
  Per usare msbuild.exe al prompt dei comandi, eseguire il comando seguente, dove *soluzione.sln* è un segnaposto per il nome della soluzione.  
@@ -350,7 +350,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
 >   
 >  **msbuild** *soluzione.sln* **/p:PlatformToolset=v110**  
   
-##  <a name="CreatingForSourceControl"></a> Creazione dell'ambiente di compilazione in modo che possa essere verificato nel controllo del codice sorgente  
+## <a name="CreatingForSourceControl"></a> Creazione dell'ambiente di compilazione in modo che possa essere verificato nel controllo del codice sorgente  
  È possibile creare un ambiente di compilazione che può essere assegnato a diversi computer e non richiede i file di GAC né di modificare le impostazioni del Registro di sistema. I seguenti passaggi sono solo uno dei modi per eseguire questa operazione. Questi passaggi devono essere adattati alle caratteristiche univoche del proprio ambiente di compilazione.  
   
 > [!NOTE]
@@ -360,15 +360,15 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Per creare un ambiente di compilazione che può essere verificato nel controllo del codice sorgente  
   
-1.  Creare una directory Depot sul computer host.  
+1. Creare una directory Depot sul computer host.  
   
      Questi passaggi si riferiscono alla directory come %Depot%.  
   
-2.  Copiare le directory e i file come descritto nella sezione [Copia dei file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) di questa procedura dettagliata, eseguendo però la copia nella cartella %Depot% appena creata. Ad esempio, eseguire la copia da %Programmi%\Windows Kits\8.0\bin\ in %Depot%\Windows Kits\8.0\bin\\.  
+2. Copiare le directory e i file come descritto nella sezione [Copia dei file dal computer host nel computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles) di questa procedura dettagliata, eseguendo però la copia nella cartella %Depot% appena creata. Ad esempio, eseguire la copia da %Programmi%\Windows Kits\8.0\bin\ in %Depot%\Windows Kits\8.0\bin\\.  
   
-3.  Quando i file vengono inseriti in %Depot%, apportare le seguenti modifiche:  
+3. Quando i file vengono inseriti in %Depot%, apportare le seguenti modifiche:  
   
-    -   In %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\ cambiare ogni istanza di  
+    - In %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\ cambiare ogni istanza di  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -378,7 +378,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
          La prima denominazione si riferisce agli assembly di tipo GAC.  
   
-    -   In %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets modificare ogni istanza di  
+    - In %Depot% \MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPPClean.Targets modificare ogni istanza di  
   
          AssemblyName="Microsoft.Build.CppTasks.Common.v110, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
   
@@ -386,7 +386,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
          AssemblyFile="$(VCTargetsPath11)Microsoft.Build.CppTasks.Common.v110.dll".  
   
-4.  Creare un file con estensione props, ad esempio Partner.AutoImports.props, e inserirlo nella cartella radice che contiene i progetti. Questo file viene utilizzato per impostare le variabili utilizzate da MSBuild per trovare le varie risorse. Se le variabili non sono impostate in questo file, vengono impostate da altri file con estensione props e targets che si basano sui valori del Registro di sistema. Poiché non viene impostato alcun valore del Registro di sistema, queste variabili potrebbero essere vuote e la compilazione potrebbe non riuscire. Aggiungere invece l'elemento seguente a Partner.AutoImports.props:  
+4. Creare un file con estensione props, ad esempio Partner.AutoImports.props, e inserirlo nella cartella radice che contiene i progetti. Questo file viene utilizzato per impostare le variabili utilizzate da MSBuild per trovare le varie risorse. Se le variabili non sono impostate in questo file, vengono impostate da altri file con estensione props e targets che si basano sui valori del Registro di sistema. Poiché non viene impostato alcun valore del Registro di sistema, queste variabili potrebbero essere vuote e la compilazione potrebbe non riuscire. Aggiungere invece l'elemento seguente a Partner.AutoImports.props:  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -409,17 +409,17 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
     </Project>  
     ```  
   
-5.  In ognuno dei file di progetto, aggiungere la seguente riga all'inizio del file, dopo la riga `<Project Default Targets…>`.  
+5. In ognuno dei file di progetto, aggiungere la seguente riga all'inizio del file, dopo la riga `<Project Default Targets…>`.  
   
     ```  
     <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Partner.AutoImports.props))\Partner.AutoImports.props"/>  
     ```  
   
-6.  Modificare l'ambiente dalla riga di comando nel modo seguente:  
+6. Modificare l'ambiente dalla riga di comando nel modo seguente:  
   
-    -   Impostare Depot=*percorso della directory Depot creata nel passaggio 1*  
+    - Impostare Depot=*percorso della directory Depot creata nel passaggio 1*  
   
-    -   Impostare path=%path%;*percorso di MSBuild nel computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
+    - Impostare path=%path%;*percorso di MSBuild nel computer*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\  
   
          Per una compilazione nativa a 64 bit, puntare a MSBuild a 64 bit.  
   

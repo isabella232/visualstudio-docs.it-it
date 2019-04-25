@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438001"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -62,8 +62,10 @@ Per il collegamento del debugger da Visual Studio e l'accesso a punti di interru
     Chrome viene avviato con il debug abilitato.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > È anche possibile impostare il flag `--remote-debugging-port` all'avvio del browser. Selezionare **Esplora con** sulla barra degli strumenti **Debug**, scegliere **Aggiungi** e quindi impostare il flag nel campo **Argomenti**. Usare un nome descrittivo diverso per il browser, ad esempio **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Passare a Visual Studio e impostare un punto di interruzione nel codice sorgente. Impostare il punto di interruzione in una riga di codice che consente i punti di interruzione, ad esempio un'istruzione `return` o una dichiarazione `var`.
@@ -173,7 +175,7 @@ Il debug dei file generati dinamicamente non è automatico. Non è possibile rag
    Per Chrome, andare a **Esplora soluzioni > Documenti script > NomePagina**.
 
     > [!NOTE]
-    > Se si usa Chrome è possibile che venga visualizzato un messaggio **No source is available between \<script> tags** (Nessuna origine disponibile tra i tag <script>). Il messaggio non indica un problema ed è possibile procedere con il debug.
+    > Se si usa Chrome è possibile che venga visualizzato un messaggio **No source is available between \<script> tags** (Nessuna origine disponibile tra i tag \<script>). Il messaggio non indica un problema ed è possibile procedere con il debug.
 
    In Internet Explorer, passare a **Esplora soluzioni > Documenti script > Windows Internet Explorer > NomePagina**.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071200"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,79 +49,79 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
   
 #### <a name="to-set-properties-based-on-configurations"></a>Per impostare le proprietà in base alle configurazioni  
   
--   In **Esplora soluzioni** aprire il menu di scelta rapida per un progetto e quindi scegliere **Proprietà**.  
+- In **Esplora soluzioni** aprire il menu di scelta rapida per un progetto e quindi scegliere **Proprietà**.  
   
      Verrà aperta la finestra **Pagine delle proprietà**.  
   
-     È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso. Per altre informazioni sulle impostazioni della pagina proprietà, vedere [Introduzione a Progettazione progetti](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     È possibile impostare alcune proprietà per le configurazioni. Per una configurazione di rilascio, ad esempio, è possibile specificare che quando si effettua la compilazione della soluzione il codice deve essere ottimizzato. Per una configurazione di debug, poi, è possibile specificare che il simbolo di compilazione condizionale `DEBUG` deve essere incluso. Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere [Introduzione a Creazione progetti](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Creazione e modifica di configurazioni di progetto  
   
 #### <a name="to-create-a-project-configuration"></a>Per creare una configurazione di progetto  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-2.  Selezionare un progetto nella colonna **Progetto**.  
+2. Selezionare un progetto nella colonna **Progetto**.  
   
-3.  Nell'elenco a discesa **Configurazione** per il progetto scegliere **Nuovo**.  
+3. Nell'elenco a discesa **Configurazione** per il progetto scegliere **Nuovo**.  
   
      Si aprirà la finestra di dialogo **Nuova configurazione progetto**.  
   
-4.  Nella casella **Nome** immettere un nome per la nuova configurazione.  
+4. Nella casella **Nome** immettere un nome per la nuova configurazione.  
   
-5.  Per usare le impostazioni delle proprietà di una configurazione di progetto esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.  
+5. Per usare le impostazioni delle proprietà di una configurazione di progetto esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.  
   
-6.  Per creare contemporaneamente una configurazione a livello di soluzione, selezionare la casella di controllo **Crea nuove configurazioni soluzione**.  
+6. Per creare contemporaneamente una configurazione a livello di soluzione, selezionare la casella di controllo **Crea nuove configurazioni soluzione**.  
   
 #### <a name="to-rename-a-project-configuration"></a>Per rinominare una configurazione di progetto  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-2.  Nella colonna **Progetto** selezionare il progetto con la configurazione che si vuole rinominare.  
+2. Nella colonna **Progetto** selezionare il progetto con la configurazione che si vuole rinominare.  
   
-3.  Nell'elenco a discesa **Configurazione** per il progetto scegliere **Modifica**.  
+3. Nell'elenco a discesa **Configurazione** per il progetto scegliere **Modifica**.  
   
      Si aprirà la finestra di dialogo **Modifica configurazioni progetto**.  
   
-4.  Selezionare il nome della configurazione di progetto che si vuole modificare.  
+4. Selezionare il nome della configurazione di progetto che si vuole modificare.  
   
-5.  Selezionare **Rinomina** e quindi immettere un nuovo nome.  
+5. Selezionare **Rinomina** e quindi immettere un nuovo nome.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Creare e modificare configurazioni della build a livello di soluzione  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Per creare una configurazione della build a livello di soluzione  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Nuovo**.  
+2. Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Nuovo**.  
   
      Si aprirà la finestra di dialogo **Nuova configurazione soluzione**.  
   
-3.  Nella casella di testo **Nome** immettere un nome per la nuova configurazione.  
+3. Nella casella di testo **Nome** immettere un nome per la nuova configurazione.  
   
-4.  Per usare le impostazioni di una configurazione della soluzione esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.  
+4. Per usare le impostazioni di una configurazione della soluzione esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.  
   
-5.  Se contemporaneamente si vogliono creare configurazioni di progetto, selezionare la casella di controllo **Crea nuove configurazioni progetto**.  
+5. Se contemporaneamente si vogliono creare configurazioni di progetto, selezionare la casella di controllo **Crea nuove configurazioni progetto**.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Per rinominare una configurazione della build a livello di soluzione  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Modifica**.  
+2. Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Modifica**.  
   
      Si aprirà la finestra di dialogo **Modifica configurazioni soluzione**.  
   
-3.  Selezionare il nome della configurazione di soluzione che si vuole modificare.  
+3. Selezionare il nome della configurazione di soluzione che si vuole modificare.  
   
-4.  Selezionare **Rinomina** e quindi immettere un nuovo nome.  
+4. Selezionare **Rinomina** e quindi immettere un nuovo nome.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Per modificare una configurazione della build a livello di soluzione  
   
-1.  Aprire la finestra di dialogo **Gestione configurazione**.  
+1. Aprire la finestra di dialogo **Gestione configurazione**.  
   
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** selezionare la configurazione voluta.  
+2. Nell'elenco a discesa **Configurazione soluzione attiva** selezionare la configurazione voluta.  
   
-3.  Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** volute. Selezionare quindi se eseguire la **compilazione** e la **distribuzione**.  
+3. Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** volute. Selezionare quindi se eseguire la **compilazione** e la **distribuzione**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Understanding Build Configurations](../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
