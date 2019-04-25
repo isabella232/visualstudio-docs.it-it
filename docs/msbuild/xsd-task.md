@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777639"
 ---
 # <a name="xsd-task"></a>XSD (attività)
 Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera file di schema o di classe da un'origine.
@@ -36,13 +36,13 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 ## <a name="parameters"></a>Parametri
  La tabella seguente descrive i parametri dell'attività **XSD**.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parametro **String** facoltativo.
 
      Un elenco di opzioni come specificato sulla riga di comando. Ad esempio, /\<opzione1> /\<opzione2> /\<opzione#>. Usare questo parametro per specificare le opzioni che non sono rappresentate da altri parametri dell'attività **XSD**.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Parametro **String** facoltativo.
 
@@ -50,11 +50,11 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 
      Specificare uno dei valori seguenti, ognuno dei quali corrisponde a un'opzione XSD.
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Lingua**
+- **Lingua**
 
      Parametro **String** facoltativo.
 
@@ -62,25 +62,25 @@ Esegue il wrapping dello strumento XML Schema Definition, *xsd.exe*, che genera 
 
      È possibile scegliere tra **CS** (C#, il linguaggio predefinito), **VB** (Visual Basic) o **JS** (JScript). È anche possibile specificare un nome completo per una classe che implementa `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      Parametro **String** facoltativo.
 
      Specifica lo spazio dei nomi del runtime per i tipi generati.
 
--   **Sources**
+- **Sources**
 
      Parametro `ITaskItem[]` obbligatorio.
 
      Definisce una matrice di elementi del file di origine MSBuild che può essere usata ed emessa dalle attività.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parametro **Boolean** facoltativo.
 
      Se `true`, impedisce la visualizzazione del messaggio sul copyright e sul numero di versione all'avvio dell'attività.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parametro **String** facoltativo.
 

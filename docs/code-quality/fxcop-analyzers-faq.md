@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816423"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -53,4 +53,4 @@ Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso C
 
 - [Panoramica degli analizzatori .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Introduzione agli analizzatori](fxcop-analyzers.yml)
-- [Installare gli analizzatori FXCop](install-fxcop-analyzers.md)
+- [Installare gli analizzatori FxCop](install-fxcop-analyzers.md)

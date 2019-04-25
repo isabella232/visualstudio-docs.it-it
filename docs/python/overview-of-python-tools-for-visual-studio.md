@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785236"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -98,7 +98,7 @@ Visual Studio consente di gestire la complessità di un progetto man mano che le
 
 Grazie ai modelli di progetto e di elemento, è possibile automatizzare il processo di impostazione di tipi di progetti e file diversi, risparmiando tempo prezioso ed evitando di gestire dettagli complessi e soggetti a errori. Visual Studio mette a disposizione modelli per progetti Web, Azure, data science, console e altri tipi di progetti, insieme a modelli per file quali classi, unit test, configurazioni Web di Azure, HTML e persino app Django.
 
-[![PProgetto Python e modelli di elemento in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Progetto Python e modelli di elemento in Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Per ulteriori informazioni:
 
@@ -130,7 +130,7 @@ Per ulteriori informazioni:
 
 La profilatura esplora come viene impiegato il tempo all'interno dell'applicazione. Visual Studio supporta la profilatura con interpreti basati su CPython e include la possibilità di confrontare le prestazioni tra esecuzioni diverse della profilatura.
 
-[![VRisultati del profiler di Visual Studio per un progetto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![Risultati del profiler di Visual Studio per un progetto Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Per ulteriori informazioni:
 
@@ -199,7 +199,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 <br/>
 
-
 |         Sistema del progetto         |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive |      2012 Professional e successive       | 2010 SP1 Professional e successive |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | Nuovo progetto da codice esistente | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -208,7 +207,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 |        Integrazione con Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
-
 
 |           Modifica            |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -230,14 +228,12 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 <br/>
 
-
 |     Finestra Interattiva     |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Finestra Interattiva     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IPython con grafici inline | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |               Desktop               |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -247,7 +243,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 <br/>
 
-
 |         Web         |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Progetto Web Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -256,7 +251,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 | Progetto Web generico | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         Azure          |   2017+   |   2015   | 2013 Community | 2013 Desktop |       2013 Web       |      2013 Professional e successive       |      2012 Professional e successive       |    2010 SP1 Professional e successive     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
@@ -269,7 +263,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 <br/>
 
-
 |           Modelli Django           |   2017+   |   2015   | 2013 Community | 2013 Desktop |       2013 Web       |      2013 Professional e successive       | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              Debug               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
@@ -277,7 +270,6 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 | Completamento automatico per CSS e JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
-
 
 |                  Debug                  |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -292,13 +284,11 @@ Visual Studio 2015 e versioni precedenti sono disponibili all'indirizzo [visuals
 
 <a name="matrix-profiling"></a>
 
-
 | Profilatura |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Profilatura | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |     Test      |   2017+   |   2015   | 2013 Community | 2013 Desktop | 2013 Web | 2013 Professional e successive | 2012 Professional e successive | 2010 SP1 Professional e successive |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|

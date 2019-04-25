@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789592"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori per l'editor in Visual Studio
 
@@ -33,20 +33,20 @@ Nell'editor del codice è possibile modificare il tipo di carattere predefinito,
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Modificare il tipo di carattere, le dimensioni e i colori predefiniti
 
-1.  Selezionare **Opzioni** dal menu **Strumenti** e nella cartella **Ambiente** selezionare **Tipi di carattere e colori**.
+1. Selezionare **Opzioni** dal menu **Strumenti** e nella cartella **Ambiente** selezionare **Tipi di carattere e colori**.
 
      Verrà visualizzata la [finestra di dialogo Opzioni, Ambiente, Tipi di carattere e colori](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
-2.  In **Mostra impostazioni per** selezionare **Editor di testo**.
+2. In **Mostra impostazioni per** selezionare **Editor di testo**.
 
-3.  Modificare le opzioni **Tipo di carattere** e **Dimensioni** per cambiare il tipo di carattere e le dimensioni per tutti gli elementi di testo in tutti gli editor.
+3. Modificare le opzioni **Tipo di carattere** e **Dimensioni** per cambiare il tipo di carattere e le dimensioni per tutti gli elementi di testo in tutti gli editor.
 
-4.  Selezionare l'elemento appropriato in **Elementi di visualizzazione**, quindi modificare le opzioni **Primo piano elemento** e **Sfondo elemento**.
+4. Selezionare l'elemento appropriato in **Elementi di visualizzazione**, quindi modificare le opzioni **Primo piano elemento** e **Sfondo elemento**.
 
     > [!TIP]
     > Fare clic su **Utilizza le impostazioni predefinite** per reimpostare le impostazioni predefinite.
 
-5.  Fare clic su **OK**.
+5. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 

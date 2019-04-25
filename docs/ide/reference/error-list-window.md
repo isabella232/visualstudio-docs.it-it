@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790863"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933977"
 
 La finestra **Elenco errori** consente di eseguire le attività seguenti:
 
--   Visualizzare gli errori, gli avvisi e i messaggi generati durante scrittura di codice.
+- Visualizzare gli errori, gli avvisi e i messaggi generati durante scrittura di codice.
 
--   Individuare gli errori di sintassi indicati da IntelliSense.
+- Individuare gli errori di sintassi indicati da IntelliSense.
 
--   Individuare errori di distribuzione, alcuni errori di analisi statica, nonché gli errori rilevati durante l'applicazione dei criteri di Modello Enterprise.
+- Individuare errori di distribuzione, alcuni errori di analisi statica, nonché gli errori rilevati durante l'applicazione dei criteri di Modello Enterprise.
 
--   Fare doppio clic su un messaggio di errore per aprire il file in cui è stato rilevato il problema e visualizzare il punto in cui si è verificato l'errore.
+- Fare doppio clic su un messaggio di errore per aprire il file in cui è stato rilevato il problema e visualizzare il punto in cui si è verificato l'errore.
 
--   Filtrare le voci e le colonne di informazioni visualizzate per ciascuna voce.
+- Filtrare le voci e le colonne di informazioni visualizzate per ciascuna voce.
 
--   Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
+- Cercare i termini specifici e l'ambito della ricerca solo nel progetto corrente o nel documento.
 
 Per visualizzare la finestra **Elenco errori**, scegliere **Visualizza** > **Elenco errori** o premere **Ctrl**+**\\**+**E**.
 
@@ -53,14 +53,14 @@ Esistono due tipi di filtro in due caselle a discesa, una sul lato destro della 
 
 È possibile limitare l'ambito di ricerca per analizzare e agire sui gruppi di errori. Ad esempio, è possibile concentrarsi sugli errori principali che impediscono la compilazione di un progetto. Le opzioni di ambito includono:
 
-1.  **Documenti aperti**: visualizza errori, avvisi e messaggi per i documenti aperti.
+1. **Documenti aperti**: visualizza errori, avvisi e messaggi per i documenti aperti.
 
-2.  **Progetto corrente**: visualizza errori, avvisi e messaggi presenti nel progetto del documento attualmente selezionato in **Editor** o nel progetto selezionato in **Esplora soluzioni**.
+2. **Progetto corrente**: visualizza errori, avvisi e messaggi presenti nel progetto del documento attualmente selezionato in **Editor** o nel progetto selezionato in **Esplora soluzioni**.
 
     > [!NOTE]
     > L'elenco filtrato di errori, avvisi e messaggi verrà modificato se il progetto del documento attualmente selezionato è diverso dal progetto selezionato in **Esplora soluzioni**.
 
-3.  **Documento corrente**: visualizza errori, avvisi e messaggi per il documento attualmente selezionato in **Editor** o in **Esplora soluzioni**.
+3. **Documento corrente**: visualizza errori, avvisi e messaggi per il documento attualmente selezionato in **Editor** o in **Esplora soluzioni**.
 
 Se ai risultati della ricerca è applicato un filtro, il nome del filtro viene visualizzato nella barra del titolo **Elenco errori**. I pulsanti **Errori**, **Avvisi** e **Messaggi** visualizzano il numero di elementi filtrati insieme al numero totale di elementi, ad esempio, visualizzano "x di y errori". Se nessun filtro viene applicato, la barra del titolo indica solo "Elenco errori".
 
@@ -84,7 +84,7 @@ Codice
 
 Restituisce il codice di errore.
 
-Descrizione
+Description
 
 Visualizza il testo della voce.
 

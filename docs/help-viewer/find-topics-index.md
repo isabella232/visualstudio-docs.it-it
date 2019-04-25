@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557450"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Trovare argomenti tramite l'indice del visualizzatore della Guida
 
@@ -30,14 +30,14 @@ L'indice contiene un elenco di parole chiave associate agli argomenti del conten
 
 Nella scheda **Indice** eseguire una delle due attività seguenti:
 
--   Nella casella di testo specificare la parola chiave da cercare. Scrivere ad esempio "aggiorna" per trovare argomenti con parole chiave "aggiornare", "aggiornato" e "aggiornamento".
+- Nella casella di testo specificare la parola chiave da cercare. Scrivere ad esempio "aggiorna" per trovare argomenti con parole chiave "aggiornare", "aggiornato" e "aggiornamento".
 
     Facendo clic sul pulsante di filtro sopra la scheda, è possibile visualizzare tutte le voci che contengono il testo specificato o solo le voci che iniziano con il testo specificato.
 
     > [!NOTE]
     > Quando il pulsante di filtro viene visualizzato su uno sfondo più scuro con un bordo, le voci devono _contenere_ il testo specificato. Se bordo e sfondo non sono visualizzati, le voci devono _iniziare con_ il testo specificato.
 
--   Scorrere l'indice e scegliere una parola chiave.
+- Scorrere l'indice e scegliere una parola chiave.
 
     Se la parola chiave specificata è associata a un solo argomento, l'argomento viene visualizzato. In caso contrario, viene visualizzato un elenco di tutti gli argomenti associati alla parola chiave.
 
@@ -47,33 +47,33 @@ Usare l'indice è semplice, ma conoscere il modo migliore per immettere le parol
 
 ### <a name="general-guidelines"></a>Indicazioni generali
 
--   Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.
+- Scorrere le voci dell'indice. Non tutti gli argomenti sono indicizzati nello stesso modo e quello che può essere più utile potrebbe essere elencato più in alto o più in basso di quanto ci si aspetterebbe.
 
--   Omettere gli articoli, ad esempio "uno" o "il" perché l'indice li ignora.
+- Omettere gli articoli, ad esempio "uno" o "il" perché l'indice li ignora.
 
--   Cambiare l'ordine delle parole immesse se non si trovano le voci previste.
+- Cambiare l'ordine delle parole immesse se non si trovano le voci previste.
 
     Se ad esempio "debug di codice assembly inline" non ha visualizzato voci pertinenti, provare a digitare "codice assembly, debug inline".
 
--   Usare i filtri con la scheda **Indice** per ridurre il numero di risultati.
+- Usare i filtri con la scheda **Indice** per ridurre il numero di risultati.
 
 ### <a name="syntax-tips"></a>Suggerimenti per la sintassi
 
 Se non si trova una voce per la parola o la frase immessa, provare a eseguire le operazioni seguenti:
 
--   Digitare le prime lettere o la radice della parola. Immettendo una stringa parziale, è possibile accedere agli argomenti indicizzati con parole chiave singolari o plurali.
+- Digitare le prime lettere o la radice della parola. Immettendo una stringa parziale, è possibile accedere agli argomenti indicizzati con parole chiave singolari o plurali.
 
     Immettere ad esempio "attribut" per avviare la ricerca di attributo e attributi.
 
--   Immettere il sostantivo corrispondente al verbo indicante l'attività che si vuole completare. Per trovare voci di indice più specifiche, aggiungere una parola che descriva esattamente che cosa si sta cercando.
+- Immettere il sostantivo corrispondente al verbo indicante l'attività che si vuole completare. Per trovare voci di indice più specifiche, aggiungere una parola che descriva esattamente che cosa si sta cercando.
 
     Digitare ad esempio "esecuzione" per trovare più voci o "esecuzione di programmi" per trovarne di meno.
 
--   Immettere aggettivi autonomi. Per limitare i risultati, aggiungere una parola che descriva esattamente che cosa si sta cercando.
+- Immettere aggettivi autonomi. Per limitare i risultati, aggiungere una parola che descriva esattamente che cosa si sta cercando.
 
     Immettere ad esempio "COM+" per ottenere un lungo elenco di voci o "componenti COM+" per ottenerne di meno.
 
--   Immettere un sinonimo della parola o del verbo che si sta cercando.
+- Immettere un sinonimo della parola o del verbo che si sta cercando.
 
     Se ad esempio si è immesso il termine "compilazione", provare invece "creazione".
 

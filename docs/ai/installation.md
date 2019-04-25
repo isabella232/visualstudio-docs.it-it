@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548453"
 ---
 # <a name="installation"></a>Installazione
 
@@ -87,6 +87,7 @@ L'installazione dei framework di apprendimento profondo si basa su pip.
 In seguito, è necessario verificare se Python 3.5 sia installato correttamente e aggiornare pip alla versione più recente eseguendo i comandi seguenti in un terminale:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ In seguito, è necessario verificare se Python 3.5 sia installato correttamente 
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ Visitare [questo sito](https://caffe2.ai/docs/getting-started.html) per eseguire
 Per installare MXNet, eseguire il comando seguente in un terminale:
 
 - Con GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Senza GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

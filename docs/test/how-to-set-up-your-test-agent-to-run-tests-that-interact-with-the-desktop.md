@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786008"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop
 
@@ -49,7 +49,7 @@ Utilizzare la procedura riportata di seguito per configurare qualsiasi agente as
    > [!NOTE]
    > - L'utente che si aggiunge per l'avvio del processo deve essere inoltre aggiunto come membro del gruppo TeamTestAgentService nel computer del controller di test associato all'agente. Se tale utente corrisponde all'utente corrente, quando lo si aggiunge al computer del test controller è necessario disconnettersi o riavviare il sistema.
    > - Le password Null non sono supportate per gli account utente.
-   > - Se si desidera utilizzare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, è necessario che l'account utente sia membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene usato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati). Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul controller di test.
+   > - Per usare IntelliTrace o l'adattatore dati di emulazione di rete e diagnostico, l'account utente deve essere membro del gruppo Administrators. Se nel computer che esegue l'agente di test viene usato un sistema operativo che dispone di un account utente con privilegi minimi, sarà necessario eseguire l'agente di test anche come amministratore (con privilegi elevati). Se il nome utente dell'agente non è presente nel servizio agente, verrà effettuato il tentativo di aggiungerlo. Questa operazione richiede autorizzazioni sul controller di test.
    > - È necessario che l'utente che sta tentando di usare il test controller sia incluso nell'account utente di tale test controller. In caso contrario non sarà in grado di eseguire i test.
 
 4. Per assicurarsi che un computer con un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.

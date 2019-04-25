@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779019"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opzioni, Editor di testo, HTML (Web Form), Formattazione
 
@@ -41,7 +41,6 @@ Queste opzioni specificano la modalità di applicazione delle lettere maiuscole 
 |**Minuscole**|I nomi degli elementi vengono riformattati in minuscolo.|
 |**Definizione assembly**|La combinazione di maiuscole e minuscole degli elementi è determinata dalla definizione dell'elemento nella classe di tipo corrispondente.|
 
-
 **Tag client, Attributi client**
 
 Tramite queste opzioni viene determinato se durante la formattazione automatica i nomi delle proprietà e degli attributi HTML verranno modificati in maiuscolo o minuscolo o se verranno lasciati come immessi.
@@ -51,7 +50,6 @@ Tramite queste opzioni viene determinato se durante la formattazione automatica 
 |**Come immesse**|Esatta combinazione di maiuscole/minuscole dell'attributo come immessa.|
 |**Maiuscole**|I nomi degli attributi vengono riformattati in maiuscolo.|
 |**Minuscole**|I nomi degli attributi vengono riformattati in minuscolo.|
-
 
 ## <a name="automatic-formatting-options"></a>Opzioni di formattazione automatica
 
@@ -65,7 +63,6 @@ Tramite queste opzioni viene determinata l'aggiunta o la rimozione delle interru
 - **Inserisci virgolette per valori attributi durante la digitazione**
 
    Se selezionata, nell'editor vengono inserite automaticamente le virgolette prima e dopo gli attributi, durante la digitazione, ad esempio: ID="Select1"). Deselezionare questa opzione se si preferisce inserire manualmente le virgolette nel markup.
-
 
    > [!NOTE]
    > Indipendentemente dalla selezione di questa opzione, tutte le virgolette esistenti nel markup vengono mantenute: le virgolette non vengono mai rimosse.

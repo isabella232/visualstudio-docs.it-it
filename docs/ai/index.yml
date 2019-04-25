@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924214"
 documentType: LandingData
 title: Visual Studio Tools for AI
 metadata:
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: Visual Studio Tools for AI è un ambiente di sviluppo integrato che consente di compilare, testare e distribuire soluzioni per l'apprendimento avanzato. Informazioni sull'uso degli strumenti di intelligenza artificiale sono disponibili nelle guide introduttive, nelle esercitazioni e negli esempi.
+  description: 'Visual Studio Tools for AI è un ambiente di sviluppo integrato che consente di compilare, testare e distribuire soluzioni per l''apprendimento avanzato. Informazioni sull''uso degli strumenti di intelligenza artificiale sono disponibili nelle guide introduttive, nelle esercitazioni e negli esempi.'
 sections:
-- title: Guide introduttive di 5 minuti
-  items:
-  - type: paragraph
-    text: 'Informazioni su come eseguire una soluzione di apprendimento avanzato con:'
-  - type: list
-    style: icon48
+  - title: Guide introduttive di 5 minuti
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow e Python
-      href: tensorflow-local.md
-- title: Esercitazioni dettagliate
-  items:
-  - type: paragraph
-    text: 'Informazioni su come creare una soluzione di apprendimento avanzato:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Informazioni su come eseguire una soluzione di apprendimento avanzato con:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow e Python
+            href: tensorflow-local.md
+  - title: Esercitazioni dettagliate
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Eseguire il training di un modello TensorFlow nel cloud</a>
-- title: Esempi
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Informazioni su come creare una soluzione di apprendimento avanzato:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Eseguire il training di un modello TensorFlow nel cloud</a>
+  - title: Esempi
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Repository di esempi</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Raccolta di Machine Learning</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Repository di esempi</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Raccolta di Machine Learning</a>'

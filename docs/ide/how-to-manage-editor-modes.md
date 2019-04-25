@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429782"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procedura: Gestire le modalità dell'editor
 
@@ -42,21 +42,21 @@ ms.locfileid: "55907142"
 
 È possibile nascondere tutte le caselle degli strumenti e visualizzare solo le finestre dei documenti abilitando la modalità **Schermo intero**.
 
--   Premere **ALT**+**MAIUSC**+**INVIO** per attivare o disattivare la modalità **schermo intero**.
+- Premere **ALT**+**MAIUSC**+**INVIO** per attivare o disattivare la modalità **schermo intero**.
 
      --oppure--
 
--   Eseguire il comando `View.Fullscreen` nella finestra **Comando**.
+- Eseguire il comando `View.Fullscreen` nella finestra **Comando**.
 
 ## <a name="enable-virtual-space-mode"></a>Abilitare la modalità Spazio virtuale
 
 Nella modalità **Spazio virtuale** vengono inseriti spazi alla fine di ogni riga di codice. Selezionare questa opzione per inserire commenti in corrispondenza di un punto coerente accanto al codice.
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il nodo **Basic** > **Editor di testo**.
+2. Espandere la cartella **Editor di testo** e scegliere **Tutti i linguaggi** per impostare l'opzione a livello globale oppure scegliere la cartella di un linguaggio specifico. Ad esempio, per attivare i numeri di riga solo in Visual Basic, scegliere il nodo **Basic** > **Editor di testo**.
 
-3.  Selezionare **Generale** e in **Impostazioni**selezionare **Attiva spazio virtuale**.
+3. Selezionare **Generale** e in **Impostazioni**selezionare **Attiva spazio virtuale**.
 
     > [!NOTE]
     > L'opzione **Spazio virtuale** è abilitata nella modalità **Seleziona colonne**. Quando la modalità **Spazio virtuale** non è abilitata, il punto di inserimento passa dalla fine di una riga direttamente al primo carattere della riga successiva.

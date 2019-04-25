@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844255"
 ---
 # <a name="l2dbformxaml-source-code"></a>Codice sorgente di L2DBForm.xaml
 
@@ -85,7 +85,7 @@ L'ultima sezione dell'interfaccia utente, **Add New Book**, non usa l'associazio
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Descrizione
+### <a name="description"></a>Description
 
 > [!NOTE]
 > Si consiglia di copiare il codice seguente in un editor di codice, ad esempio l'editor di codice sorgente C# in Visual Studio, in modo che sia più facile tenere traccia dei numeri di riga.

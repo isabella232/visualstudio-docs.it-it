@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59367017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431296"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installare il supporto Python in Visual Studio
 
@@ -26,7 +26,7 @@ ms.locfileid: "59367017"
 1. Scaricare ed eseguire la versione più recente del programma di installazione di Visual Studio per Windows. Il supporto Python è disponibile a partire dalla versione 15.2. Se Visual Studio è già installato, eseguire il programma di installazione di Visual Studio e andare al passaggio 2.
 
     > [!div class="nextstepaction"]
-    > [Installare Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Installa Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
     > L'edizione Community è per singoli sviluppatori, per la formazione in classe, la ricerca accademica e per lo sviluppo open source. Per altri usi, installare [Visual Studio Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) oppure [Visual Studio Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
@@ -42,7 +42,7 @@ ms.locfileid: "59367017"
 ## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [Passaggio 1: Creare un progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Passaggio 1: creare un progetto Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 

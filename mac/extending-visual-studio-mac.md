@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983155"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -81,10 +81,10 @@ Le estensioni comando vengono definite aggiungendo voci al punto di estensione `
 
 Il nodo di estensione contiene un attributo path che specifica il punto di estensione a cui si collega, in questo caso `/MonoDevelop/Ide/Commands/Edit`. Inoltre, funge da nodo padre per il comando. Il nodo del comando include gli attributi seguenti:
 
-*   **id**: specifica l'identificatore per questo comando. Gli identificatori dei comandi devono essere dichiarati come membri di enumerazione e vengono usati per connettere Commands a CommandItems.
-*   **_label**: testo da visualizzare nei menu.
-*   **_description**: testo da visualizzare come descrizione comando per i pulsanti della barra degli strumenti.
-*   **defaultHandler**: specifica la classe `CommandHandler` che attiva il comando.
+* **id**: specifica l'identificatore per questo comando. Gli identificatori dei comandi devono essere dichiarati come membri di enumerazione e vengono usati per connettere Commands a CommandItems.
+* **_label**: testo da visualizzare nei menu.
+* **_description**: testo da visualizzare come descrizione comando per i pulsanti della barra degli strumenti.
+* **defaultHandler**: specifica la classe `CommandHandler` che attiva il comando.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ In questo modo si collegano il comando e CommandItem: CommandItem chiama il coma
 
 Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [informazioni di riferimento sull'albero delle estensioni](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) e la [panoramica delle API](http://monodevelop.com/Developers/Articles/API_Overview). Quando si compilano pacchetti di estensione avanzati, fare riferimento agli [articoli per sviluppatori](http://monodevelop.com/Developers/Articles). Ecco un elenco parziale delle aree per la personalizzazione:
 
-*   Riquadri
-*   Schemi di tasti di scelta rapida
-*   Criteri
-*   Formattatori di codice
-*   Formati di file di progetto
-*   Pannelli delle preferenze
-*   Pannelli delle opzioni
-*   Protocolli del debugger
-*   Visualizzatori del debugger
-*   Layout dell'area di lavoro
-*   Nodi dell'albero del riquadro della soluzione
-*   Margini dell'editor standard
-*   Motori di unit test
-*   Generatori di codice
-*   Frammenti di codice
-*   Framework di destinazione
-*   Runtime di destinazione
-*   Back-end VCS
-*   Refactoring
-*   Gestori di esecuzione
-*   Evidenziazione della sintassi
+* Riquadri
+* Schemi di tasti di scelta rapida
+* Criteri
+* Formattatori di codice
+* Formati di file di progetto
+* Pannelli delle preferenze
+* Pannelli delle opzioni
+* Protocolli del debugger
+* Visualizzatori del debugger
+* Layout dell'area di lavoro
+* Nodi dell'albero del riquadro della soluzione
+* Margini dell'editor standard
+* Motori di unit test
+* Generatori di codice
+* Frammenti di codice
+* Framework di destinazione
+* Runtime di destinazione
+* Back-end VCS
+* Refactoring
+* Gestori di esecuzione
+* Evidenziazione della sintassi
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 

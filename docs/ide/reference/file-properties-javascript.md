@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790648"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
 È possibile usare le proprietà file per indicare le operazioni che il sistema di progetto dovrà eseguire sui file. Ad esempio, è possibile impostare le proprietà file per indicare se un file deve essere aggiunto al pacchetto come file di risorse.
@@ -46,13 +46,13 @@ ms.locfileid: "55956766"
 ### <a name="package-action"></a>Azione pacchetto
  La proprietà **Azione pacchetto** indica ciò che realizza Visual Studio con un file quando viene eseguita una compilazione. **Azione pacchetto** può avere diversi valori:
 
--   **Nessuno** - Il file non è incluso nel manifesto del pacchetto. Un esempio è un file di testo che contiene la documentazione, ad esempio un file Leggimi.
+- **Nessuno** - Il file non è incluso nel manifesto del pacchetto. Un esempio è un file di testo che contiene la documentazione, ad esempio un file Leggimi.
 
--   **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.
+- **Contenuto** - Il file è incluso nel manifesto di pacchetto. Ad esempio, questa impostazione è il valore predefinito di un file .htm, .js, .css, immagine, audio o video.
 
--   **Manifesto** - Il file non è incluso nel manifesto di pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
+- **Manifesto** - Il file non è incluso nel manifesto di pacchetto. Il file viene usato invece per l'input durante la generazione del manifesto di pacchetto. Questo è il valore predefinito del file package.appxmanifest.
 
--   **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.
+- **Risorsa** - Il file non è incluso nel manifesto di pacchetto. Il contenuto del file viene invece indicizzato nel file di indice risorse (PRI) che va inserito nel manifesto di pacchetto. Viene usato generalmente per i file di risorse.
 
 Il valore predefinito per **Azione pacchetto** dipende dall'estensione del file aggiunta alla soluzione.
 

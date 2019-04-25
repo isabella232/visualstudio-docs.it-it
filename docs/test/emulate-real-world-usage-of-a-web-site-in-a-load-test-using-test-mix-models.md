@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785736"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulazione dell'uso reale previsto di un'applicazione o un sito Web in un test di carico usando modelli di combinazione di test
 
@@ -28,18 +28,18 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
 È possibile specificare una delle seguenti opzioni relative al modello di combinazione di test per lo scenario di test di carico:
 
--   **In base al numero totale di test:** determina quale test delle prestazioni Web o quale unit test viene eseguito quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui una determinata esecuzione dei test è risultata corrispondente alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione. Per altre informazioni, vedere [Percentuale basata sui test avviati](#BasedOnTestsStarted).
+- **In base al numero totale di test:** determina quale test delle prestazioni Web o quale unit test viene eseguito quando un utente virtuale inizia un'iterazione di test. Alla fine del test di carico, il numero di volte in cui una determinata esecuzione dei test è risultata corrispondente alla distribuzione di test assegnata. Usare questo modello di combinazione di test quando si basa la combinazione di test sulle percentuali di transazioni in un log IIS o nei dati di produzione. Per altre informazioni, vedere [Percentuale basata sui test avviati](#BasedOnTestsStarted).
 
--   **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un test delle prestazioni Web o uno unit test specifico. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Utilizzare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test. Per altre informazioni, vedere [Percentuale basata sugli utenti virtuali](#PercentageBasedonVirtualUsers).
+- **In base al numero di utenti virtuali:** determina la percentuale di utenti virtuali che eseguiranno un test delle prestazioni Web o uno unit test specifico. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde alla distribuzione assegnata. Utilizzare questo modello di combinazione di test quando si basa la combinazione di test sulla percentuale di utenti che sta eseguendo un determinato test. Per altre informazioni, vedere [Percentuale basata sugli utenti virtuali](#PercentageBasedonVirtualUsers).
 
--   **In base alla velocità dell'utente:** nel corso del test di carico, ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico. Per altre informazioni, vedere [Combinazione di test di velocità](#PacingTestMix).
+- **In base alla velocità dell'utente:** nel corso del test di carico, ogni test delle prestazioni Web o unit test viene eseguito un numero specificato di volte per utente all'ora. Usare questo modello di combinazione di test quando si vuole che gli utenti virtuali eseguano il test a un ritmo determinato durante il test di carico. Per altre informazioni, vedere [Combinazione di test di velocità](#PacingTestMix).
 
     > [!TIP]
     > Quando scegliere **Combinazione di test di percentuale** e quando **Percentuale basata sugli utenti virtuali**? La differenza tra queste due scelte è importante quando alcuni test nella combinazione di test hanno una durata maggiore rispetto agli altri test. In questa situazione, è consigliabile scegliere **Percentuale basata sugli utenti virtuali**. Questa scelta consente di evitare esecuzioni di test di lunga durata. Se tuttavia i test sono tutti della stessa durata, è possibile scegliere **Combinazione di test di percentuale**.
 
--   **In base a ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico. Per altre informazioni, vedere [Ordine sequenziale](#SequentialOrder).
+- **In base a ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico. Per altre informazioni, vedere [Ordine sequenziale](#SequentialOrder).
 
-###  <a name="BasedOnTestsStarted"></a> Percentuale basata sui test avviati
+### <a name="BasedOnTestsStarted"></a> Percentuale basata sui test avviati
  Per ogni test della combinazione, è possibile specificare una percentuale che determina la frequenza di esecuzione del test successivo selezionato. Ad esempio, è possibile assegnare i seguenti valori in percentuale a tre test:
 
 - TestA (50%)
@@ -50,10 +50,10 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
   Se si utilizza questa impostazione, l'avvio del test successivo si basa sulle percentuali assegnate. Non viene considerato il numero di utenti virtuali che stanno eseguendo attualmente ciascun test.
 
-###  <a name="PercentageBasedonVirtualUsers"></a> Percentuale basata sugli utenti virtuali
+### <a name="PercentageBasedonVirtualUsers"></a> Percentuale basata sugli utenti virtuali
  Questo modello di combinazione di test determina la percentuale di utenti virtuali che eseguiranno un determinato test. Se si utilizza questo modello di combinazione di test, l'avvio del successivo test si basa non solo sulle percentuali assegnate ma anche sulla percentuale di utenti virtuali che stanno eseguendo attualmente un determinato test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde il più possibile alla distribuzione assegnata.
 
-###  <a name="PacingTestMix"></a> Combinazione di test di velocità
+### <a name="PacingTestMix"></a> Combinazione di test di velocità
  Se si specifica una combinazione di test di velocità, si imposta una frequenza di esecuzione del test per ogni utente virtuale di ogni test nella combinazione di test. Per ogni test, questa frequenza viene espressa come test eseguiti per utente virtuale per ora. Ad esempio, è possibile assegnare la seguente combinazione di test di velocità a questi test:
 
 - TestA: 4 test per utente per ora
@@ -79,7 +79,7 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
   Per altre informazioni, vedere [Procedura: Applicare la distribuzione al ritardo velocità quando si usa un modello di combinazione di test basato sulla velocità dell'utente](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-###  <a name="SequentialOrder"></a> Ordine sequenziale
+### <a name="SequentialOrder"></a> Ordine sequenziale
  La selezione dell'opzione In base a ordine sequenziale dei test consente a ogni utente virtuale di eseguire tutti i test nello scenario nell'ordine di definizione dei test.
 
 ## <a name="test-iterations-property"></a>Proprietà Iterazioni test

@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892847"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procedura dettagliata: Eseguire il binding ai dati nella finestra di progettazione XAML
 
-Nella finestra di progettazione XAML è possibile impostare le proprietà di data binding mediante la tavola da disegno e la finestra Proprietà. Questa procedura dettagliata illustra come associare dati a un controllo. In particolare, la procedura dettagliata illustra come creare una classe di carrello semplice con una classe [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominata `ItemCount` e associare la proprietà `ItemCount` alla proprietà **Text** di un controllo [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+La finestra di progettazione XAML consente di impostare le proprietà di associazione dati tramite la tavola da disegno e la finestra Proprietà. Questa procedura dettagliata illustra come associare dati a un controllo. In particolare, la procedura dettagliata illustra come creare una classe di carrello semplice con una classe [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominata `ItemCount` e associare la proprietà `ItemCount` alla proprietà **Text** di un controllo [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da usare come origine dati
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>Per creare una classe da utilizzare come origine dati
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
@@ -31,7 +31,7 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
 1. Assegnare al progetto il nome **BindingTest** e fare clic sul pulsante **OK**.
 
-1. Aprire il file **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) e aggiungere il codice seguente. In C# aggiungere il codice nello spazio dei nomi `BindingTest` (prima della parentesi chiusa finale nel file). In Visual Basic, è sufficiente aggiungere la nuova classe.
+1. Aprire il file **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) e aggiungere il codice seguente. In C# aggiungi il codice nello spazio dei nomi `BindingTest` (prima delle parentesi di chiusura finali del file). In Visual Basic, aggiungere la nuova classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -85,17 +85,17 @@ Nella finestra di progettazione XAML è possibile impostare le proprietà di dat
 
 1. Nella **casella degli strumenti`TextBlock` scegliere un controllo**  e aggiungerlo al modulo.
 
-1. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati**. Il marcatore della proprietà ha l'aspetto di una piccola casella.
+1. Dopo aver selezionato il controllo `TextBlock`, scegliere il marcatore della proprietà a destra della proprietà **Text** e scegliere **Crea associazione dati**. Tale marcatore ha l'aspetto di una piccola casella.
 
 1. Nella casella **Percorso** della finestra di dialogo Crea associazione dati scegliere la proprietà **ItemCount : (int32)** e fare clic sul pulsante **OK**.
 
      La figura seguente illustra la finestra di dialogo **Crea associazione dati** con la proprietà **ItemCount** selezionata.
 
-     ![Finestra di dialogo Crea data binding](../designers/media/xaml_create_data_binding.png)
+     ![Finestra di dialogo Crea associazione dati](../designers/media/xaml_create_data_binding.png)
 
 1. Premere **F5** per eseguire l'app.
 
-     Il controllo `TextBlock` dovrebbe ora visualizzare il valore predefinito 0 come testo.
+     Il controllo `TextBlock` dovrebbe visualizzare il valore predefinito 0 come testo.
 
 ## <a name="see-also"></a>Vedere anche
 

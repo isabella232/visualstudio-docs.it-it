@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819615"
 ---
 # <a name="create-an-android-native-activity-app"></a>Creare un'app NativeActivity di Android
 
@@ -25,7 +25,7 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
 
 ## <a name="requirements"></a>Requisiti
 
-Prima di creare un'app NativeActivity di Android, verificare che tutti i requisiti di sistema siano soddisfatti e che l'opzione Visual C++ Mobile Development sia installata in Visual Studio 2015. Per altre informazioni, vedere [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Verificare che gli SDK e gli strumenti di terze parti richiesti siano inclusi nell'installazione e che sia installato Microsoft Visual Studio Emulator per Android.
+Prima di creare un'app NativeActivity di Android, verificare che tutti i requisiti di sistema siano soddisfatti e che l'opzione Visual C++ Mobile Development sia installata in Visual Studio 2015. Per altre informazioni, vedere [Installare Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Verificare che gli SDK e gli strumenti di terze parti richiesti siano inclusi nell'installazione e che sia installato Microsoft Visual Studio Emulator per Android.
 
 ## <a name="create-a-new-native-activity-project"></a>Creare un nuovo progetto NativeActivity
 
@@ -45,9 +45,9 @@ In questa esercitazione verrà creato un nuovo progetto Native Activity di Andro
 
    La nuova soluzione per app NativeActivity di Android include due progetti:
 
--   `MyAndroidApp.NativeActivity`, che contiene i riferimenti e il codice glue per l'app da eseguire come NativeActivity in Android. L'implementazione dei punti di ingresso dal codice glue si trova nel file *main.cpp*. Le intestazioni precompilate sono in *pch.h*. Questo progetto di app NativeActivity viene compilato in un file di libreria condivisa con estensione *so* che viene selezionato dal progetto Packaging.
+- `MyAndroidApp.NativeActivity`, che contiene i riferimenti e il codice glue per l'app da eseguire come NativeActivity in Android. L'implementazione dei punti di ingresso dal codice glue si trova nel file *main.cpp*. Le intestazioni precompilate sono in *pch.h*. Questo progetto di app NativeActivity viene compilato in un file di libreria condivisa con estensione *so* che viene selezionato dal progetto Packaging.
 
--   `MyAndroidApp.Packaging`, che crea il file con estensione *apk* per la distribuzione nei dispositivi o negli emulatori Android. Questo progetto contiene le risorse e il file *AndroidManifest.xml* in cui sono state impostate le proprietà del manifesto. Contiene anche il file *build.xml*, che controlla il processo di compilazione Ant. Per impostazione predefinita, è impostato come progetto di avvio in modo che possa essere distribuito ed eseguito direttamente da Visual Studio.
+- `MyAndroidApp.Packaging`, che crea il file con estensione *apk* per la distribuzione nei dispositivi o negli emulatori Android. Questo progetto contiene le risorse e il file *AndroidManifest.xml* in cui sono state impostate le proprietà del manifesto. Contiene anche il file *build.xml*, che controlla il processo di compilazione Ant. Per impostazione predefinita, è impostato come progetto di avvio in modo che possa essere distribuito ed eseguito direttamente da Visual Studio.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>Compilare ed eseguire l'app NativeActivity predefinita per Android
 
@@ -55,21 +55,21 @@ Compilare ed eseguire l'app generata dal modello per verificare l'installazione 
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>Per compilare ed eseguire l'app NativeActivity predefinita
 
-1.  Se non è ancora selezionato, scegliere **x86** dall'elenco a discesa **Piattaforme soluzione** .
+1. Se non è ancora selezionato, scegliere **x86** dall'elenco a discesa **Piattaforme soluzione** .
 
      ![Selezione di x86 dal menu a discesa Piattaforme soluzione](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      Se l'elenco **Piattaforme soluzione** non è visualizzato, scegliere **Piattaforme soluzione** dall'elenco a discesa **Aggiungi o rimuovi pulsanti** e scegliere la piattaforma.
 
-2.  Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+2. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
 
      La finestra di output visualizza l'output del processo di compilazione per i due progetti della soluzione.
 
-3.  Scegliere uno dei profili di VS Emulator Android Phone (x86) come destinazione della distribuzione.
+3. Scegliere uno dei profili di VS Emulator Android Phone (x86) come destinazione della distribuzione.
 
      Se sono stati installati altri emulatori o è stato connesso un dispositivo Android, è possibile selezionarli nell'elenco a discesa delle destinazioni della distribuzione.
 
-4.  Premere **F5** per avviare il debug o MAIUSC+F5 per avviare senza eseguire il debug.
+4. Premere **F5** per avviare il debug o MAIUSC+F5 per avviare senza eseguire il debug.
 
      Ecco come viene visualizzata l'app predefinita in Visual Studio Emulator for Android.
 
@@ -77,6 +77,6 @@ Compilare ed eseguire l'app generata dal modello per verificare l'installazione 
 
      All'avvio dell'emulatore in Visual Studio, il processo di caricamento e distribuzione del codice richiede qualche istante. Una volta avviata l'app, è possibile impostare i punti di interruzione e usare il debugger per eseguire il codice un'istruzione alla volta, esaminare le variabili locali e controllare i valori.
 
-5.  Premere **MAIUSC**+**F5** per interrompere il debug.
+5. Premere **MAIUSC**+**F5** per interrompere il debug.
 
      L'emulatore è un processo separato che continua a essere eseguito. È possibile modificare, compilare e distribuire il codice più volte nello stesso emulatore.

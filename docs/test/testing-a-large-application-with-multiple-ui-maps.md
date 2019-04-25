@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429175"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testare un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente
 
@@ -42,9 +42,9 @@ L'uso di più file di mappa dell'interfaccia utente può offrire i vantaggi segu
 ## <a name="do-you-need-multiple-ui-maps"></a>Situazioni in cui sono necessarie più mappe dell'interfaccia utente
  Creare più mappe dell'interfaccia utente nei tipi di situazioni seguenti:
 
--   Diversi set complessi di controlli dell'interfaccia utente compositi che insieme eseguono un'operazione logica, ad esempio una pagina di registrazione in un sito Web o la pagina di acquisto di un carrello.
+- Diversi set complessi di controlli dell'interfaccia utente compositi che insieme eseguono un'operazione logica, ad esempio una pagina di registrazione in un sito Web o la pagina di acquisto di un carrello.
 
--   Un set indipendente di controlli a cui si accede da vari punti dell'applicazione, ad esempio una procedura guidata con numerose pagine di operazioni. Se le pagine di una procedura guidata sono particolarmente complesse, è possibile creare mappe dell'interfaccia utente separate per ogni pagina.
+- Un set indipendente di controlli a cui si accede da vari punti dell'applicazione, ad esempio una procedura guidata con numerose pagine di operazioni. Se le pagine di una procedura guidata sono particolarmente complesse, è possibile creare mappe dell'interfaccia utente separate per ogni pagina.
 
 ## <a name="add-multiple-ui-maps"></a>Aggiungere più mappe dell'interfaccia utente
 

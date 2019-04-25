@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fa868695316ec83e066885590f859af947660625
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777971"
 ---
 # <a name="xdcmake-task"></a>attività XDCMake
 Esegue il wrapping dello strumento Documentazione XML, *xdcmake.ex*  che unisce i file di commento con estensione *xdc* del documento XML in un file con estensione *xml*.

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef85067ca3478bb2387f1f47a35938805f5fe0c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24ca736d65a889c0bbada24412ebedecbe6970ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428976"
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Procedura: Escludere progetti da una compilazione
 
@@ -22,37 +22,37 @@ ms.locfileid: "55924591"
 
 Per escludere un progetto è possibile procedere in due modi:
 
--   Rimuoverlo temporaneamente dalla configurazione della soluzione attiva.
+- Rimuoverlo temporaneamente dalla configurazione della soluzione attiva.
 
--   Creare una configurazione di soluzione che non includa il progetto.
+- Creare una configurazione di soluzione che non includa il progetto.
 
 Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
 ## <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Per rimuovere temporaneamente un progetto dalla configurazione della soluzione attiva.
 
-1.  Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
+1. Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
 
-2.  Nella tabella **Contesti progetto** individuare il progetto da escludere dalla compilazione.
+2. Nella tabella **Contesti progetto** individuare il progetto da escludere dalla compilazione.
 
-3.  Nella colonna **Compilazione** del progetto deselezionare la casella di controllo.
+3. Nella colonna **Compilazione** del progetto deselezionare la casella di controllo.
 
-4.  Scegliere il pulsante **Chiudi** e quindi ricompilare la soluzione.
+4. Scegliere il pulsante **Chiudi** e quindi ricompilare la soluzione.
 
 ## <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Per creare una configurazione di soluzione che esclude un progetto
 
-1.  Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
+1. Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
 
-2.  Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.
+2. Nell'elenco **Configurazione soluzione attiva** **scegliere \<Nuova**.
 
-3.  Nella casella **Nome** immettere un nome per la configurazione della soluzione.
+3. Nella casella **Nome** immettere un nome per la configurazione della soluzione.
 
-4.  Nell'elenco **Copia impostazioni da** scegliere la configurazione di soluzione su cui si vuole basare la nuova configurazione (ad esempio **Debug**) e quindi scegliere il pulsante **OK**.
+4. Nell'elenco **Copia impostazioni da** scegliere la configurazione di soluzione su cui si vuole basare la nuova configurazione (ad esempio **Debug**) e quindi scegliere il pulsante **OK**.
 
-5.  Nella finestra di dialogo **Configuration Manager** deselezionare la casella di controllo **Compilazione** per il progetto da escludere e quindi scegliere il pulsante **Chiudi**.
+5. Nella finestra di dialogo **Configuration Manager** deselezionare la casella di controllo **Compilazione** per il progetto da escludere e quindi scegliere il pulsante **Chiudi**.
 
-6.  Sulla barra degli strumenti **Standard** verificare che la nuova configurazione della soluzione compaia come configurazione attiva nella casella **Configurazioni soluzione**.
+6. Sulla barra degli strumenti **Standard** verificare che la nuova configurazione della soluzione compaia come configurazione attiva nella casella **Configurazioni soluzione**.
 
-7.  Sulla barra dei menu scegliere **Compila** > **Ricompila soluzione**.
+7. Sulla barra dei menu scegliere **Compila** > **Ricompila soluzione**.
 
 ## <a name="see-also"></a>Vedere anche
 

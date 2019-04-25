@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430332"
 ---
 # <a name="python-item-templates"></a>Modelli di elementi Python
 
@@ -49,5 +49,5 @@ La tabella seguente illustra brevemente l'effetto di ogni modello di elemento in
 ## <a name="see-also"></a>Vedere anche
 
 - [Gestire progetti Python - Modelli di progetto](managing-python-projects-in-visual-studio.md#project-templates)
-- [Modelli di progetti Web Python](python-web-application-project-templates.md)
+- [Modelli di progetto applicazione Web di Python](python-web-application-project-templates.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

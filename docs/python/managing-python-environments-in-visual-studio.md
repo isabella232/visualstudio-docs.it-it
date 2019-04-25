@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536759"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Come creare e gestire gli ambienti Python in Visual Studio
 
@@ -32,8 +32,8 @@ In Visual Studio in Windows la finestra **Ambienti Python**, descritta in questo
 
 Se non si ha familiarità con Python in Visual Studio, vedere gli articoli seguenti per le informazioni di base necessarie:
 
-- [usare Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
-- [Installare il supporto Python in Visual Studio](installing-python-support-in-visual-studio.md)
+- [Usare Python in Visual Studio](overview-of-python-tools-for-visual-studio.md)
+- [Come installare il supporto di Python in Visual Studio](installing-python-support-in-visual-studio.md)
 
 > [!Note]
 > Non è possibile gestire ambienti per il codice Python aperto solo come cartella tramite il comando **File** > **Apri** > **Cartella**. In alternativa, [creare un progetto Python da codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md) per sfruttare le funzionalità dell'ambiente di Visual Studio.

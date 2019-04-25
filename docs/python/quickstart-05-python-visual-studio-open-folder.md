@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431161"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Guida introduttiva: Aprire ed eseguire il codice Python in una cartella
 
@@ -107,10 +107,10 @@ In questi casi, è anche necessario aggiungere una riga al file JSON di configur
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Esercitazione: usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Esercitazione: Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Guida introduttiva: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
-- [Guida introduttiva: Creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
+- [Avvio rapido: Creare un progetto Python a partire da un codice esistente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
+- [Avvio rapido: Creare un progetto Python da un repository](quickstart-03-python-in-visual-studio-project-from-repository.md)
 - [Identificare manualmente un interprete Python esistente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)

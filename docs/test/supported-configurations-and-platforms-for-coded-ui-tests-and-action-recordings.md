@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: df0955cc86ef3b57885234fe4e7b1a52fa37f950
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431227"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 
@@ -27,7 +27,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 
 **Requisiti**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Configurazioni supportate
 
@@ -40,7 +40,6 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 
 > [!NOTE]
 > *Sincronizzazione dell'interfaccia utente* è una funzionalità in cui la riproduzione viene verificata nella coda messaggi di ogni controllo. Se un controllo non risponde all'evento ricevuto, quest'ultimo viene nuovamente inviato.
-
 
 ## <a name="platform-support"></a>Supporto per piattaforme
 

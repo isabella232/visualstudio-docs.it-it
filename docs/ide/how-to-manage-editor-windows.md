@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429015"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
 
@@ -33,9 +33,9 @@ Per semplificare la modifica è possibile suddividere una finestra dell'editor i
 
 ### <a name="to-split-a-pane"></a>Per suddividere un riquadro
 
-1.  Fare clic all'interno della finestra dell'editor per attivarla.
+1. Fare clic all'interno della finestra dell'editor per attivarla.
 
-2.  Dal menu **Finestra** selezionare **Dividi**.
+2. Dal menu **Finestra** selezionare **Dividi**.
 
      L'area di modifica viene suddivisa in due riquadri separati da una barra di divisione. È possibile scorrere questi riquadri in modo indipendente per visualizzare e modificare contemporaneamente parti diverse del documento attivo. Tutte le modifiche apportate in un riquadro si riflettono nell'altro.
 
@@ -44,7 +44,7 @@ Per semplificare la modifica è possibile suddividere una finestra dell'editor i
 
 ### <a name="to-return-to-single-pane-view"></a>Per tornare alla visualizzazione a riquadro singolo
 
--   Dal menu **Finestra** selezionare **Rimuovi divisione**.
+- Dal menu **Finestra** selezionare **Rimuovi divisione**.
 
 ## <a name="create-new-windows"></a>Creare nuove finestre
 

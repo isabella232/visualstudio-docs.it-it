@@ -12,36 +12,36 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d05dd3a6c6797bbd563a45e93df76ec16f1e36b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789605"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedura: Visualizzare gli URL come collegamenti nell'editor
 
 È possibile fare in modo che l'Editor del codice consideri gli URL (Uniform Resource Locator) all'interno del codice come collegamenti attivi. Quando si usa questa funzionalità, gli URL:
 
--   Vengono sottolineati.
+- Vengono sottolineati.
 
--   Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.
+- Visualizzano una **descrizione comando** quando si passa il puntatore su di essi.
 
--   Tenta di aprire il sito Web indicato quando si **Ctrl**+**fare clic su** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
+- Tenta di aprire il sito Web indicato quando si **Ctrl**+**fare clic su** sul collegamento. Per impostazione predefinita, il sito Web viene visualizzato nel Web browser interno.
 
 ## <a name="display-urls-as-links"></a>Visualizzare gli URL come collegamenti
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Fare clic su **Editor di testo**.
+2. Fare clic su **Editor di testo**.
 
-3.  Per modificare l'opzione per un solo linguaggio, espandere la cartella corrispondente a questo e scegliere **Generale**.
+3. Per modificare l'opzione per un solo linguaggio, espandere la cartella corrispondente a questo e scegliere **Generale**.
 
      -oppure-
 
      Per modificare l'opzione per tutti i linguaggi, espandere la cartella **Tutti i linguaggi** e scegliere **Generale**.
 
-4.  In **Display** selezionare **Consenti apertura URL con clic singolo**.
+4. In **Display** selezionare **Consenti apertura URL con clic singolo**.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -16,19 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee1426c763b60325190a5d15744fabe5eaa1b3ae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f0afa597a11207d4e4cb843356cf36d199b460f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779324"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>Crea attività VisualBasicManifestResourceName
 Crea un nome di manifesto nello stile di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] da un nome file con estensione *resx* specifico o da un'altra risorsa.
 
 ## <a name="parameters"></a>Parametri
  La tabella seguente descrive i parametri dell'[attività CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).
-
 
 | Parametro | Description |
 | - | - |

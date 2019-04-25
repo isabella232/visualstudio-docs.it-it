@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783612"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Abilitare test codificati dell'interfaccia utente per i controlli
 
@@ -37,7 +37,7 @@ Il generatore di test codificati dell'interfaccia utente acquisisce informazioni
 
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
-1.  Implementare una classe che derivi da <xref:System.Windows.Forms.Control.ControlAccessibleObject> ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> per restituire un oggetto della classe.
+1. Implementare una classe che derivi da <xref:System.Windows.Forms.Control.ControlAccessibleObject> ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> per restituire un oggetto della classe.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Il generatore di test codificati dell'interfaccia utente acquisisce informazioni
     }
     ```
 
-2.  Eseguire l'override dei metodi e delle proprietà <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> e <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> dell'oggetto accessibile.
+2. Eseguire l'override dei metodi e delle proprietà <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> e <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> dell'oggetto accessibile.
 
-3.  Implementare un altro oggetto accessibilità per il controllo figlio ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> del controllo figlio per restituire tale oggetto accessibilità.
+3. Implementare un altro oggetto accessibilità per il controllo figlio ed eseguire l'override della proprietà <xref:System.Windows.Forms.Control.AccessibilityObject%2A> del controllo figlio per restituire tale oggetto accessibilità.
 
-4.  Eseguire l'override delle proprietà e dei metodi <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> per l'oggetto accessibilità del controllo figlio.
+4. Eseguire l'override delle proprietà e dei metodi <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> per l'oggetto accessibilità del controllo figlio.
 
 > [!NOTE]
 > Questo argomento inizia con l'esempio di accessibilità in <xref:System.Windows.Forms.AccessibleObject> e si basa quindi su tale esempio nelle procedure restanti. Se si vuole creare una versione funzionante dell'esempio di accessibilità, creare un'applicazione console e quindi sostituire il codice in *Program.cs* con il codice di esempio. Aggiungere riferimenti a oggetti Accessibility, System.Drawing e System.Windows.Forms. Modificare **Incorpora tipi di interoperabilità** per l'accessibilità impostandolo su **False** per eliminare l'avviso di compilazione. È possibile modificare il tipo di output del progetto da **Applicazione console** ad **Applicazione Windows** in modo che non venga visualizzata alcuna finestra della console quando si esegue l'applicazione.
@@ -182,19 +182,19 @@ Il provider di proprietà e il filtro azioni vengono implementati in un pacchett
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Per eseguire il debug del provider di proprietà o del filtro azioni
 
-1.  Compilare la versione di debug del pacchetto di estensione copiare i file con estensione *dll* e *pdb* in *%Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compilare la versione di debug del pacchetto di estensione copiare i file con estensione *dll* e *pdb* in *%Programmi%\File comuni\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Eseguire l'applicazione (non nel debugger).
+2. Eseguire l'applicazione (non nel debugger).
 
-3.  Eseguire il generatore di test codificati dell'interfaccia utente.
+3. Eseguire il generatore di test codificati dell'interfaccia utente.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Associare il debugger al processo codedUITestBuilder.
+4. Associare il debugger al processo codedUITestBuilder.
 
-5.  Impostare i punti di interruzione nel codice.
+5. Impostare i punti di interruzione nel codice.
 
-6.  Nel generatore di test codificati dell'interfaccia utente creare le asserzioni per verificare il provider di proprietà e registrare azioni per verificare i filtri azioni.
+6. Nel generatore di test codificati dell'interfaccia utente creare le asserzioni per verificare il provider di proprietà e registrare azioni per verificare i filtri azioni.
 
 ## <a name="see-also"></a>Vedere anche
 
