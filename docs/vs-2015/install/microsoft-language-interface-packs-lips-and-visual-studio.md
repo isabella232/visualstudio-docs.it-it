@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096504"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,46 +43,46 @@ Con un Windows Language Interface Pack (LIP) è possibile installare una version
 ### <a name="support-for-code-pages"></a>Supporto delle tabelle codici
  Alcuni strumenti di Visual Studio non visualizzano il testo correttamente quando questo contiene caratteri non presenti nella tabella codici corrente. Al posto del testo vengono visualizzati dei punti interrogativi oppure il testo appare danneggiato. Di seguito sono elencati gli strumenti o le aree interessati da questo problema:
 
--   Siti distribuiti tramite FTP.
+- Siti distribuiti tramite FTP.
 
--   Nomi di computer non ASCII in alcuni controlli.
+- Nomi di computer non ASCII in alcuni controlli.
 
--   Strumenti della riga di comando eseguiti all'esterno di Visual Studio.
+- Strumenti della riga di comando eseguiti all'esterno di Visual Studio.
 
--   Migrazione guidata di Visual Basic.
+- Migrazione guidata di Visual Basic.
 
--   ActiveX Control Test Container.
+- ActiveX Control Test Container.
 
--   Visualizzatore oggetti OLE/COM.
+- Visualizzatore oggetti OLE/COM.
 
--   Strumento di debug Web ISAPI.
+- Strumento di debug Web ISAPI.
 
--   Progetti di applicazioni MFC con contenuto della Guida HTML.
+- Progetti di applicazioni MFC con contenuto della Guida HTML.
 
--   Le interfacce utente di Visual SourceSafe/SCCI vengono reimpostate in lingua inglese quando la tabella dei codici non è compatibile.
+- Le interfacce utente di Visual SourceSafe/SCCI vengono reimpostate in lingua inglese quando la tabella dei codici non è compatibile.
 
--   Visual SourceSafe non supporta i nomi file in formato Unicode.
+- Visual SourceSafe non supporta i nomi file in formato Unicode.
 
--   I caratteri definiti dall'utente finale (area di uso privata) non possono essere usati come token o identificatori.
+- I caratteri definiti dall'utente finale (area di uso privata) non possono essere usati come token o identificatori.
 
--   I caratteri in latino esteso B non possono essere visualizzati in alcune finestre degli strumenti di Visual Studio quando la tabella codici di Windows è impostata su una lingua dell'Asia orientale.
+- I caratteri in latino esteso B non possono essere visualizzati in alcune finestre degli strumenti di Visual Studio quando la tabella codici di Windows è impostata su una lingua dell'Asia orientale.
 
--   Le sequenze di testo costituite da caratteri provenienti da script in più lingue possono visualizzare il glifo predefinito per alcuni caratteri.
+- Le sequenze di testo costituite da caratteri provenienti da script in più lingue possono visualizzare il glifo predefinito per alcuni caratteri.
 
--   L'operazione di copia e incolla di stringhe di script complesse in controlli comuni potrebbe causare la perdita della forma dei caratteri. Usare invece la tastiera nella lingua corrispondente per immettere il testo.
+- L'operazione di copia e incolla di stringhe di script complesse in controlli comuni potrebbe causare la perdita della forma dei caratteri. Usare invece la tastiera nella lingua corrispondente per immettere il testo.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Per visualizzare correttamente i caratteri non inclusi nella tabella codici corrente
 
-1.  Fare clic su**Start**, **Pannello di controllo**, quindi aprire **Opzioni internazionali e della lingua** (o **Area geografica** in [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Fare clic su**Start**, **Pannello di controllo**, quindi aprire **Opzioni internazionali e della lingua** (o **Area geografica** in [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
     >  Per eseguire questa procedura è necessario essere un amministratore del computer.
 
-2.  Fare clic sulla scheda **Avanzate**.
+2. Fare clic sulla scheda **Avanzate**.
 
-3.  Nell'elenco **Selezionare una lingua per i programmi non Unicode da usare** selezionare la lingua attualmente in uso.
+3. Nell'elenco **Selezionare una lingua per i programmi non Unicode da usare** selezionare la lingua attualmente in uso.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Modifica della lingua usata per il testo dell'interfaccia utente in Visual Studio
  Quando si installano più versioni localizzate di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nello stesso computer, per l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene usata l'impostazione predefinita **Come Microsoft Windows**. Questa impostazione indica che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] visualizzerà il testo dell'interfaccia utente nella lingua specificata come lingua di visualizzazione per il sistema operativo.

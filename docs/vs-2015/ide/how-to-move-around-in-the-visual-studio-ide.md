@@ -1,5 +1,5 @@
 ---
-title: "Procedura: spostarsi nell'IDE | Microsoft Docs"
+title: "Procedura: Spostarsi nell'IDE | Microsoft Docs"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069512"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: spostarsi nell'IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Per passare a file specifici nell'editor
 
--   Premere CTRL + TAB per visualizzare lo **strumento di spostamento dell'IDE**. Tenere premuto il tasto CTRL e premere ripetutamente TAB fino a quando non si seleziona il file a cui si intende accedere.
+- Premere CTRL + TAB per visualizzare lo **strumento di spostamento dell'IDE**. Tenere premuto il tasto CTRL e premere ripetutamente TAB fino a quando non si seleziona il file a cui si intende accedere.
 
     > [!TIP]
     >  Per invertire l'ordine di spostamento nell'elenco dei **file attivi**, tenere premuto CTRL + MAIUSC e premere TAB.
 
      \- oppure -
 
--   Nell'angolo superiore destro dell'editor, scegliere il pulsante **File attivi** e selezionare un file dell'elenco per aprirlo.
+- Nell'angolo superiore destro dell'editor, scegliere il pulsante **File attivi** e selezionare un file dell'elenco per aprirlo.
 
      \- oppure -
 
--   Sulla barra dei menu scegliere **Finestra**, **Windows**.
+- Sulla barra dei menu scegliere **Finestra**, **Windows**.
 
--   Nell'elenco selezionare il file che si vuole visualizzare e scegliere **Attiva**.
+- Nell'elenco selezionare il file che si vuole visualizzare e scegliere **Attiva**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Passare da una finestra degli strumenti all'altra nell'IDE
  Lo **strumento di spostamento dell'IDE** consente di scorrere le finestre degli strumenti aperte nell'IDE. È possibile usare uno dei due comandi per accedere allo **strumento di spostamento dell'IDE** e passare da una finestra degli strumenti all'altra, in base all'ordine che si preferisce. `Window.PreviousToolWindowNav` consente di passare al file utilizzato più di recente, mentre `Window.NextToolWindowNav` consente di spostarsi in ordine inverso. Nelle impostazioni generali per lo sviluppo la combinazione MAIUSC + ALT + F7 è assegnata a `Window.PreviousDocumentWindowNav` e quella ALT + F7 a `Window.NextDocumentWindowNav`.
@@ -86,10 +86,10 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Per passare a una finestra degli strumenti specifica nell'IDE
 
--   Premere ALT + F7 per visualizzare lo **strumento di navigazione dell'IDE**. Tenere premuto il tasto ALT e premere ripetutamente F7 fino a quando non si seleziona la finestra alla quale si intende accedere.
+- Premere ALT + F7 per visualizzare lo **strumento di navigazione dell'IDE**. Tenere premuto il tasto ALT e premere ripetutamente F7 fino a quando non si seleziona la finestra alla quale si intende accedere.
 
     > [!TIP]
     >  Per invertire l'ordine di spostamento nell'elenco **Finestra degli strumenti attivi**, tenere premuto MAIUSC + ALT e premere F7.
 
 ## <a name="see-also"></a>Vedere anche
- [Personalizzazione del layout finestra](../ide/customizing-window-layouts-in-visual-studio.md) [tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md)
+ [Personalizzazione dei layout della finestra](../ide/customizing-window-layouts-in-visual-studio.md) [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md)

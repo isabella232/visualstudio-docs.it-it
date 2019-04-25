@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504419"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
@@ -48,7 +48,7 @@ Per impostare le opzioni del debugger di Visual Studio, selezionare **Tools** > 
 
 Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice gestito in `mscorlib` anziché da common language runtime. Questa opzione non influisce sull'interruzione di eccezioni intercettate da `mscorlib`.
 
-**Abilita debug a livello di indirizzo**: Abilita le funzionalità avanzate per il debug a livello di indirizzo (finestra Disassembly, finestra **Registri** e punti di interruzione).
+**Abilita debug a livello di indirizzo**: Abilita le funzionalità avanzate per il debug a livello di indirizzo (finestra **Disassembly**, finestra **Registri** e punti di interruzione).
 
 - **Mostra disassembly se l'origine non è disponibile**:   Mostra automaticamente il **Disassembly** finestra durante il debug di codice per cui l'origine è disponibile.
 
@@ -93,7 +93,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Richiedi corrispondenza esatta dei file di origine con la versione originale**: Indica al debugger di verificare che un file di origine corrisponda alla versione del codice sorgente utilizzato per compilare l'eseguibile sottoposto a debug. Quando la versione non corrisponde, viene chiesto di trovare un'origine corrispondente. Se la ricerca ha esito negativo, il codice sorgente non verrà visualizzato durante il debug.
 
-**Reindirizza tutto il testo della finestra di output nella finestra di controllo immediato**: Invia alla finestra Controllo immediato tutti i messaggi del debugger che normalmente verrebbero visualizzati nella finestra **Output**.
+**Reindirizza tutto il testo della finestra di output nella finestra di controllo immediato**: Invia alla finestra **Controllo immediato** tutti i messaggi del debugger che normalmente verrebbero visualizzati nella finestra **Output**.
 
 **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili**: Disattiva tutte le personalizzazioni di visualizzazione della struttura degli oggetti. Per altre informazioni sulla personalizzazione delle visualizzazioni, vedere [creare viste personalizzate di oggetti. Managed](../debugger/create-custom-views-of-dot-managed-objects.md).
 
