@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547819"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Procedura: Compilare in una directory di output comune
 
@@ -26,13 +26,13 @@ Per impostazione predefinita, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Per inserire tutti gli output della soluzione in una directory comune
 
-1.  Fare clic su un progetto nella soluzione.
+1. Fare clic su un progetto nella soluzione.
 
-2.  Scegliere **Proprietà** dal menu **Progetto**.
+2. Scegliere **Proprietà** dal menu **Progetto**.
 
-3.  A seconda del tipo di progetto, fare clic sulla scheda **Compila** o **Build** e impostare il **Percorso di output** su una cartella da usare per tutti i progetti della soluzione.
+3. A seconda del tipo di progetto, fare clic sulla scheda **Compila** o **Build** e impostare il **Percorso di output** su una cartella da usare per tutti i progetti della soluzione.
 
-4.  Ripetere i passaggi da 1 a 3 per tutti i progetti della soluzione.
+4. Ripetere i passaggi da 1 a 3 per tutti i progetti della soluzione.
 
 ## <a name="see-also"></a>Vedere anche
 

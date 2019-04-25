@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429283"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedura: Personalizzare menu e barre degli strumenti in Visual Studio
 
@@ -43,38 +43,38 @@ ms.locfileid: "55955635"
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Aggiungere, rimuovere o spostare un menu nella barra dei menu
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
-2.  Nella scheda **Comandi** lasciare selezionato il pulsante di opzione **Barra dei menu**, lasciare selezionata **Barra dei menu** nell'elenco accanto all'opzione e quindi eseguire una delle procedure indicate di seguito:
+2. Nella scheda **Comandi** lasciare selezionato il pulsante di opzione **Barra dei menu**, lasciare selezionata **Barra dei menu** nell'elenco accanto all'opzione e quindi eseguire una delle procedure indicate di seguito:
 
-    -   Per aggiungere un menu, selezionare il pulsante **Aggiungi nuovo menu** e il pulsante **Modifica selezione** e quindi assegnare un nome al menu che si vuole aggiungere.
+    - Per aggiungere un menu, selezionare il pulsante **Aggiungi nuovo menu** e il pulsante **Modifica selezione** e quindi assegnare un nome al menu che si vuole aggiungere.
 
         ![Finestra di dialogo Personalizza che mostra come aggiungere un menu](../ide/media/addmenu.png)
 
-    -   Per rimuovere un menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Elimina**.
+    - Per rimuovere un menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Elimina**.
 
-    -   Per spostare un menu all'interno della barra dei menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Sposta su** o **Sposta giù**.
+    - Per spostare un menu all'interno della barra dei menu, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Sposta su** o **Sposta giù**.
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Aggiungere, rimuovere o spostare una barra degli strumenti
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
 
      Viene visualizzata la finestra di dialogo **Personalizza**.
 
-2.  Nella scheda **Barra degli strumenti** seguire una delle procedure indicate di seguito:
+2. Nella scheda **Barra degli strumenti** seguire una delle procedure indicate di seguito:
 
-    -   Per aggiungere una barra degli strumenti, selezionare il pulsante **Nuovo**, specificare un nome per la barra degli strumenti da aggiungere e quindi fare clic sul pulsante **OK**.
+    - Per aggiungere una barra degli strumenti, selezionare il pulsante **Nuovo**, specificare un nome per la barra degli strumenti da aggiungere e quindi fare clic sul pulsante **OK**.
 
         ![Finestra di dialogo Personalizza che mostra come aggiungere una barra degli strumenti](../ide/media/addtoolbar.png)
 
-    -   Per rimuovere una barra degli strumenti personalizzata, selezionarla nell'elenco **Barre degli strumenti**e fare clic sul pulsante **Elimina**.
+    - Per rimuovere una barra degli strumenti personalizzata, selezionarla nell'elenco **Barre degli strumenti**e fare clic sul pulsante **Elimina**.
 
         > [!IMPORTANT]
         > È possibile eliminare le barre degli strumenti create, ma non quelle predefinite.
 
-    -   Per spostare una barra degli strumenti in una posizione di ancoraggio diversa, selezionarla nell'elenco **Barre degli strumenti**, fare clic sul pulsante **Modifica selezione** e quindi scegliere una posizione nell'elenco visualizzato.
+    - Per spostare una barra degli strumenti in una posizione di ancoraggio diversa, selezionarla nell'elenco **Barre degli strumenti**, fare clic sul pulsante **Modifica selezione** e quindi scegliere una posizione nell'elenco visualizzato.
 
         È inoltre possibile trascinare una barra degli strumenti per il bordo sinistro e spostarla in qualsiasi punto dell'area di ancoraggio principale.
 
@@ -83,37 +83,37 @@ ms.locfileid: "55955635"
 
 ## <a name="customizing_menu">Personalizzare un menu o di una barra degli strumenti</a>
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
-2.  Nella scheda **Comandi** selezionare il pulsante di opzione per il tipo di elemento che si vuole personalizzare.
+2. Nella scheda **Comandi** selezionare il pulsante di opzione per il tipo di elemento che si vuole personalizzare.
 
-3.  Nell'elenco relativo al tipo di elemento desiderato selezionare il menu o la barra degli strumenti da personalizzare, quindi eseguire una delle procedure indicate di seguito.
+3. Nell'elenco relativo al tipo di elemento desiderato selezionare il menu o la barra degli strumenti da personalizzare, quindi eseguire una delle procedure indicate di seguito.
 
-    -   Per aggiungere un comando, selezionare il pulsante **Aggiungi comando**.
+    - Per aggiungere un comando, selezionare il pulsante **Aggiungi comando**.
 
         Nella finestra di dialogo **Aggiungi comando** scegliere un elemento dall'elenco **Categorie**, scegliere un elemento dall'elenco **Comandi** e quindi fare clic sul pulsante **OK**.
 
         ![Finestra di dialogo Aggiungi comando in Visual Studio](../ide/media/addcommand.png)
 
-    -   Per eliminare un comando, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Elimina**.
+    - Per eliminare un comando, selezionarlo nell'elenco **Controlli** e fare clic sul pulsante **Elimina**.
 
-    -   Per riordinare i comandi, selezionarne uno nell'elenco **Controlli** e fare clic sul pulsante **Sposta su** o **Sposta giù**.
+    - Per riordinare i comandi, selezionarne uno nell'elenco **Controlli** e fare clic sul pulsante **Sposta su** o **Sposta giù**.
 
-    -   Per raggruppare i comandi sotto una linea orizzontale, scegliere il primo comando nell'elenco **Controlli**, fare clic sul pulsante **Modifica selezione** e quindi scegliere **Inizia un gruppo** nel menu visualizzato.
+    - Per raggruppare i comandi sotto una linea orizzontale, scegliere il primo comando nell'elenco **Controlli**, fare clic sul pulsante **Modifica selezione** e quindi scegliere **Inizia un gruppo** nel menu visualizzato.
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Reimpostare un menu o una barra degli strumenti
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
+1. Nella barra dei menu scegliere **Strumenti** > **Personalizza**.
 
     Viene visualizzata la finestra di dialogo **Personalizza**.
 
-2.  Nella scheda **Comandi** selezionare il pulsante di opzione per il tipo di elemento che si vuole reimpostare.
+2. Nella scheda **Comandi** selezionare il pulsante di opzione per il tipo di elemento che si vuole reimpostare.
 
-3.  Nell'elenco del tipo di elemento desiderato selezionare il menu o la barra degli strumenti da reimpostare.
+3. Nell'elenco del tipo di elemento desiderato selezionare il menu o la barra degli strumenti da reimpostare.
 
-4.  Selezionare il pulsante **Modifica selezione** e scegliere **Reimposta** nel menu visualizzato.
+4. Selezionare il pulsante **Modifica selezione** e scegliere **Reimposta** nel menu visualizzato.
 
     È anche possibile reimpostare tutti i menu e le barre degli strumenti facendo clic sul pulsante **Reimposta tutto**.
 

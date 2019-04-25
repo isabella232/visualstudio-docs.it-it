@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582605"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurare un progetto C++ per IntelliSense
 
 In alcuni casi, potrebbe essere necessario configurare manualmente il progetto C++ per il corretto funzionamento di IntelliSense. Per i progetti MSBuild (basati su file con estensione vcxproj), è possibile modificare le impostazioni nelle proprietà del progetto. Per i progetti non MSBuild, è possibile modificare le impostazioni nel file CppProperties.json nella directory radice del progetto. In alcuni casi, potrebbe essere necessario creare un file dei suggerimenti per aiutare IntelliSense a riconoscere le definizioni di macro. L'IDE di Visual Studio permette di identificare e correggere i problemi di IntelliSense.
-
-
 
 ## <a name="single-file-intellisense"></a>IntelliSense con singolo file
 

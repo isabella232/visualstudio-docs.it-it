@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810248"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Guida introduttiva: Analizzare i dati d'uso della CPU in Visual Studio (ASP.NET)
 
@@ -153,30 +153,30 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
+## <a name="step-1-collect-profiling-data"></a>Passaggio 1: Raccogliere i dati di profilatura
 
-1.  In primo luogo impostare un punto di interruzione dell'app su questa riga di codice nel costruttore `Simple`:
+1. In primo luogo impostare un punto di interruzione dell'app su questa riga di codice nel costruttore `Simple`:
 
     `for (int i = 0; i < 200; i++)`
 
     Per impostare un punto di interruzione fare clic sul margine a sinistra della riga di codice.
 
-1.  Impostare quindi un secondo punto di interruzione sulla parentesi graffa di chiusura alla fine del costruttore `Simple`:
+1. Impostare quindi un secondo punto di interruzione sulla parentesi graffa di chiusura alla fine del costruttore `Simple`:
 
      ![Impostare i punti di interruzione per la profilatura](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Impostando i due punti di interruzione è possibile limitare la raccolta dei dati per le parti di codice che si vuole analizzare.
 
-1.  La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+1. La finestra **Strumenti di diagnostica** è già visibile, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-1.  Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+1. Fare clic su **Debug** > **Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
-1.  Al termine del caricamento dell'app fare clic sul collegamento **Informazioni** nella parte superiore della pagina web per avviare l'esecuzione del nuovo codice.
+1. Al termine del caricamento dell'app fare clic sul collegamento **Informazioni** nella parte superiore della pagina web per avviare l'esecuzione del nuovo codice.
 
-1.  Viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
+1. Viene visualizzata la vista **Riepilogo** degli strumenti di diagnostica.
 
-1.  Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU scegliendo **Registra profilo CPU**, quindi aprire la scheda **Utilizzo CPU**.
+1. Quando il debugger è in pausa, abilitare la raccolta dei dati relativi all'utilizzo della CPU scegliendo **Registra profilo CPU**, quindi aprire la scheda **Utilizzo CPU**.
 
      ![Abilitazione profilatura CPU in Strumenti di diagnostica](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ Per Windows 8 e versioni successive è necessario eseguire gli strumenti di prof
 
      Quando si sceglie **Registra profilo CPU** Visual Studio inizia a registrare le funzioni e il tempo necessario per l'esecuzione e crea un grafico della sequenza temporale, utile per concentrarsi su segmenti specifici della sessione di campionamento. È possibile visualizzare i dati raccolti solo quando l'esecuzione dell'applicazione si interrompe in corrispondenza di un punto di interruzione.
 
-6.  Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
+6. Premere F5 per eseguire l'applicazione fino al secondo punto di interruzione.
 
      Ora si hanno a disposizione i dati relativi alle prestazioni per l'applicazione, precisamente per l'area di codice compresa tra i due punti di interruzione.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822761"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes
 
@@ -20,8 +20,8 @@ Questo articolo illustra problemi e opzioni di generazione e compilazione di cod
 
 **Requisiti**
 
--   Visual Studio Enterprise
--   Un progetto .NET Framework
+- Visual Studio Enterprise
+- Un progetto .NET Framework
 
 > [!NOTE]
 > I progetti .NET Standard non sono supportati.
@@ -62,23 +62,23 @@ Il seguente file *FAKES*, ad esempio, genera stub per i tipi negli spazi dei nom
 
 Le stringhe di filtro usano una grammatica semplice per definire come eseguire la corrispondenza:
 
--   Per impostazione predefinita, i filtri non fanno distinzione tra maiuscole e minuscole e trovano la corrispondenza nelle sottostringhe:
+- Per impostazione predefinita, i filtri non fanno distinzione tra maiuscole e minuscole e trovano la corrispondenza nelle sottostringhe:
 
      `el` trova la corrispondenza con "hello"
 
--   Se si aggiunge `!` alla fine del filtro, viene trovata una corrispondenza precisa con distinzione tra maiuscole e minuscole:
+- Se si aggiunge `!` alla fine del filtro, viene trovata una corrispondenza precisa con distinzione tra maiuscole e minuscole:
 
      `el!` non trova la corrispondenza con "hello"
 
      `hello!` trova la corrispondenza con "hello"
 
--   Se si aggiunge `*` alla fine del filtro, viene trovata una corrispondenza con il prefisso della stringa:
+- Se si aggiunge `*` alla fine del filtro, viene trovata una corrispondenza con il prefisso della stringa:
 
      `el*` non trova la corrispondenza con "hello"
 
      `he*` trova la corrispondenza con "hello"
 
--   Più filtri in un elenco con valori delimitati da punti e virgola vengono combinati come disgiunzione:
+- Più filtri in un elenco con valori delimitati da punti e virgola vengono combinati come disgiunzione:
 
      `el;wo` trova la corrispondenza con "hello" e "world"
 
@@ -114,9 +114,9 @@ Il generatore di codice Fakes genera tipi shim e stub per i tipi visibili nell'a
 
  Se l'assembly sottoposto a shim ha un nome sicuro e si vuole accedere ai tipi interni dell'assembly:
 
--   Sia l'assembly di test sia l'assembly Fakes devono avere un nome sicuro.
+- Sia l'assembly di test sia l'assembly Fakes devono avere un nome sicuro.
 
--   Aggiungere le chiavi pubbliche degli assembly di test e Fakes agli attributi **InternalsVisibleToAttribute** negli assembly sottoposti a shim. Ecco come appaiono gli attributi di esempio nel codice dell'assembly sottoposto a shim quando tale assembly ha un nome sicuro:
+- Aggiungere le chiavi pubbliche degli assembly di test e Fakes agli attributi **InternalsVisibleToAttribute** negli assembly sottoposti a shim. Ecco come appaiono gli attributi di esempio nel codice dell'assembly sottoposto a shim quando tale assembly ha un nome sicuro:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ La compilazione di assembly Fakes può comportare un aumento significativo del t
 
 Dai progetti di unit test aggiungere un riferimento agli assembly Fakes compilati che si trovano in FakesAssemblies nella cartella del progetto.
 
-1.  Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *class1.cs* dal progetto, in quanto non è necessario.
+1. Creare una nuova libreria di classi con la versione del runtime .NET corrispondente ai progetti di test. Verrà usato il nome Fakes.Prebuild. Rimuovere il file *class1.cs* dal progetto, in quanto non è necessario.
 
-2.  Aggiungere un riferimento a tutti gli assembly di sistema e di terze parti per i quali è necessario Fakes.
+2. Aggiungere un riferimento a tutti gli assembly di sistema e di terze parti per i quali è necessario Fakes.
 
-3.  Aggiungere un file *FAKES* per ognuno degli assembly ed eseguire la compilazione.
+3. Aggiungere un file *FAKES* per ognuno degli assembly ed eseguire la compilazione.
 
-4.  Dal progetto di test
+4. Dal progetto di test
 
-    -   Assicurarsi di disporre di un riferimento alla DLL di runtime Fakes:
+    - Assicurarsi di disporre di un riferimento alla DLL di runtime Fakes:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Per ogni assembly per cui è stato creato Fakes, aggiungere un riferimento al file DLL corrispondente nella cartella *Fakes.Prebuild\FakesAssemblies* del progetto.
+    - Per ogni assembly per cui è stato creato Fakes, aggiungere un riferimento al file DLL corrispondente nella cartella *Fakes.Prebuild\FakesAssemblies* del progetto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitare conflitti di nome tra gli assembly
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Le regole seguenti vengono applicate in modo ricorsivo:
 
--   Poiché Fakes usa C# per generare gli assembly Fakes, qualsiasi carattere che produrrebbe un token C# non valido viene fatto precedere da un carattere di escape "_" (carattere di sottolineatura).
+- Poiché Fakes usa C# per generare gli assembly Fakes, qualsiasi carattere che produrrebbe un token C# non valido viene fatto precedere da un carattere di escape "_" (carattere di sottolineatura).
 
--   Se un nome risultante è in conflitto con qualsiasi membro del tipo dichiarante, viene usato uno schema di numerazione aggiungendo un contatore a due cifre, a partire da 01.
+- Se un nome risultante è in conflitto con qualsiasi membro del tipo dichiarante, viene usato uno schema di numerazione aggiungendo un contatore a due cifre, a partire da 01.
 
 ## <a name="see-also"></a>Vedere anche
 

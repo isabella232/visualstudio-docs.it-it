@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783941"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurare agenti di test e test controller per i test di carico
 
@@ -27,11 +27,11 @@ Visual Studio è in grado di generare un carico simulato per l'app usando macchi
 
 L'architettura di simulazione di carico è costituita da un client di Visual Studio, un controller di test e agenti di test.
 
--   Il client viene usato per sviluppare i test, eseguire i test e visualizzare i risultati dei test.
+- Il client viene usato per sviluppare i test, eseguire i test e visualizzare i risultati dei test.
 
--   Il controller di test viene usato per gestire gli agenti di test e raccogliere i risultati dei test.
+- Il controller di test viene usato per gestire gli agenti di test e raccogliere i risultati dei test.
 
--   Gli agenti di test vengono usati per eseguire i test e raccogliere i dati, comprese le informazioni di sistema e i dati di profilatura di ASP.NET definiti nell'impostazione di test.
+- Gli agenti di test vengono usati per eseguire i test e raccogliere i dati, comprese le informazioni di sistema e i dati di profilatura di ASP.NET definiti nell'impostazione di test.
 
 Questa architettura offre i vantaggi seguenti:
 

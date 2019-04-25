@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779091"
 ---
 # <a name="warning-task"></a>attività Warning
 Registra un avviso durante una compilazione in base a un'istruzione condizionale valutata.
 
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `Warning` .
-
 
 | Parametro | Description |
 |---------------| - |

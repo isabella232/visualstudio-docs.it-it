@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795212"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generare un costruttore in Visual Studio
 
@@ -30,11 +30,11 @@ Questa generazione di codice si applica a:
 
 **Come:** esistono diversi modi per generare un costruttore:
 
-   - [Generare un costruttore e selezionare i membri](#pick)
-   - [Generare un costruttore dai campi selezionati](#selection)
-   - [Generare un costruttore da un nuovo utilizzo](#usage)
-   - [Aggiungere un parametro a un costruttore esistente](#addparameter)
-   - [Creare e inizializzare un campo/una proprietà dal parametro di un costruttore](#create)
+- [Generare un costruttore e selezionare i membri](#pick)
+- [Generare un costruttore dai campi selezionati](#selection)
+- [Generare un costruttore da un nuovo utilizzo](#usage)
+- [Aggiungere un parametro a un costruttore esistente](#addparameter)
+- [Creare e inizializzare un campo/una proprietà dal parametro di un costruttore](#create)
 
 ## <a id = "pick"></a> Generare un costruttore e selezionare i membri (solo C#)
 

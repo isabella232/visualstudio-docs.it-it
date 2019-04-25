@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815472"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator per Android
 
@@ -26,7 +26,7 @@ Il programma di installazione tenta di configurare automaticamente i prerequisit
 > [!IMPORTANT]
 > Il programma di installazione per l'emulatore verifica i prerequisiti per l'esecuzione di Visual Studio Emulator per Android. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti.
 
-##  <a name="Checklist"></a> Elenco di controllo rapido
+## <a name="Checklist"></a> Elenco di controllo rapido
 
 Di seguito è riportato un elenco di controllo rapido dei requisiti per l'esecuzione di Visual Studio Emulator per Android. Per informazioni più dettagliate, vedere le sezioni successive in questo argomento.
 
@@ -50,11 +50,11 @@ Requisiti di Hyper-V
 
 - Nel BIOS, devono essere supportate le funzionalità seguenti:
 
-  -   Virtualizzazione assistita da hardware
+  - Virtualizzazione assistita da hardware
 
-  -   Conversione indirizzi di secondo livello
+  - Conversione indirizzi di secondo livello
 
-  -   Protezione esecuzione programmi basata su hardware
+  - Protezione esecuzione programmi basata su hardware
 
 - In Windows, Hyper-V deve essere abilitato e in esecuzione.
 

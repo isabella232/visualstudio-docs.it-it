@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824243"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: Creare e modificare le configurazioni
 
@@ -54,69 +54,69 @@ Per altre informazioni sulle impostazioni della pagina delle proprietà, vedere 
 
 ## <a name="create-a-project-configuration"></a>Creare una configurazione di progetto
 
-1.  Aprire la finestra di dialogo **Gestione configurazione**.
+1. Aprire la finestra di dialogo **Gestione configurazione**.
 
-2.  Selezionare un progetto nella colonna **Progetto**.
+2. Selezionare un progetto nella colonna **Progetto**.
 
-3.  Nell'elenco a discesa **Configurazione** per il progetto scegliere **Nuovo**.
+3. Nell'elenco a discesa **Configurazione** per il progetto scegliere **Nuovo**.
 
      Si aprirà la finestra di dialogo **Nuova configurazione progetto**.
 
-4.  Nella casella **Nome** immettere un nome per la nuova configurazione.
+4. Nella casella **Nome** immettere un nome per la nuova configurazione.
 
-5.  Per usare le impostazioni delle proprietà di una configurazione di progetto esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.
+5. Per usare le impostazioni delle proprietà di una configurazione di progetto esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.
 
-6.  Per creare contemporaneamente una configurazione a livello di soluzione, selezionare la casella di controllo **Crea nuove configurazioni soluzione**.
+6. Per creare contemporaneamente una configurazione a livello di soluzione, selezionare la casella di controllo **Crea nuove configurazioni soluzione**.
 
 ## <a name="rename-a-project-configuration"></a>Rinominare una configurazione di progetto
 
-1.  Aprire la finestra di dialogo **Gestione configurazione**.
+1. Aprire la finestra di dialogo **Gestione configurazione**.
 
-2.  Nella colonna **Progetto** selezionare il progetto con la configurazione che si vuole rinominare.
+2. Nella colonna **Progetto** selezionare il progetto con la configurazione che si vuole rinominare.
 
-3.  Nell'elenco a discesa **Configurazione** per il progetto scegliere **Modifica**.
+3. Nell'elenco a discesa **Configurazione** per il progetto scegliere **Modifica**.
 
      Si aprirà la finestra di dialogo **Modifica configurazioni progetto**.
 
-4.  Selezionare il nome della configurazione di progetto che si vuole modificare.
+4. Selezionare il nome della configurazione di progetto che si vuole modificare.
 
-5.  Selezionare **Rinomina** e quindi immettere un nuovo nome.
+5. Selezionare **Rinomina** e quindi immettere un nuovo nome.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Creazione e modifica di configurazioni della build a livello di soluzione
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>Per creare una configurazione della build a livello di soluzione
 
-1.  Aprire la finestra di dialogo **Gestione configurazione**.
+1. Aprire la finestra di dialogo **Gestione configurazione**.
 
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Nuovo**.
+2. Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Nuovo**.
 
      Si aprirà la finestra di dialogo **Nuova configurazione soluzione**.
 
-3.  Nella casella di testo **Nome** immettere un nome per la nuova configurazione.
+3. Nella casella di testo **Nome** immettere un nome per la nuova configurazione.
 
-4.  Per usare le impostazioni di una configurazione della soluzione esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.
+4. Per usare le impostazioni di una configurazione della soluzione esistente, scegliere una configurazione nell'elenco a discesa **Copia impostazioni da**.
 
-5.  Se contemporaneamente si vogliono creare configurazioni di progetto, selezionare la casella di controllo **Crea nuove configurazioni progetto**.
+5. Se contemporaneamente si vogliono creare configurazioni di progetto, selezionare la casella di controllo **Crea nuove configurazioni progetto**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>Per rinominare una configurazione della build a livello di soluzione
 
-1.  Aprire la finestra di dialogo **Gestione configurazione**.
+1. Aprire la finestra di dialogo **Gestione configurazione**.
 
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Modifica**.
+2. Nell'elenco a discesa **Configurazione soluzione attiva** scegliere **Modifica**.
 
      Si aprirà la finestra di dialogo **Modifica configurazioni soluzione**.
 
-3.  Selezionare il nome della configurazione di soluzione che si vuole modificare.
+3. Selezionare il nome della configurazione di soluzione che si vuole modificare.
 
-4.  Selezionare **Rinomina** e quindi immettere un nuovo nome.
+4. Selezionare **Rinomina** e quindi immettere un nuovo nome.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>Per modificare una configurazione della build a livello di soluzione
 
-1.  Aprire la finestra di dialogo **Gestione configurazione**.
+1. Aprire la finestra di dialogo **Gestione configurazione**.
 
-2.  Nell'elenco a discesa **Configurazione soluzione attiva** selezionare la configurazione voluta.
+2. Nell'elenco a discesa **Configurazione soluzione attiva** selezionare la configurazione voluta.
 
-3.  Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** desiderate. Selezionare quindi se eseguire la **Build** e la **Distribuzione**.
+3. Nel riquadro **Contesti progetto** per ogni progetto selezionare la **Configurazione** e la **Piattaforma** desiderate. Selezionare quindi se eseguire la **Build** e la **Distribuzione**.
 
 ## <a name="see-also"></a>Vedere anche
 

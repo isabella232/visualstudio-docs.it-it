@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783343"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificare i tempi di interazione utente per simulare i ritardi di interazione umana con i siti Web in scenari di test di carico
 
@@ -48,13 +48,13 @@ Il tempo interazione utente viene usato, ma variato in una curva normale. Fornis
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Per modificare il profilo interazione utente in uno scenario di test di carico
 
-1.  Dal progetto di test di carico e prestazioni Web, aprire un test di carico.
+1. Dal progetto di test di carico e prestazioni Web, aprire un test di carico.
 
-2.  Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo interazione utente** verrà visualizzato nella finestra **Proprietà**. Premere **F4** per visualizzare la finestra **Proprietà**.
+2. Nell'**Editor test di carico** scegliere il nodo dello scenario in cui modificare il **profilo interazione utente**. Il **profilo interazione utente** verrà visualizzato nella finestra **Proprietà**. Premere **F4** per visualizzare la finestra **Proprietà**.
 
-3.  Modificare la proprietà **Profilo interazione utente** nella finestra **Proprietà**.
+3. Modificare la proprietà **Profilo interazione utente** nella finestra **Proprietà**.
 
-4.  Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
+4. Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. È quindi possibile eseguire il test di carico con il nuovo profilo interazione utente.
 
 ## <a name="see-also"></a>Vedere anche
 

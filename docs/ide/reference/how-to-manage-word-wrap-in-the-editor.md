@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789484"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: Gestire il ritorno a capo automatico nell'editor
 
@@ -28,19 +28,19 @@ ms.locfileid: "55926270"
 
 ## <a name="to-set-word-wrap-preferences"></a>Per impostare le preferenze del ritorno a capo automatico
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.
+2. Per impostare l'opzione a livello globale, nella cartella **Editor di testo** scegliere le opzioni **Generale** nella sottocartella **Tutti i linguaggi**.
 
      oppure
 
      Scegliere le opzioni **Generale** nella sottocartella corrispondente al linguaggio di programmazione in uso.
 
-3.  In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.
+3. In **Impostazioni**selezionare o deselezionare l'opzione **A capo automatico**.
 
      Se l'opzione **A capo automatico** è selezionata, l'opzione **Mostra icone per ritorno a capo automatico** è abilitata.
 
-4.  Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.
+4. Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.
 
     > [!NOTE]
     > Queste frecce di promemoria non vengono aggiunte al codice ma vengono solo visualizzate.

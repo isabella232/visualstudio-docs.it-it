@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822937"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificare una regola di estrazione personalizzata per un test delle prestazioni Web
 
@@ -31,24 +31,24 @@ ms.locfileid: "55923447"
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Per creare una regola di estrazione personalizzata
 
-1.  Aprire un progetto di test contenente un test delle prestazioni Web.
+1. Aprire un progetto di test contenente un test delle prestazioni Web.
 
-2.  (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di estrazione.
+2. (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di estrazione.
 
     > [!IMPORTANT]
     > È possibile creare la classe nello stesso progetto in cui si trovano i test. Tuttavia, se si desidera riutilizzare la regola, è preferibile creare un progetto Libreria di classi distinto in cui archiviarla. Se si crea un progetto distinto, è necessario completare i passaggi facoltativi di questa procedura.
 
-3.  (Facoltativo) Nel progetto Libreria di classi aggiungere un riferimento alla dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Facoltativo) Nel progetto Libreria di classi aggiungere un riferimento alla dll Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Creare una classe che derivi dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implementare i membri <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
+4. Creare una classe che derivi dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implementare i membri <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
 
-5.  (Facoltativo) Compilare il nuovo progetto Libreria di classi.
+5. (Facoltativo) Compilare il nuovo progetto Libreria di classi.
 
-6.  (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di estrazione personalizzata.
+6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di estrazione personalizzata.
 
-7.  Nel progetto di test aprire un test delle prestazioni Web nell'**Editor test prestazioni Web**.
+7. Nel progetto di test aprire un test delle prestazioni Web nell'**Editor test prestazioni Web**.
 
-8.  Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e scegliere **Aggiungi regola di estrazione**.
+8. Per aggiungere la regola di estrazione personalizzata, fare clic con il pulsante destro del mouse su una richiesta di test delle prestazioni Web e scegliere **Aggiungi regola di estrazione**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di estrazione**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di estrazione personalizzata e scegliere **OK**.
 

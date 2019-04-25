@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791669"
 ---
 # <a name="build-page-project-designer-c"></a>Pagina Compilazione, Progettazione progetti (C#)
 Usare la pagina **Compilazione** di **Creazione progetti** per specificare le proprietà di configurazione della compilazione del progetto. Questa pagina è applicabile solo ai progetti [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -56,12 +56,11 @@ Se un'applicazione viene eseguita come applicazione a 64 bit, le dimensioni del 
 
 Questa casella di controllo è disponibile solo se tutte le condizioni seguenti sono true:
 
--   Nella **pagina Compilazione** l'elenco **Piattaforma di destinazione** è impostato su **Any CPU** (Qualsiasi CPU).
+- Nella **pagina Compilazione** l'elenco **Piattaforma di destinazione** è impostato su **Any CPU** (Qualsiasi CPU).
 
--   Nella **pagina Applicazione** l'elenco **Tipo di Output** specifica che il progetto è un'applicazione.
+- Nella **pagina Applicazione** l'elenco **Tipo di Output** specifica che il progetto è un'applicazione.
 
--   Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.
-
+- Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.
 
 [Consenti codice di tipo unsafe](/dotnet/csharp/language-reference/keywords/unsafe) Consente la compilazione del codice che usa la parola chiave **unsafe**. Per altre informazioni, vedere [/unsafe (Opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

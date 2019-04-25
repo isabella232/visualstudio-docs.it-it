@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784246"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modificare i modelli di carico per definire le attività di utenti virtuali
 
@@ -32,21 +32,20 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
 ### <a name="constant"></a>Costante
 
- Il modello di carico costante viene usato per specificare il carico di un utente che resta invariato durante il test di carico. Quando, ad esempio, si esegue uno "smoke test" in un'applicazione Web, potrebbe essere utile impostare un carico costante ridotto di 10 utenti.
+ Il modello di carico costante viene utilizzato per specificare il carico di un utente che resta invariato durante il test di carico. Quando, ad esempio, si esegue uno "smoke test" in un'applicazione Web, potrebbe essere utile impostare un carico costante ridotto di 10 utenti.
 
 #### <a name="constant-load-pattern-considerations"></a>Considerazioni sul modello di carico costante
 
- Un modello di carico costante viene usato per eseguire lo stesso carico utente durante l'esecuzione di un test di carico. Prestare particolare attenzione quando si usa un modello di carico costante con un numero elevato di utenti, perché si potrebbe creare una confluenza di richieste irragionevole e non realistica sul server o sui server all'inizio del test di carico. Se, ad esempio, il test di carico contiene un test Web che inizia con una richiesta a una home page e viene configurato un carico costante di 1.000 utenti, il test di carico invierà le prime 1.000 richieste alla home page il più velocemente possibile. Questa simulazione può non essere realistica e potrebbe non rispecchiare l'accesso effettivo al sito Web. Per ovviare a questo inconveniente, considerare la possibilità di usare un modello di carico passaggio che consente di aumentare gradualmente il carico a 1.000 utenti o specificare un periodo di riscaldamento nelle impostazioni per l'esecuzione di test di carico. Se si specifica un periodo di riscaldamento, il carico del test di carico aumenterà automaticamente durante tale periodo. Per altre informazioni, vedere [Configurare ritardi di avvio di uno scenario](../test/configure-scenario-start-delays.md).
+ Un modello di carico costante viene usato per eseguire lo stesso carico utente durante l'esecuzione di un test di carico. Prestare particolare attenzione quando si utilizza un modello di carico costante con un numero elevato di utenti, perché si potrebbe creare una confluenza di richieste irragionevole e non realistica sul server o sui server all'inizio del test di carico. Se, ad esempio, il test di carico contiene un test Web che inizia con una richiesta a una home page e viene configurato un carico costante di 1.000 utenti, il test di carico invierà le prime 1.000 richieste alla home page il più velocemente possibile. Questa simulazione può non essere realistica e potrebbe non rispecchiare l'accesso effettivo al sito Web. Per ovviare a questo inconveniente, considerare la possibilità di utilizzare un modello di carico passaggio che consente di aumentare gradualmente il carico a 1.000 utenti o specificare un periodo di riscaldamento nelle impostazioni per l'esecuzione di test di carico. Se si specifica un periodo di riscaldamento, il carico del test di carico aumenterà automaticamente durante tale periodo. Per altre informazioni, vedere [Configurare ritardi di avvio di uno scenario](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Passaggio
 
- Il modello del test di carico per passaggio viene usato per specificare il carico di un utente che aumenta con il passare del tempo fino a raggiungere il carico utente massimo definito. Nei carichi per passaggio è necessario specificare il **Numero utenti iniziale**, il **Numero massimo utenti**, l'**Intervallo passaggi (secondi)** e il **Numero utenti per passaggio**.
+ Il modello del test di carico per passaggio viene utilizzato per specificare il carico di un utente che aumenta con il passare del tempo fino a raggiungere il carico utente massimo definito. Nei carichi per passaggio è necessario specificare il **Numero utenti iniziale**, il **Numero massimo utenti**, l'**Intervallo passaggi (secondi)** e il **Numero utenti per passaggio**.
 
  Ad esempio, un carico per passaggio con un **Numero utenti iniziale** di uno, un **Numero massimo utenti** di 100, un **Intervallo passaggi (secondi)** di 10 e un **Numero utenti per passaggio** di 1 crea un modello di carico utente che comincia a 1, aumenta di 1 ogni 10 secondi fino a raggiungere 100 utenti.
 
 > [!NOTE]
 > Se la durata totale del test è inferiore al tempo necessario per raggiungere il carico massimo di utenti, il test si interrompe al termine della durata specificata e non raggiunge l'obiettivo del **Numero massimo utenti**.
-
 
  È possibile utilizzare l'obiettivo Passaggio per aumentare il carico finché il server raggiunge un punto in cui le prestazioni diminuiscono significativamente. Con l'aumentare del carico, le risorse del server potrebbero esaurirsi. Il carico per passaggio è un buon metodo per stabilire con quale numero di utenti ciò si verifica. Quando il carico è in esecuzione, è necessario monitorare attentamente anche le risorse degli agenti per accertarsi che siano in grado di generare il carico desiderato.
 
@@ -54,7 +53,7 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
 #### <a name="step-load-pattern-considerations"></a>Considerazioni sul modello di carico passaggio
 
- Un modello di carico passaggio può essere usato per aumentare il carico sul server o sui server durante l'esecuzione dei test di carico, in modo da visualizzare la variazione delle prestazioni mentre aumenta il carico utente. Per verificare, ad esempio, le prestazioni del server o dei server mentre il carico utente aumenta a 2.000 utenti, è possibile eseguire un test di carico di 10 ore usando un modello di carico passaggio con le proprietà seguenti:
+ Un modello di carico passaggio può essere usato per aumentare il carico sul server o sui server durante l'esecuzione dei test di carico, in modo da visualizzare la variazione delle prestazioni mentre aumenta il carico utente. Per verificare, ad esempio, le prestazioni del server o dei server mentre il carico utente aumenta a 2.000 utenti, è possibile eseguire un test di carico di 10 ore utilizzando un modello di carico passaggio con le proprietà seguenti:
 
 - **Numero utenti iniziale**: 100
 
@@ -78,14 +77,14 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
 - Raggiungere sul server un livello prefissato di velocità effettiva.
 
-  Nell'esempio della tabella riportata di seguito viene illustrato un modello basato su obiettivo con le seguenti impostazioni delle proprietà:
+  Nell'esempio della tabella riportata di seguito viene illustrato un modello basato su obiettivo con le impostazioni delle proprietà seguenti:
 
 |Gruppo di proprietà|Proprietà|Value|
 |-|--------------|-|
-|Contatore prestazioni|Category|Processore|
-|Contatore prestazioni|Computer|ContosoServer1|
-|Contatore prestazioni|Counter|% Tempo processore|
-|Contatore prestazioni|Istanza|_Total|
+|Contatore di prestazioni|Category|Processore|
+|Contatore di prestazioni|Computer|ContosoServer1|
+|Contatore di prestazioni|Counter|% Tempo processore|
+|Contatore di prestazioni|Istanza|_Total|
 |Intervallo di destinazione per il contatore delle prestazioni|Estremità superiore|90|
 |Intervallo di destinazione per il contatore delle prestazioni|Estremità inferiore|70|
 |Limiti numero utenti|Numero utenti iniziale|1|
@@ -102,7 +101,7 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 
  Un modello di carico basato su obiettivo è utile quando si desidera determinare il numero di utenti che il sistema è in grado di supportare prima di raggiungere un certo livello di utilizzo delle risorse. Questa opzione fornisce i migliori risultati quando è già stata identificata la risorsa limitante, ovvero il collo di bottiglia nel sistema.
 
- Ad esempio, si supponga di sapere che la risorsa limitante nel sistema sia la CPU sul server di database e si desidera vedere quanti utenti possono essere supportati nel caso in cui venga utilizzato circa il 75% della CPU sul server di database. È possibile utilizzare un modello di carico basato su obiettivo il cui scopo è quello di mantenere il valore del contatore delle prestazioni "% Tempo processore" tra il 70% e l'80%.
+ Ad esempio, si supponga di sapere che la risorsa limitante nel sistema sia la CPU sul server di database e si desidera vedere quanti utenti possono essere supportati nel caso in cui venga utilizzato circa il 75% della CPU sul server di database. È possibile usare un modello di carico basato su obiettivo il cui scopo è quello di mantenere il valore del contatore delle prestazioni "% Tempo processore" tra il 70% e l'80%.
 
  Prestare attenzione qualora la velocità effettiva del sistema sia limitata da altre risorse. Tali risorse possono compromettere l'obiettivo specificato dal modello di carico basato su obiettivo. Il carico utente continuerà anche ad aumentare finché non sarà raggiunto il valore specificato in **Numero massimo utenti**. Non si tratta in genere del carico desiderato, pertanto prestare attenzione nella scelta del contatore delle prestazioni nel modello di carico basato su obiettivo.
 
@@ -122,36 +121,34 @@ Il modello di carico è un componente di uno scenario. Gli scenari con i rispett
 > [!NOTE]
 > Per un elenco completo delle proprietà degli scenari di test di carico e le relative descrizioni, vedere [Proprietà di uno scenario di test di carico](../test/load-test-scenario-properties.md).
 
-
  Con il modello di carico viene specificato il numero di utenti virtuali attivi durante un test di carico e la frequenza con cui vengono aggiunti nuovi utenti. È possibile scegliere tra tre modelli disponibili: modello per passaggio, costante e basato su obiettivo. Per altre informazioni, vedere [Specificare il numero di utenti virtuali con i modelli di carico in uno scenario di test di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > È possibile inoltre modificare le proprietà di carico a livello di codice utilizzando un plug-in di test di carico. Per altre informazioni, vedere [Procedura: Creare un plug-in test di carico](../test/how-to-create-a-load-test-plug-in.md).
 
-
 ### <a name="to-change-the-load-pattern"></a>Per cambiare il modello di carico
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Nella cartella **Scenari** dell'*Editor test di carico* espandere lo scenario di cui si vuole modificare il modello di carico e scegliere il modello.
+2. Nella cartella **Scenari** dell'*Editor test di carico* espandere lo scenario di cui si vuole modificare il modello di carico e scegliere il modello.
 
     > [!NOTE]
-    > Il testo del nodo del modello di carico, così come viene visualizzato nell'albero dello scenario del test di carico, riflette il profilo di carico scelto al momento della creazione del test di carico. Può essere un **profilo Carico costante** o un **profilo Carico per passaggio**.
+    > Il testo del nodo del modello di carico, così come viene visualizzato nella struttura ad albero dello scenario del test di carico, riflette il profilo di carico scelto al momento della creazione del test di carico. Può essere un **profilo Carico costante** o un **profilo Carico per passaggio**.
 
-3.  Premere **F4** per visualizzare la finestra **Proprietà**.
+3. Premere **F4** per visualizzare la finestra **Proprietà**.
 
      Le categorie **Modello di carico** e **Parametri** sono visualizzate nella finestra **Proprietà**.
 
-4.  (Facoltativo) Modificare la proprietà **Modello** nella categoria **Modello di carico**.
+4. (Facoltativo) Modificare la proprietà **Modello** nella categoria **Modello di carico**.
 
      Le scelte disponibili per **Modello** sono **Passaggio**, **Costante** e **Basato su obiettivo**. Per altre informazioni sui tipi di modelli di carico, vedere [Specificare il numero di utenti virtuali con i modelli di carico in uno scenario di test di carico](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-5.  (Facoltativo) Modificare i valori nella categoria **Parametri**.
+5. (Facoltativo) Modificare i valori nella categoria **Parametri**.
 
     > [!NOTE]
     > I valori che è possibile impostare in **Parametri** variano in base al valore selezionato per la proprietà **Modello**.
 
-6.  Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. A questo punto sarà possibile eseguire il test di carico con il nuovo modello di carico.
+6. Dopo avere apportato le modifiche alle proprietà, scegliere **Salva** nel menu **File**. A questo punto sarà possibile eseguire il test di carico con il nuovo modello di carico.
 
 ## <a name="see-also"></a>Vedere anche
 

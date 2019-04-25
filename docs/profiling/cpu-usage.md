@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553620"
 ---
 # <a name="analyze-cpu-usage"></a>Analizzare l'utilizzo della CPU
 
@@ -31,7 +31,7 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 >[!NOTE]
 >Per l'uso di [Profiler prestazioni](../profiling/profiling-feature-tour.md) è necessario Windows 7 o versione successiva.
 
-##  <a name="collect-cpu-usage-data"></a>Raccogliere i dati di Utilizzo CPU
+## <a name="collect-cpu-usage-data"></a>Raccogliere i dati di Utilizzo CPU
 
 1. Nel progetto di Visual Studio impostare la configurazione della soluzione su **Versione** e selezionare **Computer locale** come destinazione di distribuzione.
 
@@ -51,7 +51,6 @@ In genere il computer locale replica in modo ottimale l'esecuzione dell'app inst
 
    ![Report Utilizzo CPU](../profiling/media/cpu_use_wt_report.png "Report Utilizzo CPU")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>Analizzare il report di Utilizzo CPU
 
 Il report di diagnostica viene ordinato per **CPU totale**, dal valore maggiore al minore. Per modificare l'ordinamento o la colonna di ordinamento, selezionare le intestazioni di colonna. Usare l'elenco a discesa **Filtro** per selezionare o deselezionare i thread da visualizzare e usare la casella **Ricerca** per cercare un thread o un nodo specifico.
@@ -60,7 +59,7 @@ Il report di diagnostica viene ordinato per **CPU totale**, dal valore maggiore 
 A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi percorso critico** e **Mostra percorso critico** per visualizzare le chiamate di funzione che usano la percentuale massima della CPU nella visualizzazione dell'albero delle chiamate.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
+### <a name="BKMK_Call_tree_data_columns"></a> Colonne di dati Utilizzo CPU
 
 |||
 |-|-|
@@ -68,11 +67,11 @@ A partire da Visual Studio 2019, è possibile scegliere i pulsanti **Espandi per
 |**CPU auto [unità, %]**|![Equazione auto %](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondi e percentuale dell'attività della CPU usata dalle chiamate alla funzione nell'intervallo di tempo selezionato, escluse le funzioni chiamate dalla funzione.|
 |**Modulo**|Nome del modulo che contiene la funzione.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di Utilizzo CPU
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Albero delle chiamate di Utilizzo CPU
 
 Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. La pagina **Utilizzo CPU** viene aperta con la visualizzazione **Chiamante/chiamato**. Nell'elenco a discesa **Visualizzazione corrente** selezionare **Albero delle chiamate**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate
+#### <a name="BKMK_Call_tree_structure"></a> Struttura dell'albero delle chiamate
 
 ::: moniker range=">=vs-2019"
 ![Struttura dell'albero delle chiamate](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Struttura dell'albero delle chiamate")
@@ -88,7 +87,7 @@ Per visualizzare l'albero delle chiamate, selezionare il nodo padre nel report. 
 |![Passaggio 3](../profiling/media/procguid_3.png "ProcGuid_3")|Gli elementi figlio del nodo di secondo livello sono i metodi del codice utente e le routine asincrone che vengono chiamati o creati dal codice di sistema o di framework di secondo livello.|
 |![Passaggio 4](../profiling/media/procguid_4.png "ProcGuid_4")|I nodi figlio di un metodo contengono dati solo per le chiamate del metodo padre. Quando l'opzione **Mostra codice esterno** è disabilitata, i metodi dell'app possono contenere anche un nodo **[Codice esterno]** .|
 
-####  <a name="BKMK_External_Code"></a> Codice esterno
+#### <a name="BKMK_External_Code"></a> Codice esterno
 
 Le funzioni di sistema e framework eseguite dal codice sono dette *codice esterno*. Le funzioni codice esterno avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e offre altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno non risulta interessante, pertanto l'albero delle chiamate di Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]**.
 
@@ -109,7 +108,7 @@ Per trovare il nome di una funzione, usare la casella di ricerca. Passare il mou
 ![Ricerca di codice esterno annidato](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Ricerca di codice esterno annidato")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funzioni asincrone nell'albero delle chiamate di Utilizzo CPU
 
  Quando il compilatore rileva un metodo asincrono, crea una classe nascosta per controllare l'esecuzione del metodo. A livello concettuale la classe è una macchina a stati. La classe dispone di funzioni generate dal compilatore che chiamano in modo asincrono i metodi originali e i callback, l'utilità di pianificazione e gli iteratori necessari per la loro esecuzione. Quando un metodo padre chiama il metodo originale, il compilatore rimuove il metodo dal contesto di esecuzione del metodo padre ed esegue i metodi della classe nascosta nel contesto del codice di sistema e di framework che controlla l'esecuzione dell'app. Spesso, ma non sempre, i metodi asincroni vengono eseguiti in uno o più thread diversi. Il codice è visualizzato nell'albero delle chiamate **Utilizzo CPU** come figlio del nodo **[Codice esterno]** immediatamente sotto il nodo principale dell'albero.
 

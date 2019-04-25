@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786520"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing con Visual Studio
 
@@ -27,7 +27,6 @@ Quando si usa Live Unit Testing per i test, Live Unit Testing salva in modo perm
 
 ## <a name="supported-test-frameworks"></a>Framework di test supportati
 Live Unit Testing è compatibile con i tre framework di unit test elencati nella tabella seguente. Nella tabella è indicata anche la versione minima supportata degli adattatori e dei framework. I framework di unit test sono tutti disponibili su NuGet.org.
-
 
 |Framework di test  |Versione minima dell'adattatore di Visual Studio  |Versione minima del framework  |
 |---------|---------|---------|

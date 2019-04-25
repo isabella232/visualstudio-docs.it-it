@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56314598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557577"
 ---
 # <a name="help-content-manager-overrides"></a>Override di Gestione contenuto della Guida
 
@@ -31,7 +31,7 @@ ms.locfileid: "56314598"
 
 ### <a name="registry-key-values"></a>Valori delle chiavi del Registro di sistema
 
-|Valore della chiave del Registro di sistema|Tipo|Dati|Descrizione|
+|Valore della chiave del Registro di sistema|Tipo|Dati|Description|
 |------------------|----|----|-----------|
 |NewContentAndUpdateService|string|\<URL HTTP per l'endpoint di servizio\>|Definire un endpoint di servizio univoco|
 |UseOnlineHelp|dword|`0` per specificare la Guida locale, `1` per specificare la Guida online|Impostare la Guida online o offline come predefinita|

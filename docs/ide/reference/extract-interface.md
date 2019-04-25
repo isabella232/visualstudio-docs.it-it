@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791238"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refactoring con estrazione di un'interfaccia
 
@@ -58,13 +58,11 @@ Questo refactoring si applica a:
 
    ![Estrai interfaccia](media/extractinterface-dialog-same-file.png)
 
-
    | Campo | Description |
    | - | - |
    | **Nome nuova interfaccia** | Nome dell'interfaccia da creare. Il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. |
    | **Nome nuovo file** | Nome del file generato che conterrà l'interfaccia. Come per l'interfaccia, il nome predefinito è *NomeClasse*, dove *NomeClasse* è il nome della classe selezionata in precedenza. È anche possibile selezionare l'opzione **Add to current file** (Aggiungi al file corrente). |
    | **Seleziona i membri pubblici per l'interfaccia** | Elementi da estrarre nell'interfaccia. È possibile selezionarne il numero desiderato. |
-
 
 4. Scegliere **OK**.
 
@@ -73,15 +71,13 @@ Questo refactoring si applica a:
    - C#:
 
       ![Classe risultante - C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Interfaccia risultante - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
       ![Classe risultante - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Interfaccia risultante - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Vedere anche

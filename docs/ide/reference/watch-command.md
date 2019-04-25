@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789000"
 ---
 # <a name="watch-command"></a>Comando Watch
 Crea e apre un'istanza specificata di una finestra **Espressione di controllo** . È possibile usare una finestra **Espressioni di controllo** per calcolare i valori di variabili, espressioni e registri, modificare i valori e salvare i risultati.
@@ -34,7 +34,7 @@ Debug.Watch[index]
 
  Obbligatorio. Il numero di istanza della finestra Espressioni di controllo.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  `index` deve essere di tipo Integer. I valori validi sono 1, 2, 3 e 4.
 
 ## <a name="example"></a>Esempio

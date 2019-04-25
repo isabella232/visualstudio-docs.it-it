@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac0487e2faafdf608975a30f737b01b669db273
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797772"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.
@@ -28,21 +28,21 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
 
 #### <a name="to-magnify-a-timeline-segment"></a>Per ingrandire un segmento della sequenza temporale
 
--   Trascinare il puntatore del mouse su un'area della sequenza temporale.
+- Trascinare il puntatore del mouse su un'area della sequenza temporale.
 
      Quando si rilascia il pulsante del mouse, il segmento temporale selezionato viene ingrandito. È possibile ripetere il processo per ingrandire ulteriormente il segmento. La casella di scorrimento sulla barra di scorrimento temporale rappresenta la dimensione relativa del segmento di tempo che compare nella visualizzazione.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Per eseguire lo zoom avanti o indietro in una sequenza temporale
 
--   Effettuare uno dei passaggi indicati di seguito.
+- Effettuare uno dei passaggi indicati di seguito.
 
-    -   Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.
+    - Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.
 
-    -   Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.
+    - Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Per visualizzare lo stack di chiamate di un evento
 
--   Nel grafico della sequenza temporale fare clic sulla barra dell'evento.
+- Nel grafico della sequenza temporale fare clic sulla barra dell'evento.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Per visualizzare o modificare il codice sorgente di una funzione nello stack di chiamate
 
@@ -52,12 +52,12 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Per visualizzare l'albero delle chiamate degli eventi di conflitto per la risorsa
 
--   Nel grafico della sequenza temporale fare clic su **Totale**.
+- Nel grafico della sequenza temporale fare clic su **Totale**.
 
      Viene visualizzata la visualizzazione Conflitti per la risorsa. Per altre informazioni, vedere [Visualizzazione relativa ai conflitti di risorse](../profiling/resource-contentions-view-contention-data.md).
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Per visualizzare tutti gli eventi di conflitto di un thread
 
--   Nel grafico della sequenza temporale fare clic sul nome o sull'ID del thread.
+- Nel grafico della sequenza temporale fare clic sul nome o sull'ID del thread.
 
      Viene visualizzata la visualizzazione Dettagli thread per il thread selezionato. Per altre informazioni, vedere [Visualizzazione Dettagli thread](../profiling/thread-details-view-contention-data.md).

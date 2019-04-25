@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788752"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -30,7 +30,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
 
 ## <a name="add-a-test-agent-to-a-test-controller"></a>Aggiunta di un agente di test a un controller di test
 
-È possibile che si desideri aggiungere un agente di test a un diverso controller di test oppure che risulti necessario aggiungere un agente di test a un controller di test appena installato.
+È possibile che si desideri aggiungere un agente di test a un diverso test controller oppure che risulti necessario aggiungere un agente di test a un test controller appena installato.
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Per aggiungere un agente di test a un controller di test
 
@@ -67,7 +67,7 @@ Per un progetto di test di carico è anche possibile scegliere **Gestisci contro
       2. Immettere la password in **Password**.
 
         > [!NOTE]
-        > Se si configura l'agente di test in modo che venga eseguito come processo interattivo con un utente diverso dall'utente attualmente attivo, è necessario riavviare il computer e accedere come utente corrente per poter avviare l'agente. Inoltre, le password Null non sono supportate per gli account utente. Se si desidera utilizzare l'agente di raccolta di IntelliTrace o l'emulazione di rete, l'account utente deve essere un membro del gruppo Administrators.
+        > Se si configura l'agente di test in modo che venga eseguito come processo interattivo con un utente diverso dall'utente attualmente attivo, è necessario riavviare il computer e accedere come utente corrente per poter avviare l'agente. Inoltre, le password Null non sono supportate per gli account utente. Per usare l'agente di raccolta di IntelliTrace o l'emulazione di rete, l'account utente deve essere un membro del gruppo Administrators.
 
       3. Per accertarsi che un computer che dispone di un agente di test sia in grado di eseguire i test dopo il riavvio, è possibile configurarlo per l'accesso automatico come utente dell'agente di test. Selezionare **Accesso automatico**. In questo modo il nome utente e la password verranno archiviati in formato crittografato nel Registro di sistema.
 
@@ -114,7 +114,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valori seguenti:
 
-|Status|Descrizione|
+|Status|Description|
 |-|-----------------|
 |Test in esecuzione|Esecuzione di test|
 |Pronto|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
@@ -140,7 +140,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 
 1. Modificare le seguenti proprietà dell'agente di test in base alle necessità:
 
-|Proprietà dell'agente di test|Descrizione|
+|Proprietà dell'agente di test|Description|
 |-|-----------------|
 |**Peso**|Consente di distribuire il carico quando si usano agenti di test con livelli diversi di prestazioni. Ad esempio, un agente di test con un peso pari a 100 riceve un carico doppio rispetto a uno con un peso di 50.|
 |**Commutazione IP**|Usato per configurare la commutazione IP. La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP. In questo modo si simulano le chiamate provenienti da computer client diversi.<br /><br /> La commutazione IP è importante se il test di carico accede a una Web farm. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, verificare che le richieste provengano da un intervallo di indirizzi IP. **Nota:**  è possibile specificare una scheda di rete o usare **(Tutti non assegnati)** per selezionarne automaticamente una non in uso. <br /><br /> Per usare la funzionalità di commutazione IP, è necessario che il servizio agente di test di Visual Studio sia in esecuzione come utente del gruppo Administrators del computer in cui si trova l'agente. Questo utente viene selezionato durante l'installazione dell'agente, ma è possibile cambiarlo modificando le proprietà del servizio e riavviandolo.<br /><br /> Per verificare che la commutazione IP funzioni correttamente, abilitare la funzionalità di registrazione di IIS nel server Web e usarla per verificare che le richieste provengano dagli indirizzi IP configurati.|
@@ -168,7 +168,7 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
      Verrà visualizzata la finestra di dialogo **Configura controller di test**.
 
-2. Selezionare l'utente da utilizzare come account di accesso per il servizio del controller di test.
+2. Selezionare l'utente da usare come account di accesso per il servizio del controller di test.
 
     > [!NOTE]
     > Le password Null non sono supportate per gli account utente.
@@ -182,29 +182,29 @@ Se si vuole registrare il test controller con la raccolta di progetti Team Found
 
 ## <a name="manage-your-agents-when-you-run-your-tests-with-a-test-controller"></a>Gestire gli agenti quando si eseguono test con un test controller
 
-Quando si aggiungono ruoli per l'applicazione alle impostazioni test per Visual Studio, è possibile aggiungere proprietà dell'agente per ognuno dei ruoli. Ciò determina quali agenti di test sono disponibili per il ruolo. Quando si eseguono i test usando tali impostazioni di test, il controller di test selezionato per le impostazioni di test determina la disponibilità degli agenti necessari. Quando viene determinata la disponibilità degli agenti, possono verificarsi le situazioni seguenti:
+Quando si aggiungono ruoli per l'applicazione alle impostazioni test per Visual Studio, è possibile aggiungere proprietà dell'agente per ognuno dei ruoli. Ciò determina quali agenti di test sono disponibili per il ruolo. Quando si eseguono i test utilizzando tali impostazioni di test, il test controller selezionato per le impostazioni di test determina la disponibilità degli agenti necessari. Quando viene determinata la disponibilità degli agenti, possono verificarsi le situazioni seguenti:
 
--   Non sono disponibili agenti per il ruolo che deve eseguire i test. Non è possibile eseguire i test. È possibile effettuare una delle azioni seguenti e quindi rieseguire i test:
+- Non sono disponibili agenti per il ruolo che deve eseguire i test. Non è possibile eseguire i test. È possibile effettuare una delle azioni seguenti e quindi rieseguire i test:
 
-    -   È possibile attendere che un agente diventi disponibile per il ruolo affinché possano essere eseguiti i test.
+    - È possibile attendere che un agente diventi disponibile per il ruolo affinché possano essere eseguiti i test.
 
-    -   Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile riavviare l'agente in modo che risulti disponibile.
+    - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile riavviare l'agente in modo che risulti disponibile.
 
-    -   È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
+    - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
 
-    -   È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare gli altri agenti che si desidera usare.
+    - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare gli altri agenti che si desidera usare.
 
--   Non sono disponibili agenti per uno o più ruoli che eseguono adattatori dati di diagnostica. È possibile eseguire i test ma non l'adattatore dati di diagnostica. È possibile eseguire i test senza l'adattatore dati di diagnostica oppure effettuare una delle azioni seguenti e rieseguire i test:
+- Non sono disponibili agenti per uno o più ruoli che eseguono adattatori dati di diagnostica. È possibile eseguire i test ma non l'adattatore dati di diagnostica. È possibile eseguire i test senza l'adattatore dati di diagnostica oppure effettuare una delle azioni seguenti e rieseguire i test:
 
-    -   È possibile attendere che un agente diventi disponibile per i ruoli.
+    - È possibile attendere che un agente diventi disponibile per i ruoli.
 
-    -   Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile modificare lo stato dell'agente impostandolo su online scegliendo **Amministra controller test** dal menu **Test**. Potrebbe essere inoltre necessario riavviare l'agente se questo è stato disconnesso dal controller.
+    - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile modificare lo stato dell'agente impostandolo su online scegliendo **Amministra controller test** dal menu **Test**. Potrebbe essere inoltre necessario riavviare l'agente se questo è stato disconnesso dal controller.
 
-    -   Verificare che gli agenti che potrebbe essere necessario usare per l'esecuzione del test non siano occupati con altri test. È possibile controllare lo stato di qualsiasi agente scegliendo **Amministra controller test** dal menu **Test**.
+    - Verificare che gli agenti che potrebbe essere necessario usare per l'esecuzione del test non siano occupati con altri test. È possibile controllare lo stato di qualsiasi agente scegliendo **Amministra controller test** dal menu **Test**.
 
-    -   È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
+    - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
 
-    -   È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare altri agenti che si desidera usare.
+    - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare altri agenti che si desidera usare.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Caricare test da assembly di test con firma ritardata
 

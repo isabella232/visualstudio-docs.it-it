@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 7109e74e858aa308b8f49e6e1e335478f801070b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815006"
 ---
 # <a name="work-with-the-r-interactive-window"></a>Usare la finestra R interattivo
 
@@ -50,7 +50,7 @@ Ecco la finestra interattiva con relativa barra degli strumenti:
 
 Di seguito vengono illustrati i comandi della barra degli strumenti, la maggior parte dei quali hanno combinazioni di tasti e sono anche disponibili nei menu **R Tools** > **Sessione** e **R Tools** > **Directory di lavoro** (oppure come indicato):
 
-| Button | Comando | Combinazione di tasti | Descrizione |
+| Button | Comando | Combinazione di tasti | Description |
 | --- | --- | --- | --- |
 | ![Pulsante Reimposta](media/repl-toolbar-01-reset.png) | Reimposta | **CTRL**+**MAIUSC**+**F10** | Reimposta la sessione della finestra interattiva, cancellando tutte le variabili e la cronologia. |
 | ![Pulsante Cancella](media/repl-toolbar-02-clear.png) | Cancella | **CTRL**+**L** | Cancella l'output visualizzato nella finestra interattiva. Non ha alcun effetto sulle variabili della sessione o sulla cronologia. |

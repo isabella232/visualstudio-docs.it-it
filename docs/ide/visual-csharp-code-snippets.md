@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581698"
 ---
 # <a name="c-code-snippets"></a>Frammenti di codice C#
 
@@ -31,7 +31,7 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
 
 Per impostazione predefinita in Visual Studio per C# sono inclusi i frammenti di codice seguenti.
 
-|Nome (o collegamento)|Descrizione|Percorsi validi per l'inserimento del frammento di codice|
+|Nome (o collegamento)|Description|Percorsi validi per l'inserimento del frammento di codice|
 | - |-----------------| - |
 |#if|Crea una direttiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e una direttiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Ovunque.|
 |#region|Crea una direttiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e una direttiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Ovunque.|

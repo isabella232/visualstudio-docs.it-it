@@ -14,16 +14,16 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785939"
 ---
 # <a name="load-test-results-summary-overview"></a>Cenni preliminari sul riepilogo dei risultati dei test di carico
 
-Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico agli stakeholder. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
+Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei test di carico per verificarne rapidamente i risultati. Nel riepilogo dei test di carico sono riportati i risultati principali in un formato compatto e di agevole lettura. Il riepilogo può anche essere stampato per comunicare più agevolmente i risultati dei test di carico alle parti interessate. Il riepilogo del test di carico è inoltre alla visualizzazione predefinita quando si apre un risultato del test di carico da un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
 ![Visualizzazione Riepilogo](../test/media/ltest_summaryview.png)
 
@@ -33,7 +33,7 @@ Una volta terminata l'esecuzione, è possibile visualizzare il riepilogo dei tes
 
 Il riepilogo del test di carico è suddiviso in sezioni. Le sezioni iniziali sono riportate all'inizio del riepilogo e sono sempre visibili. Quando si visualizza il riepilogo del test di carico, i primi elementi sono i seguenti:
 
-- Informazioni sull'esecuzione di test
+- Informazioni sull'esecuzione dei test
 
 - Risultati complessivi
 
@@ -50,9 +50,9 @@ Le ultime sezioni sono riportate alla fine del riepilogo e possono essere compre
 
 - Risultati dei test
 
-- Risultati pagina
+- Risultati della pagina
 
-- Risultati transazione
+- Risultati della transazione
 
 - Risorse sistema sotto test
 
@@ -84,7 +84,7 @@ Il valore percentile per il rapporto **Tempo test 95% (sec)** indica che il 95% 
 
 Se la traccia SQL è attivata nel test di carico, questa sezione contiene informazioni sulle 5 query più lente del test di carico. Per ogni operazione sono visualizzati il nome e la durata espressa in microsecondi (SQL Server 2005) o in millisecondi (SQL Server 2000 e versioni precedenti). I test sono elencati in ordine decrescente in base alla durata. È possibile scegliere il nome di un'operazione per aprire la tabella **Traccia SQL** ed esaminare altri dettagli sull'operazione. Per altre informazioni, vedere la [tabella dei dati di Traccia SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table).
 
-## <a name="test-results"></a>Risultati test
+## <a name="test-results"></a>Risultati dei test
 
 La sezione relativa ai risultati del test contiene un elenco di tutti i test e degli scenari del test di carico. Per ogni test sono visualizzati il nome, lo scenario, il numero di esecuzioni, il numero di volte che non è stato superato e il tempo medio. È possibile scegliere il nome di un test per aprire la tabella **Test** ed esaminare altri dettagli sul test. Per altre informazioni, vedere [Analizzare i risultati e gli errori dei test di carico nella visualizzazione Tabelle](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
@@ -107,9 +107,9 @@ La sezione relativa ai risultati di transazione contiene un elenco di tutte le t
 
 I valori percentili indicano le seguenti informazioni sulla transazione:
 
--   Il 90% delle transazioni totali è stato completato in meno di \<numero> secondi.
+- Il 90% delle transazioni totali è stato completato in meno di \<numero> secondi.
 
--   Il 95% delle transazioni totali è stato completato in meno di \<numero> secondi.
+- Il 95% delle transazioni totali è stato completato in meno di \<numero> secondi.
 
 ## <a name="system-under-test-resources"></a>Risorse sistema sotto test
 
