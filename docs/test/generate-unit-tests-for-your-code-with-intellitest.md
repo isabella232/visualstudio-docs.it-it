@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ec9d40d889964c3b0f369b87d8cd2c2312aaea18
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950834"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generare unit test per il codice con IntelliTest
 
@@ -38,9 +38,9 @@ I comandi di menu **Crea IntelliTest** ed **Esegui IntelliTest**:
 
 Per generare unit test, i tipi devono essere pubblici. In caso contrario, [creare unit test](#NoRun) prima di generarli.
 
-1.  Aprire la soluzione in Visual Studio. Aprire quindi il file di classe contenente i metodi da testare.
+1. Aprire la soluzione in Visual Studio. Aprire quindi il file di classe contenente i metodi da testare.
 
-2.  Fare clic con il pulsante destro del mouse nel codice e scegliere **Esegui IntelliTest** per generare gli unit test per il codice nel metodo.
+2. Fare clic con il pulsante destro del mouse nel codice e scegliere **Esegui IntelliTest** per generare gli unit test per il codice nel metodo.
 
      ![Fare clic con il pulsante destro del mouse nel metodo per generare unit test](../test/media/runpex.png)
 
@@ -56,7 +56,7 @@ Per generare unit test, i tipi devono essere pubblici. In caso contrario, [crear
 
 ## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Rendere persistente: salvare gli unit test come gruppo di regressione
 
-1.  Selezionare le righe dei dati da salvare con lo unit test con parametri in un progetto di test.
+1. Selezionare le righe dei dati da salvare con lo unit test con parametri in un progetto di test.
 
      ![Selezionare i test, fare clic con il pulsante destro del mouse e scegliere Salva](../test/media/savepextests.png)
 
@@ -70,13 +70,13 @@ Per generare unit test, i tipi devono essere pubblici. In caso contrario, [crear
 
 ## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Offrire assistenza: usare IntelliTest per concentrarsi sull'esplorazione del codice
 
-1.  In presenza di codice più complesso, IntelliTest consente di concentrarsi sull'esplorazione del codice. Se ad esempio si ha un metodo che contiene un'interfaccia come parametro ed è presente più di una classe che implementa tale interfaccia, IntelliTest trova tali classi e segnala un avviso.
+1. In presenza di codice più complesso, IntelliTest consente di concentrarsi sull'esplorazione del codice. Se ad esempio si ha un metodo che contiene un'interfaccia come parametro ed è presente più di una classe che implementa tale interfaccia, IntelliTest trova tali classi e segnala un avviso.
 
      Visualizzare gli avvisi per decidere le azioni da intraprendere.
 
      ![Visualizza avvisi](../test/media/pexviewwarning.png)
 
-2.  Dopo aver esaminato il codice e aver compreso le parti da testare, è possibile correggere l'avviso per consentire la scelta delle classi da usare per testare l'interfaccia.
+2. Dopo aver esaminato il codice e aver compreso le parti da testare, è possibile correggere l'avviso per consentire la scelta delle classi da usare per testare l'interfaccia.
 
      ![Fare clic con il pulsante destro del mouse sull'avviso e scegliere Correzione](../test/media/pexfixwarning.png)
 
@@ -84,7 +84,7 @@ Per generare unit test, i tipi devono essere pubblici. In caso contrario, [crear
 
      `[assembly: PexUseType(typeof(Camera))]`
 
-3.  A questo punto è possibile eseguire di nuovo IntelliTest per generare uno unit test con parametri e dati di test usando solo la classe che è stata corretta.
+3. A questo punto è possibile eseguire di nuovo IntelliTest per generare uno unit test con parametri e dati di test usando solo la classe che è stata corretta.
 
      ![Riesecuzione di IntelliTest per generare i dati di test](../test/media/pexwarningsfixed.png)
 
@@ -92,7 +92,7 @@ Per generare unit test, i tipi devono essere pubblici. In caso contrario, [crear
 
 Specificare la relazione generale tra input e output da verificare con gli unit test generati. Questa specifica viene incapsulata in un metodo simile a un metodo di test, ma universalmente quantificato. Si tratta del metodo di unit test con parametri e tutte le asserzioni effettuate devono essere mantenute per tutti i possibili valori di input che IntelliTest può generare.
 
-##  <a name="q--a"></a>Domande e risposte
+## <a name="q--a"></a>Domande e risposte
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>D: È possibile usare IntelliTest per codice non gestito?
 
@@ -104,13 +104,13 @@ Specificare la relazione generale tra input e output da verificare con gli unit 
 
  Se un test può essere considerato superato se vengono generate determinate eccezioni, è possibile impostare uno dei seguenti attributi in base ai requisiti a livello di metodo di test, classe di test o di assembly:
 
--   **PexAllowedExceptionAttribute**
+- **PexAllowedExceptionAttribute**
 
--   **PexAllowedExceptionFromTypeAttribute**
+- **PexAllowedExceptionFromTypeAttribute**
 
--   **PexAllowedExceptionFromTypeUnderTestAttribute**
+- **PexAllowedExceptionFromTypeUnderTestAttribute**
 
--   **PexAllowedExceptionFromAssemblyAttribute**
+- **PexAllowedExceptionFromAssemblyAttribute**
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>D: È possibile aggiungere presupposti allo unit test con parametri?
 
@@ -128,7 +128,7 @@ Specificare la relazione generale tra input e output da verificare con gli unit 
 
  Se si aggiunge un'asserzione e si esegue di nuovo IntelliTest, verrà verificata la validità dell'asserzione e il test verrà considerato non superato se l'asserzione non è valida.
 
-###  <a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?
+### <a name="NoRun"></a> D: È possibile generare unit test con parametri senza eseguire prima IntelliTest?
 
 **R:** Sì, fare clic con il pulsante destro del mouse nella classe o nel metodo e scegliere **Crea IntelliTest**.
 
@@ -147,13 +147,11 @@ Le estensioni del framework di test sono disponibili anche in Visual Studio Mark
 * [NUnit extension for the test generators](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) (Estensione NUnit per generatori di test)
 * [xUnit.net extension for the test generators](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions) (Estensione xUnit.net per generatori di test)
 
-
 Dopo aver riavviato Visual Studio e riaperto la soluzione, fare doppio clic nella classe o nel metodo, quindi scegliere **Crea IntelliTest**. Selezionare qui il framework installato:
 
 ![Selezionare altri framework unit test per IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Eseguire quindi IntelliTest per generare i singoli unit test nei relativi file con estensione *g.cs*.
-
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>D: È possibile reperire maggiori informazioni sulla modalità di generazione dei test?
 

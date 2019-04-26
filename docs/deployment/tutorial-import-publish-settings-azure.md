@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899180"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Pubblicare un'applicazione nel servizio app di Azure importando le impostazioni di pubblicazione in Visual Studio
 
@@ -100,6 +100,7 @@ Il file delle impostazioni di pubblicazione (*\*.publishsettings*) non corrispon
       </publishProfile>
     </publishData>
     ```
+
     Il file *.publishsettings precedente contiene in genere due profili di pubblicazione che è possibile usare in Visual Studio, uno per la distribuzione tramite Distribuzione Web e uno per la distribuzione tramite FTP. Il codice precedente mostra il profilo di Distribuzione Web. Entrambi i profili verranno importati in un secondo momento quando si importa il profilo.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importare le impostazioni di pubblicazione in Visual Studio e distribuire

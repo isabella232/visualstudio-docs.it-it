@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949955"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Procedura: Creare grafici personalizzati nei risultati del test di carico
 
@@ -26,7 +26,7 @@ ms.locfileid: "55932406"
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Per creare un grafico personalizzato dei risultati del test di carico
 
-1.  Fare clic su **Aggiungi nuovo grafico** sulla barra degli strumenti del **test di carico**.
+1. Fare clic su **Aggiungi nuovo grafico** sulla barra degli strumenti del **test di carico**.
 
      \- oppure -
 
@@ -34,11 +34,11 @@ ms.locfileid: "55932406"
 
      Viene visualizzata la finestra di dialogo **Nome grafico**.
 
-2.  In **Nome grafico** digitare un nome per il grafico e scegliere **OK**.
+2. In **Nome grafico** digitare un nome per il grafico e scegliere **OK**.
 
      Il nuovo grafico viene visualizzato nell'**Analizzatore test di carico**. nel pannello del grafico attualmente selezionato, sostituendo il grafico presente precedentemente nel pannello.
 
-3.  Personalizzare il nuovo grafico aggiungendo i contatori. Per altre informazioni, vedere [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Personalizzare il nuovo grafico aggiungendo i contatori. Per altre informazioni, vedere [Procedura: Aggiungere ed eliminare contatori nei grafici](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Vedere anche
 

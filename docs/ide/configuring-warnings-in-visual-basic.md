@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 022ba767a7d1952b659d66532d5542c42fa2f9bb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976563"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurazione degli avvisi in Visual Basic
 
@@ -50,7 +50,7 @@ Il compilatore di [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] incl
 ## <a name="examples"></a>Esempi
  Questa tabella di esempi di argomenti della riga di comando descrive la funzione di ogni argomento.
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |--------------|-----------------|
 |`vbc /warnaserror`|Specifica di considerare tutti gli avvisi come errori.|
 |`vbc /warnaserror:42024`|Specifica che l'avviso 42024 va considerato come errore.|

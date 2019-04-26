@@ -16,19 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791844"
 ---
 # <a name="alias-command"></a>Comando Alias
 Crea un nuovo alias per un comando completo, un comando completo con i relativi argomenti o un altro alias.
 
 > [!TIP]
 > Digitando `>alias` senza alcun argomento verrà visualizzato l'elenco corrente di alias e le relative definizioni.
-
 
 ## <a name="syntax"></a>Sintassi
 
@@ -46,7 +45,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reimpostare Facoltativo. Ripristina le impostazioni originali dell'elenco di alias predefiniti, ovvero ripristina tutti gli alias predefiniti e rimuove tutti gli alias definiti dall'utente.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Poiché rappresentano i comandi, gli alias devono essere posizionati all'inizio della riga di comando.
 
  Quando si esegue questo comando, le opzioni devono essere incluse subito dopo il comando, non dopo gli alias. In caso contrario, l'opzione verrà considerata parte della stringa di alias.

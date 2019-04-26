@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979452"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procedura: Aggiungere parametri di contesto a un'impostazione di esecuzione test di carico
 
@@ -52,11 +52,11 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Per aggiungere un parametro di contesto a un'impostazione di esecuzione
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Espandere la cartella **Impostazioni di esecuzione** nell'albero del test di carico dell'Editor test di carico.
+2. Espandere la cartella **Impostazioni di esecuzione** nell'albero del test di carico dell'Editor test di carico.
 
-3.  Fare clic con il pulsante destro del mouse sulle impostazioni esecuzione test specifiche a cui si vuole aggiungere un parametro di contesto e scegliere **Aggiungi parametro di contesto**.
+3. Fare clic con il pulsante destro del mouse sulle impostazioni esecuzione test specifiche a cui si vuole aggiungere un parametro di contesto e scegliere **Aggiungi parametro di contesto**.
 
      Un nuovo parametro di contesto viene aggiunto alla cartella **Parametri di contesto** nella cartella **Impostazioni di esecuzione** nell'albero del test di carico.
 
@@ -64,11 +64,11 @@ Inoltre, assegnando valori diversi a un parametro di contesto utilizzando lo ste
 
      Se le impostazioni esecuzione test già contengono una cartella **Parametri di contesto**, è possibile fare clic con il pulsante destro del mouse sulla cartella e scegliere **Aggiungi parametro di contesto**.
 
-4.  Nella finestra **Proprietà** modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra **Proprietà** modificare **Valore** nel parametro che si vuole usare, ad esempio `http://CorporateStagingWebServer`.
+4. Nella finestra **Proprietà** modificare il valore di **Nome** nel modo appropriato (ad esempio, WebServer1). Nella finestra **Proprietà** modificare **Valore** nel parametro che si vuole usare, ad esempio `http://CorporateStagingWebServer`.
 
-5.  (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la proprietà **Valore**, ad esempio, `http://CorporateProductionWebServer`.
+5. (Facoltativo) Ripetere i passaggi da 3 a 5 e usare una stringa diversa per la proprietà **Valore**, ad esempio, `http://CorporateProductionWebServer`.
 
-6.  Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
+6. Scegliere quali impostazioni esecuzione test devono essere attive. Aprire il menu di scelta rapida nelle impostazioni esecuzione test e scegliere **Imposta come attivo**.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844611"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo tridimensionale realistica
 
@@ -23,11 +23,11 @@ In questa procedura dettagliata viene illustrato come creare una palla da biliar
 
 Per completare questa procedura dettagliata, è necessario disporre dei componenti e delle abilità seguenti:
 
--   Uno strumento per l'assemblaggio di trame in una mappa cubo, come lo strumento Trama di DirectX incluso in DirectX SDK del giugno 2010.
+- Uno strumento per l'assemblaggio di trame in una mappa cubo, come lo strumento Trama di DirectX incluso in DirectX SDK del giugno 2010.
 
--   Conoscenza dell'editor di immagini in Visual Studio.
+- Conoscenza dell'editor di immagini in Visual Studio.
 
--   Conoscenza della progettazione shader in Visual Studio.
+- Conoscenza della progettazione shader in Visual Studio.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Creazione dell'aspetto di base con la forma e la trama
 

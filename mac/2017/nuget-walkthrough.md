@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58569303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989210"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
@@ -77,9 +77,9 @@ Fare clic con il pulsante destro del mouse su **Pacchetti** per accedere al menu
 
 ![Menu Pacchetti](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Aggiungi pacchetti** - Apre la finestra per l'aggiunta di altri pacchetti al progetto.
-*   **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
-*   **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
+* **Aggiungi pacchetti** - Apre la finestra per l'aggiunta di altri pacchetti al progetto.
+* **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
+* **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
 
 Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e influiscono su tutti i progetti nella soluzione.
 
@@ -87,9 +87,9 @@ Le opzioni Aggiorna e Ripristina sono disponibili anche a livello di soluzione e
 
 ![Menu Pacchetti](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Numero di versione** - La voce di menu Numero di versione è disabilitata e viene fornita esclusivamente a scopo informativo.
-*   **Aggiorna** - Controlla il server di origine e scarica una versione più recente, se disponibile.
-*   **Rimuovi** - Rimuove il pacchetto dal progetto e gli assembly correlati dai riferimenti del progetto.
+* **Numero di versione** - La voce di menu Numero di versione è disabilitata e viene fornita esclusivamente a scopo informativo.
+* **Aggiorna** - Controlla il server di origine e scarica una versione più recente, se disponibile.
+* **Rimuovi** - Rimuove il pacchetto dal progetto e gli assembly correlati dai riferimenti del progetto.
 
 ## <a name="adding-package-sources"></a>Aggiunta di origini dei pacchetti
 

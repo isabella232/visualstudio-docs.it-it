@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969399"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
@@ -34,7 +34,6 @@ Sono state aggiunte nuove funzionalità per gli amministratori del cloud che ren
 * [**Esportazione**](/visualstudio/subscriptions/exporting-subscriptions): possibilità di esportare un elenco di utenti e i dettagli delle assegnazioni corrispondenti. Un elenco come questo può risultare utile quando si vuole tenere traccia delle assegnazioni e delle date di scadenza.
 
    ![Esportare un elenco di sottoscrittori in Excel con il pulsante Esporta](media/export-subscriber-list-to-csv.png)
-
 
 * [**Modifica in blocco**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): possibilità di modificare le informazioni sulle sottoscrizioni di più sottoscrittori, in blocco.
 

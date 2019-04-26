@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950027"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Procedura: Selezionare un repository dei risultati del test di carico
 
@@ -32,26 +32,26 @@ I risultati ottenuti dai computer agente o locale possono essere memorizzati in 
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificare un archivio dei risultati per i dati dei test di carico
 
-1.  In **Esplora soluzioni** aprire il file del test di carico.
+1. In **Esplora soluzioni** aprire il file del test di carico.
 
-2.  Dalla barra degli strumenti **Test di carico** scegliere **Gestisci Test Controller**. Verrà visualizzata la finestra di dialogo **Gestisci controller di test**. Se si utilizza un agente in remoto, è necessario selezionare un controller.
+2. Dalla barra degli strumenti **Test di carico** scegliere **Gestisci Test Controller**. Verrà visualizzata la finestra di dialogo **Gestisci controller di test**. Se si utilizza un agente in remoto, è necessario selezionare un controller.
 
      ![Proprietà di connessione dell'archivio dei risultati del test di carico](../test/media/loadtestconnectionproperties.png) Proprietà di connessione dell'archivio dei risultati del test di carico
 
-3.  In **Archivio risultati test di carico** fare clic su **(…)** per visualizzare la finestra di dialogo **Proprietà connessione**.
+3. In **Archivio risultati test di carico** fare clic su **(…)** per visualizzare la finestra di dialogo **Proprietà connessione**.
 
-4.  In **Nome server** digitare il nome del server in cui sono stati eseguiti gli script `LoadTest`.
+4. In **Nome server** digitare il nome del server in cui sono stati eseguiti gli script `LoadTest`.
 
     > [!TIP]
     > Se si usa SQL Express nel computer locale per l'archivio del test di carico, immettere \<nomecomputer>\sqlexpress (ad esempio, **MyComputer\sqlexpress**).
 
-5.  In **Accesso al server** è possibile scegliere **Usa autenticazione di Windows**. È possibile specificare il nome utente e la password, ma, in tal caso, è necessario selezionare l'opzione **Salva password**.
+5. In **Accesso al server** è possibile scegliere **Usa autenticazione di Windows**. È possibile specificare il nome utente e la password, ma, in tal caso, è necessario selezionare l'opzione **Salva password**.
 
-6.  In **Connessione al database** scegliere **Seleziona o immetti un nome di database**. Dall'elenco a discesa selezionare **LoadTest**.
+6. In **Connessione al database** scegliere **Seleziona o immetti un nome di database**. Dall'elenco a discesa selezionare **LoadTest**.
 
-7.  Scegliere **OK**. Per eseguire il test della connessione, scegliere **Test connessione**.
+7. Scegliere **OK**. Per eseguire il test della connessione, scegliere **Test connessione**.
 
-8.  Scegliere **Chiudi** nella finestra di dialogo **Gestisci controller di test**.
+8. Scegliere **Chiudi** nella finestra di dialogo **Gestisci controller di test**.
 
 ## <a name="see-also"></a>Vedere anche
 

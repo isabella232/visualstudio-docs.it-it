@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: f02880e512f1030de0c53e2b68b463ac5ce2703a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1284dc529e4f150b282dcab2d919e027c9b606c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976361"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP
 
@@ -30,19 +30,19 @@ Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed 
 
 ## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Creare un progetto di unit test per un'app UWP
 
-1.  Scegliere **Nuovo progetto** dal menu **File**.
+1. Scegliere **Nuovo progetto** dal menu **File**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto**.
 
-2.  In Modelli scegliere il linguaggio di programmazione con cui creare gli unit test e quindi scegliere la libreria di unit test per Windows Universal associata. Ad esempio, scegliere **Visual C#**, **Windows Universal** e quindi **Libreria unit test (Universal Windows)**.
+2. In Modelli scegliere il linguaggio di programmazione con cui creare gli unit test e quindi scegliere la libreria di unit test per Windows Universal associata. Ad esempio, scegliere **Visual C#**, **Windows Universal** e quindi **Libreria unit test (Universal Windows)**.
 
-3.  (Facoltativo) Nella casella di testo **Nome** immettere il nome che si vuole usare per il progetto.
+3. (Facoltativo) Nella casella di testo **Nome** immettere il nome che si vuole usare per il progetto.
 
-4.  (Facoltativo) Modificare il percorso in cui si vuole creare il progetto immettendolo nella casella di testo **Percorso** oppure scegliendo il pulsante **Sfoglia**.
+4. (Facoltativo) Modificare il percorso in cui si vuole creare il progetto immettendolo nella casella di testo **Percorso** oppure scegliendo il pulsante **Sfoglia**.
 
-5.  (Facoltativo) Nella casella di testo del nome **Soluzione** immettere il nome che si desidera usare per la soluzione.
+5. (Facoltativo) Nella casella di testo del nome **Soluzione** immettere il nome che si desidera usare per la soluzione.
 
-6.  Lasciare selezionata l'opzione **Crea directory per soluzione** e scegliere il pulsante **OK** .
+6. Lasciare selezionata l'opzione **Crea directory per soluzione** e scegliere il pulsante **OK** .
 
      ![Libreria unit test personalizzata](../test/media/unit_test_win8_1.png)
 
@@ -52,13 +52,13 @@ Le procedure riportate di seguito descrivono i passaggi per creare, eseguire ed 
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Modificare il file manifesto dell'applicazione UWP del progetto di unit test
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file *Package.appxmanifest* e scegliere **Apri**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul file *Package.appxmanifest* e scegliere **Apri**.
 
      Verrà visualizzata la finestra **Progettazione manifesto** nella quale sarà possibile apportare le modifiche al manifesto.
 
-2.  In **Progettazione manifesto** scegliere la scheda **Funzionalità**.
+2. In **Progettazione manifesto** scegliere la scheda **Funzionalità**.
 
-3.  Nell'elenco in **Funzionalità**selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
+3. Nell'elenco in **Funzionalità**selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.
 
     > [!NOTE]
     > Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test funzioni correttamente.
@@ -73,23 +73,23 @@ Nell'**Editor di codice** modificare lo unit test e aggiungere le asserzioni e l
 
 ### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Per compilare la soluzione ed eseguire lo unit test usando Esplora test
 
-1.  Dal menu **Test** scegliere **Finestre**, quindi scegliere **Esplora test**.
+1. Dal menu **Test** scegliere **Finestre**, quindi scegliere **Esplora test**.
 
      Verrà visualizzato **Esplora test** senza il test elencato.
 
-2.  Scegliere **Compila soluzione** dal menu **Compila**.
+2. Scegliere **Compila soluzione** dal menu **Compila**.
 
      Lo unit test viene elencato.
 
     > [!NOTE]
     > È necessario compilare la soluzione per aggiornare l'elenco degli unit test in Esplora test.
 
-3.  In **Esplora test** scegliere lo unit test creato.
+3. In **Esplora test** scegliere lo unit test creato.
 
     > [!TIP]
     > In Esplora test viene fornito un collegamento al codice sorgente accanto a **Origine:**.
 
-4.  Scegliere **Esegui tutto**.
+4. Scegliere **Esegui tutto**.
 
      ![Esplora unit test &#45; esegui unit test](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 

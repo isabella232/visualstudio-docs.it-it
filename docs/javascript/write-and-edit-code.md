@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840838"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Informazioni su come usare l'editor del codice
 
@@ -120,7 +120,7 @@ Per vedere i frammenti di codice disponibili per il proprio linguaggio scegliere
 
 - [Frammenti di codice](../ide/code-snippets.md)
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
-- [struttura](../ide/outlining.md)
+- [Struttura](../ide/outlining.md)
 - [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)
 - [Refactoring](../ide/refactoring-in-visual-studio.md)
 - [Usare IntelliSense](../ide/using-intellisense.md)

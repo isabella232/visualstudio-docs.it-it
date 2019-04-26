@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950113"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procedura: Gestire insiemi di contatori usando l'Editor test di carico
 
@@ -35,9 +35,9 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
 ## <a name="to-manage-counter-sets"></a>Per gestire gli insiemi di contatori
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Scegliere il pulsante **Gestisci insiemi di contatori**.
+2. Scegliere il pulsante **Gestisci insiemi di contatori**.
 
      - oppure -
 
@@ -45,20 +45,20 @@ La gestione degli insiemi di contatori implica la scelta del gruppo di computer 
 
      Viene visualizzata la finestra di dialogo **Gestisci insiemi di contatori**.
 
-3.  (Facoltativo) Nella casella di riepilogo **I computer e gli insiemi di contatori selezionati saranno aggiunti alla seguente impostazione di esecuzione** selezionare un'impostazione di esecuzione diversa.
+3. (Facoltativo) Nella casella di riepilogo **I computer e gli insiemi di contatori selezionati saranno aggiunti alla seguente impostazione di esecuzione** selezionare un'impostazione di esecuzione diversa.
 
     > [!NOTE]
     > Ciò vale solo se nel test di carico sono incluse più impostazioni di esecuzione.
 
-4.  (Facoltativo) Scegliere **Aggiungi computer** per aggiungere un nuovo computer da monitorare. Verrà richiesto di specificare un nome. Digitare il nome di un computer per visualizzare i nodi sotto la nuova voce, ad esempio **ASP.NET**, **IIS**, **SQL** e altri. Selezionare le caselle di controllo accanto ai nodi da selezionare. I nuovi contatori vengono visualizzati nel riquadro **Anteprima selezioni**.
+4. (Facoltativo) Scegliere **Aggiungi computer** per aggiungere un nuovo computer da monitorare. Verrà richiesto di specificare un nome. Digitare il nome di un computer per visualizzare i nodi sotto la nuova voce, ad esempio **ASP.NET**, **IIS**, **SQL** e altri. Selezionare le caselle di controllo accanto ai nodi da selezionare. I nuovi contatori vengono visualizzati nel riquadro **Anteprima selezioni**.
 
-5.  (Facoltativo) Nella casella di testo **Tag computer** digitare un tag da associare al computer. Ad esempio, "TestMachine12 in lab3."
+5. (Facoltativo) Nella casella di testo **Tag computer** digitare un tag da associare al computer. Ad esempio, "TestMachine12 in lab3."
 
      I tag computer consentono di identificare un computer con un nome facile da riconoscere
 
-     e vengono visualizzati nel nodo **Mapping insiemi di contatori** nell'albero nell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono agli stakeholder di identificare il ruolo del computer nel test di carico. Ad esempio, "Web Server1 in lab2" o "SQL Server2 in Phoenix office". Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).
+     e vengono visualizzati nel nodo **Mapping insiemi di contatori** nell'albero nell'Editor test di carico. Inoltre, i tag vengono visualizzati nei rapporti di Excel che consentono alle parti interessate di identificare il ruolo del computer nel test di carico. Ad esempio, "Web Server1 in lab2" o "SQL Server2 in Phoenix office". Per altre informazioni, vedere [Creare report sui risultati dei test di carico per confronti tra test o analisi delle tendenze](../test/compare-load-test-results.md).
 
-6.  Scegliere **OK**.
+6. Scegliere **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 

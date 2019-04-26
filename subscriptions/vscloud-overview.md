@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978907"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
-
 
 È possibile acquistare [sottoscrizioni di Visual Studio Professional e Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) da [Visual Studio Marketplace](https://marketplace.visualstudio.com). Queste sono le cosiddette **sottoscrizioni cloud**.
 
@@ -65,12 +64,12 @@ Se sono state acquistate più sottoscrizioni, procedere al [portale di amministr
 
 ## <a name="manage-subscriptions"></a>Annullare il rinnovo delle sottoscrizioni cloud acquistate
 
-*   Per modificare il numero di sottoscrizioni acquistate:
+* Per modificare il numero di sottoscrizioni acquistate:
 
 > [!div class="mx-imgBorder"]
 > ![Modificare le sottoscrizioni](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Per annullare queste sottoscrizioni, ridurre il numero di sottoscrizioni a zero (0). Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione successivo (il primo giorno del mese successivo per le sottoscrizioni cloud mensili, 12 mesi dopo per le sottoscrizioni cloud annuali).
+* Per annullare queste sottoscrizioni, ridurre il numero di sottoscrizioni a zero (0). Le sottoscrizioni non verranno rinnovate all'inizio del periodo di fatturazione successivo (il primo giorno del mese successivo per le sottoscrizioni cloud mensili, 12 mesi dopo per le sottoscrizioni cloud annuali).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Acquistare subito sottoscrizioni cloud
 

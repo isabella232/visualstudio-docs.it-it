@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 55272f5d30602d03d0f3bb7e2ac16e9a709cafdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970057"
 ---
 # <a name="list-call-stack-command"></a>Comando Elenca stack di chiamate
 Visualizza lo stack di chiamate corrente.
@@ -83,7 +83,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
 
  Facoltativo. Consente di visualizzare lo stack di chiamate per il thread `n`. Se non viene specificato alcun thread, visualizza lo stack di chiamate per il thread corrente.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Le modifiche apportate a opzioni o argomenti si applicano alle chiamate future di questo comando. Se si emette Debug.ListCallStackby, viene visualizzato l'intero stack di chiamate. Se si specifica un indice, ad esempio,
 
 ```cmd

@@ -12,18 +12,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969228"
 ---
 # <a name="project-properties-reference"></a>Riferimenti alle proprietà di progetto
 Altre informazioni su come configurare e personalizzare le proprietà del progetto.
 
 ## <a name="project-properties-pages"></a>Pagine delle proprietà del progetto
 
-| Titolo | Descrizione |
+| Titolo | Description |
 | - | - |
 | [Pagina Applicazione, Creazione progetti (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. |
 | [Pagina Applicazione, Creazione progetti (C#)](../../ide/reference/application-page-project-designer-csharp.md) | Usare questa pagina per specificare le impostazioni e le proprietà dell'applicazione per un progetto [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. |

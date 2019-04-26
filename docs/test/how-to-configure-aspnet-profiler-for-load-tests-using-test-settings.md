@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979302"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procedura: Configurare il profiler ASP.NET per i test di carico usando le impostazioni test in Visual Studio
 
@@ -35,26 +35,26 @@ Per altre informazioni, vedere [Procedura: Creare un'impostazione test per un te
 
 Prima di eseguire i passaggi di questa procedura, è necessario aprire le impostazioni test da Visual Studio e selezionare la pagina **Dati e diagnostica**.
 
-1.  Selezionare il ruolo da usare per raccogliere i dati del profiler ASP.NET.
+1. Selezionare il ruolo da usare per raccogliere i dati del profiler ASP.NET.
 
     > [!WARNING]
     > Questo ruolo deve essere un server Web.
 
-2.  Selezionare **Profiler ASP.NET** per attivare la raccolta dei dati di profilatura ASP.NET, quindi scegliere **Configura**.
+2. Selezionare **Profiler ASP.NET** per attivare la raccolta dei dati di profilatura ASP.NET, quindi scegliere **Configura**.
 
      Viene visualizzata la finestra di dialogo per configurare la raccolta dei dati di profilatura ASP.NET.
 
-3.  In **Intervallo di campionamento** del profiler digitare il numero di cicli di clock della CPU non interrotti che devono verificarsi tra ogni campione di profilatura ASP.NET.
+3. In **Intervallo di campionamento** del profiler digitare il numero di cicli di clock della CPU non interrotti che devono verificarsi tra ogni campione di profilatura ASP.NET.
 
-4.  Per abilitare la profilatura delle interazioni tra livelli, selezionare **Abilita profilatura interazione tra livelli**.
+4. Per abilitare la profilatura delle interazioni tra livelli, selezionare **Abilita profilatura interazione tra livelli**.
 
      La profilatura interazione tra livelli consente di contare il numero di richieste inviate al server Web per ciascun artefatto, ad esempio, *MyPage.aspx* o *CompanyLogo.gif*, e il tempo richiesto per soddisfare ogni richiesta. La profilatura interazione tra livelli consente di raccogliere inoltre le connessioni ADO.NET utilizzate come parte della richiesta di pagina e il numero di chiamate a query e stored procedure eseguite come parte della risposta a tale richiesta.
 
      Vengono raccolti due set diversi di informazioni di intervallo:
 
-    -   Le informazioni di intervallo (Min, Max, Media e Totale) per soddisfare ogni richiesta Web.
+    - Le informazioni di intervallo (Min, Max, Media e Totale) per soddisfare ogni richiesta Web.
 
-    -   Le informazioni di intervallo (Min, Max, Media e Totale) per l'esecuzione di ogni query.
+    - Le informazioni di intervallo (Min, Max, Media e Totale) per l'esecuzione di ogni query.
 
 Con l'adattatore dati di diagnostica del profiler ASP.NET configurato nell'impostazione test, è ora possibile raccogliere dati di profilatura ASP.NET nell'applicazione Web ASP.NET.
 

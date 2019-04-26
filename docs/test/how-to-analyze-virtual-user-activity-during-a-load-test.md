@@ -8,12 +8,12 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979419"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedura: Analizzare le attività degli utenti virtuali durante un test di carico usando il grafico attività utente virtuale
 
@@ -25,9 +25,9 @@ Nelle procedure descritte di seguito viene illustrato come visualizzare il **Gra
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Per visualizzare il Grafico attività utente virtuale nei risultati del test di carico
 
-1.  Per visualizzare i dati utente virtuale, è necessario prima configurare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. Eseguire quindi il test di carico.
+1. Per visualizzare i dati utente virtuale, è necessario prima configurare l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** associata al test di carico. Eseguire quindi il test di carico.
 
-2.  Dopo l'esecuzione del test di carico, verrà visualizzata la pagina di riepilogo dei risultati del test. Scegliere il pulsante **Vai a dettagli utente** nella barra degli strumenti.
+2. Dopo l'esecuzione del test di carico, verrà visualizzata la pagina di riepilogo dei risultati del test. Scegliere il pulsante **Vai a dettagli utente** nella barra degli strumenti.
 
      -oppure-
 

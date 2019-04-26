@@ -8,12 +8,12 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949942"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico
 
@@ -32,11 +32,11 @@ Nell'**Editor test di carico** l'impostazione di esecuzione attiva è identifica
 
 ## <a name="select-the-active-run-setting"></a>Selezionare l'impostazione di esecuzione attiva
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Espandere la cartella **Impostazioni di esecuzione**.
+2. Espandere la cartella **Impostazioni di esecuzione**.
 
-3.  Fare clic con il pulsante destro del mouse sul nodo delle impostazioni esecuzione test che si vuole rendere attivo, quindi scegliere **Imposta come attivo**.
+3. Fare clic con il pulsante destro del mouse sul nodo delle impostazioni esecuzione test che si vuole rendere attivo, quindi scegliere **Imposta come attivo**.
 
      Nell'**Editor test di carico** il nodo delle impostazioni esecuzione test interessato viene aggiornato con il suffisso "[Active]".
 

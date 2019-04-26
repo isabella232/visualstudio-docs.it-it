@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975099"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedura: Visualizzare l'ereditarietà tra tipi in Progettazione classi
 
@@ -27,9 +27,9 @@ In **Progettazione classi** è possibile visualizzare la relazione di ereditarie
 
 ## <a name="to-find-the-base-type"></a>Per trovare il tipo di base
 
-1.  Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare la classe o l'interfaccia base.
+1. Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare la classe o l'interfaccia base.
 
-2.  Scegliere **Mostra classe base** o **Mostra interfacce di base** dal menu **Diagramma classi**.
+2. Scegliere **Mostra classe base** o **Mostra interfacce di base** dal menu **Diagramma classi**.
 
      La classe o l'interfaccia base del tipo risulterà selezionata nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le due forme.
 
@@ -37,9 +37,9 @@ In **Progettazione classi** è possibile visualizzare la relazione di ereditarie
 
 ## <a name="to-find-the-derived-types"></a>Per trovare i tipi derivati
 
-1.  Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare le classi o le interfacce derivate.
+1. Nel diagramma classi selezionare il tipo per il quale si desidera visualizzare le classi o le interfacce derivate.
 
-2.  Scegliere **Mostra classi derivate** o **Mostra interfacce derivate** dal menu **Diagramma classi**.
+2. Scegliere **Mostra classi derivate** o **Mostra interfacce derivate** dal menu **Diagramma classi**.
 
      Le classi o le interfacce derivate del tipo verranno visualizzate nel diagramma. Le eventuali linee di ereditarietà nascoste saranno ora visibili tra le forme.
 

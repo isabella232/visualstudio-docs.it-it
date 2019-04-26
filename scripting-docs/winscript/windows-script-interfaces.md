@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840031"
 ---
 # <a name="windows-script-interfaces"></a>Interfacce Windows Script
 
@@ -62,21 +62,21 @@ Nella figura seguente viene illustrata l'interazione tra un host di Windows Scri
 
 I passaggi necessari per l'interazione tra l'host e il motore figurano nell'elenco seguente.
 
-1.  Creare un progetto. L'host carica un progetto o documento. (Questo passaggio non è specifico di Windows Script, ma è incluso di seguito per completezza.)
+1. Creare un progetto. L'host carica un progetto o documento. (Questo passaggio non è specifico di Windows Script, ma è incluso di seguito per completezza.)
 
-2.  Creare il motore di Windows Script. L'host chiama `CoCreateInstance` per creare un nuovo motore di Windows Script, che specifica l'identificatore di classe (CLSID) del motore di script specifico da usare. Ad esempio, il browser HTML di Internet Explorer riceve l'identificatore di classe del motore di script tramite il CLSID = attributo del tag HTML \<OBJECT>.
+2. Creare il motore di Windows Script. L'host chiama `CoCreateInstance` per creare un nuovo motore di Windows Script, che specifica l'identificatore di classe (CLSID) del motore di script specifico da usare. Ad esempio, il browser HTML di Internet Explorer riceve l'identificatore di classe del motore di script tramite il CLSID = attributo del tag HTML \<OBJECT>.
 
-3.  Caricare lo script. Se il contenuto dello script è stato reso persistente, l'host chiama il metodo `IPersist*::Load` del motore di script per inserirlo nella risorsa di archiviazione dello script, stream o contenitore delle proprietà. In caso contrario, l'host usa il metodo `IPersist*::InitNew` o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) per creare uno script Null. Un host che gestisce uno script come testo può usare [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) per inserire il testo dello script nel motore di script, dopo la chiamata `IActiveScriptParse::InitNew`.
+3. Caricare lo script. Se il contenuto dello script è stato reso persistente, l'host chiama il metodo `IPersist*::Load` del motore di script per inserirlo nella risorsa di archiviazione dello script, stream o contenitore delle proprietà. In caso contrario, l'host usa il metodo `IPersist*::InitNew` o [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) per creare uno script Null. Un host che gestisce uno script come testo può usare [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) per inserire il testo dello script nel motore di script, dopo la chiamata `IActiveScriptParse::InitNew`.
 
-4.  Aggiungere gli elementi denominati. Per ogni nome elemento di livello principale (ad esempio, pagine e moduli) importato nello spazio dei nomi del motore di script, l'host chiama il metodo [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) per creare una voce nello spazio dei nomi del motore. Questo passaggio non è necessario se gli elementi denominati di livello principale fanno già parte dello stato persistente dello script caricato nel passaggio 3. Un host non usa `IActiveScript::AddNamedItem` per aggiungere elementi denominati di sottolivello (ad esempio, i controlli in una pagina HTML), invece, il motore ottiene indirettamente gli elementi di sottolivello dagli elementi di livello principale tramite le interfacce `ITypeInfo` e `IDispatch` dell'host.
+4. Aggiungere gli elementi denominati. Per ogni nome elemento di livello principale (ad esempio, pagine e moduli) importato nello spazio dei nomi del motore di script, l'host chiama il metodo [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) per creare una voce nello spazio dei nomi del motore. Questo passaggio non è necessario se gli elementi denominati di livello principale fanno già parte dello stato persistente dello script caricato nel passaggio 3. Un host non usa `IActiveScript::AddNamedItem` per aggiungere elementi denominati di sottolivello (ad esempio, i controlli in una pagina HTML), invece, il motore ottiene indirettamente gli elementi di sottolivello dagli elementi di livello principale tramite le interfacce `ITypeInfo` e `IDispatch` dell'host.
 
-5.  Per eseguire lo script. L'host fa sì che il motore avvii l'esecuzione dello script, impostando il flag SCRIPTSTATE_CONNECTED nel metodo [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Questa chiamata eseguirebbe probabilmente qualsiasi operazione di costruzione del motore di script, tra cui associazione statica, associazione a eventi (vedere sotto) ed esecuzione di codice, in modo simile a una funzione `main()` inserita nello script.
+5. Per eseguire lo script. L'host fa sì che il motore avvii l'esecuzione dello script, impostando il flag SCRIPTSTATE_CONNECTED nel metodo [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Questa chiamata eseguirebbe probabilmente qualsiasi operazione di costruzione del motore di script, tra cui associazione statica, associazione a eventi (vedere sotto) ed esecuzione di codice, in modo simile a una funzione `main()` inserita nello script.
 
-6.  Ottenere informazioni sugli elementi. Ogni volta che il motore di script deve associare un simbolo a un elemento di livello principale, chiama il metodo [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), che restituisce informazioni sull'elemento specificato.
+6. Ottenere informazioni sugli elementi. Ogni volta che il motore di script deve associare un simbolo a un elemento di livello principale, chiama il metodo [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), che restituisce informazioni sull'elemento specificato.
 
-7.  Associare gli eventi. Prima di avviare lo script effettivo, il motore di script si connette agli eventi di tutti gli oggetti rilevanti tramite l'interfaccia `IConnectionPoint`.
+7. Associare gli eventi. Prima di avviare lo script effettivo, il motore di script si connette agli eventi di tutti gli oggetti rilevanti tramite l'interfaccia `IConnectionPoint`.
 
-8.  Chiamare proprietà e metodi. Mentre lo script è in esecuzione, il motore di script realizza riferimenti a metodi e proprietà in oggetti denominati tramite `IDispatch::Invoke` o altri meccanismi di associazione standard OLE.
+8. Chiamare proprietà e metodi. Mentre lo script è in esecuzione, il motore di script realizza riferimenti a metodi e proprietà in oggetti denominati tramite `IDispatch::Invoke` o altri meccanismi di associazione standard OLE.
 
 ## <a name="windows-script-terms"></a>Termini relativi a Windows Script
 

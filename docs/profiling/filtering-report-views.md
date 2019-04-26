@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969888"
 ---
 # <a name="filter-report-views"></a>Filtrare le visualizzazioni report
 È possibile applicare filtri ai file di dati di profilatura per limitare i dati di profilatura che appaiono nelle visualizzazioni report Prestazioni e vengono esportati nei file di report. È possibile ridurre un report ai dati tra due valori di timestamp e ridurre i dati a processi e thread specifici. È possibile salvare i filtri in un file e quindi creare un filtro per un altro file di dati di profilatura importando il filtro salvato.
@@ -28,11 +28,11 @@ ms.locfileid: "56604431"
 
 #### <a name="to-create-a-profiler-report-filter"></a>Per creare un filtro report del profiler
 
-1.  Se non appare la finestra del filtro delle visualizzazioni dei report di prestazioni, fare clic su **Mostra filtro** nella barra degli strumenti della visualizzazione report Prestazioni.
+1. Se non appare la finestra del filtro delle visualizzazioni dei report di prestazioni, fare clic su **Mostra filtro** nella barra degli strumenti della visualizzazione report Prestazioni.
 
      Il filtro della visualizzazione report Prestazioni è una tabella. Ogni riga della tabella rappresenta una clausola del filtro. È possibile aggiungere qualsiasi numero di clausole a un filtro.
 
-2.  Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.
+2. Per ogni clausola da aggiungere a un filtro, selezionare o immettere i valori nei campi seguenti di una riga.
 
     |Campo|Description|
     |-----------|-----------------|
@@ -40,7 +40,6 @@ ms.locfileid: "56604431"
     |**Campo**|Selezionare il campo del report da usare nella clausola del filtro dall'elenco di campi dati visualizzato.|
     |**Operator**|Selezionare l'operatore che specifica la relazione da impostare nella clausola tra il campo e il valore.<br /><br /> =    Uguale a<br /><br /> <>  Non uguale a<br /><br /> <    Minore di<br /><br /> >    Maggiore di<br /><br /> <=  Minore o uguale a<br /><br /> >=  Maggiore o uguale a|
     |**Valore**|Selezionare o immettere il valore da cercare. Per alcuni campi è presente l'elenco dei valori disponibili.|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Per creare un filtro report del profiler dalla visualizzazione report Contrassegni
 
@@ -62,33 +61,33 @@ ms.locfileid: "56604431"
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Per caricare un filtro esistente da un file
 
-1.  Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Importa filtro**.
+1. Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Importa filtro**.
 
      Viene visualizzata la finestra di dialogo **Carica filtro**.
 
-2.  Specificare il percorso e il nome del file del filtro (VSPF) da caricare.
+2. Specificare il percorso e il nome del file del filtro (VSPF) da caricare.
 
 #### <a name="to-execute-a-filter"></a>Per eseguire un filtro
 
--   Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esegui filtro**.
+- Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esegui filtro**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Per arrestare un filtro la cui esecuzione richiede troppo tempo
 
--   Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Arresta filtro**.
+- Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Arresta filtro**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Per rimuovere un filtro in una visualizzazione report
 
-1.  Eliminare le righe delle clausole nel filtro della visualizzazione report Prestazioni.
+1. Eliminare le righe delle clausole nel filtro della visualizzazione report Prestazioni.
 
-2.  Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esegui filtro**.
+2. Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esegui filtro**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Per salvare un filtro in un file
 
-1.  Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esporta filtro**.
+1. Nella barra degli strumenti della visualizzazione report Prestazioni fare clic su **Esporta filtro**.
 
      Viene visualizzata la finestra di dialogo **Salva filtro**.
 
-2.  Specificare il percorso e il nome del file del filtro (VSPF) da salvare.
+2. Specificare il percorso e il nome del file del filtro (VSPF) da salvare.
 
 ## <a name="see-also"></a>Vedere anche
 - [Personalizzazione delle visualizzazioni dei report sugli strumenti delle prestazioni](../profiling/customizing-performance-tools-report-views.md)

@@ -17,11 +17,11 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 02229fd346ec1ead65e778fcce3ab6cb307e2656
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951250"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID dei carichi di lavoro e dei componenti di Visual Studio
 
@@ -29,9 +29,9 @@ Fare clic sui nomi delle edizioni riportati nella tabella seguente per visualizz
 
 ::: moniker range="vs-2017"
 
-**Contenuto aggiornato per la [versione 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
+**Aggiornato per la [versione 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **Edizione** | **Id** | **Description** |
+| **Edizione** | **ID** | **Descrizione** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Soluzione Microsoft DevOps per la produttività e il coordinamento in team di qualsiasi dimensione |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Servizi e strumenti di sviluppo professionali per team di piccole dimensioni |
@@ -52,7 +52,7 @@ Per altre informazioni su come usare questi elenchi, vedere la pagina [Usare i p
 
 **Aggiornato per [Visual Studio 2019 RC](/visualstudio/releases/2019/release-notes/)**
 
-| **Edizione** | **Id** | **Description** |
+| **Edizione** | **ID** | **Descrizione** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Soluzione Microsoft DevOps per la produttività e il coordinamento in team di qualsiasi dimensione |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Servizi e strumenti di sviluppo professionali per team di piccole dimensioni |

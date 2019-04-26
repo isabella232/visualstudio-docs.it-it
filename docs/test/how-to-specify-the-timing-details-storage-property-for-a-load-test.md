@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970639"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedura: Specificare la proprietà Intervallo archiviazione dettagli per un'impostazione di esecuzione del test di carico
 
@@ -47,15 +47,15 @@ Usando l'Editor test di carico, è possibile modificare un valore della propriet
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Per configurare la proprietà di archiviazione dei dettagli di intervallo in un test di carico
 
-1.  Aprire un test di carico nell'Editor test di carico.
+1. Aprire un test di carico nell'Editor test di carico.
 
-2.  Espandere il nodo **Impostazioni di esecuzione** nel test di carico.
+2. Espandere il nodo **Impostazioni di esecuzione** nel test di carico.
 
-3.  Scegliere le impostazioni di esecuzione test che si vuole configurare, ad esempio **Run Settings1[Active]**.
+3. Scegliere le impostazioni di esecuzione test che si vuole configurare, ad esempio **Run Settings1[Active]**.
 
-4.  Aprire la finestra **Proprietà**. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+4. Aprire la finestra **Proprietà**. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
-5.  Nella categoria **Risultati** scegliere la proprietà **Intervallo archiviazione dettagli** e selezionare **Tutti i singoli dettagli**.
+5. Nella categoria **Risultati** scegliere la proprietà **Intervallo archiviazione dettagli** e selezionare **Tutti i singoli dettagli**.
 
      Dopo aver configurato l'impostazione **Tutti i singoli dettagli** per la proprietà **Intervallo archiviazione dettagli** è possibile eseguire il test di carico e visualizzare il **Grafico attività utente virtuale**. Per altre informazioni, vedere [Procedura: Analizzare le attività utente virtuale durante un test di carico](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

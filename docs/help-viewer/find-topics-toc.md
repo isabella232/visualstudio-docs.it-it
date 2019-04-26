@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e75a732ddc9c56e7305e4ebbfec6a188fb6df2bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951339"
 ---
 # Procedura: Trovare argomenti nel sommario
 
@@ -33,9 +33,9 @@ Nella scheda **Contenuto** è possibile usare il sommario per trovare le informa
 
 È possibile filtrare il sommario per limitare l'ambito degli argomenti visualizzati nella scheda **Contenuto**. I titoli vengono visualizzati nell'elenco solo se contengono la radice del termine specificato. Ad esempio, se si specifica la parola "risoluzione" come filtro, verranno visualizzati solo i titoli contenenti la parola "risolvere" o "risoluzione". I nodi i cui titoli non contengono il termine verranno compressi in un unico nodo con i puntini di sospensione (**...**).
 
-1.  Scegliere la scheda **Contenuto**.
+1. Scegliere la scheda **Contenuto**.
 
-2.  Nella casella di testo **Filtra contenuti** immettere un termine.
+2. Nella casella di testo **Filtra contenuti** immettere un termine.
 
 > [!NOTE]
 > Se l'esecuzione del filtro richiede molto tempo, è possibile visualizzare i risultati più rapidamente usando l'operatore di ricerca avanzata `title:`.
@@ -44,9 +44,9 @@ Nella scheda **Contenuto** è possibile usare il sommario per trovare le informa
 
 Se un argomento è stato aperto tramite l'indice o le funzionalità di ricerca full-text, è possibile determinarne la posizione all'interno del sommario sincronizzando quest'ultimo con la finestra dell'argomento.
 
-1.  Visualizzare un argomento.
+1. Visualizzare un argomento.
 
-2.  Fare clic sul pulsante **Mostra argomento nel contenuto** nella barra degli strumenti oppure premere **CTRL**+**S**.
+2. Fare clic sul pulsante **Mostra argomento nel contenuto** nella barra degli strumenti oppure premere **CTRL**+**S**.
 
      Viene aperta la scheda **Contenuto** in cui viene visualizzata la posizione dell'argomento nel sommario.
 

@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979432"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procedura: Accedere ai risultati dei test di carico per l'analisi
 
@@ -31,24 +31,24 @@ I risultati relativi al test di carico completato contengono gli esempi di conta
 
 ## <a name="to-access-a-load-test-result"></a>Per accedere ai risultati di un test di carico
 
-1.  Da un progetto di test di carico e prestazioni web aprire un test di carico.
+1. Da un progetto di test di carico e prestazioni web aprire un test di carico.
 
-2.  Nella barra degli strumenti dell'Editor test di carico scegliere il pulsante **Apri e gestisci risultati**.
+2. Nella barra degli strumenti dell'Editor test di carico scegliere il pulsante **Apri e gestisci risultati**.
 
      Viene visualizzata la finestra di dialogo **Apri e gestisci risultati**.
 
-3.  In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare **\<locale> - Senza controller** per accedere ai risultati archiviati localmente.
+3. In **Immettere un nome del controller per trovare i risultati del test di carico** selezionare un controller. Selezionare **\<locale> - Senza controller** per accedere ai risultati archiviati localmente.
 
-4.  In **Mostra risultati per test di carico seguente** selezionare il test di carico di cui si vuole visualizzare i risultati. Selezionare **\<Mostra risultati per tutti i test>** per visualizzare tutti i risultati per tutti i test.
+4. In **Mostra risultati per test di carico seguente** selezionare il test di carico di cui si vuole visualizzare i risultati. Selezionare **\<Mostra risultati per tutti i test>** per visualizzare tutti i risultati per tutti i test.
 
      Se disponibili, i risultati del test di carico sono visualizzati nell'elenco **Risultati test di carico**. L'elenco contiene le colonne **Ora**, **Durata**, **Utente**, **Risultato**, **Test** e **Descrizione**. In **Test** è indicato il nome del test, mentre in **Descrizione** è riportata la descrizione facoltativa aggiunta prima dell'esecuzione del test.
 
     > [!NOTE]
     > I risultati vengono visualizzati insieme ai più recenti all'inizio dell'elenco.
 
-5.  Nell'elenco **Risultati test di carico** selezionare i risultati da analizzare e scegliere **Apri**.
+5. Nell'elenco **Risultati test di carico** selezionare i risultati da analizzare e scegliere **Apri**.
 
-6.  Verrà visualizzato l'**Analizzatore test di carico**. I risultati del test di carico selezionati appaiono nella visualizzazione Riepilogo. Per altre informazioni, vedere [Panoramica del riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md).
+6. Verrà visualizzato l'**Analizzatore test di carico**. I risultati del test di carico selezionati appaiono nella visualizzazione Riepilogo. Per altre informazioni, vedere [Panoramica del riepilogo dei risultati dei test di carico](../test/load-test-results-summary-overview.md).
 
      È possibile gestire altri aspetti dei risultati del test di carico nella finestra di dialogo **Apri e gestisci risultati**, incluse le operazioni di importazione, esportazione e rimozione dei risultati del test di carico. Per altre informazioni, vedere [Gestione dei risultati dei test di carico nel repository dei risultati del test di carico](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

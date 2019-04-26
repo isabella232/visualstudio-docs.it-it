@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792623"
 ---
 # <a name="add-existing-item-command"></a>Comando Aggiungi elemento esistente
 Aggiunge un file esistente alla soluzione corrente e lo apre.
@@ -41,7 +41,7 @@ File.AddExistingItem filename [/e:editorname]
 /e:"Source Code (text) Editor"
 ```
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 
 ## <a name="example"></a>Esempio

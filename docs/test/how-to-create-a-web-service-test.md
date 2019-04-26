@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950137"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procedura: Creare un test di servizio Web
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Per testare un servizio Web
 
-1.  Creare un nuovo test Web. Non appena si apre il browser, scegliere **Interrompi**.
+1. Creare un nuovo test Web. Non appena si apre il browser, scegliere **Interrompi**.
 
-2.  Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sul test prestazioni Web, quindi scegliere **Aggiungi richiesta servizio Web**.
+2. Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sul test prestazioni Web, quindi scegliere **Aggiungi richiesta servizio Web**.
 
-3.  Nella proprietà **Url** della nuova richiesta immettere il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Nella proprietà **Url** della nuova richiesta immettere il nome del servizio Web, ad esempio **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Aprire una sessione separata del browser e digitare l'URL della pagina con estensione *asmx* sulla barra degli strumenti **Indirizzo**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Esso contiene una `SOAPAction`.
+4. Aprire una sessione separata del browser e digitare l'URL della pagina con estensione *asmx* sulla barra degli strumenti **Indirizzo**. Selezionare il metodo da testare, quindi esaminare il messaggio SOAP. Esso contiene una `SOAPAction`.
 
-5.  Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sulla richiesta, quindi scegliere **Aggiungi intestazione** per aggiungere una nuova intestazione. Nella proprietà **Nome** digitare `SOAPAction`. Nella proprietà **Valore** digitare il valore contenuto in `SOAPAction`, ad esempio `"http://tempuri.org/CheckStatus"`.
+5. Nell'**Editor test prestazioni Web** fare clic con il pulsante destro del mouse sulla richiesta, quindi scegliere **Aggiungi intestazione** per aggiungere una nuova intestazione. Nella proprietà **Nome** digitare `SOAPAction`. Nella proprietà **Valore** digitare il valore contenuto in `SOAPAction`, ad esempio `"http://tempuri.org/CheckStatus"`.
 
-6.  Espandere il nodo URL nell'editor, scegliere il nodo **Corpo stringa** e nella proprietà **Tipo di contenuto** immettere un valore `text/xml`.
+6. Espandere il nodo URL nell'editor, scegliere il nodo **Corpo stringa** e nella proprietà **Tipo di contenuto** immettere un valore `text/xml`.
 
-7.  Tornare al browser del passaggio 4, selezionare la parte XML della richiesta SOAP dalla pagina descrittiva del servizio Web, quindi copiarla negli Appunti.
+7. Tornare al browser del passaggio 4, selezionare la parte XML della richiesta SOAP dalla pagina descrittiva del servizio Web, quindi copiarla negli Appunti.
 
-8.  Il contenuto XML è simile a quello riportato nell'esempio seguente:
+8. Il contenuto XML è simile a quello riportato nell'esempio seguente:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>
@@ -69,7 +69,7 @@ Visual Studio Enterprise
 12. Assegnare un nome e un valore al parametro della stringa di query. Nell'esempio precedente il nome è `op` e il valore è `CheckStatus`. Tramite il nome e il valore viene identificata l'operazione di servizio Web da eseguire.
 
     > [!NOTE]
-    > È possibile usare il data binding nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
+    > È possibile usare l'associazione dati nel corpo SOAP per sostituire i valori segnaposto con valori associati a dati mediante la sintassi `{{DataSourceName.TableName.ColumnName}}`.
 
 13. Eseguire il test. Nel riquadro superiore del **Visualizzatore risultati test prestazioni web** selezionare la richiesta di servizio Web. Nel riquadro inferiore selezionare la scheda Web browser. Verranno visualizzati l'XML restituito dal servizio Web e i risultati di tutte le operazioni.
 

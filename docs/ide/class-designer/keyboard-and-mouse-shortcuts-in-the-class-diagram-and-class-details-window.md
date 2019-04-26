@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975060"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe
 
@@ -28,7 +28,7 @@ ms.locfileid: "55951930"
 
 Nei diagrammi classi sono supportate le operazioni del mouse seguenti:
 
-|Combinazione del mouse|Contesto|Descrizione|
+|Combinazione del mouse|Contesto|Description|
 | - |-------------|-----------------|
 |Doppio clic|Elementi forma|Apre l'editor del codice.|
 |Doppio clic|Connettore simbolo|Espande/comprime il simbolo.|
@@ -56,7 +56,7 @@ Usando il mouse è possibile modificare l'aspetto della finestra **Dettagli clas
 
 Nei diagrammi classi sono supportate le operazioni della tastiera seguenti:
 
-|Chiave|Contesto|Descrizione|
+|Chiave|Contesto|Description|
 |---------|-------------|-----------------|
 |**Tasti di direzione**|All'interno delle forme dei tipi|Navigazione nel contenuto della forma in un formato struttura ad albero (è supportato il wrapping per la forma). I tasti freccia sinistra e destra espandono/comprimono l'elemento corrente se è espandibile; in caso contrario permettono di passare all'elemento padre (vedere le informazioni sulla navigazione nella visualizzazione struttura ad albero per i informazioni dettagliate sul comportamento).|
 |**Tasti di direzione**|Forme di primo livello|Consentono di spostare forme nel diagramma.|

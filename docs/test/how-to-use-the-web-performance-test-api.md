@@ -9,12 +9,12 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: add516e9a8f5cb31b85429b1bf41cfa438e8a438
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978562"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Procedura: Usare l'API del test delle prestazioni Web
 
@@ -31,34 +31,34 @@ ms.locfileid: "55949915"
 
 ## <a name="to-use-the-webtesting-namespace"></a>Per utilizzare lo spazio dei nomi WebTesting
 
-1.  Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
+1. Aprire un progetto di test di carico e prestazioni web che contenga un test delle prestazioni web.
 
-2.  Aggiungere un progetto Libreria di classi Visual C# o Visual Basic alla soluzione di test.
+2. Aggiungere un progetto Libreria di classi Visual C# o Visual Basic alla soluzione di test.
 
-3.  Aggiungere un riferimento al progetto di libreria di classi nel progetto di test di carico e prestazioni Web.
+3. Aggiungere un riferimento al progetto di libreria di classi nel progetto di test di carico e prestazioni Web.
 
-4.  Aggiungere un riferimento alla DLL Microsoft.VisualStudio.QualityTools.WebTestFramework nel progetto di libreria di classi.
+4. Aggiungere un riferimento alla DLL Microsoft.VisualStudio.QualityTools.WebTestFramework nel progetto di libreria di classi.
 
-5.  Nel file della classe contenuto nel progetto Libreria di classi aggiungere un'istruzione `using` per lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
+5. Nel file della classe contenuto nel progetto Libreria di classi aggiungere un'istruzione `using` per lo spazio dei nomi <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
-6.  Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+6. Creare una classe che implementi l'interfaccia <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-7.  Compilare il progetto.
+7. Compilare il progetto.
 
-8.  Aggiungere un nuovo plug-in del test delle prestazioni Web usando l'Editor test prestazioni Web:
+8. Aggiungere un nuovo plug-in del test delle prestazioni Web usando l'Editor test prestazioni Web:
 
-    1.  Scegliere **Aggiungi plug-in test Web** nella barra degli strumenti.
+    1. Scegliere **Aggiungi plug-in test Web** nella barra degli strumenti.
 
          Viene visualizzata la finestra di dialogo **Aggiungi plug-in test Web**.
 
-    2.  In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni web.
+    2. In **Seleziona un plug-in** selezionare la classe del plug-in del test delle prestazioni web.
 
-    3.  Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
+    3. Nel riquadro **Proprietà per il plug-in selezionato** impostare i valori iniziali per il plug-in da usare in fase di esecuzione.
 
         > [!NOTE]
         > È possibile esporre il numero di proprietà desiderato dai plug-in; è sufficiente renderle pubbliche, impostabili e di un tipo di base quale Integer, Boolean o String. È anche possibile modificare le proprietà del plug-in di test delle prestazioni Web in un secondo momento usando la finestra Proprietà.
 
-    4.  Scegliere **OK**.
+    4. Scegliere **OK**.
 
 9. Eseguire il test delle prestazioni Web.
 

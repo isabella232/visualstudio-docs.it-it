@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975164"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Procedura: Visualizzare i tipi esistenti in Progettazione classi
 
@@ -31,9 +31,9 @@ Per progettare nuovi tipi nei diagrammi classi, vedere [Procedura: Creare i tipi
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Per vedere i tipi di un progetto in un diagramma di classi
 
-1.  In un progetto in **Esplora soluzioni** aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+1. In un progetto in **Esplora soluzioni** aprire un file del diagramma di classi (.cd) esistente. In alternativa, se non sono disponibili diagrammi classi, aggiungerne uno nuovo al progetto. Vedere [How to: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
-2.  Nel progetto in **Esplora soluzioni** trascinare un file di codice sorgente nel diagramma di classi.
+2. Nel progetto in **Esplora soluzioni** trascinare un file di codice sorgente nel diagramma di classi.
 
     > [!NOTE]
     > Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:

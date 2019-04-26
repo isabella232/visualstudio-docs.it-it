@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892905"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
 
@@ -34,9 +34,9 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Per aggiungere personalizzazioni di compilazione al progetto
 
-1.  In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**. Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**. Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
 
-2.  In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
+2. In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
 
     |Tipo di asset|Nome personalizzazione di compilazione|
     |----------------| - |
@@ -44,23 +44,23 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
     |Modelli 3D|**MeshContentTask(.targets, .props)**|
     |Shader|**ShaderGraphContentTask(.targets, .props)**|
 
-3.  Fare clic sul pulsante **OK** .
+3. Fare clic sul pulsante **OK** .
 
 ## <a name="include-assets-in-your-build"></a>Inclusione degli asset nella build
  Dopo aver specificato i diversi tipi di asset 3D che si intende usare nel progetto, il passaggio successivo consiste nell'indicare quali file sono asset 3D e di quali tipi di asset si tratta.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Per aggiungere un asset alla build
 
-1.  In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
+1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
 
-2.  Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
+2. Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
 
-3.  In **Proprietà di configurazione** scegliere **Generale**, quindi nella sezione **Generale** della griglia delle proprietà impostare la proprietà **Tipo di elemento** sul tipo di elemento della pipeline di contenuti appropriato. Ad esempio, per un file di immagine o trama, scegliere **Image Content Pipeline**(Pipeline di contenuti immagine).
+3. In **Proprietà di configurazione** scegliere **Generale**, quindi nella sezione **Generale** della griglia delle proprietà impostare la proprietà **Tipo di elemento** sul tipo di elemento della pipeline di contenuti appropriato. Ad esempio, per un file di immagine o trama, scegliere **Image Content Pipeline**(Pipeline di contenuti immagine).
 
     > [!IMPORTANT]
     > Per impostazione predefinita, Visual Studio presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in Visual Studio. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.
 
-4.  Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK** .
 
 Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i relativi tipi di file di origine e output.
 
@@ -76,19 +76,19 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 ### <a name="to-configure-content-pipeline-properties"></a>Per configurare le proprietà della pipeline di contenuti degli asset
 
-1.  In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida per il file di asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
+1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida per il file di asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
 
-2.  Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
+2. Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
 
-3.  In **Proprietà di configurazione** scegliere il nodo della pipeline di contenuti, ad esempio **Pipeline di contenuti immagine** per gli asset di trama e immagine, quindi nella griglia delle proprietà impostare le proprietà sui valori appropriati. Ad esempio, per generare mipmap per un asset trama in fase di compilazione, impostare la proprietà **Genera MIP** su **Sì**.
+3. In **Proprietà di configurazione** scegliere il nodo della pipeline di contenuti, ad esempio **Pipeline di contenuti immagine** per gli asset di trama e immagine, quindi nella griglia delle proprietà impostare le proprietà sui valori appropriati. Ad esempio, per generare mipmap per un asset trama in fase di compilazione, impostare la proprietà **Genera MIP** su **Sì**.
 
-4.  Fare clic sul pulsante **OK** .
+4. Fare clic sul pulsante **OK** .
 
 ### <a name="image-content-pipeline-configuration"></a>Configurazione della pipeline di contenuti immagine
 
 Quando si usa lo strumento della pipeline di contenuti immagine per generare un asset trama, è possibile comprimere la trama in diversi modi, specificare se i livelli MIP devono essere generati in fase di compilazione e cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |**Compressione**|Specifica il tipo di compressione usato per il file di output.<br /><br /> Le opzioni disponibili sono:<br /><br /> -   **Nessuna compressione**<br />-   **Compressione BC1_UNORM**<br />-   **Compressione BC1_UNORM_SRGB**<br />-   **Compressione BC2_UNORM**<br />-   **Compressione BC2_UNORM_SRGB**<br />-   **Compressione BC3_UNORM**<br />-   **Compressione BC3_UNORM_SRGB**<br />-   **Compressione BC4_UNORM**<br />-   **Compressione BC4_SNORM**<br />-   **Compressione BC5_UNORM**<br />-   **Compressione BC5_SNORM**<br />-   **Compressione BC6H_UF16**<br />-   **Compressione BC6H_SF16**<br />-   **Compressione BC7_UNORM**<br />-   **Compressione BC7_UNORM_SRGB**<br /><br /> Per informazioni sui formati di compressione supportati nelle varie versioni di DirectX, vedere la [ Guida alla programmazione per DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converti in formato premoltiplicato per alfa|**Sì** per convertire l'immagine in formato premoltiplicato per alfa nel file di output, altrimenti **No**. Viene modificato solo il file di output, mentre l'immagine di origine resta invariata.|
@@ -99,7 +99,7 @@ Quando si usa lo strumento della pipeline di contenuti immagine per generare un 
 
 Quando si usa lo strumento della pipeline di contenuti mesh per generare un asset mesh, è possibile cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
@@ -107,7 +107,7 @@ Quando si usa lo strumento della pipeline di contenuti mesh per generare un asse
 
 Quando si usa lo strumento della pipeline di contenuti shader per generare un asset shader, è possibile cambiare il nome del file di output.
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |**Output contenuto**|Specifica il nome del file di output. **Importante:**  La modifica dell'estensione del nome del file di output non influisce sul formato di file originale.|
 
@@ -204,7 +204,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
 |[Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|

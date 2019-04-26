@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957674"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Definire comandi personalizzati per i progetti Python
 
@@ -379,7 +379,7 @@ Indica che il contenuto degli elementi `<Target>` o `<CreatePythonCommandItem>` 
 - L'attributo `Target` obbligatorio è vuoto.
 - L'attributo `TargetType` obbligatorio è vuoto o contiene un valore non riconosciuto.
 - L'attributo `ExecuteIn` obbligatorio è vuoto o contiene un valore non riconosciuto.
-- `ErrorRegex` o `WarningRegex` viene specificato senza impostare `ExecuteIn="output"`.
+- L'attributo `ErrorRegex` o `WarningRegex` viene specificato senza impostare `ExecuteIn="output"`.
 - Gli attributi non riconosciuti esistono nell'elemento. Ad esempio, è possibile che sia stato digitato erroneamente `Argumnets` invece di `Arguments`.
 
 I valori di attributo possono essere vuoti se si fa riferimento a una proprietà non definita. Ad esempio, se si usa il token `$(StartupFile)` ma nel progetto non è stato definito alcun file di avvio, il token viene risolto in una stringa vuota. In questi casi, può essere utile definire un valore predefinito. Ad esempio, l'impostazione predefinita dei comandi **Avvia il server** e **Avvia il debug del server** definiti nei modelli di progetto Bottle, Flask e Django è *manage.py* se non è stato specificato un file di avvio del server in altro modo nelle proprietà del progetto.

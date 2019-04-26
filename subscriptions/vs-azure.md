@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Azure incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5ef69bbaeeeed7de66e1cf206182bb83f4f42ff2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948464"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -43,10 +43,8 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 
 *Include Not for Resale (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP)
 
-
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
-
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -92,10 +90,9 @@ Per continuare a usare il credito di Azure di Visual Studio e gli sconti, esegui
 
 Se un utente del team o dell'organizzazione acquista sottoscrizioni, contattare l'amministratore di Visual Studio dell'organizzazione e richiedere una sottoscrizione di Visual Studio che conceda l'importo di credito mensile di Azure necessario.   Richiedere all'amministratore di assegnare la nuova sottoscrizione allo stesso ID utente a cui era assegnata la sottoscrizione precedente in modo che non sia necessario trasferire la sottoscrizione di Azure.
 
-
 Se è possibile acquistare direttamente una sottoscrizione, eseguire una delle operazioni seguenti:
-1.  Acquistare una sottoscrizione cloud di Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) annuale tramite Visual Studio Marketplace.
-2.  Ottenere uno sconto del 50% o maggiore rinnovando la sottoscrizione corrente tramite [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
+1. Acquistare una sottoscrizione cloud di Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) o [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) annuale tramite Visual Studio Marketplace.
+2. Ottenere uno sconto del 50% o maggiore rinnovando la sottoscrizione corrente tramite [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription).
 
 Confrontare tutte le [sottoscrizioni e i relativi vantaggi](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -111,8 +108,8 @@ Se si ritiene di aver ricevuto questo messaggio di posta elettronica per errore,
 
 ## <a name="support-resources"></a>Risorse di supporto
 
--  Serve aiuto con Azure?  Vedere queste risorse:
+- Serve aiuto con Azure?  Vedere queste risorse:
     - Supporto tecnico: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Documentazione di Azure](/azure/)
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

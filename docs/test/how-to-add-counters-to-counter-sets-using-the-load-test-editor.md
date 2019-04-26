@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979451"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procedura: Aggiungere contatori agli insiemi di contatori usando l'Editor test di carico
 
@@ -30,34 +30,34 @@ I contatori vengono gestiti nell'**Editor test di carico**. Gli insiemi di conta
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Per aggiungere contatori a un insieme di contatori
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Espandere il nodo **Insiemi di contatori**. Verranno visualizzati tutti gli insiemi di contatori aggiunti al test di carico.
+2. Espandere il nodo **Insiemi di contatori**. Verranno visualizzati tutti gli insiemi di contatori aggiunti al test di carico.
 
     > [!NOTE]
     > L'albero gerarchico del test di carico contiene anche il nodo **Impostazioni di esecuzione**, che contiene il nodo **Mapping insiemi di contatori** in cui sono indicati tutti i computer e gli insiemi di contatori mappati ai computer.
 
-3.  Fare clic con il pulsante destro del mouse sull'insieme di contatori esistente, quindi scegliere **Aggiungi contatori**.
+3. Fare clic con il pulsante destro del mouse sull'insieme di contatori esistente, quindi scegliere **Aggiungi contatori**.
 
      Viene visualizzata la finestra di dialogo **Seleziona contatori delle prestazioni**.
 
-4.  Nella casella combinata a discesa **Computer** digitare il nome del computer al quale eseguire il mapping. In alternativa, selezionare uno dei computer dall'elenco a discesa.
+4. Nella casella combinata a discesa **Computer** digitare il nome del computer al quale eseguire il mapping. In alternativa, selezionare uno dei computer dall'elenco a discesa.
 
     > [!NOTE]
     > Poiché è necessario che gli insiemi di contatori siano mappati a un computer prima che vengano raccolti dati sulle prestazioni, specificare un computer in cui raccogliere i dati sulle prestazioni.
 
-5.  Selezionare una **Categoria contatori delle prestazioni** per filtrare le categorie di contatori di dati delle prestazioni. Verranno visualizzate due colonne di dati da cui selezionare i contatori delle prestazioni.
+5. Selezionare una **Categoria contatori delle prestazioni** per filtrare le categorie di contatori di dati delle prestazioni. Verranno visualizzate due colonne di dati da cui selezionare i contatori delle prestazioni.
 
     > [!NOTE]
     > Alcune categorie di contatori richiedono di selezionare anche un'istanza. Se ad esempio si seleziona un contatore SQL, è necessario selezionare un'istanza SQL, in quanto nel computer di destinazione potrebbero essere installate più istanze di SQL.
 
-6.  Selezionare un contatore e un'istanza da aggiungere all'insieme di contatori personalizzati.
+6. Selezionare un contatore e un'istanza da aggiungere all'insieme di contatori personalizzati.
 
      \- oppure -
 
      Selezionare il pulsante di opzione **Tutti i contatori** per selezionare tutti i contatori disponibili.
 
-7.  Scegliere **OK**.
+7. Scegliere **OK**.
 
     > [!NOTE]
     > È inoltre possibile aggiungere contatori a un insieme di contatori selezionando una categoria di contatori o un contatore esistente, scegliendo Copia, quindi incollandolo in un nodo di insiemi di contatori diverso. I contatori aggiuntivi che vengono copiati ma non sono necessari possono essere eliminati.

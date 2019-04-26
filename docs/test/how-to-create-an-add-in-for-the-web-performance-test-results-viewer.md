@@ -9,20 +9,20 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5ca8c45d48776405b5c0602c44de368cd2899ca
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950053"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
--   <xref:Microsoft.VisualStudio.TestTools.WebTesting>
+- <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 
 Inoltre, è necessario aggiungere un riferimento alla DLL LoadTestPackage disponibile nella cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<versione>\Enterprise\Common7\IDE\PrivateAssemblies*.
 
@@ -109,31 +109,31 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>Per creare un controllo da utilizzare nel Visualizzatore risultati test Web
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.
 
 2. Creare un nuovo progetto **Libreria di controlli Windows Form**.
 
-3.  Dalla **casella degli strumenti** trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
+3. Dalla **casella degli strumenti** trascinare un oggetto <xref:System.Windows.Forms.DataGridView> sulla superficie di userControl1.
 
 4. Fare clic sul glifo del tag azioni (![Glifo smart tag](../test/media/vs_winformsmttagglyph.gif)) nell'angolo superiore destro di <xref:System.Windows.Forms.DataGridView> e attenersi alla procedura seguente:
 
-    1.  Scegliere **Ancora nel contenitore padre**.
+    1. Scegliere **Ancora nel contenitore padre**.
 
-    2.  Deselezionare le caselle di controllo **Abilita aggiunta**, **Abilita modifica**, **Abilita eliminazione** e **Abilita riordinamento colonne**.
+    2. Deselezionare le caselle di controllo **Abilita aggiunta**, **Abilita modifica**, **Abilita eliminazione** e **Abilita riordinamento colonne**.
 
-    3.  Scegliere **Aggiungi colonna**.
+    3. Scegliere **Aggiungi colonna**.
 
          Viene visualizzata la finestra di dialogo **Aggiungi colonna**.
 
-    4.  Nell'elenco a discesa **Tipo** selezionare **DataGridViewTextBoxColumn**.
+    4. Nell'elenco a discesa **Tipo** selezionare **DataGridViewTextBoxColumn**.
 
-    5.  Deselezionare il testo "Column1" in **Testo intestazione**.
+    5. Deselezionare il testo "Column1" in **Testo intestazione**.
 
-    6.  Scegliere **Aggiungi**.
+    6. Scegliere **Aggiungi**.
 
-    7.  Scegliere **Chiudi**.
+    7. Scegliere **Chiudi**.
 
-5.  Nella finestra **Proprietà** impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
+5. Nella finestra **Proprietà** impostare la proprietà **(Nome)** di <xref:System.Windows.Forms.DataGridView> su **resultControlDataGridView**.
 
 6. Fare clic con il pulsante destro del mouse sull'area di progettazione e selezionare **Visualizza codice**.
 
@@ -158,21 +158,21 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>Aggiungere codice a WebPerfTestResultsViewerAddin
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **Riferimenti** nel progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
 
-2.  Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **.NET**.
+2. Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **.NET**.
 
-3.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework** e **System.Windows.Forms**.
+3. Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework** e **System.Windows.Forms**.
 
-4.  Scegliere **OK**.
+4. Scegliere **OK**.
 
-5.  Fare di nuovo clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
+5. Fare di nuovo clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
 
-6.  Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **Sfoglia**.
+6. Nella finestra di dialogo **Aggiungi riferimento** scegliere la scheda **Sfoglia**.
 
-7.  Scegliere l'elenco a discesa per **Cerca in**, passare a *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* e selezionare il file *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
+7. Scegliere l'elenco a discesa per **Cerca in**, passare a *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* e selezionare il file *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
 
-8.  Scegliere **OK**.
+8. Scegliere **OK**.
 
 9. Fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerAddin e selezionare **Aggiungi riferimento**.
 
@@ -254,28 +254,28 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>Aggiungere codice a WebPerfTestResultsViewerControl
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2.  Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere **Proprietà**.
+2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere **Proprietà**.
 
      Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
-3.  In **Esplora soluzioni**, nel progetto WebPerfTestResultsViewerControl, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
+3. In **Esplora soluzioni**, nel progetto WebPerfTestResultsViewerControl, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
 
-4.  Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **.NET**.
+4. Nella finestra di dialogo **Aggiungi riferimento** fare clic sulla scheda **.NET**.
 
-5.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
+5. Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6.  Scegliere **OK**.
+6. Scegliere **OK**.
 
-7.  Nel file *UserControl1.cs* aggiungere le istruzioni Using seguenti:
+7. Nel file *UserControl1.cs* aggiungere le istruzioni Using seguenti:
 
     ```csharp
     using Microsoft.VisualStudio.TestTools.WebTesting;
     using Microsoft.VisualStudio.TestTools.WebTesting.Rules;
     ```
 
-8.  Aggiungere il metodo Update che viene chiamato e passato a un oggetto WebTestRequestResult dal metodo WebTestResultViewer_SelectedChanged di WebPerfTestResultsViewerAddin nel file *Connect.cs*. Il metodo Update consente di popolare l'oggetto DataGridView con varie proprietà passate a quest'ultimo nell'oggetto WebTestRequestResult.
+8. Aggiungere il metodo Update che viene chiamato e passato a un oggetto WebTestRequestResult dal metodo WebTestResultViewer_SelectedChanged di WebPerfTestResultsViewerAddin nel file *Connect.cs*. Il metodo Update consente di popolare l'oggetto DataGridView con varie proprietà passate a quest'ultimo nell'oggetto WebTestRequestResult.
 
     ```csharp
     public void Update(WebTestRequestResult WebTestResults)
@@ -304,27 +304,27 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 ### <a name="to-build-the-solution"></a>Per compilare la soluzione
 
--   Scegliere **Compila soluzione** dal menu **Compila**.
+- Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrare il componente aggiuntivo WebPerfTestResultsViewerAddin
 
 ### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Per registrare il componente aggiuntivo utilizzando Gestione componenti aggiuntivi
 
-1.  Scegliere **Gestione componenti aggiuntivi** dal menu **Strumenti**.
+1. Scegliere **Gestione componenti aggiuntivi** dal menu **Strumenti**.
 
-2.  Viene visualizzata la finestra di dialogo **Gestione componenti aggiuntivi**.
+2. Viene visualizzata la finestra di dialogo **Gestione componenti aggiuntivi**.
 
-3.  Selezionare la casella di controllo per il componente aggiuntivo WebPerfTestResultsViewerAddin nella colonna **Componenti aggiuntivi disponibili** e deselezionare le caselle di controllo sotto le colonne **Avvio** e **Riga di comando**.
+3. Selezionare la casella di controllo per il componente aggiuntivo WebPerfTestResultsViewerAddin nella colonna **Componenti aggiuntivi disponibili** e deselezionare le caselle di controllo sotto le colonne **Avvio** e **Riga di comando**.
 
-4.  Scegliere **OK**.
+4. Scegliere **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Eseguire il test delle prestazioni Web usando la compilazione del componente aggiuntivo WebPerfTestResultsViewerAddin
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Per eseguire il nuovo componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
 
-1.  Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
+1. Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
 
-2.  Scegliere la scheda per visualizzare le proprietà presentate nell'oggetto DataGridView.
+2. Scegliere la scheda per visualizzare le proprietà presentate nell'oggetto DataGridView.
 
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework
 
@@ -336,9 +336,9 @@ In questa pagina di opzioni è anche possibile specificare le cartelle in cui Vi
 
  Le impostazioni disponibili nella pagina delle opzioni relative alla sicurezza dei componenti aggiuntivi sono le seguenti:
 
--   **Consenti caricamento componenti aggiuntivi.** Selezionato per impostazione predefinita. Quando selezionata, questa opzione consente il caricamento di componenti aggiuntivi in Visual Studio. In caso contrario, non è possibile caricare componenti aggiuntivi in Visual Studio.
+- **Consenti caricamento componenti aggiuntivi.** Selezionato per impostazione predefinita. Quando selezionata, questa opzione consente il caricamento di componenti aggiuntivi in Visual Studio. In caso contrario, non è possibile caricare componenti aggiuntivi in Visual Studio.
 
--   **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Se selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione *ADDIN* devono trovarsi sempre nel sistema locale.
+- **Consenti caricamento componenti aggiuntivi da URL.** Non selezionato per impostazione predefinita. Se selezionata, questa opzione consente il caricamento di componenti aggiuntivi da siti Web esterni. In caso contrario, non è possibile caricare componenti aggiuntivi remoti in Visual Studio. Se per qualche motivo non è possibile eseguire il caricamento di un componente aggiuntivo, non potrà essere caricato dal Web. Questa impostazione controlla solo il caricamento della DLL del componente aggiuntivo. I file di registrazione *ADDIN* devono trovarsi sempre nel sistema locale.
 
 ## <a name="see-also"></a>Vedere anche
 

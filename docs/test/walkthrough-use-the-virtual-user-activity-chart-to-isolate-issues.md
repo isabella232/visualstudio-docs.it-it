@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976214"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi
 
@@ -26,19 +26,19 @@ Il Grafico attività utente virtuale consente di visualizzare l'attività degli 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Completare queste procedure:
+- Completare queste procedure:
 
-    -   [Registrare ed eseguire un test prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+    - [Registrare ed eseguire un test prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Creare ed eseguire un test di carico](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Creare ed eseguire un test di carico](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Aprire la soluzione ColorWebApp creata nelle procedure dettagliate precedenti
 
-1.  Aprire Visual Studio.
+1. Aprire Visual Studio.
 
-2.  Aprire la soluzione **ColorWebApp** contenente *LoadTest1.loadtest*. Questo test di carico è il risultato dell'esecuzione dei passaggi delle tre procedure dettagliate indicate all'inizio di questo argomento nella sezione dei prerequisiti.
+2. Aprire la soluzione **ColorWebApp** contenente *LoadTest1.loadtest*. Questo test di carico è il risultato dell'esecuzione dei passaggi delle tre procedure dettagliate indicate all'inizio di questo argomento nella sezione dei prerequisiti.
 
      I passaggi restanti in questa procedura dettagliata presuppongono l'esistenza di un'applicazione Web denominata ColorWebApp, di un test delle prestazioni Web denominato *ColorWebAppTest.webtest* e di un test di carico denominato *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ Il Grafico attività utente virtuale consente di visualizzare l'attività degli 
 
 Eseguire il test di carico per raccogliere i dati dell'attività utente virtuale.
 
--   Nell'**Editor test di carico** scegliere **Esegui** sulla barra degli strumenti. LoadTest1 inizia l'esecuzione.
+- Nell'**Editor test di carico** scegliere **Esegui** sulla barra degli strumenti. LoadTest1 inizia l'esecuzione.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolare problemi nel Grafico attività utente virtuale
 
@@ -54,11 +54,11 @@ Dopo aver eseguito il test di carico e raccolto i dati dell'attività utente vir
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Per usare il Grafico attività utente virtuale nei risultati del test di carico
 
-1.  Al termine dell'esecuzione del test di carico, viene visualizzata la pagina **Riepilogo** dei risultati del test nell'**Analizzatore test di carico**. Nella barra degli strumenti scegliere il pulsante **Grafici**.
+1. Al termine dell'esecuzione del test di carico, viene visualizzata la pagina **Riepilogo** dei risultati del test nell'**Analizzatore test di carico**. Nella barra degli strumenti scegliere il pulsante **Grafici**.
 
      Verrà aperta la visualizzazione Grafici.
 
-2.  Nel grafico **Tempo di risposta per pagina** fare clic con il pulsante destro del mouse accanto a una delle icone di violazione di soglia e selezionare **Vai a dettagli utente**.
+2. Nel grafico **Tempo di risposta per pagina** fare clic con il pulsante destro del mouse accanto a una delle icone di violazione di soglia e selezionare **Vai a dettagli utente**.
 
     > [!NOTE]
     > È possibile usare anche il pulsante **Dettagli** nella barra degli strumenti dell'**Editor test di carico** per aprire il grafico attività utente. Se si usa l'opzione **Vai a dettagli utente**, tuttavia, il **Grafico attività utente virtuale** eseguirà automaticamente lo zoom sulla parte del test sulla quale si è fatto clic con il pulsante destro del mouse nel grafico.
@@ -67,37 +67,37 @@ Dopo aver eseguito il test di carico e raccolto i dati dell'attività utente vir
 
      Sull'asse y, i tracciati orizzontali rappresentano utenti virtuali singoli. L'asse x visualizza la cronologia dell'esecuzione del test di carico.
 
-3.  Nello strumento **Zoom periodo di tempo** in **Grafico attività utente virtuale** regolare i dispositivi di scorrimento sinistro e destro fino a che entrambi non saranno vicini all'icona di violazione di soglia. In questo modo viene modificata la scala temporale nel **Grafico attività utente virtuale**
+3. Nello strumento **Zoom periodo di tempo** in **Grafico attività utente virtuale** regolare i dispositivi di scorrimento sinistro e destro fino a che entrambi non saranno vicini all'icona di violazione di soglia. In questo modo viene modificata la scala temporale nel **Grafico attività utente virtuale**
 
-4.  In **Legenda dettagli** selezionare la casella di controllo per **(Evidenzia errori)**. Notare che l'utente virtuale che provocato la violazione di soglia è evidenziato.
+4. In **Legenda dettagli** selezionare la casella di controllo per **(Evidenzia errori)**. Notare che l'utente virtuale che provocato la violazione di soglia è evidenziato.
 
-5.  Nel pannello **Risultati filtro** deselezionare le caselle di controllo per **Mostra risultati corretti** e **Errore HTTP** ma lasciare la casella di controllo **Errore regola di convalida** selezionata.
+5. Nel pannello **Risultati filtro** deselezionare le caselle di controllo per **Mostra risultati corretti** e **Errore HTTP** ma lasciare la casella di controllo **Errore regola di convalida** selezionata.
 
      Nel **Grafico attività utente virtuale** vengono visualizzati solo gli utenti virtuali che hanno trascorso più di 3 secondi sulla pagina *Red.aspx*, come specificato dalla violazione di soglia configurata nella procedura dettagliata precedente.
 
-6.  Posizionare il puntatore del mouse sulla linea orizzontale che rappresenta l'utente virtuale con l'errore della regola di convalida per la violazione di soglia.
+6. Posizionare il puntatore del mouse sulla linea orizzontale che rappresenta l'utente virtuale con l'errore della regola di convalida per la violazione di soglia.
 
-7.  Viene visualizzata una descrizione comando con le informazioni seguenti:
+7. Viene visualizzata una descrizione comando con le informazioni seguenti:
 
-    -   **ID utente**
+    - **ID utente**
 
-    -   **Scenario**
+    - **Scenario**
 
-    -   **Test**
+    - **Test**
 
-    -   **Risultato**
+    - **Risultato**
 
-    -   **Network**
+    - **Network**
 
-    -   **Ora di inizio**
+    - **Ora di inizio**
 
-    -   **Durata**
+    - **Durata**
 
-    -   **Agente**
+    - **Agente**
 
-    -   **Log test**
+    - **Log test**
 
-8.  Si noti che **Log test** è un collegamento. Scegliere il collegamento **Log test**.
+8. Si noti che **Log test** è un collegamento. Scegliere il collegamento **Log test**.
 
 9. Il test delle prestazioni Web ColorWebTest associato al log si apre nel **Visualizzatore risultati test prestazioni Web**. Ciò consente di isolare i punti in cui si sono verificate le violazioni di soglia.
 

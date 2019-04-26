@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823089"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisi delle violazioni delle regole di soglia nei test di carico tramite l'Analizzatore test di carico
 
@@ -34,7 +34,7 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
 
  Nella tabella vengono visualizzate le prime 1.000 violazioni di soglia. La tabella seguente contiene queste colonne:
 
-|Colonna|Descrizione|Visibile per impostazione predefinita|
+|Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |Ora|L'ora durante il test di carico in cui si è verificata la violazione.|Sì|
 |Computer|Il nome del computer sottoposto a test in cui si è verificata la violazione. **Nota:**  Questo nome è importante quando i test di carico vengono eseguiti in rig.|Sì|
@@ -66,7 +66,7 @@ Se si verificano violazioni, sulla barra di stato dell'**Analizzatore test di ca
 
  Se lo si desidera, è possibile visualizzare le violazioni di soglia anche nel grafico. L'icona di soglia viene visualizzata nel grafico accanto al punto dati in cui si è verificata la violazione di soglia.
 
- Nella struttura ad albero di contatori l'icona relativa a una violazione di soglia viene propagata dal nodo del contatore specifico fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile nell'albero perché tale albero non è stato espanso.
+ Nell'albero dei contatori l'icona relativa a una violazione di soglia viene propagata dal nodo del contatore specifico fino al nodo radice. In questo modo si segnala all'utente una violazione in un contatore che potrebbe non essere visibile nella struttura ad albero, in quanto non è stata espansa.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Visualizzare le violazioni di soglia sul grafico
 

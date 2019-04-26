@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975679"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
@@ -53,7 +53,7 @@ Per installare Help Viewer, vedere [Installazione di Microsoft Help Viewer](../h
 
 ### <a name="navigation-tabs"></a>Schede di spostamento
 
-|Scheda|Descrizione|
+|Scheda|Description|
 |---|-----------|
 |Sommario|Visualizza il contenuto installato come una gerarchia (sommario). È possibile specificare criteri per filtrare i titoli visualizzati.|
 |Indice|Visualizza un elenco alfabetico di termini indicizzati. È possibile eseguire ricerche nell'indice, specificare i criteri per filtrare le voci e specificare che le voci di indice contengano o inizino con il testo desiderato.|

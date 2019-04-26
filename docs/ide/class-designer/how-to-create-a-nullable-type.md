@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975510"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedura: Creare un tipo nullable in Progettazione classi
 
@@ -29,9 +29,9 @@ Un *tipo nullable* è un tipo di valore che si estende in modo che prenda l'inte
 
 I tipi nullable sono istanze della struttura <xref:System.Nullable%601>. Ogni istanza di un tipo nullable ha due proprietà pubbliche di sola lettura `HasValue` e `Value`:
 
--   `HasValue` è di tipo `bool` e indica se la variabile contiene un valore definito. `True` indica che la variabile contiene un valore diverso da null. È possibile testare un valore definito tramite un'istruzione, ad esempio `if (x.HasValue)` o `if (y != null)`.
+- `HasValue` è di tipo `bool` e indica se la variabile contiene un valore definito. `True` indica che la variabile contiene un valore diverso da null. È possibile testare un valore definito tramite un'istruzione, ad esempio `if (x.HasValue)` o `if (y != null)`.
 
--   `Value` è dello stesso tipo del tipo sottostante. Se `HasValue` è `True`, `Value` contiene un valore significativo. Se `HasValue` è `False`, l'accesso a `Value` genera un'eccezione di operazione non valida.
+- `Value` è dello stesso tipo del tipo sottostante. Se `HasValue` è `True`, `Value` contiene un valore significativo. Se `HasValue` è `False`, l'accesso a `Value` genera un'eccezione di operazione non valida.
 
 Per impostazione predefinita, una variabile dichiarata come tipo nullable non ha alcun valore definito (`HasValue` è `False`), a parte il valore predefinito del tipo di valore sottostante.
 
@@ -43,26 +43,26 @@ Per altre informazioni sui tipi nullable in C#, vedere [Tipi nullable](/dotnet/c
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Per aggiungere un tipo nullable tramite Progettazione classi
 
-1.  Nel diagramma classi espandere una classe esistente o creare una nuova classe.
+1. Nel diagramma classi espandere una classe esistente o creare una nuova classe.
 
-2.  Per aggiungere una classe al progetto, nel menu **Diagramma classi** fare clic su **Aggiungi** > **Aggiungi classe**.
+2. Per aggiungere una classe al progetto, nel menu **Diagramma classi** fare clic su **Aggiungi** > **Aggiungi classe**.
 
-3.  Per espandere la forma della classe, nel menu **Diagramma classi** fare clic su **Espandi**.
+3. Per espandere la forma della classe, nel menu **Diagramma classi** fare clic su **Espandi**.
 
-4.  Selezionare la forma della classe. Nel menu **Diagramma classi** fare clic su **Aggiungi** > **Campo**. Un nuovo campo con il nome predefinito **campo** verrà visualizzato nella forma della classe e anche nella finestra **Dettagli classe**.
+4. Selezionare la forma della classe. Nel menu **Diagramma classi** fare clic su **Aggiungi** > **Campo**. Un nuovo campo con il nome predefinito **campo** verrà visualizzato nella forma della classe e anche nella finestra **Dettagli classe**.
 
-5.  Nella colonna **Nome** della finestra **Dettagli classe** (o nella forma della classe stessa) modificare il nome del nuovo campo in un nome valido e significativo.
+5. Nella colonna **Nome** della finestra **Dettagli classe** (o nella forma della classe stessa) modificare il nome del nuovo campo in un nome valido e significativo.
 
-6.  Nella colonna **Tipo** della finestra **Dettagli classe** dichiarare il tipo come tipo nullable, specificando quanto segue:
+6. Nella colonna **Tipo** della finestra **Dettagli classe** dichiarare il tipo come tipo nullable, specificando quanto segue:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Per aggiungere un tipo nullable tramite Editor del codice
 
-1.  Aggiungere una classe al progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e nel menu **Progetto** fare clic su **Aggiungi classe**.
+1. Aggiungere una classe al progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e nel menu **Progetto** fare clic su **Aggiungi classe**.
 
-2.  Nel file con estensione CS o VB della nuova classe, aggiungere uno o più tipi nullable nella nuova classe per la dichiarazione di classe.
+2. Nel file con estensione CS o VB della nuova classe, aggiungere uno o più tipi nullable nella nuova classe per la dichiarazione di classe.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ Per altre informazioni sui tipi nullable in C#, vedere [Tipi nullable](/dotnet/c
     End Class
     ```
 
-3.  Dalla visualizzazione classi, trascinare la nuova icona di classe all'area di progettazione delle classi. Viene visualizzata un forma della classe nel diagramma classi.
+3. Dalla visualizzazione classi, trascinare la nuova icona di classe all'area di progettazione delle classi. Viene visualizzata un forma della classe nel diagramma classi.
 
-4.  Espandere i dettagli della forma della classe e spostare il puntatore del mouse sui membri della classe. La descrizione comando visualizza la dichiarazione di ogni membro.
+4. Espandere i dettagli della forma della classe e spostare il puntatore del mouse sui membri della classe. La descrizione comando visualizza la dichiarazione di ogni membro.
 
-5.  Fare clic sulla forma della classe e fare clic su **Dettagli classe**. È possibile visualizzare o modificare le proprietà del nuovo tipo nella finestra **Dettagli classe**.
+5. Fare clic sulla forma della classe e fare clic su **Dettagli classe**. È possibile visualizzare o modificare le proprietà del nuovo tipo nella finestra **Dettagli classe**.
 
 ## <a name="see-also"></a>Vedere anche
 

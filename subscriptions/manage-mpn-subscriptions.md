@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Come assegnare le sottoscrizioni di Visual Studio agli utenti finali per i partner MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412394"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gestione delle sottoscrizioni di Visual Studio offerte tramite Microsoft Partner Network (MPN)
 
@@ -42,7 +42,6 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
     - Indirizzo di posta elettronica contatto
 13. L'accesso è a questo punto completo e il sottoscrittore dovrebbe avere accesso ai vantaggi
 
-
 ### <a name="competency-partners"></a>Partner con competenze
 1. Selezionare **Requirements and Assets** (Requisiti e risorse)
 2. Selezionare **Privileges** (Privilegi)
@@ -66,7 +65,7 @@ Sottoscrittore di Microsoft Action Pack e sottoscrizioni di Visual Studio
 
 > [!NOTE]
 > Il ruolo di contatto tecnico è obbligatorio per le sottoscrizioni di Visual Studio
->     - Pagina 8: Assigning Visual Studio subscriptions for Competency Partners (Assegnazione delle sottoscrizioni di Visual Studio per i partner con competenze)
+> - Pagina 8: Assigning Visual Studio subscriptions for Competency Partners (Assegnazione delle sottoscrizioni di Visual Studio per i partner con competenze)
 
 ## <a name="need-help"></a>Per ulteriori informazioni, vedere
 I sottoscrittori e gli amministratori del programma devono collaborare direttamente con il team di supporto di Microsoft Partner Network per risolvere eventuali problemi di accesso alle sottoscrizioni da parte dei sottoscrittori. Per assistenza, visitare la pagina del [supporto per i partner](https://partner.microsoft.com/support). (Verranno richieste le credenziali di accesso di MPN.)

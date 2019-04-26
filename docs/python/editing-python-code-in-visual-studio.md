@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959529"
 ---
 # <a name="edit-python-code"></a>Modificare il codice Python
 
@@ -76,7 +76,7 @@ Per le istruzioni `raise` e `except` vengono visualizzati gli elenchi di classi 
 
 ### <a name="type-hints"></a>Suggerimenti relativi al tipo
 
-*Visual Studio 2017 versione 15.7 e successive.*
+*Visual Studio 2017 15.7 e versioni successive.*
 
 I "suggerimenti relativi al tipo" in Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) rappresentano una sintassi di annotazione per le funzioni e le classi che indicano i tipi di argomenti, valori restituiti e attributi di classi. IntelliSense visualizza i suggerimenti relativi al tipo quando si passa il mouse su chiamate di funzioni, argomenti e variabili che presentano tali annotazioni.
 
