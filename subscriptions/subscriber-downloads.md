@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informazioni su come individuare e scaricare i prodotti Microsoft inclusi con la sottoscrizione di Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953721"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.

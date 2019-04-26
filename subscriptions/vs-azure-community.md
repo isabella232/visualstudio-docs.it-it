@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Community di Azure nelle sottoscrizioni di Visual Studio selezionate.
 searchscope: VS Subscription
-ms.openlocfilehash: 78c6954cd6dbbee48a3754d7d58eaa34b2e17158
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 154c0164f5126fc38d0e0af5ec5703faacb9f94f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948315"
 ---
 # <a name="azure-community"></a>Community di Azure
 
@@ -28,8 +28,6 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
 | [Portale di gestione di Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Backup di Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure Stack](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Macchine virtuali di Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-
-
 ## <a name="activation-steps"></a>Procedura di attivazione
 È semplice iniziare a partecipare alla community di Azure.
 1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -42,13 +40,12 @@ Ottenere assistenza direttamente dal team di Azure in una selezione di forum di 
     > [!div class="mx-imgBorder"]
     > ![Forum della community di Azure](_img/vs-azure-community/vs-azure-community-forums.png)
 
-4.  All'interno del forum, è possibile visualizzare gli argomenti e le risposte, cercare risposte alle proprie domande o pubblicare una nuova domanda.
+4. All'interno del forum, è possibile visualizzare gli argomenti e le risposte, cercare risposte alle proprie domande o pubblicare una nuova domanda.
     > [!div class="mx-imgBorder"]
     > ![Esempio di Community di Azure](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Idoneità
 La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione come mostrato di seguito:
-
 
 |                                          Livello di sottoscrizione                                           |     Canali      |    Vantaggio    | Rinnovabile? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
@@ -65,11 +62,10 @@ La disponibilità del vantaggio Community di Azure dipende dalla sottoscrizione 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
-
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Per altre risorse della community di Azure, visitare la [pagina del supporto](https://azure.microsoft.com/support/forums/) della community di Azure.
--  [Documentazione di Azure](/azure/).
--  Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per altre risorse della community di Azure, visitare la [pagina del supporto](https://azure.microsoft.com/support/forums/) della community di Azure.
+- [Documentazione di Azure](/azure/).
+- Se è necessaria assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio,  contattare il [supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

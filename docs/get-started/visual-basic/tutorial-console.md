@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972489"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Esercitazione: Introduzione a Visual Basic in Visual Studio
 
@@ -27,7 +27,7 @@ In questa esercitazione per Visual Basic (VB) si userà Visual Studio per creare
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -262,7 +262,7 @@ Un'app console riceve input e visualizza output in una finestra della riga di co
 L'esercitazione è stata completata. Per altre informazioni, vedere l'esercitazione seguente.
 
 > [!div class="nextstepaction"]
-> [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Compilare una libreria .NET Standard con Visual Basic e .NET Core SDK in Visual Studio 2017](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vedere anche
 

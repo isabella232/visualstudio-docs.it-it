@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informazioni su come eseguire l'onboarding dopo la migrazione dell'organizzazione nel portale di amministrazione delle sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008215"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Eseguire l'onboarding nel portale di amministrazione delle sottoscrizioni di Visual Studio dopo la migrazione dell'organizzazione
 
@@ -26,7 +26,7 @@ Potrebbe verificarsi uno degli scenari seguenti:
 
 1. [Il contatto principale non ha completato il processo di onboarding.](#onboarding-not-completed-by-primary-contact)
 2. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente erano elencate in VLSC.](#primary-contact-did-not-provide-you-administrator-access)
-3. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente non erano elencate in VLSC.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
+3. [Il contatto principale ha completato l'onboarding, ma non ha aggiunto l'utente come amministratore. Le credenziali dell'utente non sono state indicate in VLSC.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> Se si è il contatto principale o il contatto per le comunicazioni e non è stato completato l'onboarding, eseguire la procedura nello scenario 1 per la configurazione dell'organizzazione.
 

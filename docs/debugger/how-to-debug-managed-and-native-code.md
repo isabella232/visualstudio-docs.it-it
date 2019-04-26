@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847895"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
 

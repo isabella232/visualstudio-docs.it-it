@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824217"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedura: Modificare maiuscole/minuscole nell'editor
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907451"
 
 ## <a name="to-switch-text-to-upper-case"></a>Per convertire il testo in lettere maiuscole
 
-1.  Selezionare il testo da convertire.
+1. Selezionare il testo da convertire.
 
-2.  Scegliere **Avanzate** dal menu **Modifica**.
+2. Scegliere **Avanzate** dal menu **Modifica**.
 
-3.  Per convertire tutti i caratteri del testo in lettere maiuscole, scegliere **Maiuscole** oppure premere **CTRL**+**MAIUSC**+**U**.
+3. Per convertire tutti i caratteri del testo in lettere maiuscole, scegliere **Maiuscole** oppure premere **CTRL**+**MAIUSC**+**U**.
 
     oppure
 

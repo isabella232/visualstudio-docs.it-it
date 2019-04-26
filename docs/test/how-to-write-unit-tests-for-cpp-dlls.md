@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: bef167eadeb58d54ffff4c4b08dcaf44ec66ccdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821049"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -38,35 +38,35 @@ ms.locfileid: "55934029"
 
 ## <a name="create-the-tests"></a>Creare i test
 
-###  <a name="staticLink"></a> Per modificare la DLL in una libreria statica
+### <a name="staticLink"></a> Per modificare la DLL in una libreria statica
 
 - Se i test devono usare membri che non vengono esportati dal progetto della DLL e il progetto sottoposto al test viene compilato come libreria dinamica, può essere utile convertirlo in una libreria statica.
 
-  1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
+  1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-  2.  Scegliere **Proprietà di configurazione** > **Generale**.
+  2. Scegliere **Proprietà di configurazione** > **Generale**.
 
-  3.  Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
+  3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
 
   Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
 
-###  <a name="projectRef"></a> Per fare riferimento a funzioni della DLL esportate dal progetto di test
+### <a name="projectRef"></a> Per fare riferimento a funzioni della DLL esportate dal progetto di test
 
 - Se il progetto della DLL esporta le funzioni che si vogliono testare, è possibile aggiungere un riferimento al progetto di codice dal progetto di test.
 
-  1.  Creare un progetto unit test nativo.
+  1. Creare un progetto unit test nativo.
 
-      1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
+      1. Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
 
-  2.  In **Esplora soluzioni** scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Si apre la finestra **Proprietà** del progetto.
+  2. In **Esplora soluzioni** scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Si apre la finestra **Proprietà** del progetto.
 
-  3.  Selezionare **Proprietà comuni** > **Framework e riferimenti** e quindi scegliere il pulsante **Aggiungi nuovo riferimento**.
+  3. Selezionare **Proprietà comuni** > **Framework e riferimenti** e quindi scegliere il pulsante **Aggiungi nuovo riferimento**.
 
-  4.  Selezionare **Progetti** e quindi il progetto da testare.
+  4. Selezionare **Progetti** e quindi il progetto da testare.
 
        Scegliere il pulsante **Aggiungi**.
 
-  5.  Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
+  5. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
        Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
 
@@ -74,39 +74,39 @@ ms.locfileid: "55934029"
 
   Andare a [Scrittura di unit test](#addTests).
 
-###  <a name="objectRef"></a> Per collegare i test all'oggetto o a file di libreria
+### <a name="objectRef"></a> Per collegare i test all'oggetto o a file di libreria
 
 - Se la DLL non esporta le funzioni che si vuole testare, è possibile aggiungere il file con estensione *obj* o *lib* di output alle dipendenze del progetto di test.
 
-  1.  Creare un progetto unit test nativo.
+  1. Creare un progetto unit test nativo.
 
-      1.  Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test nativo**.
+      1. Nel menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test nativo**.
 
-  2.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto di test.
+  2. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto di test.
 
-  3.  Scegliere **Proprietà di configurazione** > **Linker** > **Input** > **Dipendenze aggiuntive**.
+  3. Scegliere **Proprietà di configurazione** > **Linker** > **Input** > **Dipendenze aggiuntive**.
 
        Scegliere **Modifica** e aggiungere i nomi dei file con estensione **obj** o **lib**. Non usare nomi di percorso completo.
 
-  4.  Scegliere **Proprietà di configurazione** > **Linker** > **Generale** > **Directory librerie aggiuntive**.
+  4. Scegliere **Proprietà di configurazione** > **Linker** > **Generale** > **Directory librerie aggiuntive**.
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-  5.  Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
+  5. Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
   Andare a [Scrittura di unit test](#addTests).
 
-###  <a name="sameProject"></a> Per aggiungere unit test nello stesso progetto
+### <a name="sameProject"></a> Per aggiungere unit test nello stesso progetto
 
 1. Modificare il codice prodotto delle proprietà del progetto per includere le intestazioni e i file di libreria necessari per gli unit test.
 
-   1.  In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
+   1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-   2.  Scegliere **Proprietà di configurazione** > **Directory di VC++**.
+   2. Scegliere **Proprietà di configurazione** > **Directory di VC++**.
 
-   3.  Modificare le directory di inclusione e di libreria:
+   3. Modificare le directory di inclusione e di libreria:
 
        |Directory|Proprietà|
        |-|-|
@@ -115,15 +115,15 @@ ms.locfileid: "55934029"
 
 2. Aggiungere un file di unit test C++:
 
-   -   In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** > **Unit Test C++** dal menu di scelta rapida del progetto.
+   - In **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo elemento** > **Unit Test C++** dal menu di scelta rapida del progetto.
 
    Andare a [Scrittura di unit test](#addTests).
 
-##  <a name="addTests"></a> Scrivere gli unit test
+## <a name="addTests"></a> Scrivere gli unit test
 
-1.  In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
+1. In ogni file di codice dello unit test, aggiungere un'istruzione `#include` per le intestazioni del progetto sottoposto a test.
 
-2.  Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
+2. Aggiungere le classi e i metodi di test ai file di codice dello unit test. Ad esempio:
 
     ```cpp
     #include "stdafx.h"
@@ -145,11 +145,11 @@ ms.locfileid: "55934029"
 
 ## <a name="run-the-tests"></a>Eseguire i test
 
-1.  Nel menu **Test** scegliere **Finestre** > **Esplora test**.
+1. Nel menu **Test** scegliere **Finestre** > **Esplora test**.
 
 1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-1.  In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
+1. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -107,7 +107,7 @@
               href: invokemethod-activity-designer.md
             - name: ActivityDesigner WriteLine
               href: writeline-activity-designer.md
-        - name: ActivityDesigner Transaction
+        - name: ActivityDesigner Transazione
           href: transaction-activity-designers.md
           items:
             - name: ActivityDesigner CancellationScope
@@ -120,7 +120,7 @@
               href: confirm-activity-designer.md
             - name: ActivityDesigner TransactionScope
               href: transactionscope-activity-designer.md
-        - name: ActivityDesigner della raccolta
+        - name: ActivityDesigner Raccolta
           href: collection-activity-designers.md
           items:
             - name: Activity Designer<T> AddToCollection
@@ -173,7 +173,7 @@
           href: initialize-correlation-dialog-box.md
         - name: 'Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti'
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
-        - name: Funzionalità della shell di Progettazione flussi di lavoro
+        - name: Caratteristiche della shell di Progettazione flussi di lavoro
           href: workflow-designer-shell-features.md
         - name: Tasti di scelta rapida
           href: keyboard-shortcuts-in-the-workflow-designer.md
