@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a3305a12283072e39654833cabc609efa3f5bc2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788391"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 
@@ -28,20 +28,20 @@ Quando Visual Studio genera uno unit test per una classe generica, ad esempio `M
 ## <a name="examples"></a>Esempi
  Gli esempi seguenti illustrano unit test per i metodi generici.
 
--   [Modificare il codice di test generato](#EditingGeneratedTestCode). Questo esempio include due sezioni, relative a codice di test generato e codice di test modificato. Mostra come modificare il codice di test non elaborato generato da un metodo generico per creare un metodo di test utile.
+- [Modificare il codice di test generato](#EditingGeneratedTestCode). Questo esempio include due sezioni, relative a codice di test generato e codice di test modificato. Mostra come modificare il codice di test non elaborato generato da un metodo generico per creare un metodo di test utile.
 
--   [Usare un vincolo di tipo](#TypeConstraintNotSatisfied). Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo. In questo esempio il vincolo di tipo non viene soddisfatto.
+- [Usare un vincolo di tipo](#TypeConstraintNotSatisfied). Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo. In questo esempio il vincolo di tipo non viene soddisfatto.
 
-###  <a name="EditingGeneratedTestCode"></a> Esempio 1: Modifica del codice di test generato
+### <a name="EditingGeneratedTestCode"></a> Esempio 1: Modifica del codice di test generato
  Il codice di test in questa sezione consente di testare un metodo di codice sottoposto a test denominato `SizeOfLinkedList()`. Questo metodo restituisce un numero intero che specifica il numero di nodi nell'elenco collegato.
 
  Il primo esempio di codice, nella sezione relativa al codice di test generato, mostra il codice di test non modificato, così come è stato generato da Visual Studio Enterprise. Il secondo esempio, nella sezione relativa al codice di test modificato, mostra come eseguire il test del funzionamento del metodo SizeOfLinkedList per due tipi di dati diversi, `int` e `char`.
 
  Il codice illustra due metodi:
 
--   Un metodo helper di test, `SizeOfLinkedListTestHelper<T>()`. Per impostazione predefinita, un metodo helper di test contiene "TestHelper" nel nome.
+- Un metodo helper di test, `SizeOfLinkedListTestHelper<T>()`. Per impostazione predefinita, un metodo helper di test contiene "TestHelper" nel nome.
 
--   Un metodo di test, `SizeOfLinkedListTest()`. Ogni metodo di test è contrassegnato con l'attributo TestMethod.
+- Un metodo di test, `SizeOfLinkedListTest()`. Ogni metodo di test è contrassegnato con l'attributo TestMethod.
 
 #### <a name="generated-test-code"></a>Codice di test generato
  Il codice di test seguente è stato generato dal metodo `SizeOfLinkedList()`. Poiché si tratta del test generato non modificato, è necessario modificarlo per eseguire correttamente il test del metodo SizeOfLinkedList.
@@ -73,22 +73,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Metodo helper di test
  Il metodo helper di test esegue i passaggi seguenti, che corrispondono alle righe nel codice indicate dal passaggio 1 al passaggio 5.
 
-1.  Creare un elenco collegato generico.
+1. Creare un elenco collegato generico.
 
-2.  Aggiungere quattro nodi all'elenco collegato. Il tipo di dati del contenuto di questi nodi è sconosciuto.
+2. Aggiungere quattro nodi all'elenco collegato. Il tipo di dati del contenuto di questi nodi è sconosciuto.
 
-3.  Assegnare la dimensione prevista dell'elenco collegato alla variabile `expected`.
+3. Assegnare la dimensione prevista dell'elenco collegato alla variabile `expected`.
 
-4.  Calcolare la dimensione effettiva dell'elenco collegato e assegnarla alla variabile `actual`.
+4. Calcolare la dimensione effettiva dell'elenco collegato e assegnarla alla variabile `actual`.
 
-5.  Confrontare `actual` con `expected` in un'istruzione Assert. Se la dimensione effettiva non è uguale a quella prevista, il test ha esito negativo.
+5. Confrontare `actual` con `expected` in un'istruzione Assert. Se la dimensione effettiva non è uguale a quella prevista, il test ha esito negativo.
 
 ##### <a name="test-method"></a>Metodo di test
  Il metodo di test viene compilato nel codice che viene chiamato quando si esegue il test denominato SizeOfLinkedListTest. Il metodo esegue i passaggi seguenti, che corrispondono alle righe nel codice indicate dai passaggi 6 e 7.
 
-1.  Specificare `<int>` quando si chiama il metodo helper di test per verificare che il test funzioni per le variabili `integer`.
+1. Specificare `<int>` quando si chiama il metodo helper di test per verificare che il test funzioni per le variabili `integer`.
 
-2.  Specificare `<char>` quando si chiama il metodo helper di test per verificare che il test funzioni per le variabili `char`.
+2. Specificare `<char>` quando si chiama il metodo helper di test per verificare che il test funzioni per le variabili `char`.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -117,8 +117,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 > Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un test in una soluzione ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-
-###  <a name="TypeConstraintNotSatisfied"></a> Esempio 2: Uso di un vincolo di tipo
+### <a name="TypeConstraintNotSatisfied"></a> Esempio 2: Uso di un vincolo di tipo
  Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo che non viene soddisfatto. La prima sezione mostra il codice del progetto di codice sottoposto a test. Il vincolo di tipo è evidenziato.
 
  La seconda sezione mostra il codice del progetto di test.

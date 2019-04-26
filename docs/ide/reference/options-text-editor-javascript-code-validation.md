@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f42cda0f80261a0cf499f03e01d52e9a10ae475
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778492"
 ---
 # <a name="options-text-editor-javascript-code-validation"></a>Opzioni, Editor di testo, JavaScript, Convalida codice
 Usare la pagina **Convalida codice** della finestra di dialogo **Opzioni** per modificare le impostazioni che influiscono sulla gestione degli errori da parte di JavaScript. Per accedere alla pagina **Convalida codice**, scegliere **Strumenti** > **Opzioni** sulla barra dei menu e quindi espandere **Editor di testo** > **JavaScript** > **Convalida codice.**

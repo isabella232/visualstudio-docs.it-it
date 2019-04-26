@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789370"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
@@ -39,7 +39,7 @@ A molti comandi sono associati alias. Per un elenco di alias di comando, vedere 
 
 I comandi seguenti accettano argomenti e/o opzioni.
 
-| Nome comando | Descrizione |
+| Nome comando | Description |
 | - | - |
 | [Aggiungi elemento esistente](../../ide/reference/add-existing-item-command.md) | Aggiunge un file esistente alla soluzione corrente e lo apre. |
 | [Aggiungi progetto esistente](../../ide/reference/add-existing-project-command.md) | Aggiunge un progetto esistente alla soluzione corrente. |

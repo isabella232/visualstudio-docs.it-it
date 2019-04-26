@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785897"
 ---
 # <a name="load-test-run-settings-properties"></a>Proprietà delle impostazioni di esecuzione del test di carico
 
@@ -88,27 +88,27 @@ Per altre informazioni, vedere [Configurare le impostazioni di esecuzione dei te
 |**Modello di connessione WebTest**|Controlla l'uso delle connessioni dall'agente del test di carico al server Web per i test delle prestazioni Web inclusi in un test di carico. Per il modello di connessione del test delle prestazioni Web sono disponibili tre opzioni:<br /><br /> -   Il modello **Connessione per utente** simula il comportamento di un utente che usa un browser reale. Quando viene simulato Internet Explorer 6 o Internet Explorer 7, ogni utente virtuale che esegue un test delle prestazioni Web usa una o due connessioni dedicate al server Web. La prima connessione viene stabilita quando viene emessa la prima richiesta nel test delle prestazioni Web. Una seconda connessione può essere usata quando una pagina contiene più di una richiesta dipendente. Queste richieste vengono emesse in parallelo usando le due connessioni. Queste connessioni vengono riutilizzate per le richieste successive nel test delle prestazioni Web. Al termine del test delle prestazioni Web, le connessioni vengono chiuse. Uno svantaggio di questo modello è che il numero di connessioni aperte nel computer agente può essere elevato (fino a due volte il carico utente). Pertanto, le risorse richieste per supportare questo numero elevato di connessioni potrebbero limitare il carico utente che può essere determinato da un singolo agente di test di carico. Quando viene simulato Internet Explorer 8, sono supportate sei connessioni simultanee.<br />-   Il modello **Pool di connessioni** consente di conservare le risorse nell'agente del test di carico condividendo le connessioni al server Web tra più utenti virtuali del test delle prestazioni Web. Se il carico utente è maggiore delle dimensioni del pool di connessioni, i test delle prestazioni Web eseguiti da utenti virtuali diversi condivideranno una connessione. Questo significa che, quando la connessione è in uso in un altro test delle prestazioni Web, potrebbe essere necessario un periodo di attesa prima che il test emetta una richiesta. Il tempo medio di attesa di un test delle prestazioni Web prima di inviare una richiesta viene monitorato dalla funzionalità relativa al tempo medio di attesa connessione del contatore delle prestazioni del test di carico. Questo valore deve essere inferiore al tempo di risposta medio per una pagina. In caso contrario, la dimensione del pool di connessioni è probabilmente insufficiente.<br />-   Il modello **Connessione per iterazione test** specifica l'uso di connessioni dedicate per ogni iterazione del test.|
 |**Dimensione pool di connessioni WebTest**|Consente di specificare il numero massimo di connessioni da stabilire tra l'agente del test di carico e il server Web. Si applica solo al modello **Pool di connessioni**.|
 
-##  <a name="change-run-setting-properties"></a>Modificare le proprietà delle impostazioni di esecuzione
+## <a name="change-run-setting-properties"></a>Modificare le proprietà delle impostazioni di esecuzione
  È possibile aggiungere altre impostazioni di esecuzione al test di carico con impostazioni di proprietà differenti, per poter eseguire il test di carico con condizioni diverse. Ad esempio, è possibile aggiungere una nuova impostazione test e usare una frequenza di campionamento diversa o specificare una durata dell'esecuzione più lunga. È possibile usare una sola impostazione di esecuzione test per volta ed è necessario specificare quale impostazione di esecuzione test usare contrassegnandola come attiva. Per un esempio, vedere [Procedura: Selezionare l'impostazione esecuzione test attiva per un test di carico](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Per modificare le impostazioni di esecuzione
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Espandere la cartella **Impostazioni di esecuzione**.
+2. Espandere la cartella **Impostazioni di esecuzione**.
 
-3.  Scegliere il nodo **Impostazioni esecuzione test**.
+3. Scegliere il nodo **Impostazioni esecuzione test**.
 
-4.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+4. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
      Verrà visualizzata la **Finestra Proprietà** con le proprietà relative all'impostazione di esecuzione selezionata.
 
-5.  Usare la **Finestra Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
+5. Usare la **Finestra Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
 
     > [!NOTE]
     > Per un elenco completo delle proprietà delle impostazioni di esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni di esecuzione del test di carico](../test/load-test-run-settings-properties.md).
 
-6.  Dopo aver terminato le modifiche alle proprietà, salvare il test di carico. Nel menu **File** scegliere **Salva**.
+6. Dopo aver terminato le modifiche alle proprietà, salvare il test di carico. Nel menu **File** scegliere **Salva**.
 
 > [!NOTE]
 > Anche i mapping insiemi di contatori fanno parte delle impostazioni di esecuzione. Per altre informazioni, vedere [Specificare gli insiemi di contatori e le regole di soglia per i computer in un test di carico](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

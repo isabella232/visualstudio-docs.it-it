@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791171"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refactoring con modifica della firma di un metodo
 
@@ -60,7 +60,7 @@ Questo refactoring si applica a:
 
    ![Finestra di dialogo Cambia firma](media/changesignature-dialog-cs.png)
 
-   | Button | Descrizione
+   | Button | Description
    | ------ | ---
    | **Su/Giù** | Consente di spostare il parametro selezionato verso l'alto e verso il basso nell'elenco
    | **Rimuovi** | Consente di rimuovere il parametro selezionato dall'elenco

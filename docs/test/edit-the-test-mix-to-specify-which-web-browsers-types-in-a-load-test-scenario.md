@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783835"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modificare la combinazione di test per specificare quali tipi di Web browser includere in uno scenario di test di carico
 
@@ -34,34 +34,34 @@ Una volta specificata una combinazione di browser, sarà possibile in seguito ag
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Per aggiungere nuovi browser a uno scenario
 
-1.  Durante il processo di specifica della combinazione di browser per uno scenario, scegliere **Aggiungi**.
+1. Durante il processo di specifica della combinazione di browser per uno scenario, scegliere **Aggiungi**.
 
      Una nuova voce di browser verrà aggiunta alla griglia.
 
     > [!NOTE]
     > Per visualizzare la finestra di dialogo **Modifica combinazioni di browser**, fare clic con il pulsante destro del mouse su uno scenario esistente e quindi scegliere **Modifica combinazioni di browser**.
 
-2.  Nella colonna **Tipo browser** scegliere la freccia relativa alla nuova voce, quindi scegliere il tipo di browser desiderato.
+2. Nella colonna **Tipo browser** scegliere la freccia relativa alla nuova voce, quindi scegliere il tipo di browser desiderato.
 
-3.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test.
+3. (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test.
 
-4.  Al termine dell'aggiunta dei browser, scegliere **OK**.
+4. Al termine dell'aggiunta dei browser, scegliere **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Rimuovere browser da uno scenario
+## <a name="remove-browsers-from-a-scenario"></a>Rimuovere browser da uno scenario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Per rimuovere browser da uno scenario
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Fare clic con il pulsante destro del mouse sullo scenario dal quale si vuole rimuovere un browser e scegliere **Modifica combinazioni di browser**.
+2. Fare clic con il pulsante destro del mouse sullo scenario dal quale si vuole rimuovere un browser e scegliere **Modifica combinazioni di browser**.
 
      Verrà visualizzata la finestra di dialogo **Modifica combinazioni di browser**.
 
-3.  Selezionare il browser nella griglia e scegliere **Rimuovi**.
+3. Selezionare il browser nella griglia e scegliere **Rimuovi**.
 
-4.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test.
+4. (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test.
 
-5.  Al termine della rimozione dei browser, scegliere **OK**.
+5. Al termine della rimozione dei browser, scegliere **OK**.
 
 ## <a name="about-the-mix-control"></a>Informazioni sul controllo combinazione
 

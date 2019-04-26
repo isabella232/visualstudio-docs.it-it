@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785084"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Informazioni di riferimento sulle schede della finestra Ambienti Python
 
@@ -47,7 +47,7 @@ Include informazioni di base e comandi per l'ambiente:
 | Comando | Description |
 | --- | --- |
 | **Make this environment the default for new projects (Imposta questo ambiente come predefinito per i nuovi progetti)** | Imposta l'ambiente attivo, facendo sì che Visual Studio (2017 versione 15.5 e precedenti) non risponda per un breve periodo finché non viene caricato il database di IntelliSense. Gli ambienti che contengono molti pacchetti potrebbero non rispondere per un periodo più lungo. |
-| **Visita il sito Web del server di distribuzione** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
+| **Visit the distributor's website (Visita il sito Web del server di distribuzione)** | Apre un browser all'URL offerto dalla distribuzione di Python. Python 3.x, ad esempio, passa a python.org. |
 | **Apri finestra interattiva** | Apre la [finestra (REPL) interattiva](python-interactive-repl-in-visual-studio.md) per questo ambiente all'interno di Visual Studio, applicando qualunque [script di avvio (vedere sotto)](#startup-scripts). |
 | **Esplora gli script interattivi** | Vedere [Script di avvio](#startup-scripts). |
 | **Usa la modalità interattiva IPython** | Se impostato, apre la finestra **Interattiva** con IPython per impostazione predefinita. Vengono abilitati i tracciati inline e la sintassi IPython estesa, come `name?` per visualizzare la Guida e `!command` per i comandi della shell. Questa opzione è consigliata quando si usa una distribuzione Anaconda, perché richiede pacchetti aggiuntivi. Per altre informazioni, vedere [Usare IPython nella finestra interattiva](interactive-repl-ipython.md). |
@@ -77,11 +77,11 @@ Se disponibile, la scheda **Configura** contiene i dettagli descritti nella tabe
 
 | Campo | Description |
 | --- | --- |
-| **Description** | Nome da assegnare all'ambiente. |
+| **Descrizione** | Nome da assegnare all'ambiente. |
 | **Percorso di prefisso** | Percorso della cartella di base dell'interprete. Se si compila questo valore e si fa clic su **Rilevamento automatico**, Visual Studio prova a compilare automaticamente gli altri campi. |
 | **Percorso dell'interprete** | Percorso del file eseguibile dell'interprete, costituito in genere dal percorso di prefisso seguito da **python.exe** |
 | **Interprete con finestra** | Percorso del file eseguibile non di console, spesso costituito dal percorso di prefisso seguito da **pythonw.exe**. |
-| **Percorso di libreria**<br/>(se disponibile) | Radice della libreria standard. Questo valore può essere ignorato se Visual Studio è in grado di richiedere un percorso più accurato all'interprete. |
+| **Percorso della libreria**<br/>(se disponibile) | Radice della libreria standard. Questo valore può essere ignorato se Visual Studio è in grado di richiedere un percorso più accurato all'interprete. |
 | **Versione del linguaggio** | Selezionata dal menu a discesa. |
 | **Architettura** | In genere rilevata e inserita automaticamente; in caso contrario, il valore da specificare è **32 bit** o **64 bit**. |
 | **Variabile di ambiente del percorso** | Variabile di ambiente usata dall'interprete per trovare i percorsi di ricerca. All'avvio di Python, Visual Studio modifica il valore della variabile in modo che contenga i percorsi di ricerca del progetto. In genere questa proprietà deve essere impostata su **PYTHONPATH**, ma alcuni interpreti usano un valore diverso. |

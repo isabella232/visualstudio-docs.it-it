@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893923"
 ---
 # <a name="wpf-overview"></a>Panoramica di WPF
 
@@ -224,9 +224,9 @@ La figura seguente illustra il risultato del markup XAML dell'esempio precedente
 
 La maggior parte delle applicazioni viene creata per consentire agli utenti di visualizzare e modificare i dati. Per le applicazioni WPF, le operazioni di archiviazione e accesso ai dati sono fornite da tecnologie quali SQL Server e ADO.NET. Dopo l'accesso ai dati e il loro caricamento negli oggetti gestiti di un'applicazione, ha inizio la fase più complessa delle applicazioni WPF. Questa fase comporta essenzialmente due punti:
 
-1.  Copia dei dati dagli oggetti gestiti ai controlli, per consentirne la visualizzazione e la modifica.
+1. Copia dei dati dagli oggetti gestiti ai controlli, per consentirne la visualizzazione e la modifica.
 
-2.  Verifica che le modifiche apportate ai dati usando i controlli vengano copiate negli oggetti gestiti.
+2. Verifica che le modifiche apportate ai dati usando i controlli vengano copiate negli oggetti gestiti.
 
 Per semplificare lo sviluppo delle applicazioni, in WPF è disponibile un motore di data binding per eseguire automaticamente queste operazioni. L'unità principale di questo motore è la classe <xref:System.Windows.Data.Binding> , il cui scopo è associare un controllo (destinazione) a un oggetto dati (origine). La figura seguente illustra questa relazione:
 
@@ -575,11 +575,11 @@ L'esempio seguente definisce un colore di sfondo comune condiviso da un oggetto 
 
 Questo esempio implementa una risorsa di colore di sfondo usando l'elemento della proprietà `Window.Resources` . Questa risorsa è disponibile per tutti gli elementi figlio dell'oggetto <xref:System.Windows.Window>. Sono disponibili vari ambiti di risorsa, inclusi quelli riportati di seguito, elencati nell'ordine in cui vengono risolti:
 
-1.  Un singolo controllo (che usa la proprietà <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ereditata).
+1. Un singolo controllo (che usa la proprietà <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ereditata).
 
-2.  Un oggetto <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (che usa la proprietà <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ereditata).
+2. Un oggetto <xref:System.Windows.Window> o <xref:System.Windows.Controls.Page> (che usa la proprietà <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> ereditata).
 
-3.  Un oggetto <xref:System.Windows.Application> (che usa la proprietà <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
+3. Un oggetto <xref:System.Windows.Application> (che usa la proprietà <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> ).
 
 La varietà degli ambiti offre flessibilità riguardo alla modalità di definizione e condivisione delle risorse.
 

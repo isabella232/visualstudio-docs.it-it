@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549333"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 
@@ -34,13 +34,13 @@ Gli eventi di compilazione vengono specificati nella finestra di dialogo **Event
 
 ### <a name="to-specify-a-build-event"></a>Per specificare un evento di compilazione
 
-1.  Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+1. Con un progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-2.  Fare clic sulla scheda **Compila**.
+2. Fare clic sulla scheda **Compila**.
 
-3.  Fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.
+3. Fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.
 
-4.  Immettere gli argomenti della riga di comando per l'azione di pre-compilazione o post-compilazione e fare clic su **OK**.
+4. Immettere gli argomenti della riga di comando per l'azione di pre-compilazione o post-compilazione e fare clic su **OK**.
 
     > [!NOTE]
     > Aggiungere un'istruzione `call` prima di tutti i comandi di post-compilazione che eseguono file con estensione *bat*. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -125,14 +125,14 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Per richiamare un evento di post-compilazione per modificare il manifesto dell'applicazione
 
-1.  Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
+1. Creare un'applicazione Windows per il progetto da pubblicare. Nel menu **File** fare clic su **Nuovo** e quindi su **Progetto**.
 
-2.  Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Desktop di Windows** e quindi scegliere il modello **App Windows Forms**. Denominare il progetto `VBWinApp`.
-3.  Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
+2. Nella finestra di dialogo **Nuovo progetto** del nodo **Visual Basic** selezionare **Desktop di Windows** e quindi scegliere il modello **App Windows Forms**. Denominare il progetto `VBWinApp`.
+3. Con il progetto selezionato in **Esplora soluzioni**, scegliere **Proprietà** dal menu **Progetto**.
 
-4.  In **Creazione progetti**, passare alla pagina **Pubblica** e impostare **Posizione di pubblicazione** su *C:\TEMP*.
+4. In **Creazione progetti**, passare alla pagina **Pubblica** e impostare **Posizione di pubblicazione** su *C:\TEMP*.
 
-5.  Pubblicare il progetto facendo clic su **Pubblica**.
+5. Pubblicare il progetto facendo clic su **Pubblica**.
 
      Il file manifesto verrà compilato e inserito in *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Per visualizzare il manifesto, fare clic con il pulsante destro del mouse sul file e scegliere **Apri con**, fare clic su **Seleziona il programma da un elenco** e quindi scegliere **Blocco note**.
 
@@ -142,9 +142,9 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  In **Creazione progetti**, passare alla scheda **Compila** e fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.
+6. In **Creazione progetti**, passare alla scheda **Compila** e fare clic sul pulsante **Eventi di compilazione** per aprire la finestra di dialogo **Eventi di compilazione**.
 
-7.  Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:
+7. Nella casella **Riga di comando eventi post-compilazione** immettere il comando seguente:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ La procedura seguente illustra come impostare la versione minima del sistema ope
 
      La macro `$(TargetPath)` indica il percorso completo dell'eseguibile che si sta creando. Di conseguenza, *$(TargetPath).manifest* specificherà il manifesto dell'applicazione creato nella directory *bin*. La pubblicazione copierà questo manifesto nel percorso di pubblicazione impostato in precedenza.
 
-8.  Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.
+8. Pubblicare nuovamente il progetto. Passare alla pagina **Pubblica** e fare clic su **Pubblica**.
 
      Visualizzare nuovamente il manifesto. Per visualizzare il manifesto, passare alla directory di pubblicazione, fare clic con il pulsante destro del mouse sul file e scegliere **Apri con**, quindi fare clic su **Seleziona il programma da un elenco** e scegliere **Blocco note**.
 

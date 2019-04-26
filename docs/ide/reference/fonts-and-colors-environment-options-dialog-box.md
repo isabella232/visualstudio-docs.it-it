@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790208"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
@@ -42,26 +42,26 @@ Le modifiche delle combinazioni colori non diventano effettive durante la sessio
 
 Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificare le combinazioni di tipi i carattere e colori. Dopo aver selezionato un elemento in questo elenco è possibile personalizzare le impostazioni dei colori per l'elemento selezionato in **Elementi visualizzati**.
 
--   **Editor di testo**
+- **Editor di testo**
 
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per l'Editor di testo influiscono sull'aspetto del testo nell'editor di testo predefinito. I documenti aperti in un editor di testo all'esterno dell'IDE non saranno interessati da queste impostazioni.
 
--   **Stampante**
+- **Stampante**
 
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.
 
     > [!NOTE]
     > Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.
 
--   **Completamento istruzioni**
+- **Completamento istruzioni**
 
      Modifica lo stile e la dimensione del carattere per il testo visualizzato nel popup di completamento delle istruzioni nell'editor.
 
--   **Descrizione comando editor**
+- **Descrizione comando editor**
 
      Modifica lo stile e la dimensione del carattere per il testo visualizzato nelle descrizioni comandi visualizzate nell'editor.
 
--   **Tipo di carattere ambiente**
+- **Tipo di carattere ambiente**
 
      Modifica lo stile e la dimensione del carattere di tutti gli elementi dell'interfaccia utente dell'IDE per i quali non è stata ancora impostata un'opzione separata in **Mostra impostazioni per**.
 
@@ -71,7 +71,7 @@ Elenca tutti gli elementi dell'interfaccia utente per cui è possibile modificar
 
      ::: moniker-end
 
--   **[Tutte le finestre degli strumenti di testo]**
+- **[Tutte le finestre degli strumenti di testo]**
 
      Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.
 

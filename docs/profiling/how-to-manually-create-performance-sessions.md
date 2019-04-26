@@ -14,25 +14,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: becf63a9945c8e12f3c306da757e288a3fe8134c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ebdfdb1503570e08f38eed8efd278830756e50fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817167"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Procedura: Creare manualmente sessioni di prestazioni
 Una sessione di prestazioni può essere creata manualmente. Per eseguire questa operazione, non è necessario aprire un progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Per altre informazioni, vedere [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md).
 
 ### <a name="to-manually-create-a-performance-session"></a>Per creare manualmente una sessione di prestazioni
 
-1.  Nel menu **Debug** scegliere **Profiler**, **Esplora prestazioni** e quindi fare clic su **Nuova sessione di prestazioni**.
+1. Nel menu **Debug** scegliere **Profiler**, **Esplora prestazioni** e quindi fare clic su **Nuova sessione di prestazioni**.
 
      Verrà aggiunta una sessione di prestazioni vuota in **Esplora prestazioni**.
 
-2.  Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.
+2. Fare clic con il pulsante destro del mouse su **Destinazioni** e quindi fare clic su **Aggiungi binario di destinazione**.
 
-3.  Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.
+3. Nella finestra di dialogo **Aggiungi binario di destinazione** selezionare il nome del file e quindi fare clic su **Apri**.
 
      Verrà aggiunto un nuovo file binario.
 

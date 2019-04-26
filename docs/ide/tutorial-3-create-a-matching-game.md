@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821526"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Esercitazione 3: Creare un gioco di abbinamenti
 
 In questa esercitazione si compila un gioco delle coppie, in cui il giocatore deve riuscire ad accoppiare icone nascoste. Vengono illustrate le seguenti procedure:
 
--   Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
+- Archiviare oggetti, ad esempio icone, in un oggetto <xref:System.Collections.Generic.List%601>.
 
--   Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.
+- Utilizzare un ciclo `foreach` in Visual C# o un ciclo `For Each` in Visual Basic per scorrere gli elementi di un elenco.
 
--   Tenere traccia dello stato di un form utilizzando variabili di riferimento.
+- Tenere traccia dello stato di un form utilizzando variabili di riferimento.
 
--   Compilare un gestore eventi per rispondere a eventi utilizzabili con più oggetti.
+- Compilare un gestore eventi per rispondere a eventi utilizzabili con più oggetti.
 
--   Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.
+- Creare un timer con conto alla rovescia e quindi generare un evento subito dopo l'avvio.
 
 Al termine di questa esercitazione, il programma sarà simile all'immagine che segue:
 
@@ -44,7 +44,7 @@ In caso di blocchi improvvisi o dubbi a livello di programmazione, provare a pub
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Passaggio 1: Creare un progetto e aggiungere una tabella al modulo](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Per iniziare, creare il progetto e aggiungere un controllo `TableLayoutPanel` per mantenere allineati i controlli.|
 |[Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Aggiungere un oggetto `Random` e un oggetto `List` per creare un elenco di icone.|
@@ -54,4 +54,4 @@ In caso di blocchi improvvisi o dubbi a livello di programmazione, provare a pub
 |[Passaggio 6: Aggiungere un timer](../ide/step-6-add-a-timer.md)|Aggiungere un timer al form per tenere traccia del tempo trascorso durante il gioco.|
 |[Passaggio 7: Mantenere le coppie visibili](../ide/step-7-keep-pairs-visible.md)|Mantenere le coppie di icone visibili se viene selezionata una coppia corrispondente.|
 |[Passaggio 8: Aggiungere un metodo per verificare se il giocatore ha vinto](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Aggiungere un metodo `CheckForWinner()` per verificare se il giocatore ha vinto.|
-|[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire lo schema e a regolare il timer.|
+|[Passaggio 9: Provare altre funzionalità](../ide/step-9-try-other-features.md)|Provare altre funzionalità, ad esempio modificare le icone e i colori oppure aggiungere una griglia e i suoni. Provare a ingrandire la lavagna e a regolare il timer.|

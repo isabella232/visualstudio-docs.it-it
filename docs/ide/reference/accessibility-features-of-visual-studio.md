@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793157"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funzionalità di accessibilità di Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318589"
 
 Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disponibili le seguenti funzionalità che rendono Visual Studio più accessibile per gli utenti con disabilità:
 
--   Ingrandimento del testo e dei pulsanti della barra degli strumenti
+- Ingrandimento del testo e dei pulsanti della barra degli strumenti
 
--   Opzioni per la dimensione del testo negli editor
+- Opzioni per la dimensione del testo negli editor
 
--   Personalizzazione dei colori negli editor
+- Personalizzazione dei colori negli editor
 
--   Personalizzazione dei tasti di scelta rapida
+- Personalizzazione dei tasti di scelta rapida
 
--   Completamento automatico per metodi e parametri
+- Completamento automatico per metodi e parametri
 
 > [!NOTE]
 > Questo argomento si applica a Visual Studio in Windows. Per Visual Studio per Mac, vedere [Accessibilità per Visual Studio per Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Oltre alle utilità e alle funzionalità di accessibilità di Windows, sono disp
 
 Per altre informazioni, vedere i seguenti argomenti:
 
--   [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Procedura: Impostare le opzioni di accessibilità IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Procedura: Usare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Procedura: Usare esclusivamente la tastiera](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vedere anche
 

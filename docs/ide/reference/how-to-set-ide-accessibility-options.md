@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789800"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Procedura: Impostare le opzioni di accessibilità IDE
 
@@ -46,11 +46,11 @@ ms.locfileid: "56317185"
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Per modificare le dimensioni del testo nelle finestre degli strumenti basate su testo e negli editor
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Scegliere **Tipi di carattere e colori** nella cartella **Ambiente**.
+2. Scegliere **Tipi di carattere e colori** nella cartella **Ambiente**.
 
-3.  Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
+3. Selezionare un'opzione nel menu a discesa **Mostra impostazioni per**.
 
      Per modificare le dimensioni dei caratteri del testo in un editor, scegliere **Editor di testo**.
 
@@ -60,16 +60,16 @@ ms.locfileid: "56317185"
 
      Per modificare le dimensioni dei caratteri del testo degli elementi popup di completamento istruzioni, scegliere **Completamento istruzioni**.
 
-4.  In **Elementi visualizzati** selezionare **Testo normale**.
+4. In **Elementi visualizzati** selezionare **Testo normale**.
 
-5.  In **Carattere** selezionare un nuovo tipo di carattere.
+5. In **Carattere** selezionare un nuovo tipo di carattere.
 
-6.  In **Dimensioni** selezionare nuove dimensioni del carattere.
+6. In **Dimensioni** selezionare nuove dimensioni del carattere.
 
     > [!NOTE]
     > Per reimpostare le dimensioni del testo per le finestre degli strumenti basate su testo e per gli editor, scegliere **Usa impostazioni predefinite**.
 
-7.  Scegliere **OK**.
+7. Scegliere **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Modificare i colori usati nell'ambiente IDE
 
@@ -80,17 +80,17 @@ ms.locfileid: "56317185"
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>Per modificare il colore degli elementi nell'editor
 
-1.  Scegliere **Opzioni** dal menu **Strumenti**.
+1. Scegliere **Opzioni** dal menu **Strumenti**.
 
-2.  Nella cartella **Ambiente** scegliere **Tipi di carattere e colori**.
+2. Nella cartella **Ambiente** scegliere **Tipi di carattere e colori**.
 
-3.  In **Mostra impostazioni per** scegliere **Editor di testo**.
+3. In **Mostra impostazioni per** scegliere **Editor di testo**.
 
-4.  In **Elementi visualizzati** selezionare un elemento di cui si vuole modificare la visualizzazione, ad esempio **Testo normale**, **Margine indicatore**, **Spazio vuoto visibile**, **Nome attributo HTML** o **Attributo XML**.
+4. In **Elementi visualizzati** selezionare un elemento di cui si vuole modificare la visualizzazione, ad esempio **Testo normale**, **Margine indicatore**, **Spazio vuoto visibile**, **Nome attributo HTML** o **Attributo XML**.
 
-5.  Selezionare le impostazioni di visualizzazione delle opzioni seguenti: **Primo piano elemento**, **Sfondo elemento** e **Grassetto**.
+5. Selezionare le impostazioni di visualizzazione delle opzioni seguenti: **Primo piano elemento**, **Sfondo elemento** e **Grassetto**.
 
-6.  Scegliere **OK**.
+6. Scegliere **OK**.
 
 ## <a name="toolbars"></a>Barre degli strumenti
 
@@ -98,23 +98,23 @@ ms.locfileid: "56317185"
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Per assegnare testo ai pulsanti delle barre degli strumenti
 
-1.  Scegliere **Personalizza** dal menu **Strumenti**.
+1. Scegliere **Personalizza** dal menu **Strumenti**.
 
-2.  Nella finestra di dialogo **Personalizza** fare clic sulla scheda **Comandi**.
+2. Nella finestra di dialogo **Personalizza** fare clic sulla scheda **Comandi**.
 
-3.  Selezionare **Barra degli strumenti** e quindi scegliere il nome della barra degli strumenti che contiene il pulsante per il quale si vuole visualizzare testo.
+3. Selezionare **Barra degli strumenti** e quindi scegliere il nome della barra degli strumenti che contiene il pulsante per il quale si vuole visualizzare testo.
 
-4.  Selezionare il comando che si vuole modificare nell'elenco.
+4. Selezionare il comando che si vuole modificare nell'elenco.
 
-5.  Scegliere **Modifica selezione**.
+5. Scegliere **Modifica selezione**.
 
-6.  Scegliere **Icona e testo**.
+6. Scegliere **Icona e testo**.
 
 ### <a name="to-modify-the-displayed-text-in-a-button"></a>Per modificare il testo visualizzato in un pulsante
 
-1.  Selezionare di nuovo **Modifica selezione**.
+1. Selezionare di nuovo **Modifica selezione**.
 
-2.  Accanto a In **nome** specificare una nuova didascalia per il pulsante selezionato.
+2. Accanto a In **nome** specificare una nuova didascalia per il pulsante selezionato.
 
 ## <a name="see-also"></a>Vedere anche
 
