@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071162"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58967025"
 ## <a name="defining-a-validation-extension"></a>Definizione di un'estensione di convalida  
  Per creare un'estensione di convalida per una finestra di progettazione UML, è necessario creare una classe che definisca i vincoli di convalida e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX è un contenitore che può installare il vincolo. Esistono due metodi alternativi per definire un'estensione di convalida:  
   
--   **Creare un'estensione di convalida nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.  
+- **Creare un'estensione di convalida nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare i vincoli di convalida con altri tipi di estensione, ad esempio comandi di menu, elementi della casella degli strumenti personalizzati o gestori di movimento. È possibile definire più vincoli in una classe.  
   
--   **Creare la classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.  
+- **Creare la classe di convalida separata e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il comando di menu prevede che il modello rispetti dei vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Per creare un'estensione di convalida nella relativa estensione VSIX  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>Per creare un vincolo di convalida separato in un progetto di libreria di classi  
   
-1.  Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.  
+1. Creare un progetto di libreria di classi, aggiungendolo a una soluzione VSIX esistente oppure creando una nuova soluzione.  
   
-    1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
+    1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
   
-    2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
+    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
   
-2.  Creare un progetto VSIX salvo il caso in cui la soluzione ne contenga già uno:  
+2. Creare un progetto VSIX salvo il caso in cui la soluzione ne contenga già uno:  
   
-    1.  In **Esplora soluzioni**scegliere  **Aggiungi**, **Nuovo progetto**dal menu di scelta rapida della soluzione.  
+    1. In **Esplora soluzioni**scegliere  **Aggiungi**, **Nuovo progetto**dal menu di scelta rapida della soluzione.  
   
-    2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi scegliere **Extensibility**. Nella colonna centrale fare clic su **Progetto VSIX**.  
+    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi scegliere **Extensibility**. Nella colonna centrale fare clic su **Progetto VSIX**.  
   
-3.  Impostare il progetto VSIX come progetto di avvio della soluzione.  
+3. Impostare il progetto VSIX come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
   
-4.  In **source.extension.vsixmanifest**, in **Contenuto**, aggiungere il progetto di libreria di classi come componente MEF:  
+4. In **source.extension.vsixmanifest**, in **Contenuto**, aggiungere il progetto di libreria di classi come componente MEF:  
   
-    1.  Nella scheda **Metadati** impostare un nome per il progetto VSIX.  
+    1. Nella scheda **Metadati** impostare un nome per il progetto VSIX.  
   
-    2.  Nella scheda **Destinazioni di installazione** impostare le versioni di Visual Studio come destinazioni.  
+    2. Nella scheda **Destinazioni di installazione** impostare le versioni di Visual Studio come destinazioni.  
   
-    3.  Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:  
+    3. Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:  
   
          **Tipo** = **Componente MEF**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>Per definire la classe di convalida  
   
-1.  Questa procedura non è necessaria se si è creata una classe di convalida con l'estensione VSIX dal modello di progetto di convalida.  
+1. Questa procedura non è necessaria se si è creata una classe di convalida con l'estensione VSIX dal modello di progetto di convalida.  
   
-2.  Nel progetto della classe di convalida aggiungere riferimenti agli assembly [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] seguenti:  
+2. Nel progetto della classe di convalida aggiungere riferimenti agli assembly [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] seguenti:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Aggiungere un file al progetto di libreria di classi contenente codice simile al seguente esempio.  
+3. Aggiungere un file al progetto di libreria di classi contenente codice simile al seguente esempio.  
   
-    -   Ogni vincolo di convalida è contenuto in un metodo contrassegnato con un attributo specifico. Il metodo accetta un parametro di un tipo di elemento del modello. Quando la convalida viene richiamata, il framework di convalida applicherà ogni metodo di convalida a ogni elemento del modello conforme al tipo di parametro.  
+    - Ogni vincolo di convalida è contenuto in un metodo contrassegnato con un attributo specifico. Il metodo accetta un parametro di un tipo di elemento del modello. Quando la convalida viene richiamata, il framework di convalida applicherà ogni metodo di convalida a ogni elemento del modello conforme al tipo di parametro.  
   
-    -   È possibile inserire questi metodi in qualsiasi classe e spazio dei nomi. Modificarli secondo le proprie preferenze.  
+    - È possibile inserire questi metodi in qualsiasi classe e spazio dei nomi. Modificarli secondo le proprie preferenze.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Esecuzione di un vincolo di convalida  
+## <a name="Executing"></a> Esecuzione di un vincolo di convalida  
  A scopo di test, eseguire i metodi di convalida in modalità debug.  
   
 #### <a name="to-test-the-validation-constraint"></a>Per testare il vincolo di convalida  
   
-1.  Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
+1. Premere **F5**o scegliere **Avvia debug** dal menu **Debug**.  
   
      Viene avviata un'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
   
-    -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
+    - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+    - In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
+2. Nell'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]aprire o creare un progetto di modellazione e aprire o creare un diagramma di modellazione.  
   
-3.  Per configurare un test per il vincolo di esempio fornito nella sezione precedente:  
+3. Per configurare un test per il vincolo di esempio fornito nella sezione precedente:  
   
-    1.  Aprire un diagramma classi.  
+    1. Aprire un diagramma classi.  
   
-    2.  Creare una classe e aggiungere due attributi con lo stesso nome.  
+    2. Creare una classe e aggiungere due attributi con lo stesso nome.  
   
-4.  Dal menu di scelta rapida in qualsiasi punto del diagramma scegliere **Convalida**.  
+4. Dal menu di scelta rapida in qualsiasi punto del diagramma scegliere **Convalida**.  
   
-5.  Eventuali errori nel modello verranno segnalati nella finestra degli errori.  
+5. Eventuali errori nel modello verranno segnalati nella finestra degli errori.  
   
-6.  Fare doppio clic sulla segnalazione errori. Se gli elementi citati nel report sono visibili nella schermata, saranno evidenziati.  
+6. Fare doppio clic sulla segnalazione errori. Se gli elementi citati nel report sono visibili nella schermata, saranno evidenziati.  
   
      **Risoluzione dei problemi**: Se il **Validate** comando non viene visualizzato nel menu, assicurarsi che:  
   
-    -   Il progetto di convalida sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
+    - Il progetto di convalida sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
   
-    -   Gli attributi `Export` e `ValidationMethod` corretti siano aggiunti ai metodi di convalida.  
+    - Gli attributi `Export` e `ValidationMethod` corretti siano aggiunti ai metodi di convalida.  
   
-    -   `ValidationCategories.Menu` è incluso nell'argomento per il `ValidationMethod` attributo e sia composto con altri valori con OR logico (&#124;).  
+    - `ValidationCategories.Menu` è incluso nell'argomento per il `ValidationMethod` attributo e sia composto con altri valori con OR logico (&#124;).  
   
-    -   I parametri di tutti gli attributi `Import` e `Export` siano validi.  
+    - I parametri di tutti gli attributi `Import` e `Export` siano validi.  
   
-##  <a name="Implementing"></a> Valutazione del vincolo  
+## <a name="Implementing"></a> Valutazione del vincolo  
  Il metodo di convalida dovrebbe determinare se il vincolo di convalida che si vuole applicare sia true o false. Se è true, non dovrebbe fare nulla. Se è false, dovrebbe segnalare un errore usando i metodi forniti dal parametro `ValidationContext` .  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Coordinamento di più convalide  
+### <a name="ContextCache"></a> Coordinamento di più convalide  
  Quando la convalida viene richiamata, ad esempio dall'utente da un menu del diagramma, ogni metodo di convalida viene applicato a ogni elemento del modello, vale a dire che, in una singola chiamata del framework di convalida, lo stesso metodo può essere applicato più volte a elementi diversi.  
   
  Questo comportamento è un problema per le convalide che coinvolgono le relazioni tra gli elementi. Ad esempio, si potrebbe scrivere una convalida che inizia da un caso d'uso e attraversa le relazioni **include** per verificare che non siano presenti cicli. Quando però il metodo viene applicato a ogni caso d'uso in un modello con molti collegamenti **include** , è probabile che le stesse aree del modello vengano elaborate più volte.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Ottiene un valore.|  
 |`Context.GetValue<T>()`|Ottiene un valore del tipo specificato.|  
   
-##  <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
+## <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.  
   
 #### <a name="to-install-an-extension"></a>Per installare un'estensione  
   
-1.  Nel computer trovare il file **.vsix** compilato dal progetto VSIX.  
+1. Nel computer trovare il file **.vsix** compilato dal progetto VSIX.  
   
-    1.  In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.  
+    1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.  
   
-    2.  Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
+    2. Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
   
-2.  Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
+2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   
-    -   Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
+    - Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
   
-3.  Nel computer di destinazione aprire il file **.vsix** .  
+3. Nel computer di destinazione aprire il file **.vsix** .  
   
      **Visual Studio Extension Installer** si apre e installa l'estensione.  
   
-4.  Avviare o riavviare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Avviare o riavviare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="Example"></a> Esempio  
+## <a name="Example"></a> Esempio  
  In questo esempio vengono trovati i cicli nella relazione di dipendenza tra gli elementi.  
   
  La convalida verrà eseguita sia durante il salvataggio che sul comando di menu Convalida.  
