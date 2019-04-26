@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445395"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  Il file Microsoft.Common.Tasks di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è un file di progetto contenente un elenco di elementi `UsingTask` che registrano tutte le attività disponibili con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Questo file è incluso automaticamente durante la compilazione di ogni progetto. Se un'attività registrata in Microsoft,Common.Tasks è registrata anche nel file di progetto corrente, il file di progetto corrente ha la precedenza, ovvero è possibile sostituire un'attività predefinita con un'attività personalizzata con lo stesso nome.  
   
 > [!TIP]
->  È possibile visualizzare un elenco delle attività disponibili con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] visualizzando il contenuto di Microsoft.Common.Tasks.  
+> È possibile visualizzare un elenco delle attività disponibili con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] visualizzando il contenuto di Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Generazione di eventi da un'attività  
  Se l'attività deriva dalla classe helper <xref:Microsoft.Build.Utilities.Task>, è possibile usare uno qualsiasi dei seguenti metodi helper per la classe <xref:Microsoft.Build.Utilities.Task> per generare eventi che verranno intercettati e visualizzati da tutti i logger registrati:  

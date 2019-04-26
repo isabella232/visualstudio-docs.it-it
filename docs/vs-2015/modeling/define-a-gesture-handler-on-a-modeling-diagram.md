@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ecd6f6210fdc219f7d1ca493f15beed74e9b5e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067014"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 ## <a name="creating-a-gesture-handler"></a>Creazione di un gestore movimenti  
  Per definire un gestore movimenti per una finestra di progettazione UML, è necessario creare una classe che definisca il comportamento del gestore movimenti e incorporare la classe in un'estensione VSIX (Visual Studio Integration Extension). L'estensione VSIX funge da contenitore che può installare il gestore. Esistono due metodi alternativi per definire un gestore movimenti:  
   
--   **Creare un gestore movimenti nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare il gestore con altri tipi di estensione, ad esempio estensioni di convalida, elementi della Casella degli strumenti personalizzati o comandi di menu.  
+- **Creare un gestore movimenti nella relativa estensione VSIX usando un modello di progetto.** Questo è il metodo più rapido. Usarlo se non si vuole combinare il gestore con altri tipi di estensione, ad esempio estensioni di convalida, elementi della Casella degli strumenti personalizzati o comandi di menu.  
   
--   **Creare un gestore movimenti separato e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il gestore movimenti richiede che il modello osservi alcuni vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.  
+- **Creare un gestore movimenti separato e progetti VSIX.** Usare questo metodo per combinare diversi tipi di estensione nella stessa estensione VSIX. Ad esempio, se il gestore movimenti richiede che il modello osservi alcuni vincoli specifici, è possibile incorporarlo nella stessa estensione VSIX come metodo di convalida.  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Per creare un gestore movimenti nella relativa estensione VSIX  
   
@@ -56,9 +56,9 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 1. Creare un progetto Libreria di classi in una nuova soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o in una soluzione esistente.  
   
-   1.  Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
+   1. Nel menu **File** , scegliere **Nuovo**, **Progetto**.  
   
-   2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
+   2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**e quindi scegliere **Libreria di classi**nella colonna centrale.  
   
 2. Aggiungere i riferimenti seguenti al progetto.  
   
@@ -204,25 +204,25 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Per aggiungere un gestore movimenti separato a un progetto VSIX  
   
-1.  Questa procedura non è necessaria se il gestore movimenti è stato creato con la relativa estensione VSIX.  
+1. Questa procedura non è necessaria se il gestore movimenti è stato creato con la relativa estensione VSIX.  
   
-2.  Creare un progetto VSIX, a meno che la soluzione non ne contenga già uno.  
+2. Creare un progetto VSIX, a meno che la soluzione non ne contenga già uno.  
   
-    1.  In **Esplora soluzioni**scegliere **Aggiungi**dal menu di scelta rapida della soluzione e quindi fare clic su **Nuovo progetto**.  
+    1. In **Esplora soluzioni**scegliere **Aggiungi**dal menu di scelta rapida della soluzione e quindi fare clic su **Nuovo progetto**.  
   
-    2.  In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi selezionare **Extensibility**. Nella colonna centrale scegliere **Progetto VSIX**.  
+    2. In **Modelli installati**espandere **Visual C#** o **Visual Basic**, quindi selezionare **Extensibility**. Nella colonna centrale scegliere **Progetto VSIX**.  
   
-3.  Impostare il progetto VSIX come progetto di avvio della soluzione.  
+3. Impostare il progetto VSIX come progetto di avvio della soluzione.  
   
-    -   In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
+    - In Esplora soluzioni scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
   
-4.  In **source.extension.vsixmanifest**aggiungere il progetto della libreria di classi del gestore movimenti come componente MEF:  
+4. In **source.extension.vsixmanifest**aggiungere il progetto della libreria di classi del gestore movimenti come componente MEF:  
   
-    1.  Nella scheda **Metadati** impostare un nome per il progetto VSIX.  
+    1. Nella scheda **Metadati** impostare un nome per il progetto VSIX.  
   
-    2.  Nella scheda **Destinazioni di installazione** impostare le versioni di Visual Studio come destinazioni.  
+    2. Nella scheda **Destinazioni di installazione** impostare le versioni di Visual Studio come destinazioni.  
   
-    3.  Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:  
+    3. Nella scheda **Asset** scegliere **Nuovo**e nella finestra di dialogo impostare le opzioni seguenti:  
   
          **Tipo** = **Componente MEF**  
   
@@ -230,7 +230,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
          **Progetto** = *Progetto di libreria di classi*  
   
-##  <a name="Executing"></a> Esecuzione del gestore movimenti  
+## <a name="Executing"></a> Esecuzione del gestore movimenti  
  Per scopi di test, eseguire il gestore movimenti in modalità debug.  
   
 #### <a name="to-test-the-gesture-handler"></a>Per testare il gestore movimenti  
@@ -241,9 +241,9 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
     **Risoluzione dei problemi**: Se un nuovo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non avviato:  
   
-   -   Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
+   - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-   -   In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+   - In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -255,17 +255,17 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
    **Risoluzione dei problemi**: Se il gestore movimenti non funziona, assicurarsi che:  
   
--   Il progetto del gestore movimenti sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
+- Il progetto del gestore movimenti sia elencato come componente MEF nella scheda **Asset** in **source.extensions.manifest** nel progetto VSIX.  
   
--   I parametri di tutti gli attributi `Import` e `Export` siano validi.  
+- I parametri di tutti gli attributi `Import` e `Export` siano validi.  
   
--   Il metodo `CanDragDrop` non restituisca `false`.  
+- Il metodo `CanDragDrop` non restituisca `false`.  
   
--   Il tipo di diagramma modello in uso (classe UML, sequenza e così via) sia elencato come uno degli attributi della classe del gestore movimenti [ClassDesignerExtension], [SequenceDesignerExtension] e così via.  
+- Il tipo di diagramma modello in uso (classe UML, sequenza e così via) sia elencato come uno degli attributi della classe del gestore movimenti [ClassDesignerExtension], [SequenceDesignerExtension] e così via.  
   
--   Per questo tipo di elemento rilasciato e di destinazione non sia già stata definita alcuna funzionalità incorporata.  
+- Per questo tipo di elemento rilasciato e di destinazione non sia già stata definita alcuna funzionalità incorporata.  
   
-##  <a name="Implementing"></a> Implementazione del gestore movimenti  
+## <a name="Implementing"></a> Implementazione del gestore movimenti  
   
 ### <a name="the-gesture-handler-methods"></a>Metodi del gestore movimenti  
  La classe del gestore movimenti implementa ed esporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Ecco i metodi che è necessario definire:  
@@ -280,17 +280,17 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
  I parametri di questi metodi sono i seguenti:  
   
--   `ShapeElement target`. Forma o diagramma in cui l'utente ha trascinato un elemento.  
+- `ShapeElement target`. Forma o diagramma in cui l'utente ha trascinato un elemento.  
   
      `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. In alternativa, eseguire il wrapping l'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).  
   
-    -   Per ottenere un oggetto `IShape`:  
+    - Per ottenere un oggetto `IShape`:  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   Per ottenere l'elemento del modello di destinazione per l'operazione di trascinamento o di doppio clic:  
+    - Per ottenere l'elemento del modello di destinazione per l'operazione di trascinamento o di doppio clic:  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -298,20 +298,20 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
          È possibile eseguire il cast di questo elemento in un tipo di elemento più specifico.  
   
-    -   Per ottenere l'archivio modelli UML che contiene il modello UML:  
+    - Per ottenere l'archivio modelli UML che contiene il modello UML:  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Per ottenere l'accesso all'host e al provider di servizi:  
+    - Per ottenere l'accesso all'host e al provider di servizi:  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Questo parametro contiene il formato serializzato dell'oggetto di origine di un'operazione di trascinamento:  
+- `DiagramDragEventArgs eventArgs`. Questo parametro contiene il formato serializzato dell'oggetto di origine di un'operazione di trascinamento:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -348,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  Per altre informazioni, vedere [esplorare il modello UML](../modeling/navigate-the-uml-model.md).  
   
-##  <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
+## <a name="Installing"></a> Installazione e disinstallazione di un'estensione  
  È possibile installare un'estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sia nel proprio computer che in altri.  
   
 #### <a name="to-install-an-extension"></a>Per installare un'estensione  
   
-1.  Nel computer trovare il file **.vsix** compilato dal progetto VSIX.  
+1. Nel computer trovare il file **.vsix** compilato dal progetto VSIX.  
   
-    1.  In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.  
+    1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.  
   
-    2.  Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
+    2. Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
   
-2.  Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
+2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   
      Nel computer di destinazione deve essere installata una delle edizioni di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] specificate in **source.extension.vsixmanifest**.  
   
-3.  Nel computer di destinazione aprire il file **.vsix** .  
+3. Nel computer di destinazione aprire il file **.vsix** .  
   
      **Visual Studio Extension Installer** si apre e installa l'estensione.  
   
-4.  Avviare o riavviare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Avviare o riavviare [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Per disinstallare un'estensione  
   
@@ -381,7 +381,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="DragExample"></a> Esempio  
+## <a name="DragExample"></a> Esempio  
  L'esempio seguente mostra come creare linee di vita in un diagramma di sequenza in base alle parti e alle porte di un componente, trascinate da un diagramma dei componenti.  
   
  Per testarlo, premere F5. Viene aperta un'istanza sperimentale di Visual Studio. In questa istanza aprire un modello UML e creare un componente in un diagramma dei componenti. Aggiungere a questo componente alcune interfacce e parti di componente interne. Selezionare le interfacce e le parti. Trascinare quindi le interfacce e le parti in un diagramma di sequenza. Trascinare questi elementi dal diagramma dei componenti fino alla scheda per il diagramma di sequenza e quindi giù nel diagramma di sequenza. Verrà visualizzata una linea di vita per ogni interfaccia e parte.  

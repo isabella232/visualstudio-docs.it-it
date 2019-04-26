@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432990"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opzioni, Editor di testo, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per 
  Se questa casella di controllo è selezionata e se all'esterno del contesto di un progetto è aperto un file JavaScript, in Visual Studio verranno scaricati i file JavaScript remoti a cui si fa riferimento nel file allo scopo di fornire informazioni relative a IntelliSense. Se questa opzione è selezionata, i file verranno scaricati nel momento in cui verranno inclusi come riferimento nel file JavaScript.  
   
 > [!NOTE]
->  Per i progetti Web, i file remoti a cui viene fatto riferimento nel progetto vengono scaricati per impostazione predefinita.  
+> Per i progetti Web, i file remoti a cui viene fatto riferimento nel progetto vengono scaricati per impostazione predefinita.  
   
 ## <a name="statement-completion"></a>Completamento istruzioni  
  È possibile utilizzare queste opzioni per modificare il comportamento di completamento delle istruzioni IntelliSense.  
@@ -74,7 +74,7 @@ Utilizzare la pagina **IntelliSense** della finestra di dialogo **Opzioni** per 
   Questa opzione specifica l'ordine di caricamento dei file nel contesto del servizio di linguaggio. È possibile configurare l'ordine utilizzando i pulsanti **Rimuovi**, **Sposta su**e **Sposta giù** . Per garantire il funzionamento di IntelliSense, un file dipendente da un altro dovrà essere caricato dopo quest'ultimo.  
   
 > [!CAUTION]
->  Se un oggetto viene definito in modo non condizionale in due o più riferimenti impliciti, per definire l'oggetto verrà utilizzato l'ultimo riferimento in questo elenco.  
+> Se un oggetto viene definito in modo non condizionale in due o più riferimenti impliciti, per definire l'oggetto verrà utilizzato l'ultimo riferimento in questo elenco.  
   
  **Aggiungi riferimento a gruppo corrente**  
  Questa opzione consente di aggiungere ulteriori file .js IntelliSense passando a quelli appropriati.  
