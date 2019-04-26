@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793407"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -58,21 +58,21 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 **Creazione progetti** è costituito da diverse pagine delle proprietà di progetto raggruppate per funzionalità correlate. Le pagine disponibili per i progetti F#, per la maggior parte un subset dei progetti disponibili per altri linguaggi, sono descritte nella tabella seguente. Sono presenti collegamenti alla pagina **Creazione progetti** C# corrispondente.
 
-|Pagina Creazione progetti|Collegamenti correlati|Descrizione|
+|Pagina Creazione progetti|Collegamenti correlati|Description|
 | - |-------------|-----------|
 |Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET Framework a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
 |Compilazione|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
 |Debug|[Pagina Debug, Creazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
 |Pacchetto (solo .NET SDK)|N/D|Consente di definire i metadati del pacchetto NuGet durante la pubblicazione come pacchetto NuGet.|
-|Percorsi di riferimento|[Gestire i riferimenti in un progetto](managing-references-in-a-project.md)|Consente di specificare la posizione in cui cercare gli assembly da cui dipende il codice.|
+|Percorsi riferimento|[Gestire i riferimenti in un progetto](managing-references-in-a-project.md)|Consente di specificare la posizione in cui cercare gli assembly da cui dipende il codice.|
 |Risorse (solo .NET SDK)|N/D|Consente di generare e gestire un file di risorse predefinito.|
 
 ### <a name="f-specific-settings"></a>Impostazioni specifiche di F#
 
 La tabella seguente riepiloga le impostazioni specifiche di F#:
 
-|Pagina Creazione progetti|Impostazione|Descrizione|
+|Pagina Creazione progetti|Impostazione|Description|
 | - |-------|-----------|
 |Compilazione|Genera chiamate tail|Se selezionata, abilita l'uso delle istruzioni tail MSIL (Microsoft Intermediate Language). In questo modo lo stack frame viene riutilizzato per le funzioni tail ricorsive. Equivalente all'opzione del compilatore `--tailcalls`.|
 |Compilazione|Altri flag|Consente di specificare opzioni da riga di comando del compilatore aggiuntive.|
@@ -81,7 +81,7 @@ La tabella seguente riepiloga le impostazioni specifiche di F#:
 
 F# supporta le funzionalità seguenti degli editor di codice e di testo di Visual Studio:
 
-|Funzionalità|Descrizione|Supporto in F#|
+|Funzionalità|Description|Supporto in F#|
 |-------|-----------|----------------|
 |Commento automatico|Consente di impostare o rimuovere commenti da sezioni di codice.|Sì|
 |Formattazione automatica|Riformatta il codice con rientri e stile standard.|No|
@@ -113,7 +113,7 @@ Per informazioni generali sulla modifica di codice in Visual Studio e sulle funz
 
 La tabella seguente riepiloga le funzionalità di IntelliSense supportate e non supportate in F#:
 
-|Funzionalità|Descrizione|Supporto in F#|
+|Funzionalità|Description|Supporto in F#|
 |-------|-----------|----------------|
 |Implementazione automatica di interfacce|Genera stub di codice per metodi di interfaccia.|Sì|
 |Frammenti di codice|Inserisce codice da una libreria di costrutti di codifica comuni in argomenti.|No|
@@ -133,7 +133,7 @@ Per informazioni generali su IntelliSense, vedere [Usare IntelliSense](using-int
 
 La tabella seguente riepiloga le funzionalità disponibili quando si esegue il debug di codice F#:
 
-|Funzionalità|Descrizione|Supporto in F#|
+|Funzionalità|Description|Supporto in F#|
 |-------|-----------|----------------|
 |Auto (finestra)|Visualizza le variabili automatiche o temporanee.|No|
 |Punti di interruzione|Consente di sospendere l'esecuzione del codice in corrispondenza di punti specifici durante il debug.|Sì|
@@ -148,13 +148,13 @@ La tabella seguente riepiloga le funzionalità disponibili quando si esegue il d
 
 Per informazioni generali sul debugger di Visual Studio, vedere [Debug in Visual Studio](../debugger/index.md).
 
-## <a name="additional-tools"></a>Altri strumenti
+## <a name="additional-tools"></a>Strumenti aggiuntivi
 
 La tabella seguente riepiloga il supporto per F# di Strumenti di Visual Studio.
 
-|Strumento|Descrizione|Supporto in F#|
+|Strumento|Description|Supporto in F#|
 |----|-----------|----------------|
-|Gerarchia di chiamata|Visualizza la struttura annidata delle chiamate di funzione nel codice.|No|
+|Gerarchia delle chiamate|Visualizza la struttura annidata delle chiamate di funzione nel codice.|No|
 |Metrica del codice|Raccoglie informazioni sul codice, ad esempio il numero di righe.|No|
 |Visualizzazione classi|Rende disponibile una visualizzazione del codice di un progetto basata sui tipi.|No|
 |[Finestra Elenco errori](reference/error-list-window.md)|Visualizza l'elenco degli errori nel codice.|Sì|

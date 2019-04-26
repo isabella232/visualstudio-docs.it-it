@@ -15,19 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4cb02cdaf2827ac5c892c7565f446d8f84257c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938915"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe di base ToolTaskExtension
 Molte attività ereditano dalla classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> che eredita dalla classe <xref:Microsoft.Build.Utilities.ToolTask>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Questa catena di ereditarietà aggiunge diversi parametri alle attività che ne derivano. Questi parametri sono elencati in questo documento.
 
 ## <a name="parameters"></a>Parametri
  Nella tabella seguente vengono descritti i parametri delle classi di base.
-
 
 | Parametro | Description |
 | - | - |

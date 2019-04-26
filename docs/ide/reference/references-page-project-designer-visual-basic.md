@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956453"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 
@@ -82,11 +82,11 @@ Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi ri
 
  Selezionare uno spazio dei nomi specificato dall'utente nell'elenco degli spazi dei nomi, digitare il nome come cui si vuole sostituirlo nella casella **Spazi dei nomi importati** e quindi fare clic su questo pulsante per impostare il nuovo spazio dei nomi. Il pulsante è attivo solo se lo spazio dei nomi selezionato è tra quelli aggiunti all'elenco mediante il pulsante **Aggiungi importazione utente**. È possibile aggiungere:
 
--   Classi o spazi dei nomi, ad esempio <xref:System.Math?displayProperty=fullName>.
+- Classi o spazi dei nomi, ad esempio <xref:System.Math?displayProperty=fullName>.
 
--   Importazioni con alias, ad esempio `VB=Microsoft.VisualBasic`.
+- Importazioni con alias, ad esempio `VB=Microsoft.VisualBasic`.
 
--   Spazi dei nomi XML, ad esempio `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Spazi dei nomi XML, ad esempio `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Vedere anche
 

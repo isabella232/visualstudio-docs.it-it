@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821204"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedura: Ingrandire un'area del grafico dei risultati del test di carico
 
@@ -51,17 +51,17 @@ Prima di modificare la visualizzazione di un grafico mediante lo zoom avanti o i
 
 Per visualizzare i grafici:
 
-1.  Eseguire un test di carico finché non viene completato.
+1. Eseguire un test di carico finché non viene completato.
 
-2.  Al termine dell'esecuzione del test di carico, scegliere **Sì** nella finestra di dialogo in cui viene richiesto se visualizzare i risultati dall'archivio dei risultati del test di carico.
+2. Al termine dell'esecuzione del test di carico, scegliere **Sì** nella finestra di dialogo in cui viene richiesto se visualizzare i risultati dall'archivio dei risultati del test di carico.
 
      \- oppure -
 
      Visualizzare i dettagli di un test di carico eseguito precedentemente. Per altre informazioni, vedere [Procedura: Accedere ai risultati del test di carico per l'analisi](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Scegliere **Grafici** se i grafici non sono visualizzati.
+3. Scegliere **Grafici** se i grafici non sono visualizzati.
 
-4.  Scegliere **Mostra controlli zoom** se le barre dello zoom non sono visualizzate.
+4. Scegliere **Mostra controlli zoom** se le barre dello zoom non sono visualizzate.
 
      Per ogni grafico sono disponibili due barre dello zoom. La barra dello zoom che controlla la scala verticale si trova a sinistra del grafico, mentre la barra dello zoom che controlla la scala orizzontale si trova sotto il grafico.
 
@@ -73,21 +73,21 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Per sincronizzare lo zoom e lo scorrimento
 
-1.  Nell'**Analizzatore test di carico** scegliere **Sincronizza controlli zoom orizzontali**.
+1. Nell'**Analizzatore test di carico** scegliere **Sincronizza controlli zoom orizzontali**.
 
      Quando il pulsante **Sincronizza controlli zoom orizzontali** è selezionato, lo zoom e lo scorrimento della scala cronologica di un singolo grafico vengono applicati anche alla scala cronologica degli altri grafici.
 
-2.  Scegliere nuovamente **Sincronizza controlli zoom orizzontali**.
+2. Scegliere nuovamente **Sincronizza controlli zoom orizzontali**.
 
      Quando il pulsante **Sincronizza controlli zoom orizzontali non è selezionato**, lo zoom e lo scorrimento della scala cronologica di un singolo grafico hanno effetto solo su tale grafico.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Per eseguire lo zoom e scorrere un'area del grafico
 
-1.  Sulla barra dello zoom sotto un grafico trascinare il quadratino di ridimensionamento di sinistra verso destra.
+1. Sulla barra dello zoom sotto un grafico trascinare il quadratino di ridimensionamento di sinistra verso destra.
 
      Viene eseguito lo zoom avanti sull'ultima parte dell'esecuzione del test. In modo analogo, trascinando il quadratino di ridimensionamento di destra verso sinistra, viene eseguito lo zoom avanti sulla prima parte dell'esecuzione del test.
 
-2.  Per eseguire lo zoom avanti su una determinata area, trascinare entrambi i quadratini di ridimensionamento verso il centro di un grafico.
+2. Per eseguire lo zoom avanti su una determinata area, trascinare entrambi i quadratini di ridimensionamento verso il centro di un grafico.
 
      Più vicini sono i quadratini di ridimensionamento, maggiore è lo zoom avanti per visualizzare segmenti piccolissimi del test di carico.
 
@@ -107,9 +107,9 @@ Quando si visualizzano più grafici, è possibile mantenerli sincronizzati in mo
 
 ### <a name="to-zoom-out"></a>Per eseguire lo zoom indietro
 
-1.  Fare clic con il pulsante destro del mouse su un grafico in cui è stato applicato lo zoom avanti.
+1. Fare clic con il pulsante destro del mouse su un grafico in cui è stato applicato lo zoom avanti.
 
-2.  Dal menu di scelta rapida selezionare **Zoom indietro orizzontale**.
+2. Dal menu di scelta rapida selezionare **Zoom indietro orizzontale**.
 
      Viene eseguito lo zoom indietro per mostrare l'intera durata dell'esecuzione del test di carico.
 

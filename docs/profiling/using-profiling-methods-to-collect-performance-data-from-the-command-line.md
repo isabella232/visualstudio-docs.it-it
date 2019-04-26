@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59e05932b9e2e20f06a02614f8153b665b8fd51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831443"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
 La scelta degli strumenti e delle opzioni della riga di comando per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dipende da fattori come il tipo di applicazione sottoposta a profilatura, il metodo di profilatura da usare e il fatto che l'applicazione di destinazione sia scritta in codice nativo o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
@@ -37,17 +37,17 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
 
  **Tipo di applicazione di destinazione**
 
--   [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
+- [Componenti .NET Framework autonomi](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)
 
--   [Componenti autonomi nativi](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
+- [Componenti autonomi nativi](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)
 
--   [Applicazioni Web ASP.NET compilate in modo statico](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
+- [Applicazioni Web ASP.NET compilate in modo statico](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)
 
--   [Applicazioni Web ASP.NET compilate in modo dinamico](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Applicazioni Web ASP.NET compilate in modo dinamico](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
 
--   [Servizi .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Servizi .NET](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
--   [Servizi nativi](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
+- [Servizi nativi](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Usare i metodi di memoria .NET per raccogliere dati sulla durata degli oggetti e sull'allocazione di memoria
  Il metodo di memoria .NET degli strumenti di profilatura consente di raccogliere dati sull'allocazione di memoria di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e informazioni sulla durata degli oggetti in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
