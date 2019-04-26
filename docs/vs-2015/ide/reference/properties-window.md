@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438028"
 ---
 # <a name="properties-window"></a>Finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ Usare questa finestra per visualizzare e modificare in fase di progettazione le 
  Visualizza gli eventi per un oggetto.  
   
 > [!NOTE]
->  Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando si attiva un modulo o una finestra di progettazione controlli nel contesto di un progetto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Quando si modificano i file XAML, gli eventi vengono visualizzati in una scheda separata della finestra Proprietà.  
+> Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando si attiva un modulo o una finestra di progettazione controlli nel contesto di un progetto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Quando si modificano i file XAML, gli eventi vengono visualizzati in una scheda separata della finestra Proprietà.  
   
  Messaggi  
  Elenca tutti i messaggi di Windows. Consente di aggiungere o eliminare funzioni specifiche del gestore per i messaggi visualizzati per la classe selezionata.  
   
 > [!NOTE]
->  Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Overrides  
  Indica tutte le funzioni virtuali per la classe selezionata e consente di aggiungere o eliminare funzioni per l'override.  
   
 > [!NOTE]
->  Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Questo controllo della barra degli strumenti della finestra **Proprietà** è disponibile solo quando **Visualizzazione classi** è la finestra attiva nel contesto di un progetto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Riquadro descrizione  
  Visualizza il tipo di proprietà e una breve descrizione della proprietà. È possibile attivare e disattivare la descrizione della proprietà usando il comando Descrizione del menu di scelta rapida.  
   
 > [!NOTE]
->  Questo controllo della barra degli strumenti della finestra **Proprietà** non è disponibile se si modificano i file XAML nella finestra di progettazione.  
+> Questo controllo della barra degli strumenti della finestra **Proprietà** non è disponibile se si modificano i file XAML nella finestra di progettazione.  
   
  Visualizzazione anteprima  
  Visualizza una rappresentazione visiva dell'elemento attualmente selezionato quando si modificano i file XAML nella finestra di progettazione.  

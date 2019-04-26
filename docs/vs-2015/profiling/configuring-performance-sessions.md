@@ -14,12 +14,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434324"
 ---
 # <a name="configuring-performance-sessions"></a>Configurazione di sessioni di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774696"
 Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come usare le proprietà della Creazione guidata sessione di prestazioni della sessione di prestazioni e del file binario di destinazione per configurare gli strumenti di profilatura per raccogliere i dati di interesse. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controlling Data Collection](../profiling/controlling-data-collection.md) (Controllo della raccolta di dati).  
   
 > [!NOTE]
->  In molti casi l'uso delle proprietà della Creazione guidata sessione di prestazioni è un metodo efficace per raccogliere dati di profilatura. Per altre informazioni, vedere [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Guida per principianti alla profilatura delle prestazioni) e [Getting Started with Performance Tools](../profiling/getting-started-with-performance-tools.md) (Introduzione agli strumenti di profilatura).  
+> In molti casi l'uso delle proprietà della Creazione guidata sessione di prestazioni è un metodo efficace per raccogliere dati di profilatura. Per altre informazioni, vedere [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Guida per principianti alla profilatura delle prestazioni) e [Getting Started with Performance Tools](../profiling/getting-started-with-performance-tools.md) (Introduzione agli strumenti di profilatura).  
   
 ## <a name="common-tasks"></a>Attività comuni  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430539"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Procedura: gestire configurazioni di compilazione applicando le impostazioni di Visual Basic Developer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Per impostazione predefinita, tutte le opzioni di configurazione della build ava
 2. Espandere **Progetti e soluzioni** e fare clic su **Generale**.  
   
     > [!NOTE]
-    >  Il nodo **Generale** è visibile anche se l'opzione **Mostra tutte le impostazioni** è deselezionata. Se si vogliono visualizzare tutte le opzioni disponibili, fare clic su **Mostra tutte le impostazioni**.  
+    > Il nodo **Generale** è visibile anche se l'opzione **Mostra tutte le impostazioni** è deselezionata. Se si vogliono visualizzare tutte le opzioni disponibili, fare clic su **Mostra tutte le impostazioni**.  
   
 3. Fare clic su **Mostra configurazioni della build avanzate**.  
   

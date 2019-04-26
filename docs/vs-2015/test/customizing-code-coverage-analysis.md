@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059253"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,11 +183,11 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Per personalizzare le impostazioni esecuzione test in un test da riga di comando  
  Per eseguire un test dalla riga di comando usare vstest.console.exe. Il file di impostazioni è un parametro di questa utilità. Per altre informazioni, vedere [Uso di VSTest.console dalla riga di comando](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Avviare il prompt dei comandi di Visual Studio Developer:  
+1. Avviare il prompt dei comandi di Visual Studio Developer:  
   
      In Windows scegliere **Start**, **Tutti i programmi**, **Microsoft Visual Studio**, **Strumenti di Visual Studio**, **Prompt dei comandi per gli sviluppatori**.  
   
-2.  Eseguire:  
+2. Eseguire:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
 3. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Selezionare il file con estensione **runsettings**.  
   
-   - <em>Viene visualizzato **Assembly di test</em>* anziché **Origine test**. Quando si prova ad impostare il campo **Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
+   - <em>Viene visualizzato **Assembly di test</em>* anziché **Origine test**. Quando si prova ad impostare il campo Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
   
       In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.  
   
    I risultati vengono visualizzati nella sezione di riepilogo del report di compilazione.  
   
-##  <a name="sample"></a> File con estensione runsettings di esempio  
+## <a name="sample"></a> File con estensione runsettings di esempio  
  Copiare questo codice e modificarlo secondo le proprie esigenze. Questa è l'impostazione predefinita del file con estensione runsettings.  
   
  Per altri usi del file con estensione runsettings, vedere [Configurare unit test usando un file con estensione runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).  
