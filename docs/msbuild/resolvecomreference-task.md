@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431285"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con estensione *tlb* e risolve tali librerie in percorsi sul disco.
@@ -70,7 +70,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole fare uso di un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|
 
 > [!NOTE]
->  Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.
+> Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.
 
 ## <a name="remarks"></a>Osservazioni
  Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di tali parametri aggiuntivi e le relative descrizioni, vedere [Classe di base Task](../msbuild/task-base-class.md).

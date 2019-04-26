@@ -7,19 +7,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: ae33644c72288f79d6be9fcc1aec476939980a5c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 581c72ba7a43e3a7b31fa45e10067e33e15f4e35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386522"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di intervallo dettagliati con il profiler tramite la riga di comando
 
 In questo articolo viene illustrato come usare gli strumenti della riga di comando disponibili negli strumenti di profilatura di Visual Studio per raccogliere dati di intervallo dettagliati per un'applicazione [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico tramite il metodo di profilatura della strumentazione.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
 Per raccogliere i dati sulle prestazioni da un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], modificare il file *web.config* dell'applicazione di destinazione per abilitare lo strumento [VSInstr.exe](../profiling/vsinstr.md) per instrumentare i file dell'applicazione compilata in modo dinamico. È quindi possibile usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per impostare le variabili di ambiente appropriate nel server Web per abilitare la profilatura, quindi riavviare il computer.
 
@@ -65,7 +65,6 @@ Avviare il profiler, quindi eseguire l'applicazione di destinazione. Mentre il p
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
      | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
-
 
 3. Avviare l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nel modo usuale.
 

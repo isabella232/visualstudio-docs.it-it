@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425484"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Frequenze elevate di paging di memoria attiva su disco
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620486"
 ## <a name="rule-description"></a>Descrizione della regola
 
 > [!NOTE]
->  Questa regola informativa viene attivata quando i livelli di paging di memoria attiva raggiungono una quantità significativa. Quando si verifica un livello di paging estremamente elevato, viene attivata invece la regola di avviso [DA0014: Frequenze molto elevate di paging di memoria attiva su disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
+> Questa regola informativa viene attivata quando i livelli di paging di memoria attiva raggiungono una quantità significativa. Quando si verifica un livello di paging estremamente elevato, viene attivata invece la regola di avviso [DA0014: Frequenze molto elevate di paging di memoria attiva su disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md).
 
  Un'attività di paging su disco eccessiva può essere causata da memoria fisica insufficiente. Se le operazioni di paging usano in modo dominante il disco fisico su cui risiede il file di paging, possono rallentare le altre operazioni del disco orientate all'applicazione sullo stesso disco.
 

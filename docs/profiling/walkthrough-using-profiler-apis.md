@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428124"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procedura dettagliata: Uso delle API del profiler
 
@@ -39,8 +39,6 @@ Nella procedura dettagliata viene usata un'applicazione C# per illustrare l'uso 
 
  Per il codice gestito, le API del profiler si trovano in *Microsoft.VisualStudio.Profiler.dll*. Questa DLL è disponibile nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Per le app a 64 bit, la cartella è *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Per ulteriori informazioni, vedere <xref:Microsoft.VisualStudio.Profiler>.
 
-
-
 ## <a name="prerequisites"></a>Prerequisiti
  Questa procedura dettagliata presuppone che l'ambiente di sviluppo scelto sia configurato per supportare il debug e il campionamento. Gli argomenti seguenti offrono una panoramica di questi prerequisiti:
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Per creare il codice per il profilo
 
-1.  Creare un nuovo progetto C# in Visual Studio o usare una compilazione avviata tramite riga di comando, a seconda delle preferenze.
+1. Creare un nuovo progetto C# in Visual Studio o usare una compilazione avviata tramite riga di comando, a seconda delle preferenze.
 
     > [!NOTE]
-    >  La compilazione deve fare riferimento alla libreria *Microsoft.VisualStudio.Profiler.dll* che si trova nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
+    > La compilazione deve fare riferimento alla libreria *Microsoft.VisualStudio.Profiler.dll* che si trova nella directory *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
-2.  Copiare il codice riportato di seguito e incollarlo nel progetto:
+2. Copiare il codice riportato di seguito e incollarlo nel progetto:
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Per raccogliere e visualizzare i dati nella riga di comando
 
-1.  Compilare una versione di debug del codice di esempio creato nella procedura dettagliata illustrata in precedenza per la creazione di codice per il profilo.
+1. Compilare una versione di debug del codice di esempio creato nella procedura dettagliata illustrata in precedenza per la creazione di codice per il profilo.
 
-2.  Per profilare un'applicazione gestita, digitare il comando seguente e impostare le variabili di ambiente appropriate:
+2. Per profilare un'applicazione gestita, digitare il comando seguente e impostare le variabili di ambiente appropriate:
 
      **VsPerfCLREnv /traceon**
 
-3.  Digitare il comando seguente: **VSInstr \<nomefile>.exe**
+3. Digitare il comando seguente: **VSInstr \<nomefile>.exe**
 
-4.  Digitare il comando seguente: **VSPerfCmd /start:trace /output:\<nomefile>.vsp**
+4. Digitare il comando seguente: **VSPerfCmd /start:trace /output:\<nomefile>.vsp**
 
-5.  Digitare il comando seguente: **VSPerfCmd /globaloff**
+5. Digitare il comando seguente: **VSPerfCmd /globaloff**
 
-6.  Uscire dal programma.
+6. Uscire dal programma.
 
-7.  Digitare il comando seguente: **VSPerfCmd /shutdown**
+7. Digitare il comando seguente: **VSPerfCmd /shutdown**
 
-8.  Digitare il comando seguente: **VSPerfReport /calltrace:\<nomefile>.vsp**
+8. Digitare il comando seguente: **VSPerfReport /calltrace:\<nomefile>.vsp**
 
      Viene creato un file con estensione *csv* nella directory corrente con i dati sulle prestazioni risultanti.
 

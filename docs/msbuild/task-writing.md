@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440000"
 ---
 # <a name="task-writing"></a>Scrittura di attività
 Le attività forniscono il codice che viene eseguito durante il processo di compilazione. Le attività sono contenute nelle destinazioni. In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è inclusa una raccolta di attività tipiche ed è anche possibile creare le proprie attività. Per altre informazioni sulla raccolta di attività inclusa in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], vedere il [riferimento alle attività](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Le attività forniscono il codice che viene eseguito durante il processo di comp
 
  È possibile implementare un'attività in due modi:
 
--   Implementare direttamente l'interfaccia <xref:Microsoft.Build.Framework.ITask>.
+- Implementare direttamente l'interfaccia <xref:Microsoft.Build.Framework.ITask>.
 
--   Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll*. L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
+- Derivare la classe dalla classe di supporto <xref:Microsoft.Build.Utilities.Task>, definita nell'assembly *Microsoft.Build.Utilities.dll*. L'attività implementa ITask e specifica le implementazioni predefinite di alcuni membri di ITask. Inoltre, la registrazione è più semplice.
 
 In entrambi i casi è necessario aggiungere alla classe un metodo denominato `Execute`, ovvero il metodo che viene chiamato quando l'attività è in esecuzione. Questo metodo non accetta parametri e restituisce un valore `Boolean`: `true` se l'attività ha avuto esito positivo o `false` se ha avuto esito negativo. Nell'esempio seguente viene illustrata un'attività che non esegue alcuna azione e restituisce `true`.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  Il file *Microsoft.Common.Tasks* di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è un file di progetto contenente un elenco di elementi `UsingTask` che registrano tutte le attività disponibili con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Questo file è incluso automaticamente durante la compilazione di ogni progetto. Se un'attività registrata in *Microsoft.Common.Tasks* è registrata anche nel file di progetto corrente, il file di progetto corrente ha la precedenza, ovvero è possibile sostituire un'attività predefinita con un'attività personalizzata con lo stesso nome.
 
 > [!TIP]
->  È possibile visualizzare un elenco delle attività disponibili con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] visualizzando il contenuto di *Microsoft.Common.Tasks*.
+> È possibile visualizzare un elenco delle attività disponibili con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] visualizzando il contenuto di *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Generazione di eventi da un'attività
  Se l'attività deriva dalla classe helper <xref:Microsoft.Build.Utilities.Task>, è possibile usare uno qualsiasi dei seguenti metodi helper per la classe <xref:Microsoft.Build.Utilities.Task> per generare eventi che verranno intercettati e visualizzati da tutti i logger registrati:

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f6486fc204942553a58e437d56fc7d0ffee548b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40ebd26b4732399ac53ba1796fcb3c05bf370599
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425461"
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Frequenze molto elevate di paging di memoria attiva su disco
 
@@ -41,7 +41,7 @@ ms.locfileid: "56630392"
  Le pagine vengono spesso lette dal disco o scritte nel disco mediante operazioni di paging in blocco. Ad esempio, il numero di output di pagine al secondo è spesso maggiore del numero di scritture di pagine al secondo. Ciò avviene perché il numero di pagine generate al secondo include anche le pagine di dati modificate dalla cache dei file di sistema. Tuttavia, non è sempre facile determinare quale processo è direttamente responsabile del paging o perché.
 
 > [!NOTE]
->  Questa regola viene attivata quando i livelli di paging della memoria attiva raggiungono una frequenza molto elevata. Quando il livello di paging è significativo, ma non estremo, viene invece attivata la regola informativa [DA0017: Frequenze elevate di paging di memoria attiva su disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md).
+> Questa regola viene attivata quando i livelli di paging della memoria attiva raggiungono una frequenza molto elevata. Quando il livello di paging è significativo, ma non estremo, viene invece attivata la regola informativa [DA0017: Frequenze elevate di paging di memoria attiva su disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md).
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md). Individuare la colonna **Memoria\Pagine/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui l'attività I/O di paging è più elevata rispetto ad altre fasi.

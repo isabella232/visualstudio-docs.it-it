@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437833"
 ---
 # <a name="mt-task"></a>attività MT
 Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre informazioni, vedere [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Esegue il wrapping dello strumento manifesto Microsoft, *mt.exe*. Per altre info
  Nella tabella che segue vengono descritti i parametri dell'attività **MT**. La maggior parte dei parametri di attività e alcuni set di parametri corrispondono a un'opzione della riga di comando.
 
 > [!NOTE]
->  Nella documentazione di *mt.exe* viene usato un trattino (**-**) come prefisso per le opzioni della riga di comando, ma questo argomento usa una barra (**/**). Entrambi i prefissi sono accettabili.
+> Nella documentazione di *mt.exe* viene usato un trattino (**-**) come prefisso per le opzioni della riga di comando, ma questo argomento usa una barra (**/**). Entrambi i prefissi sono accettabili.
 
 |Parametro|Description|
 |---------------|-----------------|

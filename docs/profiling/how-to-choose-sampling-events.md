@@ -18,45 +18,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d3562f446ebbc5f6e24ce9911ff9e09daa04e55
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9dac636beeab5188c7958232d46cf3fe4a4b5f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439496"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] raccolgono dati relativi alle prestazioni a un intervallo specificato come numero di cicli del processore usati dal processo profilato. Il numero predefinito di cicli in un intervallo è 10.000.000, pari a circa 0,01 secondi in un computer da 1 GHz. È possibile modificare il numero di cicli in un intervallo, nonché l'evento di campionamento. Sono disponibili gli eventi di campionamento seguenti:
 
--   Cicli di clock per i problemi legati alla CPU.
+- Cicli di clock per i problemi legati alla CPU.
 
--   Errori di pagina per i problemi relativi alla memoria.
+- Errori di pagina per i problemi relativi alla memoria.
 
--   Chiamate di sistema per i problemi associati all'I/O.
+- Chiamate di sistema per i problemi associati all'I/O.
 
--   Contatore di prestazioni, ovvero contatori CPU per problemi di prestazioni ridotte.
+- Contatore di prestazioni, ovvero contatori CPU per problemi di prestazioni ridotte.
 
 > [!IMPORTANT]
->  Se si raccolgono dati di memoria .NET (allocazioni e/o durate degli oggetti) usando il metodo di campionamento, tutti gli eventi di campionamento specificati dall'utente vengono ignorati e si usano le allocazioni di memoria e/o gli eventi di Garbage Collection appropriati per raccogliere i dati.
+> Se si raccolgono dati di memoria .NET (allocazioni e/o durate degli oggetti) usando il metodo di campionamento, tutti gli eventi di campionamento specificati dall'utente vengono ignorati e si usano le allocazioni di memoria e/o gli eventi di Garbage Collection appropriati per raccogliere i dati.
 
 ### <a name="to-select-a-sample-event"></a>Per selezionare un evento di campionamento
 
-1.  In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
+1. In **Esplora prestazioni**fare clic con il pulsante destro del mouse sulla sessione di prestazioni, quindi fare clic su **Proprietà**.
 
-2.  In **Pagine delle proprietà** fare clic sulle proprietà di **Campionamento**.
+2. In **Pagine delle proprietà** fare clic sulle proprietà di **Campionamento**.
 
-3.  Dall'elenco a discesa **Evento di campionamento** selezionare l'evento di campionamento da usare per profilare l'applicazione.
+3. Dall'elenco a discesa **Evento di campionamento** selezionare l'evento di campionamento da usare per profilare l'applicazione.
 
     > [!NOTE]
-    >  L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona **Contatore di prestazioni** dall'elenco a discesa **Evento di campionamento**.
+    > L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona **Contatore di prestazioni** dall'elenco a discesa **Evento di campionamento**.
 
-4.  Se si seleziona **Contatore di prestazioni**, selezionare un contatore CPU specifico dal controllo di visualizzazione albero **Contatori di prestazioni disponibili**.
+4. Se si seleziona **Contatore di prestazioni**, selezionare un contatore CPU specifico dal controllo di visualizzazione albero **Contatori di prestazioni disponibili**.
 
-    -   I contatori inclusi nel nodo **Eventi portabili** sono disponibili in tutti i tipi di processori.
+    - I contatori inclusi nel nodo **Eventi portabili** sono disponibili in tutti i tipi di processori.
 
-    -   I contatori inclusi nel nodo **Eventi piattaforma** sono specifici del processore del computer in uso e potrebbero non essere disponibili in altri tipi di processori.
+    - I contatori inclusi nel nodo **Eventi piattaforma** sono specifici del processore del computer in uso e potrebbero non essere disponibili in altri tipi di processori.
 
-5.  Quando si seleziona un evento di campionamento, nella casella di testo **Intervallo di campionamento** viene visualizzato un valore predefinito per l'intervallo di campionamento. Se necessario, è possibile immettere il valore desiderato nella casella di testo.
+5. Quando si seleziona un evento di campionamento, nella casella di testo **Intervallo di campionamento** viene visualizzato un valore predefinito per l'intervallo di campionamento. Se necessario, è possibile immettere il valore desiderato nella casella di testo.
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

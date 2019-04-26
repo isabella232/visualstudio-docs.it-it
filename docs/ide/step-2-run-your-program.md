@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430791"
 ---
 # <a name="step-2-run-your-program"></a>Passaggio 2: Eseguire il programma
 Quando è stata creata una nuova soluzione, si è effettivamente compilato un programma che è possibile eseguire. Il programma non fa ancora molto: visualizza semplicemente una finestra vuota con **Form1** nella barra del titolo. È tuttavia possibile eseguirlo, come illustrato di seguito.
@@ -22,40 +22,40 @@ Quando è stata creata una nuova soluzione, si è effettivamente compilato un pr
 
 ## <a name="to-run-your-program"></a>Per eseguire il programma
 
-1.  Utilizzare uno dei metodi seguenti per eseguire il programma.
+1. Utilizzare uno dei metodi seguenti per eseguire il programma.
 
-    -   Premere **F5**.
+    - Premere **F5**.
 
-    -   Sulla barra dei menu scegliere **Debug** > **Avvia debug**.
+    - Sulla barra dei menu scegliere **Debug** > **Avvia debug**.
 
-    -   Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
+    - Sulla barra degli strumenti scegliere il pulsante **Avvia debug** visualizzato di seguito.
 
          ![Pulsante della barra degli strumenti Avvia debug](../ide/media/express_icondebug.png)
 Pulsante della barra degli strumenti **Avvia debug**
 
-2.  In Visual Studio viene eseguito il programma e visualizzata una finestra denominata **Form1**. Nel diagramma seguente è illustrato il programma appena compilato. Il programma viene eseguito e presto vi si aggiungeranno elementi.
+2. In Visual Studio viene eseguito il programma e visualizzata una finestra denominata **Form1**. Nel diagramma seguente è illustrato il programma appena compilato. Il programma viene eseguito e presto vi si aggiungeranno elementi.
 
      ![Programma per applicazioni Windows Form in esecuzione](../ide/media/express_firstrun.png)
 Programma per applicazioni **Windows Forms** in esecuzione
 
-3.  Tornare all'ambiente di sviluppo integrato (IDE) di Visual Studio e osservare la nuova barra degli strumenti. I pulsanti aggiuntivi vengono visualizzati sulla barra degli strumenti quando si esegue un programma. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio del programma e agevolano il rilevamento di eventuali errori (bug). Per questo esempio, l'utilizzo è limitato solo all'avvio e all'arresto del programma.
+3. Tornare all'ambiente di sviluppo integrato (IDE) di Visual Studio e osservare la nuova barra degli strumenti. I pulsanti aggiuntivi vengono visualizzati sulla barra degli strumenti quando si esegue un programma. Questi pulsanti consentono di eseguire operazioni quali l'arresto e l'avvio del programma e agevolano il rilevamento di eventuali errori (bug). Per questo esempio, l'utilizzo è limitato solo all'avvio e all'arresto del programma.
 
      ![Barra degli strumenti Debug](../ide/media/express_debugtoolbar.png)
 Barra degli strumenti **Debug**
 
-4.  Utilizzare uno dei metodi seguenti per arrestare il programma.
+4. Utilizzare uno dei metodi seguenti per arrestare il programma.
 
-    -   Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+    - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
-    -   Sulla barra dei menu scegliere **Debug** > **Termina debug**.
+    - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 
-    -   Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
+    - Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
     > [!NOTE]
-    >  Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
+    > Quando si esegue il programma dall'interno dell'IDE, questa operazione viene denominata debug perché in genere la si esegue per rilevare e correggere bug (errori) nel programma. Sebbene questo programma sia ridotto e in realtà non produca ancora nessun risultato, si tratta di un programma vero. Per l'esecuzione e il debug di altri programmi si applica la stessa procedura. Per altre informazioni sul debug, vedere [Presentazione del debugger](../debugger/debugger-feature-tour.md).
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 3: Impostare le proprietà del modulo](../ide/step-3-set-your-form-properties.md).
 
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md).

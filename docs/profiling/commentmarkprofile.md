@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440186"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La funzione `CommentMarkProfile` inserisce un indicatore numerico e una stringa di testo nel file con estensione *vsp*. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione `CommentMarkProfile`.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file con estensione *vsp*.
 
 > [!IMPORTANT]
->  Il metodo CommentMarkProfile può essere usato solo con la strumentazione.
+> Il metodo CommentMarkProfile può essere usato solo con la strumentazione.
 
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework
  Microsoft.VisualStudio.Profiler.dll

@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002247"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procedura: Aggiungere altre impostazioni esecuzione test a un test di carico
 
@@ -26,21 +26,21 @@ Le impostazioni esecuzione test di un test di carico determinano una varietà di
 
 ## <a name="to-add-another-run-setting"></a>Per aggiungere un'ulteriore impostazione di esecuzione
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  (Facoltativo) Espandere la cartella **Impostazioni di esecuzione**.
+2. (Facoltativo) Espandere la cartella **Impostazioni di esecuzione**.
 
-3.  Fare clic con il pulsante destro del mouse sulla cartella **Impostazioni di esecuzione** e scegliere **Aggiungi impostazione di esecuzione**.
+3. Fare clic con il pulsante destro del mouse sulla cartella **Impostazioni di esecuzione** e scegliere **Aggiungi impostazione di esecuzione**.
 
      Viene aggiunta una nuova impostazione di esecuzione alla cartella **Impostazioni di esecuzione**.
 
-4.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+4. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
      Verrà visualizzata la **Finestra Proprietà** con le proprietà relative all'impostazione di esecuzione selezionata.
 
-5.  Nella finestra **Proprietà** usare la casella di testo relativa alla proprietà **Nome** per assegnare alla nuova impostazione esecuzione test un nome che ne descriva lo scopo, ad esempio **Impostazione esecuzione test: Esecuzione in cinque minuti**.
+5. Nella finestra **Proprietà** usare la casella di testo relativa alla proprietà **Nome** per assegnare alla nuova impostazione esecuzione test un nome che ne descriva lo scopo, ad esempio **Impostazione esecuzione test: Esecuzione in cinque minuti**.
 
-6.  Usare la **Finestra Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
+6. Usare la **Finestra Proprietà** per modificare le impostazioni di esecuzione. Modificare, ad esempio, la durata dell'esecuzione in **00:05:00** per eseguire il test per cinque minuti.
 
     > [!NOTE]
     > Per un elenco completo delle proprietà delle impostazioni esecuzione test e delle relative descrizioni, vedere [Proprietà delle impostazioni esecuzione test di carico](../test/load-test-run-settings-properties.md).

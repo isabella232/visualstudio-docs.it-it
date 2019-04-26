@@ -4,17 +4,19 @@ description: Informazioni su come configurare un progetto di servizio cloud di A
 author: ghogen
 manager: jillfra
 assetId: 609d6965-05cc-47b1-82dc-c76a92d4f295
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/06/2017
 ms.author: ghogen
 ms.openlocfilehash: 77985de756274793c99673c79dac26e59129a7ea
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56952735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572481"
 ---
 # <a name="configure-an-azure-cloud-service-project-with-visual-studio"></a>Configurare un progetto di servizio cloud di Azure con Visual Studio
 È possibile configurare un progetto di servizio cloud di Azure, in base ai requisiti specifici per il progetto. È possibile impostare proprietà per il progetto per le categorie seguenti:

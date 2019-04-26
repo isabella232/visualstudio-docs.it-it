@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d58dea02a45ccc84e7829da2acdb479eb17dda3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843953"
 ---
 # <a name="xml-xelement-dynamic-property"></a>XML (proprietà dinamica XElement)
 
@@ -31,7 +31,7 @@ elem.Xml
 
 Oggetto <xref:System.String> che rappresenta il contenuto XML non formattato dell'elemento.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Questa proprietà è equivalente al metodo <xref:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)> della classe <xref:System.Xml.Linq.XNode?displayProperty=fullName>, con il parametro `SaveOptions` impostato su <xref:System.Xml.Linq.SaveOptions>.
 

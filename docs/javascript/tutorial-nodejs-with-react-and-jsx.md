@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446336"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -376,8 +376,10 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
     Viene avviato Chrome con il debug abilitato.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > È anche possibile impostare il flag `--remote-debugging-port` all'avvio del browser. Selezionare **Esplora con** sulla barra degli strumenti **Debug**, scegliere **Aggiungi** e quindi impostare il flag nel campo **Argomenti**. Usare un nome descrittivo diverso per il browser, ad esempio **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Passare a Visual Studio e impostare un punto di interruzione nel codice *app-bundle.js* in corrispondenza della funzione `render()`, come indicato di seguito:
@@ -421,4 +423,4 @@ Nella sezione precedente il debugger è stato associato al codice Node.js lato s
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
+> [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

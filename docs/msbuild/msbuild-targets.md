@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004585"
 ---
 # <a name="msbuild-targets"></a>Destinazioni di MSBuild
 Le destinazioni raggruppano le attività in un determinato ordine e consentono di suddividere il processo di compilazione in unità più piccole. Ad esempio, una destinazione può eliminare tutti i file presenti nella directory di output per preparare la compilazione, mentre un'altra compila gli input per il progetto e li inserisce nella directory vuota. Per altre informazioni sulle attività, vedere [Attività](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Le destinazioni raggruppano le attività in un determinato ordine e consentono d
 ## <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
  Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. Esistono diversi modi per specificare l'ordine di esecuzione delle destinazioni.
 
--   Destinazioni iniziali
+- Destinazioni iniziali
 
--   Destinazioni predefinite
+- Destinazioni predefinite
 
--   Prima destinazione
+- Prima destinazione
 
--   Dipendenze tra destinazioni
+- Dipendenze tra destinazioni
 
--   `BeforeTargets` e `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` e `AfterTargets` (MSBuild 4.0)
 
 Una destinazione non viene mai eseguita due volte durante una compilazione, anche se da essa dipende una destinazione successiva nella compilazione. Il contributo della destinazione alla compilazione termina dopo che è stata eseguita.
 

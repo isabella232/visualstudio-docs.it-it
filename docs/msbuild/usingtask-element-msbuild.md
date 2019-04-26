@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410999"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/task-element-msbuild.md) all'assembly che contiene l'implementazione dell'attività.
@@ -69,7 +69,7 @@ Associa l'attività a cui si fa riferimento in un elemento [Task](../msbuild/tas
  È possibile fare riferimento alle variabili di ambiente, alle proprietà della riga di comando, alle proprietà a livello di progetto e agli elementi a livello di progetto negli elementi `UsingTask` inclusi nel file di progetto sia direttamente che tramite un file di progetto importato. Per altre informazioni, vedere [Tasks](../msbuild/msbuild-tasks.md) (Attività).
 
 > [!NOTE]
->  Le proprietà e gli elementi a livello di progetto non hanno alcun effetto se l'elemento `UsingTask` proviene da uno dei file con estensione *tasks* registrati a livello globale nel motore MSBuild. I valori a livello di progetto non sono globali per MSBuild.
+> Le proprietà e gli elementi a livello di progetto non hanno alcun effetto se l'elemento `UsingTask` proviene da uno dei file con estensione *tasks* registrati a livello globale nel motore MSBuild. I valori a livello di progetto non sono globali per MSBuild.
 
  In MSBuild 4.0 è possibile caricare gli elementi UsingTask dai file con estensione *overridetask*.
 

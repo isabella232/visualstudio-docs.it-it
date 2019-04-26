@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997800"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 

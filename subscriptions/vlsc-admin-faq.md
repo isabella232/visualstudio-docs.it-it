@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Domande frequenti sulla migrazione dell'amministrazione del Volume License Service Center
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427975"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 
@@ -54,7 +54,7 @@ Per istruzioni sul processo, leggere quanto riportato di seguito.
 
     d. Successivamente, sarà richiesto di immettere il PCN.
 
-2. **Configurare gli amministratori:**
+2. **Configurare gli amministratori.**
 
     Dopo aver immesso il PCN, si aprirà la pagina in cui sarà possibile aggiungere amministratori e amministratori con privilegi elevati (precedentemente noti come gestori delle sottoscrizioni). Sarebbe buona norma completare tale operazione prima della data di migrazione dell'organizzazione. In questo modo si evitano interruzioni nella gestione delle sottoscrizioni.
 

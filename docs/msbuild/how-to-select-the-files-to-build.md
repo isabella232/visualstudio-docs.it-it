@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386181"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedura: Selezionare i file da compilare
 Quando si compila un progetto che contiene molti file, è possibile elencare separatamente ogni file nel file di progetto oppure è possibile usare caratteri jolly per includere tutti i file contenuti in una directory o in un set nidificato di directory.
@@ -42,7 +42,7 @@ I file di una compilazione devono essere inclusi in un elenco di elementi nel fi
 
 #### <a name="to-declare-multiple-items"></a>Per dichiarare più elementi
 
--   Usare gli attributi `Include` simili ai seguenti:
+- Usare gli attributi `Include` simili ai seguenti:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ In un file di progetto, è possibile usare la notazione @() nelle attività per 
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input tramite l'attributo `Sources` in attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
+> È necessario usare caratteri jolly con gli elementi per specificare gli input per una compilazione. Non è possibile specificare gli input tramite l'attributo `Sources` in attività di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], ad esempio [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). L'esempio seguente non è valido in un file di progetto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

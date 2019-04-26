@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440300"
 ---
 # <a name="attach"></a>Attach
 L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del processo in esecuzione specificato dall'ID processo (PID).
@@ -21,7 +21,7 @@ L'opzione *Attach* di **VSPerfCmd.exe** avvia una profilatura campione del proce
  Per usare l'opzione **Attach**, è necessario specificare il metodo **Sample** nell'opzione Start.
 
 > [!NOTE]
->  Se l'opzione **Start** è stata specificata con l'opzione **Crosssession**, eventuali chiamate a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** devono specificare anche **Crosssession**.
+> Se l'opzione **Start** è stata specificata con l'opzione **Crosssession**, eventuali chiamate a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** devono specificare anche **Crosssession**.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Specifica il numero e il tipo di intervallo di campionamento.
 
--   **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
+- **Timer**: esegue il campionamento ogni `Cycles` cicli di clock del processore. Se non si specifica `Cycles`, vengono usati 10.000.000 di cicli.
 
--   **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
+- **PF**: esegue il campionamento ogni `Events` errori di pagina. Se non si specifica `Events`, vengono usati 10 errori di pagina.
 
--   **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
+- **Sys**: esegue il campionamento ogni `Events` chiamate al sistema operativo. Se non si specifica `Events`, vengono usate 10 chiamate del sistema.
 
--   **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.
+- **Counter**: esegue il campionamento ogni `Reload` dei contatori delle prestazioni della CPU specificato da `Name`. Facoltativamente, `FriendlyName` può specificare una stringa da usare come intestazione di colonna nei report del profiler.
 
 ## <a name="example"></a>Esempio
  In questo esempio viene illustrato come connettersi a un'istanza di un'applicazione in esecuzione con ID processo 12345.

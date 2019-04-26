@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003631"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (attività)
 Genera un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] o un manifesto nativo. Un manifesto nativo descrive un componente definendo un'identità univoca per il componente e identificando tutti gli assembly e i file che costituiscono il componente. Un manifesto dell'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende un manifesto nativo indicando il punto di ingresso dell'applicazione e specificando il livello di sicurezza dell'applicazione.

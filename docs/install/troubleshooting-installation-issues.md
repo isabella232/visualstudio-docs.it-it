@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997434"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Risolvere i problemi di installazione e aggiornamento di Visual Studio
 
@@ -62,7 +62,7 @@ Il programma di bootstrap dell'installazione di Visual Studio è un file eseguib
 
 1. Chiudere il programma di installazione di Visual Studio.
 2. Eliminare la directory del programma di installazione di Visual Studio. In genere, la directory è `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico accedendo alla [pagina dei download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e facendo clic su **Download** per l'edizione di Visual Studio in uso. Eseguire il file eseguibile per reimpostare i metadati di installazione.
+3. Eseguire il programma di bootstrap dell'installazione di Visual Studio. Il programma di bootstrap è disponibile nella cartella Download con un nome file che segue il modello `vs_[Visual Studio edition]__*.exe`. Se non si trova l'applicazione, è possibile scaricare il programma di avvio automatico accedendo alla [pagina dei download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e facendo clic su **Download** per l'edizione di Visual Studio in uso. Eseguire il file eseguibile per reimpostare i metadati di installazione.
 4. Provare di nuovo a installare o ad aggiornare Visual Studio. Se i problemi di installazione persistono, andare al passaggio successivo.
 
 ::: moniker-end
@@ -143,7 +143,7 @@ Se le soluzioni fornite in questa Guida alla risoluzione dei problemi non consen
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Rimuovere Visual Studio](remove-visual-studio.md)
+* [Remove Visual Studio ](remove-visual-studio.md) (Rimuovere Visual Studio)
 * [Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb176f09fca04d177ef79d64a6061835669efbe6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386641"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procedura: Limitare la strumentazione a specifiche funzioni
 È possibile limitare la strumentazione e la raccolta dei dati a una o più funzioni impostando le opzioni nella pagina **Avanzate** di **Sessione prestazioni** o nelle pagine delle proprietà del file binario di destinazione:
@@ -27,7 +27,7 @@ ms.locfileid: "56620512"
   Questo tipo di limitazione della raccolta dei dati è supportato solo quando viene selezionato il metodo di profilatura della strumentazione.
 
 > [!NOTE]
->  È inoltre possibile usare la pagina **Avanzate** delle pagine delle proprietà di **Sessione prestazioni** per impostare le altre opzioni disponibili nello strumento di strumentazione da riga di comando [VSInstr](../profiling/vsinstr.md) disponibile negli strumenti di profilatura.
+> È inoltre possibile usare la pagina **Avanzate** delle pagine delle proprietà di **Sessione prestazioni** per impostare le altre opzioni disponibili nello strumento di strumentazione da riga di comando [VSInstr](../profiling/vsinstr.md) disponibile negli strumenti di profilatura.
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Per limitare la strumentazione a specifiche funzioni in una sessione di prestazioni
 
@@ -44,7 +44,7 @@ ms.locfileid: "56620512"
     `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace`**::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
-   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
+   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Per limitare la strumentazione a specifiche funzioni in un file binario
 
@@ -63,7 +63,7 @@ ms.locfileid: "56620512"
     `FuncSpec` è il nome dello spazio dei nomi e della funzione in questo formato `Namespace`**::**`FunctionName`. Usare un punto e virgola per separare più funzioni. Usare un asterisco (\*) per specificare un carattere jolly per uno o più caratteri. Ad esempio, **/include: MyNS::\\*** specifica tutte le funzioni nello spazio dei nomi MyNS.
 
    > [!NOTE]
-   >  Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
+   > Per elencare le funzioni in un file binario, aprire una finestra del prompt dei comandi nella directory di installazione degli strumenti di profilatura (vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e quindi digitare **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)

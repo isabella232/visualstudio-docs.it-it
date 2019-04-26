@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b47c3315236dc228d3c561c4a3e0f333f5c9600
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007093"
 ---
 # <a name="generateresource-task"></a>GenerateResource (attività)
 Converte file *TXT* e *RESX* (formato di risorsa basato su XML) in file binari *RESOURCES* di Common Language Runtime, che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file *TXT* o *RESX* in file *RESOURCES*. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).

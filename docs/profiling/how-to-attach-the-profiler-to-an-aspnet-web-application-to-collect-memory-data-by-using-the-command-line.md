@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439533"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e raccogliere dati sul numero e le dimensioni delle allocazioni di memoria .NET Framework. È anche possibile raccogliere dati sulla durata degli oggetti di memoria di .NET Framework.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
  Per raccogliere dati sulle prestazioni da un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], è necessario usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate nel computer che ospita l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. È quindi necessario riavviare il computer per configurare il server Web per la profilatura.
 
@@ -38,7 +38,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Le opzioni **/globalsamplegc** e **/globalsamplegclife** specificano il tipo di dati di memoria da raccogliere.
+   - Le opzioni **/globalsamplegc** e **/globalsamplegclife** specificano il tipo di dati di memoria da raccogliere.
 
         Specificare una sola delle opzioni seguenti.
 
@@ -47,7 +47,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
        |**/globalsamplegc**|Abilita la raccolta dei dati di allocazione della memoria.|
        |**/globalsamplegclife**|Abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.|
 
-   -   L'opzione **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati a livello di funzione.
+   - L'opzione **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati a livello di funzione.
 
 3. Riavviare il computer per impostare la nuova configurazione di ambiente.
 
@@ -64,7 +64,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
+   > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
    | Opzione | Description |
    | - | - |
@@ -74,7 +74,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl. |
-
 
 6. Avviare l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nel modo usuale.
 
@@ -91,7 +90,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|

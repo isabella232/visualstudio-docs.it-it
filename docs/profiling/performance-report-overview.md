@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432013"
 ---
 # <a name="performance-report-overview"></a>Panoramica del rapporto di prestazioni
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.
 
 > [!CAUTION]
->  Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione *vsp* che nel formato di esportazione in un file con estensione *csv* o *xml*.
+> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione *vsp* che nel formato di esportazione in un file con estensione *csv* o *xml*.
 >
->  Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione *etl*) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
+> Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione *etl*) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.
 
 ## <a name="performance-report-window"></a>Finestra Report prestazioni
  La finestra Rapporto di prestazioni fornisce gli strumenti per visualizzare, gestire e filtrare i dati sulle prestazioni e include un controllo query personalizzabile.
@@ -79,19 +79,19 @@ ms.locfileid: "56632875"
 ## <a name="customizable-filter-control"></a>Controllo filtro personalizzabile
  Il controllo filtro personalizzabile presenta le opzioni seguenti:
 
--   **Importa filtro**: recupera una query personalizzata precedentemente salvata.
+- **Importa filtro**: recupera una query personalizzata precedentemente salvata.
 
--   **Esporta filtro**: salva la query personalizzata nel percorso specificato.
+- **Esporta filtro**: salva la query personalizzata nel percorso specificato.
 
--   **Esegui query**: esegue la query come visualizzata nel controllo query personalizzato.
+- **Esegui query**: esegue la query come visualizzata nel controllo query personalizzato.
 
--   **Interrompi query**: interrompe l'esecuzione di una query in esecuzione. Questo pulsante non è disponibile se non è in esecuzione alcuna query.
+- **Interrompi query**: interrompe l'esecuzione di una query in esecuzione. Questo pulsante non è disponibile se non è in esecuzione alcuna query.
 
--   **Mostra query**: mostra/nasconde il controllo query personalizzato.
+- **Mostra query**: mostra/nasconde il controllo query personalizzato.
 
--   **Salva dati analizzati**: salva il rapporto con l'analisi corrente come file con estensione vsps.
+- **Salva dati analizzati**: salva il rapporto con l'analisi corrente come file con estensione vsps.
 
--   **Esporta**: salva il rapporto corrente come file in formato cvs o xml, con opzioni per salvare le diverse visualizzazioni.
+- **Esporta**: salva il rapporto corrente come file in formato cvs o xml, con opzioni per salvare le diverse visualizzazioni.
 
 ## <a name="see-also"></a>Vedere anche
 - [Analizzare i dati degli strumenti per le prestazioni](../profiling/analyzing-performance-tools-data.md)

@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431996"
 ---
 # <a name="pf"></a>PF
 L'opzione *PF* di **VSPerfCmd.exe** imposta l'evento di profilatura campionato sugli errori di pagina e modifica facoltativamente il numero di errori di pagina in un intervallo di campionamento dal valore predefinito di 10.
 
 > [!NOTE]
->  L'opzione **PF** non può essere usata in sistemi a 64 bit.
+> L'opzione **PF** non può essere usata in sistemi a 64 bit.
 
 **PF** può essere usata solo in una riga di comando che contiene anche l'opzione **Launch** o **Attach**.
 

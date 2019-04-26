@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f001b73b97723db177706b6625cbfa827bc2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386810"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procedura: Fare riferimento al nome o al percorso del file di progetto
 È possibile usare il nome o il percorso del progetto nel file di progetto senza dover creare una proprietà. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornisce proprietà riservate che fanno riferimento al nome file di progetto e altre proprietà relative al progetto. Per altre informazioni sulle proprietà riservate, vedere [Proprietà di MSBuild riservate e note](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -42,7 +42,7 @@ ms.locfileid: "56603183"
   Uno dei vantaggi dell'uso di una proprietà riservata è che eventuali modifiche apportate al nome file di progetto vengono incorporate automaticamente. La volta successiva in cui si compila il progetto, il file di output assumerà il nuovo nome senza nessuna altra azione da parte dell'utente.
 
 > [!NOTE]
->  Le proprietà riservate non possono essere ridefinite nel file di progetto.
+> Le proprietà riservate non possono essere ridefinite nel file di progetto.
 
 ## <a name="example"></a>Esempio
  Il file di progetto di esempio seguente fa riferimento al nome del progetto come proprietà riservata per specificare il nome per l'output.

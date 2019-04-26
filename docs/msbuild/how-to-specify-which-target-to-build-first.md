@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997369"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procedura: Specificare quale destinazione compilare per prima
 Un file di progetto può contenere uno o più elementi `Target` che definiscono come viene compilato il progetto. Il motore [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) compila il primo progetto che trova e le eventuali dipendenze, a meno che il file di progetto non contenga un attributo `DefaultTargets` o `InitialTargets` o non venga specificata una destinazione nella riga di comando usando l'opzione **-target**.
@@ -35,7 +35,7 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Per specificare più di una destinazione iniziale
 
--   Elencare le destinazioni iniziali, separate da punto e virgola, nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:
+- Elencare le destinazioni iniziali, separate da punto e virgola, nell'attributo `InitialTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,23 +52,22 @@ Un file di progetto può contenere uno o più elementi `Target` che definiscono 
 
 #### <a name="to-specify-more-than-one-default-target"></a>Per specificare più di una destinazione predefinita
 
--   Elencare le destinazioni predefinite, separate da punto e virgola, nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:
+- Elencare le destinazioni predefinite, separate da punto e virgola, nell'attributo `DefaultTargets` dell'elemento `Project`. Ad esempio, per eseguire la destinazione `Clean` e poi la destinazione `Compile`, digitare:
 
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Usare l'opzione -target
  Se nel file di progetto non è definita una destinazione predefinita o se non si vuole usare la destinazione predefinita, è possibile usare l'opzione della riga di comando **-target** per specificare un'altra destinazione. Vengono eseguite le destinazioni specificate con l'opzione **-target** invece delle destinazioni specificate dall'attributo `DefaultTargets`. Le destinazioni specificate nell'attributo `InitialTargets` vengono eseguite sempre per prime.
 
-
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Per usare per prima una destinazione diversa da quella predefinita
 
--   Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **-target**. Ad esempio:
+- Specificare la destinazione da usare per prima tramite l'opzione della riga di comando **-target**. Ad esempio:
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Per usare per prime più destinazioni diverse da quelle predefinite
 
--   Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **-target**. Ad esempio:
+- Elencare le destinazioni, separate da punto e virgola o virgola, usando l'opzione della riga di comando **-target**. Ad esempio:
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

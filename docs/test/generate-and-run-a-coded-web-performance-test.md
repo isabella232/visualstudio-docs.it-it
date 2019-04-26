@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002515"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generare ed eseguire un test delle prestazioni Web codificato
 
@@ -29,13 +29,13 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generare un test delle prestazioni Web codificato
 
-1.  Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Se non è stato creato un test delle prestazioni Web, vedere [Registrare un test delle prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Generare il test codificato.
+2. Generare il test codificato.
 
      ![Generare un test delle prestazioni Web codificato](../test/media/web_test_coded_generate.png)
 
-3.  Denominare il test.
+3. Denominare il test.
 
      ![Immettere un nome per il test prestazioni Web codificato](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
 
      È possibile vedere nel codice che il metodo GetRequestEnumerator() in C# o il metodo Run() in Visual Basic contiene ogni regola di convalida e ogni richiesta Web presente nel test ricodificato.
 
-4.  Per dimostrare l'aggiunta di codice semplice, scorrere alla fine del metodo e, dopo il codice relativo all'ultima richiesta Web, aggiungere il seguente codice:
+4. Per dimostrare l'aggiunta di codice semplice, scorrere alla fine del metodo e, dopo il codice relativo all'ultima richiesta Web, aggiungere il seguente codice:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ I test delle prestazioni Web vengono registrati tramite l'esplorazione dell'app 
     End If
     ```
 
-5.  Compilare la soluzione per verificare che il codice personalizzato venga compilato.
+5. Compilare la soluzione per verificare che il codice personalizzato venga compilato.
 
-6.  Eseguire il test.
+6. Eseguire il test.
 
      ![Eseguire il test delle prestazioni Web codificato](../test/media/web_test_coded_generate_run.png)
 

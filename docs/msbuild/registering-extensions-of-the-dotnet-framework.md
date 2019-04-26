@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf1eb0001ca7c8b87fa44b5ea861df9d9fcba84d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f1e780a67ee419a8cae661570802e5d85081f1fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445803"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>Registrare estensioni di .NET Framework
 È possibile sviluppare un assembly per estendere una versione specifica di .NET Framework. Per poter visualizzare l'assembly nella finestra di dialogo **Aggiungi riferimenti**, è necessario aggiungere la cartella che lo contiene al Registro di sistema.
@@ -27,7 +27,7 @@ ms.locfileid: "56644341"
  Registrare questa cartella usando la chiave: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**. Assegnare alla chiave questo valore predefinito: **C:\TreyResearch\Extensions4**.
 
 > [!NOTE]
->  Il numero di build della versione di .NET Framework potrebbe essere diverso.
+> Il numero di build della versione di .NET Framework potrebbe essere diverso.
 
  Per registrare un assembly a 32 bit su un computer a 64 bit, usare il nodo Wow6432, ad esempio: **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\**.
 

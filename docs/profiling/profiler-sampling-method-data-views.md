@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe65358318ee00d53345d6d61ee999e46c1ecd06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 622a088506fe913c834e7de8807dc167f6ab0fc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431983"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Visualizzazioni dei dati del metodo di campionamento del profiler
 Questa sezione contiene informazioni di riferimento per le visualizzazioni e i report dei file di dati del profiler generati tramite il metodo di campionamento.
 
 > [!NOTE]
->  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 - [Visualizzazione Riepilogo](../profiling/summary-view-sampling-data.md)

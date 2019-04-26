@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84fe30f4bddc410f580ccd94250591027e0f9887
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 7c3e79fdbadffadc188610523eeb505df0ffa15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412414"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
 Quando si compilano i progetti, spesso è necessario impostare le opzioni di compilazione usando informazioni non incluse nel file di progetto o nei file che costituiscono il progetto. Queste informazioni sono in genere archiviate nelle variabili di ambiente.
@@ -26,7 +26,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
  Tutte le variabili di ambiente sono disponibili per il file di progetto [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) come proprietà.
 
 > [!NOTE]
->  Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.
+> Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.
 
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Per usare una variabile di ambiente in un progetto MSBuild
 
@@ -38,12 +38,12 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>Per fornire un valore predefinito per una proprietà
 
--   Usare un attributo `Condition` in una proprietà per impostare il valore solo se la proprietà non ha un valore. Il codice seguente, ad esempio, imposta la proprietà `ToolsPath` su *c:\tools* solo se la variabile di ambiente `ToolsPath` non è impostata:
+- Usare un attributo `Condition` in una proprietà per impostare il valore solo se la proprietà non ha un valore. Il codice seguente, ad esempio, imposta la proprietà `ToolsPath` su *c:\tools* solo se la variabile di ambiente `ToolsPath` non è impostata:
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 
     > [!NOTE]
-    >  Per i nomi delle proprietà non viene rilevata la distinzione tra maiuscole e minuscole, quindi sia `$(ToolsPath)` che `$(TOOLSPATH)` fanno riferimento alla stessa proprietà o variabile di ambiente.
+    > Per i nomi delle proprietà non viene rilevata la distinzione tra maiuscole e minuscole, quindi sia `$(ToolsPath)` che `$(TOOLSPATH)` fanno riferimento alla stessa proprietà o variabile di ambiente.
 
 ## <a name="example"></a>Esempio
  Il file di progetto seguente usa variabili di ambiente per specificare il percorso delle directory.

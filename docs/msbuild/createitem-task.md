@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b8a3f7cfe9dea56ca7abc0f2e82506e3edef1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385907"
 ---
 # <a name="createitem-task"></a>CreateItem (attività)
 Inserisce elementi di input nelle raccolte di elementi. Questo consente di copiare gli elementi da un elenco all'altro.
 
 > [!NOTE]
->  Si tratta di un'attività deprecata. A partire da .NET Framework 3.5, è possibile posizionare i gruppi di elementi all'interno di elementi [Target](../msbuild/target-element-msbuild.md). Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
+> Si tratta di un'attività deprecata. A partire da .NET Framework 3.5, è possibile posizionare i gruppi di elementi all'interno di elementi [Target](../msbuild/target-element-msbuild.md). Per altre informazioni, vedere [Items](../msbuild/msbuild-items.md) (Elementi).
 
 ## <a name="attributes"></a>Attributi
  Nella tabella che segue vengono descritti i parametri dell'attività `CreateItem` .

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6acba17aca08b233dd80b7eb7ea9e385d907ffb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440251"
 ---
 # <a name="call-tree-view"></a>Visualizzazione albero delle chiamate
 La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di esecuzione della funzione usati nell'applicazione profilata. La radice dell'albero è il punto di ingresso nell'applicazione o nel componente. Per ogni nodo della funzione vengono elencate tutte le funzioni chiamate e i dati delle prestazioni delle chiamate di funzione.
@@ -36,7 +36,7 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
  La visualizzazione Albero delle chiamate può essere configurata per la riduzione del rumore limitando la quantità di dati presentati. Con la riduzione del rumore, i problemi di prestazioni nella visualizzazione sono più evidenti. Quando i problemi di prestazioni sono più facili da trovare anche l'analisi è più semplice. Per altre informazioni, vedere [Procedura: Configurare la riduzione del rumore nelle visualizzazioni report](../profiling/how-to-configure-noise-reduction-in-report-views.md).
 
 > [!NOTE]
->  Se la riduzione del rumore è configurata per visualizzare un avviso quando viene attivata, nel report viene visualizzata una barra informazioni.
+> Se la riduzione del rumore è configurata per visualizzare un avviso quando viene attivata, nel report viene visualizzata una barra informazioni.
 
  Per altre informazioni sulle definizioni delle colonne nella visualizzazione Albero delle chiamate, vedere gli argomenti seguenti:
 

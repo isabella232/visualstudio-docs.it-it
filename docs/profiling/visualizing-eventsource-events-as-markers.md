@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422099"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizzare eventi EventSource come marcatori
 Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource come marcatori ed è possibile controllare la modalità di visualizzazione dei marcatori. Per visualizzare i marcatori EventSource, registrare il GUID del provider ETW mediante la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Il visualizzatore di concorrenza usa convenzioni predefinite per rappresentare gli eventi EventSource come [marcatori di flag](../profiling/flag-markers.md), [marcatori di span](../profiling/span-markers.md) e [marcatori di messaggi](../profiling/message-markers.md). È possibile personalizzare la modalità di visualizzazione degli eventi EventSource aggiungendo campi personalizzati agli eventi. Per altre informazioni sui marcatori, vedere [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md). Per altre informazioni sugli eventi EventSource, vedere <xref:System.Diagnostics.Tracing>.
@@ -23,11 +23,11 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
 
 ### <a name="marker-type"></a>Tipo di marcatore
 
-1.  Gli eventi con [codice operativo](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.
+1. Gli eventi con [codice operativo](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.
 
-2.  Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](/windows/desktop/WES/defining-severity-levels) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.
+2. Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](/windows/desktop/WES/defining-severity-levels) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.
 
-3.  In tutti gli altri casi, l'evento viene considerato un messaggio.
+3. In tutti gli altri casi, l'evento viene considerato un messaggio.
 
 ### <a name="importance"></a>Importanza
  La tabella seguente illustra il mapping tra il livello di evento e l'importanza del marcatore.
@@ -91,7 +91,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
  Usare il campo cvSpanId, un valore int, per associare coppie di eventi. Il valore per ogni coppia di eventi di inizio/fine che rappresentano una sezione span deve essere univoco. In genere, per il codice simultaneo è necessario usare a questo scopo primitive di sincronizzazione, come <xref:System.Threading.Interlocked.Exchange%2A>, per garantire che la chiave (il valore usato per CvSpanID) sia corretta.
 
 > [!NOTE]
->  L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.
+> L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)

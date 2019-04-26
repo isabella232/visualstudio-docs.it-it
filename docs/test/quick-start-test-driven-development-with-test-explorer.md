@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002172"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Guida introduttiva: Sviluppo basato su test con Esplora test
 
@@ -57,7 +57,6 @@ Esplora test sostituisce le finestre di unit test presenti nelle versioni preced
 > [!IMPORTANT]
 > I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.
 
-
 > [!NOTE]
 > Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Installare framework di unit test di terze parti](install-third-party-unit-test-frameworks.md).
 
@@ -95,15 +94,15 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
 
 4. Generare il metodo dal test.
 
-   1.  Posizionare il cursore su `Rooter` e dal menu di scelta rapida scegliere **Genera** > **Nuovo tipo**.
+   1. Posizionare il cursore su `Rooter` e dal menu di scelta rapida scegliere **Genera** > **Nuovo tipo**.
 
-   2.  Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.
+   2. Nella finestra di dialogo **Genera nuovo tipo** , impostare **Progetto** con il progetto di libreria di classi. In questo esempio si tratta di `MyMath`.
 
-   3.  Posizionare il cursore su `SquareRoot` e dal menu di scelta rapida scegliere **Genera** > **Stub metodo**.
+   3. Posizionare il cursore su `SquareRoot` e dal menu di scelta rapida scegliere **Genera** > **Stub metodo**.
 
 5. Eseguire lo unit test.
 
-   1.  Dal menu **Test** scegliere **Esegui unit test** > **Tutti i test**.
+   1. Dal menu **Test** scegliere **Esegui unit test** > **Tutti i test**.
 
         La soluzione verrà compilata ed eseguita.
 
@@ -123,7 +122,7 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Dopo ogni modifica, tutti i test hanno esito positivo
 
-1.  In *MyMath\Rooter.cs* migliorare il codice di `SquareRoot`:
+1. In *MyMath\Rooter.cs* migliorare il codice di `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -132,7 +131,7 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
      }
     ```
 
-2.  In Esplora test scegliere **Esegui tutto**.
+2. In Esplora test scegliere **Esegui tutto**.
 
      Il codice verrà compilato e i test verranno eseguiti.
 
@@ -142,7 +141,7 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Aggiungere test per estendere l'intervallo degli input
 
-1.  Per assicurarsi che il codice venga eseguito in tutti i casi, aggiungere dei test che utilizzino una più vasta gamma di valori in input.
+1. Per assicurarsi che il codice venga eseguito in tutti i casi, aggiungere dei test che utilizzino una più vasta gamma di valori in input.
 
     > [!TIP]
     > Evitare di modificare i test esistenti che hanno avuto successo. Piuttosto, aggiungere nuovi test. Modificare i test esistenti solo in caso di variazione dei requisiti dell'utente. Questo criterio assicura che le funzionalità esistenti non vadano perse mentre si lavora per estendere il codice.
@@ -173,13 +172,13 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
     }
     ```
 
-2.  In Esplora test scegliere **Esegui tutto**.
+2. In Esplora test scegliere **Esegui tutto**.
 
      Il nuovo test ha esito negativo nonostante il primo test abbia comunque esito positivo.
 
      Per trovare il punto di errore, selezionare il test non superato e quindi nella parte inferiore di Esplora test, selezionare l'elemento più in alto della **Traccia dello stack**.
 
-3.  Controllare il metodo sottoposto al test per vedere quale potrebbe essere l'errore. Nella classe `MyMath.Rooter` riscrivere il codice:
+3. Controllare il metodo sottoposto al test per vedere quale potrebbe essere l'errore. Nella classe `MyMath.Rooter` riscrivere il codice:
 
     ```csharp
     public double SquareRoot(double input)
@@ -195,13 +194,13 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
     }
     ```
 
-4.  In Esplora test scegliere **Esegui tutto**.
+4. In Esplora test scegliere **Esegui tutto**.
 
      Ora entrambi i test avranno esito positivo.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Aggiungere test per i casi eccezionali
 
-1.  Aggiungere un test per gli input negativi:
+1. Aggiungere un test per gli input negativi:
 
     ```csharp
     [TestMethod]
@@ -220,15 +219,15 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
      }
     ```
 
-2.  In Esplora test scegliere **Esegui tutto**.
+2. In Esplora test scegliere **Esegui tutto**.
 
      Il metodo sottoposto al test entra in un ciclo e deve essere annullato manualmente.
 
-3.  Scegliere **Annulla**.
+3. Scegliere **Annulla**.
 
      Il test si interrompe dopo 10 secondi.
 
-4.  Correggere il codice del metodo:
+4. Correggere il codice del metodo:
 
     ```csharp
 
@@ -241,13 +240,13 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
     ...
     ```
 
-5.  In Esplora test scegliere **Esegui tutto**.
+5. In Esplora test scegliere **Esegui tutto**.
 
      Tutti i test avranno esito positivo.
 
 #### <a name="refactor-without-changing-tests"></a>Effettuare il refactoring senza modificare i test
 
-1.  Semplificare il codice, ma non modificare i test.
+1. Semplificare il codice, ma non modificare i test.
 
     > [!TIP]
     > Il *refactoring* è una modifica che consente di migliorare le prestazioni o rendere il codice più facile da comprendere. Non è concepito per modificare il comportamento del codice e pertanto i test non vengono modificati.
@@ -276,7 +275,7 @@ In questa procedura dettagliata viene illustrato come sviluppare un metodo testa
     }
     ```
 
-2.  Scegliere **Esegui tutto**.
+2. Scegliere **Esegui tutto**.
 
      Tutti i test hanno ancora esito positivo.
 

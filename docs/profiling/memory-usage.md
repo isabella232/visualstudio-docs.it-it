@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426655"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Misurare l'utilizzo della memoria in Visual Studio
 
@@ -41,48 +41,48 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="collect-memory-usage-data"></a>Raccogliere i dati sull'utilizzo della memoria
 
-1.  Aprire il progetto per cui si vuole eseguire il debug in Visual Studio e impostare un punto di interruzione nell'app in corrispondenza del punto in cui si vuole iniziare a esaminare l'utilizzo della memoria.
+1. Aprire il progetto per cui si vuole eseguire il debug in Visual Studio e impostare un punto di interruzione nell'app in corrispondenza del punto in cui si vuole iniziare a esaminare l'utilizzo della memoria.
 
     Se è presente un'area in cui si sospetta un problema di memoria, impostare il primo punto di interruzione prima che si verifichi tale problema.
 
     > [!TIP]
-    >  Poiché può essere difficile acquisire il profilo di memoria di un'operazione specifica quando l'app alloca e dealloca spesso la memoria, impostare punti di interruzione all'inizio e alla fine dell'operazione o eseguire i vari passaggi dell'operazione per trovare il punto esatto in cui l'utilizzo della memoria è cambiato.
+    > Poiché può essere difficile acquisire il profilo di memoria di un'operazione specifica quando l'app alloca e dealloca spesso la memoria, impostare punti di interruzione all'inizio e alla fine dell'operazione o eseguire i vari passaggi dell'operazione per trovare il punto esatto in cui l'utilizzo della memoria è cambiato.
 
-2.  Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare o dopo un problema di utilizzo sospetto della memoria.
+2. Impostare un secondo punto di interruzione alla fine della funzione o dell'area di codice da analizzare o dopo un problema di utilizzo sospetto della memoria.
 
-3.  La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
+3. La finestra **Strumenti di diagnostica** viene visualizzata automaticamente, a meno che non sia stata disattivata. Per visualizzare di nuovo la finestra, fare clic su **Debug** > **Finestre** > **Mostra strumenti di diagnostica**.
 
-4.  Scegliere **Utilizzo memoria** con l'impostazione **Seleziona strumenti** sulla barra degli strumenti.
+4. Scegliere **Utilizzo memoria** con l'impostazione **Seleziona strumenti** sulla barra degli strumenti.
 
      ![Mostra strumenti di diagnostica](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
+5. Fare clic su **Debug / Avvia debug** (o **Avvia** sulla barra degli strumenti o **F5**).
 
      Al termine del caricamento dell'applicazione viene visualizzato il riepilogo degli strumenti di diagnostica.
 
      ![Strumenti di diagnostica Scheda Riepilogo](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare gli snapshot in app native o in modalità mista, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando viene visualizzata la finestra **Strumenti di diagnostica**, scegliere la scheda **Utilizzo memoria** e quindi **Profilatura heap**.
+     > Poiché la raccolta di dati può influire sulle prestazioni di debug delle app native o in modalità mista, gli snapshot di memoria sono disattivati per impostazione predefinita. Per abilitare gli snapshot in app native o in modalità mista, avviare una sessione di debug (tasto di scelta rapida: **F5**). Quando viene visualizzata la finestra **Strumenti di diagnostica**, scegliere la scheda **Utilizzo memoria** e quindi **Profilatura heap**.
      >
      >  ![Abilita snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  Arrestare (tasto di scelta rapida: **MAIUSC**+**F5**) e riavviare il debug.
 
-6.  Per creare uno snapshot all'inizio della sessione di debug, scegliere **Crea snapshot** sulla barra degli strumenti di riepilogo **Utilizzo memoria**. Può essere utile impostare anche qui un punto di interruzione.
+6. Per creare uno snapshot all'inizio della sessione di debug, scegliere **Crea snapshot** sulla barra degli strumenti di riepilogo **Utilizzo memoria**. Può essere utile impostare anche qui un punto di interruzione.
 
     ![Crea snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  Per creare una linea di base per i confronti di memoria, si consiglia di creare uno snapshot all'inizio di una sessione di debug.
+     > Per creare una linea di base per i confronti di memoria, si consiglia di creare uno snapshot all'inizio di una sessione di debug.
 
-6.  Eseguire lo scenario in cui viene raggiunto il primo punto di interruzione.
+6. Eseguire lo scenario in cui viene raggiunto il primo punto di interruzione.
 
-7.  Quando il debugger viene messo in pausa in corrispondenza del primo punto di interruzione, scegliere **Crea snapshot** sulla barra degli strumenti di riepilogo **Utilizzo memoria**.
+7. Quando il debugger viene messo in pausa in corrispondenza del primo punto di interruzione, scegliere **Crea snapshot** sulla barra degli strumenti di riepilogo **Utilizzo memoria**.
 
-8.  Premere **F5** per eseguire l'applicazione fino al secondo punto di interruzione.
+8. Premere **F5** per eseguire l'applicazione fino al secondo punto di interruzione.
 
-9.  A questo punto, creare un altro snapshot.
+9. A questo punto, creare un altro snapshot.
 
      A questo punto, è possibile iniziare ad analizzare i dati.
 
@@ -93,9 +93,9 @@ Nelle righe della tabella di riepilogo Utilizzo memoria sono elencati gli snapsh
 
  Il nome delle colonne dipende dalla modalità di debug selezionata nelle proprietà del progetto: .NET, nativa o mista (nativa e .NET).
 
--   Le colonne **Oggetti (diff)** e **Allocazioni (diff)** visualizzano il numero di oggetti nella memoria .NET e nativa quando è stato creato lo snapshot.
+- Le colonne **Oggetti (diff)** e **Allocazioni (diff)** visualizzano il numero di oggetti nella memoria .NET e nativa quando è stato creato lo snapshot.
 
--   La colonna **Dimensioni heap (diff)** visualizza il numero di byte negli heap nativi e .NET
+- La colonna **Dimensioni heap (diff)** visualizza il numero di byte negli heap nativi e .NET
 
 Quando si eseguono più snapshot, le celle della tabella di riepilogo includono la modifica del valore tra lo snapshot della riga e lo snapshot precedente.
 
@@ -136,13 +136,13 @@ Per analizzare l'utilizzo della memoria, fare clic su uno dei collegamenti che c
 
  La **Visualizzazione Tipi** mostra il numero e la dimensione dei tipi dello snapshot.
 
--   Scegliere l'icona delle istanze (![Icona dell'istanza nella colonna Tipo di oggetto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.
+- Scegliere l'icona delle istanze (![Icona dell'istanza nella colonna Tipo di oggetto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) di un tipo selezionato per visualizzare le informazioni sugli oggetti del tipo selezionato nello snapshot.
 
      La visualizzazione **Istanze** mostra ogni istanza del tipo selezionato. La selezione di un'istanza consente di visualizzare lo stack di chiamate che ha comportato la creazione dell'istanza nel riquadro **Stack di chiamate allocazione** .
 
      ![Visualizzazione Istanze](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Scegliere **Visualizzazione stack** dall'elenco **Modalità di visualizzazione** per visualizzare lo stack di allocazione per il tipo selezionato.
+- Scegliere **Visualizzazione stack** dall'elenco **Modalità di visualizzazione** per visualizzare lo stack di allocazione per il tipo selezionato.
 
      ![Visualizzazione Stack](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
@@ -164,7 +164,7 @@ Il report di modifica aggiunge colonne (contrassegnate con **(Diff)**) al report
 
 [Analizzare CPU e memoria in fase di debug](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
-[Visual C++ Blog: Memory Profiling in Visual C++ 2015 (Blog di Visual C++: Profilatura della memoria in Visual C++ 2015)](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
+[Visual C++ Blog: Memory Profiling in Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/) (Blog di Visual C++: Profilatura della memoria in Visual C++ 2015)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
