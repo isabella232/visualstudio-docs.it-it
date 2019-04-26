@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: Configurazione degli amministratori per le sottoscrizioni cloud
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945822"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurare gli amministratori per le sottoscrizioni cloud di Visual Studio
 
@@ -45,7 +45,6 @@ Per aggiungere gli amministratori:
 Il sottoscrittore designato viene visualizzato al centro della pagina con il ruolo "Amministratore Accesso utenti".
 
 Il nuovo amministratore potrà ora accedere al [portale di gestione](https://manage.visualstudio.com), selezionare la stessa sottoscrizione di Azure usata per l'acquisto delle sottoscrizioni cloud dall'elenco nell'angolo superiore sinistro della pagina e iniziare a gestire le sottoscrizioni.
-
 
 > [!NOTE]
 > Se si visualizzano utenti con autorizzazioni per la modifica delle sottoscrizioni cloud dell'utente che l'utente stesso non ha impostato come amministratori, è possibile che tali utenti abbiano ruoli nella sottoscrizione di Azure sottostante che consentono loro la gestione delle sottoscrizioni. Tali ruoli includono: proprietario, collaboratore, amministratore dei servizi o coamministratore. Per altre informazioni, visitare [Billing management](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts) (Gestione della fatturazione).

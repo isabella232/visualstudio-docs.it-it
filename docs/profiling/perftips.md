@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797921"
 ---
 # <a name="perftips"></a>PerfTips
 Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di diagnostica** consentono di monitorare e analizzare le prestazioni dell'app durante il debug.
@@ -32,27 +32,27 @@ Il debugger di Visual Studio *PerfTips* e il debugger integrato **Strumenti di d
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
+- La sequenza temporale **Eventi di interruzione** contrassegnano i punti di interruzione che vengono eseguiti nella sessione di debug. Fare clic su un evento per selezionare l’elenco dei dettagli **Debugger** .
 
--   Il grafico **Utilizzo CPU** mostra la modifica di uso della CPU tra tutti i core di processori nella sessione di debug.
+- Il grafico **Utilizzo CPU** mostra la modifica di uso della CPU tra tutti i core di processori nella sessione di debug.
 
--   L’elenco **Eventi** del riquadro dettagli **Debugger** include gli elementi per ogni evento di interruzione.
+- L’elenco **Eventi** del riquadro dettagli **Debugger** include gli elementi per ogni evento di interruzione.
 
--   La colonna **Durata** di un evento di interruzione visualizza il tempo trascorso tra l'evento e il punto di interruzione precedente.
+- La colonna **Durata** di un evento di interruzione visualizza il tempo trascorso tra l'evento e il punto di interruzione precedente.
 
 ## <a name="turn-perftips-on-or-off"></a>Attivare o disattivare PerfTips
  Per abilitare o disabilitare PerfTips:
 
-1.  Scegliere **Opzioni** dal menu **Debug**.
+1. Scegliere **Opzioni** dal menu **Debug**.
 
-2.  Selezionare o deselezionare **Mostra il PerfTip relativo al tempo trascorso durante il debug**.
+2. Selezionare o deselezionare **Mostra il PerfTip relativo al tempo trascorso durante il debug**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Attivare o disattivare la finestra Strumenti di diagnostica
  Per attivare o disattivare la finestra Strumenti di diagnostica:
 
-1.  Scegliere **Opzioni** dal menu **Debug**.
+1. Scegliere **Opzioni** dal menu **Debug**.
 
-2.  Selezionare o deselezionare **Abilita Strumenti di diagnostica durante il debug**.
+2. Selezionare o deselezionare **Abilita Strumenti di diagnostica durante il debug**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Profilatura in Visual Studio](../profiling/index.md)

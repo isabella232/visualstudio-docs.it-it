@@ -7,24 +7,24 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810850"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
 App Center è uno strumento cruciale per il controllo delle app.
 
--  Compilare l'app, testarla su dispositivi reali e distribuirla ai tester beta automaticamente
--  Raccogliere segnalazioni di arresti anomali e dati analitici degli utenti, inclusi eventi personalizzati.
--  Aggiungere notifiche push all'app in pochi minuti
+- Compilare l'app, testarla su dispositivi reali e distribuirla ai tester beta automaticamente
+- Raccogliere segnalazioni di arresti anomali e dati analitici degli utenti, inclusi eventi personalizzati.
+- Aggiungere notifiche push all'app in pochi minuti
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 Iniziare a usare Visual Studio App Center è facile.
-1.  Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Accedere a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Individuare il riquadro di Visual Studio App Center e fare clic su **Inizia subito**.
     > [!div class="mx-imgBorder"]
@@ -48,13 +48,10 @@ Iniziare a usare Visual Studio App Center è facile.
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Included                                                            |Sì |
 | Visual Studio Dev Essentials | N/D  | Included                                                            |Sì |
 
-
 <sup>1</sup>  *Include:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), Imagine, Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD).*
-
 
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
-
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
@@ -62,15 +59,15 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>D:  viene visualizzato un messaggio di errore di browser non supportato.  Qual è il problema?
 R:  App Center richiede funzionalità aggiornate, che potrebbero non essere disponibili in alcuni browser meno recenti.  Se il browser non è supportato, seguire questa procedura:
-1.  Aprire un browser diverso, ad esempio Microsoft Edge o le versioni più recenti di Google Chrome, Firefox o Safari.
-2.  Connettersi a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ed effettuare l'accesso.
-3.  Fare clic sul collegamento **Inizia subito** nel riquadro di Visual Studio App Center.
+1. Aprire un browser diverso, ad esempio Microsoft Edge o le versioni più recenti di Google Chrome, Firefox o Safari.
+2. Connettersi a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) ed effettuare l'accesso.
+3. Fare clic sul collegamento **Inizia subito** nel riquadro di Visual Studio App Center.
 
 A questo punto dovrebbe essere possibile accedere al portale di App Center e creare l'account.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Serve aiuto con App Center?
+- Serve aiuto con App Center?
     - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/).
     - Vedere la [documentazione completa di App Center](/appcenter/)
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Dettagli sulle sottoscrizioni offerte tramite il programma Microsoft for Startups.
 searchscope: VS Subscription
 ms.openlocfilehash: 06bd2dac43adbfbbd48aad6fff796a3dbdd023ca
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007784"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>Sottoscrizioni di Visual Studio offerte alle startup
 Le startup qualificate che partecipano al programma Microsoft for Startups possono ottenere 5 [sottoscrizioni cloud mensili di Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/). Le sottoscrizioni sono le stesse disponibili in commercio, senza limitazioni o restrizioni speciali. Ogni sottoscrizione deve essere assegnata a un utente finale (ovvero l'utente con licenza) prima che l'utente possa eseguire Visual Studio ed essere riconosciuto come sottoscrittore di Visual Studio Enterprise in Azure DevOps Services.

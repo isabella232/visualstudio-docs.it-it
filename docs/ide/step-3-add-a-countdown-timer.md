@@ -8,41 +8,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430770"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.
 
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia
 
-1.  Aggiungere una variabile Integer denominata **timeLeft**, come nella procedura precedente. Il codice dovrebbe essere analogo al seguente.
+1. Aggiungere una variabile Integer denominata **timeLeft**, come nella procedura precedente. Il codice dovrebbe essere analogo al seguente.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
      A questo punto è necessario un metodo che conti effettivamente i secondi, ad esempio un timer, e generi un evento dopo il periodo di tempo specificato.
 
-2.  Nella finestra di progettazione spostare un controllo <xref:System.Windows.Forms.Timer> dalla categoria **Componenti** della **casella degli strumenti** nel modulo.
+2. Nella finestra di progettazione spostare un controllo <xref:System.Windows.Forms.Timer> dalla categoria **Componenti** della **casella degli strumenti** nel modulo.
 
      Il controllo viene visualizzato nell'area grigia nella parte inferiore della finestra di progettazione.
 
-3.  Nel form scegliere l'icona **timer1** appena aggiunta e impostarne la proprietà **Interval** su **1000**.
+3. Nel form scegliere l'icona **timer1** appena aggiunta e impostarne la proprietà **Interval** su **1000**.
 
      Poiché il valore di intervallo è espresso in millisecondi, un valore pari a 1000 fa sì che l'evento <xref:System.Windows.Forms.Timer.Tick> venga generato ogni secondo.
 
-4.  Nel modulo fare doppio clic sul controllo **Timer** o sceglierlo e quindi premere **INVIO**.
+4. Nel modulo fare doppio clic sul controllo **Timer** o sceglierlo e quindi premere **INVIO**.
 
      Viene visualizzato l'editor di codice contenente il metodo per il gestore dell'evento Tick appena aggiunto.
 
-5.  Aggiungere le istruzioni seguenti al metodo del nuovo gestore eventi.
+5. Aggiungere le istruzioni seguenti al metodo del nuovo gestore eventi.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -54,7 +54,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
      Si è appena aggiunta un'istruzione `if else`, che rappresenta il modo in cui si comunica ai programmi di prendere decisioni. Di seguito è riportato un esempio di istruzione `if else`.
 
     > [!NOTE]
-    >  L'esempio seguente viene fornito a scopo illustrativo; non aggiungerlo al progetto.
+    > L'esempio seguente viene fornito a scopo illustrativo; non aggiungerlo al progetto.
 
     ```vb
     If (something that your program will check) Then
@@ -88,14 +88,14 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
      Un controllo <xref:System.Windows.Forms.NumericUpDown> facilita l'immissione di numeri da parte degli esecutori del quiz ed è per questo motivo che si usa il controllo per le risposte ai problemi matematici. Tutte le risposte potenziali sono numeri interi compresi tra 0 e 100. Mantenendo i valori predefiniti per le proprietà **Minimum**, **Maximum** e **DecimalPlaces**, si evita che gli esecutori del quiz immettano numeri decimali, negativi o troppo alti. Se si desidera consentire agli esecutori del quiz di immettere 3,141 ma non 3,1415, è possibile impostare la proprietà **DecimalPlaces** su 3.
 
-6.  Aggiungere tre righe alla fine del metodo `StartTheQuiz()`, in modo che il codice sia analogo al seguente.
+6. Aggiungere tre righe alla fine del metodo `StartTheQuiz()`, in modo che il codice sia analogo al seguente.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      A questo punto, all'avvio del quiz la variabile **timeLeft** è impostata su 30 e la proprietà **Text** del controllo **timeLabel** è impostata su 30 secondi. Il metodo <xref:System.Windows.Forms.Timer.Start> del controllo Timer avvia quindi il conto alla rovescia. La risposta non viene ancora controllata. Ciò avverrà in seguito.
 
-7.  Salvare il programma, eseguirlo e scegliere il pulsante **Avvio** del form.
+7. Salvare il programma, eseguirlo e scegliere il pulsante **Avvio** del form.
 
      Il timer avvia il conto alla rovescia. Quando il tempo è scaduto, il quiz termina e viene visualizzata la risposta. Nella figura seguente viene illustrato il quiz in corso.
 
@@ -103,6 +103,6 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Aggiungere il metodo CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Creare un problema di addizione casuale](../ide/step-2-create-a-random-addition-problem.md).

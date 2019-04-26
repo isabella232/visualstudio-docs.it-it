@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420807"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Uso del vantaggio di Visual Studio 2019
 
 I sottoscrittori di Visual Studio hanno accesso all'ambiente IDE di Visual Studio.  La versione specifica dipende dal livello della sottoscrizione.  Il vantaggio viene visualizzato sotto forma di riquadro nella categoria Strumenti della pagina [Vantaggi](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del portale sottoscrittori.
-
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
@@ -56,8 +55,10 @@ Per scaricare l'ambiente IDE:
 14. Viene aperto Visual Studio. È tutto pronto per iniziare a usare Visual Studio.
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Iniziare a usare Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Idoneità
@@ -75,12 +76,10 @@ Per scaricare l'ambiente IDE:
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
-
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
-
 ## <a name="support-resources"></a>Risorse di supporto
--  Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
+- Se serve assistenza per l'IDE di Visual Studio, vedere queste risorse:
     - Supporto tecnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Documentazione](/visualstudio/)
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.

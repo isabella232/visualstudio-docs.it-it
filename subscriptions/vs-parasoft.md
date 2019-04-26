@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni su come attivare la sottoscrizione Parasoft Virtualize/SOA Test Professional inclusa nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947324"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Vantaggio Parasoft Virtualize/SOAtest Professional Desktop nelle sottoscrizioni di Visual Studio
 
 È possibile eseguire test più presto e più spesso  simulando il comportamento di applicazioni e sistemi in evoluzione non disponibili.  Il vantaggio include una sottoscrizione gratuita di sei mesi.  Al termine della sottoscrizione di sei mesi si ha diritto a uno sconto del 25% sul prezzo della sottoscrizione annuale.
-
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
@@ -30,7 +29,6 @@ ms.locfileid: "56844113"
 3. Verrà effettuato il reindirizzamento al sito Web Parasoft, in cui si creerà l'account.  È sufficiente specificare le informazioni di contatto e fare clic su **Submit** (Invia).
    > [!div class="mx-imgBorder"]
    > ![Creazione dell'account per il vantaggio Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Dopo che l'account è stato creato, viene visualizzata la notifica dell'invio di un messaggio di posta elettronica con le istruzioni per il download.  Se questo messaggio non compare nella posta in arrivo, ricordarsi di controllare la cartella Posta indesiderata.
 
@@ -83,14 +81,12 @@ ms.locfileid: "56844113"
 
 <sup>1</sup>  *Include: Microsoft Partner Network (Enterprise).  Non include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
-
 ## <a name="support-resources"></a>Risorse di supporto
--  Serve aiuto con i prodotti Parasoft?  Vedere queste risorse:
+- Serve aiuto con i prodotti Parasoft?  Vedere queste risorse:
     - Supporto tecnico:  https://www.parasoft.com/support/
     - Centro Risorse Parasoft:  https://www.parasoft.com/resources/
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

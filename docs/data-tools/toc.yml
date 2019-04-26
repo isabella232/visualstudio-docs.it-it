@@ -112,7 +112,7 @@
             - name: Salvare dati usando una transazione
               href: save-data-by-using-a-transaction.md
               items:
-                - name: 'Procedura dettagliata: Salvare dati in una transazione'
+                - name: 'Procedura dettagliata: Salvare i dati in una transazione'
                   href: save-data-in-a-transaction.md
             - name: Salvare dati in un database (a più tabelle)
               href: save-data-to-a-database-multiple-tables.md

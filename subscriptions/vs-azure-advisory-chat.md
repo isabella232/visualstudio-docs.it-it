@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio di Azure Advisory Chat incluso nelle sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809100"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -49,14 +49,13 @@ L'uso di Azure Advisory Chat è semplice.
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
-
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>D:  qual è la differenza tra Azure Advisory Chat e Azure Advisor?
--  R:  Azure Advisory Chat è un servizio di chat in tempo reale che offre assistenza per domande relative ad Azure. [Azure Advisor](/azure/advisor/advisor-overview) è un consulente nel cloud personalizzato che offre supporto per adottare le procedure ottimali per l'ottimizzazione delle distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo, quindi consiglia soluzioni per migliorare economicità, prestazioni, disponibilità elevata e sicurezza delle risorse di Azure.
+- R:  Azure Advisory Chat è un servizio di chat in tempo reale che offre assistenza per domande relative ad Azure. [Azure Advisor](/azure/advisor/advisor-overview) è un consulente nel cloud personalizzato che offre supporto per adottare le procedure ottimali per l'ottimizzazione delle distribuzioni di Azure. Analizza la configurazione delle risorse e i dati di telemetria sull'utilizzo, quindi consiglia soluzioni per migliorare economicità, prestazioni, disponibilità elevata e sicurezza delle risorse di Azure.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
