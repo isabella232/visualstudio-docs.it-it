@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443186"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787076"
 Progettazione classi supporta le classi C++ e visualizza classi C++ native in modo analogo alle forme classe Visual Basic e Visual C#, con la differenza che le classi C++ possono avere relazioni di ereditarietà multipla. È possibile espandere la forma classe in modo da visualizzare più campi e metodi nella classe o comprimerla per risparmiare spazio.  
   
 > [!NOTE]
->  Progettazione classi non supporta le unioni, un tipo speciale di classe in cui la memoria allocata corrisponde solo alla quantità necessaria per il membro dati più grande dell'unione.  
+> Progettazione classi non supporta le unioni, un tipo speciale di classe in cui la memoria allocata corrisponde solo alla quantità necessaria per il membro dati più grande dell'unione.  
   
 ## <a name="simple-inheritance"></a>Ereditarietà semplice  
  Quando si trascina più di una classe su un diagramma classi, le classi che presentano una relazione di ereditarietà di classe sono connesse con una freccia che punta nella direzione della classe di base. Ad esempio, quando vengono visualizzate in un diagramma classi, le classi seguenti sono connesse con una freccia che parte da B e arriva ad A:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Facendo clic con il pulsante destro del mouse su una forma classe e scegliendo **Mostra classi base** vengono visualizzate le classi di base per la classe selezionata.  
   
 > [!NOTE]
->  Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.  
+> Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.  
   
  Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

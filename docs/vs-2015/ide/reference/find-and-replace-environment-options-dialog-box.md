@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 305a19ed08c58d6858c95a3f1109cdf4877d848f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437173"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Trova e sostituisci, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59661764"
 Tramite questa pagina della finestra di **Opzioni** è possibile controllare le caselle dei messaggi e altri aspetti di un'operazione di ricerca e sostituzione. È possibile accedere a questa finestra di dialogo dal menu **Strumenti** facendo clic su **Opzioni**, espandendo **Ambiente** e facendo clic su **Trova e sostituisci**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  
   
 > [!NOTE]
->  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Mostra messaggi informativi**  
@@ -39,7 +39,7 @@ Tramite questa pagina della finestra di **Opzioni** è possibile controllare le 
  Dopo aver deselezionato l'opzione **Visualizza sempre questo messaggio** per alcuni, ma non tutti i messaggi informativi **Trova e sostituisci**, la casella di controllo **Mostra messaggi informativi** appare compilata ma non selezionata. Per ripristinare tutti i messaggi relativi a **Trova e sostituisci** opzionali, deselezionare questa opzione, quindi selezionarla nuovamente.  
   
 > [!NOTE]
->  Questa opzione non riguarda alcun messaggio informativo relativo alle operazioni **Trova e sostituisci** che non visualizza l'opzione **Visualizza sempre questo messaggio**.  
+> Questa opzione non riguarda alcun messaggio informativo relativo alle operazioni **Trova e sostituisci** che non visualizza l'opzione **Visualizza sempre questo messaggio**.  
   
  **Mostra messaggi di avviso**  
  Selezionare questa opzione per visualizzare tutti i messaggi di avviso relativi alle operazioni Trova e sostituisci caratterizzati dall'opzione **Visualizza sempre questo messaggio**. Ad esempio, se si sceglie di non visualizzare il messaggio di avviso **Sostituisci tutto** quando si vuole eseguire una sostituzione nei file non attualmente aperti per la modifica, selezionando questa opzione viene nuovamente visualizzato questo messaggio di avviso quando si tenta di sostituire tutto.  
@@ -49,7 +49,7 @@ Tramite questa pagina della finestra di **Opzioni** è possibile controllare le 
  Dopo aver deselezionato l'opzione **Visualizza sempre questo messaggio** per alcuni, ma non tutti i messaggi di avviso relativi a **Trova e sostituisci**, la casella di controllo **Mostra messaggi di avviso** appare compilata ma non selezionata. Per ripristinare tutti i messaggi relativi a **Trova e sostituisci** opzionali, deselezionare questa opzione, quindi selezionarla nuovamente.  
   
 > [!NOTE]
->  Questa opzione non riguarda alcun messaggio di avviso relativo alle operazioni **Trova e sostituisci** che non visualizza l'opzione **Visualizza sempre questo messaggio**.  
+> Questa opzione non riguarda alcun messaggio di avviso relativo alle operazioni **Trova e sostituisci** che non visualizza l'opzione **Visualizza sempre questo messaggio**.  
   
  **Inserisci automaticamente il testo dell'editor nella casella Trova**  
  Selezionare questa opzione per incollare il testo su entrambi i lati del punto di inserimento dell'editor corrente nel campo **Find what** (Trova) quando si seleziona una delle visualizzazioni della finestra **Trova e sostituisci** dal menu **Modifica**. Deselezionare questa opzione per utilizzare l'ultimo criterio della ricerca precedente, come la stringa **Trova**.  

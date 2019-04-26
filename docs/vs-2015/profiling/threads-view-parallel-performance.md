@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441662"
 ---
 # <a name="threads-view-parallel-performance"></a>Visualizzazione Thread (prestazioni in parallelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ La visualizzazione Thread è la visualizzazione più dettagliata e ricca di funz
  Quando si seleziona un punto in un segmento di esecuzione, il visualizzatore di concorrenza cerca tale punto nel tempo nello stack di chiamate rilevante e quindi visualizza un cursore nero sopra il punto selezionato nel segmento di esecuzione e lo stesso stack di chiamate viene visualizzato nella scheda **Stack corrente**. È possibile selezionare più punti nel segmento di esecuzione.  
   
 > [!NOTE]
->  Il visualizzatore di concorrenza potrebbe non essere in grado di risolvere una selezione in un segmento di esecuzione. In genere, ciò si verifica quando la durata del segmento è inferiore a un millisecondo.  
+> Il visualizzatore di concorrenza potrebbe non essere in grado di risolvere una selezione in un segmento di esecuzione. In genere, ciò si verifica quando la durata del segmento è inferiore a un millisecondo.  
   
  Per ottenere un profilo di esecuzione per tutti i thread abilitati (non nascosti) nell'intervallo di tempo attualmente selezionato, scegliere il pulsante **Esecuzione** nella legenda attiva.  
   

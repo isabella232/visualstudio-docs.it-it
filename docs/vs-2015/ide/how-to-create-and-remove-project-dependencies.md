@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422866"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procedura: creare e rimuovere dipendenze di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
     Viene visualizzata la finestra di dialogo **Dipendenze progetto**.  
   
    > [!NOTE]
-   >  L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
+   > L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
   
 3. Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
   
@@ -56,7 +56,7 @@ Quando si compila una soluzione che contiene più progetti, può essere necessar
      Viene visualizzata la finestra di dialogo **Dipendenze progetto**.  
   
     > [!NOTE]
-    >  L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
+    > L'opzione **Dipendenze progetto** è disponibile solo in una soluzione con più progetti.  
   
 3. Nella scheda **Dipendenze** selezionare un progetto dal menu a discesa **Progetto**.  
   

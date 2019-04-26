@@ -48,12 +48,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9787342709ba9b09ac533177fd6600b9e5c86a0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b33fb6408bc9d37d7f0c94af9253a1ce9879235a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441317"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "59669003"
 Questa finestra di dialogo consente di modificare le impostazioni globali di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Code e dell'editor di testo. Per visualizzare questa finestra di dialogo, fare clic su **Opzioni** nel menu **Strumenti**, espandere la cartella **Editor di testo** e quindi fare clic su **Generale**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Impostazioni  
  Trascina la selezione  

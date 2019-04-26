@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403452"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
      Quando si apre l'Adorner di un margine e il margine opposto non è impostato, questo viene impostato sul valore corretto in base alla posizione dell'elemento nella tavola da disegno. Per i margini opposti, come **Sinistro** e **Destro**, è sempre impostata almeno una proprietà.  
   
     > [!IMPORTANT]
-    >  Gli elementi inseriti in alcuni contenitori di layout, ad esempio <xref:Windows.UI.Xaml.Controls.Canvas>, non dispongono di strumenti decorativi del margine. Gli elementi inseriti in un oggetto <xref:Windows.UI.Xaml.Controls.StackPanel> dispongono di strumenti decorativi del margine per i margini sinistro e destro oppure per quelli superiore e inferiore, in base all'orientamento di `StackPanel`.  
+    > Gli elementi inseriti in alcuni contenitori di layout, ad esempio <xref:Windows.UI.Xaml.Controls.Canvas>, non dispongono di strumenti decorativi del margine. Gli elementi inseriti in un oggetto <xref:Windows.UI.Xaml.Controls.StackPanel> dispongono di strumenti decorativi del margine per i margini sinistro e destro oppure per quelli superiore e inferiore, in base all'orientamento di `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Raggruppamento e separazione di elementi  
  Se si raggruppano due o più elementi nella finestra di progettazione XAML, viene creato un nuovo contenitore di layout in cui vengono inseriti gli elementi raggruppati. Il posizionamento di due o più elementi nello stesso contenitore di layout semplifica le operazioni di selezione, spostamento e trasformazione del gruppo, in quanto gli elementi al suo interno possono essere gestiti come se fossero un solo elemento. Il raggruppamento è utile anche per identificare gli elementi in qualche modo correlati, ad esempio i pulsanti che compongono un elemento di navigazione. Quando si separano gli elementi, si elimina semplicemente il contenitore di layout nel quale erano posizionati.  
@@ -106,7 +106,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
 2. Fare clic con il pulsante destro del mouse sugli elementi selezionati, scegliere **Raggruppa** e fare clic sul tipo di contenitore di layout in cui si vuole inserire il gruppo.  
   
     > [!TIP]
-    >  Se si seleziona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> per raggruppare gli elementi, questi vengono inseriti in un nuovo pannello <xref:Windows.UI.Xaml.Controls.Grid> all'interno di <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se separi gli elementi in uno di questi contenitori di layout, viene eliminato solo <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>, non il pannello <xref:Windows.UI.Xaml.Controls.Grid>. Per eliminare il pannello `Grid`, separa nuovamente gli elementi.  
+    > Se si seleziona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> per raggruppare gli elementi, questi vengono inseriti in un nuovo pannello <xref:Windows.UI.Xaml.Controls.Grid> all'interno di <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se separi gli elementi in uno di questi contenitori di layout, viene eliminato solo <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>, non il pannello <xref:Windows.UI.Xaml.Controls.Grid>. Per eliminare il pannello `Grid`, separa nuovamente gli elementi.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Per separare gli elementi ed eliminare il layout  
   

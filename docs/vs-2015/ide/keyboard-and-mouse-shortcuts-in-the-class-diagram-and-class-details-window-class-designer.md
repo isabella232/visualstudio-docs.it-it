@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412250"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60113014"
 ## <a name="KeyboardClassDetails"></a> Uso della tastiera nella finestra Dettagli classe  
   
 > [!NOTE]
->  Le seguenti combinazioni di tasti sono state scelte specificamente per riprodurre l'operazione di digitazione di codice.  
+> Le seguenti combinazioni di tasti sono state scelte specificamente per riprodurre l'operazione di digitazione di codice.  
   
  Per spostarsi nella finestra Dettagli classe, usare i seguenti tasti:  
   

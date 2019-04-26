@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433085"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procedura: Installare una versione specifica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Il programma di installazione di Visual Studio viene aggiornato spesso in modo d
 |Visual Studio Enterprise (RTM originale, senza aggiornamenti)|Visual Studio Enterprise RTM (disponibile nella [pagina di download per i titolari di abbonamenti MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|L'installazione di Visual Studio userà il file feed.xml disponibile al momento del rilascio della versione RTM|
 
 > [!IMPORTANT]
->  In base alla lingua da usare, sostituire "enu" (per inglese) con uno dei valori seguenti:
+> In base alla lingua da usare, sostituire "enu" (per inglese) con uno dei valori seguenti:
 >
 > - chs (per cinese (semplificato))
 >   - cht (per cinese (tradizionale))

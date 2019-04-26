@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416837"
 ---
 # <a name="how-to-customize-search-results"></a>Procedura: Personalizzare i risultati della ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Esistono vari modi per personalizzare la visualizzazione dei risultati della ric
  I contenuti della documentazione possono essere in lingue diversa dall'inglese. È possibile limitare i risultati della ricerca ai contenuti in una determinata lingua e includere contenuti in inglese che corrispondono alla query di ricerca.  
   
 > [!WARNING]
->  Questa funzionalità è abilitata solo se la lingua principale del contenuto installato non è l'inglese.  
+> Questa funzionalità è abilitata solo se la lingua principale del contenuto installato non è l'inglese.  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Per includere contenuto in lingua inglese e contenuto in un'altra lingua  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428100"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Salvataggio ed esportazione dei dati degli strumenti per le prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Questo argomento descrive come salvare ed esportare i file di dati delle prestaz
  È possibile esportare una o più visualizzazioni di report da un file di dati di profilatura con estensione vsp o vsps come file delimitato da virgole o file XML. Filtrare i dati nella finestra di visualizzazione report prima dell'esportazione o esportare le visualizzazioni di report dell'intero file di dati dalla finestra **Esplora prestazioni** .  
   
 > [!NOTE]
->  È anche possibile copiare e incollare le righe selezionate dalla finestra di visualizzazione report come valori separati da tabulazioni.  
+> È anche possibile copiare e incollare le righe selezionate dalla finestra di visualizzazione report come valori separati da tabulazioni.  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Per esportare un report di prestazioni analizzato dalla finestra Esplora prestazioni  
   

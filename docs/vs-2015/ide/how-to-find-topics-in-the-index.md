@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416823"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Procedura: Trovare argomenti nell'indice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ L'indice contiene un elenco di parole chiave associate agli argomenti del conten
       Facendo clic sul pulsante di filtro sopra la scheda, è possibile visualizzare tutte le voci che contengono il testo specificato o solo le voci che iniziano con il testo specificato.  
   
      > [!NOTE]
-     >  Quando il pulsante di filtro viene visualizzato su uno sfondo più scuro con un bordo, le voci devono contenere il testo specificato. Se bordo e sfondo non sono visualizzati , le voci devono iniziare con il testo specificato.  
+     > Quando il pulsante di filtro viene visualizzato su uno sfondo più scuro con un bordo, le voci devono contenere il testo specificato. Se bordo e sfondo non sono visualizzati , le voci devono iniziare con il testo specificato.  
   
    - Scorrere l'indice e scegliere una parola chiave.  
   

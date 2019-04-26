@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433021"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Procedura: eseguire l'aggiornamento da una versione di valutazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069900"
  Ad esempio, se si scarica e si usa [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] per 10 giorni, quindi lo si registra, sarà possibile usarlo per altri 80 giorni. Per continuare a usare il prodotto dopo i 90 giorni, è necessario specificare un codice Product Key valido oppure accedere a Visual Studio con un account Microsoft o aziendale, associato a una sottoscrizione MSDN o Visual Studio Online. Per informazioni su come individuare oppure ottenere un codice Product Key, vedere [Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) e [Modalità di acquisto di Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
 
 > [!IMPORTANT]
->  Anche per le versioni di rilascio delle edizioni Express di Visual Studio il periodo di valutazione è di 30 giorni. Per estendere definitivamente il periodo di valutazione per le edizioni Express di Visual Studio, accedere a Visual Studio o registrare il prodotto.
+> Anche per le versioni di rilascio delle edizioni Express di Visual Studio il periodo di valutazione è di 30 giorni. Per estendere definitivamente il periodo di valutazione per le edizioni Express di Visual Studio, accedere a Visual Studio o registrare il prodotto.
 
  Prima di eseguire l'aggiornamento, è consigliabile scaricare e leggere il [white paper sulla gestione delle licenze di Visual Studio e MSDN](http://www.microsoft.com/download/details.aspx?id=13350) del sito Web Microsoft. Per ulteriore assistenza, vedere [Supporto per Visual Studio](http://support.microsoft.com/ph/1117/en-us).
 
@@ -41,7 +41,7 @@ ms.locfileid: "60069900"
 4. Immettere un codice Product Key valido e quindi scegliere il pulsante **Applica**.
 
     > [!NOTE]
-    >  È necessario l'accesso a Internet per registrare e sbloccare qualsiasi edizione di Visual Studio. Una volta registrato Visual Studio, tuttavia, la connessione a Internet è facoltativa.
+    > È necessario l'accesso a Internet per registrare e sbloccare qualsiasi edizione di Visual Studio. Una volta registrato Visual Studio, tuttavia, la connessione a Internet è facoltativa.
 
 ## <a name="see-also"></a>Vedere anche
  [Installare Visual Studio](../install/install-visual-studio-2015.md) [Accesso a Visual Studio](../ide/signing-in-to-visual-studio.md) [Procedura: Individuare il codice Product Key di Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Individuare o modificare il codice Product Key di Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

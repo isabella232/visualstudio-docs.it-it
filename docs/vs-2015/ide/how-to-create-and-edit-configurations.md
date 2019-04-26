@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422896"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedura: creare e modificare le configurazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Per una soluzione è possibile creare diverse configurazioni della build. È pos
 - In **Esplora soluzioni** aprire il menu di scelta rapida per la soluzione e quindi scegliere **Configuration Manager**.  
   
   > [!NOTE]
-  >  Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se neanche questo viene visualizzato, sulla barra dei menu scegliere **Strumenti**, **Opzioni**e quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, **Generale**e nel riquadro di destra selezionare la casella di controllo **Mostra configurazioni della build avanzate**.  
+  > Se il comando **Configuration Manager** non viene visualizzato nel menu di scelta rapida, cercare il menu **Compilazione** nella barra dei menu. Se neanche questo viene visualizzato, sulla barra dei menu scegliere **Strumenti**, **Opzioni**e quindi nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, **Generale**e nel riquadro di destra selezionare la casella di controllo **Mostra configurazioni della build avanzate**.  
   
    Nella finestra di dialogo **Configuration Manager** è possibile usare l'elenco a discesa **Configurazione soluzione attiva** per selezionare una configurazione della build, modificarne una esistente o crearne una nuova. È possibile usare l'elenco a discesa **Piattaforma soluzione attiva** per selezionare la piattaforma di destinazione della configurazione, modificarne una esistente oppure aggiungerne una nuova. Il riquadro **Contesti progetto** elenca i progetti all'interno della soluzione. Per ogni progetto è possibile selezionare una configurazione e una piattaforma specifiche per il progetto, modificarne alcune esistenti o crearne di nuove. Per ogni progetto è anche disponibile una casella di controllo che è possibile selezionare per includere il progetto quando si usa la configurazione a livello di soluzione per compilare o distribuire la soluzione stessa.  
   

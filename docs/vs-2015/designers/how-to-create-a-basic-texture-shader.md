@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438440"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procedura: Creare uno shader con trama di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un cubo.  
   
 > [!NOTE]
->  In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.  
+> In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.  
   
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

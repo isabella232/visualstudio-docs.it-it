@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412263"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatori logici nelle espressioni di ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760070"
 Con gli operatori logici è possibile limitare la ricerca di contenuto mediante la creazione di espressioni di ricerca più complesse partendo da quelle più semplici. Come illustrato nella tabella seguente, gli operatori logici specificano in che modo più termini di ricerca debbano essere combinati in una query di ricerca.  
   
 > [!IMPORTANT]
->  Per essere riconosciuti dal motore di ricerca, gli operatori logici devono essere immessi interamente in lettere maiuscole.  
+> Per essere riconosciuti dal motore di ricerca, gli operatori logici devono essere immessi interamente in lettere maiuscole.  
   
 |Per cercare|Usa|Esempio|Risultato|  
 |-------------------|---------|-------------|------------|  

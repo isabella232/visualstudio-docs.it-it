@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d4895da5247cbfba2263b3b298850086ed16c9b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 243d5fada7342bc05d8768a7e33cca6f55e309ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442470"
 ---
 # <a name="pf"></a>PF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54761443"
 L'opzione **PF** di VSPerfCmd.exe imposta l'evento di profilatura campionato per gli errori di pagina e modifica facoltativamente il numero di cicli in un intervallo di campionamento dal valore predefinito di 10.  
   
 > [!NOTE]
->  L'opzione PF non può esser usata in sistemi a 64 bit.  
+> L'opzione PF non può esser usata in sistemi a 64 bit.  
   
  Si noti che l'opzione **PF** non è supportata nei computer a 64 bit. L'opzione **PF** può essere usata solo in una riga di comando che contiene anche l'opzione **Launch** o l'opzione **Attach**.  
   

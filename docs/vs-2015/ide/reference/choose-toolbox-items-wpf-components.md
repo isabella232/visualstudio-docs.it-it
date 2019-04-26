@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433692"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.  
   
   > [!TIP]
-  >  Per aggiungere un'istanza di un controllo WPF a un documento del progetto aperto per la modifica, trascinare l'icona della **casella degli strumenti** corrispondente nell'area di visualizzazione Progettazione. Il codice e il markup predefiniti del componente vengono inseriti nel progetto e sono pronti per la modifica. Per altre informazioni, vedere [Procedura: gestire la finestra della casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Per aggiungere un'istanza di un controllo WPF a un documento del progetto aperto per la modifica, trascinare l'icona della **casella degli strumenti** corrispondente nell'area di visualizzazione Progettazione. Il codice e il markup predefiniti del componente vengono inseriti nel progetto e sono pronti per la modifica. Per altre informazioni, vedere [Procedura: gestire la finestra della casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Quando la casella di controllo accanto a un componente viene deselezionata, l'icona corrispondente viene rimossa dalla **casella degli strumenti**.  
   
   > [!NOTE]
-  >  I componenti .NET Framework installati sul computer restano disponibili anche se le icone corrispondenti non sono visualizzate nella **casella degli strumenti**.  
+  > I componenti .NET Framework installati sul computer restano disponibili anche se le icone corrispondenti non sono visualizzate nella **casella degli strumenti**.  
   
   Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:  
   

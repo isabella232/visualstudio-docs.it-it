@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419745"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altr
  La **Casella degli strumenti** visualizza solo gli elementi appropriati per il tipo di file che si sta usando. È possibile cercare all'interno della casella degli strumenti per restringere ulteriormente gli elementi visualizzati. Se il progetto richiede un controllo non supportato dal profilo client, è possibile impostare il progetto per l'intero framework di destinazione modificando le proprietà del progetto.  
   
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Guida sulle schede della casella degli strumenti  
  I documenti seguenti includono altre informazioni su specifiche schede della **Casella degli strumenti**.  

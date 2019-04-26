@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec8cefeaf005c17ecb09d109c161b5cbae3dc03a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425873"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Scrittura di logger compatibili con più processori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  I due nomi di logger nell'opzione `/dl` devono essere separati da un asterisco (*).  
+> I due nomi di logger nell'opzione `/dl` devono essere separati da un asterisco (*).  
   
  L'uso di ConfigurableForwardingLogger è simile all'uso di qualsiasi altro logger, come descritto in [Recupero di log di compilazione](../msbuild/obtaining-build-logs-with-msbuild.md), ad eccezione del fatto che si allega il logger ConfigurableForwardingLogger anziché il tipico logger [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e si specificano come parametri gli eventi che ConfigurableForwardingLogger deve passare al nodo centrale.  
   

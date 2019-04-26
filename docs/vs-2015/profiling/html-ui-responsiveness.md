@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438378"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
 4. Facoltativamente, puoi aggiungere contrassegni utente al codice usando [Contrassegnare il codice per l'analisi](#ProfileMark).  
   
     > [!TIP]
-    >  I contrassegni utente consentono di identificare il problema relativo alla velocità di risposta quando si visualizzano i dati del profiler. Ad esempio, puoi aggiungere un contrassegno utente all'inizio e alla fine di una sezione di codice che causa un problema di velocità di risposta.  
+    > I contrassegni utente consentono di identificare il problema relativo alla velocità di risposta quando si visualizzano i dati del profiler. Ad esempio, puoi aggiungere un contrassegno utente all'inizio e alla fine di una sezione di codice che causa un problema di velocità di risposta.  
   
 5. Esegui il profiler ella velocità di risposta dell'interfaccia utente seguendo le istruzioni della sezione precedente.  
   
@@ -127,7 +127,7 @@ Questo argomento descrive come isolare i problemi di prestazioni nelle app usand
     - Altri eventi specificati in [Profiler event reference](#ProfilerEvents).  
   
     > [!TIP]
-    >  La maggior parte delle informazioni utili del profiler viene visualizzato nel grafico dei dettagli della sequenza temporale.  
+    > La maggior parte delle informazioni utili del profiler viene visualizzato nel grafico dei dettagli della sequenza temporale.  
   
 12. Con un'area selezionata nel grafico di utilizzo della CPU o della velocità effettiva visuale (FPS), scegli **Zoom avanti** (il pulsante o il menu di scelta rapida) per ottenere informazioni più dettagliate. La sequenza temporale del grafico cambia per visualizzare solo il periodo di tempo selezionato.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  La descrizione dell'evento compare come descrizione comando quando posizioni il puntatore del mouse sul contrassegno utente. Puoi aggiungere tutti i contrassegni utente necessari.  
   
 > [!NOTE]
->  Anche`console.timeStamp`, un comando Chrome, è visualizzato come contrassegno utente.  
+> Anche`console.timeStamp`, un comando Chrome, è visualizzato come contrassegno utente.  
   
  La figura seguente mostra il righello di diagnostica con un unico contrassegno utente e la relativa descrizione comando.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  Il grafico dell'utilizzo della CPU mostra la quantità di tempo trascorso in tutti i thread dell'app, combinando i valori di utilizzo per una o più CPU in un singolo valore percentuale. Il valore di utilizzo della CPU può superare il 100% quando sono in uso più CPU.  
   
 > [!NOTE]
->  L'utilizzo della GPU non compare nel grafico.  
+> L'utilizzo della GPU non compare nel grafico.  
   
  Questo esempio mostra l'aspetto del grafico relativo all'utilizzo della CPU:  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  Il grafico mostra anche il lavoro del thread UI e il lavoro dei thread in background che possono contribuire a rallentare gli aggiornamenti visivi. Il grafico non mostra il lavoro della compilazione JIT JavaScript, il lavoro asincrono della GPU, il lavoro eseguito all'esterno del processo host (ad esempio per RuntimeBroker.exe e dwm.exe) o il lavoro per le aree di Windows Runtime che non sono ancora state instrumentate per la profilatura (come le operazioni di I/O del disco).  
   
 > [!TIP]
->  Quando si verifica un evento in un thread in background, l'ID thread viene visualizzato tra parentesi accanto al nome dell'evento.  
+> Quando si verifica un evento in un thread in background, l'ID thread viene visualizzato tra parentesi accanto al nome dell'evento.  
   
  Questo esempio mostra l'aspetto del grafico dei dettagli della sequenza temporale quando viene selezionato il listener di eventi per un evento di clic su DOM:  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Per i timer, i listener di eventi (eventi DOM), gli eventi di layout e i callback dei fotogrammi di animazione, un riepilogo con codifica colori dell'evento selezionato e tutti i relativi elementi figlio sono visibili nella sezione **Riepilogo tempo inclusivo** (anello con codifica colori). Ogni sezione dell'immagine contraddistinta dal colore rappresenta un tipo di evento. Le descrizioni comandi forniscono il nome del tipo di evento.  
   
     > [!TIP]
-    >  Il grafico dei dettagli della sequenza temporale e **Riepilogo tempo inclusivo** possono aiutarti a identificare aree per l'ottimizzazione. Se una di queste visualizzazioni mostra numeri elevati di piccole attività, l'evento può essere un candidato per l'ottimizzazione. È ad esempio possibile che un'app aggiorni gli elementi DOM molto frequentemente, con conseguente aumento del numero di eventi di layout e di analisi HTML. Puoi ottimizzare le prestazioni suddividendo in batch il lavoro.  
+    > Il grafico dei dettagli della sequenza temporale e **Riepilogo tempo inclusivo** possono aiutarti a identificare aree per l'ottimizzazione. Se una di queste visualizzazioni mostra numeri elevati di piccole attività, l'evento può essere un candidato per l'ottimizzazione. È ad esempio possibile che un'app aggiorni gli elementi DOM molto frequentemente, con conseguente aumento del numero di eventi di layout e di analisi HTML. Puoi ottimizzare le prestazioni suddividendo in batch il lavoro.  
   
 ### <a name="FilterTimelineDetails"></a> Filtrare i dettagli cronologia  
  Puoi filtrare la visualizzazione nei dettagli cronologia in base a un evento particolare selezionando **Filtra per evento** dal menu di scelta rapida per un evento specifico. Quando scegli questa opzione, l'ambito della sequenza temporale e della visualizzazione viene definito sull'evento selezionato. La selezione nel grafico dell'utilizzo della CPU definisce l'ambito sull'evento specifico.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  Per escludere l'attività del thread dell'interfaccia utente dal filtro, deseleziona l'opzione **Attività dell'interfaccia utente** .  
   
 > [!TIP]
->  Deseleziona questa opzione, quindi seleziona l'opzione Traffico di rete per esaminare i problemi relativi alla latenza di rete.  
+> Deseleziona questa opzione, quindi seleziona l'opzione Traffico di rete per esaminare i problemi relativi alla latenza di rete.  
   
  Per escludere le misure utente da filtro, deseleziona l'opzione **Misure utente** . Le misure utente sono eventi di primo livello senza elementi figlio.  
   

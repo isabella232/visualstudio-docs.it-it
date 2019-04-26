@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441447"
 ---
 # <a name="command-window"></a>Finestra di comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La finestra **Comando** consente di eseguire i comandi o gli alias direttamente 
 |Scorrere la finestra verso il basso.|Contenuto della finestra Comando|FRECCIA GIÙ o CTRL+FRECCIA GIÙ|  
   
 > [!TIP]
->  Per copiare nella riga di input tutto o una parte di un comando precedente, spostarsi su di esso, selezionarlo interamente o in parte e premere INVIO.  
+> Per copiare nella riga di input tutto o una parte di un comando precedente, spostarsi su di esso, selezionarlo interamente o in parte e premere INVIO.  
   
 ## <a name="mark-mode"></a>Modalità Indicatore  
  Facendo clic in una riga precedente nella finestra **Comando**, si passa automaticamente alla modalità Indicatore. Questa modalità consente di selezionare, modificare e copiare il testo dei comandi precedenti in qualsiasi editor di testo e incollarlo nella riga corrente.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` e `oldpar` sono parametri  
   
   > [!NOTE]
-  >  Qualsiasi comando, parametro, opzione o valore contenente spazi deve essere racchiuso tra virgolette doppie.  
+  > Qualsiasi comando, parametro, opzione o valore contenente spazi deve essere racchiuso tra virgolette doppie.  
   
   La posizione di opzioni e parametri nella riga di comando è liberamente intercambiabile, ad eccezione del comando [Shell](../../ide/reference/shell-command.md), nel quale le opzioni e i parametri devono rispettare un ordine specifico.  
   

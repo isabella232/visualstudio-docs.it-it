@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436818"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procedura dettagliata: creare un'applicazione semplice con Visual C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
  [Eseguire il debug e il test dell'applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](http://www.asp.net/get-started)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Questa procedura dettagliata è basata su Visual Studio Professional, che offre il modello Applicazione WPF in cui compilare il progetto. Il modello è disponibile anche in Visual Studio Express per Windows Desktop, ma non in Visual Studio Express per Windows e Visual Studio Express per il Web. Per informazioni introduttive su come usare Visual Studio Express per Windows, visitare il [Centro per sviluppatori per app di Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Per informazioni introduttive su come usare Visual Studio Express per il Web, vedere [Get Started with ASP.NET](http://www.asp.net/get-started)(Introduzione ad ASP.NET). Inoltre, l'edizione di Visual Studio e le impostazioni usate determinano i nomi e le posizioni di alcuni elementi dell'interfaccia utente. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Configurare IDE  
  Quando si avvia Visual Studio per la prima volta, viene chiesto di effettuare l'accesso con un Account di servizio Microsoft (MSA). Per informazioni, vedere [Sign into Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx)(Accedere a Visual Studio). Non è necessario accedere adesso ed è possibile farlo in seguito.  
@@ -109,7 +109,7 @@ Completando questa procedura dettagliata, si acquisirà familiarità con molti s
     In**Esplora soluzioni** è possibile notare che il nome del file è ora Greetings.xaml e, se si espande il nodo di MainWindow.xaml (premendo il tasto freccia destra con il nodo attivo), il nome del file MainWindow.xaml.vb o MainWindow.xaml.cs è ora Greetings.xaml.vb o Greetings.xaml.cs. Questo file di codice è annidato sotto il nodo del file con estensione xaml per mostrare che sono strettamente correlati tra loro.  
   
    > [!WARNING]
-   >  Questa modifica genera un errore che verrà sottoposto a debug e corretto in un passaggio successivo.  
+   > Questa modifica genera un errore che verrà sottoposto a debug e corretto in un passaggio successivo.  
   
 2. In **Esplora soluzioni**, aprire Greetings.xaml nella finestra di progettazione, premendo il tasto INVIO quando il nodo è attivo e selezionare la barra del titolo della finestra usando il mouse.  
   

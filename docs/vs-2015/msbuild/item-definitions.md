@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433581"
 ---
 # <a name="item-definitions"></a>Definizioni degli elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090759"
  I metadati degli elementi definiti in un ItemDefinitionGroup sono solo una dichiarazione di metadati predefiniti. I metadati non vengono applicati a meno che non sia definito un elemento che usa un ItemGroup per contenere i valori dei metadati.  
   
 > [!NOTE]
->  In molti degli esempi riportati in questo argomento viene illustrato un elemento ItemDefinitionGroup, ma la definizione di ItemGroup corrispondente viene omessa per chiarezza.  
+> In molti degli esempi riportati in questo argomento viene illustrato un elemento ItemDefinitionGroup, ma la definizione di ItemGroup corrispondente viene omessa per chiarezza.  
   
  I metadati definiti in modo esplicito in un ItemGroup hanno la precedenza su quelli presenti in ItemDefinitionGroup. I metadati presenti in ItemDefinitionGroup vengono applicati solo per i metadati non definiti in un ItemGroup. Ad esempio:  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090759"
  In questo esempio il metadato predefinito "m" viene applicato all'elemento "i" perché non è definito in modo esplicito dall'elemento "i". Al contrario, il metadato predefinito "n" non viene applicato all'elemento "i" perché è già definito dall'elemento "i".  
   
 > [!NOTE]
->  I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e \-minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale \-distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
+> I nomi di parametri ed elementi XML prevedono la distinzione tra maiuscole e \-minuscole. I metadati degli elementi e i \/nomi di proprietà o elementi non prevedono tale \-distinzione. Di conseguenza, gli elementi ItemDefinitionGroup i cui nomi differiscono solo per l'uso di maiuscole o minuscole devono essere considerati come lo stesso ItemGroup.  
   
 ## <a name="value-sources"></a>Origini dei valori  
  I valori per i metadati definiti in un ItemDefinitionGroup possono provenire da molte origini diverse, come indicato di seguito:  
@@ -83,7 +83,7 @@ ms.locfileid: "60090759"
 - Sezione CDATA \<\!\[CDATA\[nessun dato analizzato\]\]\>  
   
 > [!NOTE]
->  I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.  
+> I metadati degli elementi di un ItemGroup non sono utili in una dichiarazione di metadati di un ItemDefinitionGroup perché gli elementi dell'ItemDefinitionGroup vengono elaborati prima di quelli dell'ItemGroup.  
   
 ## <a name="additive-and-multiple-definitions"></a>Definizioni additive e multiple  
  Quando si aggiungono definizioni o si usano più ItemDefinitionGroup, tenere presente quanto segue:  
@@ -128,7 +128,7 @@ ms.locfileid: "60090759"
  In questo esempio il valore definito in precedenza per il metadato "m" \(m1\) viene aggiunto al nuovo valore \(m2\), in modo che il valore finale sia "m1;m2".  
   
 > [!NOTE]
->  Questo può verificarsi anche nello stesso ItemDefinitionGroup.  
+> Questo può verificarsi anche nello stesso ItemDefinitionGroup.  
   
  Quando si esegue l'override dei metadati definiti in precedenza, l'ultima specifica ha la precedenza. Nell'esempio seguente il valore finale del metadato "m" è compreso tra "m1" e "m1a".  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090759"
  In questo caso, il metadato predefinito "m1" dell'elemento "i" viene incluso solo se il valore della proprietà "Configuration" è "Debug".  
   
 > [!NOTE]
->  Nelle condizioni sono supportati solo i riferimenti ai metadati locali.  
+> Nelle condizioni sono supportati solo i riferimenti ai metadati locali.  
   
  I riferimenti ai metadati definiti in un ItemDefinitionGroup precedente sono locali per l'elemento, non per il gruppo di definizione. In altre parole, l'ambito dei riferimenti è specifico dell'elemento. Ad esempio:  
   

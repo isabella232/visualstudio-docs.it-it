@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443267"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Se l'applicazione tenta di usare un riferimento interrotto, viene generato un er
   Di seguito sono elencate le soluzioni a questi problemi.  
   
 > [!NOTE]
->  Nel file di progetto si fa riferimento ai file contenuti negli assembly tramite percorsi assoluti. Di conseguenza, per utenti che lavorano in un ambiente con più sviluppatori è possibile che risulti mancante un assembly a cui viene fatto riferimento tramite un percorso nell'ambiente locale. Per evitare questo tipo di errori, è consigliabile, in tali casi, aggiungere riferimenti da progetto a progetto. Per altre informazioni, vedere [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) e [Programmazione con gli assembly](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Nel file di progetto si fa riferimento ai file contenuti negli assembly tramite percorsi assoluti. Di conseguenza, per utenti che lavorano in un ambiente con più sviluppatori è possibile che risulti mancante un assembly a cui viene fatto riferimento tramite un percorso nell'ambiente locale. Per evitare questo tipo di errori, è consigliabile, in tali casi, aggiungere riferimenti da progetto a progetto. Per altre informazioni, vedere [Procedura: aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) e [Programmazione con gli assembly](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Percorso di riferimento non corretto  
  Se i progetti sono condivisi e si trovano in computer diversi, è possibile che alcuni riferimenti non vengano individuati quando un componente viene posizionato in una directory diversa in ogni computer. I riferimenti vengono memorizzati con il nome del file del componente, ad esempio Componente. Quando si aggiunge un riferimento a un progetto, il percorso della cartella del file del componente, ad esempio C:\Componenti\,\\, viene aggiunto alla proprietà **ReferencePath** del progetto.  
@@ -50,7 +50,7 @@ Se l'applicazione tenta di usare un riferimento interrotto, viene generato un er
  Per correggere il problema, è possibile eliminare il riferimento interrotto e sostituirlo usando la finestra di dialogo Aggiungi riferimento. Un'altra soluzione consiste nell'uso dell'elemento **ReferencePath** nelle pagine delle proprietà del progetto e nella modifica delle cartelle visualizzate nell'elenco in modo che puntino ai percorsi corretti. La proprietà **ReferencePath** viene mantenuta per ogni utente in ogni computer. Di conseguenza, la modifica del percorso dei riferimenti non ha alcun effetto sugli altri utenti del progetto.  
   
 > [!TIP]
->  Nei riferimenti da progetto a progetto problemi di questo tipo non si verificano. Per questo motivo è consigliabile usare riferimenti da progetto a progetto, se possibile, anziché riferimenti a file.  
+> Nei riferimenti da progetto a progetto problemi di questo tipo non si verificano. Per questo motivo è consigliabile usare riferimenti da progetto a progetto, se possibile, anziché riferimenti a file.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Per correggere un riferimento interrotto modificando il percorso del riferimento  
   

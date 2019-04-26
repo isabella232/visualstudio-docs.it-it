@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428274"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Impostazioni sincronizzate in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Per impostazione predefinita, quando si usa lo stesso account di personalizzazio
  Le impostazioni possono essere sincronizzate tra tutte le edizioni di Visual Studio 2015, comprese le edizioni Express e Community. Le impostazioni vengono sincronizzate anche tra prodotti della famiglia Visual Studio, come ad esempio Blend. Tuttavia, ogni prodotto di questa famiglia potrebbe disporre di impostazioni personalizzate che non vengono condivise con Visual Studio. Ad esempio, impostazioni specifiche per Blend sul Computer A verranno condivise con Blend sul Computer B, ma non con Visual Studio sul Computer A o B.
 
 > [!WARNING]
->  Le impostazioni non vengono sincronizzate tra Visual Studio 2013 e Visual Studio 2015. Alla prima apertura di Visual Studio 2015 le impostazioni di Visual Studio 2013 vengono migrate, ma non possono essere migrate di nuovo in Visual Studio 2013 dopo questa operazione.
+> Le impostazioni non vengono sincronizzate tra Visual Studio 2013 e Visual Studio 2015. Alla prima apertura di Visual Studio 2015 le impostazioni di Visual Studio 2013 vengono migrate, ma non possono essere migrate di nuovo in Visual Studio 2013 dopo questa operazione.
 
 ## <a name="see-also"></a>Vedere anche
  [Personalizzazione dell'IDE](../ide/personalizing-the-visual-studio-ide.md)

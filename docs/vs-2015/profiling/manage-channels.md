@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443729"
 ---
 # <a name="manage-channels"></a>Gestione dei canali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Nella **visualizzazione Thread** del visualizzatore di concorrenza è possibile 
  Scegliere questo controllo quando si vogliono nascondere i canali. Ad esempio, se un thread è al 100% della sincronizzazione per la durata del processo gestito, è possibile nasconderlo mentre si analizzano altri thread.  
   
 > [!NOTE]
->  Se un thread viene nascosto, verrà rimosso anche dal tempo di calcolo visualizzato nella legenda attiva e nei rapporti del profilo.  
+> Se un thread viene nascosto, verrà rimosso anche dal tempo di calcolo visualizzato nella legenda attiva e nei rapporti del profilo.  
   
 ## <a name="show-all-channels"></a>Mostra tutti i canali  
  Questo controllo è attivo quando uno o più canali vengono nascosti. Se si specifica questo controllo, tutti gli elementi nascosti vengono visualizzati e vengono inclusi nel calcolo del tempo.  
