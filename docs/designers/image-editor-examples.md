@@ -9,17 +9,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9388744cd9ded83a82be96f4c3413ce88470168
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893234"
 ---
 # <a name="image-editor-examples"></a>Esempi dell'editor di immagini
 
 Gli articoli di questa sezione della documentazione contengono esempi che illustrano l'uso dell'editor di immagini.
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md)|Viene illustrato come creare uno shader con trama di base.|
 |[Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)|Viene illustrato come generare livelli MIP da un'immagine.|

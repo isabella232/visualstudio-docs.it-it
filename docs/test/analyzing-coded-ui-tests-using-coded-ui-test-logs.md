@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822730"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -60,18 +60,18 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
 Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file *QTAgent32.exe.config*, viene visualizzato un collegamento di output nei risultati di **Esplora test**. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".
 
-1.  Dal menu **Test** scegliere **Finestre** e selezionare **Esplora test**.
+1. Dal menu **Test** scegliere **Finestre** e selezionare **Esplora test**.
 
-2.  Scegliere **Compila soluzione** dal menu **Compila**.
+2. Scegliere **Compila soluzione** dal menu **Compila**.
 
-3.  In **Esplora test** selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
+3. In **Esplora test** selezionare il test codificato dell'interfaccia utente che si vuole eseguire, aprire il relativo menu di scelta rapida e quindi scegliere **Esegui test selezionati**.
 
      I test automatizzati vengono eseguiti e segnalano se sono stati superati o se hanno avuto esito negativo.
 
     > [!TIP]
     > Per visualizzare **Esplora test**, scegliere **Test** > **Finestre** e selezionare **Esplora test**.
 
-4.  Scegliere il collegamento **Output** nei risultati di **Esplora test**.
+4. Scegliere il collegamento **Output** nei risultati di **Esplora test**.
 
      ![Collegamento di output in Esplora test](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato
 
      ![Risultati e collegamenti di output del test codificato dell'interfaccia utente](../test/media/cuit_htmlactionlog2.png)
 
-5.  Scegliere il collegamento *UITestActionLog.html*.
+5. Scegliere il collegamento *UITestActionLog.html*.
 
      Il log verrà visualizzato nel browser Web.
 
