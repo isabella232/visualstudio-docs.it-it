@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433040"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedura: creare ed eseguire un'installazione automatica di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "60040546"
      Il percorso di rete dell'applicazione di installazione per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è simile a \\\\*ServerName*\IDEinstall\\*Product*.exe.
 
     > [!NOTE]
-    >  L'installazione potrebbe non riuscire se una combinazione di percorso e nome file supera i 260 caratteri. La lunghezza massima di un percorso in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è 221 caratteri.  Il nome del percorso locale non deve superare i 70 caratteri e il nome del percorso di rete non deve superare i 39 caratteri.
+    > L'installazione potrebbe non riuscire se una combinazione di percorso e nome file supera i 260 caratteri. La lunghezza massima di un percorso in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è 221 caratteri.  Il nome del percorso locale non deve superare i 70 caratteri e il nome del percorso di rete non deve superare i 39 caratteri.
 
      L'installazione potrebbe non riuscire anche se i nomi delle cartelle nel percorso includono spazi (ad esempio, "\\\\*ServerName*\IDE install" oppure \\\\*ServerName*\Visual Studio\\).
 
@@ -46,16 +46,16 @@ ms.locfileid: "60040546"
  Per distribuire [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in modalità automatica, è necessario modificare il file AdminDeployment.xml. A tale scopo, è necessario innanzitutto creare il file AdminDeployment.xml usando il parametro della riga di comando `/CreateAdminFile` *\<file location>*. È quindi possibile usare tale file per effettuare il push di una distribuzione di Visual Studio sulla rete o per inserirla in un'installazione se si inserisce tale file nella directory *Drive*:\IDEinstall\packages. Il file AdminDeployment.xml non è univoco per un sistema operativo, architettura, edizione di Visual Studio o lingua del sistema operativo.
 
 > [!CAUTION]
->  In alcuni casi, gli elementi elencati come selezionati nel file AdminDeployment.xml non vengono installati. Per risolvere questo problema, inserire gli elementi contrassegnati "Selected="yes"" alla **fine** del file AdminDeployment.xml.
+> In alcuni casi, gli elementi elencati come selezionati nel file AdminDeployment.xml non vengono installati. Per risolvere questo problema, inserire gli elementi contrassegnati "Selected="yes"" alla **fine** del file AdminDeployment.xml.
 >
->  Se non si vogliono installare le dipendenze facoltative di un elemento, sarà necessario selezionare prima l'elemento padre e quindi deselezionare le dipendenze facoltative dopo l'elemento padre, come illustrato nella schermata seguente:
+> Se non si vogliono installare le dipendenze facoltative di un elemento, sarà necessario selezionare prima l'elemento padre e quindi deselezionare le dipendenze facoltative dopo l'elemento padre, come illustrato nella schermata seguente:
 >
->  ![Voci relative all'installazione alla fine del file AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Voci relative all'installazione alla fine del file AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Un altro modo per eseguire questa operazione consiste nell'omettere gli elementi figlio facoltativi di un elemento padre, vale a dire di non includere gli elementi "Selected="no"", ma è necessario comunque inserire tutti gli elementi "Selected="yes"" alla fine del file AdminDeployment.xml.
+> Un altro modo per eseguire questa operazione consiste nell'omettere gli elementi figlio facoltativi di un elemento padre, vale a dire di non includere gli elementi "Selected="no"", ma è necessario comunque inserire tutti gli elementi "Selected="yes"" alla fine del file AdminDeployment.xml.
 
 > [!IMPORTANT]
->  Durante l'installazione, il computer potrebbe riavviarsi automaticamente una o più volte. Dopo il riavvio, è necessario accedere nuovamente con lo stesso account utente con cui è stato effettuato l'accesso per eseguire l'installazione prima di riavviare il computer. È possibile evitare i riavvii automatici installando i componenti prerequisiti prima di eseguire un'installazione automatica. Per altre informazioni, vedere la sezione intitolata "Evitare il riavvio durante l'installazione" nella [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
+> Durante l'installazione, il computer potrebbe riavviarsi automaticamente una o più volte. Dopo il riavvio, è necessario accedere nuovamente con lo stesso account utente con cui è stato effettuato l'accesso per eseguire l'installazione prima di riavviare il computer. È possibile evitare i riavvii automatici installando i componenti prerequisiti prima di eseguire un'installazione automatica. Per altre informazioni, vedere la sezione intitolata "Evitare il riavvio durante l'installazione" nella [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).
 
  Lo schema del file AdminDeployment contiene i seguenti elementi:
 
@@ -71,7 +71,7 @@ ms.locfileid: "60040546"
 |BundleCustomizations|NoCacheOnlyMode|yes&#124;default|Impedisce il prepopolamento della cache del pacchetto.|
 
 > [!WARNING]
->  L'applicazione di installazione rispetterà lo stato selezionato di un elemento selezionabile anche se è nascosto. Ad esempio, se si desidera installare sempre un elemento selezionabile, è possibile contrassegnarlo come nascosto e selezionato.
+> L'applicazione di installazione rispetterà lo stato selezionato di un elemento selezionabile anche se è nascosto. Ad esempio, se si desidera installare sempre un elemento selezionabile, è possibile contrassegnarlo come nascosto e selezionato.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Per creare un'installazione automatica di Visual Studio
 
@@ -100,7 +100,7 @@ ms.locfileid: "60040546"
  Se si apre il **Pannello di controllo** e si esegue nuovamente l'applicazione di installazione, è possibile modificare le funzionalità di Visual Studio, disinstallare linguaggi di programmazione e ripristinare o disinstallare Visual Studio.
 
 > [!NOTE]
->  Per usare la modalità di manutenzione è necessario disporre delle credenziali amministrative sul computer locale.
+> Per usare la modalità di manutenzione è necessario disporre delle credenziali amministrative sul computer locale.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Per mantenere un'installazione su un computer client
 

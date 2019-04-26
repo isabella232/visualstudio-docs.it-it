@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424544"
 ---
 # <a name="managing-references-in-a-project"></a>Gestione dei riferimenti in un progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 2. Andare al sito del fornitore proprietario dell'SDK di estensione non supportato e installare la versione dell'SDK di estensione con dipendenze compatibili con la versione della piattaforma di destinazione del progetto.  
   
     > [!NOTE]
-    >  Un modo per verificare se l'SDK di estensione ha dipendenze da altri SDK di estensione, riavviare Visual Studio, creare un nuovo progetto Windows Store in C#, fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi riferimento**, passare alla scheda **Windows** , passare alla sottoscheda **Estensioni** , selezionare l'SDK di estensione e controllare nel riquadro destro di **Gestione riferimenti**. Se dispone di dipendenze, risulteranno elencate.  
+    > Un modo per verificare se l'SDK di estensione ha dipendenze da altri SDK di estensione, riavviare Visual Studio, creare un nuovo progetto Windows Store in C#, fare clic con il pulsante destro del mouse sul progetto e scegliere **Aggiungi riferimento**, passare alla scheda **Windows** , passare alla sottoscheda **Estensioni** , selezionare l'SDK di estensione e controllare nel riquadro destro di **Gestione riferimenti**. Se dispone di dipendenze, risulteranno elencate.  
   
     > [!IMPORTANT]
-    >  Se il progetto è destinato a Windows 10 e l'SDK di estensione installato in precedenza ha una dipendenza da Microsoft Visual C++ Runtime Package, la versione di Microsoft Visual C++ Runtime Package compatibile con Windows 10 è v14.0 e viene installata con Visual Studio 2015.  
+    > Se il progetto è destinato a Windows 10 e l'SDK di estensione installato in precedenza ha una dipendenza da Microsoft Visual C++ Runtime Package, la versione di Microsoft Visual C++ Runtime Package compatibile con Windows 10 è v14.0 e viene installata con Visual Studio 2015.  
   
 3. Se l'SDK di estensione installato in precedenza ha dipendenze da altri SDK di estensione, andare ai siti dei fornitori proprietari delle dipendenze e installare le versioni di queste dipendenze compatibili con la versione della piattaforma di destinazione del progetto.  
   
@@ -89,9 +89,9 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
 - Altre directory di progetto nella stessa soluzione. È possibile trovare questi assembly tramite la scheda **Progetti** .  
   
 > [!NOTE]
->  Tutti i progetti contengono un riferimento implicito a mscorlib. I progetti di Visual Basic contengono un riferimento implicito a `Microsoft.VisualBasic`.  
+> Tutti i progetti contengono un riferimento implicito a mscorlib. I progetti di Visual Basic contengono un riferimento implicito a `Microsoft.VisualBasic`.  
 >   
->  In Visual Studio, tutti i progetti contengono un riferimento implicito a `System.Core`, anche se `System.Core` è rimosso dall'elenco di riferimenti.  
+> In Visual Studio, tutti i progetti contengono un riferimento implicito a `System.Core`, anche se `System.Core` è rimosso dall'elenco di riferimenti.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Riferimenti a componenti condivisi in fase di esecuzione  
  In fase di esecuzione i componenti devono trovarsi nel percorso di output del progetto o nella [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Se il progetto contiene un riferimento a un oggetto che non è in uno di questi percorsi, è necessario copiare il riferimento al percorso di output del progetto quando si compila il progetto. La <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> proprietà indica se la copia deve essere eseguita. Se il valore è **True**, il riferimento viene copiato nella directory del progetto quando si compila quest'ultimo. Se il valore è **False**, il riferimento non viene copiato.  
@@ -111,7 +111,7 @@ Prima di scrivere codice per un componente esterno o servizio connesso, il proge
  In un progetto che produce un assembly, fare riferimento al progetto e non usare un riferimento al file (vedere sotto). Il vantaggio di un riferimento da progetto è che viene creata una dipendenza tra i progetti nel sistema di compilazione. Il progetto dipendente verrà compilato come se fosse stato modificato dall'ultima volta in cui è stato compilato il progetto di riferimento. Un riferimento al file non crea una dipendenza di compilazione, pertanto è possibile compilare il progetto di riferimento senza compilare il progetto dipendente, nel qual caso il riferimento potrebbe diventare obsoleto. Ovvero, il progetto potrebbe fare riferimento a una versione precedente del progetto. Ciò potrebbe comportare l'esigenza di varie versioni di una singola DLL nella directory bin, il che non è possibile. Quando si verifica questo conflitto, viene visualizzato un messaggio simile al seguente: [Avviso: impossibile copiare la dipendenza "file" del progetto "progetto" nella directory di esecuzione perché sovrascriverebbe il riferimento "file"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Per altre informazioni, vedere [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md) e [How to: Create and Remove Project Dependencies](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.  
+> Se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0, viene creato un riferimento al file anziché un riferimento da progetto a progetto.  
   
 ## <a name="file-references"></a>Riferimenti a file  
  I riferimenti a file sono riferimenti diretti agli assembly esterni al contesto di un progetto di Visual Studio. È possibile crearli usando la scheda **Sfoglia** di **Gestione riferimenti**. Usare un riferimento a file quando si ha solo un assembly o un componente e non il progetto che l'ha creato come output.  

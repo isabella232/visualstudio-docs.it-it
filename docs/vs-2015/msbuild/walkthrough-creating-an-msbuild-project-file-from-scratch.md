@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445609"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
  Le attività nella destinazione Build vengono eseguite in sequenza. In questo caso, l'attività `Csc` del compilatore di Visual C# è l'unica attività. Questa attività deve ricevere un elenco di file di origine da compilare e tale elenco viene fornito dal valore dell'elemento `Compile`. L'elemento `Compile` fa riferimento a un solo file di origine, Helloworld.cs.  
   
 > [!NOTE]
->  Nell'elemento Item è possibile usare il carattere jolly asterisco (*) per fare riferimento a tutti i file che presentano l'estensione di file cs, come segue:  
+> Nell'elemento Item è possibile usare il carattere jolly asterisco (*) per fare riferimento a tutti i file che presentano l'estensione di file cs, come segue:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  È però consigliabile evitare l'uso di caratteri jolly, perché, in caso di aggiunta o eliminazione di file di origine, rende più difficile il debug e l'indirizzamento selettivo.  
+> È però consigliabile evitare l'uso di caratteri jolly, perché, in caso di aggiunta o eliminazione di file di origine, rende più difficile il debug e l'indirizzamento selettivo.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Estensione di Path per includere MSBuild  
  Prima di poter accedere a MSBuild è necessario estendere la variabile di ambiente PATH in modo che includa la cartella di .NET Framework.  
@@ -182,9 +182,9 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .  
   
 > [!NOTE]
->  Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", digitare uno di questi comandi al prompt dei comandi:  
+> Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", digitare uno di questi comandi al prompt dei comandi:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>Aggiunta di proprietà di compilazione  
  Per aumentare il controllo della compilazione è possibile aggiungere proprietà di compilazione al file di progetto. Aggiungere le proprietà seguenti:  
@@ -243,17 +243,17 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 ```  
   
 > [!NOTE]
->  Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,  
+> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  è meglio di  
+> è meglio di  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Test delle proprietà di compilazione  
  Ora è possibile compilare l'applicazione tramite il file di progetto in cui sono state usate le proprietà di compilazione per specificare la cartella di output e il nome dell'applicazione.  

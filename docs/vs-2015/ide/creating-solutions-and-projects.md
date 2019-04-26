@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437571"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109816"
 I progetti sono i contenitori logici di tutti gli elementi necessari per compilare l'applicazione. Quando si crea un progetto scegliendo **File &#124; Nuovo &#124; Progetto** dal menu principale, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una soluzione in cui inserirlo. È quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione, se necessario. È possibile creare progetti dai file di codice esistenti ed è possibile creare progetti temporanei (solo .NET) che verranno eliminati al termine del loro uso.  
   
 > [!NOTE]
->  Le descrizioni in questo argomento sono basate sull'edizione Visual Studio Community. Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questa sezione, in quanto dipendono dalle impostazioni o dall'edizione di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le descrizioni in questo argomento sono basate sull'edizione Visual Studio Community. Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questa sezione, in quanto dipendono dalle impostazioni o dall'edizione di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Creare un progetto da un modello di progetto installato  
  Scegliere **File &#124; Nuovo &#124; Progetto** dal menu principale per visualizzare la finestra di dialogo Nuovo progetto. Nel riquadro sinistro sotto **Installati &#124; Modelli** selezionare il linguaggio di programmazione e la piattaforma o la tecnologia, quindi scegliere un modello tra quelli disponibili nel riquadro centrale.  
@@ -42,7 +42,7 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
  Se si ha una raccolta di file di origine separati, è possibile creare facilmente un progetto che li contenga. Scegliere **File &#124; Nuovo &#124; Progetto da codice esistente** per avviare la **Creazione guidata nuovo progetto da file di codice esistenti** e seguire le istruzioni.  
   
 > [!TIP]
->  Questa opzione risulta più adatta per raccolte di file relativamente semplici.  
+> Questa opzione risulta più adatta per raccolte di file relativamente semplici.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Creare un progetto temporaneo (C# e Visual Basic)  
  Quando si lavora con i progetti temporanei, è possibile creare ed effettuare prove con un progetto .NET senza specificare un percorso sul disco. Quando si crea un progetto, è sufficiente selezionare un tipo di progetto e un modello e specificare un nome nella finestra di dialogo **Nuovo progetto** . In qualsiasi momento mentre si lavora con il progetto temporaneo è possibile salvarlo o rimuoverlo.  
@@ -83,7 +83,7 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
  È possibile eliminare definitivamente una soluzione, ma non usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Prima di eliminare una soluzione, spostare eventuali progetti da riutilizzare in un'altra soluzione. Usare quindi Esplora file per eliminare la directory contenente i due file di soluzione con estensione sln e suo.  
   
 > [!NOTE]
->  Il file con estensione suo è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file.  
+> Il file con estensione suo è un file nascosto che non viene visualizzato nelle impostazioni predefinite di Esplora file.  
   
 ##### <a name="to-delete-a-solution"></a>Per eliminare una soluzione  
   

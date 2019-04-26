@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432320"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procedura: visualizzare, salvare e configurare file di log di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Dopo aver compilato un progetto nell'IDE di Visual Studio, è possibile visualiz
      Per altre informazioni, vedere [Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  È necessario ricompilare il progetto per rendere effettive le modifiche nella finestra **Output** (tutti i progetti) e nel file *ProjectName*.txt (solo progetti C++).  
+    > È necessario ricompilare il progetto per rendere effettive le modifiche nella finestra **Output** (tutti i progetti) e nel file *ProjectName*.txt (solo progetti C++).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Obtaining Build Logs](../msbuild/obtaining-build-logs-with-msbuild.md)  (Recupero di log di compilazione)  

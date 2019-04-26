@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419712"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663979"
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.  
+> L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.  
   
  Home page  
  Consente di impostare la pagina visualizzata quando si apre il Web browser dell'IDE.  
@@ -61,7 +61,7 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
   Selezionare questa opzione per modificare le opzioni di Internet Explorer nella finestra di dialogo **Proprietà Internet**. Le modifiche apportate in questa finestra di dialogo influiscono sul Web browser interno e sulle istanze di Internet Explorer avviate all'esterno dell'IDE di Visual Studio, ad esempio dal menu Start.  
   
 > [!NOTE]
->  Usare la finestra di dialogo Esplora con per sostituire il Web browser interno di Visual Studio, vale a dire una versione di Internet Explorer, con un altro Web browser esterno.  
+> Usare la finestra di dialogo Esplora con per sostituire il Web browser interno di Visual Studio, vale a dire una versione di Internet Explorer, con un altro Web browser esterno.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)  (Ambiente, finestra di dialogo Opzioni)  

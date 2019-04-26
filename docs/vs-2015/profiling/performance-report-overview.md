@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434280"
 ---
 # <a name="performance-report-overview"></a>Informazioni generali sul rapporto di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091616"
 È possibile visualizzare i dati di profilatura di una sessione di prestazioni nella finestra **Rapporto di prestazioni** dell'ambiente di sviluppo integrato (IDE) di Visual Studio Team System Development Edition. I dati di profilatura vengono salvati in file con estensione vsp e vsps. Le finestre delle visualizzazioni dei rapporti consentono di visualizzare e analizzare i problemi relativi alle prestazioni delle applicazioni.  
   
 > [!CAUTION]
->  Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione vsp che nel formato di esportazione in un file con estensione csv o xml.  
+> Un file di dati di profilatura contiene informazioni riservate quali il nome del computer, la versione del sistema operativo, i percorsi dei file, le informazioni sulla memoria e altri dati relativi alle impostazioni del computer. È necessario un controllo rigoroso della distribuzione dei dati, sia nel formato nativo con estensione vsp che nel formato di esportazione in un file con estensione csv o xml.  
 >   
->  Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione etl) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.  
+> Se durante la sessione di prestazioni vengono raccolti dati di traccia eventi, è possibile che nel file di log di traccia eventi (con estensione etl) siano visualizzate informazioni aggiuntive, come il nome utente e il dominio. Sarà pertanto necessario controllare rigorosamente anche la distribuzione del file di log.  
   
 ## <a name="performance-report-window"></a>Finestra Rapporto di prestazioni  
  La finestra Rapporto di prestazioni fornisce gli strumenti per visualizzare, gestire e filtrare i dati sulle prestazioni e include un controllo query personalizzabile.  

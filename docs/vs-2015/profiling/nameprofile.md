@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441907"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
   Indica il livello di profilatura a cui può essere applicata la raccolta di dati sulle prestazioni. I valori **PROFILE_CONTROL_LEVEL** seguenti possono essere usati per indicare uno dei tre livelli a cui può essere applicata la raccolta di dati sulle prestazioni:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|Impostazione del livello globale con effetti su tutti i processi e i thread nell'esecuzione della profilatura.|  
 |PROFILE_PROCESSLEVEL|Impostazione del livello processo con effetti su tutti i thread che fanno parte del processo specificato.|  
@@ -65,7 +65,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="property-valuereturn-value"></a>Valore proprietà/Valore restituito  
  La funzione indica esito l'esito positivo o negativo usando l'enumerazione **PROFILE_COMMAND_STATUS**. Il valore restituito può essere uno dei seguenti:  
   
-|Enumerator|Descrizione|  
+|Enumerator|Description|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|L'elemento di profilatura specificato non esiste.|  
 |NAME_ERROR_INVALID_NAME|Il nome non è valido.|  
@@ -84,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Se si specifica un processo o thread diverso da quello corrente, è necessario assicurarsi che sia stato inizializzato e che sia iniziata l'esecuzione prima dell'assegnazione del nome. In caso contrario, il metodo NameProfile ha esito negativo.  
   
 > [!IMPORTANT]
->  Le funzioni API CreateProcess () e CreateThread possono restituire il controllo prima dell'inizializzazione del thread o del processo.  
+> Le funzioni API CreateProcess () e CreateThread possono restituire il controllo prima dell'inizializzazione del thread o del processo.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

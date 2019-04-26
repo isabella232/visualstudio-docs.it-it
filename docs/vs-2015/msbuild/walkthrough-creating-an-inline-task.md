@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445630"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procedura dettagliata: Creazione di un'attività inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
     `Hello, world!`  
   
    > [!NOTE]
-   >  Se questa riga non viene visualizzata, salvare nuovamente il file di progetto e quindi eseguire l'attività Hello.  
+   > Se questa riga non viene visualizzata, salvare nuovamente il file di progetto e quindi eseguire l'attività Hello.  
   
    Alternando l'editor del codice e la **finestra del prompt dei comandi**, è possibile modificare il file di progetto e visualizzare velocemente i risultati.  
   
