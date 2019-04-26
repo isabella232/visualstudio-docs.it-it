@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444107"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Tempo di CPU GC elevato
 
@@ -42,7 +42,7 @@ ms.locfileid: "56608409"
  Questa regola viene attivata quando la quantità di tempo impiegato per l'operazione di Garbage Collection è significativa rispetto al tempo di elaborazione totale dell'applicazione.
 
 > [!NOTE]
->  Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è eccessivo rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0024: Tempo CPU GC eccessivo](../profiling/da0024-excessive-gc-cpu-time.md) anziché la regola.
+> Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è eccessivo rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0024: Tempo CPU GC eccessivo](../profiling/da0024-excessive-gc-cpu-time.md) anziché la regola.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione Contrassegni](../profiling/marks-view.md) dei dati di profilatura. Individuare la colonna **Memoria CLR .NET\\% Time in GC** (% tempo in GC). Determinare se sono presenti fasi specifiche di esecuzione del programma in cui il sovraccarico di Garbage Collection della memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori di % Time in GC (% tempo in GC) con la frequenza di Garbage Collection indica nei valori **Raccolte di generazione 0**, **Raccolte di generazione 1**, **Raccolte di generazione 2**.

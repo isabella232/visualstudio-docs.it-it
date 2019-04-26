@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a16aa073583c62577f6a40fb24aac69c7e95b93e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b91bd0d7dde275c9822deb6546dfbd1d6241ed56
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439586"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione autonoma nativa e raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione autonoma nativa (C/C++) in esecuzione e raccogliere dati sui conflitti di thread.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
  Mentre il profiler è connesso all'applicazione, è possibile sospendere e riprendere la raccolta dei dati. Per terminare una sessione di profilatura, il profiler non deve essere più connesso all'applicazione e deve essere arrestato in modo esplicito.
 
@@ -28,7 +28,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Per connettere il profiler a un'applicazione nativa in esecuzione
 
-1.  Digitare il comando seguente al prompt dei comandi:
+1. Digitare il comando seguente al prompt dei comandi:
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -42,7 +42,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
     |[/automark](../profiling/automark.md) **:** `Interval`|Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500.|
     |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl.|
 
-2.  Connettere il profiler all'applicazione di destinazione digitando il comando seguente:
+2. Connettere il profiler all'applicazione di destinazione digitando il comando seguente:
 
      **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`}
 
@@ -53,7 +53,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le coppie di opzioni nella tabella seguente consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie di opzioni nella tabella seguente consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|
@@ -66,10 +66,10 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
-1.  Disconnettere il profiler dall'applicazione di destinazione chiudendola o digitando il comando seguente:
+1. Disconnettere il profiler dall'applicazione di destinazione chiudendola o digitando il comando seguente:
 
      **VSPerfCmd /detach**
 
-2.  Arrestare il profiler digitando il comando seguente:
+2. Arrestare il profiler digitando il comando seguente:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

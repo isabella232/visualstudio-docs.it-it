@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430930"
 ---
 # <a name="markprofile"></a>MarkProfile
 Il metodo `MarkProfile` inserisce un contrassegno del profilo nel file con estensione *vsp*. La profilatura per il thread che contiene la funzione `MarkProfile` deve essere impostata su ON affinché il contrassegno possa essere inserito.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).
 
 > [!IMPORTANT]
->  Il metodo MarkProfile deve essere usato solo con la profilatura con il metodo di strumentazione.
+> Il metodo MarkProfile deve essere usato solo con la profilatura con il metodo di strumentazione.
 
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

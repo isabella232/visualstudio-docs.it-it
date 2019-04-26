@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430888"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Specificare gli eventi di compilazione personalizzati in Visual Studio
 
@@ -24,11 +24,11 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
 
  Per informazioni specifiche sul linguaggio di programmazione in uso, vedere gli argomenti seguenti:
 
--   Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic: [Procedura: Specificare gli eventi di compilazione (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# e F#: [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# e F#: [Procedura: Specificare gli eventi di compilazione (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++: [Specificare gli eventi di compilazione](/cpp/ide/specifying-build-events).
+- Visual C++: [Specificare gli eventi di compilazione](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,7 +53,7 @@ Gli eventi di compilazione seguono la stessa sintassi dei comandi DOS, ma è pos
    Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\`*directory*`\`
 
   > [!NOTE]
-  >  `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
+  > `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999419"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Eseguire gli strumenti di profilatura con o senza il debugger
 
@@ -33,7 +33,7 @@ Per stabilire quali strumenti e risultati usare, considerare quanto segue:
 - Il debugger stesso modifica i tempi delle prestazioni in quanto esegue operazioni di debugger necessarie come l'intercettazione di eccezioni e di eventi di caricamento del modulo.
 - I numeri relativi alle prestazioni della compilazione Release negli strumenti **Profiler prestazioni** sono i più precisi e accurati. I risultati degli strumenti integrati nel debugger sono particolarmente utili per il confronto con altre misurazioni correlate al debug.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Raccogliere dati di profilatura durante il debug
 
 Quando si avvia il debug in Visual Studio selezionando **Debug** > **Avvia debug** oppure premendo **F5**, la finestra **Strumenti di diagnostica** viene visualizzata per impostazione predefinita. Per aprirla manualmente, selezionare **Debug** > **Finestre** > **Mostra strumenti di diagnostica**. Nella finestra **Strumenti di diagnostica** vengono visualizzate informazioni su eventi, memoria dei processi e utilizzo della CPU.
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004603"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework e piattaforma di destinazione di MSBuild
 È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
@@ -61,11 +61,11 @@ Il framework di destinazione viene specificato nella proprietà `TargetFramework
 ## <a name="target-platform"></a>Piattaforma di destinazione
  Una *piattaforma* è una combinazione di hardware e software che definisce un particolare ambiente di runtime. Ad esempio,
 
--   `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
+- `x86` definisce un sistema operativo Windows a 32 bit che è in esecuzione su un processore 80x86 Intel o un suo equivalente.
 
--   `x64` definisce un sistema operativo Windows a 64 bit che è in esecuzione su un processore x64 Intel o un suo equivalente.
+- `x64` definisce un sistema operativo Windows a 64 bit che è in esecuzione su un processore x64 Intel o un suo equivalente.
 
--   `Xbox` definisce la piattaforma Microsoft Xbox 360.
+- `Xbox` definisce la piattaforma Microsoft Xbox 360.
 
 Una *piattaforma di destinazione* è una particolare piattaforma in cui il proprio progetto è compilato per l'esecuzione. Il framework di destinazione viene specificato nella proprietà di compilazione `PlatformTarget` in un file di progetto. È possibile modificare la piattaforma di destinazione usando le pagine della proprietà del progetto o la **Gestione configurazione** nell'IDE.
 

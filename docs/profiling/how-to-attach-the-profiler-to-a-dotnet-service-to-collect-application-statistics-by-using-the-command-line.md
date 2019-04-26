@@ -9,22 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0018ee6f723f6cfd1d4d099714c1bda153d832a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a476ea94506800679c51b4d9081aeecdfb92f273
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439627"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un servizio .NET per raccogliere statistiche dell'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un servizio .NET Framework e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
 
 > [!NOTE]
->  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
 >
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 >
->  L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
  Per raccogliere dati sulle prestazioni da un servizio .NET Framework, è necessario usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate. È quindi necessario riavviare il computer che ospita il servizio e configurare il computer per la profilatura. Connettere quindi il profiler al processo del servizio. Quando il profiler è connesso al servizio, è possibile sospendere e riprendere la raccolta dei dati.
 
@@ -42,9 +42,9 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
 
-   -   **/globalsampleon** abilita il campionamento.
+   - **/globalsampleon** abilita il campionamento.
 
-   -   **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.
+   - **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.
 
 4. Riavviare il computer.
 
@@ -61,7 +61,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.
+   > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi.
 
    | Opzione | Description |
    | - | - |
@@ -70,7 +70,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl. |
-
 
 7. Se necessario, avviare il servizio.
 
@@ -89,14 +88,14 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Imposta l'evento di campionamento sulle chiamate di sistema dal processo al kernel del sistema operativo (syscall). Se si specifica `Interval`, imposta il numero di chiamate tra campioni. Il valore predefinito è 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Imposta l'evento e l'intervallo di campionamento sul contatore delle prestazioni del processore e sull'intervallo specificati in `Config`.|
 
-   -   **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.
+   - **targetclr:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre il servizio è in esecuzione, è possibile usare le opzioni di *VSPerfCmd.exe* per avviare e arrestare la scrittura dei dati nel file di dati del profiler. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|
@@ -111,23 +110,23 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
-1.  Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:
+1. Eseguire una delle operazioni seguenti per disconnettere il profiler dall'applicazione di destinazione:
 
-    -   Arrestare il servizio.
+    - Arrestare il servizio.
 
          -oppure-
 
-    -   Digitare **VSPerfCmd /detach**
+    - Digitare **VSPerfCmd /detach**
 
-2.  Arrestare il profiler. Tipo:
+2. Arrestare il profiler. Tipo:
 
      **VSPerfCmd /shutdown**
 
-3.  (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
+3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
 
      **VSPerfClrEnv /globaloff**
 
-4.  Riavviare il computer.
+4. Riavviare il computer.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura i servizi](../profiling/command-line-profiling-of-services.md)

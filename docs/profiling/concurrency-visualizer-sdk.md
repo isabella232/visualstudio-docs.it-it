@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b046fb7aa11aa9ab917774dcf4fe3b4e47932afa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001116"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).(Introduzione all'SDK del visualizzatore di concorrenza).
@@ -31,11 +31,11 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Per aggiungere un SDK a un progetto C# o Visual Basic
 
-1.  Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Aggiungi SDK al progetto**.
+1. Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Aggiungi SDK al progetto**.
 
-2.  Scegliere il progetto in cui si vuole aggiungere l'SDK e selezionare il pulsante **Aggiungi SDK al progetto selezionato**.
+2. Scegliere il progetto in cui si vuole aggiungere l'SDK e selezionare il pulsante **Aggiungi SDK al progetto selezionato**.
 
-3.  Aggiungere un'istruzione imports o using al codice.
+3. Aggiungere un'istruzione imports o using al codice.
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
@@ -50,19 +50,19 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Per aggiungere un SDK a un progetto C++ o C
 
-1.  Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Aggiungi SDK al progetto**.
+1. Nella barra dei menu scegliere **Analizza**, **Visualizzatore di concorrenza**, **Aggiungi SDK al progetto**.
 
-2.  Scegliere il progetto in cui si vuole aggiungere l'SDK e selezionare il pulsante **Aggiungi SDK al progetto selezionato**.
+2. Scegliere il progetto in cui si vuole aggiungere l'SDK e selezionare il pulsante **Aggiungi SDK al progetto selezionato**.
 
-3.  Per C++, includere `cvmarkersobj.h`. Per C, includere `cvmarkers.h`.
+3. Per C++, includere `cvmarkersobj.h`. Per C, includere `cvmarkers.h`.
 
-4.  Aggiungere un'istruzione using al codice.
+4. Aggiungere un'istruzione using al codice.
 
     ```cpp
     using namespace Concurrency::diagnostic;
     ```
 
-5.  Creare un oggetto `marker_series` e passarlo al costruttore `span`.
+5. Creare un oggetto `marker_series` e passarlo al costruttore `span`.
 
     ```C++
 
@@ -76,19 +76,19 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Per usare un nuovo provider marcatori in un progetto C# o Visual Basic
 
-1.  Creare un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Il costruttore accetta un GUID.
+1. Creare un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Il costruttore accetta un GUID.
 
-2.  Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) del visualizzatore di concorrenza.  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) immettere il GUID usato per creare il provider e una descrizione del provider.
+2. Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) del visualizzatore di concorrenza.  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) immettere il GUID usato per creare il provider e una descrizione del provider.
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Per usare un nuovo provider marcatori in un progetto C++ o C
 
-1.  Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER.  Il costruttore accetta un GUID\* e PCV_PROVIDER\*.
+1. Usare la funzione `CvInitProvider` per inizializzare un PCV_PROVIDER.  Il costruttore accetta un GUID\* e PCV_PROVIDER\*.
 
-2.  Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo immettere il GUID usato per creare il provider e una descrizione del provider.
+2. Per registrare il provider, aprire la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Selezionare la scheda **Marcatori** e selezionare il pulsante **Aggiungi nuovo provider**. Nella finestra di dialogo immettere il GUID usato per creare il provider e una descrizione del provider.
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Per usare una serie di marcatori in un progetto C# o Visual Basic
 
-1.  Per usare un nuova serie <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, è necessario prima crearla tramite un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>. A questo punto è possibile generare gli eventi marcatori direttamente dalla nuova serie.
+1. Per usare un nuova serie <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, è necessario prima crearla tramite un oggetto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>. A questo punto è possibile generare gli eventi marcatori direttamente dalla nuova serie.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -102,7 +102,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Per usare una serie di marcatori in un progetto C++
 
-1.  Creare un oggetto `marker_series`.  Gli eventi possono essere generati da questa serie nuova.
+1. Creare un oggetto `marker_series`.  Gli eventi possono essere generati da questa serie nuova.
 
     ```scr
     marker_series series;
@@ -111,7 +111,7 @@ Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice
 
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Per usare una serie di marcatori in un progetto C
 
-1.  Usare la funzione `CvCreateMarkerSeries` per creare PCV_MARKERSERIES.
+1. Usare la funzione `CvCreateMarkerSeries` per creare PCV_MARKERSERIES.
 
     ```C++
     PCV_MARKERSERIES series;

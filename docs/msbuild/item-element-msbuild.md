@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006800"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contiene un elemento definito dall'utente e i relativi metadati. Ogni elemento usato in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificato come elemento figlio di un elemento `ItemGroup`.
@@ -107,6 +107,7 @@ Nell'esempio di codice seguente viene illustrato come dichiarare due elementi di
     </CSFile>
 </ItemGroup>
 ```
+
 L'esempio di codice seguente illustra come usare l'attributo `Update` per modificare i metadati in un file denominato *somefile.cs*, incluso tramite un criterio GLOB. È disponibile solo per i progetti .NET Core in Visual Studio 2017 o versioni successive.
 
 ```xml

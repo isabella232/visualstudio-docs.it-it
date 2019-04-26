@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d342a3746b081a47e68e781c2c18b7fbc4fe0b33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2d0a806ef6e6c3fb20ce4d2697f3b4fe6ff6674e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403559"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizzare l'utilizzo della rete nelle app UWP
 Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere dati sulle operazioni di rete eseguite con l'[API Windows.Web.Http](/uwp/api/windows.web.http). L'analisi dei dati può essere utile nella risoluzione di problemi di accesso e autenticazione, di uso errato della cache, nonché in caso di problemi di prestazioni relativi a visualizzazione e download.
@@ -22,7 +22,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
  Lo strumento Rete supporta solo le app UWP. Altre piattaforme non sono attualmente supportate.
 
 > [!NOTE]
->  Per una descrizione più completa dello strumento Rete, vedere [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/) (Introduzione allo strumento Rete di Visual Studio).
+> Per una descrizione più completa dello strumento Rete, vedere [Introducing Visual Studio's network tool](https://devblogs.microsoft.com/visualstudio/introducing-visual-studios-network-tool/) (Introduzione allo strumento Rete di Visual Studio).
 
 ## <a name="collect-network-tool-data"></a>Raccogliere i dati dello strumento di rete
  È consigliabile eseguire lo strumento **Rete** con un progetto di Visual Studio aperto nel computer di Visual Studio.
@@ -65,11 +65,11 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 ### <a name="analysis-tips"></a>Suggerimenti sull’analisi 
  Questo strumento evidenzia determinate aree che possono essere utili quando si esegue l'analisi correlata alla rete:
 
-1.  Le richieste gestite completamente dalla cache vengono visualizzate come **(dalla cache)** nella colonna **Ricevute**. Ciò consente di determinare se si sta utilizzando la cache in modo efficace per risparmiare la larghezza di banda dell’utente o se si stanno erroneamente memorizzando nella cache risposte fornendo agli utenti finali dell'applicazione dati obsoleti.
+1. Le richieste gestite completamente dalla cache vengono visualizzate come **(dalla cache)** nella colonna **Ricevute**. Ciò consente di determinare se si sta utilizzando la cache in modo efficace per risparmiare la larghezza di banda dell’utente o se si stanno erroneamente memorizzando nella cache risposte fornendo agli utenti finali dell'applicazione dati obsoleti.
 
-2.  Le risposte di errore (4xx o 5xx) vengono visualizzate nella colonna **Risultati** con il codice di stato rosso e vengono evidenziate anche nella barra di riepilogo. In tal modo è facile individuare gli errori tra le numerose potenziali richieste nell'applicazione.
+2. Le risposte di errore (4xx o 5xx) vengono visualizzate nella colonna **Risultati** con il codice di stato rosso e vengono evidenziate anche nella barra di riepilogo. In tal modo è facile individuare gli errori tra le numerose potenziali richieste nell'applicazione.
 
-3.  Il pulsante di riformattazione della risposta (all'interno della scheda corpo) consente di analizzare i payload di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.
+3. Il pulsante di riformattazione della risposta (all'interno della scheda corpo) consente di analizzare i payload di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.
 
 ## <a name="see-also"></a>Vedere anche
 

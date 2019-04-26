@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407560"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 Il metodo `CommentMarkAtProfile` inserisce un valore di timestamp, un indicatore numerico e una stringa di commento nel file con estensione *vsp*. Il valore di timestamp può essere usato per sincronizzare gli eventi esterni. Per l'indicatore e il commento da inserire, è necessario attivare la profilatura per il thread che contiene la funzione CommentMarkAtProfile.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Lo stato della profilatura per il thread che contiene la funzione di contrassegno del profilo deve essere attivo quando vengono inseriti indicatori e commenti con il comando Contrassegno o con le funzioni API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile). I contrassegni del profilo hanno ambito globale. Ad esempio, un contrassegno del profilo inserito in un solo thread può essere usato per contrassegnare l'inizio o la fine di un segmento di dati in qualsiasi thread del file VSP.
 
 > [!IMPORTANT]
->  I metodi CommentMarkAtProfile devono essere usati con solo con la strumentazione.
+> I metodi CommentMarkAtProfile devono essere usati con solo con la strumentazione.
 
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

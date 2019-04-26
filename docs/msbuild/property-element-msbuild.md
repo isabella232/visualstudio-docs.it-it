@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002470"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 Contiene un nome un valore della proprietà definiti dall'utente. Ogni proprietà usata in un progetto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve essere specificata come figlio di un elemento `PropertyGroup`.

@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416002"
 ---
 # <a name="windows-script-engines"></a>Motori di script Windows
 Per implementare un motore di Windows Script di Microsoft, creare un oggetto COM OLE che supporta le interfacce seguenti.  
@@ -31,7 +31,7 @@ Per implementare un motore di Windows Script di Microsoft, creare un oggetto COM
 |IPersist *|Fornisce il supporto di persistenza. L'implementazione di almeno una delle interfacce seguenti è necessaria se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) non è implementata.<br /><br /> IPersistStorage: offre il supporto per l'attributo DATA = {url} nel tag OBJECT.<br /><br /> IPersistStreamInit: offre lo stesso supporto di `IPersistStorage` e per l'attributo DATA="flusso di byte codificato in formato stringa" nel tag OBJECT.<br /><br /> IPersistPropertyBag: offre il supporto per l'attributo PARAM= nel tag OBJECT.|  
   
 > [!NOTE]
->  È possibile che il motore di scripting non verrà mai chiamato al momento di salvare o ripristinare uno stato di script tramite `IPersist*`. In alternativa, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) viene usato chiamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) per creare uno script vuoto, quindi gli scriptlet vengono aggiunti e connessi agli eventi con [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e viene aggiunto un codice generale con [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Ciononostante, un motore di scripting deve implementare completamente almeno un'interfaccia `IPersist*` (preferibilmente `IPersistStreamInit`), in quanto altre applicazioni host potrebbero tentare di usarle.  
+> È possibile che il motore di scripting non verrà mai chiamato al momento di salvare o ripristinare uno stato di script tramite `IPersist*`. In alternativa, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) viene usato chiamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) per creare uno script vuoto, quindi gli scriptlet vengono aggiunti e connessi agli eventi con [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e viene aggiunto un codice generale con [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Ciononostante, un motore di scripting deve implementare completamente almeno un'interfaccia `IPersist*` (preferibilmente `IPersistStreamInit`), in quanto altre applicazioni host potrebbero tentare di usarle.  
   
  Le sezioni seguenti descrivono l'implementazione di un motore di Scripting di Windows in modo più dettagliato.  
   

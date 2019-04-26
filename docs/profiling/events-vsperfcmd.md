@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aff97e69b3dea8de9e13c351aa199bc81bdf733c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 62d4e2431ab2dbc2ca74944ac1717fe6c3169287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440101"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 L'opzione **Events** di *VSPerfCmd.exe* controlla la registrazione di Event Tracing for Windows (ETW). I dati ETW vengono salvati in un file ETL separato dal file di dati del profiler. I dati possono essere visualizzati in un report usando il comando di [VSPerfReport](../profiling/vsperfreport.md) /summary: ETW.
@@ -62,14 +62,14 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ## <a name="remarks"></a>Osservazioni
 
 > [!NOTE]
->  Quando sono abilitati gli eventi ETW di CLR i dati di avvio aggiuntivi vengono raccolti anche nel report della visualizzazione tracce. Per evitare che gli eventi di avvio vengano visualizzati nel report, usare il comando seguente:
+> Quando sono abilitati gli eventi ETW di CLR i dati di avvio aggiuntivi vengono raccolti anche nel report della visualizzazione tracce. Per evitare che gli eventi di avvio vengano visualizzati nel report, usare il comando seguente:
 
 ```cmd
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
->  Se non si escludono gli eventi di avvio, poiché non sono elencati nel file MOF (Managed Object Format), tali eventi vengono visualizzati come GUID nel report. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [File di esempio Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).
+> Se non si escludono gli eventi di avvio, poiché non sono elencati nel file MOF (Managed Object Format), tali eventi vengono visualizzati come GUID nel report. Per altre informazioni, vedere la pagina nel sito Web Microsoft relativa all' [File di esempio Managed Object Format (MOF)](http://go.microsoft.com/fwlink/?linkid=37118).
 
 ## <a name="see-also"></a>Vedere anche
 - [VSPerfCmd](../profiling/vsperfcmd.md)

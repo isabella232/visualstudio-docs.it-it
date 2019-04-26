@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440029"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurazioni standard e personalizzate del set di strumenti
 Un set di strumenti di MSBuild contiene riferimenti ad attività, destinazioni e strumenti che è possibile usare per compilare un progetto di applicazione. MSBuild include un set di strumenti standard, ma è anche possibile creare set di strumenti personalizzati. Per informazioni su come specificare un set di strumenti, vedere [Set di strumenti (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -68,7 +68,7 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
  La proprietà di compilazione `VisualStudioVersion` indica se un subset di strumenti diventa attivo. Ad esempio, il valore "12.0" di `VisualStudioVersion` specifica il subset di strumenti di MSBuild 12.0. Per altre informazioni, vedere la sezione relativa ai subset di strumenti in [Set di strumenti di MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  Si consiglia di evitare di modificare queste impostazioni. Tuttavia, è possibile aggiungere le proprie impostazioni e specificare definizioni personalizzate del set di strumenti a livello di computer, come descritto nella sezione successiva.
+> Si consiglia di evitare di modificare queste impostazioni. Tuttavia, è possibile aggiungere le proprie impostazioni e specificare definizioni personalizzate del set di strumenti a livello di computer, come descritto nella sezione successiva.
 
 ## <a name="custom-toolset-definitions"></a>Definizioni personalizzate del set di strumenti
  Se un set di strumenti standard non soddisfa i requisiti di compilazione, è possibile creare un set di strumenti personalizzato. Ad esempio, in uno scenario di laboratorio di compilazione può essere necessario usare un sistema separato per compilare i progetti [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Usando un set di strumenti personalizzato, è possibile assegnare valori personalizzati all'attributo `ToolsVersion` quando si creano progetti o si esegue *MSBuild.exe*. In questo modo si può anche usare la proprietà `$(MSBuildToolsPath)` per importare *i file target* da quella directory, nonché definire le proprietà del set di strumenti personalizzato che possono essere usate per qualsiasi progetto che usa tale set di strumenti.
@@ -97,12 +97,12 @@ Visual Studio 2017 e versioni successive non usano una chiave del Registro di si
 ```
 
 > [!NOTE]
->  Per consentire una lettura corretta, `<configSections>` deve essere la prima sottosezione della sezione `<configuration>`.
+> Per consentire una lettura corretta, `<configSections>` deve essere la prima sottosezione della sezione `<configuration>`.
 
  `ToolsetConfigurationSection` è una sezione di configurazione personalizzata che può essere usata da qualsiasi host MSBuild per la configurazione personalizzata. Se si usa un set di strumenti personalizzato, non sono necessarie operazioni dell'host per inizializzare il motore di compilazione, tranne la definizione delle voci del file di configurazione. Definendo le voci del Registro di sistema, è possibile specificare i set di strumenti a livello di computer validi per *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e tutti gli host di MSBuild.
 
 > [!NOTE]
->  Se un file di configurazione definisce le impostazioni per un elemento `ToolsVersion` già definito nel Registro di sistema, le due definizioni non vengono unite. La definizione nel file di configurazione ha la precedenza e le impostazioni del Registro di sistema per tale `ToolsVersion` vengono ignorate.
+> Se un file di configurazione definisce le impostazioni per un elemento `ToolsVersion` già definito nel Registro di sistema, le due definizioni non vengono unite. La definizione nel file di configurazione ha la precedenza e le impostazioni del Registro di sistema per tale `ToolsVersion` vengono ignorate.
 
  Le seguenti proprietà sono specifiche per il valore di `ToolsVersion` usato nei progetti:
 

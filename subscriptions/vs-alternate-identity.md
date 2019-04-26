@@ -7,12 +7,12 @@ ms.date: 04/10/2018
 ms.topic: conceptual
 description: Come aggiungere un'identità alternativa per la sottoscrizione di Visual Studio per usare Azure DevOps e Azure
 searchscope: vs subscription
-ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428103"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identità per i sottoscrittori di Visual Studio
 
@@ -33,9 +33,7 @@ Questa funzionalità non fornisce una copia della sottoscrizione all'altro accou
 
 Per tutte le sottoscrizioni, è possibile aggiungere un "account aziendale o dell'istituto di istruzione", in modo da poter usare l'account con i vantaggi che richiedono l'accesso (IDE di Visual Studio, Azure DevOps e Azure).
 
-
 ### <a name="add-the-alternate-account"></a>Aggiungere l'account alternativo
-
 
 1. Accedere al portale per i sottoscrittori di Visual Studio con il proprio account Microsoft (https://my.visualstudio.com).
 

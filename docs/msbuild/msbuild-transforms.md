@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414691"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti in modo più efficiente.
@@ -33,7 +33,7 @@ Nell'esempio seguente un elenco di file con estensione *resx* viene trasformato 
 Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*, *Form2.resx* e *Form3.resx*, gli output nell'elenco trasformato saranno *Form1.resources*, *Form2.resources* e *Form3.resources*.
 
 > [!NOTE]
->  Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente: `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Uso di più modificatori
  Un'espressione di trasformazione può contenere più modificatori, che possono essere combinati in qualsiasi ordine e ripetuti. Nell'esempio seguente il nome della directory che contiene il file viene modificato, ma i file mantengono il nome e l'estensione originali.

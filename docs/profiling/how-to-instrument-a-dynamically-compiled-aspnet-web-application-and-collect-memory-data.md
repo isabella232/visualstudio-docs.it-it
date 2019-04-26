@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d3e3b1d646b16a50251c97d3268faaa4775d4664
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386282"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un'applicazione Web ASP.NET compilata dinamicamente e raccogliere dati di memoria tramite la riga di comando del profiler
 Questo argomento descrive come usare gli strumenti della riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati dettagliati dell'allocazione di memoria .NET e della durata degli oggetti per un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico tramite il metodo di profilatura della strumentazione.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
  Per raccogliere i dati sulle prestazioni da un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], modificare il file *web.config* dell'applicazione di destinazione per abilitare lo strumento [VSInstr.exe](../profiling/vsinstr.md) per instrumentare i file dell'applicazione compilata in modo dinamico. Usare quindi lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per configurare il server che ospita l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e abilitare la profilatura della memoria .NET impostando le variabili di ambiente appropriate e infine riavviare il computer.
 
@@ -31,11 +31,11 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Per configurare l'applicazione Web ASP.NET e il server Web
 
-1.  Modificare il file *web.config* dell'applicazione di destinazione. Vedere [How to: Modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modificare il file *web.config* dell'applicazione di destinazione. Vedere [How to: Modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Aprire una finestra del prompt dei comandi nel computer che ospita l'applicazione Web.
+2. Aprire una finestra del prompt dei comandi nel computer che ospita l'applicazione Web.
 
-3.  Inizializzare le variabili di ambiente di profilatura. Tipo:
+3. Inizializzare le variabili di ambiente di profilatura. Tipo:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** abilita la raccolta dei dati di allocazione della memoria.
+    - **/globaltracegc** abilita la raccolta dei dati di allocazione della memoria.
 
-    -   **/globaltracegclife** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.
+    - **/globaltracegclife** abilita la raccolta dei dati di allocazione della memoria e dei dati di durata degli oggetti.
 
-4.  Riavviare il computer.
+4. Riavviare il computer.
 
 ## <a name="run-the-profiling-session"></a>Eseguire la sessione di profilatura
 
@@ -64,7 +64,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:trace**.
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
+   > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
    | Opzione | Description |
    | - | - |
@@ -76,7 +76,6 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
-
 2. Avviare l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nel modo usuale.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
@@ -84,7 +83,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le seguenti coppie di opzioni consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|
@@ -92,7 +91,7 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Avvia (**/threadon**) o arresta (**/threadoff**) la raccolta dei dati per il thread specificato dall'ID thread (`TID`).|
 
--   È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. Gli indicatori possono essere usati per filtrare i dati nei rapporti e nelle visualizzazioni dei dati del profiler.
+- È anche possibile usare l'opzione **VSPerfCmd.exe**[/mark](../profiling/mark.md) per inserire un indicatore di profilatura nel file di dati. Il comando **/mark** aggiunge un identificatore, un timestamp e una stringa di testo facoltativa definita dall'utente. Gli indicatori possono essere usati per filtrare i dati nei rapporti e nelle visualizzazioni dei dati del profiler.
 
 ## <a name="end-the-profiling-session"></a>Terminare la sessione di profilatura
  Per terminare una sessione di profilatura, chiudere l'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] di destinazione, arrestare Internet Information Services (IIS) per interrompere il processo profilato e arrestare il profiler. Riavviare quindi IIS.
@@ -118,13 +117,13 @@ Questo argomento descrive come usare gli strumenti della riga di comando disponi
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Per ripristinare la configurazione dell'applicazione e del computer
 
-1.  Sostituire il file *web.config* con una copia del file originale.
+1. Sostituire il file *web.config* con una copia del file originale.
 
-2.  (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
+2. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
 
      **VSPerfCmd /globaloff**
 
-3.  Riavviare il computer.
+3. Riavviare il computer.
 
 ## <a name="see-also"></a>Vedere anche
 - [Sottoporre a profilatura applicazioni Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

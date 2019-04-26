@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422931"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: Modificare file web.config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 È possibile usare il metodo di strumentazione degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per raccogliere dati di intervallo dettagliati, dati relativi all'allocazione di memoria .NET e dati di durata degli oggetti .NET da applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilate in modo dinamico.
@@ -21,7 +21,7 @@ ms.locfileid: "56616690"
  Questo argomento descrive come modificare il file di configurazione *web.config* per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 > [!NOTE]
->  Non è necessario modificare il file *web.config* quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato.
+> Non è necessario modificare il file *web.config* quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] precompilato.
 
  La radice di un file *web.config* è l'elemento **configuration**. Per instrumentare ed eseguire la profilatura di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:
 
@@ -45,11 +45,9 @@ ms.locfileid: "56616690"
 
 3. Aggiungere il nome e il valore di attributo riportati di seguito all'elemento **assemblyBinding**:
 
-
    | Nome attributo | Valore attributo |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Aggiungere un elemento **dependentAssembly** come elemento figlio dell'elemento **assemblyBinding**.
 
@@ -59,13 +57,11 @@ ms.locfileid: "56616690"
 
 6. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **assemblyIdentity**:
 
-
    | Nome attributo | Valore attributo |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. Aggiungere un elemento **codeBase** come elemento figlio dell'elemento **dependentAssembly**.
 
@@ -100,15 +96,15 @@ ms.locfileid: "56616690"
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Per aggiungere il passaggio di post-elaborazione del profiler all'elemento configuration/system.web/compilation
 
-1.  Se necessario, aggiungere l'elemento **system.web** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.
+1. Se necessario, aggiungere l'elemento **system.web** come elemento figlio dell'elemento **configuration**; in caso contrario, andare al passaggio successivo.
 
      L'elemento **system.web** non contiene attributi. L'elemento **configuration** può avere un solo elemento **system.web** figlio.
 
-2.  Se necessario, aggiungere l'elemento **compilation** come elemento figlio dell'elemento **system.web**; in caso contrario, andare al passaggio successivo.
+2. Se necessario, aggiungere l'elemento **compilation** come elemento figlio dell'elemento **system.web**; in caso contrario, andare al passaggio successivo.
 
      L'elemento **system.web** può avere un solo elemento **compilation** figlio.
 
-3.  Rimuovere qualsiasi attributo esistente dall'elemento **compilation** e aggiungere il nome e il valore di attributo seguenti:
+3. Rimuovere qualsiasi attributo esistente dall'elemento **compilation** e aggiungere il nome e il valore di attributo seguenti:
 
     |Nome attributo|Valore attributo|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ ms.locfileid: "56616690"
 
 3. Aggiungere i nomi e i valori di attributo riportati di seguito all'elemento **add**:
 
-
    | Nome attributo | Valore attributo |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Aggiungere un altro elemento **add** come elemento figlio dell'elemento **appSettings**.
 
@@ -157,7 +151,6 @@ ms.locfileid: "56616690"
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` è il percorso dei file eseguibili del profiler. Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443602"
 ---
 # <a name="msbuild-properties"></a>proprietà di MSBuild
 Le proprietà sono coppie nome-valore che possono essere usate per configurare le compilazioni. Le proprietà sono utili per passare i valori alle attività, valutare le condizioni e archiviare i valori a cui si farà riferimento nel file di progetto.
@@ -54,7 +54,7 @@ Le proprietà sono coppie nome-valore che possono essere usate per configurare l
  Per ottenere il valore corrente delle variabili di ambiente dall'interno di uno strumento generato, usare le [funzioni di proprietà](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. Il metodo consigliato, tuttavia, consiste nell'utilizzare il parametro dell'attività <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. Le proprietà dell'ambiente impostate in questa matrice di stringhe possono essere passate allo strumento generato senza influire sulle variabili di ambiente del sistema.
 
 > [!TIP]
->  Non tutte le variabili di ambiente vengono lette per diventare proprietà iniziali. Tutte le variabili di ambiente il cui nome non è un nome di proprietà MSBuild valido, ad esempio "386", vengono ignorate.
+> Non tutte le variabili di ambiente vengono lette per diventare proprietà iniziali. Tutte le variabili di ambiente il cui nome non è un nome di proprietà MSBuild valido, ad esempio "386", vengono ignorate.
 
  Per altre informazioni, vedere [Procedura: Usare le variabili di ambiente in una compilazione](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>Creare proprietà durante l'esecuzione
  Alle proprietà non comprese in elementi `Target` vengono assegnati valori durante la fase di valutazione di una compilazione. Durante la fase di esecuzione successiva, le proprietà possono essere create o modificate come segue:
 
--   Una proprietà può essere creata da qualsiasi attività. Per creare una proprietà, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `PropertyName`.
+- Una proprietà può essere creata da qualsiasi attività. Per creare una proprietà, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `PropertyName`.
 
--   Una proprietà può essere creata dall'attività [CreateProperty](../msbuild/createproperty-task.md). Questo utilizzo è deprecato.
+- Una proprietà può essere creata dall'attività [CreateProperty](../msbuild/createproperty-task.md). Questo utilizzo è deprecato.
 
--   A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi `PropertyGroup` che possono contenere dichiarazioni di proprietà.
+- A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi `PropertyGroup` che possono contenere dichiarazioni di proprietà.
 
 ## <a name="store-xml-in-properties"></a>Archiviare codice XML nelle proprietà
  Le proprietà possono contenere codice XML arbitrario, che consente di passare i valori alle attività o di visualizzare le informazioni di registrazione. L'esempio seguente illustra la proprietà `ConfigTemplate`, che ha un valore contenente codice XML e riferimenti ad altre proprietà. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sostituisce i riferimenti alle proprietà con i rispettivi valori delle proprietà. I valori delle proprietà vengono assegnati nell'ordine in cui sono visualizzati. In questo esempio quindi `$(MySupportedVersion)`, `$(MyRequiredVersion)` e `$(MySafeMode)` devono essere già stati definiti.

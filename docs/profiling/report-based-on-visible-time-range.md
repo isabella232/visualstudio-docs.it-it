@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd4758f5484089e58f50462300f48f76f1538381
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002341"
 ---
 # <a name="report-based-on-visible-time-range"></a>Report basato sull'intervallo di tempo visibile
 La visualizzazione Profilo mostra i report basati sull'intervallo di tempo e i canali attualmente visibili. Per visualizzare i dettagli per subset dei dati diversi, fare clic sugli elementi nella legenda.

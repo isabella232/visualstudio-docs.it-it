@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436764"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Procedura: Instrumentare un componente autonomo .NET Framework e raccogliere dati di memoria con il profiler tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un componente .NET Framework di un'applicazione autonoma, ad esempio un file con estensione exe o dll, e raccogliere informazioni sulla memoria tramite il profiler.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
-
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
  Per raccogliere dati di memoria da un componente .NET Framework tramite il metodo di strumentazione, usare lo strumento [VSInstr.exe](../profiling/vsinstr.md) per generare una versione instrumentata del componente e lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente di profilatura. Quindi avviare il profiler tramite lo strumento *VSPerfCmd.exe*.
 
@@ -40,7 +39,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   Le opzioni **/tracegc** e **/tracegclife** consentono di inizializzare le variabili di ambiente per raccogliere unicamente i dati sull'allocazione della memoria oppure i dati sull'allocazione della memoria e sulla durata degli oggetti.
+   - Le opzioni **/tracegc** e **/tracegclife** consentono di inizializzare le variabili di ambiente per raccogliere unicamente i dati sull'allocazione della memoria oppure i dati sull'allocazione della memoria e sulla durata degli oggetti.
 
        |Opzione|Description|
        |------------|-----------------|
@@ -67,7 +66,6 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | [/counter](../profiling/counter.md) **:** `Config` | Raccoglie informazioni dal contatore delle prestazioni del processore specificato in Config. Le informazioni del contatore vengono aggiunte ai dati raccolti a ogni evento di profilatura. |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
-
 5. Avviare l'applicazione di destinazione nella finestra del prompt dei comandi.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
@@ -75,7 +73,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|
@@ -88,13 +86,13 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
-1.  Chiudere l'applicazione di destinazione.
+1. Chiudere l'applicazione di destinazione.
 
-2.  Arrestare il profiler. Tipo:
+2. Arrestare il profiler. Tipo:
 
      **VSPerfCmd /shutdown**
 
-3.  (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
+3. (Facoltativo) Cancellare le variabili di ambiente di profilatura. Tipo:
 
      **VSPerfCmd /off**
 

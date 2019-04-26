@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445319"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procedura dettagliata: Creazione di un'attività inline
 Le attività di MSBuild in genere vengono create compilando una classe che implementa l'interfaccia <xref:Microsoft.Build.Framework.ITask>. A partire dalla versione 4 di .NET Framework è possibile creare attività inline nel file di progetto. Non è necessario creare un assembly separato per ospitare l'attività. Per altre informazioni, vedere [Inline Tasks](../msbuild/msbuild-inline-tasks.md) (Attività inline).
 
  Questa procedura dettagliata mostra come creare ed eseguire le attività inline seguenti:
 
--   Un'attività priva di parametri di input o di output.
+- Un'attività priva di parametri di input o di output.
 
--   Un'attività che presenta un solo parametro di input e nessun parametro di output.
+- Un'attività che presenta un solo parametro di input e nessun parametro di output.
 
--   Un'attività che presenta due parametri di input e un parametro di output che restituisce una proprietà MSBuild.
+- Un'attività che presenta due parametri di input e un parametro di output che restituisce una proprietà MSBuild.
 
--   Un'attività che presenta due parametri di input e un parametro di output che restituisce un elemento MSBuild.
+- Un'attività che presenta due parametri di input e un parametro di output che restituisce un elemento MSBuild.
 
 Per creare ed eseguire le attività, usare Visual Studio e la **finestra del prompt dei comandi di Visual Studio** nel modo seguente:
 
-1.   Creare un file di progetto MSBuild tramite Visual Studio.
+1. Creare un file di progetto MSBuild tramite Visual Studio.
 
-2.   Modificare il file di progetto in Visual Studio per creare l'attività inline.
+2. Modificare il file di progetto in Visual Studio per creare l'attività inline.
 
-3.   Usare la **finestra del prompt dei comandi**  per compilare il progetto ed esaminare i risultati.
+3. Usare la **finestra del prompt dei comandi**  per compilare il progetto ed esaminare i risultati.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Creare e modificare un progetto MSBuild
  Il sistema dei progetti di Visual Studio si basa su MSBuild. È pertanto possibile creare un file di progetto di compilazione usando Visual Studio. In questa sezione si crea un file di progetto Visual C#. In alternativa, è possibile creare un file di progetto di Visual Basic. Nel contesto di questa esercitazione, le differenze tra i due file di progetto sono trascurabili.
 
 #### <a name="to-create-and-modify-a-project-file"></a>Per creare e modificare un file di progetto
 
-1.  In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
+1. In Visual Studio scegliere **Nuovo** dal menu **File** e quindi fare clic su **Progetto**.
 
-2.  Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
+2. Nella finestra di dialogo **Nuovo progetto** selezionare il tipo di progetto **Visual C#** e quindi selezionare il modello **Windows Forms Application**. Nella casella **Nome** digitare `InlineTasks`. In **Percorso** digitare un percorso per la soluzione, ad esempio *D:\\*. Verificare che l'opzione **Crea directory per soluzione** sia selezionata, che l'opzione **Aggiungi al controllo del codice sorgente** sia deselezionata e che **Nome soluzione** sia **InlineTasks**.
 
-3.  Scegliere **OK** per creare il file di progetto.
+3. Scegliere **OK** per creare il file di progetto.
 
-3.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto **InlineTasks** e quindi scegliere **Scarica progetto**.
+3. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto **InlineTasks** e quindi scegliere **Scarica progetto**.
 
-4.  Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj**.
+4. Fare nuovamente clic con il pulsante destro del mouse sul nodo di progetto e quindi scegliere **Modifica InlineTasks.csproj**.
 
      Il file di progetto verrà visualizzato nell'editor del codice.
 
@@ -103,7 +103,7 @@ Per creare ed eseguire le attività, usare Visual Studio e la **finestra del pro
     `Hello, world!`
 
    > [!NOTE]
-   >  Se questa riga non viene visualizzata, salvare nuovamente il file di progetto e quindi eseguire l'attività Hello.
+   > Se questa riga non viene visualizzata, salvare nuovamente il file di progetto e quindi eseguire l'attività Hello.
 
    Alternando l'editor del codice e la **finestra del prompt dei comandi**, è possibile modificare il file di progetto e visualizzare velocemente i risultati.
 

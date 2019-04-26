@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433618"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procedura dettagliata: Profilatura dalla riga di comando tramite campionamento
 
@@ -41,7 +41,7 @@ In questa procedura dettagliata vengono illustrate le operazioni seguenti:
 Il campionamento è un metodo di profilatura mediante il quale viene eseguito periodicamente il polling di un processo specifico per determinare la funzione attiva. I dati risultanti forniscono un conteggio della frequenza con cui la funzione si trovava all'inizio dello stack di chiamate quando è stato eseguito il campionamento del processo.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Per eseguire la profilatura dell'applicazione PeopleTrax tramite il metodo di campionamento
 

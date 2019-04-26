@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996828"
 ---
 # <a name="open-project-command"></a>Comando Apri progetto
 
@@ -41,7 +41,7 @@ Obbligatorio. Il percorso completo e il nome file del progetto o della soluzione
 > [!NOTE]
 > La sintassi dell'argomento `filename` richiede che i percorsi contenenti spazi usino le virgolette.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Il completamento automatico tenta di individuare il percorso e il nome file corretti durante la digitazione.
 

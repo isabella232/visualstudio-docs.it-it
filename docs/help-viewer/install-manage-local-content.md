@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824302"
 ---
 # <a name="install-and-manage-local-content"></a>Installare e gestire il contenuto locale
 
@@ -42,18 +42,18 @@ Per impostazione predefinita, Help Viewer installa il contenuto tramite un servi
 
 ### <a name="to-change-the-content-installation-source"></a>Per modificare l'origine di installazione del contenuto
 
-1.  Nella scheda **Gestisci contenuto** scegliere il pulsante di opzione **Disco**.
+1. Nella scheda **Gestisci contenuto** scegliere il pulsante di opzione **Disco**.
 
     > [!NOTE]
     > L'opzione **Disco** non è disponibile se l'amministratore ha impedito la modifica dell'origine dell'installazione del contenuto. Per altre informazioni, vedere la [Guida dell'amministratore di Help Viewer](../help-viewer/administrator-guide.md).
 
-2.  Effettuare uno dei passaggi indicati di seguito.
+2. Effettuare uno dei passaggi indicati di seguito.
 
-    -   Immettere il percorso di un file con estensione *.msha* o l'URL di un endpoint del servizio.
+    - Immettere il percorso di un file con estensione *.msha* o l'URL di un endpoint del servizio.
 
-    -   Scegliere il pulsante Sfoglia (**…**) per trovare un file con estensione *.msha*.
+    - Scegliere il pulsante Sfoglia (**…**) per trovare un file con estensione *.msha*.
 
-    -   Nell'elenco scegliere la voce che è stata usata più di recente.
+    - Nell'elenco scegliere la voce che è stata usata più di recente.
 
 ## <a name="download-and-install-content-locally"></a>Scaricare e installare il contenuto localmente
 
@@ -67,13 +67,13 @@ Se si installa il contenuto nel computer locale, è possibile visualizzare gli a
 
 ### <a name="to-download-and-install-content"></a>Per scaricare e installare il contenuto
 
-1.  Scegliere la scheda **Gestisci contenuto**.
+1. Scegliere la scheda **Gestisci contenuto**.
 
-2.  Nell'elenco del contenuto scegliere il collegamento **Aggiungi** accanto al libro o ai libri da scaricare e installare.
+2. Nell'elenco del contenuto scegliere il collegamento **Aggiungi** accanto al libro o ai libri da scaricare e installare.
 
      Il libro viene aggiunto all'elenco **Modifiche in sospeso** e le dimensioni stimate del libro o dei libri specificati vengono visualizzate al di sotto dell'elenco. Poiché alcuni argomenti sono presenti in più libri, le dimensioni complessive del download di più libri potrebbe essere inferiore alla somma delle dimensioni di ogni singolo libro specificato.
 
-3.  Scegliere il pulsante **Aggiorna**.
+3. Scegliere il pulsante **Aggiorna**.
 
      Il libro o i libri specificati vengono installati con tutti gli aggiornamenti dei libri già presenti nel computer. I tempi di installazione variano, ma è possibile visualizzare lo stato di avanzamento nella barra di stato.
 
@@ -89,13 +89,13 @@ Se si installa il contenuto nel computer locale, è possibile visualizzare gli a
 
 ### <a name="to-remove-content"></a>Per rimuovere il contenuto
 
-1.  Scegliere la scheda **Gestisci contenuto**.
+1. Scegliere la scheda **Gestisci contenuto**.
 
-2.  Nell'elenco del contenuto scegliere il collegamento **Rimuovi** accanto al libro o ai libri da rimuovere.
+2. Nell'elenco del contenuto scegliere il collegamento **Rimuovi** accanto al libro o ai libri da rimuovere.
 
      Il libro viene aggiunto all'elenco **Modifiche in sospeso**.
 
-3.  Scegliere il pulsante **Aggiorna**.
+3. Scegliere il pulsante **Aggiorna**.
 
      Il libro o i libri specificati vengono rimossi dal computer.
 
@@ -121,13 +121,13 @@ I tempi di aggiornamento possono variare ma è possibile visualizzare lo stato d
 
 ### <a name="to-move-local-content"></a>Per spostare il contenuto locale
 
-1.  Nella scheda **Gestisci contenuto** scegliere il pulsante **Sposta** che si trova sotto **Percorso archivio locale**.
+1. Nella scheda **Gestisci contenuto** scegliere il pulsante **Sposta** che si trova sotto **Percorso archivio locale**.
 
      Verrà visualizzata la finestra di dialogo **Sposta contenuto**.
 
-2.  Nella casella di testo **A** immettere un percorso diverso per il contenuto e quindi scegliere **OK**.
+2. Nella casella di testo **A** immettere un percorso diverso per il contenuto e quindi scegliere **OK**.
 
-3.  Scegliere **Chiudi** dopo che il contenuto è stato spostato.
+3. Scegliere **Chiudi** dopo che il contenuto è stato spostato.
 
 ## <a name="see-also"></a>Vedere anche
 

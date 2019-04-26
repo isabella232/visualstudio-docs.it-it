@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 526943fd8bbf9a8ef851af733c07df8cbab01060
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bce461f4b120d1d9a37c5433b590ed1f7b227131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445318"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: Creare un nuovo file di progetto MSBuild
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.
@@ -24,23 +24,23 @@ I linguaggi di programmazione destinati a .NET Framework usano i file di progett
 
  Questa procedura dettagliata mostra come creare in modo incrementale un file di progetto di base usando solo un editor di testo. I passaggi della procedura dettagliata sono i seguenti:
 
-1.   Creazione di un file di origine di applicazione minimo.
+1. Creazione di un file di origine di applicazione minimo.
 
-2.   Creazione di un file di progetto MSBuild minimo.
+2. Creazione di un file di progetto MSBuild minimo.
 
-3.   Estensione della variabile di ambiente PATH per includere MSBuild.
+3. Estensione della variabile di ambiente PATH per includere MSBuild.
 
-4.   Compilazione dell'applicazione tramite il file di progetto.
+4. Compilazione dell'applicazione tramite il file di progetto.
 
-5.   Aggiunta delle proprietà per controllare la compilazione.
+5. Aggiunta delle proprietà per controllare la compilazione.
 
-6.   Controllo della compilazione mediante la modifica dei valori delle proprietà.
+6. Controllo della compilazione mediante la modifica dei valori delle proprietà.
 
-7.   Aggiunta delle destinazioni nella compilazione.
+7. Aggiunta delle destinazioni nella compilazione.
 
-8.   Controllo della compilazione specificando le destinazioni.
+8. Controllo della compilazione specificando le destinazioni.
 
-9.   Compilazione incrementale.
+9. Compilazione incrementale.
 
 Questa procedura dettagliata mostra come compilare il progetto tramite il prompt dei comandi ed esaminarne i risultati. Per altre informazioni su MSBuild e su come eseguirlo al prompt dei comandi, vedere [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
@@ -51,13 +51,13 @@ Per completare la procedura dettagliata sono necessari MSBuild e il compilatore 
 
 #### <a name="to-create-the-minimal-application"></a>Per creare l'applicazione minima
 
-1.  Al prompt dei comandi, passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti\\* o *\Desktop\\*.
+1. Al prompt dei comandi, passare alla cartella in cui si vuole creare l'applicazione, ad esempio *\Documenti\\* o *\Desktop\\*.
 
-2.  Digitare **md HelloWorld** per creare una sottocartella denominata *\HelloWorld\\*.
+2. Digitare **md HelloWorld** per creare una sottocartella denominata *\HelloWorld\\*.
 
-3.  Digitare **cd HelloWorld** per passare alla nuova cartella.
+3. Digitare **cd HelloWorld** per passare alla nuova cartella.
 
-4.  Avviare il Blocco note o un altro editor di testo, quindi digitare il codice seguente.
+4. Avviare il Blocco note o un altro editor di testo, quindi digitare il codice seguente.
 
     ```csharp
     using System;
@@ -75,39 +75,39 @@ Per completare la procedura dettagliata sono necessari MSBuild e il compilatore 
     }
     ```
 
-5.  Salvare questo file di codice sorgente con il nome *Helloworld.cs*.
+5. Salvare questo file di codice sorgente con il nome *Helloworld.cs*.
 
-6.  Compilare l'applicazione digitando **csc helloworld.cs** al prompt dei comandi.
+6. Compilare l'applicazione digitando **csc helloworld.cs** al prompt dei comandi.
 
-7.  Testare l'applicazione digitando **helloworld** al prompt dei comandi.
+7. Testare l'applicazione digitando **helloworld** al prompt dei comandi.
 
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .
 
-8.  Eliminare l'applicazione digitando **del helloworld.exe** al prompt dei comandi.
+8. Eliminare l'applicazione digitando **del helloworld.exe** al prompt dei comandi.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>Creare un file di progetto MSBuild minimo
  Ora che si dispone di un file di origine di applicazione minimo, è possibile creare un file di progetto minimo per compilare l'applicazione. Questo file di progetto contiene gli elementi seguenti:
 
--   Il nodo radice `Project` obbligatorio.
+- Il nodo radice `Project` obbligatorio.
 
--   Un nodo `ItemGroup` per contenere gli elementi Item.
+- Un nodo `ItemGroup` per contenere gli elementi Item.
 
--   Un elemento Item che fa riferimento al file di origine dell'applicazione.
+- Un elemento Item che fa riferimento al file di origine dell'applicazione.
 
--   Un nodo `Target` per contenere le attività necessarie per compilare l'applicazione.
+- Un nodo `Target` per contenere le attività necessarie per compilare l'applicazione.
 
--   Un elemento `Task` per avviare il compilatore di Visual C# per compilare l'applicazione.
+- Un elemento `Task` per avviare il compilatore di Visual C# per compilare l'applicazione.
 
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Per creare un file di progetto MSBuild minimo
 
-1.  Nell'editor di testo, sostituire il testo esistente con le due righe seguenti:
+1. Nell'editor di testo, sostituire il testo esistente con le due righe seguenti:
 
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     </Project>
     ```
 
-2.  Inserire questo nodo `ItemGroup` come elemento figlio del nodo `Project`:
+2. Inserire questo nodo `ItemGroup` come elemento figlio del nodo `Project`:
 
     ```xml
     <ItemGroup>
@@ -117,20 +117,20 @@ Per completare la procedura dettagliata sono necessari MSBuild e il compilatore 
 
      Si noti che questo nodo `ItemGroup` contiene già un elemento Item.
 
-3.  Aggiungere un nodo `Target` come elemento figlio del nodo `Project`. Denominare il nodo `Build`.
+3. Aggiungere un nodo `Target` come elemento figlio del nodo `Project`. Denominare il nodo `Build`.
 
     ```xml
     <Target Name="Build">
     </Target>
     ```
 
-4.  Inserire questo elemento Task come elemento figlio del nodo `Target`:
+4. Inserire questo elemento Task come elemento figlio del nodo `Target`:
 
     ```xml
     <Csc Sources="@(Compile)"/>
     ```
 
-5.  Salvare questo file di progetto con il nome *Helloworld.csproj*.
+5. Salvare questo file di progetto con il nome *Helloworld.csproj*.
 
 Il file di progetto minimo sarà simile al codice seguente:
 
@@ -148,18 +148,20 @@ Il file di progetto minimo sarà simile al codice seguente:
 Le attività nella destinazione Build vengono eseguite in sequenza. In questo caso, l'attività `Csc` del compilatore di Visual C# è l'unica attività. Questa attività deve ricevere un elenco di file di origine da compilare e tale elenco viene fornito dal valore dell'elemento `Compile`. L'elemento `Compile` fa riferimento a un solo file sorgente, *Helloworld.cs*.
 
 > [!NOTE]
->  Nell'elemento Item è possibile usare il carattere jolly asterisco (\*) per fare riferimento a tutti i file con estensione *cs*, come segue:
+> Nell'elemento Item è possibile usare il carattere jolly asterisco (\*) per fare riferimento a tutti i file con estensione *cs*, come segue:
 >
->  `<Compile Include="*.cs" />`
+> ```xml
+> <Compile Include="*.cs" />
+> ```
 >
->  È però consigliabile evitare l'uso di caratteri jolly, perché, in caso di aggiunta o eliminazione di file di origine, rende più difficile il debug e l'indirizzamento selettivo.
+> È però consigliabile evitare l'uso di caratteri jolly, perché, in caso di aggiunta o eliminazione di file di origine, rende più difficile il debug e l'indirizzamento selettivo.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Estendere il percorso per includere MSBuild
  Prima di poter accedere a MSBuild è necessario estendere la variabile di ambiente PATH in modo che includa la cartella di .NET Framework.
 
 #### <a name="to-add-msbuild-to-your-path"></a>Per aggiungere MSBuild al percorso
 
--   A partire da Visual Studio 2013, è possibile trovare *MSBuild.exe* nella cartella MSBuild (*%ProgramFiles%\MSBuild* nei sistemi operativi a 32 bit o *%ProgramFiles(x86)%\MSBuild* nei sistemi operativi a 64 bit).
+- A partire da Visual Studio 2013, è possibile trovare *MSBuild.exe* nella cartella MSBuild (*%ProgramFiles%\MSBuild* nei sistemi operativi a 32 bit o *%ProgramFiles(x86)%\MSBuild* nei sistemi operativi a 64 bit).
 
      Al prompt dei comandi digitare **set PATH=%PATH%;%ProgramFiles%\MSBuild** o **set PATH=%PATH%;%ProgramFiles(x86)%\MSBuild**.
 
@@ -170,31 +172,31 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
 
 #### <a name="to-build-the-application"></a>Per compilare l'applicazione
 
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
+1. Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
 
      La destinazione Build del file di progetto Helloworld verrà compilata richiamando il compilatore di Visual C# per creare l'applicazione Helloworld.
 
-2.  Testare l'applicazione digitando **helloworld**.
+2. Testare l'applicazione digitando **helloworld**.
 
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .
 
 > [!NOTE]
->  Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", al prompt dei comandi digitare questo comando:
+> Per visualizzare più dettagli sulla build, è possibile aumentare il livello di dettaglio. Per impostare il livello di dettaglio su "detailed", al prompt dei comandi digitare questo comando:
 >
->  **msbuild helloworld.csproj -t:Build -verbosity:detailed**
+> **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>Aggiungere proprietà di compilazione
  Per aumentare il controllo della compilazione è possibile aggiungere proprietà di compilazione al file di progetto. Aggiungere le proprietà seguenti:
 
--   Una proprietà `AssemblyName` per specificare il nome dell'applicazione.
+- Una proprietà `AssemblyName` per specificare il nome dell'applicazione.
 
--   Una proprietà `OutputPath` per specificare la cartella contenente l'applicazione.
+- Una proprietà `OutputPath` per specificare la cartella contenente l'applicazione.
 
 #### <a name="to-add-build-properties"></a>Per aggiungere le proprietà di compilazione
 
-1.  Eliminare l'applicazione esistente digitando **del helloworld.exe** al prompt dei comandi.
+1. Eliminare l'applicazione esistente digitando **del helloworld.exe** al prompt dei comandi.
 
-2.  Nel file di progetto, inserire l'elemento `PropertyGroup` subito dopo l'elemento `Project` di apertura:
+2. Nel file di progetto, inserire l'elemento `PropertyGroup` subito dopo l'elemento `Project` di apertura:
 
     ```xml
     <PropertyGroup>
@@ -203,7 +205,7 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
     </PropertyGroup>
     ```
 
-3.  Aggiungere questa attività alla destinazione Build subito prima dell'attività `Csc`:
+3. Aggiungere questa attività alla destinazione Build subito prima dell'attività `Csc`:
 
     ```xml
     <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />
@@ -211,7 +213,7 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
 
      L'attività `MakeDir` crea una cartella con il nome specificato nella proprietà `OutputPath`, a condizione che al momento non esistano altre cartelle con lo stesso nome.
 
-4.  Aggiungere questo attributo `OutputAssembly` all'attività `Csc`:
+4. Aggiungere questo attributo `OutputAssembly` all'attività `Csc`:
 
     ```xml
     <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />
@@ -219,7 +221,7 @@ Le attività nella destinazione Build vengono eseguite in sequenza. In questo ca
 
      In questo modo il compilatore di Visual C# genera un assembly denominato dalla proprietà `AssemblyName` e lo inserisce nella cartella denominata dalla proprietà `OutputPath`.
 
-5.  Salvare le modifiche.
+5. Salvare le modifiche.
 
 Il file di progetto sarà ora simile al codice seguente:
 
@@ -240,45 +242,45 @@ Il file di progetto sarà ora simile al codice seguente:
 ```
 
 > [!NOTE]
->  Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,
+> Invece di aggiungere il delimitatore di percorso di barra rovesciata (\\) nell'attributo `OutputAssembly` dell'attività `Csc` è consigliabile aggiungerlo alla fine del nome della cartella quando la si specifica nell'elemento `OutputPath`. Quindi,
 >
->  `<OutputPath>Bin\</OutputPath>`
+> `<OutputPath>Bin\</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`
 >
->  è meglio di
+> è meglio di
 >
->  `<OutputPath>Bin</OutputPath>`
+> `<OutputPath>Bin</OutputPath>`
 >
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Testare le proprietà di compilazione
  Ora è possibile compilare l'applicazione tramite il file di progetto in cui sono state usate le proprietà di compilazione per specificare la cartella di output e il nome dell'applicazione.
 
 #### <a name="to-test-the-build-properties"></a>Per testare le proprietà di compilazione
 
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
+1. Al prompt dei comandi digitare **msbuild helloworld.csproj -t:Build**.
 
      Questo comando crea la cartella *\Bin\\* e quindi richiama il compilatore di Visual C# per creare l'applicazione *MSBuildSample* e inserirla nella cartella *\Bin\\*.
 
-2.  Per verificare che la cartella *\Bin\\* sia stata creata e che contenga l'applicazione *MSBuildSample*, digitare **dir Bin**.
+2. Per verificare che la cartella *\Bin\\* sia stata creata e che contenga l'applicazione *MSBuildSample*, digitare **dir Bin**.
 
-3.  Testare l'applicazione digitando **Bin\MSBuildSample**.
+3. Testare l'applicazione digitando **Bin\MSBuildSample**.
 
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .
 
 ## <a name="add-build-targets"></a>Aggiungere destinazioni di compilazione
  A questo punto, aggiungere altre due destinazioni al file di progetto, come segue:
 
--   Una destinazione Clean che elimina i file meno recenti.
+- Una destinazione Clean che elimina i file meno recenti.
 
--   Una destinazione Rebuild che usa l'attributo `DependsOnTargets` per forzare l'esecuzione dell'attività Clean prima dell'attività Build.
+- Una destinazione Rebuild che usa l'attributo `DependsOnTargets` per forzare l'esecuzione dell'attività Clean prima dell'attività Build.
 
 Ora che sono presenti più destinazioni è possibile impostare la destinazione Build come destinazione predefinita.
 
 #### <a name="to-add-build-targets"></a>Per aggiungere destinazioni di compilazione
 
-1.  Nel file di progetto, aggiungere subito dopo la destinazione Build le due destinazioni seguenti:
+1. Nel file di progetto, aggiungere subito dopo la destinazione Build le due destinazioni seguenti:
 
     ```xml
     <Target Name="Clean" >
@@ -289,7 +291,7 @@ Ora che sono presenti più destinazioni è possibile impostare la destinazione B
 
      La destinazione Clean richiama l'attività Delete per eliminare l'applicazione. La destinazione Rebuild viene eseguita solo dopo l'esecuzione di entrambe le destinazioni Clean e Build. Anche se è priva di attività, la destinazione Rebuild comporta l'esecuzione della destinazione Clean prima della destinazione Build.
 
-2.  Aggiungere questo attributo `DefaultTargets` all'elemento `Project` di apertura:
+2. Aggiungere questo attributo `DefaultTargets` all'elemento `Project` di apertura:
 
     ```xml
     <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -322,37 +324,37 @@ Il file di progetto sarà ora simile al codice seguente:
 ## <a name="test-the-build-targets"></a>Testare le destinazioni di compilazione
  È possibile usare le nuove destinazioni di compilazione per testare le funzionalità seguenti del file di progetto:
 
--   Compilazione della build predefinita.
+- Compilazione della build predefinita.
 
--   Impostazione del nome dell'applicazione tramite il prompt dei comandi.
+- Impostazione del nome dell'applicazione tramite il prompt dei comandi.
 
--   Eliminazione dell'applicazione prima che venga compilata un'altra applicazione.
+- Eliminazione dell'applicazione prima che venga compilata un'altra applicazione.
 
--   Eliminazione dell'applicazione senza compilare un'altra applicazione.
+- Eliminazione dell'applicazione senza compilare un'altra applicazione.
 
 #### <a name="to-test-the-build-targets"></a>Per testare le destinazioni di compilazione
 
-1.  Al prompt dei comandi digitare **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
+1. Al prompt dei comandi digitare **msbuild helloworld.csproj -p:AssemblyName=Greetings**.
 
      Poiché non è stata usata l'opzione **-t** per impostare in modo esplicito la destinazione, MSBuild esegue la destinazione Build predefinita. L'opzione **-p** esegue l'override della proprietà `AssemblyName` e le assegna il nuovo valore `Greetings`. In questo modo viene creata una nuova applicazione, *Greetings.exe* nella cartella *\Bin\\*.
 
-2.  Per verificare che la cartella *\Bin\\* contenga sia l'applicazione *MSBuildSample* che la nuova applicazione *Greetings*, digitare **dir Bin**.
+2. Per verificare che la cartella *\Bin\\* contenga sia l'applicazione *MSBuildSample* che la nuova applicazione *Greetings*, digitare **dir Bin**.
 
-3.  Testare l'applicazione Greetings digitando **Bin\Greetings**.
+3. Testare l'applicazione Greetings digitando **Bin\Greetings**.
 
      Dovrebbe essere visualizzato il messaggio **Hello, world!** .
 
-4.  Eliminare l'applicazione MSBuildSample digitando **msbuild helloworld.csproj -t:clean**.
+4. Eliminare l'applicazione MSBuildSample digitando **msbuild helloworld.csproj -t:clean**.
 
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore predefinito della proprietà `AssemblyName`, ovvero `MSBuildSample`.
 
-5.  Eliminare l'applicazione Greetings digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
+5. Eliminare l'applicazione Greetings digitando **msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings**.
 
      Viene eseguita l'attività Clean per rimuovere l'applicazione avente il valore specificato della proprietà **AssemblyName**, `Greetings`.
 
-6.  Per verificare che la cartella *\Bin\\* sia vuota, digitare **dir Bin**.
+6. Per verificare che la cartella *\Bin\\* sia vuota, digitare **dir Bin**.
 
-7.  Digitare **msbuild**.
+7. Digitare **msbuild**.
 
      Anche se non è stato specificato alcun file di progetto, MSBuild compila il file *helloworld.csproj*, poiché nella cartella corrente è presente un solo file di progetto. In questo modo viene creata l'applicazione *MSBuildSample* nella cartella *\Bin\\*.
 
@@ -363,7 +365,7 @@ Il file di progetto sarà ora simile al codice seguente:
 
 #### <a name="to-build-incrementally"></a>Per eseguire la compilazione incrementale
 
-1.  Nel file di progetto, aggiungere alla destinazione di apertura Build gli attributi seguenti:
+1. Nel file di progetto, aggiungere alla destinazione di apertura Build gli attributi seguenti:
 
     ```xml
     Inputs="@(Compile)" Outputs="$(OutputPath)$(AssemblyName).exe"
@@ -380,7 +382,7 @@ Il file di progetto sarà ora simile al codice seguente:
     </Target>
     ```
 
-2.  Testare la destinazione Build digitando **msbuild -v:d** al prompt dei comandi.
+2. Testare la destinazione Build digitando **msbuild -v:d** al prompt dei comandi.
 
      Tenere presente che *helloworld.csproj* è il file di progetto predefinito e che Build è la destinazione predefinita.
 

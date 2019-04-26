@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c30a7d89065a7fbea9781d1972dc01fedd5c742
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438204"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 
@@ -29,22 +29,22 @@ L'importazione di uno spazio dei nomi consente di usare nel codice elementi trat
 
 ### <a name="to-add-an-imported-namespace"></a>Per aggiungere uno spazio dei nomi importato
 
-1.  In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
+1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2.  Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
 
-3.  Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.
+3. Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.
 
     > [!NOTE]
-    >  Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
+    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per altre informazioni, vedere [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md).
 
 ### <a name="to-remove-an-imported-namespace"></a>Per rimuovere uno spazio dei nomi importato
 
-1.  In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
+1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2.  Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
 
-3.  Nell'elenco **Spazi dei nomi importati** deselezionare la casella di controllo per lo spazio dei nomi da rimuovere.
+3. Nell'elenco **Spazi dei nomi importati** deselezionare la casella di controllo per lo spazio dei nomi da rimuovere.
 
 ## <a name="user-imports"></a>Importazioni utente
  Le importazioni utente consentono di importare una classe specifica all'interno di uno spazio dei nomi anziché l'intero spazio dei nomi. Si supponga, ad esempio, che l'applicazione esegua l'importazione di uno spazio dei nomi <xref:System.Diagnostics> ma che l'unica classe di interesse per l'utente all'interno dello spazio dei nomi sia `Debug`. È possibile definire <xref:System.Diagnostics.Debug> come importazione utente e quindi rimuovere l'importazione per <xref:System.Diagnostics>.
@@ -53,28 +53,28 @@ L'importazione di uno spazio dei nomi consente di usare nel codice elementi trat
 
 ### <a name="to-add-a-user-import"></a>Per aggiungere un'importazione utente
 
-1.  In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
+1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2.  Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
 
-3.  Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome completo dello spazio dei nomi da importare, incluso lo spazio dei nomi radice.
+3. Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome completo dello spazio dei nomi da importare, incluso lo spazio dei nomi radice.
 
-4.  Fare clic sul pulsante **Aggiungi importazione utente** per aggiungere lo spazio dei nomi all'elenco **Spazi dei nomi importati**.
+4. Fare clic sul pulsante **Aggiungi importazione utente** per aggiungere lo spazio dei nomi all'elenco **Spazi dei nomi importati**.
 
     > [!NOTE]
     > Il pulsante **Aggiungi importazione utente** è disabilitato se lo spazio dei nomi corrisponde a uno spazio dei nomi già incluso nell'elenco. Non è infatti possibile aggiungere due volte la stessa importazione.
 
 ### <a name="to-update-a-user-import"></a>Per aggiornare un'importazione utente
 
-1.  In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
+1. In **Esplora soluzioni** fare doppio clic sul nodo **Progetto** del progetto.
 
-2.  Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
+2. Nella scheda **Creazione progetti** fare clic su **Riferimenti**.
 
-3.  Nell'elenco **Spazi dei nomi importati** selezionare lo spazio dei nomi da modificare.
+3. Nell'elenco **Spazi dei nomi importati** selezionare lo spazio dei nomi da modificare.
 
-4.  Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome del nuovo spazio dei nomi.
+4. Nella casella di testo sotto l'elenco **Spazi dei nomi importati** immettere il nome del nuovo spazio dei nomi.
 
-5.  Fare clic sul pulsante **Aggiorna importazione utente** per aggiornare lo spazio dei nomi nell'elenco **Spazi dei nomi importati**.
+5. Fare clic sul pulsante **Aggiorna importazione utente** per aggiornare lo spazio dei nomi nell'elenco **Spazi dei nomi importati**.
 
 ## <a name="see-also"></a>Vedere anche
 

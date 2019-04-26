@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310c43ea4dbdf1f50a76b574ec52baa589769034
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439133"
 ---
 # <a name="how-to-create-a-profiling-tools-etw-report"></a>Procedura: Creare un report ETW degli strumenti di profilatura
 Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in una sessione di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I dati ETW vengono raccolti in un file binario con estensione *etl*. Per altre informazioni sul report, vedere [Report Event Tracing for Windows (ETW)](../profiling/event-tracing-for-windows-etw-report.md).
 
 > [!NOTE]
->  Non è possibile visualizzare i report ETW nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+> Non è possibile visualizzare i report ETW nell'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 - Per informazioni su come raccogliere dati ETW usando l'interfaccia di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vedere [Procedura: Raccogliere dati ETW (Event Tracing for Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).
 
@@ -29,7 +29,7 @@ Il report ETW (Event Tracing for Windows) elenca gli eventi ETW registrati in un
 
 ### <a name="to-generate-an-etw-report"></a>Per generare un report ETW
 
--   In una finestra del **prompt dei comandi** digitare la riga di comando seguente:
+- In una finestra del **prompt dei comandi** digitare la riga di comando seguente:
 
      *ToolsPath* **VSPerfReport** *VSPFile*  **/Summary:ETW [/Xml]**
 

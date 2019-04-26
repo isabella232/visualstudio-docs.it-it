@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444852"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frequenza molto elevata di conflitti di blocco
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639024"
  Questa regola viene attivata quando misure adottate durante l'esecuzione di una profilatura indicano la presenza di quantità eccessivamente elevata di conflitti di blocco. I conflitti di blocco ritardano l'esecuzione di thread in attesa del blocco. È consigliabile analizzare anche quantità abbastanza limitate di conflitti di blocco in unit test o in test di carico eseguiti su hardware di fascia più bassa.
 
 > [!NOTE]
->  Quando la frequenza dei conflitti di blocco indicata nei dati di profilatura è significativa ma non eccessiva, viene generato il messaggio informativo [DA0038: Frequenza elevata di conflitti di blocco](../profiling/da0038-high-rate-of-lock-contentions.md) anziché questo messaggio di avviso.
+> Quando la frequenza dei conflitti di blocco indicata nei dati di profilatura è significativa ma non eccessiva, viene generato il messaggio informativo [DA0038: Frequenza elevata di conflitti di blocco](../profiling/da0038-high-rate-of-lock-contentions.md) anziché questo messaggio di avviso.
 
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso
  Fare doppio clic sul messaggio per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) dei dati di profilatura.  Individuare la colonna **LocksAndThreads CLR .NET\Conflitti/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui i conflitti di blocco sono maggiori rispetto ad altre fasi.

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438182"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Procedura: Configurare progetti per le piattaforme di destinazione
 
@@ -35,20 +35,20 @@ La **Gestione configurazione** consente di aggiungere rapidamente una nuova piat
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Per configurare un progetto per una piattaforma a 64 bit
 
-1.  Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
+1. Nella barra dei menu scegliere **Compilazione** > **Gestione configurazione**.
 
-2.  Nell'elenco **Piattaforma soluzione attiva** scegliere una piattaforma a 64 bit di destinazione per la soluzione e quindi scegliere il pulsante **Chiudi**.
+2. Nell'elenco **Piattaforma soluzione attiva** scegliere una piattaforma a 64 bit di destinazione per la soluzione e quindi scegliere il pulsante **Chiudi**.
 
-    1.  Se la piattaforma non compare nell'elenco **Piattaforma soluzione attiva**, scegliere **Nuovo**.
+    1. Se la piattaforma non compare nell'elenco **Piattaforma soluzione attiva**, scegliere **Nuovo**.
 
          Viene visualizzata la finestra di dialogo **Nuova piattaforma soluzione**.
 
-    2.  Nell'elenco **Digitare o selezionare la nuova piattaforma** scegliere **x64**.
+    2. Nell'elenco **Digitare o selezionare la nuova piattaforma** scegliere **x64**.
 
         > [!NOTE]
-        >  Se si specifica un nuovo nome per la configurazione, potrebbe essere necessario modificare le impostazioni in **Creazione progetti** per la piattaforma corretta.
+        > Se si specifica un nuovo nome per la configurazione, potrebbe essere necessario modificare le impostazioni in **Creazione progetti** per la piattaforma corretta.
 
-    3.  Se si vuole copiare le impostazioni da una configurazione di piattaforma corrente, selezionarla e quindi fare clic sul pulsante **OK**.
+    3. Se si vuole copiare le impostazioni da una configurazione di piattaforma corrente, selezionarla e quindi fare clic sul pulsante **OK**.
 
 Le proprietà per tutti i progetti destinati alla piattaforma a 64 bit vengono aggiornate e la compilazione successiva del progetto verrà ottimizzata per le piattaforme a 64 bit. 
 

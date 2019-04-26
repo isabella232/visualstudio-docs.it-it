@@ -14,67 +14,67 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ad6422e66195ff4ff63d010e7cabfec8e96d83a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439154"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>Procedura: Configurare la riduzione del rumore nelle visualizzazioni report
 I rapporti di prestazioni possono essere configurati per la riduzione del rumore limitando la quantità di dati presentati nelle visualizzazioni Albero delle chiamate e Allocazioni. Con la riduzione del rumore, i problemi di prestazioni sono più evidenti. In questo modo è più semplice analizzare i rapporti di prestazioni.
 
  Le opzioni di configurazione della riduzione del rumore includono le impostazioni seguenti:
 
--   **Trimming**: quando un rapporto viene analizzato, la visualizzazione ometterà le funzioni che rientrano all'interno delle impostazioni di valore e soglia che sono state configurate, come descritto nella procedura di trimming riportata di seguito. Il trimming è abilitato per impostazione predefinita.
+- **Trimming**: quando un rapporto viene analizzato, la visualizzazione ometterà le funzioni che rientrano all'interno delle impostazioni di valore e soglia che sono state configurate, come descritto nella procedura di trimming riportata di seguito. Il trimming è abilitato per impostazione predefinita.
 
--   **Riduzione**: se si abilita la riduzione, le funzioni consecutive su un percorso che soddisfano le impostazioni configurate verranno unite, come descritto nella procedura di riduzione riportata di seguito. La riduzione è abilitata per impostazione predefinita.
+- **Riduzione**: se si abilita la riduzione, le funzioni consecutive su un percorso che soddisfano le impostazioni configurate verranno unite, come descritto nella procedura di riduzione riportata di seguito. La riduzione è abilitata per impostazione predefinita.
 
 ### <a name="to-configure-trimming-for-a-performance-report"></a>Per configurare il trimming per un rapporto di prestazioni
 
-1.  Quando viene visualizzata una visualizzazione Albero delle chiamate o Allocazioni nel rapporto generato, dal menu **Sviluppatore** scegliere **Profiler** e quindi fare clic su **Opzioni riduzione rumore**.
+1. Quando viene visualizzata una visualizzazione Albero delle chiamate o Allocazioni nel rapporto generato, dal menu **Sviluppatore** scegliere **Profiler** e quindi fare clic su **Opzioni riduzione rumore**.
 
      Verrà visualizzata la finestra di dialogo **Riduzione rumore** .
 
-2.  Per abilitare il trimming, attenersi alla procedura seguente:
+2. Per abilitare il trimming, attenersi alla procedura seguente:
 
-    1.  Selezionare **Abilita trimming**. Questa è l'impostazione predefinita.
+    1. Selezionare **Abilita trimming**. Questa è l'impostazione predefinita.
 
         > [!NOTE]
-        >  Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
+        > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
 
-    2.  Configurare l'impostazione del valore usando l'elenco a discesa **Valore** e scegliendo l'impostazione applicabile.
+    2. Configurare l'impostazione del valore usando l'elenco a discesa **Valore** e scegliendo l'impostazione applicabile.
 
-    3.  Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
+    3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
 
-    4.  Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
 
-3.  Per disabilitare il trimming, deselezionare **Abilita trimming**.
+3. Per disabilitare il trimming, deselezionare **Abilita trimming**.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ### <a name="to-configure-folding-for-a-performance-report"></a>Per configurare la riduzione per un rapporto di prestazioni
 
-1.  Dal menu **Sviluppatore** scegliere **Profiler** e quindi fare clic su **Opzioni riduzione rumore**.
+1. Dal menu **Sviluppatore** scegliere **Profiler** e quindi fare clic su **Opzioni riduzione rumore**.
 
      Verrà visualizzata la finestra di dialogo **Riduzione rumore** .
 
-2.  Per abilitare la riduzione, attenersi alla procedura seguente:
+2. Per abilitare la riduzione, attenersi alla procedura seguente:
 
-    1.  Selezionare **Abilita riduzione**. Questa è l'impostazione predefinita.
+    1. Selezionare **Abilita riduzione**. Questa è l'impostazione predefinita.
 
         > [!NOTE]
-        >  Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
+        > Se è abilitata la riduzione del rumore, nel rapporto verrà visualizzata una barra informazioni. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md) e [Visualizzazione Allocazioni](../profiling/dotnet-memory-allocations-view.md).
 
-    2.  Configurare l'impostazione del valore usando l'elenco a discesa **Valore** e selezionando l'impostazione applicabile.
+    2. Configurare l'impostazione del valore usando l'elenco a discesa **Valore** e selezionando l'impostazione applicabile.
 
-    3.  Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
+    3. Configurare l'impostazione di soglia desiderata digitando un valore percentuale nella casella di testo **Soglia**.
 
-    4.  Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
+    4. Per abilitare l'avviso di riduzione del rumore nel rapporto generato, selezionare **Visualizza un avviso nel rapporto generato quando è abilitata Riduzione rumore**. Questa è l'impostazione predefinita.
 
-3.  Per disabilitare la riduzione, deselezionare **Abilita riduzione**.
+3. Per disabilitare la riduzione, deselezionare **Abilita riduzione**.
 
-4.  Fare clic su **OK**.
+4. Fare clic su **OK**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Personalizzare le visualizzazioni dei report degli strumenti per le prestazioni](../profiling/customizing-performance-tools-report-views.md)

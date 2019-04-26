@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e9aa6bcc89f0a9fb39d2a871119a0906b4243d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 459b495ea6f440a670c9a257566b19a1bc8756dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439639"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione .NET Framework autonoma per raccogliere dati di memoria tramite la riga di comando
 
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di Visual Studio per connettere il profiler a un'applicazione (client) NET Framework autonoma in esecuzione e raccogliere dati di memoria.
 
 > [!NOTE]
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
 Per connettersi a un'applicazione .NET Framework e raccogliere dati di memoria, è necessario usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate prima dell'avvio dell'applicazione di destinazione. Mentre il profiler è connesso all'applicazione, è possibile usare lo strumento *VSPerfCmd.exe* per sospendere e riprendere la raccolta dei dati.
 
@@ -55,14 +55,12 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.
 
-
      | Opzione | Description |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna Nome utente nella scheda Processi di Gestione attività di Windows. |
      | [/crosssession &#124; /cs](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'identificatore di sessione è elencato nella colonna ID sessione nella scheda Processi di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
      | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura. |
      | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
-
 
 4. Se necessario, avviare l'applicazione di destinazione nel modo usuale.
 
@@ -98,7 +96,7 @@ Per terminare una sessione di profilatura, il profiler deve essere disconnesso d
 
     - Digitare **VSPerfCmd /detach**
 
-         oppure
+         -oppure-
 
     - Chiudere l'applicazione di destinazione.
 

@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385807"
 ---
 # <a name="bscmake-task"></a>Attività BscMake
 > [!IMPORTANT]
->  Lo strumento BscMake non viene più usato dall'IDE di Visual Studio. A partire da Visual Studio 2008 le informazioni di visualizzazione vengono automaticamente archiviate in un file *SDF* nella cartella della *soluzione*.
+> Lo strumento BscMake non viene più usato dall'IDE di Visual Studio. A partire da Visual Studio 2008 le informazioni di visualizzazione vengono automaticamente archiviate in un file *SDF* nella cartella della *soluzione*.
 
  Esegue il wrapping dello strumento Microsoft Browse Information Maintenance Utility (*bscmake.exe*).  Lo strumento *bscmake.exe* genera un file di informazioni di visualizzazione (*BSC*) dai file browser di origine (*SBR*) creati durante la compilazione. Usare il **Visualizzatore oggetti** per visualizzare un file *BSC*. Per altre informazioni, vedere [Riferimenti a BSCMAKE](/cpp/build/reference/bscmake-reference).
 

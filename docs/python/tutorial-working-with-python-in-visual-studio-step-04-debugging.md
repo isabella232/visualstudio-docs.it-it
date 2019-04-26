@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002823"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Passaggio 4: eseguire il codice nel debugger
 
-**Passaggio precedente: [Usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
+**Passaggio precedente: [usare la finestra interattiva REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
 Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di modifica completa e la finestra **Interattiva**, Visual Studio offre il debug completo per il codice Python. Nel debugger, è possibile eseguire il codice in dettaglio, incluse le interazioni di un ciclo. È anche possibile sospendere il programma ogni volta che vengono soddisfatte determinate condizioni. Quando il programma viene sospeso nel debugger, è possibile esaminare in qualsiasi momento lo stato dell'intero programma e modificare il valore di variabili. Tali azioni sono essenziali per individuare i bug del programma e offrire supporto per seguire attentamente il flusso esatto del programma.
 
@@ -101,7 +101,7 @@ Oltre a consentire di gestire i progetti, rendendo disponibili un'esperienza di 
 ## <a name="next-step"></a>Passaggio successivo
 
 > [!div class="nextstepaction"]
-> [installare pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [Installare i pacchetti nell'ambiente Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 
