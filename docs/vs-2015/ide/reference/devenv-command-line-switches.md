@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444745"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050710"
 La riga di comando devenv consente di impostare varie opzioni per l'ambiente di sviluppo integrato (IDE, Integrated Development Environment) e di compilare, eseguire il debug e distribuire i progetti dalla riga di comando. Usare queste opzioni per eseguire l'IDE da uno script o un file con estensione bat, ad esempio uno script di compilazione notturna, o per avviare l'IDE in una configurazione particolare.  
   
 > [!NOTE]
->  Per le attività relative alla compilazione, è ora consigliabile usare MSBuild anziché devenv. Per altre informazioni, vedere [Command-Line Reference](../../msbuild/msbuild-command-line-reference.md) (Informazioni di riferimento sulla riga di comando).  
+> Per le attività relative alla compilazione, è ora consigliabile usare MSBuild anziché devenv. Per altre informazioni, vedere [Command-Line Reference](../../msbuild/msbuild-command-line-reference.md) (Informazioni di riferimento sulla riga di comando).  
   
 > [!NOTE]
->  Per poter usare le opzioni [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) è necessario eseguire devenv come amministratore.  
+> Per poter usare le opzioni [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) è necessario eseguire devenv come amministratore.  
   
 ## <a name="devenv-switch-syntax"></a>Sintassi delle opzioni devenv  
  Per impostazione predefinita, i comandi devenv passano le opzioni all'utilità devenv.com.  
@@ -57,7 +57,7 @@ La riga di comando devenv consente di impostare varie opzioni per l'ambiente di 
 - Quando si specifica un nome di file di progetto anziché un nome di file di soluzione, un comando `devenv` cercherà nella cartella padre del file di progetto un file di soluzione con lo stesso nome. Ad esempio, il comando `devenv /build myproject1.vbproj` cercherà nella cartella padre un file di soluzione denominato "myproject1.sln".  
   
     > [!NOTE]
-    >  Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, verrà creato un file di soluzione temporaneo, denominato per questo progetto e che vi fa riferimento.  
+    > Nella cartella padre deve trovarsi un solo e unico file che faccia riferimento a questo progetto. Se la cartella padre non contiene alcun file di soluzione che fa riferimento a questo progetto, o se la cartella padre contiene due o più file di soluzione che vi fanno riferimento, verrà creato un file di soluzione temporaneo, denominato per questo progetto e che vi fa riferimento.  
   
 - Quando i percorsi e i nomi dei file contengono spazi, è necessario racchiuderli tra virgolette doppie (""). Ad esempio, "c:\progetto a\\".  
   

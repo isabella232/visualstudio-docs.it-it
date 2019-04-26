@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405658"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: Visualizzare i numeri di riga nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088262"
 È possibile visualizzare o nascondere la numerazione delle righe nel codice.  
   
 > [!NOTE]
->  A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice  
  I numeri di riga non vengono aggiunti al codice; servono solo da riferimento. Se si vogliono stampare i numeri di riga, selezionare la casella di controllo **Includi numeri di riga** nella finestra di dialogo **Stampa**.  
@@ -39,7 +39,7 @@ ms.locfileid: "60088262"
 2. ![Opzioni per la visualizzazione di numeri di riga nell'editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  A seconda del linguaggio o delle impostazioni, è possibile che sia necessario selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni** per visualizzare il sottonodo **Tutti i linguaggi**.  
+> A seconda del linguaggio o delle impostazioni, è possibile che sia necessario selezionare la casella di controllo **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni** per visualizzare il sottonodo **Tutti i linguaggi**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  

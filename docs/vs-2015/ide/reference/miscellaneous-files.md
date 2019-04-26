@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441693"
 ---
 # <a name="miscellaneous-files"></a>File esterni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "59658492"
  La cartella File esterni rappresenta i file come collegamenti. Sebbene questa cartella non sia parte di una soluzione, quando si apre una soluzione alcuni o tutti i file esterni che sono stati aperti quando la soluzione è stata chiusa l'ultima volta vengono aperti nuovamente, in base alle impostazioni per la cartella.  
   
 > [!NOTE]
->  Alcuni dei file che non vengono visualizzati nella cartella File esterni sono file che non possono essere modificati all'interno dell'IDE, ad esempio file con estensione zip e doc. L'IDE non rileverà i file che possono essere modificati solo tramite un editor esterno.  
+> Alcuni dei file che non vengono visualizzati nella cartella File esterni sono file che non possono essere modificati all'interno dell'IDE, ad esempio file con estensione zip e doc. L'IDE non rileverà i file che possono essere modificati solo tramite un editor esterno.  
   
 ## <a name="commands-available-in-the-ide"></a>Comandi disponibili nell'IDE  
  I menu, le barre degli strumenti e i comandi in essi contenuti cambiano a seconda del formato del file aperto. Quando si apre un file di testo, ad esempio, si apre la barra degli strumenti dell'editor di testo e sono disponibili i relativi comandi. Se in seguito si apre un file XML Schema, viene visualizzata la barra degli strumenti XML Schema. Mentre si modifica l'XML Schema, i comandi della barra degli strumenti dell'editor di testo o la stessa barra degli strumenti non sono disponibili. L'XML Schema è la finestra attiva e di conseguenza ha il contesto della selezione corrente. Quando si passa da un file di progetto a un file esterno non vengono più visualizzati tutti i comandi correlati al progetto ma soltanto quelli direttamente correlati al file esterno.  
