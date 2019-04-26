@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419799"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "59663914"
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.  
   
 > [!TIP]
->  La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Creazione di applicazioni dati con Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Creazione di applicazioni dati con Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente  
  Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.  
