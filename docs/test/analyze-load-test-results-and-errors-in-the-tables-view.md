@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823041"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizzare gli errori e i risultati dei test di carico nella visualizzazione Tabelle dell'Analizzatore test di carico
 
@@ -50,7 +50,7 @@ La maggior parte di valori numerici visualizzata in una tabella per i contatori 
 
 Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle esecuzioni di test di carico.
 
-|Nome tabella|Descrizione|
+|Nome tabella|Description|
 |-|-|
 |Errori|Visualizza un elenco di errori generati durante l'esecuzione del test di carico. Per altre informazioni, vedere la [Tabella degli errori](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) in questo argomento e [Analizzare i risultati dei test di carico](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Visualizza un elenco di pagine visitate durante l'esecuzione di un test di carico. Alcuni dati di questa tabella sono disponibili solo al termine di un test di carico. Per altre informazioni, vedere [Procedura: Visualizzare il tempo di risposta delle pagine Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
@@ -72,7 +72,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
  Nella tabella seguente sono elencate le colonne della tabella **Richieste**:
 
-|Colonna|Descrizione|Visibile per impostazione predefinita|
+|Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |**Richiesta**|URL della richiesta, ad esempio *home.html* o *orange-arrow.gif*.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -94,7 +94,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
  Nella tabella seguente sono elencate le colonne della tabella **Test**.
 
-|Colonna|Descrizione|Visibile per impostazione predefinita|
+|Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |**Test**|Nome del test.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -118,7 +118,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 > [!NOTE]
 > Per visualizzare tutte le colonne, è necessario abilitare la proprietà Intervallo archiviazione dettagli associata all'impostazione esecuzione test attiva. Per altre informazioni, vedere [Procedura: Specificare la proprietà Intervallo archiviazione dettagli](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
-|Colonna|Descrizione|Visibile senza i dettagli dell'intervallo|
+|Colonna|Description|Visibile senza i dettagli dell'intervallo|
 |-|-|-|
 |**Transazione**|Nome della transazione.|Sì|
 |**Scenario**|Nome dello scenario.|Sì|
@@ -144,7 +144,7 @@ Nella tabella seguente sono elencate le tabelle disponibili per l'analisi delle 
 
  La tabella degli errori contiene le seguenti colonne:
 
-|Colonna|Descrizione|Visibile per impostazione predefinita|
+|Colonna|Description|Visibile per impostazione predefinita|
 |-|-|-|
 |Tipo|Il tipo di errore, ad esempio HttpError.|Sì|
 |Sottotipo|Il sottotipo di errore, ad esempio LoadTestException.|Sì|
@@ -162,7 +162,7 @@ Nella tabella degli errori sono raggruppati gli errori per tipo e sottotipo. Per
 
 La tabella **Errori test di carico** contiene le seguenti colonne:
 
-|Colonna|Descrizione|
+|Colonna|Description|
 |-|-|
 |**Ora**|L'ora durante il test di carico in cui si è verificato l'errore.|
 |**Agente**|Il nome del computer agente in cui si è verificato l'errore. Questo è importante quando si eseguono test di carico usando controller di test e agenti di test. Per altre informazioni, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).|

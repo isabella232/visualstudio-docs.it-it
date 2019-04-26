@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informazioni sulle modalità di acquisto e di gestione delle sottoscrizioni cloud di Visual Studio per Cloud Solution Provider.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978510"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acquistare e gestire sottoscrizioni cloud di Visual Studio per i clienti
 
@@ -20,10 +20,8 @@ I partner inclusi nel programma [Cloud Solution Provider (CSP)](https://partner.
 
 [Confrontare le opzioni di sottoscrizione cloud](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
-
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -84,7 +82,6 @@ Di seguito viene illustrato come interpretare le informazioni disponibili in que
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Enterprise   |
 | Visual Studio     | Professionale           |  Sottoscrizione                         | Sottoscrizione mensile di Visual Studio Professional |
-
 
 Offriamo uno sconto del 5% per la sesta unità acquistata (per un determinato cliente) mensilmente di ogni sottoscrizione di Visual Studio. Questo è il motivo per cui sono visualizzate due righe per ogni opzione di sottoscrizione. Una riga mostra un valore minimo pari a 0, da interpretare come prezzo di base per le unità da 1 a 5. L'altra riga mostra un valore minimo pari a 5, ovvero il prezzo scontato del % 5 che si applica dalle 6 unità in poi.
 

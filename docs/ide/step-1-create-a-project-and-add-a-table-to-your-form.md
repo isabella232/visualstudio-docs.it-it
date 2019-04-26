@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979556"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 
@@ -47,9 +47,9 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 4. Nella finestra **Proprietà** impostare le proprietà del form seguenti.
 
-   1.  Modificare la proprietà **Text** del form da **Form1** a **Matching Game**. Questo testo viene visualizzato nella parte superiore della finestra del gioco.
+   1. Modificare la proprietà **Text** del form da **Form1** a **Matching Game**. Questo testo viene visualizzato nella parte superiore della finestra del gioco.
 
-   2.  Impostare le dimensioni del form su 550 pixel di larghezza per 550 pixel di altezza. A tale scopo, impostare la proprietà **Size** su **550, 550** o trascinare l'angolo del form fino a raggiungere le dimensioni corrette nell'angolo inferiore destro dell'IDE (Integrated Development Environment).
+   2. Impostare le dimensioni del form su 550 pixel di larghezza per 550 pixel di altezza. A tale scopo, impostare la proprietà **Size** su **550, 550** o trascinare l'angolo del form fino a raggiungere le dimensioni corrette nell'angolo inferiore destro dell'IDE (Integrated Development Environment).
 
 5. Per visualizzare la casella degli strumenti, selezionare la scheda **Casella degli strumenti** sul lato sinistro dell'IDE.
 
@@ -76,19 +76,19 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
     Mentre TableLayoutPanel è selezionato, aprire la casella degli strumenti e aggiungere un controllo <xref:System.Windows.Forms.Label> (che si trova nella categoria **Controlli comuni**) alla cella superiore sinistra di TableLayoutPanel. Il controllo etichetta dovrebbe ora essere selezionato nell'IDE. Impostare le proprietà indicate di seguito.
 
-   1.  Verificare che la proprietà **BackColor** dell'etichetta sia impostata su **CornflowerBlue**.
+   1. Verificare che la proprietà **BackColor** dell'etichetta sia impostata su **CornflowerBlue**.
 
-   2.  Impostare la proprietà **AutoSize** su **False**.
+   2. Impostare la proprietà **AutoSize** su **False**.
 
-   3.  Impostare la proprietà **Dock** su **Fill**.
+   3. Impostare la proprietà **Dock** su **Fill**.
 
-   4.  Impostare la proprietà **TextAlign** su **MiddleCenter** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante al centro. In questo modo l'icona verrà visualizzata al centro della cella.
+   4. Impostare la proprietà **TextAlign** su **MiddleCenter** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante al centro. In questo modo l'icona verrà visualizzata al centro della cella.
 
-   5.  Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione (**...**).
+   5. Scegliere la proprietà **Font**. Verrà visualizzato un pulsante con i puntini di sospensione (**...**).
 
-   6.  Scegliere il pulsante con i puntini di sospensione e impostare **Tipo di carattere** su **Webdings**, **Stile** su **Grassetto** e **Dimensione** su **48**.
+   6. Scegliere il pulsante con i puntini di sospensione e impostare **Tipo di carattere** su **Webdings**, **Stile** su **Grassetto** e **Dimensione** su **48**.
 
-   7.  Impostare la proprietà **Text** dell'etichetta sulla lettera **c**.
+   7. Impostare la proprietà **Text** dell'etichetta sulla lettera **c**.
 
         La cella superiore sinistra in TableLayoutPanel dovrebbe ora contenere un riquadro nero al centro su uno sfondo blu.
 
@@ -106,6 +106,6 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Per tornare all'argomento introduttivo, vedere [Esercitazione 3: Creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md).
+- Per tornare all'argomento introduttivo, vedere [Esercitazione 3: Creare un gioco di abbinamenti](../ide/tutorial-3-create-a-matching-game.md).

@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948247"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurazione di una sottoscrizione per sviluppo/test con pagamento in base al consumo di Azure
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
@@ -31,11 +31,9 @@ ms.locfileid: "56843909"
    > [!div class="mx-imgBorder"]
    > ![Iscrizione all'offerta con pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Specificare quindi le informazioni di fatturazione per l'account e fare clic su **Avanti**.  Si tratta della carta di credito su cui verranno effettuati gli addebiti per tutti gli acquisti relativi ad Azure.
    > [!div class="mx-imgBorder"]
    > ![Pagamento dell'offerta con pagamento in base al consumo di Azure](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. Nella sezione Contratto fare clic sulla casella di controllo per accettare il contratto di sottoscrizione, i dettagli dell'offerta e l'informativa sulla privacy, quindi fare clic su **Acquisto**.
 

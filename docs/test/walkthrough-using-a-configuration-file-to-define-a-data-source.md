@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976199"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 
@@ -52,7 +52,7 @@ Per completare questa procedura dettagliata, è necessario:
 
 3. Selezionare il modello **File di configurazione dell'applicazione** e fare clic su **Aggiungi**.
 
-##  <a name="define-a-custom-configuration-section"></a>Definire una sezione di configurazione personalizzata
+## <a name="define-a-custom-configuration-section"></a>Definire una sezione di configurazione personalizzata
 
 Esaminare il file *app.config*. Il file contiene almeno la dichiarazione XML e un elemento radice.
 

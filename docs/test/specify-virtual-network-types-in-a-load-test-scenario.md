@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990660"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Specificare i tipi di rete virtuale in uno scenario di test di carico
 
@@ -41,17 +41,17 @@ Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test
 
 Visual Studio usa l'emulazione di rete reale basata sul software per tutti i tipi di test, inclusi i test di carico. L'emulazione di rete reale simula le condizioni della rete tramite manipolazione diretta dei pacchetti di rete. L'emulatore di rete reale è in grado di emulare il comportamento di reti cablate e wireless tramite un collegamento fisico affidabile, ad esempio un cavo Ethernet. Gli attributi di rete seguenti sono incorporati nell'emulazione di rete reale:
 
--   Tempo di round trip nella rete (latenza)
+- Tempo di round trip nella rete (latenza)
 
--   Quantità di larghezza di banda disponibile
+- Quantità di larghezza di banda disponibile
 
--   Comportamento di accodamento
+- Comportamento di accodamento
 
--   Perdita di pacchetti
+- Perdita di pacchetti
 
--   Riordinamento dei pacchetti
+- Riordinamento dei pacchetti
 
--   Propagazioni degli errori
+- Propagazioni degli errori
 
 L'emulazione di rete reale offre anche flessibilità di filtro dei pacchetti di rete in base agli indirizzi IP o ai protocolli, ad esempio TCP, UDP e ICMP.
 
@@ -59,30 +59,30 @@ L'emulazione di rete reale può essere utilizzata dai tester e dagli sviluppator
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Per aggiungere nuove reti a uno scenario
 
-1.  Durante il processo di specifica della combinazione di reti per uno scenario, scegliere **Aggiungi**.
+1. Durante il processo di specifica della combinazione di reti per uno scenario, scegliere **Aggiungi**.
 
      Una nuova voce di rete verrà aggiunta alla griglia.
 
     > [!NOTE]
     > Per visualizzare la finestra di dialogo **Modifica combinazione di reti** fare clic con il pulsante destro del mouse su uno scenario esistente e quindi scegliere **Modifica combinazione di reti**.
 
-2.  Nella colonna **Tipo rete** scegliere la freccia relativa alla nuova voce. Scegliere il tipo di rete desiderato.
+2. Nella colonna **Tipo rete** scegliere la freccia relativa alla nuova voce. Scegliere il tipo di rete desiderato.
 
-3.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Al termine dell'aggiunta delle reti, scegliere **OK**.
+4. Al termine dell'aggiunta delle reti, scegliere **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Per rimuovere reti da uno scenario
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Fare clic con il pulsante destro del mouse sullo scenario dal quale si intende rimuovere una rete e scegliere **Modifica combinazione di reti**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di reti**.
+2. Fare clic con il pulsante destro del mouse sullo scenario dal quale si intende rimuovere una rete e scegliere **Modifica combinazione di reti**. Verrà visualizzata la finestra di dialogo **Modifica combinazione di reti**.
 
-3.  Selezionare la rete nella griglia e scegliere **Rimuovi**.
+3. Selezionare la rete nella griglia e scegliere **Rimuovi**.
 
-4.  (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Facoltativo) Modificare il controllo combinazione per specificare la distribuzione dei test. Per altre informazioni, vedere [Informazioni sul controllo combinazione](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Al termine della rimozione delle reti, scegliere **OK**.
+5. Al termine della rimozione delle reti, scegliere **OK**.
 
 ## <a name="about-the-mix-control"></a>Informazioni sul controllo combinazione
 

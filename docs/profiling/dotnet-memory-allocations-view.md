@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c70845547da5f16aa0744f522448880605ec2ff9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970096"
 ---
 # <a name="net-memory-allocations-view"></a>Visualizzazione Allocazioni per la memoria .NET
 Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzione della profilatura. Ogni tipo è il nodo radice di un albero delle chiamate in cui vengono visualizzati i percorsi di esecuzione delle funzioni che hanno generato le allocazioni del tipo.
@@ -36,7 +36,7 @@ Nella visualizzazione Allocazioni sono elencati i tipi creati durante l'esecuzio
 ## <a name="highlight-the-execution-hot-path"></a>Evidenziare il percorso critico di esecuzione
  È possibile trovare il percorso di esecuzione dell'albero delle chiamate che ha creato la maggior parte degli oggetti del tipo padre.
 
--   Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul tipo o sulla funzione e quindi scegliere **Espandi percorso critico**.
+- Per visualizzare il percorso più attivo, fare clic con il pulsante destro del mouse sul tipo o sulla funzione e quindi scegliere **Espandi percorso critico**.
 
 |Colonna|Description|
 |------------|-----------------|

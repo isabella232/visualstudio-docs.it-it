@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897397"
 ---
 # <a name="image-editor"></a>Editor immagini
 
@@ -111,7 +111,7 @@ I comandi che influiscono sullo stato dell'**editor di immagini** si trovano nel
 
 La tabella seguente descrive gli elementi nella barra degli strumenti della **modalità dell'editor di immagini**, elencati nell'ordine di visualizzazione da sinistra verso destra:
 
-|Elemento della barra degli strumenti|Descrizione|
+|Elemento della barra degli strumenti|Description|
 |------------------|-----------------|
 |**Selezione**|Consente di selezionare un'area rettangolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
@@ -135,7 +135,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 
 La tabella seguente descrive gli elementi nella barra degli strumenti dell'**editor di immagini**, elencati nell'ordine di visualizzazione dall'alto verso il basso:
 
-|Elemento della barra degli strumenti|Descrizione|
+|Elemento della barra degli strumenti|Description|
 |------------------|-----------------|
 |**Matita**|Usa la selezione di colore attiva per disegnare un tratto con aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
 |**Pennello**|Usa la selezione di colore attiva per disegnare un tratto con anti-aliasing. È possibile impostare il colore e lo spessore del tratto nella finestra **Proprietà**.|
@@ -158,7 +158,7 @@ Alcuni formati di immagine, ad esempio i formati con estensione *DDS*, DirectDra
 
 La tabella seguente descrive come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:
 
-|Strumento|Descrizione|
+|Strumento|Description|
 |----------|-----------------|
 |**Matita**, **Pennello**, **Aerografo**, **Linea**, **Rettangolo**, **Rettangolo arrotondato**, **Ellisse**, **Testo**|Per fondere la selezione di colore attiva insieme all'immagine, nella finestra **Proprietà** espandere il gruppo di proprietà **Canali** e impostare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.<br /><br /> Per disegnare usando la selezione di colore attiva e lasciare invariato il valore alfa dell'immagine, deselezionare la casella di controllo **Disegno** per il canale **Alfa** e quindi disegnare normalmente.|
 |**Riempimento**|Per fondere la selezione di colore attiva insieme all'immagine, basta scegliere l'area da riempire.<br /><br /> Per usare la selezione di colore attiva, incluso il valore del canale alfa, per sovrascrivere l'immagine, tenere premuto **MAIUSC** e scegliere l'area da riempire.|
@@ -169,7 +169,7 @@ La tabella seguente descrive come i diversi tipi di strumenti controllano la mod
 
 La tabella seguente descrive le proprietà dell'immagine:
 
-|Proprietà|Descrizione|
+|Proprietà|Description|
 |--------------|-----------------|
 |Larghezza|Larghezza dell'immagine.|
 |Altezza|Altezza dell'immagine.|
@@ -214,7 +214,7 @@ Dopo aver selezionato un'area, è possibile ridimensionarla o ridimensionarne i 
 
 La tabella seguente illustra le combinazioni di tasti di modifica valide:
 
-|CTRL|Shift|ALT|Descrizione|
+|CTRL|Shift|ALT|Description|
 |----------|-----------|---------|-----------------|
 ||||Ridimensiona il contenuto dell'area selezionata.|
 ||**MAIUSC**||Ridimensiona in modo proporzionale il contenuto dell'area selezionata.|
@@ -286,7 +286,7 @@ La tabella seguente descrive le proprietà degli strumenti:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce informazioni generali sugli strumenti disponibili in Visual Studio per usare gli asset grafici come trame, immagini, modelli 3D ed effetti shader.|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'editor dei modelli di Visual Studio per lavorare con i modelli 3D.|

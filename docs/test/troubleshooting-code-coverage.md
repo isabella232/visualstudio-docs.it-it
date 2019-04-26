@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990491"
 ---
 # <a name="troubleshoot-code-coverage"></a>Risolvere i problemi di code coverage
 
@@ -43,9 +43,9 @@ Risoluzione: in Esplora test scegliere **Esegui tutto** per verificare che i tes
 
 Quando si modificano e si rieseguono i test, i risultati di un code coverage precedente possono rimanere visibili, inclusa la colorazione del codice dell'esecuzione precedente.
 
-1.  Eseguire Analizza code coverage.
+1. Eseguire Analizza code coverage.
 
-2.  Verificare che sia stato selezionato il set di risultati più recente nella finestra **Risultati code coverage**.
+2. Verificare che sia stato selezionato il set di risultati più recente nella finestra **Risultati code coverage**.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>I file con estensione pdb (simbolo) non sono disponibili
 
@@ -91,17 +91,17 @@ Spiegazione&mdash;È possibile eseguire gli unit test con un file personalizzato
 
 Risoluzione: esistono due possibili tipi di errori:
 
--   **Errore XML**
+- **Errore XML**
 
      Aprire il file con estensione *runsettings* nell'editor XML di Visual Studio. Individuare le indicazioni degli errori.
 
--   **Errore di espressione regolare**
+- **Errore di espressione regolare**
 
      Ogni stringa del file è un'espressione regolare. Rivederle singolarmente per individuare gli errori, in particolare cercare:
 
-    -   Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`
+    - Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`
 
-    -   L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`
+    - L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>File personalizzato con estensione runsettings con esclusioni non corrette
 

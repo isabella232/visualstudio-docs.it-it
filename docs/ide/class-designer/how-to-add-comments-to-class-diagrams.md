@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975526"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Procedura: Aggiungere commenti a diagrammi classi
 
@@ -31,9 +31,9 @@ Un commento risiede nella visualizzazione del diagramma classi in **Progettazion
 
 ## <a name="to-add-a-comment"></a>Per aggiungere un commento
 
-1.  Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.
+1. Trascinare un commento dalla **casella degli strumenti di Progettazione classi** nel diagramma classi.
 
-2.  Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.
+2. Fare clic sulla nuova forma Commenti nel diagramma e digitare il testo desiderato.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968597"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 
@@ -70,11 +70,11 @@ Le impostazioni seguenti consentono di impostare le opzioni di configurazione de
 
  **Option Strict** Specifica se applicare la semantica rigorosa per i tipi. Quando **Option Strict** è **On**, le condizioni seguenti causano un errore in fase di compilazione:
 
--   Conversioni implicite verso un tipo di dati più piccolo
+- Conversioni implicite verso un tipo di dati più piccolo
 
--   Associazione tardiva
+- Associazione tardiva
 
--   Tipizzazione implicita che comporta un tipo `Object`
+- Tipizzazione implicita che comporta un tipo `Object`
 
 Questi errori si verificano in presenza di una conversione implicita verso un tipo di dati più piccolo. Per altre informazioni, vedere [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement) (Istruzione Open Strict), [Conversioni implicite ed esplicite](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [Widening and Narrowing Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions) (Conversioni verso un tipo di dati più grande e più piccolo).
 
@@ -91,11 +91,11 @@ Quando si crea un progetto, l'impostazione **Option Strict** nella **pagina Comp
 **Singoli avvisi di Option Strict.**
 La sezione **Configurazioni avvisi** della **pagina Compilazione** include impostazioni corrispondenti alle tre condizioni che causano un errore in fase di compilazione quando `Option Strict` è On. Queste impostazioni sono le seguenti:
 
--   **Conversione implicita**
+- **Conversione implicita**
 
--   **Binding tardivo. La chiamata potrebbe non riuscire in fase di esecuzione.**
+- **Binding tardivo. La chiamata potrebbe non riuscire in fase di esecuzione.**
 
--   **Tipo implicito. Verrà utilizzato oggetto.**
+- **Tipo implicito. Verrà utilizzato oggetto.**
 
 Quando si imposta **Option Strict** su **On**, tutte e tre queste impostazioni di configurazione degli avvisi vengono impostate su **Errore**. Quando si imposta **Option Strict** su **Off**, tutte e tre le impostazioni vengono impostate su **Nessuno**.
 
@@ -127,11 +127,11 @@ L'esecuzione come applicazione a 64 bit raddoppia le dimensioni del puntatore e 
 
 Questa casella di controllo è disponibile solo se tutte le condizioni seguenti sono true:
 
--   Nella **pagina Compilazione** l'elenco **CPU destinazione** è impostato su **Qualsiasi CPU**.
+- Nella **pagina Compilazione** l'elenco **CPU destinazione** è impostato su **Qualsiasi CPU**.
 
--   Nella **pagina Applicazione** l'elenco **Tipo di applicazione** specifica che il progetto è un'applicazione.
+- Nella **pagina Applicazione** l'elenco **Tipo di applicazione** specifica che il progetto è un'applicazione.
 
--   Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.
+- Nella **pagina Applicazione** l'elenco **Framework di destinazione** specifica .NET Framework 4.5.
 
 **Configurazioni avvisi** Questa tabella elenca le condizioni di compilazione e il livello di notifica corrispondente **Nessuno**, **Avviso** o **Errore** per ognuna.
 
@@ -158,7 +158,6 @@ Questa opzione non è disponibile per i progetti Applicazione Windows o Applicaz
 **Eventi di compilazione** Fare clic su questo pulsante per accedere alla finestra di dialogo **Eventi di compilazione**. Usare questa finestra di dialogo per specificare le istruzioni di configurazione pre-compilazione e post-compilazione per il progetto. Questa finestra di dialogo si applica esclusivamente ai progetti Visual Basic. Per altre informazioni, vedere [Finestra di dialogo Eventi di compilazione (Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Opzioni di compilazione avanzate** Fare clic su questo pulsante per accedere alla finestra di dialogo **Impostazioni del compilatore avanzate**. Usare la finestra di dialogo **Impostazioni del compilatore avanzate** per specificare le proprietà avanzate di configurazione della compilazione per un progetto. Questa finestra di dialogo si applica esclusivamente ai progetti Visual Basic. Per altre informazioni, vedere [Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Vedere anche
 

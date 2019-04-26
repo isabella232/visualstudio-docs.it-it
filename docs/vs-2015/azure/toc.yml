@@ -1,115 +1,108 @@
-items:
 - name: Sviluppo per Azure con Visual Studio
   href: index.yml
   expanded: true
 - name: Pubblicare in Azure
-  items:
-  - name: Pubblicare un servizio cloud
-    href: vs-azure-tools-publishing-a-cloud-service.md
-  - name: Pubblicare tramite l'IDE di Visual Studio
-    href: vs-azure-tools-publish-azure-application-wizard.md
-  - name: Pubblicare tramite uno script di PowerShell
-    href: vs-azure-tools-publishing-using-powershell-scripts.md
-  - name: Pubblicare un'app Web ASP.NET in una macchina virtuale di Azure
-    href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Pubblicare un'app Web in Servizi cloud di Azure
-    href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
   expanded: true
-- name: Connettersi ai servizi di Azure
   items:
-  - name: Aggiungere Archiviazione di Azure
-    href: vs-azure-tools-connected-services-storage.md
-  - name: Aggiungere Azure Active Directory (AD)
-    href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-  - name: Aggiungere Servizi mobili
-    href: vs-azure-tools-connected-services-add-mobile-services.md
-  expanded: false
-- name: Sviluppo per Servizi cloud di Azure
-  items:
-  - name: Utilizzare progetti di servizi cloud
-    items:
-    - name: Accedere a cloud di Azure privati
-      href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
-    - name: Creare un progetto di servizio cloud di Azure
-      href: vs-azure-tools-azure-project-create.md
-    - name: Gestire i ruoli nei servizi cloud di Azure
-      href: vs-azure-tools-cloud-service-project-managing-roles.md
-    - name: Preparare la pubblicazione o la distribuzione di un servizio cloud
-      href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
-    - name: Mantenere un indirizzo IP virtuale costante per un servizio cloud di Azure
-      href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
-    - name: Compilare i progetti di Azure dalla riga di comando
-      href: vs-azure-tools-command-line-build.md
-    - name: Configurare i ruoli di servizi cloud di Azure
-      href: vs-azure-tools-configure-roles-for-cloud-service.md
-    - name: Configurare un progetto di servizio cloud di Azure
-      href: vs-azure-tools-configuring-an-azure-project.md
-    - name: Configurare il progetto di Azure per l'uso di più configurazioni di servizio
-      href: vs-azure-tools-multiple-services-project-configurations.md
-    - name: Aggiornare i progetti alla versione corrente di Strumenti di Azure
-      href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
-  - name: Eseguire test e debug di un servizio cloud
-    items:
-    - name: Eseguire il debug di un servizio cloud o di una macchina virtuale di Azure
-      href: vs-azure-tools-debug-cloud-services-virtual-machines.md
-    - name: Informazioni sui vari modi disponibili per eseguire il debug di un servizio cloud di Azure
-      href: vs-azure-tools-debugging-cloud-services-overview.md
-    - name: Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
-      href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
-    - name: Uso dell'emulatore Express per eseguire un servizio cloud di Azure ed eseguirne il debug in un computer locale
-      href: vs-azure-tools-emulator-express-debug-run.md
-    - name: Eseguire il debug di un servizio cloud di Azure pubblicato con IntelliTrace
-      href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
-    - name: Testare le prestazioni di un servizio cloud
-      href: vs-azure-tools-performance-profiling-cloud-services.md
-    - name: Ottimizzare il codice di Azure
-      href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
-  - name: Pubblicare un servizio cloud in Azure
-    items:
-    - name: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure
-      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-    - name: Usare la procedura guidata di Visual Studio Pubblica applicazione Azure
-      href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: Pubblicare un servizio cloud con Visual Studio
+    - name: Pubblicare un servizio cloud
       href: vs-azure-tools-publishing-a-cloud-service.md
-    - name: Usare script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
+    - name: Pubblicare tramite l'IDE di Visual Studio
+      href: vs-azure-tools-publish-azure-application-wizard.md
+    - name: Pubblicare tramite uno script di PowerShell
       href: vs-azure-tools-publishing-using-powershell-scripts.md
-    - name: Publish-WebApplicationVM (script di Windows PowerShell)
-      href: vs-azure-tools-publish-webapplicationvm.md
-    - name: Publish-WebApplicationWebSite (script di Windows PowerShell)
-      href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
-    - name: Gestire le configurazioni e i profili dei servizi
-      href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
-    - name: Configurare le credenziali di autenticazione denominate
-      href: vs-azure-tools-setting-up-named-authentication-credentials.md
-  - name: Usare l'archiviazione di Azure
-    items:
-    - name: Introduzione a Storage Explorer
-      href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Configurare e usare l'emulatore di archiviazione
-      href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Creare stringhe di filtro per Progettazione tabelle
-      href: vs-azure-tools-table-designer-construct-filter-strings.md
-    - name: Gestire le risorse di Archiviazione BLOB di Azure con Storage Explorer
-      href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Usare Storage Explorer con l'archiviazione file di Azure
-      href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Note sulla versione di Microsoft Azure Storage Explorer
-      href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
-    - name: Accessibilità di Storage Explorer
-      href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Pubblicare un'app Web ASP.NET in una macchina virtuale di Azure
+      href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Pubblicare un'app Web in Servizi cloud di Azure
+      href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+- name: Connettersi ai servizi di Azure
   expanded: false
+  items:
+    - name: Aggiungere Archiviazione di Azure
+      href: vs-azure-tools-connected-services-storage.md
+    - name: Aggiungere Azure Active Directory (AD)
+      href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+    - name: Aggiungere Servizi mobili
+      href: vs-azure-tools-connected-services-add-mobile-services.md
+- name: Sviluppo per Servizi cloud di Azure
+  expanded: false
+  items:
+    - name: Utilizzare progetti di servizi cloud
+      items:
+        - name: Accedere a cloud di Azure privati
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: Creare un progetto di servizio cloud di Azure
+          href: vs-azure-tools-azure-project-create.md
+        - name: Gestire i ruoli nei servizi cloud di Azure
+          href: vs-azure-tools-cloud-service-project-managing-roles.md
+        - name: Preparare la pubblicazione o la distribuzione di un servizio cloud
+          href: vs-azure-tools-cloud-service-publish-set-up-required-services-in-visual-studio.md
+        - name: Mantenere un indirizzo IP virtuale costante per un servizio cloud di Azure
+          href: vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md
+        - name: Compilare i progetti di Azure dalla riga di comando
+          href: vs-azure-tools-command-line-build.md
+        - name: Configurare i ruoli di servizi cloud di Azure
+          href: vs-azure-tools-configure-roles-for-cloud-service.md
+        - name: Configurare un progetto di servizio cloud di Azure
+          href: vs-azure-tools-configuring-an-azure-project.md
+        - name: Configurare il progetto di Azure per l'uso di più configurazioni di servizio
+          href: vs-azure-tools-multiple-services-project-configurations.md
+        - name: Aggiornare i progetti alla versione corrente di Strumenti di Azure
+          href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+    - name: Eseguire test e debug di un servizio cloud
+      items:
+        - name: Eseguire il debug di un servizio cloud o di una macchina virtuale di Azure
+          href: vs-azure-tools-debug-cloud-services-virtual-machines.md
+        - name: Informazioni sui vari modi per eseguire il debug di un servizio cloud di Azure
+          href: vs-azure-tools-debugging-cloud-services-overview.md
+        - name: Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
+          href: vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md
+        - name: Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
+          href: vs-azure-tools-emulator-express-debug-run.md
+        - name: Eseguire il debug di un servizio cloud di Azure pubblicato con IntelliTrace
+          href: vs-azure-tools-intellitrace-debug-published-cloud-services.md
+        - name: Testare le prestazioni di un servizio cloud
+          href: vs-azure-tools-performance-profiling-cloud-services.md
+        - name: Ottimizzare il codice di Azure
+          href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
+    - name: Pubblicare un servizio cloud in Azure
+      items:
+        - name: Eseguire la migrazione e pubblicare un'applicazione Web in un servizio cloud di Azure
+          href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
+        - name: Usare la procedura guidata di Visual Studio Pubblica applicazione Azure
+          href: vs-azure-tools-publish-azure-application-wizard.md
+        - name: Pubblicare un servizio cloud con Visual Studio
+          href: vs-azure-tools-publishing-a-cloud-service.md
+        - name: Usare script di Windows PowerShell per la pubblicazione in ambienti di sviluppo e test
+          href: vs-azure-tools-publishing-using-powershell-scripts.md
+        - name: Publish-WebApplicationVM (Windows PowerShell script)
+          href: vs-azure-tools-publish-webapplicationvm.md
+        - name: Publish-WebApplicationWebSite (script di Windows PowerShell)
+          href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
+        - name: Gestire le configurazioni e i profili dei servizi
+          href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
+        - name: Configurare le credenziali di autenticazione denominate
+          href: vs-azure-tools-setting-up-named-authentication-credentials.md
+    - name: Usare l'archiviazione di Azure
+      items:
+        - name: Introduzione a Storage Explorer
+          href: /azure/vs-azure-tools-storage-manage-with-storage-explorer?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Configurare e usare l'emulatore di archiviazione
+          href: /azure/vs-azure-tools-storage-emulator-using?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Creare stringhe di filtro per Progettazione tabelle
+          href: vs-azure-tools-table-designer-construct-filter-strings.md
+        - name: Gestire le risorse di Archiviazione BLOB di Azure con Storage Explorer
+          href: /azure/vs-azure-tools-storage-explorer-blobs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Usare Storage Explorer con l'archiviazione file di Azure
+          href: /azure/vs-azure-tools-storage-explorer-files?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Note sulla versione di Microsoft Azure Storage Explorer
+          href: /azure/vs-azure-tools-storage-explorer-relnotes?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
+        - name: Accessibilità di Storage Explorer
+          href: /azure/vs-azure-tools-storage-explorer-accessibility?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
 - name: Cloud Explorer
   items:
-  - name: Esplorare e gestire le risorse di archiviazione usando Esplora server
-    href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
-  - name: Gestire le risorse associate agli account di Azure in Cloud Explorer
-    href: vs-azure-tools-resources-managing-with-cloud-explorer.md
-  - name: Accedere alle macchine virtuali di Azure da Esplora server
-    href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: 32d3d25dce14c40fb4d080d6467696695e9aec99
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001040"
+    - name: Esplorare e gestire le risorse di archiviazione usando Esplora server
+      href: vs-azure-tools-storage-resources-server-explorer-browse-manage.md
+    - name: Gestire le risorse associate agli account di Azure in Cloud Explorer
+      href: vs-azure-tools-resources-managing-with-cloud-explorer.md
+    - name: Accedere alle macchine virtuali di Azure da Esplora server
+      href: vs-azure-tools-virtual-machines-access-from-server-explorer.md

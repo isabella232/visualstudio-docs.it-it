@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963613"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Accesso a Visual Studio per Mac
 
@@ -48,5 +48,5 @@ Per aggiungere altri account utente, scegliere il menu **Visual Studio > Account
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accedere a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Accesso a Visual Studio (in Windows)](/visualstudio/ide/signing-in-to-visual-studio)
 - [Gestire più account utente (Visual Studio in Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

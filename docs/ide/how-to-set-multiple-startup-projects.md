@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946870"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: Impostare più progetti di avvio
 
@@ -23,13 +23,13 @@ Visual Studio consente di specificare la modalità di esecuzione di più progett
 
 ## <a name="to-set-multiple-startup-projects"></a>Per impostare più progetti di avvio
 
-1.  Selezionare la soluzione in **Esplora soluzioni** (il primo nodo in alto).
+1. Selezionare la soluzione in **Esplora soluzioni** (il primo nodo in alto).
 
-2.  Scegliere il menu di scelta rapida (clic con il tasto destro del mouse) del nodo della soluzione e quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo delle **pagine delle proprietà della soluzione**.
+2. Scegliere il menu di scelta rapida (clic con il tasto destro del mouse) del nodo della soluzione e quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo delle **pagine delle proprietà della soluzione**.
 
-3.  Espandere il nodo **Proprietà comuni** e scegliere **Progetto di avvio**.
+3. Espandere il nodo **Proprietà comuni** e scegliere **Progetto di avvio**.
 
-4.  Scegliere l'opzione **Progetti di avvio multipli** e impostare le azioni appropriate.
+4. Scegliere l'opzione **Progetti di avvio multipli** e impostare le azioni appropriate.
 
 ## <a name="see-also"></a>Vedere anche
 

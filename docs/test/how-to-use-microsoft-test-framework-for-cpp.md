@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970351"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
 Per impostazione predefinita il framework di testing unità Microsoft per C++ è incluso nel carico di lavoro **Sviluppo di applicazioni desktop con C++**.
 
-##  <a name="separate_project"></a> Per scrivere unit test in un progetto separato
+## <a name="separate_project"></a> Per scrivere unit test in un progetto separato
 
 In genere, il codice di test viene eseguito nel relativo progetto nella stessa soluzione del codice da testare. Per impostare e configurare un nuovo progetto di test, vedere [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Per scrivere unit test nello stesso progetto
+## <a name="same_project"></a> Per scrivere unit test nello stesso progetto
 
 In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL, potrebbe essere necessario creare i test nello stesso progetto del programma che si sta testando. Per scrivere unit test nello stesso progetto:
 
@@ -32,16 +32,14 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
    2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>**:
 
-
       | Directory | Proprietà |
       |-| - |
       | **Directory di inclusione** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Directory delle librerie** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Aggiungere un file di unit test C++:
 
-   -   Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **Unit test C++**.
+   - Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **Unit test C++**.
 
 ## <a name="write-the-tests"></a>Scrivere i test
 

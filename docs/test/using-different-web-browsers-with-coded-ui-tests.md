@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973019"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usare vari Web browser con test codificati dell'interfaccia utente
 
@@ -24,13 +24,13 @@ Per prima cosa, installare i [componenti Selenium per test codificati dell'inter
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Funzionalità supportate in tutti i Web browser
 
--   [Aggiungere il codice personalizzato per le funzionalità di controllo](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), ad esempio waiter di riproduzione, ricerca e proprietà.
+- [Aggiungere il codice personalizzato per le funzionalità di controllo](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/), ad esempio waiter di riproduzione, ricerca e proprietà.
 
--   Popup e finestre di dialogo
+- Popup e finestre di dialogo
 
--   [Eseguire JavaScript di base senza tipo restituito](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Eseguire JavaScript di base senza tipo restituito](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resilienza di ricerca (tramite la corrispondenza intelligente) e [miglioramenti delle prestazioni](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Resilienza di ricerca (tramite la corrispondenza intelligente) e [miglioramenti delle prestazioni](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Perché usare i test codificati dell'interfaccia utente per più tipi di Web browser?
 
@@ -78,17 +78,17 @@ Per altre informazioni sulla creazione e l'uso di test codificati dell'interfacc
 
 Per abilitare il debug dell'applicazione Web è necessario completare le opzioni di configurazione seguenti:
 
-1.  Abilitare Just My Code:
+1. Abilitare Just My Code:
 
-    1.  Nel menu **Strumenti** scegliere **Opzioni** e quindi **Debug**.
+    1. Nel menu **Strumenti** scegliere **Opzioni** e quindi **Debug**.
 
-    2.  Selezionare **Abilita Just My Code**.
+    2. Selezionare **Abilita Just My Code**.
 
-2.  Disabilitare le eccezioni CLR:
+2. Disabilitare le eccezioni CLR:
 
-    1.  Nel menu **Debug** scegliere **Eccezioni**.
+    1. Nel menu **Debug** scegliere **Eccezioni**.
 
-    2.  Per **Eccezioni Common Language Runtime** deselezionare **Non gestita dall'utente**.
+    2. Per **Eccezioni Common Language Runtime** deselezionare **Non gestita dall'utente**.
 
 Se l'opzione per modificare `BrowserWindow.CurrentBrowser` nel test codificato dell'interfaccia utente non viene visualizzata, è possibile che si stia usando una versione di Visual Studio che non supporta i test codificati dell'interfaccia utente in vari Web browser. Per usare questi test codificati dell'interfaccia utente, è necessario usare Visual Studio Enterprise Edition.
 

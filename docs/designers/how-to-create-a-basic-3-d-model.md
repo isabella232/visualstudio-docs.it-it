@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894185"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procedura: Creazione di un modello 3D di base
 
 Questo articolo illustra come usare l'editor dei modelli per creare un modello 3D di base. Sono descritte le attività seguenti:
 
--   Aggiunta di oggetti a una scena
+- Aggiunta di oggetti a una scena
 
--   Selezione di facce e bordi
+- Selezione di facce e bordi
 
--   Traslazione delle selezioni
+- Traslazione delle selezioni
 
--   Utilizzo degli strumenti **Suddividi faccia** e **Estrudi faccia**
+- Utilizzo degli strumenti **Suddividi faccia** e **Estrudi faccia**
 
--   Utilizzo del comando **Triangolazione**
+- Utilizzo del comando **Triangolazione**
 
 ## <a name="create-a-basic-3d-model"></a>Creazione di un modello 3D di base
  È possibile usare l'editor dei modelli per creare e modificare modelli e scene 3D per il gioco o l'applicazione. Nei passaggi seguenti viene illustrato come usare l'editor dei modelli per creare un modello 3D semplificato di una casa. Un modello semplificato può essere utilizzato come alternativa temporanea agli asset grafici finali ancora in fase di creazione, come mesh per il rilevamento dei conflitti o come modello a basso livello di dettaglio da utilizzare quando l'oggetto da esso rappresentato è troppo distante per beneficiare di un rendering più dettagliato.

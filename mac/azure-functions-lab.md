@@ -7,14 +7,14 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986115"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione alle funzioni di Azure
+# <a name="tutorial-getting-started-with-azure-functions"></a>Esercitazione: Introduzione a Funzioni di Azure
 
 In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azure tramite Visual Studio per Mac. Si eseguirà anche l'integrazione con le tabelle di archiviazione di Azure, uno dei vari tipi di binding e trigger disponibili per gli sviluppatori di funzioni di Azure.
 
@@ -104,6 +104,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Rimuovere il metodo `Run` esistente e aggiungere il metodo seguente alla classe come funzione di Azure:
 
     ```csharp
@@ -119,6 +120,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
         return x + y;
     }
     ```
+
 1. Di seguito si analizzano in dettaglio le varie sezioni della definizione del metodo.
 
     Inizialmente viene visualizzato l'attributo **FunctionName**, che contrassegna questo metodo come funzione di Azure. L'attributo specifica il nome pubblico della funzione. Il nome dell'attributo non deve necessariamente corrispondere al nome del metodo.
@@ -180,6 +182,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
     return x + y;
     ```
+
 1. Eseguire l'applicazione.
 
 1. Tornare alla finestra del browser e aggiungere la stringa `/?x=2&y=3` all'URL. L'URL intero ora sarà `http://localhost:7071/api/Add?x=2&y=3`. Passare al nuovo URL.
@@ -188,10 +191,9 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
 
 1. Arrestare la sessione di debug.
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>Esercizio 4: Uso di function.json
 
-1.  In un esercizio precedente, si indicava che Visual Studio per Mac "generava" una funzione di processo per la funzione di Azure definita nella libreria. Questo accade perché Funzioni di Azure non usa gli attributi del metodo in fase di runtime, ma usa una convenzione di file system in fase di compilazione per configurare la posizione e la modalità con cui le funzioni di Azure vengono rese disponibili. Nel **riquadro della soluzione** fare clic con il pulsante destro del mouse sul nodo del progetto e selezionare **Visualizza in Finder**.
+1. In un esercizio precedente, si indicava che Visual Studio per Mac "generava" una funzione di processo per la funzione di Azure definita nella libreria. Questo accade perché Funzioni di Azure non usa gli attributi del metodo in fase di runtime, ma usa una convenzione di file system in fase di compilazione per configurare la posizione e la modalità con cui le funzioni di Azure vengono rese disponibili. Nel **riquadro della soluzione** fare clic con il pulsante destro del mouse sul nodo del progetto e selezionare **Visualizza in Finder**.
 
      ![Opzione di menu Visualizza in Finder](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ In questa esercitazione si apprenderà come iniziare a creare le funzioni di Azu
         return x + y;
     }
     ```
+
 1. Premere **F5** per compilare ed eseguire il progetto.
 
 1. Dopo il completamento della compilazione e l'avvio della piattaforma, questa indica che è disponibile una seconda route per le richieste, mappata sul metodo appena aggiunto:
@@ -316,6 +319,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
         public int Sum { get; set; }
     }
     ```
+
 1. Nella classe **Add** aggiungere il codice seguente per introdurre un'altra funzione. Si noti che fino a questo punto il codice è univoco, in quanto non prevede una risposta HTTP. La riga finale restituisce un nuovo elemento **TableRow** completo di alcuni dati chiave che ne faciliteranno il recupero in una fase successiva (**PartitionKey** e **RowKey**), nonché dei relativi parametri e della somma. Anche il codice all'interno del metodo usa **TraceWriter** per facilitare il rilevamento dell'esecuzione della funzione.
 
     ```csharp
@@ -341,6 +345,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
         };
     }
     ```
+
 1. Premere **F5** per compilare ed eseguire il progetto.
 
 1. Nella scheda del browser, passare a **http://localhost:7071/api/Process/4/6**. Questa operazione inserisce un altro messaggio nella coda, che a sua volta aggiungerà un'altra riga alla tabella in un secondo momento.
@@ -363,6 +368,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Aggiungere il codice seguente all'inizio del metodo. Se **tableRow** non è null, i risultati per l'operazione richiesta sono già disponibili e possono essere restituiti immediatamente. In caso contrario, l'esecuzione della funzione continua come in precedenza. Questo potrebbe non essere il modo più efficiente per restituire i dati, ma dimostra che è possibile organizzare operazioni molto sofisticate su più livelli scalabili con un volume di codice molto ridotto.
 
     ```csharp
@@ -372,6 +378,7 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
         return null;
     }
     ```
+
 1. Premere **F5** per compilare ed eseguire il progetto.
 
 1. Nella scheda del browser, aggiornare l'URL in **http://localhost:7071/api/Process/4/6**. Dato che la riga della tabella per questo record esiste, viene restituita immediatamente e senza errori. Poiché non esiste alcun output HTTP, è possibile visualizzare l'output nel Terminale.
@@ -409,4 +416,3 @@ Spesso il servizio compilato è molto più complesso di quello creato fino a que
 ## <a name="summary"></a>Riepilogo
 
 In questa esercitazione si è appreso come iniziare a creare le funzioni di Azure tramite Visual Studio per Mac.
-

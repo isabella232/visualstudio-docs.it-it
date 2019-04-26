@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Skill Me Up di Opsgility incluso in sottoscrizioni selezionate di Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 046dc71ff78a7458c0a524db3b643f520a41d61c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947000"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio di formazione Skill Me Up di Opsgility nelle sottoscrizioni di Visual Studio
 
@@ -25,13 +25,11 @@ Alcune sottoscrizioni di Visual Studio includono fino a sei mesi di accesso a tr
    > [!div class="mx-imgBorder"]
    > ![Riquadro del vantaggio Opsgility](_img/vs-opsgility/vs-opsgility-tile.png)
 
-
 3. Si verrà reindirizzati alla pagina di destinazione Skill Me UP appropriata per la sottoscrizione.  Può presentarsi l'opportunità di avviare una sessione di chat con uno specialista del supporto tecnico.  Se non si vuole avviare una chat, è possibile ridurre a icona tale finestra.  Compilare le informazioni di contatto richieste, selezionare la casella per accettare i termini e le condizioni e quindi fare clic sul pulsante per la **registrazione**.
    > [!div class="mx-imgBorder"]
    > ![Pagina di destinazione del vantaggio Opsgility](_img/vs-opsgility/vs-vse-landing-page.png)
 
 4. Questo è tutto.  È tutto pronto per iniziare l'apprendimento.
-
 
 ## <a name="eligibility"></a>Idoneità
 
@@ -49,10 +47,9 @@ Alcune sottoscrizioni di Visual Studio includono fino a sei mesi di accesso a tr
 > [!NOTE]
 > Microsoft non offre più sottoscrizioni annuali di Visual Studio Professional e Visual Studio Enterprise nelle sottoscrizioni cloud. Non verrà apportata alcuna modifica all'esperienza dei clienti corrente, né alle possibilità di rinnovo, espansione, riduzione o annullamento delle sottoscrizioni esistenti. I nuovi clienti sono invitati a visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) per esplorare le opzioni di acquisto di Visual Studio.
 
-
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
 ## <a name="support-resources"></a>Risorse di supporto
--  Serve aiuto con Opsgility?  Inviare un ticket di supporto tramite la pagina [Contattaci](https://www.opsgility.com/SupportTicket).
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Serve aiuto con Opsgility?  Inviare un ticket di supporto tramite la pagina [Contattaci](https://www.opsgility.com/SupportTicket).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

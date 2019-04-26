@@ -11,19 +11,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1b9a6f602bd1e3fad2c07511f5899db3961907e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e7000e8a95dbe115e5afe853c9dd55a797d23ec3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842305"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere rappresentano file. I file sono specificati nell'attributo `Include`. Gli elementi sono raggruppati in tipi di elemento in base ai nomi degli elementi. I tipi di elementi sono elenchi denominati di elementi che possono essere usati come parametri per le attività. Le attività usano i valori degli elementi per eseguire i passaggi del processo di compilazione.
 
  Poiché gli elementi vengono denominati in base al tipo di elemento a cui appartengono, i termini "elemento" e "valore dell'elemento" sono interscambiabili.
 
-##  <a name="create-items-in-a-project-file"></a>Creare elementi in un file di progetto
+## <a name="create-items-in-a-project-file"></a>Creare elementi in un file di progetto
  Si dichiarano gli elementi nel file di progetto come elementi figlio di un elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Il nome dell'elemento figlio è il tipo dell'elemento. L'attributo `Include` dell'elemento specifica gli elementi (i file) da includere con tale tipo di elemento. Ad esempio, il codice XML seguente crea un tipo di elemento denominato `Compile` che include due file.
 
 ```xml
@@ -43,21 +43,21 @@ Gli elementi MSBuild, forniti come input al sistema di compilazione, in genere r
 </ItemGroup>
 ```
 
-##  <a name="create-items-during-execution"></a>Creare elementi durante l'esecuzione
+## <a name="create-items-during-execution"></a>Creare elementi durante l'esecuzione
  Agli elementi non compresi in elementi [Target](../msbuild/target-element-msbuild.md) vengono assegnati valori durante la fase di valutazione di una compilazione. Durante la fase di esecuzione successiva, gli elementi possono essere creati o modificati nei modi seguenti:
 
--   Le attività possono creare un elemento. Per creare un elemento, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `ItemName`.
+- Le attività possono creare un elemento. Per creare un elemento, l'elemento [Task](../msbuild/task-element-msbuild.md) deve avere un elemento [Output](../msbuild/output-element-msbuild.md) figlio con un attributo `ItemName`.
 
--   L'attività [CreateItem](../msbuild/createitem-task.md) può creare un elemento. Questo utilizzo è deprecato.
+- L'attività [CreateItem](../msbuild/createitem-task.md) può creare un elemento. Questo utilizzo è deprecato.
 
--   A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item.
+- A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item.
 
-##  <a name="reference-items-in-a-project-file"></a>Fare riferimento a elementi in un file di progetto
+## <a name="reference-items-in-a-project-file"></a>Fare riferimento a elementi in un file di progetto
  Per fare riferimento a tipi di elemento nel file di progetto, usare la sintassi @(\<ItemType>). Ad esempio, per fare riferimento al tipo di elemento nell'esempio precedente, si userà `@(Compile)`. Usando questa sintassi, è possibile passare gli elementi alle attività specificando il tipo di elemento come parametro di tale attività. Per altre informazioni, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
 
  Per impostazione predefinita, gli elementi di un tipo di elemento vengono separati da punto e virgola (;) quando viene espanso. È possibile usare la sintassi @(\<ItemType>, '\<separator>') per specificare un separatore diverso da quello predefinito. Per altre informazioni, vedere [Procedura: Visualizzare un elenco di elementi separati da virgole](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
-##  <a name="use-wildcards-to-specify-items"></a>Usare caratteri jolly per specificare gli elementi
+## <a name="use-wildcards-to-specify-items"></a>Usare caratteri jolly per specificare gli elementi
 
 È possibile usare i caratteri jolly `**`, `*` e `?` per specificare un gruppo di file come input per una compilazione anziché elencare ogni file separatamente.
 
@@ -81,7 +81,7 @@ Se si desidera includere caratteri letterali `*` o `?` in un elemento privo di e
 
 Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md).
 
-##  <a name="use-the-exclude-attribute"></a>Usare l'attributo Exclude
+## <a name="use-the-exclude-attribute"></a>Usare l'attributo Exclude
  Gli elementi Item possono contenere l'attributo `Exclude`, che esclude elementi (file) specifici dal tipo di elemento. L'attributo `Exclude` viene in genere usato con i caratteri jolly. Il codice XML seguente, ad esempio, aggiunge ogni file con estensione *cs* nella directory al tipo di elemento CSFile, ad eccezione del file *DoNotBuild.cs*.
 
 ```xml
@@ -99,7 +99,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
  Per altre informazioni, vedere [Procedura: Escludere file dalla compilazione](../msbuild/how-to-exclude-files-from-the-build.md).
 
-##  <a name="item-metadata"></a>Metadati degli elementi
+## <a name="item-metadata"></a>Metadati degli elementi
  Gli elementi possono contenere metadati oltre alle informazioni negli attributi `Include` e `Exclude`. Questi metadati possono essere usati dalle attività che richiedono altre informazioni sugli elementi o per dividere in batch le attività e le destinazioni. Per altre informazioni, vedere [Batch](../msbuild/msbuild-batching.md).
 
  I metadati sono una raccolta di coppie chiave-valore che vengono dichiarate nel file di progetto come elementi figlio di un elemento item. Il nome dell'elemento figlio è il nome dei metadati e il valore dell'elemento figlio è il valore dei metadati.
@@ -116,7 +116,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
  Un elemento può avere zero o più valori di metadati. È possibile modificare i valori dei metadati in qualsiasi momento. Se si impostano i metadati su un valore vuoto, di fatto li si rimuove dalla compilazione.
 
-###  <a name="BKMK_ReferencingItemMetadata"></a> Fare riferimento ai metadati degli elementi in un file di progetto
+### <a name="BKMK_ReferencingItemMetadata"></a> Fare riferimento ai metadati degli elementi in un file di progetto
  È possibile fare riferimento ai metadati di un elemento nel file di progetto usando la sintassi %(\<ItemMetadataName>). In caso di ambiguità, è possibile qualificare un riferimento usando il nome del tipo di elemento. È ad esempio possibile specificare (\<ItemType.ItemMetaDataName>). L'esempio seguente usa i metadati Display per suddividere in batch l'attività Message. Per altre informazioni su come usare i metadati di un elemento per la suddivisione in batch, vedere [Metadati degli elementi nella suddivisione in batch delle attività](../msbuild/item-metadata-in-task-batching.md).
 
 ```xml
@@ -135,10 +135,10 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 </Project>
 ```
 
-###  <a name="BKMK_WellKnownItemMetadata"></a> Metadati noti degli elementi
+### <a name="BKMK_WellKnownItemMetadata"></a> Metadati noti degli elementi
  Quando un elemento viene aggiunto a un tipo di elemento, a tale elemento vengono assegnati alcuni metadati noti. Tutti gli elementi, ad esempio, hanno i metadati noti %(\<Filename>), il cui valore è il nome file dell'elemento. Per altre informazioni, vedere [Metadati noti degli elementi](../msbuild/msbuild-well-known-item-metadata.md).
 
-###  <a name="BKMK_Transforming"></a> Trasformare i tipi di elemento tramite i metadati
+### <a name="BKMK_Transforming"></a> Trasformare i tipi di elemento tramite i metadati
  È possibile trasformare gli elenchi di elementi in nuovi elenchi di elementi usando i metadati. È ad esempio possibile trasformare un tipo di elemento `CppFiles` con elementi che rappresentano file con estensione *cpp* in un elenco corrispondente di file con estensione *obj* usando l'espressione `@(CppFiles -> '%(Filename).obj')`.
 
  Il codice seguente crea un tipo di elemento `CultureResource` che contiene copie di tutti gli elementi `EmbeddedResource` con i metadati `Culture`. Il valore dei metadati `Culture` diventa il valore dei nuovi metadati `CultureResource.TargetDirectory`.
@@ -156,7 +156,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
  Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
 
-##  <a name="item-definitions"></a>Definizioni degli elementi
+## <a name="item-definitions"></a>Definizioni degli elementi
  A partire da .NET Framework 3.5, è possibile aggiungere metadati predefiniti a qualsiasi tipo di elemento usando l'[elemento ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). Come i metadati noti, i metadati predefiniti sono associati a tutti gli elementi del tipo di elemento specificato. È possibile eseguire l'override esplicito dei metadati predefiniti nella definizione di un elemento. Il codice XML seguente, ad esempio, assegna agli elementi `Compile` *one.cs* e *three.cs* i metadati `BuildDay` con il valore "Monday". Il codice assegna all'elemento *two.cs* i metadati `BuildDay` con il valore "Tuesday".
 
 ```xml
@@ -175,10 +175,10 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 
  Per altre informazioni, vedere [Definizioni degli elementi](../msbuild/item-definitions.md).
 
-##  <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Attributi per gli elementi in un ItemGroup di una destinazione
+## <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Attributi per gli elementi in un ItemGroup di una destinazione
  A partire da .NET Framework 3.5, gli elementi `Target` possono contenere elementi [ItemGroup](../msbuild/itemgroup-element-msbuild.md) che possono contenere elementi Item. Gli attributi in questa sezione sono validi quando vengono specificati per un elemento in un `ItemGroup` che si trova in una `Target`.
 
-###  <a name="BKMK_RemoveAttribute"></a> Rimuovere un attributo
+### <a name="BKMK_RemoveAttribute"></a> Rimuovere un attributo
  L'attributo `Remove` rimuove elementi (file) specifici dal tipo di elemento. Questo attributo è stato introdotto in .NET Framework 3.5, ma era supportato solo all'interno di destinazioni fino a MSBuild 15.0.
 
  L'esempio seguente rimuove tutti i file con estensione *config* dal tipo di elemento Compile.
@@ -191,7 +191,7 @@ Per altre informazioni sui caratteri jolly, vedere [Procedura: Selezionare i fil
 </Target>
 ```
 
-###  <a name="BKMK_KeepMetadata"></a> Attributo KeepMetadata
+### <a name="BKMK_KeepMetadata"></a> Attributo KeepMetadata
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `KeepMetadata`. Se questo attributo è specificato, solo i metadati specificati nell'elenco di nomi delimitati da punto e virgola verranno trasferiti dall'elemento di origine a quello di destinazione. Un valore vuoto per questo attributo equivale a non specificarlo. L'attributo `KeepMetadata` è stato introdotto in .NET Framework 4.5.
 
  L'esempio seguente mostra come usare l'attributo `KeepMetadata`.
@@ -233,7 +233,7 @@ Output:
 -->
 ```
 
-###  <a name="BKMK_RemoveMetadata"></a> Attributo RemoveMetadata
+### <a name="BKMK_RemoveMetadata"></a> Attributo RemoveMetadata
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `RemoveMetadata`. Se questo attributo è specificato, tutti i metadati vengono trasferiti dall'elemento di origine all'elemento di destinazione, a eccezione dei metadati i cui nomi sono contenuti nell'elenco di nomi separati da punto e virgola. Un valore vuoto per questo attributo equivale a non specificarlo. L'attributo `RemoveMetadata` è stato introdotto in .NET Framework 4.5.
 
  L'esempio seguente mostra come usare l'attributo `RemoveMetadata`.
@@ -282,7 +282,7 @@ Output:
 -->
 ```
 
-###  <a name="BKMK_KeepDuplicates"></a> Attributo KeepDuplicates
+### <a name="BKMK_KeepDuplicates"></a> Attributo KeepDuplicates
  Un elemento item, se viene generato in una destinazione, può contenere l'attributo `KeepDuplicates`. `KeepDuplicates` è un attributo `Boolean` che specifica se un elemento deve essere aggiunto al gruppo di destinazione se l'elemento è un duplicato esatto di un elemento esistente.
 
  Se l'elemento di origine e destinazione hanno lo stesso valore Include, ma metadati diversi, l'elemento viene aggiunto anche se `KeepDuplicates` è impostato su `false`. Un valore vuoto per questo attributo equivale a non specificarlo. L'attributo `KeepDuplicates` è stato introdotto in .NET Framework 4.5.

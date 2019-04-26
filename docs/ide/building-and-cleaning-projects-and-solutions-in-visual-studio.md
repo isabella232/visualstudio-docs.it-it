@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975706"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Compilazione e pulizia di progetti e soluzioni in Visual Studio
 
@@ -42,44 +42,44 @@ Tramite le procedure descritte in questo argomento è possibile compilare, ricom
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Per compilare, ricompilare o pulire un'intera soluzione
 
-1.  In **Esplora soluzioni**  scegliere una soluzione o aprire la soluzione voluta.
+1. In **Esplora soluzioni**  scegliere una soluzione o aprire la soluzione voluta.
 
-2.  Nella barra dei menu, scegliere **Compila** e quindi scegliere uno dei comandi seguenti:
+2. Nella barra dei menu, scegliere **Compila** e quindi scegliere uno dei comandi seguenti:
 
-    -   Scegliere **Compila** o **Compila soluzione** per compilare solo i file e i componenti del progetto che sono stati modificati dalla compilazione più recente.
+    - Scegliere **Compila** o **Compila soluzione** per compilare solo i file e i componenti del progetto che sono stati modificati dalla compilazione più recente.
 
         > [!NOTE]
         > Il comando **Compila** diventa **Compila soluzione** se una soluzione include più progetti.
 
-    -   Scegliere **Ricompila soluzione** per "pulire" la soluzione e quindi compilare tutti i componenti e i file dei progetti.
+    - Scegliere **Ricompila soluzione** per "pulire" la soluzione e quindi compilare tutti i componenti e i file dei progetti.
 
-    -   Scegliere **Pulisci soluzione** per eliminare eventuali file intermedi e di output. Quando sono rimasti solo i file dei componenti e dei progetti, è possibile compilare nuove istanze di file intermedi e di output.
+    - Scegliere **Pulisci soluzione** per eliminare eventuali file intermedi e di output. Quando sono rimasti solo i file dei componenti e dei progetti, è possibile compilare nuove istanze di file intermedi e di output.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Per compilare o ricompilare un progetto singolo
 
-1.  In **Esplora soluzioni**  scegliere un progetto o aprire il progetto voluto.
+1. In **Esplora soluzioni**  scegliere un progetto o aprire il progetto voluto.
 
-2.  Nella barra dei menu scegliere **Compila** e quindi scegliere **Compila** *NomeProgetto* o **Ricompila** *NomeProgetto*.
+2. Nella barra dei menu scegliere **Compila** e quindi scegliere **Compila** *NomeProgetto* o **Ricompila** *NomeProgetto*.
 
-    -   Scegliere **Compila**  *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati dopo la build più recente.
+    - Scegliere **Compila**  *NomeProgetto* per compilare solo i componenti del progetto che sono stati modificati dopo la build più recente.
 
-    -   Scegliere **Ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file e tutti i componenti del progetto.
+    - Scegliere **Ricompila** *NomeProgetto* per "pulire" il progetto e quindi compilare i file e tutti i componenti del progetto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Per compilare il progetto di avvio e le relative dipendenze
 
-1.  Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
 
-2.  Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
+2. Nella finestra di dialogo **Opzioni** espandere il nodo **Progetti e soluzioni** e quindi scegliere la pagina **Compila ed esegui**.
 
      Si apre la finestra di dialogo **Compila ed esegui** > **Progetti e soluzioni** > **Opzioni**.
 
-3.  Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.
+3. Selezionare la casella di controllo **Compila progetti di avvio e dipendenze solo in fase di esecuzione**.
 
      Se questa casella di controllo è selezionata, solo il progetto di avvio corrente e le relative dipendenze vengono compilati quando si esegue la procedura seguente:
 
-    -   Nella barra dei menu scegliere **Debug** > **Avvia** (**F5**).
+    - Nella barra dei menu scegliere **Debug** > **Avvia** (**F5**).
 
-    -   Nella barra dei menu scegliere **Compila** > **Compila soluzione** (**CTRL**+**MAIUSC**+**B**).
+    - Nella barra dei menu scegliere **Compila** > **Compila soluzione** (**CTRL**+**MAIUSC**+**B**).
 
     Quando questa casella di controllo è deselezionata e si eseguono i comandi precedenti vengono compilati tutti i progetti, le relative dipendenze e i file della soluzione. Per impostazione predefinita, questa casella di controllo è deselezionata.
 

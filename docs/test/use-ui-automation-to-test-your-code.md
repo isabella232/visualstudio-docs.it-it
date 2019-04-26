@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973537"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 
@@ -253,7 +253,7 @@ Se necessario, è possibile modificare la scelta rapida da tastiera**CTRL**+**MA
 
 Per modificare le scelte rapide da tastiera è necessario modificare il file di configurazione seguente:
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDECodedUITestBuilder.exe.config*
 
 Nel file di configurazione modificare i valori per i tasti `HoverKeyModifier` e `HoverKey` per modificare la scelta rapida da tastiera:
 
@@ -272,7 +272,7 @@ In molti siti Web, quando si passa il puntatore su un particolare controllo, que
 
 Per abilitare la registrazione degli eventi di passaggio del mouse impliciti in un Web browser, aprire il file di configurazione:
 
-*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CodedUITestBuilder.exe.config*
+*%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDECodedUITestBuilder.exe.config*
 
 Verificare che nel file di configurazione il tasto `RecordImplicitiHovers` sia impostato sul valore `true`, come mostrato nell'esempio seguente:
 
@@ -289,7 +289,7 @@ Dopo aver creato il test codificato dell'interfaccia utente, è possibile modifi
 
 - L'**editor di test codificati dell'interfaccia utente** consente di modificare facilmente i test. Con l'**editor di test codificati dell'interfaccia utente** è possibile individuare, visualizzare e modificare i metodi di test. È anche possibile modificare le azioni dell'interfaccia utente e i relativi controlli associati nella mappa di controllo dell'interfaccia utente. Per altre informazioni, vedere [Modificare test codificati dell'interfaccia utente usando l'Editor di test codificati dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-- **Editor del codice:**
+- **Editor di codice:**
 
     - Aggiungere manualmente il codice per i controlli nel test come descritto nella sezione [Azioni e proprietà dei controlli codificati dell'interfaccia utente](#coded-ui-control-actions-and-properties) in questo argomento.
 

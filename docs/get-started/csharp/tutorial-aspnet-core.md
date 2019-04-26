@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972100"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: Introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -33,7 +33,7 @@ In questa esercitazione per lo sviluppo in C# con ASP.NET Core tramite Visual St
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -222,6 +222,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Si noti che vengono visualizzate due sottolineature ondulate sotto ad **Ambiente** e **Stringa** perché questi tipi non sono inclusi nell'ambito.
 
    ![Errori contrassegnati con sottolineature ondulate nel metodo OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
@@ -263,8 +264,8 @@ Visual Studio è una suite integrata per lo sviluppo di strumenti di produttivit
 L'esercitazione è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C#, ASP.NET Core e dell'IDE di Visual Studio. Per altre informazioni sulla creazione di un'app Web o di un sito Web con C# e ASP.NET, continuare con le esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Creare un'app web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+> [Creare un'app Web Razor Pages con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../../deployment/quickstart-deploy-to-azure.md)
+[Publish your web app to Azure App Service by using Visual Studio](../../deployment/quickstart-deploy-to-azure.md) (Pubblicare l'app Web in Servizio app di Azure con Visual Studio)

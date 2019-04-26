@@ -15,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 34e943984755ff1f36f8a28134e1e2abde4312d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954074"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app console C#
 
@@ -28,7 +28,7 @@ In questa introduzione di 5-10 minuti all'ambiente di sviluppo integrato (IDE) d
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -156,4 +156,4 @@ Ciò accade perché il metodo `Main` termina dopo l'esecuzione dell'unica istruz
 La guida introduttiva è stata completata. Ci auguriamo che sia stata utile per l'apprendimento dell'uso di C# e dell'IDE di Visual Studio. Per altre informazioni, continuare con le esercitazioni seguenti.
 
 > [!div class="nextstepaction"]
-> [introduzione a un'app console C# in Visual Studio](../get-started/csharp/tutorial-console.md)
+> [Introduzione a un'app console C# in Visual Studio](../get-started/csharp/tutorial-console.md)

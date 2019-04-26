@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995916"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Guida introduttiva: Presentazione degli strumenti di profilatura
 

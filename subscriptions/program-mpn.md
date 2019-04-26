@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945401"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -43,7 +43,6 @@ Indipendentemente dal numero di competenze ottenute da un partner, il numero di 
 | Vantaggio massimo per i partner con solo competenze Silver                   | Vantaggio massimo per i partner con almeno una competenza Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 sottoscrizioni di Visual Studio Enterprise per paese; 75 in tutto il mondo          | 50 sottoscrizioni di Visual Studio Enterprise per paese; 150 in tutto il mondo         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Sottoscrizioni per i partner che acquistano Action Pack
 I partner con una competenza non sono idonei per l'acquisto di Action Pack. Ogni partner può acquistare un solo Action Pack.

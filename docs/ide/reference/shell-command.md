@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990043"
 ---
 # <a name="shell-command"></a>Comando Shell
 Avvia programmi eseguibili da [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -56,14 +56,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  Facoltativo. Specifica che l'output per il file eseguibile verrà visualizzato nella finestra di **output**.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Le opzioni /dir /o /c devono essere specificate immediatamente dopo `Tools.Shell`. Tutto ciò che viene specificato dopo il nome del file eseguibile viene passato all'eseguibile come argomento della riga di comando.
 
  È possibile usare l'alias predefinito `Shell` invece di `Tools.Shell`.
 
 > [!CAUTION]
 > Se l'argomento `path` include sia il percorso della directory sia il nome del file, è consigliabile racchiudere l'intero percorso tra virgolette doppie adiacenti ("""), come nell'esempio seguente:
-
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
@@ -77,7 +76,6 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 
 > [!CAUTION]
 > Se la stringa di percorso non viene racchiusa tra virgolette doppie adiacenti ("""), Windows userà solo la porzione di stringa che precede il primo spazio. Se ad esempio la stringa di percorso usata nell'esempio precedente non fosse racchiusa tra virgolette in modo corretto, Windows cercherebbe un file denominato "Program" nella directory radice C:\. Qualora un file eseguibile C:\Program.exe fosse disponibile, anche se si trattasse di un file installato tramite una manomissione non autorizzata, Windows tenterebbe di eseguire quel programma anziché il programma desiderato "C:\Programmi\NomeFile.exe".
-
 
 ## <a name="example"></a>Esempio
  Il comando seguente usa xcopy.exe per copiare il file `MyText.txt` nella cartella `Text`. L'output di xcopy.exe viene visualizzato nella **finestra di comando** e nella **finestra di output**.

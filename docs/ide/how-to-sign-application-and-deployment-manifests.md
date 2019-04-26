@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946921"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
@@ -39,43 +39,43 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 
 ## <a name="sign-using-a-certificate"></a>Firmare con un certificato
 
-1.  Passare alla finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1. Passare alla finestra delle proprietà del progetto (fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**). Nella scheda **Firma**, selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-2.  Fare clic sul pulsante **Seleziona da archivio**.
+2. Fare clic sul pulsante **Seleziona da archivio**.
 
      Viene visualizzata la finestra di dialogo **Seleziona un certificato** con il contenuto dell'archivio certificati di Windows.
 
     > [!TIP]
     > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Certificati** per visualizzare altre informazioni della Guida.
 
-3.  Selezionare il certificato che si vuole usare per firmare i manifesti.
+3. Selezionare il certificato che si vuole usare per firmare i manifesti.
 
-4.  È possibile anche specificare l'indirizzo di un server di timestamp nella casella di testo **URL del server di timestamp**. Questo server indica quando è stato firmato il manifesto.
+4. È possibile anche specificare l'indirizzo di un server di timestamp nella casella di testo **URL del server di timestamp**. Questo server indica quando è stato firmato il manifesto.
 
 ## <a name="sign-using-an-existing-key-file"></a>Firmare con un file di chiave esistente
 
-1.  Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1. Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-2.  Fare clic sul pulsante **Seleziona da file**.
+2. Fare clic sul pulsante **Seleziona da file**.
 
      Verrà visualizzata la finestra di dialogo **Seleziona file**.
 
-3.  Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave (*pfx*) che si vuole usare e scegliere **Apri**.
+3. Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave (*pfx*) che si vuole usare e scegliere **Apri**.
 
     > [!NOTE]
     > Questa opzione supporta solo file con estensione *pfx*. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.
 
      Viene visualizzata la finestra di dialogo **Immettere la password per aprire il file**. Se il file *pfx* è già archiviato nell'archivio dei certificati di Windows oppure non è protetto da password, non verrà richiesto di digitare una password.
 
-4.  Immettere la password per accedere al file di chiave e premere **INVIO**.
+4. Immettere la password per accedere al file di chiave e premere **INVIO**.
 
 ## <a name="sign-using-a-test-certificate"></a>Firmare con un certificato di prova
 
-1.  Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1. Nella pagina **Firma** selezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-2.  Per creare un nuovo certificato per il test, fare clic sul pulsante **Crea certificato di prova**.
+2. Per creare un nuovo certificato per il test, fare clic sul pulsante **Crea certificato di prova**.
 
-3.  Nella finestra di dialogo **Crea certificato di prova** immettere una password per proteggere il certificato.
+3. Nella finestra di dialogo **Crea certificato di prova** immettere una password per proteggere il certificato.
 
 ## <a name="generate-unsigned-manifests"></a>Creazione di manifesti non firmati
 
@@ -88,24 +88,24 @@ La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su fi
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Per generare manifesti non firmati e includere tutti i file nell'hash creato
 
-1.  Per generare manifesti non firmati che includono tutti i file nell'hash, è necessario prima pubblicare l'applicazione insieme ai manifesti firmati. Pertanto, firmare prima i manifesti ClickOnce seguendo una delle procedure precedenti e quindi pubblicare l'applicazione.
+1. Per generare manifesti non firmati che includono tutti i file nell'hash, è necessario prima pubblicare l'applicazione insieme ai manifesti firmati. Pertanto, firmare prima i manifesti ClickOnce seguendo una delle procedure precedenti e quindi pubblicare l'applicazione.
 
-2.  Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
+2. Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-3.  Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni, vedere [Procedura: Impostare la versione pubblicazione per un'applicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Reimpostare la versione di pubblicazione in modo che solo una versione dell'applicazione sia disponibile. Per impostazione predefinita, Visual Studio incrementa automaticamente il numero di revisione della versione di pubblicazione ogni volta che si pubblica un'applicazione. Per altre informazioni, vedere [Procedura: Impostare la versione pubblicazione per un'applicazione ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
-4.  Pubblicare l'applicazione.
+4. Pubblicare l'applicazione.
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Per generare manifesti non firmati ed escludere uno o più file dall'hash creato
 
-1.  Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
+1. Nella pagina **Firma** deselezionare la casella di controllo **Firma i manifesti ClickOnce**.
 
-2.  Aprire la finestra di dialogo **File dell'applicazione** e impostare **Hash** a **Escludi** per i file che si vuole escludere dall'hash creato.
+2. Aprire la finestra di dialogo **File dell'applicazione** e impostare **Hash** a **Escludi** per i file che si vuole escludere dall'hash creato.
 
     > [!NOTE]
     > L'esclusione di un file dall'hash configura ClickOnce per disattivare la firma automatica dei manifesti, pertanto non è necessario pubblicare prima l'applicazione con manifesti firmati, come illustrato nella procedura precedente.
 
-3.  Pubblicare l'applicazione.
+3. Pubblicare l'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 

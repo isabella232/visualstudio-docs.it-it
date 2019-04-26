@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959894"
 ---
 # <a name="debug-your-python-code"></a>Eseguire il debug del codice Python
 
@@ -68,7 +68,7 @@ Quando l'esecuzione del codice viene arrestata in corrispondenza di un punto di 
 
 | Funzionalità | Tasto o combinazione di tasti | Description |
 | --- | --- | --- |
-| **Continua** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
+| **Continue** | **F5** | Esegue il codice fino a quando non viene raggiunto il punto di interruzione successivo. |
 | **Esegui istruzione** | **F11** | Esegue l'istruzione successiva e si arresta. Se l'istruzione successiva è una chiamata a una funzione, il debugger si arresta in corrispondenza della prima riga della funzione chiamata. |
 | **Esegui istruzione/routine** | **F10** | Esegue l'istruzione successiva, effettuando anche una chiamata a una funzione (ed eseguendone tutto il relativo codice) ed applicando l'eventuale valore restituito. Questo comando consente di ignorare facilmente le funzioni di cui non è necessario eseguire il debug. |
 | **Esci da istruzione/routine** | **MAIUSC**+**F11** | Esegue il codice fino alla fine della funzione corrente, quindi passa all'istruzione di chiamata.  Questo comando è utile quando non è necessario eseguire il debug della parte restante della funzione corrente. |

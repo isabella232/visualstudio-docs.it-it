@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
 searchscope: VS Subscription
 ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946205"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
 
@@ -37,7 +37,7 @@ Gli eventi che rendono inutilizzabile una sottoscrizione per un sottoscrittore a
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>D:  L'anonimizzazione delle informazioni personali del sottoscrittore comporta la perdita dell'accesso alla sottoscrizione?
 R:  No.  L'anonimizzazione è la risposta a un evento che causa la perdita dell'accesso alla sottoscrizione ma non causa la mancanza di accesso.
 
-### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>D:  Se l'utente è l'amministratore delle sottoscrizioni dell'organizzazione  e le informazioni di un sottoscrittore vengono rese anonime, è possibile riassegnare la sottoscrizione a un altro utente?
+### <a name="q--im-an-administrator-for-my-organizations-subscriptions--if-one-of-my-subscribers-information-is-anonymized-can-that-subscription-be-reassigned-to-another-user"></a>D:  Se l'utente è l'amministratore delle sottoscrizioni dell'organizzazione  Se le informazioni di un sottoscrittore vengono rese anonime, è possibile riassegnare la sottoscrizione a un altro utente?
 R:  Sì. A condizione che la sottoscrizione non sia scaduta, è possibile riassegnarla a un altro sottoscrittore.
 
 ## <a name="next-steps"></a>Passaggi successivi

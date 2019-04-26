@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c44c8417247d4d33f66e8c56ed1775f6c895ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1cd12b4944da36e480aa44f312b44133c657365f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970680"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Numero elevato di campioni del kernel
 
@@ -41,6 +41,6 @@ ms.locfileid: "56607837"
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Si consiglia di profilare nuovamente l'applicazione usando una delle opzioni seguenti:
 
--   Profilare usando il metodo di strumentazione.
+- Profilare usando il metodo di strumentazione.
 
--   Aumentare la frequenza di campionamento per tentare di raccogliere più campioni in modalità utente.
+- Aumentare la frequenza di campionamento per tentare di raccogliere più campioni in modalità utente.
