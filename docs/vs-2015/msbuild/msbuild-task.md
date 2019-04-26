@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426116"
 ---
 # <a name="msbuild-task"></a>Attività MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 tuttavia fornisce due nuovi elementi di metadati riservati, Properties e AdditionalProperties, che offrono un modo flessibile per passare proprietà diverse a seconda del progetto da compilare tramite l'[attività MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Questi nuovi elementi di metadati sono applicabili solo agli elementi passati nell'attributo Projects dell'[attività MSBuild](../msbuild/msbuild-task.md).  
+> Questi nuovi elementi di metadati sono applicabili solo agli elementi passati nell'attributo Projects dell'[attività MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Vantaggi della compilazione a più processori  
  Uno dei vantaggi principali derivanti dall'uso di questi nuovi metadati consiste nel compilare i progetti in parallelo in un sistema a più processori. I metadati consentono di consolidare tutti i progetti in una singola chiamata all'[attività MSBuild](../msbuild/msbuild-task.md) senza dover eseguire attività di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] di divisione in batch o condizionali. Quando si chiama una singola [attività MSBuild](../msbuild/msbuild-task.md), tutti i progetti elencati nell'attributo Projects verranno compilati in parallelo, ma solo se l'attributo `BuildInParallel=true` è presente nell'[attività MSBuild](../msbuild/msbuild-task.md). Per altre informazioni, vedere [Compilazione di più progetti in parallelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
@@ -77,7 +77,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] da 
  Uno scenario comune è quello in cui si compilano più file di soluzione tramite l'[attività MSBuild](../msbuild/msbuild-task.md), usando solo configurazioni della build diverse. Potrebbe essere necessario compilare la soluzione a1 usando la configurazione per il debug e la soluzione a2 usando la configurazione per la versione. In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 questo file di progetto sarà come il seguente:  
   
 > [!NOTE]
->  Nell'esempio seguente "…" rappresenta file di soluzione aggiuntivi.  
+> Nell'esempio seguente "…" rappresenta file di soluzione aggiuntivi.  
   
 ### <a name="aproj"></a>a.proj  
   

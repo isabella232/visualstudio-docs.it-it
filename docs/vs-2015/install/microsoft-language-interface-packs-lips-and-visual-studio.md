@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433007"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Pack (LIP) e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Con un Windows Language Interface Pack (LIP) è possibile installare una version
  Visual Studio usa un Language Pack unificato. Per installare più versioni localizzate di questi prodotti, è necessario prima di tutto installare un prodotto localizzato completo e quindi installare uno o più Language Pack.
 
 > [!NOTE]
->  Visual Studio non supporta l'installazione di più versioni localizzate del prodotto localizzato completo nello stesso computer. Dopo avere installato un prodotto localizzato completo, è necessario aggiungere le versioni localizzate mediante i Language Pack. È comunque possibile installare più prodotti localizzati completi delle edizioni Express nello stesso computer.
+> Visual Studio non supporta l'installazione di più versioni localizzate del prodotto localizzato completo nello stesso computer. Dopo avere installato un prodotto localizzato completo, è necessario aggiungere le versioni localizzate mediante i Language Pack. È comunque possibile installare più prodotti localizzati completi delle edizioni Express nello stesso computer.
 
 ### <a name="support-for-code-pages"></a>Supporto delle tabelle codici
  Alcuni strumenti di Visual Studio non visualizzano il testo correttamente quando questo contiene caratteri non presenti nella tabella codici corrente. Al posto del testo vengono visualizzati dei punti interrogativi oppure il testo appare danneggiato. Di seguito sono elencati gli strumenti o le aree interessati da questo problema:
@@ -76,7 +76,7 @@ Con un Windows Language Interface Pack (LIP) è possibile installare una version
 1. Fare clic su**Start**, **Pannello di controllo**, quindi aprire **Opzioni internazionali e della lingua** (o **Area geografica** in [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Per eseguire questa procedura è necessario essere un amministratore del computer.
+    > Per eseguire questa procedura è necessario essere un amministratore del computer.
 
 2. Fare clic sulla scheda **Avanzate**.
 
@@ -88,7 +88,7 @@ Con un Windows Language Interface Pack (LIP) è possibile installare una version
  Quando si installano più versioni localizzate di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nello stesso computer, per l'interfaccia utente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] viene usata l'impostazione predefinita **Come Microsoft Windows**. Questa impostazione indica che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] visualizzerà il testo dell'interfaccia utente nella lingua specificata come lingua di visualizzazione per il sistema operativo.
 
 > [!NOTE]
->  Se Visual Studio è impostato per usare l'opzione **Come Microsoft Windows** ma non è installato il Language Pack di Visual Studio corrispondente, Visual Studio userà la lingua della prima installazione di Visual Studio.
+> Se Visual Studio è impostato per usare l'opzione **Come Microsoft Windows** ma non è installato il Language Pack di Visual Studio corrispondente, Visual Studio userà la lingua della prima installazione di Visual Studio.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Per impostare la lingua usata per il testo dell'interfaccia utente in Visual Studio
 

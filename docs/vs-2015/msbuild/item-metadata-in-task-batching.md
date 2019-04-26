@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436803"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadati degli elementi nella suddivisione in batch delle attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile divider
  In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è possibile dividere in batch più elenchi di elementi in base agli stessi metadati. Risulta quindi più semplice dividere in batch diversi elenchi di elementi per compilare più assembly. Si supponga di avere un elenco di elementi di file con estensione cs divisi in un batch di applicazione e in un batch di assembly e un elenco di elementi di file di risorse divisi nella stessa maniera. Sarà quindi possibile usare la suddivisione in batch per passare questi elenchi di elementi a un'attività e compilare sia l'applicazione che l'assembly.  
   
 > [!NOTE]
->  Se un elenco di elementi passato a un'attività non contiene elementi con i metadati di riferimento, ogni elemento incluso nell'elenco viene passato a ogni batch.  
+> Se un elenco di elementi passato a un'attività non contiene elementi con i metadati di riferimento, ogni elemento incluso nell'elenco viene passato a ogni batch.  
   
  L'esempio seguente illustra come dividere in batch più elenchi di elementi in base ai metadati degli elementi. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi ognuno in tre batch in base ai metadati dell'elemento `Number`. La presenza di `%(Number)` nell'attributo `Text` indica a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] la necessità di effettuare la suddivisione in batch. Gli elenchi di elementi `ExampColl` e `ExampColl2` vengono divisi in tre batch in base ai metadati dell'elemento `Number` e ogni batch viene passato separatamente all'attività.  
   

@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435089"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Come sbloccare Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60072552"
 2. Immettere le credenziali per un account Microsoft oppure un account aziendale o dell'istituto di istruzione. Visual Studio individuerà un abbonamento a MSDN o a Visual Studio Team Services associato all'account.
 
 > [!IMPORTANT]
->  Visual Studio cerca automaticamente gli abbonamenti online associati quando ci si connette a un account Visual Studio Team Services dalla finestra dello strumento Team Explorer. Quando ci si connette a un account Visual Studio Team Services, è possibile accedere usando account Microsoft e account aziendali o dell'istituto di istruzione. Se è disponibile un abbonamento online per l'account utente, Visual Studio sbloccherà automaticamente l'IDE.
+> Visual Studio cerca automaticamente gli abbonamenti online associati quando ci si connette a un account Visual Studio Team Services dalla finestra dello strumento Team Explorer. Quando ci si connette a un account Visual Studio Team Services, è possibile accedere usando account Microsoft e account aziendali o dell'istituto di istruzione. Se è disponibile un abbonamento online per l'account utente, Visual Studio sbloccherà automaticamente l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Per sbloccare Visual Studio con un codice Product Key
 
@@ -43,7 +43,7 @@ ms.locfileid: "60072552"
 2. Immettere il codice Product Key nell'apposita casella.
 
 > [!TIP]
->  Le versioni preliminari di Visual Studio non includono codici  Product Key. Per usare le versioni preliminari, è necessario accedere all'IDE.
+> Le versioni preliminari di Visual Studio non includono codici  Product Key. Per usare le versioni preliminari, è necessario accedere all'IDE.
 
 ## <a name="addressing-license-problem-states"></a>Risoluzione dei problemi di licenza
 
@@ -63,7 +63,7 @@ ms.locfileid: "60072552"
    Se non si immettono di nuovo le credenziali, il token inizierà a diventare obsoleto. In questo caso, la finestra di dialogo Impostazioni account indica il numero di giorni rimanenti prima della scadenza completa del token. Dopo la scadenza del token, sarà necessario immettere di nuovo le credenziali per questo account oppure ottenere la licenza con un altro metodo indicato prima di potere continuare a usare Visual Studio.
 
 > [!IMPORTANT]
->  Se si usa Visual Studio per lunghi periodi di tempo in ambienti con accesso a Internet assente o limitato, è consigliabile usare un codice Product Key per sbloccare Visual Studio, in modo da evitare interruzioni.
+> Se si usa Visual Studio per lunghi periodi di tempo in ambienti con accesso a Internet assente o limitato, è consigliabile usare un codice Product Key per sbloccare Visual Studio, in modo da evitare interruzioni.
 
 ### <a name="updating-expired-licenses"></a>Aggiornamento di licenze scadute
  Se l'abbonamento è completamente scaduto e non si dispone più dei diritti di accesso a Visual Studio, è necessario:

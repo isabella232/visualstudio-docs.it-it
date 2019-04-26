@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435252"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedura: spostarsi nell'IDE di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60069512"
 L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'utente di passare da una finestra a un'altra e da un file a un altro in modi differenti, in base a preferenze o requisiti di progetto. È possibile scorrere tra file aperti nell'editor oppure scorrere tra tutte le finestre degli strumenti attive nell'IDE. È anche possibile passare direttamente a qualsiasi file aperto nell'editor, indipendentemente dall'ordine di accesso. Queste funzionalità consentono di aumentare la produttività, quando si utilizza l'IDE.
 
 > [!NOTE]
->  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **impostazioni generali per lo sviluppo**. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questo argomento della Guida è stato creato tenendo presente le **impostazioni generali per lo sviluppo**. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Tasti di scelta rapida
  Quasi tutti i comandi dei menu di Visual Studio dispongono di un tasto di scelta rapida. È inoltre possibile creare tasti di scelta rapida personalizzati. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -48,7 +48,7 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
 - Per attivare i documenti aperti in ordine inverso, premere CTRL + MAIUSC + SEGNO MENO.
 
   > [!NOTE]
-  >  **Posizione precedente** e **Posizione successiva** sono disponibili anche nel menu **Visualizza**.
+  > **Posizione precedente** e **Posizione successiva** sono disponibili anche nel menu **Visualizza**.
 
   È anche possibile passare a un file specifico aperto nell'editor (indipendentemente dall'ultimo accesso) usando lo **strumento di spostamento dell'IDE**, l'elenco **File attivi** nell'editor oppure la finestra di dialogo **Windows**.
 
@@ -59,14 +59,14 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
   `Window.PreviousDocumentWindowNav` consente di passare al file utilizzato più di recente, mentre `Window.NextDocumentWindowNav` consente di spostarsi in ordine inverso. Le impostazioni generali per lo sviluppo assegnano la combinazione CTRL + MAIUSC + TAB a `Window.PreviousDocumentWindowNav` e quella CTRL + TAB a `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Se la combinazione di impostazioni in uso non dispone già di tasti di scelta rapida assegnati a questo comando, è possibile assegnare un comando personalizzato tramite la pagina **Tastiera** della finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Se la combinazione di impostazioni in uso non dispone già di tasti di scelta rapida assegnati a questo comando, è possibile assegnare un comando personalizzato tramite la pagina **Tastiera** della finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Per passare a file specifici nell'editor
 
 - Premere CTRL + TAB per visualizzare lo **strumento di spostamento dell'IDE**. Tenere premuto il tasto CTRL e premere ripetutamente TAB fino a quando non si seleziona il file a cui si intende accedere.
 
     > [!TIP]
-    >  Per invertire l'ordine di spostamento nell'elenco dei **file attivi**, tenere premuto CTRL + MAIUSC e premere TAB.
+    > Per invertire l'ordine di spostamento nell'elenco dei **file attivi**, tenere premuto CTRL + MAIUSC e premere TAB.
 
      \- oppure -
 
@@ -82,14 +82,14 @@ L'ambiente di sviluppo integrato (IDE) è stato progettato per consentire all'ut
  Lo **strumento di spostamento dell'IDE** consente di scorrere le finestre degli strumenti aperte nell'IDE. È possibile usare uno dei due comandi per accedere allo **strumento di spostamento dell'IDE** e passare da una finestra degli strumenti all'altra, in base all'ordine che si preferisce. `Window.PreviousToolWindowNav` consente di passare al file utilizzato più di recente, mentre `Window.NextToolWindowNav` consente di spostarsi in ordine inverso. Nelle impostazioni generali per lo sviluppo la combinazione MAIUSC + ALT + F7 è assegnata a `Window.PreviousDocumentWindowNav` e quella ALT + F7 a `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Se la combinazione di impostazioni in uso non dispone già di tasti di scelta rapida assegnati a questo comando, è possibile assegnare un comando personalizzato tramite la pagina **Tastiera** della finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Se la combinazione di impostazioni in uso non dispone già di tasti di scelta rapida assegnati a questo comando, è possibile assegnare un comando personalizzato tramite la pagina **Tastiera** della finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Identificazione e personalizzazione dei tasti di scelta rapida](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Per passare a una finestra degli strumenti specifica nell'IDE
 
 - Premere ALT + F7 per visualizzare lo **strumento di navigazione dell'IDE**. Tenere premuto il tasto ALT e premere ripetutamente F7 fino a quando non si seleziona la finestra alla quale si intende accedere.
 
     > [!TIP]
-    >  Per invertire l'ordine di spostamento nell'elenco **Finestra degli strumenti attivi**, tenere premuto MAIUSC + ALT e premere F7.
+    > Per invertire l'ordine di spostamento nell'elenco **Finestra degli strumenti attivi**, tenere premuto MAIUSC + ALT e premere F7.
 
 ## <a name="see-also"></a>Vedere anche
  [Personalizzazione dei layout della finestra](../ide/customizing-window-layouts-in-visual-studio.md) [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md)

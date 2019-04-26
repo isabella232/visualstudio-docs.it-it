@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432610"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedura: modificare file Web.Config per instrumentare e profilare applicazioni Web ASP.NET compilate dinamicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60099591"
  Questo argomento descrive come modificare il file di configurazione web.config per abilitare la strumentazione e la profilatura delle applicazioni Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 > [!NOTE]
->  Non è necessario modificare il file web.config quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] precompilato.  
+> Non è necessario modificare il file web.config quando si usa il metodo di profilatura del campionamento o quando si vuole instrumentare un modulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] precompilato.  
   
  La radice di un file web.config è l'elemento **configuration**. Per instrumentare e profilare un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilata in modo dinamico, è necessario aggiungere o modificare gli elementi seguenti:  
   
