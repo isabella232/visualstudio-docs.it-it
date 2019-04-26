@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970070"
 ---
 # <a name="disk-operations-report-threads-view"></a>Report delle operazioni su disco (visualizzazione Thread)
 Nel rapporto delle operazioni su disco vengono descritte le operazioni I/O eseguite nei canali del disco.
 
  Per ogni accesso al disco che avviene per conto del processo sottoposto a profilatura nell'intervallo di tempo attualmente visibile, vengono segnalate le informazioni seguenti:
 
--   Nome e PID del processo che ha eseguito l'accesso al disco
+- Nome e PID del processo che ha eseguito l'accesso al disco
 
--   ID del thread che ha eseguito l'accesso al disco
+- ID del thread che ha eseguito l'accesso al disco
 
--   Nome del file al quale è stato eseguito l'accesso.
+- Nome del file al quale è stato eseguito l'accesso.
 
--   Numero di letture per ogni file
+- Numero di letture per ogni file
 
--   Numero di byte letti.
+- Numero di byte letti.
 
--   Latenza di lettura in millisecondi
+- Latenza di lettura in millisecondi
 
--   Numero di operazioni di scrittura
+- Numero di operazioni di scrittura
 
--   Numero di byte scritti
+- Numero di byte scritti
 
--   Latenza di scrittura in millisecondi
+- Latenza di scrittura in millisecondi
 
 ## <a name="see-also"></a>Vedere anche
 - [Visualizzazione Thread](../profiling/threads-view-parallel-performance.md)

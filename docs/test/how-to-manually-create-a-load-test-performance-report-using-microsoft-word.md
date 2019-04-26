@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950072"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedura: Creare manualmente un report di prestazioni del test di carico usando Microsoft Word
 
@@ -30,27 +30,27 @@ ms.locfileid: "55928803"
 
 ## <a name="copy-summary-view-data"></a>Copiare i dati della visualizzazione Riepilogo
 
-1.  Se in **Risultati test di carico** la visualizzazione Riepilogo non è attualmente visibile, fare clic su **Riepilogo** nella barra degli strumenti.
+1. Se in **Risultati test di carico** la visualizzazione Riepilogo non è attualmente visibile, fare clic su **Riepilogo** nella barra degli strumenti.
 
-2.  Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
+2. Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Seleziona tutto**.
 
-3.  Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Copia**. Il rendering dei dati della visualizzazione Riepilogo verrà eseguito in formato HTML negli Appunti.
+3. Nella visualizzazione Riepilogo fare clic con il pulsante destro del mouse e scegliere **Copia**. Il rendering dei dati della visualizzazione Riepilogo verrà eseguito in formato HTML negli Appunti.
 
-4.  In Microsoft Word incollare i dati della visualizzazione Riepilogo nella posizione desiderata.
+4. In Microsoft Word incollare i dati della visualizzazione Riepilogo nella posizione desiderata.
 
-5.  A questo punto è possibile modificare, formattare ed eliminare aspetti del contenuto copiato per soddisfare le esigenze riguardanti il rapporto.
+5. A questo punto è possibile modificare, formattare ed eliminare aspetti del contenuto copiato per soddisfare le esigenze riguardanti il rapporto.
 
 ## <a name="copy-graph-view-data"></a>Copiare i dati della visualizzazione Grafici
 
-1.  Se in **Risultati test di carico** la visualizzazione Grafici non è attualmente visibile, scegliere **Grafici** nella barra degli strumenti.
+1. Se in **Risultati test di carico** la visualizzazione Grafici non è attualmente visibile, scegliere **Grafici** nella barra degli strumenti.
 
-2.  (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Facoltativo) Ingrandire il grafico specifico che si vuole copiare nel documento di Microsoft Word, come illustrato nella figura seguente. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Controllo zoom della visualizzazione grafico](../test/media/ltest_zoomcontrol.png)
 
-3.  Nel grafico che si vuole copiare nel documento di Microsoft Word fare clic con il pulsante destro del mouse e scegliere **Copia**.
+3. Nel grafico che si vuole copiare nel documento di Microsoft Word fare clic con il pulsante destro del mouse e scegliere **Copia**.
 
-4.  In Microsoft Word incollare il grafico e i dati della tabella associati nella posizione desiderata.
+4. In Microsoft Word incollare il grafico e i dati della tabella associati nella posizione desiderata.
 
     > [!WARNING]
     > Non è possibile copiare il grafico da un desktop remoto e incollarlo in un altro computer, perché verranno copiate solo le informazioni della tabella associata al grafico e non l'immagine del grafico. L'immagine del grafico viene archiviata nella directory temporanea del computer dal quale è stata copiata e il secondo computer non è in grado di dereferenziare tale directory.

@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950217"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedura: Creare un'impostazione di test per un test di carico distribuito
 
@@ -25,11 +25,11 @@ Ad esempio, è possibile utilizzare l'adattatore dati di diagnostica del profile
 
 Le impostazioni test per Visual Studio vengono archiviate in un file. Le impostazioni test definiscono le seguenti informazioni su ogni ruolo:
 
--   Il set di ruoli necessario per l'applicazione sottoposta a test
+- Il set di ruoli necessario per l'applicazione sottoposta a test
 
--   Il ruolo da utilizzare per eseguire i test
+- Il ruolo da utilizzare per eseguire i test
 
--   Gli adattatori dati di diagnostica da utilizzare per ciascun ruolo
+- Gli adattatori dati di diagnostica da utilizzare per ciascun ruolo
 
 Quando si eseguono i test, si selezionano le impostazioni di test da utilizzare come impostazioni attive a seconda delle esigenze correlate allo specifico test da eseguire. Il file delle impostazioni di test è archiviato come parte della soluzione. Il nome file ha l'estensione *testsettings*.
 
@@ -43,33 +43,33 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Per aggiungere impostazioni test per un test di carico distribuito
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2.  Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
+2. Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
 
-3.  (Facoltativo) Nella casella **Nome** cambiare il nome del file delle impostazioni test.
+3. (Facoltativo) Nella casella **Nome** cambiare il nome del file delle impostazioni test.
 
-4.  Scegliere **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
      Il nuovo file delle impostazioni test viene visualizzato in **Esplora soluzioni** nella cartella **Elementi di soluzione**.
 
     > [!NOTE]
     > L'elenco di impostazioni test visualizzato in Visual Studio Enterprise deriva dall'elenco dei file di impostazioni test nella cartella **Elementi di soluzione**. I file delle impostazioni test nella cartella **Elementi di soluzione** vengono ad esempio visualizzati quando si sceglie l'opzione **Seleziona impostazioni test attive** dal menu **Test**. Questo significa che se un file di impostazioni test viene spostato in un'altra posizione nella gerarchia della soluzione, non sarà più possibile utilizzarlo come un'impostazione di test nell'IDE (Integrated Development Environment) di Visual Studio.
 
-5.  Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
+5. Viene visualizzata la finestra di dialogo **Impostazioni test**. È selezionata la pagina **Generale**.
 
      È quindi possibile modificare e salvare i valori delle impostazioni di test.
 
     > [!NOTE]
     > Ogni impostazione test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
 
-6.  In **Nome** digitare il nome per le impostazioni test.
+6. In **Nome** digitare il nome per le impostazioni test.
 
-7.  (Facoltativo) In **Descrizione** digitare una descrizione per l'impostazione test in modo da indicarne la funzione agli altri membri del team.
+7. (Facoltativo) In **Descrizione** digitare una descrizione per l'impostazione test in modo da indicarne la funzione agli altri membri del team.
 
-8.  (Facoltativo) Per selezionare lo schema di denominazione predefinito per le esecuzioni dei test, selezionare **Schema di denominazione predefinito**. Per definire uno schema di denominazione personalizzato, selezionare **Schema definito dall'utente**, quindi digitare il testo desiderato in **Testo prefisso**. Per aggiungere la data e l'ora al nome dell'esecuzione del test, selezionare **Aggiungi indicatore data e ora**.
+8. (Facoltativo) Per selezionare lo schema di denominazione predefinito per le esecuzioni dei test, selezionare **Schema di denominazione predefinito**. Per definire uno schema di denominazione personalizzato, selezionare **Schema definito dall'utente**, quindi digitare il testo desiderato in **Testo prefisso**. Per aggiungere la data e l'ora al nome dell'esecuzione del test, selezionare **Aggiungi indicatore data e ora**.
 
 9. Scegliere **Ruoli**.
 
@@ -154,27 +154,27 @@ Eseguire la procedura seguente per creare e rimuovere impostazioni di test nella
 
      Viene visualizzata la pagina **Script di installazione e pulizia**.
 
-    1.  Digitare il percorso del file di script in **Script di installazione** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
+    1. Digitare il percorso del file di script in **Script di installazione** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
 
-    2.  Digitare il percorso del file di script in **Script di pulizia** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
+    2. Digitare il percorso del file di script in **Script di pulizia** oppure fare clic sui puntini di sospensione (**…**) per individuare lo script.
 
 24. Per eseguire i test usando un host diverso, scegliere **Host**.
 
-    1.  In **Tipo host** verificare che **Predefinito** sia selezionato.
+    1. In **Tipo host** verificare che **Predefinito** sia selezionato.
 
         > [!NOTE]
         > Il **Tipo host** **ASP.NET** non è supportato nei test di carico.
 
-    2.  Usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** per scegliere se i test delle prestazioni Web e gli unit test nel test di carico devono essere eseguiti come processi a 32 bit o a 64 bit.
+    2. Usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** per scegliere se i test delle prestazioni Web e gli unit test nel test di carico devono essere eseguiti come processi a 32 bit o a 64 bit.
 
         > [!NOTE]
         > Per la massima flessibilità, è necessario compilare i progetti di test di carico e prestazioni web usando la configurazione **Qualsiasi CPU**. È quindi possibile effettuare l'esecuzione sia su agenti a 32 bit che a 64 bit. La compilazione di progetti di test di carico e prestazioni web con la configurazione a **64 bit** non offre particolari vantaggi.
 
 25. (Facoltativo) Per limitare la durata di ogni esecuzione di test e dei singoli test, scegliere **Timeout test**.
 
-    1.  Per interrompere un'esecuzione di test quando viene superato un limite di tempo, selezionare **Interrompi una esecuzione dei test se il tempo totale supera**, quindi digitare un valore per il limite.
+    1. Per interrompere un'esecuzione di test quando viene superato un limite di tempo, selezionare **Interrompi una esecuzione dei test se il tempo totale supera**, quindi digitare un valore per il limite.
 
-    2.  Per generare un errore in un singolo test quando viene superato un limite di tempo, selezionare **Contrassegna singolo test come non superato se il tempo di esecuzione è maggiore di**, quindi digitare un valore per il limite.
+    2. Per generare un errore in un singolo test quando viene superato un limite di tempo, selezionare **Contrassegna singolo test come non superato se il tempo di esecuzione è maggiore di**, quindi digitare un valore per il limite.
 
 26. Ignorare **Unit test**. I test di carico non utilizzano queste impostazioni.
 

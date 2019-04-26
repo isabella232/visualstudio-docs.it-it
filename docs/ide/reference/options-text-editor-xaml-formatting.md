@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969254"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opzioni, Editor di testo, XAML, Formattazione
 
@@ -44,13 +44,13 @@ Usare la pagina delle proprietà **Formattazione** per specificare la formattazi
 
 La formattazione automatica può verificarsi quando vengono rilevati gli eventi seguenti.
 
--   Completamento di un tag di fine o un tag semplice.
+- Completamento di un tag di fine o un tag semplice.
 
--   Completamento di un tag di inizio.
+- Completamento di un tag di inizio.
 
--   Inserimento degli Appunti.
+- Inserimento degli Appunti.
 
--   Formattazione di comandi da tastiera.
+- Formattazione di comandi da tastiera.
 
 È possibile specificare gli eventi che causano la formattazione automatica.
 
@@ -146,7 +146,6 @@ Le righe vuote nel contenuto dell'elemento non vengono rimosse.
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

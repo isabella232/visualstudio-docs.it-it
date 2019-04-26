@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975536"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -86,41 +86,41 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
 ### <a name="create-a-member-using-class-designer"></a>Creare un membro usando Progettazione classi
 
-1.  Fare clic con il pulsante destro del mouse sul tipo a cui si vuole aggiungere un membro, scegliere **Aggiungi** e scegliere il tipo di membro da aggiungere.
+1. Fare clic con il pulsante destro del mouse sul tipo a cui si vuole aggiungere un membro, scegliere **Aggiungi** e scegliere il tipo di membro da aggiungere.
 
      Verrà creata una nuova firma del membro, che verrà aggiunta al tipo. Il nome predefinito assegnato può essere modificato in **Progettazione classi**, nella finestra **Dettagli classe** oppure nella finestra **Proprietà**.
 
-2.  Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
+2. Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Creare un membro usando la barra degli strumenti della finestra Dettagli classe
 
-1.  Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
+1. Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
 
      Il tipo otterrà lo stato attivo e i relativi contenuti verranno visualizzati nella finestra **Dettagli classe**.
 
-2.  Nella barra degli strumenti della finestra **Dettagli classe** fare clic sull'icona superiore e scegliere **Nuovo \<membro>** dall'elenco a discesa.
+2. Nella barra degli strumenti della finestra **Dettagli classe** fare clic sull'icona superiore e scegliere **Nuovo \<membro>** dall'elenco a discesa.
 
      Il cursore si sposta nel campo **Nome** in una riga per il tipo di membro che si vuole aggiungere. Se, ad esempio, è stata selezionata l'opzione **Nuova proprietà**, il cursore si sposta in una nuova riga nella sezione **Proprietà** della finestra **Dettagli classe**.
 
-3.  Digitare il nome del membro da creare e premere Invio oppure spostare lo stato attivo in altro modo, ad esempio premendo Tab.
+3. Digitare il nome del membro da creare e premere Invio oppure spostare lo stato attivo in altro modo, ad esempio premendo Tab.
 
      Verrà creata una nuova firma del membro, che verrà aggiunta al tipo. A questo punto il membro esiste nel codice e viene visualizzato in **Progettazione classi**, nella finestra **Dettagli classe** e nella finestra Proprietà.
 
-4.  Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
+4. Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Creare un membro usando la finestra Dettagli classe
 
-1.  Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
+1. Sulla superficie del diagramma selezionare il tipo a cui aggiungere un membro.
 
      Il tipo otterrà lo stato attivo e i relativi contenuti verranno visualizzati nella finestra **Dettagli classe**.
 
-2.  Nella sezione della finestra **Dettagli classe** che contiene il tipo di membro da aggiungere, scegliere **\<Aggiungi membro>**. Se ad esempio si vuole aggiungere un campo, scegliere **\<Aggiungi campo>**.
+2. Nella sezione della finestra **Dettagli classe** che contiene il tipo di membro da aggiungere, scegliere **\<Aggiungi membro>**. Se ad esempio si vuole aggiungere un campo, scegliere **\<Aggiungi campo>**.
 
-3.  Digitare il nome del membro da creare e premere Invio.
+3. Digitare il nome del membro da creare e premere Invio.
 
      Verrà creata una nuova firma del membro, che verrà aggiunta al tipo. A questo punto il membro esiste nel codice e viene visualizzato in **Progettazione classi**, nella finestra **Dettagli classe** e nella finestra Proprietà.
 
-4.  Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
+4. Se lo si desidera, specificare altri dettagli sul membro, ad esempio il tipo.
 
      **Nota:** per creare i membri è anche possibile usare i tasti di scelta rapida. Per altre informazioni, vedere [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -170,11 +170,11 @@ Ciascuna riga di membri visualizza i seguenti elementi:
 
 ### <a name="to-modify-a-type-member"></a>Per modificare un membro di un tipo
 
-1.  Selezionare un tipo utilizzando Progettazione classi.
+1. Selezionare un tipo utilizzando Progettazione classi.
 
-2.  Se la finestra **Dettagli classe** non è visualizzata, fare clic sul pulsante della finestra **Dettagli classe** nella barra degli strumenti di Progettazione classi.
+2. Se la finestra **Dettagli classe** non è visualizzata, fare clic sul pulsante della finestra **Dettagli classe** nella barra degli strumenti di Progettazione classi.
 
-3.  Modificare i valori nei campi della griglia della finestra **Dettagli classe**. Dopo ogni modifica premere INVIO oppure spostare lo stato attivo dal campo modificato, ad esempio premendo TAB. Il codice verrà immediatamente aggiornato in base alle modifiche apportate.
+3. Modificare i valori nei campi della griglia della finestra **Dettagli classe**. Dopo ogni modifica premere INVIO oppure spostare lo stato attivo dal campo modificato, ad esempio premendo TAB. Il codice verrà immediatamente aggiornato in base alle modifiche apportate.
 
     > [!NOTE]
     > Se si desidera modificare solo il nome di un membro, è possibile farlo mediante la modifica sul posto.
@@ -217,35 +217,35 @@ Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di param
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Per aggiungere un parametro a un metodo
 
-1.  Sulla superficie del diagramma fare clic sul tipo contenente il metodo a cui si desidera aggiungere un parametro.
+1. Sulla superficie del diagramma fare clic sul tipo contenente il metodo a cui si desidera aggiungere un parametro.
 
      Il tipo otterrà lo stato attivo e il relativo contenuto verrà visualizzato nella finestra **Dettagli classe**.
 
-2.  Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro.
+2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro.
 
      Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>**.
 
-3.  Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
+3. Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 
-4.  Se lo si desidera, specificare altri dettagli relativi al parametro, ad esempio il tipo.
+4. Se lo si desidera, specificare altri dettagli relativi al parametro, ad esempio il tipo.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Per aggiungere un parametro facoltativo a un metodo
 
-1.  Sulla superficie del diagramma fare clic sul tipo contenente il metodo a cui si desidera aggiungere un parametro facoltativo.
+1. Sulla superficie del diagramma fare clic sul tipo contenente il metodo a cui si desidera aggiungere un parametro facoltativo.
 
      Il tipo otterrà lo stato attivo e il relativo contenuto verrà visualizzato nella finestra **Dettagli classe**.
 
-2.  Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro facoltativo.
+2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro facoltativo.
 
      Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>**.
 
-3.  Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
+3. Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 
-4.  Nella finestra Proprietà digitare un valore per la proprietà **Valore predefinito facoltativo**. L'impostazione della proprietà Valore predefinito facoltativo di un parametro lo rende facoltativo.
+4. Nella finestra Proprietà digitare un valore per la proprietà **Valore predefinito facoltativo**. L'impostazione della proprietà Valore predefinito facoltativo di un parametro lo rende facoltativo.
 
     > [!NOTE]
     > I parametri facoltativi devono essere gli ultimi parametri presenti nell'elenco di parametri.

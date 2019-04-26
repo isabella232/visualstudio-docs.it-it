@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 2c9bbe0b6a1f7722fb2da685b29f5d244441edc2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954757"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Guida introduttiva: Usare Visual Studio per creare la prima app Web ASP.NET Core
 
@@ -31,7 +31,7 @@ In questa introduzione di 5-10 minuti che spiega come usare Visual Studio viene 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ Dopo pochi istanti, Visual Studio apre il file di progetto.
    >
    > ![Carico di lavoro Applicazione Web ASP.NET Core nel programma di installazione di Visual Studio](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
+   > Successivamente, scegliere il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura "[Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *HelloWorld* nella casella **Nome del progetto**. Scegliere **Crea**.
 
@@ -178,4 +178,4 @@ Per altre informazioni, continuare con l'esercitazione seguente:
 
 ## <a name="see-also"></a>Vedere anche
 
-[Eseguire la pubblicazione di un'app Web in Servizio app di Azure con Visual Studio](../deployment/quickstart-deploy-to-azure.md)
+[Publish your web app to Azure App Service by using Visual Studio](../deployment/quickstart-deploy-to-azure.md) (Pubblicare l'app Web in Servizio app di Azure con Visual Studio)

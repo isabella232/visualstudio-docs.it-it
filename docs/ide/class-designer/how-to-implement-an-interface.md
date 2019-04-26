@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975177"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Procedura: Implementare un'interfaccia in Progettazione classi
 
@@ -27,9 +27,9 @@ In **Progettazione classi** è possibile implementare un'interfaccia nel diagram
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Per implementare un'interfaccia tracciando una linea di ereditarietà
 
-1.  Nel diagramma classi visualizzare l'interfaccia e la classe che implementa l'interfaccia.
+1. Nel diagramma classi visualizzare l'interfaccia e la classe che implementa l'interfaccia.
 
-2.  Tracciare una linea di ereditarietà dalla classe e all'interfaccia.
+2. Tracciare una linea di ereditarietà dalla classe e all'interfaccia.
 
      Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia.
 
@@ -37,14 +37,14 @@ Per altre informazioni, vedere [Procedura: Creare ereditarietà tra tipi](how-to
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Per implementare un'interfaccia dalla finestra Visualizzazione classi
 
-1.  Nel diagramma classi visualizzare la classe che deve implementare l'interfaccia.
+1. Nel diagramma classi visualizzare la classe che deve implementare l'interfaccia.
 
-2.  Aprire **Visualizzazione classi** e individuare l'interfaccia.
+2. Aprire **Visualizzazione classi** e individuare l'interfaccia.
 
     > [!TIP]
     > Se non è già visualizzata, aprire **Visualizzazione** **classi** dal menu **Visualizza** o premere **CTRL**+**MAIUSC**+**C**.
 
-3.  Trascinare il nodo di interfaccia nella forma della classe nel diagramma.
+3. Trascinare il nodo di interfaccia nella forma della classe nel diagramma.
 
      Viene visualizzato un simbolo di interfaccia collegato alla classe, mentre un'etichetta con il nome dell'interfaccia identifica la relazione di ereditarietà. Visual Studio genera stub per tutti i membri di interfaccia. A questo punto, l'interfaccia è stata implementata.
 

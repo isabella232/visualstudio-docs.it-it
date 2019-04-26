@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840382"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedura: Usare caratteri XML riservati nei file di progetto
 Quando si creano file di progetto, potrebbe essere necessario usare caratteri XML riservati, ad esempio, nei valori della proprietà o nei valori del parametro di un'attività. Alcuni caratteri riservati tuttavia devono essere sostituiti da un'entità denominata in modo che il file di progetto possa essere analizzato.
@@ -34,7 +34,7 @@ Quando si creano file di progetto, potrebbe essere necessario usare caratteri XM
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Per usare le virgolette doppie in un file di progetto
 
--   Sostituire le virgolette doppie con l'entità denominata corrispondente, &amp;quot;. Ad esempio, per racchiudere tra virgolette doppie l'elenco di elementi `EXEFile`, digitare:
+- Sostituire le virgolette doppie con l'entità denominata corrispondente, &amp;quot;. Ad esempio, per racchiudere tra virgolette doppie l'elenco di elementi `EXEFile`, digitare:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

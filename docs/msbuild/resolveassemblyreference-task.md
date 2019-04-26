@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10db157aa5c75f1fde083ac12cd19fd1b02e91ec
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970822"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference (attività)
 Determina tutti gli assembly che dipendono dall'assembly specificato, incluse dipendenze di secondo e `n` ordine.
@@ -81,25 +81,25 @@ Determina tutti gli assembly che dipendono dall'assembly specificato, incluse di
 ## <a name="warnings"></a>Avvisi
  Vengono registrati gli avvisi seguenti:
 
--   `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
+- `ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects`
 
--   `ResolveAssemblyReference.SuggestedRedirects`
+- `ResolveAssemblyReference.SuggestedRedirects`
 
--   `ResolveAssemblyReference.FoundConflicts`
+- `ResolveAssemblyReference.FoundConflicts`
 
--   `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
+- `ResolveAssemblyReference.AssemblyFoldersExSearchLocations`
 
--   `ResolveAssemblyReference.UnifiedPrimaryReference`
+- `ResolveAssemblyReference.UnifiedPrimaryReference`
 
--   `ResolveAssemblyReference.PrimaryReference`
+- `ResolveAssemblyReference.PrimaryReference`
 
--   `ResolveAssemblyReference.UnifiedDependency`
+- `ResolveAssemblyReference.UnifiedDependency`
 
--   `ResolveAssemblyReference.UnificationByAutoUnify`
+- `ResolveAssemblyReference.UnificationByAutoUnify`
 
--   `ResolveAssemblyReference.UnificationByAppConfig`
+- `ResolveAssemblyReference.UnificationByAppConfig`
 
--   `ResolveAssemblyReference.UnificationByFrameworkRetarget`
+- `ResolveAssemblyReference.UnificationByFrameworkRetarget`
 
 ## <a name="remarks"></a>Osservazioni
  Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).

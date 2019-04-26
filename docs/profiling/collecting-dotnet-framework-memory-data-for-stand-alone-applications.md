@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949033"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 
@@ -37,7 +37,6 @@ Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'a
 |**Sottoporre a profilatura tramite il metodo di strumentazione**|-   [Raccogliere dati di intervallo dettagliati tramite la strumentazione](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Sottoporre a profilatura i conflitti di risorse e le attività dei thread**|-   [Raccogliere dati di concorrenza](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Aggiunta di dati di interazione tra livelli**|-   [Raccogliere dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>Sottoporre a profilatura i dati di memoria .NET
 

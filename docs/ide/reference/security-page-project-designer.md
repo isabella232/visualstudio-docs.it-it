@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945492"
 ---
 # <a name="security-page-project-designer"></a>Pagina Sicurezza, Progettazione progetti
 
@@ -34,7 +34,6 @@ La pagina **Sicurezza** di **Creazione progetti** viene usata per configurare le
 
 > [!NOTE]
 > Quando si pubblica un'applicazione usando la procedura guidata di **pubblicazione** questa opzione è abilitata automaticamente.
-
 
  Quando si seleziona questa opzione, è possibile selezionare uno dei due pulsanti di opzione disponibili: **È un'applicazione con attendibilità totale** o **È un'applicazione con attendibilità parziale**.
 

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999782"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 Contiene un elenco facoltativo di parametri che saranno presenti sull'attività generata da un elemento `UsingTask` `TaskFactory`. Per altre informazioni, vedere [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).

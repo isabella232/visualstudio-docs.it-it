@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832170"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usare l'estensione Cookiecutter
 
@@ -37,10 +37,10 @@ Nella home page di Cookiecutter viene visualizzato un elenco di modelli tra cui 
 
 | Gruppo | Description |
 | --- | --- |
-| **Installed (Installati)** | Modelli installati nel computer locale. Quando si usa un modello online, il repository corrispondente viene clonato automaticamente in una sottocartella di file *~/.cookiecutter*. È possibile eliminare un modello installato selezionato premendo **CANC**. |
-| **Consigliato** | Modelli caricati dal feed consigliato. Il feed predefinito è a cura di Microsoft. Vedere [Opzioni di Cookiecutter](#cookiecutter-options) di seguito per altri dettagli sulla personalizzazione del feed. |
+| **Installato** | Modelli installati nel computer locale. Quando si usa un modello online, il repository corrispondente viene clonato automaticamente in una sottocartella di file *~/.cookiecutter*. È possibile eliminare un modello installato selezionato premendo **CANC**. |
+| **Consigliati** | Modelli caricati dal feed consigliato. Il feed predefinito è a cura di Microsoft. Vedere [Opzioni di Cookiecutter](#cookiecutter-options) di seguito per altri dettagli sulla personalizzazione del feed. |
 | **GitHub** | Risultati di ricerca da GitHub per la parola chiave cookiecutter. I risultati da GitHub vengono impaginati. Se sono disponibili altri risultati, alla fine dell'elenco viene visualizzata l'opzione **Load More** (Carica altro). |
-| **Custom (Personalizzati)** | Quando si immette una posizione personalizzata nella casella di ricerca, i risultati vengono visualizzati in questo gruppo. È possibile digitare il percorso completo del repository GitHub o il percorso completo di una cartella nel disco locale. |
+| **Personalizzato** | Quando si immette una posizione personalizzata nella casella di ricerca, i risultati vengono visualizzati in questo gruppo. È possibile digitare il percorso completo del repository GitHub o il percorso completo di una cartella nel disco locale. |
 
 ### <a name="cloning"></a>Clonazione
 
@@ -82,7 +82,7 @@ Le opzioni di Cookiecutter sono disponibili tramite **Strumenti** > **Opzioni** 
 | Opzione | Description |
 | --- | --- |
 | **URL del feed consigliato** | Posizione del feed dei modelli consigliato. Può essere un URL o un percorso di un file locale. Lasciare l'URL vuoto per usare il feed predefinito a cura di Microsoft. Il feed offre un semplice elenco di percorsi di modelli, separati da caratteri di nuova riga. Per richiedere modifiche al feed curato, effettuare una richiesta pull per l'[origine su GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Show Help (Mostra Guida)** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
+| **Visualizza la Guida** | Controlla la visibilità della barra informazioni della Guida nella parte superiore della finestra di Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Ottimizzare i modelli di Cookiecutter per Visual Studio
 

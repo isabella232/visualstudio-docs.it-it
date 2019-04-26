@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892558"
 ---
 # <a name="work-with-3d-models"></a>Uso di modelli 3D
 
@@ -29,7 +29,7 @@ L'Editor dei modelli è l'unico strumento necessario per creare modelli 3D di ba
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Editor dei modelli](../designers/model-editor.md)|Descrive come usare l'Editor dei modelli per lavorare con modelli 3D.|
 |[Esempi dell'editor di modelli](../designers/model-editor-examples.md)|Contiene i collegamenti ad argomenti che descrivono come usare l'Editor dei modelli per eseguire attività comuni di modellazione 3D.|

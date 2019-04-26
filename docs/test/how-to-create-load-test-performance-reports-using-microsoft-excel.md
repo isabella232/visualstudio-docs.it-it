@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950157"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -24,18 +24,18 @@ ms.locfileid: "55955596"
 
 Sono disponibili due tipi di report del test di carico:
 
--   **Esegui confronto** Consente di creare un set di report per il confronto dei dati di due risultati del test di carico tramite tabelle e grafici a barre.
+- **Esegui confronto** Consente di creare un set di report per il confronto dei dati di due risultati del test di carico tramite tabelle e grafici a barre.
 
--   **Tendenza** È possibile generare l'analisi delle tendenze in due o più risultati del test di carico. I risultati vengono visualizzati utilizzando grafici a linee, ma i dati sono disponibili in tabelle pivot.
+- **Tendenza** È possibile generare l'analisi delle tendenze in due o più risultati del test di carico. I risultati vengono visualizzati usando grafici a linee, ma i dati sono disponibili in tabelle pivot.
 
 > [!TIP]
 > È inoltre possibile creare manualmente report di Microsoft Word copiando e incollando dati dalle visualizzazioni Riepilogo, Grafici e Tabelle. Vedere [Procedura: Creare manualmente un report di prestazioni del test di carico usando Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
-Ciascun report può essere usato per condividere dati relativi alle prestazioni con gli stakeholder e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
+Ciascun report può essere usato per condividere dati relativi alle prestazioni con le parti interessate e mostrare se le prestazioni complessive e l'integrità del sistema stanno migliorando o peggiorando.
 
-Le definizioni del report vengono archiviate nel database del test di carico. Quando viene salvato un report, la definizione per il report viene salvata nel database e può essere utilizzata nuovamente in un secondo momento.
+Le definizioni del report vengono archiviate nel database del test di carico. Quando viene salvato un report, la definizione per il report viene salvata nel database e può essere usata nuovamente in un secondo momento.
 
-Inoltre, la cartella di lavoro di Excel può essere condivisa con gli stakeholder in modo che questi non debbano connettersi al database per vedere il report.
+Inoltre, la cartella di lavoro di Excel può essere condivisa con le parti interessate in modo che esse non debbano connettersi al database per vedere il report.
 
 > [!NOTE]
 > È possibile condividere la cartella di lavoro di Excel; tuttavia, solo gli utenti con computer in cui è installato Visual Studio saranno in grado di modificare i fogli di calcolo. Gli altri utenti non vedranno l'opzione **Rapporto test di carico** nella barra multifunzione di **Office**, ma saranno in grado di visualizzare la cartella di lavoro.

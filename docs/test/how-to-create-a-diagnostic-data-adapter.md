@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950725"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procedura: Creare un adattatore dati di diagnostica
 
@@ -54,19 +54,19 @@ Per un progetto di adattatore dati di diagnostica di esempio completo, incluso u
 
 2. Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
+   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Riferimenti**, quindi scegliere il comando **Aggiungi riferimento**.
 
-   2.  Scegliere **.NET** e individuare **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Scegliere **.NET** e individuare **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Scegliere **OK**.
+   3. Scegliere **OK**.
 
 3. Aggiungere l'assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
+   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e scegliere **Aggiungi riferimento**.
 
-   2.  Scegliere **/.NET** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Scegliere **/.NET** e individuare **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Scegliere **OK**.
+   3. Scegliere **OK**.
 
 4. Aggiungere le seguenti istruzioni `using` al file della classe:
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897824"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
 
@@ -25,21 +25,21 @@ Questo articolo illustra come usare la finestra di progettazione shader e il lin
 
 Prima di iniziare, assicurarsi che siano visualizzate la finestra **Proprietà** e la **casella degli strumenti**.
 
-1.  Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
+1. Creare uno shader DGSL da usare. Per informazioni su come aggiungere uno shader DGSL al progetto, vedere la sezione Introduzione in [Finestra di progettazione shader](../designers/shader-designer.md).
 
-2.  Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
+2. Scollegare il nodo **Colore punto** dal nodo **Colore finale**. Scegliere il terminale **RGB** del nodo **Colore punto** e quindi scegliere **Interrompi collegamenti**. In questo modo si crea lo spazio per il nodo che viene aggiunto nel passaggio successivo.
 
-3.  Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Per** e spostarlo nell'area di progettazione.
+3. Aggiungere un nodo **Per** al grafico. Nella **casella degli strumenti**, in **Matematica**, selezionare **Per** e spostarlo nell'area di progettazione.
 
-4.  Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.
+4. Aggiungere un nodo **Mascheramento vettore** al grafico. Nella **casella degli strumenti**, in **Utilità**, selezionare **Mascheramento vettore** e spostarlo nell'area di progettazione.
 
-5.  Specificare i valori di maschera per il nodo **Mascheramento vettore**. In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True**. Impostare quindi le proprietà **Rosso / X**, **Blu / Z** e **Alfa / W** su **False**. In questo esempio, le proprietà **Rosso / X**, **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True**, dopo il mascheramento del vettore di input rimane solo il componente y.
+5. Specificare i valori di maschera per il nodo **Mascheramento vettore**. In modalità **Seleziona** selezionare il nodo **Mascheramento vettore** e nella finestra **Proprietà** impostare la proprietà **Verde / Y** su **True**. Impostare quindi le proprietà **Rosso / X**, **Blu / Z** e **Alfa / W** su **False**. In questo esempio, le proprietà **Rosso / X**, **Verde / Y** e **Blu / Z** corrispondono ai componenti x, y e z del nodo **Posizione globale** e **Alfa / W** non viene usato. Poiché solo **Verde / Y** è impostato su **True**, dopo il mascheramento del vettore di input rimane solo il componente y.
 
-6.  Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Posizione globale** e spostarlo nell'area di progettazione.
+6. Aggiungere un nodo **Posizione globale** al grafico. Nella **casella degli strumenti**, in **Costanti**, selezionare **Posizione globale** e spostarlo nell'area di progettazione.
 
-7.  Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore**. Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.
+7. Mascherare la posizione del frammento nello spazio globale. In modalità **Seleziona** spostare il terminale **Output** del nodo **Posizione globale** nel terminale **Vettore** del nodo **Mascheramento vettore**. Questa connessione maschera la posizione del frammento in modo da ignorare i componenti x e z.
 
-8.  Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per**. Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.
+8. Moltiplicare la costante di colore RGB per la posizione mascherata nello spazio globale. Spostare il terminale **RGB** del nodo **Colore punto** nel terminale **Y** del nodo **Per** e quindi spostare il terminale **Output** del nodo **Mascheramento vettore** nel terminale **X** del nodo **Per**. Tale connessione consente di ridimensionare il valore del colore in base all'altezza del pixel nello spazio globale.
 
 9. Collegare il valore del colore ridimensionato al colore finale. Spostare il terminale **Output** del nodo **Per** nel terminale **RGB** del nodo **Colore finale**.
 

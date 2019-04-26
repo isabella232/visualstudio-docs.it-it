@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793844"
 ---
 # <a name="features-of-visual-studio"></a>Funzionalità di Visual Studio
 
@@ -24,7 +24,7 @@ Il programma di installazione modulare di Visual Studio consente di scegliere e 
 
 ::: moniker range="vs-2017"
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
 
 ::: moniker-end
 
@@ -138,6 +138,6 @@ Per altre informazioni sull'estensione di Visual Studio, vedere [Estendi Visual 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Panoramica dell'ambiente IDE di Visual Studio](../get-started/visual-studio-ide.md)
+- [Panoramica dell'IDE di Visual Studio](../get-started/visual-studio-ide.md)
 - [Novità di Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Novità di Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

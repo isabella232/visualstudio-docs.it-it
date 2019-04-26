@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b27afce3f27b2a6325f3ee59f5220bac68275c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897585"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 Stili e modelli per gli elementi nella finestra di progettazione XAML vengono archiviati in entità riutilizzabili dette risorse. Gli stili consentono di impostare le proprietà degli elementi e riutilizzare tali impostazioni per conferire un aspetto uniforme a più elementi. Un oggetto [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) definisce l'aspetto di un controllo e può anche essere applicato come risorsa. Per altre informazioni, vedere [Avvio rapido: Applicazione di stili ai controlli](http://go.microsoft.com/fwlink/?LinkID=248239) e [Avvio rapido: Modelli di controllo](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -25,27 +25,27 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 
 ### <a name="to-create-a-new-resource"></a>Per creare una nuova risorsa
 
-1.  Con un file XAML aperto nella finestra di progettazione XAML, creare un elemento oppure scegliere un elemento nella finestra Struttura documento.
+1. Con un file XAML aperto nella finestra di progettazione XAML, creare un elemento oppure scegliere un elemento nella finestra Struttura documento.
 
-2.  Nella finestra Proprietà scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà e quindi scegliere **Converti in nuova risorsa**. Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
+2. Nella finestra Proprietà scegliere il marcatore della proprietà, rappresentato da un simbolo di casella a destra del valore di una proprietà e quindi scegliere **Converti in nuova risorsa**. Un simbolo di casella bianca indica un valore predefinito, mentre un simbolo di casella nera indica in genere che è stata applicata una risorsa locale.
 
      Verrà visualizzata la finestra di dialogo appropriata per la creazione di una risorsa. Questa finestra di dialogo viene visualizzata quando si crea una risorsa da un pennello:
 
      ![Finestra di dialogo Crea risorsa](../designers/media/xaml_create_resource.png)
 
-3.  Nella casella **Nome (chiave)** immettere un nome di chiave. Si tratta del nome che è possibile usare quando si vuole che altri elementi facciano riferimento alla risorsa.
+3. Nella casella **Nome (chiave)** immettere un nome di chiave. Si tratta del nome che è possibile usare quando si vuole che altri elementi facciano riferimento alla risorsa.
 
-4.  In **Posizione definizione** scegliere l'opzione che specifica dove si vuole definire la risorsa:
+4. In **Posizione definizione** scegliere l'opzione che specifica dove si vuole definire la risorsa:
 
-    -   Per rendere disponibile la risorsa per qualsiasi documento nell'applicazione, scegliere **Applicazione**.
+    - Per rendere disponibile la risorsa per qualsiasi documento nell'applicazione, scegliere **Applicazione**.
 
-    -   Per rendere disponibile la risorsa solo per il documento corrente, scegliere **Documento corrente**.
+    - Per rendere disponibile la risorsa solo per il documento corrente, scegliere **Documento corrente**.
 
-    -   Per rendere disponibile la risorsa solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare **elemento**: **nome**.
+    - Per rendere disponibile la risorsa solo per l'elemento da cui è stata creata o per i relativi elementi figlio, scegliere **Documento corrente** e nell'elenco a discesa selezionare **elemento**: **nome**.
 
-    -   Per definire la risorsa in un file di dizionario risorse riutilizzabile in altri progetti, fare clic su **Dizionario risorse** e quindi selezionare un file di dizionario risorse esistente, ad esempio **StandardStyles.xaml**, nell'elenco a discesa.
+    - Per definire la risorsa in un file di dizionario risorse riutilizzabile in altri progetti, fare clic su **Dizionario risorse** e quindi selezionare un file di dizionario risorse esistente, ad esempio **StandardStyles.xaml**, nell'elenco a discesa.
 
-5.  Scegliere **OK** per creare la risorsa e applicarla all'elemento da cui è stata creata.
+5. Scegliere **OK** per creare la risorsa e applicarla all'elemento da cui è stata creata.
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Per applicare una risorsa a un elemento o a una proprietà
 
@@ -66,11 +66,11 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
 
 ### <a name="to-edit-a-resource"></a>Per modificare una risorsa
 
-1.  Scegliere un elemento nella tavola da disegno o nella finestra Struttura documento.
+1. Scegliere un elemento nella tavola da disegno o nella finestra Struttura documento.
 
-2.  Scegliere il marcatore della proprietà predefinito o locale a destra della proprietà nella finestra Proprietà e quindi scegliere **Modifica risorsa** per aprire la finestra di dialogo **Modifica risorsa**.
+2. Scegliere il marcatore della proprietà predefinito o locale a destra della proprietà nella finestra Proprietà e quindi scegliere **Modifica risorsa** per aprire la finestra di dialogo **Modifica risorsa**.
 
-3.  Modificare le opzioni per la risorsa.
+3. Modificare le opzioni per la risorsa.
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430733"
 ---
 # <a name="step-3-set-your-form-properties"></a>Passaggio 3: Impostare le proprietà del modulo
 In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto del form.
@@ -27,7 +27,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 2. Fare clic in qualsiasi punto all'interno del form **Form1** per selezionarlo. Analizzare la finestra **Proprietà**, che ora visualizza le proprietà per il form. I form dispongono di diverse proprietà. Ad esempio, è possibile impostare il colore primo piano e di sfondo, il testo del titolo visualizzato all'inizio del form, le dimensioni del form e altre proprietà.
 
    > [!NOTE]
-   >  Se la finestra **Proprietà** non è visualizzata, arrestare il programma facendo clic sul pulsante quadrato **Termina debug** sulla barra degli strumenti o semplicemente chiudere la finestra. Se il programma viene arrestato e la finestra **Proprietà** non viene visualizzata, sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà**.
+   > Se la finestra **Proprietà** non è visualizzata, arrestare il programma facendo clic sul pulsante quadrato **Termina debug** sulla barra degli strumenti o semplicemente chiudere la finestra. Se il programma viene arrestato e la finestra **Proprietà** non viene visualizzata, sulla barra dei menu scegliere **Visualizza** > **Finestra Proprietà**.
 
 3. Dopo aver selezionato il form, individuare la proprietà **Testo** nella finestra **Proprietà**. A seconda di come è ordinato l'elenco, potrebbe essere necessario scorrere verso il basso. Scegliere **Testo**, digitare **Visualizzatore di immagini** e quindi premere **INVIO**.  Nella barra del titolo del form dovrebbe ora essere presente il testo **Visualizzatore immagini** e la finestra **Proprietà** dovrebbe essere simile a quella riportata nell'immagine seguente.
 
@@ -35,7 +35,7 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
    Finestra **Proprietà**
 
    > [!NOTE]
-   >  Le proprietà possono essere ordinate in base alla visualizzazione **Per categoria** o **Per nome**. È possibile passare da una visualizzazione all'altra tramite i pulsanti nella finestra **Proprietà**. In questa esercitazione è più facile trovare le proprietà tramite la visualizzazione **Per nome**.
+   > Le proprietà possono essere ordinate in base alla visualizzazione **Per categoria** o **Per nome**. È possibile passare da una visualizzazione all'altra tramite i pulsanti nella finestra **Proprietà**. In questa esercitazione è più facile trovare le proprietà tramite la visualizzazione **Per nome**.
 
 4. Tornare a **Progettazione Windows Form**. Fare clic sul quadratino di trascinamento nella parte inferiore destra del form, ovvero il quadratino bianco in basso a destra del form il cui aspetto è il seguente.
 
@@ -60,14 +60,14 @@ In questo passaggio si usa la finestra **Proprietà** per modificare l'aspetto d
 
 7. Prima di andare al passaggio successivo, arrestare il programma, perché l'IDE non consente di modificare il programma mentre è in esecuzione. È possibile utilizzare uno qualsiasi dei seguenti metodi per arrestare il programma.
 
-   -   Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
+   - Sulla barra degli strumenti scegliere il pulsante **Termina debug**.
 
-   -   Sulla barra dei menu scegliere **Debug** > **Termina debug**.
+   - Sulla barra dei menu scegliere **Debug** > **Termina debug**.
 
-   -   Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
+   - Fare clic su **X** nell'angolo in alto a destra della finestra **Form1**.
 
 ## <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione
 
--   Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Per procedere al passaggio successivo dell'esercitazione, vedere [Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).
+- Per tornare al passaggio precedente dell'esercitazione, vedere [Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md).

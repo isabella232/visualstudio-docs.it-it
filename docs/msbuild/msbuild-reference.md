@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9de3c3aed6b40ace1b841d2dac5c175963b1fecb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842259"
 ---
 # <a name="msbuild-reference"></a>Riferimenti a MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è il sistema di compilazione per [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. I seguenti sono collegamenti ad argomenti che contengono informazioni di riferimento su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].

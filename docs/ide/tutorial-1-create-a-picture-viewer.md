@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821813"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un visualizzatore di immagini
 
 In questa esercitazione si compila un programma che carica un'immagine da un file e la visualizza in una finestra. Viene illustrato come usare **Progettazione Windows Form** per trascinare i controlli quali pulsanti e caselle immagine sul form, impostare le relative proprietà e usare i contenitori per ridimensionare agevolmente il form. Si inizia inoltre a scrivere il codice. Vengono illustrate le seguenti procedure:
 
--   Creare un nuovo progetto.
+- Creare un nuovo progetto.
 
--   Testare un'applicazione (eseguirne il debug).
+- Testare un'applicazione (eseguirne il debug).
 
--   Aggiungere controlli di base come caselle di controllo e pulsanti a un form.
+- Aggiungere controlli di base come caselle di controllo e pulsanti a un form.
 
--   Posizionare i controlli sul form utilizzando i layout.
+- Posizionare i controlli sul form utilizzando i layout.
 
--   Aggiungere le finestre di dialogo **Apri file** e **Colore** a un form.
+- Aggiungere le finestre di dialogo **Apri file** e **Colore** a un form.
 
--   Creare codice utilizzando IntelliSense e frammenti di codice.
+- Creare codice utilizzando IntelliSense e frammenti di codice.
 
--   Scrivere metodi per la gestione eventi.
+- Scrivere metodi per la gestione eventi.
 
 Al termine delle varie procedure, il programma sarà simile all'immagine che segue:
 
@@ -52,7 +52,7 @@ Per scaricare una versione completa dell'esempio, vedere [Complete Picture Viewe
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Passaggio 1: Creare un progetto di Windows Forms Application](../ide/step-1-create-a-windows-forms-application-project.md)|Iniziare creando un progetto di applicazione Windows Forms.|
 |[Passaggio 2: Eseguire il programma](../ide/step-2-run-your-program.md)|Eseguire il programma applicativo Windows Forms creato nel passaggio precedente.|

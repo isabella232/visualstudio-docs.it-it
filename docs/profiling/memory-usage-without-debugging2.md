@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830699"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analizzare l'utilizzo della memoria senza il debugger
 
@@ -56,13 +56,13 @@ Poiché un'app usa un gran numero di oggetti, si potrebbe voler concentrare la p
 
 Per raccogliere gli snapshot, scegliere **Crea snapshot** quando si vogliono acquisire i dati di memoria.
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> Chiudere la sessione di diagnostica
+### <a name="BKMK_Close_a_monitoring_session"></a> Chiudere la sessione di diagnostica
 
 Per arrestare una sessione di monitoraggio senza creare un report, chiudi semplicemente la finestra di diagnostica. Per generare un report al termine della raccolta o della creazione di snapshot, selezionare **Arresta raccolta**.
 
 ![Arresta raccolta](../profiling/media/memuse__stopcollection.png "Arresta raccolta")
 
-##  <a name="memory-usage-reports"></a>Report sull'utilizzo della memoria
+## <a name="memory-usage-reports"></a>Report sull'utilizzo della memoria
 
 Una volta completata la raccolta dei dati, lo strumento **Utilizzo memoria** arresta l'app e visualizza la pagina di panoramica **Utilizzo memoria**.
 
@@ -103,7 +103,7 @@ Nei report snapshot:
 
 - L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
-###  <a name="BKMK_Report_tree_filters_"></a> Filtri degli alberi dei rapporti
+### <a name="BKMK_Report_tree_filters_"></a> Filtri degli alberi dei rapporti
 
 Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di app. I filtri dei report snapshot possono nascondere la maggior parte di questi tipi negli alberi **Heap gestito** e **Percorsi della radice**.
 
@@ -123,7 +123,7 @@ Molti tipi di app non sono particolarmente interessanti per gli sviluppatori di 
 
 Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo di ordinamento iniziale dell'albero **Heap gestito**. Il collegamento dimensione ordina il rapporto in base alla colonna **Dimensione inclusiva (byte)**. Il collegamento Oggetti ordina il rapporto in base alla colonna **Conteggio**. È possibile modificare il tipo o la colonna di ordinamento dopo l'apertura del report.
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Albero Heap gestito (report dettagli dello snapshot)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Albero Heap gestito (report dettagli dello snapshot)
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
  ![Albero Heap gestito](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Albero Heap gestito")
@@ -138,14 +138,14 @@ L'albero **Heap gestito** di un report dettagli dello snapshot include le colonn
 |**Dimensione inclusiva (byte)**|La dimensione delle istanze del tipo o di una singola istanza, inclusa la dimensione degli oggetti contenuti.|
 |**Modulo**|Il modulo che contiene il costruttore.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Albero Percorsi della radice (report dettagli dello snapshot)
 L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo una volta rilasciati tutti i riferimenti.
 
 Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che contengono riferimenti al tipo viene visualizzato nella colonna **Conteggio riferimenti**.
 
 ![Albero Percorsi della radice per i tipi](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Albero Percorsi della radice per i tipi")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report dettagli dello snapshot)
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 
 ![Albero Oggetti a cui si fa riferimento per le istanze](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Albero Oggetti a cui si fa riferimento per le istanze")
@@ -168,7 +168,7 @@ Entrambi i collegamenti aprono lo stesso report. L'unica differenza è il tipo d
 
  ![Collegamenti al report delle differenze in un riquadro snapshot](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Collegamenti al report delle differenze in un riquadro snapshot")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Albero Heap gestito (report differenze degli snapshot)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Albero Heap gestito (report differenze degli snapshot)
 
  Nell'albero **Heap gestito** sono elencati i tipi di oggetti contenuti in memoria. Puoi espandere un nome di tipo per visualizzare le dieci istanze più grandi del tipo, ordinate in base alla dimensione. Selezionare un tipo o un'istanza per visualizzare gli alberi **Percorsi della radice** e **Oggetti a cui si fa riferimento** per l'elemento selezionato.
 
@@ -187,7 +187,7 @@ L'albero **Heap gestito** di un report differenze dello snapshot include le colo
 |**Differenza dimensioni inclusive (byte)**|Per un tipo, la differenza nella dimensione di tutte le istanze del tipo tra lo snapshot principale e quello precedente, inclusa la dimensione degli oggetti negli oggetti. Il campo è vuoto per un'istanza.|
 |**Modulo**|Il modulo che contiene il costruttore.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Albero Percorsi della radice (report differenze degli snapshot)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Albero Percorsi della radice (report differenze degli snapshot)
 
 L'albero **Percorsi della radice** mostra la catena di oggetti che fanno riferimento a un tipo o a un'istanza. Garbage Collector di .NET Framework pulisce la memoria per un oggetto solo una volta rilasciati tutti i riferimenti.
 
@@ -195,7 +195,7 @@ Per un tipo nell'albero **Percorsi della radice**, il numero di oggetti che cont
 
  ![Albero Percorsi della radice in un report delle differenze](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Albero Percorsi della radice in un report delle differenze")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Albero Tipi a cui si fa riferimento o Oggetti a cui si fa riferimento (report differenze degli snapshot)
 
 L'albero **Tipi a cui si fa riferimento** o **Oggetti a cui si fa riferimento** mostra gli oggetti a cui fa riferimento l'istanza o il tipo selezionato.
 

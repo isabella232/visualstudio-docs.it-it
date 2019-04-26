@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957260"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Passaggio 4: Usare il modello Progetto Web Flask completo
 
@@ -169,6 +169,7 @@ Il file *\_\_init\_\_.py* dell'app contiene la riga
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 La cartella *templates* contiene file con estensione *jade* anziché modelli con estensione *html* e le visualizzazioni in *views.py* fanno riferimento a questi file nelle chiamate a `flask.render_template`. Per il resto il codice delle visualizzazioni è lo stesso.
 
 Aprendo uno dei file con estensione *jade* è possibile vedere l'espressione più concisa di un modello. Ad esempio, ecco il contenuto di *templates/layout.jade* creato dal modello "Progetto Web Flask/Jade":
@@ -229,7 +230,7 @@ Provare a usare entrambe le sintassi, Jinja e Jade, per vedere quale delle due �
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Il modello di progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+> [Il modello Progetto Web Flask di sondaggi](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondimento
 

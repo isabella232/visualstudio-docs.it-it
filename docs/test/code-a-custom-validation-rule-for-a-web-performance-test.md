@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822601"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificare una regola di convalida personalizzata per un test delle prestazioni Web
 
@@ -33,24 +33,24 @@ ms.locfileid: "55919911"
 
 ## <a name="to-create-custom-validation-rules"></a>Per creare regole di convalida personalizzate
 
-1.  Aprire un progetto di test contenente un test delle prestazioni Web.
+1. Aprire un progetto di test contenente un test delle prestazioni Web.
 
-2.  (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di convalida.
+2. (Facoltativo) Creare un progetto Libreria di classi distinto in cui archiviare la regola di convalida.
 
     > [!IMPORTANT]
     > È possibile creare la classe nello stesso progetto in cui si trovano i test. Tuttavia, se si desidera riutilizzare la regola, è preferibile creare un progetto Libreria di classi distinto in cui archiviarla. Se si crea un progetto distinto, è necessario completare i passaggi facoltativi di questa procedura.
 
-3.  (Facoltativo) Nel progetto Libreria di classi aggiungere un riferimento alla DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Facoltativo) Nel progetto Libreria di classi aggiungere un riferimento alla DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Creare una classe che derivi dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implementare i membri <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
+4. Creare una classe che derivi dalla classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implementare i membri <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
-5.  (Facoltativo) Compilare il nuovo progetto Libreria di classi.
+5. (Facoltativo) Compilare il nuovo progetto Libreria di classi.
 
-6.  (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
+6. (Facoltativo) Nel progetto di test aggiungere un riferimento al progetto Libreria di classi che contiene la regola di convalida personalizzata.
 
-7.  Nel progetto di test aprire un test delle prestazioni Web nell'**Editor test prestazioni Web**.
+7. Nel progetto di test aprire un test delle prestazioni Web nell'**Editor test prestazioni Web**.
 
-8.  Per aggiungere una regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse sulla richiesta e selezionare **Aggiungi regola di convalida**.
+8. Per aggiungere una regola di convalida personalizzata a una richiesta di test delle prestazioni Web, fare clic con il pulsante destro del mouse sulla richiesta e selezionare **Aggiungi regola di convalida**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi regola di convalida**. La regola di convalida personalizzata sarà disponibile nell'elenco **Selezionare una regola**, insieme alle regole di convalida predefinite. Selezionare la regola di convalida personalizzata, quindi scegliere **OK**.
 

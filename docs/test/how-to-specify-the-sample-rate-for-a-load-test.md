@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970666"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procedura: Specificare la frequenza di campionamento per un'impostazione di esecuzione dei test di carico
 
@@ -36,19 +36,19 @@ Di seguito sono riportate alcune linee guida per le frequenze di campionamento:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Per specificare frequenza di campionamento del contatore delle prestazioni in un'impostazione esecuzione test
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-     Viene visualizzato l'**Editor test di carico**. Verrà visualizzato l'albero del test di carico.
+     Viene visualizzato l'**Editor test di carico**. Verrà visualizzata la struttura ad albero del test di carico.
 
-2.  Nella cartella **Impostazioni esecuzione test** dell'albero del test di carico scegliere le impostazioni esecuzione test per cui si vuole specificare la frequenza di campionamento.
+2. Nella cartella **Impostazioni esecuzione test** dell'albero del test di carico scegliere le impostazioni esecuzione test per cui si vuole specificare la frequenza di campionamento.
 
-3.  Scegliere **Finestra Proprietà** dal menu **Visualizza**.
+3. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
      Le categorie e le proprietà delle impostazioni di esecuzione test di carico sono visualizzate nella finestra **Proprietà**.
 
-4.  Nella proprietà **Frequenza di campionamento** immettere un valore che indica la frequenza alla quale il test di carico raccoglierà dati del contatore delle prestazioni.
+4. Nella proprietà **Frequenza di campionamento** immettere un valore che indica la frequenza alla quale il test di carico raccoglierà dati del contatore delle prestazioni.
 
-5.  Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Frequenza di campionamento**.
+5. Terminata la modifica della proprietà, scegliere **Salva** dal menu **File**. Sarà quindi possibile eseguire il test di carico usando il nuovo valore dell'opzione **Frequenza di campionamento**.
 
 ## <a name="see-also"></a>Vedere anche
 

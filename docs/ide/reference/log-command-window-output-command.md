@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588c5e39f8b6b6a89de1636bd45036b21d392d33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946843"
 ---
 # <a name="log-command-window-output-command"></a>Comando Registra output finestra di comando
 Copia interamente l'input e l'output della finestra di **comando** in un file.
@@ -37,7 +37,6 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 > [!TIP]
 > Per modificare il percorso in cui viene salvato il file di log, immettere il percorso completo del file, racchiuso tra virgolette se il percorso contiene spazi.
 
-
 ## <a name="switches"></a>Opzioni
  /on
 
@@ -51,7 +50,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 
  Facoltativo. Se il file specificato nell'argomento `filename` corrisponde a un file esistente, il file viene sovrascritto.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Se non viene specificato alcun file, viene creato per impostazione predefinita il file cmdline.log. Per impostazione predefinita, l'alias per questo comando è Log.
 
 ## <a name="examples"></a>Esempi

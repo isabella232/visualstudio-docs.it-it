@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957515"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa per Python e altri linguaggi, che consente di modificare il codice, eseguire il debug e il test del codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include strumenti di completamento codice, ambienti REPL interattivi e altre funzionalità che semplificano il processo di sviluppo del software.
 
-[![VVisual Studio con un progetto Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio con un progetto Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Questa immagine presenta Visual Studio con un progetto Python aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
@@ -129,10 +129,10 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 Per approfondire altri aspetti di Python in Visual Studio, eseguire una delle esercitazioni seguenti:
 
 > [!div class="nextstepaction"]
-> [Guida introduttiva: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
+> [Avvio rapido: Creare un'app Web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
-> [usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Usare Python in Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
 > [Introduzione al framework Web Django in Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)

@@ -11,12 +11,12 @@ ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efd430ce9f8bef3ab04e3a7cec91ce3f606cc786
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002290"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Procedura: Aggiungere una regola di soglia usando l'Editor test di carico
 
@@ -26,17 +26,17 @@ Le regole di soglia nei test di carico consentono di confrontare il valore di un
 
 ## <a name="to-add-a-threshold-rule"></a>Per aggiungere una regola di soglia
 
-1.  Aprire un test di carico.
+1. Aprire un test di carico.
 
-2.  Nell'Editor test di carico espandere il nodo **Insiemi di contatori**.
+2. Nell'Editor test di carico espandere il nodo **Insiemi di contatori**.
 
-3.  Espandere una delle **Categorie contatori** in uno degli Insiemi di contatori. Ad esempio, è possibile selezionare **LoadTest:Scenario**. Espandere il nodo.
+3. Espandere una delle **Categorie contatori** in uno degli Insiemi di contatori. Ad esempio, è possibile selezionare **LoadTest:Scenario**. Espandere il nodo.
 
-4.  Fare clic con il pulsante destro del mouse sui contatori, ad esempio **Carico utente**, in **LoadTest:Scenario**. Selezionare **Aggiungi regola di soglia**.
+4. Fare clic con il pulsante destro del mouse sui contatori, ad esempio **Carico utente**, in **LoadTest:Scenario**. Selezionare **Aggiungi regola di soglia**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi regola di soglia**.
 
-5.  È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta Contatori**. Selezionare il tipo appropriato e impostare i valori.
+5. È possibile scegliere tra due tipi di regole: **Confronta costante** e **Confronta Contatori**. Selezionare il tipo appropriato e impostare i valori.
 
     > [!NOTE]
     > Impostare la proprietà **Avvisa se supera** su **True** per indicare che il superamento della soglia è un problema oppure su **False** per indicare che il non raggiungimento della soglia è un problema.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a7a59ca23dc444bcdc714ade2fce5bedb87e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945128"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 Imposta l'elenco delle directory in cui il debugger deve eseguire la ricerca dei simboli.
@@ -35,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
 
  Facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.
 
 ## <a name="example"></a>Esempio

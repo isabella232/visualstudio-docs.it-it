@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975372"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Procedura: Creare ereditarietà tra tipi in Progettazione classi
 
@@ -26,21 +26,21 @@ Per creare una relazione di ereditarietà tra due tipi in un diagramma classi us
 
 ## <a name="to-create-an-inheritance-between-types"></a>Per creare un'ereditarietà tra tipi
 
-1.  Dal progetto in **Esplora soluzioni** aprire un file del diagramma classi (con estensione cd).
+1. Dal progetto in **Esplora soluzioni** aprire un file del diagramma classi (con estensione cd).
 
-     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [Procedura: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
+     Se non è disponibile alcun diagramma classi, crearne uno. Vedere [How to: Aggiungere diagrammi classi ai progetti](how-to-add-class-diagrams-to-projects.md).
 
-2.  In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.
+2. In **Progettazione classi** nella **Casella degli strumenti** fare clic su **Ereditarietà**.
 
-3.  Nel diagramma classi tracciare una linea di ereditarietà tra i tipi desiderati, come indicato di seguito:
+3. Nel diagramma classi tracciare una linea di ereditarietà tra i tipi desiderati, come indicato di seguito:
 
-    -   Da una classe derivata a una classe di base
+    - Da una classe derivata a una classe di base
 
-    -   Da una classe di implementazione all'interfaccia implementata
+    - Da una classe di implementazione all'interfaccia implementata
 
-    -   Da un'interfaccia di estensione all'interfaccia estesa
+    - Da un'interfaccia di estensione all'interfaccia estesa
 
-4.  Facoltativamente, quando è disponibile un tipo derivato da un tipo generico, fare clic sulla linea di ereditarietà. Nella finestra **Proprietà** impostare la proprietà **Argomenti di tipo** in modo che corrisponda al tipo da usare come tipo generico.
+4. Facoltativamente, quando è disponibile un tipo derivato da un tipo generico, fare clic sulla linea di ereditarietà. Nella finestra **Proprietà** impostare la proprietà **Argomenti di tipo** in modo che corrisponda al tipo da usare come tipo generico.
 
     > [!NOTE]
     > Se una classe astratta padre include almeno un membro astratto, tutti i membri astratti saranno quindi implementati come classi ereditanti non astratte.

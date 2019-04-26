@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950653"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /NoSplash [File1[ FileN]...]
 
   Facoltativo. Uno o più file aggiuntivi da aprire nell'istanza esistente di Visual Studio.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Questa opzione nasconde la schermata iniziale. Se si omette questa opzione, la schermata iniziale viene visualizzata. Se si vuole esaminare ulteriormente la schermata iniziale (ad esempio, per controllare l'icona del prodotto VSPackage), usare l'opzione [/Splash](../../extensibility/devenv-command-line-switches-for-vspackage-development.md).
 

@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950254"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedura: Creare un plug-in di registrazione
 
@@ -33,20 +33,20 @@ Nelle procedure seguenti viene illustrata la creazione di codice rudimentale per
 
 ### <a name="to-create-a-recorder-plug-in"></a>Per creare un plug-in di registrazione
 
-1.  Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si vuole creare un plug-in di registrazione.
+1. Aprire una soluzione che contenga il progetto di test di carico e prestazioni Web con il test delle prestazioni Web per il quale si vuole creare un plug-in di registrazione.
 
-2.  Aggiungere alla soluzione un nuovo progetto **Libreria di classi**.
+2. Aggiungere alla soluzione un nuovo progetto **Libreria di classi**.
 
-3.  In **Esplora soluzioni**, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
+3. In **Esplora soluzioni**, nella nuova cartella di progetto libreria di classi, fare clic con il pulsante destro del mouse sulla cartella **Riferimenti** e selezionare **Aggiungi riferimento**.
 
     > [!TIP]
     > Un esempio di una nuova cartella di progetto libreria di classi è **RecorderPlugins**.
 
      Viene visualizzata la finestra di dialogo **Aggiungi riferimento**.
 
-4.  Selezionare la scheda **.NET**.
+4. Selezionare la scheda **.NET**.
 
-5.  Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
+5. Scorrere verso il basso e selezionare **Microsoft.VisualStudio.QualityTools.WebTestFramework**, quindi scegliere **OK**.
 
      L'elemento **Microsoft.VisualStudio.QualityTools.WebTestFramework** viene aggiunto nella cartella **Riferimenti** in **Esplora soluzioni**.
 
@@ -88,11 +88,11 @@ Dopo avere compilato il plug-in di registrazione, posizionare il file DLL risult
 
 ### <a name="execute-the-recorder-plug-in"></a>Eseguire il plug-in di registrazione
 
-1.  Creare un nuovo test Web.
+1. Creare un nuovo test Web.
 
      Viene visualizzata la finestra di dialogo **Attiva WebTestRecordPlugins**.
 
-2.  Selezionare la casella di controllo per il plug-in di registrazione, quindi scegliere **OK**.
+2. Selezionare la casella di controllo per il plug-in di registrazione, quindi scegliere **OK**.
 
      Una volta che il test delle prestazioni Web ha completato la registrazione, verrà eseguito il nuovo plug-in di registrazione.
 

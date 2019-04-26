@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961970"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
 
@@ -27,11 +27,11 @@ Per usare gli stub, è necessario scrivere il componente in modo che per fare ri
 
 Nel diagramma, si desidera testare il componente StockAnalyzer. In genere StockAnalyzer usa un altro componente, RealStockFeed, il quale tuttavia restituisce risultati diversi ogni volta che ne vengono chiamati i metodi, rendendo difficile il test di StockAnalyzer.  Durante il test, il componente viene sostituito con una classe diversa, StubStockFeed.
 
-![Le classi Real e Stub sono conformi a un'interfaccia.](../test/media/fakesinterfaces.png)
+![Le classi Real e Stub sono conformi a un'interfaccia](../test/media/fakesinterfaces.png)
 
 Poiché gli stub si basano sulla possibilità di strutturare il codice in questo modo, in genere si usano gli stub per isolare una parte dell'applicazione da un'altra. Per isolarlo da altri assembly che non sono sotto controllo, ad esempio *System.dll*, è di solito consigliabile usare gli shim. Vedere [Usare shim per isolare l'applicazione da altri assembly per il testing unità](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
-## <a name="how-to-use-stubs"></a>Come usare gli stub
+## <a name="how-to-use-stubs"></a>Come utilizzare gli stub
 
 ### <a name="design-for-dependency-injection"></a>Progettare l'inserimento di dipendenza
 

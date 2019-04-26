@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969280"
 ---
 # <a name="options-page-debugging-node-properties"></a>Pagina delle opzioni, proprietà del nodo Debug
 Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate alla categoria **Debug**, `DTE.Properties("Debugging", <Property Page>)` della finestra di dialogo **Opzioni**.
@@ -51,7 +51,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="edit-and-continue"></a>Modifica e continuazione
  `DTE.Properties("Debugging", "EditAndContinue")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|Determina se è abilitata la funzionalità Modifica e continuazione. Questa opzione si applica a tutti i linguaggi che supportano Modifica e continuazione.|
 |InvokedByCommands|Get/Set (Boolean)|Determina se la funzionalità Modifica e continuazione applica automaticamente le modifiche al codice quando l'utente seleziona un comando di debug, ad esempio **Passaggio** o **Continua**. Questa opzione si applica solo al codice nativo.|
@@ -63,7 +63,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="just-in-time"></a>JIT
  `DTE.Properties("Debugging", "JustInTime")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice gestito.|
 |JitNative|Get/Set (Boolean)|Determina se il debug JIT è abilitato per il codice nativo.|
@@ -72,7 +72,7 @@ Le tabelle seguenti descrivono le pagine, o raccolte di proprietà, associate al
 ## <a name="native"></a>Nativo
  `DTE.Properties("Debugging", "Native")`
 
-|Nome degli elementi delle proprietà|Valore|Description|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|Determina se il debugger carica le tabelle di esportazione DLL.|
 |EnableRPC|Get/Set (Boolean)|Determina se il debugger è in grado di eseguire istruzioni per le chiamate a procedure remote (RPC) COM.|

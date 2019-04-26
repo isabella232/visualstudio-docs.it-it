@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893008"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -81,7 +81,7 @@ Di seguito è illustrata la barra degli strumenti **Modalità progettazione shad
 
 Questa tabella descrive gli elementi disponibili nella barra degli strumenti **Modalità progettazione shader**, elencati nell'ordine di visualizzazione da sinistra verso destra.
 
-|Elemento della barra degli strumenti|Descrizione|
+|Elemento della barra degli strumenti|Description|
 |------------------|-----------------|
 |**Seleziona**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
 |**Panoramica**|Consente lo spostamento di un grafico shader relativo alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nell'area di progettazione e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
@@ -199,7 +199,7 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di Visual Studio a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|

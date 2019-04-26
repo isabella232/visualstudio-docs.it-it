@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824230"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: Modificare la directory di output della compilazione
 
@@ -27,11 +27,11 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
 
 ## <a name="change-the-build-output-directory"></a>Modificare la directory di output della compilazione
 
-1.  Nella barra dei menu scegliere **Progetto** > **\<NomeApp> Proprietà**. In alternativa, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**.
+1. Nella barra dei menu scegliere **Progetto** > **\<NomeApp> Proprietà**. In alternativa, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**.
 
-2.  Per i progetti Basic, selezionare la scheda **Compilazione** . Per i progetti C#, selezionare la scheda **Compilazione**. Per un progetto C++ o JavaScript, selezionare la scheda **Generale** .
+2. Per i progetti Basic, selezionare la scheda **Compilazione** . Per i progetti C#, selezionare la scheda **Compilazione**. Per un progetto C++ o JavaScript, selezionare la scheda **Generale** .
 
-3.  Nell'elenco a discesa della configurazione nella parte superiore, scegliere la configurazione per cui si vuole modificare il percorso di output (debug, rilascio o tutte).
+3. Nell'elenco a discesa della configurazione nella parte superiore, scegliere la configurazione per cui si vuole modificare il percorso di output (debug, rilascio o tutte).
 
      Individuare la voce relativa al percorso di output (**Percorso dell'output di compilazione** in Visual Basic **Directory di output** in Visual C++, **Percorso di Output** in JavaScript e C#). Specificare una nuova directory dell'output di compilazione relativa alla directory del progetto.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824287"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Cercare argomenti
 
@@ -23,18 +23,18 @@ Per aprire la scheda **Cerca**, scegliere la scheda **Cerca** nella finestra **H
 
 ## <a name="to-perform-a-full-text-search"></a>Per eseguire una ricerca full-text
 
-1.  Nella casella di ricerca digitare la parola che si vuole trovare.
+1. Nella casella di ricerca digitare la parola che si vuole trovare.
 
-2.  Nella query di ricerca specificare eventuali operatori logici o di ricerca avanzata da applicare alla ricerca. Per eseguire la ricerca in tutte le informazioni della Guida disponibili, non usare gli operatori.
+2. Nella query di ricerca specificare eventuali operatori logici o di ricerca avanzata da applicare alla ricerca. Per eseguire la ricerca in tutte le informazioni della Guida disponibili, non usare gli operatori.
 
     > [!NOTE]
     > Nella finestra di dialogo **Opzioni Help Viewer** è possibile specificare altre preferenze, ad esempio il numero massimo di risultati da visualizzare contemporaneamente e se includere i contenuti in lingua inglese quando le impostazioni locali sono diverse dall'inglese.
 
-3.  Premere il tasto **INVIO**.
+3. Premere il tasto **INVIO**.
 
      Per impostazione predefinita, una ricerca restituisce un massimo di 200 risultati che vengono visualizzati nell'area corrispondente. È possibile che vengano visualizzate informazioni aggiuntive sulla versione per ogni risultato, a seconda del contenuto.
 
-4.  Per visualizzare un argomento, scegliere il titolo dall'elenco dei risultati.
+4. Per visualizzare un argomento, scegliere il titolo dall'elenco dei risultati.
 
 ## <a name="full-text-search-tips"></a>Suggerimenti per la ricerca full-text
 
@@ -44,7 +44,7 @@ Se si comprendono gli effetti della sintassi sulle query, è possibile creare ri
 
 Nella tabella seguente sono elencate alcune regole di base e linee guida per lo sviluppo di query di ricerca nella Guida.
 
-|Sintassi|Descrizione|
+|Sintassi|Description|
 |------------|-----------------|
 |Distinzione fra maiuscole e minuscole|Le ricerche non distinguono tra maiuscole e minuscole. Sviluppare i criteri di ricerca usando indifferentemente caratteri maiuscoli o minuscoli. Ad esempio, "OLE" e "ole" restituiscono gli stessi risultati.|
 |Combinazioni di caratteri|Non è possibile cercare solo singole lettere (a-z) o singoli numeri (0-9). Se si tenta di cercare determinate parole riservate, ad esempio "e", "da" e "con", queste vengono ignorate. Per altre informazioni, vedere [Parole ignorate nelle ricerche](#stopwords) più avanti in questo argomento.|
@@ -66,11 +66,11 @@ Se si specifica una stringa di ricerca che include più parole, ad esempio "paro
 
 L'algoritmo di ricerca applica determinati criteri per consentire la classificazione superiore o inferiore dei risultati di ricerca nell'elenco dei risultati. In generale:
 
-1.  I contenuti che includono le parole di ricerca nel titolo sono classificati a un livello superiore rispetto ai contenuti che non le includono.
+1. I contenuti che includono le parole di ricerca nel titolo sono classificati a un livello superiore rispetto ai contenuti che non le includono.
 
-2.  I contenuti che includono parole molto simili alle parole di ricerca sono classificati a un livello superiore rispetto ai contenuti che non le includono.
+2. I contenuti che includono parole molto simili alle parole di ricerca sono classificati a un livello superiore rispetto ai contenuti che non le includono.
 
-3.  I contenuti che contengono una densità maggiore delle parole di ricerca sono classificati a un livello superiore rispetto ai contenuti che hanno una densità inferiore.
+3. I contenuti che contengono una densità maggiore delle parole di ricerca sono classificati a un livello superiore rispetto ai contenuti che hanno una densità inferiore.
 
 ### <a name="stopwords"> Parole ignorate nelle ricerche (parole non significative) </a>
 

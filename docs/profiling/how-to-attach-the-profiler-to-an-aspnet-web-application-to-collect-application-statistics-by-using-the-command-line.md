@@ -9,22 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 15b1020f35b767a05f977baa220a6ce251768f05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 15c8fad4971e81ae91aebc8ad56be13ff0e33754
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439547"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere statistiche sull'applicazione tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione Web ASP.NET e raccogliere statistiche sulle prestazioni tramite il metodo di campionamento.
 
 > [!NOTE]
->  Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
+> Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
 >
->  L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 >
->  Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
+> Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
  Per raccogliere dati sulle prestazioni da un'applicazione Web ASP.NET, è necessario inizializzare le variabili di ambiente appropriate e riavviare il computer che ospita l'applicazione Web ASP.NET per configurare il server Web per la profilatura.
 
@@ -42,9 +42,9 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
 
-   -   **/globalsampleon** abilita il campionamento.
+   - **/globalsampleon** abilita il campionamento.
 
-   -   **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.
+   - **/samplelineoff** disabilita l'assegnazione dei dati raccolti a righe specifiche del codice sorgente. Quando viene specificata questa opzione, i dati vengono assegnati solo alle funzioni.
 
 3. Riavviare il computer.
 
@@ -57,7 +57,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
      È possibile usare una delle opzioni seguenti con l'opzione **/start:sample**.
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
+   > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.
 
    | Opzione | Description |
    | - | - |
@@ -67,14 +67,13 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione etl. |
 
-
 5. Avviare l'applicazione Web ASP.NET nel modo usuale.
 
 6. Connettere il profiler al processo di lavoro ASP.NET. Digitare: **VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
-   -   `PID` specifica l'ID processo del processo di lavoro ASP.NET; `ProcName` specifica il nome del processo di lavoro. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.
+   - `PID` specifica l'ID processo del processo di lavoro ASP.NET; `ProcName` specifica il nome del processo di lavoro. È possibile visualizzare gli ID processo e i nomi di tutti i processi in esecuzione in Gestione attività di Windows.
 
-   -   Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa 100 volte al secondo in un processore da 1 GHz. È possibile specificare una delle opzioni di **VSPerfCmd** seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.
+   - Per impostazione predefinita, i dati relativi alle prestazioni vengono campionati ogni 10.000.000 di cicli di clock del processore non interrotti, ovvero circa 100 volte al secondo in un processore da 1 GHz. È possibile specificare una delle opzioni di **VSPerfCmd** seguenti per modificare l'intervallo dei cicli di clock o per specificare un evento di campionamento diverso.
 
    |Evento di campionamento|Description|
    |------------------|-----------------|
@@ -84,14 +83,14 @@ Questo articolo descrive come usare gli strumenti da riga di comando disponibili
    |[/counter](../profiling/counter.md) **:** `Config`|Imposta l'evento e l'intervallo di campionamento sul contatore delle prestazioni del processore e sull'intervallo specificati in `Config`.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione.|
 
-   -   **targetclr:** `Version` specifica la versione di CLR da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.
+   - **targetclr:** `Version` specifica la versione di CLR da profilare quando più di una versione del runtime è caricata in un'applicazione. Facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre è in esecuzione l'applicazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni di *VSPerfCmd.exe*. Il controllo della raccolta dei dati consente di raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o l'arresto dell'applicazione.
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|

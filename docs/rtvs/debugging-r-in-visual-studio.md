@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939275"
 ---
 # <a name="debug-r-in-visual-studio"></a>Eseguire il debug di R in Visual Studio
 
@@ -53,7 +53,7 @@ Quando il debugger si arresta, viene arrestato anche il prompt del browser di am
 
 Il browser ambiente supporta un numero di comandi speciali:
 
-| Comando | Descrizione |
+| Comando | Description |
 | --- | --- |
 | n | next: esegue l'istruzione successiva nel file di codice (uguale a step over). |
 | s | step into: esegue l'istruzione successiva nel file di codice, passando all'ambito della funzione se l'istruzione successiva è una chiamata di funzione. |

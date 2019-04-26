@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977400"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa il contenuto di un file di progetto in un altro file di progetto.
@@ -69,7 +69,6 @@ Importa il contenuto di un file di progetto in un altro file di progetto.
  Se il progetto importato non ha un attributo `DefaultTargets` , i progetti importati vengono esaminati nell'ordine in cui sono importati e viene usato il valore del primo attributo `DefaultTargets` individuato. Ad esempio, se ProjectA importa ProjectB e ProjectC (in questo ordine), e ProjectB importa ProjectD, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] cerca il valore `DefaultTargets` specificato prima in ProjectA, poi in ProjectB, quindi in ProjectD e infine in ProjectC.
 
  Lo schema di un progetto importato è identico a quello di un progetto standard. Sebbene [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] potrebbe essere in grado di creare un progetto importato, ciò è improbabile perché in genere un progetto importato contiene informazioni sulle proprietà da impostare o sull'ordine in cui eseguire le destinazioni. Il progetto importato dipende dal progetto in cui viene importato per fornire tali informazioni.
-
 
 ## <a name="wildcards"></a>Caratteri jolly
  In .NET Framework 4, MSBuild consente l'uso di caratteri jolly nell'attributo Project. Quando sono presenti caratteri jolly, tutte le corrispondenze trovate vengono ordinate (per riproducibilità) e quindi vengono importate nell'ordine specificato come se l'ordine fosse stato impostato in modo esplicito.

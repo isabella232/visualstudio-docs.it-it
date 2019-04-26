@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 67031266ce9b2ded595ab448d7c45674932b8751
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892545"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>Procedura dettagliata: esempio LinqToXmlDataBinding
 In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e viene illustrata parte del contenuto più interessante dei due file di origine principali, ovvero *L2DBForm.xaml* e *L2DBForm.xaml.cs*.
@@ -21,7 +21,7 @@ In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e
 ## <a name="prerequisites"></a>Prerequisiti
  Prima leggere questa procedura dettagliata, si consiglia di compilare ed eseguire l'applicazione LinqToXmlDataBinding come descritto in [Procedura: Compilare ed eseguire l'esempio LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
  LinqToXmlDataBinding è un'applicazione di Windows Presentation Foundation (WPF) composta da file di origine C# e XAML. Contiene un documento XML incorporato che definisce un elenco di libri e consente all'utente di visualizzare, aggiungere, eliminare e modificare queste voci. È costituita dai due file di origine principali seguenti:
 
 - *L2DBForm.xaml*: contiene il codice della dichiarazione XAML per l'interfaccia utente della finestra principale. Include inoltre una sezione di risorse della finestra in cui vengono definiti un provider di dati e un documento XML incorporato per gli elenchi di libri.
@@ -40,7 +40,7 @@ In questa procedura dettagliata viene descritto l'esempio LinqToXmlDataBinding e
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Codice sorgente di L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)|Vengono forniti il contenuto e la descrizione del codice XAML del file L2DBForm.xaml.|
 |[Codice sorgente di L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)|Vengono forniti il contenuto e la descrizione del codice sorgente C# del file L2DBForm.xaml.cs.|

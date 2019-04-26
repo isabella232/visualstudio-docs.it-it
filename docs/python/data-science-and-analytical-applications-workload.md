@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958325"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installare il supporto per l'analisi scientifica in Visual Studio
 
@@ -98,9 +98,9 @@ Per ulteriori informazioni:
 
 ::: moniker range="vs-2017"
 - [Usare SQL Server ed R](../rtvs/integrating-sql-server-with-r.md)
-- [In-database Advanced Analytics with R in SQL Server 2016 (blog) (Analisi avanzata all'interno del database con R in SQL Server 2016)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
+- [In-database Advanced Analytics with R in SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/) (Analisi avanzata all'interno del database con R in SQL Server 2016)
 ::: moniker-end
-- [Python in SQL Server 2017: enhanced in-database machine learning (blog) (Python in SQL Server 2017: funzionalità avanzate di Machine Learning all'interno del database)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
+- [Python in SQL Server 2017: enhanced in-database machine learning (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/) (Python in SQL Server 2017: funzionalità avanzate di Machine Learning all'interno del database)
 
 ## <a name="additional-services-and-sdks"></a>Servizi aggiuntivi e SDK
 

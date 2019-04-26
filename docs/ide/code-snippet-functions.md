@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 60453b6842dd321b7c85c2837e12b1208adb18f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974969"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 
@@ -27,7 +27,7 @@ Con i frammenti di codice C# è possibile usare tre funzioni. Le funzioni sono s
 
 Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.
 
-|Funzione|Descrizione|Linguaggio|
+|Funzione|Description|Linguaggio|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|C#|
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|C#|

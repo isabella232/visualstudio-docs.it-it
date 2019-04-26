@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977301"
 ---
 # <a name="how-to-clean-a-build"></a>Procedura: Pulire una compilazione
 Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file intermedi e di output, lasciando solo i file di progetto e di componente. È quindi possibile compilare nuove istanze di file intermedi e di output dai file di progetto e di componente. La libreria di attività comuni fornita con [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] include un'attività [Exec](../msbuild/exec-task.md) che è possibile usare per eseguire i comandi di sistema. Per altre informazioni sulla libreria di attività, vedere [Attività MSBuild](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
 #### <a name="to-create-a-directory-for-output-items"></a>Per creare una directory per gli elementi di output
 
-1.  Usare l'elemento `Property` per definire il percorso e il nome della directory. Ad esempio, creare una directory denominata *BuiltApp* nella directory che contiene i file di progetto e di origine:
+1. Usare l'elemento `Property` per definire il percorso e il nome della directory. Ad esempio, creare una directory denominata *BuiltApp* nella directory che contiene i file di progetto e di origine:
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:
+2. Usare l'attività [MakeDir](../msbuild/makedir-task.md) per creare la directory se la directory non esiste. Ad esempio:
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ Quando si esegue la pulitura di una compilazione, vengono eliminati tutti i file
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Per rimuovere una directory e tutti i file contenuti nella directory
 
--   Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio:
+- Usare l'attività `RemoveDir` per rimuovere la directory. Ad esempio:
 
      `<RemoveDir Directories="$(builtdir)" />`
 

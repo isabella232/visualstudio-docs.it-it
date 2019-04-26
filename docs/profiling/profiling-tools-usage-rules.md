@@ -8,16 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a59559f6d870a6291a00c74ff2be5737123fe076
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c763e24ae79591f4c9779421da9e41cf8f710e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968119"
 ---
 # <a name="profiling-tools-usage-rules"></a>Regole di utilizzo degli strumenti di profilatura
 Le regole delle prestazioni nella categoria di utilizzo degli strumenti di profilatura forniscono indicazioni per l'uso del profiler per una raccolta più efficiente dei dati.
-
 
 | | |
 | - | - |

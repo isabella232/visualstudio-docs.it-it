@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817788"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opzioni, editor di testo, di base (Visual Basic), avanzato
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) include le proprietà seguenti:
@@ -50,7 +50,6 @@ La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della ca
    Se queste opzioni sono selezionate, è disponibile un'[azione rapida](../quick-actions.md) per installare un pacchetto NuGet e aggiungere una direttiva `using` per i tipi senza riferimenti.
 
    ![Azione rapida per installare il pacchetto NuGet in Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Evidenziazione
 
@@ -82,19 +81,19 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 
 **Riformatta il listato di codice** Nell'editor di testo viene riformattato il codice nel modo appropriato. Quando questa opzione è selezionata, l'editor del codice:
 
--   Allinea il codice nella posizione di tabulazione corretta
+- Allinea il codice nella posizione di tabulazione corretta
 
--   Imposta la combinazione di maiuscole/minuscole corretta per parole chiave, variabili e oggetti
+- Imposta la combinazione di maiuscole/minuscole corretta per parole chiave, variabili e oggetti
 
--   Aggiunge un'istruzione `Then` mancante per un'istruzione `If...Then`
+- Aggiunge un'istruzione `Then` mancante per un'istruzione `If...Then`
 
--   Aggiunge le parentesi alle chiamate di funzione
+- Aggiunge le parentesi alle chiamate di funzione
 
--   Aggiunge le virgolette finali mancanti nelle stringhe
+- Aggiunge le virgolette finali mancanti nelle stringhe
 
--   Riformatta la notazione esponenziale
+- Riformatta la notazione esponenziale
 
--   Riformatta le date
+- Riformatta le date
 
 **Inserimento automatico di costrutti End**
 

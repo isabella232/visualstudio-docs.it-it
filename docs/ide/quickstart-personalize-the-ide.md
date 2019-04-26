@@ -7,18 +7,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58646699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953396"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizzare l'IDE e l'editor di Visual Studio
 
 In questa esercitazione della durata di 5-10 minuti verranno illustrate le procedure per personalizzare il tema colori di Visual Studio selezionando il tema scuro. Si effettuerà anche la personalizzazione dei colori per due diversi tipi di testo nell'editor di testo.
 
-Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) per installarlo gratuitamente.
+::: moniker range="vs-2017"
+
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+
+::: moniker-end
 
 ## <a name="set-the-color-theme"></a>Impostare il tema colori
 

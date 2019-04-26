@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995144"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app Express in Visual Studio
 
-In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app, quindi si esploreranno alcune funzionalità dell'ambiente IDE e si eseguirà l'app. Se non è ancora stato installato Visual Studio, installarlo gratuitamente [qui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+In questa esercitazione per lo sviluppo in Visual Studio con Node.js ed Express si creerà una semplice applicazione Web Node.js e si aggiungerà codice all'app, quindi si esploreranno alcune funzionalità dell'ambiente IDE e si eseguirà l'app. 
+
+::: moniker range="vs-2017"
+
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) per installarlo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se Visual Studio non è ancora installato, accedere alla pagina [Download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) per installarlo gratuitamente.
+
+::: moniker-end
 
 In questa esercitazione si imparerà a:
 > [!div class="checklist"]
@@ -186,7 +198,7 @@ IntelliSense è uno strumento di Visual Studio che assiste l'utente durante la s
 
 1. Correggere il codice aggiungendo la virgola (`,`) prima di `"data"`.
 
-    La riga di codice corretta dovrebbe essere simile alla seguente: `res.render('index', { title: 'Express', "data": getData() });`
+    Il codice corretto dovrebbe assomigliare al seguente:`res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>Imposta punto di interruzione
 
@@ -256,4 +268,4 @@ L'esercitazione è stata completata.
 ## <a name="next-steps"></a>Passaggi successivi
 
 > [!div class="nextstepaction"]
-> [Distribuire l'app nel servizio app di Linux](../javascript/publish-nodejs-app-azure.md)
+> [Distribuire l'app nel Servizio app di Linux](../javascript/publish-nodejs-app-azure.md)

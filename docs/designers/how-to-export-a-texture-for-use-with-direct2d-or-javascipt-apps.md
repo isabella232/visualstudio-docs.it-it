@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844384"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
 
@@ -21,31 +21,31 @@ La pipeline di contenuti immagine può generare trame compatibili con le convenz
 
 Questo documento illustra le attività seguenti:
 
--   Configurazione dell'immagine di origine che deve essere elaborata dalla pipeline di contenuti immagine.
+- Configurazione dell'immagine di origine che deve essere elaborata dalla pipeline di contenuti immagine.
 
--   Configurazione della pipeline di contenuti immagine per generare una trama che è possibile usare in un'app JavaScript o Direct2D.
+- Configurazione della pipeline di contenuti immagine per generare una trama che è possibile usare in un'app JavaScript o Direct2D.
 
-    -   Generare un file con estensione *dds* compresso a blocchi.
+    - Generare un file con estensione *dds* compresso a blocchi.
 
-    -   Generare il valore alfa premoltiplicato.
+    - Generare il valore alfa premoltiplicato.
 
-    -   Disabilitare la generazione di mipmap.
+    - Disabilitare la generazione di mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Convenzioni di rendering in Direct2D
 
 Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni di rendering interne di Direct2D seguenti:
 
--   Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sui valori alfa premoltiplicati, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D implementa la trasparenza e la traslucidità usando il valore alfa premoltiplicato. Le trame usate con Direct2D devono contenere i valori alfa premoltiplicati, anche se la trama non usa la trasparenza o la traslucidità. Per altre informazioni sui valori alfa premoltiplicati, vedere [Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
--   La trama deve essere specificata in formato *dds*, usando uno dei formati di compressione a blocchi seguenti:
+- La trama deve essere specificata in formato *dds*, usando uno dei formati di compressione a blocchi seguenti:
 
-    -   Compressione BC1_UNORM
+    - Compressione BC1_UNORM
 
-    -   Compressione BC2_UNORM
+    - Compressione BC2_UNORM
 
-    -   Compressione BC3_UNORM
+    - Compressione BC3_UNORM
 
--   Le mipmap non sono supportate.
+- Le mipmap non sono supportate.
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Per creare una trama compatibile con le convenzioni di rendering Direct2D
 

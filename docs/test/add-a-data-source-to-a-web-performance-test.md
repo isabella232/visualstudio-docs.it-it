@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834931"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Aggiungere un'origine dati a un test delle prestazioni Web
 
@@ -22,7 +22,7 @@ Associare i dati per fornire valori diversi nello stesso test, ad esempio, per f
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-![Associazione di dati a un test prestazioni Web](../test/media/web_test_databinding_conceptual.png)
+![Data binding a un test prestazioni Web](../test/media/web_test_databinding_conceptual.png)
 
 Verrà usata un'applicazione ASP.NET di esempio, contenente tre pagine *ASPX*: la pagina predefinita, una pagina Red e una pagina Blue. La pagina predefinita contiene un pulsante di opzione per la scelta tra rosso e blu e un pulsante Submit. Le altre due pagine *ASPX* sono molto semplici. Una include un'etichetta denominata Red e l'altra un'etichetta denominata Blue. Quando si sceglie Submit nella pagina predefinita, viene visualizzata una delle altre pagine. È possibile scaricare l'esempio di [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) o usare la propria applicazione Web.
 
@@ -34,7 +34,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 ## <a name="create-a-sql-database"></a>Creare un database SQL
 
-1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 2. Creare un database SQL.
 
@@ -59,6 +61,38 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 7. Aggiungere dati ai campi.
 
      ![Aggiungere dati ai campi](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Se Visual Studio Enterprise non è disponibile, scaricarlo dalla pagina dei [download di Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+
+2. Creare un database SQL.
+
+     ![Aggiungere un nuovo database SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Creare un progetto di database.
+
+     ![Creare il nuovo progetto dal database](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Aggiungere una tabella al progetto di database.
+
+     ![Aggiungere una nuova tabella al progetto di database](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Aggiungere campi alla tabella.
+
+     ![Aggiungere campi alla tabella](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Pubblicare il progetto di database.
+
+     ![Pubblicare il progetto di database in Esplora soluzioni](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Aggiungere dati ai campi.
+
+     ![Aggiungere dati ai campi](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Aggiungere l'origine dati
 
@@ -96,7 +130,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 2. Aprire il file *Local.testsettings* in **Esplora soluzione** e selezionare l'opzione **Una esecuzione per riga origine dati**.
 
-     ![Modificare il file di impostazioni test](../test/media/web_test_databinding_sql_testsettings.png)
+     ![Modificare il file di impostazioni di test.](../test/media/web_test_databinding_sql_testsettings.png)
 
 3. Salvare il test delle prestazioni Web.
 
@@ -116,9 +150,9 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
      ![Eliminare la regola di convalida dell'URL di risposta](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
-     Il test delle prestazioni Web ha ora esito positivo tramite il data binding.
+     Il test delle prestazioni Web ha ora esito positivo tramite l'associazione dati.
 
-     ![Test superati usando il data binding](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
+     ![Test superati usando l'associazione dati](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
 ## <a name="q--a"></a>Domande e risposte
 
@@ -142,7 +176,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 **R:** Ecco come:
 
-1. Creare una cartella per organizzare gli artefatti del database dei progetti e aggiungere un elemento.
+1. Creare una cartella per organizzare gli elementi del database dei progetti e aggiungere un elemento.
 
      ![Aggiungere un nuovo elemento alla cartella Dati](../test/media/web_test_databinding_foldernewitem.png)
 
@@ -217,7 +251,7 @@ La soluzione deve inoltre includere un test delle prestazioni Web che scorra le 
 
 **R:** Sì.
 
-1. Creare una cartella per organizzare gli artefatti del database dei progetti e aggiungere un elemento.
+1. Creare una cartella per organizzare gli elementi del database dei progetti e aggiungere un elemento.
 
      ![Aggiungere un nuovo elemento alla cartella Dati](../test/media/web_test_databinding_foldernewitem.png)
 
