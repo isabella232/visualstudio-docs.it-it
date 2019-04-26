@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979315"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedura: Raccogliere dati di IntelliTrace per agevolare il debug di problemi complessi
 
@@ -51,11 +51,11 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Per configurare i dati da raccogliere con l'adattatore dati di diagnostica IntelliTrace
 
-1.  Selezionare il ruolo da utilizzare per raccogliere i dati di IntelliTrace.
+1. Selezionare il ruolo da utilizzare per raccogliere i dati di IntelliTrace.
 
-2.  Selezionare **IntelliTrace**.
+2. Selezionare **IntelliTrace**.
 
-3.  Se si aggiunge IntelliTrace per un ruolo del client Web o un'applicazione Web ASP.NET, è necessario selezionare anche **Proxy client ASP.NET per IntelliTrace e impatto test**.
+3. Se si aggiunge IntelliTrace per un ruolo del client Web o un'applicazione Web ASP.NET, è necessario selezionare anche **Proxy client ASP.NET per IntelliTrace e impatto test**.
 
      Questo proxy consente di raccogliere informazioni sulle chiamate http da un client a un server Web per gli adattatori dati di diagnostica di IntelliTrace e impatto test.
 
@@ -64,31 +64,31 @@ Prima di eseguire i passaggi della procedura, è necessario aprire le impostazio
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Scegliere **Configura** per **IntelliTrace** per modificare le impostazioni predefinite di IntelliTrace.
+4. Scegliere **Configura** per **IntelliTrace** per modificare le impostazioni predefinite di IntelliTrace.
 
      Verrà visualizzata la finestra di dialogo per configurare i dati da raccogliere.
 
     > [!WARNING]
     > Se si abilita la raccolta di dati di IntelliTrace, la raccolta di dati di code coverage non funzionerà.
 
-5.  Scegliere la scheda **Generale**. Selezionare **Solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante i test.
+5. Scegliere la scheda **Generale**. Selezionare **Solo eventi IntelliTrace** per registrare eventi di diagnostica significativi che hanno un impatto minimo sulle prestazioni durante i test.
 
      -oppure-
 
      Selezionare **Eventi IntelliTrace e informazioni sulle chiamate** per registrare eventi di diagnostica e traccia a livello di metodo in cui vengono mostrate le informazioni sulle chiamate. Questo livello di traccia potrebbe avere un impatto sulle prestazioni quando si eseguono i test.
 
-6.  Per raccogliere dati dall'applicazione ASP.NET in esecuzione su Internet Information Services, selezionare **Raccogli dati da applicazioni ASP.NET in esecuzione su Internet Information Services**. Impostare e configurare l'agente di test sul ruolo del server Web. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
+6. Per raccogliere dati dall'applicazione ASP.NET in esecuzione su Internet Information Services, selezionare **Raccogli dati da applicazioni ASP.NET in esecuzione su Internet Information Services**. Impostare e configurare l'agente di test sul ruolo del server Web. Vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
-7.  Scegliere la scheda **Moduli**. Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e utilizzare **Aggiungi** per aggiungere un modulo all'elenco e fare clic su **Rimuovi** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
+7. Scegliere la scheda **Moduli**. Selezionare **Raccogli dati da tutti i moduli tranne i seguenti** e utilizzare **Aggiungi** per aggiungere un modulo all'elenco e fare clic su **Rimuovi** per rimuovere un modulo. Questa opzione consente di includere tutti i moduli in esecuzione nel sistema, ad eccezione di quelli specificati.
 
-     oppure
+     -oppure-
 
      Selezionare **Raccogli dati solo dai seguenti moduli** e usare **Aggiungi** per aggiungere moduli all'elenco e **Rimuovi** per rimuovere i moduli. Questa opzione consente di specificare esattamente i moduli desiderati.
 
     > [!NOTE]
     > Se possibile, selezionare i processi specifici che si desidera monitorare. Si tratta dell'operazione consigliata per prestazioni ottimali.
 
-8.  Scegliere la scheda **Processi**. Selezionare **Raccogli dati da tutti i processi tranne i seguenti** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
+8. Scegliere la scheda **Processi**. Selezionare **Raccogli dati da tutti i processi tranne i seguenti** e usare **Aggiungi** per aggiungere processi all'elenco e **Rimuovi** per rimuovere i processi. Questa opzione consente di includere tutti i processi in esecuzione nel sistema, ad eccezione di quelli specificati.
 
      -oppure-
 

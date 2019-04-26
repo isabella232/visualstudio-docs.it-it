@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834588"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere i dati di campionamento a livello di riga
 Il campionamento a livello di riga è una capacità del profiler che consente di determinare il punto del codice di una funzione che richiede un uso intensivo del processore, ad esempio una funzione con esempi esclusivi elevati, in cui il processore impiega la maggior parte del tempo.
@@ -49,11 +49,11 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Disattivare il campionamento a livello di riga per il codice gestito
  Per impostazione predefinita, il campionamento a livello di riga è attivato. È possibile disattivare la raccolta di dati a livello di riga per il codice gestito con uno dei comandi seguenti:
 
--   Prima della profilatura, digitare **VSPerfCLREnv /samplelineoff**. Questa operazione ha effetto sulle applicazioni e sui servizi.
+- Prima della profilatura, digitare **VSPerfCLREnv /samplelineoff**. Questa operazione ha effetto sulle applicazioni e sui servizi.
 
      oppure
 
--   Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>**.
+- Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>**.
 
 ## <a name="see-also"></a>Vedere anche
 - [Configurare le sessioni di prestazioni](../profiling/configuring-performance-sessions.md)

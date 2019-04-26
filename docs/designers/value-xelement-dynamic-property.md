@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e8f29bcfc8c3f9ecbff436415faf5a787e0ad262
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844117"
 ---
 # <a name="value-xelement-dynamic-property"></a>Valore (proprietà dinamica XElement)
 
@@ -29,7 +29,7 @@ elem.Value
 
 Oggetto <xref:System.String> che rappresenta il contenuto concatenato dell'elemento.
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Questa proprietà dinamica è equivalente alla proprietà <xref:System.Xml.Linq.XElement.Value%2A> della classe <xref:System.Xml.Linq.XElement?displayProperty=fullName>, ma supporta anche le notifiche delle modifiche.
 

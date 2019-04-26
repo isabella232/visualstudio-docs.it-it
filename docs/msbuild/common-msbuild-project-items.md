@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569876"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento è un riferimento denominato a uno o più file. Gli elementi contengono metadati quali ad esempio nomi file, percorsi e numeri di versione. Tutti i tipi di progetto in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] hanno molti elementi in comune. Questi elementi sono definiti nel file *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile
  Rappresenta i file di origine per il compilatore.
 
-
 | Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
@@ -92,7 +91,6 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Rappresenta le risorse da incorporare nell'assembly generato.
-
 
 | Nome metadati degli elementi | Description |
 |-----------------------| - |
@@ -108,7 +106,6 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Content
  Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.
 
-
 | Nome metadati degli elementi | Description |
 |-----------------------| - |
 | DependentUpon | Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta. |
@@ -123,7 +120,6 @@ In [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="none"></a>nessuno
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.
-
 
 | Nome metadati degli elementi | Description |
 |-----------------------| - |

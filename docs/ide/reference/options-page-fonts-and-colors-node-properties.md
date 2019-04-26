@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945594"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori
 Questo documento descrive le proprietà di tipi di carattere e colori per una finestra degli strumenti registrata per la visualizzazione in **Tipi di carattere e colori** nella categoria **Ambiente** della finestra di dialogo **Opzioni**. Supporta la natura dinamica dei gruppi di elementi colorabili, che possono cambiare se vengono installati o disinstallati pacchetti VSPackage.
@@ -26,7 +26,7 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
 ## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Editor di testo o Stampante o Finestre di dialogo e degli strumenti
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
- oppure
+ -oppure-
 
  `DTE.Properties("FontsAndColors", "Printer")`
 
@@ -34,7 +34,7 @@ Questo documento descrive le proprietà di tipi di carattere e colori per una fi
 
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
-|Nome degli elementi delle proprietà|Value|Descrizione|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |FontFamily|Get/Set (String)|Il tipo di carattere da usare, ad esempio "Courier New".|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>) |Valore <xref:EnvDTE.vsFontCharSet> che specifica il tipo di set di caratteri da usare, ad esempio ebraico o russo. |

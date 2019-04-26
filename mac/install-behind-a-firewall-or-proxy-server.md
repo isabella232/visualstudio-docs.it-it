@@ -7,11 +7,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
 ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982877"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
 

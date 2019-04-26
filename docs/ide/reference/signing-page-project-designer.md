@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950545"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell'applicazione e di distribuzione, nonché l'assembly (firma con nome sicuro).
@@ -93,7 +93,6 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
 
 > [!NOTE]
 > Quando si firma un assembly, non sempre è possibile accedere a una chiave privata. Ad esempio, un'organizzazione può avere una coppia di chiavi ben protetta a cui gli sviluppatori non hanno accesso su base giornaliera. La chiave pubblica è disponibile ma l'accesso alla chiave privata è limitato a poche persone. In un caso del genere, è possibile usare una firma *ritardata* o *parziale*. Questa funzione consente di fornire la chiave pubblica, rimandando l'aggiunta della chiave privata al momento della consegna dell'assembly.
-
 
 ## <a name="see-also"></a>Vedere anche
 

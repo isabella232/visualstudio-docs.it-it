@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945169"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactoring con sincronizzazione di un tipo con un nome di file o un nome di file con un tipo
 

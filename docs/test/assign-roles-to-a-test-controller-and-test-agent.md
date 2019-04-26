@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75b117540f389b0ddf1e4c5dc2d48d385749b767
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 322b7d2baeca80f076c33879b52a650f31f8872b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822800"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Assegnare ruoli a un test controller e a un agente di test
 
@@ -27,21 +27,21 @@ Questa procedura dettagliata descrive come creare e configurare un'impostazione 
 
 ## <a name="prerequisites"></a>Prerequisiti
 
--   Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
+- Creare unit test o test codificati dell'interfaccia utente da eseguire con l'impostazione di test.
 
--   Installare un test controller e agenti di test. Per informazioni su come installare un test controller e agenti di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
+- Installare un test controller e agenti di test. Per informazioni su come installare un test controller e agenti di test, vedere [Installare e configurare agenti di test](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Per creare e configurare un'impostazione di test
 
-1.  In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
+1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse su **Elementi di soluzione**, scegliere **Aggiungi** e quindi **Nuovo elemento**.
 
      Verrà visualizzata la finestra di dialogo **Aggiungi nuovo elemento**.
 
-2.  Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
+2. Nel riquadro **Modelli installati** fare clic su **Impostazioni test**.
 
-3.  Nella casella **Nome** digitare **TestSettingDistributedTestWalkthrough**.
+3. Nella casella **Nome** digitare **TestSettingDistributedTestWalkthrough**.
 
-4.  Scegliere **Aggiungi**.
+4. Scegliere **Aggiungi**.
 
      Il nuovo file di test *TestSettingDistributedTestWalkthrough.testsettings* viene visualizzato nella cartella **Elementi di soluzione** in **Esplora soluzioni**.
 
@@ -52,53 +52,53 @@ Questa procedura dettagliata descrive come creare e configurare un'impostazione 
     > [!NOTE]
     > Ogni impostazione test creata viene elencata tra le opzioni disponibili per **Seleziona impostazioni test attive** e **Modifica impostazioni test** nel menu **Test**.
 
-5.  In **Nome** digitare il nome per le impostazioni di test.
+5. In **Nome** digitare il nome per le impostazioni di test.
 
-6.  In **Descrizione** digitare **Impostazioni test distribuito**.
+6. In **Descrizione** digitare **Impostazioni test distribuito**.
 
-7.  Lasciare selezionata l'opzione **Schema di denominazione predefinito**.
+7. Lasciare selezionata l'opzione **Schema di denominazione predefinito**.
 
 ## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Per assegnare ruoli a un test controller e agli agenti di test
 
-1.  Scegliere **Ruoli**.
+1. Scegliere **Ruoli**.
 
      Verrà visualizzata la pagina **Ruoli**.
 
-2.  Per eseguire il test in modalità remota, usare l'elenco a discesa **Metodo di esecuzione dei test** e selezionare **Esecuzione remota**.
+2. Per eseguire il test in modalità remota, usare l'elenco a discesa **Metodo di esecuzione dei test** e selezionare **Esecuzione remota**.
 
-3.  Nell'elenco a discesa **Controller** digitare il nome del computer del [controller di test](../test/lab-management/install-configure-test-agents.md).
+3. Nell'elenco a discesa **Controller** digitare il nome del computer del [controller di test](../test/lab-management/install-configure-test-agents.md).
 
     > [!NOTE]
     > Se si aggiunge un controller per la prima volta, nell'elenco a discesa non saranno presenti controller. L'elenco viene popolato da controller precedenti specificati in altre impostazioni di test.
 
-4.  In **Ruoli** scegliere **Aggiungi**.
+4. In **Ruoli** scegliere **Aggiungi**.
 
-5.  Nella riga evidenziata nella colonna **Nome** digitare **Test distribuito**.
+5. Nella riga evidenziata nella colonna **Nome** digitare **Test distribuito**.
 
 ## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Per assegnare un adattatore dati e un adattatore diagnostico all'impostazione di test
 
-1.  Scegliere **Dati e diagnostica**.
+1. Scegliere **Dati e diagnostica**.
 
      Verrà visualizzata la pagina **Dati e diagnostica**.
 
-2.  In **Ruolo** verificare che il ruolo **Test distribuito** sia selezionato.
+2. In **Ruolo** verificare che il ruolo **Test distribuito** sia selezionato.
 
-3.  In **Dati e diagnostica per il ruolo selezionato** selezionare gli adattatori **IntelliTrace** e **Informazioni di sistema**.
+3. In **Dati e diagnostica per il ruolo selezionato** selezionare gli adattatori **IntelliTrace** e **Informazioni di sistema**.
 
      Per informazioni su questi e altri adattatori che è possibile usare in un'impostazione test, vedere [Configurare unit test](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-4.  Scegliere **Host**.
+4. Scegliere **Host**.
 
-5.  (Facoltativo) Se nel computer viene eseguita una versione a 64 bit di Microsoft Windows e il test è stato compilato con la configurazione **Qualsiasi CPU**, usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** e selezionare **Esegui test in un processo a 64 bit in un computer a 64 bit**.
+5. (Facoltativo) Se nel computer viene eseguita una versione a 64 bit di Microsoft Windows e il test è stato compilato con la configurazione **Qualsiasi CPU**, usare l'elenco a discesa **Esegui test in un processo a 32 bit o a 64 bit** e selezionare **Esegui test in un processo a 64 bit in un computer a 64 bit**.
 
     > [!TIP]
     > Per la massima flessibilità, è consigliabile compilare i progetti di test con la configurazione **Qualsiasi CPU**. È quindi possibile effettuare l'esecuzione sia su agenti a 32 bit che a 64 bit. Non esiste alcun vantaggio nel compilare i progetti di test con la configurazione **64 bit**.
 
-6.  Per salvare le nuove impostazioni di test, scegliere **Applica**.
+6. Per salvare le nuove impostazioni di test, scegliere **Applica**.
 
-7.  Scegliere **Chiudi**.
+7. Scegliere **Chiudi**.
 
-8.  Scegliere **Seleziona impostazioni test** attive dal menu Test e quindi scegliere **TestSettingDistributedTestWalkthrough.testsettings**.
+8. Scegliere **Seleziona impostazioni test** attive dal menu Test e quindi scegliere **TestSettingDistributedTestWalkthrough.testsettings**.
 
 9. Eseguire il test nel modo abituale.
 

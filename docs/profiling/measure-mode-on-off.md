@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830824"
 ---
 # <a name="measure-mode-onoff"></a>Modalità misurazione attiva/non attiva
 Tramite questo strumento è possibile misurare con precisione un periodo di tempo nella sequenza temporale. Per abilitare la modalità misurazione, fare clic sul pulsante di misurazione (con un'icona a forma di righello) e quindi trascinare nella sequenza temporale. Durante il trascinamento, si noti che l'area sotto il puntatore viene evidenziata in giallo e il tempo misurato viene visualizzato sulla barra degli strumenti a destra del pulsante. Questo valore viene calcolato in modo dinamico durante il trascinamento in modo da poter determinare immediatamente il tempo richiesto per un particolare evento. Quando si rilascia il pulsante del mouse, il valore rimane visibile.

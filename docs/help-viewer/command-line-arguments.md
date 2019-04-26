@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824693"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 
 È possibile specificare come distribuire e gestire il contenuto della Guida locale usando gli argomenti della riga di comando per Gestione contenuto della Guida (*HlpCtntMgr.exe*). È necessario eseguire gli script per questo strumento da riga di comando con le autorizzazioni di amministratore e non è possibile eseguire questi script come servizio. Usando questo strumento è possibile eseguire le seguenti attività:
 
--   Aggiungere o aggiornare il contenuto della Guida locale da un disco o dal cloud.
+- Aggiungere o aggiornare il contenuto della Guida locale da un disco o dal cloud.
 
--   Rimuovere il contenuto della Guida locale.
+- Rimuovere il contenuto della Guida locale.
 
--   Spostare l'archivio del contenuto della Guida locale.
+- Spostare l'archivio del contenuto della Guida locale.
 
--   Aggiungere, aggiornare, rimuovere o spostare automaticamente il contenuto della Guida locale.
+- Aggiungere, aggiornare, rimuovere o spostare automaticamente il contenuto della Guida locale.
 
 Sintassi:
 

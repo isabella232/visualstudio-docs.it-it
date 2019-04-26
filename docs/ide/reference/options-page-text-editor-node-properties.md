@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948214"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Editor di testo
 In questo documento vengono descritte alcune pagine, o raccolte di proprietà, associate alla categoria **Editor di testo**, `DTE.Properties("TextEditor", <Property Page>)`, della finestra di dialogo **Opzioni**. Il titolo di ogni sottosezione rappresenta la chiamata utilizzata per accedere alla raccolta `Properties` e nella tabella di ogni sottosezione sono elencate le proprietà della raccolta.
@@ -26,7 +26,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 ## <a name="general"></a>Generale
  `DTE.Properties("TextEditor", "General")`
 
-|Nome degli elementi delle proprietà|Value|Descrizione|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (Boolean)|Se `True`, premendo escape in presenza di una selezione si determina lo spostamento del punto di inserimento nella posizione in cui è iniziata l'azione che ha creato la selezione. `False` consente di spostare il punto di inserimento all'altra estremità della selezione.|
 |DragNDropTextEditing|Get/Set (Boolean)|Determina se è possibile trascinare un'area di testo selezionata da una posizione a un'altra nel documento tramite operazioni Copia o Taglia/Incolla.|
@@ -45,7 +45,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 
  Le opzioni dell'editor `PlainText` influiscono sulle impostazioni dell'editor al momento della modifica dei file di testo. Ogni linguaggio di programmazione e il pacchetto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usano impostazioni specifiche dell'**editor di testo**. Ad esempio, per visualizzare o modificare le impostazioni dell'editor di [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], utilizzare `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Per le impostazioni dell'editor di **Script SQL** usare `DTE.Properties("TextEditor", "SQL ")`.
 
-|Nome degli elementi delle proprietà|Valore|Descrizione|
+|Nome degli elementi delle proprietà|Value|Description|
 | - |-----------|-----------------|
 |AutoListMembers|Get/Set (Boolean)|Determina se l'elenco di membri disponibile viene visualizzato automaticamente quando viene digitato un punto dopo un riferimento a una variabile.|
 |AutoListParams|Get/Set (Boolean)|Determina se la descrizione di un elenco di argomenti viene visualizzata automaticamente quando viene digitata una parentesi "(" dopo il nome di una funzione.|

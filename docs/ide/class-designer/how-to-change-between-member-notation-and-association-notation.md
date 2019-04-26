@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975501"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procedura: Passare dalla notazione membro alla notazione associazione e viceversa in Progettazione classi
 
@@ -29,9 +29,9 @@ In **Progettazione classi** è possibile modificare il modo in cui il diagramma 
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Per passare dalla notazione membro alla notazione associazione
 
-1.  Dal nodo del progetto in Esplora soluzioni, aprire il file del diagramma classi (con estensione CD).
+1. Dal nodo del progetto in Esplora soluzioni, aprire il file del diagramma classi (con estensione CD).
 
-2.  Nella forma tipo del diagramma classi, fare doppio clic su proprietà del membro o sul campo che rappresenta l'associazione e scegliere **Mostra come associazione**.
+2. Nella forma tipo del diagramma classi, fare doppio clic su proprietà del membro o sul campo che rappresenta l'associazione e scegliere **Mostra come associazione**.
 
     > [!TIP]
     > Se non sono visibili campi o proprietà nella forma tipo, i raggruppamenti nella forma potrebbero essere compressi. Per espandere la forma tipo, fare doppio clic sul nome del raggruppamento o fare clic con il pulsante destro del mouse sulla forma tipo e scegliere **Espandi**.

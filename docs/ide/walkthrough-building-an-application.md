@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582944"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
@@ -65,7 +65,7 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
 ### <a name="build-the-solution"></a>Compilare la soluzione
 
--   Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
+- Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
 
     Nella finestra **Output** vengono visualizzati i risultati della compilazione. La compilazione è stata completata.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403629"
 ---
 # <a name="nameprofile"></a>NameProfile
 La funzione `NameProfile` assegna una stringa al processo o al thread specificato.
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Se si specifica un processo o thread diverso da quello corrente, è necessario assicurarsi che sia stato inizializzato e che sia iniziata l'esecuzione prima dell'assegnazione del nome. In caso contrario, il metodo NameProfile ha esito negativo.
 
 > [!IMPORTANT]
->  Le funzioni API CreateProcess () e CreateThread possono restituire il controllo prima dell'inizializzazione del thread o del processo.
+> Le funzioni API CreateProcess () e CreateThread possono restituire il controllo prima dell'inizializzazione del thread o del processo.
 
 ## <a name="net-framework-equivalent"></a>Equivalente .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

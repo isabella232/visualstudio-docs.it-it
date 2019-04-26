@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55036277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819419"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Esempi di sviluppo di app per dispositivi mobili multipiattaforma
 Molti dei modelli installati da Visual C++ per Sviluppo app per dispositivi mobili multipiattaforma generano esempi completi che è possibile usare per acquisire dimestichezza. Inoltre, in Windows Dev Center sono disponibili molte applicazioni di esempio che è possibile scaricare e provare in Visual Studio.

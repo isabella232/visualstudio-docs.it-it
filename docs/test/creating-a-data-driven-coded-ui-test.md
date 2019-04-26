@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f5586fee54a3e50f9485b520e092255e57359c
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785454"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Creare un test codificato dell'interfaccia utente basato sui dati
 
@@ -98,11 +98,11 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 ### <a name="step-2---create-a-data-set"></a>Passaggio 2: creare un set di dati
 
-1.  Aggiungere un file di testo al progetto dataDrivenSample denominato *data.csv*.
+1. Aggiungere un file di testo al progetto dataDrivenSample denominato *data.csv*.
 
      ![Aggiungere al progetto un file con valori separati da virgole](../test/media/cuit_datadriven_addcsvfile.png)
 
-2.  Popolare il file con estensione *csv* con i dati seguenti:
+2. Popolare il file con estensione *csv* con i dati seguenti:
 
     |Num1|Num2|Sum|
     |-|-|-|
@@ -114,9 +114,9 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
      ![Popolare il file con estensione csv con dati](../test/media/cuit_datadriven_adddatatocsvfile.png)
 
-3.  È importante salvare il file con estensione *csv* usando la codifica corretta. Scegliere **Opzioni di salvataggio avanzate** dal menu **File** e **Unicode (UTF-8 senza firma digitale) - Tabella codici 65001** come codifica.
+3. È importante salvare il file con estensione *csv* usando la codifica corretta. Scegliere **Opzioni di salvataggio avanzate** dal menu **File** e **Unicode (UTF-8 senza firma digitale) - Tabella codici 65001** come codifica.
 
-4.  Il file con estensione *csv* deve essere copiato nella directory di output; diversamente, non è possibile eseguire il test. Per copiarlo, usare la finestra **Proprietà**.
+4. Il file con estensione *csv* deve essere copiato nella directory di output; diversamente, non è possibile eseguire il test. Per copiarlo, usare la finestra **Proprietà**.
 
      ![Distribuire il file con estensione csv](../test/media/cuit_datadriven_deploycsvfile.png)
 
@@ -124,7 +124,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
 ### <a name="step-3---add-data-source-binding"></a>Passaggio 3: aggiungere l'associazione origine dati
 
-1.  Per associare l'origine dati, aggiungere un attributo `DataSource` all'interno dell'attributo `[TestMethod]` che si trova immediatamente sopra il metodo di test.
+1. Per associare l'origine dati, aggiungere un attributo `DataSource` all'interno dell'attributo `[TestMethod]` che si trova immediatamente sopra il metodo di test.
 
     ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]
@@ -140,7 +140,7 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
     > [!TIP]
     > Per esempi sull'uso di altri tipi di origine dati, ad esempio XML, SQL Express ed Excel, vedere gli [esempi di attributi dell'origine dati](#CreateDataDrivenCUIT_QA_DataSourceAttributes) nella sezione delle domande e risposte.
 
-2.  Eseguire il test.
+2. Eseguire il test.
 
      Si noti che il test viene eseguito tramite tre iterazioni; questo perché l'origine dati che era associata contiene tre righe di dati. Tuttavia, si noterà anche che il test continua a usare i valori di parametro costanti e aggiunge ogni volta 1 + 2 con una somma pari a 3.
 
@@ -179,19 +179,19 @@ In questo esempio viene creato un test codificato dell'interfaccia utente che vi
 
      Per determinare le proprietà di ricerca alle quali codificare i dati, usare l'Editor test codificati dell'interfaccia utente.
 
-    -   Aprire il file *UIMap.uitest*.
+    - Aprire il file *UIMap.uitest*.
 
          ![Aprire l'editor di test codificati dell'interfaccia utente](../test/media/cuit_datadriven_opentesteditor.png)
 
-    -   Scegliere l'azione dell'interfaccia utente e osservare il mapping di controllo dell'interfaccia utente corrispondente. Si noti come il mapping corrisponda al codice, ad esempio `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
+    - Scegliere l'azione dell'interfaccia utente e osservare il mapping di controllo dell'interfaccia utente corrispondente. Si noti come il mapping corrisponda al codice, ad esempio `this.UIMap.UICalculatorWindow.UIItemWindow.UIItem1Button`.
 
          ![Usare l'editor di test codificati dell'interfaccia utente come supporto per il codice](../test/media/cuit_datadriven_testeditor.png)
 
-    -   Nella finestra **Proprietà** aprire **Proprietà di ricerca**. Il valore **Nome** delle proprietà di ricerca è costituito dagli elementi che sono stati modificati nel codice usando l'origine dati. Ad esempio, a `SearchProperties` vengono assegnati i valori della prima colonna di ciascuna riga di dati: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Per le tre iterazioni, questo test imposterà il valore **Nome** per la proprietà di ricerca su 3, quindi su 5 e infine su 6.
+    - Nella finestra **Proprietà** aprire **Proprietà di ricerca**. Il valore **Nome** delle proprietà di ricerca è costituito dagli elementi che sono stati modificati nel codice usando l'origine dati. Ad esempio, a `SearchProperties` vengono assegnati i valori della prima colonna di ciascuna riga di dati: `UIItem1Button.SearchProperties[WinButton.PropertyNames.Name] = TestContext.DataRow["Num1"].ToString();`. Per le tre iterazioni, questo test imposterà il valore **Nome** per la proprietà di ricerca su 3, quindi su 5 e infine su 6.
 
          ![Usare le proprietà di ricerca come supporto per la codifica](../test/media/cuit_datadriven_searchproperties.png)
 
-3.  Salvare la soluzione.
+3. Salvare la soluzione.
 
 ### <a name="step-5---run-the-data-driven-test"></a>Passaggio 5: eseguire il test basato sui dati
 
@@ -207,23 +207,23 @@ Dovrebbe venire visualizzato il test eseguito tramite le tre iterazioni che usan
 
 **Tipi di origini dati e attributi**
 
--   CSV
+- CSV
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`
 
--   Excel
+- Excel
 
      `DataSource("System.Data.Odbc", "Dsn=ExcelFiles;Driver={Microsoft Excel Driver (*.xls)};dbq=|DataDirectory|\\Data.xls;defaultdir=.;driverid=790;maxbuffersize=2048;pagetimeout=5;readonly=true", "Sheet1$", DataAccessMethod.Sequential), DeploymentItem("Sheet1.xls"), TestMethod]`
 
--   Test case in Team Foundation Server
+- Test case in Team Foundation Server
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
--   XML
+- XML
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
--   SQL Express
+- SQL Express
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 

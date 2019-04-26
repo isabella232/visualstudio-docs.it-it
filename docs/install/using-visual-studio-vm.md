@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951496"
 ---
 # <a id="top"> </a> Immagini di Visual Studio in Azure
 
@@ -77,13 +77,13 @@ Se le immagini non includono una funzionalità di Visual Studio necessaria, comu
 
 Azure offre una gamma completa di dimensioni di macchine virtuali. Poiché Visual Studio è un'applicazione multithreading potente, è necessaria una macchina virtuale che includa almeno due processori e 7 GB di memoria. Si consigliano le dimensioni di macchine virtuali seguenti per le immagini di Visual Studio:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Per altre informazioni sulle dimensioni di macchina virtuale più recenti, vedere [Dimensioni per le macchine virtuali Windows in Azure](/azure/virtual-machines/windows/sizes).
 

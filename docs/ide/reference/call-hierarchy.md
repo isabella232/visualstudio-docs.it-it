@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad95d1c48992b8ecac6715db41aa9d85791999bb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910363"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791369"
 ---
 # <a name="view-call-hierarchy"></a>Visualizzare la gerarchia di chiamata
 
@@ -63,7 +63,7 @@ Quando si seleziona un membro figlio nel riquadro della visualizzazione struttur
 
 La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.
 
-|Comando del menu di scelta rapida|Descrizione|
+|Comando del menu di scelta rapida|Description|
 | - |-----------------|
 |**Aggiungi come nuova radice**|Aggiunge il nodo selezionato al riquadro della visualizzazione struttura ad albero come un nuovo nodo radice. Questo permette di concentrare l'attenzione su un sottoalbero specifico.|
 |**Rimuovi radice**|Rimuove il nodo radice selezionato dal riquadro di visualizzazione albero. Questa opzione è disponibile solo da un nodo radice.<br /><br /> È anche possibile usare il pulsante della barra degli strumenti **Rimuovi radice** per rimuovere il nodo radice selezionato.|

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962041"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -40,22 +40,22 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |[Debugger - Menu di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Altri menu di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu di scelta rapida Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub diagnostica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Comandi globali
+## <a name="bkmk_global"></a> Comandi globali
 
-###  <a name="bkmk_analyze"></a> Analizza
+### <a name="bkmk_analyze"></a> Analizza
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |Analyze.NavigateBackward|**MAIUSC+ALT+3**|
 |Analyze.NavigateForward|**MAIUSC+ALT+4**|
 
-###  <a name="bkmk_architecture"></a> Architettura
+### <a name="bkmk_architecture"></a> Architettura
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |Architecture.NewDiagram|**CTRL+\\, CTRL+N**|
 
-###  <a name="bkmk_build"></a> Compila
+### <a name="bkmk_build"></a> Compila
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -64,13 +64,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Build.Compile|**CTRL+F7**|
 |Build.RunCodeAnalysisonSolution|**ALT+F11**|
 
-###  <a name="bkmk_classview"></a> Menu di scelta rapida Visualizzazione classi
+### <a name="bkmk_classview"></a> Menu di scelta rapida Visualizzazione classi
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**ALT+INVIO**|
 
-###  <a name="bkmk_debug"></a> Debug
+### <a name="bkmk_debug"></a> Debug
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -138,7 +138,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Debug.Watch3|**CTRL+ALT+W, 3**|
 |Debug.Watch4|**CTRL+ALT+W, 4**|
 
-###  <a name="bkmk_debugger"></a> Debugger - Menu di scelta rapida
+### <a name="bkmk_debugger"></a> Debugger - Menu di scelta rapida
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -146,13 +146,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**ALT+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**ALT+F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Hub diagnostica
+### <a name="bkmk_diagnostics"></a> Hub diagnostica
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**CTRL+ALT+F2**|
 
-###  <a name="bkmk_edit"></a> Modifica
+### <a name="bkmk_edit"></a> Modifica
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------|-|
@@ -211,7 +211,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.SurroundWith|**CTRL+K, CTRL+S**|
 |Edit.Undo|**CTRL+Z**<br /><br /> oppure<br /><br /> **ALT+BACKSPACE**|
 
-###  <a name="bkmk_editorContext"></a> Menu di scelta rapida Editor
+### <a name="bkmk_editorContext"></a> Menu di scelta rapida Editor
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -222,7 +222,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**CTRL+K, CTRL+O** (lettera "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**CTRL+K, CTRL+T**<br /><br /> oppure<br /><br /> **CTRL+K, S**|
 
-###  <a name="bkmk_file"></a> File
+### <a name="bkmk_file"></a> File
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -238,7 +238,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |File.SaveSelectedItems|**CTRL+S**|
 |File.ViewinBrowser|**CTRL+MAIUSC+W**|
 
-###  <a name="bkmk_help"></a> Guida
+### <a name="bkmk_help"></a> Guida
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -247,19 +247,19 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Help.ViewHelp|**CTRL+F1**|
 |Help.WindowHelp|**MAIUSC+F1**|
 
-###  <a name="bkmk_loadtest"></a> Test di carico
+### <a name="bkmk_loadtest"></a> Test di carico
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**CTRL+R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Altri menu di scelta rapida
+### <a name="bkmk_otherContext"></a> Altri menu di scelta rapida
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserisci**|
 
-###  <a name="bkmk_project"></a> Progetto
+### <a name="bkmk_project"></a> Progetto
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -271,14 +271,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Project.Publishselectedfiles|**ALT+;** quindi **ALT+P**|
 |Project.Replaceselectedfilesfromserver|**ALT+;** quindi **ALT+R**|
 
-###  <a name="bkmk_projectContext"></a> Menu di scelta rapida progetti e soluzioni
+### <a name="bkmk_projectContext"></a> Menu di scelta rapida progetti e soluzioni
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**ALT+Freccia GIÙ**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**ALT+Freccia SU**|
 
-###  <a name="bkmk_refactor"></a> Refactoring
+### <a name="bkmk_refactor"></a> Refactoring
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -289,7 +289,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Refactor.Rename|**CTRL+R, CTRL+R**|
 |Refactor.ReorderParameters|**CTRL+R, CTRL+O** (lettera "O")|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Esplora soluzioni
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Esplora soluzioni
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -297,7 +297,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
 |SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
 
-###  <a name="bkmk_team"></a> Team
+### <a name="bkmk_team"></a> Team
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -306,7 +306,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Team.Git.GoToGitCommits|**CTRL+0**, **CTRL+O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+0, O**|
 |Team.TeamExplorerSearch|**CTRL+'**|
 
-###  <a name="bkmk_TFcontext"></a> Menu di scelta rapida Team Foundation
+### <a name="bkmk_TFcontext"></a> Menu di scelta rapida Team Foundation
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -321,14 +321,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**CTRL+0** (zero), **CTRL+A**<br /><br /> oppure<br /><br /> **CTRL+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**CTRL+0** (zero), **CTRL+W**<br /><br /> oppure<br /><br /> **CTRL+0, W**|
 
-###  <a name="bkmk_test"></a> Test
+### <a name="bkmk_test"></a> Test
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**CTRL+\\, CTRL+C**|
 |Test.UseExistingActionRecording|**CTRL+\\, CTRL+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Esplora test
+### <a name="bkmk_testexplorerGLOBAL"></a> Esplora test
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -338,7 +338,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TestExplorer.RunAllTests|**CTRL+R, A**|
 |TestExplorer.RunAllTestsInContext|**CTRL+R, T**|
 
-###  <a name="bkmk_tools"></a> Strumenti
+### <a name="bkmk_tools"></a> Strumenti
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -347,7 +347,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Tools.ForceGC|**CTRL+MAIUSC+ALT+F12, CTRL+MAIUSC+ALT+F12**|
 |Tools.GoToCommandLine|**CTRL+/**|
 
-###  <a name="bkmk_view"></a> Visualizza
+### <a name="bkmk_view"></a> Visualizza
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -396,7 +396,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.ZoomIn|**CTRL+MAIUSC+.**|
 |View.ZoomOut|**CTRL+MAIUSC+,**|
 
-###  <a name="bkmk_window"></a> Finestra
+### <a name="bkmk_window"></a> Finestra
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -427,14 +427,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Window.SolutionExplorerSearch|**CTRL+;**|
 |Window.WindowSearch|**ALT+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**CTRL+NUM \*, CTRL+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**CTRL+NUM \*, CTRL+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -449,7 +449,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.EntityDataModelBrowser|**CTRL+1**|
 |View.EntityDataModelMappingDetails|**CTRL+2**|
 
-##  <a name="class-diagram"></a>Diagramma classi
+## <a name="class-diagram"></a>Diagramma classi
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -461,7 +461,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.RemovefromDiagram|**Eliminazione**|
 |View.ViewCode|**INVIO**|
 
-##  <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
+## <a name="coded-ui-test-editor"></a>Editor test codificati dell'interfaccia utente
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -472,14 +472,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**CTRL+ALT+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**CTRL+MAIUSC+T**|
 
-##  <a name="dataset-editor"></a>Editor DataSet
+## <a name="dataset-editor"></a>Editor DataSet
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Inserisci**|
 |OtherContextMenus.DbTableContext.Add.Column|**CTRL+L**|
 
-##  <a name="difference-viewer"></a>Visualizzatore differenze
+## <a name="difference-viewer"></a>Visualizzatore differenze
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -495,7 +495,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |EditorContextMenus.CodeWindow.AddComment|**CTRL+MAIUSC+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**CTRL+MAIUSC+P**|
 
-##  <a name="dom-explorer"></a>DOM Explorer
+## <a name="dom-explorer"></a>DOM Explorer
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -503,13 +503,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |DOMExplorer.SelectElement|**CTRL+B**|
 |DOMExplorer.ShowLayout|**CTRL+MAIUSC+I**|
 
-##  <a name="f-interactive"></a>F# Interactive
+## <a name="f-interactive"></a>F# Interactive
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**CTRL+INTERR**|
 
-##  <a name="graph-document-editor"></a>Editor di documento grafico
+## <a name="graph-document-editor"></a>Editor di documento grafico
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -521,7 +521,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Eliminazione**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Diagnostica grafica
+## <a name="graphics-diagnostics"></a>Diagnostica grafica
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -535,13 +535,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Graphics.ZoomIn|**MAIUSC+ALT+=**|
 |Graphics.ZoomOut|**MAIUSC+ALT+-**|
 
-##  <a name="html-editor"></a>Editor HTML
+## <a name="html-editor"></a>Editor HTML
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**CTRL+M, CTRL+G**|
 
-##  <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
+## <a name="html-editor-design-view"></a>Visualizzazione Progettazione editor HTML
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -564,7 +564,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.ViewMarkup|**MAIUSC+F7**|
 |Window.PreviousTab|**CTRL+PGSU**|
 
-##  <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
+## <a name="html-editor-source-view"></a>Visualizzazione origine editor HTML
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -574,13 +574,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.ViewDesigner|**MAIUSC+F7**|
 |Window.PreviousTab|**CTRL+PGSU**|
 
-##  <a name="layer-diagram"></a>Diagramma livello
+## <a name="layer-diagram"></a>Diagramma livello
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
-##  <a name="managed-resources-editor"></a>Editor risorse gestite
+## <a name="managed-resources-editor"></a>Editor risorse gestite
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -595,7 +595,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Resources.Other|**CTRL+6**|
 |Resources.Strings|**CTRL+1**|
 
-##  <a name="merge-editor-window"></a>Finestra editor merge
+## <a name="merge-editor-window"></a>Finestra editor merge
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -603,7 +603,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**ALT+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**ALT+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, confronto schema
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -614,7 +614,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |SQL.SSDTSchemaCompareStop|**ALT+INTERR**|
 |SQL.SSDTSchemaCompareWriteUpdates|**MAIUSC+ALT+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, progettazione tabelle
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -625,7 +625,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |SQL.Rename|**F2**<br /><br /> oppure<br /><br /> **CTRL+R, R**<br /><br /> oppure<br /><br /> **CTRL+R, CTRL+R**|
 |ViewFileInScriptPanel|**MAIUSC+ALT+PGGIÙ**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -646,7 +646,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, editor T-SQL PDW
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -661,13 +661,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TSqlEditorCloneQuery|**CTRL+ALT+N**|
 |TSqlEditorDatabaseCombo|**MAIUSC+ALT+PGGIÙ**|
 
-##  <a name="page-inspector"></a>Controllo pagina
+## <a name="page-inspector"></a>Controllo pagina
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Progettazione query
+## <a name="query-designer"></a>Progettazione query
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -680,7 +680,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-##  <a name="query-results"></a>Risultati delle query
+## <a name="query-results"></a>Risultati delle query
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -688,7 +688,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |SQL.QueryResultsRefresh|**MAIUSC+ALT+R**|
 |SQL.QueryResultsStop|**ALT+INTERR**|
 
-##  <a name="report-designer"></a>Progettazione report
+## <a name="report-designer"></a>Progettazione report
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -714,14 +714,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.TabLeft|**MAIUSC+TAB**|
 |View.ReportData|**CTRL+ALT+D**|
 
-##  <a name="sequence-diagram"></a>Diagramma sequenza
+## <a name="sequence-diagram"></a>Diagramma sequenza
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**MAIUSC+CANC**|
 
-##  <a name="settings-designer"></a>Progettazione impostazioni
+## <a name="settings-designer"></a>Progettazione impostazioni
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -730,13 +730,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.SelectionCancel|**ESC**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Esplora soluzioni
+## <a name="solution-explorer"></a>Esplora soluzioni
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**CTRL+K, CTRL+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
@@ -761,13 +761,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**MAIUSC+ALT+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Esplora test
+## <a name="test-explorer"></a>Esplora test
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Editor di testo
+## <a name="text-editor"></a>Editor di testo
 
 | Comandi: | Scelte rapide da tastiera |
 | - | - |
@@ -884,38 +884,38 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **ALT+PGGIÙ** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **ALT+PGSU** |
 
-##  <a name="uml-activity-diagram"></a>Diagramma attività UML
+## <a name="uml-activity-diagram"></a>Diagramma attività UML
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.Delete|**MAIUSC+CANC**|
 
-##  <a name="uml-class-diagram"></a>Diagramma classi UML
+## <a name="uml-class-diagram"></a>Diagramma classi UML
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-##  <a name="uml-component-diagram"></a>Diagramma dei componenti UML
+## <a name="uml-component-diagram"></a>Diagramma dei componenti UML
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-##  <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
+## <a name="uml-use-case-diagram"></a>Diagramma caso di utilizzo UML
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.DeleteFromModel|**MAIUSC+CANC**|
 
-##  <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
+## <a name="vc-accelerator-editor"></a>Editor tasti di scelta rapida VC
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |Edit.NewAccelerator|**Inserisci**|
 |Edit.NextKeyTyped|**CTRL+W**|
 
-##  <a name="vc-dialog-editor"></a>Editor finestre di VC
+## <a name="vc-dialog-editor"></a>Editor finestre di VC
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -949,7 +949,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**CTRL+G**|
 
-##  <a name="vc-image-editor"></a>Editor di immagini di VC
+## <a name="vc-image-editor"></a>Editor di immagini di VC
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -991,13 +991,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Image.ZoomIn|**CTRL+MAIUSC+.**<br /><br /> oppure<br /><br /> **CTRL+Freccia SU**|
 |Image.ZoomOut|**CTRL+MAIUSC+,**<br /><br /> oppure<br /><br /> **CTRL+Freccia GIÙ**|
 
-##  <a name="vc-string-editor"></a>Editor stringhe di VC
+## <a name="vc-string-editor"></a>Editor stringhe di VC
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |Edit.NewString|**Inserisci**|
 
-##  <a name="view-designer"></a>Progettazione visualizzazioni
+## <a name="view-designer"></a>Progettazione visualizzazioni
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1010,13 +1010,13 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |QueryDesigner.Results|**CTRL+4**|
 |QueryDesigner.SQL|**CTRL+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Comando|Tasto di scelta rapida|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**CTRL+1**|
 
-##  <a name="windows-forms-designer"></a>Progettazione Windows Form
+## <a name="windows-forms-designer"></a>Progettazione Windows Form
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1045,7 +1045,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.SizeControlUp|**CTRL+MAIUSC+Freccia SU**|
 |Edit.TabLeft|**MAIUSC+TAB**|
 
-##  <a name="work-item-editor"></a>Editor Elemento di lavoro
+## <a name="work-item-editor"></a>Editor Elemento di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**MAIUSC+ALT+L**|
 
-##  <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
+## <a name="work-item-query-view"></a>Visualizzazione query elemento di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1064,7 +1064,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Team.Refresh|**F5**|
 |Window.Toggle|**MAIUSC+ALT+V**|
 
-##  <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
+## <a name="work-item-results-view"></a>Visualizzazione risultati elementi di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1077,7 +1077,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Team.Refresh|**F5**|
 |Window.Toggle|**MAIUSC+ALT+V**|
 
-##  <a name="workflow-designer"></a>Progettazione flussi di lavoro
+## <a name="workflow-designer"></a>Progettazione flussi di lavoro
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1105,7 +1105,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |WorkflowDesigner.ZoomIn|**CTRL+NUM +**|
 |WorkflowDesigner.ZoomOut|**CTRL+NUM -**|
 
-##  <a name="xaml-ui-designer"></a>XAML Designer
+## <a name="xaml-ui-designer"></a>XAML Designer
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
@@ -1127,14 +1127,14 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.EdgeRightMoveRight|**CTRL+MAIUSC+ALT+.**|
 |View.ShowPropertyMarkerMenu|**CTRL+BARRA SPAZIATRICE**|
 
-##  <a name="xml-text-editor"></a>Editor di testo XML
+## <a name="xml-text-editor"></a>Editor di testo XML
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
 |XML.StartXSLTDebugging|**ALT+F5**|
 |XML.StartXSLTWithoutDebugging|**CTRL+ALT+F5**|
 
-##  <a name="xml-schema-designer"></a>Progettazione XML Schema
+## <a name="xml-schema-designer"></a>Progettazione XML Schema
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |

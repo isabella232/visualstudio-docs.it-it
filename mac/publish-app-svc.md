@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c6aa04ceb08daeb303ae6c421fe34465a9ebcda4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939377"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Pubblicare un'app Web in Servizio app di Azure usando Visual Studio per Mac
 
@@ -25,9 +25,9 @@ ms.locfileid: "58856301"
 
 ## <a name="prerequisites"></a>Prerequisiti
 
- - [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con ASP.NET Core abilitato.
- - Una sottoscrizione di Azure. Se non si ha già una sottoscrizione, [iscriversi gratuitamente](https://azure.microsoft.com/free/dotnet/) per ottenere un credito di $200 per 30 giorni e 12 mesi di accesso ai servizi gratuiti più diffusi.
- - Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](~/create-new-projects.md).
+- [Visual Studio 2019 per Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installato con ASP.NET Core abilitato.
+- Una sottoscrizione di Azure. Se non si ha già una sottoscrizione, [iscriversi gratuitamente](https://azure.microsoft.com/free/dotnet/) per ottenere un credito di $200 per 30 giorni e 12 mesi di accesso ai servizi gratuiti più diffusi.
+- Un progetto ASP.NET Core. Se non si ha già un progetto, è possibile [crearne uno](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Eseguire la pubblicazione nel servizio app di Azure
 

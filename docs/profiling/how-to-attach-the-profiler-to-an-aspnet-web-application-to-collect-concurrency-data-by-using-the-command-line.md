@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974278"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
 Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per connettere il profiler a un'applicazione ASP.NET e raccogliere dati di concorrenza di thread e processi.
@@ -45,21 +45,20 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
    | [/automark](../profiling/automark.md) **:** `Interval` | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Specifica un evento di Event Tracing for Windows (ETW) da raccogliere durante la profilatura. Gli eventi ETW vengono raccolti in un file separato con estensione *etl*. |
 
-
 2. Avviare l'applicazione ASP.NET nel modo usuale.
 
 3. Connettere il profiler al processo di lavoro ASP.NET digitando il comando seguente: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
 
-   -   `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
+   - `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Questo parametro è facoltativo.
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` specifica la versione di Common Language Runtime (CLR) da profilare quando più di una versione del runtime è caricata in un'applicazione. Questo parametro è facoltativo.
 
 ## <a name="control-data-collection"></a>Controllare la raccolta dati
  Mentre è in esecuzione l'applicazione, è possibile controllare la raccolta dei dati avviando e interrompendo la scrittura dei dati nel file usando le opzioni *VSPerfCmd.exe*. Per controllare la raccolta dei dati, è possibile raccogliere dati per una parte specifica dell'esecuzione del programma, ad esempio l'avvio o arresto dell'applicazione.
 
 #### <a name="to-start-and-stop-data-collection"></a>Per avviare o interrompere la raccolta dei dati
 
--   Le coppie di opzioni VSPerfCmd nella tabella seguente consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
+- Le coppie di opzioni VSPerfCmd nella tabella seguente consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
     |Opzione|Description|
     |------------|-----------------|
@@ -72,11 +71,11 @@ Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il 
 
 #### <a name="to-end-a-profiling-session"></a>Per terminare una sessione di profilatura
 
-1.  Disconnettere il profiler dall'applicazione di destinazione chiudendola o digitando quanto segue al prompt dei comandi:
+1. Disconnettere il profiler dall'applicazione di destinazione chiudendola o digitando quanto segue al prompt dei comandi:
 
      **VSPerfCmd /detach**
 
-2.  Arrestare il profiler digitando il comando seguente al prompt dei comandi:
+2. Arrestare il profiler digitando il comando seguente al prompt dei comandi:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

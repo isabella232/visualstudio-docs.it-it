@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790135"
 ---
 # <a name="options-dialog-box-environment--general"></a>Finestra di dialogo Opzioni: Ambiente \> Generale
 
@@ -43,7 +43,7 @@ Scegliere il tema colori **Blu**, **Chiaro**, **Scuro** oppure **Blu (massimo co
 
 È possibile installare temi predefiniti aggiuntivi e creare temi personalizzati scaricando e installando **Visual Studio Color Theme Editor** da [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Dopo avere installato questo strumento, i temi colori aggiuntivi vengono visualizzati nella casella di riepilogo **Tema colori**.
 
-**applica lo stile Tutte Iniziali Maiuscole alla barra dei menu**
+**Applica lo stile Tutte Iniziali Maiuscole alla barra dei menu**
 
 I menu usano lo stile con tutte iniziali maiuscole per impostazione predefinita. Deselezionare questa opzione per usare invece lo stile con tutte lettere maiuscole.
 
@@ -59,7 +59,7 @@ Questa opzione abilita o disabilita la sensibilità ai valori DPI (punti per pol
 
 ::: moniker-end
 
-**Regola automaticamente in base alle prestazioni del client**
+**Regola automaticamente esperienza visiva in base alle prestazioni del client**
 
 Specifica se Visual Studio imposta automaticamente la regolazione dell'esperienza visiva o la regolazione viene impostata in modo esplicito dall'utente. Questa regolazione può modificare la visualizzazione di colori da gradienti a colori uniformi o può limitare l'uso di animazioni nei menu o finestre a comparsa.
 
@@ -84,7 +84,7 @@ Usa l'accelerazione grafica hardware, se disponibile, piuttosto che l'accelerazi
 
 Consente di personalizzare il numero di finestre visualizzate nell'elenco Finestre accessibile dal menu **Finestra**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10.
 
-**Elementi negli elenchi degli ultimi file usati**
+**elementi negli elenchi degli ultimi file usati**
 
 Consente di personalizzare il numero dei file e dei progetti usati più di recente visualizzati nel menu **File**. Immettere un numero compreso tra 1 e 24. Il valore predefinito è 10. Questa funzionalità offre un modo semplice per recuperare progetti e file usati di recente.
 
@@ -103,4 +103,4 @@ Consente di specificare che se si fa clic sul pulsante **Nascondi automaticament
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
-- [Personalizzazione del layout della finestra](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Personalizzazione del layout delle finestre](../../ide/customizing-window-layouts-in-visual-studio.md)

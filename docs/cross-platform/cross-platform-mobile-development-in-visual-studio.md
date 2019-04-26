@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816139"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo per dispositivi mobili multipiattaforma in Visual Studio
 
@@ -40,7 +40,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Informazioni sulle app di Windows universali in Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Informazioni sulle analogie tra Swift e C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows
+### <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows
 
  È possibile compilare app native per Windows, iOS e Android tramite C# o F# (Visual Basic non è attualmente supportato).  Per iniziare, installare Visual Studio 2017 e selezionare l'opzione **Sviluppo di applicazioni per dispositivi mobili con .NET** nel programma di installazione.
 
@@ -56,7 +56,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 
  A seconda della complessità della progettazione delle app, è possibile provare a compilare l'app con i modelli *Xamarin.Forms* nel gruppo di modelli di progetto **App per dispositivi mobili** . Xamarin.Forms è un Toolkit dell'interfaccia utente che consente di creare un'unica interfaccia da condividere tra Android, iOS e Windows Phone.  Quando si compila una soluzione Xamarin.Forms, si otterrà un'app per Android, un'app per iOS e un'app per Windows. Per altri dettagli, vedere [Informazioni sullo sviluppo per dispositivi mobili con Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) e la [documentazione di Xamarin.Forms](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Condividere il codice tra app Android, iOS e Windows
+#### <a name="ShareHTML"></a> Condividere il codice tra app Android, iOS e Windows
 
  Se non si usa Xamarin.Forms e si sceglie di progettare singolarmente per ogni piattaforma, è possibile condividere la maggior parte del codice non di interfaccia utente tra progetti di piattaforma (Android, iOS e Windows). Sono incluse le logiche di business, l'integrazione cloud, l'accesso ai database e qualsiasi altro codice che faccia riferimento a .NET Framework. L'unico codice che non è possibile condividere è quello che fa riferimento a una specifica piattaforma.
 
@@ -69,7 +69,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Opzioni di condivisione del codice](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opzioni di condivisione del codice con .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a>Sviluppare per dispositivi Windows 10
+### <a name="WindowsHTML"></a>Sviluppare per dispositivi Windows 10
 
  ![Dispositivi Windows](../cross-platform/media/windowsdevices.png "Dispositivi Windows")
 
@@ -84,7 +84,7 @@ Con Visual Studio Tools per Xamarin è possibile creare una soluzione unica per 
 |[Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrare le app alla piattaforma UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a>Compilare un'app per Android, iOS e Windows (HTML/JavaScript)
+## <a name="HTML"></a>Compilare un'app per Android, iOS e Windows (HTML/JavaScript)
 
  ![Dispositivi Windows, iOS e Android](../cross-platform/media/homedevices.png "Dispositivi Windows, iOS e Android")
 

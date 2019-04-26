@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 90c79ea987f3d7a0ec4e15f30882a3ad76c57aef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892178"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Proprietà dinamiche della classe XElement
 
@@ -21,7 +21,7 @@ In questa sezione vengono descritte le proprietà dinamiche della classe <xref:S
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-|Argomento|Descrizione|
+|Argomento|Description|
 |-----------|-----------------|
 |[Attributo](../designers/attribute-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'attributo che corrisponde a un nome espanso specificato.|
 |[Elemento](../designers/element-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'elemento figlio che corrisponde a un nome espanso specificato.|

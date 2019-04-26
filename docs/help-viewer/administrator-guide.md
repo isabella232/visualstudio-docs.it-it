@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972993"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 
@@ -45,13 +45,13 @@ Per altre informazioni sulla sintassi della riga di comando di *HlpCtntMgr.exe*,
 
 Requisiti:
 
--   I computer client devono avere accesso a Internet.
+- I computer client devono avere accesso a Internet.
 
--   Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
+- Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
 
 Avvertenze:
 
--   L'origine predefinita per la Guida sarà ancora online.
+- L'origine predefinita per la Guida sarà ancora online.
 
 ### <a name="example"></a>Esempio
 
@@ -59,13 +59,13 @@ L'esempio seguente installa il contenuto in lingua inglese per Visual Studio in 
 
 #### <a name="to-install-english-content-from-the-internet"></a>Per installare il contenuto in lingua inglese da Internet
 
-1.  Scegliere **Start** e quindi **Esegui**.
+1. Scegliere **Start** e quindi **Esegui**.
 
-2.  Digitare quanto segue:
+2. Digitare quanto segue:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Premere **INVIO**.
+3. Premere **INVIO**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Distribuire il contenuto della Guida locale preinstallato nei computer client
 
@@ -73,16 +73,16 @@ L'esempio seguente installa il contenuto in lingua inglese per Visual Studio in 
 
 Requisiti:
 
--   Il computer in cui si installa il set del contenuto deve avere accesso a Internet.
+- Il computer in cui si installa il set del contenuto deve avere accesso a Internet.
 
--   Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
+- Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.
 
     > [!TIP]
     > Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda **Gestisci contenuto** nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../help-viewer/behavior-overrides.md).
 
 Avvertenze:
 
--   L'origine predefinita per la Guida sarà ancora online.
+- L'origine predefinita per la Guida sarà ancora online.
 
 ### <a name="create-the-content-set"></a>Creare il set di contenuti
 
@@ -104,23 +104,23 @@ Prima di poter creare il set di contenuti di base, è necessario disinstallare t
 
 #### <a name="to-download-the-content"></a>Per scaricare il contenuto
 
-1.  In Help Viewer scegliere la scheda **Gestisci contenuto**.
+1. In Help Viewer scegliere la scheda **Gestisci contenuto**.
 
-2.  In **Documentazione consigliata** o **Documentazione disponibile** passare ai set di documentazione che si vuole scaricare e quindi scegliere **Aggiungi**.
+2. In **Documentazione consigliata** o **Documentazione disponibile** passare ai set di documentazione che si vuole scaricare e quindi scegliere **Aggiungi**.
 
-3.  Scegliere **Aggiorna**.
+3. Scegliere **Aggiorna**.
 
 Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai computer client.
 
 #### <a name="to-package-the-content"></a>Per creare un pacchetto del contenuto
 
-1.  Creare una cartella in cui copiare il contenuto da distribuire. Ad esempio: *C:\VSHelp*.
+1. Creare una cartella in cui copiare il contenuto da distribuire. Ad esempio: *C:\VSHelp*.
 
-2.  Aprire *cmd.exe* con le autorizzazioni di amministratore.
+2. Aprire *cmd.exe* con le autorizzazioni di amministratore.
 
-3.  Passare alla cartella creata nel passaggio 1.
+3. Passare alla cartella creata nel passaggio 1.
 
-4.  Digitare quanto segue:
+4. Digitare quanto segue:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
 
 ### <a name="deploy-the-content"></a>Distribuire il contenuto
 
-1.  Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.
+1. Creare una condivisione di rete e copiare il contenuto della Guida in tale posizione.
 
      Ad esempio, copiare il contenuto di *C:\VSHelp* in *\\\myserver\VSHelp*.
 
-2.  Creare un file con estensione *bat* che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti. Ad esempio:
+2. Creare un file con estensione *bat* che dovrà contenere lo script di distribuzione per il contenuto della Guida. Poiché potrebbe verificarsi un blocco di lettura nel client per qualsiasi file da eliminare durante il push, è necessario arrestare il client prima del push degli aggiornamenti. Ad esempio:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Ora è necessario creare un pacchetto del contenuto per poterlo distribuire ai c
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Eseguire il file con estensione *bat* nei computer locali in cui si vuole installare il contenuto della Guida.
+3. Eseguire il file con estensione *bat* nei computer locali in cui si vuole installare il contenuto della Guida.
 
 ## <a name="see-also"></a>Vedere anche
 

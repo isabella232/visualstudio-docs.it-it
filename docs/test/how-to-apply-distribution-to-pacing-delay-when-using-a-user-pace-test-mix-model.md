@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979341"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procedura: Applicare la distribuzione al ritardo velocità per un modello di combinazione di test basato sulla velocità dell'utente
 
@@ -40,7 +40,7 @@ La proprietà **Applica distribuzione a ritardo velocità** viene impostata tram
 
 1. Aprire un test di carico.
 
-   Viene visualizzato l'**Editor test di carico**. Verrà visualizzato l'albero del test di carico.
+   Viene visualizzato l'**Editor test di carico**. Verrà visualizzata la struttura ad albero del test di carico.
 
 2. Nella cartella **Scenari** dell'albero del test di carico selezionare il nodo dello scenario a cui si vuole applicare la distribuzione della velocità.
 

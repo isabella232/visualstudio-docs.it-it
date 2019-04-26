@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979240"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 
@@ -27,27 +27,27 @@ Tramite il framework unit test Microsoft per il codice gestito, è possibile imp
 
 La creazione di uno unit test basato sui dati prevede i passaggi seguenti:
 
-1.  Creare un'origine dati che contiene i valori usati nel metodo di test. L'origine dati può essere di qualsiasi tipo registrato nel computer che esegue il test.
+1. Creare un'origine dati che contiene i valori usati nel metodo di test. L'origine dati può essere di qualsiasi tipo registrato nel computer che esegue il test.
 
-2.  Aggiungere un campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privato e una proprietà `TestContext` pubblica alla classe di test.
+2. Aggiungere un campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privato e una proprietà `TestContext` pubblica alla classe di test.
 
-3.  Creare un metodo di unit test e aggiungere un attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> al metodo.
+3. Creare un metodo di unit test e aggiungere un attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> al metodo.
 
-4.  Usare la proprietà <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> dell'indicizzatore per recuperare i valori da usare in un test.
+4. Usare la proprietà <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> dell'indicizzatore per recuperare i valori da usare in un test.
 
 ## <a name="the-method-under-test"></a>Metodo sottoposto a test
 
 Come esempio, si supponga di avere:
 
-1.  Una soluzione denominata `MyBank` che accetta ed elabora transazioni per diversi tipi di account.
+1. Una soluzione denominata `MyBank` che accetta ed elabora transazioni per diversi tipi di account.
 
-2.  Un progetto in `MyBank` denominato `BankDb`, che gestisce le transazioni per gli account.
+2. Un progetto in `MyBank` denominato `BankDb`, che gestisce le transazioni per gli account.
 
-3.  Una classe denominata `Maths` nel progetto `DbBank`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.
+3. Una classe denominata `Maths` nel progetto `DbBank`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.
 
-4.  Un progetto di unit test denominato `BankDbTests`, per testare il comportamento del componente `BankDb`.
+4. Un progetto di unit test denominato `BankDbTests`, per testare il comportamento del componente `BankDb`.
 
-5.  Una classe di unit test denominata `MathsTests`, per verificare il comportamento della classe `Maths`.
+5. Una classe di unit test denominata `MathsTests`, per verificare il comportamento della classe `Maths`.
 
 Verrà testato un metodo in `Maths` che somma due numeri interi con un ciclo:
 

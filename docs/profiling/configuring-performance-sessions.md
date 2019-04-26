@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405776"
 ---
 # <a name="configure-performance-sessions"></a>Configurare le sessioni di prestazioni
 Usando gli strumenti per la profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], è possibile raccogliere un'ampia gamma di dati sulle prestazioni per un numero elevato di tipi di applicazioni. In questa sezione viene illustrato come usare le proprietà della Creazione guidata sessione di prestazioni della sessione di prestazioni e del file binario di destinazione per configurare gli strumenti di profilatura per raccogliere i dati di interesse. Le proprietà di configurazione degli strumenti per la profilatura possono essere usate anche per controllare quanti dati vengono raccolti in un'esecuzione di profilatura. Per altre informazioni, vedere [Controllare la raccolta dati](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
->  In molti casi l'uso delle proprietà della Creazione guidata sessione di prestazioni è un metodo efficace per raccogliere dati di profilatura. Per altre informazioni, vedere [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Guida per principianti alla profilatura delle prestazioni) e [Introduzione](../profiling/getting-started-with-performance-tools.md).
+> In molti casi l'uso delle proprietà della Creazione guidata sessione di prestazioni è un metodo efficace per raccogliere dati di profilatura. Per altre informazioni, vedere [Beginners Guide to Performance Profiling](../profiling/beginners-guide-to-performance-profiling.md) (Guida per principianti alla profilatura delle prestazioni) e [Introduzione](../profiling/getting-started-with-performance-tools.md).
 
 ## <a name="common-tasks"></a>Attività comuni
 

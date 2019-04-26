@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977355"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
 Quando si compila un progetto di grandi dimensioni, è importante che i componenti compilati precedentemente e ancora aggiornati non vengano ricompilati. Se vengono ricompilate tutte le destinazioni, ogni compilazione impiegherà molto tempo. Per abilitare le compilazioni incrementali, in cui vengono compilate solo le destinazioni che non sono state compilate precedentemente o le destinazioni non aggiornate, [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) può confrontare i timestamp dei file di input con i timestamp dei file di output e stabilire se ignorare, compilare o ricompilare parzialmente una destinazione. Per questa operazione di confronto, è necessario un mapping uno a uno tra input e output. È possibile usare le trasformazioni per consentire alle destinazioni di identificare tale mapping diretto. Per altre informazioni sulle trasformazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md).
@@ -61,7 +61,6 @@ Nell'esempio seguente viene usato un progetto che compila file della Guida per u
 - `GenerateContentFiles`: converte file *txt* in file *content*.
 
 - `BuildHelp`: combina i file *content* e i file di metadati XML per compilare il file *help* finale.
-
 
 Il progetto usa trasformazioni per creare un mapping uno a uno tra input e output nell'attività `GenerateContentFiles`. Per altre informazioni, vedere [Trasformazioni](../msbuild/msbuild-transforms.md). L'elemento `Output` è impostato per usare automaticamente gli output dall'attività `GenerateContentFiles` come input per l'attività `BuildHelp`.
 

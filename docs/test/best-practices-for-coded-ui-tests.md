@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822976"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedure consigliate per i test codificati dell'interfaccia utente
 
@@ -26,29 +26,29 @@ Questo argomento illustra alcuni suggerimenti per lo sviluppo di test codificati
 
 Usare le linee guida seguenti per creare un test codificato dell'interfaccia utente flessibile.
 
--   Quando è possibile, usare sempre il **Generatore di test codificati dell'interfaccia utente**.
+- Quando è possibile, usare sempre il **Generatore di test codificati dell'interfaccia utente**.
 
--   Non modificare direttamente il file *UIMap.Designer.cs*. Se si modifica il file, le modifiche apportate verranno sovrascritte.
+- Non modificare direttamente il file *UIMap.Designer.cs*. Se si modifica il file, le modifiche apportate verranno sovrascritte.
 
--   Creare il test come sequenza di metodi registrati. Per altre informazioni sulla registrazione di un metodo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
+- Creare il test come sequenza di metodi registrati. Per altre informazioni sulla registrazione di un metodo, vedere [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md).
 
--   Ogni metodo registrato dovrebbe agire su una sola pagina, form o finestra di dialogo. Creare un nuovo metodo di test per ogni nuova pagina, form o finestra di dialogo.
+- Ogni metodo registrato dovrebbe agire su una sola pagina, form o finestra di dialogo. Creare un nuovo metodo di test per ogni nuova pagina, form o finestra di dialogo.
 
--   Quando si crea un metodo, usare un nome di metodo significativo invece del nome predefinito. Un nome significativo consente di identificare lo scopo del metodo.
+- Quando si crea un metodo, usare un nome di metodo significativo invece del nome predefinito. Un nome significativo consente di identificare lo scopo del metodo.
 
--   Quando è possibile, limitare ogni metodo registrato a meno di 10 azioni. Questo approccio modulare semplifica la sostituzione di un metodo se viene modificata l'interfaccia utente.
+- Quando è possibile, limitare ogni metodo registrato a meno di 10 azioni. Questo approccio modulare semplifica la sostituzione di un metodo se viene modificata l'interfaccia utente.
 
--   Creare ogni asserzione usando il **Generatore di test codificati dell'interfaccia utente**, che aggiunge automaticamente un metodo di asserzione al file *UIMap.Designer.cs*.
+- Creare ogni asserzione usando il **Generatore di test codificati dell'interfaccia utente**, che aggiunge automaticamente un metodo di asserzione al file *UIMap.Designer.cs*.
 
--   Se l'interfaccia utente viene modificata, registrare nuovamente i metodi di test o i metodi di asserzione oppure registrare nuovamente le sezioni interessate di un metodo di test esistente.
+- Se l'interfaccia utente viene modificata, registrare nuovamente i metodi di test o i metodi di asserzione oppure registrare nuovamente le sezioni interessate di un metodo di test esistente.
 
--   Creare un file <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> separato per ogni modulo nell'applicazione sottoposta a test. Per altre informazioni, vedere [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Creare un file <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> separato per ogni modulo nell'applicazione sottoposta a test. Per altre informazioni, vedere [Test di un'applicazione di grandi dimensioni con più mappe dell'interfaccia utente](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   Nell'applicazione sottoposta a test usare nomi significativi quando si creano controlli dell'interfaccia utente. Usare nomi significativi consente una maggiore chiarezza e facilità di utilizzo per i nomi dei controlli generati automaticamente.
+- Nell'applicazione sottoposta a test usare nomi significativi quando si creano controlli dell'interfaccia utente. Usare nomi significativi consente una maggiore chiarezza e facilità di utilizzo per i nomi dei controlli generati automaticamente.
 
--   Se si creano asserzioni scrivendo codice con l'API, creare un metodo per ogni asserzione nella parte della classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> che si trova nel file *UIMap.cs*. Per eseguire l'asserzione, chiamare questo metodo dal metodo di test.
+- Se si creano asserzioni scrivendo codice con l'API, creare un metodo per ogni asserzione nella parte della classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> che si trova nel file *UIMap.cs*. Per eseguire l'asserzione, chiamare questo metodo dal metodo di test.
 
--   Se si sta scrivendo codice direttamente con l'API, usare il più possibile nel codice le proprietà e i metodi delle classi generate nel file *UIMap.Designer.cs*. Queste classi renderanno il lavoro più semplice e più affidabile e consentiranno di aumentare la produttività.
+- Se si sta scrivendo codice direttamente con l'API, usare il più possibile nel codice le proprietà e i metodi delle classi generate nel file *UIMap.Designer.cs*. Queste classi renderanno il lavoro più semplice e più affidabile e consentiranno di aumentare la produttività.
 
 I test codificati dell'interfaccia utente si adattano automaticamente a diverse modifiche nell'interfaccia utente. Se, ad esempio, un elemento dell'interfaccia utente ha cambiato posizione o colore, nella maggior parte dei casi il test codificato dell'interfaccia utente troverà ugualmente l'elemento corretto.
 
@@ -58,15 +58,15 @@ Durante l'esecuzione di un test, il framework di test individua i controlli dell
 
 Le interfacce utente vengono modificate spesso durante lo sviluppo. Di seguito sono indicati alcuni modi per ridurre l'effetto di queste modifiche:
 
--   Trovare il metodo registrato che fa riferimento a questo controllo e usare il **Generatore di test codificati dell'interfaccia utente** per registrare di nuovo le azioni per il metodo. È possibile usare lo stesso nome per il metodo per sovrascrivere le azioni esistenti.
+- Trovare il metodo registrato che fa riferimento a questo controllo e usare il **Generatore di test codificati dell'interfaccia utente** per registrare di nuovo le azioni per il metodo. È possibile usare lo stesso nome per il metodo per sovrascrivere le azioni esistenti.
 
--   Se un controllo dispone di un'asserzione che non è più valida:
+- Se un controllo dispone di un'asserzione che non è più valida:
 
-    -   Eliminare il metodo che contiene l'asserzione.
+    - Eliminare il metodo che contiene l'asserzione.
 
-    -   Rimuovere la chiamata a questo metodo dal metodo di test.
+    - Rimuovere la chiamata a questo metodo dal metodo di test.
 
-    -   Aggiungere una nuova asserzione trascinando il pulsante del selettore di precisione sul controllo dell'interfaccia utente, aprire la mappa dell'interfaccia utente e aggiungere la nuova asserzione.
+    - Aggiungere una nuova asserzione trascinando il pulsante del selettore di precisione sul controllo dell'interfaccia utente, aprire la mappa dell'interfaccia utente e aggiungere la nuova asserzione.
 
 Per altre informazioni su come registrare i test codificati dell'interfaccia utente, vedere [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md).
 

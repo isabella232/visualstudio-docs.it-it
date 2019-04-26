@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794427"
 ---
 # <a name="performance-report-views"></a>Visualizzazioni dei report di prestazioni
 Questa sezione fornisce informazioni di riferimento relative ai rapporti e alle visualizzazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le visualizzazioni dei file di dati di profilatura sono riportate nell'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. I rapporti vengono generati tramite lo strumento da riga di comando [VSPerfReport](../profiling/vsperfreport.md).

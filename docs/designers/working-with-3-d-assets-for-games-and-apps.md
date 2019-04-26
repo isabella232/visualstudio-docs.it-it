@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844061"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
@@ -49,7 +49,7 @@ Questo documento descrive gli strumenti di Visual Studio che è possibile usare 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Descrizione|
+|Titolo|Description|
 |-----------|-----------------|
 |[Uso di trame e immagini](../designers/working-with-textures-and-images.md)|Viene descritto come usare Visual Studio per lavorare con immagini e trame.|
 |[Uso di modelli 3D](../designers/working-with-3-d-models.md)|Viene descritto come usare Visual Studio per lavorare con i modelli 3D.|

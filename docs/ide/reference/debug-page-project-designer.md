@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968182"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 

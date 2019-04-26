@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965675"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Analisi utilizzo software di Visual Studio
 
@@ -30,7 +30,7 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
     ![Selezionare un pulsante di opzione per indicare la preferenza di partecipazione](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Vedere anche
 

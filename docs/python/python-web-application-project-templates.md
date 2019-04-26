@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954819"
 ---
 # <a name="python-web-application-project-templates"></a>Modelli di progetto applicazione Web di Python
 
@@ -98,7 +98,7 @@ Le proprietà nei gruppi **Comando esegui server** e **Comando debug server** (q
 - **Ambiente**: elenco delimitato da caratteri di nuova riga di coppie \<NAME>=\<VALUE> che specificano le variabili di ambiente. Queste variabili vengono impostate dopo tutte le proprietà che possono comportare la modifica dell'ambiente, ad esempio il numero di porta e i percorsi di ricerca, di conseguenza possono sovrascrivere tali valori.
 
 Per specificare qualsiasi proprietà di progetto o variabile di ambiente, è possibile usare la sintassi MSBuild, ad esempio: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)` e `$(SERVER_PORT)` sono variabili di ambiente normali che vengono impostate tramite le proprietà **URL di avvio** e **Numero di porta** automaticamente oppure tramite la proprietà **Ambiente**.
+`$(StartupFile)` è il percorso relativo del file di avvio, mentre `{StartupModule}` è il nome importabile del file di avvio. `$(SERVER_HOST)` e `$(SERVER_PORT)` sono variabili di ambiente normale che vengono impostate tramite le proprietà **URL di avvio** e **Numero di porta** automaticamente oppure tramite la proprietà **Ambiente**.
 
 > [!Note]
 > I valori in **Comando esegui server** vengono usati con il comando **Debug** > **Avvia server** oppure quando si preme **CTRL**+**F5**. I valori nel gruppo **Comando debug server** vengono usati con il comando **Debug** > **Avvia il server di debug** oppure quando si preme **F5**.
@@ -113,7 +113,7 @@ Il modello **Progetto Web Bottle** include codice boilerplate che esegue la conf
 
 - Gruppo **Comando debug server**:
   - **Comando**: `bottle` (modulo)
-  - **Argomenti** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argomenti**: `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L'opzione `--reload` è sconsigliata quando si usa Visual Studio per il debug.
 
@@ -147,5 +147,5 @@ Il comando **Converti in progetto servizio cloud di Microsoft Azure** (immagine 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Informazioni di riferimento sui modelli di elemento Python](python-item-templates.md)
+- [Riferimento ai modelli di elemento](python-item-templates.md)
 - [Eseguire la pubblicazione nel servizio app di Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)

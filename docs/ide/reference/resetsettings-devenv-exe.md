@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ebc0e3faf26351a31c2f6b75669d50f1e3c2f14
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945529"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -55,7 +55,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
   | **Sviluppo Web** | `Web` |
   | **Sviluppo Web (solo codice)** | `WebCode` |
 
-## <a name="remarks"></a>Note
+## <a name="remarks"></a>Osservazioni
 
 Se non viene specificato alcun *SettingsFile*, l'IDE viene aperto usando le impostazioni esistenti.
 

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933478"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -149,9 +149,7 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
     - Http POST CRUD
     - Trigger HTTP con parametri
 
-
 - **Timer**: consente di eseguire attività di pulizia o altre attività batch in una pianificazione predefinita. Questo modello supporta due campi: un nome e una pianificazione, ovvero un'espressione CRON a sei campi. Per altre informazioni, vedere [l'articolo di Funzioni di Azure con timer](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Trigger Queue**: funzione che risponde ai messaggi quando raggiungono la coda di Archiviazione di Azure. Oltre al nome della funzione, questo modello accetta una proprietà **Path** (nome della coda dalla quale verrà letto il messaggio) e una proprietà **Connection** dell'account di archiviazione (nome dell'impostazione dell'app che contiene la stringa di connessione dell'account di archiviazione). Per altre informazioni, vedere l'[articolo di Funzioni di Azure sull'archiviazione code](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 
