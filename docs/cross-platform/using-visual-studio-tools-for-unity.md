@@ -183,7 +183,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 
 1. Aggiungere il progetto di DLL esistente alla soluzione di Visual Studio generata da Visual Studio Tools per Unity. Può capitare meno frequentemente di avviare un nuovo progetto di DLL gestita per contenere i componenti di codice nel progetto Unity. In questo caso, è possibile aggiungere un nuovo progetto di DLL gestita alla soluzione Visual Studio. Per altre informazioni sull'aggiunta di un progetto nuovo o esistente a una soluzione, vedere [Procedura: Aggiungere progetti a una soluzione](https://msdn.microsoft.com/library/ff460187.aspx).
 
-   ![Aggiungere il progetto esistente per una DLL alla soluzione.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
+   ![Aggiungere il progetto esistente per una DLL alla soluzione.] (../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
    In entrambi i casi, Visual Studio Tools per Unity mantiene il riferimento al progetto, anche se deve rigenerare nuovamente i file di progetto e soluzione, di conseguenza è necessario eseguire questi passaggi una sola volta.
 
@@ -192,7 +192,7 @@ Lo scenario descritto in questo articolo presuppone che l'utente sia proprietari
 > [!NOTE]
 > Quanto segue è richiesto solo se si usa il runtime legacy di Unity. Se si usa il nuovo runtime di Unity, non è più necessario usare tali profili dedicati per la versione 3.5. Usare un profilo di .NET 4.x compatibile con la versione di Unity in uso.
 
-   ![Impostare il framework di destinazione della DLL sul framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Impostare il framework di destinazione della DLL sul framework Unity.] (../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copiare la DLL nella cartella Assets del progetto Unity. In Unity gli asset sono file che vengono inseriti nel pacchetto dell'app Unity e distribuiti con questa per consentirne il caricamento al runtime. Dal momento che le DLL vengono collegate al runtime, devono essere distribuite come asset. Per distribuire le DLL come asset, l'editor di Unity richiede che vengano inserite nella cartella Assets del progetto Unity. Questa operazione può essere eseguita nei due modi seguenti:
 
