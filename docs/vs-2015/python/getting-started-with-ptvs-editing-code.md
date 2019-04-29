@@ -1,5 +1,5 @@
 ---
-title: 'Introduzione a PTVS: modifica del codice | Microsoft Docs'
+title: 'Introduzione a PTVS: Modifica del codice | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550912"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Introduzione a PTVS: Modifica del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ from math import sin
   
 ```  
   
- Durante la scrittura del codice, se si usa un identificatore che non è associato ma è presente nelle librerie, PTVS visualizza un popup con una correzione rapida per aggiungere l'istruzione di importazione appropriata necessaria.  Ad esempio, se è stato digitato `cos`, verrà visualizzato **Importa da math** offerto.  
+ Durante la scrittura del codice, se si usa un identificatore che non è associato ma è presente nelle librerie, PTVS visualizza un popup con una correzione rapida per aggiungere l'istruzione di importazione appropriata necessaria.  Se ad esempio è stato digitato `cos`, viene visualizzato **import from math**.  
   
- È possibile usare un frammento di codice per generare il codice.  Scegliere IntelliSense dal menu Modifica, quindi Inserisci frammento di codice.  Ora scegliere Python e quindi def.  Chiamare la funzione `make_dot_string` e aggiungere un parametro `x`.  È ora possibile aggiungere le asserzioni al file per lo sviluppo basato su test e si noterà che PTVS è già in grado di visualizzare la nuova funzione negli elenchi di completamento.  
+ È possibile usare un frammento di codice per generare il codice.  Scegliere IntelliSense dal menu Modifica, quindi Inserisci frammento di codice.  Scegliere Python e quindi def.  Chiamare la funzione `make_dot_string` e aggiungere un parametro `x`.  È ora possibile aggiungere le asserzioni al file per lo sviluppo basato su test e si noterà che PTVS è già in grado di visualizzare la nuova funzione negli elenchi di completamento.  
   
 ```python  
 assert make_dot_string(90) == '          o'  
