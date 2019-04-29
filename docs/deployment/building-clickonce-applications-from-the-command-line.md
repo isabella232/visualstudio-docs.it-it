@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929163"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilare applicazioni ClickOnce dalla riga di comando
 In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], è possibile compilare progetti dalla riga di comando, anche se sono stati creati nell'ambiente di sviluppo integrato (IDE). In effetti, è possibile ricompilare un progetto creato con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] in un altro computer che dispone solo di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installato. In questo modo di riprodurre una build con un processo automatizzato, ad esempio, in una compilazione centrale lab o tramite tecniche di scripting avanzate esula dall'ambito di compilazione del progetto stesso.
@@ -33,9 +33,9 @@ In [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
  "Destinazione" è un indicatore a MSBuild su come elaborare il comando. Le destinazioni principali sono la destinazione "build" e la destinazione "pubblica". La destinazione della compilazione è equivalente alla selezione della compilazione comando (o premendo F5) nell'IDE. Se si desidera solo creare il progetto, è possibile ottenere questo risultato digitando `msbuild`. Questo comando funziona perché la destinazione della compilazione è la destinazione predefinita per tutti i progetti generati da [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Ciò significa che non è necessario in modo esplicito specificare la destinazione della compilazione. Pertanto, la digitazione `msbuild` è la stessa operazione digitando `msbuild /target:build`.
 
- Il `/target:publish` comando indica a MSBuild per richiamare la destinazione di pubblicazione. La destinazione di pubblicazione dipende dalla destinazione di compilazione. Ciò significa che l'operazione di pubblicazione è un superset dell'operazione di compilazione. Ad esempio, se è stata apportata una modifica a uno di Visual Basic o C# file di origine, l'assembly corrispondente verrà rigenerati automaticamente dall'operazione di pubblicazione.
+ Il `/target:publish` comando indica a MSBuild per richiamare la destinazione di pubblicazione. La destinazione di pubblicazione dipende dalla destinazione di compilazione. Ciò significa che l'operazione di pubblicazione è un superset dell'operazione di compilazione. Ad esempio, se si apporta una modifica a uno dei file di origine Visual Basic o c#, l'assembly corrispondente verrà rigenerato automaticamente dall'operazione di pubblicazione.
 
- Per informazioni sulla generazione di una procedura completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando lo strumento da riga di comando Mage.exe per creare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto, vedere [procedura dettagliata: distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Per informazioni sulla generazione di una procedura completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione utilizzando lo strumento da riga di comando Mage.exe per creare le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Creare e compilare un'applicazione ClickOnce di base con MSBuild
 
@@ -157,7 +157,7 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL SupportUrl, PublishURL e proprietà UpdateURL
  Nella tabella seguente mostra le quattro opzioni di URL per la distribuzione ClickOnce.
 
-|Opzione URL|Description|
+|Opzione URL|Descrizione|
 |----------------|-----------------|
 |`PublishURL`|Obbligatorio se si pubblica l'applicazione ClickOnce per un sito Web.|
 |`InstallURL`|Facoltativo. Impostare questa opzione di URL, se il sito dell'installazione è diverso da quella di `PublishURL`. Ad esempio, è possibile impostare il `PublishURL` a un percorso FTP e impostare il `InstallURL` a un URL Web.|
