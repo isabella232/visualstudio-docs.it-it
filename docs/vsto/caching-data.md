@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939415"
 ---
 # <a name="cache-data"></a>Dati della cache
   È possibile memorizzare nella cache di oggetti dati in una personalizzazione a livello di documento in modo che i dati siano accessibili in modalità offline o senza l'apertura di Microsoft Office Word o Microsoft Office Excel. Per memorizzare nella cache un oggetto, l'oggetto deve avere un tipo di dati che soddisfano determinati requisiti. Molti tipi di dati comune in .NET Framework soddisfano questi requisiti, incluse <xref:System.String>, <xref:System.Data.DataSet>, e <xref:System.Data.DataTable>.

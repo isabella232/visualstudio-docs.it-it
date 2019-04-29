@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895599"
 ---
 # <a name="mip-map-generation-variant"></a>Variante di generazione di mappe MIP
 Abilita le mappe MIP nelle trame che non corrispondono a destinazioni di rendering.
@@ -25,7 +25,7 @@ Per le scene 3D, è consigliabile usare le mappe MIP quando è disponibile memor
 
 Se questa variante mostra un aumento delle prestazioni significativo, indica che si stanno usando trame senza abilitare le mappe MIP e pertanto senza sfruttare al massimo la cache delle trame.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 La generazione di mappe MIP viene forzata a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, generazione di mappe mip viene forzata quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una risorsa shader che è:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.

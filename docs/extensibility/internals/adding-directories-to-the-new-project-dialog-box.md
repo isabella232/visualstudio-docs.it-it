@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d8e68413795b7004542ee312dcb27492e55e7f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910782"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Aggiungere directory alla finestra di dialogo Nuovo progetto
 Quando si creano nuovi tipi di progetto, è anche possibile registrare una nuova directory nel **nuovo progetto** finestra di dialogo per la visualizzazione per l'uso come modelli. Esempio di codice seguente illustra come registrare una nuova directory, noto anche come un nodo. Nell'esempio esposti dal pacchetto VSPackage, i modelli *CLSID_Package*, vengono registrati. Di conseguenza, il lato sinistro del **nuovo progetto** finestra di dialogo offre il nodo aggiunto, con un nome di base di *Folder_Label_ResID* risorse. Questa risorsa verrà caricata della DLL satellite di VSPackage.

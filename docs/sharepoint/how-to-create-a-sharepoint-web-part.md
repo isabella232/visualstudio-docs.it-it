@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966809"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Procedura: Creare una web part di SharePoint
   È possibile creare e personalizzare una web part aggiungendo un **Web Part** voce a qualsiasi progetto SharePoint e quindi modificando il file di codice per la web part o tramite una finestra di progettazione. Per altre informazioni, vedere [Procedura: Creare una web part di SharePoint usando una finestra di progettazione](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).

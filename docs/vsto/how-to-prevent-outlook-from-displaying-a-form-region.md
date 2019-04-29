@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967657"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Procedura: Impedire la visualizzazione di un'area del modulo di Outlook
   Potrebbero esserci situazioni in cui si preferisce non Microsoft Office Outlook per visualizzare un'area del modulo per un particolare elemento. Ad esempio, se un elemento di contatto non contiene un indirizzo aziendale, è possibile impedire un'area del modulo che mostra la posizione dell'azienda in una mappa che venga visualizzato.

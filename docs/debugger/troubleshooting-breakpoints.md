@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929657"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Risolvere i punti di interruzione nel Debugger di Visual Studio
 
@@ -35,7 +35,7 @@ Andare alla **moduli** finestra (**Debug** > **Windows** > **moduli**) e control
 
 * Se non viene caricato un modulo, verificare quanto segue per individuare la causa:
   * Confermare che si esegue il debug del processo appropriato.
-  * Verificare che si esegue il debug del tipo appropriato di codice. È possibile scoprire che tipo di debugger è configurato per eseguire il debug nel codice il **processi** finestra (**Debug** > **Windows**  >  **Processi**). Ad esempio, se si sta tentando di eseguire il debug C# del codice, verificare che il debugger sia configurato per il tipo appropriato di .NET Framework (ad esempio, gestito (v4\*) e gestito (v2\*/v3\*) e gestito (CoreCLR)) .
+  * Verificare che si esegue il debug del tipo appropriato di codice. È possibile scoprire che tipo di debugger è configurato per eseguire il debug nel codice il **processi** finestra (**Debug** > **Windows**  >  **Processi**). Ad esempio, se si sta provando a eseguire il debug di codice c#, verificare che il debugger sia configurato per il tipo appropriato di .NET Framework (ad esempio, gestito (v4\*) e gestito (v2\*/v3\*) e gestito (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… il codice sorgente corrente è diverso da quello della versione compilata in..."
 
@@ -53,7 +53,7 @@ In questa sezione fornisce informazioni per risolvere i problemi quando il debug
 
 Ecco alcuni aspetti da controllare:
 1. Se il codice viene eseguito nel processo più di una o più computer, assicurarsi che il debug viene eseguito il giusto processo o computer.
-2. Verificare che il codice sia in esecuzione. Per verificare che il codice sia in esecuzione, aggiungere una chiamata a `System.Diagnostics.Debugger.Break` (C#/VB) o `__debugbreak` (C++) per la riga di codice in cui si sta tentando di impostare il punto di interruzione e quindi ricompilare il progetto.
+2. Verificare che il codice sia in esecuzione. Per verificare che il codice sia in esecuzione, aggiungere una chiamata a `System.Diagnostics.Debugger.Break` (C# /VB) o `__debugbreak` (C++) per la riga di codice in cui si sta tentando di impostare il punto di interruzione e quindi ricompilare il progetto.
 3. Se si esegue il debug del codice ottimizzato, assicurarsi che la funzione in cui è impostato il punto di interruzione non è in corso resa inline in un'altra funzione. Il `Debugger.Break` test descritto nel controllo di precedenti possono essere usati per testare anche il problema.
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Un punto di interruzione è stato eliminato ma si continua a raggiungerlo quando si avvia nuovamente il debug

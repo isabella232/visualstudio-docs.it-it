@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967546"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Differenze tra modalità sandbox e soluzioni farm
   Quando si compila una soluzione di SharePoint, viene distribuito nel server SharePoint e un debugger viene collegato per eseguirne il debug. Il processo usato per il debug della soluzione dipende dall'impostazione della proprietà soluzione creata mediante sandbox: soluzione creata mediante sandbox o una soluzione farm.

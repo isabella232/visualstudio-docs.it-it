@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b1cb65a2c1eec8df194136bb5a4bffb358696e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977276"
 ---
 # <a name="collection-activity-designers"></a>ActivityDesigner Raccolta
 Gli ActivityDesigner Collection vengono usati per creare e configurare le attività per la gestione di raccolte. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

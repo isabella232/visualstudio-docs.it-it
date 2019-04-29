@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961605"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedura: A livello di codice usare le finestre di dialogo di Word in modalità nascosta
   È possibile eseguire operazioni complesse con una chiamata al metodo richiamando le finestre di dialogo predefinite in Microsoft Office Word senza che vengano visualizzate all'utente. Tale scopo, è possibile utilizzare il <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> metodo per il <xref:Microsoft.Office.Interop.Word.Dialog> oggetti senza chiamare il <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> (metodo).

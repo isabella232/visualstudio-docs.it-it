@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 118096d536b9a4db50568ab138cd4695e1f3dcbe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929796"
 ---
 # <a name="spy-help"></a>Guida di Spy++
 La documentazione per l'utilità di Spy + + include due gruppi di argomenti generali su con Spy + + e sulle visualizzazioni di Spy + +. Tali elenchi sono seguiti dal riferimento Spy + +, che fornisce ulteriori dettagli su ogni casella di finestra di dialogo e comandi di menu disponibili.

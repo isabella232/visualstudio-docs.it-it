@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904787"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Finestra di output, Debug, finestra di dialogo Opzioni
 È possibile specificare quali tipi di informazioni di debug vengono visualizzati nella finestra **Output**. Per visualizzare queste opzioni aprire il menu **Strumenti**, fare clic su **Opzioni**, espandere il nodo **Debug** e fare clic su **Finestra di output**.
@@ -31,7 +31,7 @@ ms.locfileid: "56716259"
 
 **Impostazioni di traccia WPF** questa categoria include i controlli che determinano il livello dei messaggi di traccia WPF visualizzati nel **Output** finestra. Per ogni tipo di messaggio è possibile specificare se venga o meno visualizzato; si può inoltre specificare un livello che varia da **Critico** a **Tutto**.
 
-Per altre informazioni, vedere [procedura: visualizzare informazioni di traccia WPF](../debugger/how-to-display-wpf-trace-information.md).
+Per altre informazioni, vedere [Procedura: Visualizzare le informazioni di traccia WPF](../debugger/how-to-display-wpf-trace-information.md).
 
 Se si vuole ripristinare le impostazioni predefinite, è possibile farlo tramite **degli strumenti** > **Importa / Esporta impostazioni** > **Reimposta tutte le impostazioni**. Se vuoi solo ripristinare un subset di impostazioni, salvare le impostazioni nel **importazione / esportazione guidata delle impostazioni** prima di apportare le modifiche che si vuole testare, quindi importare le impostazioni salvate in un secondo momento.
 

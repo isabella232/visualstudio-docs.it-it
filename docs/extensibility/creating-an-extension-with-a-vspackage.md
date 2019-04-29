@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891032"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Creare un'estensione con un pacchetto VSPackage
 
@@ -27,7 +27,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
 
 1. Creare un progetto VSIX denominato **FirstPackage**. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** dialogo eseguendo una ricerca per "vsix".
 
-2. Quando si apre il progetto, aggiungere un modello di elemento di pacchetto di Visual Studio denominato **FirstPackage**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual C#** > **Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *FirstPackage.cs*.
+2. Quando si apre il progetto, aggiungere un modello di elemento di pacchetto di Visual Studio denominato **FirstPackage**. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Add** > **nuovo elemento**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **pacchetto di Visual Studio**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *FirstPackage.cs*.
 
 3. Compilare il progetto e avviare il debug.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926024"
 ---
 # <a name="breakpoint-related-methods"></a>Metodi correlati al punto di interruzione
 Un motore di debug (DE) deve supportare l'impostazione di punti di interruzione. Debug in Visual Studio supporta i seguenti tipi di punti di interruzione:

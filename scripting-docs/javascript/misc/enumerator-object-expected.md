@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 06005f635e5173e903cfba6a952750d64181d0bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946342"
 ---
 # <a name="enumerator-object-expected"></a>Previsto oggetto Enumerator
 Si è provato a richiamare il **metodo Enumerator.prototype.atEnd, Enumerator.prototype.item, Enumerator.prototype.moveFirst,** oppure **Enumerator.prototype.moveNext** metodo in un oggetto di un tipo diverso rispetto a `Enumerator`. L'oggetto di questo tipo di chiamata deve essere di tipo `Enumerator`. Ecco un esempio di codice che causa l'interruzione di questa regola:  

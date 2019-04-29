@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831642"
 ---
 # <a name="profilereventmask-enumeration"></a>Enumerazione PROFILER_EVENT_MASK
 Indica i tipi di eventi che devono essere profilati.  
@@ -42,7 +42,7 @@ typedef enum {
   
 ## <a name="members"></a>Membri  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Funzioni di profili che sono definite nello script scritto dall'utente e codice dinamico.|  
 |PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Funzioni native profili definiti dal motore di script.|  

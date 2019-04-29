@@ -9,11 +9,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 8292e22bac6063a36286930584e1d7c227913511
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949694"
 ---
 # <a name="finalstate-activity-designer"></a>ActivityDesigner FinalState
 
@@ -21,7 +21,7 @@ La finestra di progettazione di <xref:System.Activities.Core.Presentation.FinalS
 
 ## <a name="using-the-finalstate-activity-designer"></a>Uso di ActivityDesigner FinalState
 
-Il **FinalState** designer viene utilizzato per creare un <xref:System.Activities.Statements.State> preconfigurato come stato finale in una macchina a stati. Oggetto <xref:System.Activities.Statements.State> che viene creato utilizzando il <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner ha relativo <xref:System.Activities.Statements.State.IsFinal%2A> proprietà impostata su **true**, non ha alcun <xref:System.Activities.Statements.State.Exit%2A> attività e Nessuna transizione che abbia origine da quest'ultimo. Usare la <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner di aggiungere un <xref:System.Activities.Statements.State> attività preconfigurata come stato finale in una macchina a stati, trascinare il **FinalState** ActivityDesigner dal **macchina a stati**sezione il **casella degli strumenti** e rilasciarlo nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione delle transizioni, vedere [transizione](../workflow-designer/transition-activity-designer.md).
+Il **FinalState** designer viene utilizzato per creare un <xref:System.Activities.Statements.State> preconfigurato come stato finale in una macchina a stati. Oggetto <xref:System.Activities.Statements.State> che viene creato utilizzando il <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner ha relativo <xref:System.Activities.Statements.State.IsFinal%2A> proprietà impostata su **true**, non ha alcun <xref:System.Activities.Statements.State.Exit%2A> attività e Nessuna transizione che abbia origine da quest'ultimo. Usare la <xref:System.Activities.Core.Presentation.FinalState> ActivityDesigner di aggiungere un <xref:System.Activities.Statements.State> attività preconfigurata come stato finale in una macchina a stati, trascinare il **FinalState** ActivityDesigner dal **macchina a stati**sezione il **casella degli strumenti** e rilasciarlo nella finestra di progettazione del flusso di lavoro. Un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState> può essere rilasciato in <xref:System.Activities.Statements.StateMachine> e le transizioni possono essere aggiunte successivamente, o una transizione può essere creata quando viene rilasciato un ActivityDesigner di <xref:System.Activities.Core.Presentation.FinalState>. Per altre informazioni sulla creazione delle transizioni, vedere [transizione](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Proprietà dell'attività di stato in Progettazione flussi di lavoro 
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 061a86ee301378bc8b456d370eddd19d2f91bbb6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966744"
 ---
 # <a name="how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions"></a>Procedura: Creare pacchetti di funzionalità personalizzate le regole di convalida per le soluzioni SharePoint
   È possibile creare le regole di convalida personalizzata per verificare il pacchetto della soluzione generato da Visual Studio. È possibile eseguire la convalida completa in un'intera funzione o un pacchetto selezionando **Validate** dal menu di scelta rapida di un pacchetto o una funzionalità nel **PackagingExplorer**. Quando si aggiungono nuovi elementi di progetto SharePoint o le funzionalità al progetto per determinare se il pacchetto o la funzionalità sarà in uno stato valido, viene eseguita la convalida parziale.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966900"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedura: Aggiungere e rimuovere elementi alle funzionalità SharePoint
   Quando si crea una soluzione di SharePoint, Visual Studio aggiunge gli elementi di progetto SharePoint predefiniti per le funzionalità. Prima della distribuzione, è possibile aggiungere e rimuovere gli elementi di progetto SharePoint per modificare la funzionalità di SharePoint.

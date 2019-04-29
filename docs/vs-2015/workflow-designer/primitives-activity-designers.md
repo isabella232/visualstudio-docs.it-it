@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ed26f1522913c0a8b395a0c058f73f66843eb1df
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "59001158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971277"
 ---
 # <a name="primitives-activity-designers"></a>ActivityDesigner Primitive
 Gli ActivityDesigner primitivi consentono di creare e configurare diverse attività nello spazio dei nomi <xref:System.Activities.Statements>, quali Assign e Delay. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e delle finestre di progettazione dei modelli di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

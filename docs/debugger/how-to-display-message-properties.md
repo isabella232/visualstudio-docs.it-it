@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: visualizzare le proprietà del messaggio | Microsoft Docs'
+title: 'Procedura: Visualizzare le proprietà del messaggio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fddccbd116f65cb22cd0e12b8435f8229298f504
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894313"
 ---
-# <a name="how-to-display-message-properties"></a>Procedura: visualizzare le proprietà del messaggio
+# <a name="how-to-display-message-properties"></a>Procedura: Visualizzare le proprietà del messaggio
 Per altre informazioni su un messaggio elencato nella [visualizzazione messaggi](../debugger/messages-view.md), utilizzare il [finestra di dialogo Proprietà messaggio](../debugger/message-properties-dialog-box.md).
 
 ### <a name="to-open-a-message-properties-dialog-box"></a>Per aprire una finestra di dialogo proprietà del messaggio

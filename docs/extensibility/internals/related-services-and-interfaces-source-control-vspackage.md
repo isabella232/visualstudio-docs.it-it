@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908555"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfacce e servizi correlati (VSPackage di controllo del codice sorgente)
 In questa sezione elenca tutte le interfacce correlate al pacchetto VSPackage in controllo di origine al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Il controllo del codice sorgente pacchetto VSPackage implementa alcune di queste interfacce e usato da altri utenti per eseguire attività di controllo di origine.

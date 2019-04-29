@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cc67cc9e50c73e5ab3c8579be8833648a01079c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926884"
 ---
 # <a name="commandname-element"></a>Elemento CommandName
 Il `CommandName` elemento specifica il testo visualizzato nella categoria della tastiera nel **opzioni** della finestra di dialogo e nel **comandi** nell'elenco il **Personalizza** finestra di dialogo casella.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 28f5a7ffe202e7e02b06e676501ab508ee1a4ab2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955553"
 ---
-# <a name="schema-cache"></a>Cache degli schemi
+# <a name="schema-cache"></a>Cache dello schema
 
 L'editor XML fornisce una cache degli schemi situata nella *%VSInstallDir%\Xml\Schemas.* directory. La cache degli schemi è globale per tutti gli utenti nel computer e include gli schemi XML standard usati per la convalida del documento XML e IntelliSense.
 

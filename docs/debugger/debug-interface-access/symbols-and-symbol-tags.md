@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854704"
 ---
 # <a name="symbols-and-symbol-tags"></a>Simboli e relativi tag
 Informazioni di debug su un programma compilato viene archiviate nel file di database (con estensione pdb) di programma come simboli che sono accessibili tramite le API di SDK eseguire il Debug Interface Access (DIA). Tutti i simboli sono una [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) e una [Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) proprietà. Il `symTag` proprietà indica il tipo di simbolo in base il [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumerazione. Il `symIndexId` proprietà è un `DWORD` valore che contiene l'identificatore univoco per ogni istanza di un simbolo.

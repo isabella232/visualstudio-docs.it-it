@@ -1,21 +1,26 @@
 ---
 title: Opzioni per il debug dei servizi cloud di Azure | Microsoft Docs
 description: Debug dei servizi cloud di Azure
-author: mikejo5000
-manager: jillfra
+services: visual-studio-online
+documentationcenter: n/a
+author: mikejo
+manager: douge
+editor: ''
 ms.assetid: 80755da7-8350-4f5c-97ce-2962beabb36d
-ms.topic: conceptual
-ms.workload: azure-vs
-ms.date: 03/18/2017
-ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
+ms.service: visual-studio-online
+ms.devlang: multiple
+ms.topic: article
+ms.tgt_pltfrm: multiple
+ms.workload: na
+origin.date: 03/18/2017
+ms.date: 05/11/2018
+ms.author: v-junlch
 ms.openlocfilehash: 3b489b97551e5b5522cb58868b34dee4d9e5fb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963650"
 ---
 # <a name="learn-the-various-ways-to-debug-an-azure-cloud-service"></a>Informazioni sui vari modi per eseguire il debug di un servizio cloud di Azure
 Questo articolo include collegamenti ai vari modi per eseguire il debug di un servizio cloud di Azure. 
@@ -31,3 +36,5 @@ Se si usa Visual Studio Enterprise per scrivere ruoli destinati a .NET Framework
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Debug di un servizio cloud di Azure o di una macchina virtuale in Visual Studio](./vs-azure-tools-debug-cloud-services-virtual-machines.md): informazioni dettagliate su come eseguire il debug di servizi cloud di Azure.
+
+<!-- Update_Description: update metedata properties -->

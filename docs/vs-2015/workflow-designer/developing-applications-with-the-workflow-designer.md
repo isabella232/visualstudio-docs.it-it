@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976993"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Sviluppo di applicazioni con Progettazione flussi di lavoro
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] flussi di lavoro, vedere la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

@@ -10,11 +10,11 @@ ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948182"
 ---
 # <a name="how-to-use-getglobalservice"></a>Procedura: Usare GetGlobalService
 In alcuni casi potrebbe essere necessario ottenere un servizio da una finestra degli strumenti o controllo contenitore che non è stato individuato, altrimenti è stato individuato con un provider di servizi che non conosce il servizio desiderato. Ad esempio, è possibile scrivere nel log attività all'interno di un controllo. Per altre informazioni su questi e altri scenari, vedere [come: Risolvere i problemi di servizi](../extensibility/how-to-troubleshoot-services.md).  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1c636a4178cf278c2bb0ad75f4e78b94758dda30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927489"
 ---
 # <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Firma&gt; elemento (distribuzione ClickOnce)
 Contiene le informazioni necessarie per apporre una firma digitale al manifesto della distribuzione.
@@ -33,7 +33,7 @@ Contiene le informazioni necessarie per apporre una firma digitale al manifesto 
 </Signature>
 ```
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Firma un manifesto di distribuzione utilizzando una firma protetta è facoltativa ma consigliato. Per altre informazioni sulla firma di file XML, vedere il World Wide Web Consortium raccomandazione "XML-Signature Syntax and Processing," descritta in [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).
 
  Se si desidera firmare il manifesto, è necessario specificare l'hash per tutti i file. Impossibile firmare un manifesto con i file che non è stato eseguito l'hashing, perché gli utenti non è possibile verificare il contenuto del file senza hash.

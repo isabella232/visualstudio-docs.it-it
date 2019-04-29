@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964300"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Proprietà di una definizione DSL
 Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le proprietà di definizione, ad esempio numerazione delle versioni. Vengono visualizzate le proprietà DslDefinition nelle **proprietà** finestra quando si fa clic su un'area vuota del diagramma nel *progettista del linguaggio specifico di dominio*.
@@ -28,7 +28,7 @@ Definiscono le proprietà DslDefinition *linguaggio specifico di dominio* le pro
 |Modificatore di accesso|Determina se il modificatore di accesso per la classe di dominio è pubblico o interno.|public|
 |Attributi personalizzati|Custom definiti attributi per la classe di dominio.<br /><br /> **Nota** usare il pulsante Sfoglia per aggiungere un attributo.|\<nessuno>|
 |Nome società|Il nome del nome dell'azienda corrente nel Registro di sistema.|Nome della società corrente|
-|nome|Il nome di questa classe di dominio.|Nome corrente|
+|Nome|Il nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi affiliato a questa classe di dominio.|Spazio dei nomi corrente|
 |Guid del pacchetto|Il guid per il pacchetto di Visual Studio generato per questo DSL.|\<nessuno>|
 |Pacchetto Namespace|Lo spazio dei nomi per il pacchetto di Visual Studio generato per questo DSL.|\<nessuno>|

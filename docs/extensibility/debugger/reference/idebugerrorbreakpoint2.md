@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3c557a155c68b3a45e2b96aceee8ddcfcaa1d82e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874635"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Questa interfaccia rappresenta un errore o un punto di interruzione di avviso, ad esempio un percorso non valido, non è valida o i motivi per cui il punto di interruzione in sospeso non è stato associato (codice caricato non ancora, e così via).

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949520"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: Impostare punti di interruzione in flussi di lavoro
 
-Quando si utilizza Progettazione flussi di lavoro, è possibile impostare i punti di interruzione su flussi di lavoro grafici come si farebbe nel codice Visual Basic o C#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
+Quando si utilizza Progettazione flussi di lavoro, è possibile impostare i punti di interruzione su flussi di lavoro grafici come si farebbe nel codice Visual Basic o c#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.
 
 Un punto di interruzione ha tre stati: *In sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.
 
@@ -41,4 +41,4 @@ Un punto di interruzione ha tre stati: *In sospeso*, *associato*, e *errore*. Qu
 ## <a name="see-also"></a>Vedere anche
 
 - [Debug dei flussi di lavoro mediante Progettazione flussi di lavoro](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [Procedura: Eseguire il debug di XAML con la finestra di progettazione del flusso di lavoro](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [Procedura: Eseguire il debug di XAML con Progettazione flussi di lavoro](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

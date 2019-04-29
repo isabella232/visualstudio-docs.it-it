@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3b536a17df4f54158aa6f157a0d9795cf359ddc0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900274"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Riferimenti alle API non gestite ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pubbliche API non gestite da dfshim.
@@ -44,7 +44,7 @@ ms.locfileid: "56633798"
 ### <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Se si verifica un'eccezione gestita, restituisce 0x80020009 (DISP_E_EXCEPTION).
 
-### <a name="remarks"></a>Osservazioni
+### <a name="remarks"></a>Note
  La chiamata a CleanOnlineAppCache avvierà il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] del servizio se non è già in esecuzione.
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
@@ -52,7 +52,7 @@ ms.locfileid: "56633798"
 
 ### <a name="parameters"></a>Parametri
 
-|Parametro|Description|Tipo|
+|Parametro|Descrizione|Tipo|
 |---------------|-----------------|----------|
 |`pcwzActivationUrl`|Un puntatore al `ActivationURL`.|LPCWSTR|
 |`pcwzPathToDeploymentManifest`|Un puntatore al `PathToDeploymentManifest`.|LPCWSTR|
@@ -68,7 +68,7 @@ ms.locfileid: "56633798"
 ### <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un HRESULT che rappresenta l'errore. Restituisce HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) se un buffer è troppo piccolo.
 
-### <a name="remarks"></a>Osservazioni
+### <a name="remarks"></a>Note
  I puntatori non devono essere null. `pcwzActivationUrl` e `pcwzPathToDeploymentManifest` non deve essere vuoto.
 
  È responsabilità del chiamante per pulire l'URL di attivazione. Ad esempio, aggiungendo caratteri di escape in cui sono necessari o rimuovendo la stringa di query.
@@ -80,7 +80,7 @@ ms.locfileid: "56633798"
 
 ### <a name="parameters"></a>Parametri
 
-|Parametro|Description|Tipo|
+|Parametro|Descrizione|Tipo|
 |---------------|-----------------|----------|
 |`deploymentUrl`|Un puntatore a una stringa con terminazione NULL che contiene l'URL del manifesto della distribuzione.|LPCWSTR|
 |`data`|Riservato per usi futuri. Deve essere NULL.|LPVOID|
