@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949897"
 ---
 # <a name="compensableactivity-activity-designer"></a>ActivityDesigner CompensableActivity
 
@@ -30,7 +30,7 @@ Il **CompensableActivity** ActivityDesigner viene utilizzato per creare e config
  Il **CompensableActivity** ActivityDesigner può essere trascinato dalla **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro. Si è stato possibile eliminare l'area di progettazione di attività all'interno di un <xref:System.Activities.Statements.Sequence>. La finestra di progettazione di attività di rilascio crea un <xref:System.Activities.Statements.CompensableActivity> attività predefinito <xref:System.Activities.Activity.DisplayName%2A> di CompensableActivity. Modificare il <xref:System.Activities.Activity.DisplayName%2A> valore dell'intestazione del **CompensableActivity** ActivityDesigner. Può anche essere modificato nel **DisplayName** finestra della griglia delle proprietà.
 
 ### <a name="the-compensableactivity-properties"></a>Proprietà di CompensableActivity
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CompensableActivity> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Activity%601.Result%2A> proprietà può essere modificata nella griglia delle proprietà ma le altre proprietà deve essere modificata nell'area di progettazione del flusso di lavoro.
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CompensableActivity> e ne viene descritta la modalità di uso nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Activity%601.Result%2A> proprietà può essere modificata nella griglia delle proprietà ma le altre proprietà deve essere modificata nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

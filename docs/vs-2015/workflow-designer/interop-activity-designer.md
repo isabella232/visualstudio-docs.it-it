@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952048"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 Il **Interop** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.Interop> attività.  
@@ -29,7 +29,7 @@ Il **Interop** ActivityDesigner viene utilizzato per creare e configurare un <xr
   
  Il [Migration](../workflow-designer/migration-activity-designers.md) categoria che contiene il <xref:System.Activities.Statements.Interop> attività si manifesta solo nella **della casella degli strumenti** se il progetto è destinato alla versione completa [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
   
- Per i progetti C#, è possibile modificare la destinazione del progetto per usare la versione completa [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] facendo clic con il progetto nel **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare il **Yes** pulsante nel **Modifica versione .NET Framework di destinazione** finestra di dialogo che verrà richiesto di confermare la modifica.  
+ Per i progetti c#, è possibile modificare la destinazione del progetto per usare la versione completa [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] facendo clic con il progetto nel **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare il **Yes** pulsante nel **Modifica versione .NET Framework di destinazione** finestra di dialogo che verrà richiesto di confermare la modifica.  
   
  Per i progetti Visual Basic, è possibile modificare la destinazione del progetto per usare la versione completa [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] destro del mouse sul progetto nel **Esplora soluzioni** e selezionando **proprietà**. Nel **Compile** scheda, fare clic sui **opzioni di compilazione avanzate** pulsante. Selezionare **.Net Framework 4** dalle **elenco framework di destinazione** e quindi fare clic su **OK**. Fare clic sul **Yes** pulsante nel **Modifica versione .NET Framework di destinazione** finestra di dialogo che verrà richiesto di confermare la modifica.  
   
