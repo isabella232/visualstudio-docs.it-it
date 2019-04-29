@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851263"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifica e continuazione (Visual Basic)
 Modifica e continuazione è una funzionalità per il debug di [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] che consente di apportare modifiche al codice mentre viene eseguito in modalità di interruzione. Dopo aver applicato le modifiche al codice, è possibile riprendere l'esecuzione del codice con le nuove modifiche già inserite e verificarne l'effetto.
@@ -45,7 +45,7 @@ Modifica e continuazione è una funzionalità per il debug di [!INCLUDE [vbprvb]
  Negli argomenti di questa sezione vengono fornite informazioni dettagliate sull'utilizzo di questa funzionalità e sui tipi di modifiche non consentiti.
 
 ## <a name="in-this-section"></a>In questa sezione
- [Procedura: applicare modifiche in modalità interruzione con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) viene illustrato come applicare modifiche al codice in modalità di interruzione.
+ [Procedura: Applicare modifiche in modalità interruzione con modifica e continuazione](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) viene illustrato come applicare modifiche al codice in modalità di interruzione.
 
  [Modifiche supportate al codice (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md) vengono descritti i tipi di modifiche. non possono essere eseguita nella [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] modifica e continuazione.
 

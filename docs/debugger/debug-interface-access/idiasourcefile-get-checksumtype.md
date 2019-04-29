@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832283"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera il tipo di checksum.
@@ -38,10 +38,10 @@ HRESULT get_checksumType ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il tipo di checksum è un valore che può essere mappato a un algoritmo di checksum. Ad esempio, il formato di file PDB standard in genere può avere uno dei valori seguenti:
 
-|Tipo di checksum|Etichetta CryptoAPI|Description|
+|Tipo di checksum|Etichetta CryptoAPI|Descrizione|
 |-------------------|---------------------|-----------------|
 |0|\<nessuno>|Checksum non presente.|
 |1|`CALG_MD5`|checksum generato con l'algoritmo hash MD5.|

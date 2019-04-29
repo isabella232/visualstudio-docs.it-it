@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541783"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usare params per argomenti variabili
 
@@ -36,10 +36,10 @@ ms.locfileid: "55944988"
 ## <a name="rule-description"></a>Descrizione della regola
  Il `VarArgs` convenzione di chiamata viene usato con alcune definizioni di metodi che accettano un numero variabile di parametri. Un metodo tramite la `VarArgs` convenzione di chiamata non Common Language Specification (conforme a CLS) e potrebbe non essere accessibile in linguaggi di programmazione.
 
- In C#, il `VarArgs` convenzione di chiamata viene utilizzato quando l'elenco dei parametri del metodo termina con il `__arglist` (parola chiave). Visual Basic non supporta il `VarArgs` convenzione di chiamata e Visual C++ consente l'utilizzo solo nel codice non gestito che utilizza l'ellisse `...` notation.
+ In c#, il `VarArgs` convenzione di chiamata viene utilizzato quando l'elenco dei parametri del metodo termina con il `__arglist` (parola chiave). Visual Basic non supporta il `VarArgs` convenzione di chiamata e Visual C++ consente l'utilizzo solo nel codice non gestito che utilizza l'ellisse `...` notation.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione della regola nel linguaggio C#, usare il [params](/dotnet/csharp/language-reference/keywords/params) parola chiave anziché `__arglist`.
+ Per correggere una violazione della regola nel linguaggio c#, usare il [params](/dotnet/csharp/language-reference/keywords/params) parola chiave anziché `__arglist`.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837823"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Recupera gli elementi figlio del simbolo.
@@ -53,7 +53,7 @@ HRESULT findChildren ( 
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se almeno un figlio del simbolo è stato trovato, o restituisce `S_FALSE` se nessun elemento figlio sono stato trovato; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo metodo è identico alla chiamata di [Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md) metodo con questo simbolo come primo parametro.
 
 ## <a name="see-also"></a>Vedere anche

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851428"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Finestra di dialogo Modifica e continuazione (C++)
 La modalità Modifica e continuazione non ha applicato le modifiche apportate al codice nativo. Questa condizione potrebbe essere temporanea. In alcuni casi, la modalità Modifica e continuazione non applica immediatamente le modifiche al codice nativo, ma in seguito durante la sessione di debug, ad esempio al termine della chiamata corrente alla procedura in esecuzione. Per altre informazioni, vedere [Modifica e continuazione](../debugger/edit-and-continue.md).

@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809521"
 ---
 # <a name="state-machine-activity-designers"></a>ActivityDesigner della macchina a stati
 
-Finestra di progettazione del flusso di lavoro include una serie di ActivityDesigner che è possibile usare durante la costruzione dei flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e viene fornito materiale sussidiario sulle relative modalità di utilizzo.
+Finestra di progettazione del flusso di lavoro include una serie di ActivityDesigner che è possibile usare durante la costruzione dei flussi di lavoro. Contenuto della sezione sono presentati gli ActivityDesigner forniti dal sistema che vengono usati per creare e gestire i flussi di lavoro della macchina a stati. Negli argomenti riportati di seguito vengono illustrati questi ActivityDesigner e vengono fornite indicazioni sulle relative modalità di utilizzo.
 
 ## <a name="reference"></a>Riferimenti
  <xref:System.Activities.Statements.StateMachine>

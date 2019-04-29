@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817989"
 ---
 # <a name="array-or-arguments-object-expected"></a>Previsto oggetto Array o Arguments
 Non è stato fornito una matrice come argomento. Questo errore si applica al **Function.prototype.apply** solo metodo. Se specificato, il secondo argomento della funzione deve essere un' `Array` oggetto o un **argomenti** oggetto.  

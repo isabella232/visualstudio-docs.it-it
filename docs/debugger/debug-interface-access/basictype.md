@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829732"
 ---
 # <a name="basictype"></a>BasicType
 Specifica tipo di base del simbolo.
@@ -54,13 +54,13 @@ btNoType che viene specificato alcun tipo di base.
 
 è di tipo base btVoid un `void`.
 
-è di tipo base btChar un `char` (tipo di C/C++).
+btChar tipo di base è un `char` (C /C++ tipo).
 
 tipo di base btWChar è un carattere wide (Unicode) (`WCHAR`).
 
-è di tipo base btInt `signed int` (tipo di C/C++).
+è di tipo base btInt `signed int` (C /C++ tipo).
 
-è di tipo base btUInt `unsigned int` (tipo di C/C++).
+è di tipo base btUInt `unsigned int` (C /C++ tipo).
 
 btFloat tipo di base è un numero a virgola mobile (`FLOAT`).
 
@@ -68,9 +68,9 @@ btBCD tipo di base è un valore decimale a livello di codice binario (`BCD`).
 
 tipo di base btBool è un valore booleano (`BOOL`).
 
-è di tipo base btLong un `long int` (tipo di C/C++).
+btLong tipo di base è un `long int` (C /C++ tipo).
 
-è di tipo base btULong un `unsigned long int` (tipo di C/C++).
+tipo base btULong è un' `unsigned long int` (C /C++ tipo).
 
 tipo di base btCurrency è currency.
 
@@ -86,7 +86,7 @@ btBSTR tipo di base è una stringa di base o binary (`BSTR`).
 
 è di tipo base btHresult un `HRESULT`.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono restituiti per il [Get_basetype](../../debugger/debug-interface-access/idiasymbol-get-basetype.md) (metodo).
 
 ## <a name="requirements"></a>Requisiti

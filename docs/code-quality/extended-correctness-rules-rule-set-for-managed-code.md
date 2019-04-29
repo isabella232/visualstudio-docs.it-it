@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816634"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Set di regole estese di correttezza per codice gestito
 Il set di regole regole estese di correttezza Microsoft Massimizza la logica e framework utilizzo gli errori segnalati dall'analisi del codice. Viene posta particolare attenzione su scenari specifici, ad esempio l'interoperabilità COM e applicazioni per dispositivi mobili. È consigliabile includere questa regola impostata se uno di questi scenari si applica al progetto o per individuare ulteriori problemi nel progetto.

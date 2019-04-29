@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829846"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 Viene aperto e prepara i dati di debug associati al file.exe/.dll.
@@ -48,7 +48,7 @@ pCallback
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. La tabella seguente illustra alcuni dei possibili codici di errore per questo metodo.
 
-|Valore|Description|
+|Value|Descrizione|
 |-----------|-----------------|
 |E_PDB_NOT_FOUND|Non è stato possibile aprire il file o il file di formato non è valido.|
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
@@ -57,7 +57,7 @@ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codi
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|Origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 L'intestazione di debug del file.exe/.dll denomina la posizione di debug associati dati.
 
 Questo metodo legge l'intestazione di debug e quindi Cerca e prepara i dati di debug. Lo stato di avanzamento della ricerca potrebbe, facoltativamente, essere segnalato e controllato tramite callback. Ad esempio, il [Notifydebugdir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) viene richiamato quando il `IDiaDataSource::loadDataForExe` metodo consente di individuare ed elabora una directory di debug.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c7d22e191eecb3c650744c6ddbaa815de479752a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800155"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funzioni API del plug-in del controllo del codice sorgente
 L'API dei plug-in del controllo origine fornisce le funzioni seguenti, che devono essere implementate dal controllo del codice sorgente del plug-in conformità con questa API. Le firme di ogni funzione e la semantica associata con il flag di bit e altri parametri sono descritti in dettaglio in questo riferimento.

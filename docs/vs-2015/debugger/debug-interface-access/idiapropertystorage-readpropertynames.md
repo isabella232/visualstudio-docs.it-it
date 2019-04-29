@@ -1,55 +1,55 @@
 ---
 title: IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaPropertyStorage::ReadPropertyNames
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
-caps.latest.revision: 13
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.workload:
+- multiple
 ms.openlocfilehash: f3f6d3ac520a396b5207767a3fec0913c801c287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537355"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Recupera i nomi di stringa corrispondente assegnato gli identificatori di proprietà.
 
-Recupera i nomi di stringa corrispondente assegnato gli identificatori di proprietà.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp  
-HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `cpropid`  
- [in] Numero di ID proprietà nel `rgpropid`.  
-  
- `rgpropid`  
- [in] Matrice di ID proprietà per cui ottenere i nomi (`PROPID` definito in Wtypes. H come un `ULONG`).  
-  
- `rglpwstrName`  
- [in, out] Matrice di nomi di proprietà per l'ID di proprietà specificato. La matrice deve essere preallocata per contenere il numero di nomi di proprietà richiesto e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- I nomi di proprietà restituito devono essere liberati (chiamando il `SysFreeString` funzioni) quando non sono più necessari.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+## <a name="syntax"></a>Sintassi
+
+```C++
+HRESULT ReadPropertyNames (
+   ULONG         cpropid,
+   PROPID const* rgpropid,
+   BSTR*         rglpwstrName
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `cpropid`
+
+[in] Numero di ID proprietà nel `rgpropid`.
+
+ `rgpropid`
+
+[in] Matrice di ID proprietà per cui ottenere i nomi (`PROPID` definito in Wtypes. H come un `ULONG`).
+
+ `rglpwstrName`
+
+[in, out] Matrice di nomi di proprietà per l'ID di proprietà specificato. La matrice deve essere preallocata per contenere il numero di nomi di proprietà richiesto e deve essere in grado di contenere almeno `cpropid``BSTR` stringhe.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ I nomi di proprietà restituito devono essere liberati (chiamando il `SysFreeString` funzioni) quando non sono più necessari.
+
+## <a name="see-also"></a>Vedere anche
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

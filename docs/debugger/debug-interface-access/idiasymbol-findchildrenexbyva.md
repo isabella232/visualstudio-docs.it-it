@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85dc2d62134d57faf40162ff61b193b80b045e29
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837966"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Recupera gli elementi figlio del simbolo validi su un indirizzo virtuale specificato.
@@ -58,11 +58,11 @@ HRESULT findChildrenExByVA ( 
 ## <a name="return-value"></a>Valore restituito
  Restituisce `S_OK` se almeno un figlio del simbolo è stato trovato, o restituisce `S_FALSE` se nessun elemento figlio sono stato trovato; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  I simboli locali che vengono restituiti includono informazioni sull'intervallo in tempo reale.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Dia2.h
+ Intestazione: DIA2.h
 
  Libreria: diaguids.lib
 

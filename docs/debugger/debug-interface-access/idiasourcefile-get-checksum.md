@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838067"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
 Recupera i byte di checksum.
@@ -48,7 +48,7 @@ HRESULT get_checksum ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Per determinare il tipo di algoritmo di checksum utilizzata per generare i byte di checksum, chiamare il [Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) (metodo).
 
  Il valore di checksum viene solitamente generato dall'immagine del file di origine in modo che le modifiche nel file di origine vengono applicate le modifiche nei byte checksum. Se i byte di checksum non corrispondono a un checksum generato dall'immagine del file, caricare quindi il file deve essere considerato danneggiato o manomesso.

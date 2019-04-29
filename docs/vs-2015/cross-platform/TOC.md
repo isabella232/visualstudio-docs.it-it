@@ -29,4 +29,4 @@
 ## [Sviluppare app per la piattaforma UWP (Universal Windows Platform)](develop-apps-for-the-universal-windows-platform-uwp.md)
 ## [Visual Studio Emulator for Android](visual-studio-emulator-for-android.md)
 ### [Requisiti di sistema per Visual Studio Emulator for Android](system-requirements-for-the-visual-studio-emulator-for-android.md)
-### [Risoluzione dei problemi di Visual Studio Emulator for Android](troubleshooting-the-visual-studio-emulator-for-android.md)
+### [Troubleshooting the Visual Studio Emulator for Android](troubleshooting-the-visual-studio-emulator-for-android.md)

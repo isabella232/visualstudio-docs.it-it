@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536425"
 ---
 # <a name="interop-activity-designer"></a>ActivityDesigner Interop
 
@@ -31,7 +31,7 @@ Il **interoperabilità** ActivityDesigner è reperibile nel **migrazione** categ
 
 Il [Migration](../workflow-designer/migration-activity-designers.md) categoria che contiene il <xref:System.Activities.Statements.Interop> attività si manifesta solo nella **casella degli strumenti** se il progetto è destinato a completa di .NET Framework 4.
 
-Per i progetti C#, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic con il progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare **Sì** di confermare la modifica.
+Per i progetti c#, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic con il progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Application** scheda, seleziona il **NET Framework 4** opzione il **framework di destinazione**. Selezionare **Sì** di confermare la modifica.
 
 Per i progetti Visual Basic, è possibile modificare la destinazione del progetto per usare la versione completa di .NET Framework 4 facendo clic sul progetto in **Esplora soluzioni** e selezionando **proprietà**. Nel **Compile** scheda, fare clic sui **opzioni di compilazione avanzate** pulsante. Selezionare **.Net Framework 4** dalle **elenco framework di destinazione**, quindi fare clic su **OK**. Selezionare **Sì** di confermare la modifica.
 

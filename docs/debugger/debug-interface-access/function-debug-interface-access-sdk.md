@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554518"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Funzione (Debug Interface Access SDK)
 Ogni funzione è identificata da un `SymTagFunction` simbolo.
@@ -25,7 +25,7 @@ Ogni funzione è identificata da un `SymTagFunction` simbolo.
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|`Data type`|Description|
+|Proprietà|`Data type`|Descrizione|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Uno dei valori del [enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md), se la funzione è una funzione membro.|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|

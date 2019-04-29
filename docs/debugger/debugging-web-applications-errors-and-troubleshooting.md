@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851622"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Debug di applicazioni Web: Errori e risoluzione dei problemi
 È possibile che si verifichino i seguenti errori durante il tentativo di eseguire il debug di applicazioni Web.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6078f4dae6bc6fb53dfa8b612972e28edd820f72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554753"
 ---
 # <a name="exe"></a>Exe
 File exe è l'unico simbolo senza un lessicale o della classe padre, perché rappresenta l'ambito globale del file con estensione dll o .exe. È presente un solo simbolo con la `SymTagExe` tag per ogni file. Il [Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) metodo restituisce il simbolo.
@@ -28,7 +28,7 @@ File exe è l'unico simbolo senza un lessicale o della classe padre, perché rap
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Validità del file eseguibile.|
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` del file eseguibile.|

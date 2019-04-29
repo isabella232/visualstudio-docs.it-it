@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c3392164106e3569e565cbca684d5d135717de85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575182"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>Procedura: Creazione di appuntamenti a livello di codice
   Questo esempio viene creato un appuntamento e consente di aggiungere destinatari alla richiesta di riunione appuntamento.

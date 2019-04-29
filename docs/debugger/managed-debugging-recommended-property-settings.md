@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846286"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Debug gestito: impostazioni consigliate delle proprietà
+# <a name="managed-debugging-recommended-property-settings"></a>Debug gestito: Impostazioni consigliate delle proprietà
 Determinate proprietà devono essere impostate nello stesso modo per tutti gli scenari di debug gestito.
 
  Nelle tabelle riportate di seguito sono indicate le impostazioni consigliate delle proprietà.
@@ -35,9 +35,9 @@ Determinate proprietà devono essere impostate nello stesso modo per tutti gli s
 
 |**Nome proprietà**|**Impostazione**|
 |-----------------------|-----------------|
-|**Definisci costante DEBUG**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Debug.|
-|**Definisci costante TRACE**|C# e F#: selezionare la casella di controllo per consentire all'applicazione di utilizzare la classe Trace.|
-|**Ottimizza codice**|C#, F# e Visual Basic: impostare su false. L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nell'editor del codice. Per eseguire il debug di codice ottimizzato, disattivare Just My Code. (Vedere [Limitare l'esecuzione di istruzioni a Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Per altre informazioni, vedere [impostazioni di progetto per C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oppure [impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
+|**Definisci costante DEBUG**|C#e F#: Impostare la casella di controllo selezionata. per consentire all'applicazione di utilizzare la classe Debug.|
+|**Definisci costante TRACE**|C#e F#: Impostare la casella di controllo selezionata. per consentire all'applicazione di utilizzare la classe Trace.|
+|**Ottimizza codice**|C#, F#e Visual Basic: Impostare su false. L'esecuzione del debug di codice ottimizzato è più complessa perché le istruzioni generate non corrispondono direttamente al codice sorgente. Se si nota un bug presente solo nel codice ottimizzato del programma, è possibile attivare questa impostazione, tenendo però presente che il codice riportato nella finestra **Disassembly** è generato da codice sorgente ottimizzato che potrebbe non corrispondere a quanto visualizzato nell'editor del codice. Per eseguire il debug di codice ottimizzato, disattivare Just My Code. (Vedere [Limitare l'esecuzione di istruzioni a Just My Code](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Per altre informazioni, vedere [impostazioni di progetto per c# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) oppure [impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
 |**Percorso output**|Impostare su bin\Debug\\.|
 |**Opzioni di compilazione avanzate**|Solo Visual Basic. Fare clic su **Avanzate** per impostare le proprietà avanzate descritte nella tabella riportata di seguito.|
 

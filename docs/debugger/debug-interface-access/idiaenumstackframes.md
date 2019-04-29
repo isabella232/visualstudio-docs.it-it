@@ -13,23 +13,23 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 116ca69f890c37c84d4a31e2663d3c9ff1439f53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833454"
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Enumera i vari stack frame disponibile.
 
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Recupera un numero specificato di elementi dello stack frame dalla sequenza di enumerazione.|
 |[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) oppure [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) metodi.
@@ -63,7 +63,7 @@ void DumpStackFrames(IDiaStackWalker*     pStackWalker,
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

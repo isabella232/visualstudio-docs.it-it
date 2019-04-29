@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4e9c190108cdbf1eb7be2d21927a95fe56fca75
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832470"
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 Recupera un flag che indica se la sezione contiene codice a 16 bit.
@@ -38,7 +38,7 @@ HRESULT get_code16bit(
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo metodo indica solo se il codice è 16 bit. Se il codice non 16 bit, è possibile ad esempio di codice a 32 o 64 bit.
 
 ## <a name="see-also"></a>Vedere anche

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783493"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: Creare uno schema XML da un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedura: Creare un XML Schema da un documento XML
 
 L'editor XML consente di creare uno schema di XML Schema definition language (XSD) da un documento XML. Il file XML determina la modalità di generazione dello schema nel modo seguente:
 

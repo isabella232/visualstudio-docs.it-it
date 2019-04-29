@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8333c7e57c3cd3f240f8a72dd865e458b23bc299
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828634"
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 Recupera il numero di byte del codice.
@@ -38,7 +38,7 @@ HRESULT get_length ( 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il valore restituito da questo metodo è la lunghezza del codice sorgente ed è lo stesso valore restituito dal [Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md) (metodo).
 
 ## <a name="see-also"></a>Vedere anche

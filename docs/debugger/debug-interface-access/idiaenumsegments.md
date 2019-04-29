@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833428"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Enumera i vari segmenti contenuti nell'origine dati.
@@ -31,7 +31,7 @@ IDiaEnumSegments : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaEnumSegments`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Recupera il numero di segmenti.|
@@ -41,7 +41,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaEnumSegments`.
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Reimposta una sequenza di enumerazione all'inizio.|
 |[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crea un enumeratore che contiene lo stesso stato di enumerazione dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il `QueryInterface` metodo su un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) oggetto. Vedere l'esempio per i dettagli.
@@ -65,7 +65,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

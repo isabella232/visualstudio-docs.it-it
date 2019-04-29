@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820661"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Set di regole minime native
 Le regole Microsoft Native Minimum Rules sono orientate ai problemi più critici del codice nativo, inclusi i potenziali problemi di sicurezza e gli arresti anomali delle applicazioni. È necessario includere questo set di regole in qualsiasi set di regole personalizzate create per i progetti nativi.

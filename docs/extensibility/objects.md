@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433526"
 ---
 # <a name="objects"></a>Oggetti
 Le informazioni di riferimento seguenti vengono illustrati gli oggetti utilizzati per creare un'istanza dell'editor di testo principale.

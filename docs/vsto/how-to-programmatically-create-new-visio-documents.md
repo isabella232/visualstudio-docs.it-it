@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574837"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Procedura: Creazione di nuovi documenti di Visio a livello di codice
   Quando si crea un nuovo disegno di Microsoft Office Visio, viene aggiunto alla raccolta `Microsoft.Office.Interop.Visio.Documents` di documenti di Visio aperti. Il metodo `Microsoft.Office.Interop.Visio.Documents.Add` crea quindi un nuovo documento di disegno di Visio. Per altre informazioni, vedere la documentazione di riferimento di VBA relativa al metodo [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .

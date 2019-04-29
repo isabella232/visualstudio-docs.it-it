@@ -73,7 +73,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Gestione delle eccezioni (Visual Studio SDK)
           href: exception-handling-visual-studio-sdk.md
-    - name: 'Procedura: Eseguire il debug di un motore di debug personalizzato'
+    - name: 'Procedura: eseguire il debug di un motore di debug personalizzato'
       href: how-to-debug-a-custom-debug-engine.md
 - name: Introduzione all'estendibilità del debugger
   href: getting-started-with-debugger-extensibility.md

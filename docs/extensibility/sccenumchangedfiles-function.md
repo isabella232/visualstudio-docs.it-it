@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: db9bc2738e9a4d7cac0d57b9c613b7070f60baff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802910"
 ---
 # <a name="sccenumchangedfiles-function"></a>Funzione SccEnumChangedFiles
 Dato un elenco di file locali, questa funzione determina quali file sono diversi rispetto alle versioni corrispondenti nel database del controllo del codice sorgente.
@@ -58,7 +58,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>Valore restituito
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Operazione completata correttamente.|
 |SCC_UNSPECIFIEDERROR|Errore generico.|

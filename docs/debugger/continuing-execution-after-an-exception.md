@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564099"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
-Quando il debugger interrompe l'esecuzione a causa di un'eccezione, verrà visualizzato il **Helper eccezioni**, per impostazione predefinita. Se è stata disabilitata la **Helper eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **informazioni sulle eccezioni** (C# o Visual Basic) o il  **Eccezione** nella finestra di dialogo (C++).
+Quando il debugger interrompe l'esecuzione a causa di un'eccezione, verrà visualizzato il **Helper eccezioni**, per impostazione predefinita. Se è stata disabilitata la **Helper eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **informazioni sulle eccezioni** (C# o Visual Basic) o il  **Eccezione** finestra di dialogo (C++).
 
  Quando la **Helper eccezioni** viene visualizzata, è possibile provare a risolvere il problema che ha causato l'eccezione.
 

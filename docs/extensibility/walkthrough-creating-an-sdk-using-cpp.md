@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796507"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Procedura dettagliata: Creare un SDK con C++
 Questa procedura dettagliata illustra come creare una libreria C++ nativa math SDK, il SDK come un Visual Studio Extension (VSIX), pacchetto e quindi usarlo per creare un'app. La procedura dettagliata è suddivisa in questi passaggi:

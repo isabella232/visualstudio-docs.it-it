@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 421581520f28037bc4b8fce9d546eaffad557f75
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839719"
 ---
 # <a name="idialoadcallback2restrictsystemrootaccess"></a>IDiaLoadCallback2::RestrictSystemRootAccess
 Determina se la ricerca di file con estensione pdb nella directory radice di sistema.
@@ -31,7 +31,7 @@ HRESULT RestrictSystemRootAccess();
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Diverso da qualsiasi codice restituito `S_OK` impedisce la ricerca la radice di sistema per i file con estensione pdb.
 
 ## <a name="see-also"></a>Vedere anche

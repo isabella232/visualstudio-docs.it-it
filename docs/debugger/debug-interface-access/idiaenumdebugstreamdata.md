@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e2865dbf3da103610407cd33eeeaf934caba3c7a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838337"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
 Fornisce l'accesso ai record in un flusso di dati di debug.
@@ -31,7 +31,7 @@ IDiaEnumDebugStreamData : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaEnumDebugStreamData`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|Recupera le [dell'interfaccia IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) versione l'enumeratore.|
 |[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|Recupera il numero di record nel flusso di dati di debug.|
@@ -42,7 +42,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaEnumDebugStreamData`.
 |[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|Reimposta la sequenza enumerata all'inizio.|
 |[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|Crea un enumeratore che contiene la stessa sequenza enumerata dell'enumeratore corrente.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Questa interfaccia rappresenta un flusso di record in un flusso di dati di debug. Le dimensioni e l'interpretazione di ogni record dipende il flusso di dati proviene il record. Questa interfaccia fornisce in modo efficace l'accesso per i byte di dati non elaborati nel file di simboli.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -103,7 +103,7 @@ void PrintStreamData(IDiaEnumDebugStreamData* pStream)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

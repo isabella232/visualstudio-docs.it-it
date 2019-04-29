@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829024"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Si accede alle informazioni che descrive il processo di mapping da un blocco di byte di testo dell'immagine a un numero di riga del file origine.
@@ -31,7 +31,7 @@ IDiaLineNumber : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaLineNumber`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Recupera un riferimento al simbolo per il modulo che ha contribuito con i byte del testo dell'immagine.|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Recupera un riferimento all'oggetto di file di origine.|
@@ -48,7 +48,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaLineNumber`.
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Recupera un flag che indica che le informazioni di riga vengono descritti l'inizio di un'istruzione nell'origine del programma.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Recupera l'identificatore univoco per il modulo che ha contribuito con questa riga.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Ottenere questa interfaccia chiamando il [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) oppure [Idiaenumlinenumbers](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) metodi.
@@ -135,7 +135,7 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

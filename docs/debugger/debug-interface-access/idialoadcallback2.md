@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: daf0b48aca06b404824059030052223a8545a6b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641455"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839706"
 ---
 # <a name="idialoadcallback2"></a>IDiaLoadCallback2
 Riceve i callback dal simbolo DIA individuazione delle procedure, che consente di restrizioni a essere imposti sul processo di individuazione.
@@ -31,18 +31,18 @@ IDiaLoadCallback2 : IDiaLoadCallback
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
  Oltre ai metodi nel [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) interfaccia, questa interfaccia espone i metodi seguenti:
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaLoadCallback2::RestrictOriginalPathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess.md)|Determina se alla ricerca di un file con estensione pdb nella directory di debug originale.|
 |[IDiaLoadCallback2::RestrictReferencePathAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictreferencepathaccess.md)|Determina se alla ricerca di un file con estensione PDB è consentita nel percorso in cui si trova il file .exe.|
 |[IDiaLoadCallback2::RestrictDBGAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictdbgaccess.md)|Determina se alla ricerca di informazioni di debug è consentita dai file DBG.|
 |[IDiaLoadCallback2::RestrictSystemRootAccess](../../debugger/debug-interface-access/idialoadcallback2-restrictsystemrootaccess.md)|Determina se la ricerca di file con estensione pdb nella directory radice di sistema.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  L'applicazione client implementa questa interfaccia e fornisce un riferimento a esso nella chiamata ai [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (metodo). Tenere presente implementare tutti i metodi nel [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md) anche l'interfaccia.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Dia2.h
+ Intestazione: DIA2.h
 
  Libreria: diaguids.lib
 

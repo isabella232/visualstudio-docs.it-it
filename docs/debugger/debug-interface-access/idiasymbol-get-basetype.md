@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837607"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Recupera il tipo base per questo simbolo<em>.</em>
@@ -41,7 +41,7 @@ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALS
 > [!NOTE]
 > Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo di base, è possibile determinare il tipo di base per un simbolo. Si noti che alcuni simboli potrebbero non avere un tipo di base, ad esempio, un nome di struttura.
 
 ## <a name="example"></a>Esempio
@@ -61,9 +61,9 @@ if (pType->get_type( &pBaseType ) == S_OK)
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432161"
 ---
 # <a name="tool-window-display-configuration"></a>Configurazione visualizzazione della finestra degli strumenti
 Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)
