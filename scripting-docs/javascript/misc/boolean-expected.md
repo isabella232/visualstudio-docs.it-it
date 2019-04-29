@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817900"
 ---
 # <a name="boolean-expected"></a>Previsto Boolean
 Si è provato a richiamare il **Boolean.prototype.toString** oppure **Boolean.prototype.valueOf** metodo in un oggetto di un tipo diverso da `Boolean`. L'oggetto di questo tipo di chiamata deve essere di tipo `Boolean`. Ad esempio:

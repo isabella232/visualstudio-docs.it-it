@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cdb38bcb8a86900cae7eb596c48b5765bc247eac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815087"
 ---
 # <a name="work-with-text-in-documents"></a>Lavorare con il testo nei documenti
   Gli argomenti di questa sezione contengono le procedure dettagliate e gli esempi di codice per usare il modello a oggetti di Microsoft Office Word per lavorare con il testo in progetti di Office.

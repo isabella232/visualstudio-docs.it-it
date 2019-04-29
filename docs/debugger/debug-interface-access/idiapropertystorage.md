@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832742"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
 Consente di leggere le proprietà persistenti di un set di proprietà DIA.
@@ -31,7 +31,7 @@ IDiaPropertyStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaPropertyStorage`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Ottiene un puntatore a un enumeratore per le proprietà all'interno di questo set.|
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Legge `BOOL` valori in un set di proprietà.|
@@ -42,7 +42,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaPropertyStorage`.
 |[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Ottiene i nomi di stringa corrispondente assegnato gli identificatori di proprietà.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Legge `ULONGLONG` valori in un set di proprietà.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Ogni proprietà all'interno di un set di proprietà è identificata da un identificatore di proprietà (ID), a quattro byte `ULONG` valore univoco per tale set. Le proprietà esposte tramite il `IDiaPropertyStorage` interfaccia proprietà corrispondono a quelle disponibili nell'interfaccia padre. Ad esempio, le proprietà del [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interfaccia sono accessibili in base al nome tramite la `IDiaPropertyStorage` interfaccia (si noti tuttavia che anche se la proprietà è accessibile, non significa la proprietà è valida per un particolare `IDiaSymbol` oggetto).
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -120,7 +120,7 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

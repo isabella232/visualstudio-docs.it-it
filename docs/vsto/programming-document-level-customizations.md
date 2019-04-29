@@ -28,11 +28,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561717"
 ---
 # <a name="program-document-level-customizations"></a>Programmazione delle personalizzazioni a livello di documento
   Quando si estende Microsoft Office Word o Microsoft Office Excel usando una personalizzazione a livello di documento è possibile eseguire le attività seguenti:

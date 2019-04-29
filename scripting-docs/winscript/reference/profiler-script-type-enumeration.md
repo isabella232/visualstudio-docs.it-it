@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ca90a566db422d75fefc44267ffe10504bb872ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816785"
 ---
 # <a name="profilerscripttype-enumeration"></a>Enumerazione PROFILER_SCRIPT_TYPE
 Specifica il tipo di script.  
@@ -38,7 +38,7 @@ typedef enum {
   
 ## <a name="members"></a>Membri  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |PROFILER_SCRIPT_TYPE_USER|Specifica il codice di script scritto dall'utente.|  
 |PROFILER_SCRIPT_TYPE_DYNAMIC|Specifica il codice di script che viene generato in modo dinamico durante l'esecuzione.|  

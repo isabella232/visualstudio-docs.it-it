@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 20c54e5059c337d5593fcc1da7faa420b0b32a39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806460"
 ---
 # <a name="menu-element"></a>Elemento menu
 Definisce una voce di menu. Questi sono i sei tipi di menu: Contesto, Menu, MenuController, MenuControllerLatched, sulla barra degli strumenti e ToolWindowToolbar.

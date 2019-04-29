@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0526f08e1bbffb0a4dc8729e2b180ad9efe319ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565173"
 ---
-# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avviso: le modifiche apportate alla finestra di dialogo Configura comportamento non sono state applicate
+# <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avviso: Nella finestra di dialogo Configura comportamento ci sono modifiche non applicate
 
 Avviso. Nella finestra di dialogo Configura comportamento ci sono modifiche non applicate. Applicarle?
 

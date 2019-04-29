@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545267"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Non bloccare oggetti con identità debole
 
@@ -83,5 +83,5 @@ L'esempio seguente illustra alcuni blocchi di oggetti che violano la regola.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [blocco di istruzione (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [blocco di istruzione (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [Istruzione SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

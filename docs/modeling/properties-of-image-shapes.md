@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823994"
 ---
 # <a name="properties-of-image-shapes"></a>Proprietà delle forme d'immagine
 
@@ -58,7 +58,7 @@ Forme d'immagine hanno le proprietà elencate nella tabella seguente.
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla forma dell'immagine (`none`, `abstract` o `sealed`).|none|
 |Forma immagine di base|Classe di base di questa forma.|(nessuno)|
-|nome|Il nome di questa forma.|Nome corrente|
+|Nome|Il nome di questa forma.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi che è affiliato a questa forma.|Spazio dei nomi corrente|
 |Tipo della descrizione comando|La posizione in cui è definito la descrizione comando (fissata, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene usata come descrizione comando; se la variabile, la descrizione comando è definito nel codice personalizzato.|none|
 |Note|Note informali associate a questa forma.|\<nessuno>|

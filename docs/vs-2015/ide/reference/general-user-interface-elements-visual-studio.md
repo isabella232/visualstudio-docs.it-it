@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537602"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Elementi generali dell'interfaccia utente (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ In questa sezione vengono descritti alcuni elementi dell'interfaccia utente IDE 
 
  [Opzioni, Editor di testo, C/C++, avanzate](../../ide/reference/options-text-editor-c-cpp-advanced.md) consente di specificare le opzioni avanzate per file C o C++.
 
- [Opzioni, Editor di testo C#, formattazione](../../ide/reference/options-text-editor-csharp-formatting.md) consente di specificare le opzioni di formattazione per C# file.
+ [Opzioni, Editor di testo, c#, formattazione](../../ide/reference/options-text-editor-csharp-formatting.md) consente di specificare le opzioni di formattazione per file c#.
 
- [Opzioni, Editor di testo C#avanzate](../../ide/reference/options-text-editor-csharp-advanced.md) consente di specificare le opzioni avanzate C# file.
+ [Opzioni, Editor di testo, c#, avanzate](../../ide/reference/options-text-editor-csharp-advanced.md) consente di specificare le opzioni avanzate per file c#.
 
- [Opzioni, Editor di testo C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) consente di specificare le opzioni di IntelliSense per C# file.
+ [Opzioni, Editor di testo, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) consente di specificare le opzioni di IntelliSense per file c#.
 
  [Opzioni, Editor di testo, XAML, formattazione](../../ide/reference/options-text-editor-xaml-formatting.md) consente di specificare le opzioni di formattazione per i file XAML.
 

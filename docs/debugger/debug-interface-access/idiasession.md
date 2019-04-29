@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832307"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fornisce un contesto di query per i simboli di debug.
@@ -31,10 +31,10 @@ IDiaSession : IUnknown
 ## <a name="methods"></a>Metodi
 Nella tabella seguente sono illustrati i metodi di `IDiaSession`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli. Questo è lo stesso valore passato per il `put_loadAddress` (metodo).|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Imposta l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli. **Nota:** è importante chiamare questo metodo quando si riceve un `IDiaSession` dell'oggetto e prima di iniziare a utilizzare l'oggetto.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Imposta l'indirizzo di caricamento del file eseguibile che corrisponde ai simboli in questo archivio dei simboli. **Nota:**  È importante chiamare questo metodo quando si riceve un `IDiaSession` dell'oggetto e prima di iniziare a utilizzare l'oggetto.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Recupera un riferimento all'ambito globale.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Recupera un enumeratore per tutte le tabelle incluse nell'archivio simboli.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Recupera un enumeratore per tutti i simboli denominati in posizioni statici.|
@@ -70,7 +70,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaSession`.
 |[IDiaSession::findAcceleratorInlineesByName](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbyname.md)|Restituisce un'enumerazione dei simboli per i frame inline corrispondente al nome di funzione inline specificati.|
 |[IDiaSession::findAcceleratorInlineesByLinenum](../../debugger/debug-interface-access/idiasession-findacceleratorinlineesbylinenum.md)|Restituisce un'enumerazione dei simboli per i frame inline che corrispondono al percorso di origine specificato.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 È importante chiamare il [Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metodo dopo aver creato il `IDiaSession` oggetto e il valore passato al `put_loadAddress` metodo deve essere diverso da zero, ovvero per tutte le proprietà di indirizzo virtuale (valutazione della vulnerabilità) di simboli a cui essere accessibile. L'indirizzo di caricamento viene fornito da qualsiasi programma caricato il file eseguibile sottoposto a debug. Ad esempio, è possibile chiamare la funzione Win32 `GetModuleInformation` recuperare l'indirizzo di caricamento del file eseguibile, dato un handle al file eseguibile.
 
 ## <a name="example"></a>Esempio
@@ -110,7 +110,7 @@ void InitializeDIA(const char *szFilename)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

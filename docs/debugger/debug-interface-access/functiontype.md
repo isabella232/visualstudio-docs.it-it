@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8913d9b26ab79a37e9d6f28a5f3bf1974df15a5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554456"
 ---
 # <a name="functiontype"></a>FunctionType
 Ogni firma della funzione univoco è identificato da un `SymTagFunctionType` simbolo. Ogni parametro viene identificato come un simbolo di classe figlio con un `SymTagFunctionArgType` tag.
@@ -26,7 +26,7 @@ Ogni firma della funzione univoco è identificato da un `SymTagFunctionType` sim
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|Uno dei valori del [enumerazione CV_call_e](../../debugger/debug-interface-access/cv-call-e.md).|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|La classe che questa funzione, o metodo, è un membro di.|

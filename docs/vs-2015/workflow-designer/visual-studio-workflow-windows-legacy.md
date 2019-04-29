@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857543"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Finestre del flusso di lavoro di Visual Studio (legacy)
 La [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] può essere usata per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. La finestra di progettazione legacy è un'utilità di progettazione visiva che è possibile usare per creare un flusso di lavoro. È possibile trascinare le attività eseguite dal **casella degli strumenti** alla progettazione della superficie di attacco e qui configurarle. La finestra dell'editor di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] occupa l'area della finestra principale usata dalle altre finestre dell'editor di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il nome del flusso di lavoro viene visualizzato nella barra del titolo della finestra di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

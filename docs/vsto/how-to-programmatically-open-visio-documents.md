@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812251"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Procedura: A livello di codice aprire documenti di Visio
   Esistono due metodi per l'apertura di documenti di Microsoft Office Visio esistenti: Aprire e OpenEx. Il metodo OpenEx è identico al metodo Open, ad eccezione del fatto che fornisca gli argomenti in cui il chiamante può specificare la modalità di apertura del documento.

@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575650"
 ---
 # <a name="getting-started-with-python"></a>Introduzione a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

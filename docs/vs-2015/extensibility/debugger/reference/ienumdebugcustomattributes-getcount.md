@@ -1,52 +1,51 @@
 ---
 title: IEnumDebugCustomAttributes::GetCount | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumCustomAttributes::GetCount
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: 9c175297bf0f80c74e0c3409843164e0b08589ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551491"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Ottiene il numero di attributi personalizzati in un enumeratore.
 
-Ottiene il numero di attributi personalizzati in un enumeratore.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp#  
-HRESULT GetCount(   
-   ULONG* pcelt  
-);  
-```  
-  
-```csharp  
-int GetCount(  
-   out uint pcelt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametri  
- `pcelt`  
- [out] Restituisce il numero di elementi nell'enumerazione.  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT GetCount( 
+   ULONG* pcelt
+);
+```
+
+```csharp
+int GetCount(
+   out uint pcelt
+);
+```
+
+#### <a name="parameters"></a>Parametri
+ `pcelt`
+
+ [out] Restituisce il numero di elementi nell'enumerazione.
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Questo metodo non fa parte dell'interfaccia di enumerazione COM facoltativa che specifica che solo `Next`, `Clone`, `Skip`, e `Reset` devono essere implementati.
+
+## <a name="see-also"></a>Vedere anche
+- [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
