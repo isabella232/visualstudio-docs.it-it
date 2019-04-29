@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896620"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Identificatori di formato per C++ nel debugger di Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Per identificatori di formato C++ nel debugger di Visual Studio
 È possibile modificare il formato in cui viene visualizzato il valore nella **Watch**, **Auto**, e **variabili locali** windows usando gli identificatori di formato.
 
 È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e persino nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato viene visualizzato una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualizzazione Suggerimento dati riflette l'identificatore di formato.
@@ -62,7 +62,7 @@ Aggiungere la `my_var1` variabile per il **Watch** finestra durante il debug **D
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Identificatori di formato
-Nelle tabelle seguenti vengono descritti gli identificatori di formato che è possibile usare in Visual Studio. Gli identificatori in grassetto sono supportati solo per il nuovo debugger e non per il debug di interoperabilità con C + + / CLI.
+Nelle tabelle seguenti vengono descritti gli identificatori di formato che è possibile usare in Visual Studio. Gli identificatori in grassetto sono supportati solo per il nuovo debugger e non per il debug di interoperabilità con C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ Gli identificatori in **grassetto** sono supportati solo per il debug di codice 
 |wm|Numeri di messaggio Windows|0x0010|WM_CLOSE|
 |!|formato non elaborato, ignorando eventuali personalizzazioni di visualizzazione tipo di dati|\<rappresentazione personalizzata>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Per le posizioni di memoria nel debug di interoperabilità con identificatori di formato c++ /CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Per le posizioni di memoria nel debug di interoperabilità con identificatori di formato C++/CLI
 La tabella seguente descrive i simboli di formattazione utilizzati per le posizioni di memoria. Gli identificatori della posizione di memoria possono essere usati con qualsiasi valore o espressione che restituisce una posizione.
 
 |Simbolo|Formato|Valore dell'espressione di controllo originale|Valore visualizzato|
