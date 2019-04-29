@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91c4da26d202e1a23ff70a7c655f64fd6c05a340
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de757e7022339b11f6d7c04ea7315abf685da24c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428048"
 ---
 # <a name="donotloadprojects-devenvexe"></a>/DoNotLoadProjects (devenv.exe)
 
-Apre la soluzione specificata senza caricare progetti.
+Apre la soluzione specificata senza caricare progetti. Per altre informazioni, vedere [Soluzioni filtrate in Visual Studio](../filtered-solutions.md).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -30,9 +30,9 @@ devenv /DoNotLoadProjects SolutionName
 
 ## <a name="arguments"></a>Argomenti
 
-- *SolutionName*
+*SolutionName*
 
-  Obbligatorio. Percorso completo e nome della soluzione da aprire.
+Obbligatorio. Percorso completo e nome della soluzione da aprire.
 
 ## <a name="example"></a>Esempio
 
@@ -40,9 +40,9 @@ L'esempio apre la soluzione MySln.sln senza caricare alcun progetto.
 
 ```shell
 devenv /donotloadprojects MySln.sln
-
 ```
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Soluzioni filtrate in Visual Studio](../filtered-solutions.md)
 - [Opzioni della riga di comando devenv](../../ide/reference/devenv-command-line-switches.md)

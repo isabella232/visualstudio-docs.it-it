@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580700"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creazione di un'interfaccia utente tramite la finestra di progettazione XAML in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ La finestra di progettazione XAML in Visual Studio offre un'interfaccia visiva p
 
  **Visualizzazione** Specifica dimensioni e risoluzioni di visualizzazione diverse per l'app.
 
- **Orientamento** Specifica diversi orientamenti per l'app, **Orizzontale** o **Verticale**.
+ **Orientamento** specifica diversi orientamenti per l'app: **Orizzontale** o **Verticale**.
 
- **Bordo** Specifica diversi allineamenti per i bordi dell'app, ad esempio **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
+ **Bordo** specifica diversi allineamenti per l'app: **Entrambi**, **A sinistra**, **A destra** o **Nessuno**.
 
  **Contrasto elevato** Consente di visualizzare in anteprima l'app in base all'impostazione di contrasto selezionata. Se per l'impostazione viene specificato un valore diverso da **Predefinito**, l'impostazione della proprietà `RequestedTheme` in App.xaml verrà sovrascritta.
 

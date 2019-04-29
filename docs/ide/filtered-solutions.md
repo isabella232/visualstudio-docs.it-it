@@ -1,6 +1,6 @@
 ---
 title: Caricare un subset di progetti
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,16 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439903"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluzioni filtrate in Visual Studio
 
-**Novità di Visual Studio 2019**
-
-I team di sviluppo con tanti utenti spesso collaborano usando un'unica soluzione di grandi dimensioni con molti progetti. Tuttavia, i singoli sviluppatori in genere lavorano su un subset limitato di questi progetti. Per migliorare le prestazioni quando si aprono soluzioni di grandi dimensioni, Visual Studio 2019 introduce la funzionalità di *filtro delle soluzioni*. Il filtro delle soluzioni consente di aprire una soluzione caricando solo i progetti selezionati. Il caricamento di un subset di progetti in una soluzione riduce i tempi di caricamento, compilazione ed esecuzione dei test della soluzione e consente una revisione più mirata.
+I team di sviluppo con tanti utenti spesso collaborano usando un'unica soluzione di grandi dimensioni con molti progetti. Tuttavia, i singoli sviluppatori in genere lavorano su un subset limitato di questi progetti. Per migliorare le prestazioni quando si aprono soluzioni di grandi dimensioni, Visual Studio 2019 ha introdotto la funzionalità di *filtro delle soluzioni*. Il filtro delle soluzioni consente di aprire una soluzione caricando solo i progetti selezionati. Il caricamento di un subset di progetti in una soluzione riduce i tempi di caricamento, compilazione ed esecuzione dei test della soluzione e consente una revisione più mirata.
 
 Sono disponibili le funzionalità seguenti:
 
@@ -33,7 +31,11 @@ Sono disponibili le funzionalità seguenti:
 
 ## <a name="open-a-filtered-solution"></a>Aprire una soluzione filtrata
 
-Per aprire una soluzione con solo alcuni dei progetti caricati, seguire questa procedura:
+È possibile aprire una soluzione senza caricare uno dei relativi progetti direttamente dalla finestra di dialogo **Apri progetto** o tramite la [riga di comando](#command-line).
+
+### <a name="open-project-dialog"></a>Finestra di dialogo Apri progetto
+
+Per aprire una soluzione senza caricare uno dei relativi progetti dalla finestra di dialogo **Apri progetto**:
 
 1. Scegliere **File** > **Apri** > **Progetto/Soluzione** dalla barra dei menu.
 
@@ -51,15 +53,31 @@ Per aprire una soluzione con solo alcuni dei progetti caricati, seguire questa p
 
    Visual Studio memorizzerà i progetti caricati alla successiva apertura della soluzione in locale.
 
+### <a name="command-line"></a>Riga di comando
+
+(Novità di Visual Studio 2019 versione 16.1)
+
+Per aprire una soluzione senza caricare uno dei relativi progetti dalla riga di comando, usare l'opzione [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md) come illustrato nell'esempio seguente:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Attivare o disattivare la visibilità dei progetti non caricati
 
 È possibile scegliere di visualizzare tutti i progetti nella soluzione o solo quelli caricati usando una delle opzioni seguenti in **Esplora soluzioni**:
 
 - Fare clic con il pulsante destro del mouse sulla soluzione e scegliere **Show Unloaded Projects** (Mostra progetti non caricati) oppure **Hide Unloaded Projects** (Nascondi progetti non caricati).
 
-- Selezionare il pulsante **Mostra tutti i file** per attivare o disattivare la visibilità dei progetti non caricati.
+- Selezionare il nodo della soluzione per abilitare il pulsante **Mostra tutti i file** e quindi fare clic sul pulsante per attivare o disattivare la visibilità dei progetti non caricati.
 
    ![Pulsante Mostra tutti i file in Esplora soluzioni di Visual Studio](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Caricare le dipendenze del progetto
+
+In una soluzione in cui vengono caricati solo i progetti selezionati potrebbero non essere caricate tutte le dipendenze di un progetto. Usare l'opzione di menu **Carica dipendenze del progetto** per assicurarsi che vengano caricati anche tutti i progetti da cui dipende un progetto. Fare clic con il pulsante destro del mouse su uno o più progetti caricati in **Esplora soluzioni** e scegliere **Carica dipendenze del progetto**.
+
+![Caricare le dipendenze del progetto in Visual Studio 2019](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>File di filtro della soluzione
 

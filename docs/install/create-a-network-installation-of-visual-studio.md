@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974098"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Creare un'installazione di rete di Visual Studio
 
@@ -111,7 +111,7 @@ xcopy /e c:\vsoffline \\server\products\VS2019
 
 Sono disponibili varie opzioni per personalizzare il layout di rete. È possibile, ad esempio, creare un layout parziale che contenga solo un set specifico di [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [carichi di lavoro, componenti e relative dipendenze consigliate o facoltative](workload-and-component-ids.md). Questa soluzione potrebbe essere utile se si prevede di distribuire nelle workstation client solo un subset di carichi di lavoro. I parametri della riga di comando tipici per la personalizzazione del layout includono:
 
-* `--add` per specificare [ID di carico di lavoro o di componente](workload-and-component-ids.md). <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
+* `--add` per specificare ID di [carico di lavoro o di componente](workload-and-component-ids.md). <br>Se si usa `--add`, verranno scaricati solo i carichi di lavoro e i componenti specificati con `--add`.  Se non si usa `--add`, verranno scaricati tutti i carichi di lavoro e i componenti.
 * `--includeRecommended` per includere tutti i componenti consigliati per gli ID di carico di lavoro specificati.
 * `--includeOptional` per includere tutti i componenti consigliati e facoltativi per gli ID di carico di lavoro specificati.
 * `--lang` per specificare le [impostazioni locali delle lingue](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
@@ -153,6 +153,7 @@ Gli esempi seguenti illustrano come creare un layout parziale personalizzato.
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Novità della versione 15.3
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 Gli amministratori possono distribuire Visual Studio nelle workstation client nell'ambito di uno script di installazione. In alternativa, gli utenti che hanno i diritti di amministratore possono installare Visual Studio nel proprio computer direttamente dalla condivisione.
 
 * Gli utenti possono effettuare l'installazione eseguendo il comando seguente: <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * Gli amministratori possono effettuare l'installazione in modalità automatica eseguendo il comando seguente:
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -222,7 +225,7 @@ Quando si installa da un layout, viene acquisito il contenuto che viene installa
 
 Se è stato usato il parametro `--wait`, a seconda del risultato dell'operazione, la variabile di ambiente `%ERRORLEVEL%` viene impostata su uno dei valori seguenti:
 
-  | **Value** | **Risultato** |
+  | **Valore** | **Risultato** |
   | --------- | ---------- |
   | 0 | L'operazione è riuscita |
   | 3010 | L'operazione è riuscita, ma è necessario riavviare per poter usare l'installazione |
@@ -270,6 +273,7 @@ Sono disponibili anche altre opzioni per il supporto. Per un elenco, vedere la p
 
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [ID dei carichi di lavoro e dei componenti di Visual Studio](workload-and-component-ids.md)

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564724"
 ---
 # <a name="create-custom-data-visualizers"></a>Creazione di visualizzatori dati personalizzati
  Oggetto *visualizer* fa parte di [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interfaccia utente del debugger che consente di visualizzare una variabile o un oggetto in modo appropriato al relativo tipo di dati. Ad esempio, un visualizzatore HTML interpreta una stringa HTML e visualizza il risultato come apparirebbe in una finestra del browser. Un visualizzatore di bitmap interpreta una struttura di bitmap e visualizza il grafico da che essa rappresentato. Alcuni visualizzatori consentono di modificare, nonché visualizzare i dati.
