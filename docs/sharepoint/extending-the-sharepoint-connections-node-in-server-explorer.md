@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967357"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estensione del nodo Connessioni di SharePoint in Esplora Server
   In Visual Studio, è possibile connettersi ai siti SharePoint locali nel computer di sviluppo utilizzando la **connessioni di SharePoint** nodo il **Esplora Server** finestra. Questo nodo visualizza molti componenti dei siti di SharePoint locale in una visualizzazione struttura ad albero gerarchica. Ad esempio, è possibile visualizzare l'elenchi, raccolte documenti e i tipi di contenuto nei siti locali. Per altre informazioni sull'uso **Esplora Server** per connettersi ai siti di SharePoint locali, vedere [connessioni Sfoglia SharePoint tramite Esplora Server](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
