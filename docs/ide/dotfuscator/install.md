@@ -22,12 +22,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e647ae257bfc6517685310f4a77ef398e775be
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 0a6945713d86c510112992be3fefd2d41280ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557715"
 ---
 # <a name="install-dotfuscator-community"></a>Installare Dotfuscator Community
 
@@ -38,7 +38,6 @@ Queste istruzioni spiegano come installarlo.
 > Oltre alle versioni di Dotfuscator Community incluse nelle versioni di Visual Studio, PreEmptive Solutions offre periodicamente anche versioni aggiornate sul proprio sito Web.
 > Se si vuole scaricare la **versione più recente** direttamente anziché eseguire l'installazione da Visual Studio,  **[fare clic qui per passare alla pagina di download di Dotfuscator][download]**.
 
-
 ## <a name="within-visual-studio"></a>Da Visual Studio
 
 ::: moniker range="vs-2019"
@@ -48,7 +47,7 @@ Queste istruzioni spiegano come installarlo.
 1. Nella **casella di ricerca** (CTRL+Q) digitare `dotfuscator`. <br/> <br/> ![Casella di ricerca](media/install_in_vs19_12.png) <br/> <br/>
 
 2. Nei risultati di visualizzati, sotto l'intestazione *Componenti*, selezionare **Installa PreEmptive Protection - Dotfuscator**.
-  * Se invece sotto l'intestazione *Menu* viene visualizzato **PreEmptive Protection - Dotfuscator Community** vuol dire che Dotfuscator Community è già installato. Selezionare tale opzione per [iniziare][get-started].
+   * Se invece sotto l'intestazione *Menu* viene visualizzato **PreEmptive Protection - Dotfuscator Community** vuol dire che Dotfuscator Community è già installato. Selezionare tale opzione per [iniziare][get-started].
 
 3. Verrà visualizzata la finestra del programma di installazione di Visual Studio, preconfigurata per installare Dotfuscator Community.
    > [!NOTE]
@@ -76,7 +75,6 @@ Queste istruzioni spiegano come installarlo.
 ::: moniker-end
 
 Al termine dell'installazione, è possibile[ iniziare a usare Dotfuscator Community][get-started].
-
 
 ## <a name="during-visual-studio-installation"></a>Durante l'installazione di Visual Studio
 

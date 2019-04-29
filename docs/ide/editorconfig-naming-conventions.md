@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557320"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
 Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
 
-Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file con estensione *editorconfig*. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata.
+Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
@@ -100,11 +100,11 @@ Per descrivere i modificatori dei simboli a cui si vuole applicare la regola di 
 
 L'elenco seguente mostra i valori consentiti. Se si specificano più valori, separarli con virgole:
 
-- `abstract` oppure `must_inherit`
+- `abstract` o `must_inherit`
 - `async`
 - `const`
 - `readonly`
-- `static` oppure `shared`
+- `static` o `shared`
 
    > [!NOTE]
    > Se è presente una regola di denominazione per i simboli `static` o `shared`, la regola viene applicata anche ai simboli `const` perché sono statici in modo implicito. Se non si vuole che la regola di denominazione `static` venga applicata ai simboli `const`, creare una regola di denominazione separata per i simboli `const`.
@@ -209,6 +209,6 @@ Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la vi
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostare le convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
 - [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

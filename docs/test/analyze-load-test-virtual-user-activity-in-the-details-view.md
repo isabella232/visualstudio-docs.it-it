@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823424"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisi dell'attività utente virtuale del test di carico nella visualizzazione Dettagli dell'Analizzatore test di carico
 
@@ -45,11 +45,11 @@ La visualizzazione **Dettagli** consente di visualizzare il **Grafico attività 
 
  Il riquadro Risultati filtro è visibile nel **Grafico attività utente virtuale**. Il pannello Risultati filtro può essere usato per filtrare in base ai seguenti criteri:
 
--   **Mostra solo risultati con log** Vengono visualizzati solo i risultati dei test a cui è associato un log.
+- **Mostra solo risultati con log** Vengono visualizzati solo i risultati dei test a cui è associato un log.
 
--   **Mostra risultati corretti** Vengono visualizzati solo i risultati dei test superati.
+- **Mostra risultati corretti** Vengono visualizzati solo i risultati dei test superati.
 
--   **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori che possono risultare utili per l'esecuzione del debug.
+- **Mostra risultati con errori** Vengono visualizzati i risultati in cui sono presenti errori che possono risultare utili per l'esecuzione del debug.
 
 ## <a name="tasks"></a>Attività
 
