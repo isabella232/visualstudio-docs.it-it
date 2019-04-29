@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821576"
 ---
 # <a name="use-the-task-list"></a>Usare l'elenco attività
 
@@ -83,6 +83,9 @@ Per creare un token personalizzato:
 4. Nell'elenco a discesa di **Priorità** scegliere una priorità predefinita per il nuovo token.
 
 5. Scegliere **Aggiungi**.
+
+> [!TIP]
+> Il pulsante **Aggiungi** viene abilitato dopo avere immesso un nome. È necessario immettere un nome prima di fare clic su **Aggiungi**.
 
 ### <a name="c-todo-comments"></a>Commenti TODO C++
 
