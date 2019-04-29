@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821078"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -61,12 +61,12 @@ Ecco alcuni esempi:
 |Trovare la corrispondenza con un confine di parola|\b (all'esterno di una classe di caratteri `\b` specifica un confine di parola e all'interno di una classe di caratteri `\b` specifica un backspace).|`\bin` trova "in" in "inside" ma non "pinto".|
 |Trovare la corrispondenza con un'interruzione di riga (ovvero un ritorno a capo seguito da una nuova riga).|\r?\n|`End\r?\nBegin` trova "End" e "Begin" solo quando "End" è l'ultima stringa in una riga e "Begin" è la prima stringa nella riga successiva.|
 |Trovare la corrispondenza con qualsiasi carattere alfanumerico|\w|`a\wd` trova "add" e "a1d", ma non "a d".|
-|Trovare la corrispondenza con qualsiasi spazio vuoto.|(?([^\r\n])\s)|`Public\sInterface` trova la frase "Public Interface".|
+|Trovare la corrispondenza con qualsiasi spazio vuoto.|\s|`Public\sInterface` trova la frase "Public Interface".|
 |Trovare la corrispondenza con qualsiasi carattere numerico|\d|`\d` trova "3" in "3456", "2" in 23" e "1" in "1".|
 |Trovare la corrispondenza con un carattere Unicode|\uXXXX dove XXXX specifica il valore del carattere Unicode.|`\u0065` trova il carattere "e".|
 |Trovare la corrispondenza con un identificatore|\b[\_\w-[0-9]][\_\w]*\b|Trova "type1" ma non "&type1" o "#define".|
 |Trovare la corrispondenza con una stringa tra virgolette|((\\".+?\\")&#124;('.+?'))|Trova qualsiasi stringa racchiusa tra virgolette singole o doppie.|
-|Trovare la corrispondenza con un numero esadecimale|\b0[xX]([0-9a-fA-F]\)\b|Trova "0xc67f", ma non "0xc67fc67f".|
+|Trovare la corrispondenza con un numero esadecimale|\b0[xX]([0-9a-fA-F]+\)\b|Trova "0xc67f", ma non "0xc67g".|
 |Trovare la corrispondenza con numeri interi e decimali|\b[0-9]*\\.\*[0-9]+\b|Trova "1.333".|
 
 > [!TIP]

@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557216"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig
 
@@ -70,7 +70,7 @@ Gravità | Effetto
 L'elenco seguente illustra le impostazioni di stile del linguaggio consentite:
 
 - Impostazioni di stile del codice .NET
-    - ["This." e "Me"](#this_and_me)
+    - [Qualificatori "This." e "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -329,13 +329,14 @@ Nella tabella seguente sono riportati i nomi delle regole, gli ID delle regole, 
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Questa regola non accetta un valore **true** o **false**; accetta invece un valore della tabella seguente:
+La regola accetta un valore della tabella seguente:
 
 | Value | Description |
 | ----- |:----------- |
 | always | Preferisce che vengano specificati i modificatori dell'accessibilità |
 | for\_non\_interface_members | Preferisce modificatori dell'accessibilità da dichiarare, fatta eccezione per i membri di interfaccia pubblica. È lo stesso di **always** ed è stato aggiunto per correzioni future se C# aggiunge metodi di interfaccia predefiniti. |
 | never | Non preferisce i modificatori dell'accessibilità da specificare |
+| omit_if_default | Preferisce che vengano specificati i modificatori dell'accessibilità, a meno che non siano il modificatore predefinito |
 
 Esempi di codice:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -1391,7 +1390,7 @@ Specificare **true** (preferire questo stile) o **false** (non preferire questo 
 Nell'elenco seguente sono illustrate le regole delle convenzioni di formattazione disponibili in Visual Studio:
 
 - Impostazioni di formattazione .NET
-    - [Organizza using](#usings)
+    - [Organizzare direttive using](#usings)
         - dotnet_sort_system_directives_first
         - dotnet_separate_import_directive_groups
 - Impostazioni di formattazione C#
@@ -2359,6 +2358,6 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 ## <a name="see-also"></a>Vedere anche
 
 - [Azioni rapide](../ide/quick-actions.md)
-- [Convenzioni di denominazione .NET per EditorConfig](../ide/editorconfig-naming-conventions.md)
+- [.NET naming conventions for EditorConfig](../ide/editorconfig-naming-conventions.md) (Convenzioni di denominazione .NET per EditorConfig)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
 - [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

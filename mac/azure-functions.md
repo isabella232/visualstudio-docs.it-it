@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984875"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -103,7 +103,7 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
     |Impostazione  |Description  |
     |---------|---------|
     |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
-    |**Sottoscrizione**|Sottoscrizione di Azure da usare.|
+    |**Sottoscrizione**|La sottoscrizione di Azure da usare.|
     |**[Gruppo di risorse](/azure/azure-resource-manager/resource-group-overview)**|Nome del gruppo di risorse in cui creare l'app per le funzioni. Scegliere **+** per creare un nuovo gruppo di risorse.|
     |**[Piano di servizio](/azure/azure-functions/functions-scale)**|Scegliere un piano esistente o creare un piano personalizzato. Scegliere una località in un'area nelle vicinanze o vicino ad altri servizi a cui accedono le funzioni.|
 
@@ -147,9 +147,7 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
     - Http POST CRUD
     - Trigger HTTP con parametri
 
-
 - **Timer**: consente di eseguire attività di pulizia o altre attività batch in una pianificazione predefinita. Questo modello supporta due campi: un nome e una pianificazione, ovvero un'espressione CRON a sei campi. Per altre informazioni, vedere [l'articolo di Funzioni di Azure con timer](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Trigger Queue**: funzione che risponde ai messaggi quando raggiungono la coda di Archiviazione di Azure. Oltre al nome della funzione, questo modello accetta una proprietà **Path** (nome della coda dalla quale verrà letto il messaggio) e una proprietà **Connection** dell'account di archiviazione (nome dell'impostazione dell'app che contiene la stringa di connessione dell'account di archiviazione). Per altre informazioni, vedere l'[articolo di Funzioni di Azure sull'archiviazione code](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

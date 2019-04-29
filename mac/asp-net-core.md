@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985683"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introduzione ad ASP.NET Core
 
@@ -63,6 +63,7 @@ Aprire ed esaminare il file **Program.cs** nel progetto. Si noti che nel metodo 
                 .UseStartup<Startup>();
     }
 ```
+
 Un'app ASP.NET Core crea un server Web nel metodo Main configurando e avviando un host tramite un'istanza di [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Questo generatore offre alcuni metodi che consentono la configurazione dell'host. Nell'app modello vengono usate le configurazioni seguenti:
 
 * `.UseStartup<Startup>()`: specifica la classe di avvio.
@@ -106,8 +107,8 @@ Aprire ed esaminare il file **Startup.cs** nel progetto:
 
 La classe di avvio deve sempre rispettare le regole seguenti:
 
- - Deve essere sempre pubblica
- - Deve contenere i due metodi pubblici `ConfigureServices` e `Configure`
+- Deve essere sempre pubblica
+- Deve contenere i due metodi pubblici `ConfigureServices` e `Configure`
 
 Il metodo `ConfigureServices` consente di definire i servizi che verranno usati dall'app.
 
@@ -220,7 +221,6 @@ Per aggiungere un controller, eseguire le operazioni seguenti:
 9. Tentare di passare a `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (sostituire `xxxx` con la porta corretta). Dovrebbe essere visualizzato quanto segue:
 
     ![Esecuzione dell'app nel browser con argomenti](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

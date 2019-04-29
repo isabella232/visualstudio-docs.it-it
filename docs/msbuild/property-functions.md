@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788542"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 
 In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usate per valutare gli script MSBuild. Le funzioni di proprietà possono essere usate ovunque siano presenti le proprietà. A differenza delle attività, le funzioni di proprietà possono essere usate all'esterno delle destinazioni e vengono valutate prima dell'esecuzione delle destinazioni.
 
  Senza usare le attività MSBuild, è possibile leggere l'ora di sistema, confrontare stringhe, trovare la corrispondenza per espressioni regolari ed eseguire altre azioni nello script di compilazione. MSBuild tenterà di convertire le stringhe in numeri e i numeri in stringhe nonché di eseguire altre conversioni secondo le esigenze.
+ 
+Nei valori stringa restituiti da funzioni di proprietà i [caratteri speciali](msbuild-special-characters.md) sono sottoposti a escape. Se si vuole che il valore venga trattato come se fosse stato inserito direttamente nel file di progetto, usare `$([MSBuild]::Unescape())` per rimuovere gli escape dai caratteri speciali.
 
 ## <a name="property-function-syntax"></a>Sintassi delle funzioni di proprietà
 
@@ -175,7 +177,7 @@ Di seguito è riportato un elenco di funzioni di proprietà MSBuild:
 |string MakeRelative(string basePath, string path)|Rende `path` relativo a `basePath`. `basePath` deve essere una directory assoluta. Se `path` non può essere reso relativo, viene restituito letteralmente. Simile a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Restituisce la stringa nel parametro 'defaultValue' solo se il parametro 'conditionValue' è vuoto. In caso contrario, restituisce il valore conditionValue.|
 
-##  <a name="nested-property-functions"></a>Funzioni di proprietà annidate
+## <a name="nested-property-functions"></a>Funzioni di proprietà annidate
 
 È possibile combinare le funzioni di proprietà per formare funzioni più complesse, come mostrato nell'esempio seguente.
 

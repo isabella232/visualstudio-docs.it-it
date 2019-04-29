@@ -18,21 +18,21 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583490"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novità di Visual Studio 2017
 
-**Contenuto aggiornato per la [versione 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Aggiornato per la [versione 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Se si sta valutando l'opportunità di eseguire l'aggiornamento da una versione precedente di Visual Studio, Visual Studio 2017 offre le funzionalità seguenti: Produttività senza precedenti per qualsiasi sviluppatore, qualsiasi app e qualsiasi piattaforma. Visual Studio 2017 è perfetto per lo sviluppo di app per Android, iOS, Windows, Linux, Web e cloud. Consente la rapida scrittura del codice, assicura facilità di debug e diagnosi e permette l'esecuzione frequente di test per il rilascio di app affidabili. È inoltre possibile rendere Visual Studio un ambiente "su misura" grazie alla possibilità di creare estensioni personalizzate. Questa versione offre eccezionali vantaggi, inclusi controllo della versione, strumenti e processi Agile ed efficienti funzionalità di collaborazione!
 
 >[!div class="button"]
->[Scaricare Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Download di Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Di seguito è riportato un riepilogo generale delle modifiche apportate dopo la versione precedente, ovvero Visual Studio 2015:
 
@@ -268,7 +268,7 @@ Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaSc
 
 **Novità della versione 15.5**: Visual Studio 2017 versione 15.5 fornisce il miglior supporto per Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update introduce anche numerosi miglioramenti per gli sviluppatori UWP. Di seguito sono riportate alcune delle principali modifiche: 
 
-* **Supporto di .NET Standard 2.0**<br/>Oltre a semplificare la distribuzione delle app, Windows 10 Fall Creators Update è la prima versione di Windows 10 a fornire il supporto di .NET 2.0 Standard. In effetti, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) è un'implementazione di riferimento della libreria di classi base che può essere implementata da qualsiasi piattaforma .NET. L'obiettivo di .NET Standard è semplificare il più possibile la condivisione del codice su qualsiasi piattaforma di lavoro .NET scelta dagli sviluppatori .NET.
+* **Supporto per .NET Standard 2.0**<br/>Oltre a semplificare la distribuzione delle app, Windows 10 Fall Creators Update è la prima versione di Windows 10 a fornire il supporto di .NET 2.0 Standard. In effetti, [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) è un'implementazione di riferimento della libreria di classi base che può essere implementata da qualsiasi piattaforma .NET. L'obiettivo di .NET Standard è semplificare il più possibile la condivisione del codice su qualsiasi piattaforma di lavoro .NET scelta dagli sviluppatori .NET.
 * **Il meglio di UWP e Win32**<br/>È stata migliorata la piattaforma Windows 10 con [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) per migliorare Windows 10 per tutti gli sviluppatori .NET, indipendentemente dal fatto che concentrino le loro attività in UWP, WPF, Windows Form o Xamarin. Con il nuovo tipo di progetto per pacchetti di app in Visual Studio 2017 versione 15.5, è possibile creare pacchetti di app Windows per i progetti WPF o Windows Form, esattamente come per i progetti UWP. Dopo aver creato il pacchetto dell'app, diventano disponibili tutti i vantaggi per la distribuzione di app Windows 10 ed è possibile scegliere Microsoft Store (per le app consumer) o Microsoft Store per le aziende e gli istituti di istruzione. Dato che le app in pacchetto hanno accesso sia alla superficie API UWP completa che alle API Win32 su desktop, è ora possibile modernizzare le applicazioni Windows Form e WPF gradualmente con le API UWP e le funzionalità di Windows 10. Inoltre, è possibile includere componenti Win32 nelle applicazioni UWP che possono così essere usate nel desktop con tutte le funzionalità Win32.
 
 Per altre informazioni sulla piattaforma UWP, vedere la pagina [Sviluppare app per la piattaforma UWP (Universal Windows Platform)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
@@ -371,9 +371,11 @@ Visual Studio 2017 viene aggiornato spesso con nuove funzionalità che possono m
 
 Per ulteriori dettagli sulle funzionalità in corso di sviluppo per Visual Studio 2017, vedere la pagina [Visual Studio Roadmap](/visualstudio/productinfo/vs2018-roadmap).
 
+Inoltre, non dimenticare di provare la versione più recente, [Visual Studio 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Contatti
 
- È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, usandoli per migliorare i propri prodotti.
+È possibile inviare commenti e suggerimenti al team di Visual Studio. Microsoft prende infatti in seria considerazione i commenti e suggerimenti ricevuti dai clienti, usandoli per migliorare i propri prodotti.
 
 Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informazioni sulle opzioni di supporto tecnico per il prodotto, vedere la pagina [Comunicazioni con Microsoft](talk-to-us.md).
 
@@ -386,7 +388,7 @@ Per inoltrare suggerimenti su come migliorare Visual Studio o per altre informaz
 * [Note sulla versione di Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Novità di Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Novità di Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Novità di C#](/dotnet/csharp/whats-new)
-* [Novità per Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novità di C#6](/dotnet/csharp/whats-new)
+* [What's New for Team Foundation Server](/tfs/server/whats-new?view=vsts) (Novità per Team Foundation Server)
 * [Novità di Visual Studio per Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novità di Visual Studio 2019](whats-new-visual-studio-2019.md)

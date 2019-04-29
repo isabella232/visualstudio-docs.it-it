@@ -1,6 +1,6 @@
 ---
 title: Creare modelli per più progetti
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430497"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 
@@ -67,6 +67,19 @@ Il file radice con estensione *vstemplate* per un modello per più progetti diff
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Se si vuole che solo il modello per più progetti venga visualizzato nella finestra di dialogo Nuovo progetto, anziché i singoli progetti che contiene, contrassegnare i modelli interni come [nascosti](../extensibility/hidden-element-visual-studio-templates.md). Ad esempio:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Creare un modello per più progetti da una soluzione esistente
 
@@ -177,6 +190,6 @@ Questo esempio usa l'elemento **SolutionFolder** per suddividere i progetti in d
 
 - [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
-- [Informazioni di riferimento sullo schema dei modelli di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
+- [Riferimento allo schema di modello di Visual Studio (estendibilità)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelli di Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
 - [Elemento ProjectTemplateLink (modelli di Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
