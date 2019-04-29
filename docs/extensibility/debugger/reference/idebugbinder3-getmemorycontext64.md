@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 522d6cc0888f3ccbfd8c39a9ec313f7e06add25f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877474"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 Converte un percorso di oggetto o un indirizzo di memoria a 64 bit in un contesto in memoria.

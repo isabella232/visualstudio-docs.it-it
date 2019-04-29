@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848194"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Analizzare un'app con IntelliTrace in Visual Studio di debug cronologico (C#, Visual Basic, C++)
 

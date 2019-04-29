@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859016"
 ---
 # <a name="source-control-integration-overview"></a>Panoramica dell'integrazione del controllo del codice sorgente
 Questa sezione Confronta i due modi per integrare nel controllo del codice sorgente Visual Studio; un controllo del codice sorgente del plug-in e un pacchetto VSPackage che fornisce una soluzione di controllo del codice sorgente e vengono evidenziate le nuove funzionalità di controllo di origine. Visual Studio consente il passaggio manuale tra controllo del codice sorgente pacchetti VSPackage e plug-in controllo codice sorgente, nonché basati su soluzioni un passaggio automatico.

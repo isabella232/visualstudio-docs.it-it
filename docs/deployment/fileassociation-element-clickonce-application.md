@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d3a43af5b2c7d50034cbed9d7da16e65b402f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928518"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (applicazione ClickOnce)
 Identifica un'estensione di file da associare all'applicazione.
@@ -40,14 +40,14 @@ Identifica un'estensione di file da associare all'applicazione.
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  L'elemento `fileAssociation` è facoltativo. L'elemento presenta gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`extension`|Obbligatorio. L'estensione di file da associare all'applicazione.|
 |`description`|Obbligatorio. Descrizione del tipo di file per l'utilizzo dalla shell.|
 |`progid`|Obbligatorio. Nome che identifica il tipo di file.|
 |`defaultIcon`|Obbligatorio. Specifica l'icona da utilizzare per i file con questa estensione. Il file di icona deve essere specificato utilizzando il [ \<file > elemento](../deployment/file-element-clickonce-application.md) all'interno di [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md) che contiene questo elemento.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo elemento deve includere un riferimento XML dello spazio dei nomi "urn: schemas-microsoft-v1". Se il `<fileAssociation>` viene usato l'elemento, deve essere specificato dopo il `<application>` elemento nel relativo elemento padre [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] non sovrascrive le associazioni di file esistenti. Tuttavia, un'applicazione ClickOnce è possibile ignorare l'estensione di file per solo l'utente corrente. Dopo la disinstallazione di tale applicazione ClickOnce, ClickOnce consente di eliminare l'associazione di file per l'utente e l'associazione per ogni macchina è attiva anche in questo caso.

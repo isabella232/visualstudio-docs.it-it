@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77fc67d50d448ef58714f4c6a8a137c86d7f9d66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864223"
 ---
 # <a name="drop-down-bar"></a>Barra di riepilogo a discesa
 La barra di riepilogo a discesa viene fornita nella parte superiore della finestra del codice e contiene due elenchi a discesa.

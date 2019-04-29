@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002448"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Specifica della traccia della selezione per la finestra Proprietà
 Se si desidera utilizzare con il **delle proprietà** finestra o il **proprietà** pagine, ad esempio, un modulo, testo o una selezione per il quale si desidera visualizzare le proprietà, è necessario avere una conoscenza approfondita di come si selezione delle coordinate. Ad esempio, è necessario sapere se si dispone di selezione singola o le selezioni multiple. È quindi necessario annunciare il tipo di selezione (uno o più) per l'IDE usando il <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaccia. Questa interfaccia fornisce le informazioni necessarie per la **proprietà** finestra.  

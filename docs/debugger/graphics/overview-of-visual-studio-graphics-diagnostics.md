@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848587"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Panoramica di Diagnostica grafica di Visual Studio
 *Diagnostica della grafica* di Visual Studio è un set di strumenti per la registrazione e l'analisi dei problemi di prestazioni e di rendering nelle app Direct3D. Diagnostica della grafica è utilizzabile in applicazioni eseguite in locale nel PC Windows o in un PC o dispositivo remoto.

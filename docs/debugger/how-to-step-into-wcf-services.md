@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: passaggio nei servizi WCF | Microsoft Docs'
+title: 'Procedura: Istruzioni nei servizi WCF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906478"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Procedura: eseguire istruzioni nei servizi WCF
+# <a name="how-to-step-into-wcf-services"></a>Procedura: Eseguire istruzioni nei servizi WCF
 In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è possibile eseguire istruzioni in un servizio WCF. Se il servizio WCF si trova nella stessa soluzione [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] del client, è possibile raggiungere punti di interruzione nel servizio WCF.
 
  Per consentire il funzionamento, è necessario avere attivato il debug nel file app.config o web.config. Per informazioni su come abilitare il debug e per le limitazioni sull'esecuzione dei servizi WCF, vedere [limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md).
@@ -43,4 +43,4 @@ In [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], è pos
 ## <a name="see-also"></a>Vedere anche
 - [Debug dei servizi WCF](../debugger/debugging-wcf-services.md)
 - [Limitazioni del debug di WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Procedura: Eseguire il debug di un servizio WCF indipendente](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

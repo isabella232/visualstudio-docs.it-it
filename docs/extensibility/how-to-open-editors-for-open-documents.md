@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863129"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procedura: Aprire gli editor di documenti aperti
 Prima di una finestra del documento viene aperto un progetto, il progetto prima di tutto necessario determinare se il file è già aperto nella finestra del documento per un altro editor. Il file è possibile aprire in un editor specifico del progetto o uno degli editor standard registrato con [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].

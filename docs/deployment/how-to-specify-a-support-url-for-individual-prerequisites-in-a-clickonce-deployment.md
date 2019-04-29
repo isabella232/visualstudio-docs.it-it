@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce | Microsoft Docs'
+title: 'Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928595"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedura: Specificare un URL di supporto per i singoli prerequisiti in una distribuzione ClickOnce
 Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possibile testare la distribuzione per un numero di prerequisiti che devono essere disponibili nel computer client per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] esecuzione dell'applicazione. Queste dipendenze includono la versione minima richiesta del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], la versione del sistema operativo e tutti gli assembly che devono essere preinstallati nella global assembly cache (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], tuttavia, non è possibile installare uno di questi prerequisiti stesso. Se un prerequisito non viene trovato, semplicemente arresta l'installazione e visualizza una finestra di dialogo che spiega il motivo per cui l'installazione non è riuscita.
@@ -76,7 +76,7 @@ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] possib
    </compatibleFrameworks>
    ```
 
-7. Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione utilizzando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto di distribuzione nonché. Usare la *Mage.exe* oppure *MageUI.exe* strumenti SDK per eseguire questa attività, come la rigenerazione di questi file tramite [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cancella le modifiche manuali apportate. Per altre informazioni sull'uso di Mage.exe per firmare nuovamente i manifesti, vedere [procedura: re-sign Application and Deployment Manifests](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+7. Dopo aver modificato manualmente il manifesto dell'applicazione, è necessario firmare nuovamente il manifesto dell'applicazione utilizzando il certificato digitale, quindi aggiornare e firmare nuovamente il manifesto di distribuzione nonché. Usare la *Mage.exe* oppure *MageUI.exe* strumenti SDK per eseguire questa attività, come la rigenerazione di questi file tramite [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Cancella le modifiche manuali apportate. Per altre informazioni sull'uso di Mage.exe per firmare nuovamente i manifesti, vedere [come: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="net-framework-security"></a>.NET Framework (sicurezza)
  L'URL del supporto non viene visualizzata nella finestra di dialogo se l'applicazione viene contrassegnata per essere eseguita in attendibilità parziale.

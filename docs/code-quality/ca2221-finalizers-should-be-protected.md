@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806628"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: I finalizzatori devono essere protetti
 
@@ -34,7 +34,7 @@ ms.locfileid: "55917480"
  Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori C#, Visual Basic e Visual C++.
+ I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori c#, Visual Basic e Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impostare il finalizzatore per essere accessibile tramite la famiglia.

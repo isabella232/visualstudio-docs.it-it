@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e46ada7a4e71c5d84cbb28d86f1712bbeca6dce
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892061"
 ---
 # <a name="address-dpi-issues"></a>Problemi DPI
 Un numero crescente di dispositivi è distribuiti con "schermi". Queste schermate hanno in genere più di 200 pixel per pollice (PPID). Per lavorare con un'applicazione in tali computer sarà necessario il contenuto per la scalabilità verticale per soddisfare le esigenze di visualizzazione del contenuto a una distanza di visualizzazione normale per il dispositivo. A partire dal 2014, la destinazione principale per schermi ad alta densità è mobile computing dispositivi (Tablet, computer portatili conchiglia e telefoni).

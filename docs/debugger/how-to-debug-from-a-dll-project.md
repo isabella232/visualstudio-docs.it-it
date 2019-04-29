@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: eseguire il Debug da un progetto di DLL | Microsoft Docs'
+title: 'Procedura: Eseguire il debug da un progetto di DLL | Microsoft Docs'
 ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847967"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: eseguire il Debug da un progetto DLL in Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procedura: Eseguire il debug da un progetto DLL in Visual Studio (C#, C++, Visual Basic, F#)
 
 Un modo per un progetto di DLL di debug consiste nello specificare app chiamante nelle proprietà del progetto DLL. È quindi possibile avviare il debug dal progetto di DLL stessa. Per usare questo metodo, l'app deve chiamare la stessa DLL nella stessa posizione di quello che configurare. Se l'app Trova e carica una versione diversa della DLL, tale versione non includerà i punti di interruzione. Per altri metodi di debug di DLL, vedere [progetti di DLL di debug](../debugger/debugging-dll-projects.md).
 
@@ -53,7 +53,7 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Specificare un'app chiamante in un progetto di DLL gestita
 
-1. Selezionare il C# o di progetto DLL di Visual Basic **Esplora soluzioni**. Selezionare il **delle proprietà** icona, premere **Alt**+**invio**, o fare clic e scegliere **proprietà**.
+1. Selezionare il progetto di DLL di Visual Basic o c# in **Esplora soluzioni**. Selezionare il **delle proprietà** icona, premere **Alt**+**invio**, o fare clic e scegliere **proprietà**.
 
 1. Assicurarsi che il campo **Configurazione** nella parte superiore della finestra sia impostato su **Debug**.
 
@@ -67,7 +67,7 @@ I progetti DLL nativi e gestiti hanno impostazioni diverse per specificare le ap
 
 1. Aggiungere tutti gli argomenti della riga di comando necessari nel **argomenti della riga di comando** oppure **argomenti dell'applicazione** campo.
 
-   ![C#Finestra delle proprietà di debug](../debugger/media/dbg-debugging-properties-dll-csharp.png " C# finestra proprietà di Debug")
+   ![Finestra proprietà di Debug c#](../debugger/media/dbg-debugging-properties-dll-csharp.png "finestra proprietà di Debug c#")
 
 1. Uso **File** > **Salva elementi selezionati** oppure **Ctrl**+**S** per salvare le modifiche.
 

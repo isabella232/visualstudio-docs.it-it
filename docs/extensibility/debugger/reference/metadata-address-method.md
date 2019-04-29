@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913910"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Questa struttura rappresenta l'indirizzo di un metodo di una classe.
@@ -45,7 +45,7 @@ public struct METADATA_ADDRESS_METHOD {
 
  L'ID del metodo.
 
- [C++] `_mdToken` è un `typedef` un 32-bit `int`.
+ [C++] `_mdToken` sia un `typedef` un 32-bit `int`.
 
  dwOffset
 

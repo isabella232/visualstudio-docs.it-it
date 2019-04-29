@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: modificare tipi di carattere | Microsoft Docs'
+title: 'Procedura: Modificare i tipi di carattere | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848060"
 ---
-# <a name="how-to-change-fonts"></a>Procedura: modificare i tipi di carattere
+# <a name="how-to-change-fonts"></a>Procedura: Modificare i caratteri
 È possibile modificare il tipo di carattere, lo stile del carattere e dimensioni del carattere per le finestre di Spy + +.
 
 ### <a name="to-change-font-options"></a>Per modificare le opzioni del tipo di carattere

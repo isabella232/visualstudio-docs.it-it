@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a5108e195e5df245c72436752316e8ee91781e7d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904061"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Impostazioni di progetto per configurazioni di debug C#
 
@@ -41,7 +41,7 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 
 ## <a name="debug-tab"></a>Scheda Debug
 
-|Impostazione|Description|
+|Impostazione|Descrizione|
 |-------------------------------------| - |
 | **Configurazione** | Imposta la modalità per la compilazione dell'app. Selezionare **attiva (Debug)**, **Debug**, **rilascio**, oppure **tutte le configurazioni** dall'elenco a discesa. |
 | **Azione di avvio** | Specifica l'azione quando si seleziona **avviare** in una configurazione di Debug.<br />- **Avvia progetto** è l'azione predefinita e avvia il progetto di avvio per il debug. Per altre informazioni, vedere [scegliere il progetto di avvio](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />- **Avvia programma esterno** viene avviato e collegato a un'app che non fa parte di un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto. Per altre informazioni, vedere [Collega a processi in esecuzione con il debugger](attach-to-running-processes-with-the-visual-studio-debugger.md).<br />- **Avvia il browser con URL** ti permette di eseguire il debug di un'app web. |
@@ -53,7 +53,7 @@ Per altre informazioni, vedere [Configurazioni di debug e rilascio](how-to-set-d
 
 ## <a name="build-tab"></a>Scheda Compila
 
-|Impostazione|Description|
+|Impostazione|Descrizione|
 |-------------|-----------------|
 |**Generali** > **simboli di compilazione condizionale**|Se selezionata, definire le costanti DEBUG e TRACE.<br /><br /> Esse attivano la compilazione condizionale della [Classe Debug](/dotnet/api/system.diagnostics.debug) e della [Classe Trace](/dotnet/api/system.diagnostics.trace). Quando sono definite, i metodi delle classi Debug e Trace generano l'output per la [finestra di output](../ide/reference/output-window.md). In caso contrario, tali metodi non verranno compilati e non verrà generato alcun output.<br /><br />DEBUG in genere, viene definito nella versione di Debug di una compilazione e non definito nella versione di rilascio. TRACE viene definito nelle versioni di Debug e rilascio.|
 |**Generali** > **Ottimizza codice**|A meno che un bug presente solo nel codice ottimizzato, lasciare questa impostazione deselezionate per le compilazioni di Debug. Codice ottimizzato è più difficile eseguire il debug, poiché le istruzioni non corrispondono direttamente alle istruzioni nel codice sorgente.|

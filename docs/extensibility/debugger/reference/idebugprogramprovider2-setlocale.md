@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a9a7d31f7ac442f4a6ff529ae46f1f7492665211
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916731"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Consente di stabilire le impostazioni locali da utilizzare per tutte le risorse specifiche delle impostazioni locali.

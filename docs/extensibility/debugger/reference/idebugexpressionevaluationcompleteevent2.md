@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b5b58a5be5321c2f867daa5b46a7671dbae5d8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919920"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando la valutazione dell'espressione asincrona è stata completata.

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559837"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Eseguire l'override di metodi su tipi confrontabili
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58966916"
 
 - op_GreaterThan
 
-  In C#, i token che vengono usati per rappresentare questi operatori sono i seguenti: = =,! =, \<, e >.
+  In c#, i token che vengono usati per rappresentare questi operatori sono i seguenti: = =,! =, \<, e >.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  È possibile eliminare un avviso da questa regola se la violazione è causata da operatori mancanti e il linguaggio di programmazione non supporta l'overload degli operatori, come avviene con Visual Basic .NET. È anche possibile eliminare un avviso per da questa regola quando viene attivato per gli operatori di uguaglianza diverso da op_Equality se si determina che implementa gli operatori non ha senso nel contesto dell'applicazione. Tuttavia, dovrebbe essere sempre op_Equality e l'operatore = =, se si esegue l'override di Object. Equals.

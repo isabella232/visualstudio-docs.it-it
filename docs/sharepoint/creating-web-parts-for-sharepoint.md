@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580948"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Creazione di web part per SharePoint
   Utilizzando le web part, è possibile modificare il contenuto, l'aspetto e comportamento delle pagine di un sito di SharePoint utilizzando un browser. Web part sono controlli sul lato server che vengono eseguiti all'interno di una web part page: sono i blocchi predefiniti di pagine visualizzate in un sito di SharePoint. Vedere [blocco predefinito: Web part](http://go.microsoft.com/fwlink/?LinkID=182097).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848430"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio consente di individuare gli oggetti Direct3D che supportano un frame specifico del gioco o dell'app.
@@ -36,7 +36,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 ### <a name="graphics-object-table-format"></a>Formato della Tabella oggetti grafici
  Nella Tabella oggetti vengono visualizzati gli oggetti e le risorse Direct3D che supportano il frame associato all'evento selezionato, ad esempio gli oggetti di stato, i buffer, gli shader, le trame e altre risorse. Gli oggetti creati nel frame precedente ma non usati durante il frame acquisito vengono omessi dalla tabella degli oggetti. Gli oggetti eliminati da eventi precedenti durante il frame acquisito vengono omessi negli eventi successivi. Gli oggetti che non vengono impostati per D3D10Device o D3D11DeviceContext vengono visualizzati come testo in grigio. Gli oggetti vengono visualizzati in un formato tabella.
 
-|Colonna|Description|
+|Colonna|Descrizione|
 |------------|-----------------|
 |**Identificatore**|ID dell'oggetto.|
 |**Name**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|
@@ -78,7 +78,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
  Si può anche selezionare/deselezionare la casella di controllo **Mostra offset** per nascondere o visualizzare l'offset di ogni elemento del buffer.
 
-|Tipo|Description|
+|Tipo|Descrizione|
 |----------|-----------------|
 |**float**|Valore a virgola mobile a 32 bit.|
 |**float2**|Vettore che contiene due valori a virgola mobile a 32 bit.|
@@ -111,4 +111,4 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 
 ## <a name="see-also"></a>Vedere anche
 - [Diagnostica della grafica (debug della grafica DirectX)](visual-studio-graphics-diagnostics.md)
-- [Procedura dettagliata: oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Procedura dettagliata: Oggetti mancanti a causa dello stato del dispositivo](walkthrough-missing-objects-due-to-device-state.md)

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797179"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Non eseguire il cast inutilmente
 
@@ -41,7 +41,7 @@ Per l'analisi completa da questa regola, l'assembly testata deve essere compilat
 ## <a name="rule-description"></a>Descrizione della regola
 I cast duplicati comportano una riduzione delle prestazioni, in particolare quando i cast vengono eseguiti in istruzioni di iterazione compatte. Per le operazioni cast duplicati esplicito, archiviare il risultato del cast in una variabile locale e usare la variabile locale anziché le operazioni cast duplicati.
 
-Se il codice C# `is` operatore viene usato per verificare se il cast sarà completato prima di eseguita il cast effettivo, è consigliabile testare il risultato del `as` operatore invece. Questo offre la stessa funzionalità senza l'operazione di cast implicito che viene eseguita mediante il `is` operatore. In alternativa, in C# 7.0 e versioni successive, usare il `is` operatore con [criteri di ricerca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) per controllare la conversione del tipo ed eseguire il cast l'espressione a una variabile di quel tipo in un unico passaggio.
+Se il codice c# `is` operatore viene usato per verificare se il cast sarà completato prima di eseguita il cast effettivo, è consigliabile testare il risultato del `as` operatore invece. Questo offre la stessa funzionalità senza l'operazione di cast implicito che viene eseguita mediante il `is` operatore. In alternativa, in c# 7.0 e versioni successive, usare il `is` operatore con [criteri di ricerca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) per controllare la conversione del tipo ed eseguire il cast l'espressione a una variabile di quel tipo in un unico passaggio.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare l'implementazione del metodo per ridurre al minimo il numero di operazioni cast.
@@ -50,7 +50,7 @@ Se il codice C# `is` operatore viene usato per verificare se il cast sarà compl
  È sicuro per eliminare un avviso da questa regola o di ignorare completamente la regola se le prestazioni non costituiscono un problema.
 
 ## <a name="examples"></a>Esempi
- L'esempio seguente illustra un metodo che viola la regola usando il codice C# `is` operatore. Un secondo metodo soddisfa la regola, sostituendo il `is` operatore con il risultato di un test di `as` operatore, che riduce il numero di operazioni di cast per ogni iterazione da due a uno. Un terzo metodo soddisfa anche la regola usando `is` con [criteri di ricerca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) per creare una variabile del tipo desiderato se la conversione del tipo potrebbe avere esito positivo.
+ L'esempio seguente illustra un metodo che viola la regola usando il codice c# `is` operatore. Un secondo metodo soddisfa la regola, sostituendo il `is` operatore con il risultato di un test di `as` operatore, che riduce il numero di operazioni di cast per ogni iterazione da due a uno. Un terzo metodo soddisfa anche la regola usando `is` con [criteri di ricerca](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) per creare una variabile del tipo desiderato se la conversione del tipo potrebbe avere esito positivo.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
@@ -61,5 +61,5 @@ Se il codice C# `is` operatore viene usato per verificare se il cast sarà compl
 
 ## <a name="see-also"></a>Vedere anche
 
-- [As (riferimenti per C#)](/dotnet/csharp/language-reference/keywords/as)
-- [Is (riferimenti per C#)](/dotnet/csharp/language-reference/keywords/is)
+- [As (riferimenti per c#)](/dotnet/csharp/language-reference/keywords/as)
+- [Is (riferimenti per c#)](/dotnet/csharp/language-reference/keywords/is)

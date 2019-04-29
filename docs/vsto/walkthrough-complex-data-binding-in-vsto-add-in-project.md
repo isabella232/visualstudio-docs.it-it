@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981633"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Procedura dettagliata: Data binding complesso in progetto di componente aggiuntivo VSTO
   È possibile associare dati a controlli host e Windows Form in progetti di componente aggiuntivo VSTO. Questa procedura dettagliata illustra come aggiungere controlli a un foglio di lavoro di Microsoft Office Excel e associare i controlli ai dati in fase di esecuzione.

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: eseguire il Debug in modalità mista | Microsoft Docs'
+title: 'Procedura: Eseguire il debug in modalità mista | Microsoft Docs'
 ms.date: 11/05/2018
 ms.topic: conceptual
 dev_langs:
@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894378"
 ---
-# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: eseguire il Debug in modalità mista (C#, C++, Visual Basic)
+# <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Procedura: Eseguire il debug in modalità mista (C#, C++, Visual Basic)
 
 Le procedure seguenti descrivono come abilitare il debug per codice gestito e nativo contemporaneamente, noto anche come in modalità mista di debug. Esistono due scenari di debug in modalità mista:
 
@@ -53,7 +53,7 @@ Se non si ha accesso al progetto dell'app chiamante, è possibile eseguire il de
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Abilitare il debug in modalità mista per un'app gestita da chiamata
 
-1. Selezionare il C# o progetto di Visual Basic **Esplora soluzioni** e selezionare il **proprietà** icona, premere **Alt**+**INVIO**, o fare clic e scegliere **proprietà**.
+1. Selezionare il progetto c# o Visual Basic **Esplora soluzioni** e selezionare il **delle proprietà** icona, premere **Alt**+**invio**, oppure fare doppio clic su e scegliere **delle proprietà**.
 
 1. Selezionare il **Debug** scheda e quindi selezionare **Abilita debug codice nativo**.
 
@@ -62,7 +62,7 @@ Se non si ha accesso al progetto dell'app chiamante, è possibile eseguire il de
    ![Abilita debug codice nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "Abilita debug codice nativo")
 
 > [!NOTE]
-> Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017, è necessario usare il *launchsettings. JSON* file anziché le proprietà del progetto per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [eseguire il Debug di codice gestito e nativo](../debugger/how-to-debug-managed-and-native-code.md).
+> Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2017 è necessario usare il file *launchSettings.json*, anziché le proprietà del progetto, per abilitare il debug in modalità mista per il codice nativo in un'app .NET Core. Per informazioni dettagliate, vedere [eseguire il Debug di codice gestito e nativo](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Vedere anche
 

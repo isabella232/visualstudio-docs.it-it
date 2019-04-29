@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4a21f07d4fd4fe055ebee4d6c7d5cd1faed0a3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853275"
 ---
 # <a name="vtableshape"></a>VTableShape
 Il [VTable](../../debugger/debug-interface-access/vtable.md) simbolo include un simbolo di classe figlio identificato dal `SymTagVTableShape` tag.
@@ -26,7 +26,7 @@ Il [VTable](../../debugger/debug-interface-access/vtable.md) simbolo include un 
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Se la classe dell'oggetto VTable è contrassegnata come costante.|
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Numero di voci in VTable.|

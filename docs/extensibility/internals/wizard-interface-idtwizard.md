@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb22e857322cbd1893048392de85768287339198
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856773"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaccia della procedura guidata (IDTWizard)
 L'ambiente di sviluppo integrato (IDE) usa il <xref:EnvDTE.IDTWizard> interfaccia per comunicare con le procedure guidate. Procedure guidate devono implementare questa interfaccia per essere installate nell'IDE.

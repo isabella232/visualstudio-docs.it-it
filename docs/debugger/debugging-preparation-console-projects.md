@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852078"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparazione al debug: Progetti Console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Debug della preparazione: Progetti di console (C#, C++, Visual Basic, F#)
 
-La preparazione per il debug di un progetto console è simile a quella di un progetto Windows, ma è necessario tenere presente alcune ulteriori considerazioni. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug:  Applicazioni Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
+La preparazione per il debug di un progetto console è simile a quella di un progetto Windows, ma è necessario tenere presente alcune ulteriori considerazioni. Per altre informazioni, vedere [Windows Forms Application](../debugger/debugging-preparation-windows-forms-applications.md), e [preparazione al debug: Windows Forms Application (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). A causa delle similitudini esistenti tra tutte le applicazioni console, in questo argomento vengono trattati i seguenti tipi di progetto:
 
 - C#, Visual Basic, e F# applicazione Console
 
@@ -35,7 +35,7 @@ La preparazione per il debug di un progetto console è simile a quella di un pro
 
 - Applicazione console C++ (Win32)
 
-  Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), o [impostazioni di progetto per C# Debug Le configurazioni](../debugger/project-settings-for-csharp-debug-configurations.md).
+  Potrebbe essere necessario specificare gli argomenti della riga di comando per l'applicazione console. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per una configurazione di Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), o [impostazioni di progetto per configurazioni di Debug c# ](../debugger/project-settings-for-csharp-debug-configurations.md).
 
   Come tutte le proprietà di progetto, questi argomenti sono persistenti tra le sessioni di debug e tra le sessioni di Visual Studio. Se in precedenza si è eseguito il debug dell'applicazione console, si tenga quindi presente che alcuni argomenti nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** potrebbero essere stati ricavati dalle sessioni precedenti.
 

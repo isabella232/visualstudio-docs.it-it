@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826709"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procedura: Aggiungere controlli ListObject a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nei progetti a livello di documento.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929139"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrittura e debug del codice XAML in esecuzione con ricaricamento a caldo di XAML in Visual Studio
 
@@ -43,8 +43,8 @@ Di seguito sono noti limitazioni di XAML a caldo ricarica. Per risolvere qualsia
 
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
-|Collegare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Vedere l'errore: *assicurarsi evento non è riuscita*|
-|Creazione di oggetti di risorse in un dizionario risorse, ad esempio quelli nella pagina o finestra dell'app o *App*|Non supportato|Supportato|Esempio: aggiunta di un ```SolidColorBrush``` in un dizionario risorse per l'utilizzo come un ```StaticResource```.</br>Nota: Le risorse statiche, convertitori di tipi di stile e altri elementi scritti in un dizionario risorse possono essere applicato o utilizzato durante l'utilizzo di ricaricamento a caldo di XAML. Non è supportata solo la creazione della risorsa.</br> La modifica del dizionario risorse ```Source``` proprietà.| 
+|Collegare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Errore, vedere: *Verificare l'evento non è riuscita*|
+|Creazione di oggetti di risorse in un dizionario risorse, ad esempio quelli nella pagina o finestra dell'app o *App*|Non supportato|Supportato|Esempio: aggiunta di un ```SolidColorBrush``` in un dizionario risorse per l'utilizzo come un ```StaticResource```.</br>Nota: Risorse statiche, convertitori di tipi di stile e altri elementi scritti in un dizionario risorse possono essere applicato o utilizzato durante l'utilizzo di ricaricamento a caldo di XAML. Non è supportata solo la creazione della risorsa.</br> La modifica del dizionario risorse ```Source``` proprietà.| 
 |Aggiunta di nuovi controlli, le classi, windows o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
 |La gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
 |Modifica data binding, che usa l'estensione di markup {X:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non è supportato in Visual Studio 2018 o versioni precedenti|
@@ -53,7 +53,7 @@ Di seguito sono noti limitazioni di XAML a caldo ricarica. Per risolvere qualsia
 
 È possibile imbattersi nei seguenti errori durante l'utilizzo di ricaricamento a caldo di XAML.
 
-|Messaggio di errore|Description|
+|Messaggio di errore|Descrizione|
 |-|-|-|
 |Verificare l'evento non è riuscita|Errore indica che si sta tentando di collegare un evento a uno dei controlli, che non è supportato durante l'esecuzione dell'applicazione.|
 |La funzionalità Modifica e continuazione di XAML non ha trovato elementi da aggiornare.|Errore si verifica quando si sta modificando XAML che a caldo ricaricare non è possibile aggiornare nell'app.</br> Questo errore può essere talvolta risolto usando l'app in esecuzione per passare a una vista in cui viene usato il XAML.</br> In alcuni casi, questo errore indica che la modifica specifica non può essere applicata finché non si riavvia la sessione di debug. |

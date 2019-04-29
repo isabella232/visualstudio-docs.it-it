@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909209"
 ---
 # <a name="model-for-source-control-packages"></a>Modello per i pacchetti del controllo del codice sorgente
 Il modello seguente rappresenta un esempio di implementazione di un controllo di origine. Nel modello, vengono visualizzati le interfacce da implementare e i servizi di ambiente che è necessario chiamare. Come tutti i servizi, è effettivamente chiamare i metodi di una determinata interfaccia che è possibile ottenere tramite il servizio. I nomi delle classi vengono identificati per renderne più semplice visualizzare come controllo del codice sorgente viene eseguito.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec5fea99994b891250dad85cfc43320848df98f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555104"
 ---
 # <a name="cvcalle"></a>CV_call_e
 Specifica la convenzione di chiamata per una funzione.
@@ -51,7 +51,7 @@ CV_CALL_THISCALL specifica utilizzando una convenzione di chiamata di funzioni `
 
 Specifica CV_CALL_CLRCALL una convenzione di chiamata di funzioni usata da Common Language Runtime (CLR) (noto anche come un codice gestito convenzione di chiamata).
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_callingconvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md) (metodo).
 
 ## <a name="requirements"></a>Requisiti

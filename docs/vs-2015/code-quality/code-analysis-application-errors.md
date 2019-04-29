@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422747"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

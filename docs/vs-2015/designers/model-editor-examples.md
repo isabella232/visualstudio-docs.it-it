@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 47fc6336b45e5ad2a333c9afa3dfb7acd11c9a4d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422815"
 ---
 # <a name="model-editor-examples"></a>Esempi dell'editor di modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Gli articoli di questa sezione della documentazione contengono esempi che illust
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Procedura: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)|Viene illustrato come creare un modello tridimensionale di base.|  
 |[Procedura: Modificare il punto di perno di un modello 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Viene illustrato come modificare il punto pivot di un modello tridimensionale e ridimensionarlo.|  

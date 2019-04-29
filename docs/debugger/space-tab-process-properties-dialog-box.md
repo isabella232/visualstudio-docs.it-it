@@ -11,18 +11,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 563d54c39b4d9ce3bb2d76a9e531161c2c4ee5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929813"
 ---
 # <a name="space-tab-process-properties-dialog-box"></a>Scheda Spazio, finestra di dialogo Proprietà processo
 Usare la **spazio** pressione di tab per esaminare lo spazio degli indirizzi di un processo. Per visualizzare il [finestra di dialogo Proprietà processo](../debugger/process-properties-dialog-box.md), spostare lo stato attivo su un [visualizzazione processi](../debugger/processes-view.md) finestra. Selezionare qualsiasi nodo del processo nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.
 
  Le impostazioni seguenti sono disponibili sul **spazio** scheda:
 
-|Voce|Description|
+|Voce|Descrizione|
 |-----------|-----------------|
 |**Mostra per lo spazio di memoria di tipo**|Utilizzare questa casella di riepilogo per selezionare la categoria di spazio (immagine, il mapping, riservati o non assegnati).|
 |**Byte eseguibili**|Per la categoria selezionata, la somma di tutto lo spazio di indirizzi che usa questo processo. File eseguibile è la memoria che possono essere eseguita da programmi, ma potrebbe non essere letto o scritta.|

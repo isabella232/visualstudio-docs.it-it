@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943469"
 ---
 # <a name="flowchart-activity-designer"></a>ActivityDesigner Diagramma di flusso
 L'attività <xref:System.Activities.Statements.Flowchart> viene usata per creare flussi di lavoro che definiscono e gestiscono controlli di flusso complessi. È possibile creare un'attività <xref:System.Activities.Statements.Flowchart> tramite codice o usando [!INCLUDE[wfd2](../includes/wfd2-md.md)]. In questo argomento viene descritto come usare [!INCLUDE[wfd2](../includes/wfd2-md.md)] a tale scopo. L'ActivityDesigner per i flussi di lavoro di [!INCLUDE[wfd1](../includes/wfd1-md.md)] consente agli sviluppatori di creare flussi di lavoro in modo naturale.  

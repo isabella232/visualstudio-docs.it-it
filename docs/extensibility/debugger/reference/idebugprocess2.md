@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e6ef6df6419f43201555f1dcc275b44d2a0e9737
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917788"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Questa interfaccia rappresenta un processo in esecuzione su una porta. Se la porta è la porta locale, quindi `IDebugProcess2` rappresenta in genere un processo nel computer locale fisico.

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905902"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Procedura: Scrivere una funzione per la segnalazione degli errori di runtime (C++)
 Una funzione personalizzata per la segnalazione degli errori di runtime deve avere la stessa dichiarazione di `_CrtDbgReportW` e deve restituire al debugger il valore 1.

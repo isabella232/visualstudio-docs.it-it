@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dc7c8db4ab28e0bd0fcb48f352cb07595f72fd17
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000883"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Elimina un membro in base al nome.  
@@ -43,7 +43,7 @@ HRESULT DeleteMemberByName(
  `grfdex`  
  Determina se il nome del membro viene fatta distinzione tra maiuscole e minuscole. Ciò può essere uno dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |fdexNameCaseSensitive|Richieste che si eseguire la ricerca del nome in modo distinzione maiuscole/minuscole. Può essere ignorato dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  
 |fdexNameCaseInsensitive|Richieste che si eseguire la ricerca del nome in modo tra maiuscole e minuscole. Può essere ignorato dall'oggetto che non supporta la ricerca tra maiuscole e minuscole.|  

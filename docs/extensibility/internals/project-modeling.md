@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3a2ae395d94d76fd2b11de33cc6d5053d8b92432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859664"
 ---
 # <a name="project-modeling"></a>Definizione di modelli di progetto
 Il passaggio successivo nella fornitura di automazione per il progetto consiste nell'implementare gli oggetti di progetto standard: la <xref:EnvDTE.Projects> e `ProjectItems` raccolte; gli `Project` e <xref:EnvDTE.ProjectItem> oggetti; e gli oggetti rimanenti univoci per l'implementazione. Questi oggetti standard sono definiti nel file Dteinternal.h. Nell'esempio BscPrj viene fornita un'implementazione degli oggetti standard. È possibile usare queste classi come modelli per creare gli oggetti di progetto standard che ostacolano il settore side-by-side con gli oggetti di progetto da altri tipi di progetto.

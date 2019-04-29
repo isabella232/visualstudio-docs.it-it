@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990870"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
 Determina se un debugger di just-in-time (JIT) è registrato in auto-debug dumb host.  
@@ -37,7 +37,7 @@ BOOL FIsAutoJitDebugEnabled();
  Questo metodo non accetta parametri.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se il metodo ha esito positivo e un debugger JIT è registrato in auto-debug dumb host, il metodo restituisce `TRUE`. In caso contrario restituirà `FALSE`.  
+ Se il metodo ha esito positivo e un debugger JIT è registrato in auto-debug dumb host, il metodo restituisce `TRUE`. In caso contrario, restituirà `FALSE`.  
   
 ## <a name="remarks"></a>Note  
  Questo metodo determina se un debugger JIT è registrato per auto-debug dumb host.  

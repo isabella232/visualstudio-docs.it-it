@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909817"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Gerarchie in Visual Studio
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) consente di visualizzare un progetto come un *gerarchia*. Nell'IDE di una gerarchia è una struttura ad albero dei nodi, in cui ogni nodo dispone di un set di proprietà associate. Oggetto *gerarchia del progetto* è un contenitore che contiene gli elementi del progetto, relazioni, degli elementi e delle proprietà dell'elemento associato e i comandi.

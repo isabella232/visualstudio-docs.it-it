@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c46b629227b1b3d73ee4bc6a265c867921937df2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966963"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>Procedura: Creare un'estensione di elemento di progetto SharePoint
   Creare un'estensione di elemento di progetto quando si desidera aggiungere funzionalità a un elemento di progetto SharePoint che è già installato in Visual Studio. Per altre informazioni, vedere [elementi di progetto SharePoint estendere](../sharepoint/extending-sharepoint-project-items.md).

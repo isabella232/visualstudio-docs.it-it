@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003618"
 ---
 # <a name="active-script-authoring-interfaces"></a>Interfacce metodo Script ActiveX
 Il file di intestazione ActivAut.h fornisce le interfacce elencate in questa sezione.  

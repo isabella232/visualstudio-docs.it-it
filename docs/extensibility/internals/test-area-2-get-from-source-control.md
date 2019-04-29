@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908918"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Area di test 2: Caricare dal controllo del codice sorgente
 Questa area di test riguarda casi di test per il recupero di elementi dall'archivio delle versioni tramite il comando Get. Questi test case possono essere applicati a locali e ai progetti Web.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826934"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Concedere l'attendibilità alle soluzioni Office
   Concedere l'attendibilità Office solutions significa che modifica i criteri di sicurezza di ogni computer di destinazione per considerare attendibile l'assembly della soluzione, manifesto dell'applicazione, manifesto della distribuzione e documenti. È possibile concedere attendibilità alla soluzione Office per l'utente o l'utente finale.

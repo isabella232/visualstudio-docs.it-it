@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852690"
 ---
 # <a name="debugger-project-settings"></a>Impostazioni di progetto correlate al debugger
 Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste impostazioni vengono definiti determinati aspetti del processo di debug, ad esempio le directory esaminate dal debugger, il comando e i relativi argomenti utilizzati per l'avvio del programma e il tipo di informazioni di debug create per il programma. Per modificare le impostazioni, è possibile utilizzare la finestra di dialogo **Pagine delle proprietà** .
@@ -29,11 +29,11 @@ Sul debug influiscono anche alcune impostazioni del progetto. Mediante queste im
  In questa sezione vengono descritte le opzioni disponibili e viene illustrato come impostarle.
 
 ## <a name="in-this-section"></a>In questa sezione
- [Procedura: specificare le impostazioni del Debugger](../debugger/how-to-specify-debugger-settings.md) descrive le impostazioni del debugger nel **opzioni** nella finestra di dialogo.
+ [Procedura: Specificare le impostazioni del Debugger](../debugger/how-to-specify-debugger-settings.md) descrive queste impostazioni, utilizzare il **opzioni** nella finestra di dialogo.
 
- [Come: Set di configurazioni di Debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md) descrive le **eseguire il Debug** e **versione** le impostazioni e come passare tra loro.
+ [Procedura: Impostare configurazioni Debug e Release](../debugger/how-to-set-debug-and-release-configurations.md) descrive le **eseguire il Debug** e **versione** le impostazioni e come passare tra loro.
 
- [Impostazioni per una configurazione di Debug C++ Project](../debugger/project-settings-for-a-cpp-debug-configuration.md) sono elencate le proprietà disponibili nella **pagine delle proprietà** finestra di dialogo per progetti C o C++.
+ [Impostazioni di Project per un C++ configurazione di Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md) sono elencate le proprietà disponibili nella **pagine delle proprietà** finestra di dialogo per C o C++ progetti.
 
  [Impostazioni di progetto C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) sono elencate le proprietà disponibili nella **pagine delle proprietà** finestra di dialogo C# progetti.
 

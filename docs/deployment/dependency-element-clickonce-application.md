@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900358"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dipendenza&gt; elemento (applicazione ClickOnce)
 Identifica una dipendenza di piattaforma o un assembly che è necessaria per l'applicazione.

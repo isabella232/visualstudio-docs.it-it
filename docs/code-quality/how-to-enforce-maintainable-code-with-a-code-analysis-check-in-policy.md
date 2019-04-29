@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815826"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedura: Imporre codice di facile manutenibilità con criteri di controllo dell'analisi codice
 

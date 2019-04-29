@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909196"
 ---
 # <a name="projects"></a>Progetti
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse che vengono visualizzati nella **Esplora soluzioni**. In genere, i progetti sono file (ad esempio, un file con estensione csproj per un progetto c#) che archiviano i riferimenti ai file del codice sorgente e le risorse, ad esempio i file bitmap. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente, i riferimenti a servizi Web e database e altre risorse. I pacchetti VSPackage possono estendere il sistema di progetto di Visual Studio in tre modi principali: *tipi di progetto*, *sottotipi di progetto*, e *strumenti personalizzati*.
@@ -37,7 +37,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
 
  Viene illustrato il progetto Web, che consentono di creare applicazioni Web.
 
-- [Nuova generazione del progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Generazione di un nuovo progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nuova generazione progetto: dietro le quinte, seconda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
  Viene illustrato ciò che effettivamente si verifica quando si crea un nuovo progetto.
 

@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003392"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Condivisione di classi tra DSL utilizzando una libreria DSL
 In Visual Studio Visualization and Modeling SDK è possibile creare una definizione DSL incompleta che è possibile importare in un altro linguaggio specifico di dominio. Ciò consente di scomporre le parti comuni dei modelli simili.

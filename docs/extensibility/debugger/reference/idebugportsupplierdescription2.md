@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5f210d3f0f8f2a9d28abee3d1956a3b4d09038a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918121"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Consente il [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] dell'interfaccia utente per visualizzare il testo all'interno di **informazioni sul trasporto** sezione del **Connetti a processo** nella finestra di dialogo.

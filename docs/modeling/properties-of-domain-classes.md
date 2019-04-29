@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fb66a0d497c86091f689f119e57a5230f125e8de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999192"
 ---
 # <a name="properties-of-domain-classes"></a>Proprietà delle classi di dominio
 Classi di dominio hanno le proprietà nella tabella seguente. Per informazioni sulle classi di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -27,7 +27,7 @@ Classi di dominio hanno le proprietà nella tabella seguente. Per informazioni s
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|`False`|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dalla classe di dominio (`none`, `abstract` o `sealed`).|`none`|
 |Classe di base|Se questa classe di dominio è derivata, il nome della classe di base.|\<nessuno>|
-|nome|Il nome di questa classe di dominio.|Nome corrente|
+|Nome|Il nome di questa classe di dominio.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi di questa classe di dominio.|Spazio dei nomi corrente|
 |Note|Note informali associate a questa classe di dominio.|\<nessuno>|
 |Descrizione|La descrizione che consente di documentare l'interfaccia utente della finestra di progettazione generata.|\<nessuno>|

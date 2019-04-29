@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859155"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
 L'ambiente gestisce il salvataggio, Salva con nome e salvare tutti i comandi. Quando un utente seleziona **salvare**, **Salva con nome**, o **Salva tutto** dal **File** dal menu o chiude la soluzione, causando un  **Salva tutto**, verifica quanto segue.

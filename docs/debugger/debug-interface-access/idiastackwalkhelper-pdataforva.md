@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6315032a36369eff7a5d43241ae4968a64ad42cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831895"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 Restituisce il blocco di dati PDATA associato all'indirizzo virtuale.
@@ -53,7 +53,7 @@ HRESULT pdataForVA( 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se è presente alcun PDATA per l'indirizzo specificato. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  PDATA (della sezione denominata "pdata") di un modulo contiene informazioni sulla gestione delle eccezioni per le funzioni.
 
  Il chiamante conosca la quantità di dati deve essere restituita in modo che il chiamante non ha necessità di porre per quantità di dati è disponibile. Pertanto, è accettabile per l'implementazione di questo metodo per restituire un errore se il `pbData` parametro è `NULL`.

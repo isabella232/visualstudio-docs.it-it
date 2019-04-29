@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813644"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procedura: Includere file mediante un modulo
   *I moduli* (non deve essere confusa con [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] moduli) sono contenitori che consentono di distribuire i file, ad esempio le pagine master ASPX, file di testo o immagini in SharePoint.

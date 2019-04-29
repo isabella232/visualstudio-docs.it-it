@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e79a7fd37bd5f2d5298bda6dca7568c6ba4db6ce
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823957"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Impostazione di un'immagine di sfondo in un diagramma
 In Visual Studio Visualization and Modeling SDK, è possibile impostare l'immagine di sfondo per una finestra di progettazione generata tramite codice personalizzato.

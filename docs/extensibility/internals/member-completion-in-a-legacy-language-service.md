@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909166"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Completamento dei membri in un servizio di linguaggio legacy
 
-Completamento dei membri di IntelliSense è una descrizione comando che consente di visualizzare un elenco di possibili membri di un determinato ambito, ad esempio una classe, struttura, enumerazione o dello spazio dei nomi. Ad esempio, nel linguaggio C#, se l'utente digita "this" seguito da un punto, un elenco di tutti i membri della classe o struttura nell'ambito corrente viene visualizzato in un elenco da cui l'utente può selezionare.
+Completamento dei membri di IntelliSense è una descrizione comando che consente di visualizzare un elenco di possibili membri di un determinato ambito, ad esempio una classe, struttura, enumerazione o dello spazio dei nomi. Ad esempio, nel linguaggio c#, se l'utente digita "this" seguito da un punto, un elenco di tutti i membri della classe o struttura nell'ambito corrente viene visualizzato in un elenco da cui l'utente può selezionare.
 
 Il framework di pacchetto gestito (MPF) fornisce supporto per la descrizione comando e la gestione dell'elenco nella descrizione comando; tutto ciò che serve è collaborazione proveniente dal parser per fornire i dati visualizzati nell'elenco.
 
@@ -38,13 +38,13 @@ Di seguito sono i due modi in cui viene illustrato un elenco di membri utilizzan
 
 - Il <xref:Microsoft.VisualStudio.Package.IScanner> scanner rileva un carattere di completamento di membro e imposta un trigger di token [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) per tale carattere.
 
-Un carattere di completamento membro indica che un membro di una classe, struttura o enumerazione consiste nel seguire. In C# o Visual Basic, ad esempio, il carattere di completamento membro è un `.`, mentre in C++ il carattere è un `.` o un `->`. Il valore del trigger è impostato quando viene analizzato il carattere di selezione del membro.
+Un carattere di completamento membro indica che un membro di una classe, struttura o enumerazione consiste nel seguire. In c# o Visual Basic, ad esempio, il carattere di completamento membro è un `.`, mentre in C++ il carattere è un `.` o un `->`. Il valore del trigger è impostato quando viene analizzato il carattere di selezione del membro.
 
 ### <a name="the-intellisense-member-list-command"></a>Il comando di elenco di membri IntelliSense
 
 Il <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando avvia una chiamata al <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo sul <xref:Microsoft.VisualStudio.Package.Source> classe e il <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metodo, a sua volta, chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> parser di metodo con il motivo di analisi di [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-Il parser determina il contesto della posizione corrente, nonché il token sotto o immediatamente prima della posizione corrente. Basato su questo token, viene presentato un elenco di dichiarazioni. Ad esempio, in C#, se si posiziona il cursore su un membro di classe e selezionare **Elenca membri**, otterrai un elenco di tutti i membri della classe. Se si posiziona il cursore dopo un periodo che segue una variabile oggetto, si ottiene un elenco di tutti i membri della classe di tale oggetto rappresenta. Si noti che se il cursore è posizionato su un membro quando viene visualizzato l'elenco dei membri, se si seleziona un membro dall'elenco sostituisce il membro che si trova il cursore con l'uno nell'elenco.
+Il parser determina il contesto della posizione corrente, nonché il token sotto o immediatamente prima della posizione corrente. Basato su questo token, viene presentato un elenco di dichiarazioni. Ad esempio, in c#, se si posiziona il cursore su un membro di classe e selezionare **Elenca membri**, otterrai un elenco di tutti i membri della classe. Se si posiziona il cursore dopo un periodo che segue una variabile oggetto, si ottiene un elenco di tutti i membri della classe di tale oggetto rappresenta. Si noti che se il cursore è posizionato su un membro quando viene visualizzato l'elenco dei membri, se si seleziona un membro dall'elenco sostituisce il membro che si trova il cursore con l'uno nell'elenco.
 
 ### <a name="the-token-trigger"></a>Il Trigger di Token
 
@@ -103,7 +103,7 @@ Per il completamento di membro, il <xref:Microsoft.VisualStudio.Package.Source> 
 
 Il parser viene chiamato con [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) oppure [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) quando viene digitato un carattere di selezione del membro. Il percorso specificato <xref:Microsoft.VisualStudio.Package.ParseRequest> oggetto è immediatamente dopo il membro selezionato carattere. Il parser deve raccogliere i nomi di tutti i membri che possono essere visualizzati in un elenco di membri in quel particolare nel codice sorgente. Il parser deve quindi analizzare la riga corrente per determinare l'ambito che il consenso dell'utente associato al carattere selezionare membro.
 
-In questo ambito si basa sul tipo di identificatore prima che il membro selezionare carattere. In C#, si consideri ad esempio la variabile membro `languageService` che è di tipo `LanguageService`e digitando **languageService.** produce un elenco di tutti i membri del `LanguageService` classe. Anche in C#, digitare **questo.** produce un elenco di tutti i membri della classe nell'ambito corrente.
+In questo ambito si basa sul tipo di identificatore prima che il membro selezionare carattere. In c#, si consideri ad esempio la variabile membro `languageService` che è di tipo `LanguageService`e digitando **languageService.** produce un elenco di tutti i membri del `LanguageService` classe. Anche in c#, digitare **questo.** produce un elenco di tutti i membri della classe nell'ambito corrente.
 
 ### <a name="parser-example"></a>Esempio di parser
 

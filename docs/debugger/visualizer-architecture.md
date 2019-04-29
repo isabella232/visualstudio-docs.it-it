@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3064f387c0a6233b1cd38c4ed81680ef7991abd4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901153"
 ---
 # <a name="visualizer-architecture"></a>Architettura del visualizzatore
 L'architettura di un visualizzatore del debugger è definita da due parti:
@@ -87,7 +87,7 @@ L'architettura di un visualizzatore del debugger è definita da due parti:
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Scrivere un visualizzatore](/visualstudio/debugger/create-custom-visualizers-of-data)
-- [Procedura dettagliata: scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Procedura dettagliata: scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Procedura dettagliata: Scrittura di un visualizzatore in Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Considerazioni sulla sicurezza del visualizzatore](../debugger/visualizer-security-considerations.md)

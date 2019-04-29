@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900859"
 ---
 # <a name="windows-view"></a>Visualizzazione finestre
 Alla prima apertura Spy + +, Windows Vista sono riportati un albero di tutte le finestre e i controlli nel sistema. Vengono visualizzati il nome di classe e di handle di finestra. La finestra del desktop corrente è nella parte superiore dell'albero. Tutte le altre finestre figlio del desktop e sono elencate in base alla gerarchia delle finestre standard. Finestre di pari livello visualizzato negli elenchi espandibili su un livello rientrati sotto padri.
@@ -31,11 +31,11 @@ Alla prima apertura Spy + +, Windows Vista sono riportati un albero di tutte le 
  Quando Windows Vista ha lo stato attivo, è possibile usare lo strumento di ricerca nel [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) per visualizzare le informazioni da tutte le finestre aperte nel sistema.
 
 ## <a name="in-this-section"></a>In questa sezione
- [Procedura: usare lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.
+ [Procedura: Usare lo strumento di ricerca](../debugger/how-to-use-the-finder-tool.md) Mostra come questo strumento esegue l'analisi di windows per le proprietà o i messaggi.
 
- [Procedura: cercare una finestra in Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) viene illustrato come trovare una specifica finestra nella visualizzazione di Windows.
+ [Procedura: Cercare una finestra in Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) viene illustrato come trovare una specifica finestra nella visualizzazione di Windows.
 
- [Procedura: visualizzare le proprietà della finestra](../debugger/how-to-display-window-properties.md) m le procedure per aprire la finestra di dialogo Proprietà finestra.
+ [Procedura: Visualizzare le proprietà della finestra](../debugger/how-to-display-window-properties.md) m le procedure per aprire la finestra di dialogo Proprietà finestra.
 
 ## <a name="related-sections"></a>Sezioni correlate
  [Visualizzazioni di Spy + +](../debugger/spy-increment-views.md) spiega le visualizzazioni dell'albero Spy + + di windows, i messaggi, processi e thread.

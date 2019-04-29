@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c069ce3781d246f4eb736f72462627d457a92a28
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890932"
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>Campo asynctaskmethodbuilder. M_builder
 Rappresenta l'oggetto generatore generico a cui questa istanza non generici delega.

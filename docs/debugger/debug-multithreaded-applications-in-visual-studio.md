@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3f2fc8b6acd38393cf9fefb1c5581ab4d1a0712
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852932"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 Un thread è una sequenza di istruzioni a cui il sistema operativo concede il tempo del processore. Ogni processo in esecuzione nel sistema operativo è composto da almeno un thread. I processi composti da più di un thread sono detti multithreading.
@@ -40,11 +40,11 @@ Il multithreading può introdurre nuovi tipi di potenziali bug. Ad esempio, due 
 
 Visual Studio offre diversi strumenti per eseguire il debug di applicazioni a thread multipli.
 
-- Per i thread sono i principali strumenti per il debug dei thread di **thread** (finestra), i marcatori dei thread nelle finestre di origine, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra e il **posizione di Debug** sulla barra degli strumenti. Per apprendere le **thread** finestra e **posizione di Debug** sulla barra degli strumenti, vedere [procedura dettagliata: eseguire il Debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md). Per informazioni su come usare il **stack in parallelo** e **espressioni di controllo parallela** windows, vedere [iniziare il debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Entrambi gli argomenti illustrano come usare i marcatori dei thread.
+- Per i thread sono i principali strumenti per il debug dei thread di **thread** (finestra), i marcatori dei thread nelle finestre di origine, il **stack in parallelo** finestra, il **espressioni di controllo parallela** finestra e il **posizione di Debug** sulla barra degli strumenti. Per apprendere le **thread** finestra e **posizione di Debug** sulla barra degli strumenti, vedere [procedura dettagliata: Eseguire il debug con la finestra Thread](../debugger/how-to-use-the-threads-window.md). Per informazioni su come usare il **stack in parallelo** e **espressioni di controllo parallela** windows, vedere [iniziare il debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md). Entrambi gli argomenti illustrano come usare i marcatori dei thread.
 
-- Per il codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime/), sono i principali strumenti per eseguire il debug di **stack in parallelo** (finestra), il **Espressioni di controllo parallela** finestra e il **attività** finestra, che supporta anche JavaScript. Per iniziare, vedere [procedura dettagliata: debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e [procedura dettagliata: debug di un'applicazione C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
+- Per il codice che usa il [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) o il [Runtime di concorrenza](/cpp/parallel/concrt/concurrency-runtime/), sono i principali strumenti per eseguire il debug di **stack in parallelo** (finestra), il **Espressioni di controllo parallela** finestra e il **attività** finestra, che supporta anche JavaScript. Per iniziare, vedere [procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md) e [procedura dettagliata: Debug di un C++ applicazione AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
-- Per il debug dei thread nella GPU, lo strumento principale è il **thread GPU** finestra. Visualizzare [procedura: utilizzare la finestra thread GPU](../debugger/how-to-use-the-gpu-threads-window.md).
+- Per il debug dei thread nella GPU, lo strumento principale è il **thread GPU** finestra. Vedere [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
 - Per i processi, sono i principali strumenti di **Connetti a processo** nella finestra di dialogo il **processi** finestra e il **posizione di Debug** sulla barra degli strumenti.
 
@@ -70,7 +70,7 @@ Spiega la procedura per eseguire il debug di più processi
 
 Procedura dettagliata che illustra come usare il **thread** finestra e il **posizione di Debug** sulla barra degli strumenti.
 
- [Procedura dettagliata: Eseguire il debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)
+ [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)
 
 Procedura dettagliata che illustra come usare il **stack in parallelo** e **attività** windows.
 
@@ -82,7 +82,7 @@ Diversi modi per cambiare il contesto di debug a un altro thread.
 
 Aggiunta di contrassegni o flag ai thread a cui è opportuno prestare particolare attenzione durante il debug.
 
- [Procedura: Eseguire il debug su un cluster ad alte prestazioni](../debugger/how-to-debug-on-a-high-performance-cluster.md)
+ [Procedura: Eseguire il debug su un cluster a prestazioni elevate](../debugger/how-to-debug-on-a-high-performance-cluster.md)
 
 Tecniche per il debug di applicazioni in esecuzione su un cluster ad alte prestazioni.
 

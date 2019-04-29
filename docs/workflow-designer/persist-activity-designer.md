@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c97d916d00d1c976b4e27381f55e42cbb7cb0db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004130"
 ---
 # <a name="persist-activity-designer"></a>ActivityDesigner Persist
 
@@ -33,7 +33,7 @@ Il **Persist** ActivityDesigner può essere trascinato dalle **della casella deg
 
 ### <a name="the-persist-properties"></a>Proprietà di Persist
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Persist> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

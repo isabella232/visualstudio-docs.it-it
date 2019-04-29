@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903044"
 ---
 # <a name="remote-debugger-port-assignments"></a>Assegnazioni delle porte del debugger remoto
 Visual Studio Remote Debugger può essere eseguito come applicazione o come servizio in background. Quando viene eseguito come applicazione, usa una porta assegnata per impostazione predefinita, come indicato di seguito:
@@ -54,12 +54,12 @@ Visual Studio Remote Debugger può essere eseguito come applicazione o come serv
  Quando viene avviata la versione a 64 bit del debugger remoto, principale Usa la porta (4022) per impostazione predefinita.  Se si esegue il debug di un processo a 32 bit, la versione a 64 bit del debugger remoto avvia una versione a 32 bit del debugger remoto sulla porta 4023 (il numero di porta principale incrementato di 1). Se si esegue il debugger remoto a 32 bit, viene usata la porta 4022 e non la porta 4023.
 :::moniker-end
 
- Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<numero porta>**.
+ Questa porta è configurabile dalla riga di comando: **Msvsmon /wow64port \<numero porta >**.
 
 ## <a name="the-discovery-port"></a>Porta di individuazione
  La porta UDP 3702 viene usata per individuare le istanze in esecuzione del debugger remoto sulla rete, ad esempio la finestra di dialogo **Trova** nella finestra di dialogo **Connetti a processo** . Viene usata solo per l'individuazione di un computer che esegue il debugger remoto, pertanto è facoltativa se si ha altro un modo per conoscere il nome del computer o l'indirizzo IP del computer di destinazione. Si tratta di una porta standard per l'individuazione, quindi non è possibile configurare il numero di porta.
 
- Se non si vuole attivare l'individuazione, è possibile avviare msvsmon dalla riga di comando con l'individuazione disabilitata:  **Msvsmon /nodiscovery**.
+ Se non si desidera abilitare l'individuazione, è possibile avviare msvsmon dalla riga di comando con l'individuazione disabilitata:  **Msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Porte del debugger remoto in Azure
  Il debugger remoto in Azure usa le porte indicate di seguito. Le porte del servizio cloud sono mappate alle porte nelle singole macchine virtuali. Tutte le porte sono TCP.

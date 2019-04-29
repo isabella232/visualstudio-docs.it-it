@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826379"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Procedura: Configurare la sicurezza di elenco di inclusione
   Se si dispone delle autorizzazioni di amministratore, è possibile configurare il [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] richiesta di attendibilità per controllare se gli utenti finali è data la possibilità di installare le soluzioni Office mediante il salvataggio di una decisione di attendibilità per l'elenco di inclusione. Per informazioni sugli elenchi di inclusione, vedere [soluzioni di Office Trust usando gli elenchi di inclusione](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).

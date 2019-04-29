@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 87d9e4ae8239994a7524cdd1da0b3cfe05ea42d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808184"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 
@@ -40,15 +40,15 @@ Esistono varie tecniche per integrare più linguaggi specifici di dominio. Per a
 
 2. Combinare i manifesti VSIX dei linguaggi specifici di dominio:
 
-   1.  Aprire _Progettovsix_**\source.extension.manifest**.
+   1. Aprire _Progettovsix_**\source.extension.manifest**.
 
-   2.  Per ogni linguaggio DSL, scegliere **Aggiungi contenuto** e aggiungere:
+   2. Per ogni linguaggio DSL, scegliere **Aggiungi contenuto** e aggiungere:
 
-       -   `Dsl*` il progetto come un **componente MEF**
+       - `Dsl*` il progetto come un **componente MEF**
 
-       -   `DslPackage*` il progetto come un **componente MEF**
+       - `DslPackage*` il progetto come un **componente MEF**
 
-       -   `DslPackage*` il progetto come un **pacchetto Visual Studio**
+       - `DslPackage*` il progetto come un **pacchetto Visual Studio**
 
 3. Compilare la soluzione.
 

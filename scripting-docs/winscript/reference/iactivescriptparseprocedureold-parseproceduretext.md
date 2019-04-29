@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8e521bbdcd8d7397c1c2dfb377fd9b41811499f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993215"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
 Analizza la procedura di codice specificato e aggiunge una routine anonima allo spazio dei nomi.  
@@ -68,7 +68,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  [in] Flag associato con la procedura. Può essere una combinazione di questi valori.  
   
-|Costante|Valore|Significato|  
+|Costante|Value|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|0x00000020|Indica che il codice in `pstrCode` è un'espressione che rappresenta il valore restituito della procedura.|  
 |SCRIPTPROC_IMPLICIT_THIS|0x00000100|Indica che il `this` puntatore è incluso nell'ambito della procedura.|  

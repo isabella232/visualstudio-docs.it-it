@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825821"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
 
@@ -27,7 +27,7 @@ Spesso è utile indicare che un messaggio di avviso non è applicabile. Ciò ind
 
 Il <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo è un attributo di tipo condizionale, che è incluso nei metadati dell'assembly del codice gestito, solo se il simbolo di compilazione CODE_ANALYSIS è definito in fase di compilazione.
 
-In C + + c++ /CLI CLI, utilizzare le macro autorità di certificazione\_SUPPRESS\_messaggio o autorità di certificazione\_GLOBAL\_SUPPRESS_MESSAGE nel file di intestazione per aggiungere l'attributo.
+In C++/CLI, utilizzare le macro CA\_SUPPRESS\_messaggio o autorità di certificazione\_GLOBAL\_SUPPRESS_MESSAGE nel file di intestazione per aggiungere l'attributo.
 
 > [!NOTE]
 > Non utilizzare le eliminazioni nell'origine nelle build di rilascio, per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. Inoltre, a causa del costo di elaborazione di eliminazione nell'origine, è possono peggiorare le prestazioni dell'applicazione.

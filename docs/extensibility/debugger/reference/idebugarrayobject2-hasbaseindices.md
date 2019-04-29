@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
+dev_langs:
+- CPP
+- CSharp
 ms.openlocfilehash: 4cefac01da741c34c79c7c0d4b709d9a99ac8dae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877634"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 Determina se la matrice ha definiti indici base (inferiore).
@@ -35,8 +38,8 @@ int HasBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pfHasBaseIndices`
+## <a name="parameters"></a>Parametri
+ `pfHasBaseIndices`\
 
  [out] TRUE per specificare che la matrice dispone di indici di base (limiti inferiori); in caso contrario, FALSE.
 

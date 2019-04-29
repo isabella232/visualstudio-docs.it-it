@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993423"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 Chiamata eseguita per informare l'oggetto del profiler, ogni volta che viene arrestata la profilatura su un motore di scripting. In questo modo, l'oggetto del profiler può chiamare le routine di pulizia, se necessario. Questo metodo viene chiamato dal motore di script anche quando il motore di script è in fase di arresto o quando una chiamata a [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) ha esito negativo.  

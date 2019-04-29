@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900502"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 
@@ -42,11 +42,11 @@ Visual Studio offre le seguenti opzioni per la generazione del manifesto:
 
    Questo approccio è noto anche come *virtualizzazione*. Usare questa opzione per la compatibilità con le applicazioni esistenti da versioni precedenti di Visual Studio.
 
-  Le nuove proprietà sono disponibili nel **Application** pagina della finestra di Progettazione progetti (per oggetto visivo C# solo progetti) e nel formato di file di progetto MSBuild.
+  Le nuove proprietà sono disponibili nel **applicazione** pagina di creazione progetti (Visual c# solo per i progetti) e nel formato di file di progetto MSBuild.
 
-  Il metodo per la configurazione di generazione del manifesto UAC nell'IDE di Visual Studio è diversa a seconda del tipo di progetto (Visual C# o Visual Basic).
+  Il metodo per la configurazione di generazione del manifesto UAC nell'IDE di Visual Studio è diversa a seconda del tipo di progetto (Visual c# o Visual Basic).
 
-  * Per informazioni sulla configurazione di oggetto visivo C# progetti per la generazione del manifesto, vedere [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
+  * Per informazioni sulla configurazione di progetti Visual c# per la generazione di manifesti, vedere [Application Page, Project Designer (c#)](../ide/reference/application-page-project-designer-csharp.md).
 
   * Per informazioni sulla configurazione di progetti Visual Basic per la generazione di manifesti, vedere [pagina dell'applicazione, creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 

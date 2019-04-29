@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e84ca70383facc608740cd42a29c4ee769adb069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909900"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posizione di comando, il gruppo e sulla barra degli strumenti predefinita
 Per prodotto uniformità e stabilità, l'interfaccia utente visualizza determinati gruppi di comandi per impostazione predefinita, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] includono le definizioni dei comandi e i gruppi di comandi. I VSPackage possono anche usare i comandi standard e i gruppi di comandi.

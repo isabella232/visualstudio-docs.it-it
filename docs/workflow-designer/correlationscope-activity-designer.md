@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949817"
 ---
 # <a name="correlationscope-activity-designer"></a>ActivityDesigner CorrelationScope
 
@@ -37,7 +37,7 @@ L'attività il cui ambito all'interno della correlazione vengono specificate ril
 
 ### <a name="the-correlationscope-properties"></a>Proprietà di Cancellationscope
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.CorrelationScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Queste proprietà possono essere modificati in **proprietà** finestra o nell'area di progettazione del flusso di lavoro e spesso in entrambe.
+Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.CorrelationScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Queste proprietà possono essere modificati in **proprietà** finestra o nell'area di progettazione del flusso di lavoro e spesso in entrambe.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

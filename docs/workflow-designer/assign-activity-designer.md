@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4179c23cefbf995242288c1e778f9e0413bfe28e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993254"
 ---
 # <a name="assign-activity-designer"></a>ActivityDesigner Assign
 
@@ -33,7 +33,7 @@ Il **assegnare** ActivityDesigner può essere trascinato dalle **della casella d
 
 ### <a name="the-assign-properties"></a>Proprietà di Assign
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Assign> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Assign> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune di esse possono essere modificate nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

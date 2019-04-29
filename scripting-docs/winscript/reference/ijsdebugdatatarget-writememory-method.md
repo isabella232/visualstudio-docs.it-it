@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 622de16cc5f755c5d69059a0e0f28d881121861c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558177"
 ---
 # <a name="ijsdebugdatatargetwritememory-method"></a>Metodo IJsDebugDataTarget::WriteMemory
 Legge la memoria del processo di destinazione.  

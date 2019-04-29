@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29d83dd1a232ae1cf0437c1ab6d4662acef2900d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928347"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] un'applicazione, una pagina Web predefinita (Publish. htm) viene generata e pubblicata insieme all'applicazione. Questa pagina contiene il nome di un collegamento a un argomento della Guida che descrive l'applicazione e un collegamento per installare l'applicazione e/o gli eventuali prerequisiti [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Il **pagina di pubblicazione** proprietà del progetto consente di specificare un nome per la pagina Web per il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione.

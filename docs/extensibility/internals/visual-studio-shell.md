@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908038"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell è l'agente primario di integrazione in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La shell fornisce la funzionalità necessaria per abilitare i pacchetti VSPackage condividere i servizi comuni. Poiché l'obiettivo dell'architettura di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste nel vest funzionalità principale in VSPackage, la shell è un framework per offrire funzionalità di base e supportare comunicazione incrociata tra pacchetti VSPackage relativo componente.

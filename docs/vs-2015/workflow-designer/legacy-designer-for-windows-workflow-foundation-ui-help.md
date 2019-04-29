@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c24816e84be2ef8f3460a04f689ecfda5400518e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000136"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
 Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto per la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Usare la finestra di progettazione legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935508"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 Interrompe l'esecuzione di un thread dello script in esecuzione (un sink di evento, un'esecuzione immediata o una chiamata di macro). Questo metodo può essere utilizzato per terminare uno script che è bloccato (ad esempio, in un ciclo infinito). Può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) (metodo).  
@@ -53,7 +53,7 @@ HRESULT InterruptScriptThread(
  `dwFlags`  
  [in] Flag di opzione associato l'interruzione. Può essere uno dei seguenti valori:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |SCRIPTINTERRUPT_DEBUG|Se supportato, immettere il debugger del motore di script in corrispondenza del punto di esecuzione di script corrente.|  
 |SCRIPTINTERRUPT_RAISEEXCEPTION|Se supportati dal linguaggio del motore di script, consente allo script di gestire l'eccezione. Il metodo di script viene interrotta e il codice di errore viene restituito al chiamante; in caso contrario, vale a dire l'invoker di evento origine o una macro.|  

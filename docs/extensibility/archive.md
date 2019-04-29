@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 05911005a0ad64687b4381684609c0aecb9005f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843618"
 ---
 # <a name="archive"></a>Archivio
 In questa sezione contiene le discussioni di tecnologie di estendibilità di Visual Studio che sono ancora supportati ma che dispongono di tecnologie di sostituzione che sono più recenti.

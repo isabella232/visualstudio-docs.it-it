@@ -1,22 +1,24 @@
 ---
 title: Compilazione da riga di comando per Azure | Documentazione Microsoft
 description: Compilazione da riga di comando per Azure
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: 94b35d0d-0d35-48b6-b48b-3641377867fd
-ms.prod: visual-studio-dev14
+ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 03/05/2017
-ms.author: ghogen
+origin.date: 03/05/2017
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 8c96713a06c66fe34e34417e9e8595ba07e50485
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989810"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Compilazione di progetti Azure dalla riga di comando
 Tramite Microsoft Build Engine (MSBuild) è possibile compilare prodotti in ambienti lab di compilazione in cui Visual Studio non è installato. MSBuild usa per i file di progetto il formato XML, che è estendibile e completamente supportato da Microsoft. Usando il formato file MSBuild è possibile indicare quali elementi devono essere compilati per una o più piattaforme o configurazioni.
@@ -26,8 +28,8 @@ Tramite Microsoft Build Engine (MSBuild) è possibile compilare prodotti in ambi
 ## <a name="msbuild-parameters"></a>Parametri MSBuild
 Il modo più semplice per creare un pacchetto consiste nell'eseguire MSBuild con l'opzione `/t:Publish` . Per impostazione predefinita, questo comando crea una directory in relazione alla cartella radice del progetto, ad esempio `<ProjectDirectory>\bin\Configuration\app.publish\`. Quando si compila un progetto Azure, vengono generati due file, il file del pacchetto e il file di configurazione di accompagnamento:
 
-* File del pacchetto (`project.cspkg`)
-* File di configurazione(`ServiceConfiguration.TargetProfile.cscfg`)
+- File del pacchetto (`project.cspkg`)
+- File di configurazione(`ServiceConfiguration.TargetProfile.cscfg`)
 
 Per impostazione predefinita, ogni progetto Azure include un file di configurazione del servizio per le compilazioni locali (debug) e un altro per le compilazioni cloud (gestione temporanea o produzione), ma è possibile aggiungere o rimuovere i file di configurazione del servizio in base alle proprie esigenze. Quando si compila un pacchetto all'interno di Visual Studio, viene chiesto quale file di configurazione del servizio includere insieme al pacchetto. Quando si compila un pacchetto usando MSBuild, il file di configurazione del servizio locale viene incluso per impostazione predefinita. Per includere un file di configurazione del servizio diverso, impostare la proprietà `TargetProfile` del comando MSBuild (`MSBuild /t:Publish /p:TargetProfile=ProfileName`).
 
@@ -35,3 +37,5 @@ Se si vuole usare una directory alternativa per i file di configurazione e del p
 
 ## <a name="next-steps"></a>Passaggi successivi
 Dopo la compilazione, sarà possibile distribuire il pacchetto in Azure.
+
+<!-- Update_Description: update metedata properties -->

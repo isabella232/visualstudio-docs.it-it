@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad90c1ec332c2f214514e660b27dc5a915485f99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856725"
 ---
 # <a name="wizards"></a>Procedure guidate
 Dopo aver creato una procedura guidata, si desidera in genere deve essere aggiunto il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo (IDE) integrato in modo che altri utenti possano usarlo. La procedura guidata di aggiunta appare nel **Aggiungi nuovo progetto** oppure **Aggiungi nuovo elemento** finestre di dialogo. Per visualizzare il **Aggiungi nuovo progetto** oppure **Aggiungi nuovo elemento** finestra di dialogo finestre, fare doppio clic su una soluzione aperta in **Esplora soluzioni**, scegliere **Aggiungi**, e quindi fare clic su **nuovo progetto** oppure **nuovo elemento**.

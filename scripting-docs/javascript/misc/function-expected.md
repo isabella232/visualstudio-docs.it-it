@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007106"
 ---
 # <a name="function-expected"></a>Prevista funzione
 Che si è tentato di richiamare una delle **prototipo di funzione** metodi su un oggetto che non era un `Function` oggetto oppure è utilizzato un oggetto in un contesto di chiamata di funzione. Ad esempio, il codice seguente genera l'errore in quanto **esempio** non è una funzione.  

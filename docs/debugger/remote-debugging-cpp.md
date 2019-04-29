@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fbfdb246769ac55afd7f164d91673e39e293f4c4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903515"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Un progetto Visual C++ in Visual Studio di debug remoto
 Per eseguire il debug di un'applicazione di Visual Studio in un altro computer, installare ed eseguire remote tools sul computer in cui si distribuirà l'app, configurare il progetto per connettersi al computer remoto da Visual Studio e quindi distribuire ed eseguire l'app.

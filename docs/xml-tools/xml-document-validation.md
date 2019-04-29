@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807719"
 ---
 # <a name="xml-document-validation"></a>Convalida di documenti XML
 
@@ -21,21 +21,21 @@ L'editor XML controlla la sintassi XML 1.0 ed esegue anche la convalida dei dati
 
  Gli schemi usati nella convalida vengono individuati confrontando il `targetNamespace` di uno schema compilato con la dichiarazione xmlns dell'elemento. Gli schemi compilati vengono caricati da una delle seguenti posizioni, elencate in ordine di priorità:
 
--   Dal nome del file specificato nella **schemi** campo del documento **proprietà** finestra.
+- Dal nome del file specificato nella **schemi** campo del documento **proprietà** finestra.
 
--   Schema inline o DTD.
+- Schema inline o DTD.
 
--   Una DTD esterna o un attributo `xsd:schemaLocation` e `xsd:noNamespaceSchemaLocation`
+- Una DTD esterna o un attributo `xsd:schemaLocation` e `xsd:noNamespaceSchemaLocation`
 
--   Un URI dello spazio dei nomi dello schema XDR "x-schema".
+- Un URI dello spazio dei nomi dello schema XDR "x-schema".
 
 Gli schemi possono essere rilevati anche nelle seguenti posizioni aggiuntive quando lo schema dispone di uno spazio dei nomi di destinazione non vuoto:
 
--   Un'altra finestra dell'editor contenente lo schema.
+- Un'altra finestra dell'editor contenente lo schema.
 
--   Uno schema nella soluzione corrente.
+- Uno schema nella soluzione corrente.
 
--   Uno schema dalla directory della cache degli schemi.
+- Uno schema dalla directory della cache degli schemi.
 
 ## <a name="xslt-files"></a>File XSLT
  Quando si modifica un file XSLT, il *XSLT* file che si trova nella cache dello schema viene usato per la convalida. Gli errori di convalida vengono visualizzati con una sottolineatura ondulata di colore blu. Gli errori del compilatore XSLT vengono visualizzati con una sottolineatura ondulata di colore rosso.

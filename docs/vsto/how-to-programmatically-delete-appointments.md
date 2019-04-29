@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001010"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Procedura: A livello di codice eliminare appuntamenti
   Questo esempio elimina un'istanza di un appuntamento ricorrente. L'esempio presuppone che un'istanza di un appuntamento ricorrente si verifica il 28 giugno 2006 alle 08.00.

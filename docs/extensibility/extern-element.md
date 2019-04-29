@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1d62d52d490994889f7e9186fb74ea148cb52a06
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911895"
 ---
 # <a name="extern-element"></a>Elemento extern
 L'elemento Extern fa riferimento a una delle intestazioni esterne (*h*) file da unire con i *con estensione vsct* file in fase di compilazione. I file da unire devono trovarsi nel percorso di inclusione specificato per il compilatore VSCT oppure fa riferimento un' [elemento Include](../extensibility/include-element.md). I file potrebbero essere loro *vsct* file o file di intestazione C++.

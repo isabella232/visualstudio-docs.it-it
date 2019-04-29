@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826781"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Procedura: Aggiungere controlli alla visualizzazione Backstage
   È possibile usare la finestra di progettazione della barra multifunzione per aggiungere controlli al menu visualizzato quando si sceglie la **File** scheda. Quando si esegue l'applicazione, i controlli aggiunti per il **File** scheda visualizzata un gruppo denominato **Add-ins**.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35fb66927272435e773dbaee44019103892b028d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858072"
 ---
 # <a name="supporting-source-control"></a>Supporto del controllo del codice sorgente
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supporta estrazioni di file, le archiviazioni e altre operazioni di controllo per il progetto o un editor. Come un client, controllo codice sorgente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] è progettato per interagire con un pacchetto di controllo del codice sorgente, ad esempio [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], che fornisce l'archiviazione, il controllo delle versioni e funzionalità di controllo per un set di file definito dinamicamente.

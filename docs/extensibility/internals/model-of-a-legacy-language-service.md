@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a044d623931d024f15baba1532e3a563273242e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860100"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modello di un servizio di linguaggio legacy
 Un servizio di linguaggio definisce gli elementi e le funzionalità per una lingua specifica e viene usato per fornire l'editor con informazioni specifiche per tale lingua. Ad esempio, l'editor deve conoscere gli elementi e le parole chiave del linguaggio per supportare la colorazione della sintassi.

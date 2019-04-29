@@ -8,11 +8,11 @@ ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
 manager: jillfra
 ms.openlocfilehash: a619c5d418df3b9b85ab09cf9b907617ebd81b67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935784"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>Uso di un attributo di registrazione personalizzato per registrare un'estensione
 In alcuni casi potrebbe essere necessario creare un nuovo attributo di registrazione per l'estensione. È possibile usare gli attributi di registrazione per aggiungere nuove chiavi del Registro di sistema o per aggiungere nuovi valori per le chiavi esistenti. Il nuovo attributo deve derivare da <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, e deve eseguire l'override di <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> e <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metodi.  

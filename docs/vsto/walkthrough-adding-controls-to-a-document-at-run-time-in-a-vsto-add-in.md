@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982417"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Procedura dettagliata: Aggiungere controlli a un documento in fase di esecuzione in un componente aggiuntivo VSTO
   È possibile aggiungere controlli a qualsiasi documento di Microsoft Office Word aperto usando un componente aggiuntivo VSTO. Questa procedura dettagliata illustra come usare la barra multifunzione per consentire agli utenti di aggiungere un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.

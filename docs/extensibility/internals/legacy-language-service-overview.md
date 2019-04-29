@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2292c80c01bcc94b04842c1f77f92226705873eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860046"
 ---
 # <a name="legacy-language-service-overview"></a>Panoramica dei servizi di linguaggio legacy
 Un servizio di linguaggio fornisce supporto dell'editor che consente di implementare determinati [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funzionalità. Le classi del servizio linguaggio Framework di pacchetto gestito (MPF) offrono il supporto completo per le funzionalità usati di frequente e un supporto parziale per le altre funzionalità.

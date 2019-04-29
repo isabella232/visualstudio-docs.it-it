@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910772"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Progettare i file XML comando table (vsct)
 Una tabella comandi XML (*vsct*) file descrive il layout e l'aspetto degli elementi di comando per un pacchetto VSPackage. Gli elementi di comando includono i pulsanti, caselle combinate, menu, barre degli strumenti e i gruppi di voci di comando. Questo articolo descrive XML comando tabella file, modo influiscano menu e voci di comando e come crearli.

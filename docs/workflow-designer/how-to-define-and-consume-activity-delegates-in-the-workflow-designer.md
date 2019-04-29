@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949519"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415811"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Usare l'attività personalizzata in un flusso di lavoro
 
-1.  Compilare il progetto premendo **Ctrl**+**MAIUSC**+**B**.
+1. Compilare il progetto premendo **Ctrl**+**MAIUSC**+**B**.
 
-2.  Nelle **Esplora soluzioni**aprire **Workflow1.xaml** nella finestra di progettazione.
+2. Nelle **Esplora soluzioni**aprire **Workflow1.xaml** nella finestra di progettazione.
 
-3.  Trascinare un **MyForEach** attività dalla casella degli strumenti all'area di progettazione. L'attività è in una sezione della casella degli strumenti con lo stesso nome del progetto.
+3. Trascinare un **MyForEach** attività dalla casella degli strumenti all'area di progettazione. L'attività è in una sezione della casella degli strumenti con lo stesso nome del progetto.
 
-4.  Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}**.
+4. Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}**.
 
-5.  Trascinare un <xref:System.Activities.Statements.WriteLine> attività dal **primitive** sezione della casella degli strumenti per il **Delegate: Body** sezione del **MyForEach** attività.
+5. Trascinare un <xref:System.Activities.Statements.WriteLine> attività dal **primitive** sezione della casella degli strumenti per il **Delegate: Body** sezione del **MyForEach** attività.
 
-6.  Impostare il **testo** proprietà del <xref:System.Activities.Statements.WriteLine> attività **argument**.
+6. Impostare il **testo** proprietà del <xref:System.Activities.Statements.WriteLine> attività **argument**.
 
 Quando viene eseguito il flusso di lavoro, la console Mostra l'output seguente:
 

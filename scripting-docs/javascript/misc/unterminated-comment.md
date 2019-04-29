@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5bf7c570c832fb5db5489a2a9f9bec459f26f0a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005955"
 ---
 # <a name="unterminated-comment"></a>Commento senza terminazione
 Si è iniziato un blocco di commento su più righe, ma non lo è stato correttamente terminato. I commenti su più righe iniziano con un "/ *" combinazione e terminano con l'operazione inversa "\*/" combinazione. Di seguito è riportato un esempio:  

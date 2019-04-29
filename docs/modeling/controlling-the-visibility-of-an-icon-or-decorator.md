@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421499"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controllo della visibilità di un'icona o di un elemento Decorator
 Oggetto *decorator* è un'icona o una riga di testo che viene visualizzato in una forma in un linguaggio specifico di dominio (DSL). È possibile visualizzare l'elemento decorator e scompaiano a seconda dello stato delle proprietà nel modello. In una forma che rappresenta una persona, ad esempio, si potrebbero hanno icone diverse che vengono visualizzati in base alla relativa al sesso dell'utente, numero di elementi figlio e così via.

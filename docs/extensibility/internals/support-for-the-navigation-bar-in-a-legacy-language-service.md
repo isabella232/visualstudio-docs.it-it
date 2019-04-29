@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858121"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Supporto per la barra di spostamento in un servizio di linguaggio legacy
 Barra di spostamento nella parte superiore della visualizzazione dell'editor consente di visualizzare i tipi e membri nel file. I tipi vengono visualizzati nell'elenco a tendina a sinistra e i membri vengono visualizzati in destra elenco a discesa. Quando l'utente seleziona un tipo, il cursore viene posizionato nella prima riga del tipo. Quando l'utente seleziona un membro, il cursore viene posizionato sulla definizione del membro. Le caselle di riepilogo a discesa vengono aggiornate per riflettere il percorso corrente del punto di inserimento.

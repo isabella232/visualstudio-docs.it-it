@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813152"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Procedura: Eseguire codice quando vengono eseguiti i passaggi di distribuzione
   Se si desidera eseguire attività aggiuntive per un passaggio di distribuzione in un progetto SharePoint, è possibile gestire gli eventi che vengono generati da elementi di progetto SharePoint prima e dopo ogni passaggio di distribuzione eseguiti in Visual Studio. Per altre informazioni, vedere [estendendo SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

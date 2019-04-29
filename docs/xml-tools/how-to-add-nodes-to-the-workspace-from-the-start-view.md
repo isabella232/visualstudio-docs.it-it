@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996865"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procedura: Aggiungere nodi all'area di lavoro dalla visualizzazione iniziale
 

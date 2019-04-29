@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 47647910b53b5f86b828ec87c62019b76204f124
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911561"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Procedura: Eliminare le notifiche di modifica di file
 Quando è stato modificato il file fisico che rappresenta il buffer di testo, consente di visualizzare una finestra di dialogo con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se sono condividono molte modifiche al file, tuttavia, questa finestra di dialogo ripetutamente la visualizzazione può diventare rapidamente fastidiosa.

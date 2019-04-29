@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9011f0becd893fa4ca966c40013844b0be47e46d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832020"
 ---
 # <a name="idiastackwalkergetenumframes"></a>IDiaStackWalker::getEnumFrames
 Recupera un enumeratore di frame dello stack x86 a piattaforme.
@@ -43,7 +43,7 @@ HRESULT getEnumFrames( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Per ottenere un elenco di frame dello stack in qualsiasi altra piattaforma, chiamare il [IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md) (metodo).
 
 ## <a name="see-also"></a>Vedere anche

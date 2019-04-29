@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859466"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 Il **delle proprietà** finestra viene utilizzata per visualizzare le proprietà di oggetti selezionati nei due tipi principali di windows disponibile nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Questi due tipi di windows sono:

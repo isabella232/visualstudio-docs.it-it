@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860007"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura e salvataggio di elementi di progetto
 Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e salvataggio dei file di progetti nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Gli argomenti seguenti descrivono i diversi approcci per l'apertura e salvataggio di file.
@@ -31,15 +31,15 @@ Quando si aggiunge un nuovo tipo di progetto, è necessario gestire l'apertura e
 
  Fornisce una spiegazione dettagliata e dettagliata del modo in cui l'IDE gestisce i **aperta con** comando, che richiede l'apertura di un file con alcune scelte degli editor standard.
 
-- [Procedura: Apri editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Procedura: aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)
 
  Vengono fornite istruzioni dettagliate che consentono di specificare che i file di un determinato tipo nel progetto devono essere aperto usando un editor specifico del progetto.
 
-- [Procedura: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)
+- [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)
 
  Vengono fornite istruzioni dettagliate per la specifica come abilitare l'IDE aprire un editor standard per i file nel tipo di progetto.
 
-- [Procedura: Aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Procedura: aprire gli editor per i documenti aperti](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  Vengono fornite istruzioni dettagliate per aprire un editor specifico del progetto per un file aperto.
 

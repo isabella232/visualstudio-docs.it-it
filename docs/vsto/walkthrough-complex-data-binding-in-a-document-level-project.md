@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981676"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.

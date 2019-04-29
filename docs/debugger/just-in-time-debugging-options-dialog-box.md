@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905935"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>JIT, Debug, Finestra di dialogo Opzioni
 Per accedere alla pagina **JIT** scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere il nodo **Debug** e selezionare **JIT**. Questa pagina consente di abilitare il debug JIT per codice gestito, codice nativo e script. Per altre informazioni, vedere [Debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md).

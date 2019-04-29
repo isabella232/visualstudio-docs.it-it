@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895625"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante delle dimensioni della trama ridotte a metà o un quarto
 Riduce le dimensioni della trama per trame che non sono destinazioni di rendering.
@@ -27,7 +27,7 @@ Riduce le dimensioni della trama per trame che non sono destinazioni di renderin
 
  Se le trame occupano più memoria di quella disponibile, considerarne la riduzione delle dimensioni, ma solo dopo avere previsto la compressione delle trame appropriate. Come accade per le trame più piccole, le trame compresse occupano meno memoria e riducono la necessità di paging nella memoria di sistema, tuttavia la fedeltà dei colori risulterà ridotta. A seconda del contenuto delle trame, la compressione può non sempre rappresentare la soluzione appropriata, ad esempio nel caso di trame con variazioni di colore significative. Per molte trame, tuttavia, la compressione può permettere di conservare una migliore qualità complessiva dell'immagine rispetto alla loro riduzione.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Le dimensioni della trama vengono ridotte a ogni chiamata a `ID3D11Device::CreateTexture2D` che crea una trama di origine. In particolare, le dimensioni della trama vengono ridotte quando l'oggetto D3D11_TEXTURE2D_DESC passato in `pDesc` descrive una trama che viene usata nel rendering, ovvero:
 
 - Il membro BindFlags presenta solo il flag D3D11_BIND_SHADER_RESOURCE impostato.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861971"
 ---
 # <a name="inside-the-core-editor"></a>All'interno dell'editor di base
 Il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale è un set di numerosi componenti che consentono di modificare ed eseguire query su informazioni testuali. Se l'editor principale è stata personalizzata tramite l'API legacy, è possibile continuare a usare queste personalizzazioni, verranno instradate tramite schede dell'editor. Si consiglia, tuttavia, che è adattare le personalizzazioni per il nuovo editor delle API.

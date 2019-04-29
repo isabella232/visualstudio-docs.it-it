@@ -1,5 +1,5 @@
 ---
-title: "Procedura: creare associazioni di File per un'applicazione ClickOnce | Microsoft Docs"
+title: "Procedura: Creare associazioni di File per un'applicazione ClickOnce | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899460"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procedura: Creare associazioni di file per un'applicazione ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere associate a uno o più estensioni di file, in modo che l'applicazione verrà avviata automaticamente quando l'utente apre un file di tali tipi. Aggiunta di supporto delle estensioni di file a un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è molto semplice.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cdd8619592a1f9201402e8d987b0a0f129d08edb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913023"
 ---
 # <a name="staskidcounter-field"></a>Campo s_taskIdCounter
 L'identificatore successivo disponibile per un <xref:System.Threading.Tasks.Task> oggetto.

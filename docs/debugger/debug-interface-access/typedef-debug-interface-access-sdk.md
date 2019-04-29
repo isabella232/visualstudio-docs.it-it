@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1928667be38cc2b0aa56800ca66924d6159f0c4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853535"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Debug Interface Access SDK)
 I simboli con `SymTagTypedef` tag introducono i nomi per gli altri tipi.
@@ -25,7 +25,7 @@ I simboli con `SymTagTypedef` tag introducono i nomi per gli altri tipi.
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)|`DWORD`|Uno dei [enumerazione BasicType](../../debugger/debug-interface-access/basictype.md) valori.|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Elemento padre di classe di questo typedef, se presente.|
@@ -54,7 +54,7 @@ I simboli con `SymTagTypedef` tag introducono i nomi per gli altri tipi.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|`DWORD`|ID del simbolo a forma di tabella virtuale.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Se questo typedef è contrassegnato come volatile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Poiché un typedef può rappresentare una classe, puntatore o tipo definito dall'utente (UDT), il simbolo per un typedef condivide le stesse proprietà di uno di questi altri tipi di simboli.
 
 ## <a name="see-also"></a>Vedere anche

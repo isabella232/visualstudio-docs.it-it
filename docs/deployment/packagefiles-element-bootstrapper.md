@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898711"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.

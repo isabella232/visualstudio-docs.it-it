@@ -1,5 +1,5 @@
 ---
-title: Nel debugger di identificatori di formato (C#) | Microsoft Docs
+title: Formattare gli identificatori nel debugger (c#) | Microsoft Docs
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -26,13 +26,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849832"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Formattare gli identificatori in C# nel debugger di Visual Studio
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Identificatori di formato in c# il debugger di Visual Studio
 È possibile modificare il formato in cui viene visualizzato il valore nella **Watch** finestra usando identificatori di formato. È anche possibile usare gli identificatori di formato nel **controllo immediato** finestra, il **comando** finestra, in [i punti di analisi](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e nelle finestre di origine. Se posiziona su un'espressione in queste finestre, il risultato verrà visualizzato in una [suggerimento dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) nella sezione delle opzioni di formato specificato.
 
 Per usare un identificatore di formato, immettere l'espressione variabile, seguito da una virgola e l'identificatore appropriato.

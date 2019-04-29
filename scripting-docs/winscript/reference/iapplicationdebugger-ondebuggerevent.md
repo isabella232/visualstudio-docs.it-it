@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b78bb3345463dfd682534dc60a216f3e0e8fdf2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991370"
 ---
 # <a name="iapplicationdebuggerondebuggerevent"></a>IApplicationDebugger::onDebuggerEvent
 Gestisce l'evento dell'applicazione personalizzata.  
@@ -46,7 +46,7 @@ HRESULT onDebuggerEvent(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|Il metodo non è attualmente implementato.|  

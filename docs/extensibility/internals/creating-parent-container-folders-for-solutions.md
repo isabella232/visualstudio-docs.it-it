@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910732"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Creare cartelle dei contenitori per le soluzioni padre
 Origine controllo plug-in API versione 1.2, un utente può specificare una destinazione di controllo di origine solo nodo radice per tutti i progetti web all'interno della soluzione. Questa singola radice viene chiamata una radice unificata con privilegi elevati (SUR).

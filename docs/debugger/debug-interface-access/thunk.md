@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 872723e4aaf425b388ce8d05f9c8f9d631dd5ed9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854381"
 ---
 # <a name="thunk"></a>Thunk
 Ciascuna `thunk` è identificato da un `SymTagThunk` tag.
@@ -26,7 +26,7 @@ Ciascuna `thunk` è identificato da un `SymTagThunk` tag.
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Attributo di modificatore di accesso, una delle [enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) valori (solo in DIA SDK 8.0 o versione successiva).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|

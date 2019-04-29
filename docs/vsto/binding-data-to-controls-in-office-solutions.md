@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939564"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associare dati a controlli nelle soluzioni Office
   È possibile associare i controlli Windows Form e i *controlli host* in un documento di Microsoft Office Word o in un foglio di lavoro di Microsoft Office Excel a un'origine dati in modo da visualizzare automaticamente i dati. È possibile associare dati ai controlli nei progetti a livello di applicazione e a livello di documento.

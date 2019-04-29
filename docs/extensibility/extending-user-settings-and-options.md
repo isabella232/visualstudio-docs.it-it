@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 00ccae86029e43933d5624c955ed6bfcc0a045be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863165"
 ---
 # <a name="extend-user-settings-and-options"></a>Estendere le opzioni e impostazioni utente
 In Visual Studio, esistono due modi principali per mantenere le preferenze dell'utente. Il **degli strumenti** > **opzioni** pagine consentono agli utenti di impostare i propri valori per molti tipi diversi di impostazioni, generali e specifici del linguaggio. Le impostazioni utente consentono agli utenti di specificare le proprietà di configurazione generali di Visual Studio. Per altre informazioni sulle pagine di opzioni, vedere [opzioni e le pagine di opzioni](../extensibility/internals/options-and-options-pages.md). Per altre informazioni sulle impostazioni utente, vedere [supporto per le impostazioni utente](../extensibility/internals/support-for-user-settings.md).

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cbc3edfabe041804a632b919eff4e565be9cc5e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848607"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostica della grafica di Visual Studio
 Visual Studio*diagnostica della grafica* è un set di strumenti per la registrazione e quindi eseguire l'analisi dei problemi di prestazioni e di rendering nelle App Direct3D. Può essere usato su app eseguite localmente in un computer Windows, in un emulatore di dispositivo Windows oppure in un computer o un dispositivo remoto.
@@ -64,7 +64,7 @@ Visual Studio*diagnostica della grafica* è un set di strumenti per la registraz
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-| Titolo | Description |
+| Titolo | Descrizione |
 | - | - |
 | [Tour delle funzionalità del debugger](/visualstudio/debugger/debugger-feature-tour) | Introduce le funzionalità di debug in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Grafica e giochi DirectX](http://go.microsoft.com/fwlink/?LinkId=256498) | Include articoli che illustrano le tecnologie grafiche DirectX. |

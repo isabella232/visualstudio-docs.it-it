@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846900"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procedura dettagliata: Debug di un'app con multithreading usando la finestra thread (C#, Visual Basic, C++)
 

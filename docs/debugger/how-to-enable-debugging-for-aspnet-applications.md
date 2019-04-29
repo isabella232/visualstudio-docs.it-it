@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848329"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Eseguire il debug di App ASP.NET o ASP.NET Core in Visual Studio
 
@@ -187,6 +187,6 @@ Esistono diversi modi per pubblicare le App in IIS. Questi passaggi illustrano c
 - [Procedura: Eseguire il processo di lavoro con un account utente](how-to-run-the-worker-process-under-a-user-account.md)
 - [Procedura: Trovare il nome del processo ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
 - [Eseguire il debug di applicazioni Web distribuite](debugging-deployed-web-applications.md)
-- [Procedura dettagliata: Debug di un Web Form](walkthrough-debugging-a-web-form.md)
-- [Procedura: Eseguire il debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)
-- [Eseguire il debug di applicazioni Web: errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)
+- [Procedura dettagliata: Debug di un web form](walkthrough-debugging-a-web-form.md)
+- [Procedura: Debug di eccezioni ASP.NET](how-to-debug-aspnet-exceptions.md)
+- [Eseguire il debug di applicazioni Web: Errori e risoluzione dei problemi](debugging-web-applications-errors-and-troubleshooting.md)

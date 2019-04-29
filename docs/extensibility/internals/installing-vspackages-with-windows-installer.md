@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9cd5f25e1e87ba3db360b328b4f5a245697cba45
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860281"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installazione di pacchetti VSPackage con Windows Installer
 L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] richiede oltre la semplice copia dei file di computer dell'utente. Programma di installazione del pacchetto VSPackage deve installare il pacchetto VSPackage e i relativi file dipendenti e registrare e integrarle in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Il pacchetto VSPackage può sfruttare i vantaggi delle funzionalità di integrazione ad esempio visualizzando un'icona sul [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] iniziale dello schermo e sulla finestra di dialogo.
@@ -56,7 +56,7 @@ L'integrazione di VSPackage in [!INCLUDE[vsprvs](../../code-quality/includes/vsp
 
  Viene illustrato come utilizzare al nuovo Sil aggregator tipo di progetto per i tipi di progetto di codice gestito.
 
-- [Procedura: Genera informazioni di registro di sistema per un programma di installazione](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
+- [Procedura: generare le informazioni del Registro di sistema per un programma di installazione](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)
 
  Viene illustrato come usare RegPkg.exe per generare un manifesto di registrazione per un pacchetto VSPackage gestito.
 
