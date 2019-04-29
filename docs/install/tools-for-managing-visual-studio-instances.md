@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935412"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Strumenti per il rilevamento e la gestione di istanze di Visual Studio
 
@@ -44,6 +44,7 @@ L'[API di configurazione del programma di installazione](<xref:Microsoft.VisualS
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Questi elementi non vengono archiviati nel Registro di sistema globale ed è qui
 1. Selezionare il nodo `HKEY_LOCAL_MACHINE`.
 
 1. Nel menu principale di Regedit selezionare **File** > **Carica hive** e quindi selezionare il file di registro privato archiviato nella cartella **AppData\Local**. Ad esempio:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```

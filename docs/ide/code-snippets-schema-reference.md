@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974982"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -110,7 +110,7 @@ Sono disponibili tre attributi per l'elemento Code:
 
 - L'attributo **Language** - _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
 
-   |Valore|Description|
+   |Value|Description|
    |-----|-----------|
    |`VB`|Identifica un frammento di codice di Visual Basic.|
    |`CSharp`|Identifica un frammento di codice di C#.|
@@ -320,9 +320,6 @@ Specifica un identificatore univoco per un elemento `Literal` o `Object`. Due og
 
 Specifica gli spazi dei nomi importati usati da un frammento di codice IntelliSense.
 
-> [!NOTE]
-> L'elemento `Import` è supportato solo per i progetti di Visual Basic.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ Specifica gli spazi dei nomi importati usati da un frammento di codice IntelliSe
 ## <a name="imports-element"></a>Elemento Imports
 
 Raggruppa singoli elementi `Import`.
-
-> [!NOTE]
-> L'elemento `Imports` è supportato solo per i progetti di Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ I valori letterali e gli oggetti non possono contenere un elemento **ID** con va
 
 ## <a name="namespace-element"></a>Elemento Namespace
 
-Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'esecuzione del frammento di codice. Lo spazio dei nomi specificato nell'elemento `Namespace` viene aggiunto automaticamente a un'istruzione `Imports` all'inizio del codice, se non esiste già.
-
-> [!NOTE]
-> L'elemento `Namespace` è supportato solo per i progetti di Visual Basic.
+Specifica lo spazio dei nomi che deve essere importato per la compilazione e l'esecuzione del frammento di codice. Lo spazio dei nomi specificato nell'elemento `Namespace` viene aggiunto automaticamente a una direttiva `using` o a un'istruzione `Imports` all'inizio del codice, se non esiste già.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Specifica la modalità di inserimento del frammento di codice.
 
 Il valore di testo deve essere uno dei seguenti valori:
 
--   `SurroundsWith`: consente di inserire il frammento di codice intorno a un segmento di codice selezionato.
+- `SurroundsWith`: consente di inserire il frammento di codice intorno a un segmento di codice selezionato.
 
--   `Expansion`: consente di inserire il frammento di codice in corrispondenza della posizione del cursore.
+- `Expansion`: consente di inserire il frammento di codice in corrispondenza della posizione del cursore.
 
--   `Refactoring`: specifica che il frammento di codice viene usato durante il refactoring di C#. Non è possibile usare il `Refactoring` nei frammenti di codice personalizzati.
+- `Refactoring`: specifica che il frammento di codice viene usato durante il refactoring di C#. Non è possibile usare il `Refactoring` nei frammenti di codice personalizzati.
 
 ## <a name="snippettypes-element"></a>Elemento SnippetTypes
 

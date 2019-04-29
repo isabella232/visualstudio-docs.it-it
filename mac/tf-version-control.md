@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972711"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
@@ -23,7 +23,7 @@ Azure Repos offre due modelli di controllo della versione: [Git](/azure/devops/r
 
 Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation.
 
-* [Usare Visual Studio Code e l'estensione Azure Repos, per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Connettersi al repository usando il client della riga di comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 * [Connettersi al controllo della versione di Team Foundation usando l'estensione di controllo della versione di Team Foundation (non supportata) per Visual Studio per Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
@@ -273,4 +273,4 @@ Quando si tenta di [creare una nuova area di lavoro](#creating-a-new-workspace),
 
 ### <a name="see-also"></a>Vedere anche
 
-- [Sviluppare e condividere il codice nel controllo della versione di Team Foundation usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Sviluppare e condividere il codice in TFVC usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

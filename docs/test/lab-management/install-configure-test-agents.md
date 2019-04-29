@@ -1,6 +1,6 @@
 ---
 title: Installare agenti di test e test controller
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965415"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installare agenti di test e test controller
 
@@ -34,9 +34,9 @@ La tabella seguente illustra i requisiti di sistema per l'installazione dell'age
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installare il test controller e gli agenti di test
 
-È possibile scaricare gli agenti per Visual Studio da [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Cercare *Agents per Visual Studio 2017*, selezionare *Agente* o *Controller* e quindi scegliere *Download*. Eseguire il file eseguibile scaricato per installare l'agente di test o il test controller.
+È possibile scaricare gli agenti per Visual Studio da [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Cercare *Agents per Visual Studio 2019*, selezionare *Agente* o *Controller* e quindi scegliere *Download*. Eseguire il file eseguibile scaricato per installare l'agente di test o il test controller.
 
-È possibile scaricare gli agenti per Visual Studio 2015 e Visual Studio 2013 dalla pagina di [download precedente](https://visualstudio.microsoft.com/vs/older-downloads/).
+È possibile scaricare gli agenti per Visual Studio 2017, Visual Studio 2015 e Visual Studio 2013 dalla pagina dei [download precedenti](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Questi programmi di installazione sono disponibili come file ISO per facilitarne l'installazione nelle macchine virtuali.
 

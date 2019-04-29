@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965473"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
@@ -41,8 +41,8 @@ Se si prevede di eseguire questi test come parte del processo di automazione del
 
 Per generare automaticamente gli unit test per NUnit o xUnit, installare una di queste estensioni del framework di test da Visual Studio Marketplace:
 
-* [NUnit extension for test generators (Estensione NUnit per generatori di test)](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [xUnit.net extension for test generators (Estensione xUnit.net per generatori di test)](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [Estensione NUnit per generatori di test](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [Estensione xUnit.net per generatori di test](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 ## <a name="when-should-i-use-this-feature"></a>Quando si deve usare questa funzionalità?
 

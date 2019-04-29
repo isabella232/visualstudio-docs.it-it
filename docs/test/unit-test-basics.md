@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990213"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 
@@ -82,9 +82,12 @@ Spesso è più rapido generare il progetto di unit test e gli stub di unit test 
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generare progetto e stub di unit test
 
-1. Nella finestra dell'editor del codice fare clic con il pulsante destro del mouse e scegliere **Crea unit test** dal menu di scelta rapida.
+1. Nella finestra dell'editor del codice fare clic con il pulsante destro del mouse e scegliere [**Crea unit test**](create-unit-tests-menu.md) dal menu di scelta rapida.
 
-    ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
+   ![Dalla finestra dell'editor, visualizzare il menu di scelta rapida](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
 
 2. Fare clic su **OK** per accettare le impostazioni predefinite per creare gli unit test oppure modificare i valori usati per creare e denominare il progetto di unit test e gli unit test. È possibile selezionare il codice aggiunto per impostazione predefinita ai metodi di unit test.
 
@@ -127,17 +130,17 @@ Un progetto unit test rispecchia in genere la struttura di un progetto a codice 
 
    Per creare il riferimento al progetto di codice:
 
-   1.  Selezionare il progetto in **Esplora soluzioni**.
+   1. Selezionare il progetto in **Esplora soluzioni**.
 
-   2.  Scegliere **Aggiungi riferimento** dal menu **Progetto**.
+   2. Scegliere **Aggiungi riferimento** dal menu **Progetto**.
 
-   3.  Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
+   3. Nella finestra di dialogo **Gestione riferimenti** aprire il nodo **Soluzione** e scegliere **Progetti**. Selezionare il nome del progetto di codice e chiudere la finestra di dialogo.
 
 Ogni progetto unit test contiene classi che rispecchiano i nomi delle classe del progetto di codice. Nell'esempio il progetto `AccountsTests` contiene le classi seguenti:
 
--   La classe `AccountInfoTests` contiene i metodi di unit test per la classe `AccountInfo` nel progetto `Accounts`.
+- La classe `AccountInfoTests` contiene i metodi di unit test per la classe `AccountInfo` nel progetto `Accounts`.
 
--   La classe`CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount` .
+- La classe`CheckingAccountTests` contiene i metodi di unit test per la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Scrivere i test
 
@@ -185,11 +188,11 @@ Si noti che `Withdraw_ValidAmount_ChangesBalance` usa un'istruzione `Assert` esp
 
 Per altre informazioni sui framework per unit test Microsoft, vedere uno degli argomenti seguenti:
 
--   [Eseguire unit test del codice](unit-test-your-code.md)
+- [Eseguire unit test del codice](unit-test-your-code.md)
 
--   [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
+- [Scrittura di unit test per C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Usare il framework MSTest negli unit test](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Impostare i timeout per gli unit test
 
@@ -260,12 +263,12 @@ Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run
 
 **R:** Usare **Esplora test** per avviare una sessione di debug per i test. Esaminando con facilità il codice grazie al debugger di Visual Studio è possibile spostarsi in avanti e indietro tra gli unit test e i progetti da testare. Per avviare il debug:
 
-1.  Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
+1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
 
     > [!NOTE]
     > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
 
-2.  In **Esplora test** selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
+2. In **Esplora test** selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 
 Altre informazioni dettagliate sul [debug di unit test](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Altre informazioni sul [code coverage](../test/using-code-coverage-to-determine-
 
 Microsoft Fakes usa due approcci per la creazione delle classi sostitutive per le dipendenze esterne:
 
-1.  Gli*stub* generano classi sostitutive derivate dall'interfaccia padre della classe di dipendenza di destinazione. I metodi stub possono sostituire metodi pubblici virtuali della classe di destinazione.
+1. Gli*stub* generano classi sostitutive derivate dall'interfaccia padre della classe di dipendenza di destinazione. I metodi stub possono sostituire metodi pubblici virtuali della classe di destinazione.
 
-2.  Gli*shim* usano strumentazione di runtime per deviare chiamate a un metodo di destinazione, indirizzandole a un metodo shim sostitutivo per metodi non virtuali.
+2. Gli*shim* usano strumentazione di runtime per deviare chiamate a un metodo di destinazione, indirizzandole a un metodo shim sostitutivo per metodi non virtuali.
 
 In entrambi gli approcci si usano i delegati generati delle chiamate per il metodo di dipendenza per specificare il comportamento desiderato nel metodo di test.
 
