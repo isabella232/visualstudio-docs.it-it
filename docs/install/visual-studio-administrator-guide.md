@@ -2,7 +2,7 @@
 title: Guida di Visual Studio Administrator
 titleSuffix: ''
 description: Altre informazioni su come distribuire Visual Studio in un ambiente aziendale.
-ms.date: 03/30/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c12ae3e101f2f59f0f7f6560ea86f1e6161c6ff
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951344"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guida di Visual Studio Administrator
 
@@ -99,3 +99,4 @@ Per altre informazioni sulle impostazioni dei commenti e suggerimenti del client
 * [Aggiornare un'installazione di rete di Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Controllare gli aggiornamenti delle distribuzioni di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)

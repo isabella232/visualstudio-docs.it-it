@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947693"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Come segnalare un problema con Visual Studio o il programma di installazione di Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "59232541"
 È possibile segnalare un problema da Visual Studio o dal relativo programma di installazione tramite lo strumento Feedback incluso. Lo strumento Feedback consente di includere facilmente le informazioni di diagnostica nel feedback e aiuta i team di Visual Studio a diagnosticare e risolvere i problemi in modo molto più efficace. Questa è la procedura per segnalare un problema.
 
 1. **In Visual Studio**, selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema. È anche possibile accedere allo strumento di feedback dal menu **?** > **Invia commenti e suggerimenti** > **Segnala un problema**.
-![Popup Segnala un problema in Visual Studio Developer Community](media/vsfeedbackentry.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
+![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/vsfeedbackentry.png) In alternativa, segnalare un problema nel **programma di installazione di Visual Studio** se non è possibile installare Visual Studio o non è possibile accedere allo strumento di feedback all'interno di Visual Studio.  Nel programma di installazione selezionare l'icona di feedback nell'angolo superiore destro e selezionare Segnala un problema.
 ![Elemento popup per la segnalazione di un problema nella community degli sviluppatori di Visual Studio](media/installer.png)
 
 1. Se non è stato eseguito l'accesso, selezionare **Accedi** come illustrato nello screenshot seguente. Seguire le istruzioni visualizzate per accedere.

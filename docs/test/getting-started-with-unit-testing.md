@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003236"
 ---
 # <a name="get-started-with-unit-testing"></a>Introduzione agli unit test
 
@@ -24,10 +24,19 @@ Visual Studio consente di definire ed eseguire unit test per mantenere l'integri
 
 Questa sezione descrive a livello generale come creare un progetto di unit test.
 
-> [!TIP]
-> Il progetto sottoposto al test, "HelloWorldCore", è un progetto di esempio per cui non è prevista la visualizzazione di alcuna parte di codice. Se si vuole creare un progetto "Hello World" di cui eseguire il test, vedere [Creare la prima app console C#](../ide/quickstart-csharp-console.md). Per la procedura dettagliata, vedere l'articolo [Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Aprire il progetto da testare in Visual Studio.
+
+   Ai fini della dimostrazione di uno unit test di esempio, in questo articolo viene testato un semplice progetto "Hello World". Il codice di esempio per questo tipo di progetto è il seguente:
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. Selezionare il nodo della soluzione in **Esplora soluzioni**. Dalla barra dei menu superiore selezionare **File** > **Aggiungi** > **Nuovo progetto**.
 
@@ -62,6 +71,9 @@ Questa sezione descrive a livello generale come creare un progetto di unit test.
 1. Aggiungere codice al metodo di unit test.
 
    ![Aggiungere codice al metodo di unit test in Visual Studio](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Per una procedura più dettagliata per la creazione di unit test, vedere [Creare ed eseguire unit test per codice gestito](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Eseguire unit test
 

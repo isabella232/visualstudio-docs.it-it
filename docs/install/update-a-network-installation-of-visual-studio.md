@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: fd7277c4c42856ceea5e4da0a45d54613bf66c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971368"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Aggiornare un'installazione di rete di Visual Studio
 
@@ -105,7 +105,6 @@ A seconda del tipo di configurazione dell'ambiente di rete, un aggiornamento puÃ
 
 ::: moniker-end
 
-
 > [!NOTE]
 > Usare il [comando vswhere.exe](tools-for-managing-visual-studio-instances.md) per identificare il percorso di installazione di un'istanza esistente di Visual Studio in un computer client.
 >
@@ -175,3 +174,4 @@ Quando si esegue questo comando, il programma di installazione analizza la carte
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per il rilevamento e la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)

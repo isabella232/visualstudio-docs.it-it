@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973371"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -154,10 +154,12 @@ Scaricare l'[estensione IntelliCode](https://marketplace.visualstudio.com/items?
 A partire da Visual Studio 2017, esistono numerosi miglioramenti per l'esperienza di test. È possibile eseguire test con i framework MSTest v1, MSTest v2, NUnit o XUnit.
 
 - L'individuazione dei test in **Esplora test** è veloce.
-- È possibile organizzare i test in **Esplora test** con l'*ordinamento gerarchico*.
-- [Live Unit Testing](../test/live-unit-testing.md) esegue in modo continuo i test interessati dalle modifiche del codice e aggiorna le icone dell'editor inline per comunicare lo stato dei test. Includere o escludere progetti di test o test specifici dal set di test attivi.
 
-![Visualizzazione della gerarchia per Esplora test in Visual Studio](../ide/media/VSGuide_Testing.png)
+- È possibile organizzare i test in **Esplora test** con l'*ordinamento gerarchico*.
+
+   ![Visualizzazione della gerarchia per Esplora test in Visual Studio](../ide/media/VSGuide_Testing.png)
+
+- [Live Unit Testing](../test/live-unit-testing.md) esegue in modo continuo i test interessati dalle modifiche del codice e aggiorna le icone dell'editor inline per comunicare lo stato dei test. Includere o escludere progetti di test o test specifici dal set di test attivi. (Solo per Visual Studio Enterprise Edition.)
 
 ## <a name="debugging"></a>Debug
 
@@ -211,5 +213,5 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 | Abilita analisi della soluzione completa | Visualizza tutti gli errori della soluzione in **Elenco errori** | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita analisi della soluzione completa** |
 | Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate** |
 | Modalità di terminazione/suggerimento | Modifica il comportamento di completamento in IntelliSense. Gli sviluppatori con esperienza di IntelliJ tendono a usare un'impostazione non predefinita in questo caso. | **Menu** > **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor | **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor (gli indicatori CodeLens del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community). | **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** |
 | [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Utili per di generare codice boilerplate comune | Digitare un nome di frammento di codice e premere **TAB** due volte. |

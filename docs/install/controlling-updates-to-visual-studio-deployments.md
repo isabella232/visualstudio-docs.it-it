@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974190"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Controllare gli aggiornamenti delle distribuzioni di rete di Visual Studio
 
@@ -33,13 +33,17 @@ Per impostazione predefinita, Visual Studio continua a cercare gli aggiornamenti
 Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiornamenti, è possibile modificare il percorso in cui avviene la ricerca. È inoltre possibile controllare la versione dell’aggiornamento degli utenti. A tale scopo, attenersi alla seguente procedura:
 
 1. Creare un layout offline:
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Copiarlo nella condivisione file in cui si vuole inserirlo:
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Modificare il file response.json nel layout e cambiare il valore `channelUri` in modo che punti a una copia del file channelManifest.json controllato dall'amministratore.
 
    Assicurarsi di usare le barre rovesciate come carattere di escape nel valore, come illustrato nell’esempio seguente:
@@ -49,6 +53,7 @@ Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiorn
    ```
 
    Gli utenti finali possono ora eseguire l'installazione da questa condivisione per installare Visual Studio.
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ Per controllare direttamente le posizioni in cui Visual Studio cerca gli aggiorn
 Quando un amministratore aziendale stabilisce che per gli utenti finali è il momento di eseguire l'aggiornamento a una versione più recente di Visual Studio, è possibile [aggiornare la posizione di layout](update-a-network-installation-of-visual-studio.md) in cui incorporare i file aggiornati, come segue.
 
 1. Utilizzare un comando simile a quello che segue:
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Verificare che il file response.json nel layout aggiornato contenga ancora le personalizzazioni, in particolare la modifica del valore channelUri, come segue:
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    Le installazioni esistenti di Visual Studio da questo layout eseguono la ricerca degli aggiornamenti in `\\server\share\VS\ChannelManifest.json`. Se il file channelManifest.json è più recente rispetto a quello installato dall'utente, Visual Studio informerà l'utente che è disponibile un aggiornamento.
 
    Le nuove installazioni installano automaticamente la versione aggiornata di Visual Studio direttamente dal layout.
@@ -94,6 +103,7 @@ Poiché Visual Studio 2017 [archivia le voci del Registro di sistema in un regis
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -116,6 +126,7 @@ Accertarsi di sostituire la directory in modo che coincida con l'istanza install
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare Visual Studio](install-visual-studio.md)
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Usare i parametri della riga di comando per installare Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Strumenti per la gestione di istanze di Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Ciclo di vita del prodotto e manutenzione di Visual Studio](/visualstudio/releases/2019/servicing/)
