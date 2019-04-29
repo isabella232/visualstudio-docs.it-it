@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004886"
 ---
 # <a name="idebugsyncoperation-interface"></a>Interfaccia IDebugSyncOperation
 Consente a un motore di script eseguire un'astrazione di un'operazione (ad esempio, valutazione delle espressioni) che deve essere eseguita mentre è annidata in un thread bloccato specifico. L'interfaccia fornisce inoltre un meccanismo per l'annullamento di operazioni che non risponde.  

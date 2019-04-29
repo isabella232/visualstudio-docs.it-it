@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857690"
 ---
 # <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 Quest'area del plug-in test di controllo del codice sorgente illustra la modifica il controllo del codice sorgente tramite il **Modifica controllo del codice sorgente** comando.

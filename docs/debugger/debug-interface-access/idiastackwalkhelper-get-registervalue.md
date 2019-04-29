@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831832"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 Recupera il valore di un registro.
@@ -43,7 +43,7 @@ HRESULT get_registerValue ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Nonostante le dimensioni del `pRetVal` parametro, un'implementazione deve archiviare solo registro in genere conserva. Un registro a 8 bit, ad esempio, contiene solo i bit più bassi 8-del valore specificato. Questo valore a 8 bit viene espanso a 64-bit quando restituito da questo metodo.
 
 ## <a name="see-also"></a>Vedere anche

@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820406"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 
@@ -110,9 +110,9 @@ Questa implementazione contiene un errore comune off alla volta. Per fortuna, l'
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Usare gli strumenti di analisi codice di Visual Studio e SAL
 
-1.  In Visual Studio, aprire un progetto C++ che contiene le annotazioni SAL.
+1. In Visual Studio, aprire un progetto C++ che contiene le annotazioni SAL.
 
-2.  Nella barra dei menu, scegliere **compilare**, **Esegui analisi del codice sulla soluzione**.
+2. Nella barra dei menu, scegliere **compilare**, **Esegui analisi del codice sulla soluzione**.
 
      Prendere in considerazione la \_In\_ riportato in questa sezione. Se si esegue l'analisi del codice su di esso, viene visualizzato questo avviso:
 
@@ -122,15 +122,15 @@ Questa implementazione contiene un errore comune off alla volta. Per fortuna, l'
 
 Il `_In_` annotazione indica che:
 
--   Il parametro deve essere valido e non verrà modificato.
+- Il parametro deve essere valido e non verrà modificato.
 
--   La funzione leggerà solo dal buffer a elemento singolo.
+- La funzione leggerà solo dal buffer a elemento singolo.
 
--   Il chiamante deve fornire al buffer e inizializzarla.
+- Il chiamante deve fornire al buffer e inizializzarla.
 
--   `_In_` Consente di specificare "read-only". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.
+- `_In_` Consente di specificare "read-only". Un errore comune consiste nell'applicare `_In_` a un parametro che deve avere il `_Inout_` annotazione invece.
 
--   `_In_` è consentito ma ignorato dall'analizzatore su valori scalari non puntatore.
+- `_In_` è consentito ma ignorato dall'analizzatore su valori scalari non puntatore.
 
 ```cpp
 void InCallee(_In_ int *pInt)

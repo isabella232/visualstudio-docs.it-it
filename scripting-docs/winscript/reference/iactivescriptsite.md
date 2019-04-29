@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992561"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Implementato dall'host per creare un sito per il motore di Script di Windows. In genere, questo sito sarà associato al contenitore di tutti gli oggetti che sono visibili allo script (ad esempio, i controlli ActiveX). In genere, questo contenitore corrisponderà al documento o pagina che viene visualizzato. Microsoft Internet Explorer, ad esempio, sarebbe creare tali un contenitore per ogni pagina HTML viene visualizzata. Ogni ActiveX controllo (o un altro oggetto di automazione) nella pagina e il motore di scripting, sarebbe enumerabile all'interno del contenitore.  

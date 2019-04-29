@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007435"
 ---
 # <a name="javascript-object-expected"></a>Previsto oggetto JavaScript
 Si è provato a passare un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto da una funzione predefinita che prevede un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] oggetto. Funzioni predefinite diverse richiedono gli oggetti definiti in [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (anziché gli oggetti definiti dall'host o un componente esterno come un controllo).  

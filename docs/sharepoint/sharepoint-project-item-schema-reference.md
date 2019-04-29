@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: bc15ff5c384ec63f99ed50a5f3c700efd7ba3c18
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007719"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>Riferimento dello schema elementi di progetto SharePoint
   Visual Studio Usa lo schema di elemento di progetto SharePoint per convalidare il contenuto del *spdata* file. Un' *spdata* file specifica il contenuto e il comportamento di un elemento di progetto SharePoint. Per altre informazioni sul contenuto di elementi di progetto SharePoint, vedere [creare elementi di modelli e i modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fba667e3d73593a050a18f26a15670d6878fd79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554436"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 Ogni parametro di una funzione è identificata da un `SymTagFunctionArgType` simbolo.
@@ -25,7 +25,7 @@ Ogni parametro di una funzione è identificata da un `SymTagFunctionArgType` sim
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Simboli per l'elemento padre FunctionType.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID del simbolo classe padre.|

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860276"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generazione nuovo progetto: Dietro le quinte, prima parte
 Mai pensato di come creare un proprio tipo di progetto? Chiedersi cosa succede effettivamente quando si crea un nuovo progetto? Verrà esaminato un peek dietro le quinte e vedere cosa sta effettivamente succedendo.
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **Nodo progetto personalizzato** visualizzato come nodo figlio di Visual c# appena sotto il nodo di Windows.
 
 ## <a name="see-also"></a>Vedere anche
-- [Nuova generazione del progetto: Dietro le quinte, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Generazione di un nuovo progetto: dietro le quinte, seconda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

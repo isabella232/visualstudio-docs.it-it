@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002062"
 ---
-# <a name="how-to-use-xml-snippets"></a>Procedura: Usare frammenti XML
+# <a name="how-to-use-xml-snippets"></a>Procedura: Usare i frammenti XML
 
 È possibile richiamare i frammenti XML usando i due comandi seguenti nel menu di scelta rapida dell'editor XML. Il **Inserisci frammento di codice** comando inserisce il frammento XML in corrispondenza della posizione del cursore. Il **Racchiudi** comando esegue il wrapping di frammenti XML intorno al testo selezionato. Ogni frammento XML dispone di tipi di frammento designati. I tipi di frammento determinano se il frammento di codice è disponibile con la **Inserisci frammento** comando, il **Racchiudi** o entrambi.
 
@@ -98,7 +98,7 @@ Le procedure seguenti descrivono come accedere al **Racchiudi** comando.
 
 3. Selezionare un frammento dall'elenco usando il mouse o digitando il nome del frammento di codice e premendo **della scheda** oppure **invio**.
 
-## <a name="use-xml-snippets"></a>Usare frammenti XML
+## <a name="use-xml-snippets"></a>Usare i frammenti XML
 
 Una volta scelto il frammento XML, il testo del frammento di codice viene inserito automaticamente nella posizione del cursore. I campi modificabili del frammento vengono evidenziati e il primo campo modificabile viene selezionato automaticamente. Il campo attualmente selezionato è di tipo boxed.
 

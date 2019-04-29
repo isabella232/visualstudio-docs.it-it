@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998916"
 ---
 # <a name="properties-of-domain-relationships"></a>Proprietà delle relazioni di dominio
 Le proprietà nella tabella seguente sono associate a una relazione di dominio. Per informazioni sulle relazioni di dominio, vedere [informazioni su modelli, classi e relazioni](../modeling/understanding-models-classes-and-relationships.md). Per altre informazioni su come usare queste proprietà, vedere [personalizzare ed estendere un linguaggio specifico di dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -29,7 +29,7 @@ Le proprietà nella tabella seguente sono associate a una relazione di dominio. 
 |Consente i duplicati|Se `True`, è possibile creare collegamenti duplicati di relazione di dominio tra gli stessi due elementi.|`False`|
 |Relazioni di base|Se la relazione di dominio è derivata, la relazione di base della relazione di dominio.|\<nessuno>|
 |È di incorporamento|Se `True`, la relazione di dominio è una relazione di incorporamento. Se `False`, la relazione è una relazione di riferimento.|\<both>|
-|nome|Il nome della relazione di dominio.|Nome corrente|
+|Nome|Il nome della relazione di dominio.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi che è affiliato alla relazione di dominio.|Spazio dei nomi corrente|
 |Note|Note informali associate la relazione di dominio.|\<nessuno>|
 |Descrizione|La descrizione che consente di documentare il codice e viene utilizzata nell'interfaccia utente della finestra di progettazione generata.|\<nessuno>|

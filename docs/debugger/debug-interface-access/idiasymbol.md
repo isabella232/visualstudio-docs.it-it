@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840704"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 Vengono descritte le proprietà di un'istanza del simbolo.
@@ -34,7 +34,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaSymbol`.
 > [!NOTE]
 > I simboli restituirà dati significativi solo per alcuni di questi metodi, a seconda del tipo di simbolo. Se un metodo restituisce `S_OK`, tale metodo ha restituito dati significativi.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Recupera tutti gli elementi figlio del simbolo.|
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera gli elementi figlio del simbolo. Questo metodo è la versione estesa del [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|
@@ -220,7 +220,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaSymbol`.
 |[IDiaSymbol::get_virtualTableShapeId](../../debugger/debug-interface-access/idiasymbol-get-virtualtableshapeid.md)|Recupera l'identificatore di tabella virtuale forma del simbolo.|
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|Recupera un flag che indica se il tipo di dati definito dall'utente è volatile.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
 Per ottenere questa interfaccia, una chiamata a uno dei metodi seguenti:
@@ -336,7 +336,7 @@ void DumpLocalVars( DWORD rva, IDiaSession *pSession )
 ```
 
 ## <a name="requirements"></a>Requisiti
-`Header:` Dia2.h
+`Header:` DIA2.h
 
 Libreria: diaguids.lib
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865677"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Questa struttura consente di specificare informazioni su un tipo di campo impiegato dai metadati.
@@ -53,7 +53,7 @@ public struct METADATA_TYPE {
 
  L'ID del token dei metadati di questo tipo.
 
- [C++] `_mdToken` è un `typedef` un 32-bit `int`.
+ [C++] `_mdToken` sia un `typedef` un 32-bit `int`.
 
 ## <a name="remarks"></a>Note
  Questa struttura viene visualizzato come parte dell'unione nel [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struttura quando il `dwKind` campo il `TYPE_INFO` struttura è impostata su `TYPE_KIND_METADATA` (un valore compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione).

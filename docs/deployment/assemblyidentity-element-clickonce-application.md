@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7870fcf644103ec7f048a809e439cb962f63bd07
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900667"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; elemento (applicazione ClickOnce)
 Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione.
@@ -42,7 +42,7 @@ Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/in
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  Il `assemblyIdentity` elemento è obbligatorio. Non contiene alcun elemento figlio e ha gli attributi seguenti.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Name`|Obbligatorio. Identifica il nome dell'applicazione.<br /><br /> Se `Name` contiene caratteri speciali, ad esempio le virgolette singole o doppie, l'applicazione potrebbe non riuscire per l'attivazione.|
 |`Version`|Obbligatorio. Specifica il numero di versione dell'applicazione nel formato seguente: `major.minor.build.revision`|
@@ -52,7 +52,7 @@ Identifica l'applicazione distribuita un [!INCLUDE[ndptecclick](../deployment/in
 
 ## <a name="examples"></a>Esempi
 
-### <a name="description"></a>Description
+### <a name="description"></a>Descrizione
  L'esempio di codice seguente illustra un' `assemblyIdentity` elemento in un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto dell'applicazione. Questo esempio di codice è parte di un esempio più esaustivo disponibile nel [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).
 
 ### <a name="code"></a>Codice

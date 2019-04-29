@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 09c1e2ac48f12e82d268311c114919c732a44073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006496"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Il numero delle cifre frazionarie non è compreso nell'intervallo
 Si è provato a passare un argomento non valido alla funzione **Number.prototype.toExponential**. L'argomento della funzione **toExponential ()** deve essere compreso tra 0 e 20 (inclusivo).  

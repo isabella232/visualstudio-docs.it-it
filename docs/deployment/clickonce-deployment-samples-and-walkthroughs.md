@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900386"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Esempi e procedure dettagliate relative alla distribuzione ClickOnce
 In questa sezione contiene applicazioni di esempio, codice di esempio e istruzioni dettagliate che illustrano la sintassi, struttura e le tecniche usate per distribuire Windows Form, WPF e applicazioni console.
@@ -31,7 +31,7 @@ In questa sezione contiene applicazioni di esempio, codice di esempio e istruzio
 
 ## <a name="clickonce-deployment"></a>distribuzione ClickOnce
 
-|Argomento|Description|
+|Argomento|Descrizione|
 |-----------|-----------------|
 |[Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Viene illustrato come usare le utilità di.NET Framework per distribuire l'applicazione ClickOnce.|
 |[Scaricare gli assembly su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Viene illustrato come contrassegnare determinati assembly nell'applicazione come "facoltativi" e come scaricarli tramite le classi nel <xref:System.Deployment.Application> dello spazio dei nomi.|

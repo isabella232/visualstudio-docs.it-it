@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833686"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prepara i dati di debug archiviati in un file di programma del database (con estensione pdb) si accede tramite un flusso di dati in memoria.
@@ -38,13 +38,13 @@ HRESULT loadDataFromIStream ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Nella tabella seguente mostra i valori restituiti possibili per questo metodo.
 
-|Value|Description|
+|Value|Descrizione|
 |-----------|-----------------|
 |E_PDB_FORMAT|È stato effettuato un tentativo di accedere a un file con formato obsoleto.|
 |E_INVALIDARG|Parametro non valido.|
 |E_UNEXPECTED|Origine dati è già stata preparata.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questo metodo consente di dati di debug un eseguibile può essere ottenuto dalla memoria tramite un <xref:IStream> oggetto.
 
  Per caricare un file con estensione pdb senza convalida, usare il [Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (metodo).

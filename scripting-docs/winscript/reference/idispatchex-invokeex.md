@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 33494836e463c9c2fd74acf7835d7e4630747b0e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000752"
 ---
 # <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
 Fornisce l'accesso a proprietà e metodi esposti da un `IDispatchEx` oggetto.  
@@ -55,7 +55,7 @@ HRESULT InvokeEx(
   
  Flag che descrivono il contesto del `InvokeEx` chiamare:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |DISPATCH_METHOD|Come un metodo viene richiamato il membro. Se una proprietà ha lo stesso nome, può essere impostato sia ciò che il flag DISPATCH_PROPERTYGET (definito da `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Il membro viene recuperato come un proprietà o un membro dati (definito da `IDispatch`).|  
