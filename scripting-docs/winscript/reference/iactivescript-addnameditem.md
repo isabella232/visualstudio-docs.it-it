@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935797"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
 Aggiunge il nome di un elemento di livello radice per lo spazio dei nomi del motore di script. Un elemento di livello radice è un oggetto con proprietà e metodi, un'origine evento o tutti e tre.  

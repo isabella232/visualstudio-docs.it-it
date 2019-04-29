@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846585"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gestire le eccezioni con il debugger di Visual Studio
 
@@ -100,7 +100,7 @@ Se si seleziona un'eccezione nel **impostazioni eccezioni** finestra, esecuzione
 
   ma non vengono visualizzati il `here` riga.
 
-- Oggetto C# applicazione console fa riferimento a una libreria di classi con una classe che dispone di due metodi. Un metodo genera un'eccezione e gestisce, mentre un secondo metodo, genera la stessa eccezione ma non la gestisce.
+- Un'applicazione console c# fa riferimento a una libreria di classi con una classe che dispone di due metodi. Un metodo genera un'eccezione e gestisce, mentre un secondo metodo, genera la stessa eccezione ma non la gestisce.
 
   ```csharp
   public class Class1
@@ -224,6 +224,6 @@ Per aggiungere le eccezioni condizionale:
 
 - [Continuare l'esecuzione dopo un'eccezione](../debugger/continuing-execution-after-an-exception.md)<br/>
 - [Procedura: Esaminare il codice di sistema dopo un'eccezione](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Procedura: Usare controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Usare i controlli di runtime senza la libreria di runtime del linguaggio C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)

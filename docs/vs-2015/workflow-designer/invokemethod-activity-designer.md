@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952009"
 ---
 # <a name="invokemethod-activity-designer"></a>ActivityDesigner InvokeMethod
 **InvokeMethod** designer viene utilizzato per creare e configurare un <xref:System.Activities.Statements.InvokeMethod> attività.  
@@ -42,7 +42,7 @@ ms.locfileid: "58967384"
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|Oggetto contenente il metodo da chiamare. È possibile modificare questa proprietà nell'area della finestra di progettazione.<br /><br /> È necessario impostare <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> o <xref:System.Activities.Statements.InvokeMethod.TargetType%2A>.|  
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|Tipo di <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. È possibile modificare questa proprietà nell'area della finestra di progettazione. È necessario impostare questa proprietà solo se il metodo chiamato è statico.|  
   
- Passare i parametri come C# **out** parametro (ad esempio `Method1(out myParam)),` è consigliabile usare **OutArgument** anziché **InOutArgument**  
+ Passare i parametri come c# **out** parametro (ad esempio `Method1(out myParam)),` è consigliabile usare **OutArgument** anziché **InOutArgument**  
   
  Metodi con gli argomenti chiamati **TargetObject** oppure **risultato** non può essere richiamata usando la <xref:System.Activities.Statements.InvokeMethod> attività. Il motivo di ciò è che l'attività <xref:System.Activities.Statements.InvokeMethod> registra <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> e <xref:System.Activities.Statements.InvokeMethod.Result%2A> in <xref:System.Activities.Activity.CacheMetadata%2A>.  
   

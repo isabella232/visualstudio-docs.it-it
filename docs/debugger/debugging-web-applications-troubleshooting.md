@@ -19,19 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852354"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: risoluzione dei problemi
+# <a name="debugging-web-applications-troubleshooting"></a>Debug di applicazioni Web: Risoluzione dei problemi
 In questa sezione sono contenute le procedure comuni utilizzabili per risolvere gli errori.
 
 ## <a name="in-this-section"></a>In questa sezione
- [Procedura: verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md) spiega come impostare correttamente le proprietà in IIS per abilitare il debug.
+ [Procedura: Verificare le impostazioni delle proprietà IIS](../debugger/how-to-verify-iis-property-settings.md) spiega come impostare correttamente le proprietà in IIS per abilitare il debug.
 
 ## <a name="related-sections"></a>Sezioni correlate
- [Debug di applicazioni Web: Errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md) spiega risolvere gli errori.
+ [Debug di applicazioni Web: Gli errori e risoluzione dei problemi](../debugger/debugging-web-applications-errors-and-troubleshooting.md) spiega risolvere gli errori.
 
  [Debug di Script e applicazioni Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) Cenni preliminari sul debug delle applicazioni Web, ad esempio [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servizi Web XML e progetti ATL server.

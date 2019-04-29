@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961641"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Procedura: A livello di codice usare finestre di dialogo predefinite in Word
   Quando si lavora con Microsoft Office Word, esistono casi è necessario per visualizzare le finestre di dialogo per l'input utente. È possibile crearne uno, è opportuno anche di adottare l'approccio dell'uso di finestre di dialogo predefinite in Word, esposti nel <xref:Microsoft.Office.Interop.Word.Dialogs> raccolta del <xref:Microsoft.Office.Interop.Word.Application> oggetto. In questo modo è possibile accedere a oltre 200 delle finestre di dialogo predefinite, rappresentati come enumerazioni.

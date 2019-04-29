@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916904"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>Parametri
  `pbstrEngine`
 
- [out] Restituisce il nome della DE esecuzione del programma (C++ specifiche: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).
+ [out] Restituisce il nome della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).
 
  `pguidEngine`
 
- [out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore di).
+ [out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore).
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

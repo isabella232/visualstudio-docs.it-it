@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5c285e71179c5dd59fad0357dbf71ee4b32f9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813889"
 ---
 # <a name="how-to-execute-a-sharepoint-command"></a>Procedura: Eseguire un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Dopo aver definito il comando e distribuirlo con l'estensione strumenti di SharePoint, l'estensione può eseguire il comando per effettuare chiamate nel modello a oggetti server SharePoint. Per eseguire il comando, usare uno dei metodi di ExecuteCommand un <xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection> oggetto.

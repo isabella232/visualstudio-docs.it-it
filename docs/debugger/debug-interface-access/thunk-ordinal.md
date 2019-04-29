@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854440"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Definisce i tipi di thunk.
@@ -53,7 +53,7 @@ Thunk trampoline THUNK_ORDINAL_TRAMP_INCREMENTAL incrementale (un thunk trampoli
 
 Thunk di trampoline punto THUNK_ORDINAL_TRAMP_BRANCHISLAND ramo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono restituiti da una chiamata per il [Get_thunkordinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (metodo).
 
 ## <a name="requirements"></a>Requisiti

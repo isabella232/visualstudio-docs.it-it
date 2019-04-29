@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c1bc98e8f40dda13e6b2b90adade479ed4aeba97
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949927"
 ---
-# <a name="collection-activity-designers"></a>ActivityDesigner della raccolta
+# <a name="collection-activity-designers"></a>ActivityDesigner Raccolta
 
 La raccolta ActivityDesigner vengono usati per creare e configurare le attività usate per gestire le raccolte negli argomenti contenuti in questa sezione ed elencati nella tabella seguente offrono indicazioni su come usare le finestre di progettazione del flusso di lavoro Designeractivity e modello.

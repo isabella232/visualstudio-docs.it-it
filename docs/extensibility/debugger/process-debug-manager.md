@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9f6a93cc87be2369ba3bc96bf6682caeb4a727c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889172"
 ---
 # <a name="process-debug-manager"></a>Gestione debug del processo
 Il gestore di debug di processi (PDM) è un componente di Visual Studio che consente di gestire i programmi e il debug di processi, rendendoli disponibili per la sessione di gestione e i motori di debug.

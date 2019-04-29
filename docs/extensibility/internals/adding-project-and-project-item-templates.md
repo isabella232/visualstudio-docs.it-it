@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910748"
 ---
 # <a name="add-project-and-project-item-templates"></a>Aggiungere al progetto e modelli di elemento di progetto
 Quando si creano tipi di progetto personalizzati, è necessario fornire supporto per l'aggiunta di nuovi progetti ed elementi del progetto con lo standard [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] finestre di dialogo di ambiente di sviluppo (IDE) di sviluppo integrato. Gli argomenti seguenti descrivono le diverse tecniche per l'aggiunta di progetti ed elementi del progetto.

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 98425d12c53c61cb3f7557d1243cc757c326a89a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954908"
 ---
 # <a name="iactivescriptparseprocedureparseproceduretext"></a>IActiveScriptParseProcedure::ParseProcedureText
 Analizza la procedura di codice specificato e aggiunge la procedura per lo spazio dei nomi.  
@@ -72,7 +72,7 @@ HRESULT ParseProcedureText(
  `dwFlags`  
  [in] Flag associato con la procedura. Può essere una combinazione dei valori seguenti:  
   
-|Valore|Significato|  
+|Value|Significato|  
 |-----------|-------------|  
 |SCRIPTPROC_ISEXPRESSION|Indica che il codice in `pstrCode` è un'espressione che rappresenta il valore restituito della procedura. Per impostazione predefinita, il codice può contenere un'espressione, un elenco di istruzioni o qualsiasi elemento altrimenti consentito in una procedura per il linguaggio di scripting.|  
 |SCRIPTPROC_IMPLICIT_THIS|Indica che il `this` puntatore è incluso nell'ambito della procedura.|  

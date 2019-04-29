@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863967"
 ---
 # <a name="error-codes"></a>Codici di errore
 Quando una funzione API dei plug-in del controllo origine restituisce un errore, si dovrà essere uno dei seguenti codici di errore. Tutti gli errori sono negativi, sono positivi, avvisi o i codici di errore informativo e operazioni riuscite sono 0.

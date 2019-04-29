@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac6a7582c6fa59665390cfdb6b613fff6e36709
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62836836"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 Recupera un flag che indica se il simbolo corrisponde a una variabile locale condivisa gruppo nel codice compilato per un tasto di scelta rapida AMP C++.
@@ -30,7 +30,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
 #### <a name="parameters"></a>Parametri
  `pFlag`
 
-[out] Un puntatore a un `BOOL` che indica se il simbolo corrisponde a una variabile locale condivisa gruppo nel codice compilato per un tasto di scelta rapida AMP C++. Se `TRUE`, il `get_baseDataSlot` e `get_baseDataOffset` metodi possono essere utilizzati per ottenere le informazioni sul percorso di archiviazione per la variabile.
+[out] Un puntatore a un `BOOL` che indica se il simbolo corrisponde a una variabile locale condivisa gruppo nel codice compilato per una C++ tasti di scelta rapida AMP. Se `TRUE`, il `get_baseDataSlot` e `get_baseDataOffset` metodi possono essere utilizzati per ottenere le informazioni sul percorso di archiviazione per la variabile.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.

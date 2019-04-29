@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905260"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Getting Started With The Debugger Snapshot
 
@@ -33,7 +33,7 @@ Il Debugger di Snapshot raccoglie gli snapshot dall'applicazione. Gli snapshot s
 
     Un esagono viola viene visualizzato in cui si fa clic sulla sinistra.
 
-2. Fare clic su **Avvia raccolta** per attivare il punto di ancoraggio.
+2. Fare clic su **Avvia raccolta** per attivare il punto di acquisizione snapshot.
 
 ### <a name="open-a-snapshot"></a>Aprire uno Snapshot
 
@@ -47,7 +47,7 @@ Il Debugger di Snapshot raccoglie gli snapshot dall'applicazione. Gli snapshot s
 
 Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le variabili locali, espressioni di controllo e chiamare Stack windows e anche valutare le espressioni.
 
-Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interessati. Per impostazione predefinita, un solo snapshot viene acquisito per ogni punto di ancoraggio. Vale a dire, dopo che venga acquisito uno snapshot, il punto di ancoraggio viene disattivata. Se si desidera acquisire snapshot di un altro al punto di ancoraggio, è possibile attivare il punto di ancoraggio indietro facendo **Aggiorna raccolta**.
+Il sito Web stesso è ancora attivo e l'operazione non ha effetti sugli utenti finali. Per impostazione predefinita, un solo snapshot viene acquisito per ogni punto di ancoraggio. Vale a dire, dopo che venga acquisito uno snapshot, il punto di ancoraggio viene disattivata. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
 
 ### <a name="set-a-logpoint"></a>Impostare un punto di registrazione
 
@@ -57,7 +57,7 @@ Il sito Web stesso è ancora in tempo reale e gli utenti finali non sono interes
 
     ![Condizioni punto di ancoraggio](../media/snapshot-startpage-logpoint.png)
 
-3. Nel **messaggio** immettere un messaggio di log che si desidera accedere. È inoltre possibile valutare le variabili nel messaggio di log, posizionandoli all'interno di parentesi graffe.
+3. Nel **messaggio** immettere un messaggio di log che si desidera accedere. È anche possibile valutare le variabili nel messaggio di log, racchiudendole all'interno di parentesi graffe.
 
     Se si sceglie **inviare alla finestra di Output**, viene visualizzato il messaggio nella finestra Strumenti di diagnostica quando viene raggiunto il punto di registrazione.
 

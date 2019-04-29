@@ -14,19 +14,19 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed7856641193503d50b39ebab7796414f9620a1f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: ec862ccee47772fc9fc5b4794b88212ff8781d44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935289"
 ---
 # <a name="expected-"></a>Previsto ':'
 Si ha provato a creare un'espressione che utilizza l'operatore condizionale ternario, ma non include i due punti tra il secondo e terzo operando. Operatore condizionale ternario (tre operandi) richiede i due punti tra il secondo (true) e il terzo (false) operandi.  
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
--   Inserire due punti tra il secondo e terzo operando.  
+- Inserire due punti tra il secondo e terzo operando.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Condizionale operatore ternario (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: dfbb39d10d552141a68d40a7be3f1715a80f8f57
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840202"
 ---
 # <a name="scriptthreadid-constants"></a>Costanti SCRIPTTHREADID
 Consente di specificare il tipo di thread.  
@@ -35,7 +35,7 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>Costanti  
   
-|Costante|Valore|Significato|  
+|Costante|Value|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Il thread attualmente in esecuzione.|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|Thread di base; vale a dire, il thread in cui la creazione di script del motore è stata creata un'istanza.|  

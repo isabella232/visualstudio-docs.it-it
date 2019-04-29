@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858434"
 ---
 # <a name="using-the-activity-designers"></a>Utilizzo degli ActivityDesigner
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] include alcune attività fornite dal sistema che è possibile usare per la costruzione di attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e vengono fornite istruzioni sul relativo uso.  

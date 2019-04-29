@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c33b852a585825f3c5b5fc415b01ac31e35f763f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861369"
 ---
 # <a name="create-a-source-control-plug-in"></a>Creare un controllo del codice sorgente del plug-in
 Visual Studio SDK fornisce le risorse che consentono di aggiungere funzionalità di controllo di origine per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE). Consente di usare qualsiasi DLL del plug-in che è conforme con l'API dei plug-in del controllo origine descritti in questa documentazione.

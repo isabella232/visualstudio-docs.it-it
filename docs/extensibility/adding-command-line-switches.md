@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891837"
 ---
 # <a name="add-command-line-switches"></a>Aggiungere i parametri della riga di comando
 È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando *devenv.exe* viene eseguita. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione MySwitch per una sottoclasse di VSPackage denominato **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.
@@ -35,7 +35,7 @@ ms.locfileid: "56722603"
 | Argomenti | Il numero di argomenti per il commutatore. Può essere "*", o un elenco di argomenti. |
 | DemandLoad | Caricare il pacchetto VSPackage automaticamente se è impostato su 1, altrimenti è impostato su 0. |
 | HelpString | L'ID della Guida stringa o una risorsa della stringa da visualizzare con **devenv /?**. |
-| nome | Questo parametro. |
+| Nome | Questo parametro. |
 | PackageGuid | Il GUID del pacchetto. |
 
  Il primo valore degli argomenti è in genere 0 o 1. Un valore speciale di ' *' può essere utilizzato per indicare che tutto il resto della riga di comando è costituito dall'argomento. Ciò può essere utile negli scenari in cui un utente deve passare una stringa di comando del debugger di debug.

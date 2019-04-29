@@ -21,19 +21,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846373"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Funzionalità IntelliTrace (C#, Visual Basic, C++)
 
 È possibile utilizzare IntelliTrace per registrare gli eventi e il metodo chiama l'applicazione, che consente di esaminare il relativo stato (stack di chiamate e i valori delle variabili locali) in diversi momenti dell'esecuzione. È sufficiente avviare il debug come di consueto: IntelliTrace viene attivato per impostazione predefinita e si possono vedere le informazioni registrate da IntelliTrace nella nuova finestra **Strumenti di diagnostica** nella scheda **Eventi**. Selezionare un evento e fare clic su **Attiva debug cronologico** per visualizzare gli stack di chiamate e le variabili locali registrati per questo evento.
 
-Per una descrizione dettagliata, vedere [procedura dettagliata: Uso di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Per una descrizione dettagliata, vedere [procedura dettagliata: Utilizzo di IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
-È possibile utilizzare IntelliTrace in Visual Studio Enterprise Edition ma non le edizioni Professional o Community.
+È possibile utilizzare IntelliTrace in Visual Studio Enterprise edition ma non le edizioni Professional o Community.
 
 Per verificare che IntelliTrace è abilitato, aprire la pagina delle opzioni **Strumenti > Opzioni > IntelliTrace**. **Abilita IntelliTrace** deve essere selezionata per impostazione predefinita.
 

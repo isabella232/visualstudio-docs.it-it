@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953181"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Risorse aggiuntive per lo sviluppo di soluzioni Office
   Gli strumenti di sviluppo di Microsoft Office in Visual Studio rappresentano solo uno dei diversi modi per estendere le applicazioni di Office. Le applicazioni di Office includono infatti anche alcune funzionalità incorporate, tra cui i formati Open XML, non contemplate dagli strumenti di sviluppo di Office in Visual Studio o da questa documentazione.

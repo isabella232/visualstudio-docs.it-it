@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839433"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Esegue il mapping dei dati rispetto al numero di sezione ai segmenti dello spazio degli indirizzi.
@@ -31,7 +31,7 @@ IDiaSegment : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable
 Nella tabella seguente sono illustrati i metodi di `IDiaSegment`.
 
-|Metodo|Description|
+|Metodo|Descrizione|
 |------------|-----------------|
 |[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera il numero di segmenti.|
 |[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera l'offset in segmenti in cui inizia la sezione.|
@@ -43,7 +43,7 @@ Nella tabella seguente sono illustrati i metodi di `IDiaSegment`.
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera l'indirizzo virtuale relativo (RVA) dell'inizio della sezione.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera l'indirizzo virtuale (valutazione della vulnerabilità) dell'inizio della sezione.|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Poiché il DIA SDK esegue già traduzioni dall'offset della sezione a indirizzi virtuali relativi, la maggior parte delle applicazioni non apporterà usare le informazioni nella mappa di segmenti.
 
 ## <a name="notes-for-callers"></a>Note per i chiamanti
@@ -94,7 +94,7 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: Dia2.h
+Intestazione: DIA2.h
 
 Libreria: diaguids.lib
 

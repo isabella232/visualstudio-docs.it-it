@@ -11,11 +11,11 @@ ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: jillfra
 ms.openlocfilehash: 4bf99473faf8bc2bf7c02af360e24c398c48e297
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948163"
 ---
 # <a name="installing-vspackages"></a>Installazione di VSPackage
 Questa sezione descrive come compilare e installare come creare e installare i VSPackage e come supportare gli utenti che eseguono più versioni di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nello stesso momento.  

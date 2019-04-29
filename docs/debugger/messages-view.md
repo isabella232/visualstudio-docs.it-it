@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845852"
 ---
 # <a name="messages-view"></a>Visualizzazione messaggi
 Ogni finestra dispone di un flusso di messaggi associati. Questo flusso di messaggi viene visualizzata una finestra di visualizzazione dei messaggi. L'handle di finestra, codice di messaggio e il messaggio vengono visualizzati. È possibile creare una visualizzazione di messaggi per un thread o processo anche. In questo modo è possibile visualizzare i messaggi inviati a tutte le finestre appartenenti a un determinato processo o thread, che risulta particolarmente utile per l'acquisizione di messaggi di inizializzazione della finestra.

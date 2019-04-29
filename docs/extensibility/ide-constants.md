@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cbe90c182ada4d7e69313ff570b2f7d26087170c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54929552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861932"
 ---
 # <a name="ide-constants"></a>Costanti dell'IDE
 
@@ -29,7 +29,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 
 ## <a name="logical-and-physical-views"></a>Visualizzazioni logiche e fisiche
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori devono passare il valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **aperta con** finestra di dialogo, in questo caso le visualizzazioni di codice possibili.|
 |<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97> `cmdidOpenWith` i gestori di passano questo valore per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per ottenere il **Apri con** finestra di dialogo, in questo caso popolata con eventuali <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> visualizzazioni che eseguono il mapping alla stessa visualizzazione di debug <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>.|
@@ -65,7 +65,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 
 ## <a name="visual-studio-constants"></a>Costanti di Visual Studio
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Un errore HRESULT specifico di Visual Studio e che indica "Progetto inoltrato".|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Una costante specifica di Visual Studio per un "marcatore della casella degli strumenti".|
@@ -80,7 +80,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  Viene descritto il componente dell'IDE appena selezionato, in un <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> chiamare, ad esempio.
 
-|Costante|Valore|
+|Costante|Value|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|

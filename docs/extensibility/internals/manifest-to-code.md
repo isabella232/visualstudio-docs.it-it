@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909157"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Il manifesto per lo strumento di codice è un'applicazione console che accetta un file .imagemanifest per il servizio di immagini di Visual Studio e genera un wrapper o i file per fare riferimento ai valori del manifesto di immagini in C++, C#, i file VB o con estensione vsct da Visual Studio estensioni. Questo strumento genera i file di wrapper che possono essere utilizzati per le immagini richiedente da Visual Studio Image Service direttamente o per passare i valori del manifesto tramite le API, se il codice non gestisce la propria interfaccia utente e per il rendering.

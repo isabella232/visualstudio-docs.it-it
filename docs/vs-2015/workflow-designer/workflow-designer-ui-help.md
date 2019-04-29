@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855276"
 ---
 # <a name="workflow-designer-ui-help"></a>Guida dell'interfaccia utente della finestra di progettazione dei flussi di lavoro
 Contenuto della sezione sono inclusi gli argomenti della Guida sensibile al contesto di [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Quando si utilizza [!INCLUDE[vs2010](../includes/vs2010-md.md)], è possibile accedere a questi argomenti dall'interfaccia utente premendo **F1** quando un [!INCLUDE[wfd2](../includes/wfd2-md.md)] nella finestra di dialogo è aperta.  

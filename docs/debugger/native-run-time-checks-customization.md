@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905486"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalizzazione dei controlli runtime nativi
 Quando esegue la compilazione con **/RTC** (controlli di run-time) oppure usare il `runtime_checks` pragma, la libreria di runtime C fornisce controlli runtime nativi. In alcuni casi può essere necessario personalizzare il controllo runtime:
@@ -40,7 +40,7 @@ Quando esegue la compilazione con **/RTC** (controlli di run-time) oppure usare 
 
   Per personalizzare il controllo degli errori di runtime, è possibile utilizzare uno degli accorgimenti seguenti:
 
-- Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [procedura: scrivere una funzione di segnalazione errori di Run-Time](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Scrivere una funzione per la segnalazione degli errori di runtime. Per altre informazioni, vedere [Procedura: Scrivere una funzione per la segnalazione degli errori di runtime](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personalizzare la destinazione dei messaggi di errore.
 
@@ -55,6 +55,6 @@ Quando esegue la compilazione con **/RTC** (controlli di run-time) oppure usare 
  `_RTC_NumErrors` restituisce il numero di tipi di errore rilevati dai controlli degli errori di runtime. Per ottenere una breve descrizione di ciascun errore, è possibile creare un ciclo da 0 al valore restituito da `_RTC_NumErrors` passando il valore di iterazione a `_RTC_GetErrDesc` in ciascun ciclo. Per altre informazioni, vedere [RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Usare controlli runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
+- [Procedura: Usare i controlli di runtime nativi](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

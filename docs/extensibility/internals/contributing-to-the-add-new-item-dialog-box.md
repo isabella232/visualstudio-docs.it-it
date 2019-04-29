@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77008b6a4403270c77e24607fc0f4f6f4456296e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861552"
 ---
 # <a name="contribute-to-the-add-new-item-dialog-box"></a>Contribuire alla finestra di dialogo Aggiungi nuovo elemento
 Un sottotipo di progetto può fornire una nuova directory completa degli elementi per il **Aggiungi nuovo elemento** finestra di dialogo registrando **Aggiungi elemento** modelli sotto il **progetti** sottochiave del Registro di sistema.

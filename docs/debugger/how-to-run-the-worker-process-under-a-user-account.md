@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847753"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: eseguire il processo di lavoro con un account utente
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedura: Eseguire il processo di lavoro con un account utente
 Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) con un account utente, attenersi alla procedura riportata di seguito.
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 4. In [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]IIS 6.0 è installato per impostazione predefinita. Il processo di lavoro corrispondente è w3wp.exe. Per eseguirlo in modalità IIS 6.0 con aspnet_wp.exe come processo di lavoro, è necessario attenersi alla procedura riportata di seguito:
 
-   1.  Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e infine **Internet Information Services**.
+   1. Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e infine **Internet Information Services**.
 
-   2.  Nella finestra di dialogo **Internet Information Services** , fare clic con il pulsante destro del mouse sulla cartella **Siti Web** e scegliere **Proprietà**.
+   2. Nella finestra di dialogo **Internet Information Services** , fare clic con il pulsante destro del mouse sulla cartella **Siti Web** e scegliere **Proprietà**.
 
-   3.  Nella finestra di dialogo **Proprietà siti Web** scegliere **Servizio**.
+   3. Nella finestra di dialogo **Proprietà siti Web** scegliere **Servizio**.
 
-   4.  Selezionare **Esegui il servizio WWW in modalità isolamento IIS 6.0**.
+   4. Selezionare **Esegui il servizio WWW in modalità isolamento IIS 6.0**.
 
-   5.  Chiudere la finestra di dialogo **Proprietà** e **Gestione servizi Internet**.
+   5. Chiudere la finestra di dialogo **Proprietà** e **Gestione servizi Internet**.
 
 5. Aprire un prompt dei comandi di Windows e reimpostare il server eseguendo:
 
    ```cmd
    iisreset
    ```
+
    oppure
 
    ```cmd
@@ -75,9 +76,9 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 9. Nella finestra di dialogo **Impostazioni avanzate di sicurezza per file ASP.Net temporanei** fare clic sul pulsante **Aggiungi**.
 
-    Verrà visualizzata la **finestra di dialogo per la selezione di utenti, computer o gruppi**.
+    Verrà visualizzata la finestra di dialogo per **la selezione di utenti, computer o gruppi**  .
 
-10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato NomeDominio\NomeUtente.
+10. Digitare il nome utente nella casella **Immettere il nome dell'oggetto da selezionare** quindi scegliere **OK**. Il nome utente deve seguire il formato: Nomedominio\nomeutente.
 
 11. Nella finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** , assegnare all'utente **Controllo completo**, quindi scegliere **OK** per chiudere la finestra di dialogo **Voce di autorizzazione per file ASP.NET temporanei** .
 
@@ -87,4 +88,4 @@ Per configurare il computer in modo da poter eseguire processo di lavoro [!INCLU
 
 ## <a name="see-also"></a>Vedere anche
 - [Eseguire il debug di applicazioni ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Requisiti di sistema per il debug di ASP.NET](../debugger/aspnet-debugging-system-requirements.md)
+- [Debug ASP.NET: Requisiti di sistema](../debugger/aspnet-debugging-system-requirements.md)

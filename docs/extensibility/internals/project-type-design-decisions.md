@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909115"
 ---
 # <a name="project-type-design-decisions"></a>Decisioni di progettazione relative al tipo di progetto
 Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisioni di progettazione riguardanti il tipo di progetto. È necessario decidere quali tipi di elementi che contengono i progetti, come verranno resi persistenti i file di progetto e quali modelli dell'impegno verrà utilizzato.
@@ -57,7 +57,7 @@ Prima di creare un nuovo tipo di progetto, è necessario prendere alcune decisio
  Quando gli oggetti dati vengono aperti utilizzando la modalità transazionale, le modifiche vengono salvate in un percorso temporaneo in memoria e non vengono eseguito il commit fino a quando l'utente sceglie manualmente salvare il file. In quel momento, tutte le modifiche devono trovarsi insieme o non verrà apportata alcuna modifica.
 
 ## <a name="see-also"></a>Vedere anche
-- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Salvataggio permanente dei progetti](../../extensibility/internals/project-persistence.md)
 - [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)
