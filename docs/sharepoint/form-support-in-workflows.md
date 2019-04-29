@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 704e08524bb9aaf014dbd29e7df7361a7e1bbefe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967409"
 ---
 # <a name="form-support-in-workflows"></a>Supporto dei form nei flussi di lavoro
   Quattro tipi di moduli possono essere utilizzati in un flusso di lavoro: associazione, avvio, attività e la modifica. Questi tipi di form possono basarsi su un form ASPX o un modulo di InfoPath. Il livello di supporto che [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fornisce per un particolare modulo dipende da diversi fattori, che sono descritte nelle tabelle seguenti. Per altre informazioni sui tipi di modulo del flusso di lavoro, vedere [Cenni preliminari sui form del flusso di lavoro](http://go.microsoft.com/fwlink/?LinkId=185228).

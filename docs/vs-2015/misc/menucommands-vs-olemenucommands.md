@@ -12,11 +12,11 @@ ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
 ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000960"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>Confronto tra oggetti MenuCommand e OleMenuCommand
 È possibile creare comandi di menu derivandoli dall'oggetto <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando i gestori eventi appropriati. Nella maggior parte dei casi, è possibile usare <xref:System.ComponentModel.Design.MenuCommand>, come avviene nel modello di progetto VSPackage, ma talvolta potrebbe essere necessario usare <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  

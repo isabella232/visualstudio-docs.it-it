@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6bc92d65ed179c7f2cb2f569a7d254a025887845
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967481"
 ---
 # <a name="extend-sharepoint-projects"></a>Estendere i progetti SharePoint
   Creare un'estensione di progetto quando si desidera personalizzare le funzionalità a livello di progetto dei progetti di SharePoint. Ad esempio, è possibile aggiungere le proprietà di progetto personalizzati, o rispondere a eventi a livello di progetto che vengono generati quando si sviluppa una soluzione di SharePoint in Visual Studio.
