@@ -21,11 +21,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 78a8bf94323391d031aaf718f6e3132eb89e1df3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560376"
 ---
 # <a name="annotating-function-behavior"></a>Annotazione del comportamento delle funzioni
 Oltre ad annotare [i parametri di funzione e restituire valori](../code-quality/annotating-function-parameters-and-return-values.md), è possibile annotare le proprietà dell'intera funzione.
@@ -50,7 +50,7 @@ Oltre ad annotare [i parametri di funzione e restituire valori](../code-quality/
 |----------------|-----------------|
 |`_Always_(anno_list)`|Analogamente a `anno_list _On_failure_(anno_list)`, le annotazioni in `anno_list` si applicano indipendentemente dall'esito della funzione.|
 |`_On_failure_(anno_list)`|Da utilizzare solo quando si usa anche `_Success_` per annotare la funzione, esplicitamente o implicitamente, mediante `_Return_type_success_` in un typedef. Quando l'annotazione `_On_failure_` è presente in un parametro di funzione o un valore restituito, ciascuna annotazione in `anno_list` (anno) si comporta come se fosse codificata come `_When_(!expr, anno)`, dove `expr` è il parametro dell'annotazione `_Success_` richiesta. Ciò significa che l'applicazione implicita di `_Success_` per tutte le post-condizioni non è applicabile per `_On_failure_`.|
-|`_Return_type_success_(expr)`|Può essere applicato a un typedef. Indica che tutte le funzioni che restituiscono quel tipo e non includono `_Success_` in modo esplicito, sono contrassegnate come se includessero `_Success_(expr)`. `_Return_type_success_` non può essere utilizzato in una funzione o in un typedef di puntatore a funzione.|
+|`_Return_type_success_(expr)`|Può essere applicato a un typedef. Indica che tutte le funzioni che restituiscono quel tipo e non includono `_Success_` in modo esplicito, sono annotate come se includessero `_Success_(expr)`. `_Return_type_success_` non può essere utilizzato in una funzione o in un typedef di puntatore a funzione.|
 |`_Success_(expr)`|`expr` è un'espressione che produce un rvalue. Quando l'annotazione `_Success_` è presente in una dichiarazione di funzione o una definizione, ciascuna annotazione (`anno`) nella funzione e in post-condizione si comporta come se fosse codificata come `_When_(expr, anno)`. L'annotazione `_Success_` può essere utilizzata solo in una funzione e non nei relativi parametri o nel tipo restituito. Ci può essere al massimo un'annotazione `_Success_` in una funzione e non può trovarsi all'interno di qualsiasi `_When_`, `_At_` o `_Group_`. Per altre informazioni, vedere [specificando quando e dove un'annotazione applica](../code-quality/specifying-when-and-where-an-annotation-applies.md).|
 
 ## <a name="see-also"></a>Vedere anche

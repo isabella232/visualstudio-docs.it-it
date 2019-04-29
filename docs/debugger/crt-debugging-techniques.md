@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564035"
 ---
 # <a name="crt-debugging-techniques"></a>Tecniche di debug CRT
 Se si effettua il debug di un programma che utilizza la libreria di runtime del linguaggio C, possono essere utili le seguenti tecniche di debug.
@@ -56,5 +56,5 @@ Se si effettua il debug di un programma che utilizza la libreria di runtime del 
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Debug del codice nativo](../debugger/debugging-native-code.md) -vengono illustrati alcuni problemi di debug comuni e le tecniche per le applicazioni C e C++.
+- [Debug del codice nativo](../debugger/debugging-native-code.md) -illustra alcuni problemi di debug comuni e le tecniche per C e C++ delle applicazioni.
 - [Sicurezza del debugger](../debugger/debugger-security.md) -fornisce consigli per un debug sicuro.

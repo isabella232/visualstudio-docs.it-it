@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a903fbd3b01523a86302b58f8e9a74917312566c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541731"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Gli operatori devono avere overload simmetrici
 
@@ -40,7 +40,7 @@ Per impostazione predefinita, questa regola cerca solo tipi visibili esternament
 
 Non esistono nessuna circostanza in cui è applicabile alle istanze di un tipo di uguaglianza o disuguaglianza e non è definito l'operatore opposto. Tipi implementano in genere l'operatore di disuguaglianza, restituendo il valore negato dell'operatore di uguaglianza.
 
-Il compilatore C# genera un errore per le violazioni di questa regola.
+Il compilatore c# genera un errore per le violazioni di questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

@@ -1,5 +1,5 @@
 ---
-title: Funzionalità della shell di Progettazione flussi di lavoro
+title: Caratteristiche della shell di Progettazione flussi di lavoro
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433864"
 ---
-# <a name="workflow-designer-shell-features"></a>Funzionalità della shell di Progettazione flussi di lavoro
+# <a name="workflow-designer-shell-features"></a>Caratteristiche della shell di Progettazione flussi di lavoro
 
 Finestra di progettazione del flusso di lavoro è costituito da tre principali aree dell'interfaccia utente: l'area di progettazione, la barra di navigazione superiore e la shell di sotto di essa. La barra di navigazione, posizionata nella parte superiore dello schermo, viene usata per visualizzare l'elenco di predecessori dell'attività radice corrente. Per altre informazioni, vedere [Procedura: Usare la struttura di spostamento](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'area della finestra di progettazione, posizionata al centro dello schermo, viene usata per creare flussi di lavoro. La shell, posizionata nella parte inferiore dello schermo, contiene alcuni pulsanti per la gestione della visualizzazione corrente.
 

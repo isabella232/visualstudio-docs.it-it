@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540781"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Avvisi dell'analisi codice per il linguaggio C/C++
 In questa sezione sono elencati gli avvisi di analisi del codice C/C++ ad eccezione di quelli che vengono generati i [dei correttori linee guida di base di C++](code-analysis-for-cpp-corecheck.md). Per informazioni sull'analisi del codice, vedere [/analyze (analisi codice)](/cpp/build/reference/analyze-code-analysis) e [avvio rapido: Analisi del codice per C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

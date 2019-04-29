@@ -13,11 +13,11 @@ ms.author: johnhart
 ms.workload:
 - office
 ms.openlocfilehash: f10bb578d2d83c6e3a07477078245f281e4e3820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575065"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>Procedura: A livello di programmazione creare cartelle personalizzate
   Questo esempio crea una nuova cartella in Microsoft Office Outlook. Il nome dell'utente che ha effettuato l'accesso viene usato per il nome della cartella.

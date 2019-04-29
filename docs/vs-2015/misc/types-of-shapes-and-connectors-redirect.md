@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7f93cc4f45c7b533ba0aa9992b880a0cf678d301
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434241"
 ---
 # <a name="types-of-shapes-and-connectors---redirect"></a>Tipi di forme e di connettori (reindirizzamento)
 In questo argomento è stato unito con un altro. Vedi [personalizzazione presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).

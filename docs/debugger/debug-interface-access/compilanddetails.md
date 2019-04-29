@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555247"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informazioni compilando sono suddiviso tra i simboli con un `SymTagCompiland` tag (dettaglio bassa) e un `SymTagCompilandDetails` tag (livello di dettaglio alto). `SymTagCompilandDetails` richiede il caricamento dei simboli aggiuntivi. Tuttavia, fornisce un'ampia gamma di informazioni del modulo che non è disponibile con un `SymTagCompiland` simbolo.
@@ -25,7 +25,7 @@ Informazioni compilando sono suddiviso tra i simboli con un `SymTagCompiland` ta
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Numero di build di back-end del compilatore.|
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Numero di versione principale di back-end del compilatore.|
@@ -50,7 +50,7 @@ Informazioni compilando sono suddiviso tra i simboli con un `SymTagCompiland` ta
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagCompilandDetails` (uno dei [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valori).|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  I compilatori sono spesso in un formato noto come un compilatore in due passaggi. in alcune versioni del compilatore, ogni passaggio viene gestita da un programma separato. Questi sono conosciuti come i compilatori di front-end e back-end, rispettivamente, di conseguenza le proprietà dei simboli per i numeri di versione back-end e front-end.
 
 ## <a name="see-also"></a>Vedere anche

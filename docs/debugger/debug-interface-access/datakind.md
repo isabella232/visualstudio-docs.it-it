@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554922"
 ---
 # <a name="datakind"></a>DataKind
 Indica l'ambito specifico di un valore di dati.
@@ -60,7 +60,7 @@ Elemento dati DataIsStaticMember è una variabile di classe statici.
 
 Elemento dati DataIsConstant è un valore costante.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono restituiti per il [Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (metodo).
 
 ## <a name="requirements"></a>Requisiti

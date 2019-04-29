@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dbfc8081f980b7b9e978da782f1627a88a716a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809408"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Gli identificatori devono essere digitati correttamente
 
@@ -46,7 +46,7 @@ Questa regola analizza l'identificatore per i token e controlla l'ortografia di 
 
 - Caratteri di sottolineatura indicano la fine di un token e vengono rimossi. Ad esempio Hello_world suddivide in token di "Hello", "world".
 
-- Le e commerciali incorporate vengono rimossi. Ad esempio, for&mat viene scomposto nel token "format".
+- Le e commerciali incorporate vengono rimossi. Ad esempio, per & mat viene scomposto nel token "format".
 
 ## <a name="language"></a>Linguaggio
 

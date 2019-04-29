@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4a103b0db53ced447e16d269d747fa3355aeb00c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433994"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>ActivityDesigner TransactedReceiveScope
 
@@ -33,7 +33,7 @@ Il **TransactedReceiveScope** finestra di progettazione contiene **richiedere** 
 
 ### <a name="the-transactedreceivescope-properties"></a>Proprietà di TransactedReceiveScope
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.TransactedReceiveScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Questi <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro, ma gli altri devono essere modificati nell'area di progettazione.
+Nella tabella seguente sono elencate le proprietà di <xref:System.ServiceModel.Activities.TransactedReceiveScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Questi <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro, ma gli altri devono essere modificati nell'area di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cc81d6f63abe97f05d4d2794c9fc157772399a1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433903"
 ---
 # <a name="using-the-activity-designers"></a>Utilizzo degli ActivityDesigner
 
-La finestra di progettazione del flusso di lavoro include numerose attività fornite dal sistema che è possibile usare durante la creazione delle attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e viene fornito materiale sussidiario sul relativo uso.
+La finestra di progettazione del flusso di lavoro include numerose attività fornite dal sistema che è possibile usare durante la creazione delle attività e flussi di lavoro. Contenuto della sezione vengono descritte le categorie di attività fornite dal sistema e le relative finestre di progettazione disponibili. Negli argomenti relativi alle singole attività e alle rispettive finestre di progettazione all'interno di ciascuna categoria vengono illustrate le operazioni eseguite da tali attività e vengono fornite istruzioni sul relativo uso.
 
 ## <a name="reference"></a>Riferimenti
 

@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560033"
 ---
 # <a name="best-practices-and-examples-sal"></a>Suggerimenti ed esempi (SAL)
 Ecco alcuni modi per ottenere il massimo da origine codice Annotation Language (SAL) ed evitare problemi comuni.
@@ -238,11 +238,11 @@ In questo esempio `_Out_opt_` afferma che il puntatore potrebbe essere NULL dura
 
 ## <a name="see-also"></a>Vedere anche
 
-[Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Uso delle annotazioni SAL per ridurre C /C++ difetti del codice](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [comprensione SAL](../code-quality/understanding-sal.md)
 [annotazione di parametri di funzione e valori restituiti](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)
 [annotazioni di struct e classi](../code-quality/annotating-structs-and-classes.md)
 [annotazione del comportamento di blocco](../code-quality/annotating-locking-behavior.md) 
- [Specificare dove e quando applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+ [Specificare quando e dove applicare un'annotazione](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 [funzioni intrinseche](../code-quality/intrinsic-functions.md)

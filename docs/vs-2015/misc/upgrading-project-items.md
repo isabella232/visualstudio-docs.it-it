@@ -12,11 +12,11 @@ ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434176"
 ---
 # <a name="upgrading-project-items"></a>Aggiornamento degli elementi di progetto
 Se si aggiungono o gestire gli elementi all'interno di sistemi di progetto non viene implementato, devi partecipare al processo di aggiornamento del progetto. Crystal Reports è un esempio di un elemento che è possibile aggiungere al sistema del progetto.  

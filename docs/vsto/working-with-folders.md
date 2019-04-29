@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 32dca296ef286e4c892791a1e71cfc765df80f19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815497"
 ---
 # <a name="work-with-folders"></a>Con le cartelle di lavoro
   La classe <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> contiene i metodi e le proprietà usati per accedere, creare e personalizzare cartelle.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 32b392f59fb0ac587730d2aa432ca11d91d5a9ea
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824832"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 
@@ -32,16 +32,16 @@ Nel contesto di associazione dati, un'origine dati rappresenta i dati in memoria
 
 | Origine dati | Supporto del trascinamento della selezione in **Progettazione Windows Form** | Supporto del trascinamento della selezione in **WPF Designer** | Supporto del trascinamento della selezione in **Silverlight Designer** |
 | - | - | - | - |
-| Set di dati | Sì | Yes | No |
-| Entity Data Model | Sì<sup>1</sup> | Sì | Sì |
+| Set di dati | Yes | Yes | No |
+| Entity Data Model | Sì<sup>1</sup> | Yes | Yes |
 | Classi LINQ to SQL | Non<sup>2</sup> | Non<sup>2</sup> | Non<sup>2</sup> |
-| Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servizi WCF e servizi Web) | Sì | Yes | Sì |
-| Object | Sì | Yes | Sì |
-| SharePoint | Sì | Yes | Sì |
+| Servizi (inclusi [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], servizi WCF e servizi Web) | Yes | Yes | Yes |
+| Object | Yes | Yes | Yes |
+| SharePoint | Yes | Yes | Yes |
 
 1. Generare il modello usando il **Entity Data Model** procedura guidata, quindi trascinare tali oggetti nella finestra di progettazione.
 
-2. Le classi LINQ to SQL non vengono visualizzate nella finestra **Origini dati**. È comunque possibile aggiungere una nuova origine dati dell'oggetto basata sulle classi LINQ to SQL, quindi trascinare tali oggetti nella finestra di progettazione per creare controlli con associazione a dati. Per altre informazioni, vedere [procedura dettagliata: creazione di classi LINQ to SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+2. Le classi LINQ to SQL non vengono visualizzate nella finestra **Origini dati**. È comunque possibile aggiungere una nuova origine dati dell'oggetto basata sulle classi LINQ to SQL, quindi trascinare tali oggetti nella finestra di progettazione per creare controlli con associazione a dati. Per altre informazioni, vedere [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
 

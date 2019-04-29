@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563546"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>finestra di dialogo Visualizzatore DataSet
 Il Visualizzatore DataSet consente di visualizzare il contenuto di un oggetto DataSet, DataTable, DataView o DataViewManager. È possibile accedere a tale visualizzatore facendo clic sull'icona della lente di ingrandimento accanto al valore di uno degli oggetti in una finestra delle variabili del debugger o in un suggerimento dati.

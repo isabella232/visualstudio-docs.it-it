@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554896"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Descrive una voce in una mappa di indirizzo.
@@ -36,7 +36,7 @@ struct DiaAddressMapEntry {
 
 `rvaTo` L'indirizzo virtuale relativo `rva` viene mappato a nella figura B.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 Una mappa indirizzo fornisce una conversione dal layout di un'immagine (A) in un'altra (B). Matrice di `DiaAddressMapEntry` strutture vengono ordinate `rva` definisce un mapping di indirizzi.
 
 Per convertire un indirizzo `addrA`, nell'immagine A un indirizzo, `addrB`, nella figura B, eseguire la procedura seguente:

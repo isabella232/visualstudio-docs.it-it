@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 382d8660adc482a2ab6c7417cf795f84b6fa9e25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420121"
 ---
-# <a name="how-to-view-performance-warnings"></a>Procedura: visualizzare gli avvisi di prestazioni
+# <a name="how-to-view-performance-warnings"></a>Procedura: Visualizza gli avvisi di prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Gli avvisi di prestazioni degli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] segnalano i problemi che possono rallentare l'esecuzione di un'applicazione profilata. Gli avvisi possono anche indicare che potrebbe essere necessario modificare i metodi di raccolta per raccogliere dati più utili. Gli avvisi di prestazioni vengono generati automaticamente in una sessione di profilatura e visualizzati nella finestra **Elenco errori** quando un file di dati di profilatura viene aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

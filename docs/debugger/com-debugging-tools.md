@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564743"
 ---
 # <a name="com-debugging-tools"></a>Strumenti di debug COM
 
@@ -47,4 +47,4 @@ Per la verifica delle applicazioni, sono disponibili anche gli esempi ActiveX MF
 - [Debug in Visual Studio](../debugger/index.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Esempio OCLIENT: Applicazione contenitore di modifica visiva](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Esempio SUPERPAD: Viene illustrato il server di modifica visiva per la modifica di testi con CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Esempio SUPERPAD: Viene illustrato un Server di modifica visiva testi con CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

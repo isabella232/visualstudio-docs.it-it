@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433721"
 ---
 # <a name="expected-"></a>Previsto ';'
 Si è tentato di inserire più di un'istruzione su una riga non è necessario separarli con punti e virgola. Un punto e virgola viene usato per terminare le istruzioni. Sebbene sia possibile inserire molte istruzioni in una singola riga, ognuno di essi deve essere delimitato dal successivo con un punto e virgola.  

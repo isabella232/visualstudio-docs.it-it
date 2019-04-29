@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Estendere il processo di compilazione | Microsoft Docs'
+title: 'Procedura: estendere il processo di compilazione | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108599"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: estendere il processo di compilazione di Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedura: Estendere il processo di compilazione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è definito da una serie di file di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] con estensione targets che vengono importati nel file di progetto. Uno di questi file importati, Microsoft.Common.targets, può essere esteso per consentire l'esecuzione di attività personalizzate in diversi punti del processo di compilazione. Questo argomento illustra due metodi che è possibile usare per estendere il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
--   Override di specifiche destinazioni predefinite in Microsoft.Common.targets.
+- Override di specifiche destinazioni predefinite in Microsoft.Common.targets.
 
--   Override delle proprietà "DependsOn" definite in Microsoft.Common.targets.
+- Override delle proprietà "DependsOn" definite in Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Override di destinazioni predefinite
  Il file Microsoft.Common.targets contiene un insieme di destinazioni predefinite vuote che vengono chiamate prima e dopo alcune delle destinazioni più importanti nel processo di compilazione. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], ad esempio, chiama la destinazione `BeforeBuild` prima della destinazione `CoreBuild` principale e la destinazione `AfterBuild` dopo la destinazione `CoreBuild`. Per impostazione predefinita, le destinazioni vuote in Microsoft.Common.targets non eseguono alcuna operazione, ma è possibile eseguire l'override del comportamento predefinito specificando le destinazioni desiderate in un file di progetto che importa Microsoft.Common.targets. In questo modo sarà possibile usare le attività di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] per avere un controllo maggiore sul processo di compilazione.
@@ -58,7 +58,7 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 |Target Name|Description|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo la compilazione principale. La maggior parte delle personalizzazioni avviene in una di queste due destinazioni.|
-|`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:** le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
+|`BeforeBuild`, `AfterBuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo qualsiasi altra attività nella compilazione. **Nota:**  le destinazioni `BeforeBuild` e `AfterBuild` sono già definite nei commenti alla fine della maggior parte dei file di progetto. Questo agevola l'aggiunta di eventi di pre-compilazione e post-compilazione al file di progetto.|
 |`BeforeRebuild`, `AfterRebuild`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la ricompilazione. L'ordine di esecuzione delle destinazioni in Microsoft.Common.targets è: `BeforeRebuild`, `Clean`, `Build` e quindi `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pulitura.|
 |`BeforePublish`, `AfterPublish`|Le attività inserite in una di queste destinazioni vengono eseguite prima o dopo il richiamo della funzionalità di base per la pubblicazione.|
@@ -109,13 +109,13 @@ Il processo di compilazione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è d
 
 #### <a name="to-override-a-dependson-property"></a>Per eseguire l'override di una proprietà "DependsOn"
 
-1.  In Microsoft.Common.targets identificare una proprietà "DependsOn" predefinita di cui si vuole eseguire l'override. Nella tabella che segue è riportato un elenco delle proprietà "DependsOn" comunemente sottoposte a override.
+1. In Microsoft.Common.targets identificare una proprietà "DependsOn" predefinita di cui si vuole eseguire l'override. Nella tabella che segue è riportato un elenco delle proprietà "DependsOn" comunemente sottoposte a override.
 
-2.  Definire un'altra istanza della proprietà o delle proprietà alla fine del file di progetto. Nella nuova proprietà includere la proprietà originale, ad esempio `$(BuildDependsOn)`.
+2. Definire un'altra istanza della proprietà o delle proprietà alla fine del file di progetto. Nella nuova proprietà includere la proprietà originale, ad esempio `$(BuildDependsOn)`.
 
-3.  Definire le destinazioni personalizzate prima o dopo la definizione della proprietà.
+3. Definire le destinazioni personalizzate prima o dopo la definizione della proprietà.
 
-4.  Compilare il file di progetto.
+4. Compilare il file di progetto.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Proprietà "DependsOn" comunemente sottoposte a override
 

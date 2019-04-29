@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7074ee2a11759983f103024033cb2b96322330cc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434020"
 ---
 # <a name="throw-activity-designer"></a>ActivityDesigner Throw
 
@@ -33,7 +33,7 @@ Il **Throw** ActivityDesigner può essere trascinato dalle **della casella degli
 
 ### <a name="the-throw-properties"></a>Proprietà di Throw
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Throw> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6345fa74d78ab50229cb692ece58723fea38124a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553653"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Linee guida sull'esperienza utente di Visual Studio
 Seguire le linee guida sull'esperienza di Visual Studio utente se si progettano le nuove funzionalità per Visual Studio. Queste linee guida contengono informazioni sui modelli utente comuni e modelli di interazione in cui le finestre di progettazione di nuove interfacce utente (UI) è possibile creare esperienze utente semplice e coerente all'interno dell'ambiente di sviluppo.
