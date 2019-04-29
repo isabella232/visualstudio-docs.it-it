@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 095ffb7284b9363d3bdb04749c8cff7114927935
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949669"
 ---
 # <a name="flowdecision-activity-designer"></a>ActivityDesigner FlowDecision
 
@@ -37,7 +37,7 @@ L'espressione che dichiara il <xref:System.Activities.Statements.FlowDecision.Co
 
 ### <a name="the-flowdecision-properties"></a>Proprietà di FlowDecision
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.FlowDecision> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.FlowDecision> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà o nell'area della finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|
