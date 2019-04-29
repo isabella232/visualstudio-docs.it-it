@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935748"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
 Recupera lo stato corrente del motore di script. Questo metodo può essere chiamato dal thread non di base senza causando un callout non in base agli oggetti di host o al [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaccia.  

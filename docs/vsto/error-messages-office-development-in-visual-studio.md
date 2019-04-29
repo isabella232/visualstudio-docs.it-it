@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f00597c7d0cd55deb3a8747f6d23c658d83c2e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951983"
 ---
 # <a name="error-messages-office-development-in-visual-studio"></a>Messaggi di errore (sviluppo per Office in Visual Studio)
   Ogni messaggio di errore fornisce informazioni sulle cause possibili per un errore e le soluzioni potenziali o le soluzioni alternative per risolvere un problema.

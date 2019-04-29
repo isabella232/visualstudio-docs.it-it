@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955263"
 ---
 # <a name="debugpropertyinfo-structure"></a>Struttura DebugPropertyInfo
 Descrive un oggetto di natura gerarchica con nome, tipo e valore. Viene usato per descrivere le proprietà di debug di variabili locali, parametri, controllare variabili ed espressioni e registra.  

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952726"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Creare pacchetti delle soluzioni SharePoint
   Usando la finestra di progettazione del pacchetto, è possibile creare e personalizzare i pacchetti di distribuzione. Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, ripristinare il server IIS, impostare gli ambiti di attivazione di funzionalità e identificare le dipendenze delle funzionalità. La finestra di progettazione genera anche un manifesto, un file XML che descrive ogni pacchetto.

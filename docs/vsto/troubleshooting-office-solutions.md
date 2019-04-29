@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 901df0b15f26624ecf2e9fca217cdc074913ceae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978263"
 ---
 # <a name="troubleshoot-office-solutions"></a>Risolvere i problemi di soluzioni Office
   Questa sezione contiene suggerimenti per la risoluzione di problemi comuni che si potrebbero incontrare quando si creano soluzioni usando gli strumenti di sviluppo per Office in Visual Studio.

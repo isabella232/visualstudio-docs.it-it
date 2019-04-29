@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946602"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Assegnazione a un risultato di funzione non consentita
 Si è provato ad assegnare un valore a un risultato di funzione. Il risultato di una funzione può essere assegnato a una variabile, ma non può essere usato come una variabile. Se si desidera assegnare un nuovo valore alla funzione stessa, omettere le parentesi (l'operatore di chiamata di funzione). L'esempio seguente illustra una situazione in cui viene generato questo errore.  

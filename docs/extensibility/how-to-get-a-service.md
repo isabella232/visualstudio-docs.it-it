@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 027057ff5c6f8d33038329a8e6029dcb4eeac477
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911869"
 ---
 # <a name="how-to-get-a-service"></a>Procedura: Ottenere un servizio
 
@@ -29,7 +29,7 @@ Quando Visual Studio carica una <xref:Microsoft.VisualStudio.Shell.Package>, pas
 
 1. Ogni estensione di Visual Studio inizia con un progetto di distribuzione VSIX, che conterrà gli asset di estensione. Creare un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] progetto VSIX denominato `GetServiceExtension`. È possibile trovare il modello di progetto VSIX nel **nuovo progetto** dialogo eseguendo una ricerca per "vsix".
 
-2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual C#** > **Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *GetServiceCommand.cs*. Per altre informazioni su come creare un comando personalizzato, [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. A questo punto aggiungere un modello di elemento di comando personalizzato denominato **GetServiceCommand**. Nel **Aggiungi nuovo elemento** finestra di dialogo passa alla **Visual c#** > **Extensibility** e selezionare **comando personalizzato**. Nel **Name** campo nella parte inferiore della finestra, modificare il nome di file di comando da *GetServiceCommand.cs*. Per altre informazioni su come creare un comando personalizzato, [creare un'estensione con un comando di menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 3. Nelle *GetServiceCommand.cs*, rimuovere il corpo del `MenuItemCommand` (metodo) e aggiungere il codice seguente:
 

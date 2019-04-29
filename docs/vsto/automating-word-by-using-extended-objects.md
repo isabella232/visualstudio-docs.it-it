@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939551"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automazione di Word usando oggetti estesi
   Quando si sviluppano soluzioni Word in Visual Studio, è possibile usare *elementi host* e *controlli host*nelle soluzioni. Si tratta di oggetti che estendono determinati oggetti usati comunemente nel modello a oggetti di Word (cioè, il modello a oggetti esposto dall'assembly di interoperabilità primario per Word), come ad esempio gli oggetti <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> . Gli oggetti estesi si comportano come gli oggetti di Word su cui sono basati, ma aggiungono ulteriori eventi e funzionalità di data binding agli oggetti.

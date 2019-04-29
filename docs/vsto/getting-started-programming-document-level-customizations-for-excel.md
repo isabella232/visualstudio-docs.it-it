@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972135"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Introduzione alla programmazione delle personalizzazioni a livello di documento per Excel
   Se sta iniziando la creazione di personalizzazioni a livello di documento per Microsoft Office Excel usando Visual Studio, ecco cosa occorre sapere.

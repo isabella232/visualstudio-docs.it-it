@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c034a34c5ae9b8bdaad5dbd14da2fb571c8dac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968093"
 ---
 # <a name="visualize-code"></a>Visualizzare il codice
 
@@ -38,11 +38,11 @@ Per informazioni su quali edizioni di Visual Studio supportano le singole funzio
 |-|-|
 |**Analizzare il codice e le relative relazioni:**<br /><br /> Eseguire il mapping delle relazioni tra parti di codice specifiche.<br /><br /> Ottenere una panoramica delle relazioni nel codice per l'intera soluzione.|- [Mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br />- [Usare le mappe codice per il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Trovare problemi potenziali usando analizzatori di mappe codice](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mappare i metodi sullo stack di chiamate durante il debug](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
 |**Comprendere le strutture delle classi:**<br /><br /> Visualizzare la struttura delle classi in un progetto mediante la creazione di diagrammi classi dal codice.|[Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
-|**Descrivere la progettazione di alto livello del sistema e convalidare codice rispetto a tale progettazione:**<br /><br /> Descrivere la progettazione di alto livello del sistema e le dipendenze previste mediante la creazione di diagrammi delle dipendenze. Convalidare il codice rispetto a tale progettazione per garantire che le dipendenze nel codice rimangano coerenti con la progettazione.|- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)<br />- [Diagrammi delle dipendenze: Linee guida](../modeling/layer-diagrams-guidelines.md)<br />- [Convalidare il codice con diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)|
+|**Descrivere la progettazione di alto livello del sistema e convalidare codice rispetto a tale progettazione:**<br /><br /> Descrivere la progettazione di alto livello del sistema e le dipendenze previste mediante la creazione di diagrammi delle dipendenze. Convalidare il codice rispetto a tale progettazione per garantire che le dipendenze nel codice rimangano coerenti con la progettazione.|- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammi delle dipendenze: Riferimento](../modeling/layer-diagrams-reference.md)<br />- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)<br />- [Convalidare il codice con diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Scenario: Modificare la progettazione mediante visualizzazione e modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
+- [Scenario: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [Analizzare e modellare l'architettura](../modeling/analyze-and-model-your-architecture.md)
 - [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)
 - [Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)

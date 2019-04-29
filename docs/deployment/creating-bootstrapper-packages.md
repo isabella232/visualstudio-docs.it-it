@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900231"
 ---
 # <a name="create-bootstrapper-packages"></a>Creare pacchetti del programma di avvio automatico personalizzati
 Il programma di installazione è un programma generico che può essere configurato per rilevare e installare componenti ridistribuibili quali file di Windows Installer (*.msi*) e programmi eseguibili. Il programma di installazione è noto anche come programma di avvio automatico. Viene programmato con un set di manifesti XML che specificano i metadati per gestire l'installazione del componente.  Ogni componente ridistribuibile o prerequisito, che viene visualizzato nei **prerequisiti** finestra di dialogo di ClickOnce è un pacchetto di programma di avvio automatico. Un pacchetto del programma di avvio automatico è un gruppo di directory e file che contengono i file manifesto in cui è descritto come deve essere installato il prerequisito.
@@ -33,13 +33,13 @@ Il programma di installazione è un programma generico che può essere configura
 Il programma di avvio automatico prima rileva se i prerequisiti sono già installati. Se i prerequisiti non sono installati, visualizza prima i contratti di licenza. Successivamente, dopo che l'utente finale accetta i contratti di licenza, ha inizio l'installazione dei prerequisiti. Se invece tutti i prerequisiti vengono rilevati, viene semplicemente avviato il programma di installazione dell'applicazione.
 
 ## <a name="create-custom-bootstrapper-packages"></a>Creare pacchetti di programma di avvio automatico personalizzato
-È possibile generare i manifesti del programma di avvio automatico usando l'Editor XML in Visual Studio. Per un esempio di creazione di un pacchetto di programma di avvio automatico, vedere [procedura dettagliata: creare un programma di avvio personalizzata con un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
+È possibile generare i manifesti del programma di avvio automatico usando l'Editor XML in Visual Studio. Per un esempio di creazione di un pacchetto di programma di avvio automatico, vedere [procedura dettagliata: Creare un programma di avvio personalizzata con un prompt di privacy](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
 
 Per creare un pacchetto di programma di avvio automatico, è necessario creare un manifesto del prodotto e, per ogni versione localizzata di un componente, nonché un manifesto del pacchetto.
 
-* Il manifesto del prodotto, *Product*, contiene tutti i metadati indipendenti dalla lingua per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [procedura: creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
+* Il manifesto del prodotto, *Product*, contiene tutti i metadati indipendenti dalla lingua per il pacchetto. Questo file contiene i metadati comuni a tutte le versioni localizzate del componente ridistribuibile.  Per creare questo file, vedere [come: Creare un manifesto del prodotto](../deployment/how-to-create-a-product-manifest.md).
 
-* Il manifesto del pacchetto *package*, contiene metadati specifici del linguaggio; in genere contiene i messaggi di errore localizzato. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [procedura: creare un manifesto del pacchetto](../deployment/how-to-create-a-package-manifest.md).
+* Il manifesto del pacchetto *package*, contiene metadati specifici del linguaggio; in genere contiene i messaggi di errore localizzato. Deve essere disponibile almeno un manifesto del pacchetto per ogni versione localizzata del componente. Per creare questo file, vedere [come: Creare un manifesto di pacchetto](../deployment/how-to-create-a-package-manifest.md).
 
 Dopo aver creato questi file, inserire il file manifesto del prodotto in una cartella denominata per il programma di avvio automatico personalizzato. Il file manifesto del pacchetto deve essere inserito in una cartella denominata per le impostazioni locali. Ad esempio, se il file manifesto del pacchetto è destinato alla ridistribuzione in inglese, inserire il file in una cartella denominata en. Ripetere questo processo per ogni impostazione locale, ad esempio ja per il giapponese e de per il tedesco. Il pacchetto del programma di avvio automatico personalizzato finale potrebbe avere la struttura di cartelle seguente.
 
@@ -80,7 +80,7 @@ Dopo aver copiato i file nella cartella del programma di avvio automatico, il re
 
 La tabella seguente illustra le proprietà popolate automaticamente dal programma di avvio automatico.
 
-|Proprietà|Description|
+|Proprietà|Descrizione|
 |--------------|-----------------|
 |ApplicationName|Nome dell'applicazione.|
 |ProcessorArchitecture|Processore e bit per parola della piattaforma di destinazione di un file eseguibile. Sono inclusi i valori seguenti:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
@@ -95,7 +95,7 @@ Per impedire che i file ridistribuibili vengano distribuiti nei progetti di inst
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-L'elenco dei ridistribuibili è un file XML a cui è necessario assegnare un nome usando il formato *\<Nome azienda>.\<Nome componente>.RedistList.xml*. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome *Acme.DataWidgets.RedistList.xml*. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:
+L'elenco dei ridistribuibili è un file XML che deve essere denominato utilizzando il formato seguente: *\<Nome società >. \<Nome componente >. RedistList*. Quindi, se ad esempio il nome del componente è Datawidgets e la società che lo produce è Acme, usare il nome *Acme.DataWidgets.RedistList.xml*. Ecco un esempio del possibile contenuto dell'elenco dei file ridistribuibili:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

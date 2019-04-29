@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc32ed6c4e696b18e89822baff461da0873a7ed5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898107"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Prodotto&gt; elemento (programma di avvio automatico)
 Il `Product` elemento è l'elemento XML di primo livello all'interno di un file di prodotto.
@@ -140,7 +140,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>Elementi e attributi
  Il `Product` elemento è obbligatorio in un file di prodotto. Include l'attributo seguente.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`ProductCode`|Identificatore univoco per il prodotto.|
 

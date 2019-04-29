@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f60c95418379399196c461e055645ae7c85a473e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967396"
 ---
 # <a name="extend-sharepoint-project-items"></a>Estendere gli elementi di progetto SharePoint
   Creare un'estensione di elemento di progetto quando si desidera aggiungere funzionalità a un tipo di elemento di progetto SharePoint che è già installato in Visual Studio. Ad esempio, è possibile creare un'estensione per l'oggetto incorporato **ricevitore di eventi** oppure **definizione elenco** gli elementi di progetto in Visual Studio oppure è possibile creare un'estensione per un tipo di elemento di progetto personalizzato. È anche possibile creare un'estensione per tutti i tipi di elementi di progetto SharePoint.
@@ -58,7 +58,7 @@ ms.locfileid: "56597660"
 |Definizione di elenco<br /><br /> Definizione di elenco dal tipo di contenuto|Microsoft.VisualStudio.SharePoint.ListDefinition|
 |Istanza di elenco|Microsoft.VisualStudio.SharePoint.ListInstance|
 |Modulo|Microsoft.VisualStudio.SharePoint.Module|
-|Flusso di lavoro sequenziale<br /><br /> Flusso di lavoro della macchina a stati|Microsoft.VisualStudio.SharePoint.Workflow|
+|Flusso di lavoro sequenziale<br /><br /> StateMachineWorkflow|Microsoft.VisualStudio.SharePoint.Workflow|
 |Definizione di sito|Microsoft.VisualStudio.SharePoint.SiteDefinition|
 |Web Part visiva|Microsoft.VisualStudio.SharePoint.VisualWebPart|
 |Web part|Microsoft.VisualStudio.SharePoint.WebPart|

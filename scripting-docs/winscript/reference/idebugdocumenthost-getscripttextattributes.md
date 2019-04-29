@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939234"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Restituisce gli attributi di testo per un blocco di testo del documento.  
@@ -52,7 +52,7 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  [in] Flag associato al blocco di script. Può essere una combinazione dei valori seguenti:  
   
-|Costante|Valore|Descrizione|  
+|Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Indica che gli identificatori e operatori punto devono essere identificati con i flag SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP, rispettivamente.|  
 |GETATTRFLAG_THIS|0x0100|Indica che l'identificatore per l'oggetto corrente deve essere identificato con il flag SOURCETEXT_ATTR_THIS.|  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976585"
 ---
 # <a name="transaction-activity-designers"></a>ActivityDesigner Transazione
 Gli ActivityDesigner Transaction vengono usati per creare e configurare attività transazionali quali compensazione e conferma. Gli argomenti contenuti in questa sezione, ed elencati nella tabella seguente, forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner e dei modelli di progettazione in [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

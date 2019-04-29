@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952893"
 ---
 # <a name="create-an-association-between-entities"></a>Creare un'associazione tra entità
   È possibile definire relazioni tra entità nel modello di integrazione applicativa dei dati (BDC) mediante la creazione di associazioni. Visual Studio genera i metodi che forniscono i consumer del modello con informazioni su ogni associazione. Questi metodi possono essere utilizzati da elenchi, applicazioni personalizzate o web part di SharePoint per visualizzare le relazioni tra i dati in un'interfaccia utente.

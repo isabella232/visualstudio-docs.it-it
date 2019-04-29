@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965054"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, o definire il tipo di contenuto e l'estensione di nome file e applicare la definizione dell'area a solo a quel tipo o applicare le definizioni di area a un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.

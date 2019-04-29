@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954778"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procedura: Aggiungere un nuovo elemento a un progetto flusso di lavoro (legacy)
 Dopo avere creato un progetto flusso di lavoro usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)] che si riferisce a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile aggiungere elementi [!INCLUDE[wf](../includes/wf-md.md)] e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comuni al progetto.  

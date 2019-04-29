@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74fe044f5ce00697be36fc69413e0bf7d0042e62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909942"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>Introduzione a plug-in controllo codice sorgente
 Per creare un controllo del codice sorgente del plug-in, è necessario creare una DLL che implementa le funzioni definite nell'API di plug-in controllo di origine, quindi per registrare la DLL con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per renderlo disponibile per l'utilizzo nel controllo di versione del codice sorgente.

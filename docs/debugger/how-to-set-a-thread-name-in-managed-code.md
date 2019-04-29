@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: impostare il nome di un Thread in codice gestito | Microsoft Docs'
+title: 'Procedura: Impostare il nome di un Thread in codice gestito | Microsoft Docs'
 ms.date: 04/27/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,13 +19,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d0954ffadd1bb1b09d7294be673f961ca2f18058
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906456"
 ---
-# <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedura: impostare il nome di un thread in codice gestito
+# <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedura: Impostare il nome di un thread in codice gestito
 La denominazione dei thread è possibile in tutte le edizioni di Visual Studio. Tale denominazione è utile per tenere traccia dei thread nella finestra **Thread**.
 
  Per impostare il nome di un thread in codice gestito, usare la proprietà <xref:System.Threading.Thread.Name%2A>.

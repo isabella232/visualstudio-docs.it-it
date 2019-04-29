@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fa25413a40c9b2333acbaba96d55008dbcebfd39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967030"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Procedura: Aggiungere e rimuovere assembly aggiuntivi
   Se un pacchetto di SharePoint dipende da altri assembly per dati o funzionalità, è possibile aggiungere gli assembly al pacchetto di soluzione (con estensione wsp). In questo modo, il server SharePoint assicura che siano installati assembly personalizzati con un pacchetto.

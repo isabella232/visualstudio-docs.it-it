@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961228"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procedura: Scorrere i record di database in un foglio di lavoro
   La procedura seguente viene illustrato come utilizzare la finestra di progettazione per visualizzare un singolo campo da una tabella di database in un foglio di lavoro di Microsoft Office Excel, con i controlli che consentono all'utente di scorrere tutti i record.

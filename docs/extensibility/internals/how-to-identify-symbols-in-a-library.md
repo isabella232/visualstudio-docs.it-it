@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909955"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Procedura: Identificare i simboli in una libreria
 Strumenti di esplorazione dei simboli visualizzano le visualizzazioni gerarchiche di simboli. I simboli rappresentano gli spazi dei nomi, oggetti, classi, membri di classi e altri elementi del linguaggio.

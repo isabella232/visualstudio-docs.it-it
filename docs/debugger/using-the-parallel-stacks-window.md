@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902420"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Visualizza attività e i thread nella finestra Stack in parallelo (C#, Visual Basic, C++)
 
@@ -46,7 +46,7 @@ Il **stack in parallelo** finestra dispone di controlli della barra degli strume
 
 ![Barra degli strumenti nella finestra Stack in parallelo](../debugger/media/parallel_stackstoolbar.png "barra degli strumenti stack in parallelo")
 
-|Icona|Control|Description|
+|Icona|Control|Descrizione|
 |-|-|-|
 |![Casella combinata thread/attività](media/parallel_toolbar1.png "casella combinata thread/attività")|**Thread**/**attività** pole se seznamem|Consente di passare dalla visualizzazione degli stack di chiamate dei thread alla visualizzazione degli stack di chiamate delle attività e viceversa. Per altre informazioni, vedere [Visualizzazione Attività](#tasks-view) e [Visualizzazione Thread](#threads-view).|
 |![Mostra icona solo con contrassegno](media/parallel_toolbar2.png "icona Mostra solo con contrassegno")|Mostra solo con contrassegno|Mostra gli stack di chiamate per i thread contrassegnati in altre finestre del debugger, ad esempio la **thread GPU** finestra e il **espressioni di controllo parallela** finestra.|
@@ -57,7 +57,7 @@ Il **stack in parallelo** finestra dispone di controlli della barra degli strume
 ### <a name="stack-frame-icons"></a>Icone di stack Frame
 Le icone seguenti forniscono informazioni sui frame dello stack attivi e correnti in tutte le visualizzazioni:
 
-|Icona|Description|
+|Icona|Descrizione|
 |-|-|
 |![Freccia gialla](media/icon_parallelyellowarrow.gif)|Indica la posizione corrente (stack frame attivo) del thread corrente.|
 |![Icona thread](media/icon_parallelthreads.gif)|Indica la posizione corrente (stack frame attivo) di un thread non correnti.|
@@ -68,7 +68,7 @@ Sono disponibili le seguenti voci di menu di scelta rapida facendo clic su un me
 
 ![Menu di scelta rapida nella finestra Stack in parallelo](../debugger/media/parallel_contmenu.png "menu di scelta rapida nella finestra Stack in parallelo")
 
-|Voce di menu|Description|
+|Voce di menu|Descrizione|
 |-|-|
 |**Flag**|Contrassegna l'elemento selezionato.|
 |**Rimuovi flag**|Rimuove il flag dall'elemento selezionato.|
@@ -98,7 +98,7 @@ La figura seguente mostra un thread che va da Main a Managed per eseguire la tra
 
 La tabella seguente descrive le principali funzionalità dei **thread** Vista:
 
-|Callout|Nome elemento|Description|
+|Callout|Nome elemento|Descrizione|
 |-|-|-|
 |1|Segmento o nodo dello stack di chiamate|Contiene una serie di metodi per uno o più thread. Se il frame non contiene alcuna riga freccia connessa a esso, il frame viene illustrato l'intero percorso di chiamate per i thread.|
 |2|Evidenziazione blu|Indica il percorso di chiamate del thread corrente.|
@@ -137,7 +137,7 @@ Se si passa a un nuovo stack frame, è rendere tale metodo il metodo corrente, e
 
 ## <a name="see-also"></a>Vedere anche
 - [Iniziare il debug di un'applicazione multithreading](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Procedura dettagliata: Eseguire il debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Presentazione del debugger](../debugger/debugger-feature-tour.md)
 - [Debug di codice gestito](../debugger/debugging-managed-code.md)
 - [Programmazione parallela](/dotnet/standard/parallel-programming/index)

@@ -23,16 +23,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905555"
 ---
 # <a name="macros-for-reporting"></a>Macro per la creazione di rapporti
 Per eseguire il debug, è possibile usare la **RPTn** e **RPTFn** macro, definite in CRTDBG. H, per sostituire l'uso di `printf` istruzioni. Non devi inclose nella **#ifdef**s, poiché essi vengono automaticamente eliminate nel rilascio quando compilare **debug** non è definito.
 
-|Macro|Description|
+|Macro|Descrizione|
 |-----------|-----------------|
 |**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Genera una stringa di messaggio e da zero a quattro argomenti. Da _RPT1 a **_RPT4** la stringa di messaggio funge da stringa di formattazione di tipo printf per gli argomenti.|
 |**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Come **_RPTn**, ma queste macro generano anche il nome file e il numero di riga in cui si trova la macro.|

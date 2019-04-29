@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952744"
 ---
 # <a name="create-sharepoint-features"></a>Creare funzionalità di SharePoint
   È possibile utilizzare una funzionalità di SharePoint per raggruppare gli elementi di progetto di SharePoint correlati per facilitare la distribuzione. È possibile creare funzionalità imposta ambiti di e contrassegnare altre funzionalità come dipendenze utilizzando la finestra di progettazione di funzionalità di SharePoint. La finestra di progettazione genera inoltre un manifesto, ovvero un file XML che descrive ogni funzionalità.

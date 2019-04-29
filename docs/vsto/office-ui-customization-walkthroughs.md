@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 95561f1404da1efd71ff3418f9154392f393795c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977887"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>Procedure dettagliate di personalizzazione dell'interfaccia utente di Office
   Le procedure dettagliate seguenti mostrano come personalizzare l'interfaccia utente delle applicazioni di Microsoft Office usando le personalizzazioni a livello di documento e i componenti aggiuntivi VSTO.

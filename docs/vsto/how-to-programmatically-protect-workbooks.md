@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955911"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Procedura: A livello di programmazione proteggere cartelle di lavoro
   È possibile proteggere una cartella di lavoro di Microsoft Office Excel in modo che gli utenti non possono aggiungere o eliminare fogli di lavoro e anche rimuovere la protezione della cartella di lavoro a livello di codice. È facoltativamente possibile specificare una password, indicare se si desidera proteggere (in modo che gli utenti non possono spostare i fogli) la struttura e indicare se si vuole windows della cartella di lavoro protetti.

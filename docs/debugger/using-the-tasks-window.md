@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901593"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Uso della finestra attività (C#, Visual Basic, C++)
 
@@ -45,7 +45,7 @@ La finestra **Attività** può essere usata ogni volta che ci si interrompe l'es
 
 Nelle colonne della finestra **Attività** vengono visualizzate le informazioni seguenti.
 
-|Nome colonna|Description|
+|Nome colonna|Descrizione|
 |-----------------|-----------------|
 |**Flag**|Mostra quali attività sono contrassegnate e consente di impostare o rimuovere un flag per un'attività.|
 |**Icone**|Una freccia gialla indica l'attività corrente. L'attività corrente è l'attività in primo piano nel thread corrente.<br /><br /> Una freccia bianca indica l'attività di interruzione, vale a dire l'attività corrente al momento della chiamata del debugger.<br /><br /> L'icona di sospensione indica un'attività bloccata dall'utente. È possibile bloccare e sbloccare un'attività facendovi clic sopra con il pulsante destro del mouse nell'elenco.|
@@ -68,7 +68,7 @@ Nelle colonne della finestra **Attività** vengono visualizzate le informazioni 
  ![Menu di scelta rapida visualizza nella finestra attività](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Ordinamento delle attività
- Per ordinare le attività in base ai criteri delle colonne, fare clic sull'intestazione di colonna. Ad esempio, facendo i **ID** intestazione di colonna, è possibile ordinare le attività da un ID attività: E così via. Per invertire l'ordine, fare nuovamente clic sull'intestazione. La colonna di ordinamento e l'ordinamento correnti sono indicati da una freccia nella colonna.
+ Per ordinare le attività in base ai criteri delle colonne, fare clic sull'intestazione di colonna. Ad esempio, facendo i **ID** intestazione di colonna, è possibile ordinare le attività da un ID attività: 1,2,3,4,5 e così via. Per invertire l'ordine, fare nuovamente clic sull'intestazione. La colonna di ordinamento e l'ordinamento correnti sono indicati da una freccia nella colonna.
 
 ## <a name="grouping-tasks"></a>Raggruppamento delle attività
  È possibile raggruppare le attività in base a una qualsiasi colonna nella visualizzazione elenco. Ad esempio, facendo clic con il pulsante destro del mouse sull'intestazione di colonna **Stato** e scegliendo **Raggruppa per** > **[*stato*]**, è possibile raggruppare tutte le attività con lo stesso stato. Ad esempio, è possibile visualizzare rapidamente in attesa di attività in modo che è possibile concentrarsi sul motivo del blocco. È possibile inoltre comprimere un gruppo di poco interesse durante la sessione di debug. Allo stesso modo, è possibile raggruppare in base alle altre colonne. Per contrassegnare o rimuovere il contrassegno di un gruppo, è sufficiente fare clic sul pulsante accanto all'intestazione del gruppo. Nell'illustrazione seguente viene mostrata la finestra **Attività** nella modalità raggruppata.

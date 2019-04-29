@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a1a113dc3b4a4b3a8a4482dd092878851d740c6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911696"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procedura: Disattivare gli avvisi di compatibilità per plug-in controllo codice sorgente
 Un utente potrebbero essere visualizzati diversi avvisi di compatibilità durante l'utilizzo di controllo del codice sorgente in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Gli avvisi presentati dipendono dalle funzionalità di plug-in del controllo del codice sorgente e possono essere disabilitati come dettagliate qui.

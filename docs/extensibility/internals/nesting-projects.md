@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2e05b47563c62f34e4a01c945a45d5c7ec069ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909480"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
 Gli sviluppatori di applicazioni aziendali che usano il pacchetto di Visual Studio possono raggruppano tipi simili di progetti nell'insieme [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usando *progetto annidamento*. Ad esempio, il progetto di modello dell'organizzazione Usa i progetti annidati per i progetti di gruppo in categorie. Progetti di facciata business, i progetti di interfaccia utente Web e così via vengono raggruppati insieme in una categoria.
@@ -33,12 +33,12 @@ Gli sviluppatori di applicazioni aziendali che usano il pacchetto di Visual Stud
  ![Esplora i progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") esempio i progetti annidati
 
 ## <a name="see-also"></a>Vedere anche
-- [Procedura: Implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md)
+- [Procedura: implementare progetti annidati](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Considerazioni per lo scaricamento e il ricaricamento di progetti annidati](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Supporto di procedure guidate per i progetti annidati](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrazione di modelli di progetto e di elemento](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Implementazione della gestione dei comandi per i progetti annidati](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Applicazione di un filtro nella finestra di dialogo AddItem per i progetti annidati](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Parametri di contesto](../../extensibility/internals/context-parameters.md)
 - [File (con estensione vsz) della procedura guidata](../../extensibility/internals/wizard-dot-vsz-file.md)

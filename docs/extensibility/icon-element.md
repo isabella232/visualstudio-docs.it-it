@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a53e7971ac54af439a02d765fb392157d4a5321
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911199"
 ---
 # <a name="icon-element"></a>Elemento Icon
 L'attributo guid del tag icona è il guid di una mappa di bit definita. Il `id` attributo consente di selezionare lo slot nella striscia di bitmap. Questo elemento è facoltativo. Se questo elemento non è incluso il valore di **guidOfficeIcon:msotcidNoIcon** verrà implicita.

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b5b3d5a58c87988c950328a8b0136986b3a149f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852426"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Debug di un controllo ActiveX con associazione a dati
 Quando si sviluppa un controllo ActiveX che verrà associato a un controllo origine dati, è possibile creare un'applicazione contenitore e utilizzare il contenitore per eseguire il debug del controllo ActiveX.
@@ -32,7 +32,7 @@ Quando si sviluppa un controllo ActiveX che verrà associato a un controllo orig
 ## <a name="using-the-test-container"></a>Utilizzo di Test Container
  Se si desidera un contenitore facilmente modificabile per il supporto di diverse interfacce sul controllo o sul contenitore, utilizzare ActiveX Test Container come eseguibile per la sessione di debug. In ActiveX Test Container scegliere **Opzioni** dal menu **Contenitore** per attivare le diverse interfacce. Per altre informazioni, vedere [test di proprietà ed eventi con Test Container](/cpp/mfc/testing-properties-and-events-with-test-container).
 
- Per eseguire istruzione per istruzione il codice del contenitore durante il debug, utilizzare la versione di debug del contenitore oppure la versione di debug di ActiveX Control Test Container. Per altre informazioni, vedere [esempio TSTCON: ActiveX Control Test Container](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).
+ Per eseguire istruzione per istruzione il codice del contenitore durante il debug, utilizzare la versione di debug del contenitore oppure la versione di debug di ActiveX Control Test Container. Per altre informazioni, vedere [esempio TSTCON: Controllo ActiveX Test Container](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).
 
 ## <a name="see-also"></a>Vedere anche
 - [Debug di COM e ActiveX](../debugger/com-and-activex-debugging.md)

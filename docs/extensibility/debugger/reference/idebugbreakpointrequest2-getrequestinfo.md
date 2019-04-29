@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876829"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Ottiene le informazioni richieste punto di interruzione che descrive questa richiesta di punto di interruzione.

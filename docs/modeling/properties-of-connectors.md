@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970809"
 ---
 # <a name="properties-of-connectors"></a>Proprietà dei connettori
 I connettori rappresentano le relazioni di dominio in una finestra di progettazione generata.
@@ -37,7 +37,7 @@ I connettori rappresentano le relazioni di dominio in una finestra di progettazi
 |Ha un costruttore personalizzato|Se `True`, verrà fornito un costruttore personalizzato nel codice sorgente. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificatore di ereditarietà|Descrive il tipo di ereditarietà della classe di codice sorgente generato dal connettore (`none`, `abstract` o `sealed`).|none|
 |Connettore di base|Classe di base di questo connettore.|(nessuno)|
-|nome|Il nome di questo connettore.|Nome corrente|
+|Nome|Il nome di questo connettore.|Nome corrente|
 |Spazio dei nomi|Lo spazio dei nomi che è associato a questo connettore.|Spazio dei nomi corrente|
 |Tipo della descrizione comando|Modalità la descrizione comando viene definito (fisso, variabile o none). Se viene risolto, quindi il valore della `Fixed Tooltip Text` proprietà viene usata come descrizione comando; se la variabile, la descrizione comando è definito nel codice personalizzato.|\<nessuno>|
 |Note|Note informali associate a questo connettore.|\<nessuno>|

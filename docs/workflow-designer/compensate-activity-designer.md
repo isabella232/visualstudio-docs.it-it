@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c55ecd8e3402d927b11cc00d18d6d134a5b25681
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949838"
 ---
 # <a name="compensate-activity-designer"></a>ActivityDesigner Compensate
 
@@ -35,7 +35,7 @@ Il **compensa** ActivityDesigner può essere trascinato dalle **della casella de
 
 ### <a name="the-compensate-properties"></a>Proprietà di Compensate
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CancellationScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro. Modificare il <xref:System.Activities.Statements.Compensate.Target%2A> proprietà nella griglia delle proprietà.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.CancellationScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro. Modificare il <xref:System.Activities.Statements.Compensate.Target%2A> proprietà nella griglia delle proprietà.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

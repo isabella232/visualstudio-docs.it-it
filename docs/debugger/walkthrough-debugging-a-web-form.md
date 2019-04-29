@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901632"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procedura dettagliata: Debug di un Web Form
 Nei passaggi di questa procedura dettagliata viene illustrato come eseguire il debug di un'applicazione Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], noto anche come Web Form. Viene spiegato come avviare e arrestare l'esecuzione, impostare punti di interruzione ed esaminare le variabili nella finestra **Espressioni di controllo**.
@@ -66,7 +66,7 @@ Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispon
 
 10. Nella **Casella degli strumenti** fare clic sul controllo **Textbox** e trascinarlo nell'area di progettazione principale Default.aspx.
 
-11. Fare doppio clic sul controllo Button rilasciato.
+11. Fare doppio clic sul controllo Button trascinato.
 
      Ciò consente di visualizzare la tabella codici: Default.aspx.cs per C# o default per [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Il cursore dovrebbe trovarsi in corrispondenza della funzione `Button1_Click`.
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961592"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Procedura: Rimuovere estensioni di codice gestito dai documenti
   È possibile rimuovere l'assembly di personalizzazione a livello di codice da un documento o cartella di lavoro che fa parte di una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. Gli utenti possono quindi aprire i documenti e visualizzare il contenuto, ma non verrà visualizzata un'interfaccia utente personalizzata (UI) è aggiungere ai documenti e non verrà eseguito il codice.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 187548a8510b3075c476a1309d1897eb60a647c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939924"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architettura delle soluzioni Office in Visual Studio
   Negli argomenti di questa sezione vengono fornite informazioni sulle soluzioni create tramite gli strumenti di sviluppo di Office in Visual Studio.

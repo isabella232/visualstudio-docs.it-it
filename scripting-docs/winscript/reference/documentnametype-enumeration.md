@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955214"
 ---
 # <a name="documentnametype-enumeration"></a>Enumerazione DOCUMENTNAMETYPE
 Descrive quale tipo richiedere per un documento.  
@@ -40,7 +40,7 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
   
 ## <a name="members"></a>Membri  
   
-|Membro|Descrizione|  
+|Member|Descrizione|  
 |------------|-----------------|  
 |DOCUMENTNAMETYPE_APPNODE|Ottiene il nome visualizzato nell'albero dell'applicazione.|  
 |DOCUMENTNAMETYPE_TITLE|Ottiene il nome visualizzato sulla barra del titolo del visualizzatore.|  

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f45b8c07cf03dc83969c3500c80b8ee215e3ad69
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898724"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts&gt; elemento (programma di avvio automatico)
 Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono inclusi nel prodotto corrente.
@@ -57,7 +57,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
 
  `DependsOnProduct` ha l'attributo seguente.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|
 
@@ -69,7 +69,7 @@ Il `RelatedProducts` elemento definisce gli altri prodotti dipendono o sono incl
 
  `IncludesProduct` ha l'attributo seguente.
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`Code`|Il nome del prodotto incluso, come specificato dal codice il `ProductCode` attributo del `Product` elemento. Per altre informazioni, vedere [ \<prodotto > elemento](../deployment/product-element-bootstrapper.md).|
 

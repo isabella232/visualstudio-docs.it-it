@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b629243920021adc3833f43f268f05638029dc7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900760"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; elemento (applicazione ClickOnce)
 L'elemento di primo livello per il manifesto dell'applicazione.
@@ -48,7 +48,7 @@ L'elemento di primo livello per il manifesto dell'applicazione.
 
  L'elemento `assembly` presenta l'attributo seguente:
 
-|Attributo|Description|
+|Attributo|Descrizione|
 |---------------|-----------------|
 |`manifestVersion`|Obbligatorio. Il `manifestVersion` attributo deve essere impostato su `1.0`.|
 

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 744407f129c85f4e083007186dd167e39401d850
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961937"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
 Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazione struttura ad albero. Per altre informazioni sulla maggior parte degli elementi in DSL Explorer, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920217"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Ottiene una descrizione dettagliata dell'eccezione che ha generato questo evento.
@@ -46,7 +46,7 @@ int GetException( 
 
 ## <a name="remarks"></a>Note
 
- [Solo C++] Il chiamante è responsabile della liberazione tutte le stringhe nel [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura, nonché di rilasciare la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto nella struttura.
+ [C++ solo] Il chiamante è responsabile della liberazione tutte le stringhe nel [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) struttura, nonché di rilasciare la [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto nella struttura.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

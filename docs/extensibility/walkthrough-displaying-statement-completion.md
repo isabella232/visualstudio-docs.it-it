@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d4529fa9cd52c1e9e54049386d39e85ea8efcbe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965193"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procedura dettagliata: Visualizzare il completamento istruzioni
 È possibile implementare il completamento delle istruzioni basata sul linguaggio definendo gli identificatori per il quale si desidera fornire il completamento e quindi attivare una sessione di completamento. È possibile definire il completamento delle istruzioni nel contesto di un servizio di linguaggio, definire il proprio estensione di file e il tipo di contenuto e quindi visualizzare il completamento per solo tale tipo. In alternativa, è possibile attivare il completamento di un tipo di contenuto esistente, ad esempio, "normale". Questa procedura dettagliata illustra come attivare il completamento delle istruzioni per il tipo di contenuto "testo normale", ovvero il tipo di contenuto dei file di testo. Il tipo di contenuto "text" è il predecessore di tutti gli altri tipi contenuti, inclusi file XML e codice.

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946381"
 ---
 # <a name="date-object-expected"></a>Previsto oggetto date
 Si è provato a richiamare il **Date.prototype.toString** oppure **Date.prototype.valueOf** metodo in un oggetto di un tipo diverso da `Date`. L'oggetto di questo tipo di chiamata deve essere di tipo `Date`. Ad esempio:  

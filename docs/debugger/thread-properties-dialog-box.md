@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 371314bff934fdceeb301f61e976224034333559
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929719"
 ---
 # <a name="thread-properties-dialog-box"></a>Finestra di dialogo Proprietà thread
 Utilizzare questa finestra di dialogo per ulteriori informazioni su un thread specifico. Per visualizzare questa finestra di dialogo, spostare lo stato attivo a un [visualizzazione thread](../debugger/threads-view.md) finestra, oppure aprire [visualizzazione messaggi](../debugger/messages-view.md) ed espandere un messaggio. Selezionare qualsiasi nodo di thread nell'albero e quindi scegliere **delle proprietà** dalle **visualizzazione** menu.

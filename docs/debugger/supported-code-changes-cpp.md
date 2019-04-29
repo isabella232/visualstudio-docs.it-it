@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901961"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 L'opzione Modifica e continuazione per Visual C++ gestisce la gran parte dei tipi di modifica al codice. Alcune modifiche non possono tuttavia essere applicate durante l'esecuzione del programma. Per applicare tali modifiche, è necessario arrestare l'esecuzione e compilare una versione aggiornata del codice.

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9162175727d439a6370071a5f3c9fa4c7ca88ee5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945680"
 ---
 # <a name="idebugapplicationnodeeventsondetach"></a>IDebugApplicationNodeEvents::onDetach
 Gestisce un evento per indicare che l'oggetto nodo dell'applicazione di debug è stato scollegato da un nodo padre.  
@@ -39,7 +39,7 @@ HRESULT onDetach();
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
   

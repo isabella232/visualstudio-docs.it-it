@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 741d61f4f3a62638e56aabb1f62f97aac4519d0c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861013"
 ---
 # <a name="hierarchies-and-selection"></a>Le gerarchie e selezione
 Quando si personalizza [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario comprendere come [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestisce le gerarchie, ad esempio i progetti e utilizza come contesto di selezione per determinare ciò che viene visualizzato all'utente. In questa sezione illustra i concetti di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gerarchie e selezione.

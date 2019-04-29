@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954888"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Aggiunge un scriptlet di codice allo script. Questo metodo viene utilizzato in ambienti in cui lo stato persistente dello script è legato a documento host e l'host è responsabile per il ripristino di script, anziché tramite un `IPersist*` interfaccia. Gli esempi primari sono linguaggi di script HTML che consentono gli scriptlet di codice incorporati nel documento HTML da collegare agli eventi intrinseci (ad esempio, ONCLICK="button1.text='Exit'").  

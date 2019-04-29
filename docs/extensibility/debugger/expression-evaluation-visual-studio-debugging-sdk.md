@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5b100ccac042aeed3ed8211c56fc1129311d850b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889853"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Expression evaluation (Visual Studio Debugging SDK)
 Durante la modalità di interruzione, l'IDE deve valutare espressioni semplici che interessa diverse variabili di programma. Per portare a termine la sua valutazione, il motore di debug (DE) deve analizzare e valutare un'espressione che viene immesso in una delle finestre dell'IDE.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cab7ea023524da7e28e2baa2d4e5018cd091c60d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949994"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > ActivityDesigner
 
@@ -33,7 +33,7 @@ Il **ClearCollection\<T >** ActivityDesigner può essere trascinato dal **casell
 
 ### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > proprietà
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di utilizzo nella finestra di progettazione.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.ClearCollection%601> e ne viene descritta la modalità di uso nella finestra di progettazione.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

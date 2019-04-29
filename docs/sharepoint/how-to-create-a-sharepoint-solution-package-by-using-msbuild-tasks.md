@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966834"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Procedura: Creare un pacchetto della soluzione SharePoint tramite le attività di MSBuild
   È possibile compilare, pulire e convalidare un pacchetto di SharePoint (*wsp*) usando le attività della riga di comando di MSBuild in un computer di sviluppo. È anche possibile usare questi comandi per automatizzare il processo di compilazione mediante Team Foundation Server in un computer di compilazione.

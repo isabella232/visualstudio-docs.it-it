@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970305"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Finestra di dialogo Opzioni di tastiera di Microsoft Office Word, impostazioni tastiera Microsoft Office,
   Sia Microsoft Office Word e Visual Studio consentono di gestire i tasti di scelta rapida. La stessa combinazione di tasti di scelta rapida può attivare diversi comandi di Word e in Visual Studio. Quando è aperto in un progetto a livello di documento in Visual Studio, solo un'applicazione in un momento riceve i comandi dei tasti di scelta rapida. Per impostazione predefinita, Visual Studio riceve tutti i comandi dei tasti di scelta rapida, ma è possibile apportare Word riceverli quando il documento dispone dello stato attivo selezionando **schema della tastiera dinamico**.

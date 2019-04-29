@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939580"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automazione di Excel usando oggetti estesi
   Quando si sviluppano soluzioni Excel in Visual Studio, è possibile usare *elementi host* e *controlli host*nelle soluzioni. Si tratta di oggetti che estendono determinati oggetti usati comunemente nel modello a oggetti di Excel (cioè, il modello a oggetti esposto dall'assembly di interoperabilità primario per Excel), come ad esempio gli oggetti <xref:Microsoft.Office.Interop.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Range> . Gli oggetti estesi si comportano come gli oggetti di Excel sui quali si basano, ma forniscono funzionalità aggiuntive come ad esempio nuovi eventi e funzionalità di data binding agli oggetti.

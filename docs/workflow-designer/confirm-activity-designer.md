@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8418faf7fb4eb55a0b20a33aaaa2909e07ff7a78
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949855"
 ---
 # <a name="confirm-activity-designer"></a>ActivityDesigner Confirm
 
@@ -32,7 +32,7 @@ Il **Confirm** ActivityDesigner viene utilizzato per creare e configurare un <xr
  Il **Confirm** ActivityDesigner può essere trascinato dalle **della casella degli strumenti** e rilasciate sull'area di progettazione del flusso di lavoro ogni volta che le attività vengono in genere posizionate, ad esempio all'interno un <xref:System.Activities.Statements.Sequence>. In questo modo viene creata un'attività <xref:System.Activities.Statements.Confirm> con la proprietà <xref:System.Activities.Activity.DisplayName%2A> impostata sul valore predefinito Confirm. Il <xref:System.Activities.Activity.DisplayName%2A> valore può essere modificato nell'intestazione del **Confirm** ActivityDesigner o nel **DisplayName** finestra della griglia delle proprietà.
 
 ### <a name="the-confirm-properties"></a>Proprietà di Confirm
- Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro, ma il <xref:System.Activities.Statements.Confirm.Target%2A> proprietà deve essere modificata nella griglia delle proprietà.
+ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.Confirm> e ne viene descritta la modalità di uso nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> proprietà può essere modificata nella griglia delle proprietà o nell'area di progettazione del flusso di lavoro, ma il <xref:System.Activities.Statements.Confirm.Target%2A> proprietà deve essere modificata nella griglia delle proprietà.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

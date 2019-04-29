@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961784"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Procedura: Ordinare i dati nei fogli di lavoro a livello di codice
   È possibile ordinare i dati contenuti negli elenchi e negli intervalli del foglio di lavoro in fase di esecuzione. Il codice seguente ordina un intervallo a più colonne denominato `Fruits` in base ai dati nella prima colonna e quindi ai dati nella seconda colonna.

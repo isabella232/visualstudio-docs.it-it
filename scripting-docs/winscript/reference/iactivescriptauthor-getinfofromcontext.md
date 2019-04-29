@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935386"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
 Restituisce digitare le informazioni e le posizioni di ancoraggio per un determinato carattere in un blocco di codice. Fornisce informazioni per il membro IntelliSense, gli elenchi globali e suggerimenti relativi ai parametri.  
@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  [in] I tipi di elenco richiesti. Può essere una combinazione dei valori seguenti:  
   
-|Costante|Valore|Descrizione|  
+|Costante|Value|Descrizione|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Nessun elenco.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Elenco dei membri.|  
