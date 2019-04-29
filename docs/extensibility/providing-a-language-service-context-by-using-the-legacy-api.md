@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805968"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornire un contesto del servizio linguaggio con l'API legacy
 Sono disponibili due opzioni per un servizio di linguaggio fornire contesto utente utilizzando il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale: fornire il contesto di marcatore di testo o forniscono tutto il contesto utente. Di seguito vengono illustrate le differenze tra ogni.

@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5db7f060e630c0b4175ecf4708f14fc03869e431
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568938"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ IDebugCustomAttribute : IUnknown
 |[GetAttributeBytes](../../../extensibility/debugger/reference/idebugcustomattribute-getattributebytes.md)|Ottiene le informazioni sugli attributi come un blob di byte.|  
   
 ## <a name="remarks"></a>Note  
- Un attributo personalizzato è una struttura per il linguaggio C# che fornisce metadati personalizzati associati a una determinata classe o metodo.  
+ Un attributo personalizzato è una struttura per il linguaggio c# che fornisce metadati personalizzati associati a una determinata classe o metodo.  
   
 ## <a name="requirements"></a>Requisiti  
  Intestazione: sh.h  

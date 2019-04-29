@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046597"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portabilità, migrazione e aggiornamento dei progetti di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 
  Se si usa [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] con [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1, è possibile creare e modificare i progetti e i file in qualsiasi versione. È possibile trasferire i progetti e i file tra le versioni purché non si aggiungono funzionalità che non sono supportate da una delle versioni.
 
-##  <a name="project"></a> Progetti
+## <a name="project"></a> Progetti
  Nell'elenco seguente viene descritto il supporto di [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per i progetti creati in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o in Visual Studio 2010 SP1. Usare questo elenco per determinare se è possibile aprire un progetto così com'è in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o in Visual Studio 2010 SP1 o se è necessario modificarlo per garantire la compatibilità.
 
 |Tipo di progetto|Compatibilità|
@@ -66,9 +66,9 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 |SketchFlow|Se si consente a Visual Studio di aggiornare il progetto a WPF 4.5/Silverlight 5, è possibile aprirlo in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Database [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|È possibile aprire il progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1. Se si dispone di un file di database (con estensione MDF) creato in una versione precedente di SQL Server, è necessario aggiornarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] prima di poterlo usare con SQL Server Express LocalDB, ma il database non sarà più compatibile con le versioni precedenti di SQL Server. Se non si effettua l'aggiornamento, è possibile continuare a usare il database in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] installando ed usando [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] nello stesso computer. Per altre informazioni, vedere [Aggiornare i file con estensione mdf](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Se [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express viene installato in computer che eseguono [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1, è possibile aprire il progetto in tutte e tre le versioni.|
-|Progetto report di SQL Server|È possibile aprire il progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Solo per la modalità locale, ovvero quando non si è connessi a SQL Server, non si otterrà la fase di progettazione dei controlli associati al visualizzatore in [!INCLUDE[vs2010](../includes/vs2010-md.md)], ma il progetto funzionerà correttamente in fase di esecuzione. **Attenzione:** se si aggiunge una funzionalità specifica di [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], lo schema del report verrà aggiornato automaticamente e non sarà più possibile aprire il progetto in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
+|Progetto report di SQL Server|È possibile aprire il progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Solo per la modalità locale, ovvero quando non si è connessi a SQL Server, non si otterrà la fase di progettazione dei controlli associati al visualizzatore in [!INCLUDE[vs2010](../includes/vs2010-md.md)], ma il progetto funzionerà correttamente in fase di esecuzione. **Attenzione:**  se si aggiunge una funzionalità specifica di [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], lo schema del report verrà aggiornato automaticamente e non sarà più possibile aprire il progetto in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Unit test|È possibile usare [!INCLUDE[TCMext](../includes/tcmext-md.md)] in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1 per aprire i test creati in una qualsiasi di queste versioni.|
-|Visual C++|È possibile usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per aprire un progetto C++ creato in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o in Visual Studio 2010 SP1. Se si vuole usare l'ambiente di compilazione [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per compilare un progetto creato in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è necessario che entrambe le versioni di Visual Studio siano installate nello stesso computer. Per altre informazioni, vedere [Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) e [Guida al porting e aggiornamento in Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
+|Visual C++|È possibile usare [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per aprire un progetto C++ creato in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o in Visual Studio 2010 SP1. Se si vuole usare l'ambiente di compilazione [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] per compilare un progetto creato in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], è necessario che entrambe le versioni di Visual Studio siano installate nello stesso computer. Per altre informazioni, vedere [Procedura: aggiornare i progetti Visual C++ a Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) e [Guida al porting e aggiornamento in Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
 |Visual Studio 2010 per il Web|Se si consente a Visual Studio di aggiornare automaticamente il progetto, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1.|
 |Database Visual Studio 2010 (con estensione DBPROJ)|Se si converte il progetto in un progetto di database di SQL Server Data Tools, è possibile aprirlo in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tuttavia, [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] non supporta i seguenti elementi:<br /><br /> -   unit test<br />-   piani di generazione dati<br />-   file di confronto dati<br />-   estensioni di regole personalizzate per l'analisi statica del codice<br />-   server.sqlsettings<br />-   file con estensione sqlcmd<br />-   estensioni di distribuzione personalizzate<br />-   progetti parziali (con estensione files)<br /><br /> Se si installa SQL Server Data Tools, è possibile aprire il progetto in Visual Studio 2010 SP1 dopo la conversione. Per altre informazioni, vedere [Microsoft SQL Server Data Tools](http://msdn.microsoft.com/data/tools.aspx).|
 |Visual Studio 2010 Visual Database Tools|È possibile aprire questo progetto in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]e Visual Studio 2010 SP1.|
@@ -89,7 +89,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 
 - Se si tenta di aprire un progetto non supportato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e per il quale la versione associata di Visual Studio non è installata, potrebbe essere visualizzato un messaggio che indica che il tipo di progetto non è supportato e il tipo di progetto potrebbe essere elencato nella finestra di dialogo **Controlla modifiche** a progetti e soluzioni in **Progetti non supportati**. Per risolvere questo problema, aprire la pagina Programmi e funzionalità nel **Pannello di controllo**di Windows, selezionare **Visual Studio**, quindi scegliere **Cambia**, **Ripristina**. È quindi possibile installare la versione mancante.
 
-- Se si tenta di aprire un progetto per un'app desktop in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], si verifica un errore e viene visualizzato uno dei seguenti messaggi: "Questa edizione di Visual Studio supporta solo applicazioni [!INCLUDE[win81](../includes/win81-md.md)] " oppure "Il progetto non è compatibile con la versione attuale di Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] è limitato allo sviluppo, al test e alla distribuzione di applicazioni Windows Store progettate per Windows 8.1. Per aprire un progetto di un'applicazione desktop, è necessario usare un'edizione di Visual Studio che supporti tale tipo di progetto.
+- Se si tenta di aprire un progetto per un'app desktop in [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], si verifica un errore e viene visualizzato uno dei messaggi seguenti: "Questa edizione di Visual Studio supporta solo applicazioni [!INCLUDE[win81](../includes/win81-md.md)]" oppure "Il progetto non è compatibile con la versione attuale di Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] è limitato allo sviluppo, al test e alla distribuzione di applicazioni Windows Store progettate per Windows 8.1. Per aprire un progetto di un'applicazione desktop, è necessario usare un'edizione di Visual Studio che supporti tale tipo di progetto.
 
    Per altre informazioni sulle edizioni di Visual Studio, vedere [Prodotti Microsoft Visual Studio](https://visualstudio.microsoft.com/products/)
 
@@ -101,7 +101,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 
   Per altre informazioni sulla risoluzione dei problemi, vedere l'articolo della Knowledge Base sulla [compatibilità di Visual Studio 2013](http://support.microsoft.com/kb/2863286) .
 
-##  <a name="file"></a> File
+## <a name="file"></a> File
  Il seguente elenco indica se [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] supporta ciascun tipo di file, se è possibile aprire il file in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e in Visual Studio 2010 SP1 e se ogni file deve essere modificato per garantire la compatibilità.
 
 |Tipo di file|Compatibilità|
@@ -121,7 +121,7 @@ Per scegliere se passare a una nuova versione di Visual Studio, è possibile usa
 |File di log IntelliTrace di [!INCLUDE[vs2010](../includes/vs2010-md.md)]|È possibile aprire questi file in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]e in Visual Studio 2010 SP1.|
 |File di JavaScript Memory Analyzer (con estensione DIAGSESSION)|I file creati da versioni precedenti di Visual Studio possono essere visualizzati in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Tuttavia, in base alle informazioni raccolte, i file creati in [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] non possono essere aperti in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1.|
 
-##  <a name="integration"></a> Asset di integrazione
+## <a name="integration"></a> Asset di integrazione
  Potrebbero verificarsi problemi di compatibilità se si usano client e server di versioni di Visual Studio Team Foundation Server differenti.
 
 |Tipo di integrazione|Compatibilità|

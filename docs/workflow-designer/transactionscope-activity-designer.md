@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e84312518c19ef2a041091c5e2439dd7fb312c69
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433968"
 ---
 # <a name="transactionscope-activity-designer"></a>ActivityDesigner TransactionScope
 
@@ -31,7 +31,7 @@ Accesso di **TransactionScope** ActivityDesigner nel **transazione** categoria d
 
 ### <a name="the-transactionscope-properties"></a>Proprietà di TransactionScope
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TransactionScope> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Statements.TransactionScope.Body%2A> proprietà possono essere modificate nell'area di progettazione del flusso di lavoro. Le altre proprietà devono invece essere modificate nella griglia delle proprietà.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.TransactionScope> e ne viene descritta la modalità di uso nella finestra di progettazione. Il <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Statements.TransactionScope.Body%2A> proprietà possono essere modificate nell'area di progettazione del flusso di lavoro. Le altre proprietà devono invece essere modificate nella griglia delle proprietà.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|

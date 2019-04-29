@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793651"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Supporto per il riconoscimento di Monitor per estensioni di Visual Studio
 Versioni precedenti a Visual Studio 2019 era relativo contesto di riconoscimento DPI imposta sistema compatibile con, piuttosto che per ogni monitoraggio compatibili con DPI (PMA). Esecuzione della consapevolezza del sistema ha restituito un oggetto visivo con funzionalità ridotto verifichi (i tipi di carattere, ad esempio sfocati o le icone) ogni volta che Visual Studio doveva eseguire il rendering su monitor con fattori di scala diversa o remoto in computer con configurazioni diverse, ad esempio (diverse Windows scalabilità).

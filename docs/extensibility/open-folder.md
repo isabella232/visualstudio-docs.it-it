@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806464"
 ---
 # <a name="open-folder-extensibility"></a>Estendibilità di Apri cartella
 
@@ -26,7 +26,7 @@ Il [Apri cartella](../ide/develop-code-in-visual-studio-without-projects-or-solu
 
 Se usato con i carichi di lavoro ad esempio per lo sviluppo di .NET e C++, ottengono anche gli utenti:
 
-* Intellisense avanzato
+* Rich Intellisense
 * Funzionalità specifiche della lingua
 
 Con Apri cartella, gli autori delle estensioni possono creare numerose funzionalità per qualsiasi linguaggio. Sono disponibili le API per il supporto di compilazione, debug e ricerca dei simboli per codebase di un utente di tutti i file del. Dispositivi Extender corrente è possibile aggiornare le funzionalità esistenti di Visual Studio per comprendere il codice senza il supporto di progetti o di una soluzione.

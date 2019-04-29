@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566742"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 
@@ -69,7 +69,7 @@ Iniziare creando una nuova applicazione Windows Forms:
 
 1. In Visual Studio sul **File** dal menu **New** > **progetto**.
 
-2. Espandere la **Visual C#**  oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Desktop di Windows**.
+2. Espandere la **Visual c#** oppure **Visual Basic** nel riquadro di sinistra, quindi selezionare **Windows Desktop**.
 
 3. Nel riquadro centrale selezionare il **App di Windows. Forms** tipo di progetto.
 

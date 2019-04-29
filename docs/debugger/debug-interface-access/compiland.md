@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555261"
 ---
 # <a name="compiland"></a>Compilando
 È presente un `SymTagCompiland` simbolo per ogni modulo collegato file .exe. Informazioni compilando sono suddiviso tra i simboli con un `SymTagCompiland` tag, che può essere recuperato senza il caricamento dei simboli compilando aggiuntivi, e i simboli con un `SymTagCompilandDetails` tag, che possono richiedere il caricamento dei simboli aggiuntivi.
@@ -26,7 +26,7 @@ ms.locfileid: "56613243"
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_editAndContinueEnabled](../../debugger/debug-interface-access/idiasymbol-get-editandcontinueenabled.md)|`BOOL`|`TRUE` Se la modifica e continuazione è stata abilitata la compilazione.|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simbolo per il file .exe.|

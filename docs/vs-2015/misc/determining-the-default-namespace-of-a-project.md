@@ -10,11 +10,11 @@ ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822582"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Determinazione dello spazio dei nomi predefinito di un progetto
 Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], se il `CustomToolNamespace` viene impostata nel file di input, il valore di `CustomToolNamespace` diventa il valore del parametro dello spazio dei nomi predefinito passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (metodo). In caso contrario, il `wszDefaultNamespace` passato al parametro `Generate` è sempre uguale allo spazio dei nomi radice. Per altre informazioni sugli spazi dei nomi, vedere [parole chiave Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

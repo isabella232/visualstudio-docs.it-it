@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4ec06ea25a6a6486a444d430e3ef15b888760650
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433767"
 ---
 # <a name="expected-while"></a>Previsto 'while'
 Non sono inclusi i `while` condizione un `do...while` ciclo. Oggetto **scopo** istruzione deve corrispondere un `while` alla fine del blocco di codice di test.  

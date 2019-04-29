@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563907"
 ---
 # <a name="com-and-activex-debugging"></a>Debug di COM e ActiveX
 In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e di controlli ActiveX.
@@ -34,7 +34,7 @@ In questa sezione vengono forniti suggerimenti sul debug di applicazioni COM e d
 ## <a name="in-this-section"></a>In questa sezione
  [Server COM e il contenitore debug](../debugger/com-server-and-container-debugging.md) vengono citate particolari considerazioni durante il debug di applicazioni COM. I problemi includono: debug di un server e di un contenitore COM tramite due progetti all'interno della stessa soluzione, traccia di chiamate che attraversano i limiti dei processi, impostazione di punti di interruzione in funzioni di callback ed esecuzione delle istruzioni attraverso e all'interno di contenitori e server.
 
- [Procedura: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md) contiene informazioni sul debug dei controlli ActiveX. quali: specifica di un contenitore relativo alla sessione di debug per visualizzare come viene eseguito il codice nel controllo ActiveX, debug di un controllo ActiveX con associazione a dati, simulazione di un particolare contenitore ed esecuzione passo passo del codice del contenitore.
+ [Procedura: Eseguire il debug di un controllo ActiveX](../debugger/how-to-debug-an-activex-control.md) contiene informazioni sul debug dei controlli ActiveX. quali: specifica di un contenitore relativo alla sessione di debug per visualizzare come viene eseguito il codice nel controllo ActiveX, debug di un controllo ActiveX con associazione a dati, simulazione di un particolare contenitore ed esecuzione passo passo del codice del contenitore.
 
  [Strumenti di debug COM](../debugger/com-debugging-tools.md) Elenca visualizzatori e applicazioni di esempio che possono essere utile nel debug di applicazioni COM.
 

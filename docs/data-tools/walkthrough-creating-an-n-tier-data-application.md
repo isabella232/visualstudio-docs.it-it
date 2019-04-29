@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564802"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procedura dettagliata: Creare un'applicazione dati a più livelli
 Le applicazioni dati *a più livelli* sono applicazioni con accesso ai dati e sono separate in più *livelli logici*. La separazione dei componenti dell'applicazione in livelli discreti aumenta la manutenibilità e la scalabilità dell'applicazione mediante l'adozione semplificata di nuove tecnologie che possono essere applicate a un singolo livello senza la necessità di riprogettare l'intera soluzione. L'architettura a più livelli include un livello di presentazione, un livello intermedio e un livello dati. Il livello intermedio include in genere un livello di accesso ai dati, un livello di logica di business e componenti condivisi quali l'autenticazione e la convalida. Il livello dati include un database relazionale. Le applicazioni a più livelli in genere archiviano le informazioni riservate nel livello di accesso ai dati del livello intermedio per mantenere l'isolamento dagli utenti finali che accedono al livello di presentazione. Per altre informazioni, vedere [panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md).
@@ -92,7 +92,7 @@ Questa procedura dettagliata Usa SQL Server Express LocalDB e il database di ese
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Per creare una libreria di classi separata per gli oggetti TableAdapter
 
-1. Pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Add** > **nuovo progetto**.
+1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
 2. Nel **nuovo progetto** finestra di dialogo, nel riquadro centrale, seleziona **libreria di classi**.
 
@@ -164,7 +164,7 @@ Questa procedura dettagliata viene illustrato come accedere a livello di accesso
 
 ### <a name="to-create-a-new-wcf-service-application"></a>Per creare una nuova applicazione del servizio WCF
 
-1. Pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Add** > **nuovo progetto**.
+1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
 2. Nel **nuovo progetto** finestra di dialogo, nel riquadro a sinistra, seleziona **WCF**. Nel riquadro centrale, selezionare **WCF Service Library**.
 
@@ -288,7 +288,7 @@ Questa procedura dettagliata viene illustrato come accedere a livello di accesso
 
 ### <a name="to-create-the-presentation-tier-project"></a>Per creare il progetto livello di presentazione
 
-1. Pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Add** > **nuovo progetto**.
+1. Fare clic con il pulsante destro del mouse sulla soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**.
 
 2. Nel **nuovo progetto** finestra di dialogo, nel riquadro a sinistra, seleziona **Windows Desktop**. Nel riquadro centrale, selezionare **App di Windows. Forms**.
 

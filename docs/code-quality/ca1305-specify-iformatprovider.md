@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797541"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Specificare IFormatProvider
 
@@ -56,7 +56,7 @@ Anche se il comportamento predefinito del membro di overload è adatto alle prop
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
-Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.IFormatProvider> argomento. In alternativa, usare una [C# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarlo al <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (metodo).
+Per correggere una violazione di questa regola, usare l'overload che accetta un <xref:System.IFormatProvider> argomento. In alternativa, usare una [c# stringa interpolata](/dotnet/csharp/tutorials/string-interpolation) e passarlo al <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (metodo).
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

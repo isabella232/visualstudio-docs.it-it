@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2fb277368e23cf51a4d3d3b69226ee6bf093d6c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839615"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 Legge `LONG` valori in un set di proprietà.
@@ -43,7 +43,7 @@ HRESULT ReadDLONG ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce `E_INVALIDARG` se la proprietà non è di tipo `LONG`.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Oggetto `LONG` è definito da Windows come un intero con segno a 32 bit.
 
 ## <a name="see-also"></a>Vedere anche

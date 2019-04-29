@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9aecfe8e0be0f5d32df41b7eb164423fd4d405db
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545003"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: I costruttori statici devono essere privati
 
@@ -38,7 +38,7 @@ Un tipo ha un costruttore statico non è privato.
 
 Un costruttore statico, noto anche come un costruttore di classe, viene utilizzato per inizializzare un tipo. Il costruttore statico viene chiamato prima che venga creata la prima istanza del tipo o venga fatto riferimento a qualsiasi membro statico. L'utente non ha alcun controllo su quando viene chiamato il costruttore statico. Se un costruttore statico non è privato, può essere chiamato da codice esterno al sistema. A seconda delle operazioni eseguite nel costruttore, questa situazione può causare comportamenti imprevisti.
 
-Questa regola viene applicata dai compilatori C# e Visual Basic.
+Questa regola viene applicata dai compilatori c# e Visual Basic.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541910"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Eseguire l'override di Equals all'overload dell'operatore "uguale a"
 
@@ -39,7 +39,7 @@ Un tipo pubblico implementa l'operatore di uguaglianza, ma non esegue l'override
 
 L'operatore di uguaglianza deve essere un modo pratico sintatticamente per accedere alla funzionalità del <xref:System.Object.Equals%2A> (metodo). Se si implementa l'operatore di uguaglianza, la logica deve essere identica a quello di <xref:System.Object.Equals%2A>.
 
-Il compilatore C# genera un avviso se il codice viola questa regola.
+Il compilatore c# genera un avviso se il codice viola questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

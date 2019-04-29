@@ -1,5 +1,5 @@
-# [Uso dell'ambiente di sviluppo di Visual Studio per C#](using-the-visual-studio-development-environment-for-csharp.md)
-## [Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
+# [Using the Visual Studio Development Environment for C#](using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)
+## [Procedura: aggiungere un file di configurazione dell'applicazione a un progetto C#](how-to-add-an-application-configuration-file-to-a-csharp-project.md)
 ## [Metadati come origine](metadata-as-source.md)
 ## [Refactoring (C#)](refactoring-csharp.md)
 ### [Refactoring per Estrai Metodo (C#)](extract-method-refactoring-csharp.md)

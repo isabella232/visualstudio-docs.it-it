@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0cf6e4f02d8a80f74d0edb46e188b41bfb425c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554948"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dati (Debug Interface Access SDK)
 Tutte le variabili, ad esempio parametri, variabili locali, le variabili globali e i membri della classe sono identificate da `SymTagData` simboli. Valori costanti (`LocIsConstant`) inoltre vengono identificati con questo tipo.
@@ -28,7 +28,7 @@ Tutte le variabili, ad esempio parametri, variabili locali, le variabili globali
 ## <a name="properties"></a>Proprietà
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
 
-|Proprietà|Tipo di dati|Description|
+|Proprietà|Tipo di dati|Descrizione|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Se un campo, quindi uno dei valori del [enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte relativa all'offset della posizione; Per informazioni dettagliate, vedere la [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md).|

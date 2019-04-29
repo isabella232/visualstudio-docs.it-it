@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568656"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Creare un'applicazione dati semplice con WPF ed Entity Framework 6
 
@@ -58,7 +58,7 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
 ## <a name="create-the-model"></a>Creare il modello
 
-1. Pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Add** > **nuovo elemento**. Nel riquadro sinistro, sotto il C# nodo, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
+1. Pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Add** > **nuovo elemento**. Nel riquadro di sinistra, sotto il nodo c#, scegliere **Data** nel riquadro centrale, scegliere **ADO.NET Entity Data Model**.
 
    ![Elemento nuovo modello di Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ Questo esempio Usa il database di esempio Northwind e SQL Server Express LocalDB
 
     ![Scegli oggetti di database per il modello](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. La procedura guidata genera il C# le classi che rappresentano il modello di Entity Framework. Le classi sono plain old C# classi e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
+5. La procedura guidata genera le classi di c# che rappresentano il modello di Entity Framework. Le classi sono plain precedente le classi di c# e sono ciò databind all'interfaccia utente WPF. Il *edmx* file descrive le relazioni e altri metadati che associa le classi di oggetti nel database. Il *tt* file sono modelli T4 che generano il codice che opera sul modello e salvare le modifiche al database. È possibile visualizzare tutti i file in **Esplora soluzioni** sotto il nodo Northwind_model:
 
       ![File del modello EF di Esplora soluzioni](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -353,7 +353,7 @@ Successivamente, sostituire l'intera griglia esterna con questo codice:
 
 Nelle applicazioni Windows Form, ottenere un oggetto di BindingNavigator con i pulsanti per spostarsi tra le righe in un database e l'esecuzione di operazioni CRUD di base. WPF non è incluso un controllo BindingNavigator, ma è abbastanza semplice per crearne uno. È che fare con i pulsanti all'interno di un elemento StackPanel orizzontali e associare i pulsanti con i comandi che sono associati ai metodi nel code-behind.
 
-Esistono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.
+Vi sono quattro parti per la logica di comando: (1) i comandi, (2) le associazioni, (3) i pulsanti e (4) i gestori comando nel code-behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Aggiungere i comandi, associazioni e i pulsanti in XAML
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 468e3bee84c7312def06c32cb411c00526ba3b1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832861"
 ---
 # <a name="idiaframedatagetlengthblock"></a>IDiaFrameData::get_lengthBlock
 Recupera la lunghezza, espressa in byte, del blocco di codice descritto dal frame.
@@ -38,7 +38,7 @@ HRESULT get_lengthBlock ( 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se questa proprietà non è supportata. In caso contrario, verrà restituito un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il valore restituito da questo metodo viene utilizzato in genere l'interpretazione di una stringa nel programma (vedere la [Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) metodo per la definizione di una stringa di programma).
 
 ## <a name="see-also"></a>Vedere anche

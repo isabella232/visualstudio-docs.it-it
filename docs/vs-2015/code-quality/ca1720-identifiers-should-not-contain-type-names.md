@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576728"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Gli identificatori non devono contenere nomi di tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58967689"
  Il nome di un membro visibile esternamente contiene un nome di tipo di dati specifico del linguaggio.
 
 ## <a name="rule-description"></a>Descrizione della regola
- I nomi dei parametri e membri sono meglio utilizzati per comunicare il significato di to descriverne il tipo, il quale viene in genere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario utilizzare un nome di tipo di dati, usare un nome indipendente dalla lingua anziché uno specifico del linguaggio. Anziché il nome di tipo C# 'int', ad esempio, usare il nome del tipo di dati indipendenti dal linguaggio, Int32.
+ I nomi dei parametri e membri sono meglio utilizzati per comunicare il significato di to descriverne il tipo, il quale viene in genere fornito dagli strumenti di sviluppo. Per i nomi dei membri, se è necessario utilizzare un nome di tipo di dati, usare un nome indipendente dalla lingua anziché uno specifico del linguaggio. Anziché il nome di tipo c# 'int', ad esempio, usare il nome del tipo di dati indipendenti dal linguaggio, Int32.
 
  Ogni token discreti il nome del parametro o un membro viene confrontato con i nomi dei tipi di dati specifico del linguaggio seguenti, in modo tra maiuscole e minuscole:
 

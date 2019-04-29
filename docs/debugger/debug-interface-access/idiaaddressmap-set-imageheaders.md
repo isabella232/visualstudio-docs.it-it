@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 10835f422f8d2d116234eadd91da0d27c424f314
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554222"
 ---
 # <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
 Set di intestazioni per abilitare la conversione dell'indirizzo virtuale relativo dell'immagine.
@@ -48,7 +48,7 @@ HRESULT set_imageHeaders ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il `IMAGE_SECTION_HEADER` struttura è dichiarato in Winnt. h e rappresenta il formato dell'intestazione sezione del file eseguibile.
 
  I calcoli di indirizzo virtuale relativo variano a seconda di `IMAGE_SECTION_HEADER` valori. In genere, il DIA recupera queste informazioni dal file di database (con estensione pdb) di programma. Se questi valori sono mancanti, il DIA non riesce a calcolare indirizzi virtuali relativi e la [Get_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) restituzione del metodo `FALSE`. Il client deve quindi chiamare il [Put_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metodo per consentire i calcoli di indirizzo virtuale relativo dopo aver fornito le intestazioni di immagine mancante dall'immagine di se stesso.

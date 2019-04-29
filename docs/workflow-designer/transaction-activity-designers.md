@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01b696b2054bc1ec41c7bdbd432371ed937008b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433981"
 ---
-# <a name="transaction-activity-designers"></a>ActivityDesigner Transaction
+# <a name="transaction-activity-designers"></a>ActivityDesigner Transazione
 
 Gli ActivityDesigner Transaction vengono usati per creare e configurare attività transazionali quali compensazione e conferma. Gli argomenti contenuti in questa sezione ed elencati nella tabella seguente forniscono indicazioni su come usare l'attività di progettazione del flusso di lavoro e i progettisti di modelli.

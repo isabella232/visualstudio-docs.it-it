@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7400fc2b635c036f4bf9b2ff3632a20e628b50d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800337"
 ---
 # <a name="sccrunscc-function"></a>Funzione SccRunScc
 Questa funzione richiama lo strumento di amministrazione di controllo di origine.
@@ -53,7 +53,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>Valore restituito
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Lo strumento di amministrazione di controllo di origine è stato richiamato.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata.|

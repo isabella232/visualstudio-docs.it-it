@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571368"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Set di regole Regole base delle linee guida di progettazione per codice gestito
 È possibile usare il set di concentrarsi su come rendere più facile da comprendere e usare il codice di regole regole base delle linee guida di progettazione Microsoft. È consigliabile includere questo set di regole se il progetto contiene codice di libreria o se si desidera applicare le procedure consigliate per il codice che è facile da gestire.

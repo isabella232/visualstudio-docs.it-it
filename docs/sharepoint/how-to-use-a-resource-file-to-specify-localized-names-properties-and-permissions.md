@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813049"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procedura: Usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni
   Utilizzando un file di risorse, è possibile fornire nomi localizzati, definire proprietà e applicare autorizzazioni per oggetti definiti in un modello di integrazione applicativa dei dati. Per specificare queste informazioni, si aggiunge un **risorse di integrazione applicativa dei dati aziendali** elemento a un progetto che contiene un **Business Data Connectivity Model** elemento. Specificare nomi, proprietà e autorizzazioni modificando l'XML del file di risorse.

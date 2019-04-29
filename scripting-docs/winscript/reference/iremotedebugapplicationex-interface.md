@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ab9e25a28ade1ac73b9e4837dae61e2d91f24c45
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788378"
 ---
 # <a name="iremotedebugapplicationex-interface"></a>Interfaccia IRemoteDebugApplicationEx
 Rappresenta un'applicazione in esecuzione. Non dovrà corrispondere a un processo del sistema operativo. In genere, un debugger è destinato a un'applicazione per il debug. Il gestore di eseguire il Debug di processi in genere implementa l'oggetto applicazione.  

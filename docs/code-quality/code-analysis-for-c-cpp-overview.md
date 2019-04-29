@@ -22,13 +22,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540826"
 ---
-# <a name="code-analysis-for-cc-overview"></a>Analisi del codice per C/C++: Panoramica
+# <a name="code-analysis-for-cc-overview"></a>Cenni preliminari sull'analisi del codice per C/C++
 
 Lo strumento di analisi del codice C/C++ fornisce informazioni sui possibili errori nel codice sorgente C/C++. Gli errori di codifica più comuni segnalati dallo strumento includono i sovraccarichi del buffer, l'annullamento dell'inizializzazione della memoria, le dereferenziazioni al puntatore null e le perdite di memoria e risorse. Lo strumento può anche eseguire controlli a fronte di [linee guida di base di C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 

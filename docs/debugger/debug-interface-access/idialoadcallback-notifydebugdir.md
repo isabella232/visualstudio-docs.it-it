@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce251da3c1cb7b1da00971d46cc0801ad24b8985
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839823"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
 Chiamato quando è stata trovata una directory di debug nel file .exe.
@@ -48,7 +48,7 @@ HRESULT NotifyDebugDir ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Il codice restituito in genere viene ignorato.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il [Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metodo richiama il callback quando viene trovata una directory di debug durante l'elaborazione del file eseguibile.
 
  Questo metodo rimuove la necessità per il client decodificare il file eseguibile e/o di debug per supportare le informazioni di debug diverso da quello trovato nel file con estensione pdb. Con questi dati, il client in grado di riconoscere il tipo di informazioni di debug disponibili e che si trova all'interno del file eseguibile o il file DBG.

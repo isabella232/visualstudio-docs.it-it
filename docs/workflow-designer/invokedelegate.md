@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537088"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -32,7 +32,7 @@ Accesso di **InvokeDelegate** ActivityDesigner nel **primitive** categoria del *
 
 ### <a name="the-invokedelegate-properties"></a>Le proprietà di InvokeDelegate
 
-Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.InvokeDelegate> e ne viene descritta la modalità di utilizzo nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate nell'area di progettazione del flusso di lavoro.
+Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.Statements.InvokeDelegate> e ne viene descritta la modalità di uso nella finestra di progettazione. Tali proprietà possono essere modificate nella griglia delle proprietà e alcune possono essere modificate nell'area di progettazione del flusso di lavoro.
 
 |Nome proprietà|Obbligatorio|Utilizzo|
 |-|--------------|-|
@@ -42,4 +42,4 @@ Nella tabella seguente sono elencate le proprietà di <xref:System.Activities.St
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura: Definire e usare delegati di attività nella finestra di progettazione del flusso di lavoro](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
