@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446990"
 ---
 # <a name="ribbon-object-model-overview"></a>Panoramica del modello a oggetti della barra multifunzione
   Il [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] espone un modello a oggetti fortemente tipizzati che è possibile usare per ottenere e impostare le proprietà dei controlli della barra multifunzione in fase di esecuzione. Ad esempio, è possibile in modo dinamico popola i controlli menu, o mostrare e nascondere controlli in base al contesto. È anche possibile aggiungere schede, gruppi e controlli a una barra multifunzione, ma solo prima della barra multifunzione viene caricata dall'applicazione di Office. Per informazioni, vedere [impostare le proprietà che diventano di sola lettura](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040716"
  La tabella seguente illustra le proprietà che possono essere impostate solo prima del caricamento della barra multifunzione.
 
 > [!NOTE]
->  È possibile impostare le proprietà dei controlli nel menu dinamici in qualsiasi momento. Questa tabella non è applicabile in questo caso.
+> È possibile impostare le proprietà dei controlli nel menu dinamici in qualsiasi momento. Questa tabella non è applicabile in questo caso.
 
 |Proprietà|Classe del controllo della barra multifunzione|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040716"
  Se si dispone di logica condizionale che imposta una di queste proprietà su un valore diverso quando vengono create altre istanze della barra multifunzione, questo codice non avrà effetto.
 
 > [!NOTE]
->  Verificare che il **nome** viene impostata per ogni controllo che aggiunge a una barra multifunzione di Outlook. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di progettazione, il nome viene impostata automaticamente.
+> Verificare che il **nome** viene impostata per ogni controllo che aggiunge a una barra multifunzione di Outlook. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di esecuzione, è necessario impostare questa proprietà nel codice. Se si aggiunge un controllo a una barra multifunzione di Outlook in fase di progettazione, il nome viene impostata automaticamente.
 
 ## <a name="ribbon-control-events"></a>Eventi di controllo della barra multifunzione
  Ogni classe del controllo contiene uno o più eventi. Nella tabella seguente vengono descritti questi eventi.

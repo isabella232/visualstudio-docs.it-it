@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446868"
 ---
 # <a name="sccgetprojpath-function"></a>Funzione SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  Per `lpUser`, l'IDE può passare un nome utente o potrebbe semplicemente passare un puntatore a una stringa vuota. Se è presente un nome utente, il plug-in del controllo del codice sorgente deve usarlo come valore predefinito. Tuttavia, se è stato passato alcun nome o l'account di accesso non riuscito con il nome specificato, il plug-in deve richiedere all'utente per un account di accesso e passare di nuovo il nome `lpUser` quando riceve un account di accesso valido. Poiché il plug-in possono modificare questa stringa, l'IDE sempre dovrà allocare un buffer di dimensione (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  La prima azione che esegue l'IDE può essere una chiamata a uno il `SccOpenProject` funzione o `SccGetProjPath` (funzione). Di conseguenza, entrambe riportano un identico `lpUser` parametro, che consente il plug-in per l'accesso l'utente in fase di controllo del codice sorgente. Anche se il valore restituito dalla funzione indica un errore, il plug-in deve riempire questa stringa con un nome di account di accesso valido.  
+> La prima azione che esegue l'IDE può essere una chiamata a uno il `SccOpenProject` funzione o `SccGetProjPath` (funzione). Di conseguenza, entrambe riportano un identico `lpUser` parametro, che consente il plug-in per l'accesso l'utente in fase di controllo del codice sorgente. Anche se il valore restituito dalla funzione indica un errore, il plug-in deve riempire questa stringa con un nome di account di accesso valido.  
   
  `lpLocalPath` è la directory in cui l'utente posiziona il progetto. Potrebbe trattarsi di una stringa vuota. Se è presente alcuna directory attualmente definiti (come nel caso di un utente tenta di scaricare un progetto dal sistema di controllo di origine) e se `bAllowChangePath` è `TRUE`, possa richiedere all'utente per l'input o utilizzare un altro metodo per inserire il plug-in del controllo del codice sorgente relativo proprietà stringa in `lpLocalPath`. Se `bAllowChangePath` è `FALSE`, il plug-in necessario non modificare la stringa, perché l'utente sta già lavorando nella directory specificata.  
   

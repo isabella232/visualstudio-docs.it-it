@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447005"
 ---
 # <a name="ribbon-designer"></a>Finestra di progettazione della barra multifunzione
   La finestra di progettazione della barra multifunzione è un'area di progettazione visiva. Utilizzare la finestra di progettazione della barra multifunzione per aggiungere schede personalizzate, gruppi e controlli alla barra multifunzione di un'applicazione Microsoft Office.
@@ -47,7 +47,7 @@ ms.locfileid: "60103641"
 - [Aggiungere controlli alla visualizzazione Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Esistono alcune attività che è possibile eseguire utilizzando la finestra di progettazione della barra multifunzione. Per altre informazioni su queste attività e come è possibile eseguire queste attività, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
+> Esistono alcune attività che è possibile eseguire utilizzando la finestra di progettazione della barra multifunzione. Per altre informazioni su queste attività e come è possibile eseguire queste attività, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
 
  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare la finestra di progettazione della barra multifunzione per personalizzare la barra multifunzione in Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d570c181125a1f94108624e6f9b1ce23bdcca25a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447226"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolata o integrata)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60116381"
  La versione ridistribuibile di Visual Studio integrated shell non include linguaggi di programmazione e le funzionalità che supportano i relativi sistemi di progetto.  
   
 > [!NOTE]
->  La modalità integrata di Visual Studio shell può essere installata insieme a tutte le edizioni di Visual Studio tranne le edizioni Express.  
+> La modalità integrata di Visual Studio shell può essere installata insieme a tutte le edizioni di Visual Studio tranne le edizioni Express.  
   
  Per altre informazioni, vedere [Visual Studio Shell (Integrated)](../extensibility/visual-studio-shell-integrated.md).  
   
@@ -47,12 +47,12 @@ ms.locfileid: "60116381"
  Per distribuire l'applicazione shell isolata o integrata, è necessario includere l'applicazione, una speciale integrata o isolata shell redistributable e un programma di installazione. Per altre informazioni sulla distribuzione e l'installazione, vedere [distribuzione di applicazioni isolate Shell](../extensibility/distributing-isolated-shell-applications.md).  
   
 > [!IMPORTANT]
->  Il [contratto di licenza utente finale (EULA)](https://www.visualstudio.com/support/legal/mt171552) for integrata e isolata di Visual Studio Shell incluso una sezione sulla raccolta dei dati (**sezione 3. Data**).  Descrive i dati di utilizzo dei clienti che possono essere raccolti da Microsoft da utenti che il software di shell integrata o isolata che si compila l'applicazione. Per altre informazioni, vedere [informativa della famiglia di prodotti di Microsoft Visual Studio sulla Privacy](https://www.visualstudio.com/dn948229).  
+> Il [contratto di licenza utente finale (EULA)](https://www.visualstudio.com/support/legal/mt171552) for integrata e isolata di Visual Studio Shell incluso una sezione sulla raccolta dei dati (**sezione 3. Data**).  Descrive i dati di utilizzo dei clienti che possono essere raccolti da Microsoft da utenti che il software di shell integrata o isolata che si compila l'applicazione. Per altre informazioni, vedere [informativa della famiglia di prodotti di Microsoft Visual Studio sulla Privacy](https://www.visualstudio.com/dn948229).  
 > 
->  Se si raccolgono i dati di utilizzo separato dai tuoi clienti tramite l'applicazione, è necessario fornire preavviso appropriato per gli utenti dell'applicazione è raccogliere.  Quando si distribuisce il software di shell isolata o integrata come parte dell'applicazione, in base alla licenza di Visual Studio Software Development Kit, è necessario includere uno dei seguenti:  
+> Se si raccolgono i dati di utilizzo separato dai tuoi clienti tramite l'applicazione, è necessario fornire preavviso appropriato per gli utenti dell'applicazione è raccogliere.  Quando si distribuisce il software di shell isolata o integrata come parte dell'applicazione, in base alla licenza di Visual Studio Software Development Kit, è necessario includere uno dei seguenti:  
 > 
 > - il contratto di licenza utente finale come parte della licenza dell'applicazione  
->   - il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
+> - il proprio contratto di licenza che richiede agli utenti di accettare le condizioni che la protezione di Visual Studio integrata o isolata shell almeno della quantità come condizioni di licenza Microsoft utente finale per il software della shell  
   
 ## <a name="additional-resources"></a>Risorse aggiuntive  
  Per altre informazioni sui pacchetti ridistribuibili, vedere la [download di Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) sito Web.  

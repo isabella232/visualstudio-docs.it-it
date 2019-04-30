@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446960"
 ---
 # <a name="ribbon-overview"></a>Panoramica della barra multifunzione
   La barra multifunzione è un modo per organizzare i comandi correlati in modo che siano più semplici da trovare. I comandi vengono visualizzati come controlli della barra multifunzione. I controlli sono organizzati in *gruppi* lungo una striscia orizzontale nella parte superiore di una finestra dell'applicazione. I gruppi correlati sono organizzati in schede.
@@ -49,7 +49,7 @@ ms.locfileid: "60040146"
 - Aggiunta di gruppi personalizzati a una scheda personalizzata o incorporata
 
   > [!NOTE]
-  >  Una scheda incorporata o il gruppo è uno già esistente nella barra multifunzione di un'applicazione Microsoft Office. Ad esempio, il **dati** scheda è una scheda incorporata in Excel. Il **connessioni** è un gruppo predefinito sulle **dati** scheda.
+  > Una scheda incorporata o il gruppo è uno già esistente nella barra multifunzione di un'applicazione Microsoft Office. Ad esempio, il **dati** scheda è una scheda incorporata in Excel. Il **connessioni** è un gruppo predefinito sulle **dati** scheda.
 
 - Aggiunta di controlli personalizzati a un gruppo personalizzato.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040146"
 - Creazione di barre multifunzione per Outlook *Inspectors*. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Un controllo rappresenta una finestra che viene aperta quando gli utenti eseguono determinate attività, ad esempio la creazione di un messaggio di posta elettronica.
+    > Un controllo rappresenta una finestra che viene aperta quando gli utenti eseguono determinate attività, ad esempio la creazione di un messaggio di posta elettronica.
 
 - Selezionare la barra multifunzione da visualizzare in fase di esecuzione.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040146"
  Per selezionare una barra multifunzione da visualizzare in fase di esecuzione, eseguire l'override di `CreateRibbonExtensibilityObject` metodo nella `ThisAddin`, `ThisWorkbook`, o `ThisDocument` classe del progetto e restituire la barra multifunzione che si desidera visualizzare. L'esempio seguente controlla il valore di un campo denominato `myCondition` e restituisce la barra multifunzione appropriata.
 
 > [!NOTE]
->  La sintassi usata in questo esempio restituisce una barra multifunzione che è stata creata utilizzando il **sulla barra multifunzione (finestra di progettazione visiva)** elemento. La sintassi per la restituzione di una barra multifunzione che viene creata usando un **sulla barra multifunzione (XML)** elemento è leggermente diverso. Per altre informazioni sulla restituzione di un **sulla barra multifunzione (XML)** elemento, vedere [XML della barra multifunzione](../vsto/ribbon-xml.md).
+> La sintassi usata in questo esempio restituisce una barra multifunzione che è stata creata utilizzando il **sulla barra multifunzione (finestra di progettazione visiva)** elemento. La sintassi per la restituzione di una barra multifunzione che viene creata usando un **sulla barra multifunzione (XML)** elemento è leggermente diverso. Per altre informazioni sulla restituzione di un **sulla barra multifunzione (XML)** elemento, vedere [XML della barra multifunzione](../vsto/ribbon-xml.md).
 
  Aggiungere il codice seguente:
 

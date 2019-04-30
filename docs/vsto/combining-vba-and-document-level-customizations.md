@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d28efe175bb5bf3e5088918375f580d8076cff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447159"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinazione di VBA e le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.
@@ -69,7 +69,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ```
 
 > [!NOTE]
->  Per informazioni sull'utilizzo di global `missing` variabile al posto di parametri facoltativi in Visual c#, vedere [scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
+> Per informazioni sull'utilizzo di global `missing` variabile al posto di parametri facoltativi in Visual c#, vedere [scrivere il codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>Chiamare il codice nelle personalizzazioni a livello di documento da VBA
  È possibile configurare un progetto a livello di documento per Word o Excel in modo che il codice Visual Basic, Applications Edition (VBA) del documento sia in grado di chiamare il codice nell'assembly di personalizzazione. Questa operazione è utile negli scenari seguenti:
@@ -81,7 +81,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Gli strumenti di sviluppo per Office in Visual Studio forniscono una funzionalità simile per i componenti aggiuntivi VSTO. Se si sviluppa un componente aggiuntivo VSTO, è possibile chiamare il codice nel componente aggiuntivo VSTO da altre soluzioni Microsoft Office. Per altre informazioni, vedere [chiamare il codice nei componenti aggiuntivi VSTO da altre soluzioni Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).
 
 > [!NOTE]
->  Questa funzionalità non può essere usata nei progetti Modello di Word, ma solo nei progetti Documento di Word, Cartella di lavoro di Excel o Modello di Excel.
+> Questa funzionalità non può essere usata nei progetti Modello di Word, ma solo nei progetti Documento di Word, Cartella di lavoro di Excel o Modello di Excel.
 
 ## <a name="requirements"></a>Requisiti
  Per consentire al codice VBA di eseguire chiamate nell'assembly di personalizzazione, il progetto deve soddisfare i requisiti seguenti:
@@ -120,7 +120,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   Le proprietà **EnableVbaCallers** e **ReferenceAssemblyFromVbaProject** sono disponibili nella finestra **Proprietà** solo in fase di progettazione; non possono essere usate in fase di esecuzione. Per visualizzare le proprietà, aprire la finestra di progettazione per un elemento host in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni sulle attività specifiche eseguite da Visual Studio quando si impostano queste proprietà, vedere [attività eseguite dalle proprietà degli elementi host](#PropertyTasks).
 
 > [!NOTE]
->  Se la cartella di lavoro o il documento non contiene già il codice VBA o se il codice VBA del documento non è considerato attendibile per l'esecuzione, si riceve un messaggio di errore quando si imposta la proprietà **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** su **True**. Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
+> Se la cartella di lavoro o il documento non contiene già il codice VBA o se il codice VBA del documento non è considerato attendibile per l'esecuzione, si riceve un messaggio di errore quando si imposta la proprietà **EnableVbaCallers** o **ReferenceAssemblyFromVbaProject** su **True**. Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
 
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Usare i membri nel codice VBA di eseguire chiamate nell'assembly di personalizzazione
  Dopo avere configurato il progetto per consentire al codice VBA di eseguire chiamate nell'assembly di personalizzazione, in Visual Studio vengono aggiunti i membri seguenti al progetto VBA nel documento:
@@ -132,7 +132,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   È possibile usare la proprietà `CallVSTOAssembly` o il metodo `GetManagedClass` per accedere ai membri pubblici della classe esposta al codice VBA nel progetto.
 
 > [!NOTE]
->  Durante lo sviluppo e la distribuzione della soluzione esistono alcune copie diverse del documento in cui è possibile aggiungere il codice VBA. Per altre informazioni, vedere [linee guida per l'aggiunta di VBA di codice al documento](#Guidelines).
+> Durante lo sviluppo e la distribuzione della soluzione esistono alcune copie diverse del documento in cui è possibile aggiungere il codice VBA. Per altre informazioni, vedere [linee guida per l'aggiunta di VBA di codice al documento](#Guidelines).
 
 ### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Usare la proprietà CallVSTOAssembly in un progetto Visual Basic
  Usare la proprietà `CallVSTOAssembly` per accedere ai membri pubblici aggiunti alla classe di elementi host. Ad esempio, la macro VBA seguente chiama un metodo denominato `MyVSTOMethod` , definito nella classe `Sheet1` in un progetto di cartella di lavoro di Excel.
@@ -189,7 +189,7 @@ GetManagedClass(pdispInteropObject Object) As Object
  Non è possibile aggiungere il codice VBA al documento mentre è aperto nella finestra di progettazione. Prima è necessario chiudere il documento nella finestra di progettazione e quindi aprire direttamente il documento in Word o Excel.
 
 > [!CAUTION]
->  Se si aggiunge codice VBA in esecuzione quando il documento è aperto, in rari casi può accadere che tale codice danneggi il documento o ne impedisca l'apertura nella finestra di progettazione.
+> Se si aggiunge codice VBA in esecuzione quando il documento è aperto, in rari casi può accadere che tale codice danneggi il documento o ne impedisca l'apertura nella finestra di progettazione.
 
 ### <a name="in-the-publish-or-installation-folder"></a>Nella cartella di pubblicazione o di installazione
  In alcuni casi potrebbe essere utile aggiungere il codice VBA al documento nella cartella di pubblicazione o di installazione. Ad esempio, è possibile scegliere questa opzione se il codice VBA è scritto e testato da uno sviluppatore diverso in un computer in cui non è installato Visual Studio.
@@ -220,7 +220,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 5. Viene rimosso il metodo **GetAutomationObject** dalla classe di elementi host.
 
    > [!NOTE]
-   >  In Visual Studio la proprietà **ReferenceAssemblyFromVbaProject** non viene impostata automaticamente di nuovo su **False**. È possibile impostare questa proprietà manualmente su **False** usando la finestra **Proprietà** .
+   > In Visual Studio la proprietà **ReferenceAssemblyFromVbaProject** non viene impostata automaticamente di nuovo su **False**. È possibile impostare questa proprietà manualmente su **False** usando la finestra **Proprietà** .
 
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject
  Quando la proprietà **ReferenceAssemblyFromVbaProject** di qualsiasi elemento host in un progetto di Visual Basic o Visual C# viene impostata su **True**, in Visual Studio vengono eseguite le attività seguenti:
