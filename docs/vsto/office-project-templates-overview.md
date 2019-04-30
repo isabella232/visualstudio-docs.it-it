@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438769"
 ---
 # <a name="office-project-templates-overview"></a>Cenni preliminari sui modelli di progetto di Office
   Gli strumenti di sviluppo di applicazioni per Microsoft Office in Visual Studio includono modelli di progetto per la creazione dei seguenti tipi di soluzioni Office:
@@ -77,7 +77,7 @@ ms.locfileid: "60054573"
   I modelli di progetto relativi al modello di Word e al modello di Excel si comportano in modo identico ai modelli di progetto relativi al documento di Word e alla cartella di lavoro di Excel. Tuttavia, i modelli di progetto relativi al modello di Word e al modello di Excel semplificano la creazione, da parte dell'utente, di nuove copie del documento o della cartella di lavoro locale del modello personalizzato nella soluzione. Le funzionalità nella soluzione sono disponibili dal nuovo documento che l'utente crea dal modello.
 
 > [!NOTE]
->  Non è possibile usare come componenti aggiuntivi VSTO globali i modelli di Word che fanno riferimento a estensioni di codice gestito. L'assembly non viene chiamato se il modello viene caricato dalla directory di avvio di Word. Per altre informazioni, vedere [limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)](#Limitations)
+> Non è possibile usare come componenti aggiuntivi VSTO globali i modelli di Word che fanno riferimento a estensioni di codice gestito. L'assembly non viene chiamato se il modello viene caricato dalla directory di avvio di Word. Per altre informazioni, vedere [limitazioni dei modelli globali e dei componenti aggiuntivi di Excel (file xla)](#Limitations)
 
  Per informazioni introduttive su questi tipi di progetto, vedere i seguenti argomenti:
 

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20076e4f8cc05ad971a1cbe710c95f444b80938b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386883"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilizzo delle risorse tridimensionali nel gioco o nell'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Questo articolo spiega come usare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] p
 3. In **Proprietà di configurazione** scegliere **Generale**, quindi nella sezione **Generale** della griglia delle proprietà impostare la proprietà **Tipo di elemento** sul tipo di elemento della pipeline di contenuti appropriato. Ad esempio, per un file di immagine o trama, scegliere **Image Content Pipeline**(Pipeline di contenuti immagine).  
   
    > [!IMPORTANT]
-   >  Per impostazione predefinita, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.  
+   > Per impostazione predefinita, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presuppone che sia necessario suddividere in categorie molti tipi di file di immagine mediante il tipo di elemento **Immagine** integrato in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È quindi necessario modificare la proprietà **Tipo di elemento** di ogni immagine che deve essere elaborata dalla pipeline di contenuti immagine. Per altri tipi di file di origine della pipeline di contenuti per i modelli 3D e la grafica visual shader, viene usato il **Tipo di elemento** corretto per impostazione predefinita.  
   
 4. Fare clic sul pulsante **OK** .  
   
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Titolo|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|  
-|[Procedura: Esportare una trama con alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|  
-|[Procedura: Esportare una trama da usare con Direct2D o App JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|  
+|[Procedura: esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|  
+|[Procedura: esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|  
+|[Procedura: esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|  
 |[Working with 3-D Assets for Games and Apps](../designers/working-with-3-d-assets-for-games-and-apps.md) (Uso di risorse 3D per giochi e app)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|  
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|

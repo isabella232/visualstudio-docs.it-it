@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bc91ec6cd91cdd0785580d57782ae57ccee1839
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25e19aff472547f2d151d5d252bc98a1c4fb3c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420597"
 ---
 # <a name="handle-specialized-deployment"></a>Gestione della distribuzione specializzata
 Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, ad esempio, supporta una distribuzione per consentire a un progetto di aggiornare un server Web. Analogamente, un **Smart Device** progetto supporta una distribuzione per copiare delle applicazioni al dispositivo di destinazione. Sottotipi di progetto possono fornire il comportamento della distribuzione specializzata implementando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfaccia. Questa interfaccia definisce un set completo di operazioni di distribuzione:
@@ -287,7 +287,7 @@ Una distribuzione è un'operazione facoltativa per i progetti. Un progetto Web, 
     ```
 
 > [!NOTE]
->  Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più esaustivo in [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
+> Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più esaustivo in [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445827"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 L'API di immutabilità del SDK di modellazione di Visual Studio Visualization consente a un programma per bloccare o parte di un modello di linguaggio specifico di dominio (DSL) in modo che è possibile leggere ma non modificato. Questa opzione di sola lettura, ad esempio, potrebbe essere usata in modo che un utente può chiedere i colleghi per aggiungere annotazioni e rivedere un modello DSL ma è possibile impedire loro di modificare l'originale.
@@ -20,7 +20,7 @@ L'API di immutabilità del SDK di modellazione di Visual Studio Visualization co
  Inoltre, l'autore di un linguaggio DSL, è possibile definire un *criteri blocco.* Un criterio di blocco definisce stabilisce quali blocchi sono consentite, non consentito o obbligatorio. Ad esempio, quando si pubblica un linguaggio DSL, è possibile incoraggiare gli sviluppatori di terze parti per estendere la soluzione con i nuovi comandi. Ma è anche possibile usare un criterio di blocco per impedire che modifica lo stato di sola lettura di parti specificate del modello.
 
 > [!NOTE]
->  Un criterio di blocco può essere aggirato mediante l'uso della reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offrono sicurezza avanzata.
+> Un criterio di blocco può essere aggirato mediante l'uso della reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offrono sicurezza avanzata.
 
  Altre informazioni ed esempi sono disponibili in Visual Studio [Visualization and Modeling SDK](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) sito Web.
 

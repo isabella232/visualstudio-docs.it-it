@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441836"
 ---
 # <a name="design-and-create-office-solutions"></a>Progettare e creare soluzioni Office
 
-Visual Studio fornisce modelli di progetto che è possibile utilizzare per creare diversi tipi di soluzioni Office. In questa sezione della documentazione vengono descritti i modelli di progetto e viene fornito materiale sussidiario sulla creazione di progetti di Office. Per informazioni su come implementare le personalizzazioni dell'interfaccia utente e del codice dopo aver creato il progetto, vedere [soluzioni Office sviluppare](../vsto/developing-office-solutions.md).
+Visual Studio fornisce modelli di progetto che è possibile utilizzare per creare diversi tipi di soluzioni Office. In questa sezione della documentazione vengono descritti i modelli di progetto e vengono fornite informazioni aggiuntive sulla creazione di progetti di Office. Per informazioni su come implementare le personalizzazioni dell'interfaccia utente e del codice dopo aver creato il progetto, vedere [soluzioni Office sviluppare](../vsto/developing-office-solutions.md).
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -54,7 +54,7 @@ Visual Studio fornisce modelli di progetto che è possibile utilizzare per crear
   Se Visual Studio modifica .NET Framework di destinazione per il progetto e si usa ClickOnce per distribuire la soluzione, assicurarsi di selezionare anche la versione corrispondente di .NET Framework nel **prerequisiti** nella finestra di dialogo. Questa selezione non viene modificata automaticamente quando si modifica il framework di destinazione per il progetto. Per altre informazioni, vedere [Procedura: Installare i prerequisiti nel computer dell'utente finale per l'esecuzione di soluzioni Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> Non è possibile usare .NET Framework 3.5 o versioni precedenti nei progetti Office creati tramite [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. I progetti di Office create mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] richiedono funzionalità che sono state introdotte in [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendere quando l'assembly di interoperabilità primari di Office sono necessari nei computer degli utenti finali
  Per impostazione predefinita, assembly di interoperabilità primari Office (PIA) non è necessario che sia installato nei computer dell'utente finale se il **incorpora tipi di interoperabilità** di ogni riferimento all'assembly di interoperabilità primari Office nel progetto è impostata su **True**, ovvero il valore predefinito. In questo scenario, le informazioni sul tipo per i tipi di assembly di interoperabilità primari utilizzati dalla soluzione vengono incorporate nell'assembly della soluzione quando si compila il progetto. In fase di esecuzione, le informazioni sul tipo incorporato viene utilizzati invece di assembly di interoperabilità primari per effettuare chiamate nel modello a oggetti basato su COM dell'applicazione di Office. Per altre informazioni sul modo in cui i tipi da assembly di interoperabilità primari vengono incorporati nella soluzione, vedere [equivalenza del tipo e tipi di interoperabilità incorporati](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400551"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).
@@ -38,21 +38,21 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Restituisce che il nome non decorato per C++ nome decorato.
+[out] Restituisce il nome non decorato per una C++ nome decorato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il `undecorateOptions` può essere una combinazione dei flag seguenti.
 
 > [!NOTE]
->  I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.
+> I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.
 
-|Flag|Value|Description|
+|Flag|Value|Descrizione|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|

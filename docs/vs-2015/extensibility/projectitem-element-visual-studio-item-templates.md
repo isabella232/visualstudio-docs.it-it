@@ -13,12 +13,12 @@ ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4778603278bf07dc7b0a45544b4835d2ed2cbf8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438352"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elementi di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58969623"
 Specifica un file che viene incluso nel modello di elemento.  
   
 > [!NOTE]
->  Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [ProjectItem (elemento) (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+> Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [ProjectItem (elemento) (Visual Studio Project Templates)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
  \<TemplateContent>  

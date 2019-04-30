@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384020"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procedura: Usare Modifica e continuazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La funzionalità Modifica e continuazione per C# consente di apportare modifiche
  Modifica e continuazione viene richiamata automaticamente quando si apportano modifiche in modalità di interruzione, quindi sceglie una debugger l'esecuzione del comando, ad esempio **continuazione**, **passaggio**, o **Imposta istruzione successiva**, oppure si valuta una funzione in una finestra del debugger.  
   
 > [!NOTE]
->  La funzionalità Modifica e continuazione non è supportata quando si esegue il debug di Compact Framework, codice ottimizzato, codice misto nativo/gestito o codice di integrazione di CLR (Common Language Runtime) in SQL Server. Se si tenta di applicare modifiche al codice in uno di questi scenari, verrà visualizzata una finestra di dialogo che spiega che modifica e continuazione non è supportato.  
+> La funzionalità Modifica e continuazione non è supportata quando si esegue il debug di Compact Framework, codice ottimizzato, codice misto nativo/gestito o codice di integrazione di CLR (Common Language Runtime) in SQL Server. Se si tenta di applicare modifiche al codice in uno di questi scenari, verrà visualizzata una finestra di dialogo che spiega che modifica e continuazione non è supportato.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Per richiamare modifica e continuazione automaticamente  
   

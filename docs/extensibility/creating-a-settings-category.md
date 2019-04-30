@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411328"
 ---
 # <a name="create-a-settings-category"></a>Creare una categoria di impostazioni
 
@@ -46,7 +46,7 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
      Ciò consente di creare le risorse di tale nome la categoria "My Category", l'oggetto "My Settings" e la descrizione della categoria "OptionInteger e OptionFloat".
 
     > [!NOTE]
-    >  Di questi tre, solo il nome della categoria non è nel **Importa / Esporta impostazioni** procedura guidata.
+    > Di questi tre, solo il nome della categoria non è nel **Importa / Esporta impostazioni** procedura guidata.
 
 3. Nelle *MyToolsOptionsPackage.cs*, aggiungere un `float` proprietà denominata `OptionFloat` per il `OptionPageGrid` classe, come illustrato nell'esempio seguente.
 
@@ -76,7 +76,7 @@ Per avviare questa procedura dettagliata, è necessario completare prima la prim
     ```
 
     > [!NOTE]
-    >  Il `OptionPageGrid` categoria denominata "My Category" ora è costituita da due proprietà, `OptionInteger` e `OptionFloat`.
+    > Il `OptionPageGrid` categoria denominata "My Category" ora è costituita da due proprietà, `OptionInteger` e `OptionFloat`.
 
 4. Aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> per il `MyToolsOptionsPackage` classe e assegnargli CategoryName "My Category", assegnargli ObjectName "My Settings" e impostare isToolsOptionPage su true. Impostare il categoryResourceID, objectNameResourceID e DescriptionResourceID alla risorsa di stringa corrispondente che ID creato in precedenza.
 

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439655"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procedura dettagliata: Trovare una perdita di memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 2. Scegli **JavaScript** nel riquadro sinistro, quindi scegli **Windows**, **Windows 8**, **Universale** o **App di Windows Phone**.  
   
     > [!IMPORTANT]
-    >  I risultati dell'utilizzo della memoria illustrati in questo argomento vengono testati su un'applicazione Windows 8.  
+    > I risultati dell'utilizzo della memoria illustrati in questo argomento vengono testati su un'applicazione Windows 8.  
   
 3. Scegli il modello di progetto **Applicazione vuota** nel riquadro centrale.  
   
@@ -55,7 +55,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     ```  
   
     > [!IMPORTANT]
-    >  Se usi un modello di app universale Windows 8.1, dovrai aggiornare il codice HTML e CSS nei progetti .Windows e .WindowsPhone.  
+    > Se usi un modello di app universale Windows 8.1, dovrai aggiornare il codice HTML e CSS nei progetti .Windows e .WindowsPhone.  
   
 6. Apri default.css e aggiungi il codice CSS seguente:  
   
@@ -137,7 +137,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 1. Sulla barra degli strumenti **Debug** , nell'elenco **Avvia debug** , scegli la destinazione di debug per il progetto aggiornato: uno degli emulatori Windows Phone o **Simulatore**.  
   
    > [!TIP]
-   >  Per un'app di Windows Store, puoi anche scegliere **Computer locale** o **Computer remoto** in questo elenco. L'emulatore o il simulatore può essere posizionato accanto a Visual Studio per poter passare agevolmente tra l'app in esecuzione e JavaScript Memory Analyzer. Per altre informazioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md) ed [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Per un'app di Windows Store, puoi anche scegliere **Computer locale** o **Computer remoto** in questo elenco. L'emulatore o il simulatore può essere posizionato accanto a Visual Studio per poter passare agevolmente tra l'app in esecuzione e JavaScript Memory Analyzer. Per altre informazioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md) ed [Eseguire app di Windows Store in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Scegliere **Profiler prestazioni** dal menu **Debug**.  
   
@@ -152,7 +152,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     Quando scegli il pulsante, il codice di gestione dell'evento in default.js non funziona, cosa che si tradurrà in una perdita di memoria. Lo userai per scopi diagnostici.  
   
    > [!TIP]
-   >  La ripetizione dello scenario che desideri testare per una perdita di memoria ti consente di filtrare più facilmente le informazioni non interessanti, ad esempio oggetti aggiunti all'heap durante l'inizializzazione dell'app o il caricamento di una pagina.  
+   > La ripetizione dello scenario che desideri testare per una perdita di memoria ti consente di filtrare più facilmente le informazioni non interessanti, ad esempio oggetti aggiunti all'heap durante l'inizializzazione dell'app o il caricamento di una pagina.  
   
 5. Dall'app in esecuzione passa a Visual Studio (ALT+TAB).  
   
@@ -171,14 +171,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     ![Snapshot iniziale e snapshot 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  L'Emulatore Windows Phone non mostra una schermata dell'app quando è stato scattato lo snapshot.  
+   > L'Emulatore Windows Phone non mostra una schermata dell'app quando è stato scattato lo snapshot.  
   
 9. Passa all'app e scegli nuovamente il pulsante **Perdita memoria** .  
   
 10. Passa a Visual Studio e scegli **Crea snapshot heap** per la terza volta.  
   
     > [!TIP]
-    >  Creando un terzo snapshot in questo flusso di lavoro, puoi escludere le modifiche non associate a perdite di memoria dello snapshot della linea di base rispetto al secondo snapshot. Ad esempio, è possibile che vi siano modifiche previste, come l'aggiornamento delle intestazioni e dei piè di pagina di una pagina, che generano modifica nell'utilizzo della memoria, ma che potrebbero non essere correlate alle perdite di memoria.  
+    > Creando un terzo snapshot in questo flusso di lavoro, puoi escludere le modifiche non associate a perdite di memoria dello snapshot della linea di base rispetto al secondo snapshot. Ad esempio, è possibile che vi siano modifiche previste, come l'aggiornamento delle intestazioni e dei piè di pagina di una pagina, che generano modifica nell'utilizzo della memoria, ma che potrebbero non essere correlate alle perdite di memoria.  
   
      Questa illustrazione mostra lo snapshot n.2 e lo snapshot n.3.  
   
@@ -191,7 +191,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     - Le dimensioni dell'heap (indicate dalla freccia su rossa a sinistra) sono aumentate di parecchi KB rispetto allo snapshot n.1.  
   
       > [!IMPORTANT]
-      >  I valori di utilizzo esatti della memoria per le dimensioni dell'heap dipendono dalla destinazione di debug.  
+      > I valori di utilizzo esatti della memoria per le dimensioni dell'heap dipendono dalla destinazione di debug.  
   
     - Il numero di oggetti sull'heap (indicato dalla freccia su rossa a destra) è aumentato rispetto allo snapshot n.1. È stato aggiunto un oggetto (+1) e non è stato rimosso alcun oggetto (-0).  
   
@@ -222,7 +222,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
       Una conoscenza dell'app consente a questo punto: Scegliere il **perdita memoria** pulsante dovrebbe eliminare un elemento DIV e aggiungere un elemento, in modo che il codice non sembra funzionare correttamente (vale a dire le perdite di memoria). La sezione successiva spiega come risolvere questo problema.  
   
     > [!TIP]
-    >  Talvolta, individuare un oggetto relativamente all'oggetto `Global` può aiutare a identificare quell'oggetto. A questo scopo, apri il menu di scelta rapida per l'identificatore e scegli **Mostra in visualizzazione radice**.  
+    > Talvolta, individuare un oggetto relativamente all'oggetto `Global` può aiutare a identificare quell'oggetto. A questo scopo, apri il menu di scelta rapida per l'identificatore e scegli **Mostra in visualizzazione radice**.  
   
 ## <a name="FixingMemory"></a> Correzione del problema di memoria  
   

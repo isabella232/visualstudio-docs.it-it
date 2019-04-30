@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388637"
 ---
 # <a name="hlsl-shader-debugger"></a>Debugger dello shader HLS
 Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a comprendere come opera il codice dello shader HLSL in condizioni di funzionamento reali dell'app.
@@ -55,7 +55,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
 2. Sotto il titolo della fase della pipeline scegliere **Avvia debug**, visualizzato con una piccola freccia verde.
 
     > [!NOTE]
-    >  Questo punto di ingresso nel debugger HLSL esegue il debug solo del primo thread dello shader per la fase corrispondente, ovvero il primo vertice o pixel elaborato. È possibile usare Cronologia pixel grafica per accedere ad altri thread di queste fasi dello shader.
+    > Questo punto di ingresso nel debugger HLSL esegue il debug solo del primo thread dello shader per la fase corrispondente, ovvero il primo vertice o pixel elaborato. È possibile usare Cronologia pixel grafica per accedere ad altri thread di queste fasi dello shader.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Per avviare il debugger HLSL dalla finestra Cronologia pixel grafica
 
@@ -68,7 +68,7 @@ Il debugger HLSL in Analizzatore grafica di Visual Studio Visual Studio aiuta a 
     A destra dello shader desiderato scegliere **Avvia debug**, visualizzato con una piccola freccia verde.
 
    > [!NOTE]
-   >  Questo punto di ingresso nel debugger HLSL esegue il debug del thread del pixel shader che corrisponde alla chiamata di disegno, alla primitiva e al pixel desiderati oppure dei thread del vertex shader i cui risultati sono interpolati dalla chiamata di disegno, dalla primitiva e dal pixel desiderato. Nel caso dei vertex shader, è possibile migliorare ulteriormente il punto di ingresso in un vertice specifico espandendo i dettagli del vertex shader.
+   > Questo punto di ingresso nel debugger HLSL esegue il debug del thread del pixel shader che corrisponde alla chiamata di disegno, alla primitiva e al pixel desiderati oppure dei thread del vertex shader i cui risultati sono interpolati dalla chiamata di disegno, dalla primitiva e dal pixel desiderato. Nel caso dei vertex shader, è possibile migliorare ulteriormente il punto di ingresso in un vertice specifico espandendo i dettagli del vertex shader.
 
    Per esempi su come usare il Debugger HLSL per eseguire il debug degli errori dello shader, vedere [esempi](graphics-diagnostics-examples.md) o le procedure dettagliate un collegamento nella sezione Vedere anche.
 

@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438950"
 ---
 # <a name="options-and-options-pages"></a>Opzioni e pagine di opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Facendo clic su **opzioni** nel **Tools** si aprirà il menu il **opzioni** nell
 - <xref:System.ComponentModel.DescriptionAttribute> Determina la descrizione dell'opzione.  
   
   > [!NOTE]
-  >  Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti nel [esempio di progetto gestito](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti nel [esempio di progetto gestito](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Si consideri il frammento di codice riportato di seguito.  
   
@@ -86,4 +86,4 @@ Facendo clic su **opzioni** nel **Tools** si aprirà il menu il **opzioni** nell
  Il percorso del Registro di sistema di proprietà di automazione è determinato dalla combinazione <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, la parola, AutomationProperties e le opzioni categoria e il nome di pagina. Ad esempio, se la pagina di opzioni dispone della categoria di My Category, il nome My pagina della griglia e il <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, quindi la proprietà di automazione con la chiave del Registro di sistema, HKEY_LOCAL_MACHINE\SOFTWARE\ Pagina della griglia Category\My Microsoft\VisualStudio\8.0Exp\AutomationProperties\My.  
   
 > [!NOTE]
->  Il nome canonico, pagina della griglia Category.My personali, è il valore della sottochiave del nome di questa chiave.
+> Il nome canonico, pagina della griglia Category.My personali, è il valore della sottochiave del nome di questa chiave.

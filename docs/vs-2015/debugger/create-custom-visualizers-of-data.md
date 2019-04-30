@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434903"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Creazione di visualizzatori personalizzati di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ I visualizzatori sono componenti del [!INCLUDE[vs_current_short](../includes/vs-
  Il debugger di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] include sei visualizzatori standard. Questi sono testo, HTML, XML e JSON visualizzatori, ognuno dei quali utilizzati per oggetti stringa; il Visualizzatore dell'albero di WPF, per la visualizzazione delle proprietà di una struttura visiva oggetto WPF; e il Visualizzatore di dataset, che funziona per gli oggetti DataSet, DataView e DataTable. In futuro è possibile che Microsoft Corporation renda disponibili ulteriori visualizzatori per il download, mentre altri potranno essere disponibili tramite terze parti e dalla community. È inoltre possibile scrivere visualizzatori personalizzati e installarli nel debugger di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 > [!NOTE]
->  Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
+> Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
   
  Nel debugger i visualizzatori sono rappresentati da un'icona a forma di lente di ingrandimento. Quando viene visualizzata l'icona di lente di ingrandimento in una **suggerimento dati**, nella finestra delle variabili del debugger o nel **controllo immediato** nella finestra di dialogo è possibile fare clic sulla lente di ingrandimento per selezionare un visualizzatore appropriato per il tipo di dati dell'oggetto corrispondente.  
   
  I visualizzatori non sono supportati in Compact Framework.  
   
 > [!NOTE]
->  Per i visualizzatori del debugger sono richiesti maggiori privilegi rispetto a quelli consentiti da un'applicazione parzialmente attendibile. Di conseguenza, i visualizzatori non vengono caricati in caso di interruzione in codice con attendibilità parziale. Per eseguire il debug tramite un visualizzatore, è necessario eseguire il codice con attendibilità totale.  
+> Per i visualizzatori del debugger sono richiesti maggiori privilegi rispetto a quelli consentiti da un'applicazione parzialmente attendibile. Di conseguenza, i visualizzatori non vengono caricati in caso di interruzione in codice con attendibilità parziale. Per eseguire il debug tramite un visualizzatore, è necessario eseguire il codice con attendibilità totale.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Scrivere un visualizzatore](../debugger/how-to-write-a-visualizer.md)  

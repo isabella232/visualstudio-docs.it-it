@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438780"
 ---
 # <a name="listobject-control"></a>ListObject (controllo)
   Il controllo <xref:Microsoft.Office.Tools.Excel.ListObject> è un elenco che espone gli eventi e può essere associato a dati. Quando si aggiunge un elenco a un foglio di lavoro, Visual Studio crea un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> su cui è possibile programmare direttamente senza dover passare attraverso il modello a oggetti di Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073632"
  Nei progetti a livello di documento è possibile aggiungere i controlli <xref:Microsoft.Office.Tools.Excel.ListObject> a un foglio di lavoro in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO, è possibile aggiungere <xref:Microsoft.Office.Tools.Excel.ListObject> controlli ai fogli di lavoro solo in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli ListObject a fogli di lavoro](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Per impostazione predefinita, gli oggetti elenco creati dinamicamente non vengono salvati in modo permanente nel foglio di lavoro come controlli host quando il foglio di lavoro è chiuso. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Associare dati al controllo
  Un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> supporta un data binding semplice e complesso. Il <xref:Microsoft.Office.Tools.Excel.ListObject> controllo può essere associato a un'origine dati usando il <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> e <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> delle proprietà in fase di progettazione o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> metodo in fase di esecuzione.
 
 > [!NOTE]
->  L'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> viene aggiornato automaticamente quando è associato a un'origine dati, ad esempio un <xref:System.Data.DataTable>, che genera eventi quando i dati vengono modificati. Se si associa l'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> a un'origine dati che non genera eventi quando i dati vengono modificati, è necessario chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> o <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> per aggiornare l'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> L'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> viene aggiornato automaticamente quando è associato a un'origine dati, ad esempio un <xref:System.Data.DataTable>, che genera eventi quando i dati vengono modificati. Se si associa l'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> a un'origine dati che non genera eventi quando i dati vengono modificati, è necessario chiamare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> o <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> per aggiornare l'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  Quando si aggiunge un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> a una cella di un foglio di lavoro mappando un elemento ripetuto dello schema a tale cella, Visual Studio mappa automaticamente l'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> al set di dati generato. L'oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> , invece, non viene associato automaticamente ai dati. È possibile eseguire i passaggi per associare il <xref:Microsoft.Office.Tools.Excel.ListObject> al set di dati in fase di progettazione o in fase di esecuzione in un progetto a livello di documento. È possibile associare a livello di codice il <xref:Microsoft.Office.Tools.Excel.ListObject> al set di dati in fase di esecuzione in un componente aggiuntivo VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073632"
  È possibile riempire rapidamente un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associando <xref:Microsoft.Office.Tools.Excel.ListObject> a un'origine dati. Se si modificano i dati in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject>associato a dati, le modifiche vengono apportate automaticamente anche all'origine dati. Se si vuole riempire un oggetto <xref:Microsoft.Office.Tools.Excel.ListObject> e quindi consentire all'utente di modificare i dati in <xref:Microsoft.Office.Tools.Excel.ListObject> senza modificare l'origine dati, è possibile usare il metodo <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> per scollegare <xref:Microsoft.Office.Tools.Excel.ListObject> dall'origine dati. Per altre informazioni, vedere [Procedura: Riempire controlli ListObject con dati](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  Il data binding non è supportato nei controlli <xref:Microsoft.Office.Tools.Excel.ListObject> sovrapposti.
+> Il data binding non è supportato nei controlli <xref:Microsoft.Office.Tools.Excel.ListObject> sovrapposti.
 
 ### <a name="improve-performance-in-listobject-controls"></a>Migliorare le prestazioni nei controlli ListObject
  La lettura di un file XML in un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato a dati tende a essere lenta se si associa prima il controllo e quindi si chiama <xref:System.Data.DataSet.ReadXml%2A> per riempire il set di dati. Per migliorare le prestazioni, chiamare <xref:System.Data.DataSet.ReadXml%2A> prima di associare il controllo.

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416851"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Procedura: Personalizzare diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60065831"
  È possibile, ad esempio, regolare il livello di zoom di un intero diagramma classi, modificare il modo in cui singoli membri di tipo vengono raggruppati e ordinati, nascondere o visualizzare relazioni e spostare singoli tipi o set di tipi in qualsiasi punto del diagramma.  
   
 > [!NOTE]
->  La personalizzazione della modalità di visualizzazione delle forme nel diagramma non modifica il codice sottostante per i tipi rappresentati nel diagramma.  
+> La personalizzazione della modalità di visualizzazione delle forme nel diagramma non modifica il codice sottostante per i tipi rappresentati nel diagramma.  
   
  Le sezioni contenenti membri di tipo, ad esempio la sezione Proprietà in una classe, vengono definite raggruppamenti. È possibile nascondere o visualizzare singoli raggruppamenti e membri di tipo.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "60065831"
      Specificare un particolare valore di zoom. È possibile usare l'elenco a discesa **Zoom** o digitare un livello di zoom valido (l'intervallo valido è compreso tra 10% e 400%).  
   
     > [!NOTE]
-    >  La modifica del livello di zoom non influisce sulla scala dello stampato del diagramma classi.  
+    > La modifica del livello di zoom non influisce sulla scala dello stampato del diagramma classi.  
   
 ## <a name="CustomizeGroupingSorting"></a> Personalizzare il raggruppamento e l'ordinamento dei membri di tipo  
   

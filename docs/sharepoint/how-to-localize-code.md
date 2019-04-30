@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443086"
 ---
 # <a name="how-to-localize-code"></a>Procedura: Localizzare il codice
   Codice non localizzato Usa i valori di stringa hardcoded. Per localizzare le stringhe di codice, sostituirli con chiamate a <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, ovvero un metodo che fa riferimento a risorse localizzate.
@@ -32,7 +32,7 @@ ms.locfileid: "60066286"
      Scegliere il **File di risorse** modello.
 
     > [!NOTE]
-    >  Assicurarsi di aggiungere il file di risorse a un elemento del progetto SharePoint in modo che la proprietà del tipo di distribuzione è disponibile. Questa proprietà è necessaria più avanti in questa procedura.
+    > Assicurarsi di aggiungere il file di risorse a un elemento del progetto SharePoint in modo che la proprietà del tipo di distribuzione è disponibile. Questa proprietà è necessaria più avanti in questa procedura.
 
 2. Assegnare un nome di propria scelta con i file di risorse di lingua predefinito un *resx* estensione, ad esempio *MyAppResources*.
 

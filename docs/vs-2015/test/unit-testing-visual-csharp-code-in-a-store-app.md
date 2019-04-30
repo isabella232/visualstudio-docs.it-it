@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445938"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Esecuzione di unit test di codice Visual C# in un'app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
  In questo argomento si creerà inoltre una soluzione di Visual Studio e progetti distinti per gli unit test e la DLL da testare. È anche possibile includere gli unit test direttamente nel progetto DLL oppure creare soluzioni separate per gli unit test e la DLL.  
   
 > [!NOTE]
->  Community di Visual Studio, Enterprise e Professional includono funzionalità aggiuntive per gli unit test.  
+> Community di Visual Studio, Enterprise e Professional includono funzionalità aggiuntive per gli unit test.  
 > 
 > - Usare un framework di unit test open source o di terze parti che abbia creato un adattatore come componente aggiuntivo per Esplora test Microsoft. È anche possibile analizzare e visualizzare le informazioni di code coverage per i test.  
 >   - Eseguire i test dopo ogni compilazione.  
@@ -211,7 +211,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
     ```  
   
     > [!TIP]
-    >  È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
+    > È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
     >   
     >  Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.  
   
@@ -222,7 +222,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
      ![RangeTest non riuscito](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Subito dopo averlo scritto, verifica che ogni test abbia esito negativo. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
+    > Subito dopo averlo scritto, verifica che ogni test abbia esito negativo. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
   
 4. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Modificare la funzione `SqareRoot` in **Rooter.cs** nel modo seguente:  
   
@@ -247,7 +247,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
      Ora tutti e tre i test vengono superati.  
   
 > [!TIP]
->  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
+> Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Debug di un test non superato  
   
@@ -332,7 +332,7 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
 2. Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto una regressione.  
   
 > [!TIP]
->  Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
+> Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
   
  **Eseguire il refactoring del codice di test per eliminare il codice duplicato.**  
   
@@ -365,4 +365,4 @@ Questo argomento descrive come creare unit test per una classe Visual C# in un'a
 2. Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto un errore.  
   
 > [!NOTE]
->  Per aggiungere un metodo di supporto a una classe di test, non aggiungere l'attributo `[TestMethod]` al metodo. Esplora test non registra il metodo da eseguire.
+> Per aggiungere un metodo di supporto a una classe di test, non aggiungere l'attributo `[TestMethod]` al metodo. Esplora test non registra il metodo da eseguire.

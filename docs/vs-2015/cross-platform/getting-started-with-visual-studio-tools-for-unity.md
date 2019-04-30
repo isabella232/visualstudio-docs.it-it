@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443046"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introduzione a Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105032"
 Questa sezione descrive come installare Visual Studio Tools per Unity e configurare un progetto Unity per l'uso con Visual Studio.  
   
 > [!IMPORTANT]
->  Unity 5.2 aggiunge il supporto incorporato per Visual Studio Tools per Unity 2.1, che semplifica la configurazione dei progetti. Per usufruirne, è necessario disporre di Unity 5.2.0 o versioni successive in Windows e Visual Studio Tools per Unity 2.1 o versioni successive.  
+> Unity 5.2 aggiunge il supporto incorporato per Visual Studio Tools per Unity 2.1, che semplifica la configurazione dei progetti. Per usufruirne, è necessario disporre di Unity 5.2.0 o versioni successive in Windows e Visual Studio Tools per Unity 2.1 o versioni successive.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  Per usare Visual Studio Tools per Unity, è necessario quanto segue:  
@@ -55,7 +55,7 @@ Questa sezione descrive come installare Visual Studio Tools per Unity e configur
      [Scaricare Visual Studio 2010 Tools per Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Le versioni Express di Visual Studio non supportano le estensioni come Visual Studio Tools per Unity. Visual Studio Community è una versione gratuita di Visual Studio che supporta Visual Studio Tools per Unity e altre estensioni. Visual Studio Community costituisce una soluzione migliore rispetto alla versione Express per la maggior parte degli utenti.  
+> Le versioni Express di Visual Studio non supportano le estensioni come Visual Studio Tools per Unity. Visual Studio Community è una versione gratuita di Visual Studio che supporta Visual Studio Tools per Unity e altre estensioni. Visual Studio Community costituisce una soluzione migliore rispetto alla versione Express per la maggior parte degli utenti.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Creazione del primo progetto Unity con Visual Studio Tools per Unity  
  Una volta installati i prerequisiti, è possibile creare il primo progetto Unity con Visual Studio La configurazione di un progetto Unity varia a seconda delle versioni di Unity e Visual Studio Tools per Unity installate. Seguire la procedura corrispondente alla versione di Unity e Visual Studio Tools per Unity installata.  

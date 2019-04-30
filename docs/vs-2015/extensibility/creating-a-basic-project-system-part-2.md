@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435547"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Creazione di un sistema di progetto di base, parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ La prima procedura dettagliata in questa serie [creazione di un sistema di proge
 - Creare una pagina delle proprietà progetto.  
   
 > [!NOTE]
->  I passaggi descritti in questa procedura dettagliata si basano su un progetto c#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.  
+> I passaggi descritti in questa procedura dettagliata si basano su un progetto c#. Tuttavia, fatta eccezione per le specifiche, ad esempio estensioni di file e il codice, è possibile utilizzare gli stessi passaggi per un progetto Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Creazione di un modello di Visual Studio  
  [Creazione di un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) viene illustrato come creare un modello di progetto di base e aggiungerlo al sistema del progetto. Viene inoltre illustrato come registrare questo modello con Visual Studio usando il <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> attributo, che scrive il percorso completo della cartella \Templates\Projects\SimpleProject\ nel Registro di sistema.  
@@ -100,7 +100,7 @@ La prima procedura dettagliata in questa serie [creazione di un sistema di proge
 - Il \<ProjectType > nomi di elementi di tipo di progetto nel **nuovo progetto** nella finestra di dialogo. Questo nome sostituisce il parametro name del progetto dell'attributo ProvideProjectFactory.  
   
   > [!NOTE]
-  >  Il \<ProjectType > elemento deve corrispondere il `LanguageVsTemplate` argomento del `ProvideProjectFactory` attributo nel file SimpleProjectPackage.cs.  
+  > Il \<ProjectType > elemento deve corrispondere il `LanguageVsTemplate` argomento del `ProvideProjectFactory` attributo nel file SimpleProjectPackage.cs.  
   
   Il \<TemplateContent > sezione vengono descritti questi file vengono generati quando viene creato un nuovo progetto:  
   
@@ -115,7 +115,7 @@ La prima procedura dettagliata in questa serie [creazione di un sistema di proge
   Per altre informazioni sugli elementi presenti nello schema del modello di Visual Studio, vedere la [riferimenti allo Schema di Visual Studio modello](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Se un progetto ha più di un modello di Visual Studio, ogni modello è in una cartella separata. Ogni file in tale cartella deve contenere il **Build Action** impostata su **ZipProject**.  
+> Se un progetto ha più di un modello di Visual Studio, ogni modello è in una cartella separata. Ogni file in tale cartella deve contenere il **Build Action** impostata su **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Aggiunta di un File con estensione vsct minimo  
  Visual Studio deve essere eseguito in modalità di installazione per riconoscere un modello di Visual Studio nuovo o modificato. La modalità di installazione richiede un file con estensione vsct sia presente. Pertanto, è necessario aggiungere un file con estensione vsct minimo al progetto.  

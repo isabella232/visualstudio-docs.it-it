@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422648"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definizione di un criterio di blocco per creare segmenti di sola lettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ L'API di immutabilità del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualiz
  Inoltre, l'autore di un linguaggio DSL, è possibile definire un *criteri blocco.* Un criterio di blocco definisce stabilisce quali blocchi sono consentite, non consentito o obbligatorio. Ad esempio, quando si pubblica un linguaggio DSL, è possibile incoraggiare gli sviluppatori di terze parti per estendere la soluzione con i nuovi comandi. Ma è anche possibile usare un criterio di blocco per impedire che modifica lo stato di sola lettura di parti specificate del modello.  
   
 > [!NOTE]
->  Un criterio di blocco può essere aggirato mediante l'uso della reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offrono sicurezza avanzata.  
+> Un criterio di blocco può essere aggirato mediante l'uso della reflection. Fornisce un limite chiaro per gli sviluppatori di terze parti, ma non offrono sicurezza avanzata.  
   
  Altre informazioni ed esempi sono disponibili nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) sito Web.  
   

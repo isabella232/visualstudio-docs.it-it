@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437152"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: Gestire ritorno a capo automatico nell'Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60088041"
  Per altre informazioni, vedere [Procedura: Impostare le opzioni generali dell'Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Routine  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60088041"
 4. Selezionare l'opzione **Mostra icone per ritorno a capo automatico** se si preferisce visualizzare un indicatore freccia di ritorno a capo nei punti in cui una riga lunga va a capo. Deselezionare questa opzione per evitare di visualizzare questo indicatore.  
   
     > [!NOTE]
-    >  Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.  
+    > Questi indicatori promemoria non vengono aggiunti al codice ma vengono solo visualizzati.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing the Editor](../../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445552"
 ---
 # <a name="custom-task-panes"></a>Riquadri attività personalizzati
   I riquadri attività sono pannelli dell'interfaccia utente in genere ancorati a un lato di una finestra in un'applicazione di Microsoft Office. I riquadri attività personalizzati consentono di creare un riquadro attività basato sulle proprie esigenze specifiche e offrono agli utenti un'interfaccia utente nota per accedere alle funzionalità della soluzione. L'interfaccia può, ad esempio, contenere controlli che consentono di eseguire codice per la modifica dei documenti o per la visualizzazione dei dati di un'origine dati.
@@ -38,7 +38,7 @@ ms.locfileid: "60106202"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Un riquadro attività personalizzato è diverso da un riquadro azioni. Il riquadro azioni fa parte delle personalizzazioni a livello di documento per Microsoft Office Word e Microsoft Office Excel. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
+> Un riquadro attività personalizzato è diverso da un riquadro azioni. Il riquadro azioni fa parte delle personalizzazioni a livello di documento per Microsoft Office Word e Microsoft Office Excel. Per altre informazioni, vedere [Cenni preliminari sul riquadro azioni](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Vantaggi dei riquadri attività personalizzati
  I riquadri attività personalizzati consentono di integrare le funzionalità in un'interfaccia utente familiare. È possibile creare rapidamente un riquadro attività personalizzato usando gli strumenti di Visual Studio.

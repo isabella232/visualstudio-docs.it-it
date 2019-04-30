@@ -1,40 +1,43 @@
 ---
 title: UsingNameSpace | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - UsingNamespace symbol tag
 ms.assetid: e8e1beb5-7cb9-43b4-9ff4-760d5f91ea2d
-author: mikejo5000
+caps.latest.revision: 20
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: ff7b834c80b80b3b8d61e4f7aea23a0219786d2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1524348bf94af681b5761ca42cb4fac911f359f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399344"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
-Alcuni simboli potrebbe essere definite dallo spazio dei nomi e successivamente verrebbe identificate da un `SymTagUsingNameSpace` tag.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
+Alcuni simboli potrebbe essere definite dallo spazio dei nomi e successivamente verrebbe identificate da un `SymTagUsingNameSpace` tag.  
+  
 > [!NOTE]
->  Il tag del simbolo UsingNamespace viene visualizzato solo nel codice gestito.
-
-## <a name="properties"></a>Proprietà
- Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.
-
-|Proprietà|Tipo di dati|Description|
-|--------------|---------------|-----------------|
-|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simboli per l'inclusione compilando, blocco o una funzione.|
-|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo lessicale padre.|
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome spazio dei nomi.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagNameSpace` (uno dei [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valori).|
-
-## <a name="see-also"></a>Vedere anche
-- [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+> Il tag del simbolo UsingNamespace viene visualizzato solo nel codice gestito.  
+  
+## <a name="properties"></a>Proprietà  
+ Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
+  
+|Proprietà|Tipo di dati|Descrizione|  
+|--------------|---------------|-----------------|  
+|[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Simboli per l'inclusione compilando, blocco o una funzione.|  
+|[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID del simbolo lessicale padre.|  
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome spazio dei nomi.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID di indice del simbolo.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Restituisce `SymTagNameSpace` (uno dei [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valori).|  
+  
+## <a name="see-also"></a>Vedere anche  
+ [Gerarchia lessicale dei tipi di simboli](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

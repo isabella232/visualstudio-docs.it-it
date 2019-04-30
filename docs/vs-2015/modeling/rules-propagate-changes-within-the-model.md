@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442933"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  Il codice di una regola deve modificare lo stato solo degli elementi all'interno di Store; vale a dire, la regola deve modificare solo gli elementi del modello, relazioni, forme, connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi Store. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> Il codice di una regola deve modificare lo stato solo degli elementi all'interno di Store; vale a dire, la regola deve modificare solo gli elementi del modello, relazioni, forme, connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi Store. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>Per definire una regola  
 

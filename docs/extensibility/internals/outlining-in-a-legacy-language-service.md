@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422855"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 La struttura rende possibile comprimere un programma complesso panoramica in o in una struttura. Ad esempio, in c# tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Inoltre, classi e strutture possono essere compressi per mostrare solo i nomi delle classi e strutture. All'interno di un singolo metodo, è possibile comprimere una logica complessa in modo da mostrare il flusso generale che mostra solo la prima riga di istruzioni, ad esempio `foreach`, `if`, e `while`.
@@ -25,7 +25,7 @@ La struttura rende possibile comprimere un programma complesso panoramica in o i
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: Struttura](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
 
 ## <a name="enabling-support-for-outlining"></a>Abilitazione del supporto per la struttura
  Il `AutoOutlining` voce del Registro di sistema è impostata su 1 per abilitare la struttura automatica. La struttura automatica consente di impostare un'analisi dell'intera origine quando un file viene caricato o modificato allo scopo di identificare le aree nascoste e Mostra le icone della struttura. La struttura può anche essere controllata anche manualmente dall'utente.

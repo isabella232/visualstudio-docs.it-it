@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99619efa5181fbcf299e99cde60b8879731c0c74
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b11ef172cdd8fb4b1c72b72b43198ad7ad8f74e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417350"
 ---
 # <a name="editor-imports"></a>Importazioni dell'editor
 È possibile importare un numero di servizi di editor, le factory e Broker che forniscono l'estensione con diversi tipi di accesso per l'editor principale. Ad esempio, è possibile importare il <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> per fornire un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> per un determinato tipo di contenuto. (Questo strumento di spostamento consente che eseguire diversi tipi di ricerche in un buffer di testo).
@@ -23,7 +23,7 @@ ms.locfileid: "56715635"
  Per usare l'importazione in un editor, importato come un campo o proprietà di una classe che consente di esportare una parte del componente Managed Extensibility Framework.
 
 > [!NOTE]
->  Per altre informazioni su Managed Extensibility Framework, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Per altre informazioni su Managed Extensibility Framework, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ## <a name="import-syntax"></a>Sintassi di importazione
  Nell'esempio seguente illustra come importare l'editor del servizio factory opzioni.
@@ -73,7 +73,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |------------|--------------|
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relazione tra le estensioni di file e <xref:Microsoft.VisualStudio.Utilities.IContentType> oggetti.|
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Raccolta di oggetti <xref:Microsoft.VisualStudio.Utilities.IContentType>.|
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|Oggetti <xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>.|
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Oggetti.|
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Molti oggetti adattatore dell'editor:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Un <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> oggetto per una visualizzazione di testo specificato.|
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|Oggetto <xref:Microsoft.VisualStudio.Text.ITextBuffer>.|

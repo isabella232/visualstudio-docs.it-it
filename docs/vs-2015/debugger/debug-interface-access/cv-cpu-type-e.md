@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a5e58c8a7228332eb435cd3a85f5bf3e8026e8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6821b6a6504fd82e0e6180149120b71bc2daf47c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444482"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58967561"
 Specifica il processore di destinazione.  
   
 > [!NOTE]
->  Il processore è identificato nell'elemento enumerazione dopo il `CV_CFL_*` prefisso.  
+> Il processore è identificato nell'elemento enumerazione dopo il `CV_CFL_*` prefisso.  
   
 ## <a name="syntax"></a>Sintassi  
   

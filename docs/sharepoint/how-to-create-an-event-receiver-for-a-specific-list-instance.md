@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408546"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procedura: Creare un ricevitore di eventi per un'istanza di elenco specifico
   Un ricevitore di eventi di istanza di elenco risponde agli eventi che si verificano in qualsiasi istanza di una definizione di elenco. Anche se il modello del ricevitore di eventi non abilita l'impostazione della destinazione di un'istanza di elenco specifico, è possibile modificare un ricevitore di eventi con ambito di una definizione di elenco per rispondere agli eventi in un'istanza di elenco specifico.
@@ -43,7 +43,7 @@ ms.locfileid: "60094346"
 6. Nel **quale tipo di ricevitore di eventi da?** casella di riepilogo **eventi elementi elenco**.
 
     > [!NOTE]
-    >  È anche possibile selezionare qualsiasi altro tipo di ricevitore di eventi che definisce l'ambito di una definizione di elenco, ad esempio, **elenco eventi di posta elettronica** oppure **elenco eventi di flusso di lavoro**.
+    > È anche possibile selezionare qualsiasi altro tipo di ricevitore di eventi che definisce l'ambito di una definizione di elenco, ad esempio, **elenco eventi di posta elettronica** oppure **elenco eventi di flusso di lavoro**.
 
 7. Nel **selezionare l'elemento deve essere l'origine dell'evento?** casella di riepilogo **annunci**.
 

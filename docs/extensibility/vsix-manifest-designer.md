@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411115"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.
@@ -29,7 +29,7 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
  Per aprire la **progettazione del manifesto VSIX**, individuare una *vsixmanifest* del file in **Esplora**e aprire il file. Se il file non contiene un XML valido, verrà aperta la finestra di progettazione manifesto.
 
 > [!NOTE]
->  Il *vsixmanifest* file di output ha come destinazione *Extension. vsixmanifest* quando il pacchetto viene compilato.
+> Il *vsixmanifest* file di output ha come destinazione *Extension. vsixmanifest* quando il pacchetto viene compilato.
 
 ## <a name="uielement-list"></a>Elenco UIElement
  Il **progettazione del manifesto VSIX** contiene quattro sezioni che corrispondono a questi elementi di primo livello dello schema:

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445537"
 ---
 # <a name="workbook-host-item"></a>Elemento host Workbook
   L'elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> è un tipo che estende il tipo <xref:Microsoft.Office.Interop.Excel.Workbook> dall'assembly di interoperabilità primario per Excel. L'elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> fornisce non solo tutte le proprietà, i metodi e gli eventi di un oggetto <xref:Microsoft.Office.Interop.Excel.Workbook> , ma anche funzionalità aggiuntive.
@@ -49,7 +49,7 @@ ms.locfileid: "56625259"
  L'elemento host <xref:Microsoft.Office.Tools.Excel.Workbook> non funge da contenitore per i controlli host. Pertanto, alla cartella di lavoro non è possibile aggiungere controlli visibili, ma si possono inserire componenti, ad esempio <xref:System.Data.DataSet>, in modo che possano essere condivisi da tutte le cartelle di lavoro. In un progetto a livello di documento i componenti disponibili per la cartella di lavoro sono reperibili nelle schede **Componente** , **Dati** e **Tutti i Windows Form** della **Casella degli strumenti**.
 
 > [!NOTE]
->  Gli strumenti di sviluppo di Office in Visual Studio non supportano le cartelle di lavoro condivise.
+> Gli strumenti di sviluppo di Office in Visual Studio non supportano le cartelle di lavoro condivise.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Comprendere elementi host workbook nei progetti di componente aggiuntivo VSTO
  Nei progetti di componente aggiuntivo VSTO, è possibile generare un <xref:Microsoft.Office.Tools.Excel.Workbook> elemento host in fase di esecuzione per qualsiasi cartella di lavoro aperta in Excel. Per generare un elemento host <xref:Microsoft.Office.Tools.Excel.Workbook>, usare il metodo `GetVstoObject`. Per altre informazioni, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).

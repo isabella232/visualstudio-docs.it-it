@@ -10,12 +10,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bf0e34c76406b054ea2d27434f749b676b0b30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439794"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione dei servizi di linguaggio e dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +115,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Per associare un tipo di contenuto con un'estensione di file, usare <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.  
   
 > [!NOTE]
->  In Visual Studio, estensioni di file registrate mediante il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> a un pacchetto del servizio di linguaggio. Il <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa un tipo di contenuto MEF con un'estensione che è stata registrata in questo modo.  
+> In Visual Studio, estensioni di file registrate mediante il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> a un pacchetto del servizio di linguaggio. Il <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa un tipo di contenuto MEF con un'estensione che è stata registrata in questo modo.  
   
  Per esportare l'estensione alla definizione del tipo di contenuto, è necessario includere gli attributi seguenti:  
   
@@ -278,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associata a un'area di controllo.  
   
   > [!NOTE]
-  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
+  > Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associati con aree che possono essere espansi o compressi nella struttura.  
   
@@ -324,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Per applicare la definizione del formato di un tag, fare riferimento al nome che è impostato nell'attributo nome della classe (non il nome visualizzato).  
   
 > [!NOTE]
->  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
+> Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Estensione di aree di controllo  
  Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo che viene visualizzato in una visualizzazione di testo o al testo della visualizzazione stessa. È possibile definire la propria area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement>.  
@@ -516,7 +516,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Inoltre, è necessario implementare un provider dello stesso tipo:  
   
@@ -529,7 +529,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  È necessario esportare il provider con gli attributi seguenti:  
   
@@ -551,11 +551,11 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Per altre informazioni sull'implementazione di origini di IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Procedura dettagliata: Visualizzazione della Guida di firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Procedura dettagliata: visualizzazione della funzionalità di supporto alla firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Procedura dettagliata: Visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Procedura dettagliata: visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)  
   
 ### <a name="implementing-an-intellisense-controller"></a>Implementazione di un Controller IntelliSense  
  Per personalizzare un controller, è necessario implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> interfaccia. Inoltre, è necessario implementare un provider di controller insieme gli attributi seguenti:  
@@ -578,4 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Per altre informazioni sull'uso di controller IntelliSense, vedere le procedure dettagliate seguenti:  
   
- [Procedura dettagliata: Visualizzazione di descrizioni comandi informazioni rapide](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Procedura dettagliata: visualizzazione delle descrizioni comando di InformazioniBase](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

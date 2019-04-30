@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446759"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: Creazione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. In Visual Studio, creare un progetto Libreria di classi in C# o in Visual Basic denominato CustomDP.  
 
     > [!NOTE]
-    >  Se si desidera installare il processore di direttiva su più di un computer, è meglio utilizzare un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) e includere un file .pkgdef nell'estensione. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).  
+    > Se si desidera installare il processore di direttiva su più di un computer, è meglio utilizzare un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) e includere un file .pkgdef nell'estensione. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Aggiungere riferimenti a questi assembly:  
 
@@ -619,7 +619,7 @@ End Property
  Prima di chiamare una direttiva da un modello di testo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], è necessario aggiungere una chiave del Registro di sistema per il processore di direttiva.  
 
 > [!NOTE]
->  Se si desidera installare il processore di direttiva su più di un computer, è meglio definire un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) che includa un file .pkgdef insieme all'assembly. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).  
+> Se si desidera installare il processore di direttiva su più di un computer, è meglio definire un progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension (VSIX) che includa un file .pkgdef insieme all'assembly. Per altre informazioni, vedere [distribuzione di un processore di direttiva personalizzato](../modeling/deploying-a-custom-directive-processor.md).  
 
  Nel Registro di sistema esistono delle chiavi per i processori di direttiva nella posizione seguente:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  In questa sezione, si aggiunge una chiave per il processore di direttiva personalizzato al Registro di sistema nella stessa posizione.  
 
 > [!CAUTION]
->  Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti presenti nel computer.  
+> Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti presenti nel computer.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Per aggiungere una chiave del Registro di sistema per il processore di direttiva  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Aggiungere una nuova chiave denominata CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Si tratta del nome che si utilizzerà nel campo Processore delle direttive personalizzate. Questo nome non deve necessariamente essere uguale al nome della direttiva, al nome della classe del processore di direttiva o allo spazio dei nomi del processore di direttiva.  
+   > Si tratta del nome che si utilizzerà nel campo Processore delle direttive personalizzate. Questo nome non deve necessariamente essere uguale al nome della direttiva, al nome della classe del processore di direttiva o allo spazio dei nomi del processore di direttiva.  
 
 4. Aggiungere un nuovo valore stringa denominato Class che dispone di un valore CustomDP.CustomDirectiveProcessor per il nome della nuova stringa.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Creare un file di testo denominato `DocFile.xml` usando qualsiasi editor di testo (ad esempio Blocco note).  
 
     > [!NOTE]
-    >  È possibile creare questo file in qualsiasi percorso, ad esempio C:\Test\DocFile.xml.  
+    > È possibile creare questo file in qualsiasi percorso, ad esempio C:\Test\DocFile.xml.  
 
 2. Aggiungere quanto segue al file di testo:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Modificare il contenuto di TestDP.tt nel testo seguente.  
 
     > [!NOTE]
-    >  Assicurarsi di sostituire la stringa <`YOUR PATH>` con il percorso del file DocFile. Xml.  
+    > Assicurarsi di sostituire la stringa <`YOUR PATH>` con il percorso del file DocFile. Xml.  
 
      Il linguaggio del modello di testo non deve necessariamente essere uguale al linguaggio del processore di direttiva.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  In questo esempio, il valore del parametro `Processor` è `CustomDirectiveProcessor`. Il valore del parametro `Processor` deve corrispondere al nome della chiave del Registro di sistema per il processore.  
+    > In questo esempio, il valore del parametro `Processor` è `CustomDirectiveProcessor`. Il valore del parametro `Processor` deve corrispondere al nome della chiave del Registro di sistema per il processore.  
 
 5. Nel menu **File** fare clic su **Salva tutto**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Sostituire il codice in TestDP.tt con il seguente. Il codice HTML è evidenziato. Assicurarsi di sostituire la stringa `YOUR PATH` con il percorso del file DocFile. Xml.  
 
     > [!NOTE]
-    >  Apri altri \<# e chiusura #> tag separano il codice dell'istruzione dai tag HTML.  
+    > Apri altri \<# e chiusura #> tag separano il codice dell'istruzione dai tag HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

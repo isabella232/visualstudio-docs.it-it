@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7d57643661edec90f12a54a2482b59d83bbb3c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd4e61960616245d459140e351386ae7b55adc22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441706"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procedura: Modificare i tipi di carattere e colori nell'Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60040950"
 - Le opzioni **Primo piano elemento**, **Sfondo elemento** e **Grassetto** possono essere impostate per ogni tipo di elemento di testo. Ad esempio, se si modificano i colori e si seleziona **Grassetto** per **Commento** e **Segnalibri**, gli altri tipi di elementi di testo non verranno modificati.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-change-the-default-font-face-size-and-colors"></a>Per modificare il tipo di carattere predefinito, le dimensioni e i colori  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60040950"
 4. Selezionare l'elemento appropriato in **Elementi di visualizzazione**, quindi modificare le opzioni **Primo piano elemento** e **Sfondo elemento**.  
   
     > [!TIP]
-    >  Fare clic su **Utilizza le impostazioni predefinite** per reimpostare le impostazioni predefinite.  
+    > Fare clic su **Utilizza le impostazioni predefinite** per reimpostare le impostazioni predefinite.  
   
 5. Fare clic su **OK**.  
   

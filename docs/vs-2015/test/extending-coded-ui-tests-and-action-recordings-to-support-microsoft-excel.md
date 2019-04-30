@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416462"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Il framework di test per i test codificati dell'interfaccia utente e le registra
   È possibile scaricare l'esempio da questo [post di blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
->  L'esempio è concepito per Microsoft Excel 2010. Potrebbe funzionare con altre versioni di Microsoft Excel, ma non è attualmente supportato.  
+> L'esempio è concepito per Microsoft Excel 2010. Potrebbe funzionare con altre versioni di Microsoft Excel, ma non è attualmente supportato.  
   
 ## <a name="details-about-the-sample"></a>Dettagli sull'esempio  
  Nelle sezioni seguenti vengono fornite informazioni sull'esempio e sulla relativa struttura.  
   
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Componente aggiuntivo di Microsoft Excel: ExcelCodedUIAddInHelper  
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Componente aggiuntivo di Microsoft Excel: ExcelCodedUIAddinHelper  
  Questo progetto include un componente aggiuntivo che viene eseguito nel processo di Excel. Per una breve panoramica del progetto del componente aggiuntivo, vedere [Componente aggiuntivo di Excel di esempio per i test codificati dell'interfaccia utente](../test/sample-excel-add-in-for-coded-ui-testing.md).  
   
- Per altre informazioni, vedere [Procedura dettagliata: Creazione del primo componente aggiuntivo VSTO per Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Per altre informazioni, vedere [Procedura dettagliata: Creazione del primo aggiuntivo VSTO per Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicazione interfaccia utente di Excel: ExcelUIcommunicationHelper  
  Questo progetto include l'interfaccia `IExcelUICommunication` e le classi di informazioni che vengono usate per lo scambio dei dati tra il framework dei test codificati dell'interfaccia utente ed Excel. Per altre informazioni, vedere [Interfaccia Excel Communicator di esempio](../test/sample-excel-communicator-interface.md).  

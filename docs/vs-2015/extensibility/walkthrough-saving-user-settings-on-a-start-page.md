@@ -8,12 +8,12 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 510d0c2144b2640f720bea004cdc44026f749310
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8976d329f6303d60cc00609bc9ed9471456c1b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408752"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procedura dettagliata: Salvataggio delle impostazioni utente in una pagina iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ ms.locfileid: "60111155"
 ## <a name="prerequisites"></a>Prerequisiti  
   
 > [!NOTE]
->  Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Per seguire questa procedura dettagliata, è necessario installare Visual Studio SDK. Per altre informazioni, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
 >   
->  È possibile scaricare il modello di progetto di pagina iniziale usando **gestore estensioni del**.  
+> È possibile scaricare il modello di progetto di pagina iniziale usando **gestore estensioni del**.  
   
 ## <a name="setting-up-the-project"></a>Impostazione del progetto  
   

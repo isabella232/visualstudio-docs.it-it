@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443988"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Altre informazioni sullo sviluppo per dispositivi mobili con Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097388"
 In questo argomento viene fatto riferimento a materiale introduttivo che fornisce informazioni sullo sviluppo di app per dispositivi mobili multipiattaforma con Xamarin. Se Visual Studio e Xamarin non sono ancora stati installati, avviare innanzitutto il processo [Setup and install](../cross-platform/setup-and-install.md) , quindi tornare qui per consultare queste risorse mentre i programmi di installazione sono in esecuzione.  
   
 > [!NOTE]
->  Se non diversamente specificato, inizialmente è consigliabile leggere solo le pagine collegate direttamente a questo argomento e non le pagine secondarie. Se il processo di installazione è ancora in esecuzione dopo aver completato questo elenco, è possibile tornare indietro ed esplorare argomenti aggiuntivi.  
+> Se non diversamente specificato, inizialmente è consigliabile leggere solo le pagine collegate direttamente a questo argomento e non le pagine secondarie. Se il processo di installazione è ancora in esecuzione dopo aver completato questo elenco, è possibile tornare indietro ed esplorare argomenti aggiuntivi.  
 >   
->  È anche possibile leggere gli argomenti contrassegnati come "Concetti di base" e tornare agli argomenti "Approfondimento" più avanti.  
+> È anche possibile leggere gli argomenti contrassegnati come "Concetti di base" e tornare agli argomenti "Approfondimento" più avanti.  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Concetti di base: Introduzione a Xamarin  
  *10-20 minuti*  

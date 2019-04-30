@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443128"
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
 Oggetto *proprietà del dominio* è una funzionalità di un elemento del modello che può contenere un valore. Ad esempio, la classe di dominio `Person` potrebbe includere le proprietà `Name` e `BirthDate`. Nella definizione DSL, le proprietà di dominio sono elencate nella casella della classe di dominio sul diagramma e sotto la classe di dominio in DSL Explorer. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  Il termine"proprietà" ha due utilizzi. Oggetto *proprietà del dominio* è una funzionalità che si definisce una classe di dominio. Al contrario, dispongono di molti elementi di un linguaggio DSL *le proprietà*, in cui sono elencati il **proprietà** finestra nella definizione DSL. Ad esempio, ogni proprietà di dominio dispone di un set di proprietà descritte in questo argomento.
+> Il termine"proprietà" ha due utilizzi. Oggetto *proprietà del dominio* è una funzionalità che si definisce una classe di dominio. Al contrario, dispongono di molti elementi di un linguaggio DSL *le proprietà*, in cui sono elencati il **proprietà** finestra nella definizione DSL. Ad esempio, ogni proprietà di dominio dispone di un set di proprietà descritte in questo argomento.
 
  In fase di esecuzione, quando un utente crea un'istanza della classe di dominio, i valori delle proprietà di dominio sono visibili nella finestra Proprietà e possono essere visualizzati sulle forme.
 

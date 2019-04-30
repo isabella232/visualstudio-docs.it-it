@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437089"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Creazione e utilizzo di criteri di archiviazione di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Quando si usa Team Foundation Version Control (TFVC), è possibile creare un cri
  I criteri vengono soddisfatti quando la compilazione locale è aggiornata e l'analisi del codice è stato eseguito nel file di origine più recente. Come minimo, le regole di analisi codice abilitate nel progetto di codice devono contenere le stesse regole di quelli definiti nel check-in Criteri di progetto team. Le regole che sono state specificate come errori nelle impostazioni del progetto Team devono essere specificate anche come errori nel progetto di codice  
   
 > [!IMPORTANT]
->  Non è possibile applicare criteri di controllo dell'analisi del codice per progetti di siti web. Possono essere applicati a web application projects.  
+> Non è possibile applicare criteri di controllo dell'analisi del codice per progetti di siti web. Possono essere applicati a web application projects.  
   
  Per creare codice criteri di archiviazione al posto dell'analisi utilizzando le impostazioni di progetto Team di [!INCLUDE[esprscc](../includes/esprscc-md.md)]. I criteri di archiviazione sono specificati e applicati per un progetto team, ma esecuzioni dell'analisi del codice sono configurate ed eseguite per singoli progetti di codice nei computer di sviluppo locale. In questa sezione viene descritto come specificare criteri analisi codice controllo-per un progetto team e come implementare criteri analisi codice personalizzati per codice gestito.  
   

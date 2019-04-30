@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444178"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procedura: Impostare punti di interruzione in flussi di lavoro (legacy)
 In questo argomento viene descritto come impostare punti di interruzione nelle applicazioni [!INCLUDE[wf](../includes/wf-md.md)] usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando l'applicazione [!INCLUDE[wf2](../includes/wf2-md.md)] deve fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ In questo argomento viene descritto come impostare punti di interruzione nelle a
      È inoltre possibile usare questa opzione per impostare un nuovo punto di interruzione durante l'esecuzione del debug, quando il debugger si arresta in corrispondenza di un punto di interruzione.  
   
     > [!NOTE]
-    >  L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.  
+    > L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Per impostare un punto di interruzione usando l'opzione Nuovo punto di interruzione nel menu Debug  
   
@@ -52,7 +52,7 @@ In questo argomento viene descritto come impostare punti di interruzione nelle a
 3. Specificare il nome di un'attività nella **funzione** casella di testo usando questa sintassi: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Facoltativamente, anziché usare il nome dell'attività nel **funzione** casella di testo, è possibile impostare un punto di interruzione specificando il percorso assoluto dell'attività flusso di lavoro. Ad esempio, si supponga di avere una soluzione del flusso di lavoro denominata **WorkflowConsoleApplication1** e un flusso di lavoro nella soluzione denominato **Workflow1** che usa un'attività denominata **Delay1**. È possibile usare il nome dell'attività **Delay1** oppure specificare il percorso come **delay1:workflowconsoleapplication1. Workflow1** o **delay1:workflowconsoleapplication1. Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Facoltativamente, anziché usare il nome dell'attività nel **funzione** casella di testo, è possibile impostare un punto di interruzione specificando il percorso assoluto dell'attività flusso di lavoro. Ad esempio, si supponga di avere una soluzione del flusso di lavoro denominata **WorkflowConsoleApplication1** e un flusso di lavoro nella soluzione denominato **Workflow1** che usa un'attività denominata **Delay1**. È possibile usare il nome dell'attività **Delay1** oppure specificare il percorso come **delay1:workflowconsoleapplication1. Workflow1** o **delay1:workflowconsoleapplication1. Workflow1: { 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Selezionare il **usare IntelliSense** casella di controllo per verificare il nome della funzione.  
   

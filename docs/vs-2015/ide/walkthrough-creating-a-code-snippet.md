@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b23640abec76f04199abe6e64888c641940e7a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388337"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procedura dettagliata: Creazione di un frammento di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60109806"
 Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio usando il pulsante Importa in Gestione frammenti di codice (**Strumenti, Gestione frammenti di codice**).  
   
 > [!TIP]
->  Per informazioni su come scrivere frammenti di codice più facilmente, cercare nel sito Web CodePlex strumenti della community, ad esempio [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
+> Per informazioni su come scrivere frammenti di codice più facilmente, cercare nel sito Web CodePlex strumenti della community, ad esempio [Snippet Editor](http://go.microsoft.com/fwlink/?LinkId=251033).  
   
 ## <a name="snippet-template"></a>Modello di frammento  
  Di seguito è illustrato il modello di frammento di base:  

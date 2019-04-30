@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446123"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guida introduttiva: Eseguire il debug di JavaScript con la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 - [Passaggio a un contesto di esecuzione di script diverso](#Switching)  
   
 > [!TIP]
->  Se la finestra Console JavaScript è chiusa, scegliere **Debug**>**Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
+> Se la finestra Console JavaScript è chiusa, scegliere **Debug**>**Finestre** > **Console JavaScript** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
   
  Usando la finestra Console JavaScript puoi interagire con la tua app senza arrestare e riavviare il debugger. Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md). Per informazioni su altre funzionalità, ad esempio l'uso di DOM Explorer e impostando punti di interruzione, debug JavaScript vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [eseguire il Debug di App in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  La procedura seguente consente di creare un'app `FlipView` e mostra come eseguire il debug interattivo di un errore di codifica JavaScript.  
   
 > [!CAUTION]
->  L'app di esempio è in questo caso un'app di Windows Store. Tuttavia, le funzioni della console descritte in questo articolo si applicano anche alle app create con Visual Studio Tools per Apache Cordova.  
+> L'app di esempio è in questo caso un'app di Windows Store. Tuttavia, le funzioni della console descritte in questo articolo si applicano anche alle app create con Visual Studio Tools per Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Per eseguire il debug di codice JavaScript nell'app FlipView  
   
@@ -182,7 +182,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
      Copiare e incollare il codice nella richiesta di input della console JavaScript.  
   
     > [!TIP]
-    >  Quando si incollano più righe di codice nella richiesta di input della finestra Console JavaScript, questa passa automaticamente alla modalità multiriga. È possibile premere CTRL+ALT+M per attivare e disattivare la modalità multiriga. Per eseguire uno script in modalità multiriga, premere CTRL+INVIO oppure scegliere il simbolo della freccia nell'angolo inferiore destro della finestra. Per altre informazioni, vedi [Modalità a riga singola e modalità multiriga nella finestra Console JavaScript](#SinglelineMultilineMode).  
+    > Quando si incollano più righe di codice nella richiesta di input della finestra Console JavaScript, questa passa automaticamente alla modalità multiriga. È possibile premere CTRL+ALT+M per attivare e disattivare la modalità multiriga. Per eseguire uno script in modalità multiriga, premere CTRL+INVIO oppure scegliere il simbolo della freccia nell'angolo inferiore destro della finestra. Per altre informazioni, vedi [Modalità a riga singola e modalità multiriga nella finestra Console JavaScript](#SinglelineMultilineMode).  
   
 12. Correggi le chiamate di funzione `push` nella richiesta, sostituendo `pages.push` con `Data.items.setAt`. Il codice corretto dovrebbe essere analogo al seguente:  
   
@@ -193,7 +193,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     ```  
   
     > [!TIP]
-    >  Se si desidera usare l'oggetto `pages` anziché `Data.items`, è necessario impostare un punto di interruzione nel codice per mantenere l'oggetto `pages` nell'ambito.  
+    > Se si desidera usare l'oggetto `pages` anziché `Data.items`, è necessario impostare un punto di interruzione nel codice per mantenere l'oggetto `pages` nell'ambito.  
   
 13. Scegliere il simbolo della freccia verde per eseguire lo script.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434045"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Passaggio 4: Aggiungere un gestore dell'evento Click a ogni etichetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Finestra Proprietà con evento Click visualizzato
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  Se si sceglie di copiare e incollare il blocco di codice `label_Click()` anziché immetterlo manualmente, è necessario verificare di sostituire il codice `label_Click()` esistente. In caso contrario, verrà generato un blocco di codice duplicato.  
+    > Se si sceglie di copiare e incollare il blocco di codice `label_Click()` anziché immetterlo manualmente, è necessario verificare di sostituire il codice `label_Click()` esistente. In caso contrario, verrà generato un blocco di codice duplicato.  
   
     > [!NOTE]
-    >  È possibile riconoscere `object sender` all'inizio del gestore eventi, uguale a quello usato in [Esercitazione 2: Creare un Quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md) esercitazione. Poiché eventi Click di diversi controlli etichetta sono stati collegati a un unico metodo del gestore eventi, viene chiamato lo stesso metodo, indipendentemente dall'etichetta scelta dall'utente. Il metodo del gestore eventi deve sapere quale etichetta è stata scelta, per cui usa il nome **sender** per identificare il controllo etichetta. La prima riga del metodo indica al programma che non si tratta di un oggetto generico, bensì di un controllo etichetta e che questo oggetto usa il nome **clickedLabel** per accedere ai metodi e alle proprietà dell'etichetta.  
+    > È possibile riconoscere `object sender` all'inizio del gestore eventi, uguale a quello usato in [Esercitazione 2: Creare un Quiz matematico](../ide/tutorial-2-create-a-timed-math-quiz.md) esercitazione. Poiché eventi Click di diversi controlli etichetta sono stati collegati a un unico metodo del gestore eventi, viene chiamato lo stesso metodo, indipendentemente dall'etichetta scelta dall'utente. Il metodo del gestore eventi deve sapere quale etichetta è stata scelta, per cui usa il nome **sender** per identificare il controllo etichetta. La prima riga del metodo indica al programma che non si tratta di un oggetto generico, bensì di un controllo etichetta e che questo oggetto usa il nome **clickedLabel** per accedere ai metodi e alle proprietà dell'etichetta.  
   
      Questo metodo prima verifica che **clickedLabel** sia stato correttamente convertito (cast) da un oggetto in un controllo etichetta. In caso contrario, il valore sarà `null` (C#) o `Nothing` (Visual Basic) e non è consigliabile eseguire la parte restante di codice nel metodo. Il metodo controlla quindi il colore del testo dell'etichetta scelta tramite la proprietà **ForeColor** dell'etichetta. Se il colore del testo dell'etichetta è nero, significa che l'icona è già stata scelta e il metodo è terminato. Questa è l'azione eseguita dall'istruzione `return`, che indica al programma di arrestare l'esecuzione del metodo. In caso contrario, l'icona non è stata scelta, pertanto il programma cambierà in nero il colore del testo dell'etichetta.  
   

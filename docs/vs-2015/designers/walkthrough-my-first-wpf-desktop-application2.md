@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421142"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procedura dettagliata: Prima applicazione Desktop WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
      Quando si modifica il tag `<Window` in `<NavigationWindow`, Intellisense modifica automaticamente anche il tag di chiusura in `</NavigationWindow>` .  
   
     > [!NOTE]
-    >  Dopo aver modificato il tag, potrebbero essere visualizzati diversi errori se è aperta la finestra **Elenco errori** . Le modifiche che verranno apportate nei passaggi successivi elimineranno gli errori visualizzati.  
+    > Dopo aver modificato il tag, potrebbero essere visualizzati diversi errori se è aperta la finestra **Elenco errori** . Le modifiche che verranno apportate nei passaggi successivi elimineranno gli errori visualizzati.  
   
 3. Scegliere i tag `<Grid>` e `</Grid>` ed eliminarli.  
   
@@ -307,14 +307,14 @@ name = "Introduzione" ></a> questa procedura dettagliata fornisce un'introduzion
      ![Immagine filigrana per la procedura dettagliata](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  In alternativa, è possibile creare una propria immagine e salvarla come `watermark.png`.  
+    > In alternativa, è possibile creare una propria immagine e salvarla come `watermark.png`.  
   
 2. In **Esplora soluzioni**aprire il menu di scelta rapida per il nodo **ExpenseIt** e scegliere **Aggiungi**, **Elemento esistente**.  
   
 3. Nella finestra di dialogo **Aggiungi elemento esistente** trovare l'immagine **watermark.png** appena aggiunta, selezionarla e scegliere il pulsante **Aggiungi** .  
   
     > [!NOTE]
-    >  Potrebbe essere necessario espandere l'elenco **Tipi di file** e scegliere **File di immagine**.  
+    > Potrebbe essere necessario espandere l'elenco **Tipi di file** e scegliere **File di immagine**.  
   
 4. Aprire il file **ExpenseItHome.xaml** e aggiungere il codice XAML seguente subito sopra il tag `</Grid>` per creare un'immagine di sfondo:  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c7cc8a9d1767a289112b18dbfe7c81b9a010bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422789"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuzione di applicazioni ClickOnce per i server di test e di produzione senza riapposizione della firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60066598"
 Questo argomento illustra una nuova funzionalità di ClickOnce introdotta in .NET Framework versione 3.5 che consente la distribuzione di applicazioni ClickOnce dalla più percorsi di rete senza riapposizione della firma o la modifica di ClickOnce manifesti.  
   
 > [!NOTE]
->  Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
  Gli ISV e sviluppatori di terze parti possono acconsentire esplicitamente a questa funzionalità, rendendo più semplice per i clienti aggiornare le applicazioni. Questa funzionalità può essere utilizzata nelle situazioni seguenti:  
   

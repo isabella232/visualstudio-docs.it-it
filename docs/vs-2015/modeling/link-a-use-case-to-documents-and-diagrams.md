@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440976"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Collegare un caso di utilizzo a documenti e diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "60088678"
 3. Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
   
     > [!NOTE]
-    >  Se si desidera fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da '\\\\'), o in un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word alla soluzione, fare doppio clic la soluzione in Esplora soluzioni, scegliere **Add** e quindi fare clic su **elemento esistente**.  
+    > Se si desidera fornire un percorso di file, è consigliabile scegliere un file in un'area di lavoro comune (a partire da '\\\\'), o in un file all'interno della soluzione di Visual Studio. In questo modo, il percorso file resterà valido nel computer di un altro membro del team oppure in caso la soluzione venga spostata. Per aggiungere un documento, ad esempio un documento di Word alla soluzione, fare doppio clic la soluzione in Esplora soluzioni, scegliere **Add** e quindi fare clic su **elemento esistente**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Diagrammi dei casi d'uso UML: Riferimento](../modeling/uml-use-case-diagrams-reference.md)   

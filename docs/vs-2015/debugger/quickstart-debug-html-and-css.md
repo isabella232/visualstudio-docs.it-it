@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446136"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Guida introduttiva: Eseguire il debug di HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  DOM Explorer presenta una visualizzazione della pagina sottoposta a rendering. È possibile usarlo per modificare i valori e vedere immediatamente i risultati. In questo modo è possibile testare le modifiche senza arrestare e riavviare il debugger. Il codice sorgente nel progetto non viene modificato quando si interagisce con la pagina usando questo metodo. Pertanto è possibile apportare le modifiche al codice sorgente quando si trovano le correzioni del codice desiderate.  
   
 > [!TIP]
->  Per evitare di arrestare e riavviare il debugger quando si apportano modifiche al codice sorgente, è possibile aggiornare l'app usando il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti di debug (o premendo F4). Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Per evitare di arrestare e riavviare il debugger quando si apportano modifiche al codice sorgente, è possibile aggiornare l'app usando il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti di debug (o premendo F4). Per altre informazioni, vedi [aggiornare un'applicazione (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
  È possibile usare DOM Explorer per:  
   
@@ -74,12 +74,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   Quando si esegue il debug delle app, è spesso necessario selezionare elementi in DOM Explorer. Quando si seleziona un elemento, i valori visualizzati nelle schede a destra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento selezionato in DOM Explorer. Queste sono le schede: **Stili**, **calcolata**, **Layout**. Le app di Windows Store supportano anche le schede **Eventi** e **Modifiche** . Per altre informazioni sulla selezione di elementi, vedere [Selecting elements](#SelectingElements).  
   
 > [!TIP]
->  Se la finestra DOM Explorer è chiusa, scegliere **Debug**>**Finestre** > **DOM Explorer** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
+> Se la finestra DOM Explorer è chiusa, scegliere **Debug**>**Finestre** > **DOM Explorer** per riaprirla. La finestra viene visualizzata solo durante una sessione di debug di script.  
   
  Nella routine seguente viene illustrato il processo di debug interattivo di un'app usando DOM Explorer. Verrà creata un'app che usa un controllo `FlipView` , quindi verrà eseguito il debug. L'app contiene diversi errori.  
   
 > [!WARNING]
->  L'app di esempio seguente è un'app di Windows Store. Le stesse funzionalità sono supportate per Cordova, ma l'app sarebbe differente.  
+> L'app di esempio seguente è un'app di Windows Store. Le stesse funzionalità sono supportate per Cordova, ma l'app sarebbe differente.  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Per eseguire il debug controllando il DOM attivo  
   
@@ -183,14 +183,14 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 10. Passare a Visual Studio e scegliere la scheda **DOM Explorer** .  
   
     > [!TIP]
-    >  È possibile premere ALT+TAB o F12 per passare da Visual Studio all'app in esecuzione.  
+    > È possibile premere ALT+TAB o F12 per passare da Visual Studio all'app in esecuzione.  
   
 11. Nella finestra DOM Explorer selezionare l'elemento DIV per la sezione che presenta un ID `"fView"`. Usare i tasti di direzione per visualizzare e selezionare l'elemento DIV corretto. Il tasto freccia DESTRA consente di visualizzare i figli di un elemento.  
   
      ![DOM Explorer](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  È anche possibile selezionare l'elemento DIV nell'angolo inferiore sinistro della finestra JavaScript Console digitando `select(fView)` nel >> input prompt dei comandi e premere INVIO.  
+    > È anche possibile selezionare l'elemento DIV nell'angolo inferiore sinistro della finestra JavaScript Console digitando `select(fView)` nel >> input prompt dei comandi e premere INVIO.  
   
      I valori visualizzati nelle schede sul lato destro della finestra di DOM Explorer vengono aggiornati automaticamente per riflettere l'elemento corrente in DOM Explorer.  
   
@@ -209,7 +209,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 15. Selezionare `width: 100px;height: 100px;`, premere CANC e quindi INVIO. Dopo aver premuto INVIO, i nuovi valori vengono immediatamente riflessi nel simulatore o nell'emulatore Windows Phone, anche se non è stata arrestata la sessione di debug.  
   
     > [!IMPORTANT]
-    >  Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** . Per altre informazioni, vedi [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) e [Debug layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
+    > Così come è possibile aggiornare gli attributi nella finestra DOM Explorer, è anche possibile aggiornare i valori visualizzati nelle schede **Stili**, **Calcolata**e **Layout** . Per altre informazioni, vedi [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md) e [Debug layout usando DOM Explorer](../debugger/debug-layout-using-dom-explorer.md).  
   
 16. Passare all'app selezionando il simulatore o l'emulatore Windows Phone oppure usando ALT+TAB.  
   
@@ -281,7 +281,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
   Quando si sceglie di evidenziare elementi, gli elementi su cui si posiziona il puntatore del mouse nel Simulatore vengono evidenziati. I colori per gli elementi evidenziati corrispondono al modello di riquadro visualizzato nella scheda **Layout** di DOM Explorer.  
   
 > [!NOTE]
->  L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.  
+> L'evidenziazione degli elementi al passaggio del mouse è supportata solo in parte nell'emulatore Windows Phone.  
   
  Per un esempio che illustra come selezionare elementi usando il **elemento Select** pulsante, vedere [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   

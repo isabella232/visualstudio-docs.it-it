@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bba1d1b45c47a61f85bf37d4768a8f05ba0c3e87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439784"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Scrittura di codice nell'Editor di testo e del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ L'editor di Visual Studio fornisce diverse funzionalità che semplificano la scr
  I diversi linguaggi di Visual Studio offrono set di funzionalità diversi e, in alcuni casi, le funzionalità si comportano in modo diverso a seconda del linguaggio. Molte di queste differenze sono specificate nelle descrizioni delle funzionalità, ma per altre informazioni è possibile vedere le sezioni su linguaggi specifici di Visual Studio.  
 
 > [!IMPORTANT]
->  L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.  
+> L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.  
 
 ## <a name="editor-features"></a>Funzionalità dell'editor  
 

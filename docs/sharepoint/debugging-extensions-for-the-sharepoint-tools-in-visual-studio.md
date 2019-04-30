@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443516"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Eseguire il debug delle estensioni per gli strumenti di SharePoint in Visual Studio
   È possibile eseguire il debug di estensioni degli strumenti di SharePoint nell'istanza sperimentale o nell'istanza normale di Visual Studio. Se è necessario risolvere i problemi il comportamento di un'estensione, è inoltre possibile modificare i valori del Registro di sistema per visualizzare informazioni aggiuntive sull'errore e per configurare la modalità di esecuzione dei comandi di SharePoint in Visual Studio.
@@ -102,7 +102,7 @@ ms.locfileid: "60094398"
 3. Nel **processi disponibili** casella di riepilogo *vssphost.exe*.
 
     > [!NOTE]
-    >  Se vssphost.exe non viene visualizzato nell'elenco, è necessario avviare il *vssphost4.exe* processi nell'istanza di Visual Studio in cui si esegue l'estensione. In genere, è possibile eseguire un'azione che fa in modo che Visual Studio per connettersi al sito di SharePoint nel computer di sviluppo. Ad esempio, Visual Studio avvia *vssphost4.exe* quando si espande un nodo di connessione del sito (un nodo viene visualizzato un URL del sito) sotto il **connessioni di SharePoint** nodo nel **Esplora Server**  finestra, o quando si aggiungono alcuni elementi di progetto SharePoint, ad esempio **List Instance** oppure **ricevitore di eventi** elementi, a un progetto SharePoint.
+    > Se vssphost.exe non viene visualizzato nell'elenco, è necessario avviare il *vssphost4.exe* processi nell'istanza di Visual Studio in cui si esegue l'estensione. In genere, è possibile eseguire un'azione che fa in modo che Visual Studio per connettersi al sito di SharePoint nel computer di sviluppo. Ad esempio, Visual Studio avvia *vssphost4.exe* quando si espande un nodo di connessione del sito (un nodo viene visualizzato un URL del sito) sotto il **connessioni di SharePoint** nodo nel **Esplora Server**  finestra, o quando si aggiungono alcuni elementi di progetto SharePoint, ad esempio **List Instance** oppure **ricevitore di eventi** elementi, a un progetto SharePoint.
 
 4. Scegliere il **Attach** pulsante.
 

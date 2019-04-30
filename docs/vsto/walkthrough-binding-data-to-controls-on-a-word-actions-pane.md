@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438690"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procedura dettagliata: Associare dati a controlli in un riquadro azioni di Word
   Questa procedura dettagliata viene descritta l'associazione dati a controlli in un riquadro azioni di Word. I controlli mostrano una relazione master/detail tra le tabelle in un database SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "60063608"
 - Visualizzare il riquadro azioni quando si apre l'applicazione.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -78,7 +78,7 @@ ms.locfileid: "60063608"
 1. Se il **Zdroje dat** finestra non è visibile, visualizzarla, dalla barra dei menu, scegliendo **View** > **Other Windows**  >   **Zdroje dat**.
 
    > [!NOTE]
-   >  Se **Mostra origini dati** non è disponibile, fare clic sul documento di Word e quindi riprovare.
+   > Se **Mostra origini dati** non è disponibile, fare clic sul documento di Word e quindi riprovare.
 
 2. Fare clic su **Aggiungi nuova origine dati** per avviare la **configurazione guidata origine dati**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063608"
 4. Selezionare `SuppliersBindingNavigator` nella **componente** sulla barra delle applicazioni e premere **eliminare**. Non si userà il `SuppliersBindingNavigator` in questa procedura dettagliata.
 
     > [!NOTE]
-    >  L'eliminazione di `SuppliersBindingNavigator` non rimuove tutto il codice generato per tale. È possibile rimuovere questo codice.
+    > L'eliminazione di `SuppliersBindingNavigator` non rimuove tutto il codice generato per tale. È possibile rimuovere questo codice.
 
 5. Spostare la casella combinata in modo che sia sotto l'etichetta e modificare il **dimensioni** proprietà **171, 21**.
 

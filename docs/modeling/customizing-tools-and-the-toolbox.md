@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445793"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 
@@ -175,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Per implementare queste personalizzazioni, è necessario fornire codice. Per informazioni sul codice da fornire, selezionare una delle caselle di controllo, fare clic su Trasforma tutti i modelli e quindi compilare la soluzione. Verrà visualizzato un report degli errori. Fare doppio clic sul report degli errori per visualizzare un commento che indica il codice da aggiungere.
 
 > [!NOTE]
->  Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).
+> Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Creazione di codice di connessione personalizzato
  Ogni collegamento direttiva di connessione a, il **direttive di ruolo di origine** scheda definisce da quali tipi, è possibile trascinare. Analogamente, il **direttive di ruolo di destinazione** scheda definisce a quali tipi, è possibile trascinare. Per ogni tipo, è inoltre possibile specificare se consentire la connessione (per direttiva di connessione di collegamento) impostando il **accettazione personalizzata** flag e quindi specificando il codice aggiuntivo.

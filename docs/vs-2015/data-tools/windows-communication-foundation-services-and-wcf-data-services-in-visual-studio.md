@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443868"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio offre strumenti per l'utilizzo con Windows Communication Foundatio
     ```
 
     > [!NOTE]
-    >  Sostituire *ServiceReference* con lo spazio dei nomi per il riferimento al servizio e sostituisci *Service1Client* con il nome del servizio.
+    > Sostituire *ServiceReference* con lo spazio dei nomi per il riferimento al servizio e sostituisci *Service1Client* con il nome del servizio.
 
 3. Verrà visualizzato un elenco di IntelliSense con gli overload del costruttore. Selezionare il `endpointConfigurationName As String` rapporto di overload.
 
 4. Dopo l'overload, digitare `=` *ConfigurationName*, dove *ConfigurationName* è il nome dell'endpoint a cui si desidera utilizzare.
 
     > [!NOTE]
-    >  Se non si conosce i nomi degli endpoint disponibili, è possibile trovarli nel file app. config.
+    > Se non si conosce i nomi degli endpoint disponibili, è possibile trovarli nel file app. config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Per trovare gli endpoint disponibili per un servizio WCF
 
@@ -164,7 +164,7 @@ Visual Studio offre strumenti per l'utilizzo con Windows Communication Foundatio
  Per impostazione predefinita, quando viene aggiunto un riferimento al servizio a un progetto è configurato per chiamare i metodi in modo sincrono. È possibile modificare il comportamento di chiamata ai metodi in modo asincrono modificando un'impostazione nel **Configura riferimento al servizio** nella finestra di dialogo.
 
 > [!NOTE]
->  Questa opzione è impostata su una base per ogni servizio. Se un metodo per un servizio viene chiamato in modo asincrono, tutti i metodi devono essere chiamati in modo asincrono.
+> Questa opzione è impostata su una base per ogni servizio. Se un metodo per un servizio viene chiamato in modo asincrono, tutti i metodi devono essere chiamati in modo asincrono.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

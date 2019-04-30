@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443958"
 ---
 # <a name="addressing-dpi-issues"></a>Risoluzione dei problemi relativi a DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Non usare le funzioni di supporto in variabili statiche a livello di modulo o a livello di classe. La libreria Usa inoltre gli elementi statici per la sincronizzazione dei thread ed è possibile incontrare problemi di ordine-inizializzazione. Convertire tali elementi statici per le variabili di membro non statiche oppure wrap in una funzione (in modo da ottenere costruite al primo accesso).  
+> Non usare le funzioni di supporto in variabili statiche a livello di modulo o a livello di classe. La libreria Usa inoltre gli elementi statici per la sincronizzazione dei thread ed è possibile incontrare problemi di ordine-inizializzazione. Convertire tali elementi statici per le variabili di membro non statiche oppure wrap in una funzione (in modo da ottenere costruite al primo accesso).  
   
  Per accedere le funzioni di supporto di valori DPI dal codice gestito che verrà eseguito all'interno dell'ambiente di Visual Studio:  
   

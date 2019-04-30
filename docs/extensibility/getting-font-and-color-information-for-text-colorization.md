@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417166"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Ottenere le informazioni di carattere e colori per la colorazione del testo
 Il processo che esegue il rendering o Visualizza colorato testo negli elementi dell'interfaccia utente dipende dal tipo di progetto, la tecnologia e per gli sviluppatori preferenze. Il **Fonts and Colors** pagina delle proprietà vengono archiviate le impostazioni.
@@ -24,7 +24,7 @@ Il processo che esegue il rendering o Visualizza colorato testo negli elementi d
  La maggior parte delle implementazioni che visualizzano testo colorato necessario il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> e associate le interfacce per la presentazione, recuperare e archiviare il testo delle impostazioni di visualizzazione.
 
 > [!NOTE]
->  Quando si personalizza l'editor principale (che supporta il **EditorCategory testo**), è consigliabile usare la tecnologia di colorazione del servizio di linguaggio. Per altre informazioni, vedere [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md).
+> Quando si personalizza l'editor principale (che supporta il **EditorCategory testo**), è consigliabile usare la tecnologia di colorazione del servizio di linguaggio. Per altre informazioni, vedere [Panoramica di carattere e colori](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Ottenere le informazioni di carattere e colori predefinite
  Tutti i **i tipi di carattere e colori** le impostazioni di qualsiasi finestra di visualizzazione di testo devono essere specificate nel **elementi visualizzati** di uno **categoria**. Per altre informazioni, vedere [tipi di carattere e colori, ambiente, finestra di dialogo Opzioni](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

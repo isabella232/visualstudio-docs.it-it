@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440574"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedura: dei frammenti XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60055262"
  Le procedure seguenti descrivono come accedere al **Inserisci frammento di codice** comando.  
   
 > [!NOTE]
->  Il **Inserisci frammento di codice** comando è disponibile anche tramite il tasto di scelta rapida (CTRL + K, quindi premere CTRL + X).  
+> Il **Inserisci frammento di codice** comando è disponibile anche tramite il tasto di scelta rapida (CTRL + K, quindi premere CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Per inserire i frammenti dal menu di scelta rapida  
   
@@ -60,7 +60,7 @@ ms.locfileid: "60055262"
 4. Premere TAB, TAB per richiamare il frammento XML.  
   
 > [!NOTE]
->  In alcuni casi è possibile che il frammento XML non venga richiamato. Ad esempio, se si tenta di inserire un elemento `xs:complexType` all'interno di un nodo `xs:element`, l'editor non genera alcun frammento XML. Quando un elemento `xs:complexType` viene usato all'interno di un nodo `xs:element`, non vengono rilevati attributi o sottoelementi obbligatori, pertanto l'editor non disporrà di alcun dato da inserire.  
+> In alcuni casi è possibile che il frammento XML non venga richiamato. Ad esempio, se si tenta di inserire un elemento `xs:complexType` all'interno di un nodo `xs:element`, l'editor non genera alcun frammento XML. Quando un elemento `xs:complexType` viene usato all'interno di un nodo `xs:element`, non vengono rilevati attributi o sottoelementi obbligatori, pertanto l'editor non disporrà di alcun dato da inserire.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Per inserire i frammenti dal nome del collegamento  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055262"
  Le procedure seguenti descrivono come accedere al **Racchiudi** comando.  
   
 > [!NOTE]
->  Il **Racchiudi** comando è disponibile anche tramite il tasto di scelta rapida (CTRL + K, quindi CTRL + S).  
+> Il **Racchiudi** comando è disponibile anche tramite il tasto di scelta rapida (CTRL + K, quindi CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Per usare il comando dal menu di scelta rapida  
   

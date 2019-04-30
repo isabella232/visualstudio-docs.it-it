@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406931"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger di Visual Studio usando la finestra thread (C#, Visual Basic, C++)
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione che sta eseguendo il debug. Per istruzioni dettagliate su come usare il **thread** finestra, vedere [procedura dettagliata: Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -85,7 +85,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
  Nel codice gestito, il numero sospesi cambia quando si blocca o sblocca un thread. Se si blocca un thread in codice gestito, il numero sospesi è 1. Quando si blocca un thread in codice nativo, il numero sospesi è 0, a meno che non è stato usato il `SuspendThread` chiamare.
 
 > [!NOTE]
->  Quando si esegue il debug di una chiamata da codice nativo a codice gestito, il codice gestito viene eseguito nello stesso thread fisico del codice nativo che lo ha chiamato. Sospendendo o bloccando l'esecuzione del thread di codice nativo si otterrà anche il blocco del codice gestito.
+> Quando si esegue il debug di una chiamata da codice nativo a codice gestito, il codice gestito viene eseguito nello stesso thread fisico del codice nativo che lo ha chiamato. Sospendendo o bloccando l'esecuzione del thread di codice nativo si otterrà anche il blocco del codice gestito.
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Per bloccare o sbloccare l'esecuzione di un thread
 

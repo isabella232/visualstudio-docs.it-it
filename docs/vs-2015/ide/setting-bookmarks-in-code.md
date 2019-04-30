@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441934"
 ---
 # <a name="setting-bookmarks-in-code"></a>Impostazione di segnalibri nel codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54769304"
  Per aggiungere un segnalibro, posizionare il cursore sulla riga che si desidera contrassegnare con un segnalibro. Fare clic sul pulsante **Attiva/Disattiva** oppure premere CTRL+K. Viene così aggiunto il segnalibro. Se si fa clic sul pulsante Attiva/Disattiva (o si preme CTRL+K) di nuovo, il segnalibro viene rimosso. È inoltre possibile eliminare i segnalibri facendo clic sul pulsante **Elimina** nella finestra segnalibro.  
   
 > [!IMPORTANT]
->  Il segnalibro viene impostato sul numero di righe, non sul codice. Se si modifica il codice, il segnalibro viene mantenuto sul numero di riga e non si sposta con il codice.  
+> Il segnalibro viene impostato sul numero di righe, non sul codice. Se si modifica il codice, il segnalibro viene mantenuto sul numero di riga e non si sposta con il codice.  
   
  È possibile spostarsi tra i segnalibri utilizzando i pulsanti **Segnalibro successivo** e **Segnalibro precedente** nella finestra segnalibro.  
   

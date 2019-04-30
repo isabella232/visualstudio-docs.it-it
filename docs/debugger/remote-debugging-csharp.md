@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408540"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto un C# o un progetto di Visual Basic in Visual Studio
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Debug remoto di un progetto c# o Visual Basic in Visual Studio
 Per eseguire il debug di un'applicazione di Visual Studio che è stata distribuita in un altro computer, installare ed eseguire remote tools sul computer in cui è distribuita l'app, configurare il progetto per la connessione al computer remoto da Visual Studio e quindi eseguire l'app.
 
 ![Componenti del debugger remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -90,7 +90,7 @@ Il debugger non può distribuire applicazioni desktop Visual C# o Visual Basic i
 10. Copiare il file eseguibile appena compilato dal computer di Visual Studio alla nuova cartella nel computer remoto.
 
     > [!CAUTION]
-    >  Non apportare modifiche al codice o ricompilazione (o è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
+    > Non apportare modifiche al codice o ricompilazione (o è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
 
     È possibile copiare manualmente il progetto, usare Xcopy, Robocopy, Powershell o altre opzioni.
 

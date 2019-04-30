@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445361"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controlli Windows Form in panoramica di documenti di Office
   I controlli Windows Form sono oggetti con cui gli utenti possono interagire per immettere o modificare i dati. Nei progetti a livello di documento per Microsoft Office Excel e Microsoft Office Word, è possibile aggiungere controlli Windows Form al documento o cartella di lavoro nel progetto in fase di progettazione oppure è possibile aggiungere questi controlli a livello di codice in fase di esecuzione. A livello di codice, è possibile aggiungere questi controlli a qualsiasi documento aperto o foglio di lavoro in fase di esecuzione in un componente aggiuntivo VSTO per Excel o Word.
@@ -109,7 +109,7 @@ In un Windows Form
 - **Uniforma spaziatura verticale**
 
 > [!NOTE]
->  Nei progetti di Word, questi pulsanti sono abilitati solo se i controlli selezionati non sono in linea con il testo. Per impostazione predefinita, i controlli aggiunti al documento in fase di progettazione sono in linea con il testo.
+> Nei progetti di Word, questi pulsanti sono abilitati solo se i controlli selezionati non sono in linea con il testo. Per impostazione predefinita, i controlli aggiunti al documento in fase di progettazione sono in linea con il testo.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Impedire la visualizzazione nelle cartelle di lavoro di Excel durante il caricamento dei dati obsoleti
  Quando si aggiungono controlli Windows Form a documenti o fogli di lavoro in fase di progettazione, i controlli rimangono nel documento quando l'utente chiude il documento. I controlli aggiunti in fase di progettazione sono anche definiti *controlli statici*.

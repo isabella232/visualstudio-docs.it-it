@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410141"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Restituisce un enumeratore dei contesti di espressione noti da questo componente.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  Il gestore di debug del processo Usa questo metodo per trovare tutti i contesti di espressione globale associati a un determinato thread.  
   
 > [!NOTE]
->  Questo metodo viene chiamato dall'interno del thread di interesse. Spetta all'implementatore di identificare il thread corrente e restituisce un enumeratore appropriato.  
+> Questo metodo viene chiamato dall'interno del thread di interesse. Spetta all'implementatore di identificare il thread corrente e restituisce un enumeratore appropriato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)

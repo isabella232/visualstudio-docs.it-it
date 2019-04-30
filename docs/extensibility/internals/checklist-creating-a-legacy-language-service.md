@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420685"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Elenco di controllo: Creare un servizio di linguaggio legacy
 Elenco di controllo seguente sono riepilogati i passaggi di base è necessario eseguire per creare un servizio di linguaggio per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor principale. Integrare il servizio di linguaggio in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario creare un analizzatore di espressioni di debug. Per altre informazioni, vedere [scrivere un analizzatore di espressioni CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) nel [estendibilità del debugger Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ Elenco di controllo seguente sono riepilogati i passaggi di base è necessario e
     I comandi che devono essere gestiti dipendono dai servizi forniti. Per altre informazioni, vedere [comandi importanti per il linguaggio di servizio filtri](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaccia deve essere implementata nell'oggetto stesso come il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.
+    > Il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaccia deve essere implementata nell'oggetto stesso come il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaccia.
 
 - Completamento istruzioni
 

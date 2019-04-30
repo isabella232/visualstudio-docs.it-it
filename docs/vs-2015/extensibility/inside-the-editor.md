@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414622"
 ---
 # <a name="inside-the-editor"></a>Componenti e funzionalità dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ L'editor è composto da un numero di sottosistemi diversi, che sono pensati per 
  È possibile visualizzare il contenuto di uno snapshot di testo come una sequenza di caratteri o come una sequenza di righe. Caratteri e le righe sono che entrambi indicizzati a partire da zero. Uno snapshot di testo vuoto contiene zero caratteri e una riga vuota. Una riga è delimitata da qualsiasi sequenza di caratteri di interruzione di riga Unicode valido, o dall'inizio o alla fine del buffer. I caratteri di interruzione di riga sono rappresentati in modo esplicito nello snapshot di testo e le interruzioni di riga in uno snapshot di testo non devono essere tutte lo stesso.  
   
 > [!NOTE]
->  Per altre informazioni sui caratteri di interruzione di riga nell'editor di Visual Studio, vedere [codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md).  
+> Per altre informazioni sui caratteri di interruzione di riga nell'editor di Visual Studio, vedere [codifiche e interruzioni di riga](../ide/encodings-and-line-breaks.md).  
   
  Una riga di testo è rappresentata da un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> oggetto, che può essere ottenuto da uno snapshot di testo per un numero di riga specifico o per una particolare posizione di carattere.  
   

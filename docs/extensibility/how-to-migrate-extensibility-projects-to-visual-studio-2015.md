@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415286"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedura: Eseguire la migrazione di progetti di estendibilità di Visual Studio 2015
 Ecco come eseguire l'aggiornamento dell'estensione.
 
 > [!IMPORTANT]
->  Se si prevede di gestire una versione della soluzione di estensione per una versione precedente di Visual Studio, assicurarsi di creare una copia prima di aggiornarlo. Potrebbe essere difficile restituire la versione aggiornata allo stato precedente.
+> Se si prevede di gestire una versione della soluzione di estensione per una versione precedente di Visual Studio, assicurarsi di creare una copia prima di aggiornarlo. Potrebbe essere difficile restituire la versione aggiornata allo stato precedente.
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>Per eseguire l'aggiornamento di una soluzione di estendibilità
 
@@ -52,4 +52,4 @@ Ecco come eseguire l'aggiornamento dell'estensione.
 5. È anche possibile passare all'uso della versione di NuGet degli strumenti di compilazione di Visual Studio SDK. Il pacchetto NuGet [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) e una volta aggiunto a includere gli strumenti necessari e i file per consentire la compilazione del progetto di estendibilità in un computer senza installato il SDK di Visual Studio di destinazione del progetto di.
 
 > [!NOTE]
->  Non è necessario aggiornare i progetti di estendibilità esistenti per l'uso di strumenti e gli assembly di riferimento di NuGet.  È possibile continuare a compilare usando gli assembly di riferimento e gli strumenti installati con il SDK di Visual Studio.
+> Non è necessario aggiornare i progetti di estendibilità esistenti per l'uso di strumenti e gli assembly di riferimento di NuGet.  È possibile continuare a compilare usando gli assembly di riferimento e gli strumenti installati con il SDK di Visual Studio.

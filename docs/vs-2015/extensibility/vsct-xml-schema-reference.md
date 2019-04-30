@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441474"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informazioni di riferimento sullo schema XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Fornisce una tabella di elementi dello schema di comando del compilatore di tabe
  Un file di configurazione (con estensione vsct) tabella comando basato su XML definisce gli elementi di comando che un pacchetto VSPackage fornisce all'ambiente di sviluppo integrato (IDE). Questi elementi includono voci di menu, menu, barre degli strumenti e caselle combinate.  
   
 > [!NOTE]
->  Il compilatore VSCT eseguibili del preprocessore sul file con estensione vsct. Poiché si tratta in genere include di C++ per il preprocessore, che è possibile definire e macro che hanno la stessa sintassi utilizzata nel file di C++. Nel file vsct vengono forniti esempi di questo file che il **nuovo progetto** procedura guidata crea un progetto di VSPackage.  
+> Il compilatore VSCT eseguibili del preprocessore sul file con estensione vsct. Poiché si tratta in genere include di C++ per il preprocessore, che è possibile definire e macro che hanno la stessa sintassi utilizzata nel file di C++. Nel file vsct vengono forniti esempi di questo file che il **nuovo progetto** procedura guidata crea un progetto di VSPackage.  
   
 ## <a name="optional-elements"></a>Elementi facoltativi  
  Alcuni elementi VSCT sono facoltativi. Se un `Parent` argomento non è specificato, Group_Undefined:0 sarà possibile implicita. Se un `Icon` argomento non è specificato, verrà implicita guidOfficeIcon:msotcidNoIcon. Quando viene definito un tasto di scelta rapida, l'emulazione, che non viene utilizzato in genere, è facoltativo.  

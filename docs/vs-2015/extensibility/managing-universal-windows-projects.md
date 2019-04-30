@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412328"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestione di progetti Windows universale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
     ```  
   
     > [!IMPORTANT]
-    >  Se l'utente ha aperto un progetto di app Windows universale C++ nell'istanza sperimentale, il codice precedente genera un'eccezione. Si tratta di un problema noto. Per evitare l'eccezione, sostituire il `foreach` blocco sopra con il codice seguente:  
+    > Se l'utente ha aperto un progetto di app Windows universale C++ nell'istanza sperimentale, il codice precedente genera un'eccezione. Si tratta di un problema noto. Per evitare l'eccezione, sostituire il `foreach` blocco sopra con il codice seguente:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.
 9. Modificare l'elemento condiviso. Non è possibile modificare gli elementi condivisi in un progetto di piattaforma. In alternativa, è necessario modificarli nel progetto condiviso che è il titolare effettivo di questi elementi. È possibile ottenere l'ID dell'elemento corrispondente nel progetto condiviso con <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, fornendo il percorso completo dell'elemento condiviso. È quindi possibile modificare l'elemento condiviso. La modifica viene propagata per i progetti di piattaforma.  
   
     > [!IMPORTANT]
-    >  È necessario trovare o meno un elemento del progetto è un elemento condiviso prima della modifica.  
+    > È necessario trovare o meno un elemento del progetto è un elemento condiviso prima della modifica.  
   
      Il metodo seguente modifica il nome di un file di elemento di progetto.  
   

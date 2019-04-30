@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446698"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procedura dettagliata: Generazione di codice tramite modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La generazione del codice consente di creare codice di programma fortemente tipi
  In questo progetto di esempio un modello legge un file XML di esempio e genera classi che corrispondono a ogni tipo di nodo. Nel codice scritto a mano è possibile usare queste classi per passare al file XML. È anche possibile eseguire l'applicazione su qualsiasi altro file che usa gli stessi tipi di nodo. Lo scopo del file XML di esempio è fornire esempi di tutti i tipi di nodo con cui l'applicazione dovrà avere a che fare.  
   
 > [!NOTE]
->  L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.  
+> L'applicazione [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), inclusa in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], può generare classi fortemente tipizzate da file XML. Il modello illustrato qui viene fornito come esempio.  
   
  Ecco il file di esempio:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. Nella finestra di dialogo **Aggiungi nuovo elemento** selezionare **Modello di testo** dal riquadro **Modelli** .  
   
    > [!NOTE]
-   >  Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.  
+   > Assicurarsi di aggiungere un modello di testo e non un modello di testo pre-elaborato.  
   
 3. Nel file, nella direttiva template, modificare l'attributo `hostspecific` in `true`.  
   

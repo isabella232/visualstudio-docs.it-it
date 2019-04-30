@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387547"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedura: Ripristinare i comandi nascosti del debugger
 Quando si installa Visual Studio, viene chiesto di scegliere una serie di impostazioni IDE predefinite per il linguaggio di programmazione principale. Le impostazioni IDE predefinite per alcuni linguaggi possono nascondere determinati comandi del debugger.
@@ -47,7 +47,7 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 7. Dopo avere aggiunto tutti i comandi desiderati al menu, fare clic su **Chiudi**.
 
     > [!WARNING]
-    >  Alcune voci di menu vengono visualizzate solo quando nel debugger è attivata una particolare modalità, ad esempio la modalità di esecuzione o la modalità di interruzione. Le voci aggiunte potrebbero quindi non essere immediatamente visualizzate al termine di questa procedura.
+    > Alcune voci di menu vengono visualizzate solo quando nel debugger è attivata una particolare modalità, ad esempio la modalità di esecuzione o la modalità di interruzione. Le voci aggiunte potrebbero quindi non essere immediatamente visualizzate al termine di questa procedura.
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Ripristino di comandi non disponibili nella finestra di dialogo Personalizza
  Alcuni comandi, in particolare quelli facenti parte di menu gerarchici, non possono essere ripristinati dalla finestra di dialogo **Personalizza**. Per ripristinare tali comandi, è necessario importare una nuova raccolta di impostazioni IDE.

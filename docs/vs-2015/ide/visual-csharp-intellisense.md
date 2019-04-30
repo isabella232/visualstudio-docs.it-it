@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443172"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
  In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.  
   
 > [!NOTE]
->  Nell'elenco di completamento non vengono visualizzati tutti i metodi di estensione degli oggetti <xref:System.String>.  
+> Nell'elenco di completamento non vengono visualizzati tutti i metodi di estensione degli oggetti <xref:System.String>.  
   
  I metodi di estensione usano un'icona diversa rispetto ai metodi di istanza. Per un elenco di icone dell’elenco, vedere [Icone di Visualizzazione classi e Visualizzatore oggetti](../ide/class-view-and-object-browser-icons.md). Se un metodo di istanza e un metodo di estensione con lo stesso nome sono entrambi inclusi in un ambito, nell'elenco di completamento viene visualizzata l'icona del metodo di estensione.  
   
@@ -148,12 +148,12 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
  ![Genera gestore eventi](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Se un nuovo delegato creato da IntelliSense fa riferimento a un gestore eventi esistente, IntelliSense comunica queste informazioni nella descrizione comando. È quindi possibile modificare questo riferimento. Il testo è già selezionato nell'editor del codice. In caso contrario, l'associazione automatica dell'evento è a questo punto completata.  
+> Se un nuovo delegato creato da IntelliSense fa riferimento a un gestore eventi esistente, IntelliSense comunica queste informazioni nella descrizione comando. È quindi possibile modificare questo riferimento. Il testo è già selezionato nell'editor del codice. In caso contrario, l'associazione automatica dell'evento è a questo punto completata.  
   
  Se si preme TAB, IntelliSense associa automaticamente un metodo con la firma corretta e posiziona il cursore nel corpo del gestore eventi.  
   
 > [!NOTE]
->  Usare il comando **Posizione precedente** nel menu **Visualizza** (CTRL+-) per tornare all'istruzione di associazione dell'evento.  
+> Usare il comando **Posizione precedente** nel menu **Visualizza** (CTRL+-) per tornare all'istruzione di associazione dell'evento.  
   
  L'attività seguente mostra come IntelliSense aggancia automaticamente un gestore eventi denominato `button1_Click` a un campo evento denominato `button1.Click`.  
   

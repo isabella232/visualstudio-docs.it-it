@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6167c5472f06e016fa45f17fb7cb493224f1668b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 20d8a92e7fcd8c02ee659b997bc4530c8570d3fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415908"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Vengono descritti gli attributi di un documento.
@@ -39,7 +39,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>Note
 
 > [!NOTE]
->  Questo valore non viene effettivamente definito nell'assembly per il linguaggio c#. In alternativa, è necessario copiare la definizione per il file di origine.
+> Questo valore non viene effettivamente definito nell'assembly per il linguaggio c#. In alternativa, è necessario copiare la definizione per il file di origine.
 
  Passato come argomento per il [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (metodo).
 

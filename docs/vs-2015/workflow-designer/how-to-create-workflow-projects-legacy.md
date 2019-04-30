@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444173"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Procedura: Creare progetti del flusso di lavoro (legacy)
 Seguire questi passaggi per creare un progetto [!INCLUDE[wf](../includes/wf-md.md)] che viene destinato a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o a [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. In questa procedura viene usata la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -33,7 +33,7 @@ Seguire questi passaggi per creare un progetto [!INCLUDE[wf](../includes/wf-md.m
 3. Selezionare il **.NET Framework 3.0** opzione o il **.NET Framework 3.5** opzione nella casella di riepilogo nella parte superiore del **nuovo progetto** finestra per accedere a progettazione legacy.  
   
     > [!NOTE]
-    >  L'opzione predefinita nel [!INCLUDE[vs2010](../includes/vs2010-md.md)] viene **.NET Framework 4**. Questa opzione viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e non usa la finestra di progettazione legacy.  
+    > L'opzione predefinita nel [!INCLUDE[vs2010](../includes/vs2010-md.md)] viene **.NET Framework 4**. Questa opzione viene usata per creare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] che vengono destinate a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e non usa la finestra di progettazione legacy.  
   
 4. Nel **tipi di progetto** riquadro, selezionare progetti Visual c# o progetti Visual Basic e quindi selezionare **flusso di lavoro**.  
   

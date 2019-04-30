@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b022cca2b69c8cb80b24fa34e3b020923cff4022
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 910b4bcb0a3258a6e661421c225121b8f888fcef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409661"
 ---
 # <a name="notify-the-port"></a>La porta di notifica
 Dopo aver avviato un programma, la porta deve ricevere una notifica, come indicato di seguito:
@@ -31,12 +31,12 @@ Dopo aver avviato un programma, la porta deve ricevere una notifica, come indica
    A livello di codice quando una porta riceve innanzitutto un nuovo nodo di programma, viene creato un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per rappresentare il programma.
 
 > [!NOTE]
->  Questo non deve essere confuso con il `IDebugProgram2` interfaccia creata in un secondo momento dal motore di debug (DE).
+> Questo non deve essere confuso con il `IDebugProgram2` interfaccia creata in un secondo momento dal motore di debug (DE).
 
  La porta invia un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) evento di creazione di programma al gestore di debug di sessione (SDM) tramite COM `IConnectionPoint` interfaccia.
 
 > [!NOTE]
->  Questo non deve essere confuso con il `IDebugProgramCreateEvent2` interfaccia, che verrà inviato in un secondo momento per la Germania.
+> Questo non deve essere confuso con il `IDebugProgramCreateEvent2` interfaccia, che verrà inviato in un secondo momento per la Germania.
 
  Con l'interfaccia evento stessa, la porta invia il [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), e [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfacce che rappresentano la porta, elaborano, e programma, rispettivamente. Le chiamate SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) per ottenere il GUID della DE che è possibile eseguire il debug del programma. Il GUID è stato originariamente ottenuto il [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interfaccia.
 

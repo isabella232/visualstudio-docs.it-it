@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403577"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenario: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 - [Convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Alcune versioni di Visual Studio supportano la convalida dei livelli e le versioni di sola lettura di mappe codice e diagrammi UML per la visualizzazione e la modellazione. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Alcune versioni di Visual Studio supportano la convalida dei livelli e le versioni di sola lettura di mappe codice e diagrammi UML per la visualizzazione e la modellazione. Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Comprensione e comunicazione delle informazioni relative al sistema  
  Non è necessario usare i diagrammi di modellazione di Visual Studio in base a un ordine stabilito; possono essere usati in base alle proprie esigenze o all'approccio preferito. In genere i team rivedono i propri modelli in modo frequente e iterativo nel corso di un progetto. Ogni diagramma offre specifici punti di forza che consentono di comprendere, descrivere e comunicare i diversi aspetti del sistema in fase di sviluppo.  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421035"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari
   Quando si crea un nuovo progetto di Office, in Visual Studio vengono aggiunti automaticamente riferimenti agli assembly di interoperabilità primari (PIA) di Microsoft Office necessari per la compilazione del progetto. È necessario aggiungere riferimenti agli altri assembly di interoperabilità primari (PIA) negli scenari seguenti:
@@ -45,7 +45,7 @@ ms.locfileid: "60079636"
      Se il progetto è destinato il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versioni successive, il **incorpora tipi di interoperabilità** per il riferimento all'assembly è impostata su **True** per impostazione predefinita. Usando questa impostazione, la soluzione non richiede l'assembly di interoperabilità primario (PIA) sui computer degli utenti finali. Per altre informazioni, vedere [progettazione e creazione di soluzioni Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    >  Nei progetti di Office, aggiungere sempre riferimenti agli assembly di interoperabilità primari Office utilizzando il **.NET** scheda della finestra di **Aggiungi riferimento** finestra di dialogo anziché il **COM** scheda. Per altre informazioni, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
+    > Nei progetti di Office, aggiungere sempre riferimenti agli assembly di interoperabilità primari Office utilizzando il **.NET** scheda della finestra di **Aggiungi riferimento** finestra di dialogo anziché il **COM** scheda. Per altre informazioni, vedere [assembly di interoperabilità primari di Office](../vsto/office-primary-interop-assemblies.md).
 
 4. Fare clic su **OK**.
 

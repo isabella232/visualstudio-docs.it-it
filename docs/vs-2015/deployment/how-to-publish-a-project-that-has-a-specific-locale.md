@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442683"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedura: Pubblicare un progetto dotato di impostazioni locali specifiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092916"
 Accade spesso che un'applicazione contenga componenti con impostazioni locali diverse. In questi casi si crea una soluzione con più progetti, che vengono poi pubblicati con impostazioni locali differenti. Questa procedura illustra come usare una macro per pubblicare il primo progetto in una soluzione con le impostazioni locali 'en'. Se si vuole provare la procedura con impostazioni locali diverse da 'en', impostare `localeString` nella macro in modo che corrisponda alle impostazioni locali in uso (ad esempio, 'de' o 'de-DE').  
   
 > [!NOTE]
->  Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, fare clic sul menu **Start**, quindi scegliere **Pannello di controllo**. Fare doppio clic su **Installazione applicazioni**. In **Installazione applicazioni** fare clic su **Installazione componenti di Windows**. In **Aggiunta guidata componenti di Windows** selezionare la casella di controllo **Internet Information Services (IIS)** nell'elenco **Componenti**. Fare clic su **Fine** per chiudere la procedura guidata.  
+> Quando si usa questa macro, il percorso di pubblicazione deve essere una condivisione UNC (Universal Naming Convention) o un URL valido. È anche necessario installare Internet Information Services (IIS) nel computer. Per installare IIS, fare clic sul menu **Start**, quindi scegliere **Pannello di controllo**. Fare doppio clic su **Installazione applicazioni**. In **Installazione applicazioni** fare clic su **Installazione componenti di Windows**. In **Aggiunta guidata componenti di Windows** selezionare la casella di controllo **Internet Information Services (IIS)** nell'elenco **Componenti**. Fare clic su **Fine** per chiudere la procedura guidata.  
   
 ### <a name="to-create-the-publishing-macro"></a>Per creare la macro di pubblicazione  
   

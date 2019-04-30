@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447088"
 ---
 # <a name="office-primary-interop-assemblies"></a>assembly di interoperabilità primari di Office
 
@@ -84,7 +84,7 @@ Nella maggior parte dei casi, è necessario aggiungere riferimenti agli assembly
 Se sono stati installati e registrati gli assembly di interoperabilità primari nella Global Assembly Cache, queste versioni appariranno nella scheda **COM** della finestra di dialogo **Gestione riferimenti** . Evitare di aggiungere riferimenti a queste versioni degli assembly, perché possono verificarsi alcuni problemi di sviluppo durante il loro uso. Ad esempio, se sono state registrate versioni differenti degli assembly di interoperabilità primari nella Global Assembly Cache, il progetto verrà automaticamente associato all'ultima versione registrata dell'assembly, anche se è stata specificata una versione differente nella scheda **COM** della finestra di dialogo **Gestione riferimenti** .
 
 > [!NOTE]
->  Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, fa riferimento per il *Office. dll* e *VBE* gli assembly vengono aggiunti automaticamente quando si aggiunge un riferimento per il Word, Excel, Outlook, Microsoft Forms o Graph assembly.
+> Alcuni assembly vengono aggiunti automaticamente a un progetto quando si aggiunge un assembly che vi fa riferimento. Ad esempio, fa riferimento per il *Office. dll* e *VBE* gli assembly vengono aggiunti automaticamente quando si aggiunge un riferimento per il Word, Excel, Outlook, Microsoft Forms o Graph assembly.
 
 <a name="pialist"></a>
 

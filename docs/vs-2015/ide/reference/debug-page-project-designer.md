@@ -14,18 +14,18 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 611b9c02fd7aaeb4621c4e59555fae2c6dfab247
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441421"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!WARNING]
->  Questo argomento non si applica alle app di Windows Store. Vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) in Windows Dev Center.  
+> Questo argomento non si applica alle app di Windows Store. Vedere [Avviare una sessione di debug (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) in Windows Dev Center.  
   
  Usare la pagina **Debug** di **Creazione progetti** per impostare le proprietà per il comportamento di debug in un progetto Visual Basic o C#.  
   

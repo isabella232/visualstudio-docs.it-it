@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99fa06086bfad56b266b043716e82181aa4c97d5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386162"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>Interfaccia IActiveScriptParseProcedureOld
 Consente il testo del codice sorgente per le procedure da aggiungere allo script. Per i linguaggi di scripting interpretati che non è un ambiente di creazione indipendente, ad esempio VBScript, si fornisce un meccanismo alternativo (diverso da `IActiveScriptParse` o `IPersist*`) per aggiungere le procedure di script allo spazio dei nomi.  
   
 > [!NOTE]
->  Questa interfaccia è deprecata in favore del `IActiveScriptParseProcedure` interfaccia.  
+> Questa interfaccia è deprecata in favore del `IActiveScriptParseProcedure` interfaccia.  
   
 ## <a name="methods"></a>Metodi  
  Oltre ai metodi ereditati da `IUnknown`, il `IActiveScriptParseProcedureOld` interfaccia espone i metodi seguenti.  

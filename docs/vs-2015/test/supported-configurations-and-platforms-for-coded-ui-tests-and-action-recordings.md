@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446014"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109055"
 La tabella seguente riporta le configurazioni e le piattaforme supportate per i test codificati dell'interfaccia utente per Visual Studio Enterprise. Queste configurazioni si applicano anche alle registrazioni delle azioni create tramite [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  Il processo del test codificato dell'interfaccia utente deve avere gli stessi privilegi dell'applicazione sottoposta a test.  
+> Il processo del test codificato dell'interfaccia utente deve avere gli stessi privilegi dell'applicazione sottoposta a test.  
   
  **Requisiti**  
   
@@ -39,7 +39,7 @@ La tabella seguente riporta le configurazioni e le piattaforme supportate per i 
 |.NET|.NET 2.0, 3.0, 3.5, 4 e 4.5. **Nota:**  [!INCLUDE[TCMext](../includes/tcmext-md.md)] e Visual Studio richiedono entrambi .NET 4. Tuttavia, le applicazioni sviluppate tramite le versioni di .NET elencate sono supportate.|  
   
 > [!NOTE]
->  *Sincronizzazione dell'interfaccia utente* è una funzionalità in cui la riproduzione viene verificata nella coda messaggi di ogni controllo. Se un controllo non risponde all'evento ricevuto, quest'ultimo viene nuovamente inviato.  
+> *Sincronizzazione dell'interfaccia utente* è una funzionalità in cui la riproduzione viene verificata nella coda messaggi di ogni controllo. Se un controllo non risponde all'evento ricevuto, quest'ultimo viene nuovamente inviato.  
   
 ## <a name="platform-support"></a>Supporto per piattaforme  
   

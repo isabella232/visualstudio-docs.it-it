@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431581"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Funzionalità disponibili in base al tipo di progetto e applicazioni di Office
   In Visual Studio sono disponibili numerosi tipi di modelli di progetto che supportano scenari aziendali diversi per le applicazioni di Microsoft Office, inclusi i tipi seguenti:
@@ -36,7 +36,7 @@ ms.locfileid: "56626752"
   Non tutte le applicazioni possono utilizzare ogni tipo di progetto. Ad esempio, i progetti a livello di documento sono disponibili solo per Microsoft Office Word e Microsoft Office Excel. Analogamente, alcune funzionalità sono disponibili solo per determinati tipi di progetti o applicazioni. Ad esempio, il riquadro azioni è disponibile solo nei progetti a livello di documento e le estensioni della barra multifunzione sono disponibili solo per alcune applicazioni. Per altre informazioni sui diversi tipi di progetto, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 > [!NOTE]
->  Modelli di progetto di Office sono disponibili solo in alcune edizioni di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+> Modelli di progetto di Office sono disponibili solo in alcune edizioni di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [configurare un computer per sviluppare soluzioni Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>Tipi di progetto disponibili per diverse applicazioni di Microsoft Office
  Nella tabella seguente sono indicate le applicazioni che è possibile utilizzare con ogni tipo di progetto.

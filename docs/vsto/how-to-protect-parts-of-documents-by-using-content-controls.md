@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441743"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedura: Proteggere parti di documenti mediante controlli contenuto
   Quando si protegge parte di un documento, si impedisce agli utenti di modificare o eliminare il contenuto in quella parte del documento. È possibile proteggere parti di un documento di Microsoft Office Word usando i controlli contenuto in diversi modi.
@@ -73,7 +73,7 @@ ms.locfileid: "60103519"
 - Si vuole proteggere un'area che contiene i controlli del contenuto, ma il testo o gli altri elementi da proteggere non sono nei controlli del contenuto.
 
 > [!NOTE]
->  Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, usare il **LockContents** proprietà del controllo.
+> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. Per impedire agli utenti di modificare un controllo contenuto incorporato, usare il **LockContents** proprietà del controllo.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Per proteggere un'area di un documento in fase di progettazione
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103519"
 2. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
     > [!NOTE]
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Nel **controlli** gruppo, fare clic sui **gruppo** pulsante elenco a discesa e quindi fare clic su **gruppo**.
 

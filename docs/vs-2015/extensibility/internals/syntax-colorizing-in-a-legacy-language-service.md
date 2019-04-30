@@ -13,12 +13,12 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 585208150047b32adfdac916146268751a2a1287
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 64e57ebc80320ccc133261781eb8ee6611c8e2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441235"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Colorazione della sintassi in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ La colorazione della sintassi è una funzionalità che fa sì che diversi elemen
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [estensione dell'Editor e servizi di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
 ## <a name="implementation"></a>Implementazione  
  Per supportare la colorazione, il framework di pacchetto gestito (MPF) include il <xref:Microsoft.VisualStudio.Package.Colorizer> classe che implementa il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interfaccia. Questa classe interagisce con un <xref:Microsoft.VisualStudio.Package.IScanner> per determinare il token e i colori. Per altre informazioni su scanner, vedere [Scanner e Parser servizio di linguaggio Legacy](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). Il <xref:Microsoft.VisualStudio.Package.Colorizer> classe quindi contrassegna ogni carattere del token con le informazioni sul colore e restituisce le informazioni nell'editor contenente il file di origine.  
@@ -39,10 +39,10 @@ La colorazione della sintassi è una funzionalità che fa sì che diversi elemen
  Per fornire i propri elementi colorabili personalizzati, è necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Il primo metodo restituisce il numero di elementi colorabili personalizzati supportati dal servizio di linguaggio e il secondo Ottiene l'elemento colorabile personalizzato in base all'indice. Si crea l'elenco predefinito di elementi colorabili personalizzati. Nel costruttore del servizio di linguaggio, tutto è necessario eseguire è specificare ogni elemento colorabile con un nome. Visual Studio gestisce automaticamente il caso in cui l'utente seleziona un set diverso di elementi colorabili. Questo nome viene visualizzato un messaggio nel **tipi di carattere e colori** pagina delle proprietà nel **opzioni** la finestra di dialogo (disponibile da Visual Studio **strumenti** menu) e questo nome determina quali colore di che un utente ha eseguito l'override. Le scelte dell'utente sono archiviate in una cache nel Registro di sistema e a cui accede il nome del colore. Il **tipi di carattere e colori** pagina delle proprietà sono elencati tutti i nomi di colore in ordine alfabetico, in modo che è possibile raggruppare i colori personalizzati per ciascun nome preceduto dal colore con il nome del linguaggio; ad esempio, "**TestLanguage commento**"e"**TestLanguage - parola chiave**". Oppure è possibile raggruppare gli elementi colorabili dal tipo, "**commento (TestLanguage)**"e"**parola chiave (TestLanguage)**". Raggruppamento in base al nome della lingua è preferito.  
   
 > [!CAUTION]
->  Si consiglia di includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti.  
+> Si consiglia di includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti.  
   
 > [!NOTE]
->  Se si modifica il nome di uno dei colori durante lo sviluppo, è necessario reimpostare la cache che Visual Studio ha creato la prima volta che i colori ha eseguito l'accesso. È possibile farlo eseguendo il **reimpostare l'Hive sperimentale** dal menu di programma Visual Studio SDK.  
+> Se si modifica il nome di uno dei colori durante lo sviluppo, è necessario reimpostare la cache che Visual Studio ha creato la prima volta che i colori ha eseguito l'accesso. È possibile farlo eseguendo il **reimpostare l'Hive sperimentale** dal menu di programma Visual Studio SDK.  
   
  Si noti che il primo elemento nell'elenco di elementi colorabili non viene mai fatto riferimento. Visual Studio sono disponibili sempre i colori del testo predefinito e attributi per quell'elemento. Il modo più semplice di gestire questa situazione è fornire un elemento colorabile segnaposto come primo elemento.  
   

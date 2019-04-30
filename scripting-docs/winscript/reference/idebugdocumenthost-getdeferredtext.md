@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f20b090f880168b3561cba547db319813ba3fe02
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446578"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
 Restituisce un intervallo di caratteri che sono state aggiunte mediante la `IDebugDocumentHelper::AddDeferredText` metodo, in modo che il documento originale.  
@@ -58,7 +58,7 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|Il metodo non è implementato.|  
@@ -67,7 +67,7 @@ HRESULT GetDeferredText(
  Questo metodo può restituire `E_NOTIMPL`, se l'host non chiama `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
->  Questo metodo restituisce il testo dal documento originale. L'host non tenere traccia di modifiche o altre modifiche al documento.  
+> Questo metodo restituisce il testo dal documento originale. L'host non tenere traccia di modifiche o altre modifiche al documento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)   

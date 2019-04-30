@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 48b02bb3cbcb3b3837d2d7050fb9c286581e6cdc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8287fdf4c767e6fc2a41f014f724ab9a7fe61249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385822"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: I costruttori predefiniti devono essere Critical almeno come i costruttori predefiniti del tipo base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58965029"
 |Modifica importante|Interruzione|
 
 > [!NOTE]
->  Questo avviso viene applicato solo al codice che esegue CoreCLR (la versione di CLR è specifico per le applicazioni Silverlight Web).
+> Questo avviso viene applicato solo al codice che esegue CoreCLR (la versione di CLR è specifico per le applicazioni Silverlight Web).
 
 ## <a name="cause"></a>Causa
  L'attributo di trasparenza del costruttore predefinito di una classe derivata non è critico come la trasparenza della classe di base.

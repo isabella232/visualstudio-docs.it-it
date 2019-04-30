@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405847"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce che non richiede una nuova firma e conserva le informazioni di personalizzazione
 Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, il cliente ha in genere aggiornare il manifesto di distribuzione e firmare nuovamente la soluzione. Sebbene questo rappresenti il metodo consigliato nella maggior parte dei casi, .NET Framework 3.5 consente di creare [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le distribuzioni che possono essere distribuite dai clienti senza la necessità di rigenerare un nuovo manifesto di distribuzione. Per altre informazioni, vedere [le applicazioni di distribuzione ClickOnce per i server di test e produzione senza riapposizione della firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
  Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione e quindi passarla a un cliente per pubblicare e distribuire, l'applicazione può usare la personalizzazione del cliente o conservare le proprie. Ad esempio, se l'applicazione è una singola applicazione proprietaria, si potrebbe essere necessario mantenere la personalizzazione. Se l'applicazione è altamente personalizzata per ogni cliente, si potrebbe voler usare la personalizzazione del cliente. .NET Framework 3.5 consente di conservare la personalizzazione, informazioni sull'editore e la firma di sicurezza quando si concede un'applicazione a un'organizzazione per la distribuzione. Per altre informazioni, vedere [delle applicazioni ClickOnce creare altri utenti possano distribuire](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  In questa procedura dettagliata creare distribuzioni manualmente usando lo strumento da riga di comando *Mage.exe* o lo strumento con interfaccia grafico *MageUI.exe*. Per altre informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> In questa procedura dettagliata creare distribuzioni manualmente usando lo strumento da riga di comando *Mage.exe* o lo strumento con interfaccia grafico *MageUI.exe*. Per altre informazioni sulle distribuzioni manuali, vedere [procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per eseguire i passaggi in questa procedura dettagliata è necessario quanto segue:
@@ -51,7 +51,7 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 2. Creare una directory denominata alla versione corrente della distribuzione. Se questa è la prima volta che si sta distribuendo l'applicazione, si sceglierà probabilmente **1.0.0.0**.
 
    > [!NOTE]
-   >  La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
+   > La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
 
 3. Creare una sottodirectory denominata **bin** e copiare tutti i file dell'applicazione in questo caso, inclusi file eseguibili, gli assembly, le risorse e i file di dati.
 
@@ -101,7 +101,7 @@ Quando si crea un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.m
 3. Creare una sottodirectory denominata in base alla versione corrente della distribuzione. Se questa è la prima volta che si sta distribuendo l'applicazione, si sceglierà probabilmente **1.0.0.0**.
 
    > [!NOTE]
-   >  La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
+   > La versione della distribuzione può essere diverso dalla versione dei file dell'applicazione.
 
 4. Spostare il \\ **bin** directory nella directory creata nel passaggio 2.
 

@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437968"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Scrittura di unit test per C/C++ con il framework di testing unità Microsoft per C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
     ```  
   
     > [!TIP]
-    >  È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
+    > È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
     >   
     >  Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.  
   
@@ -258,7 +258,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
      ![RangeTest non riuscito](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
+    > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
   
 3. Aumentare il codice sotto test in modo che il nuovo test passi:  
   
@@ -286,7 +286,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
      ![Esplora unit test &#45; Test intervallo superato](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
+    > Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
   
 ### <a name="debug"></a> Debug di un test non superato  
   
@@ -361,7 +361,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
      ![Tutti i test superati](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.  
+> Se i singoli test non hanno dipendenze che ne impediscono l'esecuzione in qualsiasi ordine, attivare l'esecuzione parallela dei test con l'interruttore ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") sulla barra degli strumenti. Questo può ridurre notevolmente il tempo impiegato per eseguire tutti i test.  
   
 ### <a name="refactor"></a> Eseguire il refactoring del codice senza modificare i test  
   
@@ -378,7 +378,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 2. Compilare la soluzione e scegliere **Esegui tutto**, per assicurarsi che non sia stato introdotto un errore.  
   
     > [!TIP]
-    >  Un buon set di test d'unità consente di assicurarsi che non siano stati introdotti bug con la modifica del codice.  
+    > Un buon set di test d'unità consente di assicurarsi che non siano stati introdotti bug con la modifica del codice.  
     >   
     >  Mantenere il refactoring separato da altre modifiche.  
   

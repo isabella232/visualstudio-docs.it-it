@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440026"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Proprietà di archiviazione calcolate e personalizzate
 Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) possono essere visualizzate all'utente nel diagramma e nella finestra di esplorazione del linguaggio e sono accessibili da codice programma. Tuttavia, le proprietà differiscono in modo che i relativi valori vengono archiviati.
@@ -50,7 +50,7 @@ Tutte le proprietà di dominio in un linguaggio specifico di dominio (DSL) posso
      Dsl\generatedcode\domainclasses.cs. o DomainRelationships.cs viene aperto. Sopra la chiamata al metodo evidenziato un commento viene richiesto di fornire un'implementazione di Get*proprietà*().
 
     > [!NOTE]
-    >  Questo file viene generato da Dsldefinition. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **Trasforma tutti i modelli**. Al contrario, aggiungere il metodo richiesto in un file separato.
+    > Questo file viene generato da Dsldefinition. Se si modifica questo file, le modifiche andranno perse la volta successiva che si fa clic su **Trasforma tutti i modelli**. Al contrario, aggiungere il metodo richiesto in un file separato.
 
 6. Creare o aprire un file di classe in una cartella distinta, ad esempio Customcoded\\*YourDomainClass*. cs.
 

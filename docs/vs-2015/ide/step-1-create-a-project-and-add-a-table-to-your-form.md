@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441914"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere una tabella al modulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
    1. Impostare la proprietà **BackColor** su **CornflowerBlue**. A tale scopo, aprire la finestra di dialogo **Colore sfondo** scegliendo la freccia a discesa accanto alla proprietà **BackColor** nella finestra **Proprietà**.  Quindi, scegliere la scheda **Web** nella finestra di dialogo **Colore sfondo** per visualizzare un elenco di nomi di colore disponibili.  
   
       > [!NOTE]
-      >  I colori non sono in ordine alfabetico e CornflowerBlue è vicino alla fine dell'elenco.  
+      > I colori non sono in ordine alfabetico e CornflowerBlue è vicino alla fine dell'elenco.  
   
    2. Impostare la proprietà **Dock** su **Fill** scegliendo il pulsante a discesa accanto alla proprietà, quindi il pulsante grande al centro. La tabella verrà espansa per includere l'intero form.  
   
@@ -77,12 +77,12 @@ Il primo passaggio nella creazione di un gioco delle coppie consiste nel creare 
         La cella superiore sinistra in TableLayoutPanel dovrebbe ora contenere un riquadro nero al centro su uno sfondo blu.  
   
        > [!NOTE]
-       >  Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.  
+       > Il tipo di carattere Webdings include una serie di icone ed è fornito con il sistema operativo Windows. Nel gioco delle coppie, il giocatore deve riuscire ad accoppiare le icone, per cui si utilizza questo tipo di carattere per visualizzare le icone da accoppiare. Anziché inserire **c** nella proprietà **Text**, provare a immettere lettere diverse per vedere quali icone vengono visualizzate. Il punto esclamativo equivale a un ragno, la N maiuscola a un occhio e la virgola a un peperoncino.  
   
 8. Scegliere il controllo dell'etichetta e copiarlo nella cella successiva in TableLayoutPanel. Premere i tasti CTRL+C oppure scegliere **Modifica**, **Copia** nella barra dei menu. Quindi incollarlo Premere i tasti CTRL+V oppure scegliere **Modifica**, **Incolla** nella barra dei menu. Nella seconda cella di TableLayoutPanel verrà visualizzata una copia della prima etichetta. Incollarlo nuovamente: un'altra etichetta sarà visualizzata nella terza cella. Continuare a incollare controlli `Label` fino a riempire tutte le celle.  
   
    > [!NOTE]
-   >  Se si incolla troppe volte, IDE aggiunge una nuova riga a TableLayoutPanel in modo da avere il posto per aggiungere il nuovo controllo etichetta. L'azione può essere annullata. Per rimuovere la nuova cella, premere i tasti CTRL+Z oppure scegliere **Modifica**, **Annulla** nella barra dei menu.  
+   > Se si incolla troppe volte, IDE aggiunge una nuova riga a TableLayoutPanel in modo da avere il posto per aggiungere il nuovo controllo etichetta. L'azione può essere annullata. Per rimuovere la nuova cella, premere i tasti CTRL+Z oppure scegliere **Modifica**, **Annulla** nella barra dei menu.  
   
     Ora il form è strutturato e deve apparire come l'immagine seguente.  
   

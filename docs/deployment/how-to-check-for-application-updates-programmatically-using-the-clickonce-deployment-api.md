@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e1f1b923b395121fb5671088d99421a79c45fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406609"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: Controllo programmatico degli aggiornamenti delle applicazioni attraverso l'API per la distribuzione ClickOnce
 ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione. Il primo metodo, è possibile configurare la distribuzione ClickOnce per cercare automaticamente gli aggiornamenti a intervalli specifici. Il secondo metodo, è possibile scrivere codice che usa il <xref:System.Deployment.Application.ApplicationDeployment> classe per cercare gli aggiornamenti basati su un evento, ad esempio una richiesta dell'utente.
@@ -30,7 +30,7 @@ ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione
  Per aggiornare un'applicazione ClickOnce a livello di codice, è necessario specificare un percorso per gli aggiornamenti. Ciò è talvolta detta un provider di distribuzione. Per altre informazioni su come impostare questa proprietà, vedere [sceglie una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 > [!NOTE]
->  È anche possibile usare la tecnica descritta di seguito per distribuire l'applicazione da un'unica posizione, ma è un aggiornamento da un'altra. Per altre informazioni, vedere [Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
+> È anche possibile usare la tecnica descritta di seguito per distribuire l'applicazione da un'unica posizione, ma è un aggiornamento da un'altra. Per altre informazioni, vedere [Procedura: Specificare un percorso alternativo per gli aggiornamenti della distribuzione](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
 
 ### <a name="to-check-for-updates-programmatically"></a>Per cercare gli aggiornamenti a livello di codice
 

@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442856"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accesso ai modelli da modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110492"
 Usando i modelli di testo, è possibile creare file di report, file di codice sorgente e altri file di testo che si basano sui modelli di linguaggio specifico di dominio. Per informazioni di base sui modelli di testo, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). I modelli di testo funzioneranno in modalità sperimentale quando si esegue il debug del linguaggio DSL e funzioneranno anche in un computer in cui è stato distribuito il linguaggio DSL.  
   
 > [!NOTE]
->  Quando si crea una soluzione DSL, modello di testo di esempio  **\*tt** vengono generati i file nel progetto di debug. Quando si modificano i nomi delle classi di dominio, questi modelli non funzionerà più. Tuttavia, includono le direttive di base che è necessario e vengono forniti esempi che è possibile aggiornare in modo che corrisponda al linguaggio DSL.  
+> Quando si crea una soluzione DSL, modello di testo di esempio  **\*tt** vengono generati i file nel progetto di debug. Quando si modificano i nomi delle classi di dominio, questi modelli non funzionerà più. Tuttavia, includono le direttive di base che è necessario e vengono forniti esempi che è possibile aggiornare in modo che corrisponda al linguaggio DSL.  
   
  Per accedere a un modello da un modello di testo:  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> L'accesso a più modelli da un modello di testo  
   
 > [!NOTE]
->  Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta riferimenti ModelBus. Per leggere i modelli che sono collegate tra esse tramite riferimenti ModelBus, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+> Questo metodo consente di leggere più modelli nello stesso modello, ma non supporta riferimenti ModelBus. Per leggere i modelli che sono collegate tra esse tramite riferimenti ModelBus, vedere [tramite ModelBus di Visual Studio in un modello di testo](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
  Se si desidera accedere a più di un modello dallo stesso modello di testo, è necessario chiamare il processore di direttiva generato una sola volta per ogni modello. È necessario specificare il nome del file di ogni modello nella `requires` parametro. È necessario specificare i nomi che si desidera utilizzare per la classe di dominio radice nel `provides` parametro. È necessario specificare valori diversi per il `provides` parametri in ognuna delle chiamate di direttiva. Ad esempio, si supponga di avere tre file modello chiamati Library.xyz School.xyz e Work.xyz. Per accedere ad essi dallo stesso modello di testo, è necessario scrivere tre chiamate simili a quelle seguenti.  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Questo esempio di codice è per una lingua che si basa sul modello di soluzione di linguaggio minimo.  
+> Questo esempio di codice è per una lingua che si basa sul modello di soluzione di linguaggio minimo.  
   
  Per accedere ai modelli nel modello di testo, è ora possibile scrivere codice simile al codice nell'esempio seguente.  
   

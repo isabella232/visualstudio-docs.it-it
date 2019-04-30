@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227c9c84022e3c3340b4821df9dbd2dbe9465a03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414679"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Procedura: Creare uno shader con Lambert di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.  
   
 > [!NOTE]
->  Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader. Un gioco o un'app può usare questo parametro per specificare un valore di colore univoco per ogni oggetto. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).  
+> Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader. Un gioco o un'app può usare questo parametro per specificare un valore di colore univoco per ogni oggetto. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).  
   
  ![Grafico shader e anteprima dell'effetto.](../designers/media/digit-lambert-effect-graph.png "Digit-Lambert-Effect-Graph")  
   

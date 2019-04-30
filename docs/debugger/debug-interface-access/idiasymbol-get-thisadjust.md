@@ -1,48 +1,50 @@
 ---
 title: IDiaSymbol::get_thisAdjust | Microsoft Docs
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_thisAdjust method
 ms.assetid: 56b9a147-e8c0-4d4b-a42a-398214dd5f86
-author: mikejo5000
+caps.latest.revision: 11
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: d63047375ce1e224a8e4ba70d4e1de8bf276c703
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400377"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-Recupera l'operatore logico `this` DS per il metodo.
+[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintassi
-
-```C++
-HRESULT get_thisAdjust ( 
-   LONG* pRetVal
-);
-```
-
-#### <a name="parameters"></a>Parametri
- `pRetVal`
-
-[out] Restituisce l'operatore logico `this` DS per il metodo.
-
-## <a name="return-value"></a>Valore restituito
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
-
+Recupera l'operatore logico `this` DS per il metodo.  
+  
+## <a name="syntax"></a>Sintassi  
+  
+```cpp#  
+HRESULT get_thisAdjust (   
+   LONG* pRetVal  
+);  
+```  
+  
+#### <a name="parameters"></a>Parametri  
+ `pRetVal`  
+ [out] Restituisce l'operatore logico `this` DS per il metodo.  
+  
+## <a name="return-value"></a>Valore restituito  
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
+  
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
-
-## <a name="remarks"></a>Osservazioni
- In alcuni casi ereditarietà più il metodo di stesso deve calcolare un vero e proprio `this` mediante l'aggiunta di un offset al valore `this`.
-
-## <a name="see-also"></a>Vedere anche
-- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+  
+## <a name="remarks"></a>Note  
+ In alcuni casi ereditarietà più il metodo di stesso deve calcolare un vero e proprio `this` mediante l'aggiunta di un offset al valore `this`.  
+  
+## <a name="see-also"></a>Vedere anche  
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

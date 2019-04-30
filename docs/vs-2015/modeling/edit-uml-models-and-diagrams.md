@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 157e605ae16167317e02e92070d859870b4709cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442975"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modificare modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "60060151"
 3. Nelle **aggiunta al progetto di modellazione**, selezionare un progetto di modellazione esistente o selezionare **creare un nuovo progetto di modellazione**.  
   
    > [!NOTE]
-   >  È necessario che il diagramma di modellazione sia presente all'interno di un progetto di modellazione.  
+   > È necessario che il diagramma di modellazione sia presente all'interno di un progetto di modellazione.  
   
    È inoltre possibile aggiungere un diagramma a un progetto di modellazione esistente in Esplora soluzioni. Fare clic sul progetto di modellazione, scegliere **Add**, quindi fare clic su **nuovo elemento**.  
   
@@ -97,7 +97,7 @@ ms.locfileid: "60060151"
  Esistono due tipi di strumenti, uno per gli elementi e uno per le relazioni. Ad esempio, nel diagramma classi UML casella degli strumenti **classe** è uno strumento elemento, e **Association** è uno strumento di relazione.  
   
 > [!NOTE]
->  Se si vuole informazioni specifiche di particolari tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
+> Se si vuole informazioni specifiche di particolari tipi di diagramma, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Per creare elementi e relazioni in un diagramma di modellazione UML  
   
@@ -106,14 +106,14 @@ ms.locfileid: "60060151"
     In alcuni casi, è possibile inserire un nuovo elemento all'interno di un altro elemento. Ad esempio, in un diagramma classi UML, è possibile inserire una classe all'interno di un pacchetto.  
   
    > [!NOTE]
-   >  Se non è possibile visualizzare la casella degli strumenti, fare clic su **casella degli strumenti** nel **visualizzazione** menu.  
+   > Se non è possibile visualizzare la casella degli strumenti, fare clic su **casella degli strumenti** nel **visualizzazione** menu.  
   
 2. Per creare una relazione, fare clic su uno strumento per le relazioni, fare clic sull'elemento da cui far iniziare la relazione e quindi fare clic sull'elemento con cui farla terminare.  
   
     Diversi tipi di relazioni possono iniziare o terminare in diversi tipi di elementi. Ad esempio, in un diagramma classi UML, una relazione di associazione non può iniziare o terminare in un elemento commento.  
   
    > [!NOTE]
-   >  Per usare lo stesso strumento più volte, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** dello strumento.  
+   > Per usare lo stesso strumento più volte, fare doppio clic sullo strumento. Al termine, scegliere il **puntatore** dello strumento.  
   
    In alcuni tipi di diagrammi, è anche possibile disegnare forme semplici. Queste forme non fanno parte del modello, ma è possibile usarle per attirare l'attenzione su parti del diagramma o per dividerlo in aree diverse.  
   
@@ -121,14 +121,14 @@ ms.locfileid: "60060151"
  Quando si ridimensiona o si colora una forma oppure si reindirizza un connettore, questa operazione non influisce sul modello sottostante. Quando però si rinomina una forma nel diagramma o in Esplora modelli UML, l'elemento corrispondente viene rinominato in Esplora modelli UML e in qualsiasi altro diagramma che presenta tale elemento.  
   
 > [!NOTE]
->  È possibile creare facilmente nuovi elementi della casella degli strumenti da cui creare gruppi di elementi o elementi con proprietà a scelta. Per altre informazioni, vedere [definire un oggetto personalizzato elemento della casella degli strumenti di modellazione](../modeling/define-a-custom-modeling-toolbox-item.md).  
+> È possibile creare facilmente nuovi elementi della casella degli strumenti da cui creare gruppi di elementi o elementi con proprietà a scelta. Per altre informazioni, vedere [definire un oggetto personalizzato elemento della casella degli strumenti di modellazione](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
  La figura seguente mostra come modificare le dimensioni o il nome di una forma.  
   
  ![Modificare un elemento del modello](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")  
   
 > [!TIP]
->  I comandi incorporati non includono un comando per allineare accuratamente le forme, Tuttavia, è possibile creare facilmente un comando di allineamento copiando il codice nell'esempio nella [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).  
+> I comandi incorporati non includono un comando per allineare accuratamente le forme, Tuttavia, è possibile creare facilmente un comando di allineamento copiando il codice nell'esempio nella [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).  
   
  La figura seguente mostra come regolare la route e la posizione di un connettore o delle sue etichette.  
   
@@ -178,12 +178,12 @@ ms.locfileid: "60060151"
      Nel **modifica** dal menu **Trova e sostituisci**, quindi fare clic su **ricerca veloce**.  
   
     > [!NOTE]
-    >  Nel **Trova e sostituisci** finestra di dialogo, è necessario lasciare il **esaminare** campo impostato su **documento corrente**. Le altre opzioni non sono supportate.  
+    > Nel **Trova e sostituisci** finestra di dialogo, è necessario lasciare il **esaminare** campo impostato su **documento corrente**. Le altre opzioni non sono supportate.  
   
 2. Digitare il testo che si desidera trovare e quindi fare clic su **Trova successivo**.  
   
     > [!NOTE]
-    >  Se il testo che si vuole trovare è all'interno di una forma compressa, la forma verrà evidenziata. Espandere la forma e quindi fare clic su **Trova successivo** nuovamente.  
+    > Se il testo che si vuole trovare è all'interno di una forma compressa, la forma verrà evidenziata. Espandere la forma e quindi fare clic su **Trova successivo** nuovamente.  
   
 ## <a name="Undo"></a> Annullamento delle modifiche al modello  
  È possibile annullare e ripristinare le modifiche apportate al modello e diagrammi usando il **annullare** e **rollforward** comandi il **modifica** menu.  
@@ -216,7 +216,7 @@ ms.locfileid: "60060151"
      Viene visualizzata una forma che offre una visualizzazione dell'elemento del modello, oltre alle visualizzazioni in altri diagrammi oppure nello stesso diagramma.  
   
     > [!NOTE]
-    >  L'effetto è diverso quando si trascina una classe o un componente in un diagramma di sequenza. In tal caso, viene creata una nuova linea di vita il cui tipo è quella classe o componente. Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+    > L'effetto è diverso quando si trascina una classe o un componente in un diagramma di sequenza. In tal caso, viene creata una nuova linea di vita il cui tipo è quella classe o componente. Per altre informazioni, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Per aggiungere una nuova visualizzazione di un elemento del modello usando Incolla riferimento  
   
@@ -229,23 +229,23 @@ ms.locfileid: "60060151"
      Appare un'altra visualizzazione dello stesso elemento.  
   
     > [!NOTE]
-    >  Questo comportamento è diverso dal **Incolla** comando, che crea un nuovo elemento del modello. Per altre informazioni, vedere [copia di elementi e i gruppi di elementi correlati](#Copying).  
+    > Questo comportamento è diverso dal **Incolla** comando, che crea un nuovo elemento del modello. Per altre informazioni, vedere [copia di elementi e i gruppi di elementi correlati](#Copying).  
   
 > [!NOTE]
->  Se si aggiungono a un diagramma visualizzazioni di due elementi del modello già connessi da una relazione, una visualizzazione della relazione apparirà anche nel diagramma. È possibile eliminare questa visualizzazione solo rimuovendo uno degli elementi dal diagramma o eliminando la relazione dal modello.  
+> Se si aggiungono a un diagramma visualizzazioni di due elementi del modello già connessi da una relazione, una visualizzazione della relazione apparirà anche nel diagramma. È possibile eliminare questa visualizzazione solo rimuovendo uno degli elementi dal diagramma o eliminando la relazione dal modello.  
   
 ## <a name="Copying"></a> Copia gli elementi e i gruppi di elementi correlati  
  È possibile copiare e incollare gli elementi del modello ed è possibile copiare e incollare gruppi di elementi e le relazioni tra di essi.  
   
 > [!NOTE]
->  Il **Incolla** e **Incolla riferimento** comandi hanno effetti diversi. **Incolla** crea nuovi elementi le cui proprietà sono simili a quelli degli elementi copiati. **Incolla riferimento** crea nuove visualizzazioni degli stessi elementi.  
+> Il **Incolla** e **Incolla riferimento** comandi hanno effetti diversi. **Incolla** crea nuovi elementi le cui proprietà sono simili a quelli degli elementi copiati. **Incolla riferimento** crea nuove visualizzazioni degli stessi elementi.  
   
 #### <a name="to-copy-elements-and-their-relationships"></a>Per copiare gli elementi e le loro relazioni  
   
 1. Nel diagramma con gli elementi da copiare selezionare uno o più elementi.  
   
     > [!NOTE]
-    >  Non è possibile copiare relazioni se non come parte di un gruppo di elementi.  
+    > Non è possibile copiare relazioni se non come parte di un gruppo di elementi.  
   
 2. Nel **Edit** menu, fare clic su **copia**.  
   
@@ -260,7 +260,7 @@ ms.locfileid: "60060151"
 5. Modificare le posizioni, i nomi e le altre proprietà dei nuovi elementi e delle nuove relazioni.  
   
 > [!NOTE]
->  Non è possibile copiare un elemento da un modello a un altro, ad esempio se sono presenti due modelli nella stessa soluzione, ma è possibile copiare gli elementi da un diagramma a un altro.  
+> Non è possibile copiare un elemento da un modello a un altro, ad esempio se sono presenti due modelli nella stessa soluzione, ma è possibile copiare gli elementi da un diagramma a un altro.  
   
 #### <a name="to-copy-an-entire-diagram"></a>Per copiare un intero diagramma  
   
@@ -276,7 +276,7 @@ ms.locfileid: "60060151"
  Al contrario, quando si elimina una relazione da un diagramma, la si elimina sempre anche dal modello.  
   
 > [!NOTE]
->  Alcuni tipi di elementi in un diagramma UML dispongono di etichette. Quando si selezionano questi elementi disegnandovi attorno un rettangolo, è possibile selezionare le etichette, ma non gli elementi proprietari delle etichette. L'eliminazione di un subset di elementi selezionati in questo modo non è supportata. Per selezionare un subset di questi elementi, premere e tenere premuto il **CTRL** mentre si fa clic su ogni elemento.  
+> Alcuni tipi di elementi in un diagramma UML dispongono di etichette. Quando si selezionano questi elementi disegnandovi attorno un rettangolo, è possibile selezionare le etichette, ma non gli elementi proprietari delle etichette. L'eliminazione di un subset di elementi selezionati in questo modo non è supportata. Per selezionare un subset di questi elementi, premere e tenere premuto il **CTRL** mentre si fa clic su ogni elemento.  
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Per rimuovere la visualizzazione di un classificatore da un diagramma  
   
@@ -303,7 +303,7 @@ ms.locfileid: "60060151"
 - Fare doppio clic la relazione in un diagramma o in **Esplora modelli UML**, quindi fare clic su **Elimina da modello**.  
   
     > [!CAUTION]
-    >  Non è possibile rimuovere una relazione da un diagramma senza rimuoverla dal modello.  
+    > Non è possibile rimuovere una relazione da un diagramma senza rimuoverla dal modello.  
   
      La relazione viene eliminata dal modello e da ogni diagramma in cui viene visualizzata.  
   

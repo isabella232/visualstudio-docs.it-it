@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414287"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procedura dettagliata: Inserire testo in un documento da un riquadro azioni
   Questa procedura dettagliata illustra come creare un riquadro azioni in un documento di Microsoft Office Word. Nel riquadro azioni contiene due controlli per la raccolta di input e quindi inviano il testo al documento.
@@ -34,7 +34,7 @@ ms.locfileid: "60088522"
 - Visualizzare il riquadro azioni quando si apre l'applicazione.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -78,7 +78,7 @@ ms.locfileid: "60088522"
 2. Selezionare la parola **Name**senza selezionare il segno di paragrafo e fare clic su **OK**.
 
     > [!NOTE]
-    >  Il segno di paragrafo deve essere di fuori del segnalibro. Se i segni di paragrafo non sono visibili nel documento, fare clic sui **degli strumenti** dal menu **strumenti di Microsoft Office Word** e quindi fare clic su **opzioni**. Fare clic sul **vista** scheda e selezionare il **segni di paragrafo** casella di controllo nel **segni di formattazione** sezione del **opzioni** nella finestra di dialogo.
+    > Il segno di paragrafo deve essere di fuori del segnalibro. Se i segni di paragrafo non sono visibili nel documento, fare clic sui **degli strumenti** dal menu **strumenti di Microsoft Office Word** e quindi fare clic su **opzioni**. Fare clic sul **vista** scheda e selezionare il **segni di paragrafo** casella di controllo nel **segni di formattazione** sezione del **opzioni** nella finestra di dialogo.
 
 3. Nel **delle proprietà** finestra Modifica il **nome** proprietà di **segnalibro1** a **showName**.
 

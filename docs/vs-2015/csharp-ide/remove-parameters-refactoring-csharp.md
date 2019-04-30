@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444629"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refactoring Rimuovi parametri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045798"
  Eseguire l'operazione di Rimuovi parametri, posizionare il cursore su un metodo, l'indicizzatore o delegato. Mentre il cursore si trova nella posizione, per richiamare il metodo Remove `Parameters` operazione, scegliere il **effettuare il refactoring** menu, premere il tasto di scelta rapida o selezionare il comando dal menu di scelta rapida.  
   
 > [!NOTE]
->  È possibile rimuovere il primo parametro in un metodo di estensione.  
+> È possibile rimuovere il primo parametro in un metodo di estensione.  
   
 ### <a name="to-remove-parameters"></a>Per rimuovere i parametri  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045798"
  È possibile rimuovere i parametri da una dichiarazione di metodo o una chiamata al metodo. Posizionare il cursore nel nome del delegato o dichiarazione di metodo e rimuovere parametri di richiamo.  
   
 > [!CAUTION]
->  Rimuovi parametri consente di rimuovere un parametro di cui viene fatto riferimento nel corpo del membro, ma non rimuove i riferimenti al parametro nel corpo del metodo. Ciò può introdurre errori di compilazione nel codice. Tuttavia, è possibile usare la **Anteprima modifiche** finestra di dialogo per esaminare il codice prima di eseguire l'operazione di refactoring.  
+> Rimuovi parametri consente di rimuovere un parametro di cui viene fatto riferimento nel corpo del membro, ma non rimuove i riferimenti al parametro nel corpo del metodo. Ciò può introdurre errori di compilazione nel codice. Tuttavia, è possibile usare la **Anteprima modifiche** finestra di dialogo per esaminare il codice prima di eseguire l'operazione di refactoring.  
   
  Se viene modificato un parametro che viene rimosso durante la chiamata a un metodo, la rimozione del parametro rimuoverà anche la modifica. Ad esempio, se una chiamata al metodo viene modificata da  
   

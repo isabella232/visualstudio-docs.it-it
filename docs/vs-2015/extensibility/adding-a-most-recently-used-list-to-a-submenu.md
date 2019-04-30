@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444869"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Aggiunta di un elenco usato più di recente a un sottomenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ Questa procedura dettagliata si basa sulle dimostrazioni [aggiunta di un sottome
 2. Nel **TestMenu** menu, fare clic su **richiamare TestCommand**. Questa operazione consente di visualizzare una finestra di messaggio che indica che il comando è stato selezionato.  
   
     > [!NOTE]
-    >  Questo passaggio è necessario forzare il pacchetto VSPackage per caricare e visualizzare correttamente l'elenco MRU. Se si ignora questo passaggio, non viene visualizzato l'elenco di usati di recente.  
+    > Questo passaggio è necessario forzare il pacchetto VSPackage per caricare e visualizzare correttamente l'elenco MRU. Se si ignora questo passaggio, non viene visualizzato l'elenco di usati di recente.  
   
 3. Nel **dal Menu Test** menu, fare clic su **sottomenu**. Viene visualizzato un elenco di quattro elementi alla fine del sottomenu di sotto di un separatore. Quando fa clic su **elemento 3**, una finestra di messaggio dovrà essere visualizzato e visualizzare il testo, "Selected Item 3". (Se non viene visualizzato l'elenco di quattro elementi, assicurarsi di aver seguito le istruzioni nel passaggio precedente.)  
   

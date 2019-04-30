@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440822"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flag della riga di comando del compilatore VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  I caratteri - (trattino) e / (barra) vengono entrambi notazione accettati per indicare i parametri della riga di comando.  
+> I caratteri - (trattino) e / (barra) vengono entrambi notazione accettati per indicare i parametri della riga di comando.  
   
  Di seguito sono riportati i flag accettabile e relativo significato.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Specificare eventuali altri simboli definiti.|  
 |-I|Indicare che percorsi da utilizzare durante la risoluzione di riferimenti a file di inclusione aggiuntive.|  
 |-L|Specificare il <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura, ad esempio "en-US".|  
-|-E|Creare C# gli oggetti nello spazio dei nomi specificato per gli elementi del comando, seguito da [C&#124;H&#124;N]:*filename*in cui C = C#, H = intestazione di C++, N = lo spazio dei nomi. Lo spazio dei nomi è necessaria per il linguaggio C#.|  
+|-E|Creare C# gli oggetti nello spazio dei nomi specificato per gli elementi del comando, seguito da [C&#124;H&#124;N]:*filename*in cui C = C#, H = C++ intestazione, N = lo spazio dei nomi. Lo spazio dei nomi è necessaria per il linguaggio c#.|  
 |-v|Output dettagliato.|  
   
  All'opzione -L indica al compilatore di selezionare un gruppo di stringhe per produrre il file CTO binario corrispondente per il dato <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura. Il nome delle impostazioni cultura specificato deve corrispondere all'attributo di linguaggio di uno o più [elemento Strings](../../extensibility/strings-element.md) nel file con estensione vsct. Se un elemento stringhe disponga di alcun attributo di linguaggio, è ereditata dal che contiene [elemento CommandTable](../../extensibility/commandtable-element.md).  
@@ -70,7 +70,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  Se il nome delle impostazioni cultura assegnato all'opzione -L non corrisponde all'attributo di linguaggio di qualsiasi elemento di stringhe, il compilatore proverà in modo che corrisponda alla lingua e non dell'area geografica. Ad esempio, se non viene trovato "en-US", il compilatore proverà "en" invece. In caso contrario, verrà effettuato un tentativo di impostazioni cultura correnti del sistema operativo. In caso contrario, esegue la compilazione del primo elemento di stringhe che viene trovato.  
   
- L'opzione -E utilizzabile per generare un file di intestazione di tipo C che contiene i simboli utilizzati per la tabella di comando o per generare un file C# che contiene gli oggetti per i simboli di comando.  
+ L'opzione -E utilizzabile per generare un file di intestazione di tipo C che contiene i simboli utilizzati per la tabella di comando o per generare un file c# che contiene gli oggetti per i simboli di comando.  
   
  -D e -I cambi di avere la sintassi dei flag per il preprocessore C Cl.exe che hanno lo stesso nome. – D per l'espansione del basato su XML vengano utilizzate le definizioni che hanno il formato X = Y \<definiti > test in `Condition` attributi. : I percorsi di inclusione vengono usati per risolvere \<inclusione >, \<Extern > e \<Bitmap > i riferimenti di file. Per altre informazioni, vedere la [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   

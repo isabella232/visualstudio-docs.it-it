@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442388"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici di dominio
 
@@ -294,7 +294,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
          Impostare il relativo nome, ad esempio **Town (città)**.
 
         > [!NOTE]
-        >  Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.
+        > Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.
 
     2. Aggiungere una proprietà di dominio per la nuova classe, ad esempio **nome**.
 
@@ -305,7 +305,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
          ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.
+        > Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.
 
 3. Aggiungere una forma per rappresentare i diagrammi del modello di città.
 

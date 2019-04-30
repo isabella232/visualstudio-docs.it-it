@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1eb503e9f5a9251cb9a348d29c7cd9636389a080
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385988"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Eseguire il wrapping delle clausole finally vulnerabili in un try esterno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58967778"
  Questa regola individua `try` / `finally` blocchi nel codice destinato alle versioni 1.0 e 1.1 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] che potrebbero essere vulnerabili ai filtri eccezioni dannoso presenti nello stack di chiamate. Se vengono eseguite operazioni, ad esempio la rappresentazione nel blocco try e viene generata un'eccezione, il filtro può essere eseguito prima il `finally` blocco. Nell'esempio della rappresentazione, ciò significa che il filtro viene eseguito come utente rappresentato. I filtri sono attualmente è possibile implementare solo in Visual Basic.
 
 > [!WARNING]
->  **Nota** nelle versioni 2.0 e versioni successive del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], il runtime protegge automaticamente una `try` / `catch` /  `finally` bloccare dai filtri eccezioni dannoso, se si verifica la reimpostazione direttamente all'interno del metodo che contiene il blocco di eccezioni.
+> **Nota** nelle versioni 2.0 e versioni successive del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], il runtime protegge automaticamente una `try` / `catch` /  `finally` bloccare dai filtri eccezioni dannoso, se si verifica la reimpostazione direttamente all'interno del metodo che contiene il blocco di eccezioni.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Posizionare il wrapping `try` / `finally` in un blocco try esterno. Vedere il secondo esempio che segue. In tal modo il `finally` da eseguire prima del codice di filtro.

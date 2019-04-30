@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5df1a0a6c3500da646d499ffacc3bb9827408c24
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433670"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Opzioni (finestra di dialogo), Progetti e soluzioni, Progetti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Imposta il server Web che i progetti Web useranno per lo sviluppo all'interno di
  Per impostazione predefinita, quando un progetto Web viene eseguito in Visual Studio (ad esempio, usando F5 o CTRL+F5), Visual Studio usa il server di sviluppo di Visual Studio. Per altre informazioni, vedere [Server Web in Visual Studio per progetti Web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
 > [!NOTE]
->  Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questa pagina della Guida è stata creata tenendo presenti le **Impostazioni Web**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le opzioni disponibili nelle finestre di dialogo e i nomi e i percorsi dei comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida a seconda dell'edizione o delle impostazioni attive. Questa pagina della Guida è stata creata tenendo presenti le **Impostazioni Web**. Per visualizzare o modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Impostazioni  
  **Utilizzare la versione a 64 bit di IIS Express per progetti e siti Web**  

@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405712"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     ```  
   
     > [!NOTE]
-    >  Il valore del campo priorità determina la posizione del comando nel nuovo gruppo di comando. Le priorità di impostare il CommandPlacement elemento sostituiscono quelli impostati nella definizione di elemento. I comandi che hanno valori di priorità inferiore vengono visualizzati prima i comandi che hanno valori di priorità superiore. Sono consentiti valori di priorità identici, ma la posizione relativa dei comandi con lo stesso valore di priorità non può essere garantita poiché l'ordine in cui il **devenv /setup** comando crea l'interfaccia finale dal Registro di sistema potrebbe non essere coerente.  
+    > Il valore del campo priorità determina la posizione del comando nel nuovo gruppo di comando. Le priorità di impostare il CommandPlacement elemento sostituiscono quelli impostati nella definizione di elemento. I comandi che hanno valori di priorità inferiore vengono visualizzati prima i comandi che hanno valori di priorità superiore. Sono consentiti valori di priorità identici, ma la posizione relativa dei comandi con lo stesso valore di priorità non può essere garantita poiché l'ordine in cui il **devenv /setup** comando crea l'interfaccia finale dal Registro di sistema potrebbe non essere coerente.  
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Inserire un gruppo riutilizzabile di pulsanti in un menu  
   

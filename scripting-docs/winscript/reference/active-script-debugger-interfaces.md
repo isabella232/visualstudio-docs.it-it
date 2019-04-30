@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422453"
 ---
 # <a name="active-script-debugger-interfaces"></a>Interfacce del debugger dello script ActiveX
 I file di intestazione activdbg.h e activdbg100.h forniscono le interfacce, le enumerazioni e le strutture elencate in questa sezione. Vengono utilizzati per il debug dello script.  
   
 > [!NOTE]
->  Le interfacce `IJSDebug*` e l'interfaccia `IEnumJsStackFrames` sono state rilasciate inizialmente con Internet Explorer 11 per il debug del codice nativo tramite script. Il file di intestazione per queste interfacce è jscript9diag.h.  
+> Le interfacce `IJSDebug*` e l'interfaccia `IEnumJsStackFrames` sono state rilasciate inizialmente con Internet Explorer 11 per il debug del codice nativo tramite script. Il file di intestazione per queste interfacce è jscript9diag.h.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  Le seguenti interfacce consentono il debug indipendente dalla lingua e dall'host:  

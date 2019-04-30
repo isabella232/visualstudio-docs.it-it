@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7027a02be666b7faa7d3d831d5c1d81a86ee2119
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400720"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
 Recupera il numero di slot della posizione. Quando usare le [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è `LocIsSlot`.
@@ -39,7 +39,7 @@ HRESULT get_slot ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

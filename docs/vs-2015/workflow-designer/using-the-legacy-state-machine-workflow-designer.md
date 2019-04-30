@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444120"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
 Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCLUDE[vs2010](../includes/vs2010-md.md)] che viene destinato al [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o il [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], è possibile scegliere di usare i **applicazione Console flusso di lavoro macchina a stati** o il  **Stato della libreria del flusso di lavoro di Machine** modello di progetto legacy. Se si sceglie uno di questi modelli di progetto della macchina a stati, la finestra di progettazione della macchina a stati viene presentata come interfaccia utente della finestra di progettazione del flusso di lavoro legacy. Per informazioni sui modelli progetto macchina a stati legacy, vedere [come: Creare applicazioni di Console del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [come: Creare una libreria del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Quando si crea un progetto del flusso di lavoro macchina a stati nuovo in [!INCL
  Quando si trascina un nuovo **StateActivity** nell'area di progettazione del flusso di lavoro, è possibile aggiungere [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), o altri **StateActivity** attività come attività figlio.  
   
 > [!CAUTION]
->  Quando si utilizza la finestra di progettazione dello stato del flusso di lavoro machine per creare flussi di lavoro, è necessario monitorare la struttura del flusso di lavoro si sta progettando con la **struttura documento** finestra di visualizzazione. La visualizzazione della struttura di lavoro macchina a stati nel **struttura documento** visualizzazione finestra rispecchia il layout logico delle attività nel file di markup del flusso di lavoro. Il layout fisico delle attività del flusso di lavoro, così come vengono visualizzate nell'area di progettazione, potrebbe non rispecchiare il layout logico delle attività nel file di markup del flusso di lavoro.  
+> Quando si utilizza la finestra di progettazione dello stato del flusso di lavoro machine per creare flussi di lavoro, è necessario monitorare la struttura del flusso di lavoro si sta progettando con la **struttura documento** finestra di visualizzazione. La visualizzazione della struttura di lavoro macchina a stati nel **struttura documento** visualizzazione finestra rispecchia il layout logico delle attività nel file di markup del flusso di lavoro. Il layout fisico delle attività del flusso di lavoro, così come vengono visualizzate nell'area di progettazione, potrebbe non rispecchiare il layout logico delle attività nel file di markup del flusso di lavoro.  
 >   
->  Per aprire la **struttura documento** finestra via il **View** dal menu **Other Windows**e quindi selezionare **struttura documento**.  
+> Per aprire la **struttura documento** finestra via il **View** dal menu **Other Windows**e quindi selezionare **struttura documento**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Creare applicazioni di Console del flusso di lavoro macchina a stati (Legacy)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

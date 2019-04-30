@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7cf338139da88fd4d3507ac7f6c7ab71dd881e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433526"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Procedura: Creare un'applicazione del servizio flusso di lavoro WCF
 Le applicazioni di servizi flusso di lavoro di [!INCLUDE[indigo1](../includes/indigo1-md.md)] sono servizi di comunicazioni distribuite che scambiano messaggi con i client oltre i limiti dei processi. L'implementazione del contratto di servizio sul lato servizio viene eseguita in modo dichiarativo tramite le attività del flusso di lavoro [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] in modo analogo ai servizi flusso di lavoro legacy di .NET Framework 3.5.  
@@ -38,7 +38,7 @@ Le applicazioni di servizi flusso di lavoro di [!INCLUDE[indigo1](../includes/in
 7. Nel **soluzione** casella, selezionare questa opzione per creare una nuova soluzione e quindi fare clic su **OK**.  
   
     > [!NOTE]
-    >  Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro la soluzione in **Esplora soluzioni**e selezionare **Add**, quindi  **Nuovo progetto...** Per aprire la **nuovo progetto** nella finestra di dialogo. Procedere come descritto sopra in questa procedura.  
+    > Se si desidera aggiungere un'applicazione console flusso di lavoro a una soluzione esistente, aprire la soluzione in [!INCLUDE[vs2010](../includes/vs2010-md.md)], fare clic con il pulsante destro la soluzione in **Esplora soluzioni**e selezionare **Add**, quindi  **Nuovo progetto...** Per aprire la **nuovo progetto** nella finestra di dialogo. Procedere come descritto sopra in questa procedura.  
   
 8. Il modello di progetto crea una definizione di servizio come XAML. [!INCLUDE[wfd1](../includes/wfd1-md.md)] viene aperto sulla visualizzazione Progettazione con un'attività <xref:System.Activities.Statements.Sequence> che contiene un set di attività <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply>.  
   

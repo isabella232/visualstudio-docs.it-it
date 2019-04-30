@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439951"
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114731"
 **Rinominare** è una funzionalità di refactoring nell'ambiente di sviluppo integrato (IDE) di Visual Studio che fornisce un modo semplice per rinominare gli identificatori per i simboli del codice, ad esempio campi, le variabili locali, metodi, gli spazi dei nomi, proprietà e i tipi. **Rinominare** può essere utilizzato per modificare i nomi nei commenti e nelle stringhe e modificare le dichiarazioni e le chiamate di un identificatore.  
   
 > [!NOTE]
->  Quando si utilizza controllo del codice sorgente per Visual Studio, ottenere la versione più recente delle origini prima di provare a eseguire il refactoring di ridenominazione.  
+> Quando si utilizza controllo del codice sorgente per Visual Studio, ottenere la versione più recente delle origini prima di provare a eseguire il refactoring di ridenominazione.  
   
  Refactoring di ridenominazione è disponibile tramite le funzionalità di Visual Studio seguenti:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114731"
 2. Nella dichiarazione per `MethodB`digitare o backspace l'identificatore del metodo. Verrà visualizzato un messaggio di smart tag di sotto di questo identificatore.  
   
     > [!NOTE]
-    >  È possibile richiamare solo il refactoring di ridenominazione usando gli smart tag in una dichiarazione di un identificatore.  
+    > È possibile richiamare solo il refactoring di ridenominazione usando gli smart tag in una dichiarazione di un identificatore.  
   
 3. Digitare il tasto di scelta rapida MAIUSC + ALT + F10 e quindi premere la freccia giù per visualizzare il menu smart tag.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114731"
  Se **rinominare gli overload** è selezionata, il motore di refactoring di ridenominazione `Derived.Method(int i)` perché esegue l'overload `Derived.Method()`, `Base.Method(int i)` perché vengono sostituiti da `Derived.Method(int i)`, e `Base.Method()` perché è un overload di `Base.Method(int i)`.  
   
 > [!NOTE]
->  Quando si rinomina un membro che è stato definito in un assembly di riferimento, una finestra di dialogo viene illustrato che l'operazione di ridenominazione causerà errori di compilazione.  
+> Quando si rinomina un membro che è stato definito in un assembly di riferimento, una finestra di dialogo viene illustrato che l'operazione di ridenominazione causerà errori di compilazione.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Ridenominazione di proprietà di tipi anonimi  
  Quando si rinomina una proprietà in tipi anonimi, l'operazione di ridenominazione verrà propagato alle proprietà di altri tipi anonimi che hanno le stesse proprietà. Gli esempi seguenti illustrano questo comportamento.  

@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440928"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gestire modelli e diagrammi nel controllo della versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Prestare attenzione quando diversi utenti lavorano sullo stesso progetto di modellazione. Scoprire come [organizzare modelli in progetti di medie o grandi dimensioni](../modeling/structure-your-modeling-solution.md).  
+> Prestare attenzione quando diversi utenti lavorano sullo stesso progetto di modellazione. Scoprire come [organizzare modelli in progetti di medie o grandi dimensioni](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="ModelingProjects"></a> File in un progetto di modellazione  
  Più utenti possono usare un progetto di modellazione contemporaneamente, purché lavorino su file diversi.  
@@ -42,7 +42,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
     - **DiagramName.classdiagram.layout** - Se questo file viene eliminato, le forme verranno comunque visualizzate nel diagramma, ma le loro dimensioni e posizioni andranno perse. Ogni file di layout è affiliato a un file di diagramma. Per visualizzarlo, fare clic su [+] accanto al file di diagramma in Esplora soluzioni.  
   
 > [!NOTE]
->  È importante mantenere la coerenza tra i file. Ad esempio, se si usa il controllo del codice sorgente per eseguire il rollback delle modifiche in un file UML, è necessario eseguire contemporaneamente il rollback delle modifiche corrispondenti nei file con estensione *diagram e layout. Gli elementi rappresentati in una. \*file del diagramma verranno perse se non sono inoltre rappresentati in un file con estensione UML.  
+> È importante mantenere la coerenza tra i file. Ad esempio, se si usa il controllo del codice sorgente per eseguire il rollback delle modifiche in un file UML, è necessario eseguire contemporaneamente il rollback delle modifiche corrispondenti nei file con estensione *diagram e layout. Gli elementi rappresentati in una. \*file del diagramma verranno perse se non sono inoltre rappresentati in un file con estensione UML.  
   
 ## <a name="Shared"></a> Lavorando su progetti di modellazione condivisi  
  Per ridurre al minimo i conflitti tra operazioni simultanee su parti diverse di un progetto:  
@@ -68,7 +68,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
 - Chiudere sempre tutti i diagrammi prima di eseguire un'operazione **Leggi** .  
   
     > [!NOTE]
-    >  Se un file viene aperto quando si esegue un'operazione **Leggi**e l'operazione comporta modifiche locali, verrà richiesto di ricaricare il file. In questo caso, fare clic su **No**, quindi ricaricare il progetto completo. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto di modellazione, scegliere **Scarica progetto**e quindi scegliere **Ricarica progetto**.  
+    > Se un file viene aperto quando si esegue un'operazione **Leggi**e l'operazione comporta modifiche locali, verrà richiesto di ricaricare il file. In questo caso, fare clic su **No**, quindi ricaricare il progetto completo. In **Esplora soluzioni**fare clic con il pulsante destro del mouse sul nodo del progetto di modellazione, scegliere **Scarica progetto**e quindi scegliere **Ricarica progetto**.  
   
 ### <a name="Exclusive"></a> Modifiche che richiedono l'accesso esclusivo al modello  
  Prima di eseguire i seguenti tipi di modifiche, assicurarsi che sia presente un blocco di estrazione per l'intero progetto.  
@@ -94,7 +94,7 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
      In Esplora soluzioni fare clic con il pulsante destro del mouse sulla cartella di destinazione o sul progetto, puntare ad **Aggiungi**e quindi fare clic su **Elemento esistente**. Nella finestra di dialogo selezionare il file di diagramma e quindi fare clic su **Aggiungi**. Il file di layout verrà aggiunto automaticamente.  
   
     > [!NOTE]
-    >  Non è possibile spostare il file in un progetto diverso.  
+    > Non è possibile spostare il file in un progetto diverso.  
   
 ## <a name="Merging"></a> Unione delle modifiche nei file di modello e diagrammi  
  Quando più utenti lavorano su un modello contemporaneamente, [!INCLUDE[esprscc](../includes/esprscc-md.md)] richiederà di unire le modifiche nei file di modello. Lavorando su progetti separati come descritto nelle sezioni precedenti è possibile evitare la maggior parte delle unioni. In genere i conflitti rimanenti possono essere uniti automaticamente in modo sicuro. I seguenti tipi di modifiche non dovrebbero comportare alcuna difficoltà:  

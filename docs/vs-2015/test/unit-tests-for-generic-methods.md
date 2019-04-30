@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445947"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un Test in una soluzione ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un Test in una soluzione ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Esempio 2: Uso di un vincolo di tipo  
  Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo che non viene soddisfatto. La prima sezione mostra il codice del progetto di codice sottoposto a test. Il vincolo di tipo è evidenziato.  

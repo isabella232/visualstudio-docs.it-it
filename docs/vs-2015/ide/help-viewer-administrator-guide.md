@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445692"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guida dell'amministratore di Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 - L'origine predefinita per la Guida sarà ancora Online.  
   
   > [!TIP]
-  >  È possibile cambiare l'origine predefinita per la Guida modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+  > È possibile cambiare l'origine predefinita per la Guida modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
 - Ai client verrà ancora richiesto di installare il contenuto della Guida di base al primo avvio di Visual Studio. È possibile disabilitare questa richiesta modificando la chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ Il visualizzatore della Guida consente di gestire le installazioni della Guida l
 - Gli utenti devono disporre dei diritti di amministratore per aggiornare, aggiungere o rimuovere il contenuto della Guida locale dopo l'installazione.  
   
   > [!TIP]
-  >  Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
+  > Se gli utenti non dispongono dei diritti di amministratore, si consiglia di disabilitare la scheda Gestisci contenuto nel visualizzatore della Guida. Per altre informazioni, vedere [Override di Gestione contenuto della Guida](../ide/help-content-manager-overrides.md).  
   
   Avvertenze:  
   

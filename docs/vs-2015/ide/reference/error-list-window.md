@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437220"
 ---
 # <a name="error-list-window"></a>Finestra Elenco errori
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 NOTA]
->  L'elenco degli errori consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra di output. Per visualizzare la finestra di output, selezionare i tasti Ctrl+Alt+O. Vedere [Finestra di output](../../ide/reference/output-window.md).  
+> L'elenco degli errori consente di visualizzare informazioni su un messaggio di errore specifico. È possibile copiare il testo della stringa di errore o il numero di errore nella finestra di output. Per visualizzare la finestra di output, selezionare i tasti Ctrl+Alt+O. Vedere [Finestra di output](../../ide/reference/output-window.md).  
   
  È possibile sviluppare applicazioni più velocemente usando la finestra **Elenco errori**. Ad esempio, è possibile effettuare le attività seguenti:  
   
@@ -50,7 +50,7 @@ NOTA]
   Per ordinare l'elenco, fare clic sull'intestazione di una colonna. Per ordinare nuovamente l'elenco in base a una colonna aggiuntiva, fare clic sull'intestazione di un'altra colonna tenendo premuto il tasto MAIUSC. Per selezionare le colonne da visualizzare e quelle da nascondere, scegliere **Mostra colonne** dal menu di scelta rapida. Per modificare l'ordine di visualizzazione delle colonne, trascinare l'intestazione di una colonna verso sinistra o verso destra.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, fare clic su **Strumenti/Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella presente Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, fare clic su **Strumenti/Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtri Elenco errori  
  Esistono due tipi di filtro in due caselle a discesa, una sul lato destro della barra degli strumenti e una a sinistra della barra degli strumenti. Nell'elenco a discesa sul lato sinistro della barra degli strumenti viene specificato il set di file di codice da usare (**Intera soluzione**, **Documenti aperti**, **Progetto corrente**, **Documento corrente**).  
@@ -62,7 +62,7 @@ NOTA]
 2. **Progetto corrente**: visualizza errori, avvisi e messaggi presenti nel progetto del documento attualmente selezionato in **Editor** o nel progetto selezionato in **Esplora soluzioni**.  
   
    > [!NOTE]
-   >  L'elenco filtrato di errori, avvisi e messaggi verrà modificato se il progetto del documento attualmente selezionato è diverso dal progetto selezionato in **Esplora soluzioni**.  
+   > L'elenco filtrato di errori, avvisi e messaggi verrà modificato se il progetto del documento attualmente selezionato è diverso dal progetto selezionato in **Esplora soluzioni**.  
   
 3. **Documento corrente**: visualizza errori, avvisi e messaggi per il documento attualmente selezionato in **Editor** o in **Esplora soluzioni**.  
   

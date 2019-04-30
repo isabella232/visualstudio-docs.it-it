@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009338"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
 Se lo Script di Windows motore consente gli scriptlet di codice di testo non elaborato da aggiungere allo script oppure consente di testo dell'espressione deve essere valutata in fase di esecuzione, implementa la `IActiveScriptParse` interfaccia. Nei linguaggi di scripting interpretati che non dispongono di alcun ambiente di creazione indipendente, ad esempio VBScript, si fornisce un meccanismo alternativo (diverso da `IPersist*`) per ottenere codice di script nel motore di scripting e collegare i frammenti di script per oggetti diversi eventi.  

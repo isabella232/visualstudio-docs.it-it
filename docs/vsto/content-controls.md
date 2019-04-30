@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445594"
 ---
 # <a name="content-controls"></a>Controlli del contenuto
   I controlli contenuto permettono di progettare documenti e modelli che hanno le caratteristiche seguenti:
@@ -72,7 +72,7 @@ ms.locfileid: "60062178"
   Nei progetti a livello di documento è possibile aggiungere controlli contenuto al documento in fase di progettazione o di esecuzione. Nei progetti di componente aggiuntivo VSTO è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione. Per altre informazioni, vedere [Procedura: Aggiungere controlli contenuto a documenti di Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 > [!NOTE]
->  È possibile usare controlli contenuto solo in documenti salvati in formato Open XML. È possibile usare controlli contenuto in documenti vengono salvati nel documento di Word 97-2003 (*doc*) formato.
+> È possibile usare controlli contenuto solo in documenti salvati in formato Open XML. È possibile usare controlli contenuto in documenti vengono salvati nel documento di Word 97-2003 (*doc*) formato.
 
 ## <a name="types-of-content-controls"></a>Tipi di controlli contenuto
  Sono disponibili nove diversi tipi di controlli contenuto che è possibile aggiungere ai documenti. Per la maggior parte dei controlli contenuto è presente un tipo corrispondente nello spazio dei nomi <xref:Microsoft.Office.Tools.Word>. È anche possibile aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> generico, che può rappresentare uno qualsiasi dei controlli contenuto disponibili. Per una procedura dettagliata che illustra come usare ognuno dei controlli contenuto disponibili, vedere [procedura dettagliata: Creare un modello mediante controlli contenuto](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
@@ -137,7 +137,7 @@ ms.locfileid: "60062178"
   Se l'area che si vuole proteggere non si trova all'interno di un controllo contenuto o se si vuole proteggere un'area che include controlli contenuto e altri tipi di contenuto, è possibile inserire l'intera area in un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Diversamente da altri controlli contenuto, un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> non fornisce alcuna interfaccia utente visibile all'utente. Il suo unico scopo è definire un'area che non può essere modificata dagli utenti.
 
 > [!NOTE]
->  Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. È necessario usare il **LockContents** proprietà di ogni controllo incorporato per impedire agli utenti di modificarne il contenuto.
+> Se si crea un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> che include controlli contenuto incorporati, questi non vengono automaticamente protetti. È necessario usare il **LockContents** proprietà di ogni controllo incorporato per impedire agli utenti di modificarne il contenuto.
 
  Per altre informazioni su come usare controlli contenuto per proteggere parti di documenti, vedere [come: Proteggere parti di documenti mediante controlli contenuto](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062178"
  I controlli contenuto supportano anche il data binding bidirezionale, in cui le modifiche nel controllo vengono aggiornate nell'origine dati. Per altre informazioni, vedere [Procedura: Aggiornare un'origine dati con dati provenienti da un controllo host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 > [!NOTE]
->  I controlli contenuto non supportano il data binding complesso. Se si associa un oggetto <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> o <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a un'origine dati usando il modello di dati di Windows Form, gli utenti visualizzeranno un solo valore quando fanno clic sul controllo. Per associare questi controlli a un set di valori di dati da cui gli utenti possono scegliere, è possibile associare i controlli a elementi in una parte XML personalizzata.
+> I controlli contenuto non supportano il data binding complesso. Se si associa un oggetto <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> o <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a un'origine dati usando il modello di dati di Windows Form, gli utenti visualizzeranno un solo valore quando fanno clic sul controllo. Per associare questi controlli a un set di valori di dati da cui gli utenti possono scegliere, è possibile associare i controlli a elementi in una parte XML personalizzata.
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>Associare controlli contenuto a parti XML personalizzate
  È possibile associare alcuni controlli contenuto a elementi in parti XML personalizzate incorporate nel documento. Per altre informazioni sulle parti XML personalizzate, vedere [panoramica delle parti XML personalizzate](../vsto/custom-xml-parts-overview.md).

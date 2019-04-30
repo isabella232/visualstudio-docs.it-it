@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d51474f2e242f764a84edaa9f2712418c859460
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408703"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Cosa&#39;s novità di Visual Studio 2015 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,9 +63,9 @@ A partire da Visual Studio 2017, l'analisi per progetto personalizzato e i model
  I modelli di elemento di Visual Studio SDK usano NuGet per i relativi riferimenti e gli strumenti di compilazione in modo che si ottengono i vantaggi di NuGet per impostazione predefinita.
 
 > [!NOTE]
->  È possibile continuare a usare gli assembly di riferimento di Visual Studio SDK installati con i progetti (sotto \<percorso di installazione di Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e i progetti di estendibilità esistenti non devono essere aggiornato per usare i pacchetti NuGet.  Il progetto **fa riferimento / aggiungere riferimento** dialogo continua a usare gli assembly di riferimento di Visual Studio SDK installato.
+> È possibile continuare a usare gli assembly di riferimento di Visual Studio SDK installati con i progetti (sotto \<percorso di installazione di Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e i progetti di estendibilità esistenti non devono essere aggiornato per usare i pacchetti NuGet.  Il progetto **fa riferimento / aggiungere riferimento** dialogo continua a usare gli assembly di riferimento di Visual Studio SDK installato.
 >
->  Se si desidera modificare i progetti esistenti per usare NuGet, vedere [come: Eseguire la migrazione di pacchetti VSPackage in Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) che dispone di una sezione sull'aggiornamento di progetti di estendibilità per i pacchetti NuGet.
+> Se si desidera modificare i progetti esistenti per usare NuGet, vedere [come: Eseguire la migrazione di pacchetti VSPackage in Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) che dispone di una sezione sull'aggiornamento di progetti di estendibilità per i pacchetti NuGet.
 
 ## <a name="light-bulbs"></a>Lampadine
  Uno dei modi più interessanti nuovo della scrittura del codice di estensione viene fornito dal progetto di Roslyn. Per altre informazioni, vedere [Roslyn](https://github.com/dotnet/Roslyn).

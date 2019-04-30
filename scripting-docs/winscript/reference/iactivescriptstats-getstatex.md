@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442783"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Restituisce una statistica di script personalizzato.  
@@ -50,7 +50,7 @@ HRESULT GetStatEx(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_NOTIMPL`|Il metodo non è implementato.|  
@@ -59,7 +59,7 @@ HRESULT GetStatEx(
  Questo metodo consente a un motore di script personalizzato restituire statistiche significative per un host personalizzato.  
   
 > [!NOTE]
->  Questo metodo non è attualmente implementato.  
+> Questo metodo non è attualmente implementato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

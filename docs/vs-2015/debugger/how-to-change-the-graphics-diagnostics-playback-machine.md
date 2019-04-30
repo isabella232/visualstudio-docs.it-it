@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb14fb4017ea1df6659b9a1a0ac093cd7cf7e0b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444819"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procedura: Modificare il computer di riproduzione della diagnostica della grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60045153"
 4. Scegliere il pulsante **Seleziona**.  
   
 > [!NOTE]
->  Il **connessioni Debugger remoto** nella finestra di dialogo può inoltre essere visualizzate le destinazioni di debug remote che sono direttamente connessi al computer di sviluppo o che sono nella stessa subnet. È possibile usare una di queste destinazioni di debug remote come computer di riproduzione della diagnostica della grafica senza configurarlo manualmente. Nel **le connessioni Remote Debugger** finestra di dialogo, selezionare la destinazione desiderata, quindi scegliere il **selezionare** pulsante.  
+> Il **connessioni Debugger remoto** nella finestra di dialogo può inoltre essere visualizzate le destinazioni di debug remote che sono direttamente connessi al computer di sviluppo o che sono nella stessa subnet. È possibile usare una di queste destinazioni di debug remote come computer di riproduzione della diagnostica della grafica senza configurarlo manualmente. Nel **le connessioni Remote Debugger** finestra di dialogo, selezionare la destinazione desiderata, quindi scegliere il **selezionare** pulsante.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Documento di log della grafica](../debugger/graphics-log-document.md)

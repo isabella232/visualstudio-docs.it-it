@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417913"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>Note  
   
 > [!WARNING]
->  A partire [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL`. Vedere le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaccia di amministrazione di un approccio alternativo se il nodo programma deve indicare non è possibile collegare o se il nodo di programma è semplicemente l'impostazione del programma `GUID`. In caso contrario, implementare il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) (metodo).  
+> A partire [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], questo metodo non viene più usato e deve sempre restituire `E_NOTIMPL`. Vedere le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaccia di amministrazione di un approccio alternativo se il nodo programma deve indicare non è possibile collegare o se il nodo di programma è semplicemente l'impostazione del programma `GUID`. In caso contrario, implementare il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) (metodo).  
   
 ## <a name="prior-to-visual-studio-2005"></a>Prima di Visual Studio 2005  
  Questo metodo deve essere implementata solo se la Germania viene eseguito nello spazio degli indirizzi del programma in fase di debug. In caso contrario, questo metodo deve restituire `S_FALSE`.  

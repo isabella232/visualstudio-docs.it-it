@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403248"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Aggiunta di un comando alla barra degli strumenti di Esplora soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Questa procedura dettagliata viene illustrato come aggiungere un pulsante per la
  Per altre informazioni sui menu, i comandi della barra degli strumenti e i file con estensione vsct, vedere [comandi, menu e barre degli strumenti](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Usare i file di tabella comandi XML (con estensione vsct) anziché i file di configurazione (con estensione CTC) nella tabella di comando per definire come menu e comandi vengono visualizzate in VSPackage. Per altre informazioni, vedere [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Usare i file di tabella comandi XML (con estensione vsct) anziché i file di configurazione (con estensione CTC) nella tabella di comando per definire come menu e comandi vengono visualizzate in VSPackage. Per altre informazioni, vedere [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

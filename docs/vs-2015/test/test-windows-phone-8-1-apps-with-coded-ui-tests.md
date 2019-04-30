@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387021"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testare app di Windows Phone 8.1 e UWP con test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Usare questa procedura guidata per creare test dell'interfaccia utente per app U
      In Esplora soluzioni aprire il file CodedUITest1.vb. Nel codice del metodo di test CodedUITestMethod1() fare clic con il pulsante destro sulla chiamata al metodo di asserzione `Me.UIMap.AssertMethod1()` automaticamente aggiunto e scegliere **Vai a definizione**. Verrà aperto il file UIMap.Designer.vb nell'editor del codice per visualizzare il codice aggiunto per il metodo di asserzione e i controlli.  
   
     > [!WARNING]
-    >  Non modificare direttamente il file UIMap.designer.cs o UIMap.Designer.vb perché, così facendo, le modifiche apportate al file verrebbero sovrascritte ogni volta che viene generato il test.  
+    > Non modificare direttamente il file UIMap.designer.cs o UIMap.Designer.vb perché, così facendo, le modifiche apportate al file verrebbero sovrascritte ogni volta che viene generato il test.  
   
      **Metodo Assert**  
   

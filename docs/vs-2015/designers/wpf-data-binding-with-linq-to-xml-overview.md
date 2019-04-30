@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403410"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Associazione dati in Windows Presentation Foundation  
  L'associazione dati WPF consente a un elemento dell'interfaccia utente di associare una delle proprietà a un'origine dati. Un semplice esempio di questo comportamento è <xref:System.Windows.Controls.Label> il cui testo presenta il valore di una proprietà pubblica in un oggetto definito dall'utente. L'associazione dati WPF si basa sui componenti seguenti:  
   
-|Componente|Description|  
+|Componente|Descrizione|  
 |---------------|-----------------|  
 |Destinazione di associazione|Elemento dell'interfaccia utente da associare all'origine dati. Gli elementi visivi di WPF sono derivati dalla classe <xref:System.Windows.UIElement>.|  
 |Proprietà di destinazione|*Proprietà di dipendenza* della destinazione di associazione che riflette il valore dell'origine del data binding. Le proprietà della dipendenza sono supportate direttamente dalla classe <xref:System.Windows.DependencyObject>, da cui deriva <xref:System.Windows.UIElement>.|  
@@ -56,12 +56,12 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
   Per altre informazioni sul data binding in WPF, vedere [Associazione dati (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Proprietà dinamiche nelle classi LINQ to XML  
- La maggior parte delle classi LINQ to XML non sono qualificate come origini di dati dinamici WPF appropriate. Alcune delle informazioni più utili sono disponibili solo tramite i metodi (e non proprietà) e le proprietà di queste classi non implementano le notifiche di modifica. Per supportare il data binding WPF, in LINQ to XML viene esposto un set di *proprietà dinamiche*.  
+ La maggior parte delle classi LINQ to XML non sono qualificate come origini di dati dinamici WPF appropriate: Alcune delle informazioni più utili sono disponibili solo tramite i metodi (e non proprietà) e le proprietà di queste classi non implementano le notifiche di modifica. Per supportare il data binding WPF, in LINQ to XML viene esposto un set di *proprietà dinamiche*.  
   
  Queste proprietà dinamiche sono proprietà speciali di runtime che duplicano la funzionalità dei metodi e delle proprietà esistenti nelle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement>. Sono state aggiunte a queste classi unicamente per consentirne l'uso come origini dati dinamiche per WPF. Per soddisfare questa esigenza, tutte queste proprietà dinamiche implementano le notifiche delle modifiche. Un riferimento dettagliato per queste proprietà dinamiche è presentato nella sezione successiva, [Proprietà dinamiche di LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Molte delle proprietà pubbliche standard, disponibili nelle varie classi nello spazio dei nomi <xref:System.Xml.Linq>, possono essere usate per l'associazione dati unica. Tenere presente, tuttavia, in questo schema non verrà aggiornata né l'origine né la destinazione.  
+> Molte delle proprietà pubbliche standard, disponibili nelle varie classi nello spazio dei nomi <xref:System.Xml.Linq>, possono essere usate per l'associazione dati unica. Tenere presente, tuttavia, in questo schema non verrà aggiornata né l'origine né la destinazione.  
   
 ### <a name="accessing-dynamic-properties"></a>Accesso alle proprietà dinamiche  
  Non è possibile accedere alle proprietà dinamiche delle classi <xref:System.Xml.Linq.XAttribute> e <xref:System.Xml.Linq.XElement> come alle proprietà standard. Ad esempio, nei linguaggi conformi a CLR quale C# non è possibile:  

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437598"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60060657"
 |Modulo (solo VB)|metodo, proprietà, campo, evento, costruttore, costante|  
   
 > [!NOTE]
->  Rendere più concisa la dichiarazione di proprietà se le funzioni di accesso get e set della proprietà non necessitano di logica aggiuntiva mediante proprietà implementate automaticamente (solo C#). Per visualizzare la firma completa, scegliere **Modifica il formato membri**, **Visualizza firma completa** dal menu **Diagramma classi**. Per altre informazioni sulle proprietà implementate automaticamente, vedere [Proprietà implementate automaticamente](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Rendere più concisa la dichiarazione di proprietà se le funzioni di accesso get e set della proprietà non necessitano di logica aggiuntiva mediante proprietà implementate automaticamente (solo C#). Per visualizzare la firma completa, scegliere **Modifica il formato membri**, **Visualizza firma completa** dal menu **Diagramma classi**. Per altre informazioni sulle proprietà implementate automaticamente, vedere [Proprietà implementate automaticamente](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Attività comuni  
   
@@ -85,10 +85,10 @@ ms.locfileid: "60060657"
 - Finestra Dettagli classe  
   
 > [!NOTE]
->  È inoltre possibile creare costruttori e distruttori attenendosi alle procedure descritte in questa sezione. Tenere presente che costruttori e distruttori sono tipi speciali di metodi e, in quanto tali, vengono visualizzatili nel raggruppamento **Metodi** nelle forme del diagramma classi e nella sezione **Metodi** della griglia delle finestra Dettagli classe.  
+> È inoltre possibile creare costruttori e distruttori attenendosi alle procedure descritte in questa sezione. Tenere presente che costruttori e distruttori sono tipi speciali di metodi e, in quanto tali, vengono visualizzatili nel raggruppamento **Metodi** nelle forme del diagramma classi e nella sezione **Metodi** della griglia delle finestra Dettagli classe.  
   
 > [!NOTE]
->  L'unica entità che è possibile aggiungere a un delegato è il parametro. Si noti che la procedura "Per creare un membro utilizzando la barra degli strumenti della finestra Dettagli classe" non è valida per questa operazione.  
+> L'unica entità che è possibile aggiungere a un delegato è il parametro. Si noti che la procedura "Per creare un membro utilizzando la barra degli strumenti della finestra Dettagli classe" non è valida per questa operazione.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Per creare un membro utilizzando Progettazione classi  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60060657"
 3. Modificare i valori nei campi della griglia della finestra Dettagli classe. Dopo ogni modifica premere INVIO oppure spostare lo stato attivo dal campo modificato, ad esempio premendo TAB. Il codice verrà immediatamente aggiornato in base alle modifiche apportate.  
   
     > [!NOTE]
-    >  Se si desidera modificare solo il nome di un membro, è possibile farlo mediante la modifica sul posto.  
+    > Se si desidera modificare solo il nome di un membro, è possibile farlo mediante la modifica sul posto.  
   
 ## <a name="AddMethodParams"></a> Aggiunta di parametri a metodi  
  Utilizzare la finestra Dettagli classe per aggiungere parametri ai metodi. I parametri possono essere configurati per essere obbligatori o facoltativi. Se si specifica un valore per la proprietà **Valore predefinito facoltativo** di un parametro, la finestra di progettazione genererà il codice come parametro facoltativo.  
@@ -216,10 +216,10 @@ ms.locfileid: "60060657"
   La finestra proprietà vengono visualizzate le stesse proprietà dei parametri visualizzata nella finestra Dettagli classe: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.  
   
 > [!NOTE]
->  Per aggiungere un parametro a un delegato, vedere [Creazione di membri](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Per aggiungere un parametro a un delegato, vedere [Creazione di membri](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Anche se è un metodo, un distruttore non può avere parametri.  
+> Anche se è un metodo, un distruttore non può avere parametri.  
   
 ### <a name="HowToAddParameterToMethod"></a> Per aggiungere un parametro a un metodo  
   
@@ -254,7 +254,7 @@ ms.locfileid: "60060657"
 4. Nella finestra Proprietà digitare un valore per la proprietà **Valore predefinito facoltativo**. L'impostazione della proprietà Valore predefinito facoltativo di un parametro lo rende facoltativo.  
   
     > [!NOTE]
-    >  I parametri facoltativi devono essere gli ultimi parametri presenti nell'elenco di parametri.  
+    > I parametri facoltativi devono essere gli ultimi parametri presenti nell'elenco di parametri.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Note sull'uso di Dettagli classe  
  Leggere i suggerimenti riportati di seguito relativi all'utilizzo della finestra Dettagli classe.  
