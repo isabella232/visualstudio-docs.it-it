@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32d887cad92de28df7e84f71fe6b991ada9067e2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 828497eac8bb2751baeca8b1fe19b5aeb5aae6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446812"
 ---
 # <a name="idisperrorqueryerrorinfo"></a>IDispError::QueryErrorInfo
 Recupera un determinato tipo di informazioni sull'errore.  
@@ -54,7 +54,7 @@ HRESULT QueryErrorInfo(
  Il `QueryErrorInfo` metodo recupera un determinato tipo di informazioni sull'errore.  
   
 > [!NOTE]
->  Questo metodo non è implementato.  
+> Questo metodo non è implementato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDispError](../../winscript/reference/idisperror-interface.md)

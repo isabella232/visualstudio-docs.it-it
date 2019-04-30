@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446938"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aggiornamento delle personalizzazioni della barra multifunzione nei progetti di Office migrati a .NET Framework 4 o .NET Framework 4.5
   Se il progetto contiene una personalizzazione della barra multifunzione che è stata creata utilizzando il **sulla barra multifunzione (finestra di progettazione visiva)** dell'elemento di progetto, è necessario apportare le modifiche seguenti al codice del progetto se il framework di destinazione viene modificato nel [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o in un secondo momento.
@@ -75,7 +75,7 @@ ms.locfileid: "60096543"
 3. Nel metodo `InitializeComponent` modificare il codice con il quale viene costruito un controllo barra multifunzione in modo che il codice usi invece uno dei metodi di supporto dell'oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
-    >  Nei progetti Visual C# è necessario espandere l'area denominata `Component Designer generated code` per visualizzare il metodo `InitializeComponent`.
+    > Nei progetti Visual C# è necessario espandere l'area denominata `Component Designer generated code` per visualizzare il metodo `InitializeComponent`.
 
      Ad esempio, si supponga che il file contenga la riga di codice seguente con la quale viene creata un'istanza di un oggetto <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> denominata `button1` in un progetto destinato a .NET Framework 3.5.
 

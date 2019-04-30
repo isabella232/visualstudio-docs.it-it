@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff28f0f552bcad6792e4d252a92e45e9a6fd38c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446954"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Restituisce una descrizione testuale dell'errore.  
@@ -50,7 +50,7 @@ HRESULT GetDescription(
  Il testo viene restituito nella lingua specificata dall'identificatore delle impostazioni locali (LCID) che è stato passato a `IDispatchEx::InvokeEx` per il metodo che si è verificato l'errore.  
   
 > [!NOTE]
->  Questo metodo non è implementato.  
+> Questo metodo non è implementato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDispError](../../winscript/reference/idisperror-interface.md)   

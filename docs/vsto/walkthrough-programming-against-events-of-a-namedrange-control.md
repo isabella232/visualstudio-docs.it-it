@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446929"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Procedura dettagliata: Programmazione per eventi di un controllo NamedRange
   Questa procedura dettagliata illustra come aggiungere un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo a un foglio di lavoro di Microsoft Office Excel e un programma per i relativi eventi usando gli strumenti di sviluppo per Office in Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049932"
 - Testare il progetto.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -119,7 +119,7 @@ ms.locfileid: "60049932"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Poiché facendo doppio clic su una cella in un intervallo di Excel passa alla modalità di modifica, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> evento si verifica quando la selezione viene spostata all'esterno dell'intervallo, anche se si è verificata alcuna modifica al testo.
+    > Poiché facendo doppio clic su una cella in un intervallo di Excel passa alla modalità di modifica, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> evento si verifica quando la selezione viene spostata all'esterno dell'intervallo, anche se si è verificata alcuna modifica al testo.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Aggiungere il codice per rispondere a SelectionChange (evento)
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049932"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Poiché facendo doppio clic su una cella in un intervallo di Excel fa in modo che la selezione spostare nell'intervallo, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> evento si verifica prima il <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> evento si verifica.
+    > Poiché facendo doppio clic su una cella in un intervallo di Excel fa in modo che la selezione spostare nell'intervallo, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> evento si verifica prima il <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> evento si verifica.
 
 ## <a name="test-the-application"></a>Testare l'applicazione
  A questo punto è possibile testare la cartella di lavoro per verificare che il testo che descrive gli eventi di un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo viene inserito in un altro intervallo denominato quando vengono generati gli eventi.

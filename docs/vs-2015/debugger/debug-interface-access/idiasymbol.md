@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447240"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  Nella tabella seguente sono illustrati i metodi di `IDiaSymbol`.  
   
 > [!NOTE]
->  I simboli restituirà dati significativi solo per alcuni di questi metodi, a seconda del tipo di simbolo. Se un metodo restituisce `S_OK`, tale metodo ha restituito dati significativi.  
+> I simboli restituirà dati significativi solo per alcuni di questi metodi, a seconda del tipo di simbolo. Se un metodo restituisce `S_OK`, tale metodo ha restituito dati significativi.  
   
 |Metodo|Descrizione|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  In questo esempio viene illustrato come visualizzare le variabili locali per una funzione in un determinato indirizzo virtuale relativo. Viene inoltre illustrato come i simboli di tipi diversi sono correlati tra loro.  
   
 > [!NOTE]
->  `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
+> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  
