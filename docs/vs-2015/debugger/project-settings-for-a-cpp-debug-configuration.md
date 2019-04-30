@@ -112,12 +112,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ea5740b66187f97cacb43edfc1ea0d77d6cb8d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87b8913a95203d082a76e8b18a92d2f509cace16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446169"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ ms.locfileid: "58969736"
 È possibile modificare le impostazioni di progetto per una configurazione di debug C o Visual C++ nel **pagine delle proprietà** finestra di dialogo, come descritto in [come: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
   
 > [!WARNING]
->  Le impostazioni di progetto di debug nel **proprietà configurazione/Debug** categoria per le app di Windows Store e i componenti scritti in C++ sono diversi. Visualizzare [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) nel centro per sviluppatori Windows.  
+> Le impostazioni di progetto di debug nel **proprietà configurazione/Debug** categoria per le app di Windows Store e i componenti scritti in C++ sono diversi. Visualizzare [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) nel centro per sviluppatori Windows.  
   
  Specificare il debugger da usare nel **Debugger da avviare** casella di riepilogo. Le proprietà visualizzate variano in funzione del debugger selezionato.  
   
@@ -165,7 +165,7 @@ ms.locfileid: "58969736"
   
 |Impostazione|Descrizione|  
 |-------------|-----------------|  
-|**Optimization**|Specifica se il codice generato dal compilatore deve essere ottimizzato. Per effetto dell'ottimizzazione, il codice eseguito viene modificato. Poiché il codice ottimizzato non corrisponde più al codice sorgente, il debug risulterà più complesso.<br /><br /> In base all'opzione predefinita (Disabilitato (/0d **), l'ottimizzazione non viene eseguita. È possibile disattivare l'ottimizzazione durante la fase di sviluppo e attivarla quando si crea la versione di produzione del codice.|  
+|**Optimization**|Specifica se il codice generato dal compilatore deve essere ottimizzato. Per effetto dell'ottimizzazione, il codice eseguito viene modificato. Poiché il codice ottimizzato non corrisponde più al codice sorgente, il debug risulterà più complesso.<br /><br /> In base all'opzione predefinita (**Disabilitato (/0d**), l'ottimizzazione non viene eseguita. È possibile disattivare l'ottimizzazione durante la fase di sviluppo e attivarla quando si crea la versione di produzione del codice.|  
   
 ### <a name="linker-folder-debugging-category"></a>Cartella Linker (categoria Debug)  
   

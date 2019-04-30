@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414822"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizzazione del comportamento di copia
 In un linguaggio di specifico di dominio (DSL) creato con la visualizzazione e Visual Studio Modeling SDK, è possibile modificare cosa accade quando l'utente copia e Incolla gli elementi.
@@ -232,7 +232,7 @@ Vedere [How to: Aggiungere un gestore di trascinamento e rilascio](../modeling/h
  Molti aspetti del comportamento di un DSL in relazione di copia, Incolla, la creazione e l'eliminazione di oggetti sono governati da un'istanza di <xref:Microsoft.VisualStudio.Modeling.ElementOperations> accoppiata al diagramma. È possibile modificare il comportamento di un DSL derivando una classe personalizzata dalla <xref:Microsoft.VisualStudio.Modeling.ElementOperations> ed eseguire l'override di <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> proprietà della classe diagramma.
 
 > [!TIP]
->  Per altre informazioni sulla personalizzazione del modello usando codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Per altre informazioni sulla personalizzazione del modello usando codice programma, vedere [esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagramma sequenza per l'operazione Copia](../modeling/media/dslcopyseqdiagram.png)
 
@@ -242,7 +242,7 @@ Vedere [How to: Aggiungere un gestore di trascinamento e rilascio](../modeling/h
 
 1. In un nuovo file del progetto DSL creare una classe derivata da <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs.**.
+2. Aggiungere una definizione di classe parziale per la propria classe diagramma. Il nome di questa classe è reperibile nel **dsl\generatedcode\diagrams.cs**.
 
     Nella classe diagramma sovrascrivere <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> per restituire un'istanza della sottoclasse ElementOperations. È necessario restituire la stessa istanza ad ogni chiamata.
 

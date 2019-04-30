@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444340"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
 - Acquisizione di informazioni grafiche  
   
 > [!NOTE]
->  Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per fornire funzionalità di acquisizione, Windows 8.1 supporta direttamente l'acquisizione mediante Direct3D 11.2. Di conseguenza, per l'acquisizione a livello di codice in Windows 8.1 non è più necessario installare Remote Tools.  
+> Le implementazioni precedenti di acquisizione a livello di codice si basavano su Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per fornire funzionalità di acquisizione, Windows 8.1 supporta direttamente l'acquisizione mediante Direct3D 11.2. Di conseguenza, per l'acquisizione a livello di codice in Windows 8.1 non è più necessario installare Remote Tools.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparazione dell'app per usare l'acquisizione a livello di codice  
  Per usare l'acquisizione a livello di codice nell'app, deve includere le intestazioni necessarie. Queste intestazioni fanno parte di Windows 8.1 SDK.  
@@ -58,10 +58,10 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ```  
   
     > [!IMPORTANT]
-    >  Non includere l'intestazione file vsgcapture.h—which supporta l'acquisizione programmatica in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app di Windows 8.1. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'intestazione d3d11_2.h è inclusa, il compilatore genera un avviso. Se viene inclusa vsgcapture. h prima d3d11_2.h, l'app non verrà avviato.  
+    > Non includere l'intestazione file vsgcapture.h—which supporta l'acquisizione programmatica in Windows 8.0 e versioni precedenti, per eseguire l'acquisizione a livello di codice nelle app di Windows 8.1. Questa intestazione non è compatibile con DirectX 11.2. Se questo file è incluso dopo l'intestazione d3d11_2.h è inclusa, il compilatore genera un avviso. Se viene inclusa vsgcapture. h prima d3d11_2.h, l'app non verrà avviato.  
   
     > [!NOTE]
-    >  Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.  
+    > Se nel computer è installata la versione di DirectX SDK del giugno 2010 e il percorso di inclusione del progetto contiene `%DXSDK_DIR%includex86`, spostarlo alla fine del percorso di inclusione. Eseguire la stessa operazione per il percorso della libreria.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
  Perché Windows Phone 8.1 SDK non include l'intestazione dxprogrammablecapture. H, è necessario definire il `IDXGraphicsAnalysis` interfaccia manualmente in modo che è possibile usare il `BeginCapture()` e `EndCapture()` metodi. Includere altre intestazioni come descritto nella sezione precedente.  
@@ -85,7 +85,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
  Prima di poter acquisire informazioni grafiche da DirectX 11.2, è necessario ottenere l'interfaccia di debug DXGI.  
   
 > [!IMPORTANT]
->  Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app nella diagnostica della grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o sotto la [strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md).  
+> Quando si usa l'acquisizione a livello di codice, è comunque necessario eseguire l'app nella diagnostica della grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) o sotto la [strumento di acquisizione da riga di comando](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Per ottenere l'interfaccia IDXGraphicsAnalysis  
   
@@ -106,7 +106,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
     ```  
   
     > [!NOTE]
-    >  Se si include `DXGIGetDebugInterface1` restituisce `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), assicurarsi che l'app sia in esecuzione nella diagnostica grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
+    > Se si include `DXGIGetDebugInterface1` restituisce `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), assicurarsi che l'app sia in esecuzione nella diagnostica grafica (ALT+F5 in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]).  
   
 ### <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche  
  Ora che si dispone di un'interfaccia `IDXGraphicsAnalysis` valida, è possibile usare `BeginCapture` e `EndCapture` per acquisire informazioni grafiche.  
@@ -150,7 +150,7 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
  In alternativa, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installa i componenti necessari per eseguire l'acquisizione remota per app a 32 bit.  
   
 > [!NOTE]
->  Poiché la maggior parte delle app desktop Windows, compreso [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], non è supportata in [!INCLUDE[win8](../includes/win8-md.md)] per i dispositivi ARM, usare Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] insieme all'API di acquisizione a livello di codice rappresenta l'unico modo per acquisire diagnostica grafica nei dispositivi ARM.  
+> Poiché la maggior parte delle app desktop Windows, compreso [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], non è supportata in [!INCLUDE[win8](../includes/win8-md.md)] per i dispositivi ARM, usare Remote Tools per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] insieme all'API di acquisizione a livello di codice rappresenta l'unico modo per acquisire diagnostica grafica nei dispositivi ARM.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparazione dell'app per usare l'acquisizione a livello di codice  
  Per usare gli strumenti di diagnostica grafica, occorre prima di tutto acquisire le informazioni grafiche necessarie. È possibile acquisire le informazioni a livello di codice usando l'API `CaptureCurrentFrame` .  
@@ -182,16 +182,16 @@ La funzionalità Diagnostica grafica di [!INCLUDE[vsprvs](../includes/vsprvs-md.
   
    Se non si esegue questo passaggio, il file verrà denominato default.vsglog. Se `DONT_SAVE_VSGLOG_TO_TEMP`non è stato definito, il percorso del file è relativo alla directory temporanea. In caso contrario, è relativo alla directory di lavoro o a un'altra posizione se è stato specificato un nome file assoluto.  
   
-  Per la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] le app, il percorso della directory temporanea è specifico per ogni utente e dell'app e si trova in genere in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp.\\.  
+  Per la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] le app, il percorso della directory temporanea è specifico per ogni utente e dell'app e si trova in genere in un percorso, ad esempio C:\users\\*username*\AppData\Local\Packages\\ *nome famiglia pacchetto*\TempState\\. Per le app desktop, il percorso della directory temporanea è specifico per ogni utente e si trova in genere in un percorso, ad esempio C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
+> Per scrivere in una posizione specifica è necessario disporre delle autorizzazioni per la scrittura in quella posizione. In caso contrario, si verificherà un errore. Tenere presente che le app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] hanno più restrizioni rispetto alle app desktop sui percorsi in cui è possibile scrivere dati e che per scrivere in determinati percorsi può essere necessario eseguire operazioni di configurazione aggiuntive.  
   
 ### <a name="capturing-the-graphics-information"></a>Acquisizione delle informazioni grafiche  
  Dopo aver preparato l'app per l'acquisizione a livello di codice e aver facoltativamente configurato il percorso e il nome del file di log della grafica, compilare l'applicazione ed eseguirla o eseguire il debug per acquisire i dati; non avviare la diagnostica grafica da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando si usa l'API di acquisizione a livello di codice. Il log di grafica viene scritto nel percorso specificato. Se si vuole conservare questa versione del log, spostarlo in un altro percorso. In caso contrario, verrà sovrascritto quando si esegue nuovamente l'app.  
   
 > [!TIP]
->  Quando si usa l'acquisizione a livello di codice, è comunque possibile acquisire informazioni grafiche manualmente premendo **STAMP**con l'app in stato attivo. Si può usare questa tecnica per acquisire informazioni grafiche aggiuntive, che non vengono acquisite dall'API di acquisizione a livello di codice.  
+> Quando si usa l'acquisizione a livello di codice, è comunque possibile acquisire informazioni grafiche manualmente premendo **STAMP**con l'app in stato attivo. Si può usare questa tecnica per acquisire informazioni grafiche aggiuntive, che non vengono acquisite dall'API di acquisizione a livello di codice.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche a livello di codice. Come passaggio successivo, prendere in considerare questa opzione:  
