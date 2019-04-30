@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434437"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedura: Modificare il punto di perno di un modello 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Questo documento illustra come usare l'editor dei modelli per modificare il *pun
     È possibile specificare il punto di perno anche tramite la proprietà **Traslazione perno** della finestra **Proprietà**.  
   
    > [!TIP]
-   >  È possibile visualizzare l'effetto del nuovo punto di perno ruotando l'oggetto. Per ruotarlo, usare lo strumento **Ruota** o modificare la proprietà **Rotazione**.  
+   > È possibile visualizzare l'effetto del nuovo punto di perno ruotando l'oggetto. Per ruotarlo, usare lo strumento **Ruota** o modificare la proprietà **Rotazione**.  
   
    Di seguito è riportato un modello con un punto di perno modificato:  
   

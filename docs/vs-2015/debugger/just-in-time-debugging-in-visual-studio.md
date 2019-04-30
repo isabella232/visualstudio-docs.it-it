@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431438"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debug JIT in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ L'attività da eseguire quando viene visualizzato il Visual Studio Just-in-Time 
 5. Chiudi il **dell'Editor del Registro di sistema** finestra.
 
 > [!NOTE]
->  Se si sta tentando di disabilitare il debug per un'app sul lato server Just-In-Time e questi passaggi non consentono di risolvere il problema, disattivare il debug sul lato server nelle impostazioni dell'applicazione IIS e riprovare.
+> Se si sta tentando di disabilitare il debug per un'app sul lato server Just-In-Time e questi passaggi non consentono di risolvere il problema, disattivare il debug sul lato server nelle impostazioni dell'applicazione IIS e riprovare.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Per attivare il debug JIT di Windows Form
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Affinché questa procedura per lavorare in un [configurazione di rilascio](../debugger/how-to-set-debug-and-release-configurations.md), è necessario disattivare [Just My Code](../debugger/just-my-code.md). In Visual Studio, fare clic su **Strumenti / opzioni**. Nel **le opzioni** finestra di dialogo, seleziona **debug**. Rimuovere il segno di spunta dalla **Abilita Just My Code**.
+> Affinché questa procedura per lavorare in un [configurazione di rilascio](../debugger/how-to-set-debug-and-release-configurations.md), è necessario disattivare [Just My Code](../debugger/just-my-code.md). In Visual Studio, fare clic su **Strumenti / opzioni**. Nel **le opzioni** finestra di dialogo, seleziona **debug**. Rimuovere il segno di spunta dalla **Abilita Just My Code**.
 
  Compilare la soluzione (in Visual Studio, scegliere **Build / Ricompila soluzione**). È possibile scegliere il Debug o la configurazione di rilascio. Per altre informazioni sulle configurazioni della build, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Non fare clic **annullare**! Dopo alcuni secondi, verranno visualizzati due pulsanti, **Debug** e **Chiudi programma**. Fare clic su **Debug**.
 
 > [!CAUTION]
->  Se l'applicazione contiene codice non attendibile, viene visualizzata una finestra di dialogo con un avviso di sicurezza. Questa finestra di dialogo consente di decidere se procedere o meno con il debug. Prima di continuare con il debug, decidere se ritenere attendibile o meno il codice. Se il codice è stato scritto da altri, decidere se ritenere attendibile o meno l'autore. Se l'applicazione è in esecuzione in un computer remoto, assicurarsi di riconoscere il nome del processo. Anche se l'applicazione è in esecuzione in un computer locale, non significa che possa essere ritenuta attendibile. Prendere in considerazione la possibilità di codice dannoso in esecuzione nel computer. Se si decide che il codice si sta per il debug è attendibile, fare clic su **Debug**. In caso contrario, fare clic su **non eseguire il Debug**.
+> Se l'applicazione contiene codice non attendibile, viene visualizzata una finestra di dialogo con un avviso di sicurezza. Questa finestra di dialogo consente di decidere se procedere o meno con il debug. Prima di continuare con il debug, decidere se ritenere attendibile o meno il codice. Se il codice è stato scritto da altri, decidere se ritenere attendibile o meno l'autore. Se l'applicazione è in esecuzione in un computer remoto, assicurarsi di riconoscere il nome del processo. Anche se l'applicazione è in esecuzione in un computer locale, non significa che possa essere ritenuta attendibile. Prendere in considerazione la possibilità di codice dannoso in esecuzione nel computer. Se si decide che il codice si sta per il debug è attendibile, fare clic su **Debug**. In caso contrario, fare clic su **non eseguire il Debug**.
 
  Il **Debugger JIT di Visual Studio** verrà visualizzata la finestra:
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8162e44d92399a4b2031f6dc30b1f9dc56ae22e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6de3313dad06c009244a8b784e81bf7d2a768c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443120"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>Procedura: Includere un assembly personalizzato in una funzionalità di integrazione applicativa dei dati
   Il progetto può fare riferimento agli assembly da altri progetti nella stessa soluzione. Tuttavia, è necessario aggiungere questi assembly nel file di funzionalità del progetto usando il **assegnazione fa riferimento agli assembly di oggetti LobSystem** nella finestra di dialogo.
@@ -40,12 +40,12 @@ ms.locfileid: "60059623"
 4. Nel **selezionare un Assembly** scegliere l'assembly personalizzato.
 
     > [!NOTE]
-    >  Gli assembly vengono visualizzati solo nel **Assign fare riferimento agli assembly di oggetti LobSystem** finestra di dialogo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+    > Gli assembly vengono visualizzati solo nel **Assign fare riferimento agli assembly di oggetti LobSystem** finestra di dialogo se è stato aggiunto un riferimento al progetto che contiene l'assembly. Per altre informazioni, vedere [Procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 5. Nel **le proprietà di riferimento** gruppo, aprire l'elenco visualizzato per il **ambito LobSystem** proprietà, scegliere il sistema LOB dei metodi che usano l'assembly personalizzato e quindi scegliere il **OK**  pulsante.
 
     > [!NOTE]
-    >  Per eseguire il debug di codice nell'assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
+    > Per eseguire il debug di codice nell'assembly personalizzato, è necessario aggiungere l'assembly al pacchetto della soluzione. Per altre informazioni, vedere [Procedura: Aggiungere e rimuovere assembly aggiuntivi](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Usare un file di risorse per specificare nomi localizzati, proprietà e autorizzazioni](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)

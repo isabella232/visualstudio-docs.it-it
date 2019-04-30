@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386770"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../includes/vbtec
  Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Ad esempio, se vengono create classi di entità con mapping alle tabelle Customers e Orders di Northwind, la classe Customer rappresenta la classe padre e la classe Order rappresenta la classe figlio.  
   
 > [!NOTE]
->  Quando si trascinano tabelle da **Esplora Server**/**Database Explorer** nel [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), le associazioni vengono create automaticamente in base alle esistente relazioni di chiave esterna nel database.  
+> Quando si trascinano tabelle da **Esplora Server**/**Database Explorer** nel [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), le associazioni vengono create automaticamente in base alle esistente relazioni di chiave esterna nel database.  
   
  Dopo aver creato un'associazione, quando si seleziona l'associazione nella finestra di Progettazione relazionale oggetti, esistono alcune proprietà configurabili nel **proprietà** finestra. (l'associazione rappresenta la linea tra le classi correlate). Nella tabella seguente vengono descritte le proprietà di un'associazione.  
   

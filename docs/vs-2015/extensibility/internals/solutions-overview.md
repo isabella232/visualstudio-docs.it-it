@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432072"
 ---
 # <a name="solutions-overview"></a>Panoramica delle soluzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme
  Qualsiasi pacchetto VSPackage può scrivere in entrambi i tipi di file della soluzione. A causa della natura dei file, esistono due diverse interfacce implementate per scrivere su di esse. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfaccia scrive le informazioni di testo nel file con estensione sln e <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaccia scrive il file con estensione suo flussi binari.  
   
 > [!NOTE]
->  Un progetto non è necessario scrivere in modo esplicito una voce per se stessa nel file di soluzione; l'ambiente di questo problema viene gestito per il progetto. Pertanto, a meno che non si desidera aggiungere altro contenuto in modo specifico per il file della soluzione, è necessario registrare il VSPackage in questo modo.  
+> Un progetto non è necessario scrivere in modo esplicito una voce per se stessa nel file di soluzione; l'ambiente di questo problema viene gestito per il progetto. Pertanto, a meno che non si desidera aggiungere altro contenuto in modo specifico per il file della soluzione, è necessario registrare il VSPackage in questo modo.  
   
  Ogni pacchetto VSPackage che supporta la persistenza di soluzione Usa tre interfacce, il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaccia, che viene implementata dall'ambiente e chiamato dal pacchetto VSPackage, e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts`, che sono entrambi implementati dal pacchetto VSPackage. Il `IVsPersistSolutionOpts` interfaccia deve solo essere implementato se deve essere scritta dal pacchetto VSPackage nel file con estensione suo informazioni private.  
   
@@ -44,7 +44,7 @@ Una soluzione è un raggruppamento di uno o più progetti che funzionano insieme
    Informazioni specifiche relative all'utilizzo di questi file sono reperibile [soluzione (. File sln)](../../extensibility/internals/solution-dot-sln-file.md) e [opzioni utente della soluzione (. File suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Se si desidera creare una nuova configurazione soluzione costituito da configurazioni due progetti ed esclusione di un terzo della compilazione, è necessario usare l'interfaccia utente di pagine di proprietà o l'automazione. Non è possibile modificare le configurazioni di gestione di compilazione di soluzioni e le relative proprietà direttamente, ma è possibile modificare il gestore di compilazione della soluzione usando il `SolutionBuild` classe nel modello di automazione DTE. Per altre informazioni sulla configurazione di soluzioni, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
+> Se si desidera creare una nuova configurazione soluzione costituito da configurazioni due progetti ed esclusione di un terzo della compilazione, è necessario usare l'interfaccia utente di pagine di proprietà o l'automazione. Non è possibile modificare le configurazioni di gestione di compilazione di soluzioni e le relative proprietà direttamente, ma è possibile modificare il gestore di compilazione della soluzione usando il `SolutionBuild` classe nel modello di automazione DTE. Per altre informazioni sulla configurazione di soluzioni, vedere [configurazione della soluzione](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

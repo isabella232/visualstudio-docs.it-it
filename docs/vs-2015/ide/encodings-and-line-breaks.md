@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 88f04720610bad5064f7f9d7a43beef2410b045f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6ceec5e44ade219f069e72f712129a137d70875f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437530"
 ---
 # <a name="encodings-and-line-breaks"></a>Codifiche e interruzioni di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ ms.locfileid: "54787466"
 In Visual Studio è possibile usare le impostazioni **File/Opzioni di salvataggio avanzate** per determinare il tipo di caratteri dell'interruzione di riga. Con le stesse impostazioni è anche possibile modificare la codifica di un file.  
   
 > [!NOTE]
->  Se si usano determinati tipi di impostazioni di sviluppo (Visual Basic, F#, sviluppo Web), l'impostazione **Opzioni di salvataggio avanzate** potrebbe non essere visualizzata nel menu. Per modificare le impostazioni (ad esempio in Generale), aprire **Strumenti / Importa ed Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Se si usano determinati tipi di impostazioni di sviluppo (Visual Basic, F#, sviluppo Web), l'impostazione **Opzioni di salvataggio avanzate** potrebbe non essere visualizzata nel menu. Per modificare le impostazioni (ad esempio in Generale), aprire **Strumenti / Importa ed Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  In Visual Studio i caratteri seguenti vengono interpretati come interruzioni di riga:  
   
-- CRLF: ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A  
+- CRLF: Ritorno a capo + avanzamento riga, caratteri Unicode 000D + 000A  
   
-- LF: avanzamento riga, carattere Unicode 000A  
+- LF: Avanzamento riga, carattere Unicode 000A  
   
-- NEL:rRiga successiva, carattere Unicode 0085  
+- NEL: Riga successiva, carattere Unicode 0085  
   
-- LF: separatore di riga, carattere Unicode 2028  
+- LS: Separatore di riga, carattere Unicode 2028  
   
-- PS: separatore di paragrafo, carattere Unicode 2029  
+- PS: Separatore di paragrafo, carattere Unicode 2029  
   
   Il testo che viene copiato da altre applicazioni mantiene la codifica e i caratteri originali dell'interruzione di riga. Ad esempio, quando il testo viene copiato da Blocco note e incollato in un file di testo in Visual Studio, il testo mantiene le stesse impostazioni che aveva in Blocco note.  
   

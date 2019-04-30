@@ -12,12 +12,12 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b2b5ca848da4ca680be819e41a8053b21a7d0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b2fd8f3d7e4f3637957ef11c4acb20ba51261d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442669"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procedura: Offrire il supporto per la struttura espansa in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,6 +53,6 @@ Sono disponibili due opzioni per l'estensione di supporto per la struttura per i
 3. Se esiste già una sessione di testo, quindi non è necessaria creare uno e un puntatore esistente <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> viene restituito l'oggetto. Utilizzare questo puntatore per enumerare e creano aree della struttura. In caso contrario, chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> per creare una sessione di testo nascosto per il buffer. Un puntatore al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> viene restituito l'oggetto.  
   
     > [!NOTE]
-    >  Quando si chiama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, è possibile specificare un client di testo nascosto (vale a dire un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> oggetto). Il client invia una notifica quando un testo nascosto o area della struttura è espanso o compresso dall'utente.  
+    > Quando si chiama <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, è possibile specificare un client di testo nascosto (vale a dire un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> oggetto). Il client invia una notifica quando un testo nascosto o area della struttura è espanso o compresso dall'utente.  
   
 4. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> struttura) parametro: Specificare il valore <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> nella `iType` membro del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura per indicare che si sta creando un'area della struttura, anziché un'area nascosta. Specificare se l'area è controllato dal client o dall'editor nel `dwBehavior` membro del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura. L'implementazione della struttura intelligente può contenere una combinazione di aree della struttura dell'editor e controllato dal client. Specificare il testo dell'intestazione visualizzato quando l'area della struttura è compressa, ad esempio "...", nelle `pszBanner` membro del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura. Testo dell'intestazione dell'editor predefinita per un'area nascosta è "...".

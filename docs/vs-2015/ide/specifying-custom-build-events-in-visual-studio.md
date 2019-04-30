@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441952"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifica di eventi di compilazione personalizzati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Se si specifica un evento di compilazione personalizzato, sarà possibile esegui
      Esempio: `for %I in (*.txt *.doc *.html) do copy %I c:\`*directory*`\`
 
     > [!NOTE]
-    >  `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
+    > `%I` nel codice sopra riportato deve essere `%%I` negli script batch.
 
 ## <a name="see-also"></a>Vedere anche
  [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md) [pre-compilazione/Post-compilazione eventi finestra di dialogo riga di comando](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caratteri speciali di MSBuild](../msbuild/msbuild-special-characters.md) [procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)

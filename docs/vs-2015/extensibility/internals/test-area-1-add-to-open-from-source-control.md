@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441252"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 - Per [!INCLUDE[vsvss](../../includes/vsvss-md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../includes/vsvss-md.md)] posizione.  
   
     > [!NOTE]
-    >  Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.  
+    > Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.  
   
 ## <a name="expected-behavior"></a>Comportamento previsto  
   

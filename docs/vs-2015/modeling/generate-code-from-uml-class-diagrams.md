@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442420"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generare codice da diagrammi classi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
 2. Nel **delle proprietà** finestra, scegliere la freccia a discesa nel **stereotipi** proprietà e quindi selezionare la casella di controllo relativa allo stereotipo da applicare.  
 
    > [!TIP]
-   >  Se gli stereotipi C# non sono visualizzati, abilitare il profilo C# per il modello o per un pacchetto contenente gli elementi del modello desiderati. Selezionare il pacchetto o la radice del modello nel **Esplora modelli UML**. Quindi nel **delle proprietà** finestra, scegliere **profilo**e quindi abilitare il profilo c#.  
+   > Se gli stereotipi C# non sono visualizzati, abilitare il profilo C# per il modello o per un pacchetto contenente gli elementi del modello desiderati. Selezionare il pacchetto o la radice del modello nel **Esplora modelli UML**. Quindi nel **delle proprietà** finestra, scegliere **profilo**e quindi abilitare il profilo c#.  
 
 3. Espandere la **stereotipi** proprietà per visualizzare le proprietà aggiuntive che è possibile impostare.  
 
@@ -144,7 +144,7 @@ Per generare codice Visual c# .NET da diagrammi classi UML in Visual Studio, usa
  È possibile applicare più modelli a un elemento del modello, nonché generare più file da ciascun elemento del modello.  
 
 > [!NOTE]
->  Le associazioni collegate alla radice del modello fungono da associazioni predefinite per tutti gli elementi del modello. Per visualizzare questi binding predefiniti, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. In alternativa è possibile selezionare la radice del modello in Esplora modelli UML. Nella finestra Proprietà scegliere **[...]**  nella **associazioni modelli di testo** proprietà. Le associazioni non verranno visualizzati fino a quando non è stata usata la **genera codice** comando almeno una volta. Non è possibile collegare binding a modello a un diagramma.  
+> Le associazioni collegate alla radice del modello fungono da associazioni predefinite per tutti gli elementi del modello. Per visualizzare questi binding predefiniti, aprire **Esplora modelli UML**. Aprire il menu di scelta rapida del progetto di modellazione, quindi scegliere **Configura generazione codice**. In alternativa è possibile selezionare la radice del modello in Esplora modelli UML. Nella finestra Proprietà scegliere **[...]**  nella **associazioni modelli di testo** proprietà. Le associazioni non verranno visualizzati fino a quando non è stata usata la **genera codice** comando almeno una volta. Non è possibile collegare binding a modello a un diagramma.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Per collegare binding a modello di testo a un pacchetto o a un altro elemento del modello  
 

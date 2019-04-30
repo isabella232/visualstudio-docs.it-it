@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428834"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
 Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di configurazione e progetto. È possibile fornire una pagina delle proprietà per il proprio tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.
@@ -51,7 +51,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../code-quality/includ
  È responsabilità del progetto per rendere persistenti le proprietà di progetto e la configurazione del file di progetto.
 
 > [!NOTE]
->  Un progetto può ottimizzare la persistenza per salvare in modo permanente solo valori di proprietà che differiscono dai valori predefiniti.
+> Un progetto può ottimizzare la persistenza per salvare in modo permanente solo valori di proprietà che differiscono dai valori predefiniti.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
  Il `Microsoft.VisualStudio.Package.SettingsPage` classe implementa le pagine delle proprietà di configurazione e progetto. L'implementazione predefinita di `SettingsPage` offre proprietà pubbliche per un utente in una griglia delle proprietà generiche. Il `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` metodo consente di selezionare le classi derivate da `SettingsPage` per griglie di proprietà di progetto. Il `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` metodo consente di selezionare le classi derivate da `SettingsPage` per griglie di proprietà di configurazione. Il tipo di progetto deve eseguire l'override di questi metodi per selezionare le pagine delle proprietà appropriata.
@@ -63,7 +63,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../code-quality/includ
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` rendere persistenti le proprietà di configurazione.
 
   > [!NOTE]
-  >  Le implementazioni del `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classi di uso di `Microsoft.Build.BuildEngine` metodi (MSBuild) per ottenere e impostare le proprietà di progetto e la configurazione dal file di progetto.
+  > Le implementazioni del `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classi di uso di `Microsoft.Build.BuildEngine` metodi (MSBuild) per ottenere e impostare le proprietà di progetto e la configurazione dal file di progetto.
 
   La classe di derivazione `SettingsPage` deve implementare `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` per rendere persistenti le proprietà di configurazione di progetto o del file di progetto.
 
@@ -81,7 +81,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../code-quality/includ
  Il <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, e <xref:System.ComponentModel.DescriptionAttribute> attributi determinano il layout, l'assegnazione di etichette e descrizione delle proprietà di configurazione e progetto in una pagina delle proprietà generiche. Questi attributi determinano la categoria, il nome visualizzato e descrizione dell'opzione, rispettivamente.
 
 > [!NOTE]
->  Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti in [MPF per i progetti - Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
+> Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti in [MPF per i progetti - Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Si consideri il frammento di codice riportato di seguito.
 

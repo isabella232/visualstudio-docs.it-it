@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 553c502c100cbb6ed4ae249096af408af14423b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436117"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Come i pacchetti VSPackage aggiungono elementi dell'interfaccia utente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Un pacchetto VSPackage può aggiungere elementi dell'interfaccia utente, ad esem
  Elemento di primo livello del `Symbols` sezione il [elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementi di mapping dei nomi di GUID utilizzati per identificare i pacchetti e le relative parti componente dall'IDE.  
   
 > [!NOTE]
->  I GUID vengono generati automaticamente dal modello di pacchetto Visual Studio. È anche possibile creare un GUID univoco facendo **Crea GUID** nel **strumenti** menu.  
+> I GUID vengono generati automaticamente dal modello di pacchetto Visual Studio. È anche possibile creare un GUID univoco facendo **Crea GUID** nel **strumenti** menu.  
   
  Il primo `GuidSymbol` elemento "guid [nome pacchetto] Pkg", è il GUID del pacchetto stesso. Si tratta del GUID che viene utilizzato da Visual Studio per caricare il pacchetto. In genere, non presenta elementi figlio.  
   

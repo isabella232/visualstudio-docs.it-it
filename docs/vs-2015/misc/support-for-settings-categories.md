@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436569"
 ---
 # <a name="support-for-settings-categories"></a>Supporto per le categorie di impostazioni
 Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
  Il controllo struttura ad albero nel riquadro di spostamento di questa pagina elenca le categorie. Una categoria è un gruppo di impostazioni correlate che sono visualizzate come un "punto di impostazioni personalizzate", vale a dire come una casella di controllo. Queste caselle di controllo si usano per selezionare le categorie che devono essere permanenti in un file .vsettings. La procedura guidata consente di denominare il file .vsettings e specificare il relativo percorso.  
   
 > [!NOTE]
->  Le impostazioni sono salvate o ripristinate come una categoria e i nomi delle singole impostazioni non sono visualizzati nella procedura guidata.  
+> Le impostazioni sono salvate o ripristinate come una categoria e i nomi delle singole impostazioni non sono visualizzati nella procedura guidata.  
   
  Il framework di pacchetto gestito (MPF) supporta la creazione di categorie di impostazioni con un minimo di codice aggiuntivo.  
   
@@ -48,7 +48,7 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
  Il percorso del Registro di sistema per la categoria di impostazioni è determinato dalla combinazione di <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, parola, UserSettings, categoria di impostazioni e nome del punto di impostazioni personalizzate. I nomi della categoria di impostazioni e il punto di impostazioni personalizzate sono uniti e separati da un trattino basso (_) per formare il nome canonico, non localizzato, che viene visualizzato nel Registro di sistema. Ad esempio, se la categoria di impostazioni è "My Category", il nome del punto di impostazioni personalizzate "My Settings" e ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la categoria di impostazioni ha come chiave del Registro di sistema HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My Category_My Settings.  
   
 > [!NOTE]
->  Il nome canonico non compare in un'interfaccia utente (UI). Viene usato per associare un nome leggibile con la categoria di impostazioni, analogamente a un identificatore a livello di codice (ProgID).  
+> Il nome canonico non compare in un'interfaccia utente (UI). Viene usato per associare un nome leggibile con la categoria di impostazioni, analogamente a un identificatore a livello di codice (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Attributo di categoria di impostazioni  
  Il <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina il mapping delle categorie per i punti di impostazioni personalizzate nel **importazione / esportazione guidata delle impostazioni** associando una categoria con il pacchetto VSPackage che lo fornisce. Si consideri il frammento di codice riportato di seguito.  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445337"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice
   È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o cartella di lavoro. Per impostazione predefinita, il codice dietro a un documento con limitazioni di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel non è consentito per l'esecuzione. È possibile modificare l'impostazione predefinita, in modo che le estensioni di codice gestito possono accedere il modello a oggetti e la soluzione funzionerà.
@@ -38,7 +38,7 @@ ms.locfileid: "56637659"
 2. Fare clic sul **File** scheda, scegliere **Prepare**, scegliere **limita le autorizzazioni**, quindi fare clic su **accesso limitato**.
 
    > [!NOTE]
-   >  Al primo uso, viene chiesto di installare il client Windows Rights Management. Dopo aver installato il client, si potrebbe essere necessario ripetere questi passaggi.
+   > Al primo uso, viene chiesto di installare il client Windows Rights Management. Dopo aver installato il client, si potrebbe essere necessario ripetere questi passaggi.
 
 3. Nel **l'autorizzazione** finestra di dialogo **Limita autorizzazioni per documento**e quindi fare clic su **altre opzioni**.
 

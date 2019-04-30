@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437544"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Progettazione di classi e tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ ms.locfileid: "54795512"
 **Progettazione classi** non solo consente di visualizzare classi e tipi, ma anche di progettarli. Gli argomenti seguenti descrivono le procedure per eseguire queste operazioni.  
   
 > [!NOTE]
->  Quando si usa Progettazione classi, prima di eseguire il codice che viene creato è necessario ispezionarlo per verificare che sia appropriato per il contesto di protezione.  
+> Quando si usa Progettazione classi, prima di eseguire il codice che viene creato è necessario ispezionarlo per verificare che sia appropriato per il contesto di protezione.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Procedura: Creare tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Procedura: Creare i tipi usando Progettazione classi](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Descrive l'uso del diagramma classi per creare un tipo.  
   

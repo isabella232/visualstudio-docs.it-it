@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436624"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
  Nell'esempio seguente, le istruzioni dal Registro di sistema forniscono i percorsi predefiniti e i dati dove applicabile, seguita da una tabella che contiene le voci dello script del Registro di sistema per ogni istruzione. Le tabelle forniscono le voci di script e informazioni aggiuntive sulle istruzioni.  
   
 > [!NOTE]
->  Le seguenti informazioni del Registro di sistema deve essere un esempio del tipo e ai fini delle voci negli script del Registro di sistema che si scriverà la registrazione del tipo di progetto. Le voci effettive e sul loro utilizzo può variare in base ai requisiti specifici del tipo di progetto. È consigliabile esaminare gli esempi disponibili per trovarne uno che rispecchia maggiormente il tipo di progetto che si sviluppa ed esaminare lo script del Registro di sistema per tale esempio.  
+> Le seguenti informazioni del Registro di sistema deve essere un esempio del tipo e ai fini delle voci negli script del Registro di sistema che si scriverà la registrazione del tipo di progetto. Le voci effettive e sul loro utilizzo può variare in base ai requisiti specifici del tipo di progetto. È consigliabile esaminare gli esempi disponibili per trovarne uno che rispecchia maggiormente il tipo di progetto che si sviluppa ed esaminare lo script del Registro di sistema per tale esempio.  
   
  Negli esempi seguenti sono da HKEY_CLASSES_ROOT.  
   

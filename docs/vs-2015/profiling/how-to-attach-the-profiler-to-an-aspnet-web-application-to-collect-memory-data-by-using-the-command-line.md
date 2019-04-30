@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 454bcc4fe8e17530d71927d373a05f5f12beae61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432846"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di memoria tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104148"
 Questo argomento descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per connettere il profiler a un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e raccogliere dati sul numero e le dimensioni delle allocazioni di memoria .NET Framework. È anche possibile raccogliere dati sulla durata degli oggetti di memoria di .NET Framework.  
 
 > [!NOTE]
->  Gli strumenti da riga di comando degli strumenti di profilatura sono disponibili nella sottodirectory \Team Tools\Performance Tools della directory di installazione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specifica del percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Gli strumenti da riga di comando degli strumenti di profilatura sono disponibili nella sottodirectory \Team Tools\Performance Tools della directory di installazione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso. Per altre informazioni, vedere [Specifica del percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Per raccogliere dati sulle prestazioni da un'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], è necessario usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate nel computer che ospita l'applicazione Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. È quindi necessario riavviare il computer per configurare il server Web per la profilatura.  
 
@@ -66,7 +66,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
      È possibile usare qualsiasi opzione tra le seguenti con l'opzione **/start:sample**.  
 
    > [!NOTE]
-   >  Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.  
+   > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per le applicazioni ASP.NET.  
 
    |                                 Opzione                                  |                                                                                                                                                        Descrizione                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

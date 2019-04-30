@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444831"
 ---
 # <a name="adding-a-tool-window"></a>Aggiunta di una finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ In questa procedura dettagliata si apprenderà come creare una finestra degli st
 1. Creare un progetto denominato **FirstToolWin** usando il modello di progetto VSIX e aggiungere un modello di elemento di finestra degli strumenti personalizzata denominato **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Aggiungere un controllo alla finestra degli strumenti  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      Il primo parametro denominato `Style` e il relativo valore è `Tabbed`, il che significa che la finestra sarà una scheda in una finestra esistente. La posizione di ancoraggio è specificata per il `Window` parametro, n questo caso, il GUID del **Esplora soluzioni**.  
   
     > [!NOTE]
-    >  Per altre informazioni sui tipi di finestre nell'IDE, vedere <xref:EnvDTE.vsWindowType>.  
+    > Per altre informazioni sui tipi di finestre nell'IDE, vedere <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>La finestra degli strumenti di test  
   

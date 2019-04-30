@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445096"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procedura: Utilizzare la finestra Espressioni di controllo parallela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.  
   
   > [!TIP]
-  >  È necessario aprire la **l'attività parallela** finestra per visualizzare le informazioni sull'attività nel **espressioni di controllo parallela** finestra.  
+  > È necessario aprire la **l'attività parallela** finestra per visualizzare le informazioni sull'attività nel **espressioni di controllo parallela** finestra.  
   
 - Il  **\<Aggiungi espressione di controllo >** colonna, in cui è possibile immettere espressioni di controllo.  
   

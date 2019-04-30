@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431186"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079487"
 Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) nella finestra di progettazione Windows Form, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono sembra essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data** chiave del Registro di sistema.
 
 > [!NOTE]
->  Questa chiave del Registro di sistema non esiste fino a quando non si crea.
+> Questa chiave del Registro di sistema non esiste fino a quando non si crea.
 
  I sottotitoli intelligente è controllato dall'espressione regolare immessa nel valore del **SmartCaptionExpression** valore. Aggiunta il **progettazione visiva di dati** chiave del Registro di sistema esegue l'override dell'espressione regolare predefinita che controlla le etichette della didascalia. Per altre informazioni sulle espressioni regolari, vedere [uso di espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -54,9 +54,9 @@ Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.
 |**SmartCaptionSuffix**|:|Rappresenta un carattere aggiunto alla stringa restituita. Ad esempio, se la didascalia è `Company Name`, rende il suffisso `Company Name:`|
 
 > [!CAUTION]
->  È necessario prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
+> È necessario prestare molta attenzione quando si esegue alcuna operazione nell'Editor del Registro di sistema. Eseguire il backup del Registro di sistema prima di modificarlo. Se si usa l'Editor del Registro di sistema in modo non corretto, si possono causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. Microsoft non garantisce che sia possono risolvere i problemi derivanti utilizzando l'Editor del Registro di sistema in modo non corretto. L'utilizzo dell'editor del Registro di sistema è a rischio dell'utente.
 >
->  L'articolo della Knowledge Base seguente contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [Descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> L'articolo della Knowledge Base seguente contiene istruzioni per il backup, la modifica e il ripristino del Registro di sistema: [Descrizione del Registro di sistema Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Per modificare il comportamento di sottotitoli codificato intelligente della finestra Origini dati
 

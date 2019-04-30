@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430514"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Aggiungere proprietà personalizzate ai diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Quando si scrive un codice di estensione per i diagrammi livello, è possibile a
  **Preparazione iniziale**  
   
 > [!IMPORTANT]
->  Per fare in modo che le proprietà vengano visualizzate, è necessario apportare le seguenti modifiche in ogni computer in cui si desidera che le proprietà del livello siano visibili.  
+> Per fare in modo che le proprietà vengano visualizzate, è necessario apportare le seguenti modifiche in ogni computer in cui si desidera che le proprietà del livello siano visibili.  
 > 
 >  1. Eseguire blocco note scegliendo **Esegui come amministratore**. Aprire `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 >  

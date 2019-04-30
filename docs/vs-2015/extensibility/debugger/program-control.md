@@ -10,12 +10,12 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8102bc488d5c74f751fb93584016aa6904fbe2d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438089"
 ---
 # <a name="program-control"></a>Controllo del programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ In Visual Studio esegue il debug, tutte le istruzioni seguenti e continuando le 
 - Ripresa di thread di contenuti dal programma  
   
 > [!NOTE]
->  Visualizzazione dello stack di chiamate viene implementata a livello di thread. Per enumerare le informazioni di frame quando si visualizza lo stack di chiamate per un thread, è necessario implementare tutti i metodi del [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia.  
+> Visualizzazione dello stack di chiamate viene implementata a livello di thread. Per enumerare le informazioni di frame quando si visualizza lo stack di chiamate per un thread, è necessario implementare tutti i metodi del [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfaccia.  
   
 ## <a name="methods-of-program-control"></a>Metodi del controllo del programma  
  Nella tabella seguente sono illustrati i metodi di [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) che deve essere implementata per un motore di debug dalle minime funzioni (DE) e il controllo dell'esecuzione.  

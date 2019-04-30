@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436855"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedura: Creare o aggiornare i criteri di archiviazione standard di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053156"
 È possibile richiedere che l'analisi del codice deve essere eseguito in tutti i progetti di codice in un progetto team usando i criteri di controllo dell'analisi codice. Richiedere l'analisi del codice, è possibile migliorare la qualità del codice che viene archiviata nella codebase.  
   
 > [!NOTE]
->  Questa funzionalità è disponibile solo se si usa Team Foundation Server.  
+> Questa funzionalità è disponibile solo se si usa Team Foundation Server.  
   
  Criteri di controllo dell'analisi del codice vengono impostati nelle impostazioni del progetto team e si applicano a ogni progetto di codice nel progetto team. Esecuzioni dell'analisi del codice sono configurate per i progetti di codice nel file di progetto (con estensione xxproj) per il progetto di codice. Esecuzioni dell'analisi del codice vengono eseguite nel computer locale. Quando si abilita un criterio di controllo dell'analisi codice, file in un progetto di codice che devono essere archiviati devono essere compilati termine dell'ultima modifica e analisi del codice eseguito che contiene, come minimo, le regole nelle impostazioni del progetto team devono essere eseguite nel computer in cui il c sono state apportate modifiche in sospeso.  
   

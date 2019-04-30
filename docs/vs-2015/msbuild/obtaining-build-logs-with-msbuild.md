@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ee565786f4a1f7c1127217eeb551352ae02b72f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430837"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Recupero di log di compilazione con MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59663414"
 Usando le opzioni con MSBuild, è possibile specificare quanti dati di compilazione si vogliono esaminare e se salvare i dati di compilazione in uno o più file. È anche possibile specificare un logger personalizzato per raccogliere i dati di compilazione. Per informazioni sulle opzioni della riga di comando di MSBuild, non illustrate in questo argomento, vedere [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Se si compilano progetti usando l'IDE di Visual Studio, è possibile risolvere i problemi di tali compilazioni esaminando i log di compilazione. Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di Log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> Se si compilano progetti usando l'IDE di Visual Studio, è possibile risolvere i problemi di tali compilazioni esaminando i log di compilazione. Per altre informazioni, vedere [Procedura: Visualizzare, salvare e configurare file di Log di compilazione](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## <a name="setting-the-level-of-detail"></a>Impostazione del livello di dettaglio  
  Quando si compila un progetto usando MSBuild senza specificare un livello di dettaglio, nel log di output vengono visualizzate le informazioni seguenti:  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425684"
 ---
 # <a name="registering-a-project-type"></a>Registrazione di un tipo di progetto
 Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro di sistema che consentono a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] riconoscere e usare il tipo di progetto. Queste voci del Registro di sistema in genere create usando un file di script (con estensione RGS) del Registro di sistema.
@@ -25,7 +25,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
  Nell'esempio seguente, le istruzioni dal Registro di sistema forniscono i percorsi predefiniti e i dati dove applicabile, seguita da una tabella che contiene le voci dello script del Registro di sistema per ogni istruzione. Le tabelle forniscono le voci di script e informazioni aggiuntive sulle istruzioni.
 
 > [!NOTE]
->  Le seguenti informazioni del Registro di sistema deve essere un esempio del tipo e ai fini delle voci negli script del Registro di sistema che si scriverà la registrazione del tipo di progetto. Le voci effettive e sul loro utilizzo può variare in base ai requisiti specifici del tipo di progetto. È consigliabile esaminare gli esempi disponibili per trovarne uno che rispecchia maggiormente il tipo di progetto che si sviluppa ed esaminare lo script del Registro di sistema per tale esempio.
+> Le seguenti informazioni del Registro di sistema deve essere un esempio del tipo e ai fini delle voci negli script del Registro di sistema che si scriverà la registrazione del tipo di progetto. Le voci effettive e sul loro utilizzo può variare in base ai requisiti specifici del tipo di progetto. È consigliabile esaminare gli esempi disponibili per trovarne uno che rispecchia maggiormente il tipo di progetto che si sviluppa ed esaminare lo script del Registro di sistema per tale esempio.
 
  Negli esempi seguenti sono da HKEY_CLASSES_ROOT.
 
@@ -47,7 +47,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    @="devenv.exe \"%1\""
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|Nome e una descrizione dei file del tipo di progetto con l'estensione .figp.|
 |`Content Type`|REG_SZ|`Text/plain`|Tipo di contenuto per i file di progetto.|
@@ -79,7 +79,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@` (Impostazione predefinita)|REG_SZ|`FigPrj Project VSPackage`|Nome localizzabili di questo oggetto registrato VSPackage (tipo di progetto).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Percorso del tipo di progetto DLL. IDE Carica questa DLL e lo passa CLSID VSPackage `DllGetClassObject` per ottenere <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> per costruire il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> oggetto.|
@@ -130,7 +130,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "SortPriority"=dword:00000064
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Nome predefinito di progetti di questo tipo.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|
@@ -170,7 +170,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID risorsa per nuovi modelli di progetto.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso per i progetti del tipo di progetto registrato predefinito.|
@@ -191,7 +191,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "SortPriority"=dword:00000064
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|nessuno|Valore predefinito che indica che le voci seguenti sono per le voci di progetti di file esterni.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valore di ID risorsa per i file di modello di aggiungere nuovi elementi.|
@@ -220,7 +220,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
 
   L'ultimo campo identifica il numero di versione per la risorsa CTMENU. È possibile unire nuovamente il menu modificando il numero di versione.
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |%CLSID_Package%|REG_SZ|`,1000,1`|La risorsa per recuperare le informazioni di menu.|
 
@@ -234,7 +234,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valore di ID risorsa per i modelli di progetto di nuovo progetto di figure.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Percorso predefinito della directory di nuovi progetti. Gli elementi in questa directory verranno visualizzati nei **Creazione guidata nuovo progetto** nella finestra di dialogo.|
@@ -249,7 +249,7 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
    "UseInterface"=dword:00000001
 ```
 
-|nome|Tipo|Dati|Descrizione|
+|Nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID classe del pacchetto VSPackage registrato.|
 |`UseInterface`|REG_DWORD|`1`|1 indica che l'interfaccia utente verrà utilizzato per interagire con questo progetto. 0 indica che non è disponibile alcuna interfaccia dell'interfaccia utente.|
@@ -265,6 +265,6 @@ Quando si crea un nuovo tipo di progetto, è necessario creare voci del Registro
  Che significa che se si include un PROJECT_TYPE = movimento di Entity Framework nel file VSZ, trova l'ambiente di vsz i file nella directory ProductDir specificata in precedenza.
 
 ## <a name="see-also"></a>Vedere anche
-- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md)
 - [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

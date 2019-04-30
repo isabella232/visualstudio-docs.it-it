@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432929"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60095477"
 È possibile distribuire un'applicazione destinata a più versioni di .NET Framework tramite la tecnologia di distribuzione ClickOnce. Ciò richiede di generare e aggiornare i manifesti dell'applicazione e della distribuzione.  
   
 > [!NOTE]
->  Prima di modificare l'applicazione a più versioni di .NET Framework di destinazione, è necessario assicurarsi che l'applicazione viene eseguita con più versioni di .NET Framework. Versione common language runtime è diverso tra [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] rispetto a .NET Framework 2.0, .NET Framework 3.0 e .NET Framework 3.5.  
+> Prima di modificare l'applicazione a più versioni di .NET Framework di destinazione, è necessario assicurarsi che l'applicazione viene eseguita con più versioni di .NET Framework. Versione common language runtime è diverso tra [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] rispetto a .NET Framework 2.0, .NET Framework 3.0 e .NET Framework 3.5.  
   
  Questo processo sono necessari i passaggi seguenti:  
   

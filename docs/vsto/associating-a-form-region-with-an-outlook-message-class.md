@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440355"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
   È possibile specificare quali elementi di Microsoft Office Outlook visualizzano un'area del modulo associando l'area del modulo con la classe messaggio di ogni elemento. Ad esempio, se si desidera aggiungere un'area del modulo nella parte inferiore di un elemento di posta elettronica, è possibile associare l'area del modulo con il `IPM.Note` classe message.
@@ -45,7 +45,7 @@ ms.locfileid: "60063543"
  È anche possibile specificare i nomi delle classi messaggio personalizzate. Classi messaggio personalizzate identificano i moduli personalizzati definiti in Outlook.
 
 > [!NOTE]
->  Per aree del modulo di sostituzione e sostituzione, è possibile specificare un nuovo nome della classe messaggio personalizzata. Non devi usare il nome della classe messaggio di un modulo personalizzato esistente. Il nome della classe messaggio personalizzata deve essere univoco. Un modo per assicurarsi che il nome sia univoco è usare una convenzione di denominazione simile al seguente: \<*StandardMessageClassName*>.\< *Società*>.\< *MessageClassName*> (ad esempio: `IPM.Note.Contoso.MyMessageClass`).
+> Per aree del modulo di sostituzione e sostituzione, è possibile specificare un nuovo nome della classe messaggio personalizzata. Non devi usare il nome della classe messaggio di un modulo personalizzato esistente. Il nome della classe messaggio personalizzata deve essere univoco. Un modo per assicurarsi che il nome sia univoco è usare una convenzione di denominazione simile al seguente: \<*StandardMessageClassName*>.\< *Società*>.\< *MessageClassName*> (ad esempio: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associare un'area del modulo a una classe messaggio di Outlook
  Esistono due modi per associare un'area del modulo a una classe messaggio:
@@ -76,7 +76,7 @@ ms.locfileid: "60063543"
   Il **nuova area del modulo di Outlook** procedura guidata convalida il formato dell'input quando si fa clic **fine**.
 
 > [!NOTE]
->  Il **nuova area del modulo Outlook** guidata non verifica che i nomi di classe messaggio specificata dall'utente siano corretti o valido.
+> Il **nuova area del modulo Outlook** guidata non verifica che i nomi di classe messaggio specificata dall'utente siano corretti o valido.
 
  Quando si completa la procedura guidata, il **nuova area del modulo Outlook** Applica attributi alla classe di area del modulo che contiene i nomi delle classi messaggio specificato. È anche possibile applicare manualmente tali attributi.
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063543"
   Visual Studio convalida il formato dei nomi di classe messaggio quando si compila il progetto.
 
 > [!NOTE]
->  Visual Studio non verifica che i nomi di classe messaggio specificata dall'utente siano corretti o valido.
+> Visual Studio non verifica che i nomi di classe messaggio specificata dall'utente siano corretti o valido.
 
 ## <a name="see-also"></a>Vedere anche
 - [Accedere a un'area del modulo in fase di esecuzione](../vsto/accessing-a-form-region-at-run-time.md)

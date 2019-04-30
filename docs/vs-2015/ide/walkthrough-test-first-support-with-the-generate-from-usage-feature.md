@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443429"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procedura dettagliata: Test preliminare con il supporto di generare dalla funzionalità di utilizzo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Finestra di dialogo Nuovo progetto
 2. Individuare la dichiarazione della classe `UnitTest1` e rinominarla in `AutomobileTest`. In C#, se è presente un costruttore `UnitTest1()` , rinominarlo in `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense offre ora due alternative per il completamento delle istruzioni IntelliSense: la *modalità di terminazione* e la *modalità con suggerimenti*. Usare la modalità con suggerimenti per i casi in cui classi e membri vengono usati prima di essere definiti. Quando una finestra di IntelliSense è aperta, è possibile premere CTRL+ALT+BARRA SPAZIATRICE per passare tra la modalità di terminazione e la modalità con suggerimenti. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) . La modalità con suggerimenti sarà utile quando si digita `Automobile` nel passaggio successivo.  
+    > IntelliSense offre ora due alternative per il completamento delle istruzioni IntelliSense: la *modalità di terminazione* e la *modalità con suggerimenti*. Usare la modalità con suggerimenti per i casi in cui classi e membri vengono usati prima di essere definiti. Quando una finestra di IntelliSense è aperta, è possibile premere CTRL+ALT+BARRA SPAZIATRICE per passare tra la modalità di terminazione e la modalità con suggerimenti. Per altre informazioni, vedere [Using IntelliSense](../ide/using-intellisense.md) . La modalità con suggerimenti sarà utile quando si digita `Automobile` nel passaggio successivo.  
   
 3. Individuare il metodo `TestMethod1()` e rinominarlo in `DefaultAutomobileIsInitializedCorrectly()`. All'interno di questo metodo creare una nuova istanza di una classe denominata `Automobile`, come illustrato nelle figure seguenti. Verrà visualizzata una sottolineatura ondulata, che indica un errore in fase di compilazione e sotto il nome del tipo verrà visualizzato uno smart tag. La posizione esatta dello smart tag varia a seconda che si stia usando [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

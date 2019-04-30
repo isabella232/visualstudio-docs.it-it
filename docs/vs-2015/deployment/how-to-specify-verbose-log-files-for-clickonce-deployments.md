@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78fa278952004348e035a675a1e159b2164285b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441612"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procedura: Specificare i file di log dettagliati per le distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60069770"
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mantiene i file di log attività per tutte le distribuzioni. Questi log documentare i dettagli relativi a installazione, l'inizializzazione, l'aggiornamento e disinstallazione di un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione. Per aumentare il livello di dettaglio che [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] operazioni di scrittura a questi file di log, usare l'Editor del Registro di sistema (**regedit.exe**) per specificare il livello di dettaglio.  
   
 > [!CAUTION]
->  Se si usa in modo non corretto dell'Editor del Registro di sistema, si può causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.  
+> Se si usa in modo non corretto dell'Editor del Registro di sistema, si può causare gravi problemi che potrebbero richiedere la reinstallazione del sistema operativo. L'uso dell'editor del Registro di sistema è a rischio e pericolo dell'utente.  
   
  La procedura seguente viene descritto come specificare il livello di dettaglio per [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file di log per l'utente corrente. Per ridurre il livello di dettaglio, rimuovere questo valore del Registro di sistema.  
   

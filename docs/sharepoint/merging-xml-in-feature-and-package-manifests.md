@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429278"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Unire i dati XML nei manifesti di funzionalità e pacchetto
   Le funzionalità e i pacchetti sono definiti da [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Questi manifesti di pacchetto sono una combinazione dei dati generati da finestre di progettazione e custom [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] immesso nel modello di manifesto da parte degli utenti. In fase di creazione dei pacchetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] unisce l'oggetto personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] istruzioni con la finestra di progettazione fornito dal [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] in modo da formare il pacchetto [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] file manifesto. Gli elementi simili, con le eccezioni riportate più avanti in eccezioni di tipo Merge, vengono uniti per evitare [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] gli errori di convalida dopo aver distribuito i file in SharePoint e per rendere il manifesto i file più piccoli e più efficiente.
@@ -51,11 +51,11 @@ ms.locfileid: "56646304"
 |ElementFile|Percorso|
 |ElementManifests/ElementManifest|Percorso|
 |Proprietà/proprietà|Chiave|
-|CustomUpgradeAction|nome|
-|CustomUpgradeActionParameter|nome|
+|CustomUpgradeAction|Nome|
+|CustomUpgradeActionParameter|Nome|
 
 > [!NOTE]
->  Poiché è l'unico modo per modificare l'elemento CustomUpgradeAction personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, l'effetto di unione non è bassa.
+> Poiché è l'unico modo per modificare l'elemento CustomUpgradeAction personalizzato [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, l'effetto di unione non è bassa.
 
 ## <a name="package-manifest-elements"></a>Elementi del manifesto del pacchetto
  Nella tabella seguente è un elenco di tutti gli elementi del manifesto del pacchetto che possono essere uniti e la relativa chiave univoca che viene usato per la corrispondenza.

@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436011"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere i marcatori di testo Standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Usare la procedura seguente per creare uno dei tipi di marcatore di testo predef
      In questa chiamata al metodo, specificare un tipo di marcatore, un intervallo di testo per creare il marcatore di failover e un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia. Quindi, questo metodo restituisce un puntatore al marcatore di testo appena creata. Tipi di marcatori vengono prelevati i <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumerazione. Specificare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia se si desidera essere informati di eventi del marcatore.  
   
     > [!NOTE]
-    >  Creare i marcatori di testo sul thread principale della UI solo. L'editor principale è basato sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.  
+    > Creare i marcatori di testo sul thread principale della UI solo. L'editor principale è basato sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.  
   
 ## <a name="adding-a-custom-command"></a>Aggiunta di un comando personalizzato  
  Implementazione di `IVsTextMarkerClient` interfaccia e che fornisce un puntatore a esso da un marcatore migliora il comportamento di marcatore in diversi modi. In primo luogo, in questo modo è possibile fornire suggerimenti per il marcatore e di eseguire i comandi. Ciò consente anche di ricevere le notifiche degli eventi per i marcatori di singoli e per creare un menu contestuale personalizzato sul marcatore. Utilizzare la procedura seguente per aggiungere un comando personalizzato per il menu di scelta rapida marcatore.  
@@ -52,4 +52,4 @@ Usare la procedura seguente per creare uno dei tipi di marcatore di testo predef
  [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Procedura: Implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
  [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)   
- [Procedura: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Procedura: usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)

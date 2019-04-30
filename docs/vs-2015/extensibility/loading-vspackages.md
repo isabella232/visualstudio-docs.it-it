@@ -11,12 +11,12 @@ ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439773"
 ---
 # <a name="loading-vspackages"></a>Caricamento di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60066572"
 I pacchetti VSPackage vengono caricati in Visual Studio solo quando è richiesta la funzionalità. Ad esempio, un pacchetto VSPackage viene caricato quando Visual Studio Usa un servizio che implementa il pacchetto VSPackage o una factory progetto. Questa funzionalità è denominata il caricamento ritardato, che viene usato ogni volta che è possibile migliorare le prestazioni.  
   
 > [!NOTE]
->  Visual Studio può determinare determinate informazioni VSPackage, ad esempio i comandi che offre un pacchetto VSPackage, senza caricare il pacchetto VSPackage.  
+> Visual Studio può determinare determinate informazioni VSPackage, ad esempio i comandi che offre un pacchetto VSPackage, senza caricare il pacchetto VSPackage.  
   
  I pacchetti VSPackage impostabili per caricare automaticamente in un contesto dell'interfaccia utente specifico, ad esempio, quando è aperta una soluzione. Il <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> questo contesto viene impostato dall'attributo.  
   

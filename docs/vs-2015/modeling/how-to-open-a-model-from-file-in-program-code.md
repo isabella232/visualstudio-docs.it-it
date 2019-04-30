@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441024"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedura: Aprire un modello da file nel codice del programma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60071850"
 3. Nella finestra delle proprietà del progetto, nella **Application** scheda, impostare il **framework di destinazione** campo **.NET Framework 4**.  
   
 > [!NOTE]
->  Potrebbe essere necessario eseguire questa operazione anche se si seleziona **.NET Framework 4** nella finestra di dialogo di creazione progetto. Il framework di destinazione non deve essere **.NET Framework 4 Client Profile**.  
+> Potrebbe essere necessario eseguire questa operazione anche se si seleziona **.NET Framework 4** nella finestra di dialogo di creazione progetto. Il framework di destinazione non deve essere **.NET Framework 4 Client Profile**.  
   
 ## <a name="references"></a>Riferimenti  
  È necessario aggiungere questi riferimenti per il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto di applicazione:  

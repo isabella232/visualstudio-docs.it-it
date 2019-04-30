@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434168"
 ---
 # <a name="text-template-control-blocks"></a>Blocchi di controllo del modello di testo
 I blocchi di controllo consentono di scrivere codice nel modello di testo per variare l'output. Esistono tre tipi di blocchi di controllo, distinguibili dalla parentesi di apertura:
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Usare sempre {...} per delimitare istruzioni annidate contenenti testo normale incorporato. L'esempio seguente non funziona correttamente:
+> Usare sempre {...} per delimitare istruzioni annidate contenenti testo normale incorporato. L'esempio seguente non funziona correttamente:
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  È invece necessario usare parentesi graffe {}, come indicato di seguito:
+> È invece necessario usare parentesi graffe {}, come indicato di seguito:
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
+> Un blocco di controllo della funzionalità di classe non deve essere seguito da blocchi di controllo standard nello stesso file modello. Questa restrizione, tuttavia, non si applica al risultato dell'uso di direttive `<#@include#>`. Ogni file incluso può contenere blocchi standard seguiti da blocchi della funzionalità di classe.
 
  È possibile creare una funzione che genera output incorporando testo e blocchi espressione all'interno di un blocco di controllo delle funzionalità di classe. Ad esempio:
 

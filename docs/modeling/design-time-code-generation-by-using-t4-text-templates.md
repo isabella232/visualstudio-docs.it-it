@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d1d13c071d8eb291a857dd0afc3da664b0ddca7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435334"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 Modelli di testo T4 in fase di progettazione consentono di generare codice programma e altri file nel progetto di Visual Studio. In genere, i modelli sono scritti in modo da variare il codice in cui vengono generate in base ai dati da un *modello*. Un modello è un file o database che contiene informazioni chiave sui requisiti dell'applicazione.
@@ -28,7 +28,7 @@ Modelli di testo T4 in fase di progettazione consentono di generare codice progr
  È ad esempio possibile usare un modello per definire un flusso di lavoro come tabella o diagramma. Dal modello è possibile generare il software che esegue il flusso di lavoro. Quando cambiano i requisiti degli utenti, è facile discutere il nuovo flusso di lavoro con gli utenti. La rigenerazione di codice dal flusso di lavoro è più attendibile dell'aggiornamento manuale del codice.
 
 > [!NOTE]
->  Oggetto *modello* è un'origine dati che descrive un aspetto specifico di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.
+> Oggetto *modello* è un'origine dati che descrive un aspetto specifico di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.
 
  Se, come è probabile, si ha già esperienza di generazione di codice, Quando si definiscono risorse in un **resx** file nella soluzione di Visual Studio, un set di classi e metodi viene generato automaticamente. Il file di risorse semplifica e rende più affidabile la modifica delle risorse rispetto alla modifica dei classi e dei metodi. I modelli di testo permettono di generare codice nello stesso modo da un'origine personalizzata.
 
@@ -132,9 +132,9 @@ I modelli di testo permettono di usare il codice programma per variare il conten
   Il modello sarà eseguito e si interromperà in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.
 
 > [!TIP]
->  `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
+> `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.
 >
->  È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
+> È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generazione di codice o risorse per la soluzione
  È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. In genere si generano diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.

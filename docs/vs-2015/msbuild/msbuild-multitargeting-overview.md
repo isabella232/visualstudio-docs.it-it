@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426855"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Cenni preliminari sul multitargeting di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108282"
 Tramite MSBuild è possibile compilare un'applicazione da eseguire in una qualunque delle tante versioni di .NET Framework e in una qualunque delle tante piattaforme di sistema. Ad esempio, è possibile compilare un'applicazione da eseguire in .NET Framework 2.0 in una piattaforma a 32 bit e compilare la stessa applicazione da eseguire in .NET Framework 4.5 in una piattaforma a 64 bit.  
   
 > [!IMPORTANT]
->  Nonostante il nome "multitargeting", un progetto può essere destinato a un solo framework e a una sola piattaforma per volta.  
+> Nonostante il nome "multitargeting", un progetto può essere destinato a un solo framework e a una sola piattaforma per volta.  
   
  Di seguito sono riportate alcune delle funzionalità di definizione destinazione di MSBuild:  
   

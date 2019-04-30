@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435975"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedura: Creare i marcatori di testo personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
     *\<PackageGUID >* è il GUID del pacchetto VSPackage che implementa l'oggetto di automazione.  
   
    > [!NOTE]
-   >  Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
 2. Creare quattro valori in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* \Text Editor\External marcatori\\*\<MarkerGUID >*  
   
@@ -93,4 +93,4 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
  [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Procedura: Aggiungere i marcatori di testo Standard](../extensibility/how-to-add-standard-text-markers.md)   
  [Procedura: Implementare i marcatori di errore](../extensibility/how-to-implement-error-markers.md)   
- [Procedura: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Procedura: usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)

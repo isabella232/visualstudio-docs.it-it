@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424501"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagrammi classi UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, che è possibile creare e usare per visualizzare il codice programma. Visualizzare [progettazione e visualizzazione classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, che è possibile creare e usare per visualizzare il codice programma. Visualizzare [progettazione e visualizzazione classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> Usando i diagrammi classi UML  
  È possibile usare un diagramma classi UML per vari scopi:  
@@ -82,7 +82,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
  Per informazioni di riferimento sugli elementi in diagrammi classi UML, vedere [diagrammi classi UML: informazioni di riferimento](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+> I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>Per creare un diagramma classi UML  
   
@@ -185,7 +185,7 @@ In Visual Studio, è possibile usare una *diagramma classi UML* per descrivere i
   È anche possibile scrivere il nome di un tipo che non è stato ancora definito nel modello. Il nome verrà elencato sotto **tipi non specificati** in Esplora modelli UML.  
   
 > [!NOTE]
->  Se successivamente si definisce una classe o un'interfaccia di quel nome nel modello, gli attributi e le operazioni meno recenti faranno ancora riferimento all'elemento in Tipi non specificati. Se si vuole fare in modo che facciano riferimento alla nuova classe, è necessario visitare ogni attributo o operazione e reimpostare il tipo, selezionando la nuova classe dal menu a discesa.  
+> Se successivamente si definisce una classe o un'interfaccia di quel nome nel modello, gli attributi e le operazioni meno recenti faranno ancora riferimento all'elemento in Tipi non specificati. Se si vuole fare in modo che facciano riferimento alla nuova classe, è necessario visitare ogni attributo o operazione e reimpostare il tipo, selezionando la nuova classe dal menu a discesa.  
   
 #### <a name="multiple-types"></a>Più tipi  
  È possibile impostare una molteplicità di tipi di attributo, operazione o parametro.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Ogni tipo può essere costituito da tipi definiti nel modello, da tipi standard come Numero intero o Stringa o dal nome di un nuovo tipo non ancora definito.  
   
 > [!NOTE]
->  Se si scrive un nome senza un tipo in un elenco di parametri, esso indica il nome del parametro anziché il tipo. In questo esempio MenuItem e Integer diventano i nomi di due parametri con tipi non specificati:  
+> Se si scrive un nome senza un tipo in un elenco di parametri, esso indica il nome del parametro anziché il tipo. In questo esempio MenuItem e Integer diventano i nomi di due parametri con tipi non specificati:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Per impostare la molteplicità di un tipo in una firma, scrivere la molteplicità in parentesi quadrate dopo il nome del tipo, ad esempio:  
   

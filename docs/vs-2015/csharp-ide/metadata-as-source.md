@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444601"
 ---
 # <a name="metadata-as-source"></a>Metadati come origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58968636"
 L'opzione Metadati come origine consente di visualizzare i metadati visualizzati come codice sorgente C# in un buffer di sola lettura. Viene abilitata una visualizzazione delle dichiarazioni di tipi e membri (senza alcuna implementazione). È possibile visualizzare i metadati come origine eseguendo il comando **Vai a definizione** per i tipi o i membri il cui codice sorgente non è disponibile nel progetto o nella soluzione.  
   
 > [!NOTE]
->  Quando si prova a eseguire il comando **Vai a definizione** per i tipi o i membri contrassegnati come interni, l'ambiente di sviluppo integrato (IDE) non visualizza i metadati come origine, indipendentemente dal fatto che l'assembly di riferimento sia o meno un elemento friend.  
+> Quando si prova a eseguire il comando **Vai a definizione** per i tipi o i membri contrassegnati come interni, l'ambiente di sviluppo integrato (IDE) non visualizza i metadati come origine, indipendentemente dal fatto che l'assembly di riferimento sia o meno un elemento friend.  
   
  È possibile visualizzare i metadati come origine nell'editor del codice o nella finestra **Definizione codice** .  
   

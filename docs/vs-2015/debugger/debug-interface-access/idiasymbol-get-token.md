@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8dc02dd942ba1436a513980a29073ac55f59d4bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2eaf078ca37ff278a5ef03aec8727377969dbf8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442114"
 ---
 # <a name="idiasymbolgettoken"></a>IDiaSymbol::get_token
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_token ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

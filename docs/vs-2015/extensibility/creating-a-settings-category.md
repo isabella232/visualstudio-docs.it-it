@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435535"
 ---
 # <a name="creating-a-settings-category"></a>Creazione di una categoria di impostazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ In questa procedura dettagliata si crea una categoria di impostazioni di Visual 
      Ciò consente di creare le risorse di tale nome la categoria "My Category", l'oggetto "My Settings" e la descrizione della categoria "OptionInteger e OptionFloat".  
   
     > [!NOTE]
-    >  Di questi tre, solo il nome della categoria non vengono visualizzate nella procedura guidata Importa / Esporta impostazioni.  
+    > Di questi tre, solo il nome della categoria non vengono visualizzate nella procedura guidata Importa / Esporta impostazioni.  
   
 3. In MyToolsOptionsPackage.cs, aggiungere un `float` proprietà denominata `OptionFloat` per il `OptionPageGrid` classe, come illustrato nell'esempio seguente.  
   
@@ -77,7 +77,7 @@ In questa procedura dettagliata si crea una categoria di impostazioni di Visual 
     ```  
   
     > [!NOTE]
-    >  Il `OptionPageGrid` categoria denominata "My Category" ora è costituita da due proprietà, `OptionInteger` e `OptionFloat`.  
+    > Il `OptionPageGrid` categoria denominata "My Category" ora è costituita da due proprietà, `OptionInteger` e `OptionFloat`.  
   
 4. Aggiungere un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> per il `MyToolsOptionsPackage` classe e assegnargli CategoryName "My Category", assegnargli ObjectName "My Settings" e impostare isToolsOptionPage su true. Impostare il categoryResourceID, objectNameResourceID e DescriptionResourceID alla risorsa di stringa corrispondente che ID creato in precedenza.  
   

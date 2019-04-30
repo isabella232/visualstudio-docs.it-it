@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432682"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedura: Limite di strumentazione a specifiche DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Usando il metodo di profilatura della strumentazione, è possibile limitare la r
 7. Facoltativo. Per aggiungere altri file con estensione dll, fare clic con il pulsante destro del mouse su **Destinazioni** e quindi selezionare **Aggiungi binario di destinazione**. Selezionare i file dalla finestra di dialogo **Aggiungi binario di destinazione**.  
   
     > [!NOTE]
-    >  Non specificare il file eseguibile (exe) che verifica le DLL.  
+    > Non specificare il file eseguibile (exe) che verifica le DLL.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Controllo della raccolta di dati](../profiling/controlling-data-collection.md)   

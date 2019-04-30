@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439814"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parametri del punto di ingresso Shell isolata (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Per eseguire l'override di una o più impostazioni, passare una stringa Unicode che contiene le impostazioni da sottoporre a override. La stringa è un elenco delimitato da punto e virgola di coppie nome-valore. Ogni coppia contiene il nome dell'impostazione da sostituire, seguita da un segno di uguale (=), seguito dal valore da applicare all'impostazione.  
   
 > [!NOTE]
->  Non includere spazi vuoti nelle stringhe Unicode.  
+> Non includere spazi vuoti nelle stringhe Unicode.  
   
  Per le impostazioni booleane, stringhe seguenti rappresentano il valore true; tutte le altre stringhe rappresentano il valore false. Queste stringhe sono tra maiuscole e minuscole.  
   

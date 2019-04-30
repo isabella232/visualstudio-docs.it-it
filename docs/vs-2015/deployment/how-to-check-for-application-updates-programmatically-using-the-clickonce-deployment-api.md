@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c713b9e2fe78f8e9c499c1af5e60a21fd3aea13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442167"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: Verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione
  Per aggiornare un'applicazione ClickOnce a livello di codice, è necessario specificare un percorso per gli aggiornamenti. Ciò è talvolta detta un provider di distribuzione. Per altre informazioni su come impostare questa proprietà, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
 > [!NOTE]
->  È anche possibile usare la tecnica descritta di seguito per distribuire l'applicazione da un'unica posizione, ma è un aggiornamento da un'altra. Per altre informazioni, vedere [Procedura: Specificare un percorso alternativo per la distribuzione aggiornamenti](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
+> È anche possibile usare la tecnica descritta di seguito per distribuire l'applicazione da un'unica posizione, ma è un aggiornamento da un'altra. Per altre informazioni, vedere [Procedura: Specificare un percorso alternativo per la distribuzione aggiornamenti](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).  
   
 ### <a name="to-check-for-updates-programmatically"></a>Per cercare gli aggiornamenti a livello di codice  
   

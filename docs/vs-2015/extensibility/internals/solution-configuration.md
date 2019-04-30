@@ -10,12 +10,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eb14a2031b89f2a7deeb7d98cc483e90125b1905
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bbd47969a7a48be817e8e2f5359705e03b5d0dc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432089"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Configurazioni soluzione archiviano proprietà a livello di soluzione. Quindi in
  Barra degli strumenti standard di Visual Studio contiene un pulsante di avvio e un elenco a discesa a destra del pulsante Avvia configurazione della soluzione. Questo elenco consente agli utenti di scegliere la configurazione da avviare quando viene premuto F5, creare le proprie configurazioni di soluzione o modificare una configurazione esistente.  
   
 > [!NOTE]
->  Non sono presenti interfacce di estendibilità per creare o modificare le configurazioni di soluzione. È necessario usare `DTE.SolutionBuilder`. Tuttavia, esistono API di estendibilità per la gestione della compilazione della soluzione. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
+> Non sono presenti interfacce di estendibilità per creare o modificare le configurazioni di soluzione. È necessario usare `DTE.SolutionBuilder`. Tuttavia, esistono API di estendibilità per la gestione della compilazione della soluzione. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.  
   
  Ecco come è possibile implementare le configurazioni di soluzione supportate dal tipo di progetto:  
   

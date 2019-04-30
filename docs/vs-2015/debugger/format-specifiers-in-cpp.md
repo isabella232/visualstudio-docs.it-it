@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440071"
 ---
 # <a name="format-specifiers-in-c"></a>Identificatori di formato in C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "60116212"
  Gli identificatori di formato possono essere usati anche nella finestra **Immediata** , nella finestra **Comando** e persino nelle finestre di origine. Se in queste finestre ci si posiziona su un'espressione, il risultato verrà visualizzato in un suggerimento dati. La visualizzazione Suggerimento dati riflette l'identificatore di formato.  
   
 > [!NOTE]
->  Il debugger nativo di Visual Studio è cambiato in un nuovo motore di debug. Come parte di questa modifica, sono stati aggiunti nuovi identificatori di formato e alcuni precedenti sono stati rimossi. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI. Le sezioni seguenti in questo argomento illustrano gli identificatori di formato per ogni motore di debug.  
+> Il debugger nativo di Visual Studio è cambiato in un nuovo motore di debug. Come parte di questa modifica, sono stati aggiunti nuovi identificatori di formato e alcuni precedenti sono stati rimossi. Il debugger precedente viene ancora usato per il debug di interoperabilità (nativo e gestito combinati) con C++/CLI. Le sezioni seguenti in questo argomento illustrano gli identificatori di formato per ogni motore di debug.  
 > 
 > - [Identificatori di formato](#BKMK_Visual_Studio_2012_format_specifiers) descrive gli identificatori di formato nel nuovo motore di debug.  
 >   - [Identificatori di formato per il debug di interoperabilità con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descrive gli identificatori di formato nel motore di debug precedente.  
@@ -92,7 +92,7 @@ int main() {
 |!|formato non elaborato in cui vengono ignorate le personalizzazioni delle visualizzazioni del tipo di dati|\<rappresentazione personalizzata>|4|  
   
 > [!NOTE]
->  Quando è presente l'identificatore di formato **hv** , il debugger tenta di determinare la lunghezza del buffer e visualizza il numero appropriato di elementi. Poiché il debugger non sempre riesce a individuare le dimensioni esatte del buffer di una matrice, è consigliabile usare un identificatore della dimensione `(pBuffer,[bufferSize])` , se possibile. L'identificatore di formato **hv** è destinato agli scenari in cui la dimensione del buffer non è prontamente disponibile.  
+> Quando è presente l'identificatore di formato **hv** , il debugger tenta di determinare la lunghezza del buffer e visualizza il numero appropriato di elementi. Poiché il debugger non sempre riesce a individuare le dimensioni esatte del buffer di una matrice, è consigliabile usare un identificatore della dimensione `(pBuffer,[bufferSize])` , se possibile. L'identificatore di formato **hv** è destinato agli scenari in cui la dimensione del buffer non è prontamente disponibile.  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Identificatori di dimensioni per puntatori quali matrici  
  Se è presente un puntatore a un oggetto che si desidera visualizzare come matrice, è possibile usare un numero intero o un'espressione per specificare il numero di elementi di matrice:  

@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429187"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -318,7 +318,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
   Nella tabella seguente, sottostringhe aggiuntive vengono inserite il nome di annotazione per qualificare ulteriormente il significato dell'annotazione.  Sono di diverse sottostringhe `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, e `_to_`.  
   
 > [!IMPORTANT]
->  Se l'interfaccia che è l'annotazione è COM, usare il modulo COM di queste annotazioni. Non usare le annotazioni di COM con qualsiasi altra interfaccia di tipo.  
+> Se l'interfaccia che è l'annotazione è COM, usare il modulo COM di queste annotazioni. Non usare le annotazioni di COM con qualsiasi altra interfaccia di tipo.  
   
  **Le annotazioni e descrizioni**  
   
@@ -474,7 +474,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
      Il parametro, un campo o risultato è compreso nell'intervallo (inclusivo) dal `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` che viene applicato all'oggetto annotato con le condizioni di pre- stato di o post-state appropriate.  
   
     > [!IMPORTANT]
-    >  Anche se i nomi contengono "in" e "out", la semantica `_In_` e `_Out_` effettuare **non** si applicano a queste annotazioni.  
+    > Anche se i nomi contengono "in" e "out", la semantica `_In_` e `_Out_` effettuare **non** si applicano a queste annotazioni.  
   
 - `_Pre_equal_to_(expr)`  
   

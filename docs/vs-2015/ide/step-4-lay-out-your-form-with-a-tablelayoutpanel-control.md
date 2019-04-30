@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442525"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Passaggio 4: Creare il layout del modulo con un controllo TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Gruppo di contenitori
 Controllo TableLayoutPanel  
   
     > [!NOTE]
-    >  Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.  
+    > Dopo aver aggiunto il controllo TableLayoutPanel, se nel form viene visualizzata una finestra con il titolo **Attività di TableLayoutPanel**, fare clic in qualsiasi punto all'interno del form per chiuderla. Verranno fornite ulteriori informazioni su questa finestra più avanti nell'esercitazione.  
   
      Si noti come la Casella degli strumenti si espanda per includere il form quando si fa clic sulla scheda e come si chiuda quando si fa clic in un punto esterno. Si tratta della funzionalità Nascondi automaticamente dell'IDE. È possibile attivarla o disattivarla e bloccare in posizione qualsiasi finestra facendo clic sull'icona a forma di puntina da disegno nell'angolo superiore destro della finestra. L'icona a forma di puntina da disegno ha l'aspetto seguente.  
   
@@ -62,7 +62,7 @@ Finestra Proprietà con Fill selezionato
 7. Dopo aver impostato la proprietà **Dock** di TableLayoutPanel su **Fill**, il pannello riempie l'intero form. Se si ridimensiona nuovamente il form, TableLayoutPanel resta ancorato e viene ridimensionato correttamente.  
   
     > [!NOTE]
-    >  Un controllo TableLayoutPanel funziona come una tabella di Microsoft Office Word: dispone di righe e colonne e una singola cella può estendersi su più righe e colonne. Ogni cella può contenere un controllo (come un pulsante, una casella di controllo o un'etichetta). TableLayoutPanel avrà un controllo `PictureBox` che si estende sull'intera riga superiore, un controllo `CheckBox` nella cella inferiore sinistra e quattro controlli `Button` nella cella inferiore destra.  
+    > Un controllo TableLayoutPanel funziona come una tabella di Microsoft Office Word: dispone di righe e colonne e una singola cella può estendersi su più righe e colonne. Ogni cella può contenere un controllo (come un pulsante, una casella di controllo o un'etichetta). TableLayoutPanel avrà un controllo `PictureBox` che si estende sull'intera riga superiore, un controllo `CheckBox` nella cella inferiore sinistra e quattro controlli `Button` nella cella inferiore destra.  
   
 8. Attualmente, TableLayoutPanel dispone di due righe delle stesse dimensioni e di due colonne delle stesse dimensioni. È necessario ridimensionarle in modo che la riga superiore e la colonna a destra siano entrambe molto più grandi. In Progettazione Windows Form selezionare il controllo TableLayoutPanel. Nell'angolo superiore destro si trova un piccolo pulsante a forma di triangolo nero, illustrato di seguito.  
   

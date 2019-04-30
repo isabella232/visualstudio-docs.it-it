@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443856"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procedura dettagliata: Creare un SDK tramite C# o Visual Basic
 In questa procedura dettagliata si apprenderà come creare un SDK della libreria matematica semplice con Visual c# e quindi creare il pacchetto SDK come un Visual Studio Extension (VSIX). È possibile completare le procedure seguenti:
@@ -50,7 +50,7 @@ In questa procedura dettagliata si apprenderà come creare un SDK della libreria
 8. Nel **Configuration** colonna, verificare che **SimpleMath** riga è impostata su **rilascio**e quindi scegliere il **Chiudi** pulsante per accettare il modificare.
 
    > [!IMPORTANT]
-   >  il SDK per il componente SimpleMath include solo una configurazione. Questa configurazione deve essere la build di versione o le app che usano il componente non passare la certificazione il[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > il SDK per il componente SimpleMath include solo una configurazione. Questa configurazione deve essere la build di versione o le app che usano il componente non passare la certificazione il[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **SimpleMath** nodo del progetto e quindi scegliere **compilare**.
 

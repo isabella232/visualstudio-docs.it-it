@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436190"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Creazione di un'interfaccia utente usando Blend per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Blend per Visual Studio facilita la progettazione di app per desktop Windows bas
  Se non si ha familiarità con Blend per Visual Studio, dedicare alcuni minuti all'esame delle funzionalità specifiche dell'area di lavoro. In questo argomento è disponibile una breve panoramica.
 
 > [!NOTE]
->  Per una panoramica delle funzionalità di progettazione, ad esempio la tavola da disegno, la finestra Struttura documento e la finestra Dispositivo, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Per una panoramica delle funzionalità di progettazione, ad esempio la tavola da disegno, la finestra Struttura documento e la finestra Dispositivo, vedere [Creazione di un'interfaccia utente tramite la finestra di progettazione XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **Contenuto dell'argomento**:
 

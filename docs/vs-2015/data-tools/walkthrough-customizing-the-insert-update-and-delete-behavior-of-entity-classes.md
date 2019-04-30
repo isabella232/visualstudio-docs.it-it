@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424792"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 2. Denominare il progetto **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e di C#. Pertanto, creare il nuovo progetto in uno di questi linguaggi.  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e di C#. Pertanto, creare il nuovo progetto in uno di questi linguaggi.  
   
 3. Scegliere il **Windows Forms Application** modello, quindi scegliere **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
@@ -89,7 +89,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
      Viene creata una classe di entità denominata **Customer**, che presenta proprietà corrispondenti alle colonne della tabella Customers. La classe di entità viene denominata **Customer** (e non **Customers**) perché rappresenta un solo cliente della tabella Customers.  
   
     > [!NOTE]
-    >  Questo comportamento di ridenominazione viene definito *pluralizzazione*. E può essere attivato o disattivare [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md). Per altre informazioni, vedere [Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer).](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
+    > Questo comportamento di ridenominazione viene definito *pluralizzazione*. E può essere attivato o disattivare [finestra di dialogo Opzioni](../ide/reference/options-dialog-box-visual-studio.md). Per altre informazioni, vedere [Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer).](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
   
 3. Scegliere **Compila UpdatingwithSProcsWalkthrough** dal menu **Compila** per compilare il progetto.  
   
@@ -102,7 +102,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 7. Espandere il nodo **UpdatingwithSProcsWalkthrough** e quindi individuare e selezionare la classe **Customer**.  
   
     > [!NOTE]
-    >  Se la classe **Customer** non è disponibile, chiudere la procedura guidata, compilare il progetto ed eseguire nuovamente la procedura guidata.  
+    > Se la classe **Customer** non è disponibile, chiudere la procedura guidata, compilare il progetto ed eseguire nuovamente la procedura guidata.  
   
 8. Fare clic su **Fine** per creare l'origine dati e aggiungere la classe di entità **Customer** alla finestra **Origini dati**.  
   
@@ -116,7 +116,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 2. Dal **Zdroje dat** finestra, trascinare le **cliente** nodo in Form1.  
   
     > [!NOTE]
-    >  Per visualizzare la finestra **Origini dati**, scegliere **Mostra origini dati** dal menu **Dati**.  
+    > Per visualizzare la finestra **Origini dati**, scegliere **Mostra origini dati** dal menu **Dati**.  
   
 3. Aprire Form1 nell'editor del codice.  
   
@@ -192,7 +192,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 9. Fare clic su **Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.  
   
     > [!NOTE]
-    >  È possibile continuare a configurare il comportamento per ogni combinazione di classe/comportamento purché si faccia clic su **Applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso che fornisce un'opportunità per applicare eventuali modifiche verrà visualizzati.  
+    > È possibile continuare a configurare il comportamento per ogni combinazione di classe/comportamento purché si faccia clic su **Applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso che fornisce un'opportunità per applicare eventuali modifiche verrà visualizzati.  
   
 10. Selezionare **Aggiorna** nell'elenco **Comportamento**.  
   
@@ -205,7 +205,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 13. Eseguire il mapping dell'argomento di metodo **Original_CustomerID** alla proprietà di classe **CustomerID (Original)**.  
   
     > [!NOTE]
-    >  Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi di proprietà vengono modificati e non vi è più corrispondenza tra quelli della tabella e quelli della classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui Progettazione relazionale oggetti non sia in grado di determinare il mapping corretto. Inoltre, se per gli argomenti di metodo non sono disponibili proprietà di classe valide per il mapping, è possibile impostare il valore **Proprietà classe** su **(Nessuna)**.  
+    > Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi di proprietà vengono modificati e non vi è più corrispondenza tra quelli della tabella e quelli della classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente a cui eseguire il mapping nel caso in cui Progettazione relazionale oggetti non sia in grado di determinare il mapping corretto. Inoltre, se per gli argomenti di metodo non sono disponibili proprietà di classe valide per il mapping, è possibile impostare il valore **Proprietà classe** su **(Nessuna)**.  
   
 14. Fare clic su **Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.  
   
@@ -220,7 +220,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 19. Fare clic su **OK**.  
   
 > [!NOTE]
->  Sebbene non sia un problema per questa procedura dettagliata, è opportuno notare che [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] gestisce i valori generati dal database automaticamente per le colonne identity (incremento automatico), rowguidcol (GUID generato dal database) e timestamp durante le operazioni di inserimento e aggiornamento. I valori degli altri tipi di colonne sono costituiti da valori null non previsti. Per restituire i valori generati dal database, è necessario impostare manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> su `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> su uno dei seguenti valori: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> o <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Sebbene non sia un problema per questa procedura dettagliata, è opportuno notare che [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] gestisce i valori generati dal database automaticamente per le colonne identity (incremento automatico), rowguidcol (GUID generato dal database) e timestamp durante le operazioni di inserimento e aggiornamento. I valori degli altri tipi di colonne sono costituiti da valori null non previsti. Per restituire i valori generati dal database, è necessario impostare manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> su `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> su uno dei seguenti valori: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> o <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Verifica dell'applicazione  
  Eseguire nuovamente l'applicazione per verificare che la stored procedure **UpdateCustomers** aggiorni correttamente il record dei clienti nel database.  

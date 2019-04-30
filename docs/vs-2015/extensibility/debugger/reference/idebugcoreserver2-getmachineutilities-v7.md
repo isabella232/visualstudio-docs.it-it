@@ -12,12 +12,12 @@ ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c6d615a24e9c6608713699904724a62d14569ee4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 131f5a5f276b3f93d2ede3d088556b6832cc3651
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445283"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58954472"
 Questo metodo ottiene le utilità di computer per un server.  
   
 > [!NOTE]
->  Questo metodo è obsoleto: non usare ([!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] restituisce sempre `E_NOTIMPL` se questo metodo viene chiamato). Questa viene conservata per motivi cronologici.  
+> Questo metodo è obsoleto: non usare ([!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] restituisce sempre `E_NOTIMPL` se questo metodo viene chiamato). Questa viene conservata per motivi cronologici.  
   
 ## <a name="syntax"></a>Sintassi  
   

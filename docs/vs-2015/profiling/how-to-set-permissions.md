@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440598"
 ---
 # <a name="how-to-set-permissions"></a>Procedura: Impostare le autorizzazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Questo argomento descrive il modo in cui un amministratore di un computer conced
   I membri del gruppo Users possono eseguire gli strumenti di profilatura se viene concesso loro di accedere al driver software per tali strumenti. L'ultima procedura, "Per concedere l'accesso al driver di profilatura", descrive come garantire l'accesso al driver in questione.  
   
 > [!NOTE]
->  Per eseguire le operazioni previste da queste procedure sono necessarie autorizzazioni di amministratore.  
+> Per eseguire le operazioni previste da queste procedure sono necessarie autorizzazioni di amministratore.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Per creare un account utente con autorizzazioni utente  
   

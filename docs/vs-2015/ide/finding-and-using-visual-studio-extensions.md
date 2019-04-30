@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426380"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Ricerca e uso delle estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
  È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per installare estensioni ed esempi di Visual Studio da siti Web e da altri percorsi e quindi abilitarli, disabilitarli, aggiornarli o disinstallarli (**Strumenti / Estensioni e aggiornamenti**oppure digitare **Estensioni** nella finestra **Avvio veloce** ). Nella finestra di dialogo vengono visualizzati anche gli aggiornamenti per le estensioni e gli esempi installati. È anche possibile scaricare estensioni da siti Web od ottenerle da altri sviluppatori.
 
 > [!NOTE]
->  A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Gallery verranno aggiornate automaticamente.  È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
+> A partire da Visual Studio 2015, le estensioni ospitate in Visual Studio Gallery verranno aggiornate automaticamente.  È possibile modificare questa impostazione tramite la finestra di dialogo **Estensioni e aggiornamenti** .  Per informazioni dettagliate, vedere la sezione **Aggiornamenti automatici delle estensioni** più avanti.
 
 ## <a name="finding-visual-studio-extensions"></a>Ricerca delle estensioni di Visual Studio
  È possibile installare estensioni dal [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o nella [raccolta di esempi](https://code.msdn.microsoft.com/vstudio) del sito Web Microsoft. Le estensioni possono essere controlli, esempi, modelli, strumenti o altri componenti che aggiungono funzionalità a Visual Studio. In Visual Studio sono supportate estensioni nel formato di pacchetto VSIX. Queste includono modelli di progetto, modelli di elemento, elementi di **Casella degli strumenti** componenti MEF (Managed Extension Framework) e VSPackage. È anche possibile scaricare le estensioni basate su MSI, ma la finestra di dialogo **Estensioni e aggiornamenti** non consente di abilitarle o disabilitarle. Visual Studio Gallery contiene estensioni VSIX e MSI.
@@ -59,7 +59,7 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
 - Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti** .
 
 > [!NOTE]
->  A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
+> A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
 
 ## <a name="sample-master-copies-and-working-copies"></a>Copie master e copie di lavoro di esempio
  Quando si installa un esempio online, la soluzione viene memorizzata in due posizioni:
@@ -89,4 +89,4 @@ Le estensioni di Visual Studio sono pacchetti di codice eseguiti in Visual Studi
  Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Estensioni e aggiornamenti** senza modifica.
 
 > [!TIP]
->  Se un'estensione basata su MSI include un file extension.vsixmanifest, tale estensione verrà visualizzata nella finestra di dialogo **Estensioni e aggiornamenti** .
+> Se un'estensione basata su MSI include un file extension.vsixmanifest, tale estensione verrà visualizzata nella finestra di dialogo **Estensioni e aggiornamenti** .

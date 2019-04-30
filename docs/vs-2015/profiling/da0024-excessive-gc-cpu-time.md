@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435842"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tempo CPU GC eccessivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Id regola | DA0024 |
  Questa regola viene attivata quando la quantità di tempo impiegato per l'operazione di Garbage Collection è eccessivamente elevata rispetto al tempo di elaborazione totale dell'applicazione.  
   
 > [!NOTE]
->  Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è significativo ma non eccessivo rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0023: Tempo CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md) anziché la regola.  
+> Quando la percentuale di tempo impiegato per l'operazione di Garbage Collection è significativa ma non eccessiva rispetto al tempo di elaborazione totale dell'applicazione, viene attivato l'avviso [DA0023: Tempo CPU GC elevato](../profiling/da0023-high-gc-cpu-time.md) anziché la regola.  
   
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso  
  Fare doppio clic sul messaggio nella finestra Elenco errori per passare alla [visualizzazione Contrassegni](../profiling/marks-view.md) dei dati di profilatura. Individuare la colonna **Memoria CLR .NET\\% Time in GC** (% tempo in GC). Determinare se sono presenti fasi specifiche di esecuzione del programma in cui il sovraccarico di Garbage Collection della memoria gestita è maggiore rispetto ad altre fasi. Confrontare i valori di % Time in GC (% tempo in GC) con la frequenza di Garbage Collection indica nei valori **Raccolte di generazione 0**, **Raccolte di generazione 1**, **Raccolte di generazione 2**.  

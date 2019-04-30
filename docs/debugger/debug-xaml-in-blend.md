@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 284948bc1167a78b2e99b02607b94ce28cc47a0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 535e7ea155200b06b0783e79d95f4eba96ce1eed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399511"
 ---
 # <a name="debug-xaml-in-blend"></a>Debug XAML in Blend
 Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] per eseguire il debug del codice XAML nell'app. Quando compili un progetto, eventuali errori vengono visualizzati nel pannello **Risultati**. Fai doppio clic su un errore per trovare il markup correlato all'errore. Se desideri avere più spazio per lavorare, puoi nascondere il pannello **Risultati** premendo F12.
@@ -27,7 +27,7 @@ Puoi usare gli strumenti disponibili in [!INCLUDE[blend_first](../debugger/inclu
  Si verificano errori di sintassi se il codice XAML o i file code-behind non rispettano le regole di formattazione del linguaggio. La descrizione dell'errore ti aiuterà a capire come risolverlo. L'elenco specifica anche il nome del file e il numero della riga in cui è presente l'errore. Gli errori XAML sono elencati nella scheda **Markup** del pannello **Risultati**.
 
 > [!TIP]
->  XAML è un linguaggio di markup basato su XML che segue le regole di sintassi XML.
+> XAML è un linguaggio di markup basato su XML che segue le regole di sintassi XML.
 
  Di seguito sono elencate alcune cause comuni degli errori di sintassi XAML:
 

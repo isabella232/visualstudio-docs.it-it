@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426611"
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ L'eliminazione nell'origine è la possibilità di eliminare o Ignora le violazio
  Non utilizzare le eliminazioni nell'origine nelle build di rilascio per evitare che i metadati di eliminazione nell'origine di spedizione accidentalmente. A causa del costo di elaborazione di eliminazione nell'origine, le prestazioni dell'applicazione possono essere ridotte, includendo i metadati di eliminazione nell'origine.  
   
 > [!NOTE]
->  Non è per presentare codice questi attributi se stessi. Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile per il codice C++.  
+> Non è per presentare codice questi attributi se stessi. Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). La voce di menu non è disponibile per il codice C++.  
   
 ## <a name="suppressmessage-attribute"></a>Attributo SuppressMessage  
  Quando si fare doppio clic su un avviso di analisi del codice nel **elenco errori** e quindi fare clic su **Elimina messaggi**, una **SuppressMessage** attributo viene aggiunto a o nel codice il file delle eliminazioni globali del progetto.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Quando si elimina un avviso con ambito spazio dei nomi, viene eliminato l'avviso per lo spazio dei nomi stesso. Non elimina l'avviso in base a tipi nello spazio dei nomi.  
+> Quando si elimina un avviso con ambito spazio dei nomi, viene eliminato l'avviso per lo spazio dei nomi stesso. Non elimina l'avviso in base a tipi nello spazio dei nomi.  
   
  Qualsiasi eliminazione può essere espresse specificando un ambito esplicito. È necessario in tempo reale di queste eliminazioni a livello globale. È possibile specificare l'eliminazione a livello di membro tramite la decorazione di un tipo.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  La destinazione contiene sempre il nome dell'elemento completo.  
+> La destinazione contiene sempre il nome dell'elemento completo.  
   
 ## <a name="global-suppression-file"></a>File eliminazione globale  
  Il file di eliminazione globale conserva le eliminazioni a livello globale o le eliminazioni che non si specificano una destinazione. Ad esempio, in questo file vengono archiviate le eliminazioni per le violazioni del livello assembly. Inoltre, alcune eliminazioni ASP.NET vengono archiviate in questo file perché le impostazioni a livello di progetto non sono disponibili per un modello code-behind. Eliminazione globale viene creata e aggiunto al progetto la prima volta che si seleziona il **File di progetto eliminazione** opzione del **Elimina messaggi** comando nella finestra Elenco errori. Per altre informazioni, vedere [Procedura: Eliminare gli avvisi tramite la voce di Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

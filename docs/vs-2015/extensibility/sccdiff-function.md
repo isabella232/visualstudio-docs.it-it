@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432472"
 ---
 # <a name="sccdiff-function"></a>Funzione SccDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Ottimizzare le prestazioni, il plug-in del controllo del codice sorgente potrebbe usare un'alternativa basata su un checksum o da un timestamp anziché il confronto byte per byte chiamato da `SCC_DIFF_CONTENTS`: queste forme di confronto sono ovviamente più veloce ma meno affidabile. Non tutti i sistemi di controllo di origine possono supportare questi metodi alternativi di confronto e il plug-in potrebbe essere necessario eseguire il fallback a un confronto di contenuto. Tutti i plug-in controllo codice sorgente, è necessario come minimo, supporta un confronto di contenuto.  
   
 > [!NOTE]
->  I flag di differenza rapida si escludono a vicenda. È possibile non passare alcun flag, ma non è valido passare contemporaneamente più di uno. `SCC_DIFF_QUICK_DIFF`, che è una maschera che combina tutti i flag, può essere usato per verificare, ma non deve mai essere passato come parametro.  
+> I flag di differenza rapida si escludono a vicenda. È possibile non passare alcun flag, ma non è valido passare contemporaneamente più di uno. `SCC_DIFF_QUICK_DIFF`, che è una maschera che combina tutti i flag, può essere usato per verificare, ma non deve mai essere passato come parametro.  
   
 |`fOption`|Significato|  
 |---------------|-------------|  

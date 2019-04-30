@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5d756f149e01043d8b191ae13dd5b4eba8e8b0b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 806e9fd06611e2cb30829b294222870b9252c35b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430248"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_access ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   

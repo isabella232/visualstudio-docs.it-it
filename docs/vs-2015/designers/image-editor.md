@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434401"
 ---
 # <a name="image-editor"></a>Editor di immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
  Prima di iniziare a lavorare all'immagine appena creata, è possibile modificarne la configurazione predefinita. È ad esempio possibile modificare le dimensioni o il formato di colore usato. Per informazioni su come configurare queste e altre proprietà dell'immagine, vedere [Proprietà dell'immagine](#ImageProperties).  
   
 > [!NOTE]
->  Prima di salvare il lavoro, assicurarsi di impostare la proprietà **Formato colore** se si vuole usare un formato di colore specifico. Se il formato del file supporta la compressione, è possibile modificare le impostazioni di compressione quando si salva il file per la prima volta oppure quando si sceglie **Salva con nome**.  
+> Prima di salvare il lavoro, assicurarsi di impostare la proprietà **Formato colore** se si vuole usare un formato di colore specifico. Se il formato del file supporta la compressione, è possibile modificare le impostazioni di compressione quando si salva il file per la prima volta oppure quando si sceglie **Salva con nome**.  
   
 ## <a name="working-with-the-image-editor"></a>Uso dell'editor di immagini  
  Questa sezione descrive come usare l'editor di immagini per modificare le trame e le immagini.  
@@ -136,7 +136,7 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
 |**Taglia**|Taglia l'immagine in base alla selezione attiva.|  
   
 ### <a name="working-with-mip-levels"></a>Uso dei livelli MIP  
- Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: Creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano i livelli MIP per il livello di dettaglio dell'area della trama. Per informazioni su come generare e usare i livelli MIP, vedere [Procedura: creare e modificare livelli MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Uso della trasparenza  
  Alcuni formati di immagine, ad esempio DDS (DirectDraw Surface), supportano la trasparenza. Esistono diversi modi di usare la trasparenza, a seconda dello strumento in uso. Per specificare il livello di trasparenza per una selezione di colore, nella finestra **Proprietà** impostare la componente **A** (alpha) di tale selezione di colore. Ecco come i diversi tipi di strumenti controllano la modalità di applicazione della trasparenza:  
@@ -166,7 +166,7 @@ Questo documento descrive come usare l'editor di immagini di [!INCLUDE[vsprvs](.
 |Sezione di profondità|Sezione di profondità corrente. Solo la prima sezione può essere visualizzata. Tutte le altre sezioni vengono perse quando l'immagine viene salvata.|  
   
 > [!NOTE]
->  Poiché la proprietà **Rotazione di** si applica a tutti gli strumenti e alle aree selezionate, viene sempre visualizzata nella parte inferiore della finestra **Proprietà** insieme ad altre proprietà degli strumenti. **Rotazione di** viene sempre visualizzata perché l'intera immagine è implicitamente selezionata quando non sono attivi altri strumenti o selezioni. Per altre informazioni sulla proprietà **Rotazione di**, vedere [Proprietà degli strumenti](#ToolProperties).  
+> Poiché la proprietà **Rotazione di** si applica a tutti gli strumenti e alle aree selezionate, viene sempre visualizzata nella parte inferiore della finestra **Proprietà** insieme ad altre proprietà degli strumenti. **Rotazione di** viene sempre visualizzata perché l'intera immagine è implicitamente selezionata quando non sono attivi altri strumenti o selezioni. Per altre informazioni sulla proprietà **Rotazione di**, vedere [Proprietà degli strumenti](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Ridimensionamento delle immagini  
  Esistono due modi per ridimensionare un'immagine. In entrambi i casi l'editor di immagini usa l'interpolazione bilineare per ricampionare l'immagine.  

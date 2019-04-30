@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e4750c3801a96149866f88e3150fd495399b85d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 979f79658834f9bdcf50f0af51597515eaab2991
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410167"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_thisAdjust ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
  In alcuni casi ereditarietà più il metodo di stesso deve calcolare un vero e proprio `this` mediante l'aggiunta di un offset al valore `this`.  

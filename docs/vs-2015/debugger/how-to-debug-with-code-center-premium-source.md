@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438325"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Procedura: Eseguire il debug con codice sorgente di Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
+   > Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
   
      Spostare questi percorsi all'inizio dell'elenco per assicurarsi che questi simboli vengano caricati per primi.  
   
    > [!NOTE]
-   >  Questi percorsi di Code Center Premium devono essere elencati per primi in modo che vengano caricati per primi. In Visual Studio 2010, è possibile spostare server sopra la **server dei simboli Microsoft** voce, ovvero il motivo per cui è necessario deselezionare la casella di controllo.  
+   > Questi percorsi di Code Center Premium devono essere elencati per primi in modo che vengano caricati per primi. In Visual Studio 2010, è possibile spostare server sopra la **server dei simboli Microsoft** voce, ovvero il motivo per cui è necessario deselezionare la casella di controllo.  
    > 
    >  Per caricare simboli dai simboli Microsoft durante la sessione di debug, eseguire questa operazione:  
    > 
@@ -113,7 +113,7 @@ Con il debugger di [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] è
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
+   > Assicurarsi di includere la barra finale<strong>/</strong> alla fine del percorso.  
   
 4. Per ogni progetto gestito nella soluzione, eseguire quanto segue:  
   

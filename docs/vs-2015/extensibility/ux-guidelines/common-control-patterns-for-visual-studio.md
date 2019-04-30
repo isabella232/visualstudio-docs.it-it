@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430032"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Pattern di controllo comuni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040831"
  Alcuni pulsanti devono sempre usare un'immagine grafica e testo per liberare spazio ed evitare problemi di localizzazione non includere mai. Questi vengono spesso usati in altri elenchi ordinabili e selezioni di campo.
 
 > [!NOTE]
->  Gli utenti devono premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Eseguire il mapping di proprietà name del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.
+> Gli utenti devono premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Eseguire il mapping di proprietà name del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.
 
 |||
 |-|-|

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415503"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedura: Aggiungere i marcatori di testo standard
 Usare la procedura seguente per creare uno dei tipi di marcatore di testo predefinito forniti con il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale.
@@ -27,7 +27,7 @@ Usare la procedura seguente per creare uno dei tipi di marcatore di testo predef
      In questa chiamata al metodo, specificare un tipo di marcatore, un intervallo di testo per creare il marcatore di failover e un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia. Quindi, questo metodo restituisce un puntatore al marcatore di testo appena creata. Tipi di marcatori vengono prelevati i <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumerazione. Specificare un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaccia se si desidera essere informati di eventi del marcatore.
 
     > [!NOTE]
-    >  Creare i marcatori di testo sul thread principale della UI solo. L'editor principale è basato sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.
+    > Creare i marcatori di testo sul thread principale della UI solo. L'editor principale è basato sul contenuto del buffer di testo per creare marcatori di testo e il buffer di testo non è thread-safe.
 
 ## <a name="add-a-custom-command"></a>Aggiungere un comando personalizzato
  Implementazione di `IVsTextMarkerClient` interfaccia e che fornisce un puntatore a esso da un marcatore migliora il comportamento di marcatore in diversi modi. In primo luogo, in questo modo è possibile fornire suggerimenti per il marcatore e di eseguire i comandi. Ciò consente anche di ricevere le notifiche degli eventi per i marcatori di singoli e per creare un menu contestuale personalizzato sul marcatore. Utilizzare la procedura seguente per aggiungere un comando personalizzato per il menu di scelta rapida marcatore.

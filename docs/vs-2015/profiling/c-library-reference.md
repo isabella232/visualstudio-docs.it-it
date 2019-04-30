@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5178ff7becc318b4f5b796046118bccb83129a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433778"
 ---
 # <a name="c-library-reference"></a>riferimento alla libreria C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54797012"
 In questa sezione sono contenute informazioni di riferimento per l'SDK del visualizzatore di concorrenza.  
   
 > [!NOTE]
->  Lo standard del linguaggio C si riserva l'uso di identificatori che iniziano con un carattere di sottolineatura (`_`) per le implementazioni come le librerie. Non usare nomi che iniziano con un carattere di sottolineatura nel codice. Il comportamento degli elementi di codice i cui nomi seguono questa convenzione non è garantito ed è soggetto a modifiche nelle future versioni. Per questi motivi, tali elementi di codice vengono omessi da questa documentazione.  
+> Lo standard del linguaggio C si riserva l'uso di identificatori che iniziano con un carattere di sottolineatura (`_`) per le implementazioni come le librerie. Non usare nomi che iniziano con un carattere di sottolineatura nel codice. Il comportamento degli elementi di codice i cui nomi seguono questa convenzione non è garantito ed è soggetto a modifiche nelle future versioni. Per questi motivi, tali elementi di codice vengono omessi da questa documentazione.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Funzione CvCreateDefaultMarkerSeriesOfDefaultProvider](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  

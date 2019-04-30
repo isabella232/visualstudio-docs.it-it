@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 15bb3c7bca9db7e268dde998e210629a8167497f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430357"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: Creare ed eseguire il debug di una soluzione del flusso di lavoro di SharePoint
   Questa procedura dettagliata viene illustrato come creare un modello di base del flusso di lavoro sequenziale. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato rivisto, il flusso di lavoro termina.
@@ -35,9 +35,9 @@ ms.locfileid: "60109556"
 - La gestione degli eventi di attività del flusso di lavoro.
 
 > [!NOTE]
->  Sebbene questa procedura dettagliata Usa un progetto di flusso di lavoro sequenziale, il processo è identico per un progetto flusso di lavoro macchina a stati.
+> Sebbene questa procedura dettagliata Usa un progetto di flusso di lavoro sequenziale, il processo è identico per un progetto flusso di lavoro macchina a stati.
 >
->  Inoltre, il computer potrebbe mostrare nomi diversi o percorsi di alcuni utente di Visual Studio gli elementi dell'interfaccia nelle istruzioni seguenti. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Inoltre, il computer potrebbe mostrare nomi diversi o percorsi di alcuni utente di Visual Studio gli elementi dell'interfaccia nelle istruzioni seguenti. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:

@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445682"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60041182"
 - Evitare di aggiungere riferimenti a file agli output di altri progetti della stessa soluzione, poiché potrebbero verificarsi errori di compilazione. Usare invece la scheda **Progetti** della finestra di dialogo **Aggiungi riferimento** per creare riferimenti da progetto a progetto. Tale procedura facilita lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  In Visual Studio 2015, viene creato un riferimento al file anziché un riferimento al progetto se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0.  
+    > In Visual Studio 2015, viene creato un riferimento al file anziché un riferimento al progetto se la versione di destinazione di .NET Framework di un progetto è 4.5 e la versione di destinazione dell'altro progetto è 2, 3, 3.5 o 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Per visualizzare un assembly nella finestra di dialogo Aggiungi riferimento  
   
@@ -181,7 +181,7 @@ ms.locfileid: "60041182"
  Un SDK è una raccolta di file che in Visual Studio vengono trattati come un singolo componente. Nella scheda Estensioni, gli SDK che si applicano al progetto da cui è stata aperta la finestra di dialogo **Gestione riferimenti** sono elencati come voci singole. Una volta aggiunto a un progetto, tutto il contenuto dell'SDK viene utilizzato da Visual Studio in modo tale che l'utente non deve assumere nuove azioni per sfruttare il contenuto dell'SDK in IntelliSense, nella casella degli strumenti, nelle finestre di progettazione, nel Visualizzatore oggetti, nella compilazione, nella distribuzione, nel debug e nella creazione del pacchetto. Per informazioni su come visualizzare l'SDK nella scheda Estensioni, vedere [Creating a Software Development Kit](../extensibility/creating-a-software-development-kit.md) (Creazione di un Software Development Kit).  
   
 > [!NOTE]
->  Se un progetto fa riferimento a un SDK che dipende da un altro SDK, in Visual Studio non verrà utilizzato il secondo SDK a meno che l'utente non aggiunga manualmente un riferimento al secondo SDK. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dall'SDK elencando non solo il nome e la versione dell'SDK ma anche il nome di tutte le dipendenze dell'SDK nel riquadro dei dettagli. Se un utente non annota le dipendenze e aggiunge solo l'SDK, tramite MSBuild verrà chiesto di aggiungere le dipendenze.  
+> Se un progetto fa riferimento a un SDK che dipende da un altro SDK, in Visual Studio non verrà utilizzato il secondo SDK a meno che l'utente non aggiunga manualmente un riferimento al secondo SDK. Quando un utente sceglie un SDK nella scheda **Estensioni**, la finestra di dialogo **Gestione riferimenti** consente di identificare le dipendenze dall'SDK elencando non solo il nome e la versione dell'SDK ma anche il nome di tutte le dipendenze dell'SDK nel riquadro dei dettagli. Se un utente non annota le dipendenze e aggiunge solo l'SDK, tramite MSBuild verrà chiesto di aggiungere le dipendenze.  
   
  Se un tipo di progetto non supporta **Estensioni**, la scheda non verrà visualizzata nella finestra di dialogo **Gestione riferimenti**.  
   
@@ -207,7 +207,7 @@ ms.locfileid: "60041182"
     ```  
   
     > [!NOTE]
-    >  Se si aggiunge la proprietà, la compilazione potrebbe essere eseguita più lentamente.  
+    > Se si aggiunge la proprietà, la compilazione potrebbe essere eseguita più lentamente.  
   
 ## <a name="recent"></a>Recenti  
  Le schede Assembly, COM, Windows e Sfoglia supportano tutte una scheda Recenti nella quale viene enumerato l'elenco di componenti aggiunti ai progetti di recente.  

@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426470"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Eseguire app di Windows Store in un computer remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
  Per impostazione predefinita, il debugger remoto utilizza l'autenticazione di Windows.  
   
 > [!WARNING]
->  È inoltre possibile scegliere di eseguire il debugger remoto in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.  
+> È inoltre possibile scegliere di eseguire il debugger remoto in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.  
   
 ## <a name="BKMK_DirectConnect"></a> Come connettersi direttamente a un dispositivo remoto  
  Per connettersi direttamente a un dispositivo remoto, collegare il computer che esegue Visual Studio al dispositivo tramite un cavo Ethernet standard. Se il dispositivo non dispone di una porta Ethernet, è possibile utilizzare un adattatore da USB a Ethernet per il collegamento al cavo.  
@@ -74,15 +74,15 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> Installazione di Remote Tools  
   
 > [!NOTE]
->  **Versioni e aggiornamenti**  
+> **Versioni e aggiornamenti**  
 >   
->  **Remote Tools per Visual Studio 2015** non è supportato per le versioni precedenti di Visual Studio.  
+> **Remote Tools per Visual Studio 2015** non è supportato per le versioni precedenti di Visual Studio.  
 >   
->  Si consiglia di installare la versione dell'aggiornamento di Remote Tools per Visual Studio 2015 che corrisponde alla versione dell'aggiornamento dell'installazione di Visual Studio.  
+> Si consiglia di installare la versione dell'aggiornamento di Remote Tools per Visual Studio 2015 che corrisponde alla versione dell'aggiornamento dell'installazione di Visual Studio.  
 >   
->  Il debugger di Visual Studio è compatibile con qualsiasi combinazione di versioni di Visual Studio 2015 e Remote Tools per Visual Studio 2015. Tuttavia, le funzionalità più recenti di Visual Studio richiedono che Visual Studio e Remote Tools siano nella versione più aggiornata.  
+> Il debugger di Visual Studio è compatibile con qualsiasi combinazione di versioni di Visual Studio 2015 e Remote Tools per Visual Studio 2015. Tuttavia, le funzionalità più recenti di Visual Studio richiedono che Visual Studio e Remote Tools siano nella versione più aggiornata.  
 >   
->  Altri strumenti diagnostici potrebbero richiedere le stesse versioni per Remote Tools e Visual Studio.  
+> Altri strumenti diagnostici potrebbero richiedere le stesse versioni per Remote Tools e Visual Studio.  
   
  **Installazione dei componenti di debug remoti in un dispositivo remoto**  
   
@@ -101,7 +101,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Avvio di Remote Debugging Monitor  
   
 > [!NOTE]
->  Poiché il debugger remoto configura il firewall per consentire le comunicazioni con un host di Visual Studio, è necessario essere amministratore del dispositivo remoto per avviare il debugger remoto per la prima volta.  
+> Poiché il debugger remoto configura il firewall per consentire le comunicazioni con un host di Visual Studio, è necessario essere amministratore del dispositivo remoto per avviare il debugger remoto per la prima volta.  
   
  Dopo l'installazione di Remote Tools scegliere **Debugger remoto** nella schermata **Start** . La prima volta che si avvia il debugger remoto viene visualizzato **Configurazione debug remoto** .  
   
@@ -125,7 +125,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
    2. Scegliere **Autorizzazioni** per aggiungere o rimuovere utenti che dispongono di autorizzazioni per il debug remoto.  
   
        > [!NOTE]
-       >  Le autorizzazioni devono essere concesse a ogni account utente che esegue il debug in modalità remota.  
+       > Le autorizzazioni devono essere concesse a ogni account utente che esegue il debug in modalità remota.  
   
    Utilizzare la **Configurazione guidata del debugger remoto** per impostare le opzioni avanzate per il debugger remoto. Per aprire la procedura guidata, scegliere **Configurazione guidata del debugger remoto** nella schermata Start.  
   
@@ -141,7 +141,7 @@ Applies to Windows only](../Image/windows_only_content.png "windows_only_content
  Nella finestra di dialogo sono elencati solo i dispositivi che eseguono il debugger remoto presenti sulla subnet locale del computer con installato Visual Studio.  
   
 > [!TIP]
->  In caso di problemi di connessione a un dispositivo remoto, provare a immettere l'indirizzo IP del dispositivo. Per determinare l'indirizzo IP di un dispositivo, aprire una finestra di comando e digitare **ipconfig**. L'indirizzo IP è indicato come **IPv4 Address**.  
+> In caso di problemi di connessione a un dispositivo remoto, provare a immettere l'indirizzo IP del dispositivo. Per determinare l'indirizzo IP di un dispositivo, aprire una finestra di comando e digitare **ipconfig**. L'indirizzo IP è indicato come **IPv4 Address**.  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Scelta del dispositivo remoto per progetti C# e Visual Basic  
  ![Proprietà del progetto per il debug remoto gestito](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

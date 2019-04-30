@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433277"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizzazione della creazione e dello spostamento di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ ms.locfileid: "60100521"
    Ad esempio, è possibile impostare le proprietà nell'elemento unito utilizzando i dati dalla nuova posizione nel modello.  
   
 > [!NOTE]
->  Se si scrive codice personalizzato di tipo merge, soli operazioni di merge che vengono eseguite tramite questo EMD influisce su. Se sono presenti altri EMDs che lo stesso tipo di oggetto di tipo merge, o se è presente altro codice personalizzato che crea questi oggetti senza usare il EMD, quindi queste verranno non interessate dal codice personalizzato di tipo merge.  
+> Se si scrive codice personalizzato di tipo merge, soli operazioni di merge che vengono eseguite tramite questo EMD influisce su. Se sono presenti altri EMDs che lo stesso tipo di oggetto di tipo merge, o se è presente altro codice personalizzato che crea questi oggetti senza usare il EMD, quindi queste verranno non interessate dal codice personalizzato di tipo merge.  
 >   
->  Se si desidera assicurarsi che un nuovo elemento o una nuova relazione viene sempre elaborato dal codice personalizzato, si consiglia di definire un `AddRule` nella relazione di incorporamento e un `DeleteRule` nella classe di dominio dell'elemento. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+> Se si desidera assicurarsi che un nuovo elemento o una nuova relazione viene sempre elaborato dal codice personalizzato, si consiglia di definire un `AddRule` nella relazione di incorporamento e un `DeleteRule` nella classe di dominio dell'elemento. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Esempio: La definizione di una EMD senza scrivere codice personalizzato  
  Nell'esempio seguente consente agli utenti di creare un elemento e un connettore nello stesso momento mediante il trascinamento dalla casella degli strumenti in una forma esistente. L'esempio aggiunge una EMD alla definizione DSL. Prima di questa modifica, gli utenti potranno trascinare gli strumenti nel diagramma, ma non in forme esistenti.  

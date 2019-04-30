@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432725"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procedura: Installare il Profiler autonomo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60069666"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offre un profiler autonomo basato sulla riga di comando che può essere eseguito senza installare l'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questa situazione si verifica quando un computer non ha o non può avere un ambiente di sviluppo installato. È consigliabile, ad esempio, non installare un ambiente di sviluppo in un server Web di produzione.  
   
 > [!NOTE]
->  Quando si usa il profiler autonomo per raccogliere dati sulle prestazioni per il sito Web ASP.NET, è consigliabile usare lo strumento da riga di comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) anziché lo strumento [VSPerfCmd](../profiling/vsperfcmd.md).  
+> Quando si usa il profiler autonomo per raccogliere dati sulle prestazioni per il sito Web ASP.NET, è consigliabile usare lo strumento da riga di comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) anziché lo strumento [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Per installare il profiler autonomo  
   
@@ -34,12 +34,12 @@ ms.locfileid: "60069666"
 2. Aggiungere i percorsi per vsintr.exe e msdis150.dll al percorso di sistema.  
   
     > [!NOTE]
-    >  Nell'installazione predefinita di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vsinstr.exe e msdis150.dll si trovano in \Programmi\Visual Studio 10\Team Tools\Performance Tools.  
+    > Nell'installazione predefinita di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vsinstr.exe e msdis150.dll si trovano in \Programmi\Visual Studio 10\Team Tools\Performance Tools.  
   
 3. Al prompt dei comandi digitare **VSInstr**.  
   
     > [!NOTE]
-    >  Se vengono visualizzate le informazioni di utilizzo per vsinstr.exe, significa che tutti gli elementi sono configurati correttamente. Se viene visualizzato un errore in cui viene comunicato che vsinstr.exe o una delle relative dipendenze non è stata trovata, verificare di aver specificato correttamente i percorsi come descritto nel passaggio 2.  
+    > Se vengono visualizzate le informazioni di utilizzo per vsinstr.exe, significa che tutti gli elementi sono configurati correttamente. Se viene visualizzato un errore in cui viene comunicato che vsinstr.exe o una delle relative dipendenze non è stata trovata, verificare di aver specificato correttamente i percorsi come descritto nel passaggio 2.  
   
 4. Specificare il server dei simboli impostando la variabile **_NT_SYMBOL_PATH** su **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60069666"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    >  Per istruzioni dettagliate su come configurare il pacchetto del server dei simboli, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Per istruzioni dettagliate su come configurare il pacchetto del server dei simboli, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Usare lo strumento [VSPerfReport](../profiling/vsperfreport.md) per serializzare i simboli nel file dei dati di profilatura (con estensione vsp). Usare le opzioni **VSPerfReport /summary:all /packsymbols**. Se non sono presenti simboli inseriti nel file di dati, assicurarsi di aver impostato la variabile di ambiente _NT_SYMBOL_PATH.  
   

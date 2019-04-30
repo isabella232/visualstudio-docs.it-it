@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b68e2f01cae577c7d0913e448aa832b586aa22b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440858"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Procedura dettagliata: Inserire dati in una cartella di lavoro in un server
   Questa procedura dettagliata illustra come inserire dati in un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -43,7 +43,7 @@ ms.locfileid: "60071694"
   Sebbene questa procedura dettagliata si presuppone che si esegue il codice nel computer di sviluppo, il codice illustrato da questa procedura dettagliata è utilizzabile in un server che non dispone di Excel sia installato.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -251,7 +251,7 @@ ms.locfileid: "60071694"
    - Oggetto <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> oggetto da utilizzare per accedere alla cache dei dati nella cartella di lavoro.
 
      > [!NOTE]
-     >  Il codice seguente presuppone che si sta utilizzando una cartella di lavoro che ha il *xlsx* estensione di file. Se la cartella di lavoro nel progetto è un'estensione di file diverso, modificare il percorso in base alle esigenze.
+     > Il codice seguente presuppone che si sta utilizzando una cartella di lavoro che ha il *xlsx* estensione di file. Se la cartella di lavoro nel progetto è un'estensione di file diverso, modificare il percorso in base alle esigenze.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]

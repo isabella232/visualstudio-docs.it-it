@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430916"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
     Il GUID viene utilizzato per identificare in modo univoco una categoria<strong>.</strong> Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.  
   
    > [!NOTE]
-   >  Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.  
+   > Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.  
   
 2. Nome della categoria deve essere aggiunto a una tabella di stringhe all'interno di file di risorse (RC) del pacchetto VSPackage, in modo che possa essere localizzata in base alle necessità quando visualizzati nell'IDE di.  
   

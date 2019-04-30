@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435893"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: Aggiornare un'estensione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "60064680"
 1. In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
 
     > [!IMPORTANT]
-    >  Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
+    > Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
 
 2. Nelle **Esplora soluzioni**, aprire source.extension.manifest.
 
@@ -60,7 +60,7 @@ ms.locfileid: "60064680"
      È possibile abilitare o disabilitare il controllo automatico per gli aggiornamenti nella parte inferiore della **aggiornamenti** riquadro (**abilitare/disabilitare il rilevamento automatico degli aggiornamenti disponibili**), quali modifiche di **verificare la presenza di gli aggiornamenti** impostazione **Strumenti / opzioni / ambiente / estensioni e aggiornamenti**.
 
     > [!NOTE]
-    >  A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
+    > A partire da Visual Studio 2015 Update 2, è possibile specificare in **Strumenti / Opzioni / Ambiente / Estensioni e aggiornamenti** se gli aggiornamenti automatici devono essere installati per le estensioni per utente, per tutte le estensioni utente o entrambe le opzioni (impostazione predefinita).
 
 ## <a name="see-also"></a>Vedere anche
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md) [ricerca e uso di estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

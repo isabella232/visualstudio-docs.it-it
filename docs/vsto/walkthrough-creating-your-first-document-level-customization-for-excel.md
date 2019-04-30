@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438531"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procedura dettagliata: Creare una personalizzazione a livello di documento per Excel
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Excel. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre una cartella di lavoro specifica. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre una cartella di lavoro qualsiasi.
@@ -106,7 +106,7 @@ ms.locfileid: "60104499"
      **Questo testo è stato aggiunto usando la finestra di progettazione.**
 
 > [!WARNING]
->  Se si aggiunge questa riga di testo alla cella **A2**, verrà sovrascritta da altro codice in questo esempio.
+> Se si aggiunge questa riga di testo alla cella **A2**, verrà sovrascritta da altro codice in questo esempio.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Aggiungere testo a un foglio di lavoro a livello di codice
  Aggiungere quindi codice al file di codice Sheet1. Il nuovo codice usa il modello a oggetti di Excel per aggiungere nella cartella di lavoro una seconda riga di testo. Per impostazione predefinita, il file di codice Sheet1 contiene il seguente codice generato:

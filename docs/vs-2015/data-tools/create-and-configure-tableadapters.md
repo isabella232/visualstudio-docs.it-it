@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431212"
 ---
 # <a name="create-and-configure-tableadapters"></a>Creare e configurare oggetti TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
      Mappare i parametri dalla stored procedure selezionata alle colonne corrispondenti nella tabella dati. Ad esempio, se la stored procedure accetta un parametro denominato `@CompanyName` che viene passato al `CompanyName` set di colonne nella tabella, il **colonna di origine** del `@CompanyName` parametro `CompanyName`.  
   
     > [!NOTE]
-    >  La stored procedure che è assegnata al comando SELECT viene eseguita chiamando il metodo dell'oggetto TableAdapter tale nome è nel passaggio successivo della procedura guidata. Il metodo predefinito è `Fill`, in modo che il codice che viene in genere utilizzato per l'esecuzione della stored procedure SELECT è `TableAdapter.Fill(tableName)`. Se si modifica il nome predefinito `Fill`, sostituire `Fill` con il nome assegnare e sostituire "TableAdapter" con il nome effettivo dell'oggetto TableAdapter (ad esempio, `CustomersTableAdapter`).  
+    > La stored procedure che è assegnata al comando SELECT viene eseguita chiamando il metodo dell'oggetto TableAdapter tale nome è nel passaggio successivo della procedura guidata. Il metodo predefinito è `Fill`, in modo che il codice che viene in genere utilizzato per l'esecuzione della stored procedure SELECT è `TableAdapter.Fill(tableName)`. Se si modifica il nome predefinito `Fill`, sostituire `Fill` con il nome assegnare e sostituire "TableAdapter" con il nome effettivo dell'oggetto TableAdapter (ad esempio, `CustomersTableAdapter`).  
   
 - Il **opzioni avanzate** della procedura guidata consentono di generare istruzioni INSERT, UPDATE e DELETE in base all'istruzione SELECT su cui viene definito il **genera istruzioni SQL** pagina. Usare la concorrenza ottimistica e specificare se aggiornare la tabella di dati dopo l'inserimento e aggiornamento vengono eseguite le istruzioni.  
   
@@ -82,7 +82,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
 3. Nel **Seleziona connessione dati** schermata, selezionare o creare la connessione che userà la query.  
   
     > [!NOTE]
-    >  Questa schermata viene visualizzata solo quando la finestra di progettazione non è possibile stabilire la connessione appropriata da utilizzare oppure quando non vi sono connessioni disponibili.  
+    > Questa schermata viene visualizzata solo quando la finestra di progettazione non è possibile stabilire la connessione appropriata da utilizzare oppure quando non vi sono connessioni disponibili.  
   
 4. Nel **scegliere un tipo di comando** schermata, seleziona uno dei seguenti metodi di recupero dei dati dal database:  
   
@@ -97,7 +97,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
 - Se si sta modificando una query TableAdapter esistente, fare doppio clic su query e quindi scegliere **configura** dal menu di scelta rapida.  
   
     > [!NOTE]
-    >  Pulsante destro del mouse la query principale di un oggetto TableAdapter riconfigura TableAdapter e <xref:System.Data.DataTable> dello schema. Pulsante destro del mouse su una query aggiuntiva in un oggetto TableAdapter, configura, tuttavia, solo la query selezionata. Il **configurazione guidata TableAdapter** riconfigura la definizione di TableAdapter, mentre la configurazione guidata Query TableAdapter riconfigura solo la query selezionata.  
+    > Pulsante destro del mouse la query principale di un oggetto TableAdapter riconfigura TableAdapter e <xref:System.Data.DataTable> dello schema. Pulsante destro del mouse su una query aggiuntiva in un oggetto TableAdapter, configura, tuttavia, solo la query selezionata. Il **configurazione guidata TableAdapter** riconfigura la definizione di TableAdapter, mentre la configurazione guidata Query TableAdapter riconfigura solo la query selezionata.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Per aggiungere una query globali a un oggetto TableAdapter  
   
@@ -108,7 +108,7 @@ La classe TableAdapter consentono la comunicazione tra l'applicazione e un datab
 - Fornire una query che esegue l'attività desiderata, ad esempio, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  Il trascinamento di un **Query** dell'oggetto direttamente nel **Progettazione Dataset** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo che viene creato dalla procedura guidata restituisce solo un singolo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.  
+    > Il trascinamento di un **Query** dell'oggetto direttamente nel **Progettazione Dataset** crea un metodo che restituisce solo un valore scalare (singolo). Mentre la query o stored procedure selezionata potrebbe restituire più di un singolo valore, il metodo che viene creato dalla procedura guidata restituisce solo un singolo valore. Ad esempio, la query potrebbe restituire la prima colonna della prima riga dei dati restituiti.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)

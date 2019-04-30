@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442802"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Creare ed eseguire unit test per un'app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086767"
 Gli strumenti di unit test di Visual Studio 2012 Express per Windows 8 sono progettati per offrire supporto a sviluppatori e team che integrano gli unit test nelle attività di sviluppo del software. Gli unit test offrono a sviluppatori e tester un metodo efficace e gestibile per la ricerca di errori logici nei metodi delle classi nei progetti Visual C#, Visual Basic e Visual C++.
 
 > [!NOTE]
->  Gli argomenti di questa sezione descrivono le funzionalità di Visual Studio 2012 Express per Windows 8. Visual Studio Ultimate, VS Premium e VS Professional includono funzionalità aggiuntive per gli unit test.
+> Gli argomenti di questa sezione descrivono le funzionalità di Visual Studio 2012 Express per Windows 8. Visual Studio Ultimate, VS Premium e VS Professional includono funzionalità aggiuntive per gli unit test.
 >
 > - In VS Ultimate, VS Premium e VS Professional puoi usare un framework di unit test open source o di terze parti che abbia creato un adattatore di componente aggiuntivo per Esplora test Microsoft. Puoi analizzare e visualizzare anche le informazioni di code coverage per i test con VS Ultimate e VS Premium.
 >   - In VS Ultimate puoi eseguire i test dopo ogni compilazione. Puoi anche usare Microsoft Fakes, un framework di isolamento per il codice gestito che ti permette di concentrare i test sul tuo codice sostituendo il codice di test per le funzionalità di sistema e di terze parti.

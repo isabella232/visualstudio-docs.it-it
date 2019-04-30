@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442125"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin è una piattaforma per lo sviluppo di app per dispositivi mobili per la 
   È possibile usare tutte le funzionalità di Xamarin tramite [qualsiasi edizione di Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional ed Enterprise). Tenere inoltre presente che a partire dal 31 marzo 2016, Xamarin è incluso in tutte le edizioni di Visual Studio 2015 e non richiede più una licenza distinta. Per Visual Studio 2013, è possibile installare Xamarin separatamente, come descritto nell'argomento [Configurazione e installazione](../cross-platform/setup-and-install.md).  
   
 > [!NOTE]
->  Queste istruzioni descrivono la configurazione del computer più semplice e diretta per gli sviluppatori che hanno familiarità con Windows e Visual Studio. Con questa configurazione, l'esperienza di sviluppo complessiva viene semplificata poiché è sufficiente interagire con il Mac per l'uso del simulatore iOS e del dispositivo con tethering. Se invece si ha familiarità con l'ambiente Mac, è consigliabile eseguire Visual Studio in Parallels/VMWare oppure usare Xamarin Studio Community. Per istruzioni, vedere [Configurazione, installazione e verifiche per gli utenti Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
+> Queste istruzioni descrivono la configurazione del computer più semplice e diretta per gli sviluppatori che hanno familiarità con Windows e Visual Studio. Con questa configurazione, l'esperienza di sviluppo complessiva viene semplificata poiché è sufficiente interagire con il Mac per l'uso del simulatore iOS e del dispositivo con tethering. Se invece si ha familiarità con l'ambiente Mac, è consigliabile eseguire Visual Studio in Parallels/VMWare oppure usare Xamarin Studio Community. Per istruzioni, vedere [Configurazione, installazione e verifiche per gli utenti Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
   
 > [!NOTE]
->  Se si vuole una soluzione di sviluppo multipiattaforma basata su HTML e CSS, è disponibile Strumenti di Visual Studio per Apache Cordova, come descritto in [Sviluppo multipiattaforma in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> Se si vuole una soluzione di sviluppo multipiattaforma basata su HTML e CSS, è disponibile Strumenti di Visual Studio per Apache Cordova, come descritto in [Sviluppo multipiattaforma in Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

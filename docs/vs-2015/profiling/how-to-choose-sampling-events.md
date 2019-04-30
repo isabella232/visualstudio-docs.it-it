@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432828"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedura: Scegliere eventi di campionamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 - Contatore di prestazioni, ovvero contatori CPU per problemi di prestazioni ridotte.  
   
 > [!IMPORTANT]
->  Se si raccolgono dati di memoria .NET (allocazioni e/o durate degli oggetti) usando il metodo di campionamento, tutti gli eventi di campionamento specificati dall'utente vengono ignorati e si usano le allocazioni di memoria e/o gli eventi di Garbage Collection appropriati per raccogliere i dati.  
+> Se si raccolgono dati di memoria .NET (allocazioni e/o durate degli oggetti) usando il metodo di campionamento, tutti gli eventi di campionamento specificati dall'utente vengono ignorati e si usano le allocazioni di memoria e/o gli eventi di Garbage Collection appropriati per raccogliere i dati.  
   
 ### <a name="to-select-a-sample-event"></a>Per selezionare un evento di campionamento  
   
@@ -51,7 +51,7 @@ Per impostazione predefinita, gli strumenti di profilatura di [!INCLUDE[vsprvs](
 3. Dall'elenco a discesa **Evento di campionamento** selezionare l'evento di campionamento da usare per profilare l'applicazione.  
   
     > [!NOTE]
-    >  L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona **Contatore di prestazioni** dall'elenco a discesa **Evento di campionamento**.  
+    > L'opzione **Contatori di prestazioni disponibili** è abilitata solo se si seleziona **Contatore di prestazioni** dall'elenco a discesa **Evento di campionamento**.  
   
 4. Se si seleziona **Contatore di prestazioni**, selezionare un contatore CPU specifico dal controllo di visualizzazione albero **Contatori di prestazioni disponibili**.  
   

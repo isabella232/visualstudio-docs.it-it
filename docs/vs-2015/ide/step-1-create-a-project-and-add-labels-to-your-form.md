@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441980"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071876"
 I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del progetto e nell'aggiunta di etichette, di un pulsante e di altri controlli a un modulo. Si impostano inoltre le proprietà di ogni controllo che si desidera aggiungere. Il progetto conterrà il modulo, i controlli e, più avanti nell'esercitazione, il codice. Il pulsante avvia il quiz, le etichette mostrano i problemi del quiz e gli altri controlli mostrano le risposte e il tempo rimanente per completarlo.  
   
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Per creare un progetto e impostare le proprietà per un modulo  
   
@@ -145,7 +145,7 @@ Prima riga del quiz matematico
 9. Per la quarta riga, assegnare alla prima etichetta il nome **dividedLeftLabel**, impostare la proprietà **Text** della seconda etichetta su **÷** (segno di divisione), assegnare alla terza etichetta il nome **dividedRightLabel** e assegnare al controllo NumericUpDown il nome **quoziente**.  
   
     > [!NOTE]
-    >  È possibile copiare il segno di moltiplicazione × e il segno di divisione ÷ da questa esercitazione e incollarli nel form.  
+    > È possibile copiare il segno di moltiplicazione × e il segno di divisione ÷ da questa esercitazione e incollarli nel form.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Per aggiungere un pulsante di avvio e impostare l'ordine dell'indice di tabulazione  
   
@@ -162,7 +162,7 @@ Prima riga del quiz matematico
 6. Impostare il valore della proprietà **TabIndex** per il controllo **startButton** su **1**.  
   
     > [!NOTE]
-    >  La proprietà **TabIndex** imposta l'ordine dei controlli quando l'esecutore del quiz preme TAB. Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu scegliere **File**, **Apri**, quindi premere TAB alcune volte. Osservare il modo in cui il cursore si sposta da un controllo all'altro ogni volta che si preme il tasto TAB. Un programmatore ha deciso l'ordine quando ha creato il modulo.  
+    > La proprietà **TabIndex** imposta l'ordine dei controlli quando l'esecutore del quiz preme TAB. Per verificarne il funzionamento, aprire una finestra di dialogo qualsiasi, ad esempio sulla barra dei menu scegliere **File**, **Apri**, quindi premere TAB alcune volte. Osservare il modo in cui il cursore si sposta da un controllo all'altro ogni volta che si preme il tasto TAB. Un programmatore ha deciso l'ordine quando ha creato il modulo.  
   
 7. Impostare il valore della proprietà **TabIndex** per il controllo somma NumericUpDown su **2**, per il controllo differenza su **3**, per il controllo prodotto su **4** e per il controllo quoziente su **5**.  
   

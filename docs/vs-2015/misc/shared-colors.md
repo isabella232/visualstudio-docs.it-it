@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436581"
 ---
 # <a name="shared-colors"></a>Colori condivisi
 Inserire qui l'introduzione.  
@@ -31,7 +31,7 @@ Inserire qui l'introduzione.
 - **Usare colori dei controlli appropriati per la rispettiva posizione.** In determinati stati alcuni controlli di Visual Studio non hanno colori di sfondo e dei bordi separati. Al contrario, selezionano questi colori dalle superfici sottostanti. Assicurarsi di usare sempre i nomi di token appropriati per la posizione in cui si posiziona il controllo.  
   
 > [!IMPORTANT]
->  Non usare i token inclusi nelle categorie "Pagina iniziale" o "Cider".  
+> Non usare i token inclusi nelle categorie "Pagina iniziale" o "Cider".  
   
 ### <a name="command-structures"></a>Strutture dei comandi  
   
@@ -240,7 +240,7 @@ Non usare...
 ##### <a name="BKMK_CommandComboBox"></a> Casella combinata  
   
 > [!IMPORTANT]
->  Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ Non usare...
 ##### <a name="BKMK_CommandDropDown"></a> Elenco a discesa  
   
 > [!IMPORTANT]
->  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![Drop&#45;down redline](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   

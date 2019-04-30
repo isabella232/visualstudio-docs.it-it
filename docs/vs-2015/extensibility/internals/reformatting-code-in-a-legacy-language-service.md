@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436636"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Riformattazione del codice in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,9 +24,9 @@ ms.locfileid: "58954815"
 In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] codice sorgente può essere riformattato dal normalizzazione l'uso di spazi vuoti e i rientri. Può trattarsi di inserimento o rimozione spazi o tabulazioni all'inizio di ogni riga, aggiunta di nuove righe tra le righe o sostituendo gli spazi con tabulazioni o tabulazioni con spazi.  
   
 > [!NOTE]
->  **Nota** inserimento o l'eliminazione dei caratteri di nuova riga possono influire sui marcatori, ad esempio i punti di interruzione e segnalibri, ma aggiungendo o rimuovendo gli spazi o tabulazioni non influenza i marcatori.  
+> **Nota** inserimento o l'eliminazione dei caratteri di nuova riga possono influire sui marcatori, ad esempio i punti di interruzione e segnalibri, ma aggiungendo o rimuovendo gli spazi o tabulazioni non influenza i marcatori.  
   
- Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta selezione** o **Formatta documento** dal **avanzate** menu il **modifica**dal menu. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un carattere specifico. Ad esempio, quando si digita una parentesi graffa di chiusura in C#, tutto il contenuto tra la corrisponda parentesi graffa aperta e parentesi graffa di chiusura è rientrato automaticamente al livello appropriato.  
+ Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta selezione** o **Formatta documento** dal **avanzate** menu il **modifica**dal menu. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un carattere specifico. Ad esempio, quando si digita una parentesi graffa di chiusura in c#, tutto il contenuto tra la corrisponda parentesi graffa aperta e parentesi graffa di chiusura è rientrato automaticamente al livello appropriato.  
   
  Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] invia il **Formatta selezione** o **Formatta documento** comando per il servizio di linguaggio, il <xref:Microsoft.VisualStudio.Package.ViewFilter> classe chiamate il <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo nel <xref:Microsoft.VisualStudio.Package.Source> classe. Per supportare la formattazione è necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> metodo e fornire una formattazione di codice.  
   

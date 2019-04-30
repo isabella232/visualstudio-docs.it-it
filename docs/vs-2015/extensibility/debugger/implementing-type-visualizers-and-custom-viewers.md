@@ -11,18 +11,18 @@ ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f74dcee5e72221271e2756af37d3d9284841db5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b780f2115400fd43e8915a5109c960cab99bf131
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430214"
 ---
 # <a name="implementing-type-visualizers-and-custom-viewers"></a>Implementazione di visualizzatori di tipi e visualizzatori personalizzati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Visualizzatori di tipi e visualizzatori personalizzati consentono un utente di visualizzare i dati di un determinato tipo in modo da renderlo più descrittivo rispetto a un semplice dump esadecimale dei numeri. Un analizzatore di espressioni (EE) è possibile associare visualizzatori personalizzati a specifici tipi di dati o le variabili. Questi visualizzatori personalizzati vengono implementati mediante l'analizzatore di Espressioni. L'analizzatore di Espressioni può supportare anche i visualizzatori di tipo esterno, che possono provenire da un altro fornitore di terze parti o anche l'utente finale.  
   

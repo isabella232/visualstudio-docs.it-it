@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434871"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60114132"
  Il debug è supportato in [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] e [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Per eseguire il debug nell'emulatore software, è necessario disporre di [!INCLUDE[win8](../includes/win8-md.md)] o [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Per eseguire il debug nell'hardware, è necessario installare i driver per la scheda grafica. Non tutti i fornitori di hardware implementano tutte le funzionalità del debugger. Vedere la documentazione del fornitore per eventuali limitazioni.  
   
 > [!NOTE]
->  I fornitori di hardware indipendenti che desiderano supportare il debug della GPU in Visual Studio devono creare una DLL che implementi l'interfaccia di VSD3DDebug e faccia riferimento ai propri driver.  
+> I fornitori di hardware indipendenti che desiderano supportare il debug della GPU in Visual Studio devono creare una DLL che implementi l'interfaccia di VSD3DDebug e faccia riferimento ai propri driver.  
   
 ## <a name="configuring-gpu-debugging"></a>Configurazione del debug della GPU  
  Il debugger non può interrompere sia il codice della CPU sia quello della GPU nell'esecuzione della stessa app. Per impostazione predefinita, il debugger interrompe il codice della CPU. Per eseguire il debug del codice della GPU, utilizzare uno dei due passaggi seguenti:  

@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430014"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
  Il concetto chiave nella selezione dell'elenco è che è basato su riga, il che significa che quando viene effettuata una selezione dell'intera riga è selezionato come unità. Al contrario, le griglie consentono celle specifiche da selezionare senza influire su qualsiasi altro aspetto della riga. Griglie potrebbero contenere anche una gerarchia di righe nidificate (ad esempio un TreeGrid) che consentono di intere diramazioni della gerarchia per essere selezionato e deselezionato interagendo con le righe padre. Selezione negli elenchi è indicata da un colore di evidenziazione semplice per l'intera riga di dati. Lo stato attivo è indicato da un singolo pixel punteggiato bordo riga modificabile corrente o la cella (riga se tutte le celle sono di sola lettura).
 
 > [!NOTE]
->  **Messa a fuoco** e **selezione** sono due concetti diversi. *Messa a fuoco* è un valore che indica quale dell'interfaccia utente di elemento è destinato per ricevere l'input non esplicitamente dirette a un altro oggetto, mentre *selezione* si riferisce allo stato dell'inclusione di un oggetto in un set di oggetti da cui successivi operazioni possono aver luogo.
+> **Messa a fuoco** e **selezione** sono due concetti diversi. *Messa a fuoco* è un valore che indica quale dell'interfaccia utente di elemento è destinato per ricevere l'input non esplicitamente dirette a un altro oggetto, mentre *selezione* si riferisce allo stato dell'inclusione di un oggetto in un set di oggetti da cui successivi operazioni possono aver luogo.
 
  Selezioni negli elenchi possono essere contigui, non contiguo, o area geografica. Quando selezioni multiple sono consentite, contigui e selezione indipendente deve sempre essere supportate, mentre il supporto per le selezioni di area (casella) è facoltativo. Selezioni per l'area possono essere avviate tramite trascinamento nello spazio vuoto del corpo dell'elenco.
 

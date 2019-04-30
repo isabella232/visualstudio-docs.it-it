@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418637"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di ~ file SAK
 In origine controllo plug-in API 1.2, il *~ SAK* i file sono stati sostituiti dai flag funzionalità e nuove funzioni di rilevare la presenza di un'origine di controllo del plug-in supporta le *MSSCCPRJ* file ed estrazioni condivise.
@@ -48,7 +48,7 @@ Per i plug-in che supportano funzioni avanzate disponibili nella versione 1.2 AP
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Se questa chiave del Registro di sistema è impostata su *dword:00000000*è equivalente alla chiave in corso inesistenti e Visual Studio continua a tentare di creare i file temporanei. Tuttavia, se la chiave del Registro di sistema è impostata su *dword:00000001*, Visual Studio non tenta di creare i file temporanei. In alternativa, si presuppone che il plug-in del controllo del codice sorgente non supporta il *Mssccprj. scc* file e non supporta estrazioni condivise.
+> Se questa chiave del Registro di sistema è impostata su *dword:00000000*è equivalente alla chiave in corso inesistenti e Visual Studio continua a tentare di creare i file temporanei. Tuttavia, se la chiave del Registro di sistema è impostata su *dword:00000001*, Visual Studio non tenta di creare i file temporanei. In alternativa, si presuppone che il plug-in del controllo del codice sorgente non supporta il *Mssccprj. scc* file e non supporta estrazioni condivise.
 
 ## <a name="see-also"></a>Vedere anche
 - [Novità di plug-in origine controllo API versione 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

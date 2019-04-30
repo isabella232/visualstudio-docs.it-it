@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b851661449c358fdfc4245ce55ec4ffbef24dd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e4badf13f21bae028ee782d23bc26b1c1348ebeb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446284"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parametri  
  `pFlag`  
- [out] Restituisce `TRUE` se la funzione ha la gestione delle eccezioni C++ stile; in caso contrario, restituisce `FALSE`.  
+ [out] Restituisce `TRUE` se la funzione è presenti C++-applicare uno stile eccezione gestisce; in caso contrario, restituisce `FALSE`.  
   
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="requirements"></a>Requisiti  
   

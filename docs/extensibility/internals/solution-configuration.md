@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429044"
 ---
 # <a name="solution-configuration"></a>Configurazione soluzione
 Configurazioni soluzione archiviano proprietà a livello di soluzione. Quindi indirizzano il comportamento dei **avviare** chiave (F5) e **compilazione** comandi. Per impostazione predefinita, questi comandi compilare e avviare la configurazione di debug. Entrambi i comandi vengono eseguite nel contesto di una configurazione di soluzione. Ciò significa che l'utente può aspettarsi F5 per avviare e qualunque sia la soluzione attiva viene configurata tramite le impostazioni di compilazione. L'ambiente è progettato per ottimizzare per le soluzioni anziché per i progetti quando si tratta di compilazione e l'esecuzione.
@@ -23,7 +23,7 @@ Configurazioni soluzione archiviano proprietà a livello di soluzione. Quindi in
  Barra degli strumenti standard di Visual Studio contiene un pulsante di avvio e un elenco a discesa a destra del pulsante Avvia configurazione della soluzione. Questo elenco consente agli utenti di scegliere la configurazione da avviare quando viene premuto F5, creare le proprie configurazioni di soluzione o modificare una configurazione esistente.
 
 > [!NOTE]
->  Non sono presenti interfacce di estendibilità per creare o modificare le configurazioni di soluzione. È necessario usare `DTE.SolutionBuilder`. Tuttavia, esistono API di estendibilità per la gestione della compilazione della soluzione. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Non sono presenti interfacce di estendibilità per creare o modificare le configurazioni di soluzione. È necessario usare `DTE.SolutionBuilder`. Tuttavia, esistono API di estendibilità per la gestione della compilazione della soluzione. Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Ecco come è possibile implementare le configurazioni di soluzione supportate dal tipo di progetto:
 

@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439743"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Risoluzione dei problemi relativi a estensioni per diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Questo argomento risolve alcuni problemi che possono verificarsi quando si crean
 2. Eliminare la cartella seguente: %LocalAppData%\Microsoft\VisualStudio\\[versione] \ComponentModelCache  
   
    > [!NOTE]
-   >  % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.  
+   > % LocalAppData % corrisponde in genere *DriveName*: \Users\\*UserName*\AppData\Local.  
   
    Continuare con la procedura descritta di seguito, se necessario.  
   

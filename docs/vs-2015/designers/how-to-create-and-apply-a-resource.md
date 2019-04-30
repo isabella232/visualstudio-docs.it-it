@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434465"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Come creare e applicare una risorsa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Stili e modelli per gli elementi nella finestra di progettazione XAML vengono ar
    - Applicare uno stile o una risorsa modello di controllo a un controllo. Aprire il menu di scelta rapida per un controllo nella finestra Struttura documento, scegliere **Modifica modello** o **Modifica modelli aggiuntivi**, quindi scegliere **Applica risorsa** e infine selezionare il nome del modello di controllo dall'elenco visualizzato.  
   
      > [!NOTE]
-     >  L'opzione **Modifica modello** consente di applicare modelli di controllo. L'opzione **Modifica modelli aggiuntivi** consente di applicare altri tipi di modelli.  
+     > L'opzione **Modifica modello** consente di applicare modelli di controllo. L'opzione **Modifica modelli aggiuntivi** consente di applicare altri tipi di modelli.  
   
      Le risorse possono essere applicate in qualsiasi posizione compatibile. Ad esempio, una risorsa pennello può essere applicata alla proprietà **Foreground** di un controllo <xref:Windows.UI.Xaml.Controls.TextBox>.  
   

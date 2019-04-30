@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431241"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procedura: Aggiungere un'entità a un modello
   Per creare un'entità, aggiungere un controllo dell'entità da Visual Studio **casella degli strumenti** nella finestra di progettazione integrazione applicativa dei dati (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089458"
      Viene visualizzato un nuovo identificatore dell'entità.
 
     > [!NOTE]
-    >  È possibile modificare il nome dell'entità e l'identificatore di **proprietà** finestra.
+    > È possibile modificare il nome dell'entità e l'identificatore di **proprietà** finestra.
 
 4. Definire i campi dell'entità in una classe. È possibile aggiungere una nuova classe al progetto o utilizzare una classe esistente creata tramite altri strumenti, ad esempio il Object Relational Designer (O/R Designer). Nell'esempio seguente viene illustrata una classe di entità denominata Contact.
 

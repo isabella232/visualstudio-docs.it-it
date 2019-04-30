@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427461"
 ---
 # <a name="saving-a-custom-document"></a>Salvataggio di un documento personalizzato
 Gli handle di ambiente il **salvare**, **Salva con nome**, e **Salva tutto** comandi. Quando un utente fa clic **salvare**, **Salva con nome**, **o Salva tutto** nel **File** menu o chiude la soluzione, causando un Salva tutto, quanto segue si verifica.
@@ -39,7 +39,7 @@ Gli handle di ambiente il **salvare**, **Salva con nome**, e **Salva tutto** com
      Nel caso di un editor personalizzato, la comunicazione tra l'oggetto dati del documento e il progetto è privata. In questo modo, eventuali problemi di persistenza speciali vengono gestiti tra questi due oggetti.
 
     > [!NOTE]
-    >  Se si implementa il proprio persistenza, accertarsi di chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodo per risparmiare tempo. Questo metodo consente di assicurarsi che sia sicuro salvare il file (ad esempio, il file non è in sola lettura).
+    > Se si implementa il proprio persistenza, accertarsi di chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> metodo per risparmiare tempo. Questo metodo consente di assicurarsi che sia sicuro salvare il file (ad esempio, il file non è in sola lettura).
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

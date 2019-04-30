@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429349"
 ---
 # <a name="web-project-essentials"></a>Nozioni fondamentali sui progetti Web
 I progetti Web creare applicazioni Web. È possibile usare un progetto Web per creare un'applicazione Web che è costituito da pagine Web intelligente. Una pagina Web smart dispone di codice lato server che esegue il rendering della pagina Web richiesta.
@@ -35,7 +35,7 @@ I progetti Web creare applicazioni Web. È possibile usare un progetto Web per c
 - Trova il file di soluzione per un progetto Web separatamente dal sito Web stesso. Per impostazione predefinita, i file della soluzione si trovano in \Documents and Settings\\*AccountUtente*documenti \My\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Se si desidera mantenere il file di soluzione con il sito Web, semplicemente spostarla in tale e riaprirlo.
+  > Se si desidera mantenere il file di soluzione con il sito Web, semplicemente spostarla in tale e riaprirlo.
 
 - Se si apre un sito Web che non dispone di alcun file di soluzione in Visual Studio, viene generato automaticamente un nuovo file di soluzione appositamente.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439704"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedura: Specificare comandi pre- e post-strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "60038343"
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi pre-strumentazione**.  
   
     > [!NOTE]
-    >  È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
+    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
   
 4. Fare clic su **OK**.  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60038343"
 3. Digitare il comando nella casella di testo **Riga di comando** in **Eventi post-strumentazione**.  
   
     > [!NOTE]
-    >  È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
+    > È possibile fare clic sul pulsante con i puntini di sospensione **(...)** adiacente alla casella **Riga di comando** per individuare e selezionare il file con estensione exe, cmd o bat appropriato.  
   
 4. Fare clic su **OK**.  
   

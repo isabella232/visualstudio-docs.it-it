@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427138"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procedura dettagliata: Creazione di un programma di avvio automatico per visualizzare un Prompt di Privacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ ms.locfileid: "60116517"
     6. Nel **oggetto di avvio** elenco a discesa dal menu **Module1**.  
   
        > [!NOTE]
-       >  La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > La disabilitazione di framework applicazione disattiva le funzionalità, ad esempio stili di Windows XP, gli eventi dell'applicazione, la schermata iniziale, un'applicazione a istanza singola e altro ancora. Per altre informazioni, vedere [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Per Visual c# solo per gli sviluppatori:  
   
@@ -154,12 +154,12 @@ ms.locfileid: "60116517"
 1. Creare una directory denominata **UpdateConsentDialog** in %PROGRAMFILES%\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Potrebbe essere necessario privilegi di amministratore per creare questa cartella.  
+    > Potrebbe essere necessario privilegi di amministratore per creare questa cartella.  
   
 2. Nella directory UpdateConsentDialog, creare una sottodirectory denominata en.  
   
     > [!NOTE]
-    >  Creare una nuova directory per ciascuna lingua. Ad esempio, è possibile aggiungere le sottodirectory per le impostazioni locali de e fr. Queste directory conterrebbe il francese e tedesco stringhe e i language pack, se necessario.  
+    > Creare una nuova directory per ciascuna lingua. Ad esempio, è possibile aggiungere le sottodirectory per le impostazioni locali de e fr. Queste directory conterrebbe il francese e tedesco stringhe e i language pack, se necessario.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Passaggio 2: Per creare il file manifesto di Product. Xml  
   
@@ -224,7 +224,7 @@ ms.locfileid: "60116517"
 4. Creare un documento denominato EULA. RTF per le condizioni di licenza software.  
   
     > [!NOTE]
-    >  Le condizioni di licenza software devono includere informazioni sulle licenze, garanzia, responsabilità e le leggi locali. Questi file devono essere specifiche delle impostazioni locali, assicurarsi che il file viene salvato in un formato che supporta i caratteri MBCS o UNICODE. Consultare l'ufficio legale sul contenuto delle condizioni di licenza software.  
+    > Le condizioni di licenza software devono includere informazioni sulle licenze, garanzia, responsabilità e le leggi locali. Questi file devono essere specifiche delle impostazioni locali, assicurarsi che il file viene salvato in un formato che supporta i caratteri MBCS o UNICODE. Consultare l'ufficio legale sul contenuto delle condizioni di licenza software.  
   
 5. Salvare il documento nella directory del programma di bootstrap UpdateConsentDialog nella sottodirectory en.  
   
@@ -244,7 +244,7 @@ ms.locfileid: "60116517"
 4. Selezionare **aggiornare consenso nell'apposita finestra**.  
   
     > [!NOTE]
-    >  Potrebbe essere necessario chiudere e riaprire Visual Studio per visualizzare la finestra di dialogo di consenso Update nella finestra di dialogo Prerequisiti.  
+    > Potrebbe essere necessario chiudere e riaprire Visual Studio per visualizzare la finestra di dialogo di consenso Update nella finestra di dialogo Prerequisiti.  
   
 5. Fare clic su **OK**.  
   

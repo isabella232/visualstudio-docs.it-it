@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437793"
 ---
 # <a name="command-line-capture-tool"></a>Strumento di acquisizione da riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  In modalità di convalida, `events` specifica il set di eventi grafici di cui vengono confrontati i risultati immediati. Ad esempio, `-examine present,draw,copy,clear` limita il confronto solo gli eventi appartenenti a tali categorie.  
   
 > [!TIP]
->  È consigliabile iniziare con `-examine present,draw,copy,clear` perché questo sarà rivelare la maggior parte dei problemi ma molto meno tempo rispetto a un set più completo di eventi. Se necessario, è possibile specificare un set di eventi diverso o più grande per convalidare tali eventi e rivelare altri tipi di problemi.  
+> È consigliabile iniziare con `-examine present,draw,copy,clear` perché questo sarà rivelare la maggior parte dei problemi ma molto meno tempo rispetto a un set più completo di eventi. Se necessario, è possibile specificare un set di eventi diverso o più grande per convalidare tali eventi e rivelare altri tipi di problemi.  
   
  `-haltonfail`  
  In modalità di convalida, `-haltonfail` interrompe la convalida quando vengono rilevate differenze tra il renderer hardware e WARP. Per riprendere la convalida, premere un tasto.  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  Il comando dell'esempio precedente acquisisce informazioni grafiche della versione desktop di Internet Explorer durante la visualizzazione della pagina Web all'indirizzo www.fishgl.com che usa l'API WebGL per il rendering del contenuto in 3D.  
   
 > [!NOTE]
->  Poiché gli argomenti della riga di comando inseriti dopo l'app vengono passati all'app, è necessario specificare gli argomenti per DXCap.exe prima di usare l'opzione `–c`.  
+> Poiché gli argomenti della riga di comando inseriti dopo l'app vengono passati all'app, è necessario specificare gli argomenti per DXCap.exe prima di usare l'opzione `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Acquisizione di informazioni grafiche da un'app di Windows Store  
  È possibile acquisire informazioni grafiche da un'app di Windows Store.  

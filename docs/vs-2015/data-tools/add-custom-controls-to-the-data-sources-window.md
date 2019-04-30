@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429117"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Aggiungere controlli personalizzati alla finestra Origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di proget
  Per altre informazioni sulla selezione di controlli con associazione a dati da creare per gli elementi di **Zdroje dat** finestra, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu **Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Personalizzare l'elenco dei controlli associabili per un tipo di dati  
  Per aggiungere o rimuovere i controlli dall'elenco dei controlli disponibili per gli elementi di **Zdroje dat** finestra con un tipo di dati specifico, eseguire la procedura seguente.  
@@ -66,7 +66,7 @@ Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di proget
 5. Nel **associati a controlli** selezionare ogni controllo che si desidera rendere disponibili per il tipo di dati selezionato o annullare la selezione di tutti i controlli che si desidera rimuovere dall'elenco.  
   
     > [!NOTE]
-    >  Se il controllo che si desidera selezionare non viene visualizzato nei **associati a controlli** casella, è necessario aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiunta di controlli per l'elenco di controlli associati a un tipo di dati](#addingcontrols).  
+    > Se il controllo che si desidera selezionare non viene visualizzato nei **associati a controlli** casella, è necessario aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiunta di controlli per l'elenco di controlli associati a un tipo di dati](#addingcontrols).  
   
 6. Fare clic su **OK**.  
   
@@ -94,7 +94,7 @@ Quando si trascina un elemento dal **Zdroje dat** finestra per un'area di proget
 3. Nel **associati a controlli** casella, il controllo appena aggiunto per il **della casella degli strumenti** dovrebbe ora essere visualizzato.  
   
     > [!NOTE]
-    >  Solo i controlli che si trovano all'interno della soluzione corrente o in un assembly di riferimento possono essere aggiunti all'elenco dei controlli associati. (I controlli devono inoltre implementare uno degli attributi di associazione dati nella tabella precedente.) Per associare dati a un controllo personalizzato che non è disponibile nel **Zdroje dat** finestra, trascinare il controllo dal **della casella degli strumenti** nell'area di progettazione e quindi trascina l'elemento da associare dal **dati Origini** finestra al controllo.  
+    > Solo i controlli che si trovano all'interno della soluzione corrente o in un assembly di riferimento possono essere aggiunti all'elenco dei controlli associati. (I controlli devono inoltre implementare uno degli attributi di associazione dati nella tabella precedente.) Per associare dati a un controllo personalizzato che non è disponibile nel **Zdroje dat** finestra, trascinare il controllo dal **della casella degli strumenti** nell'area di progettazione e quindi trascina l'elemento da associare dal **dati Origini** finestra al controllo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

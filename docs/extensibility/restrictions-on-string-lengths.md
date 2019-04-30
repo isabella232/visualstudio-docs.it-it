@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434741"
 ---
 # <a name="restrictions-on-string-lengths"></a>Limitazioni sulle lunghezze di stringa
 L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate nelle varie funzioni.
 
 ## <a name="string-length-values"></a>Valori di lunghezza stringa
 
-|Costante|Valore|
+|Costante|Value|
 |--------------|-----------|
 |`SCC_NAME_LEN`|31|
 |`SCC_AUXLABEL_LEN`|31|
@@ -30,9 +30,9 @@ L'API dei plug-in del controllo origine limita la lunghezza delle stringhe usate
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  La lunghezza non include la terminazione `null`. Altre costanti con suffisso "dimen_sione" anziché "_LEN" include lo spazio per la terminazione `null`.
+> La lunghezza non include la terminazione `null`. Altre costanti con suffisso "dimen_sione" anziché "_LEN" include lo spazio per la terminazione `null`.
 
-|Costante|Valore|
+|Costante|Value|
 |--------------|-----------|
 |SCC_NAME_SIZE|32|
 |SCC_AUXLABEL_SIZE|32|

@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437158"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656024"
 La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** consente di definire una combinazione di colori e tipi di carattere personalizzata per vari elementi dell'interfaccia utente nell'ambiente di sviluppo integrato (IDE). Per accedere a questa finestra di dialogo, fare clic su **Strumenti/Opzioni** e quindi selezionare **Ambiente/Tipi di carattere e colori**. Se questa pagina non viene visualizzata nell'elenco, selezionare **Mostra tutte le impostazioni** nella finestra di dialogo **Opzioni**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Le modifiche delle combinazioni colori non diventano effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche ai colori aprendo un'altra istanza di Visual Studio e riproducendo le condizioni in cui si prevede vengano applicate le modifiche apportate.  
   
@@ -56,7 +56,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
    Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per gli elementi Stampante influiscono sull'aspetto del testo nei documenti stampati.  
   
   > [!NOTE]
-  >  Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.  
+  > Se necessario, è possibile selezionare un tipo di carattere predefinito per la stampa diverso da quello usato per la visualizzazione nell'editor di testo. Questo può essere utile durante la stampa di codice che contiene sia caratteri a un byte che DBCS.  
   
 - **Completamento istruzioni**  
   
@@ -75,7 +75,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
    Le modifiche apportate alle impostazioni di visualizzazione per stile, dimensione e colore dei caratteri per questo elemento influiscono sull'aspetto del testo nelle finestre degli strumenti con riquadri di output nell'IDE. Ad esempio, finestra di output, finestra di comando, finestra di controllo immediato e così via.  
   
   > [!NOTE]
-  >  Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.  
+  > Le modifiche al testo degli elementi **[Tutte le finestre degli strumenti di testo]** non sono effettive durante la sessione in cui vengono eseguite. È possibile valutare le modifiche apportate aprendo un'altra istanza di Visual Studio.  
   
   **Valori predefiniti**  
   Reimposta i valori relativi al tipo di carattere e al colore dell'elemento elenco selezionato in **Mostra impostazioni per**. Il pulsante **Usa** viene visualizzato quando sono disponibili per la selezione altre combinazioni di visualizzazione. Ad esempio, è possibile scegliere tra due combinazioni per l'elemento Stampante.  
@@ -90,7 +90,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
   Elenca gli elementi per cui è possibile modificare il colore di primo piano e sfondo.  
   
 > [!NOTE]
->  L'elemento visualizzato predefinito è **Testo normale**. Di conseguenza, le proprietà assegnate a **Testo normale** verranno sostituite dalle proprietà assegnate ad altri elementi visualizzati. Se, ad esempio, si assegna il colore blu a **Testo normale** e il colore verde a **Identificatore**, tutti gli identificatori verranno visualizzati in verde. In questo esempio le proprietà di **Identificatore** sostituiscono le proprietà di **Testo normale**.  
+> L'elemento visualizzato predefinito è **Testo normale**. Di conseguenza, le proprietà assegnate a **Testo normale** verranno sostituite dalle proprietà assegnate ad altri elementi visualizzati. Se, ad esempio, si assegna il colore blu a **Testo normale** e il colore verde a **Identificatore**, tutti gli identificatori verranno visualizzati in verde. In questo esempio le proprietà di **Identificatore** sostituiscono le proprietà di **Testo normale**.  
   
  Alcuni degli elementi visualizzati includono:  
   
@@ -214,7 +214,7 @@ La pagina **Tipi di carattere e colori** della finestra di dialogo **Opzioni** c
  Visualizza la finestra di dialogo Colore che consente di impostare un colore personalizzato per l'elemento selezionato nell'elenco Elementi visualizzati.  
   
 > [!NOTE]
->  La possibilità di definire colori personalizzati può essere limitata dalle impostazioni del colore per lo schermo del computer. Ad esempio, se il computer è impostato su 256 colori e si seleziona un colore personalizzato nella finestra di dialogo **Colore**, l'IDE userà per impostazione predefinita il **colore di base** più simile disponibile e visualizzerà il colore nero nella casella di anteprima **Colore**.  
+> La possibilità di definire colori personalizzati può essere limitata dalle impostazioni del colore per lo schermo del computer. Ad esempio, se il computer è impostato su 256 colori e si seleziona un colore personalizzato nella finestra di dialogo **Colore**, l'IDE userà per impostazione predefinita il **colore di base** più simile disponibile e visualizzerà il colore nero nella casella di anteprima **Colore**.  
   
  **Sfondo elemento**  
  Visualizza una tavolozza di colori da cui è possibile scegliere un colore di sfondo per l'elemento selezionato in **Elementi visualizzati**. Poiché alcuni elementi sono correlati ed è preferibile che abbiano uno schema di visualizzazione coerente, la modifica del colore del testo di sfondo modifica anche i valori predefiniti per elementi quali Errore del compilatore, Parola chiave o Operatore.  

@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437094"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La metrica del codice è un insieme di misure del software in grado di fornire a
 - **Complessità ciclomatica** : misura la complessità del codice strutturale. Viene creato dal calcolo del numero di percorsi del codice diversi nel flusso del programma. Un programma che ha il flusso di controllo complessi richiederà più test per ottenere buona copertura del codice e sarà meno facile da gestire.  
   
     > [!NOTE]
-    >  In alcuni casi, il calcolo della complessità ciclomatica per un metodo in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] differisce dalle versioni precedenti. Per altre informazioni, vedere la sezione "modifiche in Visual Studio 2010 codice complessità calcoli" del [risoluzione dei problemi di metrica codice](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > In alcuni casi, il calcolo della complessità ciclomatica per un metodo in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] differisce dalle versioni precedenti. Per altre informazioni, vedere la sezione "modifiche in Visual Studio 2010 codice complessità calcoli" del [risoluzione dei problemi di metrica codice](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Profondità dell'ereditarietà** – indica il numero di definizioni di classi che estendono alla radice della gerarchia di classi. Maggiore è la profondità della gerarchia più difficile è possibile conoscere in cui vengono definiti determinati metodi e campi o / e ridefinito.  
   

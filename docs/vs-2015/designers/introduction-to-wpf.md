@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437298"
 ---
 # <a name="introduction-to-wpf"></a>Introduzione a WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   <xref:System.Windows.Controls.DockPanel> consente ai controlli <xref:System.Windows.Controls.TextBox> figlio di indicare la modalità di disposizione. A tale scopo, <xref:System.Windows.Controls.DockPanel> implementa una proprietà <xref:System.Windows.Controls.DockPanel.Dock%2A> esposta ai controlli figlio per consentire a ognuno di essi di specificare uno stile di ancoraggio.  
   
 > [!NOTE]
->  Una proprietà implementata da un controllo padre per essere usata dai controlli figlio è un costrutto di WPF denominato [proprietà associata](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Una proprietà implementata da un controllo padre per essere usata dai controlli figlio è un costrutto di WPF denominato [proprietà associata](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  La figura seguente illustra il risultato del markup XAML dell'esempio precedente.  
   

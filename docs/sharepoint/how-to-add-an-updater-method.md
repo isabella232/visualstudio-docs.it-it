@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431255"
 ---
 # <a name="how-to-add-an-updater-method"></a>Procedura: Aggiungere un metodo Updater
   È possibile abilitare gli utenti aggiornare i dati di business in un elenco di SharePoint esterno tramite la creazione di un' *Updater* (metodo). Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596959"
      Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Se l'identificatore del tipo di entità rappresenta un campo in una tabella di database che viene generato automaticamente, impostare il **campo pre-Updater** proprietà **True**.
+   > Se l'identificatore del tipo di entità rappresenta un campo in una tabella di database che viene generato automaticamente, impostare il **campo pre-Updater** proprietà **True**.
 
 4. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida del servizio file di codice che è stato generato per l'entità e quindi scegliere **Visualizza codice**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596959"
 5. Aggiungere codice al metodo Update di aggiornare i dati. Nell'esempio seguente aggiorna le informazioni per un contatto nel database di esempio AdventureWorks per SQL Server.
 
    > [!NOTE]
-   >  Sostituire il valore del `ServerName` campo con il nome del server.
+   > Sostituire il valore del `ServerName` campo con il nome del server.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

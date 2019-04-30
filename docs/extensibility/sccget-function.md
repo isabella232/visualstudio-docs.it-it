@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434658"
 ---
 # <a name="sccget-function"></a>Funzione SccGet
 Questa funzione recupera una copia di uno o più file per la visualizzazione e la compilazione ma non per la modifica. Nella maggior parte dei sistemi, i file vengono contrassegnati come di sola lettura.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  Il `SCC_GET_ALL` flag può essere combinato con il `SCC_GET_RECURSIVE` flag per recuperare tutti i file nella directory specificata e anche tutte le sottodirectory.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` non deve mai essere passato senza `SCC_GET_ALL`. Si noti inoltre che se le directory *C:\A* e *C:\A\B* vengono passati in una richiesta get ricorsiva, *C:\A\B* e tutte le relative sottodirectory verranno effettivamente recuperate due volte. È responsabilità dell'IDE, e non l'origine di controllo del plug-in, ovvero per assicurarsi che i duplicati di questo vengono mantenuti all'esterno della matrice.
+> `SCC_GET_RECURSIVE` non deve mai essere passato senza `SCC_GET_ALL`. Si noti inoltre che se le directory *C:\A* e *C:\A\B* vengono passati in una richiesta get ricorsiva, *C:\A\B* e tutte le relative sottodirectory verranno effettivamente recuperate due volte. È responsabilità dell'IDE, e non l'origine di controllo del plug-in, ovvero per assicurarsi che i duplicati di questo vengono mantenuti all'esterno della matrice.
 
  Infine, anche se i plug-in del controllo del codice sorgente specificato il `SCC_CAP_GET_NOUI` flag durante l'inizializzazione, che indica che non dispone di un'interfaccia utente per un comando Get, questa funzione può comunque essere chiamata dall'IDE per recuperare i file. Il flag indica semplicemente che l'IDE non viene visualizzata una voce di menu Get e che il plug-in non è previsto fornire qualsiasi interfaccia utente.
 

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8878e1ce6e9ad05fc94b134a2e71847b67d578d2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008615"
 ---
 # <a name="idebugdocumenttext-interface"></a>Interfaccia IDebugDocumentText
 Specifica l'accesso a una versione di solo testo del documento di debug. Questa interfaccia Usa le convenzioni seguenti:  

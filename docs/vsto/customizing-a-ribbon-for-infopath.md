@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437449"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizzare una barra multifunzione per InfoPath
   Quando si personalizza la barra multifunzione in Microsoft Office InfoPath, è necessario considerare la posizione in cui la barra multifunzione personalizzata verrà visualizzata nell'applicazione. In[!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] è possibile visualizzare la barra multifunzione nei tre tipi seguenti di finestre dell'applicazione InfoPath:
@@ -36,7 +36,7 @@ ms.locfileid: "56602235"
   La finestra Anteprima di stampa consente ai progettisti e agli utenti di visualizzare in anteprima le pagine di un form o di un modello di form prima della stampa.
 
 > [!NOTE]
->  La scheda **AddIns** non è presente nella finestra Anteprima di stampa. Se si vuole visualizzare una scheda personalizzata nella finestra Anteprima di stampa, verificare che la proprietà **OfficeId** della scheda non sia impostata su **TabAddIns**.
+> La scheda **AddIns** non è presente nella finestra Anteprima di stampa. Se si vuole visualizzare una scheda personalizzata nella finestra Anteprima di stampa, verificare che la proprietà **OfficeId** della scheda non sia impostata su **TabAddIns**.
 
  È necessario specificare il tipo di barra multifunzione di ogni finestra in cui si vuole visualizzare la barra multifunzione.
 

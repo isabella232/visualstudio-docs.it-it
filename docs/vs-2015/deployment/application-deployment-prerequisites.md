@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427250"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Affinché l'applicazione venga installata ed eseguita correttamente, è necessar
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] può rilevare i prerequisiti mancanti, ed è possibile installare i prerequisiti tramite un programma di avvio automatico. Per altre informazioni, vedere [Procedura: Installare i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Per modificare i valori nei manifesti generati da strumenti come [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, è necessario modificare il manifesto dell'applicazione in un editor di testo, quindi firmare nuovamente sia il manifesto dell'applicazione che quello della distribuzione. Per altre informazioni, vedere [Procedura: Firmare nuovamente i manifesti dell'applicazione e distribuzione](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Se si usa Visual Studio e ClickOnce per distribuire l'applicazione, i pacchetti del programma di avvio automatico selezionati per impostazione predefinita variano a seconda della versione di .NET Framework inclusa nella soluzione. Se invece si cambia la versione .NET Framework di destinazione, è necessario aggiornare manualmente le opzioni nella finestra di dialogo **Prerequisiti**.  
   

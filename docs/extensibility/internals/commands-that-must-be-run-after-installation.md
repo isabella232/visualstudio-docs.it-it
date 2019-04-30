@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d336e4a65178ff09f5db01dffeb5bedd3b5b946e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418716"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi che devono essere eseguiti dopo l'installazione
 Se si distribuisce l'estensione tramite una *file con estensione msi* file, è necessario eseguire **devenv /setup** come parte dell'installazione nell'ordine individuare le estensioni di Visual Studio.
 
 > [!NOTE]
->  Le informazioni in questo argomento si applicano all'individuazione *devenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *devenv.exe* con le versioni successive di Visual Studio, vedere [requisiti di sistema di rilevare](../../extensibility/internals/detecting-system-requirements.md).
+> Le informazioni in questo argomento si applicano all'individuazione *devenv.exe* con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare *devenv.exe* con le versioni successive di Visual Studio, vedere [requisiti di sistema di rilevare](../../extensibility/internals/detecting-system-requirements.md).
 
 ## <a name="find-devenvexe"></a>Trovare devenv.exe
  È possibile trovare ogni versione *devenv.exe* dal Registro di sistema i valori necessari [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] scrivere programmi di installazione, usando la tabella di RegLocator e AppSearch tabelle per archiviare i valori del Registro di sistema come proprietà. Per altre informazioni, vedere [rileva i requisiti di sistema](../../extensibility/internals/detecting-system-requirements.md).
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator righe della tabella per individuare devenv.exe da diverse versioni di Visual Studio
 
-|Signature|Radice|Chiave|nome|Tipo|
+|Signature|Radice|Chiave|Nome|Tipo|
 |-----------------|----------|---------|----------|----------|
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|
@@ -58,7 +58,7 @@ Se si distribuisce l'estensione tramite una *file con estensione msi* file, è n
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Righe della tabella CustomAction eseguire devenv.exe
 
-|Operazione|Tipo|Origine|destinazione|
+|Operazione|Tipo|Source|destinazione|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|
@@ -68,7 +68,7 @@ Se si distribuisce l'estensione tramite una *file con estensione msi* file, è n
  Azioni personalizzate devono essere create nella tabella InstallExecuteSequence pianificarli per l'esecuzione durante l'installazione. Usare la proprietà corrispondente in ogni riga della colonna della condizione per evitare che l'azione personalizzata in esecuzione se tale versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è installato nel sistema.
 
 > [!NOTE]
->  Proprietà con valori null restituiscono `False` quando utilizzata nelle condizioni.
+> Proprietà con valori null restituiscono `False` quando utilizzata nelle condizioni.
 
  Il valore della colonna della sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto di Windows Installer. I valori di sequenza devono essere in modo che il *devenv.exe* azioni personalizzate runas vicino possibile a immediatamente prima dell'azione standard InstallFinalize mentre.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442331"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Scelta di una strategia di aggiornamento ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58969620"
  È inoltre possibile determinare la frequenza con cui verrà eseguito il controllo, nonché contrassegnare gli aggiornamenti come obbligatori.  
   
 > [!NOTE]
->  Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.  
+> Per gli aggiornamenti dell'applicazione è necessario disporre della connettività di rete. In assenza di una connessione di rete, l'applicazione verrà eseguita senza il controllo della disponibilità di aggiornamenti, indipendentemente dalla strategia di aggiornamento prescelta.  
   
 > [!NOTE]
->  In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L'elemento `deploymentProvider` corrisponde in Visual Studio al campo **Posizione aggiornamento** nella finestra di dialogo **Aggiornamenti** della scheda **Pubblica**. Questa regola è di tipo relaxed in .NET Framework 3.5. Per altre informazioni, vedere [distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> In .NET Framework 2.0 e .NET Framework 3.0, qualunque sia la strategia di aggiornamento adottata, prima dell'avvio, dopo l'avvio o mediante le API di <xref:System.Deployment.Application>, è necessario impostare `deploymentProvider` nel manifesto di distribuzione. L'elemento `deploymentProvider` corrisponde in Visual Studio al campo **Posizione aggiornamento** nella finestra di dialogo **Aggiornamenti** della scheda **Pubblica**. Questa regola è di tipo relaxed in .NET Framework 3.5. Per altre informazioni, vedere [distribuzione di applicazioni ClickOnce per test e i server di produzione senza Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Controllo della disponibilità di aggiornamenti dopo l'avvio dell'applicazione  
  Se si utilizza questa strategia, l'applicazione tenterà di individuare e leggere il file manifesto di distribuzione in background, mentre è in esecuzione. Se è disponibile un aggiornamento, la volta successiva che l'utente eseguirà l'applicazione verrà chiesto di scaricarlo e installarlo.  
@@ -79,7 +79,7 @@ ms.locfileid: "58969620"
  In alcuni casi può essere necessario richiedere agli utenti di eseguire una versione aggiornata dell'applicazione. È ad esempio possibile che sia stata apportata una modifica a una risorsa esterna, quale un servizio Web, che impedisce il corretto funzionamento dell'applicazione. In tal caso, può essere opportuno contrassegnare l'aggiornamento come obbligatorio e impedire che gli utenti eseguano la versione precedente.  
   
 > [!NOTE]
->  Anche se è possibile impostare gli aggiornamenti come obbligatori mediante altre strategie, la selezione di **Prima dell'avvio dell'applicazione** è l'unico sistema per garantire che non venga eseguita una versione precedente. Se all'avvio viene rilevato l'aggiornamento obbligatorio, è necessario accettare l'aggiornamento o chiudere l'applicazione.  
+> Anche se è possibile impostare gli aggiornamenti come obbligatori mediante altre strategie, la selezione di **Prima dell'avvio dell'applicazione** è l'unico sistema per garantire che non venga eseguita una versione precedente. Se all'avvio viene rilevato l'aggiornamento obbligatorio, è necessario accettare l'aggiornamento o chiudere l'applicazione.  
   
  Per contrassegnare un aggiornamento come obbligatorio, fare clic su **Specificare la versione minima richiesta per l'applicazione** nella finestra di dialogo **Aggiornamenti applicazione**, quindi specificare la versione della pubblicazione (**Principale**, **Secondario**, **Compila**, **Revisione**) che indica il numero di versione più basso dell'applicazione che è possibile installare.  
   

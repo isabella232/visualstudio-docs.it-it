@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437123"
 ---
 # <a name="immediate-window"></a>Controllo immediato (finestra)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Il **immediato** finestra viene utilizzata per eseguire il debug e valutare le e
  Entrambe le versioni di questo comando restituiscono il valore della variabile `varA`.  
   
 > [!NOTE]
->  Da rilasciare un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] comando il **immediato** finestra, è necessario anteporre il comando con un segno maggiore (>). Per immettere più comandi, passare il **comando** finestra.  
+> Da rilasciare un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] comando il **immediato** finestra, è necessario anteporre il comando con un segno maggiore (>). Per immettere più comandi, passare il **comando** finestra.  
   
 ## <a name="design-time-expression-evaluation"></a>Valutazione delle espressioni in fase di progettazione  
  È possibile utilizzare il **immediato** finestra per eseguire una funzione o subroutine in fase di progettazione.  

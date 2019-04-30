@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436815"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ Per alcuni tipi di app (ad esempio le app Windows Store), non collega direttamen
 |Debug di un'app Windows universale (UWP), OneCore, HoloLens e IoT che non è stato avviato da Visual Studio|Debug pacchetto dell'app installato|N/D|Usare **eseguire il Debug / altre destinazioni di Debug / Debug pacchetto dell'App installato** invece di **Connetti a processo**|
 
 > [!WARNING]
->  Per connettersi a un'app universale di Windows scritta in JavaScript, per prima cosa è necessario abilitare il debug per l'app. Vedere [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) in Windows Dev Center.
+> Per connettersi a un'app universale di Windows scritta in JavaScript, per prima cosa è necessario abilitare il debug per l'app. Vedere [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) in Windows Dev Center.
 
 > [!NOTE]
->  Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .
+> Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .
 
 ## <a name="what-debugger-features-can-i-use"></a>Le funzionalità del debugger è possibile usare?
 

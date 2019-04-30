@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439926"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Debug ASP.NET: Requisiti di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
  Se si modifica il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] affinché venga eseguito con il proprio account utente, non è necessario essere un amministratore nel server che esegue IIS.  
   
 > [!CAUTION]
->  Prima di modificare il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in modo che venga eseguito con un account diverso, considerare le possibili conseguenze di un eventuale attacco al processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] mentre viene eseguito con tale account. Gli account utente ASPNET e SERVIZIO DI RETE vengono eseguiti con autorizzazioni minime, riducendo il più possibile i danni in caso di attacchi al processo. Se è necessario modificare il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in modo che venga eseguito con un account con autorizzazioni più elevate, il danno potenziale è maggiore.  
+> Prima di modificare il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in modo che venga eseguito con un account diverso, considerare le possibili conseguenze di un eventuale attacco al processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] mentre viene eseguito con tale account. Gli account utente ASPNET e SERVIZIO DI RETE vengono eseguiti con autorizzazioni minime, riducendo il più possibile i danni in caso di attacchi al processo. Se è necessario modificare il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] in modo che venga eseguito con un account con autorizzazioni più elevate, il danno potenziale è maggiore.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   

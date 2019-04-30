@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430973"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Spostarsi nel codice con il Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
  Per arrestare in ogni riga del codice (ogni istruzione) durante il debug, usare il **F11** tasti di scelta rapida (o **Debug** / **Esegui istruzione** nel menu).  
   
 > [!TIP]
->  Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzare i relativi valori oppure usare il [variabili locali](../debugger/autos-and-locals-windows.md) e [Watch](../debugger/autos-and-locals-windows.md) windows per verificare i relativi valori di passaggio.  
+> Quando si esegue ogni riga di codice, è possibile passare il mouse sulle variabili per visualizzare i relativi valori oppure usare il [variabili locali](../debugger/autos-and-locals-windows.md) e [Watch](../debugger/autos-and-locals-windows.md) windows per verificare i relativi valori di passaggio.  
   
  Ecco alcuni dettagli sul comportamento dei **Esegui istruzione**:  
   
@@ -87,7 +87,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
 |**MAIUSC+F11**|**Esci da istruzione/routine**|**Esci da istruzione /** continua l'esecuzione di codice e sospende l'esecuzione quando la funzione corrente viene restituito (ignora il debugger tramite la funzione corrente).|  
   
 > [!TIP]
->  Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** oppure **F11**. Questi comandi sono spesso utili quando si esaminare lo stato dell'app o il tentativo di ottenere maggiori informazioni sul relativo flusso di esecuzione.  
+> Se è necessario trovare il punto di ingresso nell'app, iniziare con **F10** oppure **F11**. Questi comandi sono spesso utili quando si esaminare lo stato dell'app o il tentativo di ottenere maggiori informazioni sul relativo flusso di esecuzione.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Eseguire fino a un percorso specifico o (funzione)  
  Spesso il metodo preferito di debug del codice, questi metodi sono utili quando si sa esattamente quale codice si desidera controllare o almeno si conosce in cui si desidera avviare il debug.  
@@ -140,7 +140,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
 - Nella finestra Disassembly impostare il cursore sull'istruzione dell'assembly che si desidera eseguire successivamente, fare doppio clic su un e scegliere **Imposta istruzione successiva**.  
   
 > [!CAUTION]
->  Quando si imposta l'istruzione successiva, il contatore del programma passa direttamente alla nuova posizione. Usare questo comando con cautela:  
+> Quando si imposta l'istruzione successiva, il contatore del programma passa direttamente alla nuova posizione. Usare questo comando con cautela:  
 > 
 > - Le istruzioni comprese tra il vecchio e il nuovo punto di esecuzione non verranno eseguite.  
 >   - Se si sposta all'indietro il punto di esecuzione, le istruzioni comprese tra questo e il vecchio punto di interruzione non verranno annullate.  
@@ -149,7 +149,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
 >   - Quando l'opzione Modifica e continuazione è abilitata, **Imposta istruzione successiva** avrà esito negativo se sono state effettuate modifiche per cui Modifica e continuazione non è immediatamente in grado di eseguire nuovamente il mapping. Ad esempio questo può accadere se è stato modificato del codice all'interno di un blocco catch. Quando succede, verrà visualizzato un messaggio di errore indicante che l'operazione non è supportata.  
 > 
 > [!NOTE]
->  Nel codice gestito non è possibile spostare l'istruzione successiva in presenza delle seguenti condizioni:  
+> Nel codice gestito non è possibile spostare l'istruzione successiva in presenza delle seguenti condizioni:  
 > 
 > - L'istruzione successiva è inclusa in un metodo diverso da quello dell'istruzione corrente.  
 >   - Il debug è stato avviato utilizzando il debug JIT.  
@@ -166,7 +166,7 @@ Acquisire familiarità con i comandi e tasti di scelta rapida per esplorare il c
  Quando Just My Code è disabilitato, il debugger può eseguire istruzioni nel codice non utente e codice non utente viene visualizzato nelle finestre del debugger.  
   
 > [!NOTE]
->  Just My Code non è supportato per progetti per dispositivi.  
+> Just My Code non è supportato per progetti per dispositivi.  
   
  **Eseguire le chiamate di sistema**  
   

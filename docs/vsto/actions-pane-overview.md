@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440391"
 ---
 # <a name="actions-pane-overview"></a>Panoramica del riquadro azioni
   Un riquadro azioni è una personalizzabile **azioni documenti** riquadro attività che è collegato a un documento di Microsoft Office Word specifico o della cartella di lavoro di Microsoft Office Excel. Nel riquadro azioni è ospitato all'interno del riquadro attività di Office insieme ad altri riquadri attività incorporati, ad esempio la **origine XML** riquadro attività in Excel o il **stili e formattazione** riquadro attività in Word. È possibile usare controlli Windows Form o controlli WPF per progettare l'interfaccia utente del riquadro azioni.
@@ -30,7 +30,7 @@ ms.locfileid: "60099741"
  È possibile creare un riquadro azioni solo in una personalizzazione a livello di documento per Word o Excel. Non è possibile cerare un riquadro azioni in un componente aggiuntivo VSTO. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Il riquadro azioni è diverso dai riquadri attività. I riquadri attività personalizzati sono associati all'applicazione e non a un documento specifico. È possibile creare riquadri attività personalizzati in componenti aggiuntivi VSTO per alcune applicazioni di Microsoft Office. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
+> Il riquadro azioni è diverso dai riquadri attività. I riquadri attività personalizzati sono associati all'applicazione e non a un documento specifico. È possibile creare riquadri attività personalizzati in componenti aggiuntivi VSTO per alcune applicazioni di Microsoft Office. Per altre informazioni, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare i controlli WPF all'interno di un riquadro azioni di Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099741"
 2. Aggiungere controlli Windows Form a <xref:System.Windows.Forms.UserControl> usando la finestra di progettazione o scrivendo codice.
 
    > [!NOTE]
-   >  È anche possibile aggiungere controlli WPF al riquadro azioni aggiungendo un oggetto <xref:System.Windows.Controls.UserControl> all'oggetto <xref:System.Windows.Forms.UserControl> di Windows Form. Per altre informazioni, vedere [controlla l'uso WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > È anche possibile aggiungere controlli WPF al riquadro azioni aggiungendo un oggetto <xref:System.Windows.Controls.UserControl> all'oggetto <xref:System.Windows.Forms.UserControl> di Windows Form. Per altre informazioni, vedere [controlla l'uso WPF nelle soluzioni Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Aggiungere un'istanza del controllo utente personalizzato ai controlli contenuti nel campo `ActionsPane` della classe `ThisWorkbook` (per Excel) o `ThisDocument` (per Word) nel progetto.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099741"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Gli utenti finali possono riposizionare manualmente il riquadro attività in qualsiasi momento. Non esiste alcun modo per garantire che il riquadro attività resti ancorato nella posizione indicata a livello di codice. Tuttavia, è possibile controllare le modifiche di orientamento e garantire che i controlli nel riquadro azioni siano sovrapposti nella direzione corretta. Per altre informazioni, vedere [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Gli utenti finali possono riposizionare manualmente il riquadro attività in qualsiasi momento. Non esiste alcun modo per garantire che il riquadro attività resti ancorato nella posizione indicata a livello di codice. Tuttavia, è possibile controllare le modifiche di orientamento e garantire che i controlli nel riquadro azioni siano sovrapposti nella direzione corretta. Per altre informazioni, vedere [Procedura: Gestire il layout dei controlli nei riquadri azioni](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Impostando il <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> e <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> proprietà delle <xref:Microsoft.Office.Tools.ActionsPane> non modifica la posizione, perché il <xref:Microsoft.Office.Tools.ActionsPane> oggetto è incorporato nel riquadro attività.
 

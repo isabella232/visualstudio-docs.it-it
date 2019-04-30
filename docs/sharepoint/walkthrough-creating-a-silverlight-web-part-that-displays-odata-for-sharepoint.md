@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a331e94ad57fc4ca23dc859415c61609025f799b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430401"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: Creare una web part Silverlight che visualizza il servizio OData per SharePoint
   SharePoint 2010 espongono i propri dati elenco tramite OData. In SharePoint, il servizio OData viene implementato dal servizio RESTful ListData.svc. Questa procedura dettagliata viene illustrato come creare una web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight consente di visualizzare informazioni relative all'elenco SharePoint annuncio usando ListData.svc. Per altre informazioni, vedere [interfaccia REST di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) e [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -35,7 +35,7 @@ ms.locfileid: "60058252"
  In primo luogo, creare un'applicazione Silverlight in Visual Studio. L'applicazione Silverlight recupera i dati nell'elenco di annunci di SharePoint usando il servizio ListData.svc.
 
 > [!NOTE]
->  Nessuna versione di Silverlight precedenti alla 4.0 supportano le interfacce necessarie per fare riferimento a dati dell'elenco SharePoint.
+> Nessuna versione di Silverlight precedenti alla 4.0 supportano le interfacce necessarie per fare riferimento a dati dell'elenco SharePoint.
 
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Per creare un'applicazione Silverlight e web part Silverlight
 
@@ -73,7 +73,7 @@ ms.locfileid: "60058252"
 2. Nella **Esplora soluzioni**, aprire il menu di scelta rapida **riferimenti**, quindi scegliere **Aggiungi riferimento al servizio**.
 
     > [!NOTE]
-    >  Se si usa Visual Basic, è necessario scegliere il **Mostra tutti i file** nella parte superiore del **Esplora soluzioni** per visualizzare il **riferimenti** nodo.
+    > Se si usa Visual Basic, è necessario scegliere il **Mostra tutti i file** nella parte superiore del **Esplora soluzioni** per visualizzare il **riferimenti** nodo.
 
 3. Nella casella dell'indirizzo del **Aggiungi riferimento al servizio** finestra di dialogo casella, immettere l'URL del sito di SharePoint, ad esempio **http://MySPSite**, quindi scegliere il **passare** pulsante.
 
@@ -228,7 +228,7 @@ ms.locfileid: "60058252"
      La web part Silverlight dovrebbe ora essere visualizzazione dei dati di annuncio al sito di SharePoint. Per impostazione predefinita, la pagina viene archiviata nell'insieme di pagine del sito in SharePoint.
 
     > [!NOTE]
-    >  L'accesso ai dati in Silverlight nei domini, Silverlight protegge contro le vulnerabilità di sicurezza che possono essere utilizzate per sfruttare le applicazioni web. Se si verificano problemi durante l'accesso a dati remoti in Silverlight, vedere [rendendo un servizio disponibile attraverso i limiti del dominio](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > L'accesso ai dati in Silverlight nei domini, Silverlight protegge contro le vulnerabilità di sicurezza che possono essere utilizzate per sfruttare le applicazioni web. Se si verificano problemi durante l'accesso a dati remoti in Silverlight, vedere [rendendo un servizio disponibile attraverso i limiti del dominio](http://go.microsoft.com/fwlink/?LinkId=223276).
 
 ## <a name="see-also"></a>Vedere anche
 - [Creazione di web part per SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

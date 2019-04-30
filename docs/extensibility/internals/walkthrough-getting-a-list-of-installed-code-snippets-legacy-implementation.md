@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429372"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
 Un frammento di codice è un frammento di codice che può essere inserito nel buffer di origine con un comando di menu (che consente di scegliere tra un elenco di frammenti di codice installati) o tramite la selezione di un collegamento al frammento da un elenco di completamento IntelliSense.
@@ -106,7 +106,7 @@ Un frammento di codice è un frammento di codice che può essere inserito nel bu
 1. Il metodo seguente viene illustrato come chiamare il `GetSnippets` metodo al completamento di un'operazione di analisi. Il <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> metodo viene chiamato dopo un'operazione di analisi che è stata avviata con il motivo <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
->  Il `expansionsList` elenco matrice viene memorizzato nella cache per motivi di prestazioni. Per i frammenti di codice non vengono riflesse nell'elenco fino a quando non viene arrestato e ricaricare il servizio di linguaggio (ad esempio, per arrestare e riavviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+> Il `expansionsList` elenco matrice viene memorizzato nella cache per motivi di prestazioni. Per i frammenti di codice non vengono riflesse nell'elenco fino a quando non viene arrestato e ricaricare il servizio di linguaggio (ad esempio, per arrestare e riavviare [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ```csharp
 class TestLanguageService : LanguageService

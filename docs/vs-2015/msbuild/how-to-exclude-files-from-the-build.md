@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0cd59df3b6056040445ac8de79e064a939aff145
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440055"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedura: Escludere file dalla compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
     ```  
   
     > [!NOTE]
-    >  È necessario specificare il percorso per entrambi gli attributi. Se si usa un percorso assoluto per specificare i percorsi file nell'attributo `Include`, è necessario usare un percorso assoluto anche nell'attributo `Exclude`. Se si usa un percorso relativo nell'attributo `Include`, è necessario usare un percorso relativo anche nell'attributo `Exclude`.  
+    > È necessario specificare il percorso per entrambi gli attributi. Se si usa un percorso assoluto per specificare i percorsi file nell'attributo `Include`, è necessario usare un percorso assoluto anche nell'attributo `Exclude`. Se si usa un percorso relativo nell'attributo `Include`, è necessario usare un percorso relativo anche nell'attributo `Exclude`.  
   
 ## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Usare le condizioni per escludere un file o una directory dagli input per una compilazione  
  Se sono presenti elementi che si vuole includere, ad esempio, in una build di debug, ma non in una build di versione, è possibile usare l'attributo `Condition` per specificare le condizioni in cui includere l'elemento.  
@@ -127,4 +127,4 @@ In un file di progetto è possibile usare caratteri jolly per includere tutti i 
   
 ## <a name="see-also"></a>Vedere anche  
  [Elementi](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [come: Selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [come: selezionare i file da compilare](../msbuild/how-to-select-the-files-to-build.md)

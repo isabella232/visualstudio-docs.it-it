@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441087"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedura: Creare una soluzione per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando un specializzato [!
        Il **Creazione guidata finestra di progettazione di linguaggio specifico di dominio** viene visualizzata.  
   
       > [!NOTE]
-      >  Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore c# valido, poiché potrebbero essere utilizzata per generare il codice.  
+      > Preferibilmente, il nome indipendente dai tipi deve essere un Visual identificatore c# valido, poiché potrebbero essere utilizzata per generare il codice.  
   
       ![Creare finestra di dialogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Un linguaggio specifico di dominio (DSL) viene creato usando un specializzato [!
     La procedura guidata crea una soluzione che include due progetti, denominati **Dsl** e **DslPackage**.  
   
    > [!NOTE]
-   >  Se viene visualizzato un messaggio che avvisa l'utente non di eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio non venga visualizzato anche in questo caso.  
+   > Se viene visualizzato un messaggio che avvisa l'utente non di eseguire modelli di testo da origini non attendibili, fare clic su **OK**. È possibile impostare questo messaggio non venga visualizzato anche in questo caso.  
   
 ## <a name="settings"></a> Pagine della procedura guidata della finestra di progettazione DSL  
  È possibile lasciare vari campi invariati rispetto ai valori predefiniti. Tuttavia, assicurarsi di che impostare campo dell'estensione di File.  

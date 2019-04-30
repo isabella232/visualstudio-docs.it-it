@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435718"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedura: Eseguire il debug di codice ottimizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  L'opzione del compilatore [/Zo (Ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introdotta in Visual Studio Update 3) genera informazioni più complete sul debug per il codice ottimizzato (progetti non compilati con l'opzione del compilatore **/Od**). Vedere [Opzioni /O (Ottimizza codice)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.  
+> L'opzione del compilatore [/Zo (Ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introdotta in Visual Studio Update 3) genera informazioni più complete sul debug per il codice ottimizzato (progetti non compilati con l'opzione del compilatore **/Od**). Vedere [Opzioni /O (Ottimizza codice)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Questo include un supporto migliorato per il debug delle variabili locali e delle funzioni inline.  
 >   
->  [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md) è disabilitato quando viene usata l'opzione del compilatore **/Zo**.  
+> [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md) è disabilitato quando viene usata l'opzione del compilatore **/Zo**.  
   
  Quando il compilatore ottimizza il codice, modifica la posizione e l'organizzazione delle istruzioni. IL risultato è un codice compilato più efficace. A causa di questa ridisposizione, il debugger non è sempre in grado di identificare il codice sorgente corrispondente a un set di istruzioni.  
   
@@ -80,7 +80,7 @@ NOTA]
 9. Selezionare le proprietà di configurazione, C/C++, il nodo della riga di comando della pagina delle proprietà del progetto e aggiungere `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` per il **opzioni aggiuntive** casella di testo.  
   
     > [!WARNING]
-    >  `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.  
+    > `/Zo` richiede Visual Studio 2013 Update 3 o una versione successiva.  
     >   
     >  L'aggiunta di `/Zo` disabilita [Modifica e continuazione](../debugger/edit-and-continue-visual-csharp.md).  
   

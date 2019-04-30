@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430019"
 ---
 # <a name="idebugexpression-interface"></a>Interfaccia IDebugExpression
 Rappresenta un'espressione valutata in modo asincrono. Motori di script in genere implementano questa interfaccia. Un IDE debugger Usa in genere questa interfaccia per abilitare una finestra di esecuzione immediata o finestra Espressioni di controllo.  
   
 > [!NOTE]
->  Il `IDebugExpression` interfaccia è disponibile solo da uno stack frame.  
+> Il `IDebugExpression` interfaccia è disponibile solo da uno stack frame.  
   
  Oltre ai metodi ereditati da `IUnknown`, il `IDebugExpression` interfaccia espone i metodi seguenti.  
   

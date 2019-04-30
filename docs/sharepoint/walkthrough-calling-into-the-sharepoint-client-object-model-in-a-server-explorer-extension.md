@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430449"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: La chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server
   Questa procedura dettagliata illustra come chiamare il modello a oggetti client SharePoint da un'estensione per il **connessioni di SharePoint** nodo **Esplora Server**. Per altre informazioni su come usare il modello a oggetti client SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063114"
 - Il debug e l'estensione per il testing.
 
 > [!NOTE]
->  L'estensione create in questa procedura dettagliata è simile all'estensione che crea in [procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tale procedura dettagliata Usa il modello a oggetti SharePoint server, ma questa procedura dettagliata esegue le stesse attività usando il modello a oggetti client.
+> L'estensione create in questa procedura dettagliata è simile all'estensione che crea in [procedura dettagliata: Estendere Esplora Server per visualizzare le web part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Tale procedura dettagliata Usa il modello a oggetti SharePoint server, ma questa procedura dettagliata esegue le stesse attività usando il modello a oggetti client.
 
 ## <a name="prerequisites"></a>Prerequisiti
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:
@@ -69,7 +69,7 @@ Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la pr
 3. Nel **nuovo progetto** finestra di dialogo, espandere il **Visual c#** oppure **Visual Basic** nodi e quindi scegliere **estendibilità**.
 
     > [!NOTE]
-    >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
+    > Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
 
 4. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
 
@@ -161,7 +161,7 @@ Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la pr
 1. Incollare il codice seguente nel **SiteNodeExtension** file di codice per il **risorse** progetto.
 
     > [!NOTE]
-    >  Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
+    > Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la pr
 6. Nel **Aggiungi nuovo Asset** nella finestra di dialogo il **tipo** casella di riepilogo **MEFComponent**.
 
     > [!NOTE]
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 99a254798ad3e222401a8346df454a70699c7feb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443027"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -401,7 +401,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della gestione di parti dei temi di Visual Studio.
 
 > [!IMPORTANT]
->  Poiché C# è il linguaggio predominante nell'ecosistema Unity (le nuove risorse di esempio sono in C#, la documentazione di Unity sarà relativa a C# per impostazione predefinita), è stato rimosso il supporto tecnico di base per UnityScript e Boo in modo da concentrarsi meglio sull'esperienza in C#. Di conseguenza, le soluzioni VSTU sono ora solo in C# e vengono caricate molto più rapidamente.
+> Poiché C# è il linguaggio predominante nell'ecosistema Unity (le nuove risorse di esempio sono in C#, la documentazione di Unity sarà relativa a C# per impostazione predefinita), è stato rimosso il supporto tecnico di base per UnityScript e Boo in modo da concentrarsi meglio sull'esperienza in C#. Di conseguenza, le soluzioni VSTU sono ora solo in C# e vengono caricate molto più rapidamente.
 
 ## <a name="182"></a>1.8.2
  Rilasciato in data 07.01.2014
@@ -740,7 +740,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della traduzione di simboli PDB in Unity 4.
 
 > [!IMPORTANT]
->  A causa del supporto di Visual Studio 2012, è stato necessario rinominare alcuni file e spostarne altri. Il pacchetto UnityVS per importare Unity si chiama ora UnityVS 2010 o UnityVS 2012, rispettivamente per Visual Studio 2010 e Visual Studio 2012. Per questa versione è anche necessario che i file di progetto di UnityVS vengano rigenerati.
+> A causa del supporto di Visual Studio 2012, è stato necessario rinominare alcuni file e spostarne altri. Il pacchetto UnityVS per importare Unity si chiama ora UnityVS 2010 o UnityVS 2012, rispettivamente per Visual Studio 2010 e Visual Studio 2012. Per questa versione è anche necessario che i file di progetto di UnityVS vengano rigenerati.
 
 ## <a name="106---internal-build"></a>1.0.6 - Build interna
  Rilasciato in data 12.09.2012

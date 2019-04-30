@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436986"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ ms.locfileid: "60102963"
      ![Modificare il Provider di dati in OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Anche se un'origine dati di **File di Database Microsoft Access (OLE DB)** può sembrare la scelta corretta, è usare quel tipo di origine dati solo per i file di database con estensione mdb.  
+    > Anche se un'origine dati di **File di Database Microsoft Access (OLE DB)** può sembrare la scelta corretta, è usare quel tipo di origine dati solo per i file di database con estensione mdb.  
   
 8. Nelle **Provider OLE DB**, selezionare **Office 12.0 Access Database Engine Provider Microsoft OLE DB**.  
   
@@ -70,7 +70,7 @@ ms.locfileid: "60102963"
 9. Nelle **Server o nel nome file**, specificare il percorso e nome del file con estensione accdb a cui si desidera connettersi e quindi selezionare **OK**.  
   
     > [!NOTE]
-    >  Se il file di database ha un nome utente e password, specificarli e si seleziona **OK**.  
+    > Se il file di database ha un nome utente e password, specificarli e si seleziona **OK**.  
   
 10. Selezionare **successivo** nel **scegliere la connessione dati** pagina.  
   

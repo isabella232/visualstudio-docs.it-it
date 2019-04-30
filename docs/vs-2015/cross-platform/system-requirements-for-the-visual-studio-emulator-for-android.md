@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433907"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisiti di sistema per Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Visual Studio Emulator per Android viene eseguito come una macchina virtuale in 
  Il programma di installazione tenta di configurare automaticamente i prerequisiti quando si installa l'emulatore. Se i prerequisiti vengono configurati correttamente, l'emulatore funziona come previsto. In caso contrario potrebbe essere necessario abilitare i prerequisiti manualmente. Per configurare manualmente i prerequisiti, usare i passaggi e gli strumenti descritti [qui](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) per l'emulatore di Windows Phone.
 
 > [!IMPORTANT]
->  Il programma di installazione per l'emulatore verifica i prerequisiti per l'esecuzione di Visual Studio Emulator per Android. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti.
+> Il programma di installazione per l'emulatore verifica i prerequisiti per l'esecuzione di Visual Studio Emulator per Android. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti.
 
  Di seguito sono elencate le diverse sezioni di questo argomento:
 

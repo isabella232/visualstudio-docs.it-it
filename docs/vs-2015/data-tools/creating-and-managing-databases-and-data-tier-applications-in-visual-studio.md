@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431150"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creazione e gestione di database e applicazioni livello dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IMPORTANT]
->  I progetti di database che sono state incluse nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono ora disponibili [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] strumenti. Per altre informazioni, vedere [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> I progetti di database che sono state incluse nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono ora disponibili [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] strumenti. Per altre informazioni, vedere [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  È possibile usare i progetti di database per creare nuovi database, le nuove applicazioni livello dati (DAC), nonché di aggiornare i database esistenti e le applicazioni livello dati. Sia i progetti di database e di applicazione livello dati consentono di applicare tecniche di gestione progetto e di controllo di versione per le tue attività di sviluppo di database in modo molto simile a come si applicano queste tecniche per codice gestito o nativo. Per aiutare il team di sviluppo gestire le modifiche apportate ai database e i server di database tramite la creazione di un *progetto DAC*, *progetto di database*, o un *progetto server* e il relativo inserimento nel controllo della versione. I membri del team possono quindi estrarre i file da creare, compilare e testare le modifiche in un' *ambiente di sviluppo isolato*, o sandbox, prima di condividerli con il team. Per garantire la qualità del codice, il team può terminare e testare tutte le modifiche per una particolare versione del database in un ambiente di staging prima di distribuire le modifiche nell'ambiente di produzione.
 

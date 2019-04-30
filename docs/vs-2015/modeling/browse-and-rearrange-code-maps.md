@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433411"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Cercare e ridisporre le mappe codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ ms.locfileid: "60055249"
 - Un collegamento di aggregazione rappresenta tutte le relazioni che puntano nella stessa direzione tra due gruppi.  
   
 > [!TIP]
->  Per impostazione predefinita, la mappa mostra i collegamenti tra gruppi solo per i nodi selezionati. Per modificare questo comportamento per mostrare o nascondere collegamenti aggregati tra gruppi, fare clic su **Layout** sul codice di eseguire il mapping della barra degli strumenti e scegliere **Advanced**, quindi **Mostra tutti i collegamenti tra gruppi** o **Nascondi tutti i collegamenti tra gruppi**. Visualizzare [nascondere o mostrare nodi e collegamenti](#HidingShowing) per altri dettagli.  
+> Per impostazione predefinita, la mappa mostra i collegamenti tra gruppi solo per i nodi selezionati. Per modificare questo comportamento per mostrare o nascondere collegamenti aggregati tra gruppi, fare clic su **Layout** sul codice di eseguire il mapping della barra degli strumenti e scegliere **Advanced**, quindi **Mostra tutti i collegamenti tra gruppi** o **Nascondi tutti i collegamenti tra gruppi**. Visualizzare [nascondere o mostrare nodi e collegamenti](#HidingShowing) per altri dettagli.  
   
 |**Per**|**Eseguire questi passaggi**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ ms.locfileid: "60055249"
  Se vengono nascosti, i nodi non possono partecipare ad algoritmi di layout. Per impostazione predefinita, i collegamenti tra gruppi sono nascosti. I collegamenti tra gruppi sono collegamenti singoli che connettono nodi tra gruppi. Quando i gruppi vengono compressi, tutti i collegamenti tra gruppi presenti nella mappa vengono aggregati in singoli collegamenti tra gruppi. Quando si espande un gruppo e si selezionano nodi nel gruppo, i collegamenti tra gruppi vengono visualizzati mostrando le dipendenze nel gruppo.  
   
 > [!CAUTION]
->  Prima di condividere una mappa creata in Visual Studio Enterprise con utenti che usano Visual Studio Professional, assicurarsi di scoprire tutti i nodi o i collegamenti tra gruppi che si desidera rendere visibili ad altri utenti. In caso contrario, gli utenti non saranno in grado di vedere tali elementi.  
+> Prima di condividere una mappa creata in Visual Studio Enterprise con utenti che usano Visual Studio Professional, assicurarsi di scoprire tutti i nodi o i collegamenti tra gruppi che si desidera rendere visibili ad altri utenti. In caso contrario, gli utenti non saranno in grado di vedere tali elementi.  
   
 ### <a name="to-hide-or-show-nodes"></a>Per nascondere o mostrare nodi  
   
@@ -153,7 +153,7 @@ ms.locfileid: "60055249"
  Per eseguire il drill-down o semplificare la mappa, è possibile visualizzare più o meno elementi sulla mappa. È anche possibile rinominare gli elementi e aggiungervi commenti.  
   
 > [!CAUTION]
->  Prima di condividere una mappa creata in Visual Studio Enterprise con utenti che usano Visual Studio Professional, assicurarsi che tutti i gli elementi di codice che si desidera rendere visibili ad altri utenti siano visibili sulla mappa. In caso contrario, gli utenti non saranno in grado di recuperare gli elementi di codice eliminati.  
+> Prima di condividere una mappa creata in Visual Studio Enterprise con utenti che usano Visual Studio Professional, assicurarsi che tutti i gli elementi di codice che si desidera rendere visibili ad altri utenti siano visibili sulla mappa. In caso contrario, gli utenti non saranno in grado di recuperare gli elementi di codice eliminati.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Aggiungere un nodo per un elemento di codice  
   
@@ -267,7 +267,7 @@ ms.locfileid: "60055249"
 3. Se l'elenco non include la categoria o proprietà, scegliere **+** nel **legenda** casella e quindi scegliere **proprietà dei nodi**, **categoria nodo** , **Proprietà collegamento**, o **collegamento categoria**. Scegliere quindi la proprietà o la categoria. La categoria o proprietà sono ora inclusi i **legenda** casella.  
   
     > [!NOTE]
-    >  Per creare e assegnare una categoria o una proprietà a un elemento di codice, è possibile modificare i file con estensione dgml della mappa. visualizzare [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Per creare e assegnare una categoria o una proprietà a un elemento di codice, è possibile modificare i file con estensione dgml della mappa. visualizzare [personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. Nel **legenda** finestra, fai clic sull'icona accanto alla categoria o proprietà è stato aggiunto o si desidera modificare.  
   
@@ -290,7 +290,7 @@ ms.locfileid: "60055249"
     |Colore o icona specifica|Aprire l'elenco di valori della proprietà o della categoria. Selezionare un colore o un'icona.|  
   
     > [!NOTE]
-    >  È possibile ridisporre, eliminare o disattivare temporaneamente stili nella **legenda** casella. Visualizzare [modificare la casella legenda](#ModifyLegend).  
+    > È possibile ridisporre, eliminare o disattivare temporaneamente stili nella **legenda** casella. Visualizzare [modificare la casella legenda](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Modificare la casella legenda  
  È possibile ridisporre, eliminare o disattivare temporaneamente stili nella **legenda** casella:  

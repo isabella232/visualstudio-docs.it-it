@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 624be251be9b560f5996a16f3012825d04834758
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431519"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Procedura: Utilizzare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
   

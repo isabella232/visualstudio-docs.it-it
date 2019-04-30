@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437765"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controllare l'esecuzione di un'app dello Store in una sessione di debug di Visual Studio per le app di Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Questa guida introduttiva illustra come spostarsi nel debugger di Visual Studio 
  **Tasti di scelta rapida del debugger.** La navigazione all'interno del debugger di Visual Studio è ottimizzata sia per il mouse che per la tastiera. In molti passaggi di questo argomento è indicato il tasto di scelta rapida in un commento racchiuso tra parentesi. Ad esempio, (tastiera: F5) indica che premendo il tasto F5 si avvia o continua l'esecuzione del debugger.
 
 > [!NOTE]
->  **Modello Module**
+> **Modello Module**
 >
->  Le app di Windows Store usano spesso il *modello Module* JavaScript per incapsulare i dati e le funzioni in una pagina. Il modello Module usa una singola chiusura anonima a esecuzione automatica per mantenere la funzionalità della pagina separata dallo spazio dei nomi globale. Tale funzione viene chiamata *module*in questo argomento.
+> Le app di Windows Store usano spesso il *modello Module* JavaScript per incapsulare i dati e le funzioni in una pagina. Il modello Module usa una singola chiusura anonima a esecuzione automatica per mantenere la funzionalità della pagina separata dallo spazio dei nomi globale. Tale funzione viene chiamata *module*in questo argomento.
 
 ## <a name="in-this-topic"></a>Contenuto dell'argomento
  Vengono illustrate le seguenti procedure:

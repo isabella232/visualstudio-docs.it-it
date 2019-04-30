@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433826"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guida per principianti alla profilatura delle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60059227"
  Se dal **campionamento** non si ottengono i dati necessari, altri metodi di raccolta degli strumenti di profilatura offrono tipi diversi di informazioni che potrebbero essere utili. Per altre informazioni su questi metodi, vedere [Procedura: Scegliere i metodi di raccolta](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Se si analizza il codice che chiama le funzioni di Windows, assicurarsi di avere i file con estensione pdb più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare la disponibilità dei file necessari, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Se si analizza il codice che chiama le funzioni di Windows, assicurarsi di avere i file con estensione pdb più aggiornati. Senza questi file, le visualizzazioni dei rapporti elencherà i nomi delle funzioni di Windows enigmatici e difficile da comprendere. Per altre informazioni su come verificare la disponibilità dei file necessari, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Creare ed eseguire una sessione di prestazioni  
  Per ottenere i dati che si devono analizzare, è necessario innanzitutto creare una sessione di prestazioni e quindi eseguire la sessione. La **Creazione guidata sessione di prestazioni** consente di eseguire entrambe le operazioni.  
@@ -46,7 +46,7 @@ ms.locfileid: "60059227"
 1. Aprire la soluzione in Visual Studio. Impostare la configurazione da rilasciare Individuare la casella **Configurazioni soluzione** sulla barra degli strumenti, che è impostata su **Debug** per impostazione predefinita. Impostarla su **Versione**.  
   
     > [!IMPORTANT]
-    >  Se non si è un amministratore nel computer in uso, è necessario eseguire Visual Studio come amministratore quando si utilizza il profiler. Fare clic con il pulsante destro del mouse sull'icona dell'applicazione Visual Studio e quindi su **Esegui come amministratore**.  
+    > Se non si è un amministratore nel computer in uso, è necessario eseguire Visual Studio come amministratore quando si utilizza il profiler. Fare clic con il pulsante destro del mouse sull'icona dell'applicazione Visual Studio e quindi su **Esegui come amministratore**.  
   
 2. Fare clic su **Profiler prestazioni** nel menu **Debug**.  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402826"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)
 
@@ -59,7 +59,7 @@ Per impostazione predefinita, la logica per aggiornare un database (inserimenti,
 10. Fare clic su **OK** o **Applica**.
 
     > [!NOTE]
-    >  È possibile continuare a configurare il comportamento per ogni combinazione classe e il comportamento, purché si fa clic su **applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso viene visualizzato e offre la possibilità di applicare le modifiche.
+    > È possibile continuare a configurare il comportamento per ogni combinazione classe e il comportamento, purché si fa clic su **applica** dopo ogni modifica apportata. Se si modifica la classe o un comportamento prima di fare clic **applica**, una finestra di dialogo di avviso viene visualizzato e offre la possibilità di applicare le modifiche.
 
 Per ripristinare l'uso della logica di runtime predefinita per gli aggiornamenti, fare clic sui puntini di sospensione accanto al comando **Insert**, **Update** o **Delete** nella finestra **Proprietà** e quindi selezionare **Usa fase di esecuzione** nella finestra di dialogo **Configura comportamento**.
 

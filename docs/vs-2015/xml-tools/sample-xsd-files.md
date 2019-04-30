@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cc746e66bc08d980c11a9e582ccc9db23690d59
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cc492b17ce4ecf7c4c8bf229a6c43c665dc3c125
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435358"
 ---
 # <a name="sample-xsd-files"></a>File XSD di esempio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "59650838"
 I file di esempio seguenti sono usati nella documentazione della progettazione di schemi XSD.  
   
 > [!NOTE]
->  Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.  
+> Le società, le organizzazioni, i prodotti, i nomi di dominio, gli indirizzi di posta elettronica, i loghi, le persone, i luoghi e gli eventi di esempio qui riportati sono fittizi. Nessuna associazione con nessuna società, organizzazione, prodotto, nome di dominio, indirizzo di posta elettronica, logo, persona, luogo o evento è intenzionale o può essere presupposta.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   

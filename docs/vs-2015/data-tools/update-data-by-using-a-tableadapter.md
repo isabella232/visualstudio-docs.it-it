@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424898"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aggiornare i dati mediante un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113819"
 Dopo aver modificati i dati nel set di dati e convalidati, è possibile inviare i dati aggiornati all'oggetto chiamando il metodo databaseby il `Update` metodo di un oggetto TableAdapter. Il `Update` metodo aggiorna una singola tabella di dati ed esegue il comando corretto (INSERT, UPDATE o DELETE) in base il <xref:System.Data.DataRow.RowState%2A> di ogni riga di dati nella tabella. Quando un set di dati dispone di tabelle correlate, Visual Studio genera una classe di TableAdapterManager utilizzabili per eseguire gli aggiornamenti. La classe di TableAdapterManager assicura che gli aggiornamenti vengono eseguiti nell'ordine corretto in base ai vincoli di chiave esterna che sono definiti nel database. Quando si usano controlli associati a dati, l'architettura di Data Binding crea una variabile membro della classe TableAdapterManager chiamata tableAdapterManager. Per altre informazioni, vedere [Cenni preliminari sull'aggiornamento gerarchico](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
->  Quando si tenta di aggiornare un'origine dati con il contenuto di un set di dati, è possibile ottenere gli errori. Per evitare errori, è consigliabile si inserire il codice che chiama l'adapter `Update` metodo all'interno di un `try` / `catch` blocco.  
+> Quando si tenta di aggiornare un'origine dati con il contenuto di un set di dati, è possibile ottenere gli errori. Per evitare errori, è consigliabile si inserire il codice che chiama l'adapter `Update` metodo all'interno di un `try` / `catch` blocco.  
   
  La procedura esatta per l'aggiornamento di un'origine dati può variare a seconda delle esigenze aziendali, ma i passaggi seguenti:  
   

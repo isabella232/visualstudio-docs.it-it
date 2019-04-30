@@ -12,12 +12,12 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f15499d4075491c8eab8660fb51fba49b983f77a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d92baa824dbb70dd591cadef99775f943c651aef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436149"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procedura: Offrire il supporto per la struttura in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ La struttura consente di espandere o comprimere aree diverse del testo. La strut
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare la struttura, vedere [procedura dettagliata: Struttura](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
  Di seguito viene illustrato come supportare questo comando per il servizio di linguaggio.  
   
@@ -45,8 +45,8 @@ La struttura consente di espandere o comprimere aree diverse del testo. La strut
  È possibile chiamare il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> metodo per più aree di struttura specificando in queste aree il `rgOutlnReg` parametro. Il `rgOutlnReg` parametro è un <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> struttura. Questo processo consente di specificare diverse caratteristiche dell'area nascosta, ad esempio se una determinata area è espanso o compresso.  
   
 > [!NOTE]
->  Prestare attenzione se si nasconde caratteri di nuova riga. Testo nascosto deve estendere dall'inizio della prima riga all'ultimo carattere dell'ultima riga in una sezione, lasciando visibili il carattere di nuova riga finale.  
+> Prestare attenzione se si nasconde caratteri di nuova riga. Testo nascosto deve estendere dall'inizio della prima riga all'ultimo carattere dell'ultima riga in una sezione, lasciando visibili il carattere di nuova riga finale.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Fornire il supporto di testo nascosto in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)   
- [Procedura: Fornire supporto per la struttura espanso in un servizio di linguaggio Legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
+ [Procedura: offrire il supporto per la struttura espansa in un servizio di linguaggio legacy](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

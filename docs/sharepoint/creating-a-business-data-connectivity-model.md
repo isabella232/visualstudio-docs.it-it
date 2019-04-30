@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443553"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Creare un modello di integrazione applicativa dei dati business
   È possibile creare un modello di integrazione applicativa dei dati (BDC) o personalizzare un modello di integrazione applicativa dei dati esistente con Visual Studio. Ogni progetto di SharePoint può contenere un solo modello. Per altre informazioni, vedere [integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605731"
  Per creare un nuovo modello, creare un **Business Data Connectivity Model** del progetto oppure aggiungere un **Business Data Connectivity Model** voce a una **progetto SharePoint vuoto**.
 
 > [!NOTE]
->  È necessario disporre di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] installato nel computer.
+> È necessario disporre di [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] installato nel computer.
 
  Visual Studio aggiunge una cartella al progetto. Questa cartella contiene il nome specificato per il **Business Data Connectivity Model** degli elementi nella **Aggiungi nuovo elemento** nella finestra di dialogo. Se si crea una nuova **Business Data Connectivity Model** i nomi di progetto, Visual Studio nella cartella **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605731"
  Quando si compila il progetto, Visual Studio crea un assembly. Assicurarsi di non aggiungere altri elementi al progetto con cui aggiungere codice per l'assembly del progetto (ad esempio: una **flusso di lavoro sequenziale** elemento o una **Web Part** elemento). Il codice per l'elemento non verrà eseguito quando si distribuisce la soluzione perché il pacchetto della soluzione non copiare l'assembly nella global assembly cache.  Il pacchetto della soluzione consente di distribuire l'assembly solo nel database di catalogo dati business in SharePoint.
 
 > [!NOTE]
->  Visual Studio consente di copiare l'assembly in entrambe le posizioni nel computer locale quando si esegue il debug del progetto.
+> Visual Studio consente di copiare l'assembly in entrambe le posizioni nel computer locale quando si esegue il debug del progetto.
 
 ## <a name="add-an-existing-model"></a>Aggiungere un modello esistente
  È possibile importare un modello che è stato creato usando altri strumenti, ad esempio SharePoint Designer. È possibile scegliere di importare un modello esistente al progetto nelle situazioni seguenti:

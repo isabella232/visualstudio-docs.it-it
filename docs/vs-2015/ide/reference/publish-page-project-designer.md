@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441303"
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  Per accedere alla pagina **Pubblica** , selezionare un nodo di progetto in **Esplora soluzioni**, quindi fare clic su **Proprietà** dal menu **Progetto**. In **Progettazione progetti** fare clic sulla scheda **Pubblica** .  
   
 > [!NOTE]
->  Alcune delle proprietà ClickOnce descritte possono essere impostate anche nella **Pubblicazione guidata** disponibile nel menu **Compila** oppure facendo clic sul pulsante **Pubblicazione guidata** nella pagina.  
+> Alcune delle proprietà ClickOnce descritte possono essere impostate anche nella **Pubblicazione guidata** disponibile nel menu **Compila** oppure facendo clic sul pulsante **Pubblicazione guidata** nella pagina.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Posizione cartella di pubblicazione**  

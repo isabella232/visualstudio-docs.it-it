@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439340"
 ---
 # <a name="resolvecomreference-task"></a>Attività ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`ResolvedAssemblyReferences`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i riferimenti all'assembly risolti.|  
 |`ResolvedFiles`|Parametro di output <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Specifica i file con nomi completi su disco che corrispondono alle posizioni fisiche delle librerie dei tipi fornite come input per questa attività.|  
 |`ResolvedModules`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.|  
-|`SdkToolsPath`|(Facoltativo [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
+|`SdkToolsPath`|Parametro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Se `ExecuteAsTool` è `true`, questo parametro deve essere impostato sul percorso degli strumenti SDK per la versione di framework di destinazione.|  
 |`StateFile`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il file di cache per i timestamp dei componenti COM. Se non presente, ogni esecuzione genererà nuovamente tutti i wrapper.|  
 |`TargetFrameworkVersion`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica la versione del framework di destinazione del progetto.<br /><br /> Il valore predefinito è `String.Empty`. Tale valore indica che non viene applicato alcun filtro a un riferimento in base al framework di destinazione.|  
 |`TargetProcessorArchitecture`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica l'architettura preferita del processore di destinazione. Viene passato al flag tlbimp.exe /machine dopo la conversione.<br /><br /> Il valore del parametro deve essere un membro di <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
@@ -75,7 +75,7 @@ Accetta un elenco costituito da uno o più nomi di librerie dei tipi o file con 
 |`WrapperTool`|Metadati di elemento facoltativi.<br /><br /> Specifica lo strumento wrapper usato per generare il wrapper dell'assembly per la libreria dei tipi in oggetto. Se questi metadati di elemento non vengono specificati, l'attività userà lo strumento wrapper predefinito "tlbimp". Di seguito sono riportate le opzioni disponibili per typelibs (non viene fatta distinzione tra maiuscole e minuscole):<br /><br /> -   `Primary`: usare questo strumento wrapper se si vuole fare uso di un assembly di interoperabilità primario già generato per il componente COM. Quando si usa questo strumento wrapper, non specificare una directory di output del wrapper perché tale operazione determina l'esito negativo dell'attività.<br />-   `TLBImp`: usare questo strumento wrapper se si vuole generare un assembly di interoperabilità per il componente COM.<br />-   `AXImp`: usare questo strumento wrapper per generare un assembly di interoperabilità per un controllo ActiveX.|  
   
 > [!NOTE]
->  Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.  
+> Una maggiore quantità di informazioni fornite per identificare in maniera univoca una libreria dei tipi aumenta le probabilità di risoluzione dell'attività nel file corretto su disco.  
   
 ## <a name="remarks"></a>Note  
  Oltre ai parametri sopra elencati, quest'attività eredita i parametri dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di tali parametri aggiuntivi e le relative descrizioni, vedere [Classe di base Task](../msbuild/task-base-class.md).  

@@ -11,12 +11,12 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d768a8024755fcee10413495c48da9e20456751
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436621"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrazione dei gestori dei comandi negli assembly di interoperabilità
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Un pacchetto VSPackage è necessario registrare con [!INCLUDE[vsprvs](../../incl
  Un pacchetto VSPackage che agisce come un gestore per l'interfaccia utente (UI)-comandi basati su richiede una voce del Registro di sistema denominata dopo che il pacchetto VSPackage `GUID`. Questa voce del Registro di sistema specifica il percorso del file di risorse del pacchetto VSPackage dell'interfaccia utente e la risorsa di menu all'interno del file. La voce del Registro di sistema stesso si trova sotto HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versione >* \Menus, dove  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio 9.0.  
   
 > [!NOTE]
->  Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituito con un'alternativa radice quando il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell viene inizializzata. Per altre informazioni sul percorso radice, vedere [installazione di pacchetti VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
+> Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sostituito con un'alternativa radice quando il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell viene inizializzata. Per altre informazioni sul percorso radice, vedere [installazione di pacchetti VSPackage con Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>La voce del Registro di sistema di risorsa CTMENU  
  La struttura della voce del Registro di sistema è:  

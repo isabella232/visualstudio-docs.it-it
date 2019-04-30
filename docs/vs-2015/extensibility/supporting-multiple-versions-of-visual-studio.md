@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f4393a88a689e2a923291ada37a9b6d85718db5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431360"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Supporto di più versioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Il termine *side-by-side* significa che è possibile installare e gestire più v
      Per altre informazioni, vedere [installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) nonché [gestione dei componenti](../extensibility/internals/component-management.md).
 
     > [!NOTE]
-    >  Installazione di una versione di Visual Studio installa anche una versione corrispondente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Ad esempio, l'installazione di Visual Studio 2010 e Visual Studio 2012 nello stesso computer installa anche le versioni 4.0 e 4.5 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], rispettivamente.
+    > Installazione di una versione di Visual Studio installa anche una versione corrispondente del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Ad esempio, l'installazione di Visual Studio 2010 e Visual Studio 2012 nello stesso computer installa anche le versioni 4.0 e 4.5 del [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], rispettivamente.
 
 ## <a name="in-this-section"></a>In questa sezione
  [Scelta tra condivise e i pacchetti VSPackage con controllo delle versioni](../extensibility/choosing-between-shared-and-versioned-vspackages.md) spiega come risolvere i problemi side-by-side nel pacchetto VSPackage.

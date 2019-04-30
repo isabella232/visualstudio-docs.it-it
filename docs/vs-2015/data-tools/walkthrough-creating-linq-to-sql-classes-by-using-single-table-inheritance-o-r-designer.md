@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424695"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creazione di classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 1. Nelle **Esplora Server**/**Esplora Database**, fare doppio clic il **tabelle** nodo e fare clic su **Aggiungi nuova tabella**.  
   
     > [!NOTE]
-    >  È possibile usare il database Northwind o qualsiasi altro database a cui sia possibile aggiungere una tabella.  
+    > È possibile usare il database Northwind o qualsiasi altro database a cui sia possibile aggiungere una tabella.  
   
 2. In Progettazione tabelle aggiungere le seguenti colonne alla tabella:  
   
@@ -96,7 +96,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 2. Denominare il progetto **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti Visual Basic e C#. Creare il nuovo progetto in uno di questi linguaggi  
+    > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti Visual Basic e C#. Creare il nuovo progetto in uno di questi linguaggi  
   
 3. Scegliere il **Windows Forms Application** modello e quindi fare clic su **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

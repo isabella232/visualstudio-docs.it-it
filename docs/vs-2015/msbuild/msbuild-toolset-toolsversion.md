@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426309"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Set di strumenti di MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
  Come descritto precedentemente in questo argomento, MSBuild usa una chiave del Registro di sistema per specificare il percorso degli strumenti di base. Se la chiave ha una sottochiave, MSBuild la usa per specificare il percorso di un subset di strumenti che contiene ulteriori strumenti. In questo caso, il set di strumenti viene definito combinando le definizioni delle proprietà definite in entrambe le chiavi.  
   
 > [!NOTE]
->  Se i nomi delle proprietà del set di strumenti sono in conflitto, il valore definito per il percorso della sottochiave ha la precedenza sul valore definito per il percorso della chiave radice.  
+> Se i nomi delle proprietà del set di strumenti sono in conflitto, il valore definito per il percorso della sottochiave ha la precedenza sul valore definito per il percorso della chiave radice.  
   
  I subset di strumenti diventano attivi in presenza della proprietà di compilazione `VisualStudioVersion`. Questa proprietà può accettare uno dei valori seguenti:  
   

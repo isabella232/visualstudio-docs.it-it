@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5137464f253469e62bf4a22c415906a4a3f352a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684afac90741bbac56a0fc295c21c96a2001859e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424937"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Procedura dettagliata: Creazione di un servizio WCF semplice in Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ In questa procedura dettagliata viene illustrato come creare un semplice servizi
      ![Il progetto libreria di servizi WCF](../data-tools/media/wcf1.PNG "wcf1")  
   
     > [!NOTE]
-    >  Viene creato un servizio di lavoro che può essere testato e a cui è possibile accedere. I due passaggi seguenti mostrano come modificare il metodo predefinito per usare un tipo di dati diverso. In un'applicazione reale verrebbero aggiunte anche le funzioni dell'utente al servizio.  
+    > Viene creato un servizio di lavoro che può essere testato e a cui è possibile accedere. I due passaggi seguenti mostrano come modificare il metodo predefinito per usare un tipo di dati diverso. In un'applicazione reale verrebbero aggiunte anche le funzioni dell'utente al servizio.  
   
 3. ![Il file IService1](../data-tools/media/wcf2.png "wcf2")  
   

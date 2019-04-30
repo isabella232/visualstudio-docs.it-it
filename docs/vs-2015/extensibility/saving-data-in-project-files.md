@@ -12,12 +12,12 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31a9b093fc912be9db573b89d8c6b09e927c8b87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc671963854e4fa0c2af763de5000fac82a839b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432521"
 ---
 # <a name="saving-data-in-project-files"></a>Salvataggio di dati nei file di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ Un sottotipo di progetto è possibile salvare e recuperare i dati specifici del 
     ```  
   
 > [!NOTE]
->  Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più esaustivo [esempi di VSSDK](../misc/vssdk-samples.md).  
+> Tutti gli esempi di codice forniti in questo argomento sono parti di un esempio più esaustivo [esempi di VSSDK](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvataggio permanente dei dati nel file di progetto MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

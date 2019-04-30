@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ea40a2af8139895a49c993588555f06bfda7f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432358"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procedura: Usare la finestra di progettazione argomenti
 Se confrontata con le versioni precedenti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], la finestra di progettazione argomenti semplifica il flusso di dati da e verso un'attività. Viene visualizzata la finestra di progettazione facendo il **argomenti** pulsante nell'angolo inferiore sinistro dell'area di progettazione. La finestra di progettazione contiene un elenco di argomenti che vengono visualizzati in un formato tabulare e possono essere ordinati per ognuna delle intestazioni di colonna, tranne per il **il valore predefinito** colonna. Ogni argomento include un nome, una direzione per la proprietà in/out/in-out, un tipo e un valore di espressione predefinito (se presente). Il nome e il valore di espressione predefinito sono campi di testo modificabili, mentre il tipo e la direzione sono elenchi a discesa. [!INCLUDE[crabout](../includes/crabout-md.md)] gli argomenti, vedere [variabili e argomenti](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
@@ -31,7 +31,7 @@ Se confrontata con le versioni precedenti di [!INCLUDE[dnprdnshort](../includes/
 3. Fare clic sulla riga vuota denominata **Crea argomento**. Verrà aggiunta una nuova riga con un nuovo argomento usando i valori predefiniti seguenti: argumentx per il **Name** dove x è di tipo integer e un valore iniziale pari a 1 che viene incrementato automaticamente per creare i nomi di argomento univoco, **In**  per il **direzione**, e **stringa** per i **tipo di argomento**. Non vengono aggiunti valori per **il valore predefinito**. Tali valori possono essere modificati in qualsiasi momento durante il processo di progettazione del flusso di lavoro.  
   
     > [!NOTE]
-    >  Per eliminare un argomento, selezionare l'argomento facendovi clic sopra e quindi premere il **eliminare** chiave.  
+    > Per eliminare un argomento, selezionare l'argomento facendovi clic sopra e quindi premere il **eliminare** chiave.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Usando la finestra di progettazione del flusso di lavoro](../workflow-designer/using-the-workflow-designer.md)   

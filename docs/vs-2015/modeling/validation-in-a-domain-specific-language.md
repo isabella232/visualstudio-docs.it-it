@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437470"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
  La convalida è particolarmente importante quando si scrivono modelli di testo o altri strumenti che elaborano i modelli degli utenti. Garantisce infatti che i modelli siano conformi alle precondizioni previste da questi strumenti.  
   
 > [!WARNING]
->  È anche possibile consentire la definizione di vincoli di convalida in estensioni separate del linguaggio specifico di dominio, unitamente a comandi di menu e gestori movimenti dell'estensione. Gli utenti potranno quindi scegliere di installare queste estensioni in aggiunta al linguaggio specifico di dominio. Per altre informazioni, vedere [estendere il DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> È anche possibile consentire la definizione di vincoli di convalida in estensioni separate del linguaggio specifico di dominio, unitamente a comandi di menu e gestori movimenti dell'estensione. Gli utenti potranno quindi scegliere di installare queste estensioni in aggiunta al linguaggio specifico di dominio. Per altre informazioni, vedere [estendere il DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Esecuzione della convalida  
  Quando un utente modifica un modello, ovvero un'istanza del linguaggio specifico di dominio, la convalida viene eseguita in seguito alle azioni seguenti:  
@@ -52,7 +52,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
  Ogni metodo di convalida segnala gli eventuali errori trovati.  
   
 > [!NOTE]
->  I metodi di convalida segnalano gli errori, ma non modificano il modello. Se si desidera regolare o impedire determinate modifiche, vedere [alternative alla convalida](#alternatives).  
+> I metodi di convalida segnalano gli errori, ma non modificano il modello. Se si desidera regolare o impedire determinate modifiche, vedere [alternative alla convalida](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Per definire un vincolo di convalida  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Prima di un metodo è possibile specificare il numero desiderato di attributi `[ValidationMethod()]`. È possibile aggiungere un metodo sia a categorie standard che personalizzate.  
+> Prima di un metodo è possibile specificare il numero desiderato di attributi `[ValidationMethod()]`. È possibile aggiungere un metodo sia a categorie standard che personalizzate.  
   
  Per richiamare una convalida personalizzata:  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Esegue il rollback della transazione se viene tentata una modifica non è valida.** È anche possibile definire una regola per questo scopo, ma in alcuni casi è possibile eseguire l'override di un gestore delle proprietà **Onvaluechanging**, o eseguire l'override di un metodo, ad esempio `OnDeleted().` per ripristinare una transazione, usare `this.Store.TransactionManager.CurrentTransaction.Rollback().` per altre informazioni informazioni, vedere [gestori di Modifica valore proprietà di dominio](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`  
+> Assicurarsi di informare l'utente dell'adattamento della modifica o del rollback. Ad esempio, usare `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Vedere anche  
  [Esplorazione e aggiornamento di un modello nel codice programma](../modeling/navigating-and-updating-a-model-in-program-code.md)   

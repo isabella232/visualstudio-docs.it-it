@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d84de96181018858515bd74156f844ed6022f0a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434619"
 ---
 # <a name="scchistory-function"></a>Funzione SccHistory
 Questa funzione consente di visualizzare la cronologia dei file specificati.
@@ -63,7 +63,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>Valore restituito
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Cronologia delle versioni è stata ottenuta correttamente.|
 |SCC_I_RELOADFILE|Il controllo del codice sorgente modificato effettivamente il file su disco durante il recupero della cronologia (ad esempio, ottenendo una versione precedente), in modo che l'IDE deve ricaricare questo file.|
@@ -80,7 +80,7 @@ SCCRTN SccHistory(
  Si noti che in determinate circostanze, il file in corso l'analisi potrebbe cambiare durante l'esecuzione di questa chiamata. Ad esempio, il [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando Cronologia consente all'utente la possibilità di ottenere una versione precedente del file. In tal caso, l'origine di controllo del plug-in restituisce `SCC_I_RELOAD` per avvisare l'IDE ed è necessario ricaricare il file.
 
 > [!NOTE]
->  Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, può essere visualizzata solo la cronologia file per il primo file.
+> Se il plug-in del controllo del codice sorgente non supporta questa funzione per una matrice di file, può essere visualizzata solo la cronologia file per il primo file.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

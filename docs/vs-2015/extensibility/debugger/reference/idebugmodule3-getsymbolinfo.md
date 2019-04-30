@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426361"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Se il metodo ha esito positivo, restituisce `S_OK`; in caso contrario, viene restituito un codice di errore.  
   
 > [!NOTE]
->  La stringa restituita (nelle `MODULE_SYMBOL_SEARCH_INFO` struttura) può essere vuoto anche se `S_OK` viene restituito. In questo caso, si è verificato alcuna informazione di ricerca da restituire.  
+> La stringa restituita (nelle `MODULE_SYMBOL_SEARCH_INFO` struttura) può essere vuoto anche se `S_OK` viene restituito. In questo caso, si è verificato alcuna informazione di ricerca da restituire.  
   
 ## <a name="remarks"></a>Note  
  Se il `bstrVerboseSearchInfo` campo il `MODULE_SYMBOL_SEARCH_INFO` struttura non è vuota, quindi contiene un elenco di percorsi di ricerca e i risultati della ricerca. L'elenco viene formattato con un percorso, seguito da puntini di sospensione ("..."), seguiti dal risultato. Se è presente più di una coppia di risultati di percorso, quindi ogni coppia è separato da una coppia di "\r\n" (ritorno a capo-/ avanzamento riga). Il modello è simile alla seguente:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  In questo esempio, questo metodo restituisce tre percorsi con tre risultati di ricerca diverso. Ogni riga termina con una coppia di ritorno a capo-/ avanzamento riga. L'output di esempio stampa semplicemente i risultati della ricerca come un'unica stringa.  
   
 > [!NOTE]
->  Un risultato di stato è tutto quello che segue immediatamente il "..." fino alla fine della riga.  
+> Un risultato di stato è tutto quello che segue immediatamente il "..." fino alla fine della riga.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

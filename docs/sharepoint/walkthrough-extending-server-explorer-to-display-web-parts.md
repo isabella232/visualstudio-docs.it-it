@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430330"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040572"
 - Il debug e l'estensione per il testing.
 
 > [!NOTE]
->  Per una versione alternativa di questa procedura dettagliata che usa il modello a oggetti client di SharePoint anziché il modello a oggetti server, vedere [procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Per una versione alternativa di questa procedura dettagliata che usa il modello a oggetti client di SharePoint anziché il modello a oggetti server, vedere [procedura dettagliata: Chiamare il modello a oggetti client SharePoint in un'estensione di Esplora Server](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Sono necessari i componenti seguenti nel computer di sviluppo per completare questa procedura dettagliata:
@@ -75,7 +75,7 @@ ms.locfileid: "60040572"
 3. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
-    >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
+    > Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
 
 4. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040572"
 1. Nel progetto di risorse, aprire il file di codice SiteNodeExtension e quindi incollare il codice seguente al suo interno.
 
     > [!NOTE]
-    >  Dopo che si aggiunge questo codice, il progetto avrà alcuni errori di compilazione, ma scompariranno quando si aggiunge codice nei passaggi successivi.
+    > Dopo che si aggiunge questo codice, il progetto avrà alcuni errori di compilazione, ma scompariranno quando si aggiunge codice nei passaggi successivi.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040572"
 1. Nella barra dei menu scegliere **Compila** > **Compila soluzione**.
 
     > [!WARNING]
-    >  A questo punto, il progetto WebPartNode può avere un errore di compilazione perché il file manifesto VSIX non ha un valore per l'autore. Questo errore scompare quando si aggiunge un valore nei passaggi successivi.
+    > A questo punto, il progetto WebPartNode può avere un errore di compilazione perché il file manifesto VSIX non ha un valore per l'autore. Questo errore scompare quando si aggiunge un valore nei passaggi successivi.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Creare un pacchetto VSIX per distribuire l'estensione
  Per distribuire l'estensione, usare il progetto VSIX nella soluzione per creare un pacchetto VSIX. Configurare innanzitutto il pacchetto VSIX, modificando il file vsixmanifest nel progetto VSIX. Quindi, creare il pacchetto VSIX per la compilazione della soluzione.
@@ -290,7 +290,7 @@ ms.locfileid: "60040572"
 6. Nel **tipo** casella di riepilogo **MEFComponent**.
 
     > [!NOTE]
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040572"
 10. Nel **tipo** casella, immettere **v4**.
 
     > [!NOTE]
-    >  Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [Asset Element (Schema di VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Questo elemento specifica un'estensione personalizzata che si desidera includere nell'estensione di Visual Studio. Per altre informazioni, vedere [Asset Element (Schema di VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. Nel **origine** scegliere i **un progetto nella soluzione corrente** elemento dell'elenco.
 

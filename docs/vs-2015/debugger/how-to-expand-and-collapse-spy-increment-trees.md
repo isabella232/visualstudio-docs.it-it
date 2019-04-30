@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f028370c5790b6e22339f39eacaac5e2b552e213
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438274"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedura: Espandere e comprimere alberi di Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58964195"
 |**Comprimi**|Consente di comprimere completamente l'elemento attualmente selezionato.|  
   
 > [!TIP]
->  Se si espande un processo, viene visualizzato di tutti i thread che del processo. Se si espande un thread, viene visualizzato un elenco di tutte le finestre di che sua proprietà.  
+> Se si espande un processo, viene visualizzato di tutti i thread che del processo. Se si espande un thread, viene visualizzato un elenco di tutte le finestre di che sua proprietà.  
   
 ### <a name="to-expand-or-collapse-spy-trees"></a>Per espandere o comprimere alberi di Spy + +  
   
-1.  Evidenziare uno degli elementi nella visualizzazione di Windows, processi o thread.  
+1. Evidenziare uno degli elementi nella visualizzazione di Windows, processi o thread.  
   
-2.  Dal **albero** menu, scegliere uno di espansione o compressione comandi.  
+2. Dal **albero** menu, scegliere uno di espansione o compressione comandi.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di Spy++](../debugger/using-spy-increment.md)   

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430349"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint
   È possibile usare la **Business Data Connectivity Model** elemento del progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È anche necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.
@@ -67,7 +67,7 @@ ms.locfileid: "60057862"
 3. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
-    >  Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
+    > Il **estendibilità** nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
 
 4. Nell'elenco nella parte superiore della **nuovo progetto** finestra di dialogo, scegliere **.NET Framework 4.5**.
 
@@ -132,7 +132,7 @@ ms.locfileid: "60057862"
 1. Incollare il codice seguente nel file di codice ProjectItemExtension.
 
     > [!NOTE]
-    >  Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
+    > Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
 
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/projectitemextension.cs#1)]
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#1](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/projectitemextension.vb#1)]
@@ -176,7 +176,7 @@ ms.locfileid: "60057862"
 6. Nel **tipo** casella di riepilogo **MEFComponent**.
 
     > [!NOTE]
-    >  Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Questo valore corrisponde al `MefComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Nel **origine** casella di riepilogo **un progetto nella soluzione corrente**.
 

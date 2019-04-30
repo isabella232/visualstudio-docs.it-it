@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442614"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Passaggio 3: Aggiungere un timer per il conto alla rovescia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094820"
 Nella terza parte di questa esercitazione si aggiungerà un timer per il conto alla rovescia per tenere traccia del numero di secondi che rimangono all'esecutore del quiz per completare l'operazione.  
   
 > [!NOTE]
->  Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Per aggiungere un timer per il conto alla rovescia  
   
@@ -57,7 +57,7 @@ Nella terza parte di questa esercitazione si aggiungerà un timer per il conto a
      Si è appena aggiunta un'istruzione `if else`, che rappresenta il modo in cui si comunica ai programmi di prendere decisioni. Di seguito è riportato un esempio di istruzione `if else`.  
   
     > [!NOTE]
-    >  L'esempio seguente viene fornito a scopo illustrativo; non aggiungerlo al progetto.  
+    > L'esempio seguente viene fornito a scopo illustrativo; non aggiungerlo al progetto.  
   
     ```vb  
     If (something that your program will check) Then  

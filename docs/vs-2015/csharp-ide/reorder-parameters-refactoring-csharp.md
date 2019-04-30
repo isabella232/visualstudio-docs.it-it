@@ -1,5 +1,5 @@
 ---
-title: Riordina parametri Refactoring (C#) | Microsoft Docs
+title: Riordina parametri Refactoring (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,26 +16,26 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444544"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refactoring Riordina parametri (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` è un linguaggio Visual C# il refactoring di operazione che fornisce un modo semplice per modificare l'ordine dei parametri per metodi, indicizzatori e delegati. `Reorder Parameters` la dichiarazione viene modificata e in tutti i percorsi in cui viene chiamato il membro, i parametri vengono riorganizzati in modo da riflettere il nuovo ordine.  
+`Reorder Parameters` è un linguaggio Visual c# il refactoring di operazione che fornisce un modo semplice per modificare l'ordine dei parametri per metodi, indicizzatori e delegati. `Reorder Parameters` la dichiarazione viene modificata e in tutti i percorsi in cui viene chiamato il membro, i parametri vengono riorganizzati in modo da riflettere il nuovo ordine.  
   
  Per eseguire il `Reorder Parameters` operazione, posizionare il cursore sopra o accanto a un metodo, l'indicizzatore o delegato. Quando il cursore si trova nella posizione, richiamare il `Reorder Parameters` operazione premendo il tasto di scelta rapida oppure scegliendo il comando dal menu di scelta rapida.  
   
 > [!NOTE]
->  Non è possibile riordinare il primo parametro in un metodo di estensione.  
+> Non è possibile riordinare il primo parametro in un metodo di estensione.  
   
 ### <a name="to-reorder-parameters"></a>Per riordinare i parametri  
   
-1.  Creare una libreria di classi denominata `ReorderParameters`, quindi sostituire `Class1` con il codice di esempio seguente.  
+1. Creare una libreria di classi denominata `ReorderParameters`, quindi sostituire `Class1` con il codice di esempio seguente.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "58967555"
     }  
     ```  
   
-2.  Posizionare il cursore sulla `MethodB`, nella dichiarazione del metodo o la chiamata al metodo.  
+2. Posizionare il cursore sulla `MethodB`, nella dichiarazione del metodo o la chiamata al metodo.  
   
-3.  Nel **refactoring** menu, fare clic su **Riordina parametri**.  
+3. Nel **refactoring** menu, fare clic su **Riordina parametri**.  
   
      Il **Riordina parametri** verrà visualizzata la finestra di dialogo.  
   
-4.  Nel **Riordina parametri** finestra di dialogo `int i` nel **parametri** elenco e quindi fare clic sul pulsante a discesa.  
+4. Nel **Riordina parametri** finestra di dialogo `int i` nel **parametri** elenco e quindi fare clic sul pulsante a discesa.  
   
      In alternativa, è possibile trascinare `int i` dopo aver `bool b` nel **parametri** elenco.  
   
-5.  Nel **Riordina parametri** finestra di dialogo, fare clic su **OK**.  
+5. Nel **Riordina parametri** finestra di dialogo, fare clic su **OK**.  
   
      Se il **Anteprima modifiche riferimento** opzione è selezionata nel **Riordina parametri** della finestra di dialogo il **Anteprima modifiche - Riordina parametri** verrà visualizzata la finestra di dialogo. Fornisce un'anteprima delle modifiche nell'elenco dei parametri per `MethodB` sia la firma e la chiamata al metodo.  
   
-    1.  Se il **Anteprima modifiche - Riordina parametri** verrà visualizzata la finestra di dialogo, fare clic su **applica**.  
+    1. Se il **Anteprima modifiche - Riordina parametri** verrà visualizzata la finestra di dialogo, fare clic su **applica**.  
   
          In questo esempio, la dichiarazione del metodo e tutto il metodo di chiamata siti per `MethodB` vengono aggiornati.  
   

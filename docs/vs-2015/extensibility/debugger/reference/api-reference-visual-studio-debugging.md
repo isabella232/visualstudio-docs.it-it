@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424509"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La sezione di riferimento include una panoramica concettuale dell'API, una Guida
 |E_ACCESSDENIED|Errore di accesso generale negato.|0x80070005|  
   
 > [!NOTE]
->  Quando un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire, alcuna convalida non viene effettuata in orizzontale i puntatori di parametro quando `S_OK` viene restituito.  
+> Quando un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire, alcuna convalida non viene effettuata in orizzontale i puntatori di parametro quando `S_OK` viene restituito.  
   
 > [!NOTE]
->  Non è valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.  
+> Non è valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfacce](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

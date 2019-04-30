@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc596909862c2ebb490fa478e1f5f71f88dd7ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0bd0feefb2d184a6d9b9667b2b4498403a5868b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433313"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
 3. Estendere gli strumenti di modellazione usando codice programma. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL.  Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di ricompilare la soluzione.  
+> Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di ricompilare la soluzione.  
   
 ## <a name="customShapes"></a> In questa sezione  
   

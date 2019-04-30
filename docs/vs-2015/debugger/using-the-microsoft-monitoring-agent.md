@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6ea3c9a5ecb0fa10c6b020f3af8a51a65952c9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437716"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Uso di Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
      Assicurarsi di creare questa directory prima di iniziare il monitoraggio. Per evitare il rallentamento dell'app, scegliere una posizione in un disco ad alta velocità locale non troppo attivo.  
   
     > [!IMPORTANT]
-    >  I log IntelliTrace possono contenere dati personali e sensibili. Limitare questa directory solo alle identità in cui devono essere usati i file. Controllare i criteri aziendali sulla privacy.  
+    > I log IntelliTrace possono contenere dati personali e sensibili. Limitare questa directory solo alle identità in cui devono essere usati i file. Controllare i criteri aziendali sulla privacy.  
   
 5. Per eseguire un monitoraggio dettagliato a livello di funzione o per monitorare le applicazioni SharePoint, concedere al pool di applicazioni in cui è ospitata l'applicazione Web o SharePoint le autorizzazioni di lettura e scrittura per la directory dei log IntelliTrace. [D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)  
   
@@ -259,7 +259,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
 3. Copiare il log in una cartella condivisa sicura, quindi aprirlo da un computer con Visual Studio Enterprise o Professional (ma non nelle edizioni Professional o Community).  
   
    > [!IMPORTANT]
-   >  Prestare attenzione quando si condividono i log IntelliTrace perché potrebbero contenere dati personali e sensibili. Assicurarsi che chiunque possa accedere a questi log abbia le autorizzazioni necessarie per esaminare questi dati. Controllare i criteri aziendali sulla privacy.  
+   > Prestare attenzione quando si condividono i log IntelliTrace perché potrebbero contenere dati personali e sensibili. Assicurarsi che chiunque possa accedere a questi log abbia le autorizzazioni necessarie per esaminare questi dati. Controllare i criteri aziendali sulla privacy.  
   
    **Successivo:** [Diagnosticare gli eventi registrati in Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   

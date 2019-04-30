@@ -16,12 +16,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf3e8998abe18a4d40e031b85ffb6683fa62dc7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 105f16c0d9deb8d94a102818c5335af18685c675
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439338"
 ---
 # <a name="call-tree-view"></a>Visualizzazione Albero delle chiamate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,10 +36,10 @@ La visualizzazione Albero delle chiamate consente di visualizzare i percorsi di 
   
  La visualizzazione Albero delle chiamate può essere personalizzata per aggiungere o rimuovere colonne. Fare clic con il pulsante destro del mouse sulla **barra del titolo Nome colonna** e selezionare **Aggiungi/Rimuovi colonne**.  
   
- La visualizzazione Albero delle chiamate può essere configurata per la riduzione del rumore limitando la quantità di dati presentati. Con la riduzione del rumore, i problemi di prestazioni nella visualizzazione sono più evidenti. Quando i problemi di prestazioni sono più facili da trovare anche l'analisi è più semplice. Per altre informazioni, vedere [Procedura: Configurare la riduzione del rumore nelle visualizzazioni report](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
+ La visualizzazione Albero delle chiamate può essere configurata per la riduzione del rumore limitando la quantità di dati presentati. Con la riduzione del rumore, i problemi di prestazioni nella visualizzazione sono più evidenti. Quando i problemi di prestazioni sono più facili da trovare anche l'analisi è più semplice. Per altre informazioni, vedere [Procedura: Configurare la riduzione del rumore nelle visualizzazioni Report](../profiling/how-to-configure-noise-reduction-in-report-views.md).  
   
 > [!NOTE]
->  Se la riduzione del rumore è configurata per visualizzare un avviso quando viene attivata, nel report viene visualizzata una barra informazioni.  
+> Se la riduzione del rumore è configurata per visualizzare un avviso quando viene attivata, nel report viene visualizzata una barra informazioni.  
   
  Per altre informazioni sulle definizioni delle colonne nella visualizzazione Albero delle chiamate, vedere gli argomenti seguenti:  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ba8aadaa55a22c8e8c645866a9163628404407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412674"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Chiamato dal debugger sul frame dello stack corrente quando desidera intercettare l'eccezione corrente.
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  Quando il debugger vuole sapere se è necessario intercettare l'eccezione, viene chiamato questo metodo sull'oggetto stack frame corrente. Questo metodo è responsabile per la gestione di tutti i dettagli dell'eccezione. Se il [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interfaccia non è implementata o `InterceptStackException` metodo restituisce qualsiasi errore, quindi il debugger continua l'elaborazione normale in corso l'eccezione.
 
 > [!NOTE]
->  Le eccezioni possono essere intercettate solo nel codice gestito, vale a dire, quando il programma sottoposto a debug è in esecuzione con il runtime .NET. Naturalmente, è possono implementare gli implementatori del linguaggio di terze parti `InterceptStackException` nei propri motori di debug, se necessario.
+> Le eccezioni possono essere intercettate solo nel codice gestito, vale a dire, quando il programma sottoposto a debug è in esecuzione con il runtime .NET. Naturalmente, è possono implementare gli implementatori del linguaggio di terze parti `InterceptStackException` nei propri motori di debug, se necessario.
 
  Al termine l'intercettazione, un' [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) viene segnalato.
 

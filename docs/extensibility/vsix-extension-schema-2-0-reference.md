@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411132"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Riferimenti su VSIX extension schema 2.0
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e i tipi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non comprende.
 
 > [!IMPORTANT]
->  Visual Studio 2015 è possibile caricare i file VSIX nei formati Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.
+> Visual Studio 2015 è possibile caricare i file VSIX nei formati Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.
 
 ## <a name="package-manifest-schema"></a>Schema del manifesto del pacchetto
  L'elemento radice del file manifesto XML è `<PackageManifest>`. Dispone di un singolo attributo `Version`, ovvero la versione del formato del manifesto. Se vengono apportate modifiche significative al formato, viene modificato il formato della versione. Questo articolo descrive una versione del formato manifesto 2.0, che viene specificato nel manifesto impostando il `Version` attributo il valore della versione = "2.0".

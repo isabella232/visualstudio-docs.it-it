@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437047"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "60112000"
      Per selezionare un controllo diverso, fare clic sulla freccia a discesa accanto all'elemento e selezionare un controllo. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Se si preferisce non visualizzare una determinata colonna o proprietà, espandere l'elemento per visualizzarne i figli. Fare clic sulla freccia giù accanto alla colonna o proprietà che non si desidera visualizzare e quindi fare clic su **None**.
+    > Se si preferisce non visualizzare una determinata colonna o proprietà, espandere l'elemento per visualizzarne i figli. Fare clic sulla freccia giù accanto alla colonna o proprietà che non si desidera visualizzare e quindi fare clic su **None**.
 
 3. Trascinare l'elemento in un contenitore valido nella finestra di progettazione, ad esempio <xref:System.Windows.Controls.Grid>. Per altre informazioni sui contenitori validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ ms.locfileid: "60112000"
 2. Fare clic sulla freccia giù accanto all'elemento e selezionare **dettagli**.
 
     > [!NOTE]
-    >  Se si preferisce non visualizzare una determinata colonna o proprietà, espandere l'elemento per visualizzarne i figli. Fare clic sulla freccia giù accanto alla colonna o proprietà che non si desidera visualizzare e quindi fare clic su **None**.
+    > Se si preferisce non visualizzare una determinata colonna o proprietà, espandere l'elemento per visualizzarne i figli. Fare clic sulla freccia giù accanto alla colonna o proprietà che non si desidera visualizzare e quindi fare clic su **None**.
 
 3. Trascinare l'elemento in un contenitore valido nella finestra di progettazione, ad esempio <xref:System.Windows.Controls.Grid>. Per altre informazioni sui contenitori validi, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ ms.locfileid: "60112000"
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Genera l'errore [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e il codice per associare il controllo ai dati. Per altre informazioni, vedere [WPF di associare controlli ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Se il controllo è già associato a dati, l'associazione dati per il controllo viene reimpostata sull'elemento trascinato nel controllo più di recente.
+    > Se il controllo è già associato a dati, l'associazione dati per il controllo viene reimpostata sull'elemento trascinato nel controllo più di recente.
 
 ## <a name="see-also"></a>Vedere anche
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [creare le tabelle di ricerca nelle applicazioni WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [visualizzare i dati correlati nelle applicazioni WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF di associare controlli a un set di dati](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF di associare controlli a un servizio dati WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba106bd28db63b6215abd02ea00aff0b3c0c00e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432235"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 
@@ -144,7 +144,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
 ```
 
 > [!NOTE]
->  Questo attributo viene posizionato sulla classe del package, non sulla classe del processore di direttiva.
+> Questo attributo viene posizionato sulla classe del package, non sulla classe del processore di direttiva.
 
  Il file .pkgdef sarà generato quando si compila il progetto. Quando si installa il package VS, nel file .pkgdef verrà registrato il processore di direttiva.
 
@@ -156,7 +156,7 @@ Esistono diversi modi di creare un file .vsix. Nella procedura seguente ne viene
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.
 
 > [!CAUTION]
->  Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
+> Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema
 

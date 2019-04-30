@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440940"
 ---
 # <a name="link-model-elements-and-work-items"></a>Collegare elementi di modello ed elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60071863"
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  È necessario usare Team Explorer per creare e aprire i collegamenti. Assicurarsi che il progetto di modello e i diagrammi vengano archiviati nel controllo della versione in modo che altri utenti siano in grado di aprire eventuali diagrammi collegati.  
+> È necessario usare Team Explorer per creare e aprire i collegamenti. Assicurarsi che il progetto di modello e i diagrammi vengano archiviati nel controllo della versione in modo che altri utenti siano in grado di aprire eventuali diagrammi collegati.  
   
  È possibile ad esempio eseguire le attività indicate di seguito.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60071863"
 - Diagrammi. Per selezionare un diagramma, scegliere una parte vuota del diagramma.  
   
 > [!WARNING]
->  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
+> Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
 - [Connettersi a un progetto team](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ ms.locfileid: "60071863"
      In Visual Studio l'elemento del modello viene collegato all'elemento di lavoro. Verrà visualizzata un'icona sull'elemento del modello o nelle sue vicinanze.  
   
 > [!WARNING]
->  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
+> Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
 ## <a name="LinkExisting"></a> Collegare un elemento del modello a un elemento di lavoro esistente  
  Quando si collegano elementi del modello a elementi di lavoro, partire dall'elemento del modello e non dall'elemento di lavoro.  
@@ -123,7 +123,7 @@ ms.locfileid: "60071863"
      A termine, la proprietà **Elementi di lavoro** dell'elemento del modello è associata a un numero maggiore del precedente. Verrà visualizzata anche un'icona accanto o sull'elemento del modello.  
   
 > [!WARNING]
->  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
+> Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
 ## <a name="OpenWorkItem"></a> Visualizza elementi di lavoro collegato a un elemento del modello  
   
@@ -132,7 +132,7 @@ ms.locfileid: "60071863"
 2. Nel diagramma di modellazione o in **Esplora modelli UML**aprire il menu di scelta rapida per l'elemento del modello. Scegliere **Visualizza elementi di lavoro** per visualizzare l'elenco di elementi di lavoro collegati.  
   
     > [!NOTE]
-    >  Vengono visualizzati solo gli elementi di lavoro del server attualmente connesso. Se non viene visualizzato alcun elemento di lavoro, verificare di essere connessi al server corretto in **Team Explorer**.  
+    > Vengono visualizzati solo gli elementi di lavoro del server attualmente connesso. Se non viene visualizzato alcun elemento di lavoro, verificare di essere connessi al server corretto in **Team Explorer**.  
   
 ## <a name="ViewLinkedModels"></a> Visualizzare elementi del modello collegati a un elemento di lavoro  
  È possibile visualizzare elementi e diagrammi di modellazione collegati a un elemento di lavoro in Visual Studio Online e in Team Foundation Server 2012 o versioni successive. Un elemento di lavoro potrebbe essere collegato ad esempio a modelli di classe che mostrano la progettazione di nuove classi da implementare.  
@@ -140,7 +140,7 @@ ms.locfileid: "60071863"
 1. In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi del modello sono collegati all'elemento di lavoro.  
   
     > [!NOTE]
-    >  Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Aprire l'elemento di lavoro e scegliere **Collegamenti**. In **Collegamento modello**aprire il menu di scelta rapida per l'elemento del modello collegato. Scegliere **Apri elemento collegato**.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "60071863"
     2. Nella proprietà **Elementi di lavoro** scegliere il pulsante con i puntini di sospensione **[…]**.  
   
         > [!NOTE]
-        >  Vengono visualizzati solo gli elementi di lavoro sul server corrente. Se l'elenco è vuoto, ma il numero di elementi di lavoro è diverso da zero, assicurarsi di essere connessi al server corretto in **Team Explorer**.  
+        > Vengono visualizzati solo gli elementi di lavoro sul server corrente. Se l'elenco è vuoto, ma il numero di elementi di lavoro è diverso da zero, assicurarsi di essere connessi al server corretto in **Team Explorer**.  
   
 3. In **Rimuovi collegamenti a elementi di lavoro**rimuovere gli elementi selezionati da scollegare. Scegliere **OK**.  
   

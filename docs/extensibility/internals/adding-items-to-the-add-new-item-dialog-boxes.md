@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418683"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, il **AddItemTemplates** sezione contiene il percorso e il nome della directory degli elementi reso disponibile nel **Aggiungi nuovo elemento** vengono inseriti nella finestra di dialogo.
 
 > [!NOTE]
->  La tabella che segue immediatamente il segmento di codice contiene informazioni aggiuntive relative alla voce del Registro di sistema.
+> La tabella che segue immediatamente il segmento di codice contiene informazioni aggiuntive relative alla voce del Registro di sistema.
 
  In questa sezione si trova sotto **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,7 +42,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Determina l'ordine di ordinamento nel nodo della struttura dei file visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo. |
 
 > [!NOTE]
->  I GUID per i tipi di progetto Visual Basic e Visual c# sono i seguenti:
+> I GUID per i tipi di progetto Visual Basic e Visual c# sono i seguenti:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
  Tuttavia, non è includere tutti gli elementi in uno *VSDIR* file. È possibile avere uno *VSDIR* file per ogni elemento nella directory. Per altre informazioni, vedere [file della procedura guidata (con estensione vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) e [i file di descrizione (estensione VSDIR) di modello directory](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  Il *VSDIR* file nelle directory di modello sono facoltativi. Se si desidera inserire un elemento di progetto nella directory e lo visualizza nel **Aggiungi nuovo elemento** della finestra di dialogo è possibile inserire file nella directory di modelli specificata nella **TemplatesDir** istruzione. Il file verrà quindi visualizzato nel riquadro di destra del **Aggiungi nuovo elemento** finestra di dialogo per il progetto. Tuttavia, se si desidera visualizzare un titolo localizzato per il file o un'icona, è necessario includere almeno una *VSDIR* file nella directory di modelli.
+> Il *VSDIR* file nelle directory di modello sono facoltativi. Se si desidera inserire un elemento di progetto nella directory e lo visualizza nel **Aggiungi nuovo elemento** della finestra di dialogo è possibile inserire file nella directory di modelli specificata nella **TemplatesDir** istruzione. Il file verrà quindi visualizzato nel riquadro di destra del **Aggiungi nuovo elemento** finestra di dialogo per il progetto. Tuttavia, se si desidera visualizzare un titolo localizzato per il file o un'icona, è necessario includere almeno una *VSDIR* file nella directory di modelli.
 
 ## <a name="group-project-items"></a>Raggruppare gli elementi di progetto
  Se si desidera contengono gruppi di modelli in cartelle nel **Aggiungi nuovo elemento** struttura ad albero casella di dialogo, è necessario disporre le sottodirectory nella directory radice modello con gli elementi in essi contenuti. Quando la **Aggiungi nuovo elemento** agli utenti verrà visualizzata la finestra di dialogo, verrà inoltre vedere le sottocartelle ed essere in grado di selezionare gli elementi di progetto da esse.

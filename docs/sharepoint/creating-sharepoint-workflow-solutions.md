@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443537"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Creare soluzioni di flusso di lavoro di SharePoint
 
@@ -57,7 +57,7 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
  Dopo aver creato il flusso di lavoro, è possibile modificarne le proprietà nella finestra Proprietà. Sebbene la maggior parte delle proprietà del flusso di lavoro possono essere modificate direttamente nella finestra Proprietà, alcune richiedono fare clic su un pulsante con puntini di sospensione (![ellisse di ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellisse di ASP.NET Mobile Designer")) per modificare i relativi valori. Questo pulsante Riavvia il **Personalizzazione guidata SharePoint**. Dopo aver apportato la proprietà cambia valore, scegliere il **fine** pulsante per renderle effettive.
 
 > [!NOTE]
->  Il **tipo di flusso di lavoro** proprietà è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
+> Il **tipo di flusso di lavoro** proprietà è di sola lettura e non può essere modificata. Se si desidera modificare il tipo di flusso di lavoro, è necessario creare un altro flusso di lavoro.
 
 ## <a name="design-a-sharepoint-workflow"></a>Progettare un flusso di lavoro di SharePoint
  Dopo aver definito tutti i passaggi nel processo di business, usare il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Progettazione flussi di lavoro per la progettazione del flusso di lavoro di SharePoint. Per aprire la finestra di progettazione, fare doppio clic su Workflow1.cs o Workflow1.vb in **Esplora soluzioni**, oppure aprire il menu di scelta rapida per uno di questi file e quindi scegliere **aprire**.
@@ -119,7 +119,7 @@ Per altre informazioni su SharePoint, vedere [Microsoft SharePoint Products and 
   Tra questi, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] include modelli di elementi per i form di associazione e di avvio. Un esempio di un' *form di associazione* è quello che consente all'amministratore di installare il flusso di lavoro immettere i parametri correlati al flusso di lavoro, ad esempio un limite di spesa per un flusso di lavoro di nota spese. Un esempio di un' *form di avvio* è quello che consente all'utente di un flusso di lavoro di spesa di immettere l'importo speso nel flusso di lavoro. Per altre informazioni su questi tipi di form, vedere [SharePoint modelli di elemento di progetto e progetto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Proprietà degli elementi
- È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nell'elenco o raccolta di SharePoint. Il file di codice principale (Workflow1.cs o Workflow1.vb) dichiara un'istanza della classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties`. Usare il `workflowProperties` oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [procedura dettagliata: Creare ed eseguire il debug di una soluzione di flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
+ È anche possibile raccogliere informazioni dagli utenti usando le proprietà di un elemento nell'elenco o raccolta di SharePoint. Il file di codice principale (Workflow1.cs o Workflow1.vb) dichiara un'istanza della classe Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties denominata `workflowProperties`. Usare il `workflowProperties` oggetto per accedere alle proprietà della libreria o dell'elenco nel codice. Per un esempio, vedere [Procedura dettagliata: Creare ed eseguire il debug di una soluzione di flusso di lavoro SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).
 
 ## <a name="debug-a-sharepoint-workflow-template"></a>Eseguire il debug di un modello di flusso di lavoro di SharePoint
  Eseguire il debug di un progetto di flusso di lavoro SharePoint lo stesso quando si esegue il debug di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti basati su Web. Quando si avvia il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vengono utilizzate le impostazioni specificate nella **Personalizzazione guidata SharePoint** per aprire il sito Web di SharePoint appropriato e associare automaticamente il modello di flusso di lavoro con la libreria appropriata o elenco. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Associa anche il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] del debugger per il [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] processo denominato *w3wp.exe*.

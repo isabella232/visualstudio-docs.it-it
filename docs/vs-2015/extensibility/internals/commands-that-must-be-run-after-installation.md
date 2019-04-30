@@ -10,12 +10,12 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8448b00085ab7e7a151c935eee4d8a8b1423bd1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 158119759f8e90161e1f3b5267be498dfc1c9b38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441531"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandi da eseguire dopo l'installazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58969116"
 Se si distribuisce l'estensione tramite un file con estensione msi, è necessario eseguire `devenv /setup` come parte dell'installazione nell'ordine individuare le estensioni di Visual Studio.  
   
 > [!NOTE]
->  Le informazioni contenute in questo argomento si applicano a ricerca di DevEnv con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare DevEnv con versioni successive di Visual Studio, vedere [requisiti di sistema di rilevamento](../../extensibility/internals/detecting-system-requirements.md).  
+> Le informazioni contenute in questo argomento si applicano a ricerca di DevEnv con Visual Studio 2008 e versioni precedenti. Per informazioni su come individuare DevEnv con versioni successive di Visual Studio, vedere [requisiti di sistema di rilevamento](../../extensibility/internals/detecting-system-requirements.md).  
   
 ## <a name="finding-devenvexe"></a>Ricerca devenv.exe  
  È possibile trovare ogni versione devenv.exe dal Registro di sistema i valori necessari [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] scrivere programmi di installazione, usando la tabella RegLocator e AppSearch tabella per archiviare i valori del Registro di sistema come proprietà. Per altre informazioni, vedere [requisiti di sistema di rilevamento](../../extensibility/internals/detecting-system-requirements.md).  
@@ -59,7 +59,7 @@ Se si distribuisce l'estensione tramite un file con estensione msi, è necessari
   
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Righe della tabella CustomAction eseguire devenv.exe  
   
-|Operazione|Tipo|Origine|destinazione|  
+|Operazione|Tipo|Source|destinazione|  
 |------------|----------|------------|------------|  
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|  
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|  
@@ -69,7 +69,7 @@ Se si distribuisce l'estensione tramite un file con estensione msi, è necessari
  Azioni personalizzate devono essere create nella tabella InstallExecuteSequence pianificarli per l'esecuzione durante l'installazione. Usare la proprietà corrispondente in ogni riga della colonna della condizione per evitare che l'azione personalizzata in esecuzione se tale versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] non è installato nel sistema.  
   
 > [!NOTE]
->  `Null` restituiscono proprietà `False` quando utilizzata nelle condizioni.  
+> `Null` restituiscono proprietà `False` quando utilizzata nelle condizioni.  
   
  Il valore della colonna della sequenza per ogni azione personalizzata dipende da altri valori di sequenza nel pacchetto di Windows Installer. I valori di sequenza, verificare che le azioni personalizzate devenv.exe runas vicino possibile a immediatamente prima dell'azione InstallFinalize mentre standard.  
   

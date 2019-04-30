@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426962"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
  Per creare la soluzione che rappresenta l'origine della maggior parte degli esempi in questo argomento, creare un DSL dal **modelli componente** modello di soluzione. che è uno dei modelli standard visualizzati quando si crea una nuova soluzione DSL.  
   
 > [!NOTE]
->  Il modello DSL diagrammi componente non è correlato ai diagrammi componente UML che è possibile creare utilizzando il menu di architettura in Visual Studio. Nel **nuovo progetto** finestra di dialogo espandere **altri tipi di progetto\extensibility** e quindi fare clic su **Domain-Specific Language progettazione**.  
+> Il modello DSL diagrammi componente non è correlato ai diagrammi componente UML che è possibile creare utilizzando il menu di architettura in Visual Studio. Nel **nuovo progetto** finestra di dialogo espandere **altri tipi di progetto\extensibility** e quindi fare clic su **Domain-Specific Language progettazione**.  
   
  Premere F5 e, se non si ha familiarità con questo modello di soluzione, fare delle prove. Si noti in particolare che, per creare le porte, è necessario trascinare uno strumento porta su un componente e che è possibile collegare le porte.  
   
@@ -133,7 +133,7 @@ Una soluzione di linguaggio specifico di dominio (DSL) genera un'API che è poss
   Classe che rappresenta il modello di dominio. Deriva da <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  È diversa dalla classe radice del modello.  
+> È diversa dalla classe radice del modello.  
   
  Le chiusure di copie ed eliminazioni definiscono quali altri elementi devono essere inclusi quando un elemento viene copiato o eliminato. È possibile controllare questo comportamento impostando il **propaga copia** e **Propaga eliminazione** proprietà dei ruoli su ciascun lato di ogni relazione. Per determinare i valori in modo dinamico, è possibile scrivere codice per eseguire l'override dei metodi delle classi delle chiusure. Per altre informazioni, vedere [Procedura: Copia e Incolla il comportamento del programma: reindirizzamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Per personalizzare questo file, modificare il file `.tt`.  
   
 > [!WARNING]
->  Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e verificare che il **Includi in VSIX** è di proprietà `True`.  
+> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e verificare che il **Includi in VSIX** è di proprietà `True`.  
   
  Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   

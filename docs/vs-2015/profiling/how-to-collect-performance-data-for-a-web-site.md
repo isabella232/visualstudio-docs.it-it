@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432793"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedura: Raccogliere dati sulle prestazioni per un sito Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060553"
 Per raccogliere dati sulle prestazioni di un'applicazione Web di **, è possibile usare la** Creazione guidata sessione di prestazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . È possibile profilare un'applicazione Web aperta in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oppure un sito Web di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] disponibile nel computer locale e non aperto nell'IDE di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  La **Creazione guidata sessione di prestazioni** consente di aggiungere dati di interazione tra livelli (TIP), dati relativi alle prestazioni di JScript o entrambi ai dati di profilatura raccolti. L'opzione TIP raccoglie dati dai processi sul lato server. L'opzione di profilatura JScript raccoglie dati da script in esecuzione in un sito Web locale o remoto. Nella maggior parte dei casi, è consigliabile scegliere solo una delle opzioni.  
+> La **Creazione guidata sessione di prestazioni** consente di aggiungere dati di interazione tra livelli (TIP), dati relativi alle prestazioni di JScript o entrambi ai dati di profilatura raccolti. L'opzione TIP raccoglie dati dai processi sul lato server. L'opzione di profilatura JScript raccoglie dati da script in esecuzione in un sito Web locale o remoto. Nella maggior parte dei casi, è consigliabile scegliere solo una delle opzioni.  
   
  In base alle autorizzazioni di accesso a livello utente che un amministratore ha reso disponibili, un singolo utente può avere o meno le autorizzazioni di sicurezza necessarie per creare una sessione del profiler sul computer che ospita il processo ASP.NET. Gli esempi seguenti illustrano le possibili differenze tra i diversi tipi di utenti:  
   

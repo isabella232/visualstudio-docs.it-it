@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433577"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procedura: Creare un set di regole per l'attività PolicyActivity (legacy)
 In questo argomento viene descritto come creare un set di regole per PolicyActivity usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy che fa riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -28,7 +28,7 @@ In questo argomento viene descritto come creare un set di regole per PolicyActiv
  Dopo avere trascinato un **criterio** elemento di attività dalle **della casella degli strumenti** all'area di progettazione del flusso di lavoro, è consigliabile selezionare una regola esistente o creare una nuovo set di regole per il [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) attività. Si seleziona una regola esistente impostata usando il [selezionare Imposta finestra di dialogo regola (Legacy)](../workflow-designer/select-rule-set-dialog-box-legacy.md) e crei i set di regole mediante il [impostare Editor finestra di dialogo regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  È possibile aprire il [impostare Editor finestra di dialogo regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) finestra di dialogo direttamente facendo doppio clic su un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) attività nell'area di progettazione del flusso di lavoro.  
+> È possibile aprire il [impostare Editor finestra di dialogo regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) finestra di dialogo direttamente facendo doppio clic su un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) attività nell'area di progettazione del flusso di lavoro.  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Per selezionare o creare un insieme di regole per un'attività di Policy  
   

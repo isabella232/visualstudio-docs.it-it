@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 641182fb3896bea9d1944aeaaaab2d68f285f95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7f3fd2895b0a10d04cded23af5e5953e7a1a340f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430693"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_arrayIndexType ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
  Alcuni linguaggi possono specificare il tipo utilizzato come indice per una matrice. Il simbolo restituito da questo metodo specifica tale tipo.  

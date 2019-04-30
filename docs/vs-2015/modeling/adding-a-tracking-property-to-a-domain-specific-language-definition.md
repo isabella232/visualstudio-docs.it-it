@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432396"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
  Implementare il `GetCustomProperties` metodo per il descrittore di tipi di `ExampleModel` della classe di dominio.  
   
 > [!NOTE]
->  Il codice il DSL generato dagli strumenti per il descrittore di tipi personalizzato `ExampleModel` chiamate `GetCustomProperties`; tuttavia, gli strumenti DSL non generano codice che implementa il metodo.  
+> Il codice il DSL generato dagli strumenti per il descrittore di tipi personalizzato `ExampleModel` chiamate `GetCustomProperties`; tuttavia, gli strumenti DSL non generano codice che implementa il metodo.  
   
  Definizione di questo metodo crea la tracciabilità descrittore di proprietà per la proprietà di rilevamento di Namespace. Fornisce attributi per la proprietà di rilevamento consente inoltre il **proprietà** finestra per visualizzare correttamente la proprietà.  
   
@@ -344,7 +344,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
  Implementare il `GetCustomElementsValue` metodo per il `ExampleModel` della classe di dominio.  
   
 > [!NOTE]
->  Il codice che generano gli strumenti DSL per `ExampleModel` chiamate `GetCustomElementsValue`; tuttavia, gli strumenti DSL non generano codice che implementa il metodo.  
+> Il codice che generano gli strumenti DSL per `ExampleModel` chiamate `GetCustomElementsValue`; tuttavia, gli strumenti DSL non generano codice che implementa il metodo.  
   
  Che definisce il `GetCustomElementsValue` metodo fornisce la logica per la proprietà CustomElements calcolato di `ExampleModel`. Questo metodo conta il numero di `ExampleElement` classi di dominio che dispongono di una proprietà che ha un valore utente aggiornato e restituisce una stringa che rappresenta questo conteggio come una percentuale degli elementi totali nel modello di rilevamento di Namespace.  
   
@@ -425,7 +425,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
  Inoltre, aggiungere spazio di archiviazione per e metodi per ottenere e impostare, la proprietà di archiviazione personalizzati Namespace del `ExampleElement` della classe di dominio.  
   
 > [!NOTE]
->  Il codice il DSL generato dagli strumenti per `ExampleModel` chiamate get e set di metodi; tuttavia, gli strumenti DSL non generano codice che implementa i metodi.  
+> Il codice il DSL generato dagli strumenti per `ExampleModel` chiamate get e set di metodi; tuttavia, gli strumenti DSL non generano codice che implementa i metodi.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Per aggiungere il metodo per il descrittore di tipo personalizzato  
   
@@ -591,7 +591,7 @@ Questa procedura dettagliata illustra come aggiungere una proprietà di rilevame
  Aggiungere codice per supportare il comportamento postcaricamento personalizzato per la serializzazione XML.  
   
 > [!NOTE]
->  Il codice che gli strumenti DSL generare chiamate i `OnPostLoadModel` e `OnPostLoadModelAndDiagram` metodi; tuttavia, gli strumenti DSL non generano codice che implementa questi metodi.  
+> Il codice che gli strumenti DSL generare chiamate i `OnPostLoadModel` e `OnPostLoadModelAndDiagram` metodi; tuttavia, gli strumenti DSL non generano codice che implementa questi metodi.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Per aggiungere il codice per supportare il comportamento postcaricamento personalizzato  
   

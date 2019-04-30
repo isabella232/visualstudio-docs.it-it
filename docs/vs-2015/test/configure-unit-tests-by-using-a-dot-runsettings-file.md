@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442784"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
  Se non si vogliono eseguire configurazioni particolari, non sarà necessario alcun file di tipo *.runsettings. L'opzione più frequente consiste nel personalizzare il [code coverage](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
->  **File con estensione runsettings e testsettings**  
+> **File con estensione runsettings e testsettings**  
 >   
->  Sono disponibili due tipi di file per la configurazione dei test. I file di tipo *.runsettings sono usati per gli unit test. I file con estensione \*testsettings sono usati per [test in ambiente lab](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), test relativi a caricamento e prestazioni Web e per la personalizzazione di alcuni tipi di adattatori di dati di diagnostica, ad esempio IntelliTrace e gli adattatori di log eventi.  
+> Sono disponibili due tipi di file per la configurazione dei test. I file di tipo *.runsettings sono usati per gli unit test. I file con estensione \*testsettings sono usati per [test in ambiente lab](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), test relativi a caricamento e prestazioni Web e per la personalizzazione di alcuni tipi di adattatori di dati di diagnostica, ad esempio IntelliTrace e gli adattatori di log eventi.  
 >   
->  Nelle edizioni precedenti di Visual Studio, fino alla 2010, la personalizzazione degli unit test viene eseguita con file di tipo *.testsettings. È ancora possibile usare questa procedura, ma l'esecuzione dei test sarà più lenta rispetto all'uso delle configurazioni equivalenti in un file con estensione \*runsettings.  
+> Nelle edizioni precedenti di Visual Studio, fino alla 2010, la personalizzazione degli unit test viene eseguita con file di tipo *.testsettings. È ancora possibile usare questa procedura, ma l'esecuzione dei test sarà più lenta rispetto all'uso delle configurazioni equivalenti in un file con estensione \*runsettings.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizzazione dei test con un file con estensione runsettings  
   

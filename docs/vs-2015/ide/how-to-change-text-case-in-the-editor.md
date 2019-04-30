@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439250"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedura: Modificare maiuscole/minuscole nell'Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060319"
 È possibile usare i comandi di menu o i tasti di scelta rapida per convertire tutti i caratteri del testo selezionato in lettere maiuscole o minuscole.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella **Guida** a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Routine  
   
@@ -42,7 +42,7 @@ ms.locfileid: "60060319"
      Per convertire tutti i caratteri del testo in lettere minuscole, scegliere **Minuscole** oppure premere **CTRL**+**U**.  
   
     > [!TIP]
-    >  Per ripristinare l'uso di maiuscole e minuscole precedente la modifica, scegliere **Annulla** dal menu **Modifica**.  
+    > Per ripristinare l'uso di maiuscole e minuscole precedente la modifica, scegliere **Annulla** dal menu **Modifica**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing the Editor](../ide/customizing-the-editor.md)  (Personalizzazione dell'editor)  

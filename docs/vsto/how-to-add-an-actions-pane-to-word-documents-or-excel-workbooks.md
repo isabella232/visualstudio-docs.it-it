@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427901"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: Aggiungere un riquadro Azioni ai documenti Word o alle cartelle di lavoro Excel
   Per aggiungere un riquadro azioni a un documento di Microsoft Office Word o una cartella di lavoro di Microsoft Excel, creare innanzitutto un controllo utente Windows Form. Quindi, aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.
@@ -28,7 +28,7 @@ ms.locfileid: "60085844"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Creazione del controllo utente
  La procedura seguente illustra come creare un controllo utente o un progetto di Excel. Aggiunge anche un pulsante al controllo utente che scrive il testo nel documento o cartella di lavoro quando viene selezionato.
@@ -42,12 +42,12 @@ ms.locfileid: "60085844"
 3. Nel **Aggiungi nuovo elemento** finestra di dialogo **controllo del riquadro azioni**, denominarlo **HelloControl**e fare clic su **Aggiungi**.
 
     > [!NOTE]
-    >  In alternativa, è possibile aggiungere un **controllo utente** elemento al progetto. Le classi generate per il **controllo riquadro azioni** e **controllo utente** gli elementi sono funzionalmente equivalenti.
+    > In alternativa, è possibile aggiungere un **controllo utente** elemento al progetto. Le classi generate per il **controllo riquadro azioni** e **controllo utente** gli elementi sono funzionalmente equivalenti.
 
 4. Dal **Windows Forms** scheda della finestra di **della casella degli strumenti,** trascinare un **pulsante** controllo nel controllo.
 
     > [!NOTE]
-    >  Se il controllo non è visibile nella finestra di progettazione, fare doppio clic su **HelloControl** nelle **Esplora soluzioni**.
+    > Se il controllo non è visibile nella finestra di progettazione, fare doppio clic su **HelloControl** nelle **Esplora soluzioni**.
 
 5. Aggiungere il codice per il <xref:System.Windows.Forms.Control.Click> gestore dell'evento del pulsante. Nell'esempio seguente viene illustrato il codice per un documento di Microsoft Office Word.
 

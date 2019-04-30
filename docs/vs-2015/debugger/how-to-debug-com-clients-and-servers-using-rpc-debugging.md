@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384041"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procedura: Eseguire il debug di client e server COM usando il debug RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ ms.locfileid: "60064960"
 4. Selezionare la casella di controllo **Debug RPC**.  
   
     > [!NOTE]
-    >  Per eseguire il debug delle chiamate RPC, è necessario disporre dei privilegi di tipo Administrator o Power User.  
+    > Per eseguire il debug delle chiamate RPC, è necessario disporre dei privilegi di tipo Administrator o Power User.  
   
     > [!NOTE]
-    >  L'esecuzione di chiamate RPC a un server remoto che esegue Microsoft Windows Vista funzionerà solo se un debugger nativo è connesso al server remoto. In caso contrario, la chiamata RPC non verrà eseguita senza restituire alcun messaggio di errore oppure verrà completata, ma non funzionerà.  
+    > L'esecuzione di chiamate RPC a un server remoto che esegue Microsoft Windows Vista funzionerà solo se un debugger nativo è connesso al server remoto. In caso contrario, la chiamata RPC non verrà eseguita senza restituire alcun messaggio di errore oppure verrà completata, ma non funzionerà.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug dei server e dei contenitori COM](../debugger/com-server-and-container-debugging.md)   

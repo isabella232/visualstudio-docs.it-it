@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427392"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procedura: Importare una pagina master o un tema
   È possibile assegnare le pagine nel sito di SharePoint un aspetto coerente creando e usando i temi e le pagine master. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] non fornisce modelli per questi elementi, ma è possibile crearli in SharePoint Designer e quindi importarli in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Per altre informazioni, vedere [blocco predefinito: Interfaccia utente e le pagine](http://go.microsoft.com/fwlink/?LinkID=182095) del sito Web Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081906"
 8. Se si aggiunge una pagina master, modificare relativi **risoluzione dei conflitti di distribuzione** se si imposta su **automatica** nelle proprietà del modulo.
 
     > [!NOTE]
-    >  Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Se il nome della pagina master è identico al nome di una pagina master esistente che è contrassegnata come pagina Master predefinita o pagina Master personalizzata, possono verificarsi errori. Per informazioni su come risolvere questo problema, vedere [procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. Nel modulo, aprire *Elements*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081906"
      Un valore pari **Web** significa che la pagina master si applica solo al sito Web che è già specificato nel progetto. Un valore pari **sito** significa che la pagina master si applica alla raccolta di siti corrente, che include tutti i siti secondari e web radice. Gli altri valori non sono applicabili.
 
     > [!NOTE]
-    >  Poiché i temi si applicano solo a livello di raccolta siti, è consigliabile non impostare l'ambito di un tema su qualsiasi elemento diverso da **sito**. Possono verificarsi errori se viene usato un tema in un sito secondario.
+    > Poiché i temi si applicano solo a livello di raccolta siti, è consigliabile non impostare l'ambito di un tema su qualsiasi elemento diverso da **sito**. Possono verificarsi errori se viene usato un tema in un sito secondario.
 
 12. Nella barra dei menu, scegliere **compilare** > **Distribuisci soluzione**.
 

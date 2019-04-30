@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e46a74651a838a2f9badfc8b9d43d00250ea1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 68ed49b2b22a8302fad0355dde3f937f6b67794b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443928"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia di un pacchetto VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Un pacchetto VSIX non è un file con estensione VSIX che contiene uno o più est
  Il formato di pacchetto VSIX conforme allo standard Open Packaging Conventions (OPC). Il pacchetto contiene file binari e i file di supporto, insieme a un file [Content_Types] XML e un'estensione VSIX file manifesto. Un pacchetto VSIX può contenere l'output di più progetti, o anche più pacchetti che hanno i propri manifesti.  
   
 > [!NOTE]
->  I nomi dei file inclusi nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> I nomi dei file inclusi nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 ## <a name="the-vsix-manifest"></a>Il manifesto VSIX  
  Il manifesto VSIX contiene informazioni sulle estensioni da installare e segue lo Schema VSX. Per altre informazioni, vedere [riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Per un esempio di manifesto VSIX, vedere [elemento PackageManifest (elemento radice, Schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  

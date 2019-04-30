@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442093"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulatore di Visual Studio per Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ L’Emulatore di Visual Studio per Android è un’applicazione desktop che emul
  È possibile installare l'emulatore di Visual Studio per Android usando la funzionalità Installazione applicazioni del Pannello di controllo.  
   
 > [!NOTE]
->  La disinstallazione di Visual Studio non comporta la disinstallazione dell'emulatore. È necessario disinstallare l'emulatore separatamente.  
+> La disinstallazione di Visual Studio non comporta la disinstallazione dell'emulatore. È necessario disinstallare l'emulatore separatamente.  
   
  Quando si disinstalla l'emulatore di Visual Studio per Android, le schede Ethernet Hyper-V virtuali creati per utilizzare l'emulatore non vengono rimossi automaticamente. È possibile rimuovere manualmente queste schede virtuali (se non sono in uso) aprendo la console di gestione di Hyper-V, selezionando una delle immagini VHD dell'emulatore, scegliendo la scheda Rete e quindi **Rimuovi** per ognuna delle opzioni visualizzate nella scheda.  
   

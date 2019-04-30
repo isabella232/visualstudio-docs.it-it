@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433476"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 - Per creare siti Web e app Web, [visitare il sito ASP.NET](http://www.asp.net/get-started/websites).
 
   > [!NOTE]
-  >  È possibile creare un sito Web ASP.NET vuoto e usarlo per la programmazione HTML, CSS e JavaScript. Il file Webconfig fornito da ASP.NET consente il debug in Visual Studio (o è possibile usare gli strumenti F12 quando si esegue l'app).
+  > È possibile creare un sito Web ASP.NET vuoto e usarlo per la programmazione HTML, CSS e JavaScript. Il file Webconfig fornito da ASP.NET consente il debug in Visual Studio (o è possibile usare gli strumenti F12 quando si esegue l'app).
 
   L'editor JavaScript in Visual Studio fornisce il supporto IntelliSense. Per altre informazioni, vedere [IntelliSense per JavaScript](../ide/javascript-intellisense.md).
 
 ## <a name="whats-new-in-javascript"></a>Novità in JavaScript
  Nuove funzionalità per JavaScript sono elencate nella tabella seguente.
 
-|Funzionalità|Description|
+|Funzionalità|Descrizione|
 |-------------|-----------------|
 |Classi|La nuova sintassi supporta la dichiarazione delle [classi](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Suggerimenti|I [suggerimenti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) consentono una codifica asincrona più semplice e chiara. I costruttori di suggerimenti sono supportati, con i metodi di utilità `all` e `race`.|
-|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:** i generatori non sono ancora supportati.|
+|Iterators|Ora è possibile scorrere gli oggetti iterabili (tra cui matrici, oggetti di tipo matrice e iteratori), richiamando un hook di iterazione personalizzato con istruzioni da eseguire per il valore di ogni singola proprietà. Per altre informazioni, vedere [Iteratori e Generatori](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Nota:**  I generatori non sono ancora supportati.|
 |Funzioni freccia|La funzione freccia (=>) fornisce una sintassi abbreviata per la parola chiave `function` che offre un'associazione `this` lessicale.|
 |Nuovi metodi per gli oggetti predefiniti|Gli oggetti predefiniti [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) includono diverse nuove proprietà e funzioni di utilità per la modifica e il controllo dei dati.|
 |Miglioramenti dei valori letterali di oggetto|Gli oggetti ora supportano proprietà calcolate, definizioni di metodo concise e sintassi abbreviata per le proprietà il cui valore viene inizializzato su una variabile con lo stesso nome. Per altre informazioni, vedere [Creazione di oggetti](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

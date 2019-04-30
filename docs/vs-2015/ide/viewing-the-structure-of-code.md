@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443203"
 ---
 # <a name="viewing-the-structure-of-code"></a>Visualizzazione della struttura del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60115068"
  Se si dispone di Visual Studio Enterprise, è possibile usare mappe di codice per visualizzare la struttura del codice e le relative dipendenze attraverso l'intera soluzione ed eseguire il drill-down nelle parti del codice che interessano. Per altre informazioni, vedere [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md) (Eseguire il mapping delle dipendenze nelle soluzioni).  
   
 > [!NOTE]
->  L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.  
+> L'edizione di Visual Studio e le impostazioni in uso possono influire sulle funzionalità nell'IDE, che potrebbero essere diverse da quelle descritte in questo argomento.  
   
 ## <a name="BKMK_ClassView"></a> Visualizzazione classi (Visual Basic, C#, C++)  
  **Visualizzazione classi** viene visualizzato come parte di **Esplora soluzioni** nonché in una finestra separata. La finestra **Visualizzazione classi** visualizza gli elementi di un'applicazione. Nel riquadro superiore vengono visualizzati spazi dei nomi, tipi, enumerazioni, interfacce e classi e nel riquadro inferiore vengono visualizzati i membri che appartengono al tipo selezionato nel riquadro superiore. Tramite questa finestra è possibile passare alle definizioni dei membri nel codice sorgente (o il **Visualizzatore oggetti** se l'elemento è definito all'esterno della soluzione).  

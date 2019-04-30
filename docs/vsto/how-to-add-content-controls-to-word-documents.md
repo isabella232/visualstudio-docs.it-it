@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427613"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procedura: Aggiungere contenuto controlli ai documenti di Word
   Nei progetti di Word a livello di documento, è possibile aggiungere controlli contenuto al documento nel progetto in fase di progettazione o in fase di esecuzione. Nei progetti di componente aggiuntivo VSTO per Word, è possibile aggiungere controlli contenuto a qualsiasi documento aperto in fase di esecuzione.
@@ -78,10 +78,10 @@ ms.locfileid: "60080411"
     - Trascinare un controllo contenuto dalla **Casella degli strumenti** nel documento. Il controllo contenuto viene aggiunto in corrispondenza della selezione corrente nel documento, non in corrispondenza della posizione del puntatore del mouse.
 
 > [!NOTE]
->  Non è possibile aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> usando la **Casella degli strumenti**. È possibile aggiungere solo un <xref:Microsoft.Office.Tools.Word.GroupContentControl> in Word o in fase di esecuzione.
+> Non è possibile aggiungere un oggetto <xref:Microsoft.Office.Tools.Word.GroupContentControl> usando la **Casella degli strumenti**. È possibile aggiungere solo un <xref:Microsoft.Office.Tools.Word.GroupContentControl> in Word o in fase di esecuzione.
 
 > [!NOTE]
->  Visual Studio non fornisce un controllo contenuto casella di controllo nella casella degli strumenti. Per aggiungere un controllo contenuto casella di controllo al documento, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> a livello di codice. Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
+> Visual Studio non fornisce un controllo contenuto casella di controllo nella casella degli strumenti. Per aggiungere un controllo contenuto casella di controllo al documento, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> a livello di codice. Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Per aggiungere un controllo contenuto a un documento in Word
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080411"
 2. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
     > [!NOTE]
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Nel gruppo **Controlli** fare clic sull'icona del controllo contenuto che si desidera aggiungere.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080411"
   I controlli contenuto creati dinamicamente non vengono salvati in modo permanente nel documento quando questo viene chiuso. Tuttavia, un controllo contenuto nativo rimane nel documento. È possibile ricreare un controllo contenuto basato su un controllo contenuto nativo alla successiva apertura del documento. Per altre informazioni, vedere [aggiungere controlli ai documenti di Office in fase di esecuzione](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Per aggiungere un controllo contenuto casella di controllo a un documento in un progetto di Word 2010, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
+> Per aggiungere un controllo contenuto casella di controllo a un documento in un progetto di Word 2010, è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Per aggiungere un controllo contenuto in corrispondenza della selezione corrente
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080411"
   Per altre informazioni sulla generazione di elementi host nei progetti di componente aggiuntivo VSTO, vedere [estendere documenti Word e cartelle di lavoro di Excel in componenti aggiuntivi VSTO in fase di esecuzione](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Per aggiungere un controllo contenuto casella di controllo a un documento è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
+> Per aggiungere un controllo contenuto casella di controllo a un documento è necessario creare un oggetto <xref:Microsoft.Office.Tools.Word.ContentControl> . Per altre informazioni, vedere [dei controlli contenuto](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Per aggiungere un controllo contenuto in corrispondenza della selezione corrente
 

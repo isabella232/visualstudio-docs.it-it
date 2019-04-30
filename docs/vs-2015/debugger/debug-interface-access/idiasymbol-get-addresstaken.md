@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfb9dddb65cc565fe927c6937021cdce536d31f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: db28ad7fda7224c81bbf5bf4bfa772f6eaaa9800
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439425"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_addressTaken ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio riportato di seguito `B` riferimenti `A`. Pertanto, di simboli `A`del `get_addressTaken` restituzione del metodo `TRUE`.  

@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425502"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107073"
 Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio dei dati da un form a un altro. Usa le tabelle customers e orders di Northwind, un unico modulo consente agli utenti di selezionare un cliente e un secondo form vengono visualizzati gli ordini del cliente selezionato. Questa procedura dettagliata viene illustrato come creare un metodo nel secondo form che riceve i dati del primo form.  
   
 > [!NOTE]
->  Questa procedura dettagliata illustra solo un modo per passare dati tra i form. Sono disponibili altre opzioni per passare dati a un form, inclusa la creazione di un secondo costruttore per la ricezione di dati, o la creazione di una proprietà pubblica che può essere impostata con i dati del primo form.  
+> Questa procedura dettagliata illustra solo un modo per passare dati tra i form. Sono disponibili altre opzioni per passare dati a un form, inclusa la creazione di un secondo costruttore per la ricezione di dati, o la creazione di una proprietà pubblica che può essere impostata con i dati del primo form.  
   
  Le attività illustrate nella procedura dettagliata sono le seguenti:  
   
@@ -142,7 +142,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
     ```  
   
     > [!NOTE]
-    >  Verificare che la sintassi dei parametri sia corretta per il database. In Microsoft Access, ad esempio, la clausola WHERE presenta la seguente sintassi: `WHERE CustomerID = ?`.  
+    > Verificare che la sintassi dei parametri sia corretta per il database. In Microsoft Access, ad esempio, la clausola WHERE presenta la seguente sintassi: `WHERE CustomerID = ?`.  
   
 6. Scegliere **Avanti**.  
   

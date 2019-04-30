@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429130"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
      È necessario firmare la distribuzione con un certificato Authenticode. È possibile generare un certificato di test con gli strumenti di Visual Studio, MageUI.exe, o MakeCert.exe e Pvk2Pfx.exe oppure è possibile ottenere un certificato da un'autorità di certificazione (CA). Se si sceglie di usare la distribuzione di applicazioni attendibili, è anche necessario eseguire un'unica installazione del certificato in tutti i computer client. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  È anche possibile firmare la distribuzione con un certificato CNG che è possibile ottenere da un'autorità di certificazione.  
+    > È anche possibile firmare la distribuzione con un certificato CNG che è possibile ottenere da un'autorità di certificazione.  
   
 - Assicurarsi che l'applicazione non dispone di un manifesto con le informazioni di controllo dell'account utente.  
   
@@ -76,7 +76,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
 2. Nella directory di distribuzione che appena creata, creare una sottodirectory della versione. Se questa è la prima volta che si sta distribuendo l'applicazione, assegnare un nome nella sottodirectory della versione **1.0.0.0**.  
   
     > [!NOTE]
-    >  La versione della distribuzione può essere distinta da quella dell'applicazione.  
+    > La versione della distribuzione può essere distinta da quella dell'applicazione.  
   
 3. Copiare tutti i file dell'applicazione nella sottodirectory della versione, inclusi file eseguibili, gli assembly, le risorse e i file di dati. Se necessario, è possibile creare ulteriori sottodirectory che contengono i file aggiuntivi.  
   
@@ -89,7 +89,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
     ```  
   
     > [!NOTE]
-    >  Assicurarsi di includere il punto (.) dopo il `-FromDirectory` opzione, che indica la directory corrente. Se non si include il punto, è necessario specificare il percorso ai file dell'applicazione.  
+    > Assicurarsi di includere il punto (.) dopo il `-FromDirectory` opzione, che indica la directory corrente. Se non si include il punto, è necessario specificare il percorso ai file dell'applicazione.  
   
 6. Firmare il manifesto dell'applicazione con il certificato Authenticode. Sostituire *mycert. pfx* con il percorso al file del certificato. Sostituire *passwd* con la password per il file del certificato.  
   
@@ -134,7 +134,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
 2. Nella directory di distribuzione che appena creata, creare una sottodirectory della versione. Se questa è la prima volta che si sta distribuendo l'applicazione, assegnare un nome nella sottodirectory della versione **1.0.0.0**.  
   
     > [!NOTE]
-    >  La versione della distribuzione è probabilmente diverso dalla versione dell'applicazione.  
+    > La versione della distribuzione è probabilmente diverso dalla versione dell'applicazione.  
   
 3. Copiare tutti i file dell'applicazione nella sottodirectory della versione, inclusi file eseguibili, gli assembly, le risorse e i file di dati. Se necessario, è possibile creare ulteriori sottodirectory che contengono i file aggiuntivi.  
   

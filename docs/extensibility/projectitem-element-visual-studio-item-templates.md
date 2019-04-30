@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1d09982b721e720301493fd062056cbf8d6cf8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 0a853deb99314711917c9db549bc28dc447e3a32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434826"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Elemento ProjectItem (modelli di elemento di Visual Studio)
 Specifica un file che viene incluso nel modello di elemento.
 
 > [!NOTE]
->  Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [elemento ProjectItem (modelli di progetto di Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
+> Il `ProjectItem` elemento accetta attributi diversi a seconda che il modello sia per un progetto o un elemento. Questo argomento viene illustrato il `ProjectItem` elemento per elemento. Per una spiegazione delle `ProjectItem` (elemento) per i modelli di progetto, vedere [elemento ProjectItem (modelli di progetto di Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
 
  \<VSTemplate > \<TemplateContent > \<ProjectItem >
 

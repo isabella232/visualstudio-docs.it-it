@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435439"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerazioni sulle soluzioni create mediante sandbox
   *Soluzioni create mediante sandbox* sono una funzionalità di Microsoft SharePoint 2010 che consente agli utenti di raccolta siti caricare le proprie soluzioni di codice personalizzato. Una soluzione creata mediante sandbox comune è utenti di caricare le proprie Web part.
@@ -34,7 +34,7 @@ ms.locfileid: "56621695"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] supporta soluzioni create mediante sandbox tramite una proprietà del progetto booleano chiamate *soluzione creata mediante sandbox*. Questa proprietà può essere impostata in qualsiasi momento nel progetto, o può essere specificato quando si crea il progetto nel **Personalizzazione guidata SharePoint**.
 
 > [!NOTE]
->  Modifica il *soluzione creata mediante sandbox* proprietà di un progetto dopo la creazione può causare errori di convalida.
+> Modifica il *soluzione creata mediante sandbox* proprietà di un progetto dopo la creazione può causare errori di convalida.
 
  La soluzione viene considerata una soluzione con ambito farm se la *soluzione creata mediante sandbox* è impostata su **false** o si sceglie il **Distribuisci come soluzione farm** opzione. Tuttavia, la soluzione viene trattata in modo diverso da una soluzione farm se la *soluzione creata mediante sandbox* è impostata su **true** o si sceglie il **Distribuisci come soluzione creata mediante sandbox** opzione della procedura guidata.
 
@@ -131,7 +131,7 @@ ms.locfileid: "56621695"
 
 - Funzionalità con ambito farm
 
-- elemento `HideCustomAction`
+- Elemento `HideCustomAction`
 
 - Funzionalità con ambito di applicazione Web
 

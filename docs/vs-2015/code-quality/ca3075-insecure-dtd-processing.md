@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425430"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "58967691"
 - Assicurarsi che il metodo Load() accetti un'istanza di XmlReader ovunque venga usato InnerXml.
 
 > [!NOTE]
->  Questa regola potrebbe segnalare dei falsi positivi in alcune istanze valide di XmlSecureResolver. Questo problema dovrebbe essere risolto per la metà del 2016.
+> Questa regola potrebbe segnalare dei falsi positivi in alcune istanze valide di XmlSecureResolver. Questo problema dovrebbe essere risolto per la metà del 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  A meno che non si abbia la certezza che l'input provenga da un'origine attendibile, non escludere una regola da questo avviso.

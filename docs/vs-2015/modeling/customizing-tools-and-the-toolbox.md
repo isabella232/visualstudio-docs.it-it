@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433205"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizzazione di strumenti e della casella degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - Eliminare schede e strumenti.  
   
 > [!IMPORTANT]
->  Per aggiungere o incollare elementi in DSL Explorer, fare clic con il pulsante destro del mouse sul nodo padre del padre del nuovo nodo. Ad esempio, per aggiungere uno strumento, pulsante destro del mouse della scheda e non il **strumenti** nodo. Per aggiungere una scheda, fare doppio clic il **Editor** nodo.  
+> Per aggiungere o incollare elementi in DSL Explorer, fare clic con il pulsante destro del mouse sul nodo padre del padre del nuovo nodo. Ad esempio, per aggiungere uno strumento, pulsante destro del mouse della scheda e non il **strumenti** nodo. Per aggiungere una scheda, fare doppio clic il **Editor** nodo.  
   
  Il **icona casella degli strumenti** proprietà di ogni strumento fa riferimento a un file bitmap di 16x16. Questi file vengono in genere conservati **Dsl\Resources** cartella.  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Per implementare queste personalizzazioni, è necessario fornire codice. Per informazioni sul codice da fornire, selezionare una delle caselle di controllo, fare clic su Trasforma tutti i modelli e quindi compilare la soluzione. Verrà visualizzato un report degli errori. Fare doppio clic sul report degli errori per visualizzare un commento che indica il codice da aggiungere.  
   
 > [!NOTE]
->  Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).  
+> Per aggiungere il codice personalizzato, creare una definizione di classe parziale in un file di codice separato dai file di codice nelle cartelle GeneratedCode. Per non perdere il lavoro svolto, non modificare i file di codice generati. Per altre informazioni, vedere [override ed estensione delle classi generate](../modeling/overriding-and-extending-the-generated-classes.md).  
   
 #### <a name="creating-custom-connection-code"></a>Creazione di codice di connessione personalizzato  
  Ogni collegamento direttiva di connessione a, il **direttive di ruolo di origine** scheda definisce da quali tipi, è possibile trascinare. Analogamente, il **direttive di ruolo di destinazione** scheda definisce a quali tipi, è possibile trascinare. Per ogni tipo, è inoltre possibile specificare se consentire la connessione (per direttiva di connessione di collegamento) impostando il **accettazione personalizzata** flag e quindi specificando il codice aggiuntivo.  

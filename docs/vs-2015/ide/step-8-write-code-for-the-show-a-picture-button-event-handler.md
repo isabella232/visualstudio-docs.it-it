@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d0eb491a2dbe0b6fc290cefb665bcb931f8a1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428602"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Codice Visual C#
     3. Digitare un punto (`.`). Poiché è stato digitato un punto subito dopo **openFileDialog1**, viene visualizzata una finestra di **IntelliSense** contenente tutte le proprietà e i metodi del componente **OpenFileDialog**. Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie la finestra in Progettazione Windows Form. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).  
   
         > [!NOTE]
-        >  Nella finestra di **IntelliSense** possono essere visualizzati sia proprietà che metodi. Per determinare gli elementi visualizzati, osservare l'icona a sinistra di ogni elemento nella finestra **IntelliSense**. È visualizzata l'immagine di un blocco accanto a ogni metodo e l'immagine di una chiave inglese (o di una chiave fissa) accanto a ogni proprietà. È anche visualizzata un'icona a forma di saetta accanto a ogni evento. Queste immagini vengono visualizzate nel modo seguente.  
+        > Nella finestra di **IntelliSense** possono essere visualizzati sia proprietà che metodi. Per determinare gli elementi visualizzati, osservare l'icona a sinistra di ogni elemento nella finestra **IntelliSense**. È visualizzata l'immagine di un blocco accanto a ogni metodo e l'immagine di una chiave inglese (o di una chiave fissa) accanto a ogni proprietà. È anche visualizzata un'icona a forma di saetta accanto a ogni evento. Queste immagini vengono visualizzate nel modo seguente.  
   
          ![Icona del metodo](../ide/media/express-iconmethod.png "Express_IconMethod")  
 Icona del metodo  
@@ -72,21 +72,21 @@ Icona dell'evento
     5. Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".  
   
         > [!NOTE]
-        >  I metodi sono una parte importante di qualsiasi programma e in questa esercitazione ne sono stati illustrate diverse modalità di utilizzo. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare eseguire operazioni al programma, come quello che si sta compilando, denominato metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando l'utente sceglie un pulsante.  
+        > I metodi sono una parte importante di qualsiasi programma e in questa esercitazione ne sono stati illustrate diverse modalità di utilizzo. È possibile chiamare un metodo di un componente per indicare l'esecuzione di un'operazione, come è stato fatto quando si è chiamato il metodo `ShowDialog()` del componente **OpenFileDialog**. È possibile creare metodi personalizzati per fare eseguire operazioni al programma, come quello che si sta compilando, denominato metodo `showButton_Click()`, che apre una finestra di dialogo e un'immagine quando l'utente sceglie un pulsante.  
   
     6. Per Visual C#, aggiungere uno spazio e quindi aggiungere due segni di uguale (`==`). Per Visual Basic, aggiungere uno spazio e quindi usare un solo segno di uguale (`=`). Visual C# e Visual Basic utilizzano operatori di uguaglianza diversi.  
   
     7. Aggiungere un altro spazio. Viene immediatamente visualizzata un'altra finestra di **IntelliSense**. Iniziare a digitare `DialogResult` e premere TAB per aggiungerlo.  
   
         > [!NOTE]
-        >  Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso il metodo `ShowDialog()` del componente **OpenFileDialog** restituisce un valore DialogResult. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, pertanto il relativo metodo `ShowDialog()` restituisce DialogResult.OK o DialogResult.Cancel.  
+        > Quando si scrive codice per chiamare un metodo, a volte viene restituito un valore. In questo caso il metodo `ShowDialog()` del componente **OpenFileDialog** restituisce un valore DialogResult. DialogResult è un valore speciale che fornisce informazioni sulle operazioni eseguite in una finestra di dialogo. Un componente **OpenFileDialog** può far sì che l'utente scelga **OK** o **Annulla**, pertanto il relativo metodo `ShowDialog()` restituisce DialogResult.OK o DialogResult.Cancel.  
   
     8. Digitare un punto per aprire la finestra di **IntelliSense** del valore DialogResult. Immettere la lettera `O` e premere TAB per inserire **OK**.  
   
          Per altre informazioni su `DialogResult`, vedere [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
-        >  La prima riga di codice è stata completata. Per Visual C#, il codice è analogo al seguente.  
+        > La prima riga di codice è stata completata. Per Visual C#, il codice è analogo al seguente.  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   

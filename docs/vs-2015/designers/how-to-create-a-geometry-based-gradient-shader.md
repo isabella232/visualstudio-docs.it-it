@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436168"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedura: Creare uno shader con sfumatura basata sulla geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a una sfera.  
   
 > [!NOTE]
->  In questa figura è stato specificato un colore arancione per illustrare meglio l'effetto dello shader, ma poiché la forma di anteprima non ha una posizione nello spazio globale, lo shader non può essere interamente visualizzato in anteprima nella finestra di progettazione dello shader. Per poter illustrare l'effetto completo, lo shader deve essere visualizzato in anteprima in una scena reale.  
+> In questa figura è stato specificato un colore arancione per illustrare meglio l'effetto dello shader, ma poiché la forma di anteprima non ha una posizione nello spazio globale, lo shader non può essere interamente visualizzato in anteprima nella finestra di progettazione dello shader. Per poter illustrare l'effetto completo, lo shader deve essere visualizzato in anteprima in una scena reale.  
   
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

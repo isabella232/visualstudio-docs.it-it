@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407772"
 ---
 1. Nel **Esplora soluzioni**, fare doppio clic sul nodo del progetto e selezionare **Publish** (per Web Form, **pubblicare App Web**).
 
@@ -43,7 +43,7 @@ ms.locfileid: "56723877"
 1. Copiare la directory del progetto ASP.NET dal computer di Visual Studio nella directory locale configurata per l'app ASP.NET (in questo esempio **C:\Publish**) nel computer Windows Server. In questa esercitazione si presuppone che si sta copiando manualmente, ma è possibile usare altri strumenti come PowerShell, Xcopy o Robocopy.
 
     > [!CAUTION]
-    >  Se è necessario apportare modifiche al codice o ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se non si eseguire questa operazione si riceverà un `cannot find or open the PDB file` avviso in Visual Studio quando si prova a eseguire il debug del processo.
+    > Se è necessario apportare modifiche al codice o ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.    Se non si eseguire questa operazione si riceverà un `cannot find or open the PDB file` avviso in Visual Studio quando si prova a eseguire il debug del processo.
 
 1. Nel Server di Windows, verificare che sia possibile eseguire correttamente l'app aprendo l'app nel browser.
 

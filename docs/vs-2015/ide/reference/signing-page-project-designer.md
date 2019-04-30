@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437997"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
  Si tenga presente che un progetto con firma ritardata non può essere eseguito e non può essere sottoposto a debug. È tuttavia possibile evitare la verifica durante lo sviluppo usando [Sn.exe (strumento Nome sicuro)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con l'opzione `-Vr`.  
   
 > [!NOTE]
->  Quando si firma un assembly, non sempre è possibile accedere a una chiave privata. Un'organizzazione, ad esempio, può avere una coppia di chiavi ben protetta a cui gli sviluppatori non hanno accesso su base giornaliera. La chiave pubblica è disponibile ma l'accesso alla chiave privata è limitato a poche persone. In un caso del genere, è possibile usare una firma *ritardata* o *parziale*. Questa funzione consente di fornire la chiave pubblica, rimandando l'aggiunta della chiave privata al momento della consegna dell'assembly.  
+> Quando si firma un assembly, non sempre è possibile accedere a una chiave privata. Un'organizzazione, ad esempio, può avere una coppia di chiavi ben protetta a cui gli sviluppatori non hanno accesso su base giornaliera. La chiave pubblica è disponibile ma l'accesso alla chiave privata è limitato a poche persone. In un caso del genere, è possibile usare una firma *ritardata* o *parziale*. Questa funzione consente di fornire la chiave pubblica, rimandando l'aggiunta della chiave privata al momento della consegna dell'assembly.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)   

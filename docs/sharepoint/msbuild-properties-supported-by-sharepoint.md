@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429200"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Proprietà MsBuild supportate in SharePoint
   Eventuali [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proprietà definita nel file targets, file di progetto o file di progetto utente sono utilizzabili in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetti SharePoint. Oltre alla comune [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proprietà fornita dal progetto di SharePoint definisce proprietà aggiuntive specifiche per i progetti SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56599688"
  Per una flessibilità, invece di usare le stringhe hardcoded nel **riga di comando di pre-distribuzione** e **riga di comando di post-distribuzione** caselle nella pagina delle proprietà di SharePoint, è possibile utilizzare SharePoint proprietà come argomenti. Ad esempio, anziché specificare una determinata [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] stringa per il sito di SharePoint, è possibile usare `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  È possibile usare la [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] variabile sintassi `$(` *propertyName* `)` o la sintassi della variabile di ambiente `%` *propertyName* `%` Per specificare una proprietà.
+> È possibile usare la [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] variabile sintassi `$(` *propertyName* `)` o la sintassi della variabile di ambiente `%` *propertyName* `%` Per specificare una proprietà.
 
 ## <a name="see-also"></a>Vedere anche
 

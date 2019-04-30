@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431007"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedura: di un frammento XML da uno schema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ L'editor XML è in grado di generare frammenti XML da uno schema XSD (XML Schema
  Nei passaggi di questa sezione viene illustrato come usare la funzionalità dei frammenti XML generati dallo schema dell'editor XML.  
   
 > [!NOTE]
->  Prima di avviare tali procedure, salvare il file di schema nel computer locale.  
+> Prima di avviare tali procedure, salvare il file di schema nel computer locale.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Per creare un nuovo file XML e associarlo a uno schema XML  
   

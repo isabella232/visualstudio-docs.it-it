@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432283"
 ---
 # <a name="fxcopcmd-errors"></a>errori di FxCopCmd
 FxCopCmd non considera tutti gli errori irreversibili. Se FxCopCmd sono disponibili informazioni sufficienti per eseguire un'analisi parziale, esegue l'analisi e segnala gli errori che si sono verificati. Il codice di errore che è un integer a 32 bit, contiene una combinazione bit per bit di valori numerici corrispondenti a errori.  
@@ -49,7 +49,7 @@ FxCopCmd non considera tutti gli errori irreversibili. Se FxCopCmd sono disponib
 - L'opzione di output non è stato specificato o non è stato possibile scrivere il file.  
   
     > [!NOTE]
-    >  Il codice restituito di FxCopCmd "Assembly fa riferimento all'errore" 0x200 per sé è un avviso anziché un errore. Questo codice restituito indica che sono stati trovati riferimenti indiretti mancanti, ma che è in grado di gestirli FxCopCmd. È un avviso che è possibile che alcuni dei risultati dell'analisi potrebbero essere stati compromessi. Prendere in considerazione "Assembly fa riferimento all'errore" il codice restituito come un errore quando viene combinato con qualsiasi altro codice.  
+    > Il codice restituito di FxCopCmd "Assembly fa riferimento all'errore" 0x200 per sé è un avviso anziché un errore. Questo codice restituito indica che sono stati trovati riferimenti indiretti mancanti, ma che è in grado di gestirli FxCopCmd. È un avviso che è possibile che alcuni dei risultati dell'analisi potrebbero essere stati compromessi. Prendere in considerazione "Assembly fa riferimento all'errore" il codice restituito come un errore quando viene combinato con qualsiasi altro codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Errori nell'applicazione dell'analisi del codice](../code-quality/code-analysis-application-errors.md)

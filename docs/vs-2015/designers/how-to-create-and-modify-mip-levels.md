@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434451"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Procedura: Creare e modificare livelli MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Questo documento illustra come usare **Editor di immagini** per generare e modif
 2. Dopo aver selezionato il livello MIP da modificare, è possibile usare gli strumenti di disegno per modificarlo lasciando invariato il contenuto degli altri livelli MIP. Gli strumenti di disegno sono disponibili sulla barra degli strumenti **Editor di immagini**. Dopo aver selezionato uno strumento, è possibile modificarne le proprietà nella finestra **Proprietà**. Per informazioni sugli strumenti di disegno e le relative proprietà, vedere [Editor di immagini](../designers/image-editor.md).  
   
 > [!NOTE]
->  Se non è necessario modificare il contenuto di singoli livelli MIP (ad esempio, per ottenere effetti specifici), è consigliabile generare mipmap dalla trama di origine in fase di compilazione. Questa operazione garantisce infatti che i livelli MIP rimangano sincronizzati con la trama di origine, poiché le modifiche apportate a un livello MIP non vengono propagate automaticamente ad altri livelli. Per altre informazioni su come generare mipmap in fase di compilazione, vedere [Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
+> Se non è necessario modificare il contenuto di singoli livelli MIP (ad esempio, per ottenere effetti specifici), è consigliabile generare mipmap dalla trama di origine in fase di compilazione. Questa operazione garantisce infatti che i livelli MIP rimangano sincronizzati con la trama di origine, poiché le modifiche apportate a un livello MIP non vengono propagate automaticamente ad altri livelli. Per altre informazioni su come generare mipmap in fase di compilazione, vedere [Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Creare una trama di base](../designers/how-to-create-a-basic-texture.md)
+ [Procedura: creare una trama di base](../designers/how-to-create-a-basic-texture.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424311"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi caso di utilizzo UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
 ## <a name="BasicSteps"></a> Passaggi di base per la creazione di diagrammi casi d'uso  
   
 > [!NOTE]
->  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+> I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Per creare un nuovo diagramma caso di utilizzo  
   
@@ -133,7 +133,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
  L'attore specializzato può avere un proprio caso di utilizzo aggiuntivo che non è disponibile per gli altri.  
   
 > [!CAUTION]
->  È consigliabile non apportare cicli di relazioni di generalizzazione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
+> È consigliabile non apportare cicli di relazioni di generalizzazione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
   
 ### <a name="alternative-actor-icons"></a>Icone attore alternative  
  È possibile usare icone personalizzate per rappresentare un attore, anziché la figura stilizzata standard. Ad esempio, è possibile modificarla in modo che assomigli a un dispositivo, ristorante, banca e così via.  
@@ -160,7 +160,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
  ![Usare case uno-a-uno con attore](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  La molteplicità di un'associazione in un diagramma caso di utilizzo sono nascoste se sono entrambi **1**.  
+> La molteplicità di un'associazione in un diagramma caso di utilizzo sono nascoste se sono entrambi **1**.  
   
  Per impostazione predefinita, ogni molteplicità è di tipo **1**. In un'interpretazione rigorosa del modello, una molteplicità pari a 1 significa che, ad esempio, un solo cliente è coinvolto nell'ordinazione di ogni pasto e che ogni cliente ordina un solo pasto alla volta.  
   
@@ -197,7 +197,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
    - **\\*** per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
   
 > [!NOTE]
->  Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.  
+> Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Uso di un attore o un caso di utilizzo in più diagrammi  
  È possibile visualizzare gli stessi attori e casi di utilizzo in diversi diagrammi. Ad esempio:  
@@ -215,7 +215,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
 3. Trascinare un attore o caso d'uso **Esplora modelli** nel nuovo diagramma.  
   
     > [!NOTE]
-    >  Se si inserisce nel nuovo diagramma un attore e un caso di utilizzo già associati, l'associazione tra di loro verrà visualizzata automaticamente nel nuovo diagramma.  
+    > Se si inserisce nel nuovo diagramma un attore e un caso di utilizzo già associati, l'associazione tra di loro verrà visualizzata automaticamente nel nuovo diagramma.  
   
 ## <a name="Details"></a> Casi d'uso che descrive in dettaglio  
  Un caso di utilizzo rappresenta:  
@@ -277,7 +277,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
 3. Con il nuovo elemento selezionato, digitare o incollare l'URL nel **Hyperlink** proprietà.  
   
 > [!NOTE]
->  Fare doppio clic su un elemento per aprire il diagramma o il documento a cui è collegato.  
+> Fare doppio clic su un elemento per aprire il diagramma o il documento a cui è collegato.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Collegamento di casi di utilizzo a elementi di lavoro  
  Se il progetto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e aver [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], è possibile collegare ogni caso d'uso a un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per informazioni su come creare questi collegamenti, vedere [collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
  Usare un **inclusione** relazione per mostrare che un caso di utilizzo descrive alcuni dettagli di un altro. Nell'illustrazione **ordinare un pasto** include **pagare**, **dal Menu scegliere**, e **scegliere voce di Menu**. Ognuno dei casi di utilizzo più dettagliati inclusi è un passaggio che l'attore o gli attori dovrebbero poter eseguire per raggiungere l'obiettivo complessivo del caso di utilizzo incluso. La freccia deve puntare al caso di utilizzo incluso più dettagliato.  
   
 > [!CAUTION]
->  È consigliabile non eseguire cicli di relazioni di inclusione che comportano l'inclusione di se stesso da parte di un caso di utilizzo. I cicli possono generare errori.  
+> È consigliabile non eseguire cicli di relazioni di inclusione che comportano l'inclusione di se stesso da parte di un caso di utilizzo. I cicli possono generare errori.  
   
  È possibile condividere casi di utilizzo inclusi. Nell'esempio, il **ordinare un pasto** e **sottoscrivere le revisioni** entrambi includono casi d'uso **pagare**.  
   
@@ -346,7 +346,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
  Ad esempio, **pagare** generalizza **pagare tramite carta di credito** e **pagamento in contanti**.  
   
 > [!CAUTION]
->  È consigliabile non apportare cicli di relazioni di generalizzazione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
+> È consigliabile non apportare cicli di relazioni di generalizzazione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
   
  Casi di utilizzo specializzati consentono di mostrare diverse modalità con cui il sistema può raggiungere lo stesso scopo.  
   
@@ -374,7 +374,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
  ![Un caso di utilizzo estende un altro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  È consigliabile non apportare cicli di relazioni di estensione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
+> È consigliabile non apportare cicli di relazioni di estensione che comportano la generalizzazione di se stesso da parte di un attore. I cicli possono generare errori.  
   
  Ad esempio, il **account di accesso** caso d'uso di un tipico sito Web può includere **Registra nuovo utente** - ma solo quando l'utente non possieda già un account.  
   
@@ -391,7 +391,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
    3. Fare clic sul caso di utilizzo esteso (**account di accesso** nell'esempio).  
   
        > [!NOTE]
-       >  Evitare di creare un ciclo di relazioni Estendi nel diagramma. Non è corretto che un caso di utilizzo sia un'estensione di se stesso.  
+       > Evitare di creare un ciclo di relazioni Estendi nel diagramma. Non è corretto che un caso di utilizzo sia un'estensione di se stesso.  
   
 3. Se sono già stati creati gli scenari per il caso di utilizzo esteso, spostare i relativi passaggi nello scenario dell'estensione.  
   
@@ -425,7 +425,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
    Per creare un nuovo caso d'uso direttamente in un sottosistema, fare clic su **caso di utilizzo** nella casella degli strumenti, quindi fare clic all'interno del sottosistema.  
   
 > [!NOTE]
->  Il **soggetti** proprietà di un caso d'uso indica in quale sottosistema è contenuto all'interno.  
+> Il **soggetti** proprietà di un caso d'uso indica in quale sottosistema è contenuto all'interno.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Casi di utilizzo al di fuori dell'ambito del sistema  
  È spesso utile includere nel diagramma i casi di utilizzo che fanno parte dell'azienda, ma non sono gestiti dal sistema che si sta sviluppando. Ciò consente agli sviluppatori di comprendere il contesto del proprio lavoro. Ad esempio, Consegna pasto potrebbe essere visualizzato come un caso di utilizzo che include gli attori Ristorante e Cliente, ma fuori della responsabilità del Sito Web di ordinazione pasto.  

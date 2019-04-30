@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429628"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Flag della riga di comando del compilatore VSCT
 Il compilatore di Visual Studio comando tabella (VSCT) offre opzioni della riga di comando per garantire una corretta compilazione del file con estensione vsct.
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  I caratteri - (trattino) e / (barra) vengono entrambi notazione accettati per indicare i parametri della riga di comando.
+> I caratteri - (trattino) e / (barra) vengono entrambi notazione accettati per indicare i parametri della riga di comando.
 
  Di seguito sono riportati i flag accettabile e relativo significato.
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Specificare eventuali altri simboli definiti.|
 |-I|Indicare che percorsi da utilizzare durante la risoluzione di riferimenti a file di inclusione aggiuntive.|
 |-L|Specificare il <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura, ad esempio "en-US".|
-|-E|Creare C# gli oggetti nello spazio dei nomi specificato per gli elementi del comando, seguito da [C&#124;H&#124;N]:*filename*in cui C = C#, H = intestazione di C++, N = lo spazio dei nomi. Lo spazio dei nomi è necessaria per il linguaggio c#.|
+|-E|Creare C# gli oggetti nello spazio dei nomi specificato per gli elementi del comando, seguito da [C&#124;H&#124;N]:*filename*in cui C = C#, H = C++ intestazione, N = lo spazio dei nomi. Lo spazio dei nomi è necessaria per il linguaggio c#.|
 |-v|Output dettagliato.|
 
  All'opzione -L indica al compilatore di selezionare un gruppo di stringhe per produrre il file CTO binario corrispondente per il dato <xref:System.Globalization.CultureInfo> nome delle impostazioni cultura. Il nome delle impostazioni cultura specificato deve corrispondere all'attributo di linguaggio di uno o più [elemento Strings](../../extensibility/strings-element.md) nel file con estensione vsct. Se un elemento stringhe disponga di alcun attributo di linguaggio, è ereditata dal che contiene [elemento CommandTable](../../extensibility/commandtable-element.md).

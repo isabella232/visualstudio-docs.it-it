@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442965"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificare i diagrammi di sequenza UML usando l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Esistono due tipi di diagrammi di sequenza: quelli creati manualmente in un progetto di modellazione UML e quelli generati dal codice programma. Usare la proprietà `UmlMode` per individuare il proprio diagramma di sequenza.  
   
 > [!NOTE]
->  Questa proprietà restituisce false solo per i diagrammi di sequenza generati dal codice con Visual Studio 2013 e versioni precedenti. Sono inclusi i diagrammi di sequenza generati dal codice di cui è stata eseguita la migrazione dalla versione 2013 e precedenti. Questa versione di Visual Studio non supporta la generazione di nuovi diagrammi di sequenza.  
+> Questa proprietà restituisce false solo per i diagrammi di sequenza generati dal codice con Visual Studio 2013 e versioni precedenti. Sono inclusi i diagrammi di sequenza generati dal codice di cui è stata eseguita la migrazione dalla versione 2013 e precedenti. Questa versione di Visual Studio non supporta la generazione di nuovi diagrammi di sequenza.  
   
  Ad esempio, per creare un comando di menu visibile solo nei diagrammi di sequenza UML, il metodo `QueryStatus()` può includere l'istruzione seguente:  
   

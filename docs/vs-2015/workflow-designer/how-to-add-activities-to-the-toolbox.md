@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433531"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procedura: Aggiungere attività nella casella degli strumenti
 Le attività possono essere aggiunte per il **casella degli strumenti** nella soluzione in diversi modi. È possibile aggiungerli dall'interno il progetto corrente oppure fare riferimento a essi da un progetto diverso o da un assembly diverso.  
@@ -28,13 +28,13 @@ Le attività possono essere aggiunte per il **casella degli strumenti** nella so
 3. Compilare il progetto. Se la compilazione ha avuto esito positivo, una nuova categoria nella **casella degli strumenti** denominata "\<*nome progetto*>" viene visualizzato con l'attività personalizzata in essa inclusa.  
   
     > [!NOTE]
-    >  Se la casella degli strumenti viene reimpostata, le attività personalizzate verranno rimosse, anche se la soluzione viene compilata nuovamente. Per ripopolare la casella degli strumenti con le attività personalizzate dopo che è stata reimpostata, riavviare [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+    > Se la casella degli strumenti viene reimpostata, le attività personalizzate verranno rimosse, anche se la soluzione viene compilata nuovamente. Per ripopolare la casella degli strumenti con le attività personalizzate dopo che è stata reimpostata, riavviare [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
     > [!NOTE]
-    >  La casella degli strumenti può mostrare solo un'attività di un nome specificato. Se due attività derivanti da assembly differenti hanno lo stesso nome della classe, solo una viene visualizzata.  
+    > La casella degli strumenti può mostrare solo un'attività di un nome specificato. Se due attività derivanti da assembly differenti hanno lo stesso nome della classe, solo una viene visualizzata.  
   
     > [!NOTE]
-    >  Il dominio applicazione viene condiviso tra le istanze dell'editor; se vengono usate le variabili statiche, queste verranno condivise anche tra le istanze dell'editor. Se non si tratta del comportamento desiderato, un servizio deve essere usato per tenere traccia delle istanze variabili. Visualizzare [utilizzando il contesto di modifica ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) per informazioni sull'uso di servizi all'interno della finestra di progettazione.  
+    > Il dominio applicazione viene condiviso tra le istanze dell'editor; se vengono usate le variabili statiche, queste verranno condivise anche tra le istanze dell'editor. Se non si tratta del comportamento desiderato, un servizio deve essere usato per tenere traccia delle istanze variabili. Visualizzare [utilizzando il contesto di modifica ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) per informazioni sull'uso di servizi all'interno della finestra di progettazione.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Per aggiungere un'attività dall'interno di un altro progetto  
   

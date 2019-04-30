@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae43b6b1cdc5a3c94e6eb14d0aaa398c320c6274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435218"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedura: Specificare gli eventi di compilazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ ms.locfileid: "60113859"
 4. Nella casella **Riga di comando eventi pre-compilazione** specificare la sintassi per l'evento di compilazione.  
   
     > [!NOTE]
-    >  Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.  
+    > Gli eventi di pre-compilazione non vengono eseguiti se il progetto è aggiornato e non viene attivata alcuna compilazione.  
   
 5. Nella casella **Riga di comando eventi post-compilazione** specificare la sintassi per l'evento di compilazione.  
   
     > [!NOTE]
-    >  Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6. Nella casella **Esegui evento post-compilazione** specificare con quali condizioni eseguire l'evento di post-compilazione.  
   
     > [!NOTE]
-    >  Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.  
+    > Per aggiungere una sintassi più lunga o per selezionare macro di compilazione dalla [finestra di dialogo Riga di comando eventi pre-compilazione/post-compilazione](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), fare clic sul pulsante con i puntini di sospensione (**...**) per visualizzare una casella di modifica.  
   
      La sintassi dell'evento di compilazione può includere qualsiasi comando che sia valido in un prompt dei comandi o in un file bat. Perché vengano sicuramente eseguiti tutti i comandi successivi, il nome di un file batch deve essere preceduto da `call`.  
   

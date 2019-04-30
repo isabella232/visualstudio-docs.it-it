@@ -11,12 +11,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408574"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  È responsabilità del progetto per rendere persistenti le proprietà di progetto e la configurazione del file di progetto.  
   
 > [!NOTE]
->  Un progetto può ottimizzare la persistenza per salvare in modo permanente solo valori di proprietà che differiscono dai valori predefiniti.  
+> Un progetto può ottimizzare la persistenza per salvare in modo permanente solo valori di proprietà che differiscono dai valori predefiniti.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto  
  Il `Microsoft.VisualStudio.Package.SettingsPage` classe implementa le pagine delle proprietà di configurazione e progetto. L'implementazione predefinita di `SettingsPage` offre proprietà pubbliche per un utente in una griglia delle proprietà generiche. Il `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` metodo consente di selezionare le classi derivate da `SettingsPage` per griglie di proprietà di progetto. Il `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` metodo consente di selezionare le classi derivate da `SettingsPage` per griglie di proprietà di configurazione. Il tipo di progetto deve eseguire l'override di questi metodi per selezionare le pagine delle proprietà appropriata.  
@@ -65,7 +65,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` rendere persistenti le proprietà di configurazione.  
   
   > [!NOTE]
-  >  Le implementazioni del `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classi di uso di `Microsoft.Build.BuildEngine` metodi (MSBuild) per ottenere e impostare le proprietà di progetto e la configurazione dal file di progetto.  
+  > Le implementazioni del `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classi di uso di `Microsoft.Build.BuildEngine` metodi (MSBuild) per ottenere e impostare le proprietà di progetto e la configurazione dal file di progetto.  
   
   La classe di derivazione `SettingsPage` deve implementare `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` per rendere persistenti le proprietà di configurazione di progetto o del file di progetto.  
   
@@ -83,7 +83,7 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  Il <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, e <xref:System.ComponentModel.DescriptionAttribute> attributi determinano il layout, l'assegnazione di etichette e descrizione delle proprietà di configurazione e progetto in una pagina delle proprietà generiche. Questi attributi determinano la categoria, il nome visualizzato e descrizione dell'opzione, rispettivamente.  
   
 > [!NOTE]
->  Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti in [MPF per i progetti - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+> Attributi equivalenti, SRCategory, LocDisplayName e SRDescription, usare le risorse stringa per la localizzazione e sono definiti in [MPF per i progetti - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
  Si consideri il frammento di codice riportato di seguito.  
   

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441834"
 ---
 # <a name="events-in-office-projects"></a>Eventi nei progetti di Office
   Ogni modello di progetto di Office genera automaticamente diversi gestori eventi. I gestori eventi per le personalizzazioni a livello di documento sono leggermente diversi dai gestori eventi per componenti aggiuntivi VSTO.
@@ -82,7 +82,7 @@ ms.locfileid: "60094853"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Non rimuovere a livello di codice i controlli durante l'esecuzione del gestore dell'evento **Shutdown** del documento. Gli elementi dell'interfaccia utente del documento non sono più disponibili quando si verifica l'evento **Shutdown** . Se si desidera rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio **BeforeClose** o **BeforeSave**.
+> Non rimuovere a livello di codice i controlli durante l'esecuzione del gestore dell'evento **Shutdown** del documento. Gli elementi dell'interfaccia utente del documento non sono più disponibili quando si verifica l'evento **Shutdown** . Se si desidera rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio **BeforeClose** o **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Dichiarazioni di metodo del gestore di evento
  A ogni dichiarazione di metodo del gestore eventi vengono passati gli stessi argomenti: *sender* e *e*. In Excel, l'argomento *sender* fa riferimento al foglio, ad esempio `Sheet1` o `Sheet2`. In Word, l'argomento *sender* fa riferimento al documento. L'argomento *e* fa riferimento agli argomenti standard per un evento, che non vengono usati in questo caso.
@@ -95,7 +95,7 @@ ms.locfileid: "60094853"
  Nell'esempio di codice seguente vengono illustrati i gestori eventi predefiniti in progetti a livello di documento di Excel.
 
 > [!NOTE]
->  Nell'esempio di codice riportato di seguito vengono illustrati i gestori eventi nella classe `Sheet1` . I nomi dei gestori eventi in altre classi dell'elemento host corrispondono al nome della classe. Ad esempio, nella classe `Sheet2` , il gestore eventi **Startup** è denominato `Sheet2_Startup`. Nella classe `ThisWorkbook` , il gestore eventi **Startup** è denominato `ThisWorkbook_Startup`.
+> Nell'esempio di codice riportato di seguito vengono illustrati i gestori eventi nella classe `Sheet1` . I nomi dei gestori eventi in altre classi dell'elemento host corrispondono al nome della classe. Ad esempio, nella classe `Sheet2` , il gestore eventi **Startup** è denominato `Sheet2_Startup`. Nella classe `ThisWorkbook` , il gestore eventi **Startup** è denominato `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094853"
 - Evento <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> dell'oggetto <xref:Microsoft.Office.Interop.Outlook.Explorer> .
 
 > [!NOTE]
->  È possibile imporre a Outlook di generare l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> alla chiusura modificando il Registro di sistema. Tuttavia, se un amministratore ripristina questa impostazione, qualsiasi codice viene aggiunto al metodo `ThisAddIn_Shutdown` , non viene più eseguito quando si esce da Outlook. Per altre informazioni, vedere [modifiche Shutdown per Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> È possibile imporre a Outlook di generare l'evento <xref:Microsoft.Office.Tools.AddInBase.Shutdown> alla chiusura modificando il Registro di sistema. Tuttavia, se un amministratore ripristina questa impostazione, qualsiasi codice viene aggiunto al metodo `ThisAddIn_Shutdown` , non viene più eseguito quando si esce da Outlook. Per altre informazioni, vedere [modifiche Shutdown per Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Vedere anche
 - [Sviluppare soluzioni Office](../vsto/developing-office-solutions.md)

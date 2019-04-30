@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430370"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che incorpora l'utilizzo dei form di associazione e di avvio. Questi sono i form ASPX che abilitano i parametri per essere aggiunti a un flusso di lavoro quando è associato prima di tutto dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).
@@ -50,9 +50,9 @@ ms.locfileid: "60081736"
 - Avviare manualmente il flusso di lavoro.
 
 > [!NOTE]
->  Sebbene questa procedura dettagliata Usa un progetto di flusso di lavoro sequenziale, il processo è lo stesso per flussi di lavoro di stato.
+> Sebbene questa procedura dettagliata Usa un progetto di flusso di lavoro sequenziale, il processo è lo stesso per flussi di lavoro di stato.
 >
->  Inoltre, il computer potrebbe mostrare nomi o i percorsi per alcune delle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementi dell'interfaccia utente nelle istruzioni seguenti. Il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edizione in uso e le impostazioni che consentono di determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Inoltre, il computer potrebbe mostrare nomi o i percorsi per alcune delle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementi dell'interfaccia utente nelle istruzioni seguenti. Il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edizione in uso e le impostazioni che consentono di determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -134,7 +134,7 @@ ms.locfileid: "60081736"
 3. Espandere la **ExpenseReportAssocForm** del file in **Esplora soluzioni** per visualizzare i file dipendenti.
 
     > [!NOTE]
-    >  Se il progetto si trova in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], è necessario scegliere il **Visualizza tutti i file** pulsante per eseguire questo passaggio.
+    > Se il progetto si trova in [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], è necessario scegliere il **Visualizza tutti i file** pulsante per eseguire questo passaggio.
 
 4. Aprire il menu di scelta rapida per il file ExpenseReportAssocForm e scegliere **Visualizza codice**.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081736"
     ```
 
     > [!NOTE]
-    >  Nel codice, sostituire `somedomain\\someuser` con un nome di dominio e utente per il quale verrà creata un'attività, ad esempio, "`Office\\JoeSch`". Per il test è più semplice usare l'account che con cui si sta sviluppando.
+    > Nel codice, sostituire `somedomain\\someuser` con un nome di dominio e utente per il quale verrà creata un'attività, ad esempio, "`Office\\JoeSch`". Per il test è più semplice usare l'account che con cui si sta sviluppando.
 
 3. Di seguito il `MethodInvoking` metodo, aggiungere l'esempio seguente:
 

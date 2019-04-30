@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426330"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54756878"
  Per le espressioni regolari di ricerca e sostituzione, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
 > [!TIP]
->  La casella **Trova/Comando** è ancora disponibile nella barra degli strumenti, ma non è più visibile per impostazione predefinita. È possibile visualizzare la casella **Trova/Comando** scegliendo **Aggiungi o rimuovi pulsanti** nella barra degli strumenti **Standard** e scegliendo **Trova**. Per ulteriori informazioni, vedere [Casella Trova/Comando](../ide/find-command-box.md).  
+> La casella **Trova/Comando** è ancora disponibile nella barra degli strumenti, ma non è più visibile per impostazione predefinita. È possibile visualizzare la casella **Trova/Comando** scegliendo **Aggiungi o rimuovi pulsanti** nella barra degli strumenti **Standard** e scegliendo **Trova**. Per ulteriori informazioni, vedere [Casella Trova/Comando](../ide/find-command-box.md).  
   
 ## <a name="find-and-replace-control"></a>Controllo Trova e sostituisci  
  Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore destro della finestra dell'editor di codice. Il controllo **Trova e sostituisci** evidenzia immediatamente tutte le occorrenze della stringa di ricerca specificata nel documento corrente. È possibile spostarsi da un'occorrenza all'altra scegliendo il pulsante **Trova successivo** o **Trova precedente** nel controllo di ricerca.  

@@ -12,20 +12,20 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8983b027eb82ac9ac09b3f753333af9f7d08e2a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435148"
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Procedura: Destinare una versione di .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Procedura: Scegliere una versione di .NET Framework di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questo documento viene descritto come scegliere una versione di destinazione di .NET Framework quando si crea un progetto e come modificare la versione di destinazione in un progetto di Visual Basic, Visual C# o Visual F# esistente.  
   
 > [!IMPORTANT]
->  Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **In questo argomento**  
   
@@ -37,7 +37,7 @@ In questo documento viene descritto come scegliere una versione di destinazione 
  Quando si crea un progetto, la versione di .NET Framework di destinazione determina i modelli che è possibile utilizzare.  
   
 > [!NOTE]
->  Nelle edizioni Express di Visual Studio, è necessario creare prima il progetto e successivamente modificare la destinazione, come descritto più avanti nella sezione [Modifica della versione di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) di questo argomento.  
+> Nelle edizioni Express di Visual Studio, è necessario creare prima il progetto e successivamente modificare la destinazione, come descritto più avanti nella sezione [Modifica della versione di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md#bkmk_existing) di questo argomento.  
   
 #### <a name="to-target-a-version-when-you-create-a-project"></a>Per scegliere una versione di destinazione durante la creazione di un progetto  
   
@@ -46,7 +46,7 @@ In questo documento viene descritto come scegliere una versione di destinazione 
 2. Nell'elenco che si trova nella parte superiore della finestra di dialogo **Nuovo progetto** scegliere la versione di .NET Framework a cui si vuole destinare il progetto.  
   
     > [!NOTE]
-    >  In genere, viene installata una sola una versione di .NET Framework con Visual Studio. Se si desidera destinare il progetto a un'altra versione, è necessario innanzitutto verificare che sia installata. Vedere [Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md).  
+    > In genere, viene installata una sola una versione di .NET Framework con Visual Studio. Se si desidera destinare il progetto a un'altra versione, è necessario innanzitutto verificare che sia installata. Vedere [Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md).  
   
 3. Nell'elenco dei modelli installati, selezionare il tipo di progetto che si vuole creare, assegnare un nome al progetto e quindi scegliere **OK**.  
   
@@ -62,14 +62,14 @@ In questo documento viene descritto come scegliere una versione di destinazione 
      ![Proprietà Esplora soluzioni di Visual Studio](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    >  Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. Nella colonna sinistra della finestra delle proprietà scegliere la scheda **Applicazione**.  
   
      ![Scheda applicazione delle proprietà dell'app di Visual Studio](../ide/media/vs-slnexplorer-properties-applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")  
   
     > [!NOTE]
-    >  Dopo aver creato un'app di Windows Store, non è possibile cambiare la versione di destinazione di Windows o di .NET Framework.  
+    > Dopo aver creato un'app di Windows Store, non è possibile cambiare la versione di destinazione di Windows o di .NET Framework.  
   
 3. Nell'elenco **Framework di destinazione** selezionare la versione appropriata.  
   
@@ -78,7 +78,7 @@ In questo documento viene descritto come scegliere una versione di destinazione 
      Il progetto verrà scaricato. Una volta caricato nuovamente, il progetto sarà destinato alla versione di .NET Framework appena scelta.  
   
     > [!NOTE]
-    >  Se il codice contiene riferimenti a una versione di .NET Framework diversa rispetto a quella di destinazione, è possibile che vengano visualizzati dei messaggi di errore durante la compilazione o l'esecuzione del codice. Per risolvere questi errori è necessario modificare i riferimenti. Vedere [Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
+    > Se il codice contiene riferimenti a una versione di .NET Framework diversa rispetto a quella di destinazione, è possibile che vengano visualizzati dei messaggi di errore durante la compilazione o l'esecuzione del codice. Per risolvere questi errori è necessario modificare i riferimenti. Vedere [Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   

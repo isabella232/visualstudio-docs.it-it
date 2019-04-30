@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387723"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Panoramica degli strumenti di progettazione modello di integrazione applicativa dei dati
   È possibile progettare un modello di integrazione applicativa dei dati (BDC) usando la finestra di progettazione di integrazione applicativa dei dati, il **Dettagli metodo BDC** finestra e il **Esplora integrazione applicativa dei dati**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596568"
  Mentre si selezionano nodi nel **Esplora integrazione Applicativa**, vengono visualizzate le proprietà di ogni nodo che si sceglie nel **proprietà** finestra. Molte di queste proprietà corrispondono agli attributi nel file del modello. È possibile cercare il modello usando la casella di ricerca in cima il **Esplora integrazione applicativa dei dati**.
 
 > [!NOTE]
->  Il **Esplora integrazione applicativa dei dati** non visualizza gli identificatori, le proprietà personalizzate, le stringhe localizzate, i gruppi di associazioni, azioni, descrittori di filtro, gli elenchi di controllo di azione e i valori di parametro predefiniti.
+> Il **Esplora integrazione applicativa dei dati** non visualizza gli identificatori, le proprietà personalizzate, le stringhe localizzate, i gruppi di associazioni, azioni, descrittori di filtro, gli elenchi di controllo di azione e i valori di parametro predefiniti.
 
 ### <a name="define-type-descriptors"></a>Definire i descrittori di tipo
  Usare la **Esplora integrazione applicativa dei dati** per definire i descrittori di tipo. Le soluzioni di integrazione applicativa dei dati consente di definire un descrittore di tipi una sola volta e riusare quindi tale descrittore di tipo in un' posizione nel modello. A tale scopo, copiare un descrittore di tipi e incollarlo in qualsiasi altro parametro oppure descrittore di tipo.
 
 > [!NOTE]
->  Le modifiche a un descrittore di tipo originale non influiscono le copie che del descrittore di tipo.
+> Le modifiche a un descrittore di tipo originale non influiscono le copie che del descrittore di tipo.
 
  Per altre informazioni, vedere [Procedura: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

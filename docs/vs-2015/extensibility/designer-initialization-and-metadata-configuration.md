@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439050"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inizializzazione della finestra di progettazione e configurazione dei metadati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
 1. Creazione di un oggetto che implementa il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
    > [!NOTE]
-   >  Il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe non deve essere implementata mai sullo stesso oggetto come il <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > Il <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe non deve essere implementata mai sullo stesso oggetto come il <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
 2. Registrare la classe che implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> come fornire supporto per le estensioni della finestra di progettazione del pacchetto VSPackage applicando le istanze di <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> per la classe che fornisce l'implementazione di VSPackage del <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Modifica degli attributi dei metadati e il filtro associato a una finestra di pr
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  Attualmente, l'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente, abbiamo stavamo tenta di modificare una proprietà, ad esempio il `Color` proprietà di un oggetto. Se `false` passato per il flag globale `CustomBrowser` mai vengono visualizzati perché la finestra di progettazione crea mai un'istanza di `Color`. Impostazione del flag globale su `false` è utile per i componenti, ad esempio controlli, timer e le finestre di dialogo.  
+> Attualmente, l'area di progettazione supporta solo la creazione di componenti e pertanto solo i componenti possono avere metadati locali. Nell'esempio precedente, abbiamo stavamo tenta di modificare una proprietà, ad esempio il `Color` proprietà di un oggetto. Se `false` passato per il flag globale `CustomBrowser` mai vengono visualizzati perché la finestra di progettazione crea mai un'istanza di `Color`. Impostazione del flag globale su `false` è utile per i componenti, ad esempio controlli, timer e le finestre di dialogo.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

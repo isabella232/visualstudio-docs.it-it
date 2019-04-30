@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432451"
 ---
 # <a name="sccdirdiff-function"></a>Funzione SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Se supportato dal plug-in, in modo invisibile Confronta alla directory tramite il timestamp oppure, se non è supportato, esegue il fallback su SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Questa funzione Usa gli stessi flag di comando come il [SccDiff](../extensibility/sccdiff-function.md). Tuttavia, un plug-in del controllo del codice sorgente può scegliere di non supportare l'operazione "diff veloce" per le directory.  
+> Questa funzione Usa gli stessi flag di comando come il [SccDiff](../extensibility/sccdiff-function.md). Tuttavia, un plug-in del controllo del codice sorgente può scegliere di non supportare l'operazione "diff veloce" per le directory.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436412"
 ---
 # <a name="getting-a-port"></a>Recupero di una porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Una porta rappresenta una connessione a un computer in cui i processi in esecuzi
  Questo frammento di codice viene illustrato come utilizzare la porta fornita da [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) per registrare un nodo programma [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Parametri non direttamente correlati a questo concetto sono stati omessi per maggiore chiarezza.  
   
 > [!NOTE]
->  Questo esempio Usa la porta per avviare e riprendere il processo e si presuppone che il [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaccia è implementata sulla porta. Si tratta in alcun modo l'unico modo per eseguire queste attività ed è possibile che la porta non ancora coinvolto diverso da disporre del programma [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) assegnato a esso.  
+> Questo esempio Usa la porta per avviare e riprendere il processo e si presuppone che il [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaccia è implementata sulla porta. Si tratta in alcun modo l'unico modo per eseguire queste attività ed è possibile che la porta non ancora coinvolto diverso da disporre del programma [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) assegnato a esso.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

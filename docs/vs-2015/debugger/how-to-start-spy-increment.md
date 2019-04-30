@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442745"
 ---
 # <a name="how-to-start-spy"></a>Procedura: Avviare Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60066708"
  Quando si avvia Spy + +, se viene visualizzato un messaggio per chiedere l'autorizzazione per apportare modifiche al computer, fare clic su **Sì**.  
   
 > [!NOTE]
->  È possibile eseguire solo un'istanza di Spy + +. Se si prova a eseguire un'altra istanza, verifica semplicemente l'istanza attualmente in esecuzione ottenere lo stato attivo.  
+> È possibile eseguire solo un'istanza di Spy + +. Se si prova a eseguire un'altra istanza, verifica semplicemente l'istanza attualmente in esecuzione ottenere lo stato attivo.  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Per avviare Spy + + da Visual Studio  
   
@@ -35,7 +35,7 @@ ms.locfileid: "60066708"
      Poiché Spy + + viene eseguito in modo indipendente, dopo averla avviata, è possibile chiudere Visual Studio.  
   
     > [!NOTE]
-    >  Quando vengono registrati i messaggi con Spy + +, è possibile che il sistema operativo più lenta.  
+    > Quando vengono registrati i messaggi con Spy + +, è possibile che il sistema operativo più lenta.  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Avviare Spy + + in un prompt dei comandi  
   

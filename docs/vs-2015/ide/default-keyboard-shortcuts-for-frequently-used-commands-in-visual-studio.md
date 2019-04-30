@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437515"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi utilizzati di frequente in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60068873"
 È possibile accedere ai comandi utilizzati più di frequente in Visual Studio scegliendo questi tasti di scelta rapida predefiniti. Per un elenco completo dei comandi con tasti di scelta rapida predefiniti, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  È possibile cercare il tasto di scelta rapida per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**.
+> È possibile cercare il tasto di scelta rapida per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**.
 
  **In questo argomento**
 

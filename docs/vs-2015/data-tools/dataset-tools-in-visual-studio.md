@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431134"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  I set di dati e le classi correlate sono tecnologie .NET legacy dal degli anni 2000 anticipata che consentono alle applicazioni a funzionare con i dati in memoria mentre le applicazioni vengono disconnessi dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e rendere permanenti le modifiche nel database. Anche se i set di dati hanno dimostrato di essere una tecnologia di grande successo, è consigliabile che le nuove applicazioni .NET usano Entity Framework. Entity Framework fornisce un modo più semplice per lavorare con dati tabulari come modelli a oggetti, e ha un'interfaccia di programmazione più semplice.
+> I set di dati e le classi correlate sono tecnologie .NET legacy dal degli anni 2000 anticipata che consentono alle applicazioni a funzionare con i dati in memoria mentre le applicazioni vengono disconnessi dal database. Sono particolarmente utili per le applicazioni che consentono agli utenti di modificare i dati e rendere permanenti le modifiche nel database. Anche se i set di dati hanno dimostrato di essere una tecnologia di grande successo, è consigliabile che le nuove applicazioni .NET usano Entity Framework. Entity Framework fornisce un modo più semplice per lavorare con dati tabulari come modelli a oggetti, e ha un'interfaccia di programmazione più semplice.
 
  Un oggetto set di dati è un oggetto in memoria che è fondamentalmente un mini-database. Contiene gli oggetti DataTable e DataColumn DataRow in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, in modo che gli aggiornamenti possono essere rilevati e inviati nuovamente al database quando l'applicazione verrà riconnessa.
 

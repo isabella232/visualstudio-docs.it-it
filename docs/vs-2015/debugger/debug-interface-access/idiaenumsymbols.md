@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0aa09fe72030289f33ccf32f9777870a151ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440816"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ IDiaEnumSymbols : IUnknown
  In questo esempio viene illustrato come ottenere il `IDiaEnumSymbols` interfaccia e quindi usare tale enumerazione ai tipi di elenco definito dall'utente (UDT).  
   
 > [!NOTE]
->  `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
+> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  

@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433283"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizzazione del comportamento di eliminazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ L'eliminazione di un elemento in genere determina l'eliminazione anche degli ele
  Le opzioni del file di definizione DSL consentono solo di scegliere se propagare l'eliminazione a un elemento immediatamente adiacente. Per implementare uno schema di propagazione dell'eliminazione più complesso, è possibile scrivere codice programma.  
   
 > [!NOTE]
->  Per aggiungere il codice programma alla definizione DSL, creare un file di codice separato nella **Dsl** del progetto e scrivere definizioni parziali per aumentare le classi nella cartella codice generato. Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Per aggiungere il codice programma alla definizione DSL, creare un file di codice separato nella **Dsl** del progetto e scrivere definizioni parziali per aumentare le classi nella cartella codice generato. Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> La definizione di una chiusura di eliminazione  
  L'operazione di eliminazione Usa la classe _modello_**DeleteClosure** per determinare quali elementi eliminare, data una selezione iniziale. Chiama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` ripetutamente, verificando il grafico delle relazioni. È possibile eseguire l'override di questi metodi. ShouldVisitRolePlayer viene fornito con l'identità di un collegamento e l'elemento di uno dei ruoli del collegamento. Deve restituire uno dei valori seguenti:  
@@ -213,7 +213,7 @@ partial class Artist
      Per altre informazioni, vedere [gestori di propagare le modifiche di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Dopo l'eliminazione di un elemento, è possibile accedere ai relativi valori delle proprietà di dominio, ma non è possibile passare ai collegamenti della relazione. Tuttavia, se si imposta un evento Deleted in una relazione, è possibile anche accedere ai due elementi che ne costituivano gli assegnatari di ruolo. Quindi, per rispondere all'eliminazione di un elemento modello ma anche accedere a un elemento al quale era collegato, impostare un evento Delete nella relazione invece che nella classe di dominio dell'elemento.  
+    > Dopo l'eliminazione di un elemento, è possibile accedere ai relativi valori delle proprietà di dominio, ma non è possibile passare ai collegamenti della relazione. Tuttavia, se si imposta un evento Deleted in una relazione, è possibile anche accedere ai due elementi che ne costituivano gli assegnatari di ruolo. Quindi, per rispondere all'eliminazione di un elemento modello ma anche accedere a un elemento al quale era collegato, impostare un evento Delete nella relazione invece che nella classe di dominio dell'elemento.  
   
 ### <a name="example-deletion-rules"></a>Esempio di regole di eliminazione  
   

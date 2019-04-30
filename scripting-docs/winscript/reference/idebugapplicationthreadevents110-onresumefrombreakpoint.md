@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b681a9c89a2b7d48864e7ed3fc48460c64d2878
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 61cb434c5d3514c63446792029b54e2f1413e006
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440481"
 ---
 # <a name="idebugapplicationthreadevents110onresumefrombreakpoint"></a>IDebugApplicationThreadEvents110::OnResumeFromBreakPoint
 Il thread si riattiva da un punto di interruzione e sarà attivo anche in questo caso.  
   
 > [!IMPORTANT]
->  [Interfaccia IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> [Interfaccia IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   

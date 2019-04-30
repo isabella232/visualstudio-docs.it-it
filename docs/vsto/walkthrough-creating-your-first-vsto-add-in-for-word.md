@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438497"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procedura dettagliata: Creare un componente aggiuntivo di VSTO per Word
   Questa procedura dettagliata introduttiva illustra come creare un componente aggiuntivo VSTO per Microsoft Office Word.  Le funzionalità create in questo tipo di soluzione sono disponibili per l'applicazione, indipendentemente da quali documenti vengano aperti.
@@ -83,7 +83,7 @@ ms.locfileid: "60079292"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Questo codice usa il valore di indice 1 per accedere al primo paragrafo della raccolta <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
+   > Questo codice usa il valore di indice 1 per accedere al primo paragrafo della raccolta <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
 
 2. Se si usa C#, aggiungere il seguente codice obbligatorio al gestore eventi `ThisAddIn_Startup` . Tale codice viene usato per connettere il gestore eventi `Application_DocumentBeforeSave` all'evento <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .
 

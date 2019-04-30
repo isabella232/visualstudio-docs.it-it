@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7d35347a4b656f9610097bc8dfe03e7c8488c01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b43e7806ebf6d67300fdee7be165c7cd745c4acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431711"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Procedura: Creare uno shader con trama in scala di grigi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
 4. Calcolare il valore della scala di grigi usando il nodo **Desatura**. In modalità **Seleziona** spostare il terminale **RGB** del nodo **Campione trama** nel terminale **RGB** del nodo **Desatura**.  
   
    > [!NOTE]
-   >  Per impostazione predefinita, il nodo **Desatura** desatura completamente il colore di input e usa i valori di luminanza standard per la conversione in scala di grigi. È possibile modificare il comportamento del nodo**Desatura** modificando il valore della proprietà **Luminanza** o desaturando parzialmente il colore di input. Per desaturare parzialmente il colore di input, immettere un valore scalare compreso nell'intervallo [0,1) nel terminale **Percentuale**  del nodo **Desatura**.  
+   > Per impostazione predefinita, il nodo **Desatura** desatura completamente il colore di input e usa i valori di luminanza standard per la conversione in scala di grigi. È possibile modificare il comportamento del nodo**Desatura** modificando il valore della proprietà **Luminanza** o desaturando parzialmente il colore di input. Per desaturare parzialmente il colore di input, immettere un valore scalare compreso nell'intervallo [0,1) nel terminale **Percentuale**  del nodo **Desatura**.  
   
 5. Collegare il valore del colore in scala di grigi al colore finale. Spostare il terminale **Output** del nodo **Desatura** nel terminale **RGB** del nodo **Colore finale**.  
   
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un cubo.  
   
 > [!NOTE]
->  In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.  
+> In questa illustrazione, viene utilizzato un piano come forma di anteprima ed è stata specificata una trama per illustrare meglio l'effetto dello shader.  
   
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-grayscale-effect.png "Digit-Grayscale-Effect")  
   
@@ -52,7 +52,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Applicare uno Shader a un modello 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)   
+ [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md)   
  [Editor di immagini](../designers/image-editor.md)   
  [Finestra di progettazione shader](../designers/shader-designer.md)   
  [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md)

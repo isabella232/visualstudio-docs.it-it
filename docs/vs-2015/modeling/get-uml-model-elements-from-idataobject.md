@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427030"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Ottenere elementi di modelli UML da IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58954743"
 Quando l'utente trascina elementi da qualsiasi origine in un diagramma, gli elementi trascinati vengono codificati in un oggetto `System.Windows.Forms.IDataObject`. La codifica dipende dal tipo di oggetto di origine. Nel frammento seguente viene illustrato come recuperare gli elementi quando l'origine è un diagramma UML.  
   
 > [!NOTE]
->  La maggior parte delle operazioni che è necessario eseguire per i modelli UML può essere eseguita usando i tipi in definiti negli assembly **VisualStudio. ArchitectureTools** e  **Microsoft**. Tuttavia, a tale scopo, è necessario usare alcune classi che fanno parte dell'implementazione di strumenti di modellazione UML. Ad esempio, `ShapeElement` in questo frammento non equivale a `IShape` UML. Per ridurre il rischio di collocare il modello UML e diagrammi in uno stato incoerente, è preferibile evitare di usare i metodi su queste classi di implementazione, a eccezione dei casi in cui non è disponibile alcuna alternativa.  
+> La maggior parte delle operazioni che è necessario eseguire per i modelli UML può essere eseguita usando i tipi in definiti negli assembly **VisualStudio. ArchitectureTools** e  **Microsoft**. Tuttavia, a tale scopo, è necessario usare alcune classi che fanno parte dell'implementazione di strumenti di modellazione UML. Ad esempio, `ShapeElement` in questo frammento non equivale a `IShape` UML. Per ridurre il rischio di collocare il modello UML e diagrammi in uno stato incoerente, è preferibile evitare di usare i metodi su queste classi di implementazione, a eccezione dei casi in cui non è disponibile alcuna alternativa.  
   
 ## <a name="code-sample"></a>Esempio di codice  
  Il progetto deve fare riferimento a quanto segue [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assembly:  

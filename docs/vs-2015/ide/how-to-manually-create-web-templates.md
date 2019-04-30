@@ -14,20 +14,20 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431084"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Procedura: creare manualmente modelli Web
+# <a name="how-to-manually-create-web-templates"></a>Procedura: Creare manualmente modelli Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La creazione di un modello Web è diversa dalla creazione di altri tipi di modelli. Poiché i modelli di progetto Web vengono visualizzati nella finestra di dialogo **Aggiungi nuovo sito Web** e gli elementi di progetto Web vengono classificati in base al linguaggio di programmazione, il file con estensione vstemplate deve specificare il modello come modello Web e identificare il linguaggio di programmazione.  
   
 > [!NOTE]
->  I modelli Web devono contenere un file con estensione webproj vuoto che viene specificato usando l'attributo `File` dell'elemento `Project`. Anche se i progetti Web non richiedono file di progetto, questo file è necessario affinché un modello Web funzioni correttamente.  
+> I modelli Web devono contenere un file con estensione webproj vuoto che viene specificato usando l'attributo `File` dell'elemento `Project`. Anche se i progetti Web non richiedono file di progetto, questo file è necessario affinché un modello Web funzioni correttamente.  
   
 ### <a name="to-manually-create-a-web-template"></a>Per creare manualmente un modello Web  
   

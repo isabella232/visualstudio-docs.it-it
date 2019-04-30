@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444048"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752913"
 L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) permette di raccogliere tracce dalla riga di comando, in modo da poterle visualizzare nel Visualizzatore di concorrenza per Visual Studio. Questi strumenti possono essere usati nei computer in cui non è installato Visual Studio.  
   
 > [!NOTE]
->  A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) dall'Area download.  
+> A partire da Visual Studio 2013, il Visualizzatore di concorrenza è un'estensione facoltativa. (In precedenza era stato incluso in Visual Studio.) È possibile scaricare gli [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) dall'Area download.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Scaricare l'utilità riga di comando Visualizzatore di concorrenza  
  Per scaricare e installare l'utilità riga di comando, passare a [Strumenti di raccolta del visualizzatore di concorrenza per Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e seguire le istruzioni. Per impostazione predefinita, CVCollectionCmd.exe è installato in %Programmi%\Microsoft Concurrency Visualizer Collection Tools\ (%Programmi(x86)%\Microsoft Concurrency Visualizer Collection Tools\ nei computer x64).  
@@ -41,7 +41,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
  **CvCollectionCmd /?**  
   
-|Opzione|Description|Parametri|Valori restituiti|  
+|Opzione|Descrizione|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
 |Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
 |Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
@@ -57,14 +57,14 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
  Se si usa CVCollectionCmd per raccogliere tracce e si vogliono personalizzare le impostazioni di raccolta, usare un file di configurazione per specificarle.  
   
 > [!NOTE]
->  Quando si usa Visual Studio per raccogliere le tracce, è necessario non modificare direttamente il file di configurazione.  Per modificare le impostazioni, usare invece la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  
+> Quando si usa Visual Studio per raccogliere le tracce, è necessario non modificare direttamente il file di configurazione.  Per modificare le impostazioni, usare invece la finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) .  
   
  Per modificare le impostazioni di raccolta, creare un file di configurazione nella macchina in cui sarà eseguita l'utilità CVCollectionCmd. È possibile creare un file di configurazione completamente nuovo oppure copiare il file di configurazione disponibile nel computer in cui è installato Visual Studio e modificarlo. Il nome del file è `UserConfig.xml` e il file si trova nella cartella **Local AppData** . Quando si esegue l'utilità, usare l'opzione Config insieme al comando Launch, Attach o Analyze.  Specificare il percorso del file di configurazione nel parametro associato all'opzione Config.  
   
 ### <a name="configuration-file-tags"></a>Tag del file di configurazione  
  Il file di configurazione è basato su XML. Di seguito sono riportati i tag e i valori validi:  
   
-|Tag|Description|Valori|  
+|Tag|Descrizione|Valori|  
 |---------|-----------------|------------|  
 |Config|Delimita il file di configurazione complessivo.|Deve contenere gli elementi seguenti:<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Specifica la versione principale del file di configurazione.|Deve essere 1 per progetti [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Se è diverso da 1, l'utilità non funzionerà.|  
@@ -76,7 +76,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
 |MarkerProvider|Specifica un singolo provider marcatori.|Deve contenere gli elementi seguenti:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Può includere questi elementi:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Livello|Imposta il livello di importanza di un MarkerProvider.|-   Basso<br />-   Normale<br />-   Alto<br />-   Critico<br />-   Tutto|  
 |GUID|Identificatore univoco globale del provider marcatori ETW.|Un valore GUID.|  
-|nome|Specifica la descrizione del provider marcatori.|Stringa.|  
+|Nome|Specifica la descrizione del provider marcatori.|Stringa.|  
 |Categories|Specifica le categorie raccolte per il provider marcatori.|Stringa delimitata da virgole che include numeri o intervalli di numeri.|  
 |IsEnabled|Imposta un valore che determina se il provider marcatori è abilitato per la raccolta.|-   True<br />-   False|  
 |FilterConfig|Specifica l'elenco di opzioni di configurazione degli eventi ETW filtrati dalla raccolta.|Può includere gli elementi seguenti:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

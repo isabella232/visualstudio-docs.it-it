@@ -22,12 +22,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437052"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "60039018"
  Quando si trascina un oggetto o a una proprietà di **Zdroje dat** finestra di progettazione, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che crea un controllo con associazione a dati (o associa un controllo esistente all'oggetto o una proprietà). [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tuttavia, non genera il codice per inserire i dati nell'oggetto. È necessario scrivere questo codice manualmente.
 
 > [!NOTE]
->  Devono essere pubblico e delle classi personalizzate, per impostazione predefinita, dispone di un costruttore senza parametri. Non possono essere classi annidate che hanno un "punto" nella relativa sintassi. Per altre informazioni, vedere [XAML e classi personalizzate per WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Devono essere pubblico e delle classi personalizzate, per impostazione predefinita, dispone di un costruttore senza parametri. Non possono essere classi annidate che hanno un "punto" nella relativa sintassi. Per altre informazioni, vedere [XAML e classi personalizzate per WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Genera l'errore [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] che esegue le operazioni seguenti:
 

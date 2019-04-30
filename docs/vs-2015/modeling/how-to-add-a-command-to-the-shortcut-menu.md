@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426938"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: Aggiungere un comando al menu di scelta rapida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60093046"
    Per esempi, vedere la [sito Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> È inoltre possibile modificare il comportamento di alcuni comandi esistenti quali Taglia, Incolla, Seleziona tutto e Stampa eseguendo l'override dei metodi in CommandSet.cs. Per altre informazioni, vedere [Procedura: Modificare un comando di Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>Definizione di un comando usando MEF  
  Managed Extension Framework (MEF) fornisce un metodo alternativo per la definizione dei comandi di menu nel menu del diagramma. Il suo scopo principale è di consentire l'estensione di un DSL da parte dell'utente. Gli utenti possono scegliere di installare solo il DSL oppure sia il DSL sia le estensioni. Tuttavia, MEF riduce anche l'attività necessaria per definire i comandi del menu di scelta rapida, dopo l'attività iniziale di abilitazione di MEF sul DSL.  
@@ -90,7 +90,7 @@ ms.locfileid: "60093046"
     ```  
   
     > [!NOTE]
-    >  Ciascun pulsante o gruppo è identificato da un GUID e dall'ID di un numero intero. È possibile creare diversi gruppi e pulsanti con lo stesso GUID. Tuttavia, devono avere ID diversi. I nomi dei GUID e ID vengono convertiti in GUID effettivi e ID numerici nel `<Symbols>` nodo.  
+    > Ciascun pulsante o gruppo è identificato da un GUID e dall'ID di un numero intero. È possibile creare diversi gruppi e pulsanti con lo stesso GUID. Tuttavia, devono avere ID diversi. I nomi dei GUID e ID vengono convertiti in GUID effettivi e ID numerici nel `<Symbols>` nodo.  
   
 3. Aggiungere un vincolo di visibilità per il comando in modo che venga caricato solo nel contesto del linguaggio specifico di dominio. Per altre informazioni, vedere [elemento VisibilityConstraints](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60093046"
 5. Sostituire `{000...000}` con un GUID che identifica i gruppi e le voci di menu. Per ottenere un nuovo GUID, usare il **Crea GUID** strumento nel **Tools** menu.  
   
     > [!NOTE]
-    >  Se si aggiungono altri gruppi o altre voci di menu, è possibile usare lo stesso GUID. Tuttavia, è necessario usare nuovi valori per `IDSymbols`.  
+    > Se si aggiungono altri gruppi o altre voci di menu, è possibile usare lo stesso GUID. Tuttavia, è necessario usare nuovi valori per `IDSymbols`.  
   
 6. Nel codice copiato da questa procedura, sostituire ogni occorrenza delle stringhe seguenti con le proprie stringhe:  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Usare lo stesso valore GUID inserito in **Commands. vsct**.  
   
 > [!NOTE]
->  Se si modifica la sezione Symbols del file VSCT, è necessario anche modificare queste dichiarazioni in modo corrispondente e incrementare il numero di versione in Package.tt.  
+> Se si modifica la sezione Symbols del file VSCT, è necessario anche modificare queste dichiarazioni in modo corrispondente e incrementare il numero di versione in Package.tt.  
   
  Registrare i comandi di menu come parte di questo set di comandi. `GetMenuCommands()` è chiamato una volta quando il diagramma viene inizializzato:  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11c26b9a3aa25688958e784d88d0b494ef893909
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05bd9173b83ec3303a058dcf61ea48a7ef7675c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438583"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-ribbon-xml"></a>Procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione
   Questa procedura dettagliata viene illustrato come creare una scheda della barra multifunzione personalizzata usando il **sulla barra multifunzione (XML)** elemento.
@@ -36,7 +36,7 @@ ms.locfileid: "60085233"
 - Automazione di Microsoft Office Word usando i pulsanti sul **Add-Ins** scheda.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:

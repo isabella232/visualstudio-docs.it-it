@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426630"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedura: Specificare informazioni aggiuntive sul codice usando __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "58965894"
  Lo strumento di analisi di codice si presuppone che la condizione rappresentata dall'espressione sia true nel punto in cui la funzione viene visualizzata e rimanga true finché non viene modificata espressione, ad esempio, mediante l'assegnazione alla variabile.  
   
 > [!NOTE]
->  `__analysis_assume` non influisce sull'ottimizzazione del codice. Lo strumento di analisi codice, di fuori `__analysis_assume` viene definito come no-op.  
+> `__analysis_assume` non influisce sull'ottimizzazione del codice. Lo strumento di analisi codice, di fuori `__analysis_assume` viene definito come no-op.  
   
 ## <a name="example"></a>Esempio  
  Il codice seguente usa `__analysis_assume` per risolvere l'avviso di analisi del codice [C6388](../code-quality/c6388.md):  

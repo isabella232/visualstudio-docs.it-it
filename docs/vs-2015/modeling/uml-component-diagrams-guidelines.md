@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424441"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammi dei componenti UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
  Per altre informazioni su come usare i diagrammi dei componenti nel processo di progettazione, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+> I passaggi dettagliati per la creazione dei diagrammi di modellazione sono descritte nel [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Per creare un diagramma dei componenti  
   
@@ -157,7 +157,7 @@ In Visual Studio, è possibile creare un *diagramma dei componenti* per mostrare
          Un'interfaccia fornita verrà visualizzata nel componente e accanto viene visualizzato un tag azioni.  
   
         > [!NOTE]
-        >  Se si usa **Incolla** invece di **Incolla riferimento**, verrà creata una nuova interfaccia con un nuovo nome.  
+        > Se si usa **Incolla** invece di **Incolla riferimento**, verrà creata una nuova interfaccia con un nuovo nome.  
   
     3. Se si vuole creare un'interfaccia richiesta, fare clic sul tag azioni e quindi fare clic su **Converti in interfaccia richiesta**.  
   

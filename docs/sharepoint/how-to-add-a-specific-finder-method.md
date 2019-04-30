@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431277"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Procedura: Aggiungere un metodo Finder specifico
   È possibile restituire un'istanza singola entità tramite la creazione di un *Finder specifico* (metodo). Il servizio di integrazione applicativa dei dati (BDC) esegue il metodo Finder specifico quando un utente sceglie un'entità in una web part dei dati di business o un elenco esterno. Per altre informazioni, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615286"
 5. Configurare il descrittore di tipo del parametro restituito come un descrittore di tipo di entità. Per informazioni su come creare un descrittore di tipo di entità, vedere [come: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Si è autorizzati a eseguire questo passaggio se è stato aggiunto un metodo Finder per l'entità. Visual Studio Usa il descrittore di tipo definito nel metodo Finder.
+   > Si è autorizzati a eseguire questo passaggio se è stato aggiunto un metodo Finder per l'entità. Visual Studio Usa il descrittore di tipo definito nel metodo Finder.
 
    > [!NOTE]
-   >  Se il campo dell'identificatore del tipo di entità rappresenta un campo in una tabella di database che viene generato automaticamente, impostare il **Read-only** proprietà del campo identificatore **True**.
+   > Se il campo dell'identificatore del tipo di entità rappresenta un campo in una tabella di database che viene generato automaticamente, impostare il **Read-only** proprietà del campo identificatore **True**.
 
 6. Nel **Dettagli metodo** finestra, scegliere l'istanza del metodo del metodo.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615286"
      L'esempio seguente restituisce un contatto da database di esempio AdventureWorks per SQL Server.
 
      > [!NOTE]
-     >  Sostituire il valore del `ServerName` campo con il nome del server.
+     > Sostituire il valore del `ServerName` campo con il nome del server.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

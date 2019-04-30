@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431166"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Creare tabelle di ricerca nelle applicazioni Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Il termine *tabella di ricerca* descrive i controlli associati a due tabelle dat
 2. Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre e tutte le relative colonne e la tabella figlio correlata e tutte le relative colonne.  
   
     > [!NOTE]
-    >  Il nodo della tabella figlio è il nodo che viene visualizzato come nodo figlio espandibile nella tabella padre.  
+    > Il nodo della tabella figlio è il nodo che viene visualizzato come nodo figlio espandibile nella tabella padre.  
   
 3. Modificare il tipo di rilascio della tabella figlio alla **informazioni dettagliate** selezionando **dettagli** dall'elenco di controllo sul nodo della tabella figlio. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   

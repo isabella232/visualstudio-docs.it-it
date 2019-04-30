@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 979ca1b0422cf3a333164570aec0a0b0dee39960
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ca5c9294924b99f830ed05234c68bdba0e7a61a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412884"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 Questa interfaccia rappresenta un processo in esecuzione e i relativi programmi. Questa interfaccia è presente come una sostituzione per vari metodi di [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia. Fornisce controllo su tutti i programmi nel processo.
 
 > [!NOTE]
->  [Continuare](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), e [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md) metodi sono deprecati e non devono più essere utilizzati. Uso dei corrispondenti metodi on il `IDebugProcess3` invece dell'interfaccia.
+> [Continuare](../../../extensibility/debugger/reference/idebugprogram2-continue.md), [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md), e [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md) metodi sono deprecati e non devono più essere utilizzati. Uso dei corrispondenti metodi on il `IDebugProcess3` invece dell'interfaccia.
 
 ## <a name="syntax"></a>Sintassi
 

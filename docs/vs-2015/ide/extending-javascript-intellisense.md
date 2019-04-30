@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441470"
 ---
 # <a name="extending-javascript-intellisense"></a>Estensione di IntelliSense in JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ La funzionalità di estensibilità JavaScript IntelliSense consente di personali
   
  Per migliorare ulteriormente l'esperienza di sviluppo, si potrebbe voler fornire informazioni sul tipo per gli sviluppatori nella finestra di popup. È possibile fornire le informazioni sul tipo con JavaScript [commenti in formato documentazione XML](../ide/xml-documentation-comments-javascript.md) invece di tag di commento standard. Aggiungere commenti in formato documentazione XML tramite i tag di commenti a barra tripla (/ / /) e un set definito di elementi XML.  
   
- In alternativa, è possibile fornire le informazioni sul tipo usando l'estensibilità JavaScript IntelliSense. Questa funzionalità consente di personalizzare i risultati di IntelliSense per la creazione di estensioni di JavaScript e aggiungendoli al contesto di script. Per l'estensione, ovvero un file JavaScript, si sottoscrive gli eventi esposti dal `intellisense` oggetto del servizio di linguaggio. Estensibilità JavaScript IntelliSense è la soluzione preferita per le raccolte se un modello di comportamento nella libreria impedisce che il servizio JavaScript language service che fornisce il livello desiderato di supporto di IntelliSense e un'alternativa alla sintassi XML dichiarativa È necessario anche per i commenti della documentazione. Personalizzando i risultati di IntelliSense, è possibile creare un'eccellente esperienza di IntelliSense, indipendentemente dalle eventuali modelli di comportamento che potrebbe limitare le funzionalità predefinite del servizio di linguaggio. Per altre informazioni, vedere [completamento delle istruzioni per gli identificatori](../ide/statement-completion-for-identifiers.md).  
+ In alternativa, è possibile fornire le informazioni sul tipo usando l'estensibilità JavaScript IntelliSense. Questa funzionalità consente di personalizzare i risultati di IntelliSense per la creazione di estensioni di JavaScript e aggiungendoli al contesto di script. Per l'estensione, ovvero un file JavaScript, si sottoscrive gli eventi esposti dal `intellisense` oggetto del servizio di linguaggio. Estensibilità JavaScript IntelliSense è la soluzione preferita per le raccolte se un modello di comportamento nella libreria impedisce che il servizio JavaScript language service che fornisce il livello desiderato di supporto di IntelliSense e un'alternativa alla sintassi XML dichiarativa È necessario anche per i commenti della documentazione. Personalizzando i risultati di IntelliSense, è possibile creare un'eccellente esperienza di IntelliSense, indipendentemente dalle eventuali modelli di comportamento che potrebbe limitare le funzionalità predefinite del servizio di linguaggio. Per altre informazioni, vedere [Completamento delle istruzioni per gli identificativi](../ide/statement-completion-for-identifiers.md).  
   
 ## <a name="adding-an-extension-to-the-script-context"></a>Aggiunta di un'estensione per il contesto di Script  
  Per un'estensione di IntelliSense a essere eseguito, deve essere aggiunto al contesto script corrente. L'estensione può essere aggiunti automaticamente al contesto di script tramite il meccanismo di individuazione automatica oppure è possibile aggiungere manualmente l'estensione per il contesto di script usando i gruppi di riferimento o la direttiva di riferimento.  
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Per altri esempi, consultare il \\ \\ *il percorso di installazione di Visual Studio*\JavaScript\References cartella. Il file showPlainComments.js in questa cartella vengono forniti esempi dell'uso di altri eventi per fornire il supporto IntelliSense predefinito per i tag di commento JavaScript standard (/ /). Ad esempio underscorefilter.js, showPlainComments.js è già disponibile come estensione di lavoro ed è possibile visualizzare le informazioni risultanti di IntelliSense quando si usano i tag di commento nel codice per le variabili, funzioni e oggetti. Per altri esempi, vedere [esempi di codice](#CodeExamples).  
   
 > [!WARNING]
->  Se si modificano i file di estensione forniti con Visual Studio, è possibile disabilitare IntelliSense per JavaScript o funzionalità supportata dall'estensione.  
+> Se si modificano i file di estensione forniti con Visual Studio, è possibile disabilitare IntelliSense per JavaScript o funzionalità supportata dall'estensione.  
   
  Nel codice dell'estensione, è possibile creare gestori per i seguenti tipi di evento utilizzando `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Per esempi che illustrano le caratteristiche IntelliSense come il completamento delle istruzioni, informazioni sul parametro e informazioni rapide, vedere [uso di IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  In JavaScript, informazioni rapide si intende la finestra popup che viene visualizzato a destra di un elenco di completamento. È possibile richiamare manualmente le informazioni rapide.  
+> In JavaScript, informazioni rapide si intende la finestra popup che viene visualizzato a destra di un elenco di completamento. È possibile richiamare manualmente le informazioni rapide.  
   
 ## <a name="intellisenseObject"></a> Oggetto IntelliSense  
  Nella tabella seguente mostra le funzioni che sono disponibili per il `intellisense` oggetto. Il `intellisense` oggetto è disponibile solo in fase di progettazione.  

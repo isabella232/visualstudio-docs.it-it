@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426618"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Eseguire applicazioni Windows Store nel simulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Per altre informazioni su Windows Phone vedi [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) .  
   
 > [!IMPORTANT]
->  Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione. Se è necessario eseguire questo tipo di simulazione, si può usare il simulatore di Visual Studio 2013 in Windows 8.1 o sistemi operativi precedenti.  
+> Il simulatore di Visual Studio 2015 non include il pulsante Georilevazione perché il simulatore di Windows 10 non prevede la simulazione di georilevazione. Se è necessario eseguire questo tipo di simulazione, si può usare il simulatore di Visual Studio 2013 in Windows 8.1 o sistemi operativi precedenti.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Impostare il simulatore come destinazione  
  Per eseguire l'app di Windows Store nel simulatore, scegli **Simulatore** dall'elenco a discesa accanto al pulsante **Avvia debug** sulla barra degli strumenti **Standard** del debugger.  
@@ -86,10 +86,10 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Puoi modificare l'orientamento verticale e orizzontale del dispositivo ruotando il simulatore di 90 gradi in qualsiasi direzione.  
   
 > [!NOTE]
->  Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
+> Il simulatore non rispetta la proprietà [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) di un progetto. Ad esempio, se il progetto imposta l'orientamento su `Landscape`e quindi ruoti il simulatore sull'orientamento verticale, anche l'immagine visualizzata dal simulatore sarà ruotata e ridimensionata. Verifica queste impostazioni su un dispositivo reale.  
   
 > [!NOTE]
->  Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.  
+> Se ruoti il simulatore in modo che un suo bordo sia più largo dello schermo su cui viene visualizzato, il simulatore verrà ridimensionato automaticamente alle dimensioni dello schermo. Il simulatore non viene ripristinato alla dimensione originale se lo ruoti di nuovo.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modificare le dimensioni e la risoluzione dello schermo simulate  
  Per modificare le dimensioni e la risoluzione dello schermo simulate, scegliere il pulsante **Cambia risoluzione** nella tavolozza e scegliere una nuova dimensione e una nuova risoluzione dall'elenco.  
@@ -97,13 +97,13 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Le dimensioni e la risoluzione dello schermo sono elencate come *Larghezza schermo in pollici, larghezza in pixel X altezza in pixel*. Come noterai, le dimensioni e la risoluzione dello schermo sono simulate. Le coordinate della posizione nel simulatore vengono convertite nelle coordinate delle dimensioni e della risoluzione del dispositivo selezionato.  
   
 > [!NOTE]
->  Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per altre informazioni, vedere [Tutto sul responsive design per app UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.  
+> Puoi salvare le versioni ridimensionate delle immagini bitmap nell'app. Windows caricherà l'immagine corretta per la scala corrente. Per altre informazioni, vedere [Tutto sul responsive design per app UWP (Universal Windows Platform)](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Tuttavia, se modifichi la risoluzione del simulatore in modo Windows selezioni un'immagine diversa in base alla risoluzione, dovrai arrestare e riavviare la sessione di debug per visualizzare la nuova immagine.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Acquisire una schermata dell'app da inviare a Windows Store  
  Quando si invia un'applicazione all'archivio applicazioni di Windows, è necessario includere alcune schermate dell'app.  
   
 > [!NOTE]
->  La schermata viene salvato con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .  
+> La schermata viene salvato con la risoluzione corrente del simulatore. Per modificare la risoluzione, scegli il pulsante **Cambia risoluzione** .  
   
 - Per creare schermate dell'app dal simulatore, scegli il pulsante **Acquisisce la schermata negli Appunti** .  
   

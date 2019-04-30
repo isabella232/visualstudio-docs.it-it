@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437551"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancoraggio delle finestre
  Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
@@ -106,16 +106,16 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
  ![Nascondi automaticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Per specificare se l'opzione Nascondi automaticamente debba essere applicata alle finestre degli strumenti singolarmente o in gruppi ancorati, selezionare o deselezionare **Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva** nella finestra di dialogo **Opzioni** . Per altre informazioni, vedere [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
+> Per specificare se l'opzione Nascondi automaticamente debba essere applicata alle finestre degli strumenti singolarmente o in gruppi ancorati, selezionare o deselezionare **Nascondi automaticamente ha effetto solo sulla finestra degli strumenti attiva** nella finestra di dialogo **Opzioni** . Per altre informazioni, vedere [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  Le finestre degli strumenti con l'opzione Nascondi automaticamente abilitata potrebbero essere temporaneamente visualizzate quando la finestra ha lo stato attivo. Per nascondere di nuovo la finestra, selezionare un elemento all'esterno della finestra corrente. Quando la finestra non è nello stato attivo, non viene più visualizzata.
+> Le finestre degli strumenti con l'opzione Nascondi automaticamente abilitata potrebbero essere temporaneamente visualizzate quando la finestra ha lo stato attivo. Per nascondere di nuovo la finestra, selezionare un elemento all'esterno della finestra corrente. Quando la finestra non è nello stato attivo, non viene più visualizzata.
 
 ### <a name="specifying-a-monitor"></a>Specifica di un monitor
  Se si dispone di un secondo monitor, supportato dal sistema operativo, è possibile scegliere in quale monitor visualizzare una finestra. È possibile anche raggruppare più finestre in "raggruppamenti" su altri monitor.
 
 > [!TIP]
->  È possibile creare più istanze di **Esplora soluzioni** e spostarle in un altro monitor. Fare clic con il pulsante destro del mouse sulla finestra e scegliere **Nuova visualizzazione Esplora soluzioni**. È possibile ricollocare tutte le finestre nel monitor originale facendo doppio clic e premendo il tasto CTRL.
+> È possibile creare più istanze di **Esplora soluzioni** e spostarle in un altro monitor. Fare clic con il pulsante destro del mouse sulla finestra e scegliere **Nuova visualizzazione Esplora soluzioni**. È possibile ricollocare tutte le finestre nel monitor originale facendo doppio clic e premendo il tasto CTRL.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Reimpostare, nominare e passare da un layout di finestra all'altro
  È possibile ripristinare il layout di finestra originale dell'IDE per la raccolta delle impostazioni utilizzando il comando **Reimposta layout finestra** . Quando si esegue questo comando, si verificano le seguenti azioni:

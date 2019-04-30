@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434491"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
 - Accesso al database Northwind di esempio con l'autorizzazione per eseguire gli aggiornamenti.
   
 > [!NOTE]
->  Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
  Iniziare la procedura dettagliata creando una nuova applicazione Windows.  
@@ -86,7 +86,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
 3. Selezionare una connessione al database di esempio Northwind nell'elenco delle connessioni disponibili. Se la connessione non è disponibile nell'elenco delle connessioni, selezionare**nuova connessione**  
   
     > [!NOTE]
-    >  Se ci si connette a un file di database locale, selezionare **No** quando viene chiesto se si desidera aggiungere il file al progetto.  
+    > Se ci si connette a un file di database locale, selezionare **No** quando viene chiesto se si desidera aggiungere il file al progetto.  
   
 4. Nel **Salva stringa di connessione nel file di configurazione dell'applicazione**schermata, seleziona **successivo**.  
   
@@ -149,7 +149,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
  In questa sezione si aggiunta il codice che tenta di aggiornare il database. È anche possibile gestire qualsiasi <xref:System.Data.DBConcurrencyException> che potrebbero ottenere generati, oltre a qualsiasi altra eccezione.  
   
 > [!NOTE]
->  Il `CreateMessage` e `ProcessDialogResults` metodi verranno aggiunti più avanti in questa procedura dettagliata.  
+> Il `CreateMessage` e `ProcessDialogResults` metodi verranno aggiunti più avanti in questa procedura dettagliata.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Per aggiungere Gestione degli errori per l'errore di concorrenza  
   
@@ -201,7 +201,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
 6. Nel primo record (`ALFKI`) cambiare `ContactName` a `Maria Anders2`.  
   
     > [!NOTE]
-    >  Passare a un'altra riga per il commit della modifica.  
+    > Passare a un'altra riga per il commit della modifica.  
   
 7. Passare al `ConcurrencyWalkthrough`form in esecuzione.  
   

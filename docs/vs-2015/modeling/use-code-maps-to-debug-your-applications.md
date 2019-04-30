@@ -18,12 +18,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439666"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usare le mappe codice per eseguire il debug delle applicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
  ![Mappa del codice &#45; Mostra metodo e i campi correlati](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  L'evidenziazione verde indica gli ultimi elementi aggiunti alla mappa. La freccia verde indica la posizione del cursore nel codice. Le frecce tra gli elementi rappresentano relazioni diverse. È possibile ottenere altre informazioni sugli elementi nella mappa spostandovi sopra il mouse ed esaminando le relative descrizioni comandi.  
+> L'evidenziazione verde indica gli ultimi elementi aggiunti alla mappa. La freccia verde indica la posizione del cursore nel codice. Le frecce tra gli elementi rappresentano relazioni diverse. È possibile ottenere altre informazioni sugli elementi nella mappa spostandovi sopra il mouse ed esaminando le relative descrizioni comandi.  
   
  ![Mappa del codice &#45; visualizzazione di descrizioni comandi](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
  ![Mappa del codice &#45; esaminare la definizione di campo](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  È inoltre possibile spostare la freccia verde sulla mappa spostando il cursore nell'editor di codice.  
+> È inoltre possibile spostare la freccia verde sulla mappa spostando il cursore nell'editor di codice.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Informazioni sulle relazioni tra parti di codice  
  A questo punto si desidera sapere quale altro codice interagisce con i campi `history` e `paintObjects`. È possibile aggiungere tutti i metodi che fanno riferimento a questi campi alla mappa. Questa operazione può essere eseguita dalla mappa o dall'editor di codice.  
@@ -75,14 +75,14 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
  ![Aprire una mappa codici dall'editor di codice](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Se si aggiungono elementi da un progetto condiviso in più applicazioni, ad esempio Windows Phone o Windows Store, tali elementi vengono sempre visualizzati nella mappa insieme al progetto di app attualmente attivo. Se pertanto si modifica il contesto in un altro progetto di app, il contesto nella mappa viene modificato anche per tutti gli elementi appena aggiunti dal progetto condiviso. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.  
+> Se si aggiungono elementi da un progetto condiviso in più applicazioni, ad esempio Windows Phone o Windows Store, tali elementi vengono sempre visualizzati nella mappa insieme al progetto di app attualmente attivo. Se pertanto si modifica il contesto in un altro progetto di app, il contesto nella mappa viene modificato anche per tutti gli elementi appena aggiunti dal progetto condiviso. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.  
   
  Modificare il layout per ridisporre il flusso di relazioni e rendere la mappa più facile da leggere. È inoltre possibile spostare elementi nella mappa trascinandoli.  
   
  ![Mappa del codice &#45; modificare il layout](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Per impostazione predefinita **Layout incrementale** è attivata. Ciò consente di ridisporre la mappa il meno possibile quando vengono aggiunti nuovi elementi. Per ridisporre l'intera mappa ogni volta che si aggiungono nuovi elementi, disattivare **Layout incrementale**.  
+> Per impostazione predefinita **Layout incrementale** è attivata. Ciò consente di ridisporre la mappa il meno possibile quando vengono aggiunti nuovi elementi. Per ridisporre l'intera mappa ogni volta che si aggiungono nuovi elementi, disattivare **Layout incrementale**.  
   
  ![Mappa del codice &#45; modificare il layout](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Le mappe codice consentono di evitare di perdersi nelle codebase di grandi dimen
  ![Mappa del codice &#45; mappa aggiornata con una chiamata al metodo](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Quando si aggiorna la mappa, è possibile che venga visualizzato un messaggio che indica che l'indice di codice usato per creare la mappa è stato aggiornato. Ciò significa che un utente ha modificato il codice e di conseguenza la mappa non corrisponde al codice corrente. L'aggiornamento della mappa non verrà arrestato, ma potrebbe essere necessario ricreare la mappa per confermare che corrisponde al codice.  
+> Quando si aggiorna la mappa, è possibile che venga visualizzato un messaggio che indica che l'indice di codice usato per creare la mappa è stato aggiornato. Ciò significa che un utente ha modificato il codice e di conseguenza la mappa non corrisponde al codice corrente. L'aggiornamento della mappa non verrà arrestato, ma potrebbe essere necessario ricreare la mappa per confermare che corrisponde al codice.  
   
  A questo punto l'analisi è terminata. Il problema è stato individuato e corretto eseguendo il mapping del codice. Si dispone inoltre di una mappa che consente di spostarsi nel codice e di ricordare quanto indicato e che mostra i passaggi eseguiti per correggere il problema.  
   

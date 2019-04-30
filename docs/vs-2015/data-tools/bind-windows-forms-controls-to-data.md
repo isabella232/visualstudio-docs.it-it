@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439479"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associare controlli Windows Form ai dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "59668990"
  ![Associare l'origine dati per informazioni dettagliate](../data-tools/media/raddata-bind-data-source-to-details.png "raddata origine di dati di associazione per i dettagli")  
   
 > [!IMPORTANT]
->  Si noti che nella figura precedente, si trascina dalla proprietà Orders della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà Orders, i comandi di navigazione apportati nel DataGridView si rifletteranno immediatamente i controlli dei dettagli. Se è stato trascinato dalla tabella Orders, i controlli sarebbero ancora associati al set di dati, ma non potrebbe non essere sincronizzati con il controllo DataGridView.  
+> Si noti che nella figura precedente, si trascina dalla proprietà Orders della tabella Customers, non dalla tabella Orders. Tramite l'associazione alla proprietà Orders, i comandi di navigazione apportati nel DataGridView si rifletteranno immediatamente i controlli dei dettagli. Se è stato trascinato dalla tabella Orders, i controlli sarebbero ancora associati al set di dati, ma non potrebbe non essere sincronizzati con il controllo DataGridView.  
   
  La figura seguente mostra l'impostazione predefinita i controlli con associazione a dati che vengono aggiunti al form una volta associata la proprietà di ordini nella tabella Customers "Dettagli" nel **Zdroje dat** finestra.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55dfa9a360d33a73b6298f186d12810f8510b1fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af03329a05501427f6d04d6cddbd637c3311b339
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434920"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: Download di assembly su richiesta con l'API della distribuzione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60063556"
 Per impostazione predefinita, tutti gli assembly inclusi un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione vengono scaricati alla prima esecuzione dell'applicazione. Tuttavia, è possibile parti dell'applicazione usati da un set ridotto di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime (CLR).  
   
 > [!NOTE]
->  Per usare questa procedura, è necessario eseguire l'applicazione con attendibilità totale.  
+> Per usare questa procedura, è necessario eseguire l'applicazione con attendibilità totale.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  È necessario uno dei componenti seguenti per completare questa procedura dettagliata:  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428720"
 ---
 # <a name="how-to-add-a-finder-method"></a>Procedura: Aggiungere un metodo Finder
   Per abilitare il servizio di integrazione applicativa dei dati (BDC) visualizzare un elenco di entità in una web part o elenco, è necessario creare un *Finder* (metodo). Un metodo Finder è un metodo speciale che restituisce una raccolta di istanze di entità. Per altre informazioni, vedere [progettare un Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608071"
 4. Configurare il descrittore di tipo come un descrittore di tipo raccolta di entità. Per altre informazioni su come creare un descrittore di tipo raccolta di entità, vedere [come: Definire il descrittore di tipo di parametro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Non è necessario eseguire questo passaggio se è stato aggiunto un metodo Finder specifico per l'entità. Visual Studio Usa il descrittore di tipo definito nel metodo Finder specifico.
+   > Non è necessario eseguire questo passaggio se è stato aggiunto un metodo Finder specifico per l'entità. Visual Studio Usa il descrittore di tipo definito nel metodo Finder specifico.
 
 5. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida del servizio file di codice che è stato generato per l'entità e quindi scegliere **Visualizza codice**. Per altre informazioni sui file di codice del servizio, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608071"
      L'esempio seguente restituisce una raccolta di `Contact` entità usando i dati dal database di esempio AdventureWorks per SQL Server.
 
    > [!NOTE]
-   >  Sostituire il valore del `ServerName` campo con il nome del server.
+   > Sostituire il valore del `ServerName` campo con il nome del server.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

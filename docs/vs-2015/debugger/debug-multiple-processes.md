@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434101"
 ---
 # <a name="debug-multiple-processes"></a>Procedura: eseguire il debug di più processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Viene illustrato come avviare i processi di debug, passare da un processo all'al
 - [Avviare il debug di più processi in una soluzione di Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [modificare il progetto di avvio](#BKMK_Change_the_startup_project) • [avviare un progetto specifico in una soluzione](#BKMK_Start_a_specific_project_in_a_solution) • [avviare più progetti in un soluzione](#BKMK_Start_multiple_projects_in_a_solution) • [connettersi a un processo](#BKMK_Attach_to_a_process) • [avviare automaticamente un processo nel debugger](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  Il debugger non si connette automaticamente a un processo figlio che viene avviato da un processo sottoposto a debug, anche se il progetto figlio si trova nella stessa soluzione. Per eseguire il debug di un processo figlio:  
+> Il debugger non si connette automaticamente a un processo figlio che viene avviato da un processo sottoposto a debug, anche se il progetto figlio si trova nella stessa soluzione. Per eseguire il debug di un processo figlio:  
 > 
 > - Connettersi al processo figlio dopo averlo avviato.  
 > 
@@ -166,7 +166,7 @@ Viene illustrato come avviare i processi di debug, passare da un processo all'al
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Comandi per interrompere, eseguire le istruzioni e continuare  
   
 > [!NOTE]
->  Per impostazione predefinita, i comandi del debugger per interrompere, continuare ed eseguire le istruzioni interessano tutti i processi sottoposti a debug. Per modificare questo comportamento, vedere [configurare il comportamento di esecuzione di più processi](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Per impostazione predefinita, i comandi del debugger per interrompere, continuare ed eseguire le istruzioni interessano tutti i processi sottoposti a debug. Per modificare questo comportamento, vedere [configurare il comportamento di esecuzione di più processi](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Viene illustrato come avviare i processi di debug, passare da un processo all'al
   Ad esempio, se si avvia il debug di un processo da una soluzione di Visual Studio, connettersi a un altro processo già in esecuzione e quindi scegliere **arresta debug**, la sessione di debug termina, il processo di cui è stato avviato in Visual Studio viene terminato, mentre il processo di cui è collegato viene lasciato in esecuzione. È possibile utilizzare le procedure seguenti per controllare la modalità di interruzione del debug.  
   
 > [!NOTE]
->  Il **quando si interrompe un processo, interrompi tutti i processi** opzione influisce sull'interruzione del debug o chiusura e disconnessione dai processi.  
+> Il **quando si interrompe un processo, interrompi tutti i processi** opzione influisce sull'interruzione del debug o chiusura e disconnessione dai processi.  
   
  **Per modificare la modalità arresta debug influisce su un singolo processo**  
   

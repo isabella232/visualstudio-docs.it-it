@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62425e6144e11f32d6933f134291fab01a15e6c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1a76cd9b726e534271937cb67a8d3f946d4eb477
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433202"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Esecuzione del debug utilizzando il Visualizzatore di archivio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);
 ```  
   
 > [!NOTE]
->  È necessario sostituire `mystore` con il nome dell'istanza di archivio. Inoltre, se si aggiunge lo spazio dei nomi al codice, è possibile digitare il comando per la visualizzazione Store Viewer senza il nome completo dello spazio dei nomi:  
+> È necessario sostituire `mystore` con il nome dell'istanza di archivio. Inoltre, se si aggiunge lo spazio dei nomi al codice, è possibile digitare il comando per la visualizzazione Store Viewer senza il nome completo dello spazio dei nomi:  
 >   
->  `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
+> `using Microsoft.VisualStudio.Modeling.Diagnostics;`  
 >   
->  `…`  
+> `…`  
 >   
->  `StoreViewer.Show(mystore);`  
+> `StoreViewer.Show(mystore);`  
   
  Il `Show` metodo dispone di diversi overload. È possibile specificare un'istanza di un archivio o una partizione come parametro.  
   

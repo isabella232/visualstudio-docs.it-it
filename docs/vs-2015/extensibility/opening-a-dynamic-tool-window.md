@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09b81294abc708cf7616dad03b5dd7333d6a1719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435879"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Apertura di una finestra degli strumenti dinamica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,14 +23,14 @@ ms.locfileid: "60076786"
 Finestre degli strumenti sono in genere aperte da un comando in un menu o un equivalente tasti di scelta rapida. In alcuni casi, tuttavia, potrebbe essere necessario una finestra degli strumenti visualizzata ogni volta che si applica un contesto dell'interfaccia utente specifico e si chiude quando il contesto dell'interfaccia utente non è più applicabile. Finestre degli strumenti come questi vengono chiamate *dinamici* oppure *visibili automaticamente*.  
   
 > [!NOTE]
->  Per un elenco di contesti dell'interfaccia utente predefiniti, vedere <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Per il  
+> Per un elenco di contesti dell'interfaccia utente predefiniti, vedere <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT>. Per il  
   
  Se si desidera aprire una finestra degli strumenti dinamici all'avvio ed è possibile che la creazione di esito negativo, è necessario implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx> dell'interfaccia e testare le condizioni di errore nel <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwnerEx.QueryShowTool%2A> (metodo). Affinché la shell di sapere che si dispone di una finestra degli strumenti dinamica che deve essere aperta all'avvio, è necessario aggiungere il `SupportsDynamicToolOwner` valore (impostato su 1) per la registrazione del pacchetto. Questo valore non fa parte dello standard <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>, pertanto è necessario creare un attributo personalizzato per aggiungerlo. Per altre informazioni sugli attributi personalizzati, vedere [utilizzando un attributo di registrazione personalizzato per registrare un'estensione](../misc/using-a-custom-registration-attribute-to-register-an-extension.md).  
   
  Usare <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> per aprire una finestra degli strumenti. La finestra degli strumenti viene creata in base alle esigenze.  
   
 > [!NOTE]
->  Una finestra degli strumenti dinamica può essere chiusa dall'utente. Se si desidera creare un comando di menu in modo che l'utente è possibile riaprire la finestra degli strumenti, il comando di menu deve essere abilitato nello stesso contesto dell'interfaccia utente che apre la finestra degli strumenti e disabilitati in caso contrario.  
+> Una finestra degli strumenti dinamica può essere chiusa dall'utente. Se si desidera creare un comando di menu in modo che l'utente è possibile riaprire la finestra degli strumenti, il comando di menu deve essere abilitato nello stesso contesto dell'interfaccia utente che apre la finestra degli strumenti e disabilitati in caso contrario.  
   
 ### <a name="to-open-a-dynamic-tool-window"></a>Per aprire una finestra degli strumenti dinamica  
   

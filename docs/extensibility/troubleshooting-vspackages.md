@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434244"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage e suggerimenti per risolvere i problemi.
@@ -46,7 +46,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 4. Aprire il **Output** finestra dell'istanza di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] che non riesce a caricare il pacchetto VSPackage. Informazioni sui motivi per cui il pacchetto VSPackage non riesce a caricare potrebbero essere visualizzate in tale finestra.
 
    > [!NOTE]
-   >  Se si avvia la versione sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), esaminare le **Output** finestra di entrambe le versioni.
+   > Se si avvia la versione sperimentale di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dal [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), esaminare le **Output** finestra di entrambe le versioni.
 
 5. Esaminare il log attività.
 
@@ -85,7 +85,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
     4. Nel **Debug** menu, fare clic su **Avvia debug** o premere F5.
 
         > [!NOTE]
-        >  Se si esegue il debug di un progetto, creare o caricare un'istanza esistente del progetto a questo punto.
+        > Se si esegue il debug di un progetto, creare o caricare un'istanza esistente del progetto a questo punto.
 
 2. Usare il log attività.
 

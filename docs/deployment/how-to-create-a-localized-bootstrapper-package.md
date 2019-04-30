@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406832"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto localizzato del programma di avvio automatico
 Dopo aver creato un pacchetto del programma di avvio automatico, è possibile creare versioni localizzate del pacchetto creando altri due file per ognuna delle impostazioni locali, ovvero un file per le condizioni di licenza software (ad esempio *eula.rtf*) e un manifesto di pacchetto (*package.xml*).
@@ -31,7 +31,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 3. Creare un manifesto di pacchetto denominato *package.xml*, aggiornare le stringhe e le impostazioni cultura e quindi inserire il file nella nuova cartella. Se è già stato creato un programma di avvio automatico di Visual Studio nella lingua di destinazione, è possibile copiare il file *package.xml* di Visual Studio e modificarlo in questo passaggio.
 
 > [!NOTE]
->  Se si intende usare un progetto di installazione per la distribuzione delle applicazioni, è possibile localizzare l'applicazione modificando la proprietà **Localization**.
+> Se si intende usare un progetto di installazione per la distribuzione delle applicazioni, è possibile localizzare l'applicazione modificando la proprietà **Localization**.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

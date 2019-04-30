@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385962"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Imposta la proprietà specificata dal parametro.  
@@ -52,7 +52,7 @@ HRESULT SetProperty(
   
  I valori consentiti per `dwProperty` sono descritti nella tabella seguente.  
   
-|Costante|Valore|Significato|  
+|Costante|Value|Significato|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Forza il motore di scripting per dividere in modalità di numero intero anziché in modalità del punto a virgola mobile. Il valore predefinito è `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Consente la funzione di confronto di stringa del motore di scripting da sostituire.|  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Per selezionare il set di funzionalità del linguaggio a essere supportati quando il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting viene inizializzata, richiamare `SetProperty` e passare un valore che corrisponde alla funzionalità del linguaggio impostata deve essere abilitato per SCRIPTPROP_INVOKEVERSIONING. Se questa proprietà è impostata su 1 (SCRIPTLANGUAGEVERSION_5_7), le funzionalità del linguaggio disponibili sono identici a quelli che è disponibile nella versione 5.7 del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting. Se è impostata su 2 (SCRIPTLANGUAGEVERSION_5_8), le funzionalità del linguaggio disponibili sono quelli che è disponibile nella versione 5.7 Oltre alle nuove funzionalità che sono stati aggiunti nella versione 5.8. Per impostazione predefinita, questa proprietà è impostata su 0 (SCRIPTLANGUAGEVERSION_DEFAULT), che equivale a set di funzionalità del linguaggio che è disponibile nella versione 5.7, a meno che l'host supporta un comportamento predefinito diverso. Ad esempio, Internet Explorer 8 opts nel [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funzionalità del linguaggio che sono supportate dalla versione 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting per impostazione predefinita quando la modalità documento predefinito per Internet Explorer 8 è la modalità "Standard di Internet Explorer 8". Cambio di modalità documento di Internet Explorer 8 a standard di Internet Explorer 7 o modalità non standard viene reimpostato il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting per supportare solo il set di funzionalità del linguaggio presenti nella versione 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING deve essere impostato solo quando il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting viene inizializzato.  
+> SCRIPTPROP_INVOKEVERSIONING deve essere impostato solo quando il [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motore di scripting viene inizializzato.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente viene illustrato come forzare il motore di scripting da utilizzare la divisione di interi e su come consentire l'overload della funzione di confronto.  

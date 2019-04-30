@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433137"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definire un profilo per estendere UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60069368"
   È possibile distribuire i propri profili al team. Ogni membro del team può installare il profilo. Ciò consente di modificare e creare modelli che usano i relativi stereotipi.  
   
 > [!NOTE]
->  Se si applicano gli stereotipi di un profilo in un modello che si sta modificando e quindi si condivide il modello con altre persone, queste devono installare lo stesso profilo nei propri computer. In caso contrario, non saranno in grado di visualizzare gli stereotipi usati.  
+> Se si applicano gli stereotipi di un profilo in un modello che si sta modificando e quindi si condivide il modello con altre persone, queste devono installare lo stesso profilo nei propri computer. In caso contrario, non saranno in grado di visualizzare gli stereotipi usati.  
   
  Un profilo fa spesso parte di una maggiore [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] estensione. Ad esempio, si può definire un comando che traduce alcune parti di un modello in codice. È possibile definire un profilo che gli utenti devono applicare ai pacchetti che vogliono tradurre. È possibile distribuire il nuovo comando insieme al profilo in una singola estensione di [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
@@ -83,7 +83,7 @@ ms.locfileid: "60069368"
 1. Creare un progetto di estensione di Visual Studio  
   
    > [!NOTE]
-   >  È necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per usare questa procedura.  
+   > È necessario avere installato [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] per usare questa procedura.  
   
    1. Scegliere **Nuovo** dal menu **File**, quindi fare clic su **Progetto**.  
   
@@ -194,7 +194,7 @@ ms.locfileid: "60069368"
 2. Aggiungere una nuova directory nella stessa directory del file del profilo predefinito.  
   
     > [!NOTE]
-    >  Se si sta compilando l'estensione usando un progetto di estensione di Visual Studio, usare Esplora soluzioni per aggiungere una nuova cartella al progetto.  
+    > Se si sta compilando l'estensione usando un progetto di estensione di Visual Studio, usare Esplora soluzioni per aggiungere una nuova cartella al progetto.  
   
 3. Sostituire il nome della nuova directory con il codice breve ISO delle impostazioni cultura localizzate, ad esempio `bg` per il bulgaro o `fr` per il francese. È consigliabile usare un codice indipendente dalle impostazioni cultura, in genere costituito da due lettere, non il codice delle impostazioni cultura specifiche come ad esempio `fr-CA`. Per altre informazioni sui codici delle impostazioni cultura, vedere [metodo CultureInfo. GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), che fornisce un elenco completo dei codici delle impostazioni cultura.  
   
@@ -211,7 +211,7 @@ ms.locfileid: "60069368"
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  Non è necessario inserire in `extension.vsixmanifest` un riferimento alle versioni localizzate dei profili. I file dei profili copiati devono avere lo stesso nome del profilo nella cartella padre.  
+    > Non è necessario inserire in `extension.vsixmanifest` un riferimento alle versioni localizzate dei profili. I file dei profili copiati devono avere lo stesso nome del profilo nella cartella padre.  
   
 5. Modificare la nuova copia del profilo, traducendo nella lingua di destinazione tutte le parti che saranno visibili all'utente, ad esempio gli attributi `displayName`.  
   
@@ -247,7 +247,7 @@ ms.locfileid: "60069368"
 ```  
   
 > [!NOTE]
->  L'attributo `name` non deve contenere spazi o punteggiatura. L'attributo `displayName`, visualizzato nell'interfaccia utente, deve essere una stringa XML valida.  
+> L'attributo `name` non deve contenere spazi o punteggiatura. L'attributo `displayName`, visualizzato nell'interfaccia utente, deve essere una stringa XML valida.  
   
  Ogni profilo contiene tre sezioni principali. In ordine inverso, sono le seguenti:  
   
@@ -310,7 +310,7 @@ ms.locfileid: "60069368"
  L'attributo `name` di `metaclassMoniker` è un collegamento a un elemento della sezione `<metaClasses>`.  
   
 > [!NOTE]
->  Il nome del moniker deve iniziare con `/yourProfileName/`, dove `yourProfileName` è definito nell'attributo `name` del profilo (in questo esempio, "CSharpProfile"). Il moniker termina con il nome di una delle voci nella sezione delle metaclassi.  
+> Il nome del moniker deve iniziare con `/yourProfileName/`, dove `yourProfileName` è definito nell'attributo `name` del profilo (in questo esempio, "CSharpProfile"). Il moniker termina con il nome di una delle voci nella sezione delle metaclassi.  
   
  Ogni stereotipo può elencare zero o più proprietà che aggiunge a tutti gli elementi del modello a cui viene applicato. Il `<propertyType>` contiene un collegamento a uno dei tipi definiti nel `<propertyTypes>` sezione. Il collegamento deve essere un oggetto `<externalTypeMoniker>` per fare riferimento a `<externalType>,` o un oggetto `<enumerationTypeMoniker>` per fare riferimento a `<enumerationType>`. Anche in questo caso, il collegamento inizia con il nome del profilo.  
   

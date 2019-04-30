@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441719"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650031"
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Per informazioni sulla procedura|Vedere|  
 |----------------------------------|---------|  

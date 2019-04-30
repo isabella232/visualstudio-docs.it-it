@@ -12,12 +12,12 @@ ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 261e71173e98e0ccee5e37f1c37d5825c42f5d93
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438157"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ IDebugStackFrame3 : IDebugStackFrame2
  Mediante l'intercettazione di un'eccezione, il debugger può consentire all'utente di apportare modifiche allo stato del programma in fase di debug e riprendere l'esecuzione nel punto in cui è stata generata l'eccezione.  
   
 > [!NOTE]
->  Le eccezioni intercettate sono consentite solo nel codice gestito, vale a dire, in un programma che viene eseguito in Common Language Runtime (CLR).  
+> Le eccezioni intercettate sono consentite solo nel codice gestito, vale a dire, in un programma che viene eseguito in Common Language Runtime (CLR).  
   
  Un motore di debug indica che lo supporta intercettazione delle eccezioni tramite l'impostazione "metricExceptions" su un valore pari a 1 in fase di esecuzione usando il `SetMetric` (funzione). Per altre informazioni, vedere [helper SDK per il debug](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   

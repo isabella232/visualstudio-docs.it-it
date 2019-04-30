@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b05288a8863b2c555493d4a3f7ea8e2b7537d5a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412384"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Fa sì che il thread corrente bloccare e invia una notifica del punto di interruzione per il debug dell'IDE.  
@@ -54,7 +54,7 @@ HRESULT HandleBreakPoint(
  Un motore del linguaggio chiama questo metodo nel contesto di un thread che raggiunge un punto di interruzione. Questo metodo blocca il thread corrente e invia una notifica di punto di interruzione per il debug dell'IDE. Quando il debugger consente di riprendere l'applicazione, il `pbra` parametro specifica l'azione da intraprendere.  
   
 > [!NOTE]
->  Il motore del linguaggio può essere chiamato dal thread per eseguire le attività, ad esempio enumerare stack frame o valutano espressioni durante il punto di interruzione.  
+> Il motore del linguaggio può essere chiamato dal thread per eseguire le attività, ad esempio enumerare stack frame o valutano espressioni durante il punto di interruzione.  
   
  Questo metodo determina `IApplicationDebugger::onHandleBreakPoint` da chiamare.  
   

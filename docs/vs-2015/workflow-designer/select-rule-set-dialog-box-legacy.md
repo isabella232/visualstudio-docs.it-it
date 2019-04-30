@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445421"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Finestra di dialogo Seleziona set di regole (legacy)
 Questo argomento viene descritto come usare il **seleziona Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Questo argomento viene descritto come usare il **seleziona Set di regole** nella
  Per altre informazioni su come creare e modificare set di regole, vedere [impostare Editor finestra di dialogo regola (Legacy)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!WARNING]
->  L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.  
+> L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.  
   
  Per altre informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://go.microsoft.com/fwlink?LinkID=65009).  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425740"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Campi e interfacce della finestra Proprietà
 Il modello per la selezione determinare quali informazioni vengono visualizzate nel **proprietà** finestra è basata sulla finestra di stato attivo nell'IDE. Ogni finestra e oggetto all'interno della finestra selezionata, può avere relativo oggetto di contesto di selezione il push nel contesto di selezione globale. L'ambiente aggiorna il contesto di selezione globale con i valori di una cornice di finestra quando tale finestra ha lo stato attivo. Quando viene modificato lo stato attivo, pertanto, non il contesto di selezione.
@@ -81,7 +81,7 @@ Nella parte inferiore della finestra **Proprietà** è disponibile un'area per l
 1. Aggiungere l'attributo `helpstringdll` all'istruzione library nella libreria dei tipi (`typelib`).
 
    > [!NOTE]
-   >  Questo passaggio è facoltativo se la libreria dei tipi è inclusa in un file di libreria di oggetti (con estensione olb).
+   > Questo passaggio è facoltativo se la libreria dei tipi è inclusa in un file di libreria di oggetti (con estensione olb).
 
 2. Specificare gli attributi `helpstringcontext` per le stringhe. È anche possibile specificare attributi `helpstring` .
 

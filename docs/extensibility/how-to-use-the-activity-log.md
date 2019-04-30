@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053130"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415535"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedura: Usare il log attività
 I pacchetti VSPackage possono scrivere messaggi nel log attività. Questa funzionalità è particolarmente utile per il debug di pacchetti VSPackage negli ambienti delle vendite al dettaglio.
 
 > [!TIP]
->  Il log attività è sempre attivato. Visual Studio consente di mantenere un buffer in sequenza delle ultime 100 voci, nonché le prime 10 voci, che dispone di informazioni di configurazione generale.
+> Il log attività è sempre attivato. Visual Studio consente di mantenere un buffer in sequenza delle ultime 100 voci, nonché le prime 10 voci, che dispone di informazioni di configurazione generale.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Per scrivere una voce nel log attività
 

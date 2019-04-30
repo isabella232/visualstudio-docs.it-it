@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437411"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Le regole propagano le modifiche all'interno del modello
 È possibile creare una regola di archivio per propagare una modifica da un elemento a un altro in Visualization and Modeling SDK (VMSDK). Quando viene apportata una modifica a qualsiasi elemento nella finestra di Store, le regole vengono pianificate da eseguire, in genere quando viene eseguito il commit della transazione più esterna. Esistono diversi tipi di regole per diversi tipi di eventi, ad esempio aggiungendo un elemento o l'eliminazione. È possibile collegare regole a tipi specifici di elementi, forme o i diagrammi. Molte funzionalità incorporate sono definite da regole: ad esempio, le regole di assicurano che un diagramma viene aggiornato quando viene modificato il modello. È possibile personalizzare il linguaggio specifico di dominio tramite l'aggiunta di regole personalizzate.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  Il codice di una regola deve modificare lo stato solo degli elementi all'interno di Store; vale a dire, la regola deve modificare solo gli elementi del modello, relazioni, forme, connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi Store. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Il codice di una regola deve modificare lo stato solo degli elementi all'interno di Store; vale a dire, la regola deve modificare solo gli elementi del modello, relazioni, forme, connettori, diagrammi o le relative proprietà. Se si desidera propagare le modifiche alle risorse all'esterno dell'archivio, definire gli eventi Store. Per altre informazioni, vedere [gestori propagare le modifiche apportate di fuori il modello di eventi](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Per definire una regola
 

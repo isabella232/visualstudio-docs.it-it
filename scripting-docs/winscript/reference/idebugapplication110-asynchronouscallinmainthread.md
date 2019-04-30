@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fc497e6621b309eed8fbb7e7c4e79f1ebb24c9c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d1b5e52d65a5fd70c4ec7de9ced9a0175940d93f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446410"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
 Effettua una chiamata asincrona sul thread principale.  
   
 > [!IMPORTANT]
->  [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
+> [Interfaccia IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) viene implementata da PDM v11.0 e versioni successive. Rilevata in activdbg100.h.  
   
 ## <a name="syntax"></a>Sintassi  
   

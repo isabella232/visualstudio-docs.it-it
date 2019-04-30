@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 199f89d7c2ce4c9674ed9d79ec13a1b392b70371
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8e9fe393f7b0ad52a8d713c0f41f25f03bb056ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434763"
 ---
 # <a name="sccaddfromscc-function"></a>Funzione SccAddFromScc
 Questa funzione consente di individuare i file già presenti nel sistema di controllo di origine e successivamente rendere tali file che fanno parte del progetto corrente. Ad esempio, questa funzione può ottenere un file di intestazione comuni nel progetto corrente senza copiare il file. Alla matrice restituita di file, `lplpFileNames`, contiene l'elenco di file che l'utente desidera aggiungere al progetto IDE.
@@ -69,7 +69,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` è un `char ***` puntatore. Il plug-in del controllo del codice sorgente posiziona un puntatore a una matrice di puntatori a nomi di file, quindi passare l'elenco nella modalità standard per questa API.
 
 > [!NOTE]
->  Iniziale versioni dell'API VSSCI non ha fornito un modo per indicare il progetto di destinazione per i file aggiunti. Per supportare questa operazione, la semantica di `lplpFIleNames` parametro sono stati migliorati per renderlo un parametro in/out anziché a un parametro di output. Se solo un singolo file è specificato, vale a dire, il valore a cui punta `lpnFiles` = 1, quindi il primo elemento di `lplpFileNames` contiene la cartella di destinazione. Usare questa nuova semantica, le chiamate IDE di `SccSetOption` utilizzabile con il `nOption`parametro impostato su `SCC_OPT_SHARESUBPROJ`. Se un plug-in del controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED`. In questo viene disabilitato in questo caso l'utilizzo dei **Aggiungi dal controllo del codice sorgente** funzionalità. Se un plug-in supporta il **Aggiungi dal controllo del codice sorgente** funzionalità (`SCC_CAP_ADDFROMSCC`), quindi deve supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK`.
+> Iniziale versioni dell'API VSSCI non ha fornito un modo per indicare il progetto di destinazione per i file aggiunti. Per supportare questa operazione, la semantica di `lplpFIleNames` parametro sono stati migliorati per renderlo un parametro in/out anziché a un parametro di output. Se solo un singolo file è specificato, vale a dire, il valore a cui punta `lpnFiles` = 1, quindi il primo elemento di `lplpFileNames` contiene la cartella di destinazione. Usare questa nuova semantica, le chiamate IDE di `SccSetOption` utilizzabile con il `nOption`parametro impostato su `SCC_OPT_SHARESUBPROJ`. Se un plug-in del controllo del codice sorgente non supporta la semantica, restituisce `SCC_E_OPTNOTSUPPORTED`. In questo viene disabilitato in questo caso l'utilizzo dei **Aggiungi dal controllo del codice sorgente** funzionalità. Se un plug-in supporta il **Aggiungi dal controllo del codice sorgente** funzionalità (`SCC_CAP_ADDFROMSCC`), quindi deve supportare la nuova semantica e restituire `SCC_I_SHARESUBPROJOK`.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in origine controllo](../extensibility/source-control-plug-in-api-functions.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430504"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire l'Editor di Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089926"
 È possibile lavorare sul codice in diverse posizioni contemporaneamente. A tale scopo, suddividere una finestra dell'editor o aprire più istanze delle finestre dell'editor.  
   
 > [!NOTE]
->  Non tutte le finestre di editor supportano più istanze.  
+> Non tutte le finestre di editor supportano più istanze.  
   
 ## <a name="splitting-an-editor-window"></a>Suddivisione di una finestra dell'editor  
  Per semplificare la modifica è possibile suddividere una finestra dell'editor in due visualizzazioni separate.  
@@ -41,7 +41,7 @@ ms.locfileid: "60089926"
      L'area di modifica viene suddivisa in due riquadri separati da una barra di divisione. È possibile scorrere questi riquadri in modo indipendente per visualizzare e modificare contemporaneamente parti diverse del documento attivo. Tutte le modifiche apportate in un riquadro si riflettono nell'altro.  
   
     > [!TIP]
-    >  Per ingrandire uno dei riquadri, trascinare la barra di divisione verso l'alto o verso il basso.  
+    > Per ingrandire uno dei riquadri, trascinare la barra di divisione verso l'alto o verso il basso.  
   
 #### <a name="to-return-to-single-pane-view"></a>Per tornare alla visualizzazione a riquadro singolo  
   

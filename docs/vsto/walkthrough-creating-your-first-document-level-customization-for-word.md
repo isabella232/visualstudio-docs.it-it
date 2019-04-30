@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66580d29c50332d32554334e1315d7be88810a0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438519"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Procedura dettagliata: Creare una personalizzazione a livello di documento per Word
   Questa procedura dettagliata introduttiva mostra come creare una personalizzazione a livello di documento per Microsoft Office Word. Le funzionalità create in questo tipo di soluzione sono disponibili solo quando si apre un documento specifico. Una personalizzazione a livello di documento non può essere usata per apportare modifiche a un'intera applicazione, ad esempio per visualizzare una nuova scheda della barra multifunzione quando si apre un documento qualsiasi.
@@ -112,7 +112,7 @@ ms.locfileid: "60095464"
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    >  Questo codice usa il valore di indice 1 per accedere al primo paragrafo contenuto nella proprietà <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
+    > Questo codice usa il valore di indice 1 per accedere al primo paragrafo contenuto nella proprietà <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A>. Anche se Visual Basic e Visual C# usano matrici in base 0, il limite inferiore di matrice della maggior parte delle raccolte del modello a oggetti di Word è 1. Per altre informazioni, vedere [scrivere codice nelle soluzioni Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="test-the-project"></a>Il progetto di test
 

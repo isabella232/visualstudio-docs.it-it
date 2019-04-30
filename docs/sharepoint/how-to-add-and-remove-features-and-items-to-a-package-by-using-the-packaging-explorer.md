@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431229"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedura: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto usando Esplora pacchetti
   Per configurare un pacchetto per distribuire gli elementi di SharePoint e le funzionalità, è possibile usare Esplora pacchetti. È possibile regolare i elementi di progetto SharePoint e le funzionalità all'interno del file con estensione wsp.
@@ -51,7 +51,7 @@ ms.locfileid: "60104460"
     - Aprire il menu di scelta rapida per una funzionalità, scegliere **tagliare**, aprire il menu di scelta rapida per il progetto a cui si desidera spostare la funzionalità e quindi scegliere **Incolla**.
 
     > [!NOTE]
-    >  Utilizzare questa procedura se nella soluzione sono presenti diversi progetti SharePoint.
+    > Utilizzare questa procedura se nella soluzione sono presenti diversi progetti SharePoint.
 
 ## <a name="validate-a-feature-or-package"></a>Convalidare una funzionalità o un pacchetto
  È possibile identificare problemi potenziali nella funzionalità di SharePoint e i pacchetti tramite la convalida i file. Errori e avvisi vengono visualizzati nella finestra di Output e finestra Elenco errori.

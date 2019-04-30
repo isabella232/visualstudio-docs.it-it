@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8640636e48e2addedd5a59d30deb060cfdf118
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435310"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struttura del file [Content_types].xml
 Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio Usa il file [Content_Types] XML per installare il pacchetto, ma non installa il file stesso.
 
 > [!NOTE]
->  Sebbene in questo argomento si applica solo a [Content_Types]. XML file che vengono usati nei pacchetti VSIX, il tipo di file [Content_Types] XML fa parte di *Open Packaging Conventions (OPC)* standard. Per altre informazioni, vedere [OPC: Un nuovo Standard per la creazione di pacchetti dati](http://go.microsoft.com/fwlink/?LinkID=148207) sul sito Web MSDN.
+> Sebbene in questo argomento si applica solo a [Content_Types]. XML file che vengono usati nei pacchetti VSIX, il tipo di file [Content_Types] XML fa parte di *Open Packaging Conventions (OPC)* standard. Per altre informazioni, vedere [OPC: Un nuovo Standard per la creazione di pacchetti dati](http://go.microsoft.com/fwlink/?LinkID=148207) sul sito Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributi ed elementi
  Le sezioni seguenti descrivono l'elemento radice e i relativi attributi ed elementi figlio.
@@ -43,7 +43,7 @@ Contiene informazioni sui tipi di contenuto in un pacchetto VSIX. Visual Studio 
 
 ### <a name="attribute-name-attribute"></a>{Nome dell'attributo} Attributo
 
-| Valore | Descrizione |
+| Value | Descrizione |
 | - | - |
 | http://schemas.openformats.org/package/2006/content-types | Il percorso dello schema di tipi di contenuto. |
 

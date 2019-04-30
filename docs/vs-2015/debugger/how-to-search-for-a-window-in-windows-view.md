@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 205ff44c44a73dc44d3a3493347a153fb52e712d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9d7a64191db82d5fb0b82518d3db1cf1eb1e0ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439072"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Procedura: Cercare una finestra nella visualizzazione finestre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113040"
      Il [finestra di dialogo ricerca](../debugger/window-search-dialog-box.md) apre.  
   
     > [!TIP]
-    >  Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e rimane solo il **ricerca finestre** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
+    > Per ridurre il disordine schermata, selezionare la **Nascondi Spy + +** opzione. Questa opzione consente di nascondere la finestra principale di Spy + + e rimane solo il **ricerca finestre** nella finestra di dialogo visibile nella parte superiore alle altre applicazioni. La finestra principale di Spy + + è ripristinata quando si fa clic **OK** oppure **Cancel**, o quando si cancella il **Nascondi Spy + +** opzione.  
   
 3. Trascinare il **strumento di ricerca** nell'intervallo di destinazione. Quando si trascina lo strumento, il **ricerca finestre** nella finestra di dialogo vengono visualizzati i dettagli sulla finestra selezionata.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428587"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Passaggio 9: Esaminare, commentare e testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Successivamente si aggiunge un commento al codice. Un commento è una nota che n
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  Il gestore dell'evento Click del pulsante **showButton** è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. L'istruzione `if` indica al programma di eseguire le operazioni seguenti: "Controlla questa condizione e se è vera, esegui queste azioni". In questo caso si indica al programma di aprire la finestra di dialogo **Apri file** e se l'utente seleziona un file e sceglie il pulsante **OK**, di caricare tale file in PictureBox.  
+    > Il gestore dell'evento Click del pulsante **showButton** è ora completato e funziona. Si è iniziato a scrivere codice, iniziando con l'istruzione `if`. L'istruzione `if` indica al programma di eseguire le operazioni seguenti: "Controlla questa condizione e se è vera, esegui queste azioni". In questo caso si indica al programma di aprire la finestra di dialogo **Apri file** e se l'utente seleziona un file e sceglie il pulsante **OK**, di caricare tale file in PictureBox.  
   
     > [!TIP]
-    >  L'IDE è compilato in modo da semplificare la scrittura del codice anche tramite i *frammenti di codice*. Un frammento è un collegamento che viene espanso in un piccolo blocco di codice.  
+    > L'IDE è compilato in modo da semplificare la scrittura del codice anche tramite i *frammenti di codice*. Un frammento è un collegamento che viene espanso in un piccolo blocco di codice.  
     >   
     >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti**, **Gestione frammenti di codice**. Per Visual C# il frammento `if` si trova in **Visual C#**. Per Visual Basic i frammenti di codice `if` si trovano in **Istruzioni condizionali e cicli**, **Modelli di codice**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.  
     >   
@@ -83,7 +83,7 @@ Visualizzatore immagini
 2. Scegliere il pulsante **Visualizza immagine** per eseguire il codice appena scritto. Per prima cosa, il programma apre la finestra di dialogo **Apri file**. Verificare che i filtri vengano visualizzati nell'elenco a discesa **Tipo file** nella parte inferiore della finestra di dialogo. Passare quindi a un'immagine e aprirla. In genere è possibile trovare immagini di esempio incluse nel sistema operativo Windows nella cartella **Documenti**, che si trova all'interno della cartella **Immagini\Immagini campione**.  
   
     > [!NOTE]
-    >  Se nella finestra di dialogo **relativa alla selezione di un file immagine** non sono presenti immagini, assicurarsi che il filtro "Tutti i file (*.\*)" sia selezionato nell'elenco a discesa sul lato inferiore destro della finestra di dialogo.  
+    > Se nella finestra di dialogo **relativa alla selezione di un file immagine** non sono presenti immagini, assicurarsi che il filtro "Tutti i file (*.\*)" sia selezionato nell'elenco a discesa sul lato inferiore destro della finestra di dialogo.  
   
 3. Caricare un'immagine. L'immagine viene visualizzata in PictureBox. Provare quindi a ridimensionare il form trascinandone i bordi. Poiché PictureBox è ancorato all'interno di TableLayoutPanel, il quale è a sua volta ancorato all'interno del form, l'area dell'immagine verrà ridimensionata in modo da eguagliare la larghezza del form e da riempire il 90% del form nella parte superiore. Ecco perché è stato usato i contenitori TableLayoutPanel e FlowLayoutPanel: che mantengono le dimensioni corrette del modulo quando l'utente lo ridimensiona.  
   

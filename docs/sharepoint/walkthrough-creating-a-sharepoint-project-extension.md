@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 832af0383d2ff00b4f2d415257abdfbe3ad4bf91
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430419"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procedura dettagliata: Creare un'estensione di progetto SharePoint
   Questa procedura dettagliata illustra come creare un'estensione per i progetti SharePoint. È possibile utilizzare un'estensione di progetto per rispondere agli eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato. È anche possibile aggiungere proprietà personalizzate o rispondere quando la modifica di un valore di proprietà. A differenza delle estensioni dell'elemento del progetto, le estensioni di progetto non possono essere associate a un particolare tipo di progetto SharePoint. Quando si crea un'estensione di progetto, l'estensione viene caricata quando qualsiasi tipo di progetto SharePoint viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -65,7 +65,7 @@ ms.locfileid: "60062353"
 3. Nel **nuovo progetto** finestra di dialogo espandere il **Visual c#** o **Visual Basic** nodi e quindi scegliere il **estendibilità** nodo.
 
     > [!NOTE]
-    >  Questo nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
+    > Questo nodo è disponibile solo se si installa Visual Studio SDK. Per altre informazioni, vedere la sezione prerequisiti più indietro in questo argomento.
 
 4. Nella parte superiore della finestra di dialogo, scegliere **.NET Framework 4.5** nell'elenco delle versioni di .NET Framework, quindi scegliere il **progetto VSIX** modello.
 
@@ -143,7 +143,7 @@ ms.locfileid: "60062353"
 6. Nel **tipo** casella di riepilogo **MEFComponent**.
 
     > [!NOTE]
-    >  Questo valore corrisponde al `MEFComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Questo valore corrisponde al `MEFComponent` elemento nel file Extension. vsixmanifest. Questo elemento specifica il nome di un assembly di estensione del pacchetto VSIX. Per altre informazioni, vedere [MEFComponent Element (Schema di VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Nel **origine** scegliere i **un progetto nella soluzione corrente** pulsante di opzione.
 
