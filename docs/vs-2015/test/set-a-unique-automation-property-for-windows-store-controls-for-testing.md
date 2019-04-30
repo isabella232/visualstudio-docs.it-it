@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446049"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Impostare una proprietà di automazione univoca dei controlli Windows Store per il test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
 ### <a name="UniquePropertyWindowsStoreControlsExpressionBlend"></a> Assegnazione di proprietà di automazione univoche con Visual Studio o Blend per Visual Studio  
  È possibile usare Visual Studio o Blend per Visual Studio per assegnare nomi univoci a elementi interattivi quali pulsanti, caselle di riepilogo, caselle combinate e caselle di testo. In questo modo al controllo viene assegnato un valore univoco per AutomationProperties.Name.  
   
- **Visual Studio:** Scegliere Opzioni dal menu **Strumenti** , quindi **Editor di testo**, **XAML**e infine **Varie**.  
+ **Visual Studio:** Scegliere **Opzioni** dal menu **Strumenti** , quindi **Editor di testo**, **XAML**e infine **Varie**.  
   
  Selezionare **Assegna automaticamente un nome agli elementi interattivi durante la creazione** e quindi fare clic su **OK**.  
   
@@ -80,7 +80,7 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
  **Blend per Visual Studio:** Usare uno dei metodi seguenti per eseguire questa operazione da Blend per Visual Studio.  
   
 > [!NOTE]
->  È possibile usare questo metodo solo per i controlli che vengono creati in modo statico con XAML.  
+> È possibile usare questo metodo solo per i controlli che vengono creati in modo statico con XAML.  
   
  **Per assegnare un nome univoco a controlli esistenti**  
   
@@ -136,7 +136,7 @@ Per eseguire test codificati dell'interfaccia utente per un'applicazione di Wind
  Per entrambi gli esempi, è quindi necessario eseguire l'override del metodo ToString () di ItemSource, come indicato nel codice seguente. Questo codice consente di verificare che il valore di AutomationProperties.Name sia impostato e univoco, dal momento che non è possibile usare l'associazione per impostare una proprietà di automazione univoca per ogni elemento elenco associato a dati. In questo caso è sufficiente impostare un valore univoco per Automation Properties.Name.  
   
 > [!NOTE]
->  Con questo approccio è anche possibile usare l'associazione per impostare il contenuto interno dell'elemento elenco su una stringa della classe Employee. Come illustrato nell'esempio, al controllo pulsante all'interno di ciascun elemento elenco viene assegnato un ID automazione univoco che corrisponde all'ID dipendente.  
+> Con questo approccio è anche possibile usare l'associazione per impostare il contenuto interno dell'elemento elenco su una stringa della classe Employee. Come illustrato nell'esempio, al controllo pulsante all'interno di ciascun elemento elenco viene assegnato un ID automazione univoco che corrisponde all'ID dipendente.  
   
 ```  
   
