@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436500"
 ---
 # <a name="ribbon-xml"></a>Elemento XML della barra multifunzione
   L'elemento della barra multifunzione (XML) consente di personalizzare una barra multifunzione utilizzando XML. Se si desidera personalizzare la barra multifunzione in modo che non è supportato dall'elemento barra multifunzione (finestra di progettazione visiva), usare l'elemento della barra multifunzione (XML). Per un confronto delle operazioni eseguibili con ogni elemento, vedere [Panoramica della barra multifunzione](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117544"
 - Definire il metodo di callback nella classe Ribbon.
 
 > [!NOTE]
->  Outlook richiede un ulteriore passaggio. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> Outlook richiede un ulteriore passaggio. Per altre informazioni, vedere [personalizzare una barra multifunzione per Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Per una procedura dettagliata che illustri come automatizzare un'applicazione dalla barra multifunzione, vedere [procedura dettagliata: Creare una scheda personalizzata utilizzando XML della barra multifunzione](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

@@ -12,12 +12,12 @@ ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432501"
 ---
 # <a name="sccadd-function"></a>Funzione SccAdd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccAdd(
  Le consuete `fOptions` vengono sostituiti seguito da una matrice `pfOptions`, con uno `LONG` opzione specifica per ogni file. Questo avviene perché il tipo di file può variare da un file in un file.  
   
 > [!NOTE]
->  Non è consentito specificare entrambe `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è consentito specificare nessuno. L'impostazione Nessuna delle due è la stessa impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.  
+> Non è consentito specificare entrambe `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è consentito specificare nessuno. L'impostazione Nessuna delle due è la stessa impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.  
   
  Ecco l'elenco di flag utilizzati nel `pfOptions` matrice:  
   

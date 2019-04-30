@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431620"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Risoluzione dei problemi relativi agli strumenti per le prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Quando si usano gli strumenti di profilatura, potrebbe verificarsi uno dei segue
 - Incorporare le informazioni sui simboli nel file di dati di profilatura (con estensione VSP). Per altre informazioni, vedere [Salvataggio delle informazioni sui simboli con i file di dati di prestazioni](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  Il motore di analisi richiede che il file PDB sia della stessa versione del file dell'applicazione compilata. Non è possibile usare un file PDB di una compilazione precedente o successiva del file dell'applicazione.
+> Il motore di analisi richiede che il file PDB sia della stessa versione del file dell'applicazione compilata. Non è possibile usare un file PDB di una compilazione precedente o successiva del file dell'applicazione.

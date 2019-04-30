@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70563378ca3599c1e558cd9e359979383e10f78b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a2ae77a390553fc95c7a29d24eff70fde231b7b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410030"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia di un pacchetto VSIX
 Un pacchetto VSIX non è un *VSIX* file che contiene uno o più estensioni di Visual Studio, insieme ai metadati Visual Studio viene utilizzato per classificare e installare le estensioni. Tali metadati sono contenuti nel manifesto VSIX e il *[Content_Types] XML* file. Un pacchetto VSIX può anche contenere uno o più *vsixlangpack* file per fornire il testo di programma di installazione localizzato e può contenere pacchetti VSIX aggiuntivi per installare le dipendenze.
@@ -25,7 +25,7 @@ Un pacchetto VSIX non è un *VSIX* file che contiene uno o più estensioni di Vi
  Il formato di pacchetto VSIX conforme allo standard Open Packaging Conventions (OPC). Il pacchetto contiene file binari e file di supporto, insieme a un *[Content_Types] XML* file e un *VSIX* file manifesto. Un pacchetto VSIX può contenere l'output di più progetti, o anche più pacchetti che hanno i propri manifesti.
 
 > [!NOTE]
->  I nomi dei file inclusi nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
+> I nomi dei file inclusi nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).
 
 ## <a name="the-vsix-manifest"></a>Il manifesto VSIX
  Il manifesto VSIX contiene informazioni sulle estensioni da installare e segue lo Schema VSX. Per altre informazioni, vedere [riferimenti su VSIX extension schema 1.0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b). Per un esempio di manifesto VSIX, vedere [elemento PackageManifest (elemento radice, schema VSX)](https://msdn.microsoft.com/library/f8ae42ba-775a-4d2b-976a-f556e147f187).

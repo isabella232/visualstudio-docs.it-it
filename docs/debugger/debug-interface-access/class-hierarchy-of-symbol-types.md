@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402628"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Gerarchia di classi dei tipi di simboli
 Nella tabella seguente vengono descritti i tipi di simboli nella gerarchia delle classi.
 
 ## <a name="symbol-types"></a>Tipi di simboli
 
-|Tipo di simbolo|Description|
+|Tipo di simbolo|Descrizione|
 |-----------------|-----------------|
 |[UDT](../../debugger/debug-interface-access/udt.md)|Simbolo utilizzato per rappresentare ogni classe, struttura e unione.|
 |[Enum (Debug Interface Access SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|Simboli per i tipi enumerati.|
@@ -43,7 +43,7 @@ Nella tabella seguente vengono descritti i tipi di simboli nella gerarchia delle
 |[Dimensione](../../debugger/debug-interface-access/dimension.md)|Simboli per le dimensioni di matrice.|
 
 > [!NOTE]
->  Ciascun simbolo può avere proprietà che contengono informazioni sui simboli, nonché i riferimenti a altri simboli. Queste proprietà sono elencate negli argomenti simbolo singoli.
+> Ciascun simbolo può avere proprietà che contengono informazioni sui simboli, nonché i riferimenti a altri simboli. Queste proprietà sono elencate negli argomenti simbolo singoli.
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazione CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

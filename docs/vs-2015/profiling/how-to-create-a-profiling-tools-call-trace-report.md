@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432754"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedura: Creare un profilo rapporto calltrace degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117824"
 Il *report calltrace* per gli strumenti di profilatura di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] elenca le informazioni di intervallo per ogni punto di ingresso e di uscita delle funzioni dell'applicazione e ogni chiamata ad altre funzioni da parte di una determinata funzione. I report calltrace sono disponibili per i dati di profilatura solo se sono stati raccolti con il metodo di strumentazione.  
   
 > [!NOTE]
->  Non è possibile visualizzare i report calltrace in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È necessario usare lo strumento da riga di comando **VSPerfReport** per generare un file con valori delimitati da virgole (file con estensione csv) o un file XML. Per altre informazioni su questo strumento, vedere [VSPerfReport](../profiling/vsperfreport.md).  
+> Non è possibile visualizzare i report calltrace in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. È necessario usare lo strumento da riga di comando **VSPerfReport** per generare un file con valori delimitati da virgole (file con estensione csv) o un file XML. Per altre informazioni su questo strumento, vedere [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-create-a-call-trace-report"></a>Per creare un report calltrace  
   

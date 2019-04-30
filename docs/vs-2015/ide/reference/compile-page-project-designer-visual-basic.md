@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441508"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Compilazione (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Usare la pagina **Compilazione** in Creazione progetti per specificare le istruz
  Le impostazioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.  
   
 > [!NOTE]
->  Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Gli elenchi **Configurazione** e **Piattaforma** non vengono pertanto visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+> Usando configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Gli elenchi **Configurazione** e **Piattaforma** non vengono pertanto visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Configurazione**  
  Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Debug e Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) e [come: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md).  

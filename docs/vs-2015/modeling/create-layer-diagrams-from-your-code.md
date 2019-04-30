@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433384"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Creare diagrammi livello dal codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
  Prima di creare un diagramma livello, verificare che alla soluzione sia associato un progetto di modellazione. Visualizzare [diagrammi e progetti di modellazione UML creare](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modello a un altro né a un altro percorso nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.  
+> Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modello a un altro né a un altro percorso nella soluzione. In questo modo i riferimenti del diagramma originale verranno mantenuti, anche se si modifica il diagramma. In caso contrario, il funzionamento della convalida dei livelli non sarà corretto e potrebbero verificarsi altri problemi, quali la mancanza di elementi o altri errori quando si tenta di aprire il diagramma.  
 >   
->  È necessario aggiungere invece un nuovo diagramma livello al progetto di modellazione, copiare gli elementi dal diagramma di origine al nuovo diagramma e salvare sia il progetto di modello che il nuovo diagramma livello.  
+> È necessario aggiungere invece un nuovo diagramma livello al progetto di modellazione, copiare gli elementi dal diagramma di origine al nuovo diagramma e salvare sia il progetto di modello che il nuovo diagramma livello.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Per aggiungere un nuovo diagramma livello a un progetto di modellazione  
   
@@ -53,7 +53,7 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
      Scegli **creare un nuovo progetto di modellazione** per aggiungere un nuovo progetto di modellazione alla soluzione.  
   
     > [!NOTE]
-    >  È necessario che il diagramma livello sia presente all'interno di un progetto di modellazione. È tuttavia possibile collegarlo a elementi in qualsiasi punto della soluzione.  
+    > È necessario che il diagramma livello sia presente all'interno di un progetto di modellazione. È tuttavia possibile collegarlo a elementi in qualsiasi punto della soluzione.  
   
 5. Assicurarsi di salvare il progetto di modello contenente il diagramma livello.  
   
@@ -106,7 +106,7 @@ Per visualizzare l'architettura di alto livello, logica del sistema software, cr
  È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. È possibile decompilare dipendenze esistenti per elementi collegati a livelli nel diagramma.  
   
 > [!NOTE]
->  Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.  
+> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, aprire il menu di scelta rapida per uno o più livelli e quindi scegliere **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.  
   
 - Selezionare uno o più livelli, aprire il menu di scelta rapida per un livello selezionato e quindi scegliere **genera dipendenze**.  
   

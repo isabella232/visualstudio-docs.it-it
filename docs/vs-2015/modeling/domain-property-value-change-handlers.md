@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 500364d42c3c47b471102deee8f95193648183b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8dac5a999b4f11fb066edfc1b1d4c057a999bae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442983"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestori di modifica del valore delle proprietà del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ if (newValue > 10)
  È anche possibile usare una regola ChangeRule per regolare il nuovo valore della proprietà per contenerlo entro un intervallo specificato.  
   
 > [!WARNING]
->  Se una regola opera modifiche al contenuto dell'archivio, potrebbe verificarsi l'attivazione di altre regole e gestori delle proprietà. Se una regola modifica la proprietà che ne ha determinato l'attivazione, verrà chiamata nuovamente. È necessario assicurarsi che le definizioni delle regole non risultino in attivazioni senza termine.  
+> Se una regola opera modifiche al contenuto dell'archivio, potrebbe verificarsi l'attivazione di altre regole e gestori delle proprietà. Se una regola modifica la proprietà che ne ha determinato l'attivazione, verrà chiamata nuovamente. È necessario assicurarsi che le definizioni delle regole non risultino in attivazioni senza termine.  
   
 ```  
 using Microsoft.VisualStudio.Modeling;   

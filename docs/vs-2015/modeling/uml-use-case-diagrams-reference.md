@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424322"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagrammi caso di utilizzo UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In Visual Studio, un *diagramma caso di utilizzo* riepiloga gli utenti che utili
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  In questo argomento vengono illustrati gli elementi disponibili in diagrammi caso di utilizzo. Per altre informazioni su come creare diagrammi casi d'uso, vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md). Per altre informazioni su come creare e disegnare diagrammi di modellazione, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+> In questo argomento vengono illustrati gli elementi disponibili in diagrammi caso di utilizzo. Per altre informazioni su come creare diagrammi casi d'uso, vedere [diagrammi caso di utilizzo UML: Linee guida](../modeling/uml-use-case-diagrams-guidelines.md). Per altre informazioni su come creare e disegnare diagrammi di modellazione, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Lettura di diagrammi caso di utilizzo  
  Le tabelle nelle sezioni seguenti descrivono gli elementi disponibili in un diagramma caso di utilizzo oltre alle relative proprietà principali. Per un elenco completo delle proprietà, vedere [diagrammi caso d'usano delle proprietà degli elementi su UML](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423310"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 Ogni configurazione può supportare un set di processi di compilazione che generano gli elementi di output, ad esempio file eseguibile o una risorsa. Questi elementi di output sono privati per l'utente e possono essere inseriti in gruppi che si collegano i tipi correlati dell'output, ad esempio file eseguibili (.exe,. dll, con estensione LIB) e i file di origine (. idl, file con estensione h).
@@ -25,7 +25,7 @@ Ogni configurazione può supportare un set di processi di compilazione che gener
  Il costrutto sviluppato implementando `IVsOutputGroup` consente ai progetti di raggruppare gli output in base all'utilizzo. Ad esempio, una DLL può essere raggruppata con il database di programma (PDB).
 
 > [!NOTE]
->  Un file PDB contiene le informazioni di debug e viene creata quando l'opzione 'Genera informazioni di Debug' è specificata quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato per la configurazione di progetto di Debug solo.
+> Un file PDB contiene le informazioni di debug e viene creata quando l'opzione 'Genera informazioni di Debug' è specificata quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato per la configurazione di progetto di Debug solo.
 
  Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione supportata, anche se il numero degli output contenute all'interno di un gruppo può variare da una configurazione alla configurazione. Ad esempio, Matt del progetto DLL potrebbe includere mattd.dll e mattd.pdb nella configurazione di Debug, ma solo includere matt.dll nella configurazione delle vendite al dettaglio.
 

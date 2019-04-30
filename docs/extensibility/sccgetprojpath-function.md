@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434602"
 ---
 # <a name="sccgetprojpath-function"></a>Funzione SccGetProjPath
 Questa funzione richiede all'utente un percorso di progetto, che è una stringa che è significativa solo per il plug-in del controllo del codice sorgente. Viene chiamato quando l'utente è:
 
--   Crea un nuovo progetto
+- Crea un nuovo progetto
 
--   Aggiunta di un progetto esistente al controllo della versione
+- Aggiunta di un progetto esistente al controllo della versione
 
--   Tentativo di trovare un progetto di controllo di versione esistente
+- Tentativo di trovare un progetto di controllo di versione esistente
 
 ## <a name="syntax"></a>Sintassi
 
@@ -78,18 +78,18 @@ SCCRTN SccGetProjPath (
 
 |In ingresso|Interpretazione|
 |--------------|--------------------|
-|true|L'utente può creare un nuovo progetto.|
-|false|L'utente non è stato possibile creare un nuovo progetto.|
+|TRUE|L'utente può creare un nuovo progetto.|
+|FALSE|L'utente non è stato possibile creare un nuovo progetto.|
 
 |In uscita|Interpretazione|
 |--------------|--------------------|
-|true|È stato creato un nuovo progetto.|
-|false|È stato selezionato un progetto esistente.|
+|TRUE|È stato creato un nuovo progetto.|
+|FALSE|È stato selezionato un progetto esistente.|
 
 ## <a name="return-value"></a>Valore restituito
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Il progetto è stata correttamente creato o recuperato.|
 |SCC_I_OPERATIONCANCELED|L'operazione è stata annullata.|
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Per `lpUser`, l'IDE può passare un nome utente o potrebbe semplicemente passare un puntatore a una stringa vuota. Se è presente un nome utente, il plug-in del controllo del codice sorgente deve usarlo come valore predefinito. Tuttavia, se è stato passato alcun nome o l'account di accesso non riuscito con il nome specificato, il plug-in deve richiedere all'utente per un account di accesso e passare di nuovo il nome `lpUser` quando riceve un account di accesso valido. Poiché il plug-in possono modificare questa stringa, l'IDE sempre dovrà allocare un buffer di dimensione (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  La prima azione che esegue l'IDE può essere una chiamata a uno il `SccOpenProject` funzione o `SccGetProjPath` (funzione). Di conseguenza, entrambe riportano un identico `lpUser` parametro, che consente il plug-in per l'accesso l'utente in fase di controllo del codice sorgente. Anche se il valore restituito dalla funzione indica un errore, il plug-in deve riempire questa stringa con un nome di account di accesso valido.
+> La prima azione che esegue l'IDE può essere una chiamata a uno il `SccOpenProject` funzione o `SccGetProjPath` (funzione). Di conseguenza, entrambe riportano un identico `lpUser` parametro, che consente il plug-in per l'accesso l'utente in fase di controllo del codice sorgente. Anche se il valore restituito dalla funzione indica un errore, il plug-in deve riempire questa stringa con un nome di account di accesso valido.
 
  `lpLocalPath` è la directory in cui l'utente posiziona il progetto. Potrebbe trattarsi di una stringa vuota. Se è presente alcuna directory attualmente definiti (come nel caso di un utente tenta di scaricare un progetto dal sistema di controllo di origine) e se `bAllowChangePath` è `TRUE`, possa richiedere all'utente per l'input o utilizzare un altro metodo per inserire il plug-in del controllo del codice sorgente relativo proprietà stringa in `lpLocalPath`. Se `bAllowChangePath` è `FALSE`, il plug-in necessario non modificare la stringa, perché l'utente sta già lavorando nella directory specificata.
 

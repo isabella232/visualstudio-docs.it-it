@@ -11,12 +11,12 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47f752f00e1efe130f029a3cabdd2e3e3bf19449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429004"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Aggiunta di comandi di Visual Studio in una pagina iniziale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```  
   
 > [!NOTE]
->  Il `x:` alias che fa riferimento allo schema XAML, è necessario all'inizio di tutti i comandi.  
+> Il `x:` alias che fa riferimento allo schema XAML, è necessario all'inizio di tutti i comandi.  
   
  È possibile impostare il valore della `Command` proprietà per tutti i comandi che è possibile accedere dal **comando** finestra. Per un elenco di comandi disponibili, vedere [Visual Studio Command Aliases](../ide/reference/visual-studio-command-aliases.md).  
   
@@ -65,7 +65,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  È possibile chiamare i comandi da pacchetti VSPackage registrati con la stessa sintassi che consente di chiamare gli altri comandi di Visual Studio. Ad esempio, se un pacchetto VSPackage installati aggiunge un **Home Page** comando per il **vista** menu, è possibile chiamare tale comando impostando `CommandParameter` a `View.HomePage`.  
   
 > [!NOTE]
->  Se si chiama un comando che è associato a un pacchetto VSPackage, è necessario caricare il pacchetto quando viene richiamato il comando.  
+> Se si chiama un comando che è associato a un pacchetto VSPackage, è necessario caricare il pacchetto quando viene richiamato il comando.  
   
 ## <a name="adding-commands-from-assemblies"></a>Aggiunta di comandi da assembly  
  Per chiamare un comando da un assembly o accedere al codice in un pacchetto VSPackage che non è associato a un comando di menu, è necessario creare un alias per l'assembly e quindi chiamare l'alias.  
@@ -89,7 +89,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```  
   
 > [!NOTE]
->  È necessario copiare l'assembly e quindi incollarlo in... \\ *Cartella di installazione di visual Studio*\Common7\IDE\PrivateAssemblies\ per assicurarsi che il caricamento prima che venga chiamato.  
+> È necessario copiare l'assembly e quindi incollarlo in... \\ *Cartella di installazione di visual Studio*\Common7\IDE\PrivateAssemblies\ per assicurarsi che il caricamento prima che venga chiamato.  
   
 ## <a name="adding-commands-with-the-dte-object"></a>Aggiunta di comandi con l'oggetto DTE  
  È possibile accedere all'oggetto DTE da una pagina iniziale, nel markup e nel codice.  

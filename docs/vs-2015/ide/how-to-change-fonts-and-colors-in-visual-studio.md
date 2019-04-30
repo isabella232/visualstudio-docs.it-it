@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 247780815af4357fb8a529946e901b41c5d4a83c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439235"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060618"
 È possibile personalizzare il colore della cornice e delle finestre degli strumenti dell'IDE in Visual Studio in diversi modi.
 
 > [!TIP]
->  Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Per informazioni su come modificare i colori dell'editor del codice, vedere [Procedura: Modificare i tipi di carattere e i colori dell'editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Modificare il tema colori dell'IDE
 
@@ -36,7 +36,7 @@ ms.locfileid: "60060618"
 3. Nell'elenco **Tema colori** scegliere il tema predefinito **Blu**, **Scuro** o **Chiaro**.
 
     > [!IMPORTANT]
-    >  Quando si modifica un tema colori, il testo nell'IDE viene ripristinato all'impostazione predefinita o ai tipi di carattere e alle dimensioni personalizzati in precedenza.
+    > Quando si modifica un tema colori, il testo nell'IDE viene ripristinato all'impostazione predefinita o ai tipi di carattere e alle dimensioni personalizzati in precedenza.
     >
     >  Se si usa Visual Studio Professional, Visual Studio Premium o Visual Studio Ultimate, è possibile installare temi di colori predefiniti aggiuntivi e creare il proprio tema scaricando e installando l'[editor dei temi di colori di Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
 
@@ -45,7 +45,7 @@ ms.locfileid: "60060618"
 - Premere i tasti ALT di sinistra + MAIUSC di sinistra + STAMP.
 
     > [!WARNING]
-    >  Questa opzione imposta il contrasto elevato per tutte le applicazioni e l'interfaccia utente del computer corrente.
+    > Questa opzione imposta il contrasto elevato per tutte le applicazioni e l'interfaccia utente del computer corrente.
 
 ## <a name="change-ide-fonts"></a>Modificare i tipi di carattere dell'IDE
  È possibile modificare il tipo di carattere e la dimensione del testo per tutte le finestre e le finestre di dialogo nell'IDE. È possibile scegliere di personalizzare solo alcune finestre e altri elementi di testo.
@@ -59,7 +59,7 @@ ms.locfileid: "60060618"
 3. Nell'elenco **Mostra impostazioni per** scegliere **Tipo di carattere ambiente**.
 
     > [!TIP]
-    >  Se si desidera modificare il tipo di carattere solo per le finestre degli strumenti, nell'elenco **Mostra impostazioni per** scegliere **[Tutte le finestre degli strumenti di testo]**.
+    > Se si desidera modificare il tipo di carattere solo per le finestre degli strumenti, nell'elenco **Mostra impostazioni per** scegliere **[Tutte le finestre degli strumenti di testo]**.
 
 4. Nell'elenco **Tipo di carattere** selezionare un tipo di carattere.
 

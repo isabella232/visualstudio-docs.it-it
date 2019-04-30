@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415404"
 ---
 # <a name="author-vsct-files"></a>File con estensione vsct autore
 Questo documento illustra come creare un *vsct* file per aggiungere voci di menu, barre degli strumenti e altri elementi dell'interfaccia utente per l'ambiente di sviluppo integrato (IDE) di Visual Studio. Usare questi passaggi quando si aggiungono elementi dell'interfaccia utente a un pacchetto di Visual Studio (VSPackage di) che non dispone già di un *vsct* file.
@@ -86,7 +86,7 @@ Questo documento illustra come creare un *vsct* file per aggiungere voci di menu
     Impostare il `guid` e `id` attributi del `Menu` elemento e quindi impostare il `type` attributo al tipo di menu che si desidera. È anche possibile impostare il `priority` attributo per stabilire la posizione relativa del menu del gruppo padre.
 
    > [!NOTE]
-   >  Il `priority` attributo non è applicabile per le barre degli strumenti e menu di scelta rapida.
+   > Il `priority` attributo non è applicabile per le barre degli strumenti e menu di scelta rapida.
 
 2. Tutti i comandi nell'IDE di Visual Studio devono essere ospitati da gruppi di comandi che sono figli diretti del menu e barre degli strumenti. Se si aggiunge nuovi menu o barre degli strumenti all'IDE, questi devono contenere nuovi gruppi di comandi. È anche possibile aggiungere gruppi di comandi a menu e barre degli strumenti esistenti in modo che è possibile raggruppare in modo visivo i comandi.
 
@@ -99,14 +99,14 @@ Questo documento illustra come creare un *vsct* file per aggiungere voci di menu
    1. Impostare il `guid` e `id` gli attributi della ognuno `Button` elemento e quindi impostare il `type` attributo al tipo di pulsante desiderato. È anche possibile impostare il `priority` attributo per stabilire la posizione relativa del comando del gruppo padre.
 
        > [!NOTE]
-       >  Usare `type="button"` per i comandi di menu standard e i pulsanti sulle barre degli strumenti.
+       > Usare `type="button"` per i comandi di menu standard e i pulsanti sulle barre degli strumenti.
 
    2. Nel `Button` elemento, aggiungere un [stringhe](../../extensibility/strings-element.md) elemento contenente una [ButtonText](../../extensibility/buttontext-element.md) elemento e una [CommandName](../../extensibility/commandname-element.md) elemento. Il `ButtonText` elemento fornisce l'etichetta di testo per una voce di menu o la descrizione comando per un pulsante della barra degli strumenti. Il `CommandName` elemento fornisce il nome del comando da usare anche nel comando.
 
    3. Se il comando avrà un'icona, creare un [icona](../../extensibility/icon-element.md) elemento il `Button` e impostare relativo `guid` e `id` attributi per il `Bitmap` (elemento) per l'icona.
 
        > [!NOTE]
-       >  I pulsanti della barra degli strumenti devono avere le icone.
+       > I pulsanti della barra degli strumenti devono avere le icone.
 
    Per altre informazioni, vedere [vs confronto tra oggetti MenuCommand. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).
 

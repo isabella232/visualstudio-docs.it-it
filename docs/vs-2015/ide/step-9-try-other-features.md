@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428292"
 ---
 # <a name="step-9-try-other-features"></a>Passaggio 9: Provare altre funzionalità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Per acquisire maggiore dimestichezza, provare a modificare icone e colori oppure
 - Sostituire le icone e i colori con altri a piacere.  
   
     > [!TIP]
-    >  Osservare la proprietà [ForeColor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) dell'etichetta.  
+    > Osservare la proprietà [ForeColor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) dell'etichetta.  
   
 - Aggiungere un timer di gioco per tenere traccia del tempo necessario a un giocatore per vincere.  
   
     > [!TIP]
-    >  A tale scopo, è possibile aggiungere un'etichetta per visualizzare il tempo trascorso nel form al di sopra di TableLayoutPanel e aggiungerne un'altra nel form per tenere traccia del tempo. Utilizzare il codice per avviare il timer quando il giocatore inizia la partita e interromperlo dopo che avrà accoppiato le ultime due icone.  
+    > A tale scopo, è possibile aggiungere un'etichetta per visualizzare il tempo trascorso nel form al di sopra di TableLayoutPanel e aggiungerne un'altra nel form per tenere traccia del tempo. Utilizzare il codice per avviare il timer quando il giocatore inizia la partita e interromperlo dopo che avrà accoppiato le ultime due icone.  
   
 - Aggiungere un suono quando il giocatore trova una coppia, un altro suono quando il giocatore scopre due icone che non corrispondono e un terzo suono quando le icone vengono nuovamente nascoste dal programma.  
   
     > [!TIP]
-    >  Per riprodurre suoni, è possibile utilizzare lo spazio dei nomi System.media. Per altre informazioni, vedere [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (Riprodurre suoni in app di Windows Forms (C# .NET)) o [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (Come riprodurre suoni in Visual Basic).  
+    > Per riprodurre suoni, è possibile utilizzare lo spazio dei nomi System.media. Per altre informazioni, vedere [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) (Riprodurre suoni in app di Windows Forms (C# .NET)) o [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (Come riprodurre suoni in Visual Basic).  
   
 - Rendere più difficile il gioco ingrandendo la lavagna.  
   
     > [!TIP]
-    >  Non sarà sufficiente aggiungere righe e colonne in TableLayoutPanel: sarà necessario considerare anche il numero di icone da creare.  
+    > Non sarà sufficiente aggiungere righe e colonne in TableLayoutPanel: sarà necessario considerare anche il numero di icone da creare.  
   
 - Rendere più impegnativo il gioco nascondendo la prima icona se il giocatore è troppo lento a rispondere e non sceglie la seconda icona prima di un determinato periodo di tempo.  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438341"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Errore: Accesso remoto al gruppo di lavoro non riuscito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Il testo del messaggio di errore è il seguente:
 - Se il computer di Visual Studio e il computer remoto fanno entrambi parte di gruppi di lavoro, questo errore può essere causato dall'impostazione predefinita di **Criteri di sicurezza locali** del computer remoto. L'impostazione predefinita di **Criteri di sicurezza locali** è **Solo Guest: gli utenti locali effettuano l'autenticazione come Guest**. Per eseguire il debug con questa configurazione, è necessario modificare l'impostazione del computer remoto in **Classico: gli utenti locali effettuano l'autenticazione di se stessi**.  
   
 > [!NOTE]
->  Per effettuare le attività elencate di seguito è necessario disporre di diritti amministrativi.  
+> Per effettuare le attività elencate di seguito è necessario disporre di diritti amministrativi.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Per aprire la finestra Criteri di sicurezza locali  
   

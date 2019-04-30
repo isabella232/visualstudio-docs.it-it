@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430226"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 Quando si progetta un'interfaccia utente che usa elementi comuni della shell di Visual Studio o si vuole che l'elemento dell'interfaccia siano coerenti con funzionalità simili, usare nomi di token esistenti in file di definizione del pacchetto per scegliere e assegnare i colori. In questo modo, l'interfaccia utente resta coerente con l'intero ambiente di Visual Studio e viene aggiornata automaticamente quando vengono aggiunti o aggiornati temi.
@@ -1413,7 +1413,7 @@ Un gruppo della barra dei comandi è costituito da un set correlato di controlli
 #### <a name="BKMK_CommandDropDown"></a> Comando barra elenchi a discesa
 
 > [!IMPORTANT]
->  Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore per [sulla barra dei caselle combinate comandi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa include un'area di testo modificabile, usare i token di colore per [sulla barra dei caselle combinate comandi](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Elenco a discesa nella barra dei (con linea rossa)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Elenco a discesa nella barra dei (con linea rossa)
 

@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689ff79fb35f7b84c976fed85e4af10a8e252f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445877"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Uso di emulatori per isolare gli unit test per le applicazioni di SharePoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -340,7 +340,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Di seguito viene illustrata la modifica di un metodo di test esistente, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, che implementa un delegato Fakes. Le modifiche necessarie sono descritte nei commenti:  
   
 > [!IMPORTANT]
->  I metodi di test che creano in modo esplicito shim Fakes generano un'eccezione `ShimNotSupported` quando il test viene eseguito nel contesto di `EmulationMode.Passthrough`. Per evitare questo problema, usare una variabile per impostare il valore di `EmulationMode` ed eseguire il wrapping del codice Fakes in un'istruzione `if` che testa il valore.  
+> I metodi di test che creano in modo esplicito shim Fakes generano un'eccezione `ShimNotSupported` quando il test viene eseguito nel contesto di `EmulationMode.Passthrough`. Per evitare questo problema, usare una variabile per impostare il valore di `EmulationMode` ed eseguire il wrapping del codice Fakes in un'istruzione `if` che testa il valore.  
   
 ```csharp  
 // class level field to set emulation mode  

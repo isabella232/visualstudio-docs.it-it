@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431396"
 ---
 # <a name="how-to-build-incrementally"></a>Procedura: Compilazione incrementale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
  Quando gli input e gli output sono specificati in una destinazione, ogni output può essere mappato solo a un input oppure potrebbe non esserci alcun mapping diretto tra gli output e gli input. Nell'[attività Csc](../msbuild/csc-task.md) precedente ad esempio, non è possibile eseguire il mapping dell'output hello.exe a un singolo input, perché dipende da tutti gli elementi.  
   
 > [!NOTE]
->  Una destinazione senza mapping diretto tra input e output verrà sempre compilata con maggiore frequenza rispetto a una destinazione in cui ogni output corrisponde a un solo input perché [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non può determinare quali output debbano essere ricompilati se alcuni input sono stati modificati.  
+> Una destinazione senza mapping diretto tra input e output verrà sempre compilata con maggiore frequenza rispetto a una destinazione in cui ogni output corrisponde a un solo input perché [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] non può determinare quali output debbano essere ricompilati se alcuni input sono stati modificati.  
   
  Le attività, in cui è possibile identificare un mapping diretto tra output e input, ad esempio l'[attività LC](../msbuild/lc-task.md), sono più adatte per le compilazioni incrementali, a differenza delle attività `Csc` e [Vbc](../msbuild/vbc-task.md), che producono un assembly di output da un numero di input.  
   
@@ -70,7 +70,7 @@ Quando si compila un progetto di grandi dimensioni, è importante che i componen
   Questo file di progetto contiene le destinazioni `Convert` e `Build`. Le attività `GenerateContentFiles` e `BuildHelp` vengono inserite rispettivamente nelle destinazioni `Convert` e `Build` in modo che ogni destinazione possa essere compilata in modo incrementale. Tramite l'elemento `Output`, gli output dell'attività `GenerateContentFiles` vengono inseriti nell'elenco di elementi `ContentFile` dove possono essere usati come input per l'attività `BuildHelp`. L'uso dell'elemento `Output` in questo modo offre automaticamente gli output da un'attività come input per un'altra attività in modo che non sia necessario elencare manualmente i singoli elementi o elenchi di elementi in ogni attività.  
   
 > [!NOTE]
->  Sebbene la destinazione `GenerateContentFiles` possa essere compilata in modo incrementale, tutti gli output di tale destinazione sono sempre necessari come input per la destinazione `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] offre automaticamente tutti gli output da una sola destinazione come input per un'altra destinazione quando si usa l'elemento `Output`.  
+> Sebbene la destinazione `GenerateContentFiles` possa essere compilata in modo incrementale, tutti gli output di tale destinazione sono sempre necessari come input per la destinazione `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] offre automaticamente tutti gli output da una sola destinazione come input per un'altra destinazione quando si usa l'elemento `Output`.  
   
 ```  
 <Project DefaultTargets="Build"  

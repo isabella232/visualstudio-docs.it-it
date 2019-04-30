@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52976875be5d3b6544701e1a52e45d436f1cc6c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1cc82f81475f742a05abb063bfd3b5a51b7fe2b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434621"
 ---
 # <a name="sccopenproject-function"></a>Funzione SccOpenProject
 Questa funzione consente di aprire un progetto di controllo di origine esistente o ne crea uno nuovo.
@@ -78,7 +78,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>Valore restituito
  Implementazione di plug-in del controllo dell'origine di questa funzione deve restituire uno dei valori seguenti:
 
-|Valore|Descrizione|
+|Value|Descrizione|
 |-----------|-----------------|
 |SCC_OK|Esito positivo nell'apertura del progetto.|
 |SCC_E_INITIALIZEFAILED|Progetto non è stato possibile inizializzare.|
@@ -95,14 +95,14 @@ SCCRTN SccOpenProject (
  L'IDE può passare un nome utente (`lpUser`), oppure potrebbe semplicemente passare in un puntatore a una stringa vuota. Se è presente un nome utente, il plug-in del controllo del codice sorgente deve usarlo come valore predefinito. Tuttavia, se è stato passato alcun nome, o se l'account di accesso non riuscito con il nome specificato, il plug-in deve richiedere all'utente di accedere e verrà restituito il nome valido in `lpUser` quando riceve un account di accesso valido`.` perché il plug-in può cambiare la stringa del nome utente , l'IDE sempre dovrà allocare un buffer di dimensione (`SCC_USER_LEN`SCC_USER_SIZE, che include lo spazio per il carattere null di terminazione o + 1).
 
 > [!NOTE]
->  La prima azione dell'IDE potrebbe essere necessario eseguire può essere una chiamata ai `SccOpenProject` funzione o il [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Per questo motivo, li dispongono di un'identica `lpUser` parametro.
+> La prima azione dell'IDE potrebbe essere necessario eseguire può essere una chiamata ai `SccOpenProject` funzione o il [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Per questo motivo, li dispongono di un'identica `lpUser` parametro.
 
  `lpAuxProjPath` e`lpProjName` vengono lette dal file di soluzione, o vengono restituiti da una chiamata al `SccGetProjPath` (funzione). Questi parametri contengano le stringhe che associa il controllo del codice sorgente del plug-in al progetto e sono significativi solo per il plug-in. Se ad esempio stringhe non sono nel file di soluzione e l'utente non è stato richiesto di passare (che restituirà una stringa tramite il `SccGetProjPath` (funzione)), l'IDE passa stringhe vuote per entrambe `lpAuxProjPath` e `lpProjName`e si aspetta che questi valori da aggiornare per il plug-in del momento in cui questa funzione restituisce.
 
  `lpTextOutProc` è un puntatore a una funzione di callback fornita dall'IDE per il controllo del codice sorgente del plug-in per la visualizzazione dell'output di risultato del comando. Questa funzione di callback è descritto dettagliatamente [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
 > [!NOTE]
->  Se il plug-in del controllo del codice sorgente è intenzione di sfruttare i vantaggi di questo, è necessario impostare il `SCC_CAP_TEXTOUT` flag nel [SccInitialize](../extensibility/sccinitialize-function.md). Se questo flag non è stata impostata o se l'IDE non supporta questa funzionalità `lpTextOutProc` saranno `NULL`.
+> Se il plug-in del controllo del codice sorgente è intenzione di sfruttare i vantaggi di questo, è necessario impostare il `SCC_CAP_TEXTOUT` flag nel [SccInitialize](../extensibility/sccinitialize-function.md). Se questo flag non è stata impostata o se l'IDE non supporta questa funzionalità `lpTextOutProc` saranno `NULL`.
 
  Il `dwFlags` parametro controlla il risultato nel caso in cui il progetto in fase di apertura non esiste attualmente. È costituito da due flag di bit, `SCC_OP_CREATEIFNEW` e `SCC_OP_SILENTOPEN`. Se il progetto in corso l'apertura già esiste, la funzione semplicemente il progetto verrà aperto e restituisce `SCC_OK`. Se il progetto non esiste e se il `SCC_OP_CREATEIFNEW` flag è attivato, il plug-in del controllo del codice sorgente può creare il progetto nel sistema di controllo di origine, aprirlo e restituire `SCC_OK`. Se il progetto non esiste e se il `SCC_OP_CREATEIFNEW` flag è disattivata, il plug-in deve quindi cercare il `SCC_OP_SILENTOPEN` flag. Se tale flag è disattivata, il plug-in possono richiedere all'utente per un nome di progetto. Se tale flag è attivato, il plug-in deve semplicemente restituire `SCC_E_UNKNOWNPROJECT`.
 
@@ -112,7 +112,7 @@ SCCRTN SccOpenProject (
  Se l'origine di controllo set di plug-in di `SCC_CAP_REENTRANT` di tipo bit in `SccInitialize`, quindi la sequenza di sessione precedente può essere ripetuta più volte in parallelo. Diversi `pvContext` strutture di tenere traccia delle sessioni diverse, in cui ogni `pvContext` è associato a un progetto aperto in una fase. Base di`pvContext` parametro, il plug-in grado di determinare quale progetto si fa riferimento in qualsiasi particolare chiamata. Se la funzionalità di tipo bit `SCC_CAP_REENTRANT` non è impostata, nonreentrant plug-in controllo codice sorgente sono limitate le possibilità di lavorare con più progetti.
 
 > [!NOTE]
->  Il `SCC_CAP_REENTRANT` bit è stato introdotto nella versione 1.1 dell'API dei plug-in controllo di origine. Non è impostata oppure viene ignorato nella versione 1.0 e tutti versione 1.0 origine plug-in del controllo si presuppone che siano nonreentrant.
+> Il `SCC_CAP_REENTRANT` bit è stato introdotto nella versione 1.1 dell'API dei plug-in controllo di origine. Non è impostata oppure viene ignorato nella versione 1.0 e tutti versione 1.0 origine plug-in del controllo si presuppone che siano nonreentrant.
 
 ## <a name="see-also"></a>Vedere anche
 - [Funzioni API del plug-in del controllo del codice sorgente](../extensibility/source-control-plug-in-api-functions.md)

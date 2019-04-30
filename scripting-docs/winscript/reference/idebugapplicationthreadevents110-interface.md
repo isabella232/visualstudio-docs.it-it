@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440496"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>Interfaccia IDebugApplicationThreadEvents110
 Aggiunge più eventi di thread. Questi eventi sono solo locali. Vale a dire, è possibile sottoscrivere li solo nel processo che viene eseguito il debug, usando il [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) consigliarti e annullare i metodi su oggetti di thread dell'applicazione di PDM (oggetti che implementano [IDebugApplicationThread Interfaccia](../../winscript/reference/idebugapplicationthread-interface.md)). Si verificano nel thread da che provengano.  
   
 > [!IMPORTANT]
->  Questa interfaccia è implementata da PDM v11.0 e versione successiva. Rilevata in activdbg100.h.  
+> Questa interfaccia è implementata da PDM v11.0 e versione successiva. Rilevata in activdbg100.h.  
   
 ## <a name="methods"></a>Metodi  
  L'interfaccia `IDebugActivationThreadEvents110` espone i metodi riportati di seguito.  

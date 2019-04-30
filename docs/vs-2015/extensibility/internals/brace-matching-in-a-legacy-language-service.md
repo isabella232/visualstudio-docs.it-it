@@ -11,24 +11,24 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03420aa0638fcf12fa36fb871b4a14d2695f0377
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d6d7243c8032b22f9abe89021af138f638729011
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437640"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza parentesi graffe in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia di elementi del linguaggio che si verificano insieme, ad esempio le parentesi tonde e parentesi graffe devono. Quando uno sviluppatore immette una parentesi graffa di chiusura, parentesi graffa di apertura viene evidenziata.  
   
- È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in C#, il `foreach` istruzione costituisce una tripla: "`foreach()`","`{`", e "`}`". I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.  
+ È possibile associare due o tre elementi che si verificano contemporaneamente, denominate coppie e Triple. Triple sono set di tre elementi che si verificano contemporaneamente. Ad esempio, in c#, il `foreach` istruzione costituisce una tripla: "`foreach()`","`{`", e "`}`". I tre elementi vengono evidenziati quando viene digitata la parentesi graffa di chiusura.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: Visualizzazione della corrispondenza parentesi graffe](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
  Il <xref:Microsoft.VisualStudio.Package.AuthoringSink> supporta entrambe le coppie di classe e per triplica con il <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> e <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> metodi.  
   

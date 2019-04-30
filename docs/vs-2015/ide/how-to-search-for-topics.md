@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435217"
 ---
 # <a name="how-to-search-for-topics"></a>Procedura: Eseguire la ricerca di argomenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60054638"
 2. Nella query di ricerca specificare eventuali operatori logici o di ricerca avanzata da applicare alla ricerca. Per eseguire la ricerca in tutte le informazioni della Guida disponibili, non usare gli operatori.  
   
     > [!NOTE]
-    >  Nella finestra di dialogo **Opzioni Help Viewer** è possibile specificare altre preferenze, ad esempio il numero massimo di risultati da visualizzare contemporaneamente e se includere i contenuti in lingua inglese quando le impostazioni locali sono diverse dall'inglese.  
+    > Nella finestra di dialogo **Opzioni Help Viewer** è possibile specificare altre preferenze, ad esempio il numero massimo di risultati da visualizzare contemporaneamente e se includere i contenuti in lingua inglese quando le impostazioni locali sono diverse dall'inglese.  
   
 3. Premere il tasto INVIO.  
   

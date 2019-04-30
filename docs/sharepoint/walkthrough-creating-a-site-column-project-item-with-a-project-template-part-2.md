@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436714"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.
@@ -222,7 +222,7 @@ ms.locfileid: "60059110"
  Aggiungere XAML per definire l'interfaccia utente della finestra della procedura guidata e i due controlli utente che forniscono l'interfaccia utente per le pagine della procedura guidata e aggiungere il codice per definire il comportamento dei controlli finestra e utente. La procedura guidata che si crea è simile alla procedura guidata predefinita per i progetti di SharePoint in Visual Studio.
 
 > [!NOTE]
->  Nei passaggi seguenti, il progetto avrà alcuni errori di compilazione dopo l'aggiunta XAML o codice al progetto. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
+> Nei passaggi seguenti, il progetto avrà alcuni errori di compilazione dopo l'aggiunta XAML o codice al progetto. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Per creare la finestra della procedura guidata dell'interfaccia utente
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059110"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  La finestra che viene creata in questo XAML viene ottenuta il <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe di base. Quando si aggiunge una finestra di dialogo WPF personalizzata in Visual Studio, è consigliabile che la finestra di dialogo si deriva da questa classe sono coerenti con l'applicazione di stili con altre finestre di dialogo di Visual Studio ed evitare problemi di finestra di dialogo modale che potrebbero verificarsi in caso contrario. Per altre informazioni, vedere [creazione e la gestione delle finestre di dialogo modale](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La finestra che viene creata in questo XAML viene ottenuta il <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe di base. Quando si aggiunge una finestra di dialogo WPF personalizzata in Visual Studio, è consigliabile che la finestra di dialogo si deriva da questa classe sono coerenti con l'applicazione di stili con altre finestre di dialogo di Visual Studio ed evitare problemi di finestra di dialogo modale che potrebbero verificarsi in caso contrario. Per altre informazioni, vedere [creazione e la gestione delle finestre di dialogo modale](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Se si sta sviluppando un progetto Visual Basic, rimuovere il `ProjectTemplateWizard` dello spazio dei nomi dal `WizardWindow` nome di classe nel `x:Class` attributo del `Window` elemento. Questo elemento è nella prima riga della finestra di XAML. Al termine, la prima riga dovrebbe essere simile all'esempio seguente.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059110"
      La colonna del sito è incluso nel pacchetto e distribuzione di SharePoint del sito che il **URL sito** specifica proprietà del progetto. Il browser viene visualizzata la pagina predefinita del sito.
 
     > [!NOTE]
-    >  Se il **debug degli Script disabilitato** verrà visualizzata la finestra di dialogo, scegliere il **Yes** per continuare il debug del progetto.
+    > Se il **debug degli Script disabilitato** verrà visualizzata la finestra di dialogo, scegliere il **Yes** per continuare il debug del progetto.
 
 2. Nel **Azioni sito** menu, scegliere **Impostazioni sito**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059110"
 - [Definire tipi di elemento di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Creazione di modelli di elemento e di modelli di progetto per gli elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Riferimenti sullo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

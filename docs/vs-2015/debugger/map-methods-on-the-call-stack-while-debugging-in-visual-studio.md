@@ -28,14 +28,14 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: mikejo
+ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432174"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mappare i metodi sullo stack di chiamate durante il debug in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Creare una mappa del codice per tracciare visivamente lo stack di chiamate duran
  ![Visualizzare i campi di un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  Per impostazione predefinita, quando si aggiungono gli elementi alla mappa si aggiungono anche i nodi di gruppo padre, ad esempio la classe, spazio dei nomi e l'assembly. Sebbene questo sia utile, è possibile mantenere la mappa semplice disattivando questa funzionalità usando il **Includi padri** pulsante sulla barra degli strumenti della mappa o premendo **CTRL** quando si aggiungono elementi.
+> Per impostazione predefinita, quando si aggiungono gli elementi alla mappa si aggiungono anche i nodi di gruppo padre, ad esempio la classe, spazio dei nomi e l'assembly. Sebbene questo sia utile, è possibile mantenere la mappa semplice disattivando questa funzionalità usando il **Includi padri** pulsante sulla barra degli strumenti della mappa o premendo **CTRL** quando si aggiungono elementi.
 
  ![Campi correlati a un metodo nella mappa del codice dello stack di chiamate](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

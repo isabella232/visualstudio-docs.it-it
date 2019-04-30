@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438762"
 ---
 # <a name="visio-object-model-overview"></a>Panoramica del modello a oggetti Visio
   Per sviluppare soluzioni Office per Microsoft Office Visio è possibile interagire con il modello a oggetti di Visio. Questo modello a oggetti è costituito da classi e interfacce fornite nell'assembly di interoperabilità primario per Visio ed è definito nello spazio dei nomi `Microsoft.Office.Interop.Visio`.
@@ -67,7 +67,7 @@ ms.locfileid: "60096556"
  Tutti gli oggetti e i membri nel riferimento del modello a oggetti di VBA corrispondono a tipi e membri nell'assembly di interoperabilità primario (PIA) di Visio. Ad esempio, il `Document` oggetto nel riferimento del modello a oggetti VBA corrisponde al tipo di Microsoft nell'assembly di interoperabilità primario di Visio. Nonostante il riferimento del modello a oggetti di VBA fornisca esempi di codice per la maggior parte delle proprietà, dei metodi e degli eventi, è necessario convertire il codice VBA in questo riferimento a Visual Basic o a Visual C# per usarli in un progetto di componente aggiuntivo VSTO di Visio creato con Visual Studio.
 
 > [!NOTE]
->  Attualmente non è prevista la documentazione di riferimento per l'assembly di interoperabilità primario di Visio.
+> Attualmente non è prevista la documentazione di riferimento per l'assembly di interoperabilità primario di Visio.
 
  Per esempi di codice correlati e strumenti aggiuntivi per la creazione di soluzioni di Visio, vedere [Visio 2010 software development kit di](http://go.microsoft.com/fwlink/?LinkId=196501).
 

@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433258"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizzazione dell'archiviazione dei file e della serializzazione XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Quando l'utente salva un'istanza, oppure *model*, di un linguaggio specifico di 
  È anche possibile scrivere codice programma di personalizzazione più avanzata.  
   
 > [!NOTE]
->  Se si desidera salvare il modello in un formato specifico, ma non è necessario ricaricarlo da tale modulo, considerare l'utilizzo di modelli di testo per generare l'output dal modello, invece di uno schema di serializzazione personalizzata. Per altre informazioni, vedere [generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Se si desidera salvare il modello in un formato specifico, ma non è necessario ricaricarlo da tale modulo, considerare l'utilizzo di modelli di testo per generare l'output dal modello, invece di uno schema di serializzazione personalizzata. Per altre informazioni, vedere [generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>File di modello e diagramma  
  Ogni modello viene in genere salvato in due file:  

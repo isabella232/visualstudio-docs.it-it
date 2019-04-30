@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433139"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definire un comando di menu in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ In Visual Studio è possibile definire altre voci di menu nei menu di scelta rap
 3. Aggiungere un file di classe al progetto e impostarne il contenuto sul codice seguente.  
 
    > [!NOTE]
-   >  Modificare in base alle proprie preferenze lo spazio dei nomi, il nome della classe e il valore restituito da `Text` .  
+   > Modificare in base alle proprie preferenze lo spazio dei nomi, il nome della classe e il valore restituito da `Text` .  
    >   
    >  Se si definiscono più comandi, questi vengono visualizzati nel menu in ordine alfabetico in base ai nomi delle classi.  
 
@@ -222,7 +222,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
 
-    - In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+    - In Esplora soluzioni scegliere **Proprietà**dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
 

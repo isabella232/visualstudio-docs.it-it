@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438174"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 È possibile usare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), invece di usare un diagramma DSL. In questo argomento illustra l'associazione di un Windows Form a un linguaggio DSL, utilizzando la visualizzazione e Visual Studio SDK di modellazione.
@@ -80,7 +80,7 @@ ms.locfileid: "60101795"
      Assegnare le proprietà di dominio aggiuntivo denominate `Size` typu **Int32**, e `IsOrganic` di tipo **booleano**.
 
     > [!NOTE]
-    >  Se si elimina la classe di dominio radice e quindi creare una nuova radice, sarà necessario reimpostare la proprietà di classe radice dell'Editor. Nelle **DSL Explorer**, selezionare **Editor**. Quindi, nella finestra Proprietà impostare **classe radice** a `Farm`.
+    > Se si elimina la classe di dominio radice e quindi creare una nuova radice, sarà necessario reimpostare la proprietà di classe radice dell'Editor. Nelle **DSL Explorer**, selezionare **Editor**. Quindi, nella finestra Proprietà impostare **classe radice** a `Farm`.
 
 4. Usare la **della classe di dominio denominato** lo strumento per creare le classi di dominio seguenti:
 
@@ -105,7 +105,7 @@ ms.locfileid: "60101795"
 10. Compilare il **Dsl** progetto.
 
     > [!NOTE]
-    >  In questa fase, gli altri progetti non verranno compilato senza errori. Tuttavia, si vuole compilare il progetto Dsl in modo che l'assembly è disponibile per la creazione guidata origine dati.
+    > In questa fase, gli altri progetti non verranno compilato senza errori. Tuttavia, si vuole compilare il progetto Dsl in modo che l'assembly è disponibile per la creazione guidata origine dati.
 
 ## <a name="updating-the-ui-project"></a>L'aggiornamento del progetto dell'interfaccia utente
  A questo punto è possibile creare un nuovo controllo utente che verrà visualizzate le informazioni che viene archiviate nel modello DSL. Il modo più semplice per connettere il controllo utente per il modello è tramite le associazioni dati. Il data binding di tipo di adattatore denominato **ModelingBindingSource** è progettato specificamente per la connessione di linguaggi specifici di dominio per le interfacce non VMSDK.
@@ -149,7 +149,7 @@ ms.locfileid: "60101795"
 6. Usando la casella degli strumenti, creare due istanze di **DataGridView**e denominarli `AnimalGridView` e `FieldGridView`.
 
    > [!NOTE]
-   >  Un'alternativa consiste nel trascinare gli elementi di animali e campi dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie dei dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per linguaggi specifici di dominio. Pertanto è preferibile creare le griglie dei dati e le associazioni manualmente.
+   > Un'alternativa consiste nel trascinare gli elementi di animali e campi dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie dei dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per linguaggi specifici di dominio. Pertanto è preferibile creare le griglie dei dati e le associazioni manualmente.
 
 7. Se la casella degli strumenti non contiene il **ModelingBindingSource** dello strumento, aggiungerlo. Menu di scelta rapida del **Data** scheda, scegliere **Scegli elementi**. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona **ModelingBindingSource** dal **scheda Framework .NET**.
 
@@ -221,7 +221,7 @@ ms.locfileid: "60101795"
      `Goat1` viene visualizzato nei **animali** visualizzazione.
 
     > [!WARNING]
-    >  È necessario usare il menu di scelta rapida nel **Farm** nodo, non il **animali** nodo.
+    > È necessario usare il menu di scelta rapida nel **Farm** nodo, non il **animali** nodo.
 
 4. Selezionare il **Farm** nodo radice e visualizzarne le proprietà.
 

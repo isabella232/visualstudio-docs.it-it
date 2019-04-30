@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434125"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Eseguire il debug del layout usando DOM Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  La scheda **Layout** di DOM Explorer mostra il [modello di riquadro CSS](http://go.microsoft.com/fwlink/?LinkID=238778) per l'elemento selezionato in un'app [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , un'app di Windows Phone Store o un'applicazione creata con Strumenti di Visual Studio per Apache Cordova. È possibile usare questa rappresentazione visiva del modello di riquadro per identificare e modificare i valori correlati al layout che hanno effetto sull'aspetto degli elementi.  
   
 > [!TIP]
->  Le modifiche apportate nella scheda **Layout** non sono permanenti. È possibile apportare modifiche permanenti al codice sorgente e quindi aggiornare l'app con il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug (solo per app di Windows Store e Windows Phone Store). In questo modo, si può evitare di riavviare il debugger.  
+> Le modifiche apportate nella scheda **Layout** non sono permanenti. È possibile apportare modifiche permanenti al codice sorgente e quindi aggiornare l'app con il pulsante **Aggiorna applicazione Windows** sulla barra degli strumenti Debug (solo per app di Windows Store e Windows Phone Store). In questo modo, si può evitare di riavviare il debugger.  
   
  Per usare DOM Explorer per modificare alcuni aspetti del layout che non vengono visualizzati nel modello di riquadro, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [stili Debug CSS tramite DOM Explorer](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 7. Scorrere o eseguire un gesto rapido per aprire Sezione 4.  
   
     > [!TIP]
-    >  Posizionare l'emulatore Windows Phone o il simulatore proprio accanto alla finestra di Visual Studio, per poter osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
+    > Posizionare l'emulatore Windows Phone o il simulatore proprio accanto alla finestra di Visual Studio, per poter osservare immediatamente i risultati delle selezioni e le modifiche apportate agli stili CSS.  
   
      Al caricamento di Sezione 4, è possibile notare che l'aspetto delle immagini inferiori non è corretto. Ogni immagine dell'elemento viene tagliata a metà (con la metà sinistra mancante).  
   
 8. Passare a Visual Studio e scegliere **Seleziona elemento** in DOM Explorer oppure premere CTRL+B. In questo modo la modalità di selezione cambia per consentire la selezione di un elemento facendovi clic sopra e l'applicazione viene portata in primo piano. La modalità viene ripristinata dopo un singolo clic.  
   
     > [!TIP]
-    >  È anche possibile usare i tasti di direzione o altri metodi per selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > È anche possibile usare i tasti di direzione o altri metodi per selezionare elementi HTML direttamente in DOM Explorer. Per altre informazioni sulla selezione di elementi, vedere [Guida introduttiva: Debug di HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Nell'emulatore Windows Phone o nel simulatore seleziona la metà di destra grigia di una delle immagini tagliate a metà. Attorno all'elemento selezionato appare un'evidenziazione, come mostrato qui nell'emulatore Windows Phone:  
   
      ![Selezione di un elemento DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  Il simulatore supporta il posizionamento del cursore sopra gli elementi per mostrare l'evidenziazione del riquadro attorno agli elementi DOM prima di selezionarne uno. Nell'emulatore Windows Phone, invece, questo comportamento non è supportato.  
+    > Il simulatore supporta il posizionamento del cursore sopra gli elementi per mostrare l'evidenziazione del riquadro attorno agli elementi DOM prima di selezionarne uno. Nell'emulatore Windows Phone, invece, questo comportamento non è supportato.  
   
      Quando selezioni un elemento DOM, DOM Explorer seleziona automaticamente l'elemento IMG corrispondente in Visual Studio. L'elemento selezionato DOM Explorer è analogo al seguente:  
   
@@ -114,7 +114,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 11. Per scoprire come viene applicata la regola margin-left, fai clic sulla scheda **Calcolata** e guarda sotto la regola margin-left. Come si può notare, questa regola è impostata sul valore 5em, ma il valore calcolato è 66,66px o 146,66px, a seconda del dispositivo di destinazione.  
   
     > [!TIP]
-    >  Il **calcolati** scheda indica che la regola margin-left è impostata nel `..hubpage .hub. section4 .sub-image-row img` selettore CSS, disponibili in CSS. In questa app demo è qui che occorre apportare la correzione.  
+    > Il **calcolati** scheda indica che la regola margin-left è impostata nel `..hubpage .hub. section4 .sub-image-row img` selettore CSS, disponibili in CSS. In questa app demo è qui che occorre apportare la correzione.  
   
      È anche possibile usare la scheda **Layout** per verificare le modifiche apportate ai valori del layout.  
   

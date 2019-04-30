@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424378"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagrammi dei componenti UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ In Visual Studio, un *diagramma dei componenti* vengono illustrate le parti di u
  Per altre informazioni su come usare i diagrammi dei componenti nel processo di progettazione, vedere [modellare l'architettura dell'applicazione](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Questo argomento illustra gli elementi che è possibile usare nei diagrammi dei componenti. Per altre informazioni su come creare diagrammi dei componenti vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md). Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+> Questo argomento illustra gli elementi che è possibile usare nei diagrammi dei componenti. Per altre informazioni su come creare diagrammi dei componenti vedere [diagrammi dei componenti UML: Linee guida](../modeling/uml-component-diagrams-guidelines.md). Per altre informazioni su come creare diagrammi di modellazione in generale, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Lettura dei diagrammi dei componenti  
  La tabella seguente descrive gli elementi che è possibile usare in un diagramma dei componenti, insieme alle relative proprietà principali. Per un elenco completo delle proprietà degli elementi, vedere [delle proprietà degli elementi nei diagrammi dei componenti UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

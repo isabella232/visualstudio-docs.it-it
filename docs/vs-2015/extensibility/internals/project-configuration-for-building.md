@@ -11,12 +11,12 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434853"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ L'elenco delle configurazioni di soluzione per una determinata soluzione viene g
  Se l'utente crea una nuova configurazione di soluzione denominata MyConfig2, Project1 associa la configurazione di Debug per la configurazione della soluzione per impostazione predefinita. Project2 associa anche la relativa configurazione MyConfig2 per la configurazione della soluzione per impostazione predefinita.  
   
 > [!NOTE]
->  L'associazione è tra maiuscole e minuscole.  
+> L'associazione è tra maiuscole e minuscole.  
   
  Quando l'utente seleziona il **la selezione multipla** elemento nell'elenco a discesa configurazione, l'ambiente consente di visualizzare una finestra di dialogo che fornisce l'elenco delle configurazioni disponibili.  
   
@@ -47,7 +47,7 @@ Dipendenze progetto
  Dipendenze del progetto determinano l'ordine in cui compilare i progetti. Utilizzare la scheda di ordine di compilazione nella finestra di dialogo per visualizzare l'ordine esatto in cui i progetti all'interno di una soluzione di compilazione e utilizzare la scheda dipendenze per modificare l'ordine di compilazione.  
   
 > [!NOTE]
->  I progetti nell'elenco sono selezionate le caselle di controllo, ma vengono visualizzate in grigio sono state aggiunte dall'ambiente a causa delle dipendenze esplicite specificato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfacce e non può essere modificato. Ad esempio, aggiungendo un riferimento al progetto da un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] progetto a un altro progetto aggiunge automaticamente una dipendenza di compilazione che può essere rimossi solo eliminando il riferimento. Non è possibile selezionare progetti cui caselle di controllo siano deselezionate e vengono visualizzate in grigio perché questa operazione creerebbe un ciclo di dipendenze (ad esempio Project1 sarebbe dipende Project2 e Project2 sarebbe dipende Project1), che verrebbe stallo la compilazione.  
+> I progetti nell'elenco sono selezionate le caselle di controllo, ma vengono visualizzate in grigio sono state aggiunte dall'ambiente a causa delle dipendenze esplicite specificato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfacce e non può essere modificato. Ad esempio, aggiungendo un riferimento al progetto da un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] progetto a un altro progetto aggiunge automaticamente una dipendenza di compilazione che può essere rimossi solo eliminando il riferimento. Non è possibile selezionare progetti cui caselle di controllo siano deselezionate e vengono visualizzate in grigio perché questa operazione creerebbe un ciclo di dipendenze (ad esempio Project1 sarebbe dipende Project2 e Project2 sarebbe dipende Project1), che verrebbe stallo la compilazione.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i processi di compilazione includono la compilazione tipiche e le operazioni di collegamento che vengono richiamate con un singolo comando di compilazione. Due altri processi di compilazione possono anche essere supportate: un'operazione di pulizia per eliminare tutti gli elementi di output da una compilazione precedente e un controllo di aggiornamento per determinare se un elemento di output in una configurazione è stato modificato.  
   

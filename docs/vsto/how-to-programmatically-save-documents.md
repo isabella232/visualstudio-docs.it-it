@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 965f8d9661d30d23365fe324f7102e15fafec77c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0e455df89a3dfece2c5d4c8cd36a26af816f720a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419468"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Procedura: Salvare i documenti a livello di codice
   Esistono diversi modi per salvare i documenti di Microsoft Office Word. È possibile salvare un documento senza modificare il nome del documento, oppure è possibile salvare un documento con un nuovo nome.
@@ -54,14 +54,14 @@ ms.locfileid: "60056276"
  Usare il metodo SaveAs per salvare un documento con un nuovo nome. È possibile usare questo metodo per la <xref:Microsoft.Office.Tools.Word.Document> elemento host in un progetto di Word a livello di documento o di nativo <xref:Microsoft.Office.Interop.Word.Document> oggetto in qualsiasi progetto di Word. Questo metodo richiede che si specifica il nuovo nome file, ma gli altri argomenti sono facoltativi.
 
 > [!NOTE]
->  Se si visualizza il **SaveAs** all'interno della finestra di dialogo il <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> gestore dell'evento di `ThisDocument` e impostare il *Annulla* parametro **false**, l'applicazione potrebbe chiusura imprevista. Se si impostano i *annullare* parametro per **true**, viene visualizzato un messaggio di errore che indicherà che è stata disabilitata.
+> Se si visualizza il **SaveAs** all'interno della finestra di dialogo il <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> gestore dell'evento di `ThisDocument` e impostare il *Annulla* parametro **false**, l'applicazione potrebbe chiusura imprevista. Se si impostano i *annullare* parametro per **true**, viene visualizzato un messaggio di errore che indicherà che è stata disabilitata.
 
 ### <a name="to-save-the-document-associated-with-a-document-level-customization-with-a-new-name"></a>Per salvare il documento associato a una personalizzazione a livello di documento con un nuovo nome
 
 1. Chiamare il <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodo di `ThisDocument` classe nel progetto, utilizzando un nome di file e percorso completo. Se un file con quel nome già esiste in quella cartella, viene sovrascritto senza avvisare. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` .
 
     > [!NOTE]
-    >  Il <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodo genera un'eccezione se una directory di destinazione non esiste o se sono presenti altri problemi di salvataggio di un file. È buona norma usare un **try... catch** blocca tutto il <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodo o all'interno di un metodo di chiamata.
+    > Il <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodo genera un'eccezione se una directory di destinazione non esiste o se sono presenti altri problemi di salvataggio di un file. È buona norma usare un **try... catch** blocca tutto il <xref:Microsoft.Office.Tools.Word.Document.SaveAs%2A> metodo o all'interno di un metodo di chiamata.
 
      [!code-vb[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#10)]
@@ -73,7 +73,7 @@ ms.locfileid: "60056276"
      Esempio di codice seguente salva il documento attivo con un nuovo nome. Per usare questo esempio di codice, eseguirlo dalla classe `ThisDocument` o `ThisAddIn` nel progetto.
 
     > [!NOTE]
-    >  Il <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodo genera un'eccezione se una directory di destinazione non esiste o se sono presenti altri problemi di salvataggio di un file. È buona norma usare un **try... catch** blocca tutto il <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodo o all'interno di un metodo di chiamata.
+    > Il <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodo genera un'eccezione se una directory di destinazione non esiste o se sono presenti altri problemi di salvataggio di un file. È buona norma usare un **try... catch** blocca tutto il <xref:Microsoft.Office.Interop.Word._Document.SaveAs%2A> metodo o all'interno di un metodo di chiamata.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#10)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#10](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#10)]

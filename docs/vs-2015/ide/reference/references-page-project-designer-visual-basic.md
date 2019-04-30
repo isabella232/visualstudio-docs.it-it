@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443839"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Riferimenti (pagina), Creazione progetti (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Usare la pagina **Riferimenti** di **Progettazione progetti** per gestire riferi
  Fare clic su questo pulsante per accedere alla finestra di dialogo **Percorsi riferimento**.  
   
 > [!NOTE]
->  Quando il sistema del progetto trova un riferimento a un assembly, il sistema risolve il riferimento eseguendo una ricerca nei percorsi seguenti nell'ordine seguente:  
+> Quando il sistema del progetto trova un riferimento a un assembly, il sistema risolve il riferimento eseguendo una ricerca nei percorsi seguenti nell'ordine seguente:  
 > 
 > 1. Cartella del progetto. I file della cartella del progetto vengono visualizzati in **Esplora soluzioni** quando l'opzione **Mostra tutti i file** non è attiva.  
 >    2. Cartelle specificate nella finestra di dialogo **Percorsi riferimento**.  

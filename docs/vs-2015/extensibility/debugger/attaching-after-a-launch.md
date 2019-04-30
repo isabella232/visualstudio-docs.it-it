@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437428"
 ---
 # <a name="attaching-after-a-launch"></a>Collegamento dopo un avvio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Dopo aver avviato un programma, la sessione di debug è pronta per collegare il 
 - Se è più opportuno per facilitare la comunicazione tra il DE e il programma, l'ambiente di runtime condiviso crea quindi il DE. In tal modo il modello SDM in uno spazio indirizzi e la Germania, ambiente run-time e programma insieme in un altro. Questo è tipico di un CRI implementata con un interprete per eseguire i linguaggi basati su script.  
   
     > [!NOTE]
-    >  Modalità la Germania viene associato al programma è dipendente dall'implementazione. Comunicazione tra il DE e il programma viene anche dipende dall'implementazione.  
+    > Modalità la Germania viene associato al programma è dipendente dall'implementazione. Comunicazione tra il DE e il programma viene anche dipende dall'implementazione.  
   
 ## <a name="implementation"></a>Implementazione  
  A livello di codice quando la sessione debug manager (SDM) prima di tutto riceve la [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta il programma da avviare, chiama il [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) passandogli un [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto, che è successivo usato per passare gli eventi di debug indietro per il modello SDM. Il `IDebugProgram2::Attach` chiama quindi il [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (metodo). Per altre informazioni sul modo in cui il modello SDM riceve la `IDebugProgram2` dell'interfaccia, vedere [notifica della porta](../../extensibility/debugger/notifying-the-port.md).  

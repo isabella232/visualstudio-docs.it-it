@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438895"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
 Questo argomento viene descritto come usare il **Editor Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Questo argomento viene descritto come usare il **Editor Set di regole** nella fi
  Il **Editor Set di regole** finestra di dialogo consente di creare e modificare [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) regola set, che vengono serializzati in un file con estensione rules.  
   
 > [!NOTE]
->  Se si desidera aprire il file con estensione rules con il **Editor XML con codifica**, è necessario chiudere la finestra di progettazione associata per il flusso di lavoro o attività.  
+> Se si desidera aprire il file con estensione rules con il **Editor XML con codifica**, è necessario chiudere la finestra di progettazione associata per il flusso di lavoro o attività.  
   
  Per informazioni su come accedere al **Editor Set di regole** finestra di dialogo, vedere [come: Creare un Set di regole di attività PolicyActivity (Legacy)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.  
+> L'editor delle regole della [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy che viene usato per fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] non supporta il multitargeting.  
   
  La tabella seguente descrive gli elementi dell'interfaccia utente di **Editor Set di regole** nella finestra di dialogo.  
   

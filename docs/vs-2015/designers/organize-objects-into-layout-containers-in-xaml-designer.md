@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432596"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizzare gli oggetti in contenitori nella finestra di progettazione XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Si supponga di voler impostare la posizione degli oggetti, quali immagini, pulsa
  Oltre a una descrizione dei pannelli e dei controlli di layout disponibili, questa pagina include i collegamenti a brevi video introduttivi su questi elementi.  
   
 > [!NOTE]
->  Alcuni dei video possono fare riferimento a Blend o Expression Blend, che usano la stessa finestra di progettazione XAML di Visual Studio e Blend per Visual Studio.  
+> Alcuni dei video possono fare riferimento a Blend o Expression Blend, che usano la stessa finestra di progettazione XAML di Visual Studio e Blend per Visual Studio.  
   
 ## <a name="layout-panels"></a>Pannelli di layout  
  Per definire inizialmente la pagina, scegliere uno dei seguenti pannelli di layout. La pagina può comunque contenere più pannelli di layout. Si può infatti iniziare con un pannello di layout di tipo **Grid** e quindi aggiungerne uno di tipo **StackPanel** a un'area del pannello **Grid** in modo da disporre i controlli verticalmente in tale elemento.  

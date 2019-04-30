@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa74d6ca668203f7b13f11307ac59ef5270aac9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444329"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: Debug di un'applicazione multithreading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Thread::Sleep(3000);
 2. Andare alla **posizione di debug** sulla barra degli strumenti e fare clic sui **Thread** elenco.  
   
     > [!NOTE]
-    >  In questa barra degli strumenti sono presenti tre elenchi principali: **Processo**, **Thread**, e **Stack Frame**.  
+    > In questa barra degli strumenti sono presenti tre elenchi principali: **Processo**, **Thread**, e **Stack Frame**.  
   
 3. Osservare il numero di thread visualizzati nell'elenco.  
   

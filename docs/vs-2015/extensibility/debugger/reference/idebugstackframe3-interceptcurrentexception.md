@@ -12,12 +12,12 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a448a1149f90e07a95e2c9ea17102448f0fbd443
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 42472690431d48a9baafbb0abee27c1a07d24fcd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428697"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  Quando il debugger vuole sapere se è necessario intercettare l'eccezione, viene chiamato questo metodo sull'oggetto stack frame corrente. Questo metodo è responsabile per la gestione di tutti i dettagli dell'eccezione. Se il [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interfaccia non è implementata o `InterceptStackException` metodo restituisce qualsiasi errore, quindi il debugger continua l'elaborazione normale in corso l'eccezione.  
   
 > [!NOTE]
->  Le eccezioni possono essere intercettate solo nel codice gestito, vale a dire, quando il programma sottoposto a debug è in esecuzione con il runtime .NET. Naturalmente, è possono implementare gli implementatori del linguaggio di terze parti `InterceptStackException` nei propri motori di debug, se necessario.  
+> Le eccezioni possono essere intercettate solo nel codice gestito, vale a dire, quando il programma sottoposto a debug è in esecuzione con il runtime .NET. Naturalmente, è possono implementare gli implementatori del linguaggio di terze parti `InterceptStackException` nei propri motori di debug, se necessario.  
   
  Al termine l'intercettazione, un' [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) viene segnalato.  
   

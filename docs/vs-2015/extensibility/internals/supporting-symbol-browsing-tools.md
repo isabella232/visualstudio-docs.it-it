@@ -18,12 +18,12 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ec67fd4746fbe935d93b58de0bf445c8a6d63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5b85e8bf500364587af4c3891d7d39f069af9953
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441222"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Supporto degli strumenti di esplorazione dei simboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,9 +48,9 @@ ms.locfileid: "58969845"
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] object manager chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> metodo per determinare se un elemento di elenco specificato è espandibile e contiene gli elementi figlio. Se l'interfaccia utente invia una richiesta per espandere un elemento, il gestore oggetti richiede l'elenco figlio di simboli chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> (metodo). Il processo procede con le diverse parti della struttura ad albero viene compilato su richiesta.  
   
 > [!NOTE]
->  Per implementare un provider di simboli di codice nativo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfacce.  
+> Per implementare un provider di simboli di codice nativo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfacce.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Registrare una libreria con il gestore oggetti](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Procedura: Esporre gli elenchi dei simboli forniti dalla libreria al gestore degli oggetti](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Procedura: Identificare i simboli in una libreria](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Procedura: identificare i simboli in una libreria](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

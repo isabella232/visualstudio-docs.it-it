@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435008"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Override ed estensione delle classi generate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ La definizione DSL è una piattaforma in cui è possibile compilare un set avanz
  `} }`  
   
 > [!NOTE]
->  Per eseguire l'override di metodi in una classe generata, scrivono sempre il codice in un file separato dal file generati. In genere, il file è contenuto in una cartella denominata Customcoded. Se si apportano modifiche al codice generato, andranno persi quando si rigenera il codice dalla definizione DSL.  
+> Per eseguire l'override di metodi in una classe generata, scrivono sempre il codice in un file separato dal file generati. In genere, il file è contenuto in una cartella denominata Customcoded. Se si apportano modifiche al codice generato, andranno persi quando si rigenera il codice dalla definizione DSL.  
   
  Per scoprire quali metodi è possibile eseguire l'override, digitare **eseguire l'override** nella classe, seguito da uno spazio. La descrizione comando IntelliSense indicherà quali metodi possono essere ignorati.  
   

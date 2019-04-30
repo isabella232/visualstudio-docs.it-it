@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437586"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104980"
 È possibile usare Visual Studio per creare applicazioni che visualizzano correttamente il testo nelle lingue scritte da destra a sinistra, tra cui l'arabo e l'ebraico. Per alcune funzionalità basta impostare delle proprietà. In altri casi è necessario implementare le funzionalità nel codice.  
   
 > [!NOTE]
->  Per l'immissione e la visualizzazione delle lingue bidirezionali è necessario usare una versione di Windows configurata per la lingua appropriata. Può essere una versione di Windows in inglese con il Language Pack appropriato o una versione di Windows localizzata nella lingua desiderata.  
+> Per l'immissione e la visualizzazione delle lingue bidirezionali è necessario usare una versione di Windows configurata per la lingua appropriata. Può essere una versione di Windows in inglese con il Language Pack appropriato o una versione di Windows localizzata nella lingua desiderata.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Tipi di applicazioni che supportano le lingue bidirezionali  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60104980"
 - Contenuto di file. È possibile aprire o salvare file con codifica Unicode o con una tabella codici selezionata.  
   
     > [!NOTE]
-    >  L'editor di codice è un caso a parte. Per informazioni dettagliate, vedere i paragrafi che seguono.  
+    > L'editor di codice è un caso a parte. Per informazioni dettagliate, vedere i paragrafi che seguono.  
   
 - Elementi di dati. In **Esplora server** questi elementi vengono visualizzati correttamente e possono essere modificati.  
   
@@ -79,10 +79,10 @@ ms.locfileid: "60104980"
 - Codice e testo letterale. Nell'editor di codice (che è anche l'editor di testo) è possibile usare l'arabo o l'ebraico per assegnare nomi a classi, funzioni, variabili, proprietà, valori letterali stringa, attributi e così via. Tuttavia l'editor non supporta l'ordine di lettura da destra a sinistra: il testo inizia sempre sul margine sinistro.  
   
     > [!TIP]
-    >  È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  È necessario mantenere la coerenza nei riferimenti a oggetti denominati in queste lingue. Se ad esempio si usano le linee kashida quando si assegna una variabile in arabo, è sempre necessario usare la notazione kashida nei riferimenti a tale variabile. In caso contrario si verificheranno degli errori.  
+    > È necessario mantenere la coerenza nei riferimenti a oggetti denominati in queste lingue. Se ad esempio si usano le linee kashida quando si assegna una variabile in arabo, è sempre necessario usare la notazione kashida nei riferimenti a tale variabile. In caso contrario si verificheranno degli errori.  
   
 - Commenti del codice. È possibile creare commenti in arabo o in ebraico. È possibile usare queste lingue anche nello strumento per la generazione di commenti.  
   

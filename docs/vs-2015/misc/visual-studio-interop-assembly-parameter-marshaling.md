@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436520"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshalling dei parametri degli assembly di interoperabilità di Visual Studio
 Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere necessario chiamare o essere chiamato da codice COM non gestito. In genere, gli argomenti del metodo vengono trasformati o sottoposto a marshalling, automaticamente per il marshalling di interoperabilità. Tuttavia, talvolta argomenti non è possibile trasformare in modo semplice. In questi casi, vengono utilizzati i parametri del prototipo metodo assembly di interoperabilità corrispondente ai parametri di funzione COM fedelmente possibile. Per altre informazioni, vedere [marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -46,7 +46,7 @@ Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere nece
  In alcuni casi, un'interfaccia COM genera un `IUnknown` oggetto e l'interfaccia COM quindi lo passa come tipo `void **`. Queste interfacce sono particolarmente importanti perché se la variabile viene definita come [out] nel file IDL, la `IUnknown` oggetto è conteggio dei riferimenti con il `AddRef` (metodo). Se l'oggetto non viene gestita correttamente, si verifica una perdita di memoria.  
   
 > [!NOTE]
->  Un `IUnknown` oggetto creato dall'interfaccia COM e restituiti in una variabile [out] causa una perdita di memoria se non viene rilasciato in modo esplicito.  
+> Un `IUnknown` oggetto creato dall'interfaccia COM e restituiti in una variabile [out] causa una perdita di memoria se non viene rilasciato in modo esplicito.  
   
  Metodi gestiti che gestiscono tali oggetti devono trattare <xref:System.IntPtr> come puntatore a un `IUnknown` dell'oggetto e chiamare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'oggetto. Il chiamante deve quindi eseguire il cast del valore restituito in qualsiasi tipo è appropriato. Quando l'oggetto non è più necessario, chiamare <xref:System.Runtime.InteropServices.Marshal.Release%2A> rilasciarlo.  
   
@@ -77,7 +77,7 @@ else
 ```  
   
 > [!NOTE]
->  I metodi seguenti sono note come passare `IUnknown` puntatori dell'oggetto come tipo <xref:System.IntPtr>. È necessario gestirle come descritto in questa sezione.  
+> I metodi seguenti sono note come passare `IUnknown` puntatori dell'oggetto come tipo <xref:System.IntPtr>. È necessario gestirle come descritto in questa sezione.  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   

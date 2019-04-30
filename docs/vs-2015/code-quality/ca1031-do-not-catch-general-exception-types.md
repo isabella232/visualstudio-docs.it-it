@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3133ea902717f4fea15cfb66b8d0050f7a538940
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4588a949b4b6439c3f76270b0bcdab9cd52c23d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431221"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Non rilevare tipi di eccezione generali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58967002"
  Non escludere un avviso da questa regola. Il rilevamento di tipi di eccezione generali problemi in fase di esecuzione da parte dell'utente della libreria possono essere nascosti e può rendere più difficile il debug.
 
 > [!NOTE]
->  Inizia con la [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], common language runtime (CLR) non trasmette più eccezioni stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso nel [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], per essere gestito dal codice gestito. Se si vuole compilare un'applicazione nel [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] o versioni successive e mantenere la gestione delle eccezioni stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al metodo che gestisce l'eccezione di stato danneggiato.
+> Inizia con la [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], common language runtime (CLR) non trasmette più eccezioni stato danneggiato che si verificano nel sistema operativo e codice gestito, ad esempio le violazioni di accesso nel [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], per essere gestito dal codice gestito. Se si vuole compilare un'applicazione nel [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] o versioni successive e mantenere la gestione delle eccezioni stato danneggiato, è possibile applicare il <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al metodo che gestisce l'eccezione di stato danneggiato.
 
 ## <a name="example"></a>Esempio
  L'esempio seguente mostra un tipo che viola la regola e un tipo che implementa correttamente il `catch` blocco.

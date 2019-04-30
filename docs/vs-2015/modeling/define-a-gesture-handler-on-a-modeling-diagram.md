@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433158"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
 3. Aggiungere un file di classe al progetto e impostarne il contenuto sul codice seguente.  
   
    > [!NOTE]
-   >  Modificare lo spazio dei nomi e il nome della classe nel modo desiderato.  
+   > Modificare lo spazio dei nomi e il nome della classe nel modo desiderato.  
   
    ```  
    using System.ComponentModel.Composition;  
@@ -243,7 +243,7 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
    - Se si hanno più progetti, assicurarsi che il progetto VSIX sia impostato come progetto di avvio della soluzione.  
   
-   - In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
+   - In Esplora soluzioni scegliere Proprietà dal menu di scelta rapida del progetto di avvio o dell'unico progetto. Nell'editor delle proprietà del progetto selezionare la scheda **Debug** . Assicurarsi che la stringa nel campo **Avvia programma esterno** sia il percorso completo di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], in genere:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

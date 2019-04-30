@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438819"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Gestire documenti in un server usando la classe ServerDocument
   È possibile usare la `ServerDocument` classe di [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] per gestire diversi aspetti delle personalizzazioni a livello di documento, anche se Microsoft Office Word e Microsoft Office Excel non sono installati. È possibile eseguire le attività seguenti:
@@ -38,7 +38,7 @@ ms.locfileid: "60045487"
  Per altre informazioni su Visual Studio 2010 Tools per Office Runtime e le estensioni di Office per .NET Framework, vedere [Visual Studio Tools per Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Se si dispone di un'applicazione legacy che usa il `ServerDocument` classe la `Visual Studio Tools for Office` system (versione 3.0 Runtime), il `Visual Studio Tools for Office` system (versione 3.0 runtime) deve essere installato nei computer che eseguono l'applicazione. Il `Visual Studio 2010 Tools for Office runtime` non possono eseguire queste applicazioni.
+> Se si dispone di un'applicazione legacy che usa il `ServerDocument` classe la `Visual Studio Tools for Office` system (versione 3.0 Runtime), il `Visual Studio Tools for Office` system (versione 3.0 runtime) deve essere installato nei computer che eseguono l'applicazione. Il `Visual Studio 2010 Tools for Office runtime` non possono eseguire queste applicazioni.
 
 ## <a name="CachedData"></a> Usare i dati memorizzati nella cache del documento
  Il `ServerDocument` classe fornisce i membri utilizzabili per lavorare con la cache dei dati nei documenti personalizzati. Per altre informazioni sui dati memorizzati nella cache, vedere [i dati nella Cache](../vsto/caching-data.md) e [accedere ai dati dei documenti sul server](../vsto/accessing-data-in-documents-on-the-server.md).

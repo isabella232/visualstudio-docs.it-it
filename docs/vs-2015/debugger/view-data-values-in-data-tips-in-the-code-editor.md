@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437696"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Visualizzare i valori di dati nei suggerimenti dati nell'editor del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ I suggerimenti dati sono un modo pratico per visualizzare le informazioni sulle 
     Viene visualizzato un suggerimento dati.  
   
    > [!NOTE]
-   >  I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.  
+   > I suggerimenti dati vengono sempre valutati nel contesto in cui l'esecuzione viene sospesa, non nel punto in cui passa il cursore. Se si passa il puntatore su una variabile in un'altra funzione con lo stesso nome di una variabile presente nel contesto corrente, il valore della variabile nell'altra funzione viene visualizzato come valore della variabile nel contesto corrente.  
   
 2. Il suggerimento dati scompare quando si rimuove il puntatore del mouse. Per bloccare il suggerimento dati, in modo che resti aperta, scegliere il **blocca a origine** icona, o  
   

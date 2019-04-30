@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436983"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creare un'applicazione dati semplice tramite ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
  Questo articolo illustra un modo semplice per ottenere dati da un database in modo molto veloce. Se l'applicazione deve modificare i dati in modi non semplice e aggiornare il database, è consigliabile mediante Entity Framework e l'uso di data binding per la sincronizzazione automatica controlli dell'interfaccia utente per le modifiche nei dati sottostanti.  
   
 > [!IMPORTANT]
->  Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.  
+> Per semplificare il codice, non include la gestione delle eccezioni dell'ambiente di produzione.  
   
  **In questo argomento**  
   
@@ -78,7 +78,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 3. Per ogni form, aggiungere caselle di testo, pulsanti e altri controlli come illustrato nelle figure seguenti. Per ciascun controllo, impostare le proprietà descritte nelle tabelle.  
   
    > [!NOTE]
-   >  La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.  
+   > La casella di gruppo e i controlli Label migliorano la leggibilità, ma non vengono usati nel codice.  
   
    **Form Navigazione**  
   
@@ -135,7 +135,7 @@ Quando si crea un'applicazione che modifica i dati in un database, è possibile 
 5. Nel **valore** colonna, immettere la stringa di connessione (senza alcuna all'esterno delle virgolette) e quindi salvare le modifiche.  
   
 > [!NOTE]
->  In un'applicazione reale, è consigliabile archiviare la stringa di connessione in modo sicuro, come descritto in [stringhe di connessione e i file di configurazione](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> In un'applicazione reale, è consigliabile archiviare la stringa di connessione in modo sicuro, come descritto in [stringhe di connessione e i file di configurazione](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Recuperare la stringa di connessione  
   

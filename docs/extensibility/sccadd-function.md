@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434720"
 ---
 # <a name="sccadd-function"></a>Funzione SccAdd
 Questa funzione consente di aggiungere nuovi file al sistema di controllo di origine.
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  Le consuete `fOptions` vengono sostituiti seguito da una matrice `pfOptions`, con uno `LONG` opzione specifica per ogni file. Questo avviene perché il tipo di file può variare da un file in un file.
 
 > [!NOTE]
->  Non è consentito specificare entrambe `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è consentito specificare nessuno. L'impostazione Nessuna delle due è la stessa impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.
+> Non è consentito specificare entrambe `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opzioni per lo stesso file, ma è consentito specificare nessuno. L'impostazione Nessuna delle due è la stessa impostazione `SCC_FILETYPE_AUTO`, nel qual caso il controllo origine plug-in rileva automaticamente il tipo di file.
 
  Ecco l'elenco di flag utilizzati nel `pfOptions` matrice:
 

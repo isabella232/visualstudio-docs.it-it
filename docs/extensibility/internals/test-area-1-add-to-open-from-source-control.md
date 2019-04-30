@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429980"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Area di test 1: Aggiungere a / Apri dal controllo del codice sorgente
 Questo controllo del codice sorgente del plug-in di test viene illustrata l'area immissione soluzioni o progetti di controllo del codice sorgente e il loro recupero dal controllo del codice sorgente.
@@ -37,7 +37,7 @@ Questo controllo del codice sorgente del plug-in di test viene illustrata l'area
 - Per [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], aggiungere dall'origine controllo è disponibile anche dal **File**, **Add**, **progetto esistente**; cercare nel [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] posizione.
 
   > [!NOTE]
-  >  Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.
+  > Un percorso di un file locale o un server IIS locale (server web) può essere utilizzato in questo test.
 
 ## <a name="expected-behavior"></a>Comportamento previsto
 

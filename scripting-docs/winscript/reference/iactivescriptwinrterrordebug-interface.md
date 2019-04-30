@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60fbe5efe55b5347eb54eb4d6c010b6ab5903905
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 52e7728b4143231912227e5e55faa5eef01b7490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425781"
 ---
 # <a name="iactivescriptwinrterrordebug-interface"></a>Interfaccia IActiveScriptWinRTErrorDebug
 Implementato dal motore JavaScript per fornire informazioni di errore di Windows Runtime estese da un [enumerazione BREAKREASON](../../winscript/reference/breakreason-enumeration.md) evento. È possibile eseguire un QueryInterface per ottenerli da un' [IActiveScriptError](../../winscript/reference/iactivescripterror.md) oggetto.  
   
 > [!IMPORTANT]
->  Questa interfaccia è implementata da PDM v11.0 e versione successiva. Rilevata in activdbg100.h.  
+> Questa interfaccia è implementata da PDM v11.0 e versione successiva. Rilevata in activdbg100.h.  
   
 ## <a name="methods"></a>Metodi  
  L'interfaccia `IActiveScriptWinRTErrorDebug` espone i metodi riportati di seguito.  

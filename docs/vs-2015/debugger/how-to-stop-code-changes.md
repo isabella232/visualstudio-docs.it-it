@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442707"
 ---
 # <a name="how-to-stop-code-changes"></a>Procedura: Arrestare le modifiche al codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58969795"
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.  
   
 > [!CAUTION]
->  L'interruzione dell'applicazione delle modifiche può generare risultati imprevisti nel caso di codice gestito. L'applicazione di modifiche a codice gestito, tuttavia, in genere viene eseguita rapidamente ed è quindi raro il caso in cui è necessario interrompere l'operazione.  
+> L'interruzione dell'applicazione delle modifiche può generare risultati imprevisti nel caso di codice gestito. L'applicazione di modifiche a codice gestito, tuttavia, in genere viene eseguita rapidamente ed è quindi raro il caso in cui è necessario interrompere l'operazione.  
   
 ### <a name="to-stop-applying-code-changes"></a>Per interrompere l'applicazione delle modifiche al codice  
   

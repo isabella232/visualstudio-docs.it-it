@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430464"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.
@@ -34,7 +34,7 @@ ms.locfileid: "60081138"
 - Il debug e test della procedura guidata.
 
 > [!NOTE]
->  È possibile scaricare un esempio dal [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) che mostra come creare attività personalizzate per un flusso di lavoro.
+> È possibile scaricare un esempio dal [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) che mostra come creare attività personalizzate per un flusso di lavoro.
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per eseguire questa procedura dettagliata, è innanzitutto necessario creare la soluzione CustomActionProjectItem completando [procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081138"
 2. Nella visualizzazione XAML, sostituire il XAML corrente con il XAML seguente. il XAML definisce un'interfaccia utente che include un'intestazione, i controlli che consentono di specificare il comportamento dell'azione personalizzati e i pulsanti di navigazione nella parte inferiore della finestra.
 
     > [!NOTE]
-    >  Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
+    > Dopo aver aggiunto questo codice, il progetto avrà alcuni errori di compilazione. Questi errori scompare quando si aggiunge codice nei passaggi successivi.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  La finestra che viene creata in questo XAML viene ottenuta il <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe di base. Quando si aggiunge una finestra di dialogo WPF personalizzata in Visual Studio, è consigliabile derivare da questa classe sono coerenti con l'applicazione di stili con altre finestre di dialogo in Visual Studio ed evitare i problemi che potrebbero altrimenti verificarsi con finestre di dialogo modale la finestra di dialogo. Per altre informazioni, vedere [creazione e la gestione delle finestre di dialogo modale](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La finestra che viene creata in questo XAML viene ottenuta il <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe di base. Quando si aggiunge una finestra di dialogo WPF personalizzata in Visual Studio, è consigliabile derivare da questa classe sono coerenti con l'applicazione di stili con altre finestre di dialogo in Visual Studio ed evitare i problemi che potrebbero altrimenti verificarsi con finestre di dialogo modale la finestra di dialogo. Per altre informazioni, vedere [creazione e la gestione delle finestre di dialogo modale](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Se si sta sviluppando un progetto Visual Basic, rimuovere il `ItemTemplateWizard` dello spazio dei nomi dal `WizardWindow` nome di classe nel `x:Class` attributo del `Window` elemento. Questo elemento è nella prima riga della finestra di XAML. Al termine, la prima riga dovrebbe essere simile al seguente:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081138"
      L'azione personalizzata viene incluso nel pacchetto e distribuito nel sito di SharePoint specificato per il **URL sito** proprietà del progetto e il web browser viene visualizzata la pagina predefinita del sito.
 
     > [!NOTE]
-    >  Se il **debug degli Script disabilitato** verrà visualizzata la finestra di dialogo, scegliere il **Yes** pulsante.
+    > Se il **debug degli Script disabilitato** verrà visualizzata la finestra di dialogo, scegliere il **Yes** pulsante.
 
 2. Nell'area di elenchi del sito di SharePoint, scegliere il **attività** collegamento.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081138"
 - [Definire tipi di elemento di progetto SharePoint personalizzati](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Creare modelli di elementi e modelli di progetto per elementi di progetto SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Riferimenti sullo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [Gli ID e i percorsi predefiniti azione personalizzata](http://go.microsoft.com/fwlink/?LinkId=181964)

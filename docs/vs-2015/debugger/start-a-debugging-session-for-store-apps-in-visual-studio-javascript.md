@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427289"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Avviare una sessione di debug per le app dello Store in Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Questo argomento descrive come avviare una sessione di debug per app Windows Store scritte in JavaScript e HTML5. Puoi avviare il debug con una sola sequenza di tasti oppure puoi configurare la sessione di debug per scenari specifici e poi scegliere il modo in cui avviare l'app.
 
 > [!NOTE]
->  Per le app scritte in XAML e Visual c#, Visual C++ o Visual Basic, vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Per le app scritte in XAML e Visual c#, Visual C++ o Visual Basic, vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> In questo argomento
  [In questo argomento](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
    ![Seleziona connessione Debugger remoto](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  Nella finestra di dialogo Seleziona connessione debugger remoto sono visualizzati i computer sulla subnet locale e i computer collegati direttamente al computer che esegue Visual Studio tramite un cavo Ethernet. Per specificare un altro computer, immetti il nome nella casella **Nome computer** .
+  > Nella finestra di dialogo Seleziona connessione debugger remoto sono visualizzati i computer sulla subnet locale e i computer collegati direttamente al computer che esegue Visual Studio tramite un cavo Ethernet. Per specificare un altro computer, immetti il nome nella casella **Nome computer** .
 
   ![Si applica solo a Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Per impostare l'esecuzione di un'app installata in modalità debug, procedi come indicato di seguito:
 
 > [!NOTE]
->  L'app non deve essere in esecuzione all'avvio della procedura.
+> L'app non deve essere in esecuzione all'avvio della procedura.
 
 1. Scegli **Debug pacchetto applicazione installato** dal menu **Debug pacchetto applicazione installato Installed App Package**.
 
@@ -226,9 +226,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ### <a name="BKMK_Attach_the_debugger"></a> Collegare il debugger
 
 > [!TIP]
->  Le app JavaScript vengono eseguite in un'istanza del processo wwahost.exe. Se vengono eseguite altre app JavaScript quando colleghi il debugger all'app, dovrai conoscere l'ID processo numerico (PID) del processo wwahost.exe in cui viene eseguita l'app.
+> Le app JavaScript vengono eseguite in un'istanza del processo wwahost.exe. Se vengono eseguite altre app JavaScript quando colleghi il debugger all'app, dovrai conoscere l'ID processo numerico (PID) del processo wwahost.exe in cui viene eseguita l'app.
 >
->  Il modo più semplice per gestire questa situazione consiste nel chiudere tutte le altre app JavaScript. Altrimenti, puoi aprire Gestione attività di Windows prima di avviare l'app e annotare gli ID dei processi wwahost.exe. Quando si specifica il processo a cui collegarsi nel **processi disponibili** wwahost.exe dell'app nella finestra di dialogo avrà un id diverso da quelli annotati.
+> Il modo più semplice per gestire questa situazione consiste nel chiudere tutte le altre app JavaScript. Altrimenti, puoi aprire Gestione attività di Windows prima di avviare l'app e annotare gli ID dei processi wwahost.exe. Quando si specifica il processo a cui collegarsi nel **processi disponibili** wwahost.exe dell'app nella finestra di dialogo avrà un id diverso da quelli annotati.
 
  Per collegare il debugger:
 

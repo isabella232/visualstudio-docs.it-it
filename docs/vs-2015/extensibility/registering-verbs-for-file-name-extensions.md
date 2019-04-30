@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432540"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrazione di verbi per le estensioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
   Quando possibile, registrare un verbo standard. La scelta più comune è il verbo Open. Usare il verbo di modifica solo se è presente una netta differenza tra l'apertura del file e la modifica del file. Ad esempio, aprire un file con estensione htm lo visualizza nel browser, mentre la modifica di un file con estensione htm avvia un editor HTML. Verbi standard vengono localizzati con impostazioni locali del sistema operativo.  
   
 > [!NOTE]
->  Quando si registrano i verbi standard, non impostare il valore predefinito per il codice Open. Il valore predefinito contiene la stringa di visualizzazione del menu. Il sistema operativo fornisce questa stringa per i verbi standard.  
+> Quando si registrano i verbi standard, non impostare il valore predefinito per il codice Open. Il valore predefinito contiene la stringa di visualizzazione del menu. Il sistema operativo fornisce questa stringa per i verbi standard.  
   
  I file di progetto devono essere registrati per avviare una nuova istanza della [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando un utente apre il file. L'esempio seguente illustra una registrazione di un verbo standard per un [!INCLUDE[csprcs](../includes/csprcs-md.md)] progetto.  
   
@@ -111,7 +111,7 @@ L'associazione di un'estensione di file a un'applicazione ha in genere un'azione
  Il verbo predefinito è l'azione che viene eseguito quando un utente fa doppio clic su un file in Windows Explorer. Il verbo predefinito è il verbo specificato come valore predefinito per il HKEY_CLASSES_ROOT\\*progid*\Shell chiave. Se viene specificato alcun valore, il verbo predefinito è il primo verbo specificato nella chiave HKEY_CLASSES_ROOT\\*progid*\Shell elenco di chiavi.  
   
 > [!NOTE]
->  Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-side, prendere in considerazione l'impatto sull'installazione e rimozione. Durante l'installazione il valore predefinito originale viene sovrascritto.  
+> Se si prevede di modificare il verbo predefinito per un'estensione in una distribuzione side-by-side, prendere in considerazione l'impatto sull'installazione e rimozione. Durante l'installazione il valore predefinito originale viene sovrascritto.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestione delle associazioni di file side-by-side](../extensibility/managing-side-by-side-file-associations.md)

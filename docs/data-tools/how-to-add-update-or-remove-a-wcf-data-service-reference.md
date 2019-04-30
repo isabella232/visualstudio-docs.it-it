@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402926"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procedura: Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services
 Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o più [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Usare la **Aggiungi riferimento al servizio** finestra di dialogo per la ricerca [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] nella soluzione corrente, in locale, in una rete locale o su Internet.
@@ -37,7 +37,7 @@ Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o pi
 2. Nel **indirizzi** casella, immettere l'URL per il servizio e quindi fare clic su **Vai** per cercare il servizio. Se il servizio implementa protezione nome e la password dell'utente, potrebbero essere richieste un nome utente e password.
 
     > [!NOTE]
-    >  Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
+    > Si consiglia di fare riferimento solo a servizi provenienti da un'origine attendibile. L'aggiunta di riferimenti da un'origine non attendibile può compromettere la sicurezza.
 
      È anche possibile selezionare l'URL dal **indirizzo** elenco, che archivia gli URL precedenti 15 in corrispondenza del quale sono stati trovati i metadati di servizio valido.
 
@@ -88,7 +88,7 @@ Oggetto *riferimento del servizio* consente a un progetto di accedere a uno o pi
      Il client del servizio verrà rimosso dalla soluzione e i metadati che descrivono il servizio verranno rimosso dal *app. config* file.
 
     > [!NOTE]
-    >  Qualsiasi codice che fa riferimento il servizio deve essere rimossi manualmente.
+    > Qualsiasi codice che fa riferimento il servizio deve essere rimossi manualmente.
 
 ## <a name="see-also"></a>Vedere anche
 

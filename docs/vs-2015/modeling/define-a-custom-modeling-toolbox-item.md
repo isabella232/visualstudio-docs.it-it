@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433179"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definire un elemento della casella degli strumenti di modellazione personalizzata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
 - Una coppia di classi collegate da un'associazione per rappresentare il modello Observer.  
   
 > [!NOTE]
->  È possibile usare questo metodo per creare strumenti elemento. È quindi possibile creare strumenti che è possibile trascinare dalla casella degli strumenti in un diagramma. Non è possibile creare strumenti connettore.  
+> È possibile usare questo metodo per creare strumenti elemento. È quindi possibile creare strumenti che è possibile trascinare dalla casella degli strumenti in un diagramma. Non è possibile creare strumenti connettore.  
   
 ## <a name="DefineTool"></a> La definizione di un strumento di modellazione personalizzato  
   
@@ -136,7 +136,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
  È possibile modificare il file bitmap in Visual Studio e impostare l'altezza e larghezza su 16 nella finestra Proprietà.  
   
 > [!NOTE]
->  Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In questo caso, nel menu di scelta rapida della casella degli strumenti scegliere **Reimposta Casella degli strumenti**. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.  
+> Se si inizia a usare un file con estensione tbxinfo dopo qualche esperimento con l'utilizzo dei file diagramma in modo autonomo, si noterà che la casella degli strumenti contiene le versioni vecchie e nuove di un elemento della casella degli strumenti. È possibile che ciò si verifichi anche se il nome del file diagramma è stato digitato in modo errato nel file con estensione tbxinfo. In questo caso, nel menu di scelta rapida della casella degli strumenti scegliere **Reimposta Casella degli strumenti**. Gli elementi della casella degli strumenti personalizzata verranno rimossi. Riavviare Visual Studio e verranno visualizzati gli elementi personalizzati corretti.  
   
 ## <a name="Extension"></a> Come distribuire gli elementi della casella degli strumenti in un'estensione di Visual Studio  
  È possibile distribuire elementi della casella degli strumenti ad altri [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utenti assemblandoli in un Visual Studio Extension (VSIX). È possibile comprimere comandi, profili e altre estensioni nello stesso file VSIX. Per altre informazioni, vedere [distribuzione di estensioni di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
     - In Esplora soluzioni, nel menu di scelta rapida del progetto VSIX, scegliere **Add**, **elemento esistente**. Nella finestra di dialogo, impostare **gli oggetti di tipo: Tutti i file**. Individuare i file, selezionarli tutti e quindi scegliere **Add**.  
   
         > [!NOTE]
-        >  In questo progetto non è possibile aprire i file del diagramma nell'editor del modello.  
+        > In questo progetto non è possibile aprire i file del diagramma nell'editor del modello.  
   
 5. Impostare le seguenti proprietà di tutti i file appena aggiunti. È possibile impostare le relative proprietà contemporaneamente selezionandole tutte in Esplora soluzioni. Prestare attenzione a non modificare le proprietà degli altri file nel progetto.  
   
@@ -185,7 +185,7 @@ Per semplificare la creazione di un elemento o di un gruppo di elementi in base 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla mediante tastiera.  
+        > Questa opzione non è inclusa nell'elenco a discesa. È necessario immetterla mediante tastiera.  
   
     - **Origine** = **File in filesystem**.  
   

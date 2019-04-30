@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444147"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procedura: Usare la barra di navigazione
 Il set delle attività visualizzate in [!INCLUDE[wfd1](../includes/wfd1-md.md)] può essere modificato in tre modi principali:  
@@ -38,7 +38,7 @@ Il set delle attività visualizzate in [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
 2. Quando lo stato di espansione viene modificato facendo clic sul pulsante, il nuovo stato di espansione viene salvato in XAML.  
   
     > [!WARNING]
-    >  Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Anche se nessuno degli ActivityDesigner inclusi in [!INCLUDE[wfd2](../includes/wfd2-md.md)] presenta quest'ultimo comportamento, è possibile che alcune attività personalizzate lo espongano.  
+    > Non tutte le attività possono essere espanse sul posto. Esistono due casi in cui un'attività non può essere espansa sul posto, ovvero quando il padre dell'attività non consente l'espansione sul posto dei relativi figli (le attività di un diagramma di flusso non possono ad esempio essere espanse sul posto) o quando non è consentita l'espansione automatica dell'ActivityDesigner sul posto. Anche se nessuno degli ActivityDesigner inclusi in [!INCLUDE[wfd2](../includes/wfd2-md.md)] presenta quest'ultimo comportamento, è possibile che alcune attività personalizzate lo espongano.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Espansione o compressione di tutte le attività  
   
@@ -47,7 +47,7 @@ Il set delle attività visualizzate in [!INCLUDE[wfd1](../includes/wfd1-md.md)] 
 2. Quando è stato applicato un Espandi tutto o Comprimi tutti gli stati, è possibile scegliere il **ripristinare** pulsante visualizzato per tornare alla visualizzazione dello stato in precedenza applicato a ogni attività.  
   
     > [!WARNING]
-    >  Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha acconsentito esplicitamente espansione sul posto, la funzionalità associata il **Espandi tutto** e **Comprimi tutto** pulsanti sono disabilitato nel **diagramma di flusso**  finestra di progettazione. [!INCLUDE[crabout](../includes/crabout-md.md)] il **diagramma di flusso** della finestra di progettazione, vedere la [Flowchart](../workflow-designer/flowchart-activity-designer.md) argomento.  
+    > Se un'attività, ad esempio <xref:System.Activities.Statements.Flowchart>, ha acconsentito esplicitamente espansione sul posto, la funzionalità associata il **Espandi tutto** e **Comprimi tutto** pulsanti sono disabilitato nel **diagramma di flusso**  finestra di progettazione. [!INCLUDE[crabout](../includes/crabout-md.md)] il **diagramma di flusso** della finestra di progettazione, vedere la [Flowchart](../workflow-designer/flowchart-activity-designer.md) argomento.  
   
     > [!WARNING]
-    >  Espandi tutto ha anche un effetto speciale **commutatore** e **TryCatch** ActivityDesigner. Quando fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Facendo clic **ripristinare** oppure **Comprimi tutto** restituisce queste finestre di progettazione al relativo stato predefinito, in cui è possibile scegliere un case/blocco singolo per visualizzarne il contenuto.
+    > Espandi tutto ha anche un effetto speciale **commutatore** e **TryCatch** ActivityDesigner. Quando fa clic su **Espandi tutto**, vengono visualizzati tutti i case switch e tutti i blocchi try/catch/finally. Facendo clic **ripristinare** oppure **Comprimi tutto** restituisce queste finestre di progettazione al relativo stato predefinito, in cui è possibile scegliere un case/blocco singolo per visualizzarne il contenuto.

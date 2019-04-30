@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425341"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvare i dati di nuovo nel database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 |Corrente|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  Nel `preserveChanges = true` scenario, se il <xref:System.Data.DataSet.RejectChanges%2A> metodo viene chiamato su un record nel set di dati di destinazione, quindi viene ripristinato il dati originali dalle *origine* set di dati. Ciò significa che, se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere in grado di trovare la riga originale per l'aggiornamento. È possibile evitare una violazione della concorrenza per la compilazione di un altro set di dati con i record aggiornati dall'origine dati e l'esecuzione di un'unione nell'indice per evitare una violazione della concorrenza. (Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.)  
+> Nel `preserveChanges = true` scenario, se il <xref:System.Data.DataSet.RejectChanges%2A> metodo viene chiamato su un record nel set di dati di destinazione, quindi viene ripristinato il dati originali dalle *origine* set di dati. Ciò significa che, se si tenta di aggiornare l'origine dati originale con il set di dati di destinazione, potrebbe non essere in grado di trovare la riga originale per l'aggiornamento. È possibile evitare una violazione della concorrenza per la compilazione di un altro set di dati con i record aggiornati dall'origine dati e l'esecuzione di un'unione nell'indice per evitare una violazione della concorrenza. (Una violazione della concorrenza si verifica quando un altro utente modifica un record nell'origine dati dopo che il set di dati è stato compilato.)  
   
 ## <a name="update-constraints"></a>Aggiornare i vincoli  
  Per apportare modifiche a una riga di dati esistente, aggiungere o aggiornare i dati in singole colonne. Se il set di dati contiene i vincoli (ad esempio le chiavi esterne o i vincoli non nullable), è possibile che il record può essere temporaneamente in uno stato di errore perché venga aggiornata. Vale a dire, può essere in stato di errore dopo aver completato l'aggiornamento di una colonna, ma prima di procedere con quello successivo.  
@@ -110,7 +110,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
   Dopo aver completato un aggiornamento, è possibile riabilitare il controllo dei vincoli, che anche abilita nuovamente gli eventi di aggiornamento e li genera.  
   
 > [!NOTE]
->  In Windows Form, l'architettura di associazione dati è incorporata nel datagrid controllo vincoli sospeso finché lo stato attivo viene spostato all'esterno di una riga e non è necessario chiamare in modo esplicito il <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> metodi.  
+> In Windows Form, l'architettura di associazione dati è incorporata nel datagrid controllo vincoli sospeso finché lo stato attivo viene spostato all'esterno di una riga e non è necessario chiamare in modo esplicito il <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, o <xref:System.Data.DataRow.CancelEdit%2A> metodi.  
   
  I vincoli sono automaticamente disabilitata quando il <xref:System.Data.DataSet.Merge%2A> metodo viene richiamato su un set di dati. Quando il merge è completo, se sono presenti eventuali vincoli per il set di dati che non può essere abilitato, un <xref:System.Data.ConstraintException> viene generata un'eccezione. In questo caso, il <xref:System.Data.DataSet.EnforceConstraints%2A> è impostata su `false,` e tutte le violazioni di vincolo devono essere risolti prima di reimpostare le <xref:System.Data.DataSet.EnforceConstraints%2A> proprietà `true`.  
   
@@ -182,12 +182,12 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 - Dopo aver caricato il set di dati. Se si carica un set di dati chiamando un oggetto TableAdapter `Fill` (metodo), quindi l'adapter eseguirà automaticamente il commit delle modifiche per l'utente. Tuttavia, se si carica un set di dati mediante l'unione di un altro set di dati al suo interno, quindi è necessario salvare le modifiche manualmente.  
   
   > [!NOTE]
-  >  È possibile impedire che l'adapter automaticamente il commit delle modifiche quando si chiama il `Fill` metodo impostando il `AcceptChangesDuringFill` proprietà dell'adapter `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga viene inserita durante la compilazione è impostato su <xref:System.Data.DataRowState>.  
+  > È possibile impedire che l'adapter automaticamente il commit delle modifiche quando si chiama il `Fill` metodo impostando il `AcceptChangesDuringFill` proprietà dell'adapter `false`. Se è impostato su `false`, il <xref:System.Data.DataRow.RowState%2A> di ogni riga viene inserita durante la compilazione è impostato su <xref:System.Data.DataRowState>.  
   
 - Dopo l'invio di set di dati modifiche a un altro processo, ad esempio un servizio Web XML.  
   
   > [!CAUTION]
-  >  Eseguire il commit della modifica in questo modo consente di cancellare le informazioni di modifica. Eseguire operazioni non il commit delle modifiche fino a dopo aver fine esecuzione di operazioni che richiedono che l'applicazione per conoscere quali modifiche sono state apportate nel set di dati.  
+  > Eseguire il commit della modifica in questo modo consente di cancellare le informazioni di modifica. Eseguire operazioni non il commit delle modifiche fino a dopo aver fine esecuzione di operazioni che richiedono che l'applicazione per conoscere quali modifiche sono state apportate nel set di dati.  
   
   Questo metodo vengono effettuate le seguenti:  
   
@@ -208,7 +208,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Le modifiche vengono applicate a tutte le righe in tutte le tabelle del set di dati.|  
   
 > [!NOTE]
->  Se si carica un set di dati chiamando un oggetto TableAdapter `Fill` metodo, non è necessario accettare in modo esplicito le modifiche. Per impostazione predefinita, il `Fill` chiamate al metodo il `AcceptChanges` metodo al termine dell'inserimento dei dati nella tabella.  
+> Se si carica un set di dati chiamando un oggetto TableAdapter `Fill` metodo, non è necessario accettare in modo esplicito le modifiche. Per impostazione predefinita, il `Fill` chiamate al metodo il `AcceptChanges` metodo al termine dell'inserimento dei dati nella tabella.  
   
  Un metodo correlato `RejectChanges`, Annulla l'effetto delle modifiche tramite la copia il <xref:System.Data.DataRowVersion> versione nuovamente nel <xref:System.Data.DataRowVersion> dei record versione. Imposta anche il <xref:System.Data.DataRow.RowState%2A> di ogni record ripristinandone <xref:System.Data.DataRowState>.  
   
@@ -224,7 +224,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 - Nei dati di back-end, inviando i dati all'origine dati, ad esempio, il database e in modo che possa accettare o rifiutare i dati. Se si lavora con un database che dispone di funzionalità per la convalida dei dati e fornendo informazioni sull'errore complesse, può trattarsi un pratico approccio in quanto è possibile convalidare i dati indipendentemente da dove provenga da. Tuttavia, questo approccio potrebbe non soddisfare requisiti di convalida specifiche dell'applicazione. Inoltre, che l'origine dati di convalida dei dati può comportare molti round trip all'origine dati, a seconda del modo in cui l'applicazione facilita la risoluzione degli errori di convalida generato dal back-end.  
   
   > [!IMPORTANT]
-  >  Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Quando si usano i comandi di dati con un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> proprietà che è impostato su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. È consigliabile utilizzare sempre query con parametri o stored procedure, laddove possibile. Per altre informazioni, vedere [Cenni preliminari sugli attacchi tramite script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Dopo aver apportate le modifiche in un set di dati, è possibile trasmettere le modifiche a un'origine dati. In genere, eseguire questa operazione chiamando il `Update` metodo di un oggetto TableAdapter (o un adattatore dati). Il metodo scorre ciascun record in una tabella di dati determina il tipo di aggiornamento è obbligatorio (aggiornare, inserire o eliminare), se presente, e quindi esegue il comando appropriato.  
   
@@ -256,7 +256,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
 - Istruzione SQL include la clausola SET per impostare i nuovi valori delle colonne modificate.  
   
     > [!NOTE]
-    >  Se il TableAdapter `UpdateCommand` proprietà è stata impostata sul nome di una stored procedure, l'adapter non ne crea un'istruzione SQL. Al contrario, richiama la stored procedure con i parametri appropriati passati.  
+    > Se il TableAdapter `UpdateCommand` proprietà è stata impostata sul nome di una stored procedure, l'adapter non ne crea un'istruzione SQL. Al contrario, richiama la stored procedure con i parametri appropriati passati.  
   
 ## <a name="passing-parameters"></a>Passaggio di parametri  
  È in genere usare parametri per passare i valori per i record che stanno per essere aggiornata nel database.  Quando il TableAdapter `Update` metodo esegue un'istruzione UPDATE, è necessario specificare i valori di parametro. Ottiene questi valori dal `Parameters` raccolta per il comando di dati appropriato, in questo caso, il `UpdateCommand` oggetto nell'oggetto TableAdapter.  
@@ -268,7 +268,7 @@ Processo di aggiornamento in due fasi e il ruolo di DataRowVersion in un aggiorn
  In un'istruzione UPDATE, è necessario specificare entrambi i valori nuovi (quelli che verrà scritto il record), nonché i vecchi valori (in modo che il record può trovarsi nel database). Sono pertanto presenti due parametri per ogni valore: uno per la clausola SET e un altro per la clausola WHERE. Entrambi i parametri di leggere i dati del record da aggiornare, ma si rivelano problematici versioni diverse del valore della colonna in base al parametro [proprietà SqlParameter](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Il parametro per la clausola SET Ottiene la versione corrente e il parametro per la clausola WHERE recupera la versione originale.  
   
 > [!NOTE]
->  È anche possibile impostare i valori `Parameters` raccolta manualmente nel codice, che in genere si farebbe in un gestore eventi per l'adattatore dati di <xref:System.Data.DataTable.RowChanging> evento.  
+> È anche possibile impostare i valori `Parameters` raccolta manualmente nel codice, che in genere si farebbe in un gestore eventi per l'adattatore dati di <xref:System.Data.DataTable.RowChanging> evento.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Aggiornare i dati mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

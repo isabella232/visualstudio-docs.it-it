@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18c8dd4d0bc79ac2f3af44b8b5f8dd6faacb9f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434085"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedura: Installare i prerequisiti con un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni rich
  Invece di assemblare e pubblicare i prerequisiti, è anche possibile specificare un percorso di download per i componenti. Invece inclusi i prerequisiti con tutte le applicazioni pubblicate, ad esempio, si potrebbe usare una condivisione file centralizzato o percorso Web che contiene i programmi di installazione per tutti i prerequisiti, al momento dell'installazione, verranno scaricati i componenti e installato da quel percorso.  
   
 > [!IMPORTANT]
->  È necessario aggiungere pacchetti di installazione dei prerequisiti nel computer di sviluppo prima di pubblicare la prima volta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Per altre informazioni, vedere [Procedura: Includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
+> È necessario aggiungere pacchetti di installazione dei prerequisiti nel computer di sviluppo prima di pubblicare la prima volta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Per altre informazioni, vedere [Procedura: Includere i prerequisiti con un'applicazione ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
  Prerequisiti vengono gestiti nel **prerequisiti** finestra di dialogo, accessibile dal **Publish** riquadro del **Progettazione progetti**.  
   
 > [!NOTE]
->  Oltre all'elenco predeterminato dei prerequisiti, è possibile aggiungere componenti personalizzati all'elenco. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
+> Oltre all'elenco predeterminato dei prerequisiti, è possibile aggiungere componenti personalizzati all'elenco. Per altre informazioni, vedere [creazione di pacchetti Bootstrapper](../deployment/creating-bootstrapper-packages.md).  
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Per specificare i prerequisiti da installare con un'applicazione ClickOnce  
   
@@ -68,7 +68,7 @@ Tutti i [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazioni rich
 6. Selezionare un percorso nell'elenco a discesa scegliere o immettere un URL, percorso del file o percorso FTP e quindi fare clic su **OK.**  
   
     > [!NOTE]
-    >  È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.  
+    > È necessario assicurarsi che i programmi di installazione per i componenti specificati esistano nel percorso specificato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

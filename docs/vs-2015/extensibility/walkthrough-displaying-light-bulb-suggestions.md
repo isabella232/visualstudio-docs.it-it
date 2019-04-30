@@ -8,12 +8,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32d567ab4c71bdf4716a4c61464e1ee4ba6ecfa4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438154"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Procedura dettagliata: Visualizzazione dei suggerimenti delle icone lampadina
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,7 +179,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
 6. Implementare il <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> metodo, che restituisce una matrice di <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> oggetti che contengono i diversi <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> oggetti. Questo metodo viene chiamato quando la lampadina viene espanso.  
   
     > [!WARNING]
-    >  Assicurarsi che le implementazioni di `HasSuggestedActionsAsync()` e `GetSuggestedActions()` sono coerente; ovvero, se `HasSuggestedActionsAsync()` restituisce `true`, quindi `GetSuggestedActions()` deve avere alcune azioni per la visualizzazione. In molti casi `HasSuggestedActionsAsync()` viene chiamato appena prima `GetSuggestedActions()`, ma non sempre è il caso. Ad esempio, se l'utente richiama la lampadina azioni premere (CTRL +.) solo `GetSuggestedActions()` viene chiamato.  
+    > Assicurarsi che le implementazioni di `HasSuggestedActionsAsync()` e `GetSuggestedActions()` sono coerente; ovvero, se `HasSuggestedActionsAsync()` restituisce `true`, quindi `GetSuggestedActions()` deve avere alcune azioni per la visualizzazione. In molti casi `HasSuggestedActionsAsync()` viene chiamato appena prima `GetSuggestedActions()`, ma non sempre è il caso. Ad esempio, se l'utente richiama la lampadina azioni premere (CTRL +.) solo `GetSuggestedActions()` viene chiamato.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -328,7 +328,7 @@ Le lampadine sono icone utilizzate nell'editor di Visual Studio che si espandono
     ```  
   
     > [!WARNING]
-    >  L'azione lampadina **Invoke** metodo non dovrebbe visualizzare l'interfaccia utente.  Se l'azione di visualizzare la nuova interfaccia utente (ad esempio una finestra di anteprima o la selezione), non viene visualizzata l'interfaccia utente direttamente dall'interno di **Invoke** metodo ma invece pianificare per visualizzare l'interfaccia utente dopo la restituzione da **Invoke**.  
+    > L'azione lampadina **Invoke** metodo non dovrebbe visualizzare l'interfaccia utente.  Se l'azione di visualizzare la nuova interfaccia utente (ad esempio una finestra di anteprima o la selezione), non viene visualizzata l'interfaccia utente direttamente dall'interno di **Invoke** metodo ma invece pianificare per visualizzare l'interfaccia utente dopo la restituzione da **Invoke**.  
   
 10. Per completare l'implementazione, aggiungere il `Dispose()` e `TryGetTelemetryId()` metodi.  
   

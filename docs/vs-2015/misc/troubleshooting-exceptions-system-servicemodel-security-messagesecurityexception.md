@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436546"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Risoluzione dei problemi relativi ad eccezioni: System.ServiceModel.Security.MessageSecurityException
 Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione viene generata quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina che un messaggio non è protetto correttamente oppure è stato manomesso. Questo errore si verifica il più delle volte quando le condizioni indicate di seguito si verificano contemporaneamente:  
@@ -35,7 +35,7 @@ Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione v
  Se un utente remoto può eseguire il sito Web utilizzando il server di sviluppo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e utilizzare contemporaneamente un servizio Web o un servizio WCF, è possibile creare un'associazione al servizio personalizzata o disattivare la sicurezza NTLM.  
   
 > [!IMPORTANT]
->  La disattivazione della sicurezza NTLM non è un'operazione consigliata e può costituire una minaccia per la sicurezza.  
+> La disattivazione della sicurezza NTLM non è un'operazione consigliata e può costituire una minaccia per la sicurezza.  
   
  Se si crea un'associazione al servizio personalizzata è possibile mantenere la sicurezza dell'autenticazione NTLM.  
   
@@ -74,7 +74,7 @@ Oggetto <xref:System.ServiceModel.Security.MessageSecurityException> eccezione v
    Utilizzare la procedura indicata di seguito per disabilitare la sicurezza NTLM quando si utilizza un riferimento a un servizio WCF.  
   
 > [!IMPORTANT]
->  La disattivazione della sicurezza NTLM non è un'operazione consigliata e può costituire una minaccia per la sicurezza.  
+> La disattivazione della sicurezza NTLM non è un'operazione consigliata e può costituire una minaccia per la sicurezza.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Per disattivare la sicurezza NTLM  
   

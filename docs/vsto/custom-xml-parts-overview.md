@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b94deacad38f40d76b4c8485186bfd563808d912
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445519"
 ---
 # <a name="custom-xml-parts-overview"></a>Panoramica delle parti XML personalizzata
   È possibile incorporare i dati XML nei documenti per alcune applicazioni di Microsoft Office. Quando si incorporano i dati XML in un documento, i dati vengono denominati una *parte XML personalizzata*.
@@ -38,7 +38,7 @@ ms.locfileid: "60052779"
  **Si applica a:** Le informazioni contenute in questo argomento sono valide per i progetti a livello di documento e il componente aggiuntivo VSTO per Excel, PowerPoint e Word. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Visual Studio consente anche di memorizzare nella cache gli oggetti dati nelle personalizzazioni a livello di documento. Questa funzionalità è diversa dalle parti XML personalizzate, sebbene siano presenti alcune somiglianze. Per altre informazioni, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).
+> Visual Studio consente anche di memorizzare nella cache gli oggetti dati nelle personalizzazioni a livello di documento. Questa funzionalità è diversa dalle parti XML personalizzate, sebbene siano presenti alcune somiglianze. Per altre informazioni, vedere [memorizzato nella cache i dati nelle personalizzazioni a livello di documento](../vsto/cached-data-in-document-level-customizations.md).
 
 ## <a name="understand-custom-xml-parts"></a>Comprendere le parti XML personalizzate
  Le parti XML personalizzate sono state introdotte nel sistema Microsoft Office 2007, insieme ai formati Open XML. Tali formati includono nuovi formati di file basato su XML per Excel, PowerPoint e Word (ad esempio *xlsx*, *pptx*, e *docx*). I documenti in tali formati includono file XML (anche detta *parti XML*) che sono organizzati in cartelle in un archivio ZIP. Per la maggior parte, si tratta di parti XML predefinite che consentono di definire la struttura e lo stato del documento. Tuttavia, i documenti possono contenere anche parti XML personalizzate, che è possibile usare per archiviare i dati XML arbitrari nei documenti.
@@ -56,7 +56,7 @@ ms.locfileid: "60052779"
 - [Creare documenti Word 2007 utilizzando i formati Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
->  Excel, Word e PowerPoint consentono anche di usare parti XML personalizzate nei documenti salvati in formati di file binari. Tuttavia, se un documento viene salvato in un formato binario, non è possibile aggiungere o modificare le parti XML personalizzate senza avviare l'applicazione di Microsoft Office.
+> Excel, Word e PowerPoint consentono anche di usare parti XML personalizzate nei documenti salvati in formati di file binari. Tuttavia, se un documento viene salvato in un formato binario, non è possibile aggiungere o modificare le parti XML personalizzate senza avviare l'applicazione di Microsoft Office.
 
 ## <a name="create-and-modify-custom-xml-parts"></a>Creare e modificare le parti XML personalizzate
  È possibile creare o modificare le parti XML personalizzate quando il documento è aperto nell'applicazione di Office oppure quando il documento è chiuso, anche se Microsoft Office non è installato.

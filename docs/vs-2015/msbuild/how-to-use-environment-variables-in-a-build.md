@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437885"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procedura: Usare le variabili di ambiente in una compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
  Tutte le variabili di ambiente sono disponibili per il file di progetto [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) come proprietà.  
   
 > [!NOTE]
->  Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.  
+> Se il file di progetto contiene una definizione esplicita di una proprietà con lo stesso nome di una variabile di ambiente, la proprietà nel file di progetto esegue l'override del valore della variabile di ambiente.  
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Per usare una variabile di ambiente in un progetto MSBuild  
   
@@ -46,7 +46,7 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
     > [!NOTE]
-    >  Per i nomi delle proprietà non viene rilevata la distinzione tra maiuscole e minuscole, quindi sia `$(ToolsPath)` che `$(TOOLSPATH)` fanno riferimento alla stessa proprietà o variabile di ambiente.  
+    > Per i nomi delle proprietà non viene rilevata la distinzione tra maiuscole e minuscole, quindi sia `$(ToolsPath)` che `$(TOOLSPATH)` fanno riferimento alla stessa proprietà o variabile di ambiente.  
   
 ## <a name="example"></a>Esempio  
  Il file di progetto seguente usa variabili di ambiente per specificare il percorso delle directory.  
@@ -71,4 +71,4 @@ Quando si compilano i progetti, spesso è necessario impostare le opzioni di com
 
 [Proprietà di MSBuild](../msbuild/msbuild-properties1.md)
 
-[Procedura: Compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Procedura: compilare gli stessi file di origine con opzioni diverse](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

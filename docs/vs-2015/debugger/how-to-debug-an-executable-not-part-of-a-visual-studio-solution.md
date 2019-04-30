@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434489"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedura: Eseguire il debug di un eseguibile non incluso in una soluzione di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Talvolta può essere necessario eseguire il debug di un file eseguibile non incl
 5. Avviare l'eseguibile scegliendo un comando di esecuzione, ad esempio **avviare**, dalle **Debug** menu.  
   
     > [!NOTE]
-    >  I progetti EXE non sono supportati da tutti i linguaggi di programmazione. Se è necessario utilizzare questa funzionalità, installare [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    > I progetti EXE non sono supportati da tutti i linguaggi di programmazione. Se è necessario utilizzare questa funzionalità, installare [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
      Quando si effettua il debug di un eseguibile senza il codice sorgente, le funzionalità di debug disponibili sono limitate, indipendentemente dal fatto che si stabilisca una connessione a un eseguibile in esecuzione o che si aggiunga l'eseguibile a una soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se l'eseguibile è stato compilato senza informazioni di debug in un formato compatibile, le funzionalità disponibili risulteranno ulteriormente limitate. Se si dispone del codice sorgente, l'approccio migliore consiste nell'importarlo in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e nel creare una build di debug dell'eseguibile in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

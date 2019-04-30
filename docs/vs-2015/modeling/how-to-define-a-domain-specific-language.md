@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441067"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Procedura: definire un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
    - Selezionare **linguaggio minimo** in altri casi, o se si è sicuri.  
   
        > [!NOTE]
-       >  Per creare un diagramma classi o un diagramma componenti, prendere in considerazione l'uso dei modelli UML. Gli strumenti di modellazione UML forniscono un set di diagrammi integrati attorno a un solo modello. Sono estensibili e possono essere integrati con il linguaggio DSL con ModelBus. Per altre informazioni, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
+       > Per creare un diagramma classi o un diagramma componenti, prendere in considerazione l'uso dei modelli UML. Gli strumenti di modellazione UML forniscono un set di diagrammi integrati attorno a un solo modello. Sono estensibili e possono essere integrati con il linguaggio DSL con ModelBus. Per altre informazioni, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
   
    - Selezionare **Progettazione Windows Form minimo** oppure **WPF Designer minimo** per creare un linguaggio DSL visualizzato su una superficie Windows Form o WPF. Sarà necessario scrivere il codice per definire l'editor. Per altre informazioni, vedere i seguenti argomenti:  
   
@@ -108,7 +108,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
  Chiudere l'istanza sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Dopo aver modificato il linguaggio DSL, non sarà più possibile visualizzare le forme nel file di test di esempio. Sarà tuttavia possibile creare nuovi elementi.  
+> Dopo aver modificato il linguaggio DSL, non sarà più possibile visualizzare le forme nel file di test di esempio. Sarà tuttavia possibile creare nuovi elementi.  
   
 ### <a name="modifying-the-template-dsl"></a>Modifica del linguaggio DSL del modello  
  Rinominare e mantenere alcune o tutte le classi di dominio e le classi di forma nella definizione DSL del modello. I nuovi nomi delle classi devono essere nomi CLR validi, senza spazi o segni di punteggiatura.  
@@ -137,7 +137,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
   Le sezioni seguenti descrivono come costruire i tipi più utili di funzionalità DSL. Un linguaggio DSL può essere costruito con molti altri criteri, ma questi sono quelli usati più di frequente.  
   
 > [!NOTE]
->  Dopo aver aggiunto una funzionalità, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di compilare ed eseguire il linguaggio DSL.  
+> Dopo aver aggiunto una funzionalità, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di compilare ed eseguire il linguaggio DSL.  
   
  La figura seguente mostra la parte relativa a classi e relazioni del linguaggio DSL usato come esempio in questo argomento.  
   
@@ -148,7 +148,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
  ![Modello di istanza di DSL generato](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Modello" si riferisce a un'istanza del linguaggio DSL creata dagli utenti e in genere viene visualizzato come diagramma. Questo argomento descrive sia il diagramma di definizione DSL che i diagrammi del modello visualizzati quando viene usato il linguaggio DSL.  
+> "Modello" si riferisce a un'istanza del linguaggio DSL creata dagli utenti e in genere viene visualizzato come diagramma. Questo argomento descrive sia il diagramma di definizione DSL che i diagrammi del modello visualizzati quando viene usato il linguaggio DSL.  
   
 ## <a name="classes"></a> Definizione delle classi di dominio  
  Le classi di dominio rappresentano i concetti del linguaggio DSL. Le istanze sono *elementi del modello*. Ad esempio in un **MusicLibrary** DSL potrebbe essere classi di dominio denominate **Album** e **brano**.  
@@ -185,7 +185,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
  Per altre informazioni, vedere [relazioni di proprietà di dominio](../modeling/properties-of-domain-relationships.md) e [delle proprietà dei ruoli di dominio](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  L'incorporamento è diverso dall'ereditarietà. I figli in una relazione di incorporamento non ereditano le funzionalità dai padri.  
+> L'incorporamento è diverso dall'ereditarietà. I figli in una relazione di incorporamento non ereditano le funzionalità dai padri.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Aggiungere le proprietà di dominio a ogni classe di dominio  
  Nelle proprietà di dominio vengono archiviati i valori. Esempi sono: Nome, titolo, data di pubblicazione.  
@@ -296,7 +296,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
    2. Pulsante destro del mouse il nodo sotto **schede della casella degli strumenti** che ha lo stesso nome del linguaggio DSL, ad esempio MusicLibrary. Fare clic su **Aggiungi strumento elemento**.  
   
        > [!NOTE]
-       >  Se facendo clic la **degli strumenti** nodo, non sarà visibile **Aggiungi strumento elemento**. Invece, fare clic sul nodo sopra.  
+       > Se facendo clic la **degli strumenti** nodo, non sarà visibile **Aggiungi strumento elemento**. Invece, fare clic sul nodo sopra.  
   
    3. Nella finestra proprietà con il nuovo strumento elemento selezionato, impostare **classe** alla classe di dominio che è stato aggiunto recentemente.  
   
@@ -464,7 +464,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
          Sotto **proprietà di visualizzazione**, selezionare la proprietà che deve essere visualizzata nell'elenco. Nell'esempio, si tratta di Titolo.  
   
 > [!NOTE]
->  Usando i campi di percorso nella mappa elementi Decorator e i campi della mappa raggruppamento, è possibile stabilire relazioni più complesse tra le classi di dominio e la forma raggruppamento.  
+> Usando i campi di percorso nella mappa elementi Decorator e i campi della mappa raggruppamento, è possibile stabilire relazioni più complesse tra le classi di dominio e la forma raggruppamento.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Per definire uno strumento per la creazione della forma  
   
@@ -475,7 +475,7 @@ Per definire un linguaggio specifico di dominio (DSL), si crea una soluzione [!I
 3. Pulsante destro del mouse il nodo sotto **schede della casella degli strumenti** che ha lo stesso nome del linguaggio DSL, ad esempio MusicLibrary. Fare clic su **Aggiungi strumento elemento**.  
   
     > [!NOTE]
-    >  Se facendo clic la **degli strumenti** nodo, non sarà visibile **Aggiungi strumento elemento**. Invece, fare clic sul nodo sopra.  
+    > Se facendo clic la **degli strumenti** nodo, non sarà visibile **Aggiungi strumento elemento**. Invece, fare clic sul nodo sopra.  
   
 4. Nella finestra proprietà con il nuovo strumento elemento selezionato, impostare **classe** alla classe di dominio che è stato aggiunto recentemente.  
   

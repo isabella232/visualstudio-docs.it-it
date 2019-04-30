@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441517"
 ---
 # <a name="configuration-options-overview"></a>Panoramica delle opzioni di configurazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ I progetti in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] può supportare pi
 |MyConfig|N/D|\<Impostazioni MyConfig Win64 >|  
   
 > [!NOTE]
->  È possibile creare una configurazione di soluzione "MyConfig" che esclude una piattaforma "Win32", a meno che il progetto di destinazione non supporta Win32.  
+> È possibile creare una configurazione di soluzione "MyConfig" che esclude una piattaforma "Win32", a meno che il progetto di destinazione non supporta Win32.  
   
  Modifica la configurazione attiva per una soluzione consente di selezionare il set di configurazioni di progetto che vengono compilate, eseguire, eseguire il debug o distribuito in tale soluzione. Ad esempio, se si modifica la configurazione soluzione attiva da Release a Debug, tutti i progetti all'interno della soluzione vengono compilati automaticamente con la configurazione del progetto indicato nella configurazione di Debug della soluzione. Le configurazioni di progetto sono in genere anche denominata Debug a meno che l'utente ha apportato modifiche manuali dell'ambiente di Configuration Manager.  
   

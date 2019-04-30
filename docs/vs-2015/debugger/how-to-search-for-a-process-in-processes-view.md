@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431722"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Procedura: Cercare un processo nella visualizzazione processi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58964646"
 4. Deselezionare tutti i campi per cui non si desidera specificare i valori.  
   
    > [!TIP]
-   >  Per trovare tutti i processi appartenenti a un modulo, cancellare il **processo** e digitare il nome del modulo nel **modulo** casella. Quindi usare **Trova successivo** per continuare la ricerca dei processi.  
+   > Per trovare tutti i processi appartenenti a un modulo, cancellare il **processo** e digitare il nome del modulo nel **modulo** casella. Quindi usare **Trova successivo** per continuare la ricerca dei processi.  
   
 5. Scegli **iscrizione** oppure **verso il basso** per la direzione iniziale della ricerca.  
   

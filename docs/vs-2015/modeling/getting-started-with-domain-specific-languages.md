@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427056"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introduzione ai linguaggi specifici del dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
     Viene generata una soluzione contenente due progetti. Essi sono denominati Dsl e DslPackage. Diagramma verrà aperto un file che è denominata Dsldefinition.  
   
    > [!NOTE]
-   >  La maggior parte del codice che è possibile visualizzare nelle cartelle nei due progetti è generato dal Dsldefinition. Per questo motivo, la maggior parte delle modifiche per il linguaggio DSL vengono apportate in questo file.  
+   > La maggior parte del codice che è possibile visualizzare nelle cartelle nei due progetti è generato dal Dsldefinition. Per questo motivo, la maggior parte delle modifiche per il linguaggio DSL vengono apportate in questo file.  
   
    L'interfaccia utente ora è simile a quella nell'immagine seguente.  
   
@@ -104,7 +104,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
 1. Fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti Esplora soluzioni. La maggior parte del codice sorgente da Dsldefinition verrà rigenerato.  
   
    > [!NOTE]
-   >  Ogni volta che si modifica Dsldefinition, è necessario fare clic su **Trasforma tutti i modelli** prima della ricompilazione della soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Ogni volta che si modifica Dsldefinition, è necessario fare clic su **Trasforma tutti i modelli** prima della ricompilazione della soluzione. È possibile automatizzare questo passaggio. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Premere F5 o scegliere il **Debug** menu, fare clic su **Avvia debug**.  
   
@@ -171,7 +171,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
    È possibile aggiungere qualsiasi numero di file modello di testo a un progetto. Ogni modello genera un file dei risultati.  
   
 > [!NOTE]
->  Quando si modifica la definizione DSL, il codice di modello testo di esempio non funzionerà, a meno che non venga aggiornata.  
+> Quando si modifica la definizione DSL, il codice di modello testo di esempio non funzionerà, a meno che non venga aggiornata.  
   
  Per altre informazioni, vedere [generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md) e [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
  Quando si desidera modificare la definizione DSL, chiudere l'istanza sperimentale e aggiornare la definizione principale [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] istanza.  
   
 > [!NOTE]
->  Dopo avere modificato la definizione DSL, si potrebbero perdere informazioni nei modelli di prova creato con le versioni precedenti.  Ad esempio, la soluzione di debug contiene un file denominato campione, che contiene alcune forme e connettori. Dopo avere iniziato a sviluppare la definizione DSL, non saranno visibili e andranno perse quando si salva il file.  
+> Dopo avere modificato la definizione DSL, si potrebbero perdere informazioni nei modelli di prova creato con le versioni precedenti.  Ad esempio, la soluzione di debug contiene un file denominato campione, che contiene alcune forme e connettori. Dopo avere iniziato a sviluppare la definizione DSL, non saranno visibili e andranno perse quando si salva il file.  
   
  È possibile rendere un'ampia gamma di estensioni per il linguaggio DSL. Nell'esempio seguente fornirà una visione delle possibilità.  
   
@@ -285,7 +285,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
          Impostare il relativo nome, ad esempio **Town (città)**.  
   
         > [!NOTE]
-        >  Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.  
+        > Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.  
   
     2. Aggiungere una proprietà di dominio per la nuova classe, ad esempio **nome**.  
   
@@ -296,7 +296,7 @@ Questo argomento illustra i concetti di base nella definizione e uso di un lingu
          ![Frammento della definizione DSL: radice dell'albero genealogico](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.  
+        > Le relazioni di riferimento rappresentano riferimenti incrociati da una parte dell'albero del modello a un'altra.  
   
 3. Aggiungere una forma per rappresentare i diagrammi del modello di città.  
   

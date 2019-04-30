@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437315"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procedura: Eseguire il debug di un'applicazione parzialmente attendibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Le informazioni contenute in questo argomento sono valide per applicazioni Windo
  È possibile controllare successivamente le autorizzazioni aggiunte durante il debug. Se durante il debug è stato necessario assegnare un'ulteriore autorizzazione, probabilmente occorrerà aggiungere una richiesta di consenso dell'utente in tale punto del codice.  
   
 > [!NOTE]
->  Per i visualizzatori del debugger sono richiesti maggiori privilegi rispetto a quelli consentiti da un'applicazione parzialmente attendibile. I visualizzatori non vengono caricati in caso di interruzione in codice con attendibilità parziale. Per eseguire il debug tramite un visualizzatore, è necessario eseguire il codice con attendibilità totale.  
+> Per i visualizzatori del debugger sono richiesti maggiori privilegi rispetto a quelli consentiti da un'applicazione parzialmente attendibile. I visualizzatori non vengono caricati in caso di interruzione in codice con attendibilità parziale. Per eseguire il debug tramite un visualizzatore, è necessario eseguire il codice con attendibilità totale.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Per scegliere un'area per l'applicazione parzialmente attendibile  
   

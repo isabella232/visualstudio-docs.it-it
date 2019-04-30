@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426030"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un a
 ```  
   
 > [!NOTE]
->  Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente.  
+> Per un elenco di elementi trasformato è possibile specificare un separatore personalizzato, in modo analogo a quanto accade con un elenco di elementi standard. Per separare, ad esempio, un elenco di elementi trasformato usando una virgola (,) anziché il punto e virgola predefinito (;), usare il codice XML seguente.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Vedere anche  
  [Concetti relativi a MSBuild](../msbuild/msbuild-concepts.md)   
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Procedura: La compilazione incrementale](../msbuild/how-to-build-incrementally.md)
+ [Procedura: eseguire la compilazione incrementale](../msbuild/how-to-build-incrementally.md)

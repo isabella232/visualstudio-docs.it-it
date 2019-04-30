@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4eb438db5fd911ed93f7072902281815633d06a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415451"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procedura: Aggiornare un'estensione di Visual Studio
 È possibile aggiornare un'estensione di Visual Studio nel sistema mediante **estensioni e aggiornamenti** per installare la versione aggiornata. Se si crea una versione aggiornata di un'estensione, è possibile segnalare l'aggiornamento incrementando il numero di versione nel manifesto VSIX.
@@ -43,7 +43,7 @@ ms.locfileid: "60042119"
 1. In Visual Studio, aprire la soluzione per l'estensione da aggiornare. Apportare le modifiche.
 
     > [!IMPORTANT]
-    >  Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
+    > Valore unsigned che tutte le estensioni utente non vengono aggiornate automaticamente. È sempre necessario firmare le estensioni.
 
 2. Nelle **Esplora soluzioni**aprire *source.extension.manifest*.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60042119"
      È possibile abilitare o disabilitare il controllo automatico per gli aggiornamenti nella parte inferiore della **aggiornamenti** riquadro (**abilitare/disabilitare il rilevamento automatico degli aggiornamenti disponibili**), quali modifiche di **verificare la presenza di gli aggiornamenti** impostazione **Tools** > **opzioni** > **ambiente**  >  **Estensioni e aggiornamenti**.
 
     > [!NOTE]
-    >  A partire da Visual Studio 2015 Update 2, è possibile specificare (in **degli strumenti** > **opzioni** > **ambiente**  >  **Estensioni e aggiornamenti**) se si desidera che gli aggiornamenti automatici per le estensioni per utente, tutte le estensioni utente o entrambi (impostazione predefinita).
+    > A partire da Visual Studio 2015 Update 2, è possibile specificare (in **degli strumenti** > **opzioni** > **ambiente**  >  **Estensioni e aggiornamenti**) se si desidera che gli aggiornamenti automatici per le estensioni per utente, tutte le estensioni utente o entrambi (impostazione predefinita).
 
 ## <a name="see-also"></a>Vedere anche
 - [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)

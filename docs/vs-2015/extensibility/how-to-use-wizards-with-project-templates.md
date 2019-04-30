@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432565"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare procedure guidate con modelli di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
 1. Creare un progetto di modello di progetto c# (in Visual Studio **File / nuovo / progetto / Visual c# / Extensibility / modello di progetto c#**). Denominarlo **MyProjectTemplate**.  
   
     > [!NOTE]
-    >  Potrebbe essere necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+    > Potrebbe essere necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 2. Aggiungere un nuovo progetto VSIX (**File / nuovo / progetto / Visual c# / Extensibility / progetto VSIX**) nella stessa soluzione come progetto di modello di progetto (nelle **Esplora soluzioni**, selezionare il nodo della soluzione, pulsante destro del mouse e selezionare **Aggiungi / nuovo progetto**). Denominarla **MyProjectWizard.**  
   

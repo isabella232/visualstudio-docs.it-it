@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430706"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint
   Le procedure seguenti illustrano come creare colonne personalizzate del sito di SharePoint, oppure *campi*, oltre a un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che usa il nuovo tipo di contenuto.
@@ -112,7 +112,7 @@ ms.locfileid: "60057732"
 6. Dopo il tipo di contenuto Progettazione progetti, nelle **colonne** scheda, aggiungere le tre colonne definiti in precedenza del sito: **Nome dei pazienti**, **ID paziente**, e **Dottor nome**. Per aggiungere tali colonne, scegliere la prima casella di riepilogo nell'elenco le colonne del sito sotto **nome visualizzato**e quindi ogni colonna del sito in elenco una alla volta.
 
     > [!TIP]
-    >  Per scegliere le colonne del sito più rapidamente, filtrare l'elenco immettendo le prime lettere del nome della colonna.
+    > Per scegliere le colonne del sito più rapidamente, filtrare l'elenco immettendo le prime lettere del nome della colonna.
 
 7. Oltre alle tre colonne del sito personalizzato, aggiungere il **commenti** colonna del sito dall'elenco delle colonne del sito.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057732"
      La colonna di elenco personalizzato si applica solo a questo elenco. Quando si aggiunge una colonna di elenco personalizzato per un elenco, un nuovo tipo di contenuto, incluse tutte le colonne aggiunte all'elenco, viene creato e impostato come elenco predefinito.
 
     > [!TIP]
-    >  Se si sceglie una colonna dall'elenco di colonne del sito, viene utilizzata una colonna di sito esistente. Tuttavia, se si immette un valore di nome di colonna senza scegliere tutte le colonne nell'elenco, viene creata una colonna di elenco personalizzato, anche se una colonna con lo stesso nome esiste già nell'elenco.
+    > Se si sceglie una colonna dall'elenco di colonne del sito, viene utilizzata una colonna di sito esistente. Tuttavia, se si immette un valore di nome di colonna senza scegliere tutte le colonne nell'elenco, viene creata una colonna di elenco personalizzato, anche se una colonna con lo stesso nome esiste già nell'elenco.
 
      Facoltativamente, anziché impostare il tipo di dati della colonna di elenco personalizzato per **una riga di testo**, invece, è possibile impostare il tipo di dati per questa colonna di ricerca e i relativi valori verrà recuperati da una tabella o un altro elenco. Per informazioni sulle colonne di ricerca, vedere [relazioni di elenco in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) e [elenco relazioni e ricerche](http://go.microsoft.com/fwlink/?LinkID=224995).
 

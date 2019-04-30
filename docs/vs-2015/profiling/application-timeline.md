@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431058"
 ---
 # <a name="application-timeline"></a>Sequenza temporale applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
 5. Windows 7  
   
 > [!NOTE]
->  È possibile raccogliere e analizzare i dati sull’utilizzo della CPU e sul consumo di energia insieme ai dati della **Sequenza temporale applicazione** . Vedere [eseguire strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> È possibile raccogliere e analizzare i dati sull’utilizzo della CPU e sul consumo di energia insieme ai dati della **Sequenza temporale applicazione** . Vedere [eseguire strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Raccogliere dati sulla sequenza temporale applicazione  
  È possibile profilare la velocità di risposta dell'app nel computer locale, nel dispositivo connesso, negli emulatori o nel simulatore Visual Studio o in un dispositivo remoto. Visualizzare [strumenti di profilatura senza eseguire debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
->  Se possibile, eseguire l'app direttamente nel dispositivo. Le prestazioni dell'applicazione osservate nel simulatore o tramite Connessione Desktop remoto potrebbero non essere indicative delle prestazioni effettive nel dispositivo. D'altro canto, la raccolta di dati usando Visual Studio Remote Tools non influisce sui dati delle prestazioni.  
+> Se possibile, eseguire l'app direttamente nel dispositivo. Le prestazioni dell'applicazione osservate nel simulatore o tramite Connessione Desktop remoto potrebbero non essere indicative delle prestazioni effettive nel dispositivo. D'altro canto, la raccolta di dati usando Visual Studio Remote Tools non influisce sui dati delle prestazioni.  
   
  I passaggi principali sono indicati di seguito.  
   
@@ -55,7 +55,7 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
 3. Selezionare **Sequenza temporale applicazione** e fare clic su **Avvia** nella parte inferiore della finestra.  
   
     > [!NOTE]
-    >  È possibile che venga visualizzata una finestra Controllo dell’account utente che richiede le autorizzazioni per l’esecuzione di VsEtwCollector.exe. Scegliere **Sì**.  
+    > È possibile che venga visualizzata una finestra Controllo dell’account utente che richiede le autorizzazioni per l’esecuzione di VsEtwCollector.exe. Scegliere **Sì**.  
   
 4. Eseguire lo scenario di interesse per la profilatura nell'app per raccogliere dati sulle prestazioni.  
   
@@ -107,7 +107,7 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
 |**Altro XAML**|Tempo impiegato per l'esecuzione del codice runtime XAML.|  
   
 > [!TIP]
->  Scegliere lo strumento **Utilizzo CPU** insieme allo strumento **Sequenza temporale applicazione** quando si avvia la profilatura per visualizzare metodi di app eseguiti nel thread dell'interfaccia utente. Lo spostamento di codice di app a esecuzione prolungata in un thread in background può migliorare la velocità di risposta dell'interfaccia utente.  
+> Scegliere lo strumento **Utilizzo CPU** insieme allo strumento **Sequenza temporale applicazione** quando si avvia la profilatura per visualizzare metodi di app eseguiti nel thread dell'interfaccia utente. Lo spostamento di codice di app a esecuzione prolungata in un thread in background può migliorare la velocità di risposta dell'interfaccia utente.  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizzazione dei dettagli della sequenza temporale  
  Usare la barra degli strumenti **Dettagli sequenza temporale** per ordinare, filtrare e specificare le annotazioni delle voci della visualizzazione **Dettagli sequenza temporale** .  

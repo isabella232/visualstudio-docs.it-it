@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422075"
 ---
 # <a name="debug-a-webview-control"></a>Debug di un controllo WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 4. (Facoltativo) Per le versioni non Express di Visual Studio, disabilitare il debug just-in-time (JIT) scegliendo **degli strumenti**, **opzioni**, **debug**, **Just-In-Time**, e quindi disabilitando il debug JIT per Script.  
   
     > [!NOTE]
-    >  Disabilitando il debug JIT, puoi nascondere le finestre di dialogo per le eccezioni non gestite che si verificano in alcune pagine Web. In Visual Studio Express, il debug JIT è sempre disabilitato.  
+    > Disabilitando il debug JIT, puoi nascondere le finestre di dialogo per le eccezioni non gestite che si verificano in alcune pagine Web. In Visual Studio Express, il debug JIT è sempre disabilitato.  
   
 5. Premere F5 per avviare il debug.  
   
@@ -82,7 +82,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
      ![Selezione nella finestra della console JavaScript di destinazione](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.  
+    > Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.  
   
 6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   

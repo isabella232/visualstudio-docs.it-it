@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424751"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: Creazione di un'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
  Il primo passaggio di questa procedura dettagliata prevede la creazione di una soluzione e di due progetti di libreria di classi. La prima libreria di classi conterrà il dataset (la classe DataSet tipizzato e gli oggetti DataTable generati che conterranno i dati dell'applicazione). Il progetto viene usato come livello di entità di dati dell'applicazione e di norma si trova nel livello intermedio. La finestra di progettazione set di dati viene utilizzato per creare il set di dati iniziale e di separare automaticamente il codice in due librerie di classi.  
   
 > [!NOTE]
->  Assicurarsi di assegnare il nome corretto al progetto e alla soluzione prima di fare clic su **OK**. In tal modo sarà più semplice completare questa procedura dettagliata.  
+> Assicurarsi di assegnare il nome corretto al progetto e alla soluzione prima di fare clic su **OK**. In tal modo sarà più semplice completare questa procedura dettagliata.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Per creare la soluzione a più livelli e la libreria di classi DataEntityTier  
   
 1. Dal **File** menu, creare un nuovo progetto.  
   
     > [!NOTE]
-    >  Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti c#. Creare il nuovo progetto in uno di questi linguaggi  
+    > Il **Progettazione Dataset** è supportato in [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e i progetti c#. Creare il nuovo progetto in uno di questi linguaggi  
   
 2. Nel **nuovo progetto** nella finestra di dialogo il **tipi di progetto** riquadro, fare clic su **Windows**.  
   
@@ -125,7 +125,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
 6. Se il database richiede una password, selezionare l'opzione che consente di includere dati riservati, quindi fare clic su **Avanti**.  
   
     > [!NOTE]
-    >  Se è stato selezionato un file di database locale al posto della connessione a SQL Server, potrebbe venire richiesto di aggiungere il file al progetto. Fare clic su **Sì** per aggiungere il file di database al progetto.  
+    > Se è stato selezionato un file di database locale al posto della connessione a SQL Server, potrebbe venire richiesto di aggiungere il file al progetto. Fare clic su **Sì** per aggiungere il file di database al progetto.  
   
 7. Fare clic su **successivo** nel **Salva stringa di connessione nel file di configurazione dell'applicazione** pagina.  
   
@@ -153,7 +153,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
    Il dataset e gli oggetti TableAdapter sono separati nei due progetti di libreria di classi. Il progetto che originalmente conteneva l'intero dataset (DataAccessTier) ora contiene solo gli oggetti TableAdapter. Il progetto definito nella **DataSetProject** proprietà (DataEntityTier) contiene il set di dati tipizzato: NorthwindDataSet (o NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
+> Quando si separano i dataset e gli oggetti TableAdapter (impostando la proprietà **Progetto DataSet**), le classi parziali del dataset presenti nel progetto non vengono spostate automaticamente. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
   
 ## <a name="creating-a-new-service-application"></a>Creazione di una nuova applicazione di servizio  
  Dal momento che questa procedura dettagliata spiega come accedere al livello di accesso ai dati con un servizio WCF, è necessario creare una nuova applicazione del servizio WCF.  
@@ -220,7 +220,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
  Ora che il livello di accesso ai dati contiene i metodi per restituire i dati, creare i metodi nel servizio dati per chiamare i metodi nel livello di accesso ai dati.  
   
 > [!NOTE]
->  Per i progetti C# è necessario aggiungere un riferimento all'assemby `System.Data.DataSetExtensions` per eseguire la compilazione del codice seguente.  
+> Per i progetti C# è necessario aggiungere un riferimento all'assemby `System.Data.DataSetExtensions` per eseguire la compilazione del codice seguente.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Per creare le funzioni GetCustomers e GetOrders nel servizio dati  
   
@@ -322,7 +322,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
 3. Selezionare **Service1** e fare clic su **OK**.  
   
     > [!NOTE]
-    >  Se sono presenti più servizi nel computer in uso, selezionare il servizio creato in precedenza in questa procedura dettagliata, ossia quello contenente i metodi GetCustomers e GetOrders.  
+    > Se sono presenti più servizi nel computer in uso, selezionare il servizio creato in precedenza in questa procedura dettagliata, ossia quello contenente i metodi GetCustomers e GetOrders.  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Aggiunta di DataGridView al form per visualizzare i dati restituiti dal servizio dati  
  Dopo l'aggiunta del riferimento a un servizio dati, i dati restituiti dal servizio vengono popolati automaticamente nella finestra **Origini dati**.  
@@ -361,7 +361,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
  Dal momento che il servizio restituisce i dati dalle tabelle Customers e Orders, il valore predefinito per maxReceivedMessageSize non è sufficiente per contenere i dati e deve essere aumentato. Per questa procedura dettagliata si imposterà il valore su 6553600. Il valore verrà cambiato nel client e il riferimento al servizio verrà aggiornato automaticamente.  
   
 > [!NOTE]
->  La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> La dimensione predefinita più bassa è usata per limitare l'esposizione ad attacchi Denial of Service (DoS). Per altre informazioni, vedere <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Per aumentare il valore di maxReceivedMessageSize  
   

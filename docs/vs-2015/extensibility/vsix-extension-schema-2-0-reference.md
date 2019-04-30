@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436926"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informazioni di riferimento su schema estensione VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048659"
 Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VSIX. Il formato del file è disciplinato da uno schema. La versione 2.0 di questo schema supporta l'aggiunta di attributi e i tipi personalizzati.  Lo schema del manifesto è estendibile. Il caricatore di manifesto ignora gli elementi XML e gli attributi che non comprende.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 è possibile caricare i file VSIX nei formati Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.  
+> Visual Studio 2015 è possibile caricare i file VSIX nei formati Visual Studio 2010, Visual Studio 2012 o Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Schema del manifesto del pacchetto  
  È l'elemento radice del file XML manifesto `<PackageManifest>`, con un singolo attributo `Version`, ovvero la versione del formato del manifesto. Se vengono apportate modifiche significative al formato, verrà modificato il formato della versione. In questo argomento descrive versione del formato manifesto 2.0, che viene specificato nel manifesto impostando il `Version` versione il valore dell'attributo = "2.0".  
@@ -129,7 +129,7 @@ Un file manifesto di distribuzione VSIX descrive il contenuto di un pacchetto VS
         - Versione unica & - solo la versione specificata.  
   
         > [!IMPORTANT]
-        >  Versione 2.0 dello Schema VSIX è stata introdotta in Visual Studio 2012. Usare questo schema è necessario che Visual Studio 2012 o in un secondo momento è installato nel computer e usare VSIXInstaller.exe che fa parte di tale prodotto. È possibile destinate alle versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive VSIX Installer, ma solo usando le versioni più recenti del programma di installazione.  
+        > Versione 2.0 dello Schema VSIX è stata introdotta in Visual Studio 2012. Usare questo schema è necessario che Visual Studio 2012 o in un secondo momento è installato nel computer e usare VSIXInstaller.exe che fa parte di tale prodotto. È possibile destinate alle versioni precedenti di Visual Studio con un Visual Studio 2012 o versioni successive VSIX Installer, ma solo usando le versioni più recenti del programma di installazione.  
   
     - `AnyAttribute*` : Le `<InstallationTarget>` elemento consente un set aperto di attributi che verrà esposto in fase di esecuzione come un dizionario di coppia nome-valore.  
   

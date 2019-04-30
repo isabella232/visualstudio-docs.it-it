@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431293"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Progettare un modello di integrazione applicativa dei dati business
   È possibile sviluppare un modello per il servizio di integrazione applicativa dei dati (BDC) mediante l'aggiunta di metodi e le entità in un file di modello. Un'entità descrive una raccolta di campi di dati. Ad esempio, un'entità può rappresentare una tabella in un database. Un metodo esegue un'attività, ad esempio aggiungendo, eliminando o aggiornando dati rappresentati dall'entità. Per altre informazioni, vedere [integrare i dati aziendali in SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628416"
  È anche possibile impostare le autorizzazioni di sicurezza per singoli modelli o tipi di contenuto esterno. Per altre informazioni su come impostare le autorizzazioni di sicurezza di un modello, vedere [modelli BDC](http://go.microsoft.com/fwlink/?LinkID=178884). Per altre informazioni su come impostare le autorizzazioni di sicurezza di un tipo di contenuto esterno, vedere [gestione dei tipi di contenuto esterno](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Usare queste impostazioni per il debug di una soluzione nel SharePoint Server locale. Per altre informazioni su come configurare le impostazioni di sicurezza relative all'integrazione applicativa dei dati nel server di produzione SharePoint, vedere [Cenni preliminari sulla sicurezza di servizi di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Usare queste impostazioni per il debug di una soluzione nel SharePoint Server locale. Per altre informazioni su come configurare le impostazioni di sicurezza relative all'integrazione applicativa dei dati nel server di produzione SharePoint, vedere [Cenni preliminari sulla sicurezza di servizi di integrazione applicativa dei dati](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Ritirare i modelli di stati danneggiati
  Quando il debugger viene avviato per la prima volta, in Visual Studio l'intero modello viene distribuito in SharePoint. Per ogni momento successivo, Visual Studio aggiorna il modello in SharePoint con tutte le modifiche apportate tra le distribuzioni.

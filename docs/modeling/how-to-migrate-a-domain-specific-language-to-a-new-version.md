@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445161"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 È possibile eseguire la migrazione di progetti di definiscono e usano il linguaggio specifico di dominio per [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] dalla versione di [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] che è stato distribuito con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -53,7 +53,7 @@ ms.locfileid: "60040132"
    - Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.
 
        > [!NOTE]
-       >  Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.
+       > Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.
 
 4. Convertire i progetti.
 
@@ -74,7 +74,7 @@ ms.locfileid: "60040132"
    2. Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.
 
        > [!NOTE]
-       >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Aggiornare il codice personalizzato nei progetti convertiti.
 

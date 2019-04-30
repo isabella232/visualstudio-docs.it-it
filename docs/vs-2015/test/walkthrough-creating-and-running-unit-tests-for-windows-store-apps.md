@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428205"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procedura dettagliata: Creazione ed esecuzione di Unit test per le app di Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069850"
 In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gestite e i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.  
   
 > [!TIP]
->  Per altre informazioni sullo sviluppo di app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , vedere [Introduzione alle app di Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Per altre informazioni sullo sviluppo di app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , vedere [Introduzione alle app di Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  In Visual Studio sono disponibili le funzionalità di testing unità seguenti:  
   
@@ -54,7 +54,7 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 2. In Modelli, scegliere il linguaggio di programmazione con cui si desidera creare gli unit test, quindi scegliere la libreria di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associata. Ad esempio, scegliere **Visual C#** , quindi scegliere **Windows Store**e infine selezionare **Libreria unit test (applicazioni Windows Store)**.  
   
     > [!NOTE]
-    >  In Visual Studio sono inclusi i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.  
+    > In Visual Studio sono inclusi i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.  
   
 3. (Facoltativo) Nella casella di testo **Nome** immettere il nome che si desidera usare per il progetto di unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
@@ -84,7 +84,7 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
 3. Nell'elenco in **Funzionalità**selezionare le funzionalità necessarie per lo unit test e il codice per il test. Ad esempio, selezionare la casella di controllo **Internet** se lo unit test e il codice di cui si sta eseguendo il test necessitano della funzionalità di accesso a Internet.  
   
     > [!NOTE]
-    >  Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funzioni correttamente. Non si devono mai includere funzionalità che non fanno parte dell'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test e in genere devono essere un sottoinsieme di funzionalità specificate per l'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test.  
+    > Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funzioni correttamente. Non si devono mai includere funzionalità che non fanno parte dell'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test e in genere devono essere un sottoinsieme di funzionalità specificate per l'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test.  
   
      Per altre informazioni su Progettazione manifesto, vedere [Configurare un pacchetto di app Windows 8.1 usando la finestra di progettazione del manifesto](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
      Lo unit test viene elencato.  
   
     > [!NOTE]
-    >  È necessario compilare la soluzione per aggiornare l'elenco degli unit test in Esplora test.  
+    > È necessario compilare la soluzione per aggiornare l'elenco degli unit test in Esplora test.  
   
     > [!WARNING]
-    >  Problema noto di Visual Studio: È necessario aprire Esplora Test prima di compilare il progetto di test.  
+    > Problema noto di Visual Studio: È necessario aprire Esplora Test prima di compilare il progetto di test.  
   
 3. In Esplora test, scegliere lo unit test creato.  
   
     > [!TIP]
-    >  In Esplora test viene fornito un collegamento al codice sorgente accanto a **Origine:**.  
+    > In Esplora test viene fornito un collegamento al codice sorgente accanto a **Origine:**.  
   
 4. Scegliere **Esegui tutto**.  
   
      ![Esplora unit test &#45; eseguire unit test](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.  
+    > È possibile selezionare uno o più unit test elencati in Esplora test, quindi fare clic con il pulsante destro del mouse e scegliere **Esegui test selezionati**.  
     >   
     >  Inoltre, è possibile scegliere di **eseguire il debug dei test selezionati**, di **aprire il test**e di usare l'opzione **Proprietà** .  
     >   

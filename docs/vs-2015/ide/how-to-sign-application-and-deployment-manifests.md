@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435186"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Sign Application and manifesti di distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
  Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta solo file di chiave Scambio informazioni personali con estensione PFX. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.  
+> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta solo file di chiave Scambio informazioni personali con estensione PFX. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Per firmare manifesti dell'applicazione e di distribuzione usando un certificato  
   
@@ -48,7 +48,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
      Viene visualizzata la finestra di dialogo **Seleziona un certificato** con il contenuto dell'archivio certificati di Windows.  
   
     > [!TIP]
-    >  Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Certificati** per visualizzare altre informazioni della Guida.  
+    > Se si fa clic su **Fare clic qui per le proprietà del certificato**, viene visualizzata la finestra di dialogo **Dettagli del certificato**. Questa finestra di dialogo contiene informazioni dettagliate sul certificato e opzioni aggiuntive. È possibile fare clic su **Certificati** per visualizzare altre informazioni della Guida.  
   
 3. Selezionare il certificato che si vuole usare per firmare i manifesti.  
   
@@ -65,7 +65,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 3. Nella finestra di dialogo **Seleziona file** individuare la posizione del file di chiave (PFX) che si vuole usare e scegliere **Apri**.  
   
     > [!NOTE]
-    >  Questa opzione supporta solo file con estensione PFX. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.  
+    > Questa opzione supporta solo file con estensione PFX. Se il file di chiave o il certificato sono in un altro formato, archiviarlo nell'archivio certificati di Windows e selezionare il certificato come illustrato nella procedura precedente. Nei requisiti del certificato selezionato deve essere inclusa la firma del codice.  
   
      Viene visualizzata la finestra di dialogo **Immettere la password per aprire il file**. Se il file PFX è già archiviato nell'archivio dei certificati di Windows oppure non è protetto da password, non verrà richiesto di digitare una password.  
   
@@ -83,7 +83,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
  La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione EXE. Le procedure seguenti illustrano come creare manifesti ClickOnce non firmati.  
   
 > [!IMPORTANT]
->  I manifesti non firmati possono semplificare lo sviluppo e test dell'applicazione. I manifesti non firmati tuttavia comportano notevoli rischi di sicurezza in un ambiente di produzione. È consigliabile usare i manifesti non firmati solo se l'applicazione ClickOnce viene eseguita nei computer all'interno di una rete intranet che è completamente isolata da internet o da altre origini di codice dannoso.  
+> I manifesti non firmati possono semplificare lo sviluppo e test dell'applicazione. I manifesti non firmati tuttavia comportano notevoli rischi di sicurezza in un ambiente di produzione. È consigliabile usare i manifesti non firmati solo se l'applicazione ClickOnce viene eseguita nei computer all'interno di una rete intranet che è completamente isolata da internet o da altre origini di codice dannoso.  
   
  Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati, a meno che uno o più file sono esplicitamente esclusi dall'hash creato. In altre parole, la pubblicazione dell'applicazione crea manifesti firmati se tutti i file sono inclusi nell'hash, anche quando la casella di controllo **Firma i manifesti ClickOnce** non è selezionata.  
   
@@ -104,7 +104,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 2. Aprire la finestra di dialogo **File dell'applicazione** e impostare **Hash** a **Escludi** per i file che si vuole escludere dall'hash creato.  
   
     > [!NOTE]
-    >  L'esclusione di un file dall'hash configura ClickOnce per disattivare la firma automatica dei manifesti, pertanto non è necessario pubblicare prima l'applicazione con manifesti firmati, come illustrato nella procedura precedente.  
+    > L'esclusione di un file dall'hash configura ClickOnce per disattivare la firma automatica dei manifesti, pertanto non è necessario pubblicare prima l'applicazione con manifesti firmati, come illustrato nella procedura precedente.  
   
 3. Pubblicare l'applicazione.  
   

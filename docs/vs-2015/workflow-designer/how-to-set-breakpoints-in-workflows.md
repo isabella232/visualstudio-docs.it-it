@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444141"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedura: Impostare punti di interruzione in flussi di lavoro
 Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare punti di interruzione nei flussi di lavoro grafici come si farebbe nel codice Visual Basic o C#. Come previsto, l'esecuzione del flusso di lavoro viene arrestata a ogni punto di interruzione impostato.  
@@ -22,13 +22,13 @@ Quando si usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], è possibile impostare p
  Un punto di interruzione ha tre stati: *In sospeso*, *associato*, e *errore*. Quando viene impostato, un punto di interruzione si trova nello stato In sospeso e viene rappresentato da un'icona rossa. Quando il runtime carica il tipo di flusso di lavoro, lo stato passa ad Associato. Se si specifica un formato non corretto per il punto di interruzione, ad esempio un nome di attività non valido, viene visualizzata una finestra di errore. Il punto di interruzione risulta ancora aggiunto alla finestra del punto di interruzione, ma è contrassegnato con una piccola “x”.  
   
 > [!NOTE]
->  L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.  
+> L'impostazione dei punti di interruzione sui flussi di lavoro richiamati non è supportata.  
 > 
 > [!WARNING]
->  Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dalle **Tools**, **opzioni**, **debug** menu prima di eseguire il debug. Se si dispone di due sequenze annidate in un'altra sequenza e si imposta un punto di interruzione nella prima sequenza interna, premendo **F11** non eseguire il debug nella seconda sequenza interna se il <strong>Abilita Just My Code (solo gestito)</strong>opzione non è selezionata.  
+> Assicurarsi di selezionare l'opzione **Abilita Just My Code (solo gestito)** dalle **Tools**, **opzioni**, **debug** menu prima di eseguire il debug. Se si dispone di due sequenze annidate in un'altra sequenza e si imposta un punto di interruzione nella prima sequenza interna, premendo **F11** non eseguire il debug nella seconda sequenza interna se il <strong>Abilita Just My Code (solo gestito)</strong>opzione non è selezionata.  
 > 
 > [!WARNING]
->  I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo per la proprietà del file XAML non è corretto. Il percorso completo del file XAML non è preciso dopo avere spostato il progetto o la soluzione in un'altra cartella o a un altro computer. Selezionare CTRL+S per salvare e aggiornare la proprietà percorso completo.  
+> I punti di interruzione in un flusso di lavoro non vengono raggiunti se il percorso completo per la proprietà del file XAML non è corretto. Il percorso completo del file XAML non è preciso dopo avere spostato il progetto o la soluzione in un'altra cartella o a un altro computer. Selezionare CTRL+S per salvare e aggiornare la proprietà percorso completo.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Per impostare un punto di interruzione su un'attività nella visualizzazione Progettazione  
   

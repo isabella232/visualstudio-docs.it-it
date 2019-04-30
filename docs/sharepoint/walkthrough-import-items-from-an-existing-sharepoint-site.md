@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446617"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procedura dettagliata: Importare gli elementi da un sito di SharePoint esistente
   Questa procedura dettagliata illustra come importare elementi da un sito di SharePoint esistente in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110871"
  Successivamente, ottenere un file di installazione (con estensione wsp) di SharePoint che contiene gli elementi di SharePoint e gli elementi che si desidera importare le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint. Se si dispone già di un file con estensione wsp, quindi è necessario crearne uno da un sito di SharePoint esistente. Per questo esempio, si esporterà il sito di SharePoint predefinito in un file con estensione wsp.
 
 > [!IMPORTANT]
->  Se si riceve un errore di runtime eseguendo la procedura seguente, è necessario eseguire la procedura in un sistema che ha accesso al sito di SharePoint.
+> Se si riceve un errore di runtime eseguendo la procedura seguente, è necessario eseguire la procedura in un sistema che ha accesso al sito di SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Per esportare un sito di SharePoint esistente
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110871"
 6. Nel **specificare l'origine del nuovo progetto** pagina, selezionare il percorso nel sistema in cui è stato salvato il *wsp* file in precedenza e quindi scegliere il **Avanti** pulsante.
 
    > [!NOTE]
-   >  Se si sceglie la **Finish** pulsante in questa pagina, tutti gli elementi disponibile nel *con estensione wsp* file verrà importato.
+   > Se si sceglie la **Finish** pulsante in questa pagina, tutti gli elementi disponibile nel *con estensione wsp* file verrà importato.
 
 7. Nel **selezionare gli elementi da importare** casella, deselezionare tutte le caselle di controllo nell'elenco, ad eccezione di **Test Column**e quindi scegliere il **fine** pulsante.
 

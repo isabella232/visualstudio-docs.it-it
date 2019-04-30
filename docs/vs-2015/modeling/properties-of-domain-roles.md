@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444462"
 ---
 # <a name="properties-of-domain-roles"></a>Proprietà dei ruoli di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Le proprietà nella tabella seguente sono associate a un ruolo di dominio. Per i
 |Nome visualizzato proprietà|Il nome visualizzato nella finestra di progettazione generata per la proprietà di ruolo generato.|Valore della proprietà del nome di proprietà modificato.|  
   
 > [!NOTE]
->  Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associato tramite l'inserimento di spazi prima di ogni carattere maiuscolo, che è preceduto da un carattere minuscolo e che non è seguito da un altro carattere maiuscolo.  
+> Il valore predefinito di un nome visualizzato è basato sul valore della proprietà associato tramite l'inserimento di spazi prima di ogni carattere maiuscolo, che è preceduto da un carattere minuscolo e che non è seguito da un altro carattere maiuscolo.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Proprietà delle relazioni di dominio](../modeling/properties-of-domain-relationships.md)

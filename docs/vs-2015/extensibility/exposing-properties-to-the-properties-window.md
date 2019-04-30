@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432115"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Esposizione di proprietà nella finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Questa procedura dettagliata espone le proprietà pubbliche di un oggetto per il
 10. Selezionare la casella di controllo nella **MyToolWindow** finestra. **IsChecked** nella **delle proprietà** finestra diventa **True**. Deselezionare la casella di controllo di **MyToolWindow** finestra. **IsChecked** nella **delle proprietà** finestra diventa **False**. Modificare il valore della **IsChecked** nel **proprietà** finestra. La casella di controllo di **MyToolWindow** finestra viene modificata in modo che corrisponda al nuovo valore.  
   
     > [!NOTE]
-    >  Se è necessario eliminare l'oggetto che viene visualizzato nei **delle proprietà** finestra, chiamata `OnSelectChange` con un `null` contenitore a selezione prima. Dopo avere eliminato la proprietà o l'oggetto, è possibile modificare in un contenitore di selezione aggiornato <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> Elenca.  
+    > Se è necessario eliminare l'oggetto che viene visualizzato nei **delle proprietà** finestra, chiamata `OnSelectChange` con un `null` contenitore a selezione prima. Dopo avere eliminato la proprietà o l'oggetto, è possibile modificare in un contenitore di selezione aggiornato <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> Elenca.  
   
 ## <a name="changing-selection-lists"></a>Modifica gli elenchi di selezione  
  In questa sezione si aggiunge un elenco di selezione per una classe di proprietà di base e consente di scegliere in quale elenco di selezione per visualizzare l'interfaccia della finestra degli strumenti.  
@@ -261,7 +261,7 @@ Questa procedura dettagliata espone le proprietà pubbliche di un oggetto per il
 6. Selezionare la casella di controllo di **MyToolWindow** finestra. Il **delle proprietà** finestra viene visualizzato il `Simple` le proprietà dell'oggetto **SomeText** e **ReadOnly**. Deselezionare la casella di controllo. Le proprietà pubbliche della finestra vengono visualizzati nei **proprietà** finestra.  
   
     > [!NOTE]
-    >  Il nome visualizzato del **SomeText** viene **My Text**.  
+    > Il nome visualizzato del **SomeText** viene **My Text**.  
   
 ## <a name="best-practice"></a>Procedure consigliate  
  In questa procedura dettagliata, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene implementato in modo che la raccolta di oggetti selezionabili e la raccolta di oggetti selezionati sono nella stessa raccolta. Solo l'oggetto selezionato viene visualizzato nell'elenco Visualizzatore proprietà. Per un'implementazione di ISelectionContainer più completa, vedere gli esempi ToolWindow.  

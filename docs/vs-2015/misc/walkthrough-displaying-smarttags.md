@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436508"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Procedura dettagliata: Visualizzazione degli smart tag
 Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere [Procedura dettagliata: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
  Anche se gli smart tag fanno parte dell'implementazione di IntelliSense nell'editor, è possibile implementare smart tag creando sottoclassi di <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> e quindi implementando le interfacce <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> e <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
->  Altri tipi di tag possono essere implementati in modo simile.  
+> Altri tipi di tag possono essere implementati in modo simile.  
   
  Procedura dettagliata illustra come creare uno smart tag che viene visualizzato sulla parola corrente e ha due azioni consigliate: **Converti in maiuscolo** e **Convert in lettere minuscole**.  
   
@@ -183,4 +183,4 @@ Gli smart tag sono deprecati e sono stati sostituiti dai menu Lampadina. Vedere 
 5. Quando si fa clic sul pulsante, dovrebbero essere visualizzate due azioni consigliate: **Converti in maiuscolo** e **Convert in lettere minuscole**. Se si fa clic sulla prima azione, tutto il testo nella parola corrente verrà convertito in maiuscole. Se si fa clic sulla seconda azione, tutto il testo nella parola corrente verrà convertito in minuscole.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

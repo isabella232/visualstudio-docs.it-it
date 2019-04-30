@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436479"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerazioni sulla sicurezza specifiche per le soluzioni Office
   Le funzionalità di sicurezza fornite da Microsoft .NET Framework e Microsoft Office consentono di proteggere le soluzioni Office da potenziali rischi di sicurezza. Questo argomento illustra alcuni di tali rischi e fornisce suggerimenti utili su come proteggersi. Sono incluse anche informazioni su come le impostazioni di sicurezza di Microsoft Office possono influire sulle soluzioni Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081320"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Se Outlook viene usato con Exchange, il fatto che tutti gli oggetti Outlook siano ottenuti da `ThisAddIn.Application` non garantisce che il componente aggiuntivo VSTO riuscirà ad accedere al modello a oggetti di Outlook completo. Ad esempio, se un amministratore di Exchange imposta Outlook in modo che vengano respinti tutti i tentativi di accedere alle informazioni di indirizzo usando il modello a oggetti, Outlook non consentirà l'esempio di codice precedente accedere alla proprietà To, anche se il codice Usa il trusted `ThisAddIn.Application` campo.
+> Se Outlook viene usato con Exchange, il fatto che tutti gli oggetti Outlook siano ottenuti da `ThisAddIn.Application` non garantisce che il componente aggiuntivo VSTO riuscirà ad accedere al modello a oggetti di Outlook completo. Ad esempio, se un amministratore di Exchange imposta Outlook in modo che vengano respinti tutti i tentativi di accedere alle informazioni di indirizzo usando il modello a oggetti, Outlook non consentirà l'esempio di codice precedente accedere alla proprietà To, anche se il codice Usa il trusted `ThisAddIn.Application` campo.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Specificare quali componenti aggiuntivi da considerare attendibile quando si usa Exchange
  Quando si usa Outlook con Exchange, gli amministratori possono specificare che per determinati componenti aggiuntivi è consentita l'esecuzione senza la protezione del modello a oggetti. I componenti aggiuntivi di Outlook creati usando le soluzioni Office in Visual Studio non possono essere considerati attendibili singolarmente, ma attendibili solo come gruppo.

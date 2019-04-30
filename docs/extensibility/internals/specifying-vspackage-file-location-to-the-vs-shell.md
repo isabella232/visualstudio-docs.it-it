@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428916"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Definizione del percorso di file VSPackage nella shell di Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve essere in grado di individuare l'assembly DLL per caricare il pacchetto VSPackage. È possibile individuarlo in vari modi, come descritto nella tabella seguente.
@@ -29,4 +29,4 @@ ms.locfileid: "59664229"
 | Collocare la DLL nel **PublicAssemblies** directory. | Infine, l'assembly può anche essere inserito nel **PublicAssemblies** sottodirectory. Gli assembly che si trovano **PublicAssemblies** vengono automaticamente rilevati e vengono visualizzate anche nel **aggiungere i riferimenti** nella finestra di dialogo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Gli assembly VSPackage devono essere posizionati solo nel **PublicAssemblies** directory se contengono i componenti destinati a essere riutilizzato da altri sviluppatori VSPackage gestiti. La maggior parte degli assembly non soddisfano questo criterio. |
 
 > [!NOTE]
->  Usare gli assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono anche essere installati nella global assembly cache (GAC) o la propria directory. Ciò consente di evitare conflitti con gli assembly con lo stesso nome di file di base, noto come associazione di "Weak"-name.
+> Usare gli assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono anche essere installati nella global assembly cache (GAC) o la propria directory. Ciò consente di evitare conflitti con gli assembly con lo stesso nome di file di base, noto come associazione di "Weak"-name.

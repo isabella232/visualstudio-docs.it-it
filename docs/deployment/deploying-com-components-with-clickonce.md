@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406632"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Distribuire componenti COM con ClickOnce
 Distribuzione di componenti COM legacy è tradizionalmente difficile. I componenti devono essere registrati a livello globale e pertanto possono causare effetti collaterali indesiderati applicazioni sovrapposte. Questa situazione non è in genere un problema in applicazioni .NET Framework perché i componenti sono completamente isolati a un'applicazione o sono compatibili con side-by-side. Visual Studio consente di distribuire i componenti COM isolati nel Windows XP o versioni successive del sistema operativo.
@@ -62,7 +62,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
 2. Nel **nuovo progetto** finestra di dialogo, seleziona la **Visual Basic** nodo e selezionare un **DLL ActiveX** progetto. Nella casella **Nome** digitare `VB6Hello`.
 
     > [!NOTE]
-    >  Sono supportati solo i tipi di progetto DLL ActiveX e il controllo ActiveX con COM senza registrazione. Tipi di progetto EXE ActiveX e il documento ActiveX non sono supportati.
+    > Sono supportati solo i tipi di progetto DLL ActiveX e il controllo ActiveX con COM senza registrazione. Tipi di progetto EXE ActiveX e il documento ActiveX non sono supportati.
 
 3. Nelle **Esplora soluzioni**, fare doppio clic su **Class1.vb** per aprire l'editor di testo.
 
@@ -77,7 +77,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
 5. Compilare il componente. Dal **compilare** menu, fare clic su **Compila soluzione**.
 
 > [!NOTE]
->  COM senza registrazione supporta solo le DLL e controlla i tipi di progetto di COM. È possibile usare file eseguibili con COM senza registrazione.
+> COM senza registrazione supporta solo le DLL e controlla i tipi di progetto di COM. È possibile usare file eseguibili con COM senza registrazione.
 
  A questo punto è possibile creare un'applicazione basata su Windows e aggiungervi un riferimento al componente COM.
 
@@ -125,7 +125,7 @@ Distribuzione di componenti COM legacy è tradizionalmente difficile. I componen
    A questo punto, quando si preme F5, l'applicazione funzionerà come previsto, ma ora è in esecuzione in COM senza registrazione. Per dimostrare questo, provare l'annullamento della registrazione del componente VB6Hello e in esecuzione RegFreeComDemo1.exe di fuori di IDE di Visual Studio. Questa volta quando viene scelto il pulsante, continuerà a funzionare. Se si rinomina temporaneamente il manifesto dell'applicazione, anche in questo caso non riuscirà.
 
 > [!NOTE]
->  È possibile simulare l'assenza di un componente COM annullarne temporaneamente. Aprire un prompt dei comandi, passare alla cartella di sistema digitando `cd /d %windir%\system32`, quindi annullare la registrazione del componente digitando `regsvr32 /u VB6Hello.dll`. È possibile registrarlo nuovamente digitando `regsvr32 VB6Hello.dll`.
+> È possibile simulare l'assenza di un componente COM annullarne temporaneamente. Aprire un prompt dei comandi, passare alla cartella di sistema digitando `cd /d %windir%\system32`, quindi annullare la registrazione del componente digitando `regsvr32 /u VB6Hello.dll`. È possibile registrarlo nuovamente digitando `regsvr32 VB6Hello.dll`.
 
  Il passaggio finale consiste nel pubblicare l'applicazione usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 

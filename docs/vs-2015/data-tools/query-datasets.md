@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425365"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
  All'interno di un set di dati, i nomi di tabella e colonna sono tra maiuscole e minuscole per impostazione predefinita, vale a dire, una tabella in un set di dati denominato "Customers" può anche essere indicata come "customers". Ciò corrisponde alle convenzioni di denominazione in molti database, tra cui SQL corrispondenza del server di SQL Server, il comportamento predefinito prevede che i nomi degli elementi di dati non possono essere rilevati solo nel caso.  
   
 > [!NOTE]
->  A differenza dei set di dati, documenti XML sono tra maiuscole e minuscole, pertanto i nomi di elementi dati definiti in schemi sono tra maiuscole e minuscole. Ad esempio, del protocollo, lo schema definire una tabella denominata "Customers" e un'altra tabella denominata "customers". Ciò può comportare conflitti di nomi quando uno schema che contiene gli elementi che differiscono solo per i casi viene utilizzato per generare una classe di set di dati.  
+> A differenza dei set di dati, documenti XML sono tra maiuscole e minuscole, pertanto i nomi di elementi dati definiti in schemi sono tra maiuscole e minuscole. Ad esempio, del protocollo, lo schema definire una tabella denominata "Customers" e un'altra tabella denominata "customers". Ciò può comportare conflitti di nomi quando uno schema che contiene gli elementi che differiscono solo per i casi viene utilizzato per generare una classe di set di dati.  
   
  Distinzione maiuscole/minuscole, tuttavia, può rappresentare un fattore in modalità di interpretazione dei dati all'interno del set di dati. Ad esempio, se si filtrano i dati in una tabella di set di dati, i criteri di ricerca potrebbero restituire risultati diversi a seconda che il confronto sia tra maiuscole e minuscole. È possibile controllare la distinzione maiuscole/minuscole del filtro, la ricerca e ordinamento impostando il set di dati <xref:System.Data.DataSet.CaseSensitive%2A> proprietà. Per impostazione predefinita, tutte le tabelle nel set di dati ereditano il valore di questa proprietà. (È possibile eseguire l'override di questa proprietà per ogni tabella tramite l'impostazione della tabella <xref:System.Data.DataTable.CaseSensitive%2A> proprietà.)  
   

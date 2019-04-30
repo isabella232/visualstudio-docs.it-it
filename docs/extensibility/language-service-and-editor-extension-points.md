@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ec010680a490d538b1cdbe6d3994f075adaf193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4df68cc8a1f9271b43de59b7196e61ab82cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430994"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Punti di estensione del servizio e l'editor di linguaggio
 L'editor fornisce punti di estensione che è possibile estendere come parti componente Managed Extensibility Framework (MEF), tra cui la maggior parte delle funzionalità del servizio linguaggio. Ecco le categorie di punto di estensione principale:
@@ -113,7 +113,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Per associare un tipo di contenuto con un'estensione di file, usare <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.
 
 > [!NOTE]
->  In Visual Studio, estensioni di file registrate mediante il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> a un pacchetto del servizio di linguaggio. Il <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa un tipo di contenuto MEF con un'estensione che è stata registrata in questo modo.
+> In Visual Studio, estensioni di file registrate mediante il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> a un pacchetto del servizio di linguaggio. Il <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa un tipo di contenuto MEF con un'estensione che è stata registrata in questo modo.
 
  Per esportare l'estensione alla definizione del tipo di contenuto, è necessario includere gli attributi seguenti:
 
@@ -269,7 +269,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associata a un'area di controllo.
 
   > [!NOTE]
-  >  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).
+  > Per un esempio di un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, vedere la definizione di HighlightWordTag nella [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associati con aree che possono essere espansi o compressi nella struttura.
 
@@ -315,7 +315,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Per applicare la definizione del formato di un tag, fare riferimento al nome che è impostato nell'attributo nome della classe (non il nome visualizzato).
 
 > [!NOTE]
->  Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).
+> Per un esempio di un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, vedere la classe HighlightWordFormatDefinition in [procedura dettagliata: Evidenziazione del testo](../extensibility/walkthrough-highlighting-text.md).
 
 ## <a name="extend-adornments"></a>Estendere le aree di controllo
  Le aree di controllo definiscono gli effetti visivi che possono essere aggiunti al testo che viene visualizzato in una visualizzazione di testo o al testo della visualizzazione stessa. È possibile definire la propria area di controllo come qualsiasi tipo di <xref:System.Windows.UIElement>.
@@ -507,7 +507,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
 
  Inoltre, è necessario implementare un provider dello stesso tipo:
 
@@ -520,7 +520,7 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> è stato deprecato in favore di <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
 
  È necessario esportare il provider con gli attributi seguenti:
 

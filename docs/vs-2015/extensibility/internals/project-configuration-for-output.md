@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443876"
 ---
 # <a name="project-configuration-for-output"></a>Configurazione del progetto per l'output
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Ogni configurazione può supportare un set di processi di compilazione che gener
  Il costrutto sviluppato implementando `IVsOutputGroup` consente ai progetti di raggruppare gli output in base all'utilizzo. Ad esempio, una DLL può essere raggruppata con il database di programma (PDB).  
   
 > [!NOTE]
->  Un file PDB contiene le informazioni di debug e viene creata quando l'opzione 'Genera informazioni di Debug' è specificata quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato per la configurazione di progetto di Debug solo.  
+> Un file PDB contiene le informazioni di debug e viene creata quando l'opzione 'Genera informazioni di Debug' è specificata quando si compila il file DLL o .exe. Il file con estensione PDB viene in genere generato per la configurazione di progetto di Debug solo.  
   
  Il progetto deve restituire lo stesso numero di gruppi per ogni configurazione supportata, anche se il numero degli output contenute all'interno di un gruppo può variare da una configurazione alla configurazione. Ad esempio, Matt del progetto DLL potrebbe includere mattd.dll e mattd.pdb nella configurazione di Debug, ma solo includere matt.dll nella configurazione delle vendite al dettaglio.  
   

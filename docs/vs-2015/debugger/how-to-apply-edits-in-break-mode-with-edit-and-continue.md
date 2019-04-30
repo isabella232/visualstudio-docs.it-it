@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437351"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedura: Applicare modifiche in modalità di interruzione con modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "60069926"
      Per altre informazioni, vedere [modifiche non supportate in Visual Basic modifica e continuazione](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
-    >  Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
+    > Se si tenta di apportare una modifica non consentita da Modifica e continuazione, la modifica verrà contrassegnata con una riga ondulata di colore viola e nell'Elenco attività verrà indicata un'attività da eseguire. Per poter proseguire l'esecuzione del codice, è necessario annullare la modifica non valida del codice.  
   
 3. Scegliere **Continua** dal menu **Debug** per riprendere l'esecuzione.  
   

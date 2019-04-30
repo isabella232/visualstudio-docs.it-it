@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434139"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097076"
 È possibile usare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma per modificare, eseguire il debug e distribuire codice iOS al simulatore iOS o a un dispositivo iOS. Tuttavia, a causa di restrizioni di licenza, il codice deve essere compilato ed eseguito in modalità remota su Mac. Per compilare ed eseguire le app iOS usando Visual Studio, è necessario installare e configurare l'agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), sul Mac. L'agente remoto gestisce le richieste di compilazione da parte di Visual Studio ed esegue l'app su un dispositivo iOS connesso a Mac o nel simulatore iOS su Mac.  
   
 > [!NOTE]
->  Per informazioni sull'uso dei servizi di Mac ospitati nel cloud anziché su Mac, vedere [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Le istruzioni riguardano la compilazione con Visual Studio Tools per Apache Cordova. Per usare le istruzioni per compilare con Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma, sostituire l'agente vcremote per vs-mda-remote.  
+> Per informazioni sull'uso dei servizi di Mac ospitati nel cloud anziché su Mac, vedere [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Le istruzioni riguardano la compilazione con Visual Studio Tools per Apache Cordova. Per usare le istruzioni per compilare con Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma, sostituire l'agente vcremote per vs-mda-remote.  
   
  Dopo aver installato gli strumenti per la compilazione con iOS, consultare questo argomento per informazioni su come configurare e aggiornare rapidamente l'agente remoto per lo sviluppo di iOS in Visual Studio e sul Mac.  
   
@@ -93,7 +93,7 @@ ms.locfileid: "60097076"
    Durante l'installazione, l'agente vcremote viene installato e nel Mac viene attivata la modalità sviluppatore. Vengono anche installati[Homebrew](http://brew.sh/) e due pacchetti npm, vcremote-lib e vcremote-utils.  
   
   > [!NOTE]
-  >  Per installare Homebrew, è necessario l'accesso a sudo (amministratore). Se occorre installare vcremote senza sudo, è possibile installare Homebrew manualmente in un percorso usr/local e aggiungere la relativa cartella bin al percorso. Per altre informazioni, vedere la [documentazione di Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Per abilitare manualmente la modalità sviluppatore, immettere questo comando nell'app Terminal: `DevToolsSecurity –enable`  
+  > Per installare Homebrew, è necessario l'accesso a sudo (amministratore). Se occorre installare vcremote senza sudo, è possibile installare Homebrew manualmente in un percorso usr/local e aggiungere la relativa cartella bin al percorso. Per altre informazioni, vedere la [documentazione di Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Per abilitare manualmente la modalità sviluppatore, immettere questo comando nell'app Terminal: `DevToolsSecurity –enable`  
   
   Se il computer è stato aggiornato a una nuova versione di Visual Studio, è necessario aggiornare anche la versione corrente dell'agente remoto. Per aggiornare l'agente remoto, ripetere i passaggi per scaricare e installare l'agente remoto.  
   
@@ -154,7 +154,7 @@ ms.locfileid: "60097076"
 5. Nei campi **Nome host** , e **Porta** immettere i valori specificati dall'agente remoto quando è stato avviato. Il nome host può essere il nome DNS o l'indirizzo IP del Mac. Il numero di porta predefinito è 3030.  
   
    > [!NOTE]
-   >  Se non è possibile effettuare il ping del Mac con il nome host, potrebbe essere necessario usare l'indirizzo IP.  
+   > Se non è possibile effettuare il ping del Mac con il nome host, potrebbe essere necessario usare l'indirizzo IP.  
   
 6. Se si usa l'agente remoto nella modalità di connessione protetta predefinita, selezionare la casella di controllo **Proteggi** , quindi immettere il valore PIN specificato dall'agente in remoto nel campo **Pin** . Se si usa l'agente remoto in modalità di connessione non protetta, deselezionare la casella di controllo **Proteggi** e lasciare il campo **Pin** .  
   

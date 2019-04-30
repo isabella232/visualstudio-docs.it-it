@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433682"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Finestra di dialogo Opzioni, Progetti e soluzioni, Compila ed esegui
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ In questa finestra di dialogo, è possibile specificare il numero massimo di pro
   
  **Durante l'esecuzione, quando i progetti non sono aggiornati**  
  > [!NOTE]
->  Questo elenco si applica solo ai progetti [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Questo elenco si applica solo ai progetti [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Per impostazione predefinita viene visualizzato un messaggio se una configurazione del progetto non è aggiornata quando si preme il tasto F5 o si sceglie **Debug**, **Avvia** nella barra dei menu. È possibile specificare se generare comunque il progetto e se viene visualizzato il messaggio. Usare questa opzione per specificare se viene visualizzato il messaggio e quale deve essere il comportamento di compilazione se non viene visualizzato il messaggio.  
   
@@ -54,7 +54,7 @@ In questa finestra di dialogo, è possibile specificare il numero massimo di pro
  Se si verificano errori di compilazione quando si avvia una compilazione dal menu **Compila**, viene visualizzato un messaggio. È possibile specificare se continuare avviando l'applicazione e se il messaggio viene visualizzato ogni volta che si verificano errori di compilazione. Usare questa opzione per specificare se viene visualizzato il messaggio e quale deve essere il comportamento se non viene visualizzato il messaggio.  
   
 > [!NOTE]
->  Questa opzione si applica solo ai progetti [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Questa opzione si applica solo ai progetti [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  **Richiedi avvio**  
  Mostra una finestra di messaggio ogni volta che si verificano errori di compilazione.  
@@ -73,7 +73,7 @@ In questa finestra di dialogo, è possibile specificare il numero massimo di pro
   
  **Livello di dettaglio file di log di compilazione progetto MSBuild**  
  > [!NOTE]
->  Questa opzione si applica solo ai progetti Visual C++.  
+> Questa opzione si applica solo ai progetti Visual C++.  
   
  Determina la quantità di informazioni scritta nel file di log di compilazione che si trova in \\...\\*ProjectName*\Debug\\*ProjectName*.log.  
   

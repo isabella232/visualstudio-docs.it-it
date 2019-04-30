@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438988"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Progetto SharePoint e i modelli di progetto
   Le sezioni seguenti descrivono il progetto SharePoint disponibili e i modelli e come vengono usati di elemento di progetto.
@@ -80,7 +80,7 @@ ms.locfileid: "60040338"
  *Tipo di contenuto* elementi consentono di creare tipi di contenuto personalizzati basati su un tipo di contenuto (base), ad esempio un documento, un annuncio o un'attività. Un tipo di contenuto personalizzato offre gli stessi attributi e i campi come tipo di contenuto base insieme a tutte le colonne del sito (campi) si definisce. Ad esempio, è possibile creare un tipo di contenuto contatto personalizzato basato sul tipo di base contatto contenuto è disponibile in SharePoint. È possibile personalizzare il tipo di contenuto modificando le colonne del sito esistente o aggiungendo ulteriori colonne del sito a quelli già inclusi nel tipo di contenuto base.
 
 > [!NOTE]
->  A causa di una limitazione di SharePoint, è possibile creare un tipo di contenuto soluzioni farm basato sul tipo di contenuto di una soluzione creata mediante sandbox.
+> A causa di una limitazione di SharePoint, è possibile creare un tipo di contenuto soluzioni farm basato sul tipo di contenuto di una soluzione creata mediante sandbox.
 
  Per altre informazioni, vedere [Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [blocco predefinito: Tipo di contenuto](http://go.microsoft.com/fwlink/?LinkId=179413).
 

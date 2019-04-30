@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440126"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Recuperare le informazioni di colore per la colorazione del testo e del tipo di carattere
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Il processo che esegue il rendering o Visualizza colorato testo negli elementi d
  La maggior parte delle implementazioni che visualizzano testo colorato necessario il `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` e associate le interfacce per la presentazione, recuperare e archiviare il testo delle impostazioni di visualizzazione.  
   
 > [!NOTE]
->  Quando si personalizza l'editor principale (che supporta il **EditorCategory testo**), è consigliabile usare la tecnologia di colorazione del servizio di linguaggio. Per altre informazioni, vedere [tipo di carattere e colore Panoramica](../extensibility/font-and-color-overview.md).  
+> Quando si personalizza l'editor principale (che supporta il **EditorCategory testo**), è consigliabile usare la tecnologia di colorazione del servizio di linguaggio. Per altre informazioni, vedere [tipo di carattere e colore Panoramica](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Recuperare le informazioni di colore e tipo di carattere predefinito  
  Tutti i **i tipi di carattere e colori** le impostazioni di qualsiasi finestra di visualizzazione di testo devono essere specificate nel **elementi visualizzati** di uno **categoria**. Per altre informazioni, vedere [Fonts and Colors, Environment, Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  

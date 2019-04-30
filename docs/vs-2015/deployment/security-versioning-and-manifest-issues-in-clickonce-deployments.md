@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444983"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Sono disponibili un'ampia gamma di problemi relativi alla [!INCLUDE[ndptecclick]
  Se si desidera spostare o copiare un'applicazione, è necessario aggiornare anche il `deploymentProvider` percorso, in modo che il client esegua effettivamente l'installazione dalla nuova posizione. L'aggiornamento di questo percorso è principalmente un problema se si sono installate le applicazioni. Per le applicazioni online che vengono sempre avviate tramite l'URL originale, impostare il `deploymentProvider` è facoltativo. Se `deploymentProvider` è impostato, verrà rispettata; in caso contrario, l'URL usato per avviare l'applicazione verrà utilizzato come URL di base per scaricare i file dell'applicazione.  
   
 > [!NOTE]
->  Ogni volta che si aggiorna il manifesto è necessario inoltre firmarlo nuovamente.  
+> Ogni volta che si aggiorna il manifesto è necessario inoltre firmarlo nuovamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi di distribuzioni ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

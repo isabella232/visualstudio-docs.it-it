@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433321"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
  Modificare il file con estensione dgml della mappa di codice in un editor di testo o XML. Se la mappa fa parte della soluzione di Visual Studio, selezionarla nel **Esplora soluzioni**, aprire il menu di scelta rapida e scegliere **Apri con**, **Editor XML (testo)**.  
   
 > [!NOTE]
->  Per creare mappe codice, è necessario usare Visual Studio Enterprise. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.  
+> Per creare mappe codice, è necessario usare Visual Studio Enterprise. Quando si modifica una mappa di codice in Visual Studio, viene eseguita la rimozione di tutti gli attributi e gli elementi DGML inutilizzati che vengono eliminati quando si salva il file con estensione dgml. Vengono anche creati automaticamente elementi di codice quando si aggiungono manualmente nuovi collegamenti. Quando si salva il file con estensione dgml, tutti gli attributi aggiunti a un elemento si ridispongono in ordine alfabetico.  
   
 ## <a name="OrganizeNodes"></a> Raggruppare elementi di codice  
  È possibile aggiungere nuovi gruppi o convertire i nodi esistenti in un gruppo.  
@@ -120,7 +120,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
 - Gruppi di elementi di codice e collegamenti in base a determinate condizioni  
   
 > [!TIP]
->  Se sono presenti stili ripetuti in molti elementi di codice o collegamenti, è possibile applicare una categoria quegli elementi di codice oppure ai collegamenti e quindi applicare uno stile a quella categoria. Per altre informazioni, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories) e [assegnare proprietà a elementi di codice e collegamenti](#AssignProperties).  
+> Se sono presenti stili ripetuti in molti elementi di codice o collegamenti, è possibile applicare una categoria quegli elementi di codice oppure ai collegamenti e quindi applicare uno stile a quella categoria. Per altre informazioni, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories) e [assegnare proprietà a elementi di codice e collegamenti](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Per applicare uno stile personalizzato a un singolo elemento di codice  
   
@@ -558,7 +558,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.  
   
 > [!CAUTION]
->  Se si utilizzano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.  
+> Se si utilizzano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.  
   
  Ad esempio, è possibile collegare i seguenti elementi di codice:  
   
@@ -583,7 +583,7 @@ Per personalizzare una mappa di codice, è possibile modificare il file Directed
    - Nell'elemento `<Node/>` o `<Link/>` aggiungere un attributo `Reference` per specificare la posizione dell'elemento di codice.  
   
      > [!NOTE]
-     >  È possibile specificare un solo attributo `Reference` per elemento.  
+     > È possibile specificare un solo attributo `Reference` per elemento.  
   
      Ad esempio:  
   

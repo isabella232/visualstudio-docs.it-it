@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7f0cd04b054d51119f6f6c1b0275c4f781656bff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438308"
 ---
 # <a name="how-to-edit-a-register-value"></a>Procedura: Modificare un valore di registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,10 +42,10 @@ La finestra Registri è disponibile solo se il debug a livello di indirizzo è s
 2. Digitare il nuovo valore.  
   
     > [!CAUTION]
-    >  La modifica dei valori di registro, soprattutto per i registri EIP ed EBP, può avere effetto sull'esecuzione del programma.  
+    > La modifica dei valori di registro, soprattutto per i registri EIP ed EBP, può avere effetto sull'esecuzione del programma.  
   
     > [!CAUTION]
-    >  La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può generare modifiche in alcuni dei bit meno significativi in un registro a virgola mobile.  
+    > La modifica di valori a virgola mobile può causare lievi inesattezze dovute alla conversione dei componenti frazionari da decimali a binari. Anche una modifica apparentemente innocua può generare modifiche in alcuni dei bit meno significativi in un registro a virgola mobile.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Usare la finestra Registri](../debugger/how-to-use-the-registers-window.md)

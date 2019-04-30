@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431105"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizzazione di eventi EventSource come marcatori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
  Usare il campo cvSpanId, un valore int, per associare coppie di eventi. Il valore per ogni coppia di eventi di inizio/fine che rappresentano una sezione span deve essere univoco. In genere, per il codice simultaneo è necessario usare a questo scopo primitive di sincronizzazione, come <xref:System.Threading.Interlocked.Exchange%2A>, per garantire che la chiave (il valore usato per CvSpanID) sia corretta.  
   
 > [!NOTE]
->  L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.  
+> L'uso di SpanID per annidare sezioni span, consentirne la parziale sovrapposizione nello stesso thread o consentirne l'inizio in un thread e la fine in un altro non è supportato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Marcatori del visualizzatore di concorrenza](../profiling/concurrency-visualizer-markers.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431145"
 ---
 # <a name="datacontext-methods-or-designer"></a>Metodi DataContext (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  I metodi <xref:System.Data.Linq.DataContext> con mapping a stored procedure e funzioni vengono visualizzati nel riquadro dei metodi di [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Il riquadro dei metodi è il riquadro lungo il lato del **entità** riquadro (l'area di progettazione principale). Il riquadro dei metodi sono elencati tutti <xref:System.Data.Linq.DataContext> metodi che è stato creato con il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Per impostazione predefinita, il riquadro dei metodi è vuoto. Trascinare le stored procedure o funzioni da **Esplora Server**/**Esplora Database** nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] creare <xref:System.Data.Linq.DataContext> metodi e popolare il riquadro dei metodi. Per altre informazioni, vedere [Procedura: Creare metodi DataContext mappati a stored procedure e funzioni (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).  
   
 > [!NOTE]
->  Aprire e chiudere il riquadro dei metodi facendo clic con il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e quindi scegliendo **Nascondi riquadro metodi** o **Mostra riquadro metodi**, oppure utilizzare il tasto di scelta rapida CTRL + 1.  
+> Aprire e chiudere il riquadro dei metodi facendo clic con il [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] e quindi scegliendo **Nascondi riquadro metodi** o **Mostra riquadro metodi**, oppure utilizzare il tasto di scelta rapida CTRL + 1.  
   
 ## <a name="two-types-of-datacontext-methods"></a>Due tipi di metodi DataContext  
  I metodi DataContext sono metodi con mapping a stored procedure e funzioni nel database. È possibile creare e aggiungere metodi DataContext nel riquadro dei metodi di [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Esistono due tipi distinti di metodi <xref:System.Data.Linq.DataContext>: quelli che restituiscono uno o più set di risultati e quelli che non restituiscono alcun set di risultati:  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  Quando si trascinano stored procedure e funzioni dal **Esplora Server**/**Esplora Database** nel [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], il tipo restituito dell'oggetto generato <xref:System.Data.Linq.DataContext> differisce (metodo) a seconda della posizione in cui si rilascia l'elemento. Eliminazione degli elementi direttamente in una classe di entità esistente crea un <xref:System.Data.Linq.DataContext> metodo con il tipo restituito della classe di entità; rilascio degli elementi in un'area vuota del [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (in dei riquadri) crea un <xref:System.Data.Linq.DataContext> metodo che restituisce un tipo generato automaticamente. Questo tipo creato è dotato di un nome corrispondente a quello della stored procedure o funzione e di proprietà con mapping ai campi restituiti dalla stored procedure o funzione.  
   
 > [!NOTE]
->  È possibile modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> dopo averlo aggiunto al riquadro dei metodi. Per controllare o modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext>, selezionarlo e controllare la proprietà **Return Type** nella finestra **Proprietà**. Per altre informazioni, vedere [Procedura: Modificare il tipo restituito di un metodo DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+> È possibile modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext> dopo averlo aggiunto al riquadro dei metodi. Per controllare o modificare il tipo restituito di un metodo <xref:System.Data.Linq.DataContext>, selezionarlo e controllare la proprietà **Return Type** nella finestra **Proprietà**. Per altre informazioni, vedere [Procedura: Modificare il tipo restituito di un metodo DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
  Gli oggetti trascinati dal database nell'area Progettazione relazionale oggetti vengono denominati automaticamente, in base al nome degli oggetti nel database. Se si trascina più volte lo stesso oggetto, i vari nomi vengono distinti grazie all'aggiunta di un numero alla fine del nuovo nome. Se i nomi degli oggetti di database contengono spazi o caratteri non supportati in Visual Basic o C#, lo spazio o il carattere non valido viene sostituito con un carattere di sottolineatura.  
   

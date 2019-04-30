@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423819"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 L'elenco delle configurazioni di soluzione per una determinata soluzione viene gestito dalla finestra di dialogo configurazioni di soluzione.
@@ -26,7 +26,7 @@ L'elenco delle configurazioni di soluzione per una determinata soluzione viene g
  Se l'utente crea una nuova configurazione di soluzione denominata MyConfig2, Project1 associa la configurazione di Debug per la configurazione della soluzione per impostazione predefinita. Project2 associa anche la relativa configurazione MyConfig2 per la configurazione della soluzione per impostazione predefinita.
 
 > [!NOTE]
->  L'associazione è tra maiuscole e minuscole.
+> L'associazione è tra maiuscole e minuscole.
 
  Quando l'utente seleziona il **la selezione multipla** elemento nell'elenco a discesa configurazione, l'ambiente consente di visualizzare una finestra di dialogo che fornisce l'elenco delle configurazioni disponibili.
 
@@ -43,7 +43,7 @@ L'elenco delle configurazioni di soluzione per una determinata soluzione viene g
  Dipendenze del progetto determinano l'ordine in cui compilare i progetti. Utilizzare la scheda di ordine di compilazione nella finestra di dialogo per visualizzare l'ordine esatto in cui i progetti all'interno di una soluzione di compilazione e utilizzare la scheda dipendenze per modificare l'ordine di compilazione.
 
 > [!NOTE]
->  I progetti nell'elenco sono selezionate le caselle di controllo, ma vengono visualizzate in grigio sono state aggiunte dall'ambiente a causa delle dipendenze esplicite specificato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfacce e non può essere modificato. Ad esempio, aggiungendo un riferimento al progetto da un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] progetto a un altro progetto aggiunge automaticamente una dipendenza di compilazione che può essere rimossi solo eliminando il riferimento. Non è possibile selezionare progetti cui caselle di controllo siano deselezionate e vengono visualizzate in grigio perché questa operazione creerebbe un ciclo di dipendenze (ad esempio Project1 sarebbe dipende Project2 e Project2 sarebbe dipende Project1), che verrebbe stallo la compilazione.
+> I progetti nell'elenco sono selezionate le caselle di controllo, ma vengono visualizzate in grigio sono state aggiunte dall'ambiente a causa delle dipendenze esplicite specificato dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> o il <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfacce e non può essere modificato. Ad esempio, aggiungendo un riferimento al progetto da un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] progetto a un altro progetto aggiunge automaticamente una dipendenza di compilazione che può essere rimossi solo eliminando il riferimento. Non è possibile selezionare progetti cui caselle di controllo siano deselezionate e vengono visualizzate in grigio perché questa operazione creerebbe un ciclo di dipendenze (ad esempio Project1 sarebbe dipende Project2 e Project2 sarebbe dipende Project1), che verrebbe stallo la compilazione.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i processi di compilazione includono la compilazione tipiche e le operazioni di collegamento che vengono richiamate con un singolo comando di compilazione. Due altri processi di compilazione possono anche essere supportate: un'operazione di pulizia per eliminare tutti gli elementi di output da una compilazione precedente e un controllo di aggiornamento per determinare se un elemento di output in una configurazione è stato modificato.
 

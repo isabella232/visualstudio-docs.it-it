@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445851"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizzazione di Esplora modelli
 È possibile modificare l'aspetto e il comportamento di esplorazione per la finestra di progettazione di linguaggio specifico di dominio come indicato di seguito:
@@ -59,7 +59,7 @@ ms.locfileid: "60058006"
     Esplora risorse dovrebbe mostrare tre **attore** nodi che dispongono dell'icona.
 
 > [!NOTE]
->  Se è stata impostata un'icona di nodo per qualsiasi elemento che viene visualizzato in Esplora generato, tutti i nodi di Esplora verranno visualizzata l'icona. Se non è stata impostata alcuna icona, i nodi visualizzerà l'icona predefinita.
+> Se è stata impostata un'icona di nodo per qualsiasi elemento che viene visualizzato in Esplora generato, tutti i nodi di Esplora verranno visualizzata l'icona. Se non è stata impostata alcuna icona, i nodi visualizzerà l'icona predefinita.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>La modifica del nome visualizzato su un nodo di Esplora
  È possibile modificare la modalità in cui vengono visualizzati i nomi degli elementi del modello in Esplora risorse. La procedura seguente viene illustrato come visualizzare il nome del **Task** che fa riferimento un **commento** nel nodo di commento.

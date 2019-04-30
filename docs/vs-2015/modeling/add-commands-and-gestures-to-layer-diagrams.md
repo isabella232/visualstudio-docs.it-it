@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444223"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Aggiunta di comandi e movimenti a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60079824"
  Se si vuole, è possibile definire gestori comandi e movimenti diversi nello stesso progetto di Visual Studio. È anche possibile combinare più progetti di questo tipo in un progetto VSIX. Ad esempio, è possibile definire un unico progetto VSIX che include comandi di livello, un linguaggio specifico di dominio e comandi per i diagrammi UML.  
   
 > [!NOTE]
->  È anche possibile personalizzare la convalida dell'architettura, in cui il codice sorgente dell'utente viene confrontato con diagrammi livello. È consigliabile definire la convalida dell'architettura in un progetto di Visual Studio separato. È possibile aggiungerlo allo stesso progetto VSIX come per le altre estensioni. Per altre informazioni, vedere [aggiungere la convalida architettura personalizzati a diagrammi livelli](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> È anche possibile personalizzare la convalida dell'architettura, in cui il codice sorgente dell'utente viene confrontato con diagrammi livello. È consigliabile definire la convalida dell'architettura in un progetto di Visual Studio separato. È possibile aggiungerlo allo stesso progetto VSIX come per le altre estensioni. Per altre informazioni, vedere [aggiungere la convalida architettura personalizzati a diagrammi livelli](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Requisiti  
  Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,7 +65,7 @@ ms.locfileid: "60079824"
 1. Creare un progetto di libreria di classi in una soluzione di Visual Studio nuova o esistente. Nella finestra di dialogo **Nuovo progetto** fare clic su **Visual C#** e quindi su **Libreria di classi**. Questo progetto conterrà le classi del gestore comandi o movimenti.  
   
     > [!NOTE]
-    >  È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.  
+    > È possibile definire più classi dei gestori comandi o movimenti in una stessa libreria di classi, ma è consigliabile definire le classi per la convalida dei livelli in una libreria di classi distinta.  
   
 2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:  
   

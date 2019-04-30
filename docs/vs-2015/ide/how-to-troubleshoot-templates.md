@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246ce82eef63559060c9c4ea4daabd3ae1e5a284
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435117"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedura: Problemi relativi ai modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Se un modello non viene caricato nell'ambiente di sviluppo, sono disponibili div
 5. Verificare che il codice XML del file con estensione vstemplate rispetti lo schema di modello [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni sullo schema del file con estensione vstemplate, vedere [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
-    >  Per ottenere il supporto IntelliSense durante la creazione del file con estensione vstemplate, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore http://schemas.microsoft.com/developer/vstemplate/2005.  
+    > Per ottenere il supporto IntelliSense durante la creazione del file con estensione vstemplate, aggiungere un attributo `xmlns` all'elemento `VSTemplate` e assegnare all'attributo il valore http://schemas.microsoft.com/developer/vstemplate/2005.  
   
 6. Salvare e chiudere il file vstemplate.  
   

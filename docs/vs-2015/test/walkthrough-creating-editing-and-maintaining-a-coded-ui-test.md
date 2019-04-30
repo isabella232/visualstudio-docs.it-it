@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428225"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procedura dettagliata: Creazione, modifica e gestione di un Test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 2. Creare un collegamento sul desktop all'applicazione SimpleWPFApp. Fare clic con il pulsante destro del mouse su SimpleWPFApp.exe e scegliere **Copia**. Sul desktop fare clic con il pulsante destro del mouse e scegliere **Incolla collegamento**.  
   
     > [!TIP]
-    >  Un collegamento all'applicazione rende più facile aggiungere o modificare i test codificati dell'interfaccia utente per l'applicazione, perché consente di avviare rapidamente l'applicazione.  
+    > Un collegamento all'applicazione rende più facile aggiungere o modificare i test codificati dell'interfaccia utente per l'applicazione, perché consente di avviare rapidamente l'applicazione.  
   
 3. In Esplora soluzioni fare clic con il pulsante destro del mouse sulla soluzione, scegliere **Aggiungi** e quindi **Nuovo progetto**.  
   
@@ -154,7 +154,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
      ![Sospensione della registrazione](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.  
+    > Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.  
   
 9. Avviare SimpleWPFApp usando il collegamento sul desktop.  
   
@@ -203,7 +203,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
 3. Per correggere questo problema, è possibile fare in modo che il test codificato dell'interfaccia utente attenda che il controllo CheckBox sia abilitato prima di continuare fino a questa riga usando il metodo `WaitForControlEnabled()`.  
   
     > [!WARNING]
-    >  Il file UIMap.Designer.cs non deve essere modificato. Qualsiasi modifica del codice apportata nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. Se è necessario modificare un metodo registrato, copiarlo nel file UIMap.cs e rinominarlo. Il file UIMap.cs può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file UIMapDesigner.cs. È necessario rimuovere il riferimento al metodo originale nel file Coded UITest.cs e sostituirlo con il nome del metodo rinominato.  
+    > Il file UIMap.Designer.cs non deve essere modificato. Qualsiasi modifica del codice apportata nel file UIMapDesigner.cs verrà sovrascritta ogni volta che si genera codice usando UIMap - Generatore di test codificati dell'interfaccia utente. Se è necessario modificare un metodo registrato, copiarlo nel file UIMap.cs e rinominarlo. Il file UIMap.cs può essere usato per eseguire l'override dei metodi e delle proprietà contenuti nel file UIMapDesigner.cs. È necessario rimuovere il riferimento al metodo originale nel file Coded UITest.cs e sostituirlo con il nome del metodo rinominato.  
   
 4. In Esplora soluzioni individuare **UIMap.uitest** nel progetto di test codificato dell'interfaccia utente.  
   
@@ -224,7 +224,7 @@ In questa procedura dettagliata verrà creata una semplice applicazione Windows 
      Gli aggiornamenti al metodo di test vengono salvati nel file UIMap.Designer.  
   
     > [!CAUTION]
-    >  Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice.  
+    > Una volta che è stato spostato il metodo, non è più possibile modificarlo tramite l'Editor test codificati dell'interfaccia utente. È necessario aggiungere il codice personalizzato e gestirlo usando l'editor del codice.  
   
 10. Rinominare il metodo `SimpleAppTest()` in `ModifiedSimpleAppTest()`.  
   

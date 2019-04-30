@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420681"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Visualizzare i file usando il comando Apri File
 I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che è disponibile nel **File** dal menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. I passaggi descrivono anche come i progetti devono rispondere alle chiamate provenienti da questo comando.
@@ -31,7 +31,7 @@ I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che 
     - Se il file non è aperto, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> per ogni progetto per determinare quale progetto è possibile aprire il file di query.
 
         > [!NOTE]
-        >  Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.
+        > Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.
 
 2. Ogni progetto risponde con un livello di priorità che indica l'importanza viene posizionato sul progetto aprire il file.
 

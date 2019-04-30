@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435336"
 ---
 # <a name="schema-cache"></a>Cache degli schemi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
  L'editor carica la directory della cache di schema quando il package editor XML viene caricato e verifica le eventuali modifiche durante l'esecuzione. Se è stato aggiunto uno schema, esso viene caricato automaticamente in un indice di schemi noti in memoria. Se è stato rimosso uno schema, esso viene automaticamente rimosso dall'indice in memoria. Se è stato aggiornato uno schema, esso invalida automaticamente la cache degli schemi in memoria.  
 
 > [!NOTE]
->  Poiché la directory della cache di schema è globale, è sufficiente aggiungere qui gli schemi standard utili per tutti i progetti di Visual Studio che è possibile creare sul proprio computer.  
+> Poiché la directory della cache di schema è globale, è sufficiente aggiungere qui gli schemi standard utili per tutti i progetti di Visual Studio che è possibile creare sul proprio computer.  
 
  L'editor XML supporta inoltre un numero illimitato di file del catalogo degli schemi nella directory della cache. Per i cataloghi degli schemi è possibile scegliere altre posizioni per gli schemi che si desidera tenere sempre ben presenti nell'editor. Il file catalog.xsd definisce il formato del file di catalogo ed è incluso nella directory della cache degli schemi. Il file catalog.xml è il catalogo predefinito e contiene collegamenti ad altri schemi nella %InstallDir%. Di seguito sono riportati esempi del file catalog.xml:  
 
@@ -105,7 +105,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallRoo
  È possibile personalizzare il percorso per la cache dello schema usando il **varie** pagina Opzioni. Se si dispone di una directory di schemi preferiti, è possibile configurare l'editor in modo da usare solo questi schemi.  
 
 > [!NOTE]
->  Tale modifica ha effetto solo sull'utente corrente di Visual Studio.  
+> Tale modifica ha effetto solo sull'utente corrente di Visual Studio.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Per modificare il percorso della cache degli schemi  
 

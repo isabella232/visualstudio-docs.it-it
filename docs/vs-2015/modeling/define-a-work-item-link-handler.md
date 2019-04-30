@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433123"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definire un gestore dei collegamenti agli elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Per scopi di test, eseguire il gestore di collegamenti in modalità di debug.  
   
 > [!WARNING]
->  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
+> Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
 #### <a name="to-test-the-link-handler"></a>Per testare il gestore di collegamenti  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Per far funzionare questo esempio, è necessario aggiungere un riferimento di progetto a `System.Drawing.dll` e importare lo spazio dei nomi `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Tuttavia, queste aggiunte non sono necessarie per altre implementazioni di `OnWorkItemLinked`.  
+> Per far funzionare questo esempio, è necessario aggiungere un riferimento di progetto a `System.Drawing.dll` e importare lo spazio dei nomi `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Tuttavia, queste aggiunte non sono necessarie per altre implementazioni di `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Attesa della rimozione di collegamenti  
  `OnWorkItemRemoved` viene chiamato una volta prima dell'eliminazione di ogni collegamento di elemento di lavoro. Se viene eliminato un elemento del modello, verranno rimossi tutti i relativi collegamenti.  

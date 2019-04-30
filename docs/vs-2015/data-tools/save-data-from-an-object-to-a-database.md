@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425054"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvare dati da un oggetto in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60074883"
  Per impostazione predefinita, i metodi DBDirect di vengono creati in un oggetto TableAdapter che può essere eseguito direttamente nel database. Questi metodi possono essere chiamati direttamente e non richiedono <xref:System.Data.DataSet> o <xref:System.Data.DataTable> oggetti da riconciliare le modifiche per inviare aggiornamenti a un database.  
   
 > [!NOTE]
->  Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per i metodi DBDirect da creare. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati da una tabella che non dispone di una colonna chiave primaria definita, non genera metodi DBDirect di.  
+> Quando si configura un oggetto TableAdapter, la query principale deve fornire informazioni sufficienti per i metodi DBDirect da creare. Ad esempio, se un oggetto TableAdapter è configurato per eseguire query sui dati da una tabella che non dispone di una colonna chiave primaria definita, non genera metodi DBDirect di.  
   
 |Metodo DBDirect di TableAdapter|Descrizione|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ ms.locfileid: "60074883"
 - Modificare i record chiamando il `TableAdapter.Update` (metodo), passando i nuovi valori per aggiornare il record e i valori originali per individuare il record.  
   
     > [!NOTE]
-    >  L'oggetto deve mantenere i valori originali per passarli al `Update` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  
+    > L'oggetto deve mantenere i valori originali per passarli al `Update` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  
   
      L'esempio seguente aggiorna un record esistente nel `Customers` tabella passando i valori nuovi e originali nel `Customer` dell'oggetto per il `TableAdapter.Update` (metodo).  
   
@@ -69,7 +69,7 @@ ms.locfileid: "60074883"
 - Eliminare i record chiamando il `TableAdapter.Delete` metodo e passando i valori originali per individuare il record.  
   
     > [!NOTE]
-    >  L'oggetto deve mantenere i valori originali per passarli al `Delete` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  
+    > L'oggetto deve mantenere i valori originali per passarli al `Delete` (metodo). Questo esempio Usa le proprietà con un `orig` prefisso per archiviare i valori originali.  
   
      L'esempio seguente elimina un record dal `Customers` passando i valori originali nella tabella di `Customer` dell'oggetto per il `TableAdapter.Delete` (metodo).  
   

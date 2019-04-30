@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429219"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procedura: Personalizzare una funzionalità SharePoint
   È possibile creare e personalizzare le funzionalità di SharePoint usando la finestra di progettazione di funzionalità in Visual Studio. Ad esempio, è possibile impostare l'ambito di funzionalità e aggiungere altre funzionalità come dipendenze. Per impostazione predefinita, la finestra di progettazione di funzionalità viene aperto quando si aggiunge una nuova funzionalità in Esplora soluzioni o Esplora pacchetti di SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067261"
 2. Espandere le funzionalità espandere FeatureName, espandere FeatureName.feature e quindi aprire il  *\<FeatureName >. Template* file.
 
     > [!NOTE]
-    >  Quando si apre il file XML manifesto di funzionalità modello, i file vengono convalidati automaticamente e possono essere ignorati gli avvisi visualizzati nella finestra Elenco errori.
+    > Quando si apre il file XML manifesto di funzionalità modello, i file vengono convalidati automaticamente e possono essere ignorati gli avvisi visualizzati nella finestra Elenco errori.
 
 ## <a name="change-the-manifest-template"></a>Modificare il modello di manifesto
  È possibile modificare il codice XML per il file manifesto della funzionalità nell'Editor XML di Visual Studio o nel riquadro modello di manifesto. Tutte le modifiche al codice XML viene unito al file manifesto nel pacchetto per la funzionalità. Ad esempio, è possibile modificare il modello di manifesto per personalizzare una proprietà della funzionalità.
@@ -70,7 +70,7 @@ ms.locfileid: "60067261"
  È possibile disabilitare la finestra di progettazione di funzionalità e creare il *feature. XML* file manualmente. La prima volta che si esegue questa procedura, vengono salvate le impostazioni correnti nella finestra di progettazione di funzionalità al file XML del modello di funzione. Quindi, è possibile modificare o sovrascrivere il codice XML.
 
 > [!NOTE]
->  Se si aggiunge o rimuove elementi di progetto SharePoint nel file XML, mentre la finestra di progettazione di funzionalità è disabilitata, questi elementi di progetto non sono inclusi nel pacchetto.
+> Se si aggiunge o rimuove elementi di progetto SharePoint nel file XML, mentre la finestra di progettazione di funzionalità è disabilitata, questi elementi di progetto non sono inclusi nel pacchetto.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Per sovrascrivere il file manifesto, disabilitare la finestra di progettazione
 

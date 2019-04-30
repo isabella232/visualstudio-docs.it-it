@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441046"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedura: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "60110325"
    - Selezionare un progetto o una soluzione per visualizzare un elenco delle modifiche che lo strumento.  
   
        > [!NOTE]
-       >  Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.  
+       > Le caselle di controllo da visualizzare accanto ai nomi di cartella non hanno alcun effetto. È necessario espandere le cartelle per ispezionare i progetti e soluzioni.  
   
 4. Convertire i progetti.  
   
@@ -78,7 +78,7 @@ ms.locfileid: "60110325"
    2. Scegliere il **Trasforma tutti i modelli** pulsante nell'intestazione di Esplora soluzioni.  
   
        > [!NOTE]
-       >  È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > È possibile rendere questo passaggio non necessari. Per altre informazioni, vedere [come automatizzare Trasforma tutti i modelli](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Aggiornare il codice personalizzato nei progetti convertiti.  
   

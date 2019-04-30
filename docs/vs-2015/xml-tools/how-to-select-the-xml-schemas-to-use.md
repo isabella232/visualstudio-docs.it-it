@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433107"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedura: Selezionare gli XML Schema da usare
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
  Gli schemi specificati vengono salvati nel file nascosto SUO (Solution User Options) insieme a tutte le altre proprietà del documento XML. Di conseguenza non sarà necessario immettere nuovamente tali valori alla successiva apertura della soluzione.  
   
 > [!NOTE]
->  L'editor può eseguire la convalida mediante uno schema inline o uno schema a cui fa riferimento l'attributo `xsd:schemaLocation`. Per altre informazioni, vedere [convalida dei documenti XML](../xml-tools/xml-document-validation.md).  
+> L'editor può eseguire la convalida mediante uno schema inline o uno schema a cui fa riferimento l'attributo `xsd:schemaLocation`. Per altre informazioni, vedere [convalida dei documenti XML](../xml-tools/xml-document-validation.md).  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Per selezionare uno schema XML dalla cache degli schemi  
   
@@ -71,7 +71,7 @@ L'editor XML fornisce una cache degli schemi situata nella directory %InstallDir
      Lo schema viene rimosso dalla cache degli schemi in memoria, ma non dal file system.  
   
     > [!NOTE]
-    >  Se ancora presente un riferimento allo schema mediante un `schemaLocation` un attributo o un oggetto corrispondente `targetNamespace` quindi **rimuovere** non funzionerà in questo caso a causa dell'associazione automatica. In questo caso, è consigliabile contrassegnare lo schema **non usare gli schemi selezionati** nel **utilizzare** colonna.  
+    > Se ancora presente un riferimento allo schema mediante un `schemaLocation` un attributo o un oggetto corrispondente `targetNamespace` quindi **rimuovere** non funzionerà in questo caso a causa dell'associazione automatica. In questo caso, è consigliabile contrassegnare lo schema **non usare gli schemi selezionati** nel **utilizzare** colonna.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Cache degli schemi](../xml-tools/schema-cache.md)   

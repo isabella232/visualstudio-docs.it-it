@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425840"
 ---
 # <a name="program-vsto-add-ins"></a>Programmazione di componenti aggiuntivi VSTO
   Quando si estende un'applicazione di Microsoft Office creando un componente aggiuntivo VSTO, si scrive il codice direttamente per la classe `ThisAddIn` nel progetto. È possibile usare questa classe per eseguire attività quali l'accesso al modello a oggetti dell'applicazione host di Microsoft Office, la personalizzazione dell'interfaccia utente dell'applicazione e l'esposizione di oggetti nel componente aggiuntivo VSTO ad altre soluzioni Office.
@@ -54,7 +54,7 @@ ms.locfileid: "60079017"
  Sono disponibili due gestori eventi predefiniti nella classe `ThisAddIn` . Per eseguire il codice quando viene caricato il componente aggiuntivo VSTO, aggiungere il codice al gestore eventi `ThisAddIn_Startup` . Per eseguire il codice poco prima che il componente aggiuntivo VSTO venga scaricato, aggiungere il codice al gestore eventi `ThisAddIn_Shutdown` . Per altre informazioni su questi gestori eventi, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  In Outlook, per impostazione predefinita, il gestore eventi `ThisAddIn_Shutdown` non viene chiamato sempre quando il componente aggiuntivo VSTO viene scaricato. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).
+> In Outlook, per impostazione predefinita, il gestore eventi `ThisAddIn_Shutdown` non viene chiamato sempre quando il componente aggiuntivo VSTO viene scaricato. Per altre informazioni, vedere [gli eventi nei progetti di Office](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Accedere al modello a oggetti dell'applicazione host
  Per accedere il modello a oggetti dell'applicazione host, usare il campo `Application` della classe `ThisAddIn` . Questo campo restituisce un oggetto che rappresenta l'istanza corrente dell'applicazione host. La tabella seguente elenca il tipo di valore restituito per il campo `Application` in ogni progetto di componente aggiuntivo VSTO.

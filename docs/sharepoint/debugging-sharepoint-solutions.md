@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443492"
 ---
 # <a name="debug-sharepoint-solutions"></a>Il debug delle soluzioni SharePoint
   È possibile eseguire il debug di soluzioni SharePoint tramite il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugger. Quando si avvia il debug, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] distribuisce i file di progetto nel server SharePoint e quindi apre un'istanza del sito di SharePoint nel Web browser. Le sezioni seguenti illustrano come eseguire il debug di applicazioni di SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060800"
 8. Per i flussi di lavoro, consente di associare il flusso di lavoro con la libreria, elenco o sito selezionato in SharePoint le **Personalizzazione guidata SharePoint**.
 
    > [!NOTE]
-   >  Questa associazione viene generato solo se è stato selezionato **associa automaticamente flussi di lavoro** nella procedura guidata.
+   > Questa associazione viene generato solo se è stato selezionato **associa automaticamente flussi di lavoro** nella procedura guidata.
 
 9. Esegue i comandi di post-distribuzione personalizzabili.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060800"
  Quando si esegue il debug di progetti di flusso di lavoro, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aggiunge il modello di flusso di lavoro (a seconda del tipo) a una raccolta o a un elenco. È quindi possibile avviare il modello di flusso di lavoro manualmente o mediante l'aggiunta o aggiornamento di un elemento. È quindi possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per eseguire il debug del flusso di lavoro.
 
 > [!NOTE]
->  Se si aggiungono i riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Se si aggiungono i riferimenti ad altri assembly, assicurarsi che tali assembly vengono installati nella global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). In caso contrario, la soluzione del flusso di lavoro avrà esito negativo. Per informazioni su come installare gli assembly, vedere [avviare manualmente un flusso di lavoro su un documento o elemento](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Tuttavia, il processo di distribuzione non viene avviato il flusso di lavoro. È necessario avviare il flusso di lavoro dal sito Web di SharePoint. È anche possibile avviare il flusso di lavoro tramite un'applicazione client, ad esempio Microsoft Office Word 2010 o tramite codice lato server separato. Usare uno degli approcci specificati nella **Personalizzazione guidata SharePoint**.
 

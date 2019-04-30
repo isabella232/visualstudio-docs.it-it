@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431311"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Caricamento di progetti in una soluzione di gestione
 Soluzioni di Visual Studio possono contenere un numero elevato di progetti. Il comportamento di Visual Studio predefinito consiste nel caricare tutti i progetti in una soluzione al momento che la soluzione è aperta e per non consentire all'utente di accedere a nessuno dei progetti finché non termina il caricamento di tutti gli elementi. Quando il processo di caricamento di progetti a lungo termine più di due minuti, viene visualizzato un indicatore di stato che mostra il numero totale di progetti e il numero di progetti caricati. L'utente può scaricare i progetti mentre si lavora in una soluzione con più progetti, ma questa procedura presenta alcuni svantaggi: i progetti non caricati non vengono compilati come parte di un comando Ricompila soluzione e le descrizioni di IntelliSense dei tipi e membri di chiusi i progetti non vengono visualizzati.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Se il gestore di caricamento della soluzione è destinato a gestire il caricamento in generale della soluzione, può essere implementata come parte di un pacchetto VSPackage. Il pacchetto deve essere impostato su autoload aggiungendo il <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> nel pacchetto VSPackage con un valore di <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. Il gestore di caricamento della soluzione può quindi essere attivato nel <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (metodo).
 
 > [!NOTE]
->  Per altre informazioni sui pacchetti di caricamento automatico, vedere [caricamento di VSPackage](../extensibility/loading-vspackages.md).
+> Per altre informazioni sui pacchetti di caricamento automatico, vedere [caricamento di VSPackage](../extensibility/loading-vspackages.md).
 
  Poiché Visual Studio riconosce solo i manager di carico soluzione ultimo da attivare, sempre gestori carico soluzione generale dovrebbero rilevare se è una gestione del carico esistente prima di attivare autonomamente. Se il chiamante `GetProperty()` sul servizio per la soluzione [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) restituisce `null`, non vi è alcun gestore di caricamento di soluzione attiva. Se non viene restituito null, controllare se l'oggetto è quello utilizzato per la gestione del carico di soluzione.
 

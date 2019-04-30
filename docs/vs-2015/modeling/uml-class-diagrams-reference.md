@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424481"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagrammi classi UML: Riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58969376"
 Un diagramma classi UML descrive le strutture di oggetti e informazioni usate dall'applicazione, sia internamente che per comunicare con i relativi utenti. Descrive le informazioni senza riferimento ad alcuna implementazione specifica. Le relative classi e relazioni possono essere implementate in diversi modi, ad esempio tabelle di database, nodi XML o composizioni di oggetti software.  
   
 > [!NOTE]
->  In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, quello .NET, usato per visualizzare il codice programma. Per altre informazioni, vedere [progettazione e visualizzazione di classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> In questo argomento vengono illustrati i diagrammi classi UML. Esiste un altro tipo di diagramma classi, quello .NET, usato per visualizzare il codice programma. Per altre informazioni, vedere [progettazione e visualizzazione di classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
  Per creare un diagramma classi UML, nelle **Architecture** menu, scegliere **nuovo diagramma livello o UML**. Per altre informazioni su come creare diagrammi classi UML, vedere [diagrammi classi UML: Linee guida](../modeling/uml-class-diagrams-guidelines.md). Per altre informazioni su come creare e disegnare diagrammi di modellazione, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
   

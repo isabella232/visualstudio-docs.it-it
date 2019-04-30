@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5726cea8b2e81c53b5f3fff963357946f26b199f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438233"
 ---
 # <a name="how-to-install-a-visualizer"></a>Procedura: Installare un visualizzatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60059708"
 Dopo avere creato un visualizzatore, è necessario installarlo in modo da renderlo disponibile in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per installare un visualizzatore è sufficiente seguire una semplice procedura.  
   
 > [!NOTE]
->  Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
+> Nelle **Store** le app, solo il testo standard, i visualizzatori HTML, XML e JSON sono supportati. Non sono supportati i visualizzatori personalizzati (creati dall'utente).  
   
 ### <a name="to-install-a-visualizer"></a>Per installare un visualizzatore  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428108"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procedura: Mappare schemi a fogli di lavoro in Visual Studio
   È possibile eseguire il mapping di un XML schema a un foglio di lavoro mentre il foglio di lavoro è aperta in Visual Studio. Si usano gli stessi strumenti di Microsoft Office Excel che usano quando la cartella di lavoro viene aperto all'esterno di Visual Studio. Il progetto di Office consente di creare gli stessi oggetti se lo schema è mappato al foglio di lavoro prima o dopo aver creato la soluzione di Excel.
@@ -30,7 +30,7 @@ ms.locfileid: "60057173"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  È possibile usare gli schemi XML in più parti nelle soluzioni Excel.
+> È possibile usare gli schemi XML in più parti nelle soluzioni Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Eseguire il mapping di un XML schema a un foglio di lavoro di Excel in Visual Studio
 
@@ -41,7 +41,7 @@ ms.locfileid: "60057173"
 3. Sulla barra multifunzione fare clic sulla scheda **Sviluppatore** .
 
     > [!NOTE]
-    >  Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se la scheda **Sviluppatore** non viene mostrata, è necessario abilitarne la visualizzazione. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. Nel **XML** gruppo, fare clic su **origine**.
 

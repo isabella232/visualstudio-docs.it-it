@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441030"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60058480"
    In questo argomento viene illustrata la procedura.  
   
 > [!NOTE]
->  Se si desidera creare i propri comandi di menu, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Se si desidera creare i propri comandi di menu, vedere [come: Aggiungere un comando al Menu di scelta rapida](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> I comandi che è possibile modificare?  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60058480"
 5. Chiudere il file senza salvare le modifiche.  
   
     > [!NOTE]
-    >  In genere, è opportuno non modificare i file che sono stati generati. Eventuali modifiche andranno perse la volta successiva che i file verranno generati.  
+    > In genere, è opportuno non modificare i file che sono stati generati. Eventuali modifiche andranno perse la volta successiva che i file verranno generati.  
   
 ## <a name="extend"></a> Estendere la classe di set di comandi appropriata  
  Creare un nuovo file contenente una dichiarazione parziale della classe di set di comandi.  
@@ -90,7 +90,7 @@ ms.locfileid: "60058480"
  L'esempio seguente disabilita la voce di menu Delete quando l'utente seleziona più di una forma.  
   
 > [!NOTE]
->  Se il comando è disponibile con una pressione di tasto, questo metodo non impedisce di usarlo. Ad esempio, anche se si disabilita la voce di menu Delete, il comando può ugualmente essere richiamato con CANC.  
+> Se il comando è disponibile con una pressione di tasto, questo metodo non impedisce di usarlo. Ad esempio, anche se si disabilita la voce di menu Delete, il comando può ugualmente essere richiamato con CANC.  
   
 ```  
 /// <summary>  

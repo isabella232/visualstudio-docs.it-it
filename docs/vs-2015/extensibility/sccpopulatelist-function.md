@@ -12,12 +12,12 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446786"
 ---
 # <a name="sccpopulatelist-function"></a>Funzione SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ SCCRTN SccPopulateList (
  Continua il plug-in chiamare il `pfnPopulate` funzione, che aggiunge ed elimina i file, fino a quando non è terminato e lo restituisce il `SccPopulateList` (funzione). L'IDE può quindi visualizzare il relativo elenco. Il `lpStatus` matrice rappresenta tutti i file nell'elenco originale passato dall'IDE. Il plug-in compila lo stato di tutti questi file oltre a rendere utilizzo della funzione di callback.  
   
 > [!NOTE]
->  Un plug-in del controllo del codice sorgente ha sempre la possibilità di restituire semplicemente immediatamente da questa funzione, senza modificare l'elenco. Se un plug-in viene implementata questa funzione, è possibile che questo impostando il `SCC_CAP_POPULATELIST` dei bit di flag funzionalità nella prima chiamata per il [SccInitialize](../extensibility/sccinitialize-function.md). Per impostazione predefinita, il plug-in deve sempre presupporre che tutti gli elementi passati sono file. Tuttavia, se l'IDE imposta il `SCC_PL_DIR` flag nel `fOptions` parametro, tutti gli elementi passati devono essere considerati le directory. Il plug-in necessario aggiungere tutti i file che appartengono nelle directory. L'IDE non passeranno mai una combinazione di file e directory.  
+> Un plug-in del controllo del codice sorgente ha sempre la possibilità di restituire semplicemente immediatamente da questa funzione, senza modificare l'elenco. Se un plug-in viene implementata questa funzione, è possibile che questo impostando il `SCC_CAP_POPULATELIST` dei bit di flag funzionalità nella prima chiamata per il [SccInitialize](../extensibility/sccinitialize-function.md). Per impostazione predefinita, il plug-in deve sempre presupporre che tutti gli elementi passati sono file. Tuttavia, se l'IDE imposta il `SCC_PL_DIR` flag nel `fOptions` parametro, tutti gli elementi passati devono essere considerati le directory. Il plug-in necessario aggiungere tutti i file che appartengono nelle directory. L'IDE non passeranno mai una combinazione di file e directory.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni API del plug-in controllo di origine](../extensibility/source-control-plug-in-api-functions.md)   

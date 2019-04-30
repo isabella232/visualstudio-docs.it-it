@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433396"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Scelta di un modello di soluzione per un linguaggio specifico di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Per creare una soluzione domain-specific language, scegliere uno dei modelli di 
  I seguenti modelli di soluzione sono disponibili nella procedura guidata finestra di progettazione di linguaggio specifico di dominio.  
   
 > [!NOTE]
->  Lo scopo dei modelli è fornire un linguaggio specifico di dominio iniziale. I modelli di diagrammi classi e componenti denominati non sono diagrammi UML completi. Se si desidera creare un modello UML, prendere in considerazione gli strumenti che offrono un set di diagrammi integrati attorno a un singolo modello di modellazione UML. Sono estensibili e possono essere integrati con il linguaggio DSL con ModelBus. Per altre informazioni, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
+> Lo scopo dei modelli è fornire un linguaggio specifico di dominio iniziale. I modelli di diagrammi classi e componenti denominati non sono diagrammi UML completi. Se si desidera creare un modello UML, prendere in considerazione gli strumenti che offrono un set di diagrammi integrati attorno a un singolo modello di modellazione UML. Sono estensibili e possono essere integrati con il linguaggio DSL con ModelBus. Per altre informazioni, vedere [creare modelli per l'app](../modeling/create-models-for-your-app.md).  
   
 |Modello|Funzionalità|Descrizione|  
 |--------------|--------------|-----------------|  

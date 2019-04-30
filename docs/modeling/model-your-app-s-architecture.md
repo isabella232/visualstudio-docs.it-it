@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436886"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 Per garantire che il sistema software o l'applicazione soddisfi degli utenti esigenze, è possibile creare modelli in Visual Studio come parte del comportamento dell'applicazione o sistema software e la descrizione della struttura complessiva. Usando gli schemi è anche possibile descrivere modelli usati durante la progettazione. Questi modelli consentono di comprendere l'architettura esistente, discutere le modifiche e comunicare chiaramente le intenzioni.
@@ -24,7 +24,7 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
  Lo scopo di un modello è ridurre l'ambiguità che si verifica nelle descrizioni in linguaggio naturale e consentono all'utente e ai colleghi di visualizzare la progettazione e discutere le progettazioni alternative. Un modello deve essere usato insieme ad altri documenti o discussioni. Un modello di per sé non rappresenta una specifica completa dell'architettura.
 
 > [!NOTE]
->  In questo argomento, il termine "sistema" indica il software che si sta sviluppando. Potrebbe essere un'ampia raccolta di molti componenti hardware e software oppure una singola applicazione o una parte di un'applicazione.
+> In questo argomento, il termine "sistema" indica il software che si sta sviluppando. Potrebbe essere un'ampia raccolta di molti componenti hardware e software oppure una singola applicazione o una parte di un'applicazione.
 
  L'architettura di un sistema può essere suddivisa in due aree:
 

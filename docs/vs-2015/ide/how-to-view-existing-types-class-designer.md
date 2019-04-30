@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 582b3763cf2925e373bb3f71b843755ade49dcd2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424572"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Procedura: Visualizzare i tipi esistenti (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
 2. Nel progetto in Esplora soluzioni trascinare un file di codice sorgente nel diagramma di classi.  
   
    > [!WARNING]
-   >  Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:  
+   > Se la soluzione contiene un progetto che condivide il codice con più app, è possibile trascinare file o codice in un diagramma classi solo da queste origini:  
    > 
    > - Il progetto di app contenente il diagramma  
    >   - Un progetto condiviso importato dal progetto di app  
@@ -50,12 +50,12 @@ Per visualizzare un tipo esistente con i relativi membri, aggiungere la forma a 
    È anche possibile visualizzare i tipi del progetto trascinando uno o più tipi dal nodo di progetto in Visualizzazione classi al diagramma classi.  
   
 > [!TIP]
->  Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**. Per altre informazioni sulla visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333) (Visualizzazione delle classi e dei relativi membri).  
+> Se non è già visualizzata, aprire Visualizzazione classi dal menu **Visualizza**. Per altre informazioni sulla visualizzazione classi, vedere [Viewing Classes and Their Members](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333) (Visualizzazione delle classi e dei relativi membri).  
   
  Per visualizzare i tipi nelle posizioni predefinite del diagramma, selezionare uno o più tipi in Visualizzazione classi, fare clic con il pulsante destro del mouse sui tipi selezionati e scegliere **Visualizza diagramma classi**.  
   
 > [!NOTE]
->  Se nel progetto esiste già un diagramma classi chiuso contenente il tipo, tale diagramma verrà aperto per visualizzare la forma del tipo. Se tuttavia nel progetto non sono disponibili diagrammi classi contenenti il tipo, nel progetto verrà creato un nuovo diagramma classi che verrà aperto per visualizzare il tipo.  
+> Se nel progetto esiste già un diagramma classi chiuso contenente il tipo, tale diagramma verrà aperto per visualizzare la forma del tipo. Se tuttavia nel progetto non sono disponibili diagrammi classi contenenti il tipo, nel progetto verrà creato un nuovo diagramma classi che verrà aperto per visualizzare il tipo.  
   
  La prima volta che viene visualizzato un tipo nel diagramma, la relativa forma appare compressa per impostazione predefinita. È possibile espanderla per visualizzarne il contenuto.  
   

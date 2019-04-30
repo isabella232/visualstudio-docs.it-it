@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427967"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Cenni preliminari sui controlli host e gli elementi host
   Gli elementi e i controlli host sono tipi che consentono di fornire il modello di programmazione per le soluzioni Office create tramite gli strumenti di sviluppo di Office in Visual Studio. Rendono l'interazione con i modelli a oggetti di Microsoft Office Word e Microsoft Office Excel, basati su COM, analoga all'interazione con gli oggetti gestiti, ad esempio i controlli Windows Form.
@@ -113,7 +113,7 @@ ms.locfileid: "56607109"
   È anche possibile usare i controlli Windows Form nelle soluzioni Office aggiungendoli direttamente nell'area del documento di Word ed Excel. Per altre informazioni, vedere [controlli Windows Form nella panoramica di documenti Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
->  L'aggiunta di controlli host o di controlli Windows Form a un documento secondario di Word non è supportata.
+> L'aggiunta di controlli host o di controlli Windows Form a un documento secondario di Word non è supportata.
 
 ### <a name="add-host-controls-to-your-documents"></a>Aggiungere controlli host ai documenti
  Nei progetti a livello di documento è possibile aggiungere controlli host ai documenti di Word o ai fogli di lavoro di Excel in fase di progettazione nei modi seguenti:
@@ -148,7 +148,7 @@ ms.locfileid: "56607109"
  Quando si trascina un controllo host dalla **Casella degli strumenti** nel documento, il controllo viene automaticamente denominato usando il tipo del controllo con un numero incrementale alla fine. I segnalibri saranno, ad esempio, denominati **bookmark1**, **bookmark2**e così via. Se si usa la funzionalità nativa di Word o Excel per aggiungere il controllo, è possibile assegnare un nome specifico al momento della creazione. È anche possibile rinominare i controlli modificando il valore della proprietà **Name** nella finestra **Proprietà** .
 
 > [!NOTE]
->  Nell'assegnazione di nomi ai controlli host non è possibile usare parole riservate. Se ad esempio si aggiunge un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> a un foglio di lavoro e si cambia il nome in **System**, si verificheranno degli errori durante la compilazione del progetto.
+> Nell'assegnazione di nomi ai controlli host non è possibile usare parole riservate. Se ad esempio si aggiunge un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> a un foglio di lavoro e si cambia il nome in **System**, si verificheranno degli errori durante la compilazione del progetto.
 
 ### <a name="delete-host-controls"></a>Eliminare i controlli host
  Nei progetti a livello di documento, è possibile eliminare i controlli host in fase di progettazione selezionando il controllo nel foglio di lavoro di Excel o documento di Word e premendo il **eliminare** chiave. Per eliminare i controlli **in Excel è tuttavia necessario usare la finestra di dialogo** Definisci nome <xref:Microsoft.Office.Tools.Excel.NamedRange> .
@@ -160,13 +160,13 @@ ms.locfileid: "56607109"
  Se gli utenti finali eliminano un controllo host dal documento in fase di esecuzione, la soluzione potrebbe non riuscire in modo imprevisto. Per proteggere i controlli host dall'eliminazione è possibile usare le funzionalità di protezione dei documenti. Per altre informazioni, vedere [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).
 
 > [!NOTE]
->  Non rimuovere i controlli a livello di codice usando il gestore eventi `Shutdown` del documento o del foglio di lavoro. Gli elementi dell'interfaccia utente non sono più disponibili quando si verifica l'evento `Shutdown` . Se si vogliono rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio `BeforeClose` o `BeforeSave`.
+> Non rimuovere i controlli a livello di codice usando il gestore eventi `Shutdown` del documento o del foglio di lavoro. Gli elementi dell'interfaccia utente non sono più disponibili quando si verifica l'evento `Shutdown` . Se si vogliono rimuovere i controlli prima della chiusura dell'applicazione, aggiungere il codice a un altro gestore eventi, ad esempio `BeforeClose` o `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Eseguire la programmazione per eventi del controllo host
  Uno dei modi in cui i controlli host estendono gli oggetti Office è tramite l'aggiunta di eventi. Ad esempio, anche se l'oggetto <xref:Microsoft.Office.Interop.Excel.Range> in Excel e l'oggetto <xref:Microsoft.Office.Interop.Word.Bookmark> in Word non contengono eventi, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende tali oggetti aggiungendo eventi programmabili. È possibile accedere a questi eventi e codificarli nello stesso modo in cui si accede agli eventi dei controlli presenti in Windows Form, ovvero tramite l'elenco a discesa degli eventi di Visual Basic e la pagina delle proprietà degli eventi in C#. Per altre informazioni, vedere [Procedura dettagliata: Programmazione per eventi di un controllo NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
->  Non è necessario impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Application> in Excel su **false**. Impostando questa proprietà su **false** si impedisce a Excel di generare eventi, inclusi gli eventi dei controlli host.
+> Non è necessario impostare la proprietà <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> dell'oggetto <xref:Microsoft.Office.Interop.Excel.Application> in Excel su **false**. Impostando questa proprietà su **false** si impedisce a Excel di generare eventi, inclusi gli eventi dei controlli host.
 
 ## <a name="see-also"></a>Vedere anche
 - [Limitazioni a livello di codice degli elementi host e controlli host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

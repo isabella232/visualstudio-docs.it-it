@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436298"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID e ID dei menu di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ In questo argomento elenca i valori GUID e ID dei menu e gruppi sulla barra dei 
 |Finestra|IDM_VS_MENU_WINDOW|
 |Componenti aggiuntivi|IDM_VS_MENU_ADDINS|
 |Community|IDM_VS_MENU_COMMUNITY|
-|?|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Gruppi nei menu di Visual Studio
  Di seguito vengono elencati mostrano i gruppi che derivano direttamente dal menu nella barra dei menu di Visual Studio. Il modo più rapido per aggiungere un comando a un menu di Visual Studio consiste nell'impostare uno di questi gruppi come elemento padre. In questa sezione non vengono visualizzati i gruppi che discendono dagli sottomenu.
@@ -180,7 +180,7 @@ In questo argomento elenca i valori GUID e ID dei menu e gruppi sulla barra dei 
  La gerarchia seguente viene illustrato i sottomenu che sono associati i menu nella barra dei menu di Visual Studio. Perché solo un gruppo può avere un menu come relativo elemento padre, ogni sottomenu deve derivano da un gruppo in un menu, anziché direttamente dal menu di scelta. Per altre informazioni sulla relazione tra i menu, gruppi e i sottomenu, vedere [aggiunta di un sottomenu a un Menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  I nomi dei menu nella barra dei menu di Visual Studio non vengono visualizzati separatamente nella gerarchia perché questi possono essere dedotti dalla convenzione di denominazione per i gruppi nell'IDE, come indicato di seguito: IDG_VS_*nome del Menu*_*nome gruppo*.
+> I nomi dei menu nella barra dei menu di Visual Studio non vengono visualizzati separatamente nella gerarchia perché questi possono essere dedotti dalla convenzione di denominazione per i gruppi nell'IDE, come indicato di seguito: IDG_VS_*nome del Menu*_*nome gruppo*.
 
 |Gruppo padre|Submenu|Gruppi figlio|
 |------------------|-------------|------------------|

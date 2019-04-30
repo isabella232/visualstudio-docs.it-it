@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438621"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procedura dettagliata: La modifica del foglio di lavoro della formattazione mediante controlli CheckBox
   Questa procedura dettagliata illustra le nozioni di base dell'uso di caselle di controllo in un foglio di lavoro di Microsoft Office Excel per modificare la formattazione. Si userà gli strumenti di sviluppo per Office in Visual Studio per creare e aggiungere codice al progetto. Per visualizzare il risultato come un esempio completo, vedere l'esempio di controlli Excel all'indirizzo [procedure dettagliate ed esempi di sviluppo per Office](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061689"
 - Testare il progetto.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -94,7 +94,7 @@ ms.locfileid: "60061689"
      Successivamente, verrà trascinato un <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo nel foglio di lavoro.
 
     > [!NOTE]
-    >  È anche possibile aggiungere il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo digitando **textFont** nel **nome** casella.
+    > È anche possibile aggiungere il <xref:Microsoft.Office.Tools.Excel.NamedRange> controllo digitando **textFont** nel **nome** casella.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Per aggiungere testo a un controllo NamedRange
 

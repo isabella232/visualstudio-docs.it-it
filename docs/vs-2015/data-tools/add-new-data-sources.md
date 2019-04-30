@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445758"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
 - Una classe o una raccolta nella soluzione.  
   
 > [!NOTE]
->  Se non si usa funzionalità di associazione dati, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "data source" non è applicabile. È sufficiente connettersi direttamente al database utilizzando gli oggetti di SQLCommand e comunicare direttamente con il database.  
+> Se non si usa funzionalità di associazione dati, set di dati, Entity Framework, LINQ to SQL, WCF o SharePoint, il concetto di "data source" non è applicabile. È sufficiente connettersi direttamente al database utilizzando gli oggetti di SQLCommand e comunicare direttamente con il database.  
   
  Per creare e modificare origini dati usando il **configurazione guidata origine dati** in un'applicazione Windows Forms o Windows Presentation Foundation. Per Entity Framework, prima di tutto creare le classi di entità e quindi avviare la procedura guidata selezionando **Project** > **Aggiungi nuova origine dati** (descritto in dettaglio più avanti in questo articolo).  
   
@@ -84,7 +84,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
 - Servizi Web.  
   
     > [!NOTE]
-    >  Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, nessun elemento verrà visualizzato nei **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
+    > Gli elementi visualizzati nei **Data source** finestra dipendono i dati restituiti al servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, nessun elemento verrà visualizzato nei **Zdroje dat** finestra una volta completata la procedura guidata. Questo avviene perché DataSet non tipizzati non forniscono alcuno schema, e pertanto la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
   
 ## <a name="data-source-for-an-object"></a>Origine dati per un oggetto  
  È possibile creare un'origine dati da qualsiasi oggetto che espone uno o più proprietà pubbliche eseguendo la **configurazione guidata origine dati** e quindi selezionando il **oggetto** tipo origine dati. Tutte le proprietà pubbliche di un oggetto vengono visualizzate nei **Data source** finestra.   Se si usa Entity Framework e hanno generato un modello, si tratta in cui è trovare le classi di entità che saranno le origini dati per l'applicazione.  
@@ -94,10 +94,10 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
  Se si desidera associare a un oggetto in un assembly o un progetto che non compare nella visualizzazione albero, fare clic su **Aggiungi riferimento** e utilizzare il **Add Reference Dialog Box** per aggiungere un riferimento al progetto o assembly. Dopo aver aggiunto il riferimento, l'assembly o il progetto viene aggiunto alla visualizzazione albero.  
   
 > [!NOTE]
->  Potrebbe essere necessario compilare il progetto che contiene gli oggetti prima che gli oggetti vengono visualizzati nella visualizzazione albero.  
+> Potrebbe essere necessario compilare il progetto che contiene gli oggetti prima che gli oggetti vengono visualizzati nella visualizzazione albero.  
   
 > [!NOTE]
->  Per supportare l'associazione di dati di trascinamento e rilascio, gli oggetti che implementano il <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> interfaccia deve avere un costruttore predefinito. In caso contrario, Visual Studio non è possibile creare un'istanza di oggetto origine dati e verrà visualizzato un errore quando si trascina l'elemento all'area di progettazione.  
+> Per supportare l'associazione di dati di trascinamento e rilascio, gli oggetti che implementano il <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> interfaccia deve avere un costruttore predefinito. In caso contrario, Visual Studio non è possibile creare un'istanza di oggetto origine dati e verrà visualizzato un errore quando si trascina l'elemento all'area di progettazione.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Origine dati per un elenco di SharePoint  
  È possibile creare un'origine dati da un elenco di SharePoint eseguendo il **configurazione guidata origine dati** e selezionando le **SharePoint** tipo origine dati. SharePoint espone i dati mediante [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], pertanto la creazione di un'origine dati SharePoint è analoga alla creazione di un'origine dati da un servizio. Selezionando il **SharePoint** degli elementi nella **configurazione guidata origine dati** consente di aprire il **Aggiungi riferimento al servizio** finestra di dialogo, a cui ci si connette al servizio dati di SharePoint puntando al server SharePoint.  Questa operazione richiede il SDK di SharePoint.  

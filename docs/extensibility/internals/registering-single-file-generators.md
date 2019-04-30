@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426808"
 ---
 # <a name="registering-single-file-generators"></a>Registrazione di generatori di file singoli
 Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], è necessario registrarlo così [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possibile crearne un'istanza e la associa a un particolare tipo di progetto.
@@ -51,7 +51,7 @@ Per rendere disponibili in uno strumento personalizzato [!INCLUDE[vsprvs](../../
         Obbligatorio. Indica se i tipi dai file generati da questo strumento personalizzato vengono resi disponibili per finestre di progettazione visiva. Il valore di questo parametro deve essere (zero) 0 per i tipi non è disponibili per finestre di progettazione visiva o 1 (uno) per i tipi disponibili per finestre di progettazione visiva.
 
    > [!NOTE]
-   >  È necessario registrare lo strumento personalizzato separatamente per ogni lingua per il quale si desidera che lo strumento personalizzato sia disponibile.
+   > È necessario registrare lo strumento personalizzato separatamente per ogni lingua per il quale si desidera che lo strumento personalizzato sia disponibile.
 
     Ad esempio, il MSDataSetGenerator si registra una sola volta per ogni lingua:
 

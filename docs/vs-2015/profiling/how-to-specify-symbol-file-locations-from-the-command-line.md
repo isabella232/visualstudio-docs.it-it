@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436916"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: specificare percorsi dei file di simboli tramite la riga di comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare i percorsi di File di simboli dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione pdb) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:  
@@ -38,7 +38,7 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
   È anche possibile usare entrambi questi metodi.  
   
 > [!NOTE]
->  Se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è installato nel computer locale, probabilmente è già stato specificato un percorso per i file di simboli Windows. Per altre informazioni, vedere [Procedura: Fare riferimento alle informazioni sui simboli di Windows](../profiling/how-to-reference-windows-symbol-information.md). È comunque necessario configurare VSPerfReport per usare il percorso e il server come descritto più avanti in questo argomento.  
+> Se [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è installato nel computer locale, probabilmente è già stato specificato un percorso per i file di simboli Windows. Per altre informazioni, vedere [Procedura: Informazioni sui simboli di riferimento Windows](../profiling/how-to-reference-windows-symbol-information.md). È comunque necessario configurare VSPerfReport per usare il percorso e il server come descritto più avanti in questo argomento.  
   
 ## <a name="specifying-windows-symbol-files"></a>Specifica di file di simboli Windows  
   

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430134"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 4. Aprire il **Output** finestra dell'istanza di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] che non riesce a caricare il pacchetto VSPackage. Informazioni sui motivi per cui il pacchetto VSPackage non riesce a caricare potrebbero essere visualizzate in tale finestra.  
   
     > [!NOTE]
-    >  Se si avvia la versione sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE), esaminare le **Output** finestra di entrambe le versioni.  
+    > Se si avvia la versione sperimentale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE), esaminare le **Output** finestra di entrambe le versioni.  
   
 5. Esaminare il log attività.  
   
@@ -87,7 +87,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
     4. Nel **Debug** menu, fare clic su **Avvia debug** o premere F5.  
   
         > [!NOTE]
-        >  Se si esegue il debug di un progetto, creare o caricare un'istanza esistente del progetto a questo punto.  
+        > Se si esegue il debug di un progetto, creare o caricare un'istanza esistente del progetto a questo punto.  
   
 2. Usare il log attività.  
   

@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442069"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procedura: Ripristinare i comandi nascosti del debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Quando si installa Visual Studio, viene chiesto di scegliere una serie di impost
 7. Dopo avere aggiunto tutti i comandi desiderati al menu, fare clic su **Chiudi**.  
   
     > [!WARNING]
-    >  Alcune voci di menu vengono visualizzate solo quando nel debugger è attivata una particolare modalità, ad esempio la modalità di esecuzione o la modalità di interruzione. Le voci aggiunte potrebbero quindi non essere immediatamente visualizzate al termine di questa procedura.  
+    > Alcune voci di menu vengono visualizzate solo quando nel debugger è attivata una particolare modalità, ad esempio la modalità di esecuzione o la modalità di interruzione. Le voci aggiunte potrebbero quindi non essere immediatamente visualizzate al termine di questa procedura.  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Ripristino di comandi non disponibili nella finestra di dialogo Personalizza  
  Alcuni comandi, in particolare quelli facenti parte di menu gerarchici, non possono essere ripristinati dalla finestra di dialogo **Personalizza**. Per ripristinare tali comandi, è necessario importare una nuova raccolta di impostazioni IDE.  

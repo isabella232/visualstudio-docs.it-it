@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427440"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procedura: Aggiungere controlli XMLMappedRange a fogli di lavoro
   Quando si esegue il mapping di un elemento XML a una cella in Microsoft Office Excel, Visual Studio aggiunge automaticamente un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo al foglio di lavoro.
@@ -26,7 +26,7 @@ ms.locfileid: "60085720"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo non è disponibile nel **casella degli strumenti** o il **Zdroje dat** finestra. Inoltre, non è possibile creare <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controlla a livello di codice.
+> Il <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controllo non è disponibile nel **casella degli strumenti** o il **Zdroje dat** finestra. Inoltre, non è possibile creare <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controlla a livello di codice.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Per aggiungere un controllo XMLMappedRange a un foglio di lavoro
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085720"
 3. Nel **sviluppatore** scheda, fare clic su **origine**.
 
     > [!NOTE]
-    >  Se il **sviluppatore** scheda non è visibile sulla barra multifunzione, è necessario abilitarla. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se il **sviluppatore** scheda non è visibile sulla barra multifunzione, è necessario abilitarla. Per altre informazioni, vedere [Procedura: Visualizzare la scheda sviluppo nella barra multifunzione](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      Il **origine XML** viene visualizzato il riquadro attività.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085720"
      Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> viene creato e aggiunto al progetto.
 
     > [!NOTE]
-    >  Se si trascina un elemento padre di **origine XML** riquadro attività, un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo viene creato.
+    > Se si trascina un elemento padre di **origine XML** riquadro attività, un <xref:Microsoft.Office.Tools.Excel.ListObject> controllo viene creato.
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllo XmlMappedRange](../vsto/xmlmappedrange-control.md)

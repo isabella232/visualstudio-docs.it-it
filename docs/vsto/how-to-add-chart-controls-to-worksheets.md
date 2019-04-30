@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427758"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Procedura: Aggiungere controlli Chart a fogli di lavoro
   È possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli a un foglio di lavoro di Microsoft Office Excel in fase di progettazione e in fase di esecuzione nelle personalizzazioni a livello di documento. È anche possibile aggiungere <xref:Microsoft.Office.Tools.Excel.Chart> controlli in fase di esecuzione nei componenti aggiuntivi VSTO.
@@ -39,7 +39,7 @@ ms.locfileid: "60056315"
  È possibile aggiungere il controllo <xref:Microsoft.Office.Tools.Excel.Chart> al foglio di lavoro nello stesso modo in cui si aggiunge un grafico dall'interno dell'applicazione.
 
 > [!NOTE]
->  Il <xref:Microsoft.Office.Tools.Excel.Chart> controllo non è disponibile il **della casella degli strumenti** o il **Zdroje dat** finestra.
+> Il <xref:Microsoft.Office.Tools.Excel.Chart> controllo non è disponibile il **della casella degli strumenti** o il **Zdroje dat** finestra.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Per aggiungere un controllo host Chart a un foglio di lavoro in Excel
 

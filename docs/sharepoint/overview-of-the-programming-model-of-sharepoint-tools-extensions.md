@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49e4618e2262575ffaa642d55ae140529f86942b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421294"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo della ognuno di questi modelli a oggetti e sapere come usarli con loro per creare estensioni per gli strumenti di SharePoint.
@@ -50,7 +50,7 @@ ms.locfileid: "60038470"
 - *Visual Studio automazione e integrazione di modelli a oggetti*. Usare questi modelli a oggetti per accedere alle funzionalità di Visual Studio che esulano dall'ambito del modello a oggetti degli strumenti di SharePoint.
 
     > [!NOTE]
-    >  È possibile convertire alcuni oggetti nel modello a oggetti degli strumenti di SharePoint in oggetti del modello a oggetti di automazione e integrazione di Visual Studio e viceversa, tramite il servizio di progetto SharePoint. Per altre informazioni, vedere [eseguire la conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+    > È possibile convertire alcuni oggetti nel modello a oggetti degli strumenti di SharePoint in oggetti del modello a oggetti di automazione e integrazione di Visual Studio e viceversa, tramite il servizio di progetto SharePoint. Per altre informazioni, vedere [eseguire la conversione tra tipi di sistema di progetto SharePoint e altri tipi di progetto di Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 - *Modelli a oggetti client e server SharePoint*. Usare questi modelli a oggetti per modificare un sito di SharePoint o per recuperare dati da un sito di SharePoint dal contesto di un'estensione degli strumenti di SharePoint.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421245"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ ms.locfileid: "60118019"
 3. Nel riquadro sinistro scegliere **WindowsAzure.MobileServices**, quindi nel riquadro destro scegliere il pulsante **Installa** .  
   
     > [!NOTE]
-    >  Se viene visualizzata la finestra **Anteprima** , esaminare le modifiche proposte, quindi scegliere il pulsante **OK** .  
+    > Se viene visualizzata la finestra **Anteprima** , esaminare le modifiche proposte, quindi scegliere il pulsante **OK** .  
   
 4. Nella finestra di dialogo di **accettazione della licenza** esaminare le condizioni di licenza e quindi accettarle scegliendo il pulsante **Accetto** .  
   
      In **Esplora soluzioni**verranno aggiunti i riferimenti necessari.  
   
     > [!NOTE]
-    >  Se non si accettano le condizioni di licenza, scegliere il pulsante **Non accetto** . Non sarà possibile completare il resto della procedura dettagliata.  
+    > Se non si accettano le condizioni di licenza, scegliere il pulsante **Non accetto** . Non sarà possibile completare il resto della procedura dettagliata.  
   
 ## <a name="create-the-user-interface"></a>Creare l'interfaccia utente  
  Il passaggio successivo consiste nel creare l'interfaccia utente per l'applicazione. Verrà creato prima di tutto un controllo utente riutilizzabile che visualizza un layout affiancato standard a due riquadri. Il controllo utente verrà quindi aggiunto alla finestra principale dell'applicazione e verranno aggiunti anche i controlli per immettere e visualizzare i dati, infine verrà scritto il codice per definire l'interazione con il back-end del servizio mobile.  
@@ -288,7 +288,7 @@ ms.locfileid: "60118019"
      ![MainWindow nella finestra di progettazione](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Seguendo le procedure successive è possibile che vengano visualizzati alcuni errori nell' **Elenco errori** se è aperto. Non c'è però da preoccuparsi perché tali errori non verranno più visualizzati al termine delle procedure rimanenti.  
+    > Seguendo le procedure successive è possibile che vengano visualizzati alcuni errori nell' **Elenco errori** se è aperto. Non c'è però da preoccuparsi perché tali errori non verranno più visualizzati al termine delle procedure rimanenti.  
   
 6. In **Esplora soluzioni**espandere il nodo **MainWindow.xaml** e aprire il file **MainWindow.xaml.cs** o **MainWindow.xaml.vb** .  
   
@@ -482,7 +482,7 @@ ms.locfileid: "60118019"
 3. Nella finestra di dialogo **NUOVO SERVIZIO MOBILE** scegliere la casella di testo **URL** e immettere `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Potrebbe essere necessario modificare la parte numerica dell'URL. Microsoft Azure richiede un URL univoco per ogni servizio mobile.  
+    > Potrebbe essere necessario modificare la parte numerica dell'URL. Microsoft Azure richiede un URL univoco per ogni servizio mobile.  
   
      Questo imposta l'URL del servizio `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ ms.locfileid: "60118019"
 5. Nell'elenco **AREA** scegliere il data center in cui si vuole distribuire il servizio mobile e quindi scegliere il pulsante **Avanti** (freccia destra).  
   
     > [!NOTE]
-    >  Per questo servizio verrà usata l'impostazione predefinita di **BACK-END** , **JavaScript**.  
+    > Per questo servizio verrà usata l'impostazione predefinita di **BACK-END** , **JavaScript**.  
   
 6. Se si sta creando un nuovo database, nell'elenco **SERVER** della pagina **Specifica impostazioni di database** scegliere **Nuovo server di database SQL**, immettere un **NOME DI ACCESSO SQL** e una **PASSWORD**, quindi scegliere il pulsante **Completa** (segno di spunta).  
   

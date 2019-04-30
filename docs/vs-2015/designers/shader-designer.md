@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432590"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
 |**Avanzate**|Contiene opzioni e comandi avanzati.<br /><br /> **Esporta**: consente l'esportazione di uno shader in diversi formati.<br /><br /> **Esporta come**: esporta lo shader come codice sorgente HLSL o come bytecode shader compilato. Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportare uno Shader](../designers/how-to-export-a-shader.md).<br /><br /> **Motori grafica**: consente la selezione del renderer usato per visualizzare l'area di progettazione.<br /><br /> **Rendering con D3D11**: usa Direct3D 11 per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Rendering con D3D11WARP**: usa Direct3D 11 WARP (Windows Advanced Rasterization Platform) per eseguire il rendering dell'area di progettazione della finestra di progettazione shader.<br /><br /> **Visualizza**: consente la selezione di informazioni aggiuntive sulla finestra di progettazione shader.<br /><br /> **Frequenza dei fotogrammi**: se abilitata, consente di visualizzare la frequenza dei fotogrammi corrente nell'angolo superiore destro dell'area di progettazione. La frequenza dei fotogrammi è il numero di fotogrammi disegnati al secondo.  Questa opzione è utile quando si abilita l'opzione **Modalità rendering in tempo reale**.|  
   
 > [!TIP]
->  È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.  
+> È possibile scegliere il pulsante **Avanzate** per eseguire nuovamente l'ultimo comando.  
   
 ### <a name="working-with-nodes-and-connections"></a>Utilizzo di nodi e connessioni  
  Usare la modalità **Seleziona** per aggiungere, rimuovere, riposizionare, connettere e configurare i nodi. Di seguito viene illustrato come eseguire queste operazioni di base.  

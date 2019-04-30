@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437676"
 ---
 # <a name="view-dom-event-listeners"></a>Visualizzare i listener di eventi DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Nell'elenco del **eventi** scheda è dinamica. Se aggiungi un listener di eventi quando l'applicazione è in esecuzione, il nuovo listener verrà visualizzato nella scheda. Per informazioni sull'aggiunta e rimozione di listener di eventi, vedi [suggerimenti per la risoluzione dei problemi relativi ai listener di eventi](#Tips) in questo argomento.
 
 > [!NOTE]
->  Listener di eventi per gli elementi di codice che non sono elementi DOM, ad esempio `xhr`, non vengono visualizzati nel **eventi** scheda.
+> Listener di eventi per gli elementi di codice che non sono elementi DOM, ad esempio `xhr`, non vengono visualizzati nel **eventi** scheda.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Visualizzare listener di eventi per elementi DOM
  Questo esempio mostra un'app di Windows Phone Store. Le funzionalità di DOM Explorer qui descritte sono supportate anche per le app di Windows Store.

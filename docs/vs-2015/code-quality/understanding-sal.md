@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0a898096c282a22201d60995693144cc0e187812
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435390"
 ---
 # <a name="understanding-sal"></a>Informazioni su SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -246,7 +246,7 @@ void OutOptCaller()
  `_Inout_` viene usato per annotare un parametro del puntatore che può essere modificato dalla funzione. Il puntatore deve puntare a dati inizializzati validi prima della chiamata e anche se subisce delle modifiche, comunque deve avere un valore valido in fase di restituzione. L'annotazione specifica che la funzione può liberamente leggere e scrivere nel buffer di un solo elemento. Il chiamante deve fornire al buffer e inizializzarla.  
   
 > [!NOTE]
->  Ad esempio `_Out_`, `_Inout_` necessario applicare a un valore modificabile.  
+> Ad esempio `_Out_`, `_Inout_` necessario applicare a un valore modificabile.  
   
 ```cpp  
   

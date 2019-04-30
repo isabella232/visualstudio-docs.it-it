@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431951"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656778"
 Un componente di TableAdapter inserisce un set di dati con i dati dal database, in base a uno o più query o stored procedure specificato. Gli oggetti TableAdapter possono anche eseguire aggiunte, aggiornamenti ed eliminazioni sul database per rendere persistenti le modifiche apportate al set di dati. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.  
   
 > [!NOTE]
->  La classe TableAdapter generati dalle finestre di progettazione di Visual Studio. Se si sta creando i set di dati a livello di codice, quindi usare DataAdapter, ovvero una classe .NET Framework.  
+> La classe TableAdapter generati dalle finestre di progettazione di Visual Studio. Se si sta creando i set di dati a livello di codice, quindi usare DataAdapter, ovvero una classe .NET Framework.  
   
  Per informazioni dettagliate sulle operazioni del TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:  
   
@@ -98,7 +98,7 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
  Quando si usa un oggetto TableAdapter, esegue in modo efficace le stesse operazioni con i comandi in genere eseguibili. Ad esempio, quando si chiama l'adapter `Fill` metodo, l'adapter viene eseguito il comando dati relativo `SelectCommand` proprietà e Usa un lettore di dati (ad esempio, <xref:System.Data.SqlClient.SqlDataReader>) per caricare il set dei risultati nella tabella di dati. Analogamente, quando si chiama l'adapter `Update` metodo, viene eseguito il comando appropriato (nelle `UpdateCommand`, `InsertCommand`, e `DeleteCommand` proprietà) per ciascun record nella tabella di dati modificato.  
   
 > [!NOTE]
->  Se non sono sufficienti informazioni della query principale, il `InsertCommand`, `UpdateCommand`, e `DeleteCommand` i comandi vengono creati per impostazione predefinita quando viene generato l'oggetto TableAdapter. Se la query TableAdapter principale è più di un'istruzione SELECT singola tabella, è possibile la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se non vengono generati i comandi seguenti, è possibile ricevere un errore durante l'esecuzione di `TableAdapter.Update` (metodo).  
+> Se non sono sufficienti informazioni della query principale, il `InsertCommand`, `UpdateCommand`, e `DeleteCommand` i comandi vengono creati per impostazione predefinita quando viene generato l'oggetto TableAdapter. Se la query TableAdapter principale è più di un'istruzione SELECT singola tabella, è possibile la finestra di progettazione non sia in grado di generare `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se non vengono generati i comandi seguenti, è possibile ricevere un errore durante l'esecuzione di `TableAdapter.Update` (metodo).  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
  Oltre a `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, vengono creati oggetti TableAdapter con metodi che possono essere eseguiti direttamente sul database. Questi metodi (`TableAdapter.Insert`, `TableAdapter.Update`, e `TableAdapter.Delete`) può essere chiamato direttamente per manipolare i dati nel database. Ciò significa che è possibile chiamare questi metodi singoli dal codice anziché chiamare `TableAdapter.Update` per la gestione di inserimenti, aggiornamenti ed eliminazioni in sospeso per la tabella di dati associati.  

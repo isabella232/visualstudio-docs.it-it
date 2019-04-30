@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432403"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
  Quando l'utente seleziona il comando **Convalida architettura** in un diagramma livello, viene richiamato il metodo di convalida standard, seguito dalle eventuali estensioni di convalida installate.  
   
 > [!NOTE]
->  La convalida in un diagramma livello è diversa dalla convalida nei diagrammi UML. In un diagramma livello lo scopo principale consiste nel confrontare il diagramma con il codice programma in altre parti della soluzione.  
+> La convalida in un diagramma livello è diversa dalla convalida nei diagrammi UML. In un diagramma livello lo scopo principale consiste nel confrontare il diagramma con il codice programma in altre parti della soluzione.  
   
  È possibile creare un pacchetto dell'estensione di convalida dei livelli in un progetto VSIX (Visual Studio Integration Extension), che è possibile distribuire ad altri utenti di Visual Studio. È possibile inserire solo il validator in un progetto VSIX oppure combinarlo con altre estensioni nello stesso progetto VSIX. È consigliabile scrivere il codice del validator in un progetto di Visual Studio a se stante anziché nello stesso progetto di altre estensioni.  
   
 > [!WARNING]
->  Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.  
+> Dopo aver creato un progetto di convalida, copiare il [codice di esempio](#example) disponibile alla fine di questo argomento e quindi modificarlo in base alle esigenze.  
   
 ## <a name="requirements"></a>Requisiti  
  Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
     Il modello crea un progetto che contiene un piccolo esempio.  
   
    > [!WARNING]
-   >  Modello makethe funziona correttamente:  
+   > Modello makethe funziona correttamente:  
    > 
    > - Modificare le chiamate a `LogValidationError` in modo da rimuovere gli argomenti facoltativi `errorSourceNodes` e `errorTargetNodes`.  
    >   - Se si usano proprietà personalizzate, applicare l'aggiornamento indicato in [aggiungere proprietà personalizzate ai diagrammi livello](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
 4. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).  
   
    > [!NOTE]
-   >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
+   > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
 5. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\*. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
@@ -115,7 +115,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
 7. Per testare l'estensione, vedere [Debug della convalida dei livelli](#debugging).  
   
     > [!NOTE]
-    >  Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
+    > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
 8. Per installare il progetto VSIX nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** nella directory **bin** del progetto VSIX. Copiare il file nel computer in cui si vuole installare il progetto VSIX. Fare doppio clic sul file VSIX in Esplora risorse (Esplora file in Windows 8).  
   
@@ -147,7 +147,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
 - Quando si individua un errore, è possibile segnalarlo usando `LogValidationError()`.  
   
   > [!WARNING]
-  >  Non usare i parametri facoltativi di `LogValidationError`.  
+  > Non usare i parametri facoltativi di `LogValidationError`.  
   
   Quando l'utente richiama il comando di menu **Convalida architettura** , il sistema di runtime dei livelli analizza i livelli e i rispettivi elementi per generare un grafico. Il grafico è costituito da quattro parti:  
   
@@ -162,7 +162,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   Una volta creato il grafico, viene chiamato il metodo di convalida standard. Al termine, tutti i metodi di convalida delle eventuali estensioni installate vengono chiamati in base a un ordine non specificato. Il grafico viene passato a ogni metodo `ValidateArchitecture` , che può analizzarlo e segnalare gli eventuali errori trovati.  
   
 > [!NOTE]
->  Questo processo è diverso dal processo di convalida applicato ai diagrammi UML e dal processo di convalida che può essere usato in linguaggi specifici del dominio.  
+> Questo processo è diverso dal processo di convalida applicato ai diagrammi UML e dal processo di convalida che può essere usato in linguaggi specifici del dominio.  
   
  I metodi di convalida non devono modificare il modello di livello o il codice convalidato.  
   

@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435242"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedura: Implementare progetti annidati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Quando si crea un tipo di progetto annidato esiste sono un alcuni passaggi aggiu
 1. L'ambiente di sviluppo integrato (IDE) carica le informazioni di avvio e file di progetto del progetto padre chiamando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia. Il progetto principale viene creato e aggiunto alla soluzione.  
   
    > [!NOTE]
-   >  A questo punto, è abbastanza recente del processo per il progetto principale creare il progetto annidato perché è necessario creare il progetto principale prima di possono creare i progetti figlio. Dopo questa sequenza, il progetto principale può applicare le impostazioni per i progetti figlio e i progetti figlio possono acquisire le informazioni dai progetti padre se necessario. Questa sequenza è se sia necessaria dai client, ad esempio Esplora soluzioni e controllo del codice sorgente (SCC).  
+   > A questo punto, è abbastanza recente del processo per il progetto principale creare il progetto annidato perché è necessario creare il progetto principale prima di possono creare i progetti figlio. Dopo questa sequenza, il progetto principale può applicare le impostazioni per i progetti figlio e i progetti figlio possono acquisire le informazioni dai progetti padre se necessario. Questa sequenza è se sia necessaria dai client, ad esempio Esplora soluzioni e controllo del codice sorgente (SCC).  
   
     Il progetto padre deve attendere il <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metodo deve essere chiamato dall'IDE prima può creare annidato (figlio) o più progetti.  
   
@@ -57,7 +57,7 @@ Quando si crea un tipo di progetto annidato esiste sono un alcuni passaggi aggiu
     Se non esiste già, il progetto principale viene creato un GUID per ogni progetto annidato chiamando `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` un'API COM viene chiamata quando viene creato un GUID. Per altre informazioni, vedere `CoCreateGuid` e GUID in MSDN Library.  
+   > `CoCreateGuid` un'API COM viene chiamata quando viene creato un GUID. Per altre informazioni, vedere `CoCreateGuid` e GUID in MSDN Library.  
   
     Il progetto principale archivia questo GUID nel file di progetto deve essere recuperato la prossima volta che viene aperto nell'IDE. Vedere il passaggio 4 per altre informazioni relative al chiamante di `AddVirtualProjectEX` per recuperare il `guidProjectID` per il progetto figlio.  
   
@@ -66,7 +66,7 @@ Quando si crea un tipo di progetto annidato esiste sono un alcuni passaggi aggiu
      Poiché i progetti padre e figlio vengono creata un'istanza a livello di codice, è possibile impostare proprietà per i progetti annidati a questo punto.  
   
     > [!NOTE]
-    >  Non solo si ricevono le informazioni sul contesto dal progetto annidato, ma è anche possibile richiedere se il progetto principale dispone di alcun contesto per quell'elemento controllando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. In tal modo, è possibile aggiungere altri attributi della Guida dinamica e le opzioni di menu specifiche per singoli progetti annidati.  
+    > Non solo si ricevono le informazioni sul contesto dal progetto annidato, ma è anche possibile richiedere se il progetto principale dispone di alcun contesto per quell'elemento controllando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. In tal modo, è possibile aggiungere altri attributi della Guida dinamica e le opzioni di menu specifiche per singoli progetti annidati.  
   
 10. La gerarchia viene compilata per la visualizzazione in Esplora soluzioni con una chiamata al <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (metodo).  
   

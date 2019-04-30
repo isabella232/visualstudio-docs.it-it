@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423972"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 La descrizione comando informazioni sul parametro di IntelliSense offre agli utenti con suggerimenti su dove si trovano in un costrutto di linguaggio.
@@ -27,7 +27,7 @@ La descrizione comando informazioni sul parametro di IntelliSense offre agli ute
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [estensione dell'Editor e servizi di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Come funzionano le descrizioni comandi informazioni parametro
  Quando si digita un'istruzione nell'editor, il pacchetto VSPackage Visualizza una finestra piccola della descrizione comando contenente la definizione dell'istruzione la digitazione. Ad esempio, se si digita un'istruzione di Microsoft Foundation Classes (MFC) (ad esempio `pMainFrame ->UpdateWindow`) e premere un tasto della parentesi di apertura per iniziare a elencare i parametri, viene visualizzato un suggerimento sul metodo visualizzazione della definizione del `UpdateWindow` (metodo).

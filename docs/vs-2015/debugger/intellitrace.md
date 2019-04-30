@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440156"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
 |**Non supportato**|- C++, in altri linguaggi e script<br />-Windows Services, Silverlight, Xbox o [!INCLUDE[winmobile](../includes/winmobile-md.md)] App|  
   
 > [!NOTE]
->  Se si desidera eseguire il debug di un processo già in esecuzione, non è possibile usare IntelliTrace. È necessario avviare IntelliTrace all'avvio del processo.  
+> Se si desidera eseguire il debug di un processo già in esecuzione, non è possibile usare IntelliTrace. È necessario avviare IntelliTrace all'avvio del processo.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Perché eseguire il debug con IntelliTrace?  
  Il debug tradizionale o *attivo* mostra solo lo stato corrente dell'applicazione con dati limitati sugli eventi passati. È necessario dedurre tali eventi dallo stato corrente dell'applicazione oppure ricrearli rieseguendo l'applicazione.  
@@ -161,7 +161,7 @@ La versione più recente di questo argomento è reperibile in [IntelliTrace](htt
 - Puntatori agli oggetti figlio di primo livello, ma non ai relativi valori, se non quelli che indicano se lo stato è null oppure no  
   
 > [!NOTE]
->  IntelliTrace raccoglie solo i primi 256 oggetti in matrici e i primi 256 caratteri per le stringhe.  
+> IntelliTrace raccoglie solo i primi 256 oggetti in matrici e i primi 256 caratteri per le stringhe.  
   
  Visualizzare [configurare IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

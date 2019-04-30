@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436285"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUID e ID delle barre degli strumenti di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58966181"
 In questo argomento elenca i valori GUID e ID delle barre degli strumenti che sono inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nel file con estensione vsct installati come parte di Visual Studio SDK. Per altre informazioni, vedere [IDE-Defined comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Molte delle barre degli strumenti disponibili per Visual Studio non sono definite da Visual Studio e i rispettivi GUID e valori di ID non sono pubblici. Questo argomento vengono elencate solo le barre degli strumenti che vengono definite nei file con estensione vsct Visual Studio SDK.
+> Molte delle barre degli strumenti disponibili per Visual Studio non sono definite da Visual Studio e i rispettivi GUID e valori di ID non sono pubblici. Questo argomento vengono elencate solo le barre degli strumenti che vengono definite nei file con estensione vsct Visual Studio SDK.
 
  Per altre informazioni su come utilizzare gli oggetti dell'IDE che sono definiti in file con estensione vsct, vedere [estensione di menu e comandi](../../extensibility/extending-menus-and-commands.md).
 
@@ -110,7 +110,7 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
  Le barre degli strumenti possono essere visualizzati direttamente nell'IDE o nelle finestre degli strumenti, ad esempio **Esplora soluzioni**. Finestre degli strumenti non sono definite nel file con estensione vsct, barre degli strumenti finestra degli strumenti non è definito gli elementi padre. Al contrario, vengono inseriti nel codice. La tabella seguente illustra le barre degli strumenti visualizzati nelle finestre degli strumenti nell'IDE e dei gruppi di comandi che contengono.
 
 > [!NOTE]
->  Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo dove diversamente specificato usando la sintassi di coppia GUID: ID. Per una barra degli strumenti viene specificato un GUID, si applica anche ai gruppi che derivano da tale barra degli strumenti.
+> Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo dove diversamente specificato usando la sintassi di coppia GUID: ID. Per una barra degli strumenti viene specificato un GUID, si applica anche ai gruppi che derivano da tale barra degli strumenti.
 
 |Finestra degli strumenti|ToolBar|Gruppi|
 |-----------------|-------------|------------|

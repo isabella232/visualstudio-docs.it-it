@@ -10,12 +10,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 51fac40d0bffe570ac1f374872fb4572c1c83441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432060"
 ---
 # <a name="source-control-configuration-details"></a>Dettagli di configurazione del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Per implementare il controllo del codice sorgente, è necessario configurare cor
  Prima di un progetto o un editor Salva un file, è necessario chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> o <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Per i file di progetto, queste chiamate vengono completate automaticamente per la soluzione, che conosce il momento di salvare un file di progetto. Gli editor sono responsabili per le chiamate a meno che l'implementazione dell'editor di `IVsPersistDocData2` viene utilizzata la funzione helper <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Se l'editor implementa `IVsPersistDocData2` in questo modo, quindi la chiamata a `IVsQueryEditQuerySave2::QuerySaveFile` o `IVsQueryEditQuerySave2::QuerySaveFiles` viene eseguita automaticamente.  
   
 > [!NOTE]
->  Sempre effettuare queste chiamate preventivamente, vale a dire alla volta quando l'editor è in grado di ricevere un annullamento.  
+> Sempre effettuare queste chiamate preventivamente, vale a dire alla volta quando l'editor è in grado di ricevere un annullamento.  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Richiedere l'autorizzazione per aggiungere, rimuovere o rinominare i file nel progetto  
  Prima di un progetto può aggiungere, rinominare o rimuovere un file o directory, è necessario chiamare appropriato `IVsTrackProjectDocuments2::OnQuery*` metodo per richiedere l'autorizzazione dall'ambiente. Se l'autorizzazione viene concessa, quindi il progetto deve completare l'operazione e quindi chiamare appropriato `IVsTrackProjectDocuments2::OnAfter*` metodo per notificare l'ambiente che l'operazione è stata completata. Il progetto deve chiamare i metodi del <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interfaccia per tutti i file (ad esempio, i file speciali) e non solo i file padre. Le chiamate di file sono obbligatori, ma le chiamate di directory sono facoltative. Se il progetto contiene le informazioni della directory, quindi è opportuno chiamare appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> metodi, ma se non dispone di questa informazioni, l'ambiente verrà dedotto le informazioni della directory.  

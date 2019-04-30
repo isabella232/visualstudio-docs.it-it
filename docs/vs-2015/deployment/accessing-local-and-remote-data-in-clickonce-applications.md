@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8337fa86173b62a6576be6d3abe8d76dbef427d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427243"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accesso a dati locali e remoti in applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  La directory dei dati è destinata a dati gestiti dall'applicazione, ossia dati archiviati e gestiti in modo esplicito dall'applicazione. Tutti i file statici senza dipendenze non contrassegnati come "data" nel manifesto dell'applicazione risiedono invece nella directory delle applicazioni. In questa directory si trovano i file eseguibili dell'applicazione (exe) e gli assembly.  
   
 > [!NOTE]
->  Quando un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] viene disinstallata, viene rimossa anche la directory dei dati. Non usare mai la directory dei dati per archiviare dati gestiti dall'utente finale, ad esempio i documenti.  
+> Quando un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] viene disinstallata, viene rimossa anche la directory dei dati. Non usare mai la directory dei dati per archiviare dati gestiti dall'utente finale, ad esempio i documenti.  
   
 #### <a name="marking-data-files-in-a-clickonce-distribution"></a>Contrassegno dei file di dati in una distribuzione ClickOnce  
  Per inserire un file esistente nella directory dei dati, è necessario contrassegnarlo come file di dati nel file manifesto dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] . Per altre informazioni, vedere [Procedura: Includere un file di dati in un'applicazione ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
@@ -52,7 +52,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  Per la lettura dalla directory dei dati, l'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] deve richiedere le autorizzazioni di lettura. Analogamente, per la scrittura nella directory sono necessarie le autorizzazioni di scrittura. L'applicazione ottiene automaticamente queste autorizzazioni se è configurata per l'esecuzione con attendibilità totale. Per altre informazioni sull'elevazione delle autorizzazioni per l'applicazione utilizzando l'elevazione delle autorizzazioni o distribuzione di applicazioni attendibili, vedere [protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Se l'organizzazione non usa la distribuzione di applicazioni attendibili e ha disattivato l'elevazione delle autorizzazioni, l'asserzione delle autorizzazioni non riesce.  
+> Se l'organizzazione non usa la distribuzione di applicazioni attendibili e ha disattivato l'elevazione delle autorizzazioni, l'asserzione delle autorizzazioni non riesce.  
   
  Una volta ottenute queste autorizzazioni, l'applicazione può accedere alla directory dei dati usando le chiamate al metodo nelle classi contenute in <xref:System.IO>. È possibile ottenere il percorso della directory dei dati all'interno di un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] di Windows Form usando la proprietà <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> definita nella proprietà <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> di <xref:System.Deployment.Application.ApplicationDeployment>. È il modo consigliato più appropriato per l'accesso ai dati. Il seguente esempio di codice mostra la procedura per un file di testo denominato CSV.txt incluso nella distribuzione come file di dati.  
   

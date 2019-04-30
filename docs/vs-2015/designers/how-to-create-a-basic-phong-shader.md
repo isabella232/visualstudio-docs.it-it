@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438424"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procedura: Creare uno shader con phong di base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
    La figura seguente illustra il grafico shader completato e un'anteprima dello shader applicato a un modello di teiera.  
   
 > [!NOTE]
->  Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).  
+> Per illustrare meglio l'effetto dello shader in questa figura, è stato specificato un colore arancione usando il parametro **MaterialDiffuse** dello shader e un colore metallizzato usando i parametri **MaterialSpecular** e **MaterialSpecularPower**. Per informazioni sui parametri di materiale, vedere la sezione Anteprima degli shader in [Finestra di progettazione shader](../designers/shader-designer.md).  
   
  ![Grafico shader e anteprima del relativo effetto](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ Questo documento illustra come usare la finestra di progettazione shader e il li
  La figura seguente illustra lo shader descritto in questo documento applicato a un modello 3D. La proprietà **MaterialSpecular** è impostata su (1.00, 0.50, 0.20, 0.00) e la proprietà **MaterialSpecularPower** è impostata su 16.  
   
 > [!NOTE]
->  La proprietà **MaterialSpecular** determina la finitura apparente della superficie. Una superficie molto lucente come il vetro o la plastica tende ad avere un colore speculare equivalente a una sfumatura brillante di bianco, mentre una superficie metallica tende ad avere un colore speculare simile al relativo colore diffuso. Una superficie con finitura satinata tende invece ad avere un colore speculare equivalente a una sfumatura scura di grigio.  
+> La proprietà **MaterialSpecular** determina la finitura apparente della superficie. Una superficie molto lucente come il vetro o la plastica tende ad avere un colore speculare equivalente a una sfumatura brillante di bianco, mentre una superficie metallica tende ad avere un colore speculare simile al relativo colore diffuso. Una superficie con finitura satinata tende invece ad avere un colore speculare equivalente a una sfumatura scura di grigio.  
 >   
->  La proprietà **MaterialSpecularPower** determina l'intensità delle evidenziazioni speculari. Potenze speculari elevate simulano evidenziazioni deboli e più localizzate, mentre potenze speculari molto deboli simulano evidenziazioni intense e ampie che possono saturare eccessivamente e nascondere il colore dell'intera superficie.  
+> La proprietà **MaterialSpecularPower** determina l'intensità delle evidenziazioni speculari. Potenze speculari elevate simulano evidenziazioni deboli e più localizzate, mentre potenze speculari molto deboli simulano evidenziazioni intense e ampie che possono saturare eccessivamente e nascondere il colore dell'intera superficie.  
   
  ![Illuminazione Phong applicata a un modello](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

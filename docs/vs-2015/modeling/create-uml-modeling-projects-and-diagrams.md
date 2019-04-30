@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433368"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Creare diagrammi e progetti di modellazione UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
  I diagrammi di modellazione UML e i diagrammi livello possono essere usati solo all'interno di un progetto di modello. Ogni progetto di modello include un modello UML condiviso e alcuni diagrammi UML. Ogni diagramma è una visualizzazione parziale del modello. Il modello UML include tutti gli elementi dei diagrammi UML e può essere visualizzato tramite Esplora modelli UML. Per informazioni sui modelli e la loro relazione con i diagrammi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md). Per informazioni sui modelli di progetto nel controllo della versione, vedere [gestire modelli e diagrammi nel controllo della versione](../modeling/manage-models-and-diagrams-under-version-control.md) e [strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  Esiste un altro tipo di diagramma, il diagramma classi .NET, usato per visualizzare il codice programma. Per altre informazioni, vedere [progettazione e visualizzazione di classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Esiste un altro tipo di diagramma, il diagramma classi .NET, usato per visualizzare il codice programma. Per altre informazioni, vedere [progettazione e visualizzazione di classi e tipi](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="CreatingModelingDiagrams"></a> Creare un diagramma in un progetto di modellazione  
  Per individuare le versioni di Visual Studio che supportano questa funzionalità, vedere [Supporto delle versioni per gli strumenti di architettura e modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -76,7 +76,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
 1. Nelle **Esplora soluzioni**, la modellazione di fare clic sul nodo del progetto.  
   
     > [!NOTE]
-    >  Il progetto di modellazione contiene una cartella di definizione di modello denominata **ModelDefinition**.  
+    > Il progetto di modellazione contiene una cartella di definizione di modello denominata **ModelDefinition**.  
   
 2. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.  
   
@@ -87,7 +87,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
      Il diagramma modello verrà aperto e verrà visualizzato nel progetto di modello.  
   
     > [!CAUTION]
-    >  Non aggiungere, copiare o trascinare file di diagramma esistenti in altri progetti di modello o in altre posizioni nella soluzione. Ciò provocherebbe la scomparsa di elementi dai diagrammi copiati oppure errori all'apertura dei diagrammi. È necessario aprire il file di diagramma dal progetto di modello in cui è stato creato. Un diagramma UML è infatti una visualizzazione del modello di proprietà del rispettivo progetto di modello. Per copiare un file di diagramma, creare un nuovo diagramma e quindi copiare gli elementi dal diagramma di origine al nuovo diagramma. Per altre informazioni, vedere [diagrammi e progetti di modellazione di risoluzione dei problemi](#TroubleshootingModelingProjects).  
+    > Non aggiungere, copiare o trascinare file di diagramma esistenti in altri progetti di modello o in altre posizioni nella soluzione. Ciò provocherebbe la scomparsa di elementi dai diagrammi copiati oppure errori all'apertura dei diagrammi. È necessario aprire il file di diagramma dal progetto di modello in cui è stato creato. Un diagramma UML è infatti una visualizzazione del modello di proprietà del rispettivo progetto di modello. Per copiare un file di diagramma, creare un nuovo diagramma e quindi copiare gli elementi dal diagramma di origine al nuovo diagramma. Per altre informazioni, vedere [diagrammi e progetti di modellazione di risoluzione dei problemi](#TroubleshootingModelingProjects).  
   
 #### <a name="to-create-a-blank-modeling-project"></a>Per creare un progetto di modello vuoto  
   
@@ -111,7 +111,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
      Il diagramma verrà rimosso dal progetto e dal file system. Gli elementi mostrati nel diagramma non vengono rimossi dalle **Esplora modelli UML**.  
   
     > [!NOTE]
-    >  Ogni diagramma ha due file, uno affiliato all'altro. Ad esempio, se è presente un diagramma componente con nome `CD1`, sarà necessario eliminare il file con nome `CD1.componentdiagram`. Il file secondario con nome `CD1.componentdiagram.layout` verrà eliminato automaticamente.  
+    > Ogni diagramma ha due file, uno affiliato all'altro. Ad esempio, se è presente un diagramma componente con nome `CD1`, sarà necessario eliminare il file con nome `CD1.componentdiagram`. Il file secondario con nome `CD1.componentdiagram.layout` verrà eliminato automaticamente.  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Per escludere temporaneamente un diagramma da un progetto  
   
@@ -120,14 +120,14 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
      Il diagramma verrà rimosso dal progetto, ma non dal file system.  
   
     > [!NOTE]
-    >  Gli elementi mostrati nel diagramma non vengono rimossi dalle **Esplora modelli UML**.  
+    > Gli elementi mostrati nel diagramma non vengono rimossi dalle **Esplora modelli UML**.  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Per ripristinare un diagramma escluso temporaneamente in un progetto  
   
 1. Nelle **Esplora soluzioni**, la modellazione di fare clic sul nodo del progetto.  
   
     > [!NOTE]
-    >  Il progetto di modellazione contiene una cartella di definizione di modello denominata **ModelDefinition**.  
+    > Il progetto di modellazione contiene una cartella di definizione di modello denominata **ModelDefinition**.  
   
 2. Nel **Project** menu, fare clic su **Aggiungi elemento esistente**.  
   
@@ -136,7 +136,7 @@ I modelli UML semplificano la comprensione, l'esame e la progettazione di sistem
      Il diagramma modello verrà aperto e verrà visualizzato nel progetto di modello.  
   
     > [!NOTE]
-    >  Ogni diagramma ha una coppia di file nel file system. Non selezionare un file con estensione `.layout`. Visual Studio non supporta inoltre l'aggiunta di diagrammi UML esistenti a più progetti di modellazione. Ogni file di diagramma deve essere aperto nel progetto di modello in cui è stato creato. Un diagramma UML mostra infatti una visualizzazione del modello di proprietà del rispettivo progetto di modello.  
+    > Ogni diagramma ha una coppia di file nel file system. Non selezionare un file con estensione `.layout`. Visual Studio non supporta inoltre l'aggiunta di diagrammi UML esistenti a più progetti di modellazione. Ogni file di diagramma deve essere aperto nel progetto di modello in cui è stato creato. Un diagramma UML mostra infatti una visualizzazione del modello di proprietà del rispettivo progetto di modello.  
   
 ## <a name="NonModelDiagrams"></a> Diagrammi che non necessitano di progetti di modellazione  
  I tipi di diagramma seguenti non fanno parte di un modello di progetto:  

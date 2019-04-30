@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444695"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Procedura: Modificare una configurazione di distribuzione di SharePoint
   È possibile creare una configurazione di distribuzione o modificare una configurazione di distribuzione esistente. Ad esempio, si potrebbe eseguire un singolo passaggio o modificare l'ordine dei passaggi del processo di distribuzione. È possibile creare o modificare le configurazioni di distribuzione poiché non è possibile modificare le configurazioni predefinite e a livello di codice aggiunte.
@@ -39,7 +39,7 @@ ms.locfileid: "60093709"
 4. Nel **passaggi di distribuzione disponibili** riquadro, scegliere i passaggi che si desidera aggiungere alla configurazione della distribuzione, scegliere il (**>**), quindi scegliere il **OK** pulsante.
 
     > [!NOTE]
-    >  Se è stato configurato un comando di pre-distribuzione o post-distribuzione, questi passaggi da eseguire solo se sono state aggiunte a una configurazione di distribuzione personalizzato.
+    > Se è stato configurato un comando di pre-distribuzione o post-distribuzione, questi passaggi da eseguire solo se sono state aggiunte a una configurazione di distribuzione personalizzato.
 
 ## <a name="change-the-active-deployment-configuration"></a>Modificare la configurazione distribuzione attiva
 

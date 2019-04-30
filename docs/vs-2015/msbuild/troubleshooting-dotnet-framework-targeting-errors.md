@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7795a5577a385542828a3d7c14670696f630544d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430442"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Questo argomento illustra gli errori di MSBuild che possono verificarsi a causa 
 ```  
   
 > [!NOTE]
->  Dopo aver chiuso e riaperto il progetto, è necessario ricompilarlo per verificare che tutti i riferimenti vengano risolti correttamente.  
+> Dopo aver chiuso e riaperto il progetto, è necessario ricompilarlo per verificare che tutti i riferimenti vengano risolti correttamente.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Destinare una versione di .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   

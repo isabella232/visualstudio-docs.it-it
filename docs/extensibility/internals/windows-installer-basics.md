@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431022"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 Il programma di installazione di Windows installa e Disinstalla applicazioni o i prodotti software nel computer dell'utente, eseguire queste attività in unità denominate i componenti di Windows Installer (denominati talvolta WICs o solo i componenti). Un GUID identifica ogni WIC, ovvero l'unità di base di conteggio dei riferimenti per le configurazioni usando Windows Installer e installazione.
@@ -53,7 +53,7 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
  Due set di regole determinano la distribuzione di risorse tramite i componenti del programma di installazione. Un set di regole viene mantenuto dal programma di installazione di Windows, anche se è necessario applicare il secondo set come autore di installazione.
 
 > [!NOTE]
->  Imposizione di regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, vengono avvisati trattare queste regole come procedure consigliate. Per altre informazioni, vedere [la convalida di un Database di installazione](/windows/desktop/Msi/validating-an-installation-database) e [convalida dei pacchetti](/windows/desktop/Msi/package-validation).
+> Imposizione di regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, vengono avvisati trattare queste regole come procedure consigliate. Per altre informazioni, vedere [la convalida di un Database di installazione](/windows/desktop/Msi/validating-an-installation-database) e [convalida dei pacchetti](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Regole applicate a livello di programma di installazione
 

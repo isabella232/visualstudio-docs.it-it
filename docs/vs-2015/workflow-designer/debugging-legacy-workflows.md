@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439185"
 ---
 # <a name="debugging-legacy-workflows"></a>Debug dei flussi di lavoro legacy
 Se si sta usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] in [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] per compilare applicazioni [!INCLUDE[wf](../includes/wf-md.md)] destinate a .NET Framework 3.0 o 3.5, è possibile eseguire il debug dei flussi di lavoro come con qualsiasi altro programma impostando punti di interruzione, creando connessioni ai processi ed esaminando i thread e lo stack di chiamate. È inoltre possibile eseguire il debug in modalità remota.  
   
 > [!NOTE]
->  Se più versioni di Visual Studio vengono installate e disinstallate sul computer, il debug WF3 potrebbe non riuscire per una delle due seguenti cause:  
+> Se più versioni di Visual Studio vengono installate e disinstallate sul computer, il debug WF3 potrebbe non riuscire per una delle due seguenti cause:  
 > 
 > - I punti di interruzione non vengono rilevati.  
 >   - Viene visualizzato il seguente messaggio:  

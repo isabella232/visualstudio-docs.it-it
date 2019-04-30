@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435476"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procedura: Creare un modello di integrazione applicativa dei dati
   È possibile creare un modello di integrazione applicativa dei dati (BDC) usando il modello per tale tipo di elemento e quindi aggiungere il modello a qualsiasi progetto SharePoint. Per altre informazioni, vedere [creare un modello di integrazione applicativa dei dati business](../sharepoint/creating-a-business-data-connectivity-model.md). Per altre informazioni su come progettare il modello, vedere [progettare un modello di integrazione applicativa dei dati business](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106657"
 1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
     > [!NOTE]
-    >  Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegli **File** > **nuovo progetto**.
+    > Se l'IDE è configurato per usare le impostazioni di sviluppo di Visual Basic, scegli **File** > **nuovo progetto**.
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106657"
      Si testerà il modello nel sito di SharePoint specificato.
 
     > [!IMPORTANT]
-    >  Poiché i modelli BDC supportano solo soluzioni farm, è necessario distribuire il progetto come soluzione farm.
+    > Poiché i modelli BDC supportano solo soluzioni farm, è necessario distribuire il progetto come soluzione farm.
 
      Viene creato un progetto SharePoint vuoto.
 

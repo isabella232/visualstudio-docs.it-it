@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 460da9a44b588cba92bb10efd9fd191457469c09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6109e2eeb94481a2bff4a6467c490ec656d4c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442007"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ IDiaTable : IEnumUnknown
  La prima funzione `ShowTableNames`, vengono visualizzati i nomi di tutte le tabelle nella sessione. La seconda funzione `GetTable`, esegue la ricerca di tutte le tabelle per una tabella che implementa un'interfaccia specificata. La terza funzione `UseTable`, viene illustrato come utilizzare il `GetTable` (funzione).  
   
 > [!NOTE]
->  `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
+> `CDiaBSTR` è una classe che esegue il wrapping di un `BSTR` e gestisce automaticamente liberazione della stringa quando la creazione di istanze esce dall'ambito.  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  

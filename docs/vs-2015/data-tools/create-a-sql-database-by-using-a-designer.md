@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436961"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Creare un database SQL usando una finestra di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ ms.locfileid: "60069783"
 6. Aggiungere i dati per almeno tre ordini.  
   
     > [!IMPORTANT]
-    >  Verificare che tutti gli ID ordine e le quantità di ordini siano valori Integer e che ogni ID cliente corrisponda a un valore specificato nella colonna CustomerID della tabella Customers.  
+    > Verificare che tutti gli ID ordine e le quantità di ordini siano valori Integer e che ogni ID cliente corrisponda a un valore specificato nella colonna CustomerID della tabella Customers.  
   
 7. Nella barra dei menu, selezionare **File** > **Salva tutto**.  
   
 8. Nella barra dei menu, selezionare **File** > **Chiudi soluzione**.  
   
     > [!NOTE]
-    >  Come procedura consigliata, è possibile eseguire il backup del file del database appena creato copiandolo, quindi incollandolo in un altro percorso o assegnando alla copia un nome diverso.  
+    > Come procedura consigliata, è possibile eseguire il backup del file del database appena creato copiandolo, quindi incollandolo in un altro percorso o assegnando alla copia un nome diverso.  
   
 ## <a name="next-steps"></a>Passaggi successivi  
  Ora che avete un file di database locale con alcuni dati di esempio, è possibile completare una delle procedure dettagliate che illustrano le attività di database.

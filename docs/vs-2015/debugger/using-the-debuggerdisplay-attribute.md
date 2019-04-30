@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437750"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilizzo dell'attributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58968338"
  La valutazione da parte del debugger di questa chiamata implicita a `ToString()` dipende da un'impostazione utente nella finestra di dialogo **Strumenti / Opzioni / Debug** . In Visual Basic questa valutazione implicita di `ToString()` non è implementata.  
   
 > [!IMPORTANT]
->  Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.  
+> Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.  
   
  Nella tabella riportata di seguito vengono visualizzati alcuni utilizzi possibili dell'attributo `DebuggerDisplay` e alcuni output di esempio.  
   

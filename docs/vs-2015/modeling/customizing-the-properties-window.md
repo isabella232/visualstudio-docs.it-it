@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433225"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizzazione della finestra Proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "60088795"
  Per inoltrare una proprietà, si definisce un descrittore di tipi di dominio. Se si dispone di una relazione di dominio tra due classi di dominio, è possibile utilizzare un descrittore di tipi di dominio per impostare una proprietà di dominio nella prima classe per il valore della proprietà del dominio nella classe di dominio di secondo. Ad esempio, se si dispone di una relazione tra un **libro** della classe di dominio e un **autore** della classe di dominio, è possibile usare un descrittore di tipi di dominio per rendere il **nome** proprietà di un Del libro **autore** vengono visualizzate nella finestra Proprietà quando l'utente seleziona il libro.  
   
 > [!NOTE]
->  L'inoltro di proprietà interessa solo la finestra Proprietà quando l'utente modifica un modello. Non definisce una proprietà di dominio nella classe ricevente. Se si vuole accedere alla proprietà di dominio inoltrati in altre parti della definizione del linguaggio specifico di dominio o nel codice programma, è necessario accedere all'elemento di inoltro.  
+> L'inoltro di proprietà interessa solo la finestra Proprietà quando l'utente modifica un modello. Non definisce una proprietà di dominio nella classe ricevente. Se si vuole accedere alla proprietà di dominio inoltrati in altre parti della definizione del linguaggio specifico di dominio o nel codice programma, è necessario accedere all'elemento di inoltro.  
   
  La procedura seguente si presuppone che sia stato creato un modello DSL. I primi passaggi riepilogano i prerequisiti.  
   
@@ -121,7 +121,7 @@ ms.locfileid: "60088795"
         Una nuova voce viene visualizzata sotto il **tipi di dominio** nodo.  
   
        > [!WARNING]
-       >  La voce di menu per il nodo radice DSL, non il **tipi di dominio** nodo.  
+       > La voce di menu per il nodo radice DSL, non il **tipi di dominio** nodo.  
   
    2. Nella finestra Proprietà, impostare il nome e lo spazio dei nomi del nuovo tipo.  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60088795"
   È anche possibile fornire una rappresentazione grafica del valore della proprietà che verrà visualizzato nella griglia delle proprietà. A tale scopo, eseguire l'override `GetPaintValueSupported`, e `PaintValue`.  Per altre informazioni, vedere <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Aggiungere il codice in un file di codice separato nella **Dsl** progetto.  
+> Aggiungere il codice in un file di codice separato nella **Dsl** progetto.  
   
  Ad esempio:  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  È possibile fornire un elenco di valori per un utente di scegliere.  
   
 > [!NOTE]
->  Questa tecnica offre un elenco di valori che possono cambiare in fase di esecuzione. Se si desidera fornire un elenco che non cambia, è consigliabile invece con il tipo della proprietà di dominio di un tipo enumerato.  
+> Questa tecnica offre un elenco di valori che possono cambiare in fase di esecuzione. Se si desidera fornire un elenco che non cambia, è consigliabile invece con il tipo della proprietà di dominio di un tipo enumerato.  
   
  Per definire un elenco di valori standard, si aggiunge alla proprietà del dominio un attributo CLR che ha il formato seguente:  
   

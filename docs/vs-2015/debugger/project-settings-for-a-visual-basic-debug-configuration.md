@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 390742c7b9dea5b39432a5998ec367555700d890
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 75d45f4aacad052d587950e5656dd74f153eba21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446146"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58967089"
 È possibile modificare le impostazioni di progetto per una configurazione di debug [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] nella finestra di dialogo **Pagine delle proprietà**, come descritto in [Configurazioni di debug e rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.  
   
 > [!WARNING]
->  Questo argomento non si applica alle app Windows Store. Vedere [avviare una sessione di debug (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+> Questo argomento non si applica alle app Windows Store. Vedere [avviare una sessione di debug (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
 ### <a name="debug-tab"></a>Scheda Debug  
   

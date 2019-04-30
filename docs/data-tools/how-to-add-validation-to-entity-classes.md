@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402838"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedura: Aggiungere la convalida a classi di entità
 La *convalida* delle classi di entità rappresenta il processo mediante cui si conferma che i valori immessi negli oggetti dati sono conformi ai vincoli presenti nello schema di un oggetto e alle regole stabilite per l'applicazione. Per ridurre gli errori, è opportuno convalidare i dati prima di inviare aggiornamenti al database sottostante. La convalida consente anche di ridurre il numero potenziale di round trip tra un'applicazione e il database.
@@ -24,7 +24,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
  Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) vengono forniti metodi parziali che consentono agli utenti di estendere il codice generato da progettazione che viene eseguito durante l'inserimento, aggiornamento ed eliminazione di entità complete nonché durante e dopo la singola colonna modifiche.
 
 > [!NOTE]
->  Questo argomento fornisce i passaggi di base per l'aggiunta della convalida alle classi di entità usando il **O/R Designer**. Poiché potrebbe essere difficile seguire questi passaggi generici senza fare riferimento a una classe di entità specifico, viene fornita una procedura dettagliata in cui vengono usati dati effettivi.
+> Questo argomento fornisce i passaggi di base per l'aggiunta della convalida alle classi di entità usando il **O/R Designer**. Poiché potrebbe essere difficile seguire questi passaggi generici senza fare riferimento a una classe di entità specifico, viene fornita una procedura dettagliata in cui vengono usati dati effettivi.
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Aggiungere la convalida per le modifiche al valore in una colonna specifica
  In questa procedura viene mostrato come convalidare i dati quando viene modificato il valore in una colonna. Dato che la convalida viene eseguita nella definizione di classe anziché nell'interfaccia utente, se il valore causa l'esito negativo della convalida, viene generata un'eccezione. Implementare la gestione degli errori per il codice nell'applicazione che tenta di modificare i valori della colonna.
@@ -75,7 +75,7 @@ La *convalida* delle classi di entità rappresenta il processo mediante cui si c
  Oltre a controllare i valori durante le modifiche, è anche possibile convalidare i dati quando si tenta di aggiornare una classe di entità completa. La convalida durante un tentativo di aggiornamento consente di confrontare i valori di più colonne, se richiesto dalle regole business. Nella procedura riportata di seguito viene mostrato come eseguire la convalida quando si tenta di aggiornare una classe di entità completa.
 
 > [!NOTE]
->  Il codice di convalida per gli aggiornamenti alle classi di entità complete viene eseguito nella classe <xref:System.Data.Linq.DataContext> parziale, anziché nella classe parziale di una classe di entità specifica.
+> Il codice di convalida per gli aggiornamenti alle classi di entità complete viene eseguito nella classe <xref:System.Data.Linq.DataContext> parziale, anziché nella classe parziale di una classe di entità specifica.
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Per convalidare i dati durante un aggiornamento a una classe di entità
 

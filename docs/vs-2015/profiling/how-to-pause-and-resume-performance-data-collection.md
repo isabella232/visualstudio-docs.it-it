@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432640"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dati prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Dalla finestra pagina della sessione di profilatura è possibile controllare int
  ![Pagina della sessione di profilatura](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  È anche possibile avviare la sessione di prestazioni con la profilatura sospesa, quindi riprendere la profilatura in un secondo momento dell'esecuzione del programma. Per avviare la sessione di prestazioni con la profilatura sospesa, scegliere il comando **Avvia analisi prestazioni sospesa** dal menu **Debug**.  
+> È anche possibile avviare la sessione di prestazioni con la profilatura sospesa, quindi riprendere la profilatura in un secondo momento dell'esecuzione del programma. Per avviare la sessione di prestazioni con la profilatura sospesa, scegliere il comando **Avvia analisi prestazioni sospesa** dal menu **Debug**.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Per sospendere, riprendere o arrestare la profilatura  
   

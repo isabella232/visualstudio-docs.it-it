@@ -12,12 +12,12 @@ ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f453740e3a3ea3f70e76f104a8a79406a814dea0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82b8ae72fec0d13eb9da9226945d9a55b60ce186
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436160"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedura: Offrire il supporto per il testo nascosto in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "60089198"
      Un puntatore al <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> viene restituito l'oggetto.  
   
     > [!NOTE]
-    >  Quando si chiama `CreateHiddenTextSession`, è possibile specificare un client di testo nascosto (vale a dire <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Il client di testo nascosto si invia una notifica quando la struttura o il testo nascosto viene espanso o compresso dall'utente.  
+    > Quando si chiama `CreateHiddenTextSession`, è possibile specificare un client di testo nascosto (vale a dire <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). Il client di testo nascosto si invia una notifica quando la struttura o il testo nascosto viene espanso o compresso dall'utente.  
   
 4. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> per aggiungere uno o più nuovi descrive le aree contemporaneamente, che specifica le informazioni seguenti nel `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) parametro:  
   
     1. Specificare il valore `hrtConcealed` nella `iType` membro del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura per indicare che si sta creando un'area nascosta, anziché un'area della struttura.  
   
         > [!NOTE]
-        >  Quando sono nascosti aree nascosto, l'editor visualizza automaticamente le righe per le aree nascoste per indicare la presenza.  
+        > Quando sono nascosti aree nascosto, l'editor visualizza automaticamente le righe per le aree nascoste per indicare la presenza.  
   
     2. Specificare se l'area è controllato dal client o dall'editor nel `dwBehavior` i membri del <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> struttura. L'implementazione della struttura intelligente può contenere una combinazione di struttura editor - e controllato dal client e le aree di testo nascosto.

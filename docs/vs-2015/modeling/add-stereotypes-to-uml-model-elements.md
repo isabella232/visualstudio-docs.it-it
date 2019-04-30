@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430493"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Aggiungere stereotipi a elementi del modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ ms.locfileid: "60043646"
 1. Fare doppio clic sull'elemento del modello o la relazione, in un diagramma o nel **Esplora modelli UML**, quindi fare clic su **proprietà**.  
   
     > [!NOTE]
-    >  Per aggiungere gli stessi stereotipi a più elementi, è possibile selezionare più elementi e quindi fare clic con il pulsante destro del mouse su uno di essi.  
+    > Per aggiungere gli stessi stereotipi a più elementi, è possibile selezionare più elementi e quindi fare clic con il pulsante destro del mouse su uno di essi.  
   
 2. Scegliere il **stereotipi** proprietà e selezionare gli stereotipi che si desidera applicare.  
   
      Gli stereotipi selezionati vengono visualizzati tra «frecce di espansione» nell'elemento del modello, per la maggior parte dei tipi di elemento e di relazione.  
   
     > [!NOTE]
-    >  Se non è possibile visualizzare il **stereotipi** proprietà, o se lo stereotipo desiderato non viene visualizzata, verificare che l'elemento del modello si trova all'interno di un pacchetto o un modello a cui è stato collegato il profilo appropriato.  
+    > Se non è possibile visualizzare il **stereotipi** proprietà, o se lo stereotipo desiderato non viene visualizzata, verificare che l'elemento del modello si trova all'interno di un pacchetto o un modello a cui è stato collegato il profilo appropriato.  
   
 3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la **stereotipi** proprietà.  
   

@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440957"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Eseguire il mapping delle dipendenze nelle soluzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 - Visual Studio Professional: Aprire le mappe codici, apportare modifiche limitate ed esplorare il codice.  
   
 > [!WARNING]
->  Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi nella mappa siano visibili (ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi).  
+> Prima di condividere le mappe create in Visual Studio Enterprise con altri utenti che usano Visual Studio Professional, assicurarsi che tutti gli elementi nella mappa siano visibili (ad esempio elementi nascosti, gruppi espansi e collegamenti tra gruppi).  
   
  **È possibile eseguire il mapping delle dipendenze per il codice nei seguenti linguaggi**:  
   
@@ -142,7 +142,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
     In alternativa, usare la tastiera selezionando l'elemento e premendo il tasto più (**+**). Per esplorare i livelli più profondi di codice, effettuare la stessa operazione per gli spazi dei nomi, i tipi e i membri.  
   
    > [!TIP]
-   >  Per altri dettagli di utilizzo del codice mappe mediante il mouse, tastiera e touch, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).  
+   > Per altri dettagli di utilizzo del codice mappe mediante il mouse, tastiera e touch, vedere [cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Per semplificare la mappa e concentrarsi sulle singole parti, scegliere **Filtri** nella barra degli strumenti della mappa codice e selezionare solo i tipi di nodi e di collegamenti desiderati. Ad esempio, è possibile nascondere tutti i contenitori di Cartella soluzione e Assembly.  
   
@@ -157,7 +157,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
     In questo esempio, i collegamenti viola sono chiamate, i collegamenti punteggiati sono riferimenti e i collegamenti azzurro rappresentano l'accesso al campo. I collegamenti verdi possono essere ereditati o possono essere *collegamenti aggregati* che indicano più di un tipo di relazione (o *categoria*).  
   
    > [!TIP]
-   >  Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare determinati tipi di collegamenti, usare le caselle di controllo del riquadro **Filtri** per nascondere i tipi cui non si è interessati.  
+   > Se viene visualizzato un collegamento verde, non necessariamente esiste solo una relazione di ereditarietà. Potrebbero essere presenti anche chiamate al metodo, nascoste dalla relazione di ereditarietà. Per visualizzare determinati tipi di collegamenti, usare le caselle di controllo del riquadro **Filtri** per nascondere i tipi cui non si è interessati.  
   
 7. Per altre informazioni su un elemento o un collegamento, spostare il puntatore su di esso finché non viene visualizzata una descrizione comando. In questo modo vengono mostrati i dettagli di un elemento di codice o delle categorie rappresentate da un collegamento.  
   
@@ -196,7 +196,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
 2. Trascinare gli assembly o i file binari di cui eseguire il mapping dall'esterno di Visual Studio nella mappa. Ad esempio, trascinare assembly o file binari da Esplora risorse o Esplora file.  
   
 > [!NOTE]
->  È possibile trascinare assembly o file binari da Esplora risorse o Esplora file solo se Esplora risorse o Esplora file e Visual Studio vengono eseguiti allo stesso livello di autorizzazione del controllo di accesso utente. Se, ad esempio, il controllo di accesso utente è attivato e si esegue Visual Studio come amministratore, Esplora risorse o Esplora file blocca l'operazione di trascinamento. Per risolvere questo problema, assicurarsi di eseguire le applicazioni allo stesso livello di autorizzazione oppure disattivare il controllo di accesso dell'utente.  
+> È possibile trascinare assembly o file binari da Esplora risorse o Esplora file solo se Esplora risorse o Esplora file e Visual Studio vengono eseguiti allo stesso livello di autorizzazione del controllo di accesso utente. Se, ad esempio, il controllo di accesso utente è attivato e si esegue Visual Studio come amministratore, Esplora risorse o Esplora file blocca l'operazione di trascinamento. Per risolvere questo problema, assicurarsi di eseguire le applicazioni allo stesso livello di autorizzazione oppure disattivare il controllo di accesso dell'utente.  
   
 ## <a name="SeeSpecificSource"></a> Visualizzare dipendenze specifiche  
  Si supponga, ad esempio, di dover eseguire una revisione del codice in alcuni file con modifiche in sospeso. Per visualizzare le dipendenze in queste modifiche, è possibile creare una mappa codice da tali file.  
@@ -218,7 +218,7 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
      È anche possibile trascinare elementi da Esplora soluzioni, Visualizzazione classi o Visualizzatore oggetti in una mappa codice nuova o esistente. Per creare una mappa vuota, vedere [Creare una mappa codice vuota](#GetStarted). Per includere la gerarchia padre per gli elementi, tenere premuto **CTRL** quando si trascinano gli elementi oppure usare il pulsante **Includi padri** nella barra degli strumenti della mappa codice per specificare l'azione predefinita.  
   
     > [!NOTE]
-    >  Quando si aggiungono elementi da un progetto condiviso in più applicazioni, ad esempio Windows Phone o Windows Store, tali elementi vengono visualizzati nella mappa insieme al progetto di applicazione attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.  
+    > Quando si aggiungono elementi da un progetto condiviso in più applicazioni, ad esempio Windows Phone o Windows Store, tali elementi vengono visualizzati nella mappa insieme al progetto di applicazione attivo. Se si cambia il contesto passando a un altro progetto di applicazione e si aggiungono altri elementi dal progetto condiviso, tali elementi vengono visualizzati con il nuovo progetto di applicazione attivo. Le operazioni eseguite con un elemento nella mappa si applicano solo agli elementi che condividono lo stesso contesto.  
   
 4. Per esplorare gli elementi, espanderli. Spostare il puntatore del mouse sopra un elemento, quindi scegliere il pulsante con la freccia di espansione (freccia Giù) quando viene visualizzato.  
   
@@ -353,13 +353,13 @@ Per comprendere le dipendenze in tutto il codice, visualizzarle creando mappe co
  In Visual Studio la mappa viene salvata come file con estensione dgml da condividere con altri utenti di Visual Studio Enterprise e Visual Studio Professional.  
   
 > [!NOTE]
->  Prima di condividere una mappa con gli utenti che usano Visual Studio Professional, assicurarsi di espandere tutti i gruppi, visualizzare i nodi nascosti e i collegamenti tra gruppi e recuperare tutti i nodi eliminati che si vuole vengano visualizzati da altri nella mappa. In caso contrario, altri utenti non saranno in grado di visualizzare questi elementi.  
+> Prima di condividere una mappa con gli utenti che usano Visual Studio Professional, assicurarsi di espandere tutti i gruppi, visualizzare i nodi nascosti e i collegamenti tra gruppi e recuperare tutti i nodi eliminati che si vuole vengano visualizzati da altri nella mappa. In caso contrario, altri utenti non saranno in grado di visualizzare questi elementi.  
 >   
->  Quando si salva una mappa che è contenuta in un progetto di modellazione o che è stata copiata da un progetto di modellazione in un altro percorso potrebbe verificarsi l'errore seguente:  
+> Quando si salva una mappa che è contenuta in un progetto di modellazione o che è stata copiata da un progetto di modellazione in un altro percorso potrebbe verificarsi l'errore seguente:  
 >   
->  "Impossibile salvare *nomeFile* all'esterno della directory del progetto. Gli elementi collegati non sono supportati."  
+> "Impossibile salvare *nomeFile* all'esterno della directory del progetto. Gli elementi collegati non sono supportati."  
 >   
->  In Visual Studio viene visualizzato l'errore, ma viene comunque creata la versione salvata. Per evitare l'errore, creare la mappa all'esterno del progetto di modellazione. Sarà quindi possibile salvarlo quindi nel percorso desiderato. Il semplice tentativo di copiare il file in un altro percorso della soluzione e salvarlo non produrrà alcun effetto.  
+> In Visual Studio viene visualizzato l'errore, ma viene comunque creata la versione salvata. Per evitare l'errore, creare la mappa all'esterno del progetto di modellazione. Sarà quindi possibile salvarlo quindi nel percorso desiderato. Il semplice tentativo di copiare il file in un altro percorso della soluzione e salvarlo non produrrà alcun effetto.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Esportare la mappa come immagine in modo che sia possibile copiarla in altre applicazioni, ad esempio in Microsoft Word o PowerPoint.  
   

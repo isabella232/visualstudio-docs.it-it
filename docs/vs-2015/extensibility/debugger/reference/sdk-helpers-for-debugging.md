@@ -14,12 +14,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435996"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58964493"
 Queste funzioni e le dichiarazioni sono funzioni di supporto globale per l'implementazione del provider di simboli, analizzatori di espressioni e motori di debug in C++.  
   
 > [!NOTE]
->  Non esistono gestiti sono versioni di queste funzioni e le dichiarazioni in questo momento.  
+> Non esistono gestiti sono versioni di queste funzioni e le dichiarazioni in questo momento.  
   
 ## <a name="overview"></a>Panoramica  
  Affinché il provider di simboli, analizzatori di espressioni e motori di debug da utilizzare da Visual Studio, è necessario registrarli. Questa operazione viene eseguita tramite l'impostazione di sottochiavi e voci, note anche come impostazione "metriche"." Le funzioni globali seguenti sono progettate per semplificare il processo di aggiornamento di queste metriche. Vedere la sezione sulle posizioni del Registro di sistema per individuare il layout di ogni sottochiave del Registro di sistema che viene aggiornato da queste funzioni.  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  Le metriche vengono letti da e scritte nel Registro di sistema, in particolare il `VisualStudio` sottochiave.  
   
 > [!NOTE]
->  La maggior parte dei casi, verranno scritte le metriche per la chiave HKEY_LOCAL_MACHINE. Tuttavia, talvolta HKEY_CURRENT_USER sarà la chiave di destinazione. Dbgmetric.lib gestisce entrambe le chiavi. Quando si recupera una metrica, la ricerca HKEY_CURRENT_USER per primo, quindi HKEY_LOCAL_MACHINE. Quando si sta impostando una metrica, un parametro specifica la chiave di primo livello da usare.  
+> La maggior parte dei casi, verranno scritte le metriche per la chiave HKEY_LOCAL_MACHINE. Tuttavia, talvolta HKEY_CURRENT_USER sarà la chiave di destinazione. Dbgmetric.lib gestisce entrambe le chiavi. Quando si recupera una metrica, la ricerca HKEY_CURRENT_USER per primo, quindi HKEY_LOCAL_MACHINE. Quando si sta impostando una metrica, un parametro specifica la chiave di primo livello da usare.  
   
  *[chiave del Registro di sistema]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[valore della metrica]*|Il valore assegnato alla metrica. Il tipo che di valore deve essere (stringa), numero, e così via dipende la metrica.|  
   
 > [!NOTE]
->  Tutti i GUID vengono archiviati nel formato `{GUID}`. Ad esempio `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Tutti i GUID vengono archiviati nel formato `{GUID}`. Ad esempio `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Motori di debug  
  Di seguito è l'organizzazione delle metriche di motori di debug nel Registro di sistema. `Engine` è il nome del tipo di metrica per un motore di debug e corrisponde a *[tipo di metrica]* nel sottoalbero del Registro di sistema precedente.  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  Di seguito è l'organizzazione delle metriche dell'analizzatore di espressioni nel Registro di sistema. `ExpressionEvaluator` è il nome del tipo di metrica per l'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.  
   
 > [!NOTE]
->  Il tipo di metrica `ExpressionEvaluator` non è definito in dbgmetric.h, perché si presuppone che tutte le modifiche delle metriche per gli analizzatori di espressioni passeranno attraverso le funzioni di metrica dell'analizzatore di espressioni espressione appropriata (il layout del `ExpressionEvaluator` sottochiave è leggermente complicata, in modo che i dettagli sono nascosti all'interno di dbgmetric.lib).  
+> Il tipo di metrica `ExpressionEvaluator` non è definito in dbgmetric.h, perché si presuppone che tutte le modifiche delle metriche per gli analizzatori di espressioni passeranno attraverso le funzioni di metrica dell'analizzatore di espressioni espressione appropriata (il layout del `ExpressionEvaluator` sottochiave è leggermente complicata, in modo che i dettagli sono nascosti all'interno di dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   

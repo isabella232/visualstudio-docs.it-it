@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426558"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
  Per creare una regola personalizzata impostata per un progetto team, creare innanzitutto una cartella speciale per la regola dei criteri di archiviazione impostata **Esplora controllo codice sorgente**. È quindi possibile creare il file del set di regole e aggiungere il file al controllo della versione. Infine, si specifica il set di regole come il codice check-in Criteri di analisi per il progetto team.  
   
 > [!NOTE]
->  Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale. Per altre informazioni, vedere [creare e usare aree di lavoro (precedente)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale. Per altre informazioni, vedere [creare e usare aree di lavoro (precedente)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Per creare la cartella controllo della versione per il set di regole dei criteri di archiviazione  
   
@@ -72,7 +72,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
 4. Nel **Check-in** della finestra di dialogo è possibile aggiungere un commento e quindi fare clic su **Archivia**.  
   
     > [!NOTE]
-    >  Se si è già configurato un criterio di controllo dell'analisi codice per il progetto team ed è stata selezionata la **Consenti archiviazione dei soli file che fanno parte della soluzione corrente**, si attiverà un avviso di errore nel criterio. Nella finestra di dialogo di errore dei criteri, selezionare **ora errore criteri e continua archiviazione**. Aggiungere un commento richiesto e quindi fare clic su **OK**.  
+    > Se si è già configurato un criterio di controllo dell'analisi codice per il progetto team ed è stata selezionata la **Consenti archiviazione dei soli file che fanno parte della soluzione corrente**, si attiverà un avviso di errore nel criterio. Nella finestra di dialogo di errore dei criteri, selezionare **ora errore criteri e continua archiviazione**. Aggiungere un commento richiesto e quindi fare clic su **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Per specificare la regola di set di file come i criteri di controllo  
   
@@ -91,7 +91,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  È possibile copiare il percorso usando una delle seguenti procedure in **Esplora controllo codice sorgente**:  
+    > È possibile copiare il percorso usando una delle seguenti procedure in **Esplora controllo codice sorgente**:  
   
     - Nel **cartelle** riquadro, fare clic sulla cartella che contiene il file del set di regole. Copiare il percorso della cartella in cui viene visualizzato nel controllo della versione di **origine** , quindi digitare il nome del file del set di regole manualmente.  
   

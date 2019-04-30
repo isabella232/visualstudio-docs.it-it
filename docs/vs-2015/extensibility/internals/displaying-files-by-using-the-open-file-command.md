@@ -12,12 +12,12 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96953d77e82dfcec79257da47845ece8281ec869
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd0018df4efb023357e10ab8050f6cf5e9eba1fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438219"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Visualizzazione di file tramite il comando Apri file
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che 
     - Se il file non è aperto, l'IDE chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> per ogni progetto per determinare quale progetto è possibile aprire il file di query.  
   
         > [!NOTE]
-        >  Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.  
+        > Nell'implementazione del progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fornire un valore di priorità che indica il livello in corrispondenza del quale il progetto verrà aperto il file. Vengono forniti i valori di priorità nei <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumerazione.  
   
 2. Ogni progetto risponde con un livello di priorità che indica l'importanza viene posizionato sul progetto aprire il file.  
   
@@ -57,4 +57,4 @@ I passaggi seguenti descrivono come l'IDE gestisce i **Apri File** comando, che 
  [Visualizzazione di file tramite l'apertura con il comando](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [Apertura e salvataggio di elementi di progetto](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Procedura: Apri editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)   
- [Procedura: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)
+ [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)

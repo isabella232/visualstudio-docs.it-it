@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435461"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Procedura: Creare un comando di SharePoint
   Se si desidera utilizzare il modello a oggetti server in un'estensione degli strumenti di SharePoint, è necessario creare una classe personalizzata *comando SharePoint* per chiamare l'API. Il comando è definito in un assembly che è possibile chiamare direttamente nel modello a oggetti server.
@@ -33,7 +33,7 @@ ms.locfileid: "60082321"
     - Ha come destinazione il AnyCPU o x64 piattaforma. Per impostazione predefinita, la piattaforma di destinazione per i progetti libreria di classi è AnyCPU. Per altre informazioni sulla selezione della piattaforma di destinazione, vedere [come: Configurare progetti per le piattaforme di destinazione](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione la destinazione di estensioni di strumenti .NET Framework 3.5 e SharePoint il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. È necessario definire i comandi di SharePoint che vengono utilizzati per l'estensione in un progetto separato. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Non è possibile implementare un comando di SharePoint nello stesso progetto che definisce un'estensione degli strumenti di SharePoint, perché i comandi di SharePoint hanno come destinazione la destinazione di estensioni di strumenti .NET Framework 3.5 e SharePoint il [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. È necessario definire i comandi di SharePoint che vengono utilizzati per l'estensione in un progetto separato. Per altre informazioni, vedere [distribuisce le estensioni per gli strumenti di SharePoint in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Aggiungere riferimenti agli assembly riportati di seguito:
 

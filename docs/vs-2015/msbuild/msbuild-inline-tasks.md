@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439353"
 ---
 # <a name="msbuild-inline-tasks"></a>Attività inline di MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   Gli elementi `Reference` e `Using` sono indipendenti dal linguaggio di programmazione. Le attività inline possono essere scritte in uno dei linguaggi .NET CodeDOM supportati, ad esempio Visual Basic, Visual C#.  
   
 > [!NOTE]
->  Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.  
+> Gli elementi contenuti in `Task` sono specifici della factory dell'attività, in questo caso la factory dell'attività del codice.  
   
 ### <a name="code-element"></a>Elemento Code  
  L'ultimo elemento figlio visualizzato all'interno dell'elemento `Task` è l'elemento `Code`. L'elemento `Code` contiene o individua il codice che deve essere compilato in un'attività. Ciò che si inserisce nell'elemento `Code` dipende da come si vuole scrivere l'attività.  
@@ -87,7 +87,7 @@ Le attività di MSBuild in genere vengono create compilando una classe che imple
   In alternativa, è possibile usare l'attributo `Source` dell'elemento `Code` per specificare il percorso di un file che contiene il codice per l'attività. Il codice nel file di origine deve essere del tipo specificato dall'attributo `Type`. Se l'attributo `Source` è presente, il valore predefinito di `Type` è `Class`. Se `Source` non è presente, il valore predefinito è `Fragment`.  
   
 > [!NOTE]
->  Quando si definisce la classe dell'attività nel file di origine il nome della classe deve concordare con l'attributo `TaskName` dell'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) corrispondente.  
+> Quando si definisce la classe dell'attività nel file di origine il nome della classe deve concordare con l'attributo `TaskName` dell'elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) corrispondente.  
   
 ## <a name="hello-world"></a>Hello World  
  Di seguito è riportata un'attività inline più concreta. L'attività HelloWorld visualizza "Hello, world!" nel dispositivo di registrazione degli errori predefinito, in genere la console del sistema o la finestra **Output** di Visual Studio. L'elemento `Reference` dell'esempio è incluso solo ai fini della spiegazione.  
@@ -193,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Vedere anche  
  [Attività](../msbuild/msbuild-tasks.md)   
- [Procedura dettagliata: Creazione di un'attività Inline](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Procedura dettagliata: creazione di un'attività inline](../msbuild/walkthrough-creating-an-inline-task.md)

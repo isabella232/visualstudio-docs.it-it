@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437924"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informazioni sui parametri in un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Informazioni sul parametro di IntelliSense è una descrizione comando che consen
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [estensione dell'Editor e servizi di linguaggio](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
 ## <a name="implementation"></a>Implementazione  
  Il parser deve impostare il valore trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> viene impostato quando rileva un carattere iniziale dell'elenco parametri (spesso una parentesi di apertura). Deve essere impostato un <xref:Microsoft.VisualStudio.Package.TokenTriggers> attivano quando rileva un separatore di parametro (spesso una virgola). In questo modo una descrizione comando informazioni sul parametro devono essere aggiornati e visualizzare il parametro successivo in grassetto. Il parser deve impostare il valore trigger <xref:Microsoft.VisualStudio.Package.TokenTriggers> quando se rileva che il carattere di fine elenco di parametri (spesso una parentesi di chiusura).  
@@ -37,7 +37,7 @@ Informazioni sul parametro di IntelliSense è una descrizione comando che consen
  Il <xref:Microsoft.VisualStudio.Package.TokenTriggers> valore trigger avvia una chiamata ai <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> metodo, che a sua volta chiama il <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> parser di metodo con un motivo di analisi di <xref:Microsoft.VisualStudio.Package.ParseReason>. Se il parser rileva che l'identificatore prima che l'elenco dei parametri start carattere sia un nome di metodo riconosciuto, viene restituito un elenco di corrispondenza delle firme del metodo nel <xref:Microsoft.VisualStudio.Package.AuthoringScope> oggetto. Se sono state trovate le firme di metodo, la descrizione comando informazioni sul parametro viene visualizzata con la firma prima nell'elenco. Questa descrizione comando viene quindi aggiornata con informazioni della firma è tipizzato. Quando si digita il carattere di fine elenco di parametri, la descrizione comando informazioni sul parametro viene rimosso dalla visualizzazione.  
   
 > [!NOTE]
->  Per assicurarsi che la descrizione comando informazioni sul parametro sia formattata correttamente, è necessario eseguire l'override di proprietà nel <xref:Microsoft.VisualStudio.Package.Methods> classe per fornire i caratteri appropriati. La base <xref:Microsoft.VisualStudio.Package.Methods> classe presuppone c#-firma del metodo stile. Vedere il <xref:Microsoft.VisualStudio.Package.Methods> classe per informazioni dettagliate sul modo in cui questa operazione può essere eseguita.  
+> Per assicurarsi che la descrizione comando informazioni sul parametro sia formattata correttamente, è necessario eseguire l'override di proprietà nel <xref:Microsoft.VisualStudio.Package.Methods> classe per fornire i caratteri appropriati. La base <xref:Microsoft.VisualStudio.Package.Methods> classe presuppone c#-firma del metodo stile. Vedere il <xref:Microsoft.VisualStudio.Package.Methods> classe per informazioni dettagliate sul modo in cui questa operazione può essere eseguita.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Abilitazione del supporto per le informazioni di parametro  
  Per supportare le descrizioni comandi informazioni sui parametri, è necessario impostare il `ShowCompletion` del parametro denominato il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> a `true`. Il servizio di linguaggio legge il valore di questa voce del Registro di sistema dal <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> proprietà.  

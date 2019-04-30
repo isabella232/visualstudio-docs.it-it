@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439182"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestione delle eccezioni con il Debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
 - se è stato impostato [Just My Code](../debugger/just-my-code.md)e il debugger è impostato in modo da interrompere l'esecuzione per qualsiasi eccezione non gestita nel codice utente.  
   
 > [!NOTE]
->  ASP.NET dispone di un gestore di eccezioni di livello superiore che mostra le pagine di errore in un browser. Questo gestore non interrompe l'esecuzione a meno che **Just My Code** non sia attivato. Per un esempio, vedere [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) di seguito.  
+> ASP.NET dispone di un gestore di eccezioni di livello superiore che mostra le pagine di errore in un browser. Questo gestore non interrompe l'esecuzione a meno che **Just My Code** non sia attivato. Per un esempio, vedere [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) di seguito.  
   
 > [!NOTE]
->  In un'applicazione Visual Basic, il debugger gestisce tutti gli errori come eccezioni, anche se si usano gestori degli errori di tipo On Error.  
+> In un'applicazione Visual Basic, il debugger gestisce tutti gli errori come eccezioni, anche se si usano gestori degli errori di tipo On Error.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Gestione delle eccezioni con la finestra Impostazioni eccezioni  
  È possibile usare la finestra **Impostazioni eccezioni** per specificare quali eccezioni (o set di eccezioni) causeranno l'interruzione da parte del debugger e in quale punto si verificherà l’interruzione. È possibile aggiungere o eliminare eccezioni o specificare in corrispondenza di quali eccezioni interrompere l’esecuzione. Aprire la finestra quando è aperta una soluzione facendo clic su **Debug/Windows/Impostazioni eccezioni**.  
@@ -162,7 +162,7 @@ Un'eccezione è un'indicazione di uno stato di errore che si verifica durante l�
  Se si desidera aggiungere un'eccezione alle eccezioni di accesso alla memoria GPU, alle eccezioni di runtime JavaScript o alle categorie di eccezioni Win32, è necessario includere il codice di errore, nonché la descrizione.  
   
 > [!TIP]
->  Controllare l’ortografia. La finestra **Impostazioni eccezioni** non verifica l'esistenza di un'eccezione aggiunta. Pertanto, se si digita **Sytem.UriTemplateMatchException**, si ottiene una voce per tale eccezione (e non per **System.UriTemplateMatchException**).  
+> Controllare l’ortografia. La finestra **Impostazioni eccezioni** non verifica l'esistenza di un'eccezione aggiunta. Pertanto, se si digita **Sytem.UriTemplateMatchException**, si ottiene una voce per tale eccezione (e non per **System.UriTemplateMatchException**).  
   
  Le impostazioni di eccezioni sono persistenti nel file con estensione suo della soluzione, per cui si applicano a una particolare soluzione. Non è possibile riutilizzare impostazioni di eccezioni specifiche in tutte le soluzioni. A questo punto, vengono mantenute solo le eccezioni aggiunte e non le eccezioni eliminate. In altre parole, è possibile aggiungere un'eccezione, chiudere e riaprire la soluzione e l'eccezione sarà ancora disponibile. Ma se si elimina un'eccezione e si chiude e si riapre la soluzione, l'eccezione viene visualizzata nuovamente.  
   

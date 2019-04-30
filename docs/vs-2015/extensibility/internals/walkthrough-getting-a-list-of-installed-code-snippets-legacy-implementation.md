@@ -12,12 +12,12 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9948950322c0d4f994ed9c12fe6ebec5112b6d13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440762"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Procedura dettagliata: Recupero di un elenco di frammenti di codice installati (implementazione legacy)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Un frammento di codice è un frammento di codice che può essere inserito nel bu
 1. Il metodo seguente viene illustrato come chiamare il `GetSnippets` metodo al completamento di un'operazione di analisi. Il <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> metodo viene chiamato dopo un'operazione di analisi che è stata avviata con il motivo <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  Il `expansionsList` listis memorizzato nella cache per motivi di prestazioni della matrice. Per i frammenti di codice non vengono riflesse nell'elenco fino a quando non viene arrestato e ricaricare il servizio di linguaggio (ad esempio, per arrestare e riavviare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> Il `expansionsList` listis memorizzato nella cache per motivi di prestazioni della matrice. Per i frammenti di codice non vengono riflesse nell'elenco fino a quando non viene arrestato e ricaricare il servizio di linguaggio (ad esempio, per arrestare e riavviare [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  

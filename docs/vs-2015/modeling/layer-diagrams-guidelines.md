@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441001"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
  I passaggi seguenti offrono una panoramica di come usare i diagrammi livello nel processo di sviluppo. Le sezioni successive in questo argomento descrivono in modo più dettagliato ogni passaggio. Se si sviluppa una nuova progettazione, omettere i passaggi relativi al codice esistente.  
   
 > [!NOTE]
->  I passaggi sono visualizzati in ordine approssimativo. Potrebbe essere necessario sovrapporre alcune attività, riordinarle per adattarle alla situazione specifica ed eseguirle di nuovo all'inizio di ogni iterazione nel progetto.  
+> I passaggi sono visualizzati in ordine approssimativo. Potrebbe essere necessario sovrapporre alcune attività, riordinarle per adattarle alla situazione specifica ed eseguirle di nuovo all'inizio di ogni iterazione nel progetto.  
   
 1. [Creare un diagramma livello](#Create) per l'intera applicazione o per un livello all'interno di esso.  
   
@@ -59,7 +59,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
  Un diagramma livello deve essere creato in un progetto di modello. È possibile aggiungere un nuovo diagramma livello a un progetto di modello esistente, creare un nuovo progetto di modello per il diagramma livello oppure copiare un diagramma livello esistente nello stesso progetto di modello.  
   
 > [!IMPORTANT]
->  Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modello a un altro né a un altro percorso nella soluzione. Un diagramma livello copiato in questo modo includerà gli stessi riferimenti del diagramma originale, anche se si modifica il diagramma. Ciò impedirà il corretto funzionamento della convalida dei livelli e potrebbe provocare altri problemi, ad esempio la mancanza di elementi o altri errori durante il tentativo di apertura del diagramma.  
+> Non aggiungere, trascinare o copiare alcun diagramma livello esistente da un progetto di modello a un altro né a un altro percorso nella soluzione. Un diagramma livello copiato in questo modo includerà gli stessi riferimenti del diagramma originale, anche se si modifica il diagramma. Ciò impedirà il corretto funzionamento della convalida dei livelli e potrebbe provocare altri problemi, ad esempio la mancanza di elementi o altri errori durante il tentativo di apertura del diagramma.  
   
  Visualizzare [creare i diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
  È in genere consigliabile assegnare a questi livelli nomi conformi alla relativa funzione, ad esempio "Presentazione" o "Servizi". Se gli elementi sono strettamente interdipendenti, posizionarli nello stesso livello. Se gli artefatti possono essere aggiornati separatamente o possono essere usati in applicazioni distinte, posizionarli in livelli diversi. Per altre informazioni sui modelli di livello, visitare il sito modelli e procedure all'indirizzo [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Alcuni tipi di artefatti possono essere collegati ai livelli ma non supportano la convalida rispetto al diagramma livello. Per vedere se l'elemento supporta la convalida, aprire **Esplora livello** esaminare le **supporta la convalida** proprietà del collegamento dell'artefatto. Visualizzare [individua le dipendenze esistenti tra livelli](#Generate).  
+> Alcuni tipi di artefatti possono essere collegati ai livelli ma non supportano la convalida rispetto al diagramma livello. Per vedere se l'elemento supporta la convalida, aprire **Esplora livello** esaminare le **supporta la convalida** proprietà del collegamento dell'artefatto. Visualizzare [individua le dipendenze esistenti tra livelli](#Generate).  
   
  Quando si aggiorna un'applicazione poco nota, è anche possibile creare mappe codice. Questi diagrammi consentono di individuare i motivi e le dipendenze durante l'esplorazione del codice. Usare Esplora soluzioni per esplorare spazi dei nomi e classi, che spesso corrispondono correttamente ai livelli esistenti. Assegnare questi elementi di codice ai livelli trascinandoli da Esplora soluzioni in diagrammi livello. È quindi possibile usare i diagrammi livello per aggiornare il codice e mantenerlo coerente con la progettazione.  
   
@@ -85,7 +85,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
  È presente una dipendenza quando un elemento associato a un livello dispone di un riferimento a un elemento associato a un altro livello. Ad esempio, una classe di un livello dichiara una variabile che dispone di una classe in un altro livello. Per individuare le dipendenze esistenti, è possibile decompilarle.  
   
 > [!NOTE]
->  Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, fare doppio clic su uno o più livelli e quindi fare clic su **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.  
+> Non è possibile decompilare dipendenze per determinati tipi di elementi. Ad esempio, non è possibile decompilare dipendenze da e verso un livello collegato a un file di testo. Per vedere quali artefatti sono associate dipendenze che è possibile decompilare, fare doppio clic su uno o più livelli e quindi fare clic su **Visualizza collegamenti**. Nelle **Esplora livello**, esaminare le **supporta la convalida** colonna. Le dipendenze non verranno decompilate per artefatti per cui questa colonna viene visualizzato **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Per decompilare le dipendenze esistenti tra i livelli  
   
@@ -155,7 +155,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
   Per risolvere gli errori, aggiornare il codice finché non verranno più visualizzati errori di convalida. Si tratta in genere di un processo iterativo. Per altre informazioni su questi errori, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Quando si sviluppa codice o se ne effettua il refactoring, è possibile che siano presenti nuovi artefatti da collegare al diagramma livello. È tuttavia possibile che ciò non sia necessario, ad esempio se sono presenti livelli che rappresentano spazi dei nomi esistenti e il nuovo codice aggiunge altri elementi a questi spazi dei nomi.  
+> Quando si sviluppa codice o se ne effettua il refactoring, è possibile che siano presenti nuovi artefatti da collegare al diagramma livello. È tuttavia possibile che ciò non sia necessario, ad esempio se sono presenti livelli che rappresentano spazi dei nomi esistenti e il nuovo codice aggiunge altri elementi a questi spazi dei nomi.  
   
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per eseguire questa attività, vedere [convalidare il codice con diagrammi livello](../modeling/validate-code-with-layer-diagrams.md).  
   

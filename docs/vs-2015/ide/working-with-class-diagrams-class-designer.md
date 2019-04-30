@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 578fd81c41d2c46130cf80f7e55e71a0d0f196de
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443407"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilizzo dei diagrammi classi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ I diagrammi classi consentono di comprendere la struttura delle classi dei proge
   
  Oltre a definire ciò che ciascun diagramma classi deve mostrare, è anche possibile cambiare il modo in cui vengono presentate le informazioni. Per altre informazioni, vedere [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md).  
   
- Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in documenti di Microsoft Office e stamparli oppure esportarli come file di immagine. Per altre informazioni, vedere [Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office (Progettazione classi)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [Procedura: stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md) e [Procedura: esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
+ Dopo aver ottimizzato uno o più diagrammi classi, è possibile copiarli in documenti di Microsoft Office e stamparli oppure esportarli come file di immagine. Per altre informazioni, vedere [Procedura: Copiare elementi dei diagrammi classi in un documento di Microsoft Office (Progettazione classi)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md), [come: Stampare diagrammi classi (Progettazione classi)](../ide/how-to-print-class-diagrams-class-designer.md) e [come: Esportare diagrammi classi come immagini (Progettazione classi)](../ide/how-to-export-class-diagrams-as-images-class-designer.md).  
   
 > [!NOTE]
->  Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.  
+> Progettazione classi non tiene traccia del percorso dei file di origine. Di conseguenza, se si modifica la struttura del progetto o si spostano i file di origine in un progetto, Progettazione classi può perdere traccia del tipo, soprattutto del tipo di origine di un typedef, delle classi di base o dei tipi di associazione. Si potrebbe ricevere un errore, ad esempio **Progettazione classi: impossibile visualizzare il tipo**. In tal caso, trascinare di nuovo il codice sorgente modificato o riposizionato nel diagramma classi per visualizzarlo nuovamente.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
  Descrive come aggiungere diagrammi classi a un progetto.  
   
- [Procedura: Personalizzare i diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)  
+ [Procedura: Personalizzare diagrammi classi (Progettazione classi)](../ide/how-to-customize-class-diagrams-class-designer.md)  
   
  Fornisce informazioni sulla personalizzazione dei diagrammi classi.  
   

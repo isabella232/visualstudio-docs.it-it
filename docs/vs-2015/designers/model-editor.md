@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432621"
 ---
 # <a name="model-editor"></a>Editor dei modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ In questo documento viene descritto come utilizzare l'editor modello di [!INCLUD
 2. Nella finestra **Proprietà** specificare i valori per le proprietà **Rotazione**, **Scala** e **Traslazione**.  
   
    > [!IMPORTANT]
-   >  Per la proprietà **Rotazione** specificare il grado di rotazione attorno a ognuno dei tre assi. Le rotazioni vengono applicate in ordine; verificare pertanto di pianificare una rotazione partendo dall'asse x, proseguendo con l'asse y e infine con l'asse z.  
+   > Per la proprietà **Rotazione** specificare il grado di rotazione attorno a ognuno dei tre assi. Le rotazioni vengono applicate in ordine; verificare pertanto di pianificare una rotazione partendo dall'asse x, proseguendo con l'asse y e infine con l'asse z.  
   
    Mediante gli strumenti di modellazione è possibile creare trasformazioni in modo rapido, ma approssimativo. Impostando le proprietà dell'oggetto, è possibile specificare trasformazioni in modo preciso, ma non rapido. È consigliabile utilizzare gli strumenti di modellazione per ottenere trasformazioni più simili a quelle desiderate e successivamente regolare i valori delle proprietà.  
   

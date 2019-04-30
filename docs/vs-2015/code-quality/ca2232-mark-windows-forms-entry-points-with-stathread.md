@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d486189b557c0c1146be68e6c0328cb49d5ed291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e8b7242fcd82db1a0cfb82cf6cd6df5a9f75084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435421"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Contrassegnare i punti di ingresso del Windows Form con STAThread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58969543"
  <xref:System.STAThreadAttribute> indica che il modello di threading COM per l'applicazione è un apartment a thread singolo. Questo attributo deve essere presente sul punto di ingresso di qualsiasi applicazione che utilizza Windows Form; se omesso è possibile che il componente Windows non funzioni correttamente. Se l'attributo non è presente, l'applicazione usa il modello di apartment a thread multipli, che non è supportato per Windows Form.
 
 > [!NOTE]
->  [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i progetti che usano il Framework dell'applicazione non sono necessario contrassegnare il **Main** con STAThread (metodo). Il [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore operazione automaticamente.
+> [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] i progetti che usano il Framework dell'applicazione non sono necessario contrassegnare il **Main** con STAThread (metodo). Il [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] compilatore operazione automaticamente.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, aggiungere il <xref:System.STAThreadAttribute> al punto di ingresso dell'attributo. Se il <xref:System.MTAThreadAttribute?displayProperty=fullName> attributo è presente, rimuoverlo.

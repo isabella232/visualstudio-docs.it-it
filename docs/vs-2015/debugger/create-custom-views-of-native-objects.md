@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440840"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Creare viste personalizzate di oggetti nativi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  Natvis sostituisce il file **autoexp.dat** usato nelle versioni precedenti di Visual Studio e include la sintassi XML, funzionalità di diagnostica migliorate, controllo delle versioni e supporto di più file.  
 
 > [!NOTE]
->  Non è possibile usare il framework Natvis per le visualizzazioni quando:  
+> Non è possibile usare il framework Natvis per le visualizzazioni quando:  
 > 
 > - Si esegue il debug di un progetto per desktop Windows C++ con tipo di debug impostato su **misto**.  
 >   - Si sta eseguendo il debug in modalità mista in un'applicazione desktop di Windows in modalità di compatibilità gestita (**Strumenti/Opzioni/Debug/Generale/ Utilizza modalità di compatibilità gestita**).  
@@ -304,7 +304,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  Nell'espressione `DisplayString` `x` e `y`, che sono membri di `CPoint`, sono racchiusi tra parentesi graffe, pertanto i relativi valori vengono valutati. L'espressione mostra anche come fare in modo che una parentesi graffa venga ignorata usando doppie parentesi graffe ( `{{` o `}}` ).  
 
 > [!NOTE]
->  L'elemento `DisplayString` è l'unico elemento che accetta stringhe arbitrarie e la sintassi con parentesi graffe. Tutti gli altri elementi di visualizzazioni accettano solo espressioni valutate dal debugger.  
+> L'elemento `DisplayString` è l'unico elemento che accetta stringhe arbitrarie e la sintassi con parentesi graffe. Tutti gli altri elementi di visualizzazioni accettano solo espressioni valutate dal debugger.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  L'elemento `StringView` consente di definire l'espressione il cui valore verrà inviato al visualizzatore di testo incorporato. Ad esempio, si supponga che per il tipo `ATL::CStringT` sia disponibile la visualizzazione seguente:  
@@ -336,7 +336,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  ![Dati CStringT con Visualizzatore StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
+> Si noti che l'espressione `{m_pszData,su}` include un identificatore di formato C++ `su` per visualizzare il valore come stringa Unicode. Per altre informazioni, vedere [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
 
 ### <a name="BKMK_Expand"></a> Expand  
  Il nodo `Expand` viene usato per personalizzare i figli del tipo visualizzato quando l'utente lo espande nelle finestre delle variabili. Accetta un elenco di nodi figlio che definiscono gli elementi figlio.  
@@ -368,7 +368,7 @@ Il framework Natvis di Visual Studio consente di personalizzare il modo in cui V
  Le espressioni specificate negli elementi `Width` e `Height` vengono valutate e illustrate nella colonna del valore. Il nodo `[Raw View]` viene creato automaticamente dal debugger ogni volta che si usa un'espansione personalizzata. Viene espanso nella schermata precedente per mostrare le differenze tra la visualizzazione non elaborata dell'oggetto e la relativa visualizzazione. L'espansione predefinita di Visual Studio crea un sottoalbero per la classe base ed elenca tutti i membri dati della classe base come elementi figlio.  
 
 > [!NOTE]
->  Se l'espressione dell'elemento Item punta a un tipo complesso, anche lo stesso nodo `Item` è espandibile.  
+> Se l'espressione dell'elemento Item punta a un tipo complesso, anche lo stesso nodo `Item` è espandibile.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
  Usare il nodo `ArrayItems` per consentire al debugger di Visual Studio di interpretare il tipo come una matrice e visualizzarne i singoli elementi. La visualizzazione per `std::vector` costituisce un ottimo esempio:  

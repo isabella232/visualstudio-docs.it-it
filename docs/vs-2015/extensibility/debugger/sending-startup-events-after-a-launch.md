@@ -10,12 +10,12 @@ ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eeb378b09ffc3e12de8996d7feabbd20a4b40068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436671"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Invio degli eventi di avvio dopo un avvio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Dopo che il motore di debug (DE) è collegato al programma, invia una serie di e
 - Un evento di completamento carico, inviato quando il codice è caricato e pronto per l'esecuzione, ma prima dell'esecuzione di codice  
   
   > [!NOTE]
-  >  Quando questo evento si continua, le variabili globali vengono inizializzate ed eseguire routine di avvio.  
+  > Quando questo evento si continua, le variabili globali vengono inizializzate ed eseguire routine di avvio.  
   
 - Eventi modulo di caricamento e la creazione del thread possibili altri.  
   

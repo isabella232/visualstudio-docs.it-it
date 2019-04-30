@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443836"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.
@@ -60,7 +60,7 @@ ms.locfileid: "60071759"
 2. Dal **controlli comuni** scheda della finestra di **della casella degli strumenti**, trascinare un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controllo al documento.
 
    > [!NOTE]
-   >  In Word i controlli vengono rilasciati in linea con il testo per impostazione predefinita. È possibile modificare la funzionalità dei controlli e gli oggetti shape vengono inseriti modificando l'impostazione predefinita nel **modifica** scheda della finestra di **opzioni** finestra di dialogo di Word.
+   > In Word i controlli vengono rilasciati in linea con il testo per impostazione predefinita. È possibile modificare la funzionalità dei controlli e gli oggetti shape vengono inseriti modificando l'impostazione predefinita nel **modifica** scheda della finestra di **opzioni** finestra di dialogo di Word.
 
 3. Scegliere **Finestra Proprietà** dal menu **Visualizza**.
 
