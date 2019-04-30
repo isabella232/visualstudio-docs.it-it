@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb68d65e3af5d59833eafea725129ecdf2305d30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400518"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 Recupera un flag che specifica se la funzione è stata contrassegnata come non inline (usando il [noinline](/cpp/cpp/noinline) attributo).
@@ -39,13 +39,13 @@ HRESULT get_noInline(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

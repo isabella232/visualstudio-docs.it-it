@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412430"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Fa sì che il thread corrente bloccare e invia una notifica dell'errore per l'IDE di debug.  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Un motore del linguaggio chiama questo metodo nel contesto di un thread che comporta un errore di run-time. Questo metodo fa sì che il thread corrente bloccare e invia una notifica di errore da inviare al debugger di IDE. Quando l'IDE di debug viene ripresa l'applicazione, questo metodo restituisce con l'azione da intraprendere.  
   
 > [!NOTE]
->  Mentre nell'errore in fase di esecuzione, il motore del linguaggio può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
+> Mentre nell'errore in fase di esecuzione, il motore del linguaggio può essere chiamato dal thread di eseguire tali attività come enumerare gli stack frame o valutare le espressioni.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)   

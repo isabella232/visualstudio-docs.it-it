@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cc6cd3e7948b88169489cf4f4c73d1e8fcc7d73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399258"
 ---
 # <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
 Recupera valore dell'ID del simbolo OEM (OEM).
@@ -39,9 +39,9 @@ HRESULT get_oemId ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questa proprietà si applica solo ai simboli con un [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo di `SymTagCustomType`.
 
 ## <a name="see-also"></a>Vedere anche

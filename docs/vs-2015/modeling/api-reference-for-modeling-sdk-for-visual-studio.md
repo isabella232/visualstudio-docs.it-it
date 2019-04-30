@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e788abb51425e0f2656c10ba860602a36c8aad8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b2cbf516b5ed999623c05e7f68656199363906bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408446"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Riferimento API per SDK di modellazione per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "58969385"
 La visualizzazione e Visual Studio Modeling SDK offre la piattaforma in cui vengono compilati gli strumenti UML e i linguaggi specifici di dominio (DSL).
 
 > [!NOTE]
->  Per informazioni sull'API di modellazione UML, vedere [riferimento API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Per informazioni sulla trasformazione del testo, vedere [personalizzazione di trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).
+> Per informazioni sull'API di modellazione UML, vedere [riferimento API per l'estendibilità di modellazione UML](../modeling/api-reference-for-uml-modeling-extensibility.md). Per informazioni sulla trasformazione del testo, vedere [personalizzazione di trasformazione del testo T4](../modeling/customizing-t4-text-transformation.md).
 
  In questa sezione contiene materiale di riferimento per gli spazi dei nomi con nomi che iniziano con "VisualStudio".
 

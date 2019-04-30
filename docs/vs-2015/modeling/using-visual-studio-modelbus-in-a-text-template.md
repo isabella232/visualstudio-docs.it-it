@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ed19a280f791fa857ffbf00ba25aa18c490aa65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58a7d726d08b80600e3351b6324733d6ffdcf611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444654"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilizzo di ModelBus di Visual Studio in un modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Se si scrivono modelli di testo che leggono un modello contenente [!INCLUDE[vspr
 - Il modello deve ereditare da <xref:Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTransformation>.
 
 > [!NOTE]
->  Se si desidera leggere i modelli di linguaggio specifico di dominio che non contengono riferimenti ModelBus, è possibile usare processori di direttive che vengono generati nei progetti DSL. Per altre informazioni, vedere [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
+> Se si desidera leggere i modelli di linguaggio specifico di dominio che non contengono riferimenti ModelBus, è possibile usare processori di direttive che vengono generati nei progetti DSL. Per altre informazioni, vedere [l'accesso ai modelli da modelli di testo](../modeling/accessing-models-from-text-templates.md).
 
  Per altre informazioni sui modelli di testo, vedere [generazione di codice in fase di progettazione tramite modelli di testo T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 

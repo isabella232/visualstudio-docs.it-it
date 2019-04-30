@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6d86d84d6f51b995649d5cbfda652262dcfc66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f11ea8e93d7d952f28315481f65149122a7b68a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415578"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Procedura: Usare la gestione di annullamento collegato
 Fase di rollback collegata consente all'utente di annullare contemporaneamente le stesse modifiche in più file. Ad esempio, le modifiche simultanee testo su più file di programma, ad esempio un file di intestazione e un file di Visual C++, è una transazione di annullamento collegata. Funzionalità di annullamento collegata è incorporata nell'implementazione dell'ambiente di gestione degli annullamenti, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> consente di modificare questa funzionalità. Fase di rollback collegata è implementata da un'unità di annullamento padre che è possibile collegare gli stack di annullamento separato insieme deve essere considerata come una sola unità di annullamento. La procedura per l'uso di annullamento collegata è descritta in dettaglio nella sezione seguente.
@@ -29,7 +29,7 @@ Fase di rollback collegata consente all'utente di annullare contemporaneamente l
 3. Chiamare <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> per implementare tutte le unità di annullamento collegato come uno.
 
     > [!NOTE]
-    >  Per implementare la gestione di annullamento collegato in un editor, aggiungere la gestione di annullamento. Per altre informazioni sull'implementazione della gestione dell'annullamento collegato, vedere [come: Implementare la gestione di annullamento](../extensibility/how-to-implement-undo-management.md).
+    > Per implementare la gestione di annullamento collegato in un editor, aggiungere la gestione di annullamento. Per altre informazioni sull'implementazione della gestione dell'annullamento collegato, vedere [come: Implementare la gestione di annullamento](../extensibility/how-to-implement-undo-management.md).
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>

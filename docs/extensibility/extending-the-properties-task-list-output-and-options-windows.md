@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417228"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estendere le finestre delle proprietà, elenco attività, Output e opzioni
 È possibile accedere a qualsiasi finestra degli strumenti in Visual Studio. Questa procedura dettagliata illustra come integrare informazioni sulla finestra degli strumenti in una nuova **opzioni** pagina e una nuova impostazione sul **proprietà** pagina, nonché come scrivere il **elenco attività** e **Output** windows.
@@ -33,7 +33,7 @@ ms.locfileid: "60078382"
 1. Creare un progetto denominato **TodoList** usando il modello di progetto VSIX e aggiungere un modello di elemento di finestra degli strumenti personalizzata denominato **TodoWindow**.
 
     > [!NOTE]
-    >  Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creare un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Configurare la finestra degli strumenti
  Aggiungere una casella di testo in cui è possibile digitare un nuovo elemento ToDo, un pulsante per aggiungere il nuovo elemento all'elenco e una casella di riepilogo per visualizzare gli elementi nell'elenco.
@@ -41,7 +41,7 @@ ms.locfileid: "60078382"
 1. Nelle *TodoWindow.xaml*, eliminare i controlli Button, TextBox e StackPanel da UserControl.
 
     > [!NOTE]
-    >  Questa operazione non elimina il **button1_Click** gestore eventi, che verrà riutilizzata in un passaggio successivo.
+    > Questa operazione non elimina il **button1_Click** gestore eventi, che verrà riutilizzata in un passaggio successivo.
 
 2. Dal **tutti i controlli WPF** sezione del **della casella degli strumenti**, trascinare un' **Canvas** controllo alla griglia.
 

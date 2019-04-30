@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411026"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file dell'editor
 Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale quando un file con il *.myext* estensione del nome file viene caricato.
@@ -325,7 +325,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
 3. Aprire il **VSPackage.resx** del file, aggiungere una nuova stringa, impostare il nome su **101**e impostare il valore su `IDS_EDITORNAME`. Questo passaggio viene fornito il pacchetto con un ID di risorsa per accedere alla stringa di cui che è stato creato.
 
    > [!NOTE]
-   >  Se il **VSPackage.resx** file contiene un oggetto stringa che il `name` attributo impostato su **101**, sostituire con un altro valore univoco, numeric, qui e nei passaggi seguenti.
+   > Se il **VSPackage.resx** file contiene un oggetto stringa che il `name` attributo impostato su **101**, sostituire con un altro valore univoco, numeric, qui e nei passaggi seguenti.
 
 4. Nelle **Esplora soluzioni**, aprire il **MyPackagePackage.cs** file.
 

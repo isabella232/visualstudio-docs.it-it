@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386852"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60055731"
  È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** contiene un collegamento a **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione, ad esempio tipi .NET Framework predefiniti.  
   
 > [!IMPORTANT]
->  Non è possibile utilizzare questo comando nelle versioni Express di Visual Studio 2013.  
+> Non è possibile utilizzare questo comando nelle versioni Express di Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Utilizzo di Visualizza definizione  
   
@@ -76,7 +76,7 @@ ms.locfileid: "60055731"
     |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|MAIUSC+ESC|  
   
     > [!NOTE]
-    >  Per modificare codice in una finestra **Visualizza definizione** è anche possibile usare gli stessi tasti di scelta rapida utilizzabili in qualsiasi altra posizione in Visual Studio.  
+    > Per modificare codice in una finestra **Visualizza definizione** è anche possibile usare gli stessi tasti di scelta rapida utilizzabili in qualsiasi altra posizione in Visual Studio.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2f82ab0b28c1052a0d6a4cb0b2db7e6bbaaba8cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420586"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Inviare gli eventi di avvio dopo un avvio
 Dopo che il motore di debug (DE) è collegato al programma, invia una serie di eventi di avvio nuovamente alla sessione di debug.
@@ -31,7 +31,7 @@ Dopo che il motore di debug (DE) è collegato al programma, invia una serie di e
 - Un carico evento di completamento, inviato quando il codice è caricato e pronto per l'esecuzione, ma prima che venga eseguito qualsiasi codice.
 
   > [!NOTE]
-  >  Quando questo evento si continua, le variabili globali vengono inizializzate ed eseguire routine di avvio.
+  > Quando questo evento si continua, le variabili globali vengono inizializzate ed eseguire routine di avvio.
 
 - Eventi modulo di caricamento e la creazione del thread possibili altri.
 

@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444977"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
  Attualmente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installazioni verranno avviato solo se l'URL del manifesto di distribuzione viene aperta utilizzando Internet Explorer. Una distribuzione il cui URL è avviato da un'altra applicazione, ad esempio Microsoft Office Outlook, verrà avviato correttamente solo se Internet Explorer viene impostato come il Web browser predefinito.  
   
 > [!NOTE]
->  Mozilla Firefox è supportato se il provider di distribuzione non è vuoto o è installata l'estensione di Microsoft .NET Framework Assistant. Questa estensione è inclusa in .NET Framework 3.5 SP1. Per il supporto di applicazioni XBAP, il plug-in NPWPF viene attivato quando necessario.  
+> Mozilla Firefox è supportato se il provider di distribuzione non è vuoto o è installata l'estensione di Microsoft .NET Framework Assistant. Questa estensione è inclusa in .NET Framework 3.5 SP1. Per il supporto di applicazioni XBAP, il plug-in NPWPF viene attivato quando necessario.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Attivazione di applicazioni ClickOnce tramite la creazione di script di Browser  
  Se è stata sviluppata una pagina Web personalizzata che consente di avviare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione usando lo script attivo, è probabile che l'applicazione non verrà avviate in alcuni computer. Internet Explorer contiene un'impostazione denominata **richiesta di conferma automatica per il download di file**, che influisce su questo comportamento. Questa impostazione è disponibile nel **sicurezza** scheda relativo **opzioni** menu che influisce su questo comportamento. Viene chiamato **richiesta di conferma automatica per il file di download**, e viene elencato sotto il **Scarica** categoria. La proprietà è impostata su **abilitare** per impostazione predefinita per le pagine Web intranet e al **disabilitare** per impostazione predefinita per le pagine Web di Internet. Quando questa impostazione è impostata su **disabilitare**, qualsiasi tentativo di attivare un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applicazione a livello di codice (ad esempio, assegnando il relativo URL per il `document.location` proprietà) verranno bloccati. In questa circostanza, gli utenti possono avviare applicazioni cloud solo tramite un download avviato dall'utente, ad esempio, facendo clic su un collegamento ipertestuale impostato per l'URL dell'applicazione.  
@@ -78,7 +78,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ```  
   
 > [!NOTE]
->  È possibile configurare l'autenticazione NTLM (NT challenge-response) modo se il sito richiede le credenziali diverse dalle credenziali predefinite e, nella finestra di dialogo di sicurezza, si fa clic su **OK** quando viene chiesto se si desidera salvare l'oggetto fornito credenziali per le sessioni future. Tuttavia, questa soluzione alternativa non funzioneranno per l'autenticazione di base.  
+> È possibile configurare l'autenticazione NTLM (NT challenge-response) modo se il sito richiede le credenziali diverse dalle credenziali predefinite e, nella finestra di dialogo di sicurezza, si fa clic su **OK** quando viene chiesto se si desidera salvare l'oggetto fornito credenziali per le sessioni future. Tuttavia, questa soluzione alternativa non funzioneranno per l'autenticazione di base.  
   
 ## <a name="using-third-party-web-servers"></a>Utilizzo di server Web di terze parti  
  Se si distribuisce un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione da un server Web diversi da IIS, si verifichi un problema se il server restituisce il tipo di contenuto non corretto per la chiave [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] file, ad esempio il manifesto di distribuzione e il manifesto dell'applicazione. Per risolvere questo problema, vedere la Guida del server Web documentazione su come aggiungere nuovi tipi di contenuto al server e assicurarsi che tutti i mapping dei estensione del nome di file elencati nella tabella seguente sono presenti.  

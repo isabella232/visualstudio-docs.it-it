@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417562"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Finestra di dialogo Cerca e seleziona un tipo .NET
 Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di progettazione, ad esempio la finestra di progettazione variabile, quando si seleziona **Cerca tipi...** da un elenco dei tipi di dati, è il **individuare e selezionare un tipo .NET** finestra di dialogo (definito in una forma abbreviata come "browser tipi"). In questa finestra di dialogo è possibile scegliere un tipo dalla visualizzazione albero di assembly e progetti.  
@@ -31,7 +31,7 @@ Nel **delle proprietà** finestra, le finestre di dialogo o le finestre di proge
 - Quando si aggiunge un oggetto catch all'attività <xref:System.Activities.Statements.TryCatch>.  
   
 > [!NOTE]
->  Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Visualizzare [matrici irregolari](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrici multidimensionali](http://go.microsoft.com/fwlink/?LinkId=195227) per informazioni dettagliate.  
+> Il browser del tipo può visualizzare i tipi di matrice irregolari, ma non i tipi di matrice multidimensionale. Visualizzare [matrici irregolari](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrici multidimensionali](http://go.microsoft.com/fwlink/?LinkId=195227) per informazioni dettagliate.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selezione di un tipo di riferimento o di valore da Browser tipi.  
   

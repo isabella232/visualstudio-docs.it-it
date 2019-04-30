@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446192"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Avvio rapido: Sviluppo basato su test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
    **Per eseguire il debug di un test:** aprire il menu di scelta rapida per uno o più test e quindi scegliere **Esegui debug test selezionati**.  
   
 > [!IMPORTANT]
->  I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.  
+> I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.  
   
 > [!NOTE]
->  Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ## <a name="walkthrough"></a> Procedura dettagliata: Uso di Unit test per sviluppare un metodo  
  In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [framework di test diverso negli Stati Uniti](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
@@ -152,7 +152,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 1. Per assicurarsi che il codice venga eseguito in tutti i casi, aggiungere dei test che utilizzino una più vasta gamma di valori in input.  
   
     > [!TIP]
-    >  Evitare di modificare i test esistenti che hanno avuto successo. Piuttosto, aggiungere nuovi test. Modificare i test esistenti solo in caso di variazione dei requisiti dell'utente. Questo criterio consente di assicurarsi di non perdere le funzionalità esistenti mentre si lavora per estendere il codice.  
+    > Evitare di modificare i test esistenti che hanno avuto successo. Piuttosto, aggiungere nuovi test. Modificare i test esistenti solo in caso di variazione dei requisiti dell'utente. Questo criterio consente di assicurarsi di non perdere le funzionalità esistenti mentre si lavora per estendere il codice.  
   
      Nella classe di test, aggiungere il seguente test, che prova un intervallo di valori di input:  
   
@@ -257,7 +257,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 1. Semplificare il codice, ma non modificare i test.  
   
     > [!TIP]
-    >  Il *refactoring* è una modifica che consente di migliorare le prestazioni o rendere il codice più facile da comprendere. Non è concepito per modificare il comportamento del codice e pertanto i test non vengono modificati.  
+    > Il *refactoring* è una modifica che consente di migliorare le prestazioni o rendere il codice più facile da comprendere. Non è concepito per modificare il comportamento del codice e pertanto i test non vengono modificati.  
     >   
     >  Si consiglia di effettuare le operazioni di refactoring separatamente dai passaggi che estendono le funzionalità. Mantenendo i test invariati ci si assicura che non siano stati introdotti accidentalmente bug durante il refactoring.  
   

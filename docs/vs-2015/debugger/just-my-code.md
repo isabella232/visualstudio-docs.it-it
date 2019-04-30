@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421819"
 ---
 # <a name="just-my-code"></a>Just My Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Gli sviluppatori che utilizzano i linguaggi .NET Framework hanno familiarità co
  ![Abilitare Just My Code nella finestra di dialogo Opzioni](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  Il **Abilita Just My Code** impostazione è un'impostazione globale che viene applicata a tutti i progetti di Visual Studio in tutte le lingue.  
+> Il **Abilita Just My Code** impostazione è un'impostazione globale che viene applicata a tutti i progetti di Visual Studio in tutte le lingue.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Eseguire l'override di filtri dello stack di chiamate  
  Nelle visualizzazioni dello stack di chiamate, ad esempio nelle finestre dello stack di chiamate e delle attività, la funzionalità Just My Code consente di comprimere il codice non utente in un frame annotato con etichetta `[External Code]`. Per visualizzare i frame compressi, scegliere **Mostra codice esterno** nel menu di scelta rapida dello stack di chiamate visualizzato.  
   
 > [!NOTE]
->  Il **Mostra codice esterno** impostazione viene salvata profiler dell'utente corrente. e si applica a tutti i progetti in tutti i linguaggi aperti dall'utente.  
+> Il **Mostra codice esterno** impostazione viene salvata profiler dell'utente corrente. e si applica a tutti i progetti in tutti i linguaggi aperti dall'utente.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> Just My Code in .NET framework  
   

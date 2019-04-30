@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388591"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visual Studio consente di comprendere in che modo uno specifico pixel viene interessato dagli eventi Direct3D che si verificano durante un frame del gioco o dell'app.
@@ -59,7 +59,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
 3. Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.
 
     > [!TIP]
-    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.
+    > Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.
 
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader
 

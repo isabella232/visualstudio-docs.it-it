@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417563"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Finestra di dialogo Seleziona operazione (legacy)
 Questo argomento viene descritto come usare il **Seleziona operazione** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +36,7 @@ Questo argomento viene descritto come usare il **Seleziona operazione** nella fi
 |**Autorizzazioni**|Scheda contenente le proprietà <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> degli utenti autorizzati a chiamare tale operazione. Ad esempio, se solo gli utenti dal gruppo Administrators sono autorizzati a chiamare tale operazione, quindi si scriverebbe "Administrators" **ruolo** casella di testo.<br /><br /> Questa scheda è abilitata per le operazioni create tramite il **ChooseOperation** finestra di dialogo e le operazioni che sono state importate tramite il **importazione** pulsante.|  
   
 > [!NOTE]
->  Il **Seleziona operazione** finestra di dialogo vengono visualizzati solo i contratti o operazioni che vengono usate da altre <xref:System.Workflow.Activities.SendActivity> attività nel flusso di lavoro. Allo stesso modo, il **Seleziona operazione** finestra di dialogo <xref:System.Workflow.Activities.ReceiveActivity> le attività vengono visualizzati solo i contratti o operazioni che vengono usate da altre **ReceiveActivity** attività nel flusso di lavoro.  
+> Il **Seleziona operazione** finestra di dialogo vengono visualizzati solo i contratti o operazioni che vengono usate da altre <xref:System.Workflow.Activities.SendActivity> attività nel flusso di lavoro. Allo stesso modo, il **Seleziona operazione** finestra di dialogo <xref:System.Workflow.Activities.ReceiveActivity> le attività vengono visualizzati solo i contratti o operazioni che vengono usate da altre **ReceiveActivity** attività nel flusso di lavoro.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Implementare un'operazione del contratto WCF (Legacy)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

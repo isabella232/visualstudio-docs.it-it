@@ -10,12 +10,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fdead0bf0f1c5d2cb329d25cd37487cf93b772d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445440"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementazione della gestione dei comandi per i progetti annidati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "58967107"
 L'IDE può passare i comandi che vengono passati tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e il <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfacce per i progetti annidati o i progetti padre è possono filtrare o ignorare i comandi.  
   
 > [!NOTE]
->  È possibile filtrare solo i comandi in genere gestiti dal progetto padre. Comandi, ad esempio **compilare** e **Distribuisci** che vengono gestiti dagli IDE non può essere filtrato.  
+> È possibile filtrare solo i comandi in genere gestiti dal progetto padre. Comandi, ad esempio **compilare** e **Distribuisci** che vengono gestiti dagli IDE non può essere filtrato.  
   
  I passaggi seguenti descrivono il processo per implementare la gestione dei comandi.  
   

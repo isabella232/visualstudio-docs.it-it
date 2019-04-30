@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412679"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Questa interfaccia rappresenta una proprietà frame dello stack, una proprietà del documento programma o un'altra proprietà. La proprietà è in genere il risultato della valutazione di un'espressione.
 
 > [!NOTE]
->  Questo uso di "property" non deve essere confuso con tale vale a dire una variabile membro di una classe, anche se un `IDebugProperty2` può rappresentare tale entità.
+> Questo uso di "property" non deve essere confuso con tale vale a dire una variabile membro di una classe, anche se un `IDebugProperty2` può rappresentare tale entità.
 
 ## <a name="syntax"></a>Sintassi
 

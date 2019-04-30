@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a58adf1be92655a6ca7846e8c1d7ea41515b7109
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422670"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Distribuire un'estensione del modello di livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Altri utenti di Visual Studio possono installare estensioni di modellazione del 
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
-        >  % LocalAppData % corrisponde in genere *DriveName*: gli utenti*UserName*AppDataLocal.  
+        > % LocalAppData % corrisponde in genere *DriveName*: gli utenti*UserName*AppDataLocal.  
   
 2. Espandere ogni file VSIX in una cartella nello stesso percorso:  
   

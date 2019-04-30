@@ -11,12 +11,12 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66ca9a6176fc17784e79e5c4f3ad633a8c685854
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 163eb0f23716fa2f036d07612b741c0c9419b92e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408475"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Completamento delle istruzioni in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Completamento delle istruzioni è il processo mediante il quale il servizio di l
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare il completamento delle istruzioni, vedere [procedura dettagliata: Visualizzazione del completamento istruzioni](../../extensibility/walkthrough-displaying-statement-completion.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
 ## <a name="implementing-statement-completion"></a>Implementazione di completamento istruzioni  
  Nell'editor principale, il completamento delle istruzioni attiva un'interfaccia utente speciale in modo interattivo consente più facilmente e rapidamente scrittura codice. Completamento delle istruzioni facilita mediante la visualizzazione di classi o gli oggetti pertinenti quando sono necessari, che consente di evitare di dover ricordare elementi specifici o che sia necessario cercarli in un argomento di riferimento della Guida.  

@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 27b0a4c93d6b8143b81b960a9b5f4a2158e7b721
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419605"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Procedura: Creare progetti di Office in Visual Studio
   È possibile usare [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] per creare il componente aggiuntivo VSTO e a livello di documento personalizzazioni per le applicazioni Microsoft Office. Per altre informazioni su questi tipi di progetti, vedere [Cenni preliminari sullo sviluppo di soluzioni Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "57868172"
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
    > [!NOTE]
-   >  Per impostazione predefinita, i progetti di Office hanno come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni, vedere [profilo client .NET Framework](/dotnet/framework/deployment/client-profile).
+   > Per impostazione predefinita, i progetti di Office hanno come destinazione [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Per altre informazioni, vedere [profilo client .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. Nel riquadro Modelli, sotto il nodo per la lingua da usare, espandere **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "57868172"
 4. Nell'elenco dei modelli di progetto scegliere un modello di progetto del componente aggiuntivo VSTO. Per un elenco dei modelli progetto disponibili del componente aggiuntivo VSTO, vedere [Cenni preliminari sui modelli di progetto di Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Se i modelli di progetto non sono visibili quando si seleziona il **Office Add-ins** nodo, verificare che l'opzione **.NET Framework 4** o in un secondo momento è selezionato nella casella combinata nella parte superiore della finestra di dialogo. I modelli di progetto di Office sono visibili per entrambe le versioni di .NET Framework.
+   > Se i modelli di progetto non sono visibili quando si seleziona il **Office Add-ins** nodo, verificare che l'opzione **.NET Framework 4** o in un secondo momento è selezionato nella casella combinata nella parte superiore della finestra di dialogo. I modelli di progetto di Office sono visibili per entrambe le versioni di .NET Framework.
 
 5. Nel **nome** , digitare un nome per il progetto. Per impostazione predefinita, il nome del progetto viene usato anche come nome della soluzione.
 
@@ -147,7 +147,7 @@ ms.locfileid: "57868172"
    - Segno di percentuale (%)
 
    > [!NOTE]
-   >  Se si usa un documento esistente in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], usare solo i documenti creati o convertiti in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Analogamente, se si usa un documento esistente in un progetto di Word 2010, usare solo i documenti creati o convertiti in Word 2010. Alcune funzionalità verranno disabilitate nel documento se si usa un documento creato in una versione precedente di Word. Se si prova a scrivere codice che usa queste funzionalità, potrebbero verificarsi errori nel progetto. Per convertire un documento, aprirlo in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010 e nel **File** sulla barra multifunzione, scegliere **Info** > **convertire**.
+   > Se si usa un documento esistente in un progetto di [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)], usare solo i documenti creati o convertiti in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Analogamente, se si usa un documento esistente in un progetto di Word 2010, usare solo i documenti creati o convertiti in Word 2010. Alcune funzionalità verranno disabilitate nel documento se si usa un documento creato in una versione precedente di Word. Se si prova a scrivere codice che usa queste funzionalità, potrebbero verificarsi errori nel progetto. Per convertire un documento, aprirlo in [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] o Word 2010 e nel **File** sulla barra multifunzione, scegliere **Info** > **convertire**.
 
 8. Scegliere **Fine**.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9eee83ba90248c15387771f355919e345375ff05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420152"
 ---
 # <a name="graphics-pipeline-stages"></a>Fasi pipeline grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
 - Nella finestra **Fasi pipeline grafica** individuare la fase dello shader che corrisponde allo shader da esaminare. Quindi, sotto l'immagine di anteprima, seguire il collegamento del titolo della fase dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
   
     > [!TIP]
-    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra della cronologia pixel.  
+    > Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra della cronologia pixel.  
   
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader  
   
@@ -59,7 +59,7 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
  Nella finestra Fasi pipeline vengono visualizzate solo le fasi della pipeline che erano attive durante la chiamata di disegno. Ogni fase della pipeline grafica trasforma l'input dalla fase precedente e passa il risultato alla fase successiva. La prima fase, ovvero Assemblaggio input, estrae i dati di indici e vertici forniti dall'app e li usa come input. L'ultima fase, ovvero Unione output, combina i pixel di cui è stato eseguito il rendering con il contenuto corrente del buffer frame o della destinazione di rendering per produrre l'immagine finale visualizzata sullo schermo.  
   
 > [!NOTE]
->  I compute shader non sono supportati nella finestra **Fasi pipeline grafica**.  
+> I compute shader non sono supportati nella finestra **Fasi pipeline grafica**.  
   
  **Assemblaggio input**  
  Assemblaggio input legge i dati di indici e vertici specificati dall'app e li assembla per l'hardware grafico.  
@@ -67,7 +67,7 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
  Nella finestra Fasi pipeline, l'output di Assemblaggio input viene visualizzato come modello wireframe. Per esaminare in dettaglio i risultati, selezionare **Assemblaggio input** nella finestra **Fasi pipeline grafica** per vedere i vertici assemblati in 3D completo usando l'editor modello.  
   
 > [!NOTE]
->  Se la semantica `POSITION` non è presente nell'output dell'assemblaggio input, nella fase **Assemblaggio input** non verrà visualizzato nulla.  
+> Se la semantica `POSITION` non è presente nell'output dell'assemblaggio input, nella fase **Assemblaggio input** non verrà visualizzato nulla.  
   
  **Vertex shader**  
  La fase Vertex shader elabora i vertici, in genere eseguendo operazioni come trasformazioni, rivestimento e illuminazione. Produce lo stesso numero di vertici che accetta come input.  
@@ -75,7 +75,7 @@ La finestra Fasi Pipeline grafica aiuta a comprendere come una singola chiamata 
  Nella finestra Fasi pipeline, l'output di Vertex shader viene visualizzato come immagine raster wireframe. Per esaminare in dettaglio i risultati, selezionare **Vertex shader** nella finestra **Fasi pipeline grafica** per vedere i vertici elaborati nell'editor di immagini.  
   
 > [!NOTE]
->  Se la semantica `POSITION` o `SV_POSITION` non è presente nell'output di vertex shader, nella fase **Vertex shader** non verrà visualizzato nulla.  
+> Se la semantica `POSITION` o `SV_POSITION` non è presente nell'output di vertex shader, nella fase **Vertex shader** non verrà visualizzato nulla.  
   
  **Hull shader** (solo Direct3D 11 e Direct3D 12)  
  La fase Hull shader elabora i punti di controllo che definiscono una superficie di ordine inferiore, ad esempio un quadrato, un triangolo o una linea. Come output, produce patch geometriche di ordine superiori e costanti patch che vengono passate alla fase del mosaico a funzione fissa.  

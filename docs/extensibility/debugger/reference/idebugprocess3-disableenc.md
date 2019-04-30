@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b7456d9a045331c53f8465cc7387823c734104
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413291"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Questo metodo in modo esplicito Disabilita modifica e continuazione su questo processo (e tutti i programmi contengono). Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.
@@ -44,7 +44,7 @@ HRESULT DisableENC(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.
 
 > [!NOTE]
->  Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.
+> Un fornitore di porte personalizzato deve sempre restituire `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Note
  Una volta modifica e continuazione è disabilitata per un processo, può essere abilitato nuovamente solo riavviando il processo.

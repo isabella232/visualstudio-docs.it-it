@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411872"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generazione di testo in fase di esecuzione con modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Digitare un nome per il file del modello.  
   
     > [!NOTE]
-    >  Il nome del file modello da utilizzare come nome di una classe nel codice generato. Pertanto, non deve essere presente spazi o punteggiatura.  
+    > Il nome del file modello da utilizzare come nome di una classe nel codice generato. Pertanto, non deve essere presente spazi o punteggiatura.  
   
 4. Scegliere **Aggiungi**.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. Impostare il file **strumenti personalizzati** proprietà **TextTemplatingFilePreprocessor**. In Esplora soluzioni, nel menu di scelta rapida del file, scegliere **proprietà**.  
   
     > [!NOTE]
-    >  Se la proprietà è già impostata, assicurarsi che sia **TextTemplatingFilePreprocessor** e non **TextTemplatingFileGenerator**. Questa situazione può verificarsi se si include un file che ha già l'estensione **tt**.  
+    > Se la proprietà è già impostata, assicurarsi che sia **TextTemplatingFilePreprocessor** e non **TextTemplatingFileGenerator**. Questa situazione può verificarsi se si include un file che ha già l'estensione **tt**.  
   
 3. Modificare l'estensione del nome file **tt**. Anche se questo passaggio è facoltativo, consente di evitare di aprire il file in un editor non corretto.  
   

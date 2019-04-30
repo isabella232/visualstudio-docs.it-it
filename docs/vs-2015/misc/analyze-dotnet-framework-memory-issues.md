@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444663"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizzare i problemi relativi alla memoria .NET Framework
 L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite di memoria e uso non efficiente della memoria nel codice .NET. La versione minima di .NET Framework per il codice di destinazione è .NET Framework 4.5.  
@@ -59,7 +59,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
  Lo strumento di analisi della memoria analizza le informazioni in *file di dump* che contengono informazioni sull'heap. È possibile creare file dump in Visual Studio, oppure è possibile usare uno strumento quale [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) dalla [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Visualizzare [che cos'è un dump e come crearne uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sul blog di Visual Studio Debugger Team.  
   
 > [!NOTE]
->  La maggior parte degli strumenti può raccogliere informazioni sui file di dump con o senza dati di memoria heap completi. L'analizzatore di memoria di Visual Studio richiede informazioni complete sull'heap.  
+> La maggior parte degli strumenti può raccogliere informazioni sui file di dump con o senza dati di memoria heap completi. L'analizzatore di memoria di Visual Studio richiede informazioni complete sull'heap.  
   
  **Per raccogliere un dump da Visual Studio**  
   

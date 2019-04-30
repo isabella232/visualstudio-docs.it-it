@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383438"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Benvenuti in Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067729"
 Visual Studio offre tutto ciò che occorre per creare app eccezionali per dispositivi o desktop, per il Web e nel cloud. È possibile scrivere codice per iOS, Android e Windows in un solo ambiente IDE, sfruttare i vantaggi di IntelliSense, navigare facilmente nel codice ed eseguire rapidamente le compilazioni e la distribuzione. Visual Studio consente di aumentare la produttività e semplifica le attività sia per chi lavora singolarmente sia per chi fa parte di un team più grande.
 
 > [!NOTE]
->  Fare clic qui per le note sulla versione di [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Fare clic qui per le note sulla versione di [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Fare clic qui per le note sulla versione di [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Fare clic qui per le note sulla versione di [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Scaricare gratuitamente [Community di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) per iniziare subito la codifica. Per lo sviluppo multipiattaforma, assicurarsi di installare i pacchetti facoltativi. È possibile ottenere altre funzionalità con [altre versioni di Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).
 

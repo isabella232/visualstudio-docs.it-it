@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409979"
 ---
 # <a name="launch-a-program"></a>Avviare un programma
 Gli utenti che desiderano eseguire il debug di un programma possono premere **F5** di eseguire il debugger dall'IDE. Questo passaggio inizia una serie di eventi che risultano dell'IDE per la connessione a un motore di debug (DE), che a sua volta connesso, o collegato, per il programma come indicato di seguito:
@@ -30,12 +30,12 @@ Gli utenti che desiderano eseguire il debug di un programma possono premere **F5
     Se non viene specificato un CRI, la porta chiama il sistema operativo per avviare il programma, che fa sì che l'ambiente del programma in fase di esecuzione da caricare.
 
    > [!NOTE]
-   >  Se un CRI viene usato per avviare un programma, è probabile che la Germania stesso verrà collegato al programma.
+   > Se un CRI viene usato per avviare un programma, è probabile che la Germania stesso verrà collegato al programma.
 
 3. A seconda del fatto che la Germania o la porta ha avviato il programma, il DE o l'ambiente di run-time quindi crea una descrizione del programma, o un nodo e informa la porta su cui l'esecuzione del programma.
 
    > [!NOTE]
-   >  È consigliabile che l'ambiente di runtime creare il nodo di programma, perché il nodo di programma è una rappresentazione leggera di un programma che è possibile eseguire il debug. Non è necessario caricare un intero DE sufficiente per creare e registrare un nodo di programma. Se la Germania è progettato per l'esecuzione in corso l'IDE, ma nessun IDE è in esecuzione, deve essere un componente che è possibile aggiungere un nodo di programma per la porta.
+   > È consigliabile che l'ambiente di runtime creare il nodo di programma, perché il nodo di programma è una rappresentazione leggera di un programma che è possibile eseguire il debug. Non è necessario caricare un intero DE sufficiente per creare e registrare un nodo di programma. Se la Germania è progettato per l'esecuzione in corso l'IDE, ma nessun IDE è in esecuzione, deve essere un componente che è possibile aggiungere un nodo di programma per la porta.
 
    Il programma appena creato, insieme a eventuali altri programmi, correlati o non correlati, avviato o collegati per dall'IDE stesso, creare una sessione di debug.
 

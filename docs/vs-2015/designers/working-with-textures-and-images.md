@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403467"
 ---
 # <a name="working-with-textures-and-images"></a>Uso di trame e immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54795932"
 È possibile usare l'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per creare e modificare trame e immagini. L'editor di immagini supporta formati avanzati per trame e immagini, come quelli usati nello sviluppo di app DirectX.  
   
 > [!NOTE]
->  L'editor di immagini non supporta immagini con livello di colore minimo, come icone e cursori. Per creare o modificare questi tipi di immagini, usare l'[editor di immagini per le icone](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> L'editor di immagini non supporta immagini con livello di colore minimo, come icone e cursori. Per creare o modificare questi tipi di immagini, usare l'[editor di immagini per le icone](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Trame e immagini  
  A un livello di base, le trame e le immagini sono semplicemente tabelle di dati usate per offrire dettagli visivi nelle app grafiche. Il tipo di dettagli offerti da una trama o un'immagine dipende dal modo in cui viene usata, ma i campioni di colore, i valori alfa (trasparenza), le normali alla superficie e i valori di altezza costituiscono alcuni esempi comuni. La differenza principale tra una trama e un'immagine è che una trama è destinata a essere usata insieme a una rappresentazione di forma, in genere un modello 3D, per esprimere una scena o un oggetto completo, mentre un'immagine è in genere una rappresentazione autonoma della scena o dell'oggetto.  
@@ -47,7 +47,7 @@ ms.locfileid: "54795932"
   
 ## <a name="related-topics"></a>Argomenti correlati  
   
-|Titolo|Description|  
+|Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini con trame e immagini.|  
 |[Esempi dell'editor immagini](../designers/image-editor-examples.md)|Contiene i collegamenti ad alcuni argomenti che descrivono come usare l'editor di immagini per eseguire attività comuni di elaborazione delle immagini.|

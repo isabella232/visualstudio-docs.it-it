@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51430c78dcf694a602ce6b8904262647a257ac32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403482"
 ---
 # <a name="math-nodes"></a>Nodi di matematica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54796219"
 Nella finestra di progettazione shader i nodi matematici eseguono operazioni algebriche, logiche, trigonometriche e altre operazioni matematiche.  
   
 > [!NOTE]
->  Quando si usano nodi matematici nella finestra di progettazione shader, la promozione del tipo è particolarmente evidente. Per informazioni su come la promozione del tipo influisce sui parametri di input, vedere la sezione "Promozione di input" in [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md).  
+> Quando si usano nodi matematici nella finestra di progettazione shader, la promozione del tipo è particolarmente evidente. Per informazioni su come la promozione del tipo influisce sui parametri di input, vedere la sezione "Promozione di input" in [Nodi della finestra di progettazione shader](../designers/shader-designer-nodes.md).  
   
 ## <a name="math-node-reference"></a>Riferimento per il nodo matematica  
   

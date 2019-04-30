@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406747"
 ---
 # <a name="secure-clickonce-applications"></a>Proteggere le applicazioni ClickOnce
 Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono soggette ai vincoli di sicurezza dall'accesso di codice in .NET Framework che consentono di limitare l'accesso del codice alle risorse e alle operazioni protette. Per poter scrivere correttamente le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , è quindi importante comprendere le implicazioni di questo tipo di sicurezza. Le applicazioni possono usare l'attendibilità totale o le aree parziali, ad esempio le aree Internet e Intranet, per limitare l'accesso.
@@ -71,7 +71,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
  Non passare mai argomenti recuperati tramite una stringa di query direttamente a un database o alla riga di comando senza verificare che gli argomenti siano sicuri. Sono considerati non sicuri gli argomenti che includono caratteri di escape di database o da riga di comando che possono consentire a un utente malintenzionato di modificare l'applicazione eseguendo comandi arbitrari.
 
 > [!NOTE]
->  Gli argomenti delle stringhe di query sono l'unico modo per passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] all'avvio. Non è possibile passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dalla riga di comando.
+> Gli argomenti delle stringhe di query sono l'unico modo per passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] all'avvio. Non è possibile passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dalla riga di comando.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Distribuzione di assembly offuscati
  Visual Studio include la versione gratuita di [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md), che è possibile usare per proteggere le applicazioni ClickOnce tramite l'offuscamento del codice e misure di protezione attive.  Per informazioni dettagliate, vedere [la sezione dedicata a ClickOnce della guida dell'utente di Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

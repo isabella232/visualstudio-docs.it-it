@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb70705d29ad636329803656aeaa1a27ddf237d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402761"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
 I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](create-and-configure-tableadapters.md) e classi di set di dati possono essere generate in progetti separati. Ciò consente di separare i livelli applicazione rapidamente e generare applicazioni dati a più livelli.
@@ -33,7 +33,7 @@ Quando si separa il codice del dataset dal codice del TableAdapter, il progetto 
 1. Aprire una soluzione che contiene un set di dati (*XSD* file).
 
     > [!NOTE]
-    >  Se la soluzione non contiene il progetto in cui si desidera separare il codice di set di dati, creare il progetto oppure aggiungere un progetto esistente alla soluzione.
+    > Se la soluzione non contiene il progetto in cui si desidera separare il codice di set di dati, creare il progetto oppure aggiungere un progetto esistente alla soluzione.
 
 2. Fare doppio clic su un file di set di dati tipizzato (un *XSD* file) nel **Esplora soluzioni** per aprire il set di dati nel **Progettazione Dataset**.
 
@@ -46,7 +46,7 @@ Quando si separa il codice del dataset dal codice del TableAdapter, il progetto 
      Dopo aver selezionato il progetto in cui si desidera generare il codice del set di dati, il **DataSet File** proprietà viene popolata con un nome file predefinito. Se necessario, è possibile modificare questo nome. Inoltre, se si desidera generare il codice del set di dati in una directory specifica, è possibile impostare il **cartella del progetto** proprietà sul nome di una cartella.
 
     > [!NOTE]
-    >  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente il progetto di set di dati.
+    > Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente il progetto di set di dati.
 
 6. Salvare il set di dati.
 
@@ -55,7 +55,7 @@ Quando si separa il codice del dataset dal codice del TableAdapter, il progetto 
 Per impostazione predefinita, dopo aver separato il dataset e TableAdapter codice, il risultato è un file di classe discreti in ogni progetto. Il progetto originale include un file denominato *NomeDataset.Designer.vb* (o *NomeDataset.Designer.cs*) che contiene il codice oggetto TableAdapter. Il progetto che è designato nel **DataSetProject** proprietà ha un file denominato *NomeDataset* (o *NomeDataset*) che contiene il codice di set di dati.
 
 > [!NOTE]
->  Per visualizzare il file di classe generata, selezionare il set di dati o di un progetto di TableAdapter. Quindi, nella **Esplora soluzioni**, selezionare **Mostra tutti i file**.
+> Per visualizzare il file di classe generata, selezionare il set di dati o di un progetto di TableAdapter. Quindi, nella **Esplora soluzioni**, selezionare **Mostra tutti i file**.
 
 ## <a name="see-also"></a>Vedere anche
 

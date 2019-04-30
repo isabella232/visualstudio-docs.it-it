@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a00c52b9c167d1fbffc64135b0454110dc929286
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388584"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procedura dettagliata: Oggetti mancanti a causa di una pipeline configurata in modo non corretto
 Questa procedura dettagliata descrive come usare gli strumenti della barra degli strumenti Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per individuare un problema dovuto a un oggetto mancante a causa di un pixel shader non impostato.
@@ -61,7 +61,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
     Nella finestra **Fasi pipeline grafica** la fase **Assembler input** mostra la geometria dell'oggetto prima che venga trasformata, mentre la fase **Vertex shader** mostra lo stesso oggetto una volta trasformato. In questo scenario notare che la finestra **Fasi pipeline grafica** mostra le fasi **Assembler input** e  **Vertex shader** , ma non la fase **Pixel shader** per una delle chiamate di disegno.
 
    > [!NOTE]
-   >  Se altre fasi della pipeline, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, una di esse potrebbe essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.
+   > Se altre fasi della pipeline, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, una di esse potrebbe essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.
 
 4. Fermarsi quando si raggiunge la chiamata di disegno che corrisponde all'oggetto mancante. In questo scenario la finestra **Fasi pipeline grafica** indica che la geometria è stata inviata alla GPU (operazione indicata dalla presenza della fase **Assembler input** ) e trasformata (operazione indicata dalla fase **Vertex shader** ), ma non è visualizzata nella destinazione di rendering perché non sembra essere presente un pixel shader attivo (condizione indicata dall'assenza della fase **Pixel shader** ). In questo scenario è anche possibile visualizzare la sagoma dell'oggetto mancante nella fase **Merge output** :
 
@@ -84,7 +84,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
 1. Individuare la chiamata `PSSetShader` che corrisponde all'oggetto mancante. Nella finestra **Elenco eventi di grafica** immettere "Draw;PSSetShader" nella casella **Cerca** nell'angolo in alto a destra della finestra **Elenco eventi di grafica** . In questo modo, l'elenco verrà filtrato in modo da contenere solo eventi "PSSetShader" e quelli il cui titolo contiene "Draw". Scegliere la prima chiamata `PSSetShader` visualizzata prima della chiamata di disegno dell'oggetto mancante.
 
    > [!NOTE]
-   >  La chiamata`PSSetShader` non verrà visualizzata nella finestra **Elenco eventi di grafica** se non è stata impostata durante questo frame. In genere, questa situazione si verifica solo se viene usato un solo pixel shader per tutti gli oggetti oppure se la chiamata `PSSetShader` è stata involontariamente ignorata durante il frame. In entrambi i casi, è consigliabile cercare nel codice sorgente dell'app le chiamate `PSSetShader` e usare tecniche di debug tradizionali per esaminarne il comportamento.
+   > La chiamata`PSSetShader` non verrà visualizzata nella finestra **Elenco eventi di grafica** se non è stata impostata durante questo frame. In genere, questa situazione si verifica solo se viene usato un solo pixel shader per tutti gli oggetti oppure se la chiamata `PSSetShader` è stata involontariamente ignorata durante il frame. In entrambi i casi, è consigliabile cercare nel codice sorgente dell'app le chiamate `PSSetShader` e usare tecniche di debug tradizionali per esaminarne il comportamento.
 
 2. Aprire la finestra **Stack di chiamate eventi di grafica** . Sulla barra degli strumenti **Diagnostica della grafica** scegliere **Stack di chiamate eventi di grafica**.
 
@@ -93,7 +93,7 @@ Questa procedura dettagliata descrive come usare gli strumenti della barra degli
     ![Il codice che non inizializza il pixel shader](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")
 
    > [!NOTE]
-   >  Se non è possibile individuare l'origine del valore null semplicemente esaminando lo stack di chiamate, è consigliabile impostare un punto di interruzione condizionale nella chiamata `PSSetShader` , in modo che l'esecuzione del programma si interrompa quando il pixel shader è impostato su null. Riavviare quindi l'app in modalità di debug e usare tecniche di debug tradizionali per individuare l'origine del valore null.
+   > Se non è possibile individuare l'origine del valore null semplicemente esaminando lo stack di chiamate, è consigliabile impostare un punto di interruzione condizionale nella chiamata `PSSetShader` , in modo che l'esecuzione del programma si interrompa quando il pixel shader è impostato su null. Riavviare quindi l'app in modalità di debug e usare tecniche di debug tradizionali per individuare l'origine del valore null.
 
    Per correggere il problema, assegnare il pixel shader corretto usando il primo parametro della chiamata API `ID3D11DeviceContext::PSSetShader` .
 

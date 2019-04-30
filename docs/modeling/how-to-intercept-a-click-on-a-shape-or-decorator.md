@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445181"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedura: Intercettare un clic su una forma o su un elemento Decorator
 Le procedure seguenti viene illustrato come intercettare un clic su una forma o un elemento decorator di icona. Consente di intercettare i clic, doppio clic, trascina, e altri movimenti e rendere l'elemento di rispondere.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Impostare `e.Handled` a `true`, a meno che non si desidera che l'evento deve essere passato alla forma o diagramma.
+> Impostare `e.Handled` a `true`, a meno che non si desidera che l'evento deve essere passato alla forma o diagramma.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Per intercettare i clic sugli elementi Decorator
  Gli elementi Decorator immagine vengono eseguite in un'istanza della classe ImageField, che dispone di un metodo di OnDoubleClick. Se si scrive una sottoclasse di ImageField, è possibile intercettare i clic del mouse. I campi vengono configurati nel metodo InitializeShapeFields. Pertanto, è necessario modificare tale metodo per creare un'istanza di una sottoclasse anziché regolare ImageField. Il metodo InitializeShapeFields è nel codice generato della classe di forma. È possibile sostituire la classe shape se si imposta relativo `Generates Double Derived` proprietà come descritto nella procedura seguente.

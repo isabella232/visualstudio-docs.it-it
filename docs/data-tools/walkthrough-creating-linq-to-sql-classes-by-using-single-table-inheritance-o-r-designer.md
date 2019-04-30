@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b270d742cab45bebc48e37dd557ce4cdb2470b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7bb6562c0eb74f537efb25be031e9c9be46d64b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402685"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procedura dettagliata: Creare classi LINQ to SQL tramite ereditarietà a tabella singola (O/R Designer)
 Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) supporta l'ereditarietà a tabella singola come viene in genere implementato nei sistemi relazionali. Questa procedura dettagliata espande i passaggi generici specificati nel [come: Configurare l'ereditarietà tramite O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) argomento e vengono forniti alcuni dati reali per illustrare l'uso dell'ereditarietà nel [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -45,7 +45,7 @@ Il [gli strumenti di LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-too
 1. In **Esplora Server** oppure **Esplora Database**, fare doppio clic il **tabelle** nodo e fare clic su **Aggiungi nuova tabella**.
 
     > [!NOTE]
-    >  È possibile usare il database Northwind o qualsiasi altro database a cui sia possibile aggiungere una tabella.
+    > È possibile usare il database Northwind o qualsiasi altro database a cui sia possibile aggiungere una tabella.
 
 2. In **Progettazione tabelle** aggiungere le colonne seguenti alla tabella:
 

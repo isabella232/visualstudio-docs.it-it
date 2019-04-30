@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446740"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procedura dettagliata: Creazione di un host del modello di testo personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *mo
  È possibile scrivere un host personalizzato se si desidera utilizzare il *trasformazione del modello di testo* funzionalità dall'esterno [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o se si desidera integrare tale funzionalità negli strumenti personalizzati. Per creare un host personalizzato, è necessario creare una classe che eredita da <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Per la documentazione dei singoli metodi, vedere <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Se si scrive un'estensione o un pacchetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], anziché creare il proprio host, si consiglia di utilizzare il servizio del modello di testo. Per altre informazioni, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Se si scrive un'estensione o un pacchetto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], anziché creare il proprio host, si consiglia di utilizzare il servizio del modello di testo. Per altre informazioni, vedere [richiamo di trasformazione del testo in un'estensione VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Di seguito vengono illustrate le attività incluse nella procedura dettagliata:  
   
@@ -732,7 +732,7 @@ Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *mo
 2. Aggiungere al file quanto segue:  
   
     > [!NOTE]
-    >  Il linguaggio di programmazione non deve necessariamente essere uguale a quello dell'host personalizzato.  
+    > Il linguaggio di programmazione non deve necessariamente essere uguale a quello dell'host personalizzato.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *mo
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe nelle **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.  
+    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe nelle **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.  
   
 3. Digitare uno spazio.  
   
@@ -796,7 +796,7 @@ Oggetto *modello di testo*<em>host</em> fornisce un ambiente che consente la *mo
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.  
+    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplate.tt in **Windows Explorer** e quindi trascinare il file nella finestra del prompt dei comandi.  
   
      L'applicazione host personalizzata viene eseguita e completa il processo di trasformazione del modello di testo.  
   

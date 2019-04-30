@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419734"
 ---
 # <a name="replace-in-files"></a>Sostituisci nei file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082594"
 Sostituisci nei file** consente di cercare una stringa o un'espressione nel codice di un determinato set di file e di modificare alcune o tutte le corrispondenze trovate. Le corrispondenze trovate e le azioni eseguite sono elencate nella finestra **Risultati ricerca** selezionata in **Opzioni risultati**.  
   
 > [!NOTE]
->  Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  È possibile usare uno dei metodi seguenti per visualizzare l'opzione **Sostituisci nei file** nella finestra **Trova e sostituisci**.  
   
@@ -53,7 +53,7 @@ Sostituisci nei file** consente di cercare una stringa o un'espressione nel codi
  L'opzione selezionata nell'elenco a discesa **Cerca in** determina se la funzionalità **Sostituisci nei file** deve cercare solo nei file attualmente attivi o in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca dall'elenco, digitare il percorso di una cartella o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di cartelle per la ricerca. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.  
   
 > [!NOTE]
->  Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.  
+> Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.  
   
 ## <a name="find-options"></a>Opzioni ricerca  
  È possibile espandere o comprimere la sezione **Opzioni di ricerca**. È possibile selezionare o deselezionare le opzioni seguenti:  
@@ -88,7 +88,7 @@ Sostituisci nei file** consente di cercare una stringa o un'espressione nel codi
  Quando questa opzione è selezionata, tutti i file in cui sono state eseguite delle sostituzioni restano aperti in modo da poter annullare o salvare le modifiche. I vincoli di memoria potrebbero limitare il numero di file che possono rimanere aperti dopo un'operazione di sostituzione.  
   
 > [!CAUTION]
->  È possibile usare **Annulla** solo nei file che restano aperti per la modifica. Se questa opzione non è selezionata, i file che non sono già aperti per la modifica restano chiusi e l'opzione **Annulla** non è disponibile per i file.  
+> È possibile usare **Annulla** solo nei file che restano aperti per la modifica. Se questa opzione non è selezionata, i file che non sono già aperti per la modifica restano chiusi e l'opzione **Annulla** non è disponibile per i file.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Ricerca e sostituzione di testo](../ide/finding-and-replacing-text.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb271a03a8932989d6201329c441a21a226f559
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400172"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Recupera il tipo originale per questo simbolo. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su un tipo.
@@ -39,13 +39,13 @@ HRESULT get_unmodifiedType( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Il tipo corrente è una modifica del tipo originale restituito. Il tipo originale per un simbolo può essere determinato prima di tutto ottenere il tipo del simbolo ed quindi interrogazione che restituito per il tipo originale. Si noti che alcuni simboli non possono avere un tipo modificato del tipo originale.
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Dia2.h
+ Intestazione: DIA2.h
 
  Libreria: diaguids.lib
 

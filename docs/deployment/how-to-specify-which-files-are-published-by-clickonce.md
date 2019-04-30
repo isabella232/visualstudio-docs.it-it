@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdf8668b6a34ca6f663b83640e71951f0cb7c255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c04f500ceb8a1c95f643fe43c292bb668d54c2aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406585"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
 Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i file di applicazione, tutte le non di codice nel progetto vengono distribuiti insieme all'applicazione. In alcuni casi, si potrebbe non desidera che la pubblicazione di determinati file o che si desidera installare determinati file in base alle condizioni. Visual Studio offre le funzionalità per escludere i file, contrassegnarli come file di dati o prerequisiti e creare gruppi di file per l'installazione condizionale.
@@ -92,7 +92,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 4. Nel **i file dell'applicazione** finestra di dialogo, seleziona la **gruppo** field per un file che si desidera includere nel nuovo gruppo.
 
     > [!NOTE]
-    >  I file devono avere la **azione di compilazione** proprietà impostata su **contenuto** prima che vengano visualizzati i nomi dei file nei **i file dell'applicazione** nella finestra di dialogo.
+    > I file devono avere la **azione di compilazione** proprietà impostata su **contenuto** prima che vengano visualizzati i nomi dei file nei **i file dell'applicazione** nella finestra di dialogo.
 
 5. Nel **gruppo di Download** campi, selezionare  **\<nuovo... >** nell'elenco a discesa.
 
@@ -111,7 +111,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 5. Nel **gruppo di Download** campo, selezionare un gruppo di nell'elenco a discesa.
 
     > [!NOTE]
-    >  Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione.
+    > Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Pubblicare applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)

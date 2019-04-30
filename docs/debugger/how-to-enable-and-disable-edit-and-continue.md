@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388478"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedura: Abilitare e disabilitare Modifica e continuazione (C#, Visual Basic, C++)
 
@@ -46,7 +46,7 @@ C++ nativo **modifica e continuazione** richiede l'uso di `/INCREMENTAL` opzione
 1. Nella **degli strumenti** > **opzioni** > (o **Debug** > **opzioni**) > **debug**  >  **Generali**, selezionare **modifica e continuazione** nel riquadro di destra.
 
     > [!NOTE]
-    >  Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [IntelliTrace](../debugger/intellitrace.md).
+    > Se IntelliTrace è abilitato e si raccolgono sia eventi IntelliTrace sia informazioni sulle chiamate, la funzionalità Modifica e continuazione viene disabilitata. Per altre informazioni, vedere [IntelliTrace](../debugger/intellitrace.md).
 
 1. Per codice C++, assicurarsi che **abilitare Modifica e continuazione nativo** sia selezionato e impostare le opzioni aggiuntive:
     - **Applica le modifiche durante la continuazione (solo nativo)**

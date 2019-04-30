@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388398"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>Elemento ProjectType (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60084882"
 Classifica il modello di progetto in modo che venga visualizzata sotto il gruppo specificato il **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
 > [!WARNING]
->  Per C++, a partire da Visual Studio 2012 sono supportati i modelli di progetto. Non sono supportati per C++ in Visual Studio 2010 e versioni precedenti.  
+> Per C++, a partire da Visual Studio 2012 sono supportati i modelli di progetto. Non sono supportati per C++ in Visual Studio 2010 e versioni precedenti.  
   
  \<VSTemplate>  
  \<TemplateData>  

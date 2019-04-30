@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6e0cc6ee8df5285555760521b415ce8f6679fc2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446503"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedura: Creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint
   È possibile creare controlli utente personalizzati che forniscono funzionalità personalizzate per la soluzione SharePoint in uso, nonché riutilizzare le funzionalità in questione all'interno del progetto. È possibile includere i controlli utente in una web part o in una pagina applicazione, aggiungere altri controlli ASP.NET e di SharePoint e definire proprietà e metodi per il controllo. Per altre informazioni sui controlli utente, vedere [creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) e [controlli utente e controlli Server in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -40,7 +40,7 @@ ms.locfileid: "60072045"
 5. Nell'elenco dei modelli di SharePoint, scegliere **controllo utente (solo soluzione Farm)**.
 
     > [!NOTE]
-    >  I controlli utente possono essere utilizzati solo nelle soluzioni farm.
+    > I controlli utente possono essere utilizzati solo nelle soluzioni farm.
 
 6. Nel **Name** casella, specificare un nome per il controllo utente e quindi scegliere il **Add** pulsante.
 

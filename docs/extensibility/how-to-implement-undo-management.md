@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415471"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedura: Gestione dell'annullamento implementare
 L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, che viene implementato dall'ambiente. Per supportare la gestione dell'annullamento, implementare le unità di annullamento separato (vale a dire <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, che può contenere più i singoli passaggi.
@@ -75,7 +75,7 @@ L'interfaccia primaria usata per la gestione dell'annullamento è <xref:Microsof
    Il `OleUndoManager` classe rappresenta un'istanza dello stack di singola operazione di annullamento. Pertanto, è disponibile un oggetto di gestione di annullamento per ogni entità di dati si tiene traccia di annullamento o ripristino.
 
 > [!NOTE]
->  Anche se l'oggetto di gestore di annullamento è ampiamente utilizzato da editor di testo, è un componente generale che non dispone di alcun supporto specifico per l'editor di testo. Se si desidera supportare l'annullamento a più livelli o ripristino, è possibile utilizzare questa oggetto a tale scopo.
+> Anche se l'oggetto di gestore di annullamento è ampiamente utilizzato da editor di testo, è un componente generale che non dispone di alcun supporto specifico per l'editor di testo. Se si desidera supportare l'annullamento a più livelli o ripristino, è possibile utilizzare questa oggetto a tale scopo.
 
 ## <a name="see-also"></a>Vedere anche
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

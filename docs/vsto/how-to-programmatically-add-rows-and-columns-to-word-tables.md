@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419591"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procedura: A livello di codice aggiungere righe e colonne alle tabelle di Word
   In una tabella di Microsoft Office Word le celle sono organizzate in righe e colonne. È possibile usare il metodo <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Rows> per aggiungere righe alla tabella e il metodo <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> dell'oggetto <xref:Microsoft.Office.Interop.Word.Columns> per aggiungere colonne.
@@ -30,7 +30,7 @@ ms.locfileid: "60078019"
  Gli esempi di codice seguenti possono essere usati in una personalizzazione a livello di documento. Per usare questi esempi, eseguirli dalla classe `ThisDocument` nel progetto. Gli esempi presuppongono che il documento associato alla personalizzazione contenga già almeno una tabella.
 
 > [!IMPORTANT]
->  Questo codice viene eseguito solo in progetti creati usando uno dei modelli di progetto seguenti:
+> Questo codice viene eseguito solo in progetti creati usando uno dei modelli di progetto seguenti:
 >
 > - Documento di Word 2013
 > - Modello di Word 2013
@@ -57,9 +57,9 @@ ms.locfileid: "60078019"
  Gli esempi di codice seguenti possono essere usati in un componente aggiuntivo VSTO. Per usare gli esempi, eseguirli dalla classe `ThisAddIn` nel progetto. Gli esempi presuppongono che il documento attivo contenga già almeno una tabella.
 
 > [!IMPORTANT]
->  Questo codice viene eseguito solo in progetti creati usando modelli di componente aggiuntivo VSTO per Word.
+> Questo codice viene eseguito solo in progetti creati usando modelli di componente aggiuntivo VSTO per Word.
 >
->  Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Se si desidera eseguire questa attività in qualsiasi altro tipo di progetto, è necessario aggiungere un riferimento per la **Interop** assembly, quindi è necessario usare le classi da tale assembly per aggiungere righe e colonne alle tabelle. Per altre informazioni, vedere [Procedura: Sviluppare applicazioni di Office tramite assembly di interoperabilità primari](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [riferimento all'assembly di interoperabilità primario di Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>Per aggiungere una riga a una tabella
 

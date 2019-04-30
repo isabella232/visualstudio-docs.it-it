@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686e8dfbd94fc3fddbc5e696fc6e943184357c02
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412960"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Fa sì che il processo eseguire un'istruzione o istruzione.
 
 > [!NOTE]
->  Questo metodo deve essere usato al posto di [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md).
+> Questo metodo deve essere usato al posto di [passaggio](../../../extensibility/debugger/reference/idebugprogram2-step.md).
 
 ## <a name="syntax"></a>Sintassi
 

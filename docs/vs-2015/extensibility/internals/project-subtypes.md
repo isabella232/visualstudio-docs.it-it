@@ -11,12 +11,12 @@ ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2e1fe4a2ad528ac32bdd0b3535a8566f630b970e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5ad1e105d43c40782b13d8799b20626e57363c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421841"
 ---
 # <a name="project-subtypes"></a>Sottotipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58964451"
 Sottotipi di progetto consentono di personalizzare o specificare il comportamento dei sistemi di progetto di una versione [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Le personalizzazioni includono il salvataggio dei dati aggiuntivi nel file di progetto, aggiungendo o filtrando gli elementi di **Aggiungi nuovo elemento** della finestra di dialogo controllo come gli assembly vengono eseguito il debug e distribuiti ed estendendo il progetto **proprietà Pagine** nella finestra di dialogo. I pacchetti VSPackage implementare sottotipi di progetto tramite aggregazione COM.  
   
 > [!NOTE]
->  Il sistema di progetto Visual C++ non supporta sottotipi di progetto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sottotipi di progetto stesso utilizzato per implementare progetti Smart Device e SQL Server.  
+> Il sistema di progetto Visual C++ non supporta sottotipi di progetto. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sottotipi di progetto stesso utilizzato per implementare progetti Smart Device e SQL Server.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Progettazione di sottotipi di progetto](../../extensibility/internals/project-subtypes-design.md)  

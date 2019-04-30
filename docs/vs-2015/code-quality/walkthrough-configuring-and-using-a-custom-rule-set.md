@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383412"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procedura dettagliata: Configurazione e uso di un set di regole personalizzate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
     Nel menu File fare clic su **Salva elementi selezionati** per aggiornare il file di progetto con informazioni sui set di regole che è stata selezionata e le relative impostazioni.  
   
    > [!TIP]
-   >  In una situazione reale, una buona norma usare per definire la priorità dei problemi di destinazione con l'analisi del codice consiste nell'iniziare con il **regole minime** set di regole e correggere i problemi desiderati e quindi aggiungere in modo incrementale altre regole o regole imposta per trovare e correggere i problemi aggiuntivi.  
+   > In una situazione reale, una buona norma usare per definire la priorità dei problemi di destinazione con l'analisi del codice consiste nell'iniziare con il **regole minime** set di regole e correggere i problemi desiderati e quindi aggiungere in modo incrementale altre regole o regole imposta per trovare e correggere i problemi aggiuntivi.  
   
    Successivamente, si aggiungerà codice alla libreria di classi che verrà usata per dimostrare le violazioni del CA1704 "Gli identificatori devono essere digitati correttamente" regola di analisi del codice. Per altre informazioni, vedere [CA1704: Gli identificatori devono essere digitati correttamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445965"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Testing unità di una DLL di Visual C++ per le app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
     ```  
   
     > [!TIP]
-    >  È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
+    > È consigliabile non modificare i test che siano stati superati. Al contrario, aggiungere un nuovo test, aggiornare il codice in modo che il test passi e quindi aggiungere un altro test, e così via.  
     >   
     >  Quando gli utenti modificano i requisiti, disabilitare i test che non sono più corretti. Scrivere nuovi test e farli funzionare uno alla volta, nello stesso modo incrementale.  
   
@@ -231,7 +231,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
      ![RangeTest non riuscito](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
+    > Verificare che ogni test non venga superato subito dopo averlo scritto. Questo consente di evitare il semplice errore di scrivere un test che riesce sempre.  
   
 4. Modifica il codice sottoposto a test in modo che il nuovo test venga superato. Aggiungere quanto segue a **RooterLib.cpp**:  
   
@@ -259,7 +259,7 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
      Entrambi i test vengono superati.  
   
 > [!TIP]
->  Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
+> Sviluppare il codice aggiungendo un test alla volta. Assicurarsi che tutti i test vengano superati dopo ogni iterazione.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Debug di un test non superato  
   
@@ -346,6 +346,6 @@ Questo argomento descrive come creare unit test per una DLL in C++ per app di Wi
 2. Scegliere **Esegui tutto** per testare il metodo di cui è stato eseguito il refactoring e assicurarsi di non aver introdotto una regressione.  
   
     > [!TIP]
-    >  Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
+    > Un set stabile di unit test corretti indica con sufficiente sicurezza che non sono stati introdotti bug in fase di modifica del codice.  
     >   
     >  Mantenere il refactoring separato da altre modifiche.

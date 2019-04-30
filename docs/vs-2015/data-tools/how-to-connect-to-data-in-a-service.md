@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386103"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedura: Connettersi ai dati di un servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [co
  Dopo il completamento della procedura guidata, viene aggiunto al progetto un riferimento al servizio ed è immediatamente disponibile nel [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
->  Gli elementi visualizzati nella finestra **Origini dati** dipendono dalle informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, quindi non ci sono elementi vengono visualizzati nei **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
+> Gli elementi visualizzati nella finestra **Origini dati** dipendono dalle informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, quindi non ci sono elementi vengono visualizzati nei **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -52,7 +52,7 @@ Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [co
 4. Facoltativamente, una nuova **Namespace** possono essere digitate al posto del valore predefinito.  
   
     > [!NOTE]
-    >  Fare clic su **avanzate** per aprire il [configurare Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
+    > Fare clic su **avanzate** per aprire il [configurare Service Reference Dialog Box](../data-tools/configure-service-reference-dialog-box.md).  
   
 5. Fare clic su **OK** per aggiungere un riferimento al servizio al progetto.  
   

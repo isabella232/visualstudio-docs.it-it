@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402705"
 ---
 # <a name="allocation-hook-functions"></a>Funzioni hook di allocazione
 Una funzione di hook di allocazione, installata tramite [CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. È possibile usare questo tipo di hook per numerosi scopi differenti. Usato per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio per esaminare schemi di allocazione o registrare le informazioni di allocazione per analisi successive.
 
 > [!NOTE]
->  Tenere presente le restrizioni sull'utilizzo delle funzioni della libreria di runtime del linguaggio C in una funzione hook di allocazione descritte in [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
+> Tenere presente le restrizioni sull'utilizzo delle funzioni della libreria di runtime del linguaggio C in una funzione hook di allocazione descritte in [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
  Una funzione di hook di allocazione dovrebbe avere un prototipo analogo al seguente:
 

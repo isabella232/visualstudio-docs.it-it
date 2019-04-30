@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415550"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedura: Creare i marcatori di testo personalizzato
 Se si desidera creare un marcatore di testo personalizzato per enfatizzare o organizzare il codice, è necessario eseguire i passaggi seguenti:
@@ -41,7 +41,7 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
     `<PackageGUID>` il GUID del pacchetto VSPackage implementa l'oggetto di automazione.
 
    > [!NOTE]
-   >  Il percorso della radice **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione >** può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > Il percorso della radice **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione >** può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Creare quattro valori sotto **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versione > \Text Editor\External marcatori\\\<MarkerGUID >**
 

@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403264"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L'accesso a tipo di carattere archiviata e le impostazioni dei colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (
   Per impostazione predefinita, non è abilitata la generazione di eventi. Per abilitare la generazione di eventi, una categoria deve essere aperto usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. In questo modo, l'IDE chiamare appropriato <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metodo che implementa un pacchetto VSPackage.  
   
 > [!NOTE]
->  Modifica dei dati mediante la **carattere e colori** pagina delle proprietà generano eventi indipendenti di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. È possibile usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> per determinare se un aggiornamento delle impostazioni di carattere e colori memorizzato nella cache è necessaria prima di chiamare i metodi di interfaccia di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  
+> Modifica dei dati mediante la **carattere e colori** pagina delle proprietà generano eventi indipendenti di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. È possibile usare la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> per determinare se un aggiornamento delle impostazioni di carattere e colori memorizzato nella cache è necessaria prima di chiamare i metodi di interfaccia di <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  
   
 ### <a name="storing-and-retrieving-information"></a>L'archiviazione e recupero delle informazioni  
  Per ottenere o configurare le informazioni che un utente può modificare per un elemento visualizzato denominato in una categoria aperta, pacchetti VSPackage chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> metodi.  
@@ -69,12 +69,12 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (
  Informazioni sul tipo di carattere degli attributi per una determinata categoria verrà ottenuta tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> metodi.  
   
 > [!NOTE]
->  Il `fFlags` argomento passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodo quando è stato aperto tale categoria definisce il comportamento del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metodi. Per impostazione predefinita, questi itemsthat aboutdisplay restituiscono solo le informazioni di metodi sono stati modificati. Tuttavia, se una categoria è stata aperta tramite il <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> flag, sia aggiornato ed sono accessibile elementi visualizzati invariati dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+> Il `fFlags` argomento passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodo quando è stato aperto tale categoria definisce il comportamento del <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metodi. Per impostazione predefinita, questi itemsthat aboutdisplay restituiscono solo le informazioni di metodi sono stati modificati. Tuttavia, se una categoria è stata aperta tramite il <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> flag, sia aggiornato ed sono accessibile elementi visualizzati invariati dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Per impostazione predefinita, solo modificata **elementi visualizzati** informazioni vengono mantenute nel Registro di sistema. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia non può essere usata per recuperare tutte le impostazioni per i tipi di carattere e colori.  
   
 > [!NOTE]
->  Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metodi restituiscono REGDB_E_KEYMISSING, (0x80040152L) quando vengono utilizzati per recuperare informazioni su non modificato **elementi visualizzati**.  
+> Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> metodi restituiscono REGDB_E_KEYMISSING, (0x80040152L) quando vengono utilizzati per recuperare informazioni su non modificato **elementi visualizzati**.  
   
  Le impostazioni di tutte le **elementi visualizzati** in un particolare **categoria** può essere ottenuto utilizzando i metodi del `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` interfaccia.  
   

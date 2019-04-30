@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411493"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ In un modello di testo della fase di progettazione di [!INCLUDE[vsprvs](../inclu
  Per una panoramica generale della scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari per il **riferimenti** del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto.  
+> La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari per il **riferimenti** del [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] progetto.  
   
 ## <a name="using-the-assembly-directive"></a>Utilizzo della direttiva Assembly  
  La sintassi della direttiva è la seguente:  

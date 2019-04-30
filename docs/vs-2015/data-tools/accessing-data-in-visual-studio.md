@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444497"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accesso ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
  Molti fornitori di database e di terze parti supportano l'integrazione di Visual Studio per i pacchetti NuGet. È possibile esplorare le offerte in nuget.org o tramite Gestione pacchetti NuGet in Visual Studio (**degli strumenti** > **Gestione pacchetti NuGet** > **Gestisci NuGet Pacchetti per la soluzione**). Altri prodotti di database si integrano con Visual Studio come un'estensione.   È possibile esplorare queste offerte in Visual Studio Gallery, passare a **degli strumenti** > **estensioni e aggiornamenti** e quindi scegliendo **Online** in a sinistra riquadro della finestra di dialogo.  Per altre informazioni, vedere [installazione di sistemi di database, strumenti ed esempi](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
->  Supporto "Extended" per SQL Server 2005 è terminato il 12 aprile 2016.   Non c'è garanzia che gli strumenti dati in Visual Studio 2015 e versioni successive continuano a funzionare con SQL Server 2005 dopo tale data. Per altre informazioni, vedere la [annuncio di fine del supporto per SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Supporto "Extended" per SQL Server 2005 è terminato il 12 aprile 2016.   Non c'è garanzia che gli strumenti dati in Visual Studio 2015 e versioni successive continuano a funzionare con SQL Server 2005 dopo tale data. Per altre informazioni, vedere la [annuncio di fine del supporto per SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>Linguaggi .NET
  Tutti gli accessi di dati .NET, incluso in .NET Core sono basato su ADO.NET, un set di classi che definisce un'interfaccia per l'accesso a qualsiasi tipo di origine dati, relazionali e non relazionali. Visual Studio include diversi strumenti e finestre di progettazione che funzionano con ADO.NET per eseguire la connessione ai database, modificare i dati e presentarli all'utente. La documentazione in questa sezione descrive come usare questi strumenti. È anche possibile programmare direttamente usando gli oggetti comando ADO.NET. Per altre informazioni sulla chiamata ADO.NET APIs direttamente, vedere [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) in MSDN Library.

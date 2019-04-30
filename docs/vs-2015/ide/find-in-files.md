@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383377"
 ---
 # <a name="find-in-files"></a>Cerca nei file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Cerca nei file** consente di eseguire ricerche in un set di file specificato. Le
    Per annullare un'operazione di ricerca, premere CTRL+INTERR.  
   
 > [!NOTE]
->  Lo strumento Trova e sostituisci non esegue la ricerca nelle directory per cui è impostato l'attributo `Hidden` o `System`.  
+> Lo strumento Trova e sostituisci non esegue la ricerca nelle directory per cui è impostato l'attributo `Hidden` o `System`.  
   
 ## <a name="find-what"></a>Trova  
  Per cercare una nuova stringa di testo o espressione, specificarla nella casella. Per cercare una delle 20 stringhe cercate più di recente, aprire l'elenco e scegliere la stringa che si vuole cercare. Scegliere il pulsante **Generatore di espressioni** adiacente se si vuole usare una o più espressioni regolari nella stringa di ricerca. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ Cerca nei file** consente di eseguire ricerche in un set di file specificato. Le
  L'opzione selezionata nell'elenco a discesa **Cerca in** determina se la funzionalità **Cerca nei file** deve cercare solo nei file attualmente attivi o in tutti i file archiviati all'interno di determinate cartelle. Selezionare un ambito di ricerca nell'elenco o fare clic sul pulsante **Sfoglia (...)** per visualizzare la finestra di dialogo **Seleziona cartelle di ricerca** e immettere il set di directory desiderato. È anche possibile digitare un percorso direttamente nella casella **Cerca in**.  
   
 > [!WARNING]
->  Con le opzioni **Intera soluzione** o **Progetto corrente**, la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.  
+> Con le opzioni **Intera soluzione** o **Progetto corrente**, la ricerca non viene eseguita nei file di progetto e di soluzione. Se si vuole cercare in file di progetto, scegliere una cartella di ricerca.  
   
 > [!NOTE]
->  Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.  
+> Se l'opzione **Cerca in** selezionata fa sì che venga cercato un file estratto dal controllo del codice sorgente, la ricerca verrà eseguita solo nella versione del file scaricata nel computer locale.  
   
 ## <a name="include-subfolders"></a>Includi sottocartelle  
  Specifica che la ricerca verrà eseguita nelle sottocartelle della cartella **Cerca in**.  

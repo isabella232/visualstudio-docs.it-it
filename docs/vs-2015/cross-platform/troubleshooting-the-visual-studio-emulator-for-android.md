@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417091"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Risoluzione dei problemi di Visual Studio Emulatore per Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081554"
 In questo argomento contiene informazioni che consentono di risolvere i problemi che possono verificarsi quando si utilizza Visual Studio emulatore Android.
 
 > [!WARNING]
->  Quando l'emulatore è installato, il programma di installazione verifica i prerequisiti per l'esecuzione del software. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti per l’installazione.
+> Quando l'emulatore è installato, il programma di installazione verifica i prerequisiti per l'esecuzione del software. Se i prerequisiti non sono presenti, visualizza degli avvisi ma non richiede i prerequisiti per l’installazione.
 
  Di seguito sono elencate le diverse sezioni di questo argomento:
 
@@ -70,7 +70,7 @@ In questo argomento contiene informazioni che consentono di risolvere i problemi
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.
+> Questo messaggio è applicabile a Visual Studio Emulator for Android e all'emulatore Windows Phone. Windows 8.1 e Windows 10 supportano l'emulatore.
 
  Se viene visualizzato questo messaggio, vedere i [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) per verificare se è possibile eseguire l'emulatore.
 

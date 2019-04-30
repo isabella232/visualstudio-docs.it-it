@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422440"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generazione di codice in fase di progettazione tramite modelli di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
  È ad esempio possibile usare un modello per definire un flusso di lavoro come tabella o diagramma. Dal modello è possibile generare il software che esegue il flusso di lavoro. In caso di modifica dei requisiti utente, la definizione del nuovo flusso di lavoro con gli utenti risulta molto semplice. La rigenerazione di codice dal flusso di lavoro è più attendibile dell'aggiornamento manuale del codice.  
   
 > [!NOTE]
->  Oggetto *modello* è un'origine dati che descrive un aspetto specifico di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.  
+> Oggetto *modello* è un'origine dati che descrive un aspetto specifico di un'applicazione. Può avere qualsiasi formato, in qualsiasi tipo di file o database. Non deve avere un formato specifico, ad esempio un modello UML o un modello di linguaggio specifico di dominio. In genere i modelli hanno formato di tabelle o file XML.  
   
  Se, come è probabile, si ha già esperienza di generazione di codice, Quando si definiscono risorse in un **resx** del file nei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] soluzione, un set di classi e metodi viene generato automaticamente. Il file di risorse semplifica e rende più affidabile la modifica delle risorse rispetto alla modifica dei classi e dei metodi. I modelli di testo permettono di generare codice nello stesso modo da un'origine personalizzata.  
   
@@ -74,7 +74,7 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
 6. Nelle **Esplora soluzioni**, espandere il nodo del file modello e si noterà un file con estensione **txt**. Il file contiene testo generato dal modello.  
   
     > [!NOTE]
-    >  Se il progetto è un progetto Visual Basic, è necessario fare clic su **Mostra tutti i file** per visualizzare il file di output.  
+    > Se il progetto è un progetto Visual Basic, è necessario fare clic su **Mostra tutti i file** per visualizzare il file di output.  
   
 ### <a name="regenerating-the-code"></a>Rigenerazione di codice  
  Nei casi seguenti sarà eseguito un modello, che genera il file secondario:  
@@ -141,9 +141,9 @@ I modelli di testo T4 in fase di progettazione permettono di generare codice pro
   Il modello sarà eseguito e si interromperà in corrispondenza dei punti di interruzione. È possibile esaminare le variabili ed eseguire il codice un'istruzione alla volta usando le procedure normali.  
   
 > [!TIP]
->  `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.  
+> `debug="true"` permette il mapping più preciso del codice generato al modello, tramite l'inserimento di più direttive di numerazione di riga nel codice generato. Se non si include la clausola, è possibile che i punti di interruzione arrestino l'esecuzione nello stato errato.  
 >   
->  È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.  
+> È comunque possibile lasciare la clausola nella direttiva del modello anche quando non si esegue il debug. Ciò provoca solo un minimo calo nelle prestazioni.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generazione di codice o risorse per la soluzione  
  È possibile generare file di programma diversi in base al modello. Un modello è un input quale un database, un file di configurazione, un modello UML, un modello DSL o un'altra origine. Di solito si generano diversi file di programma dallo stesso modello. Per ottenere questo risultato, creare un file di modello per ogni file di programma generato e fare in modo che tutti i modelli leggano lo stesso modello.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Un modello di testo è eseguito nel rispettivo dominio di app e l'accesso ai servizi è effettuato tramite marshalling. In questa circostanza, GetCOMService() è più affidabile di GetService().  
+> Un modello di testo è eseguito nel rispettivo dominio di app e l'accesso ai servizi è effettuato tramite marshalling. In questa circostanza, GetCOMService() è più affidabile di GetService().  
   
 ## <a name="Regenerating"></a> Rigenerazione automatica di codice  
  In genere, più file in una soluzione [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sono generati con un modello di input. Ogni file è generato dal modello corrispondente, ma i modelli fanno tutti riferimento allo stesso modello.  

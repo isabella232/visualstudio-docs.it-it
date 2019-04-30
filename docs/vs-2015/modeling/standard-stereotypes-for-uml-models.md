@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411740"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stereotipi standard per modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "60116589"
 2. Nella finestra Proprietà impostare il **profili** proprietà vuoto.  
   
     > [!NOTE]
-    >  È possibile scollegare un profilo solo se nessuno degli elementi nel modello o nel pacchetto usa gli stereotipi del profilo.  
+    > È possibile scollegare un profilo solo se nessuno degli elementi nel modello o nel pacchetto usa gli stereotipi del profilo.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Per applicare uno stereotipo a un elemento del modello  
   
@@ -67,7 +67,7 @@ ms.locfileid: "60116589"
      Gli stereotipi selezionati vengono visualizzati tra «frecce di espansione» nell'elemento del modello, per la maggior parte dei tipi di elemento.  
   
     > [!NOTE]
-    >  Se non è possibile visualizzare il **stereotipi** proprietà, o se lo stereotipo desiderato non viene visualizzata, verificare che l'elemento del modello si trova all'interno di un pacchetto o un modello a cui è stato collegato il profilo appropriato.  
+    > Se non è possibile visualizzare il **stereotipi** proprietà, o se lo stereotipo desiderato non viene visualizzata, verificare che l'elemento del modello si trova all'interno di un pacchetto o un modello a cui è stato collegato il profilo appropriato.  
   
 3. Alcuni stereotipi consentono di impostare i valori di altre proprietà per l'elemento del modello. Per visualizzare queste proprietà, espandere la **stereotipi** proprietà.  
   

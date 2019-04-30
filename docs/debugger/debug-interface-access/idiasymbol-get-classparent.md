@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 736d2150c2d19ba7ee7ee75bdb336fa6f0614a30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402167"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Recupera un riferimento all'elemento padre classe del simbolo.
@@ -39,16 +39,16 @@ HRESULT get_classParent ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v7.0|
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  I tipi di simboli che possono essere padri di classe sono documentati in [gerarchia di classi dei tipi di simboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Vedere anche

@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446085"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Debug remoto di ASP.NET in un Computer remoto con IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Dopo l'installazione, assicurarsi che il debugger remoto è in esecuzione nel co
 1. Copiare la directory del progetto ASP.NET dal computer di Visual Studio in una directory locale (denominata **C:\Publish**) nel computer Windows Server. È possibile copiare manualmente il progetto, usare Xcopy, Web Deploy, Robocopy, Powershell o altre opzioni.
 
     > [!CAUTION]
-    >  Se è necessario apportare modifiche al codice o ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
+    > Se è necessario apportare modifiche al codice o ricompilazione, è necessario ripubblicare e ripetere questo passaggio. Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
 1. Assicurarsi che il file web.config riporti la versione corretta di .NET Framework.  Ad esempio, la versione di .NET Framework installata per impostazione predefinita in Windows Server 2008 R2 è 4.0.30319, ma è stato creato un ASP.NET 4.5.2 versione. Se un'app ASP.NET 4.0 è in esecuzione nel computer Windows Server, è necessario modificare la versione:
   
     ```xml

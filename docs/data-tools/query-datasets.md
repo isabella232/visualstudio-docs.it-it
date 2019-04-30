@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402734"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 Per cercare un record specifico in un set di dati, usare il `FindBy` metodo sull'oggetto DataTable, scrivere il proprio istruzione foreach per eseguire un ciclo in raccolta di righe della tabella oppure usare [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -25,7 +25,7 @@ Per cercare un record specifico in un set di dati, usare il `FindBy` metodo sull
 All'interno di un set di dati, i nomi di tabella e colonna sono tra maiuscole e minuscole per impostazione predefinita, vale a dire, una tabella in un set di dati denominato "Customers" può anche essere indicata come "customers". Ciò corrisponde alle convenzioni di denominazione in molti database, tra cui SQL Server. In SQL Server, il comportamento predefinito è che non è possibile distinguere i nomi degli elementi di dati solo di maiuscole/minuscole.
 
 > [!NOTE]
->  A differenza dei set di dati, documenti XML sono tra maiuscole e minuscole, pertanto i nomi di elementi dati definiti in schemi sono tra maiuscole e minuscole. Ad esempio, del protocollo, lo schema definire una tabella denominata "Customers" e un'altra tabella denominata "customers". Ciò può comportare conflitti di nomi quando uno schema che contiene gli elementi che differiscono solo per i casi viene utilizzato per generare una classe di set di dati.
+> A differenza dei set di dati, documenti XML sono tra maiuscole e minuscole, pertanto i nomi di elementi dati definiti in schemi sono tra maiuscole e minuscole. Ad esempio, del protocollo, lo schema definire una tabella denominata "Customers" e un'altra tabella denominata "customers". Ciò può comportare conflitti di nomi quando uno schema che contiene gli elementi che differiscono solo per i casi viene utilizzato per generare una classe di set di dati.
 
 Distinzione maiuscole/minuscole, tuttavia, può rappresentare un fattore in modalità di interpretazione dei dati all'interno del set di dati. Ad esempio, se si filtrano i dati in una tabella di set di dati, i criteri di ricerca potrebbero restituire risultati diversi a seconda che il confronto sia tra maiuscole e minuscole. È possibile controllare la distinzione maiuscole/minuscole del filtro, la ricerca e ordinamento impostando il set di dati <xref:System.Data.DataSet.CaseSensitive%2A> proprietà. Per impostazione predefinita, tutte le tabelle nel set di dati ereditano il valore di questa proprietà. (È possibile eseguire l'override di questa proprietà per ogni tabella tramite l'impostazione della tabella <xref:System.Data.DataTable.CaseSensitive%2A> proprietà.)
 
@@ -68,7 +68,7 @@ Quando le tabelle in un set di dati sono correlate, un <xref:System.Data.DataRel
 Questa pagina fornisce esempi che usano i dataset tipizzati. Per informazioni sull'esplorazione di relazioni nei dataset non tipizzati, vedere [esplorazione oggetti DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Se si lavora in un'applicazione Windows Form e utilizza le funzionalità di data binding per visualizzare i dati, il modulo generato da progettazione potrebbe essere fornite funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [relazioni nei DataSet](relationships-in-datasets.md).
+> Se si lavora in un'applicazione Windows Form e utilizza le funzionalità di data binding per visualizzare i dati, il modulo generato da progettazione potrebbe essere fornite funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). In particolare, vedere [relazioni nei DataSet](relationships-in-datasets.md).
 
 Gli esempi di codice seguenti illustrano come spostarsi su e giù relazioni nei dataset tipizzato. L'uso di esempi di codice tipizzato <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e il generato FindBy*PrimaryKey* (`FindByCustomerID`) i metodi per individuare una riga desiderata e restituire i record correlati. Gli esempi compilati ed eseguiti correttamente solo se è necessario:
 

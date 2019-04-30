@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bd39ec744e88c2a9334f31c2974ed92f1f6b9a12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddf7bd222b61b3eb72a571857336c69deba6499f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421778"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Procedura dettagliata: Recuperare i dati memorizzati nella cache da una cartella di lavoro in un server
   Questa procedura dettagliata illustra come recuperare i dati da un set di dati memorizzato nella cache di una cartella di lavoro di Microsoft Office Excel senza avviare Excel utilizzando il <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -43,7 +43,7 @@ ms.locfileid: "60101418"
   Sebbene questa procedura dettagliata si presuppone che si esegue il codice nel computer di sviluppo, il codice illustrato da questa procedura dettagliata è utilizzabile in un server che non dispone di Excel sia installato.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:
@@ -259,7 +259,7 @@ ms.locfileid: "60101418"
    - Oggetto <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> oggetto da utilizzare per accedere alla cache dei dati nella cartella di lavoro.
 
      > [!NOTE]
-     >  Il codice seguente presuppone che la cartella di lavoro viene salvato usando il *xlsx* estensione. Se la cartella di lavoro nel progetto è un'estensione diversa, modificare il percorso in base alle esigenze.
+     > Il codice seguente presuppone che la cartella di lavoro viene salvato usando il *xlsx* estensione. Se la cartella di lavoro nel progetto è un'estensione diversa, modificare il percorso in base alle esigenze.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]

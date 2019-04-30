@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443367"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso di Visual Studio Tools per Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
      ![Questa icona mostra che VSTU è connesso a Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Se accanto all'icona della spina è visualizzato un segno di spunta, la connessione a un'istanza di Unity è già attiva.  
+> Se accanto all'icona della spina è visualizzato un segno di spunta, la connessione a un'istanza di Unity è già attiva.  
   
  Nella finestra di dialogo **Seleziona istanza di Unity** sono visualizzate alcune informazioni sulle singole istanze di Unity a cui è possibile connettersi.  
   
@@ -136,7 +136,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
  Numero di porta del socket UDP usata da questa istanza di Unity per comunicare.  
   
 > [!IMPORTANT]
->  Dal momento che Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, è possibile che il firewall non lo riconosca. In tal caso, è necessario autorizzare la connessione per consentire a VSTU e Unity di comunicare.  
+> Dal momento che Visual Studio Tools per Unity e l'istanza di Unity comunicano tramite un socket di rete UDP, è possibile che il firewall non lo riconosca. In tal caso, è necessario autorizzare la connessione per consentire a VSTU e Unity di comunicare.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Debug del progetto in un lettore Unity  
  È possibile connettere Visual Studio Tools per Unity direttamente all'app Unity in esecuzione in un lettore autonomo quando non è in esecuzione l'editor di Unity oppure per eseguire il debug di problemi specifici della piattaforma.  
@@ -154,7 +154,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
 - Nel menu di scelta rapida del lettore Web Unity scegliere **Release Channel** (Canale versione) e verificare che l'opzione **Development** (Sviluppo) sia abilitata.  
   
   > [!IMPORTANT]
-  >  In Unity 4.2 e versioni successive la voce di menu contestuale **Release Channel** (Canale versione) è disponibile solo nel menu contestuale del lettore Web quando si apre il menu tenendo premuto **ALT**. Se il lettore Web viene eseguito in Mac OS X, premere invece **Opzione**.  
+  > In Unity 4.2 e versioni successive la voce di menu contestuale **Release Channel** (Canale versione) è disponibile solo nel menu contestuale del lettore Web quando si apre il menu tenendo premuto **ALT**. Se il lettore Web viene eseguito in Mac OS X, premere invece **Opzione**.  
   
   Verificare infine di essere connessi all'istanza di Unity di cui eseguire il debug. Per informazioni su come eseguire questa operazione, vedere la sezione [Connessione di Visual Studio a Unity](#connecting-visual-studio-to-unity).  
   
@@ -162,7 +162,7 @@ In questa sezione verrà illustrato come usare le funzionalità per l'integrazio
  Molti sviluppatori Unity scrivono componenti di codice sotto forma di DLL esterne in modo da facilitare la condivisione della funzionalità sviluppata con altri progetti. Visual Studio Tools per Unity semplifica il debug del codice in queste DLL con altro codice del progetto Unity.  
   
 > [!NOTE]
->  Al momento Visual Studio Tools per Unity supporta solo le DLL gestite. Non è invece supportato il debug di DLL di codice nativo, ad esempio quelle scritte in C++.  
+> Al momento Visual Studio Tools per Unity supporta solo le DLL gestite. Non è invece supportato il debug di DLL di codice nativo, ad esempio quelle scritte in C++.  
   
  Lo scenario descritto in questo articolo presuppone che l'utente sia proprietario del codice sorgente disponibile, ovvero che si stia sviluppando o riutilizzando il proprio codice oppure che il codice sorgente sia inserito in una libreria di terze parti e si intenda distribuirlo nel progetto Unity sotto forma di DLL. Lo scenario non illustra il debug di una DLL di cui l'utente non è proprietario del codice sorgente.  
   
