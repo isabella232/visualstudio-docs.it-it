@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445567"
 ---
 # <a name="create-outlook-form-regions"></a>Creare aree del modulo di Outlook
   È possibile usare aree del modulo per personalizzare i moduli di Microsoft Office Outlook. Visual Studio fornisce strumenti avanzati che semplificano la progettazione, lo sviluppo e il debug delle aree del modulo.
@@ -90,7 +90,7 @@ ms.locfileid: "60092760"
 - Estensione OFS (*OFS*) file.
 
     > [!NOTE]
-    >  Questo file viene aggiunto al progetto solo se si importa un'area del modulo progettata in Outlook.
+    > Questo file viene aggiunto al progetto solo se si importa un'area del modulo progettata in Outlook.
 
 #### <a name="form-region-factory-class"></a>Classe factory area del modulo
  Il file di codice dell'area del modulo contiene una classe parziale che implementa l'interfaccia <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory>. Si tratta della classe factory dell'area del modulo che è responsabile della creazione di nuove istanze dell'area del modulo.
@@ -110,7 +110,7 @@ ms.locfileid: "60092760"
  Progettazione aree di form consente di configurare il layout e l'aspetto di un'area del modulo. È possibile trascinare i controlli gestiti nell'area della finestra di progettazione, fare doppio clic su controlli per aprire i gestori eventi e impostare le proprietà nel **proprietà** finestra.
 
 > [!NOTE]
->  È possibile trovare le proprietà che influiscono sulla modalità di visualizzazione dell'area del modulo in Outlook sotto il **manifesto** nodo il **proprietà** finestra.
+> È possibile trovare le proprietà che influiscono sulla modalità di visualizzazione dell'area del modulo in Outlook sotto il **manifesto** nodo il **proprietà** finestra.
 
  Progettazione aree di form è disponibile solo se si seleziona **Progetta nuova area del modulo** nel **selezionare la modalità creare l'area del modulo** pagina del **nuova area del modulo Outlook** procedura guidata.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092760"
  È possibile modificare le proprietà dell'area del modulo nel metodo `InitializeManifest` della classe factory dell'area del modulo.
 
 > [!NOTE]
->  Per importare un'area del modulo, è necessario lavorare a un progetto destinato alla stessa versione di Outlook installata nel computer di sviluppo. Ad esempio, se hai installato Outlook 2010, l'importazione di un form area funziona solo in un progetto è stato creato utilizzando il **componente aggiuntivo di Outlook 2010** modello di progetto.
+> Per importare un'area del modulo, è necessario lavorare a un progetto destinato alla stessa versione di Outlook installata nel computer di sviluppo. Ad esempio, se hai installato Outlook 2010, l'importazione di un form area funziona solo in un progetto è stato creato utilizzando il **componente aggiuntivo di Outlook 2010** modello di progetto.
 
 ### <a name="update-an-imported-form-regions-design"></a>Aggiornamento di progettazione di un'area del modulo importata
  È possibile aggiungere, rimuovere o modificare i controlli dell'area del modulo. Prima di eseguire queste operazioni, effettuare il backup del codice aggiunto al file di codice dell'area del modulo. Quindi, aprire il *OFS* del file in Outlook, modificare l'area del modulo e quindi salvare le modifiche. Usare la **nuova area del modulo di Outlook** procedura guidata per importare modificato *OFS* file. È quindi possibile incollare il codice nel file di codice della nuova area del modulo.

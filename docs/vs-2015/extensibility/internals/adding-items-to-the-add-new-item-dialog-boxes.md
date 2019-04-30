@@ -10,12 +10,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f7bc8ca8e9b38283c647cfde2d593e292d44ce43
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: ecdacfc4ac65e0dc18512bfb56eb870545c66a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443485"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Aggiunta di elementi nelle finestre di dialogo Aggiungi nuovo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59001040"
 Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, la sezione AddItemTemplates contiene il percorso e nome della directory degli elementi reso disponibile nel **Aggiungi nuovo elemento** vengono inseriti nella finestra di dialogo.  
   
 > [!NOTE]
->  La tabella che segue immediatamente il segmento di codice contiene informazioni aggiuntive relative alla voce del Registro di sistema.  
+> La tabella che segue immediatamente il segmento di codice contiene informazioni aggiuntive relative alla voce del Registro di sistema.  
   
  In questa sezione è disponibile in [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects].  
   
@@ -44,7 +44,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 |Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../includes/vcprx64-md.md)])|Determina l'ordine di ordinamento nel nodo della struttura dei file visualizzati nei **Aggiungi nuovo elemento** nella finestra di dialogo.|  
   
 > [!NOTE]
->  I GUID per i tipi di progetto Visual C# e Visual Basic sono i seguenti:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+> I GUID per i tipi di progetto Visual c# e Visual Basic sono i seguenti:[!INCLUDE[csprcs](../../includes/csprcs-md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
  La directory elencate per TemplateDirs, ovvero % TEMPLATE_PATH%\SomeProjectItems, è il nodo sul lato sinistro della **Aggiungi nuovo elemento** struttura ad albero casella di dialogo. Elementi aggiuntivi dell'albero si basano sulla sottodirectory della directory radice. I file possono essere aggiunti al progetto sono gli elementi nel riquadro di destra del **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
@@ -53,7 +53,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
  Tuttavia, non è necessario disporre di tutto in un unico file VSDIR. È possibile avere un file VSDIR per ogni elemento nella directory. Per altre informazioni, vedere [Wizard (. File vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) e [Descrizione Directory del modello (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
 > [!NOTE]
->  I file VSDIR nelle directory di modello sono facoltativi. Se si desidera inserire un elemento di progetto nella directory e lo visualizza nel **Aggiungi nuovo elemento** nella finestra di dialogo è possibile inserire file nella directory di modelli specificate nell'istruzione TemplatesDir. Il file verrà quindi visualizzato nel riquadro di destra del **Aggiungi nuovo elemento** finestra di dialogo per il progetto. Tuttavia, se si desidera visualizzare un titolo per il file o un'icona localizzato, è necessario includere almeno un file VSDIR nella directory di modelli.  
+> I file VSDIR nelle directory di modello sono facoltativi. Se si desidera inserire un elemento di progetto nella directory e lo visualizza nel **Aggiungi nuovo elemento** nella finestra di dialogo è possibile inserire file nella directory di modelli specificate nell'istruzione TemplatesDir. Il file verrà quindi visualizzato nel riquadro di destra del **Aggiungi nuovo elemento** finestra di dialogo per il progetto. Tuttavia, se si desidera visualizzare un titolo per il file o un'icona localizzato, è necessario includere almeno un file VSDIR nella directory di modelli.  
   
 ## <a name="grouping-project-items"></a>Elementi di progetto di raggruppamento  
  Se si desidera contengono gruppi di modelli in cartelle nel **Aggiungi nuovo elemento** struttura ad albero casella di dialogo, è necessario disporre le sottodirectory nella directory radice modello con gli elementi in essi contenuti. Quando la **Aggiungi nuovo elemento** agli utenti verrà visualizzata la finestra di dialogo, verrà inoltre vedere le sottocartelle ed essere in grado di selezionare gli elementi di progetto da esse.  

@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445994"
 ---
 # <a name="unit-test-basics"></a>Nozioni di base sugli unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Per controllare che il codice funzioni come previsto, creare ed eseguire unit te
 ### <a name="BKMK_Quick_starts"></a> Guide introduttive  
  Per un'introduzione agli unit test che mostra direttamente la creazione di codice, vedere uno degli argomenti seguenti:  
   
-- [Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [Procedura dettagliata: creazione ed esecuzione di unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [Avvio rapido: Sviluppo basato su test con Esplora Test](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Avvio rapido: sviluppo basato su test con Esplora test](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [Unit test di codice nativo con Esplora test](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Per usare uno dei framework per unit test Microsoft, scegliere **Progetto unit test** dall'elenco di modelli di progetto. In alternativa, scegliere il modello di progetto del framework per unit test che si vuole usare. Per testare il progetto `Accounts` dell'esempio, assegnare al progetto il nome `AccountsTests`.  
   
    > [!WARNING]
-   >  Non tutti i framework per unit test di terze parti e open source offrono un modello di progetto di Visual Studio. Per informazioni sulla creazione di un progetto, vedere la documentazione relativa al framework.  
+   > Non tutti i framework per unit test di terze parti e open source offrono un modello di progetto di Visual Studio. Per informazioni sulla creazione di un progetto, vedere la documentazione relativa al framework.  
   
 8. Nel progetto unit test aggiungere un riferimento al progetto di codice da testare, che nell'esempio corrisponde al progetto Accounts.  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Eseguire test dopo ogni compilazione  
   
 > [!WARNING]
->  L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.  
+> L'esecuzione di unit test dopo ogni compilazione è supportata solo in Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.  
   
    > [!NOTE]
-   >  Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.  
+   > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.  
   
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **R:** Sì. I*metodi di test basati sui dati* permettono di testare un intervallo di valori con un singolo metodo di unit test. Usare un attributo `DataSource` per il metodo di test che specifica l'origine dati e la tabella contenente i valori variabili da testare.  Nel corpo del metodo assegnare i valori di riga alle variabili usando l'indicizzatore `TestContext.DataRow[`*NomeColonna*`]` .  
   
 > [!NOTE]
->  Queste procedure sono applicabili soli ai metodi di test scritti usando il framework per unit test Microsoft per codice gestito. Se si usa un framework diverso, vedere la documentazione del framework per informazioni sulla funzionalità equivalente.  
+> Queste procedure sono applicabili soli ai metodi di test scritti usando il framework per unit test Microsoft per codice gestito. Se si usa un framework diverso, vedere la documentazione del framework per informazioni sulla funzionalità equivalente.  
   
  Ad esempio, si presupponga di aggiungere un metodo non necessario alla classe `CheckingAccount` con nome `AddIntegerHelper`. `AddIntegerHelper` aggiunge due numeri interi.  
   

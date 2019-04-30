@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446216"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Eseguire unit test per le app dello Store in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104180"
 Questo argomento descrive come eseguire unit test tramite Esplora test in Microsoft Visual Studio
 
 > [!NOTE]
->  Gli argomenti di questa sezione descrivono la funzionalità di Visual Studio Express per Windows 8. Visual Studio Community, Enterprise e Professional offrono funzionalità aggiuntive per gli unit test.
+> Gli argomenti di questa sezione descrivono la funzionalità di Visual Studio Express per Windows 8. Visual Studio Community, Enterprise e Professional offrono funzionalità aggiuntive per gli unit test.
 >
 > - È possibile usare un framework di unit test open source o di terze parti che abbia creato un adattatore di componente aggiuntivo per Esplora test Microsoft. È anche possibile analizzare e visualizzare le informazioni di code coverage per i test.
 >   - Eseguire i test dopo ogni compilazione. È anche possibile usare Microsoft Fakes, un framework di isolamento per il codice gestito che consente di concentrare i test sul codice sostituendo il codice di test per le funzionalità di sistema e di terze parti.
@@ -118,7 +118,7 @@ Questo argomento descrive come eseguire unit test tramite Esplora test in Micros
 1. Nell'editor di Visual Studio impostare un punto di interruzione in uno o più metodi di test di cui si vuole eseguire il debug.
 
    > [!NOTE]
-   >  Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
+   > Poiché i metodi di test possono essere eseguiti in qualsiasi ordine, impostare punti di interruzione in tutti i metodi di test di cui si vuole eseguire il debug.
 
 2. In Esplora test selezionare i metodi di test e quindi scegliere **Esegui debug test selezionati** dal menu di scelta rapida.
 

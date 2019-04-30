@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420947"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Procedura: Convalidare i dati quando viene aggiunta una nuova riga a un controllo ListObject
   Gli utenti possono aggiungere nuove righe a un controllo <xref:Microsoft.Office.Tools.Excel.ListObject> associato ai dati. È possibile convalidare i dati dell'utente prima del commit delle modifiche all'origine dati.
@@ -30,7 +30,7 @@ ms.locfileid: "60039311"
  Ogni volta che viene aggiunta una riga a <xref:Microsoft.Office.Tools.Excel.ListObject> associata ai dati, viene generato l'evento <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> . È possibile gestire questo evento per eseguire la convalida dei dati. Ad esempio, se l'applicazione richiede che solo i dipendenti di età compresa tra 18 e 65 possano essere aggiunti all'origine dati, verificare che l'età immessa è all'interno dell'intervallo prima che la riga viene aggiunta.
 
 > [!NOTE]
->  È sempre opportuno verificare l'input dell'utente non solo nel client ma anche nel server. Per altre informazioni, vedere [applicazioni client sicure](/dotnet/framework/data/adonet/secure-client-applications).
+> È sempre opportuno verificare l'input dell'utente non solo nel client ma anche nel server. Per altre informazioni, vedere [applicazioni client sicure](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Per convalidare i dati quando una nuova riga viene aggiunta a un controllo ListObject associato ai dati
 

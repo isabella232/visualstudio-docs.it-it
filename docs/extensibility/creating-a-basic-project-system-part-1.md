@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb6793855fc4df4080a7f94799cfe2372308a5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409994"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creare un sistema di progetto di base, parte 1
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.
@@ -25,7 +25,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
  I progetti sono definiti nei file di progetto, ad esempio un *file con estensione csproj* file per un progetto Visual c#. È possibile creare un proprio tipo di progetto che ha il proprio estensione nome file di progetto. Per altre informazioni sui tipi di progetto, vedere [tipi di progetto](../extensibility/internals/project-types.md).
 
 > [!NOTE]
->  Se è necessario estendere Visual Studio con un tipo di progetto personalizzati, è consigliabile sfruttare il [sistema di progetto di Visual Studio](https://github.com/Microsoft/VSProjectSystem) (vsp) che offre numerosi vantaggi rispetto alla creazione di un sistema di progetto da zero:
+> Se è necessario estendere Visual Studio con un tipo di progetto personalizzati, è consigliabile sfruttare il [sistema di progetto di Visual Studio](https://github.com/Microsoft/VSProjectSystem) (vsp) che offre numerosi vantaggi rispetto alla creazione di un sistema di progetto da zero:
 >
 > - Processo di onboarding più semplice.  Anche un sistema di progetto di base richiede decine di migliaia di righe di codice.  Sfruttando VSPS riduce i costi di onboarding a pochi clic prima che si è pronti per personalizzarlo in base alle esigenze.
 > - Maggiore facilità di manutenzione.  Sfruttando VSPS, è sufficiente mantenere i propri scenari.  Noi la gestione di manutenzione di tutta l'infrastruttura di sistema di progetto.
@@ -35,7 +35,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
  Questa procedura dettagliata illustra come creare un tipo di progetto che ha l'estensione del file di progetto *.myproj*. Questa procedura dettagliata Usa il sistema di progetto Visual c# esistente.
 
 > [!NOTE]
->  Per altri esempi di progetti di estensione, vedere [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
+> Per altri esempi di progetti di estensione, vedere [esempi di VSSDK](https://aka.ms/vs2015sdksamples).
 
  Questa procedura dettagliata illustra come eseguire queste attività:
 
@@ -101,7 +101,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
    ```
 
    > [!IMPORTANT]
-   >  Non è il formato finale del *Program.cs* codice; la sostituzione verranno gestiti con i parametri in un passaggio successivo. È possibile visualizzare errori di compilazione, ma fino a quando il file **BuildAction** viene **contenuto**, dovrebbe essere possibile compilare ed eseguire il progetto come di consueto.
+   > Non è il formato finale del *Program.cs* codice; la sostituzione verranno gestiti con i parametri in un passaggio successivo. È possibile visualizzare errori di compilazione, ma fino a quando il file **BuildAction** viene **contenuto**, dovrebbe essere possibile compilare ed eseguire il progetto come di consueto.
 
 7. Salvare il file.
 
@@ -110,7 +110,7 @@ In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per 
 9. Nel *Projects\SimpleProject* cartella aggiungere un file XML denominato *SimpleProject.myproj*.
 
    > [!NOTE]
-   >  L'estensione per tutti i progetti di questo tipo viene *.myproj*. Se si desidera modificarlo, è necessario modificarlo ovunque che viene citata nella procedura dettagliata.
+   > L'estensione per tutti i progetti di questo tipo viene *.myproj*. Se si desidera modificarlo, è necessario modificarlo ovunque che viene citata nella procedura dettagliata.
 
 10. Sostituire il contenuto esistente con le righe seguenti.
 
@@ -255,7 +255,7 @@ Templates
         ```
 
         > [!IMPORTANT]
-        >  Non dimenticare la barra rovesciata alla fine del percorso.
+        > Non dimenticare la barra rovesciata alla fine del percorso.
 
     3. Ricaricare il progetto.
 

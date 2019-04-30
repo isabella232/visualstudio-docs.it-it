@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385856"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Convalida in un linguaggio specifico di dominio
 Gli autori di un linguaggio specifico di dominio possono definire vincoli di convalida per verificare che il modello creato dall'utente sia significativo. Ad esempio, se il linguaggio specifico di dominio consente agli utenti di disegnare l'albero genealogico di determinate persone e dei relativi antenati, è possibile scrivere un vincolo per garantire che le date di nascita dei figli siano successive a quelle dei genitori.
@@ -25,7 +25,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
  La convalida è particolarmente importante se si sta scrivendo i modelli di testo o altri strumenti che elaborano i modelli degli utenti. Garantisce infatti che i modelli siano conformi alle precondizioni previste da questi strumenti.
 
 > [!WARNING]
->  È anche possibile consentire la definizione di vincoli di convalida in estensioni separate del linguaggio specifico di dominio, unitamente a comandi di menu e gestori movimenti dell'estensione. Gli utenti potranno quindi scegliere di installare queste estensioni in aggiunta al linguaggio specifico di dominio. Per altre informazioni, vedere [estendere il DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> È anche possibile consentire la definizione di vincoli di convalida in estensioni separate del linguaggio specifico di dominio, unitamente a comandi di menu e gestori movimenti dell'estensione. Gli utenti potranno quindi scegliere di installare queste estensioni in aggiunta al linguaggio specifico di dominio. Per altre informazioni, vedere [estendere il DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Esecuzione della convalida
  Quando un utente modifica un modello, ovvero un'istanza del linguaggio specifico di dominio, la convalida viene eseguita in seguito alle azioni seguenti:
@@ -48,7 +48,7 @@ Gli autori di un linguaggio specifico di dominio possono definire vincoli di con
  Ogni metodo di convalida segnala gli eventuali errori trovati.
 
 > [!NOTE]
->  I metodi di convalida segnalano gli errori, ma non modificano il modello. Se si desidera regolare o impedire determinate modifiche, vedere [alternative alla convalida](#alternatives).
+> I metodi di convalida segnalano gli errori, ma non modificano il modello. Se si desidera regolare o impedire determinate modifiche, vedere [alternative alla convalida](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Per definire un vincolo di convalida
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Prima di un metodo è possibile specificare il numero desiderato di attributi `[ValidationMethod()]`. È possibile aggiungere un metodo sia a categorie standard che personalizzate.
+> Prima di un metodo è possibile specificare il numero desiderato di attributi `[ValidationMethod()]`. È possibile aggiungere un metodo sia a categorie standard che personalizzate.
 
  Per richiamare una convalida personalizzata:
 

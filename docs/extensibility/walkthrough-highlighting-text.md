@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99dbc928834cddade1c434f9d5d5d8e68c40825b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 085d2aff138be1d6beecc5e0895437e92d88da87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444995"
 ---
 # <a name="walkthrough-highlight-text"></a>Procedura dettagliata: Testo evidenziato
 È possibile aggiungere effetti visivi diversi per l'editor creando parti componente Managed Extensibility Framework (MEF). Questa procedura dettagliata viene illustrato come evidenziare tutte le occorrenze della parola corrente in un file di testo. Se una parola si verifica più volte in un file di testo e si posiziona il punto di inserimento in una sola occorrenza, viene evidenziato ogni occorrenza.
@@ -351,7 +351,7 @@ ms.locfileid: "60106033"
  Per creare il tagger, è necessario implementare un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Questa classe è una parte del componente MEF, pertanto è necessario impostare gli attributi corretti in modo che questa estensione viene riconosciuta.
 
 > [!NOTE]
->  Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-create-a-tagger-provider"></a>Per creare un provider di tagger
 

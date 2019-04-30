@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446711"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Un blocco di testo può essere inserito ovunque sia possibile usare nel codice un'istruzione `Write();`.  
   
 > [!NOTE]
->  Quando si incorpora un blocco di testo all'interno di un'istruzione composta, ad esempio un ciclo o condizionali, utilizzare sempre le parentesi graffe {...} Per includere il blocco di testo.  
+> Quando si incorpora un blocco di testo all'interno di un'istruzione composta, ad esempio un ciclo o condizionali, utilizzare sempre le parentesi graffe {...} Per includere il blocco di testo.  
   
 ### <a name="expression-control-blocks"></a>Blocchi di controllo dell'espressione  
  Un blocco di controllo dell'espressione valuta un'espressione e la converte in una stringa, che verrà quindi inserita nel file di output.  

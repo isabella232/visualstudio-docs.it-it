@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26136955a8956006a5c6795d5fc28ea9079f3efb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a272476abec316eeb7d919993ca540b135680b87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413991"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Recupera il nome del server.
@@ -42,7 +42,7 @@ int GetServerName(
  [out] Restituisce il nome del server.
 
 > [!NOTE]
->  Il chiamante è responsabile della liberazione della stringa.
+> Il chiamante è responsabile della liberazione della stringa.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.

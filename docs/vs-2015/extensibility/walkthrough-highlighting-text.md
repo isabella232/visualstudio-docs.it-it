@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408787"
 ---
 # <a name="walkthrough-highlighting-text"></a>Procedura dettagliata: Evidenziazione del testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ ms.locfileid: "60076596"
  Per creare il tagger, è necessario implementare un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Questa classe è una parte del componente MEF, pertanto è necessario impostare gli attributi corretti in modo che questa estensione viene riconosciuta.  
   
 > [!NOTE]
->  Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-create-a-tagger-provider"></a>Per creare un provider di tagger  
   
@@ -408,4 +408,4 @@ ms.locfileid: "60076596"
 4. Posizionare il cursore in una delle occorrenze di "hello". Ogni occorrenza deve essere evidenziato in blu.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

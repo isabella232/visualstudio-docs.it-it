@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443077"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procedura: Contrassegnare i controlli come controlli sicuri
   Per la sicurezza, SharePoint consente di distinguere tra i controlli Web che sono protetti dagli attacchi script injection e Web che non sono. Protetto (controlli), oppure *controlli sicuri*, sono accessibili da utenti non attendibili. È possibile contrassegnare i controlli come sicuri nella proprietà di un elemento di progetto SharePoint o in voci di controllo sicure le **Progettazione pacchetti** quando si aggiunge un assembly al pacchetto. Per altre informazioni, vedere
@@ -27,7 +27,7 @@ ms.locfileid: "60082035"
 - [Modifica delle impostazioni Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [la registrazione di un Assembly della Web Part come SafeControl](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Queste procedure sono per solo a scopo illustrativo. Contrassegnare i controlli sicuri solo se si è certi che siano protetti.
+> Queste procedure sono per solo a scopo illustrativo. Contrassegnare i controlli sicuri solo se si è certi che siano protetti.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Contrassegnare i controlli sicuri nella proprietà voci SafeControl
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082035"
     |Sicurezza Script|Lasciare il **sicurezza Script** casella di controllo.|
 
     > [!NOTE]
-    >  Il **nome dell'Assembly** valore degli assembly aggiunti tramite il **avanzate** scheda della finestra del **Progettazione pacchetti** non è un token, deve essere un assembly con nome sicuro. Per altre informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Il **nome dell'Assembly** valore degli assembly aggiunti tramite il **avanzate** scheda della finestra del **Progettazione pacchetti** non è un token, deve essere un assembly con nome sicuro. Per altre informazioni, vedere [Creazione e utilizzo degli assembly con nome sicuro](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Scegliere il **scheda** tasto per creare un'altra voce di controllo sicura.
 

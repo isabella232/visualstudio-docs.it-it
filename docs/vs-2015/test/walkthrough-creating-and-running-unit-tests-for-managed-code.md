@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408479"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
   [Usare gli unit test per migliorare il codice](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. Esplora test consente anche di eseguire test da framework di unit test di terze parti provvisti di adapter per Esplora test. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)  
+> Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. Esplora test consente anche di eseguire test da framework di unit test di terze parti provvisti di adapter per Esplora test. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Per informazioni su come eseguire i test dalla riga di comando, vedere [Procedura dettagliata: Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Per informazioni su come eseguire i test dalla riga di comando, vedere [Procedura dettagliata: Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   
@@ -71,12 +71,12 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
 5. Digitare **Bank** nella casella `Bank` , quindi scegliere **OK**.  
   
    > [!NOTE]
-   >  Se il nome "Bank" è stato già usato, scegliere un altro nome per il progetto.  
+   > Se il nome "Bank" è stato già usato, scegliere un altro nome per il progetto.  
   
     Viene creato nuovo progetto Bank, visualizzato in Esplora soluzioni con il file Class1.cs aperto nell'Editor di codice.  
   
    > [!NOTE]
-   >  Per aprire il file Class1.cs nell'Editor di codice, nel caso non fosse aperto, fare doppio clic sul file stesso in Esplora soluzioni.  
+   > Per aprire il file Class1.cs nell'Editor di codice, nel caso non fosse aperto, fare doppio clic sul file stesso in Esplora soluzioni.  
   
 6. Copiare il codice sorgente dal [progetto di esempio per la creazione di unit test](../test/sample-project-for-creating-unit-tests.md).  
   

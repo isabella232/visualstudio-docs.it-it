@@ -1,15 +1,23 @@
+---
+ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964746"
+---
 > [!WARNING]
-> Quando si abilita la diagnostica per un ruolo esistente, tutte le estensioni che è già stato impostato sono disabilitate quando viene distribuito il pacchetto. Sono inclusi:
+> Quando si abilita la diagnostica per un ruolo esistente, tutte le estensioni già impostate vengono disabilitate quando viene distribuito il pacchetto. Sono inclusi:
 >
-> * Microsoft Monitoring Agent Diagnostics
-> * Monitoraggio della sicurezza di Microsoft Azure
-> * Microsoft Antimalware                 
+> * Diagnostica di Microsoft Monitoring Agent
+> * Microsoft Azure Security Monitoring
+> * Antimalware Microsoft                 
 > * Agente di monitoraggio Microsoft
-> * Agente di Profiler del servizio di Microsoft      
-> * Estensione di dominio di Azure di Windows        
-> * Estensione diagnostica di Azure per Windows   
-> * Windows Azure estensione di Desktop remoto
-> * Raccolta di Log di Azure di Windows
+> * Microsoft Service Profiler Agent      
+> * Windows Azure Domain Extension        
+> * Windows Azure Diagnostics Extension   
+> * Windows Azure Remote Desktop Extension
+> * Windows Azure Log Collector
 >
-> Dopo aver distribuito il ruolo aggiornato, è possibile reimpostare le estensioni tramite il portale di Azure o PowerShell.
+> Dopo avere distribuito il ruolo aggiornato, è possibile reimpostare le estensioni tramite il portale di Azure o PowerShell.
 >

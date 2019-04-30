@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399416"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -85,7 +85,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 **Abilita il supporto per il collegamento all'origine**: Indica al debugger di Visual Studio per scaricare i file di origine per *PDB* file contenenti informazioni sui collegamenti di origine. Per altre informazioni sul collegamento all'origine, vedere la [specifica l'origine collegamento](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Perché il collegamento all'origine scaricherà i file tramite http o https, assicurarsi che si ritiene attendibile il *PDB* file.
+> Perché il collegamento all'origine scaricherà i file tramite http o https, assicurarsi che si ritiene attendibile il *PDB* file.
 
 - **Esegui fallback all'autenticazione di Gestione credenziali GIT per tutte le richieste di collegamento all'origine**:   Quando è abilitato il supporto di collegamento all'origine e una richiesta di collegamento all'origine non riesce l'autenticazione, Visual Studio chiama quindi il Git Credential Manager.
 

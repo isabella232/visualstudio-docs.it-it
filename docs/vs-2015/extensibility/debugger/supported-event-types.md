@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446446"
 ---
 # <a name="supported-event-types"></a>Tipi di evento supportati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Debug in Visual Studio supporta attualmente i tipi di evento seguente:
     Le interfacce [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) sono riportati alcuni esempi di eventi di arresto.  
   
   > [!NOTE]
-  >  Gli eventi di arresto asincrona non sono supportati. È un errore per inviare un evento di arresto asincrona.  
+  > Gli eventi di arresto asincrona non sono supportati. È un errore per inviare un evento di arresto asincrona.  
   
 ## <a name="discussion"></a>Discussione  
  L'implementazione effettiva degli eventi dipende dalla progettazione del DE. Il tipo di ogni evento inviato è determinato dai relativi attributi, che vengono impostate quando si progetta il DE. Ad esempio, può inviare un Germania un' [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) come un evento asincrono, mentre un altro può inviare i dati come un evento di arresto.  
@@ -53,7 +53,7 @@ Debug in Visual Studio supporta attualmente i tipi di evento seguente:
  Nella tabella seguente specifica i parametri che programma e i thread sono necessari per quali eventi, nonché i tipi di eventi. Qualsiasi evento può essere sincrono. Nessun evento deve essere sincrono.  
   
 > [!NOTE]
->  Il [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfaccia è necessaria per tutti gli eventi.  
+> Il [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interfaccia è necessaria per tutti gli eventi.  
   
 |event|IDebugProgram2|IDebugThread2|Eventi di arresto|  
 |-----------|--------------------|-------------------|---------------------|  

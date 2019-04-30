@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387490"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Non passare i tipi per riferimento
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922875"
  Sebbene i valori restituiti siano comuni e usati molto, la corretta applicazione delle `out` e `ref` parametri richiede la progettazione intermedi e le competenze di codifica. Libreria gli architetti per un pubblico generico non possono prevedere agli utenti di utilizzare i `out` o `ref` parametri.
 
 > [!NOTE]
->  Quando si lavora con i parametri che sono strutture di grandi dimensioni, le risorse aggiuntive necessarie per copiare queste strutture potrebbe causare un effetto sulle prestazioni quando si passa per valore. In questi casi, è possibile considerare l'uso `ref` o `out` parametri.
+> Quando si lavora con i parametri che sono strutture di grandi dimensioni, le risorse aggiuntive necessarie per copiare queste strutture potrebbe causare un effetto sulle prestazioni quando si passa per valore. In questi casi, è possibile considerare l'uso `ref` o `out` parametri.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione della regola che è dovuta a un tipo di valore, dispone del metodo restituisca l'oggetto come relativo valore restituito. Se il metodo deve restituire più valori, riprogettare per la restituzione di una singola istanza di un oggetto che contiene i valori.

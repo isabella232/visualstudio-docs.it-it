@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: interrompere le modifiche al codice | Microsoft Docs'
+title: 'Procedura: Arrestare le modifiche al codice | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388355"
 ---
-# <a name="how-to-stop-code-changes"></a>Procedura: interrompere l'applicazione di modifiche al codice
+# <a name="how-to-stop-code-changes"></a>Procedura: Arrestare le modifiche al codice
 In Modifica e continuazione è possibile scegliere di interrompere l'applicazione delle modifiche al codice.
 
 > [!CAUTION]
->  L'interruzione dell'applicazione delle modifiche può generare risultati imprevisti nel caso di codice gestito. L'applicazione di modifiche a codice gestito, tuttavia, in genere viene eseguita rapidamente ed è quindi raro il caso in cui è necessario interrompere l'operazione.
+> L'interruzione dell'applicazione delle modifiche può generare risultati imprevisti nel caso di codice gestito. L'applicazione di modifiche a codice gestito, tuttavia, in genere viene eseguita rapidamente ed è quindi raro il caso in cui è necessario interrompere l'operazione.
 
 ### <a name="to-stop-applying-code-changes"></a>Per interrompere l'applicazione delle modifiche al codice
 

@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446762"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procedura dettagliata: Connessione di un Host a un processore di direttiva generato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60083218"
  In questa procedura dettagliata, si espande l'host personalizzato, in modo che supporti i modelli di testo che chiamano processori di direttiva. Quando si definisce un linguaggio specifico di dominio, viene generato un *processore di direttiva* per il modello di dominio. Il processore di direttiva rende più semplice per gli utenti di scrivere modelli di accedere al modello, riducendo la necessità di scrivere assembly e importare le direttive nei modelli.  
   
 > [!WARNING]
->  Questa procedura dettagliata si basa su [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). Eseguire innanzitutto tale procedura dettagliata.  
+> Questa procedura dettagliata si basa su [procedura dettagliata: Creazione di un Host del modello di testo personalizzato](../modeling/walkthrough-creating-a-custom-text-template-host.md). Eseguire innanzitutto tale procedura dettagliata.  
   
  In questa procedura dettagliata sono incluse le attività seguenti:  
   
@@ -68,7 +68,7 @@ ms.locfileid: "60083218"
 2. Scegliere **Compila soluzione** dal menu **Compila**.  
   
    > [!IMPORTANT]
-   >  Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.  
+   > Questo passaggio genera il processore di direttiva e aggiunge la chiave per lo nel Registro di sistema.  
   
 3. Scegliere **Avvia debug** dal menu **Debug**.  
   
@@ -120,7 +120,7 @@ ms.locfileid: "60083218"
 5. Individuare il codice per la proprietà `StandardAssemblyReferences`e sostituirlo con il codice seguente:  
   
     > [!NOTE]
-    >  In questo passaggio aggiungere riferimenti agli assembly richiesti dal processore di direttiva generato che supporterà l'host.  
+    > In questo passaggio aggiungere riferimenti agli assembly richiesti dal processore di direttiva generato che supporterà l'host.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ ms.locfileid: "60083218"
 6. Individuare il codice per la funzione `ResolveDirectiveProcessor`e sostituirlo con il codice seguente:  
   
     > [!IMPORTANT]
-    >  Questo codice contiene riferimenti a livello di codice per il nome del processore di direttiva generato a cui si desidera connettersi. È possibile apportare facilmente questo più generali, nel qual caso la ricerca di tutti i processori di direttiva elencati nel Registro di sistema e tenta di trovare una corrispondenza. In tal caso, l'host funzionerà con qualsiasi processore di direttiva generato.  
+    > Questo codice contiene riferimenti a livello di codice per il nome del processore di direttiva generato a cui si desidera connettersi. È possibile apportare facilmente questo più generali, nel qual caso la ricerca di tutti i processori di direttiva elencati nel Registro di sistema e tenta di trovare una corrispondenza. In tal caso, l'host funzionerà con qualsiasi processore di direttiva generato.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ ms.locfileid: "60083218"
 2. Aggiungere quanto segue al file di testo:  
   
     > [!NOTE]
-    >  Il linguaggio di programmazione del modello di testo non dovrà corrispondere a quello dell'host personalizzato.  
+    > Il linguaggio di programmazione del modello di testo non dovrà corrispondere a quello dell'host personalizzato.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ ms.locfileid: "60083218"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe nelle **Windows Explorer**e quindi trascinare il file nella finestra del prompt dei comandi.  
+    > Anziché digitare l'indirizzo, è possibile passare al file CustomHost.exe nelle **Windows Explorer**e quindi trascinare il file nella finestra del prompt dei comandi.  
   
 3. Digitare uno spazio.  
   
@@ -336,7 +336,7 @@ ms.locfileid: "60083218"
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Anziché digitare l'indirizzo, è possibile passare al file TestTemplateWithDP.txt nelle **Windows Explorer**e quindi trascinare il file nella finestra del prompt dei comandi.  
+    > Anziché digitare l'indirizzo, è possibile passare al file TestTemplateWithDP.txt nelle **Windows Explorer**e quindi trascinare il file nella finestra del prompt dei comandi.  
   
      L'applicazione host personalizzata viene eseguita e viene avviato il processo di trasformazione di modello di testo.  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385999"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
  Imposta l'ordine dei singoli inserimenti, aggiornamenti ed eliminazioni che impostando l'ordine per eseguire gli aggiornamenti è necessari per salvare tutti i dati modificati in tutte le tabelle di un set di dati. Quando aggiornamento gerarchico è abilitata, gli inserimenti vengono eseguite per prime, quindi aggiorna ed eliminato. Il `TableAdapterManager` fornisce un `UpdateOrder` proprietà che può essere impostata per eseguire aggiornamenti in primo luogo, quindi inserimenti ed eliminazioni.  
   
 > [!NOTE]
->  È importante comprendere che l'ordine di aggiornamento è tutto compreso. Ovvero, quando vengono eseguiti gli aggiornamenti, inserimenti ed eliminazioni vengono eseguite per tutte le tabelle nel set di dati.  
+> È importante comprendere che l'ordine di aggiornamento è tutto compreso. Ovvero, quando vengono eseguiti gli aggiornamenti, inserimenti ed eliminazioni vengono eseguite per tutte le tabelle nel set di dati.  
   
  Per impostare il `UpdateOrder` proprietà, dopo il trascinamento degli elementi dal [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) in un form, selezionare il `TableAdapterManager` nella barra dei componenti e quindi impostare il `UpdateOrder` proprietà nel **proprietà** finestra. Per altre informazioni, vedere [Procedura: Impostare l'ordine quando si esegue un aggiornamento gerarchico](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
  Tuttavia, in alcuni casi è consigliabile ripristinare il set di dati dalla copia di backup. Un esempio di questo può verificarsi quando si usano i valori a incremento automatico. Ad esempio, se un salvataggio operazione non riesce, i valori a incremento automatico vengono reimpostati non nel set di dati e il set di dati continui a creare i valori a incremento automatico. In tal modo un gap nella numerazione che potrebbe non essere accettabile all'interno dell'applicazione. In situazioni in cui si tratta di un problema, il `TableAdapterManager` fornisce un `BackupDataSetBeforeUpdate` proprietà che sostituisce il set di dati esistente con una copia di backup, se la transazione ha esito negativo.  
   
 > [!NOTE]
->  La copia di backup è solo in memoria, mentre il `TableAdapterManager.UpdateAll` metodo è in esecuzione. Pertanto, non è presente alcun accesso a livello di codice per questo set di dati di backup perché sostituisce il set di dati originale o abbandona l'ambito non appena il `TableAdapterManager.UpdateAll` metodo al termine dell'esecuzione.  
+> La copia di backup è solo in memoria, mentre il `TableAdapterManager.UpdateAll` metodo è in esecuzione. Pertanto, non è presente alcun accesso a livello di codice per questo set di dati di backup perché sostituisce il set di dati originale o abbandona l'ambito non appena il `TableAdapterManager.UpdateAll` metodo al termine dell'esecuzione.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modificare il generato codice per eseguire l'aggiornamento gerarchico di salvataggio  
  Salvare le modifiche dalle tabelle dati correlate del set di dati nel database chiamando il metodo `TableAdapterManager.UpdateAll` e passando il nome del set di dati contenente le tabelle correlate. Ad esempio, eseguire il metodo `TableAdapterManager.UpdateAll(NorthwindDataset)` per inviare gli aggiornamenti da tutte le tabelle presenti in NorthwindDataSet al database back-end.  
@@ -81,7 +81,7 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
  Il codice di salvataggio generato contiene anche una riga di codice che chiama il metodo `CustomersBindingSource.EndEdit`. In particolare, chiama il <xref:System.Windows.Forms.BindingSource.EndEdit%2A> del primo metodo <xref:System.Windows.Forms.BindingSource>che viene aggiunto al form. In altre parole, questo codice viene generato solo per la prima tabella che viene trascinata dal **Zdroje dat** finestra nei form. La chiamata al metodo <xref:System.Windows.Forms.BindingSource.EndEdit%2A> esegue il commit di tutte le modifiche in corso nei controlli associati a dati che si stanno modificando. Pertanto, se un controllo associato a dati ha lo stato attivo e si fa clic sul pulsante **Salva**, prima del salvataggio effettivo verrà eseguito il commit di tutte le modifiche in sospeso nel controllo (metodo `TableAdapterManager.UpdateAll`).  
   
 > [!NOTE]
->  La finestra di progettazione set di dati aggiunge solo il `BindingSource.EndEdit` codice per la prima tabella che viene rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.  
+> La finestra di progettazione set di dati aggiunge solo il `BindingSource.EndEdit` codice per la prima tabella che viene rilasciata nel form. Pertanto, è necessario aggiungere una riga di codice per chiamare il metodo `BindingSource.EndEdit` per ogni tabella correlata nel form. Per questa procedura dettagliata, è necessario quindi aggiungere una chiamata al metodo `OrdersBindingSource.EndEdit`.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Per aggiornare il codice in modo da eseguire il commit delle modifiche apportate alle tabelle correlate prima del salvataggio  
   
@@ -95,7 +95,7 @@ Aggiornamento gerarchico * si riferisce al processo di salvataggio dei dati aggi
    Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correlata prima di salvare i dati in un database, potrebbe anche essere necessario eseguire il commit dei record padre appena creati prima di aggiungere i nuovi record figlio in un set di dati. In altre parole, potrebbe essere necessario aggiungere il nuovo record padre (Customer) al set di dati affinché i vincoli di chiave esterna consentano l'aggiunta dei nuovi record figli (Orders) al set di dati. A tale scopo, è possibile usare l'evento figlio `BindingSource.AddingNew`.  
   
 > [!NOTE]
->  Se è necessario eseguire il commit nuovi record padre dipende dal tipo di controllo che consente di eseguire l'associazione all'origine dati. In questa procedura dettagliata, singoli controlli consentono di eseguire l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre invece sono stati visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>, questo aggiuntivi <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per i record padre non sarebbe necessario chiamare. perché la funzionalità di data-binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.  
+> Se è necessario eseguire il commit nuovi record padre dipende dal tipo di controllo che consente di eseguire l'associazione all'origine dati. In questa procedura dettagliata, singoli controlli consentono di eseguire l'associazione alla tabella padre. Ciò richiede il codice aggiuntivo per eseguire il commit del nuovo record padre. Se i record padre invece sono stati visualizzati in un controllo con associazione complessa come la <xref:System.Windows.Forms.DataGridView>, questo aggiuntivi <xref:System.Windows.Forms.BindingSource.EndEdit%2A> per i record padre non sarebbe necessario chiamare. perché la funzionalità di data-binding sottostante del controllo gestisce l'esecuzione del commit dei nuovi record.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Per aggiungere il codice per eseguire il commit dei record padre nel set di dati prima dell'aggiunta dei nuovi record figlio  
   

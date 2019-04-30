@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445915"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Aggiornare progetti di unit test di Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788639"
  In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] sono state introdotte diverse modifiche per gli unit test. A causa di queste modifiche, è importante comprendere i problemi di compatibilità tra le versioni precedenti di Visual Studio e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Tra le modifiche apportate agli unit test, una delle più significative è il fatto che [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] include più modelli di progetto di test, tra cui un modello di progetto di unit test. Sono stati aggiunti nuovi unit test al modello di progetto per i nuovi unit test. Gli unit test possono essere inclusi anche in un altro nuovo modello di progetto di test, denominato modello di progetto di test codificato dell'interfaccia utente. Per altre informazioni sui nuovi modelli di progetto di test, vedere [Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). I nuovi progetti di unit test non includono più un file di impostazioni di test per impostazione predefinita. L'esclusione del file di impostazioni di test migliora le prestazioni degli unit test. Per garantire la compatibilità, è ancora possibile usare progetti di test esistenti creati mediante Visual Studio 2010. Per motivi di prestazioni, è tuttavia consigliabile rimuovere il file di impostazioni di test associato al progetto di test, a meno che non si abbia una specifica esigenza di usare il file di impostazioni di test. È ad esempio è possibile scegliere di mantenere il file di impostazioni test se gli unit test vengono eseguiti in un ambiente distribuito o se è necessario raccogliere specifici dati di diagnostica. Se si presenta un'esigenza analoga usando il nuovo modello di progetto di unit test o il modello di progetto di test codificati dell'interfaccia utente, è possibile aggiungere manualmente un file di impostazioni di test anche a tali elementi.
 
 > [!NOTE]
->  Gli unit test esistenti nei progetti di test di [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 funzioneranno senza problemi tra [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Non vengono apportate modifiche ai file dei progetti di test quando si apre un progetto di test di Visual Studio 2010 contenente unit test in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o viceversa.
+> Gli unit test esistenti nei progetti di test di [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 funzioneranno senza problemi tra [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Non vengono apportate modifiche ai file dei progetti di test quando si apre un progetto di test di Visual Studio 2010 contenente unit test in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o viceversa.
 
 > [!CAUTION]
->  Visual Studio 2010 non è in grado di aprire un progetto C++/CLI destinato al set di strumenti 11.0, ovvero un progetto creato in Visual Studio 2012. Questa limitazione si applica a tutti i progetti C++/CLI, non solo a progetti di unit test C++/CLI.
+> Visual Studio 2010 non è in grado di aprire un progetto C++/CLI destinato al set di strumenti 11.0, ovvero un progetto creato in Visual Studio 2012. Questa limitazione si applica a tutti i progetti C++/CLI, non solo a progetti di unit test C++/CLI.
 
 > [!NOTE]
->  È possibile eseguire di nuovo gli unit test usando vstest.console.exe dalla riga di comando. Per altre informazioni sull'uso di vstest.console.exe, vedere [Opzioni della riga di comando di VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11) oppure eseguire il comando usando l'opzione per la Guida: **vstest.console.exe /?**. È possibile continuare a eseguire gli unit test esistenti usando MStest.exe. Per altre informazioni, vedere [Eseguire test automatizzati dalla riga di comando con MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) e [Opzioni della riga di comando di MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> È possibile eseguire di nuovo gli unit test usando vstest.console.exe dalla riga di comando. Per altre informazioni sull'uso di vstest.console.exe, vedere [Opzioni della riga di comando di VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11) oppure eseguire il comando usando l'opzione per la Guida: **vstest.console.exe /?**. È possibile continuare a eseguire gli unit test esistenti usando MStest.exe. Per altre informazioni, vedere [Eseguire test automatizzati dalla riga di comando con MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) e [Opzioni della riga di comando di MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Un'altra modifica significativa è il nuovo Esplora test. In [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] sono state deprecate alcune delle finestre di test disponibili nelle versioni precedenti di Visual Studio, ad esempio la finestra Visualizzazione test. Esplora test è progettato per supportare meglio gli sviluppatori e i team che incorporano unit test nelle procedure di sviluppo del software. Per altre informazioni, vedere [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md).
 

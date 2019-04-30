@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388720"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.
@@ -74,7 +74,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 
  È possibile posizionare il puntatore su una barra per verificare l'evento di chiamata di disegno a cui corrisponde la barra. Se si seleziona la barra, l'elenco di eventi sarà sincronizzato in base all'evento specifico.
 
-#### <a name="table"></a>Table
+#### <a name="table"></a>Tabella
  La tabella numerica sotto la sequenza temporale mostra le prestazioni relative di ogni variante di rendering per ogni chiamata di disegno rispetto al rendering predefinito dell'app. Ogni colonna mostra una diversa variante di rendering e ogni riga rappresenta una chiamata di disegno diversa, identificata nella colonna più a sinistra. È possibile seguire i collegamenti relativi a un evento per visualizzarlo nella finestra Elenco eventi grafici.
 
  ![La tabella riepilogo Mostra diverse varianti. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")
@@ -111,7 +111,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
  Le informazioni relative ai contatori hardware offrono una visualizzazione molto dettagliata del comportamento specifico della piattaforma hardware per ogni chiamata di disegno, che possono aiutare a identificare con grande precisione la causa dei colli di bottiglia relativi alle prestazioni.
 
 > [!NOTE]
->  Diverse piattaforme hardware supportano contatori diversi. Questo non è un comportamento standard. I contatori e ciò che rappresentano sono determinati esclusivamente da ogni produttore di GPU.
+> Diverse piattaforme hardware supportano contatori diversi. Questo non è un comportamento standard. I contatori e ciò che rappresentano sono determinati esclusivamente da ogni produttore di GPU.
 
 ### <a name="marker-regions-and-events"></a>Aree di marcatori ed eventi
  L'analisi dei frame supporta i marcatori di eventi definiti dagli utenti e i gruppi di eventi, visualizzati nella tabella Riepilogo e nelle tabelle Dettagli.
@@ -132,13 +132,13 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 
  L'analisi dei frame limita il numero di nuovi tentativi a 10. Se le impostazioni di risparmio di energia o controllo del clock della piattaforma sono molto rigide, è possibile che l'analisi dei frame abbia esito negativo e che sia segnalato un errore a causa del superamento del limite di nuovi tentativi consentiti. Per ridurre questo problema, è possibile provare a modificare le impostazioni del risparmio energia e della limitazione della velocità del clock della piattaforma in modo che siano meno rigide, se la piattaforma lo permette.
 
-##  <a name="HardwareSupport"></a> Supporto hardware
+## <a name="HardwareSupport"></a> Supporto hardware
 
 ### <a name="timestamps-and-occlusion-queries"></a>Timestamp e query di occlusione
  I timestamp sono supportati in tutte le piattaforme che supportano l'analisi dei frame. Le query di occlusione della profondità, necessarie per il contatore relativo ai pixel bloccati, sono supportate sulle piattaforme che supportano funzionalità di livello 9.2 o superiori.
 
 > [!NOTE]
->  Anche se i timestamp sono supportati su tutte le piattaforme che supportano l'analisi dei frame, la precisione e la coerenza dei timestamp variano a seconda della piattaforma usata.
+> Anche se i timestamp sono supportati su tutte le piattaforme che supportano l'analisi dei frame, la precisione e la coerenza dei timestamp variano a seconda della piattaforma usata.
 
 ### <a name="gpu-counters"></a>Contatori della GPU
  Il supporto per i contatori hardware della GPU dipende dall'hardware.
@@ -150,7 +150,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   Nessun'altra piattaforma che supporta l'analisi dei frame raccoglie i contatori hardware della GPU.
 
 > [!NOTE]
->  Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.
+> Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.
 
 ## <a name="unsupported-scenarios"></a>Scenari non supportati
  Alcuni modi di usare l'analisi dei frame non sono supportati o non sono consigliati.
@@ -159,21 +159,21 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
  Quando si riproduce in Analizzatore grafica un file di log di grafica che usa un livello di funzionalità superiore rispetto a quello supportato dal computer di riproduzione, si verificherà automaticamente il fallback su WARP. In analisi dei frame non si verifica esplicitamente il fallback su WARP ed è generato un errore. WARP è utile per esaminare la correttezza di un'app Direct3D, ma non per esaminarne le prestazioni.
 
 > [!NOTE]
->  Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Il log di grafica è possibile riprodurre nuovamente fino a quando il file di log non include API e Usa i livelli di funzionalità che non sono supportati nel computer di riproduzione.
+> Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Il log di grafica è possibile riprodurre nuovamente fino a quando il file di log non include API e Usa i livelli di funzionalità che non sono supportati nel computer di riproduzione.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versioni precedenti
  Se l'app chiama l'API Direct3D 10, Analisi dei frame non sarà in grado di riconoscerla o di profilarla, anche se è riconosciuta e usata da altri strumenti di Analizzatore grafica.
 
 > [!NOTE]
->  Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità.
+> Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità.
 
 ### <a name="warp"></a>WARP
  L'analisi dei frame deve essere usata per la profilatura e per il miglioramento delle prestazioni di rendering in hardware effettivo. Esecuzione di analisi dei frame su dispositivi WARP è possibile, ma non è in genere un attuarlo perché la piattaforma WARP in esecuzione su una CPU di livello elevato è più lenta rispetto a anche le GPU moderne meno efficienti, e poiché le prestazioni possono variare notevolmente in base alla CPU specifica in cui viene eseguito.
 
-##  <a name="Variants"></a> Varianti
+## <a name="Variants"></a> Varianti
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:
 
-|Variante|Description|
+|Variante|Descrizione|
 |-------------|-----------------|
 |**Dimensione riquadro di visualizzazione 1x1**|Riduce a 1x1 pixel le dimensioni del riquadro di visualizzazione in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Variante delle dimensioni del viewport 1x1](1x1-viewport-size-variant.md)|
 |**0x MSAA**|Disabilita l'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Aliasing) in tutte le destinazioni di rendering.<br /><br /> Per altre informazioni, vedere [Varianti di MSAA 0x/2x/4x](0x-2x-4x-msaa-variants.md)|
@@ -189,4 +189,4 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
 |**Dimensioni trama - Quarto**|Riduce le dimensioni di trama di tutte le trame che non corrispondono a destinazioni di rendering a un quarto della dimensione originale in ogni dimensione. Ad esempio, una trama con dimensioni 256x128 è ridotta a 64x32 texel.<br /><br /> Per altre informazioni, vedere [Variante delle dimensioni della trama ridotte a metà o un quarto](half-quarter-texture-dimensions-variant.md).|
 |**Compressione di trama a blocchi**|Abilita la compressione a blocchi in tutte le trame con variante di formato di B8G8R8X8, B8G8R8A8 o R8G8B8A8 pixel. Le varianti di formato B8G8R8X8 sono compresse tramite BC1, mentre per le varianti di formato B8G8R8A8 e R8G8B8A8 si usa BC3.<br /><br /> Per altre informazioni, vedere [Variante di compressione della trama BC](bc-texture-compression-variant.md).|
 
- Il risultato per la maggior parte delle varianti è prescrittivo, ovvero indica ad esempio che la riduzione delle dimensioni della trama a metà offre un incremento del 25 percento nella velocità o che l'abilitazione di 2x MSAA comporta un rallentamento pari solo al 2 percento. Per altre varianti potrebbe essere necessario interpretare i risultati. Se, a esempio la variante che modifica le dimensioni del riquadro di visualizzazioni in 1x1 mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare la presenza di un collo di bottiglia nel rendering causata da una bassa velocità di riempimento. In alternativa, se non sono rilevate modifiche significative nelle prestazioni, è possibile che il collo di bottiglia del rendering sia dovuto all'elaborazione dei vertici.
+ Il risultato per la maggior parte delle varianti è prescrittivo: "Riduzione delle dimensioni della trama della metà è 25 percento nella velocità" o "Abilitazione di 2x MSAA è solo il 2% più lentamente". Per altre varianti potrebbe essere necessario interpretare i risultati. Se, a esempio la variante che modifica le dimensioni del riquadro di visualizzazioni in 1x1 mostra un miglioramento notevole delle prestazioni, ciò potrebbe indicare la presenza di un collo di bottiglia nel rendering causata da una bassa velocità di riempimento. In alternativa, se non sono rilevate modifiche significative nelle prestazioni, è possibile che il collo di bottiglia del rendering sia dovuto all'elaborazione dei vertici.

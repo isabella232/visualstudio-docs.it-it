@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6da4d0642738fca2f35adbc2ec4e039e3edf11b2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ac41f4da29b95ba1fcd1601f98104956d584212a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419503"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Procedura: Esporre il codice a VBA in un oggetto visivo C# progetto
   Se si desidera che i due tipi di codice per interagire tra loro, è possibile esporre codice in un progetto Visual c# in Visual Basic Applications Edition (VBA).
@@ -42,7 +42,7 @@ ms.locfileid: "56604479"
     Per altre informazioni sui formati di file di documento che supportano le macro, vedere [combinare VBA e le personalizzazioni a livello di documento](../vsto/combining-vba-and-document-level-customizations.md).
 
    > [!NOTE]
-   >  Questa funzionalità non può essere usata nei progetti Modello di Word,
+   > Questa funzionalità non può essere usata nei progetti Modello di Word,
 
 2. Assicurarsi che il codice VBA nel documento può essere eseguita senza chiedere conferma all'utente di attivare le macro. È possibile considerare attendibile l'esecuzione del codice VBA aggiungendo il percorso del progetto di Office all'elenco di percorsi attendibili nelle impostazioni del Centro protezione per Word o Excel.
 
@@ -93,7 +93,7 @@ ms.locfileid: "56604479"
 10. Nella finestra **Proprietà** selezionare la proprietà **ReferenceAssemblyFromVbaProject** e modificarne il valore impostandola su **True**.
 
     > [!NOTE]
-    >  Se la cartella di lavoro o il documento non contiene già codice VBA o se il codice VBA nel documento non è attendibile per l'esecuzione, si riceverà un messaggio di errore quando si impostano i **ReferenceAssemblyFromVbaProject** proprietà **True**. Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
+    > Se la cartella di lavoro o il documento non contiene già codice VBA o se il codice VBA nel documento non è attendibile per l'esecuzione, si riceverà un messaggio di errore quando si impostano i **ReferenceAssemblyFromVbaProject** proprietà **True**. Ciò avviene perché in questa situazione, in Visual Studio non è possibile modificare il progetto VBA nel documento.
 
 11. Fare clic su **OK** nel messaggio visualizzato. Questo messaggio per ricordare che se si aggiungono VBA alla cartella di lavoro di codice o del documento quando si esegue il progetto da [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], il codice VBA andranno perso la volta successiva che si compila il progetto. Questo avviene perché il documento nella compilazione di output la cartella verrà sovrascritta ogni volta che si compila il progetto.
 

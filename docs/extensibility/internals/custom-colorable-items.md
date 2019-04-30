@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415180"
 ---
 # <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
 È possibile sostituire l'elenco dei tipi per colorare, quali parole chiave e i commenti, mediante l'implementazione di elementi colorabili personalizzati come parte del servizio di linguaggio.
@@ -28,11 +28,11 @@ ms.locfileid: "56641533"
  Poiché l'IDE gestisce l'override dell'utente di elementi colorabili nella **Fonts and Colors** finestra di dialogo, è necessario fornire solo ogni elemento colorabile personalizzato con un nome. Questo nome viene visualizzato un messaggio nel **elementi visualizzati** elenco. Gli elementi colorabili vengono visualizzati in ordine alfabetico. Per raggruppare elementi colorabili personalizzati del servizio di linguaggio, è possibile iniziare ogni nome con il nome del linguaggio, ad esempio **NewLanguage - commento** e **NewLanguage - parola chiave**.
 
 > [!CAUTION]
->  È necessario includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti. Se si modifica il nome di uno degli elementi colorabili durante lo sviluppo, è necessario reimpostare la cache che è stata creata la prima volta che gli elementi colorabili erano accessibili. È possibile reimpostare la cache sperimentale con il **CreateExpInstance** tool, che viene installato con Visual Studio SDK, in genere nella directory:
+> È necessario includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti. Se si modifica il nome di uno degli elementi colorabili durante lo sviluppo, è necessario reimpostare la cache che è stata creata la prima volta che gli elementi colorabili erano accessibili. È possibile reimpostare la cache sperimentale con il **CreateExpInstance** tool, che viene installato con Visual Studio SDK, in genere nella directory:
 >
->  *C:\Programmi\Microsoft file (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Programmi\Microsoft file (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Per reimpostare la cache, immettere **CreateExpInstance /Reset**. Per altre informazioni sulle **CreateExpInstance**, vedere [utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
+> Per reimpostare la cache, immettere **CreateExpInstance /Reset**. Per altre informazioni sulle **CreateExpInstance**, vedere [utilità CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
 
  Il primo elemento nell'elenco di elementi colorabili non viene mai fatto riferimento. Il primo elemento corrisponde a un indice colorabile dell'elemento pari a 0, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sempre fornisce i colori del testo predefinito e attributi per quell'elemento. Il modo più semplice di gestione di questo elemento privo di riferimento è di fornire un elemento colorabile segnaposto nell'elenco come primo elemento.
 

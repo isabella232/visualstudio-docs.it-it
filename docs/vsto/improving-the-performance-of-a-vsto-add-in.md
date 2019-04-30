@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420943"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Migliorare le prestazioni di un componente aggiuntivo VSTO
   È possibile offrire agli utenti un'esperienza migliore ottimizzando i componenti aggiuntivi VSTO creati per le applicazioni di Office per poterli avviare rapidamente, interromperli o usarli per aprire gli elementi ed eseguire altre attività. Se il componente aggiuntivo VSTO è per Outlook, è anche possibile ridurre la probabilità che il componente aggiuntivo VSTO venga disabilitato a causa delle prestazioni ridotte. È possibile incrementare le prestazioni del componente aggiuntivo VSTO implementando le strategie seguenti:
@@ -93,7 +93,7 @@ ms.locfileid: "60071821"
 - Convalida della firma digitale dei manifesti della distribuzione.
 
   > [!NOTE]
-  >  Questo approccio non è necessario se si distribuisce il componente aggiuntivo VSTO in una posizione sicura nei computer degli utenti.
+  > Questo approccio non è necessario se si distribuisce il componente aggiuntivo VSTO in una posizione sicura nei computer degli utenti.
 
   Per altre informazioni, vedere [distribuire una soluzione Office tramite Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071821"
  Si consiglia di eseguire le attività che richiedono tempo (ad esempio le attività a esecuzione prolungata, le connessioni di database o altri tipi di chiamate di rete) in un thread separato. Per altre informazioni, vedere [supporto del Threading in Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Tutto il codice che effettua chiamate nel modello a oggetti di Office deve essere eseguito nel thread principale.
+> Tutto il codice che effettua chiamate nel modello a oggetti di Office deve essere eseguito nel thread principale.
 
 ## <a name="see-also"></a>Vedere anche
 

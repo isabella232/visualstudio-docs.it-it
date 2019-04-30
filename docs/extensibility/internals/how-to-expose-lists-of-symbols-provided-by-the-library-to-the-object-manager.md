@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420628"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedura: Esporre gli elenchi dei simboli forniti dalla libreria per la gestione degli oggetti
 Gli strumenti di esplorazione dei simboli **Visualizzazione classi**, **Visualizzatore oggetti**, **Visualizzatore chiamate** e **risultati ricerca simbolo**, il passaggio delle richieste per i nuovi dati per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti. Il gestore oggetti consente di trovare le librerie appropriate e richiede nuovi elenchi dei simboli. Le librerie di rispondono fornendo dati richiesti per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gestione degli oggetti chiama i metodi in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia per ottenere i dati e lo usa per popolare o aggiornare le visualizzazioni degli strumenti di esplorazione dei simboli.
@@ -27,9 +27,9 @@ Gli strumenti di esplorazione dei simboli **Visualizzazione classi**, **Visualiz
  Una libreria può visualizzare le richieste di dati quando viene richiamato lo strumento, il nodo è espanso o all'aggiornamento della vista. Quando viene richiamato uno strumento di esplorazione dei simboli per la prima volta, il gestore oggetti richiede la libreria fornisce l'elenco di primo livello. Quando l'utente espande un nodo di elenco, la libreria fornisce un elenco di elementi figlio di tale nodo. Ogni richiesta di informazioni di gestione di oggetto contiene un indice di elemento di interesse. Per visualizzare un nuovo elenco, la gestione degli oggetti deve determinare il numero di elementi incluse nell'elenco, il tipo di elementi, i relativi nomi, accessibilità e altre proprietà.
 
 > [!NOTE]
->  Gli esempi di codice gestito seguenti illustrano come specificare gli elenchi dei simboli illustrata l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il gestore oggetti chiama i metodi in questa interfaccia e Usa i dati ottenuti per inserire o aggiornare gli strumenti di esplorazione dei simboli.
+> Gli esempi di codice gestito seguenti illustrano come specificare gli elenchi dei simboli illustrata l'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaccia. Il gestore oggetti chiama i metodi in questa interfaccia e Usa i dati ottenuti per inserire o aggiornare gli strumenti di esplorazione dei simboli.
 >
->  Per l'implementazione di provider di simboli codice nativo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaccia.
+> Per l'implementazione di provider di simboli codice nativo, usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaccia.
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Per fornire gli elenchi dei simboli per il gestore oggetti
 

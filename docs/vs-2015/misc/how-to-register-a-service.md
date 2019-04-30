@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408421"
 ---
 # <a name="how-to-register-a-service"></a>Procedura: Registrare un servizio
 Il framework di pacchetto gestito (MPF) fornisce gli attributi per controllare la registrazione dei servizi gestiti. L'utilità RegPkg usa questi attributi per registrare un servizio con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -38,7 +38,7 @@ Il framework di pacchetto gestito (MPF) fornisce gli attributi per controllare l
  L'attributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> è necessario per ottenere l'interfaccia dal codice non gestito.  
   
 > [!NOTE]
->  Nonostante sia possibile usare lo stesso tipo o GUID per il servizio e l'interfaccia, è consigliabile separarli perché un servizio può esporre interfacce diverse.  
+> Nonostante sia possibile usare lo stesso tipo o GUID per il servizio e l'interfaccia, è consigliabile separarli perché un servizio può esporre interfacce diverse.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Registrazione di pacchetti VSPackage](../extensibility/internals/registering-vspackages.md)   

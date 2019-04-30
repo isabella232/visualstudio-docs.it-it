@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 180c6f2aa987e628773572158a23b9564054305e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f3305efc101603d66511e1e2c5ef356ead22b59f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401408"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Recupera un flag che specifica se un tipo definito dall'utente (UDT) contiene omogenei a virgola mobile (HFA) i dati aggregati di tipo float.
@@ -39,12 +39,12 @@ HRESULT get_hfaFloat( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Dia2.h
+ Intestazione: DIA2.h
 
  Libreria: diaguids.lib
 

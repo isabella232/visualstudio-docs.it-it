@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418472"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct
 
@@ -80,7 +80,7 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
     Questa azione crea un nuovo *vsct* file di origine di tabella comandi XML. È possibile compilare il file usando *Vsct.exe*, il compilatore VSCT, come si procederebbe per un *con estensione vsct* file.
 
    > [!NOTE]
-   >  È possibile migliorare la leggibilità del *vsct* file riformattando i commenti XML.
+   > È possibile migliorare la leggibilità del *vsct* file riformattando i commenti XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Per creare un file con estensione vsct da un file CTO
 
-1.  Ottenere copie dei *CTO* file e il corrispondente *ctsym* file.
+1. Ottenere copie dei *CTO* file e il corrispondente *ctsym* file.
 
-2.  Inserire i file nella stessa directory di *vsct.exe* compilatore.
+2. Inserire i file nella stessa directory di *vsct.exe* compilatore.
 
-3.  Al prompt dei comandi di Visual Studio, passare alla directory che contiene il *CTO* e *ctsym* file.
+3. Al prompt dei comandi di Visual Studio, passare alla directory che contiene il *CTO* e *ctsym* file.
 
-4.  Tipo
+4. Tipo
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Per aggiungere un file con estensione vsct per la compilazione del progetto
 
-1.  Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario prima scaricarlo.
+1. Aprire il file di progetto nell'editor. Se il progetto viene caricato, è necessario prima scaricarlo.
 
-2.  Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un `VSCTCompile` elemento, come illustrato nell'esempio seguente.
+2. Aggiungere un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) che contiene un `VSCTCompile` elemento, come illustrato nell'esempio seguente.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
      Il `ResourceName` elemento deve essere impostato sempre su `Menus.ctmenu`.
 
-3.  Se il progetto contiene un *resx* Aggiungi un' `EmbeddedResource` elemento contenente un `MergeWithCTO` elemento, come illustrato nell'esempio seguente:
+3. Se il progetto contiene un *resx* Aggiungi un' `EmbeddedResource` elemento contenente un `MergeWithCTO` elemento, come illustrato nell'esempio seguente:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
      Questo markup deve essere inseriti i `ItemGroup` elemento che contiene risorse incorporate.
 
-4.  Aprire il file del pacchetto, in genere denominato  *\<NomeProgetto\>Package.cs* oppure  *\<ProjectName\>Package.vb*, nell'editor.
+4. Aprire il file del pacchetto, in genere denominato  *\<NomeProgetto\>Package.cs* oppure  *\<ProjectName\>Package.vb*, nell'editor.
 
-5.  Aggiungere un `ProvideMenuResource` attributo alla classe del pacchetto, come illustrato nell'esempio seguente.
+5. Aggiungere un `ProvideMenuResource` attributo alla classe del pacchetto, come illustrato nell'esempio seguente.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

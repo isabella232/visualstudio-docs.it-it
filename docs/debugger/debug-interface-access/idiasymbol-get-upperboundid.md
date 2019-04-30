@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0f3f0936982d91617674b43c7eaffc078ff098f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7711073319a5381a205672ae8023699a725b8936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401136"
 ---
 # <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
 Recupera l'identificatore di simbolo del limite superiore di una dimensione di matrice FORTRAN.
@@ -38,9 +38,9 @@ HRESULT get_upperBoundId ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
 
 ## <a name="see-also"></a>Vedere anche

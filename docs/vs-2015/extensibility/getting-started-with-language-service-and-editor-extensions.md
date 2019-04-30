@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421133"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni dell'editor e dei servizi di linguaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60039214"
  Per iniziare a scrivere le estensioni dell'editor, usare i modelli di progetto di editor che vengono installati come parte di Visual Studio SDK. Visual Studio SDK è un insieme scaricabile di strumenti che rendono più semplice sviluppare estensioni di Visual Studio mediante pacchetti VSPackage o mediante Managed Extensibility Framework (MEF).  
   
 > [!NOTE]
->  Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+> Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
  È consigliabile conoscere i seguenti concetti e tecnologie prima di scrivere le proprie estensioni dell'editor.  
   
@@ -36,7 +36,7 @@ ms.locfileid: "60039214"
  Editor di Visual Studio Usa Managed Extensibility Framework (MEF) per gestire i suoi componenti e le estensioni. La libreria MEF consente inoltre agli sviluppatori più facilmente creare estensioni per un'applicazione host, ad esempio Visual Studio. In questo framework, si definisce un'estensione in base a un contratto MEF ed esportarlo come parte del componente MEF. L'applicazione host gestisce le parti di componente da trovare, la relativa registrazione e assicurandosi che vengono applicati al contesto corretto.  
   
 > [!NOTE]
->  Per altre informazioni su MEF nell'editor, vedere [Managed Extensibility Framework nell'Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Per altre informazioni su MEF nell'editor, vedere [Managed Extensibility Framework nell'Editor](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Punti di estensione di Editor di Visual Studio ed estensioni  
  Punti di estensione dell'editor sono parti componente MEF che è possibile personalizzare ed estendere. In alcuni casi si estende il punto di estensione che implementa un'interfaccia ed esportandolo con i metadati corretti. In altri casi sufficiente dichiarare un'estensione ed esportarlo come un determinato tipo.  
@@ -61,7 +61,7 @@ ms.locfileid: "60039214"
  Quando si installa un'estensione in un computer, includere i file binari e il manifesto in una sottocartella della cartella in cui è noto a Visual Studio.  
   
 > [!WARNING]
->  Non è necessario preoccuparsi dei dettagli dei manifesti e percorsi di distribuzione se si usa uno dei modelli di estendibilità editor inclusi in Visual Studio. I modelli contengono tutto il necessario per registrare e distribuire un'estensione.  
+> Non è necessario preoccuparsi dei dettagli dei manifesti e percorsi di distribuzione se si usa uno dei modelli di estendibilità editor inclusi in Visual Studio. I modelli contengono tutto il necessario per registrare e distribuire un'estensione.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Estensioni in esecuzione nell'istanza sperimentale  
  È possibile isolare la versione di lavoro di Visual Studio mentre si sta sviluppando un'estensione distribuendolo in cartella sperimentale seguente (in Windows Vista e Windows 7):  
@@ -84,9 +84,9 @@ ms.locfileid: "60039214"
   
  È anche possibile creare editor di componenti MEF da un'estensione del pacchetto di Visual Studio. Le procedure dettagliate seguenti per informazioni dettagliate, vedere:  
   
-- [Procedura dettagliata: Utilizzo di un comando della Shell con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Procedura dettagliata: uso di un comando della shell con un'estensione dell'editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Procedura dettagliata: Uso di un tasto di scelta rapida con un'estensione dell'Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Procedura dettagliata: uso di un tasto di scelta rapida con un'estensione dell'editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Punti di estensione dei servizi di linguaggio e dell'editor](../extensibility/language-service-and-editor-extension-points.md)

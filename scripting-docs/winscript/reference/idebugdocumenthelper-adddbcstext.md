@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d5de41ff83f3ffd5b208445830862138511ba2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446645"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 Aggiunge una stringa DBCS alla fine di questo documento.  
@@ -42,7 +42,7 @@ HRESULT AddDBCSText(
 ## <a name="return-value"></a>Valore restituito  
  Il metodo restituisce un tipo `HRESULT`. I valori possibili includono, ma non sono limitati a, quelli indicati nella tabella seguente.  
   
-|Valore|Descrizione|  
+|Value|Descrizione|  
 |-----------|-----------------|  
 |`S_OK`|Il metodo è riuscito.|  
 |`E_FAIL`|Il metodo è riuscito ad aggiungere i caratteri.|  
@@ -51,7 +51,7 @@ HRESULT AddDBCSText(
  Questo metodo genera `IDebugDocumentTextEvents` notifiche.  
   
 > [!NOTE]
->  Se questo metodo viene chiamato dopo `IDebugDocumentHelper::AddDeferredText` è stato chiamato, `E_FAIL` viene restituito.  
+> Se questo metodo viene chiamato dopo `IDebugDocumentHelper::AddDeferredText` è stato chiamato, `E_FAIL` viene restituito.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Interfaccia IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

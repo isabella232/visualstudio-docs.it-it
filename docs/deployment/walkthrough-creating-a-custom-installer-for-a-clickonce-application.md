@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405737"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: Creare un programma di installazione personalizzato per un'applicazione ClickOnce
 Tutte le applicazioni ClickOnce basato su un *.exe* file può essere installati e aggiornati da un programma di installazione personalizzato in modo invisibile. Un programma di installazione personalizzato può implementare un'esperienza utente migliorata durante l'installazione, tra cui finestre di dialogo personalizzate per le operazioni di manutenzione e sicurezza. Per eseguire operazioni di installazione, il programma di installazione personalizzato utilizza il <xref:System.Deployment.Application.InPlaceHostingManager> classe. Questa procedura dettagliata viene illustrato come creare un programma di installazione personalizzato per l'installazione invisibile all'utente un'applicazione ClickOnce.
@@ -53,7 +53,7 @@ Tutte le applicazioni ClickOnce basato su un *.exe* file può essere installati 
      Questi metodi chiamano <xref:System.Deployment.Application.InPlaceHostingManager> metodi per scaricare il manifesto di distribuzione, l'asserzione delle autorizzazioni appropriate, chiedere all'utente l'autorizzazione per installare e quindi scaricare e installare l'applicazione nella cache di ClickOnce. Un programma di installazione personalizzato è possibile specificare che un'applicazione ClickOnce è pre-attendibile o possibile posticipare la decisione di attendibilità di <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chiamata al metodo. Questo codice pre-attendibile l'applicazione.
 
     > [!NOTE]
-    >  Le autorizzazioni assegnate da pre-concessione dell'attendibilità non possono superare le autorizzazioni del codice di programma di installazione personalizzato.
+    > Le autorizzazioni assegnate da pre-concessione dell'attendibilità non possono superare le autorizzazioni del codice di programma di installazione personalizzato.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]

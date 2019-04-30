@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420192"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procedura: Personalizzare un pacchetto della soluzione SharePoint
   È possibile usare la finestra di progettazione del pacchetto per creare e personalizzare un pacchetto (*wsp*). Ad esempio, è possibile aggiungere elementi di progetto SharePoint e le funzionalità, specificare se il server Web viene reimpostato quando viene distribuita la soluzione e impostare il tipo di server di distribuzione.
@@ -47,7 +47,7 @@ ms.locfileid: "60074921"
 2. Pacchetto espandere, espandere package. package e quindi aprire il *Package.Template.xml* file.
 
     > [!NOTE]
-    >  Quando si apre il file manifesto XML per il modello di pacchetto, i file vengono convalidati automaticamente, ed è possibile ignorare gli avvisi visualizzati nella finestra Elenco errori.
+    > Quando si apre il file manifesto XML per il modello di pacchetto, i file vengono convalidati automaticamente, ed è possibile ignorare gli avvisi visualizzati nella finestra Elenco errori.
 
 ## <a name="change-the-manifest-template"></a>Modificare il modello di manifesto
  È possibile modificare il codice XML per il file manifesto nel pacchetto nell'Editor XML di Visual Studio o nel riquadro modello di manifesto. Tutte le modifiche al codice XML vengono unite nel file manifesto nel pacchetto per il pacchetto.
@@ -68,7 +68,7 @@ ms.locfileid: "60074921"
  È possibile disabilitare la finestra di progettazione pacchetti e creare il *manifest* file manualmente. La prima volta che si esegue questa procedura, le impostazioni correnti nella finestra di progettazione pacchetti vengono salvate al file XML del modello di pacchetto. Quindi, è possibile modificare o sovrascrivere il codice XML.
 
 > [!NOTE]
->  Se si aggiunge o rimuove elementi di progetto SharePoint e le funzionalità nel file XML, mentre la finestra di progettazione del pacchetto è disabilitato, non prevedono questi elementi di progetto e le funzionalità.
+> Se si aggiunge o rimuove elementi di progetto SharePoint e le funzionalità nel file XML, mentre la finestra di progettazione del pacchetto è disabilitato, non prevedono questi elementi di progetto e le funzionalità.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Per sovrascrivere il file manifesto, disabilitare la finestra di progettazione
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386701"
 ---
 # <a name="understanding-the-dsl-code"></a>Informazioni sul codice DSL
 
@@ -131,7 +131,7 @@ Premere **F5** e sperimentare se non si ha familiarità con questo modello di so
   Classe che rappresenta il modello di dominio. Deriva da <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  È diversa dalla classe radice del modello.
+> È diversa dalla classe radice del modello.
 
  Le chiusure di copie ed eliminazioni definiscono quali altri elementi devono essere inclusi quando un elemento viene copiato o eliminato. È possibile controllare questo comportamento impostando il **propaga copia** e **Propaga eliminazione** proprietà dei ruoli su ciascun lato di ogni relazione. Per determinare i valori in modo dinamico, è possibile scrivere codice per eseguire l'override dei metodi delle classi delle chiusure.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Per personalizzare questo file, modificare il file `.tt`.
 
 > [!WARNING]
->  Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e verificare che il **Includi in VSIX** è di proprietà `True`.
+> Se si modifica il file tt per poter includere risorse come icone o immagini, verificare che la risorsa venga inclusa nella build VSIX. In Esplora soluzioni selezionare il file e verificare che il **Includi in VSIX** è di proprietà `True`.
 
  Questo file controlla come il linguaggio DSL viene incluso nel pacchetto in un'estensione VSIX (Visual Studio Integration Extension). Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
 

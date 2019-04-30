@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423275"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 - Quando un'applicazione richiede autorizzazioni di attendibilità totale, è possibile che all'utente finale sia richiesto di concedere le autorizzazioni all'applicazione. Ciò significa che l'applicazione non fornisce effettivamente un'esperienza ClickOnce e, potenzialmente, la richiesta potrebbe confondere gli utenti meno esperti.  
   
   > [!NOTE]
-  >  Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Per limitare le autorizzazioni per un'applicazione ClickOnce, è possibile modificare le autorizzazioni per la sicurezza dell'accesso di codice per l'applicazione in modo da richiedere l'area più appropriata per le autorizzazioni necessarie all'applicazione. Nella maggior parte dei casi è possibile selezionare l'area da cui viene distribuita l'applicazione. Ad esempio, se l'applicazione è di tipo aziendale, è possibile usare l'area **Intranet locale** . Se l'applicazione è di tipo Internet, è possibile usare l'area **Internet** .  
   

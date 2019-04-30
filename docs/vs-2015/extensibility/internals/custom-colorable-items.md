@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409363"
 ---
 # <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58965688"
  Poiché l'IDE gestisce l'override dell'utente di elementi colorabili nella **Fonts and Colors** finestra di dialogo, è necessario fornire solo ogni elemento colorabile personalizzato con un nome. Questo nome viene visualizzato un messaggio nel **elementi visualizzati** elenco. Gli elementi colorabili vengono visualizzati in ordine alfabetico. Per raggruppare elementi colorabili personalizzati del servizio di linguaggio, è possibile iniziare ogni nome con il nome del linguaggio, ad esempio **NewLanguage - commento** e **NewLanguage - parola chiave**.  
   
 > [!CAUTION]
->  È necessario includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti. Se si modifica il nome di uno degli elementi colorabili durante lo sviluppo, è necessario reimpostare la cache che è stata creata la prima volta che gli elementi colorabili erano accessibili. È possibile reimpostare la cache sperimentale con lo strumento CreateExpInstance con cui viene installato con Visual Studio SDK, in genere nella directory  
+> È necessario includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti. Se si modifica il nome di uno degli elementi colorabili durante lo sviluppo, è necessario reimpostare la cache che è stata creata la prima volta che gli elementi colorabili erano accessibili. È possibile reimpostare la cache sperimentale con lo strumento CreateExpInstance con cui viene installato con Visual Studio SDK, in genere nella directory  
 >   
->  **C:\Programmi\Microsoft file (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Programmi\Microsoft file (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Per reimpostare la cache, chiamare `CreateExpInstance /Reset`. Per altre informazioni sulle CreateExpInstance, vedere [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
+> Per reimpostare la cache, chiamare `CreateExpInstance /Reset`. Per altre informazioni sulle CreateExpInstance, vedere [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
   
  Il primo elemento nell'elenco di elementi colorabili non viene mai fatto riferimento. Il primo elemento corrisponde a un indice colorabile dell'elemento pari a 0, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sempre fornisce i colori del testo predefinito e attributi per quell'elemento. Il modo più semplice di gestione di questo elemento privo di riferimento è di fornire un elemento colorabile segnaposto nell'elenco come primo elemento.  
   
@@ -71,4 +71,4 @@ ms.locfileid: "58965688"
  [Colorazione della sintassi negli editor personalizzati](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Colorazione della sintassi in un servizio di linguaggio Legacy](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementazione della colorazione della sintassi](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Procedura: Usare elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+ [Procedura: usare gli elementi colorabili incorporati](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

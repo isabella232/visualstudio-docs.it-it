@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422583"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Distribuzione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +148,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
 ```  
   
 > [!NOTE]
->  Questo attributo viene posizionato sulla classe del package, non sulla classe del processore di direttiva.  
+> Questo attributo viene posizionato sulla classe del package, non sulla classe del processore di direttiva.  
   
  Il file .pkgdef sarà generato quando si compila il progetto. Quando si installa il package VS, nel file .pkgdef verrà registrato il processore di direttiva.  
   
@@ -160,7 +160,7 @@ Per utilizzare un processore di direttiva personalizzato in [!INCLUDE[vsprvs](..
  Questo metodo per installare un processore di direttiva personalizzato è il meno preferito. Non fornisce un modo comodo per abilitare e disabilitare il processore di direttiva e non fornisce un metodo per distribuire il processore di direttiva ad altri utenti.  
   
 > [!CAUTION]
->  Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.  
+> Eventuali modifiche non corrette al Registro di sistema possono danneggiare gravemente il sistema. Prima di apportare modifiche al Registro di sistema, eseguire il backup dei dati importanti sul computer.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Per registrare un processore di direttiva impostando una chiave del Registro di sistema  
   

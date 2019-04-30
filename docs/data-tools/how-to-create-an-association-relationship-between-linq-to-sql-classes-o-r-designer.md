@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d7bf1be05ebabcaac319cce591cf82cd2ab5f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b6f0b1f3afec1231778a54c82422d6761995eb1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402787"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione tra classi LINQ to SQL (O/R Designer)
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.
@@ -21,7 +21,7 @@ Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../data-tools/inc
 Quando si usa la finestra di dialogo **Editor di associazione** per creare un'associazione, è necessario selezionare una classe padre e una classe figlio. La classe padre è la classe di entità che contiene la chiave primaria, mentre la classe figlio è la classe di entità che contiene la chiave esterna. Se, ad esempio, le classi di entità sono state create con mapping al `Northwind Customers` e `Orders` tabelle, il `Customer` classe sarebbe la classe padre e il `Order` classe sarebbe la classe figlio.
 
 > [!NOTE]
->  Quando si trascinano tabelle da **Esplora Server** oppure **Esplora Database** nel **Object Relational Designer** (**O/R Designer**), le associazioni vengono create automaticamente in base alle relazioni di chiave esterna esistente nel database.
+> Quando si trascinano tabelle da **Esplora Server** oppure **Esplora Database** nel **Object Relational Designer** (**O/R Designer**), le associazioni vengono create automaticamente in base alle relazioni di chiave esterna esistente nel database.
 
 ## <a name="association-properties"></a>Proprietà dell'associazione
 Quando, dopo aver creato un'associazione, la si seleziona in **Object Relational Designer**, nella finestra **Proprietà** è possibile configurare alcune proprietà (l'associazione rappresenta la linea tra le classi correlate). Nella tabella seguente vengono descritte le proprietà di un'associazione.

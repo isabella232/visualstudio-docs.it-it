@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ef550f18a0d26e6e0cea9894382ff8fdecb4a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 33ee57dc2576a9f8f40f1baa7c95f9e3bede2f7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406587"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sicurezza dall'accesso di codice per applicazioni ClickOnce
 Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vincoli di sicurezza per l'accesso al codice. Per poter scrivere correttamente le applicazioni ClickOnce è quindi importante comprendere le implicazioni di questo tipo di sicurezza.
@@ -43,7 +43,7 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 - Quando un'applicazione richiede autorizzazioni di attendibilità totale, è possibile che all'utente finale sia richiesto di concedere le autorizzazioni all'applicazione. Ciò significa che l'applicazione non fornisce effettivamente un'esperienza ClickOnce e, potenzialmente, la richiesta potrebbe confondere gli utenti meno esperti.
 
   > [!NOTE]
-  >  Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).
+  > Quando si installa un'applicazione da un supporto rimovibile come un CD-ROM, non vengono inviate richieste all'utente. Inoltre, un amministratore di rete può configurare dei criteri di rete in modo che agli utenti non vengano inviate richieste quando installano un'applicazione da un'origine attendibile. Per altre informazioni, vedere [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md).
 
   Per limitare le autorizzazioni per un'applicazione ClickOnce, è possibile modificare le autorizzazioni per la sicurezza dell'accesso di codice per l'applicazione in modo da richiedere l'area più appropriata per le autorizzazioni necessarie all'applicazione. Nella maggior parte dei casi è possibile selezionare l'area da cui viene distribuita l'applicazione. Ad esempio, se l'applicazione è di tipo aziendale, è possibile usare l'area **Intranet locale** . Se l'applicazione è di tipo Internet, è possibile usare l'area **Internet** .
 
@@ -56,7 +56,7 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 
  Come punto di partenza per la configurazione delle autorizzazioni, è possibile selezionare un'area di sicurezza dall'elenco **Area** nella pagina **Sicurezza** . Se l'applicazione potrebbe essere potenzialmente distribuita da più aree, selezionare l'area con il minor numero di autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md).
 
- Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per un'area personalizzata, vedere [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
+ Le proprietà che è possibile impostare variano in base al set di autorizzazioni. Non tutti i set di autorizzazioni dispongono di proprietà configurabili. Per altre informazioni sull'elenco completo di autorizzazioni che l'applicazione può richiedere, vedere <xref:System.Security.Permissions>. Per altre informazioni su come impostare le autorizzazioni per una zona personalizzata, vedere [come: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).
 
 ## <a name="debug-an-application-that-has-restricted-permissions"></a>Eseguire il debug di un'applicazione con autorizzazioni limitate
  È probabile che uno sviluppatore usi le autorizzazioni di attendibilità totale nel computer di sviluppo. Quindi, quando esegue il debug dell'applicazione, non visualizzerà le stesse eccezioni di sicurezza visualizzate dagli utenti quando eseguono la stessa operazione con autorizzazioni limitate.
@@ -94,7 +94,7 @@ Le applicazioni ClickOnce sono basate sul Framework .NET e sono soggette a vinco
 - [Proteggere le applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Procedura: Abilitare le impostazioni di sicurezza ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
 - [Procedura: Impostare un'area di sicurezza per un'applicazione ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Procedura: Impostare le autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Procedura: Impostare autorizzazioni personalizzate per un'applicazione ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Cenni preliminari sulla distribuzione di applicazioni attendibili](../deployment/trusted-application-deployment-overview.md)
 - [Pagina Sicurezza, Creazione progetti](../ide/reference/security-page-project-designer.md)

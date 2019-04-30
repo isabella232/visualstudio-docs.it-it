@@ -12,16 +12,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da2f32cde96d7be482d0283510bcc3f0c127db9f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d486234bd220fd1a7b2a93ca88fd89e5119b2dbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411298"
 ---
 # <a name="expression-evaluator-architecture"></a>Architettura dell'analizzatore di espressioni
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni CLR, vedere [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [esempio analizzatore di espressioni gestite](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  L'integrazione di un linguaggio proprietario in Visual Studio debug pacchetto significa che è necessario configurare le interfacce dell'analizzatore di espressioni (EE) espressione necessaria e chiamare il provider in fase di esecuzione simbolo del linguaggio comune (SP) e le interfacce dello strumento di associazione. Gli oggetti SP e dello strumento di associazione, oltre all'indirizzo di esecuzione corrente, sono il contesto in cui le espressioni vengono valutate. Le informazioni che queste interfacce producono e utilizzano rappresentano i concetti principali nell'architettura di un EE.
 

@@ -12,22 +12,22 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408567"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Struttura in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La struttura rende possibile comprimere un programma complesso panoramica in o in una struttura. Ad esempio, in C# tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Inoltre, classi e strutture possono essere compressi per mostrare solo i nomi delle classi e strutture. All'interno di un singolo metodo, è possibile comprimere una logica complessa in modo da mostrare il flusso generale che mostra solo la prima riga di istruzioni, ad esempio `foreach`, `if`, e `while`.  
+La struttura rende possibile comprimere un programma complesso panoramica in o in una struttura. Ad esempio, in c# tutti i metodi possono essere compressi in una singola riga, che mostra solo la firma del metodo. Inoltre, classi e strutture possono essere compressi per mostrare solo i nomi delle classi e strutture. All'interno di un singolo metodo, è possibile comprimere una logica complessa in modo da mostrare il flusso generale che mostra solo la prima riga di istruzioni, ad esempio `foreach`, `if`, e `while`.  
   
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: Struttura](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
 ## <a name="enabling-support-for-outlining"></a>Abilitazione del supporto per la struttura  
  Il `AutoOutlining` voce del Registro di sistema è impostata su 1 per abilitare la struttura automatica. La struttura automatica consente di impostare un'analisi dell'intera origine quando un file viene caricato o modificato allo scopo di identificare le aree nascoste e Mostra le icone della struttura. La struttura può anche essere controllata anche manualmente dall'utente.  
@@ -35,7 +35,7 @@ La struttura rende possibile comprimere un programma complesso panoramica in o i
  Il valore del `AutoOutlining` voce del Registro di sistema può essere ottenuto tramite il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> proprietà di <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Il `AutoOutlining` voce del Registro di sistema può essere inizializzati con un parametro denominato per il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo (vedere [registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md) per informazioni dettagliate).  
   
 ## <a name="the-hidden-region"></a>L'area nascosta  
- Per fornire la struttura, il servizio di linguaggio deve supportare le aree nascoste. Si tratta di intervalli di testo che possono essere espansi o compressi. Le aree nascoste possono essere delimitate dai simboli standard del linguaggio, ad esempio le parentesi graffe, o dai simboli personalizzati. Ad esempio, C# ha un `#region` / `#endregion` coppia che delimita un'area nascosta.  
+ Per fornire la struttura, il servizio di linguaggio deve supportare le aree nascoste. Si tratta di intervalli di testo che possono essere espansi o compressi. Le aree nascoste possono essere delimitate dai simboli standard del linguaggio, ad esempio le parentesi graffe, o dai simboli personalizzati. Ad esempio, c# ha un `#region` / `#endregion` coppia che delimita un'area nascosta.  
   
  Le aree nascoste sono gestite da un responsabile di area nascosta, che viene esposto come il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interfaccia.  
   
@@ -48,7 +48,7 @@ La struttura rende possibile comprimere un programma complesso panoramica in o i
 ### <a name="example"></a>Esempio  
  Ecco un esempio semplificato di creazione di aree nascoste per tutte le coppie di parentesi graffe. Si presuppone che il linguaggio fornisce corrispondenza parentesi graffe e che le parentesi graffe devono corrispondere almeno includono le parentesi graffe ({e}). Questo approccio è solo a scopo illustrativo. Un'implementazione completa avrebbe una gestione completa dei case in <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. In questo esempio viene inoltre illustrato come impostare il <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferenza `true` temporaneamente. In alternativa è possibile specificare il `AutoOutlining` parametro denominato nella `ProvideLanguageServiceAttribute` attributo nel pacchetto di linguaggio.  
   
- Questo esempio si presuppone le regole di C# per i commenti, stringhe e valori letterali.  
+ Questo esempio si presuppone le regole di c# per i commenti, stringhe e valori letterali.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

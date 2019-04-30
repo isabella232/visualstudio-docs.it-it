@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin (interfaccia)
+title: interfaccia IManagedAddin
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420987"
 ---
-# <a name="imanagedaddin-interface"></a>IManagedAddin (interfaccia)
+# <a name="imanagedaddin-interface"></a>interfaccia IManagedAddin
   Implementare l'interfaccia IManagedAddin per creare un componente che carichi gestiti componenti aggiuntivi VSTO. Questa interfaccia è stata aggiunta in Microsoft Office System 2007.
 
 ## <a name="syntax"></a>Sintassi
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Metodi
  Nella tabella seguente elenca i metodi definiti dall'interfaccia IManagedAddin.
 
-|nome|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Chiamato quando un'applicazione di Microsoft Office carica un componente aggiuntivo VSTO gestito.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Chiamato appena prima che un'applicazione di Microsoft Office scarichi un componente aggiuntivo VSTO gestito.|
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Applicazioni di Microsoft Office usano questo CLSID per creare l'oggetto COM che implementa IManagedAddin.
 
 > [!CAUTION]
->  Questo CLSID viene inoltre utilizzato da *VSTOLoader. dll* nel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Pertanto, se si usa IManagedAddin per la creazione del caricatore del componente aggiuntivo VSTO e il componente runtime, è possibile distribuire il componente ai computer che eseguono componenti aggiuntivi VSTO che si basano sul [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Questo CLSID viene inoltre utilizzato da *VSTOLoader. dll* nel [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Pertanto, se si usa IManagedAddin per la creazione del caricatore del componente aggiuntivo VSTO e il componente runtime, è possibile distribuire il componente ai computer che eseguono componenti aggiuntivi VSTO che si basano sul [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Vedere anche
 - [Riferimenti alle API non gestite &#40;sviluppo per Office in Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386027"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modifica della Shell isolata tramite il. File pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663966"
 Il file con estensione pkgdef supporta le impostazioni che è possibile usare per personalizzare un'applicazione shell isolata. Specifica i valori che vengono creati quando un'applicazione è installata in un computer e che viene fatto riferimento dalla shell di Visual Studio quando avvia l'applicazione. Le impostazioni sono organizzate nel file di base alle chiavi del Registro di sistema applicabili.  
 
 > [!WARNING]
->  Si noti che quando si avvia Visual Studio non vengono analizzati i file con estensione pkgdef che non sono dichiarati i file con estensione vsixmanifest del pacchetto VSPackage.  
+> Si noti che quando si avvia Visual Studio non vengono analizzati i file con estensione pkgdef che non sono dichiarati i file con estensione vsixmanifest del pacchetto VSPackage.  
 
  Il file con estensione pkgdef contiene sezioni che sono tutti identificate da una chiave, ovvero `[$RootKey$]` oppure `[$RootKey$\` *sottochiave*`]`, dove $ $RootKey è la chiave radice per l'applicazione.  
 
@@ -53,7 +53,7 @@ Il file con estensione pkgdef supporta le impostazioni che è possibile usare pe
  Le sezioni seguenti descrivono i valori del Registro di sistema che influiscono sul comportamento della shell di Visual Studio in modalità isolata. È anche possibile definire i valori del Registro di sistema aggiuntive per l'applicazione in questo file.  
 
 > [!NOTE]
->  Se un'impostazione non viene specificata nel file con estensione pkgdef, viene immessa alcuna voce corrispondente nel Registro di sistema.  
+> Se un'impostazione non viene specificata nel file con estensione pkgdef, viene immessa alcuna voce corrispondente nel Registro di sistema.  
 
 ## <a name="settings"></a>Impostazioni  
  Nella tabella seguente vengono descritti i valori definiti in [$RootKey$].  

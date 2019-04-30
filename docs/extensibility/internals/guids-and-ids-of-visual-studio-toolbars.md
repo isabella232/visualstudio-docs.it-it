@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 552f14885a95bf5c8461d6ca9db7ef2dbe204c73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4a9dc406665dc754f0c57c401f672cd4799183ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418451"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Barre degli strumenti GUID e ID di Visual Studio
 In questo argomento elenca i valori GUID e ID delle barre degli strumenti che sono inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio e dei gruppi che contengono. Questi valori sono definiti nella *vsct* i file che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Molte delle barre degli strumenti disponibili per Visual Studio non sono definite da Visual Studio e i rispettivi GUID e valori di ID non sono pubblici. Questo argomento vengono elencate solo le barre degli strumenti che sono definiti in Visual Studio SDK *vsct* file.
+> Molte delle barre degli strumenti disponibili per Visual Studio non sono definite da Visual Studio e i rispettivi GUID e valori di ID non sono pubblici. Questo argomento vengono elencate solo le barre degli strumenti che sono definiti in Visual Studio SDK *vsct* file.
 
  Per altre informazioni su come lavorare con gli oggetti definiti in IDE *vsct* i file, vedere [estendono i menu e comandi](../../extensibility/extending-menus-and-commands.md).
 
@@ -61,7 +61,7 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
 
 ### <a name="standard-toolbar-groups"></a>Gruppi della barra degli strumenti standard
 
-|nome|Id|
+|Nome|Id|
 |----------|--------|
 |Salva/Apri|IDG_VS_TOOLSB_SAVEOPEN|
 |Taglia/Copia|IDG_VS_TOOLSB_CUTCOPY|
@@ -75,14 +75,14 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
 
 ### <a name="build-toolbar-groups"></a>I gruppi della barra degli strumenti di compilazione
 
-|nome|Id|
+|Nome|Id|
 |----------|--------|
 |Barra di compilazione|IDG_VS_BUILDBAR|
 |Annulla|IDG_VS_BUILD_CANCEL|
 
 ### <a name="text-editor-toolbar-groups"></a>Gruppi della barra degli strumenti editor di testo
 
-|nome|Id|
+|Nome|Id|
 |----------|--------|
 |Completamento|IDM_VS_TOOL_TEXTEDITOR|
 |Indent|IDG_VS_EDITTOOLBAR_INDENT|
@@ -91,7 +91,7 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
 
 ### <a name="debug-toolbar-groups"></a>I gruppi della barra degli strumenti di debug
 
-|nome|Id|
+|Nome|Id|
 |----------|--------|
 |Esecuzione|IDM_DEBUG_TOOLBAR|
 |Esecuzione di istruzioni|IDG_DEBUG_TOOLBAR_STEPPING|
@@ -100,7 +100,7 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
 
 ### <a name="debug-location-toolbar-groups"></a>I gruppi della barra degli strumenti posizione di debug
 
-|nome|Id|
+|Nome|Id|
 |----------|--------|
 |Posizione di debug|IDG_DEBUG_CONTEXT_TOOLBAR|
 
@@ -108,7 +108,7 @@ In questo argomento elenca i valori GUID e ID delle barre degli strumenti che so
  Le barre degli strumenti possono essere visualizzati direttamente nell'IDE o nelle finestre degli strumenti, ad esempio **Esplora soluzioni**. Perché non sono definite finestre degli strumenti nel *vsct* file, barre degli strumenti finestra degli strumenti non è definito gli elementi padre. Al contrario, vengono inseriti nel codice. La tabella seguente illustra le barre degli strumenti visualizzati nelle finestre degli strumenti nell'IDE e dei gruppi di comandi che contengono.
 
 > [!NOTE]
->  Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo dove diversamente specificato usando la sintassi di coppia GUID: ID. Per una barra degli strumenti viene specificato un GUID, si applica anche ai gruppi che derivano da tale barra degli strumenti.
+> Barre degli strumenti e i gruppi di utilizzano il GUID `guidSHLMainMenu`, salvo dove diversamente specificato usando la sintassi di coppia GUID: ID. Per una barra degli strumenti viene specificato un GUID, si applica anche ai gruppi che derivano da tale barra degli strumenti.
 
 |Finestra degli strumenti|ToolBar|Gruppi|
 |-----------------|-------------|------------|

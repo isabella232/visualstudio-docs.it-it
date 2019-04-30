@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421011"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedura: Aggiornare un'origine dati con dati provenienti da un controllo host
   È possibile associare un controllo host a un'origine dati e aggiornare l'origine dati con le modifiche apportate ai dati nel controllo. Questo processo prevede due passaggi principali:
@@ -61,7 +61,7 @@ ms.locfileid: "60097492"
    - Per aggiornare l'origine dati quando cambia il valore della proprietà del controllo associato a dati, impostare questa proprietà su DataSourceUpdateMode.
 
      > [!NOTE]
-     >  L'opzione DataSourceUpdateMode non si applica ai controlli host di Word perché Word non le notifiche non offerta al documento o modifica del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.
+     > L'opzione DataSourceUpdateMode non si applica ai controlli host di Word perché Word non le notifiche non offerta al documento o modifica del controllo. ma può essere usata per i controlli Windows Form nei documenti di Word.
 
      L'esempio seguente configura un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> in modo che l'origine dati venga aggiornata automaticamente quando si modifica il valore del controllo. Questo esempio presuppone che sia presente un controllo <xref:Microsoft.Office.Tools.Excel.NamedRange> denominato `namedRange1` la cui proprietà <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> è associata a un campo in un'origine dati.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097492"
     - Per aggiornare l'origine dati quando si modifica il valore della proprietà del controllo associata ai dati, selezionare **OnPropertyChanged**.
 
         > [!NOTE]
-        >  L'opzione **OnPropertyChanged** non si applica ai controlli host di Word perché Word non fornisce notifiche relative alle modifiche al documento o al controllo, ma può essere usata per i controlli Windows Form nei documenti di Word.
+        > L'opzione **OnPropertyChanged** non si applica ai controlli host di Word perché Word non fornisce notifiche relative alle modifiche al documento o al controllo, ma può essere usata per i controlli Windows Form nei documenti di Word.
 
 6. Chiudere la finestra di dialogo **Formattazione e associazione avanzata** .
 

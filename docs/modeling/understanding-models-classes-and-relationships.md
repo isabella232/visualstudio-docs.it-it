@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386975"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Informazioni su modelli, classi e relazioni
 Un linguaggio specifico di dominio (DSL) è definito dal relativo file di definizione DSL, insieme a qualsiasi codice programma personalizzato che è possibile scrivere. La maggior parte del codice del programma nella soluzione DSL viene generato da questo file.
@@ -93,7 +93,7 @@ Un linguaggio specifico di dominio (DSL) è definito dal relativo file di defini
  Quando viene salvato un modello di file in formato XML, gli elementi incorporati sono annidati all'interno di elementi padre, a meno che non è stata personalizzata la serializzazione.
 
 > [!NOTE]
->  L'incorporamento è diverso dall'ereditarietà. Gli elementi figlio in una relazione di incorporamento non ereditano le proprietà dell'elemento padre. Incorporamento è un tipo di collegamento tra elementi del modello. Ereditarietà è una relazione tra classi e di non creare collegamenti tra elementi del modello.
+> L'incorporamento è diverso dall'ereditarietà. Gli elementi figlio in una relazione di incorporamento non ereditano le proprietà dell'elemento padre. Incorporamento è un tipo di collegamento tra elementi del modello. Ereditarietà è una relazione tra classi e di non creare collegamenti tra elementi del modello.
 
 ### <a name="embedding-rules"></a>Regole di incorporamento
  Ogni elemento in un modello di istanza deve essere la destinazione di esattamente un collegamento di incorporamento, fatta eccezione per la radice del modello.

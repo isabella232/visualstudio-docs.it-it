@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423266"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows ad aggiornamento automatico che possono essere installate ed eseguite con l'interazione utente minima. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce supporto completo per la pubblicazione e aggiornamento delle applicazioni distribuite con la tecnologia ClickOnce, se è stata sviluppata i progetti con Visual Basic e Visual C#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows ad aggiornamento automatico che possono essere installate ed eseguite con l'interazione utente minima. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce supporto completo per la pubblicazione e aggiornamento delle applicazioni distribuite con la tecnologia ClickOnce, se è stata sviluppata i progetti con Visual Basic e Visual c#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione risolve tre problemi nella distribuzione:  
   
@@ -78,13 +78,13 @@ ms.locfileid: "58954524"
  L'applicazione può essere aggiunta a dell'utente **avviare** menu e il **Aggiungi / Rimuovi programmi** gruppo il **Pannello di controllo**. A differenza di altre tecnologie di distribuzione, viene aggiunto nulla per il **Program Files** cartella o il Registro di sistema e diritti amministrativi non sono necessari per l'installazione  
   
 > [!NOTE]
->  È anche possibile impedire l'applicazione venga aggiunto al **avviare** dal menu e **Aggiungi / Rimuovi programmi** gruppo, in effetti esattamente come un'applicazione Web. Per altre informazioni, vedere [Scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+> È anche possibile impedire l'applicazione venga aggiunto al **avviare** dal menu e **Aggiungi / Rimuovi programmi** gruppo, in effetti esattamente come un'applicazione Web. Per altre informazioni, vedere [Scelta di una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
 ### <a name="updating-clickonce-applications"></a>Aggiornamento delle applicazioni ClickOnce  
  Quando gli sviluppatori di applicazioni creano una versione aggiornata dell'applicazione, che genera un nuovo manifesto dell'applicazione e copiare i file in un percorso di distribuzione, ovvero in genere una cartella di pari livello nella cartella di distribuzione dell'applicazione originale. L'amministratore aggiorna il manifesto di distribuzione inserendo un riferimento alla posizione della nuova versione dell'applicazione.  
   
 > [!NOTE]
->  Il **pubblicazione guidata** in Visual Studio può essere utilizzato per eseguire questi passaggi.  
+> Il **pubblicazione guidata** in Visual Studio può essere utilizzato per eseguire questi passaggi.  
   
  Oltre alla posizione di distribuzione, il manifesto di distribuzione contiene anche una posizione di aggiornamento (una pagina Web o un file condiviso in rete) in cui l'applicazione verifica la disponibilità di versioni aggiornate. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Pubblicare** proprietà vengono usate per specificare quando e con quale frequenza controllare la disponibilità di aggiornamenti. Comportamento di aggiornamento può essere specificato nel manifesto di distribuzione o può essere presentata come scelte dell'utente nell'interfaccia utente dell'applicazione per mezzo del [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API. Inoltre le proprietà di **pubblicazione** possono essere impiegate per rendere obbligatori o per annullare gli aggiornamenti a vantaggio di una versione precedente. Per altre informazioni, vedere [scelta di una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   
@@ -97,8 +97,8 @@ ms.locfileid: "58954524"
 |Strumento|Descrizione|  
 |----------|-----------------|  
 |[Pagina Sicurezza, Creazione progetti](../ide/reference/security-page-project-designer.md)|Firma i manifesti dell'applicazione e distribuzione.|  
-|[Pagina Pubblica, Creazione progetti](../ide/reference/publish-page-project-designer.md)|Genera e modificare i manifesti dell'applicazione e di distribuzione per le applicazioni Visual Basic e Visual C#.|  
-|[Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Genera i manifesti dell'applicazione e distribuzione per le applicazioni Visual Basic, Visual C# e Visual C++.<br /><br /> Firma e firma nuovamente i manifesti dell'applicazione e distribuzione.<br /><br /> Può essere eseguito dal prompt dei comandi e script di batch.|  
+|[Pagina Pubblica, Creazione progetti](../ide/reference/publish-page-project-designer.md)|Genera e modificare i manifesti dell'applicazione e di distribuzione per le applicazioni Visual Basic e Visual c#.|  
+|[Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Genera i manifesti dell'applicazione e distribuzione per le applicazioni Visual Basic, Visual c# e Visual C++.<br /><br /> Firma e firma nuovamente i manifesti dell'applicazione e distribuzione.<br /><br /> Può essere eseguito dal prompt dei comandi e script di batch.|  
 |[MageUI.exe (Strumento per la generazione e la modifica di manifesti, client grafico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Genera e modificare i manifesti dell'applicazione e della distribuzione.<br /><br /> Firma e firma nuovamente i manifesti dell'applicazione e distribuzione.|  
 |[Attività GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)|Genera il manifesto dell'applicazione.<br /><br /> Può essere eseguito da MSBuild. Per altre informazioni, vedere [Riferimenti a MSBuild](../msbuild/msbuild-reference.md).|  
 |[Attività GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Genera il manifesto di distribuzione.<br /><br /> Può essere eseguito da MSBuild. Per altre informazioni, vedere [Riferimenti a MSBuild](../msbuild/msbuild-reference.md).|  

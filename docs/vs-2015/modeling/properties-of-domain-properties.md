@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412136"
 ---
 # <a name="properties-of-domain-properties"></a>Proprietà delle proprietà di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58955504"
 Oggetto *proprietà del dominio* è una funzionalità di un elemento del modello che può contenere un valore. Ad esempio, la classe di dominio `Person` potrebbe includere le proprietà `Name` e `BirthDate`. Nella definizione DSL, le proprietà di dominio sono elencate nella casella della classe di dominio sul diagramma e sotto la classe di dominio in DSL Explorer. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Il termine"proprietà" ha due utilizzi. Oggetto *proprietà del dominio* è una funzionalità che si definisce una classe di dominio. Al contrario, dispongono di molti elementi di un linguaggio DSL *le proprietà*, in cui sono elencati il **proprietà** finestra nella definizione DSL. Ad esempio, ogni proprietà di dominio dispone di un set di proprietà descritte in questo argomento.  
+> Il termine"proprietà" ha due utilizzi. Oggetto *proprietà del dominio* è una funzionalità che si definisce una classe di dominio. Al contrario, dispongono di molti elementi di un linguaggio DSL *le proprietà*, in cui sono elencati il **proprietà** finestra nella definizione DSL. Ad esempio, ogni proprietà di dominio dispone di un set di proprietà descritte in questo argomento.  
   
  In fase di esecuzione, quando un utente crea un'istanza della classe di dominio, i valori delle proprietà di dominio sono visibili nella finestra Proprietà e possono essere visualizzati sulle forme.  
   

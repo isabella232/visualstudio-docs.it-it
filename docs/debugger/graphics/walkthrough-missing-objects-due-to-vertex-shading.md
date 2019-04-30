@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388609"
 ---
-# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: oggetti mancanti a causa dello sfondo Vertex
+# <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procedura dettagliata: Oggetti mancanti a causa dello sfondo Vertex
 Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica della grafica di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] per esaminare un problema dovuto a un oggetto mancante a causa di un errore che si verifica durante la fase Vertex shader.
 
  In questa procedura dettagliata vengono illustrate le attività seguenti:
 
--   Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
+- Uso dell' **Elenco eventi di grafica** per individuare le possibili origini del problema.
 
--   Uso della finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .
+- Uso della finestra **Fasi pipeline grafica** per controllare l'effetto delle chiamate dell'API Direct3D `DrawIndexed` .
 
--   Uso del **debugger HLSL** per esaminare il vertex shader.
+- Uso del **debugger HLSL** per esaminare il vertex shader.
 
--   Uso di **Stack di chiamate eventi di grafica** per individuare l'origine di una costante HLSL non corretta.
+- Uso di **Stack di chiamate eventi di grafica** per individuare l'origine di una costante HLSL non corretta.
 
 ## <a name="scenario"></a>Scenario
  Una delle cause comuni di un oggetto mancante in un'app 3D si verifica quando il vertex shader trasforma i vertici dell'oggetto in modo non corretto o imprevisto. Ad esempio, l'oggetto potrebbe essere ridimensionato con dimensioni molto piccole o trasformato in modo da essere visualizzato dietro la camera, anziché di fronte.
@@ -61,7 +61,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
     Nella finestra **Fasi pipeline grafica** la fase **Assembler input** mostra la geometria dell'oggetto prima che venga trasformata, mentre la fase **Vertex shader** mostra lo stesso oggetto una volta trasformato. In questo scenario, si avrà la certezza di aver trovato l'oggetto mancante quando l'oggetto viene visualizzato nella fase **Assembler input** ma non nella fase **Vertex shader** .
 
    > [!NOTE]
-   >  Se altre fasi della geometria, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, potrebbero essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.
+   > Se altre fasi della geometria, ad esempio la fase Hull shader, Domain shader o Geometry shader, elaborano l'oggetto, potrebbero essere la causa del problema. In genere, il problema è correlato alla prima fase il cui risultato non viene visualizzato o viene visualizzato in modo imprevisto.
 
 4. Fermarsi quando si raggiunge la chiamata di disegno che corrisponde all'oggetto mancante. In questo scenario la finestra **Fasi pipeline grafica** indica che la geometria è stata inviata alla GPU (come indicato dalla presenza dell'anteprima Assemblaggio input), ma non è visualizzata nella destinazione di rendering perché qualcosa non ha funzionato durante la fase Vertex shader (come indicato dalla presenza dell'anteprima Vertex shader).
 
@@ -104,7 +104,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di Diagnostica de
     ![Il codice che imposta il buffer dell'oggetto costante](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Se si sta eseguendo contemporaneamente il debug dell'app, è possibile impostare un punto di interruzione in questa posizione e tale punto verrà raggiunto durante il rendering del frame successivo. È quindi possibile esaminare i membri di `m_marbleConstantBufferData` per confermare che il valore del membro `projection` viene impostato su tutti zeri quando viene riempito il buffer costante.
+   > Se si sta eseguendo contemporaneamente il debug dell'app, è possibile impostare un punto di interruzione in questa posizione e tale punto verrà raggiunto durante il rendering del frame successivo. È quindi possibile esaminare i membri di `m_marbleConstantBufferData` per confermare che il valore del membro `projection` viene impostato su tutti zeri quando viene riempito il buffer costante.
 
    Dopo aver individuato la posizione in cui viene riempito il buffer costante e scoperto che i relativi valori provengono dalla variabile `m_marbleConstantBufferData`, il passaggio successivo consiste nel trovare la posizione in cui il membro `m_marbleConstantBufferData.projection` viene impostato su tutti zeri. È possibile usare **Trova tutti i riferimenti** per individuare rapidamente il codice che cambia il valore di `m_marbleConstantBufferData.projection`.
 

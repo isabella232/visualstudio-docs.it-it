@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384012"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procedura: Usare diagnostica della grafica con un dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La diagnostica della grafica supporta il debug remoto di app Direct3D su disposi
 2. Installare il [strumenti di debug remoto](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) nel dispositivo basato su ARM.  
   
 > [!IMPORTANT]
->  Per dispositivi Windows Phone 8.1, potrebbe essere necessario registrare il proprio telefono per lo sviluppo. Per tale operazione è necessario essere uno sviluppatore registrato. Per altre informazioni, vedere [come distribuire ed eseguire un'app per Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Per dispositivi Windows Phone 8.1, potrebbe essere necessario registrare il proprio telefono per lo sviluppo. Per tale operazione è necessario essere uno sviluppatore registrato. Per altre informazioni, vedere [come distribuire ed eseguire un'app per Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Dopo aver abilitato il debug remoto nel dispositivo, renderlo la destinazione del debug e avviare la diagnostica grafica.  
   

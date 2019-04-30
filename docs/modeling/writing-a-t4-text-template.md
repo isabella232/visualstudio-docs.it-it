@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386074"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 Un modello di testo contiene il testo che verrà generato dal modello stesso. Ad esempio, un modello che crea una pagina web conterrà "\<html >..." e tutte le altre parti standard di una pagina HTML. Inserito nel modello vengono *blocchi di controllo*, quali sono i frammenti di codice del programma. forniscono i valori variabili e consentono ad alcune parti del testo di essere ripetute e usate in modo condizionale.
@@ -94,7 +94,7 @@ Hello!
  Un blocco di testo può essere inserito ovunque sia possibile usare nel codice un'istruzione `Write();`.
 
 > [!NOTE]
->  Quando si incorpora un blocco di testo all'interno di un'istruzione composta, ad esempio un ciclo o condizionali, utilizzare sempre le parentesi graffe {...} Per includere il blocco di testo.
+> Quando si incorpora un blocco di testo all'interno di un'istruzione composta, ad esempio un ciclo o condizionali, utilizzare sempre le parentesi graffe {...} Per includere il blocco di testo.
 
 ### <a name="expression-control-blocks"></a>Blocchi di controllo dell'espressione
  Un blocco di controllo dell'espressione valuta un'espressione e la converte in una stringa, che verrà quindi inserita nel file di output.

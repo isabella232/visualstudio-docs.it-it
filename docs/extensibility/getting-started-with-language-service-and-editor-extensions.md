@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415571"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni di editor e servizio di linguaggio
 È possibile usare le estensioni dell'editor per aggiungere funzionalità del servizio linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e lampadine per il proprio linguaggio di programmazione o a qualsiasi tipo di contenuto. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio colore, i margini, le aree di controllo e altri elementi visivi come testo. È anche possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni testo in cui viene visualizzato il contenuto.
@@ -23,7 +23,7 @@ ms.locfileid: "60049022"
  Per iniziare a scrivere le estensioni dell'editor, usare i modelli di progetto di editor che vengono installati come parte di Visual Studio SDK. Visual Studio SDK è un insieme scaricabile di strumenti che rendono più semplice sviluppare estensioni di Visual Studio mediante pacchetti VSPackage o mediante Managed Extensibility Framework (MEF).
 
 > [!NOTE]
->  Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Per altre informazioni su Visual Studio SDK, vedere [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  È consigliabile conoscere i seguenti concetti e tecnologie prima di scrivere le proprie estensioni dell'editor.
 
@@ -34,7 +34,7 @@ ms.locfileid: "60049022"
  Editor di Visual Studio Usa Managed Extensibility Framework (MEF) per gestire i suoi componenti e le estensioni. La libreria MEF consente inoltre agli sviluppatori più facilmente creare estensioni per un'applicazione host, ad esempio Visual Studio. In questo framework, si definisce un'estensione in base a un contratto MEF ed esportarlo come parte del componente MEF. L'applicazione host gestisce le parti di componente da trovare, la relativa registrazione e assicurandosi che vengono applicati al contesto corretto.
 
 > [!NOTE]
->  Per altre informazioni su MEF nell'editor, vedere [Managed Extensibility Framework nell'editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> Per altre informazioni su MEF nell'editor, vedere [Managed Extensibility Framework nell'editor](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Estensioni e punti di estensione di visual Studio editor
  Punti di estensione dell'editor sono parti componente MEF che è possibile personalizzare ed estendere. In alcuni casi si estende il punto di estensione che implementa un'interfaccia ed esportandolo con i metadati corretti. In altri casi sufficiente dichiarare un'estensione ed esportarlo come un determinato tipo.
@@ -59,7 +59,7 @@ ms.locfileid: "60049022"
  Quando si installa un'estensione in un computer, includere i file binari e il manifesto in una sottocartella della cartella in cui è noto a Visual Studio.
 
 > [!WARNING]
->  Non è necessario preoccuparsi dei dettagli dei manifesti e percorsi di distribuzione se si usa uno dei modelli di estendibilità editor inclusi in Visual Studio. I modelli contengono tutto il necessario per registrare e distribuire un'estensione.
+> Non è necessario preoccuparsi dei dettagli dei manifesti e percorsi di distribuzione se si usa uno dei modelli di estendibilità editor inclusi in Visual Studio. I modelli contengono tutto il necessario per registrare e distribuire un'estensione.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Eseguire le estensioni nell'istanza sperimentale
  È possibile isolare la versione di lavoro di Visual Studio mentre si sta sviluppando un'estensione distribuendolo in cartella sperimentale seguente (in Windows Vista e Windows 7):

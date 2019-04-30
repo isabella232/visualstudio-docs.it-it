@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419552"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procedura: A livello di codice cercare testo negli intervalli del foglio di lavoro
   Il <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> metodo di <xref:Microsoft.Office.Interop.Excel.Range> consente di cercare testo all'interno dell'intervallo. Questo testo può anche essere una delle stringhe di errore che possono essere visualizzati in una cella di foglio di lavoro, ad esempio `#NULL!` o `#VALUE!`. Per altre informazioni sulle stringhe di errore, vedere [i valori di errore delle celle](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616976"
  Nell'esempio seguente cerca un intervallo denominato `Fruits` e modifica il tipo di carattere per le celle che contengono la parola "mele". Questa procedura Usa anche il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> metodo, che usa configurate in precedenza impostazioni per ripetere la ricerca di ricerca. Specificare la cella dopo il quale eseguire la ricerca e il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> gestisca il resto.
 
 > [!NOTE]
->  Il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> ricerca del metodo esegue il wrapping all'inizio dell'intervallo di ricerca quando viene raggiunta la fine dell'intervallo. Il codice deve verificare che la ricerca non è possibile disporre tutto in un ciclo infinito. La procedura di esempio illustra un modo per gestire questo problema mediante i <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> proprietà.
+> Il <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> ricerca del metodo esegue il wrapping all'inizio dell'intervallo di ricerca quando viene raggiunta la fine dell'intervallo. Il codice deve verificare che la ricerca non è possibile disporre tutto in un ciclo infinito. La procedura di esempio illustra un modo per gestire questo problema mediante i <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> proprietà.
 
  ![collegamento a video](../vsto/media/playvideo.gif "collegamento a video") per una dimostrazione video correlata, vedere [ricerca per categorie Usare il metodo di ricerca in un componente aggiuntivo di Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

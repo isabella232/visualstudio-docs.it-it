@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b1c7bb825cdc64619ac2234c431bb306e58ec293
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443059"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 - [Passaggi successivi](#next)
 
 > [!TIP]
->  È possibile trovare il codice sorgente completo per questo progetto nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> È possibile trovare il codice sorgente completo per questo progetto nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
->   Se si riscontrano difficoltà o errori, porre le domande su [forums.xamarin.com](http://forums.xamarin.com). Molti errori possono essere risolti con l'aggiornamento agli SDK più recenti richiesti da Xamarin, riportati nelle [note sulla versione di Xamarin](https://developer.xamarin.com/releases/) per ogni piattaforma.
+> Se si riscontrano difficoltà o errori, porre le domande su [forums.xamarin.com](http://forums.xamarin.com). Molti errori possono essere risolti con l'aggiornamento agli SDK più recenti richiesti da Xamarin, riportati nelle [note sulla versione di Xamarin](https://developer.xamarin.com/releases/) per ogni piattaforma.
 >
 > [!NOTE]
->  La documentazione per gli sviluppatori di Xamarin offre inoltre diverse procedure dettagliate con sezioni introduttive e di approfondimento, come indicato di seguito. In tutte queste pagine, assicurarsi che sia selezionato "Visual Studio" in alto a destra della pagina per vedere le procedure dettagliate specifiche di Visual Studio.
+> La documentazione per gli sviluppatori di Xamarin offre inoltre diverse procedure dettagliate con sezioni introduttive e di approfondimento, come indicato di seguito. In tutte queste pagine, assicurarsi che sia selezionato "Visual Studio" in alto a destra della pagina per vedere le procedure dettagliate specifiche di Visual Studio.
 >
 > - App Xamarin con interfaccia utente nativa:
 >
@@ -230,7 +230,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 1. In **Esplora soluzioni** espandere la cartella **WeatherApp.Droid**>**Risorse**>**layout** e aprire **Main.axml**. Il file verrà aperto nella finestra di progettazione visiva. Se viene visualizzato un errore relativo a Java, vedere questo [post di blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).
 
     > [!TIP]
-    >  Il progetto include molti altri file che però non verranno esaminati in questo argomento. Per informazioni più dettagliate sulla struttura di un progetto Android, vedere la [parte 2 di approfondimento](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) dell'argomento Hello Android su xamarin.com.
+    > Il progetto include molti altri file che però non verranno esaminati in questo argomento. Per informazioni più dettagliate sulla struttura di un progetto Android, vedere la [parte 2 di approfondimento](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) dell'argomento Hello Android su xamarin.com.
 
 2. Selezionare ed eliminare il pulsante predefinito visualizzato nella finestra di progettazione.
 
@@ -239,7 +239,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 4. Trascinare un controllo **RelativeLayout**nella finestra di progettazione dalla **Casella degli strumenti** . Usare questo controllo come contenitore padre per altri controlli.
 
     > [!TIP]
-    >  Se in qualsiasi momento sembra che il layout non sia visualizzato correttamente, salvare il file e passare dalla scheda **Progettazione** alla scheda **Origine** e viceversa per aggiornare.
+    > Se in qualsiasi momento sembra che il layout non sia visualizzato correttamente, salvare il file e passare dalla scheda **Progettazione** alla scheda **Origine** e viceversa per aggiornare.
 
 5. Nella finestra **Proprietà** impostare la proprietà **background** (gruppo Stile) su `#545454`.
 
@@ -256,7 +256,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  Notare che molte proprietà non includono un elenco a discesa di valori selezionabili.  Può quindi risultare difficile individuare il valore di stringa da usare per una data proprietà. Per suggerimenti provare a cercare il nome di una proprietà nella pagina della classe [R.attr](http://developer.android.com/reference/android/R.attr.html) .
+    > Notare che molte proprietà non includono un elenco a discesa di valori selezionabili.  Può quindi risultare difficile individuare il valore di stringa da usare per una data proprietà. Per suggerimenti provare a cercare il nome di una proprietà nella pagina della classe [R.attr](http://developer.android.com/reference/android/R.attr.html) .
     >
     >  Cercando in Internet viene spesso visualizzata una pagina del sito Web [http://stackoverflow.com/](http://stackoverflow.com/) in cui altri utenti hanno usato la stessa proprietà.
 
@@ -523,7 +523,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
      ![App meteo per Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
->  Il codice sorgente completo per questo progetto si trova nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Il codice sorgente completo per questo progetto si trova nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="Windows"></a> Progettare l'interfaccia utente per Windows Phone
  Verrà ora progettata l'interfaccia utente per Windows Phone, che verrà connessa al codice condiviso, e quindi verrà eseguita l'app.
@@ -629,7 +629,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
      ![Versione di Windows dell'app in esecuzione](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
 > [!TIP]
->  Il codice sorgente completo per questo progetto si trova nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
+> Il codice sorgente completo per questo progetto si trova nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 
 ## <a name="next"></a> Passaggi successivi
  **Aggiungere l'interfaccia utente per iOS alla soluzione**

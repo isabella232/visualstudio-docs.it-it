@@ -12,18 +12,18 @@ ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b5ea8cbdfa9644e103f32d49ea0964bbb90bad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f13573cfecbd81f36e3b77e9b23beeaa558c08dc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444795"
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Valutazione di un'espressione della finestra Espressioni di controllo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> In Visual Studio 2015, questa modalità di implementazione analizzatori di espressioni è deprecata. Per informazioni sull'implementazione di analizzatori di espressioni di Common Language Runtime, vedi [analizzatori di espressioni CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [gestito esempio analizzatore di espressioni](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Quando l'esecuzione viene sospesa, Visual Studio chiama il motore di debug (DE) per determinare il valore corrente di ogni espressione nel proprio elenco di espressioni di controllo. La Germania valuta ogni espressione utilizzando un analizzatore di espressioni (EE) e viene visualizzato il relativo valore in Visual Studio il **Watch** finestra.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60075857"
  Poiché l'analisi di un'espressione complessa può richiedere molto più lunga della valutazione, il processo di valutazione di un'espressione è suddiviso in due passaggi: 1) analisi l'espressione e 2) valuta l'espressione analizzata. In questo modo, la valutazione può verificarsi più volte, ma l'espressione deve essere analizzata una sola volta. L'espressione analizzata intermedia viene restituito dal motore di esecuzione in un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) che a sua volta è incapsulato e restituito dal DE come un' [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) oggetto. Il `IDebugExpression` oggetto rinvia valutazione di tutti i `IDebugParsedExpression` oggetto.  
   
 > [!NOTE]
->  Non è necessario per un EE essere conformi a questo processo in due passaggi anche se Visual Studio presuppone che questa classe. l'analizzatore di Espressioni può analizzare e valutare nello stesso passaggio quando [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) viene chiamato (si tratta MyCEE funzionamento del campione, ad esempio). Se la lingua può formare espressioni complesse, è possibile separare la fase di analisi del passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger di Visual Studio quando molte espressioni di controllo vengono riprodotti.  
+> Non è necessario per un EE essere conformi a questo processo in due passaggi anche se Visual Studio presuppone che questa classe. l'analizzatore di Espressioni può analizzare e valutare nello stesso passaggio quando [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) viene chiamato (si tratta MyCEE funzionamento del campione, ad esempio). Se la lingua può formare espressioni complesse, è possibile separare la fase di analisi del passaggio di valutazione. Ciò può migliorare le prestazioni nel debugger di Visual Studio quando molte espressioni di controllo vengono riprodotti.  
   
 ## <a name="in-this-section"></a>In questa sezione  
  [Implementazione di esempio di valutazione delle espressioni](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  

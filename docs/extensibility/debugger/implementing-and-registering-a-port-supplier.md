@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 253289862ae341e0682f5fe19616720e74799a1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c662b9b813be33ca57c8c31dff69eb86968ab3eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411231"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>Implementare e registrare un fornitore di porte
 Il ruolo di un fornitore di porte consiste nel tenere traccia e specificare le porte, che a sua volta la gestione dei processi. Quando è necessario creare una porta, il fornitore della porta viene creata un'istanza usando CoCreate con GUID del fornitore della porta (gestore di sessione di debug [SDM] utilizzerà il fornitore della porta che l'utente ha selezionato o il fornitore della porta specificato dal sistema del progetto). Chiama quindi il modello SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) per vedere se è possono aggiungere tutte le porte. Se è possibile aggiungere una porta, viene richiesta una nuova porta chiamando [Aggiungi porta](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) e passando un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) che descrive la porta. `AddPort` Restituisce una nuova porta rappresentata da un' [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaccia.
@@ -55,7 +55,7 @@ RemoveMetric(metrictypePortSupplier,
 ```
 
 > [!NOTE]
->  Il [helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` e `RemoveMetric` definite nelle funzioni statiche *dbgmetric.h* e compilate in *ad2de.lib*. Il `metrictypePortSupplier`, `metricCLSID`, e `metricName` helpers sono definiti anche nel *dbgmetric.h*.
+> Il [helper SDK per eseguire il debug](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` e `RemoveMetric` definite nelle funzioni statiche *dbgmetric.h* e compilate in *ad2de.lib*. Il `metrictypePortSupplier`, `metricCLSID`, e `metricName` helpers sono definiti anche nel *dbgmetric.h*.
 
  Un fornitore di porte può fornire il nome e GUID tramite i metodi [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) e [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), rispettivamente.
 

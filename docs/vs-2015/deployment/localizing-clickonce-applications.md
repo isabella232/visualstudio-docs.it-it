@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443783"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
  Il vantaggio di questo approccio è dato dalla possibilità di creare un'unica distribuzione e di semplificare il processo della distribuzione localizzata. In fase di esecuzione verrà usato l'assembly satellite appropriato, a seconda delle impostazioni cultura predefinite del sistema operativo Windows dell'utente. L'inconveniente di questo approccio riguarda il fatto che, ogni volta che l'applicazione viene installata o aggiornata in un computer client, vengono scaricati tutti gli assembly satellite. Se nell'applicazione è contenuto un numero elevato di stringhe o i clienti hanno una connessione di rete lenta, questo processo può influire sulle prestazioni durante l'aggiornamento dell'applicazione.  
   
 > [!NOTE]
->  Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [come: Supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [come: Supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per le singole impostazioni cultura  
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.  

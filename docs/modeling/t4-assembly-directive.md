@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422948"
 ---
 # <a name="t4-assembly-directive"></a>Direttiva assembly T4
 
@@ -21,7 +21,7 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
  Per una panoramica generale della scrittura di modelli di testo, vedere [scrittura di un modello di testo T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari per il **riferimenti** del progetto di Visual Studio.
+> La direttiva `assembly` in un modello di testo (pre-elaborato) della fase di esecuzione non è necessaria. Aggiungere invece gli assembly necessari per il **riferimenti** del progetto di Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Utilizzo della direttiva Assembly
  La sintassi della direttiva è la seguente:
@@ -53,7 +53,7 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
 
 - `WindowsBase.dll`
 
-  Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio DSL, non è necessario scrivere direttive dell'assembly per gli assembly seguenti:
+  Se si utilizza una direttiva personalizzata, il processore di direttiva potrebbe caricare assembly aggiuntivi. Ad esempio, se si scrivono modelli per un linguaggio specifico di dominio (DSL), non è necessario scrivere direttive dell'assembly per gli assembly seguenti:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
@@ -82,7 +82,7 @@ In un modello di testo in fase di progettazione di Visual Studio, il `assembly` 
   </ItemGroup>
 ```
 
- È ora possibile usare la proprietà del progetto nei modelli di testo, che si trasformano correttamente in Visual Studio e in MSBuild:
+ È ora possibile utilizzare la proprietà del progetto nei modelli di testo, che si convertono correttamente in Visual Studio e in MSBuild:
 
 ```
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
