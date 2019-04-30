@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444239"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Finestre Espressioni di controllo e Controllo immediato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Possono esistere situazioni in cui si vuole osservare il comportamento di un oggetto specifico, ad esempio si potrebbe voler tenere traccia di un oggetto a cui una variabile locale fa riferimento dopo che la variabile non è più compresa nell'ambito. In C# e Visual Basic è possibile creare ID oggetto per istanze specifiche dei tipi di riferimento e usarle nella finestra Espressioni di controllo e nelle condizioni del punto di interruzione. L'ID oggetto viene generato dai servizi di debug di Common Language Runtime (CLR) e associato all'oggetto.  
   
 > [!NOTE]
->  Gli ID oggetto creano riferimenti deboli e non impediscono all'oggetto di essere sottoposto a Garbage Collection. Sono validi solo per la sessione di debug corrente.  
+> Gli ID oggetto creano riferimenti deboli e non impediscono all'oggetto di essere sottoposto a Garbage Collection. Sono validi solo per la sessione di debug corrente.  
   
  Nel codice seguente un metodo crea un oggetto `Person` usando una variabile locale, ma si vuole scoprire il nome dell'oggetto `Person`con un altro metodo:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Continuare il debug e quando l'esecuzione viene arrestata nel metodo `DoSomething()` , nella finestra **Espressioni di controllo** viene visualizzato l'oggetto `Person` .  
   
 > [!NOTE]
->  Se si vogliono visualizzare le proprietà dell'oggetto, ad esempio `Person.Name` nell'esempio precedente, è necessario abilitare la valutazione delle proprietà.  
+> Se si vogliono visualizzare le proprietà dell'oggetto, ad esempio `Person.Name` nell'esempio precedente, è necessario abilitare la valutazione delle proprietà.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Uso di registri nella finestra Espressioni di controllo (solo C++)  
  Se si esegue il debug codice nativo, è possibile aggiungere i nomi di registro, nonché i nomi delle variabili usando  **$ \<registrare nome >** oppure  **@ \<registrare nome >**.  Per altre informazioni, vedere [Pseudovariables](../debugger/pseudovariables.md).  

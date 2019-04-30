@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442639"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Passaggio 2: Aggiungere un oggetto casuale e un elenco di icone
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ In questo passaggio verrà creato un set di simboli corrispondenti per il gioco.
 Finestra di IntelliSense  
   
     > [!NOTE]
-    >  La finestra di IntelliSense verrà visualizzata solo quando si immette manualmente il codice. Se si utilizzano le operazioni di copia e incolla, il codice non verrà visualizzato.  
+    > La finestra di IntelliSense verrà visualizzata solo quando si immette manualmente il codice. Se si utilizzano le operazioni di copia e incolla, il codice non verrà visualizzato.  
   
      Se si analizza il codice (e le note) in piccole sezioni, è più facile da comprendere. I programmi possono utilizzare oggetti `List` per tenere traccia di diversi tipi di elementi. Un elenco può contenere numeri, valori true/false, testo o altri oggetti. Un oggetto `List` può persino contenere altri oggetti `List`. Gli oggetti contenuti in un elenco sono definiti *elementi* e ogni elenco contiene un solo tipo di elemento. Un elenco di numeri, ad esempio, può contenere solo numeri; non è possibile aggiungervi testo. In modo analogo, non è possibile aggiungere numeri a un elenco di valori true/false.  
   
@@ -51,7 +51,7 @@ Finestra di IntelliSense
      Quando si utilizza un inizializzatore di raccolta con un'istruzione `new`, una volta creato il nuovo oggetto `List`, il programma vi collocherà i dati forniti dall'utente racchiusi tra parentesi graffe. In questo caso, si ottiene un elenco di stringhe denominate **icone** e l'elenco sarà inizializzato in modo da contenere sedici stringhe. Ognuna di quelle stringhe è una singola lettera, e insieme corrispondono alle icone che saranno nelle etichette. Il gioco conterrà quindi una coppia di punti esclamativi, una coppia di lettere N maiuscole, una coppia di virgole e così via. Se per questi caratteri viene impostato il tipo Webdings, verranno visualizzati come simboli, ad esempio un autobus, una moto, un ragno e così via. L'oggetto `List` avrà in tutto sedici stringhe, una per ogni cella nel pannello TableLayoutPanel.  
   
     > [!NOTE]
-    >  In Visual Basic si ottiene lo stesso risultato, ma prima le stringhe vengono inserite in una matrice temporanea, quindi questa viene convertita in un oggetto `List`. Una matrice è simile a un elenco, salvo ad esempio che le matrici vengono create con una dimensione fissa. Gli elenchi possono essere ridotti o ingranditi in base alle necessità, caratteristica importante in questo programma.  
+    > In Visual Basic si ottiene lo stesso risultato, ma prima le stringhe vengono inserite in una matrice temporanea, quindi questa viene convertita in un oggetto `List`. Una matrice è simile a un elenco, salvo ad esempio che le matrici vengono create con una dimensione fissa. Gli elenchi possono essere ridotti o ingranditi in base alle necessità, caratteristica importante in questo programma.  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   

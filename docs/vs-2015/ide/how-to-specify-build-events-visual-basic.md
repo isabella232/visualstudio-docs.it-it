@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435129"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedura: Specificare gli eventi di compilazione (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
  Gli eventi di compilazione vengono specificati nella finestra di dialogo **Eventi di compilazione** disponibile nella pagina **Compila** della **Creazione progetti**.  
   
 > [!NOTE]
->  Visual Basic Express non supporta voci di eventi di compilazione. Questa caratteristica è supportata solo nel prodotto completo Visual Studio.  
+> Visual Basic Express non supporta voci di eventi di compilazione. Questa caratteristica è supportata solo nel prodotto completo Visual Studio.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Come specificare eventi di pre e post-compilazione  
   
@@ -45,10 +45,10 @@ Gli eventi di compilazione in Visual Basic possono essere usati per eseguire scr
 4. Immettere gli argomenti della riga di comando per l'azione di pre-compilazione o post-compilazione e fare clic su **OK**.  
   
     > [!NOTE]
-    >  Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Aggiungere un'istruzione `call` prima di tutti gli eventi di compilazione che eseguono file con estensione BAT. Ad esempio, `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.  
+    > Se l'evento di pre-compilazione o post-compilazione non viene completato correttamente, è possibile terminare la compilazione forzando l'azione dell'evento a uscire con un codice diverso da zero (0), che indica un esito positivo.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Esempio: Come modificare le informazioni sul manifesti usando un evento di post-compilazione  
  La procedura seguente illustra come impostare la versione minima del sistema operativo nel manifesto dell'applicazione usando un comando exe chiamato da un evento di post-compilazione (il file exe.manifest nella directory del progetto). La versione minima del sistema operativo è un numero composto da quattro parti, ad esempio 4.10.0.0. A tale scopo, il comando modificherà la sezione `<dependentOS>` del manifesto:  

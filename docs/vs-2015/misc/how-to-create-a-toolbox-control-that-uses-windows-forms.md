@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442915"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procedura: Creare un controllo della casella degli strumenti che usa Windows Form
 Il modello di controllo della casella degli strumenti Windows Form incluso in [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] consente di creare controlli Windows Form che vengono aggiunti automaticamente alla **casella degli strumenti** quando l'estensione viene installata. Questo argomento mostra come usare il modello per creare un controllo della **casella degli strumenti** che è possibile distribuire ad altri utenti.  
   
 > [!NOTE]
->  Per informazioni su come scaricare Visual Studio SDK, vedere il [centro per sviluppatori per l'estensione dell'IDE di Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) nel sito Web MSDN.  
+> Per informazioni su come scaricare Visual Studio SDK, vedere il [centro per sviluppatori per l'estensione dell'IDE di Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) nel sito Web MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Creazione di un controllo della casella degli strumenti  
  Usare il modello di controllo della casella degli strumenti Windows Form per creare il progetto e quindi compilare un'interfaccia utente nella finestra di progettazione.  

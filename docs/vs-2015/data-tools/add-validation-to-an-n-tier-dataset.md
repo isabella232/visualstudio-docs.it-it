@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45f650283c850a9dce3ae71c7eefbff2ef378535
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 773af4469f8d72acb6768e62cd2091c396d36b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439535"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Aggiungere la convalida a un set di dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Aggiunta della convalida a un set di dati è suddivisa in una soluzione a più l
 La finestra di progettazione set di dati fornisce la funzionalità per creare classi parziali a cui è possibile aggiungere il codice utente per colonna e riga modifica gli eventi delle tabelle di dati nel set di dati. Per altre informazioni sull'aggiunta di codice a un set di dati in una soluzione a più livelli, vedere [aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [aggiungere codice agli oggetti TableAdapter in applicazioni a più livelli](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Per altre informazioni sulle classi parziali, vedere [come: Dividere una classe in classi parziali (Progettazione classi)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md) oppure [classi e metodi parziali](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).  
   
 > [!NOTE]
->  Quando si separano i set di dati da oggetti TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
+> Quando si separano i set di dati da oggetti TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.  
   
 > [!NOTE]
->  La finestra di progettazione set di dati non crea automaticamente i gestori eventi in c# per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi. È necessario creare un gestore dell'evento manualmente e associare il gestore eventi all'evento sottostante. Le procedure seguenti descrivono come creare i gestori eventi necessaria in Visual Basic e c#.  
+> La finestra di progettazione set di dati non crea automaticamente i gestori eventi in c# per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi. È necessario creare un gestore dell'evento manualmente e associare il gestore eventi all'evento sottostante. Le procedure seguenti descrivono come creare i gestori eventi necessaria in Visual Basic e c#.  
   
 ## <a name="validatechanges-to-individual-columns"></a>Validatechanges alle singole colonne  
  Convalidare i valori delle singole colonne gestendo il <xref:System.Data.DataTable.ColumnChanging> evento. Il <xref:System.Data.DataTable.ColumnChanging> evento viene generato quando viene modificato un valore in una colonna. Creare un gestore eventi per il <xref:System.Data.DataTable.ColumnChanging> eventi facendo doppio clic sul set di dati colonna desiderata.  
@@ -52,7 +52,7 @@ End Sub
 ```  
   
 > [!NOTE]
->  Nei progetti c#, la finestra di progettazione set di dati crea solo le classi parziali per il set di dati e le singole tabelle nel set di dati. La finestra di progettazione set di dati non crea automaticamente i gestori eventi per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi in c# come avviene in Visual Basic. Nei progetti c#, è necessario creare manualmente un metodo per gestire l'evento e associare il metodo dell'evento sottostante. La seguente procedura fornisce i passaggi per creare i gestori eventi necessaria in Visual Basic e c#.  
+> Nei progetti c#, la finestra di progettazione set di dati crea solo le classi parziali per il set di dati e le singole tabelle nel set di dati. La finestra di progettazione set di dati non crea automaticamente i gestori eventi per il <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventi in c# come avviene in Visual Basic. Nei progetti c#, è necessario creare manualmente un metodo per gestire l'evento e associare il metodo dell'evento sottostante. La seguente procedura fornisce i passaggi per creare i gestori eventi necessaria in Visual Basic e c#.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -63,7 +63,7 @@ End Sub
 2. Fare doppio clic sulla colonna da convalidare. Questa azione viene creata la <xref:System.Data.DataTable.ColumnChanging> gestore dell'evento.  
   
     > [!NOTE]
-    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per l'evento di c#. Il codice che è necessario gestire l'evento nel linguaggio c# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> eventi nel <xref:System.Data.DataTable.EndInit%2A> (metodo).  
+    > La finestra di progettazione set di dati non crea automaticamente un gestore eventi per l'evento di c#. Il codice che è necessario gestire l'evento nel linguaggio c# è incluso nella sezione successiva. `SampleColumnChangingEvent` viene creato e quindi collegato al <xref:System.Data.DataTable.ColumnChanging> eventi nel <xref:System.Data.DataTable.EndInit%2A> (metodo).  
   
 3. Aggiungere il codice per verificare che `e.ProposedValue` contiene dati che soddisfano i requisiti dell'applicazione. Se il valore proposto è inaccettabile, impostare la colonna a indicare che contiene un errore.  
   
@@ -124,7 +124,7 @@ End Sub
      Una classe parziale viene creata con un `RowChanging` gestore dell'evento e viene aperto nell'Editor del codice.  
   
     > [!NOTE]
-    >  La finestra di progettazione set di dati non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi nei progetti c#. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento e eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.  
+    > La finestra di progettazione set di dati non crea automaticamente un gestore eventi per il <xref:System.Data.DataTable.RowChanging> eventi nei progetti c#. È necessario creare un metodo per gestire il <xref:System.Data.DataTable.RowChanging> evento e eseguire codice per associare l'evento in un metodo di inizializzazione della tabella.  
   
 3. Aggiungere il codice utente all'interno della dichiarazione di classe parziale.  
   

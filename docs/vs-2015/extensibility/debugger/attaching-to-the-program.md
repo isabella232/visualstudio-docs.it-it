@@ -10,12 +10,12 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab9301f31976b084c3c8565329dca248503e40ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437421"
 ---
 # <a name="attaching-to-the-program"></a>Collegamento al programma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +52,12 @@ Dopo avere registrato i programmi con la porta appropriata, è necessario connet
      Restituisce un `GUID` che viene usato per identificare il programma. Il `GUID` devono essere archiviate nell'oggetto che rappresenta il programma di locale per la Germania e deve essere restituito quando il `IDebugProgram2::GetProgramId` metodo viene chiamato sul `IDebugProgram2` interfaccia.  
   
     > [!NOTE]
-    >  Se si implementa il `IDebugProgramNodeAttach2` dell'interfaccia, il programma `GUID` viene passato per il `IDebugProgramNodeAttach2::OnAttach` (metodo). Ciò `GUID` viene usato per il programma `GUID` restituiti dai `IDebugProgram2::GetProgramId` (metodo).  
+    > Se si implementa il `IDebugProgramNodeAttach2` dell'interfaccia, il programma `GUID` viene passato per il `IDebugProgramNodeAttach2::OnAttach` (metodo). Ciò `GUID` viene usato per il programma `GUID` restituiti dai `IDebugProgram2::GetProgramId` (metodo).  
   
 3. Invio di un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) oggetto dell'evento per notificare il modello SDM che locale `IDebugProgram2` oggetto è stato creato per rappresentare il programma per la Germania. Per informazioni dettagliate, vedere [l'invio di eventi](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
-    >  Ciò non è uguale `IDebugProgram2` oggetto passato il `IDebugEngine2::Attach` (metodo). Il valore passato in precedenza `IDebugProgram2` oggetto riconosciuto da solo la porta ed è un oggetto separato.  
+    > Ciò non è uguale `IDebugProgram2` oggetto passato il `IDebugEngine2::Attach` (metodo). Il valore passato in precedenza `IDebugProgram2` oggetto riconosciuto da solo la porta ed è un oggetto separato.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Attacco basato su avvio](../../extensibility/debugger/launch-based-attachment.md)   

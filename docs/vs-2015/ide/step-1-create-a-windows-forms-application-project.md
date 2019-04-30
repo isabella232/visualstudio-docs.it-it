@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441997"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Passaggio 1: Creare un progetto di Windows Forms Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Finestra di dialogo Nuovo progetto
 4. Nella figura seguente viene illustrato ciò che si dovrebbe vedere nell'interfaccia di Visual Studio.  
   
     > [!NOTE]
-    >  Il layout delle finestre potrebbe non essere esattamente uguale a questa illustrazione. Il layout preciso della finestra dipende dalla versione di Visual Studio, dal linguaggio di programmazione in uso e da altri fattori. Tuttavia, è necessario verificare che tutte e tre le finestre siano visualizzate.  
+    > Il layout delle finestre potrebbe non essere esattamente uguale a questa illustrazione. Il layout preciso della finestra dipende dalla versione di Visual Studio, dal linguaggio di programmazione in uso e da altri fattori. Tuttavia, è necessario verificare che tutte e tre le finestre siano visualizzate.  
   
      ![Finestra IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 Finestra IDE  
@@ -57,7 +57,7 @@ Finestra IDE
     - **Finestra Proprietà** In questa finestra si modificano le proprietà degli elementi scelti in altre finestre. Ad esempio, se si sceglie Form1, è possibile modificarne il titolo impostando la proprietà **Text** e il colore di sfondo impostando la proprietà **Backcolor**.  
   
     > [!NOTE]
-    >  Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.  
+    > Nella riga superiore in **Esplora soluzioni** è riportata la dicitura **Soluzione "PictureViewer" (1 progetto)** per indicare che è stata creata una soluzione in Visual Studio. Una soluzione può contenere più progetti, ma per ora verranno utilizzate soluzioni che contengono un solo progetto.  
   
 6. Nella barra dei menu scegliere **File**, **Salva tutto**.  
   

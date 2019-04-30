@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5edc8f31510fa01d2132735ede502ad7f6ad6a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388319"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: I tipi che contengono membri statici non devono avere costruttori
 
@@ -40,7 +40,7 @@ ms.locfileid: "55922602"
  Per correggere una violazione di questa regola, rimuovere il costruttore predefinito o renderla privata.
 
 > [!NOTE]
->  Se il tipo non definisce alcun costruttore, alcuni compilatori di creano automaticamente un costruttore predefinito pubblico. Se questo è il caso con il tipo, aggiungere un costruttore privato predefinito per eliminare la violazione.
+> Se il tipo non definisce alcun costruttore, alcuni compilatori di creano automaticamente un costruttore predefinito pubblico. Se questo è il caso con il tipo, aggiungere un costruttore privato predefinito per eliminare la violazione.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
  Non escludere un avviso da questa regola. La presenza del costruttore suggerisce che il tipo non è un tipo statico.

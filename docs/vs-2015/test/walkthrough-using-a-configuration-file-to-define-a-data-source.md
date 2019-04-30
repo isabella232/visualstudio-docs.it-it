@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439233"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 ```  
   
 > [!NOTE]
->  Il nome dell'assembly deve corrispondere alla build di Microsoft Visual Studio .NET Framework in uso. Impostare la versione su 9.0.0.0 se si usa Visual Studio .NET Framework 3.5. Se si usa Visual Studio .NET Framework 2.0, impostare la versione su 8.0.0.0.  
+> Il nome dell'assembly deve corrispondere alla build di Microsoft Visual Studio .NET Framework in uso. Impostare la versione su 9.0.0.0 se si usa Visual Studio .NET Framework 3.5. Se si usa Visual Studio .NET Framework 2.0, impostare la versione su 8.0.0.0.  
   
 ## <a name="define-connection-strings"></a>Definire le stringhe di connessione  
  Le stringhe di connessione definiscono informazioni specifiche del provider per l'accesso alle origini dati. Le stringhe di connessione definite nei file di configurazione forniscono informazioni sui provider di dati riutilizzabili nell'ambito di un'applicazione. In questa sezione vengono create due stringhe di connessione che verranno usate dalle origini dati definite nella sezione di configurazione personalizzata.  
@@ -266,10 +266,10 @@ Questa procedura dettagliata illustra come usare un'origine dati definita in un 
 4. Compilare la soluzione ed eseguire i test MyTestMethod e MyTestMethod2.  
   
 > [!IMPORTANT]
->  Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.  
+> Distribuire gli elementi come origini dati in modo che siano accessibili al test nella directory di distribuzione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
  [Creazione ed esecuzione di unit test per il codice esistente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Procedura: Creare un Test basati sui dati](../test/how-to-create-a-data-driven-unit-test.md)
+ [Procedura: creare uno unit test basato sui dati](../test/how-to-create-a-data-driven-unit-test.md)

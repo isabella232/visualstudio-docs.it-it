@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436700"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Avvio rapido: Analisi codice per C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60099364"
     2. Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.  
   
         > [!NOTE]
-        >  Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello.  
+        > Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello.  
   
 3. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Attiva analisi codice per C/C++ in fase di compilazione** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice aprendo il **Analyze** menu e scegliendo **Esegui analisi del codice** *NomeProgetto*.  
   
@@ -94,7 +94,7 @@ ms.locfileid: "60099364"
  Dopo aver compreso il problema, è possibile risolverlo nel codice. Eseguire quindi di nuovo l'analisi del codice per verificare che l'avviso non venga più visualizzato nella finestra Analisi codice e che la correzione non generi nuovi avvisi.  
   
 > [!TIP]
->  Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il **Analyze** pulsante e scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.  
+> Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il **Analyze** pulsante e scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.  
   
 ## <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice  
  In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.  

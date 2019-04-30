@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446110"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "60076211"
 2. Nella pagina di download, scegliere la versione degli strumenti che corrisponde al sistema operativo (x 86, x64 o ARM versione) e scaricare remote tools.
   
     > [!IMPORTANT]
-    >  Si consiglia di che installare la versione più recente di remote tools corrispondente alla versione di Visual Studio. Le versioni non corrispondenti non sono consigliate.  
+    > Si consiglia di che installare la versione più recente di remote tools corrispondente alla versione di Visual Studio. Le versioni non corrispondenti non sono consigliate.  
     >   
     >  Inoltre, è necessario installare gli strumenti remoti che hanno la stessa architettura del sistema operativo in cui si desidera installarlo. In altre parole, se si desidera eseguire il debug di un'applicazione a 32 bit in un computer remoto che esegue un sistema operativo a 64 bit, è necessario installare la versione a 64 bit di remote tools sul computer remoto.  
   
@@ -145,7 +145,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
    Per un elenco dei numeri di porta usati per impostazione predefinita, vedere [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  È possibile scegliere di eseguire Remote Tools in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
+  > È possibile scegliere di eseguire Remote Tools in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
 
 ## <a name="bkmk_configureService"></a> (Facoltativo) Configurare il debugger remoto come servizio
  Per il debug in ASP.NET e altri ambienti server, si deve eseguire il debugger remoto come amministratore o, se si desidera sempre in esecuzione, eseguire il debugger remoto come servizio.
@@ -221,7 +221,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 11. Nel computer di Visual Studio l'esecuzione viene arrestata in corrispondenza del punto di interruzione.  
   
     > [!TIP]
-    >  In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.  
+    > In alternativa, è possibile distribuire i file come passaggio separato. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo **mymfc**, quindi scegliere **Distribuisci**.  
   
     Se sono presenti file non di codice che devono essere usati dall'applicazione, è necessario includerli nel progetto di Visual Studio. Creare una cartella di progetto per i file aggiuntivi (nelle **Esplora soluzioni**, fare clic su **Aggiungi / nuova cartella**.) Quindi aggiungere i file nella cartella (nelle **Esplora soluzioni**, fare clic su **Add / esistente elemento**, quindi selezionare i file.). Nella pagina **Proprietà** di ogni file impostare **Copia nella directory di output** su **Copia sempre**.  
   
@@ -253,7 +253,7 @@ Se si prova a copiare il debugger remoto (msvsmon.exe) al computer remoto ed ese
 10. Copiare il file eseguibile appena compilato dal computer di Visual Studio alla nuova cartella nel computer remoto.
   
     > [!CAUTION]
-    >  Non apportare modifiche al codice o ricompilazione (o è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
+    > Non apportare modifiche al codice o ricompilazione (o è necessario ripetere questo passaggio). Il file eseguibile copiato nel computer remoto deve corrispondere esattamente all'origine locale e ai simboli.
 
     È possibile copiare manualmente il progetto, usare Xcopy, Robocopy, Powershell o altre opzioni.
   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 95bc529db8129c4e9af1ed9f9dc3d91de9686223
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411396"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 Aggiunge il nome di un elemento di primo livello dello script dello spazio dei nomi del motore di creazione. Oggetto *elemento di livello radice* è un oggetto che può contenere proprietà e metodi e che può contenere anche un'origine evento.  

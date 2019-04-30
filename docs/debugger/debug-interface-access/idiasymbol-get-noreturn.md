@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd768220b25ec93ffdb4f038db475304db71333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0857939289091d22aaafb5dc5bb009d4af0e00bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399338"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 Recupera un flag che specifica se la funzione è stata contrassegnata come senza risultati con il [noreturn](/cpp/cpp/noreturn) attributo.
@@ -39,13 +39,13 @@ HRESULT get_noReturn(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

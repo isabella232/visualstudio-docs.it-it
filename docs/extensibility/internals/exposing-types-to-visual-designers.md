@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415200"
 ---
 # <a name="expose-types-to-visual-designers"></a>Esporre i tipi di finestre di progettazione visiva
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve avere accesso alle definizioni di classe e il tipo in fase di progettazione per visualizzare una finestra di progettazione. Le classi vengono caricate da un set predefinito di assembly che includono il set completo delle dipendenze del progetto corrente (riferimenti e le relative dipendenze). Potrebbe essere necessario anche per finestre di progettazione visiva per accedere alle classi e tipi definiti nei file generati da strumenti personalizzati.
@@ -27,7 +27,7 @@ ms.locfileid: "60104069"
  Il sistema di progetto fornisce supporto completo per tenere traccia delle modifiche al file di output di uno strumento personalizzato, purché queste modifiche sono il risultato dell'esecuzione dello strumento personalizzato. Ogni volta che viene eseguito lo strumento personalizzato, viene generato un nuovo file PE temporaneo, e le notifiche appropriate vengono inviate alle finestre di progettazione.
 
 > [!NOTE]
->  Perché file di generazione eseguibile di programma temporaneo avviene in background, non vengono segnalati errori all'utente se la compilazione ha esito negativo.
+> Perché file di generazione eseguibile di programma temporaneo avviene in background, non vengono segnalati errori all'utente se la compilazione ha esito negativo.
 
  Gli strumenti personalizzati che sfruttano i vantaggi del supporto PE temporaneo devono rispettare le regole seguenti:
 

@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441878"
 ---
 # <a name="debug-office-projects"></a>Eseguire il debug di progetti di Office
   È possibile eseguire il debug di progetti di Office usando gli stessi strumenti di Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] che si usano per altri progetti [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Le funzionalità del debugger di[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , ad esempio la possibilità di inserire punti di interruzione e visualizzare le variabili nella finestra **Variabili locali** , sono disponibili anche quando si esegue il debug di progetti di Office. Per altre informazioni sulle [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] strumenti di debug, vedere [eseguire il Debug in Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Per semplificare il debug, chiudere tutte le istanze dell'applicazione di Office aperte, prima di generare ed eseguire il debug.
+> Per semplificare il debug, chiudere tutte le istanze dell'applicazione di Office aperte, prima di generare ed eseguire il debug.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
+> Se ti interessa sviluppare soluzioni che estendono l'esperienza di Office attraverso [piattaforme multiple](https://dev.office.com/add-in-availability)? Consultare la nuova [modello di componenti aggiuntivi di Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Componenti aggiuntivi di Office con footprint ridotto rispetto alle soluzioni e componenti aggiuntivi VSTO e si possono essere compilate usando praticamente qualsiasi tecnologia, ad esempio HTML5, JavaScript, CSS3 e XML di programmazione web.
 
 ## <a name="start-and-stop-the-debugger"></a>Avviare e arrestare il debugger
  È possibile avviare il debug di un progetto di Office come si avvia il debug di altri [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proietta; ad esempio, è possibile premere la **F5** chiave. Quando si avvia il debug di un progetto di componente aggiuntivo VSTO, viene avviato un nuovo processo per l'applicazione di Office di destinazione e il componente aggiuntivo VSTO viene caricato.
@@ -52,7 +52,7 @@ ms.locfileid: "54867964"
  Per eseguire il debug del componente aggiuntivo VSTO con una versione di Office diversa (2013 o 2016), aprire **Creazione progetti**e scegliere il pulsante di opzione **Avvia programma esterno** nella scheda **Debug** . Quindi, passare al percorso dell'eseguibile dell'applicazione di Office appropriata.
 
 ## <a name="f10-and-f11-behavior"></a>Comportamento di F10 e F11
- Quando si avvia il debug di un progetto di Office **F10** e **F11** non è lo stesso comportamento quando si avvia il debug di altri progetti di Visual Basic o C#. Nei progetti Visual Basic o C#, il debugger si arresta sulla funzione principale. Nei progetti di Office, Visual Studio non dispone di controllo sulla funzione principale dell'applicazione di Office. Tuttavia, durante il debug **F10** e **F11** hanno le stesse funzioni come i progetti Visual Basic e C#.
+ Quando si avvia il debug di un progetto di Office **F10** e **F11** non è lo stesso comportamento quando si avvia il debug di altri progetti di Visual Basic o c#. Nei progetti Visual Basic o C#, il debugger si arresta sulla funzione principale. Nei progetti di Office, Visual Studio non dispone di controllo sulla funzione principale dell'applicazione di Office. Tuttavia, durante il debug **F10** e **F11** hanno le stesse funzioni come i progetti Visual Basic e c#.
 
 ## <a name="display-exceptions"></a>Visualizzare le eccezioni
  A causa del modo con cui il codice gestito interagisce con il codice non gestito, in Visual Studio non vengono visualizzati gli errori generati dalle applicazioni di Microsoft Office. Ad esempio, se un componente aggiuntivo in VSTO creati usando gli strumenti di sviluppo per Office in Visual Studio genera un'eccezione, l'applicazione Microsoft Office continua senza visualizzare alcun errore. Per visualizzare questi errori, impostare il debugger in modo che si interrompa in caso di eccezioni di Common Language Runtime. Per altre informazioni, vedere [gestire le eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md).

@@ -11,12 +11,12 @@ ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d7abb72d3d577c4870030c76f87f0a41f133480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c0662bfe22b4c78bb754bbac2fbfdd281a4a7bce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408503"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Definizione del percorso di file VSPackage nella shell di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "58964240"
 |Collocare la DLL nel **PublicAssemblies** directory.|Infine, l'assembly può anche essere inserito nel **PublicAssemblies** sottodirectory. Gli assembly che si trovano **PublicAssemblies** vengono automaticamente rilevati e vengono visualizzate anche nel **aggiungere i riferimenti** nella finestra di dialogo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].<br /><br /> Gli assembly VSPackage devono essere posizionati solo nel **PublicAssemblies** directory se contengono i componenti destinati a essere riutilizzato da altri sviluppatori VSPackage gestiti. La maggior parte degli assembly non soddisfano questo criterio.|  
   
 > [!NOTE]
->  Usare gli assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono anche essere installati nella global assembly cache (GAC) o la propria directory. Ciò consente di evitare conflitti con gli assembly con lo stesso nome di file di base, noto come associazione di "Weak"-name.
+> Usare gli assembly con nome sicuro, con segno per tutti gli assembly dipendenti. Questi assembly devono anche essere installati nella global assembly cache (GAC) o la propria directory. Ciò consente di evitare conflitti con gli assembly con lo stesso nome di file di base, noto come associazione di "Weak"-name.

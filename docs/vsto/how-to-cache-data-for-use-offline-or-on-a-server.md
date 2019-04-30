@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419698"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedura: Memorizzare nella cache i dati per l'uso offline o in un server
   È possibile contrassegnare un elemento di dati da memorizzare nella cache del documento, in modo che sia disponibile offline. Questo inoltre rende possibile per i dati del documento deve essere modificato da un altro codice quando il documento viene archiviato in un server.
@@ -32,7 +32,7 @@ ms.locfileid: "60094541"
  È possibile contrassegnare un elemento di dati da memorizzare nella cache quando l'elemento di dati viene dichiarato nel codice, o, se si usa un' <xref:System.Data.DataSet>, impostando una proprietà **proprietà** finestra. Se si è la memorizzazione nella cache un elemento di dati che non è un <xref:System.Data.DataSet> o <xref:System.Data.DataTable>, assicurarsi che vengano soddisfatti i criteri per la memorizzazione nella cache del documento. Per altre informazioni, vedere [memorizzare nella Cache dati](../vsto/caching-data.md).
 
 > [!NOTE]
->  I set di dati creati utilizzando Visual Basic che sono contrassegnati come **memorizzata nella cache** e **WithEvents** (inclusi i set di dati vengono trascinati dal **Zdroje dat** finestra o **Casella degli strumenti** che hanno il **CacheInDocument** impostata su **True**) hanno un carattere di sottolineatura come prefisso per i relativi nomi nella cache. Ad esempio, se si crea un set di dati e denominarlo **clienti**, il <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nome sarà **Customers** nella cache. Quando si usa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> per accedere a questo elemento memorizzato nella cache, è necessario specificare **Customers** anziché **clienti**.
+> I set di dati creati utilizzando Visual Basic che sono contrassegnati come **memorizzata nella cache** e **WithEvents** (inclusi i set di dati vengono trascinati dal **Zdroje dat** finestra o **Casella degli strumenti** che hanno il **CacheInDocument** impostata su **True**) hanno un carattere di sottolineatura come prefisso per i relativi nomi nella cache. Ad esempio, se si crea un set di dati e denominarlo **clienti**, il <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nome sarà **Customers** nella cache. Quando si usa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> per accedere a questo elemento memorizzato nella cache, è necessario specificare **Customers** anziché **clienti**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Per memorizzare i dati nel documento usando il codice
 

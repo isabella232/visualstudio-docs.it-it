@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a442d3a116fa527271cad5acd2ffc7f7fec5d076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444435"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Proprietà di elementi in diagrammi di attività UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58955503"
 In un diagramma caso di utilizzo UML ogni elemento del diagramma dispone di proprietà. Per visualizzare le proprietà di un elemento, fare doppio clic sull'elemento sul diagramma o nel **Esplora modelli UML** e quindi fare clic su **proprietà**. Le proprietà vengono visualizzate nel **proprietà** finestra.  
   
 > [!NOTE]
->  Questo argomento illustra le proprietà degli elementi nei diagrammi di attività UML. Per informazioni su come leggere i diagrammi attività UML, vedere [diagrammi di attività UML: informazioni di riferimento](../modeling/uml-activity-diagrams-reference.md). Per altre informazioni su come creare diagrammi attività UML, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
+> Questo argomento illustra le proprietà degli elementi nei diagrammi di attività UML. Per informazioni su come leggere i diagrammi attività UML, vedere [diagrammi di attività UML: informazioni di riferimento](../modeling/uml-activity-diagrams-reference.md). Per altre informazioni su come creare diagrammi attività UML, vedere [diagrammi di attività UML: Linee guida](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Proprietà degli elementi  
   

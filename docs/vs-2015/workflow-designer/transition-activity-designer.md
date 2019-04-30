@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435375"
 ---
 # <a name="transition-activity-designer"></a>ActivityDesigner Transition
 <xref:System.Activities.Statements.Transition> rappresenta la transizione tra due stati.  
@@ -40,7 +40,7 @@ ms.locfileid: "58955410"
  Le transizioni vengono creati trascinando una riga da uno stato a un altro, o rilasciando uno stato sui triangoli visualizzati quando lo stato viene trascinato su un altro stato. Per creare una transizione tramite l'operazione di trascinamento, posizionare il mouse sul bordo dello stato di origine e trascinare una linea dallo stato di origine allo stato di destinazione. Per creare una transizione con il rilascio, trascinare lo stato di destinazione e posizionarlo sullo stato di origine, quindi rilasciarlo su uno dei quattro triangoli visualizzati intorno allo stato di origine. Lo stato di destinazione può essere un nuovo stato trascinato dal **casella degli strumenti**, o uno stato esistente trascinato dalla finestra di progettazione del flusso di lavoro.  
   
 > [!NOTE]
->  Un singolo stato in una macchina a stati può essere composto da un massimo di 76 transizioni create mediante la finestra di progettazione flussi di lavoro. Il limite alle transizioni per uno stato per i flussi di lavoro creati all'esterno della finestra di progettazione è stabilito solo dalle risorse di sistema.  
+> Un singolo stato in una macchina a stati può essere composto da un massimo di 76 transizioni create mediante la finestra di progettazione flussi di lavoro. Il limite alle transizioni per uno stato per i flussi di lavoro creati all'esterno della finestra di progettazione è stabilito solo dalle risorse di sistema.  
   
  Le transizioni del trigger condivise sono il set di transizioni che condividono lo stesso evento del trigger. Un trigger condiviso consente la progressione condizionale a uno stato di destinazione in base alla valutazione delle espressioni configurate per più transizioni che condividono un evento comune del trigger. Per aggiungere altre azioni a una transizione e creare una transizione condivisa, fare clic sul cerchio che indica l'inizio della transizione desiderata e trascinarlo nello stato desiderato. La nuova transizione condividerà uno stesso trigger della transizione iniziale, ma avrà una condizione e un'azione univoche. Le transizioni condivise possono anche essere create da all'interno di progettazione della transizione facendo **Aggiungi transizione del trigger condivisa** nella parte inferiore della finestra di progettazione di transizione e quindi selezionando lo stato di destinazione desiderato dal  **Gli stati disponibili per la connessione** elenco a discesa.  
   

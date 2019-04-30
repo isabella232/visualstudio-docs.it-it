@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435960"
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: Implementare i marcatori di errore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
 1. In una vista che viene filtrata, il filtro recupera un puntatore per il provider di attività associato ai dati della visualizzazione.  
   
     > [!NOTE]
-    >  È possibile usare lo stesso filtro di comando per suggerimenti di metodo, il completamento delle istruzioni, i marcatori di errore e così via.  
+    > È possibile usare lo stesso filtro di comando per suggerimenti di metodo, il completamento delle istruzioni, i marcatori di errore e così via.  
   
 2. Quando il filtro riceve un evento che indica che è stato spostato in un'altra riga, viene creata un'attività per verificare la presenza di errori.  
   
@@ -59,4 +59,4 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
  [Utilizzo di marcatori di testo con l'API Legacy](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Procedura: Aggiungere i marcatori di testo Standard](../extensibility/how-to-add-standard-text-markers.md)   
  [Procedura: Creare i marcatori di testo personalizzato](../extensibility/how-to-create-custom-text-markers.md)   
- [Procedura: Usare marcatori di testo](../extensibility/how-to-use-text-markers.md)
+ [Procedura: usare i marcatori di testo](../extensibility/how-to-use-text-markers.md)

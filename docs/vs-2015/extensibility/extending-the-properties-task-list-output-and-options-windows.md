@@ -15,12 +15,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b215d969ba7898923e98f063a47132125d82119b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cf42be1e62bfb4895d29a61fcadc221d5c14bec9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443913"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Estensione delle finestre Proprietà, Elenco attività, Output e Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60042613"
 1. Creare un progetto denominato **TodoList** usando il modello di progetto VSIX e aggiungere un modello di elemento di finestra degli strumenti personalizzata denominato **TodoWindow**.  
   
     > [!NOTE]
-    >  Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Per altre informazioni sulla creazione di un'estensione con una finestra degli strumenti, vedere [creazione di un'estensione con una finestra degli strumenti](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="set-up-the-tool-window"></a>Configurare la finestra degli strumenti  
  Aggiungere una casella di testo in cui è possibile digitare un nuovo elemento ToDo, un pulsante per aggiungere il nuovo elemento all'elenco e una casella di riepilogo per visualizzare gli elementi nell'elenco.  
@@ -43,7 +43,7 @@ ms.locfileid: "60042613"
 1. In TodoWindow.xaml, eliminare i controlli Button, TextBox e StackPanel da UserControl.  
   
     > [!NOTE]
-    >  Questa operazione non elimina il **button1_Click** gestore eventi, che verrà riutilizzata in un passaggio successivo.  
+    > Questa operazione non elimina il **button1_Click** gestore eventi, che verrà riutilizzata in un passaggio successivo.  
   
 2. Dal **tutti i controlli WPF** sezione del **della casella degli strumenti**, trascinare un' **Canvas** controllo alla griglia.  
   

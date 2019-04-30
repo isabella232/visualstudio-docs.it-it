@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9927a4aea836da753fc0df7d67a46cf74f466dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 566407f4d15fdaedaf9a89eb50648e555a370750
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434530"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Supporto di più versioni di Visual Studio
 Il termine *side-by-side* significa che è possibile installare e gestire più versioni di un prodotto nello stesso computer. Per i pacchetti VSPackage, che significa che un utente può avere diverse versioni di Visual Studio installate nello stesso computer. Tuttavia, non è possibile avere versioni side-by-side del VSPackage caricati in una singola versione di Visual Studio.
@@ -36,7 +36,7 @@ Il termine *side-by-side* significa che è possibile installare e gestire più v
    Per altre informazioni, vedere [installazione di pacchetti VSPackage con Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) nonché [gestione dei componenti](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  >  Installazione di una versione di Visual Studio installa anche una versione corrispondente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Ad esempio, l'installazione di Visual Studio 2010 e Visual Studio 2012 nello stesso computer installa anche le versioni 4.0 e 4.5 del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], rispettivamente.
+  > Installazione di una versione di Visual Studio installa anche una versione corrispondente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Ad esempio, l'installazione di Visual Studio 2010 e Visual Studio 2012 nello stesso computer installa anche le versioni 4.0 e 4.5 del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], rispettivamente.
 
 ## <a name="in-this-section"></a>In questa sezione
 - [Scelta tra condivise e i pacchetti VSPackage con controllo delle versioni](../extensibility/choosing-between-shared-and-versioned-vspackages.md) spiega come risolvere i problemi side-by-side nel pacchetto VSPackage.

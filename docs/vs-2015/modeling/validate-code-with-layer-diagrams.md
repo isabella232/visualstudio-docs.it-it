@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437481"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Convalidare il codice con diagrammi livello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
   È possibile convalidare manualmente il codice da un diagramma livello aperto in Visual Studio o da un prompt dei comandi. È inoltre possibile convalidare il codice automaticamente quando sono in esecuzione compilazioni locali o Team Foundation Build. Vedere [Video di Channel 9: Progettare e convalidare l'architettura utilizzando i diagrammi livello](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
->  Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.  
+> Se si desidera eseguire la convalida dei livelli in Team Foundation Build, è inoltre necessario installare la stessa versione di Visual Studio nel server di compilazione.  
   
 - [Se un elemento supporta la convalida](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
 1. Pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **Convalida architettura**.  
   
     > [!NOTE]
-    >  Per impostazione predefinita, il **Build Action** nel file del diagramma (con estensione layerdiagram) livello è impostata su **Validate** in modo che il diagramma è incluso nel processo di convalida.  
+    > Per impostazione predefinita, il **Build Action** nel file del diagramma (con estensione layerdiagram) livello è impostata su **Validate** in modo che il diagramma è incluso nel processo di convalida.  
   
      Il **elenco errori** finestra segnala tutti gli errori che si verificano. Per altre informazioni sugli errori di convalida, vedere [individuare e risolvere errori di convalida dei layer](#UnderstandingValidationErrors).  
   
 2. Per visualizzare l'origine di ogni errore, fare doppio clic su errore nel **elenco errori** finestra.  
   
     > [!NOTE]
-    >  In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Ciò si verifica quando il codice presenta una dipendenza in un assembly che non è specificata nel diagramma livello o quando al codice manca una dipendenza specificata nel diagramma livello. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per altre informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
+    > In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] potrebbe essere visualizzata una mappa codice anziché l'origine dell'errore. Ciò si verifica quando il codice presenta una dipendenza in un assembly che non è specificata nel diagramma livello o quando al codice manca una dipendenza specificata nel diagramma livello. Esaminare la mappa del codice o il codice per determinare se la dipendenza deve esistere. Per altre informazioni sulle mappe del codice, vedere [mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md).  
   
 3. Per gestire gli errori, vedere [gestire gli errori di convalida](#ManageErrors).  
   
@@ -145,7 +145,7 @@ Per assicurarsi che il codice non sia in conflitto con la progettazione, è poss
  Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni conflitti segnalati durante la convalida. Ad esempio, è possibile eliminare gli errori che sono già stati corretti o che non sono attinenti allo scenario in questione. Quando si elimina un errore, è buona norma registrare un elemento di lavoro in [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
->  Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
+> Per creare un elemento di lavoro o aggiungere un collegamento ad esso, è necessario essere già connessi al controllo del codice sorgente TFS. Se si prova ad aprire una connessione in un'istanza diversa del controllo del codice sorgente TFS, Visual Studio chiude automaticamente la soluzione corrente. Prima di provare a creare un elemento di lavoro o ad aggiungervi un collegamento, verificare di essere già connessi all'istanza appropriata del controllo del codice sorgente. Nelle versioni successive di Visual Studio, i comandi di menu non sono disponibili se non si è connessi a un'istanza del controllo del codice sorgente.  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Per creare un elemento di lavoro per un errore di convalida  
   

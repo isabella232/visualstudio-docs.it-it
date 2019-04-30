@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411361"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Creazione di gruppi riutilizzabili di pulsanti
 Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati insieme in un menu o sulla barra degli strumenti. Qualsiasi gruppo di comandi può essere riusato assegnandolo ai menu padre diverso nella sezione CommandPlacements del *vsct* file.
@@ -81,7 +81,7 @@ Un gruppo di comandi è una raccolta di comandi che vengono sempre visualizzati 
     ```
 
     > [!NOTE]
-    >  Il valore del campo priorità determina la posizione del comando nel nuovo gruppo di comando. Le priorità di impostare il CommandPlacement elemento sostituiscono quelli impostati nella definizione di elemento. I comandi che hanno valori di priorità inferiore vengono visualizzati prima i comandi che hanno valori di priorità superiore. Sono consentiti valori di priorità identici, ma la posizione relativa dei comandi con lo stesso valore di priorità non può essere garantita poiché l'ordine in cui il **devenv /setup** comando crea l'interfaccia finale dal Registro di sistema potrebbe non essere coerente.
+    > Il valore del campo priorità determina la posizione del comando nel nuovo gruppo di comando. Le priorità di impostare il CommandPlacement elemento sostituiscono quelli impostati nella definizione di elemento. I comandi che hanno valori di priorità inferiore vengono visualizzati prima i comandi che hanno valori di priorità superiore. Sono consentiti valori di priorità identici, ma la posizione relativa dei comandi con lo stesso valore di priorità non può essere garantita poiché l'ordine in cui il **devenv /setup** comando crea l'interfaccia finale dal Registro di sistema potrebbe non essere coerente.
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Inserire un gruppo riutilizzabile di pulsanti in un menu
 

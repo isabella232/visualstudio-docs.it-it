@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 3118ce72cd75baaf15fc66eedc5f2cd48c6f43d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422734"
 ---
 # <a name="making-custom-projects-version-aware"></a>Impostazione del riconoscimento della versione per i progetti personalizzati
 Nel sistema di progetto personalizzato è possibile consentire il caricamento di progetti di un tipo specifico in più versioni di Visual Studio. È anche possibile impedire che progetti di un tipo specifico vengano caricati in una versione precedente di Visual Studio. È inoltre possibile consentire al progetto di identificarsi in una versione successiva in caso sia necessaria un'operazione di ripristino, conversione o deprecazione.  
@@ -37,7 +37,7 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
 6. `VSPUVF_PROJECT_DEPRECATED`: Indica che questo progetto non è più supportato.  
   
 > [!NOTE]
->  Per evitare confusione, non combinare flag di aggiornamento quando li si imposta. Ad esempio, non creare uno stato di aggiornamento ambiguo, come `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
+> Per evitare confusione, non combinare flag di aggiornamento quando li si imposta. Ad esempio, non creare uno stato di aggiornamento ambiguo, come `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
   
  Le versioni del progetto possono implementare la funzione `UpgradeProjectFlavor_CheckOnly` dall'interfaccia `IVsProjectFlavorUpgradeViaFactory2` . Per far funzionare correttamente questa funzione, l'implementazione di `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly` indicata in precedenza deve eseguire la chiamata alla funzione. Questa chiamata è già implementata nel sistema di progetto di base di Visual Basic o C#. L'effetto di questa funzione consente alle versioni del progetto di determinare anche i requisiti di aggiornamento di un progetto, in aggiunta a ciò che è stato determinato dal sistema di progetto di base. La finestra di dialogo relativa alla compatibilità mostra il più rigoroso dei due requisiti.  
   
@@ -72,7 +72,7 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
      Se si implementa questo codice, verrà visualizzata una finestra di dialogo relativa alla compatibilità del progetto. La finestra di dialogo chiederà all'utente l'autorizzazione per contrassegnare tutti i progetti specificati come incompatibili. Se l'utente acconsente, `AskForUserConsentToBreakAssetCompat` restituisce `S_OK`; in caso contrario, `AskForUserConsentToBreakAssetCompat` restituisce `OLE_E_PROMPTSAVECANCELLED`.  
   
     > [!WARNING]
-    >  Negli scenari più comuni, la matrice `IVsHierarchy` conterrà un solo elemento.  
+    > Negli scenari più comuni, la matrice `IVsHierarchy` conterrà un solo elemento.  
   
 3. Se `AskForUserConsentToBreakAssetCompat` restituisce `S_OK`, il componente esegue o accetta le modifiche che interrompono la compatibilità.  
   
@@ -98,7 +98,7 @@ Nel sistema di progetto personalizzato è possibile consentire il caricamento di
      Per altre informazioni, vedere <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
 > [!IMPORTANT]
->  È necessario implementare la proprietà `VSHPROPID_MinimumDesignTimeCompatVersion` per contrassegnare un progetto come compatibile o incompatibile. Ad esempio, se il sistema di progetto usa un file di progetto MSBuild, aggiungere al file di progetto una proprietà di compilazione `<MinimumVisualStudioVersion>` con un valore uguale al valore della proprietà `VSHPROPID_MinimumDesignTimeCompatVersion` corrispondente.  
+> È necessario implementare la proprietà `VSHPROPID_MinimumDesignTimeCompatVersion` per contrassegnare un progetto come compatibile o incompatibile. Ad esempio, se il sistema di progetto usa un file di progetto MSBuild, aggiungere al file di progetto una proprietà di compilazione `<MinimumVisualStudioVersion>` con un valore uguale al valore della proprietà `VSHPROPID_MinimumDesignTimeCompatVersion` corrispondente.  
   
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Rilevamento dell'incompatibilità di un progetto  
  È necessario impedire che un progetto incompatibile con la versione corrente di Visual Studio venga caricato. Inoltre, un progetto incompatibile non può essere aggiornato o ripristinato. È quindi necessario controllare due volte la compatibilità di un progetto: una prima volta quando si prende in considerazione il ripristino o l'aggiornamento e una seconda volta prima del caricamento.  
@@ -129,7 +129,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
    Le nuove implementazioni in `IVsProjectUpgradeViaFactory4` e `IVsProjectFlavorUpgradeViaFactory2` consentono di specificare il tipo di migrazione in modo più preciso.  
   
 > [!NOTE]
->  È possibile memorizzare nella cache il risultato del controllo di compatibilità eseguito dal metodo `UpgradeProject_CheckOnly` , in modo che possa essere usato anche dalla chiamata seguente a `CreateProject`.  
+> È possibile memorizzare nella cache il risultato del controllo di compatibilità eseguito dal metodo `UpgradeProject_CheckOnly` , in modo che possa essere usato anche dalla chiamata seguente a `CreateProject`.  
   
  Ad esempio, se i metodi `UpgradeProject_CheckOnly` e `CreateProject` scritti per un sistema di progetto [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1 analizzano un file di progetto e determinano che la proprietà di compilazione `<MinimumVisualStudioVersion>` è "11.0", Visual Studio 2010 con SP1 non caricherà il progetto. Inoltre, lo strumento di **esplorazione della soluzione** indicherebbe che il progetto è "incompatibile" e non verrà caricato.  
   

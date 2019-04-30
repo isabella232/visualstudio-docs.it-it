@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440877"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procedura dettagliata: Visualizzare i riquadri attività personalizzati con messaggi di posta elettronica in Outlook
   Questa procedura dettagliata viene illustrato come visualizzare un'istanza univoca di un riquadro attività personalizzato con ogni messaggio di posta elettronica che viene creato o aperto. Gli utenti possono visualizzare o nascondere il riquadro attività personalizzato usando un pulsante nella barra multifunzione di ogni messaggio di posta elettronica.
@@ -31,7 +31,7 @@ ms.locfileid: "60062556"
  Per visualizzare un riquadro attività personalizzato con più finestre di esplorazione o di controllo, è necessario creare un'istanza del riquadro attività personalizzato per ogni finestra aperta. Per altre informazioni sul comportamento dei riquadri attività personalizzati nelle finestre Outlook, vedere [riquadri attività personalizzati](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  Questa procedura dettagliata presenta il codice del componente aggiuntivo VSTO in sezioni di piccole dimensioni per semplificare la descrizione della logica su cui si basa il codice.
+> Questa procedura dettagliata presenta il codice del componente aggiuntivo VSTO in sezioni di piccole dimensioni per semplificare la descrizione della logica su cui si basa il codice.
 
  Questa procedura dettagliata illustra le attività seguenti:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062556"
 - Sincronizzazione dell'interruttore della barra multifunzione con il riquadro attività personalizzato.
 
 > [!NOTE]
->  I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prerequisiti
  Per completare la procedura dettagliata, è necessario disporre dei componenti seguenti:

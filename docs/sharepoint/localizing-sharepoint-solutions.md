@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444354"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizzazione di soluzioni SharePoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639921"
  Per localizzare una soluzione, rimuovere stringhe hardcoded dal codice ed estrarle in file di risorse. Un file di risorse è un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-basati su file con un *resx* estensione. Il file di risorse contiene le versioni tradotte delle stringhe utilizzate nella soluzione. Per altre informazioni, vedere [risorse nelle applicazioni](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Aggiungere solo le risorse di stringa ai file di risorse di soluzione SharePoint. Anche se l'Editor di risorse consente di aggiungere le risorse non di tipo stringa, non distribuire le risorse non di tipo stringa in SharePoint.
+> Aggiungere solo le risorse di stringa ai file di risorse di soluzione SharePoint. Anche se l'Editor di risorse consente di aggiungere le risorse non di tipo stringa, non distribuire le risorse non di tipo stringa in SharePoint.
 
 ## <a name="resource-files"></a>File di risorse
  Esistono tre tipi di file di risorse: predefinito, indipendente dalla lingua e specifico della lingua.
@@ -76,7 +76,7 @@ $Resources:String ID
  Impostare il **tipo di distribuzione** proprietà di ogni file di risorse da **AppGlobalResource**. In questo modo i file di risorse da distribuire nella cartella App_GlobalResources, dove sono disponibili per tutte le pagine ASPX e i controlli nella soluzione. La cartella App_GlobalResources si trova in C:\inetpub\wwwroot\wss\VirtualDirectories\\< numero porta\>\App_GlobalResources.
 
 > [!NOTE]
->  Se si utilizzano file di risorse non globali, spostarli nella cartella di elementi del progetto per abilitare il tipo di distribuzione e altre proprietà specifiche di SharePoint.
+> Se si utilizzano file di risorse non globali, spostarli nella cartella di elementi del progetto per abilitare il tipo di distribuzione e altre proprietà specifiche di SharePoint.
 
  Sono anche utilizzabile i file di risorse di markup ASPX per localizzare il codice. Se si utilizzano le risorse per localizzare codice oltre al markup ASPX, lasciare l'azione di compilazione impostazione della proprietà di ogni file come risorsa incorporata per la risorsa per la compilazione in un assembly satellite. Tuttavia, se si usa i file di risorse solo per localizzare il markup, è facoltativamente possibile modificare l'azione di compilazione al contenuto per impedire che il file venga compilato nell'assembly principale dell'applicazione.
 

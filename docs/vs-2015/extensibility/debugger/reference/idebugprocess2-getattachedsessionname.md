@@ -12,12 +12,12 @@ ms.assetid: 7e5e116f-2c0c-4bc8-ad3f-e9fd2318a7e4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 39975163cdddf06ba87add52e60c9a81581985ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3acc40e2b906bd46b832d9fa11578de346014042
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434062"
 ---
 # <a name="idebugprocess2getattachedsessionname"></a>IDebugProcess2::GetAttachedSessionName
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58967171"
 Ottiene il nome della sessione che sta eseguendo il debug questo processo. Un IDE per visualizzare queste informazioni a un utente che il debug di un processo specifico in un computer specifico.  
   
 > [!NOTE]
->  Questo metodo è deprecato e la relativa implementazione deve sempre restituire `E_NOTIMPL`.  
+> Questo metodo è deprecato e la relativa implementazione deve sempre restituire `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Sintassi  
   

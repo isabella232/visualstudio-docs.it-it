@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445487"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizzare le funzionalità dell'interfaccia utente usando le interfacce di estendibilità
   Gli strumenti di sviluppo di Office in Visual Studio forniscono classi e finestre di progettazione che gestiscono molti dettagli di implementazione quando vengono usate per creare riquadri attività personalizzati, personalizzazioni della barra multifunzione e aree del modulo di Outlook in un componente aggiuntivo VSTO. Tuttavia, se sono necessari requisiti speciali è anche possibile implementare *l'interfaccia di estendibilità* per ogni funzionalità.
@@ -63,7 +63,7 @@ ms.locfileid: "56622930"
 - La classe `TaskPaneUI` fornisce l'interfaccia utente del riquadro attività. Gli attributi della classe `TaskPaneUI` rendono la classe visibile a COM, permettendo alle applicazioni di Microsoft Office di individuare la classe. In questo esempio, <xref:System.Windows.Forms.UserControl>è un'interfaccia utente vuota, ma è possibile aggiungere i controlli modificando il codice.
 
   > [!NOTE]
-  >  Per esporre la classe `TaskPaneUI` a COM è necessario impostare anche la proprietà **Registra per interoperabilità COM** per il progetto.
+  > Per esporre la classe `TaskPaneUI` a COM è necessario impostare anche la proprietà **Registra per interoperabilità COM** per il progetto.
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

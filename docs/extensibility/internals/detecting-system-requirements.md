@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4232a057c97d3d457a60d97fa000090c18428f66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420698"
 ---
 # <a name="detect-system-requirements"></a>Rilevare i requisiti di sistema
 Un pacchetto VSPackage non può funzionare a meno che non è installato Visual Studio. Quando si usa Microsoft Windows Installer per gestire l'installazione del pacchetto VSPackage, è possibile configurare il programma di installazione per verificare se è installato Visual Studio. È anche possibile configurare e controllare il sistema per altri requisiti, ad esempio, una particolare versione di Windows o una determinata quantità di RAM.
@@ -33,7 +33,7 @@ Un pacchetto VSPackage non può funzionare a meno che non è installato Visual S
 Quando si installa un'edizione più recente, le chiavi del Registro di sistema per tale edizione vengono aggiunti anche per quanto riguarda le versioni precedenti. Vale a dire, se è installata la versione Enterprise edition, il **installare** chiave è impostata su *1* per Enterprise, nonché per le edizioni Professional e Community. Pertanto, è necessario controllare solo per l'edizione più recente, che è necessario.
 
 > [!NOTE]
->  Nella versione a 64 bit dell'editor del Registro di sistema, chiavi a 32 bit vengono visualizzate nelle **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Le chiavi di Visual Studio si trovano **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> Nella versione a 64 bit dell'editor del Registro di sistema, chiavi a 32 bit vengono visualizzate nelle **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Le chiavi di Visual Studio si trovano **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
 
 |Prodotto|Chiave|
 |-------------|---------|

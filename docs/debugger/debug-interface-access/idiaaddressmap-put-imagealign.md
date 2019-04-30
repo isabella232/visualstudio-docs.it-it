@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2126d59d223e4923609071fa130b1cac465073ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e07bdd71300ed485862a4a95f1f9cbc06b32772
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402653"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Imposta l'allineamento dell'immagine.
@@ -38,13 +38,13 @@ HRESULT put_imageAlign ( 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
 
-## <a name="remarks"></a>Osservazioni
- Immagini (caricare file eseguibili) sono allineate a limiti di memoria specificato. Questo allineamento può essere influenzato dall'architettura di sistema corrente e da opzioni della fase di compilazione e collegamento. Allineamento dell'immagine è sempre nei limiti di byte. I valori di allineamento di immagine seguenti sono validi: i limiti di 1, 2, 4, 8, 16, 32 e 64 byte.
+## <a name="remarks"></a>Note
+ Immagini (caricare file eseguibili) sono allineate a limiti di memoria specificato. Questo allineamento può essere influenzato dall'architettura di sistema corrente e da opzioni della fase di compilazione e collegamento. Allineamento dell'immagine è sempre nei limiti di byte. I valori di allineamento di immagine seguenti sono validi: limiti di 1, 2, 4, 8, 16, 32 e 64 byte.
 
  L'allineamento dell'immagine corrente può essere recuperato con una chiamata per il [Get_imagealign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) (metodo).
 
 > [!NOTE]
->  L'immagine è già caricata entro l'ora di che questo metodo può essere chiamato. Il `put_imageAlign` metodo viene in genere utilizzato quando l'immagine è stato spostato o modificato e un allineamento nuovo è obbligatorio.
+> L'immagine è già caricata entro l'ora di che questo metodo può essere chiamato. Il `put_imageAlign` metodo viene in genere utilizzato quando l'immagine è stato spostato o modificato e un allineamento nuovo è obbligatorio.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

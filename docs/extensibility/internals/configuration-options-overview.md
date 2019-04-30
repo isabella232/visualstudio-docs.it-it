@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415147"
 ---
 # <a name="configuration-options-overview"></a>Panoramica sulle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può supportare più configurazioni che possono essere compilate, sottoposto a debug, esecuzione e/o distribuita. Una configurazione è un tipo di compilazione descritto con un set denominato di proprietà, in genere le opzioni del compilatore e percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni *Debug* e *rilascio*. Queste configurazioni possono essere applicate con le relative impostazioni predefinite, o modificata per soddisfare i requisiti di progetto e/o soluzioni specifici. Alcuni pacchetti possono essere compilati in due modi: come editor ActiveX o come un componente sul posto. I progetti non sono necessario supportare più configurazioni, tuttavia. Se è disponibile solo una configurazione, tale configurazione viene mappata in tutte le configurazioni di soluzione.
@@ -36,7 +36,7 @@ I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può 
 |*MyConfig*|N/D|\<Impostazioni MyConfig Win64 >|
 
 > [!NOTE]
->  Non è possibile creare un *MyConfig* configurazione della soluzione che esclude una piattaforma di Win32, a meno che il progetto di destinazione non supporta Win32.
+> Non è possibile creare un *MyConfig* configurazione della soluzione che esclude una piattaforma di Win32, a meno che il progetto di destinazione non supporta Win32.
 
  Modifica la configurazione attiva per una soluzione consente di selezionare il set di configurazioni di progetto viene compilato, eseguire, eseguire il debug o distribuito in tale soluzione. Ad esempio, se si modifica la configurazione soluzione attiva da *Release* a *Debug*, tutti i progetti all'interno della soluzione vengono creati automaticamente con la configurazione del progetto indicato nel configurazione di debug della soluzione. Le configurazioni di progetto sono detti anche *Debug* , a meno che l'utente ha apportato modifiche manuali dell'ambiente di Configuration Manager.
 

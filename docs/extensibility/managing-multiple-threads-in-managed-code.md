@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7eac5329fb5bfacb036e8f0ed585b96ded2a069
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431329"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Procedura: Gestire più thread in codice gestito
 Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni che abbia le operazioni eseguite su thread diversi dal thread dell'interfaccia utente di Visual Studio, è necessario seguire le linee guida indicate di seguito. È possibile mantenere reattivo il thread dell'interfaccia utente perché non è necessario attendere per il lavoro in un altro thread per il completamento. È possibile rendere il codice più efficiente, perché non si dispone di un thread aggiuntivo che occupano lo spazio dello stack e si può rendere più affidabili e facili da eseguire il debug perché è evitare blocchi e deadlock.
@@ -21,7 +21,7 @@ Se si dispone di un'estensione VSPackage gestita che chiama i metodi asincroni c
  In generale, è possibile passare dal thread dell'interfaccia utente a un altro thread, o viceversa. Quando il metodo termina, il thread corrente è il thread da cui è stato originariamente denominato.
 
 > [!IMPORTANT]
->  Le linee guida seguenti usano le API nel <xref:Microsoft.VisualStudio.Threading> spazio dei nomi, in particolare, il <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Le API in questo spazio dei nomi sono una novità [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. È possibile ottenere un'istanza di un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> dal <xref:Microsoft.VisualStudio.Shell.ThreadHelper> proprietà `ThreadHelper.JoinableTaskFactory`.
+> Le linee guida seguenti usano le API nel <xref:Microsoft.VisualStudio.Threading> spazio dei nomi, in particolare, il <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. Le API in questo spazio dei nomi sono una novità [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. È possibile ottenere un'istanza di un <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> dal <xref:Microsoft.VisualStudio.Shell.ThreadHelper> proprietà `ThreadHelper.JoinableTaskFactory`.
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Passare dal thread dell'interfaccia utente a un thread in background
 

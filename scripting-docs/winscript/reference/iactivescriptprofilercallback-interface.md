@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b28f07318a89e0944bf23e937f174c50c1e8a82d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8f64f187638af7f9ab4bf6b80e88fe6992c78e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386084"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>Interfaccia IActiveScriptProfilerCallback
 Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto del profiler quando si verificano eventi. Questa interfaccia viene implementata dall'oggetto del profiler.  
@@ -36,7 +36,7 @@ Fornisce i metodi utilizzati dal motore di scripting per notificare a un oggetto
  Notifica delle chiamate di funzione nel modello DOM (Document Object) avviene tramite il [interfaccia IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md).  
   
 > [!NOTE]
->  Per aggiungere la possibilità di avviare e interrompere la profilatura quando uno script è in esecuzione, chiamare i metodi seguenti. Usando questi metodi, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia o arresta la profilatura.  
+> Per aggiungere la possibilità di avviare e interrompere la profilatura quando uno script è in esecuzione, chiamare i metodi seguenti. Usando questi metodi, è possibile ottenere lo stack di chiamate completo se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] è in esecuzione quando si avvia o arresta la profilatura.  
 > 
 > - Chiamare [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) per notificare al profiler che sia stato avviato di profilatura.  
 >   - Chiamare [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) per notificare al profiler che verrà presto interrompere la profilatura.  

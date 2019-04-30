@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445700"
 ---
 # <a name="hosting-process-vshostexe"></a>Processo di hosting (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788134"
 Il processo di hosting è una funzionalità di Visual Studio che migliora le prestazioni del debugger, abilita il debug in contesti di attendibilità parziale e la valutazione delle espressioni nella fase di progettazione. I file del processo di hosting contengono vshost nel nome del file e vengono inseriti nella cartella di output del progetto. Per altre informazioni, vedere [Debug e processo di hosting](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  I file del processo di hosting (.vshost.exe) vengono usati da Visual Studio e non devono essere eseguiti direttamente o distribuiti con l'applicazione.  
+> I file del processo di hosting (.vshost.exe) vengono usati da Visual Studio e non devono essere eseguiti direttamente o distribuiti con l'applicazione.  
   
 ## <a name="improved-debugging-performance"></a>Prestazioni di debug migliorate  
  Il processo di hosting crea un dominio dell'applicazione e associa il debugger all'applicazione. L'esecuzione di queste attività può causare un notevole ritardo tra l'inizio del debug e l'avvio dell'applicazione. Il processo di hosting consente di migliorare le prestazioni creando il dominio dell'applicazione, associando il debugger in background e salvando il dominio dell'applicazione e lo stato del debugger tra le esecuzioni dell'applicazione. Per altre informazioni sui domini dell'applicazione, vedere [Domini dell'applicazione](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
@@ -38,6 +38,6 @@ Il processo di hosting è una funzionalità di Visual Studio che migliora le pre
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug e processo di hosting](../debugger/debugging-and-the-hosting-process.md)   
- [Procedura: Disabilitare il processo di hosting](../ide/how-to-disable-the-hosting-process.md)   
+ [Procedura: Disable the Hosting Process](../ide/how-to-disable-the-hosting-process.md)   
  [Finestra di controllo immediato](../ide/reference/immediate-window.md)   
  [Domini dell'applicazione](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)

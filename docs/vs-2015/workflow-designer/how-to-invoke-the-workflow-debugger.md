@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444149"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Procedura: Richiamare il debugger del flusso di lavoro
 Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si esegue il debug di programmi scritti negli altri linguaggi di programmazione di Visual Studio. È possibile avviare il debugger del flusso di lavoro nei modi seguenti:  
@@ -26,7 +26,7 @@ Generalmente si esegue il debug dei flussi di lavoro nello stesso modo in cui si
 - Usare debug remoto. Per informazioni sul debug remoto, vedere [come: Abilitare il debug remoto](http://go.microsoft.com/fwlink/?LinkId=196257).  
   
     > [!NOTE]
-    >  Se l'applicazione del flusso di lavoro ha come destinazione x86 architettura ed è ospitato in un computer che eseguono un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che non [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] è installato nel computer remoto o la destinazione dell'applicazione del flusso di lavoro è stata modificata in **Qualsiasi CPU**.  
+    > Se l'applicazione del flusso di lavoro ha come destinazione x86 architettura ed è ospitato in un computer che eseguono un sistema operativo a 64 bit, il debug remoto non funzionerà a meno che non [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] è installato nel computer remoto o la destinazione dell'applicazione del flusso di lavoro è stata modificata in **Qualsiasi CPU**.  
   
 ### <a name="stepping-through-code"></a>Esecuzione di codice istruzione per istruzione  
   

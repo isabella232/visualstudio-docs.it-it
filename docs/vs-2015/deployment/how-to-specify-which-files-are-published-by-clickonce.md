@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441578"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedura: Specificare i file da pubblicare mediante ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
 4. Nel **i file dell'applicazione** finestra di dialogo, seleziona la **gruppo** field per un file che si desidera includere nel nuovo gruppo.  
   
     > [!NOTE]
-    >  I file devono avere la **azione di compilazione** proprietà impostata su **contenuto** prima che vengano visualizzati i nomi dei file nei **i file dell'applicazione** nella finestra di dialogo.  
+    > I file devono avere la **azione di compilazione** proprietà impostata su **contenuto** prima che vengano visualizzati i nomi dei file nei **i file dell'applicazione** nella finestra di dialogo.  
   
 5. Nel **gruppo di Download** campi, selezionare  **\<nuovo... >** nell'elenco a discesa.  
   
@@ -114,7 +114,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i f
 5. Nel **gruppo di Download** campo, selezionare un gruppo di nell'elenco a discesa.  
   
     > [!NOTE]
-    >  Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione.  
+    > Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   

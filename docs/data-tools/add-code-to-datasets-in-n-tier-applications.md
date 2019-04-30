@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402866"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Aggiungere il codice nei set di dati di applicazioni a più livelli
 È possibile estendere le funzionalità di un set di dati creando un file di classe parziale per il set di dati e aggiungendovi il codice (invece di aggiungere codice per il *DatasetName*. File di DataSet). Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per altre informazioni, vedere [parziali](/dotnet/visual-basic/language-reference/modifiers/partial) oppure [classi e metodi parziali](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -28,10 +28,10 @@ Il codice che definisce un set di dati viene generato ogni volta che vengono app
 Per impostazione predefinita, dopo aver separato il dataset e TableAdapter codice, il risultato è un file di classe discreti in ogni progetto. Il progetto originale include un file denominato *NomeDataset.Designer.vb* (o *NomeDataset.Designer.cs*) che contiene il codice oggetto TableAdapter. Il progetto che è designato nel **DataSetProject** proprietà dispone di un file denominato *NomeDataset* (o *NomeDataset*) . Questo file contiene il codice del dataset.
 
 > [!NOTE]
->  Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
+> Quando si separano i DataSet e TableAdapter (impostando il **DataSetProject** proprietà), sarà spostate automaticamente classi parziali del dataset presenti nel progetto. Le classi parziali del dataset devono essere spostate manualmente nel progetto di dataset.
 
 > [!NOTE]
->  Quando il codice di convalida deve essere aggiunto, il dataset tipizzato fornisce la funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> gestori eventi. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quando il codice di convalida deve essere aggiunto, il dataset tipizzato fornisce la funzionalità per la generazione <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> gestori eventi. Per altre informazioni, vedere [aggiungere la convalida a un set di dati a più livelli](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Per aggiungere codice al set di dati in applicazioni a più livelli
 

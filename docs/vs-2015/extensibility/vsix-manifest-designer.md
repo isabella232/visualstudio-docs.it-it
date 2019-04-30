@@ -14,12 +14,12 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 308259e7addcf41ae6e15191934a8c37ac3f57b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387562"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
  Per aprire la **progettazione del manifesto VSIX**, individuare un file nella cartella vsixmanifest **Esplora soluzioni**e aprire il file. Se il file non contiene un XML valido, non si aprirà la finestra di progettazione manifesto.  
   
 > [!NOTE]
->  Vsixmanifest è output Extension. vsixmanifest quando il pacchetto viene compilato.  
+> Vsixmanifest è output Extension. vsixmanifest quando il pacchetto viene compilato.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  Il **progettazione del manifesto VSIX** contiene quattro sezioni che corrispondono a questi elementi di primo livello dello schema:  

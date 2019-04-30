@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b861d0437e44e9ad5fd912981357a02fb2210482
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 87adaa2e43068784e5ec6488030f147891a027dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406048"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_hasEHa(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.  
   
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.  
   
 ## <a name="remarks"></a>Note  
  È possibile combinare asincrona o non strutturate gestione delle eccezioni con la gestione delle eccezioni di tipo C++, ma necessaria un'opzione del compilatore specifici, /EHa, per abilitarlo.  

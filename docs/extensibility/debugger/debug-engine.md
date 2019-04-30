@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ca18559b9a0e6ad1569f2e7e9f93980005cd86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c49bbe85f24291c9a173bb513ebc3810148a26b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411287"
 ---
 # <a name="debug-engine"></a>Motore di debug
 Un motore di debug (DE) funziona con l'interprete o sistema operativo per fornire servizi di debug, ad esempio valutazione dell'espressione di controllo e i punti di interruzione esecuzione. La Germania è responsabile per il monitoraggio dello stato di un programma in fase di debug. A tale scopo, la Germania utilizza qualsiasi metodo è disponibili per il processo del runtime supportati, sia dalla CPU o dalle API fornita dal runtime.
@@ -23,13 +23,13 @@ Un motore di debug (DE) funziona con l'interprete o sistema operativo per fornir
  Ad esempio, common language runtime (CLR) fornisce meccanismi per monitorare un programma in esecuzione tramite le interfacce ICorDebugXXX. Un CRI che supporta Common Language Runtime Usa le interfacce appropriate ICorDebugXXX per tenere traccia di un programma di codice gestito in fase di debug. Comunica quindi tutte le modifiche dello stato per la gestione di debug di sessione (SDM), che inoltra tali informazioni per il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
 > [!NOTE]
->  Un motore di debug destinato a una specifica del runtime, vale a dire, il sistema in cui il programma in fase di debug viene eseguito. CLR è il runtime per il codice gestito e il runtime di Win32 è per le applicazioni Windows native. Se la lingua è creare può avere come destinazione uno di questi due runtime, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce già i motori di debug necessari. Tutto ciò che devi implementare è un analizzatore di espressioni.
+> Un motore di debug destinato a una specifica del runtime, vale a dire, il sistema in cui il programma in fase di debug viene eseguito. CLR è il runtime per il codice gestito e il runtime di Win32 è per le applicazioni Windows native. Se la lingua è creare può avere come destinazione uno di questi due runtime, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornisce già i motori di debug necessari. Tutto ciò che devi implementare è un analizzatore di espressioni.
 
 ## <a name="debug-engine-operation"></a>Operazione del motore di debug
  I servizi di monitoraggio vengono implementati tramite le interfacce DE e possono causare il pacchetto di debug per la transizione tra diverse modalità operative. Per altre informazioni, vedere [modalità operative](../../extensibility/debugger/operational-modes.md). È in genere solo un'implementazione di DE per ogni ambiente run-time.
 
 > [!NOTE]
->  Anche se sono disponibili implementazioni separate di DE per Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] condividono un singolo DE.
+> Anche se sono disponibili implementazioni separate di DE per Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] condividono un singolo DE.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Abilita debug motori per eseguire una delle due modalità di debug: entrambi nello stesso processo come il [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] della shell o nello stesso processo come programma di destinazione in fase di debug. La seconda forma si verifica in genere quando il processo sottoposto a debug è effettivamente uno script in esecuzione con un interprete. Il motore di debug deve avere una conoscenza approfondita dell'interprete per monitorare lo script. In questo caso, l'interprete è effettivamente una fase di esecuzione. motori di debug sono per le implementazioni di specifica del runtime. Implementazione di un singolo DE, inoltre, può essere suddivise tra i limiti di processo e del computer (ad esempio, il debug remoto).
 

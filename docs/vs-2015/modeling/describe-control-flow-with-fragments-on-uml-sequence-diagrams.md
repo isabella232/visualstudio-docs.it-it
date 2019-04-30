@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422531"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
  Un frammento combinato è costituito da uno o più *operandi interazione*, ognuno dei quali racchiude uno o più messaggi, utilizzi interazione o frammenti combinati.  
   
 > [!NOTE]
->  Questo argomento descrive i frammenti nei diagrammi di sequenza. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: informazioni di riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Questo argomento descrive i frammenti nei diagrammi di sequenza. Per altre informazioni su come leggere i diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: informazioni di riferimento](../modeling/uml-sequence-diagrams-reference.md). Per altre informazioni su come creare diagrammi di sequenza UML, vedere [diagrammi di sequenza UML: Linee guida](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Frammento con due operandi interazione combinato](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
 3. È possibile selezionare ogni operando interazione separatamente facendo clic al suo interno. In questo esempio è selezionato l'operando interazione superiore, in modo da poter visualizzare il suo limite. In genere, è visibile solo la linea di separazione tra gli operandi interazione.  
   
     > [!NOTE]
-    >  Per selezionare l'operando interazione superiore, è necessario fare clic non troppo vicino alla parte superiore del frammento combinato.  
+    > Per selezionare l'operando interazione superiore, è necessario fare clic non troppo vicino alla parte superiore del frammento combinato.  
   
 4. Clausole guard. È possibile assegnare una clausola guard a ogni operando interazione. La clausola guard descrive la condizione in cui verranno eseguiti i messaggi all'interno dell'operando interazione.  
   
@@ -57,7 +57,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
 1. Selezionare un messaggio, o una sequenza di messaggi, che iniziano tutti nella stessa linea di vita o occorrenza esecuzione.  
   
    > [!NOTE]
-   >  Se si selezionano più messaggi, questi devono formare una sequenza ininterrotta.  
+   > Se si selezionano più messaggi, questi devono formare una sequenza ininterrotta.  
   
 2. Fare clic con il pulsante destro del mouse su uno dei messaggi, scegliere **Racchiudi tra**e quindi fare clic sul tipo di frammento combinato desiderato, ad esempio **Alterna frammento combinato**.  
   
@@ -100,7 +100,7 @@ In un diagramma di sequenza UML i *frammenti combinati* permettono di mostrare c
 - Fare clic con il pulsante destro del mouse sul titolo del frammento combinato e quindi scegliere **Proprietà**.  
   
     > [!NOTE]
-    >  Tipi diversi di frammento combinato hanno proprietà diverse.  
+    > Tipi diversi di frammento combinato hanno proprietà diverse.  
   
 ## <a name="KindsOfFragment"></a> Tipi di frammento combinato  
   

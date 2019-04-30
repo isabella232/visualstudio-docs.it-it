@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437466"
 ---
 # <a name="validate-your-uml-model"></a>Eseguire la convalida di un modello UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Alcuni dei modelli UML che è possibile creare in Visual Studio potrebbero esser
 - **Comando di convalida.** Per richiamare la convalida in qualsiasi momento, fare clic su **convalida modello UML** nel **architettura** menu.  
   
   > [!NOTE]
-  >  Il comando verrà visualizzato solo se i vincoli di convalida sono installati.  
+  > Il comando verrà visualizzato solo se i vincoli di convalida sono installati.  
   
 - **Al salvataggio di un modello.** È possibile applicare vincoli di convalida quando si salva il modello. Lo scopo di questi vincoli è garantire che non si salvi un modello non valido in base all'interpretazione del progetto.  
   

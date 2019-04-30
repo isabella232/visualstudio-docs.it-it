@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d9b348f4aedbb63dc99d6bb3fcf0ce69f2f22f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3aa09e0e40250d1e7d40ec0f85adca617852919f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401280"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
 Recupera l'indirizzo virtuale (valutazione della vulnerabilità) della posizione. Utilizzare quando le [enumerazione LocationType](../../debugger/debug-interface-access/locationtype.md) è impostata su `LocIsStatic`.
@@ -39,7 +39,7 @@ HRESULT get_virtualAddress ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

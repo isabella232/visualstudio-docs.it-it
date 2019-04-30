@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 694b4dd1531dc196d06ba46eb8c5b77f66052bc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436219"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Visualizzare un modello UML nei diagrammi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ In questo argomento
  `Context.CurrentDiagram as IClassDiagram;`  
   
 > [!NOTE]
->  Un'istanza di `IDiagram` (e i relativi sottotipi, ad esempio `IClassDiagram`) è valido solo all'interno del comando che si sta elaborando. Non è consigliabile mantenere un oggetto `IDiagram` in una variabile persistente mentre il controllo viene restituito all'utente.  
+> Un'istanza di `IDiagram` (e i relativi sottotipi, ad esempio `IClassDiagram`) è valido solo all'interno del comando che si sta elaborando. Non è consigliabile mantenere un oggetto `IDiagram` in una variabile persistente mentre il controllo viene restituito all'utente.  
   
  Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   

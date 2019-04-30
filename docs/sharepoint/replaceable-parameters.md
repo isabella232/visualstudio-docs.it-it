@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422908"
 ---
 # <a name="replaceable-parameters"></a>Parametri sostituibili
   Parametri sostituibili, oppure *token*, può essere usato nei file di progetto per fornire valori per elementi di soluzione SharePoint con i valori effettivi non sono noti in fase di progettazione. Si tratta di una funzione simile allo standard [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] token del modello. Per altre informazioni, vedere [parametri di modello](../ide/template-parameters.md).
@@ -48,7 +48,7 @@ ms.locfileid: "56611867"
 ## <a name="tokens-list"></a>Elenco token
  La tabella seguente elenca i token disponibili.
 
-|nome|Descrizione|
+|Nome|Descrizione|
 |----------|-----------------|
 |$SharePoint.Project.FileName$|Il nome dell'oggetto contenitore, ad esempio, file, progetto *NewProj*.|
 |$SharePoint.Project.FileNameWithoutExtension$|Il nome del file di progetto contenitore senza l'estensione del nome file. Ad esempio, "NewProj".|
@@ -86,7 +86,7 @@ ms.locfileid: "56611867"
   È tuttavia possibile aggiungere altre estensioni di file all'elenco. Aggiungere un `<TokenReplacementFileExtensions>` elemento a qualsiasi oggetto PropertyGroup nel file di progetto SharePoint definito prima il \<Import > del file di destinazioni di SharePoint.
 
 > [!NOTE]
->  Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, non è possibile aggiungere estensioni di file per i tipi di file che vengono compilati, ad esempio *cs*, *vb* oppure *resx*. I token vengono sostituiti solo nei file non compilati.
+> Poiché la sostituzione dei token si verifica dopo la compilazione di un progetto, non è possibile aggiungere estensioni di file per i tipi di file che vengono compilati, ad esempio *cs*, *vb* oppure *resx*. I token vengono sostituiti solo nei file non compilati.
 
  Ad esempio, per aggiungere le estensioni del nome file (*MyExtension* e *yourextension*) all'elenco di estensioni di file di sostituzione dei token, aggiungere quanto segue a un progetto (*csproj* ) file:
 

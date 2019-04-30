@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437266"
 ---
 # <a name="windows-installer-basics"></a>Nozioni di base su Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Il programma di installazione di Windows installa e Disinstalla applicazioni o i
  Due set di regole determinano la distribuzione di risorse tramite i componenti del programma di installazione. Un set di regole viene mantenuto dal programma di installazione di Windows, anche se è necessario applicare il secondo set come autore di installazione.  
   
 > [!NOTE]
->  Imposizione di regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, vengono avvisati trattare queste regole come procedure consigliate. Per altre informazioni, vedere [la convalida di un Database di installazione](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [convalida dei pacchetti](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Imposizione di regole di Windows Installer si verifica solo se si esegue una convalida del file con estensione msi. Tuttavia, vengono avvisati trattare queste regole come procedure consigliate. Per altre informazioni, vedere [la convalida di un Database di installazione](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [convalida dei pacchetti](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Regole applicate a livello di programma di installazione  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98ab9edd260a190e1eb73b16a2ac71ed271ccdf7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cf4a0324046383557c9c32afae2e6f05a41124ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401991"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
 Recupera la classificazione di variabili di un simbolo di dati.
@@ -39,13 +39,13 @@ HRESULT get_dataKind ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v7.0|
 
 ## <a name="see-also"></a>Vedere anche

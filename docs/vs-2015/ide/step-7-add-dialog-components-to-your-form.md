@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442479"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Passaggio 7: Aggiungere componenti di finestra di dialogo al modulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Per consentire al programma di aprire i file di immagine e scegliere un colore d
 1. Scegliere Progettazione Windows Form (Form1.cs [Design] o Form1.vb [Design]) e aprire il gruppo **Finestre di dialogo** nella casella degli strumenti.  
   
     > [!NOTE]
-    >  Il gruppo **Finestre di dialogo** nella Casella degli strumenti ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si usano due componenti di finestra di dialogo: **OpenFileDialog** e **ColorDialog**.  
+    > Il gruppo **Finestre di dialogo** nella Casella degli strumenti ha componenti che aprono molte finestre di dialogo utili che possono essere usate per l'apertura e il salvataggio di file, l'esplorazione di cartelle e la scelta di tipi di carattere e colori. In questo progetto si usano due componenti di finestra di dialogo: **OpenFileDialog** e **ColorDialog**.  
   
 2. Per aggiungere un componente denominato **openFileDialog1** al form, fare doppio clic su **OpenFileDialog**. Per aggiungere un componente denominato **colorDialog1** al form, fare doppio clic su **ColorDialog** nella Casella degli strumenti. Si utilizzerà tale componente nell'esercitazione successiva. Viene visualizzata un'area nella parte inferiore di Progettazione Windows Form (sotto al form Visualizzatore immagini) che dispone di un'icona per ognuno dei due componenti di finestra di dialogo aggiunti, come mostrato nell'immagine seguente.  
   
@@ -50,7 +50,7 @@ Componenti delle finestre di dialogo
          Le impostazioni della proprietà **Filtro** consentono di specificare i tipi di file visualizzati nella finestra di dialogo relativa alla **selezione di un file immagine**.  
   
     > [!NOTE]
-    >  Per vedere un esempio della finestra di dialogo **Apri file** in un'applicazione diversa, aprire il Blocco note o Paint sulla barra dei menu e scegliere **Apri** dal menu **File**. Si noti la presenza dell'elenco a discesa **Tipo file** in fondo. È stata usata la proprietà **Filtro** del componente **OpenFileDialog** per configurarlo. Si noti anche la formattazione in grassetto delle proprietà**Titolo** e **Filtro** nella finestra **Proprietà**. L'IDE imposta tale formattazione per evidenziare le proprietà che sono state modificate rispetto ai valori predefiniti.  
+    > Per vedere un esempio della finestra di dialogo **Apri file** in un'applicazione diversa, aprire il Blocco note o Paint sulla barra dei menu e scegliere **Apri** dal menu **File**. Si noti la presenza dell'elenco a discesa **Tipo file** in fondo. È stata usata la proprietà **Filtro** del componente **OpenFileDialog** per configurarlo. Si noti anche la formattazione in grassetto delle proprietà**Titolo** e **Filtro** nella finestra **Proprietà**. L'IDE imposta tale formattazione per evidenziare le proprietà che sono state modificate rispetto ai valori predefiniti.  
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   

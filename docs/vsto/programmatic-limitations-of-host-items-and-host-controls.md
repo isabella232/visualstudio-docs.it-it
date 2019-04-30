@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447086"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitazioni a livello di codice degli elementi host e controlli host
   Ogni elemento host e controllo host viene progettato per comportarsi come un oggetto nativo corrispondente di Microsoft Office Word o Microsoft Office Excel, con funzionalità aggiuntive. Tuttavia, esistono alcune differenze fondamentali tra il comportamento degli elementi host e dei controlli host e gli oggetti nativi di Office in fase di esecuzione.
@@ -57,7 +57,7 @@ ms.locfileid: "56596148"
  Non è possibile aggiungere controlli host a un oggetto <xref:Microsoft.Office.Interop.Word.Document> o <xref:Microsoft.Office.Interop.Excel.Worksheet>nativo.
 
 > [!NOTE]
->  I controlli host seguenti non possono essere aggiunti a livello di codice a fogli di lavoro o documenti: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>e <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> I controlli host seguenti non possono essere aggiunti a livello di codice a fogli di lavoro o documenti: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>e <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Comprendere le differenze di tipo tra elementi host, controlli host e oggetti nativi di Office
  Per ogni elemento host e controllo host esiste un oggetto nativo di Microsoft Office Word o Microsoft Office Excel sottostante. È possibile accedere all'oggetto sottostante usando la proprietà InnerObject dell'elemento host o controllo host. Non esiste tuttavia alcun modo per eseguire il cast di un oggetto nativo di Office nel corrispondente elemento host o controllo host. Se si prova a eseguire il cast di un oggetto nativo di Office nel tipo di un elemento host o di un controllo host, verrà generata un'eccezione <xref:System.InvalidCastException> .

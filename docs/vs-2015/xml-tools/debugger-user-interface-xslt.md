@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417446"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaccia utente del debugger (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ In questo argomento vengono descritte le finestre di dialogo e altre finestre de
  L'Elenco attività comprende gli eventuali errori che si verificano nei blocchi di script nel file XSLT.  
   
 > [!NOTE]
->  Il debugger XSLT non dispone di avvisi, pertanto nell'Elenco attività non verranno visualizzati avvisi.  
+> Il debugger XSLT non dispone di avvisi, pertanto nell'Elenco attività non verranno visualizzati avvisi.  
   
 ## <a name="breakpoints-window"></a>Finestra Punti di interruzione  
  Nella finestra Punti di interruzione vengono visualizzati tutti i punti di interruzione impostati nel progetto corrente. Se si aggiunge un punto di interruzione mentre la finestra è visualizzata, la finestra viene aggiornata automaticamente per mostrare il nuovo punto di interruzione.  

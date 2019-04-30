@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408403"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Operatori di ricerca avanzati nelle espressioni di ricerca
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775574"
 Usando gli operatori di ricerca avanzata, è possibile perfezionare la ricerca di contenuto creando espressioni di ricerca più complesse partendo da quelle più semplici. Come illustrato nella tabella seguente, questi operatori limitano il contesto in cui viene eseguita una query.  
   
 > [!WARNING]
->  È necessario immettere gli operatori di ricerca avanzati seguiti da due punti senza spazio affinché il motore di ricerca li possa riconoscere.  
+> È necessario immettere gli operatori di ricerca avanzati seguiti da due punti senza spazio affinché il motore di ricerca li possa riconoscere.  
   
 |Per cercare|Usa|Esempio|Risultato|  
 |-------------------|---------|-------------|------------|  
@@ -43,7 +43,7 @@ Usando gli operatori di ricerca avanzata, è possibile perfezionare la ricerca d
 |Linguaggio di programmazione|Usa|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> oppure<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> oppure<br /><br /> code:csharp|  
+|C#|code:c#<br /><br /> oppure<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> oppure<br /><br /> code:c++<br /><br /> oppure<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> oppure<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> oppure<br /><br /> code:js|  

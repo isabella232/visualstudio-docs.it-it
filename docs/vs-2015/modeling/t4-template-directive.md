@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411456"
 ---
 # <a name="t4-template-directive"></a>Direttiva template T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  È inoltre possibile utilizzare una classe comune scritta manualmente come classe di base. La classe di base deve fornire i metodi utilizzati dalla classe derivata.  
   
 > [!WARNING]
->  Se si utilizzano insieme gli attributi `inherits` e `hostspecific`, specificare hostspecific="trueFromBase" nella classe derivata e host="true" nella classe base. Ciò impedisce una doppia definizione della proprietà `Host` nel codice generato.  
+> Se si utilizzano insieme gli attributi `inherits` e `hostspecific`, specificare hostspecific="trueFromBase" nella classe derivata e host="true" nella classe base. Ciò impedisce una doppia definizione della proprietà `Host` nel codice generato.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Ereditarietà in un modello di testo della fase di progettazione  
  Un modello di testo in fase di progettazione è un file per il quale **Custom Tool** è impostata su **TextTemplatingFileGenerator**. Il modello genera un file di output di codice o testo che fa parte del progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per generare il file di output, il modello viene prima tradotto in un file del codice del programma intermedio che non viene in genere visualizzato. L'attributo `inherits` specifica la classe di base per questo codice intermedio.  

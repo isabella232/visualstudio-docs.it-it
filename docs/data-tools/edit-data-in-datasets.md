@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402851"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 Si modificano i dati in tabelle di dati proprio come si modificano i dati in una tabella in qualsiasi database. Può includere il processo di inserimento, aggiornamento ed eliminazione di record nella tabella. In un form con associazione a dati, è possibile specificare quali campi sono modificabili dall'utente. In questi casi, l'infrastruttura di associazione dati gestisce tutto il rilevamento delle modifiche in modo che le modifiche possano essere inviate nuovamente al database in un secondo momento. Se si apportano modifiche ai dati a livello di codice e si desidera inviare tali modifiche nel database, è necessario utilizzare gli oggetti e metodi che eseguono il rilevamento delle modifiche per l'utente.
@@ -58,7 +58,7 @@ Se l'applicazione non è necessario inviare aggiornamenti a un'origine dati, è 
      Questo metodo non rimuove fisicamente il record. Al contrario, li contrassegna per l'eliminazione.
 
     > [!NOTE]
-    >  Se si verifica la proprietà count di un <xref:System.Data.DataRowCollection>, il numero risultante include i record che sono stati contrassegnati per l'eliminazione. Per ottenere un conteggio accurato di record che non sono contrassegnati per l'eliminazione, è possibile scorrere in ciclo raccolta esaminando il <xref:System.Data.DataRow.RowState%2A> proprietà di ogni record. (Record contrassegnati per l'eliminazione è un' <xref:System.Data.DataRow.RowState%2A> di <xref:System.Data.DataRowState.Deleted>.) In alternativa, è possibile creare una visualizzazione di dati di un set di dati che i filtri in base allo stato della riga e ottenere la proprietà count da tale posizione.
+    > Se si verifica la proprietà count di un <xref:System.Data.DataRowCollection>, il numero risultante include i record che sono stati contrassegnati per l'eliminazione. Per ottenere un conteggio accurato di record che non sono contrassegnati per l'eliminazione, è possibile scorrere in ciclo raccolta esaminando il <xref:System.Data.DataRow.RowState%2A> proprietà di ogni record. (Record contrassegnati per l'eliminazione è un' <xref:System.Data.DataRow.RowState%2A> di <xref:System.Data.DataRowState.Deleted>.) In alternativa, è possibile creare una visualizzazione di dati di un set di dati che i filtri in base allo stato della riga e ottenere la proprietà count da tale posizione.
 
 Nell'esempio seguente viene illustrato come chiamare il <xref:System.Data.DataRow.Delete%2A> metodo per contrassegnare la prima riga il `Customers` tabella come eliminato:
 

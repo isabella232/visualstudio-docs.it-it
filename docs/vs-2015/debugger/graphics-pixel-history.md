@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 614977aef83092c64071524e33507848c34bf442
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420081"
 ---
 # <a name="graphics-pixel-history"></a>Cronologia pixel grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La finestra Cronologia pixel grafica disponibile in Analizzatore grafica di Visu
 3. Sotto la primitiva seguire il collegamento del titolo dello shader. Ad esempio, fare clic sul collegamento **Vertex Shader obj:30** per visualizzare il codice sorgente del vertex shader.  
   
     > [!TIP]
-    >  Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.  
+    > Il numero dell'oggetto, **obj:30**, identifica lo shader nell'intera interfaccia di Analizzatore grafica, ad esempio nella tabella oggetti e nella finestra delle fasi della pipeline.  
   
 ##### <a name="to-debug-a-shader"></a>Per eseguire il debug di uno shader  
   

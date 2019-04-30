@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434347"
 ---
 # <a name="define-packages-and-namespaces"></a>Definire pacchetti e spazi dei nomi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 2. Fare clic con il pulsante destro del mouse su un pacchetto o un modello a cui si desidera aggiungere un nuovo pacchetto.  
   
    > [!NOTE]
-   >  È possibile annidare un pacchetto all'interno di un altro pacchetto.  
+   > È possibile annidare un pacchetto all'interno di un altro pacchetto.  
   
 3. Puntare **Add** e quindi fare clic su **pacchetto**.  
   
@@ -95,7 +95,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 - Trascinare il pacchetto da Esplora modelli UML al diagramma classi.  
   
     > [!NOTE]
-    >  Questo crea una visualizzazione del pacchetto nel diagramma. Non mostrerà necessariamente tutti gli elementi contenuti nel pacchetto. Per assicurarsi che sia visibile tutto il contenuto di un pacchetto, visualizzarlo in Esplora modelli UML.  
+    > Questo crea una visualizzazione del pacchetto nel diagramma. Non mostrerà necessariamente tutti gli elementi contenuti nel pacchetto. Per assicurarsi che sia visibile tutto il contenuto di un pacchetto, visualizzarlo in Esplora modelli UML.  
   
 ## <a name="Elements"></a> Creazione di elementi del modello all'interno di pacchetti  
  È possibile inserire gli elementi del modello all'interno di un pacchetto in quattro modi:  
@@ -123,7 +123,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 4. Digitare il nome del nuovo elemento.  
   
     > [!NOTE]
-    >  Il nuovo elemento non appare in alcun diagramma. Per creare una visualizzazione del nuovo elemento, è possibile trascinarlo da Esplora modelli UML a un diagramma. Il diagramma deve essere un tipo che visualizzerà questo genere di elemento.  
+    > Il nuovo elemento non appare in alcun diagramma. Per creare una visualizzazione del nuovo elemento, è possibile trascinarlo da Esplora modelli UML a un diagramma. Il diagramma deve essere un tipo che visualizzerà questo genere di elemento.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Per creare un elemento in un pacchetto in un diagramma classi UML  
   
@@ -173,7 +173,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
      Il nome completo dell'elemento cambierà e indicherà il nuovo pacchetto proprietario.  
   
     > [!NOTE]
-    >  Se si trascina un elemento all'esterno di un pacchetto in una parte vuota del diagramma, il pacchetto proprietario non cambia. In questo modo è possibile creare un diagramma che mostra gli elementi di diversi pacchetti senza dover visualizzare i pacchetti stessi.  
+    > Se si trascina un elemento all'esterno di un pacchetto in una parte vuota del diagramma, il pacchetto proprietario non cambia. In questo modo è possibile creare un diagramma che mostra gli elementi di diversi pacchetti senza dover visualizzare i pacchetti stessi.  
   
 ## <a name="Pasting"></a> Inserimento di elementi in un pacchetto  
  È possibile incollare un elemento in un pacchetto. Se si incolla un gruppo di elementi correlati in un pacchetto, verranno incollate anche le relazioni tra di essi.  
@@ -185,7 +185,7 @@ In Visual Studio, un *pacchetto* è un contenitore per le definizioni di element
 2. Fare doppio clic su pacchetto e quindi fare clic su **Incolla**.  
   
     > [!NOTE]
-    >  Il pacchetto può trovarsi in un diagramma diverso.  
+    > Il pacchetto può trovarsi in un diagramma diverso.  
   
 ## <a name="Import"></a> Importa relazioni tra pacchetti  
  È possibile definire una relazione di importazione tra pacchetti, usando il **importare** dello strumento.  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 940cf70047437c8aa3182121e8b1585b448018f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e5c6282c446fbc9ef24433e40452cca2b1b905a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441850"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Distribuire una soluzione Office usando ClickOnce
   L'uso di ClickOnce consente di distribuire una soluzione Office in un minor numero di passaggi. Eventuali aggiornamenti alla soluzione pubblicati vengono rilevati e installati automaticamente. Tuttavia, ClickOnce richiede che la soluzione venga installata separatamente per ciascun utente di un computer. Pertanto, è necessario considerare tramite Windows Installer (*file con estensione msi*) se la soluzione sarà eseguita da più di un utente nello stesso computer.
@@ -83,7 +83,7 @@ ms.locfileid: "60060740"
 9. Se la soluzione è destinata a .NET Framework 4.5, selezionare anche il **Visual Studio 2010 Tools per Office Runtime** casella di controllo.
 
     > [!NOTE]
-    >  Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Visualizzare [creare un pacchetto di programma di avvio automatico per Office 2013 VSTO Add-in con Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
+    > Per impostazione predefinita, questa casella di controllo non viene visualizzato. Per visualizzarla, è necessario creare un pacchetto di programma di avvio automatico. Visualizzare [creare un pacchetto di programma di avvio automatico per Office 2013 VSTO Add-in con Visual Studio 2012](create-vsto-add-ins-for-office-by-using-visual-studio.md).
 
 10. Sotto **specificare il percorso di installazione dei prerequisiti**, scegliere una delle opzioni che vengono visualizzati e quindi scegliere il **OK** pulsante.
 
@@ -100,7 +100,7 @@ ms.locfileid: "60060740"
 11. Scegliere il **aggiornamenti** pulsante, specificare quanto spesso si desidera ogni utente finale del componente aggiuntivo VSTO o personalizzazione per verificare la presenza di aggiornamenti e quindi scegliere il **OK** pulsante.
 
     > [!NOTE]
-    >  Se si distribuisce tramite un CD o un'unità rimovibile, scegliere il **mai zkontrolovat aktualizace** pulsante di opzione.
+    > Se si distribuisce tramite un CD o un'unità rimovibile, scegliere il **mai zkontrolovat aktualizace** pulsante di opzione.
 
      Per informazioni su come pubblicare un aggiornamento, vedere [pubblicare un aggiornamento](#Update).
 
@@ -129,7 +129,7 @@ ms.locfileid: "60060740"
       ![Struttura di cartelle di pubblicazione](../vsto/media/publishfolderstructure.png "pubblicare struttura di cartelle")
 
     > [!NOTE]
-    >  ClickOnce consente di accodare il *deploy* estensione agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non bloccherà i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, rimossa da ClickOnce il *deploy* estensione.
+    > ClickOnce consente di accodare il *deploy* estensione agli assembly in modo che un'installazione protetta di Internet Information Services (IIS) non bloccherà i file a causa di un'estensione non sicura. Quando l'utente installa la soluzione, rimossa da ClickOnce il *deploy* estensione.
 
 14. Copiare i file della soluzione nel percorso di installazione specificato precedentemente in questa procedura.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60060740"
 6. Nel **tipo MIME** finestra, immettere **VSTO** come estensione, immettere **application/x-ms-vsto** come MIME digitare e quindi applicare le nuove impostazioni.
 
     > [!NOTE]
-    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario punto svuotare la cache del browser del disco e quindi provare ad aprire il *VSTO* file nuovo.
+    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario punto svuotare la cache del browser del disco e quindi provare ad aprire il *VSTO* file nuovo.
 
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Per aggiungere il tipo MIME .vsto a IIS 7.0
 
@@ -185,7 +185,7 @@ ms.locfileid: "60060740"
     ```
 
     > [!NOTE]
-    >  Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario punto svuotare la cache del browser del disco e quindi provare ad aprire il *VSTO* file nuovo.
+    > Per rendere effettive le modifiche è necessario riavviare il servizio Pubblicazione sul Web o attendere il riciclo del processo di lavoro. È necessario punto svuotare la cache del browser del disco e quindi provare ad aprire il *VSTO* file nuovo.
 
 ## <a name="Put"></a> Inserire il documento di una soluzione nel computer dell'utente finale (solo personalizzazioni a livello di documento)
  È possibile copiare il documento della soluzione nel computer dell'utente finale per essi mediante la creazione di un'azione post-distribuzione. In questo modo, l'utente non dovrà copiare manualmente il documento dal percorso di installazione nei propri computer dopo l'installazione della soluzione. È possibile creare una classe che definisca l'azione post-distribuzione, compilare e pubblicare la soluzione, modificare il manifesto dell'applicazione e firmare nuovamente il manifesto dell'applicazione e la distribuzione.
@@ -300,7 +300,7 @@ ms.locfileid: "60060740"
     ```
 
     > [!NOTE]
-    >  Nell'esempio precedente, sostituire MostRecentVersionNumber con il numero di versione della versione più recente pubblicata della soluzione (ad esempio, **1_0_0_4**).
+    > Nell'esempio precedente, sostituire MostRecentVersionNumber con il numero di versione della versione più recente pubblicata della soluzione (ad esempio, **1_0_0_4**).
 
      Verrà visualizzato il messaggio "ExcelWorkbook.vsto firmato correttamente".
 
@@ -386,7 +386,7 @@ ms.locfileid: "60060740"
   Per modificare il percorso di installazione di una soluzione, è necessario aggiornare il programma di installazione e successivamente gli utenti devono eseguirlo. Per le personalizzazioni a livello di documento, gli utenti devono aggiornare anche una proprietà nel proprio documento in modo che punti al nuovo percorso.
 
 > [!NOTE]
->  Se non si desidera chiedere agli utenti di aggiornare le proprietà del documento, è possibile chiedere agli utenti di ottenere il documento aggiornato dal percorso di installazione.
+> Se non si desidera chiedere agli utenti di aggiornare le proprietà del documento, è possibile chiedere agli utenti di ottenere il documento aggiornato dal percorso di installazione.
 
 #### <a name="to-change-the-installation-path-in-the-setup-program"></a>Per modificare il percorso di installazione nel programma di installazione
 
@@ -401,10 +401,10 @@ ms.locfileid: "60060740"
    ```
 
    > [!NOTE]
-   >  Se viene visualizzato un messaggio per segnalare che la firma dell'eseguibile sarà invalidata, il certificato usato per firmare la soluzione non è più valido e l'editore è sconosciuto. Di conseguenza, gli utenti dovranno confermare l'attendibilità dell'origine della soluzione prima di poterla installare.
+   > Se viene visualizzato un messaggio per segnalare che la firma dell'eseguibile sarà invalidata, il certificato usato per firmare la soluzione non è più valido e l'editore è sconosciuto. Di conseguenza, gli utenti dovranno confermare l'attendibilità dell'origine della soluzione prima di poterla installare.
 
    > [!NOTE]
-   >  Per visualizzare il valore corrente dell'URL, eseguire `setup.exe /url`.
+   > Per visualizzare il valore corrente dell'URL, eseguire `setup.exe /url`.
 
    Per le personalizzazioni a livello di documento, gli utenti devono aprire il documento e quindi aggiornare la proprietà AssemblyLocation. Di seguito viene descritta la procedura che gli utenti devono seguire per eseguire questa attività.
 
@@ -454,7 +454,7 @@ ms.locfileid: "60060740"
      Alla successiva apertura del documento personalizzato o dell'applicazione da parte dell'utente, verrà rilevata la modifica al manifesto di distribuzione. La versione precedente della soluzione Office viene eseguita dalla cache ClickOnce.
 
 > [!NOTE]
->  I dati locali vengono salvati soltanto per una versione precedente di una soluzione. Se si esegue il rollback di due versioni, non vengono conservati i dati locali. Per altre informazioni sui dati locali, vedere [accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
+> I dati locali vengono salvati soltanto per una versione precedente di una soluzione. Se si esegue il rollback di due versioni, non vengono conservati i dati locali. Per altre informazioni sui dati locali, vedere [accedere ai dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md).
 
 ## <a name="see-also"></a>Vedere anche
 

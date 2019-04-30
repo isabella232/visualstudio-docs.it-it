@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b22d53e9773893cc7cedb6b42728bd617a6841e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: add36da660b9ab8130884db0a4088b693af18a6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400666"
 ---
 # <a name="idiasymbolgetlocationtype"></a>IDiaSymbol::get_locationType
 Recupera il tipo di percorso di un simbolo di dati.
@@ -39,7 +39,7 @@ HRESULT get_locationType ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

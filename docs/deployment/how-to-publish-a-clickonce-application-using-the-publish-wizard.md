@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406727"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pubblicarla in un una condivisione file, in un percorso, in un server FTP o su un supporto rimovibile. Per pubblicare l'applicazione, usare la Pubblicazione guidata. Altre proprietà relative alla pubblicazione sono disponibili nella pagina **Pubblica** di **Creazione progetti**. Per altre informazioni, vedere [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -80,7 +80,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
 4. Nella pagina **Specificare la modalità di installazione dell'applicazione usata dagli utenti** fare clic su **Da CD-ROM o DVD-ROM** e quindi fare clic su **Avanti**.
 
    > [!NOTE]
-   >  Se si vuole che l'installazione venga eseguita automaticamente quando il CD-ROM viene inserito nell'unità, aprire la pagina **Pubblica** in **Creazione progetti**, fare clic sul pulsante **Opzioni** e quindi nella procedura guidata **Opzioni di pubblicazione** selezionare **Per le installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD**.
+   > Se si vuole che l'installazione venga eseguita automaticamente quando il CD-ROM viene inserito nell'unità, aprire la pagina **Pubblica** in **Creazione progetti**, fare clic sul pulsante **Opzioni** e quindi nella procedura guidata **Opzioni di pubblicazione** selezionare **Per le installazioni da CD, avvia automaticamente l'installazione all'inserimento del CD**.
 
 5. Se l'applicazione viene distribuita tramite CD-ROM, sarà necessario pubblicare gli aggiornamenti in un sito Web. Nella pagina **Specificare la posizione per il controllo degli aggiornamenti per l'applicazione** scegliere un'opzione di aggiornamento:
 
@@ -95,7 +95,7 @@ Prima di eseguire la Pubblicazione guidata, impostare correttamente le opzioni d
     Lo stato di pubblicazione è visualizzato nell'area di notifica dello stato.
 
    > [!NOTE]
-   >  Al termine della pubblicazione, sarà necessario usare un masterizzatore CD o DVD per copiare i file dal percorso specificato nel passaggio 3 al CD-ROM o DVD-ROM.
+   > Al termine della pubblicazione, sarà necessario usare un masterizzatore CD o DVD per copiare i file dal percorso specificato nel passaggio 3 al CD-ROM o DVD-ROM.
 
 ## <a name="see-also"></a>Vedere anche
 

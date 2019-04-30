@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442943"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Esportare diagrammi UML nei file di immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58955180"
  Il codice seguente definisce un comando di menu di scelta rapida, che salva un'immagine in un file.  
   
 > [!NOTE]
->  Per correggere questo codice come un comando di menu, è necessario includerlo in un componente MEF. Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Per correggere questo codice come un comando di menu, è necessario includerlo in un componente MEF. Per altre informazioni, vedere [definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  Il codice usa in primo luogo <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> per ottenere il <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> dell'implementazione sottostante. Questo tipo dispone di un metodo <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   

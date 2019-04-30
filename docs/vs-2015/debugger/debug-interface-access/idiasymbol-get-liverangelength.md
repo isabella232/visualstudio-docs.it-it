@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e3f3e83fecf6a3e8ff8282a4581dfd10893b8ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33f56615334b7d33516c6c967f165dac3942b5f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423238"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeLength ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
   
 > [!NOTE]
->  Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
+> Un codice di errore restituito significa che il simbolo non dispone di informazioni di intervallo in tempo reale.  
   
 ## <a name="remarks"></a>Note  
   

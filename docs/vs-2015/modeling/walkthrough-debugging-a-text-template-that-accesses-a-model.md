@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446727"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procedura dettagliata: Debug di un modello di testo che accede a un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087118"
 Quando si modificano o si aggiungono i modelli di testo in una soluzione di linguaggio specifico di dominio, è possibile ricevere errori quando il motore di trasformazione del modello al codice sorgente oppure durante la compilazione del codice generato. La procedura riportata di seguito vengono illustrate alcune delle operazioni che è possibile eseguire per eseguire il debug di un modello di testo.  
   
 > [!NOTE]
->  Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: Debug di un modello di testo](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Per altre informazioni sul testo modelli in generale, vedere [generazione di codice e modelli di testo T4](../modeling/code-generation-and-t4-text-templates.md). Per altre informazioni sul debug di modelli di testo, vedere [procedura dettagliata: Debug di un modello di testo](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Creazione di una soluzione Domain-Specific Language  
  In questa procedura, si crea una soluzione di linguaggio specifico di dominio che ha le caratteristiche seguenti:  
@@ -58,7 +58,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
 1. Sostituire il codice in DebugTest.tt con il codice seguente:  
   
     > [!NOTE]
-    >  Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
+    > Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ Quando si modificano o si aggiungono i modelli di testo in una soluzione di ling
 1. Sostituire il codice in DebugTest.tt con il codice seguente:  
   
     > [!NOTE]
-    >  Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
+    > Il codice contiene un errore. L'errore che è stato introdotto per eseguirne il debug.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

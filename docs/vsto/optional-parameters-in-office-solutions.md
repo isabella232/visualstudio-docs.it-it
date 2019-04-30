@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6baf0c32d087ea804bb8e221745337c73b64114
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e8684ad4b9429a5499660ef4ad6fdd8133dccaa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442408"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Parametri facoltativi nelle soluzioni Office
   Molti dei metodi nei modelli a oggetti delle applicazioni di Microsoft Office accettano parametri facoltativi. Se si utilizza Visual Basic per sviluppare una soluzione Office in Visual Studio, non è necessario passare un valore per i parametri facoltativi. Infatti, per ogni parametro mancante vengono utilizzati automaticamente i valori predefiniti. Nella maggior parte dei casi, è anche possibile omettere i parametri facoltativi nei progetti Visual c#. Tuttavia, non è possibile omettere facoltativo **ref** i parametri del `ThisDocument` classi nei progetti di Word a livello di documento.
@@ -33,7 +33,7 @@ ms.locfileid: "56639267"
  Per altre informazioni sull'uso dei parametri facoltativi in progetti Visual c# e Visual Basic, vedere [argomenti denominati e facoltativi &#40;C&#35; Guida alla programmazione di&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) e [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).
 
 > [!NOTE]
->  Nelle versioni precedenti di Visual Studio è necessario passare un valore per ogni parametro facoltativo nei progetti Visual C#. Per comodità, questi progetti includono una variabile globale denominata `missing` che è possibile passare a un parametro facoltativo quando si desidera utilizzare il valore predefinito del parametro. Progetti Visual c# per Office in Visual Studio includono ancora la `missing` variabile, ma è in genere non è necessario usarlo quando si sviluppano soluzioni Office nella [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], tranne quando si chiamano i metodi con facoltativo **ref** i parametri in di `ThisDocument` classi nei progetti a livello di documento per Word.
+> Nelle versioni precedenti di Visual Studio è necessario passare un valore per ogni parametro facoltativo nei progetti Visual C#. Per comodità, questi progetti includono una variabile globale denominata `missing` che è possibile passare a un parametro facoltativo quando si desidera utilizzare il valore predefinito del parametro. Progetti Visual c# per Office in Visual Studio includono ancora la `missing` variabile, ma è in genere non è necessario usarlo quando si sviluppano soluzioni Office nella [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], tranne quando si chiamano i metodi con facoltativo **ref** i parametri in di `ThisDocument` classi nei progetti a livello di documento per Word.
 
 ## <a name="example-in-excel"></a>Esempio in Excel
  Il metodo <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> presenta numerosi parametri facoltativi. È possibile specificare i valori per alcuni parametri e accettare il valore predefinito di altri utenti, come illustrato nell'esempio di codice riportato di seguito. In questo esempio è richiesto un progetto a livello di documento con una classe del foglio di lavoro denominata `Sheet1`.

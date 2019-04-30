@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410130"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Creare un'estensione con un modello di elemento dell'editor
 È possibile usare i modelli di elementi inclusi in Visual Studio SDK per creare estensioni di editor di base di classificatori, le aree di controllo e i margini all'editor. I modelli di elemento dell'editor sono disponibili per i progetti Visual c# o Visual Basic VSIX.
@@ -63,7 +63,7 @@ ms.locfileid: "60079811"
  Il modello di area di controllo del riquadro di visualizzazione dell'Editor crea un'area di controllo relativo al riquadro di visualizzazione che consente di aggiungere una casella scuro con un bordo rosso nell'angolo superiore destro del riquadro di visualizzazione.
 
 > [!NOTE]
->  Il **viewport** è l'area di visualizzazione di testo che è attualmente visualizzata.
+> Il **viewport** è l'area di visualizzazione di testo che è attualmente visualizzata.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Per creare un'estensione dell'area di controllo del riquadro di visualizzazione utilizzando il modello di area di controllo del riquadro di visualizzazione dell'Editor
 

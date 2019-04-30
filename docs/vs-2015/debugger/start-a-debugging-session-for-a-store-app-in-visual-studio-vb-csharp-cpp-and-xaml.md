@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440431"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Avviare una sessione di debug per un'app dello Store in Visual Studio (VB, C#, C++ e XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  In questo argomento viene descritto come avviare una sessione di debug per le app di Store scritte in XAML, Visual C++, Visual C# o Visual Basic. Il debug di un'app comporta sia la configurazione della la sessione di debug che la scelta della modalità di avvio dell'app.
 
 > [!NOTE]
->  Per le app scritte in JavaScript e HTML Vedi [avviare una sessione di debug (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Per le app scritte in JavaScript e HTML Vedi [avviare una sessione di debug (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> In questo argomento
  [Il modo più semplice per avviare il debug](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
     ![Finestra di dialogo Seleziona connessione Debugger remoto](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  Nella finestra di dialogo **Seleziona connessione debugger remoto** sono visualizzati i computer sulla subnet locale e i computer collegati direttamente al computer che esegue Visual Studio tramite un cavo Ethernet. Per specificare un altro computer, immetti il nome nella casella **Nome computer** .
+  > Nella finestra di dialogo **Seleziona connessione debugger remoto** sono visualizzati i computer sulla subnet locale e i computer collegati direttamente al computer che esegue Visual Studio tramite un cavo Ethernet. Per specificare un altro computer, immetti il nome nella casella **Nome computer** .
 
   ![Si applica solo a Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Per impostazione predefinita, è necessario fornire le credenziali per eseguire il debugger remoto.
 
 > [!IMPORTANT]
->  È possibile scegliere di eseguire il debugger remoto in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
+> È possibile scegliere di eseguire il debugger remoto in modalità Nessuna autenticazione che, tuttavia, è fortemente sconsigliata perché priva di qualsiasi sicurezza di rete. Scegliere la modalità Nessuna autenticazione solo se si ha la certezza che la rete non è soggetta a rischi derivanti da traffico ostile o dannoso.
 
  Per rimuovere il requisito di autenticazione:
 
@@ -250,7 +250,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Per impostare l'esecuzione di un'app installata in modalità debug, procedi come indicato di seguito:
 
 > [!NOTE]
->  L'app non deve essere in esecuzione all'avvio della procedura.
+> L'app non deve essere in esecuzione all'avvio della procedura.
 
 1. Scegli **Debug pacchetto applicazione installato** dal menu **Debug pacchetto applicazione installato Installed App Package**.
 

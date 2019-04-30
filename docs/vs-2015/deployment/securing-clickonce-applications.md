@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445031"
 ---
 # <a name="securing-clickonce-applications"></a>Protezione di applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Le applicazioni[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sono sogge
  Non passare mai argomenti recuperati tramite una stringa di query direttamente a un database o alla riga di comando senza verificare che gli argomenti siano sicuri. Sono considerati non sicuri gli argomenti che includono caratteri di escape di database o da riga di comando che possono consentire a un utente malintenzionato di modificare l'applicazione eseguendo comandi arbitrari.  
   
 > [!NOTE]
->  Gli argomenti delle stringhe di query sono l'unico modo per passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] all'avvio. Non è possibile passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dalla riga di comando.  
+> Gli argomenti delle stringhe di query sono l'unico modo per passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] all'avvio. Non è possibile passare argomenti a un'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dalla riga di comando.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Distribuzione di assembly offuscati  
  È possibile offuscare l'applicazione con Dotfuscator per impedire ad altri utenti di decodificare il codice. L'offuscamento degli assembly tuttavia non è integrato nel processo di distribuzione dell'IDE Visual Studio o ClickOnce. Sarà necessario pertanto eseguire l'offuscamento al di fuori del processo di distribuzione, eventualmente usando un passaggio di post-compilazione. Dopo aver compilato il progetto, eseguire manualmente i passaggi seguenti al di fuori di Visual Studio:  

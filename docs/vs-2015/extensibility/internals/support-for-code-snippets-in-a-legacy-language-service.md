@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408458"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni, vedere [procedura dettagliata: Implementazione di frammenti di codice](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Supporto di Framework di pacchetto per frammenti di codice gestito  
  Il framework di pacchetto gestito (MPF) supporta la maggior parte delle funzionalità di frammento di codice, di leggere il modello a inserire il frammento di codice e consentendo la speciale modalità di modifica. Il supporto viene gestito tramite il <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe.  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [Funzionalità del servizio di linguaggio legacy](../../extensibility/internals/legacy-language-service-features1.md)   
  [La registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Frammenti di codice](../../ide/code-snippets.md)   
- [Procedura dettagliata: Come ottenere un elenco di frammenti di codice installati (implementazione Legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Procedura dettagliata: recupero di un elenco di frammenti di codice installati (implementazione legacy)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

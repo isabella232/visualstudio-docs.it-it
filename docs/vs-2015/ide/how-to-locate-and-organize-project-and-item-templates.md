@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416728"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedura: Individuare e organizzare progetti e modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ I file di modello devono essere inseriti in un percorso riconosciuto da Visual S
  Le categorie nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** riflettono le strutture delle directory esistenti nei percorsi dei modelli installati e dei modelli personalizzati. È possibile modificare le strutture di queste directory e organizzare i modelli in base alle esigenze.  
   
 > [!NOTE]
->  Non è possibile creare una nuova categoria a livello di linguaggio di programmazione. Le nuove categorie possono essere create solo all'interno di ciascun linguaggio.  
+> Non è possibile creare una nuova categoria a livello di linguaggio di programmazione. Le nuove categorie possono essere create solo all'interno di ciascun linguaggio.  
   
  Se le directory dei modelli installati e personalizzati di un particolare linguaggio non presentano la stessa struttura, ovvero se, ad esempio, all'interno di una cartella sono presenti directory non presenti nell'altra, l'insieme di categorie visualizzato nella finestra di dialogo **Nuovo progetto** è costituito dall'unione di tutte le categorie.  
   

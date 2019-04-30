@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8981ba93efe3aa3fa8107e6aeae2ddd074082290
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444671"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Servizi e prodotti per l'accessibilità (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Uno dei principali impegni di Microsoft è quello di semplificare i prodotti e i
 - "Per altre informazioni"  
   
 > [!NOTE]
->  Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa fornita con il pacchetto software o visitare il [sito Web di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.  
+> Le informazioni contenute in questa sezione sono valide solo per gli utenti che acquistano licenze di prodotti Microsoft negli Stati Uniti. Se il prodotto è stato acquistato fuori dagli Stati Uniti, usare la scheda informativa fornita con il pacchetto software o visitare il [sito Web di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) per un elenco di indirizzi e di numeri di telefono dei servizi di supporto tecnico Microsoft. È possibile contattare la filiale Microsoft per scoprire se i tipi di prodotti e servizi descritti in questa sezione sono disponibili nella propria zona. Le informazioni sull'accessibilità sono disponibili in altre lingue, tra cui giapponese e francese.  
   
 ## <a name="accessibility-features-of-windows"></a>Funzionalità di accessibilità di Windows  
  Il sistema operativo Windows ha molte funzionalità di accessibilità integrate, che sono utili per gli utenti con difficoltà di digitazione o uso del mouse, affetti da cecità o ipovisione o affetti da sordità o problemi di udito. Le funzionalità vengono installate durante l'installazione. Per altre informazioni su queste funzionalità, vedere la Guida di Windows e il [sito di accessibilità Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).  

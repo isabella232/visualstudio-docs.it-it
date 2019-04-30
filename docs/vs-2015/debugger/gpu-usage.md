@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437951"
 ---
 # <a name="gpu-usage"></a>Utilizzo GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 - Una GPU e un driver che supportino la strumentazione di temporizzazione necessaria.  
   
   > [!NOTE]
-  >  Per altre informazioni sull'hardware e i driver supportati, vedere [Hardware e driver supportati](#hwsupport) alla fine di questo documento.  
+  > Per altre informazioni sull'hardware e i driver supportati, vedere [Hardware e driver supportati](#hwsupport) alla fine di questo documento.  
   
   Per altre informazioni sui requisiti di Diagnostica della grafica, vedere [Introduzione](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
     ![Scegliere gli strumenti di diagnostica da usare.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Non tutti gli strumenti per le prestazioni e la diagnostica possono essere eseguiti contemporaneamente.  
+   > Non tutti gli strumenti per le prestazioni e la diagnostica possono essere eseguiti contemporaneamente.  
   
 3. Scegliere il pulsante blu **Inizia** nella parte inferiore dell'hub Prestazioni e diagnostica per eseguire l'app negli strumenti selezionati.  
   
@@ -110,7 +110,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
 |**ID thread**|ID del thread da cui proviene l'evento.|  
   
 > [!IMPORTANT]
->  Per l'attribuzione degli eventi è necessario Windows 8.1. Inoltre, se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi vengono visualizzati come non attribuiti. Se si verifica questo problema, aggiornare il driver della GPU e riprovare. Per altre informazioni, vedere [Hardware e driver supportati](#hwsupport) più avanti.  
+> Per l'attribuzione degli eventi è necessario Windows 8.1. Inoltre, se la GPU o il driver non supporta le funzionalità di strumentazione necessarie, tutti gli eventi vengono visualizzati come non attribuiti. Se si verifica questo problema, aggiornare il driver della GPU e riprovare. Per altre informazioni, vedere [Hardware e driver supportati](#hwsupport) più avanti.  
   
 ## <a name="gpu-usage-settings"></a>Impostazioni di Utilizzo GPU  
  Si può configurare lo strumento Utilizzo GPU in modo da posticipare la raccolta di informazioni di profilatura, anziché iniziare a raccogliere le informazioni all'avvio dell'app. Poiché le dimensioni delle informazioni di profilatura possono essere significative, questo è utile quando si è certi che i rallentamenti nelle prestazioni dell'app compariranno solo in un momento successivo.  
@@ -126,7 +126,7 @@ Lo strumento Utilizzo GPU disponibile nell'hub Prestazioni e diagnostica consent
      ![Configurare l'inizio della raccolta Utilizzo GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Il posticipo della profilatura non è attualmente supportato per le app Direct3D 12.  
+> Il posticipo della profilatura non è attualmente supportato per le app Direct3D 12.  
   
  Se si posticipa la raccolta delle informazioni di profilatura con questa impostazione, quando si esegue l'app nello strumento Utilizzo GPU, nella parte inferiore della finestra dello strumento diventa disponibile un collegamento aggiuntivo. Per avviare la raccolta di informazioni di profilatura, scegliere il collegamento **Inizia** nel messaggio **Inizia a raccogliere altri dati dettagliati sull'utilizzo della GPU**.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386592"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Procedura dettagliata: Creazione di un programma di installazione personalizzato per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Qualsiasi applicazione ClickOnce basata su file .exe può essere installati in m
      Questi metodi chiamano <xref:System.Deployment.Application.InPlaceHostingManager> metodi per scaricare il manifesto di distribuzione, l'asserzione delle autorizzazioni appropriate, chiedere all'utente l'autorizzazione per installare e quindi scaricare e installare l'applicazione nella cache di ClickOnce. Un programma di installazione personalizzato è possibile specificare che un'applicazione ClickOnce è pre-attendibile o possibile posticipare la decisione di attendibilità di <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chiamata al metodo. Questo codice pre-attendibile l'applicazione.  
   
     > [!NOTE]
-    >  Le autorizzazioni assegnate da pre-concessione dell'attendibilità non possono superare le autorizzazioni del codice di programma di installazione personalizzato.  
+    > Le autorizzazioni assegnate da pre-concessione dell'attendibilità non possono superare le autorizzazioni del codice di programma di installazione personalizzato.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  

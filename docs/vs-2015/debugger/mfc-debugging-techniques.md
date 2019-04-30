@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384060"
 ---
 # <a name="mfc-debugging-techniques"></a>Tecniche di debug MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  In un programma MFC, è possibile usare [CMemoryState:: DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) per eseguire il dump una descrizione di tutti gli oggetti nell'heap non deallocati. `DumpAllObjectsSince` esegue il dump di tutti gli oggetti allocati dall'ultima [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Se non ha avuto luogo alcuna chiamata `Checkpoint` , `DumpAllObjectsSince` effettuerà il dump di tutti gli oggetti e non oggetti attualmente in memoria.  
   
 > [!NOTE]
->  Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Prima di poter utilizzare il dump di oggetti MFC, è necessario [abilitare la traccia di diagnostica](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  MFC effettua automaticamente il dump di tutti gli oggetti persi alla chiusura del programma, pertanto non è necessario creare codice per il dump degli oggetti in tale posizione.  
+> MFC effettua automaticamente il dump di tutti gli oggetti persi alla chiusura del programma, pertanto non è necessario creare codice per il dump degli oggetti in tale posizione.  
   
  Nel codice che segue si verifica la presenza di eventuali perdite di memoria confrontando due stati della memoria e si effettua il dump di tutti gli oggetti eventualmente persi.  
   

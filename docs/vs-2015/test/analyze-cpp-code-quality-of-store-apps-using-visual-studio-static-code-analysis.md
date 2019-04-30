@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442847"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Dopo aver compreso il problema, è possibile risolverlo nel codice. Eseguire quindi di nuovo l'analisi del codice per verificare che l'avviso non venga più visualizzato nella finestra Analisi codice e che la correzione non generi nuovi avvisi.
 
 > [!TIP]
->  Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il pulsante **Analizza**, quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.
+> Puoi rieseguire l'analisi del codice dalla finestra Analisi codice. Scegliere il pulsante **Analizza**, quindi scegliere l'ambito dell'analisi. Puoi rieseguire l'analisi dell'intera soluzione o di un progetto selezionato.
 
 ## <a name="BKMK_Suppress"></a> Eliminazione degli avvisi di analisi del codice
  In alcuni casi potresti decidere di non correggere un avviso di analisi del codice. Puoi decidere che risolvere il problema richiede un'eccessiva ricodificazione relativamente alla probabilità che il problema si ripresenti in qualsiasi implementazione realistica del codice. Oppure potresti ritenere che l'analisi utilizzata nell'avviso sia inadeguata per il contesto specifico. Puoi eliminare gli avvisi in modo che non vengano più visualizzati nella finestra Analisi codice.

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401442"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Recupera un flag che specifica se la funzione contiene eventuali [Structured Exception Handling (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (ad esempio, try /\_except blocchi).
+Recupera un flag che specifica se la funzione contiene eventuali [Structured Exception Handling (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (ad esempio, try /\_except blocchi).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -39,13 +39,13 @@ HRESULT get_hasSEH(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

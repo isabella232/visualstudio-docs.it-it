@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388689"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Guida introduttiva a Diagnostica grafica di Visual Studio
 In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, quindi si acquisisce un frame da un'app Direct3D e lo si esamina in Analizzatore grafica.
@@ -46,7 +46,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
    La funzionalità Strumenti di grafica viene inoltre installata automaticamente quando si installa Windows SDK 10.
 
 > [!TIP]
->  La funzionalità facoltativa di Windows 10 Strumenti di grafica offre funzionalità leggere di acquisizione e riproduzione, ad esempio il programma di acquisizione da riga di comando **dxcap.exe**, che può essere usato in scenari di supporto, testing e diagnostica nei computer in cui non sono installati gli strumenti di sviluppo. Per altre informazioni, vedere l'argomento [Strumento di acquisizione da riga di comando](command-line-capture-tool.md).
+> La funzionalità facoltativa di Windows 10 Strumenti di grafica offre funzionalità leggere di acquisizione e riproduzione, ad esempio il programma di acquisizione da riga di comando **dxcap.exe**, che può essere usato in scenari di supporto, testing e diagnostica nei computer in cui non sono installati gli strumenti di sviluppo. Per altre informazioni, vedere l'argomento [Strumento di acquisizione da riga di comando](command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Primo utilizzo di Diagnostica della grafica
  Ora che si dispone di tutto il necessario, è possibile iniziare a usare Diagnostica della grafica eseguendo le operazioni descritte nei passaggi seguenti.
@@ -63,7 +63,7 @@ In questa sezione ci si prepara al primo utilizzo di Diagnostica della grafica, 
  A questo punto si è pronti per avviare la prima sessione di diagnostica della grafica. In Visual Studio, nel menu principale, scegliere **eseguire il Debug, grafica, Avvia debug grafica**, oppure premere **ALT+F5**. L'app viene avviata in Diagnostica grafica e in Visual Studio vengono visualizzate le finestre della sessione di diagnostica.
 
 > [!IMPORTANT]
->  Se si esegue l'app in Windows 10 e non si è ancora installata la funzionalità facoltativa Strumenti di grafica, verrà richiesto di farlo ora. La funzionalità deve essere installata per poter usare Diagnostica della grafica in Windows 10.
+> Se si esegue l'app in Windows 10 e non si è ancora installata la funzionalità facoltativa Strumenti di grafica, verrà richiesto di farlo ora. La funzionalità deve essere installata per poter usare Diagnostica della grafica in Windows 10.
 
 ### <a name="3---capture-frames"></a>3 - Acquisire frame
  Non appena l'app si avvia, è possibile iniziare ad acquisire frame.

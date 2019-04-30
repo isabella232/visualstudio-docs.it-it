@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417768"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
  Lo scopo di un modello è ridurre l'ambiguità che si verifica nelle descrizioni in linguaggio naturale e consentono all'utente e ai colleghi di visualizzare la progettazione e discutere le progettazioni alternative. Un modello deve essere usato insieme ad altri documenti o discussioni. Un modello di per sé non rappresenta una specifica completa dell'architettura.  
   
 > [!NOTE]
->  In questo argomento, il termine "sistema" indica il software che si sta sviluppando. Potrebbe essere un'ampia raccolta di molti componenti hardware e software oppure una singola applicazione o una parte di un'applicazione.  
+> In questo argomento, il termine "sistema" indica il software che si sta sviluppando. Potrebbe essere un'ampia raccolta di molti componenti hardware e software oppure una singola applicazione o una parte di un'applicazione.  
   
  L'architettura di un sistema può essere suddivisa in due aree:  
   

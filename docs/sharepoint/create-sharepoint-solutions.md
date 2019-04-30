@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436421"
 ---
 # <a name="create-sharepoint-solutions"></a>Creare soluzioni di SharePoint
   È possibile creare applicazioni di SharePoint in Visual Studio come alternativa alla creazione in SharePoint Designer. Visual Studio promuove lo sviluppo rapido di SharePoint fornendo funzionalità quali strumenti di debug avanzati, IntelliSense, completamento istruzioni e modelli di progetto. Visual Studio sfrutta anche i linguaggi e gli strumenti avanzati basati su .NET Framework. È possibile sviluppare progetti SharePoint con Visual Basic o Visual C# e sviluppare l'app per progetti SharePoint con JavaScript.
@@ -25,7 +25,7 @@ ms.locfileid: "57869915"
  Per informazioni su SharePoint 2013 e sui componenti aggiuntivi per SharePoint, vedere le pagine relative a [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e alla [compilazione di app per SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Informazioni su come usare il nuovo [modello di componente aggiuntivo di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) per estendere l'esperienza di SharePoint per gli utenti. Questi componenti aggiuntivi hanno footprint di dimensioni molto ridotte rispetto alle soluzioni di SharePoint e possono essere creati con quasi tutte le tecnologie di programmazione Web come ad esempio HTML5, JavaScript, CSS3 e XML.
+> Informazioni su come usare il nuovo [modello di componente aggiuntivo di SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) per estendere l'esperienza di SharePoint per gli utenti. Questi componenti aggiuntivi hanno footprint di dimensioni molto ridotte rispetto alle soluzioni di SharePoint e possono essere creati con quasi tutte le tecnologie di programmazione Web come ad esempio HTML5, JavaScript, CSS3 e XML.
 
 |||
 |-|-|

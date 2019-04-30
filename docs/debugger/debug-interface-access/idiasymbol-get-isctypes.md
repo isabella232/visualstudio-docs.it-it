@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc8b4fe63553846a46ec8fb333f9f924c44dca99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0c60c4eac676936147760359e2b707814702846f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399920"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 Recupera un flag che indica se il file di simboli contiene tipi C.
@@ -39,16 +39,16 @@ HRESULT get_isCTypes(
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  Questa proprietà è disponibile il `SymTagExe` tipo di simboli (vedere [Exe](../../debugger/debug-interface-access/exe.md)).
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Description|
+|Requisito|Descrizione|
 |-----------------|-----------------|
-|Intestazione:|Dia2.h|
+|Intestazione:|DIA2.h|
 |Version:|DIA SDK v8.0|
 
 ## <a name="see-also"></a>Vedere anche

@@ -12,12 +12,12 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82443e5b9380eef93abf26248871b5d98d68e68
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1f72a66e6dbfe2749910019760c16f6363498785
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403277"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58955788"
 Questa interfaccia rappresenta una proprietà frame dello stack, una proprietà del documento programma o un'altra proprietà. La proprietà è in genere il risultato della valutazione di un'espressione.  
   
 > [!NOTE]
->  Questo uso di "property" non deve essere confuso con tale vale a dire una variabile membro di una classe, anche se un `IDebugProperty2` può rappresentare tale entità.  
+> Questo uso di "property" non deve essere confuso con tale vale a dire una variabile membro di una classe, anche se un `IDebugProperty2` può rappresentare tale entità.  
   
 ## <a name="syntax"></a>Sintassi  
   

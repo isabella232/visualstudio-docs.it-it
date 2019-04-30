@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ab9315c428944de0b047192a789eac6aa654073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a446e91095d9498a6182d1f80d046382b64e876e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384288"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedura: Attivare e disattivare la pluralizzazione (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60098623"
 Per impostazione predefinita, quando si trascinano oggetti di database con nomi che terminano in s o ies da **Esplora Server**/**Database Explorer** nel [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), i nomi delle classi di entità generate vengono modificati dal plurale al singolare. Questa modifica viene apportata per rappresentare in modo più preciso il fatto che viene eseguito il mapping della classe di entità, di cui è stata creata un'istanza, a un singolo record di dati. Ad esempio, l'aggiunta di una tabella Customers a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] determina una classe di entità denominata Customer poiché conterrà dati relativi a un solo cliente.  
   
 > [!NOTE]
->  La pluralizzazione viene attivata per impostazione predefinita solo nella versione in lingua inglese di Visual Studio.  
+> La pluralizzazione viene attivata per impostazione predefinita solo nella versione in lingua inglese di Visual Studio.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -33,7 +33,7 @@ Per impostazione predefinita, quando si trascinano oggetti di database con nomi 
 2. Nella finestra di dialogo **Opzioni** espandere **Strumenti di database**.  
   
 > [!NOTE]
->  Se il nodo **Strumenti di database** non è visibile, selezionare **Mostra tutte le impostazioni**.  
+> Se il nodo **Strumenti di database** non è visibile, selezionare **Mostra tutte le impostazioni**.  
   
 1. Fare clic su **Object Relational Designer**.  
   

@@ -19,18 +19,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e111b0d04b8e703a694917985a0559c05584e25b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407056"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuire le applicazioni ClickOnce per i server di test e produzione senza riapposizione della firma
 Questo articolo illustra una funzionalità introdotta in .NET Framework versione 3.5 che consente la distribuzione di applicazioni ClickOnce dalla più percorsi di rete senza riapposizione della firma o la modifica di ClickOnce manifesti ClickOnce.
 
 > [!NOTE]
->  Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [*Mage.exe* (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Riapposizione della firma è ancora il metodo preferito per la distribuzione di nuove versioni delle applicazioni. Se possibile, usare questo metodo. Per altre informazioni, vedere [*Mage.exe* (Strumento per la generazione e la modifica di manifesti)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  Gli sviluppatori di terze parti e fornitori di software indipendenti possono optare per questa funzionalità, rendendo più semplice per i clienti aggiornare le proprie applicazioni. Questa funzionalità può essere utilizzata nelle situazioni seguenti:
 

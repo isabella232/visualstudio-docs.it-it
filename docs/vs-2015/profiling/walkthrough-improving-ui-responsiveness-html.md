@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433162"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procedura dettagliata: Miglioramento della velocità di risposta dell'interfaccia utente (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Questa procedura dettagliata descrive i passaggi per identificare e risolvere un
 1. In Visual Studio creare un nuovo progetto JavaScript universale di Windows. Selezionare **File / Nuovo / Progetto**. Scegliere **JavaScript** nel riquadro sinistro, quindi scegliere **Windows**, **Windows 10** e infine **Universale** o **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  I risultati diagnostici illustrati in questo argomento sono relativi a un'app Windows 8.  
+    > I risultati diagnostici illustrati in questo argomento sono relativi a un'app Windows 8.  
   
 3. Scegliere uno dei modelli di progetto vuoti nel riquadro centrale, ad esempio **Applicazione vuota**.  
   

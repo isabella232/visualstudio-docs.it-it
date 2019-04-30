@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433708"
 ---
 # <a name="call-hierarchy"></a>Gerarchia delle chiamate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Finestra Gerarchia di chiamata
 - La **finestra Definizione codice**, se aperta, visualizza il codice per il membro selezionato. Questa finestra è disponibile in C# e C++. Per altre informazioni su questa finestra, vedere [Visualizzazione della struttura del codice](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  La finestra Gerarchia di chiamata non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.  
+> La finestra Gerarchia di chiamata non trova riferimenti ai gruppi di metodi, che includono le posizioni in cui un metodo viene aggiunto come gestore eventi o assegnato a un delegato. Per trovare tutti i riferimenti a un metodo, è possibile usare il comando **Trova tutti i riferimenti**.  
   
 ## <a name="shortcut-menu-items"></a>Comandi del menu di scelta rapida  
  La tabella seguente descrive i vari comandi del menu di scelta rapida disponibili quando si fa clic con il pulsante destro del mouse su un nodo nel riquadro della visualizzazione struttura ad albero.  

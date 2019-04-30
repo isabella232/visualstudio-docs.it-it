@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403590"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ La shell isolata di Visual Studio consente di creare applicazioni autonome che �
  Per creare un'applicazione shell isolata, iniziare con un progetto di Visual Studio Shell isolata. Questo progetto contiene tutto ciò che occorre per sviluppare e testare un'applicazione shell isolata. Quando si è pronti a scrivere il programma di installazione che consente di distribuire l'applicazione, è necessario ottenere il pacchetto ridistribuibile di shell isolata dal [Microsoft Visual Studio Shell (Isolated) Redistributable Package](http://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
->  Prima di poter accedere il pacchetto ridistribuibile di shell isolata, verrà richiesto a un cliente breve sondaggio.  Dopo aver compilato il sondaggio, si verrà indirizzati a una pagina con collegamenti ai download del pacchetto ridistribuibile Visual Studio Connect.  È possibile trovare collegamenti per il download nelle visite successive al sito di Visual Studio Connect con la **programmi &#124; VISUAL STUDIO 2015 integrata e isolata SHELL** scheda.  
+> Prima di poter accedere il pacchetto ridistribuibile di shell isolata, verrà richiesto a un cliente breve sondaggio.  Dopo aver compilato il sondaggio, si verrà indirizzati a una pagina con collegamenti ai download del pacchetto ridistribuibile Visual Studio Connect.  È possibile trovare collegamenti per il download nelle visite successive al sito di Visual Studio Connect con la **programmi &#124; VISUAL STUDIO 2015 integrata e isolata SHELL** scheda.  
   
 > [!NOTE]
->  Per altre informazioni su come distribuire un'applicazione basata su shell isolata, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Per altre informazioni su come distribuire un'applicazione basata su shell isolata, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Utilizzo della shell isolata  
  Un'applicazione shell isolata di Visual Studio ha accesso completo a servizi di Visual Studio e supporta la personalizzazione particolare e personalizzazione. Esistono diversi modi per personalizzare un'applicazione shell isolata:  
@@ -58,7 +58,7 @@ La shell isolata di Visual Studio consente di creare applicazioni autonome che �
 |----------------------|-------------|  
 |Funzionalità dell'IDE|Le impostazioni di importazione/esportazione<br /><br /> Programma di installazione di controllo della casella degli strumenti<br /><br /> Elenco attività ed elenco errori<br /><br /> Finestra di output<br /><br /> Pagina iniziale<br /><br /> Finestra Proprietà<br /><br /> Casella degli strumenti<br /><br /> Esplora soluzioni<br /><br /> Finestra Segnalibro<br /><br /> Visualizzazione classi<br /><br /> Visualizzatore oggetti<br /><br /> Finestra di comando<br /><br /> Struttura documento<br /><br /> Visualizzazione risorse<br /><br /> Strumento esterno<br /><br /> Windows Communication Foundation (WCF) Aggiungi riferimento al servizio<br /><br /> Language Integrated Query (LINQ) supporto|  
 |Editor/Designer|Esplorazione degli strumenti (ricerca unificata, definizione dell'origine, ereditarietà) del codice<br /><br /> IntelliSense<br /><br /> SmartTags<br /><br /> Gestione frammenti di codice<br /><br /> Frammenti di codice<br /><br /> Refactoring<br /><br /> Riformatta il listato<br /><br /> Filtro di IntelliSense<br /><br /> Finestra Definizione codice<br /><br /> Progettazione applicazioni<br /><br /> Progettazione Windows Form<br /><br /> Windows Presentation Foundation (WPF) Designer|  
-|Debug|Analizzatore di espressioni C#<br /><br /> Il debug locale<br /><br /> Il debug gestito<br /><br /> Modifica e continuazione<br /><br /> Debug di cross-thread<br /><br /> Visualizzazioni<br /><br /> DataTips<br /><br /> Debug nativo<br /><br /> Debug degli script<br /><br /> Debug di interoperabilità<br /><br /> Debug Just-in-time (JIT)<br /><br /> Debug multiprocesso<br /><br /> Debug XSLT<br /><br /> Connetti a processo locale<br /><br /> Punti di traccia<br /><br /> Vincoli di punto di interruzione|  
+|Debug|Analizzatore di espressioni c#<br /><br /> Il debug locale<br /><br /> Il debug gestito<br /><br /> Modifica e continuazione<br /><br /> Debug di cross-thread<br /><br /> Visualizzazioni<br /><br /> DataTips<br /><br /> Debug nativo<br /><br /> Debug degli script<br /><br /> Debug di interoperabilità<br /><br /> Debug Just-in-time (JIT)<br /><br /> Debug multiprocesso<br /><br /> Debug XSLT<br /><br /> Connetti a processo locale<br /><br /> Punti di traccia<br /><br /> Vincoli di punto di interruzione|  
 |Dati|Esplora server (semplificato - solo i dati)<br /><br /> Eseguire l'associazione dati ai dati locali (. File MDF o. MDB)<br /><br /> Associare i dati oggetto<br /><br /> Associare i dati al servizio Web<br /><br /> Set completo di controlli dati<br /><br /> Editor XML<br /><br /> Data Binding al server di database locale<br /><br /> Finestra Origini dati|  
 |Web|Editor HTML<br /><br /> Web browser<br /><br /> Progettazione Web Form<br /><br /> Progetto di sito Web<br /><br /> Progetto di applicazione Web|  
 |Estendibilità|Utilizza i componenti MEF e i pacchetti VSPackage|  

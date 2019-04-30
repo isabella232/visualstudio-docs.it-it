@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e838cb02aa1a620356f96d9e77f1752797ac409
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441245"
 ---
 # <a name="upgrading-projects"></a>Aggiornamento dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Modifiche al modello di progetto da una versione di [!INCLUDE[vsprvs](../../incl
  Dopo aver aggiornato tutti i file globali pertinenti, ogni factory di progetto è possibile scegliere di creare un'istanza di un progetto. L'implementazione di progetto deve supportare <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>. Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> viene quindi chiamato il metodo per eseguire l'aggiornamento di tutti gli elementi di progetto pertinenti.  
   
 > [!NOTE]
->  Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> (metodo) non è incluso il servizio SVsUpgradeLogger. Questo servizio può essere ottenuto chiamando <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
+> Il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> (metodo) non è incluso il servizio SVsUpgradeLogger. Questo servizio può essere ottenuto chiamando <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.  
   
 ## <a name="best-practices"></a>Suggerimenti  
  Usare il <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> servizio per verificare se è possibile modificare un file prima di modificarlo e possibile salvare il file prima di salvarlo. Ciò consentirà il backup e aggiornamento implementazioni consentono di gestire i file di progetto in controllo del codice sorgente, i file con autorizzazioni insufficienti e così via.  

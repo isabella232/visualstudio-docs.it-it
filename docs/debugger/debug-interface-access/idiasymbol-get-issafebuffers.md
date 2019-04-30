@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a2f26a1488500f256b6ba9a0ec96eca9b952f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400095"
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Recupera un flag che specifica se viene usata la direttiva del preprocessore per un buffer sicuro. Utilizzare quando le [enumerazione SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) è impostata su `SymTagFunction`.
@@ -39,12 +39,12 @@ HRESULT get_isSafeBuffers( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
 
 ## <a name="requirements"></a>Requisiti
- Intestazione: Dia2.h
+ Intestazione: DIA2.h
 
  Libreria: diaguids.lib
 

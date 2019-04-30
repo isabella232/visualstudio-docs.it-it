@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415484"
 ---
 # <a name="how-to-implement-error-markers"></a>Procedura: Implementare i marcatori di errore
 Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili le personalizzazioni dell'editor di testo per implementare. Tuttavia, i vantaggi che offrono agli utenti di un VSPackage possono di gran lunga i costi per fornire loro. Gli indicatori di errore leggermente contrassegnano testo che il parser del linguaggio che considera non corretto con una riga rossa ondulata o una sottolineatura ondulata. Questo indicatore consente ai programmatori visualizzando visivamente il codice non corretto.
@@ -45,7 +45,7 @@ Gli indicatori di errore (o sottolineature ondulate rosse) sono più difficili l
 1. In una vista che viene filtrata, il filtro recupera un puntatore per il provider di attività associato ai dati della visualizzazione.
 
     > [!NOTE]
-    >  È possibile usare lo stesso filtro di comando per suggerimenti di metodo, il completamento delle istruzioni, i marcatori di errore e così via.
+    > È possibile usare lo stesso filtro di comando per suggerimenti di metodo, il completamento delle istruzioni, i marcatori di errore e così via.
 
 2. Quando il filtro riceve un evento che indica che è stato spostato in un'altra riga, viene creata un'attività per verificare la presenza di errori.
 

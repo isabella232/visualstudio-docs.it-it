@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445862"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 > [!NOTE]
 > Gli elementi di attributo, i cui nomi terminano con la stringa Attribute, possono essere usati con o senza la stringa Attribute. I due esempi di codice seguenti presentano lo stesso funzionamento:
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementi usati per i test basati sui dati
  Usare gli elementi seguenti per configurare unit test basati sui dati. Per altre informazioni, vedere [How To: Creare un Test basato sui dati Unit](../test/how-to-create-a-data-driven-unit-test.md) e [procedura dettagliata: Utilizzo di un File di configurazione per definire un'origine dati](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

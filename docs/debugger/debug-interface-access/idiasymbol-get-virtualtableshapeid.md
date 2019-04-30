@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc43d94cfe94e63dfb477429c2c81471e5c40af4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bd390cbd2982033d31ccf8e577196e2c360be655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400121"
 ---
 # <a name="idiasymbolgetvirtualtableshapeid"></a>IDiaSymbol::get_virtualTableShapeId
 Recupera l'identificatore del simbolo tabella virtuale forma del simbolo.
@@ -39,9 +39,9 @@ HRESULT get_virtualTableShapeId ( 
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
 
 > [!NOTE]
->  Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
+> Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
-## <a name="remarks"></a>Osservazioni
+## <a name="remarks"></a>Note
  L'identificatore è un valore univoco creato dal DIA SDK per contrassegnare tutti i simboli come univoco.
 
 ## <a name="see-also"></a>Vedere anche

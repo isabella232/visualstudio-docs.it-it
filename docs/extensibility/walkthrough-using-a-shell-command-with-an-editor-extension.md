@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3011664cc2261b0213e7ce743167579b2b0786
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444925"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: Usare un comando della shell con un'estensione dell'editor
 Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio i comandi di menu per l'editor. Questa procedura dettagliata illustra come aggiungere un'area di controllo a una visualizzazione di testo nell'editor quando si richiama un comando di menu.
@@ -52,7 +52,7 @@ Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio 
  Poiché si sta aggiungendo un componente MEF per il pacchetto VSPackage, è necessario specificare entrambi i tipi di asset nel manifesto.
 
 > [!NOTE]
->  Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
+> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).
 
 ### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Per fare riferimento al componente MEF in progetto VSPackage
 

@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 17d6efe4aa18682c6777128113f6fa60347f8950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419504"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Procedura: Esportare una barra multifunzione dalla finestra di progettazione della barra multifunzione XML della barra multifunzione
   Il **sulla barra multifunzione (finestra di progettazione visiva)** elemento non supporta tutti i possibili tipi di personalizzazione della barra multifunzione. Per personalizzare la barra multifunzione in modi avanzati, è possibile esportare la barra multifunzione dalla finestra di progettazione XML della barra multifunzione e modificare direttamente il file XML.
 
 > [!NOTE]
->  Non tutti i valori delle proprietà visualizzate nel file XML della barra multifunzione. Per altre informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
+> Non tutti i valori delle proprietà visualizzate nel file XML della barra multifunzione. Per altre informazioni, vedere [Panoramica della barra multifunzione](../vsto/ribbon-overview.md).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 

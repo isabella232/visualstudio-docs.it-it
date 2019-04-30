@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439980"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Varianti di MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Eseguono l'override dell'anti-aliasing multicampione (MSAA, Multi-Sample Anti-Al
  Se l'app non ha ancora MSAA abilitato, le varianti 2x MSAA e 4x MSAA indicano l'impatto relativo sulle prestazioni qualora venissero abilitate nell'app. Quando il livello di impatto è accettabile, considerare l'abilitazione di MSAA per migliorare la qualità di immagine dell'app.  
   
 > [!NOTE]
->  L'hardware potrebbe non supportare completamente MSAA per tutti i formati. Se una di queste varianti dovesse incorrere in un limite hardware che non è possibile aggirare, la relativa colonna nella tabella di riepilogo delle prestazioni resterà vuota e verrà visualizzato un messaggio di errore.  
+> L'hardware potrebbe non supportare completamente MSAA per tutti i formati. Se una di queste varianti dovesse incorrere in un limite hardware che non è possibile aggirare, la relativa colonna nella tabella di riepilogo delle prestazioni resterà vuota e verrà visualizzato un messaggio di errore.  
   
 ## <a name="remarks"></a>Note  
  Queste varianti eseguono l'override degli argomenti relativi conteggio e alla qualità dei campioni nelle chiamate a `ID3DDevice::CreateTexture2D` che creano destinazioni di rendering. In particolare, tali parametri vengono sottoposti a override nei casi seguenti:  

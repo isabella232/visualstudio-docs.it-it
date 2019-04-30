@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445082"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Procedura: Usare la finestra Thread GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

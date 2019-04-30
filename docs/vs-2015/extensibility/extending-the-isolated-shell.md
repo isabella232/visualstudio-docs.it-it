@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443916"
 ---
 # <a name="extending-the-isolated-shell"></a>Estensione della Shell isolata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054092"
 È possibile estendere la shell isolata di Visual Studio mediante l'aggiunta di un pacchetto VSPackage, una parte di componente Managed Extensibility Framework (MEF) o un progetto VSIX generico all'applicazione shell isolata.  
   
 > [!NOTE]
->  I passaggi seguenti presuppongono l'esistenza di che è stata creata un'applicazione shell isolata di base usando il modello di progetto di Visual Studio Shell isolata. Per altre informazioni su questo modello di progetto, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> I passaggi seguenti presuppongono l'esistenza di che è stata creata un'applicazione shell isolata di base usando il modello di progetto di Visual Studio Shell isolata. Per altre informazioni su questo modello di progetto, vedere [procedura dettagliata: Creazione di una semplice applicazione Shell isolata](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Posizioni del modello di progetto di pacchetto di Visual Studio  
  Il modello di progetto di pacchetto di Visual Studio si trova in tre posizioni diverse nella finestra di dialogo **Nuovo progetto** :  
@@ -121,4 +121,4 @@ ms.locfileid: "60054092"
 8. Compilare ed eseguire la soluzione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Procedura dettagliata: creazione di un'applicazione shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

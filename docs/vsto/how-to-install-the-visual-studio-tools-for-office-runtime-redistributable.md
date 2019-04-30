@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 205fb184997130423072d556a60e1323a99e6ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b6ec5c91fe9dc16a07703358ee0bb951efb490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412596"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Procedura: Installare Visual Studio Tools per Office runtime redistributable
   Visual Studio 2010 Tools per Office runtime deve essere installato in ogni computer che eseguono le soluzioni create con Microsoft Office developer tools in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Il runtime viene installato automaticamente all'installazione di [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e di Microsoft Office. Per altre informazioni, vedere [Visual Studio Tools per scenari di installazione di Office runtime](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
@@ -32,7 +32,7 @@ ms.locfileid: "60101457"
 - È necessario installare il runtime in un computer su cui sono già installati tutti i prerequisiti delle soluzioni di Office.
 
     > [!NOTE]
-    >  Per installare .NET Framework e [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], è necessario essere un amministratore del computer di sviluppo.
+    > Per installare .NET Framework e [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], è necessario essere un amministratore del computer di sviluppo.
 
 ## <a name="to-install-the-visual-studio-tools-for-office-runtime"></a>Per installare l'assembly nel runtime di Visual Studio Tools per Office
 

@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442896"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
     **Per sospendere la registrazione**, ad esempio per controllare la posta elettronica, scegliere **Sospendi**.
 
    > [!WARNING]
-   >  Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.
+   > Tutte le azioni eseguite sul desktop verranno registrate. Sospendere la registrazione se si eseguono azioni che possono comportare l'inserimento di dati sensibili nella registrazione.
 
     **Per eliminare le azioni** registrate per errore, scegliere **Modifica azioni**.
 
@@ -113,7 +113,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
     ![Elemento per il test codificato dell'interfaccia utente](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Passare alternativamente dalla registrazione delle azioni alla verifica dei valori. Generare il codice al termine di ogni sequenza di azioni o verifiche. Se necessario, sarà possibile inserire nuove azioni e verifiche in un secondo momento.
+   > Passare alternativamente dalla registrazione delle azioni alla verifica dei valori. Generare il codice al termine di ogni sequenza di azioni o verifiche. Se necessario, sarà possibile inserire nuove azioni e verifiche in un secondo momento.
 
     Per informazioni dettagliate, vedere [Convalida delle proprietà dei controlli](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
   Per usare la tastiera per selezionare un controllo dell'interfaccia utente, passare il puntatore del mouse sul controllo. Tenere premuti contemporaneamente **CTRL** e **I**. Rilasciare i tasti. Il controllo viene registrato dal Generatore di test codificati dell'interfaccia utente.
 
 > [!WARNING]
->  Se si usa Microsoft Lync, è necessario chiudere Lync prima di avviare il Generatore di test codificati dell'interfaccia utente. Microsoft Lync interferisce con la scelta rapida da tastiera **CTRL+I**.
+> Se si usa Microsoft Lync, è necessario chiudere Lync prima di avviare il Generatore di test codificati dell'interfaccia utente. Microsoft Lync interferisce con la scelta rapida da tastiera **CTRL+I**.
 
  *Non è possibile registrare un passaggio del mouse su un controllo. Come risolvere il problema.*
  **Registrazione manuale dei passaggi del mouse**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Se necessario, è possibile modificare la scelta rapida da tastiera CTRL+MAIUSC+R usata per applicare gli eventi di passaggio del mouse nei test codificati dell'interfaccia utente, in modo da usare tasti diversi.
 
 > [!WARNING]
->  In circostanze normali, non è necessario modificare la scelta rapida da tastiera per gli eventi di passaggio del mouse. Prestare attenzione nella riassegnazione dei tasti. La scelta rapida da tastiera potrebbe essere già in uso in Visual Studio o nell'applicazione sottoposta a test.
+> In circostanze normali, non è necessario modificare la scelta rapida da tastiera per gli eventi di passaggio del mouse. Prestare attenzione nella riassegnazione dei tasti. La scelta rapida da tastiera potrebbe essere già in uso in Visual Studio o nell'applicazione sottoposta a test.
 
  Per modificare le scelte rapida da tastiera è necessario modificare il file di configurazione seguente:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  È consigliabile non modificare questo file, perché verrà rigenerato quando si creano ulteriori test.
+  > È consigliabile non modificare questo file, perché verrà rigenerato quando si creano ulteriori test.
 
    È possibile creare versioni modificate di questi metodi copiandoli in UIMap.cs. Si può ad esempio creare una versione con parametri che può essere chiamata da un metodo di test:
 

@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405636"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associazione di scelte rapide da tastiera a voci di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
 4. Provare diverse combinazioni di tasti per trovarne uno che non è mappata.  
   
    > [!NOTE]
-   >  Tasti di scelta rapida che utilizzano ALT possono aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **combinazione già utilizzata da** casella può essere vuoto quando si digita un collegamento che include ALT. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
+   > Tasti di scelta rapida che utilizzano ALT possono aprire un menu di scelta e non direttamente eseguire un comando. Pertanto, il **combinazione già utilizzata da** casella può essere vuoto quando si digita un collegamento che include ALT. È possibile verificare che il collegamento non si apre un menu chiudendo il **opzioni** nella finestra di dialogo e quindi premendo i tasti.  
   
    La procedura seguente si presuppone che si dispone di un pacchetto VSPackage esistente con un comando di menu. Se occorre assistenza questa operazione, dare un'occhiata [creazione di un'estensione con un comando di Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ Per associare un tasto di scelta rapida per un comando di menu personalizzate, �
 2. Creare un oggetto vuoto `<KeyBindings>` sezione dopo la `<Commands>` se non è già presente.  
   
    > [!WARNING]
-   >  Per altre informazioni sui tasti di scelta rapida, vedere [Keybinding](../extensibility/keybinding-element.md).  
+   > Per altre informazioni sui tasti di scelta rapida, vedere [Keybinding](../extensibility/keybinding-element.md).  
   
     Nel `<KeyBindings>` sezione, creare un `<KeyBinding>` voce.  
   

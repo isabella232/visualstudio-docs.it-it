@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422718"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definire vincoli di convalida per i modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60071162"
     Per altre informazioni, vedere [Valutazione del vincolo di convalida](#Implementing).  
   
    > [!IMPORTANT]
-   >  Assicurarsi che i file **.cs** contengano l'istruzione seguente `using` :  
+   > Assicurarsi che i file **.cs** contengano l'istruzione seguente `using` :  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  Il metodo di convalida dovrebbe determinare se il vincolo di convalida che si vuole applicare sia true o false. Se è true, non dovrebbe fare nulla. Se è false, dovrebbe segnalare un errore usando i metodi forniti dal parametro `ValidationContext` .  
   
 > [!NOTE]
->  I metodi di convalida non dovrebbero modificare il modello. Non è garantito quando o in quale ordine verranno eseguiti i vincoli. Se è necessario passare informazioni tra due esecuzioni consecutive di un metodo di convalida all'interno dell'esecuzione di una convalida, è possibile usare la cache del contesto descritta in [Coordinamento di più convalide](#ContextCache).  
+> I metodi di convalida non dovrebbero modificare il modello. Non è garantito quando o in quale ordine verranno eseguiti i vincoli. Se è necessario passare informazioni tra due esecuzioni consecutive di un metodo di convalida all'interno dell'esecuzione di una convalida, è possibile usare la cache del contesto descritta in [Coordinamento di più convalide](#ContextCache).  
   
  Ad esempio, per essere certi che ogni tipo (classe, interfaccia o enumeratore) abbia un nome di almeno tre caratteri, si può usare questo metodo:  
   

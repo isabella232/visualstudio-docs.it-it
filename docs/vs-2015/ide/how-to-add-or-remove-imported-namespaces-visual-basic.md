@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5f660a7b457f8ba70439321d3eb619389e50fe97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445717"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procedura: Aggiungere o rimuovere spazi dei nomi importati (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ L'importazione di uno spazio dei nomi consente di usare nel codice elementi trat
 3. Nell'elenco **Spazi dei nomi importati** selezionare la casella di controllo relativa allo spazio dei nomi da aggiungere.  
   
     > [!NOTE]
-    >  Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per altre informazioni, vedere [NIB procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+    > Perché sia possibile importarlo, lo spazio dei nomi deve trovarsi in un componente di riferimento. Se lo spazio dei nomi non è incluso nell'elenco, è necessario aggiungere un riferimento al componente che lo contiene. Per altre informazioni, vedere [NIB procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Per rimuovere uno spazio dei nomi importato  
   
@@ -64,7 +64,7 @@ L'importazione di uno spazio dei nomi consente di usare nel codice elementi trat
 4. Fare clic sul pulsante **Aggiungi importazione utente** per aggiungere lo spazio dei nomi all'elenco **Spazi dei nomi importati**.  
   
     > [!NOTE]
-    >  Il pulsante **Aggiungi importazione utente** è disabilitato se lo spazio dei nomi corrisponde a uno spazio dei nomi già incluso nell'elenco. Non è infatti possibile aggiungere due volte la stessa importazione.  
+    > Il pulsante **Aggiungi importazione utente** è disabilitato se lo spazio dei nomi corrisponde a uno spazio dei nomi già incluso nell'elenco. Non è infatti possibile aggiungere due volte la stessa importazione.  
   
 #### <a name="to-update-a-user-import"></a>Per aggiornare un'importazione utente  
   

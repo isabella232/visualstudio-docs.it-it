@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415520"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: I tipi di carattere incorporati di accesso e il colore ccheme
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
@@ -39,7 +39,7 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
      Questo GUID è utilizzato per identificare in modo univoco una categoria. Questa categoria riutilizza specifica di colori e tipi di carattere predefiniti dell'IDE.
 
     > [!NOTE]
-    >  Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.
+    > Durante il recupero di dati carattere e colori con il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o altre interfacce, i pacchetti VSPackage questo GUID usano per fare riferimento a informazioni incorporate.
 
 2. Nome della categoria deve essere aggiunto a una tabella di stringhe all'interno delle risorse del pacchetto VSPackage (*RC*) del file, in modo che possa essere localizzata in base alle necessità quando visualizzati nell'IDE.
 

@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411234"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (metodo). Ciò significa che viene avviata la Germania sotto il controllo dell'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controllo del tipo di progetto. Tuttavia, tale istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è possibile eseguire il debug di DE. Di seguito sono i passaggi che consentono di eseguire il debug di DE personalizzato.
 
 > [!NOTE]
->  :     Nella procedura "Eseguire il Debug di un motore di debug personalizzato", è necessario attendere il DE avviare prima di collegare ad esso. Se si inserisce una finestra di messaggio verso l'inizio del DE che viene visualizzato quando viene avviata la Germania, è possibile collegare a questo punto e quindi deselezionare la casella di messaggio per continuare. In questo modo, è possibile intercettare tutti gli eventi DE.
+> :     Nella procedura "Eseguire il Debug di un motore di debug personalizzato", è necessario attendere il DE avviare prima di collegare ad esso. Se si inserisce una finestra di messaggio verso l'inizio del DE che viene visualizzato quando viene avviata la Germania, è possibile collegare a questo punto e quindi deselezionare la casella di messaggio per continuare. In questo modo, è possibile intercettare tutti gli eventi DE.
 
 > [!WARNING]
->  È necessario che il debug remoto installato prima di provare le procedure seguenti. Visualizzare [debug remoto](../../debugger/remote-debugging.md) per informazioni dettagliate.
+> È necessario che il debug remoto installato prima di provare le procedure seguenti. Visualizzare [debug remoto](../../debugger/remote-debugging.md) per informazioni dettagliate.
 
 ## <a name="debug-a-custom-debug-engine"></a>Eseguire il debug di un motore di debug personalizzato
 

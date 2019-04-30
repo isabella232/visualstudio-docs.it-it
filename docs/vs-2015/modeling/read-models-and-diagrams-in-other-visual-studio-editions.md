@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387510"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leggere modelli e diagrammi in altre edizioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Quando si apre un modello in una versione di Visual Studio che non supporta la c
  Per questo motivo, se si vuole leggere un diagramma UML o un diagramma livello, è necessario avere accesso anche al progetto di modellazione nel quale è stato creato. Per eseguire questa operazione, è possibile accedere al progetto da [!INCLUDE[esprscc](../includes/esprscc-md.md)] oppure ottenere una copia dei file di progetto.  
   
 > [!NOTE]
->  Non si applica alle mappe codice e ai diagrammi classi .NET generati dal codice. Questi diagrammi possono essere visualizzati indipendentemente dal progetto di modellazione.  
+> Non si applica alle mappe codice e ai diagrammi classi .NET generati dal codice. Questi diagrammi possono essere visualizzati indipendentemente dal progetto di modellazione.  
   
  Per leggere un diagramma UML o un diagramma livello, è necessario almeno il set di file seguente:  
   
 - I due file diagramma per il diagramma da leggere, ad esempio, **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Per i diagrammi livello, è necessario anche il file denominato _MyDiagram_**. MyDiagram**.  
+    > Per i diagrammi livello, è necessario anche il file denominato _MyDiagram_**. MyDiagram**.  
   
 - File di progetto di modellazione (**MyModel. modelproj**)  
   

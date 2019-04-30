@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0140a99ffc375fc21f04e3981a5368923da162b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007998"
 ---
 # <a name="migration-activity-designers"></a>ActivityDesigner Migrazione
 Gli ActivityDesigner Migration vengono usati per chiamare le attività del flusso di lavoro 3.0/3.5 da un flusso di lavoro destinato a [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Gli argomenti contenuti in questa sezione forniscono materiale sussidiario sull'utilizzo degli ActivityDesigner di [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

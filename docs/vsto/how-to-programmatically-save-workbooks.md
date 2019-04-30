@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419477"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Procedura: A livello di programmazione salvare cartelle di lavoro
   Una cartella di lavoro può essere salvata in più modi, ad esempio senza modificare il percorso. Se si tratta del primo salvataggio della cartella di lavoro, è necessario specificare un percorso. Se non viene specificato un percorso esplicito, Microsoft Office Excel salva il file nella cartella corrente con il nome assegnato al momento della creazione. È anche possibile salvare una copia della cartella di lavoro senza modificare la cartella di lavoro aperta in memoria.
@@ -46,7 +46,7 @@ ms.locfileid: "60093059"
  È possibile salvare la cartella di lavoro specificata in un nuovo percorso o con un nuovo nome, specificando eventualmente un formato di file, una password, una modalità di accesso e altre opzioni.
 
 > [!NOTE]
->  È possibile impostare il <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> proprietà **False** prima di salvare la cartella di lavoro con un nuovo percorso poiché per il salvataggio in alcuni formati necessaria l'interazione. Impostando questa proprietà su **False** , in Excel usare tutti i valori predefiniti.
+> È possibile impostare il <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> proprietà **False** prima di salvare la cartella di lavoro con un nuovo percorso poiché per il salvataggio in alcuni formati necessaria l'interazione. Impostando questa proprietà su **False** , in Excel usare tutti i valori predefiniti.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Per salvare una cartella di lavoro associata a una personalizzazione a livello di documento
 

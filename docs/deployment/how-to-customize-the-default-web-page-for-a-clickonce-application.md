@@ -17,25 +17,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4fc4d69e8bf0a3ef13a8a06e652c8be217a1c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406971"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedura: Personalizzare la pagina Web predefinita per un'applicazione ClickOnce
 Quando si pubblica un'applicazione ClickOnce per il Web, una pagina Web viene automaticamente generata e pubblicata insieme all'applicazione. La pagina predefinita contiene il nome dell'applicazione e i collegamenti per installare l'applicazione, installare i prerequisiti o accedere alla Guida in MSDN.
 
 > [!NOTE]
->  I collegamenti effettivi che viene visualizzato nella pagina dipendono dal computer in cui viene visualizzata la pagina e ciò che sono inclusi i prerequisiti.
+> I collegamenti effettivi che viene visualizzato nella pagina dipendono dal computer in cui viene visualizzata la pagina e ciò che sono inclusi i prerequisiti.
 
  Il nome predefinito per la pagina Web viene *Publish. htm*; è possibile modificare il nome nel **creazione progetti**. Per altre informazioni, vedere [Procedura: Specificare una pagina di pubblicazione per un'applicazione ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md).
 
  Il *Publish. htm* pagina Web viene pubblicata solo se viene rilevata una versione più recente.
 
 > [!NOTE]
->  Le modifiche apportate al **pubblica** non influisce sulle impostazioni di *Publish. htm* pagina, con un'unica eccezione: se si aggiunge o rimuove i prerequisiti dopo la pubblicazione inizialmente, l'elenco dei prerequisiti verrà non è più possibile accurate. È necessario modificare il testo per il collegamento dei prerequisiti in modo da riflettere le modifiche.
+> Le modifiche apportate al **pubblica** non influisce sulle impostazioni di *Publish. htm* pagina, con un'unica eccezione: se si aggiunge o rimuove i prerequisiti dopo la pubblicazione inizialmente, l'elenco dei prerequisiti verrà non è più possibile accurate. È necessario modificare il testo per il collegamento dei prerequisiti in modo da riflettere le modifiche.
 
 ### <a name="to-customize-the-publish-web-page"></a>Per personalizzare la pagina Web pubblica
 

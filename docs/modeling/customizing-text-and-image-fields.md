@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a31544c256c8160eba2c18afb102205a921e0b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445825"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizzazione dei campi testo e immagine
 Quando si definisce un elemento decorator di testo in una forma, è rappresentato da un TextField. Per esempi dell'inizializzazione di TextFields e altri ShapeFields, esaminare Dsl\GeneratedCode\Shapes.cs alla soluzione DSL.
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  In caso contrario, quindi eseguire l'override di `InitializeShapeFields` metodo di classe della forma e assegnarle un valore appropriato `Default...` proprietà di campo di testo.
 
 > [!WARNING]
->  Per eseguire l'override `InitializeShapeFields()`, è necessario impostare la **genera una derivata doppia** proprietà della classe di forma a `true` nella definizione DSL.
+> Per eseguire l'override `InitializeShapeFields()`, è necessario impostare la **genera una derivata doppia** proprietà della classe di forma a `true` nella definizione DSL.
 
  In questo esempio, una forma è un campo di testo che verrà usato per i commenti utente. Si vuole usare il tipo di carattere di commento standard. Poiché si tratta di un tipo di carattere standard dal set di stile, è possibile impostare l'id del tipo di carattere predefinito:
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  In questo esempio fa un'icona Modifica dipenda lo stato dell'elemento del modello della forma.
 
 > [!WARNING]
->  In questo esempio viene illustrato come effettuare un elemento Decorator dell'immagine dinamica. Ma se vuoi solo passare da una o due immagini a seconda dello stato di una variabile del modello, risulta più semplice creare alcuni elementi Decorator di immagine, essi posizionati nella stessa posizione della forma e quindi impostare il filtro di visibilità per dipendono da valori specifici del modello variabile. Per impostare il filtro selezionato, selezionare la mappa della forma nella definizione DSL, aprire la finestra Dettagli DSL e scegliere la scheda elementi Decorator.
+> In questo esempio viene illustrato come effettuare un elemento Decorator dell'immagine dinamica. Ma se vuoi solo passare da una o due immagini a seconda dello stato di una variabile del modello, risulta più semplice creare alcuni elementi Decorator di immagine, essi posizionati nella stessa posizione della forma e quindi impostare il filtro di visibilità per dipendono da valori specifici del modello variabile. Per impostare il filtro selezionato, selezionare la mappa della forma nella definizione DSL, aprire la finestra Dettagli DSL e scegliere la scheda elementi Decorator.
 
  Per eseguire questo esempio di codice, creare una nuova soluzione DSL usando il modello di linguaggio minimo. Aggiungere una proprietà di dominio booleano `AlternateState` alla classe di dominio ExampleElement. Aggiungere un elemento decorator di icona per la classe ExampleShape e impostare la propria immagine in un file bitmap. Fare clic su **Trasforma tutti i modelli**. Aggiungere un nuovo file di codice nel progetto DSL e inserire il codice seguente.
 

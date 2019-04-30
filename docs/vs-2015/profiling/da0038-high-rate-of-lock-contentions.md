@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2dad172ad21a57d406f0bb9ef9b42d0e27a13d6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0a9d809c901458782a8f7f9f3fff2c8e14069083
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444043"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Frequenza elevata di conflitti di blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Per la documentazione più recente di Visual Studio, vedere [DA0038: Elevata fre
  Questa regola viene attivata quando misure adottate durante l'esecuzione di una profilatura indicano la presenza di quantità eccessivamente elevata di conflitti di blocco. I conflitti di blocco ritardano l'esecuzione di thread in attesa del blocco. È consigliabile analizzare anche quantità abbastanza limitate di conflitti di blocco in unit test o in test di carico eseguiti su hardware di fascia più bassa.  
   
 > [!NOTE]
->  Quando la frequenza dei conflitti di blocco indicata nei dati di profilatura è eccessivamente elevata, viene attivato il messaggio di avviso [DA0039: Frequenza molto elevata di conflitti di blocco](../profiling/da0039-very-high-rate-of-lock-contentions.md) anziché questo messaggio informativo.  
+> Quando la frequenza dei conflitti di blocco indicata nei dati di profilatura è eccessivamente elevata, viene attivato il messaggio di avviso [DA0039: Frequenza molto elevata di conflitti di blocco](../profiling/da0039-very-high-rate-of-lock-contentions.md) anziché questo messaggio informativo.  
   
 ## <a name="how-to-investigate-a-warning"></a>Come esaminare un avviso  
  Fare doppio clic sul messaggio per passare alla visualizzazione [Contrassegni](../profiling/marks-view.md) dei dati di profilatura.  Individuare la colonna **LocksAndThreads CLR .NET\Conflitti/sec**. Determinare se sono presenti fasi specifiche di esecuzione del programma in cui i conflitti di blocco sono maggiori rispetto ad altre fasi.  

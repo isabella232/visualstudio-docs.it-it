@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402637"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Eseguire il debug di un controllo WebView in un'App UWP
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081762"
 4. (Facoltativo) Per le versioni non Express di Visual Studio, disabilitare il debug just-in-time (JIT) scegliendo **Strumenti > Opzioni > Debug > Just-In-Time** e quindi disabilitando il debug JIT per Script.
 
     > [!NOTE]
-    >  Disabilitando il debug JIT, puoi nascondere le finestre di dialogo per le eccezioni non gestite che si verificano in alcune pagine Web. In Visual Studio Express, il debug JIT è sempre disabilitato.
+    > Disabilitando il debug JIT, puoi nascondere le finestre di dialogo per le eccezioni non gestite che si verificano in alcune pagine Web. In Visual Studio Express, il debug JIT è sempre disabilitato.
 
 5. Premere F5 per avviare il debug.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081762"
      ![Selezione nella finestra della console JavaScript di destinazione](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.
+    > Tramite la console puoi interagire con un singolo `WebView`, `iFrame`, contratto di condivisione o Web worker alla volta. Ogni elemento richiede un'istanza separata dell'host della piattaforma Web (WWAHost.exe). Puoi interagire con un solo host alla volta.
 
 6. Visualizzare e modificare le variabili nell'app o usare i comandi della console, come descritto in [Guida introduttiva: Eseguire il debug di JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [JavaScript Console commands](../debugger/javascript-console-commands.md).
 

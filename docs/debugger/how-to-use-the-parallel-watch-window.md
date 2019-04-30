@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388466"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Impostare un'espressione di controllo per le variabili di thread in parallelo in Visual Studio (C#, Visual Basic, C++)
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:
@@ -34,7 +34,7 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 - Colonna configurabile che consente di visualizzare il computer, il processo, la sezione, l'attività e il thread.
 
   > [!TIP]
-  >  Per visualizzare informazioni sulle attività nella **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.
+  > Per visualizzare informazioni sulle attività nella **espressioni di controllo parallela** finestra, è innanzitutto necessario aprire le **attività** finestra.
 
 - Lo spazio vuoto *Aggiungi espressione di controllo* colonne, in cui è possibile immettere espressioni di controllo.
 

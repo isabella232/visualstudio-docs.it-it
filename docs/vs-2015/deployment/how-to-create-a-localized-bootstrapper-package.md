@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440663"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedura: Creare un pacchetto Bootstrapper localizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 3. Creare un manifesto di pacchetto denominato package.xml, aggiornare le stringhe e le impostazioni cultura e quindi inserire il file nella nuova cartella. Se è già stato creato un programma di avvio automatico di Visual Studio nella lingua di destinazione, è possibile copiare il file package.xml di Visual Studio e modificarlo in questo passaggio.  
   
 > [!NOTE]
->  Se si intende usare un progetto di installazione per la distribuzione delle applicazioni, è possibile localizzare l'applicazione modificando la proprietà **Localization**.  
+> Se si intende usare un progetto di installazione per la distribuzione delle applicazioni, è possibile localizzare l'applicazione modificando la proprietà **Localization**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436728"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Distribuire, pubblicare e aggiornare i pacchetti di soluzioni SharePoint
   Dopo aver sviluppato una soluzione di SharePoint in Visual Studio, è possibile distribuire il file del pacchetto (con estensione wsp) in un server SharePoint locale o pubblicata in un server SharePoint locale o remoto. Se si distribuiscono i file, è possibile personalizzare la distribuzione di file del pacchetto (con estensione wsp).
 
 > [!NOTE]
->  Attualmente, solo soluzioni create mediante sandbox possono essere pubblicate in server remoti di SharePoint. Per altre informazioni, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
+> Attualmente, solo soluzioni create mediante sandbox possono essere pubblicate in server remoti di SharePoint. Per altre informazioni, vedere [considerazioni sulle soluzioni create mediante sandbox](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Distribuire, pubblicare e aggiornare
  *Distribuzione* fa riferimento alla copia un file di soluzione SharePoint compilato da un progetto SharePoint in Visual Studio in un host locale. In una soluzione distribuita, è possibile configurare la procedura di distribuzione, ad esempio riciclo del pool di Internet Information Services (IIS), l'attivazione della soluzione dopo la distribuzione e così via. Per distribuire, usare il **Deploy** comando le **compilare** menu. Per altre informazioni, vedere [Procedura: Modificare una configurazione di distribuzione di SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) e [come: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

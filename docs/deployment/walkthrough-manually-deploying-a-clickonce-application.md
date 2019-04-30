@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405785"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce
 Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione oppure è necessario usare le funzionalità avanzate di distribuzione, ad esempio la distribuzione di applicazioni attendibili, è consigliabile usare il *Mage.exe* lo strumento da riga di comando per creare la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesti. Questa procedura dettagliata viene descritto come creare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione con la versione della riga di comando (*Mage.exe*) o la versione con interfaccia grafica (*MageUI.exe*) della generazione del manifesto e Strumento di modifica.
@@ -54,13 +54,13 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
    È necessario firmare la distribuzione con un certificato Authenticode. È possibile generare un certificato di test con Visual Studio, *MageUI.exe*, o *MakeCert.exe* e *Pvk2Pfx.exe* strumenti, oppure è possibile ottenere un certificato da un certificato Autorità (CA). Se si sceglie di usare la distribuzione di applicazioni attendibili, è anche necessario eseguire un'unica installazione del certificato in tutti i computer client. Per altre informazioni, vedere [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  È anche possibile firmare la distribuzione con un certificato CNG che è possibile ottenere da un'autorità di certificazione.
+  > È anche possibile firmare la distribuzione con un certificato CNG che è possibile ottenere da un'autorità di certificazione.
 
 - Assicurarsi che l'applicazione non dispone di un manifesto con le informazioni di controllo dell'account utente.
 
    È necessario determinare se l'applicazione contiene un manifesto con informazioni di controllo Account utente (UAC), ad esempio un `<dependentAssembly>` elemento. Per esaminare un manifesto dell'applicazione, è possibile utilizzare il Windows Sysinternals [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilità.
 
-   Se l'applicazione contiene un manifesto con dettagli controllo dell'account utente, è necessario ricompilarla senza le informazioni di controllo dell'account utente. Per un C# del progetto in Visual Studio, aprire le proprietà del progetto e selezionare la scheda dell'applicazione. Nel **Manifest** elenco a discesa, seleziona **Crea applicazione senza manifesto**. Per un progetto di Visual Basic in Visual Studio, aprire le proprietà del progetto, selezionare la scheda applicazione e fare clic su **impostazioni di controllo dell'account utente visualizzazione**. Nel file manifesto aperto, rimuovere tutti gli elementi all'interno di singolo `<asmv1:assembly>` elemento.
+   Se l'applicazione contiene un manifesto con dettagli controllo dell'account utente, è necessario ricompilarla senza le informazioni di controllo dell'account utente. Per un progetto c# in Visual Studio, aprire le proprietà del progetto e selezionare la scheda dell'applicazione. Nel **Manifest** elenco a discesa, seleziona **Crea applicazione senza manifesto**. Per un progetto di Visual Basic in Visual Studio, aprire le proprietà del progetto, selezionare la scheda applicazione e fare clic su **impostazioni di controllo dell'account utente visualizzazione**. Nel file manifesto aperto, rimuovere tutti gli elementi all'interno di singolo `<asmv1:assembly>` elemento.
 
 - Determinare se l'applicazione richiede i prerequisiti nei computer client.
 
@@ -73,7 +73,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
 2. Nella directory di distribuzione che appena creata, creare una sottodirectory della versione. Se questa è la prima volta che si sta distribuendo l'applicazione, assegnare un nome nella sottodirectory della versione **1.0.0.0**.
 
    > [!NOTE]
-   >  La versione della distribuzione può essere distinta da quella dell'applicazione.
+   > La versione della distribuzione può essere distinta da quella dell'applicazione.
 
 3. Copiare tutti i file dell'applicazione nella sottodirectory della versione, inclusi file eseguibili, gli assembly, le risorse e i file di dati. Se necessario, è possibile creare ulteriori sottodirectory che contengono i file aggiuntivi.
 
@@ -86,7 +86,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
    ```
 
    > [!NOTE]
-   >  Assicurarsi di includere il punto (.) dopo il `-FromDirectory` opzione, che indica la directory corrente. Se non si include il punto, è necessario specificare il percorso ai file dell'applicazione.
+   > Assicurarsi di includere il punto (.) dopo il `-FromDirectory` opzione, che indica la directory corrente. Se non si include il punto, è necessario specificare il percorso ai file dell'applicazione.
 
 6. Firmare il manifesto dell'applicazione con il certificato Authenticode. Sostituire *mycert. pfx* con il percorso al file del certificato. Sostituire *passwd* con la password per il file del certificato.
 
@@ -121,7 +121,7 @@ Se non è possibile utilizzare Visual Studio per distribuire il [!INCLUDE[ndptec
 2. Nella directory di distribuzione che appena creata, creare una sottodirectory della versione. Se questa è la prima volta che si sta distribuendo l'applicazione, assegnare un nome nella sottodirectory della versione **1.0.0.0**.
 
    > [!NOTE]
-   >  La versione della distribuzione è probabilmente diverso dalla versione dell'applicazione.
+   > La versione della distribuzione è probabilmente diverso dalla versione dell'applicazione.
 
 3. Copiare tutti i file dell'applicazione nella sottodirectory della versione, inclusi file eseguibili, gli assembly, le risorse e i file di dati. Se necessario, è possibile creare ulteriori sottodirectory che contengono i file aggiuntivi.
 

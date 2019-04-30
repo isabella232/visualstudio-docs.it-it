@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441627"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizzare le mappe del codice modificando i file DGML
 
@@ -117,7 +117,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
 - Gruppi di elementi di codice e collegamenti in base a determinate condizioni
 
 > [!TIP]
->  Se sono presenti stili ripetuti in molti elementi di codice o collegamenti, è possibile applicare una categoria quegli elementi di codice oppure ai collegamenti e quindi applicare uno stile a quella categoria. Per altre informazioni, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories) e [assegnare proprietà a elementi di codice e collegamenti](#AssignProperties).
+> Se sono presenti stili ripetuti in molti elementi di codice o collegamenti, è possibile applicare una categoria quegli elementi di codice oppure ai collegamenti e quindi applicare uno stile a quella categoria. Per altre informazioni, vedere [assegnare categorie a elementi di codice e collegamenti](#AssignCategories) e [assegnare proprietà a elementi di codice e collegamenti](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Per applicare uno stile personalizzato a un singolo elemento di codice
 
@@ -555,7 +555,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
  È possibile collegare documenti o URL a un elemento di codice oppure a collegamenti modificando il file con estensione dgml della mappa e aggiungendo un attributo `Reference` all'elemento `<Node/>` per un elemento di codice oppure all'elemento `<Link/>` per un collegamento. È quindi possibile aprire e visualizzare il contenuto dall'elemento di codice o dal collegamento. L'attributo `Reference` specifica il percorso di tale contenuto. Il percorso può essere assoluto oppure relativo alla posizione del file con estensione dgml.
 
 > [!CAUTION]
->  Se si utilizzano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.
+> Se si utilizzano percorsi relativi e se il file con estensione dgml viene spostato in un percorso diverso, i percorsi non saranno più risolvibili. Quando si tenta di aprire e visualizzare il contenuto collegato, si verificherà un errore che informa che il contenuto non può essere visualizzato.
 
  Ad esempio, è possibile collegare i seguenti elementi di codice:
 
@@ -580,7 +580,7 @@ Modificare il file con estensione dgml della mappa di codice in un editor di tes
    - Nell'elemento `<Node/>` o `<Link/>` aggiungere un attributo `Reference` per specificare la posizione dell'elemento di codice.
 
      > [!NOTE]
-     >  È possibile specificare un solo attributo `Reference` per elemento.
+     > È possibile specificare un solo attributo `Reference` per elemento.
 
      Ad esempio:
 

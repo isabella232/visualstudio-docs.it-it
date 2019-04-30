@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433565"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedura: Aggiungere commenti a un flusso di lavoro in Progettazione flussi di lavoro
 Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE[net_v45](../includes/net-v45-md.md)] consente allo sviluppatore di aggiungere annotazioni ai seguenti tipi di elementi nella finestra di progettazione:  
@@ -35,7 +35,7 @@ Per facilitare la creazione di flussi di lavoro più ampi e complessi, [!INCLUDE
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  Il contenuto di un'annotazione viene salvato come testo normale nel file XAML associato al flusso di lavoro e potrebbe potenzialmente essere letto da altri. Prestare attenzione quando vengono fornite informazioni riservate in un'unica annotazione.  
+> Il contenuto di un'annotazione viene salvato come testo normale nel file XAML associato al flusso di lavoro e potrebbe potenzialmente essere letto da altri. Prestare attenzione quando vengono fornite informazioni riservate in un'unica annotazione.  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Aggiunta di un'annotazione a un'attività nella finestra di progettazione  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437947"
 ---
 # <a name="graphics-frame-analysis"></a>Analisi dei frame di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053533"
 Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio per analizzare e ottimizzare le prestazioni di rendering del gioco o dell'app Direct3D.  
   
 > [!IMPORTANT]
->  Analizzatore grafica supporta l'analisi dei frame per le app che usano Direct3D 11 sulle piattaforme supportate, incluso Windows 10. L'analisi dei frame non è attualmente supportata per le app che usano Direct3D 12.  
+> Analizzatore grafica supporta l'analisi dei frame per le app che usano Direct3D 11 sulle piattaforme supportate, incluso Windows 10. L'analisi dei frame non è attualmente supportata per le app che usano Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Analisi dei frame  
  L'analisi dei frame usa le stesse informazioni acquisite in un file di registro elementi grafici per finalità diagnostiche, ma le usa per riepilogare invece le prestazioni del rendering. Le informazioni sulle prestazioni non sono registrate nel registro durante l'acquisizione. Queste informazioni sono invece generate in un secondo momento, durante l'analisi dei frame, tramite la misurazione della durata degli eventi e la raccolta di statistiche durante la riproduzione del frame. Questo approccio presenta numerosi vantaggi rispetto alla registrazione delle informazioni sulle prestazioni durante l'acquisizione:  
@@ -118,7 +118,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
  Le informazioni relative ai contatori hardware offrono una visualizzazione molto dettagliata del comportamento specifico della piattaforma hardware per ogni chiamata di disegno, che possono aiutare a identificare con grande precisione la causa dei colli di bottiglia relativi alle prestazioni.  
   
 > [!NOTE]
->  Diverse piattaforme hardware supportano contatori diversi. Questo non è un comportamento standard. I contatori e ciò che rappresentano sono determinati esclusivamente da ogni produttore di GPU.  
+> Diverse piattaforme hardware supportano contatori diversi. Questo non è un comportamento standard. I contatori e ciò che rappresentano sono determinati esclusivamente da ogni produttore di GPU.  
   
 ### <a name="marker-regions-and-events"></a>Aree di marcatori ed eventi  
  L'analisi dei frame supporta i marcatori di eventi definiti dagli utenti e i gruppi di eventi, visualizzati nella tabella Riepilogo e nelle tabelle Dettagli.  
@@ -145,7 +145,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
  I timestamp sono supportati in tutte le piattaforme che supportano l'analisi dei frame. Le query di occlusione della profondità, necessarie per il contatore relativo ai pixel bloccati, sono supportate sulle piattaforme che supportano funzionalità di livello 9.2 o superiori.  
   
 > [!NOTE]
->  Anche se i timestamp sono supportati su tutte le piattaforme che supportano l'analisi dei frame, la precisione e la coerenza dei timestamp variano a seconda della piattaforma usata.  
+> Anche se i timestamp sono supportati su tutte le piattaforme che supportano l'analisi dei frame, la precisione e la coerenza dei timestamp variano a seconda della piattaforma usata.  
   
 ### <a name="gpu-counters"></a>Contatori della GPU  
  Il supporto per i contatori hardware della GPU dipende dall'hardware.  
@@ -159,7 +159,7 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
   Nessun'altra piattaforma che supporta l'analisi dei frame raccoglie i contatori hardware della GPU.  
   
 > [!NOTE]
->  Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.  
+> Poiché i contatori hardware GPU sono risorse hardware, è possibile che siano necessari più passaggi per raccogliere il set completo di contatori hardware per ogni variante di rendering. Di conseguenza, l'ordine in cui i contatori GPU vengono raccolti non è specificato.  
   
 ### <a name="windows-phone"></a>Windows Phone  
  I timestamp, le query di occlusione e i contatori hardware della GPU sono supportati solo su dispositivi Windows Phone forniti originariamente con Windows Phone 8.1. Questi elementi sono necessari all'analisi dei frame per la riproduzione del file di registro elementi grafici. I dispositivi Windows Phone forniti originariamente con Windows Phone 8 non supportano l'analisi dei frame, anche nel caso dei dispositivi aggiornati a Windows Phone 8.1.  
@@ -174,13 +174,13 @@ Usare l'analisi dei frame di grafica in Analizzatore grafica di Visual Studio pe
  Quando si riproduce in Analizzatore grafica un file di log di grafica che usa un livello di funzionalità superiore rispetto a quello supportato dal computer di riproduzione, si verificherà automaticamente il fallback su WARP. In analisi dei frame non si verifica esplicitamente il fallback su WARP ed è generato un errore. WARP è utile per esaminare la correttezza di un'app Direct3D, ma non per esaminarne le prestazioni.  
   
 > [!NOTE]
->  Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Ad esempio, è possibile acquisire informazioni sugli elementi grafici in un dispositivo Windows Phone e riprodurle in un computer desktop o viceversa. In entrambi i casi, il registro di elementi grafici non include API e non usa livelli di funzionalità non supportati nella macchina di riproduzione.  
+> Anche se è importante tenere in considerazione le problematiche a livello di funzionalità, è possibile acquisire e riprodurre file di registro elementi grafici in diverse configurazioni e diversi dispositivi hardware. Ad esempio, è possibile acquisire informazioni sugli elementi grafici in un dispositivo Windows Phone e riprodurle in un computer desktop o viceversa. In entrambi i casi, il registro di elementi grafici non include API e non usa livelli di funzionalità non supportati nella macchina di riproduzione.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versioni precedenti  
  L'analisi dei frame è supportata solo per l'API Direct3D 11. Se l'app chiama l'API Direct3D 10, Analisi dei frame non sarà in grado di riconoscerla o di profilarla, anche se è riconosciuta e usata da altri strumenti di Analizzatore grafica. Se l'app usa API di tipo Direct3D11 e Direct3D 10, la profilatura sarà eseguita solo per le chiamate a Direct3D 11.  
   
 > [!NOTE]
->  Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità. Se si usano le API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, sarà disponibile qualsiasi livello di funzionalità e sarà possibile usare l'analisi dei frame.  
+> Questa situazione è applicabile solo alle chiamate alle API Direct3D in uso, non ai livelli di funzionalità. Se si usano le API Direct3D 11, Direct3D 11.1 o Direct3D 11.2, sarà disponibile qualsiasi livello di funzionalità e sarà possibile usare l'analisi dei frame.  
   
 ## <a name="Variants"></a> Varianti  
  Ogni modifica apportata dall'analisi dei frame al modo in cui è eseguito il rendering di un frame durante la riproduzione è definita *variante*. Le varianti esaminate dall'analisi dei frame corrispondono a modifiche comuni e relativamente semplici che possono essere apportate per migliorare le prestazioni di rendering o la qualità visiva dell'app, ad esempio riducendo la dimensione delle trame, usando la compressione della trame o abilitando tipi diversi di anti-aliasing. Le varianti eseguono l'override del contesto di rendering normale e dei parametri dell'app. Di seguito è disponibile un riepilogo:  

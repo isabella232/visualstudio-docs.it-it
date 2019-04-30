@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6143b21884bc92ac79ae0fd7292a11780fec4478
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439764"
 ---
 # <a name="localizing-vsix-packages"></a>Localizzazione di pacchetti VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Creando un file vsixlangpack per ogni lingua di destinazione e inserendo i file 
  Extension.vsixlangpack  
   
 > [!NOTE]
->  I modelli di progetto supportato da VSIX di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generare un manifesto VSIX e assegnargli il nome vsixmanifest. Quando Visual Studio compila il progetto, verrà copiato il contenuto del file in Extension. vsixmanifest nel pacchetto VSIX.  
+> I modelli di progetto supportato da VSIX di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] generare un manifesto VSIX e assegnargli il nome vsixmanifest. Quando Visual Studio compila il progetto, verrà copiato il contenuto del file in Extension. vsixmanifest nel pacchetto VSIX.  
   
 ## <a name="the-extensionvsixlangpack-file"></a>Il File vsixlangpack  
  Il file vsixlangpack segue il [Schema del Language Pack VSIX](../extensibility/vsx-language-pack-schema-reference.md). Questo schema ha un [VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md) elemento radice e i quattro elementi figlio: [LocalizedName](../extensibility/localizedname-element-vsix-language-pack-schema.md), [LocalizedDescription](../extensibility/localizeddescription-element-vsix-language-pack-schema.md), [MoreInfoURL](../extensibility/moreinfourl-element-vsix-language-pack-schema.md), e [licenza](../extensibility/license-element-vsix-language-pack-schema.md). Tali elementi figlio corrispondano per il `Name`, `Description`, `MoreInfoURL`, e `License` elementi figlio del `Identifier` elemento del file Extension. vsixmanifest.  

@@ -8,25 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417183"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Domande frequenti: Conversione di componenti aggiuntivi in estensioni VSPackage
 I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visual Studio, è necessario creare un'estensione VSIX. Di seguito sono riportate le risposte ad alcune domande frequenti su come convertire un componente aggiuntivo di Visual Studio per un'estensione VSIX.
 
 > [!WARNING]
->  Avvio in Visual Studio 2015, per i progetti c# e Visual Basic, è possibile usare il progetto VSIX e aggiungere i modelli di elemento per i comandi di menu, finestre degli strumenti e i pacchetti VSPackage. Per altre informazioni, vedere [nuove funzionalità di Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
+> Avvio in Visual Studio 2015, per i progetti c# e Visual Basic, è possibile usare il progetto VSIX e aggiungere i modelli di elemento per i comandi di menu, finestre degli strumenti e i pacchetti VSPackage. Per altre informazioni, vedere [nuove funzionalità di Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
 
 > [!IMPORTANT]
->  In molti casi è possibile trasferire semplicemente il codice del componente aggiuntivo a un progetto VSIX con un elemento di progetto VSPackage. È possibile ottenere l'oggetto di automazione DTE chiamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> nel metodo <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+> In molti casi è possibile trasferire semplicemente il codice del componente aggiuntivo a un progetto VSIX con un elemento di progetto VSPackage. È possibile ottenere l'oggetto di automazione DTE chiamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> nel metodo <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 >
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`
+> ```csharp
+> DTE2 dte = (DTE2)GetService(typeof(DTE));
+> ```
 >
->  Per altre informazioni, vedere [modo in cui è possibile eseguire il codice del componente aggiuntivo in un VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) sotto.
+> Per altre informazioni, vedere [modo in cui è possibile eseguire il codice del componente aggiuntivo in un VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) sotto.
 
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Quale software è necessario per lo sviluppo di estensioni VSIX
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

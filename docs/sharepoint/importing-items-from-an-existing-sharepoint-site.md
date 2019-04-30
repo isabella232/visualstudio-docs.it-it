@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444358"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importare gli elementi da un sito di SharePoint esistente
   Il modello di progetto Importa pacchetto di soluzione SharePoint consente di riutilizzare elementi come i campi e i tipi di contenuto da siti di SharePoint esistenti in una nuova soluzione SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Sebbene sia possibile eseguire la maggior parte delle soluzioni importate senza modifiche, esistono alcune limitazioni e problemi da tenere in considerazione, soprattutto se si modificano gli elementi dopo averli importati.
 
 > [!NOTE]
->  Per importare flussi di lavoro riutilizzabili, usare il modello di progetto Importa flusso di lavoro riutilizzabile. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Linee guida per l'importazione di flussi di lavoro riutilizzabili](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Per importare flussi di lavoro riutilizzabili, usare il modello di progetto Importa flusso di lavoro riutilizzabile. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Linee guida per l'importazione di flussi di lavoro riutilizzabili](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Soluzioni SharePoint supportate
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] supporta pienamente l'importazione delle soluzioni create in [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

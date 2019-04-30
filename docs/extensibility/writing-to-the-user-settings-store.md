@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444907"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strumenti / opzioni** finestra di dialogo, finestre delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come uno strumento esterno per leggere e scrivere nell'archivio delle impostazioni utente.
@@ -27,7 +27,7 @@ Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strum
 3. Passare a strumenti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp\ e non \14.0\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni utente sono nell'hive del Registro di sistema "14.0Exp".
+    > Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp\ e non \14.0\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni utente sono nell'hive del Registro di sistema "14.0Exp".
 
 4. Pulsante destro del mouse sulla sottochiave \External Tools\ e quindi fare clic su **esportare**. Verificare che l'opzione **rami selezionati** sia selezionata.
 

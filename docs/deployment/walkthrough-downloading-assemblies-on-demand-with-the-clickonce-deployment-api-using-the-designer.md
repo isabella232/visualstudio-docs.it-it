@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406065"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procedura dettagliata: Scaricare gli assembly su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce
 Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vengono scaricati alla prima esecuzione dell'applicazione. Alcune parti dell'applicazione possono tuttavia essere usate da un set limitato di utenti. In questo caso, è consigliabile scaricare un assembly solo quando si crea uno dei relativi tipi. La procedura dettagliata riportata di seguito illustra come contrassegnare come "facoltativi" determinati assembly nell'applicazione e come scaricarli tramite le classi nello spazio dei nomi <xref:System.Deployment.Application> quando sono richiesti da Common Language Runtime.
@@ -40,7 +40,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 1. Creare un nuovo progetto Windows Form in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Scegliere **Aggiungi** dal menu **File**e quindi fare clic su **Nuovo progetto**. Scegliere un progetto **Libreria di classi** nella finestra di dialogo e assegnare il nome `ClickOnceLibrary`a tale progetto.
 
    > [!NOTE]
-   >  In Visual Basic è consigliabile modificare le proprietà del progetto per cambiare lo spazio dei nomi radice per questo progetto in `Microsoft.Samples.ClickOnceOnDemand` o in uno spazio dei nomi selezionato. Per semplicità, i due progetti in questa procedura dettagliata si trovano nello stesso spazio dei nomi.
+   > In Visual Basic è consigliabile modificare le proprietà del progetto per cambiare lo spazio dei nomi radice per questo progetto in `Microsoft.Samples.ClickOnceOnDemand` o in uno spazio dei nomi selezionato. Per semplicità, i due progetti in questa procedura dettagliata si trovano nello stesso spazio dei nomi.
 
 2. Definire una classe denominata `DynamicClass` con una singola proprietà denominata `Message`.
 
@@ -50,7 +50,7 @@ Per impostazione predefinita, tutti gli assembly inclusi in un'applicazione [!IN
 3. Selezionare il progetto Windows Forms in **Esplora soluzioni**. Aggiungere un riferimento all'assembly <xref:System.Deployment.Application> e un riferimento al progetto `ClickOnceLibrary` .
 
    > [!NOTE]
-   >  In Visual Basic è consigliabile modificare le proprietà del progetto per cambiare lo spazio dei nomi radice per questo progetto in `Microsoft.Samples.ClickOnceOnDemand` o in uno spazio dei nomi selezionato. Per semplicità, i due progetti in questa procedura dettagliata si trovano nello stesso spazio dei nomi.
+   > In Visual Basic è consigliabile modificare le proprietà del progetto per cambiare lo spazio dei nomi radice per questo progetto in `Microsoft.Samples.ClickOnceOnDemand` o in uno spazio dei nomi selezionato. Per semplicità, i due progetti in questa procedura dettagliata si trovano nello stesso spazio dei nomi.
 
 4. Fare clic con il pulsante destro del mouse sul modulo, scegliere **Visualizza codice** dal menu e aggiungere i riferimenti seguenti al modulo.
 

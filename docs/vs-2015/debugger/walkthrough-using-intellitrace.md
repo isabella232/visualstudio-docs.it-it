@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444255"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Procedura dettagliata: Utilizzo di IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60053806"
 5. Avviare il debug con la modalità consueta. (Premere **F5** o fare cli su **Debug / Avvia debug**.  
   
     > [!TIP]
-    >  Mantenere le finestre **Variabili locali** e **Auto** aperte durante il debug per visualizzare e registrare i valori visualizzati in queste finestre.  
+    > Mantenere le finestre **Variabili locali** e **Auto** aperte durante il debug per visualizzare e registrare i valori visualizzati in queste finestre.  
   
 6. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "60053806"
 1. Attivare la raccolta delle chiamate. (In **Strumenti / Opzioni / IntelliTrace / Generale**, selezionare **Eventi IntelliTrace e informazioni di chiamata**. IntelliTrace inizierà a raccogliere tali informazioni all'avvio della sessione di debug successiva.  
   
     > [!TIP]
-    >  Ciò potrebbe rallentare l'applicazione e aumentare le dimensioni dei file di log di IntelliTrace (file .iTrace) salvati sul disco. Per ottenere la maggior parte dei dati delle chiamate riducendo al contempo gli effetti, registrare solo i dati da quei moduli che interessano. Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti / Opzioni / IntelliTrace / Avanzate**e specificare la dimensione massima dello spazio su disco. Il valore predefinito è 250 MB.  
+    > Ciò potrebbe rallentare l'applicazione e aumentare le dimensioni dei file di log di IntelliTrace (file .iTrace) salvati sul disco. Per ottenere la maggior parte dei dati delle chiamate riducendo al contempo gli effetti, registrare solo i dati da quei moduli che interessano. Per modificare la dimensione massima dei file .iTrace, passare a **Strumenti / Opzioni / IntelliTrace / Avanzate**e specificare la dimensione massima dello spazio su disco. Il valore predefinito è 250 MB.  
   
 2. Avviare il debug dell'applicazione console C# creata nella sezione precedente. L'esecuzione verrà interrotta in corrispondenza del punto di interruzione. Se non viene visualizzata la finestra **Strumenti di diagnostica** , fare clic su **Debug / Finestre / Eventi di IntelliTrace**.  
   
@@ -98,6 +98,6 @@ ms.locfileid: "60053806"
      Selezionare una delle chiamate alle funzioni e fare doppio clic. Verranno visualizzati i punti di ingresso e uscita della funzione, nonché le chiamate effettuate dalla chiamata corrente ad altre funzioni e gli eventi di IntelliTrace generati dalla chiamata. Se il debug cronologico non è attivo, viene attivato da questa azione. Per altre informazioni sul debug cronologico, vedere [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  È possibile riscontrare che alcune chiamate sono visualizzate in grigio. Le chiamate vengono visualizzate in grigio perché IntelliTrace non ha registrato i dati dei moduli corrispondenti. Per visualizzare questi dati, impostare la raccolta dei dati da tali moduli da parte di IntelliTrace. Per informazioni sulla specifica di moduli, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
+    > È possibile riscontrare che alcune chiamate sono visualizzate in grigio. Le chiamate vengono visualizzate in grigio perché IntelliTrace non ha registrato i dati dei moduli corrispondenti. Per visualizzare questi dati, impostare la raccolta dei dati da tali moduli da parte di IntelliTrace. Per informazioni sulla specifica di moduli, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Passaggi successivi

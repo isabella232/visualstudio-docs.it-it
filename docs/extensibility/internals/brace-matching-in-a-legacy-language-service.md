@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606628"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415363"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Corrispondenza parentesi graffe in un servizio di linguaggio legacy
 Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere traccia di elementi del linguaggio che si verificano insieme, ad esempio le parentesi tonde e parentesi graffe devono. Quando uno sviluppatore immette una parentesi graffa di chiusura, parentesi graffa di apertura viene evidenziata.
@@ -26,7 +26,7 @@ Corrispondenza delle parentesi graffe consente allo sviluppatore di tenere tracc
  Servizi di linguaggio legacy vengono implementati come parte di un pacchetto VSPackage, ma il modo più recente per implementare le funzionalità del servizio di linguaggio consiste nell'usare le estensioni MEF. Per altre informazioni sul nuovo modo per implementare corrispondenza parentesi graffe, vedere [procedura dettagliata: Visualizzare le parentesi graffe corrispondenti](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
->  È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
+> È consigliabile che si inizia a usare il nuovo editor delle API appena possibile. Verrà migliorare le prestazioni del servizio di linguaggio e consentono di sfruttare nuove funzionalità dell'editor.
 
  Il <xref:Microsoft.VisualStudio.Package.AuthoringSink> supporta entrambe le coppie di classe e per triplica con il <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> e <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> metodi.
 

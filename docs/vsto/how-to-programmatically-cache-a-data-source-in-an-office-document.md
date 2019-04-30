@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f039154265e9031713eb5511bb1c51a63e5b422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437114"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Procedura: Memorizzare nella cache a livello di codice di un'origine dati in un documento di Office
   È possibile aggiungere un oggetto dati a livello di codice alla cache dei dati in un documento chiamando il `StartCaching` metodo di un host di elemento, ad esempio un <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, o <xref:Microsoft.Office.Tools.Excel.Worksheet>. Rimuovere un oggetto dati dalla cache dei dati chiamando il `StopCaching` metodo di un elemento host.
@@ -52,7 +52,7 @@ ms.locfileid: "60109179"
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Non chiamare `StopCaching` dal gestore dell'evento per il `Shutdown` eventi di un documento o foglio di lavoro. Entro l'ora di `Shutdown` viene generato l'evento, è troppo tardi per modificare la cache dei dati. Per altre informazioni sul `Shutdown` eventi, vedere [Events in Office Projects](../vsto/events-in-office-projects.md).
+    > Non chiamare `StopCaching` dal gestore dell'evento per il `Shutdown` eventi di un documento o foglio di lavoro. Entro l'ora di `Shutdown` viene generato l'evento, è troppo tardi per modificare la cache dei dati. Per altre informazioni sul `Shutdown` eventi, vedere [Events in Office Projects](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Vedere anche
 

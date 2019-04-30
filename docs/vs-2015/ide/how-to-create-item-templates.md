@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417041"
 ---
 # <a name="how-to-create-item-templates"></a>Procedura: Creare modelli di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ I passaggi inclusi nella [prima procedura](#to-add-a-custom-project-item-templat
      I file per il modello vengono aggiunti a un file ZIP e copiati nella directory specificata nella finestra di dialogo. Il percorso predefinito è la cartella **..\Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\My Exported Templates\\**.  
   
     > [!WARNING]
-    >  Nelle versioni precedenti di Visual Studio, il percorso predefinito è **..Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\Templates\ItemTemplates**.  
+    > Nelle versioni precedenti di Visual Studio, il percorso predefinito è **..Utenti\\<nomeutente\>\Documenti\Visual Studio \<versione>\Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Per abilitare l'uso del modello di elemento in un progetto Windows Store  
   

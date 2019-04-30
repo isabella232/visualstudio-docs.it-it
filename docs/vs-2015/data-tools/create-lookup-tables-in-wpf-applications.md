@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434514"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Creare tabelle di ricerca in applicazioni WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) desc
     - Oggetti. Per altre informazioni, vedere [Procedura: Connettersi ai dati negli oggetti](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
-    >  Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.  
+    > Prima di creare una tabella di ricerca, due tabelle o oggetti correlati devono esistere come un'origine dati per il progetto.  
   
 2. Aprire il**WPF Designer**e assicurarsi che la finestra di progettazione contiene un contenitore che è una destinazione di rilascio validi per gli elementi nel **Zdroje dat** finestra.  
   
@@ -58,7 +58,7 @@ Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) desc
 4. Espandere i nodi le **Zdroje dat** finestra fino a quando non è possibile visualizzare la tabella padre o l'oggetto e la tabella figlio correlata o l'oggetto.  
   
     > [!NOTE]
-    >  La tabella figlio correlata o l'oggetto è il nodo che viene visualizzato come nodo figlio espandibile sotto la tabella padre o l'oggetto.  
+    > La tabella figlio correlata o l'oggetto è il nodo che viene visualizzato come nodo figlio espandibile sotto la tabella padre o l'oggetto.  
   
 5. Fare clic sul menu a discesa per il nodo figlio e selezionare **dettagli**.  
   
@@ -73,12 +73,12 @@ Il termine *tabella di ricerca* (talvolta chiamato un *binding di ricerca*) desc
     - **ListView**  
   
         > [!NOTE]
-        >  Se il **ListBox** oppure **ListView** controllo non viene visualizzato nell'elenco, è possibile aggiungere questi controlli per l'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        > Se il **ListBox** oppure **ListView** controllo non viene visualizzato nell'elenco, è possibile aggiungere questi controlli per l'elenco. Per informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
     - Qualsiasi controllo personalizzato che deriva da <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Per informazioni su come aggiungere controlli personalizzati per l'elenco dei controlli è possono selezionare per gli elementi di **Zdroje dat** finestra, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        > Per informazioni su come aggiungere controlli personalizzati per l'elenco dei controlli è possono selezionare per gli elementi di **Zdroje dat** finestra, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 8. Trascinare il nodo figlio dal **Zdroje dat** finestra in un contenitore in WPF designer. (Nell'esempio precedente, il nodo figlio è il **ordini** nodo.)  
   

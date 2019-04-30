@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439690"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procedura dettagliata: Riga di comando di profilatura tramite Strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In questa procedura dettagliata viene descritto come eseguire la profilatura di 
  La strumentazione è un metodo di profilatura in cui vengono usate particolari versioni dei file binari profilati, contenenti funzioni probe che raccolgono informazioni sugli intervalli all'ingresso e all'uscita dalle funzioni in un modulo instrumentato. Poiché questo metodo di profilatura è più invasivo rispetto al campionamento, comporta un sovraccarico maggiore. I file binari instrumentati sono anche più grandi dei file binari di debug o di rilascio e non sono destinati alla distribuzione.  
   
 > [!NOTE]
->  Non inviare file binari instrumentati ai clienti. I file binari instrumentati possono presentare diversi rischi. I file binari contengono informazioni che possono agevolare la decompilazione dell'applicazione, oltre a comportare rischi per la sicurezza.  
+> Non inviare file binari instrumentati ai clienti. I file binari instrumentati possono presentare diversi rischi. I file binari contengono informazioni che possono agevolare la decompilazione dell'applicazione, oltre a comportare rischi per la sicurezza.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Per eseguire la profilatura dell'applicazione PeopleTrax tramite il metodo di strumentazione  
   

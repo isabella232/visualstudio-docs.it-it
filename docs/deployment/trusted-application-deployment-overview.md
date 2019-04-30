@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406645"
 ---
 # <a name="trusted-application-deployment-overview"></a>Cenni preliminari sulla distribuzione di applicazioni attendibili
 Questo argomento presenta informazioni generali su come distribuire applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con autorizzazioni elevate usando la tecnologia per la distribuzione di applicazioni attendibili.
@@ -29,7 +29,7 @@ Questo argomento presenta informazioni generali su come distribuire applicazioni
  La distribuzione di applicazioni attendibili, parte della tecnologia di distribuzione di [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , consente alle organizzazioni di qualsiasi dimensione di concedere autorizzazioni aggiuntive a un'applicazione gestita in modo più sicuro senza richieste dell'utente. Con la distribuzione di applicazioni attendibili, un'organizzazione può configurare semplicemente un computer client in modo che disponga di un elenco di editori attendibili, identificati usando i certificati Authenticode. In seguito, tutte le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] firmate da uno di questi editori attendibili ricevono un livello di attendibilità superiore.
 
 > [!NOTE]
->  La distribuzione di applicazioni attendibili richiede una configurazione eseguita una sola volta nel computer di un utente. Negli ambienti desktop gestiti, questa configurazione può essere eseguita usando i criteri globali. Se non è la soluzione desiderata per l'applicazione, usare l'elevazione delle autorizzazioni. Per altre informazioni, vedere [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
+> La distribuzione di applicazioni attendibili richiede una configurazione eseguita una sola volta nel computer di un utente. Negli ambienti desktop gestiti, questa configurazione può essere eseguita usando i criteri globali. Se non è la soluzione desiderata per l'applicazione, usare l'elevazione delle autorizzazioni. Per altre informazioni, vedere [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="trusted-application-deployment-basics"></a>Nozioni fondamentali sulla distribuzione di applicazioni attendibili
  La tabella seguente mostra gli oggetti e i ruoli coinvolti nella distribuzione di applicazioni attendibili.
@@ -88,7 +88,7 @@ Attenersi alla seguente procedura per sfruttare i vantaggi della distribuzione d
  Dopo aver ottenuto il certificato, usarlo per firmare la distribuzione. Se si distribuisce l'applicazione usando la pubblicazione guidata di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , viene generato automaticamente un certificato di prova se non è già stato specificato un altro certificato. Tuttavia, è anche possibile usare la finestra Creazione progetti di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per specificare un certificato fornito da un'autorità di certificazione.  Vedere anche [come: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  Non si consiglia di distribuire l'applicazione con un certificato di prova.
+> Non si consiglia di distribuire l'applicazione con un certificato di prova.
 
  È anche possibile firmare l'applicazione usando gli strumenti SDK *Mage.exe* o *MageUI.exe*. Per altre informazioni, vedere [Procedura dettagliata: Distribuire manualmente un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Per un elenco completo di opzioni della riga di comando relative alla firma della distribuzione, vedere [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406684"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Scegliere una strategia di distribuzione ClickOnce
 Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sono disponibili tre diverse strategie. La scelta dipende principalmente dal tipo di applicazione che si desidera distribuire. Le tre strategie di distribuzione sono elencate di seguito:
@@ -32,7 +32,7 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
 - Avvio dell'applicazione dal Web o da una condivisione di rete
 
     > [!NOTE]
-    >  Oltre alla scelta di una strategia di distribuzione, sarà anche possibile scegliere una strategia per gli aggiornamenti dell'applicazione. Per altre informazioni, vedere [sceglie una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Oltre alla scelta di una strategia di distribuzione, sarà anche possibile scegliere una strategia per gli aggiornamenti dell'applicazione. Per altre informazioni, vedere [sceglie una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Installazione dal Web o da una condivisione di rete
  Se si utilizza questa strategia, l'applicazione verrà distribuita in un server Web o in una condivisione file di rete. Quando un utente finale desidera installare l'applicazione, fa clic su un'icona su una pagina Web oppure fa doppio clic su un'icona nella condivisione di rete. L'applicazione viene quindi scaricata, installata e avviata sul computer. Gli elementi vengono aggiunti al **menu Start** e al gruppo **Installazione applicazioni** nel **Pannello di controllo**.
@@ -49,7 +49,7 @@ Per la distribuzione di un'applicazione [!INCLUDE[ndptecclick](../deployment/inc
  Questa strategia è simile alla prima, tranne per il fatto che in questo caso l'applicazione si comporta come un'applicazione Web. Quando l'utente fa clic su collegamento in una pagina Web, oppure fa doppio clic su un'icona della condivisione file, l'applicazione viene avviata. Quando viene chiusa dall'utente, l'applicazione non è più disponibile nel computer locale. Nessun elemento viene aggiunto al **menu Start** o al gruppo **Installazione applicazioni** del **Pannello di controllo**.
 
 > [!NOTE]
->  Tecnicamente, l'applicazione viene scaricata e installata in una cache dell'applicazione sul computer locale, analogamente a un'applicazione Web scaricata nella cache Web. Come per la cache Web, alla fine viene eseguito lo scavenging dei file dalla cache dell'applicazione. La percezione dell'utente, tuttavia, è che l'applicazione venga eseguita dal Web o dalla condivisione file.
+> Tecnicamente, l'applicazione viene scaricata e installata in una cache dell'applicazione sul computer locale, analogamente a un'applicazione Web scaricata nella cache Web. Come per la cache Web, alla fine viene eseguito lo scavenging dei file dalla cache dell'applicazione. La percezione dell'utente, tuttavia, è che l'applicazione venga eseguita dal Web o dalla condivisione file.
 
  Questa strategia è particolarmente consigliata per le applicazioni che vengono utilizzate poco di frequente, ad esempio uno strumento per i benefit dei dipendenti che viene eseguito solo una volta all'anno.
 
