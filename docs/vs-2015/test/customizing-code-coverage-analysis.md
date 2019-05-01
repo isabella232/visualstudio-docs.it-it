@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416651"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ```  
   
 > [!WARNING]
->  La risoluzione dei simboli può richiedere tempo, in particolare quando si usa un percorso di file remoto con molti assembly. Di conseguenza, si consiglia di copiare i file remoti con estensione pdb nello stesso percorso locale dei file binari (.dll ed .exe).  
+> La risoluzione dei simboli può richiedere tempo, in particolare quando si usa un percorso di file remoto con molti assembly. Di conseguenza, si consiglia di copiare i file remoti con estensione pdb nello stesso percorso locale dei file binari (.dll ed .exe).  
   
 ### <a name="excluding-and-including"></a>Esclusione ed inclusione  
  È possibile escludere gli assembly specificati dall'analisi code coverage. Ad esempio:  
@@ -134,7 +134,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ```  
   
 > [!WARNING]
->  Se è presente un errore in un'espressione regolare, come un carattere senza codice di escape e parentesi non corrispondenti, l'analisi di code coverage non funzionerà.  
+> Se è presente un errore in un'espressione regolare, come un carattere senza codice di escape e parentesi non corrispondenti, l'analisi di code coverage non funzionerà.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Altri modi per includere o escludere elementi  
  Per gli esempi, vedere l'[esempio alla fine di questo argomento](#sample).  
