@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438807"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedura: Proteggere i fogli di lavoro a livello di codice
   La funzionalità di protezione di Microsoft Office Excel consente di impedire la modifica degli oggetti di un foglio di lavoro da parte degli utenti o mediante codice. Per impostazione predefinita, dopo l'attivazione della protezione tutte le celle risultano bloccate.
@@ -30,7 +30,7 @@ ms.locfileid: "60062217"
  Nelle personalizzazioni a livello di documento è possibile proteggere i fogli di lavoro tramite la finestra di progettazione di Excel. È anche possibile proteggere un foglio di lavoro a livello di codice in fase di esecuzione, in qualsiasi tipo di progetto.
 
 > [!NOTE]
->  Non è possibile aggiungere controlli Windows Form alle aree protette di un foglio di lavoro.
+> Non è possibile aggiungere controlli Windows Form alle aree protette di un foglio di lavoro.
 
 ## <a name="use-the-designer"></a>Utilizzare la finestra di progettazione
 
