@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416509"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ L'Editor di test codificati dell'interfaccia utente consente di modificare facil
  In Esplora soluzioni aprire il menu di scelta rapida per **UIMap.uitest** e scegliere **Apri**. Il test codificato dell'interfaccia utente viene visualizzato nell'Editor test codificati dell'interfaccia utente. Ora è possibile visualizzare e modificare i metodi registrati, i le azioni e i corrispondenti controlli nel test codificato dell'interfaccia utente.  
   
 > [!TIP]
->  Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.  
+> Quando si seleziona un'azione dell'interfaccia utente che si trova in un metodo nel riquadro **Azioni dell'interfaccia utente** , viene evidenziato il controllo corrispondente. È possibile modificare anche le proprietà delle azioni dell'interfaccia utente o dei controlli.  
   
  *Non viene visualizzato* l'Editor di test codificati dell'interfaccia utente  
  È possibile che si usi una versione di Visual Studio Enterprise precedente alla 2012. L'Editor di test codificati dell'interfaccia utente era disponibile anche in Visual Studio 2010 Feature Pack 2 con una sottoscrizione MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -75,7 +75,7 @@ Modificare le proprietà di un'azione dell'interfaccia utente
   
  Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.  
   
- Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>**, è possibile sostituire l'URL con `‘http://Contoso2/default.aspx’`.  
+ Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>**, è possibile sostituire l'URL con `‘ http://Contoso2/default.aspx’`.  
   
  ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modificare le proprietà del controllo  
