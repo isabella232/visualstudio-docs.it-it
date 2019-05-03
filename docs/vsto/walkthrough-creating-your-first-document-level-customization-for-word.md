@@ -126,7 +126,7 @@ ms.locfileid: "63438519"
 
      **Questo testo è stato aggiunto usando la finestra di progettazione.**
 
-     **This text was added by using code.**
+     **Questo testo è stato aggiunto tramite codice.**
 
 3. Chiudere il documento.
 
