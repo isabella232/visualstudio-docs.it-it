@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58955791"
@@ -71,8 +71,8 @@ ms.locfileid: "58955791"
 
  Questo esempio produce il seguente output:
 
- **La richiesta di attendibilità completa: richiesta non è riuscita. ** 
- **ClassRequiringFullTrust.DoWork è stato chiamato.**
+ **La richiesta di attendibilità completa: richiesta non è riuscita.**
+**ClassRequiringFullTrust.DoWork è stato chiamato.**
 ## <a name="related-rules"></a>Regole correlate
  [CA2117: I tipi APTCA devono estendere solo tipi di base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082152"
@@ -72,10 +72,10 @@ ms.locfileid: "60082152"
 
  Questo esempio produce il seguente output:
 
- **Domanda: Negazione del chiamante non ha effetto su richiesta con autorizzazione oggetto dell'asserzione. ** 
- **LinkDemand: Negazione del chiamante non ha effetto su LinkDemand con autorizzazione oggetto dell'asserzione. ** 
- **LinkDemand: Negazione del chiamante non ha effetto con il codice protetto da LinkDemand. ** 
- **LinkDemand: Questo Nega non ha effetto con il codice protetto da LinkDemand.**
+ **Domanda: Negazione del chiamante non ha effetto su richiesta con autorizzazione oggetto dell'asserzione.**
+**LinkDemand: Negazione del chiamante non ha effetto su LinkDemand con autorizzazione oggetto dell'asserzione.**
+**LinkDemand: Negazione del chiamante non ha effetto con il codice protetto da LinkDemand.**
+**LinkDemand: Questo Nega non ha effetto con il codice protetto da LinkDemand.**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
