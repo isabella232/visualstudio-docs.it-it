@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58967939"
@@ -77,8 +77,8 @@ ms.locfileid: "58967939"
 
  Questo esempio produce il seguente output:
 
- **Meet al glen conoscerete 2/22/2003 12:00:00 AM. ** 
- **Dal Test: Prato sunny**
+ **Meet al glen conoscerete 2/22/2003 12:00:00 AM.**
+**Dal Test: Prato sunny**
 **riunisce le Prato sunny 2/22/2003 12:00:00 AM.**
 ## <a name="related-rules"></a>Regole correlate
  [CA2116: I metodi APTCA devono chiamare solo metodi APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)

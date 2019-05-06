@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58967930"
@@ -63,10 +63,10 @@ ms.locfileid: "58967930"
 
  Questo esempio produce il seguente output:
 
- **Creazione di un'istanza di SecuredTypeWithFields. ** 
- **i campi di tipo protetta: 22, 33**
-**modifica campo di tipo protetto... ** 
- **Campi dell'oggetto memorizzato nella cache: 99, 33**
+ **Creazione di un'istanza di SecuredTypeWithFields.**
+**i campi di tipo protetta: 22, 33**
+**modifica campo di tipo protetto...**
+**Campi dell'oggetto memorizzato nella cache: 99, 33**
 ## <a name="related-rules"></a>Regole correlate
  [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 

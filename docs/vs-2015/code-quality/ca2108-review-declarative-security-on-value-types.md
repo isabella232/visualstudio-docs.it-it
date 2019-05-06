@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 6b8bafb021e2a73b0a5bed7feba21fbb38fff8ce
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58967516"
@@ -56,8 +56,8 @@ ms.locfileid: "58967516"
 
  Questo esempio produce il seguente output:
 
- **Costruttore personalizzato struttura: Richiesta non riuscita. ** 
- **Nuovi valori SecuredTypeStructure 100 100**
+ **Costruttore personalizzato struttura: Richiesta non riuscita.**
+**Nuovi valori SecuredTypeStructure 100 100**
 **nuovi valori SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Vedere anche
  [Le richieste di collegamento](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dati e modellazione](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
