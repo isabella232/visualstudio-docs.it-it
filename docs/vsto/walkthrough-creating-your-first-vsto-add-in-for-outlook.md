@@ -111,7 +111,7 @@ ms.locfileid: "62981323"
 
 3. Verificare che il testo seguente venga aggiunto sia alla riga dell'oggetto, sia al corpo del messaggio.
 
-     **This text was added by using code.**
+     **Questo testo è stato aggiunto tramite codice.**
 
 4. Chiudere Outlook.
 

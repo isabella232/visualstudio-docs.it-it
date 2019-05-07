@@ -107,7 +107,7 @@ ms.locfileid: "63438497"
 
 3. Verificare che il seguente testo venga aggiunto al documento.
 
-     **This text was added by using code.**
+     **Questo testo è stato aggiunto tramite codice.**
 
 4. Chiudere Word.
 

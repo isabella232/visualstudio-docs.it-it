@@ -105,7 +105,7 @@ ms.locfileid: "62981242"
 
 3. Verificare che il seguente testo venga aggiunto a una nuova casella di testo nella parte superiore della diapositiva.
 
-     **This text was added by using code.**
+     **Questo testo è stato aggiunto tramite codice.**
 
 4. Chiudere PowerPoint.
 
