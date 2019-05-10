@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec1012ef689750dcd16679763baa942be55f1805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d978f8108d35ab999c8ac2aea6fc068d889d3a95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865599"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460979"
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
 Questa struttura rappresenta un parametro di un metodo o funzione.
@@ -40,12 +43,15 @@ public struct METADATA_ADDRESS_PARAM {
 }
 ```
 
-## <a name="terms"></a>Termini
- ID del parametro del metodo tokMethod fa parte di.
+## <a name="members"></a>Membri
+ `tokMethod`\
+ L'ID del metodo il parametro fa parte di.
 
- tokParam ID del parametro.
+ `tokParam`\
+ L'ID del parametro.
 
- dwIndex l'indice del parametro in un elenco di parametri.
+ `dwIndex`\
+ L'indice del parametro in un elenco di parametri.
 
 ## <a name="remarks"></a>Note
  Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_PARAM` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd92f8a93427264966bb44bbf44d5e519cb9459a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914205"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458144"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Recupera informazioni sul Visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
@@ -46,28 +49,28 @@ int GetManagedViewerCreationData(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `assemName`
+## <a name="parameters"></a>Parametri
+ `assemName`\
 
  [out] Restituisce il nome dell'assembly che contiene questo oggetto.
 
- `assemBytes`
+ `assemBytes`\
 
  [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly di questo oggetto (questo è un valore null se non sono disponibile alcun byte).
 
- `assemPdb`
+ `assemPdb`\
 
  [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione le informazioni per questo oggetto (questo è un valore null se non è disponibile alcun archivio simboli).
 
- `className`
+ `className`\
 
  [out] Restituisce il nome della classe che contiene questo oggetto.
 
- `alr`
+ `alr`\
 
  [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione dell'assembly.
 
- `replacementOk`
+ `replacementOk`\
 
  [out] Restituisce diversi da zero (`TRUE`) se il valore dell'oggetto può essere modificato; zero (`FALSE`) se l'oggetto è di sola lettura.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 381219b592ad7ed676ff940dd594450123e5d037
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865690"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457988"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Seleziona l'opzione maiuscole per i nomi corrispondenti.
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>Membri
- nmNone che viene specificata alcuna opzione.
+## <a name="fields"></a>Campi
+ `nmNone`\
+ Non è stata specificata alcuna opzione.
 
- nmCaseSensitive indica che i nomi per cui trovare una corrispondenza di maiuscole e minuscole.
+ `nmCaseSensitive`\
+ Indica che i nomi per cui trovare una corrispondenza tra maiuscole e minuscole.
 
- Indica che i nomi per cui trovare una corrispondenza nmCaseInsensitive non sono tra maiuscole e minuscole.
+ `nmCaseInsensitive`\
+ Indica che i nomi per cui trovare una corrispondenza non sono tra maiuscole e minuscole.
 
 ## <a name="remarks"></a>Note
  Passato come argomento per i metodi seguenti:

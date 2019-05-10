@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913527"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457931"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Specifica le proprietà desiderate devono essere ottenuti da un provider di programma.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membri
- Flag No PFLAG_NONE specificati.
+## <a name="fields"></a>Campi
+ `PFLAG_NONE`\
+ Nessun flag specificato.
 
- PFLAG_REMOTE_PORT chiamante desidera un elenco di programmi in un computer diverso rispetto a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Il chiamante desidera un elenco di programmi in un computer diverso rispetto a [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- Il processo è in corso il debug da questa istanza di PFLAG_DEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ Il processo è in corso il debug da questa istanza di [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] è collegato al programma in fase di debug ma non è avviata.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] è collegato al programma in fase di debug ma non è avviata.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] sta controllando l'arrivo degli eventi.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] sta controllando l'arrivo degli eventi.
 
- PFLAG_GET_PROGRAM_NODES chiamante desidera che il `ProgramNodes` campo le [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Chiamante desidera che il `ProgramNodes` campo le [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struttura.
 
- PFLAG_GET_IS_DEBUGGER_PRESENT chiamante desidera che il `fIsTheDebuggerPresent` campo il `PROVIDER_PROCESS_DATA` struttura.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Chiamante desidera che il `fIsTheDebuggerPresent` campo il `PROVIDER_PROCESS_DATA` struttura.
 
 ## <a name="remarks"></a>Note
  Questi flag vengono passati ai metodi seguenti:

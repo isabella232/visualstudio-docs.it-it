@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913861"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461005"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Specifica il tipo di messaggio e il motivo.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Membri
- MT_OUTPUTSTRING indica che deve essere inviato il messaggio nella finestra di output. Ciò si escludono a vicenda da `MT_MESSAGEBOX`.
+## <a name="fields"></a>Campi
+ `MT_OUTPUTSTRING`\
+ Indica che deve essere inviato il messaggio nella finestra di output. Ciò si escludono a vicenda da `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX indica che il messaggio deve essere visualizzato in una finestra di messaggio. Ciò si escludono a vicenda da `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Indica che il messaggio deve essere visualizzato in una finestra di messaggio. Ciò si escludono a vicenda da `MT_OUTPUTSTRING`.
 
- Valore della maschera MT_TYPE_MASK A isolare la destinazione del messaggio.
+ `MT_TYPE_MASK`\
+ Un valore della maschera per isolare la destinazione del messaggio.
 
- MT_REASON_EXCEPTION indica che viene visualizzata una finestra di messaggio come risultato un'eccezione. Ciò si escludono a vicenda da `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Indica che è attualmente visualizzata una finestra di messaggio come risultato un'eccezione. Ciò si escludono a vicenda da `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT indica che viene visualizzata una finestra di messaggio come risultato di raggiungere un punto di analisi. Ciò si escludono a vicenda per `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Indica che una finestra di messaggio viene visualizzata in seguito a raggiungere un punto di analisi. Ciò si escludono a vicenda per `MT_REASON_EXCEPTION`.
 
- Valore della maschera MT_REASON_MASK A isolare il motivo per il messaggio da visualizzare.
+ `MT_REASON_MASK`\
+ Un valore della maschera per isolare il motivo per il messaggio da visualizzare.
 
 ## <a name="remarks"></a>Note
  Questi valori vengono restituiti dai [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metodi.

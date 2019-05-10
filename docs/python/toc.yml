@@ -9,8 +9,9 @@
     - name: Carico di lavoro delle applicazioni analitiche e di analisi scientifica dei dati
       href: data-science-and-analytical-applications-workload.md
 - name: Installazione
-  href: installing-python-support-in-visual-studio.md
   items:
+    - name: Installazione
+      href: installing-python-support-in-visual-studio.md
     - name: Installare interpreti Python
       href: installing-python-interpreters.md
 - name: Guide rapide introduttive
@@ -75,8 +76,9 @@
 - name: Concetti
   items:
     - name: Progetti Python
-      href: managing-python-projects-in-visual-studio.md
       items:
+        - name: Progetti Python
+          href: managing-python-projects-in-visual-studio.md
         - name: Modelli di progetti Web
           href: python-web-application-project-templates.md
         - name: Modello di progetto Web Django
@@ -88,8 +90,9 @@
 - name: Guide pratiche
   items:
     - name: Gestire gli ambienti Python
-      href: managing-python-environments-in-visual-studio.md
       items:
+        - name: Gestire gli ambienti Python
+          href: managing-python-environments-in-visual-studio.md
         - name: Selezionare un interprete per un progetto
           href: selecting-a-python-environment-for-a-project.md
         - name: Uso di requirements.txt per le dipendenze
@@ -101,8 +104,9 @@
         - name: Configurare app Web per IIS
           href: configure-web-apps-for-iis-windows.md
     - name: Modificare il codice Python
-      href: editing-python-code-in-visual-studio.md
       items:
+        - name: Modificare il codice Python
+          href: editing-python-code-in-visual-studio.md
         - name: Codice formato
           href: formatting-python-code.md
         - name: Effettuare il refactoring del codice
@@ -112,13 +116,15 @@
     - name: Definire comandi di menu personalizzati
       href: defining-custom-python-project-commands.md
     - name: Python interattivo (REPL)
-      href: python-interactive-repl-in-visual-studio.md
       items:
+        - name: Python interattivo (REPL)
+          href: python-interactive-repl-in-visual-studio.md
         - name: Uso di REPL IPython
           href: interactive-repl-ipython.md
     - name: Debug
-      href: debugging-python-in-visual-studio.md
       items:
+        - name: Debug
+          href: debugging-python-in-visual-studio.md
         - name: Debug del codice nei computer Linux remoti
           href: debugging-python-code-on-remote-linux-machines.md
     - name: Pubblicazione nel servizio app di Azure in Linux

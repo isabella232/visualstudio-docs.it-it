@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 391f4bc6eb0480d26fd616afcea222db3b7be4b7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869057"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457377"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Ottiene il [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura che descrive un riferimento. Riservato per usi futuri.
@@ -46,28 +49,28 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwFields`
+## <a name="parameters"></a>Parametri
+ `dwFields`\
 
  [in] Una combinazione di flag dal [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumerazione che determina i campi da compilare [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura.
 
- `nRadix`
+ `nRadix`\
 
  [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
 
- `rgpArgs`
+ `rgpArgs`\
 
  [in] Matrice di [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetti. Riservato per utilizzi futuri; Impostare su un valore null.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Il numero di argomenti di riferimento nel `rgpArgs` matrice. Riservato per utilizzi futuri; Impostare su 0.
 
- `pReferenceInfo`
+ `pReferenceInfo`\
 
  [out] Oggetto [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struttura compilata con una descrizione della proprietà.
 

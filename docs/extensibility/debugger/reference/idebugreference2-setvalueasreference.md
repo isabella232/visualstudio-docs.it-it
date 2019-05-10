@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916324"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458638"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Imposta il valore di un riferimento da un altro riferimento. Riservato per usi futuri.
@@ -42,20 +45,20 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `rgpArgs`
+## <a name="parameters"></a>Parametri
+ `rgpArgs`\
 
  [in] Matrice di [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetti utilizzati per determinare come impostare il valore di riferimento.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] Il numero di riferimenti nella matrice.
 
- `pValue`
+ `pValue`\
 
  [in] Un' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto da cui impostare il valore della proprietà.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
 

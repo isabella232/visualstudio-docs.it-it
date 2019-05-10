@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982256"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226664"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usare i controlli WPF nelle soluzioni Office
 
@@ -55,7 +55,7 @@ Non è possibile aggiungere i controlli WPF direttamente agli elementi dell'inte
 
     - Le aree del modulo, aggiungere un' **area del modulo Outlook** elemento al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un'area del modulo a un progetto di componente aggiuntivo di Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Per i riquadri azioni aggiungere un **controllo riquadro azioni** oppure **controllo utente** elemento al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni ai documenti di Word o Excel workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [come: Aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Per i riquadri azioni aggiungere un **controllo riquadro azioni** oppure **controllo utente** elemento al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro azioni ai documenti di Word o le cartelle di lavoro di Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Per i riquadri attività personalizzati, aggiungere un **controllo utente** elemento al progetto. Per altre informazioni, vedere [Procedura: Aggiungere un riquadro attività personalizzato a un'applicazione](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
