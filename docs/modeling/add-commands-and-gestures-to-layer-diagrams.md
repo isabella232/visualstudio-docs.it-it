@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822833"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476662"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Aggiungere comandi e movimenti ai diagrammi delle dipendenze
 
@@ -28,7 +28,7 @@ Se si vuole, è possibile definire gestori comandi e movimenti diversi nello ste
 
 ## <a name="requirements"></a>Requisiti
 
-Vedere [Requisiti](../modeling/extend-layer-diagrams.md#prereqs).
+Vedere [Requisiti](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definire un comando o movimento in un nuovo progetto VSIX
 
