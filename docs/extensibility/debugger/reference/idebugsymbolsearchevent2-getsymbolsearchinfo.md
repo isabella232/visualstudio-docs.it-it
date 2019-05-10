@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868409"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224115"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Chiamato da un gestore eventi per recuperare i risultati relativi a un processo di caricamento di simboli.
@@ -40,19 +43,19 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pModule`
+## <a name="parameters"></a>Parametri
+ `pModule`\
 
  [out] Oggetto IDebugModule3 che rappresenta il modulo per il quale sono stati caricati i simboli.
 
- `pbstrDebugMessage`
+ `pbstrDebugMessage`\
 
  [in, out] Restituisce una stringa contenente eventuali messaggi di errore del modulo. Se non si verificano errori, quindi questa stringa conterrà solo il nome del modulo, ma non è mai vuota.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` non può essere `NULL` e deve essere liberata mediante `SysFreeString`.
 
- `pdwModuleInfoFlags`
+ `pdwModuleInfoFlags`\
 
  [out] Una combinazione di flag dal [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumerazione che indica se i simboli sono stati caricati.
 

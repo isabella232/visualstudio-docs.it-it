@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac02ca2f22b95b35cc12a545debf081c4052d520
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261c40fcabf9d5fe3fa99e89a43734bb8f9f245c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867560"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223326"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 Questa interfaccia rappresenta una raccolta di oggetti che implementano il [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.

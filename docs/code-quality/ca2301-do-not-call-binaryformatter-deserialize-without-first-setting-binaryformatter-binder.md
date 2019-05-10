@@ -10,12 +10,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d90ed71c1d5ca4cbfdcf8e500e1d176519a2fdff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+f1_keywords:
+- CA2301
+- DoNotCallBinaryFormatterDeserializeWithoutFirstSettingBinaryFormatterBinder
+ms.openlocfilehash: d9ac57ae00631088dacd9a23c502ba7693d5a903
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541571"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083911"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: Non chiamare BinaryFormatter.Deserialize senza aver prima impostato BinaryFormatter.Binder
 
@@ -43,10 +46,10 @@ Questa regola individua <xref:System.Runtime.Serialization.Formatters.Binary.Bin
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Non utilizzare mai <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se è necessario utilizzare un resolver di tipi, limitare tipi deserializzati da un elenco previsto.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET - usare TypeNameHandling.None. Se è necessario usare un altro valore per TypeNameHandling, limitare tipi deserializzati a un elenco con un ISerializationBinder personalizzato previsto.
+  - Newtonsoft Json.NET - usare TypeNameHandling.None. Se è necessario usare un altro valore per TypeNameHandling, limitare tipi deserializzati a un elenco con un ISerializationBinder personalizzato previsto.
   - Buffer del protocollo
-- Rendere la prova di manomissione i dati serializzati. Dopo la serializzazione, firmare crittograficamente i dati serializzati. Prima della deserializzazione, la convalida della firma crittografica. Proteggere la chiave di crittografia la divulgazione e la progettazione per le rotazioni delle chiavi.
-- Limitare i tipi deserializzati. Implementare una classe personalizzata <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Prima della deserializzazione con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, impostare il <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà a un'istanza di personalizzata <xref:System.Runtime.Serialization.SerializationBinder>. In sottoposto a override <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodo, se non è previsto il tipo verrà generata un'eccezione.
+- Rendere la prova di manomissione i dati serializzati. Dopo la serializzazione, firmare crittograficamente i dati serializzati. Prima della deserializzazione, la convalida della firma crittografica. Proteggere la chiave di crittografia dal scoperte e progettazione per le rotazioni delle chiavi.
+- Limitare i tipi deserializzati. Implementare una classe personalizzata <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Prima della deserializzazione con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, impostare il <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> proprietà a un'istanza di personalizzata <xref:System.Runtime.Serialization.SerializationBinder>. In sottoposto a override <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> metodo, se il tipo è imprevisto, generare un'eccezione.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 

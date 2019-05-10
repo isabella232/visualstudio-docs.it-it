@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f75428155cfff20ce280d8428839d4332d13031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226150"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Recupera le informazioni relative al computer in cui il debugger in esecuzione.
@@ -35,8 +38,8 @@ public int GetComputerInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pInfo`
+## <a name="parameters"></a>Parametri
+ `pInfo`\
 
  [out] Riferimento a una struttura che contiene le informazioni sul computer.
 

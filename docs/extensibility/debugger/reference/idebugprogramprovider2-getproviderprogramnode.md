@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869815"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459023"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera il nodo di programma per un programma specifico.
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `Flags`
+## <a name="parameters"></a>Parametri
+ `Flags`\
 
  [in] Una combinazione di flag dal [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumerazione. I flag seguenti sono più comuni per questa chiamata:
 
@@ -57,23 +60,23 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Chiamante è in corso il debug (verranno restituite informazioni aggiuntive sul marshalling per ogni nodo).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|
 
- `pPort`
+ `pPort`\
 
  [in] La porta del processo chiamante è in corso.
 
- `processId`
+ `processId`\
 
  [in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.
 
- `guidEngine`
+ `guidEngine`\
 
  [in] GUID del motore di debug che il programma è associato (se presente).
 
- `programId`
+ `programId`\
 
  [in] ID del programma per cui ottenere il nodo di programma.
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo programma richiesto.
 

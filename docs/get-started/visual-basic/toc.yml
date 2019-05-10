@@ -1,6 +1,7 @@
 - name: Esercitazioni su Visual Basic
-  href: index.yml
   items:
+    - name: Esercitazioni su Visual Basic
+      href: index.yml
     - name: Panoramica
       items:
         - name: Informazioni su Visual Studio

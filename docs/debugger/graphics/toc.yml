@@ -9,8 +9,9 @@
 - name: Documento log grafica
   href: graphics-log-document.md
 - name: Analisi dei frame di grafica
-  href: graphics-frame-analysis.md
   items:
+    - name: Analisi dei frame di grafica
+      href: graphics-frame-analysis.md
     - name: Variante delle dimensioni del viewport 1x1
       href: 1x1-viewport-size-variant.md
     - name: Varianti di MSAA 0x-2x-4x
@@ -46,8 +47,9 @@
 - name: Strumento di acquisizione da riga di comando
   href: command-line-capture-tool.md
 - name: Esempi di diagnostica grafica
-  href: graphics-diagnostics-examples.md
   items:
+    - name: Esempi di diagnostica grafica
+      href: graphics-diagnostics-examples.md
     - name: 'Procedura dettagliata: Acquisizione di informazioni grafiche'
       href: walkthrough-capturing-graphics-information.md
     - name: 'Procedura dettagliata: Acquisizione di informazioni grafiche a livello di codice'
@@ -65,11 +67,13 @@
     - name: 'Procedura: Modificare il computer di riproduzione della diagnostica della grafica'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Riferimento (acquisizione a livello di codice)
-  href: reference-programmatic-capture.md
   items:
+    - name: Riferimento (acquisizione a livello di codice)
+      href: reference-programmatic-capture.md
     - name: Classe VsgDbg
-      href: vsgdbg-class.md
       items:
+        - name: Classe VsgDbg
+          href: vsgdbg-class.md
         - name: 'VsgDbg::VsgDbg (costruttore)'
           href: vsgdbg-vsgdbg-constructor.md
         - name: 'VsgDbg::~VsgDbg (distruttore)'

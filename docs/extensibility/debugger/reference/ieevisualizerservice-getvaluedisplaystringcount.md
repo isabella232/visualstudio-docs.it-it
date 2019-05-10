@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3ed52e8be77e5f4dce081fc6a60ae22cecbb990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915196"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223556"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Recupera il numero di stringhe di valori da visualizzare per la proprietà specificata o il campo.
@@ -39,16 +42,16 @@ int GetValueDisplayStringCount (
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `displayKind`
+## <a name="parameters"></a>Parametri
+ `displayKind`\
 
  [in] Valore di [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumerazione.
 
- `propertyOrField`
+ `propertyOrField`\
 
  [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia che rappresenta una proprietà o campo.
 
- `pcelt`
+ `pcelt`\
 
  [out] Restituisce il numero di stringhe di valori da visualizzare.
 

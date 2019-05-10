@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b1feed9c32746c662131ba613fa19ca1aac0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a588a0e2438d1f95f8114e81c58330dd6f0ccd2b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864599"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458430"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Questa struttura rappresenta un indirizzo fisico.
@@ -36,8 +39,9 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="terms"></a>Termini
- offset A 64 bit, offset in uno spazio di indirizzo fisico.
+## <a name="members"></a>Membri
+ `offset`\
+ Un offset a 64 bit in uno spazio di indirizzo fisico.
 
 ## <a name="remarks"></a>Note
  Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_UNMANAGED_PHYSICAL` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).

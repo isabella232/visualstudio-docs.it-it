@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55157ab9a045b404175369e9682c525929f5e624
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864982"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460832"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Membri
+## <a name="fields"></a>Campi
 
-PIFLAG_SYSTEM_PROCESS indica che il processo è un processo di sistema.
+`PIFLAG_SYSTEM_PROCESS`\
+Indica che il processo è un processo di sistema.
 
-PIFLAG_DEBUGGER_ATTACHED indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o potrebbe essere alcuni altri debugger, ad esempio, WinDbg.
+`PIFLAG_DEBUGGER_ATTACHED`\
+Indica che il processo viene eseguito il debug da un debugger. Potrebbe essere un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugger o potrebbe essere alcuni altri debugger, ad esempio, WinDbg.
 
-PIFLAG_PROCESS_STOPPED indica che il processo viene arrestato. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
+`PIFLAG_PROCESS_STOPPED`\
+Indica che il processo viene arrestato. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
 
-PIFLAG_PROCESS_RUNNING indica che l'esecuzione del processo. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
+`PIFLAG_PROCESS_RUNNING`\
+Indica che il processo è in esecuzione. Valido solo se `PIFLAG_DEBUGGER_ATTACHED` viene anche specificato. Disponibile in Visual Studio 2005 e versioni successive.
 
 ## <a name="remarks"></a>Note
 

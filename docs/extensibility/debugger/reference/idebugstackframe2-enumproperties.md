@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bc4945f8acc65d5f12da5fecef7a4926ef416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868820"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457473"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crea un enumeratore per le proprietà associato al frame dello stack, ad esempio le variabili locali.
@@ -46,28 +49,28 @@ int EnumProperties ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwFieldSpec`
+## <a name="parameters"></a>Parametri
+ `dwFieldSpec`\
 
  [in] Una combinazione di flag dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi in enumerati [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture sono da compilare.
 
- `nRadix`
+ `nRadix`\
 
  [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
 
- `refiid`
+ `refiid`\
 
  [in] Un GUID di un filtro consente di selezionare quale [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture devono essere enumerati, ad esempio `guidFilterLocals`.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
 
- `pcelt`
+ `pcelt`\
 
  [out] Restituisce il numero di proprietà enumerato. Equivale alla chiamata al metodo il [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) (metodo).
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Restituisce un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) oggetto contenente un elenco delle proprietà desiderate.
 
