@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824007"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476607"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Risposta alle modifiche e propagazione delle modifiche
+# <a name="respond-to-and-propagate-changes"></a>Rispondere e propagare le modifiche
+
 Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere codice che propaga le modifiche ad altre parti del modello o a risorse esterne, ad esempio file, database o altri componenti.
 
-## <a name="in-this-section"></a>In questa sezione
- Come indicazione generale, prendere in considerazione queste tecniche nell'ordine seguente:
+## <a name="reference"></a>Riferimenti
+
+Come indicazione generale, prendere in considerazione queste tecniche nell'ordine seguente:
 
 |Tecnica|Scenari|Per altre informazioni|
 |-|-|-|
@@ -34,12 +36,13 @@ Quando un elemento viene creato, eliminato o aggiornato, è possibile scrivere c
 |Regole di selezione|Le regole di selezione in modo specifico vincolano ciò che l'utente può selezionare.|[Procedura: Accedere e vincolare la selezione corrente](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicare gli stati degli elementi del modello usando le funzionalità di forme e connettori, ad esempio shadow, frecce, colore e larghezza della linea e stile.|[Aggiornamento di forme e di connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Le regole di confrontare e gli eventi di Store**
- Modifica notificanti, regole e gli eventi vengono eseguiti quando vengono apportate in un modello.
+## <a name="compare-rules-and-store-events"></a>Le regole di confronto e archiviare gli eventi
 
- Le regole vengono in genere applicate alla transazione end in cui si è verificata la modifica e gli eventi vengono applicati dopo il commit delle modifiche in una transazione.
+Modifica notificanti, regole e gli eventi vengono eseguiti quando vengono apportate in un modello.
 
- Usare gli eventi di archiviazione per sincronizzare il modello con gli oggetti di fuori di Store e le regole per mantenere la coerenza all'interno di Store.
+Le regole vengono in genere applicate alla transazione end in cui si è verificata la modifica e gli eventi vengono applicati dopo il commit delle modifiche in una transazione.
+
+Usare gli eventi di archiviazione per sincronizzare il modello con gli oggetti di fuori di Store e le regole per mantenere la coerenza all'interno di Store.
 
 - **Creazione di regole personalizzate** è creare una regola personalizzata come una classe derivata da una regola astratta. È anche necessario segnalare al framework relativa alla regola personalizzata. Per altre informazioni, vedere [le regole propagano le modifiche all'interno di the Model](../modeling/rules-propagate-changes-within-the-model.md).
 

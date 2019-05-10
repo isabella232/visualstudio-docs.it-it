@@ -10,28 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994707"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476560"
 ---
 # <a name="extend-dependency-diagrams"></a>Estendere i diagrammi delle dipendenze
 
 È possibile scrivere codice per creare e aggiornare i diagrammi delle dipendenze e per convalidare la struttura del codice programma in base ai diagrammi delle dipendenze in Visual Studio. È possibile aggiungere comandi da visualizzare nel menu di scelta rapida (contestuale) dei diagrammi, personalizzare i movimenti di trascinamento della selezione e accedere al modello di livello dai modelli di testo. È possibile creare un pacchetto di queste estensioni in un progetto VSIX (Visual Studio Integration Extension) e distribuirle ad altri utenti di Visual Studio.
 
- Per altre informazioni sui diagrammi delle dipendenze, vedere:
-
-- [Diagrammi delle dipendenze: riferimenti](../modeling/layer-diagrams-reference.md)
-
-- [Diagrammi delle dipendenze: linee guida](../modeling/layer-diagrams-guidelines.md)
-
-- [Creare diagrammi delle dipendenze dal codice](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Convalidare il codice con i diagrammi delle dipendenze](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Requisiti
+## <a name="requirements"></a>Requisiti
 
 È necessario verificare che nel computer in cui si vogliono sviluppare le estensioni del livello sia installato quanto segue:
 
@@ -43,16 +33,7 @@ ms.locfileid: "62994707"
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-È necessario avere installato una versione appropriata di Visual Studio nel computer in cui si vogliono eseguire le estensioni del livello.
-
-Per le versioni di Visual Studio che supportano i diagrammi delle dipendenze, vedere [supporto della versione per l'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>In questa sezione
- [Aggiungere comandi e movimenti ai diagrammi delle dipendenze](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Aggiungere strumenti di convalida dell'architettura personalizzati ai diagrammi delle dipendenze](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Aggiungere proprietà personalizzate ai diagrammi delle dipendenze](../modeling/add-custom-properties-to-layer-diagrams.md)
+È necessario disporre di un'edizione di Visual Studio installata nel computer in cui si desidera eseguire le estensioni del livello appropriata. Per informazioni su quali edizioni di Visual Studio che supportano i diagrammi delle dipendenze, vedere [supporto di edizione per un'architettura e strumenti di modellazione](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>Vedere anche
 

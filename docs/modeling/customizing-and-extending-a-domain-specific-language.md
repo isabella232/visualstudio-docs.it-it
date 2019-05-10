@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414851"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476572"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizzazione ed estensione di un linguaggio specifico di dominio
+# <a name="customize-and-extend-a-domain-specific-language"></a>Personalizzare ed estendere un linguaggio specifico di dominio
+
 Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in corrispondenza del quale è possibile definire gli strumenti di modellazione:
 
-1. Definire un linguaggio specifico di dominio (DSL) mediante il diagramma di definizione DSL. È possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessarie per generare il codice e altri elementi.
-
-     Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
+1. Definire un linguaggio specifico di dominio (DSL) mediante il diagramma di definizione DSL. È possibile creare rapidamente un linguaggio DSL con una notazione basata su diagramma, un formato XML leggibile e gli strumenti di base necessarie per generare il codice e altri elementi. Per altre informazioni, vedere [come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Ottimizzare il linguaggio DSL utilizzando le funzionalità più avanzate della definizione DSL. Ad esempio, è possibile visualizzare collegamenti aggiuntivi quando l'utente crea un elemento. Queste tecniche vengono realizzate nella definizione DSL e alcune richiedono poche righe di codice del programma.
 
-3. Estendere gli strumenti di modellazione usando codice programma. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL.  Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Estendere gli strumenti di modellazione usando codice programma. VMSDK è progettato in modo specifico per facilitare l'integrazione delle estensioni con il codice generato dalla definizione DSL. Per altre informazioni, vedere [scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** sulla barra degli strumenti di Esplora soluzioni prima di ricompilare la soluzione.
+> Dopo aver aggiornato il file di definizione DSL, non dimenticare di fare clic su **Trasforma tutti i modelli** nella barra degli strumenti **Esplora soluzioni** prima della ricompilazione della soluzione.
 
-## <a name="customShapes"></a> In questa sezione
+## <a name="article-reference"></a>Riferimento all'articolo
 
 |Per ottenere questo effetto|Fare riferimento a questo argomento|
 |-|-|
-|Consentire all'utente di impostare le proprietà di colore e stile di una forma.|La classe di forma o connettore di fare doppio clic su, scegliere **Aggiungi esposta**, fare clic su un elemento.<br /><br /> Visualizzare [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
+|Consentire all'utente di impostare le proprietà di colore e stile di una forma.|La classe di forma o connettore di fare doppio clic su, scegliere **Aggiungi esposta**, fare clic su un elemento.|
 |Diverse classi di elemento del modello simile nel diagramma, la condivisione di proprietà, ad esempio l'altezza iniziale e la larghezza, colore, le descrizioni comandi.|Utilizzare l'ereditarietà tra le forme o classi di connettore. I mapping tra le forme derivate e le classi di dominio derivate ereditano i dettagli del mapping di elementi padre.<br /><br /> In alternativa, eseguire il mapping di classi di dominio diverso per la stessa classe shape.|
 |Una classe di elemento del modello viene visualizzata per contesti di diverse forme.|Eseguire il mapping di più di una classe di forma alla stessa classe di dominio. Quando si compila la soluzione, seguire la segnalazione errori e fornire il codice richiesto per decidere quale forma da utilizzare.|
 |Colore della forma o altre funzionalità, ad esempio tipo di carattere indicano lo stato corrente.|Visualizzare [aggiornamento di forme e connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Creare una regola che aggiorna le proprietà esposte. Visualizzare [le regole propagano le modifiche apportate all'interno del modello](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> In alternativa, usare OnAssociatedPropertyChanged() da aggiornare non esposto a funzionalità quali le frecce di collegamento o del tipo di carattere.|
 |Icona su Cambia forma per indicare lo stato.|Impostare la visibilità del mapping dell'elemento decorator nella finestra Dettagli DSL. Individuare elementi Decorator di immagine diversi nella stessa posizione. Visualizzare [aggiornamento di forme e connettori per riflettere il modello](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> In alternativa, eseguire l'override `ImageField.GetDisplayImage()`. Vedere l'esempio in <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Impostare un'immagine di sfondo per qualsiasi forma|Eseguire l'override InitializeInstanceResources() per aggiungere un ancoraggio ImageField. Visualizzare [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
-|Annidare forme a qualsiasi profondità|Consente di impostare una ricorsiva dell'albero di incorporamento. Definire BoundsRules per contenere le forme. Visualizzare [personalizzazione della presentazione nel diagramma](../modeling/customizing-presentation-on-the-diagram.md).|
+|Impostare un'immagine di sfondo per qualsiasi forma|Eseguire l'override InitializeInstanceResources() per aggiungere un ancoraggio ImageField.|
+|Annidare forme a qualsiasi profondità|Consente di impostare una ricorsiva dell'albero di incorporamento. Definire BoundsRules per contenere le forme.|
 |Collegare i connettori in fissi punti sul bordo di un elemento.|Definire gli elementi incorporati terminali, rappresentati dalle porte di piccole dimensioni nel diagramma. Usare BoundsRules per risolvere le porte posto. Vedere l'esempio di diagramma circuito [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Campo di testo viene visualizzato un valore derivato da altri valori.|Eseguire il mapping dell'elemento decorator di testo a una proprietà di dominio Calculated o archiviazione personalizzata. Per altre informazioni, vedere [calcolate e le proprietà di archiviazione personalizzate](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagazione delle modifiche tra gli elementi del modello, oppure tra le forme|Visualizzare [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md).|
@@ -55,13 +54,13 @@ Visual Studio Modeling e visualizzazione SDK (VMSDK) offre diversi livelli in co
 |Mantenere il layout di forme e appaiono sulla copia e trascinare.|Aggiungere le forme e connettori per l'insieme copiato `ElementGroupPrototype`. È il metodo più semplice per eseguire l'override `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Visualizzare [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Incollare le forme in una posizione prescelta, ad esempio la posizione del cursore attuale.|Eseguire l'override `ClipboardCommandSet.ProcessOnCopy()` usare la versione del percorso specifica `ElementOperations.Merge().` vedere [personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md).|
 |Creare collegamenti aggiuntivi quando si incolla|Override ClipboardCommandSet.ProcessOnPasteCommand()|
-|Abilita il trascinamento da questo diagramma, altri linguaggi specifici di dominio e Windows elementi|Vedere [How to: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)|
+|Abilita il trascinamento da questo diagramma, altri linguaggi specifici di dominio e Windows elementi|Vedere [Procedura: Aggiungere un gestore di trascinamento della selezione](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Consentire una forma o dello strumento è possibile trascinare una forma figlio, ad esempio una porta, come se si sono stato trascinato l'elemento padre.|Definire una direttiva di unione elementi nella classe di oggetto di destinazione, per inoltrare l'oggetto rilasciato per l'elemento padre. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|
 |Consentire una forma o lo strumento è possibile trascinare una forma e collegamenti aggiuntivi o gli oggetti creati. Ad esempio, per consentire a trascinare un elemento a cui è possibile collegare un commento.|Definire una direttiva di unione elementi nella classe di dominio di destinazione e i collegamenti da generare. In scenari complessi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di spostamento e la creazione dell'elemento](../modeling/customizing-element-creation-and-movement.md).|
 |Creare un gruppo di elementi con uno degli strumenti. Ad esempio, un componente con un set fisso di porte.|Eseguire l'override del metodo di inizializzazione della casella degli strumenti in ToolboxHelper.cs. Creare un prototipo di gruppo elemento (EGP) che contiene gli elementi e i relativi collegamenti di relazione. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Includere le forme dell'entità e la porte in EGP oppure definire BoundsRules per posizionare le forme porta quando viene creata un'istanza di EGP.|
 |Usare uno strumento di connessione per creare un'istanza di diversi tipi di relazione.|Aggiungere direttive di connessione collegamento (LCD) per il generatore di connessione che viene richiamato dallo strumento. Il monitor LCD a determinare il tipo della relazione tra i tipi dei due elementi. Per semplificare questa dipendono gli stati degli elementi, è possibile aggiungere codice personalizzato. Visualizzare [personalizzazione di strumenti e la casella degli strumenti](../modeling/customizing-tools-and-the-toolbox.md).|
 |Sticky strumenti - l'utente può fare doppio clic su qualsiasi strumento per creare molte forme o connettori in successione.|In Esplora DSL, selezionare il `Editor` nodo. Nella finestra Proprietà impostare **Usa permanenti gli elementi della casella degli strumenti**.|
-|Definire i comandi di menu|Vedere [How to: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
+|Definire i comandi di menu|Vedere [Procedura: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|
 |Vincolare il modello con le regole di convalida|Vedere [convalida in un linguaggio specifico di dominio](../modeling/validation-in-a-domain-specific-language.md)|
 |Generare codice, i file di configurazione o documenti da un linguaggio DSL.|[Generazione di codice da un linguaggio specifico di dominio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Personalizzare la modalità con cui i modelli vengono salvati in file.|Vedere [personalizzazione dell'archiviazione di File e serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md)|

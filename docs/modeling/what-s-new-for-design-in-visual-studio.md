@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386930"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476542"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novità relative alla progettazione in Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Convalida delle dipendenze in tempo reale
 
-Rimozione delle dipendenze indesiderate è una parte importante della gestione del debito tecnico. La convalida Live delle dipendenze è ora incluso, fornendo informazioni precise sui problemi e beneficiare completamente le nuove funzionalità nell'elenco degli errori e nell'editor.
+Rimozione delle dipendenze indesiderate è una parte importante della gestione del debito tecnico. Visual Studio fornisce la convalida live delle dipendenze, incluse informazioni dettagliate sui problemi, ad esempio in cui si trovano. Dipendenze in tempo reale convalida accetta completa i vantaggi delle nuove funzionalità nell'elenco degli errori e nell'editor.
 
 ![Convalida delle dipendenze in tempo reale in azione](media/dep-validation-whatsnew-01.png)
 
-Esperienza di creazione è stata modificata per semplificare la convalida delle dipendenze e più accessibili, individuabili modificando la terminologia da "Diagramma livello" a "Diagramma delle dipendenze".
+Esperienza di creazione è stata modificata per semplificare la convalida delle dipendenze più accessibili e individuabili. La terminologia è cambiato da "Diagramma livello" a "Diagramma di dipendenze".
 
 Il **architettura** menu contiene ora un comando per creare direttamente un diagramma delle dipendenze:
 
 ![Elemento di dipendenza in tempo reale del menu architettura](media/dep-validation-whatsnew-02.png)
 
-... e i nomi delle proprietà di un livello in un diagramma delle dipendenze e le relative descrizioni, sono stati modificati per renderli più significativi:
+I nomi delle proprietà di livello e le descrizioni sono state modificate in modo da renderli più significativi:
 
 ![Nomi delle proprietà di dipendenza in tempo reale aggiornato](media/dep-validation-whatsnew-03.png)
 
-Noterete ora che l'impatto delle modifiche immediatamente nei risultati di analisi per il codice nella soluzione corrente ogni volta che si salva il diagramma. Non devi attendere più il completamento del comando "Convalida delle dipendenze".
+Noterete immediatamente l'impatto delle modifiche nei risultati di analisi per il codice nella soluzione corrente ogni volta che si salva il diagramma. Non è necessario attendere il completamento dei **convalidare le dipendenze** comando.
 
 Per altre informazioni, vedere [questo post di blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Sono state rimosse le finestre di progettazione UML
 
-Le finestre di progettazione UML sono state rimosse da questa versione di Visual Studio Enterprise.
+Le finestre di progettazione UML sono state rimosse da Visual Studio.
 
 * Diagrammi UML sono ora presentati come file XML
 * Esplora modelli UML non esiste più
@@ -57,7 +57,7 @@ Le finestre di progettazione UML sono state rimosse da questa versione di Visual
 * Il collegamento back-dal linguaggio specifico di dominio o un livello non è più supportato
 * Estendibilità UML nel SDK di modellazione non è più supportato
 
-Tuttavia, il supporto per l'architettura di codice .NET e C++ la visualizzazione è disponibile tramite [mappe codici](map-dependencies-across-your-solutions.md)e i miglioramenti significativi alla convalida delle dipendenze descritto in precedenza.
+Supporto per visualizzare l'architettura di .NET e C++ codice è disponibile attraverso [mappe codici](map-dependencies-across-your-solutions.md).
 
 Se sei un utente significative delle finestre di progettazione UML, è possibile continuare a usare Visual Studio 2015 o versioni precedenti, anche se si decide in uno strumento alternativo per le esigenze di UML.
 
