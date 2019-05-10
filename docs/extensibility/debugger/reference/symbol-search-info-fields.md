@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420817"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458325"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Specifica il tipo di informazioni sui simboli da recuperare.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Membri
- SSIF_NONE non indica nessun flag
+## <a name="fields"></a>Campi
+ `SSIF_NONE`\
+ Non indica nessun flag
 
- SSIF_VERBOSE_SEARCH_INFO restituisce che tutti i percorsi usati per trovare i simboli di ricerca
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Restituisce che tutti i percorsi usati per trovare i simboli di ricerca
 
 ## <a name="remarks"></a>Note
  Questi flag vengono passati come parametro per il [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metodo per determinare la quantità di informazioni restituite.

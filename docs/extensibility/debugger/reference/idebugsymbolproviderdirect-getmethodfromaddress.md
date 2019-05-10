@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868457"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224004"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Recupera le informazioni sul metodo in corrispondenza dell'indirizzo di debug specificato.
@@ -47,32 +50,32 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pAddress`
+## <a name="parameters"></a>Parametri
+ `pAddress`\
 
  [in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
- `pGuid`
+ `pGuid`\
 
  [out] Identificatore univoco del modulo.
 
- `pAppID`
+ `pAppID`\
 
  [out] Identificatore del dominio dell'applicazione.
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out] Token che rappresenta la classe che lo contiene.
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out] Token che rappresenta il modulo.
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out] Offset in byte dall'inizio del `pAddress` parametro.
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out] Numero di versione del metodo.
 

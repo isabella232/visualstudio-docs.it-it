@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 835509048e888e13b91c53d9e35bd03d7aebdfed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28af715c307ebede5fa264c46cd42b85e8868674
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913501"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457948"
 ---
 # <a name="processinfofields"></a>PROCESS_INFO_FIELDS
 Specificare il tipo di informazioni da recuperare per un processo.
@@ -53,24 +56,33 @@ public enum enum_PROCESS_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Membri
- PIF_FILE_NAME Initialize/usare la `bstrFileName` campo il [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.
+## <a name="fields"></a>Campi
+ `PIF_FILE_NAME`\
+ Initialize/usare la `bstrFileName` campo le [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura.
 
- PIF_BASE_NAME Initialize/usare la `bstrBaseName` campo il `PROCESS_INFO` struttura.
+ `PIF_BASE_NAME`\
+ Initialize/usare la `bstrBaseName` campo il `PROCESS_INFO` struttura.
 
- PIF_TITLE Initialize/usare la `bstrTitle` campo il `PROCESS_INFO` struttura.
+ `PIF_TITLE`\
+ Initialize/usare la `bstrTitle` campo il `PROCESS_INFO` struttura.
 
- PIF_PROCESS_ID Initialize/usare la `ProcessId` campo il `PROCESS_INFO` struttura.
+ `PIF_PROCESS_ID`\
+ Initialize/usare la `ProcessId` campo il `PROCESS_INFO` struttura.
 
- PIF_SESSION_ID Initialize/usare la `dwSessionId` campo il `PROCESS_INFO` struttura.
+ `PIF_SESSION_ID`\
+ Initialize/usare la `dwSessionId` campo il `PROCESS_INFO` struttura.
 
- PIF_ATTACHED_SESSION_NAME Initialize/usare la `bstrAttachedSessionName` campo il `PROCESS_INFO` struttura.
+ `PIF_ATTACHED_SESSION_NAME`\
+ Initialize/usare la `bstrAttachedSessionName` campo il `PROCESS_INFO` struttura.
 
- PIF_CREATION_TIME Initialize/usare la `CreationTime` campo il `PROCESS_INFO` struttura.
+ `PIF_CREATION_TIME`\
+ Initialize/usare la `CreationTime` campo il `PROCESS_INFO` struttura.
 
- PIF_FLAGS Initialize/usare la `Flags` campo il `PROCESS_INFO` struttura.
+ `PIF_FLAGS`\
+ Initialize/usare la `Flags` campo il `PROCESS_INFO` struttura.
 
- PIF_ALL compila tutti i campi.
+ `PIF_ALL`\
+ Compila tutti i campi.
 
 ## <a name="remarks"></a>Note
  Passato per il [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metodo per indicare quali campi della [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struttura devono essere inizializzate.

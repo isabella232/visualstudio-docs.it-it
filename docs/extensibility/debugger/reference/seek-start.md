@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864821"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458401"
 ---
 # <a name="seekstart"></a>SEEK_START
 Specifica la posizione da cui iniziare la ricerca in un flusso di disassemblaggio.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Membri
- SEEK_START_BEGIN inizia la ricerca all'inizio del documento corrente.
+## <a name="fields"></a>Campi
+ `SEEK_START_BEGIN`\
+ Avvia la ricerca all'inizio del documento corrente.
 
- SEEK_START_END inizia la ricerca alla fine del documento corrente.
+ `SEEK_START_END`\
+ Avvia la ricerca alla fine del documento corrente.
 
- SEEK_START_CURRENT inizia la ricerca in corrispondenza della posizione corrente del documento corrente.
+ `SEEK_START_CURRENT`\
+ Avvia la ricerca in corrispondenza della posizione corrente del documento corrente.
 
- SEEK_START_CODECONTEXT inizia la ricerca in corrispondenza del contesto di codice specificato del documento corrente.
+ `SEEK_START_CODECONTEXT`\
+ Avvia la ricerca in corrispondenza del contesto di codice specificato del documento corrente.
 
- SEEK_START_CODELOCID inizia la ricerca nell'identificatore percorso codice specificata. Gli identificatori di percorso di codice vengono ottenuti chiamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Avvia la ricerca nell'identificatore percorso codice specificata. Gli identificatori di percorso di codice vengono ottenuti chiamando [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Note
  Passato come argomento per il [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) (metodo).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868754"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458542"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Ottiene una descrizione del frame dello stack.
@@ -40,16 +43,16 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwFieldSpec`
+## <a name="parameters"></a>Parametri
+ `dwFieldSpec`\
 
  [in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi del `pFrameInfo` parametro devono essere compilati.
 
- `nRadix`
+ `nRadix`\
 
  [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out] Oggetto [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura compilata con la descrizione del frame dello stack.
 

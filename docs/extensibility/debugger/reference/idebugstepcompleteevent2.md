@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be6568e84157c8d042113fe6f2f86b2cf288005
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51d6774a85f5acf4666754a9a80ca52285724594
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868639"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457260"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 Questa interfaccia viene inviata dal motore di debug (DE) al gestore di sessione di debug (SDM) quando il programma in fase di debug viene completato un passaggio in, Esegui un'istruzione/routine o uscire una riga di codice sorgente o istruzione o dell'istruzione.

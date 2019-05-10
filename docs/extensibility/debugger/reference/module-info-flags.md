@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9f08422ae106e7d97341d3909ed5470a83d815e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913874"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460945"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Specifica lo stato dei simboli per un modulo.
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membri
- MIF_SYMBOLS_LOADED in almeno un set di simboli è stato caricato dal modulo (in caso contrario, sono stati caricati senza simboli).
+## <a name="fields"></a>Campi
+ `MIF_SYMBOLS_LOADED`\
+ Almeno un set di simboli è stato caricato dal modulo (in caso contrario, sono stati caricati senza simboli).
 
 ## <a name="remarks"></a>Note
  Questo valore viene restituito per il [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) (metodo).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3a11e368b6260d00f3f6ed0b19d94aa26bd31a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58531e64c88c89a92b5eee7f2eac7067cf42775f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865466"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458002"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
 Descrive un particolare modulo (DLL, EXE o assembly).
@@ -59,29 +62,41 @@ public struct MODULE_INFO { 
 ```
 
 ## <a name="members"></a>Membri
- dwValidFields una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specifica quali campi vengono compilati.
+ `dwValidFields`\
+ Una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specifica quali campi vengono compilati.
 
- m_bstrName il nome del modulo.
+ `m_bstrName`\
+ Nome del modulo.
 
- m_bstrUrl l'URL del modulo.
+ `m_bstrUrl`\
+ L'URL del modulo.
 
- m_bstrVersion la versione del modulo.
+ `m_bstrVersion`\
+ La versione del modulo.
 
- m_bstrDebugMessage un messaggio facoltativo sul modulo, ad esempio, "non è possibile caricare i simboli."
+ `m_bstrDebugMessage`\
+ Un messaggio facoltativo sul modulo, ad esempio, "non è possibile caricare i simboli."
 
- m_addrLoadAddress il modulo Carica l'indirizzo.
+ `m_addrLoadAddress`\
+ L'indirizzo di caricamento del modulo.
 
- m_addrPreferredLoadAddress l'indirizzo di caricamento preferito del modulo.
+ `m_addrPreferredLoadAddress`\
+ L'indirizzo di caricamento preferito del modulo.
 
- m_dwSize le dimensioni del modulo.
+ `m_dwSize`\
+ Le dimensioni del modulo.
 
- m_dwLoadOrder l'ordine di caricamento del modulo.
+ `m_dwLoadOrder`\
+ L'ordine di caricamento del modulo.
 
- m_TimeStamp l'ora che dell'ultima modifica apportata al file di simboli.
+ `m_TimeStamp`\
+ L'ora che dell'ultima modifica apportata al file di simboli.
 
- m_bstrUrlSymbolLocation il percorso del file di simboli (ad esempio, ".\\") specificato nel modulo. Utilizzato come una posizione di partenza per trovare i simboli per un modulo.
+ `m_bstrUrlSymbolLocation`\
+ Il percorso del file di simboli (ad esempio, ".\\") specificato nel modulo. Utilizzato come una posizione di partenza per trovare i simboli per un modulo.
 
- m_dwModuleFlags una combinazione di flag dal [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumerazione che descrive il modulo.
+ `m_dwModuleFlags`\
+ Una combinazione di flag dal [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumerazione che descrive il modulo.
 
 ## <a name="remarks"></a>Note
  Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) in cui viene compilato nel metodo.

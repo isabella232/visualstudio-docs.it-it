@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3ca4e944125f6673ca66accdb78742f693def77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: df878cc59a47a8d3cc7079f8b919f87d9bb60f43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869126"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457466"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 Confronta un riferimento a un altro. Riservato per usi futuri.
@@ -38,12 +41,12 @@ int Compare ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwCompare`
+## <a name="parameters"></a>Parametri
+ `dwCompare`\
 
  [in] Un valore compreso il [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) enumerazione che specifica l'operazione di confronto, ad esempio, maggiore o uguale a, minore di.
 
- `pReference`
+ `pReference`\
 
  [in] Un' [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) che rappresenta il riferimento da confrontare all'oggetto.
 

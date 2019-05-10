@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f701415c011b304ac886669de5da8f813b26220
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 23c00147b0d42c848d01e0e2a08df80672750e71
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226418"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 Questo metodo ottiene il tipo di campo di classe che rappresenta il nome completo della classe.
@@ -40,16 +43,16 @@ int GetClassTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pszClassName`
+## <a name="parameters"></a>Parametri
+ `pszClassName`\
 
  [in] Il nome della classe.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.
 
- `ppField`
+ `ppField`\
 
  [out] Restituisce il tipo di classe come rappresentata dai [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfaccia.
 

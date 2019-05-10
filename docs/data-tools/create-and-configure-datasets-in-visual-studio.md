@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567792"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460624"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procedura: Creare e configurare i set di dati in Visual Studio
 
 Un set di dati è un set di oggetti che archiviano i dati da un database in memoria e supportano il rilevamento delle modifiche per consentire di creare, leggere, aggiornare ed eliminazione (CRUD) sui dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplice *form over data* applicazioni aziendali. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per lavorare con i set di dati, si deve avere una conoscenza di base dei concetti relativi ai database.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: af67f4589682cc3c0ecf42653374521c011115c2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869242"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457520"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Ottiene un'interfaccia (DE) del motore di debug personalizzato.
@@ -36,8 +39,8 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppUnk`
+## <a name="parameters"></a>Parametri
+ `ppUnk`\
 
  [out] Restituisce un `IUnknown` oggetto rappresenta il motore di debug (DE), e che possano essere interrogate per qualsiasi altra interfaccia valida associata a un CRI (ad esempio [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) oppure [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
