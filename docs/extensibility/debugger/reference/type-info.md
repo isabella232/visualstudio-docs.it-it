@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bbb64acfd71a6208fde3a5c3f84d6c5886ece72f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415787"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460731"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Questa struttura consente di specificare vari tipi di informazioni sul tipo del campo.
@@ -43,26 +46,29 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>Parametri
- dwKind un valore di [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione che determina come interpretare l'unione.
+## <a name="members"></a>Membri
+ `dwKind`\
+ Un valore compreso il [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumerazione che determina come interpretare l'unione.
 
- type.typeMeta
+ `type.typeMeta`\
 
  [C++ solo] Contiene un [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struttura se `dwKind` è `TYPE_KIND_METADATA`.
 
- type.typePdb
+ `type.typePdb`\
 
  [C++ solo] Contiene un [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struttura se `dwKind` è `TYPE_KIND_PDB`.
 
- type.typeBuilt
+ `type.typeBuilt`\
 
  [C++ solo] Contiene un [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struttura se `dwKind` è `TYPE_KIND_BUILT`.
 
- Type.unused inutilizzati spaziatura interna.
+ `type.unused`\
+ Spaziatura interna inutilizzata.
 
+ `type`\
  Nome dell'unione.
 
- UnionMember
+ `unionmember`\
 
  [C# solo] Effettuare il marshalling per il tipo di struttura appropriata in base `dwKind`.
 

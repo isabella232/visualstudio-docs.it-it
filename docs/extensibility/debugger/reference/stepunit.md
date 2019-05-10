@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864867"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460991"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Specifica l'unità di incremento per l'esecuzione di istruzioni.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Membri
- Procedura STEP_STATEMENT dall'istruzione.
+## <a name="fields"></a>Campi
+ `STEP_STATEMENT`\
+ Procedura dall'istruzione.
 
- Procedura STEP_LINE tramite la riga.
+ `STEP_LINE`\
+ Procedura dalla riga.
 
- Procedura STEP_INSTRUCTION dall'istruzione.
+ `STEP_INSTRUCTION`\
+ Procedura dall'istruzione.
 
 ## <a name="remarks"></a>Note
  Passato come argomento per il [passaggio](../../../extensibility/debugger/reference/idebugprocess3-step.md) (metodo).
