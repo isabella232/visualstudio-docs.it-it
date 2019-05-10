@@ -8,18 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6dde8eee0c21f41cb21acf97fb68961dd0beee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e1350523b347d0dfb87831947b4fd1d9206521ca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933680"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461339"
 ---
-# <a name="xml-schema-designer-workspace"></a>Area di lavoro di Progettazione XML Schema
+# <a name="xml-schema-designer-workspace-views"></a>Visualizzazioni dell'area di lavoro Progettazione XML Schema
 
-Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni che consentono di esplorare lo schema XSD in modo più dettagliato. La visualizzazione iniziale è il punto di avvio per Progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni di Progettazione XSD e vedere i dettagli relativi al set di schemi. La visualizzazione grafico consente di visualizzare una panoramica di un set di schemi e delle relazioni tra i nodi degli schemi. La visualizzazione modello di contenuto fornisce una rappresentazione grafica dei dettagli relativi a nodi dello schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.
+Progettazione XML Schema (Progettazione XSD) è uno strumento grafico che consente di esplorare gli schemi XML. Oltre al [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), che consente di esplorare e di esplorare l'albero di XML Schema e di eseguire ricerche, progettazione XSD fornisce tre visualizzazioni in cui è possibile esplorare lo schema XSD in modo più dettagliato.
 
-Per iniziare a esplorare i nodi a cui si è interessati, è necessario aggiungerli all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
+- Il **visualizzazione iniziale** è il punto di avvio per progettazione XSD; dalla visualizzazione iniziale, è possibile passare alle altre visualizzazioni della finestra di progettazione XSD e visualizzare i dettagli del set di schemi.
+- Il **visualizzazione grafico** consente di visualizzare una panoramica di un set di schemi e le relazioni tra i nodi dello schema.
+- Il **visualizzazione modello di contenuto** fornisce una rappresentazione grafica dei dettagli dei nodi di schema locali e globali, inclusi tipi semplici e complessi, elementi, gruppi, attributi e gruppi di attributi.
+
+Per iniziare a esplorare i nodi che si è interessati, è necessario aggiungerli all'area di lavoro. L'area di lavoro è condivisa da tutte le visualizzazioni.
 
 ## <a name="add-nodes-to-the-workspace"></a>Aggiungere nodi all'area di lavoro
 
