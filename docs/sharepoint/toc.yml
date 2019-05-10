@@ -1,21 +1,25 @@
 - name: Creare soluzioni di SharePoint
-  href: create-sharepoint-solutions.md
   items:
+    - name: Creare soluzioni di SharePoint
+      href: create-sharepoint-solutions.md
     - name: Guida introduttiva allo sviluppo per SharePoint
-      href: getting-started-sharepoint-development-in-visual-studio.md
       items:
+        - name: Guida introduttiva allo sviluppo per SharePoint
+          href: getting-started-sharepoint-development-in-visual-studio.md
         - name: Informazioni aggiuntive sugli errori di SharePoint
           href: additional-information-for-sharepoint-errors.md
     - name: Sviluppo di soluzioni SharePoint
-      href: developing-sharepoint-solutions.md
       items:
+        - name: Sviluppo di soluzioni SharePoint
+          href: developing-sharepoint-solutions.md
         - name: Modelli di progetto e di elementi di progetto SharePoint
           href: sharepoint-project-and-project-item-templates.md
         - name: Aggiungere elementi a un progetto SharePoint
           href: how-to-add-items-to-a-sharepoint-project.md
         - name: 'Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint'
-          href: creating-site-columns-content-types-and-lists-for-sharepoint.md
           items:
+            - name: 'Creazione di colonne del sito, tipi di contenuto ed elenchi per SharePoint'
+              href: creating-site-columns-content-types-and-lists-for-sharepoint.md
             - name: 'Procedura dettagliata: creare una colonna del sito, un tipo di contenuto e un elenco per SharePoint'
               href: walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md
         - name: Creare un ricevitore di eventi
@@ -23,8 +27,9 @@
         - name: Creare un ricevitore di eventi per un'istanza di elenco specifica
           href: how-to-create-an-event-receiver-for-a-specific-list-instance.md
         - name: Creazione di soluzioni flusso di lavoro SharePoint
-          href: creating-sharepoint-workflow-solutions.md
           items:
+            - name: Creazione di soluzioni flusso di lavoro SharePoint
+              href: creating-sharepoint-workflow-solutions.md
             - name: Supporto dei form nei flussi di lavoro
               href: form-support-in-workflows.md
             - name: 'Procedura dettagliata: creazione e debug di una soluzione flusso di lavoro SharePoint'
@@ -38,8 +43,9 @@
             - name: 'Procedura dettagliata: importare un flusso di lavoro riutilizzabile di SharePoint Designer in Visual Studio'
               href: walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md
         - name: Creazione di pagine per SharePoint
-          href: creating-pages-for-sharepoint.md
           items:
+            - name: Creazione di pagine per SharePoint
+              href: creating-pages-for-sharepoint.md
             - name: Creazione di pagine applicazione per SharePoint
               href: creating-application-pages-for-sharepoint.md
             - name: Creare una pagina di un'applicazione
@@ -47,8 +53,9 @@
             - name: 'Procedura dettagliata: creazione di una pagina di un''applicazione SharePoint'
               href: walkthrough-creating-a-sharepoint-application-page.md
         - name: Creazione di web part per SharePoint
-          href: creating-web-parts-for-sharepoint.md
           items:
+            - name: Creazione di web part per SharePoint
+              href: creating-web-parts-for-sharepoint.md
             - name: Creare una Web part di SharePoint
               href: how-to-create-a-sharepoint-web-part.md
             - name: Creare una Web part di SharePoint tramite una finestra di progettazione
@@ -60,16 +67,19 @@
             - name: 'Procedura dettagliata: creazione di una Web part Silverlight che visualizza il servizio OData per SharePoint'
               href: walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md
         - name: Creazione di controlli utente riutilizzabili per web part o pagine applicazione
-          href: creating-reusable-controls-for-web-parts-or-application-pages.md
           items:
+            - name: Creazione di controlli utente riutilizzabili per web part o pagine applicazione
+              href: creating-reusable-controls-for-web-parts-or-application-pages.md
             - name: Creare un controllo utente per una Web part o una pagina applicazione di SharePoint
               href: how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md
         - name: Integrazione di dati business in SharePoint
-          href: integrating-business-data-into-sharepoint.md
           items:
+            - name: Integrazione di dati business in SharePoint
+              href: integrating-business-data-into-sharepoint.md
             - name: Creazione di un modello di integrazione applicativa dei dati
-              href: creating-a-business-data-connectivity-model.md
               items:
+                - name: Creazione di un modello di integrazione applicativa dei dati
+                  href: creating-a-business-data-connectivity-model.md
                 - name: Creare un modello BDC
                   href: how-to-create-a-bdc-model.md
                 - name: Aggiungere un file modello BDC esistente a un progetto SharePoint
@@ -79,8 +89,9 @@
                 - name: Includere un assembly personalizzato in una funzionalità BDC
                   href: how-to-include-a-custom-assembly-in-a-bdc-feature.md
             - name: Progettazione di un modello di integrazione applicativa dei dati
-              href: designing-a-business-data-connectivity-model.md
               items:
+                - name: Progettazione di un modello di integrazione applicativa dei dati
+                  href: designing-a-business-data-connectivity-model.md
                 - name: Panoramica degli strumenti di progettazione del modello di integrazione applicativa dei dati
                   href: bdc-model-design-tools-overview.md
                 - name: Aggiungere un'entità a un modello
@@ -112,13 +123,15 @@
                 - name: 'Procedura dettagliata: creazione di un elenco esterno in SharePoint tramite i dati business'
                   href: walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md
         - name: Creazione di definizioni di sito per SharePoint
-          href: creating-site-definitions-for-sharepoint.md
           items:
+            - name: Creazione di definizioni di sito per SharePoint
+              href: creating-site-definitions-for-sharepoint.md
             - name: 'Procedura dettagliata: creare un progetto di definizione di sito di base'
               href: walkthrough-create-a-basic-site-definition-project.md
         - name: Importazione di elementi da un sito di SharePoint esistente
-          href: importing-items-from-an-existing-sharepoint-site.md
           items:
+            - name: Importazione di elementi da un sito di SharePoint esistente
+              href: importing-items-from-an-existing-sharepoint-site.md
             - name: 'Procedura dettagliata: importare elementi da un sito di SharePoint esistente'
               href: walkthrough-import-items-from-an-existing-sharepoint-site.md
             - name: Linee guida per l'importazione di flussi di lavoro riutilizzabili
@@ -128,18 +141,21 @@
             - name: 'Procedura dettagliata: importare una pagina master personalizzata e una pagina del sito con un''immagine'
               href: walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md
         - name: Utilizzo di moduli per includere file nella soluzione
-          href: using-modules-to-include-files-in-the-solution.md
           items:
+            - name: Utilizzo di moduli per includere file nella soluzione
+              href: using-modules-to-include-files-in-the-solution.md
             - name: Includere file mediante un modulo
               href: how-to-include-files-by-using-a-module.md
         - name: Esplorazione di connessioni di SharePoint tramite Esplora server
-          href: browsing-sharepoint-connections-using-server-explorer.md
           items:
+            - name: Esplorazione di connessioni di SharePoint tramite Esplora server
+              href: browsing-sharepoint-connections-using-server-explorer.md
             - name: Aggiungere o rimuovere connessioni a SharePoint
               href: how-to-add-or-remove-sharepoint-connections.md
         - name: Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto
-          href: providing-packaging-and-deployment-information-in-project-items.md
           items:
+            - name: Specifica delle informazioni sui pacchetti e sulla distribuzione negli elementi di progetto
+              href: providing-packaging-and-deployment-information-in-project-items.md
             - name: Contrassegnare i controlli come controlli sicuri
               href: how-to-mark-controls-as-safe-controls.md
             - name: Aggiungere un riferimento all'output del progetto
@@ -153,8 +169,9 @@
         - name: Finestra di dialogo di selezione URL
           href: url-picker-dialog-box-sharepoint-development-in-visual-studio.md
     - name: Localizzazione di soluzioni SharePoint
-      href: localizing-sharepoint-solutions.md
       items:
+        - name: Localizzazione di soluzioni SharePoint
+          href: localizing-sharepoint-solutions.md
         - name: Aggiungere un file di risorse
           href: how-to-add-a-resource-file.md
         - name: Localizzare una funzionalità
@@ -164,20 +181,23 @@
         - name: Localizzare il codice
           href: how-to-localize-code.md
     - name: Compilazione e debug delle soluzioni SharePoint
-      href: building-and-debugging-sharepoint-solutions.md
       items:
+        - name: Compilazione e debug delle soluzioni SharePoint
+          href: building-and-debugging-sharepoint-solutions.md
         - name: Compilare soluzioni SharePoint
           href: how-to-build-sharepoint-solutions.md
         - name: Debug di soluzioni SharePoint
           href: debugging-sharepoint-solutions.md
         - name: Verifica e debug del codice di SharePoint
-          href: verifying-and-debugging-sharepoint-code.md
           items:
+            - name: Verifica e debug del codice di SharePoint
+              href: verifying-and-debugging-sharepoint-code.md
             - name: 'Procedura dettagliata: debug di un''applicazione SharePoint tramite IntelliTrace'
               href: walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md
         - name: Profilatura delle prestazioni di applicazioni di SharePoint
-          href: profiling-the-performance-of-sharepoint-applications.md
           items:
+            - name: Profilatura delle prestazioni di applicazioni di SharePoint
+              href: profiling-the-performance-of-sharepoint-applications.md
             - name: 'Procedura dettagliata: profilatura di un''applicazione SharePoint'
               href: walkthrough-profiling-a-sharepoint-application.md
         - name: Differenze tra soluzioni create mediante sandbox e soluzioni farm
@@ -187,11 +207,13 @@
         - name: Risoluzione dei problemi relativi alle soluzioni SharePoint
           href: troubleshooting-sharepoint-solutions.md
     - name: Creazione del pacchetto e distribuzione delle soluzioni SharePoint
-      href: packaging-and-deploying-sharepoint-solutions.md
       items:
+        - name: Creazione del pacchetto e distribuzione delle soluzioni SharePoint
+          href: packaging-and-deploying-sharepoint-solutions.md
         - name: Creazione di funzionalità SharePoint
-          href: creating-sharepoint-features.md
           items:
+            - name: Creazione di funzionalità SharePoint
+              href: creating-sharepoint-features.md
             - name: Aggiungere una funzionalità alle soluzioni SharePoint
               href: how-to-add-a-feature-to-sharepoint-solutions.md
             - name: Personalizzare una caratteristica di SharePoint
@@ -203,8 +225,9 @@
             - name: 'Procedura dettagliata: aggiungere ricevitori di eventi di funzionalità'
               href: walkthrough-add-feature-event-receivers.md
         - name: Creazione di pacchetti delle soluzioni SharePoint
-          href: creating-sharepoint-solution-packages.md
           items:
+            - name: Creazione di pacchetti delle soluzioni SharePoint
+              href: creating-sharepoint-solution-packages.md
             - name: Personalizzare un pacchetto della soluzione SharePoint
               href: how-to-customize-a-sharepoint-solution-package.md
             - name: Aggiungere e rimuovere funzionalità ed elementi in un pacchetto tramite la progettazione dei pacchetti
@@ -218,8 +241,9 @@
             - name: Personalizzare un pacchetto della soluzione SharePoint tramite le destinazioni di MSBuild
               href: how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md
         - name: 'Distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint'
-          href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
           items:
+            - name: 'Distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint'
+              href: deploying-publishing-and-upgrading-sharepoint-solution-packages.md
             - name: Distribuire e pubblicare una soluzione SharePoint in un sito SharePoint locale
               href: how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md
             - name: 'Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto'
@@ -237,23 +261,27 @@
         - name: Unione di codice XML in manifesti di funzionalità e pacchetto
           href: merging-xml-in-feature-and-package-manifests.md
     - name: Procedure dettagliate ed esempi di sviluppo di applicazioni di SharePoint
-      href: sharepoint-development-samples-and-walkthroughs.md
       items:
+        - name: Procedure dettagliate ed esempi di sviluppo di applicazioni di SharePoint
+          href: sharepoint-development-samples-and-walkthroughs.md
         - name: Esempi di sviluppo di SharePoint
           href: sharepoint-development-samples.md
         - name: Procedure dettagliate sullo sviluppo per SharePoint
           href: sharepoint-development-walkthroughs.md
     - name: Estensione degli strumenti di SharePoint in Visual Studio
-      href: extending-the-sharepoint-tools-in-visual-studio.md
       items:
+        - name: Estensione degli strumenti di SharePoint in Visual Studio
+          href: extending-the-sharepoint-tools-in-visual-studio.md
         - name: Cenni preliminari sul modello di programmazione delle estensioni degli strumenti di SharePoint
           href: overview-of-the-programming-model-of-sharepoint-tools-extensions.md
         - name: Estensione del sistema di progetto SharePoint
-          href: extending-the-sharepoint-project-system.md
           items:
+            - name: Estensione del sistema di progetto SharePoint
+              href: extending-the-sharepoint-project-system.md
             - name: Definizione di tipi di elementi di progetto SharePoint
-              href: defining-custom-sharepoint-project-item-types.md
               items:
+                - name: Definizione di tipi di elementi di progetto SharePoint
+                  href: defining-custom-sharepoint-project-item-types.md
                 - name: Definire un tipo di elemento di progetto SharePoint
                   href: how-to-define-a-sharepoint-project-item-type.md
                 - name: Aggiungere una voce di menu di scelta rapida a un tipo di elemento di progetto SharePoint personalizzato
@@ -271,8 +299,9 @@
                 - name: 'Procedura dettagliata: creazione di un elemento di progetto Colonna del sito con un modello di progetto, parte 2'
                   href: walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md
             - name: Estensione di elementi di progetto SharePoint
-              href: extending-sharepoint-project-items.md
               items:
+                - name: Estensione di elementi di progetto SharePoint
+                  href: extending-sharepoint-project-items.md
                 - name: Creare un'estensione di elemento del progetto SharePoint
                   href: how-to-create-a-sharepoint-project-item-extension.md
                 - name: Aggiungere una voce di menu di scelta rapida a un'estensione di elemento di progetto SharePoint
@@ -282,8 +311,9 @@
                 - name: 'Procedura dettagliata: estensione di un tipo di elemento di progetto SharePoint'
                   href: walkthrough-extending-a-sharepoint-project-item-type.md
             - name: Estensione di progetti SharePoint
-              href: extending-sharepoint-projects.md
               items:
+                - name: Estensione di progetti SharePoint
+                  href: extending-sharepoint-projects.md
                 - name: Creare un'estensione del progetto SharePoint
                   href: how-to-create-a-sharepoint-project-extension.md
                 - name: Aggiungere una voce di menu di scelta rapida ai progetti SharePoint
@@ -293,8 +323,9 @@
                 - name: 'Procedura dettagliata: creazione di un''estensione del progetto SharePoint'
                   href: walkthrough-creating-a-sharepoint-project-extension.md
             - name: Estensione della creazione di pacchetti e della distribuzione di SharePoint
-              href: extending-sharepoint-packaging-and-deployment.md
               items:
+                - name: Estensione della creazione di pacchetti e della distribuzione di SharePoint
+                  href: extending-sharepoint-packaging-and-deployment.md
                 - name: Eseguire codice all'esecuzione dei passaggi di distribuzione
                   href: how-to-run-code-when-deployment-steps-are-executed.md
                 - name: Eseguire codice quando un progetto SharePoint viene distribuito o ritratto
@@ -310,8 +341,9 @@
             - name: Conversione tra tipi di sistemi di progetto SharePoint e altri tipi di progetto Visual Studio
               href: converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md
         - name: Estensione del nodo Connessioni di SharePoint in Esplora server
-          href: extending-the-sharepoint-connections-node-in-server-explorer.md
           items:
+            - name: Estensione del nodo Connessioni di SharePoint in Esplora server
+              href: extending-the-sharepoint-connections-node-in-server-explorer.md
             - name: Estendere un nodo SharePoint in Esplora server
               href: how-to-extend-a-sharepoint-node-in-server-explorer.md
             - name: Aggiungere un nodo personalizzato di SharePoint a Esplora server
@@ -321,11 +353,13 @@
             - name: 'Procedura dettagliata: estensione di Esplora server per visualizzare Web part'
               href: walkthrough-extending-server-explorer-to-display-web-parts.md
         - name: Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint
-          href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
           items:
+            - name: Programmazione di concetti e funzionalità per le estensioni degli strumenti di SharePoint
+              href: programming-concepts-and-features-for-sharepoint-tools-extensions.md
             - name: Chiamate ai modelli a oggetti di SharePoint
-              href: calling-into-the-sharepoint-object-models.md
               items:
+                - name: Chiamate ai modelli a oggetti di SharePoint
+                  href: calling-into-the-sharepoint-object-models.md
                 - name: Creare un comando di SharePoint
                   href: how-to-create-a-sharepoint-command.md
                 - name: Eseguire un comando di SharePoint
@@ -333,8 +367,9 @@
                 - name: 'Procedura dettagliata: chiamata al modello a oggetti del client di SharePoint in un''estensione di Esplora server'
                   href: walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md
             - name: Utilizzo del servizio di progetto SharePoint
-              href: using-the-sharepoint-project-service.md
               items:
+                - name: Utilizzo del servizio di progetto SharePoint
+                  href: using-the-sharepoint-project-service.md
                 - name: Recuperare il servizio di progetto SharePoint
                   href: how-to-retrieve-the-sharepoint-project-service.md
             - name: Associazione di dati personalizzati alle estensioni degli strumenti di SharePoint
@@ -344,11 +379,13 @@
         - name: Distribuzione di estensioni per gli strumenti di SharePoint in Visual Studio
           href: deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md
         - name: Riferimenti
-          href: reference-sharepoint-tools-extensibility.md
           items:
+            - name: Riferimenti
+              href: reference-sharepoint-tools-extensibility.md
             - name: Riferimento allo schema degli elementi di progetto SharePoint
-              href: sharepoint-project-item-schema-reference.md
               items:
+                - name: Riferimento allo schema degli elementi di progetto SharePoint
+                  href: sharepoint-project-item-schema-reference.md
                 - name: Elemento ExtensionData
                   href: extensiondata-element.md
                 - name: Elemento ExtensionDataItem

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 574111db390388ee1d0c572a3a8825c3a2ae9469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223998"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Ottiene l'indirizzo di debug che segue un indirizzo di debug specificato in un metodo.
@@ -40,16 +43,16 @@ int GetNextAddress( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pAddress`
+## <a name="parameters"></a>Parametri
+ `pAddress`\
 
  [in] Indirizzo di debug specificato.
 
- `fStatementOnly`
+ `fStatementOnly`\
 
  [in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.
 
- `ppAddress`
+ `ppAddress`\
 
  [out] Restituisce l'indirizzo di debug successiva.
 

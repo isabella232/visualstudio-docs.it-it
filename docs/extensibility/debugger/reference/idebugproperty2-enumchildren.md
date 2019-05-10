@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfbce26a84254158f088e8744c14154aef7f61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e7158649ee3965127b5bdeba42619eaa676cfaa0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869518"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458914"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Recupera un elenco degli elementi figlio della proprietà.
@@ -48,32 +51,32 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwFields`
+## <a name="parameters"></a>Parametri
+ `dwFields`\
 
  [in] Una combinazione di flag dal [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumerazione che specifica quali campi in enumerati [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strutture sono da compilare.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] Specifica la radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
 
- `guidFilter`
+ `guidFilter`\
 
  [in] GUID del filtro utilizzato con il `dwAttribFilter` e `pszNameFilter` parametri per selezionare quali `DEBUG_PROPERTY_INFO` elementi figlio devono essere enumerati. Ad esempio, `guidFilterLocals` filtri per le variabili locali.
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in] Una combinazione di flag dal [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumerazione che specifica il tipo di oggetti da enumerare, ad esempio `DBG_ATTRIB_METHOD` per tutti i metodi che possono essere figli di questa proprietà. Usato in combinazione con il `guidFilter` e `pszNameFilter` parametri.
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in] Il nome del filtro utilizzato con il `guidFilter` e `dwAttribFilter` parametri per selezionare quali `DEBUG_PROPERTY_INFO` elementi figlio devono essere enumerati. Ad esempio si imposta questo parametro per i filtri "MyX" per tutti gli elementi figlio con il nome "MyX."
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Specifica il tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Restituisce un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) oggetto contenente un elenco delle proprietà figlio.
 

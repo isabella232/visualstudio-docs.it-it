@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865440"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461036"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Specifica il tipo di un oggetto dall'analizzatore di espressioni.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Membri
- OBJECT_TYPE_BOOLEAN indica che l'oggetto è un valore booleano.
+## <a name="fields"></a>Campi
+ `OBJECT_TYPE_BOOLEAN`\
+ Indica che l'oggetto è un valore booleano.
 
- OBJECT_TYPE_CHAR indica che l'oggetto è un carattere.
+ `OBJECT_TYPE_CHAR`\
+ Indica che l'oggetto è un carattere.
 
- OBJECT_TYPE_I1 indica che l'oggetto è un intero con segno a 1 byte.
+ `OBJECT_TYPE_I1`\
+ Indica che l'oggetto è un intero con segno a 1 byte.
 
- OBJECT_TYPE_U1 indica che l'oggetto è un intero senza segno a 1 byte.
+ `OBJECT_TYPE_U1`\
+ Indica che l'oggetto è un intero senza segno a 1 byte.
 
- OBJECT_TYPE_I2 indica che l'oggetto è un intero con segno a due byte.
+ `OBJECT_TYPE_I2`\
+ Indica che l'oggetto è un intero con segno a due byte.
 
- OBJECT_TYPE_U2 indica che l'oggetto è un intero senza segno a due byte.
+ `OBJECT_TYPE_U2`\
+ Indica che l'oggetto è un intero senza segno a due byte.
 
- OBJECT_TYPE_I4 indica che l'oggetto è un intero con segno a quattro byte.
+ `OBJECT_TYPE_I4`\
+ Indica che l'oggetto è un intero con segno a quattro byte.
 
- OBJECT_TYPE_U4 indica che l'oggetto è un intero senza segno a quattro byte.
+ `OBJECT_TYPE_U4`\
+ Indica che l'oggetto è un intero senza segno a quattro byte.
 
- OBJECT_TYPE_I8 indica che l'oggetto è un intero con segno a 8 byte.
+ `OBJECT_TYPE_I8`\
+ Indica che l'oggetto è un intero con segno a 8 byte.
 
- OBJECT_TYPE_U8 indica che l'oggetto è un intero senza segno a 8 byte.
+ `OBJECT_TYPE_U8`\
+ Indica che l'oggetto è un intero senza segno a 8 byte.
 
- OBJECT_TYPE_R4 indica che l'oggetto è un numero a virgola mobile a quattro byte.
+ `OBJECT_TYPE_R4`\
+ Indica che l'oggetto è un numero a virgola mobile a quattro byte.
 
- OBJECT_TYPE_R8 indica che l'oggetto è un numero a virgola mobile a 8 byte.
+ `OBJECT_TYPE_R8`\
+ Indica che l'oggetto è un numero a virgola mobile a 8 byte.
 
- OBJECT_TYPE_OBJECT indica che l'oggetto è un oggetto.
+ `OBJECT_TYPE_OBJECT`\
+ Indica che l'oggetto è un oggetto.
 
- OBJECT_TYPE_NULL indica che l'oggetto è NULL.
+ `OBJECT_TYPE_NULL`\
+ Indica che l'oggetto è NULL.
 
- OBJECT_TYPE_CLASS indica che l'oggetto è una classe.
+ `OBJECT_TYPE_CLASS`\
+ Indica che l'oggetto è una classe.
 
 ## <a name="remarks"></a>Note
  Passato come argomento per il [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metodi.

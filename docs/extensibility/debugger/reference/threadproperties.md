@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913353"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460719"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Vengono descritte le proprietà di un thread.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Membri
- dwFields una combinazione di flag dal [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumerazione, che indica quali campi in questa struttura sono validi.
+ `dwFields`\
+ Una combinazione di flag dal [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumerazione, che indica quali campi in questa struttura sono validi.
 
- dwThreadId l'ID del thread.
+ `dwThreadId`\
+ ID del thread.
 
- conteggio di sospensione dwSuspendCount il thread.
+ `dwSuspendCount`\
+ Il thread di conteggio di sospensione.
 
- dwThreadState un valore di [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumerazione che indica lo stato del thread operativo.
+ `dwThreadState`\
+ Un valore compreso il [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumerazione che indica lo stato del thread operativo.
 
- stringa che specifica la priorità del thread; bstrPriority ad esempio, "Superiore al normale", "Normal" o "Ora critiche".
+ `bstrPriority`\
+ Stringa che specifica la priorità del thread; ad esempio, "Superiore al normale", "Normal" o "Ora critiche".
 
- bstName il nome del thread.
+ `bstName`\
+ Il nome del thread.
 
- bstrLocation il percorso del thread (in genere il frame dello stack più in alto), in genere espresso come il nome del metodo in cui l'esecuzione è attualmente bloccata.
+ `bstrLocation`\
+ Il percorso di thread (in genere il frame dello stack più in alto), in genere espresso come il nome del metodo in cui l'esecuzione è attualmente bloccata.
 
 ## <a name="remarks"></a>Note
  Questa struttura viene compilata tramite una chiamata per il [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) (metodo). Le informazioni restituite così vengano in genere utilizzate per il popolamento di **thread** finestra.

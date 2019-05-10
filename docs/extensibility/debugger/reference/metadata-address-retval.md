@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913887"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460964"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Questa struttura rappresenta un valore restituito da un metodo o funzione.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Termini
- ID del metodo tokMethod questo valore restituito è per.
+## <a name="members"></a>Membri
+ `tokMethod`\
+ L'ID del metodo di questo valore restituito è per.
 
- dwCorType il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` definita nell'enumerazione il [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] file corhdr. h SDK.
+ `dwCorType`\
+ Il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` definita nell'enumerazione il [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] file corhdr. h SDK.
 
- Le dimensioni della firma del valore restituito dwSigSize (archiviato in `rgSig`).
+ `dwSigSize`\
+ Le dimensioni della firma del valore restituito (archiviato in `rgSig`).
 
- rgSig una matrice di byte che costituiscono la firma del valore restituito.
+ `rgSig`\
+ Matrice di byte che costituiscono la firma del valore restituito.
 
 ## <a name="remarks"></a>Note
  Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_RETVAL` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).

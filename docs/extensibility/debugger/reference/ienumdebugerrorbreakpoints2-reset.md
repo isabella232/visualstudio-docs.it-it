@@ -1,46 +1,47 @@
 ---
 title: IEnumDebugErrorBreakpoints2::Reset | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IEnumDebugErrorBreakpoints2::Reset
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Reset
 ms.assetid: d5b04bba-a8b9-4141-94fb-250c77f0534c
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 787aefa90370993ba7da470d318d8735aa18eb49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5ea2b06d9629c629dcc7085da690e2dd387a9683
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914810"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225881"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Reimposta l'enumerazione sul primo elemento.
 
-Reimposta l'enumerazione sul primo elemento.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```cpp#  
-HRESULT Reset(  
-   void  
-);  
-```  
-  
-```csharp  
-int Reset();  
-```  
-  
-## <a name="return-value"></a>Valore restituito  
- Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.  
-  
-## <a name="remarks"></a>Note  
- Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) metodo restituisce il primo elemento dell'enumerazione.  
-  
-## <a name="see-also"></a>Vedere anche  
- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
+## <a name="syntax"></a>Sintassi
+
+```cpp
+HRESULT Reset(
+   void
+);
+```
+
+```csharp
+int Reset();
+```
+
+## <a name="return-value"></a>Valore restituito
+ Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
+
+## <a name="remarks"></a>Note
+ Dopo che questo metodo viene chiamato, la chiamata successiva per la [successivo](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) metodo restituisce il primo elemento dell'enumerazione.
+
+## <a name="see-also"></a>Vedere anche
+- [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

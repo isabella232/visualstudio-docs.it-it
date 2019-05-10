@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3e407f1eda594a35469511cceceac8df7898f95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916684"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457831"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Questa interfaccia consente a un motore di debug (DE) o fornitori di porte personalizzato per registrare i programmi per il debug.
