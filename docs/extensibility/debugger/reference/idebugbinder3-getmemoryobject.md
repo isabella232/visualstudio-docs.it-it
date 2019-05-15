@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7741ad4f7b587cbd31888e643557c744ca4200e2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923545"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614960"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Questo metodo recupera un oggetto di memoria che rappresenta la memoria di cui è associato questo oggetto.
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pField`
+## <a name="parameters"></a>Parametri
+`pField`\
+[in] Specifica il campo per ottenere l'oggetto di memoria per.
 
- [in] Specifica il campo per ottenere l'oggetto di memoria per.
+`uConstant`\
+[in] Rappresenta un valore per un valore costante o un indirizzo di memoria.
 
- `uConstant`
-
- [in] Rappresenta un valore per un valore costante o un indirizzo di memoria.
-
- `ppObject`
-
- [out] Un' [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta la memoria a cui è associato questo oggetto.
+`ppObject`\
+[out] Un' [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che rappresenta la memoria a cui è associato questo oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

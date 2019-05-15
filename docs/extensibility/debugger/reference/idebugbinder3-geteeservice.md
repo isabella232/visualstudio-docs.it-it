@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877559"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614909"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Questo metodo restituisce un servizio richiesto.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `vendor`
+## <a name="parameters"></a>Parametri
+`vendor`\
+[in] `GUID` del fornitore (un valore null è accettabile).
 
- [in] `GUID` del fornitore (un valore null è accettabile).
+`language`\
+[in] `GUID` di un linguaggio (un valore null è accettabile).
 
- `language`
+`iid`\
+[in] `IID` del servizio da ottenere.
 
- [in] `GUID` di un linguaggio (un valore null è accettabile).
-
- `iid`
-
- [in] `IID` del servizio da ottenere.
-
- `ppService`
-
- [out] Interfaccia per il servizio richiesto.
+`ppService`\
+[out] Interfaccia per il servizio richiesto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

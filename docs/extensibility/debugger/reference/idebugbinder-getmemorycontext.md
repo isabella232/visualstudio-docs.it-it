@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7c647f12e80adab70dd626347d52e07505e3704
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1fe7c2b25a8931a449ac1ae2f4ba260f267bc22
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877536"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615061"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
 Questo metodo converte una posizione di oggetto o un indirizzo di memoria in un contesto in memoria.
@@ -40,18 +43,15 @@ int GetMemoryContext(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pField`
+## <a name="parameters"></a>Parametri
+`pField`\
+[in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.
 
- [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che descrive l'oggetto da individuare. Se `NULL`, quindi usare `dwConstant` invece.
+`dwConstant`\
+[in] Un indirizzo di memoria costante, ad esempio 0x5000.
 
- `dwConstant`
-
- [in] Un indirizzo di memoria costante, ad esempio 0x5000.
-
- `ppMemCxt`
-
- [out] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
+`ppMemCxt`\
+[out] Restituisce il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interfaccia che rappresenta l'indirizzo dell'oggetto o l'indirizzo in memoria.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

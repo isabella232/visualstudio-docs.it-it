@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923656"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614665"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Questo metodo recupera un elenco dei tipi di argomento associato all'oggetto.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `skip`
+## <a name="parameters"></a>Parametri
+`skip`\
+[in] Numero di campi da ignorare prima di ottenere i tipi di argomento.
 
- [in] Numero di campi da ignorare prima di ottenere i tipi di argomento.
+`count`\
+[in] Il numero di campi dell'argomento da restituire (specifica anche la dimensione del `ppFields` matrice).
 
- `count`
+`ppFields`\
+[in, out] Matrice di campi che verranno compilati in fase di restituzione di questo metodo.
 
- [in] Il numero di campi dell'argomento da restituire (specifica anche la dimensione del `ppFields` matrice).
-
- `ppFields`
-
- [in, out] Matrice di campi che verranno compilati in fase di restituzione di questo metodo.
-
- `pFetched`
-
- [out] \(facoltativo) Il numero di argomenti tipo campi effettivamente restituiti.
+`pFetched`\
+[out] \(facoltativo) Il numero di argomenti tipo campi effettivamente restituiti.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

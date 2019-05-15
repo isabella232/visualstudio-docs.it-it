@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 716721a94b5fa31bfff6dfcae647e1de2f45a995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b52035d3f7a686c95f03f89a22bd0835b42caff2
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877352"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615022"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 Ottiene lo stato del punto di interruzione associato.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`pState`
-
- [out] Restituisce un valore di [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione che descrive lo stato del punto di interruzione.
+## <a name="parameters"></a>Parametri
+`pState`\
+[out] Restituisce un valore di [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumerazione che descrive lo stato del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

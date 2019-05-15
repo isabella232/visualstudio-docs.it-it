@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902115"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614522"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -267,7 +267,7 @@ Quando si seleziona **espressione condizionale**, è possibile scegliere tra due
 
 2. Avviare il debug e quando si mette in pausa l'esecuzione nel punto di interruzione, selezionare **Debug** > **Windows** > **variabili locali** o **Alt** + **4** per aprire la **variabili locali** finestra.
 
-   Trovare il punto di interruzione il **variabili locali** finestra, pulsante destro del mouse e selezionare **Crea ID oggetto**.
+   Trovare l'istanza di oggetto specifico nel **variabili locali** finestra, pulsante destro del mouse e selezionare **Crea ID oggetto**.
 
    Nella finestra **$** verrà visualizzato il simbolo **Variabili locali** . Si tratta dell'ID oggetto.
 

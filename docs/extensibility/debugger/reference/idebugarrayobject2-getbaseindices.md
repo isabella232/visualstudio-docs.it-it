@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5355e85007c04e523efa4030ca0603a01cf88c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e9b445f8ec471774eaceb0d6dd06c44b7d167f79
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923767"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615198"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
 Recupera gli indici di base (inferiore) per ogni indice dato il numero di dimensioni nella matrice.
@@ -37,14 +40,12 @@ int GetBaseIndices (
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwRank`
+## <a name="parameters"></a>Parametri
+`dwRank`\
+[in] Il numero di dimensioni (rank) della matrice.
 
- [in] Il numero di dimensioni (rank) della matrice.
-
- `dwIndices`
-
- [out] Indici base (inferiore) per la matrice.
+`dwIndices`\
+[out] Indici base (inferiore) per la matrice.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

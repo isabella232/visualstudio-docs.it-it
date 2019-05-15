@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662907"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615365"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Specifica la struttura del percorso di risoluzione dei punti di interruzione.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Membri
-`bpType` Un valore compreso il [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica come interpretare le `bpResLocation` union o `unionmemberX` membri.
+`bpType`\
+Un valore compreso il [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica come interpretare le `bpResLocation` union o `unionmemberX` membri.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ solo] Contiene il [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struttura se `bpType`  =  `BPT_CODE`.
 
- [C++ solo] Contiene il [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) struttura se `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ solo] Contiene il [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura se `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ solo] Un segnaposto.
 
- [C++ solo] Contiene il [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura se `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# solo] Vedere la sezione Osservazioni sull'interpretazione.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# solo] Vedere la sezione Osservazioni sull'interpretazione.
 
- [C++ solo] Un segnaposto.
+`unionmember3`\
+[C# solo] Vedere la sezione Osservazioni sull'interpretazione.
 
-`unionmember1`
-
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.
-
-`unionmember2`
-
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.
-
-`unionmember3`
-
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.
-
-`unionmember4`
-
- [C# solo] Vedere la sezione Osservazioni sull'interpretazione.
+`unionmember4`\
+[C# solo] Vedere la sezione Osservazioni sull'interpretazione.
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) strutture.
