@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976199"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461467"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 
@@ -62,16 +62,16 @@ Esaminare il file *app.config*. Il file contiene almeno la dichiarazione XML e u
 
 2. All'interno dell'elemento **configSections** creare un elemento **section**.
 
-3. Nell'elemento **section** aggiungere un attributo denominato `name` e assegnare all'attributo il valore `microsoft.visualstudio.testtools`. Aggiungere un altro attributo denominato `type` e assegnare il valore `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. Nell'elemento **section** aggiungere un attributo denominato `name` e assegnare all'attributo il valore `microsoft.visualstudio.testtools`. Aggiungere un altro attributo denominato `type` e assegnare il valore `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 L'elemento **section** dovrebbe essere simile al seguente:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> Il nome dell'assembly deve corrispondere alla build di Microsoft Visual Studio .NET Framework in uso. Impostare la versione su 9.0.0.0 se si usa Visual Studio .NET Framework 3.5. Se si usa Visual Studio .NET Framework 2.0, impostare la versione su 8.0.0.0.
+> Il nome dell'assembly deve corrispondere alla build di Microsoft Visual Studio .NET Framework in uso.
 
 ## <a name="define-connection-strings"></a>Definire le stringhe di connessione
 

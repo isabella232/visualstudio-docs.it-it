@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1bcada6718501594e0dc33880aa0fbbd8c575631
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844720"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457178"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Tasti di scelta rapida e tasti di modifica in Blend
 
@@ -31,7 +31,7 @@ I tasti di scelta rapida consentono di velocizzare il lavoro riducendo un'azione
 
    ![Combinazioni di tasti globali](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png)
 
-Per altre informazioni sull'accessibilità e le funzionalità, vedere [Accessibilità in Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).
+Per altre informazioni sull'accessibilità e le funzionalità, vedere [Accessibilità in Microsoft](https://www.microsoft.com/accessibility/).
 
 ## <a name="modifier-keys"></a>Tasti di modifica
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a8b6d1d4c39f09382dd0e4a12660bed31ad9b2d
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429015"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531937"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedura: Gestire le finestre dell'editor
 
@@ -56,6 +56,5 @@ Per semplificare la modifica è possibile suddividere una finestra dell'editor i
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Personalizzare l'editor](../ide/customizing-the-editor.md)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Personalizzazione del layout delle finestre](../ide/customizing-window-layouts-in-visual-studio.md)
