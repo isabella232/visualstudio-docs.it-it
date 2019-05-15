@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968283"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531642"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Convertire una funzione locale in un metodo
 
@@ -47,4 +47,4 @@ Questo refactoring si applica a:
 ## <a name="see-also"></a>Vedere anche
 
 - [Refactoring](../refactoring-in-visual-studio.md)
-- [Suggerimenti per gli sviluppatori di .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Suggerimenti per gli sviluppatori di .NET](../csharp-developer-productivity.md)

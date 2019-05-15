@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778659"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531908"
 ---
 # <a name="options-text-editor-general"></a>Opzioni, Editor di testo, Generale
 
@@ -96,5 +96,5 @@ Se selezionata, nell'editor vengono visualizzate linee verticali allineate ai bl
 - [Opzioni, Editor di testo, Tutti i linguaggi, Schede](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opzioni, Editor di testo, Estensione file](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personalizzazione dell'editor](../../ide/customizing-the-editor.md)
+- [Personalizzazione dell'editor](../how-to-change-text-case-in-the-editor.md)
 - [Utilizzo di IntelliSense](../../ide/using-intellisense.md)

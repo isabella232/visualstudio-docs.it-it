@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581981"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531662"
 ---
 # <a name="features-of-the-code-editor"></a>Funzionalità dell'editor del codice
 
@@ -52,7 +52,7 @@ Diverse funzionalità avanzate sono disponibili nel menu **Modifica** > **Avanza
 
 |||
 |-|-|
-|[Formatta documento](code-styles-and-quick-actions.md#format-document-command)|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nel documento.|
+|Formatta documento|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nel documento.|
 |Formatta selezione|Imposta il rientro corretto per le righe di codice e sposta le parentesi graffe in righe separate nella selezione.|
 |Inserisci tabulazione in righe selezionate|Cambia gli spazi iniziali in tabulazioni dove appropriato.|
 |Rimuovi tabulazione da righe selezionate|Cambia le tabulazioni iniziali in spazi. Per convertire tutti gli spazi nel file in tabulazioni (o tutte le tabulazioni in spazi), è possibile usare i comandi `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Questi comandi non vengono visualizzati nei menu di Visual Studio, ma possono essere richiamati dalla finestra di **accesso rapido** o dalla finestra di comando.|
@@ -84,7 +84,7 @@ Per trovare i riferimenti a elementi specifici del codice presenti nella codebas
 
 Per definire i nuovi tasti di scelta o ridefinire quelli esistenti, passare a **Strumenti** > **Opzioni** > **Ambiente** > **Tastiera**. Per altre informazioni sui tasti di scelta rapida, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Per altre informazioni sulla personalizzazione dell'editor, vedere [Personalizzare l'editor](../ide/customizing-the-editor.md). Per le opzioni dell'editor specifiche per JavaScript, vedere le [opzioni dell'editor JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Per le opzioni dell'editor specifiche per JavaScript, vedere le [opzioni dell'editor JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Vedere anche
 
