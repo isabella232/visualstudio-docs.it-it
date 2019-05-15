@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcb3535a2ace5818664a34a5d7b818d7dfd8b025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e3db6a0f5977591b12cb3c77bd1791905f82a087
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877572"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615207"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Questo metodo ottiene il contesto in memoria o un oggetto che contiene valore corrente del simbolo.
@@ -40,18 +43,15 @@ int Bind(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pContainer`
+## <a name="parameters"></a>Parametri
+`pContainer`\
+[in] Il [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che contiene l'elemento figlio a cui fanno riferimento `pField`.
 
- [in] Il [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) che contiene l'elemento figlio a cui fanno riferimento `pField`.
+`pField`\
+[in] Il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il simbolo.
 
- `pField`
-
- [in] Il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) che rappresenta il simbolo.
-
- `ppObject`
-
- [out] Restituisce il `IDebugObject` che rappresenta l'istanza del simbolo.
+`ppObject`\
+[out] Restituisce il `IDebugObject` che rappresenta l'istanza del simbolo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

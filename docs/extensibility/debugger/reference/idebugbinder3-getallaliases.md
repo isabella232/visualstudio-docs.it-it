@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f54ad96b3e6e1832e63e858609a0a1d6ecbcc93e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923705"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614791"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Questo metodo recupera un elenco di alias dal programma.
@@ -40,18 +43,15 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `uRequest`
+## <a name="parameters"></a>Parametri
+`uRequest`\
+[in] Il numero massimo di alias da restituire (specifica la lunghezza della matrice passato nel `ppAliases`).
 
- [in] Il numero massimo di alias da restituire (specifica la lunghezza della matrice passato nel `ppAliases`).
+`ppAliases`\
+[in, out] Matrice da riempire con alias (se si tratta di un valore null e `uRequest` è 0, verrà restituito il conteggio degli alias che possono essere restituiti da `puFetched`).
 
- `ppAliases`
-
- [in, out] Matrice da riempire con alias (se si tratta di un valore null e `uRequest` è 0, verrà restituito il conteggio degli alias che possono essere restituiti da `puFetched`).
-
- `puFetched`
-
- [out] Restituisce il numero di alias ottenuti.
+`puFetched`\
+[out] Restituisce il numero di alias ottenuti.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

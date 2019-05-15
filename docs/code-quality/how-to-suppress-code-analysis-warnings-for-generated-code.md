@@ -1,6 +1,6 @@
 ---
-title: "Procedura: Non visualizzare gli avvisi relativi all'analisi del codice generato"
-ms.date: 11/04/2016
+title: Non visualizzare le violazioni di analisi del codice per il codice generato
+ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: gewarren
@@ -8,27 +8,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a69d2006f5fbacd213f86f2091c019fcc468d10
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a7990f5e9fa1893d8813b1307ab6a0a7fee46be
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403133"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613561"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedura: Non visualizzare gli avvisi relativi all'analisi del codice generato
-I compilatori di codice gestito è spesso generano codice che viene aggiunto a un progetto per facilitare lo sviluppo rapido di codice. Inoltre, gli sviluppatori usano spesso gli strumenti di terze parti per consentono di sviluppare rapidamente applicazioni. Questi strumenti generano anche codice che viene aggiunto al progetto.
 
- Si potrebbe voler visualizzare le violazioni delle regole di analisi del codice consente di individuare il codice generato. Tuttavia, si potrebbe non si desidera visualizzarli se non è possibile visualizzare e gestire il codice che contiene la violazione.
+Codice generato include il codice che viene aggiunto al progetto da codice gestito compilatori o dagli strumenti di terze parti. Si potrebbe voler visualizzare le violazioni delle regole di analisi del codice consente di individuare il codice generato. Tuttavia, poiché non è possibile visualizzare e gestire il codice che contiene le violazioni, si potrebbe non desidera visualizzarli.
 
- Il **non visualizzare i risultati dal codice generato** casella di controllo nella pagina delle proprietà di analisi del codice di un progetto consente di specificare se si vuole visualizzare gli avvisi di analisi del codice del codice generato da uno strumento di terze parti.
+Il **non visualizzare i risultati dal codice generato** casella di controllo nella pagina delle proprietà di analisi codice di un progetto consente di scegliere se visualizzare gli avvisi di analisi del codice generato da uno strumento di terze parti di codice.
 
 > [!NOTE]
-> Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e avvisi vengono visualizzati nei form e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello.
+> Questa opzione non elimina errori di analisi del codice e gli avvisi del codice generato quando gli errori e gli avvisi vengono visualizzati nei moduli e nei modelli. È possibile visualizzare e gestire il codice sorgente per un modulo o un modello.
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Per non visualizzare avvisi per il codice generato in un progetto
 
-1. Fare clic sul progetto in Esplora soluzioni e quindi fare clic su **proprietà**.
+1. Fare clic sul progetto in **Esplora soluzioni** e quindi fare clic su **proprietà**.
 
-2. Fare clic su **analisi del codice**.
+2. Scegliere il **analisi del codice** scheda.
 
 3. Selezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
+
+> [!NOTE]
+> È possibile eliminare solo gli avvisi generati dall'analisi statica del codice. Attualmente, non è possibile sopprimere gli avvisi dell'analisi codice dal [analizzatori](roslyn-analyzers-overview.md).
