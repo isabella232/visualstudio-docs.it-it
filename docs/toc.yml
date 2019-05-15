@@ -35,6 +35,8 @@
       href: install/install-visual-studio-versions-side-by-side.md
     - name: Selezionare i percorsi di installazione
       href: install/change-installation-locations.md
+    - name: Importare o esportare configurazioni di installazione
+      href: install/import-export-installation-configurations.md
     - name: Risoluzione dei problemi di installazione
       href: install/troubleshooting-installation-issues.md
     - name: Aggiornare Visual Studio
@@ -63,8 +65,6 @@
               href: install/create-a-network-installation-of-visual-studio.md
             - name: Aggiornare un'installazione di rete di Visual Studio
               href: install/update-a-network-installation-of-visual-studio.md
-            - name: Importare o esportare configurazioni di installazione
-              href: install/import-export-installation-configurations.md
             - name: Considerazioni per la rete
               items:
                 - name: Installare e usare Visual Studio protetto da un firewall o un server proxy

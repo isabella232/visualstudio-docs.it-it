@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7af1f137624c0af1fce02fde524d7fb4178cbad
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004630"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084050"
 ---
 # <a name="msbuild-special-characters"></a>Caratteri speciali di MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] riserva alcuni caratteri per usi speciali in contesti specifici. L'escape di tali caratteri è necessario solo se devono essere usati letteralmente nel contesto in cui sono riservati. Ad esempio, un asterisco ha un significato speciale solo negli attributi `Include` e `Exclude` di una definizione di elemento e nelle chiamate a `CreateItem`. Se un asterisco deve apparire come asterisco in uno di questi contesti, è necessario eseguirne l'escape. In ogni altro contesto, è sufficiente digitare l'asterisco nel punto in cui deve essere visualizzato.
@@ -32,7 +32,7 @@ ms.locfileid: "63004630"
 |%|%25|Riferimento ai metadati|
 |$|%24|Riferimento alle proprietà|
 |@|%40|Riferimento a elenchi di elementi|
-|\'|%27|Condizioni e altre espressioni|
+|&#96;|%27|Condizioni e altre espressioni|
 |;|%3B|Separatore di elenco|
 |?|%3F|Carattere jolly per i nomi di file negli attributi `Include` e `Exclude`|
 |*|%2A|Carattere jolly per l'uso nei nomi di file negli attributi `Include` e `Exclude`|
