@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f7477017edc3c00a155064152f1d5df77bd35e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689362"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ L'opzione **Casella degli strumenti** visualizza le icone per i controlli e altr
  La **Casella degli strumenti** visualizza solo gli elementi appropriati per il tipo di file che si sta usando. È possibile cercare all'interno della casella degli strumenti per restringere ulteriormente gli elementi visualizzati. Se il progetto richiede un controllo non supportato dal profilo client, è possibile impostare il progetto per l'intero framework di destinazione modificando le proprietà del progetto.  
   
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Guida sulle schede della casella degli strumenti  
  I documenti seguenti includono altre informazioni su specifiche schede della **Casella degli strumenti**.  
   
-- [Casella degli strumenti, scheda Dati](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Casella degli strumenti, scheda Dati](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
-- [Casella degli strumenti, scheda Componenti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Casella degli strumenti, scheda Componenti](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
-- [Casella degli strumenti, scheda HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Casella degli strumenti, scheda HTML](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
-- [Casella degli strumenti, scheda Dati](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Casella degli strumenti, scheda Dati](https://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
-- [Casella degli strumenti, scheda Componenti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Casella degli strumenti, scheda Componenti](https://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
-- [Casella degli strumenti, scheda HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Casella degli strumenti, scheda HTML](https://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso della Casella degli strumenti](../../ide/using-the-toolbox.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697616"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Decodifica immagine.** Indica il tempo impiegato per la decompressione e la decodifica delle immagini.  
   
-  Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, puoi usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per altre informazioni, vedere [Analizzare dati su Temporizzazione funzione JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Per le categorie relative a script e stile, il profiler della velocità di risposta dell'interfaccia utente potrebbe fornire dati su cui puoi intervenire nel grafico dei dettagli della cronologia. Se ti rendi conto che si tratta di un problema di scripting, puoi eseguire il profiler di campionamento della CPU con il profiler della velocità di risposta interfaccia utente. In alternativa, puoi usare il profiler di funzioni di Visual Studio per ottenere dati più dettagliati. Per altre informazioni, vedere [Analizzare dati su Temporizzazione funzione JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Per le altre categorie di eventi, potresti essere in grado di identificare gli effetti collaterali della piattaforma che derivano dall'aggiunta di funzionalità all'app, ma in questi casi è possibile che tu non riesca a risolvere i problemi di prestazioni specifici tramite il profiler della velocità di risposta dell'interfaccia utente.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Guardare [il video](http://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 sul profiler della velocità di risposta dell'interfaccia utente.  
   
-- Leggi i suggerimenti sulle prestazioni per le app di Windows Store compilate per Windows utilizzando JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app di Windows Store scritte in JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Leggi i suggerimenti sulle prestazioni per le app di Windows Store compilate per Windows utilizzando JavaScript. Per altre informazioni, vedere [Procedure consigliate per le prestazioni delle app di Windows Store scritte in JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Per informazioni sulle prestazioni e sul modello di esecuzione di codice a thread singolo, vedere [Esecuzione di codice](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Analizzare le prestazioni delle applicazioni](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analizzare le prestazioni delle applicazioni](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

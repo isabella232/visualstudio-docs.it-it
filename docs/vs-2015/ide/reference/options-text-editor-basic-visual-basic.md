@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 068475e24e77969886afbfc806cb2e85c1f368dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 461af4c3c8e811c989bc296b6f8f55f398bc5bd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667937"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674504"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opzioni, Editor di testo, Base (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "59667937"
 La pagina delle proprietà **Specifiche di VB** nella cartella **Base** della cartella **Editor di testo** della finestra di dialogo **Opzioni** (menu **Strumenti**) contiene le proprietà seguenti:  
   
  **Inserimento automatico di costrutti End**  
- Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, `Sub Main—`, e si preme INVIO, l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](http://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.  
+ Quando si digita, ad esempio, la prima riga di una dichiarazione di routine, `Sub Main—`, e si preme INVIO, l'editor di testo aggiunge una riga `End Sub` corrispondente. Analogamente, se si aggiunge un ciclo [For](https://msdn.microsoft.com/library/f5fc0d51-67ce-4c36-9f09-31c9a91c94e9), l'editor di testo aggiunge un'istruzione `Next` corrispondente. Quando questa opzione è selezionata, l'editor del codice aggiunge automaticamente il costrutto end.  
   
  **Riformatta il listato di codice**  
  L'editor di testo riformatta il codice come appropriato. Quando questa opzione è selezionata, l'editor del codice:  

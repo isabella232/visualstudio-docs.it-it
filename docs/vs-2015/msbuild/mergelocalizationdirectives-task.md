@@ -19,12 +19,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2d6c2aa6cea687119e69b565da5468e8fa723641
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703405"
 ---
 # <a name="mergelocalizationdirectives-task"></a>Attività MergeLocalizationDirectives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> uni
 |`OutputFile`|Parametro di output **String** obbligatorio.<br /><br /> Specifica il percorso di output dell'assembly compilato delle direttive di localizzazione.|  
   
 ## <a name="remarks"></a>Osservazioni  
- È possibile aggiungere commenti e attributi di localizzazione al contenuto [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]. Con il supporto di localizzazione [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] è possibile rimuovere i commenti e gli attributi di localizzazione e inserirli in un file con estensione loc separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](http://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
+ È possibile aggiungere commenti e attributi di localizzazione al contenuto [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)]. Con il supporto di localizzazione [!INCLUDE[TLA#tla_wpf](../includes/tlasharptla-wpf-md.md)] è possibile rimuovere i commenti e gli attributi di localizzazione e inserirli in un file con estensione loc separato dall'assembly generato. È possibile eseguire questa operazione mediante l'attributo **LocalizationPropertyStorage**. Per altre informazioni sui commenti e gli attributi di localizzazione e su **LocalizationPropertyStorage**, vedere [Attributi e commenti di localizzazione](https://msdn.microsoft.com/library/ead2d9ac-b709-4ec1-a924-39927a29d02f).  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente i commenti di localizzazione di diversi file in formato binario [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] vengono uniti in un unico file con estensione loc.  
@@ -62,4 +62,4 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> uni
  [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
- [Compilazione di un'applicazione WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

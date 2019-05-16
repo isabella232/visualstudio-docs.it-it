@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 968a9a2dc87063baec075e69e10fed96ba1ff3d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439263"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680574"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: modificare la directory dell'output compilato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ Il percorso dell'output generato dal progetto può essere specificato a livello 
   
 ## <a name="see-also"></a>Vedere anche  
  [Build Page, Project Designer (C#)](../ide/reference/build-page-project-designer-csharp.md)  (Pagina Compilazione, Progettazione progetti (C#))  
- [General Property Page (Project)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)  (Pagina delle proprietà Generale (Progetto))  
+ [General Property Page (Project)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)  (Pagina delle proprietà Generale (Progetto))  
  [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md) (Compilazione e creazione)

@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690985"
 ---
 # <a name="devenv-command-line-switches"></a>Opzioni della riga di comando devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ La riga di comando devenv consente di impostare varie opzioni per l'ambiente di 
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e registra tutte le attività nel file di registro.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) o `/r`|Compila ed esegue la soluzione specificata.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compila ed esegue la soluzione specificata, riduce a icona l'IDE quando la soluzione viene eseguita e chiude l'IDE al termine dell'esecuzione della soluzione.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Fa sì che l'IDE usi le variabili di ambiente PATH, INCLUDE e LIB per la compilazione [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] anziché le impostazioni specificate nella sezione Directory di VC++ delle opzioni **Progetti** nella finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Impostazione delle variabili di percorso e di ambiente per la compilazione dalla riga di comando](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Fa sì che l'IDE usi le variabili di ambiente PATH, INCLUDE e LIB per la compilazione [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] anziché le impostazioni specificate nella sezione Directory di VC++ delle opzioni **Progetti** nella finestra di dialogo **Opzioni**. Per altre informazioni, vedere [Impostazione delle variabili di percorso e di ambiente per la compilazione dalla riga di comando](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Apre i file specificati in un'istanza dell'applicazione in esecuzione. Se non sono presenti istanze in esecuzione, verrà avviata una nuova istanza con un layout di finestra semplificato.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Avvia un'istanza dell'IDE di Visual Studio senza caricare il componente aggiuntivo specificato.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] in modalità sicura, caricando solo l'ambiente e i servizi predefiniti e le versioni acquistate dei pacchetti di terze parti.|  

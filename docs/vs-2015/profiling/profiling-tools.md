@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780844"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686190"
 ---
 # <a name="profiling-tools"></a>Strumenti di profilatura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Gli strumenti di profilatura e diagnostica consentono di diagnosticare l'utilizz
 ## <a name="memory-usage"></a>Utilizzo memoria  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento **Utilizzo memoria** , che consente di creare snapshot dell'heap di memoria gestito e nativo. È possibile usare questo strumento con le applicazioni desktop, le app universali di Windows e le applicazioni ASP.NET. Lo strumento **Utilizzo memoria** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Per altre informazioni, vedere [Utilizzo memoria](../profiling/memory-usage.md) e [Utilizzo memoria senza debug](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
+ È possibile rilevare perdite di memoria e memoria inefficiente mentre si sta eseguendo il debug con lo strumento **Utilizzo memoria** , che consente di creare snapshot dell'heap di memoria gestito e nativo. È possibile usare questo strumento con le applicazioni desktop, le app universali di Windows e le applicazioni ASP.NET. Lo strumento **Utilizzo memoria** può essere eseguito dalla finestra **Strumenti di diagnostica** durante il debug (**Debug / Windows / Mostra strumenti di diagnostica**) o all'esterno del debugger (**Debug / Profiler prestazioni**). Per altre informazioni, vedere [Utilizzo memoria](../profiling/memory-usage.md) e [Utilizzo memoria senza debug](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 ## <a name="cpu-usage"></a>Utilizzo CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

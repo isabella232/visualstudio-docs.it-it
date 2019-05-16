@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437571"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701151"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437571"
 I progetti sono i contenitori logici di tutti gli elementi necessari per compilare l'applicazione. Quando si crea un progetto scegliendo **File &#124; Nuovo &#124; Progetto** dal menu principale, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una soluzione in cui inserirlo. È quindi possibile aggiungere altri progetti nuovi o esistenti alla soluzione, se necessario. È possibile creare progetti dai file di codice esistenti ed è possibile creare progetti temporanei (solo .NET) che verranno eliminati al termine del loro uso.  
   
 > [!NOTE]
-> Le descrizioni in questo argomento sono basate sull'edizione Visual Studio Community. Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questa sezione, in quanto dipendono dalle impostazioni o dall'edizione di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le descrizioni in questo argomento sono basate sull'edizione Visual Studio Community. Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti in questa sezione, in quanto dipendono dalle impostazioni o dall'edizione di Visual Studio. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Creare un progetto da un modello di progetto installato  
  Scegliere **File &#124; Nuovo &#124; Progetto** dal menu principale per visualizzare la finestra di dialogo Nuovo progetto. Nel riquadro sinistro sotto **Installati &#124; Modelli** selezionare il linguaggio di programmazione e la piattaforma o la tecnologia, quindi scegliere un modello tra quelli disponibili nel riquadro centrale.  
@@ -95,4 +95,4 @@ I progetti sono i contenitori logici di tutti gli elementi necessari per compila
   
 ## <a name="see-also"></a>Vedere anche  
  [Solutions and Projects](../ide/solutions-and-projects-in-visual-studio.md)  (Soluzioni e progetti)  
- [Procedura: Creare soluzioni basate su più progetti](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [Procedura: Creare soluzioni basate su più progetti](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

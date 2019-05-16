@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3f0d674984d916cb59f5938903d1bf1ba7d687bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433692"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680336"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Scegli elementi della Casella degli strumenti, Componenti WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 - Quando la casella di controllo accanto a un componente è selezionata, l'icona di tale componente viene visualizzata nella **casella degli strumenti**.  
   
   > [!TIP]
-  > Per aggiungere un'istanza di un controllo WPF a un documento del progetto aperto per la modifica, trascinare l'icona della **casella degli strumenti** corrispondente nell'area di visualizzazione Progettazione. Il codice e il markup predefiniti del componente vengono inseriti nel progetto e sono pronti per la modifica. Per altre informazioni, vedere [Procedura: gestire la finestra della casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Per aggiungere un'istanza di un controllo WPF a un documento del progetto aperto per la modifica, trascinare l'icona della **casella degli strumenti** corrispondente nell'area di visualizzazione Progettazione. Il codice e il markup predefiniti del componente vengono inseriti nel progetto e sono pronti per la modifica. Per altre informazioni, vedere [Procedura: gestire la finestra della casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Procedura: modificare le schede della Casella degli strumenti](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Quando la casella di controllo accanto a un componente viene deselezionata, l'icona corrispondente viene rimossa dalla **casella degli strumenti**.  
   
@@ -42,13 +42,13 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
   Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di sistema del computer.  
   
   Spazio dei nomi  
-  Visualizza la gerarchia dello spazio dei nomi [NIB: libreria di classi .NET Framework](http://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET Framework installato nel computer in uso.  
+  Visualizza la gerarchia dello spazio dei nomi [NIB: libreria di classi .NET Framework](https://msdn.microsoft.com/6c4f3a62-6a0f-41f2-9d52-ee0b13686f29) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET Framework installato nel computer in uso.  
   
   Nome assembly  
   Visualizza il nome dell'assembly .NET Framework che include lo spazio dei nomi per ogni componente. Ordinare in base a questa colonna per elencare gli spazi dei nomi presenti in ogni assembly .NET Framework installato nel computer in uso.  
   
   Directory  
-  Visualizza il percorso dell'assembly .NET Framework. Gli assembly si trovano, per impostazione predefinita, nella cartella Global Assembly Cache. Per altre informazioni sulla cartella Global Assembly Cache, vedere [Utilizzo di assembly e della Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
+  Visualizza il percorso dell'assembly .NET Framework. Gli assembly si trovano, per impostazione predefinita, nella cartella Global Assembly Cache. Per altre informazioni sulla cartella Global Assembly Cache, vedere [Utilizzo di assembly e della Global Assembly Cache](https://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433).  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
  **Filtro**  
@@ -72,10 +72,10 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
   
   Inoltre, se al controllo personalizzato vengono applicati i metadati della fase di progettazione e tali metadati specificano che `false` è impostato su <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute>, il controllo non viene visualizzato nella casella degli strumenti.  
   
-  È possibile fare riferimento ai controlli direttamente in XAML eseguendo il mapping dello spazio dei nomi e dell'assembly per il controllo. Per altre informazioni, vedere [Procedura: importare uno spazio dei nomi in XAML](http://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
+  È possibile fare riferimento ai controlli direttamente in XAML eseguendo il mapping dello spazio dei nomi e dell'assembly per il controllo. Per altre informazioni, vedere [Procedura: importare uno spazio dei nomi in XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Finestra di dialogo Scegli elementi della casella degli strumenti (Visual Studio)](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
+ [Finestra di dialogo Scegli elementi della casella degli strumenti (Visual Studio)](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)   
  [Casella degli strumenti](../../ide/reference/toolbox.md)   
- [Procedura: utilizzare un controllo WPF di terze parti in un'applicazione WPF](http://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
- [WPF Designer](http://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)
+ [Procedura: utilizzare un controllo WPF di terze parti in un'applicazione WPF](https://msdn.microsoft.com/f4c0b601-3818-4f9f-85e5-77905f3b427f)   
+ [WPF Designer](https://msdn.microsoft.com/c6c65214-8411-4e16-b254-163ed4099c26)

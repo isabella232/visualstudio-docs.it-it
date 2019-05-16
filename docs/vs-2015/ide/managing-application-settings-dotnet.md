@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114808"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675003"
 ---
 # <a name="managing-application-settings-net"></a>Gestione delle impostazioni di un'applicazione (.NET)
 
@@ -59,7 +59,7 @@ Quando si crea un'impostazione con ambito di utente, ad esempio il tipo di carat
 >
 > Se si ricevono informazioni della stringa di connessione da un'origine esterna, quale un utente che immette un ID utente e una password, accertarsi che tra i valori usati per costruire la stringa di connessione non siano presenti parametri aggiuntivi in grado di modificare il comportamento della connessione.
 >
-> Valutare l'uso della funzionalità di configurazione protetta per crittografare le informazioni riservate nel file di configurazione. Per altre informazioni, vedere [Protezione delle informazioni di connessione](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
+> Valutare l'uso della funzionalità di configurazione protetta per crittografare le informazioni riservate nel file di configurazione. Per altre informazioni, vedere [Protezione delle informazioni di connessione](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
 > [!NOTE]
 > Poiché non è presente alcun modello di file di configurazione per le librerie di classi, le impostazioni dell'applicazione non si applicano ai progetti Libreria di classi, ad eccezione dei progetti DLL di Visual Studio Tools per Office che possono avere un file di configurazione.
@@ -74,7 +74,7 @@ Progettazione impostazioni cerca innanzi tutto il file Settings.settings creato 
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accesso o modifica delle impostazioni dell'applicazione in fase di esecuzione in Visual Basic
 
-Nei progetti [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings` . Nella pagina **Impostazioni** scegliere il pulsante **Visualizza codice** per visualizzare il file Settings.vb. Nel file Settings.vb viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file Settings.vb è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione mediante l'oggetto `My.Settings` , vedere [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+Nei progetti [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] è possibile accedere alle impostazioni dell'applicazione in fase di esecuzione usando l'oggetto `My.Settings` . Nella pagina **Impostazioni** scegliere il pulsante **Visualizza codice** per visualizzare il file Settings.vb. Nel file Settings.vb viene definita la classe `Settings` che consente di gestire i seguenti eventi nella classe delle impostazioni: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. La classe `Settings` nel file Settings.vb è una classe parziale in cui viene visualizzato solo il codice di proprietà dell'utente, non l'intera classe generata. Per altre informazioni sull'accesso alle impostazioni dell'applicazione mediante l'oggetto `My.Settings` , vedere [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 I valori di qualsiasi impostazione con ambito di utente che vengono modificati dall'utente in fase di esecuzione, ad esempio la posizione di un form, vengono archiviati in un file user.config. I valori predefiniti vengono salvati nel file app.config.
 
@@ -98,8 +98,8 @@ Properties.Settings.Default.FirstUserSetting = "abc";
 Properties.Settings.Default.Save();
 ```
 
-Per informazioni generali sull'accesso alle impostazioni dell'applicazione mediante la classe `Settings`, vedere [Cenni preliminari sulle impostazioni delle applicazioni](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Per impostazioni sullo scorrimento delle impostazioni, vedere questo [post del forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Per informazioni generali sull'accesso alle impostazioni dell'applicazione mediante la classe `Settings`, vedere [Cenni preliminari sulle impostazioni delle applicazioni](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Per impostazioni sullo scorrimento delle impostazioni, vedere questo [post del forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Accesso alle impostazioni dell'applicazione](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Accesso alle impostazioni dell'applicazione](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

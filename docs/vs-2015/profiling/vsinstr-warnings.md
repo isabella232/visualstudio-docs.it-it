@@ -15,22 +15,22 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 300088cb8051f53f5f1afbfe41be92dac9853b53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b178afb59558f5e684d704137039891aefbf0e3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683249"
 ---
 # <a name="vsinstr-warnings"></a>Avvisi di VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La tabella seguente elenca gli avvisi generati dallo strumento VSInstr.exe. Per impedire la visualizzazione dei messaggi, è possibile usare l'opzione NOWARN insieme al numero di avviso appropriato.  
   
-|Numero di avviso|Descrizione|  
+|Numero di avviso|Description|  
 |--------------------|-----------------|  
 |**VSP2000**|Errore interno Impossibile ottenere il nome del file di modulo per questo eseguibile.|  
-|**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento sn.exe per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
+|**VSP2001**|\<nome assembly> è un assembly con nome sicuro. Deve essere firmato di nuovo prima dell'esecuzione.<br /><br /> Questo avviso viene visualizzato quando un assembly firmato viene instrumentato. È possibile usare lo strumento sn.exe per firmare nuovamente il file binario o disattivare temporaneamente il requisito del nome sicuro. Per altre informazioni, vedere [Sn.exe (Strong Name Tool)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).|  
 |**VSP2002**|Impossibile trovare la funzione \<nome funzione> nel file \<nome file><br /><br /> Questo avviso viene visualizzato quando non è possibile individuare una funzione nel file specificato.|  
 |**VSP2003**|Impossibile trovare cross-jump alla funzione \<nome funzione> nel file \<nome file>.<br /><br /> Questo avviso viene visualizzato se VSInstr non è in grado di annullare i cross-jump, che vengono usati per l'ottimizzazione del codice.|  
 |**VSP2004**|La funzione \<nome funzione> è stata esclusa mediante l'opzione della riga di comando EXCLUDE, ma era una funzione richiesta in quanto contenente un cross-jump.<br /><br /> Questo avviso viene visualizzato se la funzione è stata esclusa mediante l'opzione EXCLUDE, ma è necessaria nel corso del processo di strumentazione. Il profiler include automaticamente la funzione richiesta.|  

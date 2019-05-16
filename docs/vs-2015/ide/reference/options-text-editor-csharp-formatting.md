@@ -26,12 +26,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96828d4fe9871e81b05923f2dc1bf9ca7a53faaa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f75d2b73946a006057945b1e68f018a358e38279
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674192"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opzioni, Editor di testo, C#, Formattazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63441339"
 Usare la pagina delle proprietà **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa finestra di dialogo, scegliere **Opzioni** dal menu **Strumenti**, espandere **Editor di testo**, espandere **C#** e quindi fare clic su **Formattazione**.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Impostazioni generali  
  Le impostazioni generali hanno effetto sulla modalità con la quale l'editor del codice applica le opzioni di formattazione al codice.  

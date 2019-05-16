@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099624"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685662"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedure consigliate per l'utilizzo dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099624"
 Il codice in un frammento illustra solo il modo più semplice per eseguire un'operazione. Per la maggior parte delle applicazioni, il codice deve essere modificato per essere adattato all'applicazione.  
   
 ## <a name="handling-exceptions"></a>Gestione delle eccezioni  
- In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Vedere ad esempio [Procedura: Gestire un'eccezione usando Try/Catch (Guida per programmatori C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) e [Try...Catch...Finally Statement](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) (Istruzione Try...Catch...Finally).  
+ In genere, i blocchi Try... Catch dei frammenti di codice raccolgono e rigenerano tutte le eccezioni. Questo comportamento potrebbe anche non essere idoneo al progetto in uso. Per ogni eccezione, esistono infatti modi diversi di rispondere. Vedere ad esempio [Procedura: Gestire un'eccezione usando Try/Catch (Guida per programmatori C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) e [Try...Catch...Finally Statement](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b) (Istruzione Try...Catch...Finally).  
   
 ## <a name="file-locations"></a>Percorsi dei file  
  Quando i percorsi dei file vengono adattati all'applicazione, considerare quanto segue:  
@@ -67,6 +67,6 @@ Il codice in un frammento illustra solo il modo più semplice per eseguire un'op
     - Il frammento di codice può contenere riferimenti che vengono automaticamente aggiunti al progetto e possono essere caricati da un punto qualsiasi nel sistema. Questi riferimenti possono essere stati scaricati nel computer dal punto in cui è stato scaricato il frammento di codice. Il frammento di codice può a questo punto chiamare un metodo nel riferimento che esegue codice dannoso. Per proteggersi da questo tipo di attacco, analizzare i blocchi delle importazioni e dei riferimenti del file di frammento.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visual Basic IntelliSense Code Snippets](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  
+ [Visual Basic IntelliSense Code Snippets](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  
  [Securing Applications](../ide/securing-applications.md)  (Protezione delle applicazioni)  
  [Frammenti di codice](../ide/code-snippets.md)

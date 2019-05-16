@@ -15,12 +15,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2744dabdb79d777661c1ed73e8a85b05b5308624
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437249"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704772"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,12 +35,12 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
  Le opzioni seguenti consentono di configurare le impostazioni generali per l'applicazione.  
   
  **Nome assembly**  
- Specifica il nome del file di output che conterrà il manifesto dell'assembly. Modificando questa proprietà verrà modificata anche la proprietà **Nome output**. È anche possibile apportare questa modifica dalla riga di comando usando [/out (opzioni del compilatore C#)](http://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Specifica il nome del file di output che conterrà il manifesto dell'assembly. Modificando questa proprietà verrà modificata anche la proprietà **Nome output**. È anche possibile apportare questa modifica dalla riga di comando usando [/out (opzioni del compilatore C#)](https://msdn.microsoft.com/library/70d91d01-7bd2-4aea-ba8b-4e9807e9caa5). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Spazio dei nomi predefinito**  
  Specifica lo spazio dei nomi di base per i file aggiunti al progetto.  
   
- Per altre informazioni sulla creazione di spazi dei nomi nel codice, vedere [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).  
+ Per altre informazioni sulla creazione di spazi dei nomi nel codice, vedere [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).  
   
  Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -64,7 +64,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
 > [!NOTE]
 > Windows Runtime può fare in modo che i tipi appaiano come oggetti nativi in qualsiasi linguaggio siano usati. Ad esempio, le applicazioni JavaScript che interagiscono con Windows Runtime usano quest'ultimo come un set di oggetti JavaScript, mentre le applicazioni C# usano la libreria come una raccolta di oggetti .NET. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile sfruttare la stessa tecnologia usata da Windows Runtime.  
   
- Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (C# Compiler Options)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f) (/target (opzioni del compilatore C#)). Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (C# Compiler Options)](https://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f) (/target (opzioni del compilatore C#)). Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Informazioni assembly**  
  Se si fa clic su questo pulsante viene visualizzata la [finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).  
@@ -74,7 +74,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
   
  Per impostazione predefinita, nel progetto di un'applicazione browser WPF, il valore di questa opzione è **(Non impostato)**. L'altra opzione è *NomeProgetto*.App. In questo tipo di progetto è necessario impostare l'URI di avvio per caricare una risorsa interfaccia utente all'avvio dell'applicazione. A tale scopo, aprire il file Application.xaml nel progetto e impostare la proprietà `StartupUri` su un file con estensione xaml del progetto, ad esempio Window1.xaml. Per un elenco di elementi radice accettabili, vedere <xref:System.Windows.Application.StartupUri%2A>. È anche necessario definire un metodo `public static void Main()` in una classe del progetto. Questa classe verrà visualizzata nell'elenco **Oggetto di avvio** come *NomeProgetto.NomeClasse*. Sarà quindi possibile selezionare la classe come oggetto di avvio.  
   
- Per altre informazioni, vedere [/main (C# Compiler Options)](http://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) (/main (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ Per altre informazioni, vedere [/main (C# Compiler Options)](https://msdn.microsoft.com/library/975cf4d5-36ac-4530-826c-4aad0c7f2049) (/main (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
 ## <a name="resources"></a>Risorse  
  Le opzioni seguenti consentono di configurare le impostazioni generali per l'applicazione.  
@@ -83,7 +83,7 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
  Per impostazione predefinita, questo pulsante di opzione è selezionato e sono abilitate le opzioni **Icona** e **Manifesto**. Ciò consente di selezionare un'icona personalizzata o diverse opzioni di generazione del manifesto. Deselezionare questo pulsante di opzione solo se si specifica un file di risorse per il progetto.  
   
  **Icona**  
- Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Fare clic sul pulsante con i puntini di sospensione per cercare un elemento grafico esistente o digitare il nome del file voluto. Per altre informazioni, vedere [/win32icon (C# Compiler Options)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Fare clic sul pulsante con i puntini di sospensione per cercare un elemento grafico esistente o digitare il nome del file voluto. Per altre informazioni, vedere [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Manifest**  
  Consente di selezionare un'opzione di generazione del manifesto quando l'applicazione viene eseguita in Windows Vista sotto Controllo dell'account utente. Questa opzione può avere i valori seguenti:  
@@ -101,4 +101,4 @@ Usare la pagina **Applicazione** di **Creazione progetti** per specificare le im
   
 ## <a name="see-also"></a>Vedere anche  
 [Managing Application Properties](../../ide/application-properties.md) (Gestione delle proprietà delle applicazioni)  
- [Scrittura di codice nelle soluzioni Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0) 
+ [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0) 

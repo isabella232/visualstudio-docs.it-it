@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438132"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674160"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creazione di un ambiente di compilazione con più computer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Copiare solo i seguenti file dalla cartella \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ nel computer di compilazione, come descritto in [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Non deve essere copiato alcun altro file.  
+5. Copiare solo i seguenti file dalla cartella \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ nel computer di compilazione, come descritto in [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Non deve essere copiato alcun altro file.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Per creare un ambiente di compilazione all'interno dell'organizzazione, è possi
          Per una compilazione nativa a 64 bit, puntare a MSBuild a 64 bit.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Preparazione di un computer per il test per l'esecuzione di un file eseguibile di debug](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)

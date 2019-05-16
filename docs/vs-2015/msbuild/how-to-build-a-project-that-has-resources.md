@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660268"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686522"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Procedura: compilare un progetto con risorse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Se si stanno compilando le versioni localizzate di un progetto, tutti gli elemen
   
 #### <a name="to-compile-resources-with-msbuild"></a>Per compilare le risorse con MSBuild  
   
-1.  Identificare i file di risorse del progetto e passarli all'attività `GenerateResource`, come elenchi di elementi o come nomi file.  
+1. Identificare i file di risorse del progetto e passarli all'attività `GenerateResource`, come elenchi di elementi o come nomi file.  
   
-2.  Specificare il parametro `OutputResources` dell'attività `GenerateResource`, che consente di impostare i nomi dei file di risorse di output.  
+2. Specificare il parametro `OutputResources` dell'attività `GenerateResource`, che consente di impostare i nomi dei file di risorse di output.  
   
-3.  Usare l'elemento `Output` dell'attività per archiviare il valore del parametro `OutputResources` in un elemento.  
+3. Usare l'elemento `Output` dell'attività per archiviare il valore del parametro `OutputResources` in un elemento.  
   
-4.  Usare l'elemento creato dall'elemento `Output` come input per un'altra attività.  
+4. Usare l'elemento creato dall'elemento `Output` come input per un'altra attività.  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente illustra come l'elemento `Output` specifica che l'attributo `OutputResources` dell'attività `GenerateResource` conterrà i file di risorse compilati `alpha.resources` e `beta.resources` e che questi due file verranno inseriti nell'elenco di elementi `Resources`. Identificando tali file con estensione resources come raccolta di elementi con lo stesso nome, è possibile usarli facilmente come input per un'altra attività, ad esempio l'attività [Csc](../msbuild/csc-task.md).  
   
- Questa attività equivale a usare l'opzione **/compile** per [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
+ Questa attività equivale a usare l'opzione **/compile** per [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4):  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ Se si stanno compilando le versioni localizzate di un progetto, tutti gli elemen
 [MSBuild](msbuild.md)  
  [Attività GenerateResource](../msbuild/generateresource-task.md)   
  [Attività Csc](../msbuild/csc-task.md)   
- [Resgen.exe (generatore di file di risorse)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (generatore di file di risorse)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

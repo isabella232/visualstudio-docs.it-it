@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678869"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Impostazioni sincronizzate in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Per impostazione predefinita, quando si usa lo stesso account di personalizzazio
 ## <a name="synchronized-settings"></a>Impostazioni sincronizzate
  Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti.
 
-- Impostazioni di sviluppo. È necessario selezionare un set di impostazioni la prima volta che si esegue Visual Studio, ma è possibile modificare la selezione in qualsiasi momento. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- Impostazioni di sviluppo. È necessario selezionare un set di impostazioni la prima volta che si esegue Visual Studio, ma è possibile modificare la selezione in qualsiasi momento. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - Le opzioni seguenti nelle pagine **Strumenti &#124; Opzioni**:
 

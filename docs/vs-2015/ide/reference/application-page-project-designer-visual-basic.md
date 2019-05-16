@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9979283258611b38e894c08446352082bcc7134e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433754"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688087"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  Le opzioni seguenti consentono di configurare le impostazioni generali per un'applicazione.  
   
  **Nome assembly**  
- Specifica il nome del file di output che conterrà il manifesto dell'assembly. Se si modifica questa proprietà, viene modificata anche la proprietà **Nome output**. È anche possibile eseguire questa modifica al prompt dei comandi tramite [/out (Visual Basic)](http://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
+ Specifica il nome del file di output che conterrà il manifesto dell'assembly. Se si modifica questa proprietà, viene modificata anche la proprietà **Nome output**. È anche possibile eseguire questa modifica al prompt dei comandi tramite [/out (Visual Basic)](https://msdn.microsoft.com/library/9f148c15-0909-4cb8-a2db-777f8a8b45ae). Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
  **Spazio dei nomi radice**  
  Specifica lo spazio dei nomi di base per tutti i file nel progetto. Ad esempio, se si imposta lo **Spazio dei nomi radice** su `Project1` e nel codice è presente una `Class1` all'esterno di qualsiasi spazio dei nomi, lo spazio dei nomi di questa sarà `Project1.Class1`. Se nel codice una `Class2` fosse presente in uno spazio dei nomi `Order`, lo spazio dei nomi sarebbe `Project1.Order.Class2`.  
@@ -43,11 +43,11 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  Se si deseleziona **Spazio dei nomi radice**, è possibile specificare nel codice la struttura dello spazio dei nomi del progetto.  
   
 > [!NOTE]
-> Se si usa la parola chiave Global in un'[istruzione Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88) (Spazi dei nomi in Visual Basic).  
+> Se si usa la parola chiave Global in un'[istruzione Namespace](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), è possibile definire uno spazio dei nomi esterno allo spazio dei nomi radice del progetto. Se si deseleziona l'opzione **Spazio dei nomi radice**, `Global` diventa lo spazio dei nomi principale. Ciò elimina la necessità della parola chiave `Global` nelle istruzioni `Namespace`. Per altre informazioni, vedere "Global Keyword in Namespace Statements" (Parola chiave Global nelle istruzioni Namespace) in [Namespaces in Visual Basic](https://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88) (Spazi dei nomi in Visual Basic).  
   
- Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) (Istruzione Namespace).  
+ Per informazioni su come creare spazi dei nomi nel codice, vedere [Namespace Statement](https://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2) (Istruzione Namespace).  
   
- Per altre informazioni sulla proprietà rootnamespace, vedere [/rootnamespace](http://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
+ Per altre informazioni sulla proprietà rootnamespace, vedere [/rootnamespace](https://msdn.microsoft.com/library/e9245edf-6bef-420d-a7c7-324117752783).  
   
  Per informazioni su come accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.RootNamespace%2A>.  
   
@@ -71,10 +71,10 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
 > [!NOTE]
 > Windows Runtime può fare in modo che i tipi appaiano come oggetti nativi in qualsiasi linguaggio siano usati. Ad esempio, le applicazioni JavaScript che interagiscono con Windows Runtime usano quest'ultimo come un set di oggetti JavaScript, mentre le applicazioni C# usano la libreria come una raccolta di oggetti .NET. Creando un pacchetto dell'output del progetto nel formato File WinMD, è possibile sfruttare la stessa tecnologia usata da Windows Runtime.  
   
- Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Per informazioni su come accedere a tale proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
+ Per altre informazioni sulla proprietà **Tipo di applicazione**, vedere [/target (Visual Basic)](https://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Per informazioni su come accedere a tale proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
  **Icona**  
- Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare  **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](http://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](http://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
+ Consente di impostare il file con estensione ico che si vuole usare come icona di programma. Selezionare  **\<Sfoglia...>** per individuare un elemento grafico esistente. Per altre informazioni, vedere [/win32icon](https://msdn.microsoft.com/library/aecaab01-9353-46c5-941c-6edabd4eff92) o [/win32icon (C# Compiler Options)](https://msdn.microsoft.com/library/756d9b6d-ab07-41b7-ba58-5bd88f711138) (/win32icon (opzioni del compilatore C#)). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.  
   
  **Modulo di avvio/oggetto di avvio/URI di avvio**  
  Consente di specificare il modulo di avvio o il punto di ingresso dell'applicazione.  
@@ -85,7 +85,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
   
  Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.  
   
- **Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](http://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
+ **Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](https://msdn.microsoft.com/library/83fc339d-6652-415d-b205-b5133319b5b0). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.  
   
  **Informazioni assembly**  
  Fare clic su questo pulsante per visualizzare la [finestra di dialogo Informazioni assembly](../../ide/reference/assembly-information-dialog-box.md).  
@@ -110,7 +110,7 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  Le impostazioni seguenti sono disponibili nella sezione **Proprietà framework applicazione Windows**. Queste opzioni sono disponibili solo se la casella di controllo **Abilita framework applicazione** è selezionata. Nella sezione successiva sono descritte le impostazioni **Proprietà framework applicazione Windows**per le applicazioni Windows Presentation Foundation (WPF).  
   
  **Attiva stili di visualizzazione XP**  
- Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).  
+ Consente di abilitare o disabilitare gli stili di visualizzazione di Windows XP, noti anche come *temi di Windows XP*. Gli stili di visualizzazione di Windows XP consentono, ad esempio, i controlli con angoli arrotondati e colori dinamici. Per impostazione predefinita questi stili sono abilitati. Per altre informazioni sugli stili di visualizzazione di Windows XP, vedere [Windows XP Features and Windows Forms Controls](https://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0) (Funzionalità di Windows XP e controlli Windows Forms).  
   
  **Rendi a istanza singola**  
  Selezionare questa casella di controllo per impedire agli utenti di eseguire più istanze dell'applicazione. Per impostazione predefinita, questa casella di controllo è deselezionata. Questa impostazione consente l'esecuzione di più istanze dell'applicazione.  
@@ -159,4 +159,4 @@ Usare la pagina **Applicazione** di Creazione progetti per specificare le impost
  L'oggetto <xref:System.Windows.Application> genera eventi quando si verificano determinate modifiche di stato dell'applicazione (ad esempio, all'avvio o all'arresto dell'applicazione). Per un elenco completo degli eventi esposti da questa classe, vedere <xref:System.Windows.Application>. Questi eventi vengono gestiti nella sezione del codice utente della classe parziale `Application`.  
   
 ## <a name="see-also"></a>Vedere anche  
-[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+[Gestione delle proprietà delle applicazioni](../../ide/application-properties.md) [Scrittura di codice nelle soluzioni Office](https://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)

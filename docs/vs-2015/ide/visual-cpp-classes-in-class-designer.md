@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696395"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classi Visual C++ in Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > Il comando **Mostra classi derivate** non è supportato per il codice C++. Per visualizzare le classi derivate, scegliere Visualizzazione classi, espandere il nodo dei tipi, espandere la sottocartella **Tipi derivati** e trascinare tali tipi sul diagramma classi.  
   
- Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Per altre informazioni sulle ereditarietà da classi multiple, vedere [(NOTINBUILD) Ereditarietà multipla](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Più classi base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Classi astratte  
  Progettazione classi supporta le classi astratte, note anche come "classi di base astratte". Si tratta di classi per le quali non viene mai creata un'istanza, ma da cui è possibile derivare altre classi. Usando un esempio citato in "Ereditarietà multipla" più indietro in questo documento, è possibile creare un'istanza della classe `Bird` come singoli oggetti, come illustrato di seguito:  
@@ -121,7 +121,7 @@ typedef struct
   
  Anche le strutture possono essere anonime. Progettazione classi visualizza classi e strutture anonime in modo analogo a come visualizza il rispettivo tipo. Anche se è possibile dichiarare e visualizzare classi e strutture anonime, Progettazione di classi non usa il nome del tag specificato dall'utente, ma usa il nome generato da Visualizzazione classi. La classe o la struttura viene visualizzata in Visualizzazione classi e Progettazione classi come elemento denominato **__unnamed**.  
   
- Per altre informazioni sulle classi anonime, vedere [Tipi di classe anonimi](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Per altre informazioni sulle classi anonime, vedere [Tipi di classe anonimi](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Classi modello  
  Progettazione classi supporta la visualizzazione di classi modello, nonché le dichiarazioni annidate. La tabella seguente illustra alcune dichiarazioni tipiche.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Classi e struct](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Tipi di classe anonimi](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Ereditarietà multipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Più classi base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Modelli](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Classi e struct](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Tipi di classe anonimi](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Ereditarietà multipla](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Più classi base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Modelli](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

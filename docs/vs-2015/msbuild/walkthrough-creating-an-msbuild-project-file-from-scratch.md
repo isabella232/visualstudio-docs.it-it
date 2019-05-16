@@ -11,19 +11,19 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: eb49e6c51c1e51d002683099797d940cb2d24556
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445609"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682367"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procedura dettagliata: creazione di un nuovo file di progetto MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I linguaggi di programmazione destinati a .NET Framework usano i file di progetto MSBuild per descrivere e controllare il processo di compilazione dell'applicazione. Quando si usa Visual Studio per creare un file di progetto MSBuild, il codice XML appropriato viene aggiunto automaticamente al file. Può tuttavia risultare utile comprendere l'organizzazione del codice XML e come è possibile modificarlo per controllare una compilazione.  
   
- Per informazioni sulla creazione di un file di progetto per un progetto C++, vedere [MSBuild (Visual C++)](http://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
+ Per informazioni sulla creazione di un file di progetto per un progetto C++, vedere [MSBuild (Visual C++)](https://msdn.microsoft.com/library/7a1be7ff-0312-4669-adf2-5f5bf507d560).  
   
  Questa procedura dettagliata mostra come creare in modo incrementale un file di progetto di base usando solo un editor di testo. I passaggi della procedura dettagliata sono i seguenti:  
   

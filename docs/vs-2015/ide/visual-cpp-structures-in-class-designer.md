@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 19ffa241fdc1f58500c7065e2cee2a33340e33f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed47509467bd8691b6f81dbd52fac47cf21c3715
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698199"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>Strutture Visual C++ in Progettazione classi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ struct MyStructure
 };  
 ```  
   
- Per altre informazioni sull'uso del tipo `struct`, vedere [struct](http://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6).  
+ Per altre informazioni sull'uso del tipo `struct`, vedere [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6).  
   
  Una forma struttura C++ in un diagramma classi è simile per aspetto e funzionamento a una forma classe, ad eccezione del fatto che l'etichetta della forma struttura è **Struct** ed è contraddistinta da angoli squadrati anziché arrotondati.  
   
@@ -42,5 +42,5 @@ struct MyStructure
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso del codice Visual C++ (Progettazione classi)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Classi e struct](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [struct](http://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
+ [Classi e struct](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [struct](https://msdn.microsoft.com/library/3c6ba273-e248-4ff1-8c69-d2abcf1263c6)
