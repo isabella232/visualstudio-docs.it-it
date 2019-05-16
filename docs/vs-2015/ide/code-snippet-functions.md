@@ -13,22 +13,22 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5a7a7522d0c3ddab224e19150f47120b92b2dd32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790007"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701531"
 ---
 # <a name="code-snippet-functions"></a>Funzioni dei frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possibile usare tre funzioni. Le funzioni sono specificate nell'elemento [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice. Per informazioni sulla creazione di frammenti di codice, vedere [Frammenti di codice](../ide/code-snippets.md).  
+Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possibile usare tre funzioni. Le funzioni sono specificate nell'elemento [Function](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del frammento di codice. Per informazioni sulla creazione di frammenti di codice, vedere [Frammenti di codice](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funzioni  
  Nella tabella seguente vengono descritte le funzioni disponibili per l'uso con l'elemento `Function` nei frammenti di codice.  
   
-|Funzione|Descrizione|Linguaggio|  
+|Funzione|Description|Linguaggio|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Genera un'istruzione switch e un set di istruzioni case per i membri dell'enumerazione specificata dal parametro `EnumerationLiteral`. Il parametro `EnumerationLiteral` deve essere un riferimento a un valore letterale di enumerazione o un tipo di enumerazione.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
 |`ClassName()`|Restituisce il nome della classe che contiene il frammento inserito.|[!INCLUDE[csprcs](../includes/csprcs-md.md)]|  
@@ -154,5 +154,5 @@ Con i frammenti di codice [!INCLUDE[csprcs](../includes/csprcs-md.md)] è possib
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Elemento Function (frammenti di codice IntelliSense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Elemento Function (frammenti di codice IntelliSense)](https://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Riferimento dello schema dei frammenti di codice](../ide/code-snippets-schema-reference.md)

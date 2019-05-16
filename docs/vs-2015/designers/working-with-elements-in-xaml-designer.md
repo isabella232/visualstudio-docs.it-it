@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690036"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Utilizzo di elementi in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403452"
 Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, nel codice o tramite la finestra di progettazione XAML. Questo argomento descrive come usare gli elementi nella finestra di progettazione XAML in Visual Studio o in Blend per Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Aggiunta di un elemento a un layout  
- Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). È possibile usare vari elementi figlio di `Panel`, ad esempio [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) come contenitori di layout e per posizionare e disporre gli elementi in una pagina.  
+ Per *layout* si intende il processo di ridimensionamento e posizionamento degli elementi in un'interfaccia utente. Per posizionare gli elementi visivi, è necessario inserirli in una classe [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) del layout. Una classe `Panel` contiene una proprietà figlio, ovvero una raccolta di tipi [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). È possibile usare vari elementi figlio di `Panel`, ad esempio [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) come contenitori di layout e per posizionare e disporre gli elementi in una pagina.  
   
  Per impostazione predefinita, viene usato un pannello `Grid` come contenitore di layout di primo livello all'interno di una pagina o di un modulo. È possibile aggiungere pannelli di layout, controlli o altri elementi nel layout di pagina di primo livello.  
   
@@ -34,7 +34,7 @@ Puoi aggiungere elementi come controlli, layout e forme alla tua app in XAML, ne
   
     - Trascinare un elemento dalla **casella degli strumenti** nella tavola da disegno.  
   
-    - Nella **casella degli strumenti** fare clic su uno degli strumenti di disegno, ad esempio [Ellisse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rettangolo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx) e disegnare un elemento nel pannello attivo.  
+    - Nella **casella degli strumenti** fare clic su uno degli strumenti di disegno, ad esempio [Ellisse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rettangolo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx) e disegnare un elemento nel pannello attivo.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Modifica dell'ordine di disposizione degli elementi  
  In presenza di due elementi sulla tavola da disegno nella finestra di progettazione XAML, un elemento verrà visualizzato davanti all'altro nell'ordine di disposizione. Alla fine dell'elenco di elementi nella finestra Struttura documento si trova l'elemento in primo piano, eccetto quando è impostata la proprietà **ZIndex** per un elemento. Quando si inserisce un elemento in una pagina, un modulo o un contenitore di layout, l'elemento viene automaticamente posizionato davanti agli altri nell'elemento contenitore attivo. Per modificare l'ordine degli elementi, è possibile usare i comandi di **Ordina** o trascinare gli elementi nella struttura a oggetti nella finestra Struttura documento.  

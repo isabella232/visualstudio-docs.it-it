@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6cc3f5d49844509f5b0cb5fa7c439a6ce7c69e18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698698"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Web Browser, Ambiente, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "63419712"
 Consente di impostare le opzioni per il Web browser interno e per Internet Explorer. Per accedere a questa finestra di dialogo, selezionare **Opzioni** dal menu **Strumenti**, espandere la cartella **Ambiente** e selezionare **Web browser**.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
 > L'apertura di determinati file o componenti dal Web può determinare l'esecuzione del codice nel computer in uso.  
@@ -53,7 +53,7 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
   
 - **Editor standard** Selezionare questa opzione per visualizzare l'origine nella [scrittura del codice](../../ide/writing-code-in-the-code-and-text-editor.md).  
   
-- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.  
+- **Editor HTML** Selezionare questa opzione per visualizzare l'origine nella [finestra di progettazione HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477). Usare questa opzione per modificare la pagina Web nella visualizzazione Progettazione o nella visualizzazione Origine standard basata su testo.  
   
 - **Editor esterno** Selezionare questa opzione per visualizzare l'origine in un altro editor. Specificare il percorso dell'editor scelto, ad esempio notepad.exe.  
   
@@ -66,4 +66,4 @@ Consente di impostare le opzioni per il Web browser interno e per Internet Explo
 ## <a name="see-also"></a>Vedere anche  
  [Environment Options Dialog Box](../../ide/reference/environment-options-dialog-box.md)  (Ambiente, finestra di dialogo Opzioni)  
  [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md)  (Generale, Ambiente, finestra di dialogo Opzioni)  
- [Finestra di progettazione HTML](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)
+ [Finestra di progettazione HTML](https://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)

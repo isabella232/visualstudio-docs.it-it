@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782513"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705754"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Finestra di dialogo Impostazioni avanzate (visualizzatore di concorrenza)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La finestra **Impostazioni avanzate** del visualizzatore di concorrenza consente
  Per impostazione predefinita, gli eventi CLR vengono raccolti solo quando un processo gestito viene profilato. Gli eventi CLR, infatti, non sono in genere necessari per i processi nativi.  In alcuni casi, ad esempio quando un processo nativo ospita il CLR, potrebbe essere necessario raccogliere eventi CLR per un processo nativo.  In questo caso, selezionare la casella di controllo **Raccogli per processi nativi**.  
   
 ### <a name="disable-rundown-events"></a>Disabilita eventi rundown  
- Il CLR genera gli eventi da due provider: runtime e rundown.  Se si vogliono raccogliere eventi CLR runtime, evitando però di raccogliere eventi rundown, selezionare la casella di controllo **Disabilita eventi rundown**.  Questa operazione riduce la dimensione del file di traccia generato dalla raccolta, ma è possibile che alcuni stack non vengano risolti. Per altre informazioni, vedere [CLR ETW Providers](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Provider CLR ETW).  
+ Il CLR genera gli eventi da due provider: runtime e rundown.  Se si vogliono raccogliere eventi CLR runtime, evitando però di raccogliere eventi rundown, selezionare la casella di controllo **Disabilita eventi rundown**.  Questa operazione riduce la dimensione del file di traccia generato dalla raccolta, ma è possibile che alcuni stack non vengano risolti. Per altre informazioni, vedere [CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Provider CLR ETW).  
   
 ### <a name="sample-events"></a>Eventi di esempio  
  È possibile usare eventi di esempio per raccogliere tutti gli stack di chiamate associati all'esecuzione di thread. Questi eventi vengono raccolti circa una volta ogni millisecondo nel processo corrente. Se la raccolta di eventi di esempio viene disabilitata, la dimensione della traccia raccolta risulta ridotta, ma non sarà possibile visualizzare alcuno stack di chiamate associato all'esecuzione del thread.  

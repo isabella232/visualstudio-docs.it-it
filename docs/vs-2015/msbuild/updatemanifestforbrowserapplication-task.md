@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b78668b0df966de45eb309f068f448809fed8e2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a0a6dff6c9e10312241f1d95128febbd5dabb6c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662855"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696923"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>Attività UpdateManifestForBrowserApplication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,5 +80,5 @@ L'attività <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplicat
  [Riferimento alle attività](../msbuild/wpf-msbuild-task-reference.md)   
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
  [Riferimento alle attività](../msbuild/msbuild-task-reference.md)   
- [Compilazione di un'applicazione WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Panoramica delle applicazioni browser XAML di WPF](http://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)
+ [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Panoramica delle applicazioni browser XAML di WPF](https://msdn.microsoft.com/library/3a7a86a8-75d5-4898-96b9-73da151e5e16)

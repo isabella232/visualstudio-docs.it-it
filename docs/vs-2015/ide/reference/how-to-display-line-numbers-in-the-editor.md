@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704403"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedura: Visualizzare i numeri di riga nell'editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405658"
 È possibile visualizzare o nascondere la numerazione delle righe nel codice.  
   
 > [!NOTE]
-> A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> A seconda delle impostazioni attive, è possibile che le finestre di dialogo e i comandi di menu visualizzati siano diversi da quelli descritti qui. Per modificare le impostazioni, aprire **Strumenti / Importa/Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Visualizzare i numeri di riga nel codice  
  I numeri di riga non vengono aggiunti al codice; servono solo da riferimento. Se si vogliono stampare i numeri di riga, selezionare la casella di controllo **Includi numeri di riga** nella finestra di dialogo **Stampa**.  

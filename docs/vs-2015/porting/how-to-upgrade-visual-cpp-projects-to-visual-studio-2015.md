@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425892"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696422"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
  Se si desidera continuare a usare un set di strumenti della piattaforma personalizzato in [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], il set di strumenti deve trovarsi in %Programmi%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x86 o in %Programmi (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ in un computer x64. Per informazioni su come creare un set di strumenti della piattaforma personalizzato, vedere il post relativo al [multitargeting nativo per C++](http://go.microsoft.com/fwlink/?LinkId=248587) nel blog del team di Visual C++.
 
 ## <a name="see-also"></a>Vedere anche
- [Guida al porting e aggiornamento in Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Guida al porting e aggiornamento in Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

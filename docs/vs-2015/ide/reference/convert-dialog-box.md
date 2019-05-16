@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441444"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705864"
 ---
 # <a name="convert-dialog-box"></a>Finestra di dialogo Converti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ La finestra di dialogo **Converti** consente di selezionare uno strumento di con
 2. Selezionare lo strumento appropriato per l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [NOTINBUILD - Procedura: Aggiornare un progetto da Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - Procedura: Aggiornare un progetto da Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
