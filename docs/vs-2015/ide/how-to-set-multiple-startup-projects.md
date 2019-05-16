@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4f58c6f124aeef382dd8c4de06b919489354e109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ab86b22faa173763856670c61946596677204b91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117863"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685443"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procedura: impostare più progetti di avvio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Visual Studio consente di specificare la modalità di esecuzione di più progett
   
 3. Espandere il nodo **Proprietà comuni** e fare clic su **Progetto di avvio**.  
   
-4. Fare clic su **Progetti di avvio multipli** e impostare le azioni appropriate. Per altre informazioni, vedere [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
+4. Fare clic su **Progetti di avvio multipli** e impostare le azioni appropriate. Per altre informazioni, vedere [NIB Procedura: Modificare le proprietà e le impostazioni di configurazione dei progetti](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Compiling and Building](../ide/compiling-and-building-in-visual-studio.md)  (Compilazione e creazione)  

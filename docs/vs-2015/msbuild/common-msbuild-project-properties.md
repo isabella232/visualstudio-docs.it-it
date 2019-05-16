@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698714"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 |Satellite_Version|Specifica le informazioni sulla versione dell'assembly satellite.|  
 |Satellite_Win32Icon|Inserisce un file di icona (estensione ICO) nell'assembly satellite.|  
 |Satellite_Win32Resource|Inserisce una risorsa Win32 (file con estensione RES) nell'assembly satellite.|  
-|SubsystemVersion|Specifica la versione minima del sottosistema che può essere usata dal file eseguibile generato. Questa proprietà è equivalente all'opzione del compilatore `/subsystemversion`. Per informazioni sul valore predefinito di questa proprietà, vedere [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) o [/subsystemversion (opzioni del compilatore C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Specifica la versione minima del sottosistema che può essere usata dal file eseguibile generato. Questa proprietà è equivalente all'opzione del compilatore `/subsystemversion`. Per informazioni sul valore predefinito di questa proprietà, vedere [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) o [/subsystemversion (opzioni del compilatore C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Versione di .NET Compact Framework richiesta per eseguire l'applicazione in corso di compilazione. Se si imposta questa proprietà, è possibile fare riferimento a determinati assembly del framework a cui non è possibile fare riferimento in altro modo.|  
 |TargetFrameworkVersion|Versione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] richiesta per eseguire l'applicazione in corso di compilazione. Se si imposta questa proprietà, è possibile fare riferimento a determinati assembly del framework a cui non è possibile fare riferimento in altro modo.|  
 |TreatWarningsAsErrors|Parametro booleano che, se impostato su `true`, fa sì che tutti gli avvisi vengano considerati errori. Questo parametro è equivalente all'opzione del compilatore `/nowarn`.|  

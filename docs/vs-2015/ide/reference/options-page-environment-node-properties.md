@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 64deddd3ae8323298ad04e5a1a3a78e93c21a87a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666819"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674711"
 ---
 # <a name="options-page-environment-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -161,8 +161,8 @@ Questo documento descrive le pagine, o raccolte di proprietà, associate alla ca
 |ViewSourceExternalProgram|Get/Set (String)|Il percorso del visualizzatore del codice sorgente esterno.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo delle impostazioni relative alle opzioni](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Pagina delle opzioni, Proprietà del nodo Editor di testo](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)

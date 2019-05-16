@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685703"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ ms.locfileid: "54757658"
 ## <a name="see-also"></a>Vedere anche  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
- [Introduzione a Creazione progetti](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Introduzione a Creazione progetti](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Pubblicazione di applicazioni ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Gestione delle proprietà di debug](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Gestione delle proprietà di compilazione](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Gestione delle proprietà di debug](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Gestione delle proprietà di compilazione](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Gestione delle risorse delle applicazioni (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Gestione delle impostazioni di un'applicazione (.NET)](../ide/managing-application-settings-dotnet.md)

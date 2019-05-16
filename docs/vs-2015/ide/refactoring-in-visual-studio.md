@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a3db616ec23a8d6fdb1984ce27f8fec4909cc9e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680235"
 ---
 # <a name="refactoring-in-visual-studio"></a>Effettuare il refactoring in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ Il refactoring è il processo di modifica del codice per renderlo più semplice 
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refactoring in Visual Basic
- [Finestra di dialogo Rinomina e Refactoring (Visual Basic)](http://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
+ [Finestra di dialogo Rinomina e Refactoring (Visual Basic)](https://msdn.microsoft.com/library/001d2d81-9bb6-4e8e-ae3a-20c0daaa3959)
 
 ### <a name="refactoring-in-c"></a>Refactoring in C++
- [Scrittura e refactoring del codice (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
+ [Scrittura e refactoring del codice (C++)](https://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
 ### <a name="refactoring-in-f"></a>Refactoring in F\#
  Il supporto per il refactoring per F# è incluso in [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), un'estensione di Visual Studio di terze parti.

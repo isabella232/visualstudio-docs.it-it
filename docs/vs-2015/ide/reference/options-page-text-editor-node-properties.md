@@ -12,19 +12,19 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d127aaa85cdd8da9e5daebe5c7841e0f6e85238d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674866"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Pagina delle opzioni, Proprietà del nodo Editor di testo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 In questo documento vengono descritte alcune pagine, o raccolte di proprietà, associate alla categoria **Editor di testo**, `DTE.Properties("TextEditor", <Property Page>)`, della finestra di dialogo **Opzioni**. Il titolo di ogni sottosezione rappresenta la chiamata utilizzata per accedere alla raccolta `Properties` e nella tabella di ogni sottosezione sono elencate le proprietà della raccolta.  
   
- Le macro di Visual Basic in [Controllo delle impostazioni relative alle opzioni](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) spiegano come visualizzare le opzioni correnti e i relativi valori per ogni pagina della finestra di dialogo **Opzioni**.  
+ Le macro di Visual Basic in [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) spiegano come visualizzare le opzioni correnti e i relativi valori per ogni pagina della finestra di dialogo **Opzioni**.  
   
 ## <a name="general"></a>Generale  
  `DTE.Properties("TextEditor", "General")`  
@@ -66,7 +66,7 @@ In questo documento vengono descritte alcune pagine, o raccolte di proprietà, a
 |CutCopyBlankLines|Get/Set (Boolean)|Consente di tagliare o copiare righe vuote quando queste vengono selezionate.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Controllo delle impostazioni relative alle opzioni](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
- [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
+ [Controllo delle impostazioni relative alle opzioni](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
+ [Determinazione dei nomi degli elementi delle proprietà nelle pagine delle opzioni](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Pagina delle opzioni, Proprietà del nodo Ambiente](../../ide/reference/options-page-environment-node-properties.md)   
  [Pagina delle opzioni, Proprietà del nodo Tipi di carattere e colori](../../ide/reference/options-page-fonts-and-colors-node-properties.md)

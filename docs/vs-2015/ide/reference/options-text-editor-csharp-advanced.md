@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674244"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opzioni, Editor di testo, C#, Avanzate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441368"
 Usare questa finestra di dialogo per modificare le impostazioni di formattazione dell'editor, di refactoring del codice e dei commenti della documentazione XML per Visual C#. Per accedere a questa finestra di dialogo, fare clic su **Opzioni** nel menu **Strumenti**, spandere la cartella **Editor di testo**, espandere **C#** e quindi fare clic su **Avanzate**.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Struttura  
  Attiva modalità struttura all'apertura del file  
@@ -68,7 +68,7 @@ Usare questa finestra di dialogo per modificare le impostazioni di formattazione
   
 ## <a name="xml-documentation-comments"></a>Commenti relativi alla documentazione XML  
  Genera commenti relativi alla documentazione XML per ///  
- Se selezionata, questa opzione inserisce automaticamente i tag \<summary> di inizio e di fine per i commenti della documentazione XML dopo che è stata digitata l'introduzione di commento ///. Per altre informazioni sulla documentazione XML, vedere [Commenti relativi alla documentazione XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Se selezionata, questa opzione inserisce automaticamente i tag \<summary> di inizio e di fine per i commenti della documentazione XML dopo che è stata digitata l'introduzione di commento ///. Per altre informazioni sulla documentazione XML, vedere [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Implementa interfaccia  
  Racchiudi il codice generato tra #region  
@@ -79,6 +79,6 @@ Usare questa finestra di dialogo per modificare le impostazioni di formattazione
  Se selezionata, le direttive using `System` vengono visualizzate prima delle altre direttive using. Per altre informazioni, vedere [Ordina using](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Commenti relativi alla documentazione XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Commenti relativi alla documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Impostazione delle opzioni dell'editor specifiche del linguaggio](../../ide/reference/setting-language-specific-editor-options.md)   
  [IntelliSense per Visual C#](../../ide/visual-csharp-intellisense.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3c9a067c8388a398834f5fb1862072544bb0e53c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419799"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689383"
 ---
 # <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63419799"
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.  
   
 > [!TIP]
-> La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Creazione di applicazioni dati con Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> La Configurazione guidata origine dati consente di creare e configurare automaticamente la maggior parte degli elementi di dati. Per altre informazioni, vedere [Creazione di applicazioni dati con Visual Studio](https://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente  
  Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.  
@@ -39,8 +39,8 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 |<xref:System.Windows.Forms.BindingNavigator>|Rappresenta l’interfaccia utente di spostamento e modifica per i controlli associati a dati contenuti in un form.|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedure dettagliate relative ai dati](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Procedure dettagliate relative ai dati](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Associazione di controlli Windows Form ai dati in Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Preparazione dell'applicazione al ricevimento di dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Preparazione dell'applicazione al ricevimento di dati](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Associazione di controlli ai dati in Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Convalida dei dati](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Convalida dei dati](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

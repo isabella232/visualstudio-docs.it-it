@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 760df73b35f45b983740f6dda5e6fe58dc2493ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2839cce2a49eb4be8e72f370fe60be3d81529da1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687122"
 ---
 # <a name="wpf-targets-files"></a>File WPF con estensione targets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ ms.locfileid: "59658436"
 ## <a name="see-also"></a>Vedere anche  
  [File con estensione targets](../msbuild/msbuild-dot-targets-files.md)   
  [Informazioni di riferimento su MSBuild](../msbuild/msbuild-reference.md)   
- [Compilazione di un'applicazione WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
+ [Compilazione di un'applicazione WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)

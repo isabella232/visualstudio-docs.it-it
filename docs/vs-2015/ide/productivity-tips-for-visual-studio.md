@@ -9,12 +9,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f43187faf1dd53cc9daf45da1191e1e944a43c8a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696302"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Suggerimenti relativi alla produttività per Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Seguendo questi suggerimenti, è possibile scrivere, esplorare ed eseguire il de
 ## <a name="BKMK_Debugging"></a> Debug del codice
  Il debug può richiedere molto tempo, ma i suggerimenti seguenti consentono di velocizzare il processo.
 
-- **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova sulla barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente quale browser si stia usando durante il debug o la visualizzazione delle pagine.
+- **Verifica della stessa pagina, applicazione o sito in diversi browser**. Quando si esegue il debug del codice, è possibile passare facilmente da un Web browser installato all'altro, compreso [Controllo pagina (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), senza dover aprire la finestra di dialogo **Esplora con**. È possibile usare l'elenco **Destinazione di debug**, che si trova sulla barra degli strumenti **Standard** accanto al pulsante **Avvia debug**, per verificare rapidamente quale browser si stia usando durante il debug o la visualizzazione delle pagine.
 
      ![Selezionare opzioni di debug del Web browser](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 

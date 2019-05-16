@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675139"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduzione alle applicazioni internazionali basate su .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la creazione di applicazioni predisposte per l'internazionalizzazione è composta da due parti: globalizzazione, ovvero il processo di progettazione di applicazioni in grado di adattarsi a impostazioni cultura diverse, e localizzazione, ovvero il processo di conversione di risorse per impostazioni cultura specifiche. Per informazioni generali sulla progettazione di applicazioni per utenti internazionali, vedere [Procedure consigliate per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], la creazione di applicazioni predisposte per l'internazionalizzazione è composta da due parti: globalizzazione, ovvero il processo di progettazione di applicazioni in grado di adattarsi a impostazioni cultura diverse, e localizzazione, ovvero il processo di conversione di risorse per impostazioni cultura specifiche. Per informazioni generali sulla progettazione di applicazioni per utenti internazionali, vedere [Procedure consigliate per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  Il modello di localizzazione di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] è costituito da un assembly principale che contiene il codice dell'applicazione e le risorse di fallback, ovvero stringhe, immagini e altri oggetti per il linguaggio in cui è sviluppata l'applicazione originale. Ogni applicazione localizzata avrà assembly satellite o assembly che contengono solo le risorse localizzate. Poiché l'assembly principale contiene sempre le risorse di fallback, se la risorsa non viene trovata nell'assembly satellite localizzato, <xref:System.Resources.ResourceManager> proverà a caricarlo in maniera gerarchica, usando la risorsa dell'assembly principale. Il sistema di fallback delle risorse è illustrato più dettagliatamente in [Organizzazione gerarchica di risorse per la localizzazione](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7e8de7cf7cbdc58e14cfc72c5317a765f46e67ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674802"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Suggerimenti sull'accessibilità
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "63441096"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include funzionalità di accessibilità incorporate che consentono di operare facilmente dalla tastiera e usare utilità per la lettura o altri dispositivi di assistenza per utenti disabili. In questo argomento sono riportati alcuni suggerimenti per l'ottimizzazione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] relativamente all'accessibilità, nonché alcune utili combinazioni di tasti.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Salvare le impostazioni IDE  
- È possibile personalizzare l'esperienza IDE salvando il layout delle finestre, lo schema di mappatura della tastiera e altre preferenze. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ È possibile personalizzare l'esperienza IDE salvando il layout delle finestre, lo schema di mappatura della tastiera e altre preferenze. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="common-windows-shortcut-key-combinations"></a>Combinazioni di tasti comuni di Windows  
  Per eseguire attività all'interno di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] è possibile usare molte delle combinazioni di tasti standard di Windows. Tra queste combinazioni di tasti sono incluse le seguenti:  

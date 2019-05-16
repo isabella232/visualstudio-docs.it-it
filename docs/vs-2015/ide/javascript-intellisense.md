@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675177"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense per JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 </asp:ScriptManager>
 ```
 
- IntelliSense supporta inoltre i file script incorporati come risorse in un assembly nelle applicazioni Web ASP.NET per AJAX. Per altre informazioni sulle risorse script incorporate, vedere [Procedura dettagliata: Incorporare un file JavaScript come risorsa in un assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense supporta inoltre i file script incorporati come risorse in un assembly nelle applicazioni Web ASP.NET per AJAX. Per altre informazioni sulle risorse script incorporate, vedere [Procedura dettagliata: Incorporare un file JavaScript come risorsa in un assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Direttive reference
  Una direttiva `reference` consente a [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] di stabilire una relazione tra lo script in corso di modifica e gli altri script. La direttiva `reference` consente di includere un file script nel contesto di scripting del file script corrente in modo che sia possibile in IntelliSense fare riferimento a funzioni, tipi e campi definiti esternamente durante la compilazione.
@@ -284,5 +284,5 @@ IntelliSense consente di scrivere codice più velocemente e con meno errori forn
 - [Completamento delle istruzioni per gli identificativi](../ide/statement-completion-for-identifiers.md)
 - [Commenti relativi alla documentazione XML](../ide/xml-documentation-comments-javascript.md)
 - [Informazioni sul modello a oggetti DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Elenca membri](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Elenca membri](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Attributo SRC &#124; Proprietà src](http://go.microsoft.com/fwlink/?LinkId=92345)
