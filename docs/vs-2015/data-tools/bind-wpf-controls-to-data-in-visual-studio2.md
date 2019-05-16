@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437047"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697962"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associare controlli WPF ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ ms.locfileid: "63437047"
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Per creare un controllo associato a un unico campo di dati
 
-1. Nel **Zdroje dat** finestra, espandere un elemento che rappresenta una tabella o un oggetto. Individuare l'elemento figlio che rappresenta la colonna o la proprietà a cui eseguire l'associazione. Per un esempio visivo, vedere [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Nel **Zdroje dat** finestra, espandere un elemento che rappresenta una tabella o un oggetto. Individuare l'elemento figlio che rappresenta la colonna o la proprietà a cui eseguire l'associazione. Per un esempio visivo, vedere [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Facoltativamente, selezionare il controllo da creare. Ogni elemento di **Zdroje dat** finestra dispone di un controllo predefinito che viene creato quando si trascina l'elemento nella finestra di progettazione. Il controllo predefinito dipende dal tipo di dati sottostante dell'elemento.
 
@@ -73,7 +73,7 @@ ms.locfileid: "63437047"
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Per creare un controllo associato a più campi di dati
 
-1. Nel **Zdroje dat** finestra, selezionare un elemento che rappresenta una tabella o un oggetto. Per un esempio visivo, vedere [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Nel **Zdroje dat** finestra, selezionare un elemento che rappresenta una tabella o un oggetto. Per un esempio visivo, vedere [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Facoltativamente, selezionare il controllo da creare. Per impostazione predefinita, ogni elemento nella **Zdroje dat** intervallo che rappresenta una tabella di dati o un oggetto è impostato per creare un <xref:System.Windows.Controls.DataGrid> (se il progetto è destinato a .NET Framework 4) o <xref:System.Windows.Controls.ListView> (per le versioni precedenti di .NET Framework).
 
@@ -91,7 +91,7 @@ ms.locfileid: "63437047"
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Per creare un set di controlli associati a più campi di dati
 
-1. Nel **Zdroje dat** finestra, selezionare un elemento che rappresenta una tabella o un oggetto. Per un esempio visivo, vedere [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. Nel **Zdroje dat** finestra, selezionare un elemento che rappresenta una tabella o un oggetto. Per un esempio visivo, vedere [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Fare clic sulla freccia giù accanto all'elemento e selezionare **dettagli**.
 

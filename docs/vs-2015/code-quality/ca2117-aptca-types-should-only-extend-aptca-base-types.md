@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967939"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687306"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: I tipi APTCA devono estendere solo tipi di base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58967939"
  Un tipo pubblico o protetto in un assembly con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attributo eredita da un tipo dichiarato in un assembly che non dispone dell'attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per impostazione predefinita, pubblici o protetti tipi negli assembly con nomi sicuri sono protetti in modo implicito da un [richieste di ereditarietà](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per un'attendibilità totale. Assembly con nome sicuro è contrassegnato con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non è questo tipo di protezione. L'attributo disabilita la richiesta di ereditarietà. In questo modo i tipi esposti dichiarati nell'assembly ereditabili dai tipi che non dispongono di attendibilità totale.
+ Per impostazione predefinita, pubblici o protetti tipi negli assembly con nomi sicuri sono protetti in modo implicito da un [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per un'attendibilità totale. Assembly con nome sicuro è contrassegnato con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non è questo tipo di protezione. L'attributo disabilita la richiesta di ereditarietà. In questo modo i tipi esposti dichiarati nell'assembly ereditabili dai tipi che non dispongono di attendibilità totale.
 
  Quando l'attributo APTCA è presente in un assembly completamente attendibile e un tipo nell'assembly eredita da un tipo che non consente chiamanti parzialmente attendibili, è possibile una violazione della sicurezza. Se due tipi `T1` e `T2` soddisfa le condizioni seguenti, i chiamanti malintenzionati possono usare il tipo `T1` per ignorare la richiesta di ereditarietà implicita con attendibilità totale che protegge `T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "58967939"
  [CA2116: I metodi APTCA devono chiamare solo metodi APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assembly .NET Framework possono essere chiamati da codice parzialmente attendibile](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usare parzialmente librerie da codice attendibile](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [richieste di ereditarietà](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Linee guida per la generazione di codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assembly .NET Framework possono essere chiamati da codice parzialmente attendibile](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usare parzialmente librerie da codice attendibile](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

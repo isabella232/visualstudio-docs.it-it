@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425502"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694848"
 ---
 # <a name="pass-data-between-forms"></a>Passare dati da un form all'altro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 - Creazione di una nuova **applicazioni Windows** progetto.  
   
-- Creazione e configurazione di un set di dati con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Creazione e configurazione di un set di dati con il [configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Selezione del controllo da creare nel form durante il trascinamento di elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ Questa procedura dettagliata fornisce istruzioni passo-passo per il passaggio de
   
 2. Denominare il progetto `PassingDataBetweenForms`.  
   
-3. Selezionare **Windows Forms Application**, fare clic su **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **Windows Forms Application**, fare clic su **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **PassingDataBetweenForms** verrà creato e aggiunto a **Esplora soluzioni**.  
   

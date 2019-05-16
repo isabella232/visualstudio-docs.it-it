@@ -25,14 +25,14 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071772"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684292"
 ---
-# <a name="using-dump-files"></a>Uso dei file Dump
+# <a name="using-dump-files"></a>Uso di file dump
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 File dump con o senza heap; creare un file dump; aprire un file dump; individuare i file binari, i file pdb e il file di origine di un file dump. 
@@ -76,11 +76,11 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 - Visual Studio può eseguire il debug dei file dump delle app native di dispositivi ARM. Visual Studio può inoltre eseguire il debug dei file dump di app gestite di dispositivi ARM, ma solo nel debugger nativo.  
   
-- Per eseguire il debug [in modalità kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump file in Visual Studio 2013, scaricare la [Windows 8.1 versione di debug di strumenti per Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Visualizzare [debug del Kernel in Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Per eseguire il debug [in modalità kernel](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump file in Visual Studio 2013, scaricare la [Windows 8.1 versione di debug di strumenti per Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Visualizzare [debug del Kernel in Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio non è possibile eseguire il debug di file dump salvati nel formato dump precedente noto come un [dump completi della modalità utente](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Si noti che un dump completo in modalità utente non corrisponde a un dump con heap.  
   
-- Eseguire il debug con il [SOS. dll (estensione del debugger SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio, è necessario installare il debug di strumenti per Windows che fa parte del Windows Driver Kit (WDK). Vedere [Windows 8.1 Preview: Download di Kit, bit e strumenti](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Eseguire il debug con il [SOS. dll (estensione del debugger SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) in Visual Studio, è necessario installare il debug di strumenti per Windows che fa parte del Windows Driver Kit (WDK). Vedere [Windows 8.1 Preview: Download di Kit, bit e strumenti](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ File dump con o senza heap; creare un file dump; aprire un file dump; individuar
   
 - Con [debug JIT](../debugger/just-in-time-debugging-in-visual-studio.md) abilitata, è possibile collegare il debugger a un processo arrestatosi in modo anomalo è in esecuzione all'esterno del debugger e salvare un file di dump. Vedere [collegare ai processi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  È inoltre possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, il **Procdump** utilità della riga di comando da [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) può creare file dump di arresto anomalo del processo basati su trigger o su richiesta. Visualizzare [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in questo argomento per ulteriori informazioni sull'uso di altri strumenti per creare file dump.  
+  È inoltre possibile creare file dump con qualsiasi programma che supporta il formato di minidump di Windows. Ad esempio, il **Procdump** utilità della riga di comando da [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) può creare file dump di arresto anomalo del processo basati su trigger o su richiesta. Visualizzare [requisiti e limitazioni](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) in questo argomento per ulteriori informazioni sull'uso di altri strumenti per creare file dump.  
   
   ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   

@@ -18,14 +18,14 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685430"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Sign Application and manifesti di distribuzione
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazioni e distribuzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i manifesti dell'applicazione e di distribuzione devono essere firmati con una coppia di chiavi pubblica/privata e tramite la tecnologia Authenticode. È possibile firmare i manifesti con un certificato dall'archivio certificati di Windows o un file di chiave.  
@@ -34,7 +34,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
   
  La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione EXE. Per altre informazioni, vedere la sezione "Creazione di manifesti non firmati" di questo documento.  
   
- Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supporta solo file di chiave Scambio informazioni personali con estensione PFX. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.  
@@ -109,7 +109,7 @@ Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i man
 3. Pubblicare l'applicazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Assembly con nomi sicuri](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Procedura: Creare una coppia di chiavi pubblica / privata](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assembly con nomi sicuri](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Procedura: Creare una coppia di chiavi pubblica / privata](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Pagina Firma, Creazione progetti](../ide/reference/signing-page-project-designer.md)   
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)

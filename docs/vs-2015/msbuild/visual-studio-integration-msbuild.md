@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445631"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683847"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  A tale scopo, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono analizzate le condizioni negli elementi `PropertyGroup`, `ItemGroup`, `Import`, Property e Item.  
   
 ## <a name="additional-build-actions"></a>Operazioni di compilazione aggiuntive  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] consente di modificare il nome del tipo di elemento di un file in un progetto mediante la proprietà **Azione di compilazione** della finestra [Proprietà file](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). I nomi dei tipi di elementi`Compile`, `EmbeddedResource`, `Content`e `None` sono sempre elencati in questo menu, insieme a tutti gli altri nomi di tipi di elementi già presenti nel progetto. Per accertarsi che tutti i nomi dei tipi di elementi personalizzati siano sempre disponibili in questo menu, è possibile aggiungerli a un tipo di elemento denominato `AvailableItemName`. Ad esempio, aggiungendo il codice riportato di seguito al file di progetto verrà aggiunto il tipo personalizzato `JScript` a questo menu per tutti i progetti che lo importano:  
   
 ```  
 <ItemGroup>  

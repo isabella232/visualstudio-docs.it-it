@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3d938a3768193d758a467e833f006d4019ea5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2948910463bc6d520accce0256bd8e74315c46
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584646"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704335"
 ---
 # <a name="globalizing-applications"></a>Globalizzazione di applicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Globalizzazione è il processo di progettazione e sviluppo di un prodotto softwa
  Illustra classi che formattano date, ora, numeri, valuta e altre informazioni in base alle impostazioni cultura.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Globalizzazione di Windows Form](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizzazione di Windows Form](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Offre collegamenti a pagine della Guida sulla globalizzazione di Windows Form.  
   
- [Globalizzazione e localizzazione](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Offre collegamenti a pagine della Guida sulla globalizzazione di pagine di Windows Form.  
   
  [Introduzione alle applicazioni internazionali basate su .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Illustra i concetti fondamentali sullo sviluppo di software per un mercato internazionale usando Visual Basic o Visual C#.  
   
- [Procedure consigliate per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Procedure consigliate per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Offre informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.

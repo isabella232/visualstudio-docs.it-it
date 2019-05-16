@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687392"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Controllare l'uso di Deny e PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "60082152"
  Un metodo contiene un controllo di sicurezza che specifica l'azione di sicurezza Deny o PermitOnly.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Il [utilizzando il metodo PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza devono essere utilizzate solo da coloro che hanno una conoscenza approfondita di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
+ Il [utilizzando il metodo PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> azioni di sicurezza devono essere utilizzate solo da coloro che hanno una conoscenza approfondita di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] sicurezza. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.
 
  Nega modifica il comportamento predefinito dell'analisi dello stack che si verifica in risposta a una richiesta di sicurezza. Consente di specificare le autorizzazioni che non devono essere concesse per la durata del metodo Deny, indipendentemente dalle autorizzazioni effettive dei chiamanti nello stack di chiamate. Se il percorso stack rileva un metodo protetto da Nega e l'autorizzazione richiesta è inclusa nelle autorizzazioni negate, il percorso stack avrà esito negativo. PermitOnly modifica anche il comportamento predefinito dell'analisi dello stack. Consente al codice specificare solo le autorizzazioni che possono essere concesse, indipendentemente dalle autorizzazioni dei chiamanti. Se il percorso stack viene rilevato un metodo che è protetta da PermitOnly e se l'autorizzazione richiesta non è incluso nelle autorizzazioni specificate da PermitOnly, analisi dello stack ha esito negativo.
 
  Il codice che si basa su queste azioni deve essere valutato attentamente per le vulnerabilità di sicurezza grazie a utilità limitata e comportamento meno evidente. Si consideri quanto segue.
 
-- [Le richieste di collegamento](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) non sono interessati da Deny o PermitOnly.
+- [Le richieste di collegamento](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) non sono interessati da Deny o PermitOnly.
 
 - In caso di Deny o PermitOnly nello stesso stack frame della richiesta che fa sì che il percorso dello stack, le azioni di sicurezza non hanno alcun effetto.
 
@@ -80,4 +80,4 @@ ms.locfileid: "60082152"
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [eseguendo l'override dei controlli di sicurezza](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mediante il metodo PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Linee guida per la generazione di codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [eseguendo l'override dei controlli di sicurezza](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [mediante il metodo PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

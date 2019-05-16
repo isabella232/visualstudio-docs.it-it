@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c852ca5eb68982e8f78849f14aa3562744469c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e07bf52f86cbf55c46c82f685afd63327545dcd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435752"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698232"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Questa funzione recupera un flag che indica se nessun ordinamento stack può essere eseguito come parte del controllo del buffer di stack ([/GS (controllo sicurezza Buffer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) opzione del compilatore).  
+Questa funzione recupera un flag che indica se nessun ordinamento stack può essere eseguito come parte del controllo del buffer di stack ([/GS (controllo sicurezza Buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) opzione del compilatore).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,4 +52,4 @@ HRESULT get_noStackOrdering(
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (controllo sicurezza buffer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS (controllo sicurezza buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

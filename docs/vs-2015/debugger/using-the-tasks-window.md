@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684043"
 ---
 # <a name="using-the-tasks-window"></a>Utilizzo della finestra Attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La finestra **Attività** è simile alla finestra **Thread**, l'unica differenza è che mostra informazioni sugli oggetti <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) o [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) e non su ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. Visualizzare [programmazione asincrona in JavaScript (app di Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per altre informazioni.  
+La finestra **Attività** è simile alla finestra **Thread**, l'unica differenza è che mostra informazioni sugli oggetti <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) o [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) e non su ogni thread. Analogamente ai thread, le attività rappresentano operazioni asincrone eseguibili simultaneamente; tuttavia, più attività possono essere eseguite nello stesso thread. Visualizzare [programmazione asincrona in JavaScript (app di Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) per altre informazioni.  
   
- Nel codice gestito è possibile usare la finestra **Attività** quando si utilizzano gli oggetti <xref:System.Threading.Tasks.Task?displayProperty=fullName> o con le parole chiave **await** e **async** (**Await** e **Async** in Visual Basic). Per altre informazioni sulle attività nel codice gestito, vedere [programmazione parallela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ Nel codice gestito è possibile usare la finestra **Attività** quando si utilizzano gli oggetti <xref:System.Threading.Tasks.Task?displayProperty=fullName> o con le parole chiave **await** e **async** (**Await** e **Async** in Visual Basic). Per altre informazioni sulle attività nel codice gestito, vedere [programmazione parallela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- Nel codice nativo, è possibile usare la finestra **Attività** quando si utilizzano [gruppi di attività](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmi paralleli](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agenti asincroni](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) e [attività leggere](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Per altre informazioni sulle attività nel codice nativo, vedere [Runtime di concorrenza](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ Nel codice nativo, è possibile usare la finestra **Attività** quando si utilizzano [gruppi di attività](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmi paralleli](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agenti asincroni](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) e [attività leggere](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Per altre informazioni sulle attività nel codice nativo, vedere [Runtime di concorrenza](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  In JavaScript è possibile utilizzare la finestra Attività quando si utilizza codice promise .then.  
   
@@ -51,7 +51,7 @@ La finestra **Attività** è simile alla finestra **Thread**, l'unica differenza
 |**Flag**|Mostra quali attività sono contrassegnate e consente di impostare o rimuovere un flag per un'attività.|  
 |**Icone**|Una freccia gialla indica l'attività corrente. L'attività corrente è l'attività in primo piano nel thread corrente.<br /><br /> Una freccia bianca indica l'attività di interruzione, vale a dire l'attività corrente al momento della chiamata del debugger.<br /><br /> L'icona di sospensione indica un'attività bloccata dall'utente. È possibile bloccare e sbloccare un'attività facendovi clic sopra con il pulsante destro del mouse nell'elenco.|  
 |**ID**|Numero fornito dal sistema per l'attività. Nel codice nativo, è l'indirizzo dell'attività.|  
-|**Status**|Stato corrente dell'attività (pianificata, attiva, in deadlock, in attesa o completata). Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa è un'attività bloccata in quanto sta attendendo la segnalazione di un evento, il rilascio di un blocco o la conclusione di un'altra attività.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sul **stato** cella di un'attività in deadlock o in attesa visualizzare altre informazioni sul blocco. **Avviso:**  La finestra **Attività** segnala un deadlock solo per un'attività bloccata che usa una primitiva di sincronizzazione supportata da WCT (Wait Chain Traversal). Ad esempio, per un deadlock <xref:System.Threading.Tasks.Task> oggetto, che utilizza WCT, il debugger viene segnalato **-in deadlock in attesa**. Per un'attività in deadlock gestita dal runtime di concorrenza, che non utilizza WCT, viene visualizzato il messaggio **In attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Stato corrente dell'attività (pianificata, attiva, in deadlock, in attesa o completata). Un'attività pianificata è un'attività che non è stata ancora eseguita, pertanto non dispone ancora di uno stack di chiamate, un thread assegnato o informazioni correlate.<br /><br /> Un'attività attiva è un'attività che stava eseguendo codice prima dell'accesso al debugger.<br /><br /> Un'attività in attesa è un'attività bloccata in quanto sta attendendo la segnalazione di un evento, il rilascio di un blocco o la conclusione di un'altra attività.<br /><br /> Un'attività in deadlock è un'attività in attesa il cui thread è in deadlock con un altro thread.<br /><br /> Passare il mouse sul **stato** cella di un'attività in deadlock o in attesa visualizzare altre informazioni sul blocco. **Avviso:**  La finestra **Attività** segnala un deadlock solo per un'attività bloccata che usa una primitiva di sincronizzazione supportata da WCT (Wait Chain Traversal). Ad esempio, per un deadlock <xref:System.Threading.Tasks.Task> oggetto, che utilizza WCT, il debugger viene segnalato **-in deadlock in attesa**. Per un'attività in deadlock gestita dal runtime di concorrenza, che non utilizza WCT, viene visualizzato il messaggio **In attesa**. Per altre informazioni su WCT, vedere [Wait Chain Traversal](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Ora di inizio**|Ora in cui l'attività è diventata attiva.|  
 |**Durata**|Numero di secondi durante i quali l'attività è rimasta attiva.|  
 |**Tempo di completamento**|Ora in cui l'attività è stata completata.|  
@@ -61,7 +61,7 @@ La finestra **Attività** è simile alla finestra **Thread**, l'unica differenza
 |**Assegnazione thread**|ID e nome del thread nel quale viene eseguita l'attività.|  
 |**Stato restituito**|Stato dell'attività quando è stata completata. I valori di stato restituito sono **Success**, **Cancelled**, e **errore**.|  
 |**AppDomain**|Dominio applicazione nel quale viene eseguita l'attività, in caso di codice gestito.|  
-|**task_group**|Indirizzo dell'oggetto [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) che ha pianificato l'attività, in caso di codice nativo. Per gli agenti asincroni e le attività leggere, questa colonna viene impostata su 0.|  
+|**task_group**|Indirizzo dell'oggetto [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) che ha pianificato l'attività, in caso di codice nativo. Per gli agenti asincroni e le attività leggere, questa colonna viene impostata su 0.|  
 |Process|ID del processo in cui viene eseguita l'attività.|  
 |Stato Async|Per il codice gestito, lo stato dell'attività. Per impostazione predefinita, questa colonna è nascosta. Per visualizzarla, aprire il menu di scelta rapida per una delle intestazioni di colonna. Scegliere **Colonne**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ La finestra **Attività** è simile alla finestra **Thread**, l'unica differenza
 ## <a name="see-also"></a>Vedere anche  
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
- [Programmazione parallela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Runtime di concorrenza](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programmazione parallela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Runtime di concorrenza](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)   
  [Procedura dettagliata: Debug di un'applicazione parallela](../debugger/walkthrough-debugging-a-parallel-application.md)

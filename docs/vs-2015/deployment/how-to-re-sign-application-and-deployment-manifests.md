@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697551"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedura: Firmare nuovamente manifesti di applicazione e distribuzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Dopo aver apportato le modifiche apportate alle proprietà di distribuzione nel 
  Un altro scenario in cui si potrebbero accedere nuovamente i manifesti è quando i clienti vogliono firmare l'applicazione e manifesti della distribuzione con il proprio certificato.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Firma nuovamente l'applicazione e distribuzione di manifesti  
- Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (con estensione manifest). Per altre informazioni, vedere [Procedura: Modificare le proprietà di distribuzione](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Questa procedura presuppone che sono già state apportate modifiche al file manifesto dell'applicazione (con estensione manifest). Per altre informazioni, vedere [Procedura: Modificare le proprietà di distribuzione](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Per firmare nuovamente l'applicazione e distribuzione dei manifesti con Mage.exe  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 883cdd8f3d150c894ecfbe7ccd2fbc2906c9e79b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437017"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705182"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "63437017"
 Il **Configura riferimento al servizio** finestra di dialogo consente di configurare il comportamento di [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] servizi.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere Importa/esporta impostazioni dal menu Strumenti. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare clic con il pulsante destro del mouse su un riferimento al servizio in **Esplora soluzioni** e scegliere **Configura riferimento a servizio**. È anche possibile accedere alla finestra di dialogo facendo clic sul pulsante **Avanzate** nella **finestra di dialogo Aggiungi riferimento al servizio**.  
   
@@ -63,10 +63,10 @@ Il **Configura riferimento al servizio** finestra di dialogo consente di configu
  Determina se i metodi del servizio WCF verranno chiamati in modo sincrono (impostazione predefinita) oppure asincrono.  
   
  **Genera operazioni basate su attività**  
- Durante la scrittura di codice asincrono, questa opzione consente di sfruttare la Task Parallel Library (TPL) introdotta con .Net 4. Visualizzare [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+ Durante la scrittura di codice asincrono, questa opzione consente di sfruttare la Task Parallel Library (TPL) introdotta con .Net 4. Visualizzare [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/dd460717.aspx).  
   
  **Genera sempre contratti di messaggio**  
- Determina se i tipi di contratto di messaggio verranno generati per un client WCF. Per altre informazioni sui contratti di messaggio, vedere [Using Message Contracts](http://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
+ Determina se i tipi di contratto di messaggio verranno generati per un client WCF. Per altre informazioni sui contratti di messaggio, vedere [Using Message Contracts](https://msdn.microsoft.com/library/1e19c64a-ae84-4c2f-9155-91c54a77c249).  
   
  **Tipo di raccolta**  
  Specifica il tipo di raccolta elenco per un client WCF. Il tipo predefinito è <xref:System.Array>.  
@@ -87,7 +87,7 @@ Il **Configura riferimento al servizio** finestra di dialogo consente di configu
  Contiene un elenco di assembly di riferimento per il progetto o il sito Web. Quando **Riutilizza tipi negli assembly di riferimento specificati** è selezionata, può selezionare o deselezionare i singoli assembly.  
   
  **Aggiungi riferimento Web**  
- Consente di visualizzare il [NIB: Aggiungi finestra di dialogo riferimento Web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
+ Consente di visualizzare il [NIB: Aggiungi finestra di dialogo riferimento Web](https://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
 > Usare questa opzione solo per i progetti destinati alla versione 2.0 di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
@@ -96,6 +96,6 @@ Il **Configura riferimento al servizio** finestra di dialogo consente di configu
 > Il **Aggiungi riferimento Web** pulsante è disponibile solo quando il **Configura riferimento al servizio** verrà visualizzata la finestra di dialogo dal **Add Service Reference Dialog Box**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
- [Procedura: Aggiungere un riferimento a un servizio Web](http://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
+ [Procedura: Aggiungere, aggiornare o rimuovere un riferimento al servizio](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   
+ [Procedura: Aggiungere un riferimento a un servizio Web](https://msdn.microsoft.com/library/952e49a1-567e-4a74-8cd7-f2e7b62c3168)   
  [Servizi Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

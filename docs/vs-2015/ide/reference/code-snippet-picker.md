@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682358"
 ---
 # <a name="code-snippet-picker"></a>Selezione frammento di codice
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ L'editor del codice di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] include l
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedure consigliate per l'uso dei frammenti di codice](../../ide/best-practices-for-using-code-snippets.md)   
- [Visual Basic IntelliSense Code Snippets](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  
+ [Visual Basic IntelliSense Code Snippets](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)  (Frammenti di codice IntelliSense di Visual Basic)  
  [Impostazione di segnalibri nel codice](../../ide/setting-bookmarks-in-code.md)   
  [Procedura: Usare frammenti di codice racchiusi](../../ide/how-to-use-surround-with-code-snippets.md)

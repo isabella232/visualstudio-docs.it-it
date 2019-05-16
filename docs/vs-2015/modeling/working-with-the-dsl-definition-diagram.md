@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe01664694b8c4ebdf5a5edcd57d9d4fc600d6fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd4b15fb7c0f1cbc0630779ecef0373977bb2056
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968755"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694215"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilizzo del diagramma di definizione DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,4 +75,4 @@ Il diagramma di un [!INCLUDE[dsl](../includes/dsl-md.md)] definizione è uno str
  Se una relazione di dominio ha relazioni derivate o se ha relazioni di incorporamento o riferimento con altre relazioni di dominio, è possibile visualizzare la relazione come classe facendo clic sulla relazione e quindi facendo clic su **Show As Class** . Verrà visualizzata la relazione con un **delle proprietà di dominio** raggruppamento e verranno visualizzati gli alberi di ereditarietà e le relazioni.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

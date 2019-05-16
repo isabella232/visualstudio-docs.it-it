@@ -15,12 +15,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c879072b55729e249b1aecd665d6f470f4138a75
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101704"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686128"
 ---
 # <a name="localizing-menu-commands"></a>Localizzazione dei comandi di menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -158,4 +158,4 @@ ms.locfileid: "60101704"
 ## <a name="see-also"></a>Vedere anche  
  [Estensione di menu e comandi](../extensibility/extending-menus-and-commands.md)   
  [Confronto tra oggetti MenuCommand e OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
- [Globalizzazione e localizzazione](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
+ [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)

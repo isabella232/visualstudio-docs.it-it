@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964482"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697449"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Misurazione della complessità e della manutenibilità del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ La maggiore complessità delle applicazioni software moderne aumenta anche la di
   
  [Uso di dati di metrica del codice](../code-quality/working-with-code-metrics-data.md)  
   
- [Procedura: Copiare i risultati metrica codice negli Appunti](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Procedura: Copiare i risultati metrica codice negli Appunti](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Procedura: Esportare i risultati metrica codice in Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Procedura: Esportare i risultati metrica codice in Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Procedura: Creare un elemento di lavoro basato su un risultato](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Procedura: Creare un elemento di lavoro basato su un risultato](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Risoluzione dei problemi di metrica codice](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Esecuzione di attività di sviluppo comuni](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Esecuzione di attività di sviluppo comuni](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

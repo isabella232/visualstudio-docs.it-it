@@ -11,12 +11,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c00023c7b8e624d5b97726720f0f7642a38c5a4f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 67ebbde52facf50eff534322d85a926968acdf0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705951"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Progetto di esempio per la creazione di unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Questo codice di esempio viene fornito per le procedure dettagliate seguenti:
   
 - [Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Questa procedura dettagliata descrive i passaggi per creare e personalizzare gli unit test, eseguirli ed esaminare i risultati dei test.  
   
-- [Procedura dettagliata: Eseguire i test e visualizzazione di code coverage](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Questa procedura dettagliata illustra come visualizzare i dati di code coverage, che mostrano la percentuale di codice del progetto che si sta testando.  
+- [Procedura dettagliata: Eseguire i test e visualizzazione di code coverage](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Questa procedura dettagliata illustra come visualizzare i dati di code coverage, che mostrano la percentuale di codice del progetto che si sta testando.  
   
-- [Procedura dettagliata: Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). In questa procedura dettagliata è possibile usare l'utilità della riga di comando MSTest.exe per eseguire test e visualizzare i risultati.  
+- [Procedura dettagliata: Uso dell'utilità di test della riga di comando](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867). In questa procedura dettagliata è possibile usare l'utilità della riga di comando MSTest.exe per eseguire test e visualizzare i risultati.  
   
 ## <a name="sample-code"></a>Codice di esempio  
  L'unico errore intenzionale di questo esempio è che nel metodo Debit "m_balance += amount" dovrebbe esserci un segno meno e non più prima del segno di uguale.  
@@ -133,5 +133,5 @@ namespace BankAccountNS
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Procedura dettagliata: Eseguire i test e visualizzazione di code coverage](http://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Procedura dettagliata: uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)
+ [Procedura dettagliata: Eseguire i test e visualizzazione di code coverage](https://msdn.microsoft.com/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
+ [Procedura dettagliata: uso dell'utilità di test della riga di comando](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867)

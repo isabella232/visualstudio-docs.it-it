@@ -14,12 +14,12 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e71097bacd12e8e60690108a8dd62a370aed6f52
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 1bfb2a7e30542977906fd71e168652aa661fcc8d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688725"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 ## <a name="included-support"></a>Aggiunta del supporto  
   
 ### <a name="visual-studio-product-support"></a>Supporto del prodotto Visual Studio  
- Alcune funzionalità di supporto è incluso con l'acquisto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prodotti. Per altre informazioni, vedere [supporto di Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gestisce un team di supporto dedicati per rispondere a domande sulle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estendibilità.  
+ Alcune funzionalità di supporto è incluso con l'acquisto di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prodotti. Per altre informazioni, vedere [supporto di Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gestisce un team di supporto dedicati per rispondere a domande sulle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estendibilità.  
   
 ### <a name="msdn-subscription-support"></a>Supporto per l'abbonamento MSDN  
  I pacchetti di abbonamento MSDN possono includere anche alcune funzionalità di supporto. Per altre informazioni, vedere [supporto per gli abbonati MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  

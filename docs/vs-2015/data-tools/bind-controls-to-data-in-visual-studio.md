@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705579"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associare controlli ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "62556876"
 
  1. Generare il modello usando il **Entity Data Model** procedura guidata, quindi trascinare tali oggetti nella finestra di progettazione.
 
- 2. Le classi LINQ to SQL non vengono visualizzate nella finestra **Origini dati**. È comunque possibile aggiungere una nuova origine dati dell'oggetto basata sulle classi LINQ to SQL, quindi trascinare tali oggetti nella finestra di progettazione per creare controlli con associazione a dati. Per altre informazioni, vedere [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Le classi LINQ to SQL non vengono visualizzate nella finestra **Origini dati**. È comunque possibile aggiungere una nuova origine dati dell'oggetto basata sulle classi LINQ to SQL, quindi trascinare tali oggetti nella finestra di progettazione per creare controlli con associazione a dati. Per altre informazioni, vedere [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Finestra Origini dati
  Nella finestra **Origini dati** sono visualizzate le voci relative alle origini dati disponibili per il progetto. In questa finestra è visibile o sia accessibile dal **vista** menu, quando un'area di progettazione di form è la finestra attiva nel progetto. È possibile trascinare elementi da questa finestra per creare controlli associati ai dati sottostanti ed è anche possibile configurare le origini dati facendo clic.
@@ -71,4 +71,4 @@ ms.locfileid: "62556876"
 |Personalizzare le didascalie per controlli.|[Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Vedere anche
- [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [associazione dati di Windows Form](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Visual Studio data tools per .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [associazione dati di Windows Form](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

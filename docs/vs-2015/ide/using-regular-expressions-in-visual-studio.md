@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669341"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696415"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio usa espressioni regolari di .NET Framework per trovare e sostituire il testo. Per altre informazioni sulle espressioni regolari di .NET, vedere [Espressioni regolari di .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio usa espressioni regolari di .NET Framework per trovare e sostituire il testo. Per altre informazioni sulle espressioni regolari di .NET, vedere [Espressioni regolari di .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Prima di Visual Studio 2012, Visual Studio usava la sintassi personalizzata di espressione regolare nelle finestre Trova e sostituisci. Per una spiegazione su come convertire alcuni dei simboli di espressione regolare di uso più comune nelle versioni .NET, vedere le [conversioni delle espressioni regolari in Visual Studio](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx).
 
@@ -36,7 +36,7 @@ Prima di Visual Studio 2012, Visual Studio usava la sintassi personalizzata di e
 > Nei sistemi operativi Windows, la maggior parte delle righe termina con "\r\n" (un ritorno a capo seguito da una nuova riga). Questi caratteri non sono visibili, ma sono presenti nell'editor e passati al servizio delle espressioni regolari di.NET.
 
 > [!TIP]
-> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
+> Per informazioni sulle espressioni regolari usate nei criteri di sostituzione, vedere [Sostituzioni](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Per usare un gruppo Capture numerato, la sintassi è `$1` per specificare il gruppo numerato e `(x)` per specificare il gruppo in questione. Ad esempio, l'espressione regolare raggruppata `(\d)([a-z])` trova quattro corrispondenze nella stringa seguente: **1a 2b 3c 4d**. La stringa di sostituzione `z$1` converte tale stringa in **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Esempi di espressioni regolari
 

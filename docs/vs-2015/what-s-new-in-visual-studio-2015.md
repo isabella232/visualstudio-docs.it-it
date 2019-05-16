@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041835"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691062"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novità di Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  ![Dialogo di installazione di Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Accedere a più account
- Con Visual Studio 2015 la nuova esperienza di accesso ottimizzata è concepita in modo da semplificare notevolmente l'accesso alle risorse online, anche quando si hanno più account di Visual Studio. Dopo avere effettuato l'accesso a Visual Studio, si accede automaticamente a tutte le istanze di Visual Studio 2015 e Blend nel computer in uso. L'accesso  avvia automaticamente il roaming delle impostazioni. In Visual Studio 2015 l'account è condiviso tra più funzionalità e, di conseguenza, se si ha un token valido, è possibile accedere agli account di Visual Studio Team Services da **Team Explorer**e alle risorse e ai siti Web dalla sottoscrizione di Microsoft Azure in Esplora server. Le risorse di Azure sono inoltre visualizzate nella finestra di dialogo Nuovo progetto per i progetti di Application Insights, mentre gli account di Servizi mobili di Azure, Archiviazione di Azure, [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) e quello per [sviluppatori di Saleforce.com](https://developer.salesforce.com/) sono visualizzati nella nuova finestra di dialogo **Aggiungi servizio connesso** .
+ Con Visual Studio 2015 la nuova esperienza di accesso ottimizzata è concepita in modo da semplificare notevolmente l'accesso alle risorse online, anche quando si hanno più account di Visual Studio. Dopo avere effettuato l'accesso a Visual Studio, si accede automaticamente a tutte le istanze di Visual Studio 2015 e Blend nel computer in uso. L'accesso  avvia automaticamente il roaming delle impostazioni. In Visual Studio 2015 l'account è condiviso tra più funzionalità e, di conseguenza, se si ha un token valido, è possibile accedere agli account di Visual Studio Team Services da **Team Explorer**e alle risorse e ai siti Web dalla sottoscrizione di Microsoft Azure in Esplora server. Le risorse di Azure sono inoltre visualizzate nella finestra di dialogo Nuovo progetto per i progetti di Application Insights, mentre gli account di Servizi mobili di Azure, Archiviazione di Azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e quello per [sviluppatori di Saleforce.com](https://developer.salesforce.com/) sono visualizzati nella nuova finestra di dialogo **Aggiungi servizio connesso** .
 
  Per usare più account utente in Visual Studio, aggiungerli man mano o tramite il nuovo Gestione account. In questo modo sarà possibile passare immediatamente da un account all'altro quando ci si connette ai servizi o si accede alle risorse online. Visual Studio memorizza gli account aggiunti, che possono quindi essere usati da qualsiasi istanza di Visual Studio o Blend. In Visual Studio verrà effettuato anche il roaming dell'elenco di account (ma non delle preziose credenziali dell'utente) tramite l'account di personalizzazione, in modo da poter iniziare rapidamente a usare uno di questi account in un altro dispositivo. Naturalmente è possibile rimuovere gli account dalla finestra di dialogo Impostazioni account in qualsiasi momento. Per un'introduzione, vedere [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md).
 
@@ -53,7 +53,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
  Xamarin è un framework per dispositivi mobili che consente di scrivere codice in C# con binding nativo alle API iOS e Android. Microsoft ha collaborato attivamente con Xamarin su questa versione di Xamarin per Visual Studio, un'estensione che abilita lo sviluppo per Android, iOS e Windows Phone in una singola soluzione con codice condiviso. Con Xamarin, si utilizzerà una lingua e un codice di base con minime delta tra le piattaforme.  Xamarin per Visual Studio è supportato in Visual Studio 2010 e versioni successive. La versione Starter Edition di Xamarin è inclusa in Visual Studio 2015. Per iniziare, vedere [compilare le app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>App per dispositivi mobili multipiattaforma in HTML/JavaScript con Apache Cordova
- Visual Studio Tools per Apache Cordova è il risultato di una stretta collaborazione tra Microsoft e la community open source di Apache Cordova. Gli strumenti consentono lo sviluppo per dispositivi mobili multipiattaforma usando HTML, CSS e JavaScript (o TypeScript). È possibile sviluppare per Android, iOS e Windows con una singola codebase e sfruttare le molteplici funzionalità dell'IDE di Visual Studio, quali JavaScript IntelliSense, DOM Explorer, Console JavaScript, punti di interruzione, espressioni di controllo, variabili locali, Just My Code e molte altre.  Con Visual Studio Tools per Apache Cordova le app possono accedere alle funzionalità native dei dispositivi su tutte le piattaforme tramite plug-in che forniscono un'API JavaScript comune. Per iniziare, vedere [Introduzione a Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
+ Visual Studio Tools per Apache Cordova è il risultato di una stretta collaborazione tra Microsoft e la community open source di Apache Cordova. Gli strumenti consentono lo sviluppo per dispositivi mobili multipiattaforma usando HTML, CSS e JavaScript (o TypeScript). È possibile sviluppare per Android, iOS e Windows con una singola codebase e sfruttare le molteplici funzionalità dell'IDE di Visual Studio, quali JavaScript IntelliSense, DOM Explorer, Console JavaScript, punti di interruzione, espressioni di controllo, variabili locali, Just My Code e molte altre.  Con Visual Studio Tools per Apache Cordova le app possono accedere alle funzionalità native dei dispositivi su tutte le piattaforme tramite plug-in che forniscono un'API JavaScript comune. Per iniziare, vedere [Introduzione a Visual Studio Tools per Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Giochi per dispositivi mobili multipiattaforma in C# con Unity
  Unity è un ecosistema ampiamente diffuso per lo sviluppo di giochi 2D e 3D multipiattaforma. È possibile scrivere un gioco in C# ed eseguirlo in modo nativo su Android, iOS e Windows Phone e molte altre piattaforme. Visual Studio Tools per Unity è un'estensione che integra Unity con l'IDE di Visual Studio. Con questa estensione sono disponibili tutte le funzionalità dell'IDE e del debugger di Visual Studio, oltre a funzionalità per la produttività progettate per gli sviluppatori di Unity. Visual Studio Tools per Unity Preview 2.0. include il supporto per Visual Studio 2015, oltre a numerose nuove funzionalità, come una migliore visualizzazione per gli oggetti nelle finestre Variabili locali e Espressioni di controllo. Microsoft ha di recente acquisito SyntaxTree, la società che ha creato Visual Studio Tools per Unity. Per scaricare Visual Studio Tools per Unity 2.0 Preview 2 e per altre informazioni su Visual Studio Tools per Unity, vedere [Visual Studio Tools per Unity 2.0](https://aka.ms/vstu).
@@ -70,7 +70,7 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 
  È possibile eseguire le app su telefoni Windows 10, computer desktop Windows 10 o Xbox. Il pacchetto di app non cambia. Con l'introduzione del singolo core unificato Windows 10, un unico pacchetto di app può essere eseguito su tutte le piattaforme. Diverse piattaforme hanno SDK di estensione che è possibile aggiungere alla app per sfruttare i comportamenti specifici di piattaforma. Ad esempio, un SDK di estensione per dispositivi mobili gestisce la pressione del pulsante Indietro su un telefono Windows. Se si fa riferimento a un SDK di estensione nel progetto, è sufficiente aggiungere i controlli di runtime per verificare se tale SDK è disponibile nella piattaforma. In questo modo è possibile avere lo stesso pacchetto di app per ogni piattaforma.
 
- Usare C#, Visual Basic, C++ o JavaScript per creare queste [app di Windows universale](http://msdn.microsoft.com/library/dn975273.aspx).
+ Usare C#, Visual Basic, C++ o JavaScript per creare queste [app di Windows universale](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
  ASP.NET 5 è un aggiornamento principale per MVC, WebAPI e SignalR e viene eseguito in Windows, Mac e Linux.  ASP.NET 5 è stato completamente riprogettato per fornire uno stack .NET pulito e componibile per la compilazione di moderne app basate sul cloud. Strumenti di Visual Studio 2015 sono più strettamente integrati con i comuni strumenti di sviluppo Web, come Bower e Grunt. Per un'introduzione, vedere i numerosi post nel  [blog relativo a strumenti e sviluppo Web .NET](http://blogs.msdn.com/b/webdev/).
@@ -87,12 +87,12 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 
  I linguaggi C# e Visual Basic includono entrambi numerosi miglioramenti minori a livello di linguaggio di base e supporto dell'IDE. Questi miglioramenti contribuiscono a rendere l'esperienza di scrittura di codice .NET ancor più intuitiva, comoda e produttiva.
 
- Per altre informazioni, vedere [What ' s New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e il [Blog .NET](http://blogs.msdn.com/b/dotnet/).
+ Per altre informazioni, vedere [What ' s New](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e il [Blog .NET](http://blogs.msdn.com/b/dotnet/).
 
 #### <a name="c"></a>C++
  Visual C++ include significativi miglioramenti relativamente alla conformità del linguaggio C++11/14, oltre al supporto per lo sviluppo di app per dispositivi multipiattaforma, al supporto per funzioni ripristinabili e await (attualmente pianificato per la standardizzazione in C++17), a miglioramenti e correzioni di bug nelle implementazioni della libreria run-time C (CRT) e della libreria standard C++ (STL), nelle finestre di dialogo ridimensionabili in MCF, a nuove ottimizzazioni del compilatore, al miglioramento delle prestazioni di compilazione, a nuove funzionalità di diagnostica e a nuovi strumenti di produttività nell'editor del codice.
 
- Per altre informazioni, vedere [What ' s New for Visual C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e il [blog su Visual C++](http://blogs.msdn.com/b/vcblog/).
+ Per altre informazioni, vedere [What ' s New for Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e il [blog su Visual C++](http://blogs.msdn.com/b/vcblog/).
 
 ## <a name="device-preview-menu-bar"></a>Menu Anteprima dispositivo
  In progetti per la piattaforma Windows universale, la barra dei menu Anteprima dispositivo consente di vedere come verrà eseguito il rendering dell'interfaccia utente basata su XAML in diverse dimensioni dello schermo.
@@ -123,11 +123,11 @@ Per altre informazioni sui numerosi miglioramenti e nuove funzionalità di Visua
 ## <a name="cross-platform-debugging-support"></a>Supporto per il debug multipiattaforma
  È possibile usare Visual Studio per creare ed eseguire il debug di app native per dispositivi mobili eseguite in dispositivi Windows, iOS e Android. Usare [Visual Studio Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)oppure connettere un dispositivo ed eseguire il debug del codice direttamente in Visual Studio.
 
-- **JavaScript / Cordova**. Usare [Visual Studio Tools per Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android con JavaScript.
+- **JavaScript / Cordova**. Usare [Visual Studio Tools per Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android con JavaScript.
 
-     [Eseguire il debug dell'App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) in MSDN Library è un approfondimento su debug supporto per Cordova di Visual Studio.
+     [Eseguire il debug dell'App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) in MSDN Library è un approfondimento su debug supporto per Cordova di Visual Studio.
 
-- **C# / Xamarin**. Usare [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android in Visual Studio con C#.
+- **C# / Xamarin**. Usare [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) per creare app native per Windows, iOS e Android in Visual Studio con C#.
 
      Gli argomenti relativi a[debug](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [debug nel dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) delle [guide per sviluppatori Xamarin](http://developer.xamarin.com/guides) descrivono l'esperienza di debug.
 
@@ -262,11 +262,11 @@ Di seguito sono nuove o migliorate di strumenti che consentono di eseguono diver
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Segnalare arresti anomali, blocchi e problemi di prestazioni
  In alcuni casi un breve commento non è sufficiente a comunicare il reale impatto di una funzionalità che non si è apprezzata. Nel caso in cui si sia verificato un arresto anomalo o un blocco oppure si siano riscontrati problemi di prestazioni, è possibile condividere facilmente la procedura per riprodurre il problema, i dump di arresto anomalo del sistema e i file di traccia usando la finestra di dialogo visualizzata dopo l'invio di una faccia imbronciata.
 
- In primo luogo, inviare un commento con faccia imbronciata come descritto in precedenza. Nella finestra di dialogo visualizzata è possibile classificare i propri commenti e suggerimenti aggiungendo uno dei tag predefiniti o creandone uno nuovo. I tag facilitano l'inoltro dei commenti al team della funzionalità appropriata. Nell'elenco a discesa **Scegliere una categoria** selezionare l'opzione che rappresenta il problema segnalato, quindi eseguire la procedura per riprodurre il problema. Sono anche disponibili procedure dettagliate su come usare Visual Studio per segnalare problemi. Per altre informazioni, vedere [Visual Studio invia un'istruzioni Smile](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ In primo luogo, inviare un commento con faccia imbronciata come descritto in precedenza. Nella finestra di dialogo visualizzata è possibile classificare i propri commenti e suggerimenti aggiungendo uno dei tag predefiniti o creandone uno nuovo. I tag facilitano l'inoltro dei commenti al team della funzionalità appropriata. Nell'elenco a discesa **Scegliere una categoria** selezionare l'opzione che rappresenta il problema segnalato, quindi eseguire la procedura per riprodurre il problema. Sono anche disponibili procedure dettagliate su come usare Visual Studio per segnalare problemi. Per altre informazioni, vedere [Visual Studio invia un'istruzioni Smile](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Creare app multipiattaforma con Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [Creare app multipiattaforma con Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Creare app con interfaccia utente nativa con Xamarin in Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Creare app multipiattaforma con Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Generare unit test per il codice con IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)

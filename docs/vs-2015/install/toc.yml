@@ -1,0 +1,34 @@
+- name: Installare Visual Studio 2015
+  items:
+    - name: Installare Visual Studio 2015
+      href: install-visual-studio-2015.md
+    - name: Creare un'installazione offline di Visual Studio
+      href: create-an-offline-installation-of-visual-studio.md
+    - name: Installare le versioni Visual Studio Side-by-Side
+      href: install-visual-studio-versions-side-by-side.md
+    - name: Usare i parametri della riga di comando per installare Visual Studio
+      href: use-command-line-parameters-to-install-visual-studio.md
+    - name: Disinstallare Visual Studio
+      href: uninstall-visual-studio.md
+    - name: Visual Studio Administrator Guide
+      items:
+        - name: Visual Studio Administrator Guide
+          href: visual-studio-administrator-guide.md
+        - name: Installare una versione specifica di Visual Studio
+          href: how-to-install-a-specific-release-of-visual-studio.md
+        - name: Creare ed eseguire un'installazione automatica di Visual Studio
+          href: how-to-create-and-run-an-unattended-installation-of-visual-studio.md
+        - name: Applicare automaticamente i codici Product Key durante la distribuzione di Visual Studio
+          href: how-to-automatically-apply-product-keys-when-deploying-visual-studio.md
+    - name: Installare più versioni localizzate di Visual Studio
+      items:
+        - name: Installare più versioni localizzate di Visual Studio
+          href: install-multiple-language-versions-of-visual-studio.md
+        - name: Microsoft Language Interface Pack (LIP) e Visual Studio
+          href: microsoft-language-interface-packs-lips-and-visual-studio.md
+    - name: Eseguire l'aggiornamento da una versione di valutazione di Visual Studio
+      href: how-to-upgrade-from-a-trial-edition-of-visual-studio.md
+    - name: Individuare il codice Product Key di Visual Studio
+      href: how-to-locate-the-visual-studio-product-key.md
+    - name: Eccezioni dei criteri relativi al ciclo di vita di Visual Studio
+      href: visual-studio-lifecycle-policy-exceptions.md

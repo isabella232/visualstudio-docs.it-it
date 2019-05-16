@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910b84e7a024547208ea2e7ae1d6a6897cf60893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdfcaa42c55f87711b0889c6a67d1a4799b84fed
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681067"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Errore: Esecuzione di Transact-SQL terminata senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Questo errore si verifica quando si tenta di eseguire il debug di una routine Tr
   
   Per correggere questo errore, è possibile:  
   
-- Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Verificare le impostazioni delle autorizzazioni. Per altre informazioni, vedere [Procedura: Impostare autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
 - Assicurarsi che il debug SQL sia configurato correttamente.  
   
 - Consultare l'amministratore della rete o del database.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Configurazione di debug SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
- [Procedura: Impostare autorizzazioni di SQL Server per il debug](http://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
+ [Configurazione di debug SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Procedura: Impostare autorizzazioni di SQL Server per il debug](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Remote Debugging](../debugger/remote-debugging.md)

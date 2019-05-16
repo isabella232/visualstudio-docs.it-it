@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435193"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685372"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare un'icona dell'applicazione (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedura: Specificare l'icona di un'applicazione (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La proprietà `Icon` per un progetto specifica il file icona (.ico) che verrà visualizzato per l'applicazione compilata in Esplora file e nella barra delle applicazioni di Windows.  
@@ -46,4 +46,4 @@ La proprietà `Icon` per un progetto specifica il file icona (.ico) che verrà v
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
  [Managing Application Properties](../ide/application-properties.md) (Gestione delle proprietà delle applicazioni)  
- [Procedura: Aggiungere o rimuovere risorse](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [Procedura: Aggiungere o rimuovere risorse](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

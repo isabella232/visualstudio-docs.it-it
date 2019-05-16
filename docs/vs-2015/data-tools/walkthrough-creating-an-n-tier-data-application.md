@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675621"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procedura dettagliata: Creazione di un'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
   
 - Creare un dataset tipizzato con la **Configurazione guidata origine dati**.  
   
-- Separare il generato [TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e il codice di set di dati in progetti discreti.  
+- Separare il generato [TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e il codice di set di dati in progetti discreti.  
   
 - Creare un servizio Windows Communication Foundation (WCF) per effettuare chiamate nel livello di accesso ai dati.  
   
@@ -381,7 +381,7 @@ N-livello * dati applicazioni sono applicazioni con accesso ai dati vengono sudd
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazioni dopo il salvataggio dei dati correlati nell'applicazione basata su Windows. È possibile ad esempio apportare i seguenti miglioramenti a questa applicazione:  
   
-- Aggiungere la convalida al dataset. Per informazioni, vedere [procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Aggiungere la convalida al dataset. Per informazioni, vedere [procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Aggiungere al servizio altri metodi per l'aggiornamento dei dati nel database.  
   

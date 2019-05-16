@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955275"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699442"
 ---
 # <a name="intrinsic-functions"></a>Funzioni intrinseche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Un'espressione in SAL può essere un'espressione C/C++ a condizione che sia un'e
 |Annotazione|Descrizione|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` è il numero di elementi nella stringa di fino a ma senza includere un carattere di terminazione null. Questa annotazione è riservata per tipi di carattere stringa.|  
-|`strlen(param)`|`param` è il numero di elementi nella stringa di fino a ma senza includere un carattere di terminazione null. Questa annotazione è riservata all'utilizzo sul carattere di matrici ed è simile alla funzione Runtime C [strlen ()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` il numero di elementi nella stringa di fino a (ma non inclusa) è un carattere di terminazione null. Questa annotazione è riservata all'utilizzo in caratteri "wide", matrici ed è simile alla funzione Runtime C [wcslen ()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` è il numero di elementi nella stringa di fino a ma senza includere un carattere di terminazione null. Questa annotazione è riservata all'utilizzo sul carattere di matrici ed è simile alla funzione Runtime C [strlen ()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` il numero di elementi nella stringa di fino a (ma non inclusa) è un carattere di terminazione null. Questa annotazione è riservata all'utilizzo in caratteri "wide", matrici ed è simile alla funzione Runtime C [wcslen ()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso delle annotazioni SAL per ridurre i difetti del codice C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

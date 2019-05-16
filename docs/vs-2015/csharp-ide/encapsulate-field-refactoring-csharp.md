@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681381"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refactoring Incapsula campo (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il **Incapsula campo** operazione di refactoring consente di creare rapidamente una proprietà da un campo esistente e quindi aggiornare facilmente il codice con riferimenti alla nuova proprietà.  
   
- Quando un [campo](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) viene [pubblico](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), altri oggetti hanno accesso diretto a tale campo e modificarlo, senza essere rilevati dall'oggetto a cui appartiene il campo. Usando [proprietà](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) per incapsulare il campo, è possibile impedire l'accesso diretto ai campi.  
+ Quando un [campo](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) viene [pubblico](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), altri oggetti hanno accesso diretto a tale campo e modificarlo, senza essere rilevati dall'oggetto a cui appartiene il campo. Usando [proprietà](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) per incapsulare il campo, è possibile impedire l'accesso diretto ai campi.  
   
- Per creare la nuova proprietà, il **Incapsula campo** operazione cambia il modificatore di accesso per il campo che si vuole incapsulare su [privato](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), quindi genera [ottenere](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)e [impostare](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) funzioni di accesso per tale campo. In alcuni casi, viene generata una sola funzione di accesso `get`, ad esempio quando il campo viene dichiarato di sola lettura.  
+ Per creare la nuova proprietà, il **Incapsula campo** operazione cambia il modificatore di accesso per il campo che si vuole incapsulare su [privato](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), quindi genera [ottenere](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)e [impostare](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) funzioni di accesso per tale campo. In alcuni casi, viene generata una sola funzione di accesso `get`, ad esempio quando il campo viene dichiarato di sola lettura.  
   
  Il motore di refactoring di aggiornare il codice con riferimenti nella nuova proprietà nelle aree specificate nel **aggiornare i riferimenti** sezione del **Incapsula campo** nella finestra di dialogo.  
   

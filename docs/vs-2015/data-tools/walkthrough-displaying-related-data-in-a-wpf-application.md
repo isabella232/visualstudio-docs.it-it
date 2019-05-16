@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688429"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procedura dettagliata: Visualizzazione dei dati correlati in un'applicazione WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ In questa procedura dettagliata, si creerà un'applicazione WPF che visualizza i
   
   Per completare la procedura dettagliata è inoltre consigliabile conoscere già i concetti seguenti:  
   
-- Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Panoramica di Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Modelli di Entity Data Model e ADO.NET Entity Framework. Per altre informazioni, vedere [Panoramica di Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Creazione del progetto  
  Creare un nuovo progetto WPF per visualizzare i record di ordine.  

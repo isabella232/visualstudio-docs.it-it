@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676567"
 ---
 # <a name="customize-a-rule-set"></a>Personalizzare un set di regole
 
 È possibile creare una regola personalizzata impostata per soddisfare specifiche esigenze del progetto per l'analisi codice.
 
-## <a name="create-a-custom-rule-set"></a>Creare un set di regole personalizzato
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Creare una regola personalizzata impostata da un set di regole esistente
 
 Per creare una regola personalizzata set, è possibile aprire una set di regole predefinite di **editor set di regole**. Da qui, è possibile aggiungere o rimuovere le regole specifiche ed è possibile modificare l'azione che si verifica quando una regola viene violata&mdash;, ad esempio, Mostra un avviso o un errore.
 
@@ -40,7 +40,12 @@ Per creare una regola personalizzata set, è possibile aprire una set di regole 
 
 4. Selezionare **aperto** per visualizzare le regole nell'editor set di regole.
 
-È anche possibile creare un nuovo file di set di regole dal **nuovo File** finestra di dialogo:
+> [!NOTE]
+> Se si dispone di un progetto .NET Core o .NET Standard, il processo è leggermente diverso perché è presente alcun **analisi del codice** scheda delle proprietà. Seguire i passaggi necessari per [copiare una regola predefinita impostata per il progetto e impostarla come set di regole attivo](analyzer-rule-sets.md). Dopo aver copiato su un set di regole, è possibile [modificarlo nell'editor set di regole di Visual Studio](working-in-the-code-analysis-rule-set-editor.md) aprendo il file dal **Esplora soluzioni**.
+
+## <a name="create-a-new-rule-set"></a>Creare un nuovo set di regole
+
+È possibile creare un nuovo file di set di regole dal **nuovo File** finestra di dialogo:
 
 1. Selezionare **File** > **New** > **File**, o premere **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Per creare una regola personalizzata set, è possibile aprire una set di regole 
 
    Il nuovo *ruleSet* file verrà aperto nell'editor set di regole.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Creare una regola personalizzata impostata da più set di regole
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Creare una regola personalizzata impostata da più set di regole
 
-1. In Esplora soluzioni fare clic sul progetto e quindi selezionare **proprietà**.
+> [!NOTE]
+> La seguente procedura non si applica ai progetti .NET Core, che non hanno una **analisi del codice** scheda delle proprietà.
+
+1. Nelle **Esplora soluzioni**, fare clic sul progetto e quindi selezionare **proprietà**.
 
 2. Nel **delle proprietà** pagine, selezionare la **analisi del codice** scheda.
 
@@ -68,7 +76,7 @@ Per creare una regola personalizzata set, è possibile aprire una set di regole 
 
 6. Selezionare **aprire** per aprire il nuovo set di regole in editor set di regole.
 
-### <a name="rule-precedence"></a>Precedenza delle regole
+## <a name="rule-precedence"></a>Precedenza delle regole
 
 - Se la stessa regola è elencata due o più volte in una set di regole con diversi livelli di gravità, il compilatore genera un errore. Ad esempio:
 

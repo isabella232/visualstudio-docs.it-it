@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966671"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696119"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Preparazione al debug di ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ In questa sezione descrive come configurare [!INCLUDE[vsprvs](../includes/vsprvs
  [Prerequisiti per il debug remoto di applicazioni Web](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Vengono elencati i prerequisiti per il debug di un'applicazione Web su un server remoto.  
   
- [Procedura: Configurare IIS in Windows Server 2003](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Procedura: Configurare IIS in Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Vengono esaminati speciali passaggi di configurazione necessari per i requisiti di sistema per il debug di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] su [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Procedura: Eseguire il debug di un servizio WCF self-hosted](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ In questa sezione descrive come configurare [!INCLUDE[vsprvs](../includes/vsprvs
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)  (Impostazioni di debug e preparazione)  
  [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
- [Configurazione di IIS e ASP.NET](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [Configurazione di IIS e ASP.NET](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

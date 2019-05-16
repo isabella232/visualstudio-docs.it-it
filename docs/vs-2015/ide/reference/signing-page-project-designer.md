@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437997"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689474"
 ---
 # <a name="signing-page-project-designer"></a>Pagina Firma, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
   
 ## <a name="assembly-signing"></a>Firma degli assembly  
  Casella di controllo **Firma assembly**  
- Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: Firmare un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Selezionare questa casella di controllo per firmare l'assembly e creare un file di chiave con nome sicuro. Per altre informazioni sulla firma dell'assembly tramite **Creazione progetti**, vedere [Procedura: Firmare un assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Per firmare l'assembly, questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]. Per altre informazioni su Al.exe, vedere [Procedura: Firmare un assembly con un nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Per firmare l'assembly, questa opzione usa lo strumento Al.exe fornito da [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)]. Per altre informazioni su Al.exe, vedere [Procedura: Firmare un assembly con un nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Elenco **Scegliere un file di chiave con nome sicuro**  
  Consente di specificare un file di chiave nuovo o esistente con nome sicuro da usare per firmare l'assembly. Selezionare **\<Sfoglia...>** per selezionare un file di chiave esistente.  
@@ -83,7 +83,7 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
  Casella di controllo **Solo firma ritardata**  
  Selezionare questa casella di controllo per abilitare la firma ritardata.  
   
- Si tenga presente che un progetto con firma ritardata non può essere eseguito e non può essere sottoposto a debug. È tuttavia possibile evitare la verifica durante lo sviluppo usando [Sn.exe (strumento Nome sicuro)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con l'opzione `-Vr`.  
+ Si tenga presente che un progetto con firma ritardata non può essere eseguito e non può essere sottoposto a debug. È tuttavia possibile evitare la verifica durante lo sviluppo usando [Sn.exe (strumento Nome sicuro)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con l'opzione `-Vr`.  
   
 > [!NOTE]
 > Quando si firma un assembly, non sempre è possibile accedere a una chiave privata. Un'organizzazione, ad esempio, può avere una coppia di chiavi ben protetta a cui gli sviluppatori non hanno accesso su base giornaliera. La chiave pubblica è disponibile ma l'accesso alla chiave privata è limitato a poche persone. In un caso del genere, è possibile usare una firma *ritardata* o *parziale*. Questa funzione consente di fornire la chiave pubblica, rimandando l'aggiunta della chiave privata al momento della consegna dell'assembly.  
@@ -91,8 +91,8 @@ Usare la pagina **Firma** di **Creazione progetti** per firmare i manifesti dell
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti alle proprietà di progetto](../../ide/reference/project-properties-reference.md)   
  [Gestione delle firme di assembly e manifesti](../../ide/managing-assembly-and-manifest-signing.md)   
- [Firma con nome sicuro per applicazioni gestite](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Firma con nome sicuro per applicazioni gestite](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Procedura: Sign Application and manifesti di distribuzione](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Procedura: Firmare un Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Procedura: Firmare un Assembly con nome sicuro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Assembly con nomi sicuri](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Procedura: Firmare un Assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Procedura: Firmare un Assembly con nome sicuro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Assembly con nomi sicuri](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

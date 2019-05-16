@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001253"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686658"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrare le app alla piattaforma UWP (Universal Windows Platform)
 Apportare le modifiche manuali necessarie ai file di progetto esistenti per le app di Windows Store 8.1, di Windows Phone 8.1 o di Windows universale create con Visual Studio 2015 RC, in modo da consentirne l'uso con Visual Studio 2015 RTM. Se è presente un'app universale di Windows 8.1 con un progetto di app di Windows e un progetto di Windows Phone, è necessario seguire la procedura per la migrazione dei singoli progetti.  
@@ -29,7 +29,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 - [Modifiche richieste per i progetti di unit test esistenti per le app di Windows universale create con Visual Studio 2015 RC](#MigrateUnitTest).  
   
-  Se non si vogliono apportare tutte queste modifiche, vedere le informazioni su come [convertire le app esistenti](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in un nuovo progetto di Windows universale.  
+  Se non si vogliono apportare tutte queste modifiche, vedere le informazioni su come [convertire le app esistenti](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) in un nuovo progetto di Windows universale.  
   
 ## <a name="MigrateCSharp"></a> Eseguire la migrazione di App C# /VB Windows Store 8.1 o Windows Phone 8.1 per utilizzare la piattaforma Windows universale  
   
@@ -110,7 +110,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
     6. Aggiungere un \<EnableDotNetNativeCompatibleProfile > elemento e impostarne il valore: **true**.  
   
-    7. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse con dimensione non 200, è necessario aggiungere un \<UapDefaultAssetScale > elemento con il valore della scala degli asset a questo elemento PropertyGroup. Altre informazioni su [asset e scale](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse con dimensione non 200, è necessario aggiungere un \<UapDefaultAssetScale > elemento con il valore della scala degli asset a questo elemento PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          A questo punto il \<PropertyGroup > elemento dovrebbe essere simile a questo esempio:  
   
@@ -272,7 +272,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
     4. Aggiungere un \<EnableDotNetNativeCompatibleProfile > elemento e impostarne il valore: true.  
   
-    5. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse con dimensione non 200, è necessario aggiungere un \<UapDefaultAssetScale > elemento con il valore della scala degli asset a questo elemento PropertyGroup. Altre informazioni su [asset e scale](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. La dimensione predefinita per le risorse nelle app di Windows universale è 200. Se il progetto include risorse con dimensione non 200, è necessario aggiungere un \<UapDefaultAssetScale > elemento con il valore della scala degli asset a questo elemento PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Per Windows Phone progetti solo, modificare il valore di \<ApplicationType > da Windows Phone a Windows Store.  
   
@@ -651,7 +651,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
 4. Trovare il \<PropertyGroup > elemento che contiene il \<TargetPlatformVersion > e \<TargetPlatformMinVersion > elementi. Modificare il valore esistente del \<TargetPlatformVersion > e \<TargetPlatformMinVersion > elementi che possono essere la stessa versione della piattaforma Windows universale installata.  
   
-    La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con risorse di Visual Studio 2015 RC includono con dimensione 100, è necessario aggiungere un \<UapDefaultAssetScale > elemento con un valore pari a 100 all'elemento PropertyGroup. Altre informazioni su [asset e scale](http://msdn.microsoft.com/library/jj679352.aspx).  
+    La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con risorse di Visual Studio 2015 RC includono con dimensione 100, è necessario aggiungere un \<UapDefaultAssetScale > elemento con un valore pari a 100 all'elemento PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Se sono stati aggiunti riferimenti a SDK di estensione della piattaforma UWP (Universal Windows Platform), ad esempio Windows Mobile SDK, sarà necessario aggiornare la versione dell'SDK. Ad esempio questo \<SDKReference > elemento:  
   
@@ -761,7 +761,7 @@ Apportare le modifiche manuali necessarie ai file di progetto esistenti per le a
   
      Aggiungere un \<EnableDotNetNativeCompatibleProfile > elemento e impostarne il valore su true se l'elemento non esiste già.  
   
-     La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con risorse di Visual Studio 2015 RC includono con dimensione 100, è necessario aggiungere un \<UapDefaultAssetScale > elemento con un valore pari a 100 all'elemento PropertyGroup. Altre informazioni su [asset e scale](http://msdn.microsoft.com/library/jj679352.aspx).  
+     La dimensione predefinita per le risorse nelle app di Windows universale è 200. I progetti creati con risorse di Visual Studio 2015 RC includono con dimensione 100, è necessario aggiungere un \<UapDefaultAssetScale > elemento con un valore pari a 100 all'elemento PropertyGroup. Altre informazioni su [asset e scale](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Pertanto, questo \<PropertyGroup > elemento ora sarà simile al seguente:  
   

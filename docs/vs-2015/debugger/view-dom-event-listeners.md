@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693580"
 ---
 # <a name="view-dom-event-listeners"></a>Visualizzare i listener di eventi DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
      Il **eventi** scheda Mostra i listener di eventi per qualsiasi elemento scelto nell'elenco della gerarchia.
 
 ### <a name="Tips"></a> Suggerimenti per la risoluzione dei problemi relativi ai listener di eventi
- In alcuni scenari di app, i listener di eventi devono essere rimossi in modo esplicito utilizzando [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Usare la **eventi** scheda della finestra di DOM Explorer per verificare se i listener di eventi sono stati rimossi dagli elementi DOM durante l'esecuzione di codice. Ecco alcuni suggerimenti utili per risolvere questi tipi di problemi:
+ In alcuni scenari di app, i listener di eventi devono essere rimossi in modo esplicito utilizzando [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Usare la **eventi** scheda della finestra di DOM Explorer per verificare se i listener di eventi sono stati rimossi dagli elementi DOM durante l'esecuzione di codice. Ecco alcuni suggerimenti utili per risolvere questi tipi di problemi:
 
-- Per le app che usano il modello di navigazione a pagina singola implementato in Visual Studio [modelli di progetto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), non è in genere necessario rimuovere i listener di eventi registrati per gli oggetti, ad esempio gli elementi DOM, che fanno parte di una pagina. In questo scenario, un elemento DOM e i listener di eventi associati hanno la stessa durata e possono essere sottoposti a Garbage Collection.
+- Per le app che usano il modello di navigazione a pagina singola implementato in Visual Studio [modelli di progetto](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), non è in genere necessario rimuovere i listener di eventi registrati per gli oggetti, ad esempio gli elementi DOM, che fanno parte di una pagina. In questo scenario, un elemento DOM e i listener di eventi associati hanno la stessa durata e possono essere sottoposti a Garbage Collection.
 
 - Se la durata dell'oggetto o dell'elemento DOM è diversa da quella del listener di eventi associato, potrebbe essere necessario chiamare il metodo `removeEventListener`. Se, ad esempio, usi l'evento `window.onresize`, potresti dover rimuovere il listener di eventi se esci dalla pagina in cui gestisci l'evento.
 

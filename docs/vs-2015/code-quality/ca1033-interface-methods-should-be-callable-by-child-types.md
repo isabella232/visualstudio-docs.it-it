@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e43944a3a21f48559ab5bf36d30585f8550b9da1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: bd801e7afc1fa0a4edf043aba560bc4afcdae9de
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954678"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682837"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: I metodi di interfaccia devono essere richiamabili dai tipi figlio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58954678"
  Un tipo visibile esternamente non sealed fornisce un'implementazione di metodo esplicita di un'interfaccia pubblica e non fornisce un metodo visibile esternamente alternativo con lo stesso nome.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Si consideri un tipo di base che implementa in modo esplicito un metodo di interfaccia pubblica. Un tipo che deriva dal tipo di base possa accedere al metodo di interfaccia ereditati solo tramite un riferimento all'istanza corrente (`this` in C#) che viene eseguito il cast all'interfaccia. Se il tipo derivato (esplicitamente) implementa nuovamente il metodo di interfaccia ereditati, l'implementazione di base non saranno più accessibili. La chiamata tramite il riferimento all'istanza corrente richiamerà l'implementazione derivata; In questo modo la ricorsione e un overflow dello stack finale.
+ Si consideri un tipo di base che implementa in modo esplicito un metodo di interfaccia pubblica. Un tipo che deriva dal tipo di base possa accedere al metodo di interfaccia ereditati solo tramite un riferimento all'istanza corrente (`this` in c#) che viene eseguito il cast all'interfaccia. Se il tipo derivato (esplicitamente) implementa nuovamente il metodo di interfaccia ereditati, l'implementazione di base non saranno più accessibili. La chiamata tramite il riferimento all'istanza corrente richiamerà l'implementazione derivata; In questo modo la ricorsione e un overflow dello stack finale.
 
  Questa regola non genera un report per un'implementazione esplicita di una violazione <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando visibile esternamente `Close()` o `System.IDisposable.Dispose(Boolean)` viene fornito il metodo.
 
@@ -52,4 +52,4 @@ ms.locfileid: "58954678"
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExplicitMethodImplementations/cs/FxCop.Design.ExplicitMethodImplementations.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
- [Interfacce](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)
+ [Interfacce](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37)

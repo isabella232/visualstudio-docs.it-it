@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0b22eabc4df4b6ce7e8596f0c6546cb3a4c61c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426558"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696662"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementazione di criteri di archiviazione dell'analisi codice personalizzati per codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
  Per creare una regola personalizzata impostata per un progetto team, creare innanzitutto una cartella speciale per la regola dei criteri di archiviazione impostata **Esplora controllo codice sorgente**. È quindi possibile creare il file del set di regole e aggiungere il file al controllo della versione. Infine, si specifica il set di regole come il codice check-in Criteri di analisi per il progetto team.  
   
 > [!NOTE]
-> Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale. Per altre informazioni, vedere [creare e usare aree di lavoro (precedente)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Per creare una cartella in un progetto team, è necessario mappare la radice del progetto team in un percorso nel computer locale. Per altre informazioni, vedere [creare e usare aree di lavoro (precedente)](https://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Per creare la cartella controllo della versione per il set di regole dei criteri di archiviazione  
   
@@ -61,7 +61,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
   
 1. Nelle **Esplora controllo codice sorgente**, fare doppio clic su nuova cartella e quindi fare clic su **aggiungere elementi alla cartella**.  
   
-     Per altre informazioni, vedere [controllo della versione](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Per altre informazioni, vedere [controllo della versione](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 2. Scegliere il set di regole file creato e quindi fare clic su **fine**.  
   

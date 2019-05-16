@@ -17,12 +17,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d598cc245421aafb05cbf91fe2b7a95e39564a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33ce391523a256bcb195deccf0c14868b5eae707
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444329"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683090"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Procedura dettagliata: Debug di un'applicazione multithreading
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "63444329"
   
      Verrà visualizzato un nuovo progetto console. Dopo aver creato il progetto, viene visualizzato un file di origine. A seconda del linguaggio scelto, il nome del file di origine potrebbe essere Module1.vb, Program.cs o MyThreadWalkthroughApp.cpp  
   
-6. Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio che viene visualizzato nella sezione "Creazione di un Thread" dell'argomento [creazione di thread e passaggio di dati in fase di avvio](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
+6. Eliminare il codice riportato nel file di origine e sostituirlo con il codice di esempio che viene visualizzato nella sezione "Creazione di un Thread" dell'argomento [creazione di thread e passaggio di dati in fase di avvio](https://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d).  
   
 7. Nel menu **File** fare clic su **Salva tutto**.  
   

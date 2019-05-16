@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692203"
 ---
 # <a name="environment-options-dialog-box"></a>Finestra di dialogo Opzioni ambiente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441719"
 È possibile usare le pagine nella cartella **Ambiente** della finestra di dialogo **Opzioni** per impostare la visualizzazione e il comportamento di alcuni elementi dell'ambiente di sviluppo integrato (IDE). Per accedere alle pagine di Ambiente, nella barra dei menu scegliere **Strumenti**, **Opzioni** e fare clic su **Ambiente**.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati nel computer potrebbero variare rispetto a quelli descritti nella Guida, a seconda delle impostazioni attive e dell'edizione di Visual Studio in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Per informazioni sulla procedura|Vedere|  
 |----------------------------------|---------|  
 |Personalizzare l'aspetto e il comportamento di finestre, menu e altri elementi dell'IDE.|[Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Specificare la sicurezza per i componenti aggiuntivi.|[Sicurezza componenti aggiuntivi, Ambiente, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Specificare la sicurezza per i componenti aggiuntivi.|[Sicurezza componenti aggiuntivi, Ambiente, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Modificare le impostazioni predefinite per il salvataggio e il recupero automatici dei file|[Salvataggio automatico, Ambiente, finestra di dialogo Opzioni](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Definire le impostazioni di gestione e visualizzazione di documenti che includono il comportamento dei file esterni.|[Documenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Personalizzare l'esecuzione degli aggiornamenti e la modalità di gestione delle estensioni.|[Estensioni e aggiornamenti, Ambiente, finestra di dialogo Opzioni](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

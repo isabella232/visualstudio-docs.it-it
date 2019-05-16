@@ -1,10 +1,9 @@
 - name: Strumenti di test di Visual Studio
   href: improve-code-quality.md
-- name: Scenari di test
-  href: developer-testing-scenarios.md
 - name: Unit test
-  href: unit-test-your-code.md
   items:
+    - name: Panoramica degli strumenti di unit test
+      href: unit-test-your-code.md
     - name: Introduzione
       href: getting-started-with-unit-testing.md
     - name: Nozioni di base sugli unit test
@@ -14,8 +13,9 @@
     - name: Comando Crea unit test
       href: create-unit-tests-menu.md
     - name: IntelliTest
-      href: generate-unit-tests-for-your-code-with-intellitest.md
       items:
+        - name: 'Procedura: Generare unit test con IntelliTest'
+          href: generate-unit-tests-for-your-code-with-intellitest.md
         - name: Panoramica
           href: intellitest-manual/introduction.md
         - name: Per iniziare
@@ -38,9 +38,10 @@
           href: intellitest-manual/warnings-and-errors.md
     - name: Installare framework di unit test di terze parti
       href: install-third-party-unit-test-frameworks.md
-    - name: Eseguire unit test con Esplora test
-      href: run-unit-tests-with-test-explorer.md
+    - name: Esplora test
       items:
+        - name: Eseguire unit test con Esplora test
+          href: run-unit-tests-with-test-explorer.md
         - name: Domande frequenti su Esplora test
           href: test-explorer-faq.md
     - name: Eseguire test dalla riga di comando
@@ -59,18 +60,20 @@
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Usare le classi Assert
           href: using-the-assert-classes.md
-        - name: Isolare codice sottoposto a test con Microsoft Fakes
-          href: isolating-code-under-test-with-microsoft-fakes.md
+        - name: Microsoft Fakes
           items:
+            - name: Isolare codice sottoposto a test con Microsoft Fakes
+              href: isolating-code-under-test-with-microsoft-fakes.md
             - name: Usare stub per isolare parti dell'applicazione l'una dall'altra per il testing unità
               href: using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md
             - name: Usare shim per isolare l'applicazione da altri assembly per il testing unità
               href: using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md
             - name: 'Generazione del codice, compilazione e convenzioni di denominazione in Microsoft Fakes'
               href: code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md
-        - name: Creare uno unit test basato sui dati
-          href: how-to-create-a-data-driven-unit-test.md
+        - name: Unit test basati sui dati
           items:
+            - name: Creare uno unit test basato sui dati
+              href: how-to-create-a-data-driven-unit-test.md
             - name: 'Procedura dettagliata: Usare un file di configurazione per definire un''origine dati'
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Unit test per metodi generici
@@ -79,9 +82,10 @@
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
         - name: Progetto di esempio per la creazione di unit test
           href: sample-project-for-creating-unit-tests.md
-    - name: Scrivere unit test per il codice C/C++
-      href: writing-unit-tests-for-c-cpp.md
+    - name: Unit test per il codice C/C++
       items:
+        - name: Scrivere unit test per il codice C/C++
+          href: writing-unit-tests-for-c-cpp.md
         - name: Usare il framework di testing unità Microsoft per C++
           href: how-to-use-microsoft-test-framework-for-cpp.md
         - name: Usare il framework di test C++ di Google
@@ -104,16 +108,18 @@
           href: unit-testing-visual-csharp-code-in-a-store-app.md
         - name: 'Procedura dettagliata: Creare ed eseguire unit test per app della piattaforma UWP'
           href: walkthrough-creating-and-running-unit-tests-for-windows-store-apps.md
-    - name: Usare la funzionalità code coverage per determinare la quantità di codice testato
-      href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
+    - name: Code coverage
       items:
+        - name: Usare la funzionalità code coverage per determinare la quantità di codice testato
+          href: using-code-coverage-to-determine-how-much-code-is-being-tested.md
         - name: Personalizzare l'analisi code coverage
           href: customizing-code-coverage-analysis.md
         - name: Risolvere i problemi di code coverage
           href: troubleshooting-code-coverage.md
-- name: Live unit testing
-  href: live-unit-testing-intro.md
+- name: Live Unit Testing
   items:
+    - name: Introduzione
+      href: live-unit-testing-intro.md
     - name: Novità di Live Unit Testing
       href: live-unit-testing-whats-new.md
     - name: Introduzione a Live Unit Testing
@@ -126,19 +132,22 @@
   items:
     - name: 'Guida introduttiva: Creare un progetto di test di carico'
       href: quickstart-create-a-load-test-project.md
-    - name: Configurare i test di carico
-      href: edit-load-tests.md
+    - name: Configurazione di test di carico
       items:
-        - name: Modificare gli scenari
-          href: edit-load-test-scenarios.md
+        - name: Configurare i test di carico
+          href: edit-load-tests.md
+        - name: Scenari e combinazioni di test
           items:
+            - name: Modificare gli scenari
+              href: edit-load-test-scenarios.md
             - name: Proprietà di scenari
               href: load-test-scenario-properties.md
             - name: Combinazione di test
               href: edit-the-test-mix-in-a-load-test-scenario.md
-            - name: Modello di combinazione di test
-              href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
+            - name: Modelli di combinazioni di test
               items:
+                - name: Panoramica
+                  href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: Modificare modelli di combinazione di test
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
             - name: Combinazione di browser
@@ -148,8 +157,9 @@
             - name: Profilo interazione utente
               href: edit-think-times-in-load-test-scenarios.md
             - name: Modelli di carico
-              href: edit-load-patterns-to-model-virtual-user-activities.md
               items:
+                - name: Modelli di carico
+                  href: edit-load-patterns-to-model-virtual-user-activities.md
                 - name: Proprietà Tempo di preparazione passaggio
                   href: how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md
             - name: Ritardi di avvio
@@ -160,9 +170,10 @@
               href: how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md
             - name: Distribuzione a ritardo velocità
               href: how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md
-        - name: Modificare gli insiemi di contatori
-          href: specify-counter-sets-and-threshold-rules-for-load-testing.md
+        - name: Insiemi di contatori
           items:
+            - name: Modificare gli insiemi di contatori
+              href: specify-counter-sets-and-threshold-rules-for-load-testing.md
             - name: Aggiungere contatori
               href: how-to-add-counters-to-counter-sets-using-the-load-test-editor.md
             - name: Insiemi di contatori personalizzati
@@ -171,9 +182,10 @@
               href: how-to-manage-counter-sets-using-the-load-test-editor.md
             - name: Aggiungere una regola di soglia
               href: how-to-add-a-threshold-rule-using-the-load-test-editor.md
-        - name: Modifica impostazioni esecuzione test
-          href: configure-load-test-run-settings.md
+        - name: Impostazioni esecuzione test
           items:
+            - name: Modifica impostazioni esecuzione test
+              href: configure-load-test-run-settings.md
             - name: Proprietà delle impostazioni esecuzione test
               href: load-test-run-settings-properties.md
             - name: Aggiungere impostazioni esecuzioni test
@@ -181,8 +193,9 @@
             - name: Parametri di contesto
               href: how-to-add-context-parameters-to-a-load-test-run-setting.md
             - name: Impostazioni di registrazione
-              href: modify-load-test-logging-settings.md
               items:
+                - name: Modificare le impostazioni di registrazione
+                  href: modify-load-test-logging-settings.md
                 - name: Dimensioni massime dei log
                   href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: Test non superati
@@ -194,8 +207,9 @@
             - name: Frequenza di campionamento
               href: how-to-specify-the-sample-rate-for-a-load-test.md
             - name: Selezionare un'impostazione esecuzione test
-              href: how-to-select-the-active-run-setting-for-a-load-test.md
               items:
+                - name: Selezionare un'impostazione esecuzione test
+                  href: how-to-select-the-active-run-setting-for-a-load-test.md
                 - name: Riga di comando
                   href: how-to-select-a-load-test-run-setting-from-the-command-line.md
     - name: 'Procedura dettagliata: Creare ed eseguire un test di carico'
@@ -211,8 +225,9 @@
         - name: Parametri dinamici
           href: fix-non-detectable-dynamic-parameters-in-a-web-performance-test.md
     - name: Test controller e agenti di test
-      href: configure-test-agents-and-controllers-for-load-tests.md
       items:
+        - name: Panoramica
+          href: configure-test-agents-and-controllers-for-load-tests.md
         - name: Requisiti
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: Gestire i test controller e gli agenti di test
@@ -241,9 +256,10 @@
           href: code-a-custom-extraction-rule-for-a-web-performance-test.md
         - name: Creare una regola di convalida personalizzata
           href: code-a-custom-validation-rule-for-a-web-performance-test.md
-        - name: Creare codice e plug-in personalizzati
-          href: create-custom-code-and-plug-ins-for-load-tests.md
+        - name: Codice e plug-in personalizzati
           items:
+            - name: Creare codice e plug-in personalizzati
+              href: create-custom-code-and-plug-ins-for-load-tests.md
             - name: Creare un plug-in di test prestazioni Web
               href: how-to-create-a-web-performance-test-plug-in.md
             - name: Creare un plug-in a livello di richiesta
@@ -256,14 +272,16 @@
               href: how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md
     - name: Diagnostica per i test di carico
       items:
-        - name: Creare un adattatore dati di diagnostica
-          href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
+        - name: Adattatori dati di diagnostica
           items:
+            - name: Creare un adattatore dati di diagnostica
+              href: create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md
             - name: Modalità di creazione
               href: how-to-create-a-diagnostic-data-adapter.md
-        - name: Raccogliere dati di diagnostica tramite impostazioni test
-          href: collect-diagnostic-information-using-test-settings.md
+        - name: Raccogliere i dati di diagnostica
           items:
+            - name: Raccogliere dati di diagnostica tramite impostazioni test
+              href: collect-diagnostic-information-using-test-settings.md
             - name: Creare impostazioni test
               href: how-to-create-a-test-setting-for-a-distributed-load-test.md
             - name: Configurare il profiler ASP.NET
@@ -274,21 +292,24 @@
           href: how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md
         - name: Registrazioni schermate e voce
           href: how-to-include-recordings-of-the-screen-and-voice-during-tests.md
-    - name: Analizzare i risultati
-      href: analyze-load-test-results-using-the-load-test-analyzer.md
+    - name: Risultati dei test
       items:
+        - name: Analizzare i risultati
+          href: analyze-load-test-results-using-the-load-test-analyzer.md
         - name: Accedere ai risultati
           href: how-to-access-load-test-results-for-analysis.md
         - name: Panoramica di riepilogo
           href: load-test-results-summary-overview.md
         - name: Visualizzazione tabelle
-          href: analyze-load-test-results-and-errors-in-the-tables-view.md
           items:
+            - name: Visualizzazione tabelle
+              href: analyze-load-test-results-and-errors-in-the-tables-view.md
             - name: Tempo di risposta della pagina Web
               href: how-to-view-web-page-response-time-in-a-load-test.md
         - name: Visualizzazione grafico
-          href: analyze-load-test-results-in-the-graphs-view.md
           items:
+            - name: Visualizzazione grafico
+              href: analyze-load-test-results-in-the-graphs-view.md
             - name: Aggiungere ed eliminare contatori
               href: how-to-add-and-delete-counters-on-graphs-in-load-test-results.md
             - name: Creare grafici personalizzati
@@ -298,8 +319,9 @@
             - name: Come fare zoom avanti
               href: how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md
         - name: Visualizzazione dettagli
-          href: analyze-load-test-virtual-user-activity-in-the-details-view.md
           items:
+            - name: Visualizzazione dettagli
+              href: analyze-load-test-virtual-user-activity-in-the-details-view.md
             - name: Analizzare le attività degli utenti virtuali
               href: how-to-analyze-virtual-user-activity-during-a-load-test.md
             - name: 'Procedura dettagliata: Usare il grafico attività'
@@ -313,8 +335,9 @@
         - name: Creare un report in Word
           href: how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md
         - name: Repository dei risultati
-          href: manage-load-test-results-in-the-load-test-results-repository.md
           items:
+            - name: Repository dei risultati
+              href: manage-load-test-results-in-the-load-test-results-repository.md
             - name: Selezionare un repository
               href: how-to-select-a-load-test-results-repository.md
             - name: Importare i risultati
@@ -326,8 +349,9 @@
         - name: Creare un componente aggiuntivo per il visualizzatore di risultati
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
 - name: Automazione di test dell'interfaccia utente
-  href: use-ui-automation-to-test-your-code.md
   items:
+    - name: Panoramica
+      href: use-ui-automation-to-test-your-code.md
     - name: 'Procedura dettagliata: Creare, modificare e gestire un test codificato dell''interfaccia utente'
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Testare app UWP con test codificati dell'interfaccia utente
@@ -359,8 +383,9 @@
     - name: Estendere il framework dei test codificati dell'interfaccia utente
       href: extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md
 - name: Gestione lab di test
-  href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
+    - name: Usare un ambiente lab
+      href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
     - name: Usare Build and Release Management per l'esecuzione di test automatizzati
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: Installare agenti di test e test controller

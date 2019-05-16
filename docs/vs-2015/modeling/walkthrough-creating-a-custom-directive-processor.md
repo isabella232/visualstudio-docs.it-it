@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 325a0c594c142ab62aba47e5c721da5ade6f179f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446759"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704057"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procedura dettagliata: Creazione di un processore di direttiva personalizzato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -678,7 +678,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 ## <a name="testing-the-directive-processor"></a>Test del processore di direttiva  
  Per testare il processore di direttiva, è necessario scrivere un modello di testo che lo chiami.  
 
- In questo esempio, il modello di testo chiama la direttiva e passa nel nome di un file XML che contiene documentazione per un file della classe. Per altre informazioni, vedere [commenti in formato documentazione XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ In questo esempio, il modello di testo chiama la direttiva e passa nel nome di un file XML che contiene documentazione per un file della classe. Per altre informazioni, vedere [commenti in formato documentazione XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
 
  Il modello di testo utilizza quindi la proprietà <xref:System.Xml.XmlDocument> che la direttiva crea per navigare nell'XML e stampare i commenti relativi alla documentazione.  
 

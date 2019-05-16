@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701036"
 ---
 # <a name="add-new-data-sources"></a>Aggiungere nuove origini dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Nel contesto di strumenti di dati .NET in Visual Studio, il termine *zdroj dat* 
   
  Uno dei seguenti tipi di servizi, è possibile creare un'origine dati:  
   
-- WCF Data Services. Per altre informazioni, vedere [Panoramica](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Per altre informazioni, vedere [Panoramica](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
 - Servizi dati WCF. Per altre informazioni, vedere [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   

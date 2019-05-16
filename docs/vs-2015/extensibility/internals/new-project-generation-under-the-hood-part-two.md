@@ -11,22 +11,22 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964457"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687501"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generazione nuovo progetto: Dietro le quinte, seconda parte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-In [nuova generazione progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual C#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.  
+In [nuova generazione progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) abbiamo visto come il **nuovo progetto** inserite nella finestra di dialogo. Si supponga di aver selezionato una **applicazione di Windows Visual c#**, compilati il **Name** e **percorso** caselle di testo e fa clic su OK.  
   
 ## <a name="generating-the-solution-files"></a>Per generare i file di soluzione  
  Scelta di un modello di applicazione indirizza [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] per decomprimere e aprire il file con estensione vstemplate corrispondente e per avviare un modello per interpretare i comandi XML in questo file. Questi comandi creano progetti ed elementi del progetto nella soluzione nuova o esistente.  
   
- Il modello decompresso il file di origine, denominato modelli di elementi, dalla stessa cartella con estensione zip che contiene il file con estensione vstemplate. Il modello consente di copiare questi file per il nuovo progetto di personalizzazione di conseguenza questi. Per una panoramica dei modelli di progetto ed elemento, vedere [NIB: Modelli di Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Il modello decompresso il file di origine, denominato modelli di elementi, dalla stessa cartella con estensione zip che contiene il file con estensione vstemplate. Il modello consente di copiare questi file per il nuovo progetto di personalizzazione di conseguenza questi. Per una panoramica dei modelli di progetto ed elemento, vedere [NIB: Modelli di Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Sostituzione dei parametri di modello  
  Quando il modello copia un modello di elemento in un nuovo progetto, i parametri del modello viene sostituito con stringhe di personalizzare il file. Un parametro di modello è un token speciali che è preceduto o seguito da un segno di dollaro, ad esempio, $ $date.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Nuova generazione del progetto: Dietro le quinte, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Generazione di un nuovo progetto: dietro le quinte, prima parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

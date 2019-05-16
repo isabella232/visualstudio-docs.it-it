@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f8fbd3653043148513ec55fb18fdf211855a6d03
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 25c96abd08f9d6c5f519c5f897c43aaf28bc231b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968276"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682265"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Usare istanze di gestori eventi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58968276"
  Non escludere un avviso da questa regola.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un delegato che viola la regola. Nel [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] esempio, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio C#, vedere l'esempio seguente che mostra il codice modificato.
+ L'esempio seguente illustra un delegato che viola la regola. Nel [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] esempio, i commenti descrivono come modificare l'esempio per soddisfare la regola. Nell'esempio c#, vedere l'esempio seguente che mostra il codice modificato.
 
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/cs/FxCop.Design.CustomEventHandler.cs#1)]
  [!code-vb[FxCop.Design.CustomEventHandler#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.CustomEventHandler/vb/FxCop.Design.CustomEventHandler.vb#1)]
@@ -71,4 +71,4 @@ ms.locfileid: "58968276"
  [CA1007: Utilizzare generics dove appropriato](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Generics](http://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)
+ [Generics](https://msdn.microsoft.com/library/75ea8509-a4ea-4e7a-a2b3-cf72482e9282)

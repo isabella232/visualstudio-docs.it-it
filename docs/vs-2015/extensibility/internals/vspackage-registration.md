@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440795"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685291"
 ---
 # <a name="vspackage-registration"></a>Registrazione di pacchetti VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "63440795"
 > [!NOTE]
 > È una prassi durante lo sviluppo di VSPackage per usare registrazione automatica. Tuttavia, [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] partner non può essere rilasciato i prodotti tramite registrazione automatica come parte del programma di installazione.  
   
- Le voci del Registro di sistema in un pacchetto Windows Installer vengono in genere stabilite nella tabella del Registro di sistema. È anche possibile registrare le estensioni di file nella tabella del Registro di sistema. Tuttavia, programma di installazione di Windows fornisce supporto incorporato tramite il ProgId (programmatic identifier), classe, estensione e le tabelle di verbo. Per altre informazioni, vedere [tabelle di Database](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Le voci del Registro di sistema in un pacchetto Windows Installer vengono in genere stabilite nella tabella del Registro di sistema. È anche possibile registrare le estensioni di file nella tabella del Registro di sistema. Tuttavia, programma di installazione di Windows fornisce supporto incorporato tramite il ProgId (programmatic identifier), classe, estensione e le tabelle di verbo. Per altre informazioni, vedere [tabelle di Database](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Assicurarsi che le voci del Registro di sistema sono associate il componente che è appropriato per la strategia side-by-side scelta. Ad esempio, le voci del Registro di sistema per un file condiviso devono essere associate a Windows Installer componente quel file. Allo stesso modo, le voci del Registro di sistema per un file specifico della versione devono essere associate a componente quel file. In caso contrario, installare o disinstallare il pacchetto VSPackage per una versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] potrebbe interrompere il pacchetto VSPackage in altre versioni. Per altre informazioni, vedere [che supporta più versioni di Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ ms.locfileid: "63440795"
 - Codice di registrazione automatica è possibile negare l'accesso alle risorse di rete, ad esempio le librerie dei tipi, se il componente sia specificata come esecuzione dall'origine ed è elencato nella tabella SelfReg. Ciò può causare l'installazione del componente su errori durante un'installazione amministrativa.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Registrazione del pacchetto gestito](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Registrazione del pacchetto gestito](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

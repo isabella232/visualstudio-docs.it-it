@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403577"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686882"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenario: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |**Mappa o diagramma**|**Mostra**|  
 |------------------------|---------------|  
 |*Mappa codice*<br /><br /> Vedere:<br /><br /> -   [Mappare le dipendenze nelle soluzioni](../modeling/map-dependencies-across-your-solutions.md)<br />-   [Cercare e ridisporre le mappe codice](../modeling/browse-and-rearrange-code-maps.md)<br />-   [Personalizzare le mappe codice modificando i file DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Dipendenze e altre relazioni nel codice.<br /><br /> Ad esempio, Dinner Now potrebbe iniziare esaminando le mappe codice assembly per avere una panoramica degli assembly e delle relative dipendenze. Può analizzare in dettaglio le mappe per esplorare gli spazi dei nomi e le classi in tali assembly.<br /><br /> Dinner Now può anche creare mappe per esplorare aree specifiche e altri tipi di relazioni nel codice. Usa Esplora soluzioni per trovare e selezionare le aree e le relazioni di suo interesse.|  
-|*Diagramma classi basato su codice*<br /><br /> Vedere [How to: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice|  
+|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice|  
   
  Ad esempio, lo sviluppatore crea una mappa codice. Modifica l'ambito per concentrarsi sulle aree che saranno interessate dal nuovo scenario. Queste aree sono selezionate ed evidenziate nella mappa:  
   
@@ -264,7 +264,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |------------------|-------------------|  
 |*Diagramma di attività (UML)*<br /><br /> Vedere:<br /><br /> -   [Diagrammi di attività UML: Riferimento](../modeling/uml-activity-diagrams-reference.md)<br />-   [Diagrammi di attività UML: linee guida](../modeling/uml-activity-diagrams-guidelines.md)|Il flusso dei passaggi eseguiti quando il sistema rileva che un cliente effettua un nuovo ordine presso un ristorante già usato in precedenza e gli propone pertanto di scriverne la recensione.|  
 |*Diagramma di classi (UML)*<br /><br /> Vedere:<br /><br /> -   [Diagrammi classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|Classi logiche e relative relazioni. Ad esempio, viene aggiunta una nuova classe per descrivere una **Recensione** e le sue  relazioni con altre entità come **Ristorante**, **Menu**e **Cliente**.<br /><br /> Per associare le recensioni a un cliente, il sistema deve archiviare i dati relativi al cliente. Un diagramma classi UML può essere utile per chiarire quei dati.|  
-|*Diagramma classi basato su codice*<br /><br /> Vedere [How to: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice.|  
+|*Diagramma classi basato su codice*<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classi presenti nel codice.|  
 |*Diagramma dei componenti (UML)*<br /><br /> Vedere:<br /><br /> -   [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md)|Parti generali del sistema, ad esempio il sito Web di Dinner Now e le relative interfacce. Queste interfacce definiscono la modalità di interazione reciproca dei componenti tramite i metodi o i servizi da essi forniti e utilizzati.|  
 |*Diagramma di sequenza (UML)*<br /><br /> Vedere:<br /><br /> -   [Diagrammi di sequenza UML: Riferimento](../modeling/uml-sequence-diagrams-reference.md)<br />-   [Diagrammi di sequenza UML: linee guida](../modeling/uml-sequence-diagrams-guidelines.md)|Sequenza di interazioni tra le istanze.|  
   
@@ -297,11 +297,11 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
   
  Vedere:  
   
-- [Definire il processo di compilazione](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definire il processo di compilazione](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Utilizzare un processo di compilazione di archiviazione gestita per convalidare le modifiche](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Personalizzare il modello del processo di compilazione](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Personalizzare il modello del processo di compilazione](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
@@ -336,13 +336,13 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
   
   Vedere:  
   
-- [Tenere traccia del lavoro tramite Visual Studio Online o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Tenere traccia del lavoro tramite Visual Studio Online o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Collegare elementi di modello ed elementi di lavoro](../modeling/link-model-elements-and-work-items.md)  
   
-- [Grafici, dashboard e report per Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Grafici, dashboard e report per Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Creare il backlog e le attività tramite Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Creare il backlog e le attività tramite Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Test, convalida e archiviazione del codice  
  Quando i team completano ogni attività, archiviano il codice in Controllo della versione di Team Foundation e, qualora se ne dimenticassero, ricevono un promemoria da Team Foundation Server. Prima che Team Foundation Server accetti le archiviazioni, i team devono eseguire gli unit test e la convalida dei livelli per verificare il codice in base ai test case e alla progettazione. Usano Team Foundation Server per eseguire periodicamente le compilazioni, unit test automatizzati e la convalida dei livelli. Questo permette di verificare che il codice soddisfi i criteri seguenti:  
@@ -359,13 +359,13 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
   
   Vedere:  
   
-- [Test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)  
   
 - [Utilizzare il controllo della versione](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Compilare l'applicazione](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Compilare l'applicazione](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne e Dinner Now devono integrare i propri sistemi di pagamento. Le sezioni seguenti mostrano i diagrammi di modellazione in Visual Studio per eseguire questa attività:  
@@ -665,7 +665,7 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
 |Diagramma livello|L'architettura logica del sistema. Usare la convalida dei livelli per assicurare la coerenza del codice con la progettazione.<br /><br /> Per identificare più facilmente i livelli esistenti o previsti, creare una mappa codice e raggruppare gli elementi correlati. Per creare un diagramma livello, vedere:<br /><br /> -   [Creare diagrammi livello dal codice](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [Diagrammi livello: linee guida](../modeling/layer-diagrams-guidelines.md)|  
 |Diagramma dei componenti|I componenti e le relative interfacce e relazioni.<br /><br /> Per identificare più facilmente i componenti, creare una mappa codice e raggruppare gli elementi in base alla funzione che svolgono nel sistema.<br /><br /> Vedere:<br /><br /> -   [Diagrammi dei componenti UML: Riferimento](../modeling/uml-component-diagrams-reference.md)<br />-   [Diagrammi dei componenti UML: linee guida](../modeling/uml-component-diagrams-guidelines.md)|  
 |Diagramma classi (UML)|Le classi e i relativi attributi, operazioni e relazioni.<br /><br /> Per identificare più facilmente questi elementi, creare un diagramma classi UML in cui siano visualizzati.<br /><br /> Vedere:<br /><br /> -   [Diagrammi classi UML: Riferimento](../modeling/uml-class-diagrams-reference.md)<br />-   [Diagrammi classi UML: linee guida](../modeling/uml-class-diagrams-guidelines.md)|  
-|Diagramma classi (basato su codice)|Classi presenti nel codice per un progetto specifico.<br /><br /> Per visualizzare e modificare una classe esistente nel codice, usare Progettazione classi.<br /><br /> Vedere [How to: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
+|Diagramma classi (basato su codice)|Classi presenti nel codice per un progetto specifico.<br /><br /> Per visualizzare e modificare una classe esistente nel codice, usare Progettazione classi.<br /><br /> Vedere [Procedura: Aggiungere diagrammi classi ai progetti (Progettazione classi)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|  
   
 ### <a name="DescribeSequence"></a> Vengono descritte le interazioni: Diagrammi di sequenza  
  I diagrammi di sequenza descrivono una serie di interazioni tra le parti di un sistema. Le parti possono essere di qualsiasi dimensione, da singoli oggetti di un programma a grandi sottosistemi o attori esterni. Le interazioni possono essere di qualsiasi entità e tipo, da singoli messaggi a transazioni estese, e possono essere chiamate di funzione o messaggi del servizio Web.  
@@ -888,6 +888,6 @@ Per assicurarsi che il sistema software soddisfi le esigenze degli utenti, usare
  [Visualizzare il codice](../modeling/visualize-code.md)   
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
  [Usare i modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)   
- [Usare i modelli nello sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Usare i modelli nello sviluppo Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)   
  [Estendere modelli e diagrammi UML](../modeling/extend-uml-models-and-diagrams.md)

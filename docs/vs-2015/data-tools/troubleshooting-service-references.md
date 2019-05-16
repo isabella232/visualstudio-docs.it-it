@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700242"
 ---
 # <a name="troubleshooting-service-references"></a>Risoluzione dei problemi relativi ai riferimenti al servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Questo argomento elenca i problemi comuni che possono verificarsi quando si sta 
 
 3. Assicurarsi che il **advanced Mostra configurazioni della build** casella di controllo sia selezionata e quindi fare clic su **OK**.
 
-4. Caricare il progetto di servizio WCF. Per altre informazioni, vedere [NIB procedura: Creare soluzioni multiprogetto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Caricare il progetto di servizio WCF. Per altre informazioni, vedere [NIB procedura: Creare soluzioni multiprogetto](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. Nel **Configuration Manager** finestra di dialogo, impostare il **configurazione soluzione attiva** a **Debug**. Per altre informazioni, vedere [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md).
 

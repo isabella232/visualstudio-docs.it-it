@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674985"
 ---
 # <a name="localizing-applications"></a>Localizzazione di applicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ La *localizzazione* è il processo di personalizzazione dell'applicazione per de
  [Introduzione alle applicazioni internazionali basate su .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Illustra i concetti relativi allo sviluppo di software per un mercato internazionale con Visual Basic o Visual C#.  
   
- [Globalizzazione di Windows Form](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalizzazione di Windows Form](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Offre collegamenti a pagine sulla creazione di applicazioni Windows che supportano più impostazioni cultura.  
   
- [Globalizzazione e localizzazione](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalizzazione e localizzazione](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Offre collegamenti a pagine sulla creazione di applicazioni Web che supportano più impostazioni cultura.  
   
- [Procedure consigliate per lo sviluppo di applicazioni internazionali](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Procedure consigliate per lo sviluppo di applicazioni internazionali](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Offre informazioni sulla programmazione per un pubblico internazionale, ad esempio problemi di progettazione e terminologia.

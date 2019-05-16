@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105474"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702259"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuazione dell'esecuzione dopo un'eccezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando l'esecuzione viene interrotta dal debugger a causa di un'eccezione, viene visualizzata una finestra di dialogo. Per Visual Basic o c#, verrà visualizzato il [informazioni sulle eccezioni](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) finestra di dialogo, per impostazione predefinita. Per C++, si noterà il precedente **eccezione** nella finestra di dialogo. Se Usa Visual Basic o c#, ma sono disabilitate le **informazioni sulle eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **eccezione** nella finestra di dialogo.  
+Quando l'esecuzione viene interrotta dal debugger a causa di un'eccezione, viene visualizzata una finestra di dialogo. Per Visual Basic o c#, verrà visualizzato il [informazioni sulle eccezioni](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) finestra di dialogo, per impostazione predefinita. Per C++, si noterà il precedente **eccezione** nella finestra di dialogo. Se Usa Visual Basic o c#, ma sono disabilitate le **informazioni sulle eccezioni** nel **opzioni** della finestra di dialogo verrà visualizzato il **eccezione** nella finestra di dialogo.  
   
  Quando la **informazioni sulle eccezioni** oppure **eccezione** verrà visualizzata la finestra di dialogo, è possibile provare a risolvere il problema che ha causato l'eccezione.  
   

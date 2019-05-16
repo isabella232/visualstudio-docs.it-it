@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696638"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ In Visual Studio 2015 IntelliSense è disponibile per singoli file del codice e 
 - La riga 12 ha una sottolineatura a zig-zag di colore viola sull’identificatore BYE; tale identificatore non è definito nel progetto Android.NativeActivity attualmente inattivo.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense con singolo file  
- IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. Per abilitare o disabilitare particolari funzionalità, passare a **Editor di testo, C/C++, Avanzate** e attivare o disattivare le funzionalità IntelliSense. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, cercare l’argomento relativo all'**uso di IntelliSense ed esplorazione dei file non di progetto** nella sezione **Avanzate**. Vedere [Presentazione guidata di Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ IntelliSense è disponibile anche quando si apre un singolo file all'esterno di qualsiasi progetto. Per abilitare o disabilitare particolari funzionalità, passare a **Editor di testo, C/C++, Avanzate** e attivare o disattivare le funzionalità IntelliSense. Per configurare IntelliSense per singoli file che non fanno parte di un progetto, cercare l’argomento relativo all'**uso di IntelliSense ed esplorazione dei file non di progetto** nella sezione **Avanzate**. Vedere [Presentazione guidata di Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![Intellisense per singolo file Visual C&#43;&#43;](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

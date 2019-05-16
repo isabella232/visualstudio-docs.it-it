@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680782"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Supporto per Visual Studio SDK
 Diverse opzioni di supporto disponibili per i clienti che hanno domande su come estendere l'ambiente di sviluppo integrato (IDE) di Visual Studio.
@@ -45,7 +45,7 @@ Diverse opzioni di supporto disponibili per i clienti che hanno domande su come 
 ## <a name="included-support"></a>Aggiunta del supporto
 
 ### <a name="visual-studio-product-support"></a>Supporto del prodotto Visual Studio
- Alcune funzionalità di supporto è incluso con l'acquisto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prodotti. Per altre informazioni, vedere [supporto di Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gestisce un team di supporto dedicati per rispondere a domande sulle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estendibilità.
+ Alcune funzionalità di supporto è incluso con l'acquisto di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prodotti. Per altre informazioni, vedere [supporto di Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft gestisce un team di supporto dedicati per rispondere a domande sulle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estendibilità.
 
 ### <a name="msdn-subscription-support"></a>Supporto per l'abbonamento MSDN
  I pacchetti di abbonamento MSDN possono includere anche alcune funzionalità di supporto. Per altre informazioni, vedere [supporto per gli abbonati MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Informazioni sulle richieste di supporto singoli reperibili [supportano le singo
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Talk to Us](../ide/talk-to-us.md) (Comunicazioni con Microsoft)
+- [Talk to Us](../ide/feedback-options.md) (Comunicazioni con Microsoft)

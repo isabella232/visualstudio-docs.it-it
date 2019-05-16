@@ -18,14 +18,14 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 734a55cb06ee46afc6fc3518d6dffe349690d3d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697488"
 ---
-# <a name="how-to-use-the-parallel-watch-window"></a>Procedura: Utilizzare la finestra Espressioni di controllo parallela
+# <a name="how-to-use-the-parallel-watch-window"></a>Procedura: Usare la finestra Espressione di controllo in parallelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nella finestra Espressione di controllo in parallelo è possibile visualizzare contemporaneamente i valori di un'espressione utilizzata in più thread. Ogni riga rappresenta un thread in esecuzione in un'applicazione, ma un thread può essere rappresentato su più righe. In particolare, ogni riga rappresenta una chiamata di funzione la cui firma della funzione corrisponde alla funzione nello stack frame corrente. È possibile ordinare, riordinare, rimuovere e raggruppare gli elementi presenti nelle colonne. È possibile aggiungere flag, rimuovere flag, bloccare (sospendere) e sbloccare (riprendere) i thread. Le colonne seguenti vengono visualizzate nella finestra **Espressione di controllo in parallelo**:  
@@ -90,4 +90,4 @@ Nella finestra Espressione di controllo in parallelo è possibile visualizzare c
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Procedura: Usare la finestra Thread GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Procedura dettagliata: Debug di un'applicazione C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

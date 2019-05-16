@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383944"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704832"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Trovare le modifiche apportate al codice e altri elementi della cronologia con CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
   
 - Team Foundation Server 2013 o versioni successive, Visual Studio Team Services o Git  
   
-- [Lync 2010 o versioni successive oppure Skype for Business](http://technet.microsoft.com/lync)per contattare il team dall'editor di codice.  
+- [Lync 2010 o versioni successive oppure Skype for Business](https://technet.microsoft.com/lync)per contattare il team dall'editor di codice.  
   
   Per il codice Visual C# .NET o Visual Basic .NET archiviato con il controllo della versione di Team Foundation (TFVC) o Git, si ricevono dettagli CodeLens a livello di classe e metodo (indicatori a*livello di elemento codice* ). Se il repository Git è ospitato in TfGit, è anche possibile ottenere collegamenti negli elementi di lavoro TFS.  
   
@@ -83,7 +83,7 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
   
  ![CodeLens: Get cronologia delle modifiche per il codice in TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- Il periodo di tempo predefinito è 12 secondi. Se il codice è archiviato in Team Foundation Server, è possibile modificarlo eseguendo il [comando TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) con il [comando CodeIndex](../ide/codeindex-command.md) e il flag **/indexHistoryPeriod** .  
+ Il periodo di tempo predefinito è 12 secondi. Se il codice è archiviato in Team Foundation Server, è possibile modificarlo eseguendo il [comando TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) con il [comando CodeIndex](../ide/codeindex-command.md) e il flag **/indexHistoryPeriod** .  
   
  Per visualizzare una cronologia dettagliata di tutte le modifiche, comprese quelle di più di un anno fa, scegliere **Mostra tutte le modifiche apportate ai file**.  
   
@@ -222,7 +222,7 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
   
 - Assicurarsi che CodeLens sia attivato. Passare a **Strumenti**, **Opzioni**, **Editor di testo**, **Tutti i linguaggi**, **CodeLens**.  
   
-- Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Se il codice è archiviato in TFS, assicurarsi che l'indicizzazione del codice sia attivata usando il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
 - Gli indicatori TFS vengono visualizzati solo quando gli elementi di lavoro sono collegati al codice e quando si dispone delle autorizzazioni per aprire gli elementi di lavoro collegati. [Confermare di disporre delle autorizzazioni dei membri del team.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ CodeLens consente di rimanere concentrati sulle proprie attività mentre si cerc
  **R:** Il **versione locale** freccia punti dell'insieme di modifiche più recenti nella versione locale di questo file. Quando il server ha insiemi di modifiche più recenti, vengono visualizzati sopra o sotto la freccia **Versione locale** , a seconda dell'ordine usato per ordinare gli insiemi di modifiche.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>D: è possibile gestire la modalità di elaborazione del codice in CodeLens per visualizzare la cronologia e gli elementi collegati?  
- **R:** Sì, se il codice è disponibile in TFS, usare il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **R:** Sì, se il codice è disponibile in TFS, usare il [comando CodeIndex](../ide/codeindex-command.md) con il [comando Config di TFS](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

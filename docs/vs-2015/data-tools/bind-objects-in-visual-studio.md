@@ -19,14 +19,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683158"
 ---
-# <a name="bind-objects-in-visual-studio"></a>Associare gli oggetti in Visual Studio
+# <a name="bind-objects-in-visual-studio"></a>Associare oggetti in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio offre gli strumenti di progettazione per l'utilizzo di oggetti personalizzati come origine dei dati nell'applicazione. Quando si desidera archiviare i dati da un database in un oggetto che si associa ai controlli dell'interfaccia utente, l'approccio consigliato è usare Entity Framework per generare le classi. Entità Frameworkautogenerates tutto il rilevamento delle modifiche codice boilerplate, il che significa che tutte le modifiche agli oggetti locali vengono rese automaticamente persistenti nel database quando si chiama AcceptChanges sull'oggetto DbSet.    Per altre informazioni, vedere [documentazione di Entity Framework](https://ef.readthedocs.org/en/latest/).
@@ -55,7 +55,7 @@ Visual Studio offre gli strumenti di progettazione per l'utilizzo di oggetti per
 - Salvataggio dei dati dagli oggetti nel database.
 
 > [!NOTE]
-> Per meglio comprendere e fornire il contesto per gli esempi in questa pagina, si consiglia di completare la seguente: [Procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tale procedura dettagliata crea gli oggetti illustrati di seguito.
+> Per meglio comprendere e fornire il contesto per gli esempi in questa pagina, si consiglia di completare la seguente: [Procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Tale procedura dettagliata crea gli oggetti illustrati di seguito.
 
 ### <a name="loaddata-into-objects"></a>LoadData in oggetti
  Per questo esempio, caricare dati in oggetti usando oggetti TableAdapter. Per impostazione predefinita, vengono creati oggetti TableAdapter con due tipi di metodi per recupero i dati da un database e popolano le tabelle di dati.
@@ -75,7 +75,7 @@ Visual Studio offre gli strumenti di progettazione per l'utilizzo di oggetti per
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Creare un insieme di oggetti tipizzati
- È possibile creare classi di raccolta per gli oggetti o usare le raccolte tipizzate vengono automaticamente fornite per il [componente BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ È possibile creare classi di raccolta per gli oggetti o usare le raccolte tipizzate vengono automaticamente fornite per il [componente BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Quando si crea una classe di raccolta personalizzato per gli oggetti, si consiglia di ereditare da <xref:System.ComponentModel.BindingList%601>. Questa classe generica fornisce funzionalità per gestire la raccolta, nonché la possibilità di generare eventi che inviano notifiche all'infrastruttura di data binding in Windows Form.
 
@@ -92,9 +92,9 @@ Visual Studio offre gli strumenti di progettazione per l'utilizzo di oggetti per
 ### <a name="addobjects-to-a-collection"></a>Addobjects a una raccolta
  Per aggiungere oggetti a una raccolta, chiamare il `Add` metodo di una classe di insiemi personalizzati o del <xref:System.Windows.Forms.BindingSource>.
 
- Per un esempio di aggiunta a una raccolta usando un <xref:System.Windows.Forms.BindingSource>, vedere la `LoadCustomers` metodo [procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Per un esempio di aggiunta a una raccolta usando un <xref:System.Windows.Forms.BindingSource>, vedere la `LoadCustomers` metodo [procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Per un esempio di aggiunta di oggetti in una raccolta personalizzata, vedere la `LoadOrders` metodo [procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Per un esempio di aggiunta di oggetti in una raccolta personalizzata, vedere la `LoadOrders` metodo [procedura dettagliata: La connessione ai dati negli oggetti (Windows Form)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > Il `Add` metodo viene fornito automaticamente per la raccolta personalizzata quando si eredita da <xref:System.ComponentModel.BindingList%601>.

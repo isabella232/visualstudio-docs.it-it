@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686938"
 ---
 # <a name="extending-the-toolbox"></a>Estensione della casella degli strumenti
 La [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **di** fornisce una raccolta di oggetti che offrono funzionalità agli editor e ai designer tramite il meccanismo di trascinamento della selezione dell'IDE.  
@@ -37,10 +37,10 @@ La [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **di** fornisce una raccolta di 
  Descrive in che modo un pacchetto VSPackage può gestire il contenuto e l'aspetto della **casella degli strumenti**.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura: Gestire la finestra Casella degli strumenti](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [Procedura: gestire la finestra Casella degli strumenti](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  Descrive come usare la **casella degli strumenti** nell'IDE (Integrated Development Environment) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
- [Procedura: Controllo della casella degli strumenti](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [Procedura: Controllo della casella degli strumenti](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Descrive come gestire la **casella degli strumenti** usando il modello di programmazione di automazione.  
   
  [Estensione di altre parti di Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

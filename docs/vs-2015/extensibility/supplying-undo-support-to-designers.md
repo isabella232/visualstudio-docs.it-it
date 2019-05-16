@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675346"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Aggiunta del supporto dell'annullamento alle finestre di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Finestre di progettazione, come editor, in genere necessario supportare le opera
   
 - Persistenza forniture e CodeDOM supportano implementando il <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e il <xref:System.ComponentModel.Design.IComponentChangeService> classi.  
   
-  Per altre informazioni su come scrivere le finestre di progettazione utilizzando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], vedere [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Per altre informazioni su come scrivere le finestre di progettazione utilizzando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], vedere [Extending Design-Time Support](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce un'infrastruttura di annullamento predefinito per:  
   
@@ -45,7 +45,7 @@ Finestre di progettazione, come editor, in genere necessario supportare le opera
   
 - Usa la generazione di codice standard basato su CodeDOM e sistema di analisi per la persistenza e la generazione di codice.  
   
-     Per altre informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [Dynamic Source Code Generation and Compilation](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Per altre informazioni sull'uso di supporto di Visual Studio CodeDOM, vedere [Dynamic Source Code Generation and Compilation](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usare il supporto di annullamento della finestra di progettazione esplicita  
  Finestre di progettazione è necessario fornire le proprie gestione dell'annullamento se usano un'interfaccia utente grafica, definita come un adattatore della visualizzazione, diverso da quello fornito da <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Finestre di progettazione, come editor, in genere necessario supportare le opera
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Estensione del supporto in fase di progettazione](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Estensione del supporto in fase di progettazione](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

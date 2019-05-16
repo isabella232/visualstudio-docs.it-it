@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705891"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Uso di membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Attributi usati per stabilire un ordine di chiamata
- Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [Anatomia di un unit test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Un elemento di codice decorato con uno degli attributi seguenti viene chiamato nel momento specificato. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Per gli assembly
  AssemblyInitialize e AssemblyCleanup vengono chiamati subito dopo il caricamento e subito prima dello scaricamento dell'assembly.
@@ -64,7 +64,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Attributi usati per identificare classi e metodi di test
- Ogni classe di test deve avere l'attributo TestClass e ogni metodo di test deve avere l'attributo TestMethod. Per altre informazioni, vedere [Anatomia di un unit test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Ogni classe di test deve avere l'attributo TestClass e ogni metodo di test deve avere l'attributo TestMethod. Per altre informazioni, vedere [Anatomia di un unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ Il framework di unit test supporta gli unit test in [!INCLUDE[vsprvs](../include
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Classi usate con funzioni di accesso private
- Come descritto in [Utilizzo di Publicize per creare una funzione di accesso privata](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), è possibile generare uno unit test per un metodo privato. Questa generazione crea una classe di funzioni di accesso private, che crea un'istanza di un oggetto della classe PrivateObject. La classe PrivateObject è una classe wrapper che usa la reflection come parte del processo della funzione di accesso privata. La classe PrivateType è simile, ma viene usata per chiamare metodi statici privati anziché metodi di istanza privata.
+ Come descritto in [Utilizzo di Publicize per creare una funzione di accesso privata](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), è possibile generare uno unit test per un metodo privato. Questa generazione crea una classe di funzioni di accesso private, che crea un'istanza di un oggetto della classe PrivateObject. La classe PrivateObject è una classe wrapper che usa la reflection come parte del processo della funzione di accesso privata. La classe PrivateType è simile, ma viene usata per chiamare metodi statici privati anziché metodi di istanza privata.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

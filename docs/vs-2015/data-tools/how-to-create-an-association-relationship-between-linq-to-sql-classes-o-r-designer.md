@@ -9,14 +9,14 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0907370ae8ad3c0d5e6b5ebc3c8bcab842474249
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684785"
 ---
-# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione (relazione) tra classi LINQ to SQL (O/R Designer)
+# <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedura: Creare un'associazione (relazione) tra classi LINQ to SQL (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] sono analoghe alle relazioni tra tabelle in un database. È possibile creare associazioni tra classi di entità usando la finestra di dialogo **Editor di associazione**.  
@@ -50,7 +50,7 @@ Le associazioni tra classi di entità in [!INCLUDE[vbtecdlinq](../includes/vbtec
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Procedura dettagliata: Creazione di classi LINQ to SQL (O-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Procedura: Rappresentare le chiavi primarie](http://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)
+ [Procedura: Rappresentare le chiavi primarie](https://msdn.microsoft.com/library/63c65289-6539-42b2-8493-891c232018fa)

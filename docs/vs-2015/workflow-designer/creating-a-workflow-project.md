@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976979"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704719"
 ---
 # <a name="creating-a-workflow-project"></a>Creazione di un progetto flusso di lavoro
 Grazie ai modelli di progetto di [!INCLUDE[indigo1](../includes/indigo1-md.md)] è possibile creare flussi di lavoro, servizi flusso di lavoro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], attività personalizzate e ActivityDesigner personalizzati. Questa sezione descrive come creare librerie e applicazioni con i modelli di progetto disponibili in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ Grazie ai modelli di progetto di [!INCLUDE[indigo1](../includes/indigo1-md.md)] 
  Viene descritto come aggiungere a un progetto flusso di lavoro esistente ulteriori attività del flusso di lavoro o finestre di progettazione e altri elementi [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], quali le attività del codice.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Progettazione di flussi di lavoro](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Progettazione di flussi di lavoro](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di Progettazione flussi di lavoro](../workflow-designer/using-the-workflow-designer.md)

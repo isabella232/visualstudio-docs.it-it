@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb4e07f90f3a05f61957898c579b9a70da6e5ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 58c06c67daef727db91fa42c7ee8ce97ff183f38
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039227"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685460"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedura: Salvare e aprire file con codifica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,5 +59,5 @@ ms.locfileid: "60039227"
 3. Seguire i passaggi 2 e 3 della procedura precedente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Globalizzazione di Windows Form e codifica](http://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
+ [Globalizzazione di Windows Form e codifica](https://msdn.microsoft.com/library/22e8965d-a712-42b3-8167-3ee346bd70f9)   
  [Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md)

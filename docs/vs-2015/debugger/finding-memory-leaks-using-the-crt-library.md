@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969939"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682429"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Individuazione di perdite di memoria tramite la libreria CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
   
  Affinché le funzioni CRT funzionino correttamente, le istruzioni `#include` devono seguire l'ordine qui indicato.  
   
- Includendo crtdbg.h, si esegue il mapping delle funzioni `malloc` e [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) alle corrispondenti versioni di debug, [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, che consentono di tenere traccia dell'allocazione e della deallocazione della memoria. Questa operazione di mapping viene eseguita solo nelle build di debug che presentano `_DEBUG`. Le build di rilascio usano le normali funzioni `malloc` e `free` .  
+ Includendo crtdbg.h, si esegue il mapping delle funzioni `malloc` e [free](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) alle corrispondenti versioni di debug, [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, che consentono di tenere traccia dell'allocazione e della deallocazione della memoria. Questa operazione di mapping viene eseguita solo nelle build di debug che presentano `_DEBUG`. Le build di rilascio usano le normali funzioni `malloc` e `free` .  
   
  L'istruzione `#define` esegue il mapping di una versione di base delle funzioni di heap CRT alla corrispondente versione di debug. Se si omette l'istruzione `#define` , il dump della perdita di memoria sarà meno dettagliato.  
   
@@ -67,7 +67,7 @@ Uno dei bug più gravi e difficili da rilevare nelle applicazioni C/C++ è rappr
 _CrtDumpMemoryLeaks();  
 ```  
   
- Se l'applicazione presenta più uscite, non è necessario effettuare manualmente una chiamata a [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) a ogni punto di uscita. Una chiamata a `_CrtSetDbgFlag` all'inizio dell'applicazione determina una chiamata automatica a `_CrtDumpMemoryLeaks` a ogni punto di uscita. È necessario impostare i due campi di bit indicati di seguito:  
+ Se l'applicazione presenta più uscite, non è necessario effettuare manualmente una chiamata a [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) a ogni punto di uscita. Una chiamata a `_CrtSetDbgFlag` all'inizio dell'applicazione determina una chiamata automatica a `_CrtDumpMemoryLeaks` a ogni punto di uscita. È necessario impostare i due campi di bit indicati di seguito:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretazione del report delle perdite di memoria  
- Se `_CRTDBG_MAP_ALLOC`non viene definito, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) visualizza un report delle perdite di memoria simile al seguente:  
+ Se `_CRTDBG_MAP_ALLOC`non viene definito, [_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) visualizza un report delle perdite di memoria simile al seguente:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - Numero di allocazione della memoria, che in questo esempio è `18`  
   
-- [Tipo di blocco](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
+- [Tipo di blocco](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97)che in questo esempio è `normal` .  
   
 - Posizione esadecimale della memoria che in questo esempio è `0x00780E80` .  
   

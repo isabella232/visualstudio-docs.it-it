@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681443"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificare lo stile degli oggetti in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ Il modo più semplice per personalizzare un oggetto consiste nell'impostare le p
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [creare uno stile](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Applicare uno stile o un modello a un controllo  
- Fare clic con il pulsante destro del mouse su un oggetto nel pannello [Oggetti e sequenza temporale](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), scegliere **Modifica modello** e quindi **Applica risorsa**.  
+ Fare clic con il pulsante destro del mouse su un oggetto nel pannello [Oggetti e sequenza temporale](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), scegliere **Modifica modello** e quindi **Applica risorsa**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Ripristinare lo stile o il modello predefinito di un controllo  
- Selezionare il controllo e nel pannello [Proprietà](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) individuare la proprietà **Stile** o **Modello**. Fare clic su **Opzioni avanzate** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e quindi su **Reimposta** nel menu di scelta rapida.  
+ Selezionare il controllo e nel pannello [Proprietà](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57) individuare la proprietà **Stile** o **Modello**. Fare clic su **Opzioni avanzate** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e quindi su **Reimposta** nel menu di scelta rapida.  
   
 ## <a name="Visual"></a> Stati di visualizzazione: modificare l'aspetto di un controllo in base al relativo stato  
  L'aspetto visivo dei controlli può essere diverso in base alle interazioni dell'utente. Ad esempio, è possibile impostare un pulsante in modo che diventi verde quando un utente lo seleziona oppure fare in modo che venga eseguita un'animazione. Per abbreviare o prolungare l'intervallo tra gli stati visivi, si possono usare le transizioni.  

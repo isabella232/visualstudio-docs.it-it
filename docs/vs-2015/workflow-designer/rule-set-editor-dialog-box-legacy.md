@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703203"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Finestra di dialogo Editor set di regole (legacy)
 Questo argomento viene descritto come usare il **Editor Set di regole** nella finestra di dialogo legacy [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Questo argomento viene descritto come usare il **Editor Set di regole** nella fi
   
   La precedenza di operatori dell’espressione segue le regole di precedenza dell’operatore C#.  
   
-  Per altre informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Per altre informazioni sulle condizioni, vedere [utilizzo delle condizioni nei flussi di lavoro](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Funzioni Halt e Aggiorna  
  **Azioni Then:** e **azioni Else:** espressioni supportano **Halt** e **Update** funzioni. Usare il **Halt** di funzione, digitare **Halt** in un **azione Then:** oppure **azione Else:** casella di testo. Il **Halt** azione causa l'esecuzione di set di regole arrestare immediatamente, e il controllo ritorna al codice chiamante. Si utilizza il **Update** funzione con il concatenamento in avanti.  

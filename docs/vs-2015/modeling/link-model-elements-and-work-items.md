@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674226"
 ---
 # <a name="link-model-elements-and-work-items"></a>Collegare elementi di modello ed elementi di lavoro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ ms.locfileid: "63440940"
 1. In **Team Explorer**verificare di essere connessi al progetto team in cui gli elementi del modello sono collegati all'elemento di lavoro.  
   
     > [!NOTE]
-    > Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Per visualizzare gli elementi del modello collegati, è possibile usare solo Team Explorer, non Team Web Access. Verificare che l'area di lavoro venga mappata al progetto di modello contenente gli elementi o i diagrammi di modellazione. Se non si dispone di un'area di lavoro, è necessario crearla. Vedere [Risoluzione dei problemi](#Troubleshooting) e [Creare e usare aree di lavoro](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Aprire l'elemento di lavoro e scegliere **Collegamenti**. In **Collegamento modello**aprire il menu di scelta rapida per l'elemento del modello collegato. Scegliere **Apri elemento collegato**.  
   
@@ -168,7 +168,7 @@ ms.locfileid: "63440940"
   
 |**Problema**|**Possibile causa**|**Risoluzione**|  
 |---------------|------------------------|--------------------|  
-|Impossibile trovare l'elemento del modello da collegare.|L'elemento potrebbe essere in un diagramma di un progetto di modello archiviato nel [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Potrebbe non essere presente un'area di lavoro mappata al diagramma.|Eseguire il mapping dell'area di lavoro al progetto di modello e al diagramma. Se non è presente un'area di lavoro, è necessario crearla.<br /><br /> Il messaggio di errore visualizzato per questo problema contiene il percorso che è possibile usare per eseguire il mapping dell'area di lavoro.<br /><br /> Vedere [Creare e usare aree di lavoro](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Impossibile trovare l'elemento del modello da collegare.|L'elemento potrebbe essere in un diagramma di un progetto di modello archiviato nel [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Potrebbe non essere presente un'area di lavoro mappata al diagramma.|Eseguire il mapping dell'area di lavoro al progetto di modello e al diagramma. Se non è presente un'area di lavoro, è necessario crearla.<br /><br /> Il messaggio di errore visualizzato per questo problema contiene il percorso che è possibile usare per eseguire il mapping dell'area di lavoro.<br /><br /> Vedere [Creare e usare aree di lavoro](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Impossibile trovare l'elemento del modello collegato.|L'elemento collegato potrebbe essere in un diagramma che è stato spostato, rinominato o eliminato.|1.  Nell'elemento di lavoro, eliminare il collegamento all'elemento del modello.<br />2.  Creare un nuovo collegamento dall'elemento di lavoro all'elemento del modello.|  
 |All'elemento di lavoro non sono associati gli elementi del modello collegato previsti.|Un elemento di lavoro mostra un elemento livello collegato solo se il collegamento è stato creato dall'elemento di lavoro. Se il team non usa il [!INCLUDE[esprscc](../includes/esprscc-md.md)], per creare i collegamenti verrà usato il percorso locale dei diagrammi. Se il progetto di modello e i relativi diagrammi sono nel [!INCLUDE[esprscc](../includes/esprscc-md.md)], tutti i membri del team che possono accedere al progetto potranno visualizzare gli elementi collegati negli elementi di lavoro.|Provare ad aggiornare l'elemento di lavoro.|  
 |L'eliminazione di un collegamento a un elemento del modello da un elemento di lavoro non elimina il collegamento dall'elemento del modello all'elemento di lavoro.||Eliminare il collegamento all'elemento di lavoro a partire dall'elemento del modello.|  

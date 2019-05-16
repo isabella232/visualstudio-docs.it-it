@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686045"
 ---
 # <a name="rename-refactoring-c"></a>Refactoring di ridenominazione (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439951"
 |-----------------|----------------------|  
 |Campo|Modifica la dichiarazione e gli utilizzi del campo per il nuovo nome.|  
 |variabile locale|Modifica la dichiarazione e gli utilizzi della variabile per il nuovo nome.|  
-|Metodo|Modifica il nome del metodo e tutti i riferimenti a tale metodo per il nuovo nome. **Nota:**  Quando si rinomina un metodo di estensione, l'operazione di ridenominazione verrà propagata a tutte le istanze del metodo che rientrano nell'ambito, indipendentemente dal fatto se il metodo di estensione viene usato come metodo statico o un metodo di istanza. Per altre informazioni, vedere [Metodi di estensione](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Metodo|Modifica il nome del metodo e tutti i riferimenti a tale metodo per il nuovo nome. **Nota:**  Quando si rinomina un metodo di estensione, l'operazione di ridenominazione verrà propagata a tutte le istanze del metodo che rientrano nell'ambito, indipendentemente dal fatto se il metodo di estensione viene usato come metodo statico o un metodo di istanza. Per altre informazioni, vedere [Metodi di estensione](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Spazio dei nomi|Modifica il nome dello spazio dei nomi per il nuovo nome nella dichiarazione, tutte le `using` istruzioni e i nomi completi. **Nota:**  Quando si rinomina uno spazio dei nomi, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aggiorna anche il **Default Namespace** proprietà il **applicazione** pagina del **Progettazione progetti**. Questa proprietà non può essere reimpostata selezionando **Undo** dalle **modificare** menu. Per reimpostare il **Namespace predefinito** valore della proprietà, è necessario modificare la proprietà nel **creazione progetti**. Per altre informazioni, vedere [pagina dell'applicazione](../ide/reference/application-page-project-designer-csharp.md).|  
 |Proprietà|Modifica la dichiarazione e gli utilizzi della proprietà per il nuovo nome.|  
 |Tipo|Modifica tutte le dichiarazioni e tutti gli utilizzi del tipo per il nuovo nome, inclusi costruttori e distruttori. Per i tipi parziali, l'operazione di ridenominazione verrà propagate a tutte le parti.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Vedere anche  
  [Refactoring (C#)](../csharp-ide/refactoring-csharp.md)   
- [Tipi anonimi](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Tipi anonimi](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

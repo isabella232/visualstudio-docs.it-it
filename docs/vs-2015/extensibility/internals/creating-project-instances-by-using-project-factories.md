@@ -11,12 +11,12 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b33d5d1a09425a18f0c9489b15147e3355e45c99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f26b11aaf74b73535c82ebcd6422f3be0bba3f22
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965817"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697209"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Creazione di istanze di progetto tramite le factory di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano un *fa
   
  È possibile implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaccia in una classe nel progetto. In genere, si trova in un proprio modulo.  
   
- Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere PrjFac.cpp contenuta nel [progetto base](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directory degli esempi.  
+ Per un esempio di un'implementazione del `IVsProjectFactory` l'interfaccia, vedere PrjFac.cpp contenuta nel [progetto base](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) directory degli esempi.  
   
  I progetti che supportano l'aggregazione da un proprietario devono mantenere una chiave del proprietario nel relativo file di progetto. Quando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metodo viene chiamato su un progetto con una chiave del proprietario, il progetto di proprietà converte la chiave del proprietario in una factory progetto GUID chiama quindi il `CreateProject` metodo factory del progetto per eseguire la creazione effettiva.  
   
@@ -52,4 +52,4 @@ Tipi di progetto in [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usano un *fa
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>   
- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)
+ [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)

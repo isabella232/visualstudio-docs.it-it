@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116745"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680898"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactoring Estrai interfaccia (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Estrai interfaccia è un'operazione di refactoring che fornisce un modo semplice per creare una nuova interfaccia con i membri che hanno origine da una classe esistente, struct o interfaccia.  
   
- Quando i client diversi utilizzano lo stesso subset di membri di una classe, struct o interfaccia oppure quando più classi, struct o interfacce hanno un subset di membri in comune, può essere utile incarnare i subset di membri in un'interfaccia. Per altre informazioni sull'uso di interfacce, vedere [interfacce](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Quando i client diversi utilizzano lo stesso subset di membri di una classe, struct o interfaccia oppure quando più classi, struct o interfacce hanno un subset di membri in comune, può essere utile incarnare i subset di membri in un'interfaccia. Per altre informazioni sull'uso di interfacce, vedere [interfacce](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Estrai interfaccia consente di generare un'interfaccia in un nuovo file e posiziona il cursore all'inizio del nuovo file. È possibile specificare i membri da estrarre nella nuova interfaccia, il nome della nuova interfaccia e il nome del file generato usando il **Estrai interfaccia** nella finestra di dialogo.  
   

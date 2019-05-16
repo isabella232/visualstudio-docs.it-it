@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: b84292e35fd07a7ab3d47c36a6a6c7a79224c201
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842874"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698147"
 ---
 # <a name="visual-studio-samples"></a>Esempi di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,17 +28,17 @@ ms.locfileid: "56842874"
 ## <a name="finding-samples"></a>Ricerca di esempi
  Di seguito sono riportati alcuni altri percorsi in cui cercare esempi.
 
-|Area|Description|
+|Area|Descrizione|
 |----------|-----------------|
 |[Esempi di Windows Dev Center](http://go.microsoft.com/fwlink/?LinkID=255278)|Illustra come sviluppare app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
-|[Esempi di .NET Framework](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Illustra i vari aspetti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# e Visual Basic.|
+|[Esempi di .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Illustra i vari aspetti di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] in C# e Visual Basic.|
 |[Esempi di C#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Illustra come usare diverse funzionalità di C#.|
 |[Esempi di Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Illustra come usare diverse funzionalità di Visual Basic.|
 |[Esempi di F#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=F%23&f%5B0%5D.Text=F%23)|Illustra come usare diverse funzionalità di F#.|
 |[Esempi di JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Illustra come usare diverse funzionalità in JavaScript.|
 |[Esempi di C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Illustra come usare diverse funzionalità in C++.|
 |[Esempi di DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Illustra come usare DirectX.|
-|[Esempi di sviluppo Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Illustra come usare gli strumenti di sviluppo di Office in Visual Studio. Per gli esempi più aggiornati, vedere [Esempi per sviluppatori MSDN: informazioni sul codice](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Esempi di sviluppo Office](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Illustra come usare gli strumenti di sviluppo di Office in Visual Studio. Per gli esempi più aggiornati, vedere [esempi per sviluppatori MSDN: Impara attraverso il codice](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Esempi di VSSDK](https://aka.ms/vs2015sdksamples)|Illustra come estendere Visual Studio.|
 
 ## <a name="see-also"></a>Vedere anche

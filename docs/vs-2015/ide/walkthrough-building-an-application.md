@@ -9,14 +9,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045473"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698271"
 ---
-# <a name="walkthrough-building-an-application"></a>Procedura dettagliata: Compilazione di un'applicazione
+# <a name="walkthrough-building-an-application"></a>Procedura dettagliata: Creazione di un'applicazione
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
@@ -78,7 +78,7 @@ Usare la finestra di dialogo **Estensioni e aggiornamenti** per trovare e instal
 
 ## <a name="BKMK_CreateBuildConfig"></a> Creare una configurazione della build personalizzata
 
-Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) ed [Eseguire il debug e il rilascio delle configurazioni del progetto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Quando si crea una soluzione, le configurazioni della build di versione e di debug e le relative destinazioni della piattaforma predefinite sono definite automaticamente per la soluzione. È quindi possibile personalizzare queste configurazioni o crearne di proprie. Le configurazioni della build specificano il tipo di compilazione. Le piattaforme di compilazione specificano il sistema operativo a cui è rivolta un'applicazione per la configurazione. Per altre informazioni, vedere [Informazioni sulle configurazioni della build](../ide/understanding-build-configurations.md), [Informazioni sulle piattaforme di compilazione](../ide/understanding-build-platforms.md) ed [Eseguire il debug e il rilascio delle configurazioni del progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 È possibile modificare o creare configurazioni e impostazioni piattaforma usando la finestra di dialogo **Gestione configurazione**. In questa procedura si creerà una configurazione della build per il test.
 
@@ -197,9 +197,9 @@ Successivamente verrà creata la soluzione con la configurazione della build per
 
     Le informazioni sulla compilazione includono l'ora di inizio della compilazione (indicata all'inizio), l'ordine in cui i file sono stati elaborati e la quantità di tempo impiegato per completare il processo (indicata alla fine). Queste informazioni includono anche la sintassi del compilatore effettiva che Visual Studio esegue durante la compilazione.
 
-    Ad esempio, nella compilazione di Visual C#, l'opzione [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) elenca il codice di avviso, 1762, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
+    Ad esempio, nella compilazione di Visual C#, l'opzione [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) elenca il codice di avviso, 1762, specificato in precedenza in questo argomento, insieme ad altri tre avvisi.
 
-    Nella compilazione di Visual Basic [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
+    Nella compilazione di Visual Basic [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) non include avvisi specifici da escludere, pertanto non viene visualizzato alcun avviso.
 
    > [!TIP]
    > È possibile cercare il contenuto della finestra **Output** se si visualizza la finestra di dialogo **Trova** scegliendo i tasti CTRL+F.
@@ -264,6 +264,6 @@ Per altre informazioni, vedere [Procedura: Modificare la Directory di Output di 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Procedura dettagliata: Compilazione di un progetto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Procedura dettagliata: Compilazione di un progetto (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Panoramica della precompilazione del progetto di applicazione Web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md)

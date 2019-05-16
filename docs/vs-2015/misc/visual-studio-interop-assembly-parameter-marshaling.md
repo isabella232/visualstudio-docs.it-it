@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436520"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686921"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshalling dei parametri degli assembly di interoperabilità di Visual Studio
-Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere necessario chiamare o essere chiamato da codice COM non gestito. In genere, gli argomenti del metodo vengono trasformati o sottoposto a marshalling, automaticamente per il marshalling di interoperabilità. Tuttavia, talvolta argomenti non è possibile trasformare in modo semplice. In questi casi, vengono utilizzati i parametri del prototipo metodo assembly di interoperabilità corrispondente ai parametri di funzione COM fedelmente possibile. Per altre informazioni, vedere [marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Pacchetti VSPackage che vengono scritti in codice gestito potrebbero essere necessario chiamare o essere chiamato da codice COM non gestito. In genere, gli argomenti del metodo vengono trasformati o sottoposto a marshalling, automaticamente per il marshalling di interoperabilità. Tuttavia, talvolta argomenti non è possibile trasformare in modo semplice. In questi casi, vengono utilizzati i parametri del prototipo metodo assembly di interoperabilità corrispondente ai parametri di funzione COM fedelmente possibile. Per altre informazioni, vedere [marshalling di interoperabilità](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Suggerimenti generali  
   
@@ -123,7 +123,7 @@ else
  Metodi gestiti che chiamano le interfacce di questo tipo devono inserire il primo elemento all'esterno della matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia COM corrispondente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Marshalling di interoperabilità](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Marshalling di interoperabilità](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Risoluzione dei problemi di interoperabilità](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Marshalling di interoperabilità](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshalling di interoperabilità](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Risoluzione dei problemi di interoperabilità](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackage gestiti](../misc/managed-vspackages.md)

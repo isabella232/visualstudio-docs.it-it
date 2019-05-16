@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c57a9ce2b5a1ce9de0ffadb4b623ef3a33b8e9ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a29ba026f9b3c2b8839d474c2d0833eb79f7ffd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965090"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683291"
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avviso di sicurezza: Il debugger deve eseguire un comando non attendibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Questa finestra di dialogo di avviso viene visualizzata quando si usa il server 
 ## <a name="see-also"></a>Vedere anche  
  [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Server di origine](http://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)
+ [Server di origine](https://msdn.microsoft.com/library/windows/desktop/ms680641\(v=vs.85\).aspx)

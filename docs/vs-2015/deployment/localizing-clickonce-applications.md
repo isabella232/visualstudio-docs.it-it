@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680011"
 ---
 # <a name="localizing-clickonce-applications"></a>Localizzazione delle applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
  Il vantaggio di questo approccio è dato dalla possibilità di creare un'unica distribuzione e di semplificare il processo della distribuzione localizzata. In fase di esecuzione verrà usato l'assembly satellite appropriato, a seconda delle impostazioni cultura predefinite del sistema operativo Windows dell'utente. L'inconveniente di questo approccio riguarda il fatto che, ogni volta che l'applicazione viene installata o aggiornata in un computer client, vengono scaricati tutti gli assembly satellite. Se nell'applicazione è contenuto un numero elevato di stringhe o i clienti hanno una connessione di rete lenta, questo processo può influire sulle prestazioni durante l'aggiornamento dell'applicazione.  
   
 > [!NOTE]
-> Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [come: Supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Con questo approccio si presuppone che l'applicazione regoli automaticamente l'altezza, la larghezza e la posizione dei controlli per adattare dimensioni diverse delle stringhe di testo nelle varie impostazioni cultura. In Windows Form è disponibile un'ampia gamma di controlli e tecnologie che consentono di progettare il form in modo da facilitarne la localizzazione, inclusi i controlli <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> e la proprietà <xref:System.Windows.Forms.Control.AutoSize%2A>.  Vedere anche [come: Supportare la localizzazione in Windows Form usando AutoSize e il controllo TableLayoutPanel](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Generare una distribuzione per le singole impostazioni cultura  
  In questa strategia di distribuzione vengono generate più distribuzioni. In ogni distribuzione viene incluso solo l'assembly satellite necessario per impostazioni cultura specifiche e la distribuzione viene contrassegnata come specifica di tali impostazioni cultura.  
@@ -70,7 +70,7 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
   
  Il download degli assembly satellite su richiesta differisce leggermente dal download degli altri tipi di assembly su richiesta. Per altre informazioni ed esempi di codice su come abilitare questo scenario mediante il [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] degli strumenti per [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vedere [procedura dettagliata: Download di assembly Satellite su richiesta con l'API della distribuzione ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Questo scenario può essere attivato anche in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Vedere anche [procedura dettagliata: Download di assembly Satellite su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) o [procedura dettagliata: Download di assembly Satellite su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Questo scenario può essere attivato anche in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Vedere anche [procedura dettagliata: Download di assembly Satellite su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) o [procedura dettagliata: Download di assembly Satellite su richiesta con l'API usando la finestra di progettazione della distribuzione ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Verifica delle applicazioni ClickOnce localizzate prima della distribuzione  
  Un assembly satellite verrà usato per un'applicazione Windows Forms solo se la proprietà <xref:System.Threading.Thread.CurrentUICulture%2A> per il thread principale dell'applicazione è impostata sulle impostazioni cultura dell'assembly satellite. È probabile che i clienti nei mercati locali eseguano già una versione localizzata di Windows con il valore predefinito appropriato specificato per le impostazioni cultura.  
@@ -84,4 +84,4 @@ La localizzazione è il processo di adattamento di un'applicazione a impostazion
 ## <a name="see-also"></a>Vedere anche  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Globalizzazione di Windows Form](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [Globalizzazione di Windows Form](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

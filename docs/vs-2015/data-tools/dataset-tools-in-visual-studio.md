@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697913"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ NOTA]
 
  Un oggetto set di dati è un oggetto in memoria che è fondamentalmente un mini-database. Contiene gli oggetti DataTable e DataColumn DataRow in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, in modo che gli aggiornamenti possono essere rilevati e inviati nuovamente al database quando l'applicazione verrà riconnessa.
 
- I set di dati e le classi correlate sono definite nello spazio dei nomi System. Data nella libreria di classi .NET Framework. È possibile creare e modificare i set di dati in modo dinamico nel codice. Per altre informazioni su come eseguire questa operazione, vedere ADO.NET. La documentazione in questa sezione viene illustrato come utilizzare i set di dati tramite le finestre di progettazione di Visual Studio. Una cosa da sapere: set di dati che vengono effettuate tramite le finestre di progettazione usano oggetti TableAdapter per interagire con il database, mentre i set di dati che vengono apportate a livello di codice usano gli oggetti DataAdapter. Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapter e DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
+ I set di dati e le classi correlate sono definite nello spazio dei nomi System. Data nella libreria di classi .NET Framework. È possibile creare e modificare i set di dati in modo dinamico nel codice. Per altre informazioni su come eseguire questa operazione, vedere ADO.NET. La documentazione in questa sezione viene illustrato come utilizzare i set di dati tramite le finestre di progettazione di Visual Studio. Una cosa da sapere: set di dati che vengono effettuate tramite le finestre di progettazione usano oggetti TableAdapter per interagire con il database, mentre i set di dati che vengono apportate a livello di codice usano gli oggetti DataAdapter. Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapter e DataReader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
 
  Se l'applicazione deve solo leggere i dati da un database e non eseguire gli aggiornamenti, aggiunge o Elimina, è possibile ottenere prestazioni migliori in genere tramite un oggetto DataReader per recuperare dati in un oggetto List generico o un altro oggetto della raccolta. Se si visualizzano i dati, è possibile associare l'interfaccia utente alla raccolta.
 
@@ -89,7 +89,7 @@ NOTA]
 
     - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 
-- Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Abilita [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Abilita [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Usare la **Zdroje dat** finestra consente di associare i controlli dell'interfaccia utente per il set di dati o le singole colonne e per specificare quali colonne sono modificabili dall'utente. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

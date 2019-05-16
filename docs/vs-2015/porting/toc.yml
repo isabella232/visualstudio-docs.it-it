@@ -1,0 +1,8 @@
+- name: 'Portabilità, migrazione e aggiornamento dei progetti di Visual Studio'
+  items:
+    - name: 'Portabilità, migrazione e aggiornamento dei progetti di Visual Studio'
+      href: porting-migrating-and-upgrading-visual-studio-projects.md
+    - name: Aggiornare i progetti Visual C++ a Visual Studio 2015
+      href: how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md
+    - name: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio
+      href: how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md

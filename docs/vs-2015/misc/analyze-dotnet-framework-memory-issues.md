@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688580"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizzare i problemi relativi alla memoria .NET Framework
 L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite di memoria e uso non efficiente della memoria nel codice .NET. La versione minima di .NET Framework per il codice di destinazione è .NET Framework 4.5.  
@@ -47,7 +47,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
  ![Torna all'inizio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommario](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificare un problema di memoria in un'app  
- Il sintomo più evidente di problemi di memoria è individuabile nelle prestazioni dell'app, in particolare in caso di peggioramento delle prestazioni nel tempo. Anche il peggioramento delle prestazioni di altre app durante l'esecuzione dell'app specifica potrebbe indicare un problema di memoria. Se si sospetta un problema di memoria, usare uno strumento quale Gestione attività o [Windows Performance Monitor](http://technet.microsoft.com/library/cc749249.aspx) per analizzare ulteriormente il problema. Una possibile origine della perdita di memoria potrebbe essere, ad esempio, un incremento inspiegabile nella dimensione totale della memoria:  
+ Il sintomo più evidente di problemi di memoria è individuabile nelle prestazioni dell'app, in particolare in caso di peggioramento delle prestazioni nel tempo. Anche il peggioramento delle prestazioni di altre app durante l'esecuzione dell'app specifica potrebbe indicare un problema di memoria. Se si sospetta un problema di memoria, usare uno strumento quale Gestione attività o [Windows Performance Monitor](https://technet.microsoft.com/library/cc749249.aspx) per analizzare ulteriormente il problema. Una possibile origine della perdita di memoria potrebbe essere, ad esempio, un incremento inspiegabile nella dimensione totale della memoria:  
   
  ![Aumento della memoria uniforme in Monitoraggio di risorse](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ L'analizzatore di memoria gestita di Visual Studio permette di rilevare perdite 
  ![Picchi di memoria di Resource Manager](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Raccogliere snapshot di memoria  
- Lo strumento di analisi della memoria analizza le informazioni in *file di dump* che contengono informazioni sull'heap. È possibile creare file dump in Visual Studio, oppure è possibile usare uno strumento quale [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) dalla [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Visualizzare [che cos'è un dump e come crearne uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sul blog di Visual Studio Debugger Team.  
+ Lo strumento di analisi della memoria analizza le informazioni in *file di dump* che contengono informazioni sull'heap. È possibile creare file dump in Visual Studio, oppure è possibile usare uno strumento quale [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) dalla [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Visualizzare [che cos'è un dump e come crearne uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sul blog di Visual Studio Debugger Team.  
   
 > [!NOTE]
 > La maggior parte degli strumenti può raccogliere informazioni sui file di dump con o senza dati di memoria heap completi. L'analizzatore di memoria di Visual Studio richiede informazioni complete sull'heap.  

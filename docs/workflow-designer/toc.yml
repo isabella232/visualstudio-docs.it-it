@@ -1,8 +1,8 @@
 - name: Sviluppare app con Progettazione flussi di lavoro
   items:
-    - name: Sviluppare app con Progettazione flussi di lavoro
+    - name: Panoramica e prerequisiti
       href: developing-applications-with-the-workflow-designer.md
-    - name: Creare un progetto flusso di lavoro
+    - name: Progetti di flusso di lavoro
       items:
         - name: Creare un progetto flusso di lavoro
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: ActivityDesigner
       items:
-        - name: ActivityDesigner
-          href: using-the-activity-designers.md
         - name: ActivityDesigner Flusso di controllo
           items:
-            - name: ActivityDesigner Flusso di controllo
+            - name: Panoramica e riferimenti
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: ActivityDesigner DoWhile
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: ActivityDesigner Diagramma di flusso
           items:
-            - name: ActivityDesigner Diagramma di flusso
+            - name: Panoramica e riferimenti
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: ActivityDesigner Diagramma di flusso
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: ActivityDesigner della macchina a stati
           items:
-            - name: ActivityDesigner della macchina a stati
+            - name: Panoramica e riferimenti
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: ActivityDesigner StateMachine
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: ActivityDesigner Messaggistica
           items:
-            - name: ActivityDesigner Messaggistica
+            - name: Panoramica e riferimenti
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: ActivityDesigner CorrelationScope
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: ActivityDesigner Runtime
           items:
-            - name: ActivityDesigner Runtime
+            - name: Panoramica e riferimenti
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: ActivityDesigner Persist
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: ActivityDesigner Primitive
           items:
-            - name: ActivityDesigner Primitive
+            - name: Panoramica e riferimenti
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: ActivityDesigner Assign
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: ActivityDesigner Transazione
           items:
-            - name: ActivityDesigner Transazione
+            - name: Panoramica e riferimenti
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: ActivityDesigner CancellationScope
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: ActivityDesigner Raccolta
           items:
-            - name: ActivityDesigner Raccolta
+            - name: Panoramica e riferimenti
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: Activity Designer<T> AddToCollection
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: ActivityDesigner Gestione errori
           items:
-            - name: ActivityDesigner Gestione errori
+            - name: Panoramica e riferimenti
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: ActivityDesigner Rethrow
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: ActivityDesigner Migrazione
           items:
-            - name: ActivityDesigner Migrazione
+            - name: Panoramica e riferimenti
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: ActivityDesigner Interop
               href: interop-activity-designer.md
-    - name: Flussi di lavoro di debug
+    - name: Debug
       items:
         - name: Flussi di lavoro di debug
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Scenari di debug non supportati
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Riferimenti UI
+    - name: Informazioni di riferimento per l'interfaccia utente
       items:
-        - name: Riferimenti UI
-          href: workflow-designer-ui-help.md
         - name: Finestra di dialogo Cerca e seleziona un tipo .NET
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: Finestra di dialogo Definizione di CorrelatesOn

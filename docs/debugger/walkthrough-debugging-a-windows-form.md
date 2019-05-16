@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407589"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678912"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di Windows consente di creare un'applicazione di Windows standard. È possibile completare questa procedura dettagliata usando Visual Basic, c# o C++.
@@ -165,23 +165,24 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Nel **Debug** dal menu **Avvia senza eseguire debug**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Il modulo di Windows verrà eseguito in Windows, come se si ha fatto doppio clic con il relativo file eseguibile. Non è collegato il debugger.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Nel **Debug** dal menu **Connetti a processo**. (Questo comando è disponibile in anche il **strumenti** menu.)
 
-     The **Attach to Process** dialog box appears.
+     Verrà visualizzata la finestra di dialogo **Connetti a processo** .
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. Nel **processi disponibili** riquadro, trovare il nome del processo (Walkthrough_SimpleDebug.exe) nel **processo** colonna e farvi clic sopra.
 
-5. Click the **Attach** button.
+5. Scegliere il **Attach** pulsante.
 
-6. In your Windows Form, click the one and only button.
+6. In Windows Form, fare clic su quello e solo pulsante.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Il debugger interrompe l'esecuzione del modulo Windows nel punto di interruzione.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Vedere anche
+- [Debug di codice gestito](../debugger/debugging-managed-code.md)
+- [Sicurezza del debugger](../debugger/debugger-security.md)

@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425365"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692583"
 ---
 # <a name="query-datasets"></a>Set di dati di query
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per cercare un record specifico in un set di dati, usare il metodo FindBy in DataTable, scrivere il proprio ciclo foreach su raccolta di righe della tabella o utilizzare [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Per cercare un record specifico in un set di dati, usare il metodo FindBy in DataTable, scrivere il proprio ciclo foreach su raccolta di righe della tabella o utilizzare [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Set di dati distinzione maiuscole/minuscole  
  All'interno di un set di dati, i nomi di tabella e colonna sono tra maiuscole e minuscole per impostazione predefinita, vale a dire, una tabella in un set di dati denominato "Customers" può anche essere indicata come "customers". Ciò corrisponde alle convenzioni di denominazione in molti database, tra cui SQL corrispondenza del server di SQL Server, il comportamento predefinito prevede che i nomi degli elementi di dati non possono essere rilevati solo nel caso.  
@@ -65,7 +65,7 @@ Per cercare un record specifico in un set di dati, usare il metodo FindBy in Dat
   
  È possibile usare una <xref:System.Data.DataRelation> oggetto da individuare i record correlati chiamando il <xref:System.Data.DataRow.GetChildRows%2A> metodo di un <xref:System.Data.DataRow> nella tabella padre. Questo metodo restituisce una matrice di record figlio correlati. Oppure è possibile chiamare il <xref:System.Data.DataRow.GetParentRow%2A> metodo di un <xref:System.Data.DataRow> nella tabella figlio. Questo metodo restituisce un singolo <xref:System.Data.DataRow> dalla tabella padre.  
   
- Questa pagina fornisce esempi che usano i dataset tipizzati. Per informazioni sull'esplorazione di relazioni nei dataset non tipizzati, vedere [esplorazione oggetti DataRelation](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Questa pagina fornisce esempi che usano i dataset tipizzati. Per informazioni sull'esplorazione di relazioni nei dataset non tipizzati, vedere [esplorazione oggetti DataRelation](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Se si lavora in un'applicazione Windows Form e utilizza le funzionalità di data binding per visualizzare i dati, il modulo generato da progettazione potrebbe essere fornite funzionalità sufficienti per l'applicazione. Per altre informazioni, vedere [associare controlli ai dati in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  

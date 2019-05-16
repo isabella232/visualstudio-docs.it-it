@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48a168d30cacc82f049624b22e829a9660538043
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64989ca10416ab2ad9606c94b3f3bc977f60c5ee
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421848"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702353"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se la funzione ha il [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) attributo (vale a dire, la funzione non dispone di alcun codice di prologo o epilogo aggiunti dal compilatore).  
+Recupera un flag che specifica se la funzione ha il [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) attributo (vale a dire, la funzione non dispone di alcun codice di prologo o epilogo aggiunti dal compilatore).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,4 +52,4 @@ HRESULT get_isNaked(
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [Chiamate di funzioni naked](http://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)
+ [Chiamate di funzioni naked](https://msdn.microsoft.com/library/2a66847a-a43f-4541-a7be-c9f5f29b5fdb)

@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 02f136fa0daa23484e31deab8f138a02b8a0b592
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584594"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704337"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organizzazione gerarchica di risorse per la localizzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,5 +54,5 @@ In Visual Studio, le risorse localizzate (dati come stringhe e immagini specific
  [Sicurezza e assembly satellite localizzati](../ide/security-and-localized-satellite-assemblies.md)   
  [Applicazioni localizzate](../ide/localizing-applications.md)   
  [Globalizzazione e localizzazione di applicazioni](../ide/globalizing-and-localizing-applications.md)   
- [Procedura: Impostare la lingua e impostazioni cultura dell'interfaccia utente per la globalizzazione di Windows Form](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [Procedura: Impostare la lingua e impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Procedura: Impostare la lingua e impostazioni cultura dell'interfaccia utente per la globalizzazione di Windows Form](https://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
+ [Procedura: Impostare la lingua e impostazioni cultura dell'interfaccia utente per la globalizzazione della pagina Web ASP.NET](https://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

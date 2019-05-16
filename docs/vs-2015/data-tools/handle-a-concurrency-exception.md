@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699739"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gestire un'eccezione di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 4. Inserire dati da un set di dati di `Customers` tabella nel database Northwind.  
   
-5. Usare la [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio per accedere direttamente il `Customers` dati tabella e modificare un record.  
+5. Usare la [Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio per accedere direttamente il `Customers` dati tabella e modificare un record.  
   
 6. Modificare lo stesso record su un valore diverso, aggiornare il set di dati e tentano di scrivere le modifiche al database, che comporta un errore di concorrenza.  
   
@@ -55,7 +55,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
 - Accesso al database Northwind di esempio con l'autorizzazione per eseguire gli aggiornamenti.
   
 > [!NOTE]
-> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
  Iniziare la procedura dettagliata creando una nuova applicazione Windows.  
@@ -79,7 +79,7 @@ Le eccezioni di concorrenza (<xref:System.Data.DBConcurrencyException>) vengono 
   
 1. Nel **Data** menu, scegliere **origine aggiungere nuovi dati**.  
   
-     Viene avviata la [Configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+     Viene avviata la [Configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 2. Nel **scegliere un tipo di origine dati**schermata, seleziona **Database**.  
   

@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966928"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702867"
 ---
 # <a name="exception-assistant-dialog-box"></a>Finestra di dialogo Informazioni sulle eccezioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +60,6 @@ Il **informazioni sulle eccezioni** verrà visualizzata la finestra di dialogo q
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Usare le informazioni sulle eccezioni](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [Procedura: Correggere gli errori di Run-Time con informazioni sulle eccezioni](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
- [Tipi di errore](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
+ [Usare le informazioni sulle eccezioni](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Procedura: Correggere gli errori di Run-Time con informazioni sulle eccezioni](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [Tipi di errore](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

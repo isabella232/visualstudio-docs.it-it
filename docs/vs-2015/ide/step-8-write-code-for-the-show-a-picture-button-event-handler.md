@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f162f827fa1866b5ca241bd9aaae2aadffb56e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef4d1221b59e6f1e5ed3de94f91742bbea778462
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679334"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Passaggio 8: Scrivere il codice per il gestore dell'evento del pulsante Mostra immagine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Codice Visual C#
   
     2. Viene visualizzata la finestra di **IntelliSense** con **openFileDialog1**. Premere TAB per selezionarlo. In Visual Basic l'iniziale è maiuscola, pertanto viene visualizzato **OpenFileDialog1**. Assicurarsi che **OpenFileDialog1** sia selezionato.  
   
-         Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         Per altre informazioni su `OpenFileDialog`, vedere [OpenFileDialog](https://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
   
     3. Digitare un punto (`.`). Poiché è stato digitato un punto subito dopo **openFileDialog1**, viene visualizzata una finestra di **IntelliSense** contenente tutte le proprietà e i metodi del componente **OpenFileDialog**. Si tratta delle stesse proprietà visualizzate nel finestra **Proprietà** quando si sceglie la finestra in Progettazione Windows Form. È inoltre possibile scegliere metodi che indicano al componente di eseguire operazioni (ad esempio, aprire una finestra di dialogo).  
   
@@ -67,7 +67,7 @@ Icona dell'evento
   
     4. Iniziare a digitare `ShowDialog` (l'uso di maiuscole non viene considerato in IntelliSense). Il metodo `ShowDialog()` visualizzerà la finestra di dialogo **Apri file**. Dopo che nella finestra è stato evidenziato **ShowDialog**, premere TAB. È inoltre possibile evidenziare "ShowDialog" e premere il tasto F1 per ottenere informazioni relative.  
   
-         Per altre informazioni sul metodo `ShowDialog()`, vedere [Metodo ShowDialog](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
+         Per altre informazioni sul metodo `ShowDialog()`, vedere [Metodo ShowDialog](https://msdn.microsoft.com/library/c7ykbedk.aspx).  
   
     5. Quando si usa un metodo in un controllo o un componente, ovvero si effettua una *chiamata a un metodo*, è necessario aggiungere le parentesi. Immettere quindi le parentesi di apertura e chiusura immediatamente dopo la "g" di `ShowDialog`: `()` Viene visualizzato "openFileDialog1.ShowDialog()".  
   
@@ -83,7 +83,7 @@ Icona dell'evento
   
     8. Digitare un punto per aprire la finestra di **IntelliSense** del valore DialogResult. Immettere la lettera `O` e premere TAB per inserire **OK**.  
   
-         Per altre informazioni su `DialogResult`, vedere [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+         Per altre informazioni su `DialogResult`, vedere [DialogResult](https://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
   
         > [!NOTE]
         > La prima riga di codice è stata completata. Per Visual C#, il codice è analogo al seguente.  

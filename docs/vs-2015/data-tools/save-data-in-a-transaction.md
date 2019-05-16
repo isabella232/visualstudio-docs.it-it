@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559198"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692462"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvare i dati in una transazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Questa procedura dettagliata illustra come salvare i dati in una transazione usa
   
 2. Denominare il progetto **SavingDataInATransactionWalkthrough**.  
   
-3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **SavingDataInATransactionWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.  
   
 ## <a name="create-a-database-data-source"></a>Creare un'origine dati del database  
- Questo passaggio Usa la [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) per creare un'origine dati basata sulle `Customers` e `Orders` tabelle nel database di esempio Northwind.  
+ Questo passaggio Usa la [configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) per creare un'origine dati basata sulle `Customers` e `Orders` tabelle nel database di esempio Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Per creare l'origine dati  
   

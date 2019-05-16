@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442847"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686527"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice C++ nelle app dello Store con l'analisi statica del codice di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Lo strumento di analisi del codice disponibile nelle edizioni di Visual Studio Express esamina il codice alla ricerca di un set di errori comuni e di violazioni delle procedure di programmazione ottimali. Gli avvisi di analisi del codice sono diversi rispetto agli errori e agli avvisi del compilatore in quanto durante l'analisi del codice vengono cercati modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che usano il codice. L'analisi del codice può inoltre trovare difetti all'interno del codice che di solito sono difficili da individuare tramite l'esecuzione di test. L'esecuzione dello strumento di analisi del codice a intervalli regolari durante il processo di sviluppo può migliorare la qualità dell'app completata.
 
 > [!NOTE]
-> In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi usare le funzionalità complete degli strumenti di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](http://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
+> In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi usare le funzionalità complete degli strumenti di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](https://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
 
 ## <a name="BKMK_Run"></a> Esecuzione dell'analisi del codice
  Per eseguire l'analisi del codice nella soluzione di Visual Studio:
@@ -116,7 +116,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                       [C6504](../code-quality/c6504.md)                        |                                              Null su non puntatore                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck su nullo                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Dimensioni buffer su non puntatore o matrice                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Errata corrispondenza null al livello di dereferenziazione zero                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Errata corrispondenza null al livello di dereferenziazione zero                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Accesso in scrittura a costante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Restituzione utilizzati in precondizione                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Null terminato su non puntatore                                         |
@@ -127,11 +127,11 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 |                       [C6516](../code-quality/c6516.md)                        |                                          Nessuna proprietà su attributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Dimensioni valide su buffer non leggibile                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Dimensioni scrivibili su buffer non scrivibile                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Deferenziazione stringa dimensioni non valida                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Deferenziazione stringa dimensioni non valida                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo stringa dimensioni non valida                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parametro stringa dimensioni non valido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Percorso irraggiungibile stringa dimensioni non valida                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo buffer stringa dimensioni non valido                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Stile stringa formato non riconosciuto                                        |
 |                       [C6540](../code-quality/c6540.md)                        | L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec  |

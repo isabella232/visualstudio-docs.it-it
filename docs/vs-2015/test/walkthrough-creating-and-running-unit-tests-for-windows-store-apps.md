@@ -13,14 +13,14 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428205"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695114"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procedura dettagliata: Creazione ed esecuzione di Unit test per le app di Windows Store
+# <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Procedura dettagliata: Creazione ed esecuzione di unit test per le app di Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gestite e i modelli della libreria di unit test per Visual C#, Visual Basic e Visual C++.  
@@ -86,7 +86,7 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
     > [!NOTE]
     > Le funzionalità selezionate devono includere solo quelle necessarie affinché lo unit test per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funzioni correttamente. Non si devono mai includere funzionalità che non fanno parte dell'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test e in genere devono essere un sottoinsieme di funzionalità specificate per l'app di [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sottoposta a test.  
   
-     Per altre informazioni su Progettazione manifesto, vedere [Configurare un pacchetto di app Windows 8.1 usando la finestra di progettazione del manifesto](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Per altre informazioni su Progettazione manifesto, vedere [Configurare un pacchetto di app Windows 8.1 usando la finestra di progettazione del manifesto](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Manifesto unit test](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ In Visual Studio sono inclusi il supporto per gli unit test di app di [!INCLUDE[
   
 ## <a name="see-also"></a>Vedere anche  
  [Test delle applicazioni Store con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Eseguire la compilazione e il test di un'applicazione Windows Store mediante Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Eseguire la compilazione e il test di un'applicazione Windows Store mediante Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

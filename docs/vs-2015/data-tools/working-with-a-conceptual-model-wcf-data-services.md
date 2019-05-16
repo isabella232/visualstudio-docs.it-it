@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694799"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Uso di un modello concettuale (WCF Data Services)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Quando si usa un modello concettuale per descrivere i dati in un database, è po
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Eseguire query sul servizio dati](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dell'applicazione.|  
-|[Procedura: Risultati della Query di progetto](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati.|  
+|[Procedura: Eseguire query sul servizio dati](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Viene illustrato come eseguire query su un servizio dati da un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] dell'applicazione.|  
+|[Procedura: Risultati della Query di progetto](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Viene illustrato come ridurre la quantità di dati restituiti tramite una query del servizio dati.|  
   
  Quando si usa un modello concettuale, è possibile definire il tipo di dati è valido nella lingua corrispondente al dominio. È possibile definire dati validi nel modello oppure è possibile aggiungere la convalida per le operazioni eseguite su un'entità o un servizio dati.  
   
@@ -43,15 +43,15 @@ Quando si usa un modello concettuale per descrivere i dati in un database, è po
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Intercettare messaggi del servizio dati](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Viene illustrato come aggiungere la convalida a un'operazione del servizio dati.|  
+|[Procedura: Intercettare messaggi del servizio dati](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Viene illustrato come aggiungere la convalida a un'operazione del servizio dati.|  
   
  Gli argomenti seguenti illustrano come creare, aggiornare ed eliminare i dati eseguendo operazioni su entità.  
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Aggiungere, modificare ed eliminare entità](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Viene illustrato come creare, aggiornare ed eliminare i dati di entità in un servizio dati.|  
-|[Procedura: Definire le relazioni tra entità](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|  
+|[Procedura: Aggiungere, modificare ed eliminare entità](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Viene illustrato come creare, aggiornare ed eliminare i dati di entità in un servizio dati.|  
+|[Procedura: Definire le relazioni tra entità](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Viene illustrato come creare o modificare le relazioni in un servizio dati.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Servizi Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Esecuzione di query sul servizio dati](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [Esecuzione di query sul servizio dati](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

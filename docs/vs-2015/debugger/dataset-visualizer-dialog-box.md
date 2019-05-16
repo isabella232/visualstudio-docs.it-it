@@ -25,12 +25,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3aaeac588243ca8d6969bd3f3651240b8b2b6e3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967197"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697845"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>finestra di dialogo Visualizzatore DataSet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ Il Visualizzatore DataSet consente di visualizzare il contenuto di un oggetto Da
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Creare visualizzatori personalizzati](../debugger/create-custom-visualizers-of-data.md)   
- [Finestra delle variabili](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Finestra delle variabili](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Visualizzare i valori di dati nei suggerimenti dati](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442861"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686565"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizzare la qualità del codice Visual Basic e C# nelle app dello Store con l'analisi statica del codice di Visual Studio
 
@@ -27,7 +27,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
  Lo strumento di analisi del codice disponibile in Visual Studio Express esamina il codice alla ricerca di un set di errori comuni e di violazioni delle procedure di programmazione ottimali. Gli avvisi di analisi del codice sono diversi rispetto agli errori e avvisi del compilatore. Lo strumento di analisi del codice cerca infatti modelli di codice specifici che risultano validi ma che potrebbero causare problemi a te o ad altre persone che utilizzano il codice. L'analisi del codice può inoltre trovare difetti all'interno del codice che di solito sono difficili da individuare tramite l'esecuzione di test. L'esecuzione dello strumento di analisi del codice a intervalli regolari durante il processo di sviluppo può migliorare la qualità dell'app completata.
 
 > [!NOTE]
-> In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi utilizzare la funzionalità di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](http://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
+> In Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional puoi utilizzare la funzionalità di analisi del codice. Vedere [Analisi della qualità dell'applicazione tramite gli strumenti di analisi del codice](https://msdn.microsoft.com/library/dd264897.aspx) in MSDN Library.
 
 ## <a name="in-this-topic"></a>Contenuto dell'argomento
  Puoi acquisire informazioni su:
@@ -98,12 +98,12 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="BKMK_Warnings"></a> Avvisi di analisi del codice Visual Basic e C#
  L'analisi del codice genera gli avvisi seguenti:
 
- [CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: I tipi proprietari di campi eliminabili devono essere eliminabili](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: Rimuovere i finalizzatori vuoti](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: Rimuovere i finalizzatori vuoti](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: I campi eliminabili devono essere eliminati](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: I campi eliminabili devono essere eliminati](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: Implementare costruttori di serializzazione](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: Implementare costruttori di serializzazione](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

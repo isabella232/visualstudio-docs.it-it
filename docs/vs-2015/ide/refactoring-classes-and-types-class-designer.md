@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef3f4c52955f5958ab24d56c5741418648de48d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696215"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactoring di classi e tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441146"
 Quando si effettua il refactoring del codice, si modifica la struttura interna di quest'ultimo e il modo in cui i relativi oggetti vengono progettati, rendendo il codice più comprensibile, gestibile ed efficiente senza modificarne il comportamento esterno. Per ridurre le operazioni necessarie e la possibilità di introdurre bug durante il refactoring del codice Visual C# .NET, Visual Basic .NET o C++ nel progetto di Visual Studio, usare Progettazione classi e la finestra Dettagli classe.  
   
 > [!NOTE]
-> I file di un progetto possono essere di sola lettura perché il progetto è sotto il controllo del codice sorgente e non è stato estratto, perché si tratta di un progetto a cui si fa riferimento o perché i file sono contrassegnati come di sola lettura sul disco. Quando si lavora in un progetto in uno di questi stati, è possibile salvare il lavoro in vari modi a seconda dello stato del progetto. Ciò vale per il refactoring del codice e anche per il codice che viene modificato in altro modo, ad esempio tramite modifica diretta. Per altre informazioni, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> I file di un progetto possono essere di sola lettura perché il progetto è sotto il controllo del codice sorgente e non è stato estratto, perché si tratta di un progetto a cui si fa riferimento o perché i file sono contrassegnati come di sola lettura sul disco. Quando si lavora in un progetto in uno di questi stati, è possibile salvare il lavoro in vari modi a seconda dello stato del progetto. Ciò vale per il refactoring del codice e anche per il codice che viene modificato in altro modo, ad esempio tramite modifica diretta. Per altre informazioni, vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Attività comuni  
   

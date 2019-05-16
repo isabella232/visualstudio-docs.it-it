@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110901"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674164"
 ---
 # <a name="summary-view"></a>Visualizzazione Riepilogo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni o gli oggetti ch
 |**Mostra albero delle chiamate ridotto**|Visualizza i percorsi di esecuzione più dispendiosi nella visualizzazione Albero delle chiamate. Per altre informazioni, vedere [Visualizzazione Albero delle chiamate](../profiling/call-tree-view.md).|  
 |**Mostra righe critiche**|Non disponibile per i dati di profilatura raccolti tramite il metodo di strumentazione. Visualizza le righe di codice sorgente più dispendiose nella visualizzazione Righe. Per altre informazioni, vedere [Visualizzazione Righe](../profiling/lines-view.md).|  
 |**Confronta report**|Visualizza la finestra di dialogo **Selezionare i file di analisi per il confronto** in cui è possibile specificare un altro file di dati di profilatura da confrontare con il file corrente. Per altre informazioni, vedere [Confronto tra file di dati delle prestazioni](../profiling/comparing-performance-data-files.md).|  
-|**Esporta dati report**|Visualizza la finestra di dialogo **Esporta rapporto** in cui è possibile specificare una o più visualizzazioni del report da salvare come file delimitati da virgole (CSV) o file XML. Per altre informazioni, vedere [Procedura: I report degli strumenti di profilatura esportazione](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Salva rapporto analizzato**|Salva il file di dati di profilatura corrente come file con estensione vsps, che può essere aperto più rapidamente nell'interfaccia per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Salva i file di dati di profilatura analizzati](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Esporta dati report**|Visualizza la finestra di dialogo **Esporta rapporto** in cui è possibile specificare una o più visualizzazioni del report da salvare come file delimitati da virgole (CSV) o file XML. Per altre informazioni, vedere [Procedura: I report degli strumenti di profilatura esportazione](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Salva rapporto analizzato**|Salva il file di dati di profilatura corrente come file con estensione vsps, che può essere aperto più rapidamente nell'interfaccia per [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Per altre informazioni, vedere [Procedura: Salva i file di dati di profilatura analizzati](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtra dati report**|Visualizza il riquadro per filtrare i report di profilatura in cui è possibile specificare criteri per limitare i dati nella visualizzazione del report. Per altre informazioni, vedere [Filtro delle visualizzazioni dei report di prestazioni](../profiling/performance-report-view-filter.md).|  
 |**Attiva/Disattiva schermo intero**|Disattiva la modalità schermo intero per la visualizzazione dei report.|  
   

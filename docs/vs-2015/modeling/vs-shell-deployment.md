@@ -9,17 +9,17 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6503efd0fa606042089e26b4cac23adcabdcb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5bfe88d7e7d742eb67273d307c3a8e72e9a85833
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041016"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704042"
 ---
 # <a name="vs-shell-deployment"></a>Distribuzione della shell di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Una shell isolata consente di determinare quali Visual Studio la funzionalità è necessario interagire con il linguaggio specifico di dominio e l'aspetto di tale soluzione. Per altre informazioni sulla shell isolata di Visual Studio, vedere [personalizzazione della Shell isolata](../extensibility/customizing-the-isolated-shell.md). È possibile trovare altre informazioni sulla personalizzazione della shell isolata in [personalizzazione della Shell isolata](http://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf).  
+Una shell isolata consente di determinare quali Visual Studio la funzionalità è necessario interagire con il linguaggio specifico di dominio e l'aspetto di tale soluzione. Per altre informazioni sulla shell isolata di Visual Studio, vedere [personalizzazione della Shell isolata](../extensibility/customizing-the-isolated-shell.md). È possibile trovare altre informazioni sulla personalizzazione della shell isolata in [personalizzazione della Shell isolata](https://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf).  
   
 ### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Per impostare una Shell di Visual Studio come destinazione di distribuzione  
   
