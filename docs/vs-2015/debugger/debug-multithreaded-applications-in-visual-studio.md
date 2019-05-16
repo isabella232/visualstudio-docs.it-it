@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054300"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691272"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug di applicazioni multithreading in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Un thread è una sequenza di istruzioni in base alla quale il sistema operativo 
 
  Il multithreading introduce inoltre nuovi tipi di possibili bug. Accade spesso, ad esempio, che due o più thread debbano accedere alla stessa risorsa, alla quale però può accedere un solo thread alla volta. Deve necessariamente esistere una qualche forma di esclusione reciproca per garantire l'accesso alla risorsa di un solo thread alla volta. Se l'esclusione reciproca viene eseguita in modo non corretto, è possibile creare un *deadlock* condizione in cui è possibile eseguire alcun thread. I deadlock possono rappresentare un problema particolarmente difficile da risolvere con il debug.
 
- Visual Studio offre un' **thread** finestra, una finestra thread GPU, una finestra Espressioni di controllo parallelo e altre funzionalità che rendono il debug multithreading. Il modo migliore per acquisire ulteriori informazioni sulle nuove funzionalità dell'interfaccia di threading consiste nell'eseguire le procedure dettagliate. Vedere [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [procedura dettagliata: Debug di un'applicazione C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio offre un' **thread** finestra, una finestra thread GPU, una finestra Espressioni di controllo parallelo e altre funzionalità che rendono il debug multithreading. Il modo migliore per acquisire ulteriori informazioni sulle nuove funzionalità dell'interfaccia di threading consiste nell'eseguire le procedure dettagliate. Vedere [Procedura dettagliata: Debug di un'applicazione multithreading](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio offre anche potenti punti di interruzione e punti di analisi che possono rivelarsi molto utili per il debug di applicazioni multithreading. È possibile applicare filtri dei punti di interruzione per inserire punti di interruzione in corrispondenza di singoli thread. Vedere [usando i punti di interruzione](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Presentazione guidata delle funzionalità di debug dei thread, con particolare a
 
 - I punti di traccia consentono di tracciare l'esecuzione dei programmi senza interruzioni. Ciò può risultare utile nello studio di problemi quali i deadlock.
 
-  [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) concetti di Threading [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programmazione, inclusi esempi di codice.
+  [Threading](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) concetti di Threading [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programmazione, inclusi esempi di codice.
 
-  [Multithreading nei componenti](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) come usare il multithreading nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componenti.
+  [Multithreading nei componenti](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) come usare il multithreading nel [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componenti.
 
-  [Supporto del multithreading per il codice precedente (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) informazioni sul Threading ed esempio di codice per i programmatori C++ con MFC.
+  [Supporto del multithreading per il codice precedente (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) informazioni sul Threading ed esempio di codice per i programmatori C++ con MFC.
 
 ## <a name="see-also"></a>Vedere anche
  [Eseguire il debug di thread e processi](../debugger/debug-threads-and-processes.md) [debug remoto](../debugger/remote-debugging.md)

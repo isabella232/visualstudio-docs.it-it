@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108568"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691266"
 ---
 # <a name="debugging-linq"></a>Debug di LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108568"
 ## <a name="BKMK_ViewingLINQResults"></a>Visualizzazione dei risultati LINQ  
  È possibile visualizzare il risultato di un'istruzione LINQ usando i suggerimenti dati, la finestra Espressioni di controllo e la finestra di dialogo Controllo immediato. Quando si usa una finestra di origine, passare con il puntatore su una query nella finestra di origine per visualizzare un suggerimento dati. È possibile copiare una variabile LINQ e incollarla nella finestra Espressioni di controllo o nella finestra di dialogo Controllo immediato.  
   
- In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa della creazione di query e la valutazione, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) oppure [Writing Your prima Query LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ In LINQ, le query non vengono valutate al momento della creazione o della dichiarazione, ma soltanto al momento dell'uso. La query non dispone pertanto di un valore fino a quando non viene valutata. Per una descrizione completa della creazione di query e la valutazione, vedere [Introduzione alle query LINQ (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) oppure [Writing Your prima Query LINQ](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Per visualizzare il risultato di una query, è necessario che venga valutata dal debugger. Tenere presenti alcuni effetti della valutazione implicita, che avviene quando si visualizza il risultato di una query LINQ nel debugger:  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108568"
  Nelle query LINQ to SQL il codice del predicato non è sotto il controllo del debugger e pertanto non è possibile eseguirne le istruzioni. Qualsiasi query compilata in unalbero delle espressioni produce codice che non è sotto il controllo del debugger.  
   
 ### <a name="stepping-in-visual-basic"></a>Esecuzione di istruzioni in Visual Basic  
- Se, durante l'esecuzione di istruzioni tramite un programma Visual Basic, il debugger rileva una dichiarazione della query, non esegue le istruzioni della dichiarazione ma evidenzia l'intera dichiarazione come un'unica istruzione. Tale comportamento si verifica perché la query non viene valutata fino al momento della chiamata. Per altre informazioni, vedere [Introduzione a LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Se, durante l'esecuzione di istruzioni tramite un programma Visual Basic, il debugger rileva una dichiarazione della query, non esegue le istruzioni della dichiarazione ma evidenzia l'intera dichiarazione come un'unica istruzione. Tale comportamento si verifica perché la query non viene valutata fino al momento della chiamata. Per altre informazioni, vedere [Introduzione a LINQ in Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Se si eseguono le istruzioni contenute nell'esempio di codice seguente, il debugger evidenzia la dichiarazione della query o la creazione della query come un'unica istruzione.  
   
@@ -117,8 +117,8 @@ End Function
  In Visual Basic, è possibile usare Modifica e continuazione su codice non LINQ anche in metodi contenente una query LINQ. È possibile aggiungere o rimuovere codice prima dell'istruzione LINQ, anche se le modifiche influiscono sul numero di riga della query LINQ. Le modalità di esecuzione del debug Visual Basic di codice non LINQ rimangono invariate rispetto a prima dell'introduzione di LINQ. Non è tuttavia possibile modificare, aggiungere o rimuovere query LINQ, a meno che non si voglia interrompere il debug per applicare le modifiche.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Debug SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [Debug SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Gestione delle eccezioni con il debugger](../debugger/managing-exceptions-with-the-debugger.md)   
- [Introduzione alle query LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Introduzione a LINQ in Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [Introduzione alle query LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Introduzione a LINQ in Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

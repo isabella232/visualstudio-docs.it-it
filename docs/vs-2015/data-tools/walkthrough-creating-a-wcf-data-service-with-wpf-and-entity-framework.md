@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12d7e9c25cdf4e0431a7e4b5e3639dc59b76790c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703173"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procedura dettagliata: Creazione di un servizio dati WCF con WPF ed Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Questa procedura dettagliata viene illustrato come creare una semplice [!INCLUDE
   
 - Il database di esempio Northwind.  
   
-     Se questo database non è presente nel computer di sviluppo, è possibile scaricarlo dall' [Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Per istruzioni, vedere [download dei database di esempio](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
+     Se questo database non è presente nel computer di sviluppo, è possibile scaricarlo dall' [Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Per istruzioni, vedere [download dei database di esempio](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
 ## <a name="creating-the-service"></a>Creazione del servizio  
  Per creare un servizio [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], è necessario aggiungere un progetto Web, creare un modello [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], quindi creare il servizio dal modello.  

@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e1096e137d3b8e634d404dd5e7158d37478d6fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de270abfede0b128e63999ae8654a2ea72e073f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703792"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che specifica se il modulo o la funzione è stato compilato con i controlli di sicurezza di sovraccarico del buffer (ad esempio, il [/GS (controllo sicurezza Buffer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) opzione del compilatore).  
+Recupera un flag che specifica se il modulo o la funzione è stato compilato con i controlli di sicurezza di sovraccarico del buffer (ad esempio, il [/GS (controllo sicurezza Buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) opzione del compilatore).  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,4 +52,4 @@ HRESULT get_hasSecurityChecks(
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (controllo sicurezza buffer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS (controllo sicurezza buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

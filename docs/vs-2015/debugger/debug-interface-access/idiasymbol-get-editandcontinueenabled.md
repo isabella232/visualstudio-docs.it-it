@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a910b2aee7a2859ae799819a9ccb155d13d3388b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 74ac007a3b9d42677c77989ea36c6e20f9cd35f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444085"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697710"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera un flag che indica se il modulo è stato compilato con il [/Z7, /Zi, /ZI (formato informazioni di Debug)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opzione del compilatore.  
+Recupera un flag che indica se il modulo è stato compilato con il [/Z7, /Zi, /ZI (formato informazioni di Debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opzione del compilatore.  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -52,4 +52,4 @@ HRESULT get_editAndContinueEnabled ( 
   
 ## <a name="see-also"></a>Vedere anche  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/Z7, /Zi, /ZI (Formato informazioni di debug)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)
+ [/Z7, /Zi, /ZI (Formato informazioni di debug)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)

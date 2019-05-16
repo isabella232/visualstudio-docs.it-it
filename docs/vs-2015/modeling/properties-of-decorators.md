@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9cd07ed41e39c931e67f43f1c77ff8bd56b2eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955507"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701769"
 ---
 # <a name="properties-of-decorators"></a>Proprietà degli elementi Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ Gli elementi Decorator sono icone, testo o parentesi angolari di espansione/comp
 |Posizione|La posizione predefinita dell'elemento decorator.|TargetBottom|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

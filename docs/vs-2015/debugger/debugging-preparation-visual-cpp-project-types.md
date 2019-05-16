@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4752f9b04723934c0fe9a2cf8a74d4d07e474477
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4f92b96d99889c88236df34b3f60c7fd71d5032d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116199"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691348"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Debug della preparazione: Tipi di progetto Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
    [In questo argomento](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applicazioni Windows Forms (.NET)  
- Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per altre informazioni, vedere [Procedura: Creare un progetto Applicazione Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+ Il modello **Windows Forms Application (.NET)** consente di creare un'applicazione Windows Forms in [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Per altre informazioni, vedere [Procedura: Creare un progetto Applicazione Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
  Il debug di questo tipo di applicazione in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è simile a quello delle applicazioni Windows Form gestite.  
   
@@ -117,4 +117,4 @@ In questa sezione viene descritto come eseguire il debug dei tipi di progetto di
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Connessione a uno o più programmi in esecuzione](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Configurazioni versioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md)   
- [Procedura: Creare un progetto Applicazione Windows](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)
+ [Procedura: Creare un progetto Applicazione Windows](https://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa)

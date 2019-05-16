@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445901"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695094"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio include più di un tipo di progetto di test. Un nuovo test codificato dell'interfaccia utente verrà creato in un tipo di progetto di test codificato dell'interfaccia utente. Per altre informazioni, vedere [Aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio include più di un tipo di progetto di test. Un nuovo test codificato dell'interfaccia utente verrà creato in un tipo di progetto di test codificato dell'interfaccia utente. Per altre informazioni, vedere [Aggiornamento dei test da versioni precedenti di Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > I progetti di test di[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] contenenti test codificati dell'interfaccia utente devono essere ricompilati quando li si apre in [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] affiancato a [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ I progetti di test contenenti test codificati dell'interfaccia utente creati in 
 - **Test di carico:** Quando si esegue un test di carico con un tipo di rete diverso dal profilo della rete locale (LAN) in un computer che esegue Windows 8, il driver dell'emulatore di rete causa l'arresto anomalo del sistema operativo. Per altre informazioni, vedere l' [articolo KB 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Vedere anche
- [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [aggiornamento dei test da versioni precedenti di Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [la generazione di un Test codificati dell'interfaccia utente Test da una registrazione delle azioni esistente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portabilità, migrazione e aggiornamento dei progetti di Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [aggiornamento dei test da versioni precedenti di Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md) [la generazione di un Test codificati dell'interfaccia utente Test da una registrazione delle azioni esistente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

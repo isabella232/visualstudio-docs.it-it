@@ -21,14 +21,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7f6aba4076f7532d5eab5d47515b734c4c312b99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425404"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692520"
 ---
-# <a name="relationships-in-datasets"></a>Relazioni nei DataSet
+# <a name="relationships-in-datasets"></a>Relazioni nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Data.DataRelation> oggetti per rappresentare una relazione padre/figlio tra le tabelle e per restituire i record correlati tra loro. Aggiunta di tabelle correlate ai set di dati con il **configurazione guidata origine dati**, o il **Progettazione Dataset**, crea e configura il <xref:System.Data.DataRelation> oggetto per l'utente.  
@@ -76,7 +76,7 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
  Quando si crea un <xref:System.Data.DataRelation> dell'oggetto, è possibile scegliere di specificare che la relazione venga utilizzata solo per imporre vincoli, vale a dire, non verrà anche essere utilizzato per accedere ai record correlati. È possibile usare questa opzione per generare un set di dati che è leggermente più efficiente e che contiene i metodi di un numero minore rispetto a uno con la funzionalità di record correlati. Tuttavia, non sarà in grado di accedere ai record correlati. Ad esempio, una solo vincolo di relazione si impedisce l'eliminazione di un record padre che presenta ancora record figlio e i record figlio non è possibile accedere tramite l'elemento padre.  
   
 ## <a name="manually-creating-a-data-relation-in-the-dataset-designer"></a>Creazione manuale di una relazione dati in Progettazione Dataset  
- Quando si creano le tabelle di dati usando gli strumenti di progettazione dei dati in Visual Studio, le relazioni vengono create automaticamente se le informazioni possono essere raccolte dall'origine dei dati. Se si aggiungono manualmente le tabelle di dati dal **set di dati** scheda della finestra di **della casella degli strumenti**, potrebbe essere necessario creare manualmente la relazione. Per informazioni sulla creazione <xref:System.Data.DataRelation> degli oggetti a livello di codice, vedere [aggiunta di oggetti DataRelation](http://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
+ Quando si creano le tabelle di dati usando gli strumenti di progettazione dei dati in Visual Studio, le relazioni vengono create automaticamente se le informazioni possono essere raccolte dall'origine dei dati. Se si aggiungono manualmente le tabelle di dati dal **set di dati** scheda della finestra di **della casella degli strumenti**, potrebbe essere necessario creare manualmente la relazione. Per informazioni sulla creazione <xref:System.Data.DataRelation> degli oggetti a livello di codice, vedere [aggiunta di oggetti DataRelation](https://msdn.microsoft.com/library/a4a564fb-c1c4-4135-b6c2-b030e51195e4).  
   
  Le relazioni tra tabelle di dati vengono visualizzati come righe nel **Progettazione Dataset**, con una chiave e un numero infinito un'icona che rappresenta l'aspetto di uno-a-molti della relazione. Per impostazione predefinita, il nome del relationshipCommentEnd Id = '1c8c78e19b7fa441' non viene visualizzata nell'area di progettazione.  
   
@@ -84,7 +84,7 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Per creare una relazione tra due tabelle dati  
   
-1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Trascinare un **relazione** dell'oggetto dalle **set di dati** casella degli strumenti nella tabella dati figlio nella relazione.  
   
@@ -98,9 +98,9 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 6. Selezionare le colonne che uniscono in join le tabelle nel **colonne chiave** e **colonne di chiavi esterne** Elenca.  
   
-7. Scegliere se creare una relazione, vincolo o entrambi. Per informazioni, vedere [Introduzione agli oggetti DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Scegliere se creare una relazione, vincolo o entrambi. Per informazioni, vedere [Introduzione agli oggetti DataRelation](https://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8. Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Selezionare o deselezionare i **relazione annidata** casella. Selezionando questa opzione imposta la <xref:System.Data.DataRelation.Nested%2A> proprietà `true`, e il figlio della relazione annidata all'interno della colonna padre quando le righe vengono scritte come dati XML o sincronizzate con righe <xref:System.Xml.XmlDataDocument>. Per altre informazioni, vedere [annidamento di oggetti DataRelation](https://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Impostare le regole da applicare quando si apportano modifiche ai record in queste tabelle. Per altre informazioni, vedere <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ I set di dati che contengono i dati correlati tabelle utilizzano <xref:System.Da
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Per visualizzare un nome della relazione nella finestra di progettazione set di dati  
   
-1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Aprire il set di dati in **Progettazione DataSet**. Per altre informazioni, vedere [Procedura: Aprire un set di dati in Progettazione Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Dal **dati** menu, seleziona la **Mostra etichette di relazione** comando per visualizzare il nome della relazione. Deselezionare tale comando per nascondere il nome della relazione.

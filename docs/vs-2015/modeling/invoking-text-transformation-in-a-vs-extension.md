@@ -9,17 +9,17 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d2a2311d0a8c1e9470b5053ac4f5f309a1a4d0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bcd32aef240732b67a2c490e3738c9b3d2921ffc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968076"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698045"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Richiamo della trasformazione del testo in un'estensione VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Se si sta scrivendo un [estensione di Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) , ad esempio un comando di menu o [linguaggio specifico di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), è possibile usare il servizio del modello di testo per trasformare i modelli di testo. Ottenere il servizio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> ed eseguirne il cast su <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
+Se si sta scrivendo un [estensione di Visual Studio](https://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) , ad esempio un comando di menu o [linguaggio specifico di dominio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), è possibile usare il servizio del modello di testo per trasformare i modelli di testo. Ottenere il servizio <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> ed eseguirne il cast su <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
   
 ## <a name="getting-the-text-templating-service"></a>Come ottenere il servizio del modello di testo  
   
@@ -136,7 +136,7 @@ Sample text.
   
  L'avviso del compilatore verrà visualizzato nella finestra di errore di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e genererà inoltre una chiamata a `ErrorCallback`.  
   
-## <a name="reference-parameters"></a>Parametri di riferimento  
+## <a name="reference-parameters"></a>Parametri per riferimento  
  È possibile passare i valori da un modello di testo tramite una classe di parametri derivata da <xref:System.MarshalByRefObject>.  
   
 ## <a name="related-topics"></a>Argomenti correlati  

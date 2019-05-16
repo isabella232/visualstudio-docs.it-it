@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693404"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Elaborazione DTD non protetta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425430"
  Se si usano istanze di <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non protette o si fa riferimento a origini di entità esterne, il parser può accettare un input non attendibile e divulgare informazioni riservate a utenti malintenzionati.
 
 ## <a name="rule-description"></a>Descrizione della regola
- La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
+ La [definizione DTD (Document Type Definition)](https://msdn.microsoft.com/library/aa468547.aspx) rappresenta uno dei due modi in cui un parser XML può determinare la validità di un documento, come definito dalla raccomandazione  [W3C (World Wide Web Consortium) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Questa regola cerca le proprietà e le istanze in cui vengono accettati i dati non attendibili per avvisare gli sviluppatori delle minacce potenziali di [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , che possono causare attacchi [Denial of Service (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Questa regola viene attivata quando:
 
 - DtdProcessing viene abilitato nell'istanza di <xref:System.Xml.XmlReader> , che risolve le entità XML esterne con <xref:System.Xml.XmlUrlResolver>.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425430"
 
 - Disabilitare l'elaborazione DTD se usano origini non attendibili impostando la <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> proprietà **true** .
 
-- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
+- La classe XmlTextReader ha una richiesta di ereditarietà con attendibilità totale. Visualizzare [richieste di ereditarietà](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) per altre informazioni.
 
   .NET 4 e versioni successive
 

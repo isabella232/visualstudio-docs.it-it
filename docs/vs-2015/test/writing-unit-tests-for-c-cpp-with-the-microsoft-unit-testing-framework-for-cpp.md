@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437968"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695278"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Scrittura di unit test per C/C++ con il framework di testing unità Microsoft per C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
   
     - `#include` un file `.h` che contiene le dichiarazioni delle funzioni esternamente accessibili della DLL.  
   
-         Il file `.h` deve contenere dichiarazioni di funzione contrassegnate da `_declspec(dllimport)`. In alternativa, è possibile esportare i metodi usando un file DEF. Per altre informazioni, vedere [Importazione ed esportazione](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         Il file `.h` deve contenere dichiarazioni di funzione contrassegnate da `_declspec(dllimport)`. In alternativa, è possibile esportare i metodi usando un file DEF. Per altre informazioni, vedere [Importazione ed esportazione](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Gli unit test possono accedere solo alle funzioni esportate dalla DLL sottoposta a test.  
   
@@ -168,7 +168,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
   
      ![Nuovo progetto di codice DLL e file h con macro API](../test/media/utecpp07.png "UteCpp07")  
   
-     Il dichiaratore `__declspec(dllexport)` permette ai membri public e protected della classe di essere visibili al di fuori della DLL. Per altre informazioni, vedere [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     Il dichiaratore `__declspec(dllexport)` permette ai membri public e protected della classe di essere visibili al di fuori della DLL. Per altre informazioni, vedere [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. Nel file .cpp principale, aggiungere il corpo minimo della funzione:  
   
@@ -395,7 +395,7 @@ In Visual Studio, è possibile creare unit test per il codice non gestito scritt
 ## <a name="see-also"></a>Vedere anche  
  [Aggiunta di unit test alle applicazioni C++ esistenti](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Utilizzo di Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Panoramica sull'interoperabilità sul codice gestito e non gestito](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Panoramica sull'interoperabilità sul codice gestito e non gestito](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Debug del codice nativo](../debugger/debugging-native-code.md)   
- [Procedura dettagliata: Creazione e utilizzo di una libreria a collegamento dinamico (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importazione ed esportazione](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Procedura dettagliata: Creazione e utilizzo di una libreria a collegamento dinamico (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Importazione ed esportazione](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

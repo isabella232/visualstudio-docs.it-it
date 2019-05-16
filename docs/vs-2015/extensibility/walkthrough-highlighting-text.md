@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d398164e910f7700645c01d26afbc631b1d434bc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408787"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693331"
 ---
 # <a name="walkthrough-highlighting-text"></a>Procedura dettagliata: Evidenziazione del testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ ms.locfileid: "63408787"
  Per creare il tagger, è necessario implementare un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Questa classe è una parte del componente MEF, pertanto è necessario impostare gli attributi corretti in modo che questa estensione viene riconosciuta.  
   
 > [!NOTE]
-> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-create-a-tagger-provider"></a>Per creare un provider di tagger  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437821"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702546"
 ---
 # <a name="capturing-graphics-information"></a>Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Acquisire informazioni grafiche dall'app Direct3D così da poter usare Analizzat
 ## <a name="capturing-graphics-information-remotely"></a>Acquisizione remota di informazioni grafiche  
  È possibile acquisire informazioni grafiche da un'app in esecuzione nel computer locale o in un computer o dispositivo remoto. L'acquisizione remota è supportata per i computer [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] e i dispositivi [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)]. Per acquisire informazioni grafiche da un'app in esecuzione in remoto, configurare il progetto per il debug remoto e quindi eseguire l'app nella diagnostica della grafica come descritto in precedenza. L'app viene eseguita nel computer remoto e le informazioni grafiche acquisite vengono registrate nel computer di sviluppo.  
   
- La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app Windows Store, vedere [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [Set Up Remote Debugging per un progetto di Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ La modalità di configurazione del progetto per il debug remoto varia a seconda del tipo di app sviluppata e dal linguaggio di programmazione in uso. Per informazioni su come configurare il debug remoto per un'app Windows Store, vedere [Run Windows Store App in un computer remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Per informazioni su come configurare il debug remoto per un'app desktop di Windows, vedere [Set Up Remote Debugging per un progetto di Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
  Successivamente sarà possibile usare un computer o un dispositivo remoto per riprodurre le informazioni grafiche, indipendentemente dall'origine dell'acquisizione. Per altre informazioni, vedere [Procedura: Modificare il computer di riproduzione della diagnostica della grafica](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   

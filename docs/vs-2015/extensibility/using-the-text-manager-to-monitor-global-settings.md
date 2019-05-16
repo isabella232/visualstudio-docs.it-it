@@ -11,14 +11,14 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 792c566eda53cb8a4703e8ab03982952c518d8e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece51450b8344ae4715a912399ec538171a26a5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964272"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695460"
 ---
-# <a name="using-the-text-manager-to-monitor-global-settings"></a>Tramite la gestione di testo per monitorare le impostazioni globali
+# <a name="using-the-text-manager-to-monitor-global-settings"></a>Uso della gestione testi per monitorare le impostazioni globali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se si implementa un editor di base, è necessario monitorare le modifiche apportate alle impostazioni globali, perché queste modifiche potrebbero influenzare l'istanza dell'editor. È possibile tenere traccia delle modifiche rimanendo in ascolto di eventi generati da Gestione testi. Ad esempio, quando si specifica una preferenza globale per l'aspetto o il comportamento di un componente nell'editor principale, ad esempio relativo oggetto dati del documento, la gestione di testo archivia le informazioni e comunica a tutti i client interessati.  
@@ -42,4 +42,4 @@ Se si implementa un editor di base, è necessario monitorare le modifiche apport
   
 ## <a name="see-also"></a>Vedere anche  
  [All'interno l'Editor principale](../extensibility/inside-the-core-editor.md)   
- [Funzionalità dell'editor](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)
+ [Funzionalità dell'editor](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)

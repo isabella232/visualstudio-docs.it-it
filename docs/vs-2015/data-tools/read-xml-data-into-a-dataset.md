@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425395"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692547"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
 5. Aggiunta di codice per visualizzare lo schema XML basato sul file XML in un <xref:System.Windows.Forms.TextBox> controllo  
   
 > [!NOTE]
-> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu**Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere il **degli strumenti** dal menu**Importa / Esporta impostazioni**. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Creare un nuovo progetto  
  In questo passaggio si crea un progetto Visual Basic o Visual c# che contiene questa procedura dettagliata.  
@@ -59,7 +59,7 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
   
 2. Denominare il progetto `ReadingXML`.  
   
-3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il **ReadingXML** viene creato e aggiunto al progetto **Esplora soluzioni**.  
   
@@ -246,7 +246,7 @@ Questa procedura dettagliata illustra le nozioni di base di lettura di un file X
 - Modificare i dati nel set di dati e scriverlo in un database.
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedure dettagliate relative ai dati](http://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
+ [Procedure dettagliate relative ai dati](https://msdn.microsoft.com/library/15a88fb8-3bee-4962-914d-7a1f8bd40ec4)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [Preparazione dell'applicazione al ricevimento di dati](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Preparazione dell'applicazione al ricevimento di dati](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

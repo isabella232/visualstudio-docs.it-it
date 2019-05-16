@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d3624fd8b69a51d3d9de1776bc6d2e7bc61a4c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097167"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696184"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) con app Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
  La tabella seguente identifica le funzionalità ALM di Visual Studio che sono o meno applicabili quando si lavora con Unity. Per informazioni dettagliate sulle funzionalità fare riferimento alla documentazione collegata.  
   
 ## <a name="agile-tools"></a>Strumenti Agile:  
- Collegamento di riferimento: **[Work](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)  
+ Collegamento di riferimento: **[Work](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando Visual Studio Team Services o TFS, incluso Team Explorer Everywhere)  
   
  Commento generale: tutte le funzionalità di pianificazione e traccia sono indipendenti dal tipo di progetto e dai linguaggi di codifica.  
   
@@ -58,9 +58,9 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
-|[Usare il controllo della versione di Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Yes|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|  
-|[Introduzione a Git in Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes|Vedere le note dopo la tabella.|  
-|[Analisi del codice/migliorare la qualità del codice (riferimenti, modifiche suggerite e così via)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Yes||  
+|[Usare il controllo della versione di Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) o di Visual Studio Team Services|Yes|I progetti Unity sono semplicemente una raccolta di file che possono essere inseriti nei sistemi di controllo della versione come qualsiasi altro progetto, ma con alcune considerazioni speciali descritte dopo la presente tabella.|  
+|[Introduzione a Git in Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Yes|Vedere le note dopo la tabella.|  
+|[Analisi del codice/migliorare la qualità del codice (riferimenti, modifiche suggerite e così via)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Yes||  
 |[Trovare le modifiche apportate al codice e altri elementi della cronologia](../ide/find-code-changes-and-other-history-with-codelens.md)|Yes||  
 |[Usare le mappe del codice per eseguire il debug delle applicazioni](../modeling/use-code-maps-to-debug-your-applications.md)|Yes||  
   
@@ -73,18 +73,18 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 3. Le risorse binarie in un progetto Unity, ad esempio trame e file audio, possono richiedere una grande quantità di spazio di archiviazione. Diversi sistemi di controllo del codice sorgente, come Git, memorizzano una copia univoca di un file per ogni modifica apportata, anche se la modifica interessa solo una piccola parte del file. Ciò può causare un aumento eccessivo dell'archivio Git. Per risolvere questo problema, gli sviluppatori Unity scelgono spesso di aggiungere al repository solo le risorse finali e usare un modo diverso per mantenere una cronologia di lavoro delle risorse, ad esempio OneDrive, DropBox o git-annex. Questo approccio funziona perché tali attività in genere non richiedono il controllo della versione insieme alle modifiche del codice sorgente. In genere, gli sviluppatori impostano anche la modalità di serializzazione delle risorse dell'editor di progetto sull'opzione per forzare il testo per archiviare i file delle scene in formato testo anziché binario, in modo da consentire operazioni di unione nel controllo del codice sorgente. Per informazioni dettagliate, vedere [Editor Settings](http://docs.unity3d.com/Manual/class-EditorManager.html) (Impostazioni dell'editor) nella documentazione di Unity.  
   
 ## <a name="build"></a>Compilazione  
- Collegamento di riferimento: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Collegamento di riferimento: **[Build](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |Server TFS locale|Possibile|I progetti Unity vengono compilati tramite l'ambiente Unity e non tramite il sistema di compilazione di Visual Studio (se si usa Visual Studio Tools per Unity, vengono compilati gli script, ma non viene prodotto un eseguibile). Poiché è possibile [compilare progetti Unity dalla riga di comando](http://docs.unity3d.com/Manual/CommandLineArguments.html) (documentazione di Unity), si può configurare un processo MSBuild in un server TFS per eseguire i comandi Unity appropriati, a condizione che Unity sia installato nello stesso computer.<br /><br /> Unity offre anche [Unity Cloud Build](https://build.cloud.unity3d.com/landing/) che monitora un repository Git o SVN ed esegue compilazioni periodiche. Attualmente non funziona con il controllo della versione di Team Foundation o Visual Studio Team Services.|  
-|Server di compilazione locale collegato a Visual Studio Team Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Visual Studio Team Services in modo che usino un computer TFS locale.  Per istruzioni, vedere [Server di compilazione](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
+|Server di compilazione locale collegato a Visual Studio Team Services|Possibile|Date le stesse condizioni precedenti, è anche possibile indirizzare le compilazioni attivate tramite Visual Studio Team Services in modo che usino un computer TFS locale.  Per istruzioni, vedere [Server di compilazione](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c).|  
 |Servizio controller ospitato di Visual Studio Team Services|No|Le compilazioni Unity non sono attualmente supportate.|  
 |Definizioni di compilazione con pre e post script|Yes|Per gli script pre- e post-compilazione è anche possibile configurare una definizione di compilazione personalizzata che usa la riga di comando di Unity per eseguire una compilazione.|  
 |Integrazione continuata incluse le archiviazioni gestite|Yes|Archiviazioni gestite per TFVC solo quando Git elabora un modello di richiesta di pull anziché le archiviazioni.|  
   
 ## <a name="testing"></a>Test  
- Collegamento di riferimento: **[Test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Collegamento di riferimento: **[Test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
@@ -96,12 +96,12 @@ Lo sviluppo di app per piattaforme moderne comporta molte più attività rispett
 |[Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)|No|I test codificati dell'interfaccia utente si basano su controlli leggibili nell'interfaccia utente dell'app. Le app Unity sono di natura grafica e il contenuto non può quindi essere letto dagli strumenti di test codificato dell'interfaccia utente.|  
   
 ## <a name="improve-code-quality"></a>Migliorare la qualità del codice  
- Collegamento di riferimento: **[Migliorare la qualità del codice](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Collegamento di riferimento: **[Migliorare la qualità del codice](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Funzionalità|Supportata con Unity|Commenti aggiuntivi|  
 |-------------|--------------------------|-------------------------|  
 |[Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
-|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
+|[Ricerca del codice duplicato mediante il rilevamento del clone di codice](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
 |[Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Yes|È possibile analizzare il codice di script C# in Visual Studio.|  
 |[Esplora prestazioni](../profiling/performance-explorer.md)|No|Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (sito Web di Unity).|  
 |[Analizzare i problemi relativi alla memoria .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Gli Strumenti di Visual Studio non includono per il framework Mono, usato da Unity, per la profilatura. Usare il [profiler di Unity](http://docs.unity3d.com/Manual/Profiler.html) (documentazione di Unity).|  

@@ -25,14 +25,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 624be251be9b560f5996a16f3012825d04834758
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c25c3cdeb96abacb4123b2d0a851ac3d4acb0cd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431519"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696134"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Procedura: Utilizzare la finestra Disassembly
+# <a name="how-to-use-the-disassembly-window"></a>Procedura: Usare la finestra Disassembly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa funzionalità è disponibile solo se è abilitato il debug a livello di indirizzo il **le opzioni** della finestra di dialogo **debug** nodo. Non è invece disponibile per il debug di script o SQL.  
@@ -60,7 +60,7 @@ Questa funzionalità è disponibile solo se è abilitato il debug a livello di i
   È poco probabile che si abbia desiderio o necessità di visualizzare istruzioni in linguaggio macchina nel loro formato numerico non elaborato anziché in formato di linguaggio assembly. Tuttavia, qualora ciò fosse necessario, sarà possibile utilizzare la finestra Memoria o scegliere Mostra byte del codice dal menu di scelta rapida della finestra Disassembly.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Per visualizzare la finestra Disassembly  
   

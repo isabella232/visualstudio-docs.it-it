@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445947"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695123"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Unit test per metodi generici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile generare unit test per metodi generici procedendo esattamente come per altri metodi, come descritto in [come: Creare ed eseguire uno Unit Test](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Le sezioni seguenti forniscono informazioni ed esempi relativi alla creazione di unit test per metodi generici.  
+È possibile generare unit test per metodi generici procedendo esattamente come per altri metodi, come descritto in [come: Creare ed eseguire uno Unit Test](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Le sezioni seguenti forniscono informazioni ed esempi relativi alla creazione di unit test per metodi generici.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argomenti di tipo e vincoli di tipo  
  Quando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera uno unit test per una classe generica, ad esempio `MyList<T>`, vengono generati due metodi: un helper generico e un metodo di test. Se `MyList<T>` dispone di uno o più vincoli di tipo, l'argomento di tipo deve soddisfare tutti i vincoli. Per assicurarsi che il codice generico sottoposto a test funzioni come previsto per tutti gli input consentiti, il metodo di test chiama il metodo helper generico con tutti i vincoli che si desidera testare.  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un Test in una soluzione ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Ogni volta che viene eseguito il test SizeOfLinkedListTest, il relativo metodo TestHelper viene chiamato due volte. L'istruzione Assert deve restituire true ogni volta affinché il test venga superato. Se il test non viene superato, potrebbe non essere chiaro se l'esito negativo è dovuto alla chiamata che ha specificato `<int>` o alla chiamata che ha specificato `<char>`. Per trovare la risposta, è possibile esaminare lo stack di chiamate oppure è possibile impostare punti di interruzione nel metodo di test e quindi eseguire il debug durante l'esecuzione del test. Per altre informazioni, vedere [Procedura: Eseguire il debug durante l'esecuzione di un Test in una soluzione ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Esempio 2: Uso di un vincolo di tipo  
  Questo esempio mostra uno unit test per un metodo generico che usa un vincolo di tipo che non viene soddisfatto. La prima sezione mostra il codice del progetto di codice sottoposto a test. Il vincolo di tipo è evidenziato.  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Composizione di uno unit test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Composizione di uno unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)

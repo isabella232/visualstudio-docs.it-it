@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 549fa4842a4e57043ddac90683d05383b7c3d44d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431186"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693933"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando si trascinano elementi dal [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) nella finestra di progettazione Windows Form, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono sembra essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data** chiave del Registro di sistema.
+Quando si trascinano elementi dal [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) nella finestra di progettazione Windows Form, entra in gioco una particolare attenzione: i nomi delle colonne nelle etichette della didascalia vengono riformattati in una stringa più leggibile quando due o più parole sono sembra essere concatenati tra loro. È possibile personalizzare il modo in cui vengono create queste etichette, impostando il **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valori in il **progettisti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data** chiave del Registro di sistema.
 
 > [!NOTE]
 > Questa chiave del Registro di sistema non esiste fino a quando non si crea.

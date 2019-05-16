@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 132aa0f37cc63e6afe2eff61a6d0f6dec5b200b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425024"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692445"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvare dati in un database (a più tabelle)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,15 +34,15 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
  È possibile salvare nel database i dati dell'applicazione chiamando il metodo `Update` di un oggetto TableAdapter. Quando si trascinano tabelle dal **Zdroje dat** finestra in un form, il codice necessario per salvare i dati viene aggiunto automaticamente. Le tabelle aggiuntive che vengono aggiunti a un form richiedono l'aggiunta manuale di questo codice. In questa procedura dettagliata viene descritto come aggiungere il codice per salvare gli aggiornamenti da più di una tabella.  
   
 > [!NOTE]
-> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o l'edizione in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Le attività illustrate nella procedura dettagliata sono le seguenti:  
   
 - Creazione di una nuova **applicazioni Windows** progetto.  
   
-- Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Creazione e configurazione di un'origine dati nell'applicazione con il [configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
-- Impostazione dei controlli degli elementi di [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Impostazione dei controlli degli elementi di [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 - Creazione di controlli associati a dati con il trascinamento di elementi dalla finestra **Origini dati** nel form.  
   
@@ -64,7 +64,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
   
 2. Denominare il progetto `UpdateMultipleTablesWalkthrough`.  
   
-3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **UpdateMultipleTablesWalkthrough** viene creato e aggiunto in **Esplora soluzioni**.  
   
@@ -126,7 +126,7 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
  È possibile aggiornare il database chiamando i metodi `Update` degli oggetti TableAdapter **Customers** e **Orders**. Per impostazione predefinita, un gestore eventi per il **salvare** pulsante del<xref:System.Windows.Forms.BindingNavigator> viene aggiunto al codice del modulo per inviare aggiornamenti al database. Questa procedura consente di modificare il codice per inviare gli aggiornamenti nell'ordine corretto. Ciò elimina la possibilità di generare errori di integrità referenziale. Il codice implementa anche la gestione degli errori eseguendo il wrapping della chiamata di aggiornamento in un blocco try-catch. È possibile modificare il codice per soddisfare le esigenze dell'applicazione.  
   
 > [!NOTE]
-> Per maggiore chiarezza, questa procedura dettagliata non utilizza una transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che assicura che tutte le modifiche relative a un database vengano completate prima che eventuali modifiche vanno eseguito il commit. Per altre informazioni, vedere [transazioni e concorrenza](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Per maggiore chiarezza, questa procedura dettagliata non utilizza una transazione. Tuttavia, se si stanno aggiornando due o più tabelle correlate, includere tutta la logica di aggiornamento all'interno di una transazione. Una transazione è un processo che assicura che tutte le modifiche relative a un database vengano completate prima che eventuali modifiche vanno eseguito il commit. Per altre informazioni, vedere [transazioni e concorrenza](https://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Per aggiungere la logica di aggiornamento all'applicazione  
   
@@ -152,9 +152,9 @@ Uno degli scenari più comuni nello sviluppo di applicazioni è la visualizzazio
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati nell'applicazione Windows. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:  
   
-- Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
-- Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Procedura: Modificare un set di dati](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Modifica dell'origine dati per aggiungere o rimuovere oggetti di database. Per altre informazioni, vedere [Procedura: Modificare un set di dati](https://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)

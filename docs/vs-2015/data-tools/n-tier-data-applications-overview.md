@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559884"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693777"
 ---
 # <a name="n-tier-data-applications-overview"></a>Cenni preliminari sull'applicazione dati a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-applicazioni dati a livelli * sono applicazioni di dati che sono separate in p
   
 - Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce le impostazioni per generare le classi DataContext e di dati in diversi spazi dei nomi. In questo modo la separazione logica dei livelli di entità di data e l'accesso ai dati.  
   
-- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare la proprietà DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [a più livelli e le applicazioni Remote con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornisce il <xref:System.Data.Linq.Table%601.Attach%2A> metodo che consente di raggruppare la proprietà DataContext da livelli diversi in un'applicazione. Per altre informazioni, vedere [a più livelli e le applicazioni Remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Livello di presentazione  
  Il *livello di presentazione* è il livello in cui gli utenti interagiscono con un'applicazione. Spesso contiene la logica dell'applicazione aggiuntivi anche. Componenti del livello presentazione tipici includono quanto segue:  
   
 - Data binding, componenti, ad esempio la <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) le classi di entità per l'uso al livello presentazione.  
+- Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) le classi di entità per l'uso al livello presentazione.  
   
   Il livello di presentazione accede in genere il livello intermedio con un riferimento al servizio (ad esempio, un [servizi di Windows Communication Foundation e WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) applicazione). Il livello di presentazione non accede direttamente al livello dati. Il livello di presentazione comunica con il livello dati tramite il componente di accesso ai dati nel livello intermedio.  
   
@@ -57,9 +57,9 @@ N-applicazioni dati a livelli * sono applicazioni di dati che sono separate in p
   
 - Componenti di accesso ai dati e per la logica, come il seguente:  
   
-  - [Gli oggetti TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapter e DataReader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [Gli oggetti TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapter e DataReader](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) le classi di entità.  
+  - Oggetto rappresentazioni dei dati, ad esempio [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) le classi di entità.  
   
   - Servizi di applicazione comuni, ad esempio autenticazione, autorizzazione e la personalizzazione.  
   
@@ -87,9 +87,9 @@ Livello dati
   
  [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [Applicazioni a più livelli e remote con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [Applicazioni a più livelli e remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:System.Data.Linq.ITable.Attach%2A>   

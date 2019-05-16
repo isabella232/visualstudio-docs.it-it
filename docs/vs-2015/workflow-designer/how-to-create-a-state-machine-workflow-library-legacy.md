@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6533ae98e110b3813c6dd7f5520e322ce2cf3496
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acfa4a979614269c07969e4c01df4e994195cd64
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697109"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procedura: Creare una libreria del flusso di lavoro di una macchina a stati (legacy)
 Seguire questi passaggi per creare un progetto libreria flusso di lavoro di una macchina a stati usando la [!INCLUDE[wfd1](../includes/wfd1-md.md)] legacy fornita da [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Usare la [!INCLUDE[wfd2](../includes/wfd2-md.md)] legacy quando è necessario fare riferimento a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -50,4 +50,4 @@ Seguire questi passaggi per creare un progetto libreria flusso di lavoro di una 
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di progetti di flusso di lavoro Legacy](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Flussi di lavoro della macchina a stati](http://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)
+ [Flussi di lavoro della macchina a stati](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)
