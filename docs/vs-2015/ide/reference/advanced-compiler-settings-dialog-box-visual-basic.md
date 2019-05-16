@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441132"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699917"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Finestra di dialogo Impostazioni del compilatore avanzate (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
   
 2. Scegliere **Proprietà** dal menu **Progetto**. Quando viene visualizzata la finestra **Creazione progetti**, fare clic sulla scheda **Compilazione**.  
   
-3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+3. Nella [Pagina Compilazione, Creazione progetti (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) selezionare la **configurazione** e la **piattaforma**. Nelle configurazioni della build semplificate gli elenchi **Configurazione** e **Piattaforma** non vengono visualizzati. Per altre informazioni, vedere [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
 4. Fare clic su **Opzioni di compilazione avanzate**.  
   
@@ -55,7 +55,7 @@ Per specificare le proprietà di configurazione avanzate della build del progett
  Selezionare **Nessuna**, **Completa** o **pdb-only** (solo PDB) dall'elenco. **Nessuna** specifica che non saranno generate informazioni di debug. **Completa** specifica che verranno generate informazioni di debug complete e **pdb-only** (solo PDB) specifica che verranno generate solo informazioni di debug PDB. Per impostazione predefinita, questa opzione è impostata su **Completa**.  
   
 ## <a name="compilation-constants"></a>Costanti di compilazione  
- Le costanti di compilazione condizionale producono un effetto simile all'uso di una direttiva per il preprocessore [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) in un file di origine, ad eccezione del fatto che le costanti definite sono pubbliche e si applicano a tutti i file del progetto. È possibile usare le costanti di compilazione condizionale insieme alla direttiva [#If...Then...#Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) per compilare i file di origine in modo condizionale. Vedere [Conditional Compilation](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848) (Compilazione condizionale).  
+ Le costanti di compilazione condizionale producono un effetto simile all'uso di una direttiva per il preprocessore [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) in un file di origine, ad eccezione del fatto che le costanti definite sono pubbliche e si applicano a tutti i file del progetto. È possibile usare le costanti di compilazione condizionale insieme alla direttiva [#If...Then...#Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) per compilare i file di origine in modo condizionale. Vedere [Conditional Compilation](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848) (Compilazione condizionale).  
   
  **Definisci costante DEBUG**  
  Per impostazione predefinita, questa casella di controllo è selezionata e specifica che deve essere impostata una costante DEBUG.  
