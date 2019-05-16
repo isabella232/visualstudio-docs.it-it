@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437786"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684826"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossibile eseguire la connessione a Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437786"
 Questo messaggio di errore viene visualizzato quando si immette un nome non valido per Visual Studio Remote Debugging Monitor nella finestra di dialogo **Connetti a processo** . Il nome di Remote Debugging Monitor in genere coincide con il nome del computer con il quale si desidera stabilire la connessione per il debug remoto. Questo messaggio può venire visualizzato se il computer remoto non esiste nella rete, Remote Debugging Monitor non è configurato correttamente nel computer remoto o il computer remoto non è accessibile a causa di problemi di rete o della presenza di un firewall.  
   
 > [!IMPORTANT]
-> Se si ritiene di aver ricevuto il messaggio a causa di un bug del prodotto, segnalare il problema a [Invia smile](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)di Visual Studio. Per ottenere ulteriore assistenza, vedere [Talk to Us](../ide/talk-to-us.md) per le modalità di contatto di Microsoft.  
+> Se si ritiene di aver ricevuto il messaggio a causa di un bug del prodotto, segnalare il problema a [Invia smile](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)di Visual Studio. Per ottenere ulteriore assistenza, vedere [Talk to Us](../ide/talk-to-us.md) per le modalità di contatto di Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Il messaggio è stato visualizzato durante un debug locale  
  Se si riceve questo messaggio durante un debug locale, il problema potrebbe essere causato dal software antivirus o da un firewall di terze parti. Visual Studio è un'applicazione a 32 bit, quindi usa la versione a 64 bit del debugger remoto per eseguire il debug delle applicazioni a 64 bit. I due processi comunicano usando la rete locale nel computer locale. Il traffico di rete resta all'interno del computer, ma è possibile che un software per la sicurezza di terze parti blocchi la comunicazione.  

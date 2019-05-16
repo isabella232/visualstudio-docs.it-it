@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 60ac63be54c235187e66a85c541f925e1e34cafd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093735"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689857"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Aggiunta di un menu di scelta rapida in una finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Questa procedura dettagliata inserisce un menu di scelta rapida in una finestra 
   
  Questa procedura dettagliata illustra come creare un menu di scelta rapida come un menu di Visual Studio, la dichiarazione di voci di menu nel file vsct e quindi usando il Framework di pacchetto gestito per implementarli nella classe che definisce la finestra degli strumenti. Questo approccio semplifica l'accesso a comandi di Visual Studio, gli elementi dell'interfaccia utente e il modello oggetto di automazione.  
   
- In alternativa, se il menu di scelta rapida non accederanno funzionalità di Visual Studio, è possibile usare il <xref:System.Windows.FrameworkElement.ContextMenu%2A> proprietà di un elemento XAML nel controllo utente. Per altre informazioni, vedere [sull'oggetto ContextMenu](http://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
+ In alternativa, se il menu di scelta rapida non accederanno funzionalità di Visual Studio, è possibile usare il <xref:System.Windows.FrameworkElement.ContextMenu%2A> proprietà di un elemento XAML nel controllo utente. Per altre informazioni, vedere [sull'oggetto ContextMenu](https://msdn.microsoft.com/library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

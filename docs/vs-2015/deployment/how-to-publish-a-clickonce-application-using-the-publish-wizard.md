@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ff519416d874462a86f7e615822d15139fc4726
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697641"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedura: Pubblicare un'applicazione ClickOnce mediante la Pubblicazione guidata
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
 > Quando si installa più di una versione di un'applicazione tramite ClickOnce, l'installazione sposta le versioni precedenti dell'applicazione in una cartella denominata Archivio, nel percorso di pubblicazione specificato. L'archiviazione delle versioni precedenti consente di mantenere pulita la directory di installazione.  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero non corrispondere a quelli descritti nella Guida in quanto dipendono dall'edizione o dalle impostazioni in uso. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Per pubblicare in una condivisione file o in un percorso  
   
@@ -103,4 +103,4 @@ Per rendere disponibile un'applicazione ClickOnce agli utenti, è necessario pub
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Protezione di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Distribuzione di una soluzione Office mediante ClickOnce](http://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)
+ [Distribuzione di una soluzione Office mediante ClickOnce](https://msdn.microsoft.com/library/feb516b3-5e4d-449a-9fd2-347d08d90252)

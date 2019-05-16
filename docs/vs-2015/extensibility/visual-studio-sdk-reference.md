@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537433"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690912"
 ---
 # <a name="visual-studio-sdk-reference"></a>Informazioni di riferimento su Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ In questa sezione contiene informazioni su Visual Studio gli spazi dei nomi rela
   
 ## <a name="in-this-section"></a>In questa sezione
 
- [Configurazione dell'installazione](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Configurazione dell'installazione](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Configurare l'API di configurazione per l'individuazione di istanze di Visual Studio 2017.
 
- [Estendibilità di Apri cartella](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [Estendibilità di Apri cartella](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Area di lavoro di API per Apri cartella in Visual Studio 2017.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

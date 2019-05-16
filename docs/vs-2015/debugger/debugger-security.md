@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101639"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686791"
 ---
 # <a name="debugger-security"></a>Sicurezza del debugger
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ La possibilità di eseguire il debug di un altro processo offre grandi potenzial
  Per altre informazioni, vedere [debug remoto](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Sicurezza del debug di servizi Web  
- Il debug locale è più sicuro, ma poiché è probabile che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non sia installato nel server, non è sempre pratico. In genere, il debug dei servizi Web viene eseguito in remoto, tranne durante lo sviluppo, pertanto le procedure consigliate relative alla sicurezza del debug remoto si applicano anche al debug dei servizi Web. Di seguito sono riportate alcune procedure consigliate aggiuntive. Per altre informazioni, vedere [Debugging XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ Il debug locale è più sicuro, ma poiché è probabile che [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non sia installato nel server, non è sempre pratico. In genere, il debug dei servizi Web viene eseguito in remoto, tranne durante lo sviluppo, pertanto le procedure consigliate relative alla sicurezza del debug remoto si applicano anche al debug dei servizi Web. Di seguito sono riportate alcune procedure consigliate aggiuntive. Per altre informazioni, vedere [Debugging XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 - Non attivare il debug in un server Web compromesso.  
   

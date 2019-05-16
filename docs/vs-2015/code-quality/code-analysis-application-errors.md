@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ee5a4e9a84201f93783bcef64f92ec74206fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af00ebc2f6fdc1bc32a5a6784b88068d4e3ffb2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422747"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693389"
 ---
 # <a name="code-analysis-application-errors"></a>Errori nell'applicazione dell'analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +59,6 @@ In questa sezione è un riferimento dei messaggi di errore generati dallo strume
 
 ## <a name="related-sections"></a>Sezioni correlate
 
-- [Linee guida per la scrittura di codice sicuro](http://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
+- [Linee guida per la scrittura di codice sicuro](https://msdn.microsoft.com/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)
 - [Analisi della qualità del codice gestito](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)
-- [Risorse per la risoluzione degli errori negli strumenti di gestione del ciclo di vita dell'applicazione](http://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)
+- [Risorse per la risoluzione degli errori negli strumenti di gestione del ciclo di vita dell'applicazione](https://msdn.microsoft.com/library/76ca8f76-1e2d-4b55-89e2-bd59e4abe74c)

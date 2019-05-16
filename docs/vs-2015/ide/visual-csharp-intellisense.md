@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443172"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698213"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense per Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
   L’Elenco di completamento in C# può escludere i token irrilevanti e preselezionare quelli pertinenti al contesto. Per altre informazioni, vedere [Elenchi di completamento filtrati in C#](../misc/filtered-completion-lists-in-csharp.md) e [Elementi dell'elenco di completamento preselezionati in C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Frammenti di codice negli elenchi di completamento  
- In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
+ In Visual C#, l'elenco di completamento include frammenti di codice che consentono di inserire facilmente corpi predefiniti di codice nel programma. I frammenti di codice vengono visualizzati nell'elenco di completamento come [Elemento Shortcut (frammenti di codice IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del frammento.  Per altre informazioni sui frammenti di codice disponibili per impostazione predefinita in Visual C#, vedere [Frammenti di codice Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Parole chiave del linguaggio negli elenchi di completamento  
- In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ In Visual C#, l'elenco di completamento include anche le parole chiave del linguaggio. Per altre informazioni sulle parole chiave del linguaggio C#, vedere [Parole chiave di C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Metodi di estensione negli elenchi di completamento  
  In Visual C#, l'elenco di completamento include i metodi estensione che appartengono a un ambito.  
@@ -81,7 +81,7 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
  IntelliSense memorizza i membri recentemente selezionati nella casella popup [Elenca membri](../ide/using-intellisense.md) per il completamento del nome oggetto automatico. La volta successiva che si utilizza l'elenco dei membri, i membri utilizzati di recente vengono visualizzati nella parte superiore. La cronologia dei membri utilizzati più di recente viene cancellata tra ogni sessione nell'ambiente di sviluppo integrato.  
   
 ## <a name="override"></a>override  
- Quando si digita [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) e si preme BARRA SPAZIATRICE, IntelliSense visualizza in una casella di riepilogo popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Digitando il tipo restituito del metodo dopo `override`, IntelliSense visualizzerà soltanto i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizzerà tutti i membri della classe base.  
+ Quando si digita [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) e si preme BARRA SPAZIATRICE, IntelliSense visualizza in una casella di riepilogo popup tutti i membri validi della classe di base di cui è possibile eseguire l'override. Digitando il tipo restituito del metodo dopo `override`, IntelliSense visualizzerà soltanto i metodi che restituiscono lo stesso tipo. Se non vengono trovate corrispondenze, IntelliSense visualizzerà tutti i membri della classe base.  
   
 ## <a name="automatic-code-generation"></a>Generazione automatica di codice  
   
@@ -102,7 +102,7 @@ IntelliSense per Visual C# è disponibile durante la codifica nell'editor e dura
  Per visualizzare le opzioni disponibili nell'ambiente di sviluppo integrato (IDE) di Visual Studio, nel menu **Modifica** scegliere **IntelliSense** e quindi selezionare **Organizza using**. IDE fornisce le seguenti opzioni per l'organizzazione e la rimozione delle direttive `usings`:  
   
 ### <a name="implement-interface"></a>Implementa interfaccia  
- IntelliSense offre un'opzione che consente di implementare un'[interfaccia](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) mentre si usa l'editor di codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe viene visualizzato uno smart tag. Lo smart tag offre la possibilità di implementare automaticamente l'interfaccia, con denominazione esplicita o implicita. Con la denominazione esplicita, le dichiarazioni di metodo contengono il nome dell'interfaccia. Con la denominazione implicita, le dichiarazioni di metodo non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ IntelliSense offre un'opzione che consente di implementare un'[interfaccia](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) mentre si usa l'editor di codice. Per implementare correttamente un'interfaccia è in genere necessario creare una dichiarazione di metodo per ogni membro dell'interfaccia della classe. Usando IntelliSense, dopo aver digitato il nome di un'interfaccia in una dichiarazione di classe viene visualizzato uno smart tag. Lo smart tag offre la possibilità di implementare automaticamente l'interfaccia, con denominazione esplicita o implicita. Con la denominazione esplicita, le dichiarazioni di metodo contengono il nome dell'interfaccia. Con la denominazione implicita, le dichiarazioni di metodo non indicano l'interfaccia a cui appartengono. Un metodo di interfaccia con denominazione esplicita è accessibile solo tramite un'istanza di interfaccia e non tramite un'istanza di classe. Per altre informazioni, vedere [Implementazione esplicita dell'interfaccia](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  Con Implementa interfaccia verrà generato il numero minimo di stub di metodo necessario per soddisfare l'interfaccia. Se una classe base implementa parti dell'interfaccia, tali stub non verranno rigenerati.  
   

@@ -12,12 +12,12 @@ ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0571d66b51ce3ffd3e796579b97615aa63c5fb01
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 819c53307808bc262213735d0d3af807216b38bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58970336"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689022"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugProgramDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Il DE o il fornitore della porta personalizzata implementa questa interfaccia al report che un programma è stato terminato e non è più disponibile per il debug. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia.  
+ Il DE o il fornitore della porta personalizzata implementa questa interfaccia al report che un programma è stato terminato e non è più disponibile per il debug. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  Il DE o il fornitore della porta personalizzato crea e invia l'oggetto evento per segnalare la chiusura di un programma. Questo evento viene inviato il Germania usando il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando associato al programma in fase di debug. Il fornitore della porta personalizzata invia questo evento usando il [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interfaccia.  

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702697"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedura: Eseguire il debug su un cluster a prestazioni elevate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni √
   
  Quando si esegue il debug in un cluster ad alte prestazioni, √® possibile usare tutte le tecniche e le finestre di debug di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] disponibili per il debug remoto. Poich√©, tuttavia, il debug viene eseguito in remoto, la finestra della console esterna non √® disponibile.  
   
- Le finestre **Thread** e **Processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [come: Utilizzare la finestra processi](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [come: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
+ Le finestre **Thread** e **Processi** sono particolarmente utili per il debug di applicazioni parallele. Per suggerimenti su come usare queste finestre, vedere [come: Utilizzare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [come: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md).  
   
  Nelle procedure riportate di seguito sono illustrate alcune tecniche che risultano particolarmente utili per il debug in un cluster ad alte prestazioni.  
   
@@ -103,7 +103,7 @@ Il debug di un programma con multiprocessing in un cluster ad alte prestazioni √
 ## <a name="see-also"></a>Vedere anche  
  [Debug di applicazioni multithreading](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Debug remoto](../debugger/remote-debugging.md)   
- [Procedura: Utilizzare la finestra processi](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Procedura: Utilizzare la finestra processi](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Procedura: Utilizzare la finestra thread](../debugger/how-to-use-the-threads-window.md)   
- [Thread e processi](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Thread e processi](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Uso di punti di interruzione](../debugger/using-breakpoints.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701778"
 ---
 # <a name="property-pages-javascript"></a>Pagine proprietà, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ L'opzione **Pagine delle proprietà** consente di accedere alle impostazioni del
  Usare le opzioni seguenti per selezionare la configurazione e la piattaforma da visualizzare o modificare.  
   
  **Configurazione**  
- Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Release**, **Tutte le configurazioni** o una configurazione definita dall'utente. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni sono **Debug** (impostazione predefinita), **Release**, **Tutte le configurazioni** o una configurazione definita dall'utente. Per altre informazioni, vedere [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Piattaforma**  
- Specifica le impostazioni della piattaforma da visualizzare o modificare. Le impostazioni sono **Qualsiasi CPU** (impostazione predefinita per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** o una piattaforma definita dall'utente. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica le impostazioni della piattaforma da visualizzare o modificare. Le impostazioni sono **Qualsiasi CPU** (impostazione predefinita per le app [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** o una piattaforma definita dall'utente. Per altre informazioni, vedere [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
 ## <a name="general-page"></a>Pagina Generale  
  Usare le opzioni seguenti per impostare le proprietà generali del progetto.  
@@ -53,7 +53,7 @@ L'opzione **Pagine delle proprietà** consente di accedere alle impostazioni del
  **Percorso output**  
  Specifica il percorso dei file di output per la configurazione del progetto. Il percorso è relativo. Se si immette un percorso assoluto, questo viene salvato nel progetto. Il percorso predefinito è bin\Debug.  
   
- Quando si usano configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Quando si fa clic su **Debug**, **Avvia debug** (o si preme F5), la compilazione viene salvata nel percorso di debug, indipendentemente dal valore specificato in **Percorso output**. Tuttavia, il comando **Compila soluzione** del menu **Compila** inserisce la compilazione nel percorso specificato. Per abilitare configurazioni di compilazione avanzate, nella barra dei menu scegliere **Strumenti**, **Opzioni**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, selezionare **Generale** e quindi deselezionare la casella di controllo **Mostra configurazioni della build avanzate**. In questo modo, è possibile controllare manualmente tutti i valori di configurazione e specificare se compilare una versione di debug o una finale. Per altre informazioni, vedere [NIB: Generale, progetti e soluzioni, finestra di dialogo Opzioni](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Quando si usano configurazioni di compilazione semplificate, il sistema del progetto determina se compilare una versione di debug o una versione finale. Quando si fa clic su **Debug**, **Avvia debug** (o si preme F5), la compilazione viene salvata nel percorso di debug, indipendentemente dal valore specificato in **Percorso output**. Tuttavia, il comando **Compila soluzione** del menu **Compila** inserisce la compilazione nel percorso specificato. Per abilitare configurazioni di compilazione avanzate, nella barra dei menu scegliere **Strumenti**, **Opzioni**. Nella finestra di dialogo **Opzioni** espandere **Progetti e soluzioni**, selezionare **Generale** e quindi deselezionare la casella di controllo **Mostra configurazioni della build avanzate**. In questo modo, è possibile controllare manualmente tutti i valori di configurazione e specificare se compilare una versione di debug o una finale. Per altre informazioni, vedere [NIB: Generale, progetti e soluzioni, finestra di dialogo Opzioni](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Lingua predefinita**  
  Specifica la lingua predefinita per il progetto. L'opzione di lingua selezionata in **Orologio, lingua e opzioni internazionali** nel Pannello di controllo specifica la lingua preferita dell'utente. Specificando una lingua predefinita per il progetto, si garantisce che vengano usate le risorse della lingua predefinita specificate se la lingua preferita dell'utente non corrisponde alle risorse della lingua presenti nell'applicazione.  

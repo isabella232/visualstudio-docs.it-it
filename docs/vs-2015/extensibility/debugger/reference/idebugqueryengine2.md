@@ -12,12 +12,12 @@ ms.assetid: 8f0e1838-a818-4459-9138-a3dceb7408de
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4e85732221e2d4d5024ba295cac551ab45f1ee12
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7274d621e47c9c705cc0ce6bc4ad49f24e144f59
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969954"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683285"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugQueryEngine2 : IUnknown
  La Germania implementa questa interfaccia per gli oggetti che implementano le interfacce DE più comuni (ad esempio [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md), [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md), e [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)) in ordine per consentire l'accesso per il [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) dell'interfaccia della DE stesso.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un'interfaccia DE tipica per ottenere questa interfaccia.  
+ Chiamare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un'interfaccia DE tipica per ottenere questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugQueryEngine2`.  

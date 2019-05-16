@@ -27,14 +27,14 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 233092af638824c462a6d9a47865a1c6f5fd9397
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445038"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697472"
 ---
-# <a name="how-to-use-the-registers-window"></a>Procedura: Utilizzare la finestra registri
+# <a name="how-to-use-the-registers-window"></a>Procedura: Usare la finestra Registri
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La finestra Registri è disponibile solo se è abilitato il debug a livello di indirizzo nel **le opzioni** della finestra di dialogo **debug** nodo **generale** categoria.  
@@ -46,7 +46,7 @@ La finestra Registri è disponibile solo se è abilitato il debug a livello di i
  Per un'introduzione generale a concetti di base registri e la finestra registri, vedere [nozioni fondamentali di debug: Finestra Registri](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
-> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Le finestre di dialogo e i comandi di menu visualizzati potrebbero essere diversi da quelli descritti nella Guida a seconda delle impostazioni attive o dell'edizione del programma. Per modificare le impostazioni, scegliere **Importa/Esporta impostazioni** dal menu **Strumenti** . Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Per visualizzare la finestra Registri  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442618"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693964"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Passaggio 2: Creare un problema di addizione casuale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Nella seconda parte di questa esercitazione vengono aggiunti al quiz problemi di
   
      `Random` è noto come oggetto. Probabilmente la parola oggetto è già stata incontrata. Nella prossima esercitazione ne verrà spiegato il significato in termini di programmazione. Per ora, è sufficiente ricordare che è possibile utilizzare le istruzioni `new` per creare pulsanti, etichette, panelli, elementi OpenFileDialog, ColorDialog, SoundPlayer, Random e form e che tali elementi sono definiti oggetti. Quando si esegue il programma, viene avviato il form e il codice sottostante crea un oggetto `Random` a cui viene assegnato il nome **randomizer**.  
   
-     Verrà quindi compilato un metodo per controllare le risposte, pertanto nel quiz è richiesto l'uso di variabili per archiviare numeri casuali generati per ciascun problema. Vedere [Variabili](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) o [Tipi](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Per utilizzare correttamente le variabili, è necessario dichiararle ovvero elencarne i nomi e i tipi di dati.  
+     Verrà quindi compilato un metodo per controllare le risposte, pertanto nel quiz è richiesto l'uso di variabili per archiviare numeri casuali generati per ciascun problema. Vedere [Variabili](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) o [Tipi](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Per utilizzare correttamente le variabili, è necessario dichiararle ovvero elencarne i nomi e i tipi di dati.  
   
 4. Aggiungere due variabili Integer al form e denominarle **addend1** e **addend2**.  
   

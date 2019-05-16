@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7173abd87a9e7345e7d7caee02d2bb333f507514
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438072"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696065"
 ---
 # <a name="output-window"></a>Finestra di output
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,14 +61,14 @@ Nella finestra **Output** è possibile che vengano visualizzati messaggi di stat
   
  È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della classe <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> nello spazio dei nomi <xref:System.Diagnostics> nella libreria di classi .NET Framework. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per altre informazioni, vedere [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).  
   
- In [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo F1 su una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattazione dell'output di un'istruzione di compilazione personalizzata o un evento di compilazione](http://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
+ In [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo F1 su una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattazione dell'output di un'istruzione di compilazione personalizzata o un evento di compilazione](https://msdn.microsoft.com/library/92ad3e38-24d7-4b89-90e6-5a16f5f998da).  
   
 ## <a name="scrolling-behavior"></a>Comportamento dello scorrimento  
  Se si usa lo scorrimento automatico nella finestra Output e quindi si naviga usando il mouse o i tasti di direzione, lo scorrimento automatico viene interrotto. Per riprendere lo scorrimento automatico, premere CTRL+FINE.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Procedura: Controllare la finestra di Output](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Procedura: Controllare la finestra di Output](https://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compiling and Building](../../ide/compiling-and-building-in-visual-studio.md)  (Compilazione e creazione)  
  [Understanding Build Configurations](../../ide/understanding-build-configurations.md)  (Informazioni sulle configurazioni delle compilazioni)  
- [Panoramica della libreria di classi](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)
+ [Panoramica della libreria di classi](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

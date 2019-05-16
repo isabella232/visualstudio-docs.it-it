@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1e2f40421c2b59e61de1560619422491a37ed8d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446711"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684694"
 ---
 # <a name="writing-a-t4-text-template"></a>Scrittura di un modello di testo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- Per un elenco delle macro, vedere [macro comuni per i comandi di compilazione e le proprietà](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
+ Per un elenco delle macro, vedere [macro comuni per i comandi di compilazione e le proprietà](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b).  
   
  La direttiva dell'assembly non ha alcun effetto una [modello di testo pre-elaborato](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
@@ -264,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- È anche possibile ottenere altri servizi forniti dall'host. Per altre informazioni, vedere [l'accesso a Visual Studio o altri host da un modello](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ È anche possibile ottenere altri servizi forniti dall'host. Per altre informazioni, vedere [l'accesso a Visual Studio o altri host da un modello](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelli di testo della fase di progettazione eseguiti in un AppDomain separato  
  È necessario essere consapevoli che un [modello di testo in fase di progettazione](../modeling/design-time-code-generation-by-using-t4-text-templates.md) viene eseguito in un AppDomain separato dall'applicazione principale. Nella maggior parte dei casi tale aspetto non è importante, ma in determinati casi complessi potrebbero verificarsi delle restrizioni. Se ad esempio si desidera passare i dati all'intero o all'esterno del modello da un servizio separato, il servizio deve fornire un'API serializzabile.  

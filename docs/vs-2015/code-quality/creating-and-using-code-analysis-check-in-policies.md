@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437089"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697055"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Creazione e utilizzo di criteri di archiviazione di analisi codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ Quando si usa Team Foundation Version Control (TFVC), è possibile creare un cri
  Viene illustrato come aggiungere parole e token al dizionario in cui viene fatto riferimento nelle regole di denominazione di analisi codice.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Impostare e applicare controlli di qualità](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Impostare e applicare controlli di qualità](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Miglioramento della qualità del codice con i criteri di archiviazione del progetto team](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

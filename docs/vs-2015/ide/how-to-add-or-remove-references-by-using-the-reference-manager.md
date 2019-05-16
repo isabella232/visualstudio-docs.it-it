@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445682"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701160"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti mediante Gestione riferimenti
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare la finestra di dialogo **Gestione riferimenti** per aggiungere e gestire riferimenti a componenti sviluppati da esperti indipendenti, da Microsoft o da altre società. Se si sviluppa un’app Universal Windows, il progetto fa riferimento automaticamente a tutte le DLL SDK Windows corrette. Se si sviluppa un'applicazione .NET, il progetto fa automaticamente riferimento a mscorlib. dll. Alcune API .NET vengono esposte nei componenti che è necessario aggiungere manualmente. I riferimenti ai componenti COM o ai componenti personalizzati devono essere aggiunti manualmente.  
@@ -94,7 +94,7 @@ ms.locfileid: "63445682"
   
 - Un componente che usa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] è incompatibile con un progetto destinato a [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Quando si crea una nuova applicazione, alcuni progetti sono destinati a [!INCLUDE[net_v45](../includes/net-v45-md.md)] per impostazione predefinita. Per altre informazioni, vedere [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Quando si crea una nuova applicazione, alcuni progetti sono destinati a [!INCLUDE[net_v45](../includes/net-v45-md.md)] per impostazione predefinita. Per altre informazioni, vedere [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Evitare di aggiungere riferimenti a file agli output di altri progetti della stessa soluzione, poiché potrebbero verificarsi errori di compilazione. Usare invece la scheda **Progetti** della finestra di dialogo **Aggiungi riferimento** per creare riferimenti da progetto a progetto. Tale procedura facilita lo sviluppo in team, consentendo una migliore gestione delle librerie di classi create nei progetti. Per altre informazioni, vedere [Risoluzione dei problemi relativi ai riferimenti interrotti](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ ms.locfileid: "63445682"
 </PropertyGroup>  
 ```  
   
- Assicurarsi di selezionare la casella di controllo **Windows** in questo sottogruppo. A questo punto dovrebbe essere possibile utilizzare gli elementi Windows Runtime. Tuttavia, è possibile che si desideri aggiungere System.Runtime, in cui Windows Runtime definisce alcune classi e interfacce standard, come IEnumerable, che sono utilizzate in tutte le librerie di Windows Runtime. Per informazioni su come aggiungere System.Runtime, vedere [App desktop gestite e Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Assicurarsi di selezionare la casella di controllo **Windows** in questo sottogruppo. A questo punto dovrebbe essere possibile utilizzare gli elementi Windows Runtime. Tuttavia, è possibile che si desideri aggiungere System.Runtime, in cui Windows Runtime definisce alcune classi e interfacce standard, come IEnumerable, che sono utilizzate in tutte le librerie di Windows Runtime. Per informazioni su come aggiungere System.Runtime, vedere [App desktop gestite e Windows Runtime](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Sottogruppo Estensioni  
  In Estensioni sono elencati gli SDK che estendono la piattaforma Windows di destinazione. Questa scheda viene visualizzata solo per i progetti di applicazioni per [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. Nei progetti desktop questa scheda non sarà visualizzata in quanto tali progetti possono utilizzare solo i file .winmd del produttore.  
@@ -216,5 +216,5 @@ ms.locfileid: "63445682"
  La barra di ricerca della finestra di dialogo **Gestione riferimenti** viene abilitata nella scheda attiva. Ad esempio, se un utente digita "sistema" nella barra di ricerca mentre è attiva la scheda **Soluzione**, non verrà restituito alcun risultato a meno che la soluzione non sia costituita da un nome di progetto contenente il termine "sistema".  
   
 ## <a name="see-also"></a>Vedere anche  
- [NIB procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB procedura: Aggiungere o rimuovere riferimenti utilizzando la finestra di dialogo Aggiungi riferimento](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gestione dei riferimenti in un progetto](../ide/managing-references-in-a-project.md)

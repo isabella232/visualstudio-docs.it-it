@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: f9d930765a427d32836f464a424b5cd898090ac5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5046a35cbc681ede4aff85023feeccd71a61b5b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436539"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693832"
 ---
 # <a name="upgrading-custom-projects"></a>Aggiornamento di progetti personalizzati
 Se si modificano le informazioni rese persistenti nel file di progetto tra diverse versioni di Visual Studio del prodotto, è necessario supportare l'aggiornamento del file di progetto dalla versione precedente a quella nuova. Per supportare l'aggiornamento che consente di partecipare le **conversione guidata di Visual Studio**, implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interfaccia. Questa interfaccia contiene l'unico meccanismo disponibile per l'aggiornamento della copia. L'aggiornamento del progetto viene eseguito all'apertura di una parte della soluzione. L'interfaccia <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> è implementata dalla factory del progetto o almeno deve poter essere ottenuta dalla factory del progetto.  
@@ -109,7 +109,7 @@ Se si modificano le informazioni rese persistenti nel file di progetto tra diver
   4. L'ambiente chiama `IVsProjectUpgrade::UpgradeProject` una seconda volta per determinare se l'oggetto di progetto deve essere aggiornato. Tuttavia, questa chiamata viene eseguita su una nuova, seconda, istanza del progetto, Project2. Si tratta del progetto aperto nella soluzione.  
   
       > [!NOTE]
-      > Nel caso il primo progetto, Project1, sia impostato nello stato inattivo, è necessario restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> dalla prima chiamata nell'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>. Vedere [Basic Project](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) per un'implementazione di `IVsProjectUpgrade::UpgradeProject`.  
+      > Nel caso il primo progetto, Project1, sia impostato nello stato inattivo, è necessario restituire <xref:Microsoft.VisualStudio.VSConstants.S_OK> dalla prima chiamata nell'implementazione di <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A>. Vedere [Basic Project](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) per un'implementazione di `IVsProjectUpgrade::UpgradeProject`.  
   
   5. Si chiama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e si passa un valore <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> per il parametro `rgfQueryEdit`.  
   
@@ -118,6 +118,6 @@ Se si modificano le informazioni rese persistenti nel file di progetto tra diver
   Se non è possibile eseguire l'aggiornamento, restituire <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> da `IVsProjectUpgrade::UpgradeProject`. Se non è necessario eseguire l'aggiornamento o si sceglie di non eseguirlo, gestire la chiamata `IVsProjectUpgrade::UpgradeProject` come un'operazione che non produce effetti. Se si restituisce <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, viene aggiunto un nodo segnaposto alla soluzione per il progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visual Studio Conversion Wizard](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio Conversion Wizard](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Aggiornamento degli elementi di progetto](../misc/upgrading-project-items.md)   
  [Progetti](../extensibility/internals/projects.md)

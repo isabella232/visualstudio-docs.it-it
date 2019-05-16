@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425378"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699775"
 ---
 # <a name="edit-data-in-datasets"></a>Modifica di dati nei set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Per inserire nuove righe in un set di dati  
- Le applicazioni che usano controlli associati a dati in genere aggiungono nuovi record tramite il **Aggiungi nuovo** pulsante in un [controllo BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Le applicazioni che usano controlli associati a dati in genere aggiungono nuovi record tramite il **Aggiungi nuovo** pulsante in un [controllo BindingNavigator](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  Per aggiungere manualmente i nuovi record a un set di dati, creare una nuova riga di dati chiamando il metodo nella DataTable. Quindi aggiungere la riga per il <xref:System.Data.DataRow> collection (<xref:System.Data.DataTable.Rows%2A>) del <xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ Si modificano i dati in tabelle di dati proprio come si modificano i dati in una
   
 - Ogni riga di dati modificati contiene più versioni di riga (<xref:System.Data.DataRowVersion>), la versione originale (prima delle modifiche) e la versione corrente (dopo le modifiche). Durante il periodo durante cui è in sospeso una modifica (l'ora di quando è possibile rispondere al <xref:System.Data.DataTable.RowChanging> eventi), una terza versione, ovvero quella proposta, è disponibile anche.
   
-  Il <xref:System.Data.DataSet.HasChanges%2A> metodo di un set di dati restituisce `true` se sono state apportate modifiche nel set di dati. Dopo aver determinato l'esistano di righe modificate, è possibile chiamare il `GetChanges` metodo di un <xref:System.Data.DataSet> o <xref:System.Data.DataTable> per restituire un set di righe modificate. Per altre informazioni, vedere [Procedura: Recuperare le righe modificate](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  Il <xref:System.Data.DataSet.HasChanges%2A> metodo di un set di dati restituisce `true` se sono state apportate modifiche nel set di dati. Dopo aver determinato l'esistano di righe modificate, è possibile chiamare il `GetChanges` metodo di un <xref:System.Data.DataSet> o <xref:System.Data.DataTable> per restituire un set di righe modificate. Per altre informazioni, vedere [Procedura: Recuperare le righe modificate](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Per determinare se sono state apportate modifiche alle righe  
   

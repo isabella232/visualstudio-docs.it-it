@@ -10,19 +10,19 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8588efe9ce460a34fc71f44bc0116b5977afe7aa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112258"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705943"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Componente aggiuntivo di Excel di esempio per i test codificati dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo componente aggiuntivo di esempio per [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] è specificamente progettato per supportare i test codificati dell'interfaccia utente dei fogli di lavoro di Excel registrati ed eseguiti in Visual Studio Enterprise. Per creare il componente aggiuntivo, si usa Visual Studio Tools per Office.  
   
- Per altre informazioni su come creare un componente aggiuntivo di Excel, vedere [procedura dettagliata: Creazione di VSTO prima del componente aggiuntivo per Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) o cercare in MSDN per "componente aggiuntivo Excel".  
+ Per altre informazioni su come creare un componente aggiuntivo di Excel, vedere [procedura dettagliata: Creazione di VSTO prima del componente aggiuntivo per Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f) o cercare in MSDN per "componente aggiuntivo Excel".  
   
  Anche se il componente aggiuntivo per Excel non è l'argomento principale di questi documenti sull'estensione dei test codificati dell'interfaccia utente per Excel, alcuni commenti possono essere utili.  
   
@@ -47,5 +47,5 @@ Questo componente aggiuntivo di esempio per [!INCLUDE[ofprexcel](../includes/ofp
   
 ## <a name="see-also"></a>Vedere anche  
  [Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Procedura dettagliata: Creazione del primo aggiuntivo VSTO per Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
- [Sviluppo di Office e SharePoint](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)
+ [Procedura dettagliata: Creazione del primo aggiuntivo VSTO per Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Sviluppo di Office e SharePoint](https://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

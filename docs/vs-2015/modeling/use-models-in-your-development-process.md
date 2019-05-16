@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 92e8e236be1c6aa07709d03274a4c964b17b1bad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038408"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700719"
 ---
 # <a name="use-models-in-your-development-process"></a>Usare modelli nel processo di sviluppo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ In Visual Studio è possibile usare un modello che consenta di comprendere e mod
 |**Articoli e pubblicazioni tecniche**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Documentazione Visual Studio Architecture Tooling Guidance](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Usare i modelli nello sviluppo Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Usare i modelli nello sviluppo Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Creare modelli per l'app](../modeling/create-models-for-your-app.md)   
  [Modellare i requisiti utente](../modeling/model-user-requirements.md)   
  [Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)   

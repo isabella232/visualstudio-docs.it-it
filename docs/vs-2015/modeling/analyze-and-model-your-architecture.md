@@ -32,12 +32,12 @@ caps.latest.revision: 129
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d7a36d2033fabf6562cadfde84db84b06fb63fee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 59cb744b64137a3ccf34e87d89abcba22e2afc9b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001379"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681000"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizzare e modellare l'architettura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,4 +79,4 @@ Assicurarsi che l'app soddisfi i requisiti usando gli strumenti di architettura 
 ## <a name="see-also"></a>Vedere anche  
 
 - [Quali sono le novità per la modellazione in Visual Studio 2015](../modeling/what-s-new-for-design-in-visual-studio.md)   
-- [Gestione del ciclo di vita di DevOps e delle applicazioni](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [Gestione del ciclo di vita di DevOps e delle applicazioni](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)

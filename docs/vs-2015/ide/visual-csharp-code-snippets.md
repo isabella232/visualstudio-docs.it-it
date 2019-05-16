@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47658a8aec8b2dedd2dcdeb337bdca805e1b0bca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4655ea7160d353fc8735a9025f36de368f247ba8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698175"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,49 +36,49 @@ I frammenti di codice sono piccole porzioni di codice pronte all'uso che si poss
   
 |Nome (o collegamento)|Descrizione|Percorsi validi per l'inserimento del frammento di codice|  
 |--------------------------|-----------------|---------------------------------------|  
-|#if|Crea una direttiva [#if](http://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) e una direttiva [#endif](http://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|Ovunque.|  
-|#region|Crea una direttiva [#region](http://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) e una direttiva [#endregion](http://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|Ovunque.|  
+|#if|Crea una direttiva [#if](https://msdn.microsoft.com/library/48cabbff-ca82-491f-a56a-eeccd528c7c2) e una direttiva [#endif](https://msdn.microsoft.com/library/6a5fca55-5aee-441f-86f6-1c99fbe9ec05).|Ovunque.|  
+|#region|Crea una direttiva [#region](https://msdn.microsoft.com/library/672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4) e una direttiva [#endregion](https://msdn.microsoft.com/library/16099660-91b2-49e5-9646-77f9ef069526).|Ovunque.|  
 |~|Crea un distruttore per la classe contenitore.|All'interno di una classe.|  
 |Attributo|Crea una dichiarazione per una classe che deriva da <xref:System.Attribute>.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
-|checked|Crea un blocco [checked](http://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|checked|Crea un blocco [checked](https://msdn.microsoft.com/library/718a1194-988d-48a3-b089-d6ee8bd1608d).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |classe|Crea una dichiarazione di classe.|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
 |ctor|Crea un costruttore per la classe contenitore.|All'interno di una classe.|  
 |cw|Crea una chiamata a <xref:System.Console.WriteLine%2A>.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|do|Crea un ciclo [do](http://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|else|Crea un blocco [else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|enum|Crea una dichiarazione [enum](http://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
+|do|Crea un ciclo [do](https://msdn.microsoft.com/library/50725f79-9ba6-4898-aa78-6e331568a1bb)`while`.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|else|Crea un blocco [else](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|enum|Crea una dichiarazione [enum](https://msdn.microsoft.com/library/bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
 |equals|Crea una dichiarazione di metodo che esegue l'override del metodo <xref:System.Object.Equals%2A> definito nella classe <xref:System.Object>.|All'interno di una classe o uno struct.|  
 |exception|Crea una dichiarazione per una classe che deriva da un'eccezione (<xref:System.Exception> per impostazione predefinita).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
-|for|Crea un ciclo [for](http://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|foreach|Crea un ciclo [foreach](http://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|forr|Crea un ciclo [for](http://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) che decrementa la variabile di ciclo dopo ogni iterazione.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|if|Crea un blocco [if](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|for|Crea un ciclo [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|foreach|Crea un ciclo [foreach](https://msdn.microsoft.com/library/5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|forr|Crea un ciclo [for](https://msdn.microsoft.com/library/34041a40-2c87-467a-9ffb-a0417d8f67a8) che decrementa la variabile di ciclo dopo ogni iterazione.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|if|Crea un blocco [if](https://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |indicizzatore|Crea una dichiarazione di indicizzatore.|All'interno di una classe o uno struct.|  
-|interfaccia|Crea una dichiarazione [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
+|interfaccia|Crea una dichiarazione [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
 |invoke|Crea un blocco che richiama in modo sicuro un evento.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |iteratore|Crea un iteratore.|All'interno di una classe o uno struct.|  
 |iterindex|Crea una coppia iteratore/indicizzatore "denominata" usando una classe annidata.|All'interno di una classe o uno struct.|  
-|blocco|Crea un blocco [lock](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|blocco|Crea un blocco [lock](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
 |mbox|Crea una chiamata a <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Può essere necessario aggiungere un riferimento a System.Windows.Forms.dll.|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|namespace|Crea una dichiarazione [namespace](http://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|  
-|prop|Crea una dichiarazione di [proprietà implementata automaticamente](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|All'interno di una classe o uno struct.|  
+|namespace|Crea una dichiarazione [namespace](https://msdn.microsoft.com/library/0a788423-9110-42e0-97d9-bda41ca4870f).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|  
+|prop|Crea una dichiarazione di [proprietà implementata automaticamente](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).|All'interno di una classe o uno struct.|  
 |propfull|Crea una dichiarazione di proprietà con le funzioni di accesso get e set.|All'interno di una classe o uno struct.|  
-|propg|Crea una [proprietà implementata automaticamente](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) di sola lettura con una funzione di accesso "set" privata.|All'interno di una classe o uno struct.|  
-|sim|Crea una dichiarazione [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](http://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) del metodo Main.|All'interno di una classe o uno struct.|  
-|struct|Crea una dichiarazione [struct](http://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
-|svm|Crea una dichiarazione [static](http://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](http://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) del metodo Main.|All'interno di una classe o uno struct.|  
-|switch|Crea un blocco [switch](http://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|try|Crea un blocco [try-catch](http://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|tryf|Crea un blocco [try-finally](http://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|unchecked|Crea un blocco [unchecked](http://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|unsafe|Crea un blocco [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
-|utilizzo|Crea una direttiva [using](http://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|  
-|while|Crea un ciclo [while](http://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|propg|Crea una [proprietà implementata automaticamente](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7) di sola lettura con una funzione di accesso "set" privata.|All'interno di una classe o uno struct.|  
+|sim|Crea una dichiarazione [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[int](https://msdn.microsoft.com/library/212447b4-5d2a-41aa-88ab-84fe710bdb52) del metodo Main.|All'interno di una classe o uno struct.|  
+|struct|Crea una dichiarazione [struct](https://msdn.microsoft.com/library/ff3dd9b7-dc93-4720-8855-ef5558f65c7c).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale), una classe o uno struct.|  
+|svm|Crea una dichiarazione [static](https://msdn.microsoft.com/library/5509e215-2183-4da3-bab4-6b7e607a4fdf)[void](https://msdn.microsoft.com/library/0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4) del metodo Main.|All'interno di una classe o uno struct.|  
+|switch|Crea un blocco [switch](https://msdn.microsoft.com/library/44bae8b8-8841-4d85-826b-8a94277daecb).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|try|Crea un blocco [try-catch](https://msdn.microsoft.com/library/cb5503c7-bfa1-4610-8fc2-ddcd2e84c438).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|tryf|Crea un blocco [try-finally](https://msdn.microsoft.com/library/c27623fb-7261-4464-862c-7a369d3c8f0a).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|unchecked|Crea un blocco [unchecked](https://msdn.microsoft.com/library/0c021f7c-923f-4b3d-a58f-55336f5ac27e).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|unsafe|Crea un blocco [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
+|utilizzo|Crea una direttiva [using](https://msdn.microsoft.com/library/b42b8e61-5e7e-439c-bb71-370094b44ae8).|All'interno di uno spazio dei nomi (incluso lo spazio dei nomi globale).|  
+|while|Crea un ciclo [while](https://msdn.microsoft.com/library/72a0765c-6852-4aca-b327-4a11cb7f5c59).|All'interno di un metodo, un indicizzatore, una funzione di accesso proprietà o una funzione di accesso eventi.|  
   
 ## <a name="see-also"></a>Vedere anche  
  [Funzioni dei frammenti di codice](../ide/code-snippet-functions.md)   
  [Frammenti di codice](../ide/code-snippets.md)   
- [Procedura: Creare un nuovo frammento con sostituzioni](http://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
+ [Procedura: Creare un nuovo frammento con sostituzioni](https://msdn.microsoft.com/8d56d43c-097a-475b-aa85-cae1554b6338)   
  [Parametri di modello](../ide/template-parameters.md)   
  [Procedura: Usare frammenti di codice racchiusi](../ide/how-to-use-surround-with-code-snippets.md)   
- [Procedura: Ripristino C# Refactoring di frammenti](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Procedura: Ripristinare refactoring di frammenti C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

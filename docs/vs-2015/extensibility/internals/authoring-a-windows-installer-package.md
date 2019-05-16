@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682544"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Creazione e modifica di un pacchetto di Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Il modello di Windows Installer le unità di dati. Anziché scrivere uno script 
   
 - Integrare il pacchetto VSPackage nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chiamando **/setup devenv.exe** (usando la tabella CustomAction).  
   
-  Per altre informazioni, vedere [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Per altre informazioni, vedere [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Strumenti di installazione  
  Un'ampia gamma di strumenti di installazione di terze parti offrono un ambiente di sviluppo per pacchetti di Windows Installer. Due strumenti gratuiti sono i seguenti:  

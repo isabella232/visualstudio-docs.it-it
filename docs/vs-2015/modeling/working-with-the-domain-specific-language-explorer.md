@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92f2dc0f425c86b7304ccde5778f8479678bc41f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef80d444c24cfa0bf78d23aabc4f7d7d0bc819a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694181"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilizzo di Esplora linguaggi specifici di dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ Il **DSL Explorer** visualizza diversi tipi di informazioni in una visualizzazio
 - **Comportamento di serializzazione XML**. Impostazioni di serializzazione per il modello. Per altre informazioni sulla serializzazione, vedere [archiviazione di File di personalizzazione e la serializzazione XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Glossario di Strumenti Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossario di Strumenti Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

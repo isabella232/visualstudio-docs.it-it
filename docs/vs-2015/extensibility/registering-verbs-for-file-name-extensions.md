@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432540"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685278"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrazione di verbi per le estensioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'associazione di un'estensione di file a un'applicazione ha in genere un'azione da preferire che si verifica quando un utente fa doppio clic su un file. Preferibile utilizzare l'azione è collegata a un verbo, ad esempio open, che corrisponde all'azione.  
   
- È possibile registrare i verbi associati con un identificatore a livello di codice (ProgID) per un'estensione usando la chiave di Shell che si trova in HKEY_CLASSES_ROOT\\*progid*\shell. Per altre informazioni, vedere [tipi di File](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ È possibile registrare i verbi associati con un identificatore a livello di codice (ProgID) per un'estensione usando la chiave di Shell che si trova in HKEY_CLASSES_ROOT\\*progid*\shell. Per altre informazioni, vedere [tipi di File](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Registrazione di verbi Standard  
  Il sistema operativo riconosce i verbi standard seguenti:  

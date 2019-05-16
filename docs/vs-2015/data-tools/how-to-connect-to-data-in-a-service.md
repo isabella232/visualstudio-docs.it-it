@@ -22,19 +22,19 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22a1a991a950ba8e1a7c4c39299616641797630c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684735"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedura: Connettersi ai dati di un servizio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selezionando **Service** sul **scegliere un tipo di origine dati**pagina.  
+Per connettere l'applicazione ai dati restituiti da un servizio eseguendo il [configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selezionando **Service** sul **scegliere un tipo di origine dati**pagina.  
   
- Dopo il completamento della procedura guidata, viene aggiunto al progetto un riferimento al servizio ed è immediatamente disponibile nel [finestra Origini dati](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
+ Dopo il completamento della procedura guidata, viene aggiunto al progetto un riferimento al servizio ed è immediatamente disponibile nel [finestra Origini dati](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
 > Gli elementi visualizzati nella finestra **Origini dati** dipendono dalle informazioni restituite dal servizio. Alcuni servizi potrebbero non fornire informazioni sufficienti per consentire alla **Configurazione guidata origine dati** di creare oggetti associabili. Ad esempio, se il servizio restituisce un set di dati non tipizzati, quindi non ci sono elementi vengono visualizzati nei **finestra Origini dati** dopo aver completato la procedura guidata. Questo avviene perché i set di dati non tipizzati non forniscono alcuno schema, in modo che la procedura guidata non dispone di informazioni sufficienti per creare l'origine dati.  

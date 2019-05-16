@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434855"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685326"
 ---
-# <a name="how-to-use-the-threads-window"></a>Procedura: Utilizzare la finestra thread
+# <a name="how-to-use-the-threads-window"></a>Procedura: Usare la finestra Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione sottoposta a debug.  
@@ -127,7 +127,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
 ## <a name="freezing-and-thawing-threads"></a>Blocco e sblocco dei thread  
  Quando si blocca un thread, l'esecuzione dello stesso da parte del sistema non viene avviata anche se le risorse sono disponibili.  
   
- Nel codice nativo, è possibile sospendere o riprendere i thread chiamando le funzioni di Windows `SuspendThread` e `ResumeThread` o le funzioni MFC [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) e [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Se si chiama `SuspendThread` o `ResumeThread`, si modifica il *numero sospesi*, che viene visualizzato il **thread** finestra. Tuttavia, se si blocca o sblocca un thread nativo, il numero sospesi non viene modificato. Nel codice nativo, un thread non può essere eseguito a meno che non sia sbloccato e il numero sospesi non sia pari a zero.  
+ Nel codice nativo, è possibile sospendere o riprendere i thread chiamando le funzioni di Windows `SuspendThread` e `ResumeThread` o le funzioni MFC [CWinThread:: SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) e [CWinThread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Se si chiama `SuspendThread` o `ResumeThread`, si modifica il *numero sospesi*, che viene visualizzato il **thread** finestra. Tuttavia, se si blocca o sblocca un thread nativo, il numero sospesi non viene modificato. Nel codice nativo, un thread non può essere eseguito a meno che non sia sbloccato e il numero sospesi non sia pari a zero.  
   
  Nel codice gestito, il blocco o lo sblocco di un thread comporta la modifica del numero sospesi. Nel codice gestito, un thread bloccato presenta un numero sospesi pari a 1. Nel codice nativo, un thread bloccato presenta un numero sospesi pari a 0 a meno che non sia stato sospeso tramite una chiamata a `SuspendThread`.  
   

@@ -9,17 +9,17 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756491"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691689"
 ---
 # <a name="performance-rules-by-id"></a>Regole di prestazioni in base all'ID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Avviso|Description|  
+Avviso|Descrizione|  
 |-------------|-----------------|  
 |[DA0001: Utilizzare StringBuilder per le concatenazioni](../profiling/da0001-use-stringbuilder-for-concatenations.md)|Le chiamate a System.String.Concat sono una percentuale significativa dei dati di profilatura. Considerare la possibilità di usare la classe <xref:System.Text.StringBuilder> per costruire stringhe da più segmenti.|  
 |[DA0002: VSPerfCorProf.dll mancante](../profiling/da0002-vsperfcorprof-dll-is-missing.md)|Il profiler non è in grado di trovare VSPerfCorProf.dll durante l'esecuzione della profilatura. Questo avviso si verifica quando vengono usati gli strumenti da riga di comando per la raccolta di dati del profiler senza usare lo strumento VSPerfCLREnv.cmd per inizializzare le variabili di ambiente necessarie.|  
@@ -29,7 +29,7 @@ Avviso|Description|
 |[DA0006: Eseguire l'override di Equals() per i tipi di valore](../profiling/da0006-override-equals-parens-for-value-types.md)|Le chiamate al metodo Equals o agli operatori di uguaglianza di un tipo valore pubblico rappresentano una percentuale significativa dei dati di profilatura. Considerare la possibilità di implementare un metodo più efficiente.|  
 |[DA0007: Evitare l'utilizzo di eccezioni per il controllo di flusso](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Nei dati di profilatura è stato chiamato un numero elevato di gestori di eccezioni di .NET Framework. Considerare la possibilità di usare un'altra logica di flusso di controllo per ridurre il numero di eccezioni generate.|  
 |[DA0008: Numero ridotto di campioni raccolti](../profiling/da0008-few-samples-collected.md)|Durante l'esecuzione della profilatura sono stati raccolti solo pochi campioni. Si consiglia di eseguire il campionamento più a lungo o di aumentare la frequenza di campionamento per ottenere risultati più significativi.|  
-|[DA0009: % tempo in JIT elevata](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Una percentuale significativa del tempo di esecuzione dell'applicazione è stata impiegata nel compilatore JIT (Just In Time).|  
+|[DA0009: % tempo in JIT elevata](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Una percentuale significativa del tempo di esecuzione dell'applicazione è stata impiegata nel compilatore JIT (Just In Time).|  
 |[DA0010: Funzione GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md)|Le chiamate al metodo GetHashCode del tipo rappresentano una percentuale significativa dei dati di profilatura o il metodo alloca memoria.|  
 |[DA0011: Funzione CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md)|Il metodo CompareTo del tipo è dispendioso o alloca memoria.|  
 |[DA0012: Utilizzo elevato della reflection](../profiling/da0012-significant-amount-of-reflection.md)|Le chiamate ai metodi System.Reflection, ad esempio InvokeMember e GetMember, o ai metodi Type, ad esempio MemberInvoke, costituiscono una percentuale significativa dei dati di profilatura. Ove possibile, considerare la possibilità di sostituire questi metodi con associazione anticipata ai metodi di assembly dipendenti.|  

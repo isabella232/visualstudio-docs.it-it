@@ -10,12 +10,12 @@ ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91deb6d2e3ec58533ac9339c8c94634db23ec996
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1a96504783de466551c6fb9d055b95ba38df760
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687684"
 ---
 # <a name="web-site-support"></a>Supporto per siti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Un sistema di progetto sito Web è un sistema di progetto che consente di creare
   
  Sistemi di progetto sito Web vengono creati tramite l'aggiunta di modelli e gli attributi di registrazione in un sistema di progetto esistente. Uno di questi attributi consente di selezionare il provider di IntelliSense per la lingua. L'implementazione del provider IntelliSense gestisce riferimenti e il compilatore di linguaggio viene chiamato quando viene richiesta una pagina Web intelligente non memorizzato nella cache.  
   
- Il compilatore di linguaggio usato per compilare le pagine Web deve essere registrato con [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. È possibile usare la [ \<compilatore > elemento](http://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) in un file Web. config per registrare il compilatore, come nell'esempio seguente:  
+ Il compilatore di linguaggio usato per compilare le pagine Web deve essere registrato con [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. È possibile usare la [ \<compilatore > elemento](https://msdn.microsoft.com/library/7a151659-b803-4c27-b5ce-1c4aa0d5a823) in un file Web. config per registrare il compilatore, come nell'esempio seguente:  
   
 ```  
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>  

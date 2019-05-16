@@ -12,12 +12,12 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 479827cc83486d6bb9c68d0749b8870cd6c41861
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694767"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ IDebugProperty3 : IDebugProperty2
  Il motore di debug (DE) implementa questa interfaccia nello stesso oggetto che implementa [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) per fornire supporto per le stringhe lunghe, ID di proprietà e visualizzatori personalizzati.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un `IDebugProperty2` interfaccia per ottenere questa interfaccia.  
+ Chiamare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un `IDebugProperty2` interfaccia per ottenere questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Oltre ai metodi ereditati da `IDebugProperty2`, il `IDebugProperty3` interfaccia espone i metodi seguenti.  

@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 97d634f97eb7a13cfa54b2c0d326b19f31fb7d9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062604"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685461"
 ---
 # <a name="image-library-viewer"></a>Visualizzatore della libreria di immagini
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -130,7 +130,7 @@ Lo strumento Visualizzatore di Visual Studio Image Library è possibile caricare
 |||  
 |-|-|  
 |**Attributo**|**Definizione**|  
-|URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|  
+|URI|[Obbligatorio] URI che definisce dove è possibile caricare l'immagine da. Può essere uno dei seguenti:<br /><br /> -A [URI di tipo Pack](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) utilizzando l'applicazione: / / / autorità<br /><br /> -Riferimento a una risorsa un componente assoluto<br /><br /> -Un percorso di un file contenente una risorsa nativa|  
 |Sfondo|[Facoltativo] Indica l'operazione nel tipo di origine dovrà essere utilizzato in background.<br /><br /> Può essere uno dei seguenti:<br /><br /> - *Light*: L'origine può essere utilizzata su uno sfondo chiaro.<br /><br /> - *Scuro*: L'origine può essere utilizzata su uno sfondo scuro.<br /><br /> - *HighContrast*: L'origine può essere utilizzata in qualsiasi dello sfondo nella modalità a contrasto elevato.<br /><br /> - *HighContrastLight*: L'origine può essere utilizzata su uno sfondo chiaro in modalità a contrasto elevato.<br /><br /> -*HighContrastDark*: L'origine può essere utilizzata su uno sfondo scuro in modalità a contrasto elevato.<br /><br /> Se il **sfondo** attributo viene omesso, l'origine può essere usato su qualsiasi dello sfondo.<br /><br /> Se **sfondo** viene *Light*, *scuro*, *HighContrastLight*, o *HighContrastDark*, i colori dell'origine non vengono mai invertiti. Se **sfondo** viene omesso o impostato su *contrasto elevato*, l'inversione di colori dell'origine viene controllata nell'immagine **AllowColorInversion** attributo.|  
   
  Oggetto \<origine > elemento può includere esattamente uno dei sottoelementi facoltativi seguenti:  

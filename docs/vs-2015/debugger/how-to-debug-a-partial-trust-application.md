@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704482"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procedura: Eseguire il debug di un'applicazione parzialmente attendibile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le informazioni contenute in questo argomento sono valide per applicazioni Windows e console  
   
- [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md) rende più semplice distribuire le applicazioni parzialmente attendibili che sfruttano [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) per limitare l'accesso alle risorse in un computer.  
+ [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md) rende più semplice distribuire le applicazioni parzialmente attendibili che sfruttano [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) per limitare l'accesso alle risorse in un computer.  
   
  Il debug di un'applicazione parzialmente attendibile può essere complesso perché queste applicazioni hanno autorizzazioni di sicurezza diverse e si comportano quindi in modo diverso in base all'area dalla quale viene eseguita l'installazione. Se l'installazione viene eseguita da Internet, un'applicazione parzialmente attendibile disporrà di poche autorizzazioni. Se l'installazione viene eseguita da una rete Intranet locale, avrà un numero di autorizzazioni maggiore. Se l'installazione viene eseguita dal computer locale, avrà autorizzazioni complete. È inoltre possibile configurare aree personalizzate con autorizzazioni personalizzate. Potrebbe essere necessario eseguire il debug di un'applicazione parzialmente attendibile in una o più di queste condizioni. In Visual Studio sono disponibili strumenti che semplificano anche questo tipo di debug.  
   

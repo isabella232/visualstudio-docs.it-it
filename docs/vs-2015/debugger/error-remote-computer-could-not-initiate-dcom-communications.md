@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cfb85be224eadb25b2ec9b87ab480a15f235463f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8ddec2bdec09da1f1175b59c94db31841a1453f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697330"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Errore: Il computer remoto non può iniziare le comunicazioni DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Quando il computer remoto ha tentato di comunicare con il computer locale si è 
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-1. Se nel computer locale è abilitato Windows Firewall, vedere [Set Up the Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) per istruzioni su come configurare il firewall per il debug locale.  
+1. Se nel computer locale è abilitato Windows Firewall, vedere [Set Up the Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) per istruzioni su come configurare il firewall per il debug locale.  
   
 2. Testare l'autenticazione di Windows tentando di aprire una condivisione di file nel computer locale dal server remoto.  
   
 3. Per ripristinare l'autenticazione di Windows, provare a riavviare entrambi i computer. Controllare se nel log eventi del computer locale e di quello remoto sono segnalati errori di Kerberos e contattare gli amministratori di dominio in caso di problemi noti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Impostare Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Impostare Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

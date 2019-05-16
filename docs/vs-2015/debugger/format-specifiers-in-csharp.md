@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682495"
 ---
 # <a name="format-specifiers-in-c"></a>Identificatori di formato in C\#
 
@@ -64,7 +64,7 @@ Nella tabella riportata di seguito sono elencati gli identificatori di formato C
 
 |Identificatore|Formato|Valore dell'espressione di controllo originale|Visualizza|
 |---------------|------------|--------------------------|--------------|
-|ac|Impone la valutazione di un'espressione. Può risultare utile quando la valutazione implicita di proprietà e di chiamate di funzione implicite è disattivata. Vedere [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<valore>|
+|ac|Impone la valutazione di un'espressione. Può risultare utile quando la valutazione implicita di proprietà e di chiamate di funzione implicite è disattivata. Vedere [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Messaggio "La valutazione della funzione implicita è stata disattivata dall'utente"|\<valore>|
 |d|intero decimale|0x0065|101|
 |dynamic|Visualizza l'oggetto specificato usando una visualizzazione dinamica|Visualizza tutti i membri dell'oggetto, inclusa la visualizzazione dinamica|Visualizza solo la visualizzazione dinamica|
 |h|intero esadecimale|61541|0x0000F065|
@@ -76,4 +76,4 @@ Nella tabella riportata di seguito sono elencati gli identificatori di formato C
 ## <a name="see-also"></a>Vedere anche
 
 - [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)
-- [Finestra delle variabili](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Finestra delle variabili](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

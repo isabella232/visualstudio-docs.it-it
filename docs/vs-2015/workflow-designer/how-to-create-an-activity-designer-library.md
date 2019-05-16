@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694549"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Procedura: Creare una libreria ActivityDesigner
 Gli ActivityDesigner personalizzati consentono di creare un'interfaccia utente per un'attività personalizzata o standard. È possibile controllare la complessità dell'interfaccia utente e creare più ActivityDesigner per un'attività. Questo scenario consente di creare finestre di progettazione personalizzate per diversi destinatari.  
@@ -40,7 +40,7 @@ Gli ActivityDesigner personalizzati consentono di creare un'interfaccia utente p
   
 8. Il modello di progetto crea una definizione dell'ActivityDesigner in XAML mentre il file di implementazione code-behind è in codice sorgente. [!INCLUDE[wfd1](../includes/wfd1-md.md)] verrà visualizzato con l'area di disegno per l'ActivityDesigner.  
   
-9. Trascinare [!INCLUDE[avalon1](../includes/avalon1-md.md)] dei controlli il **casella degli strumenti** all'area di progettazione per usarli nell'ActivityDesigner personalizzati.  Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [come: Creare un ActivityDesigner personalizzato](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Trascinare [!INCLUDE[avalon1](../includes/avalon1-md.md)] dei controlli il **casella degli strumenti** all'area di progettazione per usarli nell'ActivityDesigner personalizzati.  Per un esempio di come implementare un ActivityDesigner personalizzato, vedere [come: Creare un ActivityDesigner personalizzato](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     > Gli ActivityDesigner personalizzati possono essere usati per le attività personalizzate nonché per impostazione predefinita [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]attività.  

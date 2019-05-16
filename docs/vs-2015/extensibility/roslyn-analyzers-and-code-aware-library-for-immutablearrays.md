@@ -8,29 +8,29 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001211"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685251"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizzatori Roslyn e libreria con riconoscimento del codice per ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") consente di creare librerie con riconoscimento del codice. Una libreria con riconoscimento del codice fornisce la funzionalità che è possibile usare e agli strumenti (analizzatori di Roslyn) per l'uso della libreria nel modo migliore o per evitare errori. In questo argomento illustra come compilare un analizzatore Roslyn reale per rilevare gli errori comuni quando si usa il [NIB: Raccolte non modificabili](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pacchetto NuGet. L'esempio illustra inoltre come fornire una correzione del codice per un problema di codice rilevato dall'analizzatore. Gli utenti visualizzano le correzioni del codice in Visual Studio lampadina dell'interfaccia utente e possono applicare una correzione per il codice automaticamente.
+Il [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") consente di creare librerie con riconoscimento del codice. Una libreria con riconoscimento del codice fornisce la funzionalità che è possibile usare e agli strumenti (analizzatori di Roslyn) per l'uso della libreria nel modo migliore o per evitare errori. In questo argomento illustra come compilare un analizzatore Roslyn reale per rilevare gli errori comuni quando si usa il [NIB: Raccolte non modificabili](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pacchetto NuGet. L'esempio illustra inoltre come fornire una correzione del codice per un problema di codice rilevato dall'analizzatore. Gli utenti visualizzano le correzioni del codice in Visual Studio lampadina dell'interfaccia utente e possono applicare una correzione per il codice automaticamente.
 
 ## <a name="getting-started"></a>Introduzione
 È necessario quanto segue per compilare questo esempio:
 
 - Visual Studio 2015 (non una versione Express Edition) o versione successiva. È possibile usare la versione gratuita [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
 
-- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). È possibile, inoltre, quando si installa Visual Studio, controllare gli strumenti di estendibilità di Visual Studio in strumenti comuni per installare il SDK nello stesso momento. Se già stato installato Visual Studio, è anche possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124;Project...** , scegliendo C# nel riquadro di spostamento a sinistra e quindi scegliendo estendibilità. Quando si sceglie di "**installare Visual Studio Extensibility Tools**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md). È possibile, inoltre, quando si installa Visual Studio, controllare gli strumenti di estendibilità di Visual Studio in strumenti comuni per installare il SDK nello stesso momento. Se già stato installato Visual Studio, è anche possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124;Project...** , scegliendo c# nel riquadro di spostamento a sinistra e quindi scegliendo estendibilità. Quando si sceglie di "**installare Visual Studio Extensibility Tools**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK.
 
-- [.NET compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). È anche possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124; Project...** , scegliendo **C#** nel riquadro di spostamento a sinistra e quindi scegliere **estendibilità**. Quando si sceglie "**Download di .NET Compiler Platform SDK**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK. Questo SDK include il [Visualizzatore di sintassi Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). In questo modo, lo strumento estremamente utile capire quali tipi di modello di codice è necessario ricercare nell'analizzatore. Le chiamate di infrastruttura analyzer nel codice per tipi di modello di codice specifico, in modo che il codice viene eseguito quando è necessario solo e concentrarsi solo sull'analisi del codice pertinente.
+- [.NET compiler Platform ("Roslyn") SDK](https://aka.ms/roslynsdktemplates). È anche possibile installare questo SDK, passare al menu principale **File &#124; nuovo &#124; Project...** , scegliendo **c#** nel riquadro di spostamento a sinistra e quindi scegliere **estendibilità**. Quando si sceglie "**Download di .NET Compiler Platform SDK**" modello di progetto di navigazione, viene richiesto di scaricare e installare il SDK. Questo SDK include il [Visualizzatore di sintassi Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). In questo modo, lo strumento estremamente utile capire quali tipi di modello di codice è necessario ricercare nell'analizzatore. Le chiamate di infrastruttura analyzer nel codice per tipi di modello di codice specifico, in modo che il codice viene eseguito quando è necessario solo e concentrarsi solo sull'analisi del codice pertinente.
 
 ## <a name="whats-the-problem"></a>Qual è il problema?
-Imagine è fornire una libreria con ImmutableArray (ad esempio, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) supportano. Gli sviluppatori C# hanno molta esperienza con le matrici .NET. Tuttavia, a causa della natura delle tecniche ImmutableArrays e ottimizzazione utilizzato nell'implementazione, intuitions per gli sviluppatori C# causare agli utenti della libreria di scrivere codice danneggiato, come illustrato di seguito. Inoltre, gli utenti non vengono visualizzati i relativi errori fino al runtime, che non è l'esperienza di qualità che vengono utilizzati per Visual Studio con .NET.
+Imagine è fornire una libreria con ImmutableArray (ad esempio, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>) supportano. Gli sviluppatori c# hanno molta esperienza con le matrici .NET. Tuttavia, a causa della natura delle tecniche ImmutableArrays e ottimizzazione utilizzato nell'implementazione, intuitions per gli sviluppatori c# causare agli utenti della libreria di scrivere codice danneggiato, come illustrato di seguito. Inoltre, gli utenti non vengono visualizzati i relativi errori fino al runtime, che non è l'esperienza di qualità che vengono utilizzati per Visual Studio con .NET.
 
 Gli utenti hanno familiarità con la scrittura di codice simile al seguente:
 
@@ -42,7 +42,7 @@ Console.WriteLine("a2.Length = { 0}", a2.Length);
 
 ```
 
-Creazione di matrici vuote deve compilare con le righe successive del codice e usando la sintassi dell'inizializzatore di raccolta sono estremamente familiare per gli sviluppatori C#. Tuttavia, il codice per un ImmutableArray scrivere lo stesso arresto anomalo in fase di esecuzione:
+Creazione di matrici vuote deve compilare con le righe successive del codice e usando la sintassi dell'inizializzatore di raccolta sono estremamente familiare per gli sviluppatori c#. Tuttavia, il codice per un ImmutableArray scrivere lo stesso arresto anomalo in fase di esecuzione:
 
 ```csharp
 var b1 = new ImmutableArray<int>();
@@ -59,12 +59,12 @@ Il primo errore è a causa dell'implementazione ImmutableArray usando un tipo st
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Ricerca di tipi di nodi di sintassi pertinente per attivare l'analizzatore
 Per iniziare a compilare l'analizzatore, prima di tutto capire quale tipo di SyntaxNode da cercare.   Avviare il Visualizzatore di sintassi nel menu **View &#124; Other Windows &#124; Visualizzatore di sintassi Roslyn**.
 
-Posizionare il cursore dell'editor nella riga che dichiara `b1`. Verrà visualizzato il Visualizzatore di sintassi viene illustrato come trovano in un `LocalDeclarationStatement` nodo dell'albero della sintassi. Questo nodo ha un `VariableDeclaration`, che a sua volta ha un `VariableDeclarator`, che a sua volta ha un `EqualsValueClause`e infine è disponibile un `ObjectCreationExpression`. Quando fa clic l'albero di Visualizzatore di sintassi di nodi, la sintassi nella finestra dell'editor vengono evidenziati per visualizzare il codice rappresentato da tale nodo. I nomi dei tipi sub SyntaxNode corrispondono i nomi usati nella grammatica del linguaggio C#.
+Posizionare il cursore dell'editor nella riga che dichiara `b1`. Verrà visualizzato il Visualizzatore di sintassi viene illustrato come trovano in un `LocalDeclarationStatement` nodo dell'albero della sintassi. Questo nodo ha un `VariableDeclaration`, che a sua volta ha un `VariableDeclarator`, che a sua volta ha un `EqualsValueClause`e infine è disponibile un `ObjectCreationExpression`. Quando fa clic l'albero di Visualizzatore di sintassi di nodi, la sintassi nella finestra dell'editor vengono evidenziati per visualizzare il codice rappresentato da tale nodo. I nomi dei tipi sub SyntaxNode corrispondono i nomi usati nella grammatica del linguaggio c#.
 
 ## <a name="creating-the-analyzer-project"></a>Creazione del progetto dell'analizzatore
-Dal menu principale scegliere **File &#124; nuovo &#124; Project...** . Nel **nuovo progetto** finestra di dialogo, sotto **C#** progetti nella barra di spostamento a sinistra, scegliere estendibilità e nel riquadro destro scegliere il **Analyzer con correzione del codice** progetto modello. Immettere un nome e la finestra di dialogo di conferma.
+Dal menu principale scegliere **File &#124; nuovo &#124; Project...** . Nel **nuovo progetto** finestra di dialogo, sotto **c#** progetti nella barra di spostamento a sinistra, scegliere estendibilità e nel riquadro destro scegliere il **Analyzer con correzione del codice** progetto modello. Immettere un nome e la finestra di dialogo di conferma.
 
-Il modello apre un file DiagnosticAnalyzer.cs. Scegliere la scheda buffer tale editor. Questo file contiene una classe analyzer (formata dal nome assegnato al progetto) che deriva da `DiagnosticAnalyzer` (un tipo di API Roslyn). La nuova classe ha un `DiagnosticAnalyzerAttribute` dichiarando l'analizzatore è rilevante per il linguaggio C# in modo che il compilatore individua e carica l'analizzatore.
+Il modello apre un file DiagnosticAnalyzer.cs. Scegliere la scheda buffer tale editor. Questo file contiene una classe analyzer (formata dal nome assegnato al progetto) che deriva da `DiagnosticAnalyzer` (un tipo di API Roslyn). La nuova classe ha un `DiagnosticAnalyzerAttribute` dichiarando l'analizzatore è rilevante per il linguaggio c# in modo che il compilatore individua e carica l'analizzatore.
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
@@ -72,7 +72,7 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 {}
 ```
 
-È possibile implementare un analizzatore utilizzando Visual Basic destinata a codice C#, e viceversa. È più importante in DiagnosticAnalyzerAttribute per scegliere se l'analizzatore è destinata a una lingua o entrambi. Gli analizzatori più sofisticati che richiedono dettagliata modellazione del linguaggio possono avere come destinazione solo una sola lingua. Se l'analizzatore, controlli, ad esempio, solo i nomi dei tipi o i nomi dei membri pubblici, potrebbe essere possibile usare il modello di lingua comune che offre Roslyn in Visual Basic e C#. Ad esempio, FxCop avverte che una classe che implementa <xref:System.Runtime.Serialization.ISerializable>, ma la classe non dispone di <xref:System.SerializableAttribute> attributo è indipendente dal linguaggio e funziona per il codice Visual Basic e C#.
+È possibile implementare un analizzatore utilizzando Visual Basic destinata a codice c#, e viceversa. È più importante in DiagnosticAnalyzerAttribute per scegliere se l'analizzatore è destinata a una lingua o entrambi. Gli analizzatori più sofisticati che richiedono dettagliata modellazione del linguaggio possono avere come destinazione solo una sola lingua. Se l'analizzatore, controlli, ad esempio, solo i nomi dei tipi o i nomi dei membri pubblici, potrebbe essere possibile usare il modello di lingua comune che offre Roslyn in Visual Basic e c#. Ad esempio, FxCop avverte che una classe che implementa <xref:System.Runtime.Serialization.ISerializable>, ma la classe non dispone di <xref:System.SerializableAttribute> attributo è indipendente dal linguaggio e funziona per il codice Visual Basic e c#.
 
 ## <a name="initalizing-the-analyzer"></a>Inizializzazione dell'analizzatore
 Scorrere verso il basso un po' `DiagnosticAnalyzer` classe per visualizzare il `Initialize` (metodo). Il compilatore chiama questo metodo quando si attiva un analizzatore. Il metodo accetta un `AnalysisContext` oggetto che consente l'analizzatore per ottenere informazioni sul contesto e registrazione di callback per gli eventi per i tipi di codice da analizzare.
@@ -307,7 +307,7 @@ Suggerimento Pro: Se si avvia la seconda istanza di Visual Studio e non viene vi
 ## <a name="talk-video-and-finish-code-project"></a>Video di presentazione e il progetto di codice di fine
 È possibile visualizzare in questo esempio viene sviluppato e illustrate dettagliatamente nella [in questo webcast](http://channel9.msdn.com/events/Build/2015/3-725). Il discorso dimostra l'analizzatore di lavoro e illustra la creazione.
 
-È possibile visualizzare tutto il codice completato [qui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Cartelle secondarie DoNotUseImmutableArrayCollectionInitializer e DoNotUseImmutableArrayCtor dispongano di un file C# per ricerca di problemi e un file C# che implementa le correzioni del codice che vengono visualizzati nella lampadina Visual Studio dell'interfaccia utente. Si noti che il codice include una piccola astrazione altre per evitare il recupero ImmutableArray\<T > tipo di oggetto più volte. Usa le azioni registrate annidate per salvare l'oggetto di tipo in un contesto che è disponibile ogni volta che le azioni sub (analizzare la creazione di oggetti e analizzare le inizializzazioni raccolta) eseguire.
+È possibile visualizzare tutto il codice completato [qui](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers). Cartelle secondarie DoNotUseImmutableArrayCollectionInitializer e DoNotUseImmutableArrayCtor dispongano di un file c# per ricerca di problemi e un file c# che implementa le correzioni del codice che vengono visualizzati nella lampadina Visual Studio dell'interfaccia utente. Si noti che il codice include una piccola astrazione altre per evitare il recupero ImmutableArray\<T > tipo di oggetto più volte. Usa le azioni registrate annidate per salvare l'oggetto di tipo in un contesto che è disponibile ogni volta che le azioni sub (analizzare la creazione di oggetti e analizzare le inizializzazioni raccolta) eseguire.
 
 ## <a name="see-also"></a>Vedere anche
 [\\\Build 2015 talk](http://channel9.msdn.com/events/Build/2015/3-725)

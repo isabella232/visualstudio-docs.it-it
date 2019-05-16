@@ -14,14 +14,14 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e120499893a5b2a85d9a40a57e078f3d8f6586d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695042"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di Unit test per codice gestito
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procedura dettagliata: Creazione ed esecuzione di unit test per il codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata illustra come creare, eseguire e personalizzare una serie di unit test usando il framework di unit test di Microsoft per il codice gestito ed Esplora test di Visual Studio. Verrà illustrato prima di tutto il progetto C# in fase di sviluppo, quindi saranno creati i test in cui verrà usato il codice e saranno esaminati i risultati. Sarà infine possibile modificare il codice del progetto ed eseguire nuovamente i test.  
@@ -50,7 +50,7 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
 > Questa procedura dettagliata usa il framework di unit test di Microsoft per il codice gestito. Esplora test consente anche di eseguire test da framework di unit test di terze parti provvisti di adapter per Esplora test. Per altre informazioni, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
-> Per informazioni su come eseguire i test dalla riga di comando, vedere [Procedura dettagliata: Uso dell'utilità di test della riga di comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Per informazioni su come eseguire i test dalla riga di comando, vedere [Procedura dettagliata: Uso dell'utilità di test della riga di comando](https://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Prerequisiti  
   

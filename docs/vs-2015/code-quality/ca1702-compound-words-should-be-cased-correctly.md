@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d62053381e4d42c50a5d15a85afaef3ed816491d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 91a3945c6ef212ba664119a822123f326cdefc5c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658331"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676400"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Le parole composte devono essere digitate correttamente con distinzione tra maiuscole e minuscole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,5 +56,5 @@ Per la documentazione più recente di Visual Studio, vedere [CA1702 le: Le parol
  [CA1708: Gli identificatori devono differenziarsi minuscole](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
 ## <a name="see-also"></a>Vedere anche  
- [Linee guida sulla denominazione](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
- [Convenzioni per l'uso di maiuscole e minuscole](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
+ [Linee guida sulla denominazione](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
+ [Convenzioni per l'uso di maiuscole e minuscole](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681322"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Specifica il percorso del file .vstemplate di un progetto in un modello multipro
 |Attributo|Descrizione|  
 |---------------|-----------------|  
 |`ProjectName`|Attributo facoltativo.<br /><br /> Specifica il nome di ogni singolo progetto in un modello multiprogetto. Il **nuovo progetto** nella finestra di dialogo non è possibile assegnare nomi ai singoli progetti.|  
-|`CopyParameters`|Consente la copia di tutte le variabili nel modello del gruppo centrale in ognuno dei modelli collegati.<br /><br /> I parametri nei modelli collegati dispongono del prefisso `"$ext_*$"`. Ad esempio, se nel modello del gruppo padre il parametro `$projectname$` ha un valore **ExampleProject1**, quando il modello collegato Ottiene il proprio turno per essere eseguito, acquisisce un parametro `$ext_projectname$`, ovvero una copia del `$projectname$`parametro di modello del gruppo padre.<br /><br /> In questo modo i modelli collegati possono condividere alcuni parametri comuni, che possono essere facilmente creati solo nel modello del gruppo padre.<br /><br /> Questo attributo è facoltativo ed è automaticamente impostato su `false` quando non è incluso.<br /><br /> Introdotto in Visual Studio 2013 Update 2. Per correlare la versione corretta del prodotto, vedere [che fanno riferimento a recapitare gli assembly in Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Consente la copia di tutte le variabili nel modello del gruppo centrale in ognuno dei modelli collegati.<br /><br /> I parametri nei modelli collegati dispongono del prefisso `"$ext_*$"`. Ad esempio, se nel modello del gruppo padre il parametro `$projectname$` ha un valore **ExampleProject1**, quando il modello collegato Ottiene il proprio turno per essere eseguito, acquisisce un parametro `$ext_projectname$`, ovvero una copia del `$projectname$`parametro di modello del gruppo padre.<br /><br /> In questo modo i modelli collegati possono condividere alcuni parametri comuni, che possono essere facilmente creati solo nel modello del gruppo padre.<br /><br /> Questo attributo è facoltativo ed è automaticamente impostato su `false` quando non è incluso.<br /><br /> Introdotto in Visual Studio 2013 Update 2. Per correlare la versione corretta del prodotto, vedere [che fanno riferimento a recapitare gli assembly in Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
  Nessuno.  

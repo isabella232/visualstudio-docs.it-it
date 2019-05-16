@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693540"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione Desktop WPF connessa a un servizio Mobile di Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile usare Windows Presentation Foundation (WPF) per creare rapidamente un'applicazione desktop moderna che usa un servizio mobile di Azure per archiviare e fornire i dati.  
@@ -28,7 +28,7 @@ ms.locfileid: "63421245"
   
 - Un account Microsoft Azure attivo.  
   
-    - È possibile iscriversi per un account di prova gratuito [qui](http://azure.microsoft.com/pricing/free-trial/).  
+    - È possibile iscriversi per un account di prova gratuito [qui](https://azure.microsoft.com/pricing/free-trial/).  
   
     - È possibile attivare i [benefici per sottoscrittori MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). La sottoscrizione MSDN offre ogni mese dei crediti che è possibile usare per i servizi di Azure a pagamento.  
   
@@ -566,7 +566,7 @@ ms.locfileid: "63421245"
   
  È possibile rendere più interessante l'interfaccia utente mediante l'aggiunta di colore, forme, elementi grafici e persino animazioni. Vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- È possibile connettersi ai database SQL esistenti o ad altre origini dei dati mediante i servizi mobili di Azure. Vedere la [documentazione dei servizi mobili](http://azure.microsoft.com/services/app-service/mobile/).  
+ È possibile connettersi ai database SQL esistenti o ad altre origini dei dati mediante i servizi mobili di Azure. Vedere la [documentazione dei servizi mobili](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: Prima applicazione Desktop WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976603"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697081"
 ---
 # <a name="trycatch-activity-designer"></a>ActivityDesigner TryCatch
 Il **TryCatch** ActivityDesigner viene utilizzato per creare e configurare un <xref:System.Activities.Statements.TryCatch> attività.  
   
 ## <a name="the-trycatch-activity"></a>Attività TryCatch  
- Il <xref:System.Activities.Statements.TryCatch> attività contiene un <xref:System.Activities.Statements.TryCatch.Try%2A> attività, una raccolta di **Catch\<TException >** e un <xref:System.Activities.Statements.TryCatch.Finally%2A> attività. Oggetto <xref:System.Activities.Statements.Catch%601> typu **TException** contiene un' <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e un <xref:System.Activities.Statements.Catch%601.Action%2A>. che vengono usate insieme per implementare un meccanismo tipico di gestione degli errori basato sulle eccezioni. Un'attività <xref:System.Activities.Statements.TryCatch> tenta di eseguire la relativa attività <xref:System.Activities.Statements.TryCatch.Try%2A>. Se il <xref:System.Activities.Statements.TryCatch.Try%2A> attività genera un'eccezione, il <xref:System.Activities.Statements.TryCatch> utilizza attività relativo **intercettare < TException\>**  insieme in corrispondenza dell'eccezione. Se non esiste una corrispondenza, il <xref:System.Activities.Statements.Catch%601.Action%2A> dell'oggetto corrispondente **Catch\<TException >** viene eseguita, che funge dalla logica per l'eccezione di gestione degli errori. Se le attività nella sezione di <xref:System.Activities.Statements.TryCatch.Try%2A> o le attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> terminano in modo corretto, l'attività di <xref:System.Activities.Statements.TryCatch> esegue la relativa attività di <xref:System.Activities.Statements.TryCatch.Finally%2A>. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Le eccezioni](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ Il <xref:System.Activities.Statements.TryCatch> attività contiene un <xref:System.Activities.Statements.TryCatch.Try%2A> attività, una raccolta di **Catch\<TException >** e un <xref:System.Activities.Statements.TryCatch.Finally%2A> attività. Oggetto <xref:System.Activities.Statements.Catch%601> typu **TException** contiene un' <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e un <xref:System.Activities.Statements.Catch%601.Action%2A>. che vengono usate insieme per implementare un meccanismo tipico di gestione degli errori basato sulle eccezioni. Un'attività <xref:System.Activities.Statements.TryCatch> tenta di eseguire la relativa attività <xref:System.Activities.Statements.TryCatch.Try%2A>. Se il <xref:System.Activities.Statements.TryCatch.Try%2A> attività genera un'eccezione, il <xref:System.Activities.Statements.TryCatch> utilizza attività relativo **intercettare < TException\>**  insieme in corrispondenza dell'eccezione. Se non esiste una corrispondenza, il <xref:System.Activities.Statements.Catch%601.Action%2A> dell'oggetto corrispondente **Catch\<TException >** viene eseguita, che funge dalla logica per l'eccezione di gestione degli errori. Se le attività nella sezione di <xref:System.Activities.Statements.TryCatch.Try%2A> o le attività in <xref:System.Activities.Statements.TryCatch.Catches%2A> terminano in modo corretto, l'attività di <xref:System.Activities.Statements.TryCatch> esegue la relativa attività di <xref:System.Activities.Statements.TryCatch.Finally%2A>. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Le eccezioni](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>Utilizzo dell'ActivityDesigner TryCatch  
  Il **TryCatch** ActivityDesigner è reperibile nel **Error Handling** categoria del **della casella degli strumenti**, accessibile facendo clic di **dellacaselladeglistrumenti** sul lato sinistro della scheda il [!INCLUDE[wfd2](../includes/wfd2-md.md)] (in alternativa, selezionare **sulla barra degli strumenti** dal **visualizzazione** menu o CTRL + ALT + X.)  

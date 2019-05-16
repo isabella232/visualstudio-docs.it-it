@@ -10,12 +10,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4100c045181f32e51abcc59116a69cad6cc33b5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954783"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697241"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Scelta della directory di installazione per un pacchetto VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,4 +64,4 @@ Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file syst
 ## <a name="see-also"></a>Vedere anche  
  [Scelta tra pacchetti VSPackage condivisi e con controllo delle versioni](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Gestione dei pacchetti VSPackage](../../extensibility/managing-vspackages.md)   
- [Registrazione del pacchetto gestito](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Registrazione del pacchetto gestito](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

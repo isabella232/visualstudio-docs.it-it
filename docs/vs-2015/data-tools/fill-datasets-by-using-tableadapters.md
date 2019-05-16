@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb06c1d97c854aae05d993c086069e10e35518f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704975"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Schema di DataTable associati  
- Quando si crea un oggetto TableAdapter, si usa la query iniziale o associato alla stored procedure per definire lo schema dell'oggetto TableAdapter <xref:System.Data.DataTable>. Si esegue questa query iniziale o una stored procedure mediante la chiamata dell'oggetto TableAdapter `Fill` metodo (che riempie l'oggetto TableAdapter associato del <xref:System.Data.DataTable>). Tutte le modifiche apportate alla query principale dell'oggetto TableAdapter vengono riflesse nello schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query principale rimuove la colonna dalla tabella dati associata. Se eventuali query aggiuntive sul TableAdapter Usa istruzioni SQL che restituiscono le colonne che non sono presenti nella query principali, la finestra di progettazione prova a sincronizzare le modifiche di colonna tra la query principale e le query aggiuntive. Per altre informazioni, vedere [Procedura: Modificare oggetti TableAdapter](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Quando si crea un oggetto TableAdapter, si usa la query iniziale o associato alla stored procedure per definire lo schema dell'oggetto TableAdapter <xref:System.Data.DataTable>. Si esegue questa query iniziale o una stored procedure mediante la chiamata dell'oggetto TableAdapter `Fill` metodo (che riempie l'oggetto TableAdapter associato del <xref:System.Data.DataTable>). Tutte le modifiche apportate alla query principale dell'oggetto TableAdapter vengono riflesse nello schema della tabella dati associata. Ad esempio, la rimozione di una colonna dalla query principale rimuove la colonna dalla tabella dati associata. Se eventuali query aggiuntive sul TableAdapter Usa istruzioni SQL che restituiscono le colonne che non sono presenti nella query principali, la finestra di progettazione prova a sincronizzare le modifiche di colonna tra la query principale e le query aggiuntive. Per altre informazioni, vedere [Procedura: Modificare oggetti TableAdapter](https://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Comandi di aggiornamento di TableAdapter  
  La funzionalità di aggiornamento di un oggetto TableAdapter è dipendente dalla quantità di informazioni è disponibile la query principale della procedura guidata TableAdapter. Ad esempio, gli oggetti TableAdapter che sono configurati per recuperare i valori da più tabelle (join), i valori scalari, viste o i risultati di funzioni di aggregazione non vengono inizialmente creati con la possibilità di inviare aggiornamenti al database sottostante. Tuttavia, è possibile configurare manualmente i comandi INSERT, UPDATE e DELETE di **proprietà** finestra.  
@@ -106,7 +106,7 @@ Un componente di TableAdapter inserisce un set di dati con i dati dal database, 
  Se non si desidera creare questi metodi diretti, impostare dell'oggetto TableAdapter **GenerateDbDirectMethods** proprietà `false` (nelle **proprietà** finestra). Query aggiuntive che vengono aggiunti all'oggetto TableAdapter sono query autonomo, ovvero non generano questi metodi.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Supporto di TableAdapter per i tipi nullable  
- Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Per altre informazioni sui tipi nullable in c#, vedere [utilizzando i tipi Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per altre informazioni sui tipi nullable in Visual Basic, vedere [Tipi di valori Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Per altre informazioni sui tipi nullable in c#, vedere [utilizzando i tipi Nullable](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Sicurezza  
  Quando si usano i comandi di dati con un `CommandType` impostata su <xref:System.Data.CommandType>, attentamente controllare le informazioni inviate da un client prima di passarlo al database. Qualche utente malintenzionato potrebbe tentare di inviare (inserire) istruzioni SQL modificate o aggiuntive, allo scopo di ottenere un accesso non autorizzato o di danneggiare il database. Prima di trasferire input dell'utente a un database, verificare sempre che le informazioni siano valide. Una procedura consigliata consiste nell'utilizzare sempre query con parametri o stored procedure, laddove possibile.  

@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705540"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procedura dettagliata: Debug di un'applicazione parallela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa procedura dettagliata viene illustrato come usare le finestre **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) o nella [Runtime di concorrenza](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Una volta interrotta l'esecuzione del codice, viene illustrato come esaminarlo usando le finestre **Attività in parallelo** e **Stack in parallelo**.  
+In questa procedura dettagliata viene illustrato come usare le finestre **Attività in parallelo** e **Stack in parallelo** per eseguire il debug di un'applicazione parallela. Queste finestre consentono di comprendere e verificare il comportamento di runtime del codice che usa il [Task Parallel Library (TPL)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) o nella [Runtime di concorrenza](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Nella procedura dettagliata viene fornito un esempio di codice con punti di interruzione incorporati. Una volta interrotta l'esecuzione del codice, viene illustrato come esaminarlo usando le finestre **Attività in parallelo** e **Stack in parallelo**.  
   
  Nella procedura dettagliata vengono spiegate le seguenti attività:  
   
@@ -308,7 +308,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
  [Debug di applicazioni multithreading](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Nozioni di base sul debugger](../debugger/debugger-basics.md)   
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   
- [Programmazione parallela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Runtime di concorrenza](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programmazione parallela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Runtime di concorrenza](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Uso della finestra Stack in parallelo](../debugger/using-the-parallel-stacks-window.md)   
  [Uso della finestra Attività](../debugger/using-the-tasks-window.md)

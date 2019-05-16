@@ -1,0 +1,258 @@
+- name: Accesso ai dati in Visual Studio
+  items:
+    - name: Accesso ai dati in Visual Studio
+      href: accessing-data-in-visual-studio.md
+    - name: 'Installazione di sistemi di database, strumenti ed esempi'
+      items:
+        - name: 'Installazione di sistemi di database, strumenti ed esempi'
+          href: installing-database-systems-tools-and-samples.md
+        - name: Installare i database di esempio di SQL Server
+          href: install-sql-server-sample-databases.md
+        - name: Creare un database SQL usando uno script
+          href: create-a-sql-database-by-using-a-script.md
+        - name: Creare un database SQL usando una finestra di progettazione
+          href: create-a-sql-database-by-using-a-designer.md
+        - name: Aggiornare i file con estensione mdf
+          href: upgrade-dot-mdf-files.md
+    - name: Visual Studio data tools per .NET
+      items:
+        - name: Visual Studio data tools per .NET
+          href: visual-studio-data-tools-for-dotnet.md
+        - name: Creare un'applicazione dati semplice tramite ADO.NET
+          href: create-a-simple-data-application-by-using-adonet.md
+        - name: Creare un'applicazione dati semplice con WPF ed Entity Framework 6
+          href: create-a-simple-data-application-with-wpf-and-entity-framework-6.md
+        - name: Aggiungere nuove connessioni
+          items:
+            - name: Aggiungere nuove connessioni
+              href: add-new-connections.md
+            - name: Connettersi ai dati in un database di Access (Windows Form)
+              href: connect-to-data-in-an-access-database-windows-forms.md
+        - name: Aggiungere nuove origini dati
+          href: add-new-data-sources.md
+        - name: Strumenti di Entity Data Model in Visual Studio
+          href: entity-data-model-tools-in-visual-studio.md
+        - name: Strumenti di set di dati in Visual Studio
+          items:
+            - name: Strumenti di set di dati in Visual Studio
+              href: dataset-tools-in-visual-studio.md
+            - name: Creare e configurare i set di dati
+              items:
+                - name: Creare e configurare i set di dati
+                  href: create-and-configure-datasets-in-visual-studio.md
+                - name: Set di dati tipizzati e non tipizzati
+                  href: typed-vs-untyped-datasets.md
+                - name: Relazioni nei set di dati
+                  href: relationships-in-datasets.md
+            - name: Compilare i set di dati usando oggetti TableAdapter
+              items:
+                - name: Compilare i set di dati usando oggetti TableAdapter
+                  href: fill-datasets-by-using-tableadapters.md
+                - name: Creare e configurare oggetti TableAdapter
+                  href: create-and-configure-tableadapters.md
+                - name: Creare query TableAdapter con parametri
+                  href: create-parameterized-tableadapter-queries.md
+                - name: Accedere direttamente al database mediante un oggetto TableAdapter
+                  href: directly-access-the-database-with-a-tableadapter.md
+                - name: Disattivare i vincoli durante il riempimento di un set di dati
+                  href: turn-off-constraints-while-filling-a-dataset.md
+                - name: Estendere la funzionalità di un TableAdapter
+                  href: extend-the-functionality-of-a-tableadapter.md
+                - name: Leggere dati XML in un set di dati
+                  href: read-xml-data-into-a-dataset.md
+            - name: Modifica di dati nei set di dati
+              href: edit-data-in-datasets.md
+            - name: Convalidare i dati nei set di dati
+              href: validate-data-in-datasets.md
+            - name: Salvare i dati di nuovo nel database
+              items:
+                - name: Salvare i dati di nuovo nel database
+                  href: save-data-back-to-the-database.md
+                - name: Inserire nuovi record in un database
+                  href: insert-new-records-into-a-database.md
+                - name: Aggiornare i dati mediante un TableAdapter
+                  href: update-data-by-using-a-tableadapter.md
+                - name: Aggiornamento gerarchico
+                  href: hierarchical-update.md
+                - name: Gestire un'eccezione di concorrenza
+                  href: handle-a-concurrency-exception.md
+                - name: Salvare dati usando una transazione
+                  href: save-data-by-using-a-transaction.md
+                - name: Salvare i dati in una transazione
+                  href: save-data-in-a-transaction.md
+                - name: Salvare dati in un database (a più tabelle)
+                  href: save-data-to-a-database-multiple-tables.md
+                - name: Salvare dati da un oggetto in un database
+                  href: save-data-from-an-object-to-a-database.md
+                - name: Salvare dati con i metodi DBDirect di TableAdapter
+                  href: save-data-with-the-tableadapter-dbdirect-methods.md
+                - name: Salvare un set di dati come XML
+                  href: save-a-dataset-as-xml.md
+            - name: Set di dati di query
+              href: query-datasets.md
+            - name: Uso dei set di dati nelle applicazioni a più livelli
+              items:
+                - name: Uso dei set di dati nelle applicazioni a più livelli
+                  href: work-with-datasets-in-n-tier-applications.md
+                - name: Aggiungere la convalida a un set di dati a più livelli
+                  href: add-validation-to-an-n-tier-dataset.md
+                - name: Aggiungere il codice nei set di dati di applicazioni a più livelli
+                  href: add-code-to-datasets-in-n-tier-applications.md
+                - name: Aggiungere il codice nei TableAdapter di applicazioni a più livelli
+                  href: add-code-to-tableadapters-in-n-tier-applications.md
+                - name: Separare set di dati e TableAdapter in progetti diversi
+                  href: separate-datasets-and-tableadapters-into-different-projects.md
+        - name: Strumenti di LINQ to SQL in Visual Studio
+          items:
+            - name: Strumenti di LINQ to SQL in Visual Studio
+              href: linq-to-sql-tools-in-visual-studio2.md
+            - name: Metodi DataContext (O/R Designer)
+              items:
+                - name: Metodi DataContext (O/R Designer)
+                  href: datacontext-methods-o-r-designer.md
+                - name: Modificare il tipo restituito di un metodo DataContext (Object Relational Designer)
+                  href: how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md
+                - name: Creare metodi DataContext mappati a stored procedure e funzioni (Object Relational Designer)
+                  href: how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md
+            - name: Ereditarietà delle classi di dati (Object Relational Designer)
+              items:
+                - name: Ereditarietà delle classi di dati (Object Relational Designer)
+                  href: data-class-inheritance-o-r-designer.md
+                - name: Configurare l'ereditarietà usando Object Relational Designer
+                  href: how-to-configure-inheritance-by-using-the-o-r-designer.md
+                - name: Creazione di classi LINQ to SQL tramite ereditarietà a una sola tabella (Object Relational Designer)
+                  href: walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md
+            - name: Creare classi LINQ to SQL mappate a tabelle e viste (Object Relational Designer)
+              href: how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md
+            - name: Estendere il codice generato da Object Relational Designer
+              href: how-to-extend-code-generated-by-the-o-r-designer.md
+            - name: Creare un'associazione (relazione) tra classi LINQ to SQL (Object Relational Designer)
+              href: how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md
+            - name: Aggiungere la convalida a classi di entità
+              href: how-to-add-validation-to-entity-classes.md
+            - name: 'Personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità'
+              href: walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md
+            - name: 'Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (Object Relational Designer)'
+              href: how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md
+            - name: Attivare e disattivare la pluralizzazione (Object Relational Designer)
+              href: how-to-turn-pluralization-on-and-off-o-r-designer.md
+            - name: Messaggi di O/R Designer
+              items:
+                - name: Messaggi di O/R Designer
+                  href: o-r-designer-messages.md
+                - name: Impossibile eliminare la classe selezionata perché è utilizzata come tipo restituito per uno o più metodi DataContext
+                  href: the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md
+                - name: La stringa di connessione contiene credenziali con una password in testo non crittografato e non utilizza la sicurezza integrata
+                  href: the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security.md
+                - name: Impossibile eliminare la proprietà <nome proprietà\> perché partecipa all'associazione <nome associazione\>
+                  href: the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md
+                - name: Impossibile eliminare la proprietà <nome proprietà\>
+                  href: the-property-property-name-cannot-be-deleted.md
+                - name: Nel file di impostazioni dell'applicazione la proprietà di connessione manca o è errata
+                  href: the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md
+                - name: È stato selezionato un oggetto di database da un provider di database non supportato
+                  href: you-have-selected-a-database-object-from-an-unsupported-database-provider.md
+                - name: Impossibile creare un'associazione <nome associazione\>. I tipi di proprietà non corrispondono
+                  href: cannot-create-an-association-association-name-property-types-do-not-match.md
+                - name: Avviso. Nella finestra di dialogo Configura comportamento ci sono modifiche non applicate
+                  href: warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md
+                - name: 'Questo metodo correlato è il metodo sottostante per i seguenti metodi predefiniti di inserimento, aggiornamento o eliminazione'
+                  href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
+                - name: Uno o più elementi selezionati contengono un tipo di dati non supportato dalla finestra di progettazione
+                  href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
+                - name: La modifica del tipo restituito di un metodo DataContext non può essere annullata
+                  href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
+                - name: Impossibile modificare la finestra di progettazione durante il debug
+                  href: the-designer-cannot-be-modified-while-debugging.md
+                - name: La connessione selezionata utilizza un provider di database non supportato
+                  href: the-selected-connection-uses-an-unsupported-database-provider.md
+                - name: Gli oggetti in corso di aggiunta alla finestra di progettazione utilizzano una connessione dati diversa da quella utilizzata per la finestra di progettazione
+                  href: the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md
+                - name: Impossibile creare un'associazione <nome associazione\>. La proprietà è elencata due volte
+                  href: cannot-create-an-association-association-name-property-listed-twice.md
+                - name: Impossibile recuperare le informazioni sullo schema per l'oggetto di database <nome oggetto\>
+                  href: could-not-retrieve-schema-information-for-database-object-object-name.md
+                - name: Uno o più oggetti di database selezionati restituisce uno schema non corrispondente allo schema della classe di dati di destinazione
+                  href: one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md
+        - name: Associare controlli ai dati in Visual Studio
+          items:
+            - name: Associare controlli ai dati in Visual Studio
+              href: bind-controls-to-data-in-visual-studio.md
+            - name: Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
+              href: set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md
+            - name: Aggiungere controlli personalizzati alla finestra Origini dati
+              href: add-custom-controls-to-the-data-sources-window.md
+            - name: Filtrare e ordinare i dati in un'applicazione Windows Forms
+              href: filter-and-sort-data-in-a-windows-forms-application.md
+            - name: Associare controlli WPF ai dati in Visual Studio
+              items:
+                - name: Associare controlli WPF ai dati in Visual Studio
+                  href: bind-wpf-controls-to-data-in-visual-studio1.md
+                - name: Associare controlli WPF a un set di dati
+                  href: bind-wpf-controls-to-a-dataset.md
+                - name: Associare controlli WPF ai dati in Visual Studio
+                  href: bind-wpf-controls-to-data-in-visual-studio2.md
+                - name: Associare controlli WPF a un servizio di dati WCF
+                  href: bind-wpf-controls-to-a-wcf-data-service.md
+                - name: Creare tabelle di ricerca in applicazioni WPF
+                  href: create-lookup-tables-in-wpf-applications.md
+                - name: Visualizzare dati correlati in applicazioni WPF
+                  href: display-related-data-in-wpf-applications.md
+                - name: Visualizzare dati correlati in un'applicazione WPF
+                  href: walkthrough-displaying-related-data-in-a-wpf-application.md
+                - name: Associare controlli alle immagini di un database
+                  href: bind-controls-to-pictures-from-a-database.md
+            - name: Associare controlli Windows Form ai dati in Visual Studio
+              items:
+                - name: Associare controlli Windows Form ai dati in Visual Studio
+                  href: bind-windows-forms-controls-to-data-in-visual-studio.md
+                - name: Associare controlli Windows Form ai dati
+                  href: bind-windows-forms-controls-to-data.md
+                - name: Eseguire il commit delle modifiche in corso nei controlli con associazione a dati prima del salvataggio dei dati
+                  href: commit-in-process-edits-on-data-bound-controls-before-saving-data.md
+                - name: Creare tabelle di ricerca nelle applicazioni Windows Forms
+                  href: create-lookup-tables-in-windows-forms-applications.md
+                - name: Creare un Windows Form per la ricerca di dati
+                  href: create-a-windows-form-to-search-data.md
+                - name: Creare un controllo utente Windows Form che supporta il data binding semplice
+                  href: create-a-windows-forms-user-control-that-supports-simple-data-binding.md
+                - name: Creare un controllo utente Windows Form che supporta il data binding complesso
+                  href: create-a-windows-forms-user-control-that-supports-complex-data-binding.md
+                - name: Creare un controllo utente Windows Form che supporta il data binding di ricerca
+                  href: create-a-windows-forms-user-control-that-supports-lookup-data-binding.md
+                - name: Passare dati da un form all'altro
+                  href: pass-data-between-forms.md
+            - name: Associare oggetti in Visual Studio
+              href: bind-objects-in-visual-studio.md
+            - name: Personalizzare la modalità in cui in Visual Studio vengono create didascalie per controlli con associazione a dati
+              href: customize-how-visual-studio-creates-captions-for-data-bound-controls.md
+        - name: Servizi Windows Communication Foundation e dati WCF in Visual Studio
+          items:
+            - name: Servizi Windows Communication Foundation e dati WCF in Visual Studio
+              href: windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md
+            - name: Connettersi ai dati di un servizio
+              href: how-to-connect-to-data-in-a-service.md
+            - name: Creazione di un servizio WCF semplice in Windows Forms
+              href: walkthrough-creating-a-simple-wcf-service-in-windows-forms.md
+            - name: Creazione di un servizio dati WCF con WPF ed Entity Framework
+              href: walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md
+            - name: Uso di un modello concettuale
+              href: working-with-a-conceptual-model-wcf-data-services.md
+            - name: Risoluzione dei problemi relativi ai riferimenti al servizio
+              href: troubleshooting-service-references.md
+            - name: Configura riferimento a servizio (finestra di dialogo)
+              href: configure-service-reference-dialog-box.md
+            - name: 'Aggiungere, aggiornare o rimuovere un riferimento a WCF Data Services'
+              href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
+        - name: Creazione e gestione di database e applicazioni livello dati in Visual Studio
+          items:
+            - name: Creazione e gestione di database e applicazioni livello dati in Visual Studio
+              href: creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md
+            - name: Creazione di un'applicazione dati a più livelli
+              href: walkthrough-creating-an-n-tier-data-application.md
+            - name: Cenni preliminari sull'applicazione dati a più livelli
+              href: n-tier-data-applications-overview.md
+        - name: Risorse aggiuntive per la risoluzione degli errori di accesso ai dati
+          href: additional-resources-for-troubleshooting-data-access-errors.md
+    - name: Visual Studio Data Tools per C++
+      href: visual-studio-data-tools-for-cpp.md

@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e69bd59782c2caa1dcb878df4e5316df798b0f21
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680983"
 ---
 # <a name="text-template-utility-methods"></a>Metodi di utilità per i modelli di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "63411403"
 Esistono diversi metodi che sono sempre disponibili quando si scrive codice un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modello di testo. Questi metodi sono definiti <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
-> È anche possibile usare altri metodi e i servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi dei file, registrare gli errori e ottenere servizi forniti da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualsiasi pacchetto caricato.  Per altre informazioni, vedere [l'accesso a Visual Studio da un modello di testo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> È anche possibile usare altri metodi e i servizi forniti dall'ambiente host in un normale modello di testo (non pre-elaborato). Ad esempio, è possibile risolvere i percorsi dei file, registrare gli errori e ottenere servizi forniti da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualsiasi pacchetto caricato.  Per altre informazioni, vedere [l'accesso a Visual Studio da un modello di testo](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Scrivere metodi  
  È possibile usare la `Write()` e `WriteLine()` metodi per aggiungere un testo in un blocco di codice standard, invece di usare un blocco di codice di espressione. I blocchi di codice seguenti sono funzionalmente equivalenti.  

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686891"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081398"
 
   Violazione di uno di questi modelli attiverà questo avviso.
 
-  Ogni radice non sealed Tipo IDisposable debba fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e Finalize deve chiamare Dispose (false). Se si sta creando un tipo IDisposable radice non bloccato, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulizia di risorse non gestite](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) nel [linee guida di progettazione di Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sezione della documentazione di .NET Framework.
+  Ogni radice non sealed Tipo IDisposable debba fornire il proprio metodo Dispose (bool) di void virtuale protetto. Dispose () devono chiamare Dispose (true) e Finalize deve chiamare Dispose (false). Se si sta creando un tipo IDisposable radice non bloccato, è necessario definire Dispose (bool) e chiamarlo. Per altre informazioni, vedere [pulizia di risorse non gestite](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) nel [linee guida di progettazione di Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sezione della documentazione di .NET Framework.
 
 ## <a name="rule-description"></a>Descrizione della regola
  È necessario che tutti i tipi IDisposable implementino correttamente il modello Dispose.

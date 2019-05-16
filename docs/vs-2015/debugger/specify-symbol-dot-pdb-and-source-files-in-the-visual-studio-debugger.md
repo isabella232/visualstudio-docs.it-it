@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694919"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Specifica di file di simboli con estensione pdb) e di file di origine nel debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
    Se questa opzione è selezionata, vengono caricate le tabelle di esportazione DLL. Le informazioni sui simboli delle tabelle di esportazione DLL possono essere utili se si lavora con messaggi Windows, routine Windows (WindowProc), oggetti COM, marshalling o qualsiasi DLL per cui non sono disponibili simboli. La lettura di informazioni di esportazione DLL comporta del sovraccarico. Pertanto questa funzionalità è disattivata per impostazione predefinita.
 
-   Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, utilizzare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, utilizzare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports` , è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Usare i server di simboli per trovare i file di simboli che non sono presenti nel computer locale
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il protocollo symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) e gli [strumenti di debug per Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sono due componenti che implementano i server di simboli. Specificare i server di simboli da utilizzare nella finestra di dialogo **Opzioni** di Visual Studio.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] può scaricare i file di simboli di debug dai server di simboli che implementano il protocollo symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) e gli [strumenti di debug per Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sono due componenti che implementano i server di simboli. Specificare i server di simboli da utilizzare nella finestra di dialogo **Opzioni** di Visual Studio.
 
  I server di simboli utilizzabili includono i seguenti:
 
@@ -165,9 +165,9 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
  **Opzioni di C++**
 
- Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si esegue una compilazione con [/ZI o /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (per C/C++).
+ Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si esegue una compilazione con [/ZI o /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (per C/C++).
 
- In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]l'opzione [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.
+ In [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]l'opzione [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) assegna un nome al file con estensione pdb creato dal compilatore. Quando si crea un progetto in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con le procedure guidate, l'opzione **/Fd** viene impostata in modo da creare un file con estensione pdb denominato *project*.pdb.
 
  Se l'applicazione C/C++ viene compilata usando un makefile e si specifica **/ZI** o **/Zi** senza **/Fd**, vengono generati due file con estensione pdb:
 
@@ -183,7 +183,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
   **Opzioni di .NET Framework**
 
-  Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full** , verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly** , vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute` , che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni, vedere [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Un file di database di programma (con estensione pdb) contiene le informazioni relative al debug e allo stato del progetto che consentono il collegamento incrementale di una configurazione di debug del programma. Un file con estensione pdb viene creato quando si compila con **/debug**. È possibile compilare applicazioni con **/debug:full** o **/debug:pdbonly**. Se si usa l'opzione di compilazione **/debug:full** , verrà generato codice di cui è possibile effettuare il debug. Se si usa l'opzione di compilazione **/debug:pdbonly** , vengono generati file con estensione pdb ma non l'attributo `DebuggableAttribute` , che indica al compilatore JIT che sono disponibili informazioni di debug. Usare **/debug:pdbonly** per generare file con estensione pdb per una build di rilascio che non si vuole sottoporre a debug. Per altre informazioni, vedere [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilizza il percorso del file pdb specificato nel file con estensione exe o dll per trovare il file project.pdb. Se il file con estensione pdb non viene trovato in tale percorso oppure se il percorso non è valido, viene eseguita una ricerca nel percorso contenente il file EXE e quindi nei percorsi di simboli specificati nella finestra di dialogo **Opzioni** . Questo percorso in genere corrisponde alla cartella **Debug** del nodo **Simboli** . Il debugger non carica un file con estensione pdb che non corrisponde al file eseguibile sottoposto a debug. Se non viene trovato alcun file con estensione pdb, viene visualizzata una finestra di dialogo **Trova simboli** che consente di cercare simboli o aggiungere altri percorsi al percorso di ricerca.
 

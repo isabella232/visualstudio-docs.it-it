@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969218"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687669"
 ---
 # <a name="wizard-vsz-file"></a>File (con estensione vsz) della procedura guidata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |Wizard|Questo campo contiene il ProgID OLE della procedura guidata o in alternativa una rappresentazione di stringa GUID del CLSID della procedura guidata che viene cocreata dall'IDE.|  
 |Param|Queste parti sono facoltative. È possibile aggiungere fino a necessari.|  
   
- I parametri di abilitare il file con estensione vsz passare i parametri personalizzati aggiuntivi per la procedura guidata. Ogni valore viene passato come un elemento di stringa in una matrice di variant per la procedura guidata. Per altre informazioni, vedere [parametri personalizzati](../../extensibility/internals/custom-parameters.md). Per informazioni su come usare un file con estensione vsz nello sviluppo di procedure guidate personalizzate, vedere [. File VSZ (controllo progetto)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ I parametri di abilitare il file con estensione vsz passare i parametri personalizzati aggiuntivi per la procedura guidata. Ogni valore viene passato come un elemento di stringa in una matrice di variant per la procedura guidata. Per altre informazioni, vedere [parametri personalizzati](../../extensibility/internals/custom-parameters.md). Per informazioni su come usare un file con estensione vsz nello sviluppo di procedure guidate personalizzate, vedere [. File VSZ (controllo progetto)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  Per aggiungere un ID impostazioni locali predefinite per il file con estensione vsz, specificare `FALLBACK_LCID`= xxxx, dove xxxx è l'ID delle impostazioni locali, ad esempio, 1033 per inglese. Quando `FALLBACK_LCID` parametro è definito, la procedura guidata Usa l'ID impostazioni locali di fallback specificato se non viene trovato l'ID corrente.  
   

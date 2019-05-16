@@ -8,17 +8,17 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 08d88ce08c6c91cbf46bcc6d15cbf098d61e604d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412328"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679926"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestione di progetti Windows universale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.1, consentendo agli sviluppatori di utilizzare il codice e altri asset su entrambe le piattaforme. Il codice condiviso e le risorse vengono mantenute in un progetto condiviso, mentre il codice specifico della piattaforma e le risorse vengono mantenute in progetti separati, uno per Windows e l'altro per Windows Phone. Per altre informazioni sulle App Windows universali, vedere [le app Windows universali](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Estensioni di Visual Studio che gestiscono i progetti devono essere consapevoli che i progetti di app universali di Windows dispongono di una struttura che differisce dalle App a singola piattaforma. Questa procedura dettagliata illustra come spostare il progetto condiviso e gestire gli elementi condivisi.  
+Le app Windows universali sono le app destinate a Windows 8.1 e Windows Phone 8.1, consentendo agli sviluppatori di utilizzare il codice e altri asset su entrambe le piattaforme. Il codice condiviso e le risorse vengono mantenute in un progetto condiviso, mentre il codice specifico della piattaforma e le risorse vengono mantenute in progetti separati, uno per Windows e l'altro per Windows Phone. Per altre informazioni sulle App Windows universali, vedere [le app Windows universali](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Estensioni di Visual Studio che gestiscono i progetti devono essere consapevoli che i progetti di app universali di Windows dispongono di una struttura che differisce dalle App a singola piattaforma. Questa procedura dettagliata illustra come spostare il progetto condiviso e gestire gli elementi condivisi.  
   
 ## <a name="prerequisites"></a>Prerequisiti  
  A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

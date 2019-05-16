@@ -12,12 +12,12 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31840c40f2a494ffd32f5241e2770938138877e9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429158"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704092"
 ---
 # <a name="project-property-user-interface"></a>Interfaccia utente delle proprietà del progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,8 +55,8 @@ Un sottotipo di progetto è possibile usare gli elementi nel progetto **pagine d
   
   Poiché le aggregazioni di sottotipo di progetto di <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> dell'oggetto, è possibile sostituire la definizione di queste proprietà per controllare quali **pagine delle proprietà** vengono visualizzate le finestre di dialogo. Il sottotipo di progetto possa recuperare queste proprietà dal progetto di base interno e quindi aggiungere o rimuovere i CLSID in base alle esigenze.  
   
-  Pagine delle proprietà aggiunte da un sottotipo di progetto usati presentano un oggetto di esplorazione di configurazione progetto rispetto all'implementazione di progetto di base. Questo oggetto di visualizzazione configurazione progetto supporta estensioni di automazione. Per altre informazioni su AutomationExtenders, vedere [implementazione ed estensioni di automazione usando](http://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Le pagine delle proprietà implementati dalla chiamata al sottotipo di progetto <xref:EnvDTE.Project.Extender%2A> per recuperare le proprie oggetto Sfoglia sottotipo configurazione del progetto che estende l'oggetto di esplorazione di configurazione del progetto di base.  
+  Pagine delle proprietà aggiunte da un sottotipo di progetto usati presentano un oggetto di esplorazione di configurazione progetto rispetto all'implementazione di progetto di base. Questo oggetto di visualizzazione configurazione progetto supporta estensioni di automazione. Per altre informazioni su AutomationExtenders, vedere [implementazione ed estensioni di automazione usando](https://msdn.microsoft.com/library/0d5c218c-f412-4b28-ab0c-33a611f62356). Le pagine delle proprietà implementati dalla chiamata al sottotipo di progetto <xref:EnvDTE.Project.Extender%2A> per recuperare le proprie oggetto Sfoglia sottotipo configurazione del progetto che estende l'oggetto di esplorazione di configurazione del progetto di base.  
   
 ## <a name="see-also"></a>Vedere anche  
  <xref:EnvDTE.IFilterProperties>   
- [Finestra di dialogo Pagine delle proprietà](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
+ [Finestra di dialogo Pagine delle proprietà](https://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42c7a65625d8e21ceff1070ccbc66d5881af853d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82ffecdc719dad2f38208de00dc95438b3ff36ef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968611"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697695"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procedura: Creare associazioni di file per un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ ms.locfileid: "58968611"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Per altre informazioni, vedere [Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Per altre informazioni, vedere [Mage.exe (Strumento per la generazione e la modifica di manifesti)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Vedere anche  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifesto dell'applicazione ClickOnce](../deployment/clickonce-application-manifest.md)   
- [Mage.exe (Strumento per la generazione e la modifica di manifesti)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (Strumento per la generazione e la modifica di manifesti)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

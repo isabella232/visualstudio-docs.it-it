@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f19b71c86d972b59a9d46f379bf7ec93f63aeb9a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084028"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679952"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework nell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ L'editor viene compilato con componenti di Managed Extensibility Framework (MEF)
   
  La libreria MEF è contenuta nell'assembly .NET Framework versione 4 System.ComponentModel.Composition.dll.  
   
- Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+ Per altre informazioni su MEF, vedere [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ### <a name="component-parts-and-composition-containers"></a>Parti componenti e i contenitori di composizione  
  Una parte del componente è una classe o un membro di una classe che è possibile eseguire uno (o entrambe) delle operazioni seguenti:  

@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80734d9859df2e06bc51d40e1fffa40c7d97c7a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691817"
 ---
 # <a name="support-for-user-settings"></a>Supporto per le impostazioni utente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Un pacchetto VSPackage può definire uno o più categorie di impostazioni, che s
   
  Una voce del Registro di sistema che si intende un punto di impostazioni personalizzato e un GUID definisce la categoria di impostazioni di VSPackage. Un pacchetto VSPackage può supportare più categorie di impostazioni, ognuno definito da un punto di impostazioni personalizzato.  
   
-- Le implementazioni di impostazioni che si basano sugli assembly di interoperabilità (usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) devono creare punto di impostazioni personalizzato modificando il Registro di sistema o utilizzando uno script di registrazione (file con estensione RGS). Per altre informazioni, vedere [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Le implementazioni di impostazioni che si basano sugli assembly di interoperabilità (usando il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) devono creare punto di impostazioni personalizzato modificando il Registro di sistema o utilizzando uno script di registrazione (file con estensione RGS). Per altre informazioni, vedere [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 - Codice che usa il Framework di pacchetto gestito (MPF) debba creare punti di impostazioni personalizzati collegando un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> a VSPackage per ogni punto di impostazioni personalizzato.  
   

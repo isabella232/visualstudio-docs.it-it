@@ -11,12 +11,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0eb1d870b3858255fe6b4a0cf9a255d9d1df8c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e17164976062ec916074c6210be6ae42e8ea1d03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965396"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699499"
 ---
 # <a name="automation-model-overview"></a>Panoramica del modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Il modello di automazione è costituito da un set di oggetti su cui è possibile
  ![Oggetto grafico automazione di Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Oggetti di automazione di Visual Studio  
   
- Per altre informazioni, vedere [estendendo l'ambiente di Visual Studio](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
+ Per altre informazioni, vedere [estendendo l'ambiente di Visual Studio](https://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
   
  L'ambiente fornisce un modello per aree funzionali diverse. Ad esempio, vi è un modello di codice per diversi elementi che potrebbero risultare nel codice. È disponibile un modello di documento per vari elementi del documento. Un'area, l'area di progetto, è di particolare interesse per i provider di VSPackage. I nuovi tipi di progetto per contribuire al modello di automazione in modo analogo a come probabilmente si desidererà [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] contribuiscono al modello di automazione. Che procedura [che fornisce un'automazione per i pacchetti VSPackage](../../extensibility/internals/providing-automation-for-vspackages.md).  
   
@@ -43,7 +43,7 @@ Oggetti di automazione di Visual Studio
   
 - Compilazione  
   
-  Per altre informazioni sull'automazione, vedere [automazione ed estendibilità in Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Questo documento e i documenti vengono forniti collegamenti per poter prendere decisioni relative a come si deve fornire l'automazione per il pacchetto VSPackage.  
+  Per altre informazioni sull'automazione, vedere [automazione ed estendibilità in Visual Studio](https://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Questo documento e i documenti vengono forniti collegamenti per poter prendere decisioni relative a come si deve fornire l'automazione per il pacchetto VSPackage.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Creare un componente aggiuntivo](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [Procedura: Creare un componente aggiuntivo](https://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

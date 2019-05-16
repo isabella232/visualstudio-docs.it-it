@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e568286a5e17b13b5009eccf01988d458fc9cd47
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686957"
 ---
 # <a name="managing-external-tools"></a>Gestione di strumenti esterni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "63445434"
   
 1. Crea GUID: genera un GUID.  
   
-2. Ricerca errori: ottiene un messaggio di errore dal valore immesso. Per altre informazioni, vedere [Riferimenti a ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Ricerca errori: ottiene un messaggio di errore dal valore immesso. Per altre informazioni, vedere [Riferimenti a ERRLOOK](https://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
 3. Strumento di traccia ATL/MFC: mostra i messaggi di traccia di debug nelle origini ATL e MFC.  
   
@@ -85,7 +85,7 @@ ms.locfileid: "63445434"
 6. Editor configurazione servizi WCF: Consente di creare e modificare le impostazioni di configurazione per i servizi WCF.  
   
 > [!WARNING]
-> È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> È possibile visualizzare un elenco diverso degli strumenti esterni, a seconda della versione di Visual Studio installata e del profilo di impostazioni applicate. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Aggiunta di nuovi strumenti  
  È possibile aggiungere uno strumento esterno al menu **Strumenti**. Aprire la finestra di dialogo **Strumenti esterni**, fare clic su **Aggiungi**, quindi inserire le informazioni. L'immissione seguente consente ad esempio di aprire la cartella dove si trova il file attualmente aperto in Visual Studio:  
@@ -122,4 +122,4 @@ ms.locfileid: "63445434"
 |Nome file della soluzione|$(SolutionFileName)|Nome file della soluzione corrente (unità + percorso + nome file).|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strumenti per la compilazione in C/C++](http://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)
+ [Strumenti per la compilazione in C/C++](https://msdn.microsoft.com/library/48d9daf4-6bbf-473a-8ce2-bf2923b69f80)

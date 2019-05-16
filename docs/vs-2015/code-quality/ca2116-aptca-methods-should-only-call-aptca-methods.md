@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687353"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: I metodi APTCA devono chiamare solo metodi APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58955791"
  Un metodo in un assembly con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attributo chiama un metodo in un assembly che non dispone dell'attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- Per impostazione predefinita, i metodi pubblici o protetti negli assembly con nomi sicuri sono protetti in modo implicito da un [linking](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per un'attendibilità totale; solo è considerato completamente attendibile i chiamanti possono accedere a un assembly con nome sicuro. Assembly con nome sicuro è contrassegnato con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non è questo tipo di protezione. L'attributo disabilita la richiesta di collegamento, l'assembly vengono resi accessibili a chiamanti privi di attendibilità totale, ad esempio di codice in esecuzione da una rete intranet o Internet.
+ Per impostazione predefinita, i metodi pubblici o protetti negli assembly con nomi sicuri sono protetti in modo implicito da un [linking](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) per un'attendibilità totale; solo è considerato completamente attendibile i chiamanti possono accedere a un assembly con nome sicuro. Assembly con nome sicuro è contrassegnato con il <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attributo (APTCA) non è questo tipo di protezione. L'attributo disabilita la richiesta di collegamento, l'assembly vengono resi accessibili a chiamanti privi di attendibilità totale, ad esempio di codice in esecuzione da una rete intranet o Internet.
 
  Quando l'attributo APTCA è presente in un assembly completamente attendibile e l'assembly esegue codice in un altro assembly che non consente chiamanti parzialmente attendibili, è possibile una violazione della sicurezza. Se i due metodi `M1` e `M2` soddisfa le condizioni seguenti, i chiamanti malintenzionati possono usare il metodo `M1` per ignorare la richiesta di collegamento implicite con attendibilità totale che protegge `M2`:
 
@@ -49,7 +49,7 @@ ms.locfileid: "58955791"
   Un chiamante parzialmente attendibile `X` può chiamare metodo `M1`, provocando `M1` chiamare `M2`. In quanto `M2` non ha l'attributo APTCA, il relativo chiamante immediato (`M1`) deve soddisfare una richiesta di collegamento per l'attendibilità totale; `M1` sia totalmente attendibile e pertanto soddisfa questo controllo. Il rischio di sicurezza, infatti `X` contribuisce a soddisfare la richiesta di collegamento che consente di proteggere `M2` da chiamanti non attendibili. Di conseguenza, i metodi con l'attributo APTCA non devono chiamare metodi che non dispongono dell'attributo.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Se è richiesto l'attributo APCTA, usare una richiesta per proteggere il metodo che chiama l'assembly con attendibilità totale. Le autorizzazioni esatte dipenderà è richiesta la funzionalità esposta dal metodo. Se è possibile, proteggere il metodo con una richiesta di attendibilità garantire che la funzionalità sottostante non viene esposta a chiamanti parzialmente attendibili. In caso contrario, selezionare un set di autorizzazioni che protegge in modo efficace le funzionalità esposte. Per altre informazioni sulle richieste, vedere [pretese](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Se è richiesto l'attributo APCTA, usare una richiesta per proteggere il metodo che chiama l'assembly con attendibilità totale. Le autorizzazioni esatte dipenderà è richiesta la funzionalità esposta dal metodo. Se è possibile, proteggere il metodo con una richiesta di attendibilità garantire che la funzionalità sottostante non viene esposta a chiamanti parzialmente attendibili. In caso contrario, selezionare un set di autorizzazioni che protegge in modo efficace le funzionalità esposte. Per altre informazioni sulle richieste, vedere [pretese](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Esclusione di avvisi
  Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che le funzionalità esposte tramite il metodo non direttamente o indirettamente consentano ai chiamanti di accedere a informazioni riservate, operazioni o risorse che possono essere usate in modo distruttivo.
@@ -77,4 +77,4 @@ ms.locfileid: "58955791"
  [CA2117: I tipi APTCA devono estendere solo tipi di base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Linee guida per la generazione di codice sicuro](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assembly .NET Framework possono essere chiamati da codice parzialmente attendibile](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usare parzialmente librerie da codice attendibile](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [richieste](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Collegarle](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dati e modellazione](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Linee guida per la generazione di codice sicuro](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assembly .NET Framework possono essere chiamati da codice parzialmente attendibile](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usare parzialmente librerie da codice attendibile](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [richieste](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Collegarle](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dati e modellazione](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

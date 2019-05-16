@@ -13,14 +13,14 @@ ms.assetid: be48e639-340a-468a-9f5f-68911bfef93c
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 982adbadf4a0e6099f8d98d9f81df1549d6f4d10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56461b928741f299e9005e11292efb3669297b57
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966221"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690617"
 ---
-# <a name="vsx-language-pack-schema-reference"></a>Riferimento allo Schema VSX Language Pack
+# <a name="vsx-language-pack-schema-reference"></a>Informazioni di riferimento sullo schema del Language Pack VSX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lo schema del Language Pack VSX fornisce informazioni sull'installazione localizzati di pacchetti VSIX.  
@@ -36,5 +36,5 @@ Lo schema del Language Pack VSX fornisce informazioni sull'installazione localiz
 |Titolo|Descrizione|  
 |-----------|-----------------|  
 |[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Viene illustrato come fornire supporto di installazione localizzata per un pacchetto VSIX.|  
-|[Riferimenti su VSIX Extension Schema 1.0](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|Un manifesto VSIX descrive il contenuto di un file di distribuzione VSIX, che consente a un'estensione di Visual Studio essere installato tramite il **estensioni e aggiornamenti** nella finestra di dialogo.|  
+|[Riferimenti su VSIX Extension Schema 1.0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)|Un manifesto VSIX descrive il contenuto di un file di distribuzione VSIX, che consente a un'estensione di Visual Studio essere installato tramite il **estensioni e aggiornamenti** nella finestra di dialogo.|  
 |[Ricerca e uso delle estensioni di Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Viene illustrato come utilizzare il **estensioni e aggiornamenti** finestra di dialogo per installare, rimuovere, attivare e disattivare le estensioni.|

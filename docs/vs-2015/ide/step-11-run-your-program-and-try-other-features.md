@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442643"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679534"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Passaggio 11: Eseguire il programma e provare altre funzionalità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Finestra di dialogo Colore
   
 ### <a name="to-continue-or-review"></a>Per continuare o rivedere l'esercitazione  
   
-- Per altre informazioni sulla programmazione in Visual Studio, vedere [Nozioni di base sulla programmazione](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Per altre informazioni sulla programmazione in Visual Studio, vedere [Nozioni di base sulla programmazione](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
-- Per altre informazioni su Visual Basic, vedere [Sviluppo di applicazioni con Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Per altre informazioni su Visual Basic, vedere [Sviluppo di applicazioni con Visual Basic](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
-- Per altre informazioni su Visual C#, vedere [Introduction to the C# Language and the .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081) (Introduzione al linguaggio C# e .NET Framework).  
+- Per altre informazioni su Visual C#, vedere [Introduction to the C# Language and the .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081) (Introduzione al linguaggio C# e .NET Framework).  
   
 - Per passare all'esercitazione successiva, vedere [Esercitazione 2: Creare un quiz matematico a tempo](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   

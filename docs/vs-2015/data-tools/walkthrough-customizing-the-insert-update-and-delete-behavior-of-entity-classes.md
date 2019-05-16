@@ -9,19 +9,19 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db27e8665d74477f3bb668831cbfaeef00d622bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700220"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce una superficie di progettazione visiva per la creazione e modifica [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] classi (classi di entità) basate sugli oggetti in un database. Usando [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), è possibile usare la tecnologia LINQ per accedere ai database SQL. Per altre informazioni, vedere [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornisce una superficie di progettazione visiva per la creazione e modifica [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] classi (classi di entità) basate sugli oggetti in un database. Usando [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), è possibile usare la tecnologia LINQ per accedere ai database SQL. Per altre informazioni, vedere [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
- Per impostazione predefinita, la logica per eseguire gli aggiornamenti viene fornita dal runtime [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Nel runtime vengono create istruzioni Insert, Update e Delete predefinite in base allo schema della tabella (definizioni di colonna e informazioni sulla chiave primaria). Quando non si desidera usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per eseguire i comandi di inserimento, aggiornamento ed eliminazione necessari per l'uso dei dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per altre informazioni, vedere [personalizzazione di operazioni usando Stored procedure](http://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
+ Per impostazione predefinita, la logica per eseguire gli aggiornamenti viene fornita dal runtime [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Nel runtime vengono create istruzioni Insert, Update e Delete predefinite in base allo schema della tabella (definizioni di colonna e informazioni sulla chiave primaria). Quando non si desidera usare il comportamento predefinito, è possibile configurare il comportamento di aggiornamento e definire stored procedure specifiche per eseguire i comandi di inserimento, aggiornamento ed eliminazione necessari per l'uso dei dati nel database. Questa operazione può essere eseguita anche quando non viene generato il comportamento predefinito, ad esempio quando viene eseguito il mapping delle classi di entità alle visualizzazioni. Inoltre, è possibile eseguire l'override del comportamento di aggiornamento predefinito quando il database richiede l'accesso alla tabella tramite stored procedure. Per altre informazioni, vedere [personalizzazione di operazioni usando Stored procedure](https://msdn.microsoft.com/library/aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a).  
   
 > [!NOTE]
 > In questa procedura dettagliata è richiesta la disponibilità delle stored procedure **InsertCustomer**, **UpdateCustomer** e **DeleteCustomer** per il database Northwind.
@@ -65,7 +65,7 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
     > [!NOTE]
     > [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] è supportato nei progetti di [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e di C#. Pertanto, creare il nuovo progetto in uno di questi linguaggi.  
   
-3. Scegliere il **Windows Forms Application** modello, quindi scegliere **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Scegliere il **Windows Forms Application** modello, quindi scegliere **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto UpdatingwithSProcsWalkthrough viene creato e aggiunto alla **Esplora soluzioni**.  
   
@@ -253,14 +253,14 @@ Il [strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-v
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, è possibile eseguire diverse operazioni dopo la creazione delle classi di entità [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. È possibile apportare alcuni miglioramenti a questa applicazione, tra cui:  
   
-- Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
+- Implementazione del controllo della concorrenza durante gli aggiornamenti. Per informazioni, vedere [la concorrenza ottimistica: Panoramica](https://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   
-- Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
+- Aggiunta di query LINQ per filtrare i dati. Per informazioni, vedere [Introduzione alle query LINQ (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Strumenti LINQ to SQL in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
- [Query LINQ to SQL](http://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [Query LINQ to SQL](https://msdn.microsoft.com/library/f4897aaa-7f44-4c20-a471-b948c2971aae)   
  [Metodi DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
  [Procedura: Assegnare stored procedure per eseguire aggiornamenti, inserimenti ed eliminazioni (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [PAVE quali sono le novità per lo sviluppo di applicazioni dati in Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)
+ [PAVE quali sono le novità per lo sviluppo di applicazioni dati in Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)

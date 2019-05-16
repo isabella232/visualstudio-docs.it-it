@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976993"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704780"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Sviluppo di applicazioni con Progettazione flussi di lavoro
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] flussi di lavoro, vedere la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] consiste in un debugger e una finestra di progettazione visiva per il debug e la costruzione grafica di applicazioni [!INCLUDE[wf](../includes/wf-md.md)] nella versione [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] ospitata nell'ambiente di sviluppo di [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Consente di creare un'applicazione di flussi di lavoro compositi, una libreria attività o un servizio [!INCLUDE[indigo1](../includes/indigo1-md.md)] tramite l'uso di modelli e ActivityDesigner. [!INCLUDE[crabout](../includes/crabout-md.md)] flussi di lavoro, vedere la [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Di seguito sono indicate diverse nuove funzionalità di progettazione che fanno la distinzione tra questa nuova versione di [!INCLUDE[wfd2](../includes/wfd2-md.md)] e le versioni precedenti di [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62976993"
  [Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Contiene il materiale sussidiario sull'utilizzo della finestra di progettazione legacy che viene destinata a [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [Riallocazione della finestra di progettazione &#91;esempi di WF&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [Riallocazione della finestra di progettazione &#91;esempi di WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  In questo esempio viene illustrato come creare il layout WPF per contenere la finestra di progettazione.  
   
- [ActivityDesigner personalizzati](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [ActivityDesigner personalizzati](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Contenuto della sezione sono contenuti esempi di attività in cui vengono usate finestre di progettazione personalizzate da visualizzare nella progettazione flussi di lavoro.

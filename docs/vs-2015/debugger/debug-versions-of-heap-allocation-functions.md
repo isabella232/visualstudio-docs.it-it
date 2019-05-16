@@ -25,19 +25,19 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26d81d7b2aaa3bd8661e0da4b1590e9c8c0d0191
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 13f8d8b79ecf586048aacf3cd9442c596f184be3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691161"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versioni di debug di funzioni di allocazione heap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La libreria di runtime del linguaggio C contiene speciali versioni di debug delle funzioni di allocazione heap. Queste funzioni presentano lo stesso nome delle corrispondenti versioni di rilascio, con l'unica differenza del suffisso _dbg. Questo argomento illustra le differenze tra la versione di rilascio di una funzione CRT e la versione _dbg, utilizzando `malloc` e `_malloc_dbg` come esempi.  
   
- Quando [debug](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) è definito, CRT associa tutte [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) le chiamate a [malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pertanto non è necessario riscrivere il codice utilizzando `_malloc_dbg` anziché `malloc` per sfruttarne i vantaggi durante il debug.  
+ Quando [debug](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) è definito, CRT associa tutte [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) le chiamate a [malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Pertanto non è necessario riscrivere il codice utilizzando `_malloc_dbg` anziché `malloc` per sfruttarne i vantaggi durante il debug.  
   
  È tuttavia possibile chiamare `_malloc_dbg` esplicitamente. La chiamata esplicita di `_malloc_dbg` presenta alcuni vantaggi supplementari:  
   
@@ -45,11 +45,11 @@ La libreria di runtime del linguaggio C contiene speciali versioni di debug dell
   
 - Memorizzazione del file sorgente e del numero di riga nel punto in cui ha avuto luogo la richiesta di allocazione.  
   
-  Se non si desidera convertire le `malloc` le chiamate a `_malloc_dbg`, è possibile ottenere le informazioni sul file di origine definendo [CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), in modo che il preprocessore associa direttamente tutte le chiamate a `malloc` a `_malloc_dbg` anziché basarsi su un wrapper `malloc`.  
+  Se non si desidera convertire le `malloc` le chiamate a `_malloc_dbg`, è possibile ottenere le informazioni sul file di origine definendo [CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), in modo che il preprocessore associa direttamente tutte le chiamate a `malloc` a `_malloc_dbg` anziché basarsi su un wrapper `malloc`.  
   
   Per registrare i tipi separati di allocazioni in blocchi client, è necessario chiamare `_malloc_dbg` direttamente e impostare il parametro `blockType` su `_CLIENT_BLOCK`.  
   
-  Quando debug non è definito, le chiamate a `malloc` non vengono disturbate, le chiamate a `_malloc_dbg` vengono risolte `malloc`, la definizione di [CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) viene ignorato e che riguardano le informazioni di file di origine di richiesta di allocazione non è disponibile. Dal momento che `malloc` non presenta alcun parametro di tipo di blocco, le richieste di tipi `_CLIENT_BLOCK` vengono gestite come allocazioni standard.  
+  Quando debug non è definito, le chiamate a `malloc` non vengono disturbate, le chiamate a `_malloc_dbg` vengono risolte `malloc`, la definizione di [CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b) viene ignorato e che riguardano le informazioni di file di origine di richiesta di allocazione non è disponibile. Dal momento che `malloc` non presenta alcun parametro di tipo di blocco, le richieste di tipi `_CLIENT_BLOCK` vengono gestite come allocazioni standard.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Tecniche di debug CRT](../debugger/crt-debugging-techniques.md)

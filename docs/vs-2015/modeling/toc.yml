@@ -1,0 +1,496 @@
+- name: Analisi e modellazione dell'architettura
+  items:
+    - name: Analisi e modellazione dell'architettura
+      href: analyze-and-model-your-architecture.md
+    - name: Novità
+      href: what-s-new-for-design-in-visual-studio.md
+    - name: Scenario - Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
+      href: scenario-change-your-design-using-visualization-and-modeling.md
+    - name: Visualizzare il codice
+      items:
+        - name: Visualizzare il codice
+          href: visualize-code.md
+        - name: Eseguire il mapping delle dipendenze nelle soluzioni
+          href: map-dependencies-across-your-solutions.md
+        - name: Usare le mappe codice per eseguire il debug delle applicazioni
+          href: use-code-maps-to-debug-your-applications.md
+        - name: Mappare i metodi sullo stack di chiamate durante il debug
+          href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
+        - name: Trovare problemi potenziali usando gli analizzatori di mappe codice
+          href: find-potential-problems-using-code-map-analyzers.md
+        - name: Cercare e ridisporre le mappe codice
+          href: browse-and-rearrange-code-maps.md
+        - name: Personalizzare le mappe del codice modificando i file DGML
+          href: customize-code-maps-by-editing-the-dgml-files.md
+        - name: Riferimento di Directed Graph Markup Language (DGML)
+          href: directed-graph-markup-language-dgml-reference.md
+        - name: Creare diagrammi livello dal codice
+          href: create-layer-diagrams-from-your-code.md
+    - name: Creare modelli per l'app
+      items:
+        - name: Creare modelli per l'app
+          href: create-models-for-your-app.md
+        - name: Creare diagrammi e progetti di modellazione UML
+          href: create-uml-modeling-projects-and-diagrams.md
+        - name: Modificare modelli e diagrammi UML
+          href: edit-uml-models-and-diagrams.md
+        - name: Diagrammi livello - Informazioni di riferimento
+          href: layer-diagrams-reference.md
+        - name: Diagrammi livello - Linee guida
+          href: layer-diagrams-guidelines.md
+        - name: Diagrammi attività UML - Informazioni di riferimento
+          items:
+            - name: Diagrammi attività UML - Informazioni di riferimento
+              href: uml-activity-diagrams-reference.md
+            - name: Proprietà di elementi in diagrammi di attività UML
+              href: properties-of-elements-on-uml-activity-diagrams.md
+        - name: Diagrammi attività UML - Linee guida
+          href: uml-activity-diagrams-guidelines.md
+        - name: Diagrammi componenti UML - Informazioni di riferimento
+          items:
+            - name: Diagrammi componenti UML - Informazioni di riferimento
+              href: uml-component-diagrams-reference.md
+            - name: Proprietà degli elementi nei diagrammi dei componenti UML
+              href: properties-of-elements-on-uml-component-diagrams.md
+        - name: Diagrammi componenti UML- Linee guida
+          href: uml-component-diagrams-guidelines.md
+        - name: Diagrammi classi UML - Informazioni di riferimento
+          items:
+            - name: Diagrammi classi UML - Informazioni di riferimento
+              href: uml-class-diagrams-reference.md
+            - name: Proprietà di tipi in diagrammi classi UML
+              href: properties-of-types-on-uml-class-diagrams.md
+            - name: Proprietà di attributi in diagrammi classi UML
+              href: properties-of-attributes-on-uml-class-diagrams.md
+            - name: Proprietà di operazioni in diagrammi classi UML
+              href: properties-of-operations-on-uml-class-diagrams.md
+            - name: Proprietà delle associazioni nei diagrammi classi UML
+              href: properties-of-associations-on-uml-class-diagrams.md
+        - name: Diagrammi classi UML - Linee guida
+          href: uml-class-diagrams-guidelines.md
+        - name: Generare codice da diagrammi classi UML
+          href: generate-code-from-uml-class-diagrams.md
+        - name: Diagrammi sequenze UML - Informazioni di riferimento
+          items:
+            - name: Diagrammi sequenze UML - Informazioni di riferimento
+              href: uml-sequence-diagrams-reference.md
+            - name: Proprietà di elementi in diagrammi di sequenza UML
+              href: properties-of-elements-on-uml-sequence-diagrams.md
+            - name: Descrivere il flusso di controllo con frammenti in diagrammi di sequenza UML
+              href: describe-control-flow-with-fragments-on-uml-sequence-diagrams.md
+        - name: Diagrammi sequenze UML - Linee guida
+          href: uml-sequence-diagrams-guidelines.md
+        - name: Diagrammi casi d'uso UML - Informazioni di riferimento
+          items:
+            - name: Diagrammi casi d'uso UML - Informazioni di riferimento
+              href: uml-use-case-diagrams-reference.md
+            - name: Proprietà di elementi in diagrammi caso d'uso UML
+              href: properties-of-elements-on-uml-use-case-diagrams.md
+            - name: Collegare un caso di utilizzo a documenti e diagrammi
+              href: link-a-use-case-to-documents-and-diagrams.md
+        - name: Diagrammi casi d'uso UML - Linee guida
+          href: uml-use-case-diagrams-guidelines.md
+        - name: Definire pacchetti e spazi dei nomi
+          href: define-packages-and-namespaces.md
+        - name: Personalizzare il modello con profili e stereotipi
+          items:
+            - name: Personalizzare il modello con profili e stereotipi
+              href: customize-your-model-with-profiles-and-stereotypes.md
+            - name: Aggiungere stereotipi a elementi del modello UML
+              href: add-stereotypes-to-uml-model-elements.md
+            - name: Stereotipi standard per modelli UML
+              href: standard-stereotypes-for-uml-models.md
+            - name: Installare un profilo UML
+              href: install-a-uml-profile.md
+        - name: Collegare elementi di modello ed elementi di lavoro
+          href: link-model-elements-and-work-items.md
+        - name: Condividere modelli ed esportare diagrammi
+          items:
+            - name: Condividere modelli ed esportare diagrammi
+              href: share-models-and-exporting-diagrams.md
+            - name: Gestire modelli e diagrammi nel controllo della versione
+              href: manage-models-and-diagrams-under-version-control.md
+            - name: Leggere modelli e diagrammi in altre edizioni di Visual Studio
+              href: read-models-and-diagrams-in-other-visual-studio-editions.md
+            - name: Esportare diagrammi come immagini
+              href: export-diagrams-as-images.md
+    - name: Usare modelli nel processo di sviluppo
+      items:
+        - name: Usare modelli nel processo di sviluppo
+          href: use-models-in-your-development-process.md
+        - name: Modellare i requisiti utente
+          href: model-user-requirements.md
+        - name: Modellare l'architettura dell'app
+          href: model-your-app-s-architecture.md
+        - name: Generare e configurare l'app da modelli
+          href: generate-and-configure-your-app-from-models.md
+        - name: Strutturare la soluzione di modellazione
+          href: structure-your-modeling-solution.md
+        - name: Documentazione Visual Studio Architecture Tooling Guidance
+          href: visual-studio-architecture-tooling-guidance.md
+    - name: Convalidare il sistema durante lo sviluppo
+      items:
+        - name: Convalidare il sistema durante lo sviluppo
+          href: validate-your-system-during-development.md
+        - name: Eseguire la convalida di un modello UML
+          href: validate-your-uml-model.md
+        - name: Sviluppare test da un modello
+          href: develop-tests-from-a-model.md
+        - name: Convalidare il codice con diagrammi livello
+          href: validate-code-with-layer-diagrams.md
+    - name: Estendere modelli e diagrammi UML
+      items:
+        - name: Estendere modelli e diagrammi UML
+          href: extend-uml-models-and-diagrams.md
+        - name: Definire e installare un'estensione di modellazione
+          href: define-and-install-a-modeling-extension.md
+        - name: Definire un profilo per estendere UML
+          href: define-a-profile-to-extend-uml.md
+        - name: Definire un elemento della casella degli strumenti di modellazione personalizzata
+          href: define-a-custom-modeling-toolbox-item.md
+        - name: Definire vincoli di convalida per i modelli UML
+          href: define-validation-constraints-for-uml-models.md
+        - name: Definire un comando di menu in un diagramma di modellazione
+          href: define-a-menu-command-on-a-modeling-diagram.md
+        - name: Definire un gestore modelli in un diagramma di modellazione
+          href: define-a-gesture-handler-on-a-modeling-diagram.md
+        - name: Definire un gestore dei collegamenti agli elementi di lavoro
+          href: define-a-work-item-link-handler.md
+        - name: Integrare modelli UML con altri modelli e strumenti
+          href: integrate-uml-models-with-other-models-and-tools.md
+        - name: Generare file da un modello UML
+          href: generate-files-from-a-uml-model.md
+        - name: Leggere un modello UML nel codice programma
+          href: read-a-uml-model-in-program-code.md
+        - name: Aprire un modello UML tramite l'API di Visual Studio
+          href: open-a-uml-model-by-using-the-visual-studio-api.md
+        - name: Modificare i diagrammi di sequenza UML usando l'API UML
+          href: edit-uml-sequence-diagrams-by-using-the-uml-api.md
+        - name: Esportare diagrammi UML nei file di immagine
+          href: export-uml-diagrams-to-image-files.md
+        - name: Programmazione con l'API UML
+          items:
+            - name: Programmazione con l'API UML
+              href: programming-with-the-uml-api.md
+            - name: Esplorare il modello UML
+              href: navigate-the-uml-model.md
+            - name: Esplorare relazioni con l'API UML
+              href: navigate-relationships-with-the-uml-api.md
+            - name: Creare elementi e relazioni nei modelli UML
+              href: create-elements-and-relationships-in-uml-models.md
+            - name: Visualizzare un modello UML nei diagrammi
+              href: display-a-uml-model-on-diagrams.md
+            - name: Collegare aggiornamenti di modelli UML tramite transazioni
+              href: link-uml-model-updates-by-using-transactions.md
+            - name: Allegare stringhe di riferimento agli elementi del modello UML
+              href: attach-reference-strings-to-uml-model-elements.md
+            - name: Ottenere elementi di modelli UML da IDataObject
+              href: get-uml-model-elements-from-idataobject.md
+            - name: Aggiornare un modello UML da un thread in background
+              href: update-a-uml-model-from-a-background-thread.md
+            - name: Tipi di elemento del modello UML
+              href: uml-model-element-types.md
+            - name: Eseguire unit test su estensioni UML
+              href: run-unit-tests-on-uml-extensions.md
+            - name: Rispondere alle modifiche in un modello UML
+              href: ../misc/how-to-respond-to-changes-in-a-uml-model.md
+        - name: Riferimento API per l'estensibilità di modellazione UML
+          href: api-reference-for-uml-modeling-extensibility.md
+    - name: Extend layer diagrams
+      items:
+        - name: Extend layer diagrams
+          href: extend-layer-diagrams.md
+        - name: Aggiunta di comandi e movimenti a diagrammi livello
+          href: add-commands-and-gestures-to-layer-diagrams.md
+        - name: Aggiungere strumenti di convalida dell'architettura personalizzati a diagrammi livello
+          href: add-custom-architecture-validation-to-layer-diagrams.md
+        - name: Aggiungere proprietà personalizzate ai diagrammi livello
+          href: add-custom-properties-to-layer-diagrams.md
+        - name: Esplorare e aggiornare i modelli di livello nel codice del programma
+          href: navigate-and-update-layer-models-in-program-code.md
+        - name: Distribuire un'estensione del modello di livello
+          href: deploy-a-layer-model-extension.md
+        - name: Risoluzione dei problemi relativi a estensioni per diagrammi livello
+          href: troubleshoot-extensions-for-layer-diagrams.md
+    - name: SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
+      items:
+        - name: SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
+        - name: Introduzione ai linguaggi specifici del dominio
+          href: getting-started-with-domain-specific-languages.md
+        - name: 'Informazioni su modelli, classi e relazioni'
+          href: understanding-models-classes-and-relationships.md
+        - name: 'Procedura: definire un linguaggio specifico di dominio'
+          href: how-to-define-a-domain-specific-language.md
+        - name: Personalizzazione ed estensione di un linguaggio specifico di dominio
+          items:
+            - name: Personalizzazione ed estensione di un linguaggio specifico di dominio
+              href: customizing-and-extending-a-domain-specific-language.md
+            - name: Personalizzazione della presentazione nel diagramma
+              items:
+                - name: Personalizzazione della presentazione nel diagramma
+                  href: customizing-presentation-on-the-diagram.md
+                - name: Definizione di forme e connettori
+                  href: defining-shapes-and-connectors.md
+                - name: 'Controllo delle proprietà Color, Line Style e altre'
+                  href: controlling-color-line-style-and-other-shape-properties.md
+                - name: Controllo della visibilità di un'icona o di un elemento Decorator
+                  href: controlling-the-visibility-of-an-icon-or-decorator.md
+                - name: Personalizzazione dei campi testo e immagine
+                  href: customizing-text-and-image-fields.md
+                - name: Impostazione di un'immagine di sfondo in un diagramma
+                  href: setting-a-background-image-on-a-diagram.md
+                - name: Annidamento di forme
+                  href: nesting-shapes.md
+                - name: Incorporamento di un diagramma in Windows Form
+                  href: embedding-a-diagram-in-a-windows-form.md
+            - name: Personalizzazione di strumenti e della casella degli strumenti
+              href: customizing-tools-and-the-toolbox.md
+            - name: Personalizzazione della creazione e dello spostamento di elementi
+              href: customizing-element-creation-and-movement.md
+            - name: Personalizzazione del comportamento di copia
+              href: customizing-copy-behavior.md
+            - name: Personalizzazione del comportamento di eliminazione
+              href: customizing-deletion-behavior.md
+            - name: Personalizzazione della finestra Proprietà
+              href: customizing-the-properties-window.md
+            - name: Personalizzazione di Esplora modelli
+              href: customizing-the-model-explorer.md
+            - name: Sintassi del percorso di dominio
+              href: domain-path-syntax.md
+            - name: Proprietà degli elementi del modello
+              items:
+                - name: Proprietà degli elementi del modello
+                  href: properties-of-model-elements.md
+                - name: Proprietà di una definizione DSL
+                  href: properties-of-a-dsl-definition.md
+                - name: Proprietà delle classi di dominio
+                  href: properties-of-domain-classes.md
+                - name: Proprietà delle proprietà di dominio
+                  href: properties-of-domain-properties.md
+                - name: Proprietà delle relazioni di dominio
+                  href: properties-of-domain-relationships.md
+                - name: Proprietà dei ruoli di dominio
+                  href: properties-of-domain-roles.md
+                - name: Proprietà di diagrammi
+                  href: properties-of-diagrams.md
+                - name: Proprietà delle corsie
+                  href: properties-of-swimlanes.md
+                - name: Proprietà delle forme geometriche
+                  href: properties-of-geometry-shapes.md
+                - name: Proprietà delle forme d'immagine
+                  href: properties-of-image-shapes.md
+                - name: Proprietà delle forme di raggruppamento
+                  href: properties-of-compartment-shapes.md
+                - name: Proprietà delle forme delle porte
+                  href: properties-of-port-shapes.md
+                - name: Proprietà degli elementi Decorator
+                  href: properties-of-decorators.md
+                - name: Proprietà dei connettori
+                  href: properties-of-connectors.md
+            - name: Condivisione di classi tra DSL utilizzando una libreria DSL
+              href: sharing-classes-between-dsls-by-using-a-dsl-library.md
+        - name: Scrittura di codice per personalizzare un linguaggio specifico di dominio
+          items:
+            - name: Scrittura di codice per personalizzare un linguaggio specifico di dominio
+              href: writing-code-to-customise-a-domain-specific-language.md
+            - name: Override ed estensione delle classi generate
+              href: overriding-and-extending-the-generated-classes.md
+            - name: Esplorazione e aggiornamento di un modello nel codice del programma
+              href: navigating-and-updating-a-model-in-program-code.md
+            - name: Usare le transazioni per aggiornare il modello
+              href: how-to-use-transactions-to-update-the-model.md
+            - name: Integrazione di modelli tramite ModelBus di Visual Studio
+              href: integrating-models-by-using-visual-studio-modelbus.md
+            - name: Estendere il DSL mediante MEF
+              href: extend-your-dsl-by-using-mef.md
+            - name: Aprire un modello da file nel codice del programma
+              href: how-to-open-a-model-from-file-in-program-code.md
+            - name: Impostare gli attributi CLR in un elemento
+              href: how-to-set-clr-attributes-on-an-element.md
+            - name: Definizione di un criterio di blocco per creare segmenti di sola lettura
+              href: defining-a-locking-policy-to-create-read-only-segments.md
+            - name: Aggiunta di estensioni alle definizioni DSL
+              href: adding-extensions-to-dsl-definitions.md
+            - name: Aggiunta di una proprietà di rilevamento alla definizione di un linguaggio specifico di dominio
+              href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
+            - name: Esecuzione del debug utilizzando il Visualizzatore di archivio
+              href: debugging-by-using-the-store-viewer.md
+            - name: File DslDefinition.dsl
+              href: the-dsldefinition-dsl-file.md
+            - name: Informazioni sul codice DSL
+              href: understanding-the-dsl-code.md
+        - name: Convalida in un linguaggio specifico di dominio
+          href: validation-in-a-domain-specific-language.md
+        - name: Scrittura di azioni e comandi utente
+          items:
+            - name: Scrittura di azioni e comandi utente
+              href: writing-user-commands-and-actions.md
+            - name: Modificare un comando di menu standard
+              href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
+            - name: Aggiungere un comando al menu di scelta rapida
+              href: how-to-add-a-command-to-the-shortcut-menu.md
+            - name: Aggiungere un gestore di trascinamento della selezione
+              href: how-to-add-a-drag-and-drop-handler.md
+            - name: Intercettare un clic su una forma o su un elemento Decorator
+              href: how-to-intercept-a-click-on-a-shape-or-decorator.md
+            - name: Accedere e vincolare la selezione corrente
+              href: how-to-access-and-constrain-the-current-selection.md
+            - name: Personalizzazione di strumenti elemento
+              href: customizing-element-tools.md
+        - name: Risposta alle modifiche e propagazione delle modifiche
+          items:
+            - name: Risposta alle modifiche e propagazione delle modifiche
+              href: responding-to-and-propagating-changes.md
+            - name: Proprietà di archiviazione calcolate e personalizzate
+              href: calculated-and-custom-storage-properties.md
+            - name: Gestori di modifica del valore delle proprietà del dominio
+              href: domain-property-value-change-handlers.md
+            - name: Le regole propagano le modifiche all'interno del modello
+              href: rules-propagate-changes-within-the-model.md
+            - name: I gestori eventi propagano le modifiche al di fuori del modello
+              href: event-handlers-propagate-changes-outside-the-model.md
+            - name: Le regole associate (BoundsRules) vincolano posizione e dimensione delle forme
+              href: boundsrules-constrain-shape-location-and-size.md
+            - name: Aggiornamento di forme e di connettori per riflettere il modello
+              href: updating-shapes-and-connectors-to-reflect-the-model.md
+        - name: Generazione di codice da un linguaggio specifico di dominio
+          items:
+            - name: Generazione di codice da un linguaggio specifico di dominio
+              href: generating-code-from-a-domain-specific-language.md
+            - name: Accesso ai modelli da modelli di testo
+              href: accessing-models-from-text-templates.md
+            - name: Utilizzo di ModelBus di Visual Studio in un modello di testo
+              href: using-visual-studio-modelbus-in-a-text-template.md
+            - name: Debug di un modello di testo che accede a un modello
+              href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
+            - name: Connessione di un host a un processore di direttive generato
+              href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
+            - name: Comando DslTextTransform
+              href: the-dsltexttransform-command.md
+        - name: Personalizzazione dell'archiviazione dei file e della serializzazione XML
+          href: customizing-file-storage-and-xml-serialization.md
+        - name: Distribuzione di soluzioni per un linguaggio specifico di dominio
+          items:
+            - name: Distribuzione di soluzioni per un linguaggio specifico di dominio
+              href: deploying-domain-specific-language-solutions.md
+            - name: Distribuzione MSI e VSIX di un linguaggio DSL
+              href: msi-and-vsix-deployment-of-a-dsl.md
+            - name: Più soluzioni DSL in una soluzione unica
+              href: multiple-dsls-in-one-solution.md
+            - name: Distribuzione della shell di Visual Studio
+              href: vs-shell-deployment.md
+        - name: Creazione di un linguaggio specifico di dominio basato su Windows Form
+          href: creating-a-windows-forms-based-domain-specific-language.md
+        - name: Creazione di un linguaggio specifico di dominio basato su WPF
+          href: creating-a-wpf-based-domain-specific-language.md
+        - name: Utilizzo di soluzioni per un linguaggio specifico di dominio
+          items:
+            - name: Utilizzo di soluzioni per un linguaggio specifico di dominio
+              href: working-with-domain-specific-language-solutions.md
+            - name: Informazioni sui linguaggi specifici del dominio
+              href: about-domain-specific-languages.md
+            - name: Informazioni generali sugli strumenti di linguaggio specifico di dominio
+              href: overview-of-domain-specific-language-tools.md
+            - name: Informazioni sull'interfaccia utente degli strumenti di linguaggio specifico di dominio
+              href: overview-of-the-domain-specific-language-tools-user-interface.md
+            - name: Scelta di un modello di soluzione per un linguaggio specifico di dominio
+              href: choosing-a-domain-specific-language-solution-template.md
+            - name: Creare una soluzione per un linguaggio specifico di dominio
+              href: how-to-create-a-domain-specific-language-solution.md
+            - name: Utilizzo del diagramma di definizione DSL
+              href: working-with-the-dsl-definition-diagram.md
+            - name: Utilizzo di Esplora linguaggi specifici di dominio
+              href: working-with-the-domain-specific-language-explorer.md
+            - name: Modificare lo spazio dei nomi di un linguaggio specifico di dominio
+              href: how-to-change-the-namespace-of-a-domain-specific-language.md
+            - name: Estendere la Finestra di progettazione Domain-Specific Language
+              href: how-to-extend-the-domain-specific-language-designer.md
+        - name: Edizioni di Visual Studio supportate per l'SDK di visualizzazione e modellazione
+          href: supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md
+        - name: Eseguire la migrazione di un linguaggio specifico di dominio a una nuova versione
+          href: how-to-migrate-a-domain-specific-language-to-a-new-version.md
+        - name: Riferimento API per SDK di modellazione per Visual Studio
+          href: api-reference-for-modeling-sdk-for-visual-studio.md
+    - name: Generazione di codice e modelli di testo T4
+      items:
+        - name: Generazione di codice e modelli di testo T4
+          href: code-generation-and-t4-text-templates.md
+        - name: Generazione di codice in fase di progettazione tramite modelli di testo T4
+          items:
+            - name: Generazione di codice in fase di progettazione tramite modelli di testo T4
+              href: design-time-code-generation-by-using-t4-text-templates.md
+            - name: Generazione di codice tramite modelli di testo
+              href: walkthrough-generating-code-by-using-text-templates.md
+            - name: Generazione di codice in un processo di compilazione
+              href: code-generation-in-a-build-process.md
+            - name: Sicurezza dei modelli di testo
+              href: security-of-text-templates.md
+            - name: Generazione di file con l'utilità TextTransform
+              href: generating-files-with-the-texttransform-utility.md
+        - name: Generazione di testo in fase di esecuzione con modelli di testo T4
+          href: run-time-text-generation-with-t4-text-templates.md
+        - name: Scrittura di un modello di testo T4
+          items:
+            - name: Scrittura di un modello di testo T4
+              href: writing-a-t4-text-template.md
+            - name: Direttive di modello di testo T4
+              items:
+                - name: Direttive di modello di testo T4
+                  href: t4-text-template-directives.md
+                - name: Direttiva template T4
+                  href: t4-template-directive.md
+                - name: Direttiva parameter T4
+                  href: t4-parameter-directive.md
+                - name: Direttiva output T4
+                  href: t4-output-directive.md
+                - name: Direttiva assembly T4
+                  href: t4-assembly-directive.md
+                - name: Direttiva import T4
+                  href: t4-import-directive.md
+                - name: Direttiva include T4
+                  href: t4-include-directive.md
+                - name: Direttiva T4 CleanUpBehavior
+                  href: t4-cleanupbehavior-directive.md
+            - name: Blocchi di controllo del modello di testo
+              href: text-template-control-blocks.md
+            - name: Metodi di utilità per i modelli di testo
+              href: text-template-utility-methods.md
+            - name: Accesso a Visual Studio o altri host da un modello di testo
+              href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
+            - name: Utilizzo di sequenze di escape in modelli di testo
+              items:
+                - name: Utilizzo di sequenze di escape in modelli di testo
+                  href: using-escape-sequences-in-text-templates.md
+                - name: Generare modelli da modelli usando sequenze di escape
+                  href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
+        - name: Debug di un modello di testo T4
+          href: debugging-a-t4-text-template.md
+        - name: Linee guida per la scrittura di modelli di testo T4
+          href: guidelines-for-writing-t4-text-templates.md
+        - name: Procedure relative ai modelli di testo
+          href: how-to-dot-dot-dot-with-text-templates.md
+        - name: Personalizzazione della trasformazione del testo T4
+          items:
+            - name: Personalizzazione della trasformazione del testo T4
+              href: customizing-t4-text-transformation.md
+            - name: Processo di trasformazione del modello di testo
+              href: the-text-template-transformation-process.md
+            - name: Creazione di processori di direttiva di modelli di testo T4 personalizzati
+              items:
+                - name: Creazione di processori di direttiva di modelli di testo T4 personalizzati
+                  href: creating-custom-t4-text-template-directive-processors.md
+                - name: Distribuzione di un processore di direttiva personalizzato
+                  href: deploying-a-custom-directive-processor.md
+                - name: Creazione di un processore di direttiva personalizzato
+                  href: walkthrough-creating-a-custom-directive-processor.md
+            - name: Richiamo della trasformazione del testo in un'estensione VS
+              href: invoking-text-transformation-in-a-vs-extension.md
+            - name: Elaborazione di modelli di testo tramite un host personalizzato
+              items:
+                - name: Elaborazione di modelli di testo tramite un host personalizzato
+                  href: processing-text-templates-by-using-a-custom-host.md
+                - name: Creazione di un host del modello di testo personalizzato
+                  href: walkthrough-creating-a-custom-text-template-host.md
+        - name: Riferimento API per modelli di testo T4
+          href: api-reference-for-t4-text-templates.md

@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695311"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usare l'automazione dell'interfaccia utente per testare il codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -445,19 +445,19 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ## <a name="VerifyCodeUsingCUITWhatsNext"></a> Passaggi successivi
  **Opzioni aggiuntive per l'esecuzione di test codificati dell'interfaccia utente:** come descritto in precedenza in questo argomento, è possibile eseguire test codificati dell'interfaccia utente direttamente da Visual Studio. In più, è possibile eseguire test automatizzati dell'interfaccia utente da [!INCLUDE[TCMext](../includes/tcmext-md.md)] o da [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. A differenza di altri test automatizzati, i test codificati dell'interfaccia utente automatizzati devono interagire con il desktop quando vengono eseguiti.
 
-- [Procedura: Eseguire test da Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [Procedura: Eseguire test da Microsoft Visual Studio](https://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
 
-- [Esecuzione di test automatizzati in Microsoft Test Manager](http://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
+- [Esecuzione di test automatizzati in Microsoft Test Manager](https://msdn.microsoft.com/0632f265-63fe-4859-a413-9bb934c66835)
 
-- [Procedura: Configurare ed eseguire test pianificati dopo avere compilato l'applicazione](http://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
+- [Procedura: Configurare ed eseguire test pianificati dopo avere compilato l'applicazione](https://msdn.microsoft.com/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)
 
-- [Eseguire test nel processo di compilazione](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
+- [Eseguire test nel processo di compilazione](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)
 
-- [Esecuzione di test automatizzati dalla riga di comando](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
+- [Esecuzione di test automatizzati dalla riga di comando](https://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)
 
 - [Procedura: Configurare l'agente di test per eseguire test che interagiscono con il desktop](/visualstudio/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop?view=vs-2015)
 
-- [&#91;ritirato&#93; Uso di test codificati dell'interfaccia utente nei test di carico](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
+- [&#91;ritirato&#93; Uso di test codificati dell'interfaccia utente nei test di carico](https://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)
 
   **Aggiunta del supporto per controlli personalizzati:**  il framework dei test codificati dell'interfaccia utente non supporta tutte le interfacce utente e potrebbe non supportare l'interfaccia utente da testare. Ad esempio, non si può creare immediatamente un test codificato per l'interfaccia utente di [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Tuttavia, è possibile creare un'estensione al framework dei test codificati dell'interfaccia utente che supporterà un controllo personalizzato.
 
@@ -465,7 +465,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Estensione di test codificati dell'interfaccia utente e registrazioni delle azioni per supportare Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altro materiale sussidiario, vedere [test per il recapito continuo con Visual Studio 2012-capitolo 5: Automazione dei test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196). Per altre informazioni sui test manuali, vedere [&#91;ritirato&#93; Creazione di test case manuali mediante Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Per altre informazioni sui test di sistema automatizzati, vedere [Creazione di test automatizzati mediante Microsoft Test Manager](http://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  I test codificati dell'interfaccia utente vengono spesso usati per automatizzare i test manuali. Per altro materiale sussidiario, vedere [test per il recapito continuo con Visual Studio 2012-capitolo 5: Automazione dei test di sistema](http://go.microsoft.com/fwlink/?LinkID=255196). Per altre informazioni sui test manuali, vedere [&#91;ritirato&#93; Creazione di test case manuali mediante Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Per altre informazioni sui test di sistema automatizzati, vedere [Creazione di test automatizzati mediante Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Risorse esterne
 
@@ -486,7 +486,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
-- [Migliorare la qualità del codice](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
+- [Migliorare la qualità del codice](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)
 - [Procedure consigliate per i test codificati dell'interfaccia utente](../test/best-practices-for-coded-ui-tests.md)
@@ -494,4 +494,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
 - [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 - [Aggiornamento dei test codificati dell'interfaccia utente da Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-- [Generazione di un test codificato dell'interfaccia utente da una registrazione delle azioni esistente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)
+- [Generazione di un test codificato dell'interfaccia utente da una registrazione delle azioni esistente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)

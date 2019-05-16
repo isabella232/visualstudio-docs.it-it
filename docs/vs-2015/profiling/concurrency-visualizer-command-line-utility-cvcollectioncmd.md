@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692749"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilità della riga di comando del visualizzatore di concorrenza (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ L'utilità riga di comando Visualizzatore di concorrenza (CVCollectionCmd.exe) p
   
 |Opzione|Descrizione|Parametri|Valori restituiti|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
+|Query|Indica se è possibile avviare la raccolta.|nessuno|0 se la raccolta è pronta per l'avvio.<br /><br /> 1  se è già in corso una raccolta.<br /><br /> 2 se non sono in corso raccolte, ma sono già state abilitate una o più delle sessioni [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessarie.|  
 |Launch|Esegue il processo specificato nel Visualizzatore di concorrenza.|Percorso del file eseguibile.|0 se l'esecuzione è riuscita.<br /><br /> 1 se l'esecuzione non è riuscita poiché non è stato possibile avviare l'applicazione di destinazione.<br /><br /> 13 se l'esecuzione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Attach|Inizia la raccolta di una traccia a livello di sistema. In caso contrario, si connette a un processo, se ne è stato specificato uno.|Nessuno.|0 se la connessione è riuscita.<br /><br /> 1 se la connessione non è riuscita poiché il processo specificato non è valido o è ambiguo.<br /><br /> 13 se la connessione non è riuscita poiché CVCollectionCmd non ha autorizzazioni sufficienti per scrivere nella directory di output specificata.|  
 |Detach|Arresta la raccolta.|Nessuno.|0 se la disconnessione è riuscita.<br /><br /> 1 se la disconnessione non è riuscita poiché la raccolta non è attualmente in corso.<br /><br /> 2 se la disconnessione non è riuscita poiché non è stato possibile arrestarla.|  

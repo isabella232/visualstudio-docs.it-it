@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093475"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705080"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Creare e configurare i set di dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oggetto *set di dati* è un set di oggetti che archiviano i dati da un database in memoria e supportano il rilevamento delle modifiche per consentire di creare, leggere, aggiornare ed eliminazione (CRUD) sui dati senza la necessità di essere sempre connessi al database. I set di dati sono stati progettati per semplice *form over data* applicazioni aziendali. Per le nuove applicazioni, è consigliabile usare Entity Framework per archiviare e modellare i dati in memoria. Per lavorare con i set di dati, si deve avere una conoscenza di base dei concetti relativi ai database.
 
- Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio in fase di progettazione utilizzando il **configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Si crea un oggetto tipizzato <xref:System.Data.DataSet> classe in Visual Studio in fase di progettazione utilizzando il **configurazione guidata origine dati**. Per informazioni sulla creazione di set di dati a livello di codice, vedere [creazione di un set di dati](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Creare un nuovo set di dati usando la configurazione guidata origine dati
 
@@ -90,6 +90,6 @@ Oggetto *set di dati* è un set di oggetti che archiviano i dati da un database 
 
 2. Trascinare un <xref:System.Data.DataTable> classe il **set di dati** scheda della finestra di **della casella degli strumenti** nel **Progettazione Dataset**.
 
-3. Aggiungere colonne per definire la tabella di dati. Per altre informazioni, vedere [Procedura: Aggiungere colonne a un oggetto DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Aggiungere colonne per definire la tabella di dati. Per altre informazioni, vedere [Procedura: Aggiungere colonne a un oggetto DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Le tabelle autonome devono implementare `Fill` per la logica nelle tabelle autonome in modo che è possibile inserire i dati. Per informazioni su come inserire le tabelle di dati autonomo, vedere [popolamento di un set di dati da un oggetto DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Le tabelle autonome devono implementare `Fill` per la logica nelle tabelle autonome in modo che è possibile inserire i dati. Per informazioni su come inserire le tabelle di dati autonomo, vedere [popolamento di un set di dati da un oggetto DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

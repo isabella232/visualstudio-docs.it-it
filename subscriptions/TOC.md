@@ -12,10 +12,11 @@
 ### [Scaricare il software](subscriber-downloads.md)
 #### [Elenco dei download di software disponibili](software-download-list.md)
 ### [Ottenere e gestire i codici Product Key](product-keys.md)
+### [Visual Studio con GitHub Enterprise](access-github.md)
+### [Vantaggi per i sottoscrittori](subscriber-benefits.md)
 ### Visual Studio Dev Essentials
 #### [Partecipare al programma Visual Studio Dev Essentials](join-dev-essentials.md)
 #### [Rifiutare esplicitamente la partecipazione al programma Visual Studio Dev Essentials](leave-vsde.md)
-### [Vantaggi per i sottoscrittori](subscriber-benefits.md)
 ## Uso dei vantaggi per i sottoscrittori
 ### Strumenti
 #### [IDE di Visual Studio](vs-ide-benefit.md)
@@ -72,6 +73,7 @@
 #### [Utilizzo massimo](maximum-usage.md)
 #### [Sottoscrizioni scadute](handle-expired-license.md)
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
+### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 ## Acquisizione di sottoscrizioni di Visual Studio
 ### [Confrontare le opzioni di sottoscrizione](https://visualstudio.microsoft.com/vs/pricing)
 ### Acquisto di sottoscrizioni cloud

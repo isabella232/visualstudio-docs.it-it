@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: HT
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697565"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procedura: Pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [Cenni preliminari su stili Visual](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Per altre informazioni sul messaggio di errore, vedere [risoluzione dei problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema scelto dall'utente. Per impostazione predefinita, gli stili di visualizzazione non abilitati per le applicazioni Windows Presentation Foundation (WPF), pertanto è necessario attivarli manualmente. Abilitazione degli stili per un'applicazione WPF e quindi pubblicare la soluzione, tuttavia, provoca un errore. Questo argomento descrive come risolvere questo errore e il processo per la pubblicazione di un'applicazione WPF con gli stili visuali abilitati. Per altre informazioni sugli stili di visualizzazione, vedere [Cenni preliminari su stili Visual](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Per altre informazioni sul messaggio di errore, vedere [risoluzione dei problemi di errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Per risolvere l'errore e pubblicare la soluzione, è necessario eseguire le attività seguenti:
 
@@ -66,7 +66,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
          Il file app. manifest verrà aperto nel **Editor di codice**.
 
-    **Per aprire il file manifesto in un progetto C#**
+    **Per aprire il file manifesto in un progetto c#**
 
     1. Nella barra dei menu, scegliere **Project**, _NomeProgetto_**proprietà**, dove *NomeProgetto* è il nome del progetto WPF.
 
@@ -125,7 +125,7 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 
 1. Aprire il **prompt dei comandi di Visual Studio**.
 
-    Per altre informazioni su come aprire la **Prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Per altre informazioni su come aprire la **Prompt dei comandi di Visual Studio**, vedere [prompt dei comandi](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > I passaggi rimanenti partono dai presupposti seguenti sulla soluzione:
@@ -193,5 +193,5 @@ Stili di abilitare l'aspetto dei controlli comuni da variare in base al tema sce
 ## <a name="see-also"></a>Vedere anche
 
 [Risoluzione dei problemi relativi a errori specifici nelle distribuzioni ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[Cenni preliminari su stili](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[prompt dei comandi](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[Cenni preliminari su stili](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[prompt dei comandi](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

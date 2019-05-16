@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: jillfra
-ms.openlocfilehash: 0bc5cba2651f447e36491c641e9b0d05f728e5c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d58c8986922c30192d6300a623a635b24c34ed5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705777"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Determinazione dello spazio dei nomi predefinito di un progetto
-Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], se il `CustomToolNamespace` viene impostata nel file di input, il valore di `CustomToolNamespace` diventa il valore del parametro dello spazio dei nomi predefinito passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (metodo). In caso contrario, il `wszDefaultNamespace` passato al parametro `Generate` è sempre uguale allo spazio dei nomi radice. Per altre informazioni sugli spazi dei nomi, vedere [parole chiave Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
+Per [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], se il `CustomToolNamespace` viene impostata nel file di input, il valore di `CustomToolNamespace` diventa il valore del parametro dello spazio dei nomi predefinito passato per il <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (metodo). In caso contrario, il `wszDefaultNamespace` passato al parametro `Generate` è sempre uguale allo spazio dei nomi radice. Per altre informazioni sugli spazi dei nomi, vedere [parole chiave Namespace](https://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  
   
  [!INCLUDE[csprcs](../includes/csprcs-md.md)] Usa spazi dei nomi basati su cartelle. Ovvero lo spazio dei nomi comprende lo spazio dei nomi radice, e i nomi delle cartelle che contiene lo strumento personalizzato. Ogni nome di cartella viene convertito in un identificatore valido e periodi di separano i nomi di tutti. Ad esempio, se il file di input è FolderA\FolderB\FolderC\MyInput.txt e lo spazio dei nomi radice è CL9, lo spazio dei nomi predefinito calcolata sarà **CL9. FolderA.FolderB.FolderC**.  
   

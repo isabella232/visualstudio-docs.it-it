@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437586"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701190"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "63437586"
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Tipi di applicazioni che supportano le lingue bidirezionali  
   
-1. Applicazioni Windows. È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Applicazioni Windows. È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2. Applicazioni Web. I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode, quindi sono adatti per applicazioni con lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per applicazioni Web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Applicazioni Web. I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode, quindi sono adatti per applicazioni con lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per applicazioni Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
 3. applicazioni console Le applicazioni console non includono il supporto del testo per le lingue bidirezionali. Questo fatto dipende dall'interazione tra Windows e le applicazioni console.  
   
@@ -79,7 +79,7 @@ ms.locfileid: "63437586"
 - Codice e testo letterale. Nell'editor di codice (che è anche l'editor di testo) è possibile usare l'arabo o l'ebraico per assegnare nomi a classi, funzioni, variabili, proprietà, valori letterali stringa, attributi e così via. Tuttavia l'editor non supporta l'ordine di lettura da destra a sinistra: il testo inizia sempre sul margine sinistro.  
   
     > [!TIP]
-    > È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > È consigliabile inserire i valori letterali stringa nei file di risorse anziché specificarli a livello di codice nei programmi. Per altre informazioni, vedere [Procedura dettagliata: Localizzazione di Windows Form](https://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
     > È necessario mantenere la coerenza nei riferimenti a oggetti denominati in queste lingue. Se ad esempio si usano le linee kashida quando si assegna una variabile in arabo, è sempre necessario usare la notazione kashida nei riferimenti a tale variabile. In caso contrario si verificheranno degli errori.  
@@ -87,7 +87,7 @@ ms.locfileid: "63437586"
 - Commenti del codice. È possibile creare commenti in arabo o in ebraico. È possibile usare queste lingue anche nello strumento per la generazione di commenti.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Supporto bidirezionale per le applicazioni Windows Forms](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Supporto bidirezionale per applicazioni Web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
+ [Supporto bidirezionale per le applicazioni Windows Forms](https://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
+ [Supporto bidirezionale per applicazioni Web ASP.NET](https://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [Globalizzazione di applicazioni](../ide/globalizing-applications.md)   
  [Localizzazione di applicazioni](../ide/localizing-applications.md)

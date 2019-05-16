@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3619e187c7856cf03ee60c8a04cbe527bf0a69
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434176"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698692"
 ---
 # <a name="upgrading-project-items"></a>Aggiornamento degli elementi di progetto
 Se si aggiungono o gestire gli elementi all'interno di sistemi di progetto non viene implementato, devi partecipare al processo di aggiornamento del progetto. Crystal Reports è un esempio di un elemento che è possibile aggiungere al sistema del progetto.  
@@ -38,5 +38,5 @@ Se si aggiungono o gestire gli elementi all'interno di sistemi di progetto non v
 2. Al momento l'elemento di progetto riceve una notifica di aggiornamento del progetto, il **conversione guidata di Visual Studio** continuerà a essere visualizzato. Pertanto, è necessario utilizzare i metodi del <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interfaccia per fornire messaggi di aggiornamento per la procedura guidata dell'interfaccia utente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Visual Studio Conversion Wizard](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Visual Studio Conversion Wizard](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Aggiornamento di progetti personalizzati](../misc/upgrading-custom-projects.md)

@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705779"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggior parte o tutti gli strumenti di modifica standard (frammenti di codice, IntelliSense e così via) quando si scrive codice JavaScript nell'IDE di Visual Studio. È possibile scrivere codice JavaScript per molti tipi di applicazioni e servizi.
 
- Per la documentazione di riferimento del linguaggio JavaScript, vedere [JavaScript](http://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
+ Per la documentazione di riferimento del linguaggio JavaScript, vedere [JavaScript](https://msdn.microsoft.com/library/d1et7k7c\(v=vs.94\).aspx).
 
  È possibile che vengano richieste versioni specifiche di Visual Studio o estensioni specifiche di Visual Studio per sviluppare determinati tipi di applicazioni e servizi con HTML e JavaScript. L'elenco seguente include i collegamenti ad altre informazioni.
 
@@ -29,7 +29,7 @@ JavaScript è un ottimo linguaggio di Visual Studio. È possibile usare la maggi
 
 - Per creare app di [Windows Store](http://dev.windows.com/develop), [Windows Phone](http://dev.windows.com/develop) e app universali, che supportano entrambe le piattaforme, [scaricare gli strumenti](https://developer.microsoft.com/windows/downloads).
 
-- Per creare servizi basati sul cloud, visitare il [sito Web di Microsoft Azure](http://azure.microsoft.com/documentation/).
+- Per creare servizi basati sul cloud, visitare il [sito Web di Microsoft Azure](https://azure.microsoft.com/documentation/).
 
 - Per creare siti Web e app Web, [visitare il sito ASP.NET](http://www.asp.net/get-started/websites).
 

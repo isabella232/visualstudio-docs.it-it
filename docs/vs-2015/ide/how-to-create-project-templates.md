@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 109810e3650ec4cf01d781026eddf09834fc3f18
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416926"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703105"
 ---
 # <a name="how-to-create-project-templates"></a>Procedura: Creare modelli di progetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Questa procedura consente di creare un modello tramite l'**Esportazione guidata 
 1. Creare un progetto.  
   
     > [!NOTE]
-    > Quando si assegna il nome a un progetto che fungerà da origine per un modello, usare solo caratteri di identificatore validi. Un modello esportato da un progetto con nome contenente caratteri non validi può causare errori di compilazione nei progetti futuri basati sul modello. Per altre informazioni sui caratteri di identificatore valido, vedere [Declared Element Names](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66) (Nomi di elementi dichiarati).  
+    > Quando si assegna il nome a un progetto che fungerà da origine per un modello, usare solo caratteri di identificatore validi. Un modello esportato da un progetto con nome contenente caratteri non validi può causare errori di compilazione nei progetti futuri basati sul modello. Per altre informazioni sui caratteri di identificatore valido, vedere [Declared Element Names](https://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66) (Nomi di elementi dichiarati).  
   
 2. Modificare il progetto finché non è pronto per l'esportazione come modello.  
   

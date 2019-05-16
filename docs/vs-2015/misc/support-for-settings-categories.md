@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436569"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689091"
 ---
 # <a name="support-for-settings-categories"></a>Supporto per le categorie di impostazioni
-Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Una categoria di impostazioni è costituita da un gruppo di opzioni che consentono di personalizzare l'ambiente di sviluppo integrato (IDE). Ad esempio, le impostazioni possono controllare il layout delle finestre di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e il contenuto del menu. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Nel menu **Strumenti** fare clic su **Importa/Esporta impostazioni** per avviare l' **Importazione/Esportazione guidata delle impostazioni**. La procedura guidata offre tre opzioni: esportazione, importazione o reimpostazione delle impostazioni. Selezionando l'esportazione, ad esempio, si apre la pagina **Scegliere le impostazioni da esportare** della procedura guidata.  
   
@@ -64,4 +64,4 @@ Una categoria di impostazioni è costituita da un gruppo di opzioni che consento
  [Creazione di una pagina di opzioni](../extensibility/creating-an-options-page.md)   
  [Esempi di VSSDK](../misc/vssdk-samples.md)   
  [Lo stato del VSPackage](../misc/vspackage-state.md)   
- [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

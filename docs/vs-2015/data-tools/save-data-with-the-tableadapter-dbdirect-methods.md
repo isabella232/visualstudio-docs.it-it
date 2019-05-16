@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558742"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704168"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvare dati con i metodi DBDirect di TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 - Creare una nuova **applicazioni Windows**.  
   
-- Creare e configurare un set di dati con il [configurazione guidata origine dati](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Creare e configurare un set di dati con il [configurazione guidata origine dati](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Selezionare il controllo da creare nel form tramite il trascinamento degli elementi dalla finestra **Origini dati**. Per altre informazioni, vedere [impostare il controllo da creare durante il trascinamento dalla finestra Origini dei dati](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
   
 2. Denominare il progetto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selezionare **applicazione di Windows**, quindi selezionare **OK**. Per altre informazioni, vedere [le applicazioni Client](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Il progetto **TableAdapterDbDirectMethodsWalkthrough** viene creato e aggiunto a **Esplora soluzioni**.  
   
@@ -153,7 +153,7 @@ Questa procedura dettagliata vengono fornite istruzioni dettagliate per l'esecuz
 ## <a name="next-steps"></a>Passaggi successivi  
  A seconda dei requisiti dell'applicazione, sono disponibili diversi passaggi, che si potrebbe voler eseguire dopo la creazione di un form con associazione a dati. È possibile apportare alcuni miglioramenti a questa procedura dettagliata, tra cui:  
   
-- Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Aggiunta di funzionalità di ricerca al form. Per altre informazioni, vedere [Procedura: Aggiungere una Query con parametri in una Windows Forms Application](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Aggiunta di altre tabelle al set di dati tramite selezione di **Configura il Dataset con la procedura guidata** nella finestra **Origini dati**. È possibile aggiungere controlli che consentono di visualizzare dati correlati mediante il trascinamento dei nodi correlati nel form. 
   

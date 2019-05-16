@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964859"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691193"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
   
  [Finestra di dialogo Codice sorgente non disponibile per il percorso corrente](../debugger/no-source-available.md)  
   
- [Finestra di dialogo Nessuna informazione sui simboli](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Finestra di dialogo Nessuna informazione sui simboli](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Finestra di dialogo Risolvi ambiguità](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
   
  [Errori del debug remoto](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Errori di connessione](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Errori di connessione](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Risoluzione dei problemi relativi all'impostazione del debug SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Risoluzione dei problemi relativi all'impostazione del debug SQL](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Domande frequenti sul debug di Visual C++](../debugger/debugging-native-code-faqs.md)  
   

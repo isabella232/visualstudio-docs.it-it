@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087430"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695908"
 ---
 # <a name="debug-64-bit-applications"></a>Eseguire il debug di applicazioni a 64 bit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ La versione più recente di questo argomento è reperibile in [Debug 64-Bit Appl
 - Si è verificato un blocco o un problema di prestazioni di Visual Studio. Se il problema si verifica regolarmente, è possibile raccogliere dump di Visual Studio (devenv.exe) e del processo di lavoro (msvsmon.exe) e inviarli a Microsoft. 
   
 ## <a name="see-also"></a>Vedere anche  
- [Applicazioni a 64 bit](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configurazione di programmi per processori a 64 bit](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Applicazioni a 64 bit](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Configurazione di programmi per processori a 64 bit](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Supporto a 64 bit per l'IDE di Visual Studio](../ide/visual-studio-ide-64-bit-support.md)   
  [Uso di file dump](../debugger/using-dump-files.md)   
  [Remote Debugging](../debugger/remote-debugging.md)

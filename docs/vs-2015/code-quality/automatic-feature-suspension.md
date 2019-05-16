@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045982"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704029"
 ---
 # <a name="automatic-feature-suspension"></a>Sospensione funzionalità automatica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Se la memoria di sistema disponibili è minore o uguale a 200MB, Visual Studio v
 
 - Analisi della soluzione completa per Visual C# e Visual Basic sono disabilitata.
 
-- [Operazione di Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modalità di bassa latenza (GC) per Visual c# e Visual Basic sono disabilitati.
+- [Operazione di Garbage Collection](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modalità di bassa latenza (GC) per Visual c# e Visual Basic sono disabilitati.
 
 - Vengono scaricate le cache di Visual Studio.
 
@@ -62,5 +62,5 @@ Inoltre, verranno deselezionate anche le cache utilizzate per operazioni interne
 ## <a name="see-also"></a>Vedere anche
 
 - [Procedura: Abilitare e disabilitare l'analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Principi fondamentali di Garbage Collection](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Principi fondamentali di Garbage Collection](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Considerazioni sulle prestazioni per soluzioni di grandi dimensioni](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

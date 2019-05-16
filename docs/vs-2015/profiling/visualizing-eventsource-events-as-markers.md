@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8cd0f0e5a420155cfc6786e4a8542bc59f93ece
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431105"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690210"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizzazione di eventi EventSource come marcatori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Il visualizzatore di concorrenza consente di visualizzare gli eventi EventSource
   
 ### <a name="marker-type"></a>Tipo di marcatore  
   
-1. Gli eventi con [codice operativo](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.  
+1. Gli eventi con [codice operativo](https://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start o win:Stop vengono considerati come l'inizio o la fine di una sezione span, rispettivamente.  Le sezioni span annidate o sovrapposte non possono essere visualizzate. Le coppie di eventi che iniziano in un thread di inizio e finiscono in un altro non possono essere visualizzate.  
   
-2. Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.  
+2. Un evento il cui codice operativo non è win:Start né win:Stop viene considerato come un flag di marcatore, a meno che il relativo [livello](https://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo di EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) non sia win:Verbose o superiore.  
   
 3. In tutti gli altri casi, l'evento viene considerato un messaggio.  
   

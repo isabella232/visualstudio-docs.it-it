@@ -12,12 +12,12 @@ ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7caa66f8a3adacc67c7277ceffaf4fa54cf7a60c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2bcb65872f9f451e1cc4e5030532e0a444af1139
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968259"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687776"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugProgramHost2 : IUnknown
  Il motore di debug implementa questa interfaccia sull'oggetto stesso come il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfaccia per fornire informazioni sul processo di hosting. Si tratta di un'interfaccia facoltativa.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Chiamare [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un `IDebugProgram2` interfaccia per ottenere questa interfaccia.  
+ Chiamare [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) su un `IDebugProgram2` interfaccia per ottenere questa interfaccia.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugProgramHost2`.  

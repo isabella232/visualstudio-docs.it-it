@@ -1,0 +1,306 @@
+- name: Sviluppo di applicazioni con Progettazione flussi di lavoro
+  items:
+    - name: Sviluppo di applicazioni con Progettazione flussi di lavoro
+      href: developing-applications-with-the-workflow-designer.md
+    - name: Utilizzo di Progettazione flussi di lavoro
+      items:
+        - name: Utilizzo di Progettazione flussi di lavoro
+          href: using-the-workflow-designer.md
+        - name: Creazione di un progetto flusso di lavoro
+          items:
+            - name: Creazione di un progetto flusso di lavoro
+              href: creating-a-workflow-project.md
+            - name: Creare un'applicazione console flusso di lavoro
+              href: how-to-create-a-workflow-console-application.md
+            - name: Creare un'applicazione del servizio flusso di lavoro WCF
+              href: how-to-create-a-wcf-workflow-service-application.md
+            - name: Creare una libreria attività
+              href: how-to-create-an-activity-library.md
+            - name: Creare una libreria ActivityDesigner
+              href: how-to-create-an-activity-designer-library.md
+            - name: Aggiungere un nuovo elemento a un progetto flusso di lavoro
+              href: how-to-add-a-new-item-to-a-workflow-project.md
+        - name: Aggiungere attività nella casella degli strumenti
+          href: how-to-add-activities-to-the-toolbox.md
+        - name: Usare la finestra di progettazione argomenti
+          href: how-to-use-the-argument-designer.md
+        - name: Usare la finestra di progettazione variabili
+          href: how-to-use-the-variable-designer.md
+        - name: Usare l’editor espressioni
+          href: how-to-use-the-expression-editor.md
+        - name: Usare la finestra di progettazione importazioni
+          href: how-to-use-the-imports-designer.md
+        - name: Usare la barra di navigazione
+          href: how-to-use-breadcrumb-navigation.md
+        - name: Usare la ricerca in Progettazione flussi di lavoro
+          href: how-to-use-search-in-the-workflow-designer.md
+        - name: Definire e usare delegati di attività in Progettazione flussi di lavoro
+          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+        - name: Aggiungere commenti a un flusso di lavoro in Progettazione flussi di lavoro
+          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: Utilizzo degli ActivityDesigner
+      items:
+        - name: Utilizzo degli ActivityDesigner
+          href: using-the-activity-designers.md
+        - name: Flusso di controllo
+          items:
+            - name: Flusso di controllo
+              href: control-flow-activity-designers.md
+            - name: DoWhile
+              href: dowhile-activity-designer.md
+            - name: ForEach\<T>
+              href: foreach-t-activity-designer.md
+            - name: Se
+              href: if-activity-designer.md
+            - name: Parallelo
+              href: parallel-activity-designer.md
+            - name: ParallelForEach\<T>
+              href: parallelforeach-t-activity-designer.md
+            - name: Pick
+              href: pick-activity-designer.md
+            - name: PickBranch
+              href: pickbranch-activity-designer.md
+            - name: Sequence
+              href: sequence-activity-designer.md
+            - name: Switch\<T>
+              href: switch-t-activity-designer.md
+            - name: While
+              href: while-activity-designer.md
+        - name: Diagramma di flusso
+          items:
+            - name: Diagramma di flusso
+              href: flowchart-activity-designers.md
+            - name: Diagramma di flusso
+              href: flowchart-activity-designer.md
+            - name: FlowDecision
+              href: flowdecision-activity-designer.md
+            - name: FlowSwitch\<T>
+              href: flowswitch-t-activity-designer.md
+        - name: Macchina a stati
+          items:
+            - name: Macchina a stati
+              href: state-machine-activity-designers.md
+            - name: StateMachine
+              href: statemachine-activity-designer.md
+            - name: Stato
+              href: state-activity-designer.md
+            - name: FinalState
+              href: finalstate-activity-designer.md
+            - name: Transizione
+              href: transition-activity-designer.md
+        - name: Messaggistica
+          items:
+            - name: Messaggistica
+              href: messaging-activity-designers.md
+            - name: CorrelationScope
+              href: correlationscope-activity-designer.md
+            - name: InitializeCorrelation
+              href: initializecorrelation-activity-designer.md
+            - name: Receive
+              href: receive-activity-designer.md
+            - name: ReceiveAndSendReply
+              href: receiveandsendreply-template-designer.md
+            - name: Invia
+              href: send-activity-designer.md
+            - name: SendAndReceiveReply
+              href: sendandreceivereply-template-designer.md
+            - name: TransactedReceiveScope
+              href: transactedreceivescope-activity-designer.md
+        - name: Runtime
+          items:
+            - name: Runtime
+              href: runtime-activity-designers.md
+            - name: Persist
+              href: persist-activity-designer.md
+            - name: TerminateWorkflow
+              href: terminateworkflow-activity-designer.md
+        - name: Primitives
+          items:
+            - name: Primitives
+              href: primitives-activity-designers.md
+            - name: Assegna
+              href: assign-activity-designer.md
+            - name: Ritardo
+              href: delay-activity-designer.md
+            - name: InvokeDelegate
+              href: invokedelegate.md
+            - name: InvokeMethod
+              href: invokemethod-activity-designer.md
+            - name: WriteLine
+              href: writeline-activity-designer.md
+        - name: Transazione
+          items:
+            - name: Transazione
+              href: transaction-activity-designers.md
+            - name: CancellationScope
+              href: cancellationscope-activity-designer.md
+            - name: CompensableActivity
+              href: compensableactivity-activity-designer.md
+            - name: Compensate
+              href: compensate-activity-designer.md
+            - name: Confirm
+              href: confirm-activity-designer.md
+            - name: TransactionScope
+              href: transactionscope-activity-designer.md
+        - name: Raccolta
+          items:
+            - name: Raccolta
+              href: collection-activity-designers.md
+            - name: AddToCollection\<T>
+              href: addtocollection-t-activity-designer.md
+            - name: ClearCollection\<T>
+              href: clearcollection-t-activity-designer.md
+            - name: ExistsInCollection\<T>
+              href: existsincollection-t-activity-designer.md
+            - name: RemoveFromCollection\<T>
+              href: removefromcollection-t-activity-designer.md
+        - name: Gestione degli errori
+          items:
+            - name: Gestione degli errori
+              href: error-handling-activity-designers.md
+            - name: Rethrow
+              href: rethrow-activity-designer.md
+            - name: Throw
+              href: throw-activity-designer.md
+            - name: TryCatch
+              href: trycatch-activity-designer.md
+        - name: Migrazione
+          items:
+            - name: Migrazione
+              href: migration-activity-designers.md
+            - name: Interoperabilità
+              href: interop-activity-designer.md
+    - name: Debug dei flussi di lavoro mediante Progettazione flussi di lavoro
+      items:
+        - name: Debug dei flussi di lavoro mediante Progettazione flussi di lavoro
+          href: debugging-workflows-with-the-workflow-designer.md
+        - name: Richiamare il debugger del flusso di lavoro
+          href: how-to-invoke-the-workflow-debugger.md
+        - name: Impostare punti di interruzione in flussi di lavoro
+          href: how-to-set-breakpoints-in-workflows.md
+        - name: Eseguire il debug di XAML con Progettazione flussi di lavoro
+          href: how-to-debug-xaml-with-the-workflow-designer.md
+        - name: Scenari di debug non supportati in Progettazione flussi di lavoro
+          href: unsupported-debugging-scenarios-in-the-workflow-designer.md
+    - name: Guida dell'interfaccia utente della finestra di progettazione dei flussi di lavoro
+      items:
+        - name: Guida dell'interfaccia utente della finestra di progettazione dei flussi di lavoro
+          href: workflow-designer-ui-help.md
+        - name: Finestra di dialogo Cerca e seleziona un tipo .NET
+          href: browse-and-select-a-dotnet-type-dialog-box.md
+        - name: Finestra di dialogo Definizione di CorrelatesOn
+          href: correlateson-definition-dialog-box.md
+        - name: Finestra di dialogo Aggiungi inizializzatori di correlazione
+          href: add-correlationinitializers-dialog-box.md
+        - name: Aggiungere parametri e argomenti alle finestre di dialogo
+          href: add-parameters-and-add-arguments-dialog-boxes.md
+        - name: Finestra di dialogo Editor raccolta di tipi
+          href: type-collection-editor-dialog-box.md
+        - name: Finestra di dialogo Definizione contenuto
+          href: content-definition-dialog-box.md
+        - name: Finestra di dialogo Inizializza correlazione
+          href: initialize-correlation-dialog-box.md
+        - name: 'Scheda System.Activities, finestra di dialogo Scegli elementi della Casella degli strumenti'
+          href: system-activities-tab-choose-toolbox-items-dialog-box.md
+        - name: Caratteristiche della shell di Progettazione flussi di lavoro
+          href: workflow-designer-shell-features.md
+        - name: Tasti di scelta rapida
+          href: keyboard-shortcuts-in-the-workflow-designer.md
+        - name: Messaggi di errore
+          href: error-messages-in-workflow-designer.md
+    - name: Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5
+      items:
+        - name: Sviluppo di applicazioni flusso di lavoro destinate a Framework .NET 3.0 o Framework .NET 3.5
+          href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
+        - name: Debug dei flussi di lavoro legacy
+          items:
+            - name: Debug dei flussi di lavoro legacy
+              href: debugging-legacy-workflows.md
+            - name: Eseguire il debug di flussi di lavoro basati su ASP.NET (legacy)
+              href: how-to-debug-aspnet-based-workflows-legacy.md
+            - name: Impostare punti di interruzione in flussi di lavoro (legacy)
+              href: how-to-set-breakpoints-in-workflows-legacy.md
+            - name: Esecuzione del debug dei flussi di lavoro da computer remoto (legacy)
+              href: debugging-workflows-from-a-remote-computer-legacy.md
+            - name: Opzioni di avanzamento nell’esecuzione del debug (legacy)
+              href: debug-stepping-options-legacy.md
+            - name: Modificare l'opzione di avanzamento nell'esecuzione del debug (legacy)
+              href: how-to-change-the-debug-stepping-option-legacy.md
+            - name: Disattivazione del debugger di Visual Studio per Windows Workflow Foundation (legacy)
+              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+            - name: Richiamo del debugger di Visual Studio per Windows Workflow Foundation (legacy)
+              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
+        - name: Utilizzo di Progettazione flussi di lavoro legacy
+          items:
+            - name: Utilizzo di Progettazione flussi di lavoro legacy
+              href: using-the-legacy-workflow-designer.md
+            - name: Finestre del flusso di lavoro di Visual Studio (legacy)
+              href: visual-studio-workflow-windows-legacy.md
+            - name: Creazione di progetti flusso di lavoro legacy
+              items:
+                - name: Creazione di progetti flusso di lavoro legacy
+                  href: creating-legacy-workflow-projects.md
+                - name: Creare una libreria di attività del flusso di lavoro (legacy)
+                  href: how-to-create-a-workflow-activity-library-legacy.md
+                - name: Creare un progetto di flusso di lavoro vuoto (legacy)
+                  href: how-to-create-an-empty-workflow-project-legacy.md
+                - name: Aggiungere un nuovo elemento a un progetto flusso di lavoro (legacy)
+                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
+                - name: Configurare le proprietà del progetto flusso di lavoro (legacy)
+                  href: how-to-configure-workflow-project-properties-legacy.md
+                - name: Creare applicazioni console flusso di lavoro sequenziali (legacy)
+                  href: how-to-create-sequential-workflow-console-applications-legacy.md
+                - name: Creare applicazioni console flusso di lavoro di una macchina a stati (legacy)
+                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
+                - name: Creare progetti del flusso di lavoro (legacy)
+                  href: how-to-create-workflow-projects-legacy.md
+                - name: Creare una libreria del flusso di lavoro sequenziale (legacy)
+                  href: how-to-create-a-sequential-workflow-library-legacy.md
+                - name: Creare una libreria del flusso di lavoro di una macchina a stati (legacy)
+                  href: how-to-create-a-state-machine-workflow-library-legacy.md
+            - name: Visualizzazioni del flusso di lavoro sequenziale (legacy)
+              href: sequential-workflow-views-legacy.md
+            - name: Attività del flusso di lavoro legacy
+              items:
+                - name: Attività del flusso di lavoro legacy
+                  href: legacy-workflow-activities.md
+                - name: Creare una condizione della regola dichiarativa (legacy)
+                  href: how-to-create-a-declarative-rule-condition-legacy.md
+                - name: Creare un set di regole per l'attività PolicyActivity (legacy)
+                  href: how-to-create-a-policyactivity-rule-set-legacy.md
+                - name: Visualizzazioni delle attività (legacy)
+                  href: activity-views-legacy.md
+                - name: Aggiungere attività nella casella degli strumenti (legacy)
+                  href: how-to-add-activities-to-the-toolbox-legacy.md
+                - name: Implementare un'operazione del contratto WCF (legacy)
+                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
+                - name: Richiamare un'operazione del contratto WCF (legacy)
+                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
+            - name: Utilizzo di temi in flussi di lavoro (legacy)
+              href: using-themes-in-workflows-legacy.md
+            - name: Utilizzo della finestra di progettazione flusso di lavoro di una macchina a stati (legacy)
+              href: using-the-legacy-state-machine-workflow-designer.md
+            - name: Utilizzo dell'ActivityDesigner legacy
+              href: using-the-legacy-activity-designer.md
+            - name: Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
+              items:
+                - name: Finestra di progettazione legacy per la Guida interfaccia utente di Windows Workflow Foundation
+                  href: legacy-designer-for-windows-workflow-foundation-ui-help.md
+                - name: Eseguire l'associazione a una finestra di dialogo delle proprietà dell'attività (legacy)
+                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
+                - name: Finestra di dialogo Cerca e seleziona un tipo .NET (legacy)
+                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
+                - name: Finestra di dialogo Seleziona operazione (legacy)
+                  href: choose-operation-dialog-box-legacy.md
+                - name: Finestra di dialogo Editor condizione della regola (legacy)
+                  href: rule-condition-editor-dialog-box-legacy.md
+                - name: Finestra di dialogo Editor set di regole (legacy)
+                  href: rule-set-editor-dialog-box-legacy.md
+                - name: Finestra di dialogo Seleziona condizione (legacy)
+                  href: select-condition-dialog-box-legacy.md
+                - name: Finestra di dialogo Seleziona set di regole (legacy)
+                  href: select-rule-set-dialog-box-legacy.md
+                - name: Finestra di dialogo configurazione tema (legacy)
+                  href: theme-configuration-dialog-box-legacy.md
+                - name: 'Finestra di dialogo Temi, finestra di progettazione del flusso di lavoro, opzioni (legacy)'
+                  href: themes-workflow-designer-options-dialog-box-legacy.md

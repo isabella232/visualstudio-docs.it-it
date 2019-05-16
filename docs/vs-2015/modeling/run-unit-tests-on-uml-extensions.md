@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e37f6d7891e561beecdf0f9146d647822940571b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cf83fdf92133284271ea696bccef31af1bd72dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701701"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Eseguire unit test su estensioni UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ namespace UnitTests
       // Find the ModelingProject and IModelStore:  
       foreach (Project project in ModelSolution.Projects)  
       {  
-        // http://msdn.microsoft.com/library/ee791691.aspx  
+        // https://msdn.microsoft.com/library/ee791691.aspx  
         ModelingProject = project as IModelingProject;  
         if (ModelingProject != null)  
         {  
@@ -382,6 +382,6 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Questo è l'approccio meno consigliabile. Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è disponibile un'utilità che consente di creare automaticamente un metodo di funzione di accesso per ogni metodo privato. Anche se apparentemente efficace, questo approccio tende ad avere come risultato unit test ad accoppiamento avanzato alla struttura interna dell'applicazione sottoposta a test. Questo comporta lavoro aggiuntivo in caso di modifiche ai requisiti o all'architettura, poiché occorre modificare i test insieme all'implementazione. Eventuali supposizioni errate presenti nella progettazione dell'implementazione saranno inoltre incluse nei test, che quindi non rileveranno errori.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Composizione di uno unit test](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Composizione di uno unit test](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Definire un comando di menu in un diagramma di modellazione](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Immissione rapida con testo in UML](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

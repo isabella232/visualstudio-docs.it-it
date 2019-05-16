@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001775"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691421"
 ---
 # <a name="debugging-managed-code"></a>Debug del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  [IntelliTrace](../debugger/intellitrace.md)  
  Individuare i bug in modo più rapido e semplice registrando la cronologia di esecuzione dell'app con IntelliTrace. Eseguire all'indietro e in avanti gli eventi registrati e le chiamate per esaminare lo stato dell'app in determinati momenti. Eseguire il debug del codice senza impostare molti punti di interruzione o riavviare l'app con frequenza. Richiede Visual Studio Ultimate.  
   
- [Traccia e strumentazione di applicazioni](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [Traccia e strumentazione di applicazioni](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  Vengono descritte la traccia, che consente di monitorare l'esecuzione dell'applicazione, e la strumentazione, che prevede l'inserimento di istruzioni di traccia in corrispondenza di posizioni strategiche nel codice. In questo argomento vengono anche forniti collegamenti a un'introduzione all'instrumentazione e alla traccia, opzioni di traccia, listener di traccia, traccia del codice in un'applicazione, aggiunta di istruzioni di traccia al codice dell'applicazione e compilazione in modo condizionale con <xref:System.Diagnostics.Debug> e <xref:System.Diagnostics.Trace>.  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Viene descritta un'opzione del linker che aggiunge <xref:System.Diagnostics.DebuggableAttribute> al codice scritto con C++. Questo attributo è necessario per l'utilizzo di funzionalità di debug, quali la connessione con C++.  
   
- [Esecuzione del debug delle applicazioni di servizio Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Esecuzione del debug delle applicazioni di servizio Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Vengono fornite considerazioni per il debug di applicazioni di servizio Windows, quali: impostazione, connessione al processo, debug del codice nel metodo `OnStart` del servizio e il codice nel metodo Main, impostazione di punti di interruzione e utilizzo di Services Control Manager per avviare, interrompere, arrestare e continuare il servizio.  
   
- [Debug e profilatura](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [Debug e profilatura](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  Viene discusso il debug di applicazioni .NET Framework e i requisiti di configurazione.  
   
  [Debug di script e applicazioni Web](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ In questa sezione vengono descritti alcuni problemi di debug comuni e vengono il
  Vengono forniti collegamenti a sezioni più ampie della documentazione sul debug. Le informazioni fornite comprendono: novità del debugger, impostazioni e preparazione, punti di interruzione, gestione delle eccezioni, modifica e continuazione, debug di codice gestito, debug di progetti Visual C++, debug di COM e ActiveX, debug di DLL, debug di SQL e riferimenti per l'interfaccia utente.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Controlli di debug personalizzato Windows Form in fase di progettazione](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Procedura dettagliata: Controlli di debug personalizzato Windows Form in fase di progettazione](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Sicurezza del debugger](../debugger/debugger-security.md)   
  [Debug in Visual Studio](../debugger/debugging-in-visual-studio.md)

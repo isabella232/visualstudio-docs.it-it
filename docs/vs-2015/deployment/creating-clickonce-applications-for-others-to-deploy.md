@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675595"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Creazione di applicazioni ClickOnce per la distribuzione da parte di terzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Non tutti gli sviluppatori che creano le distribuzioni di ClickOnce prevede di d
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Creazione di distribuzioni dei clienti tramite manifesto dell'applicazione per la relazione di Trust  
  ClickOnce di .NET Framework 3.5 contiene una nuova funzionalità che offre agli sviluppatori e ai clienti una nuova soluzione per lo scenario del modo in cui devono essere firmati i manifesti. Il manifesto dell'applicazione ClickOnce supporta un nuovo elemento denominato `<useManifestForTrust>` che consente a uno sviluppatore sta a indicare che la firma digitale del manifesto dell'applicazione è ciò che deve essere utilizzato per prendere decisioni di attendibilità. Lo sviluppatore Usa gli strumenti di creazione del pacchetto ClickOnce, quali Mage.exe, MageUI.exe e Visual Studio, includere l'elemento nel manifesto dell'applicazione, nonché di incorporare i server di pubblicazione sia il nome dell'applicazione nel manifesto.  
   
- Quando si usa `<useManifestForTrust>`, il manifesto di distribuzione non deve essere firmato con un certificato Authenticode emesso da un'autorità di certificazione. In alternativa, possono essere firmato con ciò che è noto come un certificato autofirmato. Un certificato autofirmato generato dal cliente o lo sviluppatore tramite gli strumenti standard di .NET Framework SDK e quindi applicato al manifesto di distribuzione usando gli strumenti di distribuzione standard di ClickOnce. Per altre informazioni, vedere [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Quando si usa `<useManifestForTrust>`, il manifesto di distribuzione non deve essere firmato con un certificato Authenticode emesso da un'autorità di certificazione. In alternativa, possono essere firmato con ciò che è noto come un certificato autofirmato. Un certificato autofirmato generato dal cliente o lo sviluppatore tramite gli strumenti standard di .NET Framework SDK e quindi applicato al manifesto di distribuzione usando gli strumenti di distribuzione standard di ClickOnce. Per altre informazioni, vedere [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
  Usando un certificato autofirmato per il manifesto di distribuzione presenta diversi vantaggi. Eliminando la necessità del cliente di ottenere o creare il proprio certificato Authenticode, `<useManifestForTrust>` semplifica la distribuzione per il cliente, consentendo agli sviluppatori di gestire la propria identità personalizzazione nell'applicazione. Il risultato è un set di distribuzioni con segno che sono più sicure e dispongono di identità di applicazione univoco. Ciò consente di eliminare il conflitto potenziale può essere generata dalla distribuzione della stessa applicazione a più clienti.  
   

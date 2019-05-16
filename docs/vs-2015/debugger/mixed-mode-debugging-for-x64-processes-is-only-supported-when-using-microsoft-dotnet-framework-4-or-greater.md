@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 189e5c622d19ce3e122e01bfbe4b886bd2a830b7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e974269cccb65db66ee59735f7acc5de494e2106
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063387"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697825"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>Il debug in modalità mista per i processi x64 è supportato solo quando si utilizza Microsoft .NET Framework 4 o versione successiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ NET Framework versioni precedenti a 4 non forniscono supporto per il debug in mo
   
 ### <a name="to-correct-this-error"></a>Per correggere l'errore  
   
-- Visualizzare [impostazione del debug SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Visualizzare [impostazione del debug SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire il debug di applicazioni a 64 Bit](../debugger/debug-64-bit-applications.md)

@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e75ab095284ec4021d3555de27b43205e17b1128
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a553f77e352b16ba1a0709e13e8893cf0f57a43d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704905"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procedura dettagliata: Debug di un Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
   
 5. Fare clic su **OK**.  
   
-     Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere [finestra di progettazione Windows Form](http://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
+     Visual Studio crea un nuovo progetto e visualizza un nuovo form nella finestra di progettazione Windows Form. Per altre informazioni, vedere [finestra di progettazione Windows Form](https://msdn.microsoft.com/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
 6. Nel **View** dal menu **della casella degli strumenti**.  
   
@@ -114,7 +114,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
     textBox1->Text = "Button was clicked!";  
     ```  
   
-     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [Punti di interruzione](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.  
+     Verrà visualizzato un punto di colore rosso e il testo sulla riga verrà evidenziato in rosso. Il punto di colore rosso rappresenta un punto di interruzione. Per altre informazioni, vedere [Punti di interruzione](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando verrà raggiunto questo punto nel codice, l'esecuzione dell'applicazione nel debugger verrà interrotta. Sarà quindi possibile visualizzare lo stato dell'applicazione ed eseguirne il debug.  
   
     > [!NOTE]
     > È anche possibile fare doppio clic su qualsiasi riga di codice, scegliere **punto di interruzione**, quindi fare clic su **Inserisci punto di interruzione** per aggiungere un punto di interruzione sulla riga.  

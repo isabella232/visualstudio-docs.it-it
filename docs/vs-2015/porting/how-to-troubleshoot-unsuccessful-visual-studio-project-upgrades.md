@@ -18,14 +18,14 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096335"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696385"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi di aggiornamento di progetti di Visual Studio con esito negativo
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedura: Risolvere i problemi relativi agli aggiornamenti di progetti Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In alcuni casi Visual Studio completamente non può convertire un progetto da una versione precedente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se i suggerimenti nelle sezioni seguenti non consentono di risolvere il problema riscontrato, potrebbe essere in grado di trovare altre informazioni su TechNet [Wiki: Portale di sviluppo](http://go.microsoft.com/fwlink/?LinkId=254808).
@@ -57,4 +57,4 @@ In alcuni casi Visual Studio completamente non può convertire un progetto da un
    Se si vuole che il progetto per l'esecuzione in aggiornati [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versione, è necessario aggiornare i riferimenti del progetto e aggiornare anche eventuali `Imports` o `Using` istruzioni che chiama i riferimenti. Se il progetto viene caricato nell'IDE, è possibile aggiornare i riferimenti utilizzando **Esplora soluzioni** o nella **gestione riferimenti** nella finestra di dialogo.
 
 ## <a name="see-also"></a>Vedere anche
- [/ Aggiornamento (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversione in ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Aggiornamento (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversione in ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

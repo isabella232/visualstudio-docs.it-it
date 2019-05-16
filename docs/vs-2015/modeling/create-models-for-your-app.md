@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679480"
 ---
 # <a name="create-models-for-your-app"></a>Creare modelli per l'app
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ I diagrammi di modellazione consentono di comprendere, chiarire e comunicare le 
 |[Modellare i requisiti utente](../modeling/model-user-requirements.md)|Usare modelli per chiarire e comunicare le esigenze degli utenti.|  
 |[Modellare l'architettura dell'app](../modeling/model-your-app-s-architecture.md)|Usare i modelli per descrivere la struttura complessiva e il comportamento del sistema e per verificare che soddisfi esigenze degli utenti.|  
 |[Convalidare il sistema durante lo sviluppo](../modeling/validate-your-system-during-development.md)|Verificare che il software continui a essere coerente con le esigenze degli utenti e con l'architettura complessiva del sistema.|  
-|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli in Agile development](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|  
+|[Usare modelli nel processo di sviluppo](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usare i modelli in Agile development](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Usare i modelli per comprendere e modificare il sistema durante lo sviluppo.|  
 |[Strutturare la soluzione di modellazione](../modeling/structure-your-modeling-solution.md)|Organizzare i modelli in un progetto di medie o grandi dimensioni.|  
   
 ## <a name="external-resources"></a>Risorse esterne  

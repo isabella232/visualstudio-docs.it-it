@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703058"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Esercitazione 1: Creare un Visualizzatore immagini
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ In questa esercitazione si compila un programma che carica un'immagine da un fil
 >   
 > Per visualizzare il codice per Visual Basic, scegliere la scheda **VB** all'inizio dei blocchi di codice; per visualizzare il codice per Visual C#, scegliere la scheda **C#**. Per altre informazioni su Visual C++, vedere l'[Introduzione](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) e l'[esercitazione sul linguaggio C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
-> Per informazioni sulla scrittura di app Visual C# o Visual Basic per Windows Store, vedere [Creare la prima app di Windows Runtime in C# o Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Per informazioni sulla creazione di app JavaScript per Windows Store, vedere [Creazione della prima app di Windows Runtime in JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+> Per informazioni sulla scrittura di app Visual C# o Visual Basic per Windows Store, vedere [Creare la prima app di Windows Runtime in C# o Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Per informazioni sulla creazione di app JavaScript per Windows Store, vedere [Creazione della prima app di Windows Runtime in JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
   
 ## <a name="related-topics"></a>Argomenti correlati  
   

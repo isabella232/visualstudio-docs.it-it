@@ -19,17 +19,17 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: caa267aa44a72d180195a30b41fa7a2c03033bdf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 712d0de957ff7f780567c927fb1b18b100f8f6ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668405"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703524"
 ---
 # <a name="generateresource-task"></a>Attività GenerateResource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Converte file con estensione txt o resx (formato di risorsa basato su XML) in file binari di Common Language Runtime (con estensione resources) che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file con estensione txt o resx in file con estensione resource. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
+Converte file con estensione txt o resx (formato di risorsa basato su XML) in file binari di Common Language Runtime (con estensione resources) che è possibile incorporare in un eseguibile binario di runtime o compilare in assembly satellite. In genere, questa attività viene usata per convertire file con estensione txt o resx in file con estensione resource. Dal punto di vista funzionale, l'attività `GenerateResource` è simile a [resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4).  
   
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `GenerateResource` .  
@@ -56,11 +56,11 @@ Converte file con estensione txt o resx (formato di risorsa basato su XML) in fi
 |`StronglyTypedNamespace`|Parametro `String` facoltativo.<br /><br /> Specifica lo spazio dei nomi da usare per l'origine della classe generata per la risorsa fortemente tipizzata. Se questo parametro non è specificato, tutte le risorse fortemente tipizzate vengono incluse nello spazio dei nomi globale.|  
 |`TLogReadFiles`|Parametro di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene una matrice di elementi che rappresentano i log di rilevamento delle operazioni di lettura.|  
 |`TLogWriteFiles`|Parametro di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Ottiene una matrice di elementi che rappresentano i log di rilevamento delle operazioni di scrittura.|  
-|`ToolArchitecture`|(Facoltativo [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Consente di determinare se per la generazione di ResGen.exe è necessario o meno usare Tracker.exe.<br /><br /> Deve essere analizzabile rispetto a un membro dell'enumerazione <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, viene usata un'euristica per determinare un'architettura predefinita. Deve essere analizzabile rispetto a un membro dell'enumerazione Microsoft.Build.Utilities.ExecutableType.|  
+|`ToolArchitecture`|Parametro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Consente di determinare se per la generazione di ResGen.exe è necessario o meno usare Tracker.exe.<br /><br /> Deve essere analizzabile rispetto a un membro dell'enumerazione <xref:Microsoft.Build.Utilities.ExecutableType>. Se `String.Empty`, viene usata un'euristica per determinare un'architettura predefinita. Deve essere analizzabile rispetto a un membro dell'enumerazione Microsoft.Build.Utilities.ExecutableType.|  
 |`TrackerFrameworkPath`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il percorso della posizione appropriata di .NET Framework in cui è contenuto il file FileTracker.dll.<br /><br /> Se questo parametro è impostato, l'utente si assume la responsabilità di assicurarsi che il numero di bit del file FileTracker.dll passato corrisponda al numero di bit del file ResGen.exe che intende usare. In caso contrario, la posizione appropriata viene stabilita dall'attività in base alla versione corrente di .NET Framework.|  
 |`TrackerLogDirectory`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica la directory intermedia in cui verranno inseriti i log di rilevamento risultanti dall'esecuzione di questa attività.|  
 |`TrackerSdkPath`|Facoltativo <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parametro.<br /><br /> Specifica il percorso della posizione appropriata di Windows SDK in cui è contenuto il file Tracker.exe.<br /><br /> Se questo parametro è impostato, l'utente si assume la responsabilità di assicurarsi che il numero di bit del file Tracker.exe passato corrisponda al numero di bit del file ResGen.exe che intende usare. In caso contrario, la posizione appropriata viene stabilita dall'attività in base alla versione corrente di Windows SDK.|  
-|`TrackFileAccess`|Facoltativo ([booleano]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parametro.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|  
+|`TrackFileAccess`|Parametro [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) facoltativo.<br /><br /> Se true, la directory del file di input viene usata per risolvere i percorsi di file relativi.|  
 |`UseSourcePath`|Parametro `Boolean` facoltativo.<br /><br /> Se `true`, specifica che è necessario usare la directory del file di input per risolvere i percorsi di file relativi.|  
   
 ## <a name="remarks"></a>Note  

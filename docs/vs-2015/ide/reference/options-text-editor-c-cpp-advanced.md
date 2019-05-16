@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a17931b9d7ccb8ef60158d6ea6d22e8b2f27b031
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441418"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697171"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opzioni, Editor di testo, C/C++, Avanzate
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
  Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** e quindi fare clic su **Avanzate**.  
   
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Esplorazione/Navigazione  
  È consigliabile non scegliere mai queste opzioni tranne nel raro caso in cui una soluzione sia talmente grande da richiedere all'attività del database il consumo di una quantità eccessiva di risorse di sistema.  
@@ -124,7 +124,7 @@ Modificando queste opzioni è possibile modificare il comportamento correlato a 
  **Numero massimo di unità di conversione memorizzate nella cache**  
  Il numero massimo di unità di conversione che saranno mantenute attive alla volta per le richieste IntelliSense. Il valore deve essere compreso tra 2 e 15. Questo numero è direttamente correlato al numero massimo di processi VCPkgSrv.exe che verrà eseguito (per una determinata istanza di Visual Studio). Il valore predefinito è 2, ma in presenza di memoria disponibile è possibile aumentare questo valore e verosimilmente garantire prestazioni leggermente migliori in IntelliSense.  
   
- Per altre informazioni sulle unità di conversione, vedere [Phases of Translation](http://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db) (Fasi di conversione).  
+ Per altre informazioni sulle unità di conversione, vedere [Phases of Translation](https://msdn.microsoft.com/library/a7f7a8c9-e8ba-4321-9e50-ebfbbdcce9db) (Fasi di conversione).  
   
  **Disabilita elenco di membri aggressivi**  
  L'elenco di membri non viene visualizzato quando si digita il nome di un tipo o variabile. L'elenco viene visualizzato solo dopo aver digitato uno dei caratteri di commit, come definito nell'opzione **Caratteri commit elenco membri**.  

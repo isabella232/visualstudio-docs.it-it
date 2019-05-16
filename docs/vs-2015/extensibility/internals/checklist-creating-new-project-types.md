@@ -11,12 +11,12 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1699846c0a588a21ebd37a13f77dc45c2a695139
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 02edc5925109a31eebfd98c90bd116fb86eef276
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697233"
 ---
 # <a name="checklist-creating-new-project-types"></a>Elenco di controllo: Creazione di nuovi tipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60101054"
   
     - Factory del progetto, per gestire la creazione di nuovi progetti e aprire progetti esistenti. Per altre informazioni, vedere [creazione di istanze da usando progetto le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    - Gerarchia del progetto e la gestione dei comandi. Per altre informazioni, vedere [non incluso nella Build: Uso delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md) e [Vs confronto tra oggetti MenuCommand. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+    - Gerarchia del progetto e la gestione dei comandi. Per altre informazioni, vedere [non incluso nella Build: Uso delle classi progetto HierUtil7 per implementare un tipo di progetto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346), [elementi di un modello di progetto](../../extensibility/internals/elements-of-a-project-model.md), [componenti di base del modello di progetto](../../extensibility/internals/project-model-core-components.md) e [Vs confronto tra oggetti MenuCommand. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
     - Gestione elementi di progetto, inclusa l'aggiunta del progetto per la **nuovo progetto** nella finestra di dialogo. Per altre informazioni, vedere [aggiunta di progetto e modelli di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md) e [registrazione di Project and Item Templates](../../extensibility/internals/registering-project-and-item-templates.md).  
   

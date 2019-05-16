@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437326"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704504"
 ---
 # <a name="how-to-attach-to-script"></a>Procedura: Associare a script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ In questo argomento viene illustrato come connettere manualmente il debugger di 
   
 2. Nella finestra di dialogo **Connetti a processo** analizzare l'elenco **Processi disponibili** e individuare il processo di script al quale ci si desidera connettere. È possibile identificare i processi di script esaminando la colonna **Tipo**.  
   
-   1. Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [Procedura: Selezionare un computer remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Se il processo di cui si desidera eseguire il debug è in esecuzione in un altro computer, sarà necessario innanzitutto selezionare il computer remoto. Per altre informazioni, vedere [Procedura: Selezionare un computer remoto](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2. Se il processo viene eseguito con un account utente diverso, selezionare la casella di controllo **Mostra processi di tutti gli utenti** .  
   
@@ -59,7 +59,7 @@ In questo argomento viene illustrato come connettere manualmente il debugger di 
   
    L'elenco **Processi disponibili** viene visualizzato automaticamente quando si apre la finestra di dialogo **Processi** . I processi possono essere avviati e interrotti in background mentre la finestra di dialogo è aperta. È quindi possibile che il contenuto non sia sempre aggiornato. Per visualizzare i processi correnti, è possibile aggiornare l'elenco in qualsiasi momento utilizzando il pulsante **Aggiorna**.  
   
-   Durante l'esecuzione del debug è possibile essere connessi a più di un programma, ma in un dato momento solo uno di tali programmi potrà essere attivo nel debugger. È possibile impostare il programma attivo nella barra degli strumenti Posizione di debug. Per altre informazioni, vedere [Procedura: Impostare il processo corrente](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Durante l'esecuzione del debug è possibile essere connessi a più di un programma, ma in un dato momento solo uno di tali programmi potrà essere attivo nel debugger. È possibile impostare il programma attivo nella barra degli strumenti Posizione di debug. Per altre informazioni, vedere [Procedura: Impostare il processo corrente](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Tutti i comandi di esecuzione del menu **Debug** hanno effetto sul programma attivo. È possibile interrompere qualsiasi programma sottoposto a debug dalla finestra di dialogo processi. Visualizzare [usando i punti di interruzione](../debugger/using-breakpoints.md).  
   

@@ -10,14 +10,14 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687640"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creazione di un Editor di base e la registrazione di un tipo di File Editor
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creazione di un editor principale e registrazione di un tipo di file dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principale di quando un file con l'estensione .myext viene caricato.  
@@ -36,7 +36,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
   
 ### <a name="to-create-the-vspackage"></a>Per creare il pacchetto VSPackage  
   
-- Avviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e creare un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage denominato `MyPackage`, come descritto in [procedura dettagliata: Creazione di un VSPackage di comando di Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Avviare [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e creare un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage denominato `MyPackage`, come descritto in [procedura dettagliata: Creazione di un VSPackage di comando di Menu](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Per aggiungere la factory dell'editor  
   

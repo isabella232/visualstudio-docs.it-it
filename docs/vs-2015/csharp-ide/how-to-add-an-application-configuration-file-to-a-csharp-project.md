@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434521"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681718"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un File di configurazione dell'applicazione per un C# progetto
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedura: Aggiungere un file di configurazione dell'applicazione a un progetto C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aggiungendo un file di configurazione dell'applicazione (file app.config) a un progetto C#, è possibile personalizzare il modo in cui CLR individua e carica i file di assembly. Per altre informazioni sui file di configurazione dell'applicazione, vedere [modo in cui il Runtime individua gli assembly](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
+Aggiungendo un file di configurazione dell'applicazione (file app.config) a un progetto C#, è possibile personalizzare il modo in cui CLR individua e carica i file di assembly. Per altre informazioni sui file di configurazione dell'applicazione, vedere [modo in cui il Runtime individua gli assembly](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
 > Non supporta il Windows Store <xref:System.Configuration>. Di conseguenza, le app di Store non contengono un modello di App. config.  
@@ -44,7 +44,7 @@ Aggiungendo un file di configurazione dell'applicazione (file app.config) a un p
   
 ## <a name="see-also"></a>Vedere anche  
  [Gestione delle impostazioni di un'applicazione (.NET)](../ide/managing-application-settings-dotnet.md)   
- [Schema dei file di configurazione](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Configurazione di app](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Procedura: Configurare un'App per una versione di .NET Framework di destinazione](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Schema dei file di configurazione](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [Configurazione di app](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [Procedura: Configurare un'App per una versione di .NET Framework di destinazione](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Using the Visual Studio Development Environment for C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) (Uso dell'ambiente di sviluppo di Visual Studio per C#)

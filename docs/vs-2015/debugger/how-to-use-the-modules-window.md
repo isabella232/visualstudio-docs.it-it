@@ -27,14 +27,14 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b19237b94ed3d53c49f248e22b86d3af8180625
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b592515692e23dce49c125c7895bd158904b653f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445046"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696133"
 ---
-# <a name="how-to-use-the-modules-window"></a>Procedura: Utilizzare la finestra moduli
+# <a name="how-to-use-the-modules-window"></a>Procedura: Usare la finestra Moduli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -78,6 +78,6 @@ NOTA]
 2. Puntare **impostazioni caricamento automatico simboli** e quindi fare clic su **Carica sempre manualmente** oppure **predefinito**. Riavviare la sessione di debug per rendere effettive le modifiche.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Interruzione dell'esecuzione](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Interruzione dell'esecuzione](https://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Visualizzazione di dati nel debugger](../debugger/viewing-data-in-the-debugger.md)   
  [Specificare file di simboli (PDB) e di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

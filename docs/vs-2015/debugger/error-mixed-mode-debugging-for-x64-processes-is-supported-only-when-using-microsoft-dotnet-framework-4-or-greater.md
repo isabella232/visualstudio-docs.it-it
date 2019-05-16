@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56ae0260b73d41e953fa25b74eae9b012604258a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48379cbc9ba2fa5aa663d1cce48236aecd154124
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697381"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Errore: Il debug in modalità mista per i processi x64 è supportato solo quando si esegue una versione di Microsoft .NET Framework precedente alla 4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,4 +37,4 @@ Per eseguire il debug di codice nativo e gestito misto in un processo a 64 bit, 
     - Compilare una versione a 32 bit dell'applicazione per il debug.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Impostare Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Impostare Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

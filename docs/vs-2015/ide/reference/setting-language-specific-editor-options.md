@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689478"
 ---
 # <a name="setting-language-specific-editor-options"></a>Impostazione delle opzioni dell'editor specifiche del linguaggio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sono disponibili numerosi opz
  [Opzioni, Editor di testo, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Vengono descritte le impostazioni che specificano il comportamento dell'elenco di completamento IntelliSense quando si utilizza il codice C# e J#.  
   
- [Convalida, CSS, Editor di testo, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Convalida, CSS, Editor di testo, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Vengono descritte le impostazioni per il completamento di istruzioni e la correzione degli errori per CSS (Cascading Style Sheets).  
   
- [Convalida, HTML, Editor di testo, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Convalida, HTML, Editor di testo, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Vengono descritte le impostazioni per il controllo della sintassi HTML in base allo schema selezionato.  
   
  [Opzioni, Editor di testo, XAML, Formattazione](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ In [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sono disponibili numerosi opz
  [Personalizzazione dell'editor](../../ide/customizing-the-editor.md)  
  Vengono forniti collegamenti ad argomenti in cui sono illustrati i numerosi aspetti dell'editor di cui è possibile impostare le preferenze.  
   
- [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Vengono forniti collegamenti ad argomenti in cui viene illustrato come personalizzare le impostazioni, i tasti di scelta rapida e altre funzionalità dell'ambiente di sviluppo integrato.

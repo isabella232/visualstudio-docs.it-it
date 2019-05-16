@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686307"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Impostazione dei test codificati dell'interfaccia utente per l'attesa di eventi specifici durante la riproduzione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Nella riproduzione di un test codificato dell'interfaccia utente è possibile fa
  Visual Studio Enterprise  
   
 > [!TIP]
-> È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'Editor di Test codificati dell'interfaccia utente](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> È inoltre possibile aggiungere ritardi prima delle azioni usando l'Editor di test codificati dell'interfaccia utente. Per altre informazioni, vedere [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'Editor di Test codificati dell'interfaccia utente](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **Metodi UITestControl.WaitForControlXXX()**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Procedura dettagliata: Creazione, modifica e gestione di un Test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Composizione di un test codificato dell'interfaccia utente](../test/anatomy-of-a-coded-ui-test.md)   
  [Configurazioni e piattaforme supportate per i test codificati dell'interfaccia utente e le registrazioni delle azioni](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'Editor di Test codificati dell'interfaccia utente](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Procedura: Inserire un ritardo prima di un'azione dell'interfaccia utente usando l'Editor di Test codificati dell'interfaccia utente](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

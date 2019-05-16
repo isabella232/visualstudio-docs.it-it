@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438866"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703220"
 ---
 # <a name="working-with-xml-data"></a>Utilizzo di dati XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ Nella gestione dei dati in [!INCLUDE[msCoName](../includes/msconame-md.md)] Visu
  [Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)](../xml-tools/debugging-xslt.md)  
  Viene illustrato come eseguire il debug dei fogli di stile tramite il debugger di Visual Studio.  
   
- [Riferimento agli standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Riferimento agli standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Fornisce informazioni sulle tecnologie XML, ad esempio su XML, DTD (Document Type Definition), XSD (linguaggio di definizione dello schema XML) e fogli di stile XSLT.
   
- [Servizi Web XML nel codice gestito](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Servizi Web XML nel codice gestito](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Viene illustrata la creazione e la distribuzione dei servizi Web XML e le relative modalità di accesso.  
   
 ## <a name="see-also"></a>Vedere anche  

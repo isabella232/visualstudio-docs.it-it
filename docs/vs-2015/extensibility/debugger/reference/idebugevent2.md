@@ -12,12 +12,12 @@ ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7b4ffb4a9d8a0a7a63e895e1f47fc41139b7ba16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f663be5910b342a6adba5da0b84d7e0d80cacc10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967420"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695406"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugEvent2 : IUnknown
  Il motore di debug (DE) e il fornitore di porte personalizzato implementare questa interfaccia nello stesso oggetto come tutte le altre interfacce di eventi.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Usando l'interfaccia argomento ID (IID) assegnato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), gestore di sessione di debug (SDM) chiama [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) nel `IDebugEvent2` interfaccia per ottenere l'interfaccia di eventi appropriato.  
+ Usando l'interfaccia argomento ID (IID) assegnato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) o [evento](../../../extensibility/debugger/reference/idebugportevents2-event.md), gestore di sessione di debug (SDM) chiama [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) nel `IDebugEvent2` interfaccia per ottenere l'interfaccia di eventi appropriato.  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugEvent2`.  

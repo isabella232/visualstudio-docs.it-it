@@ -24,14 +24,14 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb5b56404c7ddc99b7999b47cf3c2a899f915efd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702424"
 ---
-# <a name="create-custom-views-of-managed-objects"></a>Creare viste personalizzate di oggetti gestiti
+# <a name="create-custom-views-of-managed-objects"></a>Creare visualizzazioni personalizzate di oggetti gestiti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile personalizzare la modalità di visualizzazione dei tipi di dati nelle finestre delle variabili del debugger in Visual Studio.  
@@ -50,10 +50,10 @@ ms.locfileid: "63440456"
 > [!CAUTION]
 > La struttura di questo file e la sintassi delle regole autoexp possono variare in base alle diverse versioni di Visual Studio.  
   
- Le visualizzazioni del tipo nativo possono anche essere personalizzate scrivendo un componente aggiuntivo dell'analizzatore di espressioni. Per altre informazioni, vedere [EEAddIn Sample: Espressione di debug del componente aggiuntivo di Analizzatore](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Le visualizzazioni del tipo nativo possono anche essere personalizzate scrivendo un componente aggiuntivo dell'analizzatore di espressioni. Per altre informazioni, vedere [EEAddIn Sample: Espressione di debug del componente aggiuntivo di Analizzatore](https://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso dell'attributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Utilizzo dell'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
  [Finestre Espressioni di controllo e Controllo immediato](../debugger/watch-and-quickwatch-windows.md)   
- [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
+ [Miglioramento del debug tramite gli attributi di visualizzazione del debugger](https://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)

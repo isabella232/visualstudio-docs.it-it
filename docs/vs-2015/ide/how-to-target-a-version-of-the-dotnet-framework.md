@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435148"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695370"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procedura: Scegliere una versione di .NET Framework di destinazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435148"
 In questo documento viene descritto come scegliere una versione di destinazione di .NET Framework quando si crea un progetto e come modificare la versione di destinazione in un progetto di Visual Basic, Visual C# o Visual F# esistente.  
   
 > [!IMPORTANT]
-> Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **In questo argomento**  
   
@@ -62,7 +62,7 @@ In questo documento viene descritto come scegliere una versione di destinazione 
      ![Proprietà Esplora soluzioni di Visual Studio](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Per informazioni su come modificare la versione di destinazione per progetti C++, vedere [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. Nella colonna sinistra della finestra delle proprietà scegliere la scheda **Applicazione**.  
   
@@ -82,9 +82,9 @@ In questo documento viene descritto come scegliere una versione di destinazione 
   
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica del multitargeting di Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
- [.NET Framework Multi-Targeting for ASP.NET Web Projects](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  (Multitargeting .NET Framework per progetti Web ASP.NET)  
+ [.NET Framework Multi-Targeting for ASP.NET Web Projects](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  (Multitargeting .NET Framework per progetti Web ASP.NET)  
  [Risoluzione dei problemi relativi agli errori di impostazione di .NET Framework come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
  [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  (Pagina Applicazione, Creazione progetti (Visual Basic))  
- [Configurazione dei progetti](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Configurazione dei progetti](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

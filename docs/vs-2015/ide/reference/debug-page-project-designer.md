@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703908"
 ---
 # <a name="debug-page-project-designer"></a>Pagina Debug, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441421"
  Le opzioni seguenti consentono di selezionare la configurazione e la piattaforma da visualizzare o modificare.  
   
  **Configurazione**  
- Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possibili sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica le impostazioni di configurazione da visualizzare o modificare. Le impostazioni possibili sono **Debug** (impostazione predefinita), **Rilascio** o **Tutte le configurazioni**. Per altre informazioni, vedere [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
  **Piattaforma**  
- Specifica le impostazioni della piattaforma da visualizzare o modificare. Le scelte possono includere **Qualsiasi CPU** (impostazione predefinita), **x64** e **x86**. Per altre informazioni, vedere [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
+ Specifica le impostazioni della piattaforma da visualizzare o modificare. Le scelte possono includere **Qualsiasi CPU** (impostazione predefinita), **x64** e **x86**. Per altre informazioni, vedere [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) (Eseguire il debug e il rilascio delle configurazione del progetto).  
   
 ## <a name="start-action"></a>Azione di avvio  
  **Avvia azione** indica l'elemento da avviare durante il debug dell'applicazione: il progetto, un programma personalizzato, un URL o nulla. Per impostazione predefinita, questa opzione è impostata su **Avvia progetto**. L'impostazione **Avvia azione** nella pagina **Debug** determina il valore della proprietà `StartAction`.  
@@ -78,6 +78,6 @@ ms.locfileid: "63441421"
  [Debugging in Visual Studio](../../debugger/debugging-in-visual-studio.md)  (Debug in Visual Studio)  
  [Impostazioni di progetto per le configurazioni di debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Gestione delle proprietà di debug](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Gestione delle proprietà di debug](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Procedura: Eseguire il debug di un'applicazione ClickOnce con autorizzazioni limitate](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Procedura: Creare e modificare le configurazioni](../../ide/how-to-create-and-edit-configurations.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d83b4945b41c26ace1b36a294f1830fdbb24d319
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47e893cfe84c984231891583abe5d0fea0178dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798980"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694459"
 ---
 # <a name="pickbranch-activity-designer"></a>ActivityDesigner PickBranch
 <xref:System.Activities.Statements.PickBranch> offre un percorso di esecuzione basato sugli eventi all'interno di un'attività <xref:System.Activities.Statements.Pick> che può essere attivata da un evento in entrata.  
@@ -58,5 +58,5 @@ ms.locfileid: "62798980"
   
 ## <a name="see-also"></a>Vedere anche  
  [Flusso di controllo](../workflow-designer/control-flow-activity-designers.md)   
- [Attività di selezione](http://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
- [Uso dell'attività Pick](http://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)
+ [Attività di selezione](https://msdn.microsoft.com/library/b3e49b7f-0285-4720-8c09-11ae18f0d53e)   
+ [Uso dell'attività Pick](https://msdn.microsoft.com/library/b89be812-a247-4025-b0e3-ffb20db027a6)

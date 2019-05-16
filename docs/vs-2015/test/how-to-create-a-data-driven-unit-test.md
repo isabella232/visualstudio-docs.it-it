@@ -15,12 +15,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdc38967a229424badac0cb6b887f44820b71284
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d82d2c283ac0266880d92139cb9003b3c401b81
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095763"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686302"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,7 +187,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Procedura: Creare ed eseguire uno Unit Test](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
+ [Procedura: Creare ed eseguire uno Unit Test](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
  [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)   
  [Scrittura di unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

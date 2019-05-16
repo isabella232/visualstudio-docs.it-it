@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 638aba87698b32b18f41f8b389485893f880743f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674471"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilizzo memoria senza debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60050166"
   
 - Confrontare snapshot per trovare la causa principale dei problemi di memoria.  
   
-  Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML universale di Windows. Se si vuole analizzare l'uso della memoria nelle app universali di Windows che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  Questo argomento descrive come usare lo strumento Utilizzo memoria per analizzare un'app XAML universale di Windows. Se si vuole analizzare l'uso della memoria nelle app universali di Windows che usano JavaScript e HTML, vedere [Analizzare l'utilizzo della memoria (JavaScript)](https://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ## <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Avviare una sessione di diagnostica con lo strumento Utilizzo memoria  
   
@@ -204,7 +204,7 @@ ms.locfileid: "60050166"
   
 ## <a name="see-also"></a>Vedere anche  
  [Memoria JavaScript](../profiling/javascript-memory.md)   
- [Analizzare le prestazioni delle applicazioni](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
- [Eseguire strumenti di prestazioni e diagnostica](http://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
- [Procedure consigliate per app di Windows Store scritte in C++, C# e Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Analizzare le prestazioni delle applicazioni](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
+ [Eseguire strumenti di prestazioni e diagnostica](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
+ [Procedure consigliate per app di Windows Store scritte in C++, C# e Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnostica dei problemi di memoria con il nuovo strumento Utilizzo memoria in Visual Studio)

@@ -11,26 +11,26 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae770d36c0f030a060eccfe86bc3939dad9622d8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691877"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Supporto per le proprietà di configurazione e del progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE) può visualizzare le proprietà di configurazione e progetto. È possibile fornire una pagina delle proprietà per il proprio tipo di progetto in modo che l'utente può impostare le proprietà dell'applicazione.  
   
- Selezionando un nodo del progetto in **Esplora soluzioni** e quindi facendo clic su **delle proprietà** sul **progetto** menu, è possibile aprire una finestra di dialogo che include configurazione e progetto proprietà. Nelle [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipi derivati da questi linguaggi, questa finestra di dialogo viene visualizzata come una pagina a schede nel progetto di [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). Per altre informazioni, vedere [non incluso nella Build: Procedura dettagliata: Esposizione di proprietà di configurazione e progetto (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Selezionando un nodo del progetto in **Esplora soluzioni** e quindi facendo clic su **delle proprietà** sul **progetto** menu, è possibile aprire una finestra di dialogo che include configurazione e progetto proprietà. Nelle [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipi derivati da questi linguaggi, questa finestra di dialogo viene visualizzata come una pagina a schede nel progetto di [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). Per altre informazioni, vedere [non incluso nella Build: Procedura dettagliata: Esposizione di proprietà di configurazione e progetto (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  Il Framework di pacchetto gestito per progetti (MPFProj) fornisce classi helper per la creazione e la gestione di nuovo sistema di progetto. È possibile trovare l'origine istruzioni di compilazione e codice in [MPF per i progetti - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Persistenza del progetto e le proprietà di configurazione  
- Le proprietà di configurazione e progetto sono persistenti in un file di progetto che ha un'estensione di file associato al tipo di progetto, ad esempio, con estensione csproj, vbproj e .myproj. Progetti di linguaggio usano in genere un file di modello per generare il file di progetto. Tuttavia, esistono effettivamente diversi modi per associare tipi di progetto e modelli. Per altre informazioni, vedere [NIB: Modelli di Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) e [Descrizione Directory del modello (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Le proprietà di configurazione e progetto sono persistenti in un file di progetto che ha un'estensione di file associato al tipo di progetto, ad esempio, con estensione csproj, vbproj e .myproj. Progetti di linguaggio usano in genere un file di modello per generare il file di progetto. Tuttavia, esistono effettivamente diversi modi per associare tipi di progetto e modelli. Per altre informazioni, vedere [NIB: Modelli di Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041) e [Descrizione Directory del modello (. File VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Le proprietà di configurazione e progetto vengono create aggiungendo elementi al file del modello. Queste proprietà sono quindi disponibili per eventuali progetti creati con il tipo di progetto che usa questo modello. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] progetti e MPFProj usano entrambi il [non incluso nella Build: Cenni preliminari su MSBuild](http://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) dello schema per i file di modello. Questi file è presente una sezione PropertyGroup per ogni configurazione. Le proprietà dei progetti vengono in genere rese persistenti nella prima sezione PropertyGroup, che dispone di un argomento Configuration impostato su una stringa null.  
+ Le proprietà di configurazione e progetto vengono create aggiungendo elementi al file del modello. Queste proprietà sono quindi disponibili per eventuali progetti creati con il tipo di progetto che usa questo modello. [!INCLUDE[csprcs](../../includes/csprcs-md.md)] progetti e MPFProj usano entrambi il [non incluso nella Build: Cenni preliminari su MSBuild](https://msdn.microsoft.com/b588fd73-a45b-4706-908f-cc131bccfbde) dello schema per i file di modello. Questi file è presente una sezione PropertyGroup per ogni configurazione. Le proprietà dei progetti vengono in genere rese persistenti nella prima sezione PropertyGroup, che dispone di un argomento Configuration impostato su una stringa null.  
   
  Il codice seguente mostra l'inizio di un file di progetto MSBuild base.  
   
@@ -93,9 +93,9 @@ Il **delle proprietà** finestra nel [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  Il `MyConfigProp` proprietà di configurazione viene visualizzata nella pagina delle proprietà di configurazione come **proprietà di configurazione My** nella categoria **My Category**. Se l'opzione è selezionata, la descrizione **My Description**, viene visualizzato nel Pannello di descrizione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Non incluso nella Build: Procedura dettagliata: Esposizione di proprietà di configurazione e progetto (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Non incluso nella Build: Procedura dettagliata: Esposizione di proprietà di configurazione e progetto (C#)](https://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Aggiunta e rimozione di pagine delle proprietà](../../extensibility/adding-and-removing-property-pages.md)   
  [Lo stato del VSPackage](../../misc/vspackage-state.md)   
  [Progetti](../../extensibility/internals/projects.md)   
- [NIB: Modelli di Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [NIB: Modelli di Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041)   
  [File (con estensione vsdir) di descrizione della directory dei modelli](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

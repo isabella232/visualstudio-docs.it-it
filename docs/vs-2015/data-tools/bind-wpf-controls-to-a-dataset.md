@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80233f0786018bf1b4b18dbfa990a143d298f559
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5231e37b7dd4881deaa6c85c8aa0e33d15bfcc0e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674006"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associare controlli WPF a un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
   
 - Set di dati e oggetti TableAdapter. Per altre informazioni, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Uso di WPF Designer. Per altre informazioni, vedere [WPF e Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Data binding WPF. Per altre informazioni, vedere la [panoramica del data binding](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Creare il progetto  
  Creare un nuovo progetto WPF. Il progetto visualizzerà i record di prodotto.  
@@ -226,7 +226,7 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  
   
     > [!NOTE]
-    > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [Panoramica di TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+    > Questo esempio usa il metodo `Save` di `TableAdapter` per salvare le modifiche. Tale approccio è appropriato a questa procedura dettagliata, in quanto viene modificata una sola tabella dati. Se è necessario salvare modifiche a più tabelle dati, è possibile usare in alternativa il metodo `UpdateAll` di `TableAdapterManager` generato da Visual Studio con il set di dati. Per altre informazioni, vedere [Panoramica di TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
 ## <a name="test-the-application"></a>Testare l'applicazione  
  Compilare ed eseguire l'applicazione. Verificare che sia possibile visualizzare e aggiornare i record di prodotto.  
@@ -260,5 +260,5 @@ In questa procedura dettagliata, verrà creata un'applicazione WPF contenente i 
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
  [Associare controlli WPF ai dati in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
  [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
- [Panoramica di progettazione di Silverlight e WPF](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [Panoramica sul data binding](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Panoramica di progettazione di Silverlight e WPF](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Panoramica sul data binding](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

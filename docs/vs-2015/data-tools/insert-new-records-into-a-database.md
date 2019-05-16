@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5074af8f0a9ca172d04b4cd5bb1d9057ad4bb5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f7ccd6af16d89c18f5a5bba63f6afc50de391c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384083"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688723"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserire nuovi record in un database
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Per inserire nuovi record in un database, è possibile usare la `TableAdapter.Up
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Per inserire nuovi record in un database usando il metodo di TableAdapter  
   
-1. Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [Procedura: Aggiungere righe a un oggetto DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Aggiungere nuovi record per il valore desiderato <xref:System.Data.DataTable> creando un nuovo <xref:System.Data.DataRow> e aggiungendolo al <xref:System.Data.DataTable.Rows%2A> raccolta. Per altre informazioni, vedere [Procedura: Aggiungere righe a un oggetto DataTable](https://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
 2. Dopo aver aggiunto le nuove righe per il <xref:System.Data.DataTable>, chiamare il `TableAdapter.Update` (metodo). È possibile controllare la quantità di dati da aggiornare passando un un'intera <xref:System.Data.DataSet>, una <xref:System.Data.DataTable>, una matrice di <xref:System.Data.DataRow>s o un singolo <xref:System.Data.DataRow>.  
   

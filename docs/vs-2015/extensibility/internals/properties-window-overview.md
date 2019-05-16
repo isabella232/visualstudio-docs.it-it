@@ -10,12 +10,12 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd4be229338d1a09c22b4d81384dc90f0544fa39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700748"
 ---
 # <a name="properties-window-overview"></a>Panoramica della finestra Proprietà
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Il **delle proprietà** finestra viene utilizzata per visualizzare le proprietà
 |Nome dell'interfaccia|Descrizione|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornisce un elenco di categorie per il **proprietà** finestra ed esegue il mapping di ogni proprietà a una categoria.|  
-|[Interfaccia IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Espone metodi e proprietà per la programmazione di strumenti e altre applicazioni che supportano l'automazione di un oggetto.|  
+|[Interfaccia IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Espone metodi e proprietà per la programmazione di strumenti e altre applicazioni che supportano l'automazione di un oggetto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Sono disponibili i pulsanti di puntini di sospensione (...) denominati *generatori* che aprire finestre di dialogo modale implementate dall'oggetto stesso. Utilizzato quando un valore non è tipizzato con facilità dall'utente in un campo di testo. Ad esempio, potrebbe essere utilizzato per aprire un selettore di colore che determina il valore RGB per l'utente.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornisce l'accesso agli oggetti utilizzati per aggiornare le informazioni visualizzate nel **proprietà** finestra. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> viene implementata dai pacchetti VSPackage per ogni finestra che contiene oggetti selezionabili con le proprietà correlate da visualizzare.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornisce informazioni sul tipo di oggetto, ad esempio i metodi di un'interfaccia e i campi di una struttura.|  

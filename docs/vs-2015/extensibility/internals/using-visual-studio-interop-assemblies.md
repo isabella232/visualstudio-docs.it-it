@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ae3ad958ca97250ba74ac2c7aada7dddcf91d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7df241773d06574f8d070285c2b45b662ccd6403
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434792"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675192"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Uso degli assembly di interoperabilità di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -133,4 +133,4 @@ else
  Metodi gestiti che chiamano le interfacce di questo tipo devono inserire il primo elemento all'esterno della matrice [out]. Questo elemento può essere considerato come se fosse un `retval` valore restituito dall'interfaccia COM corrispondente.
 
 ## <a name="see-also"></a>Vedere anche
- [Interoperabilità con codice non gestito](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

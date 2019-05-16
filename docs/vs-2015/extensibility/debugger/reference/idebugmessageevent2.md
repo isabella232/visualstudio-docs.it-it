@@ -12,12 +12,12 @@ ms.assetid: a9ff3d00-e9ac-4cd6-bda9-584a4815aff8
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c2b76d0972768bf4d77e7f6d9bd153920799970
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7bb6b014ef8aa662abd42ab2989d47f703880a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955284"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685975"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugMessageEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- La Germania implementa questa interfaccia per inviare un messaggio a Visual Studio che richiede una risposta dell'utente. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia.  
+ La Germania implementa questa interfaccia per inviare un messaggio a Visual Studio che richiede una risposta dell'utente. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia.  
   
  L'implementazione di questa interfaccia deve comunicare chiamata Visual Studio [SetResponse](../../../extensibility/debugger/reference/idebugmessageevent2-setresponse.md) per la Germania. Ad esempio, questa operazione può essere eseguita con un messaggio inviato al thread di gestione dei messaggi della Germania, oppure l'oggetto che implementa questa interfaccia potrebbe contenere un riferimento per la Germania e richiamare il DE con la risposta passata nel `IDebugMessageEvent2::SetResponse`.  
   
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Note  
  La Germania utilizzerà questa interfaccia se richiede una risposta specifica da parte dell'utente per un determinato messaggio. Ad esempio, se la Germania riceve un messaggio "Accesso negato" dopo un tentativo di connettersi in remoto a un programma, la Germania invia questo messaggio specifico per Visual Studio in un' `IDebugMessageEvent2` evento con lo stile di finestra di messaggio `MB_RETRYCANCEL`. Ciò consente all'utente di ripetere oppure annullare l'operazione di collegamento.  
   
- Specifica la Germania come questo messaggio deve essere gestito, seguire le convenzioni della funzione Win32 `MessageBox` (vedere [AfxMessageBox](http://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) per informazioni dettagliate).  
+ Specifica la Germania come questo messaggio deve essere gestito, seguire le convenzioni della funzione Win32 `MessageBox` (vedere [AfxMessageBox](https://msdn.microsoft.com/library/d66d0328-cdcc-48f6-96a4-badf089099c8) per informazioni dettagliate).  
   
  Usare la [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) interfaccia per inviare messaggi a Visual Studio che non richiedono una risposta da parte dell'utente.  
   

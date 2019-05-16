@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9073edad55a648286a068df5e368e08893ff0a3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33dfa4fb7a303b02121098b0e517f95d6e40f586
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535776"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697435"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Errore: Il debug in modalità mista per i processi IA64 non è supportato
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ Il debugger di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] non supporta il debu
 - Compilare una versione a 32 bit dell'applicazione per il debug.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Impostare Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Impostare Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

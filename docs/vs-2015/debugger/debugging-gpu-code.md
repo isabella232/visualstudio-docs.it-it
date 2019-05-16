@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691559"
 ---
 # <a name="debugging-gpu-code"></a>Debug del codice GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63434871"
 ## <a name="troubleshooting"></a>Risoluzione dei problemi  
   
 ### <a name="specifying-an-accelerator"></a>Specifica di un acceleratore  
- I punti di interruzione nel codice della GPU vengono raggiunti solo se il codice è in esecuzione nell'acceleratore [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se non si specifica un acceleratore nel codice, l'acceleratore REF viene automaticamente selezionato come **Tipo acceleratore debug** nelle proprietà del progetto. Se il codice seleziona in modo esplicito un acceleratore, l'acceleratore REF non viene utilizzato durante il debug e i punti di interruzione non vengono raggiunti a meno che l'hardware della GPU non supporti il debug. È possibile risolvere questo problema scrivendo il codice in modo da utilizzare l'acceleratore REF durante il debug. Per altre informazioni, vedere le proprietà del progetto e [utilizzo degli oggetti accelerator e accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) e [impostazioni di progetto per un C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ I punti di interruzione nel codice della GPU vengono raggiunti solo se il codice è in esecuzione nell'acceleratore [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Se non si specifica un acceleratore nel codice, l'acceleratore REF viene automaticamente selezionato come **Tipo acceleratore debug** nelle proprietà del progetto. Se il codice seleziona in modo esplicito un acceleratore, l'acceleratore REF non viene utilizzato durante il debug e i punti di interruzione non vengono raggiunti a meno che l'hardware della GPU non supporti il debug. È possibile risolvere questo problema scrivendo il codice in modo da utilizzare l'acceleratore REF durante il debug. Per altre informazioni, vedere le proprietà del progetto e [utilizzo degli oggetti accelerator e accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) e [impostazioni di progetto per un C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Punti di interruzione condizionali  
  I punti di interruzione condizionali nel codice della GPU sono supportati, ma non è possibile valutare tutte le espressioni nel dispositivo. Quando un'espressione non può essere valutata nel dispositivo, essa viene valutata nel debugger. È probabile che il debugger sia più lento del dispositivo.  
@@ -83,6 +83,6 @@ ms.locfileid: "63434871"
  È possibile che i calcoli di C++ AMP superino l'intervallo predefinito impostato tramite il processo Timeout Detection and Recovery (TDR) di Windows. In tal caso, il calcolo viene annullato e i dati vengono persi. Per ulteriori informazioni, vedere [Gestione di TDR in C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Debug di un'applicazione C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [Procedura dettagliata: Debug di un'applicazione C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Impostazioni di progetto per una configurazione di debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Avviare il debug della GPU in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

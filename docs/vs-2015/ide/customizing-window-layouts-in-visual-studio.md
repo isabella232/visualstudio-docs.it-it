@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701257"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalizzazione del layout delle finestre in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
   Le finestre dei documenti e degli strumenti possono essere disposte trascinandole, utilizzando i comandi nel menu **Finestra** e facendo clic con il pulsante destro del mouse sulla barra del titolo della finestra da disporre.
 
 > [!NOTE]
-> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Ancoraggio delle finestre
  Quando si seleziona e si trascina la barra del titolo di una finestra degli strumenti oppure la scheda della finestra del documento, viene visualizzata una guida a forma di rombo. Durante l'operazione di trascinamento, quando il cursore si trova sopra una delle frecce nel rombo, viene visualizzata un'area ombreggiata che mostra la posizione in cui verrà ancorata la finestra se viene rilasciato il mouse in quel preciso momento.
@@ -182,4 +182,4 @@ In Visual Studio è possibile personalizzare la posizione, la dimensione e il co
 |[Tipi di finestre](../misc/kinds-of-windows.md)|Vengono illustrate le differenze tra le finestre degli strumenti e le finestre di documento nell'IDE.|
 |[Procedura: Disporre e ancorare le finestre](../misc/how-to-arrange-and-dock-windows.md)|Viene descritto come ancorare, nascondere automaticamente e affiancare le finestre, nonché come reimpostarne il layout.|
 |[Procedura: Spostarsi all'interno dell'IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descrive come è possibile scorrere tra le finestre aperte nell'IDE, in ordine di utilizzo. Descrive inoltre come è possibile passare a documenti specifici.|
-|[Personalizzazione delle impostazioni di sviluppo in Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Include informazioni sulle combinazioni di impostazioni e sull'effetto di tali impostazioni sul layout delle finestre, sui tasti di scelta rapida e su altri elementi dell'IDE.|
+|[Personalizzazione delle impostazioni di sviluppo in Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Include informazioni sulle combinazioni di impostazioni e sull'effetto di tali impostazioni sul layout delle finestre, sui tasti di scelta rapida e su altri elementi dell'IDE.|

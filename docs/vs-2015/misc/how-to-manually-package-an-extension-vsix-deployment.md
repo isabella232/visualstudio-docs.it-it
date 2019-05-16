@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681686"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procedura: Creare manualmente il pacchetto estensione (distribuzione VSIX)
 È possibile creare un pacchetto VSIX per eseguire il wrapping di un'estensione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per la distribuzione. La creazione del pacchetto può avvenire in tre modi:  
@@ -26,7 +26,7 @@ ms.locfileid: "63442885"
   Questo documento descrive la terza opzione.  
   
 ## <a name="creating-a-vsix-package"></a>Creazione di un pacchetto VSIX  
- Per creare manualmente un pacchetto di un'estensione, aggiungere un file extension.manifest e un file [Content_Types].xml al progetto di estensione, inserirli in un file compresso con l'output di compilazione e rinominare il file compresso assegnandogli un'estensione di file vsix. L'estensione di cui creare il pacchetto deve essere di un tipo supportato dallo [schema VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Per creare manualmente un pacchetto di un'estensione, aggiungere un file extension.manifest e un file [Content_Types].xml al progetto di estensione, inserirli in un file compresso con l'output di compilazione e rinominare il file compresso assegnandogli un'estensione di file vsix. L'estensione di cui creare il pacchetto deve essere di un tipo supportato dallo [schema VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 > I nomi dei file nei pacchetti VSIX non devono includere spazi, né caratteri riservati in identificatori URI (Uniform Resource), come definito in [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ ms.locfileid: "63442885"
   
 2. Creare un file XML e assegnargli il nome `extension.vsixmanifest`.  
   
-3. Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Compilare il file extension.vsixmanifest in base allo schema VSIX. Per un esempio di manifesto, vedere [Elemento PackageManifest (elemento radice, schema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Creare un secondo file XML e assegnargli il nome `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ ms.locfileid: "63442885"
 ## <a name="see-also"></a>Vedere anche  
  [Estensioni di Visual Studio di spedizione](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Elemento PackageManifest (elemento radice, Schema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Elemento PackageManifest (elemento radice, Schema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

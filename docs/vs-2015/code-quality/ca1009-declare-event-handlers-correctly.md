@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9f3764e7e7965fb9efe46a8404273de9adde4a34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51b04b4c081bd7961ef26657dd3cb526652df568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422822"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704248"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Dichiarare correttamente i gestori eventi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +58,4 @@ ms.locfileid: "62422822"
 
 ## <a name="see-also"></a>Vedere anche
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
- [NIB: Eventi e delegati](http://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: Eventi e delegati](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

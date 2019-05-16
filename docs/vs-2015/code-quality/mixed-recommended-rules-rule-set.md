@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f762920f61b649023f98810f7de8cdb7e3cf908a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d7e1648c942bb87f52715cabfa3442e1cefa75f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662406"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705663"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Set di regole consigliate miste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |                                               [C6504](../code-quality/c6504.md)                                                |                                                         Null su non puntatore                                                         |
 |                                               [C6505](../code-quality/c6505.md)                                                |                                                          MustCheck su nullo                                                          |
 |                                               [C6506](../code-quality/c6506.md)                                                |                                                 Dimensioni buffer su non puntatore o matrice                                                 |
-|                         [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)                          |                                                  Errata corrispondenza null al livello di dereferenziazione zero                                                  |
+|                         [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)                          |                                                  Errata corrispondenza null al livello di dereferenziazione zero                                                  |
 |                                               [C6508](../code-quality/c6508.md)                                                |                                                      Accesso in scrittura a costante                                                       |
 |                                               [C6509](../code-quality/c6509.md)                                                |                                                     Restituzione utilizzati in precondizione                                                     |
 |                                               [C6510](../code-quality/c6510.md)                                                |                                                   Null terminato su non puntatore                                                    |
@@ -127,11 +127,11 @@ Regole consigliate miste Microsoft orientate ai problemi più critici e comuni n
 |                                               [C6516](../code-quality/c6516.md)                                                |                                                     Nessuna proprietà su attributo                                                      |
 |                                               [C6517](../code-quality/c6517.md)                                                |                                                  Dimensioni valide su buffer non leggibile                                                  |
 |                                               [C6518](../code-quality/c6518.md)                                                |                                                Dimensioni scrivibili su buffer non scrivibile                                                 |
-|                         [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)                          |                                                   Deferenziazione stringa dimensioni non valida                                                   |
+|                         [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)                          |                                                   Deferenziazione stringa dimensioni non valida                                                   |
 |                                               [C6522](../code-quality/c6522.md)                                                |                                                      Tipo stringa dimensioni non valida                                                       |
-|                         [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)                          |                                                    Parametro stringa dimensioni non valido                                                    |
+|                         [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)                          |                                                    Parametro stringa dimensioni non valido                                                    |
 |                                               [C6525](../code-quality/c6525.md)                                                |                                              Percorso irraggiungibile stringa dimensioni non valida                                               |
-|                         [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)                          |                                                   Tipo buffer stringa dimensioni non valido                                                   |
+|                         [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)                          |                                                   Tipo buffer stringa dimensioni non valido                                                   |
 |                                               [C6527](../code-quality/c6527.md)                                                |                         Annotazione non valida: La proprietà 'NeedsRelease' non può essere utilizzata con valori di tipo void                          |
 |                                               [C6530](../code-quality/c6530.md)                                                |                                                  Stile stringa formato non riconosciuto                                                   |
 |                                               [C6540](../code-quality/c6540.md)                                                |            L'utilizzo delle annotazioni di attributo in questa funzione invalida tutte le relative annotazioni __declspec             |

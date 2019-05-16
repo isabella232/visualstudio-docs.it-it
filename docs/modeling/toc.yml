@@ -1,12 +1,12 @@
 - name: Analizzare e modellare l'architettura
   items:
-    - name: Analizzare e modellare l'architettura
+    - name: Panoramica e articoli di riferimento
       href: analyze-and-model-your-architecture.md
     - name: Novità relative alla progettazione in Visual Studio 2017
       href: what-s-new-for-design-in-visual-studio.md
     - name: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
       href: scenario-change-your-design-using-visualization-and-modeling.md
-    - name: Visualizzare il codice
+    - name: Mappe del codice e diagrammi delle dipendenze
       items:
         - name: Visualizzare il codice
           href: visualize-code.md
@@ -32,7 +32,7 @@
           href: directed-graph-markup-language-dgml-reference.md
         - name: Creare diagrammi delle dipendenze dal codice
           href: create-layer-diagrams-from-your-code.md
-    - name: Creare modelli per l'app
+    - name: Creare e condividere modelli
       items:
         - name: Creare modelli per l'app
           href: create-models-for-your-app.md
@@ -40,7 +40,7 @@
           href: layer-diagrams-reference.md
         - name: 'Diagrammi delle dipendenze: Indicazioni'
           href: layer-diagrams-guidelines.md
-        - name: Condividere modelli ed esportare diagrammi
+        - name: Condividere i modelli
           items:
             - name: Condividere modelli ed esportare diagrammi
               href: share-models-and-exporting-diagrams.md
@@ -48,7 +48,7 @@
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Esportare diagrammi come immagini
               href: export-diagrams-as-images.md
-    - name: Usare modelli nel processo di sviluppo
+    - name: Usare i modelli
       items:
         - name: Usare modelli nel processo di sviluppo
           href: use-models-in-your-development-process.md
@@ -64,7 +64,7 @@
           href: visual-studio-architecture-tooling-guidance.md
     - name: Convalidare il sistema durante lo sviluppo
       items:
-        - name: Convalidare il sistema durante lo sviluppo
+        - name: Risorse e attività di convalida
           href: validate-your-system-during-development.md
         - name: Sviluppare test da un modello
           href: develop-tests-from-a-model.md
@@ -72,7 +72,8 @@
           href: validate-code-with-layer-diagrams.md
     - name: Estendere i diagrammi delle dipendenze
       items:
-        - name: Estendere i diagrammi delle dipendenze
+        - name: Panoramica e requisiti
+          displayName: Extend dependency diagrams
           href: extend-layer-diagrams.md
         - name: Aggiungere comandi e movimenti ai diagrammi delle dipendenze
           href: add-commands-and-gestures-to-layer-diagrams.md
@@ -82,7 +83,8 @@
           href: add-custom-properties-to-layer-diagrams.md
     - name: SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
       items:
-        - name: SDK di modellazione per Visual Studio (linguaggi specifici di dominio)
+        - name: Panoramica
+          displayName: Modeling SDK for Visual Studio
           href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Introduzione ai linguaggi specifici di dominio
           href: getting-started-with-domain-specific-languages.md
@@ -92,13 +94,13 @@
           href: how-to-define-a-domain-specific-language.md
         - name: Personalizzare ed estendere un linguaggio specifico di dominio
           items:
-            - name: Personalizzare ed estendere un linguaggio specifico di dominio
+            - name: Panoramica e articoli di riferimento
+              displayName: Customize and Extend a Domain-Specific Language
               href: customizing-and-extending-a-domain-specific-language.md
             - name: Personalizzare la presentazione nel diagramma
               items:
-                - name: Personalizzare la presentazione nel diagramma
-                  href: customizing-presentation-on-the-diagram.md
                 - name: Definire forme e connettori
+                  displayName: Customize presentation on the diagram
                   href: defining-shapes-and-connectors.md
                 - name: 'Controllare colore, stile di linea e altre proprietà della forma'
                   href: controlling-color-line-style-and-other-shape-properties.md
@@ -124,9 +126,8 @@
               href: domain-path-syntax.md
             - name: Proprietà degli elementi del modello
               items:
-                - name: Proprietà degli elementi del modello
-                  href: properties-of-model-elements.md
                 - name: Proprietà di una definizione DSL
+                  displayName: Model element properties
                   href: properties-of-a-dsl-definition.md
                 - name: Proprietà delle classi di dominio
                   href: properties-of-domain-classes.md
@@ -154,9 +155,10 @@
                   href: properties-of-connectors.md
             - name: Condividere classi tra DSL usando una libreria DSL
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
-        - name: Scrivere codice per personalizzare un linguaggio specifico di dominio
+        - name: Personalizzare un linguaggio specifico di dominio
           items:
-            - name: Scrivere codice per personalizzare un linguaggio specifico di dominio
+            - name: Scrivere codice per personalizzare un linguaggio DSL
+              displayName: Customize a Domain-Specific Language
               href: writing-code-to-customise-a-domain-specific-language.md
             - name: Eseguire l'override ed estendere le classi generate
               href: overriding-and-extending-the-generated-classes.md
@@ -186,9 +188,8 @@
           href: validation-in-a-domain-specific-language.md
         - name: Scrivere azioni e comandi utente
           items:
-            - name: Scrivere azioni e comandi utente
-              href: writing-user-commands-and-actions.md
             - name: Modificare un comando di menu standard in un linguaggio specifico di dominio
+              displayName: Write User Commands and Actions
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Aggiungere un comando al menu di scelta rapida
               href: how-to-add-a-command-to-the-shortcut-menu.md
@@ -200,7 +201,8 @@
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Rispondere e propagare modifiche
           items:
-            - name: Rispondere e propagare modifiche
+            - name: Panoramica e riferimenti
+              displayName: Respond to and Propagate Changes
               href: responding-to-and-propagating-changes.md
             - name: Proprietà di archiviazione calcolate e personalizzate
               href: calculated-and-custom-storage-properties.md
@@ -214,7 +216,8 @@
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Generare codice da un linguaggio specifico di dominio
           items:
-            - name: Generare codice da un linguaggio specifico di dominio
+            - name: Panoramica
+              displayName: Generate Code from a Domain-Specific Language
               href: generating-code-from-a-domain-specific-language.md
             - name: Accedere ai modelli da modelli di testo
               href: accessing-models-from-text-templates.md
@@ -230,9 +233,8 @@
           href: customizing-file-storage-and-xml-serialization.md
         - name: Distribuire soluzioni per un linguaggio specifico di dominio
           items:
-            - name: Distribuire soluzioni per un linguaggio specifico di dominio
-              href: deploying-domain-specific-language-solutions.md
             - name: Distribuzione MSI e VSIX di un linguaggio DSL
+              displayName: Deploy Domain-Specific Language Solutions
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Più soluzioni DSL in una soluzione unica
               href: multiple-dsls-in-one-solution.md
@@ -244,8 +246,6 @@
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Usare soluzioni per un linguaggio specifico di dominio
           items:
-            - name: Usare soluzioni per un linguaggio specifico di dominio
-              href: working-with-domain-specific-language-solutions.md
             - name: Informazioni sui linguaggi specifici del dominio
               href: about-domain-specific-languages.md
             - name: Informazioni generali sugli strumenti di linguaggio specifico di dominio
@@ -272,11 +272,12 @@
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: Generazione di codice e modelli di testo T4
       items:
-        - name: Generazione di codice e modelli di testo T4
+        - name: Panoramica
+          displayName: Code Generation and T4 Text Templates
           href: code-generation-and-t4-text-templates.md
         - name: Generazione di codice in fase di progettazione tramite modelli di testo T4
           items:
-            - name: Generazione di codice in fase di progettazione tramite modelli di testo T4
+            - name: Panoramica e istruzioni pratiche
               href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'Procedura dettagliata: Generare codice tramite modelli di testo'
               href: walkthrough-generating-code-by-using-text-templates.md
@@ -290,11 +291,13 @@
           href: run-time-text-generation-with-t4-text-templates.md
         - name: Scrivere un modello di testo T4
           items:
-            - name: Scrivere un modello di testo T4
+            - name: Panoramica
+              displayName: Write a T4 Text Template
               href: writing-a-t4-text-template.md
             - name: Direttive di modello di testo T4
               items:
-                - name: Direttive di modello di testo T4
+                - name: Panoramica e riferimenti sulle direttive
+                  displayName: T4 Text Template Directives
                   href: t4-text-template-directives.md
                 - name: Direttiva template T4
                   href: t4-template-directive.md
@@ -316,7 +319,7 @@
               href: text-template-utility-methods.md
             - name: Accedere a Visual Studio o ad altri host da un modello di testo
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
-            - name: Usare sequenze di escape in modelli di testo
+            - name: Sequenze di escape
               items:
                 - name: Usare sequenze di escape in modelli di testo
                   href: using-escape-sequences-in-text-templates.md
@@ -330,13 +333,14 @@
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: Personalizzare la trasformazione del testo T4
           items:
-            - name: Personalizzare la trasformazione del testo T4
+            - name: Panoramica e articoli di riferimento
+              displayName: Customize T4 Text Transformation
               href: customizing-t4-text-transformation.md
             - name: Processo di trasformazione del modello di testo
               href: the-text-template-transformation-process.md
-            - name: Creare processori di direttiva di modelli di testo T4 personalizzati
+            - name: Processori di direttive personalizzati
               items:
-                - name: Creare processori di direttiva di modelli di testo T4 personalizzati
+                - name: Creare un processore di direttive dei modelli di testo T4 personalizzato
                   href: creating-custom-t4-text-template-directive-processors.md
                 - name: Distribuire un processore di direttiva personalizzato
                   href: deploying-a-custom-directive-processor.md
@@ -344,7 +348,7 @@
                   href: walkthrough-creating-a-custom-directive-processor.md
             - name: Richiamare la trasformazione del testo in un'estensione VS
               href: invoking-text-transformation-in-a-vs-extension.md
-            - name: Elaborare modelli di testo tramite un host personalizzato
+            - name: Host personalizzati
               items:
                 - name: Elaborare modelli di testo tramite un host personalizzato
                   href: processing-text-templates-by-using-a-custom-host.md

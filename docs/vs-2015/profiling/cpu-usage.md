@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067053"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700944"
 ---
 # <a name="cpu-usage"></a>Utilizzo CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, �
   
  Per una procedura dettagliata in cui vengono analizzate le prestazioni di un'app di Windows Store, vedere [Analizzare l'utilizzo della CPU nelle app dello Store](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- L'hub Prestazioni e diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. È ad esempio possibile eseguire lo strumento **Utilizzo CPU** in computer locali o remoti oppure in un simulatore o in un emulatore. È possibile analizzare le prestazioni di un progetto aperto in Visual Studio o collegato a un'app in esecuzione oppure avviare un'app installata da Windows Store. Per altre informazioni, vedere [eseguire strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ L'hub Prestazioni e diagnostica include numerose altre opzioni per eseguire e gestire la sessione di diagnostica. È ad esempio possibile eseguire lo strumento **Utilizzo CPU** in computer locali o remoti oppure in un simulatore o in un emulatore. È possibile analizzare le prestazioni di un progetto aperto in Visual Studio o collegato a un'app in esecuzione oppure avviare un'app installata da Windows Store. Per altre informazioni, vedere [eseguire strumenti di profilatura senza il debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> Raccogliere i dati di utilizzo della CPU  
   

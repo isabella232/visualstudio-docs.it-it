@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d49b870b83eeb4bce48c562f3944aacef871cd2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0dee5cff8700e5748832792c1056b51a878e3f3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696899"
 ---
 # <a name="application-timeline"></a>Sequenza temporale applicazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +38,10 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
 5. Windows 7  
   
 > [!NOTE]
-> È possibile raccogliere e analizzare i dati sull’utilizzo della CPU e sul consumo di energia insieme ai dati della **Sequenza temporale applicazione** . Vedere [eseguire strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> È possibile raccogliere e analizzare i dati sull’utilizzo della CPU e sul consumo di energia insieme ai dati della **Sequenza temporale applicazione** . Vedere [eseguire strumenti di profilatura senza il debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Raccogliere dati sulla sequenza temporale applicazione  
- È possibile profilare la velocità di risposta dell'app nel computer locale, nel dispositivo connesso, negli emulatori o nel simulatore Visual Studio o in un dispositivo remoto. Visualizzare [strumenti di profilatura senza eseguire debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
+ È possibile profilare la velocità di risposta dell'app nel computer locale, nel dispositivo connesso, negli emulatori o nel simulatore Visual Studio o in un dispositivo remoto. Visualizzare [strumenti di profilatura senza eseguire debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
 > Se possibile, eseguire l'app direttamente nel dispositivo. Le prestazioni dell'applicazione osservate nel simulatore o tramite Connessione Desktop remoto potrebbero non essere indicative delle prestazioni effettive nel dispositivo. D'altro canto, la raccolta di dati usando Visual Studio Remote Tools non influisce sui dati delle prestazioni.  
@@ -121,5 +121,5 @@ Utilizzare il profiler **Sequenza temporale applicazione** per individuare e cor
   
 ## <a name="see-also"></a>Vedere anche  
  [Blog del Team WPF: Nuovo strumento di analisi delle prestazioni dell'interfaccia utente per le applicazioni WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
- [Procedure consigliate per app di Windows Store scritte in C++, C# e Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [Ottimizzazione delle prestazioni di applicazioni WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [Procedure consigliate per app di Windows Store scritte in C++, C# e Visual Basic](https://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
+ [Ottimizzazione delle prestazioni di applicazioni WPF](https://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

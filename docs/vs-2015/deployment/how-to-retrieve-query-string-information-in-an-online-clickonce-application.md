@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 588ff95f90c6d85526dfe931e8f0b8ab439d9b94
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431520"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697586"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedura: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ La *stringa di query* è la parte di un URL che inizia con un punto interrogativ
  Se l'applicazione è solo online, verrà sempre attivata tramite un URL. Anche in questo caso, tuttavia, l'applicazione deve essere scritta in modo da funzionare correttamente se i parametri della stringa di query mancano o sono danneggiati.  
   
 ## <a name="net-framework-security"></a>Sicurezza di .NET Framework  
- Consentire il passaggio di parametri URL all'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solo se si prevede di ripulire l'input da eventuali caratteri dannosi prima di usarlo. Una stringa incorporata con virgolette, barre o punto e virgola, ad esempio, potrebbe eseguire le operazioni di dati arbitrarie se viene impiegata senza essere filtrata in una query SQL su un database. Per altre informazioni sulla sicurezza delle stringhe di query, vedere [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+ Consentire il passaggio di parametri URL all'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solo se si prevede di ripulire l'input da eventuali caratteri dannosi prima di usarlo. Una stringa incorporata con virgolette, barre o punto e virgola, ad esempio, potrebbe eseguire le operazioni di dati arbitrarie se viene impiegata senza essere filtrata in una query SQL su un database. Per altre informazioni sulla sicurezza delle stringhe di query, vedere [Script Exploits Overview](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza di applicazioni ClickOnce](../deployment/securing-clickonce-applications.md)

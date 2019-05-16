@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 30fa3449acc209fdc89c0be8e85f82fa3795a365
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966516"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685125"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: I finalizzatori devono essere protetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58966516"
  Un tipo pubblico implementa un finalizzatore che non specifica della famiglia di accesso (protetto).
 
 ## <a name="rule-description"></a>Descrizione della regola
- I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori C#, Visual Basic e Visual C++.
+ I finalizzatori devono utilizzare il modificatore di accesso a livello di famiglia. Questa regola viene applicata dai compilatori c#, Visual Basic e Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, impostare il finalizzatore per essere accessibile tramite la famiglia.
@@ -81,4 +81,4 @@ ms.locfileid: "58966516"
 ```
 
 ## <a name="see-also"></a>Vedere anche
- [Criterio Dispose](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Criterio Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

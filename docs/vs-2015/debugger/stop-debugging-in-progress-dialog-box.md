@@ -23,12 +23,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c29754937d3b1ff7f4c44fc87929d84844743387
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4fc4b72987be726ab06aeb92a0e3eec2a338949e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968152"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684954"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Terminazione debug in corso (finestra di dialogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ Questa finestra di dialogo viene visualizzata quando il debugger tenta di interr
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Disconnessione di programmi](http://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)
+ [Disconnessione di programmi](https://msdn.microsoft.com/f2c756c2-8079-474b-94c2-01c19a141a01)

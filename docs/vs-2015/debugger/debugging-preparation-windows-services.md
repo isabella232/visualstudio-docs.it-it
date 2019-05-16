@@ -19,17 +19,17 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d18dcf94c9dd1223446e55025465d1a3b455526
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e68792b62e3e5538476063b5298579ecc58e4db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967290"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691310"
 ---
 # <a name="debugging-preparation-windows-services"></a>Debug della preparazione: servizi Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Un servizio Windows è un programma che viene eseguito in background in Microsoft Windows. Ne sono un esempio il servizio Telnet e il Time Service di Windows che aggiorna l'orologio visualizzato sul computer. I servizi Windows non possono essere eseguiti dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'esecuzione deve avvenire nel contesto di Gestione controllo servizi. Per altre informazioni, vedere [Creare servizi Windows](http://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff), [Eseguire il debug di applicazioni di servizio per Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2) e [Applicazioni di servizi Windows](http://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b).  
+Un servizio Windows è un programma che viene eseguito in background in Microsoft Windows. Ne sono un esempio il servizio Telnet e il Time Service di Windows che aggiorna l'orologio visualizzato sul computer. I servizi Windows non possono essere eseguiti dall'interno di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'esecuzione deve avvenire nel contesto di Gestione controllo servizi. Per altre informazioni, vedere [Creare servizi Windows](https://msdn.microsoft.com/library/0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff), [Eseguire il debug di applicazioni di servizio per Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2) e [Applicazioni di servizi Windows](https://msdn.microsoft.com/library/ba72d648-9553-4849-b829-069ad5ea014b).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Debug di codice gestito](../debugger/debugging-managed-code.md)   

@@ -8,19 +8,19 @@ ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7525fe8e01922880199275576a8b12ec29bc029
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 1dc7dceeaf94ef94a46da6836fea95ac94e49db7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834933"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686451"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analisi del code coverage nei test di verifica della compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'analisi del code coverage in Microsoft Visual Studio mostra la quantità di codice usato dai test automatizzati. Per altre informazioni, vedere [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme a tutti gli altri test degli altri membri del team. Se questo aspetto non è già stato configurato, vedere [Eseguire i test nel processo di compilazione](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38). È utile analizzare il code coverage nel servizio di compilazione perché viene offerta un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo.  
+ Quando si controlla il codice, i test vengono eseguiti sul server di compilazione insieme a tutti gli altri test degli altri membri del team. Se questo aspetto non è già stato configurato, vedere [Eseguire i test nel processo di compilazione](https://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38). È utile analizzare il code coverage nel servizio di compilazione perché viene offerta un'immagine aggiornata e completa del code coverage dell'intero progetto. Vengono inclusi i test di sistema automatizzati e altri test codificati che normalmente non vengono eseguiti nei computer di sviluppo.  
   
 1. In Team Explorer aprire **Compilazioni** e aggiungere o modificare una definizione di compilazione.  
   

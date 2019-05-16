@@ -9,24 +9,24 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 06db94841a45f648461822c5f205cb68bbb2b1c2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 48c020c978b593a94ecd4d60109245f6acb718b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437716"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684087"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Uso di Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft Monitoring Agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
-È possibile monitorare localmente le app Web ASP.NET ospitate su IIS e le applicazioni SharePoint 2010 o 2013 per rilevare errori, problemi relativi alle prestazioni o altri problemi con **Microsoft Monitoring Agent**. È possibile salvare gli eventi di diagnostica dell'agente in un file di log IntelliTrace (con estensione iTrace). È quindi possibile aprire il file di log in Visual Studio Enterprise (ma non edizioni Professional o Community) per il debug dei problemi con tutti gli strumenti di diagnostica Visual Studio. È anche possibile raccogliere dati relativi a diagnosi e metodi di IntelliTrace eseguendo l'agente in modalità **Traccia** . Microsoft Monitoring Agent può essere integrato con [Application Insights](/azure/azure-monitor/app/app-insights-overview) e [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato.  
+È possibile monitorare localmente le app Web ASP.NET ospitate su IIS e le applicazioni SharePoint 2010 o 2013 per rilevare errori, problemi relativi alle prestazioni o altri problemi con **Microsoft Monitoring Agent**. È possibile salvare gli eventi di diagnostica dell'agente in un file di log IntelliTrace (con estensione iTrace). È quindi possibile aprire il file di log in Visual Studio Enterprise (ma non edizioni Professional o Community) per il debug dei problemi con tutti gli strumenti di diagnostica Visual Studio. È anche possibile raccogliere dati relativi a diagnosi e metodi di IntelliTrace eseguendo l'agente in modalità **Traccia** . Microsoft Monitoring Agent può essere integrato con [Application Insights](/azure/azure-monitor/app/app-insights-overview) e [System Center Operation Manager](https://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato.  
   
 > [!NOTE]
 > È anche possibile raccogliere dati relativi a diagnosi e metodi di IntelliTrace per le app Web, SharePoint, WPF e Windows Form nei computer remoti senza modificare l'ambiente di destinazione usando l' **agente di raccolta autonomo IntelliTrace**. L'agente di raccolta autonomo ha un impatto sulle prestazioni maggiore rispetto all'esecuzione di Microsoft Monitoring Agent in modalità **Monitor** . Visualizzare [usando l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Se si usa System Center 2012, usare Microsoft Monitoring Agent con Operations Manager per ottenere avvisi relativi ai problemi e creare elementi di lavoro di Team Foundation Server con collegamenti ai log IntelliTrace salvati. Successivamente è possibile assegnare questi elementi di lavoro ad altri per un ulteriore debug. Vedere [Integrazione di Operations Manager con i processi di sviluppo](http://technet.microsoft.com/library/jj614609.aspx) e [Monitoraggio con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx).  
+ Se si usa System Center 2012, usare Microsoft Monitoring Agent con Operations Manager per ottenere avvisi relativi ai problemi e creare elementi di lavoro di Team Foundation Server con collegamenti ai log IntelliTrace salvati. Successivamente è possibile assegnare questi elementi di lavoro ad altri per un ulteriore debug. Vedere [Integrazione di Operations Manager con i processi di sviluppo](https://technet.microsoft.com/library/jj614609.aspx) e [Monitoraggio con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).  
   
  Prima di iniziare, verificare di avere a disposizione l'origine e i simboli corrispondenti per il codice compilato e distribuito. In questo modo è possibile passare direttamente al codice dell'applicazione quando si avvia il debug e la navigazione degli eventi di diagnostica nel log IntelliTrace. [Configurare le compilazioni](../debugger/diagnose-problems-after-deployment.md) in modo che Visual Studio possa rilevare e aprire automaticamente l'origine corrispondente per il codice distribuito.  
   
@@ -37,13 +37,13 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
 3. [Passaggio 3: Salvare gli eventi registrati](#SaveEvents)  
   
 ## <a name="SetUpMonitoring"></a> Passaggio 1: Configurazione di Microsoft Monitoring Agent  
- Configurare l'agente autonomo nel server Web in modo che il monitoraggio locale venga eseguito senza modificare l'applicazione. Se è si usa System Center 2012, vedere [Installazione di Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
+ Configurare l'agente autonomo nel server Web in modo che il monitoraggio locale venga eseguito senza modificare l'applicazione. Se è si usa System Center 2012, vedere [Installazione di Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465156.aspx).  
   
 ### <a name="SetUpStandaloneMMA"></a> Configurare l'agente autonomo  
   
 1. Verificare che:  
   
-    - Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](http://technet.microsoft.com/library/dn465154.aspx).  
+    - Il server Web stia eseguendo [versioni supportate di Internet Information Services (IIS)](https://technet.microsoft.com/library/dn465154.aspx).  
   
     - Nel server Web è disponibile .NET Framework 3.5, 4 o 4.5.  
   
@@ -77,7 +77,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
   
      **PS C: > Import-Module "C:\Program Files\Microsoft Monitoring Agent\Agent\PowerShell\Microsoft.MonitoringAgent.PowerShell\Microsoft.MonitoringAgent.PowerShell.dll"**  
   
-3. [Visitare TechNet](http://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.  
+3. [Visitare TechNet](https://technet.microsoft.com/systemcenter/default) per ottenere il contenuto della Guida più recente.  
   
 #### <a name="FullPermissionsITLog"></a> D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?  
  **R:** Usare il comando **icacls** di Windows o Esplora risorse (o Esplora file). Ad esempio:  
@@ -111,7 +111,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
   7. Verificare che il pool di applicazioni disponga delle autorizzazioni di **lettura ed esecuzione**.  
   
 ## <a name="MonitorEvents"></a> Passaggio 2: Avvio del monitoraggio dell'applicazione  
- Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Per avviare il monitoraggio dell'applicazione usare il comando [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) di Windows PowerShell. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 1. Nel server Web aprire una finestra del prompt dei comandi di **Windows PowerShell** o **Windows PowerShell ISE** come amministratore.  
   
@@ -137,7 +137,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -oppure-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso sito web IIS e app web](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](http://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](http://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<appName>"*|Specificare il percorso del sito Web e il nome dell'applicazione Web in IIS. Se si preferisce, è possibile includere anche il percorso di IIS.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -oppure-<br /><br /> **"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*<br /><br /> Questo percorso è disponibile in Gestione IIS. Ad esempio:<br /><br /> ![Percorso sito web IIS e app web](../debugger/media/ffr-iismanager.png "FFR_IISManager")<br /><br /> È anche possibile usare i comandi [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) e [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode>*|Specificare la modalità di monitoraggio:<br /><br /> <ul><li>**Monitoraggio**: vengono registrati dettagli minimi sugli eventi relativi a eccezioni e prestazioni. Questa modalità usa il piano di raccolta predefinito.</li><li>**Traccia**: registra dettagli a livello di funzione o monitora le applicazioni SharePoint 2010 e SharePoint 2013 usando il piano di raccolta specificato. In questa modalità l'esecuzione dell'applicazione potrebbe essere più lenta.<br /><br /> <ul><li>[D: Come è possibile configurare le autorizzazioni per il pool di applicazioni?](#FullPermissionsITLog)</li><li>[D: Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?](#Minimizing)</li></ul><br />     Questo esempio registra gli eventi per un'applicazione SharePoint ospitata in un sito SharePoint:<br /><br />     **Start-WebApplicationMonitoring "FabrikamSharePointSite\FabrikamSharePointApp" traccia C:\IntelliTraceLogs""C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\collection_plan.ASP.NET.default.xml""**</li><li>**Custom**: registra i dettagli personalizzati usando un piano di raccolta personalizzato specificato. Sarà necessario riavviare il monitoraggio se si modifica il piano di raccolta dopo l'avvio del monitoraggio.</li></ul>|  
     |*"\<outputPath>"*|Specificare il percorso completo della directory per archiviare i log IntelliTrace. Assicurarsi di creare questa directory prima di iniziare il monitoraggio.|  
     |*\<UInt32>*|Specificare la dimensione massima per il log IntelliTrace. La dimensione massima predefinita del log IntelliTrace è 250 MB.<br /><br /> Quando viene raggiunto il limite, le voci immesse per prime vengono sovrascritte dall'agente per fare spazio ad altre voci. Per modificare questo limite, usare l'opzione **-MaximumFileSizeInMegabytes** o modificare l'attributo `MaximumLogFileSize` nel piano di raccolta.|  
@@ -231,7 +231,7 @@ Per la documentazione più recente di Visual Studio, vedere [tramite Microsoft M
   L'agente registra valori per `id`, `Employee.Id`, `Employee.Name` e per l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente non registra informazioni sull'oggetto `Address` , eccetto se era Null oppure no. L'agente non registra nemmeno i dati sulle variabili locali nel metodo `AlterEmployee` , a meno che non vengano usate da altri metodi come parametri; in questo caso vengono registrate come parametri di metodo.  
   
 ## <a name="SaveEvents"></a> Passaggio 3: Salvare gli eventi registrati  
- Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
+ Quando si rileva un errore o un problema di prestazioni, salvare gli eventi registrati in un log IntelliTrace. L'agente crea il log solo se sono stati registrati degli eventi. Se si usa System Center 2012, vedere [Monitoraggio delle applicazioni Web con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Salvataggio degli eventi registrati continuando il monitoraggio  
  Seguire questa procedura se si vuole creare il log IntelliTrace senza riavviare l'applicazione o arrestare il monitoraggio. L'agente continua il monitoraggio anche in caso di riavvio dell'applicazione o del server.  

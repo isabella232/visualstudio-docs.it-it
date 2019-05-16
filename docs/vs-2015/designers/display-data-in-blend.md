@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080865"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695552"
 ---
 # <a name="display-data-in-blend"></a>Visualizzare dati in Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "60080865"
  **Breve video:** ![Configure Installed Features](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [creare un'origine dati XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ## <a name="LiveStore"></a> Visualizzare dati dinamici in un'app di Windows Store o Windows Phone  
- Vedere [Uso di dati e file (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
+ Vedere [Uso di dati e file (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Creazione di un'interfaccia utente usando Blend per Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

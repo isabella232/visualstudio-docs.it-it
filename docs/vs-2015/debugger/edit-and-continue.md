@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955536"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698722"
 ---
 # <a name="edit-and-continue"></a>Modifica e continuazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Modifica e continuazione è una funzionalità che consente di ridurre i tempi ne
   
  Questa sezione presenta i seguenti argomenti:  
   
- [Procedura: Applicare le modifiche al codice in modo esplicito](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Procedura: Applicare le modifiche al codice in modo esplicito](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Procedura: Abilitare e disabilitare Modifica e continuazione](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Procedura: Arrestare le modifiche al codice](../debugger/how-to-stop-code-changes.md)  
   
- [Punto di esecuzione](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Punto di esecuzione](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Modifica e continuazione è una funzionalità che consente di ridurre i tempi ne
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza del debugger](../debugger/debugger-security.md)   
- [Modifica e continuazione, Debug, finestra di dialogo Opzioni](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Debugger Basics](../debugger/debugger-basics.md) (Nozioni di base sul debugger)

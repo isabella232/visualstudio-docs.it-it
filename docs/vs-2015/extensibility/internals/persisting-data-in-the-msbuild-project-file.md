@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704127"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Salvataggio permanente dei dati nel file di progetto MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un sottotipo di progetto potrebbe essere necessario rendere persistenti i dati specifici del sottotipo nel file di progetto per un uso successivo. Un sottotipo di progetto usa la persistenza del file di progetto per soddisfare i requisiti seguenti:  
   
-1. Rendere persistenti i dati usati come parte della compilazione del progetto. (Per altre informazioni su Microsoft Build Engine, vedere [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Le informazioni relative alla compilazione possono:  
+1. Rendere persistenti i dati usati come parte della compilazione del progetto. (Per altre informazioni su Microsoft Build Engine, vedere [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Le informazioni relative alla compilazione possono:  
   
     1. Dati indipendenti dalla configurazione. Vale a dire i dati archiviati negli elementi di MSBuild con condizioni vuoti o mancanti.  
   

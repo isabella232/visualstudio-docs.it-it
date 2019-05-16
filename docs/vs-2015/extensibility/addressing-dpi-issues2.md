@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443958"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699260"
 ---
 # <a name="addressing-dpi-issues"></a>Risoluzione dei problemi relativi a DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Abilitazione del supporto HDPI per WebOC  
  Per impostazione predefinita, i controlli WebOC (ad esempio, il controllo WebBrowser in WPF, o l'interfaccia IWebBrowser2) non abilitare il supporto e il rilevamento di HDPI. Il risultato sarà un controllo incorporato con il contenuto visualizzato è troppo piccolo su un display ad alta risoluzione. Di seguito viene descritto come abilitare il supporto di valori DPI alti in un'istanza di WebOC web specifico.  
   
- Implementare l'interfaccia IDocHostUIHandler (vedere l'articolo MSDN sul [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interface):  
+ Implementare l'interfaccia IDocHostUIHandler (vedere l'articolo MSDN sul [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Facoltativamente, implementare l'interfaccia ICustomDoc (vedere l'articolo MSDN sul [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interface):  
+ Facoltativamente, implementare l'interfaccia ICustomDoc (vedere l'articolo MSDN sul [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interface):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

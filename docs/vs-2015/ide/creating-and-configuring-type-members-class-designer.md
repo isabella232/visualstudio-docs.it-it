@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701207"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Creazione e configurazione di membri di tipi (Progettazione classi)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63437598"
 |Modulo (solo VB)|metodo, proprietà, campo, evento, costruttore, costante|  
   
 > [!NOTE]
-> Rendere più concisa la dichiarazione di proprietà se le funzioni di accesso get e set della proprietà non necessitano di logica aggiuntiva mediante proprietà implementate automaticamente (solo C#). Per visualizzare la firma completa, scegliere **Modifica il formato membri**, **Visualizza firma completa** dal menu **Diagramma classi**. Per altre informazioni sulle proprietà implementate automaticamente, vedere [Proprietà implementate automaticamente](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Rendere più concisa la dichiarazione di proprietà se le funzioni di accesso get e set della proprietà non necessitano di logica aggiuntiva mediante proprietà implementate automaticamente (solo C#). Per visualizzare la firma completa, scegliere **Modifica il formato membri**, **Visualizza firma completa** dal menu **Diagramma classi**. Per altre informazioni sulle proprietà implementate automaticamente, vedere [Proprietà implementate automaticamente](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Attività comuni  
   
@@ -131,7 +131,7 @@ ms.locfileid: "63437598"
      **Nota:** per creare i membri è anche possibile usare i tasti di scelta rapida. Per altre informazioni, vedere [Scelte rapide da tastiera e con il mouse nel diagramma classi e nella finestra Dettagli classe (Progettazione classi)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a>Modifica di membri di tipi  
- Utilizzando Progettazione classi è possibile modificare i membri dei tipi visualizzati nel diagramma. È possibile modificare i membri di qualsiasi tipo visualizzato in un diagramma classi che non sia di sola lettura. (Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). È possibile modificare i membri dei tipi utilizzando la modifica sul posto nell'area di progettazione, la finestra Proprietà e la finestra Dettagli classe.  
+ Utilizzando Progettazione classi è possibile modificare i membri dei tipi visualizzati nel diagramma. È possibile modificare i membri di qualsiasi tipo visualizzato in un diagramma classi che non sia di sola lettura. (Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). È possibile modificare i membri dei tipi utilizzando la modifica sul posto nell'area di progettazione, la finestra Proprietà e la finestra Dettagli classe.  
   
  Tutti i membri visualizzati nella finestra Dettagli classe rappresentano i membri dei tipi presenti nel diagramma classi. Sono disponibili quattro tipi di membri: metodi, proprietà, campi ed eventi.  
   
@@ -263,7 +263,7 @@ ms.locfileid: "63437598"
   
  Tutte le celle della finestra Dettagli classe sono modificabili, con alcune eccezioni:  
   
-- L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly di riferimento. Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra Dettagli classe.  
+- L'intero tipo è di sola lettura se, ad esempio, si trova in un assembly di riferimento. Vedere [Visualizzare le informazioni di sola lettura (Progettazione classi)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Se si seleziona la forma in Progettazione classi, i relativi dettagli vengono visualizzati in sola lettura nella finestra Dettagli classe.  
   
 - Per gli indicizzatori, il nome è di sola lettura mentre gli altri elementi (tipo, modificatore, riepilogo) sono modificabili.  
   

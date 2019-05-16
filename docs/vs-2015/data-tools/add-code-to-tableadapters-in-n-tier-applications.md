@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa406ab366c9bfb51f506c2dbba0a8408d7ba377
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688549"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Aggiungere il codice nei TableAdapter di applicazioni a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-È possibile estendere le funzionalità di un `TableAdapter` creando un file di classe parziale per il `TableAdapter` e l'aggiunta di codice alla (invece di aggiungere codice per il *DatasetName*. File di DataSet). Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per altre informazioni, vedere [parziali](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) oppure [parziale (tipo)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
+È possibile estendere le funzionalità di un `TableAdapter` creando un file di classe parziale per il `TableAdapter` e l'aggiunta di codice alla (invece di aggiungere codice per il *DatasetName*. File di DataSet). Classi parziali consentono al codice per una classe specifica da dividere tra più file fisici. Per altre informazioni, vedere [parziali](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) oppure [parziale (tipo)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Il codice che definisce una `TableAdapter` viene generato ogni volta che si modifica il `TableAdapter`. Questo codice viene generato anche quando vengono apportate modifiche durante l'esecuzione di una procedura guidata modifica la configurazione della `TableAdapter`. Per impedire che il codice in corso l'eliminazione durante la rigenerazione di una `TableAdapter`, aggiungere codice al file di classe parziale del `TableAdapter`.  
   
@@ -73,6 +73,6 @@ ms.locfileid: "63444500"
 ## <a name="see-also"></a>Vedere anche  
  [Panoramica delle applicazioni dati a più livelli](../data-tools/n-tier-data-applications-overview.md)   
  [Aggiungere codice al set di dati in applicazioni a più livelli](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
- [Panoramica di TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
- [Cenni preliminari sull'aggiornamento gerarchico](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+ [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
+ [Panoramica di TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
+ [Cenni preliminari sull'aggiornamento gerarchico](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)

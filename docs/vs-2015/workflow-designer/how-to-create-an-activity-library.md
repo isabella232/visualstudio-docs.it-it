@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686649"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedura: Creare una libreria attività
 Le attività personalizzate sono usate per modellare i processi aziendali particolari in un flusso di lavoro. Il modello Libreria attività in [!INCLUDE[vs2010](../includes/vs2010-md.md)] è stato fornito per consentire di creare tali attività personalizzate usando visivamente [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ Le attività personalizzate sono usate per modellare i processi aziendali partic
     > È consentita una sola attività figlio nel corpo dell'attività personalizzata. L'attività in questione può tuttavia essere un oggetto CompositeActivity, quale <xref:System.Activities.Statements.Sequence> o <xref:System.Activities.Statements.Flowchart>.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura: Creare un'attività](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Procedura: Creare un'attività](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Creazione di un progetto flusso di lavoro](../workflow-designer/creating-a-workflow-project.md)

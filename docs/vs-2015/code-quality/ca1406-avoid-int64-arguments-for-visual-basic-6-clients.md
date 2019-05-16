@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a024f2a695729dcc5c06ff6c5d6ac9c189fee762
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7cf2fc4e9160f44f51ac565619bd8d52bff8b22b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954706"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705726"
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Evitare gli argomenti Int64 per i client Visual Basic 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,4 +60,4 @@ ms.locfileid: "58954706"
  [CA1017: Contrassegnare gli assembly con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vedere anche
- [Interoperabilità con codice non gestito](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [tipo di dati Long](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ [Interoperabilità con codice non gestito](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [tipo di dati Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)

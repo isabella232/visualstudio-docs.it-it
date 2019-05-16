@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442784"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686424"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurazione di unit test usando un file con estensione runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
 > [!NOTE]
 > **File con estensione runsettings e testsettings**  
 >   
-> Sono disponibili due tipi di file per la configurazione dei test. I file di tipo *.runsettings sono usati per gli unit test. I file con estensione \*testsettings sono usati per [test in ambiente lab](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), test relativi a caricamento e prestazioni Web e per la personalizzazione di alcuni tipi di adattatori di dati di diagnostica, ad esempio IntelliTrace e gli adattatori di log eventi.  
+> Sono disponibili due tipi di file per la configurazione dei test. I file di tipo *.runsettings sono usati per gli unit test. I file con estensione \*testsettings sono usati per [test in ambiente lab](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), test relativi a caricamento e prestazioni Web e per la personalizzazione di alcuni tipi di adattatori di dati di diagnostica, ad esempio IntelliTrace e gli adattatori di log eventi.  
 >   
 > Nelle edizioni precedenti di Visual Studio, fino alla 2010, la personalizzazione degli unit test viene eseguita con file di tipo *.testsettings. È ancora possibile usare questa procedura, ma l'esecuzione dei test sarà più lenta rispetto all'uso delle configurazioni equivalenti in un file con estensione \*runsettings.  
   
@@ -141,7 +141,7 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
 #### <a name="other-diagnostic-data-adapters"></a>Altri adattatori dati di diagnostica  
  L'adattatore code coverage è attualmente l'unico adattatore che può essere personalizzato usando il file di impostazioni esecuzione test.  
   
- Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, è necessario usare un file di impostazioni di test. Per altre informazioni, vedere [Specifying Test Settings for Visual Studio Tests](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901) (Specifica delle impostazioni test di Visual Studio).  
+ Per personalizzare qualsiasi altro tipo di adattatore dati di diagnostica, è necessario usare un file di impostazioni di test. Per altre informazioni, vedere [Specifying Test Settings for Visual Studio Tests](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901) (Specifica delle impostazioni test di Visual Studio).  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters consente di definire le variabili e i valori disponibili per i test in fase di esecuzione.  
@@ -152,7 +152,7 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
 |Configurazione|Impostazione predefinita|Valori|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|False|In Visual Studio 2012, l'adapter MSTest è stato ottimizzato per essere più veloce e più scalabile. Un comportamento, ad esempio l'ordine in cui vengono eseguiti i test, potrebbe non essere esattamente come quello nelle versioni precedenti di Visual Studio. Impostare questo valore su `true` per usare l'adattatore di test precedente.<br /><br /> Ad esempio, lo si può usare nel caso in cui sia presente un file app.config specificato per uno unit test.<br /><br /> È consigliabile provare a effettuare il refactoring dei test per consentire l'uso dell'adattatore più recente.|  
-|IgnoreTestImpact|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [come: Raccogliere i dati per verificare i test da eseguire dopo le modifiche al codice](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|False|La funzionalità dell'impatto sui test assegna la priorità ai test interessati da modifiche recenti, una volta eseguiti in MSTest o da Microsoft Test Manager. Questa impostazione disattiva la funzionalità. Per altre informazioni, vedere [come: Raccogliere i dati per verificare i test da eseguire dopo le modifiche al codice](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||È possibile specificare un file di impostazioni di test da usare con l'adattatore MSTest. È inoltre possibile specificare un file di impostazioni test usando il menu **Test**, **Impostazioni test**, **Seleziona file di impostazioni test**.<br /><br /> Se si specifica questo valore, è necessario impostare anche **ForcedlegacyMode** su **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|False|Una volta completata l'esecuzione di un test, MSTest viene arrestato. Qualsiasi processo avviato come parte del test verrà interrotto in questo momento. Se si desidera che l'executor di test rimanga attivo, impostare questa configurazione su true.<br /><br /> Ad esempio, lo si può usare per mantenere in esecuzione il browser tra i test codificati dell'interfaccia utente.|  
 |DeploymentEnabled|true|Se viene impostata su false, gli elementi della distribuzione specificati nel metodo di test non verranno copiati nella directory di distribuzione.|  
@@ -164,4 +164,4 @@ Gli unit test in Visual Studio possono essere configurati usando un file di tipo
   
 ## <a name="see-also"></a>Vedere anche  
  [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md)  (Personalizzazione dell'analisi del code coverage)  
- [Specifica delle impostazioni test di Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Specifica delle impostazioni test di Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

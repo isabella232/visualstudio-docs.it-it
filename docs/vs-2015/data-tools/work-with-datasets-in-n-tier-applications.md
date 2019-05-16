@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558463"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688198"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Uso dei set di dati nelle applicazioni a più livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Le applicazioni dati a più livelli * sono applicazioni mirate ai dati separate 
  [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Fornisce istruzioni dettagliate per la creazione di un dataset tipizzato e la separazione del codice degli elementi TableAdapter e dataset in più progetti.  
   
- [Procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Procedura dettagliata: Aggiunta della convalida a un'applicazione dati a più livelli](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Vengono fornite istruzioni dettagliate per l'aggiunta di convalida per l'applicazione è stata creata nella procedura dettagliata dell'applicazione dati a più livelli.  
   
 ## <a name="reference"></a>Riferimenti  
@@ -71,4 +71,4 @@ Le applicazioni dati a più livelli * sono applicazioni mirate ai dati separate 
 - [Aggiornamento gerarchico](../data-tools/hierarchical-update.md)   
 - [Strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [Applicazioni a più livelli e remote con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [Applicazioni a più livelli e remote con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

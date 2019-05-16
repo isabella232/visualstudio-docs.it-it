@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: f0dd471e156f7a76462ac093c9ca54684f7dbc68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f13a97adbec1da1bd0f279e14cf510532b9c62f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444497"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688628"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accesso ai dati in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
  Non è necessario usare uno qualsiasi di queste tecnologie. In alcuni scenari, specialmente quando le prestazioni sono critiche, è possibile semplicemente utilizzare un oggetto DataReader per leggere dal database e copiare i valori desiderati in un oggetto raccolta, ad esempio elenco\<T >.
 
 ### <a name="native-c"></a>C++ nativo
- Le applicazioni C++ che si connettono a SQL Server devono usare la [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). È possibile accedere ad altri database usando [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) o driver OLE DB direttamente. ODBC è l'interfaccia standard del database corrente, ma la maggior parte dei sistemi di database forniscono funzionalità personalizzate che non sono accessibili tramite l'interfaccia ODBC.  OLE DB è una tecnologia di accesso ai dati COM legacy che è ancora supportata ma non consigliata per le nuove applicazioni.  Per altre informazioni, vedere [DAS](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
+ Le applicazioni C++ che si connettono a SQL Server devono usare la [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). È possibile accedere ad altri database usando [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) o driver OLE DB direttamente. ODBC è l'interfaccia standard del database corrente, ma la maggior parte dei sistemi di database forniscono funzionalità personalizzate che non sono accessibili tramite l'interfaccia ODBC.  OLE DB è una tecnologia di accesso ai dati COM legacy che è ancora supportata ma non consigliata per le nuove applicazioni.  Per altre informazioni, vedere [DAS](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
 
  I programmi C++ che usano servizi REST è possono usare la [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -107,7 +107,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
 #### <a name="data-modeling"></a>Modellazione dei dati
  Visual Studio non fornisce un livello ORM per C++.  [ODB](http://www.codesynthesis.com/products/odb/) è un prodotto ORM open source più diffusi per C++.
 
- Per altre informazioni sulle tecnologie di accesso ai dati legacy Visual C++, vedere [l'accesso ai dati](http://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
+ Per altre informazioni sulle tecnologie di accesso ai dati legacy Visual C++, vedere [l'accesso ai dati](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
 ### <a name="javascript"></a>JavaScript
  [JavaScript in Visual Studio](https://msdn.microsoft.com/library/hh334522.aspx) è un ottimo linguaggio per la creazione di App multipiattaforma, le app UWP, servizi cloud, siti Web e App web. È possibile usare Bower, Grunt, Gulp, npm e NuGet da Visual Studio per installare le librerie JavaScript preferite e dei prodotti del database. Connettersi ad archiviazione di Azure e servizi, scaricare gli SDK del [sito Web di Azure](https://azure.microsoft.com/).  Edge. js è una libreria che si connette lato server JavaScript (Node. js) a origini dati ADO.NET.
@@ -118,7 +118,7 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
 ## <a name="in-this-section"></a>Contenuto della sezione
  [Installazione di sistemi di database, strumenti ed esempi](../data-tools/installing-database-systems-tools-and-samples.md) illustra come ottenere prodotti del database e le estensioni di Visual Studio o i driver che li supportano e dove trovare i database di esempio per scopi di apprendimento e sperimentazione.
 
- [Visual Studio data tools per .NET](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) descrive come usare finestre degli strumenti di Visual Studio per connettersi alle origini dati, creare i set di dati o modelli di Entity Framework e associare i dati a controlli dell'interfaccia utente.
+ [Visual Studio data tools per .NET](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) descrive come usare finestre degli strumenti di Visual Studio per connettersi alle origini dati, creare i set di dati o modelli di Entity Framework e associare i dati a controlli dell'interfaccia utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
  [I dati, dispositivi e Analitica](https://msdn.microsoft.com/data-and-devices) fornisce un'introduzione a Microsoft intelligent cloud, tra cui Cortana Analitica Suite e supporto per Internet delle cose.
@@ -129,16 +129,16 @@ In Visual Studio, è possibile creare applicazioni che si connettono ai dati in 
 
  [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx) vengono descritti gli strumenti che semplificano la progettazione, esplorazione, test e distribuzione di applicazioni basate su dati e database.
 
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) descrive l'architettura ADO.NET e come usare le classi ADO.NET per gestire i dati dell'applicazione e interagire con le origini dati e XML.
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca) descrive l'architettura ADO.NET e come usare le classi ADO.NET per gestire i dati dell'applicazione e interagire con le origini dati e XML.
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) viene descritto come creare applicazioni di dati che consentono agli sviluppatori di programmare sulla base di un modello concettuale anziché direttamente in un database relazionale.
 
- [WCF Data Services 4.5](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) viene descritto come utilizzare [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] per distribuire servizi dati nel web o in una rete intranet che implementano le [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4.5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) viene descritto come utilizzare [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] per distribuire servizi dati nel web o in una rete intranet che implementano le [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
- [I dati nelle soluzioni Office](http://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
+ [I dati nelle soluzioni Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) contiene collegamenti ad argomenti che illustrano il funzionamento dei dati nelle soluzioni Office. Sono incluse informazioni sulla programmazione orientata agli schemi, la memorizzazione nella cache di dati e l'accesso ai dati sul lato server.
 
- [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) descrive le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
+ [LINQ (Language-Integrated Query)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) descrive le funzionalità di query incorporate in C# e Visual Basic e il modello comune per l'esecuzione di query su database relazionali, documenti XML, i set di dati e raccolte in memoria.
 
  [Strumenti XML in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) illustra l'uso di funzionalità XML di .NET Framework i dati, debug XSLT, XML e l'architettura di Query XML.
 
- [Documenti e dati XML](http://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) offre una panoramica a un set completo e integrato di classi che funzionano con i documenti XML e i dati in .NET Framework.
+ [Documenti e dati XML](https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380) offre una panoramica a un set completo e integrato di classi che funzionano con i documenti XML e i dati in .NET Framework.

@@ -11,12 +11,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: 27
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b8dd75f7d293ee4e7dc412b2ff8f1983d936e3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 40e22ae7cc14d230f4111760268452ec1372af32
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446255"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686679"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Eseguire uno unit test come processo a 64 bit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Se si dispone di un computer a 64 bit, è possibile eseguire unit test e acquisi
 ## <a name="see-also"></a>Vedere anche  
  [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)   
  [Eseguire unit test del codice](../test/unit-test-your-code.md)   
- [Specifica delle impostazioni test di Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Specifica delle impostazioni test di Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

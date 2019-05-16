@@ -11,12 +11,12 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 89a07bc5a5c4c8b7a6054b53610325c654355bc8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050985"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695963"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Guida di orientamento per l'estensione del debugger
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Questa documentazione vengono fornite informazioni di riferimento e Guida per l'
   
      [Creazione di un motore di debug personalizzato](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Esercitazione: Creazione di un motore di Debug tramite COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Esercitazione: Creazione di un motore di Debug tramite COM ATL](https://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implementazione di un fornitore di porte](../../extensibility/debugger/implementing-a-port-supplier.md)  
   

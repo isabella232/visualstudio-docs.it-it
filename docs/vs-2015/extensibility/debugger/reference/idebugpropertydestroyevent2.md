@@ -12,12 +12,12 @@ ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c0bc0520e6f030ad6746748ac269eb97bc885e2c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 034040ecd8df3368f53cb7a3bf99197e962e2b56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954638"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702297"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugPropertyDestroyEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Note per gli implementatori  
- La Germania implementa questa interfaccia per segnalare che una proprietà è stata eliminata. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia. Questa interfaccia viene implementata se la Germania è creato in precedenza una proprietà associata a uno script. eliminazione definitiva della proprietà rimuove lo script associato dall'IDE.  
+ La Germania implementa questa interfaccia per segnalare che una proprietà è stata eliminata. Il [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interfaccia deve essere implementata per lo stesso oggetto di questa interfaccia. Usa il modello SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) per l'accesso di `IDebugEvent2` interfaccia. Questa interfaccia viene implementata se la Germania è creato in precedenza una proprietà associata a uno script. eliminazione definitiva della proprietà rimuove lo script associato dall'IDE.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
  La Germania crea e invia l'oggetto evento al report che è stata eliminata definitivamente una proprietà. L'evento viene inviato tramite il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) funzione di callback che viene fornito per il modello SDM quando è associato al programma in fase di debug.  

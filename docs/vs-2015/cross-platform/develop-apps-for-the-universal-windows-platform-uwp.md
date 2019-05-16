@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666767"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698645"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Sviluppare app per la piattaforma UWP (Universal Windows Platform)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
   
  **Che cos'è esattamente la piattaforma UWP (Universal Windows Platform)?**  
   
- È semplicemente una raccolta di contratti e versioni che consente di scegliere la destinazione in cui eseguire l'app. La destinazione non è più un sistema operativo, bensì una o più famiglie di dispositivi. Altre informazioni sono disponibili nella [Guida della piattaforma](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ È semplicemente una raccolta di contratti e versioni che consente di scegliere la destinazione in cui eseguire l'app. La destinazione non è più un sistema operativo, bensì una o più famiglie di dispositivi. Altre informazioni sono disponibili nella [Guida della piattaforma](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Requisiti  
  Gli strumenti di sviluppo di app di Windows universale sono dotati di emulatori che permettono di visualizzare l'aspetto della app in dispositivi diversi. Per usare gli emulatori, è necessario installare questo software in un computer fisico in cui sia in esecuzione Windows 8.1 (x64) Professional o versioni successive e dotato di un processore che supporti Client Hyper-V e Second Level Address Translation (SLAT). Non è possibile eseguire gli emulatori quando Visual Studio è installato in una macchina virtuale.  
@@ -55,8 +55,8 @@ Con la piattaforma UWP (Universal Windows Platform) e uno dei nostri core Window
   È possibile usare la finestra di progettazione XAML solo se la piattaforma di sviluppo è Windows 10.  
   
 ## <a name="universal-windows-apps"></a>App di Windows universale  
- Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaScript per [creare un'app di Windows universale per dispositivi Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). In alternativa, è possibile guardare [questo video introduttivo](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Scegliere il linguaggio di sviluppo preferito tra C#, Visual Basic, C++ o JavaScript per [creare un'app di Windows universale per dispositivi Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). In alternativa, è possibile guardare [questo video introduttivo](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- Se si hanno app di Windows Store 8.1 o Windows Phone 8.1 oppure app di Windows universale create con Visual Studio 2015 RC, [trasferire le app esistenti](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) per usare la versione più recente della piattaforma UWP (Universal Windows Platform).  
+ Se si hanno app di Windows Store 8.1 o Windows Phone 8.1 oppure app di Windows universale create con Visual Studio 2015 RC, [trasferire le app esistenti](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) per usare la versione più recente della piattaforma UWP (Universal Windows Platform).  
   
  Dopo aver creato l'app di Windows universale, è necessario [creare un pacchetto dell'app](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) per installarla in un dispositivo Windows 10 o inviarla al Windows Store.

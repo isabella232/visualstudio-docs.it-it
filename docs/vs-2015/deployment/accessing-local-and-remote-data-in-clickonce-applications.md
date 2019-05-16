@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427243"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688122"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Accesso a dati locali e remoti in applicazioni ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
   
  Lo spazio di memorizzazione isolato funziona in tutte le versioni di [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Lo spazio di memorizzazione isolato funziona anche in applicazioni parzialmente attendibili senza necessità di autorizzazioni aggiuntive. Usare lo spazio di memorizzazione isolato se l'applicazione deve essere eseguita con attendibilità parziale, ma deve gestire dati specifici dell'applicazione.  
   
- Per altre informazioni, vedere [Spazio di memorizzazione isolato](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Per altre informazioni, vedere [Spazio di memorizzazione isolato](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Altri file locali  
  Se l'applicazione deve usare o salvare dati dell'utente finale come report, immagini, musica e così via, l'applicazione richiederà che <xref:System.Security.Permissions.FileIOPermission> sia in grado di leggere e scrivere i dati nel file system locale.  
@@ -86,7 +86,7 @@ La maggior parte delle applicazioni usa o produce dati. [!INCLUDE[ndptecclick](.
  A un certo punto, l'applicazione dovrà probabilmente recuperare informazioni da un sito Web remoto, ad esempio dati del cliente o informazioni di mercato. Questa sezione descrive le tecniche più comuni per il recupero dei dati remoti.  
   
 ### <a name="accessing-files-by-using-http"></a>Accesso ai file con HTTP  
- È possibile accedere ai dati da un server Web usando la classe <xref:System.Net.WebClient> o <xref:System.Net.HttpWebRequest> nello spazio dei nomi <xref:System.Net> . I dati possono essere file statici o applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] che restituiscono testo non elaborato o dati XML. Se i dati sono in formato XML, il modo più veloce per recuperarli prevede l'uso della classe <xref:System.Xml.XmlDocument> , il cui metodo <xref:System.Xml.XmlDocument.Load%2A> acquisisce un URL come argomento. Per un esempio, vedere [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ È possibile accedere ai dati da un server Web usando la classe <xref:System.Net.WebClient> o <xref:System.Net.HttpWebRequest> nello spazio dei nomi <xref:System.Net> . I dati possono essere file statici o applicazioni [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] che restituiscono testo non elaborato o dati XML. Se i dati sono in formato XML, il modo più veloce per recuperarli prevede l'uso della classe <xref:System.Xml.XmlDocument> , il cui metodo <xref:System.Xml.XmlDocument.Load%2A> acquisisce un URL come argomento. Per un esempio, vedere [Reading an XML Document into the DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  È necessario tenere presenti i problemi legati alla sicurezza quando l'applicazione accede ai dati remoti tramite HTTP. Per impostazione predefinita, l'accesso dell'applicazione [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] alle risorse di rete può essere limitato, a seconda di come è stata distribuita l'applicazione. Queste restrizioni vengono applicate per evitare che programmi dannosi accedano ai dati remoti riservati o che usino il computer di un utente per attaccare gli altri computer della rete.  
   

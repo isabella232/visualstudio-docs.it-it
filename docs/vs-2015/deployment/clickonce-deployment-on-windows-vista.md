@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15af68e52a902003cd483cb6705ab4ded947f1a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: e25f9da960b1de8acb1950b2bdd3ab7e61409f17
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675471"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Distribuzione ClickOnce in Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ Compilazione di applicazioni in Visual Studio per controllo Account utente (UAC)
   
    Questo approccio è noto anche come *virtualizzazione*. Usare questa opzione per la compatibilità con le applicazioni esistenti da versioni precedenti di Visual Studio.  
   
-  Le nuove proprietà sono disponibili nel **applicazione** pagina di creazione progetti (Visual C# solo per i progetti) e nel formato di file di progetto MSBuild.  
+  Le nuove proprietà sono disponibili nel **applicazione** pagina di creazione progetti (Visual c# solo per i progetti) e nel formato di file di progetto MSBuild.  
   
-  Si noti che il metodo per la configurazione di generazione del manifesto UAC nell'IDE di Visual Studio è diversa a seconda del tipo di progetto (Visual C# e Visual Basic).  
+  Si noti che il metodo per la configurazione di generazione del manifesto UAC nell'IDE di Visual Studio è diversa a seconda del tipo di progetto (Visual c# e Visual Basic).  
   
-  Per informazioni sulla configurazione di progetti Visual C# per la generazione di manifesti, vedere [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  Per informazioni sulla configurazione di progetti Visual c# per la generazione di manifesti, vedere [Application Page, Project Designer (c#)](../ide/reference/application-page-project-designer-csharp.md).  
   
   Per informazioni sulla configurazione di progetti Visual Basic per la generazione di manifesti, vedere [pagina dell'applicazione, creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Le autorizzazioni utente e Visual Studio](http://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [Le autorizzazioni utente e Visual Studio](https://msdn.microsoft.com/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md)  (Applicazione (pagina), Creazione progetti (C#))  
  [Pagina Applicazione, Creazione progetti (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

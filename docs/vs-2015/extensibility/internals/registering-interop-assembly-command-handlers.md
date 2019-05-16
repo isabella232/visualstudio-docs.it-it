@@ -11,23 +11,23 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cfb8b493190429f6f3a0a6295d65db2c151639c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d2822e9eef36806f5c251813925fb4244242519
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705805"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrazione dei gestori dei comandi negli assembly di interoperabilità
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un pacchetto VSPackage è necessario registrare con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] in modo che l'ambiente di sviluppo integrato (IDE) consente di indirizzare i comandi in modo corretto.  
   
- Il Registro di sistema può essere aggiornato mediante la modifica manuale o mediante un file di programma di registrazione (RGS). Per altre informazioni, vedere [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Il Registro di sistema può essere aggiornato mediante la modifica manuale o mediante un file di programma di registrazione (RGS). Per altre informazioni, vedere [Creating Registrar Scripts](https://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Il Framework di pacchetto gestito (MPF) fornisce questa funzionalità tramite i <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.  
   
- [Comando riferimento sul formato di tabella](http://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) le risorse si trovano nelle DLL di interfaccia utente satellite non gestita.  
+ [Comando riferimento sul formato di tabella](https://msdn.microsoft.com/09e9c6ef-9863-48de-9483-d45b7b7c798f) le risorse si trovano nelle DLL di interfaccia utente satellite non gestita.  
   
 ## <a name="command-handler-registration-of-a-vspackage"></a>Registrazione del gestore comando di un pacchetto VSPackage  
  Un pacchetto VSPackage che agisce come un gestore per l'interfaccia utente (UI)-comandi basati su richiede una voce del Registro di sistema denominata dopo che il pacchetto VSPackage `GUID`. Questa voce del Registro di sistema specifica il percorso del file di risorse del pacchetto VSPackage dell'interfaccia utente e la risorsa di menu all'interno del file. La voce del Registro di sistema stesso si trova sotto HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versione >* \Menus, dove  *\<versione >* è la versione di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], ad esempio 9.0.  

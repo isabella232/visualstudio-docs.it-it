@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704571"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizzare l'utilizzo della CPU in un'app universale di Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice. Per concentrare l'attenzione su scenari specifici, lo strumento Utilizzo CPU può essere eseguito insieme allo strumento [Velocità di risposta interfaccia utente XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) o allo strumento [Utilizzo di energia](../profiling/analyze-energy-use-in-store-apps.md) oppure insieme a entrambi gli strumenti in un'unica sessione di diagnostica.  
+ Quando è necessario analizzare i problemi relativi alle prestazioni dell'app, è consigliabile partire dall'analisi dell'utilizzo della CPU. Lo strumento **Utilizzo CPU** indica i punti in cui la CPU impiega più tempo per l'esecuzione di codice. Per concentrare l'attenzione su scenari specifici, lo strumento Utilizzo CPU può essere eseguito insieme allo strumento [Velocità di risposta interfaccia utente XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480) o allo strumento [Utilizzo di energia](../profiling/analyze-energy-use-in-store-apps.md) oppure insieme a entrambi gli strumenti in un'unica sessione di diagnostica.  
   
 > [!NOTE]
 > Lo strumento **Utilizzo CPU** non può essere usato con le app Silverlight per Windows Phone 8.1.  

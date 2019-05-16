@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435113"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696996"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizzare il consumo di energia nelle app dello Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ Il profiler **Utilizzo di energia** consente di analizzare il consumo di energia
   
  **Aggiungere contrassegni a codice C#, Visual Basic, C++**  
   
- Per aggiungere un contrassegno utente al codice C#, Visual Basic e C++, creare innanzitutto un oggetto [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . In secondo luogo, inserire chiamate ai metodi [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) in corrispondenza dei punti nel codice che vuole contrassegnare. Usare [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) nelle chiamate.  
+ Per aggiungere un contrassegno utente al codice C#, Visual Basic e C++, creare innanzitutto un oggetto [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . In secondo luogo, inserire chiamate ai metodi [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) in corrispondenza dei punti nel codice che vuole contrassegnare. Usare [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) nelle chiamate.  
   
  Al momento dell'esecuzione del metodo, verrà aggiunto un contrassegno utente ai dati di profilatura con un messaggio.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel implementa l'interfaccia [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proiettata come [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) in C# e VB). Per evitare un consumo eccessivo di risorse del sistema operativo, chiamare [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in C# e VB) quando non si usa più un canale di registrazione.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa l'interfaccia [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proiettata come [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) in C# e VB). Per evitare un consumo eccessivo di risorse del sistema operativo, chiamare [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() in C# e VB) quando non si usa più un canale di registrazione.  
 >   - Ogni canale di registrazione aperto deve avere un nome univoco. Il tentativo di creare un nuovo canale di registrazione con lo stesso nome di uno non eliminato genera un'eccezione.  
   
  Per esempi, vedere [Esempio di LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) in Windows SDK.  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> Altre risorse  
   
-- Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e per [HTML e JavaScript](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.  
+- Nelle sezioni relative allo **stato della connessione e la gestione dei costi** per [C#/VB/C++ e XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e per [HTML e JavaScript](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) nel Centro sviluppatori Windows vengono descritte le API di Windows che forniscono informazioni sulla connettività di rete utilizzabili nell'applicazione per ridurre il costo del traffico di rete.  
   
      Il simulatore di Visual Studio per le app di Windows Store consente di simulare le proprietà di connessione dati delle API delle informazioni di rete. Vedere [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

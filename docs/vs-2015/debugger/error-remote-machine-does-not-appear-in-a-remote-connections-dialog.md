@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4136a320f53f37377b9f6ffbff5a48a8be746276
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a97211c1fa86123a2a7a65f2ff86b0cecac957dc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535593"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697318"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Errore: Il computer remoto non viene visualizzato in una finestra di dialogo Connessioni remote
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Se il computer remoto non viene visualizzato nella finestra di dialogo Connessio
 - Il software antivirus blocca le comunicazioni tra Visual Studio e il computer remoto. Per risolvere questo problema, configurare il software antivirus per consentire a Visual Studio e al debugger remoto (msvsmon) di comunicare.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Impostare Remote Tools sul dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Impostare Remote Tools sul dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

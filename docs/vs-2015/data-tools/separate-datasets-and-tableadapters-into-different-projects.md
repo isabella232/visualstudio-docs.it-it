@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bfd6cc62fc93ca3a535fb60c4ea5e1323c720558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690241"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separare set di dati e TableAdapter in progetti diversi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e classi di set di dati possono essere generate in progetti separati. Ciò consente di separare i livelli applicazione rapidamente e generare applicazioni dati a più livelli.  
+I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e classi di set di dati possono essere generate in progetti separati. Ciò consente di separare i livelli applicazione rapidamente e generare applicazioni dati a più livelli.  
   
  La procedura seguente descrive il processo di utilizzo di progettazione set di dati per generare codice del set di dati in un progetto separato dal progetto che contiene il generato `TableAdapter` codice.  
   
@@ -70,4 +70,4 @@ I dataset tipizzati sono stati migliorati in modo che il [TableAdapter](http://m
  [Procedura dettagliata: Creazione di un'applicazione dati a più livelli](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [Aggiornamento gerarchico](../data-tools/hierarchical-update.md)   
  [Accesso ai dati in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
+ [ADO.NET](https://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)

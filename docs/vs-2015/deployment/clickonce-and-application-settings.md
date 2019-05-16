@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07be583099627bbff4f67a4c040f4c44ddbc6224
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c8e1ffe6d6f32cfad137d5890715a5a0032a29d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58963863"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696680"
 ---
 # <a name="clickonce-and-application-settings"></a>Impostazioni dell'applicazione e ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare e gestire applicazioni personalizzate e le preferenze dell'utente nel client. Il documento seguente viene descritto il funzionamento dei file di impostazioni in un'applicazione ClickOnce e modo in cui ClickOnce viene eseguita la migrazione delle impostazioni quando l'utente viene aggiornato alla versione successiva.  
   
- Le informazioni seguenti si applicano solo ai provider di impostazioni dell'applicazione predefinito, il <xref:System.Configuration.LocalFileSettingsProvider> classe. Se si fornisce un provider personalizzato, tale provider determinerà come archiviare i dati e la modalità di aggiornamento delle impostazioni tra le versioni. Per altre informazioni sui provider di impostazioni dell'applicazione, vedere [Application Settings Architecture](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ Le informazioni seguenti si applicano solo ai provider di impostazioni dell'applicazione predefinito, il <xref:System.Configuration.LocalFileSettingsProvider> classe. Se si fornisce un provider personalizzato, tale provider determinerà come archiviare i dati e la modalità di aggiornamento delle impostazioni tra le versioni. Per altre informazioni sui provider di impostazioni dell'applicazione, vedere [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="application-settings-files"></a>File delle impostazioni delle applicazioni  
  Le impostazioni dell'applicazione vengono utilizzati due file: *app*. exe. config e User. config, dove *app* è il nome dell'applicazione Windows Form. User. config viene creato nel client la prima volta che l'applicazione archivia le impostazioni con ambito di utente. *app*. exe. config, al contrario, sarà presente prima della distribuzione se si definiscono i valori predefiniti per le impostazioni. Visual Studio includerà questo file automaticamente quando si usa la **pubblica** comando. Se si crea l'applicazione ClickOnce mediante Mage.exe o MageUI.exe, è necessario assicurarsi che questo file è incluso con l'applicazione di altri file quando si popola il manifesto dell'applicazione.  
@@ -53,10 +53,10 @@ Le impostazioni dell'applicazione per Windows Form semplifica creare, archiviare
  Se si hanno creato le proprie impostazioni applicazione classe wrapper e si desidera personalizzare la logica di aggiornamento, è possibile eseguire l'override di <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> (metodo).  
   
 ## <a name="clickonce-and-roaming-settings"></a>Impostazioni di Roaming e ClickOnce  
- ClickOnce non funziona con le impostazioni di roaming, che consente al file di impostazioni seguire l'utente tra più computer in una rete. Se è necessario che le impostazioni di roaming, è necessario implementare un provider di impostazioni dell'applicazione che archivia le impostazioni di rete o sviluppare le proprie classi di impostazioni personalizzate per archiviare le impostazioni in un computer remoto. Per altre informazioni sul provider di impostazioni, vedere [Application Settings Architecture](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ ClickOnce non funziona con le impostazioni di roaming, che consente al file di impostazioni seguire l'utente tra più computer in una rete. Se è necessario che le impostazioni di roaming, è necessario implementare un provider di impostazioni dell'applicazione che archivia le impostazioni di rete o sviluppare le proprie classi di impostazioni personalizzate per archiviare le impostazioni in un computer remoto. Per altre informazioni sul provider di impostazioni, vedere [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Sicurezza e distribuzione di ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Cenni preliminari sulle impostazioni delle applicazioni](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
+ [Cenni preliminari sulle impostazioni delle applicazioni](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
  [Panoramica della Cache di ClickOnce](../deployment/clickonce-cache-overview.md)   
  [Accesso a dati locali e remoti in applicazioni ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -12,12 +12,12 @@ ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b4aafb41d518b53072022d40a860c6a3ad733ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2656d3f5a3313a4538e3e0e6454dd671da635904
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966413"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686979"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugContainerField : IDebugField
  Un provider di simboli implementa questa interfaccia nello stesso oggetto che implementa il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia. Questa interfaccia è anche la classe base per tutte le interfacce che rappresentano i contenitori.  
   
 ## <a name="notes-for-callers"></a>Note per i chiamanti  
- Molti metodi sul numero di interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, interfacce più specializzate può ottenuto da questa interfaccia mediante [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
+ Molti metodi sul numero di interfacce restituiscono questa interfaccia. Poiché si tratta di una classe di base per tutti i contenitori, interfacce più specializzate può ottenuto da questa interfaccia mediante [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Tali interfacce includono [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md), [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md), [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md), e [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md).  
   
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, questa interfaccia implementa il metodo seguente:  

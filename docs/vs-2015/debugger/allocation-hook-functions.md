@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702518"
 ---
 # <a name="allocation-hook-functions"></a>Funzioni hook di allocazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Una funzione di hook di allocazione, installata tramite [CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. Questo tipo di funzione è utilizzabile per numerosi scopi differenti. È possibile usare le funzioni hook per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio, oppure per esaminare schemi di allocazione o per registrare informazioni di allocazione da analizzare in seguito.  
+Una funzione di hook di allocazione, installata tramite [CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), viene chiamato ogni volta che viene allocata, riallocata o liberata memoria. Questo tipo di funzione è utilizzabile per numerosi scopi differenti. È possibile usare le funzioni hook per verificare come un'applicazione gestisce situazioni di memoria insufficiente, ad esempio, oppure per esaminare schemi di allocazione o per registrare informazioni di allocazione da analizzare in seguito.  
   
 > [!NOTE]
 > Tenere presente le restrizioni sull'utilizzo delle funzioni della libreria di runtime del linguaggio C in una funzione hook di allocazione descritte in [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Il puntatore passato a [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) è del tipo **_CRT_ALLOC_HOOK**, come definito in CRTDBG.H:  
+ Il puntatore passato a [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) è del tipo **_CRT_ALLOC_HOOK**, come definito in CRTDBG.H:  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Vedere anche  
  [Hook di allocazione e allocazioni di memoria di runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Scrittura di funzioni hook di debug](../debugger/debug-hook-function-writing.md)   
- [Esempio di crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [Esempio di crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

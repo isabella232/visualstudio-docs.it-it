@@ -12,12 +12,12 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2db026367e43c1092cf9744817449ce51556a4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f4d6c0e163b751f1873fdb941e85c273dcc4fde5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436319"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691198"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Esposizione di tipi nelle finestre di progettazione visiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "63436319"
      Quando viene compilato un file PE temporaneo, l'unico file di origine fornito al compilatore è l'output dello strumento personalizzato. Pertanto, uno strumento personalizzato che usa un file PE temporaneo necessario generare i file di output che possono essere compilati indipendentemente da altri file nel progetto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Introduzione all'oggetto BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+ [Introduzione all'oggetto BuildManager](https://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [Implementazione di generatori di File singoli](../../extensibility/internals/implementing-single-file-generators.md)   
  [Stabilire il Namespace predefinito di un progetto](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Registrazione di generatori di file singoli](../../extensibility/internals/registering-single-file-generators.md)

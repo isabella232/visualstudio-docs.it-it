@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090888"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684905"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Se si apporta una di queste modifiche e si tenta quindi di applicare le modifich
 ## <a name="BKMK_Unsupported_scenarios"></a> Scenari non supportati  
  Modifica e continuazione per C/C++ non è disponibile nei seguenti scenari di debug:  
   
-- Debug di applicazioni native compilate con [/Zo (Ottimizzare il debug)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Debug di applicazioni native compilate con [/Zo (Ottimizzare il debug)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - Nelle versioni di Visual Studio precedenti a Visual Studio 2015 Update 1, debug di app di Windows Store o componenti. A partire da Visual Studio 2015 Update 1, è possibile usare Modifica e continuazione nelle app C++ di Windows Store e nelle app DirectX perché ora è supportata l'opzione del compilatore `/ZI` con l'opzione  `/bigobj` . È anche possibile usare Modifica e continuazione con file binari compilati con l'opzione `/FASTLINK` .  
   
@@ -141,7 +141,7 @@ Se si apporta una di queste modifiche e si tenta quindi di applicare le modifich
 3. Deselezionare la casella di controllo **Consenti precompilazione** .  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Limitazioni degli attributi IDL  
- Modifica e Continua non consentono di rigenerare file di definizione di interfaccia (IDL). Le modifiche agli attributi IDL non verranno pertanto riflesse mentre si esegue il debug. Per visualizzare il risultato delle modifiche agli attributi IDL è necessario interrompere il debug e ricompilare l'app. Se gli attributi IDL sono stati modificati, non verrà generato alcun errore o avviso. Per altre informazioni, vedere [Attributi IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Modifica e Continua non consentono di rigenerare file di definizione di interfaccia (IDL). Le modifiche agli attributi IDL non verranno pertanto riflesse mentre si esegue il debug. Per visualizzare il risultato delle modifiche agli attributi IDL è necessario interrompere il debug e ricompilare l'app. Se gli attributi IDL sono stati modificati, non verrà generato alcun errore o avviso. Per altre informazioni, vedere [Attributi IDL](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

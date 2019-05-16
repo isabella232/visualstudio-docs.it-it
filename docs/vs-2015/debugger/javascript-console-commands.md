@@ -18,19 +18,19 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5c4223699c720750514aaf2b9abc18b34ae4269
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690589"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle app di Windows Store, alle app di Windows Phone Store e alle app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ È possibile usare i comandi per inviare messaggi ed eseguire altre attività nella finestra della console JavaScript di Visual Studio. Per esempi che illustrano come utilizzare tale finestra, vedere [Guida introduttiva: Eseguire il debug JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Le informazioni contenute in questo argomento si applicano alle app di Windows Store, alle app di Windows Phone Store e alle app create con Visual Studio Tools per Apache Cordova. Per informazioni sui comandi della console supportati nelle app di Cordova, vedere [Debug Your App](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Per informazioni sull'uso della console negli strumenti F12 di Internet Explorer, vedere [questo argomento](https://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Se la finestra della console JavaScript è chiusa, è possibile aprirla durante il debug in Visual Studio scegliendo **Debug** > **Finestre** > **Console JavaScript**.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441303"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701824"
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  Per le applicazioni Web Browser WPF, l'opzione **Applicazione disponibile anche offline** è disabilitata, perché tali applicazioni sono disponibili solo online.  
   
  **File applicazione**  
- Apre [Application Files Dialog Box](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)che consente di specificare come e dove vengono installati i singoli file.  
+ Apre [Application Files Dialog Box](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8)che consente di specificare come e dove vengono installati i singoli file.  
   
  **Prerequisiti**  
  Apre il [Prerequisites Dialog Box](../../ide/reference/prerequisites-dialog-box.md)che consente di specificare i componenti necessari, ad esempio .NET Framework, da installare insieme all'applicazione.  
   
  **Aggiornamenti**  
- Apre [Application Updates Dialog Box](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)che consente di specificare il comportamento di aggiornamento per l'applicazione. Non è disponibile quando è selezionata l'opzione **Applicazione disponibile solo online** .  
+ Apre [Application Updates Dialog Box](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)che consente di specificare il comportamento di aggiornamento per l'applicazione. Non è disponibile quando è selezionata l'opzione **Applicazione disponibile solo online** .  
   
  **Opzioni**  
- Apre [Publish Options Dialog Box](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)che consente di specificare altre opzioni di pubblicazione avanzate.  
+ Apre [Publish Options Dialog Box](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)che consente di specificare altre opzioni di pubblicazione avanzate.  
   
  **Versione di pubblicazione**  
  Imposta il numero della versione di pubblicazione per l'applicazione. Quando viene modificato il numero di versione, l'applicazione viene pubblicata come aggiornamento. Ogni parte della versione di pubblicazione (**Principale**, **Secondaria**, **Compilazione**, **Revisione**) può avere un valore massimo di 65355 (<xref:System.UInt16.MaxValue>), il massimo consentito da <xref:System.Version>.  
@@ -70,7 +70,7 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
  Facoltativo. Quando questa opzione è selezionata (impostazione predefinita), la parte **Revisione** del numero di versione viene incrementata di un'unità ogni volta che viene pubblicata l'applicazione. In questo modo l'applicazione viene pubblicata come aggiornamento.  
   
  **Pubblicazione guidata**  
- Apre [Publish Wizard](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Il completamento della Pubblicazione guidata ha lo stesso effetto dell'esecuzione del comando **Pubblica** del menu **Compila** .  
+ Apre [Publish Wizard](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Il completamento della Pubblicazione guidata ha lo stesso effetto dell'esecuzione del comando **Pubblica** del menu **Compila** .  
   
  **Pubblica**  
  Pubblica l'applicazione usando le impostazioni correnti. Equivale al pulsante **Fine** della **Pubblicazione guidata**.  

@@ -35,14 +35,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4984355c12a92529a943fe6778740ac2d7f522f8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703651"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Procedura: Set di configurazioni di Debug e rilascio
+# <a name="how-to-set-debug-and-release-configurations"></a>Procedura: Impostare configurazioni di debug e di rilascio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Progetti di Visual Studio installata versione separata e configurazioni per il programma di debug. Come indicato dai nomi, la versione di debug viene compilata per eseguire il debug, mentre quella di rilascio viene compilata per la distribuzione finale.  
@@ -71,4 +71,4 @@ Progetti di Visual Studio installata versione separata e configurazioni per il p
  [Impostazioni di progetto per le configurazioni di debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Impostazioni di progetto per una configurazione di debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Procedura: Creare e modificare le configurazioni](../ide/how-to-create-and-edit-configurations.md)   
- [Eseguire il debug e il rilascio delle configurazione del progetto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)
+ [Eseguire il debug e il rilascio delle configurazione del progetto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

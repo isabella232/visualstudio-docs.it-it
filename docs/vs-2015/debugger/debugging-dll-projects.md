@@ -19,12 +19,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 270f25640e5804944440192ee787f92f1597c58c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4a4533c304f84d9dc59ec6b05328528870e49655
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691391"
 ---
 # <a name="debugging-dll-projects"></a>Debug di progetti di DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Di seguito sono elencati i modelli per la creazione di DLL:
   
 - (C++, C#e Visual Basic): Libreria di controllo Windows Form  
   
-   Il debug di una libreria di controlli Windows è simile al debug di un progetto Libreria di classi. Nella maggior parte dei casi si effettua una chiamata al controllo Windows da un altro progetto. Quando si esegue il debug del progetto chiamante, è possibile eseguire l'istruzione del codice del controllo Windows, impostare i punti di interruzione ed eseguire altre operazioni di debug. Per altre informazioni, vedere [Controlli Windows Form](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Il debug di una libreria di controlli Windows è simile al debug di un progetto Libreria di classi. Nella maggior parte dei casi si effettua una chiamata al controllo Windows da un altro progetto. Quando si esegue il debug del progetto chiamante, è possibile eseguire l'istruzione del codice del controllo Windows, impostare i punti di interruzione ed eseguire altre operazioni di debug. Per altre informazioni, vedere [Controlli Windows Form](https://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
 - (C# e Visual Basic): Libreria di controlli Web  
   
@@ -76,7 +76,7 @@ Di seguito sono elencati i modelli per la creazione di DLL:
 ## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  Indipendentemente dalla modalità di avvio del debug, accertarsi di compilare innanzitutto la versione di debug della DLL e che tale versione si trovi nella posizione prevista dall'applicazione. Anche se ciò potrebbe sembrare ovvio, è importante non omettere questo passaggio in quanto l'applicazione potrebbe rilevare una versione differente della DLL e caricarla. A questo punto, il programma continuerebbe l'esecuzione e non si riuscirebbe a comprendere il motivo per il quale il punto di interruzione non è stato raggiunto. Durante il debug, è possibile controllare le DLL caricate dal programma visualizzando la finestra **Moduli** del debugger. In **questa** finestra sono elencate le DLL o gli EXE caricati nel processo sottoposto a debug. Per altre informazioni, vedere [Procedura: Use the Modules Window](../debugger/how-to-use-the-modules-window.md).  
   
- Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .  
+ Affinché il debugger possa connettersi a codice scritto in C++, è necessario che venga generato l'elemento `DebuggableAttribute`. È possibile aggiungere automaticamente questo elemento al codice mediante il collegamento all'opzione del linker [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .  
   
 ## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
  L'applicazione che chiama la DLL può essere scritta in codice gestito o nativo. Se la DLL gestita viene chiamata da codice nativo e si desidera eseguire il debug di entrambi, attivare sia il debugger del codice gestito sia quello del codice nativo. È possibile effettuare questa selezione nella  **\<progetto > pagine delle proprietà** finestra o nella finestra di dialogo. L'esecuzione di questa operazione varia a seconda che il debug venga avviato dal progetto della DLL o da quello dell'applicazione chiamante. Per altre informazioni, vedere [Procedura: Eseguire il debug in modalità mista](../debugger/how-to-debug-in-mixed-mode.md).  
@@ -85,7 +85,7 @@ Di seguito sono elencati i modelli per la creazione di DLL:
  Quando si crea un progetto di applicazione console mediante il modello di progetto, in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vengono definite automaticamente le impostazioni necessarie per le configurazioni di debug e di rilascio. Se necessario, è possibile modificare tali impostazioni. Per altre informazioni, vedere [impostazioni di progetto per una configurazione di Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [impostazioni di progetto per C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md), [le impostazioni di progetto per un Debug di Visual Basic Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), e [come: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Modalità di Debug della DLL  
- In ciascun progetto descritto in questa sezione viene creata una DLL. Le DLL non possono essere eseguite direttamente, ma devono essere chiamate da un'applicazione, in genere un file EXE. Per altre informazioni, vedere [Creating and Managing Visual C++ Projects](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). L'applicazione chiamante può soddisfare uno dei criteri seguenti:  
+ In ciascun progetto descritto in questa sezione viene creata una DLL. Le DLL non possono essere eseguite direttamente, ma devono essere chiamate da un'applicazione, in genere un file EXE. Per altre informazioni, vedere [Creating and Managing Visual C++ Projects](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). L'applicazione chiamante può soddisfare uno dei criteri seguenti:  
   
 - Essere un'applicazione incorporata in un altro progetto della stessa soluzione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] contenente la libreria di classi.  
   
@@ -98,20 +98,20 @@ Di seguito sono elencati i modelli per la creazione di DLL:
 ### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debug dell'applicazione chiamante  
  Per eseguire il debug di una DLL, iniziare con il debug dell'applicazione chiamante, che in genere è un file EXE o un'applicazione Web. Questo debug può essere eseguito in vari modi.  
   
-- Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [Procedura: Avviare l'esecuzione](http://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Se è disponibile un progetto per l'applicazione chiamante, è possibile aprirlo e avviare l'esecuzione dal menu **Debug** . Per altre informazioni, vedere [Procedura: Avviare l'esecuzione](https://msdn.microsoft.com/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
-- Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [Procedura: Connettersi a un processo in esecuzione](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Se l'applicazione chiamante è un programma già distribuito in un computer di test o di produzione ed è già in esecuzione, è possibile stabilire una connessione. Utilizzare questa modalità se la DLL è un controllo ospitato in Internet Explorer oppure un controllo in una pagina Web. Per altre informazioni, vedere [Procedura: Connettersi a un processo in esecuzione](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
 - È possibile eseguire il debug dal progetto di DLL. Per altre informazioni, vedere [Procedura: Eseguire il debug da un progetto di DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
 - È possibile eseguire il debug dalla finestra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. In tal caso, la finestra **Controllo immediato** svolgerà il ruolo dell'applicazione.  
   
-  Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella libreria di classi. Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Code Stepping Overview](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella libreria di classi. Per altre informazioni, vedere [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Code Stepping Overview](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ### <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controlli in una pagina Web  
  Per eseguire il debug di un controllo in una pagina Web, creare una pagina di [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] contenente tale controllo, se non esiste ancora. È quindi possibile impostare punti di interruzione sia nel codice della pagina Web che in quello del controllo e richiamare la pagina Web da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella DLL. Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Breakpoints and Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+ Prima di iniziare il debug dell'applicazione chiamante, è possibile impostare un punto di interruzione nella DLL. Una volta raggiunto il punto di interruzione, è possibile eseguire il codice un'istruzione alla volta, osservandone l'esecuzione in ciascuna riga fino a isolare il problema. Per altre informazioni, vedere [Breakpoints and Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 ### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> The Immediate Window  
  È possibile valutare le funzioni o i metodi nella DLL senza disporre di un'applicazione chiamante, ma eseguendo il debug in fase di progettazione e utilizzando la finestra **Controllo immediato** . Per eseguire questo tipo di debug, effettuare le seguenti operazioni dopo avere aperto il progetto di DLL:  
