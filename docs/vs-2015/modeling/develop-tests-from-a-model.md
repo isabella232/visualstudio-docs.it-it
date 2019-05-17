@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692239"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60042054"
   
  Il test di sottosistema applica gli stessi principi ai componenti principali di un sistema. Ogni componente viene testato separatamente dagli altri componenti. l test di sottosistema sono incentrati sul comportamento visibile nelle interfacce utente o nell'API del componente.  
   
- Per altre informazioni su come eseguire i test, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Per altre informazioni su come eseguire i test, vedere [test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivazione dei test di sistema da un modello di requisiti  
  È possibile creare e gestire una relazione tra i test di sistema e un modello di requisiti. Per stabilire questa relazione, si scrivono test che corrispondono agli elementi principali del modello di requisiti. Visual Studio facilita il mantenimento di tale relazione permettendo di creare collegamenti tra i test e le parti del modello. Per altre informazioni sui modelli di requisiti, vedere [modellare i requisiti utente](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ ms.locfileid: "60042054"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Per collegare i test a un caso di utilizzo  
   
-1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Collegare l'elemento di lavoro requisito a uno o più casi di utilizzo del modello.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Molte delle funzioni di accesso e di aggiornamento saranno già disponibili tramite la normale API dell'applicazione. È possibile però che sia necessario scriverne alcune aggiuntive per abilitare i test. Queste funzioni di accesso e di aggiornamento aggiuntive sono talvolta note come "strumentazione del test". Poiché dipendono dalla progettazione interna del sistema, è responsabilità degli sviluppatori del sistema fornirle, mentre i tester scrivono il codice dei test in relazione al modello di requisiti.  
   
- Quando si scrivono i test automatizzati, è possibile usare test generici per eseguire il wrapping delle funzioni di accesso e di aggiornamento. Per altre informazioni, vedere [creazione di un Test automatizzato che avvia un eseguibile usando test generici](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Quando si scrivono i test automatizzati, è possibile usare test generici per eseguire il wrapping delle funzioni di accesso e di aggiornamento. Per altre informazioni, vedere [creazione di un Test automatizzato che avvia un eseguibile usando test generici](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Test per le regole di business  
  Alcuni requisiti non sono direttamente correlati a un caso di utilizzo. Ad esempio, l'azienda DinnerNow consente ai clienti di scegliere da molti Menu, ma richiede che in ogni Ordine tutti gli Elementi scelti appartengano a un solo Menu. È possibile esprimere questa regola di business come invariante per le associazioni tra Ordini, Menu ed Elementi del modello di classe requisiti.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Per collegare i test a una relazione o a un elemento del modello  
   
-1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. In [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] creare un requisito e usarlo come base per un gruppo di test. Per informazioni su come eseguire questa operazione, vedere [test dell'applicazione](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     Il requisito creato è un elemento di lavoro in [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Può essere un elemento di lavoro Storia utente, Requisito o Caso di utilizzo, a seconda del modello di processo usato dal progetto con [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Per altre informazioni, vedere [tenere traccia del lavoro tramite Visual Studio Team Services o Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Collegare l'elemento di lavoro requisito a uno o più elementi del modello.  
   
