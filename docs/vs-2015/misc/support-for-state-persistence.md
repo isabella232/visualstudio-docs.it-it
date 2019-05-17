@@ -40,7 +40,7 @@ ms.locfileid: "62434319"
  Restituisce il percorso della directory usata come repository comune dei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dati per l'utente roaming corrente, ad esempio, C:\Documents and Settings\\*YourAccountName*\Application VisualStudio\8.0Exp.  
   
  <xref:Microsoft.VisualStudio.Shell.Package.UserLocalDataPath%2A>  
- Restituisce il percorso della directory usata come repository comune dei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dati corrente non connessi a utente, ad esempio, C:\Documents and Settings \\\*YourAccountName*Settings\Application Data\Microsoft\VisualStudio\8.0Exp.  
+ Restituisce il percorso della directory usata come repository comune dei [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i dati corrente non connessi a utente, ad esempio, C:\Documents and Settings\\*YourAccountName*\Settings\Application Data\Microsoft\VisualStudio\8.0Exp.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Stato di un pacchetto VSPackage](../misc/vspackage-state.md)
