@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: I campi eliminabili devono essere eliminati'
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806680"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805003"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: I campi eliminabili devono essere eliminati
 
@@ -36,10 +36,21 @@ Un tipo che implementa <xref:System.IDisposable?displayProperty=fullName> dichia
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Un tipo è responsabile per l'eliminazione di tutte le relative risorse non gestite. Regola CA2213 controlla se un tipo disposable (vale a dire una che implementa <xref:System.IDisposable>) `T` dichiara un campo `F` che rappresenta un'istanza di un tipo disposable `FT`. Per ogni campo `F` che ha assegnato a un oggetto creato localmente all'interno di metodi o gli inizializzatori di tipo che lo contiene `T`, la regola tenta di individuare una chiamata a `FT.Dispose`. La regola cerca i metodi chiamati dalla `T.Dispose` e a un livello inferiore (vale a dire, i metodi chiamati dai metodi chiamati `FT.Dispose`).
+Un tipo è responsabile per l'eliminazione di tutte le relative risorse non gestite. Regola CA2213 controlla se un tipo disposable (vale a dire una che implementa <xref:System.IDisposable>) `T` dichiara un campo `F` che rappresenta un'istanza di un tipo disposable `FT`. Per ogni campo `F` che ha assegnato a un oggetto creato localmente all'interno di metodi o gli inizializzatori di tipo che lo contiene `T`, la regola tenta di individuare una chiamata a `FT.Dispose`. La regola cerca i metodi chiamati dalla `T.Dispose` e a un livello inferiore (vale a dire, i metodi chiamati dai metodi chiamati `T.Dispose`).
 
 > [!NOTE]
-> CA2213 regola viene attivata solo per i campi che vengono assegnati a un oggetto eliminabile creato localmente all'interno di inizializzatori e i metodi del tipo contenitore. Se l'oggetto viene creato o assegnato di fuori di tipo `T`, la regola non viene generata. In questo modo si riduce il rumore nei casi in cui il tipo che lo contiene non è proprietario di responsabilità per l'eliminazione dell'oggetto.
+> Diverso dal [casi speciali](#special-cases), regola CA2213 viene attivato solo per i campi che vengono assegnati a un oggetto eliminabile creato localmente all'interno di inizializzatori e i metodi del tipo contenitore. Se l'oggetto viene creato o assegnato di fuori di tipo `T`, la regola non viene generata. In questo modo si riduce il rumore nei casi in cui il tipo che lo contiene non è proprietario di responsabilità per l'eliminazione dell'oggetto.
+
+### <a name="special-cases"></a>Casi speciali
+
+Anche se l'oggetto che vengano loro assegnate non viene creato in locale, CA2213 regola possono inoltre attivare per i campi dei tipi seguenti:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Passaggio di un oggetto di uno di questi tipi per un costruttore e quindi assegnarlo a un campo indica un *dispose trasferimento della proprietà* per il tipo costruito. Vale a dire, il tipo costruito ora è responsabile dell'eliminazione dell'oggetto. Se non viene eliminato l'oggetto, si verifica una violazione di CA2213.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -47,7 +58,10 @@ Per correggere una violazione di questa regola, chiamare <xref:System.IDisposabl
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-È possibile eliminare un avviso da questa regola se non si è responsabili per rilasciare le risorse contenute in un campo o se la chiamata a <xref:System.IDisposable.Dispose%2A> si verifica a un livello più profondo chiama rispetto ai controlli regola.
+È possibile eliminare un avviso da questa regola se:
+
+- Il tipo di flag non è responsabile per rilasciare le risorse contenute in un campo (vale a dire, il tipo non dispone *eliminare la proprietà*)
+- La chiamata a <xref:System.IDisposable.Dispose%2A> si verifica a un livello più profondo chiama rispetto ai controlli regola
 
 ## <a name="example"></a>Esempio
 

@@ -174,7 +174,7 @@ ms.locfileid: "62981676"
 
 1. Selezionare una cella all'interno dell'oggetto elenco.
 
-    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (* *\\* * *) nella prima cella della nuova riga.
+    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (**\\***) nella prima cella della nuova riga.
 
 2. Aggiungere le informazioni seguenti nella riga vuota.
 
