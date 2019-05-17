@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Set di regole per pacchetti dell'analizzatore
           href: analyzer-rule-sets.md
-        - name: Set di regole per codice gestito
-          items:
-            - name: Set di regole per codice gestito
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Configurare l'analisi codice per un'app Web ASP.NET
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Configurare i set di regole per l'analisi statica del codice
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: Configurare l'analisi codice per un'app Web ASP.NET
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Set di regole per codice C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Creare un set di regole personalizzato
