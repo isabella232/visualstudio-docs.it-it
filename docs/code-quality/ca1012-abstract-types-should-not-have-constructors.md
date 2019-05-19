@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5114f6015d055c03d54d49deee1197b7e3d9c9da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4023c993a153a64070bfb5e975a6d0f326b65d3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779465"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842455"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012: I tipi astratti non devono includere costruttori
 
@@ -54,7 +54,7 @@ Non escludere un avviso da questa regola. Tipo astratto è un costruttore pubbli
 
 Se si esegue la regola dai [analizzatori FxCop](install-fxcop-analyzers.md) (e non tramite analisi statica del codice), è possibile configurare quali parti della codebase per l'esecuzione di questa regola, in base i criteri di accesso. Ad esempio, per specificare che la regola deve essere eseguito solo per la superficie dell'API non pubblici, aggiungere la coppia chiave-valore seguente a un file con estensione editorconfig nel progetto:
 
-```
+```ini
 dotnet_code_quality.ca1012.api_surface = private, internal
 ```
 

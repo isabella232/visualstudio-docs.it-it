@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 276ae20887eca4f023bd8934ef3c7e416fbd995c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981430"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65846874"
 ---
   **Si applica a:** Le informazioni contenute in questo argomento si applicano a VSTO aggiungere\-nei progetti di Excel. Per altre informazioni, vedere [funzionalità disponibili in base al tipo di progetto e applicazioni di Office](../../vsto/features-available-by-office-application-and-project-type.md).
