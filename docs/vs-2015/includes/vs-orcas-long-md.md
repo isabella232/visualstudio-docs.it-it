@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: e53b9558ea5c5b88238c7f2490685990069da4ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "65681053"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845501"
 ---
 Visual Studio 2008

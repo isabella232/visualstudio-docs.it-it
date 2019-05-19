@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c28153fa513c4f4db5b3a7833d279674f66734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10b9091df08368674511b770158ea47c247aade7
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541298"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841367"
 ---
 # <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Esaminare il codice per verificare la presenza di vulnerabilità di tipo LDAP injection
 
@@ -40,7 +40,7 @@ Questa regola cerca di trovare input dalle richieste HTTP raggiungere un'istruzi
 > Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che viene eseguita un'istruzione LDAP, questa regola non genera un avviso.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in `.editorconfig` file.
+> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -68,11 +68,11 @@ public partial class WebForm : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string userName = Request.Params["user"];
-        string filter = "(uid=" + userName + ")";  // searching for the user entry 
+        string filter = "(uid=" + userName + ")";  // searching for the user entry
 
         // In this example, if we send the * character in the user parameter which will
-        // result in the filter variable in the code to be initialized with (uid=*). 
-        // The resulting LDAP statement will make the server return any object that 
+        // result in the filter variable in the code to be initialized with (uid=*).
+        // The resulting LDAP statement will make the server return any object that
         // contains a uid attribute.
         DirectorySearcher searcher = new DirectorySearcher(filter);
         SearchResultCollection results = searcher.FindAll();
@@ -98,8 +98,8 @@ Partial Public Class WebForm
         Dim filter As String = ""(uid="" + userName + "")""    ' searching for the user entry
 
         ' In this example, if we send the * character in the user parameter which will
-        ' result in the filter variable in the code to be initialized with (uid=*). 
-        ' The resulting LDAP statement will make the server return any object that 
+        ' result in the filter variable in the code to be initialized with (uid=*).
+        ' The resulting LDAP statement will make the server return any object that
         ' contains a uid attribute.
         Dim searcher As DirectorySearcher = new DirectorySearcher(filter)
         Dim results As SearchResultCollection = searcher.FindAll()

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c20d3efb9ea84a7e8bb22288303313ef44b2b795
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806563"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841396"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003: Esaminare il codice per verificare la presenza di vulnerabilità di tipo file path injection
 
@@ -40,7 +40,7 @@ Questa regola cerca di trovare input dalle richieste HTTP raggiungere un percors
 > Questa regola non è possibile tenere traccia dei dati tra gli assembly. Ad esempio, se un unico assembly legge l'input della richiesta HTTP e quindi lo si passa a un altro assembly che scrive in un file, questa regola non genera un avviso.
 
 > [!NOTE]
-> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in `.editorconfig` file.
+> È previsto un limite configurabile per il livello di profondità questa regola analizza il flusso di dati durante le chiamate di metodo. Visualizzare [configurazione dell'analizzatore](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) per informazioni su come configurare il limite in un file con estensione EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
@@ -77,7 +77,7 @@ public partial class WebForm : System.Web.UI.Page
         //   wwwroot\secret\allsecrets.txt
         // There is nothing wrong if the user inputs:
         //   user1.txt
-        // However, if the user input is: 
+        // However, if the user input is:
         //   ..\secret\allsecrets.txt
         // Then an attacker can now see all the secrets.
 
@@ -85,8 +85,8 @@ public partial class WebForm : System.Web.UI.Page
         using (File.Open(userInput, FileMode.Open))
         {
             // Read a file with the name supplied by user
-            // Input through request's query string and display 
-            // The content to the webpage. 
+            // Input through request's query string and display
+            // The content to the webpage.
         }
     }
 }
@@ -96,7 +96,7 @@ public partial class WebForm : System.Web.UI.Page
 Imports System
 Imports System.IO
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
@@ -107,15 +107,15 @@ Partial Public Class WebForm
         '   wwwroot\secret\allsecrets.txt
         ' There is nothing wrong if the user inputs:
         '   user1.txt
-        ' However, if the user input is: 
+        ' However, if the user input is:
         '   ..\secret\allsecrets.txt
         ' Then an attacker can now see all the secrets.
 
         ' Avoid this:
         Using File.Open(userInput, FileMode.Open)
             ' Read a file with the name supplied by user
-            ' Input through request's query string and display 
-            ' The content to the webpage. 
+            ' Input through request's query string and display
+            ' The content to the webpage.
         End Using
     End Sub
 End Class
