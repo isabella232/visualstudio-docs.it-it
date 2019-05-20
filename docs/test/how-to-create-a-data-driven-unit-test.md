@@ -1,6 +1,6 @@
 ---
 title: Creare uno unit test basato sui dati
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979240"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615441"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 
-Tramite il framework unit test Microsoft per il codice gestito, è possibile impostare un metodo di unit test per recuperare i valori usati nel metodo di test da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
+È possibile usare il framework unit test Microsoft per il codice gestito per impostare un metodo di unit test per recuperare i valori da un'origine dati. Il metodo viene eseguito in successione per ogni riga nell'origine dati, rendendo più semplice testare una un'ampia varietà di input con un singolo metodo.
 
 La creazione di uno unit test basato sui dati prevede i passaggi seguenti:
 
@@ -43,7 +43,7 @@ Come esempio, si supponga di avere:
 
 2. Un progetto in `MyBank` denominato `BankDb`, che gestisce le transazioni per gli account.
 
-3. Una classe denominata `Maths` nel progetto `DbBank`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.
+3. Una classe denominata `Maths` nel progetto `BankDb`, che esegue le funzioni matematiche per garantire che tutte le transazioni siano vantaggiose per la banca.
 
 4. Un progetto di unit test denominato `BankDbTests`, per testare il comportamento del componente `BankDb`.
 
@@ -87,6 +87,9 @@ public TestContext TestContext
 ```
 
 Nel metodo di test si accede ai dati tramite la proprietà dell'indicizzatore `DataRow` di `TestContext`.
+
+> [!NOTE]
+> .NET core non supporta l'attributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se si tenta di accedere ai dati di test in questo modo in un progetto di unit test .NET Core o per la piattaforma UWP, verrà visualizzato un errore simile a **"'TestContext' non contiene una definizione per 'DataRow' e non è stato trovato alcun metodo di estensione accessibile 'DataRow' che accetta un primo argomento di tipo 'TestContext'. Probabilmente manca una direttiva using o un riferimento all'assembly"**.
 
 ## <a name="write-the-test-method"></a>Scrivere il metodo di test
 

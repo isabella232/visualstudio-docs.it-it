@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416509"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686566"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifica di test codificati dell'interfaccia utente con l'editor di test codificato dell'interfaccia utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Modificare le proprietà di un'azione dell'interfaccia utente
   
  Per modificare le proprietà di un'azione dell'interfaccia utente, nel riquadro **Azioni dell'interfaccia utente** espandere il metodo di test contenente un'azione dell'interfaccia utente di cui si vogliono modificare le proprietà, selezionare l'azione dell'interfaccia utente e quindi modificare le proprietà usando la finestra Proprietà.  
   
- Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>**, è possibile sostituire l'URL con `‘ http://Contoso2/default.aspx’`.  
+ Ad esempio, se un server non è disponibile e al Web browser è associata un'azione dell'interfaccia utente **Vai a pagina Web '<http://Contoso1/default.aspx’>**, è possibile sostituire l'URL con `‘http://Contoso2/default.aspx’`.  
   
  ![Proprietà del controllo](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Modificare le proprietà del controllo  
@@ -219,5 +219,5 @@ Modificare le proprietà del controllo
  [Usare l'automazione dell'interfaccia utente per testare il codice](../test/use-ui-automation-to-test-your-code.md)   
  [Creazione di test codificati dell'interfaccia utente](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Creazione di un test codificato dell'interfaccia utente basato sui dati](../test/creating-a-data-driven-coded-ui-test.md)   
- [Generazione di un test codificato dell'interfaccia utente da una registrazione delle azioni esistente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Generazione di un test codificato dell'interfaccia utente da una registrazione delle azioni esistente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Procedura dettagliata: Creazione, modifica e gestione di un test codificato dell'interfaccia utente](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
