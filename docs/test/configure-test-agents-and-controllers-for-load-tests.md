@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783941"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461625"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurare agenti di test e test controller per i test di carico
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Panoramica di agenti di test e test controller per i test di carico
 
 Visual Studio è in grado di generare un carico simulato per l'app usando macchine virtuali o fisiche. Questi computer devono essere configurati in modo da avere un solo controller di test e uno o più agenti di test. È possibile usare il controller di test e gli agenti di test per generare un carico maggiore rispetto a quello che può essere generato da un singolo computer.
 

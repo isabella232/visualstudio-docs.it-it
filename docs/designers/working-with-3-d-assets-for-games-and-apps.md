@@ -10,42 +10,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee4d850250abf0249ce1cccebd3408872b34fd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94dc97766d4f04451910a43146587b27726b87e3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844061"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459088"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Usare risorse 3D per giochi e app
 
-Questo documento descrive gli strumenti di Visual Studio che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.
+Questo articolo descrive gli strumenti di Visual Studio che è possibile usare per creare o modificare modelli 3D, trame e shader per app e giochi DirectX.
 
 ## <a name="directx-app-development-in-visual-studio"></a>Sviluppo di app DirectX in Visual Studio
- In genere un'app DirectX unisce logica di programmazione, API DirectX e i programmi HLSL (High Level Shading Language) ad audio e risorse visive 3D per offrire un'esperienza multimediale dettagliata e interattiva. Visual Studio include strumenti utili per lavorare con immagini, trame, modelli 3D e shader senza uscire dall'IDE per usare un altro strumento. Gli strumenti di Visual Studio sono particolarmente adatti per creare risorse *segnaposto* che è possibile usare per testare codice o creare prototipi prima di commissionare le risorse pronte per la produzione e per analizzare e modificare le risorse pronte per la produzione quando si esegue il debug dell'app.
 
- Di seguito altre informazioni sui tipi di asset che è possibile usare in Visual Studio.
+In genere un'app DirectX unisce logica di programmazione, API DirectX e i programmi HLSL (High Level Shading Language) ad audio e risorse visive 3D per offrire un'esperienza multimediale dettagliata e interattiva. Visual Studio include strumenti utili per lavorare con immagini, trame, modelli 3D e shader senza uscire dall'IDE per usare un altro strumento. Gli strumenti di Visual Studio sono particolarmente adatti per creare risorse *segnaposto* che è possibile usare per testare codice o creare prototipi prima di commissionare le risorse pronte per la produzione e per analizzare e modificare le risorse pronte per la produzione quando si esegue il debug dell'app.
+
+Di seguito altre informazioni sui tipi di asset che è possibile usare in Visual Studio.
 
 ### <a name="images-and-textures"></a>Immagini e trame
- Le immagini e le trame definiscono colore e dettagli visivi in giochi e app. Nella grafica 3D esistono trame di vari formati, tipi e geometrie per supportare diversi usi. Ad esempio, le mappe comuni offrono normali alla superficie per ogni pixel per un'illuminazione più dettagliata dei modelli 3D, mentre le mappe cubo offrono trama in tutte le direzioni per usi quali sky boxing, riflessi e mapping di trama sferica. Le trame offrono mappe MIP per supportare un rendering efficiente a livelli di dettaglio diversi e possono supportare canali e ordinamenti di colore diversi. Le trame possono essere archiviate in vari formati compressi che occupano meno memoria grafica dedicata e consentono alle GPU di accedere alle trame in modo più efficiente.
 
- È possibile usare l'editor immagini di Visual Studio per lavorare con immagini e trame nei numerosi tipi e formati comuni.
+Le immagini e le trame definiscono colore e dettagli visivi in giochi e app. Nella grafica 3D esistono trame di vari formati, tipi e geometrie per supportare diversi usi. Ad esempio, le mappe comuni offrono normali alla superficie per ogni pixel per un'illuminazione più dettagliata dei modelli 3D, mentre le mappe cubo offrono trama in tutte le direzioni per usi quali sky boxing, riflessi e mapping di trama sferica. Le trame offrono mappe MIP per supportare un rendering efficiente a livelli di dettaglio diversi e possono supportare canali e ordinamenti di colore diversi. Le trame possono essere archiviate in vari formati compressi che occupano meno memoria grafica dedicata e consentono alle GPU di accedere alle trame in modo più efficiente.
+
+È possibile usare l'editor immagini di Visual Studio per lavorare con immagini e trame nei numerosi tipi e formati comuni.
 
 ### <a name="3d-models"></a>Modelli 3D
- I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
 
- È possibile usare l'Editor modello di Visual Studio per lavorare con modelli 3D in diversi formati comuni.
+I modelli 3D creano spazio e forma in giochi e app. I modelli codificano la posizione dei punti nello spazio 3D, noti come *vertici*, insieme all'indicizzazione dati, per definire linee o triangoli che rappresentano la forma del modello. A questi vertici è possibile aggiungere dati aggiuntivi, ad esempio informazioni sul colore, vettori normali o attributi specifici dell'applicazione. Ogni modello può anche definire attributi a livello di oggetto, ad esempio quali shader usare per definire l'aspetto dell'area dell'oggetto o quale trama applicare.
+
+È possibile usare l'Editor modello di Visual Studio per lavorare con modelli 3D in diversi formati comuni.
 
 ### <a name="shaders"></a>Shader
- Gli shader sono piccoli programmi specifici di dominio che vengono eseguiti nell'unità di elaborazione grafica (GPU). Gli shader determinano quali modelli 3D vengono trasformati in forme su schermo e in che modo viene colorato ogni pixel contenuto in queste forme. Creando e applicando uno shader a un oggetto nel gioco o nell'app, è possibile assegnare all'oggetto un aspetto univoco.
 
- È possibile usare la progettazione shader di Visual Studio, ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
+Gli shader sono piccoli programmi specifici di dominio che vengono eseguiti nell'unità di elaborazione grafica (GPU). Gli shader determinano quali modelli 3D vengono trasformati in forme su schermo e in che modo viene colorato ogni pixel contenuto in queste forme. Creando e applicando uno shader a un oggetto nel gioco o nell'app, è possibile assegnare all'oggetto un aspetto univoco.
+
+È possibile usare la progettazione shader di Visual Studio, ovvero uno strumento di progettazione shader basato su grafico, per creare effetti visivi personalizzati senza conoscere la programmazione HLSL.
 
 > [!NOTE]
 > Per altre informazioni su come iniziare la programmazione DirectX, vedere [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Per altre informazioni su come eseguire il debug di un'app DirectX, vedere [Diagnostica della grafica (Debug grafica DirectX)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilità tra versioni DirectX
- Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) (Guida per Windows Advanced Rasterization Platform).
+
+Visual Studio usa DirectX per eseguire il rendering degli asset 2D e 3D. È possibile selezionare il renderer di DirectX 11 o il renderer software di WARP (Windows Advanced Rasterization Platform). Il renderer di DirectX 11 offre un rendering a prestazioni elevate e con accelerazione hardware in GPU DirectX 11 e DirectX 10. Il renderer WARP consente di verificare se le risorse usano un'ampia gamma di computer, tra cui computer senza hardware grafico moderno e computer con hardware grafico integrato. Per altre informazioni su WARP, vedere [Windows Advanced Rasterization Platform (WARP) Guide](http://go.microsoft.com/fwlink/p/?LinkId=224634) (Guida per Windows Advanced Rasterization Platform).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

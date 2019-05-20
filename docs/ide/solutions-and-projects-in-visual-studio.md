@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979647"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461525"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluzioni e progetti in Visual Studio
 
@@ -67,6 +67,8 @@ Per archiviare le impostazioni delle soluzioni, Visual Studio usa due tipi di fi
 Il modo più semplice per creare un nuovo progetto è iniziare da un modello di progetto per un tipo particolare di applicazione o sito Web. Un modello di progetto è costituito da un set di base di file di codice, file di configurazione, risorse e impostazioni già generati. Questi modelli sono disponibili nella finestra di dialogo in cui si crea un nuovo progetto (**File** > **Nuovo** > **Progetto**). Per altre informazioni, vedere [Creare soluzioni e progetti](../ide/creating-solutions-and-projects.md).
 
 È inoltre possibile creare modelli di progetto e modelli di elemento personalizzati. Per altre informazioni, vedere [Creare modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md).
+
+Quando si crea un nuovo progetto, per impostazione predefinita viene salvato in *%USERPROFILE%\source\repos*. È possibile personalizzare questo percorso tramite l'impostazione **Percorso progetti** in **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Percorsi**. Per altre informazioni, vedere [Pagina Progetti e soluzioni, finestra di dialogo Opzioni](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Gestire progetti in Esplora soluzioni
 

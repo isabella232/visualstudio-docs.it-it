@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892905"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459108"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Usare asset 3D nel gioco o nell'app
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procedura: Usare asset 3D nel gioco o nell'app
 
 Questo articolo spiega come usare Visual Studio per elaborare gli asset 3D e includerli nelle build.
 
@@ -34,7 +34,9 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Per aggiungere personalizzazioni di compilazione al progetto
 
-1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**. Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
+1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto, quindi scegliere **Dipendenze di compilazione** > **Personalizzazioni compilazioni**.
+
+   Verrà visualizzata la finestra di dialogo **File di personalizzazione compilazioni di Visual C++**.
 
 2. In **File di personalizzazione compilazioni disponibili** selezionare le caselle di controllo corrispondenti ai tipi di asset da includere nel progetto, come indicato nella tabella seguente:
 
@@ -47,11 +49,14 @@ Prima di distribuire gli asset 3D nell'ambito della build, è necessario indicar
 3. Fare clic sul pulsante **OK** .
 
 ## <a name="include-assets-in-your-build"></a>Inclusione degli asset nella build
- Dopo aver specificato i diversi tipi di asset 3D che si intende usare nel progetto, il passaggio successivo consiste nell'indicare quali file sono asset 3D e di quali tipi di asset si tratta.
+
+Dopo aver specificato i diversi tipi di asset 3D che si intende usare nel progetto, il passaggio successivo consiste nell'indicare quali file sono asset 3D e di quali tipi di asset si tratta.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Per aggiungere un asset alla build
 
-1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
+1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida di un asset, quindi scegliere **Proprietà**.
+
+   Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
 
 2. Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
 
@@ -76,7 +81,9 @@ Di seguito sono indicati i tre tipi di elemento della pipeline di contenuti e i 
 
 ### <a name="to-configure-content-pipeline-properties"></a>Per configurare le proprietà della pipeline di contenuti degli asset
 
-1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida per il file di asset, quindi scegliere **Proprietà**. Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
+1. In **Esplora soluzioni** all'interno del progetto aprire il menu di scelta rapida per il file di asset, quindi scegliere **Proprietà**.
+
+   Verrà visualizzata la finestra di dialogo **Pagina delle proprietà** relativa all'asset.
 
 2. Verificare che le proprietà **Configurazione** e **Piattaforma** siano impostate sui valori a cui applicare le modifiche.
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Procedura: Esportare una trama che contiene mipmap](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene le mipmap precalcolate.|
 |[Procedura: Esportare una trama che contiene alfa premoltiplicati](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che contiene valori premoltiplicati per alfa.|
-|[Procedura: Esportare una trama da usare con app Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
+|[Procedura: Esportare una trama da usare con app Direct2D o JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descrive come usare la pipeline di contenuti immagine per esportare una trama che può essere usata in un'app Direct2D o JavaScript.|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descrive gli strumenti di modifica forniti da Visual Studio per la creazione e la manipolazione di asset 3D, tra cui trame e immagini, modelli 3D e shader.|
 |[Procedura: Esportare uno shader](../designers/how-to-export-a-shader.md)|Descrive come esportare uno shader dalla finestra di progettazione shader.|
