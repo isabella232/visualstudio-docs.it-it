@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999766"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461485"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Panoramica di Microsoft IntelliTest
 
@@ -115,8 +115,7 @@ Anche i risultati di chiamate a codice non gestito o non instrumentato sono cons
 
 Il programma è considerato non deterministico anche quando i valori provenienti da origini esterne cambiano alla successiva esecuzione del programma stesso. In questi casi IntelliTest non mantiene il controllo dell'esecuzione del programma e la ricerca diventa inefficiente.
 
-Tali casi non sono sempre evidenti.
-Considerare gli esempi seguenti:
+Tali casi non sono sempre evidenti. Considerare gli esempi seguenti:
 
 * Il risultato del metodo **GetHashCode()** è specificato da codice non gestito e non è prevedibile.
 * La classe **System.Random** usa l'ora di sistema corrente per specificare valori realmente casuali.

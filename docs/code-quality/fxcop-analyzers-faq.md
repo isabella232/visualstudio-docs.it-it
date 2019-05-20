@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816423"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613559"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Domande frequenti su FxCop e gli analizzatori FxCop
 
@@ -43,7 +43,7 @@ Per eseguire gli analizzatori FxCop, per prima cosa [installare il pacchetto NuG
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Viene visualizzato l'avviso CA0507 anche dopo aver installato il pacchetto NuGet degli analizzatori FxCop
 
-Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **"Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione**, potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, verrà eseguita l'analisi del codice statico dopo ogni compilazione.
+Se dopo aver installato gli analizzatori FxCop si continua a ricevere l'avviso CA0507 **""Esegui analisi codice" è stato deprecato e sostituito da analizzatori FxCop, che vengono eseguiti durante la compilazione"**, potrebbe essere necessario impostare la proprietà msbuild **RunCodeAnalysis** nel file di progetto su **false**. In caso contrario, verrà eseguita l'analisi del codice statico dopo ogni compilazione.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

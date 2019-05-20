@@ -9,14 +9,14 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785736"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461575"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulazione dell'uso reale previsto di un'applicazione o un sito Web in un test di carico usando modelli di combinazione di test
+# <a name="test-mix-models-overview"></a>Panoramica dei modelli di combinazione di test
 
 È possibile usare le opzioni di modellazione del carico per prevedere più accuratamente l'uso reale di un sito Web o un'applicazione sottoposti a test di carico. Tale procedura è importante perché un test di carico che non si basa su un modello di carico accurato può generare risultati fuorvianti.
 
@@ -40,7 +40,8 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 - **In base a ordine sequenziale dei test:** ogni utente virtuale esegue il test delle prestazioni Web o unit test nell'ordine di definizione dei test nello scenario. L'utente virtuale continua a eseguire ciclicamente i test in questo ordine fino al completamento del test di carico. Per altre informazioni, vedere [Ordine sequenziale](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Percentuale basata sui test avviati
- Per ogni test della combinazione, è possibile specificare una percentuale che determina la frequenza di esecuzione del test successivo selezionato. Ad esempio, è possibile assegnare i seguenti valori in percentuale a tre test:
+
+Per ogni test della combinazione, è possibile specificare una percentuale che determina la frequenza di esecuzione del test successivo selezionato. Ad esempio, è possibile assegnare i seguenti valori in percentuale a tre test:
 
 - TestA (50%)
 
@@ -48,13 +49,14 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
 - TestC (15%)
 
-  Se si utilizza questa impostazione, l'avvio del test successivo si basa sulle percentuali assegnate. Non viene considerato il numero di utenti virtuali che stanno eseguendo attualmente ciascun test.
+Se si utilizza questa impostazione, l'avvio del test successivo si basa sulle percentuali assegnate. Non viene considerato il numero di utenti virtuali che stanno eseguendo attualmente ciascun test.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Percentuale basata sugli utenti virtuali
  Questo modello di combinazione di test determina la percentuale di utenti virtuali che eseguiranno un determinato test. Se si utilizza questo modello di combinazione di test, l'avvio del successivo test si basa non solo sulle percentuali assegnate ma anche sulla percentuale di utenti virtuali che stanno eseguendo attualmente un determinato test. Durante il test di carico, il numero di utenti che stanno eseguendo un determinato test corrisponde il più possibile alla distribuzione assegnata.
 
 ### <a name="PacingTestMix"></a> Combinazione di test di velocità
- Se si specifica una combinazione di test di velocità, si imposta una frequenza di esecuzione del test per ogni utente virtuale di ogni test nella combinazione di test. Per ogni test, questa frequenza viene espressa come test eseguiti per utente virtuale per ora. Ad esempio, è possibile assegnare la seguente combinazione di test di velocità a questi test:
+
+Se si specifica una combinazione di test di velocità, si imposta una frequenza di esecuzione del test per ogni utente virtuale di ogni test nella combinazione di test. Per ogni test, questa frequenza viene espressa come test eseguiti per utente virtuale per ora. Ad esempio, è possibile assegnare la seguente combinazione di test di velocità a questi test:
 
 - TestA: 4 test per utente per ora
 
@@ -62,9 +64,9 @@ Mediante l'Editor test di carico o la procedura guidata del modello di combinazi
 
 - TestC: 0,125 test per utente per ora
 
-  Se si utilizza il modello di combinazione di test di velocità, il motore di runtime del test di carico garantisce che la frequenza effettiva di avvio dei test è minore o uguale alla frequenza specificata. Se la durata dell'esecuzione dei test è eccessiva per completare il numero assegnato, viene restituito un errore.
+Se si utilizza il modello di combinazione di test di velocità, il motore di runtime del test di carico garantisce che la frequenza effettiva di avvio dei test è minore o uguale alla frequenza specificata. Se la durata dell'esecuzione dei test è eccessiva per completare il numero assegnato, viene restituito un errore.
 
-  L'impostazione **Tempo interazione utente tra due iterazioni test** non viene applicata quando si usa una combinazione di test di velocità.
+L'impostazione **Tempo interazione utente tra due iterazioni test** non viene applicata quando si usa una combinazione di test di velocità.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Applicare la distribuzione al ritardo velocità
  È possibile impostare il valore della proprietà **Applica distribuzione a ritardo velocità** in uno scenario di test di carico su True o False:
