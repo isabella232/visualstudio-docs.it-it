@@ -1,18 +1,18 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C++'
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819801"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226284"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C++
 
@@ -38,13 +38,12 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-     Nella finestra di dialogo espandere **Installato** > **Modelli** > **Visual C++** > **Test**.
+     **Visual Studio 2017 e versioni precedenti**: Espandere **Installato** > **Modelli** > **Visual C++** > **Test**.
+     **Visual Studio 2019**: Impostare **Linguaggio** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
 
      In questa procedura dettagliata, il progetto di test viene denominato `NativeRooterTest`.
-
-     ![Creazione di un progetto unit test C++](../test/media/utecpp01.png)
 
 2. Nel nuovo progetto, controllare **unittest1.cpp**
 
@@ -85,11 +84,45 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 ## <a name="create_dll_project"></a> Creare un progetto DLL
 
-1. Creare un progetto **Visual C++** tramite il modello **Progetto Win32** .
+::: moniker range="vs-2019"
+
+La procedura seguente illustra come creare un progetto DLL in Visual Studio 2019.
+
+1. Creare un progetto C++ usando la **Creazione guidata applicazione desktop di Windows**: Fare clic con il pulsante destro del mouse sul nome della soluzione in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo progetto**. Impostare **Linguaggio** su C++ e quindi digitare "windows" nella casella di ricerca. Scegliere **Creazione guidata applicazione desktop di Windows** dall'elenco risultati. 
 
      In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
-     ![Creazione di un progetto Win32 C++](../test/media/utecpp05.png)
+2. Premere **Crea**. Nella finestra di dialogo successiva, in **Tipo di applicazione** scegliere **DLL (libreria a collegamento dinamico)** e selezionare **Esporta simboli**.
+
+     L'opzione **Esporta simboli** genera una semplice macro che è possibile usare per dichiarare i metodi esportati.
+
+     ![Creazione progetto C++ impostata per simboli di esportazione e DLL](../test/media/vs-2019/windows-desktop-project-dll.png)
+
+3. Dichiarare una funzione esportata nel file *con estensione h* principale:
+
+     ![Nuovo progetto di codice DLL e file h con macro API](../test/media/utecpp07.png)
+
+     Il dichiaratore `__declspec(dllexport)` permette ai membri public e protected della classe di essere visibili al di fuori della DLL. Per altre informazioni, vedere [Using dllimport and dllexport in C++ Classes](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
+
+4. Nel file *con estensione cpp* principale, aggiungere il corpo minimo della funzione:
+
+    ```cpp
+        // Find the square root of a number.
+        double CRootFinder::SquareRoot(double v)
+        {
+            return 0.0;
+        }
+    ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017.
+
+1. Creare un progetto C++ usando il modello**Progetto Win32**.
+
+     In questa procedura dettagliata, il progetto viene denominato `RootFinder`.
 
 2. Selezionare **DLL** ed **Esporta simboli** nella creazione guidata applicazione Win32.
 
@@ -112,6 +145,8 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
             return 0.0;
         }
     ```
+
+::: moniker-end
 
 ## <a name="make_functions_visible"></a> Unire il progetto di test al progetto DLL
 

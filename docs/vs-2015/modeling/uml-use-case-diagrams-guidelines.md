@@ -170,11 +170,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  ![Maiuscole e minuscole con molteplicità molti a molti](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'attore dell'associazione a * * 1... \\***.  
+- Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'attore dell'associazione a **1...\\***.  
   
    Nell'illustrazione uno o più i ristoranti possono partecipare all'evasione della stessa ordinazione pasto.  
   
-- Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare * *\\* * *.  
+- Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare **\\***.  
   
    Nella figura ogni ristorante può cercare di soddisfare più ordini alla volta.  
   

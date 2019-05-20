@@ -34,7 +34,7 @@
   items:
     - name: Protocollo di server di linguaggio
       href: language-server-protocol.md
-    - name: Aggiunta di un'estensione del protocollo di server di linguaggio
+    - name: Aggiungere un'estensione del protocollo di server di linguaggio
       href: adding-an-lsp-extension.md
 - name: Apri cartella
   items:

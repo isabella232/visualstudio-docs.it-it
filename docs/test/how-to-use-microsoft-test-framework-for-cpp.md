@@ -1,18 +1,18 @@
 ---
 title: Usare il framework di testing unità Microsoft per C++
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970351"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461472"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
@@ -24,7 +24,7 @@ In genere, il codice di test viene eseguito nel relativo progetto nella stessa s
 
 ## <a name="same_project"></a> Per scrivere unit test nello stesso progetto
 
-In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL, potrebbe essere necessario creare i test nello stesso progetto del programma che si sta testando. Per scrivere unit test nello stesso progetto:
+In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL, può essere necessario creare i test nello stesso progetto del programma che si sta testando. Per scrivere unit test nello stesso progetto:
 
 1. Modificare le proprietà del progetto per includere le intestazioni e i file di libreria necessari per il testing unità.
 
@@ -52,10 +52,12 @@ Usare i metodi statici nella classe [Assert](microsoft-visualstudio-testtools-cp
 ## <a name="run-the-tests"></a>Eseguire i test
 
 1. Nel menu **Test** scegliere **Finestre** > **Esplora test**.
-2. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
 
-3. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
-4. Nel **finestra di output** scegliere **Test** nel menu a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
+1. Se non è visibile alcun test nella finestra, compilare il progetto di test facendo clic con il pulsante destro del mouse sul relativo nodo in **Esplora soluzioni** e scegliendo **Compila** o **Ricompila**.
+
+1. In **Esplora test** scegliere **Esegui tutto** o selezionare i test specifici da eseguire. Fare clic con il pulsante destro del mouse su un test per le altre opzioni, inclusa l'esecuzione in modalità di debug con i punti di interruzione abilitati.
+
+1. Nel **finestra di output** scegliere **Test** nel menu a discesa per visualizzare i messaggi scritti dalla classe `Logger`:
 
    ![Finestra di output di C++ con messaggi di test](media/cpp-test-output-window.png)
 
