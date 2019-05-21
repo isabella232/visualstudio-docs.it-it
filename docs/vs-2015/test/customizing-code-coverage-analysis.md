@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416651"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686443"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizzazione dell'analisi code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
  Scegliere **Test**, **Impostazioni test**, **Seleziona file di impostazioni test** e selezionare il file con estensione runsettings. Il file viene visualizzato nel menu Impostazioni test ed è possibile selezionarlo o annullare l'operazione. Quando viene selezionato, il file con estensione runsettings viene applicato ogni volta che si usa **Analizza code coverage**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Per personalizzare le impostazioni esecuzione test in un test da riga di comando  
- Per eseguire un test dalla riga di comando usare vstest.console.exe. Il file di impostazioni è un parametro di questa utilità. Per altre informazioni, vedere [Uso di VSTest.console dalla riga di comando](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Per eseguire un test dalla riga di comando usare vstest.console.exe. Il file di impostazioni è un parametro di questa utilità. Per altre informazioni, vedere [Uso di VSTest.console dalla riga di comando](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Avviare il prompt dei comandi di Visual Studio Developer:  
   
@@ -202,7 +202,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
   
 3. Nella pagina **Processo** espandere **Test automatizzati**, **Origine test**, **Impostazioni esecuzione test**. Selezionare il file con estensione **runsettings**.  
   
-   - <em>Viene visualizzato **Assembly di test</em>* anziché **Origine test**. Quando si prova ad impostare il campo Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
+   - <em>Viene visualizzato **Assembly di test</em>* anziché **Origine test**. Quando si prova ad impostare il campo **Impostazioni esecuzione test**, è possibile selezionare solo file con estensione testsettings.*  
   
       In **Test automatizzati** selezionare **Assembly di test** e scegliere **[...]** alla fine della riga. Nella finestra di dialogo **Aggiungi/Modifica esecuzione dei test**, impostare **Test Runner** su **Visual Studio Test Runner**.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  

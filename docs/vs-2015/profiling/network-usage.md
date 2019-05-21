@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441890"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673815"
 ---
 # <a name="network-usage"></a>Utilizzo della rete
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
   
 1. Aprire il progetto in Visual Studio.  
   
-2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere Rete e quindi **Avvia**.  
+2. Nella barra dei menu fare clic su **Debug/Profiler prestazioni...**. Scegliere **Rete** e quindi **Avvia**.  
   
 3. Lo strumento di rete inizia a raccogliere il traffico di rete HTTP dell'app.  
   
@@ -74,6 +74,6 @@ Lo strumento di diagnostica **Rete** di Visual Studio consente di raccogliere da
 3. Il pulsante di stampa della risposta (all'interno della scheda corpo) consente di analizzare i paylod di risposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando la leggibilità del contenuto.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Strumenti di profilatura senza il debug](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Strumenti di profilatura senza il debug](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Blog di Visual Studio: Introduzione a controllo di rete di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Video di Channel 9: Strumenti di diagnostica di Visual Studio – nuovo Profiler di rete](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
