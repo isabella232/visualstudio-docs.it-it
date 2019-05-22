@@ -14,18 +14,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823556"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976159"
 ---
-# <a name="maintainability-warnings"></a>avvisi di manutenibilità
+# <a name="maintainability-warnings"></a>Avvisi di manutenibilità
 
 Avvisi di manutenibilità supportano la manutenzione di libreria e applicazione.
 
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 | Regola | Descrizione |
 |-----------|-----------------------------------|
@@ -35,7 +35,8 @@ Avvisi di manutenibilità supportano la manutenzione di libreria e applicazione.
 | [CA1504: Esaminare i nomi dei campi fuorvianti](../code-quality/ca1504-review-misleading-field-names.md) | Il nome di un campo di istanza inizia con "s _", o il nome di un valore statico (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo inizia con "m _". |
 | [CA1505: Evitare codice non gestibile](../code-quality/ca1505-avoid-unmaintainable-code.md) | Un tipo o metodo presenta un valore di indice di gestibilità basso. Un indice di manutenibilità basso indica che un tipo o un metodo è probabilmente difficile da gestire e sarebbe un buon candidato per la riprogettazione. |
 | [CA1506: Evitare l'accoppiamento di classe eccessivo](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Questa regola misura l'accoppiamento tra classi contando il numero di riferimenti al tipo univoci contenuti in un tipo o metodo. |
+| [CA1507: Nameof usare al posto di stringa](../code-quality/ca1507.md) | Un valore letterale stringa viene utilizzata come argomento in cui un `nameof` espressione può essere usata. |
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Misurazione della complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)
+- [Misurare la complessità e della manutenibilità del codice gestito](../code-quality/code-metrics-values.md)

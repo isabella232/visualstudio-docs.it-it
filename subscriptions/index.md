@@ -8,12 +8,12 @@ Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Sottoscrizioni di Visual studio
 Searchscope: VS Subscription
-ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 939922aa418ee94d3018ac5f5743c31181e5e875
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62579942"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976114"
 ---
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
 
@@ -169,7 +169,7 @@ Per rendere ancora più utile la sottoscrizione, a questa si aggiungono vantaggi
                 <div class="card">
                     <div class="cardText">
                         <h3>Servizi cloud</h3>
-                        <p>Con la sottoscrizione di Visual Studio è possibile ottenere un credito mensile per Azure e accesso gratuito ai servizi Azure, tariffe scontate per lo sviluppo e il test, nonché accesso esclusivo a una raccolta di immagini riservata ai sottoscrittori, con macchine virtuali preconfigurate. A seconda della sottoscrizione, i servizi cloud possono includere:</p>
+                        <p>Con la sottoscrizione di Visual Studio è possibile ottenere un credito mensile Azure per l'accesso ai servizi Azure, tariffe scontate per lo sviluppo e il test e accesso esclusivo a una raccolta di immagini riservata ai sottoscrittori con macchine virtuali preconfigurate. A seconda della sottoscrizione, i servizi cloud possono includere:</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>

@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825338"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976154"
 ---
-# <a name="reliability-warnings"></a>avvisi di affidabilità
-Gli avvisi di affidabilità supportano affidabilità di libreria e applicazione, ad esempio, utilizzo della memoria e thread corretto.
+# <a name="reliability-warnings"></a>Avvisi di affidabilità
 
-## <a name="in-this-section"></a>In questa sezione
+Gli avvisi di affidabilità supportano affidabilità di libreria e applicazione, ad esempio, utilizzo della memoria e thread corretto. Le regole di affidabilità includono:
 
 |Regola|Descrizione|
 |----------|-----------------|
@@ -34,3 +33,4 @@ Gli avvisi di affidabilità supportano affidabilità di libreria e applicazione,
 |[CA2003: Non considerare i fiber come i thread](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Un thread gestito viene considerato come un thread Win32.|
 |[CA2004: Rimuovere le chiamate a GC. KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Se esegue la conversione all'utilizzo di SafeHandle, rimuovere tutte le chiamate a GC. KeepAlive (object). In questo caso, le classi non necessario per chiamare GC. KeepAlive, supponendo che non è un finalizzatore ma utilizzino SafeHandle per finalizzare il sistema operativo gestisce per loro.|
 |[CA2006: Usare SafeHandle per incapsulare le risorse native](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|L'utilizzo di IntPtr nel codice gestito potrebbe indicare un potenziale problema di sicurezza e affidabilità. Tutte le occorrenze di IntPtr devono essere esaminate per stabilire se al loro posto è necessario utilizzare SafeHandle o una tecnologia simile.|
+|[CA2007: Non attende direttamente un'attività](../code-quality/ca2007-do-not-directly-await-task.md)|Un metodo asincrono [attende](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> direttamente.|
