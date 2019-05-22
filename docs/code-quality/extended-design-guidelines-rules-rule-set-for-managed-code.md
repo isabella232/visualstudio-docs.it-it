@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816611"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975895"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Set di regole Regole estese delle linee guida di progettazione per codice gestito
+
 Il set di regole delle linee guida di progettazione estesa Microsoft consente di espandere le regole di progettazione di base delle linee guida per ottimizzare i problemi di usabilità e facilità di gestione che vengono segnalati. Extra attenzione è rivolta alle linee guida sulla denominazione. È consigliabile includere questa regola impostata se il progetto contiene codice di libreria o se si desidera applicare gli standard ottimali per la scrittura di codice che è facile da gestire.
 
- Le regole delle linee guida di progettazione estesa includono tutte le regole Microsoft base delle linee guida di progettazione del disegno. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minime. Per altre informazioni, vedere [set di regole regole base delle linee guida di progettazione per codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Le regole delle linee guida di progettazione estesa includono tutte le regole Microsoft base delle linee guida di progettazione del disegno. Le regole base delle linee guida di progettazione includono tutte le regole Microsoft minime. Per altre informazioni, vedere [set di regole regole base delle linee guida di progettazione per codice gestito](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [set di regole regole consigliate gestite per codice gestito](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese progettazione Microsoft delle linee guida.
+Nella tabella seguente vengono descritte tutte le regole nel set di regole regole estese progettazione Microsoft delle linee guida.
 
 |Regola|Descrizione|
 |----------|-----------------|
