@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Informazioni su come individuare e scaricare i prodotti Microsoft inclusi con la sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953721"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697779"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso dei download per i sottoscrittori nelle sottoscrizioni di Visual Studio
 Nell'ambito dei vantaggi offerti agli abbonati, è possibile accedere a un'ampia gamma di download di software.
@@ -31,7 +31,7 @@ I possibili motivi in seguito ai quali determinati prodotti potrebbero non esser
 - **Software ridondante.** Determinati download e codici Product Key di Office e suite di Office non sono più disponibili negli abbonamenti che includono Office. I download e i codici Product Key sono disponibili per la suite di Office più elevata corrispondente della stessa versione.  Se ad esempio si esegue la ricerca di PowerPoint 2010, non verranno restituiti risultati.  È tuttavia possibile eseguire la ricerca di Office 2010, la suite di Office che conteneva PowerPoint 2010, e scaricare la suite.
 
 ## <a name="what-do-i-get"></a>Che cosa si ottiene?
-Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'appartenenza ai programmi.  Per chi possiede una sottoscrizione standard di Visual Studio Enterprise, ad esempio, potrebbero essere disponibili download diversi da quelli di chi ha ottenuto la propria sottoscrizione tramite un programma Microsoft Partner Network o BizSpark.  Per altre informazioni sui download disponibili per ogni livello di sottoscrizione, scaricare l'elenco di [Prodotti per livello benefici](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+Il numero e il tipo di download dipendono dal livello di sottoscrizione e dall'appartenenza ai programmi.  Per chi possiede una sottoscrizione standard di Visual Studio Enterprise, ad esempio, potrebbero essere disponibili download diversi da quelli di chi ha ottenuto la propria sottoscrizione tramite un programma Microsoft Partner Network o BizSpark.  Per altre informazioni sui download disponibili per ogni livello di sottoscrizione, scaricare l'elenco di [Prodotti per livello benefici](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) per visualizzare tutte le sottoscrizioni assegnate al proprio indirizzo di posta elettronica. Se non sono visualizzate tutte le sottoscrizioni, è possibile che una o più sottoscrizioni siano assegnate a un indirizzo di posta elettronica diverso.  È necessario accedere con tale indirizzo di posta elettronica per visualizzare le sottoscrizioni.
 
