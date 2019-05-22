@@ -5,11 +5,11 @@ ms.topic: include
 author: eross-msft
 ms.author: lizross
 ms.openlocfilehash: 31b4021feb2b33babff123a56436d3a57d3e9f13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582007"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65848306"
 ---
 > [!NOTE]
 > Se si vogliono visualizzare o eliminare dati personali, vedere il materiale sussidiario Microsoft in [Richieste del soggetto dei dati per il GDPR in Windows](/microsoft-365/compliance/gdpr-dsr-windows). Se si cercano informazioni generali sul GDPR, vedere la sezione GDPR del [Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
