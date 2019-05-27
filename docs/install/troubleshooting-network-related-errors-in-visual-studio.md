@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi correlati alla rete o al proxy
 description: Trovare soluzioni per gli errori correlati alla rete o al proxy che si riscontrano quando si installa o si usa Visual Studio protetto da un firewall o un server proxy.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968132"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976223"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Risoluzione dei problemi correlati alla rete quando si installa o usa Visual Studio
 
@@ -36,19 +36,19 @@ Generalmente questo errore si verifica quando gli utenti sono connessi a Interne
 
 - Riavviare Visual Studio. Verrà visualizzata una finestra di dialogo di autenticazione del proxy. Immettere le credenziali quando richiesto nella finestra di dialogo.
 
-- Se il riavvio di Visual Studio non risolve il problema, è possibile che il server proxy usato non richieda le credenziali per gli indirizzi http:&#47;&#47;go.microsoft.com, ma per gli indirizzi &#42;.visualStudio.com. Per questi server, valutare la possibilità di aggiungere gli URL seguenti all'elenco degli elementi consentiti per sbloccare tutti gli scenari di accesso in Visual Studio:
+- Se il riavvio di Visual Studio non risolve il problema, è possibile che il server proxy usato non richieda le credenziali per gli indirizzi http:&#47;&#47;go.microsoft.com, ma le richieda per gli indirizzi &#42;.visualStudio.microsoft.com. Per questi server, valutare la possibilità di aggiungere gli URL seguenti a un elenco di indirizzi consentiti per sbloccare tutti gli scenari di accesso in Visual Studio:
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
     - &#42;.live.com
 
-- In caso contrario, è possibile rimuovere l'indirizzo http:&#47;&#47;go.microsoft.com dall'elenco degli elementi consentiti in modo che al riavvio di Visual Studio venga visualizzata la finestra di dialogo di autenticazione del proxy per l'indirizzo http:&#47;&#47;go.microsoft.com e gli endpoint server.
+- In caso contrario, è possibile rimuovere l'indirizzo http:&#47;&#47;go.microsoft.com dall'elenco di indirizzi consentiti in modo che al riavvio di Visual Studio la finestra di dialogo di autenticazione del proxy venga visualizzata sia per l'indirizzo http:&#47;&#47;go.microsoft.com sia per gli endpoint server.
 
   OPPURE
 
@@ -120,7 +120,7 @@ Abilitare le connessioni per gli URL seguenti:
 
 - &#42;.azurewebsites.net (per le connessioni Azure)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (host di contenuti della rete CDN)
 
@@ -138,5 +138,5 @@ Abilitare le connessioni per gli URL seguenti:
 ## <a name="see-also"></a>Vedere anche
 
 * [Installare e usare Visual Studio protetto da un firewall o un server proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
-* [Guida di Visual Studio Administrator](visual-studio-administrator-guide.md)
+* [Guida dell'amministratore di Visual Studio](visual-studio-administrator-guide.md)
 * [Installare Visual Studio](install-visual-studio.md)

@@ -18,18 +18,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ec1847f30f5c04bd32ddea85ff95a0808daa8aa7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11fa7913828ef557c87ec50184c9de35a9e5bc4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817818"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847437"
 ---
-# <a name="options-text-editor-c-code-style-formatting"></a>Opzioni, Editor di testo, C#, Stile codice, Formattazione
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Finestra di dialogo Opzioni: Editor di testo \> C# \> Stile codice \> Formattazione
 
-Usare la pagina di opzioni **Formattazione** per impostare le opzioni di formattazione del codice nell'editor del codice. Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni**. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **C#** > **Stile codice** > **Formattazione**.
+Usare la pagina di opzioni **Formattazione** e le relative pagine secondarie ([**Rientro**](#indentation-page), **Nuove righe**, **Spaziatura** e **Ritorno a capo**) per impostare le opzioni di formattazione del codice nell'editor del codice.
 
-## <a name="general-page"></a>Pagina Generale
+Per accedere a questa pagina di opzioni, scegliere **Strumenti** > **Opzioni** dalla barra dei menu. Nella finestra di dialogo **Opzioni** scegliere **Editor di testo** > **C#** > **Stile codice** > **Formattazione**.
+
+> [!TIP]
+> Ognuna delle pagine secondarie **Rientro**, **Nuove righe**, **Spaziatura** e **Ritorno a capo** visualizza una finestra di anteprima nella parte inferiore che mostra l'effetto dell'applicazione di ogni opzione. Per usare la finestra di anteprima, selezionare un'opzione di formattazione. La finestra di anteprima illustra un esempio dell'opzione selezionata. Quando si modifica un'impostazione selezionando un pulsante di opzione o una casella di controllo, la finestra di anteprima viene aggiornata per mostrare l'effetto della nuova impostazione.
+
+## <a name="formatting-general-page"></a>Pagina Formattazione (Generale)
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -43,9 +48,17 @@ Queste impostazioni influenzano *il momento in cui* l'editor del codice applica 
 |**Formatta automaticamente dopo INVIO**|Quando questa opzione è selezionata, il testo viene formattato dopo la pressione di **INVIO**, in base alle opzioni di formattazione selezionate per l'editor.|
 |**Formatta automaticamente dopo operazione Incolla**|Quando questa opzione è selezionata, il testo incollato nell'editor viene formattato in base alle opzioni di formattazione selezionate per l'editor.|
 
+::: moniker range="vs-2019"
+
+Se si è già utilizzato il comando **Formatta documento** per applicare impostazioni di stile al codice per i file C# in Visual Studio 2017, ora tale funzionalità disponibile con il nome [**Pulizia del codice**](../code-styles-and-code-cleanup.md#apply-code-styles).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 ### <a name="format-document-settings"></a>Impostazioni di Formatta documento
 
-Queste impostazioni configurano il comando **Formatta documento** per eseguire una pulizia del codice aggiuntiva in un file. Per altre informazioni su come applicare queste impostazioni, vedere [Format Document command](../code-styles-and-quick-actions.md#format-document-command) (Comando Formatta documento).
+Queste impostazioni configurano il comando **Formatta documento** per eseguire una pulizia del codice aggiuntiva in un file. Per altre informazioni su come applicare queste impostazioni, vedere [Format Document command](../code-styles-and-code-cleanup.md#apply-code-styles) (Comando Formatta documento).
 
 |Label|Description|Regole di EditorConfig e Strumenti > Opzioni corrispondenti|
 |-----------|-----------------|-----------------|-----------------|
@@ -68,13 +81,18 @@ Queste impostazioni configurano il comando **Formatta documento** per eseguire u
 
 ![Impostazioni di pulizia del codice per C# in Visual Studio](media/format-document-settings.png)
 
-## <a name="preview-windows"></a>Finestre di anteprima
+::: moniker-end
 
-Ognuna delle pagine secondarie **Rientro**, **Nuove righe**, **Spaziatura** e **Ritorno a capo** visualizza una finestra di anteprima nella parte inferiore. La finestra di anteprima illustra l'effetto di ogni opzione. Per usare la finestra di anteprima, selezionare un'opzione di formattazione. La finestra di anteprima illustra un esempio dell'opzione selezionata. Quando si modifica un'impostazione selezionando un pulsante di opzione o una casella di controllo, la finestra di anteprima viene aggiornata per mostrare l'effetto della nuova impostazione.
+## <a name="indentation-page"></a>Pagina Rientro
 
-## <a name="indentation-remarks"></a>Osservazioni sul rientro
+Le opzioni di rientro di questa pagina sono applicate quando il codice viene formattato automaticamente. Un esempio di formattazione automatica del codice è quando si incolla codice nel file con l'opzione **Formatta automaticamente dopo operazione Incolla** selezionata. (L'opzione **Formatta automaticamente dopo operazione Incolla** si trova in **Formattazione** > **Generale**.)
 
-Le opzioni di rientro nelle pagine **Tabulazioni** per ogni linguaggio determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga. Le opzioni di rientro in **Formattazione** si applicano quando il codice viene formattato automaticamente, ad esempio quando si incolla codice nel file ed è selezionata l'opzione **Formatta automaticamente dopo operazione Incolla** o quando il blocco da formattare viene digitato manualmente.
+![Opzioni di rientro dell'editor di testo C# in Visual Studio](media/csharp-indentation-options.png)
+
+> [!TIP]
+> Sono disponibili impostazioni di rientro anche nella pagina di opzioni **Editor di testo** > **C#** > **Tabulazioni**. Le opzioni determinano solo il punto in cui l'editor del codice posiziona il cursore quando si preme **INVIO** alla fine di una riga.
+>
+> ![Opzioni di tabulazione dell'editor di testo C# in Visual Studio](media/csharp-tabs-options.png)
 
 ## <a name="see-also"></a>Vedere anche
 

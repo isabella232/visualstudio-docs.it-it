@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978907"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679322"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 
@@ -113,10 +113,10 @@ R:  I clienti non potranno acquistare nuove sottoscrizioni cloud annuali di Visu
 R:  Non è necessaria alcuna azione da parte dei clienti esistenti. I nuovi clienti dovranno decidere se acquistare sottoscrizioni mensili di Visual Studio o passare a un altro canale, ad esempio i contratti multilicenza, per acquistare sottoscrizioni di Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>D: Come si può aumentare il numero di sottoscrizioni per i clienti?
-R:  L'amministratore può sempre aumentare il numero di sottoscrizioni visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguendo le istruzioni disponibili in questo articolo.
+R: Le sottoscrizioni annuali acquistate nel corso di un dato mese vengono addebitate immediatamente per un intero anno e sono valide per un intero anno. Per questo motivo, l'amministratore può modificare solo il numero di licenze nel mese corrente di acquisto (che saranno valide per 1 anno e verranno addebitate per 1 anno). Non è più possibile aumentare il numero delle sottoscrizioni al di fuori del mese di acquisto.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>D: Come si può ridurre il numero di sottoscrizioni per i clienti?
-R:  L'amministratore può sempre ridurre il numero di sottoscrizioni visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguendo le istruzioni disponibili in questo articolo.
+R:  L'amministratore può sempre ridurre il numero di sottoscrizioni visitando [https://manage.visualstudio.com](https://manage.visualstudio.com) e seguendo le istruzioni disponibili in questo articolo. Il sistema **non** genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>D: Se i clienti annullano le proprie sottoscrizioni, potranno acquistare altre sottoscrizioni cloud annuali in un secondo momento?
 R:  Anche se non potranno acquistare un'altra sottoscrizione cloud annuale, sono disponibili molte opzioni per l'acquisto di sottoscrizioni di Visual Studio.  Per altre informazioni, visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).
