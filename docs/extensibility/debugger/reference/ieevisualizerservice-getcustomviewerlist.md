@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2714a038c2cede4b351de92454bb74a5052805c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 5b78afc3ace3764856fd0a83899be2eae597239e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223570"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203667"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Questo metodo restituisce un elenco di visualizzatori di tipi noti al servizio.
@@ -46,21 +46,17 @@ int GetCustomViewerList(
 ```
 
 ## <a name="parameters"></a>Parametri
- `celtSkip`\
+`celtSkip`\
+[in] Numero di visualizzatori di ignorare.
 
- [in] Numero di visualizzatori di ignorare.
+`celRequested`\
+[in] Numero di visualizzatori da recuperare (specifica anche dimensioni del `rgViewers` matrice).
 
- `celRequested`\
+`rgViewers`\
+[in, out] Matrice di [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) strutture da compilare.
 
- [in] Numero di visualizzatori da recuperare (specifica anche dimensioni del `rgViewers` matrice).
-
- `rgViewers`\
-
- [in, out] Matrice di [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) strutture da compilare.
-
- `pceltFetched`\
-
- [out] Numero di visualizzatori effettivamente recuperati.
+`pceltFetched`\
+[out] Numero di visualizzatori effettivamente recuperati.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

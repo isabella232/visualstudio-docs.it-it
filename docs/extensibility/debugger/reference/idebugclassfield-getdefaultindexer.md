@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d884b8e066b539b925e50d4f49f65168ca6156c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaddbe6bb223e8e2987f8310f1d8e08d5602a01
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922817"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206827"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 Ottiene il nome dell'indicizzatore predefinita.
@@ -36,10 +39,8 @@ int GetDefaultIndexer(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pbstrIndexer`
-
- [out] Restituisce una stringa contenente il nome dell'indicizzatore predefinita.
+## <a name="parameters"></a>Parametri
+`pbstrIndexer` [out] Restituisce una stringa contenente il nome dell'indicizzatore predefinita.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non esiste alcun indicizzatore predefinito. In caso contrario, verrà restituito un codice di errore.

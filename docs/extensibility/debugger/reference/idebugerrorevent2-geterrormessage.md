@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920155"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199935"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Restituisce le informazioni che consentono la costruzione di un messaggio di errore leggibile dall'utente.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pMessageType`
+## <a name="parameters"></a>Parametri
+`pMessageType`\
+[out] Restituisce un valore di [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumerazione, che indica il tipo di messaggio.
 
- [out] Restituisce un valore di [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumerazione, che indica il tipo di messaggio.
+`pbstrErrorFormat`\
+[out] Il formato del messaggio all'utente finale (per informazioni dettagliate, vedere "la sezione Osservazioni").
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] Il codice di errore del messaggio è su.
 
- [out] Il formato del messaggio all'utente finale (per informazioni dettagliate, vedere "la sezione Osservazioni").
+`pdwType`\
+[out] Gravità dell'errore (usare le costanti MB_XXX `MessageBox`, ad esempio `MB_EXCLAMATION` o `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Percorso file della Guida (impostato su un valore null se non esiste alcun file della Guida).
 
- [out] Il codice di errore del messaggio è su.
-
- `pdwType`
-
- [out] Gravità dell'errore (usare le costanti MB_XXX `MessageBox`, ad esempio `MB_EXCLAMATION` o `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Percorso file della Guida (impostato su un valore null se non esiste alcun file della Guida).
-
- `pdwHelpId`
-
- [out] ID dell'argomento della Guida da visualizzare (impostato su 0 se non esiste alcun argomento della Guida).
+`pdwHelpId`\
+[out] ID dell'argomento della Guida da visualizzare (impostato su 0 se non esiste alcun argomento della Guida).
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

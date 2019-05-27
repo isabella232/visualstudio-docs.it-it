@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee4f7ec068b3daa77692d4ab64d327ebb8f61766
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e9a301bcba6e1fd98e1efbe2c051f2ea27801483
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457411"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210906"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 Ottiene un contesto di valutazione per la valutazione dell'espressione nel contesto corrente di un frame dello stack e thread.
@@ -40,9 +40,8 @@ int GetExpressionContext ( 
 ```
 
 ## <a name="parameters"></a>Parametri
- `ppExprCxt`\
-
- [out] Restituisce un [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) oggetto che rappresenta un contesto per la valutazione dell'espressione.
+`ppExprCxt`\
+[out] Restituisce un [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) oggetto che rappresenta un contesto per la valutazione dell'espressione.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

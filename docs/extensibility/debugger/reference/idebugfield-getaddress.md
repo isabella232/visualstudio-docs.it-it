@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 417e19eb9c7d014b6c1ca353147f6a8ac96f222e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e44e23dc1573a0eb57be0da7272e185b66576873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873879"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212326"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 Questo metodo ottiene l'indirizzo di debug di un campo.
@@ -36,10 +39,9 @@ int GetAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppAddress`
-
- [out] Restituisce l'indirizzo come un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto.
+## <a name="parameters"></a>Parametri
+`ppAddress`\
+[out] Restituisce l'indirizzo come un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

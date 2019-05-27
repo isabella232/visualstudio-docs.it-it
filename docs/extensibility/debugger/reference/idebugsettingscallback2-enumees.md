@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457620"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212155"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Enumera gli analizzatori di espressioni disponibili assegnati gli identificatori di lingua e il fornitore.
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>Parametri
- `celtBuffer`\
+`celtBuffer`\
+[in] Numero di elementi nel `pceltEEs` buffer.
 
- [in] Numero di elementi nel `pceltEEs` buffer.
+`rgguidLang`\
+[in, out] Identificatore univoco per il linguaggio di programmazione.
 
- `rgguidLang`\
+`rgguidVendor`\
+[in, out] Identificatore univoco del fornitore.
 
- [in, out] Identificatore univoco per il linguaggio di programmazione.
-
- `rgguidVendor`\
-
- [in, out] Identificatore univoco del fornitore.
-
- `pceltEEs`\
-
- [in, out] Matrice di analizzatori di espressioni.
+`pceltEEs`\
+[in, out] Matrice di analizzatori di espressioni.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

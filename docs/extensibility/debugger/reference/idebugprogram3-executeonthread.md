@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b148c884b7844595d02549f6ef46dad46748234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1edd974c934aab5fe3a5c3679190af5ce6039120
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870141"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212559"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Esegue il programma di debugger. Il thread viene restituito per fornire le informazioni sui debugger thread in cui l'utente visualizza quando l'esecuzione del programma.
@@ -33,10 +36,9 @@ int ExecuteOnThread(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pThread`
-
- [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto.
+## <a name="parameters"></a>Parametri
+`pThread`\
+[in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

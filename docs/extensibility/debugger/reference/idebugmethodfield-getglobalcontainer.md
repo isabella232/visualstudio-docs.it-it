@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40bbee4c00425c4f46ccde35b8a8c810e1d7c8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fcd816b74e5c1474e89ab5b9550df8787c8210ee
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872817"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211949"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 Ottiene il contenitore globale del metodo.
@@ -36,10 +39,9 @@ int GetGlobalContainer(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppClass`
-
- [out] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta il modulo in cui questo metodo è definito.
+## <a name="parameters"></a>Parametri
+`ppClass`\
+[out] Restituisce un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) che rappresenta il modulo in cui questo metodo è definito.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

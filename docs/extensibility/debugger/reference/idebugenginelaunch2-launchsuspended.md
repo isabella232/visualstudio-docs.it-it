@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920709"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212475"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Questo metodo avvia un processo mediante il motore di debug (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pszMachine`
+## <a name="parameters"></a>Parametri
+`pszMachine`\
+[in] Il nome del computer in cui si desidera avviare il processo. Utilizzare un valore null per specificare il computer locale.
 
- [in] Il nome del computer in cui si desidera avviare il processo. Utilizzare un valore null per specificare il computer locale.
+`pPort`\
+[in] Il [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaccia che rappresenta la porta che il programma verrà eseguito in.
 
- `pPort`
+`pszExe`\
+[in] Il nome del file eseguibile da avviare.
 
- [in] Il [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaccia che rappresenta la porta che il programma verrà eseguito in.
+`pszArgs`\
+[in] Gli argomenti da passare all'eseguibile. Può essere un valore null se non sono presenti argomenti.
 
- `pszExe`
+`pszDir`\
+[in] Il nome della directory di lavoro usato dall'eseguibile. Può essere un valore null se non è necessaria alcuna directory di lavoro.
 
- [in] Il nome del file eseguibile da avviare.
+`bstrEnv`\
+[in] Blocco di ambiente di stringhe con terminazione NULL, seguita da un terminatore NULL aggiuntivo.
 
- `pszArgs`
+`pszOptions`\
+[in] Le opzioni per il file eseguibile.
 
- [in] Gli argomenti da passare all'eseguibile. Può essere un valore null se non sono presenti argomenti.
+`dwLaunchFlags`\
+[in] Specifica la [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) per una sessione.
 
- `pszDir`
+`hStdInput`\
+[in] Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- [in] Il nome della directory di lavoro usato dall'eseguibile. Può essere un valore null se non è necessaria alcuna directory di lavoro.
+`hStdOutput`\
+[in] Handle per un flusso di output alternativi. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- `bstrEnv`
+`hStdError`\
+[in] Handle per un flusso di output di errore alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- [in] Blocco di ambiente di stringhe con terminazione NULL, seguita da un terminatore NULL aggiuntivo.
+`pCallback`\
+[in] Il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto che riceve gli eventi del debugger.
 
- `pszOptions`
-
- [in] Le opzioni per il file eseguibile.
-
- `dwLaunchFlags`
-
- [in] Specifica la [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) per una sessione.
-
- `hStdInput`
-
- [in] Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `hStdOutput`
-
- [in] Handle per un flusso di output alternativi. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `hStdError`
-
- [in] Handle per un flusso di output di errore alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `pCallback`
-
- [in] Il [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) oggetto che riceve gli eventi del debugger.
-
- `ppDebugProcess`
-
- [out] Restituisce l'oggetto risultante [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo avviato.
+`ppDebugProcess`\
+[out] Restituisce l'oggetto risultante [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo avviato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

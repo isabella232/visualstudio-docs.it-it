@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b26646df5958bd6070ee0c30dbe574070cd1127a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458627"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212153"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Recupera un oggetto locale dell'analizzatore di espressioni espressione dato il nome della metrica.
@@ -44,21 +44,17 @@ private int GetEELocalObject(
 ```
 
 ## <a name="parameters"></a>Parametri
- `guidLang`\
+`guidLang`\
+[in] Identificatore univoco del linguaggio di programmazione.
 
- [in] Identificatore univoco del linguaggio di programmazione.
+`guidVendor`\
+[in] Identificatore univoco del fornitore.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nome della metrica.
 
- [in] Identificatore univoco del fornitore.
-
- `pszMetric`\
-
- [in] Nome della metrica.
-
- `ppUnk`\
-
- [out] Restituisce l'espressione di oggetto locale dell'analizzatore di espressioni.
+`ppUnk`\
+[out] Restituisce l'espressione di oggetto locale dell'analizzatore di espressioni.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

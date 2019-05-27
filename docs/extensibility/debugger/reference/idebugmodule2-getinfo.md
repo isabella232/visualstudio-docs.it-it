@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0a5ad3d7651e89c2ef864a184155e8b0a430d79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ffc9dc5e7383c17dbcf55e514da9dfb2c452f81d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872731"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203118"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 Ottiene informazioni su questo modulo.
@@ -39,14 +42,12 @@ int GetInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwFields`
+## <a name="parameters"></a>Parametri
+`dwFields`\
+[in] Una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specificano quali campi della `pInfo` sono da compilare.
 
- [in] Una combinazione di flag dal [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumerazione che specificano quali campi della `pInfo` sono da compilare.
-
- `pInfo`
-
- [in, out] Oggetto [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura compilata con una descrizione del modulo.
+`pInfo`\
+[in, out] Oggetto [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struttura compilata con una descrizione del modulo.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

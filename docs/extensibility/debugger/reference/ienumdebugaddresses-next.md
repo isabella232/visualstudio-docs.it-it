@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a990c0843d34a0458e8646bea18e9bcc056e40b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4d8cb666478b870242a9fd9a7a5b0c8bd9ba60a1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915039"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203596"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
 Questo metodo restituisce il set successivo di elementi dall'enumerazione.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `celt`
+## <a name="parameters"></a>Parametri
+`celt`\
+[in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.
 
- [in] Il numero di elementi da recuperare. Specifica inoltre la dimensione massima del `rgelt` matrice.
+`rgelt`\
+[in, out] Matrice di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementi da compilare.
 
- `rgelt`
-
- [in, out] Matrice di [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) elementi da compilare.
-
- `pceltFetched`
-
- [out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.
+`pceltFetched`\
+[out] Restituisce il numero di elementi effettivamente restituiti nella `rgelt`.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'esito è positivo, restituisce `S_OK`. Restituisce `S_FALSE` se inferiore al numero richiesto di elementi potrebbe essere restituiti; in caso contrario, restituisce un codice di errore.

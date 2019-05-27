@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842717"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209334"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Imposta il valore indicato da una serie di byte consecutivi.
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwStart`
+## <a name="parameters"></a>Parametri
+`dwStart`\
+[in] Offset, in byte, dall'inizio dell'oggetto puntato.
 
- [in] Offset, in byte, dall'inizio dell'oggetto puntato.
+`dwCount`\
+[in] Il numero di byte da impostare.
 
- `dwCount`
+`pBytes`\
+[in] Matrice di byte che rappresenta il nuovo valore. Questo valore viene archiviato nell'oggetto, a partire dall'offset specificato.
 
- [in] Il numero di byte da impostare.
-
- `pBytes`
-
- [in] Matrice di byte che rappresenta il nuovo valore. Questo valore viene archiviato nell'oggetto, a partire dall'offset specificato.
-
- `pdwBytes`
-
- [out] Restituisce che il numero di byte effettivamente impostato.
+`pdwBytes`\
+[out] Restituisce che il numero di byte effettivamente impostato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

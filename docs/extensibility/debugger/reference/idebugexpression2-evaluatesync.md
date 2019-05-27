@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158e24a57838d7f7a1c7221fc243455b5a4bd2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9294649cae2944ad085a43ac422470995a77b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874238"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201083"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Questo metodo valuta l'espressione in modo sincrono.
@@ -42,22 +45,18 @@ int EvaluateSync(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`dwFlags`
+## <a name="parameters"></a>Parametri
+`dwFlags`\
+[in] Una combinazione di flag dal [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione che controllano la valutazione dell'espressione.
 
- [in] Una combinazione di flag dal [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumerazione che controllano la valutazione dell'espressione.
+`dwTimeout`\
+[in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
 
-`dwTimeout`
+`pExprCallback`\
+[in] Questo parametro è sempre un valore null.
 
- [in] Tempo massimo, espresso in millisecondi, di attesa prima della restituzione da questo metodo. Usare `INFINITE` per un'attesa indefinita.
-
-`pExprCallback`
-
- [in] Questo parametro è sempre un valore null.
-
-`ppResult`
-
- [out] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che contiene il risultato della valutazione dell'espressione.
+`ppResult`\
+[out] Restituisce il [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) oggetto che contiene il risultato della valutazione dell'espressione.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Alcuni codici di errore tipiche sono:

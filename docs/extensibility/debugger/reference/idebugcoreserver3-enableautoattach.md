@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875884"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205513"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Consente l'associazione automatica per i motori di debug specificato.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parametri
+`rgguidSpecificEngines`\
+[in] Matrice di GUID per ogni motore di debug per contrassegnare come collegamento automatico.
 
- [in] Matrice di GUID per ogni motore di debug per contrassegnare come collegamento automatico.
+`celtSpecificEngines`\
+[in] Il numero di motori specificato in `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] URL iniziale da usare quando ci si collega automaticamente.
 
- [in] Il numero di motori specificato in `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] URL iniziale da usare quando ci si collega automaticamente.
-
- `pbstrSessionID`
-
- [out] ID della sessione che è stata collegata automaticamente.
+`pbstrSessionID`\
+[out] ID della sessione che è stata collegata automaticamente.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore. Un codice di errore `E_AUTO_ATTACH_NOT_REGISTERED`, che indica che la class factory auto-attach non è stata registrata.

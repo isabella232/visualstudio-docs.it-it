@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 3a0d128666d3836495dd3169720bc6e58f6ef11e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224154"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207262"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Questo metodo ottiene il campo che contiene l'indirizzo di debug.
@@ -42,13 +42,11 @@ int GetContainerField(
 ```
 
 ## <a name="parameters"></a>Parametri
- `pAddress`\
+`pAddress`\
+[in] L'indirizzo come rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
- [in] L'indirizzo come rappresentato da un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
-
- `ppContainerField`\
-
- [out] Restituisce un campo contenitore rappresentato da un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaccia.
+`ppContainerField`\
+[out] Restituisce un campo contenitore rappresentato da un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
