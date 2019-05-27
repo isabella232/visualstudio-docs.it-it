@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c19070dce95a1f88398fe57d03e9d578086e9ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa910e483e4c743058d3671d8b873c5f88b4269e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922448"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206157"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Carica i simboli di debug specificata in memoria.
@@ -45,30 +48,24 @@ int LoadSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`ulAppDomainID`
+## <a name="parameters"></a>Parametri
+`ulAppDomainID`\
+[in] Identificatore del dominio dell'applicazione.
 
- [in] Identificatore del dominio dell'applicazione.
+`guidModule`\
+[in] Identificatore univoco del mondule.
 
-`guidModule`
+`baseAddress`\
+[in] Indirizzo di base di memoria.
 
- [in] Identificatore univoco del mondule.
+`pUnkMetadataImport`\
+[in] Oggetto che contiene i metadati del simbolo.
 
-`baseAddress`
+`bstrModuleName`\
+[in] Nome del modulo.
 
- [in] Indirizzo di base di memoria.
-
-`pUnkMetadataImport`
-
- [in] Oggetto che contiene i metadati del simbolo.
-
-`bstrModuleName`
-
- [in] Nome del modulo.
-
-`bstrSymSearchPath`
-
- [in] Percorso per cercare il file di simboli.
+`bstrSymSearchPath`\
+[in] Percorso per cercare il file di simboli.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

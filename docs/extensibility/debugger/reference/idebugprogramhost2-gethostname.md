@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 26f88e6e955b83bf96b0664ffc6daba9a5430aa9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870006"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203960"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Ottiene il titolo, un nome descrittivo o un nome file del processo di hosting di questo programma.
@@ -38,14 +41,12 @@ int GetHostName( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwType`
+## <a name="parameters"></a>Parametri
+`dwType`\
+[in] Un valore compreso il [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumerazione.
 
- [in] Un valore compreso il [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumerazione.
-
- `pbstrHostName`
-
- [out] Restituisce il nome richiesto del processo di hosting.
+`pbstrHostName`\
+[out] Restituisce il nome richiesto del processo di hosting.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

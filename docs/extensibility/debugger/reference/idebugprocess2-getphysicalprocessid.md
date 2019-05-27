@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8a822932479cab7b62be52951c83c6d016fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d0faef6eb5e327f0f41b6e9091e8a4e0eed265c6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870891"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208862"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 Ottiene l'identificatore di processo di sistema.
@@ -36,10 +39,9 @@ int GetPhysicalProcessId(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pdwProcessId`
-
- [out] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura compilata con le informazioni sull'identificatore di processo di sistema.
+## <a name="parameters"></a>Parametri
+`pdwProcessId`\
+[out] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura compilata con le informazioni sull'identificatore di processo di sistema.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

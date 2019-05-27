@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad3e4c14c28f220a28e8d9aa65ddb1b6e6a3af0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918788"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210547"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Scrive il numero specificato di byte di memoria, iniziando in corrispondenza dell'indirizzo specificato.
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pStartContext`
+## <a name="parameters"></a>Parametri
+`pStartContext`\
+[in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare la scrittura dei byte.
 
- [in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare la scrittura dei byte.
+`dwCount`\
+[in] Il numero di byte da scrivere.
 
- `dwCount`
-
- [in] Il numero di byte da scrivere.
-
- `rgbMemory`
-
- [in] Byte da scrivere. Questa matrice si presuppone che sia almeno `dwCount` byte le dimensioni.
+`rgbMemory`\
+[in] Byte da scrivere. Questa matrice si presuppone che sia almeno `dwCount` byte le dimensioni.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` se non tutti i byte può essere scritta o restituisce un codice di errore (in genere `E_FAIL`).

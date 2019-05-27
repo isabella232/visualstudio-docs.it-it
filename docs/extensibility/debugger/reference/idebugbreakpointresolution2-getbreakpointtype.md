@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 11492bf05ae7264263c9347304cc01ae3cf3d89b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876888"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204017"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Ottiene il tipo del punto di interruzione rappresentato da questa soluzione.
@@ -36,10 +39,9 @@ int GetBreakpointType( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`pBPType`
-
- [out] Restituisce un valore di [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica il tipo del punto di interruzione.
+## <a name="parameters"></a>Parametri
+`pBPType`\
+[out] Restituisce un valore di [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumerazione che specifica il tipo del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce E_FAIL se il `bpResLocation` campo associato [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura non è valida.

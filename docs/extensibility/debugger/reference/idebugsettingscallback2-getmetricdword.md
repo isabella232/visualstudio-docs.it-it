@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 524598a4fdac3e9b06a91623d6ff2d37a1919ffa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457325"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212078"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Recupera il valore di una metrica in base al nome.
@@ -44,21 +44,17 @@ private int GetMetricDword(
 ```
 
 ## <a name="parameters"></a>Parametri
- `pszType`\
+`pszType`\
+[in] Tipo di metrica.
 
- [in] Tipo di metrica.
+`guidSection`\
+[in] Identificatore univoco della sezione.
 
- `guidSection`\
+`pszMetric`\
+[in] Nome della metrica.
 
- [in] Identificatore univoco della sezione.
-
- `pszMetric`\
-
- [in] Nome della metrica.
-
- `pdwValue`\
-
- [out] Restituisce il valore della metrica.
+`pdwValue`\
+[out] Restituisce il valore della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

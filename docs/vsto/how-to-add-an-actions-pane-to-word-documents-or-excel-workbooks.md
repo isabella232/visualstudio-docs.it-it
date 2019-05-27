@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel'
+title: Aggiungere un riquadro azioni ai documenti Word o le cartelle di lavoro di Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aed3ace3765bb9f160117503deb7373e12e510ad
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427901"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177776"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procedura: Aggiungere un riquadro Azioni ai documenti Word o alle cartelle di lavoro Excel
   Per aggiungere un riquadro azioni a un documento di Microsoft Office Word o una cartella di lavoro di Microsoft Excel, creare innanzitutto un controllo utente Windows Form. Quindi, aggiungere il controllo utente per il <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> proprietà del `ThisDocument.ActionsPane` campo (Word) o `ThisWorkbook.ActionsPane` campo (Excel) nel progetto.

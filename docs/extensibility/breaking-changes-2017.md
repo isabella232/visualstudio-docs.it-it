@@ -9,13 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-monikerRange: vs-2017
-ms.openlocfilehash: e7363a0779721e4fb36106d6ee77324c341517ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26f0facec34c04e5b228e346d1559ffe4f179fa1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926835"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212235"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -64,7 +63,7 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 * Assembly che sono stati installati solo nella Global Assembly Cache:
 
-   Questi assembly vengono ora installati sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]*. Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
+   Questi assembly vengono ora installati sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* . Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
 
 * Assembly che sono stati installati in un percorso probe non e Global Assembly Cache:
 
@@ -106,8 +105,8 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 * Visual Studio installato in precedenza, numero di chiavi del Registro di sistema al sistema **HKEY_LOCAL_MACHINE** e **HKEY_CURRENT_USER** hive in una chiave specifica di Visual Studio:
 
-  * **HKLM\Software\Microsoft\VisualStudio\{Version}**: Chiavi del Registro di sistema create da programmi di installazione MSI ed estensioni per i singoli computer.
-  * **HKCU\Software\Microsoft\VisualStudio\{Version}**: Chiavi del Registro di sistema create da Visual Studio per archiviare le impostazioni specifiche dell'utente.
+  * **HKLM\Software\Microsoft\VisualStudio\{Version}** : Chiavi del Registro di sistema create da programmi di installazione MSI ed estensioni per i singoli computer.
+  * **HKCU\Software\Microsoft\VisualStudio\{Version}** : Chiavi del Registro di sistema create da Visual Studio per archiviare le impostazioni specifiche dell'utente.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}_Config**: Una copia della chiave di Visual Studio HKLM precedente, oltre le chiavi del Registro di sistema dall'unione *pkgdef* file dalle estensioni.
 
 * Per ridurre l'impatto sul Registro di sistema, Visual Studio Usa ora la [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) per archiviare le chiavi del Registro di sistema in un file binario privato nella funzione *[VSAPPDATA]\privateregistry.bin*. Solo un numero molto ridotto di chiavi specifico di Visual Studio rimane nel Registro di sistema.

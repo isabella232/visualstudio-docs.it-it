@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5455424070d475d3c26f91a18ffebf0cc6747d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59f8f0d499b681b5ccda9e748af4b8ecac67daad
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872159"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209529"
 ---
 # <a name="idebugpendingbreakpoint2getstate"></a>IDebugPendingBreakpoint2::GetState
 Ottiene lo stato del punto di interruzione in sospeso.
@@ -37,10 +40,9 @@ int GetState( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pState`
-
- [in, out] Oggetto [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura compilata con una descrizione di questo oggetto in sospeso punto di interruzione.
+## <a name="parameters"></a>Parametri
+`pState`\
+[in, out] Oggetto [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) struttura compilata con una descrizione di questo oggetto in sospeso punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

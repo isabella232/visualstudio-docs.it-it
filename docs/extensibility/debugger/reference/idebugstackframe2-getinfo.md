@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 71bb25e93cc1a3f97e61e269270cd87a0bc36558
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458542"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209959"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Ottiene una descrizione del frame dello stack.
@@ -44,17 +44,14 @@ int GetInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametri
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi del `pFrameInfo` parametro devono essere compilati.
 
- [in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi del `pFrameInfo` parametro devono essere compilati.
+`nRadix`\
+[in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
 
- `nRadix`\
-
- [in] La radice da utilizzare nella formattazione qualsiasi informazioni numeriche.
-
- `pFrameInfo`\
-
- [out] Oggetto [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura compilata con la descrizione del frame dello stack.
+`pFrameInfo`\
+[out] Oggetto [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) struttura compilata con la descrizione del frame dello stack.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

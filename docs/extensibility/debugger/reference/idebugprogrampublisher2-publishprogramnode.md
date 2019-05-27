@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d6dd1d1b28ac4419604635b68767237eb6ce7d4
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 40c0cd23c8f89707bf1ef166b9059819448048e2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211675"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Rende un nodo di programma disponibili per l'uso da parte dei motori di debug (DEs) e la sessione di debug manager (SDM).
@@ -40,9 +40,8 @@ int PublishProgramNode(
 ```
 
 ## <a name="parameters"></a>Parametri
- `pProgramNode`\
-
- [in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma per rendere disponibili.
+`pProgramNode`\
+[in] Un' [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma per rendere disponibili.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

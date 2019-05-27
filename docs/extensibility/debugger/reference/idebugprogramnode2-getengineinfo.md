@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459074"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211692"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Ottiene il nome e l'identificatore del motore di debug (DE) che esegue un programma.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parametri
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Restituisce il nome della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).
 
- [out] Restituisce il nome della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il nome il modulo di gestione).
-
- `pguidEngine`\
-
- [out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore).
+`pguidEngine`\
+[out] Restituisce l'identificatore univoco globale della DE esecuzione del programma (C++-specifici: può trattarsi di un puntatore null, che indica che il chiamante non è interessato il GUID del motore).
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

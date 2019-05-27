@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9248ad59a564207befb0b0a3ff1c229840ee336b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6df09a360380952482fef62b725707cd6aa86e48
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457720"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211443"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 Restituisce un riferimento al valore della proprietà.
@@ -40,9 +40,8 @@ int GetReference(
 ```
 
 ## <a name="parameters"></a>Parametri
- `ppRererence`\
-
- [out] Restituisce un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto che rappresenta un riferimento al valore della proprietà.
+`ppRererence`\
+[out] Restituisce un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) oggetto che rappresenta un riferimento al valore della proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore, in genere `E_NOTIMPL` o `E_GETREFERENCE_NO_REFERENCE`.

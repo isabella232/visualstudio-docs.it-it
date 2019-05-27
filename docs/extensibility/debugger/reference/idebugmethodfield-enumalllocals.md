@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 92467655a8f3baaf347a28a30fbeb40fc0b3731c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872990"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210342"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Crea un enumeratore per tutte le variabili locali del metodo, inclusi quelli generati internamente da un compilatore.
@@ -38,14 +41,12 @@ int EnumAllLocals(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pAddress`
+## <a name="parameters"></a>Parametri
+`pAddress`\
+[in] Un' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta un indirizzo di debug all'interno del metodo, che punta a un ambito specifico o di contesto.
 
- [in] Un' [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) oggetto che rappresenta un indirizzo di debug all'interno del metodo, che punta a un ambito specifico o di contesto.
-
- `ppLocals`
-
- [out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) rappresentano l'elenco di tutte le variabili locali nell'ambito specificato dell'oggetto; in caso contrario, restituisce un valore null indicante che nessuna variabile locale.
+`ppLocals`\
+[out] Restituisce un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) rappresentano l'elenco di tutte le variabili locali nell'ambito specificato dell'oggetto; in caso contrario, restituisce un valore null indicante che nessuna variabile locale.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK o restituisce S_FALSE se non sono variabili non locali. In caso contrario, verrà restituito un codice di errore.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f35c63310abe227dd50428d34122787ed0fb292
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212618"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Crea un oggetto matrice. Questa matrice può contenere una primitiva o i valori dell'istanza dell'oggetto.
@@ -46,30 +49,24 @@ int CreateArrayObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ot`
+## <a name="parameters"></a>Parametri
+`ot`\
+[in] Specifica un valore di [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumerazione che indica il tipo del nuovo oggetto matrice.
 
- [in] Specifica un valore di [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumerazione che indica il tipo del nuovo oggetto matrice.
+`pClassField`\
+[in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta la classe di un oggetto, se la creazione di una matrice di oggetti i valori dell'istanza. Se si crea una matrice di oggetti primitivi, questo parametro è un valore null.
 
- `pClassField`
+`dwRank`\
+[in] Il numero di dimensioni o il numero di dimensioni della matrice.
 
- [in] Un' [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto che rappresenta la classe di un oggetto, se la creazione di una matrice di oggetti i valori dell'istanza. Se si crea una matrice di oggetti primitivi, questo parametro è un valore null.
+`dwDims`\
+[in] Le dimensioni di ogni dimensione della matrice.
 
- `dwRank`
+`dwLowBounds`\
+[in] L'origine di ogni dimensione (in genere 0 o 1).
 
- [in] Il numero di dimensioni o il numero di dimensioni della matrice.
-
- `dwDims`
-
- [in] Le dimensioni di ogni dimensione della matrice.
-
- `dwLowBounds`
-
- [in] L'origine di ogni dimensione (in genere 0 o 1).
-
- `ppObject`
-
- [out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta la matrice appena creata. Si tratta in realtà un' [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) oggetto.
+`ppObject`\
+[out] Restituisce un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) oggetto che rappresenta la matrice appena creata. Si tratta in realtà un' [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

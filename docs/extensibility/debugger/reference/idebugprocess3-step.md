@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24adde5d1c1a89949861481a3d370219875c2eb1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412960"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210947"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Fa sì che il processo eseguire un'istruzione o istruzione.
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pThread`
+## <a name="parameters"></a>Parametri
+`pThread`\
+[in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in corso rientri.
 
- [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in corso rientri.
+`sk`\
+[in] Uno dei [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valori.
 
- `sk`
-
- [in] Uno dei [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valori.
-
- `step`
-
- [in] Uno dei [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valori.
+`step`\
+[in] Uno dei [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valori.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce il codice di errore.

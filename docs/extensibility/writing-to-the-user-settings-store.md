@@ -1,6 +1,6 @@
 ---
 title: La scrittura in Store le impostazioni utente | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444907"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206889"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 Le impostazioni utente sono le impostazioni modificabili come quelli nel **Strumenti / opzioni** finestra di dialogo, finestre delle proprietà e alcune altre finestre di dialogo. Estensioni di Visual Studio possono usarle per archiviare piccole quantità di dati. Questa procedura dettagliata illustra come aggiungere il blocco note a Visual Studio come uno strumento esterno per leggere e scrivere nell'archivio delle impostazioni utente.
-
-### <a name="backing-up-your-user-settings"></a>Backup di impostazioni utente
-
-1. È necessario essere in grado di reimpostare le impostazioni di strumenti esterni, in modo che sia possibile eseguire il debug e ripetere la procedura. A tale scopo, è necessario salvare le impostazioni originali in modo che sia possibile ripristinarli in base alle esigenze.
-
-2. Aprire Regedit.exe.
-
-3. Passare a strumenti HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
-
-    > [!NOTE]
-    > Assicurarsi che si sta esaminando la chiave che contiene \14.0Exp\ e non \14.0\\. Quando si esegue l'istanza sperimentale di Visual Studio, le impostazioni utente sono nell'hive del Registro di sistema "14.0Exp".
-
-4. Pulsante destro del mouse sulla sottochiave \External Tools\ e quindi fare clic su **esportare**. Verificare che l'opzione **rami selezionati** sia selezionata.
-
-5. Salvare il file esterno Tools.reg risulta.
-
-6. In un secondo momento, quando si desidera reimpostare le impostazioni di strumenti esterni, selezionare la chiave del Registro di sistema Tools \ HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External e fare clic su **eliminare** nel menu di scelta rapida.
-
-7. Quando la **Conferma chiave di eliminazione** verrà visualizzata la finestra di dialogo, fare clic su **Yes**.
-
-8. Fare doppio clic il file esterno Tools.reg salvato in precedenza, fare clic su **Apri con**, quindi fare clic su **dell'Editor del Registro di sistema**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Scrittura nell'archivio delle impostazioni utente
 
