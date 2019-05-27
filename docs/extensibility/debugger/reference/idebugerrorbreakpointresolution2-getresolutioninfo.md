@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f399c82e5bc5619e0690cb27245baab9944c9377
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06d2c04cdfacc2723e716eff88d3d5acf6c229b6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874617"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199993"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
 Ottiene informazioni sulla risoluzione di errori i punto di interruzione.
@@ -38,13 +41,11 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`dwFields`
-
+## <a name="parameters"></a>Parametri
+`dwFields`\
 [in] Una combinazione di flag dal [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumerazione che determinano quali campi della `pErrorResolutionInfo` sono da compilare.
 
-`pErrorResolutionInfo`
-
+`pErrorResolutionInfo`\
 [in, out] Il [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) struttura compilata con la descrizione della risoluzione del punto di interruzione.
 
 ## <a name="return-value"></a>Valore restituito

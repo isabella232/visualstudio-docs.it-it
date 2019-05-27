@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6250c06315c7b4e9437ecd577f961fb3f0ee7953
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458130"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210101"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crea una copia di un oggetto dati specifico per l'analizzatore di espressioni (EE).
@@ -42,13 +42,11 @@ int CreateReplacementObject(
 ```
 
 ## <a name="parameters"></a>Parametri
- `dataIn`\
+`dataIn`\
+[in] Un' [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che contiene i dati da copiare.
 
- [in] Un' [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto che contiene i dati da copiare.
-
- `dataOut`\
-
- [out] Restituisce un nuovo `IEEDataStorage` oggetto.
+`dataOut`\
+[out] Restituisce un nuovo `IEEDataStorage` oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

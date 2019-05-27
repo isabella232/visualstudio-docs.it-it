@@ -1,5 +1,5 @@
 ---
-title: Che fornisce informazioni sui pacchetti e distribuzione negli elementi di progetto | Microsoft Docs
+title: Informazioni di assemblaggio e distribuzione negli elementi di progetto
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550501"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177703"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornire le informazioni di creazione di pacchetti e distribuzione negli elementi di progetto
   Tutti gli elementi di progetto SharePoint in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dispongono di proprietà che è possibile usare per fornire dati aggiuntivi quando il progetto viene distribuito in SharePoint. Di seguito sono riportate le proprietà:

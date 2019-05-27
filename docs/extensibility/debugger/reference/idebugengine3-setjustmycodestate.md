@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fff1334c29ad4da5edb90c9a3b289582a8f616d8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920899"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212506"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Le informazioni di stato JustMyCode, questo metodo indica al motore di debug.
@@ -40,18 +43,15 @@ int SetJustMyCodeState(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `fUpdate`
+## <a name="parameters"></a>Parametri
+`fUpdate`\
+[in] Diverso da zero (`TRUE`) per aggiornare le informazioni correnti, zero (`FALSE`) per reimpostare tutte le informazioni (ignorando qualsiasi tipo impostato in precedenza).
 
- [in] Diverso da zero (`TRUE`) per aggiornare le informazioni correnti, zero (`FALSE`) per reimpostare tutte le informazioni (ignorando qualsiasi tipo impostato in precedenza).
+`dwModules`\
+[in] Numero di strutture di informazioni in `rgJMCSpec.`
 
- `dwModules`
-
- [in] Numero di strutture di informazioni in `rgJMCSpec.`
-
- `rgJMCSpec`
-
- [in] Matrice di [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) strutture da usare.
+`rgJMCSpec`\
+[in] Matrice di [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) strutture da usare.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.

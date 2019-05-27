@@ -22,7 +22,8 @@
 ## [Creazione di nuovi progetti](create-new-projects.md)
 ## [Aggiunta e rimozione di elementi di progetto](add-and-remove-project-items.md)
 ## [Gestione delle proprietà di soluzioni e progetti](managing-solutions-and-project-properties.md)
-## [Gestione dei riferimenti in un progetto](managing-references-in-a-project.md)
+## Gestione dei riferimenti in un progetto
+### [Panoramica](managing-references-in-a-project.md)
 ### [Procedura dettagliata per includere un pacchetto NuGet nel progetto](nuget-walkthrough.md)
 ## [Gestione delle risorse dell'app](managing-app-resources.md)
 ## [Procedura: Aprire più soluzioni o istanze](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Operazioni di compilazione](build-actions.md)
 ## [Procedura: Impostare più progetti di avvio](set-startup-projects.md)
 ## [Personalizzazione del processo di compilazione](customizing-build-system.md)
-## [Configurazioni](configurations.md)
+## Configurazioni
+### [Informazioni sulle configurazioni della build](configurations.md)
 ### [Creare e modificare le configurazioni](create-and-edit-configurations.md)
 
 # Controllo della versione
@@ -67,14 +69,18 @@
 
 # Carichi di lavoro
 ## [Carichi di lavoro disponibili](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [Supporto di .NET Core](net-core-support.md)
+### [Creazione della prima app ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript e TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Panoramica](azure-workload.md)
 ### [Introduzione alle funzioni di Azure](azure-functions.md)
 ### [Esercitazione: Funzioni di Azure](azure-functions-lab.md)
 ### [Servizi connessi](connected-services.md)
-## [Sviluppo di giochi con Unity](unity-tools.md)
+## Sviluppo di giochi con Unity
+### [Sviluppo di giochi con Unity](unity-tools.md)
 ### [Configurazione](setup-vsmac-tools-unity.md)
 ### [Uso degli strumenti di Unity](using-vsmac-tools-unity.md)
 ### [Uso di .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

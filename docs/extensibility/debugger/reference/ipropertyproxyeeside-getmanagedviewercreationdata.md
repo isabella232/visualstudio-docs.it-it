@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 09d86fb259cb4fe04b55211acbd60833e6362855
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8ae4a20735c02f564cbf5c749247ec16572c034
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458144"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198829"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 Recupera informazioni sul Visualizzatore per questo tipo di proprietà per creare un'istanza di tale visualizzatore.
@@ -50,29 +50,23 @@ int GetManagedViewerCreationData(
 ```
 
 ## <a name="parameters"></a>Parametri
- `assemName`\
+`assemName`\
+[out] Restituisce il nome dell'assembly che contiene questo oggetto.
 
- [out] Restituisce il nome dell'assembly che contiene questo oggetto.
+`assemBytes`\
+[out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly di questo oggetto (questo è un valore null se non sono disponibile alcun byte).
 
- `assemBytes`\
+`assemPdb`\
+[out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione le informazioni per questo oggetto (questo è un valore null se non è disponibile alcun archivio simboli).
 
- [out] Restituisce un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) oggetto contenente i byte dell'assembly di questo oggetto (questo è un valore null se non sono disponibile alcun byte).
+`className`\
+[out] Restituisce il nome della classe che contiene questo oggetto.
 
- `assemPdb`\
+`alr`\
+[out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione dell'assembly.
 
- [out] Restituisce un `IEEDataStorage` oggetto contenente il simbolo di archiviazione le informazioni per questo oggetto (questo è un valore null se non è disponibile alcun archivio simboli).
-
- `className`\
-
- [out] Restituisce il nome della classe che contiene questo oggetto.
-
- `alr`\
-
- [out] Restituisce un valore di [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumerazione che indica la posizione dell'assembly.
-
- `replacementOk`\
-
- [out] Restituisce diversi da zero (`TRUE`) se il valore dell'oggetto può essere modificato; zero (`FALSE`) se l'oggetto è di sola lettura.
+`replacementOk`\
+[out] Restituisce diversi da zero (`TRUE`) se il valore dell'oggetto può essere modificato; zero (`FALSE`) se l'oggetto è di sola lettura.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

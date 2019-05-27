@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5877f43402d2bac8284be8d24d0c94cd2052a313
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919405"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200848"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Crea un oggetto usando un costruttore.
@@ -42,22 +45,18 @@ int CreateObject(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pConstructor`
+## <a name="parameters"></a>Parametri
+`pConstructor`\
+[in] Un' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) oggetto che rappresenta il costruttore dell'oggetto da creare.
 
- [in] Un' [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) oggetto che rappresenta il costruttore dell'oggetto da creare.
+`dwArgs`\
+[in] Il numero di parametri in di `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.
 
- `dwArgs`
+`pArg`\
+[in] Matrice di [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) gli oggetti che rappresentano i parametri passati al costruttore.
 
- [in] Il numero di parametri in di `pArg` matrice. Rappresenta il numero di parametri passati al costruttore.
-
- `pArg`
-
- [in] Matrice di [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) gli oggetti che rappresentano i parametri passati al costruttore.
-
- `ppObject`
-
- [out] Restituisce un `IDebugObject` che rappresenta l'oggetto appena creato.
+`ppObject`\
+[out] Restituisce un `IDebugObject` che rappresenta l'oggetto appena creato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

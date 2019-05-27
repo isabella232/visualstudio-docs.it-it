@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9048dc633dd9cc74a9d27c54ff9b0fba16cc7ac1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c9e660e27397c530d4ef06c8ddfa3312ee4888cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458987"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203718"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 Consente di ricevere una notifica degli eventi porta il processo.
@@ -50,9 +50,8 @@ int WatchForProviderEvents(
 ```
 
 ## <a name="parameters"></a>Parametri
- `Flags`\
-
- [in] Una combinazione di flag dal [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumerazione. I flag seguenti sono più comuni per questa chiamata:
+`Flags`\
+[in] Una combinazione di flag dal [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumerazione. I flag seguenti sono più comuni per questa chiamata:
 
 |Flag|Descrizione|
 |----------|-----------------|
@@ -61,25 +60,20 @@ int WatchForProviderEvents(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Chiamante è stato collegato a ma non avviare dal debugger.|
 |`PFLAG_REASON_WATCH`|Chiamante desidera il controllo degli eventi. Se questo flag non è impostato. quindi viene rimosso l'evento di callback e il chiamante non riceve più notifiche.|
 
- `pPort`\
+`pPort`\
+[in] La porta del processo chiamante è in corso.
 
- [in] La porta del processo chiamante è in corso.
+`processId`\
+[in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.
 
- `processId`\
+`EngineFilter`\
+[in] Una matrice di GUID di motori di debug associati al processo.
 
- [in] Un' [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struttura che contiene l'ID del processo che contiene il programma in questione.
+`guidLaunchingEngine`\
+[in] GUID del motore di debug che ha avviato questo processo (se presente).
 
- `EngineFilter`\
-
- [in] Una matrice di GUID di motori di debug associati al processo.
-
- `guidLaunchingEngine`\
-
- [in] GUID del motore di debug che ha avviato questo processo (se presente).
-
- `pEventCallback`\
-
- [in] Un' [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) oggetto che riceve le notifiche degli eventi.
+`pEventCallback`\
+[in] Un' [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) oggetto che riceve le notifiche degli eventi.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ed12526422a38b7b3b629a0acafc019b2e94a5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2556a424e5109e75b667e9f32ecac5cc26ca781b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921882"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205332"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Ottiene il nome dell'attributo personalizzato.
@@ -36,10 +39,9 @@ int GetName(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `bstrName`
-
- [out] Restituisce una stringa contenente il nome dell'attributo personalizzato.
+## <a name="parameters"></a>Parametri
+`bstrName`\
+[out] Restituisce una stringa contenente il nome dell'attributo personalizzato.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

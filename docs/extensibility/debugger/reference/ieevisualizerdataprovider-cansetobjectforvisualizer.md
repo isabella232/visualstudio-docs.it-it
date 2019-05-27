@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e66f14ca1191a164236b78837297f20881ff0178
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a19bbe5a0d5529cdf2f48d48810390a333d68cf9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224087"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199198"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 Questo metodo determina se il visualizzatore può avere l'oggetto dati rappresenta aggiornato.
@@ -40,9 +40,8 @@ int CanSetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parametri
- `b`\
-
- [out] Diverso da zero (`TRUE`) se l'oggetto nel visualizzatore può essere aggiornato, zero (`FALSE`) se non è possibile.
+`b`\
+[out] Diverso da zero (`TRUE`) se l'oggetto nel visualizzatore può essere aggiornato, zero (`FALSE`) se non è possibile.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

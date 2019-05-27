@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0ee90dfdcb38c938d87ed35aadca07540af34539
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7e8d75d33afc3078fc480c6a99d33dd975904f24
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458264"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203271"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Restituisce il contesto del codice che rappresenta una posizione se l'operazione di rimozione di uno stack si è verificato.
@@ -40,9 +40,8 @@ int GetUnwindCodeContext(
 ```
 
 ## <a name="parameters"></a>Parametri
- `ppCodeContext`\
-
- [out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta la posizione del contesto codice se si è verificato uno svuotamento dello stack.
+`ppCodeContext`\
+[out] Restituisce un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) oggetto che rappresenta la posizione del contesto codice se si è verificato uno svuotamento dello stack.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

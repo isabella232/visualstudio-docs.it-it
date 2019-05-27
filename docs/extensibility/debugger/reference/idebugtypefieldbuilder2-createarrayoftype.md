@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 545c2cc9565d70ea40d6a38516eac4c03fc3497d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56954d1cf33974fc93aa966db6b5be0d03d1c979
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226259"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199337"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Crea una matrice del tipo specificato e delle dimensioni.
@@ -43,17 +43,14 @@ int CreateArrayOfType (
 ```
 
 ## <a name="parameters"></a>Parametri
- `pTypeField`\
+`pTypeField`\
+[in] Tipo degli elementi che della matrice conterrà.
 
- [in] Tipo degli elementi che della matrice conterrà.
+`rank`\
+[in] Numero di elementi nella matrice.
 
- `rank`\
-
- [in] Numero di elementi nella matrice.
-
- `pArrayOfTypeField`\
-
- [out] Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) gli oggetti che rappresentano la nuova matrice.
+`pArrayOfTypeField`\
+[out] Restituisce il [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) gli oggetti che rappresentano la nuova matrice.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

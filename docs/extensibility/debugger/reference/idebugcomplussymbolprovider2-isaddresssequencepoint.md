@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc56d0bda7d8b1797c29db6c2e72a5efc3d586d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e2ebf5c3a27f29b580088b891b3e0d4260aba447
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876404"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205923"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
 Determina se l'indirizzo di debug specificato è un punto di sequenza.
@@ -35,10 +38,9 @@ int IsAddressSequencePoint(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`pAddress`
-
- [in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
+## <a name="parameters"></a>Parametri
+`pAddress`\
+[in] Eseguire il debug indirizzo rappresentato dal [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
 Se l'indirizzo di debug è un punto di sequenza, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE`.

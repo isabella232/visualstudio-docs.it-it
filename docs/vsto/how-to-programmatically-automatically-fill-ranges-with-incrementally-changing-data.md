@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale'
+title: Riempimento automatico modificati in modo incrementale gli intervalli di dati a livello di codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428179"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177693"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedura: Compilare a livello di codice automaticamente gli intervalli con dati modificati in modo incrementale
   Il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo del <xref:Microsoft.Office.Interop.Excel.Range> consente di inserire automaticamente un intervallo in un foglio di lavoro con i valori. In genere, il <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> metodo viene usato per archiviare in modo incrementale aumentando o diminuendo i valori in un intervallo. È possibile specificare il comportamento, fornendo una costante facoltativa dal <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumerazione.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 43d8bd1a32328c47cd463fc6232466df5bdbd857
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d819f198c0eb3c298726ffb1c910b0a985406827
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461016"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212814"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Questa struttura rappresenta l'indirizzo di un metodo di una classe.
@@ -45,17 +45,14 @@ public struct METADATA_ADDRESS_METHOD {
 
 ## <a name="members"></a>Membri
  `tokMethod`\
-
  L'ID del metodo.
 
  [C++] `_mdToken` sia un `typedef` un 32-bit `int`.
 
  `dwOffset`\
-
  L'offset dall'inizio classe al metodo (può rappresentare l'offset in vtable).
 
  `dwVersion`\
-
  La versione del metodo (questo valore è univoco per il provider di simboli).
 
 ## <a name="remarks"></a>Note

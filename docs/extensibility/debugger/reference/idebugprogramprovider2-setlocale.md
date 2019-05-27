@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 460729bd2dd8f562888cf9c816343a4e2897124b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 50befd3758cbdda81bb6fa2b65f468088cfcade6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457781"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203743"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 Consente di stabilire le impostazioni locali da utilizzare per tutte le risorse specifiche delle impostazioni locali.
@@ -40,9 +40,8 @@ int SetLocale(
 ```
 
 ## <a name="parameters"></a>Parametri
- `wLangID`\
-
- [in] ID di lingua per stabilire. Ad esempio, 1033 per inglese.
+`wLangID`\
+[in] ID di lingua per stabilire. Ad esempio, 1033 per inglese.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

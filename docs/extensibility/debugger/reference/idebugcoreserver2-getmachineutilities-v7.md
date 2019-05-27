@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2929ed704d8b9642d30b9a7951a707db0635b319
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0aff4ccea937536530d74dde13a5ba8a7b14bca7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414047"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205676"
 ---
 # <a name="idebugcoreserver2getmachineutilitiesv7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 Questo metodo ottiene le utilità di computer per un server.
@@ -39,10 +42,9 @@ int GetMachineUtilities_V7(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppUtil`
-
- [out] Restituisce un `IDebugMDMUtil2_V7` interfaccia che rappresenta le informazioni di utilità macchina.
+## <a name="parameters"></a>Parametri
+`ppUtil`\
+[out] Restituisce un `IDebugMDMUtil2_V7` interfaccia che rappresenta le informazioni di utilità macchina.
 
 ## <a name="return-value"></a>Valore restituito
  Restituisce sempre `E_NOTIMPL`, che indica che il metodo non è implementato.

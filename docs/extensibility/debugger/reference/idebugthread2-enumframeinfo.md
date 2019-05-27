@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 1954a66c5104ec96b9b941e8bd1171c1fba88003
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225981"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199702"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera un elenco degli stack frame per questo thread.
@@ -44,17 +44,14 @@ int EnumFrameInfo ( 
 ```
 
 ## <a name="parameters"></a>Parametri
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi della [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture sono da compilare. Specificare il `FIF_FUNCNAME_FORMAT` flag per formattare il nome della funzione in un'unica stringa.
 
- [in] Una combinazione di flag dal [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumerazione che specifica quali campi della [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture sono da compilare. Specificare il `FIF_FUNCNAME_FORMAT` flag per formattare il nome della funzione in un'unica stringa.
+`nRadix`\
+[in] Radice usati nella formattazione di informazioni numeriche nell'enumeratore.
 
- `nRadix`\
-
- [in] Radice usati nella formattazione di informazioni numeriche nell'enumeratore.
-
- `ppEnum`\
-
- [out] Restituisce un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) oggetto che contiene un elenco delle [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture che descrivono lo stack frame.
+`ppEnum`\
+[out] Restituisce un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) oggetto che contiene un elenco delle [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) strutture che descrivono lo stack frame.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

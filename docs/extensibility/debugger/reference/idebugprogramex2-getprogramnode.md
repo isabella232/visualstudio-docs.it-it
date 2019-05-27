@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01e73b3f68247d3193d50acb87a96074f72ce3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c6a683aacf0de18ee4ce0b00f5f12c2104ce333
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869950"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211103"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 Ottiene il nodo di programma associato a un programma.
@@ -36,10 +39,9 @@ int GetProgramNode( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppProgramNode`
-
- [out] Restituisce un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma associato a questo programma.
+## <a name="parameters"></a>Parametri
+`ppProgramNode`\
+[out] Restituisce un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetto che rappresenta il nodo di programma associato a questo programma.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

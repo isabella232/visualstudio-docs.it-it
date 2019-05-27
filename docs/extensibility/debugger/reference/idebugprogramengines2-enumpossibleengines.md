@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917032"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211143"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Restituisce il GUID per tutti i possibili motori di debug (DE) che è possono eseguire il debug di questo programma.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `celtBuffer`
+## <a name="parameters"></a>Parametri
+`celtBuffer`\
+[in] Il numero di GUID DE da restituire. Specifica anche la dimensione massima del `rgguidEngines` matrice.
 
- [in] Il numero di GUID DE da restituire. Specifica anche la dimensione massima del `rgguidEngines` matrice.
+`rgguidEngines`\
+[in, out] Una matrice di GUID DE da compilare.
 
- `rgguidEngines`
-
- [in, out] Una matrice di GUID DE da compilare.
-
- `pceltEngines`
-
- [out] Restituisce il numero effettivo di GUID DE restituiti.
+`pceltEngines`\
+[out] Restituisce il numero effettivo di GUID DE restituiti.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore. Restituisce [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A se il buffer non è sufficientemente grande.

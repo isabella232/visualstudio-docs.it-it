@@ -231,6 +231,8 @@
               items:
                 - name: Creare modelli di progetto e di elementi
                   href: ide/creating-project-and-item-templates.md
+                - name: Aggiungere tag a un modello
+                  href: ide/template-tags.md
                 - name: Creare modelli di progetto
                   href: ide/how-to-create-project-templates.md
                 - name: Creare modelli per più progetti

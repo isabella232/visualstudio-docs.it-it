@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 887002086b50198ba192bde3f19390d3267a5c9d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7e00147917a1f06d2f661098686bd85a854c0670
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457358"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212007"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 Ottiene un'interfaccia specificata nell'ambito dei processi.
@@ -42,13 +42,11 @@ int UnmarshalDebuggeeInterface(
 ```
 
 ## <a name="parameters"></a>Parametri
- `riid`\
+`riid`\
+[in] GUID dell'interfaccia da ottenere.
 
- [in] GUID dell'interfaccia da ottenere.
-
- `ppvObject`\
-
- [out] Restituisce l'oggetto che implementa l'interfaccia desiderata. [C++] e può essere eseguito il cast direttamente al tipo di interfaccia desiderata. [C#] usare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'interfaccia desiderata.
+`ppvObject`\
+[out] Restituisce l'oggetto che implementa l'interfaccia desiderata. [C++] e può essere eseguito il cast direttamente al tipo di interfaccia desiderata. [C#] usare il <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodo per ottenere l'interfaccia desiderata.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

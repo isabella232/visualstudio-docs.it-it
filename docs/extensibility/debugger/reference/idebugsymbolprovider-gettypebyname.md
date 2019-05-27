@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0ec98b9c206975b122511648017f920a28905b09
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226390"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207104"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Questo metodo associa un nome di simbolo a un tipo di simbolo.
@@ -44,17 +44,14 @@ int GetTypeByName(
 ```
 
 ## <a name="parameters"></a>Parametri
- `pszClassName`\
+`pszClassName`\
+[in] Il nome del simbolo.
 
- [in] Il nome del simbolo.
+`nameMatch`\
+[in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.
 
- `nameMatch`\
-
- [in] Seleziona il tipo di corrispondenza, ad esempio, distinzione maiuscole/minuscole. Un valore compreso il [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumerazione.
-
- `ppField`\
-
- [out] Restituisce il tipo di simbolo come un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
+`ppField`\
+[out] Restituisce il tipo di simbolo come un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

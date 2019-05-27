@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b814c8097e001badafb93c27370ba5982eda48c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9c241faff4d444e4c59aaaa299cd5e348623feaf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918067"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204460"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 Recupera un elenco di tutte le porte fornite da un fornitore di porte.
@@ -36,10 +39,9 @@ int EnumPorts( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppEnum`
-
- [out] Restituisce un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) oggetto contenente un elenco di porte fornita.
+## <a name="parameters"></a>Parametri
+`ppEnum`\
+[out] Restituisce un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) oggetto contenente un elenco di porte fornita.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

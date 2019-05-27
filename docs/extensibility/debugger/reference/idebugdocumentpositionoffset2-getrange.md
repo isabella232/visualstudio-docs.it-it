@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8b309af47aed94c45eca418b390be041f66f609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c86b97fd2437f19e280d9cf9e81454cceee9e47f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921198"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199170"
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
 Recupera l'intervallo per la posizione corrente del documento.
@@ -36,14 +39,12 @@ public int GetRange(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pdwBegOffset`
+## <a name="parameters"></a>Parametri
+`pdwBegOffset`\
+[in, out] Offset per la posizione iniziale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
 
- [in, out] Offset per la posizione iniziale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
-
- `pdwEndOffset`
-
- [in, out] Offset per la posizione finale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
+`pdwEndOffset`\
+[in, out] Offset per la posizione finale dell'intervallo. Impostare questo parametro su un valore null se questa informazione non è necessaria.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

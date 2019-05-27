@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f253fc622beb6eee3490b77a1531b0b2096f14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1bfc8b813f1016f3c040d47120675f881b92020
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877043"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203136"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 Ottiene il motivo per cui il motore di debug (DE) desidera arrestare.
@@ -36,10 +39,9 @@ int GetReason( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pcr`
-
- [out] Restituisce un valore di [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) enumerazione che descrive il motivo per questo evento.
+## <a name="parameters"></a>Parametri
+`pcr`\
+[out] Restituisce un valore di [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) enumerazione che descrive il motivo per questo evento.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

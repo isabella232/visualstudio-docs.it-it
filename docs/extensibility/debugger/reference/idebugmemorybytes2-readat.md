@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873311"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210562"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Legge una sequenza di byte, a partire da una posizione specificata.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pStartContext`
+## <a name="parameters"></a>Parametri
+`pStartContext`\
+[in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare la lettura dei byte.
 
- [in] Il [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) che specifica la posizione in cui iniziare la lettura dei byte.
+`dwCount`\
+[in] Il numero di byte da leggere. Specifica la lunghezza del `rgbMemory` matrice.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Matrice contenente i byte effettivamente letti.
 
- [in] Il numero di byte da leggere. Specifica la lunghezza del `rgbMemory` matrice.
+`pdwRead`\
+[out] Restituisce il numero di byte contigui effettivamente letti.
 
- `rgbMemory`
-
- [in, out] Matrice contenente i byte effettivamente letti.
-
- `pdwRead`
-
- [out] Restituisce il numero di byte contigui effettivamente letti.
-
- `pdwUnreadable`
-
- [in, out] Restituisce il numero di byte illeggibile. Può essere un valore null se il client non il numero di byte illeggibile.
+`pdwUnreadable`\
+[in, out] Restituisce il numero di byte illeggibile. Può essere un valore null se il client non il numero di byte illeggibile.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

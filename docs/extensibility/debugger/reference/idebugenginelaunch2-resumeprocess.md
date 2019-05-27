@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6656ab3c8fc164a114e624aa5a7449bef3cc10e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9dc3d0b59c507743d78fd6954b8c98342fb4a0b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920587"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212455"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
 Riprende l'esecuzione del processo.
@@ -36,10 +39,9 @@ int ResumeProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pProcess`
-
- [in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo di essere ripreso.
+## <a name="parameters"></a>Parametri
+`pProcess`\
+[in] Un' [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) oggetto che rappresenta il processo di essere ripreso.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
