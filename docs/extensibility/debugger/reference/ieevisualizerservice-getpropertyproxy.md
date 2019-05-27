@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64a05032118588679efcc455953b76227a973319
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4779bb213f67527c62876410e2fdc92263754ae9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225861"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203661"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Questo metodo restituisce un proxy per un oggetto proprietà.
@@ -42,13 +42,11 @@ int GetPropertyProxy(
 ```
 
 ## <a name="parameters"></a>Parametri
- `dwID`\
+`dwID`\
+[in] ID del proxy di proprietà da recuperare.
 
- [in] ID del proxy di proprietà da recuperare.
-
- `proxy`\
-
- [out] Desired proxy implementato in una [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaccia.
+`proxy`\
+[out] Desired proxy implementato in una [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interfaccia.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

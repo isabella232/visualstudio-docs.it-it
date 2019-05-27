@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac97d97c17bd09882bc347116c2aec44db3f28a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: efd05ffb3d8b6d14f7e1e7732426b1ae453d2f49
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413368"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202466"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continua l'esecuzione di questo processo da arrestare. Qualsiasi stato di esecuzione precedente (ad esempio, un passaggio) viene mantenuto, e il processo viene avviato l'esecuzione anche in questo caso.
@@ -39,10 +42,9 @@ int Continue(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pThread`
-
- [in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread di proseguire.
+## <a name="parameters"></a>Parametri
+`pThread`\
+[in] Un' [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread di proseguire.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.

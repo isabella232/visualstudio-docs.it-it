@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d9c00f21ab39d5785acb0090b16b5b1fc193699
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 7edce84f512dd31963f38215e0d86e24c3d73b37
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224185"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199273"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Recupera il numero di byte specificato dall'oggetto.
@@ -44,17 +44,14 @@ int GetData(
 ```
 
 ## <a name="parameters"></a>Parametri
- `dataSize`\
+`dataSize`\
+[in] Il numero di byte da recuperare (il `data` matrice deve contenere almeno questo numero di byte).
 
- [in] Il numero di byte da recuperare (il `data` matrice deve contenere almeno questo numero di byte).
+`sizeGotten`\
+[out] Restituisce il numero di byte effettivamente recuperati.
 
- `sizeGotten`\
-
- [out] Restituisce il numero di byte effettivamente recuperati.
-
- `data`\
-
- [in, out] Matrice da riempire con i dati richiesti.
+`data`\
+[in, out] Matrice da riempire con i dati richiesti.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

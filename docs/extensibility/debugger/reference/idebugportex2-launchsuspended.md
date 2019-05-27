@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918312"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209010"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Avvia un file eseguibile.
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `pszExe`
+## <a name="parameters"></a>Parametri
+`pszExe`\
+[in] Il nome del file eseguibile da avviare. Può trattarsi di un percorso completo o relativo alla directory di lavoro specificata nella `pszDir` parametro.
 
- [in] Il nome del file eseguibile da avviare. Può trattarsi di un percorso completo o relativo alla directory di lavoro specificata nella `pszDir` parametro.
+`pszArgs`\
+[in] Gli argomenti da passare all'eseguibile. Può essere un valore null se non sono presenti argomenti.
 
- `pszArgs`
+`pszDir`\
+[in] Il nome della directory di lavoro usato dall'eseguibile. Può essere un valore null se non è necessaria alcuna directory di lavoro.
 
- [in] Gli argomenti da passare all'eseguibile. Può essere un valore null se non sono presenti argomenti.
+`bstrEnv`\
+[in] Blocco di ambiente di stringhe con terminazione null, seguita da un terminatore NULL aggiuntivo.
 
- `pszDir`
+`hStdInput`\
+[in] Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- [in] Il nome della directory di lavoro usato dall'eseguibile. Può essere un valore null se non è necessaria alcuna directory di lavoro.
+`hStdOutput`\
+[in] Handle per un flusso di output alternativi. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- `bstrEnv`
+`hStdError`\
+[in] Handle per un flusso di output di errore alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
 
- [in] Blocco di ambiente di stringhe con terminazione null, seguita da un terminatore NULL aggiuntivo.
-
- `hStdInput`
-
- [in] Handle per un flusso di input alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `hStdOutput`
-
- [in] Handle per un flusso di output alternativi. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `hStdError`
-
- [in] Handle per un flusso di output di errore alternativo. Può essere 0 se il reindirizzamento non è obbligatorio.
-
- `ppPortProcess`
-
- [out] Restituisce un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) oggetto che rappresenta il processo avviato.
+`ppPortProcess`\
+[out] Restituisce un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) oggetto che rappresenta il processo avviato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

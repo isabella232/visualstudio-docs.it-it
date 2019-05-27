@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22c85e4fbdeac2aadf9cb412c367721a923847c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01eded82f6a208785f48e9e933c0511cdc452ea9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876369"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205694"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 Recupera un elenco di tutti i fornitori di porte disponibili.
@@ -36,10 +39,9 @@ int EnumPortSuppliers(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `ppEnum`
-
- [out] Restituisce un [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) oggetto che contiene un elenco di tutti i fornitori di porte.
+## <a name="parameters"></a>Parametri
+`ppEnum`\
+[out] Restituisce un [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) oggetto che contiene un elenco di tutti i fornitori di porte.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

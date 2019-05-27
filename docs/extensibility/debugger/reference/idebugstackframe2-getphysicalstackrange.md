@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457272"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212859"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Ottiene una rappresentazione dipende dal computer dell'intervallo di indirizzi fisici associati a uno stack frame.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parametri
- `paddrMin`\
+`paddrMin`\
+[out] Restituisce l'indirizzo fisico più basso associato con questo stack frame.
 
- [out] Restituisce l'indirizzo fisico più basso associato con questo stack frame.
-
- `paddrMax`\
-
- [out] Restituisce l'indirizzo fisico più alta associato con questo stack frame.
+`paddrMax`\
+[out] Restituisce l'indirizzo fisico più alta associato con questo stack frame.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876382"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205836"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 I simboli di debug carichi le **ICorDebugModule** oggetto.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`ulAppDomainID`
+## <a name="parameters"></a>Parametri
+`ulAppDomainID`\
+[in] Identificatore del dominio dell'applicazione.
 
- [in] Identificatore del dominio dell'applicazione.
+`guidModule`\
+[in] Identificatore univoco del modulo.
 
-`guidModule`
+`baseAddress`\
+[in] Indirizzo di base di memoria.
 
- [in] Identificatore univoco del modulo.
+`pUnkMetadataImport`\
+[in] Oggetto che contiene i metadati di simboli di debug.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Indirizzo di base di memoria.
+`bstrModuleName`\
+[in] Nome del modulo.
 
-`pUnkMetadataImport`
-
- [in] Oggetto che contiene i metadati di simboli di debug.
-
-`pUnkCorDebugModule`
-
- [in] Oggetto che implementa il [ICorDebugModule (interfaccia)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nome del modulo.
-
-`bstrSymSearchPath`
-
- [in] Percorso per cercare il file di simboli.
+`bstrSymSearchPath`\
+[in] Percorso per cercare il file di simboli.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

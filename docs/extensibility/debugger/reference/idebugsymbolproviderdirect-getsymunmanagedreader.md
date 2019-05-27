@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 452866f885bb438589474bbb82e88e10300d988d
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d73e04572a122c0bc6b3d3885b9806c54077fa83
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224156"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206938"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 Recupera un lettore di simboli per codice non gestito.
@@ -43,17 +43,14 @@ int GetSymUnmanagedReader (
 ```
 
 ## <a name="parameters"></a>Parametri
- `ulAppDomainID`\
+`ulAppDomainID`\
+[in] Identificatore del dominio dell'applicazione.
 
- [in] Identificatore del dominio dell'applicazione.
+`guidModule`\
+[in] Identificatore univoco del modulo.
 
- `guidModule`\
-
- [in] Identificatore univoco del modulo.
-
- `ppSymUnmanagedReader`\
-
- [out] Restituisce un oggetto che rappresenta il lettore di simboli per codice non gestito.
+`ppSymUnmanagedReader`\
+[out] Restituisce un oggetto che rappresenta il lettore di simboli per codice non gestito.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c38d8c1c2f06701d1e0a34560b674aa62292a803
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4341542c48465af026280d5b7b13a8e10bafe40a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457400"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203253"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Chiamato dal debugger sul frame dello stack corrente quando desidera intercettare l'eccezione corrente.
@@ -42,13 +42,11 @@ int InterceptCurrentException(
 ```
 
 ## <a name="parameters"></a>Parametri
- `dwFlags`\
+`dwFlags`\
+[in] Specifica le azioni diverse. Attualmente, solo il [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valore `IEA_INTERCEPT` è supportata e deve essere specificato.
 
- [in] Specifica le azioni diverse. Attualmente, solo il [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valore `IEA_INTERCEPT` è supportata e deve essere specificato.
-
- `pqwCookie`\
-
- [out] Valore univoco che identifica una particolare eccezione.
+`pqwCookie`\
+[out] Valore univoco che identifica una particolare eccezione.
 
 ## <a name="return-value"></a>Valore restituito
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.

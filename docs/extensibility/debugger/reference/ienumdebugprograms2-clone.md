@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 793c3affd4f4b7cca4ac51ff0a585d9d76179d43
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cac5e387d3502ca9db01440a1a6eedb0953167be
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223504"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210714"
 ---
 # <a name="ienumdebugprograms2clone"></a>IEnumDebugPrograms2::Clone
 Restituisce una copia dell'enumerazione corrente come oggetto separato.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Parametri
- `ppEnum`\
-
- [out] Restituisce una copia di questa enumerazione come oggetto separato.
+`ppEnum`\
+[out] Restituisce una copia di questa enumerazione come oggetto separato.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

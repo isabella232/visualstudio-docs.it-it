@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc04de6de270053e20e05a30312a298e9e6e2f0f
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891225"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177342"
 ---
 # <a name="create-a-software-development-kit"></a>Creare un software development kit
 Un software development kit (SDK) è una raccolta di API che è possibile fare riferimento come un singolo elemento in Visual Studio. Il **gestione riferimenti** nella finestra di dialogo sono elencati tutti gli SDK pertinenti al progetto. Quando si aggiunge un SDK a un progetto, le API sono disponibili in Visual Studio.
@@ -34,7 +34,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
  SDK della piattaforma sono necessari per sviluppare App per una piattaforma. Ad esempio, il [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK è necessario per sviluppare App per [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Installazione
- Verranno installato in tutti gli SDK della piattaforma*SDK HKLM\Software\Microsoft\Microsoft\\[TPI] \v [TPV]\\ @InstallationFolder = [radice SDK]*. Di conseguenza, il [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK installato in *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
+ Verranno installato in tutti gli SDK della piattaforma *SDK HKLM\Software\Microsoft\Microsoft\\[TPI] \v [TPV]\\ @InstallationFolder = [radice SDK]* . Di conseguenza, il [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK installato in *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*.
 
 ### <a name="layout"></a>Layout
  Gli SDK di piattaforma saranno necessario lo schema seguente:
@@ -74,7 +74,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 
 1. Specificata in una chiave del Registro di sistema:
 
-     **Gli SDK HKLM\Software\Microsoft\Microsoft\<piattaforma di destinazione > \v < numero di versione della piattaforma\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **Gli SDK HKLM\Software\Microsoft\Microsoft\<piattaforma di destinazione > \v < numero di versione della piattaforma\>\ExtensionSDKs\<SDKName >\<SDKVersion >** \
 
      e aggiungere una sottochiave (impostazione predefinita) che ha un valore pari `<path to SDK><SDKName><SDKVersion>`.
 
@@ -104,7 +104,7 @@ Un software development kit (SDK) è una raccolta di API che è possibile fare r
 
 2. *I riferimenti* cartella: i file binari che contengono le API. Può trattarsi di file di metadati Windows (WinMD) o assembly.
 
-3. *Redist* cartella: i file necessari per il debug/runtime e devono ottenere incluso nel pacchetto come parte dell'applicazione dell'utente. Tutti i file binari devono essere inseriti sotto *\redist\\< configurazione\>\\< arch\>*, e i nomi binari devono avere il formato seguente per garantire l'univocità: *]* \<aziendale >. \<product >. \<scopo >. \<estensione ><em>. Ad esempio, *Microsoft.Cpp.Build.dll</em>. Tutti i file con nomi che siano in conflitto con nomi di file da altri SDK (ad esempio, i file javascript, css, pri, xaml, png e jpg) devono essere inseriti sotto <em>\redist\\< configurazione\>\\< arch\> \\< sdkname\> \* tranne i file che sono associati a XAML controlla. Questi file devono essere posizionati sotto * \redist\\< configurazione\>\\< arch\>\\< componentname\>\\</em>.
+3. *Redist* cartella: i file necessari per il debug/runtime e devono ottenere incluso nel pacchetto come parte dell'applicazione dell'utente. Tutti i file binari devono essere inseriti sotto *\redist\\< configurazione\>\\< arch\>* , e i nomi binari devono avere il formato seguente per garantire l'univocità: *]* \<aziendale >. \<product >. \<scopo >. \<estensione ><em>. Ad esempio, *Microsoft.Cpp.Build.dll</em>. Tutti i file con nomi che siano in conflitto con nomi di file da altri SDK (ad esempio, i file javascript, css, pri, xaml, png e jpg) devono essere inseriti sotto <em>\redist\\< configurazione\>\\< arch\> \\< sdkname\> \* tranne i file che sono associati a XAML controlla. Questi file devono essere posizionati sotto * \redist\\< configurazione\>\\< arch\>\\< componentname\>\\</em>.
 
 4. *DesignTime* cartella: i file che ne occorrono in unico pre-run/debug ora e non deve essere incluso nel pacchetto dell'applicazione dell'utente. Può trattarsi di documentazione XML, librerie, intestazioni, i file binari in fase di progettazione della casella degli strumenti, gli elementi di MSBuild e così via. Qualsiasi SDK di cui è previsto per il consumo da un progetto nativo deve essere presente un' *Nomesdk* file. Di seguito viene illustrato un esempio di questo tipo di file.
 
@@ -161,7 +161,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 2. ProductFamilyName: Il nome del prodotto SDK globale. Ad esempio, il [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] SDK è denominata "Microsoft.WinJS.1.0" e "Microsoft.WinJS.2.0", che appartengono alla stessa famiglia della famiglia di prodotti SDK, "Microsoft.WinJS". Questo attributo consente a Visual Studio e MSBuild realizzare tale connessione. Se questo attributo non esiste, il nome del SDK viene utilizzato come il nome della famiglia di prodotti.
 
-3. FrameworkIdentity: Specifica una dipendenza da uno o più librerie dei componenti Windows che il valore di questo attributo viene inserito nel manifesto dell'app consumer. Questo attributo è applicabile solo per le librerie dei componenti di Windows.
+3. FrameworkIdentity: Specifica una dipendenza da uno o più librerie dei componenti Windows. Il valore di questo attributo viene inserito nel manifesto dell'app consumer. Questo attributo è applicabile solo per le librerie dei componenti di Windows.
 
 4. TargetFramework: Specifica gli SDK disponibili in Gestione riferimenti e casella degli strumenti. Questo è un elenco delimitato da punto e virgola di moniker del framework di destinazione, ad esempio ".NET Framework, versione = v2.0; .NET Framework, versione = v4.5.1". Se vengono specificate più versioni dello stesso framework di destinazione, gestione riferimenti Usa la versione minima specificata a scopo di filtro. Ad esempio, se ".NET Framework, versione = v2.0; .NET Framework, versione = v4.5.1" viene specificato, verrà utilizzato Gestione riferimenti ".NET Framework, versione = v2.0". Se viene specificato un profilo di framework di destinazione specifica, solo tale profilo verrà utilizzato da Gestione riferimenti a scopo di filtro. Ad esempio, quando "Silverlight, versione = v4.0, profilo = WindowsPhone" viene specificato, gestione riferimenti vengono applicati filtri alle solo il profilo di Windows Phone. un progetto destinato alla versione completa di Silverlight 4.0 Framework non vede il SDK in Gestione riferimenti.
 

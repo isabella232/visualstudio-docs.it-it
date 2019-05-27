@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399416"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037392"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -136,7 +136,7 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 - **Mostra gli strumenti di runtime nell'applicazione**: Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.
 
-- **Abilita Modifica e continuazione XAML**:   Consente di usare la modifica e continuazione funzionalità con il codice XAML.
+- **Abilitare la ricarica Hot XAML**: Consente di usare la funzionalità di ricarica hot XAML con il codice XAML quando l'app è in esecuzione. (Questa funzionalità è stato precedentemente chiamata "XAML modifica e continuazione")
 
 **Abilita strumenti di diagnostica durante il debug**: Durante il debug viene visualizzata la finestra **Strumenti di diagnostica**.
 

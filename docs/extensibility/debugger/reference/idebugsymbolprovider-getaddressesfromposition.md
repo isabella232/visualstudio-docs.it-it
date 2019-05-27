@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224018"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207354"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Questo metodo esegue il mapping di una posizione di documento in una matrice di indirizzi di debug.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Parametri
- `pDocPos`\
+`pDocPos`\
+[in] Posizione del documento.
 
- [in] Posizione del documento.
+`fStatmentOnly`\
+[in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Restituisce un enumeratore per gli indirizzi iniziali di debug associato con questa istruzione o la riga.
 
- [in] Se TRUE, limita gli indirizzi di debug per una singola istruzione.
-
- `ppEnumBegAddresses`\
-
- [out] Restituisce un enumeratore per gli indirizzi iniziali di debug associato con questa istruzione o la riga.
-
- `ppEnumEndAddresses`\
-
- [out] Restituisce un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumeratore per gli indirizzi di debug finale associati a questa istruzione o la riga.
+`ppEnumEndAddresses`\
+[out] Restituisce un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumeratore per gli indirizzi di debug finale associati a questa istruzione o la riga.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

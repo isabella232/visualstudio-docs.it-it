@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33735e047f0ac0266648afd2ffb4de0cbc908a25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7815b5515a89d6a040208b7062286e5818f2ba91
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920920"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207445"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Questo metodo imposta lo stato di tutte le eccezioni in sospeso.
@@ -36,10 +39,9 @@ int SetAllExceptions(
 );
 ```
 
-#### <a name="parameters"></a>Parametri
- `dwState`
-
- [in] Uno dei [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valori.
+## <a name="parameters"></a>Parametri
+`dwState`\
+[in] Uno dei [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valori.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce il codice di errore.

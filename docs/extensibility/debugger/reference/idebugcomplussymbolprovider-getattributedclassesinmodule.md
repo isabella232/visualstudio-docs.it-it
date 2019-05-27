@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e284565ad4e30a4a7aa766ea7150b02281aad3ed
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876737"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206486"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Recupera le classi con l'attributo specificato in un modulo specificato.
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>Parametri
-`ulAppDomainID`
+## <a name="parameters"></a>Parametri
+`ulAppDomainID`\
+[in] Identificatore del dominio dell'applicazione.
 
- [in] Identificatore del dominio dell'applicazione.
+`guidModule`\
+[in] Identificatore univoco del modulo.
 
-`guidModule`
+`pstrAttribute`\
+[in] La stringa di attributo.
 
- [in] Identificatore univoco del modulo.
-
-`pstrAttribute`
-
- [in] La stringa di attributo.
-
-`ppEnum`
-
- [out] Restituisce un'enumerazione delle classi con Attribute.
+`ppEnum`\
+[out] Restituisce un'enumerazione delle classi con Attribute.
 
 ## <a name="return-value"></a>Valore restituito
 Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

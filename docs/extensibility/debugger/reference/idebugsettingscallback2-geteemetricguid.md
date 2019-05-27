@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: d8829afadbd2f02b9b87f2beb84088aeeb447e66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457456"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212118"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Recupera l'identificatore univoco per una metrica dell'analizzatore di espressioni in base al nome.
@@ -44,21 +44,17 @@ HRESULT GetEEMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parametri
- `guidLang`\
+`guidLang`\
+[in] Identificatore univoco del linguaggio di programmazione.
 
- [in] Identificatore univoco del linguaggio di programmazione.
+`guidVendor`\
+[in] Identificatore univoco del fornitore.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nome della metrica.
 
- [in] Identificatore univoco del fornitore.
-
- `pszMetric`\
-
- [in] Nome della metrica.
-
- `pguidValue`\
-
- [out] Restituisce l'identificatore univoco della metrica.
+`pguidValue`\
+[out] Restituisce l'identificatore univoco della metrica.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.

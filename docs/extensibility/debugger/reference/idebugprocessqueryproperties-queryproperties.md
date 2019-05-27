@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3644a8d8b8834056e5cf61fc8647d5c47056208
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1c88d5b719b8d800ef13f890bb65cd5f6b68d58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917489"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200469"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 Questa query di metodo per i valori di una proprietà specificata del processo di debug.
@@ -36,14 +39,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-#### <a name="parameters"></a>Parametri
- `celt`
+## <a name="parameters"></a>Parametri
+`celt`\
+[in] Dimensioni delle matrici che contiene le definizioni di proprietà e i valori delle proprietà.
 
- [in] Dimensioni delle matrici che contiene le definizioni di proprietà e i valori delle proprietà.
-
- `dwPropType`
-
- [in] Matrice che contiene le definizioni delle proprietà sottoposti a query. I valori possibili sono:
+`dwPropType`\
+[in] Matrice che contiene le definizioni delle proprietà sottoposti a query. I valori possibili sono:
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -51,7 +52,8 @@ int QueryProperties(
 
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
-  `pvarPropValue` [out] Matrice contenente i valori delle proprietà.
+`pvarPropValue`\
+[out] Matrice contenente i valori delle proprietà.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un codice di errore.
