@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d4ad3767e8ee6076f45deefa5c532b62175520f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692314"
 ---
 # <a name="install-visual-studio"></a>Installare Visual Studio
 
@@ -203,7 +203,7 @@ Per impostazione predefinita, alla prima esecuzione il programma di installazion
 
 Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire il programma di installazione dalla riga di comando. Ad esempio, usare il comando seguente per forzare l'esecuzione in inglese del programma di installazione: `vs_installer.exe --locale en-US`. Il programma di installazione memorizza questa impostazione per l'esecuzione successiva. Il programma di installazione supporta i token delle lingue seguenti: zh-cn, zh-tw, cs-cz, en-us, es-es, fr-fr, de-de, it-it, ja-jp, ko-kr, pl-pl, pt-br, ru-ru e tr-tr.
 
-## <a name="step-7---change-the-installation-location-optional"></a>Passaggio 7: Cambiare il percorso di installazione (facoltativo)
+## <a name="step-7---select-the-installation-location-optional"></a>Passaggio 7: Selezionare il percorso di installazione (facoltativo)
 
 ::: moniker range="vs-2017"
 
@@ -217,7 +217,7 @@ Un altro modo per poter modificare la lingua predefinita consiste nell'eseguire 
 
 È possibile ridurre lo spazio occupato dall'installazione di Visual Studio nell'unità di sistema. È possibile scegliere di spostare la Download Cache, i componenti condivisi, gli SDK e gli strumenti in unità diverse e mantenere Visual Studio nell'unità che lo esegue più rapidamente.
 
-  ![Visual Studio 2019 - Cambiare i percorsi di installazione](media/vs-2019/vs-installer-installation-locations.png "Cambiare il percorso di installazione")
+  ![Visual Studio 2019 - Selezionare i percorsi di installazione](media/vs-2019/vs-installer-installation-locations.png "Selezionare il percorso di installazione")
 
 ::: moniker-end
 

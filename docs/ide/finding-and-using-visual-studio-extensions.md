@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962061"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934357"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Individuare e usare le estensioni di Visual Studio
 
@@ -61,7 +61,7 @@ Il riquadro a sinistra suddivide le estensioni in categorie in base a quelle ins
 
 ::: moniker range="vs-2017"
 
-In **Estensioni e aggiornamenti** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**). Fare clic su **Download**. L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
+In **Strumenti** > **Estensioni e aggiornamenti** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**). Fare clic su **Download**. L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
 
 Se si tenta di installare un'estensione con dipendenze, il programma di installazione verifica se siano già installate. Se non sono installate, nella finestra di dialogo **Estensioni e aggiornamenti** verranno elencate tutte le dipendenze che devono essere installate prima dell'estensione.
 
@@ -69,7 +69,7 @@ Se si tenta di installare un'estensione con dipendenze, il programma di installa
 
 ::: moniker range=">=vs-2019"
 
-In **Gestisci estensioni** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**). Fare clic su **Download**. L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
+In **Estensioni** > **Gestisci estensioni** trovare l'estensione che si vuole installare. (se si conosce il nome dell'estensione o parte di esso, è possibile eseguire la ricerca nella finestra di**ricerca**). Fare clic su **Download**. L'estensione viene pianificata per essere installata. L'estensione verrà installata dopo la chiusura di tutte le istanze di Visual Studio.
 
 Se si tenta di installare un'estensione con dipendenze, il programma di installazione verifica se siano già installate. Se non sono installate, nella finestra di dialogo **Gestisci estensioni** verranno elencate tutte le dipendenze che devono essere installate prima dell'estensione.
 
@@ -91,7 +91,7 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 
 ::: moniker range="vs-2017"
 
-- Per disabilitare gli aggiornamenti automatici di tutte le estensioni, selezionare il collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Estensioni e aggiornamenti**. Nella finestra di dialogo **Opzioni** deselezionare **Aggiorna automaticamente le estensioni**.
+- Per disabilitare gli aggiornamenti automatici di tutte le estensioni, selezionare il collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti**. Nella finestra di dialogo **Opzioni** deselezionare **Aggiorna automaticamente le estensioni**.
 
 - Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Estensioni e aggiornamenti**.
 
@@ -99,7 +99,7 @@ Se si desidera disabilitare gli aggiornamenti automatici, è possibile disabilit
 
 ::: moniker range=">=vs-2019"
 
-- Per disabilitare gli aggiornamenti automatici di tutte le estensioni, selezionare il collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Gestisci estensioni**. Nella finestra di dialogo **Opzioni** deselezionare **Aggiorna automaticamente le estensioni**.
+- Per disabilitare gli aggiornamenti automatici di tutte le estensioni, selezionare il collegamento **Modifica le impostazioni di estensioni e aggiornamenti** nella finestra di dialogo **Estensioni** > **Gestisci estensioni**. Nella finestra di dialogo **Opzioni** deselezionare **Aggiorna automaticamente le estensioni**.
 
 - Per disabilitare gli aggiornamenti automatici per un'estensione specifica, deselezionare l'opzione **Aggiorna automaticamente questa estensione** nel riquadro dei dettagli dell'estensione sul lato destro della finestra di dialogo **Gestisci estensioni**.
 
@@ -115,13 +115,13 @@ Quando queste notifiche vengono visualizzate, è possibile ignorare la notifica 
 
 ::: moniker range="vs-2017"
 
-- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Estensioni e aggiornamenti**.
+- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Gestisci estensioni**.
+- Scegliere **Disabilita questa estensione**. Visual Studio disabilita l'estensione e comunica se è necessario riavviare il sistema per rendere effettiva la disabilitazione. Se lo si desidera è possibile riabilitare l'estensione nella finestra di dialogo **Estensioni** > **Gestisci estensioni**.
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 ::: moniker range="vs-2017"
 
-È possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:
+È possibile usare la finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti** per eseguire queste attività correlate agli esempi:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-È possibile usare la finestra di dialogo **Gestisci estensioni** per eseguire queste attività correlate agli esempi:
+È possibile usare la finestra di dialogo **Estensioni** > **Gestisci estensioni** per eseguire queste attività correlate agli esempi:
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Quando si installa un esempio online, la soluzione viene memorizzata in due posi
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Installazione senza usare la finestra di dialogo Estensioni e Aggiornamenti
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Installare senza usare la finestra di dialogo Estensioni e aggiornamenti
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Estensioni e aggiornamenti** non permetta di individuare questi file, è possibile installare un file con estensione *vsix* facendovi doppio clic sopra oppure selezionandolo e quindi premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti** non permetta di individuare questi file, è possibile installare un file con estensione *vsix* facendovi doppio clic sopra oppure selezionandolo e quindi premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Estensioni e aggiornamenti** per abilitarla, disabilitarla o disinstallarla.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>Tipi di estensione non supportati dalla finestra di dialogo Estensioni e aggiornamenti
 
-Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Estensioni e aggiornamenti** senza modifica.
+Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Strumenti** > **Estensioni e aggiornamenti** senza modifica.
 
 > [!TIP]
 > Se un'estensione basata su MSI include un file *extension.vsixmanifest*, tale estensione viene visualizzata nella finestra di dialogo **Estensioni e aggiornamenti**.
@@ -186,13 +186,13 @@ Visual Studio continua a supportare le estensioni installate da Microsoft Instal
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Installazione senza usare la finestra di dialogo Gestisci estensioni
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Installare senza usare la finestra di dialogo Gestisci estensioni
 
-Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Gestisci estensioni** non permetta di individuare questi file, è possibile installare un file con estensione *vsix* facendovi doppio clic sopra oppure selezionandolo e quindi premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
+Le estensioni che sono state incluse in file con estensione *vsix* possono essere disponibili in posizioni diverse da Visual Studio Marketplace. Benché la finestra di dialogo **Estensioni** > **Gestisci estensioni** non permetta di individuare questi file, è possibile installare un file con estensione *vsix* facendovi doppio clic sopra oppure selezionandolo e quindi premendo **INVIO**. Quindi, è sufficiente seguire le istruzioni. Una volta installata l'estensione, sarà possibile usare la finestra di dialogo **Gestisci estensioni** per abilitarla, disabilitarla o disinstallarla.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>Tipi di estensione non supportati dalla finestra di dialogo Gestisci estensioni
 
-Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Gestisci estensioni** senza modifica.
+Visual Studio continua a supportare le estensioni installate da Microsoft Installer (MSI) ma non tramite la finestra di dialogo **Estensioni** > **Gestisci estensioni** senza modifica.
 
 > [!TIP]
 > Se un'estensione basata su MSI include un file *extension.vsixmanifest*, tale estensione viene visualizzata nella finestra di dialogo **Gestisci estensioni**.

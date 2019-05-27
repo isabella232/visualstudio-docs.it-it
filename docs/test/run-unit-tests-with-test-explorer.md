@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946087"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934499"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -58,7 +58,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
 > [!NOTE]
-> Per eseguire unit test dopo ogni compilazione è necessaria l'edizione Visual Studio Enterprise.
+> Per eseguire unit test dopo ogni compilazione è necessario Visual Studio 2017 Enterprise o Visual Studio 2019. In Visual Studio 2019 la funzionalità è inclusa nelle versioni Community, Professional ed Enterprise.
 
 ## <a name="view-test-results"></a>Visualizzare i risultati dei test
 
@@ -200,7 +200,7 @@ Per diagnosticare il motivo per cui un metodo di test richiede troppo tempo, sel
 
 Per eseguire il code coverage per i metodi di test in una soluzione:
 
-1. Scegliere **Test** dal menu di Visual Studio e quindi scegliere **Analizza code coverage**.
+1. Scegliere **Test** dalla barra dei menu in alto e quindi scegliere **Analizza code coverage**.
 
 2. Scegliere uno dei comandi seguenti dal sottomenu:
 

@@ -1,6 +1,6 @@
 ---
 title: 'Procedura: Modificare la directory di output della compilazione'
-ms.date: 11/04/2016
+ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,43 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0fda2363ec63572f29c6687cc10ee9a7ee06c76
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824230"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805043"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procedura: Modificare la directory di output della compilazione
 
 Il percorso dell'output generato dal progetto può essere specificato a livello di singole configurazioni (per debug e/o rilascio).
 
-> [!NOTE]
-> Se si ha un progetto **Installazione**, vedere la nota alla fine di questo articolo.
-
 ## <a name="change-the-build-output-directory"></a>Modificare la directory di output della compilazione
 
-1. Nella barra dei menu scegliere **Progetto** > **\<NomeApp> Proprietà**. In alternativa, fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**.
+1. Per aprire le pagine delle proprietà del progetto fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Proprietà**.
 
-2. Per i progetti Basic, selezionare la scheda **Compilazione** . Per i progetti C#, selezionare la scheda **Compilazione**. Per un progetto C++ o JavaScript, selezionare la scheda **Generale** .
+2. Selezionare la scheda appropriata in base al tipo di progetto:
 
-3. Nell'elenco a discesa della configurazione nella parte superiore, scegliere la configurazione per cui si vuole modificare il percorso di output (debug, rilascio o tutte).
+   - Per C#, selezionare la scheda **Compila**.
+   - Per Visual Basic, selezionare la scheda **Compilazione**.
+   - Per C++ o JavaScript, selezionare la scheda **Generale**.
 
-     Individuare la voce relativa al percorso di output (**Percorso dell'output di compilazione** in Visual Basic **Directory di output** in Visual C++, **Percorso di Output** in JavaScript e C#). Specificare una nuova directory dell'output di compilazione relativa alla directory del progetto.
+3. Nell'elenco a discesa della configurazione nella parte superiore scegliere la configurazione per cui si vuole modificare il percorso di output (**Debug**, **Rilascio** o **Tutte le configurazioni**).
 
-> [!NOTE]
-> In un progetto di installazione, la casella **Nome file di output** modifica solo il percorso del file *Setup.exe* file, non il percorso dei file di progetto. Per altre informazioni, vedere **Compilazione, proprietà di configurazione, finestra di dialogo delle proprietà del progetto di distribuzione**.
+4. Individuare la voce relativa al percorso di output nella pagina, che è diversa a seconda del tipo di progetto:
+
+   - **Percorso di output** per i progetti C# e JavaScript
+   - **Percorso dell'output di compilazione** per i progetti Visual Basic
+   - **Directory di output** per i progetti Visual C++
+
+   Digitare il percorso per generare l'output (assoluto o relativo alla directory di progetto radice), oppure scegliere **Sfoglia** per passare alla relativa cartella.
+
+   ![Proprietà Percorso di output per un progetto Visual Studio C#](media/output-path.png)
+
+> [!TIP]
+> Se l'output non viene generato nel percorso specificato, assicurarsi di compilare la configurazione corrispondente, ad esempio **Debug** o **Rilascio**, selezionandola nella barra dei menu di Visual Studio.
+>
+> ![Selezione della configurazione della build in Visual Studio 2019](media/build-configuration-chooser.png)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 Developer incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947233"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934595"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Vantaggio dell'abbonamento a Office 365 Developer nelle sottoscrizioni di Visual Studio
 
-I sottoscrittori con sottoscrizioni selezionate di Visual Studio Enterprise ricevono come vantaggio l'abbonamento a Office 365 Developer.  L'abbonamento a Office 365 Developer consente di sviluppare, testare e distribuire componenti aggiuntivi per Microsoft Office e Microsoft SharePoint.  Questo vantaggio vale per un tenant e per un massimo di 25 utenti.
+I sottoscrittori con sottoscrizioni selezionate di Visual Studio ricevono come vantaggio l'abbonamento a Office 365 Developer.  L'abbonamento a Office 365 Developer consente di sviluppare, testare e distribuire componenti aggiuntivi per Microsoft Office e Microsoft SharePoint.  Questo vantaggio vale per un tenant e per un massimo di 25 utenti.
 
 ## <a name="activation-steps"></a>Procedura di attivazione
 
@@ -67,7 +67,7 @@ Per altre informazioni sull'abbonamento a Office 365 Developer, vedere le [doman
 | Livello di sottoscrizione                                                 |     Canali                                            | Vantaggio                                                          | Rinnovabile?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selezionato | Included      |  Sì          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
 | Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |

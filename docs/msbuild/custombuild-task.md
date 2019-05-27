@@ -17,16 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 197128fadb660ab06686d13ec304a5d9d1698070
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d466dec85a0bdf242120ef5e88a0d5f5d2ac48e
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778137"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934511"
 ---
 # <a name="custombuild-task"></a>Attività CustomBuild
 
-Esegue il wrapping dello strumento del compilatore Visual C++, cmd.exe.
+Esegue il wrapping dello strumento del compilatore Visual C++, cmd.exe. Questa classe deriva da [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), ma non usa il rilevamento file per individuare le dipendenze di file. Affinché la compilazione incrementale funzioni correttamente, tutte le dipendenze devono essere specificate esplicitamente come AdditionalDependencies.
+
 
 ## <a name="parameters"></a>Parametri
 

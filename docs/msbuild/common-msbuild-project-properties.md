@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570295"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934529"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.
@@ -68,6 +68,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | FileAlignment | Specifica, in byte, il punto in cui allineare le sezioni del file di output. I valori validi sono 512, 1024, 2048, 4096, 8192. Questa proprietà è equivalente all'opzione del compilatore `/filealignment`. |
 | FrameworkPathOverride | Specifica il percorso dei file *mscorlib.dll* e *microsoft.visualbasic.dll*. Questo parametro è equivalente all'opzione `/sdkpath` del compilatore *vbc.exe*. |
 | GenerateDocumentation | (Solo Visual Basic) Parametro booleano che indica se la documentazione è generata dalla compilazione. Se è `true`, le informazioni relative alla documentazione vengono generate dalla compilazione e inserite in un file con estensione *xml* con il nome dell'eseguibile o della libreria creata dalla compilazione. |
+| GenerateSerializationAssemblies | Indica se gli assembly di serializzazione XML devono essere generati da *SGen.exe*, che può essere impostato su attivato, automatico o disattivato. Questa proprietà viene utilizzata solo per gli assembly la cui destinazione è .NET Framework. Per generare assembly di serializzazione XML per gli assembly di .NET Standard o .NET Core, fare riferimento al pacchetto NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Percorso di output intermedio completo derivato da `BaseIntermediateOutputPath`, se non viene specificato alcun percorso. Ad esempio *\obj\debug\\*. |
 | KeyContainerName | Nome del contenitore di chiavi con nome sicuro. |
 | KeyOriginatorFile | Nome del file di chiave con nome sicuro. |
@@ -91,8 +92,8 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | ProduceReferenceAssembly | Un valore booleano che, se impostato su `true`, consente la produzione di [assembly di riferimento](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) per l'assembly corrente. `Deterministic` deve essere `true` quando si usa questa funzionalità. Questa proprietà corrisponde all'opzione `/refout` dei compilatori *vbc.exe* e *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valore booleano che indica al compilatore di generare solo un assembly di riferimento piuttosto che codice compilato. Non può essere usato in combinazione con `ProduceReferenceAssembly`.  Questa proprietà corrisponde all'opzione `/refonly` dei compilatori *vbc.exe* e *csc.exe*. |
 | RemoveIntegerChecks | Valore booleano che indica se disabilitare i controlli degli errori di overflow di intero. Il valore predefinito è `false`. Questa proprietà è equivalente all'opzione `/removeintchecks` del compilatore *vbc.exe*. |
-| SGenUseProxyTypes | Valore booleano che indica se i tipi proxy devono essere generati da *SGen.exe*.<br /><br /> La destinazione SGen usa questa proprietà per impostare il flag UseProxyTypes. L'impostazione predefinita di questa proprietà è true e tale valore non può essere modificato dall'interfaccia utente. Per generare l'assembly di serializzazione per tipi non WebService, aggiungere questa proprietà al file di progetto e impostarla su False prima di importare *Microsoft.Common.Targets* o *C#/VB.targets*. |
-| SGenToolPath | Percorso dello strumento facoltativo che indica da dove ottenere *SGen.exe* quando viene eseguito l'override della versione corrente di *SGen.exe*. |
+| SGenUseProxyTypes | Valore booleano che indica se i tipi proxy devono essere generati da *SGen.exe*. Si applica solo quando *GenerateSerializationAssemblies* è attivato e solo per .NET Framework.<br /><br /> La destinazione SGen usa questa proprietà per impostare il flag UseProxyTypes. L'impostazione predefinita di questa proprietà è true e tale valore non può essere modificato dall'interfaccia utente. Per generare l'assembly di serializzazione per tipi non WebService, aggiungere questa proprietà al file di progetto e impostarla su False prima di importare *Microsoft.Common.Targets* o *C#/VB.targets*. |
+| SGenToolPath | Percorso dello strumento facoltativo che indica da dove ottenere *SGen.exe* quando viene eseguito l'override della versione corrente di *SGen.exe*. Questa proprietà viene usata solo per .NET Framework.|
 | StartupObject | Specifica la classe o il modulo che contiene il metodo Main o la procedura Sub Main. Questa proprietà è equivalente all'opzione del compilatore `/main`. |
 | ProcessorArchitecture | Architettura del processore usata quando vengono risolti i riferimenti all'assembly. I valori validi sono "msil", "x86", "amd64" o "ia64". |
 | RootNamespace | Spazio dei nomi radice da usare quando si assegna un nome a una risorsa incorporata. Questo spazio dei nomi fa parte del nome del manifesto della risorsa incorporata. |

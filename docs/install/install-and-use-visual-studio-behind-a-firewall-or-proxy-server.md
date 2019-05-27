@@ -1,7 +1,7 @@
 ---
 title: Installare e usare prodotti protetti da un firewall o un server proxy
-description: Verificare le URL di dominio, le porte e i protocolli da aggiungere in un elenco di elementi consentiti o aprire se l'organizzazione usa un firewall o un server proxy
-ms.date: 03/30/2019
+description: Verificare gli URL di dominio, le porte e i protocolli da aggiungere a un elenco di elementi consentiti o da aprire se l'organizzazione usa un firewall o un server proxy
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974709"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976207"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio e i servizi di Azure protetti da un firewall o un server proxy
 
-Se un utente o un'organizzazione usa misure di sicurezza come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere in un elenco di elementi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
+Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio e dei servizi di Azure.
 
-* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco di elementi consentiti in modo da poter accedere a tutti i componenti e i carichi di lavoro necessari.
+* **[Installare Visual Studio](#install-visual-studio)**: queste tabelle includono gli URL di dominio da aggiungere a un elenco di indirizzi consentiti in modo da poter accedere a tutti i componenti e ai carichi di lavoro necessari.
 
-* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco di elementi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e a tutti i servizi necessari.
+* **[Usare Visual Studio e i servizi di Azure](#use-visual-studio-and-azure-services)**: questa tabella include gli URL di dominio da aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli da aprire in modo da avere accesso a tutte le funzionalità e a tutti i servizi necessari.
 
 > [!NOTE]
 > Questo articolo è stato scritto per Visual Studio in Windows, ma alcune informazioni sono applicabili anche all'[installazione di Visual Studio per Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) dietro un firewall o un server proxy.
 
 ## <a name="install-visual-studio"></a>Installare Visual Studio
 
-### <a name="urls-to-whitelist"></a>URL da aggiungere all'elenco degli elementi consentiti
+### <a name="urls-to-add-to-an-allow-list"></a>URL da aggiungere a un elenco di indirizzi consentiti
 
-Dato che il programma di installazione di Visual Studio scarica i file da vari domini e dai rispettivi server di download, questi sono gli URL di dominio che possono essere aggiunti all'elenco degli elementi consentiti come attendibili nell'interfaccia utente o negli script di distribuzione.
+Dato che il programma di installazione di Visual Studio scarica i file da vari domini e dai rispettivi server di download, questi sono gli URL di dominio che possono essere aggiunti a un elenco di indirizzi consentiti considerati attendibili nell'interfaccia utente o negli script di distribuzione.
 
 #### <a name="microsoft-domains"></a>Domini Microsoft
 
@@ -79,9 +79,9 @@ Dato che il programma di installazione di Visual Studio scarica i file da vari d
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usare Visual Studio e i servizi di Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URL da aggiungere all'elenco degli elementi consentiti e porte e protocolli da aprire
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URL da aggiungere a un elenco di indirizzi consentiti e porte e protocolli da aprire
 
-Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere all'elenco degli elementi consentiti e le porte e i protocolli che è possibile aprire.
+Per assicurarsi di disporre dell'accesso a tutte le informazioni necessarie quando si usano Visual Studio o i servizi di Azure protetti da un firewall o un server proxy, di seguito sono riportati gli URL che è consigliabile aggiungere a un elenco di indirizzi consentiti e le porte e i protocolli che è possibile aprire.
 
 | Servizio o scenario | Endpoint DNS | Protocollo | Porta | Description |
 | - | - | - | - | - |
