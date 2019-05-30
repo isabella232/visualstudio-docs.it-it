@@ -3,17 +3,17 @@ title: Editor dei colori VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f9c6dbcc47e4bbac4203d7ec49f563f2a85ba32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858001"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332923"
 ---
 # <a name="vsix-color-editor"></a>Editor dei colori VSIX
 Lo strumento Editor colore di estensione di Visual Studio possa creare e modificare i colori personalizzati per Visual Studio. Lo strumento può anche generare le chiavi di risorsa del tema in modo che i colori possono essere usati nel codice. Questo strumento è utile per rendere i colori per un'estensione di Visual Studio che supporta i temi. Questo strumento può aprire file con estensione pkgdef e XML. Visual Studio temi (file .vstheme) possono essere utilizzati con l'Editor colore di Visual Studio estensione modificando l'estensione di file in. Xml. Inoltre, .vstheme file possono essere importati in un file con estensione XML corrente.
@@ -55,7 +55,7 @@ Lo strumento Editor colore di estensione di Visual Studio possa creare e modific
 
    **Passaggio 1: Determinare i nomi di categoria e il token per il nuovo token di colore.**
 
-   La denominazione preferita schema per è un VSColor **[Category] [tipo di interfaccia utente] [stato]**. Non usare la parola "color" nei nomi VSColor, perché è ridondante.
+   La denominazione preferita schema per è un VSColor **[Category] [tipo di interfaccia utente] [stato]** . Non usare la parola "color" nei nomi VSColor, perché è ridondante.
 
    Nomi di categoria offrono raggruppamenti logici e devono essere definiti come ristretto possibile. Ad esempio, il nome di una finestra degli strumenti singolo potrebbe essere un nome di categoria, ma non il nome di un team di progetto o unità intera azienda. Le voci in categorie il raggruppamento consente di evitare confusione tra i colori con lo stesso nome.
 

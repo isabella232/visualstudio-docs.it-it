@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IDE, context
 - IDE, user feedback
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4503639e65650b70871c9bf23a26eac1d4892a5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2255a972dd7a889713e77fa686b348500c03ea7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328973"
 ---
 # <a name="feedback-to-the-user"></a>Commenti e suggerimenti all'utente
 Nel [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE), un feedback visivo relative alle funzionalità disponibili è basata sulla selezione corrente dell'utente e il contesto di selezione globale. La tabella seguente elenca le funzionalità disponibili in contesti differenti.

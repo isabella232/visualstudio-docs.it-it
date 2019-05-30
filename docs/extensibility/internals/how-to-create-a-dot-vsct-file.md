@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418472"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328751"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procedura: Creare un file con estensione vsct
 
@@ -45,7 +45,7 @@ Esistono diversi modi per creare una configurazione di tabella comandi di Visual
 
 6. Nell'elenco degli schemi XSD, selezionare la *vsct.xsd* dello schema. Se non è nell'elenco, fare clic su **Add** e quindi individuare il file in un'unità locale. Fare clic su **OK** al termine.
 
-7. Nel file XML, digitare *< CommandTable* e quindi premere **scheda**. Chiudere il tag digitando *>*.
+7. Nel file XML, digitare *< CommandTable* e quindi premere **scheda**. Chiudere il tag digitando *>* .
 
     Questa azione viene creata una semplice *vsct* file.
 

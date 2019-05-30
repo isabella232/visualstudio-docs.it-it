@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926808"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337004"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Creare un sistema di progetto di base, parte 2
 La prima procedura dettagliata in questa serie [creare un sistema di progetto di base, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), viene illustrato come creare un sistema di progetto di base. Questa procedura dettagliata si basa sul sistema del progetto di base mediante l'aggiunta di un modello di Visual Studio, una pagina delle proprietà e altre funzionalità. Prima di iniziare questo, è necessario completare la prima procedura dettagliata.
@@ -175,7 +175,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Distribuire un modello di Visual Studio
-Modelli di Visual Studio non contengono informazioni sul percorso. Pertanto, il modello *zip* file deve essere distribuito in un percorso noto a Visual Studio. È in genere il percorso della cartella ProjectTemplates *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >*.
+Modelli di Visual Studio non contengono informazioni sul percorso. Pertanto, il modello *zip* file deve essere distribuito in un percorso noto a Visual Studio. È in genere il percorso della cartella ProjectTemplates *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
 
 Per distribuire la factory di progetto, il programma di installazione deve disporre dei privilegi di amministratore. Distribuisce i modelli sotto il nodo di installazione di Visual Studio: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
 
@@ -207,7 +207,7 @@ I nodi figlio vengono creati alterare il file di progetto e aggiungendo \<Output
 
 In questa sezione viene illustrato come creare un nodo figlio della Console per il tipo di progetto SimpleProject.
 
-1. Rinominare il *\\Templates\Projects\SimpleProject\\* cartella in cui  *\\Templates\Projects\ConsoleApp\\*.
+1. Rinominare il *\\Templates\Projects\SimpleProject\\* cartella in cui  *\\Templates\Projects\ConsoleApp\\* .
 
 2. Nel **delle proprietà** finestra, seleziona tutti i cinque file nel *\\Templates\Projects\ConsoleApp\\* cartella e assicurarsi che il **azione di compilazione**è impostata su **ZipProject**.
 

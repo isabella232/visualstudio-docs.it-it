@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21628bda9dc0437672b0b755bb64f1c882b0acbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28e81e8247e0ab7a7b2e972209805c8bcff053a7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689174"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346396"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Specifica i criteri per il confronto di due contesti di memoria.
@@ -53,24 +56,33 @@ public enum enum_CONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Membri
-CONTEXT_EQUAL individuare il primo contesto di memoria nell'elenco uguale al contesto di destinazione di memoria.
+## <a name="fields"></a>Campi
+`CONTEXT_EQUAL`\
+Trovare il primo contesto di memoria nell'elenco uguale al contesto di destinazione di memoria.
 
-CONTEXT_LESS_THAN individuare il primo contesto di memoria nell'elenco che è minore rispetto al contesto di memoria di destinazione.
+`CONTEXT_LESS_THAN`\
+Trovare il primo contesto di memoria nell'elenco che è minore rispetto al contesto di memoria di destinazione.
 
-CONTEXT_GREATER_THAN individuare il primo contesto di memoria nell'elenco che è maggiore rispetto al contesto di memoria di destinazione.
+`CONTEXT_GREATER_THAN`\
+Trovare il primo contesto di memoria nell'elenco che è maggiore rispetto al contesto di memoria di destinazione.
 
-CONTEXT_LESS_THAN_OR_EQUAL individuare il primo contesto di memoria nell'elenco che è minore o uguale al contesto di destinazione di memoria.
+`CONTEXT_LESS_THAN_OR_EQUAL`\
+Trovare il primo contesto di memoria nell'elenco che è minore o uguale al contesto di destinazione di memoria.
 
-CONTEXT_GREATER_THAN_OR_EQUAL individuare il primo contesto di memoria nell'elenco che è maggiore o uguale al contesto di destinazione di memoria.
+`CONTEXT_GREATER_THAN_OR_EQUAL`\
+Trovare il primo contesto di memoria nell'elenco che è maggiore o uguale al contesto di destinazione di memoria.
 
-CONTEXT_SAME_SCOPE individuare il primo contesto di memoria nell'elenco che è nello stesso ambito il contesto di memoria di destinazione.
+`CONTEXT_SAME_SCOPE`\
+Trovare il primo contesto di memoria nell'elenco che è nello stesso ambito il contesto di memoria di destinazione.
 
-CONTEXT_SAME_FUNCTION individuare il primo contesto di memoria nell'elenco che è la stessa funzione dell'ambito della memoria di destinazione.
+`CONTEXT_SAME_FUNCTION`\
+Trovare il primo contesto di memoria nell'elenco che è la stessa funzione dell'ambito della memoria di destinazione.
 
-CONTEXT_SAME_MODULE individuare il primo contesto di memoria nell'elenco che è nello stesso modulo del contesto di destinazione di memoria.
+`CONTEXT_SAME_MODULE`\
+Trovare il primo contesto di memoria nell'elenco che è nello stesso modulo del contesto di destinazione di memoria.
 
-CONTEXT_SAME_PROCESS individuare il primo contesto di memoria nell'elenco che è nello stesso processo come contesto di memoria di destinazione.
+`CONTEXT_SAME_PROCESS`\
+Trovare il primo contesto di memoria nell'elenco che è nello stesso processo come contesto di memoria di destinazione.
 
 ## <a name="remarks"></a>Note
 Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) (metodo).
