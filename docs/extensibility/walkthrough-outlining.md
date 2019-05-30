@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320614"
 ---
 # <a name="walkthrough-outlining"></a>Procedura dettagliata: struttura
 Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i tipi di aree di testo che si desidera espandere o comprimere la struttura. È possibile definire le aree nel contesto di un servizio di linguaggio, o definire il tipo di contenuto e l'estensione di nome file e applicare la definizione dell'area a solo a quel tipo o applicare le definizioni di area a un tipo di contenuto esistente (ad esempio "text"). Questa procedura dettagliata illustra come definire e visualizzare le aree della struttura.
@@ -34,9 +34,9 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
 3. Eliminare i file di classe esistenti.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementare un tagger della struttura
- Aree della struttura sono contrassegnate da un tipo di tag (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Questo tag fornisce lo standard della struttura di comportamento. L'area può essere espansi o compressi. L'area è contrassegnato da un segno più (**+**) se è compresso o un segno di sottrazione (**-**) se viene espanso e l'area espansa è delimitata da una linea verticale.
+ Aree della struttura sono contrassegnate da un tipo di tag (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Questo tag fornisce lo standard della struttura di comportamento. L'area può essere espansi o compressi. L'area è contrassegnato da un segno più ( **+** ) se è compresso o un segno di sottrazione ( **-** ) se viene espanso e l'area espansa è delimitata da una linea verticale.
 
- La procedura seguente illustra come definire un tagger che crea aree della struttura per tutte le aree di parentesi quadre (**[**,**]**).
+ La procedura seguente illustra come definire un tagger che crea aree della struttura per tutte le aree di parentesi quadre ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Per implementare un tagger della struttura
 
@@ -129,7 +129,7 @@ Impostare le caratteristiche di basata sul linguaggio, ad esempio definendo i ti
     ]
     ```
 
-4. Deve essere presente un'area della struttura che include entrambe le parentesi quadre. È necessario essere in grado di fare clic sul segno meno a sinistra della parentesi quadra aperta per comprimere l'area della struttura. Quando l'area viene compressa, il simbolo di puntini di sospensione (*...* ) deve apparire a sinistra dell'area compressa e una finestra popup contenente il testo **passare il puntatore di testo** deve essere visualizzato quando si sposta il puntatore sui puntini di sospensione.
+4. Deve essere presente un'area della struttura che include entrambe le parentesi quadre. È necessario essere in grado di fare clic sul segno meno a sinistra della parentesi quadra aperta per comprimere l'area della struttura. Quando l'area viene compressa, il simbolo di puntini di sospensione ( *...* ) deve apparire a sinistra dell'area compressa e una finestra popup contenente il testo **passare il puntatore di testo** deve essere visualizzato quando si sposta il puntatore sui puntini di sospensione.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura dettagliata: Collegare un tipo di contenuto a un'estensione di file](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

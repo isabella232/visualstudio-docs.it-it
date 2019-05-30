@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df36d255f5277ff9c91901b1ebe12daaef3c7c19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af0a11e2e75b8a9be44dacb58eeac2505613e86d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323043"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Riferimenti dello schema di modelli di Visual Studio
 In questa sezione contiene informazioni sugli elementi XML nelle *vstemplate* file, che sono file che archiviano i metadati per i modelli di progetto, modelli di elementi e gli Starter Kit.

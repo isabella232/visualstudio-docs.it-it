@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680568"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350476"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Specifica le informazioni da recuperare sulla corretta risoluzione di un punto di interruzione.
@@ -43,14 +46,18 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membri
-BPRESI_BPRESLOCATION Initialize/Usa il `bpResLocation` campo (punto di interruzione risoluzione percorso) della finestra di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura.
+## <a name="fields"></a>Campi
+`BPRESI_BPRESLOCATION`\
+Initialize/usare la `bpResLocation` campo (punto di interruzione risoluzione percorso) della finestra di [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura.
 
-BPRESI_PROGRAM Initialize/usare la `pProgram` campo il `BP_RESOLUTION_INFO` struttura.
+`BPRESI_PROGRAM`\
+Initialize/usare la `pProgram` campo il `BP_RESOLUTION_INFO` struttura.
 
-BPRESI_THREAD Initialize/usare la `pThread` campo il `BP_RESOLUTION_INFO` struttura.
+`BPRESI_THREAD`\
+Initialize/usare la `pThread` campo il `BP_RESOLUTION_INFO` struttura.
 
-BPRESI_ALLFIELDS specifica tutti i campi.
+`BPRESI_ALLFIELDS`\
+Specifica tutti i campi.
 
 ## <a name="remarks"></a>Note
 Passato per il [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodo per indicare quali campi della [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struttura devono essere inizializzate.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420518"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334919"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedura: Installare un plug-in del controllo del codice sorgente
 Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
@@ -64,7 +64,7 @@ Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
 
 3. Aggiungere la sottochiave **SourceCodeControlProvider**, sotto il **HKEY_LOCAL_MACHINE** chiave nel **SOFTWARE** sottochiave.
 
-    Sotto questa sottochiave, la voce del Registro di sistema **ProviderRegKey** è impostato su una stringa che rappresenta la sottochiave che è stato inserito nel Registro di sistema nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nome società\>\\< nome del prodotto \>*.
+    Sotto questa sottochiave, la voce del Registro di sistema **ProviderRegKey** è impostato su una stringa che rappresenta la sottochiave che è stato inserito nel Registro di sistema nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nome società\>\\< nome del prodotto \>* .
 
     Di seguito è riportato il contenuto di esempio per questa sottochiave.
 
@@ -77,7 +77,7 @@ Creazione di un controllo del codice sorgente del plug-in include tre passaggi:
 
 4. Creare una sottochiave denominata **InstalledSCCProviders** sotto il **SourceCodeControlProvider** sottochiave e quindi inserire una voce sotto tale sottochiave.
 
-    Il nome di questa voce è il nome leggibile dall'utente del provider (lo stesso come il valore specificato per la voce SCCServerName) e il valore è, ancora una volta, la sottochiave creata nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome visualizzato\>** = *SOFTWARE\\< società nome\>\\< nome prodotto\>*.
+    Il nome di questa voce è il nome leggibile dall'utente del provider (lo stesso come il valore specificato per la voce SCCServerName) e il valore è, ancora una volta, la sottochiave creata nel passaggio 1. Il modello consiste **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome visualizzato\>**  = *SOFTWARE\\< società nome\>\\< nome prodotto\>* .
 
     Ad esempio:
 

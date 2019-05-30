@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8578056f907c70e3b900b1f3cdbcbeefc39688b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 799b7e67248759987a3e3f9595978fb1a7bbf87d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317602"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 Specifica il tipo del nome host.
@@ -39,10 +42,12 @@ public enum enum_GETHOSTNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
-GHN_FRIENDLY_NAME specifica un nome descrittivo dell'host.
+## <a name="fields"></a>Campi
+`GHN_FRIENDLY_NAME`\
+Specifica un nome descrittivo dell'host.
 
-GHN_FILE_NAME specifica un nome file dell'host.
+`GHN_FILE_NAME`\
+Specifica un nome file dell'host.
 
 ## <a name="remarks"></a>Note
 Questi valori vengono passati come argomento per il [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodo per recuperare un nome host in formati diversi.

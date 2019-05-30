@@ -3,17 +3,17 @@ title: Gestione di progetti Windows universali | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907043"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340552"
 ---
 # <a name="manage-universal-windows-projects"></a>Gestire i progetti Windows universali
 
@@ -293,7 +293,7 @@ A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area down
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual c#** > **Windows**  >   **Windows 8** > **universale** > **App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:
+16. Provare ora a eseguire l'operazione. Premere F5 per avviare l'istanza sperimentale. Creare un progetto di app universali hub c# nell'istanza sperimentale (nelle **nuovo progetto** della finestra di dialogo **Visual c#**  > **Windows**  >   **Windows 8** > **universale** > **App Hub**). Dopo il caricamento della soluzione, passare al **strumenti** menu e fare clic su **TestUniversalProject richiamare**, quindi selezionare il testo nel **Output** riquadro. Il risultato dovrebbe essere simile al seguente:
 
     ```
     Found shared project: HubApp.Shared

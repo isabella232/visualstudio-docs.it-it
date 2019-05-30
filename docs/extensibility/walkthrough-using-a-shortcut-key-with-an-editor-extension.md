@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964482"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318508"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Procedura dettagliata: Usare i tasti di scelta rapida con un'estensione dell'editor
 È possibile rispondere a tasti di scelta rapida nell'estensione di editor. Procedura dettagliata illustra come aggiungere un'area di controllo di visualizzazione per una visualizzazione di testo tramite un tasto di scelta rapida. Questa procedura dettagliata è basata sul modello di riquadro di visualizzazione dell'area di controllo editor e consente di aggiungere l'area di controllo usando il carattere +.
@@ -108,7 +108,7 @@ Prima di Visual Studio 2017 versione 15.6, l'unico modo per gestire i comandi in
     }
     ```
 
-7. Implementare il `Exec()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più (**+**) carattere viene digitato.
+7. Implementare il `Exec()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più ( **+** ) carattere viene digitato.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ Il gestore del comando è un'implementazione di <xref:Microsoft.VisualStudio.Com
    }
    ```
 
-6. Implementare il `ExecuteCommand()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più (**+**) carattere viene digitato.
+6. Implementare il `ExecuteCommand()` metodo in modo che si aggiunge una casella di colore viola alla visualizzazione se un segno più ( **+** ) carattere viene digitato.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

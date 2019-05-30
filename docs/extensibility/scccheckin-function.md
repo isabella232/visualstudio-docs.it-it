@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckin function
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22264f9882192e05a9812cad4d6ea7f74bfdabfc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62802997"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333949"
 ---
 # <a name="scccheckin-function"></a>Funzione SccCheckin
 Questa funzione controlla nei file precedentemente estratti al sistema di controllo di origine, le modifiche e la creazione di una nuova versione. Questa funzione viene chiamata con un conteggio e una matrice di nomi dei file da archiviare.

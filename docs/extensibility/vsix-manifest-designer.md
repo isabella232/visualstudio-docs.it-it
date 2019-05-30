@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411115"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322845"
 ---
 # <a name="vsix-manifest-designer"></a>Finestra di progettazione del manifesto VSIX
 Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di installazione per un'estensione di Visual Studio.
@@ -66,9 +66,9 @@ Modifica un file manifesto di pacchetto VSIX, che imposta il comportamento di in
 
   **I tag** aggiunge i tag di testo da utilizzare per i suggerimenti di ricerca.
 
-  **Note sulla versione** specifica un file (*. txt*, *RTF*) che contiene le note sulla versione. Accetta inoltre l'URL di un sito Web che consente di visualizzare le note sulla versione.
+  **Note sulla versione** specifica un file ( *. txt*, *RTF*) che contiene le note sulla versione. Accetta inoltre l'URL di un sito Web che consente di visualizzare le note sulla versione.
 
-  **Getting Started Guide** specifica un file (*. txt*, *RTF*) che contiene informazioni su come usare l'estensione o il contenuto nel pacchetto VSIX. Questa guida viene visualizzata quando l'installazione dell'estensione è stata completata. Accetta inoltre l'URL di un sito Web che consente di visualizzare la Guida.
+  **Getting Started Guide** specifica un file ( *. txt*, *RTF*) che contiene informazioni su come usare l'estensione o il contenuto nel pacchetto VSIX. Questa guida viene visualizzata quando l'installazione dell'estensione è stata completata. Accetta inoltre l'URL di un sito Web che consente di visualizzare la Guida.
 
   **Altre informazioni sull'URL** specifica l'URL di un sito Web che contiene informazioni aggiuntive sul prodotto.
 

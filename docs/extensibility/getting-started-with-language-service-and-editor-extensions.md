@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7bd39ab8abde2fdbe337073e7cfaa7ea457b022f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415571"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342443"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introduzione alle estensioni di editor e servizio di linguaggio
 È possibile usare le estensioni dell'editor per aggiungere funzionalità del servizio linguaggio, ad esempio la struttura, corrispondenza parentesi graffe, IntelliSense e lampadine per il proprio linguaggio di programmazione o a qualsiasi tipo di contenuto. È anche possibile personalizzare l'aspetto e il comportamento dell'editor di Visual Studio, ad esempio colore, i margini, le aree di controllo e altri elementi visivi come testo. È anche possibile definire il tipo di contenuto e specificare l'aspetto e il comportamento delle visualizzazioni testo in cui viene visualizzato il contenuto.

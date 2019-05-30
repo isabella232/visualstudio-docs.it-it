@@ -6,17 +6,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9367e412f66ded1fd009b31a4788ed4ecc86a2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c43dab922d51d2d3f96ffaba0ef24f8f0e18fa1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891239"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341874"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in più di un gruppo o un menu. Usando l'elemento CommandPlacement, non è completamente ridefinire tali elementi per modificare l'aspetto di un'interfaccia utente.

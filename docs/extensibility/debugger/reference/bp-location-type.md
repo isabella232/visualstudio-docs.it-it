@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715661"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353041"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Specifica il tipo di posizione del punto di interruzione per una richiesta di punto di interruzione.
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
-BPLT_NONE non specifica alcuna posizione del punto di interruzione.
+## <a name="fields"></a>Campi
+`BPLT_NONE`\
+Non specifica nessuna posizione punto di interruzione.
 
-BPLT_FILE_LINE specifica il tipo di posizione del punto di interruzione come un file di riga.
+`BPLT_FILE_LINE`\
+Specifica il tipo di posizione del punto di interruzione come un file di riga.
 
-BPLT_FUNC_OFFSET specifica il tipo di posizione del punto di interruzione come un offset di funzione.
+`BPLT_FUNC_OFFSET`\
+Specifica il tipo di posizione del punto di interruzione come un offset di funzione.
 
-BPLT_CONTEXT specifica il tipo di posizione del punto di interruzione come un contesto.
+`BPLT_CONTEXT`\
+Specifica il tipo di posizione del punto di interruzione come un contesto.
 
-BPLT_STRING specifica il tipo di posizione del punto di interruzione sotto forma di stringa.
+`BPLT_STRING`\
+Specifica il tipo di posizione del punto di interruzione sotto forma di stringa.
 
-BPLT_ADDRESS specifica il tipo di posizione del punto di interruzione come un indirizzo.
+`BPLT_ADDRESS`\
+Specifica il tipo di posizione del punto di interruzione come un indirizzo.
 
-BPLT_RESOLUTION specifica il tipo di posizione del punto di interruzione come una risoluzione.
+`BPLT_RESOLUTION`\
+Specifica il tipo di posizione del punto di interruzione come una risoluzione.
 
-BPLT_CODE_FILE_LINE specifica il tipo di posizione del punto di interruzione come una riga di codice sorgente.
+`BPLT_CODE_FILE_LINE`\
+Specifica il tipo di posizione del punto di interruzione come una riga di codice sorgente.
 
-BPLT_CODE_FUNC_OFFSET specifica il tipo di posizione del punto di interruzione come un offset di funzione di codice.
+`BPLT_CODE_FUNC_OFFSET`\
+Specifica il tipo di posizione del punto di interruzione come un offset di funzione di codice.
 
-BPLT_CODE_CONTEXT specifica il tipo di posizione del punto di interruzione come un contesto del codice.
+`BPLT_CODE_CONTEXT`\
+Specifica il tipo di posizione del punto di interruzione come un contesto del codice.
 
-BPLT_CODE_STRING specifica il tipo di posizione del punto di interruzione come una stringa di codice.
+`BPLT_CODE_STRING`\
+Specifica il tipo di posizione del punto di interruzione come una stringa di codice.
 
-BPLT_CODE_ADDRESS specifica il tipo di posizione del punto di interruzione come un indirizzo di codice.
+`BPLT_CODE_ADDRESS`\
+Specifica il tipo di posizione del punto di interruzione come un indirizzo di codice.
 
-BPLT_DATA_STRING specifica il tipo di posizione del punto di interruzione come una stringa di dati.
+`BPLT_DATA_STRING`\
+Specifica il tipo di posizione del punto di interruzione come una stringa di dati.
 
-BPLT_TYPE_MASK specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratti dal valore.
+`BPLT_TYPE_MASK`\
+Specifica una maschera di bit, in modo che il tipo di punto di interruzione possa essere estratti dal valore.
 
-BPLT_LOCATION_TYPE_MASK specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratti dal valore.
+`BPLT_LOCATION_TYPE_MASK`\
+Specifica una maschera di bit, in modo che il tipo di posizione del punto di interruzione possa essere estratti dal valore.
 
 ## <a name="remarks"></a>Note
 Passato come parametro per il [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) (metodo).

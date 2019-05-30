@@ -3,18 +3,18 @@ title: Riferimento del valore di colore
 description: 'Informazioni di riferimento: Codici esadecimali per la creazione di nuovi token di colore di Visual Studio'
 keywords: colore, il codice esadecimale, hue, con tema dell'interfaccia utente, temi
 author: brickgeorge
-ms.author: gregvanl
+ms.author: madsk
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea37231dd31667389d9f08872eadbfdf26375bb2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62804544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338005"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Riferimento del valore di colore per Visual Studio
 

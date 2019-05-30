@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697130"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318199"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Specifica la quantità di stato del programma (ad esempio thread in esecuzione, gli stack frame e indirizzo dell'istruzione corrente) per eseguire il dump.
@@ -39,10 +42,12 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>Membri
-DUMP_MINIDUMP specifica un dump di piccole dimensioni e compatto.
+## <a name="fields"></a>Campi
+`DUMP_MINIDUMP`\
+Specifica un dump di piccole dimensioni e compatto.
 
-DUMP_FULLDUMP specifica un dump completo e di grandi dimensioni.
+`DUMP_FULLDUMP`\
+Specifica un dump completo e di grandi dimensioni.
 
 ## <a name="remarks"></a>Note
 Passato come argomento per il [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) (metodo).

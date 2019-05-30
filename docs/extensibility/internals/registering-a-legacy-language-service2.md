@@ -7,17 +7,17 @@ helpviewer_keywords:
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6747695c92d44b87ed4acc34f234b8ff06fd307e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909040"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353363"
 ---
 # <a name="registering-a-legacy-language-service"></a>La registrazione di un servizio di linguaggio Legacy
 Le sezioni seguenti forniscono gli elenchi di voci del Registro di sistema per la lingua diverse opzioni di servizio disponibili in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_FIELDS enumeration
 ms.assetid: cfc9b4de-c756-4844-bea7-d9f186a51d1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3fdc4a738a28f64aa87955f339409d1e64ed3bd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3499ce5bfe46f3185dd5c8ca9e2ada055544c8c8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715674"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318256"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
 Specifica le informazioni da recuperare relative a un campo disassembly.
@@ -61,32 +64,45 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membri
-DSF_ADDRESS Initialize/usare la `bstrAddress` campo.
+## <a name="fields"></a>Campi
+`DSF_ADDRESS`\
+Initialize/usare la `bstrAddress` campo.
 
-DSF_ADDRESSOFFSET Initialize/usare la `bstrAddressOffset` campo.
+`DSF_ADDRESSOFFSET`\
+Initialize/usare la `bstrAddressOffset` campo.
 
-DSF_CODEBYTES Initialize/usare la `bstrCodeBytes` campo.
+`DSF_CODEBYTES`\
+Initialize/usare la `bstrCodeBytes` campo.
 
-DSF_OPCODE Initialize/usare la `bstrOpCode` campo.
+`DSF_OPCODE`\
+Initialize/usare la `bstrOpCode` campo.
 
-DSF_OPERANDS Initialize/usare la `bstrOperands` campo.
+`DSF_OPERANDS`\
+Initialize/usare la `bstrOperands` campo.
 
-DSF_SYMBOL Initialize/usare la `bstrSymbol` campo.
+`DSF_SYMBOL`\
+Initialize/usare la `bstrSymbol` campo.
 
-DSF_CODELOCATIONID Initialize/usare la `uCodeLocationId` campo.
+`DSF_CODELOCATIONID`\
+Initialize/usare la `uCodeLocationId` campo.
 
-DSF_POSITION Initialize/usare la `posBeg` e `posEnd` campi.
+`DSF_POSITION`\
+Initialize/usare la `posBeg` e `posEnd` campi.
 
-DSF_DOCUMENTURL Initialize/usare la `bstrDocumentUrl` campo.
+`DSF_DOCUMENTURL`\
+Initialize/usare la `bstrDocumentUrl` campo.
 
-DSF_BYTEOFFSET Initialize/usare la `dwByteOffset` campo.
+`DSF_BYTEOFFSET`\
+Initialize/usare la `dwByteOffset` campo.
 
-DSF_FLAGS Initialize/usare la `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.
+`DSF_FLAGS`\
+Initialize/usare la `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) campo.
 
-I nomi dei simboli includono DSF_OPERANDS_SYMBOLS nel `bstrOperands` campo.
+`DSF_OPERANDS_SYMBOLS`\
+Includere i nomi dei simboli nel `bstrOperands` campo.
 
-DSF_ALL specifica tutti i campi per il flusso di disassemblaggio.
+`DSF_ALL`\
+Specifica tutti i campi per il flusso di disassemblaggio.
 
 ## <a name="remarks"></a>Note
 Passato come parametro per il [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metodo per indicare quali campi della [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struttura devono essere inizializzate.

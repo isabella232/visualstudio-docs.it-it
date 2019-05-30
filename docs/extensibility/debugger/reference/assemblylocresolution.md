@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ASSEMBLYLOCRESOLUTION enumeration
 ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06eb23c14636b72004e1089f8681adc37d68ae11
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a229fc7f0a59f8b5ca5d2d71a6d8bf0a01f76b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710253"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327375"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 Specifica un assembly in cui si trova.
@@ -43,14 +46,18 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 };
 ```
 
-## <a name="members"></a>Membri
-ALR_NAME Assembly si trova nello spazio dei nomi corrente.
+## <a name="fields"></a>Campi
+`ALR_NAME`\
+Assembly si trova nello spazio dei nomi corrente.
 
-ALR_USERDIR Assembly si trova in una directory dell'utente.
+`ALR_USERDIR`\
+Assembly si trova in una directory dell'utente.
 
-ALR_SHAREDDIR Assembly si trova nella directory condivisa.
+`ALR_SHAREDDIR`\
+Assembly si trova nella directory condivisa.
 
-ALR_REMOTEDIR Assembly si trova in una directory remota.
+`ALR_REMOTEDIR`\
+Assembly si trova in una directory remota.
 
 ## <a name="remarks"></a>Note
 Questi valori vengono restituiti per il [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) e [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metodi.

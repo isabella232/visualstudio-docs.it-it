@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugBeforeSymbolSearchEvent2 interface
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f563d8cd40a8c30542b1aa93fa22afc8d161a52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83e71b6059f19840311075261940942010f2e99e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923741"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349563"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 Il motore di debug (DE) invia questa interfaccia per la gestione del debug (SDM) per impostare lo stato della sessione a barre messaggio durante il caricamento di simboli.

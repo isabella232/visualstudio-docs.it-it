@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c9a6bad31d36b334a9764dba7897bbf6ad14c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: d728c0aae749caa661ae4cb8f29e13f9cd1827fb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353070"
 ---
 # <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
 Descrive la risoluzione di un punto di interruzione in una posizione specifica.
@@ -31,7 +33,8 @@ typedef struct _BP_LOCATION_RESOLUTION {
 ```
 
 ## <a name="members"></a>Membri
-pResolution il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo di punto di interruzione e le relative informazioni di risoluzione.
+`pResolution`\
+Il [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) oggetto che determina il tipo di punto di interruzione e le relative informazioni di risoluzione.
 
 ## <a name="remarks"></a>Note
 Questa struttura è un membro del [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura come parte di un'unione.

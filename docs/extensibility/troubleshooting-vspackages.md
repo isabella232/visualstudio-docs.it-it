@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338021"
 ---
 # <a name="troubleshooting-vspackages"></a>Risoluzione dei problemi relativi ai pacchetti VSPackage
 Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage e suggerimenti per risolvere i problemi.
@@ -66,7 +66,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 
    1. Trovare il CLSID del pacchetto VSPackage nella sezione pacchetti del Registro di sistema:
 
-        Studio HKLM\Software\Microsoft\Visual\\*\<versione >* \Packages
+        Studio HKLM\Software\Microsoft\Visual\\ *\<versione >* \Packages
 
    2. Verificare che il percorso specificato dalla sottochiave SatelliteDll sia corretto.
 
@@ -119,7 +119,7 @@ Di seguito sono i problemi comuni che potrebbero aver con il pacchetto VSPackage
 
 2. Per codice non gestito, trovare il CLSID del pacchetto VSPackage nel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nodo del Registro di sistema CLSID:
 
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version>* \CLSID
 
    Assicurarsi che la voce InprocServer32 abbia il percorso corretto della dll VSPackage.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701719"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317588"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Specifica il tipo di nome di file da recuperare.
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
-GN_NAME specifica un nome descrittivo del documento o del contesto.
+## <a name="fields"></a>Campi
+`GN_NAME`\
+Specifica un nome descrittivo del documento o del contesto.
 
-GN_FILENAME specifica il percorso completo del documento o del contesto.
+`GN_FILENAME`\
+Specifica il percorso completo del documento o del contesto.
 
-GN_BASENAME specifica un nome di file di base anziché un percorso completo del documento o del contesto.
+`GN_BASENAME`\
+Specifica un nome di file di base anziché un percorso completo del documento o del contesto.
 
-GN_MONIKERNAME specifica un nome univoco del documento o del contesto sotto forma di un moniker.
+`GN_MONIKERNAME`\
+Specifica un nome univoco del documento o del contesto sotto forma di un moniker.
 
-GN_URL specifica il nome dell'URL del documento o del contesto.
+`GN_URL`\
+Specifica il nome dell'URL del documento o del contesto.
 
-GN_TITLE specifica un titolo del documento, se presente.
+`GN_TITLE`\
+Specifica un titolo del documento, se presente.
 
-Elabora GN_STARTPAGEURL Ottiene l'URL per il valore iniziale della pagina.
+`GN_STARTPAGEURL`\
+Ottiene l'URL della pagina iniziale per i processi.
 
 ## <a name="remarks"></a>Note
 Questi valori vengono passati come parametri per il [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metodi per specificare il tipo di nome da restituire.

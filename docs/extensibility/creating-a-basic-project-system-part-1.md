@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409994"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341648"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Creare un sistema di progetto di base, parte 1
 In Visual Studio, i progetti sono contenitori utilizzati dagli sviluppatori per organizzare file di codice sorgente e altre risorse. I progetti vengono visualizzati come figli di soluzioni nel **Esplora soluzioni**. I progetti consentono di organizzare, compilare, eseguire il debug e distribuire il codice sorgente e creare riferimenti a servizi Web, database e altre risorse.
@@ -224,7 +224,7 @@ Templates
 
     La ricompilazione registra il modello di progetto.
 
-   I parametri `defaultProjectExtension` e `possibleProjectExtensions` configurati per l'estensione del file di progetto (*.myproj*). Il `projectTemplatesDirectory` parametro è impostato per il percorso relativo del *modelli* cartella. Durante la compilazione, questo percorso verrà convertito in una build completa e aggiunto al Registro di sistema per registrare il sistema del progetto.
+   I parametri `defaultProjectExtension` e `possibleProjectExtensions` configurati per l'estensione del file di progetto ( *.myproj*). Il `projectTemplatesDirectory` parametro è impostato per il percorso relativo del *modelli* cartella. Durante la compilazione, questo percorso verrà convertito in una build completa e aggiunto al Registro di sistema per registrare il sistema del progetto.
 
 ## <a name="test-the-template-registration"></a>La registrazione di un modello di test
  Registrazione di un modello indica a Visual Studio il percorso della cartella dei modelli di progetto in modo che Visual Studio può visualizzare il nome del modello e l'icona nel **nuovo progetto** nella finestra di dialogo.

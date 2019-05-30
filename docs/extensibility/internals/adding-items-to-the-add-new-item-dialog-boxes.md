@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418683"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328057"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Aggiungere elementi alla finestra di dialogo Aggiungi nuovo elemento
 Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene avviata la finestra di dialogo con le chiavi del Registro di sistema. Come illustrato nelle voci del Registro di sistema seguenti, il **AddItemTemplates** sezione contiene il percorso e il nome della directory degli elementi reso disponibile nel **Aggiungi nuovo elemento** vengono inseriti nella finestra di dialogo.
@@ -46,7 +46,7 @@ Il processo per l'aggiunta di elementi per il **Aggiungi nuovo elemento** viene 
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- Della directory indicata per **TemplatesDir**, ovvero *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, è il nodo sul lato sinistro del **Add Nuovo elemento** struttura ad albero casella di dialogo. Elementi aggiuntivi dell'albero si basano sulla sottodirectory della directory radice. I file possono essere aggiunti al progetto sono gli elementi nel riquadro di destra del **Aggiungi nuovo elemento** nella finestra di dialogo.
+ Della directory indicata per **TemplatesDir**, ovvero *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , è il nodo sul lato sinistro del **Add Nuovo elemento** struttura ad albero casella di dialogo. Elementi aggiuntivi dell'albero si basano sulla sottodirectory della directory radice. I file possono essere aggiunti al progetto sono gli elementi nel riquadro di destra del **Aggiungi nuovo elemento** nella finestra di dialogo.
 
  In genere, questa cartella contiene i file di modello per il progetto, ad esempio un modello HTML oppure *cpp* file ed eventuali *vsz* file per l'avvio di procedure guidate. Per controllare come vengono visualizzati gli elementi, è anche possibile includere *VSDIR* file per la localizzazione di icone e i nomi di directory. La stringa localizzata è la didascalia visualizzata nella finestra di dialogo che rappresenta questo nodo nel **Aggiungi nuovo elemento** struttura ad albero casella di dialogo.
 

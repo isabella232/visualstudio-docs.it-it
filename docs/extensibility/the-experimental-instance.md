@@ -7,17 +7,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493ab672322db2826f8f7e7675decdda0a531538
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 773581e7cf9e0f12f507dcd3c768d88724da9f80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435062"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316422"
 ---
 # <a name="the-experimental-instance"></a>Istanza sperimentale
 Per proteggere l'ambiente di sviluppo di Visual Studio da applicazioni non testate che è possibile modificarlo, VSSDK offre uno spazio sperimentale che è possibile usare per provare. Si sviluppano nuove applicazioni con Visual Studio come di consueto, ma vengono eseguiti con l'istanza sperimentale.
@@ -26,7 +26,7 @@ Per proteggere l'ambiente di sviluppo di Visual Studio da applicazioni non testa
 
  Se si desidera avviare l'istanza sperimentale di Visual Studio all'esterno di una soluzione specifica, eseguire il comando seguente nella finestra di comando:
 
- "*\<Percorso di installazione di visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp
+ " *\<Percorso di installazione di visual studio >* \Common7\IDE\devenv.exe" RootSuffix Exp
 
 > [!NOTE]
 > L'istanza sperimentale è scritto nel Registro di sistema sotto la `<version number>Exp` e `<version number>Exp_Config` nodi. Ad esempio è l'area del Registro di sistema sperimentale di Visual Studio 2015

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a316d2af6ecb76c573cfb43e1334df1933a2989b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b622901ce90187ff8230a8e23a11110e0795b0b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856215"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340490"
 ---
 # <a name="manage-vspackages"></a>Gestire VSPackage
 Nella maggior parte dei casi non è necessario preoccuparsi della gestione dei pacchetti VSPackage, poiché i modelli di progetto ed elemento registrare e caricare automaticamente il pacchetto. Tuttavia, in alcuni casi potrebbe essere necessario apprendere un po' più allo scopo di gestire il pacchetto.

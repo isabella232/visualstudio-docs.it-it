@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694229"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337706"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Questa struttura descrive una variabile locale, parametro o altri campi.
@@ -45,15 +48,20 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Membri
-dwFields una combinazione di flag dal [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumerazione che specifica i membri che vengono compilati.
+`dwFields`\
+Una combinazione di flag dal [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumerazione che specifica i membri che vengono compilati.
 
-bstrFullName il nome completo del campo.
+`bstrFullName`\
+Il nome completo del campo.
 
-Il nome breve del campo bstrName.
+`bstrName`\
+Il nome breve del campo.
 
-bstrType il tipo del campo.
+`bstrType`\
+Il tipo del campo.
 
-dwModifiers una combinazione di flag dal [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumerazione che descrive il campo.
+`dwModifiers`\
+Una combinazione di flag dal [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumerazione che descrive il campo.
 
 ## <a name="remarks"></a>Note
 Questa struttura viene passata per il [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) in cui viene compilato nel metodo.

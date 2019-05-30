@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418845"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321394"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementare le categorie personalizzate e visualizzare gli elementi
 Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del testo per il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ambiente di sviluppo integrato (IDE) tramite le categorie personalizzate e di elementi visualizzati.
@@ -45,13 +45,13 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
 ## <a name="to-create-or-identify-categories"></a>Per creare o identificare le categorie
 
-- Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\* \<versione di Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Categoria >* è il nome non localizzato della categoria.
 
 - Popolare il Registro di sistema con due valori:
 
-  |Nome|Tipo|Dati|Descrizione|
+  |nome|Tipo|Dati|Descrizione|
   |----------|----------|----------|-----------------|
   |Category|REG_SZ|GUID|Un GUID creato per identificare la categoria.|
   |Pacchetto|REG_SZ|GUID|Il GUID del servizio di VSPackage che supporta la categoria.|
@@ -60,13 +60,13 @@ Un pacchetto VSPackage può fornire controllo dei tipi di carattere e colori del
 
 ## <a name="to-create-or-identify-groups"></a>Per creare o identificare i gruppi
 
-- Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\*\<versione di Visual Studio >*\FontAndColors\\*  \<gruppo >*]*
+- Costruire un tipo speciale di voce del Registro di sistema categoria sotto *[HKLM\Software\Microsoft. \Visual Studio\\* \<versione di Visual Studio > *\FontAndColors\\*  \<gruppo > *]*
 
    *\<gruppo >* è il nome non localizzato del gruppo.
 
 - Popolare il Registro di sistema con due valori:
 
-  |Nome|Tipo|Dati|Descrizione|
+  |nome|Tipo|Dati|Descrizione|
   |----------|----------|----------|-----------------|
   |Category|REG_SZ|GUID|Un GUID creato per identificare il gruppo.|
   |Pacchetto|REG_SZ|GUID|Il GUID del servizio che supporta la categoria.|

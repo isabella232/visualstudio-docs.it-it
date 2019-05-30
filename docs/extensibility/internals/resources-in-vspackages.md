@@ -7,17 +7,17 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e058c55e96bed828223f021606a748b9da99254a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3abcfebb7bbcc0eaa6a05760de4531f020b41ddb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908887"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318722"
 ---
 # <a name="resources-in-vspackages"></a>Risorse nei pacchetti VSPackage
 È possibile incorporare le risorse localizzate in nativa dell'interfaccia utente le DLL satellite, le DLL satellite gestite, o in un pacchetto VSPackage gestito se stesso.

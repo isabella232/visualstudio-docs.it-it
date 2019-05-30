@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Add New Project dialog box
 - registry, Add New Project dialog box
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319508"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 Tipi di progetto devono registrare le directory in cui si trovano i relativi modelli di progetto ed elemento di progetto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Usa le informazioni di registrazione associate ai tipi di progetto per determinare gli elementi da visualizzare nel **Aggiungi nuovo progetto** e **Aggiungi nuovo elemento** finestre di dialogo.
@@ -117,7 +117,8 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
  \WizardFiles
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Aggiunta di modelli di progetto e di elemento di progetto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Procedure guidate](../../extensibility/internals/wizards.md)
-- [Localizzazione di applicazioni](../../ide/localizing-applications.md)
+- [Localizzazione di applicazioni](../../ide/globalizing-and-localizing-applications.md)
 - [CATID per gli oggetti che vengono in genere usati per estendere i progetti](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

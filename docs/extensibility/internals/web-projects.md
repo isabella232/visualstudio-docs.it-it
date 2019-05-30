@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c0e796632966c43c052f70fc872d550b57ad7d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8215241f93b0b796f2b1ad954b09d96fe6f493ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856965"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323271"
 ---
 # <a name="web-projects"></a>Progetti Web
 Un sistema di progetto Web è un sistema di progetto che consente di creare progetti Web. I progetti Web consentono di creare applicazioni Web. È possibile programmare una pagina Web usando linguaggi di programmazione tradizionali, ad esempio [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], per raccogliere ed elaborare informazioni dall'utente, archiviarlo in un database e così via. Pagine Web con codice associate vengono chiamate smart pagine Web.

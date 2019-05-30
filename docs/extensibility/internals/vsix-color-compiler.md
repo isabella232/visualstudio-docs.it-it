@@ -3,17 +3,17 @@ title: Compilatore dei colori VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f706cc0c84f4329e0e4e8ad9545a31d8f3c31ed4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908008"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332803"
 ---
 # <a name="vsix-color-compiler"></a>Compilatore dei colori VSIX
 Lo strumento compilatore di Visual Studio estensione colore è un'applicazione console che accetta un file con estensione XML che rappresenta i colori per i temi di Visual Studio esistenti e vengono convertiti in un pkgdef file in modo che questi colori possono essere usati in Visual Studio. Poiché è facile confrontare le differenze tra file con estensione XML, questo strumento è utile per la gestione dei colori personalizzati nel controllo del codice sorgente. Anche possibile eseguire l'hook al ambienti di compilazione in modo che l'output della compilazione è un file. pkgdef valido.
@@ -111,7 +111,7 @@ Lo strumento compilatore di Visual Studio estensione colore è un'applicazione c
 |-|-|
 |**Attributo**|**Definizione**|
 |Tipo|[Obbligatorio] Il tipo del colore. Può essere uno dei seguenti:<br /><br /> *CT_INVALID:* Il colore non valido o non impostata.<br /><br /> *CT_RAW:* Un valore ARGB non elaborato.<br /><br /> *CT_COLORINDEX:* NON USARE.<br /><br /> *CT_SYSCOLOR:* Un colore di sistema di Windows da SysColor.<br /><br /> *CT_VSCOLOR:* Un colore di Visual Studio da __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* Colore automatico.<br /><br /> *CT_TRACK_FOREGROUND:* NON USARE.<br /><br /> *CT_TRACK_BACKGROUND:* NON USARE.|
-|Source|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|
+|Origine|[Obbligatorio] Il valore del colore rappresentato in formato esadecimale|
 
  Tutti i valori supportati dall'enumerazione __VSCOLORTYPE sono supportati per lo schema nell'attributo Type. Tuttavia, è consigliabile utilizzare solo CT_RAW e CT_SYSCOLOR.
 

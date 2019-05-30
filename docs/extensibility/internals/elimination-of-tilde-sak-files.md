@@ -7,17 +7,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e409a08ba295bb55eb1fcfcd2a048a9bdb5ea7c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418637"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327531"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminazione di ~ file SAK
 In origine controllo plug-in API 1.2, il *~ SAK* i file sono stati sostituiti dai flag funzionalità e nuove funzioni di rilevare la presenza di un'origine di controllo del plug-in supporta le *MSSCCPRJ* file ed estrazioni condivise.

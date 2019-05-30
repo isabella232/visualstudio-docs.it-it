@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891837"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352343"
 ---
 # <a name="add-command-line-switches"></a>Aggiungere i parametri della riga di comando
 È possibile aggiungere opzioni della riga di comando che si applicano al pacchetto VSPackage quando *devenv.exe* viene eseguita. Usare <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> per dichiarare il nome dell'opzione e le relative proprietà. In questo esempio viene aggiunta l'opzione MySwitch per una sottoclasse di VSPackage denominato **AddCommandSwitchPackage** senza argomenti e con il pacchetto VSPackage caricato automaticamente.
@@ -34,7 +34,7 @@ ms.locfileid: "62891837"
 | Parametro | Descrizione|
 | Argomenti | Il numero di argomenti per il commutatore. Può essere "*", o un elenco di argomenti. |
 | DemandLoad | Caricare il pacchetto VSPackage automaticamente se è impostato su 1, altrimenti è impostato su 0. |
-| HelpString | L'ID della Guida stringa o una risorsa della stringa da visualizzare con **devenv /?**. |
+| HelpString | L'ID della Guida stringa o una risorsa della stringa da visualizzare con **devenv /?** . |
 | Nome | Questo parametro. |
 | PackageGuid | Il GUID del pacchetto. |
 

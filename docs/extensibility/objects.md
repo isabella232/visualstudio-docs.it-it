@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - objects, interfaces
 ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6898f8ce028a270bbf9d83b073439cc4576f56f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41825004c9a9e8cd5c89f2c3fb7eb08146d70063
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336286"
 ---
 # <a name="objects"></a>Oggetti
 Le informazioni di riferimento seguenti vengono illustrati gli oggetti utilizzati per creare un'istanza dell'editor di testo principale.
