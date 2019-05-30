@@ -3,17 +3,17 @@ title: Fondamentali sull'esperienza utente per Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310803"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fondamentali sull'esperienza utente per Visual Studio
 
@@ -134,10 +134,10 @@ L'approccio corretto illustrato nella **figura C**, l'impostazione è collegata 
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Sottolineatura usata come etichetta di gruppo, non un collegamento ipertestuale
  Sottolineare il testo deve essere utilizzato solo per i collegamenti ipertestuali.
 
- **Non valido:**\
+ **Non valido:** \
  ![Testo sottolineato che non è un collegamento ipertestuale è un antipattern di Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "0102 g_GroupLabelIncorrect")<br />Testo sottolineato che non è un collegamento ipertestuale è un antipattern di Visual Studio.
 
- **Buona:**\
+ **Buona:** \
  ![Applicato lo stile corretto, non hyperlink testo viene visualizzato solo nel tipo di carattere ambiente. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102 h_GroupLabelCorrect")<br />Applicato lo stile corretto, non hyperlink testo viene visualizzato solo nel tipo di carattere ambiente.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Facendo clic su una casella di controllo di risultati in una finestra di dialogo popup

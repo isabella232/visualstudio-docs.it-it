@@ -6,24 +6,24 @@ helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8994270ece639cc7d22a27af6339d525ff3618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae1c327c14ed2b349ee02566c5cdfd38b9a07859
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420504"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311959"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Procedura: Usare elementi colorabili incorporati
 Prima di usare gli elementi colorabili incorporati, è necessario prima segnalare all'ambiente di sviluppo integrato (IDE) che non si specifica i proprio elementi colorabili personalizzati, che in questo caso sarebbe <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> oggetti. Eseguire questa operazione impostando una voce del Registro di sistema per il servizio di linguaggio.
 
 ## <a name="to-use-built-in-colorable-items"></a>Usare elementi colorabili incorporati
 
-1. Sotto **HKEY_LOCAL_MACHINE\VisualStudio\\< x. y > \Languages\Language Services\\< nome lingua\>**, dove \<x. y > è una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Nome linguaggio > è il nome del linguaggio, di creare un valore di voce del Registro di sistema valore DWORD denominato **RequestStockColors**.
+1. Sotto **HKEY_LOCAL_MACHINE\VisualStudio\\< x. y > \Languages\Language Services\\< nome lingua\>** , dove \<x. y > è una versione di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Nome linguaggio > è il nome del linguaggio, di creare un valore di voce del Registro di sistema valore DWORD denominato **RequestStockColors**.
 
 2. Impostare il **RequestStockColors** al valore della voce del Registro di sistema *1*.
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312786"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procedura dettagliata: Creare un editor principale e la registrazione di un tipo di file dell'editor
 Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage che inizia il [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principale quando un file con il *.myext* estensione del nome file viene caricato.
@@ -28,7 +28,7 @@ Questa procedura dettagliata viene illustrato come creare un pacchetto VSPackage
 
 1. Nella sezione relativa **all'estendibilità di Visual Basic**. Il linguaggio predefinito del progetto è Visual Basic.
 
-2. Nella sezione relativa **all'estendibilità di C#**. Il linguaggio predefinito del progetto è C#.
+2. Nella sezione relativa **all'estendibilità di C#** . Il linguaggio predefinito del progetto è C#.
 
 3. Nella sezione relativa **all'estendibilità di altri tipi di progetto**. Il linguaggio predefinito del progetto è C++.
 

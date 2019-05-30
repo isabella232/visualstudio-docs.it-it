@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097089"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263583"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Aggiunta della funzione di ricerca in una finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Quando si creano o aggiorna una finestra degli strumenti nella propria estension
      Nella parte superiore della finestra degli strumenti, verrà visualizzato un controllo di ricerca con un **ricerca** filigrana e un'icona sulla lente di ingrandimento. Tuttavia, la ricerca non funziona ancora perché non è stato implementato il processo di ricerca.  
   
 ## <a name="to-add-the-search-implementation"></a>Per aggiungere l'implementazione della ricerca  
- Quando si abilita ricerca su un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, come nella procedura precedente, la finestra degli strumenti consente di creare un host di ricerca. Questo host configura e gestisce i processi di ricerca, che devono essere sempre eseguiti su un thread in background. Poiché il <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gestisce la creazione di host di ricerca e l'impostazione di backup della ricerca, è necessario solo creare un'attività di ricerca e fornire il metodo di ricerca. Si verifica il processo di ricerca in un thread in background e le chiamate per il controllo di finestra degli strumenti si verificano nel thread dell'interfaccia utente. Pertanto, è necessario usare il <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> metodo per gestire tutte le chiamate effettuate a gestire il controllo.  
+ Quando si abilita ricerca su un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, come nella procedura precedente, la finestra degli strumenti consente di creare un host di ricerca. Questo host configura e gestisce i processi di ricerca, che devono essere sempre eseguiti su un thread in background. Poiché il <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gestisce la creazione di host di ricerca e l'impostazione di backup della ricerca, è necessario solo creare un'attività di ricerca e fornire il metodo di ricerca. Si verifica il processo di ricerca in un thread in background e le chiamate per il controllo di finestra degli strumenti si verificano nel thread dell'interfaccia utente. Pertanto, è necessario usare il [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) metodo per gestire tutte le chiamate effettuate a gestire il controllo.  
   
 1. Aggiungere il codice seguente nel file TestSearch.cs `using` istruzioni:  
   
@@ -160,7 +160,7 @@ Quando si creano o aggiorna una finestra degli strumenti nella propria estension
   
     - Esegue l'override di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> metodo per creare un'attività di ricerca.  
   
-    - Esegue l'override di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodo per ripristinare lo stato della casella di testo. Questo metodo viene chiamato quando un utente annulla un'attività di ricerca e quando un utente imposta o si deseleziona le opzioni o filtri. Entrambe <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> vengono chiamati sul thread UI. Pertanto, non è necessario accedere alla casella di testo per mezzo del <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> (metodo).  
+    - Esegue l'override di <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> metodo per ripristinare lo stato della casella di testo. Questo metodo viene chiamato quando un utente annulla un'attività di ricerca e quando un utente imposta o si deseleziona le opzioni o filtri. Entrambe <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> vengono chiamati sul thread UI. Pertanto, non è necessario accedere alla casella di testo tramite il [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) (metodo).  
   
     - Crea una classe denominata `TestSearchTask` che eredita da <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, che fornisce un'implementazione predefinita di <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   
@@ -532,7 +532,7 @@ Quando si creano o aggiorna una finestra degli strumenti nella propria estension
   
 6. Scegliere il filtro.  
   
-     Contiene la casella di ricerca **righe: "anche"**, e vengono visualizzati i risultati seguenti:  
+     Contiene la casella di ricerca **righe: "anche"** , e vengono visualizzati i risultati seguenti:  
   
      buona 2  
   

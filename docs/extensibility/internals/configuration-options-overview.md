@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415147"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309992"
 ---
 # <a name="configuration-options-overview"></a>Panoramica sulle opzioni di configurazione
 I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può supportare più configurazioni che possono essere compilate, sottoposto a debug, esecuzione e/o distribuita. Una configurazione è un tipo di compilazione descritto con un set denominato di proprietà, in genere le opzioni del compilatore e percorsi dei file. Per impostazione predefinita, le nuove soluzioni contengono due configurazioni *Debug* e *rilascio*. Queste configurazioni possono essere applicate con le relative impostazioni predefinite, o modificata per soddisfare i requisiti di progetto e/o soluzioni specifici. Alcuni pacchetti possono essere compilati in due modi: come editor ActiveX o come un componente sul posto. I progetti non sono necessario supportare più configurazioni, tuttavia. Se è disponibile solo una configurazione, tale configurazione viene mappata in tutte le configurazioni di soluzione.
@@ -29,7 +29,7 @@ I progetti in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] può 
 
  La tabella seguente illustra la configurazione di configurazioni tipiche per un progetto. Le righe sono contrassegnate con nomi di configurazione e le colonne con nomi di piattaforma.
 
-|Nome della configurazione|Piattaforma: Win32|Piattaforma: Win64|
+|Nome configurazione|Piattaforma: Win32|Piattaforma: Win64|
 |------------------------|----------------------|----------------------|
 |*Debug*|\<Eseguire il debug Win32 Impostazioni >|\<Eseguire il debug Win64 Impostazioni >|
 |*Rilascio*|\<Impostazioni di Win32 versione >|\<Impostazioni Win64 versione >|

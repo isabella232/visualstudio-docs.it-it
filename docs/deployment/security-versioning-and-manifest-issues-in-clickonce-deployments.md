@@ -1,5 +1,5 @@
 ---
-title: Sicurezza, controllo delle versioni e i problemi di manifesto nelle distribuzioni ClickOnce | Microsoft Docs
+title: Problemi di sicurezza/controllo delle versioni/manifesto nella distribuzione ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226404"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263483"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 

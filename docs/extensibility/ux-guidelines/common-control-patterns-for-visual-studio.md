@@ -3,17 +3,17 @@ title: Pattern di controllo comuni per Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799128"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312305"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Pattern di controllo comuni per Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controlli comuni
@@ -274,7 +274,7 @@ In alcuni casi, i pulsanti possono essere utilizzati all'interno dell'interfacci
 
 Quando usare il pulsante puntini di sospensione-only breve:
 
-- Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione (**& esplorare** e **esplo & ra** nella finestra di dialogo stessa).
+- Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione ( **& esplorare** e **esplo & ra** nella finestra di dialogo stessa).
 
 - In una finestra di dialogo stretto o quando non è possibile utilizzare per inserire il pulsante di tempo ragionevole.
 
@@ -317,7 +317,7 @@ Definizione delle dimensioni per i pulsanti con interfaccia grafico sono uguale 
 I collegamenti ipertestuali sono particolarmente adatti per azioni basate sulla navigazione, ad esempio aprendo un argomento della Guida, finestra di dialogo modale o configurazione guidata. Se viene usato un collegamento ipertestuale per un comando, è necessario visualizzare sempre una modifica visibile e notevole all'interfaccia utente. In generale, le azioni che eseguono il commit a un'azione (ad esempio, salvare, Cancel ed eliminare) meglio vengono comunicate tramite un pulsante.
 
 #### <a name="writing-style"></a>Stile di scrittura
-Seguire le [linee guida di Windows Desktop per il testo dell'interfaccia utente](/windows/desktop/uxguide/text-ui). Non usare "Informazioni su altre informazioni," "Indicare mi ulteriori su" o "Get help con questo" formulazione. Al contrario, una frase di testo del collegamento della Guida in termini di una risposta dal contenuto della Guida in linea la domanda primario. Ad esempio, "**come aggiungere un server in Esplora Server?**"
+Seguire le [linee guida di Windows Desktop per il testo dell'interfaccia utente](/windows/desktop/uxguide/text-ui). Non usare "Informazioni su altre informazioni," "Indicare mi ulteriori su" o "Get help con questo" formulazione. Al contrario, una frase di testo del collegamento della Guida in termini di una risposta dal contenuto della Guida in linea la domanda primario. Ad esempio, "**come aggiungere un server in Esplora Server?** "
 
 #### <a name="visual-style"></a>Stile di visualizzazione
 

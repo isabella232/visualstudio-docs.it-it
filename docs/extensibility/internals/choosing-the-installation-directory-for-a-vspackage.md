@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 249efe70cdcc2cf8ef600ca4d9e009e094e1b105
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862049"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309114"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Scegliere la directory di installazione per un pacchetto VSPackage
 Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file system dell'utente. Il percorso dipende se il pacchetto VSPackage gestito o non gestiti, il regime di controllo delle versioni side-by-side e scelta dell'utente.
@@ -55,7 +55,7 @@ Un pacchetto VSPackage e relativi file di supporto devono trovarsi nel file syst
 
 4. Sistema LCID predefinito con la varietà di lingua predefinita.
 
-5. STATI UNITI Inglese (*. \1033* oppure *. \0x409*).
+5. STATI UNITI Inglese ( *. \1033* oppure *. \0x409*).
 
 Se la DLL VSPackage contiene delle risorse e il **SatelliteDll\DllName** voce del Registro di sistema fa riferimento ad esso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta di caricarli nell'ordine sopra indicato.
 

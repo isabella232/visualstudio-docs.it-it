@@ -7,18 +7,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c662374b8ed0abc7e1c178fb4ff07d5033de8a54
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891815"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352301"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Aggiungi controllo utente nella pagina iniziale
 
@@ -179,7 +179,7 @@ Per rendere disponibili per il progetto di pagina iniziale, questo controllo nel
 
 1. Copiare il file XAML e qualsiasi file di testo o markup supporto file, per il *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  cartella.
 
-2. Se la pagina iniziale di fa riferimento a tutti i controlli o i tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e quindi incollarli nella _cartella di installazione di Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.
+2. Se la pagina iniziale di fa riferimento a tutti i controlli o i tipi negli assembly che non sono installati da Visual Studio, copiare gli assembly e quindi incollarli nella _cartella di installazione di Visual Studio_ **\Common7\IDE\ PrivateAssemblies\\** .
 
 3. Un prompt dei comandi di Visual Studio, digitare **devenv /rootsuffix Exp** per aprire un'istanza sperimentale di Visual Studio.
 

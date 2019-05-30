@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSTextBuffer object, reference
 - views [Visual Studio SDK], VSTextBuffer object
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfce8cdc3115730ae67ba365f5c56a927542f5ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a324db2226056fd3f41180055600671a8979a67
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953062"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312796"
 ---
 # <a name="vstextbuffer-object"></a>Oggetto VSTextBuffer
 Oggetto del buffer di testo rappresenta un flusso di testo Unicode, ovvero in genere associato a un file. Oggetto <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> oggetto può essere usato all'esterno del contesto dell'editor di base, come illustrato, una procedura guidata.
