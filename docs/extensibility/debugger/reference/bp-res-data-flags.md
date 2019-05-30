@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_RES_DATA_FLAGS enumeration
 ms.assetid: d97611e2-def6-45a9-ad7d-eedf2ad4c82b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfbf34af69accc3fa50e0648880b5f8633f1618a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7573d9bde08f69a7c7e7707d7631dc71e2d8d5e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714062"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350649"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 Specifica se il punto di interruzione dei dati viene emulato o implementata nell'hardware.
@@ -37,8 +40,9 @@ public enum enum_BP_RES_DATA_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membri
-BP_RES_DATA_EMULATED specifica che il punto di interruzione dei dati viene emulato.
+## <a name="fields"></a>Campi
+`BP_RES_DATA_EMULATED`\
+Specifica che il punto di interruzione dei dati viene emulato.
 
 ## <a name="remarks"></a>Note
 Utilizzato per il `dwFlags` membro della [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struttura.

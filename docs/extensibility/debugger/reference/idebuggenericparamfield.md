@@ -1,51 +1,49 @@
 ---
 title: IDebugGenericParamField | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericParamField interface
 ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
-caps.latest.revision: 7
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: ab5cb19475ae92ab1e89bdce5c833e0f18a2cccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+ms.openlocfilehash: db5f82944063abc3274840e820104a7737944047
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873445"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349206"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Rappresenta un parametro per un tipo generico di codice gestito.
 
-Rappresenta un parametro per un tipo generico di codice gestito.  
-  
-## <a name="syntax"></a>Sintassi  
-  
-```  
-IDebugGenericParamField : IDebugField  
-```  
-  
-## <a name="notes-for-implementers"></a>Note per gli implementatori  
- Utilizzato per il supporto dei generics.  
-  
-## <a name="methods"></a>Metodi  
- Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, questa interfaccia implementa i metodi seguenti:  
-  
-|Metodo|Descrizione|  
-|------------|-----------------|  
-|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Restituisce il numero di vincoli che sono associati a questo parametro generico.|  
-|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Recupera i vincoli che sono associati a questo parametro generico.|  
-|[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Recupera i flag per il parametro generico.|  
-|[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Recupera l'indice del parametro generico.|  
-|[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Recupera il nome del parametro generico.|  
-|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Recupera il proprietario del tipo o metodo di questo parametro generico.|  
-  
-## <a name="requirements"></a>Requisiti  
- Intestazione: Sh.h  
-  
- Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop  
-  
+## <a name="syntax"></a>Sintassi
+
+```
+IDebugGenericParamField : IDebugField
+```
+
+## <a name="notes-for-implementers"></a>Note per gli implementatori
+ Utilizzato per il supporto dei generics.
+
+## <a name="methods"></a>Metodi
+ Oltre ai metodi nel [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaccia, questa interfaccia implementa i metodi seguenti:
+
+|Metodo|Descrizione|
+|------------|-----------------|
+|[ConstraintCount](../../../extensibility/debugger/reference/idebuggenericparamfield-constraintcount.md)|Restituisce il numero di vincoli che sono associati a questo parametro generico.|
+|[GetConstraints](../../../extensibility/debugger/reference/idebuggenericparamfield-getconstraints.md)|Recupera i vincoli che sono associati a questo parametro generico.|
+|[GetFlags](../../../extensibility/debugger/reference/idebuggenericparamfield-getflags.md)|Recupera i flag per il parametro generico.|
+|[GetIndex](../../../extensibility/debugger/reference/idebuggenericparamfield-getindex.md)|Recupera l'indice del parametro generico.|
+|[GetNameOfFormalParam](../../../extensibility/debugger/reference/idebuggenericparamfield-getnameofformalparam.md)|Recupera il nome del parametro generico.|
+|[GetOwner](../../../extensibility/debugger/reference/idebuggenericparamfield-getowner.md)|Recupera il proprietario del tipo o metodo di questo parametro generico.|
+
+## <a name="requirements"></a>Requisiti
+ Intestazione: Sh.h
+
+ Spazio dei nomi: Microsoft.VisualStudio.Debugger.Interop
+
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

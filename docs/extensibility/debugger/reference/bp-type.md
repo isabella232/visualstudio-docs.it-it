@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_TYPE enumeration
 ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2fab9a97ef944b153287a58671193324aecf52c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 69774df555c4258ef36a65a3a18e6ce3fccbe555
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711475"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350573"
 ---
 # <a name="bptype"></a>BP_TYPE
 Specifica se il punto di interruzione si trova in una posizione di codice, è un percorso dati o un altro tipo di punto di interruzione.
@@ -43,14 +46,18 @@ public enum enum_BP_TYPE {
 };
 ```
 
-## <a name="members"></a>Membri
-BPT_NONE non specifica alcun tipo di punto di interruzione.
+## <a name="fields"></a>Campi
+`BPT_NONE`\
+Non specifica di alcun tipo di punto di interruzione.
 
-BPT_CODE specifica un punto di interruzione del codice.
+`BPT_CODE`\
+Specifica un punto di interruzione del codice.
 
-BPT_DATA specifica un punto di interruzione dei dati.
+`BPT_DATA`\
+Specifica un punto di interruzione dei dati.
 
-Specifica BPT_SPECIAL consente di digitare un punto di interruzione è un codice né dati. Questo tipo è deprecato e non deve essere utilizzato.
+`BPT_SPECIAL`\
+Specifica un punto di interruzione è un codice né un tipo di dati. Questo tipo è deprecato e non deve essere utilizzato.
 
 ## <a name="remarks"></a>Note
 Passato come parametro per il [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) e [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) metodi.
