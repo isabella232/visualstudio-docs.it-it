@@ -1,5 +1,5 @@
 ---
-title: Server e problemi di configurazione Client nelle distribuzioni ClickOnce | Microsoft Docs
+title: Problemi di configurazione di server/client nelle distribuzioni ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406776"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263470"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemi relativi alla configurazione del server e del client nelle distribuzioni ClickOnce
 Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzione contiene un tipo di file che Windows non riconosce, ad esempio un file di Microsoft Word, IIS non le consentirà nemmeno la trasmissione del file e la distribuzione non riuscirà.
@@ -128,7 +128,7 @@ Se si usa Internet Information Services (IIS) in Windows Server, e la distribuzi
 ## <a name="http-compression-issues"></a>Problemi relativi alla compressione HTTP
  Con [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], è possibile eseguire il download Usa la compressione HTTP, una tecnologia di server Web che usa l'algoritmo GZIP per comprimere un flusso di dati prima dell'invio nel flusso al client. Il client, in questo caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]: decomprime il flusso prima di leggere i file.
 
- Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si abilita la compressione HTTP, è abilitata solo per determinati tipi di file, vale a dire, file HTML e testo. Per abilitare la compressione per gli assembly (*. dll*), XML (*. XML*), i manifesti della distribuzione (*Application*) e i manifesti dell'applicazione (*manifest*), è necessario aggiungere questi tipi all'elenco dei tipi per IIS per la compressione di file. Fino a quando non si aggiungono i tipi di file per la distribuzione, verranno compressi solo file di testo e HTML.
+ Se si utilizza IIS, è possibile abilitare facilmente la compressione HTTP. Tuttavia, quando si abilita la compressione HTTP, è abilitata solo per determinati tipi di file, vale a dire, file HTML e testo. Per abilitare la compressione per gli assembly ( *. dll*), XML ( *. XML*), i manifesti della distribuzione (*Application*) e i manifesti dell'applicazione (*manifest*), è necessario aggiungere questi tipi all'elenco dei tipi per IIS per la compressione di file. Fino a quando non si aggiungono i tipi di file per la distribuzione, verranno compressi solo file di testo e HTML.
 
  Per istruzioni dettagliate per IIS, vedere [come specificare i tipi di documenti aggiuntive per la compressione HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).
 

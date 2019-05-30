@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c0c7cac1a5cedc154fdc771ef4615a79c7ead1cd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654425"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263841"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integrazione di valori letterali XML con XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Visual Basic supporta valori letterali XML, il che significa che è possibile in
   
  ![Valori letterali XML di Visual Basic. XML Schema Explorer](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer2.gif "VBXMLLiteralsWithXMLSchemaExplorer2")  
   
- Questa funzionalità è stata introdotta in Visual Studio 2008 SP1. Per guardare un colloquio in cui questa funzionalità viene spiegata in dettaglio, vedere [intervista di canale 9: XML Schema Explorer in Visual Studio 2008 SP1](http://go.microsoft.com/fwlink/?LinkId=140183).  
+ Questa funzionalità è stata introdotta in Visual Studio 2008 SP1. Per guardare un colloquio in cui questa funzionalità viene spiegata in dettaglio, vedere [intervista di canale 9: XML Schema Explorer in Visual Studio 2008 SP1](https://channel9.msdn.com/Blogs/funkyonex/XML-Schema-Explorer-in-Visual-Studio-2008-SP1).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Usare Progettazione XML Schema con i valori letterali XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

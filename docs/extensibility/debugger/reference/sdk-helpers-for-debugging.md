@@ -9,17 +9,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d57e764158531456bfcdba6d4915eef42aebd3d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 74b9047ef6df1e6bf20a5b5a95e40e27ed1b1926
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460899"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329217"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Helper SDK per il debug
 Queste funzioni e le dichiarazioni sono funzioni di supporto globale per l'implementazione del provider di simboli, analizzatori di espressioni e motori di debug in C++.
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
 > [!NOTE]
 > La maggior parte dei casi, verranno scritte le metriche per la chiave HKEY_LOCAL_MACHINE. Tuttavia, talvolta HKEY_CURRENT_USER sarà la chiave di destinazione. Dbgmetric.lib gestisce entrambe le chiavi. Quando si recupera una metrica, la ricerca HKEY_CURRENT_USER per primo, quindi HKEY_LOCAL_MACHINE. Quando si sta impostando una metrica, un parametro specifica la chiave di primo livello da usare.
 
- *[chiave del Registro di sistema]*\
+ *[chiave del Registro di sistema]* \
 
  `Software`\
 
@@ -247,11 +247,11 @@ HRESULT EnumMetricSections(
 
  `VisualStudio`\
 
- *[root versione]*\
+ *[root versione]* \
 
- *[metrica root]*\
+ *[metrica root]* \
 
- *[tipo di metrica]*\
+ *[tipo di metrica]* \
 
  *[metrica] = [valore della metrica]*
 
@@ -276,9 +276,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- *[motore guid]*\
+ *[motore guid]* \
 
- `CLSID` = *[guid classe]*
+ `CLSID` =  *[guid classe]*
 
  *[metrica] = [valore della metrica]*
 
@@ -288,9 +288,9 @@ HRESULT EnumMetricSections(
 
  `PortSupplier`\
 
- `0` = *[guid fornitore porte]*
+ `0` =  *[guid fornitore porte]*
 
- `1` = *[guid fornitore porte]*
+ `1` =  *[guid fornitore porte]*
 
 |Segnaposto|Descrizione|
 |-----------------|-----------------|
@@ -299,13 +299,13 @@ HRESULT EnumMetricSections(
 |*[guid fornitore porte]*|Il GUID del fornitore della porta, se presente. Molti motori di debug usano il fornitore della porta predefinita e pertanto non si specificano i propri fornitori. In questo caso, la sottochiave `PortSupplier` sarà presente.|
 
 ### <a name="port-suppliers"></a>Fornitori di porte
- Di seguito è l'organizzazione delle metriche supplier porta nel Registro di sistema. `PortSupplier` è il nome del tipo di metrica per un fornitore di porte e corrisponde a *[tipo di metrica]*.
+ Di seguito è l'organizzazione delle metriche supplier porta nel Registro di sistema. `PortSupplier` è il nome del tipo di metrica per un fornitore di porte e corrisponde a *[tipo di metrica]* .
 
  `PortSupplier`\
 
- *[guid fornitore porte]*\
+ *[guid fornitore porte]* \
 
- `CLSID` = *[guid classe]*
+ `CLSID` =  *[guid classe]*
 
  *[metrica] = [valore della metrica]*
 
@@ -317,15 +317,15 @@ HRESULT EnumMetricSections(
 |*[guid classe]*|Il GUID della classe che implementa il fornitore della porta|
 
 ### <a name="symbol-providers"></a>Provider di simboli
- Di seguito è l'organizzazione delle metriche supplier simbolo nel Registro di sistema. `SymbolProvider` è il nome del tipo di metrica per il provider di simboli e corrisponde a *[tipo di metrica]*.
+ Di seguito è l'organizzazione delle metriche supplier simbolo nel Registro di sistema. `SymbolProvider` è il nome del tipo di metrica per il provider di simboli e corrisponde a *[tipo di metrica]* .
 
  `SymbolProvider`\
 
- *[guid provider simbolo]*\
+ *[guid provider simbolo]* \
 
  `file`\
 
- `CLSID` = *[guid classe]*
+ `CLSID` =  *[guid classe]*
 
  *[metrica] = [valore della metrica]*
 
@@ -333,7 +333,7 @@ HRESULT EnumMetricSections(
 
  `metadata`\
 
- `CLSID` = *[guid classe]*
+ `CLSID` =  *[guid classe]*
 
  *[metrica] = [valore della metrica]*
 
@@ -345,18 +345,18 @@ HRESULT EnumMetricSections(
 |*[guid classe]*|Il GUID della classe che implementa questo provider di simboli|
 
 ### <a name="expression-evaluators"></a>Analizzatori di espressioni
- Di seguito è l'organizzazione delle metriche dell'analizzatore di espressioni nel Registro di sistema. `ExpressionEvaluator` è il nome del tipo di metrica per l'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.
+ Di seguito è l'organizzazione delle metriche dell'analizzatore di espressioni nel Registro di sistema. `ExpressionEvaluator` è il nome del tipo di metrica per l'analizzatore di espressioni e corrisponde a *[tipo di metrica]* .
 
 > [!NOTE]
 > Il tipo di metrica `ExpressionEvaluator` non è definito in dbgmetric.h, perché si presuppone che tutte le modifiche delle metriche per gli analizzatori di espressioni passeranno attraverso le funzioni di metrica dell'analizzatore di espressioni espressione appropriata (il layout del `ExpressionEvaluator` sottochiave è leggermente complicata, in modo che i dettagli sono nascosti all'interno di dbgmetric.lib).
 
  `ExpressionEvaluator`\
 
- *[guid language]*\
+ *[guid language]* \
 
- *[guid fornitore]*\
+ *[guid fornitore]* \
 
- `CLSID` = *[guid classe]*
+ `CLSID` =  *[guid classe]*
 
  *[metrica] = [valore della metrica]*
 
@@ -364,9 +364,9 @@ HRESULT EnumMetricSections(
 
  `Engine`\
 
- `0` = *[guid del motore di debug]*
+ `0` =  *[guid del motore di debug]*
 
- `1` = *[guid del motore di debug]*
+ `1` =  *[guid del motore di debug]*
 
 |Segnaposto|Descrizione|
 |-----------------|-----------------|
@@ -376,11 +376,11 @@ HRESULT EnumMetricSections(
 |*[guid del motore di debug]*|Il GUID del motore di debug questo analizzatore di espressioni funziona con|
 
 ### <a name="expression-evaluator-extensions"></a>Estensioni dell'analizzatore di espressioni
- Di seguito è l'organizzazione delle metriche di estensione dell'analizzatore di espressioni nel Registro di sistema. `EEExtensions` è il nome del tipo di metrica per l'espressione di estensioni dell'analizzatore di espressioni e corrisponde a *[tipo di metrica]*.
+ Di seguito è l'organizzazione delle metriche di estensione dell'analizzatore di espressioni nel Registro di sistema. `EEExtensions` è il nome del tipo di metrica per l'espressione di estensioni dell'analizzatore di espressioni e corrisponde a *[tipo di metrica]* .
 
  `EEExtensions`\
 
- *[estensione guid]*\
+ *[estensione guid]* \
 
  *[metrica] = [valore della metrica]*
 
@@ -391,21 +391,21 @@ HRESULT EnumMetricSections(
 |*[estensione guid]*|Il GUID di un'estensione dell'analizzatore di espressioni|
 
 ### <a name="exceptions"></a>Eccezioni
- Di seguito è l'organizzazione delle metriche delle eccezioni nel Registro di sistema. `Exception` è il nome del tipo di metrica relativi alle eccezioni e corrisponde a *[tipo di metrica]*.
+ Di seguito è l'organizzazione delle metriche delle eccezioni nel Registro di sistema. `Exception` è il nome del tipo di metrica relativi alle eccezioni e corrisponde a *[tipo di metrica]* .
 
  `Exception`\
 
- *[guid del motore di debug]*\
+ *[guid del motore di debug]* \
 
- *[tipi di eccezione]*\
+ *[tipi di eccezione]* \
 
- *[exception]*\
-
- *[metrica] = [valore della metrica]*
+ *[exception]* \
 
  *[metrica] = [valore della metrica]*
 
- *[exception]*\
+ *[metrica] = [valore della metrica]*
+
+ *[exception]* \
 
  *[metrica] = [valore della metrica]*
 
@@ -414,7 +414,7 @@ HRESULT EnumMetricSections(
 |Segnaposto|Descrizione|
 |-----------------|-----------------|
 |*[guid del motore di debug]*|Il GUID del motore di debug supporta le eccezioni.|
-|*[tipi di eccezione]*|Un titolo generale per la sottochiave che identifica la classe di eccezioni che possono essere gestiti. Sono nomi tipici **eccezioni C++**, **eccezioni Win32**, **eccezioni Common Language Runtime**, e **dei controlli runtime nativi**. Questi nomi vengono usati anche per identificare una classe particolare di eccezione per l'utente.|
+|*[tipi di eccezione]*|Un titolo generale per la sottochiave che identifica la classe di eccezioni che possono essere gestiti. Sono nomi tipici **eccezioni C++** , **eccezioni Win32**, **eccezioni Common Language Runtime**, e **dei controlli runtime nativi**. Questi nomi vengono usati anche per identificare una classe particolare di eccezione per l'utente.|
 |*[exception]*|Un nome per un'eccezione: ad esempio, **com_error** oppure **CTRL + INTERR**. Questi nomi vengono usati anche per identificare una particolare eccezione all'utente.|
 
 ## <a name="requirements"></a>Requisiti

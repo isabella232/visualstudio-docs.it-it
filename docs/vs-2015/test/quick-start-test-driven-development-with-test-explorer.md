@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446192"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261638"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Avvio rapido: Sviluppo basato su test con Esplora test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
 > I risultati che vengono visualizzati sono in ordine dal più recente che è stato eseguito. La barra colorata dei risultati mostra solo i risultati per i test che sono stati eseguiti. Ad esempio, se si eseguono più test e alcuni di essi falliscono, e quindi successivamente si eseguono solo i test superati, la barra dei risultati li visualizzerà tutti in verde.  
   
 > [!NOTE]
-> Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Se nessun test viene visualizzato, verificare di aver installato un adattatore per connettere Esplora test al framework di test in uso. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Procedura dettagliata: Uso di Unit test per sviluppare un metodo  
- In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [framework di test diverso negli Stati Uniti](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ In questa procedura dettagliata viene illustrato come sviluppare un metodo testato in C# utilizzando il framework per unit test di Microsoft. È possibile adattarlo in modo semplice per altri linguaggi e per utilizzare altri framework di test come NUnit. Per altre informazioni, vedere [Usa un framework di test diversi](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Creare il test e il metodo  
   
@@ -76,7 +76,7 @@ Si consiglia di creare unit test per garantire il corretto funzionamento del cod
   
 2. Creare un progetto di test.  
   
-   - Nella finestra di dialogo **Nuovo progetto**, scegliere **Visual C#**, **Test** e quindi scegliere **Progetto unit test**.  
+   - Nella finestra di dialogo **Nuovo progetto**, scegliere **Visual C#** , **Test** e quindi scegliere **Progetto unit test**.  
   
         ![Nuovo codice e progetti di test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   

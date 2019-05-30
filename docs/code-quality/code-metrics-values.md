@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809315"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260468"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -28,15 +28,15 @@ Per informazioni su come generare dati di metrica codice in Visual Studio, veder
 
 L'elenco seguente mostra il codice di risultati di metrica per il calcolo di Visual Studio:
 
-- **Indice di manutenibilità** -calcola un valore di indice compreso tra 0 e 100 che rappresenta la relativa semplicità di gestione del codice. Un valore elevato indica una migliore gestibilità. Le classificazioni di codifica a colori sono utilizzabile per identificare rapidamente aree problematiche nel codice. Una classificazione uguale a verde è compreso tra 20 e 100 e indica che il codice ha una buona manutenibilità. Una classificazione uguale a giallo è compreso tra 10 e 19 e indica che il codice sia moderatamente gestibile. Una classificazione uguale a rosso è una classificazione compresa tra 0 e 9 e indica una manutenibilità insufficiente.
+- **Indice di manutenibilità** -calcola un valore di indice compreso tra 0 e 100 che rappresenta la relativa semplicità di gestione del codice. Un valore elevato indica una migliore gestibilità. Le classificazioni di codifica a colori sono utilizzabile per identificare rapidamente aree problematiche nel codice. Una classificazione uguale a verde è compreso tra 20 e 100 e indica che il codice ha una buona manutenibilità. Una classificazione uguale a giallo è compreso tra 10 e 19 e indica che il codice sia moderatamente gestibile. Una classificazione uguale a rosso è una classificazione compresa tra 0 e 9 e indica una manutenibilità insufficiente. Per altre informazioni, vedere la [intervallo di indice di manutenibilità e il significato](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) post di blog.
 
-- **Complessità ciclomatica** -misura la complessità del codice strutturale. Viene creato dal calcolo del numero di percorsi del codice diversi nel flusso del programma. Un programma che ha il flusso di controllo complessi richiederà più test per ottenere buona copertura del codice e sarà meno facile da gestire.
+- **Complessità ciclomatica** -misura la complessità del codice strutturale. Viene creato dal calcolo del numero di percorsi del codice diversi nel flusso del programma. Un programma che ha il flusso di controllo complessi richiede altri test per ottenere buona copertura del codice ed è meno facile da gestire. Per altre informazioni, vedere la [di Wikipedia relativa complessità ciclomatica](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profondità dell'ereditarietà** -indica il numero di definizioni di classi che estendono alla radice della gerarchia di classi. Maggiore è la profondità della gerarchia più difficile è possibile conoscere in cui vengono definiti determinati metodi e campi o / e ridefinito.
+- **Profondità dell'ereditarietà** -indica il numero di diverse classi che ereditano da uno a altro, fino alla classe di base. Profondità dell'ereditarietà è simile alla classe consente di connettere in quanto una modifica in una classe base può influire sulle qualsiasi delle relative classi ereditate. Maggiore questo numero, più profondo l'ereditarietà e maggiore sarà il potenziale per apportare modifiche di classe di base a comportare un'interruzione di modifica. Per la profondità dell'ereditarietà, è consigliabile un valore basso e un valore elevato non è valido. 
 
-- **Accoppiamento di classe** -misura l'accoppiamento di classi univoche tramite i parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanza generica o modello, le classi di base, le implementazioni dell'interfaccia, i campi definiti nei tipi esterni, e decorazione di attributo. Progettazione software di qualità impone che i tipi e metodi devono avere un'elevata coesione e accoppiamento basso. Accoppiamento elevato indica una progettazione che è difficile da riutilizzare e gestire a causa delle molte interdipendenze con altri tipi.
+- **Accoppiamento di classe** -misura l'accoppiamento di classi univoche tramite i parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanza generica o modello, le classi di base, le implementazioni dell'interfaccia, i campi definiti nei tipi esterni, e decorazione di attributo. Progettazione software di qualità impone che i tipi e metodi devono avere un'elevata coesione e accoppiamento basso. Accoppiamento elevato indica una progettazione che è difficile da riutilizzare e gestire a causa delle molte interdipendenze con altri tipi. Per altre informazioni, vedere la [accoppiamenti di classi](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) post di blog.
 
-- **Righe di codice** -indica il numero approssimativo di righe di codice. Il conteggio è basato sul codice IL e non è pertanto il numero esatto di righe nel file del codice sorgente. Un numero molto elevato potrebbe indicare che un tipo o metodo sta provando a eseguire troppe operazioni e deve essere suddiviso. Può anche indicare che il tipo o metodo potrebbe essere difficile da gestire.
+- **Righe di codice** -indica il numero approssimativo di righe di codice. Il conteggio è basato sul codice IL e non è pertanto il numero esatto di righe nel file del codice sorgente. Un conteggio elevato potrebbe indicare che un tipo o metodo sta provando a eseguire troppe operazioni e deve essere suddiviso. Può anche indicare che il tipo o metodo potrebbe essere difficile da gestire.
 
    > [!NOTE]
    > Il [versione della riga di comando](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) del codice strumento metriche conta le righe effettive di codice perché analizza il codice sorgente anziché IL.

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824796"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261087"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma
 
@@ -74,7 +74,7 @@ Il programma di installazione di Visual Studio per Visual Studio 2017 include un
 1. Aprire Visual Studio.
 
 > [!NOTE]
-> Se si usa Visual Studio 2015, vedere [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> Se si usa Visual Studio 2015, vedere [Installare Visual C++ per lo sviluppo di app per dispositivi mobili multipiattaforma (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 

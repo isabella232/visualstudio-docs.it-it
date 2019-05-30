@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860969"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329182"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandi i GUID e ID di Visual Studio
 I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE) di Visual Studio vengono definiti nei file con estensione vsct che vengono installati come parte di Visual Studio SDK. Per altre informazioni, vedere [definiti dall'IDE comandi, menu e gruppi](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ I valori GUID e ID dei comandi inclusi nell'ambiente di sviluppo integrato (IDE)
 
 - Voci di menu che includono un carattere sottolineato, ad esempio la **Print** comando il **File** dal menu in cui il *P* è sottolineato.
 
-     Caratteri preceduti da una e commerciale (&) carattere in nomi di menu vengono visualizzate come sottolineato. Tuttavia *vsct* i file vengono scritti in formato XML, che usa il carattere e commerciale (&) per indicare i caratteri speciali e richiede che una e commerciale da visualizzare deve essere digitata come  *&amp;amp;*. Pertanto, in un *vsct* file, il **stampa** comando viene visualizzata come  *&amp;amp; Stampa*.
+     Caratteri preceduti da una e commerciale (&) carattere in nomi di menu vengono visualizzate come sottolineato. Tuttavia *vsct* i file vengono scritti in formato XML, che usa il carattere e commerciale (&) per indicare i caratteri speciali e richiede che una e commerciale da visualizzare deve essere digitata come  *&amp;amp;* . Pertanto, in un *vsct* file, il **stampa** comando viene visualizzata come  *&amp;amp; Stampa*.
 
 - I comandi che hanno testo dinamico, ad esempio **salvare** \<Filename corrente\>e generato dinamicamente le voci di menu, ad esempio gli elementi nel **file recenti** elenco.
 

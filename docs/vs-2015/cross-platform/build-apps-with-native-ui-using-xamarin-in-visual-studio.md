@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90517c46d8fa92d58e73e976f593a1bcfbfac9b1
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443059"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263568"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Creare app con interfaccia utente nativa con Xamarin in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 > [!TIP]
 > È possibile trovare il codice sorgente completo per questo progetto nell'[archivio mobile-samples in GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
-> Se si riscontrano difficoltà o errori, porre le domande su [forums.xamarin.com](http://forums.xamarin.com). Molti errori possono essere risolti con l'aggiornamento agli SDK più recenti richiesti da Xamarin, riportati nelle [note sulla versione di Xamarin](https://developer.xamarin.com/releases/) per ogni piattaforma.
+> Se si riscontrano difficoltà o errori, porre le domande su [forums.xamarin.com](http://forums.xamarin.com). Molti errori possono essere risolti con l'aggiornamento agli SDK più recenti richiesti da Xamarin, riportati nelle [note sulla versione di Xamarin](https://developer.xamarin.com/) per ogni piattaforma.
 >
 > [!NOTE]
 > La documentazione per gli sviluppatori di Xamarin offre inoltre diverse procedure dettagliate con sezioni introduttive e di approfondimento, come indicato di seguito. In tutte queste pagine, assicurarsi che sia selezionato "Visual Studio" in alto a destra della pagina per vedere le procedure dettagliate specifiche di Visual Studio.
@@ -63,13 +63,13 @@ Dopo aver eseguito le operazioni descritte in [Configurazione e installazione](.
 
 2. Dopo aver fatto clic su OK per creare la soluzione vengono visualizzati diversi progetti singoli:
 
-   - **WeatherApp (portabile)**: la libreria di classi portabile (PCL) in cui verrà scritto il codice condiviso tra le piattaforme, inclusa la logica di business comune e il codice dell'interfaccia utente in uso con Xamarin.Forms.
+   - **WeatherApp (portabile)** : la libreria di classi portabile (PCL) in cui verrà scritto il codice condiviso tra le piattaforme, inclusa la logica di business comune e il codice dell'interfaccia utente in uso con Xamarin.Forms.
 
    - **WeatherApp.Droid**: il progetto che contiene il codice Android nativo. Viene impostato come progetto di avvio predefinito.
 
    - **WeatherApp.iOS**: il progetto che contiene il codice iOS nativo.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)**: progetto che contiene il codice nativo di Windows Phone.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)** : progetto che contiene il codice nativo di Windows Phone.
 
      In ogni progetto nativo si ha accesso alla finestra di progettazione nativa per la piattaforma corrispondente e si possono implementare schermate specifiche della piattaforma.
 

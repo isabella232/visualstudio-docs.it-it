@@ -9,12 +9,12 @@ ms.topic: landing-page
 ms.technology: vs-ide-mobile
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: d9c50abb749829843c7794688b94bf84f5bc1fb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 126e7058a16738d38ea78c2e71cb5476d3718a93
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824919"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261111"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentazione per lo sviluppo di app per dispositivi mobili con C++
 
@@ -104,7 +104,7 @@ Creare app C++ native per dispositivi iOS, Android e Windows con Visual Studio.
                 <div class="card">
                     <div class="cardText">
                         <h3>Piattaforme</h3>
-                        <p><a href="/cpp/windows/universal-windows-apps-cpp">Documentazione della piattaforma UWP (Universal Windows Platform)</a></p>
+                        <p><a href="/cpp/cppcx/universal-windows-apps-cpp">Documentazione della piattaforma UWP (Universal Windows Platform)</a></p>
                         <p><a href="https://developer.apple.com/reference">Documentazione dell'API iOS</a></p>
                         <p><a href="https://developer.android.com/guide/index.html">Documentazione dell'API Android</a></p>
                     </div>

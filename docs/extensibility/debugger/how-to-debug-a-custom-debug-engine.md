@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411234"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334825"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procedura: Eseguire il debug di un motore di debug personalizzato
 Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (metodo). Ciò significa che viene avviata la Germania sotto il controllo dell'istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controllo del tipo di progetto. Tuttavia, tale istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] non è possibile eseguire il debug di DE. Di seguito sono i passaggi che consentono di eseguire il debug di DE personalizzato.
@@ -43,7 +43,7 @@ Un tipo di progetto avvia il motore di debug (DE) dal <xref:Microsoft.VisualStud
 
 7. La prima istanza di [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con il progetto DE), selezionare **Connetti a processo** dal **Debug** menu.
 
-8. Nel **Connetti a processo** della finestra di dialogo Modifica il **trasporto** al **remoto (solo nativo senza autenticazione)**.
+8. Nel **Connetti a processo** della finestra di dialogo Modifica il **trasporto** al **remoto (solo nativo senza autenticazione)** .
 
 9. Modifica il **qualificatore** sul nome del computer (Nota: è presente una cronologia delle voci, è necessario digitare il nome specificato una sola volta).
 
