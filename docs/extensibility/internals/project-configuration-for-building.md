@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328534"
 ---
 # <a name="project-configuration-for-building"></a>Configurazione del progetto per la compilazione
 L'elenco delle configurazioni di soluzione per una determinata soluzione viene gestito dalla finestra di dialogo configurazioni di soluzione.

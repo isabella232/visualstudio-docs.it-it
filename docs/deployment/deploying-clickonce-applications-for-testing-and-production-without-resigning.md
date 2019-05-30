@@ -1,5 +1,5 @@
 ---
-title: Distribuzione di applicazioni ClickOnce per i test e i server di produzione senza riapposizione della firma | Microsoft Docs
+title: Distribuire le app ClickOnce senza firmare di nuovo
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b1abda86c8fdd80c20b03a6d3869d025d0a7aaa
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407056"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263288"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Distribuire le applicazioni ClickOnce per i server di test e produzione senza riapposizione della firma
 Questo articolo illustra una funzionalità introdotta in .NET Framework versione 3.5 che consente la distribuzione di applicazioni ClickOnce dalla più percorsi di rete senza riapposizione della firma o la modifica di ClickOnce manifesti ClickOnce.

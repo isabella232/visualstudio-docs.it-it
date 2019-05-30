@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework | Microsoft Docs'
+title: Utilizzare ClickOnce per distribuire le app multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de3ca40696549ad9208ffd181f8dbc4e7f092b5d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406714"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263195"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Procedura: Usare ClickOnce per distribuire applicazioni eseguibili in più versioni di .NET Framework
 È possibile distribuire un'applicazione destinata a più versioni di .NET Framework tramite la tecnologia di distribuzione ClickOnce. Ciò richiede di generare e aggiornare i manifesti dell'applicazione e della distribuzione.

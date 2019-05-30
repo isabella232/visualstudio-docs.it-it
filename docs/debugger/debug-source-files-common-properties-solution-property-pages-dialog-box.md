@@ -1,5 +1,5 @@
 ---
-title: Origine file, proprietà comuni, soluzione dialogo Pagine delle proprietà di debug | Microsoft Docs
+title: Eseguire il debug delle pagine delle proprietà di proprietà/soluzione/comuni di file di origine
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 631ec8ed4f6b5cd410b3af51c55fa87935b9cddf
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852922"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263138"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Esegui debug dei file di origine, Proprietà comuni, finestra di dialogo Pagine delle proprietà di soluzione
 In questa pagina delle proprietà è specificato il punto in cui il debugger cerca i file di origine durante il debug della soluzione.

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438001"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263041"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Eseguire il debug di un'app JavaScript o TypeScript in Visual Studio
 
@@ -64,7 +64,7 @@ Per il collegamento del debugger da Visual Studio e l'accesso a punti di interru
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > È anche possibile impostare il flag `--remote-debugging-port` all'avvio del browser. Selezionare **Esplora con** sulla barra degli strumenti **Debug**, scegliere **Aggiungi** e quindi impostare il flag nel campo **Argomenti**. Usare un nome descrittivo diverso per il browser, ad esempio **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > È anche possibile impostare il flag `--remote-debugging-port` all'avvio del browser. Selezionare **Esplora con** sulla barra degli strumenti **Debug**, scegliere **Aggiungi** e quindi impostare il flag nel campo **Argomenti**. Usare un nome descrittivo diverso per il browser, ad esempio **Chrome con debug**. Per informazioni dettagliate, vedere le [note sulla versione](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

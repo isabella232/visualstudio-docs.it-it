@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704683"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261662"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Generale, Debug, finestra di dialogo Opzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Il**Strumenti / opzioni / debug / generale** pagina consente di impostare le opz
   Viene illustrato il **albero elementi visivi attivi** comandi in una barra degli strumenti nella finestra principale dell'applicazione XAML in fase di debug. Questa opzione è stata introdotta in Visual Studio 2015 Update 2.  
   
   **Abilita strumenti di diagnostica durante il debug**  
-  Durante il debug viene visualizzata la finestra **Strumenti di diagnostica**. Per altre informazioni, vedere [integrati nel Debugger profilatura](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Durante il debug viene visualizzata la finestra **Strumenti di diagnostica**. Per altre informazioni, vedere [integrati nel Debugger profilatura](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
   **Mostra il perftip relativo al tempo trascorso durante il debug**  
   La finestra di codice mostra il tempo trascorso di una specifica chiamata al metodo quando si esegue il debug.  

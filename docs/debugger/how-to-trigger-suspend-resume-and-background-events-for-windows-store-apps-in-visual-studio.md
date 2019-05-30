@@ -1,5 +1,5 @@
 ---
-title: Trigger di sospensione, ripresa e background eventi durante il debug di UWP | Microsoft Docs
+title: Attivare eventi di sospensione/ripresa/in background durante il debug di UWP
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388491"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263349"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Come attivare sospensione, ripresa e background eventi durante il debug di App UWP in Visual Studio
 Quando non esegui il debug, Windows **Process Lifetime Management** (PLM) controlla lo stato di esecuzione dell'app, cioè avvio, sospensione, ripresa e terminazione, in risposta alle azioni dell'utente e allo stato del dispositivo. Quando esegui il debug, Windows disabilita questi eventi di attivazione. In questo argomento viene descritto come generare tali eventi nel debugger.

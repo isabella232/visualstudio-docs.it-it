@@ -7,17 +7,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c85a11d8bfba90f142a82efcd6d78fb0122f22
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433019"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338375"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Distribuzione delle estensioni di Visual Studio
 Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in altri computer, condividerlo con i colleghi e amici o pubblicarla in Visual Studio Marketplace. In questa sezione viene illustrato tutto ciò è necessario eseguire per pubblicare e gestire l'estensione: uso dei file con estensione VSIX, pubblicazione, localizzazione e l'aggiornamento.
@@ -53,8 +53,8 @@ Dopo aver completato lo sviluppo dell'estensione, è possibile installarla in al
 |[Anatomia di un pacchetto VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descrive i componenti di un pacchetto VSIX.|
 |[Modello di progetto VSIX](../extensibility/vsix-project-template.md)|Vengono fornite istruzioni dettagliate su come creare un pacchetto e pubblicare un'estensione.|
 |[Localizzazione di pacchetti VSIX](../extensibility/localizing-vsix-packages.md)|Viene illustrato come fornire il testo localizzato per il processo di installazione usando file vsixlangpack.|
-|[Procedura: Aggiornare un'estensione](../extensibility/how-to-update-a-visual-studio-extension.md)|Viene descritto come aggiornare un'estensione del sistema e su come distribuire un aggiornamento di un'estensione di Visual Studio esistente.|
-|[Procedura: Aggiungere una dipendenza a un pacchetto VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Viene descritto come aggiungere i riferimenti ai pacchetti di distribuzione VSIX.|
+|[Procedura: aggiornare un'estensione](../extensibility/how-to-update-a-visual-studio-extension.md)|Viene descritto come aggiornare un'estensione del sistema e su come distribuire un aggiornamento di un'estensione di Visual Studio esistente.|
+|[Procedura: aggiungere una dipendenza a un pacchetto VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Viene descritto come aggiungere i riferimenti ai pacchetti di distribuzione VSIX.|
 |[Preparazione di estensioni per la distribuzione di Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Viene illustrato come distribuire un'estensione con Windows Installer.|
 |[Firma di pacchetti VSIX](../extensibility/signing-vsix-packages.md)|Spiega come firmare pacchetti VSIX.|
 |[Raccolte private](../extensibility/private-galleries.md)|Viene illustrato come creare raccolte private per le estensioni.|

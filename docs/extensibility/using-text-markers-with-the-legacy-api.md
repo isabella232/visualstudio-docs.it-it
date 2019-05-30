@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434194"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353479"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>Utilizzo di marcatori di testo con l'API Legacy
+# <a name="using-text-markers-with-the-legacy-api"></a>Uso di marcatori di testo con l'API legacy
 Un marcatore di testo è un intervallo di testo in un buffer che può influenzare la visualizzazione a virgola mobile e il comportamento di un'area di testo. Marcatori di includono i punti di interruzione, i segnalibri, sottolineature ondulate di colore e le aree di sola lettura. Marcatori di testo sono fondamentalmente diversi da colorazione della sintassi. Colorazione della sintassi è un modo rapido per comunicare la sintassi del linguaggio che è associata a un'area di testo. Colorazione della sintassi viene in genere richiesta quando Windows viene ridisegnato schermo, la velocità è importante. Colorazione della sintassi viene modificato solo il colore del testo. Marcatori di testo è possono modificare molte altre proprietà di testo. Marcatori di testo è possono "spostarsi" e applicare un comportamento speciale e la colorazione.
 
  A causa dell'overhead delle prestazioni associati marcatori di testo, non creare molti marcatori per i buffer di testo. Ogni indicatore viene aggiornato ogni volta che un utente modifica il contenuto del buffer.

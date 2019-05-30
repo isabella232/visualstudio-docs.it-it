@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901310"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262140"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Debug tecniche e strumenti che consentono di scrivere codice migliore
 
@@ -294,7 +294,7 @@ Ecco un paio di suggerimenti importanti per la gestione delle eccezioni:
     }
     ```
 
-* Per funzioni non note da includere nell'app, expecially quelli che interagiscono con i dati esterni (ad esempio, una richiesta web), consultare la documentazione per visualizzare le eccezioni che la funzione è potrebbe generare. Può trattarsi di informazioni critiche per la gestione degli errori corretta e di debug dell'app.
+* Per funzioni non note da includere nell'app, in particolare quelli che interagiscono con i dati esterni (ad esempio, una richiesta web), consultare la documentazione per visualizzare le eccezioni che la funzione è potrebbe generare. Può trattarsi di informazioni critiche per la gestione degli errori corretta e di debug dell'app.
 
 Per le app di esempio, correggere la `SerializationException` nella `GetJsonData` metodo modificando `4o` a `40`.
 

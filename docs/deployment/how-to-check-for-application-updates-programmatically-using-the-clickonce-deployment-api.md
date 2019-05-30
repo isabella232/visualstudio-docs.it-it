@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Verificare la presenza di aggiornamenti dell'applicazione a livello di codice tramite l'API della distribuzione ClickOnce | Microsoft Docs"
+title: Aggiornamenti automatici delle app usando API della distribuzione ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9f47c82311f26c5ca469f03783b785545bda2182
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406609"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260827"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedura: Controllo programmatico degli aggiornamenti delle applicazioni attraverso l'API per la distribuzione ClickOnce
 ClickOnce fornisce due modi per aggiornare un'applicazione dopo la distribuzione. Il primo metodo, è possibile configurare la distribuzione ClickOnce per cercare automaticamente gli aggiornamenti a intervalli specifici. Il secondo metodo, è possibile scrivere codice che usa il <xref:System.Deployment.Application.ApplicationDeployment> classe per cercare gli aggiornamenti basati su un evento, ad esempio una richiesta dell'utente.

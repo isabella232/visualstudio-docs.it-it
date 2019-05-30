@@ -1,5 +1,5 @@
 ---
-title: Estensione di un servizio di linguaggio per il supporto di EditorConfig in Visual Studio | Microsoft Docs
+title: Estendere il servizio di linguaggio per il supporto di EditorConfig
 ms.date: 11/22/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9502569fd57da630da949ba14bbfc5e9045a22
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799860"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261808"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Supporto di EditorConfig per il servizio di linguaggio
 

@@ -1,5 +1,5 @@
 ---
-title: Eseguire il debug di app ASP.NET attive in macchine virtuali di Azure e set di scalabilità di macchine virtuali di Azure
+title: Eseguire il debug in tempo reale le macchine virtuali di Azure ASP.NET e i set di scalabilità
 description: Informazioni su come impostare punti di acquisizione snapshot e visualizzare gli snapshot con Snapshot Debugger.
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399426"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263354"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Eseguire il debug di app ASP.NET attive in macchine virtuali di Azure e set di scalabilità di macchine virtuali di Azure con Snapshot Debugger
 

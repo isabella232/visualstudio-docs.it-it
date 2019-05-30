@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Download di assembly Satellite su richiesta con l'API della distribuzione ClickOnce | Microsoft Docs"
+title: Download di assembly satellite su richiesta con l'API della distribuzione ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405934"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262962"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procedura dettagliata: Scaricare gli assembly satellite su richiesta con l'API della distribuzione ClickOnce
 Le applicazioni Windows Form possono essere configurate per più impostazioni cultura con l'uso di assembly satellite. Un *assembly satellite* è un assembly in cui sono contenute risorse dell'applicazione per impostazioni cultura diverse da quelle predefinite dell'applicazione.
@@ -54,7 +54,7 @@ Le applicazioni Windows Form possono essere configurate per più impostazioni cu
 
 4. Scegliere la scheda **File** .
 
-5. Scegliere il pulsante con i **puntini di sospensione** (**...**) e selezionare la directory contenente tutti gli assembly e file dell'applicazione, inclusi gli assembly satellite generati con *Resgen.exe*. I nomi degli assembly satellite sono strutturati come segue: *\<CodiceIso>\NomeApplicazione.resources.dll*, dove \<CodiceIso> è un identificatore del linguaggio in formato RFC 1766.
+5. Scegliere il pulsante con i **puntini di sospensione** ( **...** ) e selezionare la directory contenente tutti gli assembly e file dell'applicazione, inclusi gli assembly satellite generati con *Resgen.exe*. I nomi degli assembly satellite sono strutturati come segue: *\<CodiceIso>\NomeApplicazione.resources.dll*, dove \<CodiceIso> è un identificatore del linguaggio in formato RFC 1766.
 
 6. Fare clic su **Popola** per aggiungere i file alla distribuzione.
 

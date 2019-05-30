@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581639"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262946"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procedura dettagliata: Creare un ambiente di compilazione con più computer
 
@@ -169,7 +169,7 @@ Si noti che il nome della cartella *Programmi* dipende dal sistema operativo ins
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copiare solo i seguenti file dalla cartella *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al computer di compilazione, come descritto in [Preparare un computer per il test per l'esecuzione di un file eseguibile di debug](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Non deve essere copiato alcun altro file.
+5. Copiare solo i seguenti file dalla cartella *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al computer di compilazione, come descritto in [Preparare un computer per il test per l'esecuzione di un file eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Non deve essere copiato alcun altro file.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Preparare un computer di test per l'esecuzione di un file eseguibile di debug](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Preparare un computer di test per l'esecuzione di un file eseguibile di debug](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Riferimenti alla riga di comando](../msbuild/msbuild-command-line-reference.md)

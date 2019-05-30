@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411323"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351304"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Valutazione di Common language runtime ed espressione
 > [!IMPORTANT]

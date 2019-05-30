@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406750"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263241"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sicurezza e distribuzione di ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows ad aggiornamento automatico che possono essere installate ed eseguite con l'interazione utente minima. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e aggiornamento delle applicazioni distribuite con la tecnologia ClickOnce, se è stata sviluppata i progetti con Visual Basic e Visual c#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è una tecnologia di distribuzione che consente di creare applicazioni basate su Windows ad aggiornamento automatico che possono essere installate ed eseguite con l'interazione utente minima. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornisce supporto completo per la pubblicazione e aggiornamento delle applicazioni distribuite con la tecnologia ClickOnce, se è stata sviluppata i progetti con Visual Basic e Visual c#. Per informazioni sulla distribuzione di applicazioni Visual C++, vedere [distribuzione ClickOnce per applicazioni Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione risolve tre problemi nella distribuzione:
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406750"
   In passato, questi problemi causati in alcuni casi gli sviluppatori a creare applicazioni Web invece di applicazioni basate su Windows, compromettere un'interfaccia utente avanzata per agevolare l'installazione. Tramite le applicazioni distribuite utilizzando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consente di ottenere il meglio di entrambe le tecnologie.
 
 ## <a name="what-is-a-clickonce-application"></a>Che cos'è un'applicazione ClickOnce?
- Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation (*XBAP*), Windows Form (*.exe*), applicazione console (*.exe*), o una soluzione Office (*. dll*) pubblicato tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da supporto, ad esempio un CD-ROM. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer dell'utente finale ed eseguita in locale anche quando il computer è offline oppure può essere eseguita in modalità solo online senza alcuna operazione di installazione in modo permanente nel computer dell'utente finale. Per altre informazioni, vedere [sceglie una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione è qualsiasi Windows Presentation Foundation (*XBAP*), Windows Form ( *.exe*), applicazione console ( *.exe*), o una soluzione Office ( *. dll*) pubblicato tramite [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia. È possibile pubblicare un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione in tre modi diversi: da una pagina Web, da una condivisione file di rete o da supporto, ad esempio un CD-ROM. Oggetto [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applicazione può essere installata nel computer dell'utente finale ed eseguita in locale anche quando il computer è offline oppure può essere eseguita in modalità solo online senza alcuna operazione di installazione in modo permanente nel computer dell'utente finale. Per altre informazioni, vedere [sceglie una strategia di distribuzione ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] le applicazioni possono essere di aggiornamento automatico; è possibile cercare le versioni più recenti non appena diventano disponibili e sostituire automaticamente eventuali file aggiornati. Lo sviluppatore può specificare il comportamento di aggiornamento; un amministratore di rete può controllare le strategie di aggiornamento, ad esempio, rendendo obbligatorio un aggiornamento. Gli aggiornamenti possono anche essere rollback a una versione precedente dall'utente finale o da un amministratore. Per altre informazioni, vedere [sceglie una strategia di aggiornamento ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
