@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684494"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318252"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Specifica l'ambito del flusso di disassemblaggio.
@@ -43,14 +46,18 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 };
 ```
 
-## <a name="members"></a>Membri
-DSS_HUGE specifica che il contesto del codice di disassemblaggio genera un output più lungo un client in genere è necessario recuperare in una singola chiamata.
+## <a name="fields"></a>Campi
+`DSS_HUGE`\
+Specifica che il contesto del codice di disassemblaggio sarebbe generare più output di un client in genere è necessario recuperare in una singola chiamata.
 
-Deve essere disassemblato DSS_FUNCTION specifica che la funzione contenuta dal contesto del codice. Specifica che il flusso disassembly rappresenta una funzione, quando restituiti per il [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (metodo).
+`DSS_FUNCTION`\
+Specifica che la funzione contenuta dal contesto del codice deve essere disassemblata. Specifica che il flusso disassembly rappresenta una funzione, quando restituiti per il [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (metodo).
 
-DSS_MODULE quando restituito dal `IDebugDisassemblyStream2::GetScope` metodo, specifica che il flusso disassembly rappresenta un modulo.
+`DSS_MODULE`\
+Quando restituisce il `IDebugDisassemblyStream2::GetScope` metodo, specifica che il flusso disassembly rappresenta un modulo.
 
-Disassembly DSS_ALL specifica per l'intero spazio indirizzi.
+`DSS_ALL`\
+Specifica il disassembly per l'intero spazio indirizzi.
 
 ## <a name="remarks"></a>Note
 Passato come argomento per il [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metodo e restituito dalle [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) (metodo).

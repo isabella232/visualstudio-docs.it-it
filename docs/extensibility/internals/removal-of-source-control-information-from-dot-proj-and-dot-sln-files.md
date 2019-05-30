@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, .sln and .proj files
 ms.assetid: 7b06883f-35de-41e2-9a9e-d3edba236f17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 100de838eb1b205046d09d1149d78d3adba43b91
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 081766a8169ccc54888a076012b8281c485a20e5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260806"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318813"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Rimozione delle informazioni del controllo del codice sorgente dai file con estensione proj e sln
 Nella versione 1.2 dell'API di plug-in del controllo origine controllo configurazione sistema informazioni vengono archiviate in un MSSCCPRJ. File di controllo del codice sorgente. Il vantaggio del MSSCCPRJ. File di controllo del codice sorgente è che le informazioni di controllo del codice sorgente non è origine - controllato, come nel caso in file con estensione proj e sln.

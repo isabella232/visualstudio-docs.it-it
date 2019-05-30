@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46b965def820771b0bab883c1bdd9bf90d18414e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ff49f0723153880e88a21376aadec26b250a62b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680374"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344479"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Specifica il tipo di campo contenuto un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) oggetto.
@@ -121,72 +124,105 @@ public enum enum_FIELD_KIND {
 };
 ```
 
-## <a name="members"></a>Membri
-FIELD_KIND_TYPE indica che il campo è un solo tipo.
+## <a name="fields"></a>Campi
+`FIELD_KIND_TYPE`\
+Indica che il campo è un solo tipo.
 
-FIELD_KIND_SYMBOL indica che il campo è un simbolo, con tipo, nome e altre informazioni.
+`FIELD_KIND_SYMBOL`\
+Indica che il campo è un simbolo, con tipo, nome e altre informazioni.
 
-FIELD_TYPE_PRIMITIVE indica che il campo è un tipo di dati primitivi.
+`FIELD_TYPE_PRIMITIVE`\
+Indica che il campo è un tipo di dati primitivi.
 
-FIELD_TYPE_STRUCT indica che il campo è una struttura.
+`FIELD_TYPE_STRUCT`\
+Indica che il campo è una struttura.
 
-FIELD_TYPE_CLASS indica che il campo è una classe.
+`FIELD_TYPE_CLASS`\
+Indica che il campo è una classe.
 
-FIELD_TYPE_INTERFACE indica che il campo è un'interfaccia.
+`FIELD_TYPE_INTERFACE`\
+Indica che il campo è un'interfaccia.
 
-FIELD_TYPE_UNION indica che il campo è un'unione.
+`FIELD_TYPE_UNION`\
+Indica che il campo è un'unione.
 
-FIELD_TYPE_ARRAY indica che il campo è una matrice.
+`FIELD_TYPE_ARRAY`\
+Indica che il campo è una matrice.
 
-FIELD_TYPE_METHOD indica che il campo è un metodo.
+`FIELD_TYPE_METHOD`\
+Indica che il campo è un metodo.
 
-FIELD_TYPE_BLOCK indica che il campo è un blocco.
+`FIELD_TYPE_BLOCK`\
+Indica che il campo è un blocco.
 
-FIELD_TYPE_POINTER indica che il campo è un puntatore.
+`FIELD_TYPE_POINTER`\
+Indica che il campo è un puntatore.
 
-FIELD_TYPE_ENUM indica che il campo è un tipo di dati enumerato.
+`FIELD_TYPE_ENUM`\
+Indica che il campo è un tipo di dati enumerato.
 
-FIELD_TYPE_LABEL indica che il campo è un'etichetta.
+`FIELD_TYPE_LABEL`\
+Indica che il campo è un'etichetta.
 
-FIELD_TYPE_TYPEDEF indica che il campo è un typedef.
+`FIELD_TYPE_TYPEDEF`\
+Indica che il campo è un typedef.
 
-FIELD_TYPE_BITFIELD indica che il campo è un campo di bit.
+`FIELD_TYPE_BITFIELD`\
+Indica che il campo è un campo di bit.
 
-FIELD_TYPE_NAMESPACE indica che il campo è uno spazio dei nomi.
+`FIELD_TYPE_NAMESPACE`\
+Indica che il campo è uno spazio dei nomi.
 
-FIELD_TYPE_MODULE indica che il campo è un modulo.
+`FIELD_TYPE_MODULE`\
+Indica che il campo è un modulo.
 
-FIELD_TYPE_DYNAMIC indica che il campo è dinamico.
+`FIELD_TYPE_DYNAMIC`\
+Indica che il campo è dinamico.
 
-FIELD_TYPE_PROP indica che il campo è una proprietà.
+`FIELD_TYPE_PROP`\
+Indica che il campo è una proprietà.
 
-FIELD_TYPE_INNERCLASS indica che il campo è una classe interna.
+`FIELD_TYPE_INNERCLASS`\
+Indica che il campo è una classe interna.
 
-FIELD_TYPE_REFERENCE indica che il campo è un riferimento.
+`FIELD_TYPE_REFERENCE`\
+Indica che il campo è un riferimento.
 
-FIELD_TYPE_EXTENDED riservato per usi futuri.
+`FIELD_TYPE_EXTENDED`\
+Riservato per usi futuri.
 
-FIELD_SYM_MEMBER indica che il campo è un membro.
+`FIELD_SYM_MEMBER`\
+Indica che il campo è un membro.
 
-FIELD_SYM_LOCAL indica che il campo è locale.
+`FIELD_SYM_LOCAL`\
+Indica che il campo è locale.
 
-FIELD_SYM_PARAMETER indica che il campo è un parametro.
+`FIELD_SYM_PARAMETER`\
+Indica che il campo è un parametro.
 
-FIELD_SYM_THIS indica che il campo è il puntatore "this".
+`FIELD_SYM_THIS`\
+Indica che il campo è il puntatore "this".
 
-FIELD_SYM_GLOBAL indica che il campo è globale.
+`FIELD_SYM_GLOBAL`\
+Indica che il campo è globale.
 
-FIELD_SYM_PROP_GETTER indica che il campo recupera le proprietà.
+`FIELD_SYM_PROP_GETTER`\
+Indica che il campo recupera le proprietà.
 
-FIELD_SYM_PROP_SETTER indica che il campo set di proprietà.
+`FIELD_SYM_PROP_SETTER`\
+Indica che il campo set di proprietà.
 
-FIELD_SYM_EXTENDED riservato per usi futuri.
+`FIELD_SYM_EXTENDED`\
+Riservato per usi futuri.
 
-FIELD_KIND_MASK indica una maschera per i tipi di campo.
+`FIELD_KIND_MASK`\
+Indica una maschera per i tipi di campo.
 
-FIELD_TYPE_MASK indica una maschera per i tipi di campo.
+`FIELD_TYPE_MASK`\
+Indica una maschera per i tipi di campo.
 
-FIELD_SYM_MASK indica una maschera per le informazioni sui simboli.
+`FIELD_SYM_MASK`\
+Indica una maschera per le informazioni sui simboli.
 
 ## <a name="remarks"></a>Note
 Restituito da una chiamata per il [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (metodo).

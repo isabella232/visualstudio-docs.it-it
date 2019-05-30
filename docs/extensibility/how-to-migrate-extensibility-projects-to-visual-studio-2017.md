@@ -3,18 +3,18 @@ title: 'Procedura: Eseguire la migrazione di progetti di estendibilità in Visua
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319318"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
@@ -47,7 +47,7 @@ Per aggiornare i riferimenti NuGet a Microsoft.VSSDK.BuildTools:
 
 * Pulsante destro del mouse sulla soluzione e scegliere **Gestisci pacchetti NuGet per la soluzione**.
 * Passare il **aggiornamenti** scheda.
-* Selezionare **Microsoft.VSSDK.BuildTools (versione più recente)**.
+* Selezionare **Microsoft.VSSDK.BuildTools (versione più recente)** .
 * Premere **Update**.
 
 ![Strumenti di compilazione VSSDK](media/vssdk-build-tools.png)
@@ -120,7 +120,7 @@ Potrebbe essere simile: *C:\Programmi\Microsoft file (x86) \Microsoft Visual Stu
 
 * Compilare il progetto VSIX.
 * Decomprimere il pacchetto VSIX generato.
-   * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]*.
+   * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]* .
    * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
 * Verificare l'esistenza di tre file:
    * *extension.vsixmanifest*

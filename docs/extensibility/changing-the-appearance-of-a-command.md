@@ -7,17 +7,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7431fa1670f6a75b69c1a1033a51975307426771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119ce68dca4dfdea44cc7160855733080bc8e9ca
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321105"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Modificare l'aspetto di un comando
 È possibile fornire feedback all'utente modificando l'aspetto di un comando. Ad esempio, è possibile che un comando in modo diverso quando non è disponibile. È possibile rendere i comandi disponibili o non, nascondere o visualizzarli, o selezionare o deselezionare li nel menu.
@@ -80,7 +80,7 @@ Per modificare l'aspetto di un comando, eseguire una di queste azioni:
 
 6. Compilare il progetto e avviare il debug. L'istanza sperimentale di Visual Studio dovrebbe essere visualizzato.
 
-7. Nel **degli strumenti** dal menu fare clic sul **ChangeMenuText richiamare** comando. A questo punto è il nome del comando **richiamare ChangeMenuText**, quindi non chiama il gestore del comando **ChangeMyCommand()**.
+7. Nel **degli strumenti** dal menu fare clic sul **ChangeMenuText richiamare** comando. A questo punto è il nome del comando **richiamare ChangeMenuText**, quindi non chiama il gestore del comando **ChangeMyCommand()** .
 
 8. Nel **degli strumenti** menu si noterà ora **nuovo testo**. Fare clic su **nuovo testo**. Il comando dovrebbe ora essere disabilitato.
 
