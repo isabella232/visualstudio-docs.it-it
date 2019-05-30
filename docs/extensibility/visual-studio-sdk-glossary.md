@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322414"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossario di Visual Studio SDK
 Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentazione.
@@ -73,7 +73,7 @@ Questo glossario include le definizioni dei termini utilizzati nel [!INCLUDE[vsi
 
   componente componente di primo livello indipendente A che usa una finestra di primo livello non modo e può operare in modo efficace come una finestra di applicazione autonoma, ma viene implementato come un oggetto in-process. Pertanto, un componente indipendente di primo livello deve coordinare servizi del ciclo di messaggi con l'IDE e modalità. Gli oggetti in-process non sono proprio ciclo di messaggi.
 
-  informazioni provider il provider di informazioni è un modulo che può cercare le parole chiave e restituire un elenco di argomenti, sotto forma di `IVsUserContextItem` oggetti. Per fornire **F1** e parola chiave di ricerca di elementi per il provider di informazioni, registrare il file della Guida compilato (*. HxS*) con il sistema. Gli argomenti della Guida di questi file forniscono l'elenco degli argomenti visualizzati nella finestra Guida dinamica e indicato se un utente preme **F1**.
+  informazioni provider il provider di informazioni è un modulo che può cercare le parole chiave e restituire un elenco di argomenti, sotto forma di `IVsUserContextItem` oggetti. Per fornire **F1** e parola chiave di ricerca di elementi per il provider di informazioni, registrare il file della Guida compilato ( *. HxS*) con il sistema. Gli argomenti della Guida di questi file forniscono l'elenco degli argomenti visualizzati nella finestra Guida dinamica e indicato se un utente preme **F1**.
 
   posto oggetto VSPackage di un componente che implementa il `IOleInPlaceComponent` interfaccia per la gestione di una finestra in modo visivo all'interno di una finestra del documento dell'IDE di proprietà. Non partecipano al posto componenti standard OLE dall'unione di menu; al contrario si integrano loro elementi dell'interfaccia utente nell'IDE.
 

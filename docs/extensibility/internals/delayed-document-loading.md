@@ -3,17 +3,17 @@ title: Caricamento dei documenti ritardato | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a3520b2bf1d6111e945f037502a589feed0d80a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c8e7acb934c66baf804639e35deba59a9a8c81
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909776"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312151"
 ---
 # <a name="delayed-document-loading"></a>Caricamento dei documenti ritardato
 
@@ -65,4 +65,4 @@ Un modo più efficace dell'accesso a un documento consiste nell'usare <xref:Micr
 
 Non vi è alcuna indicazione visibile per indicare se un documento è stato inizializzato, pertanto può essere difficile scoprire se l'estensione viene forzato l'inizializzazione. È possibile impostare una chiave del Registro di sistema che semplifica la verifica, perché causa il titolo di tutti i documenti non completamente inizializzata per contenere il testo *[Stub]* nel titolo.
 
-Nelle **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, impostare **StubTabTitleFormatString** al  *{0} [Stub]*.
+Nelle **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad**, impostare **StubTabTitleFormatString** al  *{0} [Stub]* .

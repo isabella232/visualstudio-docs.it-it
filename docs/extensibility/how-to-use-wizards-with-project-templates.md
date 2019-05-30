@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911381"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352038"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare le procedure guidate con modelli di progetto
 
@@ -210,7 +210,7 @@ Affinché il modello di progetto personalizzati da usare della procedura guidata
 
 1. Firmare l'assembly. Nel **Esplora soluzioni**, selezionare il progetto VSIX, pulsante destro del mouse e selezionare **proprietà progetto**.
 
-2. Nel **le proprietà del progetto** finestra, seleziona la **Signing** scheda. nel **firma** scheda **firmare l'assembly**. Nel **Scegli un file chiave con nome sicuro** campi, selezionare  **\<New >**. Nel **Crea chiave con nome sicuro** finestra, nelle **nome file di chiave** digitare **snk**. Deselezionare i **Proteggi file di chiave con una password** campo.
+2. Nel **le proprietà del progetto** finestra, seleziona la **Signing** scheda. nel **firma** scheda **firmare l'assembly**. Nel **Scegli un file chiave con nome sicuro** campi, selezionare  **\<New >** . Nel **Crea chiave con nome sicuro** finestra, nelle **nome file di chiave** digitare **snk**. Deselezionare i **Proteggi file di chiave con una password** campo.
 
 3. Nel **Esplora soluzioni**, selezionare il progetto VSIX e trovare il **proprietà** finestra.
 
@@ -218,9 +218,9 @@ Affinché il modello di progetto personalizzati da usare della procedura guidata
 
 5. Ricompilare la soluzione.
 
-6. È ora possibile trovare il file Key. snk nella directory del progetto MyProjectWizard (*\<il percorso del disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Copia il *snk* file.
+6. È ora possibile trovare il file Key. snk nella directory del progetto MyProjectWizard ( *\<il percorso del disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Copia il *snk* file.
 
-7. Passare alla directory di output e trovare l'assembly (*\<il percorso del disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Incollare il *snk* file qui. (Questo non è assolutamente necessario, ma per facilitare la procedura seguente).
+7. Passare alla directory di output e trovare l'assembly ( *\<il percorso del disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Incollare il *snk* file qui. (Questo non è assolutamente necessario, ma per facilitare la procedura seguente).
 
 8. Aprire una finestra di comando e passare alla directory in cui è stato creato l'assembly.
 

@@ -5,24 +5,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686353"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351853"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Riferimenti API (debug di Visual Studio)
 La sezione di riferimento include una panoramica concettuale dell'API, una Guida che illustra la sintassi e sull'utilizzo per tutti gli elementi di API e un'ampia gamma di esempi di codice. Tutti i riferimenti sono elencati in ordine alfabetico per categoria.
 
  La tabella seguente illustra i comuni `HRESULT` valori restituiti dai metodi.
 
-|nome|Descrizione|Value|
+|Nome|Descrizione|Value|
 |----------|-----------------|-----------|
 |S_OK|Operazione completata.|0x00000000|
 |E_UNEXPECTED|Errore imprevisto.|0x8000FFFF|
@@ -37,10 +37,10 @@ La sezione di riferimento include una panoramica concettuale dell'API, una Guida
 |E_ACCESSDENIED|Errore di accesso generale negato.|0x80070005|
 
 > [!NOTE]
->  Quando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire, alcuna convalida non viene effettuata in orizzontale i puntatori di parametro quando `S_OK` viene restituito.
+> Quando un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debug metodo restituisce `S_OK`, si presuppone che tutte le risorse sono validi i puntatori di parametro, vale a dire, alcuna convalida non viene effettuata in orizzontale i puntatori di parametro quando `S_OK` viene restituito.
 >
 > [!NOTE]
->  Non è valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.
+> Non è valido o `NULL` [parametri out] può causare l'IDE di arresto anomalo del sistema.
 
 ## <a name="see-also"></a>Vedere anche
 - [Interfacce](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

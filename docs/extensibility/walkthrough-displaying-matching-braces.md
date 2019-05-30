@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795995"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312529"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procedura dettagliata: Visualizzare le parentesi graffe corrispondenti
 Implementare funzionalità basata sul linguaggio, ad esempio, parentesi graffa corrispondente definizione di una corrispondenza parentesi graffe e aggiungendo un tag del marcatore di testo per le parentesi graffe corrispondenti quando il cursore si trova su una delle parentesi graffe. È possibile definire le parentesi graffe nel contesto di una lingua, definire il proprio estensione di file e il tipo di contenuto e applicare i tag semplicemente digitare o applicano i tag per un tipo di contenuto esistente (ad esempio "text"). Procedura dettagliata illustra come applicare i tag per il tipo di contenuto "text" corrispondenza tra parentesi graffe.

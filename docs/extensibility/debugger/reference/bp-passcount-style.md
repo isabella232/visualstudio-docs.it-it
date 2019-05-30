@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686054"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353060"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Specifica la condizione associata con il punto di interruzione pass che fa sì che il punto di interruzione da attivare.
@@ -43,14 +46,18 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };
 ```
 
-## <a name="members"></a>Membri
-BP_PASSCOUNT_NONE specifica nessuno stile di punto di interruzione pass conteggio.
+## <a name="fields"></a>Campi
+`BP_PASSCOUNT_NONE`\
+Specifica nessuno stile di punto di interruzione pass conteggio.
 
-BP_PASSCOUNT_EQUAL imposta lo stile di conteggio pass punto di interruzione deve essere uguale a. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione uguale al conteggio pass.
+`BP_PASSCOUNT_EQUAL`\
+Imposta lo stile di conteggio pass punto di interruzione deve essere uguale a. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione uguale al conteggio pass.
 
-BP_PASSCOUNT_EQUAL_OR_GREATER imposta lo stile di punto di interruzione pass conteggio maggiore o uguale. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione è uguale o maggiore del numero di pass.
+`BP_PASSCOUNT_EQUAL_OR_GREATER`\
+Imposta lo stile di punto di interruzione pass conteggio maggiore o uguale. Il punto di interruzione viene attivato quando il numero di volte in cui che viene raggiunto il punto di interruzione è uguale o maggiore del numero di pass.
 
-BP_PASSCOUNT_MOD specifica un modulo conteggio esecuzioni di test. Ad esempio, se il conteggio di pass è del tipo `BP_PASSCOUNT_MOD` e il valore del conteggio pass è 4, viene attivato ogni volta che il numero di passaggi è un multiplo di 4 il punto di interruzione.
+`BP_PASSCOUNT_MOD`\
+Specifica un modulo conteggio esecuzioni di test. Ad esempio, se il conteggio di pass è del tipo `BP_PASSCOUNT_MOD` e il valore del conteggio pass è 4, viene attivato ogni volta che il numero di passaggi è un multiplo di 4 il punto di interruzione.
 
 ## <a name="remarks"></a>Note
 Utilizzato per il `stylePassCount` membro del [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che a sua volta è un membro del [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) strutture.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_REQUEST_INFO structure
 ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54af482e8896ce1905700312e59bd156c40b556d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 25967fa5ddc6f827435c03c2883eacb522c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697819"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353000"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Contiene le informazioni necessarie per implementare un punto di interruzione.
@@ -55,25 +58,35 @@ public struct BP_REQUEST_INFO {
 ```
 
 ## <a name="members"></a>Membri
-`dwFields` Una combinazione di flag dal [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumerazione che specifica quali campi vengono compilati.
+`dwFields`\
+Una combinazione di flag dal [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumerazione che specifica quali campi vengono compilati.
 
-`guidLanguage` Il GUID del linguaggio.
+`guidLanguage`\
+Il GUID del linguaggio.
 
-`bpLocation` Il [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura che specifica il tipo di posizione il punto di interruzione.
+`bpLocation`\
+Il [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struttura che specifica il tipo di posizione il punto di interruzione.
 
-`pProgram` Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta l'applicazione in cui si verifica il punto di interruzione.
+`pProgram`\
+Il [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) oggetto che rappresenta l'applicazione in cui si verifica il punto di interruzione.
 
-`bstrProgramName` Il nome dell'applicazione in cui si verifica il punto di interruzione.
+`bstrProgramName`\
+Il nome dell'applicazione in cui si verifica il punto di interruzione.
 
-`pThread` Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui si verifica il punto di interruzione.
+`pThread`\
+Il [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) oggetto che rappresenta il thread in cui si verifica il punto di interruzione.
 
-`bstrThreadName` Il nome del thread in cui si verifica il punto di interruzione.
+`bstrThreadName`\
+Il nome del thread in cui si verifica il punto di interruzione.
 
-`bpCondition` Il [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura che descrive le condizioni in cui viene attivato il punto di interruzione.
+`bpCondition`\
+Il [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura che descrive le condizioni in cui viene attivato il punto di interruzione.
 
-`bpPassCount` Il [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che contiene le informazioni sul conteggio di passaggio del punto di interruzione.
+`bpPassCount`\
+Il [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) struttura che contiene le informazioni sul conteggio di passaggio del punto di interruzione.
 
-`dwFlags` Una combinazione di flag dal [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumerazione che specifica i flag per il punto di interruzione richiesto.
+`dwFlags`\
+Una combinazione di flag dal [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumerazione che specifica i flag per il punto di interruzione richiesto.
 
 ## <a name="remarks"></a>Note
 Questa struttura viene restituita per le [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) (metodo).

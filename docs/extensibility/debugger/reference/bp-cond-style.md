@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351822"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Specifica lo stile di condizione punto di interruzione per in sospeso e associati i punti di interruzione.
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>Membri
-BP_COND_NONE viene attivato il punto di interruzione quando la posizione del punto di interruzione viene raggiunto. Nessuna condizione di punto di interruzione specificati.
+## <a name="fields"></a>Campi
+`BP_COND_NONE`\
+Quando viene raggiunta la posizione del punto di interruzione, viene attivato il punto di interruzione. Nessuna condizione di punto di interruzione specificati.
 
-BP_COND_WHEN_TRUE viene attivato il punto di interruzione solo quando il punto di interruzione associata l'espressione condizionale restituisce `true`.
+`BP_COND_WHEN_TRUE`\
+Viene attivato il punto di interruzione solo quando il punto di interruzione associata l'espressione condizionale restituisce `true`.
 
-BP_COND_WHEN_CHANGED viene attivato il punto di interruzione solo quando il valore dell'espressione condizionale associato il punto di interruzione è stato modificato da relativo valutazione precedente.
+`BP_COND_WHEN_CHANGED`\
+Viene attivato il punto di interruzione solo quando il valore dell'espressione condizionale associato il punto di interruzione è stato modificato da relativo valutazione precedente.
 
 ## <a name="remarks"></a>Note
 Utilizzato per il `styleCondition` membro della [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struttura.

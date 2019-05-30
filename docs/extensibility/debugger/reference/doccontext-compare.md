@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686249"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318138"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Specifica i criteri per il confronto di due contesti di documento.
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Membri
-DOCCONTEXT_EQUAL individuare il primo contesto del documento nell'elenco che è uguale al contesto di documento di destinazione.
+## <a name="fields"></a>Campi
+`DOCCONTEXT_EQUAL`\
+Trovare il primo contesto del documento nell'elenco che è uguale al contesto di documento di destinazione.
 
-DOCCONTEXT_LESS_THAN individuare il primo contesto del documento nell'elenco che è minore rispetto al contesto di documento di destinazione.
+`DOCCONTEXT_LESS_THAN`\
+Trovare il primo contesto del documento nell'elenco che è minore rispetto al contesto di documento di destinazione.
 
-DOCCONTEXT_GREATER_THAN individuare il primo contesto del documento nell'elenco che è maggiore rispetto al contesto di documento di destinazione.
+`DOCCONTEXT_GREATER_THAN`\
+Trovare il primo contesto del documento nell'elenco che è maggiore rispetto al contesto di documento di destinazione.
 
-DOCCONTEXT_SAME_DOCUMENT individuare il primo contesto del documento nell'elenco che è nello stesso documento come contesto di documento di destinazione.
+`DOCCONTEXT_SAME_DOCUMENT`\
+Trovare il primo contesto del documento nell'elenco che è nello stesso documento come contesto di documento di destinazione.
 
 ## <a name="remarks"></a>Note
 Passato come argomento per il [confrontare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) (metodo).
