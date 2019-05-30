@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428812"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322431"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Supporto per i frammenti di codice in un servizio di linguaggio legacy
 Un frammento di codice è un frammento di codice che viene inserito nel file di origine. Il frammento di codice è un modello basato su XML con un set di campi. Questi campi vengono evidenziati dopo il frammento di codice viene inserito e può avere valori diversi a seconda del contesto in cui viene inserito il frammento di codice. Immediatamente dopo l'inserimento del frammento, il servizio di linguaggio possibile formattare il frammento di codice.
@@ -50,7 +50,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 
  In genere esistono due posizioni in cui sono archiviati i file di modello di frammento di codice: 1) in cui è stata installata la lingua e 2) nella cartella dell'utente. Questi percorsi vengono aggiunti al Registro di sistema in modo che Visual Studio **Gestione frammenti di codice** possibile trovare i frammenti di codice. La cartella dell'utente è in cui sono archiviati frammenti di codice creati dall'utente.
 
- Il layout cartella tipica per i file di modello di frammento di codice installati aspetto simile al seguente: *[elemento InstallRoot]*\\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.
+ Il layout cartella tipica per i file di modello di frammento di codice installati aspetto simile al seguente: *[elemento InstallRoot]* \\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.
 
  *[Elemento InstallRoot]*  è la cartella del linguaggio è installato in.
 
@@ -58,7 +58,7 @@ Un frammento di codice è un frammento di codice che viene inserito nel file di 
 
  *[LCID]*  è l'ID delle impostazioni locali. Si tratta di versioni localizzate come dei frammenti di codice vengono archiviate. Ad esempio, l'ID impostazioni locali per l'inglese è 1033, così *[LCID]* viene sostituito da 1033.
 
- È necessario specificare un file aggiuntivo e che è un file di indice, in genere chiamato SnippetsIndex.xml o ExpansionsIndex.xml (è possibile usare qualsiasi nome di file valido che terminano con. XML). Questo file è in genere archiviato nel *[elemento InstallRoot]*\\ *[TestLanguage]* cartella e specifica la posizione esatta della cartella dei frammenti, nonché l'ID di lingua e il GUID del linguaggio servizio che utilizza i frammenti di codice. Il percorso esatto del file di indice viene inserito nel Registro di sistema come descritto più avanti in "Installare il voci del Registro di sistema". Di seguito è riportato un esempio di un file SnippetsIndex.xml:
+ È necessario specificare un file aggiuntivo e che è un file di indice, in genere chiamato SnippetsIndex.xml o ExpansionsIndex.xml (è possibile usare qualsiasi nome di file valido che terminano con. XML). Questo file è in genere archiviato nel *[elemento InstallRoot]* \\ *[TestLanguage]* cartella e specifica la posizione esatta della cartella dei frammenti, nonché l'ID di lingua e il GUID del linguaggio servizio che utilizza i frammenti di codice. Il percorso esatto del file di indice viene inserito nel Registro di sistema come descritto più avanti in "Installare il voci del Registro di sistema". Di seguito è riportato un esempio di un file SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

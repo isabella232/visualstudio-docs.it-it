@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONSTRUCTOR_ENUM enumeration
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb880516d13085af594bb639a15d76fca8262279
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea240cf33bab70f1488a2aa90fecd71220b1da25
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680360"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346444"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Consente di selezionare diversi tipi di costruttori.
@@ -40,12 +43,15 @@ public enum ConstructorMatchOptions {
 };
 ```
 
-## <a name="members"></a>Membri
-crAll Seleziona tutti i costruttori.
+## <a name="fields"></a>Campi
+`crAll`\
+Seleziona tutti i costruttori.
 
-crNonStatic seleziona i costruttori non statici.
+`crNonStatic`\
+Seleziona i costruttori non statici.
 
-crStatic seleziona i costruttori statici.
+`crStatic`\
+Seleziona i costruttori statici.
 
 ## <a name="remarks"></a>Note
 Passato come argomento per il [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (metodo).

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONNECTION_PROTOCOL enumeration
 ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a7d8d056fb816a428d78a8e13455cf6ccdd8a90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f52ef7e723b583d593f6f0d4fc18f5f6909b131
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705833"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346529"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 Indica il protocollo usato per la comunicazione tra un server di debug e il pacchetto di debug (DE).
@@ -48,20 +51,27 @@ public enum CONNECTION_PROTOCOL {
 };
 ```
 
-#### <a name="parameters"></a>Parametri
-È diventata CONNECTION_NONE Nessuna connessione a un server.
+## <a name="fields"></a>Campi
+`CONNECTION_NONE`\
+Non è stata stabilita alcuna connessione a un server.
 
-È stata stabilita CONNECTION_UNKNOWN una connessione, ma è di tipo sconosciuto.
+`CONNECTION_UNKNOWN`\
+È stata stabilita una connessione, ma è di tipo sconosciuto.
 
-Connessione CONNECTION_LOCAL è a un server locale.
+`CONNECTION_LOCAL`\
+Connessione è a un server locale.
 
-Connessione CONNECTION_PIPE avviene tramite una named pipe.
+`CONNECTION_PIPE`\
+Connessione avviene tramite una named pipe.
 
-Connessione CONNECTION_TCPIP utilizza TCP/IP.
+`CONNECTION_TCPIP`\
+Connessione Usa TCP/IP.
 
-Connessione CONNECTION_HTTP utilizza HTTP (tramite un server Web).
+`CONNECTION_HTTP`\
+Connessione utilizza HTTP (tramite un server Web).
 
-Un altro tipo di connessione è stato stabilito CONNECTION_OTHER (questo valore non viene attualmente utilizzato).
+`CONNECTION_OTHER`\
+Un altro tipo di connessione è stato stabilito (questo valore non viene attualmente utilizzato).
 
 ## <a name="remarks"></a>Note
 Questi valori vengono restituiti dai [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) (metodo).

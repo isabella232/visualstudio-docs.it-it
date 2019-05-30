@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861765"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340796"
 ---
 # <a name="inside-the-editor"></a>All'interno dell'editor
 
@@ -108,7 +108,7 @@ Oggetto <xref:Microsoft.VisualStudio.Text.SnapshotPoint> rappresenta una posizio
 
 #### <a name="spans-and-normalizedspancollections"></a>Gli intervalli e NormalizedSpanCollections
 
-Oggetto <xref:Microsoft.VisualStudio.Text.Span> rappresenta un intervallo che può essere applicato a un intervallo di testo in uno snapshot di testo. Le posizioni di snapshot sono in base zero, in modo che gli intervalli possono iniziare in qualsiasi posizione inclusi zero. Il `End` proprietà di un intervallo è uguale alla somma dei relativi `Start` proprietà e i relativi `Length` proprietà. Oggetto `Span` non include il carattere che verrà indicizzato per la `End` proprietà. Ad esempio, un intervallo che ha inizio = 5 e Length = 3 ha End = 8, e include i caratteri in corrispondenza delle posizioni 5, 6 e 7. La notazione per questo intervallo è 5..8).
+Oggetto <xref:Microsoft.VisualStudio.Text.Span> rappresenta un intervallo che può essere applicato a un intervallo di testo in uno snapshot di testo. Le posizioni di snapshot sono in base zero, in modo che gli intervalli possono iniziare in qualsiasi posizione inclusi zero. Il `End` proprietà di un intervallo è uguale alla somma dei relativi `Start` proprietà e i relativi `Length` proprietà. Oggetto `Span` non include il carattere che verrà indicizzato per la `End` proprietà. Ad esempio, un intervallo che ha inizio = 5 e Length = 3 ha End = 8, e include i caratteri in corrispondenza delle posizioni 5, 6 e 7. La notazione per questo intervallo è [5..8).
 
 Due intervalli si intersecano se dispongono di alcuna posizione in comune, tra cui la posizione finale. Pertanto, l'intersezione di [3, 5) e [2, 7) è [3, 5) e punto di intersezione tra [3, 5) e [5, 7) è [5, 5). (Si noti che [5, 5) è un intervallo vuoto.)
 

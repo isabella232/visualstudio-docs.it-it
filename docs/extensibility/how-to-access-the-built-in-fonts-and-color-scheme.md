@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415520"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340979"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedura: I tipi di carattere incorporati di accesso e il colore ccheme
 L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di tipi di carattere e colori associato con la finestra dell'editor. È possibile accedere a questo schema tramite il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaccia.
@@ -49,7 +49,7 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio è una combinazione di t
 
 1. Costruire un tipo speciale di voce del Registro di sistema categoria nel percorso seguente:
 
-     *[HKLM\Software\Microsoft. \Visual Studio\\\<versione di Visual Studio > \FontAndColors\\\<categoria >*]
+     *[HKLM\Software\Microsoft. \Visual Studio\\\<versione di Visual Studio > \FontAndColors\\\<categoria >* ]
 
      *\<Categoria >* è il nome non localizzato della categoria.
 

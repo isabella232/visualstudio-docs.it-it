@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, what's new in API v1.3
 - what's new [Visual Studio SDK], source control plug-ins
 ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b61e56fcef8bbbe8e9f36a39580eae14ad582d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df93626066441226e7f41963e60e3417e8cc12da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856713"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323096"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Cosa&#39;plug-in versione 1.3 dell'API di controllo s nuove nell'origine
 L'API dei plug-in del controllo origine versione 1.3 introduce le nuove funzioni seguenti per fornire un controllo più avanzato.
