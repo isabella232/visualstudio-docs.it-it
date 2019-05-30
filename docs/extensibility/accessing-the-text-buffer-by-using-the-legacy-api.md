@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dc331e06d1e82928f5c608d5b009258beb48dcc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 661bf39e82fef5c040861bc9386dcb7f897d25cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844019"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313633"
 ---
 # <a name="access-the-text-buffer-by-using-the-legacy-api"></a>Accedere al buffer di testo usando l'API legacy
 Il testo è responsabile della gestione dei flussi di testo e salvataggio permanente dei file. Anche se il buffer può leggere o scrivere altri formati, tutte le comunicazioni normali con il buffer viene eseguita utilizzando Unicode. Nelle API legacy, il buffer di testo può usare unidimensionale o un sistema di coordinate bidimensionale per identificare le posizioni di carattere nel buffer.

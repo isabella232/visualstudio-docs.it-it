@@ -3,17 +3,17 @@ title: I colori e stili per Visual Studio | Microsoft Docs
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: faded3e4a541ad899306e40bf9d46bf96a6b8ace
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432227"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338354"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 
@@ -285,7 +285,7 @@ Solo un numero limitato di colori di sistema può essere utilizzato per temi a c
 
 La tabella in [Blog del Team WPF: Riferimento SystemColors](https://blogs.msdn.microsoft.com/wpf/2010/11/30/systemcolors-reference/) indica il set completo di nomi di colori di sistema e le corrispondenti tonalità visualizzate in ogni tema.
 
-Quando si applica questo set di colori per l'interfaccia utente, limitato *è previsto che perderai dettagli che erano presenti nei temi "normali"*. Ecco un esempio dell'interfaccia utente con colori grigi meno evidenti che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Quando viene utilizzata con la stessa finestra visualizzata in modalità a contrasto elevato, si noterà che tutti gli sfondi siano la stessa tonalità e i bordi di tali aree sono indicati dal bordo autonomo:
+Quando si applica questo set di colori per l'interfaccia utente, limitato *è previsto che perderai dettagli che erano presenti nei temi "normali"* . Ecco un esempio dell'interfaccia utente con colori grigi meno evidenti che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Quando viene utilizzata con la stessa finestra visualizzata in modalità a contrasto elevato, si noterà che tutti gli sfondi siano la stessa tonalità e i bordi di tali aree sono indicati dal bordo autonomo:
 
 ![Esempio del modo in cui dettagli vengono perse in contrasto elevato](../../extensibility/ux-guidelines/media/030303-a_propertieswindow.png "030303 a_PropertiesWindow")<br />Esempio del modo in cui dettagli vengono perse in contrasto elevato
 
@@ -358,7 +358,7 @@ Costruire un tipo speciale di voce del Registro di sistema categoria sotto `[HKL
 
 Popolare il Registro di sistema con due valori:
 
-| Nome | Tipo | Dati | Descrizione |
+| nome | Tipo | Dati | Descrizione |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio di VSPackage che supporta la categoria |
@@ -371,7 +371,7 @@ Costruire un tipo speciale di voce del Registro di sistema categoria sotto `[HKL
 
 Popolare il Registro di sistema con due valori:
 
-| Nome | Tipo | Dati | Descrizione |
+| nome | Tipo | Dati | Descrizione |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | Creato da un GUID per identificare la categoria |
 | Pacchetto | REG_SZ | GUID | Il GUID del servizio di VSPackage che supporta la categoria |

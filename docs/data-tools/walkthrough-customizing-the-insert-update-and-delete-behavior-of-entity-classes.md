@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Personalizzazione del comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità'
+title: Personalizzare il comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565407"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262896"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procedura dettagliata: Personalizzare il comportamento di inserimento, aggiornamento ed eliminazione delle classi di entità
 
@@ -195,7 +195,7 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 5. Nella finestra **Proprietà** selezionare la proprietà **Insert**.
 
-6. Fare clic sui puntini di sospensione (**...**) accanto a **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.
+6. Fare clic sui puntini di sospensione ( **...** ) accanto a **Usa fase di esecuzione** per aprire la finestra di dialogo **Configura comportamento**.
 
 7. Selezionare **Personalizza**.
 
@@ -214,10 +214,10 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
      Controllare l'elenco di **Argomenti metodo** e **Proprietà classe** e notare che sono disponibili due **Argomenti metodo** e due **Proprietà classe** per alcune colonne nella tabella. In tal modo, vengono facilitati il rilevamento delle modifiche e la creazione di istruzioni che verifichino la presenza di eventuali violazioni di concorrenza.
 
-13. Eseguire il mapping dell'argomento di metodo **Original_CustomerID** alla proprietà di classe **CustomerID (Original)**.
+13. Eseguire il mapping dell'argomento di metodo **Original_CustomerID** alla proprietà di classe **CustomerID (Original)** .
 
     > [!NOTE]
-    > Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi di proprietà vengono modificati e non vi è più corrispondenza tra quelli della tabella e quelli della classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente di cui eseguire il mapping nel caso in cui **Object Relational Designer** non sia in grado di determinare il mapping corretto. Inoltre, se per gli argomenti di metodo non sono disponibili proprietà di classe valide per il mapping, è possibile impostare il valore **Proprietà classe** su **(Nessuna)**.
+    > Per impostazione predefinita, verrà eseguito il mapping degli argomenti di metodo alle proprietà di classe quando i nomi corrispondono. Se i nomi di proprietà vengono modificati e non vi è più corrispondenza tra quelli della tabella e quelli della classe di entità, potrebbe essere necessario selezionare la proprietà di classe equivalente di cui eseguire il mapping nel caso in cui **Object Relational Designer** non sia in grado di determinare il mapping corretto. Inoltre, se per gli argomenti di metodo non sono disponibili proprietà di classe valide per il mapping, è possibile impostare il valore **Proprietà classe** su **(Nessuna)** .
 
 14. Fare clic su **Applica** per salvare la configurazione relativa alla classe e al comportamento selezionati.
 
@@ -227,7 +227,7 @@ Per impostazione predefinita, il pulsante Salva non è abilitato e la funzionali
 
 17. Selezionare il metodo **DeleteCustomers** nell'elenco **Personalizza**.
 
-18. Eseguire il mapping dell'argomento di metodo **Original_CustomerID** alla proprietà di classe **CustomerID (Original)**.
+18. Eseguire il mapping dell'argomento di metodo **Original_CustomerID** alla proprietà di classe **CustomerID (Original)** .
 
 19. Fare clic su **OK**.
 

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c3bc5e10c928c50bca1ea3879531885f4580519
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856627"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309633"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
 
- I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** per impostare un segnalibro.
+ I comandi possono avere una o due tasti di scelta rapida associati. È un esempio di un unico tasto di scelta rapida **Ctrl**+**S** per i **Salva** comando. Tasti di scelta doppia richiedono due combinazioni di tasti successive per attivare un comando. È un esempio di un tasto di scelta rapida duale <strong>Ctrl *+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** per impostare un segnalibro.
 
 ## <a name="syntax"></a>Sintassi
 

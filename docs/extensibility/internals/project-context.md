@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 800a28d9829600821014aab17b36ca8506fd044a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 175ee37628b1794377a6b4e9e94cef52466cd291
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859624"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328348"
 ---
 # <a name="project-context"></a>Contesto di progetto
 Quando l'utente aggiunge o si funziona con i progetti ed elementi del progetto, l'IDE Usa il concetto di contesto del progetto per determinare come le varie operazioni devono essere eseguite.

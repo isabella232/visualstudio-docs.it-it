@@ -3,17 +3,17 @@ title: Panoramica del protocollo Server Language | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309630"
 ---
 # <a name="language-server-protocol"></a>Protocollo di server di linguaggio
 
@@ -55,7 +55,7 @@ Di seguito è riportato un esempio per la modalità di comunicazione durante una
 
 * **L'utente esegue "Vai a definizione" su un simbolo nell'editor**: Lo strumento invia una richiesta di ' textDocument/definizione' con due parametri: (1) l'URI del documento e (2) la posizione del testo da dove Vai a nella richiesta della definizione è stato avviato nel server. Il server risponde con l'URI del documento e la posizione della definizione del simbolo all'interno del documento.
 
-* **L'utente chiude il documento (file)**: Viene inviata una notifica di ' textDocument/didClose' dallo strumento, per informare il server di linguaggio che il documento è ora non è più in memoria e che il contenuto corrente è ora aggiornata nel file system.
+* **L'utente chiude il documento (file)** : Viene inviata una notifica di ' textDocument/didClose' dallo strumento, per informare il server di linguaggio che il documento è ora non è più in memoria e che il contenuto corrente è ora aggiornata nel file system.
 
 Questo esempio viene illustrato come il protocollo comunica con il server di linguaggio al livello di funzionalità dell'editor, ad esempio "Vai a definizione", "Trova tutti i riferimenti". I tipi di dati utilizzati dal protocollo sono editor o ambiente IDE "tipi di dati", ad esempio il documento di testo aperto e la posizione del cursore. I tipi di dati non sono a livello di un linguaggio dominio del modello di programmazione che in genere fornisce gli alberi della sintassi astratta e simboli di compilazione (ad esempio, risolvere i tipi, spazi dei nomi,...). Questo semplifica notevolmente il protocollo.
 

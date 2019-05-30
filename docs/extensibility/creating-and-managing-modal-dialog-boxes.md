@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2784135b1f3588047e03166a7302f3b8941c564
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926406"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338321"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Creare e gestire le finestre di dialogo modale
 Quando si crea una finestra di dialogo modale in Visual Studio, è necessario assicurarsi che la finestra padre della finestra di dialogo è disabilitata mentre viene visualizzata la finestra di dialogo, quindi abilitare nuovamente la finestra padre si chiude la finestra di dialogo. Se non si esegue in modo che venga visualizzato l'errore: *Microsoft Visual Studio non è chiusa perché è attiva una finestra di dialogo modale. Chiudere la finestra di dialogo attiva e riprovare.*
