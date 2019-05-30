@@ -3,18 +3,18 @@ title: Pagina iniziale di creazione di un oggetto personalizzato | Microsoft Doc
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336672"
 ---
 # <a name="creating-a-custom-start-page"></a>Creazione di una pagina iniziale personalizzata
 
@@ -24,7 +24,7 @@ ms.locfileid: "62926380"
 
 Assicurarsi prima di tutto una pagina iniziale vuota creando un *XAML* file che ha una struttura di tag che verranno riconosciute dallo Visual Studio. Aggiungere quindi il markup e code-behind per produrre l'aspetto e funzionalità che si desidera.
 
-1. Creare un nuovo progetto di tipo **applicazione WPF** (**Visual c#** > **Windows Desktop**).
+1. Creare un nuovo progetto di tipo **applicazione WPF** (**Visual c#**  > **Windows Desktop**).
 
 2. Aggiungere un riferimento a `Microsoft.VisualStudio.Shell.14.0`.
 

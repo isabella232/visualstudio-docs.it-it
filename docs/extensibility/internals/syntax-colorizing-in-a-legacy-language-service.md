@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331140"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Colorazione della sintassi in un servizio di linguaggio legacy
 La colorazione della sintassi è una funzionalità che fa sì che diversi elementi di un linguaggio di programmazione da visualizzare in un file di origine in diversi colori e stili. Per supportare questa funzionalità, è necessario fornire un parser o lo scanner in grado di identificare i tipi di elementi lessicali o token nel file. Molti linguaggi di distinguono le parole chiave, delimitatori (ad esempio parentesi o parentesi graffe) e i commenti da colorare loro in modi diversi.
@@ -34,7 +34,7 @@ La colorazione della sintassi è una funzionalità che fa sì che diversi elemen
  Le informazioni sul colore restituiti all'editor è un indice in un elenco di elementi colorabili. Ogni elemento colorabile specifica un valore di colore e un set di attributi del tipo di carattere, ad esempio grassetto o barrato. L'editor fornisce un set di elementi colorabili predefiniti che è possibile usare il servizio di linguaggio. Tutto è necessario eseguire è specificare l'indice di colore appropriato per ogni tipo di token. Tuttavia, è possibile fornire un set di elementi colorabili personalizzati e gli indici che è fornire per i token e fare riferimento a un elenco personalizzato di elementi colorabili anziché l'elenco predefinito. È necessario impostare anche il `RequestStockColors` voce del Registro di sistema su 0 (o non si specifica il `RequestStockColors` voce affatto) per supportare i colori personalizzati. È possibile impostare questa voce del Registro di sistema con un parametro denominato per il <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attributo definito dall'utente. Per altre informazioni sulla registrazione di un servizio di linguaggio e l'impostazione delle opzioni, vedere [la registrazione di un servizio di linguaggio Legacy](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Elementi colorabili personalizzati
- Per fornire i propri elementi colorabili personalizzati, è necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Il primo metodo restituisce il numero di elementi colorabili personalizzati supportati dal servizio di linguaggio e il secondo Ottiene l'elemento colorabile personalizzato in base all'indice. Si crea l'elenco predefinito di elementi colorabili personalizzati. Nel costruttore del servizio di linguaggio, tutto è necessario eseguire è specificare ogni elemento colorabile con un nome. Visual Studio gestisce automaticamente il caso in cui l'utente seleziona un set diverso di elementi colorabili. Questo nome viene visualizzato un messaggio nel **tipi di carattere e colori** pagina delle proprietà nel **opzioni** la finestra di dialogo (disponibile da Visual Studio **strumenti** menu) e questo nome determina quali colore di che un utente ha eseguito l'override. Le scelte dell'utente sono archiviate in una cache nel Registro di sistema e a cui accede il nome del colore. Il **tipi di carattere e colori** pagina delle proprietà sono elencati tutti i nomi di colore in ordine alfabetico, in modo che è possibile raggruppare i colori personalizzati per ciascun nome preceduto dal colore con il nome del linguaggio; ad esempio, "**TestLanguage commento**"e"**TestLanguage - parola chiave**". Oppure è possibile raggruppare gli elementi colorabili dal tipo, "**commento (TestLanguage)**"e"**parola chiave (TestLanguage)**". Raggruppamento in base al nome della lingua è preferito.
+ Per fornire i propri elementi colorabili personalizzati, è necessario eseguire l'override di <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> metodo su di <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Il primo metodo restituisce il numero di elementi colorabili personalizzati supportati dal servizio di linguaggio e il secondo Ottiene l'elemento colorabile personalizzato in base all'indice. Si crea l'elenco predefinito di elementi colorabili personalizzati. Nel costruttore del servizio di linguaggio, tutto è necessario eseguire è specificare ogni elemento colorabile con un nome. Visual Studio gestisce automaticamente il caso in cui l'utente seleziona un set diverso di elementi colorabili. Questo nome viene visualizzato un messaggio nel **tipi di carattere e colori** pagina delle proprietà nel **opzioni** la finestra di dialogo (disponibile da Visual Studio **strumenti** menu) e questo nome determina quali colore di che un utente ha eseguito l'override. Le scelte dell'utente sono archiviate in una cache nel Registro di sistema e a cui accede il nome del colore. Il **tipi di carattere e colori** pagina delle proprietà sono elencati tutti i nomi di colore in ordine alfabetico, in modo che è possibile raggruppare i colori personalizzati per ciascun nome preceduto dal colore con il nome del linguaggio; ad esempio, "**TestLanguage commento**"e"**TestLanguage - parola chiave**". Oppure è possibile raggruppare gli elementi colorabili dal tipo, "**commento (TestLanguage)** "e"**parola chiave (TestLanguage)** ". Raggruppamento in base al nome della lingua è preferito.
 
 > [!CAUTION]
 > Si consiglia di includere il nome della lingua nel nome dell'elemento colorabile per evitare conflitti con nomi di elemento colorabile esistenti.

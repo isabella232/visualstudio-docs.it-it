@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444925"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328142"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Procedura dettagliata: Usare un comando della shell con un'estensione dell'editor
 Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio i comandi di menu per l'editor. Questa procedura dettagliata illustra come aggiungere un'area di controllo a una visualizzazione di testo nell'editor quando si richiama un comando di menu.
@@ -38,7 +38,7 @@ Da un pacchetto VSPackage, è possibile aggiungere le funzionalità, ad esempio 
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Aggiungere un'estensione MEF all'estensione di comando
 
-1. Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**. Nel **Aggiungi nuovo progetto** finestra di dialogo, fare clic su **Extensibility** sotto **Visual c#**, quindi **progetto VSIX**. Denominare il progetto `CommentAdornmentTest`.
+1. Nella **Esplora soluzioni**, fare doppio clic sul nodo della soluzione, fare clic su **Add**, quindi fare clic su **nuovo progetto**. Nel **Aggiungi nuovo progetto** finestra di dialogo, fare clic su **Extensibility** sotto **Visual c#** , quindi **progetto VSIX**. Denominare il progetto `CommentAdornmentTest`.
 
 2. Poiché questo progetto interagirà con il pacchetto VSPackage assembly con nome sicuro, è necessario firmare l'assembly. È possibile riutilizzare il file di chiave già creato per l'assembly VSPackage.
 
