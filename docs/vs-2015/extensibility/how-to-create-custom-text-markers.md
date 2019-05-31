@@ -34,7 +34,7 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
   
 1. Creare una voce del Registro di sistema come indicato di seguito:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>è un `GUID` utilizzato per identificare il marcatore da aggiungere  
   
@@ -43,9 +43,9 @@ Se si desidera creare un marcatore di testo personalizzato per enfatizzare o org
     *\<PackageGUID >* è il GUID del pacchetto VSPackage che implementa l'oggetto di automazione.  
   
    > [!NOTE]
-   > Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > Il percorso radice di HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versione >* può essere sottoposto a override da un'altra radice quando viene inizializzata la shell di Visual Studio, per altre informazioni, vedere [Opzioni della riga di comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Creare quattro valori in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versione >* \Text Editor\External marcatori\\*\<MarkerGUID >*  
+2. Creare quattro valori in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versione >* \Text Editor\External marcatori\\ *\<MarkerGUID >*  
   
    - (Predefinito)  
   

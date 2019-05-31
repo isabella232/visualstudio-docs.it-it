@@ -1,5 +1,5 @@
 ---
-title: La distribuzione, pubblicazione e aggiornamento dei pacchetti delle soluzioni SharePoint | Microsoft Docs
+title: Distribuire, pubblicare e aggiornare i pacchetti di soluzioni SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436728"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402047"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Distribuire, pubblicare e aggiornare i pacchetti di soluzioni SharePoint
   Dopo aver sviluppato una soluzione di SharePoint in Visual Studio, è possibile distribuire il file del pacchetto (con estensione wsp) in un server SharePoint locale o pubblicata in un server SharePoint locale o remoto. Se si distribuiscono i file, è possibile personalizzare la distribuzione di file del pacchetto (con estensione wsp).
@@ -54,7 +54,7 @@ ms.locfileid: "63436728"
  È anche possibile aggiungere comandi da eseguire prima e dopo la distribuzione. Per altre informazioni, vedere [Procedura: Impostare i comandi di distribuzione di SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Pubblicare pacchetti in un server locale o remoto
- Per pubblicare una soluzione creata mediante sandbox di SharePoint in un server remoto, nella barra dei menu, scegliere **compilare**, **pubblica**, quindi il **pubblica** finestra di dialogo, seleziona il **Pubblica sul sito di SharePoint** pulsante di opzione, fornendo l'URL del server remoto, ad esempio **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Per pubblicare una soluzione creata mediante sandbox di SharePoint in un server remoto, nella barra dei menu, scegliere **compilare**, **pubblica**, quindi il **pubblica** finestra di dialogo, seleziona il **Pubblica sul sito di SharePoint** pulsante di opzione, fornendo l'URL del server remoto, ad esempio **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Per pubblicare una soluzione di SharePoint a un server locale, nelle **Publish** finestra di dialogo scegliere la **pubblicare nel File System** pulsante di opzione, specificare un percorso di sistema locale.
 

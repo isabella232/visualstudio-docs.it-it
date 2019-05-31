@@ -46,7 +46,7 @@ ms.locfileid: "62993500"
 
 10. Reimpostare l'istanza sperimentale di Visual Studio.
 
-    1. Eliminare **\Users\\**_{nome}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Eliminare **\Users\\** _{nome}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
     2. Nella finestra di Windows **avviare** menu, scegliere **tutti i programmi** > **Microsoft Visual Studio 2010 SDK** > **strumenti**  >  **Reimpostare l'istanza sperimentale**.
 

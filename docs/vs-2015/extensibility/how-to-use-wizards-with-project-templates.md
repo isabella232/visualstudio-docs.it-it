@@ -33,7 +33,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Creazione di un progetto di modello di progetto con un progetto VSIX  
  Iniziare a creare un modello personalizzato con il modello di progetto project., che fa parte di Visual Studio SDK. In questa procedura si userà un progetto di modello di progetto c#, ma è inoltre disponibile un progetto di modello di progetto Visual Basic. Quindi si aggiunge un progetto VSIX per la soluzione che contiene il progetto di modello di progetto.  
   
-1. Creare un progetto di modello di progetto c# (in Visual Studio **File / nuovo / progetto / Visual c# / Extensibility / modello di progetto c#**). Denominarlo **MyProjectTemplate**.  
+1. Creare un progetto di modello di progetto c# (in Visual Studio **File / nuovo / progetto / Visual c# / Extensibility / modello di progetto c#** ). Denominarlo **MyProjectTemplate**.  
   
     > [!NOTE]
     > Potrebbe essere necessario installare Visual Studio SDK. Per altre informazioni, vedere [installazione di Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -207,7 +207,7 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
 1. Firmare l'assembly. Nel **Esplora soluzioni**, selezionare il progetto VSIX, pulsante destro del mouse e selezionare **proprietà progetto**.  
   
-2. Nel **le proprietà del progetto** finestra, seleziona la **Signing** scheda. nel **firma** scheda **firmare l'assembly**. Nel **Scegli un file chiave con nome sicuro** campi, selezionare  **\<New >**. Nel **Crea chiave con nome sicuro** finestra, nelle **nome file di chiave** digitare **snk**. Deselezionare i **Proteggi file di chiave con una password** campo.  
+2. Nel **le proprietà del progetto** finestra, seleziona la **Signing** scheda. nel **firma** scheda **firmare l'assembly**. Nel **Scegli un file chiave con nome sicuro** campi, selezionare  **\<New >** . Nel **Crea chiave con nome sicuro** finestra, nelle **nome file di chiave** digitare **snk**. Deselezionare i **Proteggi file di chiave con una password** campo.  
   
 3. Nel **Esplora soluzioni**, selezionare il progetto VSIX e trovare il **proprietà** finestra.  
   
@@ -215,9 +215,9 @@ In Visual Studio è disponibile l'interfaccia <xref:Microsoft.VisualStudio.Templ
   
 5. Ricompilare la soluzione.  
   
-6. È ora possibile trovare il file Key. snk nella directory del progetto MyProjectWizard (**\<il percorso del disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copiare il file snk.  
+6. È ora possibile trovare il file Key. snk nella directory del progetto MyProjectWizard ( **\<il percorso del disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copiare il file snk.  
   
-7. Passare alla directory di output e trovare l'assembly (**\<il percorso del disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Incollare il file snk qui. (Questo non è assolutamente necessario, ma per facilitare la procedura seguente).  
+7. Passare alla directory di output e trovare l'assembly ( **\<il percorso del disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Incollare il file snk qui. (Questo non è assolutamente necessario, ma per facilitare la procedura seguente).  
   
 8. Aprire una finestra di comando e passare alla directory in cui è stato creato l'assembly.  
   

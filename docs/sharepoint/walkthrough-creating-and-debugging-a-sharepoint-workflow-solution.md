@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione e debug di una soluzione del flusso di lavoro di SharePoint | Microsoft Docs'
+title: Crea & eseguire il debug della soluzione del flusso di lavoro di SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430357"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401051"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procedura dettagliata: Creare ed eseguire il debug di una soluzione del flusso di lavoro di SharePoint
   Questa procedura dettagliata viene illustrato come creare un modello di base del flusso di lavoro sequenziale. Il flusso di lavoro controlla una proprietà di una raccolta documenti condivisa per determinare se un documento è stato rivisto. Se il documento è stato rivisto, il flusso di lavoro termina.

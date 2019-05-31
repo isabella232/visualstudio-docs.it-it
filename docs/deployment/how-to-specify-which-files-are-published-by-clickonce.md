@@ -29,15 +29,15 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 
  I file da un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dell'applicazione vengono gestiti nel **i file dell'applicazione** finestra di dialogo, accessibile dal **pubblica** pagina del **Progettazione progetti**.
 
- Inizialmente, è presente un gruppo singolo file denominato **(obbligatorio)**. È possibile creare gruppi di file aggiuntivi e assegnare loro i file. Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione. Ad esempio, .exe o i file dell'applicazione contrassegnata come file di dati devono appartenere al **(obbligatorio)** gruppo.
+ Inizialmente, è presente un gruppo singolo file denominato **(obbligatorio)** . È possibile creare gruppi di file aggiuntivi e assegnare loro i file. Non è possibile modificare il **gruppo di Download** per i file necessari per l'esecuzione dell'applicazione. Ad esempio, .exe o i file dell'applicazione contrassegnata come file di dati devono appartenere al **(obbligatorio)** gruppo.
 
- Lo stato della pubblicazione predefinita pari a un file viene contrassegnato con **(Auto)**. Ad esempio, .exe dell'applicazione ha lo stato di pubblicazione **Includi (Auto)** per impostazione predefinita.
+ Lo stato della pubblicazione predefinita pari a un file viene contrassegnato con **(Auto)** . Ad esempio, .exe dell'applicazione ha lo stato di pubblicazione **Includi (Auto)** per impostazione predefinita.
 
  I file con il **Build Action** impostata su **contenuto** sono designati come file dell'applicazione e verrà contrassegnato come incluso per impostazione predefinita. Possono essere inclusi, escluse o contrassegnati come file di dati. Le eccezioni sono i seguenti:
 
 - I file di dati, ad esempio Database SQL (*mdf* e *mdb*) file XML e i file verranno contrassegnati come file di dati per impostazione predefinita.
 
-- I riferimenti agli assembly (*DLL* file) vengono designati come indicato di seguito quando si aggiunge il riferimento: Se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come assembly prerequisiti (**prerequisito (Auto)**) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)**) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo (come un *ocx* file) solo se relativo **Isolated** è impostata su **True**. Per impostazione predefinita, verrà incluso.
+- I riferimenti agli assembly (*DLL* file) vengono designati come indicato di seguito quando si aggiunge il riferimento: Se **Copia localmente** viene **False**, è contrassegnata per impostazione predefinita come assembly prerequisiti (**prerequisito (Auto)** ) che deve essere presente nella Global Assembly Cache prima di installare l'applicazione. Se **Copia localmente** viene **True**, l'assembly è contrassegnato per impostazione predefinita come un assembly dell'applicazione (**Includi (Auto)** ) e verrà copiato nella cartella dell'applicazione al momento dell'installazione. Un riferimento COM verrà visualizzato nei **i file dell'applicazione** finestra di dialogo (come un *ocx* file) solo se relativo **Isolated** è impostata su **True**. Per impostazione predefinita, verrà incluso.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Per aggiungere file alla finestra di dialogo file applicazione
 

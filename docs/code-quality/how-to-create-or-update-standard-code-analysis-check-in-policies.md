@@ -61,7 +61,7 @@ Dal **eseguire questo set di regole** elencare, usare uno dei metodi seguenti:
 
 - Selezionare un set di regole standard Microsoft.
 
-- Selezionare una regola personalizzata impostata facendo  **\<seleziona Set di regole dal controllo del codice sorgente... >**. Quindi, digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:
+- Selezionare una regola personalizzata impostata facendo  **\<seleziona Set di regole dal controllo del codice sorgente... >** . Quindi, digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

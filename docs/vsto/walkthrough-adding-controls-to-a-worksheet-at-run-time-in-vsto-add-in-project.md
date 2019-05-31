@@ -60,7 +60,7 @@ ms.locfileid: "62982112"
 
 1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (finestra di progettazione visiva)**, quindi fare clic su **Add**.
+2. Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (finestra di progettazione visiva)** , quindi fare clic su **Add**.
 
      Un file denominato **Ribbon1.cs** oppure **Ribbon1.vb** si apre nella finestra di progettazione della barra multifunzione e visualizza una scheda predefinita e un gruppo.
 

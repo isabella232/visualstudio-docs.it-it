@@ -372,7 +372,7 @@ context.LogError(... , usecase);
   
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto VSIX.  
   
-    2. Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
+    2. Individuare il file **bin\\\*\\** _YourProject_**VSIX**  
   
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   

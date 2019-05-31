@@ -157,7 +157,7 @@ ms.locfileid: "65674226"
   
     1. Scegliere **Proprietà**, quindi **Elementi di lavoro** in cui viene visualizzato il numero di elementi di lavoro collegati.  
   
-    2. Nella proprietà **Elementi di lavoro** scegliere il pulsante con i puntini di sospensione **[…]**.  
+    2. Nella proprietà **Elementi di lavoro** scegliere il pulsante con i puntini di sospensione **[…]** .  
   
         > [!NOTE]
         > Vengono visualizzati solo gli elementi di lavoro sul server corrente. Se l'elenco è vuoto, ma il numero di elementi di lavoro è diverso da zero, assicurarsi di essere connessi al server corretto in **Team Explorer**.  

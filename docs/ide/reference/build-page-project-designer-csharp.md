@@ -95,7 +95,7 @@ Usando configurazioni di compilazione semplificate, il sistema del progetto dete
 
 **Genera assembly di serializzazione** Specifica se il compilatore userà lo strumento per la generazione di serializzatori XML (Sgen.exe) per creare assembly di serializzazione XML. Gli assembly di serializzazione possono migliorare le prestazioni di avvio della classe <xref:System.Xml.Serialization.XmlSerializer>, se è stata usata per serializzare i tipi nel codice. Per impostazione predefinita, questa opzione è impostata su **Auto**. Specifica quindi che saranno generati assembly di serializzazione solo se è stata usata la classe <xref:System.Xml.Serialization.XmlSerializer> per codificare i tipi nel codice in XML. **Off** specifica che non saranno mai generati assembly di serializzazione, indipendentemente dal fatto che il codice usi o meno la classe <xref:System.Xml.Serialization.XmlSerializer>. **On** specifica che saranno sempre generati assembly di serializzazione. Gli assembly di serializzazione sono denominati `TypeName`.XmlSerializers.dll. Per altre informazioni, vedere [Strumento per la generazione di serializzatori XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-[Avanzate](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) Selezionare il collegamento per informazioni sulla finestra di dialogo **Impostazioni di compilazione avanzate (C#)**.
+[Avanzate](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) Selezionare il collegamento per informazioni sulla finestra di dialogo **Impostazioni di compilazione avanzate (C#)** .
 
 ## <a name="see-also"></a>Vedere anche
 

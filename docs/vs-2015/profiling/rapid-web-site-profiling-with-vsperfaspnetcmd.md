@@ -61,14 +61,14 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
  È inoltre possibile usare l'opzione **/Trace** per includere informazioni di intervallo dettagliate con i dati di memoria .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Per raccogliere dati di interazione tra livelli  
   
 > [!WARNING]
 > I dati di profilatura dell'interazione tra livelli (TIP) possono essere raccolti utilizzando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. ma possono essere visualizzati solo in [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione (**/trace**).  
+> Per raccogliere dati TIP in Windows 8 o Windows Server 2012, è necessario usare l'opzione di strumentazione ( **/trace**).  
   
  Per raccogliere dati di interazione tra livelli con dati di campionamento:  
   
@@ -80,14 +80,14 @@ Lo strumento da riga di comando **VSPerfASPNETCmd** consente di eseguire facilme
   
  Per raccogliere dati di interazione tra livelli con dati di memoria .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Uso dell'opzione /NoWait  
  Per impostazione predefinita, il prompt dei comandi non restituisce il controllo dopo un comando **vsperfaspnetcmd**. È possibile usare l'opzione della sintassi seguente per imporre il ripristino del prompt dei comandi. È quindi possibile eseguire altre operazioni nella finestra del prompt dei comandi. Per terminare la profilatura, usare l'opzione **/shutdown** in un comando **vsperfaspnetcmd** distinto.  
   
  Per iniziare la profilatura:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  Per terminare la profilatura:  
   

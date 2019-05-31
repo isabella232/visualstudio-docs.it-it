@@ -46,7 +46,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 - Come le finestre affrontano il ridimensionamento tramite il raggruppamento, lo zoom e altre funzionalità correlate.
 
 ## <a name="prerequisites"></a>Prerequisiti
- Questa procedura dettagliata si presuppone che **Just My Code** è abilitata (è abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio). Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
+ Questa procedura dettagliata si presuppone che **Just My Code** è abilitata (è abilitata per impostazione predefinita nelle versioni più recenti di Visual Studio). Nel menu **Strumenti** fare clic su **Opzioni**, espandere il nodo **Debug**, selezionare **Generale**, quindi **Abilita Just My Code (solo gestito)** . Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
 
 ## <a name="c-sample"></a>Esempio in C#
  Se si utilizza l'esempio in C#, la procedura dettagliata presuppone inoltre che il codice esterno sia nascosto. Per attivare o disattivare la visualizzazione del codice esterno, fare clic con il pulsante destro del mouse sull'intestazione della tabella **Nome** nella finestra **Stack di chiamate**, quindi selezionare o deselezionare **Mostra codice esterno**. Se non si imposta questa funzionalità, si può comunque utilizzare la procedura dettagliata, ma è possibile che i risultati differiscano dalle illustrazioni.
@@ -65,7 +65,7 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +** ), scegliere **modelli**e quindi:
 
     - Per C# o Visual Basic, scegli **Crea nuovo progetto App Console (.NET Framework)** entrambi C# o Visual Basic. Nella finestra di dialogo visualizzata scegliere **Crea**.
     - Per C++, scegliere **Crea nuovo progetto App Console** per C++. Nella finestra di dialogo visualizzata scegliere **Crea**.
@@ -75,14 +75,14 @@ In questa procedura dettagliata viene illustrato come usare le finestre **Attivi
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** dialogo finestra, scegliere le opzioni seguenti:
 
-    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
-    - Per un'app Visual Basic, sotto **Visual Basic**, scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
+    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)** .
+    - Per un'app Visual Basic, sotto **Visual Basic**, scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)** .
     - Per un C++ app, sotto **Visual C++** , scegliere **Desktop di Windows**, quindi scegliere **applicazione Console di Windows**.
 
     Quindi, digitare un nome o utilizzare quello predefinito e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** , aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
 1. Aprire il file di codice con estensione CPP, CS o VB nel progetto. Eliminarne il contenuto per creare un file di codice vuoto.
 

@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice"
+title: Consentire l'esecuzione dietro docs con autorizzazioni limitate codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445337"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402252"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedura: Consentire l'esecuzione dietro i documenti con autorizzazioni limitate codice
   È possibile usare la funzionalità Information Rights Management (IRM) di Microsoft Office per limitare le autorizzazioni a un documento o cartella di lavoro. Per impostazione predefinita, il codice dietro a un documento con limitazioni di Microsoft Office Word o una cartella di lavoro di Microsoft Office Excel non è consentito per l'esecuzione. È possibile modificare l'impostazione predefinita, in modo che le estensioni di codice gestito possono accedere il modello a oggetti e la soluzione funzionerà.

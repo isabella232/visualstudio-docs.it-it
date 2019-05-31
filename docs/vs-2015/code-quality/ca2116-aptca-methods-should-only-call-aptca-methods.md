@@ -71,7 +71,7 @@ ms.locfileid: "65687353"
 
  Questo esempio produce il seguente output:
 
- **La richiesta di attendibilità completa: richiesta non è riuscita.**
+ **La richiesta di attendibilità completa: richiesta non è riuscita.** 
 **ClassRequiringFullTrust.DoWork è stato chiamato.**
 ## <a name="related-rules"></a>Regole correlate
  [CA2117: I tipi APTCA devono estendere solo tipi di base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)

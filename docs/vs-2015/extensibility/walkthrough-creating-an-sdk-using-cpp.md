@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60110037"
@@ -33,7 +33,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
 1. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2. Nell'elenco dei modelli, espandere **Visual C++**, **Windows Store**, quindi selezionare il **DLL (applicazioni Windows Store)** modello. Nel **nome** , specificare `NativeMath`, quindi scegliere il **OK** pulsante.  
+2. Nell'elenco dei modelli, espandere **Visual C++** , **Windows Store**, quindi selezionare il **DLL (applicazioni Windows Store)** modello. Nel **nome** , specificare `NativeMath`, quindi scegliere il **OK** pulsante.  
   
 3. Aggiornare NativeMath.h affinché corrisponda al codice seguente.  
   
@@ -43,9 +43,9 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
      [!code-cpp[CreatingAnSDKUsingCpp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp#2)]  
   
-5. In **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'**, quindi scegliere **Add**, **nuovo progetto**.  
+5. In **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'** , quindi scegliere **Add**, **nuovo progetto**.  
   
-6. Nell'elenco dei modelli, espandere **Visual C++**, quindi selezionare la **componente di Windows Runtime** modello. Nel **nome** , specificare `NativeMathWRT`, quindi scegliere il **OK** pulsante.  
+6. Nell'elenco dei modelli, espandere **Visual C++** , quindi selezionare la **componente di Windows Runtime** modello. Nel **nome** , specificare `NativeMathWRT`, quindi scegliere il **OK** pulsante.  
   
 7. Aggiornare file Class1.h in modo che corrisponda a questo codice:  
   
@@ -59,9 +59,9 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
 ## <a name="createVSIX"></a> Per creare il progetto di estensione NativeMathVSIX  
   
-1. In **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'**, quindi scegliere **Add**, **nuovo progetto**.  
+1. In **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'** , quindi scegliere **Add**, **nuovo progetto**.  
   
-2. Nell'elenco dei modelli, espandere **Visual c#**, **Extensibility**, quindi selezionare **pacchetto VSIX**. Nel **nome** , specificare **NativeMathVSIX**, quindi scegliere il **OK** pulsante.  
+2. Nell'elenco dei modelli, espandere **Visual c#** , **Extensibility**, quindi selezionare **pacchetto VSIX**. Nel **nome** , specificare **NativeMathVSIX**, quindi scegliere il **OK** pulsante.  
   
 3. Quando viene visualizzata la finestra di progettazione del manifesto VSIX, chiuderla.  
   
@@ -73,7 +73,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
 6. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NativeMathVSIX** del progetto e quindi scegliere **Add**, **nuovo elemento**.  
   
-7. Nell'elenco degli **elementi di Visual c#**, espandere **dati**, quindi selezionare **File XML**. Nel **nome** , specificare `SDKManifest.xml`, quindi scegliere il **OK** pulsante.  
+7. Nell'elenco degli **elementi di Visual c#** , espandere **dati**, quindi selezionare **File XML**. Nel **nome** , specificare `SDKManifest.xml`, quindi scegliere il **OK** pulsante.  
   
 8. Usare questo codice XML per sostituire il contenuto del file:  
   
@@ -97,7 +97,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
                 \Neutral  
     ```  
   
-10. Nella **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'**, quindi scegliere **Apri cartella in Esplora File**.  
+10. Nella **Esplora soluzioni**, aprire il menu di scelta rapida **soluzione 'NativeMath'** , quindi scegliere **Apri cartella in Esplora File**.  
   
 11. Nella **Esplora File**, copiare \NativeMath\NativeMath.h e quindi in **Esplora soluzioni**, nel **NativeMathVSIX** del progetto, lo incollo il \DesignTime\ Cartella CommonConfiguration\Neutral\Include\.  
   
@@ -145,7 +145,7 @@ Questa procedura dettagliata illustra come creare una libreria C++ nativa math S
   
 1. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2. Nell'elenco dei modelli, espandere **Visual C++**, **Windows Store**, quindi selezionare **applicazione vuota**. Nel **nome** , specificare **NativeMathSDKSample**, quindi scegliere il **OK** pulsante.  
+2. Nell'elenco dei modelli, espandere **Visual C++** , **Windows Store**, quindi selezionare **applicazione vuota**. Nel **nome** , specificare **NativeMathSDKSample**, quindi scegliere il **OK** pulsante.  
   
 3. Nelle **Esplora soluzioni**, aprire il menu di scelta rapida per il **NativeMathSDKSample** del progetto e quindi scegliere **Add**, **riferimento**.  
   

@@ -62,7 +62,7 @@ Per creare una nuova regola personalizzata impostata, è necessario salvarlo con
 
 - Per comprimere le regole in tutti i gruppi, scegliere **Comprimi tutto**.
 
-- Per modificare il campo che le regole vengono raggruppate, scegliere il campo dal **Group By** elenco. Per visualizzare le regole separate, scegli  **\<None >**.
+- Per modificare il campo che le regole vengono raggruppate, scegliere il campo dal **Group By** elenco. Per visualizzare le regole separate, scegli  **\<None >** .
 
 - Per aggiungere o rimuovere i campi nelle colonne della regola, scegliere **opzioni di colonna**.
 

@@ -48,7 +48,7 @@ Un modulo di Windows è una delle applicazioni gestite più comuni. Un modulo di
 
      Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-2. Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#**, o **Visual C++** nodo, quindi
+2. Nel riquadro di tipi di progetto, aprire il **Visual Basic**, **Visual c#** , o **Visual C++** nodo, quindi
 
     1. Per Visual Basic o Visual c#, selezionare **Desktop di Windows** > **App di Windows Form**.
 

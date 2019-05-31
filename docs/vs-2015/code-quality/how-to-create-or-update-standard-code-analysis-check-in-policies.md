@@ -66,7 +66,7 @@ ms.locfileid: "63436855"
   
     - Selezionare un set di regole standard Microsoft.  
   
-    - Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >**, quindi digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:  
+    - Per selezionare un set di regole personalizzato, fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente... >** , quindi digitare il percorso controllo della versione della regola impostata nel browser di controllo di origine. La sintassi di un percorso controllo della versione è:  
   
     - **$/** `TeamProjectName` **/** `VersionControlPath`  
   

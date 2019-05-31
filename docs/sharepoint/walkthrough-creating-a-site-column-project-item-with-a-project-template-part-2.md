@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un elemento di progetto colonna del sito con un modello di progetto, parte 2 | Microsoft Docs'
+title: Crea elemento di progetto colonna del sito con modello di progetto, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436714"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401109"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto colonna del sito con un modello di progetto, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di progetto in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per creare un nuovo progetto che contiene l'elemento del progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.
@@ -368,7 +368,7 @@ ms.locfileid: "63436714"
 
 2. Nel **Signing** scheda, seleziona la **firmare l'assembly** casella di controllo.
 
-3. Nel **Scegli un file chiave con nome sicuro** casella di riepilogo  **\<nuovo... >**.
+3. Nel **Scegli un file chiave con nome sicuro** casella di riepilogo  **\<nuovo... >** .
 
 4. Nel **Crea chiave con nome sicuro** finestra di dialogo immettere un nome per il nuovo file di chiave, deselezionare le **Proteggi file di chiave con una password** casella di controllo e quindi scegliere il **OK** pulsante.
 

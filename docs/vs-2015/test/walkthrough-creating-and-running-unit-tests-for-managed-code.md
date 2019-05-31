@@ -64,7 +64,7 @@ Questa procedura dettagliata illustra come creare, eseguire e personalizzare una
   
     Verrà visualizzata la finestra di dialogo **Nuovo progetto** .  
   
-3. In **Modelli installati**fare clic su **Visual C#**.  
+3. In **Modelli installati**fare clic su **Visual C#** .  
   
 4. Nell'elenco di tipi di applicazione fare clic su **Libreria di classi**.  
   
@@ -114,7 +114,7 @@ public void Debit(double amount)
   
 1. Scegliere **Aggiungi** dal menu **File**, quindi **Nuovo progetto**.  
   
-2. Nella finestra di dialogo Nuovo progetto espandere **Installato**, **Visual C#**, quindi scegliere **Test**.  
+2. Nella finestra di dialogo Nuovo progetto espandere **Installato**, **Visual C#** , quindi scegliere **Test**.  
   
 3. Nell'elenco dei modelli selezionare **Progetto unit test**.  
   

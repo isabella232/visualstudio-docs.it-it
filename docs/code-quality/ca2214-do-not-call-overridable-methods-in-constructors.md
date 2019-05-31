@@ -1,6 +1,6 @@
 ---
 title: 'CA2214: Non chiamare metodi sottoponibili a override nei costruttori'
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796705"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401318"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Non chiamare metodi sottoponibili a override nei costruttori
 
@@ -41,6 +41,9 @@ Il costruttore di un tipo unsealed chiama un metodo virtuale definito nella rela
 
 Quando viene chiamato un metodo virtuale, il tipo effettivo che esegue il metodo non è selezionato fino alla fase di esecuzione. Quando un costruttore chiama un metodo virtuale, è possibile che il costruttore per l'istanza che richiama il metodo non è stata eseguita.
 
+> [!NOTE]
+> L'implementazione di analisi binaria di questa regola presenta un messaggio di diagnostica diverso di " **\[nome costruttore] contiene una catena di chiamate che comporta una chiamata a un metodo virtuale definito dalla classe. Esaminare lo stack di chiamate seguente per conseguenze impreviste**". Il [analizzatori FxCop](install-fxcop-analyzers.md) implementazione di questa regola presenta un messaggio di diagnostica di "**non chiamare metodi sottoponibili a override nei costruttori**".
+
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 
 Per correggere una violazione di questa regola, non chiamare metodi virtuali del tipo dall'interno di costruttori del tipo.
@@ -51,7 +54,7 @@ Non escludere un avviso da questa regola. Il costruttore deve essere riprogettat
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente illustra l'effetto della violazione di questa regola. L'applicazione di test viene creata un'istanza di `DerivedType`, in modo che la classe di base (`BadlyConstructedType`) costruttore per l'esecuzione. `BadlyConstructedType`del costruttore chiama in modo non corretto del metodo virtuale `DoSomething`. Come illustrato nell'output, `DerivedType.DoSomething()` viene eseguito prima del `DerivedType`dell'esecuzione del costruttore.
+L'esempio seguente illustra l'effetto della violazione di questa regola. L'applicazione di test viene creata un'istanza di `DerivedType`, in modo che la classe di base (`BadlyConstructedType`) costruttore per l'esecuzione. `BadlyConstructedType`del costruttore chiama in modo non corretto del metodo virtuale `DoSomething`. Come illustrato nell'output, `DerivedType.DoSomething()` vengono eseguiti prima `DerivedType`dell'esecuzione del costruttore.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

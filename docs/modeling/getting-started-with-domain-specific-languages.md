@@ -291,7 +291,7 @@ Rinominare le classi di dominio esistenti e le relazioni. Ad esempio, a partire 
 
          Una nuova classe di dominio viene visualizzato, che è connessa la FamilyTreeModel con una relazione di incorporamento.
 
-         Impostare il relativo nome, ad esempio **Town (città)**.
+         Impostare il relativo nome, ad esempio **Town (città)** .
 
         > [!NOTE]
         > Ogni classe di dominio, tranne la radice del modello deve essere la destinazione di almeno una relazione di incorporamento, o deve ereditare da una classe che rappresenta la destinazione dell'incorporamento. Per questo motivo, è spesso utile creare una classe di dominio usando lo strumento di relazione di incorporamento.

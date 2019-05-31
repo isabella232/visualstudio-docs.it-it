@@ -11,7 +11,7 @@ ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60068639"
@@ -63,7 +63,7 @@ Nelle [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShor
   
 - Per comprimere le regole in tutti i gruppi, scegliere **Comprimi tutto**.  
   
-- Per modificare il campo che le regole vengono raggruppate, scegliere il campo dal **Group By** elenco. Per visualizzare le regole separate, scegli  **\<None >**.  
+- Per modificare il campo che le regole vengono raggruppate, scegliere il campo dal **Group By** elenco. Per visualizzare le regole separate, scegli  **\<None >** .  
   
 - Per aggiungere o rimuovere i campi nelle colonne della regola, scegliere **opzioni di colonna**.  
   

@@ -37,7 +37,7 @@ Creare il progetto di app con multithreading seguenti da usare in questa esercit
 1. Aprire Visual Studio e creare un nuovo progetto.
 
     ::: moniker range=">=vs-2019"
-    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +**), scegliere **modelli**e quindi:
+    Premere **ESC** per chiudere la finestra iniziale. Tipo di **Ctrl + Q** per aprire la casella di ricerca, digitare **console** (o **c + +** ), scegliere **modelli**e quindi:
 
     - Per C#, scegliere **Crea nuovo progetto App Console (.NET Framework)** per C#. Nella finestra di dialogo visualizzata scegliere **Crea**.
     - Per C++, scegliere **Crea nuovo progetto App Console**. Nella finestra di dialogo visualizzata scegliere **Crea**.
@@ -46,13 +46,13 @@ Creare il progetto di app con multithreading seguenti da usare in questa esercit
     ::: moniker-end
     ::: moniker range="vs-2017"
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di **nuovo progetto** dialogo finestra, scegliere le opzioni seguenti:
-    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)**.
+    - Per un C# app, sotto **Visual C#** , scegliere **Windows Desktop**, quindi nel riquadro centrale scegliere **App Console (.NET Framework)** .
     - Per un C++ app, sotto **Visual C++** , scegliere **Desktop di Windows**, quindi scegliere **applicazione Console di Windows**.
 
     Quindi, digitare un nome simile **MyThreadWalkthroughApp** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** , aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET** o **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
     Verrà visualizzato il nuovo progetto **Esplora soluzioni**, e un file di origine denominata *Program.cs* oppure *MyThreadWalkthroughApp. cpp* viene aperto nella finestra del codice sorgente.
 

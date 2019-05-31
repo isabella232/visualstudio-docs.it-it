@@ -101,7 +101,7 @@ Per impostazione predefinita, lo strumento per il code coverage di Visual Studio
 ### <a name="regular-expressions"></a>Espressioni regolari  
  Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:  
   
-1. **\.\\*** corrisponde a una stringa composta da caratteri qualsiasi  
+1. **\.\\** * corrisponde a una stringa composta da caratteri qualsiasi  
   
 2. **\\.** corrisponde a un punto "."  
   

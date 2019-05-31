@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Creare un controllo utente per una pagina di applicazione di SharePoint Web Part o | Microsoft Docs'
+title: Creare il controllo utente per app pagina o web part di SharePoint di
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446503"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401484"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedura: Creare un controllo utente per una parte di pagina o web dell'applicazione SharePoint
   È possibile creare controlli utente personalizzati che forniscono funzionalità personalizzate per la soluzione SharePoint in uso, nonché riutilizzare le funzionalità in questione all'interno del progetto. È possibile includere i controlli utente in una web part o in una pagina applicazione, aggiungere altri controlli ASP.NET e di SharePoint e definire proprietà e metodi per il controllo. Per altre informazioni sui controlli utente, vedere [creare controlli utente riutilizzabili per web part o pagine applicazione](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) e [controlli utente e controlli Server in SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446503"
 
 4. Nel **Installed** riquadro, scegliere il **Office/SharePoint** nodo.
 
-5. Nell'elenco dei modelli di SharePoint, scegliere **controllo utente (solo soluzione Farm)**.
+5. Nell'elenco dei modelli di SharePoint, scegliere **controllo utente (solo soluzione Farm)** .
 
     > [!NOTE]
     > I controlli utente possono essere utilizzati solo nelle soluzioni farm.

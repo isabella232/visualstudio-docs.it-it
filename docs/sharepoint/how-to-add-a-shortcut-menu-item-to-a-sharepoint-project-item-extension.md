@@ -1,5 +1,5 @@
 ---
-title: "Procedura: Aggiungere una voce di Menu di scelta rapida per un'estensione di elemento di progetto SharePoint | Microsoft Docs"
+title: Aggiungi voce di menu di scelta rapida per l'estensione di elemento di progetto SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8041f9cbf19d1e1324478b92d2655f1377102b81
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967155"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401632"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Procedura: Aggiungere una voce di menu di scelta rapida per un'estensione di elemento di progetto SharePoint
   È possibile aggiungere una voce di menu di scelta rapida a un elemento di progetto SharePoint esistente usando un'estensione di elemento di progetto. La voce di menu viene visualizzato quando l'utente fa clic l'elemento del progetto in **Esplora soluzioni**.

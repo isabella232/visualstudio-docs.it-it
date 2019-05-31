@@ -33,13 +33,13 @@ Per informazioni su come configurare una set di regole per le applicazioni web A
 
 1. Aprire il **analisi del codice** scheda nelle pagine delle proprietà del progetto. È possibile eseguire questa operazione in uno dei modi seguenti:
 
-   - Nelle **Esplora soluzioni**, selezionare il progetto. Nella barra dei menu, selezionare **Analyze** > **Configura analisi codice** > **per \<NomeProgetto >**.
+   - Nelle **Esplora soluzioni**, selezionare il progetto. Nella barra dei menu, selezionare **Analyze** > **Configura analisi codice** > **per \<NomeProgetto >** .
 
    - Fare clic sul progetto in **Esplora soluzioni** e selezionare **delle proprietà**e quindi selezionare il **analisi del codice** scheda.
 
 1. Nel **Configuration** e **piattaforma** elenchi, selezionare la piattaforma di destinazione e configurazione di compilazione.
 
-1. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice selezionando **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<NomeProgetto >**.
+1. Per eseguire l'analisi del codice ogni volta che il progetto viene compilato con la configurazione selezionata, selezionare la **Abilita analisi codice su compilazione** casella di controllo. È anche possibile eseguire manualmente l'analisi del codice selezionando **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<NomeProgetto >** .
 
 1. Per impostazione predefinita, l'analisi del codice non segnala gli avvisi del codice generato automaticamente da strumenti esterni. Per visualizzare gli avvisi del codice generato, deselezionare il **non visualizzare i risultati dal codice generato** casella di controllo.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato | Microsoft Docs'
+title: Aggiungere proprietà al tipo di elemento di progetto SharePoint personalizzato
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e9695755967aa1b66aa7cda2d784ae88b0fc1b42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d44f4d5995be8bacc447ea3f915663a309bee77
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967292"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401656"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>Procedura: Aggiungere una proprietà a un tipo di elemento di progetto SharePoint personalizzato
   Quando si definisce un tipo di elemento di progetto SharePoint personalizzato, è possibile aggiungere una proprietà all'elemento del progetto. La proprietà viene visualizzata nel **delle proprietà** finestra quando l'elemento del progetto viene selezionato in **Esplora soluzioni**.

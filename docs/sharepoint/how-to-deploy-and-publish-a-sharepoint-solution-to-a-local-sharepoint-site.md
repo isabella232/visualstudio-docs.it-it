@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale | Microsoft Docs'
+title: Distribuire e pubblicare soluzioni di SharePoint al sito di SharePoint locale
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3e68fc4e49311535169ab37a2332b443ba632fb5
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813972"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401457"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procedura: Distribuire e pubblicare una soluzione di SharePoint in un sito di SharePoint locale
   È possibile distribuire o pubblicare soluzioni SharePoint in un server SharePoint locale nel computer di sviluppo. Le copie di processo di distribuzione di *wsp* file nel server SharePoint, installa la soluzione e quindi attiva le funzionalità. La pubblicazione di elaborare solo copie il *wsp* file nel server SharePoint e lo installa. È necessario attivare manualmente per abilitarlo in SharePoint.

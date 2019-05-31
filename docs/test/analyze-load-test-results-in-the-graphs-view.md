@@ -52,7 +52,7 @@ Nella tabella seguente sono riportati i grafici incorporati disponibili per l'an
 > [!NOTE]
 > Solo i contatori di prestazioni relativi ai tempi di risposta possono essere aggiunti in un grafico dei tempi di risposta generato automaticamente.
 
- Le informazioni del contatore vengono visualizzate sia nel grafico che nella legenda sotto il grafico.  Inoltre, è possibile ingrandire un'area del grafico. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+ Le informazioni del contatore vengono visualizzate sia nel grafico che nella legenda sotto il grafico. Inoltre, è possibile ingrandire un'area del grafico. Per altre informazioni, vedere [Procedura: Eseguire lo zoom avanti su un'area del grafico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contatori visualizzati nei grafici
 

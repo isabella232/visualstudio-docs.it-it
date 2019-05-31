@@ -72,9 +72,9 @@ ms.locfileid: "65687392"
 
  Questo esempio produce il seguente output:
 
- **Domanda: Negazione del chiamante non ha effetto su richiesta con autorizzazione oggetto dell'asserzione.**
-**LinkDemand: Negazione del chiamante non ha effetto su LinkDemand con autorizzazione oggetto dell'asserzione.**
-**LinkDemand: Negazione del chiamante non ha effetto con il codice protetto da LinkDemand.**
+ **Domanda: Negazione del chiamante non ha effetto su richiesta con autorizzazione oggetto dell'asserzione.** 
+**LinkDemand: Negazione del chiamante non ha effetto su LinkDemand con autorizzazione oggetto dell'asserzione.** 
+**LinkDemand: Negazione del chiamante non ha effetto con il codice protetto da LinkDemand.** 
 **LinkDemand: Questo Nega non ha effetto con il codice protetto da LinkDemand.**
 ## <a name="see-also"></a>Vedere anche
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

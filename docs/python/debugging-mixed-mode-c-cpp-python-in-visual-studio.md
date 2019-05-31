@@ -97,7 +97,7 @@ La finestra **Stack di chiamate** mostra sia gli stack frame nativi che di Pytho
 
 ![Stack di chiamate combinato con debug in modalità mista](media/mixed-mode-debugging-call-stack.png)
 
-Le transizioni vengono visualizzate come **[Codice esterno]**, senza specificare la direzione della transizione, se è impostata l'opzione **Strumenti** > **Opzioni** > **Debug** > **Generale** > **Abilita Just My Code**.
+Le transizioni vengono visualizzate come **[Codice esterno]** , senza specificare la direzione della transizione, se è impostata l'opzione **Strumenti** > **Opzioni** > **Debug** > **Generale** > **Abilita Just My Code**.
 
 È possibile fare doppio clic su qualsiasi frame di chiamata per attivarlo e per aprire il codice sorgente appropriato, se possibile. Se il codice sorgente non è disponibile, il frame viene comunque attivato ed è possibile controllare le variabili locali.
 
@@ -107,7 +107,7 @@ Quando si usano i comandi **Esegui istruzione** (**F11**) o **Esci da istruzione
 
 ### <a name="pyobject-values-view-in-native-code"></a>Visualizzazione di valori PyObject nel codice nativo
 
-Quando è attivo un frame nativo (C o C++), le relative variabili locali vengono visualizzate nella finestra **Variabili locali** del debugger. Nei moduli di estensione Python nativi, molte di queste variabili sono di tipo `PyObject` (ovvero un typedef per `_object`) o di alcuni altri tipi di Python fondamentali (vedere l'elenco riportato di seguito). Nel debug in modalità mista, per questi valori esiste un nodo figlio aggiuntivo denominato **[Visualizzazione Python]**. Quando viene espanso, questo nodo illustra la rappresentazione Python della variabile, identica a quella che si vedrebbe se in un frame Python fosse presente una variabile locale che fa riferimento allo stesso oggetto. Gli elementi figlio di questo nodo sono modificabili.
+Quando è attivo un frame nativo (C o C++), le relative variabili locali vengono visualizzate nella finestra **Variabili locali** del debugger. Nei moduli di estensione Python nativi, molte di queste variabili sono di tipo `PyObject` (ovvero un typedef per `_object`) o di alcuni altri tipi di Python fondamentali (vedere l'elenco riportato di seguito). Nel debug in modalità mista, per questi valori esiste un nodo figlio aggiuntivo denominato **[Visualizzazione Python]** . Quando viene espanso, questo nodo illustra la rappresentazione Python della variabile, identica a quella che si vedrebbe se in un frame Python fosse presente una variabile locale che fa riferimento allo stesso oggetto. Gli elementi figlio di questo nodo sono modificabili.
 
 ![Visualizzazione Python nella finestra Variabili locali](media/mixed-mode-debugging-python-view.png)
 
@@ -115,7 +115,7 @@ Per disabilitare questa funzionalità, fare clic con il pulsante destro del mous
 
 ![Abilitazione della visualizzazione Python nella finestra Variabili locali](media/mixed-mode-debugging-enable-python-view.png)
 
-Tipi C che mostrano i nodi **[Visualizzazione Python]**, se abilitati:
+Tipi C che mostrano i nodi **[Visualizzazione Python]** , se abilitati:
 
 - `PyObject`
 - `PyVarObject`
@@ -140,7 +140,7 @@ Un'opzione alternativa (e migliore) consiste nel seguire la proposta [PEP 3123](
 
 ### <a name="native-values-view-in-python-code"></a>Visualizzazione di valori nativi nel codice Python
 
-In modo simile a quanto descritto nella sezione precedente, è possibile abilitare un nodo **[Visualizzazione C++]** per i valori nativi nella finestra **Variabili locali** quando è attivo un frame Python. Questa funzionalità non è abilitata per impostazione predefinita, quindi per attivarla è necessario fare clic con il pulsante destro del mouse nella finestra **Variabili locali** e attivare l'opzione di menu **Python** > **Mostra nodi di visualizzazione C++**.
+In modo simile a quanto descritto nella sezione precedente, è possibile abilitare un nodo **[Visualizzazione C++]** per i valori nativi nella finestra **Variabili locali** quando è attivo un frame Python. Questa funzionalità non è abilitata per impostazione predefinita, quindi per attivarla è necessario fare clic con il pulsante destro del mouse nella finestra **Variabili locali** e attivare l'opzione di menu **Python** > **Mostra nodi di visualizzazione C++** .
 
 ![Abilitazione della visualizzazione C++ nella finestra Variabili locali](media/mixed-mode-debugging-enable-cpp-view.png)
 
@@ -148,9 +148,9 @@ Il nodo **[Visualizzazione C++]** offre una rappresentazione della struttura C/C
 
 ![Visualizzazione C++ nella finestra Variabili locali](media/mixed-mode-debugging-cpp-view.png)
 
-Se un campo figlio di un oggetto è di tipo `PyObject` o di uno degli altri tipi supportati, ha un nodo per la rappresentazione **[Visualizzazione Python]**, se tali rappresentazioni sono abilitate, in modo che sia possibile esplorare gli oggetti grafici quando i collegamenti non sono esposti direttamente per Python.
+Se un campo figlio di un oggetto è di tipo `PyObject` o di uno degli altri tipi supportati, ha un nodo per la rappresentazione **[Visualizzazione Python]** , se tali rappresentazioni sono abilitate, in modo che sia possibile esplorare gli oggetti grafici quando i collegamenti non sono esposti direttamente per Python.
 
-Diversamente dai nodi **[Visualizzazione Python]** che usano i metadati degli oggetti Python per determinare il tipo dell'oggetto, non esiste un meccanismo affidabile simile per i nodi **[Visualizzazione C++]**. In termini generali, dato un valore Python, ovvero un riferimento a `PyObject`, non è possibile determinare in modo affidabile la struttura C/C++ sottostante. Il debugger in modalità mista tenta di dedurre il tipo esaminando i vari campi del tipo dell'oggetto (ad esempio `PyTypeObject` a cui fa riferimento il campo `ob_type` corrispondente) che hanno tipi di puntatore a funzione. Se uno di questi puntatori a funzione fa riferimento a una funzione che può essere risolta e tale funzione ha un parametro `self` con un tipo più specifico di `PyObject*`, si presuppone che tale tipo sia il tipo sottostante. Ad esempio, se `ob_type->tp_init` di un oggetto specificato fa riferimento alla funzione seguente:
+Diversamente dai nodi **[Visualizzazione Python]** che usano i metadati degli oggetti Python per determinare il tipo dell'oggetto, non esiste un meccanismo affidabile simile per i nodi **[Visualizzazione C++]** . In termini generali, dato un valore Python, ovvero un riferimento a `PyObject`, non è possibile determinare in modo affidabile la struttura C/C++ sottostante. Il debugger in modalità mista tenta di dedurre il tipo esaminando i vari campi del tipo dell'oggetto (ad esempio `PyTypeObject` a cui fa riferimento il campo `ob_type` corrispondente) che hanno tipi di puntatore a funzione. Se uno di questi puntatori a funzione fa riferimento a una funzione che può essere risolta e tale funzione ha un parametro `self` con un tipo più specifico di `PyObject*`, si presuppone che tale tipo sia il tipo sottostante. Ad esempio, se `ob_type->tp_init` di un oggetto specificato fa riferimento alla funzione seguente:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

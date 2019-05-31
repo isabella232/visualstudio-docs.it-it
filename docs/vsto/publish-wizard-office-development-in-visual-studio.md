@@ -39,7 +39,7 @@ ms.locfileid: "63447064"
 
 - Percorso relativo o assoluto nello standard Windows formato, ad esempio *C:\Deploy\MyApplication* oppure *\MyApplication*.
 
-- Un percorso Universal Naming Convention (UNC), ad esempio  *\\\ServerName\MyApplication\\*.
+- Un percorso Universal Naming Convention (UNC), ad esempio  *\\\ServerName\MyApplication\\* .
 
 - Un URL di un sito web del sito, ad esempio http://www.microsoft.com/MyApplication.
 

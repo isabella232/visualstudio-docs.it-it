@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045342"
@@ -62,7 +62,7 @@ Quando si esegue il debug di un progetto nell'IDE di Visual Studio, il debugger 
 
 Inoltre, il debugger cerca i file di simboli nei percorsi seguenti:
 
-1. Il percorso specificato nella DLL o del file eseguibile (*.exe*) file.
+1. Il percorso specificato nella DLL o del file eseguibile ( *.exe*) file.
 
    Per impostazione predefinita, se è stata compilata una DLL o un *.exe* file nel computer, il linker inserisce il percorso completo e il nome dell'oggetto associato *PDB* file nella DLL o *.exe* file. Il debugger verifica se il file di simboli è presente in tale percorso.
 
@@ -177,7 +177,7 @@ Quando si compila un progetto dall'IDE di Visual Studio con lo standard **Debug*
 
   - *VC\<x>.pdb*, dove *\<x>* rappresenta la versione di Visual C++, ad esempio *VC11.pdb*
 
-    Il *VC\<x > PDB* archivia tutte le informazioni di debug per i file oggetto singoli file e si trova nella stessa directory del progetto makefile. Ogni volta che viene creato un file oggetto, il compilatore C/C++ unisce le informazioni di debug in *VC\<x > PDB*. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio  *\<Windows. h >*, i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file oggetto. Queste includono informazioni sui tipi ma non sui simboli, ad esempio sulle definizioni delle funzioni.
+    Il *VC\<x > PDB* archivia tutte le informazioni di debug per i file oggetto singoli file e si trova nella stessa directory del progetto makefile. Ogni volta che viene creato un file oggetto, il compilatore C/C++ unisce le informazioni di debug in *VC\<x > PDB*. Pertanto, anche se ogni file di origine include file di intestazione comuni, ad esempio  *\<Windows. h >* , i typedef di tali intestazioni vengono archiviati una sola volta, anziché in ogni file oggetto. Queste includono informazioni sui tipi ma non sui simboli, ad esempio sulle definizioni delle funzioni.
 
   - *\<project>.pdb*
 
@@ -236,7 +236,7 @@ In questo caso, il debugger visualizza i **Nessun simbolo caricato** oppure **Ne
 **Per usare la pagina del documento Nessun simbolo caricato per trovare e caricare i simboli mancanti:**
 
 - Per modificare il percorso di ricerca, selezionare un percorso non selezionato o selezionare **nuovo percorso** oppure **nuovo percorso VSTS** e immettere o selezionare un nuovo percorso. Selezionare **caricare** per cercare nuovamente i percorsi e caricare il file di simboli se viene trovato.
-- Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **cercare e trovare \<nome eseguibile >**. Il file di simboli viene caricato se viene trovato, o **Esplora File** apre in modo che è possibile selezionare manualmente il file di simboli.
+- Per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca, selezionare **cercare e trovare \<nome eseguibile >** . Il file di simboli viene caricato se viene trovato, o **Esplora File** apre in modo che è possibile selezionare manualmente il file di simboli.
 - Per aprire la **le opzioni** > **debug** > **simboli** selezionare **Cambia impostazioni simboli**.
 - Per visualizzare il disassembly in una nuova finestra una volta, selezionare **visualizzare il disassembly**, o selezionare **finestra di dialogo Opzioni** per impostare l'opzione per visualizzare sempre il disassembly quando i file di origine o di simboli non vengono trovati.
 - Per visualizzare i percorsi di ricerca e il risultato, espandere **informazioni sul caricamento simboli**.

@@ -43,7 +43,7 @@ Questa generazione di codice si applica a:
 
 1. Eseguire quindi una delle operazioni seguenti:
 
-   - Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+   - Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
 
    - Fare clic con il pulsante destro del mouse e scegliere il menu **Azioni rapide e refactoring**.
 

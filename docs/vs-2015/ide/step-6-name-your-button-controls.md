@@ -30,7 +30,7 @@ Nel form esiste un solo controllo PictureBox. Quando è stato aggiunto, l'IDE lo
   
 ### <a name="to-name-your-button-controls"></a>Per assegnare un nome ai pulsanti  
   
-1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere ESC per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)**. La proprietà **(Name)** è disponibile nella parte iniziale quando le proprietà sono ordinate alfabeticamente. Impostare il nome su **closeButton**, come mostrato nell'immagine seguente.  
+1. Nel form scegliere il pulsante **Chiudi** . Se sono ancora selezionati tutti i pulsanti, premere ESC per annullare la selezione. Scorrere nella finestra **Proprietà** fino a quando non viene visualizzata la proprietà **(Name)** . La proprietà **(Name)** è disponibile nella parte iniziale quando le proprietà sono ordinate alfabeticamente. Impostare il nome su **closeButton**, come mostrato nell'immagine seguente.  
   
      ![Finestra Proprietà con il nome closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 Finestra Proprietà con il nome closeButton  

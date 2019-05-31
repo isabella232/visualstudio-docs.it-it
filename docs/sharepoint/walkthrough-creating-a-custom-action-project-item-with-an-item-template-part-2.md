@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un elemento di progetto azione personalizzata con un modello di elemento, parte 2 | Microsoft Docs'
+title: Crea elemento di progetto azione personalizzata con modello di elemento, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430464"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401171"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Procedura dettagliata: Creare un elemento di progetto azione personalizzata con un modello di elemento, parte 2
   Dopo aver definito un tipo di elemento di progetto SharePoint personalizzato e associarlo a un modello di elemento in Visual Studio, potrebbe anche voler fornire una procedura guidata per il modello. È possibile utilizzare la procedura guidata per raccogliere informazioni dagli utenti quando usano il modello per aggiungere una nuova istanza dell'elemento del progetto a un progetto. Le informazioni raccolte sono utilizzabile per inizializzare l'elemento del progetto.
@@ -175,7 +175,7 @@ ms.locfileid: "63430464"
 
 2. Nel **Signing** scheda, seleziona la **firmare l'assembly** casella di controllo.
 
-3. Nel **Scegli un file chiave con nome sicuro** casella di riepilogo  **\<nuovo... >**.
+3. Nel **Scegli un file chiave con nome sicuro** casella di riepilogo  **\<nuovo... >** .
 
 4. Nel **Crea chiave con nome sicuro** finestra di dialogo immettere un nome, deselezionare le **Proteggi file di chiave con una password** casella di controllo e quindi scegliere il **OK** pulsante.
 
@@ -303,7 +303,7 @@ ms.locfileid: "63430464"
 
 13. Nel **Description** casella, immettere **apre il sito Web di SharePoint Developer Center**.
 
-14. Nel **URL** immettere **https://docs.microsoft.com/sharepoint/dev/**, quindi scegliere il **fine** pulsante.
+14. Nel **URL** immettere **https://docs.microsoft.com/sharepoint/dev/** , quindi scegliere il **fine** pulsante.
 
      Visual Studio aggiunge un elemento denominato **CustomAction1** al progetto e apre il *Elements* file nell'editor. Verificare che *Elements* contiene i valori specificati nella procedura guidata.
 

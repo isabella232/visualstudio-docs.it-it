@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di una Web Part Silverlight che visualizza il servizio OData per SharePoint | Microsoft Docs'
+title: Creare web part Silverlight di visualizzazione di OData per SharePoint
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f248ce4403e771d9ab8b6d13fe55fd5ca1c960d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430401"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401136"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procedura dettagliata: Creare una web part Silverlight che visualizza il servizio OData per SharePoint
   SharePoint 2010 espongono i propri dati elenco tramite OData. In SharePoint, il servizio OData viene implementato dal servizio RESTful ListData.svc. Questa procedura dettagliata viene illustrato come creare una web part di SharePoint che ospita un'applicazione Silverlight. L'applicazione Silverlight consente di visualizzare informazioni relative all'elenco SharePoint annuncio usando ListData.svc. Per altre informazioni, vedere [interfaccia REST di SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) e [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
@@ -57,7 +57,7 @@ ms.locfileid: "63430401"
 
 7. Nel **modo in cui si desidera associare la Web Part Silverlight** sezione del **specificare le informazioni di configurazione Silverlight** pagina, scegliere il **crea un nuovo progetto Silverlight e lo si associa la web part** pulsante di opzione.
 
-8. Modifica il **Name** a **SLApplication**, impostare **Language** a una delle due **Visual Basic** o **Visual c#**, e quindi impostare **la versione di Silverlight** al **Silverlight 4.0**.
+8. Modifica il **Name** a **SLApplication**, impostare **Language** a una delle due **Visual Basic** o **Visual c#** , e quindi impostare **la versione di Silverlight** al **Silverlight 4.0**.
 
 9. Scegliere il **fine** pulsante. I progetti vengono visualizzati nella **Esplora soluzioni**.
 
@@ -75,7 +75,7 @@ ms.locfileid: "63430401"
     > [!NOTE]
     > Se si usa Visual Basic, è necessario scegliere il **Mostra tutti i file** nella parte superiore del **Esplora soluzioni** per visualizzare il **riferimenti** nodo.
 
-3. Nella casella dell'indirizzo del **Aggiungi riferimento al servizio** finestra di dialogo casella, immettere l'URL del sito di SharePoint, ad esempio **http://MySPSite**, quindi scegliere il **passare** pulsante.
+3. Nella casella dell'indirizzo del **Aggiungi riferimento al servizio** finestra di dialogo casella, immettere l'URL del sito di SharePoint, ad esempio **http://MySPSite** , quindi scegliere il **passare** pulsante.
 
      Quando Silverlight individua il servizio SharePoint OData ListData.svc, l'indirizzo viene sostituito con l'URL completo del servizio. In questo esempio http://myserver diventa http://myserver/_vti_bin/ListData.svc.
 

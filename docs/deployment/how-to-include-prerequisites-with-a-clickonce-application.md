@@ -31,10 +31,10 @@ Prima di poter distribuire i prerequisiti relativi al software con un'applicazio
 
 3. Nel Blocco Note aprire il file*Package.xml*.
 
-4. Individuare il **Name** elemento contenente **http://go.microsoft.com/fwlink**e copiare l'URL. Includere la parte **LinkID**.
+4. Individuare il **Name** elemento contenente **http://go.microsoft.com/fwlink** e copiare l'URL. Includere la parte **LinkID**.
 
    > [!NOTE]
-   > Se nessun **Name** elemento contiene **http://go.microsoft.com/fwlink**, aprire il **Product** file nella cartella radice del prerequisito e individuare il **fwlink** stringa.
+   > Se nessun **Name** elemento contiene **http://go.microsoft.com/fwlink** , aprire il **Product** file nella cartella radice del prerequisito e individuare il **fwlink** stringa.
 
    > [!IMPORTANT]
    > Alcuni prerequisiti hanno più pacchetti di installazione (ad esempio, per sistemi a 32 bit o a 64 bit). Se più elementi **Nome** contengono **fwlink**, è necessario ripetere i passaggi restanti per ciascuno di essi.

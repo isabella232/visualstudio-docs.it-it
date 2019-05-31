@@ -52,6 +52,6 @@ ms.locfileid: "58964179"
 
  Questo esempio produce il seguente output:
 
- **La chiamata a costruttore base.**
+ **La chiamata a costruttore base.** 
 **DoSomething derivata viene chiamato - inizializzata? No**
 **chiamare il metodo derivato ctor.**

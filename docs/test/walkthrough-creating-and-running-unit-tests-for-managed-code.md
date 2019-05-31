@@ -34,7 +34,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
-3. Nell categoria **Visual C#** > **.NET Core** scegliere il modello di progetto **App console (.NET Core)**.
+3. Nell categoria **Visual C#** > **.NET Core** scegliere il modello di progetto **App console (.NET Core)** .
 
 4. Denominare il progetto **Bank**, quindi fare clic su **OK**.
 
@@ -149,7 +149,7 @@ Questo articolo illustra come creare, eseguire e personalizzare una serie di uni
 
 2. Nella finestra di dialogo **Nuovo progetto** espandere **Installato**, **Visual C#** e quindi scegliere **Test**.
 
-3. Nell'elenco dei modelli selezionare **Progetto di test MSTest (.NET Core)**.
+3. Nell'elenco dei modelli selezionare **Progetto di test MSTest (.NET Core)** .
 
 4. Nella casella **Nome** immettere `BankTests`, quindi scegliere **OK**.
 

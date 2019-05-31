@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: Importare una pagina Master personalizzata e pagina del sito con un'immagine | Microsoft Docs"
+title: Importare la pagina master personalizzata & pagina del sito con immagine
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834387"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400902"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procedura dettagliata: Importare una pagina master personalizzata e una pagina del sito con un'immagine
   Questa procedura dettagliata illustra come importare una pagina master personalizzata di SharePoint e una pagina del sito con un'immagine in un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] progetto SharePoint.

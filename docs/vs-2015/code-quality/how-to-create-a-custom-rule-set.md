@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045655"
@@ -97,7 +97,7 @@ Nelle [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort
   
 - Per comprimere le regole in tutti i gruppi, fare clic su **Comprimi tutto**.  
   
-- Per modificare il campo che sono raggruppate le regole, selezionare il campo dal **Group By** elenco. Per visualizzare le regole separate, selezionare  **\<None >**.  
+- Per modificare il campo che sono raggruppate le regole, selezionare il campo dal **Group By** elenco. Per visualizzare le regole separate, selezionare  **\<None >** .  
   
 - Per aggiungere o rimuovere i campi nelle colonne della regola, fare clic su **opzioni di colonna**.  
   

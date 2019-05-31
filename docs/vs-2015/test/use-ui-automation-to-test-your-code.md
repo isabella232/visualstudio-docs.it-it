@@ -69,7 +69,7 @@ I test automatizzati che eseguono operazioni sull'applicazione tramite l'interfa
 
 1. **Creare un progetto di test codificato dell'interfaccia utente.**
 
-    I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non si dispone già di un progetto di test codificato dell'interfaccia utente, crearne uno. In **Esplora soluzioni** scegliere **Aggiungi**, **Nuovo progetto** dal menu di scelta rapida della soluzione e quindi selezionare **Visual Basic** o **Visual C#**. Scegliere quindi **Test**, **Test codificato dell'interfaccia utente**.
+    I test codificati dell'interfaccia utente devono essere contenuti in un progetto di test codificato dell'interfaccia utente. Se non si dispone già di un progetto di test codificato dell'interfaccia utente, crearne uno. In **Esplora soluzioni** scegliere **Aggiungi**, **Nuovo progetto** dal menu di scelta rapida della soluzione e quindi selezionare **Visual Basic** o **Visual C#** . Scegliere quindi **Test**, **Test codificato dell'interfaccia utente**.
 
    - <em>I modelli di **Test codificato dell'interfaccia utente</em>* non sono disponibili.*
 

@@ -63,7 +63,7 @@ ms.locfileid: "63438583"
 
 1. Nel menu **Progetto** fare clic su **Aggiungi nuovo elemento**.
 
-2. Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (XML)**.
+2. Nel **Aggiungi nuovo elemento** finestra di dialogo **della barra multifunzione (XML)** .
 
 3. Modificare il nome della nuova barra multifunzione in **MyRibbon**e quindi scegliere **Aggiungi**.
 

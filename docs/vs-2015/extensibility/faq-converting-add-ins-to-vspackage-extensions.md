@@ -52,7 +52,7 @@ I componenti aggiuntivi sono deprecati. Per rendere una nuova estensione di Visu
   
      Verrà visualizzata una seconda istanza di Visual Studio. Questa seconda istanza è chiamata istanza sperimentale e potrebbe non presentare le stesse impostazioni dell'istanza di Visual Studio che si sta usando per scrivere il codice. La prima volta che si esegue l'istanza sperimentale, verrà richiesto di accedere a Visual Studio Online e specificare il tema e il profilo.  
   
-     Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Nel **degli strumenti** menu (nell'istanza sperimentale) verrà visualizzato un pulsante denominato **My Command name**. Quando si sceglie questo pulsante, verrà visualizzato il messaggio: **Inside TestVSPackagePackage.MenuItemCallback()** .  
   
 ## <a name="BKMK_RunAddin"></a> Come è possibile eseguire il codice del componente aggiuntivo in un VSPackage?  
  Il codice del componente aggiuntivo viene in genere eseguito in uno dei due modi seguenti:  

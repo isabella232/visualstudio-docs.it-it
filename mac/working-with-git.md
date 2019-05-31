@@ -65,7 +65,7 @@ Per impostazione predefinita, il primo ramo creato in un repository è denominat
 
 Gli utenti possono creare tutti i rami che desiderano per ogni repository, ma è consigliabile eliminare i rami quando si finisce di usarli per mantenere organizzato il repository.
 
-Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...**:
+Per visualizzare i rami in Visual Studio per Mac, spostarsi su **Controllo della versione > Gestisci rami ed origini remote...** :
 
 ![Visualizzazione dei rami](media/version-control-gitBranch2.png)
 
@@ -85,7 +85,7 @@ Vedere il ramo corrente nel riquadro della soluzione, accanto al nome del proget
 
 Per rivedere le modifiche nei file, usare le schede Modifiche, Segnala errore, Log e Unisci in ogni documento, come illustrato precedentemente in questo argomento.
 
-Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)**:
+Rivedere tutte le modifiche del progetto spostandosi sulla voce di menu **Controllo della versione > Review Solution and Commit (Rivedi soluzione ed esegui commit)** :
 
 ![Visualizzazione di revisione del codice](media/version-control-gitReviewCommit.png)
 

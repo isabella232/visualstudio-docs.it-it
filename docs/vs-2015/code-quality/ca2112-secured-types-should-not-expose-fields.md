@@ -63,9 +63,9 @@ ms.locfileid: "65687332"
 
  Questo esempio produce il seguente output:
 
- **Creazione di un'istanza di SecuredTypeWithFields.**
+ **Creazione di un'istanza di SecuredTypeWithFields.** 
 **i campi di tipo protetta: 22, 33**
-**modifica campo di tipo protetto...**
+**modifica campo di tipo protetto...** 
 **Campi dell'oggetto memorizzato nella cache: 99, 33**
 ## <a name="related-rules"></a>Regole correlate
  [CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
