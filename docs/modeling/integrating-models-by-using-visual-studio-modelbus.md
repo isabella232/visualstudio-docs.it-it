@@ -494,7 +494,7 @@ Diagramma di definizione DSL destro, fare clic su **Abilita Modelbus**, quindi s
 
 Quando si imposta il tipo della proprietà del dominio su ModelBusReference e quindi fare doppio clic su proprietà e fare clic su **proprietà specifiche di ModelBusReference abilitare**:
 
-- Alla proprietà di dominio vengono aggiunti numerosi attributi CLR ed è possibile visualizzarlo nel campo Attributi personalizzati nella finestra Proprietà. Nelle **dsl\generatedcode\domainclasses.cs.**, è possibile visualizzare gli attributi nella dichiarazione della proprietà:
+- Alla proprietà di dominio vengono aggiunti numerosi attributi CLR ed è possibile visualizzarlo nel campo Attributi personalizzati nella finestra Proprietà. Nelle **dsl\generatedcode\domainclasses.cs.** , è possibile visualizzare gli attributi nella dichiarazione della proprietà:
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(

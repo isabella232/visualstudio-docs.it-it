@@ -89,7 +89,7 @@ Se l'elemento **Include** è vuoto, l'elaborazione del code coverage include tut
 
 Includere ed escludere i nodi che usano le espressioni regolari. Per altre informazioni, vedere [Utilizzo delle espressioni regolari in Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Le espressioni regolari non equivalgono ai caratteri jolly. In particolare:
 
-- **.\\*** corrisponde a una stringa composta da caratteri qualsiasi
+- **.\\** * corrisponde a una stringa composta da caratteri qualsiasi
 
 - **\\.** corrisponde a un punto "."
 

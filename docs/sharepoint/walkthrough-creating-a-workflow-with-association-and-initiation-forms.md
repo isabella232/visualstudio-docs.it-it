@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un flusso di lavoro con form di associazione e avvio | Microsoft Docs'
+title: Creare flussi di lavoro con form di associazione e avvio
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430370"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401159"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procedura dettagliata: Creare un flusso di lavoro con form di associazione e di avvio
   Questa procedura dettagliata viene illustrato come creare un flusso di lavoro sequenza base che incorpora l'utilizzo dei form di associazione e di avvio. Questi sono i form ASPX che abilitano i parametri per essere aggiunti a un flusso di lavoro quando è associato prima di tutto dall'amministratore di SharePoint (form di associazione) e quando il flusso di lavoro viene avviato dall'utente (form di avvio).
@@ -90,7 +90,7 @@ ms.locfileid: "63430370"
 
      Il **Personalizzazione guidata SharePoint** viene visualizzata.
 
-10. Nel **specificare il nome del flusso di lavoro per il debug** pagina, accettare il nome predefinito (**ExpenseReport - Workflow1**). Mantenere il valore di tipo modello del flusso di lavoro predefinito (**flusso di lavoro elenco)**. Fare clic su **Avanti**.
+10. Nel **specificare il nome del flusso di lavoro per il debug** pagina, accettare il nome predefinito (**ExpenseReport - Workflow1**). Mantenere il valore di tipo modello del flusso di lavoro predefinito (**flusso di lavoro elenco)** . Fare clic su **Avanti**.
 
 11. Nel **preferisci Visual Studio per associare automaticamente il flusso di lavoro in una sessione di debug?** pagina, deselezionare la casella che consente di associare automaticamente il modello di flusso di lavoro se è selezionata.
 

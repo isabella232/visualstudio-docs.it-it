@@ -24,7 +24,7 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
  Per impostazione predefinita, Visual Studio 2010 include i pacchetti localizzati del programma di avvio automatico solo per .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. È possibile creare pacchetti localizzati per altri programmi di avvio automatico completando tre passaggi.
 
-1. Creare una cartella denominata dopo il nome delle impostazioni locali nel *\Programmi\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.\\\<Nomepacchettoprogrammaavvioautomatico >*.
+1. Creare una cartella denominata dopo il nome delle impostazioni locali nel *\Programmi\Microsoft Sdks\windows\v7.0A\Bootstrapper\Packages.\\\<Nomepacchettoprogrammaavvioautomatico >* .
 
 2. Creare un file contenente le condizioni di licenza software per il pacchetto del programma di avvio automatico e inserirlo nella nuova cartella.
 
@@ -76,9 +76,9 @@ Dopo aver creato un pacchetto del programma di avvio automatico, è possibile cr
 
 1. Creare una cartella denominata *fr*. Il nome della cartella deve corrispondere al nome delle impostazioni locali.
 
-     Nei computer a 32 bit creare la cartella in *\Programmi\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\*.
+     Nei computer a 32 bit creare la cartella in *\Programmi\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\* .
 
-     Nei computer a 64 bit creare la cartella in *\Programmi (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\*.
+     Nei computer a 64 bit creare la cartella in *\Programmi (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\* .
 
 2. Inserire una versione localizzata delle condizioni di licenza software nella cartella *fr*.
 

@@ -50,7 +50,7 @@ Finestra IDE
   
 5. Nella figura sono illustrate le finestre seguenti (in senso orario dall'angolo superiore sinistro):  
   
-    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. Nella finestra illustrata nella figura viene visualizzato un form nell'Editor di form. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]**. In Visual Basic il nome della scheda termina con .vb anziché .cs.  
+    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. Nella finestra illustrata nella figura viene visualizzato un form nell'Editor di form. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]** . In Visual Basic il nome della scheda termina con .vb anziché .cs.  
   
     - **Finestra Esplora soluzioni** In questa finestra è possibile visualizzare tutti gli elementi della soluzione e spostarsi tra di essi. Se si sceglie un file, cambia il contenuto della finestra **Proprietà**. Se si apre un file di codice (che termina con l'estensione CS in Visual C# e VB in Visual Basic), viene visualizzato il file stesso o la relativa finestra di progettazione. Una finestra di progettazione è una superficie visiva in cui è possibile aggiungere controlli quali pulsanti ed elenchi. Per i form di Visual Studio, la finestra di progettazione è denominata Progettazione Windows Form.  
   

@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Si noti che le istruzioni relative al controllo della memoria sono racchiuse in blocchi `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** in modo che vengano compilate solo nelle versioni di debug del programma.  
+    Si noti che le istruzioni relative al controllo della memoria sono racchiuse in blocchi `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** in modo che vengano compilate solo nelle versioni di debug del programma.  
   
     Determinata l'esistenza di una perdita di memoria, sarà possibile usare un'altra funzione membro, [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , che consentirà di individuare la perdita.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizzazione di dump di oggetti  
  Quando si deriva una classe da [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), è possibile eseguire l'override della funzione membro `Dump` per fornire ulteriori informazioni quando si usa [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) per eseguire il dump di oggetti nella [finestra Output](../ide/reference/output-window.md).  
   
- La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore APPEND (**<<**) per inviare dati a `CDumpContext`.  
+ La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore APPEND ( **<<** ) per inviare dati a `CDumpContext`.  
   
  Quando si esegue l'override della funzione `Dump` , è opportuno chiamare dapprima la versione della classe base di `Dump` per effettuare il dump del contenuto dell'oggetto classe base, generando poi una descrizione testuale e un valore per ciascuna variabile membro della classe derivata.  
   
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
   
    1. Nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** fare clic sul pulsante **Gestione configurazione**.  
   
-   2. Nella [finestra di dialogo Gestione configurazione](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>**.  
+   2. Nella [finestra di dialogo Gestione configurazione](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b)individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>** .  
   
    3. Nella [finestra di dialogo Nuova configurazione progetto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.  
   
-   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++**, categoria **Intestazioni precompilate**).  
+   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++** , categoria **Intestazioni precompilate**).  
   
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.  
   

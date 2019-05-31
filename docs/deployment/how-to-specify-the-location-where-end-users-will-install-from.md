@@ -39,7 +39,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_
 
 2. Fare clic sulla scheda **Pubblica**.
 
-3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato *http://www.microsoft.com/ApplicationName*, o un percorso UNC nel formato  *\\\Server\ApplicationName*.
+3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato *http://www.microsoft.com/ApplicationName* , o un percorso UNC nel formato  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Vedere anche
 - [Procedura: Specificare il percorso in cui vengono copiati i file in Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

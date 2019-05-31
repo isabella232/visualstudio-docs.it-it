@@ -36,7 +36,7 @@ ms.locfileid: "63447009"
 
  La posizione della cartella di pubblicazione è la directory in cui Visual Studio copia i file della soluzione, ad esempio i manifesti, gli assembly e altri file della compilazione. È necessario l'accesso in scrittura a questa directory.
 
- Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\*), o un percorso completo (*\\\servername\foldername* o http://<em>servername/foldername</em>).
+ Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\* ), o un percorso completo ( *\\\servername\foldername* o http://<em>servername/foldername</em>).
 
  Per impostazione predefinita, è il percorso di pubblicazione *http://localhost/projectname/* se è stato installato, IIS o il *pubblicare\\*  directory se non è installato IIS.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447009"
 
  L'URL della cartella di installazione è la directory dalla quale l'utente finale installa la personalizzazione. È anche il percorso usato dalla soluzione per controllare la disponibilità di aggiornamenti. Il percorso può essere uguale a quello della cartella di pubblicazione, ma non è obbligatorio.
 
- Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\*), o un percorso completo (*\\\servername\foldername* o http://<em>servername/foldername</em>). Tutti i percorsi HTTP/HTTPS devono essere creati con caratteri US-ASCII. I caratteri Unicode non sono supportati.
+ Le opzioni includono il computer locale, una condivisione file UNC o un sito Web HTTP/HTTPS. Il percorso può essere locale (*c:\foldername\publishfolder*), relativo (*pubblicare\\* ), o un percorso completo ( *\\\servername\foldername* o http://<em>servername/foldername</em>). Tutti i percorsi HTTP/HTTPS devono essere creati con caratteri US-ASCII. I caratteri Unicode non sono supportati.
 
  Se il percorso di installazione è impostato, i file di personalizzazione devono trovarsi nel percorso in cui gli utenti installano la personalizzazione. Il percorso deve essere impostato solo se si conosce il percorso di distribuzione finale.
 

@@ -98,7 +98,7 @@ ms.locfileid: "65696192"
    <#@ include file="Dsl\GestureExtensionController.tt" #>  
    ```  
   
-3. Aggiungere la riga seguente al file esistente denominato **Dslpackage\commands.vsct.**:  
+3. Aggiungere la riga seguente al file esistente denominato **Dslpackage\commands.vsct.** :  
   
    ```  
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
@@ -131,7 +131,7 @@ ms.locfileid: "65696192"
   
    - Questo assembly è in genere un nome che termina con ". DSL.dll".  
   
-   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **Dsl\bin\\\\***  
+   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **Dsl\bin\\\\** *  
   
    - Se si ha accesso al file VSIX DSL, è possibile trovare l'assembly modificando l'estensione del file VSIX in "ZIP". Decomprimere il file con estensione zip.  
   
@@ -147,7 +147,7 @@ ms.locfileid: "65696192"
   
    - System.Windows.Forms.dll  
   
-4. Creare un progetto VSIX nella stessa soluzione. A questo scopo, nella **nuovo progetto** finestra di dialogo, espandere **Visual Basic** oppure **Visual c#**, fare clic su **estendibilità**e quindi scegliere  **Progetto VSIX**.  
+4. Creare un progetto VSIX nella stessa soluzione. A questo scopo, nella **nuovo progetto** finestra di dialogo, espandere **Visual Basic** oppure **Visual c#** , fare clic su **estendibilità**e quindi scegliere  **Progetto VSIX**.  
   
 5. In Esplora soluzioni fare doppio clic su progetto VSIX e quindi fare clic su **imposta come progetto di avvio**.  
   

@@ -40,7 +40,7 @@ Motivi possibili per questo messaggio di errore includono:
 - È stato effettuato un tentativo di modificare il codice durante il debug di un ripristino di emergenza. Dr. Watson.
 - Tentativo di modificare il codice dopo che si verifica un'eccezione non gestita e l'opzione **Rimuovi stack di chiamate su eccezioni non gestite** non è selezionata.
 - È stato effettuato un tentativo di modificare il codice durante il debug di un'applicazione di runtime incorporata.
-- È stato effettuato un tentativo di modificare il codice gestito Usa una versione di .NET Framework precedenti a 4.5.1 con una destinazione di app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nel  **\<ProjectName >** > **proprietà**  >  **Compilare** della scheda **del compilatore avanzate** impostazione.
+- È stato effettuato un tentativo di modificare il codice gestito Usa una versione di .NET Framework precedenti a 4.5.1 con una destinazione di app a 64 bit. Per usare modifica e continuazione per .NET Framework precedenti a 4.5.1, impostare la destinazione su **x86** nel  **\<ProjectName >**  > **proprietà**  >  **Compilare** della scheda **del compilatore avanzate** impostazione.
 - È stato effettuato un tentativo di modificare il codice in un assembly modificato durante il debug e ricaricato.
 - È stato effettuato un tentativo di modificare il codice in un assembly che non è stato caricato.
 - Avvio del debug di una versione precedente di un'app, perché la versione più recente presenta errori di compilazione.

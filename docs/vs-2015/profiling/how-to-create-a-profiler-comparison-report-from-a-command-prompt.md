@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756739"
@@ -27,12 +27,12 @@ ms.locfileid: "54756739"
   
  Usare la sintassi seguente per creare il report di confronto:  
   
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]  
   
  È possibile aggiungere le opzioni contenute nella tabella seguente alla riga di comando **VSPerfReport /diff**.  
   
 |Opzione|Descrizione|  
 |------------|-----------------|  
-|**DiffThreshold:**[*Value*]|Ignorare la differenza se al di sotto di questo valore di soglia in percentuale. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  
+|**DiffThreshold:** [*Value*]|Ignorare la differenza se al di sotto di questo valore di soglia in percentuale. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  
 |**DiffTable:** *TableName*|Usare questa tabella per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni. Specificare l'identificatore elencato in **VSPerfReport /querydifftables**.|  
 |**DiffColumn:** *ColumnName*|Usare questa colonna per confrontare i valori. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi. Specificare l'identificatore elencato in **VSPerfReport /querydifftables**.|

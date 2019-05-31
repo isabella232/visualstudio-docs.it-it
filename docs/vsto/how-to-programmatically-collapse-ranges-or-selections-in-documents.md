@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: A livello di programmazione comprimere intervalli o selezioni in documenti'
+title: Comprimere intervalli o selezioni in documenti a livello di codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575429"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402230"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Procedura: A livello di programmazione comprimere intervalli o selezioni in documenti
   Se si usa un oggetto <xref:Microsoft.Office.Interop.Word.Range> o <xref:Microsoft.Office.Interop.Word.Selection> , è possibile che si voglia modificare la selezione in un punto di inserimento prima di inserire il testo, per evitare la sovrascrittura del testo esistente. Sia la <xref:Microsoft.Office.Interop.Word.Range> e <xref:Microsoft.Office.Interop.Word.Selection> oggetti dispongono di un metodo di compressione, che usa il <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valori di enumerazione:

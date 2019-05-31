@@ -77,7 +77,7 @@ ms.locfileid: "65687306"
 
  Questo esempio produce il seguente output:
 
- **Meet al glen conoscerete 2/22/2003 12:00:00 AM.**
+ **Meet al glen conoscerete 2/22/2003 12:00:00 AM.** 
 **Dal Test: Prato sunny**
 **riunisce le Prato sunny 2/22/2003 12:00:00 AM.**
 ## <a name="related-rules"></a>Regole correlate

@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creazione di un elenco esterno in SharePoint con i dati aziendali | Microsoft Docs'
+title: Crea elenco esterno in SharePoint usando i dati di business
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf9c7d13e6aaac85d3bac4254247a3c07b39b5c3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965219"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401060"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Procedura dettagliata: Creare un elenco esterno in SharePoint utilizzando i dati di business
 
@@ -70,7 +70,7 @@ Per completare la procedura dettagliata, è necessario disporre dei componenti s
 
      Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-8. Nel **modelli** riquadro, scegliere **Business Data Connectivity Model (solo soluzione Farm)**, denominare il progetto **AdventureWorksContacts**e quindi scegliere il **Add** pulsante.
+8. Nel **modelli** riquadro, scegliere **Business Data Connectivity Model (solo soluzione Farm)** , denominare il progetto **AdventureWorksContacts**e quindi scegliere il **Add** pulsante.
 
 ## <a name="add-data-access-classes-to-the-project"></a>Aggiungere classi di accesso ai dati al progetto
 

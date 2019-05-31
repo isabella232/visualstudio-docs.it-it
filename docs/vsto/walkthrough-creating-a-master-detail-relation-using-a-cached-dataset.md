@@ -177,7 +177,7 @@ ms.locfileid: "63438558"
 
 5. Disabilitare la connessione al database. Scollegare il cavo di rete dal computer se il database si trova in un server o arrestare il servizio SQL Server se il database si trova nel computer di sviluppo.
 
-6. Aprire Excel e quindi aprire **My Master-Detail.xlsx** dalle *\bin* directory (*\My Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\ eseguire il debug* in c#).
+6. Aprire Excel e quindi aprire **My Master-Detail.xlsx** dalle *\bin* directory ( *\My Master-Detail\bin* in Visual Basic o *\My Master-Detail\bin\ eseguire il debug* in c#).
 
 7. Scorrere tra alcuni dei record per verificare che il foglio di lavoro viene eseguito in genere quando si è disconnessi.
 

@@ -35,10 +35,10 @@ Quando si crea un visualizzatore di immagini, il primo passaggio consiste nella 
 
 2. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto**.
 
-3. Nell'elenco dei modelli scegliere **App Windows Forms (.NET Framework)**. Assegnare il nome **PictureViewer** al nuovo form, quindi scegliere il pulsante **OK**.
+3. Nell'elenco dei modelli scegliere **App Windows Forms (.NET Framework)** . Assegnare il nome **PictureViewer** al nuovo form, quindi scegliere il pulsante **OK**.
 
     >[!NOTE]
-    >Se non viene visualizzato il modello **App Windows Forms (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
+    >Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Visual Studio crea una soluzione per il programma. Una soluzione funge da conten
 
     ::: moniker range="vs-2017"
 
-    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]**. In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
+    - **Finestra principale** In questa finestra viene eseguita la maggior parte del lavoro, come l'utilizzo dei form e la modifica del codice. La finestra visualizza un modulo nell'**editor di moduli**. Nella parte superiore della finestra vengono visualizzate la scheda **Pagina iniziale** e la scheda **Form1.cs [Progettazione]** . In Visual Basic il nome della scheda termina con l'estensione *VB* invece di *CS*.
 
     ::: moniker-end
 

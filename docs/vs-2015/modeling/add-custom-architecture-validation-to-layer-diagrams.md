@@ -60,7 +60,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
    > [!NOTE]
    > Il metodo verrà chiamato solo in casi specifici e i punti di interruzione non funzioneranno automaticamente. Per altre informazioni, vedere [Debug della convalida dei livelli](#debugging).  
   
-5. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\*. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+5. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\* . Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Aggiunta di validator dei livelli a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente validator dei livelli, comandi e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [modelli e diagrammi UML estendere](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ In Visual Studio gli utenti possono convalidare il codice sorgente in un progett
   
 2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Se è necessario aggiungere un progetto VSIX, eseguire le operazioni seguenti:  
   
-    1. Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#**, **Extensibility**e **Progetto VSIX**.  
+    1. Nella finestra di dialogo **Nuovo progetto** scegliere **Visual C#** , **Extensibility**e **Progetto VSIX**.  
   
     2. In **Esplora soluzioni**scegliere **Imposta come progetto di avvio**dal menu di scelta rapida del progetto VSIX.  
   

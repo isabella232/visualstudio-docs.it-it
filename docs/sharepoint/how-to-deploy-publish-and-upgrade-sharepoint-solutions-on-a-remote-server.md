@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un Server remoto | Microsoft Docs'
+title: Distribuire, pubblicare e aggiornare soluzioni SharePoint in modalità remota
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813943"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401424"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedura: Distribuire, pubblicare e aggiornare soluzioni SharePoint in un server remoto
   Oltre a distribuire soluzioni di SharePoint al sistema locale, è possibile pubblicare soluzioni create mediante sandbox di SharePoint a siti remoti o i siti SharePoint locali. Le copie di processo di pubblicazione remoto il *wsp* file nel server SharePoint, installa la soluzione e quindi consente di attivare la soluzione. È inoltre possibile aggiornare un'installazione di soluzioni di SharePoint remota dopo aver apportato modifiche a esso.

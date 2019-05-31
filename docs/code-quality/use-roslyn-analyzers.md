@@ -122,7 +122,7 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dal **editor di codice**
 
-   Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+**.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
+   Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+ **.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
 
    ![Non visualizzare diagnostica dal menu Azioni rapide](media/suppress-diagnostic-from-editor.png)
 

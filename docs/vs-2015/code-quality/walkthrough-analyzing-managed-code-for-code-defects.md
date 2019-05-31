@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116290"
@@ -41,7 +41,7 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
 1. Nel **File** dal menu del [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], fare clic su **New** e quindi fare clic su **progetto**.  
   
-2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#**.  
+2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#** .  
   
 3. Sotto **modelli**, selezionare **libreria di classi**.  
   
@@ -149,7 +149,7 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
        Selezionare il **firmare l'assembly** casella di controllo.  
   
-       Nel **scegliere un file chiave con nome sicuro** elenco, selezionare  **\<nuovo... >**.  
+       Nel **scegliere un file chiave con nome sicuro** elenco, selezionare  **\<nuovo... >** .  
   
        Il **Crea chiave con nome sicuro** verrà visualizzata la finestra di dialogo.  
   

@@ -39,7 +39,7 @@ ms.locfileid: "62548348"
 ---
 # <a name="find-and-replace-text"></a>Cercare e sostituire testo
 
-È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) (**CTRL**+**F** o **CTRL**+**H**) oppure [Find/Replace in Files](#find-in-files-and-replace-in-files) (Trova/Sostituisci nei file) (**CTRL**+**MAIUSC**+**F** o **CTRL**+**MAIUSC**+**H**). È anche possibile cercare e sostituire solo *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)*.
+È possibile trovare e sostituire testo nell'editor di Visual Studio usando [Trova e sostituisci](#find-and-replace-control) (**CTRL**+**F** o **CTRL**+**H**) oppure [Find/Replace in Files](#find-in-files-and-replace-in-files) (Trova/Sostituisci nei file) (**CTRL**+**MAIUSC**+**F** o **CTRL**+**MAIUSC**+**H**). È anche possibile cercare e sostituire solo *alcune* istanze di un modello usando la *[selezione di più punti di inserimento](#multi-caret-selection)* .
 
 > [!TIP]
 > Se si stanno rinominando simboli del codice, ad esempio variabili e i metodi, è preferibile *[effettuarne il refactoring](../ide/reference/rename.md)* anziché usare la funzionalità di ricerca e sostituzione. Il refactoring è un'opzione avanzata in grado di rilevare l'ambito, mentre con la ricerca e sostituzione vengono sostituite indifferentemente tutte le istanze.
@@ -62,7 +62,7 @@ Il controllo **Trova e sostituisci** viene visualizzato nell'angolo superiore de
 
 È possibile accedere alle opzioni di sostituzione scegliendo il pulsante accanto alla casella di testo **Trova**. Per eseguire una sostituzione per volta, scegliere il pulsante **Sostituisci successivo** accanto alla casella di testo **Sostituisci** . Per sostituire tutte le corrispondenze, scegliere il pulsante **Sostituisci tutto**.
 
-Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)**.
+Per modificare il colore di evidenziazione per le corrispondenze, scegliere il menu **Strumenti**, selezionare **Opzioni**, quindi scegliere **Ambiente** e selezionare **Tipi di carattere e colori**. Nell'elenco **Show settings for** (Mostra impostazioni per), selezionare **Editor di testo**, quindi nell'elenco **Elementi visualizzati**, selezionare **Trova evidenziato (estensione)** .
 
 ### <a name="search-tool-windows"></a>Finestre degli strumenti di ricerca
 
@@ -92,7 +92,7 @@ Quando si sceglie **Find All**  (Trova tutti), si apre una finestra **Risultati 
 
 ### <a name="create-custom-component-sets"></a>Creare set di componenti personalizzati
 
-È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi (*.dll*, *.tlb*, *.olb*, *.exe* o *.ocx*). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.
+È possibile definire set di componenti nell'ambito di ricerca scegliendo il pulsante **Modifica insieme di componenti personalizzato** accanto alla casella **Cerca in**. È possibile specificare i componenti .NET o COM installati, i progetti Visual Studio che sono inclusi nella soluzione, o qualunque assembly o libreria dei tipi ( *.dll*, *.tlb*, *.olb*, *.exe* o *.ocx*). Per individuare i riferimenti, selezionare la casella **Cerca in riferimenti**.
 
 ## <a name="multi-caret-selection"></a>Selezione di più punti di inserimento
 
@@ -121,10 +121,10 @@ Usare i tasti e le azioni seguenti per i comportamenti di selezione di più punt
 |**CTRL**+**ALT** + clic|Aggiungere un punto di inserimento secondario|
 |**CTRL**+**ALT** + doppio clic|Aggiungere una selezione di parola secondaria|
 |**CTRL**+**ALT** + clic + trascina|Aggiungere una selezione secondaria|
-|**MAIUSC**+**ALT**+**.**|Aggiungere il testo successivo corrispondente come selezione|
-|**CTRL**+**MAIUSC**+**ALT**+**,**|Aggiungere tutto il testo corrispondente come selezione|
-|**MAIUSC**+**ALT**+**,**|Rimuovere l'ultima occorrenza selezionata|
-|**CTRL**+**MAIUSC**+**Alt**+**.**|Ignorare l'occorrenza corrispondente successiva|
+|**MAIUSC**+**ALT**+ **.**|Aggiungere il testo successivo corrispondente come selezione|
+|**CTRL**+**MAIUSC**+**ALT**+ **,**|Aggiungere tutto il testo corrispondente come selezione|
+|**MAIUSC**+**ALT**+ **,**|Rimuovere l'ultima occorrenza selezionata|
+|**CTRL**+**MAIUSC**+**Alt**+ **.**|Ignorare l'occorrenza corrispondente successiva|
 |**ALT** + clic|Aggiungere una selezione di casella|
 |**ESC** oppure clic|Cancellare tutte le selezioni|
 

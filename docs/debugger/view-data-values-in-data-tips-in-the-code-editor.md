@@ -75,7 +75,7 @@ Per chiudere tutti i suggerimenti dati, scegliere il **Debug** dal menu **Cancel
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Chiudere tutti i suggerimenti dati per un file specifico
 
-Per chiudere tutti i suggerimenti dati per un file specifico, scegliere il **Debug** dal menu **Cancella tutti i suggerimenti dati bloccati a \<nomefile >**.
+Per chiudere tutti i suggerimenti dati per un file specifico, scegliere il **Debug** dal menu **Cancella tutti i suggerimenti dati bloccati a \<nomefile >** .
 
 ## <a name="expand-and-edit-information"></a>Espandere e modificare le informazioni
 È possibile utilizzare i suggerimenti dati per espandere una matrice, una struttura o un oggetto e visualizzarne i membri. È anche possibile modificare il valore di una variabile da un suggerimento dati.

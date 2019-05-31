@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Opzioni non valide  
  Le opzioni seguenti non possono essere specificate nella stessa riga di comando che include **PF**.  
   
- **Timer**[**:**`Cycles`]  
+ **Timer**[ **:** `Cycles`]  
  Imposta l'evento di campionamento sui cicli di clock del processore e, facoltativamente, imposta l'intervallo di campionamento su `Cycles`. L'intervallo Timer predefinito è 10.000.000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Imposta l'evento di campionamento per le chiamate dall'applicazione profilata al kernel del sistema operativo (syscall) e imposta facoltativamente l'intervallo di campionamento su `Events`. L'intervallo Sys predefinito è 10.  
   
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]]  
  Imposta l'evento di campionamento sul contatore delle prestazioni della CPU specificato da `Name` e imposta l'intervallo di campionamento su `Reload`.  
   
- **GC**[**:**{**Allocation**&#124;**Lifetime**}]  
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}]  
  Raccoglie dati di memoria .NET. Per impostazione predefinita, (**Allocation**), i dati vengono raccolti in corrispondenza di ogni evento di allocazione di memoria. Quando si specifica il parametro **Lifetime**, i dati vengono raccolti anche in corrispondenza di ogni evento di Garbage Collection.  
   
 ## <a name="example"></a>Esempio  

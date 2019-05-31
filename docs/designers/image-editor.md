@@ -117,7 +117,7 @@ La tabella seguente descrive gli elementi nella barra degli strumenti della **mo
 |**Selezione irregolare**|Consente di selezionare un'area non regolare di un'immagine. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Selezione con bacchetta magica**|Consente di selezionare un'area con colori simili all'interno di un'immagine. È possibile configurare la *tolleranza*, ovvero la differenza massima tra colori adiacenti entro la quale sono considerati simili, per includere una gamma più ampia o più ristretta di colori simili. Dopo aver selezionato un'area, è possibile tagliarla, copiarla, spostarla, ridimensionarla, ruotarla, capovolgerla o eliminarla. In presenza di una selezione attiva, gli strumenti di disegno influiscono solo sull'area selezionata.|
 |**Panoramica**|Consente di spostare l'immagine in relazione alla cornice della finestra. In modalità **Panoramica** selezionare un punto nell'immagine e quindi spostarlo in qualsiasi direzione.<br /><br /> È possibile attivare temporaneamente la modalità **Panoramica** tenendo premuto **CTRL**.|
-|**Zoom**|Consente di visualizzare una quantità maggiore o minore di dettagli dell'immagine in relazione alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'immagine e quindi spostarlo a destra o in basso per fare zoom avanti oppure a sinistra o in alto per fare zoom indietro.<br /><br /> È possibile ingrandire o ridurre tenendo premuto **CTRL** mentre si usa la rotellina del mouse oppure si preme il segno più (**+**) o il segno meno (**-**).|
+|**Zoom**|Consente di visualizzare una quantità maggiore o minore di dettagli dell'immagine in relazione alla cornice della finestra. In modalità **Zoom** selezionare un punto nell'immagine e quindi spostarlo a destra o in basso per fare zoom avanti oppure a sinistra o in alto per fare zoom indietro.<br /><br /> È possibile ingrandire o ridurre tenendo premuto **CTRL** mentre si usa la rotellina del mouse oppure si preme il segno più ( **+** ) o il segno meno ( **-** ).|
 |**Zoom a dimensioni effettive**|Visualizza l'immagine usando una relazione 1:1 tra i pixel dell'immagine e quelli dello schermo.|
 |**Adatta alla finestra**|Visualizza l'immagine completa nella cornice della finestra.|
 |**Adatta larghezza**|Visualizza l'ampiezza completa dell'immagine nella cornice della finestra.|
@@ -250,8 +250,8 @@ La tabella seguente descrive le proprietà degli strumenti:
 |Selezionare tutto|**CTRL**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESC** (Escape)|
-|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più (**+**)|
-|Fare zoom indietro|**CTRL**-**Rotellina del mouse indietro**<br /><br /> **CTRL**-**PGGIÙ**<br /><br /> Segno meno (**-**)|
+|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> **CTRL**+**PGSU**<br /><br /> Segno più ( **+** )|
+|Fare zoom indietro|**CTRL**-**Rotellina del mouse indietro**<br /><br /> **CTRL**-**PGGIÙ**<br /><br /> Segno meno ( **-** )|
 |Fare una panoramica dell'immagine verso l'alto|**Rotellina del mouse indietro**<br /><br /> **PGGIÙ**|
 |Fare una panoramica dell'immagine verso il basso|**Rotellina del mouse avanti**<br /><br /> **PGSU**|
 |Fare una panoramica dell'immagine verso sinistra|**MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **Rotellina del mouse a sinistra**<br /><br /> **MAIUSC**+**PGGIÙ**|

@@ -210,7 +210,7 @@ ms.locfileid: "62981676"
 
 4. Fare clic sul pulsante freccia nel **titolo** anche in questo caso l'intestazione di colonna.
 
-5. Fare clic su **(tutti)**.
+5. Fare clic su **(tutti)** .
 
      Il filtro viene rimosso e vengono visualizzate tutte le righe.
 

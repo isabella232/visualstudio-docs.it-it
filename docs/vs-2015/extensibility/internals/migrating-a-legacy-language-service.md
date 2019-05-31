@@ -59,7 +59,7 @@ ms.locfileid: "63434381"
   
     - Nel **Application** scheda, modificare **framework di destinazione** al **4.6.1**.  
   
-    - Nel **Debug** nella scheda il **Avvia programma esterno** , digitare  **\<percorso di installazione di Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - Nel **Debug** nella scheda il **Avvia programma esterno** , digitare  **\<percorso di installazione di Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          Nel **argomenti della riga di comando** , digitare /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "63434381"
   
     - Salvare e chiudere il file.  
   
-11. Compilare la soluzione. Vengono distribuiti i file compilati **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Compilare la soluzione. Vengono distribuiti i file compilati **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Avviare il debug. Aprire una seconda istanza di Visual Studio.  
   

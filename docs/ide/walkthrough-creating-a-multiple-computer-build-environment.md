@@ -62,7 +62,7 @@ In questa sezione viene descritta la copia di file specifici, compilatori, strum
 - In un computer x86 il percorso predefinito è *C:\Programmi\Microsoft Visual Studio*
 - In un computer x64 il percorso predefinito è *C:\Programmi (x86)\Microsoft Visual Studio*
 
-Si noti che il nome della cartella *Programmi* dipende dal sistema operativo installato. In un computer x86 il nome è *Programmi*, mentre in un computer x64 il nome è *Programmi (x86)*. Indipendentemente dall'architettura di sistema, in questa procedura si fa riferimento alla cartella *Programmi* come *%Programmi%*.
+Si noti che il nome della cartella *Programmi* dipende dal sistema operativo installato. In un computer x86 il nome è *Programmi*, mentre in un computer x64 il nome è *Programmi (x86)* . Indipendentemente dall'architettura di sistema, in questa procedura si fa riferimento alla cartella *Programmi* come *%Programmi%* .
 
 > [!NOTE]
 > Nel computer di compilazione tutti i file rilevanti devono trovarsi nella stessa unità. La lettera dell'unità, tuttavia, può essere diversa dalla lettera dell'unità nel computer host in cui è installato Visual Studio. In ogni caso è necessario tener conto del percorso dei file quando si creano le voci del Registro di sistema come mostrato più avanti in questo documento.
@@ -332,7 +332,7 @@ Per altre informazioni su come usare MSBuild dalla riga di comando, vedere [Rife
 
 2. Copiare le directory e i file come descritto nella sezione [Copiare i file dal computer host al computer di compilazione](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) di questa procedura dettagliata, eseguendo però la copia nella cartella *%Depot%* appena creata. Ad esempio, eseguire la copia da *%Programmi%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin*.
 
-3. Quando i file vengono inseriti in *%Depot%*, apportare le seguenti modifiche:
+3. Quando i file vengono inseriti in *%Depot%* , apportare le seguenti modifiche:
 
     - In %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\ cambiare ogni istanza di
 

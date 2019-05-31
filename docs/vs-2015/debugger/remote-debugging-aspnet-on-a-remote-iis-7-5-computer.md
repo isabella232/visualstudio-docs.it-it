@@ -103,7 +103,7 @@ Dopo l'installazione, assicurarsi che il debugger remoto è in esecuzione nel co
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
+1. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>** .
     
     Verrà visualizzata la pagina Web ASP.NET.
 1. Nella pagina web ASP.NET, fare clic sul collegamento per il **sulle** pagina.

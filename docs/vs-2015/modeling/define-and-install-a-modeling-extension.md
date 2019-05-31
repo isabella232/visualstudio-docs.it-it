@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049737"
@@ -116,7 +116,7 @@ In Visual Studio, è possibile definire le estensioni ai diagrammi di modellazio
   
     1. In **Esplora soluzioni**scegliere **Apri cartella in Esplora risorse**dal menu di scelta rapida del progetto.  
   
-    2. Individuare il file **bin\\\*\\**_YourProject_**VSIX**  
+    2. Individuare il file **bin\\\*\\** _YourProject_**VSIX**  
   
 2. Copiare il file **.vsix** nel computer di destinazione in cui si vuole installare l'estensione. Può trattarsi del computer in uso o di un altro computer.  
   

@@ -29,7 +29,7 @@ Questa procedura dettagliata viene illustrato il processo di uso di analisi del 
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-1. Nel **nuovo progetto** finestra di dialogo, espandere **installato** > **Visual c#**, quindi scegliere **Desktop di Windows**.
+1. Nel **nuovo progetto** finestra di dialogo, espandere **installato** > **Visual c#** , quindi scegliere **Desktop di Windows**.
 
 1. Scegliere il **libreria di classi (.NET Framework)** modello.
 
@@ -141,7 +141,7 @@ Questa procedura dettagliata viene illustrato il processo di uso di analisi del 
 
    1. Selezionare il **firmare l'assembly** casella di controllo.
 
-   1. Nel **scegliere un file chiave con nome sicuro** elenco, selezionare  **\<nuovo... >**.
+   1. Nel **scegliere un file chiave con nome sicuro** elenco, selezionare  **\<nuovo... >** .
 
       Il **Crea chiave con nome sicuro** verrà visualizzata la finestra di dialogo.
 

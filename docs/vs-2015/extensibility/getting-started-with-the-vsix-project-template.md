@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038666"
@@ -39,7 +39,7 @@ ms.locfileid: "60038666"
   
 2. Creare un progetto VSIX vuoto.  
   
-     Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**. Selezionare uno **Visual Basic** oppure **Visual c#**. Sotto il nodo selezionato, selezionare **estendibilità**, quindi selezionare **progetto VSIX**.  
+     Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**. Selezionare uno **Visual Basic** oppure **Visual c#** . Sotto il nodo selezionato, selezionare **estendibilità**, quindi selezionare **progetto VSIX**.  
   
 3. Aggiungere il file con estensione zip per il progetto. Impostare relativi **copia in Directory di Output** proprietà `Copy Always`.  
   

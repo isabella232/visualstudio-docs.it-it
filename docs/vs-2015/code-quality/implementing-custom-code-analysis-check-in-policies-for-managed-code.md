@@ -82,7 +82,7 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
   
 3. Nel **dei criteri di archiviazione** elenco, fare doppio clic su **analisi del codice**e assicurarsi che il **Attiva analisi codice per il codice gestito** casella di controllo è selezionata.  
   
-4. Nel **eseguire questo set di regole** fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente >**.  
+4. Nel **eseguire questo set di regole** fare clic su  **\<seleziona Set di regole dal controllo del codice sorgente >** .  
   
 5. Digitare il percorso del file del set di regole di criteri di archiviazione nel controllo della versione.  
   
@@ -116,6 +116,6 @@ Un'analisi del codice dei criteri di archiviazione consente di specificare un se
   
 6. Per ignorare i codice nei componenti da altre società, selezionare la **non visualizzare i risultati dal codice generato** casella di controllo.  
   
-7. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
+7. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >** .  
   
 8. Specificare la versione locale del file del set di regole di criteri di archiviazione.

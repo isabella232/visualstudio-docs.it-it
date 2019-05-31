@@ -55,7 +55,7 @@ ms.locfileid: "63444223"
   
     [Definizione di un gestore movimenti](#gesture)  
   
-6. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\*. Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
+6. Per installare l'estensione nell'istanza principale di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o in un altro computer, trovare il file **.vsix** in *bin\\* . Copiare il file nel computer in cui si vuole installare l'estensione e fare doppio clic sul file stesso. Per disinstallare l'estensione, usare l'opzione **Estensioni e aggiornamenti** del menu **Strumenti** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Aggiunta di un comando o movimento a un progetto VSIX separato  
  Se si vuole creare un progetto VSIX contenente comandi, validator dei livelli e altre estensioni, è consigliabile creare un unico progetto per definire l'estensione VSIX e progetti separati per i gestori. Per informazioni sugli altri tipi di estensione di modellazione, vedere [modelli e diagrammi UML estendere](../modeling/extend-uml-models-and-diagrams.md).  
@@ -69,7 +69,7 @@ ms.locfileid: "63444223"
   
 2. Identificare o creare un progetto VSIX nella soluzione. Un progetto VSIX contiene un file denominato **source.extension.vsixmanifest**. Per aggiungere un progetto VSIX:  
   
-    1. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#**, fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.  
+    1. Nella finestra di dialogo **Nuovo progetto** espandere **Visual C#** , fare clic su **Extensibility**e quindi fare clic su **Progetto VSIX**.  
   
     2. In Esplora soluzioni fare clic con il pulsante destro del mouse sul progetto VSIX e scegliere **Imposta come progetto di avvio**.  
   

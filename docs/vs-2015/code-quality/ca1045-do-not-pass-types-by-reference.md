@@ -77,13 +77,13 @@ ms.locfileid: "63431551"
 
  Questo esempio produce il seguente output:
 
- **Puntatore di modifica - passati per valore:**
+ **Puntatore di modifica - passati per valore:** 
 **12345**
 **12345**
 **puntatore Changing - passato per riferimento:** 
 ** 12345**
 **ABCDE 12345**
-**passando dal valore restituito:**
+**passando dal valore restituito:** 
 **ABCDE 12345**
 ## <a name="related-rules"></a>Regole correlate
  [CA1021: Evitare parametri out](../code-quality/ca1021-avoid-out-parameters.md)

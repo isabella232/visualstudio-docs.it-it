@@ -298,7 +298,7 @@ ms.locfileid: "63430032"
 
  Quando usare il pulsante puntini di sospensione-only breve:
 
-- Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione (**& esplorare** e **esplo & ra** nella finestra di dialogo stessa).
+- Se è presente più di un long **[Sfoglia...]**  pulsante in una finestra di dialogo, ad esempio quando diversi campi consentono per l'esplorazione. Usare il breve **[...]**  per ognuno evitare la confusione chiavi di accesso create da questa situazione ( **& esplorare** e **esplo & ra** nella finestra di dialogo stessa).
 
 - In una finestra di dialogo stretto o quando non è possibile utilizzare per inserire il pulsante di tempo ragionevole.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430032"
  I collegamenti ipertestuali sono particolarmente adatti per azioni basate su navigazione, ad esempio l'apertura di un argomento della Guida, finestra di dialogo modale o configurazione guidata. Se viene usato un collegamento ipertestuale per un comando, è necessario visualizzare sempre una modifica visibile e notevole all'interfaccia utente. In generale, le azioni che eseguono il commit a un'azione (ad esempio, salvare, Cancel ed eliminare) meglio vengono comunicate tramite un pulsante.
 
 #### <a name="writing-style"></a>Stile di scrittura
- Seguire le [linee guida di Windows Desktop per il testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Non usare "Informazioni su altre informazioni," "Indicare mi ulteriori su" o "Get help con questo" formulazione. Al contrario, una frase di testo del collegamento della Guida in termini di una risposta dal contenuto della Guida in linea la domanda primario. Ad esempio, "**come aggiungere un server in Esplora Server?**"
+ Seguire le [linee guida di Windows Desktop per il testo dell'interfaccia utente](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Non usare "Informazioni su altre informazioni," "Indicare mi ulteriori su" o "Get help con questo" formulazione. Al contrario, una frase di testo del collegamento della Guida in termini di una risposta dal contenuto della Guida in linea la domanda primario. Ad esempio, "**come aggiungere un server in Esplora Server?** "
 
 #### <a name="visual-style"></a>Stile di visualizzazione
 

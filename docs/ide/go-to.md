@@ -27,7 +27,7 @@ I comandi **Vai a** di Visual Studio consentono di eseguire una ricerca mirata n
 
 Input | Funzione
 ------------ | ---
-**Tastiera** | Premere **CTRL**+**T** oppure **CTRL**+**,**
+**Tastiera** | Premere **CTRL**+**T** oppure **CTRL**+ **,**
 **Mouse** | Selezionare **Modifica** > **Vai a** > **Vai a tutti**
 
 Viene visualizzata una piccola finestra nella parte superiore destra dell'editor del codice.
@@ -38,7 +38,7 @@ Durante la digitazione nella casella di testo i risultati vengono visualizzati i
 
 ![Finestra Passa a](../ide/media/vside_navigatetowindow.png)
 
-È anche possibile immettere un punto interrogativo (**?**) per ottenere informazioni aggiuntive.
+È anche possibile immettere un punto interrogativo ( **?** ) per ottenere informazioni aggiuntive.
 
 ![Guida di Vai a tutti](media/go-to-all-help.png)
 

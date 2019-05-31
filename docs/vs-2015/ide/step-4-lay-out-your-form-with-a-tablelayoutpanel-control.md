@@ -76,7 +76,7 @@ Pulsante triangolare
      ![Attività di TableLayoutPanel](../ide/media/express-tablepanel.png "Express_TablePanel")  
 Attività di TableLayoutPanel  
   
-10. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Fare clic su **Column1** e impostare le dimensioni su 15% verificando che il pulsante **%** sia selezionato e immettendo `15` nella casella **%**. Si tratta di un controllo `NumericUpDown` che verrà usato in un'esercitazione successiva. Scegliere **Column2** e impostarla su 85%. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. Se tuttavia si fa clic su OK, è possibile riaprire la finestra utilizzando l'elenco attività.  
+10. Scegliere l'attività **Modifica righe e colonne** per visualizzare la finestra **Stili di riga e colonna**. Fare clic su **Column1** e impostare le dimensioni su 15% verificando che il pulsante **%** sia selezionato e immettendo `15` nella casella **%** . Si tratta di un controllo `NumericUpDown` che verrà usato in un'esercitazione successiva. Scegliere **Column2** e impostarla su 85%. Non scegliere ancora il pulsante **OK** per non chiudere la finestra. Se tuttavia si fa clic su OK, è possibile riaprire la finestra utilizzando l'elenco attività.  
   
      ![Stili di riga e colonna di TableLayoutPanel](../ide/media/vs-tablelayoutpanel-setup.png "VS_TableLayoutPanel_Setup")  
 Stili per riga e colonna di TableLayoutPanel  

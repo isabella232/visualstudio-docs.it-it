@@ -114,7 +114,7 @@ Per creare un membro, è possibile utilizzare uno dei seguenti strumenti:
 
      Il tipo otterrà lo stato attivo e i relativi contenuti verranno visualizzati nella finestra **Dettagli classe**.
 
-2. Nella sezione della finestra **Dettagli classe** che contiene il tipo di membro da aggiungere, scegliere **\<Aggiungi membro>**. Se ad esempio si vuole aggiungere un campo, scegliere **\<Aggiungi campo>**.
+2. Nella sezione della finestra **Dettagli classe** che contiene il tipo di membro da aggiungere, scegliere **\<Aggiungi membro>** . Se ad esempio si vuole aggiungere un campo, scegliere **\<Aggiungi campo>** .
 
 3. Digitare il nome del membro da creare e premere Invio.
 
@@ -205,7 +205,7 @@ Le righe dei parametri contengono i seguenti elementi:
 
 - **\<aggiungi parametro>**
 
-     Nell'ultima riga di parametri di un membro la cella **Nome** contiene la stringa **<aggiungi parametro\>**. Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
+     Nell'ultima riga di parametri di un membro la cella **Nome** contiene la stringa **<aggiungi parametro\>** . Fare clic in questa cella per creare un nuovo parametro. Per altre informazioni, vedere [Per aggiungere un parametro a un metodo](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di parametro della finestra **Dettagli classe**: **Nome**, **Tipo**, **Modificatore**, **Riepilogo**, nonché la proprietà **Valore predefinito facoltativo**. Se una proprietà viene cambiata in una posizione, il relativo valore verrà aggiornato a livello globale, anche nell'altra posizione.
 
@@ -223,9 +223,9 @@ Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di param
 
 2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro.
 
-     Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>**.
+     Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>** .
 
-3. Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
+3. Fare clic su **\<aggiungi parametro>** , digitare il nome del nuovo parametro e premere **INVIO**.
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 
@@ -239,9 +239,9 @@ Nella finestra **Proprietà** vengono visualizzate le stesse proprietà di param
 
 2. Nella finestra **Dettagli classe** espandere la riga del metodo a cui si vuole aggiungere un parametro facoltativo.
 
-     Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>**.
+     Viene visualizzata una riga di parametro rientrata, contenente solo una coppia di parentesi e il testo **\<aggiungi parametro>** .
 
-3. Fare clic su **\<aggiungi parametro>**, digitare il nome del nuovo parametro e premere **INVIO**.
+3. Fare clic su **\<aggiungi parametro>** , digitare il nome del nuovo parametro e premere **INVIO**.
 
      Il nuovo parametro verrà aggiunto al metodo e al codice del metodo. Verrà visualizzato nelle finestre **Dettagli classe** e Proprietà.
 

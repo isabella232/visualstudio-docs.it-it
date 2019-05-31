@@ -60,7 +60,7 @@ Successivamente si aggiunge un commento al codice. Un commento è una nota che n
     > [!TIP]
     > L'IDE è compilato in modo da semplificare la scrittura del codice anche tramite i *frammenti di codice*. Un frammento è un collegamento che viene espanso in un piccolo blocco di codice.  
     >   
-    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti**, **Gestione frammenti di codice**. Per Visual C# il frammento `if` si trova in **Visual C#**. Per Visual Basic i frammenti di codice `if` si trovano in **Istruzioni condizionali e cicli**, **Modelli di codice**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.  
+    >  È possibile visualizzare tutti i frammenti disponibili. Sulla barra dei menu scegliere **Strumenti**, **Gestione frammenti di codice**. Per Visual C# il frammento `if` si trova in **Visual C#** . Per Visual Basic i frammenti di codice `if` si trovano in **Istruzioni condizionali e cicli**, **Modelli di codice**. È possibile utilizzare questo strumento di gestione per esplorare frammenti esistenti o aggiungere frammenti personalizzati.  
     >   
     >  Per attivare un frammento quando si digita il codice, digitarlo e premere TAB. Molti frammenti vengono visualizzati nella finestra di **IntelliSense**, ragion per cui si sceglie il tasto TAB due volte: prima per selezionare il frammento dalla finestra di **IntelliSense**, poi per indicare all'IDE di usare il frammento. Si noti che IntelliSense supporta il frammento `if`, ma non il frammento `ifelse`.  
   

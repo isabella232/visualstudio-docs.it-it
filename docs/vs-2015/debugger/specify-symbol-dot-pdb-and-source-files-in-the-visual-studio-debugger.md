@@ -139,7 +139,7 @@ Un file di database di programma (con estensione pdb), denominato anche file di 
 
 - Per modificare i percorsi di ricerca, scegliere un percorso non selezionato o scegliere **Nuovo** e immettere un nuovo percorso. Scegliere **Carica** per cercare nuovamente i percorsi e per caricare il file di simboli se viene trovato.
 
-- Scegliere **Ricerca di**_nome eseguibile_**...** per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca. Il file di simboli viene caricato se viene trovato. In alternativa, viene visualizzato Esplora file per selezionare manualmente il file di simboli.
+- Scegliere **Ricerca di**_nome eseguibile_ **...** per eseguire l'override di tutte le opzioni dei simboli e ripetere i percorsi di ricerca. Il file di simboli viene caricato se viene trovato. In alternativa, viene visualizzato Esplora file per selezionare manualmente il file di simboli.
 
 - Scegliere **Cambia impostazioni simboli...** per visualizzare la pagina **Debug** / **Simboli** della finestra di dialogo Opzioni di Visual Studio.
 

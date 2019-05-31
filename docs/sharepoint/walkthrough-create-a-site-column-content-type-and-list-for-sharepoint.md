@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint | Microsoft Docs'
+title: Creare colonne del sito, tipo di contenuto ed elenco per SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430706"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401276"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procedura dettagliata: Creare una colonna del sito, tipo di contenuto ed elenco per SharePoint
   Le procedure seguenti illustrano come creare colonne personalizzate del sito di SharePoint, oppure *campi*, oltre a un tipo di contenuto che utilizza le colonne del sito. Viene inoltre illustrato come creare un elenco che usa il nuovo tipo di contenuto.
@@ -137,7 +137,7 @@ ms.locfileid: "63430706"
 
 4. Nel **modelli** riquadro, scegliere il **elenco** modello, modificare il nome in **pazienti**e quindi scegliere il **Aggiungi** pulsante.
 
-5. Lasciare il **personalizzare l'elenco in base** impostando come **predefinito (vuoto)**, quindi scegliere il **fine** pulsante.
+5. Lasciare il **personalizzare l'elenco in base** impostando come **predefinito (vuoto)** , quindi scegliere il **fine** pulsante.
 
 6. Nella finestra di progettazione elenco, scegliere il **tipi di contenuto** pulsante per visualizzare i **impostazioni del tipo di contenuto** nella finestra di dialogo.
 

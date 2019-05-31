@@ -76,7 +76,7 @@ Per i progetti C/C++, è possibile impostare intestazione e LIB percorsi dei fil
 
 1. Nella parte superiore del **delle proprietà** riquadro, in **Configuration**, selezionare **tutte le configurazioni**.
 
-1. Sotto **C/C++** > **generali** > **directory di inclusione aggiuntive**, specificare la cartella che contiene i file di intestazione.
+1. Sotto **C/C++**  > **generali** > **directory di inclusione aggiuntive**, specificare la cartella che contiene i file di intestazione.
 
 1. Sotto **Linker** > **generali** > **Directory librerie aggiuntive**, specificare la cartella che contiene i file LIB.
 

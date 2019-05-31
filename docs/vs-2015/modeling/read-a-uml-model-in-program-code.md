@@ -86,7 +86,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
    - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3. Oltre ai riferimenti elencati nelle sezioni precedenti, aggiungere i riferimenti seguenti al progetto dal **\Programmi\Microsoft Visual Studio [versione] \Common7\IDE\PrivateAssemblies.**:  
+3. Oltre ai riferimenti elencati nelle sezioni precedenti, aggiungere i riferimenti seguenti al progetto dal **\Programmi\Microsoft Visual Studio [versione] \Common7\IDE\PrivateAssemblies.** :  
   
    - Microsoft.VisualStudio.Uml.dll  
   

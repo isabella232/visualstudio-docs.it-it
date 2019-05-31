@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082048"
@@ -47,7 +47,7 @@ Specificando un set di regole che contiene almeno le regole specificate nel set 
   
 3. Fare clic su **analisi del codice**.  
   
-4. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
+4. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >** .  
   
 5. Nel **aperto** finestra di dialogo, specificare la regola dei criteri di archiviazione file del set.  
   
@@ -65,6 +65,6 @@ Specificando un set di regole che contiene almeno le regole specificate nel set 
   
 5. Aprire la finestra di dialogo proprietà per il progetto di codice e visualizzare il **analisi del codice** pagina.  
   
-6. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >**.  
+6. Nel **eseguire questo set di regole** fare clic su  **\<Sfoglia... >** .  
   
 7. Nel **aperto** finestra di dialogo, specificare il set di regole file.

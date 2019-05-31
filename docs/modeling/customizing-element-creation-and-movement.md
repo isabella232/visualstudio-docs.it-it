@@ -109,7 +109,7 @@ Gli utenti possono anche incollare gli elementi su altri elementi.
 
       È possibile utilizzare lo strumento di navigazione del percorso per creare ciascun percorso:
 
-      1. Sotto **elabora l'unione creando collegamenti nei percorsi**, fare clic su  **\<aggiungere percorso >**.
+      1. Sotto **elabora l'unione creando collegamenti nei percorsi**, fare clic su  **\<aggiungere percorso >** .
 
       2. Fare clic sulla freccia giù a destra dell'elemento dell'elenco. Verrà visualizzata una visualizzazione albero.
 

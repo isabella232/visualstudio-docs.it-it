@@ -49,9 +49,9 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
 1. Scegliere **Nuovo** dal menu **File** , quindi fare clic su **Progetto**.  
   
-2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#**.  
+2. Nel **nuovo progetto** nella finestra di dialogo **tipi di progetto**, fare clic su **Visual c#** .  
   
-3. Sotto **Visual c#**, selezionare **libreria di classi**.  
+3. Sotto **Visual c#** , selezionare **libreria di classi**.  
   
 4. Nel **Name** casella di testo, digitare **RuleSetSample** e quindi fare clic su **OK**.  
   
@@ -140,7 +140,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di analisi codice
   
 2. Nel **delle proprietà** scheda, fare clic su **analisi del codice**.  
   
-    Nel **eseguire questo set di regole** elenco a discesa, fare clic su  **\<Sfoglia... >**. Passare alla cartella radice del progetto del codice e quindi selezionare **SetRegolePersonalizzato**. Questo è il nuovo set di regole creato nella procedura precedente.  
+    Nel **eseguire questo set di regole** elenco a discesa, fare clic su  **\<Sfoglia... >** . Passare alla cartella radice del progetto del codice e quindi selezionare **SetRegolePersonalizzato**. Questo è il nuovo set di regole creato nella procedura precedente.  
   
 3. Nel **File** menu, fare clic su **salvare** per salvare la configurazione del progetto. Il set di regole personalizzate a questo punto è utilizzabile con il progetto.  
   

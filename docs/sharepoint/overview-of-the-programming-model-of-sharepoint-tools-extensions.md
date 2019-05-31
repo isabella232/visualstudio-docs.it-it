@@ -1,5 +1,5 @@
 ---
-title: Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint | Microsoft Docs
+title: Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421294"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401780"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Estensioni degli strumenti Panoramica del modello di programmazione di SharePoint
   Quando si crea un'estensione per gli strumenti di SharePoint in Visual Studio, si inizia implementando una o più interfacce di estendibilità che vengono esposte dagli strumenti di SharePoint. Nella maggior parte dei casi, si useranno anche altri tipi forniti dagli strumenti di SharePoint per implementare le funzionalità nell'estensione. In alcuni scenari è possibile usare anche tipi in altri modelli a oggetti forniti da Visual Studio e SharePoint. È necessario comprendere lo scopo della ognuno di questi modelli a oggetti e sapere come usarli con loro per creare estensioni per gli strumenti di SharePoint.

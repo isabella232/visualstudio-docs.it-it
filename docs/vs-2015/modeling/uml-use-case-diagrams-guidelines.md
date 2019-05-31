@@ -190,11 +190,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
    - **1** per indicare che solo un'istanza di questo ruolo fa parte di ogni collegamento.  
   
-   - **1..\\*** per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
+   - **1..\\** * per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
   
    - **0..1** per indicare che la partecipazione è facoltativa.  
   
-   - **\\*** per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
+   - **\\** * per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
   
 > [!NOTE]
 > Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.  

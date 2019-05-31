@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word'
+title: Aggiungere testo e formattazione alle celle delle tabelle di Word a livello di codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cdab1877cf2114f7828dbd65786cf8758d77d0f3
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817476"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402020"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Procedura: A livello di codice aggiungere il testo e formattazione alle celle delle tabelle di Word
   Ogni tabella è costituita da una raccolta di celle. Ogni singolo oggetto <xref:Microsoft.Office.Interop.Word.Cell> rappresenta una cella della tabella. Le singole celle vengono individuate tramite la relativa posizione nella tabella. Questo esempio si riferisce alla cella che si trova nella prima riga e nella prima colonna della tabella. Viene aggiunto un testo alla cella e viene applicata la formattazione.

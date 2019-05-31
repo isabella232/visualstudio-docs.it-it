@@ -29,7 +29,7 @@ Gli attributi personalizzati sono speciali attributi che possono essere aggiunti
   
 1. Nel **DSL Explorer**, selezionare l'elemento a cui si desidera aggiungere un attributo personalizzato.  
   
-2. Nel **delle proprietà** finestra, accanto al **Custom Attributes** proprietà, fare clic su Sfoglia (**...** ) icona.  
+2. Nel **delle proprietà** finestra, accanto al **Custom Attributes** proprietà, fare clic su Sfoglia ( **...** ) icona.  
   
      Il **Modifica attributi** verrà visualizzata la finestra di dialogo.  
   

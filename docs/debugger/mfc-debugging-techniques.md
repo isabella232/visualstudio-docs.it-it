@@ -358,7 +358,7 @@ Per gli oggetti allocati sull'heap, tuttavia, è necessario eliminare esplicitam
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizzazione di dump di oggetti
 Quando si deriva una classe da [CObject](/cpp/mfc/reference/cobject-class), è possibile eseguire l'override della funzione membro `Dump` per fornire ulteriori informazioni quando si usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) per eseguire il dump di oggetti nella [finestra Output](../ide/reference/output-window.md).
 
-La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore APPEND (**<<**) per inviare dati a `CDumpContext`.
+La funzione `Dump` scrive una rappresentazione testuale delle variabili membro dell'oggetto in un contesto di dump ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Il contesto di dump è analogo a un flusso I/O. È possibile usare l'operatore APPEND ( **<<** ) per inviare dati a `CDumpContext`.
 
 Quando si esegue l'override della funzione `Dump` , è opportuno chiamare dapprima la versione della classe base di `Dump` per effettuare il dump del contenuto dell'oggetto classe base, generando poi una descrizione testuale e un valore per ciascuna variabile membro della classe derivata.
 
@@ -432,7 +432,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    1. Nella finestra di dialogo **Pagine delle proprietà di \<Progetto>** fare clic sul pulsante **Gestione configurazione**.
 
-   2. Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>**.
+   2. Nella [finestra di dialogo Gestione configurazione](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))individuare il progetto all'interno della griglia. Nella colonna **Configurazione** selezionare **\<Nuova...>** .
 
    3. Nella [finestra di dialogo Nuova configurazione progetto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))digitare, all'interno della casella **Nome configurazione progetto** , il nome da assegnare alla nuova configurazione, ad esempio "Debug parziale".
 
@@ -472,7 +472,7 @@ La compilazione di moduli selezionati con le librerie di debug MFC consente di e
 
    6. Fare clic sulle impostazioni **Formato informazioni di debug** e selezionare l'opzione desiderata (in genere **/ZI**) per le informazioni di debug.
 
-   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++**, categoria **Intestazioni precompilate**).
+   7. Se si usa un'applicazione generata mediante una creazione guidata di applicazioni o si fa uso di intestazioni precompilate, sarà necessario disattivare tali intestazioni o compilarle nuovamente prima di compilare gli altri moduli. In caso contrario, verranno generati l'avviso C4650 e il messaggio di errore C2855. È possibile disattivare le intestazioni precompilate modificando l'impostazione **Crea/usa intestazioni precompilate** nella finestra di dialogo **Proprietà di \<Progetto>** (cartella **Proprietà di configurazione**, sottocartella **C/C++** , categoria **Intestazioni precompilate**).
 
 7. Scegliere **Compila** dal menu **Compila** per compilare nuovamente i file di progetto non aggiornati.
 
