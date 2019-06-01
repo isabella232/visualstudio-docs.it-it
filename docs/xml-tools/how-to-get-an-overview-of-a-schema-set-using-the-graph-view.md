@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Panoramica di un Set di schemi tramite la visualizzazione grafico in XML Schema della finestra di progettazione'
+title: 'Progettazione XML Schema: Ottenere informazioni generali sui set di schemi tramite visualizzazione grafico'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5539f698ba4b4c0998d23e413d2d71ac14e810e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0a0fc62a0d6dfe772a550f33cafa02bc5bc1bf3
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001961"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432168"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Procedura: Panoramica di uno schema impostato tramite la visualizzazione grafico
 
