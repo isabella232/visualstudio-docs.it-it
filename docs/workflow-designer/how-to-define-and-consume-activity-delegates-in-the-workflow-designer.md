@@ -1,5 +1,5 @@
 ---
-title: 'Finestra di progettazione del flusso di lavoro - procedura: Definire e usare delegati di attività'
+title: 'Finestra di progettazione del flusso di lavoro: Definire e usare delegati di attività'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949519"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431792"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedura: Definire e usare delegati di attività in Progettazione flussi di lavoro
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949519"
 
 5. Fare clic su **Crea argomento**. Assegnare un nome al nuovo argomento **elementi**.
 
-6. Nel **tipo di argomento** colonna, selezionare **matrice di T []**.
+6. Nel **tipo di argomento** colonna, selezionare **matrice di T []** .
 
 7. Nel browser dei tipi, selezionare **oggetti** e quindi selezionare **OK**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949519"
 
 14. Nel **tipo di variabile** colonna, selezionare **Int32**. Lasciare il **ambito** come **mentre**e il **predefinito** colonna vuota.
 
-15. Impostare il **condizione** proprietà del <xref:System.Activities.Statements.While> attività **indice < Items.Length;**.
+15. Impostare il **condizione** proprietà del <xref:System.Activities.Statements.While> attività **indice < Items.Length;** .
 
 16. Trascinare un' <xref:System.Activities.Statements.InvokeDelegate> attività dal **primitive** sezione della casella degli strumenti per il **corpo** del <xref:System.Activities.Statements.While> attività.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949519"
 
 18. Nel **delle proprietà** griglia per il <xref:System.Activities.Statements.InvokeDelegate> attività, fare clic sui **...**  pulsante il **argomenti del delegato** proprietà.
 
-19. Nel **valore** colonna dell'argomento denominato **argomento**, immettere **Items [Index]**. Fare clic su **accettabile** per chiudere la **DelegateArguments** finestra di dialogo.
+19. Nel **valore** colonna dell'argomento denominato **argomento**, immettere **Items [Index]** . Fare clic su **accettabile** per chiudere la **DelegateArguments** finestra di dialogo.
 
 20. Trascinare un'attività di <xref:System.Activities.Statements.Assign> sulla riga orizzontale al di sotto dell'attività di <xref:System.Activities.Statements.InvokeDelegate>. Il <xref:System.Activities.Statements.Assign> creazione di attività e un <xref:System.Activities.Statements.Sequence> attività viene creato automaticamente per contenere le due attività nel **corpo** sezione del **MyForEach** attività. La sequenza è necessaria poiché il **corpo** sezione può contenere solo una singola attività. Creazione automatica di un nuovo <xref:System.Activities.Statements.Sequence> attività è una nuova funzionalità di .NET Framework 4.5.
 
@@ -76,7 +76,7 @@ ms.locfileid: "62949519"
 
 3. Trascinare un **MyForEach** attività dalla casella degli strumenti all'area di progettazione. L'attività è in una sezione della casella degli strumenti con lo stesso nome del progetto.
 
-4. Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}**.
+4. Impostare il **elementi** proprietà del **MyForEach** attività **new Object [] {1, "abc"}** .
 
 5. Trascinare un <xref:System.Activities.Statements.WriteLine> attività dal **primitive** sezione della casella degli strumenti per il **Delegate: Body** sezione del **MyForEach** attività.
 
