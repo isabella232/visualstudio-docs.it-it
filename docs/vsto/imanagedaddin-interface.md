@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. L'applicazione individua i componenti aggiuntivi VSTO cercando le voci nella chiave seguente del Registro di sistema:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nome applicazione >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<nome applicazione >* \Addins\\**
 
     Ogni voce sotto questa chiave del Registro di sistema è un ID univoco del componente aggiuntivo VSTO. In genere, corrisponde al nome dell'assembly del componente aggiuntivo VSTO.
 
 2. L'applicazione cerca una voce `Manifest` nella voce per ciascun componente aggiuntivo VSTO.
 
-    VSTO Add-ins gestito può archiviare il percorso completo di un manifesto nel `Manifest` voce sotto **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nome applicazione >_ \Addins\\  _\<ID componente aggiuntivo >_**. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
+    VSTO Add-ins gestito può archiviare il percorso completo di un manifesto nel `Manifest` voce sotto **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<nome applicazione>_ \Addins\\ _\<ID componente aggiuntivo>_ **. Un manifesto è un file (in genere, un file XML) che fornisce informazioni usate per consentire il caricamento del componente aggiuntivo VSTO.
 
 3. Se l'applicazione individua una voce `Manifest` , prova a caricare un componente caricatore per componenti aggiuntivi VSTO gestiti. L'applicazione a tale scopo il tentativo di creare un oggetto COM che implementa l'interfaccia IManagedAddin.
 

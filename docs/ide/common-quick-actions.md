@@ -29,7 +29,7 @@ Le Azioni rapide in questa sezione consentono di correggere gli errori nel codic
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Correggere errori di ortografia in simboli o parole chiave
 
-Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu Lampadina come ***"Modifica '* parola errata *' in '* parola corretta**'. Ad esempio:
+Se si digita accidentalmente un tipo o una parola chiave con errori di ortografia in Visual Studio, questa azione rapida consente di correggerlo automaticamente. Questi elementi vengono visualizzati nel menu Lampadina come ** *"Modifica '* parola errata *' in '* parola corretta**'. Ad esempio:
 
 ```csharp
 // Before
@@ -448,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Convertire in una stringa interpolata
 
-Le [stringhe interpolate](/dotnet/csharp/language-reference/keywords/interpolated-strings) rappresentano un modo semplice, simile al metodo **[String.Format](/dotnet/api/system.string.format#overloads)**, per esprimere stringhe con variabili incorporate.  Questa azione rapida riconosce i casi in cui le stringhe sono concatenate o usano **String.Format** e ne modifica l'utilizzo in quello di una stringa interpolata.
+Le [stringhe interpolate](/dotnet/csharp/language-reference/keywords/interpolated-strings) rappresentano un modo semplice, simile al metodo **[String.Format](/dotnet/api/system.string.format#overloads)** , per esprimere stringhe con variabili incorporate.  Questa azione rapida riconosce i casi in cui le stringhe sono concatenate o usano **String.Format** e ne modifica l'utilizzo in quello di una stringa interpolata.
 
 ```csharp
 // Before
