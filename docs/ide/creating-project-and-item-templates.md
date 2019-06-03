@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793452"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037003"
 ---
 # <a name="project-and-item-templates"></a>Modelli di progetti e di elementi
 
@@ -47,7 +47,7 @@ Tutti i modelli di progetti e di elementi, sia quelli installati con Visual Stud
 
 ::: moniker-end
 
-   Per altre informazioni sui file con estensione *vstemplate*, vedere [Parametri di modello](../ide/template-parameters.md).
+   Per altre informazioni sui file con estensione *vstemplate*, vedere [Aggiungere o modificare tag nei modelli di progetto](template-tags.md) e [Parametri di modelli](../ide/template-parameters.md).
 
 Quando questi file vengono compressi in un file con estensione *zip* e inseriti nella cartella corretta, Visual Studio li visualizza automaticamente nelle seguenti posizioni:
 
@@ -71,6 +71,7 @@ Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuar
 
 - [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)
 - [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md)
+- [Aggiungere o modificare tag nei modelli di progetto](template-tags.md)
 - [Parametri di modello](../ide/template-parameters.md)
 - [Personalizzare i modelli](../ide/customizing-project-and-item-templates.md)
 - [Pacchetti NuGet nei modelli di Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

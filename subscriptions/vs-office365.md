@@ -7,26 +7,26 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947417"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263117"
 ---
-# <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus nelle sottoscrizioni di Visual Studio
+# <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus nelle sottoscrizioni di Visual Studio
 
-Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 Pro Plus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Office 365 include anche servizi come 1 TB di spazio di archiviazione di OneDrive, 60 minuti di Skype al mese e supporto tecnico Microsoft tramite chat e telefono. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
+Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 ProPlus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Office 365 include anche servizi come 1 TB di spazio di archiviazione di OneDrive, 60 minuti di Skype al mese e supporto tecnico Microsoft tramite chat e telefono. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
 
-## <a name="getting-started-with-office-365-pro-plus"></a>Introduzione a Office 365 Pro Plus
+## <a name="getting-started-with-office-365-proplus"></a>Introduzione a Office 365 ProPlus
 
-Attenersi alla procedura seguente per il download e l'attivazione di Office 365 Pro Plus:
+Seguire questa procedura per il download e l'attivazione di Office 365 ProPlus:
 1. Accedere alla sottoscrizione di Visual Studio Enterprise.
 2. Fare clic sulla scheda **Download**.
 3. Verrà visualizzato un elenco di download consigliati. Nell'elenco di Office scegliere **Office 365**.
    > [!div class="mx-imgBorder"]
    > ![Download per Office 365](_img/vs-office365/vs-office365-downloads.png)
-0. Per installare Office 365, è necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
+0. Per installare Office 365 ProPlus, sarà necessario un codice Product Key.  Fare clic sul collegamento **Recupera codice** nell'elenco di Office 365.
    > [!div class="mx-imgBorder"]
    > ![Recupera codice di Office 365](_img/vs-office365/vs-office365-get-key.png)
 0. Una finestra visualizza i codici già recuperati e quelli disponibili.  Per ottenere un nuovo codice, fare clic su **Claim key** (Richiedi codice) sotto la voce di elenco **Office Professional Plus 2019**.

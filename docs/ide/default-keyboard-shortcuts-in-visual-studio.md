@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962041"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261325"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
@@ -125,7 +125,8 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Debug.StepIntoSpecific|**MAIUSC+ALT+F11**|
 |Debug.StepOut|**MAIUSC+F11**|
 |Debug.StepOutCurrentProcess|**CTRL+MAIUSC+ALT+F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (durante il debug: esegue un istruzione/routine)|
+|Debug.StepOver|**F10** (quando non è in corso il debug: avvia il debug e si arresta in corrispondenza della prima riga del codice utente)|
 |Debug.SetpOverCurrentProcess|**CTRL+ALT+F10**|
 |Debug.StopDebugging|**MAIUSC+F5**|
 |Debug.StopPerformanceAnalysis|**MAIUSC+ALT+F2**|
@@ -293,9 +294,9 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+O** (lettera "O")|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+S**|
 
 ### <a name="bkmk_team"></a> Team
 
@@ -803,7 +804,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | Edit.GotoBraceExtend | **CTRL+MAIUSC+]** |
 | Edit.GotoRecent | **CTRL+T,R** |
 | Edit.GotoNextIssueinFile | **ALT+PGGIÙ** |
-| Edit.GotoPreviousIssueinFile  **ALT+PGSU** |
+| Edit.GotoPreviousIssueinFile | **ALT+PGSU** |
 | Edit.HideSelection | **CTRL+M, CTRL+H** |
 | Edit.IncreaseFilterLevel | **ALT+.** |
 | Edit.IncrementalSearch | **CTRL+I** |

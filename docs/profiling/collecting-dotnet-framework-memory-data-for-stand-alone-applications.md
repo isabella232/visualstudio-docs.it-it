@@ -1,5 +1,5 @@
 ---
-title: Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler | Microsoft Docs
+title: Ottenere dati sulla memoria di .NET Framework tramite la riga di comando del profiler
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e23c473d281ba72173df43349bf3a44929ddb60f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949033"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263741"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria .NET Framework tramite la riga di comando del profiler
 

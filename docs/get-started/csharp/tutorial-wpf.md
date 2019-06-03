@@ -1,5 +1,5 @@
 ---
-title: 'Esercitazione: App Hello World con Windows Presentation Foundation (WPF) in C#'
+title: App Hello World con WPF in C#
 description: Creare una semplice app Windows Desktop .NET in C# con Visual Studio usando il framework di interfaccia utente Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426538"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261702"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare una semplice applicazione con C\#
 
@@ -62,7 +62,7 @@ Quando si crea un'applicazione in Visual Studio, è innanzitutto necessario crea
 
      ![Nella barra dei menu scegliere File, Nuovo, Progetto](../media/exploreide-filenewproject.png)
 
-1. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual C#** > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)**. Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
+1. Nella finestra di dialogo **Nuovo progetto** selezionare la categoria **Installati** > **Visual C#**  > **Windows Desktop** e quindi selezionare il modello **App WPF (.NET Framework)** . Assegnare al progetto il nome **HelloWPFApp** e scegliere **OK**.
 
      ![Modello App WPF nella finestra di dialogo Nuovo progetto di Visual Studio](media/exploreide-newprojectcsharp.png)
 
@@ -308,7 +308,7 @@ Dopo aver verificato che tutto funzioni, è possibile preparare una build di ril
 
 3. Compilare la soluzione scegliendo **Compila** > **Compila soluzione**.
 
-L'esercitazione è stata completata. È possibile trovare il file con estensione *exe* compilato nella directory del progetto e della soluzione (*…\HelloWPFApp\HelloWPFApp\bin\Release*).
+L'esercitazione è stata completata. È possibile trovare il file con estensione *exe* compilato nella directory del progetto e della soluzione ( *…\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Vedere anche
 

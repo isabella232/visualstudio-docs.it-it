@@ -1,5 +1,5 @@
 ---
-title: Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012 | Microsoft Docs
+title: Strumenti per le prestazioni nelle app Windows 8 e Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798198"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262950"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012
 
@@ -109,7 +109,7 @@ I dati di profilatura dell'interazione tra livelli possono essere raccolti usand
 
 **Raccolta di dati TIP in un computer remoto**
 
-Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_**_\<Piattaforma>_**\_**_\<Linguaggio>_**.exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
+Per raccogliere dati di interazione tra livelli in un computer remoto, è necessario copiare il file **vs\_profiler\_** _\<Piattaforma>_ **\_** _\<Linguaggio>_ **.exe** dalla cartella *%VSInstallDir%\Team Tools\Performance Tools\Setups* di un computer Visual Studio nel computer remoto e installarlo. Non è possibile usare gli strumenti di profilatura nel pacchetto di download di [debug remoto](../debugger/remote-debugging.md).
 
 È possibile usare [VSPerfCmd](../profiling/vsperfcmd.md) o [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) per raccogliere i dati di profilatura.
 

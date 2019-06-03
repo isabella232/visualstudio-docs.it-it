@@ -1,5 +1,5 @@
 ---
-title: Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale | Documentazione Microsoft
+title: Emulatore Express per eseguire un servizio cloud di Azure ed eseguirne il debug in un computer locale
 description: Uso di Emulator Express per l'esecuzione e il debug di un servizio cloud in un computer locale
 author: mikejo5000
 manager: jillfra
@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86ec00f5fdd80f4c42fdaf1d7c5c44e6008983de
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560760"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260669"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso dell'emulatore Express per l'esecuzione e il debug di un servizio cloud di Azure in un computer locale
 Con l'emulatore Express, è possibile testare ed eseguire il debug di un servizio cloud senza eseguire Visual Studio come amministratore. È possibile configurare le impostazioni del progetto per usare l'emulatore Express o l'emulatore completo, in base ai requisiti del servizio cloud. Per altre informazioni sull'emulatore completo, vedere [Eseguire un'applicazione Azure nell'emulatore di calcolo](/azure/storage/common/storage-use-emulator).
