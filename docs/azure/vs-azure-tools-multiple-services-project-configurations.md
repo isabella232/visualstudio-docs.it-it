@@ -1,5 +1,5 @@
 ---
-title: Configurazione del progetto Azure tramite più configurazioni del servizio | Documentazione Microsoft
+title: Configurare un progetto di Azure con più configurazioni di servizio
 description: Informazioni su come configurare un progetto di servizio cloud di Azure modificando i file ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg e ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555303"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260642"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurazione del progetto Azure di Visual Studio per l'uso di più configurazioni del servizio
 
@@ -51,7 +51,7 @@ Se è già stato aggiunto un endpoint HTTPS, l'opzione Endpoint HTTPS è abilita
 
 ### <a name="diagnostics"></a>Diagnostica
 
-Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore (**…**) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Per impostazione predefinita, la diagnostica è abilitata per il ruolo Web. Il progetto di servizio cloud di Azure e l'account di archiviazione sono impostati per usare l'emulatore di archiviazione locale. Quando si è pronti a eseguire la distribuzione in Azure, è possibile selezionare il pulsante del generatore ( **…** ) per usare in sostituzione l’archiviazione di Azure. È possibile trasferire i dati di diagnostica nell'account di archiviazione a richiesta o a intervalli pianificati automaticamente. Per altre informazioni sulla diagnostica di Azure, vedere [Abilitazione della diagnostica nei servizi cloud e nelle macchine virtuali di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Pagina Impostazioni
 
@@ -68,7 +68,7 @@ Una stringa di connessione è un'impostazione che fornisce informazioni di conne
 
 Per creare una stringa di connessione, selezionare **Aggiungi impostazione** e impostare **Tipo** su "Stringa di connessione".
 
-Per le stringhe di connessione nuove o esistenti, selezionare **...*** a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
+Per le stringhe di connessione nuove o esistenti, selezionare **...** * a destra del campo **Valore** per aprire la finestra di dialogo **Crea stringa di connessione a risorsa di archiviazione**:
 
 1. In **Connetti con** scegliere l'opzione **Sottoscrizione** per selezionare un account di archiviazione da una sottoscrizione. Visual Studio otterrà quindi le credenziali dell'account di archiviazione automaticamente dal file `.publishsettings`.
 1. Se si seleziona **Credenziali immesse manualmente**, è possibile specificare il nome e la chiave dell'account direttamente, usando le informazioni presenti nel portale di Azure. Per copiare la chiave dell'account:

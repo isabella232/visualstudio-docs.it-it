@@ -1,21 +1,19 @@
 ---
-title: Configurare la diagnostica per i servizi cloud e le macchine virtuali di Azure | Microsoft Docs
+title: Diagnostica per Servizi cloud di Azure e macchine virtuali
 description: Informazioni su come configurare la diagnostica per il debug dei servizi cloud e delle macchine virtuali di Azure in Visual Studio.
-author: mikejo5000
+author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556424"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177335"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurare la diagnostica per Servizi cloud di Azure e macchine virtuali
 Per risolvere gli errori di un servizio cloud o di una macchina virtuale di Azure, è possibile usare Visual Studio per configurare con maggiore facilità Diagnostica di Azure. Diagnostica di Azure acquisisce i dati di sistema e i dati di registrazione nelle macchine virtuali e nelle istanze di macchine virtuali che eseguono il servizio cloud. I dati di diagnostica vengono trasferiti all'account di archiviazione scelto. Per altre informazioni sulla registrazione diagnostica in Azure, vedere [Abilitare la registrazione diagnostica per le app Web nel servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -91,7 +89,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per i ruoli eseg
     ![Abilitare la diagnostica e la configurazione di Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. Per questo esempio selezionare l'opzione **Personalizza piano** , in modo da poter personalizzare i dati raccolti.
 7. Nella casella **Quota disco in MB** è possibile specificare la quantità di spazio da allocare nell'account di archiviazione per i dati di diagnostica. È possibile modificare o accettare il valore predefinito.
-8. In ogni scheda dei dati di diagnostica da raccogliere selezionare la casella di controllo **Abilita il trasferimento di \<tipo log\>**. Ad esempio, per raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **Log applicazioni**. Specificare anche eventuali altre informazioni richieste da ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
+8. In ogni scheda dei dati di diagnostica da raccogliere selezionare la casella di controllo **Abilita il trasferimento di \<tipo log\>** . Ad esempio, per raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **Log applicazioni**. Specificare anche eventuali altre informazioni richieste da ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
 9. Dopo aver abilitato la raccolta di tutti i dati di diagnostica desiderati, selezionare **OK**.
 10. Eseguire il progetto di servizio cloud di Azure in Visual Studio come di consueto. Quando si usa l'applicazione, le informazioni di log abilitate vengono salvate nell'account di archiviazione di Azure specificato.
 
@@ -123,7 +121,7 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
     La scheda predefinita **Generale** offre le opzioni di raccolta di dati di diagnostica seguenti: **Solo errori**, **Tutte le informazioni** e **Piano personalizzato**. L'opzione predefinita, **Solo errori**, richiede la quantità minima di spazio di archiviazione, perché non trasferisce messaggi di avviso o di traccia. L'opzione **Tutte le informazioni** trasferisce la quantità più elevata di informazioni ed è quindi l'opzione più costosa in termini di risorse di archiviazione.
 7. Per questo esempio selezionare l'opzione **Personalizza piano** , in modo da personalizzare i dati raccolti.
 8. La casella **Quota disco in MB** specifica la quantità di spazio da allocare nell'account di archiviazione per i dati di diagnostica. Se si vuole, è possibile cambiare il valore predefinito.
-9. In ogni scheda dei dati di diagnostica da raccogliere selezionare la rispettiva casella di controllo **Abilita il trasferimento di \<tipo log\>**.
+9. In ogni scheda dei dati di diagnostica da raccogliere selezionare la rispettiva casella di controllo **Abilita il trasferimento di \<tipo log\>** .
 
     Ad esempio, per raccogliere i log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** nella scheda **Log applicazioni**. Specificare anche eventuali altre informazioni richieste per ogni tipo di dati di diagnostica. Per informazioni sulla configurazione di ogni scheda, vedere la sezione **Configurare le origini dati di diagnostica** più avanti in questo articolo.
 10. Dopo l'abilitazione della raccolta di tutti i dati di diagnostica desiderati, selezionare **OK**.
@@ -135,14 +133,14 @@ In Visual Studio è possibile raccogliere i dati di diagnostica per le macchine 
 Dopo aver abilitato la raccolta di dati di diagnostica, è possibile scegliere esattamente le origini dati da raccogliere e le informazioni raccolte. Nelle sezioni successive vengono descritte le schede della finestra di dialogo **Configurazione di diagnostica** con indicazione del significato di ogni opzione di configurazione.
 
 ### <a name="application-logs"></a>Log applicazioni
-I log applicazioni includono informazioni di diagnostica prodotte da un'applicazione Web. Se, ad esempio, si vogliono acquisire log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** . Per aumentare o diminuire l'intervallo tra il trasferimento dei log applicazioni all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. È anche possibile cambiare la quantità di informazioni acquisite nel log, impostando il valore **Livello log**. Ad esempio, selezionare **Dettagliato** per ottenere più informazioni oppure **Critico** per acquisire solo gli errori critici. Se è disponibile un provider di diagnostica specifico che genera log applicazioni, sarà possibile acquisirli aggiungendo il GUID nella casella **GUID provider**.
+I log applicazioni includono informazioni di diagnostica prodotte da un'applicazione Web. Se, ad esempio, si vogliono acquisire log applicazioni, selezionare la casella di controllo **Abilita il trasferimento di log applicazioni** . Per aumentare o diminuire l'intervallo tra il trasferimento dei log applicazioni all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** . È anche possibile cambiare la quantità di informazioni acquisite nel log, impostando il valore **Livello log**. Ad esempio, selezionare **Dettagliato** per ottenere più informazioni oppure **Critico** per acquisire solo gli errori critici. Se è disponibile un provider di diagnostica specifico che genera log applicazioni, sarà possibile acquisirli aggiungendo il GUID nella casella **GUID provider**.
 
   ![Log applicazioni](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
 Per altre informazioni sui log applicazioni, vedere [Abilitare la registrazione diagnostica per le app Web del Servizio app di Azure](/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="windows-event-logs"></a>Registri eventi di Windows
-Per acquisire registri eventi di Windows, selezionare la casella di controllo **Abilita il trasferimento dei log eventi di Windows**. Per aumentare o diminuire l'intervallo tra il trasferimento dei registri eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. Selezionare le caselle di controllo per i tipi di eventi da tracciare.
+Per acquisire registri eventi di Windows, selezionare la casella di controllo **Abilita il trasferimento dei log eventi di Windows**. Per aumentare o diminuire l'intervallo tra il trasferimento dei registri eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** . Selezionare le caselle di controllo per i tipi di eventi da tracciare.
 
 ![Log eventi](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
@@ -158,21 +156,21 @@ Se si usa Azure SDK 2.5 e si vuole specificare un'origine dati personalizzata, �
 ```
 
 ### <a name="performance-counters"></a>Contatori delle prestazioni
-Le informazioni sui contatori delle prestazioni possono semplificare l'individuazione dei colli di bottiglia e l'ottimizzazione delle prestazioni del sistema e delle applicazioni. Per altre informazioni, vedere [Creare e usare contatori di prestazioni in un'applicazione Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Per acquisire contatori delle prestazioni, selezionare la casella di controllo **Abilita il trasferimento di contatori delle prestazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei registri eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**. Selezionare le caselle di controllo per i contatori delle prestazioni da tracciare.
+Le informazioni sui contatori delle prestazioni possono semplificare l'individuazione dei colli di bottiglia e l'ottimizzazione delle prestazioni del sistema e delle applicazioni. Per altre informazioni, vedere [Creare e usare contatori di prestazioni in un'applicazione Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Per acquisire contatori delle prestazioni, selezionare la casella di controllo **Abilita il trasferimento di contatori delle prestazioni**. Per aumentare o diminuire l'intervallo tra il trasferimento dei registri eventi all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** . Selezionare le caselle di controllo per i contatori delle prestazioni da tracciare.
 
 ![Contatori delle prestazioni](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
 Per tenere traccia di un contatore delle prestazioni non incluso nell'elenco, immetterlo usando la sintassi suggerita e quindi selezionare **Aggiungi**. Il sistema operativo della macchina virtuale determina i contatori delle prestazioni di cui è possibile tenere traccia. Per altre informazioni sulla sintassi, vedere [Specificare un percorso del contatore](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Log infrastruttura
-I log dell'infrastruttura contengono informazioni sull'infrastruttura di diagnostica di Azure, il modulo RemoteAccess e il modulo RemoteForwarder. Per raccogliere informazioni sui log dell'infrastruttura, selezionare la casella di controllo **Abilita il trasferimento dei log dell'infrastruttura di diagnostica**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log dell'infrastruttura all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**.
+I log dell'infrastruttura contengono informazioni sull'infrastruttura di diagnostica di Azure, il modulo RemoteAccess e il modulo RemoteForwarder. Per raccogliere informazioni sui log dell'infrastruttura, selezionare la casella di controllo **Abilita il trasferimento dei log dell'infrastruttura di diagnostica**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log dell'infrastruttura all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** .
 
 ![Log dell'infrastruttura di diagnostica](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
 Per altre informazioni, vedere [Raccogliere i dati di registrazione usando Diagnostica di Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
 ### <a name="log-directories"></a>Directory log
-Le directory di log contengono i dati raccolti dalle directory di log per le richieste di Internet Information Services (IIS), le richieste non riuscite o le cartelle scelte. Per acquisire le directory di log, selezionare la casella di controllo **Abilita il trasferimento di directory di log**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**.
+Le directory di log contengono i dati raccolti dalle directory di log per le richieste di Internet Information Services (IIS), le richieste non riuscite o le cartelle scelte. Per acquisire le directory di log, selezionare la casella di controllo **Abilita il trasferimento di directory di log**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** .
 
 Selezionare le caselle di controllo dei log da raccogliere, ad esempio **Log IIS** e **Log delle richieste non riuscite**. Vengono forniti i nomi dei contenitori di archiviazione predefiniti, ma è possibile modificarli.
 
@@ -181,7 +179,7 @@ Selezionare le caselle di controllo dei log da raccogliere, ad esempio **Log IIS
 ![Directory log](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>Log ETW
-Se si usa [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) e si vogliono acquisire log ETW, selezionare la casella di controllo **Abilita il trasferimento di log ETW**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)**.
+Se si usa [Event Tracing for Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) e si vogliono acquisire log ETW, selezionare la casella di controllo **Abilita il trasferimento di log ETW**. Per aumentare o diminuire l'intervallo tra il trasferimento dei log all'account di archiviazione, modificare il valore **Periodo di trasferimento (min)** .
 
 Gli eventi vengono acquisiti da origini eventi e manifesti evento specificati. Per specificare un'origine eventi, immettere un nome nella sezione **Origini evento** e quindi selezionare **Aggiungi origine evento**. In modo analogo, è possibile specificare un manifesto di evento nella sezione **Manifesti evento** e quindi selezionare **Aggiungi manifesto evento**.
 
@@ -190,7 +188,7 @@ Gli eventi vengono acquisiti da origini eventi e manifesti evento specificati. P
 Il framework ETW è supportato in ASP.NET tramite le classi nello spazio dei nomi [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). Lo spazio dei nomi Microsoft.WindowsAzure.Diagnostics, che eredita dalle classi standard [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) e le estende, consente l'uso di [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) come framework di registrazione nell'ambiente Azure. Per altre informazioni, vedere [Controllo della registrazione e della traccia in Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) e [Abilitazione di Diagnostica di Azure in servizi cloud di Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Dump di arresto anomalo del sistema
-Per acquisire informazioni sulle situazioni in cui si verifica un arresto anomalo di un'istanza del ruolo, selezionare la casella di controllo **Abilita il trasferimento di dump di arresto anomalo del sistema**. Poiché la maggior parte delle eccezioni è gestita da ASP.NET, questo è in genere utile solo per i ruoli di lavoro. Per aumentare o ridurre la percentuale di spazio di archiviazione dedicata ai dump di arresto anomalo del sistema, modificare il valore **Quota directory (%)**. È possibile cambiare il contenitore di archiviazione in cui vengono archiviati i dump di arresto anomalo del sistema e stabilire se si vuole acquisire un dump **Completo** o **Ridotto**.
+Per acquisire informazioni sulle situazioni in cui si verifica un arresto anomalo di un'istanza del ruolo, selezionare la casella di controllo **Abilita il trasferimento di dump di arresto anomalo del sistema**. Poiché la maggior parte delle eccezioni è gestita da ASP.NET, questo è in genere utile solo per i ruoli di lavoro. Per aumentare o ridurre la percentuale di spazio di archiviazione dedicata ai dump di arresto anomalo del sistema, modificare il valore **Quota directory (%)** . È possibile cambiare il contenitore di archiviazione in cui vengono archiviati i dump di arresto anomalo del sistema e stabilire se si vuole acquisire un dump **Completo** o **Ridotto**.
 
 I processi attualmente tracciati sono elencati nel prossimo screenshot. Selezionare le caselle di controllo per i processi da acquisire. Per aggiungere un altro processo all'elenco, immettere il nome del processo e quindi selezionare **Aggiungi processo**.
 

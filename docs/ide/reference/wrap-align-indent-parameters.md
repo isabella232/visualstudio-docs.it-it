@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789067"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037589"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Ritorno a capo automatico, rientro e allineamento dei parametri o degli argomenti
 
 Questo refactoring si applica a:
 
@@ -25,16 +25,16 @@ Questo refactoring si applica a:
 
 - Visual Basic
 
-**Cosa:** consente di impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri.
+**Cosa:** consente di impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri o degli argomenti.
 
-**Quando:** si ha una dichiarazione o chiamata al metodo con molteplici parametri.
+**Quando:** si ha una dichiarazione o chiamata di metodo con molteplici parametri o argomenti.
 
-**Perché?:** la lettura di un lungo elenco di parametri è più semplice quando è stato impostato il ritorno a capo automatico o il rientro in base alle preferenze dell'utente.
+**Perché?:** la lettura di un lungo elenco di parametri o argomenti è più semplice quando viene impostato il ritorno a capo automatico o il rientro in base alle preferenze dell'utente.
 
 ## <a name="how-to"></a>Procedura
 
 1. Posizionare il cursore nell'elenco di parametri.
-2. Premere **CTRL**+**.** per attivare il menu **Azioni rapide e refactoring**.
+2. Premere **CTRL**+ **.** per attivare il menu **Azioni rapide e refactoring**.
 
    ![Impostare il ritorno a capo automatico, il rientro e l'allineamento dei parametri](media/wrap-parameters.png)
 

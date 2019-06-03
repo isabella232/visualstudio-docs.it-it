@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847370"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261970"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -209,6 +209,6 @@ Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la vi
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Convenzioni di denominazione Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
-- [File .editorconfig in .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
