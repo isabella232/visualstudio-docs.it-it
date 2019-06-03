@@ -84,18 +84,18 @@ ms.locfileid: "63440376"
 
 |Excel|Word|
 |-----------|----------|
-|Excel workbook (*.xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (*xltx*)<br /><br /> Modello di Excel con attivazione macro (*xltm*)<br /><br /> Modello di Excel 97-2003 (*xlt*)|Documento di Word (*docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello di Word 97-2003 (*dot*)|
+|Excel workbook ( *.xlsx*)<br /><br /> Cartella di lavoro con attivazione macro di Excel (*xlsm*)<br /><br /> Cartella di lavoro binaria di Excel (*xlsb*)<br /><br /> Cartella di lavoro di Excel 97-2003 (*xls*)<br /><br /> Modello di Excel (*xltx*)<br /><br /> Modello di Excel con attivazione macro (*xltm*)<br /><br /> Modello di Excel 97-2003 (*xlt*)|Documento di Word (*docx*)<br /><br /> Documento di Word con attivazione macro (*docm*)<br /><br /> Documento di Word 97-2003 (*doc*)<br /><br /> Modello di Word (*dotx*)<br /><br /> Modello di Word con attivazione macro (*dotm*)<br /><br /> Modello di Word 97-2003 (*dot*)|
 
  Si consiglia di progettare le estensioni di codice gestito solo per documenti nei formati supportati. In caso contrario, è possibile che alcuni eventi non vengano generati all'apertura del documento nell'applicazione. Ad esempio, il <xref:Microsoft.Office.Tools.Excel.Workbook.Open> non viene generato quando si usano le estensioni di codice gestito con cartelle di lavoro salvati in formato XML di Excel del foglio di calcolo o nella pagina web (*htm*; *HTML*) formato.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Supporto per i documenti di Word con estensione XML estensioni
  I modelli di progetto a livello di documento non consentono di creare progetti basati sui formati di file seguenti:
 
-- Documento XML di Word (*\*xml*).
+- Documento XML di Word ( *\*xml*).
 
-- Documento XML di Word 2003 (*\*xml*).
+- Documento XML di Word 2003 ( *\*xml*).
 
-  Se si vuole che gli utenti finali usino le personalizzazioni in questi formati di file, compilare e distribuire una personalizzazione che usi uno dei formati di file supportati specificati nella tabella precedente. Dopo aver installato la personalizzazione, gli utenti finali possono salvare il documento nel documento XML di Word (*\*xml*) formato o il documento XML di Word 2003 (*\*xml*), formato e il personalizzazione continuerà a funzionare come previsto.
+  Se si vuole che gli utenti finali usino le personalizzazioni in questi formati di file, compilare e distribuire una personalizzazione che usi uno dei formati di file supportati specificati nella tabella precedente. Dopo aver installato la personalizzazione, gli utenti finali possono salvare il documento nel documento XML di Word ( *\*xml*) formato o il documento XML di Word 2003 ( *\*xml*), formato e il personalizzazione continuerà a funzionare come previsto.
 
 ## <a name="Components"></a> Componenti delle personalizzazioni
  I componenti principali di una personalizzazione sono il documento e l'assembly. Oltre a questi componenti, anche alcune altre parti svolgono un ruolo importante nel modo in cui le applicazioni di Microsoft Office individuano e caricano le personalizzazioni.
@@ -139,7 +139,7 @@ ms.locfileid: "63440376"
 
 8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carica l'assembly di personalizzazione nel dominio dell'applicazione.
 
-9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama il gestore eventi **Startup** nell'assembly di personalizzazione. Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md)
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chiama il gestore eventi **Startup** nell'assembly di personalizzazione. Per altre informazioni, vedere [eventi nei progetti di Office](../vsto/events-in-office-projects.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Architettura delle soluzioni Office in Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
