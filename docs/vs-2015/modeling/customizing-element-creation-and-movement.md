@@ -111,7 +111,7 @@ ms.locfileid: "63433277"
   
       È possibile utilizzare lo strumento di navigazione del percorso per creare ciascun percorso:  
   
-   3. Sotto **elabora l'unione creando collegamenti nei percorsi**, fare clic su  **\<aggiungere percorso >**.  
+   3. Sotto **elabora l'unione creando collegamenti nei percorsi**, fare clic su  **\<aggiungere percorso >** .  
   
    4. Fare clic sulla freccia giù a destra dell'elemento dell'elenco. Verrà visualizzata una visualizzazione albero.  
   
