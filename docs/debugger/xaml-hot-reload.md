@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929139"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462150"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrittura e debug del codice XAML in esecuzione con ricaricamento a caldo di XAML in Visual Studio
 
@@ -47,7 +47,7 @@ Di seguito sono noti limitazioni di XAML a caldo ricarica. Per risolvere qualsia
 |Creazione di oggetti di risorse in un dizionario risorse, ad esempio quelli nella pagina o finestra dell'app o *App*|Non supportato|Supportato|Esempio: aggiunta di un ```SolidColorBrush``` in un dizionario risorse per l'utilizzo come un ```StaticResource```.</br>Nota: Risorse statiche, convertitori di tipi di stile e altri elementi scritti in un dizionario risorse possono essere applicato o utilizzato durante l'utilizzo di ricaricamento a caldo di XAML. Non è supportata solo la creazione della risorsa.</br> La modifica del dizionario risorse ```Source``` proprietà.| 
 |Aggiunta di nuovi controlli, le classi, windows o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
 |La gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
-|Modifica data binding, che usa l'estensione di markup {X:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non è supportato in Visual Studio 2018 o versioni precedenti|
+|Modifica data binding, che usa l'estensione di markup {X:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non è supportato in Visual Studio 2017 o versioni precedenti|
 
 ## <a name="error-messages"></a>Messaggi di errore
 

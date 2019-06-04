@@ -3,7 +3,6 @@ title: 'Procedura: A livello di codice salva gli allegati da elementi di posta e
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
-- VB
 - CSharp
 helpviewer_keywords:
 - Outlook [Office development in Visual Studio], attachments
@@ -16,25 +15,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d222924e753db1b476a5d7729e2c794a8ab305e2
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419491"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462113"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedura: A livello di codice salva gli allegati da elementi di posta elettronica di Outlook
-  In questo esempio gli allegati di posta elettronica vengono salvati in una cartella specificata quando si riceve posta nella posta in arrivo.
+
+In questo esempio gli allegati di posta elettronica vengono salvati in una cartella specificata quando si riceve posta nella posta in arrivo.
 
 > [!IMPORTANT]
 > Questo esempio funziona solo se si aggiunge una cartella denominata **TestFileSave** alla radice dell'unità C.
 
- [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
+[!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>Esempio
- [!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
+
+[!code-csharp[Trin_OL_SaveAttachments#1](../vsto/codesnippet/CSharp/Trin_OL_SaveAttachments/thisaddin.cs#1)]
 
 ## <a name="see-also"></a>Vedere anche
+
 - [Usare gli elementi di posta elettronica](../vsto/working-with-mail-items.md)
 - [Procedura: Recuperano una cartella in base al nome](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [Procedura: A livello di programmazione eseguire azioni quando viene ricevuto un messaggio di posta elettronica](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
