@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213782"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501125"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aggiornare Visual Studio secondo una baseline di manutenzione
 
-Per Visual Studio 2019 verranno pubblicati aggiornamenti frequenti durante il [ciclo di vita del prodotto](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Tali aggiornamenti includeranno sia aggiornamenti di versione secondari (ad esempio: dalla versione 16.0 alla versione 16,1) che possono includere nuove funzionalità e nuovi componenti, sia aggiornamenti di manutenzione (ad esempio: dalla versione 16.0.4 alla versione 16.0.5) che contengono solo correzioni mirate per problemi critici. 
+Per Visual Studio 2019 verranno pubblicati aggiornamenti frequenti durante il [ciclo di vita del prodotto](/visualstudio/productinfo/release-rhythm#release-channel-updates). Tali aggiornamenti includeranno sia aggiornamenti di versione secondari (ad esempio: dalla versione 16.0 alla versione 16,1) che possono includere nuove funzionalità e nuovi componenti, sia aggiornamenti di manutenzione (ad esempio: dalla versione 16.0.4 alla versione 16.0.5) che contengono solo correzioni mirate per problemi critici. 
 
-Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva. Ciò consente una maggiore flessibilità per gli sviluppatori e gli amministratori per l'adozione di nuove funzionalità, correzioni di bug o componenti inclusi nei nuovi aggiornamenti secondari. La prima baseline di manutenzione è 16.0.x. Per altre informazioni, vedere [Opzioni di supporto per i clienti Enterprise e Professional](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers).
+Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva. Ciò consente una maggiore flessibilità per gli sviluppatori e gli amministratori per l'adozione di nuove funzionalità, correzioni di bug o componenti inclusi nei nuovi aggiornamenti secondari. La prima baseline di manutenzione è 16.0.x. Per altre informazioni, vedere [Opzioni di supporto per i clienti Enterprise e Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Come adottare una baseline di manutenzione
 
