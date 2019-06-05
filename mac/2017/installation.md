@@ -7,12 +7,12 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998149"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500977"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installare Visual Studio 2017 per Mac
 
@@ -67,7 +67,7 @@ Per l'uso di iOS in Visual Studio è necessario quanto segue:
       - App Xamarin completamente multipiattaforma - Selezionare le piattaforme **Android**, **iOS** e **macOS**.
    * **Applicazioni .NET Core** - Selezionare la piattaforma **.NET Core**.
    * **Applicazioni Web ASP.NET Core** - Selezionare la piattaforma **.NET Core**.
-   * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](/visualstudio/macm/setup-vsmac-tools-unity) per altre informazioni sull'installazione dell'estensione di Unity.
+   * **Sviluppo di giochi Unity multipiattaforma** - Non è necessario installare alcuna piattaforma aggiuntiva oltre a Visual Studio per Mac. Fare riferimento alla [guida all'installazione di Unity](/visualstudio/mac/setup-vsmac-tools-unity) per altre informazioni sull'installazione dell'estensione di Unity.
 
    Questa schermata di installazione mostra la versione e le dimensioni di ogni singolo componente. È possibile fare clic su ogni componente per visualizzare un elenco delle relative dipendenze (per Android), visualizzare altri pacchetti scaricati (per .NET Core) o visualizzare le applicazioni aggiuntive necessarie (per iOS e macOS):
 

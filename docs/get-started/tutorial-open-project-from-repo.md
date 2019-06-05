@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944117"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402079"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Esercitazione: Aprire un progetto da un repository
 
@@ -177,9 +177,9 @@ Visualizzare l'animazione seguente per verificare il lavoro completato nella sez
 
 Se è pronti a scrivere codice con Visual Studio, è possibile approfondire l'argomento in una delle esercitazioni specifiche per linguaggio seguenti:
 
-- [Esercitazioni di Visual Studio | **C#**](./csharp/index.yml)
+- [Esercitazioni di Visual Studio | **C#** ](./csharp/index.yml)
 - [Esercitazioni di Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Esercitazioni di Visual Studio | **C++**](/cpp/get-started/)
+- [Esercitazioni di Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Esercitazioni di Visual Studio | **Python**](/visualstudio/python/)
 - [Esercitazioni di Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](/visualstudio/javascript/)
 
