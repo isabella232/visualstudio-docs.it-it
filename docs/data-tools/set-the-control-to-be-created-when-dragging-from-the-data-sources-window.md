@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260962"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715103"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Impostare il controllo da creare durante il trascinamento dalla finestra Origini dati
 
@@ -45,7 +45,7 @@ In questo contesto il termine *oggetto* fa riferimento a un oggetto business per
 
     - Per visualizzare tutti i dati in un singolo controllo, selezionare un altro controllo nell'elenco, ad esempio **DataGrid** oppure **elenco** in un'applicazione WPF, o **DataGridView** in un controllo Windows Form applicazione.
 
-    L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET Framework le destinazioni del progetto e se aggiunta di controlli personalizzati che supportano l'associazione a dati di **casella degli strumenti**. Se il controllo che si desidera creare non è presente nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET le destinazioni del progetto e se aggiunta di controlli personalizzati che supportano l'associazione a dati di **casella degli strumenti**. Se il controllo che si desidera creare non è presente nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Per informazioni su come creare un controllo Windows Form personalizzato che può essere aggiunto all'elenco di controlli per le tabelle di dati o oggetti nel **Zdroje dat** finestra, vedere [creare un controllo utente Windows Form che supporta dati complessi associazione](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Prima di trascinare un elemento che rappresenta una colonna o una proprietà di 
 
 4. Fare clic sul menu a discesa per la colonna o proprietà e quindi selezionare il controllo da creare quando l'elemento viene trascinato nella finestra di progettazione.
 
-     L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET Framework le destinazioni del progetto e dai controlli personalizzati che supportano i dati di associazione si sono aggiunte alle **casella degli strumenti**. Se il controllo da creare è nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     L'elenco dei controlli disponibili dipende dalla progettazione aperta, la versione di .NET le destinazioni del progetto e dai controlli personalizzati che supportano i dati di associazione si sono aggiunte alle **casella degli strumenti**. Se il controllo da creare è nell'elenco dei controlli disponibili, è possibile aggiungere il controllo all'elenco. Per altre informazioni, vedere [aggiungere controlli personalizzati alla finestra Origini dei dati](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Per informazioni su come creare un controllo personalizzato che può essere aggiunto all'elenco di controlli per le colonne di dati o le proprietà nel **Zdroje dat** finestra, vedere [creare un controllo utente Windows Form che supporta il data binding semplice](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

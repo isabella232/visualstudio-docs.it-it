@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38a2bce9e3343c4439eaf033ccfb8d6e58b01baa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81c4d6ba7cc4ae870c74733a4e78733c023e3f58
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540694"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713969"
 ---
 # <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Panoramica dell'analisi codice statico per il codice gestito in Visual Studio
 
 Visual Studio è possibile eseguire analisi del codice del codice gestito in due modi: con *FxCop* analisi statica di assembly gestiti e con le altre modern *analizzatori di Roslyn*. Questo argomento illustra l'analisi statica del codice di FxCop. Per altre informazioni su analisi del codice tramite gli analizzatori di codice, vedere [analizzatori di panoramica di Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
-L'analisi del codice gestito analizza gli assembly gestiti e fornisce informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite nelle linee guida di progettazione di Microsoft .NET Framework.
+Analisi del codice per il codice gestito analizza gli assembly gestiti e segnala le informazioni sugli assembly, ad esempio le violazioni delle regole di programmazione e progettazione definite [linee guida di progettazione .NET](/dotnet/standard/design-guidelines/).
 
 Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come messaggi di avviso. I messaggi di avviso identificano eventuali problemi di programmazione e progettazione e, se possibile, forniscono informazioni su come risolverli.
 
 > [!NOTE]
-> Analisi statica del codice non sono supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di msbuild, si noterà un errore simile al **errore: CA0055: Impossibile identificare la piattaforma per \<your.dll >**. Per analizzare codice nei progetti .NET Core o .NET Standard, utilizzare [analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md) invece.
+> Analisi statica del codice non sono supportata per i progetti .NET Core e .NET Standard in Visual Studio. Se si esegue l'analisi del codice in un progetto .NET Core o .NET Standard come parte di msbuild, si noterà un errore simile al **errore: CA0055: Impossibile identificare la piattaforma per \<your.dll >** . Per analizzare codice nei progetti .NET Core o .NET Standard, utilizzare [analizzatori di Roslyn](../code-quality/roslyn-analyzers-overview.md) invece.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integrazione nell'IDE (ambiente di sviluppo integrato)
 
@@ -36,7 +36,7 @@ Lo strumento di analisi rappresenta i controlli eseguiti durante un'analisi come
 
 Per eseguire l'analisi del codice ogni volta che si compila un progetto, selezionare **Abilita analisi codice su compilazione** nella pagina delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Abilitare e disabilitare l'analisi codice automatica](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<progetto >**.
+Per eseguire manualmente l'analisi del codice in un progetto, dalla barra dei menu scegliere **Analyze** > **Esegui analisi del codice** > **Esegui analisi del codice \<progetto >** .
 
 ## <a name="rule-sets"></a>Set di regole
 

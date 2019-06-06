@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825043"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715270"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per i difetti del codice
 
 In questa procedura dettagliata, si sarà analizzare un progetto gestito per i difetti del codice utilizzando lo strumento di analisi codice.
 
-Questa procedura dettagliata viene illustrato il processo di uso di analisi del codice per analizzare gli assembly di codice .NET gestita per verificare la conformità alle linee guida per la progettazione di Microsoft .NET Framework.
+Questa procedura dettagliata viene illustrato il processo di uso di analisi del codice per analizzare gli assembly di codice .NET gestita per verificare la conformità con le linee guida di progettazione .NET.
 
 ## <a name="create-a-class-library"></a>Creare una libreria di classi
 

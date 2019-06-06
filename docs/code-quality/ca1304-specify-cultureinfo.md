@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797505"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714353"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Specificare CultureInfo
 
@@ -40,7 +40,7 @@ Un metodo o costruttore chiama un membro che ha un overload che accetta un <xref
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=nameWithType> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri di .NET Framework scelgono le impostazioni cultura predefinite e formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per verificare che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
+Quando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=nameWithType> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri di .NET scelgono le impostazioni cultura predefinite e formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per verificare che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
 - Se il valore verrà visualizzato all'utente, usare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

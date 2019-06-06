@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a00c8e30e981794e69d4572e0a924438514780c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85e09a670ac85d37bc2c0297201db93462f64ca1
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779570"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714462"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Contrassegnare gli assembly con AssemblyVersionAttribute
 
@@ -50,22 +50,25 @@ L'identità di un assembly prevede le seguenti informazioni:
 
 - Chiave pubblica (per assembly con nome sicuro).
 
-.NET Framework Usa il numero di versione per identificare in modo univoco un assembly e per associare tipi in assembly con nome sicuro. Il numero di versione viene utilizzato insieme ai criteri di versione ed editore. Per impostazione predefinita, le applicazioni vengono eseguite solo con la versione di assembly con cui sono state compilate.
+.NET usa il numero di versione per identificare in modo univoco un assembly e per associare tipi in assembly con nome sicuro. Il numero di versione viene utilizzato insieme ai criteri di versione ed editore. Per impostazione predefinita, le applicazioni vengono eseguite solo con la versione di assembly con cui sono state compilate.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, aggiungere un numero di versione dell'assembly usando il <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> attributo. Vedere l'esempio seguente.
+
+Per correggere una violazione di questa regola, aggiungere un numero di versione dell'assembly usando il <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> attributo.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola per gli assembly che vengono usati da terze parti o in un ambiente di produzione.
+
+Non escludere un avviso da questa regola per gli assembly che vengono utilizzati da terze parti o in un ambiente di produzione.
 
 ## <a name="example"></a>Esempio
- L'esempio seguente illustra un assembly avente il <xref:System.Reflection.AssemblyVersionAttribute> attributo viene applicato.
 
- [!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
- [!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
- [!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
+L'esempio seguente illustra un assembly avente il <xref:System.Reflection.AssemblyVersionAttribute> attributo viene applicato.
+
+[!code-csharp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CSharp/ca1016-mark-assemblies-with-assemblyversionattribute_1.cs)]
+[!code-vb[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/VisualBasic/ca1016-mark-assemblies-with-assemblyversionattribute_1.vb)]
+[!code-cpp[FxCop.Design.AssembliesVersion#1](../code-quality/codesnippet/CPP/ca1016-mark-assemblies-with-assemblyversionattribute_1.cpp)]
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Controllo delle versioni degli assembly](/dotnet/framework/app-domains/assembly-versioning)
+- [Controllo delle versioni di assembly](/dotnet/framework/app-domains/assembly-versioning)
 - [Procedura: Creare criteri editore](/dotnet/framework/configure-apps/how-to-create-a-publisher-policy)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8b92ae2f607ae449b7b4392fc3638fcdcb6a80
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554870"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715350"
 ---
 # <a name="dia2dump-sample"></a>Esempio Dia2dump
 
@@ -42,9 +42,9 @@ Per impostazione predefinita, la directory di installazione è una directory pro
 
 1. Nelle **Esplora soluzioni**, selezionare il progetto Dia2Dump (non sulla soluzione).
 
-1. Aprire la finestra di dialogo **Pagine delle proprietà** del progetto. Per informazioni dettagliate, vedere [Utilizzo di proprietà di progetto](/cpp/ide/working-with-project-properties).
+1. Aprire la finestra di dialogo **Pagine delle proprietà** del progetto. Per informazioni dettagliate, vedere [Utilizzo di proprietà di progetto](/cpp/build/working-with-project-properties).
 
-1. Aprire il **le proprietà di configurazione** > **C/C++** > **generale** pagina delle proprietà.
+1. Aprire il **le proprietà di configurazione** > **C/C++**  > **generale** pagina delle proprietà.
 
 1. Nel **directory di inclusione aggiuntive** proprietà, scegliere il controllo a discesa, quindi scegliere **modificare**.
 

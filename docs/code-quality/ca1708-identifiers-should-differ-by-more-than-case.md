@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6923c4fd575d61b4854d9bb7d32f541bdda162
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 059770b28b9e885608769f3844f91097a16d66cf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841993"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714251"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Gli identificatori non si devono differenziare solo in base alle maiuscole e minuscole
 
@@ -48,7 +48,7 @@ Selezionare un nome che è univoco se confrontato con altri identificatori, in m
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
 
-Non escludere un avviso da questa regola. La libreria potrebbe non essere utilizzabile in tutte le lingue disponibili in .NET Framework.
+Non escludere un avviso da questa regola. La libreria potrebbe non essere utilizzabile in tutte le lingue disponibili in .NET.
 
 ## <a name="configurability"></a>Configurabilità
 

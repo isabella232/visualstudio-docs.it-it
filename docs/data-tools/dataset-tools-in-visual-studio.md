@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567107"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715219"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567107"
 
 Oggetto `DataSet` oggetto è un oggetto in memoria che è fondamentalmente un mini-database. Contiene `DataTable`, `DataColumn`, e `DataRow` oggetti in cui è possibile archiviare e modificare i dati da uno o più database senza dover gestire una connessione aperta. Il set di dati mantiene le informazioni sulle modifiche apportate ai dati, in modo che gli aggiornamenti possono essere rilevati e inviati nuovamente al database quando l'applicazione verrà riconnessa.
 
-I set di dati e le classi correlate sono definite nel <xref:System.Data?displayProperty=fullName> dello spazio dei nomi nella libreria di classi .NET Framework. È possibile creare e modificare i set di dati in modo dinamico nel codice utilizzando ADO.NET. La documentazione in questa sezione viene illustrato come utilizzare i set di dati tramite le finestre di progettazione di Visual Studio. Set di dati che vengono creati tramite l'uso di finestre di progettazione **TableAdapter** oggetti per interagire con il database. Usare i set di dati che vengono creati a livello di programmazione **DataAdapter** oggetti. Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapter e DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+I set di dati e le classi correlate sono definite nel <xref:System.Data?displayProperty=fullName> dello spazio dei nomi dell'API .NET. È possibile creare e modificare i set di dati in modo dinamico nel codice utilizzando ADO.NET. La documentazione in questa sezione viene illustrato come utilizzare i set di dati tramite le finestre di progettazione di Visual Studio. Set di dati che vengono creati tramite l'uso di finestre di progettazione **TableAdapter** oggetti per interagire con il database. Usare i set di dati che vengono creati a livello di programmazione **DataAdapter** oggetti. Per informazioni sulla creazione di set di dati a livello di codice, vedere [DataAdapter e DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Se l'applicazione deve solo leggere i dati da un database e non eseguire gli aggiornamenti, aggiunge o Elimina, in genere è possibile ottenere prestazioni migliori con un `DataReader` per recuperare dati in un generico oggetto `List` oggetto o un altro oggetto della raccolta. Se si visualizzano i dati, è possibile associare l'interfaccia utente alla raccolta.
 
