@@ -1,6 +1,6 @@
 ---
 title: Sviluppare soluzioni dati
-description: Informazioni su diversi strumenti per lo sviluppo di soluzioni dati in Visual Studio, inclusi gli strumenti di .NET Framework, SQL Server Data Tools, Azure Data Lake, Azure HDInsight e Analisi di flusso di Azure.
+description: Informazioni su diversi strumenti per lo sviluppo di soluzioni dati in Visual Studio, inclusi gli strumenti .NET, SQL Server Data Tools, Azure Data Lake, Azure HDInsight e Analisi di flusso di Azure.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -8,12 +8,12 @@ ms.author: gewarren
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 768d3d1f130c3ef7b81da9706559e9d6b5f159ee
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569214"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715051"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Usare gli strumenti dati in Visual Studio per sviluppare soluzioni dati
 
@@ -29,11 +29,11 @@ Informazioni su come usare gli strumenti dati in Visual Studio per sviluppare e 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Informazioni sul supporto di API e strumenti di .NET Framework e Visual Studio per lo sviluppo di applicazioni dati</h3>
+                        <h3>Informazioni sul supporto di API e strumenti di .NET e Visual Studio per lo sviluppo di applicazioni dati</h3>
                     </div>
                 </div>
             </div>
