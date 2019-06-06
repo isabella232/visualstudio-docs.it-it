@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825279"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715222"
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 
@@ -36,7 +36,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2104: Non dichiarare tipi di riferimento modificabili in sola lettura](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Un tipo visibile esternamente contiene un campo in sola lettura visibile esternamente che costituisce un tipo di riferimento modificabile. Un tipo modificabile è un tipo i cui dati di istanza possono essere modificati.|
 |[CA2105: I campi di matrici non devono essere solo lettura](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Quando si applica il modificatore (ReadOnly in Visual Basic) in sola lettura a un campo contenente una matrice, il campo non può essere modificato in modo da fare riferimento a una matrice diversa. È tuttavia possibile modificare gli elementi della matrice archiviati in un campo in sola lettura.|
 |[CA2106: Asserzioni protette](../code-quality/ca2106-secure-asserts.md)|Un metodo asserisce un'autorizzazione e non vengono eseguiti controlli di sicurezza sul chiamante. Quando si asserisce un'autorizzazione di sicurezza senza eseguire alcun controllo di sicurezza, nel codice potrebbero restare punti deboli nella sicurezza.|
-|[CA2107: Revisione negare l'utilizzo e PermitOnly](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Il metodo PermitOnly e le azioni di sicurezza CodeAccessPermission.Deny devono essere usati esclusivamente da utenti con una conoscenza approfondita della sicurezza .NET Framework. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.|
+|[CA2107: Revisione negare l'utilizzo e PermitOnly](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|PermitOnly (metodo) e le azioni di sicurezza CodeAccessPermission. Deny devono usare solo da utenti con una conoscenza approfondita della sicurezza .NET. Il codice che usa queste azioni di sicurezza deve essere sottoposto a una revisione della sicurezza.|
 |[CA2108: Controllare la sicurezza dichiarativa sui tipi di valore](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Un tipo di valore pubblico o protetto è protetto da richieste di collegamento o accesso ai dati.|
 |[CA2109: Controllare i gestori di eventi visibili](../code-quality/ca2109-review-visible-event-handlers.md)|È stato rilevato un metodo di gestione eventi pubblico o protetto. I metodi di gestione eventi non devono essere esposti se non assolutamente necessario.|
 |[CA2111: I puntatori non devono essere visibili](../code-quality/ca2111-pointers-should-not-be-visible.md)|Un puntatore non è privato, interno o in sola lettura. Il valore del puntatore può essere modificato dal codice dannoso, consentendo potenzialmente l'accesso a percorsi arbitrari nella memoria o causando errori dell'applicazione o del sistema.|

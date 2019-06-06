@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564828"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714485"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servizi Windows Communication Foundation e dati WCF in Visual Studio
 
@@ -56,7 +56,7 @@ WCF Data Services è un'implementazione del protocollo OData (Open Data) standar
 
 ### <a name="wcf-programming-model"></a>Modello di programmazione WCF
 
-Il modello di programmazione WCF si basa sulla comunicazione tra due entità: un servizio WCF e un client WCF. Il modello di programmazione è incapsulato nel <xref:System.ServiceModel> dello spazio dei nomi in .NET Framework.
+Il modello di programmazione WCF si basa sulla comunicazione tra due entità: un servizio WCF e un client WCF. Il modello di programmazione è incapsulato nel <xref:System.ServiceModel> dello spazio dei nomi in .NET.
 
 ### <a name="wcf-service"></a>Servizio WCF
 
@@ -228,7 +228,7 @@ Per impostazione predefinita, quando viene aggiunto un riferimento al servizio a
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procedura: Configurare un servizio per riusare i tipi esistenti
 
-Quando viene aggiunto un riferimento al servizio a un progetto, tutti i tipi definiti nel servizio vengono generati nel progetto locale. In molti casi, ciò consente di creare tipi duplicati quando un servizio Usa i tipi di .NET Framework comuni o i tipi sono definiti in una libreria condivisa.
+Quando viene aggiunto un riferimento al servizio a un progetto, tutti i tipi definiti nel servizio vengono generati nel progetto locale. In molti casi, ciò consente di creare tipi duplicati quando un servizio utilizza tipi .NET comuni o i tipi sono definiti in una libreria condivisa.
 
 Per evitare questo problema, i tipi negli assembly di riferimento sono condivisi per impostazione predefinita. Se si desidera disabilitare la condivisione di tipi per uno o più assembly, è possibile eseguire questa operazione nel **riferimenti al servizio configurare** nella finestra di dialogo.
 

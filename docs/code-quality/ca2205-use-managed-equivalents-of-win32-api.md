@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b049f55d9361b409504cd798b7c878efb5c79ee6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806808"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714723"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Usare equivalenti gestiti dell'API Win32
 
@@ -35,7 +35,7 @@ ms.locfileid: "62806808"
 
 ## <a name="cause"></a>Causa
 
-Un platform invoke viene definito metodo e un metodo con la funzionalità equivalente è presente nella libreria di classi .NET Framework.
+Un platform invoke (metodo) è definito e in .NET è presente un metodo con la funzionalità equivalente.
 
 ## <a name="rule-description"></a>Descrizione della regola
 

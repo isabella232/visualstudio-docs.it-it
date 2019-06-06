@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797541"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714680"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Specificare IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797541"
 
 Un metodo o costruttore chiama uno o più membri con overload che accettano un <xref:System.IFormatProvider?displayProperty=fullName> parametro e il metodo o costruttore non chiama l'overload che accetta il <xref:System.IFormatProvider> parametro.
 
-Questa regola ignora le chiamate ai metodi di .NET Framework che sono documentati come ignorando il <xref:System.IFormatProvider> parametro. La regola ignora anche i metodi seguenti:
+Questa regola ignora le chiamate ai metodi di .NET che sono documentati come ignorando il <xref:System.IFormatProvider> parametro. La regola ignora anche i metodi seguenti:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Questa regola ignora le chiamate ai metodi di .NET Framework che sono documentat
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Quando un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> o <xref:System.IFormatProvider> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri di .NET Framework scelgono le impostazioni cultura predefinite e formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per assicurarsi che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
+Quando un <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> o <xref:System.IFormatProvider> oggetto non viene specificato, il valore predefinito fornito dal membro di overload potrebbe non avere l'effetto desiderato in tutte le impostazioni locali. Inoltre, i membri di .NET scelgono le impostazioni cultura predefinite e formattazione basato su presupposti che potrebbero non essere corretti per il codice. Per assicurarsi che il codice funzioni come previsto per gli scenari, è necessario fornire informazioni specifiche delle impostazioni cultura in base alle linee guida seguenti:
 
 - Se il valore verrà visualizzato all'utente, usare le impostazioni cultura correnti. Vedere <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

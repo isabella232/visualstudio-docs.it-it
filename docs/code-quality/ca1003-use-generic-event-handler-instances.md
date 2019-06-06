@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842521"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714384"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Usare istanze di gestori eventi generici
 
@@ -41,7 +41,7 @@ Per impostazione predefinita, questa regola cerca solo tipi visibili esternament
 
 ## <a name="rule-description"></a>Descrizione della regola
 
-Prima di .NET, per passare le informazioni personalizzate per il gestore eventi, un nuovo delegato doveva essere dichiarato che specifica una classe derivata dal <xref:System.EventArgs?displayProperty=fullName> classe. Questo vale non è più in .NET. .NET Framework introdotto il <xref:System.EventHandler%601?displayProperty=fullName> delegato, un delegato generico che consente a qualsiasi classe che deriva da <xref:System.EventArgs> per essere usato con il gestore dell'evento.
+Prima di .NET, per passare le informazioni personalizzate per il gestore eventi, un nuovo delegato doveva essere dichiarato che specifica una classe derivata dal <xref:System.EventArgs?displayProperty=fullName> classe. In .NET, il tipo generico <xref:System.EventHandler%601?displayProperty=fullName> delegato consente a qualsiasi classe che deriva da <xref:System.EventArgs> per essere usato con il gestore dell'evento.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
 

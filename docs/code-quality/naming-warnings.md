@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825442"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715309"
 ---
 # <a name="naming-warnings"></a>avvisi di denominazione
-Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione di .NET Framework.
+
+Gli avvisi di denominazione supportano la conformità alle convenzioni di denominazione delle linee guida di progettazione .NET.
 
 ## <a name="in-this-section"></a>In questa sezione
 
@@ -42,7 +43,7 @@ Gli avvisi di denominazione supportano la conformità alle convenzioni di denomi
 |[CA1719: I nomi dei parametri non devono corrispondere ai nomi dei membri](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Un nome di parametro deve comunicare il significato di un parametro e un nome di membro deve comunicare il significato di un membro. Le progettazioni in cui questi nomi coincidono sono rare. Assegnare a un parametro lo stesso nome del relativo membro non è intuitiva e rende più complesso l'utilizzo della libreria.|
 |[CA1701: Le parole composte di stringa di risorsa devono essere digitate correttamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Ogni parola nella stringa di risorsa è suddivisa in token basati sulle maiuscole e minuscole. Ogni combinazione di due token contigui viene controllata in base alla libreria del correttore ortografico Microsoft. Se riconosciuta, la parola produce una violazione della regola.|
 |[CA1703: Le stringhe di risorsa devono essere digitate correttamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Una stringa di risorsa contiene una o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft.|
-|[CA1724: I nomi dei tipi non devono corrispondere gli spazi dei nomi](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|I nomi dei tipi non devono corrispondere i nomi degli spazi dei nomi definiti nella libreria di classi .NET Framework. Violazione di questa regola può ridurre l'usabilità della libreria.|
+|[CA1724: I nomi dei tipi non devono corrispondere gli spazi dei nomi](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|I nomi dei tipi non devono corrispondere i nomi degli spazi dei nomi .NET. Violazione di questa regola può ridurre l'usabilità della libreria.|
 |[CA1707: Gli identificatori non devono contenere caratteri di sottolineatura](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Per convenzione i nomi degli identificatori non contengono il carattere di sottolineatura (_). In base a questa regola vengono controllati spazi dei nomi, tipi, membri e parametri.|
 |[CA1721: I nomi di proprietà non devono corrispondere ai metodi get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|Il nome di un membro pubblico o protetto inizia con "Get" e corrisponde in altro modo al nome di una proprietà pubblica o protetta. I metodi "Get" e le proprietà devono avere nomi indicano chiaramente la distinzione tra le funzioni.|
 |[CA1716: Gli identificatori non devono corrispondere a parole chiave](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Un nome di spazio dei nomi o di tipo corrisponde a una parola chiave riservata in un linguaggio di programmazione. Gli identificatori di spazi dei nomi e tipi non devono corrispondere a parole chiave definite dai linguaggi con destinazione Common Language Runtime.|

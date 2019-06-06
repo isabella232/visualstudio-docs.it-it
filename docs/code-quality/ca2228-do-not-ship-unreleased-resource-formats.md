@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541718"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714975"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Non specificare formati di risorse non rilasciati
 
@@ -31,13 +31,17 @@ ms.locfileid: "62541718"
 |Modifica importante|Non importante|
 
 ## <a name="cause"></a>Causa
- Un file di risorse è stato creato utilizzando una versione di .NET Framework che non è attualmente supportato.
+
+Un file di risorse è stato creato utilizzando una versione di .NET che non è attualmente supportato.
 
 ## <a name="rule-description"></a>Descrizione della regola
- File di risorse che sono stati compilati usando versioni non definitive di .NET Framework potrebbero non essere utilizzabili dalle versioni supportate di .NET Framework.
+
+File di risorse che sono stati compilati usando versioni non definitive di .NET potrebbero non essere utilizzabili dalle versioni supportate di .NET.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, generare la risorsa utilizzando una versione supportata di .NET Framework.
+
+Per correggere una violazione di questa regola, generare la risorsa utilizzando una versione supportata di .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Non escludere un avviso da questa regola.
+
+Non escludere un avviso da questa regola.

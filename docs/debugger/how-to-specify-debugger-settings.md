@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847510"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714971"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedura: Specificare le impostazioni del debugger
 In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile configurare varie impostazioni relative al funzionamento del debugger, che specificano ad esempio la modalità di visualizzazione delle variabili, se determinati messaggi di avviso vengono visualizzati, la modalità di impostazione dei punti di interruzione e gli effetti dell'interruzione sui programmi in esecuzione. Per specificare queste impostazioni, utilizzare la finestra di dialogo **Opzioni**.
@@ -45,4 +45,4 @@ In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] è possibile config
 - [Generale, Debug, finestra di dialogo Opzioni](../debugger/general-debugging-options-dialog-box.md)
 - [Modifica e continuazione, Debug, finestra di dialogo Opzioni](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Impostazioni di debug e preparazione](../debugger/debugger-settings-and-preparation.md)
-- [Macro comuni per i comandi e le proprietà di compilazione](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Macro comuni per i comandi e le proprietà di compilazione](/cpp/build/reference/common-macros-for-build-commands-and-properties)

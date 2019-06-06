@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407882"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715454"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Impostazioni di progetto per una configurazione di debug C++
 È possibile modificare le impostazioni di progetto per una configurazione di debug C o Visual C++ nel **pagine delle proprietà** finestra di dialogo, come descritto in [come: Impostare configurazioni di debug e di rilascio](../debugger/how-to-set-debug-and-release-configurations.md). Nelle tabelle riportate di seguito sono indicate le sezioni della finestra di dialogo **Pagine delle proprietà** in cui sono disponibili le impostazioni correlate al debugger.
@@ -139,7 +139,7 @@ ms.locfileid: "63407882"
 | **Argomenti del comando** (Debugger Windows locale)<br /><br /> **Argomenti del comando remoto** (Debugger Windows remoto) | - Specifica gli argomenti relativi al comando specificato in precedenza.<br /><br /> In questa casella è possibile utilizzare i seguenti operatori di reindirizzamento:<br /><br /> < `file`<br /> Legge stdin dal file.<br /><br /> > `file`<br /> Scrive stdout nel file.<br /><br /> >> `file`<br /> Accoda stdout al file.<br /><br /> 2> `file`<br /> Scrive stderr nel file.<br /><br /> 2>> `file`<br /> Accoda stderr al file.<br /><br /> 2> &1<br /> Invia l'output di stderr (2) nello stesso percorso di stdout (1).<br /><br /> 1> &2<br /> Invia l'output di stdout (1) nello stesso percorso di stderr (2).<br /><br /> Nella maggior parte dei casi, questi operatori sono applicabili solo alle applicazioni console. |
 | **Directory di lavoro** | Specifica la cartella di lavoro del programma di cui viene eseguito il debug, relativamente alla directory di progetto in cui si trova il file EXE. Se non viene specificata, la cartella di lavoro corrisponde a quella del progetto. Per eseguire il debug remoto, la directory del progetto è nel server remoto. |
 | **Connetti** (debugger Windows locale e debugger Windows remoto) | Specifica se avviare l'applicazione o se connettersi a essa. L'impostazione predefinita è No. |
-| **Nome server remoto** (debugger Windows remoto) | Specifica il nome di un computer (diverso dal computer in uso) nel quale si desidera eseguire il debug di un'applicazione.<br /><br /> La macro di compilazione RemoteMachine viene impostata sul valore di questa proprietà. Per altre informazioni, vedere [Macro per comandi e proprietà di compilazione](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Nome server remoto** (debugger Windows remoto) | Specifica il nome di un computer (diverso dal computer in uso) nel quale si desidera eseguire il debug di un'applicazione.<br /><br /> La macro di compilazione RemoteMachine viene impostata sul valore di questa proprietà. Per altre informazioni, vedere [Macro per comandi e proprietà di compilazione](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Connessione** (debugger Windows remoto) | Consente di passare tra tipi di connessione standard e senza autenticazione per il debug remoto. Specificare il nome di un computer remoto nella casella **Nome server remoto**. I tipi di connessione includono:<br /><br /> -   **Remoto con autenticazione di Windows**<br />-   **Remoto senza autenticazione**<br /><br /> **Nota** Il debug remoto senza autenticazione può rendere vulnerabile il computer remoto alle violazioni della sicurezza. La modalità di autenticazione Windows garantisce un maggiore livello di sicurezza.<br /><br /> Per altre informazioni, vedere [Configurazione del debug remoto](../debugger/remote-debugging.md). |
 | **URL HTTP** (debugger servizi Web e debugger Web browser) | Specifica l'URL in cui si trova il progetto di cui si esegue il debug. |
 | **Tipo di debugger** | Specifica il tipo di debugger da usare: **Solo nativo**, **solo gestito**, **solo GPU**, **Mixed**, **automatico** (impostazione predefinita), o **Script**.<br /><br /> -   **Solo nativo** è destinato a codice C++ non gestito.<br />-   **Solo gestito** è destinato a codice eseguibile in Common Language Runtime (codice gestito).<br />-   **Misto** richiama debugger sia per codice gestito che per codice non gestito.<br />-   **Automatico** determina il tipo di debugger in base alle informazioni del compilatore e del file EXE.<br />-   **Script** richiama un debugger per gli script.<br />-   **Solo GPU** è destinato al codice AMP C++ eseguibile in un dispositivo GPU o nell'unità di rasterizzazione dei riferimenti DirectX. Visualizzare [codice debug GPU](../debugger/debugging-gpu-code.md). |

@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566921"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715187"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
 Un componente di TableAdapter inserisce un set di dati con i dati dal database, in base a uno o più query o stored procedure specificato. Gli oggetti TableAdapter possono anche eseguire aggiunte, aggiornamenti ed eliminazioni sul database per rendere persistenti le modifiche apportate al set di dati. È inoltre possibile emettere comandi globali che sono correlati a qualsiasi tabella specifica.
 
 > [!NOTE]
-> La classe TableAdapter generati dalle finestre di progettazione di Visual Studio. Se si sta creando i set di dati a livello di codice, quindi usare DataAdapter, ovvero una classe .NET Framework.
+> La classe TableAdapter generati dalle finestre di progettazione di Visual Studio. Se si sta creando i set di dati a livello di codice, quindi usare DataAdapter, ovvero una classe .NET.
 
 Per informazioni dettagliate sulle operazioni del TableAdapter, è possibile passare direttamente a uno degli argomenti seguenti:
 
@@ -129,9 +129,9 @@ Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterMana
 |Member|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
+|Proprietà`BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
 |*tableName* `TableAdapter` proprietà|Rappresenta un TableAdapter. Il componente TableAdapterManager generato contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, un set di dati con una tabella Customers e Orders che genera l'errore con un componente TableAdapterManager contenente `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
-|Proprietà `UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
+|Proprietà`UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
 
 ## <a name="security"></a>Sicurezza
 

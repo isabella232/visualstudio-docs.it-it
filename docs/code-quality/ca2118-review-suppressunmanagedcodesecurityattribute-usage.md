@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3762bf0826e2fbaef365a6251cdc8ee58286007
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50c82cd77969da5cbf302b6774f07da1a6a8b040
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545163"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714008"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Verificare la sintassi di SuppressUnmanagedCodeSecurityAttribute
 
@@ -31,16 +31,18 @@ ms.locfileid: "62545163"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un membro o un tipo pubblico o protetto presenta il <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.
+
+Un membro o un tipo pubblico o protetto presenta il <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attributo.
 
 ## <a name="rule-description"></a>Descrizione della regola
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento del sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante la chiamata di piattaforma o di interoperabilità COM. In genere, il sistema esegue una [dati e modellazione](/dotnet/framework/data/index) autorizzazione per codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue una [linking](/dotnet/framework/misc/link-demands) per l'autorizzazione: vengono controllate le autorizzazioni del chiamante immediato quando il chiamante viene compilato tramite JIT.
 
- Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo in membri pubblici che chiamano i metodi nativi, i chiamanti nello stack di chiamate (diverso dal chiamante immediato) non sono necessario l'autorizzazione di codice non gestito per eseguire codice non gestito. A seconda delle azioni del membro pubblico e la gestione dell'input, potrebbe consentire ai chiamanti non attendibili per accedere alla funzionalità in genere limitate al codice attendibile.
+<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> modifica il comportamento del sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante la chiamata di piattaforma o di interoperabilità COM. In genere, il sistema esegue una [dati e modellazione](/dotnet/framework/data/index) autorizzazione per codice non gestito. Questa richiesta si verifica in fase di esecuzione per ogni chiamata del membro e controlla ogni chiamante nello stack di chiamate per l'autorizzazione. Quando l'attributo è presente, il sistema esegue una [linking](/dotnet/framework/misc/link-demands) per l'autorizzazione: vengono controllate le autorizzazioni del chiamante immediato quando il chiamante viene compilato tramite JIT.
 
- .NET Framework si basa su controlli di sicurezza per impedire che i chiamanti abbiano accesso diretto a spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora sicurezza normale, il codice comporta un grave rischio se può essere utilizzato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso per l'elaborazione di memoria. è inoltre presente in qualsiasi scenario in cui codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo input sorprendente, in formato non valido o non valido.
+Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza. Se si inserisce l'attributo in membri pubblici che chiamano i metodi nativi, i chiamanti nello stack di chiamate (diverso dal chiamante immediato) non sono necessario l'autorizzazione di codice non gestito per eseguire codice non gestito. A seconda delle azioni del membro pubblico e la gestione dell'input, potrebbe consentire ai chiamanti non attendibili per accedere alla funzionalità in genere limitate al codice attendibile.
 
- I criteri di sicurezza predefinito non concedere l'autorizzazione di codice non gestito a un assembly a meno che non venga eseguito dal computer locale o è un membro di uno dei seguenti gruppi:
+.NET si basa su controlli di sicurezza per impedire che i chiamanti abbiano accesso diretto a spazio degli indirizzi del processo corrente. Poiché questo attributo Ignora sicurezza normale, il codice comporta un grave rischio se può essere utilizzato per leggere o scrivere nella memoria del processo. Si noti che il rischio non è limitato ai metodi che forniscono intenzionalmente l'accesso per l'elaborazione di memoria. è inoltre presente in qualsiasi scenario in cui codice dannoso può ottenere l'accesso con qualsiasi mezzo, ad esempio, fornendo input sorprendente, in formato non valido o non valido.
+
+I criteri di sicurezza predefinito non concedere l'autorizzazione di codice non gestito a un assembly a meno che non venga eseguito dal computer locale o è un membro di uno dei seguenti gruppi:
 
 - Il gruppo di codice di area Computer
 
@@ -49,25 +51,30 @@ ms.locfileid: "62545163"
 - Gruppo di codice nome sicuro di ECMA
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Esaminare attentamente il codice per garantire che questo attributo è assolutamente necessario. Se si ha familiarità con la sicurezza di codice gestito o non supportano le implicazioni di sicurezza di questo attributo, rimuoverlo dal codice. Se l'attributo è obbligatorio, è necessario assicurarsi che i chiamanti non è possibile usare il codice da utenti malintenzionati. Se il codice non ha l'autorizzazione per eseguire codice non gestito, questo attributo non ha alcun effetto e deve essere rimosso.
+
+Esaminare attentamente il codice per garantire che questo attributo è assolutamente necessario. Se si ha familiarità con la sicurezza di codice gestito o non supportano le implicazioni di sicurezza di questo attributo, rimuoverlo dal codice. Se l'attributo è obbligatorio, è necessario assicurarsi che i chiamanti non è possibile usare il codice da utenti malintenzionati. Se il codice non ha l'autorizzazione per eseguire codice non gestito, questo attributo non ha alcun effetto e deve essere rimosso.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non fornisce i chiamanti accesso alle operazioni native o risorse che possono essere usate in modo distruttivo.
+
+Per eliminare in modo sicuro un avviso da questa regola, è necessario assicurarsi che il codice non fornisce i chiamanti accesso alle operazioni native o risorse che possono essere usate in modo distruttivo.
 
 ## <a name="example-1"></a>Esempio 1
- Nell'esempio seguente viola la regola.
 
- [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
+Nell'esempio seguente viola la regola.
+
+[!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]
 
 ## <a name="example-2"></a>Esempio 2
- Nell'esempio seguente, il `DoWork` metodo fornisce un percorso di codice accessibile pubblicamente per il metodo di chiamata `FormatHardDisk`.
 
- [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
+Nell'esempio seguente, il `DoWork` metodo fornisce un percorso di codice accessibile pubblicamente per il metodo di chiamata `FormatHardDisk`.
+
+[!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]
 
 ## <a name="example-3"></a>Esempio 3
- Nell'esempio seguente, il metodo pubblico `DoDangerousThing` provoca una violazione. Per risolvere la violazione `DoDangerousThing` deve essere reso privato, e l'accesso a esso deve avvenire tramite un metodo pubblico è protetto da una richiesta di sicurezza, come illustrato di `DoWork` (metodo).
 
- [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
+Nell'esempio seguente, il metodo pubblico `DoDangerousThing` provoca una violazione. Per risolvere la violazione `DoDangerousThing` deve essere reso privato, e l'accesso a esso deve avvenire tramite un metodo pubblico è protetto da una richiesta di sicurezza, come illustrato di `DoWork` (metodo).
+
+[!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]
 
 ## <a name="see-also"></a>Vedere anche
 
