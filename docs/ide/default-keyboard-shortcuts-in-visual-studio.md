@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 55e035ab0c3702c571b69b555d99adbf7cb0b7e9
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261325"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501179"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
 Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
-Per accedere a vari controlli e finestre in Visual Studio, è possibile selezionare il tasto di scelta rapida appropriato. In questo argomento vengono elencati i tasti di scelta rapida predefiniti per il profilo di sviluppo generale, che potrebbe essere stato selezionato durante l'installazione di Visual Studio. Indipendentemente dal profilo scelto, è possibile identificare il tasto di scelta rapida per un comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**. È anche possibile personalizzare i tasti di scelta rapida assegnandone uno diverso per ciascun comando.
+Per accedere a vari controlli e finestre in Visual Studio, è possibile selezionare il tasto di scelta rapida appropriato. In questa pagina vengono elencati i tasti di scelta rapida predefiniti per il profilo **Generale**, che potrebbe essere stato scelto durante l'installazione di Visual Studio. Indipendentemente dal profilo scelto, è possibile identificare il tasto di scelta rapida per un comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**. È anche possibile personalizzare i tasti di scelta rapida assegnandone uno diverso per ciascun comando.
 
 Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produttività, vedere [Tasti di scelta rapida predefiniti per i comandi usati di frequente in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Suggerimenti per la tastiera](../ide/tips-and-tricks-for-visual-studio.md) e [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md).
-
-Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, in quanto è possibile accedervi da qualsiasi punto in Visual Studio mediante tasti di scelta rapida.
 
 |||||
 |-|-|-|-|
 |[Analizza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Modifica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Progetto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|
-|[Architettura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu di scelta rapida editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu di scelta rapida progetti e soluzioni](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Esplora test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
+|[Architettura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu di scelta rapida per l'editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu di scelta rapida per progetti e soluzioni](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Esplora test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Compila](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[File](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refactoring](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Strumenti](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
-|[Menu di scelta rapida visualizzazione classi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Guida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Esplora soluzioni](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Visualizza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
+|[Menu di scelta rapida per Visualizzazione classi](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Guida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Esplora soluzioni](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Visualizza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
 |[Debug](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Test di carico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Finestra](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
-|[Debugger - Menu di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Altri menu di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu di scelta rapida Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
+|[Menu di scelta rapida per il debugger](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Altri menu di scelta rapida](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menu di scelta rapida per Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub diagnostica](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Comandi globali
+## <a name="global-shortcuts"></a>Tasti di scelta rapida globali
+
+Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando lo stato attivo si trova in qualsiasi finestra di Visual Studio.
 
 ### <a name="bkmk_analyze"></a> Analizza
 
@@ -161,6 +161,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.Cut|**CTRL+X**<br /><br /> oppure<br /><br /> **MAIUSC+CANC**|
 |Edit.CycleClipboardRing|**CTRL+MAIUSC+V**<br /><br /> oppure<br /><br /> **CTRL+MAIUSC+INS**|
 |Edit.Delete|**Eliminazione**|
+|Edit.Duplicate|**CTRL+D**|
 |Edit.Find|**CTRL+F**|
 |Edit.FindAllReferences|**Maiusc+F12**|
 |Edit.FindinFiles|**CTRL+MAIUSC+F**|
@@ -170,11 +171,12 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.FindPreviousSelected|**CTRL+MAIUSC+F3**|
 |Edit.GenerateMethod|**CTRL+K, CTRL+M**|
 |Edit.GoTo|**CTRL+G**|
+|Edit.GoToAll|**CTRL+,** o **CTRL+T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**CTRL+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**MAIUSC+F8**|
+|Edit.GoToMember|**CTRL+1, CTRL+M** o **CTRL+1, M** o **ALT+\\**|
+|Edit.GoToNextLocation|**F8** (errore successivo nella finestra Elenco errori o Output)|
+|Edit.GoToPrevLocation|**MAIUSC+F8** (errore precedente nella finestra Elenco errori o Output)|
 |Edit.InsertSnippet|**CTRL+K, CTRL+X**|
 |Edit.MoveControlDown|**CTRL+Freccia GIÙ**|
 |Edit.MoveControlDownGrid|**Freccia GIÙ**|
@@ -184,10 +186,9 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Edit.MoveControlRightGrid|**Freccia destra**|
 |Edit.MoveControlUp|**CTRL+Freccia SU**|
 |Edit.MoveControlUpGrid|**Freccia SU**|
-|Edit.NavigateTo|**CTRL+,**|
 |Edit.NextBookmark|**CTRL+K, CTRL+N**|
 |Edit.NextBookmarkInFolder|**CTRL+MAIUSC+K, CTRL+MAIUSC+N**|
-|Edit.OpenFile|**CTRL+MAIUSC+G**|
+|Edit.OpenFile|**CTRL+MAIUSC+G** (apre il nome di file in corrispondenza del cursore)|
 |Edit.Paste|**CTRL+V**<br /><br /> oppure<br /><br /> **MAIUSC+INS**|
 |Edit.PreviousBookmark|**CTRL+K, CTRL+P**|
 |Edit.PreviousBookmarkInFolder|**CTRL+MAIUSC+K, CTRL+MAIUSC+P**|
@@ -346,7 +347,6 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |Tools.AttachtoProcess|**CTRL+ALT+P**|
 |Tools.CodeSnippetsManager|**CTRL+K, CTRL+B**|
 |Tools.ForceGC|**CTRL+MAIUSC+ALT+F12, CTRL+MAIUSC+ALT+F12**|
-|Tools.GoToCommandLine|**CTRL+/**|
 
 ### <a name="bkmk_view"></a> Visualizza
 
@@ -354,7 +354,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |--------------| - |
 |View.AllWindows|**MAIUSC+ALT+M**|
 |View.ArchitectureExplorer|**CTRL+\\, CTRL+R**|
-|View.Backward|**ALT+Freccia SINISTRA**|
+|View.Backward|**ALT+freccia SINISTRA** (funziona in modo diverso da View.NavigateBackward nell'Editor di testo)|
 |View.BookmarkWindow|**CTRL+K, CTRL+W**|
 |View.BrowseNext|**CTRL+MAIUSC+1**|
 |View.BrowsePrevious|**CTRL+MAIUSC+2**|
@@ -369,7 +369,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.ErrorList|**CTRL+\\, E**<br /><br /> oppure<br /><br /> **CTRL+\\, CTRL+E**|
 |View.F#Interactive|**CTRL+ALT+F**|
 |View.FindSymbolResults|**CTRL+ALT+F12**|
-|View.Forward|**ALT+Freccia DESTRA**|
+|View.Forward|**ALT + freccia destra** (funzioni in modo diverso dai View.NavigateForward nell'Editor di testo)|
 |View.ForwardBrowseContext|**CTRL+MAIUSC+7**|
 |View.FullScreen|**MAIUSC+ALT+INVIO**|
 |View.NavigateBackward|**CTRL+-**|
@@ -379,7 +379,7 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 |View.ObjectBrowser|**CTRL+ALT+J**|
 |View.ObjectBrowserGoToSearchCombo|**CTRL+K, CTRL+R**|
 |View.Output|**CTRL+ALT+O** (lettera "O")|
-|View.PopBrowseContex|**CTRL+MAIUSC+8**|
+|View.PopBrowseContext|**CTRL+MAIUSC+8** (solo C++)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**MAIUSC+F4**|
 |View.ResourceView|**CTRL+MAIUSC+E**|
@@ -779,7 +779,6 @@ Nelle sezioni della tabella illustrata di seguito sono inclusi comandi globali, 
 | Edit.CharRight | **Freccia destra** |
 | Edit.CharRightExtend | **MAIUSC+Freccia DESTRA** |
 | Edit.CharRightExtendColumn | **MAIUSC+ALT+Freccia DESTRA** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **CTRL+K, CTRL+L** |
 | Edit.CollapseAllOutlining | **CTRL+M, CTRL+A** |
 | Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |

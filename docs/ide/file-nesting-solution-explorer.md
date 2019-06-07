@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548953"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432267"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personalizzare l'annidamento file in Esplora soluzioni
+# <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
 
-L'annidamento di file correlati in **Esplora soluzioni** non è una funzione nuova. Finora, tuttavia, l'utente non aveva il controllo sulle regole di annidamento. È possibile scegliere tra i set di impostazioni **Disattivato**, **Predefinito** e **Web**, ma è anche possibile personalizzare l'annidamento esattamente in base alle proprie esigenze. È anche possibile creare impostazioni specifiche per una soluzione e un progetto. Altre informazioni in merito sono disponibili più avanti. Prima di tutto verranno illustrate le funzioni predefinite.
+**Esplora soluzioni** annida i file correlati per facilitarne l'organizzazione e l'individuazione. Ad esempio, se si aggiunge un modulo di Windows Form a un progetto, il file di codice per il modulo viene annidato sotto il modulo in **Esplora soluzioni**. Nei progetti ASP.NET Core, l'annidamento dei file può andare oltre. È possibile scegliere tra le impostazioni predefinite per l'annidamento dei file **Disattivato**, **Predefinito** e **Web**. È anche possibile [personalizzare il modo in cui i file vengono annidati](#customize-file-nesting) oppure [creare impostazioni specifiche di soluzione e di progetto](#create-project-specific-settings).
 
 > [!NOTE]
 > La funzionalità è attualmente supportata solo per i progetti ASP.NET Core.
@@ -56,7 +56,7 @@ Si esamineranno ora il nodo **dependentFileProviders** e i suoi nodi figlio. Ogn
 
 * **pathSegment**: usare questo tipo di regola per annidare *jquery.min.js* in *jquery.js*
 
-* **allExtensions**: usare questo tipo di regola per annidare *file.** in *file.js*
+* **allExtensions**: usare questo tipo di regola per annidare *file.* * in *file.js*
 
 * **fileToFile**: usare questo tipo di regola per annidare *bower.json* in *.bowerrc*
 
@@ -128,7 +128,7 @@ L'ordine è importante anche per le sezioni delle regole stesse, non solo per i 
 
 ![Attivare regole di annidamento file personalizzate](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Creare impostazioni specifiche di soluzione e di progetto
+## <a name="create-project-specific-settings"></a>Creare impostazioni specifiche di progetto
 
 È possibile creare impostazioni specifiche di progetto e di soluzione tramite il menu di scelta rapida di ogni soluzione e progetto:
 
@@ -142,7 +142,7 @@ Le impostazioni specifiche di progetto e di soluzione vengono combinate con le i
 
 È possibile archiviare le impostazioni specifiche di soluzione e di progetto nel controllo del codice sorgente e condividerle con tutto il team che lavora sulla codebase.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Disabilitare regole di annidamento file globali per una soluzione o un progetto specifico
+## <a name="disable-file-nesting-rules-for-a-project"></a>Disabilitare le regole di annidamento file per un progetto
 
 È possibile disabilitare regole di annidamento file globali esistenti per progetti o soluzioni specifiche tramite l'azione **remove** anziché l'azione **add** per un provider. Se, ad esempio, si aggiunge il codice di impostazioni seguente a un progetto, tutte le regole **pathSegment** eventualmente esistenti a livello globale vengono disabilitate per il progetto specifico:
 
@@ -157,3 +157,4 @@ Le impostazioni specifiche di progetto e di soluzione vengono combinate con le i
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzare l'IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Soluzioni e progetti in Visual Studio](solutions-and-projects-in-visual-studio.md)

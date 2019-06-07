@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431483"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501199"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Passaggio 5: Aggiungere controlli al modulo
 In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:System.Windows.Forms.PictureBox> e un controllo <xref:System.Windows.Forms.CheckBox>, al form. Si aggiungono quindi controlli <xref:System.Windows.Forms.Button> al modulo.
@@ -30,8 +30,7 @@ In questo passaggio si aggiungono controlli, ad esempio un controllo <xref:Syste
 
 4. Scegliere il nuovo controllo **PictureBox** per selezionarlo e quindi scegliere il triangolo nero sul nuovo controllo PictureBox per visualizzare il relativo elenco attività, come illustrato nell'immagine seguente.
 
-     ![Attività di PictureBox](../ide/media/express_pictureboxtasks.png)
-Attività di **PictureBox**
+     ![Attività di PictureBox](../ide/media/express_pictureboxtasks.png)<br/>***Attività*** di *PictureBox*
 
     > [!NOTE]
     > Se accidentalmente si aggiunge il tipo non corretto di controllo a TableLayoutPanel, è possibile eliminarlo. Fare clic con il pulsante destro del mouse sul controllo, quindi scegliere **Elimina** dal relativo menu di scelta rapida. È inoltre possibile rimuovere controlli dal form utilizzando la barra dei menu. Sulla barra dei menu scegliere **Modifica** > **Annulla** o **Modifica** > **Elimina**.
@@ -45,8 +44,7 @@ Attività di **PictureBox**
 
 7. Scegliere **TableLayoutPanel** nel modulo e quindi aggiungere un controllo CheckBox al modulo. Fare doppio clic sull'elemento **CheckBox** nella **casella degli strumenti** per aggiungere un nuovo controllo CheckBox alla cella libera successiva della tabella. Poiché un controllo PictureBox occupa le prime due celle, in TableLayoutPanel viene aggiunto un controllo CheckBox alla cella inferiore sinistra. Scegliere la proprietà **Text** e digitare la parola **Stretch**, come illustrato nell'immagine.
 
-     ![Controllo TextBox con la proprietà Stretch](../ide/media/express_pictureviewercheckbox.png)
-Controllo **TextBox** con la proprietà **Stretch**
+     ![Controllo TextBox con la proprietà Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Controllo*** *TextBox con* ***proprietà*** *Stretch*
 
 8. Scegliere **TableLayoutPanel** nel modulo e quindi passare al gruppo **Contenitori** nella **casella degli strumenti** (dove si è ottenuto il controllo TableLayoutPanel) e fare doppio clic sull'elemento **FlowLayoutPanel** per aggiungere un nuovo controllo all'ultima cella di PictureBox (in basso a destra). Ancorare quindi FlowLayoutPanel in TableLayoutPanel, scegliendo **Ancora nel contenitore padre** nell'elenco attività a forma di triangolo nero di FlowLayoutPanel o impostando la proprietà **Dock** di FlowLayoutPanel su **Fill**.
 
@@ -71,8 +69,7 @@ Controllo **TextBox** con la proprietà **Stretch**
 
 5. Scegliere il pulsante **Chiudi** per selezionarlo. Tenere premuto **CTRL** e scegliere gli altri tre pulsanti, in modo che siano tutti selezionati. Mentre tutti i pulsanti sono selezionati, andare alla finestra **Proprietà** e scorrere verso l'alto fino alla proprietà **AutoSize**. Questa proprietà consente di ridimensionare automaticamente il pulsante in modo che si adatti a tutto il testo. Impostarla su **true**. I pulsanti sono ora ridimensionati correttamente e si trovano nell'ordine corretto. Finché i quattro pulsanti sono selezionati, è possibile modificare contemporaneamente le quattro proprietà **AutoSize**. Nell'immagine riportata di seguito vengono illustrati i quattro pulsanti.
 
-     ![Visualizzatore immagini con quattro pulsanti](../ide/media/express_autosize.png)
-**Visualizzatore immagini** con quattro pulsanti
+     ![Visualizzatore immagini con quattro pulsanti](../ide/media/express_autosize.png)<br/>***Visualizzatore di immagini*** *con quattro pulsanti*
 
 6. Ora eseguire nuovamente il programma per visualizzare il form con il nuovo layout. La scelta dei pulsanti e della casella di controllo non produce ancora nessun risultato, ma i controlli funzioneranno a breve.
 

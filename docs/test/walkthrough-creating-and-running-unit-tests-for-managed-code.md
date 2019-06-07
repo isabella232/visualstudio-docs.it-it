@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704673"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401724"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procedura dettagliata: Creare ed eseguire unit test per codice gestito
 
@@ -365,9 +365,9 @@ L'esecuzione dei due metodi di test dimostra che i test funzionano correttamente
 
 ### <a name="continue-the-analysis"></a>Continuare l'analisi
 
-Tuttavia, gli ultimi due metodi di test presentano alcuni problemi. Non è possibile determinare con certezza quale condizione nel metodo sottoposto a test genera l'eccezione quando si esegue uno dei due test. La possibilità di differenziare le due condizioni, ovvero una quantità di debito negativa o un importo superiore al saldo, renderebbe più affidabili i test.
+Il metodo sottoposto a test può essere migliorato ulteriormente. Con l'implementazione corrente, non esiste alcun modo per sapere quale condizione (`amount > m_balance` o `amount < 0`) ha causato l'eccezione generata durante il test. Si sa solo che è stata generata una `ArgumentOutOfRangeException` nel metodo. Sarebbe meglio sapere quale condizione in `BankAccount.Debit` ha causato l'eccezione (`amount > m_balance` o `amount < 0`) in modo da essere certi che il metodo esegua correttamente i controlli di integrità dei relativi argomenti.
 
-Tornare ad osservare il metodo sottoposto a test. Notare che entrambe le istruzioni condizionali usano un costruttore `ArgumentOutOfRangeException` che accetta come parametro solo il nome dell'argomento:
+Tornare al metodo sottoposto a test (`BankAccount.Debit`). e notare che entrambe le istruzioni condizionali usano un costruttore `ArgumentOutOfRangeException` che accetta come parametro solo il nome dell'argomento:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");
