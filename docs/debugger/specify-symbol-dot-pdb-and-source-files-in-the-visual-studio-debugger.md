@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045342"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746260"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Specifica simboli (PDB) e i file di origine nel debugger di Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,7 +76,7 @@ Inoltre, il debugger cerca i file di simboli nei percorsi seguenti:
 
      È possibile utilizzare server dei simboli includono:
 
-     **Server dei simboli Microsoft pubblici**: Per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, spesso è necessario system *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dai server dei simboli Microsoft pubblici.
+     **Server dei simboli Microsoft pubblici**: Per eseguire il debug di un arresto anomalo del sistema che si verifica durante una chiamata a una DLL di sistema o a una libreria di terze parti, spesso è necessario system *PDB* file. System *PDB* contengono i simboli per le DLL di Windows, *.exe* file e i driver di dispositivo. È possibile ottenere i simboli per i sistemi operativi Windows, MDAC, IIS, ISA e .NET Framework dal server di simboli Microsoft pubblici.
 
      **Server di simboli in una rete interna o nel computer locale**: Il team o la società può creare server di simboli per i propri prodotti e come cache dei simboli provenienti da origini esterne. Nel computer potrebbe essere presente un server di simboli.
 

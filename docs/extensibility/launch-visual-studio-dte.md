@@ -1,20 +1,21 @@
 ---
-title: Avviare Visual Studio usando DTE
+title: Avviare Visual Studio tramite DTE
+titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
 author: gewarren
-ms.author: ''
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f597c1a8312edde94539285d68750f0cf127790e
-ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.openlocfilehash: 399f98964dca29eccfd7d3c2bb691205f373a3b3
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64879358"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747008"
 ---
-# <a name="launch-visual-studio-using-dte"></a>Avviare Visual Studio usando DTE
+# <a name="launch-visual-studio-using-dte"></a>Avviare Visual Studio tramite DTE
 
 A partire da Visual Studio 2017, il meccanismo per avviare Visual Studio usando DTE è diverso per l'avvio delle versioni precedenti di Visual Studio. Questa modifica è necessaria perché Visual Studio 2017 e versioni successive supporta side-by-side le installazioni della maggior parte delle versioni (ad esempio, è possibile avere un'anteprima e una versione di rilascio installato side-by-side).
 

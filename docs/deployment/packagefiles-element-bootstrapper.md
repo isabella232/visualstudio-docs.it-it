@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81a12f400ee870798759237e202d2ca358fefa69
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898711"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747519"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (programma di avvio automatico)
 Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono i pacchetti di installazione eseguiti in seguito al `Command` elemento.
@@ -62,7 +62,7 @@ Il `PackageFiles` elemento contiene `PackageFile` gli elementi, che definiscono 
 | `Hash` | Facoltativo. Un hash SHA1 del file del pacchetto. Ciò consente di verificare l'integrità del file in fase di installazione. Se non è possibile calcolare l'hash identico dal file di pacchetto, il pacchetto non essere installato. |
 
 ## <a name="example"></a>Esempio
- Esempio di codice seguente definisce i pacchetti per il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] package ridistribuibile e le relative dipendenze, ad esempio il programma di installazione di Windows.
+ Esempio di codice seguente definisce i pacchetti per il pacchetto ridistribuibile di .NET Framework e le relative dipendenze, ad esempio il programma di installazione di Windows.
 
 ```xml
 <PackageFiles>

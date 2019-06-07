@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566803"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745465"
 ---
 # <a name="hierarchical-update"></a>Aggiornamento gerarchico
 
 *Aggiornamento gerarchico* si riferisce al processo di salvataggio dei dati aggiornati (da un set di dati con due o più tabelle correlate) in un database, mantenendo le regole di integrità referenziale. *L'integrità referenziale* fa riferimento a regole di coerenza fornite tramite i vincoli in un database che controllano il comportamento di inserimento, aggiornamento ed eliminazione dei record correlati. È ad esempio, l'integrità referenziale che impone la creazione di un record del cliente prima di consentire gli ordini da creare per quel cliente.  Per altre informazioni sulle relazioni nei set di dati, vedere [relazioni nei DataSet](../data-tools/relationships-in-datasets.md).
 
-La funzionalità di aggiornamento gerarchico Usa una `TableAdapterManager` per gestire il `TableAdapter`s in un dataset tipizzato. Il `TableAdapterManager` componente è una classe generata Visual Studio, pertanto non è in parte il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Quando si trascina una tabella dal **Zdroje dat** finestra a una pagina di Windows Form o WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o nella pagina e visualizzato nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate sul `TableAdapterManager` di classi, vedere la sezione riferimento TableAdapterManager [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
+La funzionalità di aggiornamento gerarchico Usa una `TableAdapterManager` per gestire il `TableAdapter`s in un dataset tipizzato. Il `TableAdapterManager` componente è una classe generata Visual Studio, non è un tipo .NET. Quando si trascina una tabella dal **Zdroje dat** finestra a una pagina di Windows Form o WPF, Visual Studio aggiunge una variabile di tipo TableAdapterManager al form o nella pagina e visualizzato nella finestra di progettazione nella barra dei componenti. Per informazioni dettagliate sul `TableAdapterManager` di classi, vedere la sezione riferimento TableAdapterManager [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
 
 Per impostazione predefinita, un set di dati considerati tabelle correlate ", solo le relazioni" che significa che non imporre vincoli di chiave esterna. È possibile modificare tale impostazione in fase di progettazione utilizzando il **Progettazione Dataset**. Selezionare la linea di relazione tra due tabelle per visualizzare il **relazione** nella finestra di dialogo. Determinano le modifiche apportate qui come il `TableAdapterManager` si comporta quando invia le modifiche nelle tabelle correlate nel database.
 
@@ -114,16 +114,16 @@ Oltre a eseguire il commit delle modifiche apportate a una tabella figlio correl
 
 Per impostazione predefinita, un `TableAdapterManager` classe viene generata quando si crea un set di dati che contiene le tabelle correlate. Per evitare che la classe da generare, modificare il valore della `Hierarchical Update` proprietà del set di dati su false. Quando si trascina una tabella che dispone di una relazione nell'area di progettazione di un Windows Form o nella pagina WPF, Visual Studio viene dichiarata una variabile membro della classe. Se non si usa l'associazione dati, è necessario dichiarare manualmente la variabile.
 
-Il `TableAdapterManager` classe non è in parte il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Pertanto, è possibile cercarla nella documentazione. Viene creato in fase di progettazione come parte del processo di creazione del set di dati.
+Il `TableAdapterManager` classe non è un tipo .NET. Pertanto, è possibile cercarla nella documentazione. Viene creato in fase di progettazione come parte del processo di creazione del set di dati.
 
 Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:
 
 |Member|Descrizione|
 |------------|-----------------|
 |Metodo `UpdateAll`|Salva tutti i dati da tutte le tabelle di dati.|
-|Proprietà `BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
+|Proprietà`BackUpDataSetBeforeUpdate`|Determina se creare una copia di backup del set di dati prima di eseguire il `TableAdapterManager.UpdateAll` (metodo). Valore booleano.|
 |*tableName* `TableAdapter` proprietà|Rappresenta un `TableAdapter`. Generato `TableAdapterManager` contiene una proprietà per ogni `TableAdapter` gestisce. Ad esempio, viene generato un set di dati con una tabella Customers e Orders con un `TableAdapterManager` che contiene `CustomersTableAdapter` e `OrdersTableAdapter` proprietà.|
-|Proprietà `UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
+|Proprietà`UpdateOrder`|Controlla l'ordine delle singole insert, update e i comandi delete. Impostare questa proprietà su uno dei valori di `TableAdapterManager.UpdateOrderOption` enumerazione.<br /><br /> Per impostazione predefinita, il `UpdateOrder` è impostata su **InsertUpdateDelete**. Ciò significa che inserisce, aggiorna quindi Elimina quindi vengono eseguite per tutte le tabelle nel set di dati.|
 
 ## <a name="see-also"></a>Vedere anche
 

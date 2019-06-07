@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331626"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747725"
 ---
 # <a name="supply-undo-support-to-designers"></a>Alimentatore supporto dell'annullamento alle finestre di progettazione
 
@@ -29,7 +29,7 @@ Implementazioni della finestra di progettazione che è necessario fornire suppor
 
 - Persistenza forniture e CodeDOM supportano implementando il <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> classi.
 
-Per altre informazioni su come scrivere le finestre di progettazione utilizzando [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vedere [estendere Design-Time Support](/previous-versions/37899azc(v=vs.140)).
+Per altre informazioni su come scrivere le finestre di progettazione utilizzando .NET Framework, vedere [estendere Design-Time Support](/previous-versions/37899azc(v=vs.140)).
 
 Il [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornisce un'infrastruttura di annullamento predefinito per:
 
@@ -50,7 +50,7 @@ Qualsiasi finestra di progettazione creata in Visual Studio offre supporto autom
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usare il supporto di annullamento della finestra di progettazione esplicita
  Finestre di progettazione è necessario fornire le proprie gestione dell'annullamento se usano un'interfaccia utente grafica, definita come un adattatore della visualizzazione, diverso da quello fornito da <xref:System.Windows.Forms.Control>.
 
- Un esempio di questo oggetto può consistere nella creazione un prodotto con un'interfaccia di progettazione con interfaccia grafica basata su web anziché un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-basato su interfaccia grafica.
+ Un esempio potrebbe essere creazione di un prodotto con un'interfaccia basata sul web di progettazione grafica anziché un'interfaccia grafica basata su .NET Framework.
 
  In questi casi, uno dovrà registrare questo adattatore della visualizzazione con Visual Studio usando <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>e fornire la gestione esplicita di annullamento.
 
@@ -59,7 +59,7 @@ Qualsiasi finestra di progettazione creata in Visual Studio offre supporto autom
 ## <a name="undo-support-features-of-the-designer"></a>Annullare le funzionalità di supporto della finestra di progettazione
  il SDK di ambiente fornisce le implementazioni predefinite delle interfacce necessarie per fornire supporto che può essere utilizzato dalle finestre di progettazione non usa per l'annullamento <xref:System.Windows.Forms.Control> basati su classi per le proprie interfacce utente o il modello standard di persistenza e CodeDOM.
 
- Il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> deriva dalla classe la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> classe utilizzando un'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe per la gestione delle operazioni di annullamento.
+ Il <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe deriva da .NET Framework <xref:System.ComponentModel.Design.UndoEngine> classe utilizzando un'implementazione del <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe per la gestione delle operazioni di annullamento.
 
  Visual Studio offre la funzionalità di annullamento della finestra di progettazione seguente:
 

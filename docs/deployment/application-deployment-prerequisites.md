@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408582"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746054"
 ---
 # <a name="application-deployment-prerequisites"></a>Prerequisiti per la distribuzione dell'applicazione
 
-Affinché l'applicazione per installare ed eseguire correttamente, prima di tutto installare tutti i componenti da cui l'applicazione dipende nel computer di destinazione. Ad esempio, la maggior parte delle applicazioni create utilizzando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] attiva una dipendenza di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. In questo caso, la versione corretta di common language runtime deve essere presente nel computer di destinazione prima di installare l'applicazione.
+Affinché l'applicazione per installare ed eseguire correttamente, prima di tutto installare tutti i componenti da cui l'applicazione dipende nel computer di destinazione. Ad esempio, la maggior parte delle applicazioni create utilizzando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] presentano una dipendenza da .NET Framework. In questo caso, la versione corretta di common language runtime deve essere presente nel computer di destinazione prima di installare l'applicazione.
 
  È possibile selezionare questi prerequisiti sono le **Prerequisites Dialog Box** e installare .NET Framework e qualsiasi altro componente ridistribuibile come parte dell'installazione. Questa procedura è denominata *bootstrap*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Genera un programma eseguibile di Windows denominato *Setup.exe*, noto anche come una *bootstrapper*. Il programma di avvio automatico installa questi prerequisiti prima dell'esecuzione dell'applicazione. Per altre informazioni sulla selezione di questi prerequisiti, vedere [finestra di dialogo Prerequisiti](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Affinché l'applicazione per installare ed eseguire correttamente, prima di tutt
 | **-?, -h, -help** | Visualizza una finestra di dialogo della Guida. |
 | **-url, -componentsurl** | Visualizza l'URL archiviato e l'URL dei componenti per questa configurazione. |
 | **-url=** `location` | Imposta l'URL in cui *Setup.exe* cercherà l'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl=** `location` | Imposta l'URL in cui *Setup.exe* cercherà le dipendenze, ad esempio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl=** `location` | Imposta l'URL in cui *Setup.exe* cercherà le dipendenze, ad esempio .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Quando `true`, le dipendenze vengono scaricate dal percorso preferito sul sito del fornitore. Questa impostazione sostituisce il **- componentsurl** impostazione. Quando `false`, le dipendenze vengono scaricate dall'URL specificato da **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Supporto del sistema operativo

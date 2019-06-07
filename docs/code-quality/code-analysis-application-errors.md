@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540872"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745204"
 ---
 # <a name="code-analysis-application-errors"></a>Errori dell'applicazione di analisi del codice
 
@@ -46,8 +46,8 @@ In questa sezione è un riferimento dei messaggi di errore generati dallo strume
 |[CA0065](ca0065.md)|Costrutto di metadati non supportato: Tipo '*nomeTipo*'contiene una proprietà e un campo con lo stesso nome'*NomeCampoProprietà*'|
 |[CA0066](ca0066.md)|Il valore '*VersionID*' specificato per il **/targetframeworkversion** non è una versione riconosciuta.|
 |[CA0067](ca0067.md)|Directory non trovata.|
-|[CA0068](ca0068.md)|Eseguire il debug è stato possibile trovare informazioni per assembly di destinazione *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Utilizzo della piattaforma alternativa. *FrameworkVersion1* nebyl nalezen. Usando *FrameworkVersion2* invece. Per risultati di analisi ottimali, verificare che la versione corretta di .NET Framework sia installato.|
+|[CA0068](ca0068.md)|Eseguire il debug è stato possibile trovare informazioni per assembly di destinazione *'AssemblyName'* .|
+|[CA0069](ca0069.md)|Utilizzo della piattaforma alternativa. *FrameworkVersion1* nebyl nalezen. Usando *FrameworkVersion2* invece. Per risultati di analisi ottimali, verificare che sia installata la versione corretta del framework.|
 |[CA0070](ca0070.md)|Impossibile caricare l'assembly o un tipo a causa di autorizzazioni di sicurezza.|
 |[CA0501](ca0501.md)|Impossibile leggere il report di output.|
 |[CA0502](ca0502.md)|Lingua non supportata.|

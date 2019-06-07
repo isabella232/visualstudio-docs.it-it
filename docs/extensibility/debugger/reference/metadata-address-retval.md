@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4453030f01e99dcb82c344f003e217e7b1c55b6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333705"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746340"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Questa struttura rappresenta un valore restituito da un metodo o funzione.
@@ -50,7 +50,7 @@ public struct METADATA_ADDRESS_RETVAL {
  L'ID del metodo di questo valore restituito è per.
 
  `dwCorType`\
- Il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` definita nell'enumerazione il [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] file corhdr. h SDK.
+ Il tipo di base del valore restituito. Si tratta di un valore compreso il `CorElementType` enumerazione definita nel file corhdr. h di .NET Framework SDK.
 
  `dwSigSize`\
  Le dimensioni della firma del valore restituito (archiviato in `rgSig`).
