@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993547"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747541"
 ---
 # <a name="how-to--with-text-templates"></a>Procedure relative ai modelli di testo
 Modelli di testo in Visual Studio forniscono un modo utile per la generazione di testo di qualsiasi tipo. È possibile usare i modelli di testo per generare testo in fase di esecuzione come parte dell'applicazione e in fase di progettazione per generare alcuni di codice del progetto. Questo argomento vengono riepilogati più di frequente frequenti "Ricerca per categorie...?" domande.
@@ -45,13 +45,14 @@ Modelli di testo in Visual Studio forniscono un modo utile per la generazione di
      Nel codice, utilizzare `this.Host.ResolvePath(filename)` per ottenere il percorso completo del file.
 
 ### <a name="invoke-methods-from-a-template"></a>Richiamare i metodi da un modello
- Se i metodi già esistono, ad esempio, nello standard [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classi:
+
+Se i metodi già esistono, ad esempio, nelle classi di .NET:
 
 - Usare la \<&@assembly& > direttiva per caricare l'assembly e usare \<&@import& > per impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [direttiva Import T4](../modeling/t4-import-directive.md).
 
    Se spesso utilizzano lo stesso set di assembly e direttive import, prendere in considerazione la scrittura di un processore di direttiva. In ogni modello, è possibile richiamare il processore di direttiva, che è possibile caricare gli assembly e i file di modello e impostare il contesto dello spazio dei nomi. Per altre informazioni, vedere [creazione di processori direttiva di modelli di Custom T4 testo](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Se si siano scrivendo i metodi familiarità:
+Se si siano scrivendo i metodi familiarità:
 
 - Se si scrive un modello di testo di runtime, scrivere una definizione di classe parziale con lo stesso nome di modello di testo della fase di esecuzione. Aggiungere i metodi aggiuntivi in questa classe.
 

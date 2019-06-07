@@ -7,22 +7,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438174"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746799"
 ---
-# <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
-È possibile usare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), invece di usare un diagramma DSL. In questo argomento illustra l'associazione di un Windows Form a un linguaggio DSL, utilizzando la visualizzazione e Visual Studio SDK di modellazione.
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un linguaggio specifico di dominio di Windows basata su form
 
- ![Linguaggio specifico di dominio&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png) istanza di un DSL, che mostra un'interfaccia utente Form di Windows ed Esplora modelli.
+È possibile usare Windows Form per visualizzare lo stato di un modello di linguaggio specifico di dominio (DSL), invece di usare un diagramma DSL. In questo argomento illustra l'associazione di un modulo di Windows a un linguaggio DSL utilizzando la visualizzazione e Visual Studio Modeling SDK.
 
-## <a name="creating-a-windows-forms-dsl"></a>Creazione di un controllo Windows Form DSL
- Il **Progettazione Windows Form minimo** modello DSL consente di creare un DSL minimo che è possibile modificare in base alle proprie esigenze.
+L'immagine seguente mostra un'interfaccia utente Form di Windows ed Esplora modelli per un'istanza di DSL:
 
-#### <a name="to-create-a-minimal-winforms-dsl"></a>Per creare un DSL WinForms minimo
+![Istanza di DSL in Visual Studio](../modeling/media/dsl-wpf-2.png)
+
+## <a name="create-a-windows-forms-dsl"></a>Creare un controllo Windows Form DSL
+
+Il **Progettazione Windows Form minimo** modello DSL consente di creare un DSL minimo che è possibile modificare in base alle proprie esigenze.
 
 1. Creare un DSL dal **Progettazione Windows Form minimo** modello.
 
@@ -37,7 +39,7 @@ ms.locfileid: "63438174"
 
    1. Trasforma tutti i modelli.
 
-   2. Compilare ed eseguire il codice di esempio (**CTRL+F5**).
+   2. Compilare ed eseguire il codice di esempio (**Ctrl**+**F5**).
 
    3. Nell'istanza sperimentale di Visual Studio, aprire il `Sample` file nel progetto di debug.
 
@@ -62,14 +64,14 @@ ms.locfileid: "63438174"
     - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
 
 ### <a name="about-the-ui-project"></a>Sul progetto dell'interfaccia utente
- Quando si aggiorna il file di definizione DSL per definire il proprio DSL, è necessario aggiornare il controllo nel `UI` progetto per visualizzare il linguaggio DSL. A differenza di `Dsl` e `DslPackage` progetti, il codice di esempio `UI` progetto non viene generato da `DslDefinitionl.dsl`. È possibile aggiungere i file con estensione tt per generare il codice se si desidera, sebbene questa procedura non è descritta in questa procedura dettagliata.
 
-## <a name="updating-the-dsl-definition"></a>L'aggiornamento della definizione DSL
- Nell'esempio di che definizione DSL viene usata in questa procedura dettagliata.
+Quando si aggiorna il file di definizione DSL per definire il proprio DSL, è necessario aggiornare il controllo nel `UI` progetto per visualizzare il linguaggio DSL. A differenza di `Dsl` e `DslPackage` progetti, il codice di esempio `UI` progetto non viene generato da `DslDefinitionl.dsl`. È possibile aggiungere i file con estensione tt per generare il codice se si desidera, sebbene questa procedura non è descritta in questa procedura dettagliata.
 
- ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
+## <a name="update-the-dsl-definition"></a>Aggiornare la definizione DSL
 
-#### <a name="to-update-the-dsl-definition"></a>Per aggiornare la definizione DSL
+Nell'esempio di che definizione DSL viene usata in questa procedura dettagliata.
+
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Aprire dsldefinition. DSL nella finestra di progettazione DSL.
 
@@ -107,10 +109,11 @@ ms.locfileid: "63438174"
     > [!NOTE]
     > In questa fase, gli altri progetti non verranno compilato senza errori. Tuttavia, si vuole compilare il progetto Dsl in modo che l'assembly è disponibile per la creazione guidata origine dati.
 
-## <a name="updating-the-ui-project"></a>L'aggiornamento del progetto dell'interfaccia utente
- A questo punto è possibile creare un nuovo controllo utente che verrà visualizzate le informazioni che viene archiviate nel modello DSL. Il modo più semplice per connettere il controllo utente per il modello è tramite le associazioni dati. Il data binding di tipo di adattatore denominato **ModelingBindingSource** è progettato specificamente per la connessione di linguaggi specifici di dominio per le interfacce non VMSDK.
+## <a name="update-the-ui-project"></a>Aggiornare il progetto dell'interfaccia utente
 
-#### <a name="to-define-your-dsl-model-as-a-data-source"></a>Per definire il modello DSL come origine dati
+A questo punto è possibile creare un nuovo controllo utente che verrà visualizzate le informazioni che viene archiviate nel modello DSL. Il modo più semplice per connettere il controllo utente per il modello è tramite le associazioni dati. Il data binding di tipo di adattatore denominato **ModelingBindingSource** è progettato specificamente per la connessione di linguaggi specifici di dominio per le interfacce non VMSDK.
+
+### <a name="define-your-dsl-model-as-a-data-source"></a>Definire il modello DSL come origine dati
 
 1. Nel **Data** menu, scegliere **Mostra origini dati**.
 
@@ -128,7 +131,7 @@ ms.locfileid: "63438174"
 
      ![DslWpf&#45;3](../modeling/media/dslwpf-3.png)
 
-#### <a name="to-connect-your-model-to-a-form"></a>Per connettere il modello a un form
+### <a name="connect-your-model-to-a-form"></a>Connettere il modello a un form
 
 1. Nel **dell'interfaccia utente** progetto, eliminare tutti i file con estensione cs esistente.
 
@@ -151,7 +154,7 @@ ms.locfileid: "63438174"
    > [!NOTE]
    > Un'alternativa consiste nel trascinare gli elementi di animali e campi dalla finestra Origini dati nel controllo. Questa azione crea automaticamente le griglie dei dati e le associazioni tra la visualizzazione griglia e l'origine dati. Tuttavia, questa associazione non funziona correttamente per linguaggi specifici di dominio. Pertanto è preferibile creare le griglie dei dati e le associazioni manualmente.
 
-7. Se la casella degli strumenti non contiene il **ModelingBindingSource** dello strumento, aggiungerlo. Menu di scelta rapida del **Data** scheda, scegliere **Scegli elementi**. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona **ModelingBindingSource** dal **scheda Framework .NET**.
+7. Se la casella degli strumenti non contiene il **ModelingBindingSource** dello strumento, aggiungerlo. Menu di scelta rapida del **Data** scheda, scegliere **Scegli elementi**. Nel **Scegli elementi della casella degli strumenti** finestra di dialogo, seleziona **ModelingBindingSource** dal **.NET Framework** scheda.
 
 8. Usando la casella degli strumenti, creare due istanze di **ModelingBindingSource**e denominarli `AnimalBinding` e `FieldBinding`.
 
@@ -173,7 +176,7 @@ ms.locfileid: "63438174"
 
   ![DslWpf4](../modeling/media/dslwpf4.png) dello Schema dei collegamenti tra le origini dati e viste.
 
-#### <a name="to-complete-the-bindings-to-the-dsl"></a>Per completare le associazioni per il linguaggio DSL
+### <a name="complete-the-bindings-to-the-dsl"></a>Completare le associazioni per il linguaggio DSL
 
 1. Aggiungere il codice seguente in un file di codice separato nella **dell'interfaccia utente** progetto:
 
@@ -207,10 +210,9 @@ ms.locfileid: "63438174"
     string viewControlTypeName = "FarmControl";
     ```
 
-## <a name="testing-the-dsl"></a>Il linguaggio DSL di test
- La soluzione di linguaggio specifico di dominio può ora compila ed Esegui, anche se è possibile aggiungere altri miglioramenti in un secondo momento.
+## <a name="test-the-dsl"></a>Testare il linguaggio DSL
 
-#### <a name="to-test-the-dsl"></a>Per testare il linguaggio DSL
+La soluzione di linguaggio specifico di dominio può ora compila ed Esegui, anche se è possibile aggiungere altri miglioramenti in un secondo momento.
 
 1. Compilare ed eseguire la soluzione.
 
@@ -229,13 +231,13 @@ ms.locfileid: "63438174"
 
      Quando si esce ogni campo nel form, le modifiche alle proprietà corrispondenti nella finestra Proprietà.
 
-## <a name="enhancing-the-dsl"></a>Miglioramento del DSL
+## <a name="enhance-the-dsl"></a>Migliorare il linguaggio DSL
 
-#### <a name="to-make-the-properties-update-immediately"></a>Per rendere le proprietà di aggiornamento immediato
+### <a name="make-the-properties-update-immediately"></a>Rendere le proprietà di aggiornamento immediato
 
 1. Nella visualizzazione progettazione di FarmControl.cs, selezionare un campo semplice, ad esempio nome, dimensioni o IsOrganic.
 
-2. Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)**.
+2. Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)** .
 
      Nel **formattazione e associazione avanzata** finestra di dialogo, sotto **modalità aggiornamento origine dati**, scegliere **OnPropertyChanged**.
 
@@ -243,7 +245,7 @@ ms.locfileid: "63438174"
 
      Verificare che quando si modifica il contenuto del campo, la proprietà corrispondente di immediatamente la modifica del modello Farm.
 
-#### <a name="to-provide-add-buttons"></a>Per fornire pulsanti Aggiungi
+### <a name="provide-add-buttons"></a>Fornire Aggiungi pulsanti
 
 1. Nella visualizzazione progettazione di FarmControl.cs, usare la casella degli strumenti per creare un pulsante nel form.
 
@@ -301,7 +303,8 @@ ms.locfileid: "63438174"
    ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Informazioni sul codice per aggiungere un elemento
- Per i pulsanti del nuovo elemento, il seguente codice alternativo è leggermente più semplice.
+
+Per i pulsanti del nuovo elemento, il seguente codice alternativo è leggermente più semplice.
 
 ```csharp
 private void NewSheepButton_Click(object sender, EventArgs e)
@@ -314,12 +317,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
- Tuttavia, questo codice non impostare un nome predefinito per il nuovo elemento. Non può essere eseguito alcun merge personalizzato che è stata definita nel **direttive di unione elementi** del linguaggio DSL, e non può essere eseguito qualsiasi codice personalizzato di tipo merge che potrebbe essere stato definito.
+Tuttavia, questo codice non impostare un nome predefinito per il nuovo elemento. Non può essere eseguito alcun merge personalizzato che è stata definita nel **direttive di unione elementi** del linguaggio DSL, e non può essere eseguito qualsiasi codice personalizzato di tipo merge che potrebbe essere stato definito.
 
- Pertanto è consigliabile usare <xref:Microsoft.VisualStudio.Modeling.ElementOperations> per creare nuovi elementi. Per altre informazioni, vedere [spostamento e la creazione degli elementi di personalizzazione](../modeling/customizing-element-creation-and-movement.md).
+Pertanto è consigliabile usare <xref:Microsoft.VisualStudio.Modeling.ElementOperations> per creare nuovi elementi. Per altre informazioni, vedere [spostamento e la creazione degli elementi di personalizzazione](../modeling/customizing-element-creation-and-movement.md).
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Come definire un linguaggio specifico di dominio](../modeling/how-to-define-a-domain-specific-language.md)
-- [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Scrivere codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [SDK di modellazione per Visual Studio (linguaggi specifici di dominio)](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

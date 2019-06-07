@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca5f71d386f48b36fcb1126a1e0467b40ef8d73
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567973"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745569"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configura riferimento a servizio (finestra di dialogo)
 
@@ -98,7 +98,7 @@ Per accedere alla finestra di dialogo **Configura riferimento a servizio**, fare
  Visualizza la **finestra di dialogo Aggiungi riferimento Web**.
 
 > [!NOTE]
-> Questa opzione deve essere utilizzata solo per i progetti destinati alla versione 2.0 il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+> Questa opzione deve essere utilizzata solo per i progetti destinati alla versione 2.0 di .NET Framework.
 >
 > [!NOTE]
 > Il **Aggiungi riferimento Web** pulsante è disponibile solo quando il **Configura riferimento al servizio** verrà visualizzata la finestra di dialogo dal **Add Service Reference Dialog Box**.

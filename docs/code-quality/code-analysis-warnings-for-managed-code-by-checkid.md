@@ -260,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87461cfe06ac1c038176c3b9d4dcd513733e8d43
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: a36eb66e0308fddbc17e5ea9627562c2939f4bd7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714518"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745476"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avvisi dell'analisi codice per il codice gestito ordinati per CheckId
 
@@ -492,7 +492,7 @@ Nella tabella seguente sono elencati gli avvisi di analisi del codice per il cod
 | CA2225 | [CA2225: Overload degli operatori hanno alternative con nome](../code-quality/ca2225-operator-overloads-have-named-alternates.md) |È stato rilevato un overload di operatore e il metodo alternativo denominato previsto non è stato trovato. Il membro alternativo denominato fornisce accesso alla stessa funzionalità dell'operatore e viene fornito per gli sviluppatori che programmano in linguaggi che non supportano operatori di overload. |
 | CA2226 | [CA2226: Gli operatori devono avere overload simmetrici](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md) | Un tipo implementa l'operatore di uguaglianza o di disuguaglianza e non implementa l'operatore opposto. |
 | CA2227 |[CA2227: Le proprietà della raccolta devono essere di sola lettura](../code-quality/ca2227-collection-properties-should-be-read-only.md) |Una proprietà di raccolta scrivibile consente a un utente di sostituire la raccolta con una raccolta diversa. Una proprietà di sola lettura interrompe la sostituzione della raccolta ma consente ancora l'impostazione dei singoli membri. |
-| CA2228 | [CA2228: Non fornire formati di risorse non rilasciati](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | File di risorse che sono stati compilati usando versioni non definitive di .NET Framework potrebbero non essere utilizzabili dalle versioni supportate di .NET Framework. |
+| CA2228 | [CA2228: Non fornire formati di risorse non rilasciati](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md) | File di risorse che sono stati compilati usando versioni non definitive di .NET potrebbero non essere utilizzabili dalle versioni supportate di .NET. |
 | CA2229 | [CA2229: Implementare costruttori di serializzazione](../code-quality/ca2229-implement-serialization-constructors.md) | Per correggere una violazione di questa regola, implementare il costruttore di serializzazione. Per una classe sealed, rendere il costruttore privato; in caso contrario renderlo protetto. |
 | CA2230 | [CA2230: Utilizzare params per argomenti variabili](../code-quality/ca2230-use-params-for-variable-arguments.md) | Un tipo pubblico o protetto contiene un metodo pubblico o protetto che utilizza la convenzione di chiamata VarArgs anziché la parola chiave params. |
 | CA2231 | [CA2231: Eseguire l'overload dell'operatore "uguale a" all'override di ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) | Un tipo di valore esegue l'override di Object.Equals, ma non implementa l'operatore di uguaglianza. |

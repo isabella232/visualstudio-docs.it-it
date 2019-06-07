@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714263"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744706"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitare classi interne prive di istanze
 
@@ -58,7 +58,7 @@ Se si applica il <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribu
 
 Per correggere una violazione di questa regola, rimuovere il tipo o aggiungere codice che lo usa. Se il tipo contiene solo `static` metodi, aggiungere uno dei seguenti per il tipo per impedire al compilatore di creazione di un costruttore di istanza pubblici predefinito:
 
-- Il `static` modificatore per C# che hanno come destinazione i tipi [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] o versione successiva.
+- Il `static` modificatore per C# tipi destinati a .NET Framework 2.0 o versione successiva.
 
 - Un costruttore privato per i tipi destinate a .NET Framework versioni 1.0 e 1.1.
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407613"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746113"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Tramite l'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
    2. Cercare la directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
-   3. Usare il comando **expand** , incluso il punto (**.**) alla fine, per espandere IntelliTraceCollection.cab:
+   3. Usare il comando **expand** , incluso il punto ( **.** ) alla fine, per espandere IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > Il punto (**.**) lascia inalterate le sottocartelle che contengono i piani di raccolta localizzati.
+       > Il punto ( **.** ) lascia inalterate le sottocartelle che contengono i piani di raccolta localizzati.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Impostare autorizzazioni per la directory dell'agente di raccolta
 
@@ -157,7 +157,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
             - Nei sistemi operativi a 64 bit, aprire il menu di scelta rapida per **Windows PowerShell**. Scegliere **Esegui come amministratore**.
 
-            - Nei sistemi operativi a 32 bit, aprire il menu di scelta rapida per **Windows PowerShell (x86)**. Scegliere **Esegui come amministratore**.
+            - Nei sistemi operativi a 32 bit, aprire il menu di scelta rapida per **Windows PowerShell (x86)** . Scegliere **Esegui come amministratore**.
 
     2. Nella finestra di comando PowerShell, usare il comando **Import-Module** per importare **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 ## <a name="WhereElse"></a> In quali altre posizioni è possibile ottenere i dati IntelliTrace?
 
-- Da una sessione in Visual Studio Enterprise di debug di IntelliTrace, vedere [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
-
-- Da una sessione di test in Microsoft Test Manager, vedere [come: Raccogliere dati IntelliTrace per agevolare il Debug di problemi difficili](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+È possibile ottenere i dati di IntelliTrace da una di IntelliTrace in Visual Studio Enterprise sessione di debug. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?
  [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)

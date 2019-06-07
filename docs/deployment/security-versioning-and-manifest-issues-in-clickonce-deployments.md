@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263483"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745602"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemi relativi alla sicurezza, al controllo delle versioni e ai manifesti nelle distribuzioni ClickOnce
 
@@ -59,7 +59,7 @@ Questo errore può verificarsi solo se si sta modificando il [!INCLUDE[ndpteccli
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Specificare i singoli assembly di .NET Framework nel manifesto
 
-L'applicazione non riuscirà a caricare se è stata modificata manualmente una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione a cui fare riferimento a una versione precedente di un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] assembly. Ad esempio, se è stato aggiunto un riferimento all'assembly di System.Net per una versione del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prima la versione specificata nel manifesto, quindi potrebbe verificarsi un errore. In generale, è consigliabile non tenta di specificare riferimenti ai singoli [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gli assembly, come la versione del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] in cui viene eseguita l'applicazione viene specificato come una dipendenza nel manifesto dell'applicazione.
+L'applicazione non riuscirà a caricare se è stata modificata manualmente un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] distribuzione per fare riferimento a una versione precedente di un assembly .NET Framework. Ad esempio, se è stato aggiunto un riferimento all'assembly di System.Net per una versione di .NET Framework precedenti alla versione specificata nel manifesto, potrebbe verificarsi un errore. In generale, non tentare di specificare i riferimenti agli assembly di .NET Framework singole, come la versione di .NET Framework in cui viene eseguita l'applicazione è specificata come una dipendenza nel manifesto dell'applicazione.
 
 ## <a name="manifest-parsing-issues"></a>Manifesto i problemi di analisi
 

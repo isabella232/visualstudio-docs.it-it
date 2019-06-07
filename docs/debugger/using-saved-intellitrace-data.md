@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408626"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746145"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando i dati di IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
     |**Origine**|**Vedere**|
     |----------------|-------------|
     |Una sessione di IntelliTrace in Visual Studio Visual Studio Enterprise (ma non edizioni Professional o Community)|[Funzionalità IntelliTrace](../debugger/intellitrace-features.md)|
-    |Una sessione di test in Microsoft Test Manager. Ciò consente di associare un file .iTrace a un elemento di lavoro Team Foundation Server.|[Raccogliere un maggior numero di dati di diagnostica durante i test manuali](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012 R2 Operations Manager, per app Web ASP.NET e applicazioni SharePoint in esecuzione in fase di distribuzione|-   [Diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novità di System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> Selezionare l'operazione da eseguire.
@@ -67,7 +66,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.
 
 ## <a name="Understand"></a> Leggere il log IntelliTrace
- Alcune delle seguenti sezioni del file .iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio applicazioni Test Manager o SharePoint.
+ Alcune delle sezioni seguenti del file. iTrace vengono visualizzate solo se si raccolgono dati da una determinata origine, ad esempio, da applicazioni di SharePoint.
 
 |**Sezione**|**Contiene**|**Origine della raccolta**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |[Analisi](#Analysis)|Solo per applicazioni SharePoint 2010 e SharePoint 2013. Esaminare eventi SharePoint e IntelliTrace, ad esempio eventi del debugger, eventi ULS, eccezioni non gestite e altri dati registrati da Microsoft Monitoring Agent.|Microsoft Monitoring Agent, l'agente di raccolta autonomo o con System Center 2012 R2 Operations Manager|
 |[Informazioni di sistema](#SystemInfo)|Impostazioni e specifiche del sistema host|Tutte le origini|
 |[Elenco dei thread](#ThreadsList)|Thread eseguiti durante la raccolta|Tutte le origini|
-|[Dati di test](#TestData)|Passaggi di test e relativi risultati da una sessione di test|Gestione test|
 |[Moduli](#Modules)|Moduli caricati dal processo di destinazione nell'ordine di caricamento.|Tutte le origini|
 |[Richiesta Web](#Modules)|Dati della richiesta Web per la produzione IIS applicazioni web e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e agente di raccolta autonomo|
 
@@ -84,7 +82,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 - Per ordinare i dati, selezionare un'intestazione di colonna.
 
-- Per filtrare i dati, usare la casella di ricerca. La ricerca di testo normale funziona su tutte le colonne, ad eccezione di quelle dell'ora. È inoltre possibile filtrare le ricerche a una determinata colonna con un filtro per colonna. Digitare il nome della colonna senza spazi, due punti (**:**) e il valore di ricerca. Usare un punto e virgola (**;**) per aggiungere un'altra colonna e un altro valore di ricerca.
+- Per filtrare i dati, usare la casella di ricerca. La ricerca di testo normale funziona su tutte le colonne, ad eccezione di quelle dell'ora. È inoltre possibile filtrare le ricerche a una determinata colonna con un filtro per colonna. Digitare il nome della colonna senza spazi, due punti ( **:** ) e il valore di ricerca. Usare un punto e virgola ( **;** ) per aggiungere un'altra colonna e un altro valore di ricerca.
 
      Ad esempio, per trovare gli eventi di prestazioni con la parola "slow" nella colonna **Descrizione** , digitare:
 
@@ -227,9 +225,6 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Name**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|
 |**Ora di inizio**|Ora di creazione del thread|
 |**Ora di fine**|Ora di completamento del thread|
-
-### <a name="TestData"></a> Dati di test
- Esaminare i dati IntelliTrace registrati da Test Manager durante il test dell'app.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Per avviare il debug da un passaggio di test specifico
 

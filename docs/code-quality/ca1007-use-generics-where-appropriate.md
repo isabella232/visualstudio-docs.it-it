@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779715"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744771"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Usare generics dove appropriato
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779715"
 |Modifica importante|Interruzione|
 
 ## <a name="cause"></a>Causa
- Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName>la destinazione dell'assembly che lo contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Un metodo visibile esternamente contiene un parametro di riferimento di tipo <xref:System.Object?displayProperty=fullName>, e l'assembly che contiene è destinato a .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Descrizione della regola
  Un parametro di riferimento è un parametro che viene modificato tramite il `ref` (`ByRef` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) (parola chiave). Il tipo di argomento fornito per un parametro di riferimento deve corrispondere esattamente al tipo di parametro di riferimento. Per usare un tipo derivato dal tipo di parametro di riferimento, è necessario prima di tutto eseguire il cast al tipo e assegnato a una variabile del tipo di parametro di riferimento. Uso di un metodo generico consente tutti i tipi, soggetti a vincoli, deve essere passato al metodo senza prima eseguire il cast di tipo al tipo di parametro di riferimento.

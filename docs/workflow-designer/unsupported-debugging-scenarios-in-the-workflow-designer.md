@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433877"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747266"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scenari di debug non supportati in Progettazione flussi di lavoro
 
-La finestra di progettazione del flusso di lavoro in .NET Framework 4 introdotte molte nuove funzionalità, ma sono ancora presenti alcuni scenari di debug non supporta.
-
-Di seguito sono indicati la finestra di progettazione del flusso di lavoro non supportati gli scenari di debug:
+La finestra di progettazione del flusso di lavoro non supporta i seguenti scenari di debug:
 
 - Impossibile continuare l'esecuzione dopo che il codice è stato modificato.
 
@@ -29,7 +27,7 @@ Di seguito sono indicati la finestra di progettazione del flusso di lavoro non s
 
 - Impossibile usare Progettazione flussi di lavoro per eseguire debug di flussi di lavoro creati in codice senza l'uso della finestra di progettazione.
 
-- I flussi di lavoro creati in versioni precedenti di Windows Workflow Foundation (WF) non è possibile eseguire il debug nella finestra di progettazione di .NET Framework 4.
+- I flussi di lavoro creati in versioni precedenti di Windows Workflow Foundation (WF) non è possibile eseguire il debug in .NET Framework 4 o versione successiva.
 
 - Impossibile definire i punti di interruzione nei collegamenti tra attività o nodi <xref:System.Activities.Statements.Flowchart>.
 

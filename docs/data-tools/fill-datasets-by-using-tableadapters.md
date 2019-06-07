@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715187"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745536"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Compilare i set di dati usando oggetti TableAdapter
 
@@ -85,7 +85,7 @@ Gli oggetti TableAdapter estendere le funzionalità delle schede di dati standar
 
 ## <a name="tableadapter-methods-and-properties"></a>Le proprietà e i metodi TableAdapter
 
-La classe TableAdapter non è in parte il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Ciò significa che è possibile cercarla nella documentazione o la **Visualizzatore oggetti**. Viene creato in fase di progettazione quando si utilizza una delle procedure guidate indicate in precedenza. Il nome assegnato a un oggetto TableAdapter durante la creazione è basato sul nome della tabella di cui che si sta lavorando. Ad esempio, quando si crea un oggetto TableAdapter basato su una tabella in un database denominato `Orders`, denominato oggetto TableAdapter `OrdersTableAdapter`. Il nome della classe dell'oggetto TableAdapter può essere modificato usando il **Name** proprietà nel **Progettazione Dataset**.
+La classe TableAdapter non è un tipo .NET. Ciò significa che è possibile cercarla nella documentazione o la **Visualizzatore oggetti**. Viene creato in fase di progettazione quando si utilizza una delle procedure guidate indicate in precedenza. Il nome assegnato a un oggetto TableAdapter durante la creazione è basato sul nome della tabella di cui che si sta lavorando. Ad esempio, quando si crea un oggetto TableAdapter basato su una tabella in un database denominato `Orders`, denominato oggetto TableAdapter `OrdersTableAdapter`. Il nome della classe dell'oggetto TableAdapter può essere modificato usando il **Name** proprietà nel **Progettazione Dataset**.
 
 Di seguito sono i metodi comunemente utilizzati e le proprietà degli oggetti TableAdapter:
 
@@ -122,7 +122,7 @@ Gli oggetti TableAdapter supporta i tipi nullable `Nullable(Of T)` e `T?`. Per a
 
 Per impostazione predefinita, una classe di TableAdapterManager genera quando si crea un set di dati che contiene le tabelle correlate. Per evitare che la classe da generare, modificare il valore della `Hierarchical Update` proprietà del set di dati su false. Quando si trascina una tabella che dispone di una relazione nell'area di progettazione di un Windows Form o nella pagina WPF, Visual Studio viene dichiarata una variabile membro della classe. Se non si usa l'associazione dati, è necessario dichiarare manualmente la variabile.
 
-La classe di TableAdapterManager non è in parte il [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Pertanto, è possibile cercarla nella documentazione. Viene creato in fase di progettazione come parte del processo di creazione del set di dati.
+La classe di TableAdapterManager non è un tipo .NET. Pertanto, è possibile cercarla nella documentazione. Viene creato in fase di progettazione come parte del processo di creazione del set di dati.
 
 Di seguito sono i metodi usati di frequente e le proprietà di `TableAdapterManager` classe:
 

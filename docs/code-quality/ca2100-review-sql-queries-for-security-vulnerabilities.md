@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5387ce65532cb532192191bd67f29cc7af6e28c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545293"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744803"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Controllare la vulnerabilità della sicurezza nelle query SQL
 
@@ -36,7 +36,8 @@ ms.locfileid: "62545293"
 |Modifica importante|Non sostanziale|
 
 ## <a name="cause"></a>Causa
- Imposta un metodo di <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> proprietà usando una stringa che viene creata da un argomento di stringa al metodo.
+
+Imposta un metodo di <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> proprietà usando una stringa che viene creata da un argomento di stringa al metodo.
 
 ## <a name="rule-description"></a>Descrizione della regola
 
@@ -48,7 +49,7 @@ La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una s
 
 - Convalidare l'input dell'utente per tipo sia il contenuto prima di compilare la stringa di comando.
 
-I seguenti tipi di .NET Framework implementano il <xref:System.Data.IDbCommand.CommandText%2A> proprietà o fornire costruttori che impostare la proprietà con un argomento di tipo stringa.
+I seguenti tipi di .NET implementano il <xref:System.Data.IDbCommand.CommandText%2A> proprietà o fornire costruttori che impostare la proprietà con un argomento di tipo stringa.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> e <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -60,32 +61,36 @@ I seguenti tipi di .NET Framework implementano il <xref:System.Data.IDbCommand.C
 
 Si noti che questa regola viene violata quando viene utilizzato il metodo ToString di un tipo esplicito o implicito per costruire la stringa di query. Di seguito è riportato un esempio.
 
-```
+```csharp
 int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- La regola viene violata perché un utente malintenzionato può sostituire il metodo ToString ().
+La regola viene violata perché un utente malintenzionato può sostituire il metodo ToString ().
 
- Inoltre, la regola viene violata quando ToString viene utilizzato in modo implicito.
+Inoltre, la regola viene violata quando ToString viene utilizzato in modo implicito.
 
-```
+```csharp
 int x = 10;
 string query = String.Format("SELECT TOP {0} FROM Table", x);
 ```
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
- Per correggere una violazione di questa regola, usare una query con parametri.
+
+Per correggere una violazione di questa regola, usare una query con parametri.
 
 ## <a name="when-to-suppress-warnings"></a>Soppressione degli avvisi
- È possibile eliminare un avviso da questa regola se il testo del comando non contiene alcun input utente.
+
+È possibile eliminare un avviso da questa regola se il testo del comando non contiene alcun input utente.
 
 ## <a name="example"></a>Esempio
- Nell'esempio seguente viene illustrato un metodo, `UnsafeQuery`, che viola la regola e un metodo, `SaferQuery`, che soddisfa la regola con una stringa di comando con parametri.
 
- [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
- [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
- [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
+Nell'esempio seguente viene illustrato un metodo, `UnsafeQuery`, che viola la regola e un metodo, `SaferQuery`, che soddisfa la regola con una stringa di comando con parametri.
+
+[!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
+[!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
+[!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]
 
 ## <a name="see-also"></a>Vedere anche
- [Panoramica della sicurezza](/dotnet/framework/data/adonet/security-overview)
+
+- [Panoramica della sicurezza](/dotnet/framework/data/adonet/security-overview)
