@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972711"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500988"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
@@ -241,7 +241,7 @@ Le opzioni seguenti possono essere usate eseguire l'autenticazione in un server:
 
 Per usare l'autenticazione di base è necessario abilitare le **credenziali di autenticazione alternative** in Azure DevOps Services seguendo questa procedura:
 
-1. Accedere all'organizzazione di Azure DevOps come proprietario (https://dev.azure.com/{organization}/{project}).
+1. Accedere all'organizzazione di Azure DevOps come proprietario (https:\//dev.azure.com/{organizzazione}/{project}).
 
 2. Dalla barra degli strumenti dell'organizzazione selezionare l'icona a forma di ingranaggio, quindi **Policy** (Criteri):
 

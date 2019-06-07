@@ -1,7 +1,7 @@
 ---
 title: Log delle modifiche (Visual Studio Tools per Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403211"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327347"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
 Registro delle modifiche di Visual Studio Tools per Unity.
+
+## <a name="4110"></a>4.1.1.0
+ Data di rilascio: 24 maggio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+    - Aggiornamento dell'API MonoBehaviour alla versione 2019.1.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+    - Correzione degli avvisi e degli errori per l'output quando è abilitata la compilazione leggera.
+    
+    - Correzione delle prestazioni per la compilazione leggera.
+
+## <a name="4100"></a>4.1.0.0
+ Data di rilascio: 21 maggio 2019
+
+### <a name="new-features"></a>Nuove funzionalità
+
+- **Integrazione:**
+
+    - Aggiunta del supporto per la nuova API batch per ricaricare i progetti più velocemente.
+    
+    - Disabilitazione della compilazione completa per i progetti Unity, a favore dell'uso di errori e avvisi IntelliSense. Indeed Unity crea una soluzione di Visual Studio con progetti di libreria di classi che rappresentano le operazioni eseguite internamente da Unity. Detto questo, il risultato della compilazione in Visual Studio non viene mai usato o acquisito da Unity perché la pipeline di compilazione è chiusa. La compilazione in Visual Studio utilizza inutilmente risorse. Se è necessaria una compilazione completa perché si usano strumenti o un programma di installazione che dipende da essa, è possibile disabilitare questa ottimizzazione: Strumenti/Opzioni/Tools for Unity/Disable the full build of projects (Strumenti per Unity/Disabilita compilazione completa dei progetti). 
+
+    - Visualizzazione automatica di Esplora progetti Unity quando viene caricato un progetto Unity. Esplora progetti Unity sarà ancorato accanto a Esplora soluzioni.
+    
+    - Aggiornamento del meccanismo di estrazione del nome di progetto con Unity 2019.x.
+
+    - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella ```Packages```) e i pacchetti locali (incorporati nella cartella ```Packages```).
+    
+- **Project Generation:**
+
+    - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
+
+- **Valutazione:**
+
+    - Aggiunta del supporto per nomi completi di alias (solo lo spazio dei nomi globale per il momento). L'analizzatore di espressioni accetta quindi ora i tipi nel formato global::namespace.type.
+    
+    - Aggiunta del supporto per il formato ```pointer[index]```, semanticamente identico al formato ```*(pointer+index)``` per la dereferenziazione del puntatore.
+
+### <a name="bug-fixes"></a>Correzioni di bug
+
+- **Integrazione:**
+
+    - Correzione di problemi di dipendenza con Microsoft.VisualStudio.MPF.
+    
+    - Correzione del collegamento del lettore UWP, senza alcun progetto caricato.
+    
+    - Correzione dell'aggiornamento automatico del database degli asset quando Visual Studio non è ancora associato.
+    
+    - Correzione di problemi del tema con etichette e caselle di controllo.
+    
+- **Debugger:**
+
+    - Correzione dell'esecuzione di istruzioni con i costruttori statici.
 
 ## <a name="4005"></a>4.0.0.5
  Data di rilascio: 27 febbraio 2019

@@ -3,7 +3,7 @@ title: 'Esercitazione: Introduzione a C# e ad ASP.NET Core'
 titleSuffix: ''
 description: Informazioni dettagliate su come creare un'app web ASP.NET Core in Visual Studio con C#.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 05/29/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972100"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402122"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Esercitazione: Introduzione a C# e ad ASP.NET Core in Visual Studio
 
@@ -45,7 +45,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 ### <a name="update-visual-studio"></a>Aggiornare Visual Studio
 
-Se Visual Studio è già installato, verificare che si stia usando la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../../install/update-visual-studio.md).
+Se Visual Studio è già installato, verificare che sia in uso la versione più recente. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../../install/update-visual-studio.md).
 
 ### <a name="choose-your-theme-optional"></a>Scegliere il tema (facoltativo)
 
@@ -61,7 +61,7 @@ Prima di tutto è necessario creare un progetto ASP.NET Core. Il tipo di progett
 
 2. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
-3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual C#**, espandere **Web** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Quindi denominare il file *MyCoreApp* e scegliere **OK**.
+3. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** espandere **Visual C#** , espandere **Web** e quindi scegliere **.NET Core**. Nel riquadro centrale scegliere **Applicazione Web ASP.NET Core**. Quindi denominare il file *MyCoreApp* e scegliere **OK**.
 
    ![Modello di progetto di applicazione Web ASP .NET Core nella finestra di dialogo Nuovo progetto dell'IDE di Visual Studio](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
@@ -98,7 +98,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    ![Finestra di dialogo Nuova applicazione Web ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Se **ASP.NET Core 2.1** o versione successiva non è presente nel menu a discesa in alto, verificare se si sta eseguendo la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../../install/update-visual-studio.md).
+   > Se **ASP.NET Core 2.1** non è presente nel menu a discesa in alto, verificare se sia un uso la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../../install/update-visual-studio.md).
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
 
    ![Visualizzare la finestra Crea un nuovo progetto](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#**  dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma. 
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *ASP.NET* nella casella di ricerca. Scegliere quindi **C#**  dall'elenco Linguaggio e **Windows** dall'elenco Piattaforma.
 
    Dopo aver applicato i filtri di linguaggio e piattaforma, scegliere il modello **Applicazione Web ASP.NET Core**, quindi scegliere **Avanti**.
 
@@ -117,19 +117,19 @@ Se il modello di progetto **Applicazione Web ASP.NET Core** non è visualizzato,
    > [!NOTE]
    > Se il modello **Applicazione Web ASP.NET Core** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
    >
-   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Scegliere quindi il carico di lavoro **Sviluppo ASP.NET e Web** nel programma di installazione di Visual Studio.
    >
    > ![Carico di lavoro Sviluppo multipiattaforma .NET Core nel programma di installazione di Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Se viene chiesto di salvare, procedere. Scegliere quindi **Continua** per installare il carico di lavoro. Quindi tornare al passaggio 2 della procedura [Creare un progetto](#create-a-project)".
 
 1. Nella finestra **Configura il nuovo progetto** digitare o immettere *MyCoreApp* nella casella **Nome del progetto**. Scegliere **Crea**.
 
    ![nella finestra "Configura il nuovo progetto", denominare il progetto "MyCoreApp"](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. Nella finestra **Crea una nuova applicazione Web ASP.NET Core** verificare che **ASP.NET Core 2.1** o versione successiva venga visualizzato nel menu a discesa in alto. Scegliere quindi **Applicazione Web** che include un esempio di Razor Pages. Infine scegliere **Crea**.
+1. Nella finestra **Crea una nuova applicazione Web ASP.NET Core** verificare che **ASP.NET Core 2.1** venga visualizzato nel menu a discesa in alto. Scegliere quindi **Applicazione Web** che include un esempio di Razor Pages. Infine scegliere **Crea**.
 
    ![Finestra Crea una nuova applicazione Web ASP.NET Core](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -180,16 +180,13 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
      ![Selezionare il pulsante IIS Express in Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Se viene visualizzato il messaggio di errore **Non è possibile connettersi al server Web 'IIS Express'**, chiudere Visual Studio e quindi aprirlo usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
+     > Se viene visualizzato il messaggio di errore **Non è possibile connettersi al server Web 'IIS Express'** , chiudere Visual Studio e quindi aprirlo usando l'opzione **Esegui come amministratore** dal menu di scelta rapida. Eseguire quindi di nuovo l'applicazione.
      >
-     > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento. 
+     > Potrebbe essere visualizzato un messaggio in cui si chiede se accettare un certificato SSL di IIS Express. Per visualizzare il codice in un Web browser, scegliere **Yes** (Sì), quindi scegliere **Yes** (Sì) se si riceve un messaggio di avviso di sicurezza per il completamento.
 
 1. Visual Studio apre una finestra del browser. Dovrebbero essere disponibili le pagine **Home**, **About** e **Contact** nella barra dei menu. (In caso contrario, scegliere la voce di menu "Hamburger" per visualizzarle.)
 
     ![Selezionare la voce di menu "Hamburger" dalla barra dei menu nell'app Web](media/csharp-aspnet-razor-browser-page.png)
-
-     > [!TIP]
-     > Non è possibile modificare il codice nell'editor di codice di Visual Studio quando il progetto è aperto in una finestra del browser. 
 
 1. Scegliere **About** dalla barra dei menu.
 
@@ -199,7 +196,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
    ![Visualizzare il testo nella pagina informazioni su](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Mantenere aperta la finestra del browser e tornare a Visual Studio.
+1. Tornare a Visual Studio e quindi premere **MAIUSC+F5** per interrompere la modalità di debug. Verrà anche chiuso il progetto nella finestra del browser.
 
 1. In Visual Studio scegliere **About.cshtml**. Eliminare quindi la parola _additional_ e aggiungere al suo posto le parole _file and directory_.
 
@@ -235,7 +232,7 @@ Questa soluzione segue lo schema progettuale **Pagina Razor**. È diverso dallo 
 
    ![Aggiungere la direttiva "using System;"](media/csharp-aspnet-razor-add-usings.png)
 
-1. Premere **CTRL**+**S** per salvare le modifiche e aggiornare l'app nel Web browser.
+1. Premere **CTRL**+**S** per salvare le modifiche e quindi premere **F5** per aprire il progetto nel Web browser.
 
 1. Nella parte superiore del sito Web scegliere **About** per visualizzare le modifiche.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822730"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432302"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisi dei test codificati dell'interfaccia utente usando i log dei test codificati dell'interfaccia utente
 
@@ -24,23 +24,23 @@ I log dei test codificati dell'interfaccia utente filtrano e registrano informaz
 
 A seconda dello scenario in uso, abilitare la registrazione usando uno dei metodi seguenti:
 
-- La destinazione è .NET Framework versione 4 senza file *App.config* nel progetto di test:
+- Se non è presente alcun file *App.config* nel progetto di test:
 
-   1. Aprire il file *QTAgent32_40.exe.config*. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Determinare quale processo *QTAgent\*.exe* viene avviato quando si esegue il test. Un modo per farlo è osservare la scheda **Dettagli** in **Gestione attività** di Windows.
+   
+   2. Aprire il file con estensione *config* corrispondente dalla cartella *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<versione>\\\<edizione>\Common7\IDE*. Ad esempio, se il processo eseguito è *QTAgent_40.exe* aprire *QTAgent_40.exe.config*.
 
-   2. Modificare il valore per EqtTraceLevel e impostarlo sul livello di log desiderato.
+   2. Modificare il valore di **EqtTraceLevel** e impostarlo sul livello di log desiderato.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Salvare il file.
 
-- La destinazione è .NET Framework versione 4.5 senza file *App.config* nel progetto di test:
-
-   1. Aprire il file *QTAgent32.exe.config*. Per impostazione predefinita, questo file si trova in *%Programmi(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Modificare il valore di EqtTraceLevel e impostarlo sul livello di log desiderato.
-
-   3. Salvare il file.
-
-- Il file *App.config* è presente nel progetto di test:
+- Se è presente un file *App.config* nel progetto di test:
 
     - Aprire il file *App.config* nel progetto e aggiungere il codice seguente nel nodo di configurazione:
 
@@ -54,11 +54,13 @@ A seconda dello scenario in uso, abilitare la registrazione usando uno dei metod
 
 - La registrazione viene abilitata dal codice di test stesso:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Passaggio 2: Eseguire il test codificato dell'interfaccia utente e visualizzare il log
 
-Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file *QTAgent32.exe.config*, viene visualizzato un collegamento di output nei risultati di **Esplora test**. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su "dettagliato".
+Quando si esegue un test codificato dell'interfaccia utente dopo avere apportato le modifiche appropriate al file *QTAgent\*.exe.config*, viene visualizzato un collegamento di output nei risultati di **Esplora test**. I file di log vengono generati sia per i test con esito negativo, sia per quelli con esito positivo quando il livello di traccia è impostato su **verbose**.
 
 1. Dal menu **Test** scegliere **Finestre** e selezionare **Esplora test**.
 

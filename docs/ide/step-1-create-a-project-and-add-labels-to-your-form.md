@@ -1,6 +1,6 @@
 ---
 title: 'Passaggio 1: Creare un progetto e aggiungere etichette al modulo'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949131"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501140"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Passaggio 1: Creare un progetto e aggiungere etichette al modulo
 
@@ -24,17 +24,20 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 > [!NOTE]
 > Questo argomento fa parte di una serie di esercitazioni sui concetti di codifica di base. Per una panoramica dell'esercitazione, vedere [Esercitazione 2: Creare un quiz matematico a tempo (C#)](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Per creare un progetto e impostare le proprietà per un modulo
+## <a name="to-create-a-project-for-a-form"></a>Per creare un progetto da un modulo
 
 ::: moniker range="vs-2017"
 
 1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
 
-1. Nell'elenco **Modelli installati** scegliere **C#** o **Visual Basic**.
+1. Scegliere **Visual C#** o **Visual Basic** sul lato destro della finestra di dialogo **Nuovo progetto** e quindi scegliere **Desktop di Windows**.
 
-1. Nell'elenco di modelli scegliere il modello **Applicazione Windows Forms**, assegnare il nome **QuizMatematico** e scegliere il pulsante **OK**.
+1. Nell'elenco di modelli scegliere il modello **App Windows Forms (.NET Framework)** , assegnare il nome *QuizMatematico* e quindi scegliere il pulsante **OK**.
 
-     Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
+    Verrà visualizzato un modulo con nome *Form1.cs* o *Form1.vb*, a seconda del linguaggio di programmazione scelto.
+
+   > [!NOTE]
+   > Se non viene visualizzato il modello **App Windows Forms (.NET Framework)** , usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.<br/><br/>![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Per altre informazioni, vedere la pagina [Installare Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -42,15 +45,32 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 1. Nella finestra iniziale scegliere **Crea un nuovo progetto**.
 
-1. Nella casella di ricerca, digitare "WPF", scegliere **App WPF (.NET Framework)** e quindi scegliere **Avanti**.
+   ![Visualizzare la finestra Crea un nuovo progetto](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   Se non viene visualizzato il modello **App WPF (.NET Framework)**, usare il programma di installazione di Visual Studio per installare il carico di lavoro **Sviluppo per desktop .NET**.
+1. Nella finestra **Crea un nuovo progetto** immettere o digitare *Windows Forms* nella casella di ricerca.
 
-1. Specificare il nome **QuizMatematico** per il progetto e scegliere **Crea**.
+1. Scegliere il modello **App Windows Forms (.NET Framework)** e quindi scegliere **Avanti**.
+
+   ![Scegliere il modello Visual Basic per l'app Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Se il modello **App Windows Forms (.NET Core)** non viene visualizzato, è possibile installarlo dalla finestra **Crea un nuovo progetto**. Nel messaggio **L'elemento cercato non è stato trovato?** scegliere il collegamento **Installa altri strumenti e funzionalità**.
+   >
+   > ![Collegamento "Installa altri strumenti e funzionalità" nel messaggio "L'elemento cercato non è stato trovato?" nella finestra "Crea un nuovo progetto"](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Scegliere quindi il carico di lavoro **Sviluppo per desktop .NET** nel programma di installazione di Visual Studio.
+   >
+   > ![Carico di lavoro Sviluppo per desktop .NET nel programma di installazione di Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Scegliere quindi il pulsante **Modifica** nel programma di installazione di Visual Studio. Quando viene richiesto, salvare il lavoro. Scegliere quindi **Continua** per installare il carico di lavoro.
+
+1. Nella finestra **Configura il nuovo progetto** digitare o immettere *QuizMatematico* nella casella **Nome del progetto**. Scegliere **Crea**.
 
 ::: moniker-end
 
-1. Scegliere il modulo e impostare la proprietà **Text** su **Quiz matematico**.
+## <a name="to-set-properties-for-a-form"></a>Per impostare le proprietà per un modulo
+
+1. In Visual Studio scegliere il modulo (*Form1.cs* oppure *Form1.vb*, a seconda del linguaggio di programmazione) e quindi modificare la relativa proprietà **Testo** in  **Quiz matematico**.
 
      La finestra **Proprietà** conterrà le proprietà per il modulo.
 
@@ -80,7 +100,7 @@ I passaggi iniziali dello sviluppo di questo quiz consistono nella creazione del
 
 6. Nella finestra **Proprietà** scegliere la proprietà **Text** e quindi premere **BACKSPACE** per cancellare il valore.
 
-7. Scegliere il segno più (**+**) accanto alla proprietà **Font** e quindi modificare il valore della proprietà **Size** su **15,75**.
+7. Scegliere il segno più ( **+** ) accanto alla proprietà **Font** e quindi modificare il valore della proprietà **Size** su **15,75**.
 
      È possibile modificare diverse proprietà del tipo di carattere, come illustrato di seguito.
 

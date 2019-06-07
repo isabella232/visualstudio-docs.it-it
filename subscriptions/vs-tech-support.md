@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811485"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402022"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -90,6 +90,9 @@ Quando si segnala un evento imprevisto online, per prima cosa verrà chiesto di 
 
    > [!div class="mx-imgBorder"]
    > ![Vantaggio Supporto tecnico - Segnalazione dell'evento imprevisto - Scegliere il piano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Se non è possibile visualizzare il piano di supporto, tornare alla pagina precedente e fare di nuovo clic su **Avanti**.  Se il problema persiste, copiare negli Appunti il testo del problema di supporto, aggiornare la pagina e creare nuovamente la richiesta di supporto.
 
 6. Completare i passaggi rimanenti (gravità, informazioni di contatto, revisione delle informazioni).   Dopo aver segnalato l'evento imprevisto, un messaggio di conferma informa che l'evento imprevisto è stato inviato correttamente ed è possibile caricare i file nel caso. Un professionista del supporto verrà assegnato all'evento imprevisto e si metterà in contatto per risolvere il problema tramite il metodo di contatto selezionato.
 

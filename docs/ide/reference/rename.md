@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812099"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500945"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refactoring con ridenominazione di un simbolo di codice
 
@@ -68,10 +68,13 @@ Questo refactoring si applica a:
 
 4. Quando si è soddisfatti della modifica, scegliere il pulsante **Applica** o premere **INVIO**. Verrà eseguito il commit delle modifiche.
 
-> [!NOTE]
-> Se si usa un nome già esistente che causerebbe un conflitto, nella finestra di dialogo **Rinomina** verrà visualizzato un avviso.
->
-> ![Conflitto di ridenominazione](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Osservazioni
+
+- Se si usa un nome già esistente che causerebbe un conflitto, nella finestra di dialogo **Rinomina** verrà visualizzato un avviso.
+
+   ![Conflitto di ridenominazione](media/rename-conflict-cs.png)
+
+- Un altro modo per rinominare un simbolo consiste nel modificare il nome nell'editor. Con il cursore nel nome del simbolo, premere quindi **CTRL**+ **.** o espandere semplicemente il menu con l'icona a forma di lampadina visualizzata e scegliere **Rinomina da \<vecchio nome> a \<nuovo nome>** .
 
 ## <a name="see-also"></a>Vedere anche
 
