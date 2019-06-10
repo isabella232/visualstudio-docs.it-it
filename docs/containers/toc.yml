@@ -7,8 +7,10 @@
     - name: Guida rapida
       expanded: true
       items:
-        - name: Strumenti per contenitori in Visual Studio
+        - name: App ASP.NET Core in un contenitore
           href: container-tools.md
+        - name: App a pagina singola React.js in un contenitore
+          href: container-tools-react.md
     - name: Esercitazioni
       expanded: true
       items:
