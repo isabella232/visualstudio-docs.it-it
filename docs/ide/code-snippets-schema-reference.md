@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94598cd14b25fa598cdfde4e3033bb2877bcbe40
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974982"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836119"
 ---
 # <a name="code-snippets-schema-reference"></a>Riferimento dello schema dei frammenti di codice
 
@@ -108,7 +108,7 @@ Di seguito è riportata la struttura dell'elemento Code:
 
 Sono disponibili tre attributi per l'elemento Code:
 
-- L'attributo **Language** - _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
+- L'attributo **Language** -  _(obbligatorio)_ specifica il linguaggio del frammento di codice. Il valore può essere uno dei seguenti:
 
    |Value|Description|
    |-----|-----------|
@@ -121,7 +121,7 @@ Sono disponibili tre attributi per l'elemento Code:
    |`SQL`|Identifica un frammento di codice SQL.|
    |`HTML`|Identifica un frammento di codice HTML.|
 
-- L'attributo **Kind** - _(facoltativo)_ specifica il tipo di codice contenuto nel frammento e la posizione in cui un frammento di codice deve essere inserito per la relativa compilazione. Il valore può essere uno dei seguenti:
+- L'attributo **Kind** -  _(facoltativo)_ specifica il tipo di codice contenuto nel frammento e la posizione in cui un frammento di codice deve essere inserito per la relativa compilazione. Il valore può essere uno dei seguenti:
 
    |Value|Description|
    |-----|-----------|
@@ -131,7 +131,7 @@ Sono disponibili tre attributi per l'elemento Code:
    |`file`|Specifica che il frammento di codice è un file di codice completo. Questi frammenti di codice possono essere inseriti autonomamente in un file di codice o all'interno di uno spazio dei nomi.|
    |`any`|Specifica che il frammento può essere inserito in qualsiasi posizione. Questo tag viene usato per frammenti di codice indipendenti dal contesto, ad esempio i commenti.|
 
-- L'attributo **Delimiter** - _(facoltativo)_ specifica il delimitatore usato per descrivere i valori letterali e gli oggetti nel codice. Per impostazione predefinita, il delimitatore è `$`.
+- L'attributo **Delimiter** -  _(facoltativo)_ specifica il delimitatore usato per descrivere i valori letterali e gli oggetti nel codice. Per impostazione predefinita, il delimitatore è `$`.
 
 ### <a name="parent-element"></a>Elemento padre
 
@@ -632,7 +632,11 @@ Specifica il tipo di oggetto. L'elemento `Object` viene usato per identificare u
 | - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Definisce i campi di oggetti del frammento di codice che è possibile modificare.|
 
- È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto.
+È necessario specificare un valore di testo. Tale testo specifica il tipo dell'oggetto. Ad esempio:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Elemento Url
 

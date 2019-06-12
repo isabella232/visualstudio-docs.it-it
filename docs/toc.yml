@@ -583,11 +583,13 @@
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Usare file XML e XSLT
           href: xml-tools/xml-tools-in-visual-studio.md
-        - name: Sviluppare applicazioni internazionali
-          displayName: Globalization localization world-ready
-          href: ide/globalizing-and-localizing-applications.md
-        - name: Lingue bidirezionali
-          href: ide/creating-applications-in-bi-directional-languages.md
+        - name: Sviluppare app inclusive
+          items:
+            - name: Progettare app accessibili
+              href: ide/reference/resources-for-designing-accessible-applications.md
+            - name: Progettare applicazioni internazionali
+              displayName: Globalization localization world-ready
+              href: ide/globalizing-and-localizing-applications.md
         - name: Esercitazioni aggiuntive
           items:
             - name: 'Creare un''applicazione WPF con C# o Visual Basic'
@@ -799,8 +801,6 @@
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Prodotti e servizi Microsoft per l'accessibilità
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
-        - name: Risorse per la progettazione di app accessibili
-          href: ide/reference/resources-for-designing-accessible-applications.md
 - name: Riferimenti
   items:
     - name: Elementi dell'interfaccia utente generali
@@ -1170,6 +1170,8 @@
           href: ide/user-permissions-and-visual-studio.md
         - name: Windows Information Protection (WIP)
           href: ide/exempt-visual-studio-from-wip.md
+    - name: Input in lingue bidirezionali
+      href: ide/use-bidirectional-languages.md
     - name: Microsoft Help Viewer
       items:
         - name: Panoramica

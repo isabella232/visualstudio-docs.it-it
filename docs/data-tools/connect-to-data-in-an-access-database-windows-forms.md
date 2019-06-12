@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568534"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820402"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Connettersi ai dati in un database di Access (Windows Form)
 
-È possibile connettersi a un database Access (entrambi un *mdf* file o un' *accdb* file) con Visual Studio. Dopo avere definito la connessione, i dati vengono visualizzati nella finestra **Origine dati** da cui è possibile trascinare tabelle o visualizzazioni nei form.
+È possibile connettersi a un database Access (entrambi un *mdb* file o un' *accdb* file) con Visual Studio. Dopo avere definito la connessione, i dati vengono visualizzati nella finestra **Origine dati** da cui è possibile trascinare tabelle o visualizzazioni nei form.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -51,7 +51,7 @@ Per eseguire queste procedure, è necessario un progetto di applicazione Windows
 
    Verrà visualizzata la finestra di dialogo **Aggiungi connessione**.
 
-7. Se **zdroj dat** non è impostata su **File di Database Microsoft Access (OLE DB)**, selezionare il **modifica** pulsante.
+7. Se **zdroj dat** non è impostata su **File di Database Microsoft Access (OLE DB)** , selezionare il **modifica** pulsante.
 
    Il **Modifica origine dati** verrà visualizzata la finestra di dialogo. Nell'elenco delle origini dati, scegliere **File di Database Microsoft Access**. Nel **provider di dati** elenco a discesa, selezionare **Provider di dati .NET Framework per OLE DB**, quindi scegliere **OK**.
 
@@ -91,7 +91,7 @@ Il set di dati viene creato mediante l'esecuzione della **Configurazione guidata
 
 6. Nella pagina **Seleziona connessione dati** selezionare **Nuova connessione** per configurare una nuova connessione dati.
 
-7. Se l'origine dati non è **File di Database Microsoft Access (OLE DB)**, selezionare **Change** per aprire il **Modifica origine dati** nella finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.
+7. Se l'origine dati non è **File di Database Microsoft Access (OLE DB)** , selezionare **Change** per aprire il **Modifica origine dati** nella finestra di dialogo e selezionare **Microsoft Accedere al File di Database**, quindi selezionare **OK**.
 
 8. Nel **nome file del Database**, specificare il percorso e nome del *mdb* file che si desidera connettersi a e quindi selezionare **OK**.
 
