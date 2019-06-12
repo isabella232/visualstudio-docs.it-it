@@ -1,5 +1,5 @@
 ---
-title: "Procedura dettagliata: La chiamata nel modello a oggetti Client di SharePoint in un'estensione di Esplora Server | Microsoft Docs"
+title: 'Esplora server: Estensione del nodo Connessioni di SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430449"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835949"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: La chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server
   Questa procedura dettagliata illustra come chiamare il modello a oggetti client SharePoint da un'estensione per il **connessioni di SharePoint** nodo **Esplora Server**. Per altre informazioni su come usare il modello a oggetti client SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Conoscenza dei concetti seguenti è utile, ma non obbligatorio, completare la pr
 
     2. Nel **Aggiungi connessione SharePoint** finestra di dialogo immettere l'URL per il sito di SharePoint a cui si desidera connettersi, quindi scegliere il **OK** pulsante.
 
-         Per specificare il sito di SharePoint nel computer di sviluppo, digitare **http://localhost**.
+         Per specificare il sito di SharePoint nel computer di sviluppo, digitare **http://localhost** .
 
 3. Espandere il nodo di connessione del sito, che visualizza l'URL del sito, e quindi espandere un nodo del sito figlio (ad esempio, **sito del Team**).
 

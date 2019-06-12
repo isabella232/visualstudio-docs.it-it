@@ -1,5 +1,5 @@
 ---
-title: Esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto in Progettazione XML Schema
+title: Esaminare i nodi usando visualizzazione modello di contenuto in Progettazione XML Schema
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001905"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820459"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedura: Esaminare il modello di contenuto dei nodi tramite la visualizzazione modello di contenuto
 
@@ -39,6 +39,6 @@ In questo argomento viene descritto come esaminare i nodi usando il [visualizzaz
 
 7. Fare clic su qualsiasi nodo nell'elemento `purchaseOrder` e analizzare la barra di navigazione per vedere dove si trova il nodo selezionato nel set di schemi.
 
-8. Scegliere il **Mostra documentazione** pulsante sulla barra degli strumenti XSD per attivare/disattivare documentazione. È anche possibile fare clic con il pulsante destro del mouse sull'area di progettazione per attivare o disattivare la documentazione.
+8. Scegliere il **Mostra documentazione** pulsante sulla barra degli strumenti XSD per attivare o disattivare la documentazione. È anche possibile fare clic con il pulsante destro del mouse sull'area di progettazione per attivare o disattivare la documentazione.
 
-9. Rick-scegliere il `purchaseOrder` nodo e selezionare **genera XML di esempio** per visualizzare il documento di istanza XML.
+9. Fare doppio clic il `purchaseOrder` nodo e selezionare **genera XML di esempio** per visualizzare il documento di istanza XML.

@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842000"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820630"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementare IDisposable correttamente
 
@@ -52,7 +52,7 @@ Il <xref:System.IDisposable?displayProperty=nameWithType> interfaccia non è imp
 
 Violazione di uno di questi modelli Attiva avviso CA1063.
 
-Ogni tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia deve fornire il proprio `protected virtual void Dispose(bool)` (metodo). `Dispose()` deve chiamare `Dipose(true)`, e deve chiamare il finalizzatore `Dispose(false)`. Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia, è necessario definire `Dispose(bool)` e chiamarlo. Per altre informazioni, vedere [pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged) e [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Ogni tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia deve fornire il proprio `protected virtual void Dispose(bool)` (metodo). `Dispose()` deve chiamare `Dispose(true)`, e deve chiamare il finalizzatore `Dispose(false)`. Se si crea un tipo non sealed che dichiara e implementa la <xref:System.IDisposable> interfaccia, è necessario definire `Dispose(bool)` e chiamarlo. Per altre informazioni, vedere [pulire le risorse non gestite (Guida per .NET)](/dotnet/standard/garbage-collection/unmanaged) e [criterio Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Per impostazione predefinita, questa regola cerca solo tipi visibili esternamente, ma si tratta [configurabile](#configurability).
 

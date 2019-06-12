@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899336"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820427"
 ---
 # <a name="draw-shapes-and-paths"></a>Disegnare forme e tracciati
 
@@ -93,8 +93,8 @@ Le forme e i tracciati usano la grafica vettoriale per una scalabilità ottima n
 |||||
 |-|-|-|-|
 |![Due forme prima della combinazione](../designers/media/b1_1.png)|Due forme prima della combinazione|![Interseca](../designers/media/b1_4.png)|Interseca|
-|![Escludi sovrapposizione](../designers/media/b1_2.png)|Unisci|![](../designers/media/b1_5.png)|Escludi sovrapposizione|
-|![Sottrai](../designers/media/b1_3.png)|Dividi|![](../designers/media/b1_6.png)|Sottrai|
+|![Unisci](../designers/media/b1_2.png)|Unisci|![Escludi sovrapposizione](../designers/media/b1_5.png)|Escludi sovrapposizione|
+|![Dividi](../designers/media/b1_3.png)|Dividi|![Sottrai](../designers/media/b1_6.png)|Sottrai|
 
  **Breve video:** ![Configurare le funzionalità installate](../designers/media/bldadminconsoleinitialconfigicon.png) [Uso dei tracciati: Combinare tracciati](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

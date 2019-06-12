@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260468"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835953"
 ---
 # <a name="code-metrics-values"></a>Valori della metrica del codice
 
@@ -32,7 +32,7 @@ L'elenco seguente mostra il codice di risultati di metrica per il calcolo di Vis
 
 - **Complessità ciclomatica** -misura la complessità del codice strutturale. Viene creato dal calcolo del numero di percorsi del codice diversi nel flusso del programma. Un programma che ha il flusso di controllo complessi richiede altri test per ottenere buona copertura del codice ed è meno facile da gestire. Per altre informazioni, vedere la [di Wikipedia relativa complessità ciclomatica](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profondità dell'ereditarietà** -indica il numero di diverse classi che ereditano da uno a altro, fino alla classe di base. Profondità dell'ereditarietà è simile alla classe consente di connettere in quanto una modifica in una classe base può influire sulle qualsiasi delle relative classi ereditate. Maggiore questo numero, più profondo l'ereditarietà e maggiore sarà il potenziale per apportare modifiche di classe di base a comportare un'interruzione di modifica. Per la profondità dell'ereditarietà, è consigliabile un valore basso e un valore elevato non è valido. 
+- **Profondità dell'ereditarietà** -indica il numero di diverse classi che ereditano da uno a altro, fino alla classe di base. Profondità dell'ereditarietà è simile alla classe consente di connettere in quanto una modifica in una classe base può influire sulle qualsiasi delle relative classi ereditate. Maggiore questo numero, più profondo l'ereditarietà e maggiore sarà il potenziale per apportare modifiche di classe di base a comportare un'interruzione di modifica. Per la profondità dell'ereditarietà, è consigliabile un valore basso e un valore elevato non è valido.
 
 - **Accoppiamento di classe** -misura l'accoppiamento di classi univoche tramite i parametri, variabili locali, tipi restituiti, chiamate al metodo, creazioni di istanza generica o modello, le classi di base, le implementazioni dell'interfaccia, i campi definiti nei tipi esterni, e decorazione di attributo. Progettazione software di qualità impone che i tipi e metodi devono avere un'elevata coesione e accoppiamento basso. Accoppiamento elevato indica una progettazione che è difficile da riutilizzare e gestire a causa delle molte interdipendenze con altri tipi. Per altre informazioni, vedere la [accoppiamenti di classi](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) post di blog.
 
@@ -43,9 +43,7 @@ L'elenco seguente mostra il codice di risultati di metrica per il calcolo di Vis
 
 ## <a name="anonymous-methods"></a>Metodi anonimi
 
-Un' *metodo anonimo* è semplicemente un metodo che non ha nome. Metodi anonimi vengono spesso usati per passare un blocco di codice come un parametro del delegato. I risultati della metrica per un metodo anonimo che viene dichiarato in un membro, ad esempio un metodo o una funzione di accesso, associati con il membro che dichiara il metodo. Non sono associati al membro che chiama il metodo.
-
-Per altre informazioni sul modo in cui la metrica del codice gestisce i metodi anonimi, vedere [metodi anonimi e analisi del codice](../code-quality/anonymous-methods-and-code-analysis.md).
+Un' *metodo anonimo* è semplicemente un metodo che non ha nome. Metodi anonimi vengono spesso usati per passare un blocco di codice come un parametro del delegato. Risultati di metrica codice per un metodo anonimo che viene dichiarato in un membro, ad esempio un metodo o una funzione di accesso, sono associati al membro che dichiara il metodo. Non sono associati al membro che chiama il metodo.
 
 ## <a name="generated-code"></a>Codice generato
 
