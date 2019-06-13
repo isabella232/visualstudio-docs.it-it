@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974163"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744733"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedura: Scegliere i metodi di raccolta
 
@@ -34,7 +34,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 |----------------------------| - |
 | **Campionamento CPU** | Consente di raccogliere le statistiche dell'applicazione utili per l'analisi iniziale e per l'analisi dei problemi relativi all'uso della CPU. |
 | **Strumentazione** | Consente di raccogliere i dati di intervallo dettagliati utili per l'analisi mirata e per l'analisi dei problemi relativi alle prestazioni di input/output. |
-| **Allocazione della memoria .NET** | Consente di raccogliere i dati relativi all'allocazione della memoria [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando il metodo di profilatura del campionamento. |
+| **Allocazione della memoria .NET** | Raccoglie dati sull'allocazione di memoria .NET Framework usando il metodo di profilatura del campionamento. |
 | **Concorrenza** | Consente di raccogliere i dati numerici sui conflitti di risorse. |
 
 ## <a name="performance-explorer"></a>Esplora prestazioni
@@ -75,7 +75,7 @@ Gli strumenti di profilatura di Visual Studio supportano tre metodi di raccolta 
 
 4. Fare clic su **Campionamento** o **Strumentazione**.
 
-5. Fare clic su **Raccogliere le informazioni sull'allocazione dell'oggetto .NET** per raccogliere le dimensioni e il numero delle allocazioni degli oggetti [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+5. Fare clic su **le informazioni sull'allocazione oggetti .NET raccogliere** per raccogliere le dimensioni e numero di allocazioni di oggetti .NET Framework.
 
 6. (Facoltativo) Fare clic su **Raccogliere anche le informazioni sulla durata dell'oggetto .NET** per raccogliere dati sulle generazioni di Garbage Collection in cui è stata recuperata la memoria dell'oggetto.
 

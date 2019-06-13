@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793552"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746859"
 ---
 # <a name="create-solutions-and-projects"></a>Creare soluzioni e progetti
 
@@ -61,11 +61,11 @@ Se è presente un file che può essere usato per più progetti, ad esempio un fi
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Creare un progetto .NET che usa una specifica versione di .NET Framework
 
-Quando si crea un progetto è possibile indicare la versione specifica di .NET Framework che si vuole usare nel progetto stesso.
+Quando si crea un progetto .NET Framework, è possibile specificare una versione specifica di .NET Framework che si vuole usare il progetto. (Quando si crea un progetto .NET Core, non si specifica una versione di framework.)
 
 ::: moniker range="vs-2017"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella finestra di dialogo **Nuovo progetto**.
+Per specificare una versione di .NET Framework, scegliere il **Framework** dal menu a discesa nel **nuovo progetto** nella finestra di dialogo.
 
 ![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Per specificare una versione di .NET Framework, scegliere il menu a discesa **Fr
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella pagina **Crea un nuovo progetto**.
+Per specificare una versione di .NET Framework, scegliere il **Framework** dal menu a discesa nel **creare un nuovo progetto** pagina.
 
 ![Selettore Framework nella configurazione di un nuovo progetto](media/vs-2019/configure-new-project-framework.png)
 

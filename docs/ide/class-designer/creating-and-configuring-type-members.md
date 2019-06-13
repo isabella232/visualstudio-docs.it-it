@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975536"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746933"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Creare e configurare membri di tipi in Progettazione classi
 
@@ -308,7 +308,7 @@ Se si prova a salvare un progetto contenente un tipo il cui file del codice sorg
 
 Se un file di codice contiene un errore di sintassi, le forme che visualizzano il codice in quel file saranno temporaneamente in sola lettura finché l'errore di sintassi non viene corretto. Le forme in questo stato sono caratterizzate da testo di colore rosso e da un'icona rossa con una descrizione che indica un errore di analisi nel file del codice sorgente.
 
-Un tipo a cui viene fatto riferimento (ad esempio un tipo .NET Framework), che esiste all'interno di un altro nodo di progetto o di un nodo di assembly a cui viene fatto riferimento, nell'area di progettazione di Progettazione classi viene indicato come in sola lettura. Un tipo locale, che esiste nel progetto aperto, è in lettura-scrittura e la relativa forma viene indicata come tale nell'area di progettazione di Progettazione classi.
+Un tipo riferimento (ad esempio, un tipo .NET), che esiste in un altro nodo del progetto o in un nodo di assembly di riferimento, è indicato nell'area di progettazione di progettazione classi in sola lettura. Un tipo locale, che esiste nel progetto aperto, è in lettura-scrittura e la relativa forma viene indicata come tale nell'area di progettazione di Progettazione classi.
 
 Gli indicizzatori sono in lettura/scrittura nel codice e nella finestra **Dettagli classe**, ma il nome dell'indicizzatore è in sola lettura.
 

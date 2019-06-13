@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a88ccb599ce709cae5e58b4fd2678b34706362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969114"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746525"
 ---
 # <a name="output-window"></a>Output (finestra)
 
@@ -65,9 +65,9 @@ Per visualizzare la finestra **Output** ogni volta che si compila un progetto, n
 
 Alcuni comandi e funzionalità dell'IDE richiamati nella [finestra Comando](../../ide/reference/command-window.md) indirizzano l'output alla finestra **Output**. L'output di strumenti esterni, come file con estensione *bat* e *com*, generalmente genere visualizzato nella finestra di comando, viene indirizzato a un riquadro **Output** quando si seleziona l'opzione **Usa finestra di output** in [Gestire strumenti esterni](../../ide/managing-external-tools.md). Nei riquadri **Output** possono essere visualizzati anche molti altri tipi di messaggi. Ad esempio, quando la sintassi Transact-SQL in una stored procedure viene controllata in base a un database di destinazione, i risultati vengono visualizzati nella finestra **Output**.
 
-È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della classe <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> nello spazio dei nomi <xref:System.Diagnostics> nella libreria di classi .NET Framework. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per altre informazioni, vedere [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).
+È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della <xref:System.Diagnostics.Debug> classe o <xref:System.Diagnostics.Trace> classe la <xref:System.Diagnostics> dello spazio dei nomi dell'API .NET. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per altre informazioni, vedere [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo **F1** in una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattare l'output di un'istruzione di compilazione personalizzata](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo **F1** in una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattare l'output di un'istruzione di compilazione personalizzata](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Comportamento dello scorrimento
 

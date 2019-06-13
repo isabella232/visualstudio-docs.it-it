@@ -1,6 +1,6 @@
 ---
 title: 'Procedura dettagliata: Creare un frammento di codice'
-ms.date: 10/27/2017
+ms.date: 06/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581672"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836096"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procedura dettagliata: Creare un frammento di codice
 
-Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È anche possibile aggiungere al codice riferimenti e parametri sostitutivi. È possibile aggiungere il frammento all'installazione di Visual Studio usando il pulsante **Importa** in **Gestione frammenti di codice** (**Strumenti** > **Gestione frammenti di codice**).
+Per creare un frammento di codice sono necessari pochi passaggi. È sufficiente creare un file XML, inserire gli elementi appropriati e aggiungere il codice. È possibile apportare, facoltativamente, usare i parametri di sostituzione e i riferimenti al progetto. Importare il frammento di codice di installazione di Visual Studio usando il **importazione** pulsante il **Gestione frammenti di codice** (**strumenti** > **codice Gestione frammenti di**).
 
 ## <a name="snippet-template"></a>Modello di frammento
 
-Di seguito è illustrato il modello di frammento di base:
+Il codice XML seguente è il modello di frammento di base:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,27 +48,40 @@ Di seguito è illustrato il modello di frammento di base:
 </CodeSnippets>
 ```
 
-### <a name="create-a-code-snippet"></a>Creare un frammento di codice
+## <a name="create-a-code-snippet"></a>Creare un frammento di codice
 
 1. Creare un nuovo file XML in Visual Studio e aggiungere il modello come illustrato in precedenza.
 
-2. Compilare il titolo del frammento, ad esempio "Hello World VB", nell'elemento **Title**.
+2. Compilare il titolo del frammento di codice nel **titolo** elemento. Utilizzare il titolo **radice quadrata**.
 
-3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. In questo esempio usare "VB".
+3. Aggiungere il linguaggio del frammento nell'attributo **Language** dell'elemento **Code**. Per C#, usare **CSharp**e per Visual Basic, usare **VB**.
 
-4. Aggiungere codice nella sezione **CDATA** all'interno dell'elemento **Code**, ad esempio:
+   > [!TIP]
+   > Per visualizzare tutti i valori di lingua disponibile, passare il [sezione attributi dell'elemento di codice](code-snippets-schema-reference.md#attributes) nel [riferimenti allo schema dei frammenti di codice](code-snippets-schema-reference.md) pagina.
 
-    ```xml
-    <Code Language="VB">
-        <![CDATA[Console.WriteLine("Hello, World!")]]>
-    </Code>
-    ```
+4. Aggiungere il frammento di codice nel **CDATA** sezione all'interno di **codice** elemento.
 
-5. Salvare il frammento come *VBCodeSnippet.snippet*.
+   Per C#:
 
-### <a name="add-a-code-snippet-to-visual-studio"></a>Aggiungere un frammento di codice a Visual Studio
+   ```xml
+   <Code Language="CSharp">
+       <![CDATA[double root = Math.Sqrt(16);]]>
+   </Code>
+   ```
 
-1. È possibile aggiungere frammenti di codice personalizzati all'installazione di Visual Studio tramite Gestione frammenti di codice. Aprire **Gestione frammenti di codice** (**Strumenti** > **Gestione frammenti di codice**).
+   O per Visual Basic:
+
+   ```xml
+   <Code Language="VB">
+       <![CDATA[Dim root = Math.Sqrt(16)]]>
+   </Code>
+   ```
+
+5. Salvare il frammento come *SquareRoot.snippet* (è possibile salvarlo ovunque).
+
+## <a name="import-a-code-snippet"></a>Importare un frammento di codice
+
+1. È possibile importare un frammento all'installazione di Visual Studio usando il **Gestione frammenti di codice**. Aprirlo scegliendone **degli strumenti** > **Gestione frammenti di codice**.
 
 2. Fare clic sul pulsante **Importa**.
 
@@ -76,199 +89,141 @@ Di seguito è illustrato il modello di frammento di base:
 
 4. Si aprirà la finestra di dialogo **Importa frammento di codice** in cui viene chiesto di scegliere il punto in cui aggiungere il frammento tra le opzioni nel riquadro di destra. Una delle opzioni possibili è **Frammenti di codice**. Selezionare l'opzione e fare clic su **Fine** e poi su **OK**.
 
-5. Il frammento viene copiato nel percorso seguente:
+5. Il frammento di codice viene copiato in uno dei percorsi seguenti, a seconda del linguaggio di codice:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice*
+   *%USERPROFILE%\Documents\Visual studio 2017\frammenti codice\visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2017\frammenti codice\visual Basic\frammenti di codice*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documenti\Visual Studio 2019\Frammenti di codice\Visual Basic\Frammenti di codice*
+   *%USERPROFILE%\Documents\Visual studio 2019\Code codice\visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2019\Code codice\visual Basic\frammenti di codice*
 
    ::: moniker-end
 
-6. Testare il frammento aprendo un progetto di Visual Basic e un file di codice. Nel file scegliere **Frammenti** > **Inserisci frammento** dal menu di scelta rapida e quindi **Frammenti di codice**. Verrà visualizzato un frammento denominato **My Visual Basic Code Snippet** (Frammento di codice Visual Basic). Fare doppio clic.
+6. Testare il frammento aprendo un C# o un progetto di Visual Basic. Con un file di codice aperto nell'editor, scegliere **frammenti** > **Inserisci frammento di codice** dal menu di scelta rapida, quindi **frammenti di codice**. Verrà visualizzato un frammento denominato **radice quadrata**. Fare doppio clic.
 
-    `Console.WriteLine("Hello, World!")` viene inserito nel file di codice.
+   Il frammento di codice viene inserito nel file di codice.
 
-### <a name="add-description-and-shortcut-fields"></a>Aggiungere campi di descrizione e collegamento
+## <a name="description-and-shortcut-fields"></a>Campi di descrizione e collegamento
 
 ::: moniker range="vs-2017"
 
-1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file *%USERPROFILE%\Documenti\Visual Studio 2017\Frammenti di codice\Visual Basic\Frammenti di codice\VBCodeSnippet.snippet*.
+1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file *%USERPROFILE%\Documents\Visual Studio 2017\frammenti frammenti\\[Visual C# o Visual Basic] \My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file *%USERPROFILE%\Documenti\Visual Studio 2019\Frammenti di codice\Visual Basic\Frammenti di codice\VBCodeSnippet.snippet*.
+1. I campi di descrizione contengono informazioni dettagliate sul frammento di codice quando viene visualizzato in Gestione frammenti di codice. Il collegamento è un tag che gli utenti possono digitare per inserire il frammento. Modificare il frammento aggiunto aprendo il file *%USERPROFILE%\Documents\Visual Studio 2019\Code frammenti\\[Visual C# o Visual Basic] \My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
+
+   > [!TIP]
+   > Poiché si sta modificando il file nella directory in cui Visual Studio inserito, non è necessario importarlo per Visual Studio.
 
 2. Aggiungere gli elementi **Author** e **Description** all'elemento **Header** e compilarli.
 
 3. L'elemento **Header** dovrebbe essere simile al seguente:
 
-    ```xml
-    <Header>
-        <Title>Hello World VB</Title>
-        <Author>Myself</Author>
-        <Description>Says Hello to the world.</Description>
+   ```xml
+   <Header>
+       <Title>Square Root</Title>
+       <Author>Myself</Author>
+       <Description>Calculates the square root of 16.</Description>
+   </Header>
+   ```
+
+4. Aprire **Gestione frammenti di codice** e selezionare il frammento di codice. Nel riquadro di destra, si noti che il **Description** e **autore** campi vengono ora popolati.
+
+   ![Descrizione di frammento di codice in Gestione frammenti di codice](media/code-snippet-description-author.png)
+
+5. Per aggiungere un collegamento, aggiungere un **scelta rapida** elemento all'interno di **intestazione** elemento:
+
+   ```xml
+   <Header>
+      <Title>Square Root</Title>
+      <Author>Myself</Author>
+      <Description>Calculates the square root of 16.</Description>
+      <Shortcut>sqrt</Shortcut>
     </Header>
-    ```
-
-4. Aprire **Gestione frammenti di codice** e selezionare il frammento di codice. Nel riquadro a destra i campi **Descrizione** e **Autore** saranno ora popolati.
-
-5. Per aggiungere un collegamento, aggiungere un elemento **Shortcut** insieme agli elementi **Author** e **Description**:
-
-    ```xml
-    <Header>
-        <Title>Hello World VB</Title>
-        <Author>Myself</Author>
-        <Description>Says Hello to the world.</Description>
-        <Shortcut>hello</Shortcut>
-    </Header>
-    ```
+   ```
 
 6. Salvare di nuovo il file del frammento.
 
-7. Per testare il collegamento, aprire un progetto Visual Basic e aprire un file di codice. Digitare `hello` nel file e premere **TAB** due volte.
+7. Per testare il collegamento, aprire il progetto usato in precedenza, digitare **sqrt** nell'editor e premere **della scheda** (una volta per Visual Basic, due volte per C#).
 
-    Il frammento viene inserito.
+   Il frammento viene inserito.
 
-### <a name="add-references-and-imports"></a>Aggiungere riferimenti e importazioni
+## <a name="replacement-parameters"></a>Parametri di sostituzione
 
-1. È possibile aggiungere un riferimento a un progetto usando l'elemento **References** e aggiungere una dichiarazione di importazione usando l'elemento **Imports**. Questa procedura è valida anche per C#. Se ad esempio si modifica `Console.WriteLine` nell'esempio di codice in `MessageBox.Show`, può essere necessario aggiungere l'assembly *System.Windows.Forms.dll* al progetto.
+È possibile che parti di un frammento di codice da sostituire con l'utente. Ad esempio, è possibile sostituire un nome di variabile con uno nel progetto corrente. È possibile specificare due tipi di sostituzioni, vale a dire valori letterali e oggetti. Usare la [elemento Literal](code-snippets-schema-reference.md#literal-element) per identificare una sostituzione per un frammento di codice che è interamente contenuto entro il frammento di codice ma verrà probabilmente personalizzata dopo che viene inserito nel codice (ad esempio, un valore stringa o numerica). Usare la [elemento oggetto](code-snippets-schema-reference.md#object-element) per identificare un elemento che viene richiesto dal frammento di codice, ma è probabilmente definito di fuori del frammento stesso (ad esempio, un'istanza dell'oggetto o un controllo).
 
-2. Aprire il frammento.
+1. Per consentire all'utente di sostituire facilmente il numero per calcolare la radice quadrata di, modificare il **frammento** elemento delle *SquareRoot.snippet* file come segue:
 
-3. Aggiungere l'elemento **References** sotto l'elemento **Snippet**:
+   ```xml
+   <Snippet>
+     <Code Language="CSharp">
+       <![CDATA[double root = Math.Sqrt($Number$);]]>
+     </Code>
+     <Declarations>
+       <Literal>
+         <ID>Number</ID>
+         <ToolTip>Choose the number you want the square root of.</ToolTip>
+         <Default>16</Default>
+       </Literal>
+     </Declarations>
+   </Snippet>
+   ```
 
-    ```xml
-    <References>
-        <Reference>
-            <Assembly>System.Windows.Forms.dll</Assembly>
-        </Reference>
-    </References>
-    ```
+   Si noti che la sostituzione valore letterale sia assegnata un ID (`Number`). Che ID fa da entro il frammento di codice che lo delimita si con `$` caratteri:
 
-4. Aggiungere l'elemento **Imports** sotto l'elemento **Snippet**:
+   ```xml
+   <![CDATA[double root = Math.Sqrt($Number$);]]>
+   ```
 
-    ```xml
-    <Imports>
+2. Salvare il file di frammento di codice.
+
+3. Aprire un progetto e inserire il frammento di codice.
+
+   Viene inserito il frammento di codice e viene evidenziato il valore letterale modificabile per la sostituzione. Passare il mouse su parametro di sostituzione per visualizzare la descrizione comando per il valore.
+
+   ![Descrizione comando parametro di sostituzione di frammento di codice in Visual Studio code](media/snippet-replacement-parameter-tooltip.png)
+
+   > [!TIP]
+   > Se è presente più di un parametro replacable in un frammento di codice, è possibile premere **scheda** per passare da uno a altro per modificare i valori.
+
+## <a name="import-a-namespace"></a>Importa uno spazio dei nomi
+
+È possibile usare un frammento di codice per aggiungere un `using` (direttiva) (C#) o `Imports` istruzione (Visual Basic), includendo il [elemento Imports](code-snippets-schema-reference.md#imports-element). Per i progetti .NET Framework, è anche possibile aggiungere un riferimento al progetto usando il [References (elemento)](code-snippets-schema-reference.md#references-element).
+
+Il codice XML seguente viene illustrato un frammento di codice che usa il metodo `File.Exists` nello spazio dei nomi System.IO e, pertanto, vengono definiti i **importazioni** elemento per importare lo spazio dei nomi System.IO.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>File Exists</Title>
+      <Shortcut>exists</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[var exists = File.Exists("C:\\Temp\\Notes.txt");]]>
+      </Code>
+      <Imports>
         <Import>
-           <Namespace>System.Windows.Forms</Namespace>
+          <Namespace>System.IO</Namespace>
         </Import>
-    </Imports>
-    ```
-
-5. Modificare la sezione **CDATA** nel modo seguente:
-
-    ```xml
-    <![CDATA[MessageBox.Show("Hello, World!")]]>
-    ```
-
-6. Salvare il frammento.
-
-7. Aprire un progetto Visual Basic e aggiungere il frammento.
-
-8. Viene visualizzata un'istruzione `Imports` nella parte superiore del file di codice:
-
-    ```vb
-    Imports System.Windows.Forms
-    ```
-
-9. Considerare le proprietà del progetto. La scheda **Riferimenti** contiene un riferimento a *System.Windows.Forms.dll*.
-
-### <a name="add-replacements"></a>Aggiungere sostituzioni
-
-1. È possibile che si vogliano sostituire alcune parti dei frammenti di codice, ad esempio nel caso in cui venga aggiunta una variabile e la si voglia sostituire con una del progetto corrente. È possibile specificare due tipi di sostituzioni, vale a dire valori letterali e oggetti. I valori letterali sono stringhe di un certo tipo, ad esempio valori letterali stringa, nomi di variabile o rappresentazioni di stringa di valori numerici. Gli oggetti sono istanze di un certo tipo diverso da una stringa. Questa procedura consente di dichiarare la sostituzione di un valore letterale o di un oggetto e modificare il codice in modo che faccia riferimento a queste sostituzioni.
-
-2. Aprire il frammento.
-
-3. In questo esempio viene usata una stringa di connessione SQL. Di conseguenza è necessario modificare gli elementi **Imports** e **References** per aggiungere i riferimenti appropriati:
-
-    ```xml
-    <References>
-        <Reference>
-            <Assembly>System.Data.dll</Assembly>
-        </Reference>
-        <Reference>
-            <Assembly>System.Xml.dll</Assembly>
-        </Reference>
-    </References>
-    <Imports>
-        <Import>
-            <Namespace>System.Data</Namespace>
-        </Import>
-        <Import>
-            <Namespace>System.Data.SqlClient</Namespace>
-        </Import>
-    </Imports>
-    ```
-
-4. Per dichiarare la sostituzione di un valore letterale della stringa di connessione SQL, aggiungere un elemento **Declarations** sotto l'elemento **Snippet** e qui aggiungere un elemento **Literal** con sottoelementi per l'ID, la descrizione comando e il valore predefinito per la sostituzione:
-
-    ```xml
-    <Declarations>
-        <Literal>
-            <ID>SqlConnString</ID>
-            <ToolTip>Replace with a SQL connection string.</ToolTip>
-            <Default>"SQL connection string"</Default>
-        </Literal>
-    </Declarations>
-    ```
-
-5. Per dichiarare la sostituzione di un oggetto per la connessione SQL, aggiungere un elemento **Object** all'interno dell'elemento **Declarations** e aggiungere sottoelementi per l'ID, il tipo di oggetto, la descrizione comando e il valore predefinito. L'elemento **Declarations** risultante sarà simile al seguente:
-
-    ```xml
-    <Declarations>
-        <Literal>
-            <ID>SqlConnString</ID>
-            <ToolTip>Replace with a SQL connection string.</ToolTip>
-            <Default>"SQL connection string"</Default>
-        </Literal>
-        <Object>
-            <ID>SqlConnection</ID>
-            <Type>System.Data.SqlClient.SqlConnection</Type>
-            <ToolTip>Replace with a connection object in your application.</ToolTip>
-            <Default>dcConnection</Default>
-        </Object>
-    </Declarations>
-    ```
-
-6. Nella sezione di codice si fa riferimento alle sostituzioni delimitandole con i segni $, ad esempio `$replacement$`:
-
-    ```xml
-    <Code Language="VB" Kind="method body">
-        <![CDATA[Dim daCustomers As SqlDataAdapter
-            Dim selectCommand As SqlCommand
-
-            daCustomers = New SqlClient.SqlDataAdapter()
-            selectCommand = new SqlClient.SqlCommand($SqlConnString$)
-            daCustomers.SelectCommand = selectCommand
-            daCustomers.SelectCommand.Connection = $SqlConnection$]]>
-    </Code>
-    ```
-
-7. Salvare il frammento.
-
-8. Aprire un progetto Visual Basic e aggiungere il frammento.
-
-9. Il codice sarà essere simile al seguente, dove le sostituzioni `SQL connection string` e `dcConnection` sono evidenziate in arancione chiaro. Scegliere **TAB** per passare da una sostituzione all'altra.
-
-    ```vb
-    Dim daCustomers As SqlDataAdapter
-    Dim selectCommand As SqlCommand
-
-    daCustomers = New SqlClient.SqlDataAdapter()
-    selectCommand = New SqlClient.SqlCommand("SQL connection string")
-    daCustomers.SelectCommand = selectCommand
-    daCustomers.SelectCommand.Connection = dcConnection
-    ```
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+```
 
 ## <a name="see-also"></a>Vedere anche
 

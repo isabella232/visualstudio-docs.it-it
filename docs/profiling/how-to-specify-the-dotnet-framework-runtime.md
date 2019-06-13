@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9c62e430d19bbd2c03afbb4db76fca56563cb3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0179be3aa5ca55eef0854cc68a7e1287ac284f1
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996314"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746428"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Procedura: Specificare il runtime di .NET Framework
 
-Con il rilascio di [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], le applicazioni possono essere costituite da moduli compilati usando versioni diverse del runtime di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Per impostazione predefinita, gli strumenti di profilatura di Visual Studio profilano il primo runtime caricato dall'applicazione. È possibile specificare il runtime di cui eseguire la profilatura quando si avvia un'applicazione con il profiler e quando si connette il profiler a un'applicazione già in esecuzione.
+Con la versione di .NET Framework 4, le applicazioni possono essere composte di moduli che sono stati compilati usando versioni diverse di run-time di .NET Framework. Per impostazione predefinita, gli strumenti di profilatura di Visual Studio profilano il primo runtime caricato dall'applicazione. È possibile specificare il runtime di cui eseguire la profilatura quando si avvia un'applicazione con il profiler e quando si connette il profiler a un'applicazione già in esecuzione.
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Per specificare il runtime di .NET Framework da profilare quando si avvia un'applicazione con il profiler
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, scegliere **Proprietà** e quindi fare clic su **Avanzate**.
 
-     Nella casella di riepilogo **Versione CLR di destinazione** viene visualizzato **Automatico** insieme alle versioni del runtime di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installate nel computer.
+     Il **versione CLR di destinazione** finestra visualizzata nell'elenco **automatica** e le versioni di runtime di .NET Framework installate nel computer.
 
 2. Effettuare uno dei passaggi indicati di seguito.
 
@@ -40,7 +40,7 @@ Con il rilascio di [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long
 
 2. Nella finestra di dialogo **Connettere profiler a processo** fare clic sul processo da profilare.
 
-     Nella casella di riepilogo **Versione CLR di destinazione** viene visualizzato **Automatico** insieme alle versioni del runtime di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installate nel computer.
+     Il **versione CLR di destinazione** casella di riepilogo s **automatica** e le versioni di runtime di .NET Framework installate nel computer.
 
 3. Effettuare uno dei passaggi indicati di seguito.
 

@@ -1,6 +1,6 @@
 ---
 title: Eseguire unit test ed eseguirne il debug con Esplora test
-description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
+description: Informazioni su come eseguire test con Esplora Test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934499"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747770"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -23,7 +23,7 @@ Usare **Esplora test** per eseguire unit test da Visual Studio o da progetti di 
 
 Visual Studio include i framework di unit test Microsoft sia per il codice gestito sia per quello nativo. Tuttavia, **Esplora test** può eseguire anche qualsiasi framework di unit test in cui sia implementato un adattatore di Esplora test. Per altre informazioni sull'installazione di framework di unit test di terze parti, vedere [Installare framework di unit test di terze parti](../test/install-third-party-unit-test-frameworks.md).
 
-**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET Framework, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET Framework, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
+**Esplora test** può eseguire test da più progetti di test in una soluzione e da classi di test appartenenti a progetti di codice di produzione. I progetti di test possono usare framework di unit test diversi. Se il codice sottoposto a test è scritto per .NET, il progetto di test può essere scritto in qualsiasi linguaggio destinato anche a .NET, indipendentemente dal linguaggio del codice di destinazione. I progetti in codice C/C++ nativo devono essere testati tramite un framework di unit test C++. Per altre informazioni, vedere [Scrivere unit test per C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Eseguire test in Esplora test
 

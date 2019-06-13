@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934529"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745892"
 ---
 # <a name="common-msbuild-project-properties"></a>Proprietà di progetto MSBuild comuni
 Nella tabella seguente sono elencate le proprietà usate di frequente definite nei file di progetto di Visual Studio o incluse nei file con estensione *targets* compresi con MSBuild.
@@ -69,7 +69,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | FrameworkPathOverride | Specifica il percorso dei file *mscorlib.dll* e *microsoft.visualbasic.dll*. Questo parametro è equivalente all'opzione `/sdkpath` del compilatore *vbc.exe*. |
 | GenerateDocumentation | (Solo Visual Basic) Parametro booleano che indica se la documentazione è generata dalla compilazione. Se è `true`, le informazioni relative alla documentazione vengono generate dalla compilazione e inserite in un file con estensione *xml* con il nome dell'eseguibile o della libreria creata dalla compilazione. |
 | GenerateSerializationAssemblies | Indica se gli assembly di serializzazione XML devono essere generati da *SGen.exe*, che può essere impostato su attivato, automatico o disattivato. Questa proprietà viene utilizzata solo per gli assembly la cui destinazione è .NET Framework. Per generare assembly di serializzazione XML per gli assembly di .NET Standard o .NET Core, fare riferimento al pacchetto NuGet *Microsoft.XmlSerializer.Generator*. |
-| IntermediateOutputPath | Percorso di output intermedio completo derivato da `BaseIntermediateOutputPath`, se non viene specificato alcun percorso. Ad esempio *\obj\debug\\*. |
+| IntermediateOutputPath | Percorso di output intermedio completo derivato da `BaseIntermediateOutputPath`, se non viene specificato alcun percorso. Ad esempio *\obj\debug\\* . |
 | KeyContainerName | Nome del contenitore di chiavi con nome sicuro. |
 | KeyOriginatorFile | Nome del file di chiave con nome sicuro. |
 | MSBuildProjectExtensionsPath | Specifica il percorso in cui si trovano le estensioni di progetto. Per impostazione predefinita, assume lo stesso valore di `BaseIntermediateOutputPath`. |
@@ -118,7 +118,7 @@ Nella tabella seguente sono elencate le proprietà usate di frequente definite n
 | Satellite_Win32Resource | Inserisce una risorsa Win32 (file con estensione *res*) nell'assembly satellite. |
 | SubsystemVersion | Specifica la versione minima del sottosistema che può essere usata dal file eseguibile generato. Questa proprietà è equivalente all'opzione del compilatore `/subsystemversion`. Per informazioni sul valore predefinito di questa proprietà, vedere [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) o [/subsystemversion (opzioni del compilatore C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Versione di .NET Compact Framework richiesta per eseguire l'applicazione in corso di compilazione. Se si imposta questa proprietà, è possibile fare riferimento a determinati assembly del framework a cui non è possibile fare riferimento in altro modo. |
-| TargetFrameworkVersion | Versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] richiesta per eseguire l'applicazione in corso di compilazione. Se si imposta questa proprietà, è possibile fare riferimento a determinati assembly del framework a cui non è possibile fare riferimento in altro modo. |
+| TargetFrameworkVersion | La versione di .NET Framework che è necessario per eseguire l'applicazione che si sta compilando. Se si imposta questa proprietà, è possibile fare riferimento a determinati assembly del framework a cui non è possibile fare riferimento in altro modo. |
 | TreatWarningsAsErrors | Parametro booleano che, se impostato su `true`, fa sì che tutti gli avvisi vengano considerati errori. Questo parametro è equivalente all'opzione del compilatore `/nowarn`. |
 | UseHostCompilerIfAvailable | Parametro booleano che, se impostato su `true`, fa sì che l'attività di compilazione utilizzi l'oggetto del compilatore in-process, se disponibile. Questo parametro è usato solo da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Utf8Output | Parametro booleano che, se impostato su `true`, registra l'output del compilatore usando la codifica UTF-8. Questo parametro è equivalente all'opzione del compilatore `/utf8Output`. |

@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946791"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747702"
 ---
-# <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
+# <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda dati
 
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.
 
@@ -28,7 +28,7 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
 
-Per passare direttamente alla pagina di riferimento di .NET Framework per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
+Per passare direttamente alla pagina di riferimento .NET per un componente, premere **F1** sull'elemento nella **della casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
 |nome|Description|
 |----------|-----------------|

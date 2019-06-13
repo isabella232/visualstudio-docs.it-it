@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944955"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747745"
 ---
 # <a name="toolbox-components-tab"></a>Casella degli strumenti, scheda Componenti
 
-Visualizza i componenti che è possibile aggiungere alle finestre di progettazione di Visual Basic e C# per Windows Form. Oltre ai componenti .NET Framework inclusi in Visual Studio, ad esempio i componenti <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, in questa scheda è possibile aggiungere componenti personalizzati o di terze parti.
+Visualizza i componenti che è possibile aggiungere alle finestre di progettazione di Visual Basic e C# per Windows Form. Oltre ai componenti .NET sono inclusi con Visual Studio, ad esempio la <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog> componenti, è possibile aggiungere i componenti personalizzati o di terze parti per questa scheda.
 
 Per visualizzare la scheda, aprire una finestra di progettazione di Windows Form. Selezionare **Visualizza** > **Casella degli strumenti**. In **Casella degli strumenti** selezionare la scheda **Componenti**.
 

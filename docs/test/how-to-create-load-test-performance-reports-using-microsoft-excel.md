@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950157"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747574"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedura: Creare report di prestazioni dei test di carico usando Microsoft Excel
 
@@ -70,7 +70,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 
    2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
-   3. Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
+   3. Nel **nome del Database** elenco a discesa selezionare il database contenente i risultati dei test di carico.
 
 3. Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
 
@@ -125,7 +125,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
 
    2. Nella pagina **Selezionare il database che contiene i test di carico**, in **Nome server** digitare il nome del server che contiene i risultati del test di carico.
 
-   3. Nell'elenco a discesa **Databasename** selezionare il database contenente i risultati del test di carico.
+   3. Nel **nome del Database** elenco a discesa selezionare il database contenente i risultati dei test di carico.
 
 3. Nella pagina **Scegliere la modalità di generazione del rapporto** verificare che l'opzione **Crea rapporto** sia selezionata e scegliere **Avanti**.
 
@@ -144,7 +144,7 @@ Nella figura seguente è illustrato un esempio di report in cui viene mostrata u
    > [!TIP]
    > Per offrire report più dettagliati, sono disponibili diverse proprietà in test di carico e test delle prestazioni web. La richiesta della pagina ha due proprietà presentate nei report: Obiettivo e Nome rapporto. I tempi di risposta della pagina saranno riportati rispetto all'obiettivo e il nome del report sarà usato al posto dell'URL nei report. In Impostazioni di esecuzione dei test di carico, in Gestisci insiemi di contatori, la proprietà Tag computer è presentata nei nomi dei computer del report. È molto utile per descrivere il ruolo di un particolare computer nel report.
 
-## <a name="net-framework-security"></a>.NET Framework (sicurezza)
+## <a name="net-security"></a>Sicurezza di .net
 
 I risultati e i report del test di carico contengono informazioni potenzialmente riservate che potrebbero essere utilizzate per realizzare un attacco al computer o alla rete. I risultati e i report del test di carico contengono nomi di computer e stringhe di connessione. Quando si condividono i report del test di carico con altre persone, è necessario tenere in considerazione tali rischi.
 

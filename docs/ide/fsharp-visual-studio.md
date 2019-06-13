@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793407"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747592"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Sviluppare con F# in Visual Studio
 
@@ -48,7 +48,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 |Multitargeting|Sì||
 |Icona e manifesto|No|Disponibili attraverso le opzioni della riga di comando del compilatore.|
 |Servizi client ASP.NET|No||
-|ClickOnce|No|Usare un progetto client in un altro linguaggio .NET Framework, se applicabile.|
+|ClickOnce|No|Usare un progetto client in un altro linguaggio .NET, se applicabile.|
 |Denominazione sicura|No|Disponibili attraverso le opzioni della riga di comando del compilatore.|
 |Pubblicazione e controllo delle versioni degli assembly|No||
 |Analisi codice|No|Gli strumenti di analisi codice possono essere eseguiti manualmente o nell'ambito di un comando post-compilazione.|
@@ -60,7 +60,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 |Pagina Creazione progetti|Collegamenti correlati|Description|
 | - |-------------|-----------|
-|Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET Framework a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
+|Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni a livello di applicazione e proprietà, ad esempio se si sta creando una libreria o un file eseguibile, quale versione di .NET l'applicazione è destinata a e informazioni su dove vengono archiviati i file di risorse utilizzato dall'applicazione.|
 |Compilazione|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
 |Debug|[Pagina Debug, Creazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
@@ -89,7 +89,7 @@ F# supporta le funzionalità seguenti degli editor di codice e di testo di Visua
 |Modifica del rientro|Consente di impostare o annullare un rientro per le righe selezionate.|Sì|
 |Rientro automatico|Applica e annulla il rientro del cursore in base alle regole di ambito F#.|Sì|
 |[Ricerca e sostituzione di testo](finding-and-replacing-text.md)|Consente di eseguire la ricerca in un file, in un progetto o in una soluzione, con la possibilità di modificare il testo.|Sì|
-|Passaggio alla definizione per l'API di .NET Framework|Quando il cursore è posizionato su un'API di .NET Framework, visualizza il codice generato dai metadati di .NET Framework.|No|
+|Vai a definizione per l'API .NET|Quando il cursore è posizionato su un'API .NET, Mostra il codice generato dai metadati di .NET.|No|
 |Passaggio alla definizione per un'API definita dall'utente|Quando il cursore è posizionato su un'entità di programma definita dall'utente, sposta il cursore nella posizione all'interno del codice in cui l'entità è definita.|Sì|
 |Vai alla riga|Consente di passare a una riga specifica in un file, in base al numero di riga.|Sì|
 |Barre di spostamento nella parte superiore del file|Consente di passare a posizioni specifiche all'interno del codice, ad esempio a un nome di funzione.|Sì|

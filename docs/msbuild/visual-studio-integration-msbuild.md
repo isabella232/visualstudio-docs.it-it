@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445374"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747439"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 Visual Studio ospita [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per caricare e compilare progetti gestiti. Poiché [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è responsabile del progetto, in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è possibile usare efficacemente praticamente qualsiasi progetto nel formato di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], anche se il progetto è stato creato da uno strumento diverso e presenta un processo di compilazione personalizzato.
 
  Questo articolo descrive aspetti specifici dell'hosting di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Tali aspetti devono essere tenuti in considerazione quando si esegue la personalizzazione di progetti e file con estensione *targets* da caricare e compilare in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Queste considerazioni consentono di assicurarsi che funzionalità di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] come IntelliSense e il debug funzionino con un progetto personalizzato.
 
- Per informazioni sui progetti C++, vedere [File di progetto](/cpp/ide/project-files).
+ Per informazioni sui progetti C++, vedere [File di progetto](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Estensioni dei file di progetto
  *MSBuild.exe* riconosce qualsiasi estensione di file di progetto che corrisponda al modello *.\*proj*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] riconosce tuttavia solo un sottoinsieme di queste estensioni di file di progetto, che determinano il sistema di progetto specifico del linguaggio che caricherà il progetto. In[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] non è disponibile un sistema di progetto basato su [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] indipendente dal linguaggio.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto e scegliere **Scarica progetto**.
 
-     Il progetto verrà contrassegnato come **(non disponibile)**.
+     Il progetto verrà contrassegnato come **(non disponibile)** .
 
-2. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>**.
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>** .
 
      Il file del progetto verrà aperto nell'editor XML di Visual Studio.
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.
 
-  - `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .
+  - `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory di .NET Framework.
 
 - Riferimenti COM:
 

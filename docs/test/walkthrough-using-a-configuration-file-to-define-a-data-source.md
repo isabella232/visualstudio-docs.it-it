@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432248"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746759"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procedura dettagliata: Uso di un file di configurazione per definire un'origine dati
 
@@ -71,7 +71,7 @@ L'elemento **section** dovrebbe essere simile al seguente:
 ```
 
 > [!NOTE]
-> Il nome dell'assembly deve corrispondere alla build di Microsoft Visual Studio .NET Framework in uso.
+> Il nome dell'assembly deve corrispondere alla versione che si sta utilizzando.
 
 ## <a name="define-connection-strings"></a>Definire le stringhe di connessione
 

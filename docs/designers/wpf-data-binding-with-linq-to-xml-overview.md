@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843928"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715077"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Panoramica del data binding WPF con LINQ to XML
 
@@ -21,7 +21,7 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML e LINQ to XML
 
-XAML (Extensible Application Markup Language) è un sottolinguaggio XML creato da Microsoft per supportare le tecnologie .NET Framework 3.0. Viene usato in WPF per rappresentare elementi dell'interfaccia utente e funzionalità correlate, ad esempio eventi e data binding. In Windows Workflow Foundation, XAML viene usato per rappresentare la struttura del programma, ad esempio il controllo del programma (*flussi di lavoro*). XAML consente la separazione di aspetti dichiarativi di una tecnologia dal codice procedurale correlato che definisce il comportamento più personalizzato di un programma.
+Il linguaggio Extensible Application Markup Language (XAML) è un sottolinguaggio XML creato da Microsoft per supportare le tecnologie .NET. Viene usato in WPF per rappresentare elementi dell'interfaccia utente e funzionalità correlate, ad esempio eventi e data binding. In Windows Workflow Foundation, XAML viene usato per rappresentare la struttura del programma, ad esempio il controllo del programma (*flussi di lavoro*). XAML consente la separazione di aspetti dichiarativi di una tecnologia dal codice procedurale correlato che definisce il comportamento più personalizzato di un programma.
 
 XAML e LINQ to XML possono interagire in due modi:
 

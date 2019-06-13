@@ -1,11 +1,9 @@
 ---
-title: Definire .NET Framework come destinazione
+title: Destinazione versioni di .NET Framework
 ms.date: 02/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
-- multi-targeting [Visual Studio]
-- multitargeting [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
 author: gewarren
@@ -13,18 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582112"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747636"
 ---
-# <a name="visual-studio-multi-targeting-overview"></a>Panoramica del multitargeting di Visual Studio
+# <a name="framework-targeting-overview"></a>Framework come destinazione di panoramica
 
-In Visual Studio è possibile specificare la versione o il profilo di .NET Framework per cui si vuole sviluppare il progetto. Per un'applicazione da eseguire in un altro computer, la versione di .NET Framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.
+In Visual Studio, è possibile specificare la versione di .NET che si desidera destinare il progetto. Per le app .NET Framework per l'esecuzione in un altro computer, la versione di framework di destinazione dell'applicazione devono essere compatibile con la versione di framework che viene installata nel computer.
 
-È anche possibile creare una soluzione contenente progetti destinati a versioni diverse di .NET Framework. Sviluppare per .NET Framework consente di garantire che l'applicazione usi solo le funzionalità disponibili nella versione specificata di .NET Framework.
+Per altre informazioni sui Framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
+
+È anche possibile creare una soluzione contenente progetti destinati a versioni diverse di .NET. Framework come destinazione consente di garantire che l'applicazione usi solo le funzionalità sono disponibile nella versione del framework specificato.
 
 > [!TIP]
 > È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
@@ -33,36 +33,39 @@ In Visual Studio è possibile specificare la versione o il profilo di .NET Frame
 
 La definizione della destinazione del framework include le seguenti funzionalità:
 
-- Quando si apre un progetto destinato a una versione precedente di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], con Visual Studio è possibile aggiornare automaticamente la versione di destinazione o lasciarla invariata.
+- Quando si apre un progetto destinato a una versione precedente di framework, Visual Studio può aggiornare il progetto automaticamente o lasciare la destinazione come-è.
 
-- Quando si crea un progetto, è possibile specificare la versione di .NET Framework che si vuole usare come destinazione.
+- Quando si crea un progetto .NET Framework, è possibile specificare la versione di .NET Framework che si desidera di destinazione.
 
-- È possibile modificare la versione di .NET Framework a cui è destinato un progetto esistente.
+- È possibile [come destinazione più Framework](/dotnet/standard/frameworks#how-to-specify-target-frameworks) in un singolo progetto.
 
-- È possibile definire la destinazione di una versione diversa di .NET Framework in ognuno dei diversi progetti di una stessa soluzione.
+- È possibile destinare una versione diversa di .NET in ognuno dei diversi progetti nella stessa soluzione.
 
-- Quando si modifica la versione di .NET Framework a cui è destinato un progetto, [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] effettua tutte le modifiche necessarie ai riferimenti e ai file di configurazione.
+- È possibile modificare la versione di .NET che un progetto esistente destinazioni.
 
-Quando si lavora su un progetto destinato a una versione precedente del [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio modifica in modo dinamico l'ambiente di sviluppo, come indicato di seguito:
+   Quando si modifica la versione di .NET che viene destinato un progetto, Visual Studio rende necessaria qualsiasi modifica ai riferimenti e i file di configurazione.
+
+Quando si lavora su un progetto destinato a una versione precedente di framework, Visual Studio in modo dinamico cambia l'ambiente di sviluppo, come indicato di seguito:
 
 - Vengono filtrati gli elementi delle finestre di dialogo **Aggiungi nuovo elemento**, **Aggiungi nuovo riferimento** e **Aggiungi riferimento al servizio** per omettere scelte che non sono disponibili nella versione di destinazione.
 
 - Vengono filtrati i controlli personalizzati nella **Casella degli strumenti** per rimuovere quelli che non sono disponibili nella versione di destinazione e per visualizzare solo i controlli più aggiornati quando sono disponibili più controlli.
 
-- Vengono applicati i filtri **IntelliSense** per omettere funzionalità del linguaggio che non sono disponibili nella versione di destinazione.
+- Filtra **IntelliSense** per omettere funzionalità del linguaggio che non sono disponibili nella versione di destinazione.
 
-- Vengono filtrate le proprietà nella finestra **Proprietà** per omettere quelle che non sono disponibili nella versione di destinazione.
+- Filtra proprietà nella **proprietà** finestra per omettere quelle che non sono disponibili nella versione di destinazione.
 
-- Vengono filtrate le opzioni di menu per omettere opzioni che non sono disponibili nella versione di destinazione.
+- Filtra le opzioni di menu per omettere opzioni che non sono disponibili nella versione di destinazione.
 
 - Per le compilazioni, vengono usate la versione e le opzioni del compilatore appropriate per la versione di destinazione.
 
 > [!NOTE]
-> La definizione della destinazione del framework non garantisce che l'applicazione verrà eseguita correttamente. È necessario testare l'applicazione per assicurarsi che venga eseguita la versione di destinazione. Non è possibile usare come destinazione versioni di framework precedenti a .NET Framework 2.0.
+> - La definizione della destinazione del framework non garantisce che l'applicazione verrà eseguita correttamente. È necessario testare l'applicazione per assicurarsi che venga eseguita la versione di destinazione.
+> - È possibile destinare le versioni di framework precedenti a .NET Framework 2.0.
 
 ## <a name="select-a-target-framework-version"></a>Selezione una versione di .NET Framework di destinazione
 
-Quando si crea un progetto, selezionare la versione di .NET Framework di destinazione dopo la selezione di un modello di progetto. L'elenco di framework disponibili include le versioni di framework installate applicabili al tipo di modello selezionato. Per i tipi di modello che non richiedono .NET Framework, ad esempio i modelli di .NET Core, l'elenco a discesa **Framework** è nascosto.
+Quando si crea un progetto .NET Framework, è possibile selezionare la versione di .NET Framework di destinazione dopo aver selezionato un modello di progetto. L'elenco di framework disponibili include le versioni di framework installate applicabili al tipo di modello selezionato. Per i modelli di progetto non .NET Framework, ad esempio i modelli di .NET Core, il **Framework** non viene visualizzato l'elenco a discesa.
 
 ::: moniker range="vs-2017"
 
@@ -76,13 +79,13 @@ Quando si crea un progetto, selezionare la versione di .NET Framework di destina
 
 ::: moniker-end
 
-In un progetto esistente è possibile modificare la versione di .NET Framework di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+In un progetto esistente, è possibile modificare la versione di .NET di destinazione nella finestra di dialogo Proprietà progetto. Per altre informazioni, vedere [Procedura: Destinare una versione di .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Risolvere i riferimenti ad assembly di sistema e utente
 
-Per impostare come destinazione una versione di .NET Framework, è necessario prima installare i riferimenti dell'assembly appropriato. È possibile scaricare Developer Pack per versioni diverse di .NET Framework dalla pagina [.NET downloads](https://www.microsoft.com/net/download/windows) (Download di .NET).
+Per impostare come destinazione una versione di .NET, è necessario installare innanzitutto i riferimenti all'assembly appropriato. È possibile scaricare developer Pack per versioni diverse di .NET nel [.NET downloads](https://www.microsoft.com/net/download/windows) pagina.
 
-La finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema non pertinenti alla versione di destinazione di .NET Framework, in modo che non possano essere aggiunti a un progetto inavvertitamente. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione del framework successiva alla versione di destinazione non verranno risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.  Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Per i progetti .NET Framework, il **Aggiungi riferimento** nella finestra di dialogo Disabilita gli assembly di sistema non pertinenti alla versione di .NET Framework di destinazione in modo che non possano essere inavvertitamente aggiunti a un progetto. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione di framework che è superiore alla versione di destinazione non verranno risolto e non è possibile aggiungere controlli che dipendono da tale riferimento. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento. Per altre informazioni, vedere [Procedura: Una versione del framework di destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -92,5 +95,6 @@ Quando si usa .NET Framework 3.5 o versioni successive, vengono aggiunti automat
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Framework di destinazione](/dotnet/standard/frameworks)
 - [Multitargeting (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
 - [Procedura: Modificare il framework di destinazione e il set di strumenti della piattaforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

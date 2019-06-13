@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537481"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747329"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
 È possibile usare il comando **Visualizza definizione** per visualizzare e modificare il codice senza uscire dal codice in fase di scrittura. **Visualizza definizione** e **Vai a definizione** visualizzano le stesse informazioni, ma **Visualizza definizione** mostra il codice in una finestra popup e **Vai a definizione** mostra il codice in una finestra separata. **Vai a definizione** determina il passaggio del contesto (ovvero la finestra di codice attiva, la riga corrente e la posizione del cursore) alla finestra del codice della definizione. Tramite **Visualizza definizione** è possibile visualizzare e modificare la definizione e spostarsi all'interno del file di definizione, mantenendo la stessa posizione nel file di codice originale.
 
-È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic, **Visualizza definizione** mostra un collegamento a **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione, ad esempio tipi .NET Framework predefiniti.
+È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** Mostra un collegamento per il **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione (ad esempio, tipi di .NET che sono incorporate).
 
-## <a name="working-with-peek-definition"></a>Utilizzo di Visualizza definizione
+## <a name="use-peek-definition"></a>Utilizzare Visualizza definizione
 
-### <a name="to-open-a-peek-definition-window"></a>Per aprire una finestra Visualizza definizione
+### <a name="open-a-peek-definition-window"></a>Aprire una finestra Visualizza definizione
 
 1. È possibile visualizzare una definizione scegliendo **Visualizza definizione** dal menu di scelta rapida per un tipo o un membro che si vuole esplorare. Se l'opzione è abilitata, è possibile visualizzare una definizione anche usando il mouse premendo **CTRL** (o un altro modificatore) e facendo clic sul nome del membro. In alternativa, dalla tastiera premere **ALT**+**F12**.
 
@@ -75,7 +75,7 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |Consente di aprire la finestra di definizione|**ALT**+**F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
 |Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+**=**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+ **=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
 

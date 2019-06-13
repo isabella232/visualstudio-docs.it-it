@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848348"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820896"
 ---
 L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio creativa che consente di modificare, eseguire il debug, compilare il codice e quindi pubblicare un'app. Un ambiente di sviluppo integrato (IDE) è un programma con numerose funzionalità che può essere usato per molti aspetti dello sviluppo software. A differenza dell'editor e del debugger standard disponibili nella maggior parte degli ambienti IDE, Visual Studio include compilatori, strumenti di completamento codice, finestre di progettazione con interfaccia grafica e altre funzionalità che semplificano il processo di sviluppo del software.
 
@@ -23,7 +23,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "IDE di Visual Studio")](../media/vs-2019/ide-overview.png#lightbox)
+[![IDE di Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra di dialogo **Nuovo progetto** con vari *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
-1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
+1. Scegliere la categoria di modello **.NET Core** in **Visual C#** e quindi scegliere il modello **App console (.NET Core)** . Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
    ![Modello di app .NET Core](../media/overview-new-project-dialog.png)
 
@@ -197,7 +197,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/overview-console-window.png)
 
@@ -242,7 +242,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra **Crea un nuovo progetto**, che mostra diversi *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
-1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **C#** dall'elenco a discesa **Linguaggio**. Selezionare il modello**App console (.NET Core)**, quindi scegliere **Avanti**.
+1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **C#** dall'elenco a discesa **Linguaggio**. Selezionare il modello**App console (.NET Core)** , quindi scegliere **Avanti**.
 
     ![Creare un nuovo progetto in Visual Studio](../media/vs-2019/create-new-project.png)
 
@@ -266,7 +266,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range="vs-2017"
 
-3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
+3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'** .
 
    ![Rinominare l'azione in Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ In primo luogo, rinominare la variabile `name`:
 
 ::: moniker range=">=vs-2019"
 
-3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
+3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'** .
 
    ![Rinominare l'azione in Visual Studio](../media/vs-2019/rename-quick-action.png)
 

@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966548"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820650"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Benvenuti all'IDE di Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "IDE di Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![IDE di Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    Viene visualizzata la finestra di dialogo **Nuovo progetto** con vari *modelli* di progetto. Un modello contiene i file di base e le impostazioni necessarie per un determinato tipo di progetto.
 
-1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)**. Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
+1. Scegliere la categoria **.NET Core** in **Visual Basic** e quindi scegliere il modello **App console (.NET Core)** . Nella casella di testo **Nome** digitare **HelloWorld** e quindi selezionare il pulsante **OK**.
 
    ![Modello di app .NET Core](media/overview-npd.png)
 
@@ -306,7 +306,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![Menu Debug > Avvia senza eseguire debug](../media/overview-start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/overview-console-window.png)
 
@@ -349,7 +349,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
 1. Per trovare il modello da usare, digitare o immettere **console .net core** nella casella di ricerca. L'elenco dei modelli disponibili viene automaticamente filtrato in base alle parole chiave immesse. È possibile filtrare ulteriormente i risultati relativi ai modelli scegliendo **Visual Basic** dall'elenco a discesa **Linguaggio**.
 
-1. Selezionare il modello**App console (.NET Core)**, quindi scegliere **Avanti**.
+1. Selezionare il modello**App console (.NET Core)** , quindi scegliere **Avanti**.
 
    ![Creare un nuovo progetto in Visual Studio](media/vs-2019/create-new-project.png)
 
@@ -373,7 +373,7 @@ In questa sezione viene descritta in dettaglio la procedura per creare un progra
 
    ![Menu Debug > Avvia senza eseguire debug](media/vs-2019/start-without-debugging.png)
 
-   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!**. Ed ecco un'app in esecuzione.
+   Visual Studio compila l'app e apre una finestra della console con il messaggio **Hello World!** . Ed ecco un'app in esecuzione.
 
    ![Finestra della console](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ In primo luogo, rinominare la variabile `name`:
 
    Si noti che viene visualizzata una casella grigia intorno a variabile e una lampadina viene visualizzata nel margine.
 
-3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'**.
+3. Selezionare l'icona lampadina per visualizzare le [azioni rapide](../../ide/quick-actions.md) disponibili. Selezionare **Rinomina 'nome' in 'nomeutente'** .
 
    ![Rinominare l'azione in Visual Studio](media/rename-quick-action.png)
 
