@@ -15,22 +15,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547871"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820878"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Sviluppare app globalizzate e localizzate
 
-Visual Studio semplifica lo sviluppo di applicazioni internazionali usando i servizi incorporati in [.NET Framework](/dotnet/standard/globalization-localization/).
+Visual Studio semplifica lo sviluppo per un pubblico internazionale facile, sfruttando i vantaggi dei servizi incorporate [.NET](/dotnet/standard/globalization-localization/).
 
 Ad esempio, il sistema di progetto per app Windows Forms può generare file di risorse per le impostazioni cultura dell'interfaccia utente di fallback e ogni assembly di impostazioni cultura dell'interfaccia utente aggiuntivo. Quando si compila un progetto in Visual Studio, i file di risorse vengono compilati dal formato XML di Visual Studio (con estensione resx) in un formato binario intermedio (con estensione resources) e quindi incorporati in assembly satellite. Per altre informazioni, vedere [File di risorse in Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) e [Creare assembly satellite per applicazioni desktop](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
-Per informazioni sulla creazione di app per le lingue bidirezionali in Visual Studio, vedere [Creare app per arabo ed ebraico](creating-applications-in-bi-directional-languages.md).
+## <a name="bidirectional-languages"></a>Lingue bidirezionali
+
+È possibile usare Visual Studio per creare applicazioni che visualizzano correttamente il testo nelle lingue scritte da destra a sinistra, tra cui l'arabo e l'ebraico. Per alcune funzionalità basta impostare delle proprietà. In altri casi è necessario implementare le funzionalità nel codice.
+
+> [!NOTE]
+> Per l'immissione e la visualizzazione delle lingue bidirezionali è necessario usare una versione di Windows configurata per la lingua appropriata. Può essere una versione di Windows in inglese con il Language Pack appropriato o una versione di Windows localizzata nella lingua desiderata.
+
+### <a name="apps-that-support-bidirectional-languages"></a>App che supportano le lingue bidirezionali
+
+- App di Windows
+
+   È possibile creare applicazioni completamente bidirezionali che includono il supporto per il testo bidirezionale, l'ordine di lettura da destra a sinistra e il mirroring (inversione del layout di finestre, menu, finestre di dialogo e così via). Fatta eccezione per il mirroring, queste funzionalità sono disponibili per impostazione predefinita o come impostazioni di proprietà. Il mirroring è supportato intrinsecamente per alcune funzionalità, ad esempio le finestre di messaggio. In altri casi è invece necessario implementare il mirroring nel codice. Per altre informazioni, vedere [Supporto bidirezionale per le applicazioni Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+
+- App Web
+
+   I servizi Web supportano l'invio e la ricezione di testo UTF-8 e Unicode. Sono quindi adatti per le applicazioni che prevedono l'uso delle lingue bidirezionali. L'interfaccia utente delle applicazioni Web client è basata sui browser, pertanto il livello di supporto bidirezionale di un'applicazione Web dipende dal grado di supporto delle funzionalità bidirezionali nel browser dell'utente. In Visual Studio è possibile creare applicazioni con supporto per testo in arabo o ebraico, ordine di lettura da destra a sinistra, codifica di file e impostazioni cultura locali. Per altre informazioni, vedere [Supporto bidirezionale per applicazioni Web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+
+> [!NOTE]
+> Le app console non includono il supporto del testo per le lingue bidirezionali. Questo fatto dipende dall'interazione tra Windows e le applicazioni console.
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Supporto per le lingue bidirezionali in Visual Studio](use-bidirectional-languages.md)
 - [Globalizzare e localizzare app .NET](/dotnet/standard/globalization-localization/)
 - [Risorse nelle app .NET](/dotnet/framework/resources/)

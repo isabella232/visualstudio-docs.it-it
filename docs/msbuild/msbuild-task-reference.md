@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004762"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747367"
 ---
 # <a name="msbuild-task-reference"></a>Riferimenti delle attività MSBuild
 
@@ -169,7 +169,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività GetFrameworkPath](../msbuild/getframeworkpath-task.md)
 
- Recupera il percorso degli assembly [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Recupera il percorso agli assembly .NET Framework.
 
 - [Attività GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 

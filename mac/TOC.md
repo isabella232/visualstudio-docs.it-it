@@ -71,7 +71,8 @@
 ## [Carichi di lavoro disponibili](workloads.md)
 ## ASP.NET Core
 ### [Supporto di .NET Core](net-core-support.md)
-### [Creazione della prima app ASP.NET Core](asp-net-core.md)
+### [Introduzione ad ASP.NET Core](asp-net-core.md)
+### [Compilazione di applicazioni in Visual Studio per Mac ASP.NET Core](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript e TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Sviluppo di giochi con Unity
 ### [Sviluppo di giochi con Unity](unity-tools.md)
 ### [Configurazione](setup-vsmac-tools-unity.md)
+### [Introduzione a Unity](unity-walkthrough.md)
 ### [Uso degli strumenti di Unity](using-vsmac-tools-unity.md)
 ### [Uso di .NET 4.x in Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Log delle modifiche](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)

@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431830"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745823"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedura: Creare un editor del corpo HTTP personalizzato per l'editor test prestazioni Web
 
@@ -43,7 +43,7 @@ Queste interfacce sono contenute nello spazio dei nomi <xref:Microsoft.VisualStu
 
 1. Nella pagina **Proprietà** selezionare la scheda **Applicazione**.
 
-1. Nell'elenco a discesa **Framework di destinazione** selezionare **.NET Framework 4**.
+1. Nel **framework di destinazione** elenco a discesa, selezionare .NET Framework 4 (o versione successiva).
 
 1. Viene visualizzata la finestra di dialogo **Modifica del framework di destinazione**.
 

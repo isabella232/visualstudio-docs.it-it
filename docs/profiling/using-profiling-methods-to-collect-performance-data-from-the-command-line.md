@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263831"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746770"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usare i metodi di profilatura per raccogliere dati sulle prestazioni dalla riga di comando
-La scelta degli strumenti e delle opzioni della riga di comando per gli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dipende da fattori come il tipo di applicazione sottoposta a profilatura, il metodo di profilatura da usare e il fatto che l'applicazione di destinazione sia scritta in codice nativo o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+La scelta di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] strumenti da riga di comando degli strumenti di profilatura e le opzioni dipende da fattori quali il tipo di applicazione sottoposta a profilatura, il metodo di profilatura che si desidera utilizzare e che l'applicazione di destinazione sia scritta in nativo o .NET Codice del Framework.
 
  Questo argomento organizza gli argomenti relativi alle procedure della riga di comando in base al metodo di profilatura scelto.
 
@@ -50,9 +50,9 @@ La scelta degli strumenti e delle opzioni della riga di comando per gli strument
 - [Servizi nativi](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Usare i metodi di memoria .NET per raccogliere dati sulla durata degli oggetti e sull'allocazione di memoria
- Il metodo di memoria .NET degli strumenti di profilatura consente di raccogliere dati sull'allocazione di memoria di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e informazioni sulla durata degli oggetti in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Il metodo di memoria .NET degli strumenti di profilatura consente di raccogliere dati sull'allocazione di memoria .NET Framework e informazioni sulla durata degli oggetti in .NET Framework.
 
- È possibile avviare l'applicazione di destinazione tramite il profiler, collegare il profiler a un'istanza di un'applicazione in esecuzione e creare versioni instrumentate dell'applicazione per raccogliere informazioni dettagliate sugli intervalli insieme ai dati sulla memoria di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ È possibile avviare l'applicazione di destinazione tramite il profiler; è possibile connettere il profiler a un'istanza in esecuzione di un'applicazione. ed è possibile creare versioni instrumentate dell'applicazione per raccogliere informazioni dettagliate sugli intervalli insieme ai dati di memoria di .NET Framework.
 
 |Attività|Tipo di applicazione di destinazione|
 |----------|-----------------------------|

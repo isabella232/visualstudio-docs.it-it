@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b79d1b0a4b59246c9497c0594047c6457c1b685
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c5420839d97fb62797d0f739ce62da4d14b340b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791467"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744889"
 ---
 # <a name="assembly-information-dialog-box"></a>Finestra di dialogo Informazioni assembly
-È possibile usare la finestra di dialogo **Informazioni assembly** per specificare i valori degli attributi globali degli assembly di [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] che vengono archiviati nel file AssemblyInfo creato automaticamente insieme al progetto. In **Esplora soluzioni** il file è contenuto nel nodo **My Project** (Progetto) in [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. Fare clic su **Mostra tutti i file** per visualizzarlo. Si trova in **Proprietà** in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Per altre informazioni sugli attributi degli assembly, vedere [Attributi](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
+Il **informazioni sull'Assembly** nella finestra di dialogo consente di specificare i valori degli attributi dell'assembly globale di .NET Framework, che vengono archiviati nel file AssemblyInfo creato automaticamente con il progetto. In **Esplora soluzioni** il file è contenuto nel nodo **My Project** (Progetto) in [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. Fare clic su **Mostra tutti i file** per visualizzarlo. Si trova in **Proprietà** in [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Per altre informazioni sugli attributi degli assembly, vedere [Attributi](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).
 
  Per accedere a questa finestra di dialogo, selezionare un nodo di progetto in **Esplora soluzioni**, fare clic su **Proprietà** dal menu **Progetto**. Quando si apre **Creazione progetti**, fare clic sulla scheda **Applicazione**. Nella pagina **Applicazione** scegliere il pulsante **Informazioni assembly**.
 
@@ -43,7 +43,7 @@ ms.locfileid: "62791467"
 
  **GUID** Un GUID univoco che identifica l'assembly. Quando si crea un progetto, Visual Studio genera un GUID per l'assembly. Corrisponde a <xref:System.Guid>.
 
- **Lingua neutra** Specifica le impostazioni cultura supportate dall'assembly. Corrisponde a <xref:System.Resources.NeutralResourcesLanguageAttribute>. L'impostazione predefinita è **(Nessuna)**.
+ **Lingua neutra** Specifica le impostazioni cultura supportate dall'assembly. Corrisponde a <xref:System.Resources.NeutralResourcesLanguageAttribute>. L'impostazione predefinita è **(Nessuna)** .
 
  **Rendi assembly visibile a COM** Specifica se i tipi nell'assembly saranno disponibili a COM. Corrisponde a <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 

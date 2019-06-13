@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437844"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747358"
 ---
 # <a name="msbuild-task"></a>MSBuild (attività)
 Compila progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] da un altro progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -44,7 +44,7 @@ Compila progetti di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/
 | `TargetAndPropertyListSeparators` | Parametro `String[]` facoltativo.<br /><br /> Specifica un elenco di destinazioni e proprietà come metadati dell'elemento `Project`. Il carattere di escape verrà rimosso dai separatori prima dell'elaborazione. Ad esempio, %3B (";" preceduto da un carattere di escape) verrà considerato come ";" non preceduto da un carattere di escape. |
 | `TargetOutputs` | Parametro di output di sola lettura <xref:Microsoft.Build.Framework.ITaskItem>`[]` facoltativo.<br /><br /> Restituisce gli output delle destinazioni compilate da tutti i file di progetto. Vengono restituiti solo gli output dalle destinazioni specificate, non tutti gli output esistenti nelle destinazioni da cui le destinazioni dipendono.<br /><br /> Il parametro `TargetOutputs` contiene anche i metadati seguenti:<br /><br /> -   `MSBuildSourceProjectFile`: il file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contenente la destinazione che imposta gli output.<br />-   `MSBuildSourceTargetName`: destinazione che imposta gli output. **Nota:**  per identificare gli output da ogni file di progetto o destinazione separatamente, eseguire l'attività `MSBuild` separatamente per ogni file di progetto o destinazione. Se si esegue l'attività `MSBuild` solo una volta per compilare tutti i file di progetto, gli output di tutte le destinazioni vengono raccolte in una sola matrice. |
 | `Targets` | Parametro `String` facoltativo.<br /><br /> Specifica la destinazione o le destinazioni da compilare nei file di progetto. Usare un punto e virgola per separare le voci di un elenco di nomi di destinazione. Se nessuna destinazione viene specificata nell'attività `MSBuild`, vengono compilate le destinazioni predefinite specificate nei file di progetto. **Nota:**  le destinazioni devono essere presenti in tutti i file di progetto. In caso contrario, si verifica un errore di compilazione. |
-| `ToolsVersion` | Parametro `String` facoltativo.<br /><br /> Specifica la `ToolsVersion` da usare quando si compilano i progetti passati a questa attività.<br /><br /> Consente a un'attività [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] di compilare un progetto destinato a una versione di [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] diversa da quella specificata nel progetto. I valori validi sono `2.0`, `3.0` e `3.5`. Il valore predefinito è `3.5`. |
+| `ToolsVersion` | Parametro `String` facoltativo.<br /><br /> Specifica la `ToolsVersion` da usare quando si compilano i progetti passati a questa attività.<br /><br /> Abilita un [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] attività per compilare un progetto destinato a una versione diversa di .NET Framework rispetto a quello specificato nel progetto. I valori validi sono `2.0`, `3.0` e `3.5`. Il valore predefinito è `3.5`. |
 | `UnloadProjectsOnCompletion` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il progetto verrà scaricato al termine dell'operazione. |
 | `UseResultsCache` | Parametro `Boolean` facoltativo.<br /><br /> Se `true`, il risultato memorizzato nella cache verrà restituito, se presente.<br /><br />  Se si esegue l'attività MSBuild, il risultato di questa viene memorizzato nella cache in un ambito <br /><br /> (ProjectFileName, GlobalProperties) [TargetNames]<br /><br /> come elenco di elementi di compilazione. |
 

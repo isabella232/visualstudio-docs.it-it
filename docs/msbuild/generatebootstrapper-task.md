@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003657"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746592"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (attività)
 Consente di rilevare, scaricare e installare automaticamente un'applicazione e i relativi prerequisiti. Funge da programma di installazione singolo che integra i programmi di installazione separati per tutti i componenti che costituiscono un'applicazione.
@@ -152,7 +152,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
-L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'applicazione che deve avere [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installato come prerequisito.
+L'esempio seguente usa il `GenerateBootstrapper` attività per installare un'applicazione che deve disporre di .NET Framework 2.0 installati come prerequisito.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

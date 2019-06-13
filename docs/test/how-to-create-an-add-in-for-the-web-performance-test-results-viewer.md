@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950053"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747238"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per il Visualizzatore risultati Test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -256,9 +256,9 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione**, selezionare **.NET Framework 4** e chiudere **Proprietà**.
+2. Selezionare il **Application** scheda e quindi scegliere il **framework di destinazione** elenco a discesa e selezionare **.NET Framework 4** (o versione successiva). Chiudi il **proprietà** finestra.
 
-     Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
+   Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
 3. In **Esplora soluzioni**, nel progetto WebPerfTestResultsViewerControl, fare clic con il pulsante destro del mouse sul nodo **Riferimenti** e selezionare **Aggiungi riferimento**.
 
@@ -300,15 +300,11 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Compilare la soluzione WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Per compilare la soluzione
+## <a name="build-the-solution"></a>Compilare la soluzione
 
 - Scegliere **Compila soluzione** dal menu **Compila**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrare il componente aggiuntivo WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Per registrare il componente aggiuntivo utilizzando Gestione componenti aggiuntivi
 
 1. Scegliere **Gestione componenti aggiuntivi** dal menu **Strumenti**.
 
@@ -318,15 +314,13 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 4. Scegliere **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Eseguire il test delle prestazioni Web usando la compilazione del componente aggiuntivo WebPerfTestResultsViewerAddin
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Per eseguire il nuovo componente aggiuntivo di Visual Studio per il Visualizzatore risultati test prestazioni Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Eseguire il test delle prestazioni web utilizzando il Visualizzatore risultati Test Web
 
 1. Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
 
 2. Scegliere la scheda per visualizzare le proprietà presentate nell'oggetto DataGridView.
 
-## <a name="net-framework-security"></a>Sicurezza di .NET Framework
+## <a name="net-security"></a>Sicurezza di .net
 
 Per migliorare la sicurezza e impedire l'attivazione automatica di componenti aggiuntivi dannosi, Visual Studio offre impostazioni in una pagina **Opzioni** del menu Strumenti denominata **Sicurezza macro/componenti aggiuntivi**.
 

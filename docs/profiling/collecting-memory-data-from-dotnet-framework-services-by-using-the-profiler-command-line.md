@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263515"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747810"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
-Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] tramite il metodo di campionamento dalla riga di comando.
+In questa sezione descrive le procedure e le opzioni per la raccolta dei dati sulla durata degli oggetti per un servizio .NET Framework usando il metodo di campionamento dalla riga di comando e allocazione di memoria.
 
 ## <a name="common-tasks"></a>Attività comuni
 

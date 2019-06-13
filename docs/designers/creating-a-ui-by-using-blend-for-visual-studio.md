@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847325"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820561"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Panoramica di Blend per Visual Studio
 
@@ -60,7 +60,7 @@ La finestra **Asset** contiene tutti i controlli disponibili ed è simile alla *
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Casella di ricerca** Digitare testo nella casella **Cerca** per filtrare l'elenco di asset.|
+|![Casella di ricerca Asset](../designers/media/b1_1.png)|**Casella di ricerca** Digitare testo nella casella **Cerca** per filtrare l'elenco di asset.|
 |![Modalità griglia e modalità elenco](../designers/media/b1_2.png)|**Modalità griglia e Modalità elenco** Consente di passare dalla visualizzazione **Modalità griglia** alla visualizzazione **Modalità elenco** e viceversa.|
 |![Categorie di asset](../designers/media/b1_3.png)|**Categorie di asset** Fare clic su una categoria o sottocategoria per visualizzare l'elenco di asset corrispondente.|
 |![Stili](../designers/media/b1_4.png)|**Stili** Consente di visualizzare tutti gli stili disponibili nel dizionario risorse.|
@@ -115,7 +115,7 @@ Usare questa finestra per visualizzare e modificare le proprietà di un oggetto.
 |![Spazio colori RGB](../designers/media/b1_12.png)|**Spazio colori RGB** Consente di modificare il colore cambiando i valori per gli editor di numero **R**, **G** o **B** (rosso, verde, blu).|
 |![Canale alfa](../designers/media/b1_13.png)|**Canale alfa** Consente di modificare il valore alfa usando l'editor di numero accanto ad **A**.|
 |![Converti colore in risorsa](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Converti colore in risorsa** Consente di convertire il colore selezionato in una risorsa di colore. Le risorse di colore sono disponibili quando si fa clic sulla scheda Risorse colore.|
-|![](../designers/media/b1_15.png)|**Valore hex** Consente di visualizzare il valore esadecimale del colore visualizzato.|
+|![Valore esadecimale del colore](../designers/media/b1_15.png)|**Valore hex** Consente di visualizzare il valore esadecimale del colore visualizzato.|
 |![Callout 16](../designers/media/b5_label_16.png)|**Cursore sfumatura** Viene visualizzato solo se è selezionato un pennello sfumato.|
 |![Mostra proprietà avanzate](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostra proprietà avanzate** Consente di visualizzare le categorie di proprietà che vengono usate meno.|
 

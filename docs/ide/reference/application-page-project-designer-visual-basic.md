@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791656"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744932"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
@@ -57,14 +57,14 @@ Per informazioni su come accedere a questa proprietà a livello di programmazion
 
 ### <a name="target-framework-all-configurations"></a>Framework di destinazione (tutte le configurazioni)
 
-Specifica la versione di .NET Framework a cui è destinata l'applicazione. Questa opzione può avere valori diversi a seconda delle versioni di .NET Framework installate nel computer in uso.
+Specifica la versione di .NET che gli obiettivi dell'applicazione. Questa opzione può avere valori diversi a seconda che le versioni di .NET installate nel computer.
 
-Il valore predefinito corrisponde al framework di destinazione specificato al momento della creazione del progetto.
+Per i progetti .NET Framework, il valore predefinito corrisponde al framework di destinazione specificato durante la creazione del progetto.
 
 > [!NOTE]
 > I pacchetti prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono installati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario specificare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
-Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica del multitargeting di Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Framework come destinazione Panoramica](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo di applicazione
 
@@ -90,7 +90,7 @@ Se il progetto è un'applicazione browser WPF, questo elenco ha come intestazion
 
 Se l'opzione **Abilita framework applicazione** è deselezionata, questo elenco diventa **Oggetto di avvio** e mostra sia moduli e classi o moduli con `Sub Main`.
 
-**Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)**. Per altre informazioni, vedere [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Oggetto di avvio** definisce il punto di ingresso da chiamare durante il caricamento dell'applicazione. In genere è impostato sul modulo principale dell'applicazione o sulla procedura `Sub Main` da eseguire all'avvio dell'applicazione. Poiché le librerie di classi non hanno un punto di ingresso, l'unica opzione disponibile per questa proprietà è **(Nessuno)** . Per altre informazioni, vedere [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Icona
 
@@ -153,7 +153,7 @@ Selezionare **Alla chiusura della finestra principale** per specificare che l'ap
 
 ### <a name="splash-screen"></a>Schermata iniziale
 
-Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. L'impostazione predefinita è **(Nessuna)**.
+Selezionare il modulo che si vuole usare come schermata iniziale. È necessario avere creato precedentemente una schermata iniziale tramite un modulo o un modello. L'impostazione predefinita è **(Nessuna)** .
 
 ### <a name="view-application-events"></a>Visualizza eventi applicazione
 

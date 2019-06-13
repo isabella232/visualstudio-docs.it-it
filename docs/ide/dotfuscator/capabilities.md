@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557255"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744788"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funzionalità di Dotfuscator
 
@@ -37,7 +37,7 @@ Dotfuscator Community supporta una vasta gamma di tipi assembly e applicazioni .
 ## <a name="intellectual-property-protection"></a>Protezione della proprietà intellettuale
 
 La progettazione, il comportamento e l'implementazione di un'applicazione sono tipi di proprietà intellettuale (IP).
-Le applicazioni create per .NET Framework sono però di fatto molto intuitive. È infatti molto facile decompilare gli assembly .NET, [in quanto contengono metadati di alto livello e codice intermedio][assemblies].
+Tuttavia, le applicazioni create per .NET sono essenzialmente aprire documentazione; è possibile decompilare gli assembly .NET, facilmente [in quanto contengono metadati di alto livello e codice intermedio][assemblies].
 
 Dotfuscator Community include funzionalità di [offuscamento .NET][obfuscation] di base sotto forma di [ridenominazione][renaming].
 L'offuscamento del codice con Dotfuscator riduce il rischio di accesso non autorizzato al codice sorgente tramite reverse engineering, impedendo che informazioni importanti sulla denominazione rimangano pubbliche.
@@ -50,7 +50,7 @@ Dotfuscator può inserire un [comportamento anti-debug] [ debug] nell'applicazio
 ## <a name="application-integrity-protection"></a>Protezione dell'integrità dell'applicazione
 
 Oltre a proteggere il codice sorgente, è anche importante assicurare che l'applicazione sia usata come previsto.
-Gli utenti malintenzionati possono tentare di assumere il controllo dell'applicazione per aggirare i criteri di licenza (ad esempio, in caso di pirateria), per rubare o manipolare dati sensibili gestiti dall'applicazione o per modificare il comportamento dell'applicazione.
+Gli utenti malintenzionati possono tentare di assumere il controllo dell'applicazione per aggirare i criteri di licenza Microsoft (vale a dire, pirateria), per rubare o manipolare dati sensibili gestiti dall'applicazione o per modificare il comportamento dell'applicazione.
 
 Con Dotfuscator Community è possibile inserire il [codice di convalida dell'applicazione][checks] negli assembly, comprese misure [antimanomissione][tamper], [anti-debug][debug] e [anti-dispositivi rooted][root].
 Quando viene rilevato uno stato dell'applicazione non valido, il codice di convalida può [chiamare il codice dell'applicazione per risolvere la situazione nel modo appropriato][check-app].

@@ -1,49 +1,131 @@
 ---
 title: Controllo della versione di Team Foundation
-description: Connessione a Team Foundation Server o ad Azure DevOps Services con il controllo della versione di Team Foundation.
+description: Connessione da Visual Studio per Mac a Team Foundation Server/Azure DevOps con il controllo della versione di Team Foundation (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 09/05/2018
+ms.date: 04/28/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 73c068ed1fcd03564638961e3d4e6dce7f7d6ed2
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501233"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746330"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
 > [!NOTE]
-> Il supporto del controllo della versione di Team Foundation è attualmente in anteprima e alcune funzionalità non sono ancora completamente operative. Inviare il proprio feedback su eventuali problemi riscontrati alla [community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/41/index.html). Presto saranno disponibili altre modifiche.
+> Per ottenere un'esperienza ottimale di controllo della versione in macOS, è consigliabile usare Git invece del controllo della versione di Team Foundation (TFVC). Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere l'articolo [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
 
-Azure Repos offre due modelli di controllo della versione: Git, un controllo della versione distribuito, e il controllo della versione di Team Foundation, un controllo della versione centralizzato. Questo articolo offre una panoramica del controllo della versione di Team Foundation con Visual Studio per Mac e rappresenta un punto di partenza per l'uso di questo strumento.
+Azure Repos offre due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito, e il [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
+
+Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa TFVC per il controllo della versione, ecco alcune soluzioni che è possibile usare per accedere al codice sorgente ospitato in TFVC:
+
+* [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Connettersi al repository usando il client della riga di comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+* [Connettersi al controllo della versione di Team Foundation usando l'estensione di controllo della versione di Team Foundation (non supportata) per Visual Studio per Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
+
+Il resto di questo articolo illustra le opzioni elencate in precedenza.
 
 ## <a name="requirements"></a>Requisiti
 
-* Visual Studio Community, Professional o Enterprise per Mac versione 7.5 o successiva.
-* Azure DevOps Services o Team Foundation Server 2013 e versioni successive.
-* Un progetto in Azure DevOps Services o Team Foundation Server configurato per l'uso del controllo della versione di Team Foundation.
+* Visual Studio Community, Professional o Enterprise per Mac versione 7.8 e versioni successive.
+* Azure DevOps Services, Team Foundation Server 2013 e versioni successive o Azure DevOps Server 2018 e versioni successive.
+* Un progetto in Azure DevOps Services o Team Foundation Server/Azure DevOps Server configurato per l'uso del controllo della versione di Team Foundation.
 
-## <a name="installation"></a>Installazione
+## <a name="use-visual-studio-code-and-the-azure-repos-extension"></a>Usare Visual Studio Code e l'estensione Azure Repos
 
-In Visual Studio per Mac scegliere **Visual Studio > Estensioni** dal menu. Nella scheda **Raccolta** selezionare **Controllo della versione > Controllo della versione di Team Foundation per TFS e VSTS** e fare clic su **Installa**:
+Se si preferisce lavorare con un'interfaccia grafica per gestire i file nel controllo della versione, l'estensione Azure Repos per Visual Studio Code offre una soluzione supportata da Microsoft. Per iniziare, scaricare [Visual Studio Code](https://code.visualstudio.com) e quindi scoprire come [configurare l'estensione Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
+
+## <a name="connecting-using-the-team-explorer-everywhere-command-line-client"></a>Connessione tramite il client della riga di comando Team Explorer Everywhere (TEE-CLC)
+
+Se si ha familiarità con il Terminale macOS, il client della riga di comando Team Explorer Everywhere (TEE-CLC) offre un metodo supportato per la connessione all'origine nel controllo della versione di Team Foundation.
+
+È possibile seguire la procedura seguente per configurare la connessione al controllo della versione di Team Foundation ed eseguire il commit delle modifiche.
+
+### <a name="setting-up-the-tee-clc"></a>Configurare TEE-CLC
+
+Esistono due modi per configurare TEE-CLC.
+
+* Usare Homebrew per installare il client, o
+* Scaricare e installare manualmente il client
+
+La soluzione più semplice prevede l'**uso di HomeBrew**, ovvero una gestione pacchetti per macOS. Per eseguire l'installazione con questo metodo:
+
+1. Avviare l'applicazione Terminale di macOS.
+1. Installare Homebrew con il Terminale e seguendo le istruzioni riportate nella [home page di Homebrew](https://brew.sh/).
+1. Dopo aver installato Homebrew, eseguire il comando seguente dal Terminale: `brew install tee-clc`
+
+Per **configurare manualmente TEE-CLC**:
+
+1. [Scaricare la versione più recente di TEE-CLC](https://github.com/Microsoft/team-explorer-everywhere/releases) dalla pagina delle versioni del repository di GitHub per Team Explorer Everywhere (ad esempio tee-clc-14.134.0.zip al momento della stesura di questo articolo).
+1. Estrarre il contenuto del file ZIP in una cartella su disco.
+1. Aprire l'app Terminale di macOS e usare il comando `cd` per passare alla cartella usata nel passaggio precedente.
+1. Da questa cartella eseguire il comando `./tf` per verificare che il client della riga di comando possa essere eseguito. Potrebbe essere richiesto di installare Java o altre dipendenze.
+
+Dopo aver installato TEE-CLC, è possibile eseguire il comando `tf eula` per visualizzare e accettare il contratto di licenza per il client.
+
+Infine, per l'autenticazione nell'ambiente TFS/Azure DevOps, sarà necessario creare un token di accesso personale nel server. Altre informazioni sull'[autenticazione con token di accesso personali](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Quando si crea un token di accesso personale da usare con il controllo della versione di Team Foundation, assicurarsi di assegnare l'accesso completo quando si configura il token.
+
+### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Uso di TEE-CLC per la connessione al repository
+
+Per connettersi al codice sorgente, è innanzitutto necessario creare un'area di lavoro usando il comando `tf workspace`. I comandi seguenti, ad esempio, consentono la connessione a un'organizzazione in Azure DevOps Services chiamata "MyOrganization": 
+
+```bash
+export TF_AUTO_SAVE_CREDENTIALS=1
+tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
+```
+
+L'impostazione di ambiente `TF_AUTO_SAVE_CREDENTIALS` viene usata per salvare le credenziali in modo che non venga richiesto di immetterle più volte. Quando viene richiesto un nome utente, usare il token di accesso personale creato nella sezione precedente e una password vuota.
+
+Per creare un mapping dei file di origine in una cartella locale, si userà il `tf workfold` comando. Nell'esempio seguente verrà eseguito il mapping di una cartella denominata "WebApp.Services" dal progetto di controllo della versione di Team Foundation "MyRepository" e tale cartella verrà configurata per la copia nella cartella ~/Projects/ locale (ad esempio una cartella "Progetti" nella home directory degli utenti correnti).
+
+```bash
+tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/
+```
+
+Infine, si usa il comando seguente per ottenere i file di origine dal server e copiarli in locale:
+
+```bash
+tf get
+```
+
+### <a name="committing-changes-using-the-tee-clc"></a>Eseguire il commit delle modifiche tramite TEE-CLC
+
+Dopo aver apportato le modifiche ai file in Visual Studio per Mac, è possibile tornare al Terminale per archiviare le modifiche. Il comando `tf add` viene usato per aggiungere file all'elenco delle modifiche in sospeso da archiviare e il comando `tf checkin` esegue l'archiviazione effettiva nel server. Il comando `checkin` include parametri per aggiungere un commento o associare un elemento di lavoro correlato. Nel frammento di codice seguente vengono aggiunti tutti i file in una cartella `WebApp.Services`, in modo ricorsivo, al processo di archiviazione. Il codice viene quindi archiviato con un commento e associato a un elemento di lavoro con ID "42".
+
+```bash
+cd WebApp.Services
+tf add * /recursive
+tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind" -associate:42
+```
+
+Per altre informazioni sui comandi qui indicati o su altri comandi, è possibile usare il comando seguente dal Terminale:
+
+`tf help`
+
+## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Connettersi al controllo della versione di Team Foundation tramite l'estensione
+
+> [!NOTE]
+> Per ottenere un'esperienza ottimale di controllo della versione in macOS, è consigliabile usare Git invece del controllo della versione di Team Foundation (TFVC). Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere l'articolo [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
+
+La raccolta delle estensioni per Visual Studio per Mac include un'estensione del controllo della versione di Team Foundation che offre un supporto limitato per la connessione al controllo della versione di Team Foundation. L'estensione non è supportata e presenta numerosi problemi noti, quindi l'esperienza di uso potrebbe essere variabile.
+
+Per installare l'estensione, avviare Visual Studio per Mac e scegliere il menu **Visual Studio > Estensioni**. Nella scheda **Raccolta** selezionare **Controllo della versione > Controllo della versione di Team Foundation per TFS e Azure DevOps** e fare clic su **Installa**:
 
 ![Gestione estensioni](media/tfvc-install.png)
 
 Seguire i prompt per installare l'estensione. Al termine dell'installazione, riavviare l'IDE.
 
-## <a name="updating-the-extension"></a>Aggiornamento dell'estensione
+### <a name="updating-the-extension"></a>Aggiornamento dell'estensione
 
 Periodicamente vengono rilasciati aggiornamenti per l'estensione TFVC. Per accedere agli aggiornamenti, scegliere **Visual Studio > Estensioni...**  dal menu e selezionare la scheda **Aggiornamenti**. Selezionare l'estensione nell'elenco e premere il pulsante **Aggiorna**:
 
-![Visualizzazione dell'aggiornamento in Gestione estensioni](media/tfvc-update.png)
-
 Scegliere **Installa** nella finestra di dialogo successiva per disinstallare il pacchetto precedente e installare quello nuovo.
 
-## <a name="using-the-add-in"></a>Uso del componente aggiuntivo
+### <a name="using-the-extension"></a>Uso dell'estensione
 
 Dopo aver installato l'estensione, selezionare la voce di menu **Version Control > TFS/Azure DevOps > Open from Remote Repository** (Controllo della versione > TFS/Azure DevOps > Apri da repository remoto).
 
@@ -53,19 +135,19 @@ Scegliere VSTS o Team Foundation Server per iniziare e premere **Continue** (Con
 
 ![Connettersi con un server](media/tfvc-choose-server-type-devops.png)
 
-### <a name="azure-repos-authentication"></a>Autenticazione Azure Repos
+#### <a name="azure-repos-authentication"></a>Autenticazione Azure Repos
 
 Quando si seleziona un progetto ospitato in Azure Repos, viene richiesto di immettere i dati dell'account Microsoft:
 
 ![Connettersi con Azure Repos](media/tfvc-vsts-login.png)
 
-### <a name="tfs-authentication"></a>Autenticazione TFS
+#### <a name="tfs-authentication"></a>Autenticazione TFS
 
 Per connettersi a TFS, immettere i dettagli del server e le credenziali dell'account. Immettere un dominio per usare l'autenticazione NTLM oppure lasciare il campo vuoto per usare l'autenticazione di base. Selezionare **Aggiungi server**:
 
 ![Accedere a un server TFS](media/tfvc-login.png)
 
-## <a name="selecting-a-project"></a>Selezione di un progetto
+### <a name="selecting-a-project"></a>Selezione di un progetto
 
 Dopo aver eseguito l'autenticazione, è possibile visualizzare un elenco dei repository associati all'account nella finestra di dialogo **Apri dal controllo del codice sorgente**:
 
@@ -78,7 +160,7 @@ Questa finestra di dialogo è suddivisa nei nodi seguenti:
 
 È possibile eseguire ricerche e applicare filtri in base al nome di un progetto o di un'organizzazione.
 
-### <a name="adding-a-new-server"></a>Aggiunta di un nuovo server
+#### <a name="adding-a-new-server"></a>Aggiunta di un nuovo server
 
 Per aggiungere un nuovo server all'elenco, scegliere il pulsante **Aggiungi host** nella finestra di dialogo **Apri dal controllo del codice sorgente**:
 
@@ -88,7 +170,7 @@ Selezionare il provider dall'elenco e immettere le credenziali:
 
 ![Finestra di dialogo con l'opzione per il provider del controllo del codice sorgente](media/tfvc-add-new-creds-devops.png)
 
-## <a name="creating-a-new-workspace"></a>Creazione di una nuova area di lavoro
+### <a name="creating-a-new-workspace"></a>Creazione di una nuova area di lavoro
 
 Per iniziare a lavorare con un progetto, è necessaria un'_area di lavoro_. Se non è già disponibile un'area di lavoro, è possibile crearne una dalla casella combinata **Area di lavoro** nella finestra di dialogo **Apri dal controllo del codice sorgente**:
 
@@ -98,7 +180,7 @@ Impostare il nome e il percorso locale per la nuova area di lavoro e selezionare
 
 ![Immettere un nome e un percorso locale per la nuova area di lavoro](media/tfvc-local-workspace.png)
 
-## <a name="using-the-source-code-explorer"></a>Uso di Esplora controllo codice sorgente
+### <a name="using-the-source-code-explorer"></a>Uso di Esplora controllo codice sorgente
 
 Dopo aver creato un'area di lavoro e aver eseguito il mapping del progetto, è possibile iniziare a usare _Esplora controllo codice sorgente_.
 
@@ -118,7 +200,7 @@ Molte di queste azioni sono disponibili tramite i menu di scelta rapida del prog
 
 ![Azioni dei menu di scelta rapida di un progetto](media/tfvc-sourcecode-actions.png)
 
-## <a name="managing-workspaces"></a>Gestione delle aree di lavoro
+### <a name="managing-workspaces"></a>Gestione delle aree di lavoro
 
 Se non è ancora stata creata un'area di lavoro, come descritto nella sezione [Creazione di una nuova area di lavoro](#creating-a-new-workspace), Esplora controllo codice sorgente è vuoto:
 
@@ -145,9 +227,9 @@ Dopo aver configurato l'area di lavoro, è possibile modificarla o rimuoverla fa
 
 ![Gestisci aree di lavoro](media/tfvc-workspace4.png)
 
-## <a name="troubleshooting"></a>Risoluzione dei problemi
+## <a name="troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti
 
-### <a name="problems-using-basic-authentication"></a>Problemi relativi all'uso dell'autenticazione di base
+#### <a name="problems-using-basic-authentication"></a>Problemi relativi all'uso dell'autenticazione di base
 
 Le opzioni seguenti possono essere usate eseguire l'autenticazione in un server:
 
@@ -167,19 +249,19 @@ Per usare l'autenticazione di base è necessario abilitare le **credenziali di a
 
     ![Opzione delle impostazioni dei criteri selezionata](media/tfvc-auth.png)
 
-### <a name="i-do-not-see-anything-in-tfvc"></a>Nel controllo della versione di Team Foundation non viene visualizzato nulla
+#### <a name="i-do-not-see-anything-in-tfvc"></a>Nel controllo della versione di Team Foundation non viene visualizzato nulla
 
 Per configurare il controllo della versione di Team Foundation nel computer di sviluppo, **è necessario** creare un'area di lavoro, come descritto nella sezione [Gestione delle aree di lavoro](#managing-workspaces).
 
 In Esplora controllo codice sorgente premere il pulsante **Gestisci aree di lavoro**. Seguire la procedura per eseguire il mapping del progetto team a una cartella sul computer di sviluppo.
 
-### <a name="i-do-not-see-any--all-of-my-projects"></a>Non viene visualizzato alcun progetto
+#### <a name="i-do-not-see-any--all-of-my-projects"></a>Non viene visualizzato alcun progetto
 
 Dopo l'autenticazione viene visualizzato l'elenco dei progetti. Per impostazione predefinita, vengono visualizzati solo i progetti Team Foundation Server. Per visualizzare altri tipi di progetti, selezionare la casella "See all projects" (Visualizza tutti i progetti).
 
 Tenere presente che i progetti contenuti nel server non verranno visualizzati se non si hanno i privilegi corretti.
 
-#### <a name="i-am-getting-the-error-cannot-create-the-workspace-please-try-again"></a>Viene visualizzato l'errore "Cannot create the workspace. Please, try again" (Impossibile creare l'area di lavoro. Riprovare.)
+##### <a name="i-am-getting-the-error-cannot-create-the-workspace-please-try-again"></a>Viene visualizzato l'errore "Cannot create the workspace. Please, try again" (Impossibile creare l'area di lavoro. Riprovare.)
 
 Quando si tenta di [creare una nuova area di lavoro](#creating-a-new-workspace), verificare che siano soddisfatte le condizioni seguenti:
 
@@ -187,6 +269,6 @@ Quando si tenta di [creare una nuova area di lavoro](#creating-a-new-workspace),
 - Il nome deve essere composto da un massimo di 64 caratteri.
 - Il percorso locale non può essere usato da altre aree di lavoro.
 
-## <a name="see-also"></a>Vedere anche
+### <a name="see-also"></a>Vedere anche
 
 - [Sviluppare e condividere il codice in TFVC usando Visual Studio (in Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

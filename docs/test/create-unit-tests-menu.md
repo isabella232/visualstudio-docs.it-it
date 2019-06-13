@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba0edbabdac6eb0e0c391371b51151a5be1ecba
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965473"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745805"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Creare stub di metodo di unit test con il comando Crea unit test
 
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
 > [!NOTE]
-> Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
+> Il **crea Unit test** comando di menu è disponibile solo per codice gestito destinato a .NET Framework (ma non .NET Core).
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
 

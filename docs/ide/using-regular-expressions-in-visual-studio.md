@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fc2e1afa95c56dda79296a24f027fb93d62c585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821078"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747732"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
-usa [espressioni regolari di .NET Framework](/dotnet/standard/base-types/regular-expressions) per trovare e sostituire il testo.
+Visual Studio Usa [espressioni regolari di .NET](/dotnet/standard/base-types/regular-expressions) per trovare e sostituire il testo.
 
 ## <a name="replacement-patterns"></a>Modelli di sostituzione
 

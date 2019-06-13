@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb101dc1f272ae56ceb0058afb2806aec4154936
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945460"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747689"
 ---
 # <a name="toolbox"></a>Casella degli strumenti
 
@@ -33,7 +33,7 @@ La casella degli strumenti viene visualizzata insieme alle visualizzazioni delle
 > [!NOTE]
 > Per alcuni tipi di progetto, nella **casella degli strumenti** potrebbe non essere visualizzato alcun elemento.
 
-La versione di.NET Framework di destinazione del progetto influisce sul set di controlli visibili nella casella degli strumenti. È possibile impostare come destinazione per il progetto una versione diversa di .NET Framework dalle pagine delle proprietà del progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e quindi scegliere **Progetto** > **Proprietà nomeprogetto** nella barra dei menu. Nella scheda **Applicazione** usare l'elenco a discesa **Framework di destinazione**.
+La versione di .NET che il progetto è destinato anche interessa il set di controlli visibili nella casella degli strumenti. È possibile modificare la versione di framework di destinazione dalle pagine delle proprietà del progetto, se necessario. Selezionare il nodo del progetto in **Esplora soluzioni** e quindi scegliere **Progetto** > **Proprietà nomeprogetto** nella barra dei menu. Nella scheda **Applicazione** usare l'elenco a discesa **Framework di destinazione**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gestire la finestra della casella degli strumenti e i relativi controlli
 

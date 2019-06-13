@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615441"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745865"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedura: Creare uno unit test basato sui dati
 
@@ -89,7 +89,7 @@ public TestContext TestContext
 Nel metodo di test si accede ai dati tramite la proprietà dell'indicizzatore `DataRow` di `TestContext`.
 
 > [!NOTE]
-> .NET core non supporta l'attributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se si tenta di accedere ai dati di test in questo modo in un progetto di unit test .NET Core o per la piattaforma UWP, verrà visualizzato un errore simile a **"'TestContext' non contiene una definizione per 'DataRow' e non è stato trovato alcun metodo di estensione accessibile 'DataRow' che accetta un primo argomento di tipo 'TestContext'. Probabilmente manca una direttiva using o un riferimento all'assembly"**.
+> .NET core non supporta l'attributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se si tenta di accedere ai dati di test in questo modo in un progetto di unit test .NET Core o per la piattaforma UWP, verrà visualizzato un errore simile a **"'TestContext' non contiene una definizione per 'DataRow' e non è stato trovato alcun metodo di estensione accessibile 'DataRow' che accetta un primo argomento di tipo 'TestContext'. Probabilmente manca una direttiva using o un riferimento all'assembly"** .
 
 ## <a name="write-the-test-method"></a>Scrivere il metodo di test
 
@@ -179,4 +179,4 @@ Dopo avere corretto il metodo sottoposto a test ed eseguito nuovamente il test, 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
-- [Scrivere unit test per .NET Framework con il framework unit test di Microsoft per codice gestito](../test/unit-test-your-code.md)
+- [Scrivere unit test per .NET con il framework di unit test di Microsoft](../test/unit-test-your-code.md)

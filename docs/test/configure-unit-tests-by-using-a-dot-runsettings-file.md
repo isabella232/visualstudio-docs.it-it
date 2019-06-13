@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5030498702808dc9d41a5daa12520893c3de2627
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531995"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746562"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
-Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET Framework in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test.
+Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory per i risultati del test o i dati raccolti durante un'esecuzione dei test.
 
 I file di impostazioni esecuzione test sono facoltativi. Se non è richiesta una configurazione particolare, non sarà necessario alcun file con estensione *runsettings*. L'uso più comune di un file con estensione *runsettings* è la personalizzazione dell'[analisi code coverage](../test/customizing-code-coverage-analysis.md).
 

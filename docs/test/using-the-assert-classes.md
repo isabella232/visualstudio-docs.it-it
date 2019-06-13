@@ -11,12 +11,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d145734dc89faafcedbca6730f0a90da174376c4
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962010"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820320"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Usare classi Assert per il testing unità
 
@@ -45,7 +45,7 @@ L'eccezione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiv
 
 Se si scrive una nuova classe di eccezione Assert, ereditare la classe di base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> in modo da semplificare l'identificazione dell'eccezione come errore di asserzione, anziché come eccezione imprevista generata dal codice di test o di produzione.
 
-Decorare un metodo di test con l'attributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> quando si vuole che il metodo di test verifichi che un'eccezione di cui è prevista la generazione da parte di un metodo nel codice dell'applicazione sia effettivamente generata.
+Per verificare che in realtà viene generata un'eccezione previsto deve essere generata da un metodo nel codice dell'applicazione, usare il <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> (metodo).
 
 ## <a name="see-also"></a>Vedere anche
 
