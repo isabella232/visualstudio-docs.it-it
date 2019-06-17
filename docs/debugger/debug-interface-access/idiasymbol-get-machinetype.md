@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83156630aee0727502894b286f8c6823e25a5fe9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eef0507ccb7036748f5c9d36c9de521a17860a39
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399273"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032715"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 Recupera il tipo di CPU di destinazione.
@@ -33,7 +33,7 @@ HRESULT get_machineType ( 
 #### <a name="parameters"></a>Parametri
  `pRetVal`
 
-[out] Restituisce un valore di [enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumerazione che specifica il tipo di CPU di destinazione.
+[out] Restituisce un valore di [IMAGE_FILE_MACHINE _ costanti](/windows/desktop/SysInfo/image-file-machine-constants) che specifica il tipo di CPU di destinazione.
 
 ## <a name="return-value"></a>Valore restituito
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce `S_FALSE` o un codice di errore.
@@ -42,5 +42,5 @@ HRESULT get_machineType ( 
 > Valore restituito di `S_FALSE` significa che la proprietà non è disponibile per il simbolo.
 
 ## <a name="see-also"></a>Vedere anche
-- [Enumerazione CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)
+- [Costanti IMAGE_FILE_MACHINE _](/windows/desktop/SysInfo/image-file-machine-constants) 
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

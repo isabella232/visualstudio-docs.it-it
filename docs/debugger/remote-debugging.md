@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407762"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043321"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 È possibile eseguire il debug di un'applicazione Visual Studio che è stata distribuita in un computer diverso. A questo scopo si usa Visual Studio Remote Debugger.
@@ -93,7 +93,7 @@ Se sufficiente da scaricare e installare il debugger remoto e non sono necessari
      > [!IMPORTANT]
      > È possibile eseguire il debugger remoto con un account utente diverso dall'account utente in uso nel computer di Visual Studio, ma è necessario aggiungere l'account utente diverso alle autorizzazioni del debugger remoto.
 
-     In alternativa, è possibile avviare il debugger remoto dalla riga di comando con il **/Allow \<username >** parametro: **msvsmon /Allow \< username@computer>**.
+     In alternativa, è possibile avviare il debugger remoto dalla riga di comando con il **/Allow \<username >** parametro: **msvsmon /Allow \< username@computer>** .
 
 - Se è necessario modificare la modalità di autenticazione o il numero di porta oppure specificare un valore di timeout per remote tools: scegliere **strumenti > Opzioni**.
 

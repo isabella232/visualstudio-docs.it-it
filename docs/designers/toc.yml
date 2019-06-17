@@ -109,7 +109,7 @@
             - name: Panoramica
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: 'Passaggio 1: Creare un progetto Windows Forms application'
+            - name: 'Passaggio 1: Creare un progetto di Windows Forms Application'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
             - name: 'Passaggio 2: Eseguire il programma'
               href: ../ide/step-2-run-your-program.md

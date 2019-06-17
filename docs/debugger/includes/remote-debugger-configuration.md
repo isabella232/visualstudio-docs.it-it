@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839813"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043456"
 ---
 1. Nel computer remoto, trovare e avviare il **Remote Debugger** dalle **avviare** menu. 
    
    Se non hai le autorizzazioni amministrative nel computer remoto, fare doppio clic il **Remote Debugger** app e selezionare **Esegui come amministratore**. In caso contrario, semplicemente avviare normalmente.
 
-   Potrebbero esserci diverse versioni di *msvsmon.exe* nelle *x64*, *x32*, o altre cartelle. Assicurarsi di avviare la versione che necessaria per il debug dell'app. 
+   Se si prevede di collegare a un processo di cui è in esecuzione come amministratore o è in esecuzione in un altro utente dell'account (ad esempio IIS), fare doppio clic il **Remote Debugger** app e selezionare **Esegui come amministratore**. Per altre informazioni, vedere [eseguire il debugger remoto come amministratore](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
 1. La prima volta che si avvia il debugger remoto o in precedenza è stato configurato, il **configurazione debug remoto** verrà visualizzata la finestra di dialogo.  
   

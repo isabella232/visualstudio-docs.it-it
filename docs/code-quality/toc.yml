@@ -4,7 +4,7 @@
   items:
     - name: Panoramica
       href: code-analysis-for-managed-code-overview.md
-    - name: Analizzatori di Roslyn (analisi dell'origine)
+    - name: Analizzatori Roslyn (analisi del codice sorgente)
       items:
         - name: Panoramica
           displayName: 'roslyn analyzers, source analysis'
@@ -17,7 +17,7 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Domande frequenti
           href: analyzers-faq.md
-    - name: Analizzatori binari (analisi statica del codice)
+    - name: Analizzatori binari (analisi del codice statico)
       items:
         - name: Panoramica
           displayName: 'static code analysis, binary analysis'
@@ -34,15 +34,15 @@
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
             - name: Personalizzare il dizionario di analisi del codice
               href: how-to-customize-the-code-analysis-dictionary.md
-        - name: Eliminazione
+        - name: Eliminazione degli avvisi
           items:
             - name: Non visualizzare gli avvisi
               href: in-source-suppression-overview.md
             - name: Non visualizzare gli avvisi relativi all'analisi del codice generato
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Errori dell'applicazione di analisi del codice
+        - name: Errori nell'applicazione dell'analisi del codice
           items:
-            - name: Errori criteri analisi codice
+            - name: Errori dei criteri per l'analisi del codice
               href: code-analysis-policy-errors.md
             - name: Panoramica
               href: code-analysis-application-errors.md
@@ -115,7 +115,7 @@
               href: fxcop-analyzer-options.md
         - name: Domande frequenti
           href: fxcop-analyzers-faq.md
-    - name: Eseguire la migrazione dall'analisi statica per gli analizzatori FxCop
+    - name: Eseguire la migrazione dall'analisi statica agli analizzatori FxCop
       items:
         - name: Panoramica
           href: fxcop-analyzers.yml
@@ -127,7 +127,7 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Set di regole per pacchetti dell'analizzatore
           href: analyzer-rule-sets.md
-        - name: Configurare i set di regole
+        - name: Configurare set di regole
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Configurare l'analisi codice per un'app Web ASP.NET
           href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
@@ -139,11 +139,11 @@
       items:
         - name: Come creare o aggiornare i criteri di archiviazione
           href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementare criteri di controllo dell'analisi del codice
+        - name: Implementare criteri di archiviazione di analisi del codice
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Imporre codice facile da gestire
+        - name: Applicare codice gestibile
           href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Sincronizzare i set di regole del progetto con criteri di archiviazione
+        - name: Sincronizzare i set di regole del progetto con i criteri di archiviazione
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Compatibilità tra versioni
           href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -152,9 +152,9 @@
         - name: Panoramica
           displayName: code metrics
           href: code-metrics-values.md
-        - name: Generare dati di metrica codice
+        - name: Generare dati di metrica del codice
           href: how-to-generate-code-metrics-data.md
-        - name: Lavorare con dati di metrica codice
+        - name: Usare dati di metrica del codice
           href: working-with-code-metrics-data.md
     - name: Riferimenti
       items:
@@ -794,34 +794,34 @@
       href: demo-sample.md
     - name: Usare i controlli delle Linee guida di base di C++
       href: using-the-cpp-core-guidelines-checkers.md
-    - name: Impostare le proprietà di analisi codice
+    - name: Impostare le proprietà di analisi del codice
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Set di regole per codice C++
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-    - name: Uso delle annotazioni SAL per ridurre i difetti del codice
+    - name: Usare le annotazioni SAL per ridurre i difetti del codice
       items:
         - name: Panoramica
           displayName: SAL annotations
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
         - name: Informazioni su SAL
           href: understanding-sal.md
-        - name: Annotare i parametri di funzione e valori restituiti
+        - name: Aggiungere annotazioni per parametri di funzione e valori restituiti
           href: annotating-function-parameters-and-return-values.md
-        - name: Annotazione del comportamento della funzione
+        - name: Aggiungere annotazioni per il comportamento delle funzioni
           href: annotating-function-behavior.md
-        - name: Aggiungere annotazioni di struct e classi
+        - name: Aggiungere annotazioni per struct e classi
           href: annotating-structs-and-classes.md
-        - name: Annotazione del comportamento di blocco
+        - name: Aggiungere annotazioni per il comportamento di blocco
           href: annotating-locking-behavior.md
         - name: Specificare quando e dove applicare un'annotazione
           href: specifying-when-and-where-an-annotation-applies.md
         - name: Funzioni intrinseche
           href: intrinsic-functions.md
-        - name: Suggerimenti ed esempi (SAL)
+        - name: Procedure consigliate ed esempi (SAL)
           href: best-practices-and-examples-sal.md
-    - name: Specificare informazioni aggiuntive sul codice usando analysis_assume
+    - name: Specificare informazioni aggiuntive sul codice usando _Analysis_assume
       href: how-to-specify-additional-code-information-by-using-analysis-assume.md
-    - name: C++Avvisi di controllo linee guida per core
+    - name: 'Linee guida di base di C++: avvisi del controllo'
       items:
         - name: Panoramica
           displayName: C++ core guidelines checker warnings
@@ -980,7 +980,7 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
-    - name: C /C++ avvisi
+    - name: Avvisi C/C++
       items:
         - name: Panoramica
           displayName: C++ warnings

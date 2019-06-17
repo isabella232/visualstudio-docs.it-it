@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838480"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043531"
 ---
 # <a name="debugging-xslt"></a>Debug di fogli di stile XSLT (Extensible Stylesheet Language Transformation)
 
@@ -25,7 +25,7 @@ Per istruzioni, ignorandole o eseguendole di fuori di codice, è possibile esegu
 Una volta avviato il debug, nel debugger XSLT vengono aperte finestre di visualizzazione del documento di input e dell'output XSLT.
 
 > [!NOTE]
-> Il debugger XSLT è disponibile solo nell'edizione Enterprise di Visual Studio.
+> Il debugger XSLT è disponibile solo nelle edizioni Professional ed Enterprise di Visual Studio.
 
 ## <a name="debug-from-the-xml-editor"></a>Eseguire il debug dall'editor XML
 
