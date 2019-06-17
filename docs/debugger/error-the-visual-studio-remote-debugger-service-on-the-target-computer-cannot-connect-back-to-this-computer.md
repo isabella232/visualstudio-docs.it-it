@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850397"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043433"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Errore: Il servizio Visual Studio Remote Debugger nel computer di destinazione non è in grado di riconnettersi a questo computer
-Il messaggio di errore viene visualizzato per segnalare che l'account utente utilizzato per l'esecuzione del servizio Debugger remoto di Visual Studio non è in grado di eseguire l'autenticazione per la connessione al computer dal quale viene eseguito il debug.
+Questo errore indica che il servizio debugger remoto sia in esecuzione con un account utente che non è possibile eseguire l'autenticazione quando si tenta di connettersi al computer in cui sta eseguendo il debug. Questo errore può verificarsi quando il debug remoto tramite il motore di debug legacy e il debugger remoto è in esecuzione come servizio.
 
  Nella tabella riportata di seguito sono indicati gli account in grado di accedere al computer:
 

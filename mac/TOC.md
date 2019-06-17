@@ -72,7 +72,7 @@
 ## ASP.NET Core
 ### [Supporto di .NET Core](net-core-support.md)
 ### [Introduzione ad ASP.NET Core](asp-net-core.md)
-### [Compilazione di applicazioni in Visual Studio per Mac ASP.NET Core](building-asp-net-core.md)
+### [Creazione di applicazioni ASP.NET Core in Visual Studio per Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript e TypeScript](javascript.md)
 ## Azure
@@ -97,3 +97,6 @@
 ## [Segnalare un problema](report-a-problem.md)
 ## [Risoluzione dei problemi: Non è possibile visualizzare tutti i modelli](troubleshooting-no-templates.md)
 ## [Risoluzione dei problemi: Errori durante il recupero di informazioni sugli aggiornamenti](updater-troubleshooting.md)
+
+# [Note sulla versione](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Note sulla versione di anteprima](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
