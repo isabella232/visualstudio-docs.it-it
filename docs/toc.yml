@@ -226,11 +226,7 @@
             - name: 'Specificare l''icona di un''applicazione (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Impostare un framework come destinazione
-              items:
-                - name: Panoramica del multitargeting
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Scegliere una versione di .NET Framework di destinazione
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Creare modelli
               items:
                 - name: Creare modelli di progetto e di elementi
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Rinomina
                       href: ide/reference/rename.md
+                    - name: Istruzioni if di suddivisione o unione
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Spazio dei nomi di sincronizzazione e nome della cartella
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Sincronizzare tipo e nome file
                       href: ide/reference/sync-type-and-file.md
                     - name: Usare un tipo esplicito
