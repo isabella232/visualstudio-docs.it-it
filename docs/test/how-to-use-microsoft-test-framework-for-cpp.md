@@ -1,22 +1,22 @@
 ---
 title: Usare il framework di testing unità Microsoft per C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934480"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132134"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usare il framework di testing unità Microsoft per C++ in Visual Studio
 
-Per impostazione predefinita il framework di testing unità Microsoft per C++ è incluso nel carico di lavoro **Sviluppo di applicazioni desktop con C++**.
+Per impostazione predefinita il framework di testing unità Microsoft per C++ è incluso nel carico di lavoro **Sviluppo di applicazioni desktop con C++** .
 
 ## <a name="separate_project"></a> Per scrivere unit test in un progetto separato
 
@@ -28,9 +28,9 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
 1. Modificare le proprietà del progetto per includere le intestazioni e i file di libreria necessari per il testing unità.
 
-   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++**.
+   1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo di progetto del programma che si sta testando, quindi scegliere **Proprietà** > **Proprietà di configurazione** > **Directory di VC++** .
 
-   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>**. Aggiungere questi percorsi:
+   2. Fare clic sulla freccia GIÙ nelle righe seguenti e scegliere **\<Modifica>** . Aggiungere questi percorsi:
 
       | Directory | Proprietà |
       |-| - |
@@ -39,7 +39,7 @@ In alcuni casi, ad esempio durante il test di funzioni non esportate in una DLL,
 
 2. Aggiungere un file di unit test C++:
 
-   - Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **File di C++ (.cpp)**.
+   - Fare clic con il pulsante destro del mouse sul nodo di progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Nuovo elemento** > **File di C++ (.cpp)** .
 
 ## <a name="write-the-tests"></a>Scrivere i test
 
@@ -89,7 +89,7 @@ TEST_METHOD(Method1)
 
 I tratti predefiniti seguenti sono disponibili in `CppUnitTest.h`. Per altre informazioni, vedere le [informazioni di riferimento sulle API del framework di testing unità Microsoft per C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Description|
+|Macro|DESCRIZIONE|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Usare la macro TEST_METHOD_ATTRIBUTE per definire un tratto.|
 |`TEST_OWNER(ownerAlias)`|Usare il tratto Owner predefinito per specificare un proprietario del metodo di test.|

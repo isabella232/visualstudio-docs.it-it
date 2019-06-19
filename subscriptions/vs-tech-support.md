@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Supporto tecnico incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402022"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032800"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Attivare e usare il vantaggio Supporto tecnico nelle sottoscrizioni di Visual Studio
 
@@ -116,8 +116,8 @@ Per usare il vantaggio supporto tecnico della sottoscrizione di Visual Studio pe
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selezionato                                        | 2 eventi imprevisti                                                          |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 2 eventi imprevisti                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 2 eventi imprevisti                                               | Sì         |
-| Visual Studio Dev Essentials | N/D | Non disponibile |N/D|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+||
 
 <sup>1</sup> *Include: Imagine Premium, BizSpark. Non include: Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, Imagine Standard, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 

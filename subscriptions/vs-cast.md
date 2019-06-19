@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio CAST Highlight disponibile nelle sottoscrizioni di Visual Studio selezionate
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805334"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032888"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Vantaggio CAST Highlight nelle sottoscrizioni di Visual Studio
 
@@ -52,7 +52,7 @@ I sottoscrittori di Visual Studio Enterprise possono ottenere una sottoscrizione
    >
    > *La tua richiesta di attivazione e accesso a CAST Highlight è attualmente in fase di revisione. Ti ricontatteremo entro 48 ore.*
    >
-   > *Cordiali saluti,*
+   > *Cordiali saluti,* 
    > *XXX*
 
 Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di posta elettronica a conferma della corretta creazione dell'account e verrà chiesto di fare clic sul collegamento per l'attivazione per completare il processo di attivazione.
@@ -72,7 +72,7 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
    > - Esercitazione video - [Configurazione del portfolio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Esercitazione video - [Caricamento delle app](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Cordiali saluti,*
+   > *Cordiali saluti,* 
    > *XXX*
 
    > [!NOTE]
@@ -86,7 +86,6 @@ Dopo che la richiesta è stata approvata, si riceverà un secondo messaggio di p
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Non disponibile                                                             |  N/D          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
-| Visual Studio Dev Essentials | N/D  | Non disponibile | N/D |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 

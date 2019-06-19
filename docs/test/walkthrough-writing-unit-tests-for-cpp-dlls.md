@@ -1,18 +1,18 @@
 ---
 title: 'Procedura: Scrivere unit test per DLL C++'
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226284"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132160"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procedura: Scrivere unit test per DLL C++
 
@@ -38,7 +38,7 @@ Questa procedura dettagliata descrive come sviluppare una DLL C++ nativa usando 
 
 1. Nel menu **File** scegliere **Nuovo** > **Progetto**.
 
-     **Visual Studio 2017 e versioni precedenti**: Espandere **Installato** > **Modelli** > **Visual C++** > **Test**.
+     **Visual Studio 2017 e versioni precedenti**: Espandere **Installato** > **Modelli** > **Visual C++**  > **Test**.
      **Visual Studio 2019**: Impostare **Linguaggio** su C++ e digitare "test" nella casella di ricerca.
 
      Scegliere il modello **Progetto unit test nativo** o scegliere un qualsiasi altro framework installato. Se si sceglie un altro modello, ad esempio Google Test o Boost.Test, i principi di base sono gli stessi, cambiano però alcuni dettagli.
@@ -152,13 +152,9 @@ La procedura seguente illustra come creare un progetto DLL in Visual Studio 2017
 
 1. Aggiungere il progetto DLL ai riferimenti del progetto di test:
 
-   1. Aprire le proprietà del progetto di test e scegliere **Proprietà comuni** > **Framework e riferimenti**.
+   1. Fare clic con il pulsante destro del mouse sul nodo del progetto in **Esplora soluzioni** e scegliere **Aggiungi** > **Riferimento**.
 
-        ![Proprietà progetto C++ | Framework e riferimenti](../test/media/utecpp08.png)
-
-   2. Scegliere **Aggiungi nuovo riferimento**.
-
-        Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
+   2. Nella finestra di dialogo **Aggiungi riferimento** , selezionare il progetto DLL e scegliere **Aggiungi**.
 
         ![Proprietà progetto C++ | Aggiungi nuovo riferimento](../test/media/utecpp09.png)
 
