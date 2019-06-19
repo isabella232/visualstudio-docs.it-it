@@ -26,40 +26,40 @@ Contiene lo strumento di analisi del codice che è possibile scegliere di esegui
 
 ## <a name="uielement-list"></a>Elenco UIElement
 
- Abilitare Analysis\ codice
+ Abilita l'analisi del codice\
  Abilita o disabilita l'analisi del codice per il progetto.
 
- Progettare Rules\
+ Regole di progettazione\
  Abilita o disabilita le regole di progettazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Globalizzazione Rules\
+ Regole di globalizzazione\
  Abilita o disabilita le regole di globalizzazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Interoperabilità Rules\
+ Regole di interoperabilità\
  Abilita o disabilita le regole di interoperabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Manutenibilità Rules\
+ Regole di manutenibilità\
  Abilita o disabilita le regole di manutenibilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Mobilità Rules\
+ Regole di mobilità\
  Abilita o disabilita le regole di mobilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Denominazione Rules\
+ Regole di denominazione\
  Abilita o disabilita le regole di denominazione. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Prestazioni Rules\
+ Regole di prestazioni\
  Abilita o disabilita le regole per le prestazioni. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Portabilità Rules\
+ Regole di portabilità\
  Abilita o disabilita le regole di portabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Affidabilità Rules\
+ Regole di affidabilità\
  Abilita o disabilita le regole di affidabilità. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Sicurezza Rules\
+ Regole di sicurezza\
  Abilita o disabilita le regole di sicurezza. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
- Utilizzo Rules\
+ Regole di utilizzo\
  Abilita o disabilita le regole di utilizzo. È anche possibile espandere questa voce per abilitare o disabilitare singole regole.
 
 ## <a name="see-also"></a>Vedere anche

@@ -45,7 +45,7 @@ L'eccezione <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiv
 
 Se si scrive una nuova classe di eccezione Assert, ereditare la classe di base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> in modo da semplificare l'identificazione dell'eccezione come errore di asserzione, anziché come eccezione imprevista generata dal codice di test o di produzione.
 
-Per verificare che in realtà viene generata un'eccezione previsto deve essere generata da un metodo nel codice dell'applicazione, usare il <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> (metodo).
+Per verificare che un'eccezione di cui è prevista la generazione da parte di un metodo nel codice dell'applicazione sia effettivamente generata, usare il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>Vedere anche
 

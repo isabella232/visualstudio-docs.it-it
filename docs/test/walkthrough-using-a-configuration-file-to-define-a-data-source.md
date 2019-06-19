@@ -71,7 +71,7 @@ L'elemento **section** dovrebbe essere simile al seguente:
 ```
 
 > [!NOTE]
-> Il nome dell'assembly deve corrispondere alla versione che si sta utilizzando.
+> Il nome dell'assembly deve corrispondere alla versione in uso.
 
 ## <a name="define-connection-strings"></a>Definire le stringhe di connessione
 

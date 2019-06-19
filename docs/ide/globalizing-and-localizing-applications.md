@@ -24,7 +24,7 @@ ms.locfileid: "66820878"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Sviluppare app globalizzate e localizzate
 
-Visual Studio semplifica lo sviluppo per un pubblico internazionale facile, sfruttando i vantaggi dei servizi incorporate [.NET](/dotnet/standard/globalization-localization/).
+Visual Studio semplifica lo sviluppo di applicazioni internazionali grazie alla possibilità di sfruttare i servizi incorporati in [.NET](/dotnet/standard/globalization-localization/).
 
 Ad esempio, il sistema di progetto per app Windows Forms può generare file di risorse per le impostazioni cultura dell'interfaccia utente di fallback e ogni assembly di impostazioni cultura dell'interfaccia utente aggiuntivo. Quando si compila un progetto in Visual Studio, i file di risorse vengono compilati dal formato XML di Visual Studio (con estensione resx) in un formato binario intermedio (con estensione resources) e quindi incorporati in assembly satellite. Per altre informazioni, vedere [File di risorse in Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) e [Creare assembly satellite per applicazioni desktop](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
@@ -35,7 +35,7 @@ Ad esempio, il sistema di progetto per app Windows Forms può generare file di r
 > [!NOTE]
 > Per l'immissione e la visualizzazione delle lingue bidirezionali è necessario usare una versione di Windows configurata per la lingua appropriata. Può essere una versione di Windows in inglese con il Language Pack appropriato o una versione di Windows localizzata nella lingua desiderata.
 
-### <a name="apps-that-support-bidirectional-languages"></a>App che supportano le lingue bidirezionali
+### <a name="apps-that-support-bidirectional-languages"></a>App con supporto per le lingue bidirezionali
 
 - App di Windows
 

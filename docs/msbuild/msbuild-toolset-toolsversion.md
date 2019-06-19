@@ -48,7 +48,7 @@ Per lo sviluppo di un'applicazione, MSBuild usa un set di strumenti che comprend
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Funzionamento dell'attributo ToolsVersion
 
- Quando si crea un progetto in Visual Studio oppure si aggiorna un progetto esistente, nel file di progetto viene incluso automaticamente un attributo denominato `ToolsVersion` e il relativo valore corrisponde alla versione di MSBuild inclusa nell'edizione di Visual Studio. Per altre informazioni, vedere [Framework come destinazione Panoramica](../ide/visual-studio-multi-targeting-overview.md).
+ Quando si crea un progetto in Visual Studio oppure si aggiorna un progetto esistente, nel file di progetto viene incluso automaticamente un attributo denominato `ToolsVersion` e il relativo valore corrisponde alla versione di MSBuild inclusa nell'edizione di Visual Studio. Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../ide/visual-studio-multi-targeting-overview.md).
 
  Quando in un file di progetto viene definito un valore dell'attributo `ToolsVersion`, MSBuild usa tale valore per determinare i valori delle proprietà del set di strumenti disponibili per il progetto. Una delle proprietà del set di strumenti è `$(MSBuildToolsPath)`, che specifica il percorso degli strumenti di .NET Framework. Solo tale proprietà del set di strumenti (o `$(MSBuildBinPath)`) è necessaria.
 

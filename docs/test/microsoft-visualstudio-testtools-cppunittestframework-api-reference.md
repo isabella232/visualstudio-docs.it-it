@@ -1,5 +1,5 @@
 ---
-title: Microsoft.VisualStudio.TestTools.CppUnitTestFramework API
+title: API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -18,9 +18,9 @@ ms.locfileid: "66820773"
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
- I file di intestazione sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include**.
+ I file di intestazione sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
 
- I file lib sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib**.
+ I file lib sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 

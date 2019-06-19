@@ -19,7 +19,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747702"
 ---
-# <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda dati
+# <a name="toolbox-data-tab"></a>Casella degli strumenti, scheda Dati
 
 Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La scheda **Dati** della **Casella degli strumenti** viene visualizzata quando si crea un progetto a cui è associata una finestra di progettazione. Per impostazione predefinita, la **Casella degli strumenti** viene visualizzata nell'ambiente di sviluppo integrato di Visual Studio; se è necessario visualizzare la **Casella degli strumenti**, selezionare **Casella degli strumenti** dal menu **Visualizza**.
 
@@ -28,7 +28,7 @@ Visualizza gli oggetti dati che è possibile aggiungere a form e componenti. La 
 
 ## <a name="ui-element-list"></a>Elenco degli elementi dell'interfaccia utente
 
-Per passare direttamente alla pagina di riferimento .NET per un componente, premere **F1** sull'elemento nella **della casella degli strumenti** o sul componente nella barra della finestra di progettazione.
+Per passare direttamente alla pagina di riferimento di .NET per un componente, premere **F1** sull'elemento nella **Casella degli strumenti** o sul componente nella barra della finestra di progettazione.
 
 |nome|Description|
 |----------|-----------------|

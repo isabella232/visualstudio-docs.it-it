@@ -1,5 +1,5 @@
 ---
-title: Supporto per l'arabo ed ebraico
+title: Supporto per l'arabo e l'ebraico
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -21,14 +21,14 @@ ms.locfileid: "66824166"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Supporto per le lingue bidirezionali in Visual Studio
 
-Visual Studio di visualizzare correttamente testo arabo ed ebraico e consente di immettere testo bidirezionale per i valori e i nomi degli oggetti.
+Visual Studio può visualizzare correttamente il testo in arabo ed ebraico e consente di immettere testo bidirezionale per i valori e i nomi degli oggetti.
 
 > [!NOTE]
 > Per l'immissione e la visualizzazione delle lingue bidirezionali è necessario usare una versione di Windows configurata per la lingua appropriata. Può essere una versione di Windows in inglese con il Language Pack appropriato o una versione di Windows localizzata nella lingua desiderata.
 
 ## <a name="fully-supported-features"></a>Funzionalità con supporto completo
 
-In fase di progettazione in Visual Studio, è possibile usare le lingue bidirezionali durante l'immissione di testo, la denominazione degli oggetti e quando salvare e aprire i file.
+In fase di progettazione in Visual Studio, è possibile usare le lingue bidirezionali durante l'immissione di testo e l'assegnazione di nomi agli oggetti e quando si salvano e aprono i file.
 
 ### <a name="text-entry"></a>Voce di testo
 
@@ -38,7 +38,7 @@ Visual Studio supporta Unicode, pertanto, se il sistema è configurato con le im
 
 È possibile usare le lingue bidirezionali per assegnare nomi a soluzioni, progetti, file, cartelle e così via. Nel codice è possibile usare le lingue bidirezionali per i nomi di variabili, classi, oggetti, attributi, metadati e altri elementi. Quando si usa l'arabo è possibile usare qualsiasi carattere incluse le linee kashida e i segni diacritici.
 
-I seguenti elementi possono essere denominati in arabo o ebraico e vengano gestiti correttamente da Visual Studio:
+Gli elementi seguenti possono avere nomi in arabo o ebraico e vengono gestiti correttamente in Visual Studio:
 
 - Nomi di soluzioni, progetti e file, incluse le eventuali cartelle incluse nel percorso del progetto.
 
@@ -50,7 +50,7 @@ I seguenti elementi possono essere denominati in arabo o ebraico e vengano gesti
 
 - Elementi di dati.
 
-   **Esplora server** visualizzi correttamente questi elementi e di modificarle.
+   In **Esplora server** questi elementi vengono visualizzati correttamente e possono essere modificati.
 
 - Elementi copiati negli Appunti di Windows.
 
@@ -72,15 +72,15 @@ I seguenti elementi possono essere denominati in arabo o ebraico e vengano gesti
 
 - Commenti del codice. È possibile creare commenti in arabo o in ebraico. È possibile usare queste lingue anche nello strumento per la generazione di commenti.
 
-### <a name="file-encoding"></a>Codifica file
+### <a name="file-encoding"></a>Codifica dei file
 
 È possibile salvare e aprire file con codifica Unicode o specifica della lingua. Per altre informazioni, vedere [Procedura: Salvare e aprire file con codifica](../ide/how-to-save-and-open-files-with-encoding.md).
 
 ## <a name="right-to-left-reading-order"></a>Ordine di lettura da destra a sinistra
 
-Visual Studio offre supporto limitato per ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. È ad esempio possibile premere **CTRL**+**MAIUSC destro** per impostare il supporto dell'ordine di lettura da destra a sinistra per i valori delle proprietà nella finestra **Proprietà**.
+Visual Studio offre supporto limitato per l'ordine di lettura da destra a sinistra. Per impostazione predefinita i controlli per l'immissione di testo in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. È ad esempio possibile premere **CTRL**+**MAIUSC destro** per impostare il supporto dell'ordine di lettura da destra a sinistra per i valori delle proprietà nella finestra **Proprietà**.
 
-Ordine di lettura da destra a sinistra non è supportato nelle posizioni seguenti in Visual Studio:
+L'ordine di lettura da destra a sinistra non è supportato nelle posizioni seguenti in Visual Studio:
 
 - Le caselle di controllo, gli elenchi a discesa e gli altri controlli delle finestre di dialogo di Visual Studio usano sempre l'ordine di lettura da sinistra a destra.
 
@@ -88,4 +88,4 @@ Ordine di lettura da destra a sinistra non è supportato nelle posizioni seguent
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Sviluppare App localizzate e globalizzate](globalizing-and-localizing-applications.md)
+- [Sviluppare app globalizzate e localizzate](globalizing-and-localizing-applications.md)

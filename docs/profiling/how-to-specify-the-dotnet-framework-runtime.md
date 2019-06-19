@@ -20,13 +20,13 @@ ms.locfileid: "66746428"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>Procedura: Specificare il runtime di .NET Framework
 
-Con la versione di .NET Framework 4, le applicazioni possono essere composte di moduli che sono stati compilati usando versioni diverse di run-time di .NET Framework. Per impostazione predefinita, gli strumenti di profilatura di Visual Studio profilano il primo runtime caricato dall'applicazione. È possibile specificare il runtime di cui eseguire la profilatura quando si avvia un'applicazione con il profiler e quando si connette il profiler a un'applicazione già in esecuzione.
+Con il rilascio di .NET Framework 4, le applicazioni possono essere costituite da moduli compilati usando versioni diverse del runtime di .NET Framework. Per impostazione predefinita, gli strumenti di profilatura di Visual Studio profilano il primo runtime caricato dall'applicazione. È possibile specificare il runtime di cui eseguire la profilatura quando si avvia un'applicazione con il profiler e quando si connette il profiler a un'applicazione già in esecuzione.
 
 ## <a name="to-specify-the-net-framework-run-time-to-profile-when-starting-an-application-with-the-profiler"></a>Per specificare il runtime di .NET Framework da profilare quando si avvia un'applicazione con il profiler
 
 1. In **Esplora prestazioni** fare clic con il pulsante destro del mouse sulla sessione di prestazioni, scegliere **Proprietà** e quindi fare clic su **Avanzate**.
 
-     Il **versione CLR di destinazione** finestra visualizzata nell'elenco **automatica** e le versioni di runtime di .NET Framework installate nel computer.
+     Nella casella di riepilogo **Versione CLR di destinazione** viene visualizzato **Automatico** insieme alle versioni del runtime di .NET Framework installate nel computer.
 
 2. Effettuare uno dei passaggi indicati di seguito.
 
@@ -40,7 +40,7 @@ Con la versione di .NET Framework 4, le applicazioni possono essere composte di 
 
 2. Nella finestra di dialogo **Connettere profiler a processo** fare clic sul processo da profilare.
 
-     Il **versione CLR di destinazione** casella di riepilogo s **automatica** e le versioni di runtime di .NET Framework installate nel computer.
+     Nella casella di riepilogo **Versione CLR di destinazione** viene visualizzato **Automatico** insieme alle versioni del runtime di .NET Framework installate nel computer.
 
 3. Effettuare uno dei passaggi indicati di seguito.
 

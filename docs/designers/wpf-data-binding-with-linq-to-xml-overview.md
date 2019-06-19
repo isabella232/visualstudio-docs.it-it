@@ -21,7 +21,7 @@ In questo argomento vengono brevemente descritte le funzionalità dinamiche di a
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML e LINQ to XML
 
-Il linguaggio Extensible Application Markup Language (XAML) è un sottolinguaggio XML creato da Microsoft per supportare le tecnologie .NET. Viene usato in WPF per rappresentare elementi dell'interfaccia utente e funzionalità correlate, ad esempio eventi e data binding. In Windows Workflow Foundation, XAML viene usato per rappresentare la struttura del programma, ad esempio il controllo del programma (*flussi di lavoro*). XAML consente la separazione di aspetti dichiarativi di una tecnologia dal codice procedurale correlato che definisce il comportamento più personalizzato di un programma.
+XAML (Extensible Application Markup Language) è un sottolinguaggio XML creato da Microsoft per supportare le tecnologie .NET. Viene usato in WPF per rappresentare elementi dell'interfaccia utente e funzionalità correlate, ad esempio eventi e data binding. In Windows Workflow Foundation, XAML viene usato per rappresentare la struttura del programma, ad esempio il controllo del programma (*flussi di lavoro*). XAML consente la separazione di aspetti dichiarativi di una tecnologia dal codice procedurale correlato che definisce il comportamento più personalizzato di un programma.
 
 XAML e LINQ to XML possono interagire in due modi:
 

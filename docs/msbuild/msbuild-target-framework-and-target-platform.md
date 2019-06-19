@@ -19,7 +19,7 @@ ms.locfileid: "66747393"
 È possibile compilare un progetto per eseguirlo in un *framework di destinazione*, che è una versione particolare di .NET Framework e una *piattaforma di destinazione*, che è un'architettura software particolare.  Ad esempio, è possibile impostare un'applicazione come destinazione per eseguirla in .NET Framework 2.0 su una piattaforma a 32 bit compatibile con la famiglia di processori 802x86 ("x86"). La combinazione di framework di destinazione e piattaforma di destinazione è nota come *contesto di destinazione*.
 
 ## <a name="target-framework-and-profile"></a>Profilo e framework di destinazione
- Un framework di destinazione è una versione particolare di .NET Framework che il progetto viene compilato per l'esecuzione in. La specifica di un framework di destinazione è necessaria perché abilita le funzionalità del compilatore e i riferimenti dell'assembly che sono esclusivi di quella versione di framework.
+ Un framework di destinazione è una versione particolare di .NET Framework in cui il proprio progetto è compilato per essere eseguito. La specifica di un framework di destinazione è necessaria perché abilita le funzionalità del compilatore e i riferimenti dell'assembly che sono esclusivi di quella versione di framework.
 
  Le versioni seguenti di .NET Framework sono attualmente disponibili per l'uso:
 

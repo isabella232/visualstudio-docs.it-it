@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747314"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly (attività)
-Legge i metadati all'interno dell'assembly specificato e aggiunge le voci necessarie nel Registro di sistema, che consente ai client COM di creare classi di .NET Framework in modo trasparente. Il comportamento di questa attività è simile, ma non identico, a quello di [Regasm.exe (strumento di registrazione dell'assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
+Legge i metadati all'interno dell'assembly specificato e aggiunge le voci necessarie al Registro di sistema, consentendo ai client COM di creare classi .NET Framework in modo trasparente. Il comportamento di questa attività è simile, ma non identico, a quello di [Regasm.exe (strumento di registrazione dell'assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
 
 ## <a name="parameters"></a>Parametri
  Nella tabella che segue vengono descritti i parametri dell'attività `RegisterAssembly` .

@@ -179,4 +179,4 @@ Dopo avere corretto il metodo sottoposto a test ed eseguito nuovamente il test, 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire unit test con Esplora test](../test/run-unit-tests-with-test-explorer.md)
-- [Scrivere unit test per .NET con il framework di unit test di Microsoft](../test/unit-test-your-code.md)
+- [Scrittura di unit test per .NET con il framework di unit test Microsoft per il codice gestito](../test/unit-test-your-code.md)

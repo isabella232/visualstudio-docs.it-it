@@ -15,7 +15,7 @@ ms.locfileid: "66820618"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
-NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET ed è integrato in Visual Studio per Mac e Visual Studio in Windows. È possibile cercare e aggiungere i pacchetti per Xamarin, i progetti .NET Core e ASP.NET mediante l'IDE.
+NuGet è il più diffuso strumento di gestione pacchetti per lo sviluppo .NET ed è integrato in Visual Studio per Mac e Visual Studio in Windows. È possibile cercare e aggiungere pacchetti nei progetti Xamarin, NET Core e ASP.NET usando entrambi gli IDE.
 
 Questo articolo descrive come includere un pacchetto NuGet in un progetto e illustra la catena di strumenti che rende facile il processo.
 
@@ -31,7 +31,7 @@ Creare prima di tutto un progetto denominato `HelloNuget`, come illustrato di se
 
 ## <a name="adding-a-package"></a>Aggiunta di un pacchetto
 
-Con il progetto aperto in Visual Studio per Mac, fare clic sui **pacchetti** cartella la **riquadro della soluzione** e selezionare **Aggiungi pacchetti NuGet**:
+Con il progetto aperto in Visual Studio per Mac, fare clic con il pulsante destro del mouse sulla cartella **Pacchetti** nel **riquadro della soluzione** e scegliere **Aggiungi pacchetti NuGet**:
 
 ![Azione di contesto di aggiunta di un nuovo pacchetto NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Quando la finestra viene visualizzata, carica un elenco di pacchetti dall'origin
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio  `azure mobile`. Dopo aver trovato un pacchetto che si vuole usare, selezionarla, quindi scegliere il **Aggiungi pacchetto** pulsante per avviare l'installazione.
+Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio  `azure mobile`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante  **Aggiungi pacchetto**  per avviare l'installazione.
 
-![Aggiungere il pacchetto NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+![Aggiungere un pacchetto NuGet di Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzione verrà modificata come illustrato di seguito:
 
@@ -77,7 +77,7 @@ Fare clic con il pulsante destro del mouse su **Pacchetti** per accedere al menu
 
 ![Menu Pacchetti](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Aggiungere i pacchetti NuGet** -apre la finestra per aggiungere altri pacchetti al progetto.
+*   **Aggiungi pacchetti NuGet** - Apre la finestra per aggiungere altri pacchetti al progetto.
 *   **Aggiorna** - Controlla il server di origine per ogni pacchetto e scarica le eventuali versioni più recenti.
 *   **Ripristina** - Scarica tutti i pacchetti mancanti (senza aggiornare i pacchetti esistenti alle versioni più recenti).
 

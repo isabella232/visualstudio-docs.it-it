@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747834"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET Framework e raccogliere dati di memoria tramite la riga di comando del profiler
-Questo articolo descrive come usare [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] strumenti da riga di comando degli strumenti di profilatura per instrumentare un .NET Framework del servizio e raccogliere dati sull'utilizzo di memoria. È possibile raccogliere i dati di allocazione della memoria oppure i dati di allocazione della memoria e i dati di durata degli oggetti.
+Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] per instrumentare un servizio .NET Framework e raccogliere dati di memoria. È possibile raccogliere i dati di allocazione della memoria oppure i dati di allocazione della memoria e i dati di durata degli oggetti.
 
 > [!NOTE]
 > Le funzionalità di sicurezza avanzate di Windows 8 e Windows Server 2012 hanno richiesto modifiche significative riguardo alla modalità di raccolta dei dati su queste piattaforme da parte del profiler di Visual Studio. Le app UWP richiedono anche nuove tecniche di raccolta. Vedere [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md) (Strumenti per le prestazioni nelle applicazioni Windows 8 e Windows Server 2012).
@@ -27,9 +27,9 @@ Questo articolo descrive come usare [!INCLUDE[vsprvs](../code-quality/includes/v
 > Per ottenere il percorso degli strumenti di profilatura, vedere [Specificare il percorso degli strumenti da riga di comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Nei computer a 64 bit sono disponibili sia la versione a 32 bit che la versione a 64 bit degli strumenti. Per usare gli strumenti da riga di comando del profiler, è necessario aggiungere il percorso degli strumenti alla variabile di ambiente PATH della finestra del prompt dei comandi oppure aggiungerlo al comando stesso.
 
 ## <a name="start-the-profiling-session"></a>Avviare la sessione di profilatura
- Per raccogliere i dati sulle prestazioni da un servizio .NET Framework, si utilizza il [VSPerfCLREnv. cmd](../profiling/vsperfclrenv.md) dello strumento per inizializzare le variabili di ambiente appropriate e il [VSInstr.exe](../profiling/vsinstr.md) lo strumento per creare un instrumentato copia del file binario del servizio.
+ Per raccogliere dati sulle prestazioni da un servizio .NET Framework, usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente appropriate e lo strumento [VSInstr.exe](../profiling/vsinstr.md) per creare una copia instrumentata del file binario del servizio.
 
- Per configurare il computer che ospita il servizio per la profilatura è necessario riavviarlo. È necessario anche avviare il servizio manualmente da Gestione controllo servizi. Quindi avviare il profiler e quindi avviare il servizio di .NET Framework.
+ Per configurare il computer che ospita il servizio per la profilatura è necessario riavviarlo. È necessario anche avviare il servizio manualmente da Gestione controllo servizi. Avviare il profiler e quindi il servizio .NET Framework.
 
  Quando viene eseguito il componente instrumentato, i dati di memoria vengono raccolti automaticamente in un file di dati. È possibile sospendere e riprendere la raccolta dei dati durante la sessione di profilatura.
 

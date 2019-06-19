@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747238"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per il Visualizzatore risultati Test prestazioni Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedura: Creare un componente aggiuntivo per il Visualizzatore risultati test prestazioni Web
 
 È possibile estendere l'interfaccia utente per il **Visualizzatore risultati test prestazioni Web** usando gli spazi dei nomi seguenti:
 
@@ -256,7 +256,7 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul nodo del progetto WebPerfTestResultsViewerControl e selezionare **Proprietà**.
 
-2. Selezionare il **Application** scheda e quindi scegliere il **framework di destinazione** elenco a discesa e selezionare **.NET Framework 4** (o versione successiva). Chiudi il **proprietà** finestra.
+2. Selezionare la scheda **Applicazione**, scegliere l'elenco a discesa **Framework di destinazione** e selezionare **.NET Framework 4** (o versioni successive). Chiudere la finestra **Proprietà**.
 
    Questa operazione è necessaria per supportare i riferimenti DLL necessari per l'estensione del **Visualizzatore risultati test prestazioni Web**.
 
@@ -314,13 +314,13 @@ Il componente aggiuntivo per Visual Studio creato nella procedura precedente fa 
 
 4. Scegliere **OK**.
 
-## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Eseguire il test delle prestazioni web utilizzando il Visualizzatore risultati Test Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Eseguire il test delle prestazioni Web usando il Visualizzatore risultati test prestazioni Web
 
 1. Eseguire il test delle prestazioni Web. Nel **Visualizzatore risultati test prestazioni Web** verrà visualizzata la nuova scheda del componente aggiuntivo WebPerfTestResultsViewerAddin, denominata Esempio.
 
 2. Scegliere la scheda per visualizzare le proprietà presentate nell'oggetto DataGridView.
 
-## <a name="net-security"></a>Sicurezza di .net
+## <a name="net-security"></a>Protezione .NET
 
 Per migliorare la sicurezza e impedire l'attivazione automatica di componenti aggiuntivi dannosi, Visual Studio offre impostazioni in una pagina **Opzioni** del menu Strumenti denominata **Sicurezza macro/componenti aggiuntivi**.
 

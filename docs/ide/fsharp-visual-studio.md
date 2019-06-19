@@ -60,7 +60,7 @@ La tabella seguente riepiloga le funzionalità delle proprietà del progetto per
 
 |Pagina Creazione progetti|Collegamenti correlati|Description|
 | - |-------------|-----------|
-|Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni a livello di applicazione e proprietà, ad esempio se si sta creando una libreria o un file eseguibile, quale versione di .NET l'applicazione è destinata a e informazioni su dove vengono archiviati i file di risorse utilizzato dall'applicazione.|
+|Applicazione|[Pagina Applicazione, Creazione progetti](reference/application-page-project-designer-csharp.md)|Consente di specificare le impostazioni e le proprietà a livello di applicazione, ad esempio se si sta creando una libreria o un file eseguibile, nonché la versione di .NET a cui è destinata l'applicazione e informazioni sulla posizione di archiviazione dei file di risorse usati dall'applicazione stessa.|
 |Compilazione|[Pagina Compilazione, Progettazione progetti](reference/build-page-project-designer-csharp.md)|Consente di controllare la modalità di compilazione del codice.|
 |Eventi di compilazione|[Pagina Eventi di compilazione, Creazione progetti](reference/build-events-page-project-designer-csharp.md)|Consente di specificare i comandi da eseguire prima o dopo una compilazione.|
 |Debug|[Pagina Debug, Creazione progetti](reference/debug-page-project-designer.md)|Consente di controllare la modalità di esecuzione dell'applicazione durante il debug, ad esempio i comandi da usare e la directory iniziale dell'applicazione, ed eventuali modalità di debug speciali da abilitare, ad esempio codice nativo e SQL.|
@@ -89,7 +89,7 @@ F# supporta le funzionalità seguenti degli editor di codice e di testo di Visua
 |Modifica del rientro|Consente di impostare o annullare un rientro per le righe selezionate.|Sì|
 |Rientro automatico|Applica e annulla il rientro del cursore in base alle regole di ambito F#.|Sì|
 |[Ricerca e sostituzione di testo](finding-and-replacing-text.md)|Consente di eseguire la ricerca in un file, in un progetto o in una soluzione, con la possibilità di modificare il testo.|Sì|
-|Vai a definizione per l'API .NET|Quando il cursore è posizionato su un'API .NET, Mostra il codice generato dai metadati di .NET.|No|
+|Vai a definizione per l'API .NET|Quando il cursore è posizionato su un'API .NET, visualizza il codice generato dai metadati di .NET.|No|
 |Passaggio alla definizione per un'API definita dall'utente|Quando il cursore è posizionato su un'entità di programma definita dall'utente, sposta il cursore nella posizione all'interno del codice in cui l'entità è definita.|Sì|
 |Vai alla riga|Consente di passare a una riga specifica in un file, in base al numero di riga.|Sì|
 |Barre di spostamento nella parte superiore del file|Consente di passare a posizioni specifiche all'interno del codice, ad esempio a un nome di funzione.|Sì|

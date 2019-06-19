@@ -52,7 +52,7 @@ Per attività più semplici l'IDE per Visual Studio e Blend per Visual Studio co
 
 - **Team Explorer:** con Team Explorer è possibile gestire i progetti con repository GIT o TFS per agevolare la collaborazione tra team. Vedere [Lavorare in Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** è possibile gestire pacchetti NuGet in Visual Studio e in Blend per Visual Studio. NuGet è un pacchetto di gestione per .NET che semplifica l'installazione e rimozione dei pacchetti da una soluzione.
+- **NuGet:** è possibile gestire pacchetti NuGet in Visual Studio e in Blend per Visual Studio. NuGet è una gestione pacchetti per .NET che semplifica l'installazione e la rimozione dei pacchetti da una soluzione.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Funzionalità avanzate di Blend per Visual Studio
 

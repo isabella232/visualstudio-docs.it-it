@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747810"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Raccogliere dati di memoria da servizi .NET Framework tramite la riga di comando del profiler
-In questa sezione descrive le procedure e le opzioni per la raccolta dei dati sulla durata degli oggetti per un servizio .NET Framework usando il metodo di campionamento dalla riga di comando e allocazione di memoria.
+Questa sezione descrive le procedure e le opzioni per la raccolta di dati sull'allocazione della memoria e sulla durata degli oggetti per i servizi .NET Framework tramite il metodo di campionamento dalla riga di comando.
 
 ## <a name="common-tasks"></a>Attività comuni
 

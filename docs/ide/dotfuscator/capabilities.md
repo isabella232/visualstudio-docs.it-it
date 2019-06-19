@@ -37,7 +37,7 @@ Dotfuscator Community supporta una vasta gamma di tipi assembly e applicazioni .
 ## <a name="intellectual-property-protection"></a>Protezione della proprietà intellettuale
 
 La progettazione, il comportamento e l'implementazione di un'applicazione sono tipi di proprietà intellettuale (IP).
-Tuttavia, le applicazioni create per .NET sono essenzialmente aprire documentazione; è possibile decompilare gli assembly .NET, facilmente [in quanto contengono metadati di alto livello e codice intermedio][assemblies].
+Le applicazioni create per .NET, tuttavia, sono di fatto molto intuitive. È infatti piuttosto facile decompilare gli assembly .NET, [in quanto contengono metadati di alto livello e codice intermedio][assemblies].
 
 Dotfuscator Community include funzionalità di [offuscamento .NET][obfuscation] di base sotto forma di [ridenominazione][renaming].
 L'offuscamento del codice con Dotfuscator riduce il rischio di accesso non autorizzato al codice sorgente tramite reverse engineering, impedendo che informazioni importanti sulla denominazione rimangano pubbliche.
@@ -50,7 +50,7 @@ Dotfuscator può inserire un [comportamento anti-debug] [ debug] nell'applicazio
 ## <a name="application-integrity-protection"></a>Protezione dell'integrità dell'applicazione
 
 Oltre a proteggere il codice sorgente, è anche importante assicurare che l'applicazione sia usata come previsto.
-Gli utenti malintenzionati possono tentare di assumere il controllo dell'applicazione per aggirare i criteri di licenza Microsoft (vale a dire, pirateria), per rubare o manipolare dati sensibili gestiti dall'applicazione o per modificare il comportamento dell'applicazione.
+Gli utenti malintenzionati possono tentare di assumere il controllo dell'applicazione per aggirare i criteri di licenza (ad esempio, in caso di pirateria), per rubare o manipolare dati sensibili gestiti dall'applicazione o per modificare il comportamento dell'applicazione.
 
 Con Dotfuscator Community è possibile inserire il [codice di convalida dell'applicazione][checks] negli assembly, comprese misure [antimanomissione][tamper], [anti-debug][debug] e [anti-dispositivi rooted][root].
 Quando viene rilevato uno stato dell'applicazione non valido, il codice di convalida può [chiamare il codice dell'applicazione per risolvere la situazione nel modo appropriato][check-app].

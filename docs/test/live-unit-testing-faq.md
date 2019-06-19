@@ -33,7 +33,7 @@ Live Unit Testing è compatibile con i tre framework di testing unità elencati 
 |Framework di test  |Versione minima dell'adattatore di Visual Studio  |Versione minima del framework  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio versione 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |NUnit3TestAdapter version 3.7.0 |NUnit versione 3.5.0 |
+|NUnit |NUnit3TestAdapter versione 3.7.0 |NUnit versione 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Se si hanno progetti di test basati su MSTest meno recenti che fanno riferimento a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e non si vuole passare ai pacchetti NuGet MSTest più recenti, eseguire l'aggiornamento a Visual Studio 2017 versione 15.4 o successiva.

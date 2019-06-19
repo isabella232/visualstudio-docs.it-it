@@ -1,6 +1,6 @@
 ---
 title: Eseguire unit test ed eseguirne il debug con Esplora test
-description: Informazioni su come eseguire test con Esplora Test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
+description: Informazioni sull'esecuzione di test con Esplora test in Visual Studio. Questo argomento illustra come abilitare l'esecuzione automatica dei test dopo la compilazione, visualizzare i risultati dei test, raggruppare e filtrare l'elenco dei test, creare playlist, eseguire il debug dei test e usare tasti di scelta rapida per i test.
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:

@@ -38,7 +38,7 @@ Per aggiungere un riferimento, fare clic con il pulsante destro del mouse sul no
 
 È possibile aggiungere un riferimento ai seguenti tipi di componenti e servizi:
 
-- Librerie di classi .NET o assembly
+- Librerie di classi o assembly .NET
 
 - App UWP
 
@@ -101,11 +101,11 @@ Se si distribuisce un'applicazione che contiene un riferimento a un componente p
 
 Per impostazione predefinita, la proprietà <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> è impostata su **False** se l'assembly o il componente si trova nella Global Assembly Cache o un componente del framework. In caso contrario, il valore è impostato su **True**. I riferimenti da progetto a progetto sono sempre impostati su **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Fare riferimento a un progetto o assembly che ha come destinazione una versione diversa di .NET
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Riferimento a un progetto o a un assembly destinato a una versione diversa di .NET
 
-È possibile creare applicazioni che fanno riferimento a progetti o assembly destinati a una versione diversa di .NET. Ad esempio, è possibile creare un'applicazione destinata a .NET Framework 4.6 che fa riferimento a un assembly destinato a .NET Framework 4.5. Se si crea un progetto destinato a una versione precedente di .NET, è possibile impostare un riferimento nel progetto per un progetto o assembly che ha come destinazione una versione più recente.
+È possibile creare applicazioni che fanno riferimento a progetti o assembly destinati a una versione diversa di .NET. Ad esempio, è possibile creare un'applicazione destinata a .NET Framework 4.6 che fa riferimento a un assembly destinato a .NET Framework 4.5. Se si crea un progetto destinato a una versione precedente di .NET, in tale progetto non è possibile impostare un riferimento a un progetto o a un assembly destinato a una versione più recente.
 
-Per altre informazioni, vedere [Framework come destinazione Panoramica](../ide/visual-studio-multi-targeting-overview.md).
+Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Riferimenti da progetto a progetto
 

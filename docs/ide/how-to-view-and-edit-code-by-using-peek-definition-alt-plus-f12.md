@@ -18,9 +18,9 @@ ms.locfileid: "66747329"
 
 È possibile usare il comando **Visualizza definizione** per visualizzare e modificare il codice senza uscire dal codice in fase di scrittura. **Visualizza definizione** e **Vai a definizione** visualizzano le stesse informazioni, ma **Visualizza definizione** mostra il codice in una finestra popup e **Vai a definizione** mostra il codice in una finestra separata. **Vai a definizione** determina il passaggio del contesto (ovvero la finestra di codice attiva, la riga corrente e la posizione del cursore) alla finestra del codice della definizione. Tramite **Visualizza definizione** è possibile visualizzare e modificare la definizione e spostarsi all'interno del file di definizione, mantenendo la stessa posizione nel file di codice originale.
 
-È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** Mostra un collegamento per il **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione (ad esempio, tipi di .NET che sono incorporate).
+È possibile usare **Visualizza definizione** con codice C#, Visual Basic e C++. In Visual Basic **Visualizza definizione** contiene un collegamento a **Visualizzatore oggetti** per i simboli sprovvisti di metadati di definizione, ad esempio i tipi .NET predefiniti.
 
-## <a name="use-peek-definition"></a>Utilizzare Visualizza definizione
+## <a name="use-peek-definition"></a>Usare Visualizza definizione
 
 ### <a name="open-a-peek-definition-window"></a>Aprire una finestra Visualizza definizione
 
@@ -75,7 +75,7 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |Consente di aprire la finestra di definizione|**ALT**+**F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
 |Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+ **=**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + ** - ** e **CTRL**+**ALT**+**=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
 

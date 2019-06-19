@@ -314,6 +314,6 @@ Le impostazioni lette dal file con estensione *gitignore* vengono applicate alla
 
 - [Sviluppare codice in Visual Studio senza progetti o soluzioni](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Progetti Apri cartella per C++)
-- [Progetti CMake perC++](/cpp/build/cmake-projects-in-visual-studio)
+- [Progetti CMake per C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Riferimenti a NMAKE](/cpp/build/reference/nmake-reference)
 - [Funzionalità dell'editor del codice](../ide/writing-code-in-the-code-and-text-editor.md)

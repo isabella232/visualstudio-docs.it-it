@@ -29,7 +29,7 @@ In alternativa, è possibile installare gli interpreti Python standard dalla fin
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio supporta tutte le versioni supportate ufficialmente di Python, come specificato dalle [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). In particolare, versione 2.7, 3.5, 3.6 e 3.7.
+> Come specificato da [Python Software Foundation](https://devguide.python.org/#status-of-python-branches), Visual Studio supporta tutte le versioni ufficialmente supportate di Python e, in particolare, le versioni 2.7, 3.5, 3.6 e 3.7.
 ::: moniker-end
 
 Per **Visual Studio 2015 e versioni precedenti** è necessario installare manualmente uno degli interpreti.
