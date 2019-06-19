@@ -14,42 +14,42 @@ ms.locfileid: "66820737"
 ---
 # <a name="creating-a-new-project"></a>Creazione di un nuovo progetto
 
-## <a name="opening-the-project-creation-dialog"></a>Aprire la finestra di dialogo di creazione progetto
+## <a name="opening-the-project-creation-dialog"></a>Apertura della finestra di dialogo per la creazione del progetto
 
-Esistono alcuni modi per creare un nuovo progetto in Visual Studio per Mac. Quando si apre innanzitutto Visual Studio per Mac, verrà visualizzata la schermata iniziale. Da qui è possibile scegliere **New** che verrà visualizzata la schermata di creazione del progetto.
+È possibile creare un nuovo progetto in Visual Studio per Mac in diversi modi. Quando si apre Visual Studio per Mac, viene visualizzata la schermata iniziale. Da qui è possibile scegliere **Nuovo** per passare alla schermata per la creazione del progetto.
 
 > [!TIP]
-> Inoltre, dalla schermata iniziale, è possibile anche aprire e cercare, progetti e soluzioni recenti. È anche possibile aprire progetti recenti accedendo alla barra dei menu e scegliendo **File > soluzioni recenti**
+> Dalla schermata iniziale è inoltre possibile aprire e cercare i progetti e le soluzioni recenti. Per aprire i progetti recenti si può anche scegliere **File > Soluzioni recenti** dalla barra dei menu
 
-![Schermata iniziale con Crea nuovo progetto](media/first-run-project.png)
+![Schermata iniziale con l'opzione per creare un nuovo progetto](media/first-run-project.png)
 
-Se Visual Studio per Mac è già aperto con una soluzione caricata, è possibile creare una nuova soluzione accedendo alla barra dei menu e scegliendo **File > nuova soluzione**. Creare una nuova soluzione in questo modo verrà chiusa la soluzione che è già stata caricata.
+Se Visual Studio per Mac è già aperto con una soluzione caricata, è possibile creare una nuova soluzione scegliendo **File > Nuova soluzione** dalla barra dei menu. Se si crea una nuova soluzione in questo modo, la soluzione già caricata verrà chiusa.
 
-## <a name="creating-a-new-project-from-a-template"></a>Crea un nuovo progetto da un modello
+## <a name="creating-a-new-project-from-a-template"></a>Creazione di un progetto da un modello
 
-Il **nuovo progetto** finestra di dialogo, per impostazione predefinita, Mostra i modelli usati di recente vengono ordinati *usati più di recente*.
+La finestra dialogo **Nuovo progetto** mostra, per impostazione predefinita, i modelli usati di recente, ordinati a partire da quelli *più recenti*.
 
-Se non vuoi usare un modello di recente, è possibile scegliere tra le categorie a sinistra della finestra di dialogo. Ogni categoria include diversi modelli di progetto per cui scegliere. Facendo clic su un tipo di progetto consente di visualizzare una descrizione sul lato destro dello schermo.
+Se non si vuole usare un modello recente, è possibile scegliere tra le categorie visualizzate sul lato sinistro della finestra di dialogo. Ogni categoria include più modelli di progetto disponibili per la selezione. Facendo clic su un tipo di progetto è possibile visualizzare la relativa descrizione sul lato destro della schermata.
 
-![Schermata Nuovo progetto](media/project-creation-screen.png)
+![schermata di un nuovo progetto](media/project-creation-screen.png)
 
 ## <a name="configuring-your-new-project"></a>Configurazione del nuovo progetto
 
-Dopo aver scelto un modello di progetto, schermate riportate di seguito illustra in dettaglio eventuali passaggi di configurazione necessari per configurare il progetto. Questo può variare ogni tipo di progetto.
+Dopo aver scelto un modello di progetto, è possibile usare le schermate successive per eseguire i passaggi necessari per configurare il progetto. La procedura può variare a seconda del tipo di progetto.
 
-Tutti i progetti richiedono un nuovo progetto, insieme a un percorso per archiviare i file. Se il progetto fa parte di una nuova soluzione, anziché aggiungerlo a una soluzione esistente, un nome di soluzione sarà anche necessario.
+Per tutti i progetti è necessario specificare un nuovo progetto e un percorso in cui archiviare i file. Se il progetto fa parte di una nuova soluzione, anziché essere incluso in una soluzione esistente, è necessario specificare anche un nome di soluzione.
 
-Facoltativamente, in questa fase è anche possibile configurare le opzioni di controllo codice sorgente di Git. L'immagine seguente è riportato un esempio dell'ultimo passaggio di configurazione per un progetto .NET Core:
+In questa fase è eventualmente possibile configurare anche le opzioni di controllo del codice sorgente Git. L'immagine seguente mostra un esempio dell'ultimo passaggio di configurazione per un progetto .NET Core:
 
 ![Configurazione di un nuovo progetto](media/configure-new-project.png)
 
-## <a name="adding-additional-projects-to-a-solution"></a>Aggiunta di ulteriori progetti a una soluzione
+## <a name="adding-additional-projects-to-a-solution"></a>Aggiunta di altri progetti a una soluzione
 
-È possibile aggiungere ulteriori progetti a una soluzione facendo clic la soluzione nel riquadro della soluzione e scegliendo uno **Aggiungi > Aggiungi nuovo progetto** oppure **Aggiungi > Aggiungi progetto esistente**.
+È possibile aggiungere altri progetti a una soluzione facendo clic con il pulsante destro del mouse sulla soluzione nel riquadro della soluzione e scegliendo **Aggiungi > Aggiungi nuovo progetto** oppure **Aggiungi > Aggiungi progetto esistente**.
 
-Aggiunge un nuovo progetto illustra in dettaglio la creazione del progetto, come illustrato nella [configurazione del nuovo progetto](#configuring-your-new-project).
+Se si aggiunge un nuovo progetto, è necessario eseguire la procedura per la creazione del progetto, come illustrato in [Configurazione del nuovo progetto](#configuring-your-new-project).
 
-Scegliere di aggiungere un progetto esistente verrà consentono a ricerca di un progetto esistente nel computer e aggiungerlo alla soluzione.
+Se si sceglie di aggiungere un progetto esistente, è possibile cercare un progetto esistente nel computer e aggiungerlo alla soluzione.
 
 ## <a name="see-also"></a>Vedere anche
 

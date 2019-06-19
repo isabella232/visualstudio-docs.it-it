@@ -18,17 +18,17 @@ ms.locfileid: "66746311"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generazione di input con l'esecuzione simbolica dinamica
 
-IntelliTest genera input per gli [unit test con parametri](test-generation.md#parameterized-unit-testing) analizzando le condizioni di ramo nel programma. Gli input di test vengono scelti in base alla loro capacità di attivare nuovi comportamenti di creazione rami del programma. L'analisi è un processo incrementale. Ottimizza un predicato `q: I -> {true, false}` parametri di input di test su formale `I`. `q` rappresenta il set di comportamenti già osservati da IntelliTest. Inizialmente, `q := false`, dal momento che non è ancora stata osservata.
+IntelliTest genera input per gli [unit test con parametri](test-generation.md#parameterized-unit-testing) analizzando le condizioni di ramo nel programma. Gli input di test vengono scelti in base alla loro capacità di attivare nuovi comportamenti di creazione rami del programma. L'analisi è un processo incrementale. Ottimizza un predicato `q: I -> {true, false}` in base ai parametri di input del test formale `I`. `q` rappresenta il set di comportamenti già osservati da IntelliTest. Inizialmente `q := false` perché non è ancora stato osservato nessun comportamento.
 
 Le fasi del ciclo sono:
 
-1. IntelliTest determina input `i` tale che `q(i)=false` usando un [Risolutore](#constraint-solver). Per costruzione, l'input `i` richiederà un percorso di esecuzione non rilevato in precedenza. Inizialmente, questo significa che `i` può essere qualsiasi input, perché non è ancora stato scoperto Nessun percorso di esecuzione.
+1. IntelliTest determina input `i` come `q(i)=false` mediante un [risolutore di vincoli](#constraint-solver). Per costruzione, l'input `i` adotta un percorso di esecuzione non rilevato in precedenza. Inizialmente questo significa che `i` può essere qualsiasi input, perché non è ancora stato scoperto alcun percorso di esecuzione.
 
-1. IntelliTest esegue il test con la scelta di input `i`e controlla l'esecuzione del test e il programma sottoposto a test.
+1. IntelliTest esegue il test con l'input `i` scelto e controlla l'esecuzione del test e il programma sottoposto al test.
 
-1. Durante l'esecuzione il programma accetta un percorso specifico, determinato da tutti i rami condizionali del programma. Il set di tutte le condizioni che determinano l'esecuzione è denominato il *condizione di percorso*, scritta sotto forma di predicato `p: I -> {true, false}` tramite i parametri di input formali. IntelliTest calcola una rappresentazione del predicato.
+1. Durante l'esecuzione il programma accetta un percorso specifico, determinato da tutti i rami condizionali del programma. Il set di tutte le condizioni che determinano l'esecuzione è detto *condizione di percorso*, scritta sotto forma di predicato `p: I -> {true, false}` sui parametri di input formali. IntelliTest calcola una rappresentazione del predicato.
 
-1. IntelliTest imposta `q := (q or p)`. In altre parole, registra il fatto che ha rilevato il percorso rappresentato dal `p`.
+1. IntelliTest imposta `q := (q or p)`. In altre parole, registra il fatto che ha rilevato il percorso rappresentato da `p`.
 
 1. Andare al passaggio 1.
 
@@ -79,7 +79,7 @@ Se il tipo non è visibile o i campi non sono [visible](#visibility), IntelliTes
 
 ## <a name="visibility"></a>Visibility
 
-.NET è disponibile un modello di visibilità elaborato: i tipi, metodi, campi e altri membri possono essere **privati**, **pubblico**, **interno**e altro ancora.
+.NET offre un modello di visibilità elaborato: i tipi, i metodi, i campi e gli altri membri possono essere **private**, **public**, **internal** e altro ancora.
 
 Quando IntelliTest genera test, prova a eseguire solo azioni (ad esempio la chiamata di costruttori o metodi e l'impostazione dei campi) valide in base alle regole di visibilità .NET all'interno del contesto dei test generati.
 
@@ -98,11 +98,11 @@ Le regole sono le seguenti:
 
 ## <a name="parameterized-mocks"></a>Oggetti fittizi con parametri
 
-Come testare un metodo che ha un parametro di un tipo di interfaccia? O di una classe non sealed? IntelliTest non può determinare quali implementazioni verranno usate dopo la chiamata di questo metodo. E probabilmente non è ancora un'implementazione reale disponibile in fase di test.
+Come testare un metodo che ha un parametro di un tipo di interfaccia? O di una classe non sealed? IntelliTest non può determinare quali implementazioni verranno usate dopo la chiamata di questo metodo. È anche possibile che al momento del test non sia disponibile un'implementazione reale.
 
 La risposta convenzionale è l'uso di *oggetti fittizi* con comportamento esplicito.
 
-Un oggetto fittizio implementa un'interfaccia (o estende una classe non sealed). Non rappresenta un'implementazione reale, ma solo un collegamento che consente l'esecuzione di test usando l'oggetto fittizio. Il comportamento è definito manualmente come parte di ogni test case in cui viene usato. Esistono numerosi strumenti che semplificano la definizione degli oggetti fittizi e del comportamento previsto, ma questo comportamento va comunque definito manualmente.
+Un oggetto fittizio implementa un'interfaccia (o estende una classe non sealed). Non rappresenta un'implementazione reale, ma solo un collegamento che consente l'esecuzione di test usando l'oggetto fittizio. Il suo comportamento è definito manualmente in ogni test case nel quale viene usato. Esistono numerosi strumenti che semplificano la definizione degli oggetti fittizi e del comportamento previsto, ma questo comportamento va comunque definito manualmente.
 
 Anziché usare valori hard-coded negli oggetti fittizi, IntelliTest può generare i valori. Così come supporta il [testing unità con parametri](test-generation.md#parameterized-unit-testing), IntelliTest supporta anche gli oggetti fittizi con parametri.
 

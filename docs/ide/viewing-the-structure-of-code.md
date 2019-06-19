@@ -34,7 +34,7 @@ ms.locfileid: "66747704"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualizzare la struttura del codice usando diverse finestre degli strumenti
 
-È possibile esaminare le classi e i relativi membri in Visual Studio usando diverse finestre degli strumenti, tra cui **Visualizzazione classi**, **Gerarchia di chiamata**, **Visualizzatore oggetti** e **Definizione codice** (solo C++). Queste finestre degli strumenti possono esaminare il codice in progetti di Visual Studio, componenti .NET, i componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
+È possibile esaminare le classi e i relativi membri in Visual Studio usando diverse finestre degli strumenti, tra cui **Visualizzazione classi**, **Gerarchia di chiamata**, **Visualizzatore oggetti** e **Definizione codice** (solo C++). Queste finestre degli strumenti consentono di esaminare il codice in progetti di Visual Studio, componenti .NET, componenti COM, librerie a collegamento dinamico (DLL) e librerie dei tipi (TLB).
 
 È anche possibile usare **Esplora soluzioni** per esplorare i tipi e i membri nei progetti, cercare simboli, visualizzare la gerarchia di chiamata di un metodo, individuare i riferimenti dei simboli ed eseguire altre attività senza dover passare tra varie finestre degli strumenti.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744986"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160058"
 ---
 # <a name="application-page-project-designer-c"></a>Applicazione (pagina), Creazione progetti (C#)
 
@@ -50,18 +50,18 @@ Per accedere a questa proprietà a livello di programmazione, vedere <xref:VSLan
 
 **Framework di destinazione**
 
-Specifica la versione di .NET che gli obiettivi dell'applicazione. Questa opzione può avere valori diversi a seconda che le versioni di .NET installate nel computer.
+Specifica la versione di .NET a cui è destinata l'applicazione. Questa opzione può avere valori diversi a seconda delle versioni di .NET installate nel computer in uso.
 
-Per i progetti .NET Framework, il valore predefinito corrisponde al framework di destinazione specificato durante la creazione del progetto.
+Per i progetti .NET Framework, il valore predefinito corrisponde al framework di destinazione specificato al momento della creazione del progetto.
 
-Per un progetto destinato a .NET Core, le versioni disponibili può essere visualizzato come segue:
+Per un progetto che ha come destinazione .NET Core, dovrebbero essere disponibili le versioni seguenti:
 
-![Versioni di framework di destinazione per un progetto .NET Core](../media/application-target-framework.png)
+![Versioni dei framework di destinazione per un progetto .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > I pacchetti dei prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono impostati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario selezionare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
-Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Framework come destinazione Panoramica](../../ide/visual-studio-multi-targeting-overview.md).
+Per altre informazioni, vedere [Panoramica sull'impostazione dei framework di destinazione](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Tipo di output**
 

@@ -28,7 +28,7 @@ ms.locfileid: "66746961"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-È possibile installare e visualizzare il contenuto di vari prodotti e tecnologie nel computer locale usando Microsoft Help Viewer. Questi prodotti includono Visual Studio, .NET, riferimenti al linguaggio, SQL Server e lo sviluppo di Windows. Help Viewer consente di:
+È possibile installare e visualizzare il contenuto di vari prodotti e tecnologie nel computer locale usando Microsoft Help Viewer. Questi prodotti includono Visual Studio, .NET, riferimenti al linguaggio, SQL Server e lo sviluppo Windows. Help Viewer consente di:
 
 - Scaricare set di contenuti, definiti anche libri. Ciò può essere utile se è necessario lavorare "offline" e mantenere l'accesso alla documentazione.
 

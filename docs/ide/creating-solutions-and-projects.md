@@ -61,11 +61,11 @@ Se è presente un file che può essere usato per più progetti, ad esempio un fi
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Creare un progetto .NET che usa una specifica versione di .NET Framework
 
-Quando si crea un progetto .NET Framework, è possibile specificare una versione specifica di .NET Framework che si vuole usare il progetto. (Quando si crea un progetto .NET Core, non si specifica una versione di framework.)
+Quando si crea un progetto .NET Framework è possibile indicare la versione specifica di .NET Framework che si vuole usare nel progetto. Quando invece si crea un progetto .NET Core, non si specifica una versione del framework.
 
 ::: moniker range="vs-2017"
 
-Per specificare una versione di .NET Framework, scegliere il **Framework** dal menu a discesa nel **nuovo progetto** nella finestra di dialogo.
+Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella finestra di dialogo **Nuovo progetto**.
 
 ![Elenco a discesa Framework nella finestra di dialogo Nuovo progetto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Per specificare una versione di .NET Framework, scegliere il **Framework** dal m
 
 ::: moniker range=">=vs-2019"
 
-Per specificare una versione di .NET Framework, scegliere il **Framework** dal menu a discesa nel **creare un nuovo progetto** pagina.
+Per specificare una versione di .NET Framework, scegliere il menu a discesa **Framework** nella pagina **Crea un nuovo progetto**.
 
 ![Selettore Framework nella configurazione di un nuovo progetto](media/vs-2019/configure-new-project-framework.png)
 

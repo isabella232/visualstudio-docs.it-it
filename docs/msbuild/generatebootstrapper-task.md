@@ -152,7 +152,7 @@ Di seguito vengono descritti i parametri dell'attività `GenerateBootstrapper`.
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
-L'esempio seguente usa il `GenerateBootstrapper` attività per installare un'applicazione che deve disporre di .NET Framework 2.0 installati come prerequisito.
+L'esempio seguente usa l'attività `GenerateBootstrapper` per installare un'applicazione che deve avere .NET Framework 2.0 installato come prerequisito.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

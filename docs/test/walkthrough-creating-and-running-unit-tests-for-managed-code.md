@@ -187,13 +187,13 @@ Creare una classe di test per verificare la classe `BankAccount`. È possibile u
 
 ::: moniker range="vs-2017"
 
-2. Per rinominare la classe, scegliere **Sì** nella finestra di dialogo che si apre e chiede se si desidera rinominare anche riferimenti all'elemento di codice.
+2. Per rinominare la classe, scegliere **Sì** nella finestra di dialogo visualizzata in cui viene chiesto se si vogliono rinominare anche i riferimenti all'elemento di codice.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Per rinominare la classe, posizionare il cursore sulla `UnitTest1` nell'editor del codice, pulsante destro del mouse, quindi scegliere **rinominare**. Digitare **BankAccountTests** e quindi premere **INVIO**.
+2. Per rinominare la classe, posizionare il cursore su `UnitTest1` nell'editor del codice, fare clic con il pulsante destro del mouse e quindi scegliere **Rinomina**. Digitare **BankAccountTests** e quindi premere **INVIO**.
 
 ::: moniker-end
 
@@ -352,7 +352,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-Usare il <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> metodo per confermare che è stata generata l'eccezione corretta. Questo metodo causa l'esito negativo a meno che un <xref:System.ArgumentOutOfRangeException> viene generata un'eccezione. Se si modifica temporaneamente il metodo sottoposto a test in modo che generi un'eccezione <xref:System.ApplicationException> più generica quando la quantità di debito è minore di zero, il test funziona correttamente, ovvero si verifica un errore.
+Usare il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A> per confermare che è stata generata l'eccezione appropriata. Con questo metodo, il test ha esito negativo a meno che non venga generata un'eccezione <xref:System.ArgumentOutOfRangeException>. Se si modifica temporaneamente il metodo sottoposto a test in modo che generi un'eccezione <xref:System.ApplicationException> più generica quando la quantità di debito è minore di zero, il test funziona correttamente, ovvero si verifica un errore.
 
 Per sottoporre a test il caso in cui l'importo prelevato è maggiore del saldo, seguire questa procedura:
 
@@ -362,7 +362,7 @@ Per sottoporre a test il caso in cui l'importo prelevato è maggiore del saldo, 
 
 3. Impostare `debitAmount` su un numero maggiore del saldo.
 
-Esecuzione dei test di due e verificare che vengono superati.
+Eseguire i due test e verificare che vengano superati.
 
 ### <a name="continue-the-analysis"></a>Continuare l'analisi
 
@@ -401,7 +401,7 @@ if (amount < 0)
 
 ### <a name="refactor-the-test-methods"></a>Eseguire il refactoring dei metodi di test
 
-Effettuare il refactoring i metodi di test tramite la rimozione della chiamata a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Eseguire il wrapping della chiamata a `Debit()` in un `try/catch` block, intercettare l'eccezione specifica è previsto e verificare il messaggio associato. Il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> offre la possibilità di confrontare due stringhe.
+Effettuare il refactoring dei metodi di test rimuovendo la chiamata a <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>. Eseguire il wrapping della chiamata a `Debit()` in un blocco `try/catch`, rilevare l'eccezione prevista e verificare il messaggio associato. Il metodo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> offre la possibilità di confrontare due stringhe.
 
 Ora `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` può assumere l'aspetto seguente:
 

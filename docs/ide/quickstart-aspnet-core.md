@@ -75,7 +75,7 @@ Per iniziare, creare un progetto di applicazione Web ASP.NET Core. Il tipo di pr
    ![Finestra di dialogo Nuova applicazione Web ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Se non viene visualizzata **ASP.NET Core 2.1**, assicurarsi che si esegue la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../install/update-visual-studio.md).
+   > Se **ASP.NET Core 2.1** non è visualizzato, assicurarsi di usare la versione più recente di Visual Studio. Per altre informazioni su come aggiornare l'installazione, vedere la pagina [Aggiornare Visual Studio alla versione più recente](../install/update-visual-studio.md).
 
 Dopo pochi istanti, Visual Studio apre il file di progetto.
 

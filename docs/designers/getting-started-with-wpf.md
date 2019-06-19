@@ -17,7 +17,7 @@ ms.locfileid: "66747286"
 ---
 # <a name="get-started-with-wpf"></a>Guida introduttiva a WPF
 
-Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente che crea applicazioni client desktop. La piattaforma di sviluppo WPF supporta un'ampia serie di funzionalità di sviluppo di applicazioni, incluso un modello dell'applicazione, le risorse, i controlli, la grafica, il layout, l'associazione dati, i documenti e la sicurezza. Il framework è parte di .NET, quindi se si sono già compilate applicazioni con .NET usando ASP.NET o Windows Form, l'esperienza di programmazione dovrebbe essere familiare. In WPF viene usato il linguaggio Extensible Application Markup Language (XAML) per fornire un modello dichiarativo per la programmazione di applicazioni.
+Windows Presentation Foundation (WPF) è un framework dell'interfaccia utente che crea applicazioni client desktop. La piattaforma di sviluppo WPF supporta un'ampia serie di funzionalità di sviluppo di applicazioni, incluso un modello dell'applicazione, le risorse, i controlli, la grafica, il layout, l'associazione dati, i documenti e la sicurezza. Il framework fa parte di .NET e, pertanto, se in precedenza si sono sviluppate applicazioni con .NET usando ASP.NET o Windows Form, l'esperienza di programmazione dovrebbe essere familiare. In WPF viene usato il linguaggio Extensible Application Markup Language (XAML) per fornire un modello dichiarativo per la programmazione di applicazioni.
 
 Questa sezione contiene argomenti introduttivi all'uso di WPF.
 

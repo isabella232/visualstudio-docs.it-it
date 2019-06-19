@@ -15,12 +15,12 @@ ms.locfileid: "66835887"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Disinstallazione di Visual Studio per Mac
 
-È possibile usare questa guida per disinstallare singolarmente ogni componente in Visual Studio per Mac, passare alla sezione rilevante, o è possibile usare gli script forniti nel [Script di disinstallazione](#uninstall-script) sezione per disinstallare tutti gli elementi.
+È possibile usare questa guida per disinstallare ogni componente di Visual Studio per Mac passando alla sezione pertinente oppure usare gli script disponibili nella sezione [Script di disinstallazione](#uninstall-script) per disinstallare tutti i componenti.
 
 Se in precedenza è stato installato Xamarin Studio, può essere necessario seguire anche le istruzioni della guida di [disinstallazione di Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), oltre alla procedura seguente.
 
 > [!NOTE]
-> Queste informazioni rimuoverà solo Visual Studio 2019 o 2017 per Mac nel computer. Per disinstallare Visual Studio Code, vedere [questo problema](https://github.com/Microsoft/vscode/issues/52151) per informazioni dettagliate.
+> Queste informazioni consentono di rimuovere dal computer solo Visual Studio 2019 o 2017 per Mac. Per disinstallare Visual Studio Code, vedere la soluzione a [questo problema](https://github.com/Microsoft/vscode/issues/52151).
 
 ## <a name="uninstall-script"></a>Script di disinstallazione
 

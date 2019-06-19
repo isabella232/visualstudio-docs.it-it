@@ -43,7 +43,7 @@ Queste interfacce sono contenute nello spazio dei nomi <xref:Microsoft.VisualStu
 
 1. Nella pagina **Proprietà** selezionare la scheda **Applicazione**.
 
-1. Nel **framework di destinazione** elenco a discesa, selezionare .NET Framework 4 (o versione successiva).
+1. Nell'elenco a discesa **Framework di destinazione** selezionare .NET Framework 4 (o versioni successive).
 
 1. Viene visualizzata la finestra di dialogo **Modifica del framework di destinazione**.
 

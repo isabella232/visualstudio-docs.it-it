@@ -169,7 +169,7 @@ Oltre ai parametri elencati negli argomenti di questa sezione, ogni attività di
 
 - [Attività GetFrameworkPath](../msbuild/getframeworkpath-task.md)
 
- Recupera il percorso agli assembly .NET Framework.
+ Recupera il percorso degli assembly di .NET Framework.
 
 - [Attività GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 

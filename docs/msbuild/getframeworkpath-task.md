@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747549"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (attività)
-Recupera il percorso agli assembly .NET Framework.
+Recupera il percorso degli assembly di .NET Framework.
 
 ## <a name="task-parameters"></a>Parametri dell'attività
 Nella tabella che segue vengono descritti i parametri dell'attività `GetFrameworkPath` .
@@ -41,12 +41,12 @@ Nella tabella che segue vengono descritti i parametri dell'attività `GetFramewo
 |`Path`|Parametro di ouput facoltativo `String`.<br /><br /> Contiene il percorso agli assembly del framework più recente, se disponibili. In caso contrario restituisce `null`.|
 
 ## <a name="remarks"></a>Osservazioni
-Se sono installate più versioni di .NET Framework, questa operazione restituisce la versione che [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] è progettato per l'esecuzione.
+Se sono installate diverse versioni di .NET Framework, l'attività restituisce la versione in cui deve essere eseguito [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in base alla progettazione.
 
 Oltre ai parametri elencati sopra, questa attività eredita i parametri dalla classe <xref:Microsoft.Build.Tasks.TaskExtension>, che a sua volta eredita dalla classe <xref:Microsoft.Build.Utilities.Task>. Per un elenco di questi parametri aggiuntivi e le rispettive descrizioni, vedere [Classe di base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Esempio
-L'esempio seguente usa il `GetFrameworkPath` attività per archiviare il percorso di .NET Framework nel `FrameworkPath` proprietà.
+Nell'esempio seguente viene usata l'attività `GetFrameworkPath` per archiviare il percorso a .NET Framework nella proprietà `FrameworkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

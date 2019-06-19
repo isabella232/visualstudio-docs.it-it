@@ -59,7 +59,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
-|Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
+|Build.BuildSelection|**CTRL+B** (Visual Studio 2019)|
 |Build.BuildSolution|**CTRL+MAIUSC+B**|
 |Build.Cancel|**CTRL+INTERR**|
 |Build.Compile|**CTRL+F7**|
@@ -86,7 +86,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Debug.DOMExplorer|**CTRL+ALT+V, D**|
 |Debug.EnableBreakpoint|**CTRL+F9**|
 |Debug.Exceptions|**CTRL+ALT+E**|
-|Debug.FunctionBreakpoint|**Ctrl+K, B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
+|Debug.FunctionBreakpoint|**CTRL+K, B** (Visual Studio 2019)<br />**CTRL**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**CTRL+MAIUSC+F11**|
 |Debug.Graphics.StartDiagnostics|**ALT+F5**|
 |Debug.Immediate|**CTRL+ALT+I**|
@@ -110,7 +110,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 |Debug.ParallelWatch3|**CTRL+MAIUSC+D, 3**|
 |Debug.ParallelWatch4|**CTRL+MAIUSC+D, 4**|
 |Debug.Processes|**CTRL+ALT+Z**|
-|Debug.QuickWatch|**MAIUSC+F9** o **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**MAIUSC+F9** o **CTRL+ALT+Q**|
 |Debug.RefreshWindowsapp|**CTRL+MAIUSC+R**|
 |Debug.Registers|**CTRL+ALT+G**|
 |Debug.Restart|**CTRL+MAIUSC+F5**|
@@ -296,9 +296,9 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+O** (lettera "O")|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
 
 ### <a name="bkmk_team"></a> Team
 

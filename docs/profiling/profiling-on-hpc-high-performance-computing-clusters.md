@@ -36,9 +36,9 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 
 - Installare Microsoft HPC Pack 2008 nello stesso computer di Visual Studio. Il computer non deve far parte del cluster HPC. È possibile installare HPC Pack nell'[Area download Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Installare .NET Framework 4 e la versione autonoma degli strumenti di profilatura HPC nodo di calcolo. Programmi di installazione per .NET Framework e il profiler autonomo sono disponibili sul supporto di installazione di Visual Studio. **Nota** è necessario riavviare il computer dopo aver installato .NET Framework e prima di installare gli strumenti di profilatura.
+- Installare .NET Framework 4 e la versione autonoma degli strumenti di profilatura sul nodo di calcolo HPC. I programmi di installazione per .NET Framework e per il profiler autonomo sono disponibili nel supporto di installazione di Visual Studio. **Nota** È necessario riavviare il computer dopo aver installato .NET Framework e prima di installare gli strumenti di profilatura.
 
-  Per installare .NET Framework 4 e gli strumenti di profilatura autonomi in un nodo di calcolo HPC attivo e abilitare la profilatura nel computer del cluster, seguire questa procedura:
+  Per installare .NET Framework 4 e gli strumenti di profilatura autonomi su un nodo di calcolo HPC attivo e abilitare la profilatura nel computer del cluster, attenersi alla procedura seguente:
 
 1. Aprire la finestra del prompt dei comandi installata con HPC Pack.
 
@@ -53,7 +53,7 @@ Per eseguire la profilatura su un nodo di calcolo HPC, è necessario eseguire le
 | | |
 |------------------| - |
 | *%HeadNode%* | Nome del nodo head del cluster. |
-| *%FxPath%* | Percorso per il programma di installazione di .NET Framework 4. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Percorso del programma di installazione di .NET Framework 4. Nel supporto di installazione di Visual Studio il percorso è: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Percorso della versione autonoma del programma di installazione degli strumenti di profilatura. Nel supporto di installazione di Visual Studio il percorso è: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Eseguire la profilatura su un nodo di calcolo HPC

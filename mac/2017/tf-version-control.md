@@ -21,7 +21,7 @@ ms.locfileid: "66746330"
 
 Azure Repos offre due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito, e il [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
 
-Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa TFVC per il controllo della versione, ecco alcune soluzioni che è possibile usare per accedere al codice sorgente ospitato in TFVC:
+Visual Studio per Mac offre il supporto completo per i repository Git, ma richiede alcune soluzioni alternative per usare il controllo della versione di Team Foundation. Se attualmente si usa il controllo della versione di Team Foundation, ecco alcune soluzioni che è possibile adottare per accedere al codice sorgente ospitato nel controllo della versione di Team Foundation:
 
 * [Usare Visual Studio Code e l'estensione Azure Repos per un'interfaccia utente grafica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Connettersi al repository usando il client della riga di comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ Il resto di questo articolo illustra le opzioni elencate in precedenza.
 
 ## <a name="requirements"></a>Requisiti
 
-* Visual Studio Community, Professional o Enterprise per Mac versione 7.8 e versioni successive.
+* Visual Studio Community, Professional o Enterprise per Mac versione 7.8 e successive.
 * Azure DevOps Services, Team Foundation Server 2013 e versioni successive o Azure DevOps Server 2018 e versioni successive.
 * Un progetto in Azure DevOps Services o Team Foundation Server/Azure DevOps Server configurato per l'uso del controllo della versione di Team Foundation.
 
@@ -80,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 L'impostazione di ambiente `TF_AUTO_SAVE_CREDENTIALS` viene usata per salvare le credenziali in modo che non venga richiesto di immetterle più volte. Quando viene richiesto un nome utente, usare il token di accesso personale creato nella sezione precedente e una password vuota.
 
-Per creare un mapping dei file di origine in una cartella locale, si userà il `tf workfold` comando. Nell'esempio seguente verrà eseguito il mapping di una cartella denominata "WebApp.Services" dal progetto di controllo della versione di Team Foundation "MyRepository" e tale cartella verrà configurata per la copia nella cartella ~/Projects/ locale (ad esempio una cartella "Progetti" nella home directory degli utenti correnti).
+Per creare un mapping dei file di origine in una cartella locale, si userà il comando `tf workfold`. Nell'esempio seguente verrà eseguito il mapping di una cartella denominata "WebApp.Services" dal progetto di controllo della versione di Team Foundation "MyRepository" e tale cartella verrà configurata per la copia nella cartella ~/Projects/ locale (ad esempio una cartella "Progetti" nella home directory degli utenti correnti).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

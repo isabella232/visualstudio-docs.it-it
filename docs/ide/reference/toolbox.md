@@ -33,7 +33,7 @@ La casella degli strumenti viene visualizzata insieme alle visualizzazioni delle
 > [!NOTE]
 > Per alcuni tipi di progetto, nella **casella degli strumenti** potrebbe non essere visualizzato alcun elemento.
 
-La versione di .NET che il progetto è destinato anche interessa il set di controlli visibili nella casella degli strumenti. È possibile modificare la versione di framework di destinazione dalle pagine delle proprietà del progetto, se necessario. Selezionare il nodo del progetto in **Esplora soluzioni** e quindi scegliere **Progetto** > **Proprietà nomeprogetto** nella barra dei menu. Nella scheda **Applicazione** usare l'elenco a discesa **Framework di destinazione**.
+La versione di.NET di destinazione del progetto influisce sul set di controlli visibili nella casella degli strumenti. Se necessario, è possibile modificare la versione del framework di destinazione dalle pagine delle proprietà del progetto. Selezionare il nodo del progetto in **Esplora soluzioni** e quindi scegliere **Progetto** > **Proprietà nomeprogetto** nella barra dei menu. Nella scheda **Applicazione** usare l'elenco a discesa **Framework di destinazione**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gestire la finestra della casella degli strumenti e i relativi controlli
 

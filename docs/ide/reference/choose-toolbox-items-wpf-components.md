@@ -31,7 +31,7 @@ Questa scheda della finestra di dialogo **Scegli elementi della Casella degli st
 - Quando la casella di controllo accanto a un componente viene deselezionata, l'icona corrispondente viene rimossa dalla **casella degli strumenti**.
 
     > [!NOTE]
-    > I componenti di .NET installati nel computer rimangono disponibili se vengono visualizzate le relative icone nel **casella degli strumenti**.
+    > I componenti .NET installati sul computer restano disponibili anche se le icone corrispondenti non sono visualizzate nella **casella degli strumenti**.
 
 Le colonne della scheda **Componenti WPF** contengono le informazioni seguenti:
 
@@ -41,11 +41,11 @@ Elenca i nomi dei controlli WPF per i quali sono presenti voci nel Registro di s
 
 **Spazio dei nomi**
 
-Visualizza la gerarchia del [API .NET](/dotnet/api/?view=netframework-4.7) dello spazio dei nomi che definisce la struttura del componente. Ordinamento di questa colonna per elencare i componenti disponibili in ogni spazio dei nomi di .NET installata nel computer.
+Visualizza la gerarchia dello spazio dei nomi [API di .NET](/dotnet/api/?view=netframework-4.7) che definisce la struttura del componente. Ordinare in base a questa colonna per elencare i componenti disponibili in ogni spazio dei nomi .NET installato nel computer in uso.
 
 **Nome assembly**
 
-Visualizza il nome dell'assembly .NET che include lo spazio dei nomi per ogni componente. Ordinamento di questa colonna per elencare gli spazi dei nomi contenuti in ogni assembly di .NET installata nel computer.
+Visualizza il nome dell'assembly .NET che include lo spazio dei nomi per ogni componente. Ordinare in base a questa colonna per elencare gli spazi dei nomi presenti in ogni assembly .NET installato nel computer in uso.
 
 **Directory**
 

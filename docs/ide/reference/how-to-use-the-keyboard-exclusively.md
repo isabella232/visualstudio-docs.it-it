@@ -31,7 +31,7 @@ Per un elenco completo delle combinazioni di tasti in Visual Studio, vedere [Tas
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Per altre informazioni sugli aggiornamenti di accessibilità, vedere la [miglioramenti dell'accessibilità di Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) post di blog.
+> Per altre informazioni sugli aggiornamenti di accessibilità, visitare il post di blog sui [miglioramenti dell'accessibilità di Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/).
 
 ::: moniker-end
 
@@ -46,41 +46,41 @@ Per un elenco completo delle combinazioni di tasti in Visual Studio, vedere [Tas
 
 1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
-2. Usare la **Ctrl**+**freccia** o **Ctrl**+**freccia in giù** tasti per spostarsi tra le sezioni nel  **Casella degli strumenti** scheda.
+2. Usare i tasti **CTRL**+**Freccia SU** o **CTRL**+**Freccia GIÙ** per spostarsi tra le sezioni della scheda della **casella degli strumenti**.
 
-3. Usare il **freccia** chiave oppure **freccia in giù** tasto per spostarsi tra i controlli.
+3. Usare il tasto **Freccia SU** o **Freccia GIÙ** per passare da un controllo all'altro.
 
-4. Dopo aver selezionato il controllo, usare il **invio** chiave da aggiungere il controllo al form o finestra di progettazione.
+4. Dopo aver selezionato il controllo, usare il tasto **Invio** per aggiungere il controllo al form o alla finestra di progettazione.
 
 ## <a name="dialog-box-options"></a>Opzioni della finestra di dialogo
 
 È possibile passare da un'opzione all'altra all'interno di una finestra di dialogo e modificare le impostazioni delle opzioni tramite la tastiera.
 
-### <a name="set-dialog-box-options-from-the-keyboard"></a>Set di opzioni della finestra di dialogo dalla tastiera
+### <a name="set-dialog-box-options-from-the-keyboard"></a>Impostare le opzioni di una finestra di dialogo tramite tastiera
 
 1. Usare **Tab** o **Maiusc**+**Tab** per spostarsi in alto o in basso tra i controlli della finestra di dialogo.
 
 2. Per modificare le impostazioni delle opzioni:
 
-   - Per pulsanti di opzione, usare il **freccia** e **freccia giù** tasti di modifica della selezione.
+   - Per modificare la selezione di un pulsante di opzione, usare **Freccia SU** e **Freccia GIÙ**.
 
-   - Per le caselle di controllo, premere **barra spaziatrice** selezionare o deselezionare.
+   - Per selezionare o deselezionare una casella di controllo, premere la **Barra spaziatrice**.
 
-   - Per gli elenchi a discesa, utilizzare **Alt**+**freccia giù** per visualizzare gli elementi e quindi usare il **giù** e **freccia in giù** tasti per modificare l'elemento selezionato.
+   - Per un elenco a discesa, usare **ALT**+**Freccia GIÙ** per visualizzare le voci e quindi usare **Freccia SU** e **Freccia GIÙ** per selezionare un'altra voce.
 
    - Per azionare un pulsante, selezionare **Invio**.
 
-   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco di riepilogo a discesa nelle griglie, usare **Shift**+**Alt**+**freccia giù** per visualizzare gli elementi e quindi usare il **freccia** e **freccia giù** giù per modificare l'elemento selezionato.
+   - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa in una griglia, usare **MAIUSC**+**ALT**+**Freccia GIÙ** per visualizzare le voci e quindi usare **Freccia SU** e **Freccia GIÙ** per selezionare un'altra voce.
 
 ## <a name="window-and-file-navigation"></a>Spostamento tra finestre e file
 
 Esistono vari modi in cui usare la tastiera per spostarsi tra le finestre degli strumenti e dei documenti aperti. Con la tastiera è anche possibile spostare e ancorare le finestre degli strumenti in posizioni diverse.
 
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>Spostarsi tra le finestre e i file nell'IDE
+### <a name="navigate-among-windows-and-files-in-the-ide"></a>Spostarsi tra finestre e file nell'ambiente di sviluppo integrato
 
-- Per spostarsi tra i file in un editor o finestra di progettazione, scegliere il **Ctrl**+**Tab** tasti di scelta rapida per visualizzare l'IDE Navigator con **file attivi** selezionato. Scegliere **Invio** per passare alla finestra evidenziata.
+- Per passare da un file all'altro in un editor o in una finestra di progettazione, scegliere i tasti di scelta rapida **CTRL**+**Tab** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **File attivi** selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
 
-- Per spostarsi tra finestre degli strumenti ancorate, scegliere il **Alt**+**F7** tasti di scelta rapida per visualizzare l'IDE Navigator con **Active strumento Windows** selezionato. Premere **INVIO** per passare alla finestra evidenziata.
+- Per spostarsi tra finestre degli strumenti ancorate, scegliere i tasti di scelta rapida **Alt**+**F7** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **Finestre degli strumenti attive** selezionata. Premere **INVIO** per passare alla finestra evidenziata.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Per spostare e ancorare finestre degli strumenti tramite la tastiera
 
@@ -88,7 +88,7 @@ Esistono vari modi in cui usare la tastiera per spostarsi tra le finestre degli 
 
 2. Nel menu **Finestra** selezionare l'opzione **Finestra ancorata**.
 
-3. Premere **Alt**+**barra spaziatrice**, quindi scegliere **spostare**.
+3. Premere **ALT**+**Barra spaziatrice** e quindi scegliere **Sposta**.
 
    Verrà visualizzata la guida a forma di rombo per l'ancoraggio.
 

@@ -25,7 +25,7 @@ ms.locfileid: "66747732"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
-Visual Studio Usa [espressioni regolari di .NET](/dotnet/standard/base-types/regular-expressions) per trovare e sostituire il testo.
+Visual Studio usa le [espressioni regolari di .NET](/dotnet/standard/base-types/regular-expressions) per trovare e sostituire il testo.
 
 ## <a name="replacement-patterns"></a>Modelli di sostituzione
 

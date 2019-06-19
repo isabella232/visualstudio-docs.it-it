@@ -57,14 +57,14 @@ Per informazioni su come accedere a questa proprietà a livello di programmazion
 
 ### <a name="target-framework-all-configurations"></a>Framework di destinazione (tutte le configurazioni)
 
-Specifica la versione di .NET che gli obiettivi dell'applicazione. Questa opzione può avere valori diversi a seconda che le versioni di .NET installate nel computer.
+Specifica la versione di .NET a cui è destinata l'applicazione. Questa opzione può avere valori diversi a seconda delle versioni di .NET installate nel computer in uso.
 
-Per i progetti .NET Framework, il valore predefinito corrisponde al framework di destinazione specificato durante la creazione del progetto.
+Per i progetti .NET Framework, il valore predefinito corrisponde al framework di destinazione specificato al momento della creazione del progetto.
 
 > [!NOTE]
 > I pacchetti prerequisiti elencati nella [finestra di dialogo Prerequisiti](../../ide/reference/prerequisites-dialog-box.md) vengono installati automaticamente alla prima apertura della finestra di dialogo. In caso di modifiche successive al framework di destinazione del progetto, sarà necessario specificare manualmente i prerequisiti in modo che vi sia corrispondenza.
 
-Per altre informazioni, vedere [Procedura: Destinare una versione di .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Framework come destinazione Panoramica](../../ide/visual-studio-multi-targeting-overview.md).
+Per altre informazioni, vedere [Procedura: Scegliere una versione di .NET Framework di destinazione](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Panoramica sull'impostazione dei framework di destinazione](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo di applicazione
 

@@ -51,7 +51,7 @@ Se si chiude la **Pagina iniziale** e si vuole visualizzarla di nuovo, è possib
 
 All'apertura di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per clonare o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
 
-[![Finestra di avvio in Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Finestra iniziale in Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
 

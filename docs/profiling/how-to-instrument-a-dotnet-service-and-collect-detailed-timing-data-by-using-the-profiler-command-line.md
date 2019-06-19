@@ -16,7 +16,7 @@ ms.locfileid: "66747831"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
 
-Questo articolo descrive come usare gli strumenti da riga di comando di strumenti di profilatura di Visual Studio per instrumentare un servizio .NET Framework e raccogliere dati di intervallo dettagliati.
+Questo articolo descrive come usare gli strumenti da riga di comando disponibili negli strumenti di profilatura di Visual Studio per instrumentare un servizio .NET Framework e raccogliere dati di intervallo dettagliati.
 
 > [!NOTE]
 > Non è possibile profilare un servizio con il metodo di strumentazione se il servizio non può essere riavviato dopo l'avvio del computer, ad esempio un servizio che viene avviato solo all'avvio del sistema operativo.
@@ -25,7 +25,7 @@ Questo articolo descrive come usare gli strumenti da riga di comando di strument
 >
 > L'aggiunta di dati di interazione tra livelli a un'esecuzione di profilatura richiede procedure specifiche con gli strumenti di profilatura da riga di comando. Vedere [Raccolta di dati di interazione tra livelli](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
-Per raccogliere dati di intervallo dettagliati da un servizio .NET Framework usando il metodo di strumentazione, si utilizza il [VSInstr.exe](../profiling/vsinstr.md) strumento per generare una versione instrumentata del componente. Sostituire quindi la versione non instrumentata del servizio con la versione instrumentata, assicurandosi che il servizio sia configurato per l'avvio manuale. Usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente di profilatura globali e quindi riavviare il computer host. Avviare quindi il profiler.
+Per raccogliere dati di intervallo dettagliati da un servizio .NET Framework tramite il metodo di strumentazione, usare lo strumento [VSInstr.exe](../profiling/vsinstr.md) per generare una versione instrumentata del componente. Sostituire quindi la versione non instrumentata del servizio con la versione instrumentata, assicurandosi che il servizio sia configurato per l'avvio manuale. Usare lo strumento [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) per inizializzare le variabili di ambiente di profilatura globali e quindi riavviare il computer host. Avviare quindi il profiler.
 
 Quando viene avviato il servizio, i dati di intervallo vengono raccolti automaticamente in un file di dati. È possibile sospendere e riprendere la raccolta dei dati durante la sessione di profilatura.
 

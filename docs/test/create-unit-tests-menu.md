@@ -21,7 +21,7 @@ ms.locfileid: "66745805"
 Il comando **Crea unit test** crea stub di metodo di unit. Questa funzionalità consente di semplificare la configurazione di un progetto di test, della classe di test e dello stub del metodo di test all'interno di essa.
 
 > [!NOTE]
-> Il **crea Unit test** comando di menu è disponibile solo per codice gestito destinato a .NET Framework (ma non .NET Core).
+> Il comando di menu **Crea unit test** è disponibile solo per il codice gestito destinato a .NET Framework (ma non a .NET Core).
 
 Il comando di menu **Crea unit test** è estendibile e può essere usato per generare test per MSTest, MSTest V2, NUnit e xUnit.
 
