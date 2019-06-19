@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 Developer incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
+ms.openlocfilehash: 12851dcb19824ceccb16bacbba2fdeec29c7df47
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501195"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032711"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Vantaggio dell'abbonamento a Office 365 Developer nelle sottoscrizioni di Visual Studio
 
@@ -70,8 +70,8 @@ Per altre informazioni sull'abbonamento a Office 365 Developer, vedere le [doman
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Included                                                            |Sì         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              | N/D         |
-| Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+||
 
 <sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), FTE, BizSpark,  MCT Software & Services Developer, MCT Software & Services.  Non include:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD).*
 

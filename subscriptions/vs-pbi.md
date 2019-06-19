@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione Power BI inclusa nelle sottoscrizioni di Visual Studio selezionate.
 searchscope: VS Subscription
-ms.openlocfilehash: bb13ad93095a5a4d0e7c94ae24889220477feb0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948819"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031979"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro nelle sottoscrizioni di Visual Studio
 
@@ -73,8 +73,8 @@ Per usare Power BI Pro, è necessario configurare un account o accedere con un a
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Non disponibile                                                            |N/D         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                                            |N/D         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Disponibile       |  Sì|
-| Visual Studio Dev Essentials | N/D  | Non disponibile |N/D|
 | Visual Studio Enterprise (cloud mensile) | Azure                                       | Non disponibile                                  |N/D|
+||
 
 <sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD).  Non include:  Microsoft Partner Network (MPN), FTE, Imagine.*
 

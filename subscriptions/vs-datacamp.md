@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sulla sottoscrizione di training di DataCamp inclusa nelle sottoscrizioni di Visual Studio selezionate.
 searchscope: VS Subscription
-ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e29f5d13c9869995aad0b7a6793304b677d54ba
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948136"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032170"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio per il training DataCamp nelle sottoscrizioni di Visual Studio
 
@@ -70,7 +70,6 @@ La durata del vantaggio DataCamp varia a seconda della sottoscrizione di Visual 
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori           |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              |  No.  Disponibile solo per i nuovi sottoscrittori           |
-| Visual Studio Dev Essentials | N/D  | 2 mesi | No. Disponibile solo per i nuovi sottoscrittori |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponibile  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
 

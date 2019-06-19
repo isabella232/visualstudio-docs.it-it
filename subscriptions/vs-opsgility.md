@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Skill Me Up di Opsgility incluso in sottoscrizioni selezionate di Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947000"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032815"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Vantaggio di formazione Skill Me Up di Opsgility nelle sottoscrizioni di Visual Studio
 
@@ -39,8 +39,8 @@ Alcune sottoscrizioni di Visual Studio includono fino a sei mesi di accesso a tr
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 mesi                                                            |No.  Disponibile solo per i nuovi sottoscrittori         |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | 3 mesi                                             |  No.  Disponibile solo per i nuovi sottoscrittori         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | 3 mesi                                              | No.  Disponibile solo per i nuovi sottoscrittori         |
-| Visual Studio Dev Essentials | N/D  | Non disponibile | N/D  |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure                                       | Non disponibile                                                           |N/D|
+||
 
 *Non include:  Microsoft Partner Network (MPN), Most Valuable Professional (MVP), Regional Director (RD), Microsoft Certified Trainer, BizSpark, Imagine, NFR, FTE*
 

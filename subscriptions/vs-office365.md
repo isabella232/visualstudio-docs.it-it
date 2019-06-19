@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Office 365 incluso in alcune sottoscrizioni di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263117"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032834"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus nelle sottoscrizioni di Visual Studio
 
-Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 ProPlus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Office 365 include anche servizi come 1 TB di spazio di archiviazione di OneDrive, 60 minuti di Skype al mese e supporto tecnico Microsoft tramite chat e telefono. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
+Creare lavori straordinari. Lavorare ovunque con app sempre aggiornate. Office 365 ProPlus è una sottoscrizione che include app di alto livello, come Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponibili solo su PC). Le app possono essere installate in più dispositivi, inclusi PC, Mac, iPad, iPhone, tablet Android e telefoni Android. Con una sottoscrizione si ottengono le versioni più recenti delle app e si ricevono automaticamente gli aggiornamenti, quando sono disponibili.
 
 ## <a name="getting-started-with-office-365-proplus"></a>Introduzione a Office 365 ProPlus
 
@@ -58,7 +58,7 @@ Se si prevede di sviluppare applicazioni per Office, è opportuno attivare l'[ab
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Non disponibile                                             |  N/D          |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) | Azure | Non disponibile | N/D |
-| Visual Studio Dev Essentials | N/D  | Non disponibile |N/D |
+|  |
 
 <sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
 

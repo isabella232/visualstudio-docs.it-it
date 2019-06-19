@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: conceptual
 description: Informazioni sul vantaggio RStudio Desktop nelle sottoscrizioni di Visual Studio Enterprise
 searchscope: VS Subscription
-ms.openlocfilehash: 59d0e3de91417969e904221e05b5fcd74d8ba44a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b52d22cce30a668065e148494bb84568535eab7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947146"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031953"
 ---
 # <a name="the-rstudio-desktop-benefit-included-in-visual-studio-enterprise-subscriptions"></a>Vantaggio RStudio Desktop incluso nelle sottoscrizioni di Visual Studio Enterprise
 
@@ -91,9 +91,9 @@ RStudio è disponibile nelle edizioni commerciali e open source e viene eseguito
 |         Visual Studio Professional (Standard)          | VL, Retail |   Non disponibile    | N/D |
 |              Visual Studio Test Professional (Standard)              |    VL, Retail     |   Non disponibile    | N/D |
 |                      MSDN Platforms (Standard)                       |    VL, Retail     |   Non disponibile   | N/D |
-|                     Visual Studio Dev Essentials                     |        N/D         |   Non disponibile    |       N/D       |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensile) |       Azure       | Non disponibile |       N/D       |
 |             Visual Studio Enterprise - NFR<sup>1</sup>              |      Programma      | Non disponibile |       N/D       |
+||
 
 <sup>1</sup>  *NFR include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer, MCT Software & Service, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), FTE, Imagine.*
 

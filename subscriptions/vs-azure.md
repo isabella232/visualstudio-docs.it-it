@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni su come attivare il vantaggio Azure incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685919"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032213"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usare Microsoft Azure nelle sottoscrizioni di Visual Studio
 
@@ -30,7 +30,6 @@ I sottoscrittori di Visual Studio possono usare Microsoft Azure senza costi aggi
 |              Visual Studio Professional (mensile)              |        Non disponibile        |                                                             |
 |                    Visual Studio Test Pro                    |     Credito mensile pari a 50 dollari USA      |                             Sì                             |
 |                        MSDN Platforms                        |     Credito mensile pari a 100 dollari USA     |                             Sì                             |
-|                 Visual Studio Dev Essentials                 | Servizi gratuiti + credito di 200 dollari USA | I servizi gratuiti sono perpetui.  Il credito di 200 dollari USA è unico. |
 |               Visual Studio Enterprise - NFR\*               |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |                Visual Studio Enterprise - FTE                |     Credito mensile pari a 150 dollari USA     |                             Sì                             |
 |     Visual Studio Enterprise - Microsoft Partner Network     |     Credito mensile pari a 150 dollari USA     |                             Sì                             |

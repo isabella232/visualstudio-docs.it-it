@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 886a17b4b702802faa06f28ab1df485b56de9636
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261702"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043545"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Esercitazione: Creare una semplice applicazione con C\#
 
@@ -312,4 +312,4 @@ L'esercitazione è stata completata. È possibile trovare il file con estensione
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Suggerimenti per la produttività](../../ide/productivity-tips-for-visual-studio.md)
+- [Suggerimenti per la produttività](../../ide/productivity-features.md)
