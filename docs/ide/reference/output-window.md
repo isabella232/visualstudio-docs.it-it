@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746525"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159938"
 ---
 # <a name="output-window"></a>Output (finestra)
 
@@ -67,7 +67,7 @@ Alcuni comandi e funzionalità dell'IDE richiamati nella [finestra Comando](../.
 
 È anche possibile programmare applicazioni personalizzate per scrivere messaggi di diagnostica in fase di esecuzione in un riquadro **Output**. A tale scopo, usare i membri della classe <xref:System.Diagnostics.Debug> o <xref:System.Diagnostics.Trace> nello spazio dei nomi <xref:System.Diagnostics> dell'API .NET. I membri della classe <xref:System.Diagnostics.Debug> visualizzano l'output quando si compilano configurazioni di debug della soluzione o del progetto, mentre i membri della classe <xref:System.Diagnostics.Trace> visualizzano l'output quando si compilano configurazioni di debug o di rilascio. Per altre informazioni, vedere [Messaggi diagnostici nella finestra di output](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo **F1** in una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattare l'output di un'istruzione di compilazione personalizzata](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+In C++ è possibile creare istruzioni ed eventi di compilazione personalizzati i cui avvisi ed errori vengono visualizzati e conteggiati nel riquadro **Output**. Premendo **F1** in una riga di output, è possibile visualizzare un argomento della Guida appropriato. Per altre informazioni, vedere [Formattare l'output di un'istruzione di compilazione personalizzata](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Comportamento dello scorrimento
 
