@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715270"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195298"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per i difetti del codice
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Procedura dettagliata: Usare analisi statica del codice per individuare i difetti del codice
 
 In questa procedura dettagliata, si sarà analizzare un progetto gestito per i difetti del codice utilizzando lo strumento di analisi codice.
 
-Questa procedura dettagliata viene illustrato il processo di uso di analisi del codice per analizzare gli assembly di codice .NET gestita per verificare la conformità con le linee guida di progettazione .NET.
+Questa procedura dettagliata viene illustrato il processo di uso di analisi statica del codice per analizzare gli assembly di codice .NET gestita per verificare la conformità con le linee guida di progettazione .NET.
 
 ## <a name="create-a-class-library"></a>Creare una libreria di classi
 

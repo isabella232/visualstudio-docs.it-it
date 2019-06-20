@@ -80,6 +80,10 @@
 ### [Introduzione alle funzioni di Azure](azure-functions.md)
 ### [Esercitazione: Funzioni di Azure](azure-functions-lab.md)
 ### [Servizi connessi](connected-services.md)
+## Docker
+### [Introduzione a Docker](docker-quickstart.md)
+### [Creare un'app multi-contenitore con Docker Compose](docker-multi-container.md)
+
 ## Sviluppo di giochi con Unity
 ### [Sviluppo di giochi con Unity](unity-tools.md)
 ### [Configurazione](setup-vsmac-tools-unity.md)
