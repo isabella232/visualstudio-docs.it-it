@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8ac9917bf5163dbb329fd1e34ab0673eb69c1969
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846056"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259237"
 ---
 Visual Studio Tools per Office

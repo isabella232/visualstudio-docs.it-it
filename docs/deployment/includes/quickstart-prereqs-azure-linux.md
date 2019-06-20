@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846333"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256562"
 ---
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -20,6 +20,6 @@ ms.locfileid: "65846333"
 
 * Una sottoscrizione di Azure. Se non si dispone già di una sottoscrizione, [iscriversi gratuitamente](https://azure.microsoft.com/free/dotnet/) per ottenere un credito di $200 per 30 giorni e 12 mesi di accesso ai servizi gratuiti più diffusi.
 
-* Un progetto ASP.NET Core. Se non è già presente, seguire [Avvio rapido: Usare Visual Studio per creare la prima app Web ASP.NET Core](../../ide/quickstart-aspnet-core.md) oppure scegliere **File** > **Nuovo progetto**, selezionare **Visual C#** > **.NET Core** e quindi **Applicazione Web ASP.NET Core**. Quando richiesto, selezionare il modello **Applicazione Web (MVC)**, assicurarsi che sia selezionata **Nessuna autenticazione**, quindi selezionare **OK**.
+* Un progetto ASP.NET Core. Se non è già presente, seguire [Avvio rapido: Usare Visual Studio per creare la prima app Web ASP.NET Core](../../ide/quickstart-aspnet-core.md) oppure scegliere **File** > **Nuovo progetto**, selezionare **Visual C#**  >  **.NET Core** e quindi **Applicazione Web ASP.NET Core**. Quando richiesto, selezionare il modello **Applicazione Web (MVC)** , assicurarsi che sia selezionata **Nessuna autenticazione**, quindi selezionare **OK**.
 
 * Assicurarsi di compilare il progetto usando il comando di menu **Compila > Compila soluzione** prima di seguire i passaggi per la distribuzione.
