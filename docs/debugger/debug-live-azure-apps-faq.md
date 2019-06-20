@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431849"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255986"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -169,7 +169,7 @@ Per il servizio App:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Tutte le modifiche alle impostazioni dell'applicazione verranno avviato un riavvio dell'app. Informazioni dettagliate sulle impostazioni dell'applicazione sono reperibili [qui](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Tutte le modifiche alle impostazioni dell'applicazione verranno avviato un riavvio dell'app. Per altre informazioni sulle impostazioni dell'applicazione, vedere [configurare un'app di servizio App nel portale di Azure](/azure/app-service/web-sites-configure).
 
 Per servizio contenitore di AZURE:
 1. Aggiornare il Dockerfile per rimuovere le sezioni relative ai [Visual Studio Snapshot Debugger in immagini Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).

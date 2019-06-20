@@ -14,15 +14,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 13ca035b01ec8af1277d70b3c792293a1af4687a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839734"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256206"
 ---
 Questi passaggi illustrano solo una configurazione di base di IIS. Per informazioni dettagliate o per installare un computer Desktop Windows, vedere [pubblicazione in IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration) oppure [IIS 8.0 Using ASP.NET 3.5 e ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-Per i sistemi operativi Windows Server, usare il **Aggiungi ruoli e funzionalità** procedura guidata tramite il **Gestisci** collegamento o il **Dashboard** clic sul collegamento nella **Server Manager**. Nel passaggio **Ruoli del server** selezionare la casella per **Server Web (IIS)**.
+Per i sistemi operativi Windows Server, usare il **Aggiungi ruoli e funzionalità** procedura guidata tramite il **Gestisci** collegamento o il **Dashboard** clic sul collegamento nella **Server Manager**. Nel passaggio **Ruoli del server** selezionare la casella per **Server Web (IIS)** .
 
 ![Il ruolo Server Web IIS viene selezionato nel passaggio dei ruoli del server Selezionare.](../media/remotedbg-server-roles-ws2012.png)
 
