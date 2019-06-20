@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 516f3d87efd61189a3890f7e83064a96adad7e2d
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037392"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195227"
 ---
 # <a name="general-debugging-options"></a>Opzioni di debug generali
 
@@ -61,15 +61,15 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Abilita Just My Code**: Il debugger visualizza ed esegue solo il codice utente ("My Code"), ignorando il codice di sistema e altro codice ottimizzato o privo di simboli di debug.
 
-- **Avvisa se all'avvio non è presente codice utente (solo gestito)**:   Quando il debug viene avviato con Just My Code attivato, questa opzione determina la visualizzazione di un avviso se non è presente codice utente ("My Code").
+- **Avvisa se all'avvio non è presente codice utente (solo gestito)** :   Quando il debug viene avviato con Just My Code attivato, questa opzione determina la visualizzazione di un avviso se non è presente codice utente ("My Code").
 
 **Abilita esecuzione di istruzioni origine .NET Framework**: Consente al debugger di eseguire l'origine di .NET Framework. Attivazione di questa opzione disattiva automaticamente Just My Code. .NET framework simboli verranno scaricati in un percorso della cache. Modificare il percorso della cache con la **le opzioni** della finestra di dialogo **debug** categoria **simboli** pagina.
 
-**Esegui istruzione/routine di proprietà e operatori (solo gestito)**: Impedisce al debugger di eseguire istruzioni di proprietà e operatori nel codice gestito.
+**Esegui istruzione/routine di proprietà e operatori (solo gestito)** : Impedisce al debugger di eseguire istruzioni di proprietà e operatori nel codice gestito.
 
 **Abilita valutazione delle proprietà e altre chiamate di funzioni implicite**: Attiva la valutazione automatica di proprietà e altre chiamate di funzioni implicite nelle finestre delle variabili e nella finestra di dialogo **Controllo immediato**.
 
-- **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (solo C# e JavaScript)**: Esegue una chiamata di conversione delle stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Il risultato viene visualizzato come stringa anziché il nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposto a override mediante l'attributo DebuggerDisplay (vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).
+- **Chiama la funzione di conversione delle stringhe su oggetti nelle finestre delle variabili (solo C# e JavaScript)** : Esegue una chiamata di conversione delle stringhe implicita durante la valutazione di oggetti nelle finestre delle variabili. Il risultato viene visualizzato come stringa anziché il nome del tipo. Questa opzione è applicabile solo al debug in codice C#. Questa impostazione può essere sottoposto a override mediante l'attributo DebuggerDisplay (vedere [usando l'attributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).
 
 **Abilita il supporto del server di origine**: Indica al debugger di Visual Studio di ottenere i file di origine da server di origine che implementano il protocollo di SrcSrv (`srcsrv.dll`). Team Foundation Server e gli strumenti di debug per Windows sono due server di origine che implementano il protocollo. Per altre informazioni sull'installazione di SrcSrv, vedere la [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) documentazione. Inoltre, vedere [specificare i simboli (PDB) e i file di origine](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
@@ -78,7 +78,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 - **Visualizza i messaggi diagnostici del server di origine nella finestra di output**:   Quando è attivato il supporto per il server di origine, questa opzione attiva la visualizzazione dei messaggi di diagnostica.
 
-- **Consenti server origine per assembly parzialmente attendibili (solo gestito)**:   Quando il supporto del server di origine è abilitato, questa impostazione esegue l'override del comportamento predefinito che non recupera le origini per gli assembly parzialmente attendibili.
+- **Consenti server origine per assembly parzialmente attendibili (solo gestito)** :   Quando il supporto del server di origine è abilitato, questa impostazione esegue l'override del comportamento predefinito che non recupera le origini per gli assembly parzialmente attendibili.
 
 - **Esegui sempre comandi del server di origine non attendibili senza chiedere conferma**:   Quando è abilitato il supporto del server di origine, questa impostazione esegue l'override del comportamento predefinito di richiesta di conferma quando si esegue un comando non attendibile.
 
@@ -89,7 +89,7 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 - **Esegui fallback all'autenticazione di Gestione credenziali GIT per tutte le richieste di collegamento all'origine**:   Quando è abilitato il supporto di collegamento all'origine e una richiesta di collegamento all'origine non riesce l'autenticazione, Visual Studio chiama quindi il Git Credential Manager.
 
-**Evidenzia intera riga per i punti di interruzione e l'istruzione corrente (solo C++)**: Quando il debugger evidenzia un punto di interruzione o l'istruzione corrente, estende l'evidenziazione all'intera riga.
+**Evidenzia intera riga per i punti di interruzione e l'istruzione corrente (solo C++)** : Quando il debugger evidenzia un punto di interruzione o l'istruzione corrente, estende l'evidenziazione all'intera riga.
 
 **Richiedi corrispondenza esatta dei file di origine con la versione originale**: Indica al debugger di verificare che un file di origine corrisponda alla versione del codice sorgente utilizzato per compilare l'eseguibile sottoposto a debug. Quando la versione non corrisponde, viene chiesto di trovare un'origine corrispondente. Se la ricerca ha esito negativo, il codice sorgente non verrà visualizzato durante il debug.
 
@@ -97,17 +97,17 @@ Nelle condizioni di 2 e 3, l'eccezione viene talvolta intercettata dal codice ge
 
 **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili**: Disattiva tutte le personalizzazioni di visualizzazione della struttura degli oggetti. Per altre informazioni sulla personalizzazione delle visualizzazioni, vedere [creare viste personalizzate di oggetti. Managed](../debugger/create-custom-views-of-dot-managed-objects.md).
 
-**Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)**: Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [JIT debug e ottimizzazione](../debugger/jit-optimization-and-debugging.md).
+**Disattiva l'ottimizzazione JIT al caricamento del modulo (solo gestito)** : Disabilita l'ottimizzazione JIT del codice gestito quando un modulo viene caricato e JIT viene compilato al momento della connessione al debugger. La disabilitazione dell'ottimizzazione JIT può semplificare il debug di determinati errori, anche se può avere effetti negativi sulle prestazioni. Se si usa Just My Code e si disattiva l'ottimizzazione JIT, è possibile che il codice non utente venga visualizzato come codice utente ("My Code"). Per altre informazioni, vedere [JIT debug e ottimizzazione](../debugger/jit-optimization-and-debugging.md).
 
-**Abilita il debug JavaScript per ASP.NET (Chrome, Microsoft Edge e Internet Explorer)**: Consente al debugger di script per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato. Disabilitare questa opzione per ripristinare il comportamento legacy.
+**Abilita il debug JavaScript per ASP.NET (Chrome, Microsoft Edge e Internet Explorer)** : Consente al debugger di script per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato. Disabilitare questa opzione per ripristinare il comportamento legacy.
 
-**Abilita strumenti di sviluppo Edge per app JavaScript per la piattaforma UWP (sperimentale)**: Abilita strumenti di sviluppo per le app UWP JavaScript in Microsoft Edge.
+**Abilita strumenti di sviluppo Edge per app JavaScript per la piattaforma UWP (sperimentale)** : Abilita strumenti di sviluppo per le app UWP JavaScript in Microsoft Edge.
 
 **Abilita il debugger JavaScript legacy di Chrome per ASP.NET**: Consente al debugger di script JavaScript di Chrome legacy per le app ASP.NET. Al primo utilizzo in Chrome, potrebbe essere necessario accedere al browser per abilitare le estensioni Chrome che è stato installato.
 
 **Avvia il debug di Chrome JavaScript in modo sperimentale durante l'esecuzione di Visual Studio come amministratore**: Indica a Visual Studio per provare un nuovo modo per avviare Chrome durante il debug di JavaScript.
 
-**Carica esportazioni DLL (solo Nativo)**: Carica le tabelle di esportazione DLL. Le informazioni sui simboli delle tabelle di esportazione DLL possono essere utili se usano messaggi Windows, routine Windows (WindowProc), oggetti COM, marshalling o qualsiasi DLL per cui non sono disponibili simboli. La lettura di informazioni di esportazione DLL comporta un sovraccarico. Pertanto questa funzionalità è disattivata per impostazione predefinita.
+**Carica esportazioni DLL (solo Nativo)** : Carica le tabelle di esportazione DLL. Le informazioni sui simboli delle tabelle di esportazione DLL possono essere utili se usano messaggi Windows, routine Windows (WindowProc), oggetti COM, marshalling o qualsiasi DLL per cui non sono disponibili simboli. La lettura di informazioni di esportazione DLL comporta un sovraccarico. Pertanto questa funzionalità è disattivata per impostazione predefinita.
 
 Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL, usare `dumpbin /exports`. I simboli sono disponibili per tutte le DLL di sistema a 32 bit. Leggendo l'output di `dumpbin /exports`, è possibile visualizzare il nome esatto della funzione, compresi i caratteri non alfanumerici. Ciò risulta utile per impostare un punto di interruzione su una funzione. I nomi di funzione delle tabelle di esportazione DLL possono apparire troncati in altri punti del debugger. Le chiamate sono elencate nell'ordine di chiamata, con la funzione corrente (al più alto livello di annidamento) all'inizio dell'elenco. Per altre informazioni, vedere [dumpbin /exports](/cpp/build/reference/dash-exports).
 
@@ -126,9 +126,9 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 **Usa gli analizzatori di espressioni C# e VB legacy**: Il debugger userà Visual Studio 2013 C# o Visual Basic gli analizzatori di espressioni anziché gli analizzatori di espressioni basate su Visual Studio 2015 Roslyn.
 
-**Avvisa quando si usano visualizzatori di debugger personalizzati in caso di processi potenzialmente non sicuri (solo gestito)**: Visual Studio genera avvisi quando si usa un visualizzatore di debugger personalizzato che esegue codice nel processo oggetto del debug perché potrebbe essere in esecuzione codice unsafe.
+**Avvisa quando si usano visualizzatori di debugger personalizzati in caso di processi potenzialmente non sicuri (solo gestito)** : Visual Studio genera avvisi quando si usa un visualizzatore di debugger personalizzato che esegue codice nel processo oggetto del debug perché potrebbe essere in esecuzione codice unsafe.
 
-**Abilita l'allocatore di heap per il debug di Windows (solo nativo)**: Consente all'heap per il debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.
+**Abilita l'allocatore di heap per il debug di Windows (solo nativo)** : Consente all'heap per il debug di Windows di migliorare la diagnostica dell'heap. L'abilitazione di questa opzione influirà sulle prestazioni di debug.
 
 **Abilita strumenti di debug dell'interfaccia utente per XAML**: Le finestre Struttura ad albero visuale attiva e Esplora proprietà attive vengono visualizzate quando si avvia il debug (**F5**) di un tipo di progetto supportato. Per altre informazioni, vedere [delle proprietà di ispezionare XAML durante il debug](../debugger/inspect-xaml-properties-while-debugging.md).
 
@@ -146,13 +146,17 @@ Per visualizzare i simboli disponibili nella tabella di esportazione di una DLL,
 
 - **Abilita Modifica e continuazione nativo**: È possibile usare la funzionalità Modifica e continuazione durante il debug del codice C++ nativo. Per altre informazioni, vedere [modifica e continuazione (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
 
-- **Applica le modifiche durante la continuazione (solo nativo)**: Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche con il comando **Applica modifiche del codice** nel menu **Debug**.
+- **Applica le modifiche durante la continuazione (solo nativo)** : Visual Studio compila e applica automaticamente le modifiche di codice in sospeso apportate quando il processo viene ripreso da uno stato di interruzione. Se non è selezionato, è possibile scegliere di applicare le modifiche con il comando **Applica modifiche del codice** nel menu **Debug**.
 
-- **Avvisa in caso di codice non aggiornato (solo nativo)**:   Consente di ricevere avvisi relativi al codice non aggiornato.
+- **Avvisa in caso di codice non aggiornato (solo nativo)** :   Consente di ricevere avvisi relativi al codice non aggiornato.
 
 **Mostra Run a fare clic sul pulsante nell'editor durante il debug**: Quando questa opzione è selezionata, il [Esegui fino al clic](../debugger/debugger-feature-tour.md#run-to-a-point-in-your-code-quickly-using-the-mouse) pulsante verrà visualizzato durante il debug.
 
 **Chiudi automaticamente la console quando viene arrestato il debug**: Indica a Visual Studio per chiudere la console alla fine di una sessione di debug.
+
+::: moniker range=">= vs-2019" 
+**Abilita valutazione delle espressioni veloce (solo gestito)** : Consente al debugger di tentare una valutazione più rapida simulando l'esecuzione di semplici proprietà e metodi.
+::: moniker-end
 
 ## <a name="options-available-in-older-versions-of-visual-studio"></a>Opzioni disponibili nelle versioni precedenti di Visual Studio
 
@@ -162,7 +166,7 @@ Se si usa una versione precedente di Visual Studio, alcune opzioni aggiuntive po
 
 **Rimuovi stack di chiamate su eccezioni non gestite**: La finestra **Stack di chiamate** esegue il rollback dello stack di chiamate al punto precedente l'eccezione non gestita.
 
-**Avvisa se non vi sono simboli all'avvio (solo nativo)**: Visualizza una finestra di dialogo di avviso quando si esegue il debug di un programma per il quale il debugger non dispone di alcuna informazione sui simboli.
+**Avvisa se non vi sono simboli all'avvio (solo nativo)** : Visualizza una finestra di dialogo di avviso quando si esegue il debug di un programma per il quale il debugger non dispone di alcuna informazione sui simboli.
 
 **Avvisa se il debug degli script è disabilitato all'avvio**: Visualizza una finestra di dialogo di avviso ogni volta che il debugger viene avviato con il debug degli script disabilitato.
 

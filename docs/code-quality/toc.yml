@@ -21,6 +21,8 @@
       items:
         - name: Panoramica
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: 'Procedura dettagliata: Analisi del codice statico'
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migrazione
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Eliminazione degli avvisi
           items:
-            - name: Non visualizzare gli avvisi
-              href: in-source-suppression-overview.md
-            - name: Non visualizzare gli avvisi relativi all'analisi del codice generato
+            - name: Non visualizzare gli avvisi relativi all'analisi del codice statico per il codice generato
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Errori nell'applicazione dell'analisi del codice
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: errori di FxCopCmd
               href: fxcopcmd-errors.md
+        - name: Criteri di archiviazione
+          items:
+            - name: Come creare o aggiornare i criteri di archiviazione
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: Implementare criteri di archiviazione di analisi del codice
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: Applicare codice gestibile
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: Sincronizzare i set di regole del progetto con i criteri di archiviazione
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: Compatibilità tra versioni
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Analizzatori FXCop
       items:
         - name: Panoramica
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: Usare l'Editor set di regole
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: Criteri di archiviazione
-      items:
-        - name: Come creare o aggiornare i criteri di archiviazione
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementare criteri di archiviazione di analisi del codice
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Applicare codice gestibile
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Sincronizzare i set di regole del progetto con i criteri di archiviazione
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: Compatibilità tra versioni
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Metrica del codice
       items:
         - name: Panoramica
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: Set di regole di sicurezza per codice gestito
               href: security-rules-rule-set-for-managed-code.md
+        - name: Non visualizzare gli avvisi
+          href: in-source-suppression-overview.md
         - name: Avvisi del codice gestito
           items:
             - name: Panoramica
