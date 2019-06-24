@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Recuperano i messaggi non letti dalla posta in arrivo'
+title: Ottenere i messaggi non letti dalla posta in arrivo a livello di codice
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b618d09fb8b11f98077ab3bb49e32a28869e5b04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a718d6a8ee4eb633b34e1e12f85d578dc99fa6
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955654"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328934"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Procedura: Recuperano i messaggi non letti dalla posta in arrivo
   Questo esempio richiama messaggi di posta elettronica non letta dalla Outlook **posta in arrivo** e visualizza il numero di elementi.
