@@ -1,5 +1,5 @@
 ---
-title: 'Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante'
+title: Testo visualizzato nella casella di testo nel documento tramite pulsante
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8f3c467abcee8fb4faafd2da06ba261e7f3039fe
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443836"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328748"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procedura dettagliata: Testo visualizzato in una casella di testo in un documento tramite un pulsante
   Questa procedura dettagliata illustra come usare i pulsanti e le caselle di testo in una personalizzazione a livello di documento per Microsoft Office Word.
