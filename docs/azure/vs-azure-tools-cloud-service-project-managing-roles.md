@@ -4,9 +4,7 @@ description: Informazioni su come aggiungere e rimuovere i ruoli nei servizi clo
 author: ghogen
 manager: jillfra
 assetId: 5ec9ae2e-8579-4e5d-999e-8ae05b629bd1
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
@@ -30,7 +28,7 @@ La procedura seguente consente di aggiungere un ruolo Web o di lavoro a un proge
 
 1. Fare clic con il pulsante destro del mouse sul nodo **Ruoli** per visualizzare il menu di scelta rapida. Dal menu di scelta rapida selezionare **Aggiungi** quindi selezionare un ruolo Web o di lavoro esistente dalla soluzione corrente o creare un progetto per il ruolo Web o di lavoro. È inoltre possibile selezionare un progetto appropriato, ad esempio un progetto di applicazione Web ASP.NET, e associarlo a un progetto di ruolo.
 
-    ![Opzioni di menu per aggiungere un ruolo a un progetto di servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
+   ![Opzioni di menu per aggiungere un ruolo a un progetto di servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/add-role.png)
 
 ## <a name="removing-a-role-from-an-azure-cloud-service"></a>Rimuovere un ruolo da un servizio cloud di Azure
 La procedura seguente consente di rimuovere un ruolo Web o di lavoro da un progetto del servizio cloud di Azure in Visual Studio.
@@ -43,7 +41,7 @@ La procedura seguente consente di rimuovere un ruolo Web o di lavoro da un proge
 
 1. Fare clic con il pulsante destro del mouse sul nodo che si desidera rimuovere e, dal menu di scelta rapida, scegliere **Rimuovi**.
 
-    ![Opzioni di menu per aggiungere un ruolo a un servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
+   ![Opzioni di menu per aggiungere un ruolo a un servizio cloud di Azure](./media/vs-azure-tools-cloud-service-project-managing-roles/remove-role.png)
 
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>Aggiungere di nuovo un ruolo a un progetto di servizio cloud di Azure
 Se si rimuove un ruolo dal progetto di servizio cloud ma in un secondo momento si decide di aggiungere nuovamente tale ruolo al progetto, verranno aggiunti solo la dichiarazione del ruolo e gli attributi di base, ad esempio gli endpoint e le informazioni di diagnostica. Risorse o riferimenti aggiuntivi non vengono aggiunti al file `ServiceDefinition.csdef` o al file `ServiceConfiguration.cscfg`. Se si vuole aggiungere queste informazioni, è necessario aggiungerle di nuovo a questi file in modo manuale.
