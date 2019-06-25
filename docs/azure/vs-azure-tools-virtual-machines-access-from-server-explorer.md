@@ -4,8 +4,6 @@ description: Panoramica su come visualizzare, creare e gestire macchine virtuali
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -35,7 +33,7 @@ Se ci sono macchine virtuali ospitate da Azure, è possibile accedervi in Esplor
    | Status |I valori includono Avvio in corso, Avviato, Arresto, Arrestato e Recupero dello stato. Se viene visualizzato Recupero dello stato, lo stato corrente è sconosciuto. I valori di questa proprietà differiscono da quelli usati nel [portale di Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | SubscriptionID |ID sottoscrizione dell'account Azure. È possibile vedere queste informazioni nel [portale di Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) visualizzando le proprietà di una sottoscrizione. |
 2. Scegliere un nodo di endpoint e quindi visualizzare la finestra **Proprietà** .
-3. La tabella seguente descrive le proprietà disponibili degli endpoint, che però sono di sola lettura. Per aggiungere o modificare gli endpoint di una macchina virtuale, usare il [portale di Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. La tabella seguente descrive le proprietà disponibili degli endpoint, che però sono di sola lettura. Per aggiungere o modificare gli endpoint di una macchina virtuale, usare il [portale di Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Proprietà | DESCRIZIONE |
    | --- | --- |
