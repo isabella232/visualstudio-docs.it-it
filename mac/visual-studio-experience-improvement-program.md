@@ -30,7 +30,7 @@ Analisi utilizzo software di Visual Studio è attivato per impostazione predefin
 
     ![Selezionare un pulsante di opzione per indicare la preferenza di partecipazione](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Vedere anche
 
