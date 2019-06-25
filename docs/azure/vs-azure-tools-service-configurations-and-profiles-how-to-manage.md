@@ -4,8 +4,6 @@ description: Informazioni su come usare i file di configurazione del servizio e 
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ Quando si pubblica un servizio cloud, Visual Studio archivia le informazioni di 
 
 ### <a name="to-add-a-service-configuration"></a>Per aggiungere una configurazione del servizio
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e selezionare **Gestisci configurazioni**.
-   
+
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio** .
 2. Per aggiungere una configurazione del servizio, è necessario creare una copia di una configurazione esistente. Per eseguire questa operazione, scegliere la configurazione da copiare dall'elenco Nome, quindi selezionare **Crea copia**.
 3. (Facoltativo) Per rinominare una configurazione del servizio, scegliere la nuova configurazione del servizio dall'elenco Nome, quindi selezionare **Rinomina**. Nella casella di testo **Nome** digitare il nome da usare per questa configurazione del servizio, quindi selezionare **OK**.
-   
+
     Un nuovo file di configurazione del servizio denominato ServiceConfiguration.[New Name].cscfg viene aggiunto a un progetto Azure in Esplora soluzioni.
 
 ### <a name="to-delete-a-service-configuration"></a>Per eliminare una configurazione del servizio
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e selezionare **Gestisci configurazioni**.
-   
+
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio** .
 2. Per eliminare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rimuovi**. Verrà visualizzata una finestra di dialogo per verificare se si vuole eliminare questa configurazione.
 3. Selezionare **Elimina**.
-   
+
      Il file di configurazione del servizio viene rimosso dal progetto Azure in Esplora soluzioni.
 
 ### <a name="to-rename-a-service-configuration"></a>Per rinominare una configurazione del servizio
 1. In Esplora soluzioni aprire il menu di scelta rapida per il progetto Azure e selezionare **Gestisci configurazioni**.
-   
+
     Verrà visualizzata la finestra di dialogo **Gestisci configurazioni di servizio** .
 2. Per rinominare una configurazione del servizio, selezionarla dall'elenco **Nome**, quindi scegliere **Rinomina**. Nella casella di testo **Nome** digitare il nome da usare per questa configurazione del servizio, quindi selezionare **OK**.
-   
+
     Il nome del file di configurazione del servizio viene modificato nel progetto Azure in Esplora soluzioni.
 
 ### <a name="to-change-a-service-configuration"></a>Per modificare una configurazione del servizio
@@ -68,16 +66,16 @@ Quando si esegue la procedura guidata per la prima volta, viene creato un profil
 ### <a name="to-add-a-profile"></a>Per aggiungere un profilo
 1. Aprire il menu di scelta rapida per il progetto Azure e quindi selezionare **Pubblica**.
 2. Accanto al **Profilo di destinazione**, selezionare il pulsante **Salva profilo**, come illustrato nella figura seguente. Verrà creato un profilo per l'utente.
-   
+
     ![Creare un nuovo profilo](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Dopo aver creato il profilo, selezionare **<Gestisci…>** nell'elenco **Profilo di destinazione**.
-   
+
     Viene visualizzata la finestra di dialogo **Gestione profili** , come illustrato nella figura seguente.
-   
+
     ![Finestra di dialogo Gestione profili](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Nell'elenco **Nome** scegliere un profilo, quindi selezionare **Crea copia**.
 5. Fare clic su **Chiudi** .
-   
+
     Il nuovo profilo viene visualizzato nell'elenco Profilo di destinazione.
 6. Nell'elenco **Profilo di destinazione** , selezionare il profilo appena creato. Le impostazioni della pubblicazione guidata vengono popolate in base alle opzioni relative al profilo selezionato.
 7. Selezionare i pulsanti **Indietro** e **Avanti** per visualizzare ogni pagina della pubblicazione guidata, quindi personalizzare le impostazioni per il profilo. Per altre informazioni, vedere [Procedura guidata per la pubblicazione dell'applicazione Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
