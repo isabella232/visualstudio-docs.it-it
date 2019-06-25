@@ -4,8 +4,6 @@ description: Informazioni su come fornire le credenziali che Visual Studio può 
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Se si vuole creare un certificato, vedere le istruzioni contenute in [Creare e c
 ## <a name="next-steps"></a>Passaggi successivi
 
 - [Panoramica di App Web](https://docs.microsoft.com/azure/app-service/)
-- [Distribuire l'app nel Servizio app di Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Distribuire l'app nel Servizio app di Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Distribuzione di processi Web usando Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Creare e distribuire un servizio cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
