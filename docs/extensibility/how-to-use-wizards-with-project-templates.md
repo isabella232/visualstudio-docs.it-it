@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352038"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342420"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedura: Usare le procedure guidate con modelli di progetto
 
@@ -68,7 +68,7 @@ Questa procedura viene illustrato come creare una procedura guidata personalizza
 
 3. Aggiungere l'assembly come un asset per il progetto VSIX. Aprire il *vsixmanifest* del file e selezionare il **asset** scheda. Nel **Aggiungi nuovo Asset** finestra, per **tipo** seleziona **Microsoft.VisualStudio.Assembly**, per **origine** selezionare **A progetto nella soluzione corrente**e per **Project** seleziona **MyProjectWizard**.
 
-4. Aggiungere i riferimenti seguenti al progetto VSIX. (In **Esplora soluzioni**, nel nodo del progetto VSIX, selezionare **riferimenti**, pulsante destro del mouse e selezionare **Aggiungi riferimento**.) Nel **Aggiungi riferimento** finestra di dialogo, nella **Framework** scheda, trovare il **System. Windows Forms** assembly e selezionarlo. A questo punto selezionare i **estensioni** scheda. Trovare il **EnvDTE** assembly e selezionarlo. Individuare anche il **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selezionarlo. Fare clic su **OK**.
+4. Aggiungere i riferimenti seguenti al progetto VSIX. (In **Esplora soluzioni**, nel nodo del progetto VSIX, selezionare **riferimenti**, pulsante destro del mouse e selezionare **Aggiungi riferimento**.) Nel **Aggiungi riferimento** finestra di dialogo, nella **Framework** scheda, trovare il **System. Windows Forms** assembly e selezionarlo. Anche trovare e selezionare il **System** e **System. Drawing** assembly. A questo punto selezionare i **estensioni** scheda. Trovare il **EnvDTE** assembly e selezionarlo. Individuare anche il **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selezionarlo. Fare clic su **OK**.
 
 5. Aggiungere una classe per l'implementazione della procedura guidata per il progetto VSIX. (In **Esplora soluzioni**, fare doppio clic sul nodo del progetto VSIX e selezionare **Add**, quindi **nuovo elemento**, quindi **classe**.) Denominare la classe **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Questa procedura viene illustrato come creare una procedura guidata personalizza
 
    - Un <xref:System.Object> matrice che contiene un set di parametri passati alla procedura guidata da Visual Studio.
 
-     Questo esempio viene aggiunto un valore del parametro di input dell'utente per il <xref:System.Collections.Generic.Dictionary%602> parametro. Tutte le istanze del `$custommessage$` parametro del progetto verrà sostituito con il testo immesso dall'utente. Aggiungere al progetto gli assembly seguenti: **System** e **System. Drawing**.
+     Questo esempio viene aggiunto un valore del parametro di input dell'utente per il <xref:System.Collections.Generic.Dictionary%602> parametro. Tutte le istanze del `$custommessage$` parametro del progetto verrà sostituito con il testo immesso dall'utente.
 
 7. A questo punto creare il **UserInputForm**. Nel *WizardImplementation.cs* , aggiungere il codice seguente dopo la fine del `WizardImplementation` classe.
 
