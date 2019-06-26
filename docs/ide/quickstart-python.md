@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953959"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365304"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Guida introduttiva: Creare per la prima volta un'app Web Python con Visual Studio
 
@@ -105,7 +105,7 @@ Con la procedura seguente verrà installata la libreria Flask nell'"ambiente glo
 
     ![Ambiente predefinito visualizzato in Esplora soluzioni](media/quickstart-python-02-default-environment-2019.png)
 
-2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Gestisci pacchetti Python...**. Questo comando aprirà la finestra **Ambienti Python** nella scheda **Pacchetti (PyPI)**.
+2. Fare clic con il pulsante destro del mouse sull'ambiente e selezionare **Gestisci pacchetti Python...** . Questo comando aprirà la finestra **Ambienti Python** nella scheda **Pacchetti (PyPI)** .
 
 3. Immettere "flask" nel campo di ricerca. Se **Flask** viene visualizzato sotto la casella di ricerca, è possibile ignorare questo passaggio. In caso contrario, selezionare **Esegui comando: pip install flask**. Accettare le richieste relative ai privilegi di amministratore e osservare nella finestra **Output** di Visual Studio lo stato dell'operazione. (Un prompt dei comandi per l'elevazione dei privilegi viene visualizzato quando la cartella dei pacchetti per l'ambiente globale si trova all'interno di un'area protetta come *C:\Programmi*.)
 
@@ -177,8 +177,6 @@ A questo punto si aggiunge un frammento di codice Python per implementare un'app
     ::: moniker range=">=vs-2019"
     ![Impostazione del file di avvio per un progetto in Esplora soluzioni](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Fare clic con il pulsante destro del mouse su *app.py* in **Esplora soluzioni** e selezionare **Imposta come file di avvio**. Questo comando identifica il file di codice da avviare in Python quando si esegue l'app.
 
 2. Fare clic con il pulsante destro del mouse in **Esplora soluzioni** e scegliere **Proprietà**. Selezionare quindi la scheda **Debug** e impostare la proprietà **Numero porta** su `4449`. Questo passaggio garantisce che Visual Studio avvii un browser con `localhost:4449` per creare una corrispondenza con gli argomenti `app.run` nel codice.
 

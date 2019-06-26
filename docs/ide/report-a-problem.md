@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980143"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309803"
 ---
 # <a name="overview-report-a-problem"></a>Panoramica: Segnalare un problema
 
@@ -80,7 +80,7 @@ Dopo la segnalazione di un problema, gli stati indicano la fase in cui si trovan
 
 - - -
 
-![Stato Chiuso - Non è un bug per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![Stato Chiuso - Non è un bug per la segnalazione di problemi nella community degli sviluppatori](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 **Chiuso - Non è un bug** indica che è stato stabilito che la funzionalità segnalata al momento opera intenzionalmente nel modo segnalato.
 
