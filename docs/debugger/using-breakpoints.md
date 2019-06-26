@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614522"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365394"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usare i punti di interruzione nel debugger di Visual Studio
 I punti di interruzione rappresentano una delle tecniche di debug più importanti nella casella degli strumenti dello sviluppatore. Ogni volta che si vuole sospendere l'esecuzione del debugger, impostare punti di interruzione. Ad esempio, si desidera visualizzare lo stato delle variabili di codice o esaminare lo stack di chiamate in un determinato punto di interruzione. Se è la prima volta che si esegue il debug del codice, può essere utile leggere [Debug per principianti](../debugger/debugging-absolute-beginners.md) prima di procedere con questo articolo.
@@ -49,7 +49,7 @@ I punti di interruzione rappresentano una delle tecniche di debug più important
 
  Per impostare un punto di interruzione nel codice sorgente, fare clic nel margine di estrema sinistra accanto a una riga di codice. È anche possibile selezionare la riga e premere **F9**, selezionare **Debug** > **Attiva/Disattiva punto di interruzione**, o fare doppio clic e selezionare **puntodiinterruzione**  >  **Inserisci punto di interruzione**. Il punto di interruzione viene visualizzato come un punto rosso nel margine sinistro.
 
-In C# code, punto di interruzione e le righe di esecuzione correnti vengono automaticamente evidenziate. Per C++ codice, è possibile attivare l'evidenziazione di righe corrente in punto di interruzione e selezionando **Tools** (o **Debug**) > **opzioni**  >  **Debugging** >  **Evidenzia intera riga di origine per i punti di interruzione e l'istruzione corrente (C++ solo)**.
+In C# code, punto di interruzione e le righe di esecuzione correnti vengono automaticamente evidenziate. Per C++ codice, è possibile attivare l'evidenziazione di righe corrente in punto di interruzione e selezionando **Tools** (o **Debug**) > **opzioni**  >  **Debugging** >  **Evidenzia intera riga di origine per i punti di interruzione e l'istruzione corrente (C++ solo)** .
 
  ![Impostare un punto di interruzione](../debugger/media/basicbreakpoint.png "base punto di interruzione")
 
@@ -144,9 +144,9 @@ Visivamente traccia dei punti di interruzione durante l'esecuzione di codice, ve
 
 4. Aggiungere il codice seguente per il **nome della funzione** e selezionare **C++** language.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ I punti di interruzione dei dati in .NET Core non funzionerà per:
 - Proprietà che non è espandibile nella descrizione comandi, variabili locali, Auto, variabili o finestra Espressioni di controllo
 - Variabili statiche
 - Classi con l'attributo DebuggerTypeProxy
-- Campi all'interno di struct 
+- Campi all'interno di struct
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Punti di interruzione non funzionano nelle condizioni seguenti:
 - Un processo di cui non viene eseguito il debug scrive nella posizione di memoria.
 - La posizione di memoria è condivisa tra due o più processi.
 - La posizione di memoria viene aggiornata all'interno del kernel. Ad esempio, se passata per il Windows 32-bit `ReadFile` (funzione), la memoria viene aggiornata dalla modalità kernel, in modo che il debugger non interrompe l'esecuzione dell'aggiornamento.
+- Dove l'espressione di controllo è maggiore di 4 byte su hardware a 32 bit e 8 byte in hardware a 64 bit. Si tratta di una limitazione di x86 architettura.
 
->[!NOTE]
->- I punti di interruzione dei dati dipendono da indirizzi di memoria specifica. L'indirizzo di una variabile cambia da una sessione di debug a quella successiva, in modo che i punti di interruzione dei dati vengono disabilitati automaticamente alla fine di ogni sessione di debug.
+> [!NOTE]
+> - I punti di interruzione dei dati dipendono da indirizzi di memoria specifica. L'indirizzo di una variabile cambia da una sessione di debug a quella successiva, in modo che i punti di interruzione dei dati vengono disabilitati automaticamente alla fine di ogni sessione di debug.
 >
->- Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile, pertanto il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dei dati su una variabile locale, è consigliabile eliminare o disabilitare il punto di interruzione prima che la funzione termini.
+> - Se si imposta un punto di interruzione dei dati in una variabile locale, il punto di interruzione resta abilitato quando la funzione termina, ma l'indirizzo di memoria non è più applicabile, pertanto il comportamento del punto di interruzione è imprevedibile. Se si imposta un punto di interruzione dei dati su una variabile locale, è consigliabile eliminare o disabilitare il punto di interruzione prima che la funzione termini.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gestire i punti di interruzione nella finestra Punti di interruzione
 
@@ -273,7 +274,7 @@ Quando si seleziona **espressione condizionale**, è possibile scegliere tra due
 
 3. Aggiungere un nuovo punto di interruzione in corrispondenza del punto in cui che si desidera ricercare; ad esempio, quando l'oggetto deve essere aggiunto alla raccolta. Fare clic con il pulsante destro del mouse sul punto di interruzione e scegliere **Condizioni**.
 
-4. Usare l'ID oggetto nel campo **Espressione condizionale**. Ad esempio, se la variabile `item` è l'oggetto da aggiungere alla raccolta, seleziona **vale** e digitare **item = = $\<n >**, dove \<n > è il numero di ID oggetto .
+4. Usare l'ID oggetto nel campo **Espressione condizionale**. Ad esempio, se la variabile `item` è l'oggetto da aggiungere alla raccolta, seleziona **vale** e digitare **item = = $\<n >** , dove \<n > è il numero di ID oggetto .
 
    L'esecuzione si interromperà in corrispondenza del punto in cui l'oggetto deve essere aggiunto alla raccolta.
 
