@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811891"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261720"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Effettuare il refactoring per convertire un ciclo for in un'istruzione foreach e viceversa
 
@@ -43,7 +43,7 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
 1. Posizionare il punto di inserimento nella parola chiave `for`.
 
-1. Premere **CTRL**+**.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere **CTRL**+ **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu Converti in foreach](media/convert-to-foreach.png)
 
@@ -71,7 +71,7 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 
 1. Posizionare il punto di inserimento nella parola chiave `foreach` o `For Each`.
 
-1. Premere **CTRL**+**.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
+1. Premere **CTRL**+ **.** oppure fare clic sull'icona a forma di cacciavite ![icona cacciavite](../media/screwdriver-icon.png) nel margine del file di codice.
 
    ![Menu Converti in for](media/convert-to-for.png)
 
@@ -80,7 +80,7 @@ Di seguito sono riportati alcuni motivi per cui può essere opportuno convertire
 1. Poiché il refactoring introduce una nuova variabile Numero di iterazioni, la casella **Rinomina** appare nell'angolo superiore destro dell'editor. Se si vuole scegliere un nome diverso per la variabile, digitarlo in e quindi premere **INVIO** oppure selezionare **Applica** nella casella **Rinomina**. Se non si vuole scegliere un nuovo nome, premere **ESC** oppure selezionare **Applica** per chiudere la casella **Rinomina**.
 
 > [!NOTE]
-> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste particolari impostazioni di stile del codice vengono configurate a livello di computer in **Strumenti** > **Opzioni** > **Editor di testo**  >  **C#** > **Stile del codice** > **Generale** > **Preferenze \'var'** oppure a livello di soluzione in un file [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types). Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
+> Per C#, il codice generato da questi refactoring usa un tipo esplicito o [var](/dotnet/csharp/language-reference/keywords/var) per il tipo degli elementi nella raccolta. Il tipo nel codice generato, esplicito o implicito, dipende dalle impostazioni di stile del codice che rientrano nell'ambito. Queste particolari impostazioni di stile del codice vengono configurate a livello di computer in **Strumenti** > **Opzioni** > **Editor di testo**  >  **C#**  > **Stile del codice** > **Generale** > **Preferenze \'var'** oppure a livello di soluzione in un file [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Se si modifica un'impostazione di stile del codice in **Opzioni**, riaprire il file di codice per rendere effettive le modifiche.
 
 ## <a name="see-also"></a>Vedere anche
 
