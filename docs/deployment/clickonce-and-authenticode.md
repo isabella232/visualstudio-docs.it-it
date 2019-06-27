@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900548"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399024"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 *Authenticode* è una tecnologia Microsoft basata sulla crittografia standard che consente di firmare il codice di un'applicazione con certificati digitali che verificano l'autenticità dell'editore dell'applicazione. Usando la tecnologia Authenticode per la distribuzione di applicazioni, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] consente di ridurre i rischi di trojan horse, ovvero virus o altri programmi dannosi presentati da una terza parte malintenzionata in modo ingannevole come programmi legittimi provenienti da una fonte definita e attendibile. Firmare le distribuzioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un certificato digitale è un passaggio facoltativo per verificare che gli assembly e i file non siano stati manomessi.
@@ -33,7 +33,7 @@ ms.locfileid: "62900548"
 ## <a name="authenticode-and-code-signing"></a>Firma del codice e Authenticode
  Un *certificato digitale* è un file che contiene una coppia di chiavi di crittografia pubblica/privata, nonché i metadati relativi all'editore a cui è stato rilasciato il certificato e all'autorità di certificazione.
 
- Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452) (Introduzione alla firma del codice).
+ Esistono vari tipi di certificati Authenticode. Ogni certificato viene configurato per diversi tipi di firma. Per le applicazioni [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] è necessario avere un certificato Authenticode valido per la firma del codice. Se si prova a firmare un'applicazione [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con un altro tipo di certificato, ad esempio un certificato di posta elettronica digitale, l'applicazione non funzionerà. Per altre informazioni, vedere [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools) (Introduzione alla firma del codice).
 
  È possibile ottenere un certificato per la firma del codice in uno dei tre modi seguenti:
 
