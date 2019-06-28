@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567193"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412290"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Strumenti di Entity Framework in Visual Studio
 
 Entity Framework è una tecnologia di mapping relazionale a oggetti che consente agli sviluppatori .NET di utilizzare dati relazionali mediante oggetti specifici di dominio. In questo modo la maggior parte del codice di accesso ai dati che in genere gli sviluppatori devono scrivere non è più necessaria. Entity Framework è il consigliato object relational mapping (ORM) modellazione tecnologia per le nuove applicazioni .NET.
 
-Strumenti di Entity Framework sono progettati per la compilazione di applicazioni Entity Framework (EF). La documentazione completa per Entity Framework è qui: [EF Core ed Entity Framework 6](/ef/).
+Strumenti di Entity Framework sono progettati per la compilazione di applicazioni Entity Framework (EF). La documentazione completa per Entity Framework è qui: [Panoramica - EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > Gli strumenti di Entity Framework descritti in questa pagina vengono utilizzati per generare *edmx* file, che non sono supportati in EF Core. Per generare un modello di EF Core da un database esistente, vedere [Reverse Engineering - EF Core](/ef/core/managing-schemas/scaffolding). Per altre informazioni sulle differenze tra Entity Framework 6 ed Entity Framework Core, vedere [confrontare EF 6 ed Entity Framework Core](/ef/efcore-and-ef6/).
 
 Con strumenti di Entity Framework, è possibile creare un *del modello concettuale* da un oggetto esistente del database e quindi graficamente visualizzare e modificare il modello concettuale. È inoltre possibile creare prima graficamente un modello concettuale e successivamente generare un database di supporto al modello. In entrambi i casi, è possibile aggiornare automaticamente il modello quando viene modificato il database sottostante e generare automaticamente codice del livello oggetti per l'applicazione. La generazione del database e del codice del livello oggetti è personalizzabile.
 
