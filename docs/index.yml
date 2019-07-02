@@ -8,12 +8,6 @@ metadata:
   description: Informazioni su come usare Visual Studio per lo sviluppo di applicazioni, servizi e strumenti nel linguaggio preferito per tutte le piattaforme e i dispositivi.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-  ms.translationtype: HT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462863"
 highlightedContent:
   items:
   - title: Installazione e configurazione
@@ -29,7 +23,7 @@ highlightedContent:
     itemType: learn
     url: /learn/
 conceptualContent:
-  title: Introduzione
+  title: Attività iniziali
   items:
   - title: Informazioni su come usare Visual Studio
     links:
@@ -48,7 +42,7 @@ conceptualContent:
     - text: Eseguire il debug del codice
       itemType: tutorial
       url: debugger/debugger-feature-tour.md
-    - text: Eseguire test del codice
+    - text: Testare il codice
       itemType: tutorial
       url: test/getting-started-with-unit-testing.md
     - text: Accedere ai dati in locale o nel cloud
@@ -92,7 +86,7 @@ conceptualContent:
       itemType: quickstart
       url: /aspnet/core/tutorials/razor-pages/razor-pages-start
 tools:
-  title: Linguaggi
+  title: Languages
   items:
   - title: C++
     imageSrc: https://docs.microsoft.com/media/logos/logo_Cplusplus.svg
@@ -134,7 +128,7 @@ additionalContent:
     - title: Test
       summary: Eseguire i test per i progetti.
       url: test/improve-code-quality.md
-    - title: Distribuzione
+    - title: Distribuire
       summary: Condividere le app tramite Distribuzione Web, InstallShield, Integrazione continua e altre funzionalità.
       url: deployment/index.md
     - title: Controllo della versione
@@ -161,21 +155,54 @@ additionalContent:
   - title: Carichi di lavoro
     items:
     - title: Web e cloud
-      summary: "[Sviluppo Web](/aspnet/) </br>\n[Sviluppo e gestione in Azure](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Archiviazione ed elaborazione dei dati](data-tools/index.md) </br>\n[Data science](python/data-science-and-analytical-applications-workload.md) </br>\n[Sviluppo per Office/SharePoint](https://developer.microsoft.com/office/docs) \n"
-    - title: WINDOWS
-      summary: >
-        [Sviluppo per desktop .NET](/dotnet/framework/develop-client-apps) </br>
-
-        [Sviluppo per la piattaforma UWP (Universal Windows Platform)](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Sviluppo per Windows con C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: Sviluppo Web
+        url: /aspnet/
+      - text: Sviluppo e gestione in Azure
+        url: /visualstudio/azure
+      - text: Python
+        url: /visualstudio/python
+      - text: Node.js
+        url: /visualstudio/javascript
+      - text: Archiviazione ed elaborazione dei dati
+        url: data-tools/index.md
+      - text: Data science
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Sviluppo per Office/SharePoint
+        url: https://developer.microsoft.com/office/docs
+    - title: Windows
+      links:
+      - text: Sviluppo per desktop .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Sviluppo per la piattaforma UWP (Universal Windows Platform)
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Sviluppo per Windows con C++
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Dispositivi mobili e giochi
-      summary: "[Sviluppo di applicazioni per dispositivi mobili con .NET (Xamarin)](/xamarin/) </br>\n[Sviluppo di giochi con Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Sviluppo di applicazioni per dispositivi mobili con JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (solo Visual Studio 2017 e 2015) </br>\n[Sviluppo di applicazioni per dispositivi mobili con C++](/visualstudio/cross-platform/) </br>\n[Sviluppo di giochi con C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Sviluppo di applicazioni per dispositivi mobili con .NET (Xamarin)
+        url: /xamarin/
+      - text: Sviluppo di giochi con Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Sviluppo di app per dispositivi mobili con JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Sviluppo di app per dispositivi mobili con C++
+        url: /visualstudio/cross-platform/
+      - text: Sviluppo di giochi con C++
+        url: /windows/uwp/gaming/e2e
     - title: Altri set di strumenti
-      summary: >
-        [Sviluppo di estensioni di Visual Studio](extensibility/index.md) </br>
-
-        [Sviluppo di applicazioni Linux con C++](/cpp/linux/) </br>
-
-        [Sviluppo multipiattaforma .NET Core](/dotnet/core/)
+      links:
+      - text: Sviluppo di estensioni di Visual Studio
+        url: extensibility/index.md
+      - text: Sviluppo di applicazioni Linux con C++
+        url: /cpp/linux/
+      - text: Sviluppo multipiattaforma .NET Core
+        url: /dotnet/core/
   footer: '[Blog](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Comunicazione di problemi](ide/talk-to-us.md) - [Community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493707"

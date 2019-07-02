@@ -64,23 +64,23 @@
   items:
     - name: Sicurezza e distribuzione di ClickOnce
       items:
-        - name: Sicurezza e distribuzione di ClickOnce
+        - name: Panoramica della sicurezza e della distribuzione di ClickOnce
           href: clickonce-security-and-deployment.md
         - name: Scegliere una strategia di distribuzione ClickOnce
           href: choosing-a-clickonce-deployment-strategy.md
-        - name: Cenni preliminari sulla cache di ClickOnce
+        - name: Panoramica della cache di ClickOnce
           href: clickonce-cache-overview.md
         - name: Impostazioni dell'applicazione e ClickOnce
           href: clickonce-and-application-settings.md
         - name: Distribuzione ClickOnce in Windows Vista
           href: clickonce-deployment-on-windows-vista.md
-        - name: Localizzazione delle applicazioni ClickOnce
+        - name: Localizzazione
           items:
             - name: Localizzazione delle applicazioni ClickOnce
               href: localizing-clickonce-applications.md
             - name: Pubblicare un progetto dotato di impostazioni locali specifiche
               href: how-to-publish-a-project-that-has-a-specific-locale.md
-        - name: Proteggere le applicazioni ClickOnce
+        - name: Sicurezza
           items:
             - name: Proteggere le applicazioni ClickOnce
               href: securing-clickonce-applications.md
@@ -90,7 +90,7 @@
               href: trusted-application-deployment-overview.md
             - name: Sicurezza dall'accesso di codice per applicazioni ClickOnce
               href: code-access-security-for-clickonce-applications.md
-            - name: Abilita impostazioni di sicurezza ClickOnce
+            - name: Abilitare le impostazioni di sicurezza ClickOnce
               href: how-to-enable-clickonce-security-settings.md
             - name: Impostare un'area di sicurezza per un'applicazione ClickOnce
               href: how-to-set-a-security-zone-for-a-clickonce-application.md
@@ -106,7 +106,7 @@
               href: how-to-configure-the-clickonce-trust-prompt-behavior.md
             - name: Firmare i file di installazione con SignTool.exe (ClickOnce)
               href: how-to-sign-setup-files-with-signtool-exe-clickonce.md
-        - name: Pubblicare applicazioni ClickOnce
+        - name: Pubblica
           items:
             - name: Pubblicare applicazioni ClickOnce
               href: publishing-clickonce-applications.md
@@ -132,7 +132,7 @@
               href: how-to-set-the-clickonce-publish-version.md
             - name: Incrementare automaticamente il numero di versione pubblicazione dell'applicazione ClickOnce
               href: how-to-automatically-increment-the-clickonce-publish-version.md
-            - name: Specificare i file da pubblicare mediante ClickOnce
+            - name: Specificare i file
               items:
                 - name: Specificare i file da pubblicare mediante ClickOnce
                   href: how-to-specify-which-files-are-published-by-clickonce.md
@@ -148,13 +148,13 @@
               href: how-to-change-the-publish-language-for-a-clickonce-application.md
             - name: Specificare il nome di un'applicazione ClickOnce per il menu Start
               href: how-to-specify-a-start-menu-name-for-a-clickonce-application.md
-            - name: Specificare un collegamento per il supporto tecnico
+            - name: Specificare il supporto tecnico del partner
               items:
                 - name: Specificare un collegamento per il supporto tecnico
                   href: how-to-specify-a-link-for-technical-support.md
                 - name: Specificare un URL di supporto per i singoli prerequisiti
                   href: how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md
-            - name: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
+            - name: Pagina Pubblica
               items:
                 - name: Specificare una pagina di pubblicazione per un'applicazione ClickOnce
                   href: how-to-specify-a-publish-page-for-a-clickonce-application.md
@@ -166,7 +166,7 @@
               href: how-to-create-file-associations-for-a-clickonce-application.md
             - name: Recuperare informazioni sulle stringhe di query in un'applicazione ClickOnce online
               href: how-to-retrieve-query-string-information-in-an-online-clickonce-application.md
-            - name: Disabilitare gli URL di applicazioni ClickOnce tramite la finestra di progettazione
+            - name: Disabilitare l'attivazione dell'URL
               items:
                 - name: Disabilitare gli URL di applicazioni ClickOnce tramite la finestra di progettazione
                   href: how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md
@@ -176,7 +176,7 @@
               href: how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework.md
             - name: Pubblicare un'applicazione WPF per la quale sono attivati gli stili di visualizzazione
               href: how-to-publish-a-wpf-application-with-visual-styles-enabled.md
-            - name: 'Procedura dettagliata: Scaricare assembly su richiesta tramite la finestra di progettazione'
+            - name: Scaricare assembly su richiesta
               items:
                 - name: 'Procedura dettagliata: Scaricare assembly su richiesta tramite la finestra di progettazione'
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
@@ -184,7 +184,7 @@
                   href: walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 'Procedura dettagliata: Scaricare assembly satellite su richiesta tramite la finestra di progettazione'
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md
-            - name: 'Procedura dettagliata: Distribuire manualmente un''applicazione ClickOnce'
+            - name: Distribuzione manuale
               items:
                 - name: 'Procedura dettagliata: Distribuire manualmente un''applicazione ClickOnce'
                   href: walkthrough-manually-deploying-a-clickonce-application.md
@@ -194,7 +194,7 @@
               href: walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md
             - name: 'Procedura dettagliata: Creare un programma di installazione personalizzato'
               href: walkthrough-creating-a-custom-installer-for-a-clickonce-application.md
-        - name: Scegliere una strategia di aggiornamento ClickOnce
+        - name: Strategia di aggiornamento
           items:
             - name: Scegliere una strategia di aggiornamento ClickOnce
               href: choosing-a-clickonce-update-strategy.md
@@ -206,7 +206,7 @@
               href: how-to-specify-an-alternate-location-for-deployment-updates.md
         - name: Esempi e procedure dettagliate relative alla distribuzione ClickOnce
           href: clickonce-deployment-samples-and-walkthroughs.md
-        - name: Risoluzione dei problemi relativi alle distribuzioni ClickOnce
+        - name: Risoluzione dei problemi
           items:
             - name: Risoluzione dei problemi relativi alle distribuzioni ClickOnce
               href: troubleshooting-clickonce-deployments.md
@@ -224,7 +224,7 @@
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
     - name: Prerequisiti per la distribuzione dell'applicazione
       items:
-        - name: Prerequisiti per la distribuzione dell'applicazione
+        - name: Panoramica dei prerequisiti per la distribuzione dell'applicazione
           href: application-deployment-prerequisites.md
         - name: Prerequisiti per la distribuzione di applicazioni a 64 bit
           href: deploying-prerequisites-for-64-bit-applications.md
@@ -240,7 +240,7 @@
           href: walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md
         - name: Riferimenti dello schema di prodotti e package
           items:
-            - name: Riferimenti dello schema di prodotti e package
+            - name: Panoramica dei riferimenti dello schema di prodotti e package
               href: product-and-package-schema-reference.md
             - name: Elemento <Product> (programma di avvio automatico)
               href: product-element-bootstrapper.md
@@ -262,11 +262,11 @@
   items:
     - name: Riferimenti di ClickOnce
       items:
-        - name: Riferimenti di ClickOnce
+        - name: Panoramica dei riferimenti di ClickOnce
           href: clickonce-reference.md
-        - name: ClickOnce Application Manifest
+        - name: Manifesto dell'applicazione ClickOnce
           items:
-            - name: ClickOnce Application Manifest
+            - name: Panoramica del manifesto dell'applicazione ClickOnce
               href: clickonce-application-manifest.md
             - name: Elemento <assembly> (applicazione ClickOnce)
               href: assembly-element-clickonce-application.md
@@ -284,7 +284,7 @@
               href: fileassociation-element-clickonce-application.md
         - name: Manifesto di distribuzione ClickOnce
           items:
-            - name: Manifesto di distribuzione ClickOnce
+            - name: Panoramica del manifesto di distribuzione ClickOnce
               href: clickonce-deployment-manifest.md
             - name: Elemento <assembly> (distribuzione ClickOnce)
               href: assembly-element-clickonce-deployment.md
