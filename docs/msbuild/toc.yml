@@ -8,9 +8,9 @@
       href: what-s-new-in-msbuild-15-0.md
     - name: Concetti relativi a MSBuild
       items:
-        - name: Concetti relativi a MSBuild
+        - name: Concetti relativi a MSBuild - Panoramica
           href: msbuild-concepts.md
-        - name: Proprietà di MSBuild
+        - name: Proprietà
           items:
             - name: Proprietà di MSBuild
               href: msbuild-properties.md
@@ -22,7 +22,7 @@
               href: how-to-build-the-same-source-files-with-different-options.md
             - name: Funzioni delle proprietà
               href: property-functions.md
-        - name: Elementi MSBuild
+        - name: Elementi
           items:
             - name: Elementi MSBuild
               href: msbuild-items.md
@@ -36,7 +36,7 @@
               href: item-definitions.md
             - name: Funzioni degli elementi
               href: item-functions.md
-        - name: Destinazioni di MSBuild
+        - name: Destinazioni
           items:
             - name: Destinazioni di MSBuild
               href: msbuild-targets.md
@@ -56,7 +56,7 @@
               href: how-to-clean-a-build.md
             - name: Fare riferimento a un SDK di progetto MSBuild
               href: how-to-use-project-sdk.md
-        - name: Attività MSBuild
+        - name: Attività
           items:
             - name: Attività MSBuild
               href: msbuild-tasks.md
@@ -66,7 +66,7 @@
               href: how-to-ignore-errors-in-tasks.md
             - name: Compilare un progetto con risorse
               href: how-to-build-a-project-that-has-resources.md
-            - name: Attività inline di MSBuild
+            - name: Attività inline
               items:
                 - name: Attività inline di MSBuild
                   href: msbuild-inline-tasks.md
@@ -76,7 +76,7 @@
               href: msbuild-roslyncodetaskfactory.md
         - name: Confronto di proprietà ed elementi
           href: comparing-properties-and-items.md
-        - name: Caratteri speciali di MSBuild
+        - name: Caratteri speciali
           items:
             - name: Caratteri speciali di MSBuild
               href: msbuild-special-characters.md
@@ -84,11 +84,11 @@
               href: how-to-escape-special-characters-in-msbuild.md
             - name: Usare caratteri XML riservati nei file di progetto
               href: how-to-use-reserved-xml-characters-in-project-files.md
-    - name: Concetti avanzati relativi a MSBuild
+    - name: Concetti avanzati
       items:
         - name: Concetti avanzati relativi a MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Batch MSBuild
+        - name: Invio in batch
           items:
             - name: Batch MSBuild
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Trasformazioni di MSBuild
           href: msbuild-transforms.md
-        - name: Integrazione di Visual Studio (MSBuild)
+        - name: Integrazione di Visual Studio
           items:
             - name: Integrazione di Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -108,7 +108,7 @@
               href: starting-a-build-from-within-the-ide.md
             - name: Registrazione di estensioni di .NET Framework
               href: registering-extensions-of-the-dotnet-framework.md
-        - name: Compilazione di più progetti in parallelo con MSBuild
+        - name: Creazione di più progetti in parallelo
           items:
             - name: Compilazione di più progetti in parallelo con MSBuild
               href: building-multiple-projects-in-parallel-with-msbuild.md
@@ -116,11 +116,11 @@
               href: using-multiple-processors-to-build-projects.md
             - name: Utilizzo efficiente della memoria nella compilazione di progetti di grandi dimensioni
               href: using-memory-efficiently-when-you-build-large-projects.md
-        - name: Cenni preliminari sul multitargeting di MSBuild
+        - name: Multitargeting
           items:
             - name: Cenni preliminari sul multitargeting di MSBuild
               href: msbuild-multitargeting-overview.md
-            - name: Set di strumenti di MSBuild (ToolsVersion)
+            - name: Set di strumenti (ToolsVersion)
               items:
                 - name: Set di strumenti di MSBuild (ToolsVersion)
                   href: msbuild-toolset-toolsversion.md
@@ -142,7 +142,7 @@
               href: troubleshooting-dotnet-framework-targeting-errors.md
         - name: Rilevamento di file
           items:
-            - name: Rilevamento di file
+            - name: Rilevamento di modifiche - Panoramica
               href: file-tracking.md
             - name: EndTrackingContext
               href: endtrackingcontext.md
@@ -166,9 +166,9 @@
           href: customize-your-build.md
         - name: Procedure consigliate di MSBuild
           href: msbuild-best-practices.md
-    - name: Registrazione a MSBuild
+    - name: Registrazione
       items:
-        - name: Registrazione a MSBuild
+        - name: Registrazione in MSBuild - Panoramica
           href: logging-in-msbuild.md
         - name: Recupero di log di compilazione con MSBuild
           href: obtaining-build-logs-with-msbuild.md
@@ -186,11 +186,11 @@
       href: walkthrough-creating-an-msbuild-project-file-from-scratch.md
     - name: Riferimenti a MSBuild
       items:
-        - name: Riferimenti a MSBuild
+        - name: Informazioni di riferimento su MSBuild - Panoramica
           href: msbuild-reference.md
         - name: Riferimenti dello schema del file di progetto MSBuild
           items:
-            - name: Riferimenti dello schema del file di progetto MSBuild
+            - name: Informazioni di riferimento sullo schema del file di progetto di MSBuild - Panoramica
               href: msbuild-project-file-schema-reference.md
             - name: Elemento Choose (MSBuild)
               href: choose-element-msbuild.md
@@ -236,13 +236,13 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Riferimenti delle attività MSBuild
+        - name: Informazioni di riferimento sulle attività
           items:
-            - name: Riferimenti delle attività MSBuild
+            - name: Informazioni di riferimento sulle attività MSBuild - Panoramica
               href: msbuild-task-reference.md
-            - name: Attività MSBuild specifiche di Visual C++
+            - name: Attività specifiche di Visual C++
               items:
-                - name: Attività MSBuild specifiche di Visual C++
+                - name: Attività MSBuild specifiche di Visual C++ - Panoramica
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: Attività BscMake
                   href: bscmake-task.md
@@ -438,15 +438,15 @@
           href: msbuild-well-known-item-metadata.md
         - name: File di risposta MSBuild
           href: msbuild-response-files.md
-        - name: Informazioni di riferimento su MSBuild WPF
+        - name: Informazioni di riferimento su WPF
           items:
-            - name: Informazioni di riferimento su MSBuild WPF
+            - name: Informazioni di riferimento su MSBuild WPF - Panoramica
               href: wpf-msbuild-reference.md
             - name: File WPF con estensione targets
               href: wpf-dot-targets-files.md
-            - name: Informazioni di riferimento sulle attività MSBuild WPF
+            - name: Informazioni di riferimento sulle attività WPF
               items:
-                - name: Informazioni di riferimento sulle attività MSBuild WPF
+                - name: Informazioni di riferimento sulle attività MSBuild WPF - Panoramica
                   href: wpf-msbuild-task-reference.md
                 - name: Attività FileClassifier
                   href: fileclassifier-task.md
