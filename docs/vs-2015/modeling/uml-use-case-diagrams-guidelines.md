@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424311"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493663"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi caso di utilizzo UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
  ![Maiuscole e minuscole con molteplicità molti a molti](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'attore dell'associazione a **1...\\***.  
+- Per dichiarare che diversi attori della stessa classe possono partecipare a una singola occorrenza di un caso d'uso, impostare la molteplicità alla fine dell'associazione di attore **1..\*** .  
   
    Nell'illustrazione uno o più i ristoranti possono partecipare all'evasione della stessa ordinazione pasto.  
   
-- Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare **\\***.  
+- Per mostrare che ogni attore può partecipare contemporaneamente a diverse occorrenze di un caso d'uso, impostare la molteplicità alla fine dell'associazione al case usare **\*** .  
   
    Nella figura ogni ristorante può cercare di soddisfare più ordini alla volta.  
   
@@ -190,11 +190,11 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
    - **1** per indicare che solo un'istanza di questo ruolo fa parte di ogni collegamento.  
   
-   - **1..\\** * per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
+   - **1..\***  per indicare che una o più istanze di questo ruolo fanno parte di ogni collegamento.  
   
    - **0..1** per indicare che la partecipazione è facoltativa.  
   
-   - **\\** * per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
+   - **\*** per indicare che zero o più istanze di questo ruolo fanno parte del collegamento.  
   
 > [!NOTE]
 > Molti team non inseriscono informazioni sulla molteplicità nei diagrammi caso di utilizzo, lasciando le molteplicità impostate sul valore predefinito 1. Al contrario, forniscono informazioni in descrizioni separate dei casi di utilizzo. In questo caso, verranno nascoste tutte le molteplicità nei diagrammi caso di utilizzo.  
