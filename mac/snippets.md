@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b94a16fbd210bb229881d46071f24c59aea8419e
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540101"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465139"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
@@ -85,8 +85,6 @@ Sono disponibili due parole chiave riservate che è possibile usare in un framme
 - `$end$` &ndash; Quando l'utente termina la modifica delle parole chiave in un frammento di codice, il cursore verrà posizionato in corrispondenza della posizione della parola chiave `$end$`.
 
 Il frammento di codice `for` nella sezione precedente è un esempio di entrambe queste parole chiave riservate.
-
-Per altri dettagli, vedere le [informazioni di riferimento sui frammenti di codice di Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords).
 
 ## <a name="see-also"></a>Vedere anche
 
