@@ -2,23 +2,24 @@
 title: Sottoscrizioni di Visual Studio - Vantaggi per i sottoscrittori
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427793"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493739"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
-Le sottoscrizioni di Visual Studio offrono il set di risorse più completo per creare, distribuire e gestire applicazioni di qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi specifici variano in base al tipo di sottoscrizione disponibile.  Per offrire il massimo valore ai sottoscrittori, i vantaggi offerti cambiano periodicamente per poter proporre le tecnologie, il materiale di training e i vantaggi dei partner più recenti e utili.
+Le sottoscrizioni di Visual Studio (note in precedenza come abbonamenti MSDN) offrono il set di risorse più completo per creare, distribuire e gestire applicazioni di qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi specifici variano in base al tipo di sottoscrizione disponibile.  Per offrire il massimo valore ai sottoscrittori, i vantaggi offerti cambiano periodicamente per poter proporre le tecnologie, il materiale di training e i vantaggi dei partner più recenti e utili.
 
-I vantaggi sono raggruppati in tre categorie:
+
+I vantaggi sono raggruppati in tre categorie nel [portale dei sottoscrittori](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Strumenti
 La categoria Strumenti consente di accedere a un'ampia gamma di vantaggi, tra cui vantaggi principali, come l'[IDE di Visual Studio](vs-ide-benefit.md), [Azure DevOps Services](vs-azure-devops.md) e [Azure](vs-azure.md).  A seconda del livello di sottoscrizione, verranno visualizzati anche gli account Windows e Office 365 Developer, Visual Studio App Center e vantaggi dai partner, come WhiteSource Bolt e ModernRequirements.

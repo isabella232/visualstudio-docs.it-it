@@ -3,21 +3,23 @@ title: Controllo della versione di Team Foundation
 description: Connessione da Visual Studio per Mac a Team Foundation Server/Azure DevOps con il controllo della versione di Team Foundation (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746330"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398996"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connessione al controllo della versione di Team Foundation
 
 > [!NOTE]
 > Per ottenere un'esperienza ottimale di controllo della versione in macOS, è consigliabile usare Git invece del controllo della versione di Team Foundation (TFVC). Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere l'articolo [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
+>
+> Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
 Azure Repos offre due modelli di controllo della versione: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema di controllo della versione distribuito, e il [controllo della versione di Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema di controllo della versione centralizzato.
 
@@ -110,6 +112,8 @@ Per altre informazioni sui comandi qui indicati o su altri comandi, è possibile
 
 > [!NOTE]
 > Per ottenere un'esperienza ottimale di controllo della versione in macOS, è consigliabile usare Git invece del controllo della versione di Team Foundation (TFVC). Git è supportato in Visual Studio per Mac e rappresenta l'opzione predefinita per i repository ospitati in Team Foundation Server (TFS) o Azure DevOps. Per altre informazioni sull'uso di Git con TFS/Azure DevOps, vedere l'articolo [Impostazione di un repository Git](/visualstudio/mac/set-up-git-repository).
+>
+> Se è stata usata in precedenza la versione di anteprima dell'estensione TFVC per Visual Studio per Mac, non è più supportata in caso di aggiornamento a Visual Studio 2019 per Mac.
 
 La raccolta delle estensioni per Visual Studio per Mac include un'estensione del controllo della versione di Team Foundation che offre un supporto limitato per la connessione al controllo della versione di Team Foundation. L'estensione non è supportata e presenta numerosi problemi noti, quindi l'esperienza di uso potrebbe essere variabile.
 
