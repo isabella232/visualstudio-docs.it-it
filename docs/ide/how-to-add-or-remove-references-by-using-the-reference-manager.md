@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745806"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160156"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedura: Aggiungere o rimuovere riferimenti tramite Gestione riferimenti
 
@@ -92,7 +92,7 @@ Alcuni componenti nell'elenco potrebbero non essere visualizzati, a seconda dell
 
 - Un componente che usa una versione recente del framework non è compatibile con un progetto destinato a una versione precedente.
 
-   Per informazioni sulla modifica della versione del framework di destinazione per un progetto, vedere [Procedura: Impostare una versione del framework come destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Per informazioni sulla modifica della versione del framework di destinazione per un progetto, vedere [Panoramica sull'impostazione dei framework di destinazione](visual-studio-multi-targeting-overview.md).
 
 - Un componente che usa .NET Framework 4 non è compatibile con un progetto destinato a .NET Framework 4.5.
 

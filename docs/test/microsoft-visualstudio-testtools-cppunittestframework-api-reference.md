@@ -1,31 +1,32 @@
 ---
 title: API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820773"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132136"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informazioni di riferimento sulle API di Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 In questo argomento sono elencati i membri pubblici dello spazio dei nomi `Microsoft::VisualStudio::CppUnitTestFramework`. Usare queste API per scrivere unit test C++ in base a Microsoft Native Unit Test Framework. È disponibile un [esempio di utilizzo](#example) alla fine dell'argomento.
 
- I file di intestazione sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
+ I file di intestazione sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include**.
 
- I file lib sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
+ I file lib sono disponibili nella cartella _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib**.
 
 I percorsi dei file di intestazione e lib vengono configurati automaticamente in un progetto di test nativo.
 
 ## <a name="In_this_topic"></a> In questo argomento
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Creare classi e metodi di test](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Aggiunge gli attributi definiti con una o più macro `TEST_METHOD_ATTRIBUTE` al metodo di test *testClassName*.
+ Aggiunge gli attributi definiti con una o più macro `TEST_METHOD_ATTRIBUTE` al metodo di test *testMethodName*.
 
  Una macro `TEST_METHOD_ATTRIBUTE` definisce un attributo con il nome *attributeName* e il valore *attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  Una macro `TEST_MODULE_ATTRIBUTE` definisce un attributo con il nome *attributeName* e il valore *attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Attributi predefiniti
- È possibile sostituire queste macro di attributo predefinite alle macro `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` o `TEST_MODULE_ATTRIBUTE` descritte in precedenza.
+
+ Queste macro di attributi predefiniti vengono fornite per maggiore praticità nella gestione dei casi comuni. Possono essere sostituire con la macro `TEST_METHOD_ATTRIBUTE` descritta in precedenza.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Definisce un attributo con il nome `Owner` e il valore di attributo *ownerAlias*.
+ Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Owner` e il valore di attributo *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Definisce un attributo con il nome `Description` e il valore di attributo *description*.
+ Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Description` e il valore di attributo *description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Definisce un attributo con il nome `Priority` e il valore di attributo *priority*.
+ Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Priority` e il valore di attributo *priority*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Definisce un attributo con il nome `WorkItem` e il valore di attributo *workItem*.
+ Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `WorkItem` e il valore di attributo *workItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Definisce un attributo con il nome `Ignore` e il valore di attributo `true`.
+ Definisce un oggetto `TEST_METHOD_ATTRIBUTE` con il nome `Ignore` e il valore di attributo `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

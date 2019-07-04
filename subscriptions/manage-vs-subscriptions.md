@@ -1,18 +1,18 @@
 ---
 title: Gestire le sottoscrizioni di Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833948"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365423"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -125,6 +125,12 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
    > [!div class="mx-imgBorder"]
    > ![Modifica delle informazioni sul profilo](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
+Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
 
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Azure DevOps Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, Azure DevOps Services o IDE associate agli account aziendali o dell'istituto di istruzione.

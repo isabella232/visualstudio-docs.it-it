@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747573"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043359"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Usare Python in Visual Studio in Windows
 
@@ -40,7 +40,7 @@ Per iniziare:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Come specificato da [Python Software Foundation](https://devguide.python.org/#status-of-python-branches), Visual Studio supporta tutte le versioni ufficialmente supportate di Python e, in particolare, le versioni 2.7, 3.5, 3.6 e 3.7.
+> Visual Studio supporta Python versione 2.7, versione 3.5 e versioni successive. Sebbene sia possibile usare Visual Studio per modificare anche il codice scritto in altre versioni di Python, queste non sono ufficialmente supportate e alcune funzionalità, tra cui IntelliSense e il debug, potrebbero non funzionare.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Supporto di più interpreti
@@ -163,15 +163,15 @@ Per altre informazioni, vedere [Azure SDK per Python](/python/azure/?view=azure-
 
 **D. Il supporto di Python è disponibile in Visual Studio per Mac?**
 
-Un  Non in questo momento, ma è possibile votare a favore della richiesta nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
+Un Non in questo momento, ma è possibile votare a favore della richiesta nella [community degli sviluppatori](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentazione di [Visual Studio per Mac](/visualstudio/mac/) identifica gli attuali tipi di sviluppo che supporta. Nel frattempo, Visual Studio Code su Windows, Mac e Linux [funziona bene con Python mediante le estensioni disponibili](https://code.visualstudio.com/docs/languages/python).
 
 **D. Cosa si può usare per compilare un'interfaccia utente con Python?**
 
-Un  La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt-for-application-development/), con le associazioni per Python note come [PySide (l'associazione ufficiale)](https://wiki.qt.io/PySide) (vedere anche [PySide downloads](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). Attualmente il supporto di Python in Visual Studio non include strumenti specifici per lo sviluppo dell'interfaccia utente.
+Un La proposta migliore in questo campo è il [progetto Qt](https://www.qt.io/qt-for-application-development/), con le associazioni per Python note come [PySide (l'associazione ufficiale)](https://wiki.qt.io/PySide) (vedere anche [PySide downloads](https://download.qt.io/official_releases/pyside/.)) e [PyQt](https://wiki.python.org/moin/PyQt). Attualmente il supporto di Python in Visual Studio non include strumenti specifici per lo sviluppo dell'interfaccia utente.
 
 **D. Un progetto Python può produrre un file eseguibile autonomo?**
 
-Un  Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
+Un Python è in genere un linguaggio interpretato, con cui il codice viene eseguito su richiesta in un ambiente in grado di supportare Python, ad esempio Visual Studio e i server Web. Visual Studio attualmente non offre la possibilità di creare un file eseguibile autonomo, ovvero un programma con un interprete Python incorporato. Tuttavia, la community di Python offre diversi modi di creare file eseguibili, come descritto in [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython può anche essere incorporato in un'applicazione nativa, come descritto nel post del blog, [Using CPython's embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Uso del file ZIP incorporabile di CPython).
 
 ::: moniker range="<=vs-2017"
 

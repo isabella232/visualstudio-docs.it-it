@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler | Microsoft Docs'
+title: 'Riga di comando del profiler: Instrumentare un servizio .NET, ottenere dettagli di intervallo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0cd767e505af7e5d503695a1e7aea65dbfe62027
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4f3e03a35719e6dd1cbfa7514a304539dc4f0ca1
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747831"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032054"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedura: Instrumentare un servizio .NET e raccogliere dati di intervallo dettagliati tramite la riga di comando del profiler
 
@@ -60,7 +60,7 @@ Per terminare una sessione di profilatura, chiudere il servizio e arrestare in m
      > [!NOTE]
      > Le opzioni **/user** e **/crosssession** sono in genere obbligatorie per i servizi di profilatura.
 
-     | Opzione | Description |
+     | Opzione | DESCRIZIONE |
      | - | - |
      | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Specifica il dominio e il nome utente dell'account proprietario del processo profilato. Questa opzione è obbligatoria solo se il processo è in esecuzione come utente diverso dall'utente connesso. Il proprietario del processo è elencato nella colonna **Nome utente** nella scheda **Processi** di Gestione attività di Windows. |
      | [/crosssession](../profiling/crosssession.md) | Abilita la profilatura dei processi in altre sessioni. Questa opzione è obbligatoria se l'applicazione è in esecuzione in una sessione diversa. L'ID di sessione è elencato nella colonna **ID sessione** della scheda **Processi** di Gestione attività di Windows. È possibile specificare **/CS** come abbreviazione per **/crosssession**. |
@@ -79,7 +79,7 @@ Mentre il servizio è in esecuzione, è possibile usare le opzioni di *VSPerfCmd
 
 - Le seguenti coppie di opzioni **VSPerfCmd** consentono di avviare e interrompere la raccolta dei dati. Specificare ogni opzione in una riga di comando separata. È possibile attivare e disattivare la raccolta dei dati più volte.
 
-    |Opzione|Description|
+    |Opzione|DESCRIZIONE|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|

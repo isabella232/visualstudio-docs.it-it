@@ -1,36 +1,38 @@
 ---
 title: Configurare unit test con un file con estensione runsettings
-ms.date: 02/28/2018
+ms.date: 06/14/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f7d4da645c464e51bd331bca64066209b52132fe
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9715edff9083a0e99fa52075426d11ea92b7b6e2
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746562"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160207"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurare unit test usando un file con estensione *runsettings*
 
 Gli unit test in Visual Studio possono essere configurati usando un file con estensione *runsettings*. Ad esempio, è possibile modificare la versione di .NET in cui vengono eseguiti i test, la directory dei risultati di test e i dati raccolti durante l'esecuzione dei test.
 
-I file di impostazioni esecuzione test sono facoltativi. Se non è richiesta una configurazione particolare, non sarà necessario alcun file con estensione *runsettings*. L'uso più comune di un file con estensione *runsettings* è la personalizzazione dell'[analisi code coverage](../test/customizing-code-coverage-analysis.md).
+I file di impostazioni esecuzione test sono facoltativi. Se non è richiesta una configurazione particolare, non sarà necessario alcun file con estensione *runsettings*. Un uso piuttosto comune di un file con estensione *runsettings* è la personalizzazione dell'[analisi code coverage](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="specify-a-run-settings-file"></a>Specificare un file di impostazioni esecuzione test
 
 I file di impostazioni esecuzione test possono essere usati per configurare i test eseguiti dalla [riga di comando](vstest-console-options.md), nell'IDE o in un [flusso di lavoro di compilazione](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando Azure Test Plans o Team Foundation Server (TFS).
 
-### <a name="specify-a-run-settings-file-in-the-ide"></a>Specificare un file di impostazioni esecuzione test nell'IDE
+### <a name="ide"></a>IDE
 
-Selezionare **Test** > **Impostazioni test** > **Seleziona file di impostazioni test** e quindi selezionare il file con estensione *runsettings*. Il file viene visualizzato nel menu **Impostazioni test** e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+Per specificare un file di impostazioni esecuzione test, selezionare **Test** > **Impostazioni test** > **Seleziona file di impostazioni test** e quindi selezionare il file con estensione *runsettings*.
 
 ![Selezionare il menu di file di impostazioni test in Visual Studio](media/select-test-settings-file.png)
 
-### <a name="specify-a-run-settings-file-at-the-command-line"></a>Specificare un file di impostazioni esecuzione test dalla riga di comando
+Il file viene visualizzato nel menu **Impostazioni test** e può essere selezionato o deselezionato. Se selezionato, il file di impostazioni esecuzione test viene applicato ogni volta che si seleziona **Analizza code coverage**.
+
+### <a name="command-line"></a>Riga di comando
 
 Per eseguire i test dalla riga di comando, usare *vstest.console.exe* e specificare il file di impostazioni usando il parametro **/Settings**.
 
@@ -52,6 +54,12 @@ Per eseguire i test dalla riga di comando, usare *vstest.console.exe* e specific
 
    ```cmd
    vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings
+   ```
+
+   oppure
+
+   ```cmd
+   vstest.console.exe --settings:test.runsettings test.dll
    ```
 
 Per altre informazioni, vedere [Opzioni della riga di comando di VSTest.Console.exe](vstest-console-options.md).
@@ -174,7 +182,7 @@ L'elemento **RunConfiguration** può includere gli elementi seguenti:
 |Nodo|Impostazione predefinita|Valori|
 |-|-|-|
 |**ResultsDirectory**||Directory in cui vengono inseriti i risultati del test.|
-|**TargetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.|
+|**TargetFrameworkVersion**|Framework40|`FrameworkCore10` per le origini .NET Core, `FrameworkUap10` per le origini basate sulla piattaforma UWP, `Framework45` per .NET Framework 4.5 e versioni successive, `Framework40` per .NET Framework 4.0 e `Framework35` per .NET Framework 3.5.<br /><br />Questa impostazione specifica la versione del framework unit test usata per trovare ed eseguire i test. Può essere diversa dalla versione della piattaforma .NET specificata nelle proprietà di compilazione del progetto di unit test.<br /><br />Se si omette l'elemento `TargetFrameworkVersion` dal file con estensione *runsettings*, la piattaforma determina automaticamente la versione del framework sulla base dei file binari compilati.|
 |**TargetPlatform**|x86|x86, x64|
 |**TreatTestAdapterErrorsAsWarnings**|False|false, true|
 |**TestAdaptersPaths**||Uno o più percorsi della directory in cui si trovano i TestAdapter|
@@ -263,5 +271,6 @@ Queste impostazioni sono specifiche dell'adattatore di test che esegue i metodi 
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Configurare un agente di test](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizzare l'analisi code coverage](../test/customizing-code-coverage-analysis.md)
 - [Attività di test di Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)
