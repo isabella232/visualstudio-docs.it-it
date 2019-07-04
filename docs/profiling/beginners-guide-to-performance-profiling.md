@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688505"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033033"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Misurare le prestazioni dell'applicazione analizzando l'utilizzo della CPU
 È possibile usare gli strumenti di profilatura di Visual Studio per analizzare i problemi di prestazioni nell'applicazione. Questa procedura illustra come usare la scheda **Utilizzo CPU** della finestra Strumenti di diagnostica per ottenere i dati relativi alle prestazioni per l'applicazione. Gli strumenti di diagnostica sono supportati per lo sviluppo di .NET in Visual Studio, incluso ASP.NET, e per lo sviluppo nativo/C++.
@@ -149,6 +149,9 @@ In questa esercitazione si eseguono le attività seguenti:
     ![Percorso critico degli strumenti di diagnostica](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
+    > [!NOTE]
+    > Se nell'albero delle chiamate sono presenti porzioni di codice contrassegnate come codice "danneggiato" o "stack unwalkable", è probabile che siano stati eliminati eventi ETW (Event Tracing for Windows). Per risolvere il problema, provare a raccogliere nuovamente la stessa traccia.
+
 ## <a name="view-external-code"></a>Visualizzare codice esterno
 
 Il codice esterno rappresenta funzioni nei componenti del sistema e del framework che vengono eseguite dal codice scritto. Include funzioni che avviano e arrestano l'app, disegnano l'interfaccia utente, controllano il threading e forniscono altri servizi di basso livello all'app. Nella maggior parte dei casi il codice esterno è poco interessante, per questo motivo lo strumento Utilizzo CPU raccoglie le funzioni esterne di un metodo utente in un unico nodo **[Codice esterno]** .
@@ -157,7 +160,7 @@ Per visualizzare i percorsi delle chiamate del codice esterno, scegliere **Mostr
 
 ![Scegliere Visualizzazione filtro, quindi Mostra codice esterno](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-Tieni presente che numerose catene di chiamate del codice esterno sono molto annidate, pertanto la larghezza della colonna Nome funzione può superare la larghezza di visualizzazione in quasi tutti i monitor, ad eccezione di quelli più grandi. Quando ciò si verifica, i nomi delle funzioni sono visualizzati come **[…]**.
+Tieni presente che numerose catene di chiamate del codice esterno sono molto annidate, pertanto la larghezza della colonna Nome funzione può superare la larghezza di visualizzazione in quasi tutti i monitor, ad eccezione di quelli più grandi. Quando ciò si verifica, i nomi delle funzioni sono visualizzati come **[…]** .
 
 Usare la casella di ricerca per trovare un nodo che si sta cercando, quindi usare la barra di scorrimento orizzontale per visualizzare i dati.
 

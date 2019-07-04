@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962925"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043390"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introduzione a C++ in Visual Studio
 
@@ -70,7 +70,7 @@ Visual Studia usa i *progetti* per organizzare il codice per un'applicazione e l
 
    ![Usare la finestra di dialogo Nuovo progetto per creare un progetto di app](../ide/media/get-started-cpp-new-project-dialog.png)
 
-   La finestra di dialogo potrebbe avere opzioni diverse a seconda dei carichi di lavoro di Visual Studio e dei componenti installati. Se non vengono visualizzati i modelli del progetto di Visual C++, è necessario eseguire nuovamente il programma di installazione di Visual Studio e installare il carico di lavoro **Sviluppo di applicazioni desktop con C++**. È possibile farlo direttamente dalla finestra di dialogo **Nuovo progetto**. Per avviare il programma di installazione, scegliere il collegamento nella finestra di dialogo **Apri il programma di installazione di Visual Studio** .
+   La finestra di dialogo potrebbe avere opzioni diverse a seconda dei carichi di lavoro di Visual Studio e dei componenti installati. Se non vengono visualizzati i modelli del progetto di Visual C++, è necessario eseguire nuovamente il programma di installazione di Visual Studio e installare il carico di lavoro **Sviluppo di applicazioni desktop con C++** . È possibile farlo direttamente dalla finestra di dialogo **Nuovo progetto**. Per avviare il programma di installazione, scegliere il collegamento nella finestra di dialogo **Apri il programma di installazione di Visual Studio** .
 
 1. Scegliere il pulsante **OK** per creare il progetto e la soluzione dell'applicazione.
 
@@ -98,7 +98,7 @@ In seguito, aggiungere il codice per visualizzare la parola "Hello" nella finest
 
    ![Errore nella finestra Elenco errori](../ide/media/get-started-cpp-error-list.png)
 
-   Nel codice manca una dichiarazione per [std::cout](/cpp/standard-library/iostream), che si trova nel file di intestazione *\<iostream>*.
+   Nel codice manca una dichiarazione per [std::cout](/cpp/standard-library/iostream), che si trova nel file di intestazione *\<iostream>* .
 
 1. Per includere l'intestazione *iostream*, immettere il codice dopo `#include "stdafx.h"`:
 
@@ -177,4 +177,4 @@ La guida introduttiva è stata completata.
 
 - [Uso dell'IDE di Visual Studio per lo sviluppo di applicazioni desktop C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Procedura dettagliata: Creare un'applicazione semplice con C# o Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Suggerimenti relativi alla produttività per Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Funzionalità di produttività in Visual Studio](../ide/productivity-features.md)

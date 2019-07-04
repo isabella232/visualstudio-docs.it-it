@@ -30,8 +30,6 @@
           href: view-and-diagnose-containers.md
         - name: Configurare gli strumenti contenitore
           href: container-tools-configure.md
-        - name: Eseguire unit test
-          href: container-unit-testing.md
     - name: Concetti
       items:
         - name: Compilazione di app in contenitori

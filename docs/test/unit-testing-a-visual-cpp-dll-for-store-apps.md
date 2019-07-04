@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 01a7b6cfb6587baf5ae80b04178cbdc36e373b86
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226376"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132191"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Come testare una DLL di Visual C++
 
@@ -81,7 +81,7 @@ Per iniziare, creare un nuovo progetto di test. Nel menu **File** scegliere **Nu
 
 ::: moniker range="vs-2019"
 
-In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Nuovo progetto**. Nella finestra di dialogo **Aggiungi un nuovo progetto** impostare **Linguaggio** su C++ e digitare "DLL" nella casella di ricerca. Nell'elenco dei risultati scegliere **App unit test (Windows universale - C++/CX)**.
+In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta rapida scegliere **Aggiungi** e quindi **Nuovo progetto**. Nella finestra di dialogo **Aggiungi un nuovo progetto** impostare **Linguaggio** su C++ e digitare "DLL" nella casella di ricerca. Nell'elenco dei risultati scegliere **App unit test (Windows universale - C++/CX)** .
 
 ![Creare il progetto RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -94,7 +94,7 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
 ::: moniker-end
 
-1. Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)**.
+1. Nella finestra di dialogo **Aggiungi nuovo progetto** scegliere **DLL (app UWP)** .
 
 2. Aggiungere il seguente codice al file *RooterLib.h*:
 
@@ -152,13 +152,9 @@ In **Esplora soluzioni** scegliere il nome della soluzione. Dal menu di scelta r
 
 1. Aggiungere RooterLib al progetto RooterLibTests.
 
-   1. In **Esplora soluzioni** selezionare il progetto **RooterLibTests** e quindi scegliere **Riferimenti** dal menu di scelta rapida.
+   1. In **Esplora soluzioni** selezionare il progetto **RooterLibTests** e quindi scegliere **Aggiungi** > **Riferimento** dal menu di scelta rapida.
 
-   2. Nella finestra di dialogo **Proprietà del progetto** RooterLib espandere **Proprietà comuni** e scegliere **Framework e riferimenti**.
-
-   3. Scegliere **Aggiungi nuovo riferimento**
-
-   4. Nella finestra di dialogo **Aggiungi riferimento** espandere **Soluzione** e quindi scegliere **Progetti**. Selezionare quindi l'elemento **RouterLib**.
+   1. Nella finestra di dialogo **Aggiungi riferimento** scegliere **Progetti**. Selezionare quindi l'elemento **RouterLib**.
 
 2. Includere il file di intestazione RooterLib in *unittest1.cpp*.
 

@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226091"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132169"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Scrivere unit test per le DLL C++ in Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226091"
 
   2. Scegliere **Proprietà di configurazione** > **Generale**.
 
-  3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)**.
+  3. Impostare **Tipo di configurazione** su **Libreria statica (.lib)** .
 
   Continuare con la procedura [Per collegare i test all'oggetto o ai file di libreria](#objectRef).
 
@@ -64,21 +64,19 @@ ms.locfileid: "65226091"
 
       ::: moniker range="vs-2017"
 
-      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
+      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++** .
 
       ::: moniker-end
 
-  2. In **Esplora soluzioni** scegliere **Riferimenti** dal menu di scelta rapida del progetto di test. Si apre la finestra **Proprietà** del progetto.
+  1. In **Esplora soluzioni** fare clic con il pulsante destro del mouse sul progetto di test e scegliere **Aggiungi** > **Riferimento**.
 
-  3. Selezionare **Proprietà comuni** > **Framework e riferimenti** e quindi scegliere il pulsante **Aggiungi nuovo riferimento**.
-
-  4. Selezionare **Progetti** e quindi il progetto da testare.
+  1. Selezionare **Progetti** e quindi il progetto da testare.
 
        Scegliere il pulsante **Aggiungi**.
 
-  5. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
+  1. Nelle proprietà del progetto di test, aggiungere il percorso del progetto incluso nel test a Directory di inclusione.
 
-       Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
+       Scegliere **Proprietà di configurazione** > **Directory di VC++**  > **Directory di inclusione**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -98,7 +96,7 @@ ms.locfileid: "65226091"
       
       ::: moniker range="vs-2017"
 
-      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++**.
+      1. Dal menu **File** scegliere **Nuovo** > **Progetto** > **Visual C++** > **Test** > **Progetto unit test C++** .
 
       ::: moniker-end
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226091"
 
        Scegliere **Modifica** e aggiungere il percorso della directory dei file con estensione **obj** o **lib**. Il percorso è in genere contenuto nella cartella di compilazione del progetto sottoposto a test.
 
-  5. Scegliere **Proprietà di configurazione** > **Directory di VC++** > **Directory di inclusione**.
+  5. Scegliere **Proprietà di configurazione** > **Directory di VC++**  > **Directory di inclusione**.
 
        Scegliere **Modifica** e quindi aggiungere la directory dell'intestazione del progetto sottoposto a test.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226091"
 
    1. In **Esplora soluzioni** scegliere **Proprietà** dal menu di scelta rapida del progetto sottoposto a test. Si apre la finestra **Proprietà** del progetto.
 
-   2. Scegliere **Proprietà di configurazione** > **Directory di VC++**.
+   2. Scegliere **Proprietà di configurazione** > **Directory di VC++** .
 
    3. Modificare le directory di inclusione e di libreria:
 

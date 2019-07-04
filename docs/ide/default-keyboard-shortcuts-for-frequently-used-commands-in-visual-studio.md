@@ -7,19 +7,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e96f9f56c2b73b8f3c39635c81019cd01fa8a69a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946935"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043338"
 ---
-# <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Tasti di scelta rapida predefiniti per i comandi usati di frequente in Visual Studio
+# <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Tasti di scelta rapida più comuni per Visual Studio
 
 È possibile accedere ai comandi utilizzati più di frequente in Visual Studio scegliendo questi tasti di scelta rapida predefiniti. Per un elenco completo dei comandi con tasti di scelta rapida predefiniti, vedere [Tasti di scelta rapida predefiniti](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
+Il contesto *Globale* indica che il tasto di scelta rapida è applicabile in qualsiasi finestra degli strumenti in Visual Studio.
+
 > [!NOTE]
-> È possibile cercare il tasto di scelta rapida per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**.
+> È possibile [cercare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per qualsiasi comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e quindi scegliendo **Tastiera**.
 
 ## <a name="build"></a>Compilazione
 
@@ -38,7 +40,7 @@ ms.locfileid: "62946935"
 |Debug.BreakAll|**CTRL+ALT+INTERR** [Globale]|
 |Debug.DeleteAllBreakpoints|**CTRL+MAIUSC+F9** [Globale]|
 |Debug.Exceptions|**CTRL+ALT+E** [Globale]|
-|Debug.QuickWatch|**CTRL+ALT+Q** [Globale]<br /><br /> o **MAIUSC+F9** [Globale]|
+|Debug.QuickWatch|**CTRL+ALT+Q** [Globale]<br /><br />o **MAIUSC+F9** [Globale]|
 |Debug.Restart|**CTRL+MAIUSC+F5** [Globale]|
 |Debug.RunToCursor|**CTRL+F10** [Globale]|
 |Debug.SetNextStatement|**CTRL+MAIUSC+F10** [Globale]|
@@ -54,13 +56,13 @@ ms.locfileid: "62946935"
 
 |Comandi:|Tasti di scelta rapida [Contesti]|
 |--------------| - |
-|Edit.BreakLine|**INVIO** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br /> o **MAIUSC+INVIO** [Editor di testo]|
+|Edit.BreakLine|**INVIO** [Editor di testo, Progettazione report, Progettazione Windows Form]<br /><br />o **MAIUSC+INVIO** [Editor di testo]|
 |Edit.CollapseToDefinitions|**CTRL+M**, **CTRL+O** [Editor di testo]|
 |Edit.CommentSelection|**CTRL+K**, **CTRL+C** [Editor di testo]|
-|Edit.CompleteWord|**ALT+Freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+K**, **W** [Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]|
-|Edit.Copy|**CTRL+C** [Globale]<br /><br /> o **CTRL+INS** [Globale]|
-|Edit.Cut|**CTRL+X** [Globale]<br /><br /> o **MAIUSC+CANC** [Globale]|
-|Edit.Delete|**CANC** [Globale, Team Explorer]<br /><br /> o **MAIUSC+CANC** [Diagramma sequenza, Diagramma attività UML, Diagramma livello]<br /><br /> o **CTRL+CANC** [Diagramma classi]|
+|Edit.CompleteWord|**ALT+Freccia DESTRA** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K**, **W** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+W** [Progettazione flussi di lavoro]|
+|Edit.Copy|**CTRL+C** [Globale]<br /><br />o **CTRL+INS** [Globale]|
+|Edit.Cut|**CTRL+X** [Globale]<br /><br />o **MAIUSC+CANC** [Globale]|
+|Edit.Delete|**CANC** [Globale, Team Explorer]<br /><br />o **MAIUSC+CANC** [Diagramma sequenza, Diagramma attività UML, Diagramma livello]<br /><br />o **CTRL+CANC** [Diagramma classi]|
 |Edit.Find|**CTRL+F** [Globale]|
 |Edit.FindAllReferences|**MAIUSC+F12** [Globale]|
 |Edit.FindinFiles|**CTRL+MAIUSC+F** [Globale]|
@@ -78,14 +80,14 @@ ms.locfileid: "62946935"
 |Edit.LineCut|**CTRL+L** [Editor di testo]|
 |Edit.LineDownExtendColumn|**MAIUSC+ALT+Freccia GIÙ** [Editor di testo]|
 |Edit.LineOpenAbove|**CTRL+INVIO** [Editor di testo]|
-|Edit.ListMembers|**CTRL+J** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, CTRL+L** [Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, L** [Progettazione flussi di lavoro]|
-|Edit.NavigateTo|**CTRL+**, [Globale]|
+|Edit.ListMembers|**CTRL+J** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+L** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, L** [Progettazione flussi di lavoro]|
+|Edit.NavigateTo|**CTRL+** , [Globale]|
 |Edit.OpenFile|**CTRL+MAIUSC+G** [Globale]|
 |Edit.OvertypeMode|**INS** [Editor di testo]|
-|Edit.ParameterInfo|**CTRL+MAIUSC+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, CTRL+P** [Progettazione flussi di lavoro]<br /><br /> o **CTRL+K, P** [Progettazione flussi di lavoro]|
-|Edit.Paste|**CTRL+V** [Globale]<br /><br /> o **MAIUSC+INS** [Globale]|
+|Edit.ParameterInfo|**CTRL+MAIUSC+BARRA SPAZIATRICE** [Editor di testo, Progettazione flussi di lavoro]<br /><br />o **CTRL+K, CTRL+P** [Progettazione flussi di lavoro]<br /><br />o **CTRL+K, P** [Progettazione flussi di lavoro]|
+|Edit.Paste|**CTRL+V** [Globale]<br /><br />o **MAIUSC+INS** [Globale]|
 |Edit.PeekDefinition|**ALT+F12** [Editor di testo]|
-|Edit.Redo|**CTRL+Y** [Globale]<br /><br /> o **MAIUSC+ALT+BACKSPACE** [Globale]<br /><br /> o **CTRL+MAIUSC+Z** [Globale]|
+|Edit.Redo|**CTRL+Y** [Globale]<br /><br />o **MAIUSC+ALT+BACKSPACE** [Globale]<br /><br />o **CTRL+MAIUSC+Z** [Globale]|
 |Edit.Replace|**CTRL+H** [Globale]|
 |Edit.SelectAll|**CTRL+A** [Globale]|
 |Edit.SelectCurrentWord|**CTRL+W** [Editor di testo]|
@@ -97,7 +99,7 @@ ms.locfileid: "62946935"
 |Edit.ToggleCompletionMode|**CTRL+ALT+BARRA SPAZIATRICE** [Editor di testo]|
 |Edit.ToggleOutliningExpansion|**CTRL+M, CTRL+M** [Editor di testo]|
 |Edit.UncommentSelection|**CTRL+K, CTRL+U** [Editor di testo]|
-|Edit.Undo|**CTRL+Z** [Globale]<br /><br /> o **ALT+BACKSPACE** [Globale]|
+|Edit.Undo|**CTRL+Z** [Globale]<br /><br />o **ALT+BACKSPACE** [Globale]|
 |Edit.WordDeleteToEnd|**CTRL+CANC** [Editor di testo]|
 |Edit.WordDeleteToStart|**CTRL+BACKSPACE** [Editor di testo]|
 
@@ -142,7 +144,7 @@ ms.locfileid: "62946935"
 |--------------| - |
 |View.ClassView|**CTRL+MAIUSC+C** [Globale]|
 |View.EditLabel|**F2** [Globale]|
-|View.ErrorList|**CTRL+\\, CTRL+E** [Globale]<br /><br /> o **CTRL+\\, E** [Globale]|
+|View.ErrorList|**CTRL+\\, CTRL+E** [Globale]<br /><br />o **CTRL+\\, E** [Globale]|
 |View.NavigateBackward|**CTRL+-** [Globale]|
 |View.NavigateForward|**CTRL+MAIUSC+-** [Globale]|
 |View.ObjectBrowser|**CTRL+ALT+J** [Globale]|
@@ -150,11 +152,11 @@ ms.locfileid: "62946935"
 |View.PropertiesWindow|**F4**|
 |View.Refresh|**F5** [Team Explorer]|
 |View.ServerExplorer|**CTRL+ALT+S** [Globale]|
-|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> o **MAIUSC+ALT+F10** [Globale, Visualizzazione Progettazione Editor HTML]|
+|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br />o **MAIUSC+ALT+F10** [Globale, Visualizzazione Progettazione Editor HTML]|
 |View.SolutionExplorer|**CTRL+ALT+L** [Globale]|
 |View.TfsTeamExplorer|**CTRL+\\, CTRL+M** [Globale]|
 |View.Toolbox|**CTRL+ALT+X** [Globale]|
-|View.ViewCode|**INVIO** [Diagramma classi]<br /><br /> o **F7** [Progettazione impostazioni]|
+|View.ViewCode|**INVIO** [Diagramma classi]<br /><br />o **F7** [Progettazione impostazioni]|
 |View.ViewDesigner|**MAIUSC+F7** [Visualizzazione Origine editor HTML]|
 
 ## <a name="window"></a>Window
@@ -169,4 +171,5 @@ ms.locfileid: "62946935"
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Identificazione e personalizzazione dei tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Identificare e personalizzare i tasti di scelta rapida in Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
+- [Tutti i tasti di scelta rapida di Visual Studio](default-keyboard-shortcuts-in-visual-studio.md)

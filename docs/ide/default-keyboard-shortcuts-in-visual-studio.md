@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820944"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160045"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Tasti di scelta rapida predefiniti in Visual Studio
 
-Per altre informazioni sull'accessibilità dalla tastiera, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Per accedere a vari [comandi](reference/visual-studio-commands.md) e finestre in Visual Studio, è possibile scegliere il tasto di scelta rapida appropriato. In questa pagina vengono elencati i tasti di scelta rapida predefiniti per i comandi per il profilo **Generale**, che potrebbe essere stato scelto durante l'installazione di Visual Studio. Indipendentemente dal profilo scelto, è possibile [identificare il tasto di scelta rapida](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) per un comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**. È anche possibile personalizzare i tasti di scelta rapida assegnandone uno diverso per ciascun comando.
 
-Per accedere a vari controlli e finestre in Visual Studio, è possibile selezionare il tasto di scelta rapida appropriato. In questa pagina vengono elencati i tasti di scelta rapida predefiniti per il profilo **Generale**, che potrebbe essere stato scelto durante l'installazione di Visual Studio. Indipendentemente dal profilo scelto, è possibile identificare il tasto di scelta rapida per un comando aprendo la finestra di dialogo **Opzioni**, espandendo il nodo **Ambiente** e scegliendo **Tastiera**. È anche possibile personalizzare i tasti di scelta rapida assegnandone uno diverso per ciascun comando.
+Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produttività, vedere:
 
-Per un elenco di tasti di scelta rapida comuni e altre informazioni sulla produttività, vedere [Tasti di scelta rapida predefiniti per i comandi usati di frequente in Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Suggerimenti per la tastiera](../ide/tips-and-tricks-for-visual-studio.md) e [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md).
+- [Tasti di scelta rapida per i comandi usati di frequente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Suggerimenti relativi alla tastiera](../ide/productivity-shortcuts.md)
+- [Suggerimenti relativi alla produttività](../ide/productivity-features.md).
+
+Per altre informazioni sull'accessibilità in Visual Studio, vedere [Suggerimenti sull'accessibilità](../ide/reference/accessibility-tips-and-tricks.md) e [Procedura: Usare esclusivamente la tastiera](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -296,9 +300,9 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 |Comandi:|Scelte rapide da tastiera|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**CTRL+[**, **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+O** (lettera "O")|
-|SolutionExplorer.PendingChangesFilter|**CTRL+[**, **P**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+P**|
-|SolutionExplorer.SyncWithActiveDocument|**CTRL+[**, **S**<br /><br /> oppure<br /><br /> **CTRL+[**, **CTRL+S**|
+|SolutionExplorer.OpenFilesFilter|**CTRL+[** , **O** (lettera "O")<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+O** (lettera "O")|
+|SolutionExplorer.PendingChangesFilter|**CTRL+[** , **P**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+P**|
+|SolutionExplorer.SyncWithActiveDocument|**CTRL+[** , **S**<br /><br /> oppure<br /><br /> **CTRL+[** , **CTRL+S**|
 
 ### <a name="bkmk_team"></a> Team
 
@@ -785,6 +789,7 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.CollapseCurrentRegion | **CTRL+M, CTRL+S** |
 | Edit.CollapseTag | **CTRL+M, CTRL+T** |
 | Edit.CollapseToDefinitions | **CTRL+M, CTRL+O** (lettera "O") |
+| Edit.ContractSelection | **MAIUSC+ALT+-** (solo non C++) |
 | Edit.CommentSelection | **CTRL+K, CTRL+C** |
 | Edit.CompleteWord | **CTRL+BARRA SPAZIATRICE**<br /><br /> oppure<br /><br /> **ALT+Freccia DESTRA** |
 | Edit.CopyParameterTip | **CTRL+MAIUSC+ALT+C** |
@@ -797,6 +802,8 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 | Edit.DocumentStartExtend | **CTRL+MAIUSC+HOME** |
 | Edit.ExpandAllOutlining | **CTRL+M, CTRL+X** |
 | Edit.ExpandCurrentRegion | **CTRL+M, CTRL+E** |
+| Edit.ExpandSelection | **MAIUSC+ALT+=** (solo non C++) |
+| Edit.ExpandSelectiontoContainingBlock | **MAIUSC+ALT+]** |
 | Edit.FormatDocument | **CTRL+K, CTRL+D** |
 | Edit.FormatSelection | **CTRL+K, CTRL+F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> oppure<br /><br /> **CTRL+,** |
@@ -1150,5 +1157,4 @@ Questi tasti di scelta rapida sono *globali*, ovvero possono essere usati quando
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Editor di immagini per le icone](/cpp/windows/image-editor-for-icons)
-- [Utilizzo di IntelliSense](../ide/using-intellisense.md)
+- [Comandi di Visual Studio](reference/visual-studio-commands.md)

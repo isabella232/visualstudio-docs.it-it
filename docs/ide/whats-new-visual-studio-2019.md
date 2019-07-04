@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976243"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328834"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novità di Visual Studio 2019
 
@@ -33,9 +33,9 @@ Visual Studio 2019 include gli strumenti e i servizi migliori del settore per qu
 
 Ecco un riepilogo generale delle novità:
 
-* **[Sviluppo](#develop)**: rimanere concentrati e produttivi con prestazioni migliorate, pulizia del codice immediata e risultati di ricerca ottimizzati.
-* **[Collaborazione](#collaborate)**: il piacere di collaborare in modo naturale grazie a un flusso di lavoro basato su Git, modifica e debug in tempo reale e revisioni del codice direttamente in Visual Studio.
-* **[Debug](#debug)**: evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e acquisire snapshot automatici dell'esecuzione dell'applicazione.
+* **[Sviluppo](#develop)** : rimanere concentrati e produttivi con prestazioni migliorate, pulizia del codice immediata e risultati di ricerca ottimizzati.
+* **[Collaborazione](#collaborate)** : il piacere di collaborare in modo naturale grazie a un flusso di lavoro basato su Git, modifica e debug in tempo reale e revisioni del codice direttamente in Visual Studio.
+* **[Debug](#debug)** : evidenziare e passare a valori specifici, ottimizzare l'uso della memoria e acquisire snapshot automatici dell'esecuzione dell'applicazione.
 
 Per un elenco completo di tutte le novità in questa versione, vedere le [note sulla versione](/visualstudio/releases/2019/release-notes/).
 
@@ -90,7 +90,7 @@ L'operazione di pulizia formatterà il codice e applicherà eventuali correzioni
 
 È anche possibile salvare raccolte di utilità di correzione come profilo. Ad esempio, se si applica di frequente un piccolo set di utilità di correzione specifiche durante la scrittura del codice e poi si usa un altro set completo di utilità di correzione da applicare prima di una revisione del codice, è possibile configurare due profili per queste attività diverse.
 
-   ![Screenshot del nuovo controllo di pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Screenshot del controllo di configurazione della pulizia del codice in Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Rendering sensibile ai valori del monitor (PMA)
 

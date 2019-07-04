@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432267"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309792"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
 
@@ -86,19 +86,42 @@ Questo provider ha lo stesso funzionamento di **extensionToExtension**, con l'un
 
 ### <a name="the-addedextension-provider"></a>Provider addedExtension
 
-Questo provider annida i file con un'estensione aggiuntiva nel file senza l'estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo alla fine del nome file completo. Si consideri l'esempio seguente:
+Questo provider annida i file con un'estensione aggiuntiva nel file senza l'estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo alla fine del nome file completo.
+
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio addedExtension](media/filenesting_addedextension.png) ![Effetto dell'esempio addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* viene annidato in *file.html* per la regola di **addedExtension**
 
+> [!NOTE]
+> Non si specificano le estensioni di file per la regola `addedExtension`; verrà applicata automaticamente a tutte le estensioni di file. Ciò significa che qualsiasi file con lo stesso nome ed estensione di un altro file più un'estensione aggiuntiva alla fine viene annidato nell'altro file. Non è possibile limitare l'effetto di questo provider a specifiche estensioni di file.
+
 ### <a name="the-pathsegment-provider"></a>Provider pathSegment
 
-Questo provider annida i file con un'estensione aggiuntiva in un file senza estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo al centro del nome file completo. Si consideri l'esempio seguente:
+Questo provider annida i file con un'estensione aggiuntiva in un file senza estensione aggiuntiva. L'estensione aggiuntiva può essere visualizzata solo al centro del nome file completo.
+
+Si consideri l'esempio seguente:
 
 ![Regole dell'esempio pathSegment](media/filenesting_pathsegment.png) ![Effetto dell'esempio pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* viene annidato in *jquery.js* per la regola di **pathSegment**
+
+> [!NOTE]
+> - Se non si specificano le estensioni di file per la regola `pathSegment`, verrà applicata a tutte le estensioni di file. Ciò significa che qualsiasi file con lo stesso nome ed estensione di un altro file più un'estensione aggiuntiva al centro viene annidato nell'altro file.
+> - È possibile limitare l'effetto della regola `pathSegment` a specifiche estensioni di file specificandole nel modo seguente:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>Provider allExtensions
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825469"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195252"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Panoramica degli analizzatori .NET Compiler Platform
 
-Gli analizzatori .NET Compiler Platform ("Roslyn") esaminano lo stile di codice, la qualità e manutenibilità del codice, la progettazione del codice e altri aspetti. Visual Studio include un set predefinito di analizzatori che analizzano il codice C# o Visual Basic durante la digitazione. Le preferenze per gli analizzatori predefiniti si configurano nella pagina [Opzioni dell'editor di testo](../ide/code-styles-and-quick-actions.md) o in un [file .editorconfig](../ide/editorconfig-code-style-settings-reference.md). È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o come pacchetto NuGet.
+Gli analizzatori .NET Compiler Platform ("Roslyn") esaminano lo stile di codice, la qualità e manutenibilità del codice, la progettazione del codice e altri aspetti. Visual Studio include un set predefinito di analizzatori che analizzano il codice C# o Visual Basic durante la digitazione. Le preferenze per gli analizzatori predefiniti si configurano nella pagina [Opzioni dell'editor di testo](../ide/code-styles-and-code-cleanup.md) o in un [file .editorconfig](../ide/editorconfig-code-style-settings-reference.md). È possibile installare analizzatori aggiuntivi come estensione di Visual Studio o come pacchetto NuGet.
 
 Se rilevate da un analizzatore, eventuali violazioni delle regole vengono segnalate nell'editor di codice con una *linea ondulata* sotto al codice che causa l'errore e nella finestra **Elenco errori**.
 
@@ -34,7 +34,7 @@ Gli analizzatori .NET Compiler Platform ("Roslyn") sostituiranno infine l'[anali
 
 Come le violazioni delle regole di analisi statica del codice, le violazioni dell'analizzatore di Roslyn vengono visualizzate nell'**Elenco errori**. Le violazioni dell'analizzatore di Roslyn vengono visualizzate anche nell'editor del codice come *linee ondulate* sotto al codice che causa l'errore. Il colore della linea ondulata dipende dall'[impostazione di gravità](../code-quality/use-roslyn-analyzers.md#rule-severity) della regola. Nello screenshot seguente sono illustrate tre violazioni: una rossa, una verde e una grigia.
 
-![Linee ondulate nell'editor di codice](media/diagnostics-severity-colors.png)
+![Linee ondulate nell'editor del codice](media/diagnostics-severity-colors.png)
 
 Gli analizzatori Roslyn analizzano il codice in fase di compilazione, ad esempio durante l'analisi statica del codice se abilitata, ma anche in tempo reale durante la digitazione. Se si abilita l'[analisi della soluzione completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), gli analizzatori Roslyn offrono anche l'analisi in fase di progettazione dei file di codice che non sono aperti nell'editor.
 
@@ -79,6 +79,14 @@ Nello screenshot seguente viene illustrato l'output di compilazione da riga di c
 ### <a name="rule-severity"></a>Gravità della regola
 
 Non è possibile impostare la gravità delle regole provenienti da analizzatori installati come estensione di Visual Studio. Per configurare la [gravità della regola](../code-quality/use-roslyn-analyzers.md#rule-severity) installare gli analizzatori come pacchetto NuGet.
+
+### <a name="categories"></a>Categories
+
+Di seguito sono riportati i diversi tipi di analizzatori che risultano utili per analizzare il codice. 
+
+- Analizzatori consigliati da Microsoft: [Analizzatori FxCop](../code-quality/fxcop-analyzers.yml)
+- Analizzatori dell'IDE di Visual Studio: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Analizzatori di terze parti: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

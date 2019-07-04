@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9d776c061982b60640944737b27cda927f79e59
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840980"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033159"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Presentazione dell'IDE di Visual Studio
 
@@ -37,7 +37,7 @@ Se Visual Studio non è ancora installato, accedere alla pagina [Download di Vis
 
 All'avvio di Visual Studio viene visualizzata la finestra iniziale. La finestra iniziale consente di iniziare a lavorare con il codice più velocemente. Contiene opzioni per chiudere o estrarre il codice, aprire un progetto o una soluzione esistente, creare un nuovo progetto o semplicemente aprire una cartella contenente alcuni file di codice.
 
-[![](media/vs-2019/start-window.png "Finestra iniziale in Visual Studio 2019")](media/vs-2019/start-window.png)
+[![Finestra iniziale in Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Se è la prima volta che si usa Visual Studio, l'elenco dei progetti recenti sarà vuoto.
 
