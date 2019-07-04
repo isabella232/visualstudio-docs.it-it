@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747636"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160149"
 ---
 # <a name="framework-targeting-overview"></a>Panoramica sull'impostazione dei framework di destinazione
 
-In Visual Studio è possibile specificare la versione di .NET da impostare come destinazione per il progetto. Per le app .NET Framework da eseguire in un altro computer, la versione del framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.
+In Visual Studio è possibile specificare la versione di .NET da impostare come destinazione per il progetto. L'impostazione di framework di destinazione consente di garantire che l'applicazione usi solo le funzionalità disponibili nella versione del framework specificata. Per le app .NET Framework da eseguire in un altro computer, la versione del framework per cui viene sviluppata l'applicazione deve essere compatibile con quella installata nel computer.
+
+Una soluzione di Visual Studio può contenere progetti destinati a versioni diverse di .NET.
 
 Per altre informazioni sui framework di destinazione, vedere [Framework di destinazione](/dotnet/standard/frameworks).
-
-È anche possibile creare una soluzione contenente progetti destinati a versioni diverse di .NET. L'impostazione di framework di destinazione consente di garantire che l'applicazione usi solo le funzionalità disponibili nella versione del framework specificata.
 
 > [!TIP]
 > È anche possibile definire la destinazione delle applicazioni per piattaforme diverse. Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargeting-overview.md).
@@ -79,13 +79,40 @@ Quando si crea un progetto .NET Framework, è possibile selezionare la versione 
 
 ::: moniker-end
 
-In un progetto esistente è possibile modificare la versione di .NET di destinazione nella finestra di dialogo delle proprietà del progetto. Per altre informazioni, vedere [Procedura: Impostare una versione di .NET come destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+## <a name="change-the-target-framework"></a>Modificare il framework di destinazione
+
+In un progetto Visual Basic, C# o F# esistente è possibile modificare la versione di .NET di destinazione nella finestra di dialogo delle proprietà del progetto. Per informazioni su come modificare la versione di destinazione per i progetti C++, vedere [Modificare il framework di destinazione e il set di strumenti della piattaforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+
+1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto che si vuole modificare e quindi scegliere **Proprietà**.
+
+1. Nella colonna sinistra della finestra **Proprietà** scegliere la scheda **Applicazione**.
+
+   ![Scheda Applicazione delle proprietà del progetto](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > Dopo aver creato un'app per la piattaforma UWP, non è possibile cambiare la versione di Windows o .NET impostata come destinazione.
+
+1. Nell'elenco **Framework di destinazione** selezionare la versione appropriata.
+
+1. Nella finestra di dialogo di verifica visualizzata scegliere **Sì**.
+
+   Il progetto verrà scaricato. Una volta caricato nuovamente, il progetto sarà destinato alla versione di .NET appena selezionata.
+
+> [!NOTE]
+> Se il codice contiene riferimenti a una versione di .NET diversa da quella impostata come destinazione, è possibile che vengano visualizzati dei messaggi di errore durante la compilazione o l'esecuzione del codice. Per risolvere questi errori, modificare i riferimenti. Vedere [Risolvere i problemi relativi agli errori di impostazione di .NET come destinazione](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+
+> [!TIP]
+> A seconda del framework di destinazione, può essere rappresentato nei modi seguenti nel file di progetto:
+>
+> - Per un'app .NET Core: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Per un'app .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Per un'app .NET Framework: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Risolvere i riferimenti ad assembly di sistema e utente
 
 Prima di impostare una versione di .NET come destinazione, è necessario installare i riferimenti ad assembly appropriati. È possibile scaricare Developer Pack per versioni diverse di .NET dalla pagina dei [download di .NET](https://www.microsoft.com/net/download/windows).
 
-Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione di framework successiva a quella di destinazione non vengono risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento. Per altre informazioni, vedere [Procedura: Impostare una versione del framework come destinazione](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Per i progetti .NET Framework, la finestra di dialogo **Aggiungi riferimento** disabilita gli assembly di sistema che non pertinenti alla versione di .NET Framework di destinazione, per evitare che vengano aggiunti inavvertitamente a un progetto. Gli assembly di sistema sono file con estensione *dll* inclusi in una versione di .NET Framework. I riferimenti che appartengono a una versione di framework successiva a quella di destinazione non vengono risolti e i controlli che dipendono da un riferimento di questo tipo non possono essere aggiunti. Se si vuole abilitare questo riferimento, reimpostare la destinazione di .NET Framework del progetto su una che include il riferimento.
 
 Per altre informazioni sui riferimenti ad assembly, vedere [Risoluzione di assembly in fase di progettazione](../msbuild/resolving-assemblies-at-design-time.md).
 

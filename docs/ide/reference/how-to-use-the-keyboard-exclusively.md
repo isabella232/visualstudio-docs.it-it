@@ -1,6 +1,7 @@
 ---
-title: 'Procedura: Usare esclusivamente la tastiera'
-description: Informazioni su come usare le combinazioni di tasti predefinite per semplificare lo spostamento e la programmazione all'interno dell'ambiente di sviluppo integrato (IDE, Integrated Development Environment) di Visual Studio.
+title: Usare Visual Studio senza il mouse
+titleSuffix: ''
+description: Informazioni su come spostarsi nell'ambiente di sviluppo integrato (IDE) di Visual Studio e scrivere codice usando esclusivamente la tastiera.
 ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,18 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f1bd20b8ad9e4682cfd5fbe4d93dc55e5dc081d
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 885785c8910bdb0f03643c64eca29415bf2afb17
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820591"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043507"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>Procedura: Usare esclusivamente la tastiera
+# <a name="how-to-use-the-keyboard-exclusively"></a>Come usare esclusivamente la tastiera
 
-I tasti di scelta rapida possono rendere più facile l'esplorazione dell'IDE di Visual Studio e la scrittura di codice. Verranno ora illustrati alcuni modi in cui è possibile usare i tasti di scelta rapida in modo più efficace.
+I tasti di scelta rapida possono facilitare l'esplorazione dell'IDE di Visual Studio e la scrittura di codice. Questo articolo illustra alcune soluzioni per usare i tasti di scelta rapida in modo più efficace.
 
-Per un elenco completo delle combinazioni di tasti in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Per informazioni sui tasti di scelta rapida disponibili per altri prodotti Microsoft, vedere [https://www.microsoft.com/accessibility/](http://go.microsoft.com/fwlink/?LinkID=40400).
+Per un elenco completo delle combinazioni di tasti di scelta rapida dei comandi in Visual Studio, vedere [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -40,23 +41,19 @@ Per un elenco completo delle combinazioni di tasti in Visual Studio, vedere [Tas
 
 ## <a name="toolbox-controls"></a>Controlli della casella degli strumenti
 
-È possibile aggiungere controlli della casella degli strumenti a un form o a una finestra di progettazione tramite la tastiera.
-
-### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Per aggiungere controlli della casella degli strumenti a una finestra di progettazione tramite la tastiera
+Per aggiungere un controllo della casella degli strumenti a un modulo o a una finestra di progettazione senza usare il mouse:
 
 1. Scegliere **Visualizza** > **Casella degli strumenti** sulla barra dei menu.
 
 2. Usare i tasti **CTRL**+**Freccia SU** o **CTRL**+**Freccia GIÙ** per spostarsi tra le sezioni della scheda della **casella degli strumenti**.
 
-3. Usare il tasto **Freccia SU** o **Freccia GIÙ** per passare da un controllo all'altro.
+3. Usare il tasto **Freccia SU** o **Freccia GIÙ** per passare da un controllo all'altro in una sezione.
 
 4. Dopo aver selezionato il controllo, usare il tasto **Invio** per aggiungere il controllo al form o alla finestra di progettazione.
 
 ## <a name="dialog-box-options"></a>Opzioni della finestra di dialogo
 
-È possibile passare da un'opzione all'altra all'interno di una finestra di dialogo e modificare le impostazioni delle opzioni tramite la tastiera.
-
-### <a name="set-dialog-box-options-from-the-keyboard"></a>Impostare le opzioni di una finestra di dialogo tramite tastiera
+Per passare da un'opzione all'altra all'interno di una finestra di dialogo e modificare le impostazioni delle opzioni solo con la tastiera:
 
 1. Usare **Tab** o **Maiusc**+**Tab** per spostarsi in alto o in basso tra i controlli della finestra di dialogo.
 
@@ -72,17 +69,13 @@ Per un elenco completo delle combinazioni di tasti in Visual Studio, vedere [Tas
 
    - Per spostarsi all'interno di una griglia, usare i tasti di direzione. Per un elenco a discesa in una griglia, usare **MAIUSC**+**ALT**+**Freccia GIÙ** per visualizzare le voci e quindi usare **Freccia SU** e **Freccia GIÙ** per selezionare un'altra voce.
 
-## <a name="window-and-file-navigation"></a>Spostamento tra finestre e file
-
-Esistono vari modi in cui usare la tastiera per spostarsi tra le finestre degli strumenti e dei documenti aperti. Con la tastiera è anche possibile spostare e ancorare le finestre degli strumenti in posizioni diverse.
-
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>Spostarsi tra finestre e file nell'ambiente di sviluppo integrato
+## <a name="navigate-between-windows-and-files"></a>Spostarsi tra finestre e file
 
 - Per passare da un file all'altro in un editor o in una finestra di progettazione, scegliere i tasti di scelta rapida **CTRL**+**Tab** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **File attivi** selezionata. Scegliere **Invio** per passare alla finestra evidenziata.
 
 - Per spostarsi tra finestre degli strumenti ancorate, scegliere i tasti di scelta rapida **Alt**+**F7** per visualizzare lo strumento di spostamento dell'IDE con l'opzione **Finestre degli strumenti attive** selezionata. Premere **INVIO** per passare alla finestra evidenziata.
 
-### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Per spostare e ancorare finestre degli strumenti tramite la tastiera
+## <a name="move-and-dock-tool-windows"></a>Spostare e ancorare finestre degli strumenti
 
 1. Passare alla finestra degli strumenti che si vuole spostare, assegnando a questa lo stato attivo.
 
@@ -109,3 +102,4 @@ Esistono vari modi in cui usare la tastiera per spostarsi tra le finestre degli 
 * [Identificazione e personalizzazione dei tasti di scelta rapida](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Suggerimenti sull'accessibilità](../../ide/reference/accessibility-tips-and-tricks.md)
 * [Tasti di scelta rapida predefiniti](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+* [Accessibilità nei prodotti Microsoft](https://www.microsoft.com/accessibility/)

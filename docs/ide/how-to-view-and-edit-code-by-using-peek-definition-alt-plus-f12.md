@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747329"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043407"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedura: Visualizzare e modificare il codice usando Visualizza definizione (ALT+F12)
 
@@ -75,7 +75,7 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 |Consente di aprire la finestra di definizione|**ALT**+**F12**|
 |Consente di chiudere la finestra di definizione|**ESC**|
 |Consente di alzare di livello la finestra di definizione in una scheda documento normale|**MAIUSC**+**ALT**+**Home**|
-|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + ** - ** e **CTRL**+**ALT**+**=**|
+|Consente di spostarsi tra le finestre di definizione|**CTRL**+**ALT** + **-** e **CTRL**+**ALT**+ **=**|
 |Consente di spostarsi tra più risultati|**F8** e **MAIUSC**+**F8**|
 |Consente di alternare la visualizzazione della finestra dell'editor di codice e la finestra di definizione|**MAIUSC**+**ESC**|
 
@@ -86,4 +86,4 @@ Nella finestra **Visualizza definizione** è possibile usare questi tasti di sce
 
 - [Spostarsi all'interno del codice](../ide/navigating-code.md)
 - [Vai a definizione e Visualizza definizione](../ide/go-to-and-peek-definition.md)
-- [Suggerimenti per la produttività](../ide/productivity-tips-for-visual-studio.md)
+- [Funzionalità di produttività in Visual Studio](../ide/productivity-features.md)

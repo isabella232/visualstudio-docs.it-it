@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 3dfdc230a4dc873cc9a068e2f641da022018aff3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e62b9a99f178a45466ff8afa46753981be61424
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679392"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342375"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Esercitazione: eseguire il debug di C# e C++ nella stessa sessione di debug
 
@@ -61,7 +61,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra di dialogo **Nuovo progetto** in **Visual C++** selezionare **Altro** e quindi **Progetto vuoto** nel riquadro centrale. Quindi, digitare un nome simile a **Mixed_Mode_Debugging** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++**, quindi scegliere **Modifica**.
+    Se il modello di progetto **Progetto vuoto** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** per aprire il programma di installazione di Visual Studio. Verrà avviato il Programma di installazione di Visual Studio. Selezionare il carico di lavoro **Sviluppo di applicazioni desktop con C++** , quindi scegliere **Modifica**.
 
     Visual Studio crea il progetto.
 
@@ -73,7 +73,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. In **Esplora soluzioni** selezionare **File di origine** e in seguito **Progetto** > **Aggiungi nuovo elemento**. In alternativa, fare clic con il pulsante destro del mouse su **File di origine** e selezionare **Aggiungi** > **Nuovo elemento**.
 
-1. Nella finestra di dialogo **Nuovo elemento** selezionare **File di C++ (.cpp)**. Digitare **Mixed_Mode.cpp** nel campo **Nome** e quindi selezionare **Aggiungi**.
+1. Nella finestra di dialogo **Nuovo elemento** selezionare **File di C++ (.cpp)** . Digitare **Mixed_Mode.cpp** nel campo **Nome** e quindi selezionare **Aggiungi**.
 
     Visual Studio aggiunge il nuovo file di C++ in **Esplora soluzioni**.
 
@@ -85,7 +85,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. In **Esplora soluzioni** selezionare **File di intestazione** e quindi **Progetto** > **Aggiungi nuovo elemento**. In alternativa, fare clic con il pulsante destro del mouse su **File di intestazione** e selezionare **Aggiungi** > **Nuovo elemento**.
 
-1. Nella finestra di dialogo **Nuovo elemento** selezionare **File di intestazione (.h)**. Digitare **Mixed_Mode.h** nel campo **Nome** e quindi selezionare **Aggiungi**.
+1. Nella finestra di dialogo **Nuovo elemento** selezionare **File di intestazione (.h)** . Digitare **Mixed_Mode.h** nel campo **Nome** e quindi selezionare **Aggiungi**.
 
    Visual Studio aggiunge il nuovo file di intestazione in **Esplora soluzioni**.
 
@@ -119,7 +119,7 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
 
 1. In **Proprietà di configurazione** nel riquadro a sinistra selezionare **Linker** > **Avanzate** e nell'elenco a discesa accanto a **Nessun punto di ingresso** selezionare **No**. Se è necessario apportare una modifica per impostare il campo su **No**, selezionare **Applica**.
 
-1. In **Proprietà di configurazione** selezionare **Generale** e nell'elenco a discesa accanto a **Tipo di configurazione** selezionare **Libreria dinamica (.dll)**. Selezionare **Applica** e quindi **OK**.
+1. In **Proprietà di configurazione** selezionare **Generale** e nell'elenco a discesa accanto a **Tipo di configurazione** selezionare **Libreria dinamica (.dll)** . Selezionare **Applica** e quindi **OK**.
 
    ![Passare a una DLL nativa](../debugger/media/mixed-mode-set-as-native-dll.png)
 
@@ -137,12 +137,12 @@ Se Visual Studio è installato ma non si hanno i carichi di lavoro necessari, se
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **Crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)**.
+    Sulla barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**. Nel riquadro sinistro della finestra **Nuovo progetto** in **Visual C#** scegliere **Windows Desktop** e quindi nel riquadro centrale scegliere **App console (.NET Framework)** o **App console (.NET Core)** .
 
     Quindi, digitare un nome simile a **Mixed_Mode_Calling_App** e fare clic su **OK**.
     ::: moniker-end
 
-    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...**, aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
+    Se il modello di progetto **App console** non viene visualizzato, passare a **Strumenti** > **Ottieni strumenti e funzionalità...** , aprendo così il programma di installazione di Visual Studio. Scegliere il carico di lavoro **Sviluppo per desktop .NET**, quindi scegliere **Modifica**.
 
     > [!NOTE]
     > Anche se è possibile aggiungere il nuovo progetto gestito alla soluzione C++ esistente, la creazione di una nuova soluzione supporta più scenari di debug.
@@ -200,7 +200,7 @@ Nella maggior parte delle versioni di Visual Studio a partire da Visual Studio 2
    >[!NOTE]
    >Per impostazione predefinita, *launchSettings.json* si trova in *C:\Users\username\source\repos\Mixed_Mode_Calling_App\Properties*. Se *launchSettings.json* non esiste, selezionare il progetto **Mixed_Mode_Calling_App** in **Esplora soluzioni** e selezionare l'icona **Proprietà** oppure fare clic con il pulsante destro del mouse sul progetto e scegliere **Proprietà**. Apportare una modifica temporanea nella scheda **Debug** e compilare il progetto. In questo modo verrà creato il file *launchSettings.json*. Annullare la modifica apportata nella scheda **Debug**.
 
-1. Nel file *lauchSettings.json* aggiungere la riga seguente:
+1. Nel file *launchsettings.json* aggiungere la riga seguente:
 
     ```csharp
     "nativeDebugging": true
