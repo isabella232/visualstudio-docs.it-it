@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789370"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043590"
 ---
 # <a name="visual-studio-commands"></a>Comandi di Visual Studio
 
-I comandi di Visual Studio consentono di richiamare un comando dalla finestra **Comando** , dalla finestra **Comando immediato** o dalla casella **Trova/Comando** . In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
+È possibile immettere i comandi di Visual Studio nella finestra **Comando**, nella finestra **Comando immediato** o nella casella **Trova/Comando**. In ogni caso, per indicare che deve essere eseguito un comando anziché un'operazione di ricerca o di debug, viene usato il segno di maggiore (`>`).
 
-È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella finestra di dialogo **Opzioni** con le voci Tastiera, Ambiente selezionate.
+È possibile trovare l'elenco completo dei comandi e la relativa sintassi nella pagina **Tastiera** in **Strumenti** > **Opzioni** > **Ambiente**.
 
-Il carattere di escape per i comandi di Visual Studio è un accento circonflesso (^) con cui si indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio,
+Nelle versioni localizzate dell'IDE, i nomi di comandi possono essere immessi sia nella lingua locale dell'IDE sia in lingua inglese. È possibile ad esempio digitare `File.NewFile` o `Fichier.NouveauFichier` nell'IDE francese per eseguire lo stesso comando.
+
+A molti comandi sono associati alias. Per un elenco di alias dei comandi, vedere [Alias dei comandi](../../ide/reference/visual-studio-command-aliases.md). Per i tasti di scelta rapida dei comandi, vedere [Tasti di scelta rapida predefiniti in Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Carattere di escape
+
+Il carattere di escape per i comandi di Visual Studio è l'accento circonflesso (^). Il carattere di escape indica che il carattere immediatamente successivo viene interpretato letteralmente e non come carattere di controllo. In questo modo, è possibile incorporare virgolette diritte ("), spazi, barre iniziali, accenti circonflessi o qualsiasi altro carattere letterale nel valore di un parametro o di un'opzione, ad eccezione dei nomi di opzioni. Ad esempio:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,13 +39,11 @@ Il carattere di escape per i comandi di Visual Studio è un accento circonflesso
 
 L'accento circonflesso presenta lo stesso funzionamento sia all'interno sia all'esterno delle virgolette. Se corrisponde all'ultimo carattere sulla riga, viene ignorato.
 
-Nelle versioni localizzate dell'IDE, i nomi di comandi possono essere immessi sia nella lingua locale dell'IDE sia in lingua inglese. È possibile ad esempio digitare `File.NewFile` o `Fichier.NouveauFichier` nell'IDE francese per eseguire lo stesso comando.
+## <a name="commands-with-arguments"></a>Comandi con argomenti
 
-A molti comandi sono associati alias. Per un elenco di alias di comando, vedere [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+I comandi seguenti accettano opzioni o argomenti:
 
-I comandi seguenti accettano argomenti e/o opzioni.
-
-| Nome comando | Description |
+| Nome comando | DESCRIZIONE |
 | - | - |
 | [Aggiungi elemento esistente](../../ide/reference/add-existing-item-command.md) | Aggiunge un file esistente alla soluzione corrente e lo apre. |
 | [Aggiungi progetto esistente](../../ide/reference/add-existing-project-command.md) | Aggiunge un progetto esistente alla soluzione corrente. |
@@ -78,4 +82,4 @@ I comandi seguenti accettano argomenti e/o opzioni.
 
 - [Finestra di comando](../../ide/reference/command-window.md)
 - [Casella Trova/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias di comandi di Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261970"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309828"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
@@ -25,7 +25,7 @@ Le convenzioni di denominazione devono essere ordinate dalla convenzione più sp
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
-Per iniziare, scegliere un titolo per la regola di denominazione da usare in ognuna delle proprietà necessarie per descrivere la regola in modo completo. Ad esempio, `public_members_must_be_capitalized` è un buon nome descrittivo per una regola di denominazione. Si farà riferimento al titolo scelto come a **< namingRuleTitle\>** nelle sezioni che seguono.
+Per iniziare, scegliere un titolo per la regola di denominazione da usare in ognuna delle proprietà necessarie per descrivere la regola in modo completo. Ad esempio, `public_members_must_be_capitalized` è un buon nome descrittivo per una regola di denominazione. Questa pagina farà riferimento al titolo scelto come a **<namingRuleTitle\>** nelle sezioni che seguono.
 
 ## <a name="symbols"></a>Simboli
 
@@ -116,7 +116,7 @@ Una regola di denominazione cerca le firme corrispondenti con *tutti* i modifica
 
 ## <a name="style"></a>Stile
 
-Ora che è stato identificato il gruppo di simboli a cui applicare la regola di denominazione, è necessario descrivere lo stile di denominazione. Uno stile può stabilire che il nome abbia un determinato prefisso o suffisso o che le singole parole nel nome siano separate da un determinato carattere. È anche possibile specificare uno stile per l'uso di maiuscole e minuscole. La proprietà dello stile ha il formato seguente:
+Ora che è stato identificato il gruppo di simboli a cui applicare la regola di denominazione, è possibile descrivere lo stile di denominazione. Uno stile può stabilire che il nome abbia un determinato prefisso o suffisso o che le singole parole nel nome siano separate da un determinato carattere. È anche possibile specificare uno stile per l'uso di maiuscole e minuscole. La proprietà dello stile ha il formato seguente:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -175,6 +175,14 @@ error | Se questo stile non viene rispettato, viene visualizzato un errore del c
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.
 
+## <a name="default-naming-styles"></a>Stili di denominazione predefiniti
+
+Se non si specificano regole di denominazione personalizzate, Visual Studio usa gli stili predefiniti seguenti:
+
+- Per classi, struct, enumerazioni, proprietà ed eventi con accessibilità `public`, `private`, `internal`, `protected` o `protected_internal`, lo stile di denominazione predefinito è basato sulla convenzione Pascal.
+
+- Per le interfacce con accessibilità `public`, `private`, `internal`, `protected` o `protected_internal`, lo stile di denominazione predefinito è basato sulla convenzione Pascal con il prefisso obbligatorio **I**.
+
 ## <a name="example"></a>Esempio
 
 Il seguente file con estensione *editorconfig* contiene una convenzione di denominazione che specifica che i nomi di proprietà, metodi, campi, eventi e delegati pubblici devono avere la prima lettera maiuscola. Si noti che questa convenzione di denominazione specifica più tipi di simboli a cui applicare la regola, usando una virgola per separare i valori.
@@ -209,6 +217,8 @@ Se si chiude e si riapre il file di codice, anziché il suggerimento sotto la vi
 
 ## <a name="see-also"></a>Vedere anche
 
+- [Convenzioni del linguaggio](editorconfig-language-conventions.md)
+- [Convenzioni di formattazione](editorconfig-formatting-conventions.md)
 - [Convenzioni di denominazione Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
-- [Impostazioni delle convenzioni per la scrittura del codice .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Creare impostazioni personalizzate e portabili per l'editor](../ide/create-portable-custom-editor-options.md)
+- [Impostazioni delle convenzioni per la scrittura del codice .NET per EditorConfig](editorconfig-code-style-settings-reference.md)

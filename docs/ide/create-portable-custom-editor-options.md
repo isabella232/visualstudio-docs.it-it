@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f48a690513c80b02683df61a0abf68a3cad58293
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845997"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328807"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Creare impostazioni personalizzate e portabili per l'editor con EditorConfig
 
@@ -55,15 +55,15 @@ L'editor in Visual Studio supporta il set di base delle [proprietà di EditorCon
 - insert\_final_newline
 - radice
 
-Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi supportati da Visual Studio, ad eccezione di XML. EditorConfig supporta inoltre le convenzioni di [stile del codice](../ide/editorconfig-code-style-settings-reference.md) e [denominazione](../ide/editorconfig-naming-conventions.md) per C# e Visual Basic.
+Le impostazioni dell'editor EditorConfig sono supportate in tutti i linguaggi supportati da Visual Studio, ad eccezione di XML. EditorConfig supporta inoltre le convenzioni di [stile del codice](../ide/editorconfig-code-style-settings-reference.md), incluse le convenzioni di [linguaggio](../ide/editorconfig-language-conventions.md), [formattazione](../ide/editorconfig-formatting-conventions.md) e [denominazione](../ide/editorconfig-naming-conventions.md) per C# e Visual Basic.
 
 ## <a name="add-and-remove-editorconfig-files"></a>Aggiungere e rimuovere i file EditorConfig
 
-L'aggiunta di un file EditorConfig al progetto o alla codebase non sostituisce gli stili esistenti con quelli nuovi. Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Le nuove righe di codice vengono tuttavia formattate in base al file EditorConfig. Inoltre, se si formatta il documento (**Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**), le impostazioni nel file EditorConfig vengono applicate alle righe di codice esistenti.
+Quando si aggiunge un file EditorConfig al progetto o alla codebase, le nuove righe di codice scritte vengono formattate in base al file EditorConfig. Tuttavia, l'aggiunta di un file EditorConfig non sostituisce gli stili esistenti con quelli nuovi finché il documento non viene formattato. Se, ad esempio, il file contiene rientri formattati con tabulazioni e si aggiunge un file EditorConfig che imposta rientri con spazi, i caratteri di rientro non vengono convertiti automaticamente in spazi. Quando si formatta il documento (**Modifica** > **Avanzate** > **Formatta documento** o **CTRL**+**K**, **CTRL**+**D**), le impostazioni nel file EditorConfig vengono applicate alle righe di codice esistenti.
 
-Se il file EditorConfig viene rimosso dal progetto o dalla codebase sarà necessario chiudere e riaprire i file di codice aperti per ripristinare le impostazioni globali dell'editor per le nuove righe di codice.
+Se il file EditorConfig viene rimosso dal progetto o dalla codebase e si vuole che le nuove righe di codice siano formattate in base alle impostazioni globali dell'editor, sarà necessario chiudere e riaprire i file di codice aperti.
 
-### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Per aggiungere un file EditorConfig a un progetto o a una soluzione
+### <a name="add-an-editorconfig-file-to-a-project"></a>Aggiungere un file EditorConfig a un progetto
 
 1. Aprire un progetto o una soluzione in Visual Studio. Selezionare il progetto o il nodo della soluzione, a seconda che le impostazioni del file con estensione *editorconfig* siano da applicare a tutti i progetti nella soluzione o soltanto a uno. È anche possibile selezionare una cartella del progetto o della soluzione alla quale aggiungere il file con estensione *editorconfig*.
 
@@ -71,34 +71,27 @@ Se il file EditorConfig viene rimosso dal progetto o dalla codebase sarà necess
 
    Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-1. Nelle categorie a sinistra scegliere **Generale** e selezionare il modello **File di testo**. Nella casella di testo **Nome** immettere `.editorconfig` e scegliere **Aggiungi**.
+1. Nella casella di ricerca cercare **editorconfig**.
+
+   Nei risultati della ricerca verranno visualizzati due modelli di elemento **File editorconfig**.
+
+   ![Modelli di elemento per il file EditorConfig in Visual Studio](media/editorconfig-item-templates.png)
+
+1. Selezionare il modello **File editorconfig (impostazione predefinita)** per aggiungere un file EditorConfig prepopolato con due opzioni principali di EditorConfig per dimensioni e stile del rientro. In alternativa, selezionare il modello **File editorconfig (.NET)** per aggiungere un file EditorConfig prepopolato con i valori predefiniti per le [convenzioni di denominazione, formattazione e stile del codice .NET](../ide/editorconfig-code-style-settings-reference.md).
 
    Un file con estensione *editorconfig* viene visualizzato in Esplora soluzioni e viene aperto nell'editor.
 
-   ![File con estensione editorconfig in Esplora soluzioni](media/editorconfig-in-solution-explorer.png)
+   ![File con estensione editorconfig in Esplora soluzioni e nell'editor](media/editorconfig-dotnet.png)
 
-1. Modificare il file come necessario, ad esempio:
-
-   ```ini
-   root = true
-
-   [*.{cs,vb}]
-   indent_size = 4
-   trim_trailing_whitespace = true
-
-   [*.cs]
-   csharp_new_line_before_open_brace = methods
-   ```
+1. Modificare il file come necessario.
 
 ### <a name="other-ways-to-add-an-editorconfig-file"></a>Altri modi per aggiungere un file EditorConfig
 
 Sono disponibili alcuni altri modi per aggiungere un file EditorConfig a un progetto:
 
-- Installare l'[estensione del servizio di linguaggio EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) per aggiungere più facilmente i file *.editorconfig* ai progetti. Dopo aver installato l'estensione, scegliere **Aggiungi** > **File .editorconfig** dal menu di scelta rapida del nodo della soluzione, del nodo del progetto o di una qualsiasi cartella in **Esplora soluzioni**. Questa estensione migliora inoltre l'esperienza di modifica del file *.editorconfig*.
+- La [funzionalità di inferenza del codice](/visualstudio/intellicode/code-style-inference) di IntelliCode per Visual Studio deduce gli stili del codice dal codice esistente. Viene quindi creato un file EditorConfig non vuoto con le preferenze di stile del codice già definite.
 
-   ![Aggiungere il file .editorconfig usando l'estensione](media/editorconfig-extension-add.png)
-
-- Provare l'[estensione IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Questa estensione sperimentale deduce gli stili del codice dal codice esistente, quindi crea un file *.editorconfig* non vuoto con le preferenze di stile per il codice già definite.
+- A partire da Visual Studio 2019, è possibile [generare un file EditorConfig in base alle impostazioni di stile del codice](/visualstudio/ide/code-styles-and-code-cleanup#code-styles-in-editorconfig-files) in **Strumenti** > **Opzioni**.
 
 ## <a name="file-hierarchy-and-precedence"></a>Precedenza e gerarchia dei file
 
@@ -175,7 +168,6 @@ dir .editorconfig /s
 ## <a name="see-also"></a>Vedere anche
 
 - [.NET code style conventions](../ide/editorconfig-code-style-settings-reference.md) (Convenzioni di stile del codice .NET)
-- [Convenzioni di denominazione .NET](../ide/editorconfig-naming-conventions.md)
 - [Supporting EditorConfig for a language service](../extensibility/supporting-editorconfig.md) (Supporto di EditorConfig per un servizio di linguaggio)
 - [EditorConfig.org](http://editorconfig.org/)
 - [Funzionalità dell'editor del codice](writing-code-in-the-code-and-text-editor.md)

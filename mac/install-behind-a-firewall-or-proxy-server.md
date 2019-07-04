@@ -1,25 +1,26 @@
 ---
 title: Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
-description: Questo documento fornisce un elenco di host da includere nell'elenco elementi consentiti del firewall per il corretto funzionamento di Visual Studio per Mac (e dei relativi carichi di lavoro, incluso Xamarin) in un ambiente aziendale.
+description: Questo documento fornisce un elenco di host da abilitare nel firewall per il corretto funzionamento di Visual Studio per Mac (e dei relativi carichi di lavoro, incluso Xamarin) in un ambiente aziendale.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f3afd51cf4109f07107e60d61565c9126fc5ee7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982877"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032796"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installare e usare Visual Studio per Mac protetto da un firewall o un server proxy
 
-Se un utente o un'organizzazione usa misure di sicurezza come un firewall o un server proxy, è possibile che vi siano URL di dominio da aggiungere all'elenco elementi consentiti, oltre che porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio per Mac e dei servizi di Azure.
+Se un utente o un'organizzazione usa misure di sicurezza, come un firewall o un server proxy, è possibile che vi siano domini da aggiungere a un elenco di indirizzi consentiti, così come porte e protocolli da aprire per ottenere un'esperienza ottimale durante l'installazione e l'uso di Visual Studio per Mac e dei servizi di Azure.
 
-- [**Installare Visual Studio per Mac**](#install-visual-studio-for-mac): queste tabelle includono gli URL da aggiungere all'elenco elementi consentiti per poter accedere a tutte le funzionalità e i carichi di lavoro di Visual Studio per Mac.
 
-- [**Usare Visual Studio per Mac**](#use-visual-studio-for-mac): queste tabelle includono gli URL da aggiungere all'elenco elementi consentiti per poter accedere a tutte le funzionalità e i servizi necessari.
+- [**Installare Visual Studio per Mac**](#install-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività per poter accedere a tutte le funzionalità e i carichi di lavoro di Visual Studio per Mac.
+
+- [**Usare Visual Studio per Mac**](#use-visual-studio-for-mac): queste tabelle includono i domini che devono consentire la connettività per poter accedere alle funzionalità correlate.
 
 ## <a name="install-visual-studio-for-mac"></a>Installare Visual Studio per Mac
 
@@ -38,6 +39,8 @@ Poiché il programma di installazione di Visual Studio per Mac esegue il downloa
 | download.visualstudio.microsoft.com | Pacchetti del programma di installazione|
 | xamarin.azureedge.net | Pacchetti del programma di installazione|
 | developer.xamarin.com | Pacchetti del programma di installazione|
+| static.xamarin.com | Pacchetti del programma di installazione|
+| dl.xamarin.com | Pacchetti del programma di installazione|
 | dc.services.visualstudio.com| Segnalazione di arresti anomali del sistema |
 
 ### <a name="third-party-domains"></a>Domini di terze parti
@@ -50,7 +53,7 @@ Poiché il programma di installazione di Visual Studio per Mac esegue il downloa
 
 ## <a name="use-visual-studio-for-mac"></a>Usare Visual Studio per Mac
 
-Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual Studio per Mac protetto da un proxy o un firewall, è consigliabile inserire nell'elenco elementi consentiti le porte e i domini seguenti.
+Per assicurarsi di avere accesso a tutte le funzionalità necessarie in Visual Studio per Mac protetto da un proxy o un firewall, è consigliabile aggiungere all'elenco di elementi consentiti le porte e i domini seguenti.
 
 ### <a name="general"></a>Generale
 

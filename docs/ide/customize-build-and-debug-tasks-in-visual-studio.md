@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820302"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291033"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizzare le attività di compilazione e debug per lo sviluppo con "Apri cartella"
 
@@ -33,7 +32,6 @@ Personalizzare la codebase senza progetto con i seguenti file *json*:
 |-|-|
 |*tasks.vs.json*|Specificare i comandi di compilazione e le opzioni del compilatore personalizzati, nonché le attività arbitrarie (non correlate alla compilazione).<br>Accessibile tramite il comando **Configura attività** nel menu di scelta rapida di **Esplora soluzioni**.|
 |*launch.vs.json*|Specificare gli argomenti della riga di comando per il debug.<br>Accessibile tramite il comando **Impostazioni per debug e avvio** nel menu di scelta rapida di **Esplora soluzioni**.|
-|*VSWorkspaceSettings.json*|Impostazioni generiche che possono influire sulle attività e l'avvio. Ad esempio, con la definizione di `envVars` in *VSWorkspaceSettings.json* vengono aggiunte le variabili di ambiente specificate per i comandi eseguiti esternamente.<br>Questo file viene creato manualmente.|
 
 Questi file *json* si trovano in una cartella nascosta denominata *.vs* nella cartella radice della codebase. I file *tasks.vs.json* e *launch.vs.json* vengono creati da Visual Studio all'occorrenza, quando di sceglie il comando **Configura attività** o **Impostazioni per debug e avvio** per un file o una cartella in **Esplora soluzioni**. Questi file *json* sono nascosti in quanto la maggior parte degli utenti preferisce in genere non archiviarli nel controllo del codice sorgente. Tuttavia, se si vuole avere la possibilità di archiviarli nel controllo del codice sorgente, trascinare i file nella radice della codebase, dove sono visibili.
 
@@ -193,7 +191,7 @@ Più file *tasks.vs.json* possono essere presenti alla radice e nelle sottodirec
 - La directory padre della directory corrente, risalendo fino alla directory radice.
 - I file di impostazioni nella directory radice.
 
-Queste regole di aggregazione si applicano ai file *tasks.vs.json* e *VSWorkspaceSettings.json*. Per informazioni su come vengono aggregate le impostazioni in altri file, vedere la sezione corrispondente in questo articolo.
+Queste regole di aggregazione si applicano a *tasks.vs.json*. Per informazioni su come vengono aggregate le impostazioni in altri file, vedere la sezione corrispondente in questo articolo.
 
 ### <a name="properties-for-tasksvsjson"></a>Proprietà per tasks.vs.json
 
@@ -289,10 +287,6 @@ Quando si salva questo file, il nome della nuova configurazione viene visualizza
 
 > [!NOTE]
 > La proprietà matrice `configurations` in *launch.vs.json* viene letta da due percorsi di file, ovvero la directory radice per la base di codici e la directory *.vs*. In caso di conflitto viene data priorità al valore in *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definire le impostazioni dell'area di lavoro in VSWorkspaceSettings.json
-
-È possibile specificare impostazioni generiche con potenziali effetti sulle attività e l'avvio nel file *VSWorkspaceSettings.json*. Ad esempio, se si definisce `envVars` in *VSWorkspaceSettings.json*, Visual Studio aggiunge le variabili di ambiente specificate ai comandi eseguiti esternamente. Per usare questo file, è necessario crearlo manualmente.
 
 ## <a name="additional-settings-files"></a>File di impostazioni aggiuntivi
 

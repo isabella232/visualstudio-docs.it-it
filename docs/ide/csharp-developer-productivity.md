@@ -4,18 +4,18 @@ description: Panoramica di esplorazione, analisi del codice, testing unità e al
 author: kuhlenh
 ms.author: gewarren
 manager: jillfra
-ms.date: 03/26/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973371"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328772"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guida per la produttività di Visual Studio per gli sviluppatori C#
 
@@ -29,7 +29,7 @@ Informazioni su come Visual Studio consente agli sviluppatori di essere ancora p
 
 ::: moniker-end
 
-Se si è abituati a usare un IDE o un ambiente di codifica diverso, è possibile modificare lo schema della tastiera per *Visual Studio Code* o *ReSharper (Visual Studio)*:
+Se si è abituati a usare un IDE o un ambiente di codifica diverso, è possibile modificare lo schema della tastiera per *Visual Studio Code* o *ReSharper (Visual Studio)* :
 
 ![Schemi della tastiera di Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
 
@@ -41,31 +41,33 @@ Alcune estensioni offrono anche gli schemi della tastiera:
 
 Di seguito sono riportate alcune combinazioni di tasti di scelta rapida comuni di Visual Studio:
 
-| Tasti di scelta rapida (tutti i profili) | Comando | Description |
+| Tasti di scelta rapida (tutti i profili) | Comando | DESCRIZIONE |
 |-|-|-|
 | **CTRL**+**T** | Vai a tutti | Consente di passare a qualsiasi dichiarazione di file, tipo, membro o simbolo |
 | **F12** (o **CTRL**+**clic**) | Vai a definizione | Consente di passare al punto in cui si trova la definizione di un simbolo |
 | **CTRL**+**F12** | Vai all'implementazione | Consente di passare da un tipo o membro di base alle varie implementazioni di questo. |
 | **MAIUSC**+**F12** | Trova tutti i riferimenti | Consente di visualizzare tutti i riferimenti di simboli o valori letterali |
-| **CTRL**+**.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
+| **CTRL**+ **.** (o **ALT**+**INVIO** in profilo C# ) | Azioni rapide e refactoring | Visualizza le correzioni e le azioni di generazione di codice, i refactoring e altre azioni rapide disponibili in corrispondenza della posizione del cursore o del codice selezionato |
 | **Ctrl**+**D** | Duplicare una riga | Duplica la riga di codice in cui si trova il cursore (disponibile in **Visual Studio 2017 versione 15.6** e versioni successive) |
-| **MAIUSC**+**ALT**+**+**/**-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
-| **MAIUSC** + **ALT** + **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
+| **MAIUSC**+**ALT**+ **+** / **-** | Espandi/Comprimi selezione | Espande o comprime la selezione corrente nell'editor (disponibile in **Visual Studio 2017 versione 15.5** e versioni successive) |
+| **MAIUSC** + **ALT** +  **.** | Inserisci punto di inserimento corrispondente successivo | Aggiunge una selezione e un punto di inserimento nella posizione successiva che corrisponde alla selezione corrente (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
 | **CTRL**+**Q** | Cerca | Consente di effettuare una ricerca all'interno di tutte le impostazioni di Visual Studio |
 | **F5** | Avvia debug | Avvia il debug dell'applicazione |
 | **CTRL**+**F5** | Esecuzione senza debug | Esegue l'applicazione in locale senza debug |
-| **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | [Formatta documento](code-styles-and-quick-actions.md#format-document-command) | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
-| **CTRL**+**\\**,**CTRL**+**E** (Profilo predefinito) o **CTRL**+**W**,**E** (Profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
+| **CTRL**+**K**,**D** (profilo predefinito) o **CTRL**+**E**,**D** (profilo C#) | Formatta documento | Corregge le violazioni alle regole di formattazione nel file in base alle impostazioni relative alle nuove righe, alla spaziatura e ai rientri |
+| **CTRL**+ **\\** ,**CTRL**+**E** (Profilo predefinito) o **CTRL**+**W**,**E** (Profilo C#) | Visualizzazione dell'elenco errori | Consente di visualizzare tutti gli errori nel documento, nel progetto o nella soluzione |
 | **ALT** + **PGSU/PGGIÙ** | Passa a problema successivo/precedente | Passa all'errore, avviso, suggerimento precedente/successivo nel documento (disponibile in **Visual Studio 2017 versione 15.8** e versioni successive) |
+| **CTRL**+**K**, **/** | Attiva/Disattiva commento a riga singola/Rimuovi commento | Questo comando aggiunge o rimuove un commento a riga singola a seconda che la selezione sia o meno già commentata |
+| **CTRL**+**MAIUSC**+ **/** | Attiva/Disattiva commento per il blocco/Rimuovi commento | Questo comando aggiunge o rimuove commenti per il blocco a seconda dell'elemento selezionato |
 
 > [!NOTE]
 > Alcune estensioni separano i tasti di scelta rapida predefiniti di Visual Studio. Per usare i comandi riportati in precedenza, ripristinare i tasti di scelta rapida sui valori predefiniti di Visual Studio in **Strumenti** > **Importa/Esporta impostazioni** > **Reimposta tutte le impostazioni** oppure **Strumenti** > **Opzioni** > **Tastiera** > **Reimposta**.
 
-Per altre informazioni sui tasti di scelta rapida e i comandi, vedere [Tasti di scelta rapida](../ide/tips-and-tricks-for-visual-studio.md).
+Per altre informazioni sui tasti di scelta rapida e i comandi, vedere [Tasti di scelta rapida per la produttività](../ide/productivity-shortcuts.md) e [Tasti di scelta rapida più comuni](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md).
 
 ## <a name="navigate-quickly-to-files-or-types"></a>Passare rapidamente a file o tipi
 
-Visual Studio 2017 offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**). **Vai a tutti** consente di passare rapidamente a qualsiasi dichiarazione di file, tipo, membro o simbolo.
+Visual Studio offre una funzionalità denominata **Vai a tutti** (**CTRL**+**T**). **Vai a tutti** consente di passare rapidamente a qualsiasi dichiarazione di file, tipo, membro o simbolo.
 
 - Per cambiare la posizione di questa barra di ricerca o disattivare l'anteprima della funzionalità di spostamento in tempo reale, usare l'icona a forma di **ingranaggio**.
 - Filtrare i risultati usando sintassi come `t mytype`.
@@ -74,50 +76,63 @@ Visual Studio 2017 offre una funzionalità denominata **Vai a tutti** (**CTRL**+
 
 ![Vai a tutti in Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="enforce-code-style-rules-on-a-codebase"></a>Applicare le regole di stile del codice a una codebase
+## <a name="enforce-code-style-rules"></a>Applicare le regole di stile del codice
 
-È possibile usare un file con estensione *editorconfig* per codificare le convenzioni di codifica e spostarle con l'origine.
+È possibile usare un file EditorConfig per codificare le convenzioni per la scrittura del codice e spostarle con l'origine.
 
-::: moniker range="vs-2017"
+![Imposizione dello stile del codice in Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-- È consigliabile installare l'[estensione dei servizi di linguaggio EditorConfig](https://aka.ms/editorconfig) per aggiungere e modificare un file *.editorconfig* in Visual Studio.
+- Aggiungere un file EditorConfig predefinito o in stile .NET al progetto scegliendo **Aggiungi** > **Nuovo elemento**. Nella finestra di dialogo **Aggiungi nuovo elemento** cercare "editorconfig". Selezionare uno dei due modelli di elemento **File editorconfig** e quindi scegliere **Aggiungi**.
 
-::: moniker-end
+   ![Modelli di elemento EditorConfig in Visual Studio](media/editorconfig-item-templates.png)
 
 ::: moniker range=">=vs-2019"
 
-- Creare automaticamente un file *editorconfig* dalle impostazioni di stile del codice in **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**.
+- Creare automaticamente un file *editorconfig* in base alle impostazioni di stile del codice in **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Stile codice**.
 
    ![Generare un file con estensione editorconfig dalle impostazioni in Visual Studio 2019](media/vs-2019/generate-editorconfig-file.png)
 
 ::: moniker-end
 
-- Provare l'[estensione IntelliCode per Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Questa estensione sperimentale deduce gli stili del codice dal codice esistente, quindi crea un file *.editorconfig* non vuoto con le preferenze di stile per il codice già definite.
+- La [funzionalità di inferenza del codice](/visualstudio/intellicode/code-style-inference) di IntelliCode per Visual Studio deduce gli stili del codice dal codice esistente. Viene quindi creato un file EditorConfig non vuoto con le preferenze di stile del codice già definite.
 
-- Vedere la documentazione relativa alle [opzioni delle convenzioni di scrittura del codice di .NET](editorconfig-code-style-settings-reference.md).
+Vedere la documentazione relativa alle [opzioni delle convenzioni per la scrittura del codice .NET](editorconfig-code-style-settings-reference.md), che contiene anche un esempio di file EditorConfig completo.
 
-- Vedere [questo gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) per un esempio di file *.editorconfig*.
+::: moniker range=">=vs-2019"
 
-![Imposizione dello stile del codice in Visual Studio](../ide/media/VSGuide_CodeStyle.png)
+## <a name="code-cleanup"></a>Pulizia del codice
+
+Visual Studio offre la formattazione on-demand del file di codice, incluse le preferenze di stile per il codice, attraverso la funzionalità **Pulizia del codice**. Per eseguire Pulizia del codice, fare clic sull'icona a forma di scopa nella parte inferiore dell'editor o premere **CTRL**+**K**, **CTRL**+**E**.
+
+![Pulsante Pulizia del codice in Visual Studio 2019](media/execute-code-cleanup.png)
+
+È anche possibile eseguire la pulizia del codice per l'intero progetto o soluzione. Fare clic con il pulsante destro del mouse sul nome del progetto o della soluzione in **Esplora soluzioni**, selezionare **Analizza ed esegui pulizia del codice** e quindi selezionare **Esegui pulizia del codice**.
+
+![Eseguire Pulizia del codice per l'intero progetto o soluzione](media/run-code-cleanup-project-solution.png)
+
+Oltre alla formattazione del file in termini di spazi, rientri e così via, **Pulizia del codice** applica anche gli stili del codice selezionati. Le preferenze per ogni stile del codice vengono lette dal [file EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), se ce n'è uno per il progetto, o dalle [impostazioni di stile del codice](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) nella finestra di dialogo **Opzioni**.
+
+::: moniker-end
 
 ## <a name="refactorings-and-code-fixes"></a>Refactoring e correzioni del codice
 
-Visual Studio include molti refactoring, azioni di generazione del codice e correzioni del codice. Le sottolineature rosse rappresentano errori, quelle verdi rappresentano gli avvisi e tre punti grigi rappresentano suggerimenti per il codice. È possibile accedere alle correzioni del codice facendo clic sull'icona lampadina o cacciavite o premendo **CTRL**+**.** oppure **ALT**+**INVIO**. Ogni correzione è dotata di una finestra di anteprima che mostra come funziona la correzione in un diff di codice live.
+Visual Studio include numerosi refactoring, azioni di generazione del codice e correzioni del codice. Le sottolineature rosse rappresentano errori, quelle verdi rappresentano gli avvisi e tre punti grigi rappresentano suggerimenti per il codice. È possibile accedere alle correzioni del codice facendo clic sull'icona lampadina o cacciavite o premendo **CTRL**+ **.** oppure **ALT**+**INVIO**. Ogni correzione è dotata di una finestra di anteprima che mostra come funziona la correzione in un diff di codice live.
 
 Le correzioni rapide e i refactoring più comuni includono:
 
-- *Rinomina*
-- *Estrai metodo*
-- *Cambia firma metodo*
-- *Genera costruttore*
-- *Genera metodo*
-- *Sposta il tipo in File*
-- *Aggiungi il controllo Null*
-- *Aggiungi parametro*
-- *Rimuovi istruzioni using non necessarie*
-- *Ciclo foreach verso query o metodi LINQ*
-- *Pull di membri*
-- Per altre informazioni, vedere [funzionalità di generazione del codice](code-generation-in-visual-studio.md)
+- Rinomina
+- Estrai metodo
+- Cambia firma metodo
+- Genera costruttore
+- Genera metodo
+- Sposta il tipo nel file
+- Aggiungi il controllo Null
+- Aggiungi parametro
+- Rimuovi istruzioni using non necessarie
+- Ciclo foreach verso query o metodi LINQ
+- Pull di membri
+
+Per altre informazioni, vedere [Funzionalità di generazione del codice](code-generation-in-visual-studio.md).
 
 È possibile [installare gli analizzatori FxCop](../code-quality/install-fxcop-analyzers.md) per contrassegnare i problemi del codice. Oppure è possibile scrivere refactoring o correzioni del codice propri con gli [analizzatori Roslyn](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
 
@@ -141,13 +156,13 @@ Visual Studio include molte funzionalità che consentono di eseguire ricerche e 
 | Vai a definizione | **F12** o **CTRL**+**clic**| Premere **CTRL** mentre si fa clic per passare alla definizione |
 | Visualizza definizione | **ALT**+**F12** | Visualizzazione inline di una definizione |
 | Visualizzatore di struttura | Linee grigie tratteggiate tra parentesi graffe | Passare il mouse per visualizzare la struttura del codice |
-| Spostamento agli assembly decompilati | **F12** o **CTRL**+**clic** | Passare all'origine esterna (decompilata con ILSpy) abilitando la funzionalità: **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate**. |
+| Spostamento agli assembly decompilati | **F12** o **CTRL**+**clic** | Passare all'origine esterna (decompilata con ILSpy) abilitando la funzionalità: **Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Avanzate** > **Abilita spostamento a origini decompilate**. |
 
 ![Vai a tutti e Trova tutti i riferimenti](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="improved-intellisense"></a>Funzionalità IntelliSense migliorata
 
-Scaricare l'[estensione IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSIntelliCode) per ottenere il [completamento del codice con riconoscimento del contesto](/visualstudio/intellicode/intellicode-visual-studio) invece di un semplice elenco in ordine alfabetico. È possibile anche eseguire il training di un [modello IntelliSense personalizzato](/visualstudio/intellicode/custom-model-faq) basato su librerie specifiche del dominio.
+Usare IntelliCode per Visual Studio per ottenere il [completamento del codice con riconoscimento del contesto](/visualstudio/intellicode/intellicode-visual-studio) invece di un semplice elenco in ordine alfabetico. È possibile anche eseguire il training di un [modello IntelliSense personalizzato](/visualstudio/intellicode/custom-model-faq) basato su librerie specifiche del dominio.
 
 ## <a name="unit-testing"></a>Unit test
 
@@ -209,9 +224,9 @@ Ecco un elenco di funzionalità editor e di produttività per rendere più effic
 | Funzionalità | Dettagli | Abilitazione |
 |-|-|-|
 | Individuare il file in Esplora soluzioni | Evidenzia il file attivo in **Esplora soluzioni** | **Strumenti** > **Opzioni** > **Progetti e soluzioni** > **Tieni traccia degli elementi attivi in Esplora soluzioni** |
-| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |
-| Abilita analisi della soluzione completa | Visualizza tutti gli errori della soluzione in **Elenco errori** | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita analisi della soluzione completa** |
-| Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#** > **Avanzate** > **Abilita spostamento a origini decompilate** |
+| Aggiungere le direttive using per i tipi in assembly di riferimento e pacchetti NuGet | Visualizza una lampadina di errore con una correzione del codice per installare un pacchetto NuGet per un tipo senza riferimenti | **Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Avanzate** > **Suggerisci le direttive using per i tipi in assembly di riferimento** e **Suggerisci le direttive using per i tipi in pacchetti NuGet** |
+| Abilita analisi della soluzione completa | Visualizza tutti gli errori della soluzione in **Elenco errori** | **Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Avanzate** > **Abilita analisi della soluzione completa** |
+| Abilita spostamento a origini decompilate | Consente l'uso di Vai a definizione per tipi o membri di origini esterne e del decompilatore ILSpy per visualizzare i corpi dei metodi | **Strumenti** > **Opzioni** > **Editor di testo** > **C#**  > **Avanzate** > **Abilita spostamento a origini decompilate** |
 | Modalità di terminazione/suggerimento | Modifica il comportamento di completamento in IntelliSense. Gli sviluppatori con esperienza di IntelliJ tendono a usare un'impostazione non predefinita in questo caso. | **Menu** > **Modifica** > **IntelliSense** > **Attiva/disattiva modalità di terminazione** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Visualizza le informazioni di riferimento del codice e la cronologia modifiche nell'editor (gli indicatori CodeLens del controllo del codice sorgente non sono disponibili nell'edizione Visual Studio Community). | **Strumenti** > **Opzioni** > **Editor di testo** > **Tutti i linguaggi** > **CodeLens** |
 | [Frammenti di codice](../ide/visual-csharp-code-snippets.md) | Utili per di generare codice boilerplate comune | Digitare un nome di frammento di codice e premere **TAB** due volte. |

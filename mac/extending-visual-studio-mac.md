@@ -3,15 +3,15 @@ title: Estensione di Visual Studio per Mac
 description: Le funzioni e funzionalità di Visual Studio per Mac possono essere estese con moduli chiamati pacchetti di estensione. La prima parte di questa guida permette di creare un semplice pacchetto di estensione per Visual Studio per Mac per inserire la data e l'ora in un documento. La seconda parte della guida presenta le nozioni di base relative al sistema dei pacchetti di estensione e alcune delle principali API che costituiscono la base di Visual Studio per Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1753eef9987bc59be55298489e10c5698eb944cc
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983155"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033130"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estensione di Visual Studio per Mac
 
@@ -28,7 +28,7 @@ Perché un pacchetto di estensione possa essere compilato da Visual Studio per M
 Il vantaggio di questa progettazione modulare è il fatto che Visual Studio per Mac è estendibile, ovvero sono disponibili molti punti di estensione su cui è possibile basare i pacchetti di estensione personalizzati. Alcuni esempi degli attuali pacchetti di estensione includono il supporto per C# ed F#, strumenti debugger e modelli di progetto.
 
 > [!NOTE]
-> **Nota**: in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
+> in presenza di un progetto Addin Maker creato prima di Addin Maker 1.2, è necessario eseguire la migrazione del progetto come descritto nei passaggi [qui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -36,7 +36,7 @@ Questa sezione esamina i diversi file generati da Addin Maker e i dati richiesti
 
 ## <a name="attribute-files"></a>File di attributo
 
-I pacchetti di estensione archiviano i metadati su nome, versione, dipendenze e altre informazioni in attributi C#. Addin Maker crea due file, `AddinInfo.cs` e `AssemblyInfo.cs`, per archiviare e organizzare queste informazioni. Per i pacchetti di estensione, devono essere specificati un ID univoco e uno spazio dei nomi nel rispettivo *attributo Addin*:
+I pacchetti di estensione archiviano i metadati su nome, versione, dipendenze e altre informazioni in attributi C#. Addin Maker crea due file, `AddinInfo.cs` e `AssemblyInfo.cs`, per archiviare e organizzare queste informazioni. Per i pacchetti di estensione, devono essere specificati un ID univoco e uno spazio dei nomi nel rispettivo *attributo `Addin`* :
 
 ```csharp
 [assembly:Addin (
@@ -46,7 +46,7 @@ I pacchetti di estensione archiviano i metadati su nome, versione, dipendenze e 
 )]
 ```
 
-I pacchetti di estensione devono anche dichiarare dipendenze dai pacchetti di estensione proprietari dei punti di estensione a cui sono collegati. A questi viene automaticamente fatto riferimento in fase di compilazione.
+I pacchetti di estensione devono anche dichiarare dipendenze dai pacchetti di estensione proprietari dei punti di estensione a cui sono collegati, ai quali viene automaticamente fatto riferimento in fase di compilazione.
 
 È inoltre possibile aggiungere altri riferimenti tramite il nodo dei riferimenti del componente aggiuntivo nel riquadro della soluzione per il progetto, come mostrato nell'immagine seguente:
 
@@ -81,10 +81,10 @@ Le estensioni comando vengono definite aggiungendo voci al punto di estensione `
 
 Il nodo di estensione contiene un attributo path che specifica il punto di estensione a cui si collega, in questo caso `/MonoDevelop/Ide/Commands/Edit`. Inoltre, funge da nodo padre per il comando. Il nodo del comando include gli attributi seguenti:
 
-* **id**: specifica l'identificatore per questo comando. Gli identificatori dei comandi devono essere dichiarati come membri di enumerazione e vengono usati per connettere Commands a CommandItems.
-* **_label**: testo da visualizzare nei menu.
-* **_description**: testo da visualizzare come descrizione comando per i pulsanti della barra degli strumenti.
-* **defaultHandler**: specifica la classe `CommandHandler` che attiva il comando.
+* `id` - Specifica l'identificatore per questo comando. Gli identificatori dei comandi devono essere dichiarati come membri di enumerazione e vengono usati per connettere Commands a CommandItems.
+* `_label` - Il testo da visualizzare nei menu.
+* `_description` - Il testo da visualizzare come descrizione comando per i pulsanti della barra degli strumenti.
+* `defaultHandler` - Specifica la classe `CommandHandler` che attiva il comando.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -96,7 +96,7 @@ Nel frammento di codice seguente è illustrata un'estensione CommandItem che si 
 </Extension>
 ```
 
-Un'estensione CommandItem inserisce un comando specificato nel relativo attributo id in un menu. CommandItem estende il punto di estensione `/MonoDevelop/Ide/MainMenu/Edit`, che fa apparire l'etichetta del comando nel **menu Modifica**. Si noti che **id** in CommandItem corrisponde all'ID del nodo del comando, `InsertDate`. Se si rimuove CommandItem, l'opzione **Inserisci data** non è più disponibile nel menu Modifica.
+Un'estensione CommandItem inserisce un comando specificato nel relativo attributo `id` in un menu. CommandItem estende il punto di estensione `/MonoDevelop/Ide/MainMenu/Edit`, che fa apparire l'etichetta del comando nel **menu Modifica**. Osservare come l'ID in CommandItem corrisponda all'ID del nodo del comando, `InsertDate`. Se si rimuove CommandItem, l'opzione **Inserisci data** non sarà più disponibile nel menu Modifica.
 
 ### <a name="command-handlers"></a>Gestori di comandi
 
@@ -129,7 +129,7 @@ public enum DateInserterCommands
 }
 ```
 
-In questo modo si collegano il comando e CommandItem: CommandItem chiama il comando quando CommandItem viene selezionato nel **menu Modifica**.
+Il comando e CommandItem sono ora collegati: CommandItem chiama il comando quando CommandItem viene selezionato nel **menu Modifica**.
 
 ## <a name="ide-apis"></a>API dell'IDE
 
@@ -158,6 +158,35 @@ Per informazioni sull'ambito delle aree disponibili per lo sviluppo, vedere le [
 * Refactoring
 * Gestori di esecuzione
 * Evidenziazione della sintassi
+
+## <a name="extending-the-new-editor"></a>Estensione del nuovo editor
+
+Visual Studio per Mac [introduce l'interfaccia utente del nuovo editor di testo Cocoa](https://aka.ms/vs/mac/editor/learn-more) basato sugli stessi livelli di editor di Visual Studio in Windows.
+
+La condivisione dell'editor di testo tra Visual Studio e Visual Studio per Mac offre numerosi vantaggi, tra cui la possibilità di adattare a Visual Studio per Mac codice destinato all'editor di Visual Studio.
+
+> [!NOTE]
+> Al momento, il nuovo editor supporta solo file C#. Verranno presi in considerazione altri linguaggi e formati di file nell'editor legacy, in cui sono tuttavia implementate alcune delle API dell'editor di Visual Studio descritte di seguito.
+
+### <a name="visual-studio-editor-overview"></a>Panoramica dell'editor di Visual Studio
+
+![Architettura dell'editor di Visual Studio](media/vs-editor-architecture.png)
+
+Prima di affrontare i dettagli dell'estensione per Visual Studio per Mac, è utile fornire alcune informazioni sull'editor condiviso. Di seguito sono elencate alcune risorse che possono facilitare questo approfondimento:
+
+* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
+* [MEF nell'editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Componenti e funzionalità dell'editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
+* [Punti di estensione dei servizi di linguaggio e dell'editor](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Video introduttivo dell'architettura dell'editor](https://www.youtube.com/watch?v=PkYVztKjO9A)
+
+Durante la consultazione di queste risorse, sarà necessario avere familiarità con i concetti principali relativi a [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) e [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+
+* Un `ITextBuffer` è una rappresentazione in memoria di testo che può essere modificato nel corso del tempo. La proprietà `CurrentSnapshot` di `ITextBuffer` restituisce una rappresentazione *immutabile* del contenuto corrente del buffer, un'istanza di `ITextSnapshot`. Quando viene apportata una modifica nel buffer, la proprietà CurrentSnapshot viene aggiornata alla versione più recente. Gli analizzatori potranno esaminare lo snapshot di testo in qualsiasi thread, ma il contenuto non potrà essere in alcun modo modificato.
+
+* Un `ITextView` è la rappresentazione nell'interfaccia utente come viene eseguito il rendering di `ITextBuffer` sullo schermo del controllo editor. Contiene un riferimento al buffer di testo, nonché a `Caret`, `Selection` e ad altri concetti correlati all'interfaccia utente.
+
+Per un oggetto [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), è possibile recuperare la relativa interfaccia `ITextBuffer` o `ITextView` sottostante, rispettivamente tramite `Document.GetContent<ITextBuffer>()` e `Document.GetContent<ITextView>()`.
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 

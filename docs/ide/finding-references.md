@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793503"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195256"
 ---
 # <a name="find-references-in-your-code"></a>Cercare riferimenti nel codice
 
@@ -48,7 +48,7 @@ Per impostazione predefinita, i riferimenti sono raggruppati prima in base al pr
 I due raggruppamenti predefiniti usati sono **Definizione** e **Progetto**, ma è possibile aggiungerne altri scegliendo il comando **Raggruppamento** dal menu di scelta rapida dell'elemento selezionato. L'aggiunta di più raggruppamenti può essere utile se la soluzione contiene molti file e percorsi.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtrare per tipo di riferimento in .NET
-In C# o Visual Basic la finestra Trova riferimenti include una colonna Tipo in cui sono elencati i tipi di riferimenti trovati. È possibile usare questa colonna per applicare un filtro in base al tipo di riferimento facendo clic sull'icona del filtro visualizzata al passaggio del mouse sull'intestazione della colonna. I riferimenti possono essere filtrati in base a Lettura, Scrittura, Riferimento e Solo nome.
+In C# o Visual Basic la finestra Trova riferimenti include una colonna Tipo in cui sono elencati i tipi di riferimenti trovati. È possibile usare questa colonna per applicare un filtro in base al tipo di riferimento facendo clic sull'icona del filtro visualizzata al passaggio del mouse sull'intestazione della colonna. I riferimenti possono essere filtrati in base a Lettura, Scrittura, Riferimento, Nome, Spazio dei nomi e Tipo.
 
 ![Colonna Tipo della finestra Trova riferimenti ](../ide/media/vside_findallreferencesKind.png)
 

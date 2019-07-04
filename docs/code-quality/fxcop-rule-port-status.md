@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0d78e7dcd7dfd203a15510037b277b8c2633805e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 4a458a50be6161e320b3ffbbe702e21f9f502c77
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038647"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559674"
 ---
 # <a name="fxcop-rule-port-status"></a>Stato della porta regola FxCop
 
@@ -67,8 +67,8 @@ ID regola | Titolo
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementare IDisposable correttamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Le eccezioni devono essere pubbliche
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Non generare eccezioni in posizioni non previste
-CA1066 | Tipo di {0} devono implementare IEquatable<T> perché esegue l'override di Equals
-CA1067 | Eseguire l'override Object.Equals(object) durante l'implementazione di IEquatable<T>
+CA1066 | Tipo di {0} devono implementare IEquatable\<T > perché esegue l'override di Equals
+CA1067 | Eseguire l'override Object.Equals(object) durante l'implementazione di IEquatable\<T >
 CA1068 | I parametri CancellationToken devono provenire ultimo
 CA1200 | Evitare di usare i tag cref con un prefisso
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Non passare valori letterali come parametri localizzati

@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi relativi al debug di snapshot | Microsoft Docs
-ms.custom: seodec18
-ms.date: 11/07/2018
+ms.custom: ''
+ms.date: 04/24/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - debugger
@@ -11,16 +11,92 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3c66ba4a5031326ec288d3a5f2f3c4851d17ca6
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58857762"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559744"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Risoluzione dei problemi e problemi noti per il debug di snapshot in Visual Studio
 
-Se i passaggi descritti in questo articolo non risolvono il problema, contattare snaphelp@microsoft.com.
+Se i passaggi descritti in questo articolo non risolvono il problema, cercare il problema sul [Community degli sviluppatori](https://developercommunity.visualstudio.com/spaces/8/index.html) o segnalare un nuovo problema scegliendo **consentono** > **Invia commenti e suggerimenti**   >  **Segnala un problema** in Visual Studio.
+
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Collegare Snapshot Debugger" rileva un errore di codice di stato HTTP
+
+Se viene visualizzato l'errore seguente nel **Output** finestra durante il tentativo di collegare, potrebbe essere un problema noto elencato di seguito. Provare le soluzioni proposte e se il problema persiste, contattare il precedente alias.
+
+`[TIMESTAMP] Error --- Unable to Start Snapshot Debugger - Attach Snapshot Debugger failed: System.Net.WebException: The remote server returned an error: (###) XXXXXX`
+
+### <a name="401-unauthorized"></a>Non autorizzato (401)
+
+Questo errore indica che la chiamata REST eseguita da Visual Studio di Azure Usa una credenziale non è valida. Un bug noto con il modulo di Azure Active Directory facile OAuth può produrre questo errore.
+
+Seguire questa procedura:
+
+* Assicurarsi che l'account di personalizzazione di Visual Studio disponga delle autorizzazioni per la sottoscrizione di Azure e risorse che si collega a. Un modo rapido per determinare questo consiste nella verifica se la risorsa è disponibile nella finestra di dialogo dalla **Debug** > **collegare Snapshot Debugger...**   >  **Risorsa di azure** > **seleziona esistente**, o in Cloud Explorer.
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
+
+### <a name="403-forbidden"></a>(403) accesso negato
+
+Questo errore indica che l'autorizzazione viene negata. Ciò può essere causato da molti problemi diversi.
+
+Seguire questa procedura:
+
+* Verificare che l'account di Visual Studio ha una sottoscrizione Azure valida con le autorizzazioni di controllo di accesso basato sui ruoli (RBAC) necessarie per la risorsa. Per servizio App, verificare se si dispone delle autorizzazioni per [query](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) piano di servizio App che ospita l'app.
+* Verificare che il timestamp del computer client sia corrette e aggiornate. I server con i timestamp disattivata da più di 15 minuti di timestamp della richiesta in genere producono questo errore.
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
+
+### <a name="404-not-found"></a>(404) non trovato
+
+Questo errore indica che il sito Web non è stato trovato nel server.
+
+Seguire questa procedura:
+
+* Verificare di avere un sito Web distribuito e in esecuzione sulla risorsa che sta connettendo al servizio App.
+* Verificare che il sito sia disponibile all'indirizzo https://\<risorsa\>. azurewebsites.net
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
+
+### <a name="406-not-acceptable"></a>(406 pagina) non valida
+
+Questo errore indica che il server è in grado di rispondere sul tipo definito nell'intestazione Accept della richiesta.
+
+Seguire questa procedura:
+
+* Verificare che il sito è disponibile all'indirizzo https://\<risorsa\>. azurewebsites.net
+* Verificare che il sito non trasferiti alle nuove istanze. Snapshot Debugger Usa il concetto di ARRAffinity il routing delle richieste a istanze specifiche che possono generare questo errore in modo intermittente.
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
+
+### <a name="409-conflict"></a>Conflitto (409)
+
+Questo errore indica che la richiesta è in conflitto con lo stato del server corrente.
+
+Si tratta di un problema noto che si verifica quando un utente prova a collegare Snapshot Debugger su un servizio App che ha abilitato Application Insights. Application Insights imposta AppSettings con una maiuscole e minuscole diverse rispetto a Visual Studio, che ha causato questo problema.
+
+::: moniker range=">= vs-2019"
+È stato stato risolto in Visual Studio 2019.
+::: moniker-end
+
+Seguire questa procedura:
+
+::: moniker range="vs-2017"
+
+* Verificare nel portale di Azure che AppSettings per debugger snapshot (SNAPSHOTDEBUGGER_EXTENSION_VERSION) e InstrumentationEngine (INSTRUMENTATIONENGINE_EXTENSION_VERSION) sono scritte in maiuscolo. In caso contrario, aggiornare le impostazioni manualmente, che impone un riavvio del sito.
+::: moniker-end
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
+
+### <a name="500-internal-server-error"></a>Errore Server interno (500)
+
+Questo errore indica che il sito è completamente inattivo o il server non è possibile gestire la richiesta. Snapshot Debugger funziona solo su applicazioni in esecuzione. [Application Insights Snapshot Debugger](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) fornisce agli snapshot in caso di eccezioni e può essere lo strumento migliore per le proprie esigenze.
+
+### <a name="502-bad-gateway"></a>(502) Bad Gateway
+
+Questo errore indica un problema di rete lato server e potrebbe essere temporaneo.
+
+Seguire questa procedura:
+
+* Provare ad attendere qualche minuto prima di collegare nuovamente il Debugger di Snapshot.
+* Se l'errore persiste, usare uno dei canali di commenti descritti all'inizio di questo articolo.
 
 ## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Punto di ancoraggio non attiva
 
@@ -30,7 +106,7 @@ Se viene visualizzata un'icona di avviso ![Icona di avviso punto di acquisizione
 
 Seguire questa procedura:
 
-1. Assicurarsi di avere la stessa versione del codice sorgente che è stata usata per compilare e distribuire l'app. Assicurarsi di caricare i simboli corretti per la distribuzione. A tale scopo, visualizzare la finestra **Moduli** durante il debug di snapshot e verificare che nella colonna File di simboli sia indicato un file con estensione pdb caricato per il modulo di cui si esegue il debug. Snapshot Debugger tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
+1. Assicurarsi di avere la stessa versione del codice sorgente che è stato usato per compilare e distribuire l'app. Assicurarsi di caricare i simboli corretti per la distribuzione. A tale scopo, visualizzare la finestra **Moduli** durante il debug di snapshot e verificare che nella colonna File di simboli sia indicato un file con estensione pdb caricato per il modulo di cui si esegue il debug. Snapshot Debugger tenterà automaticamente di scaricare e usare i simboli per la distribuzione.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Simboli non vengono caricati quando si apre uno Snapshot
 
@@ -75,20 +151,22 @@ Seguire questa procedura:
 
 - Gli snapshot usano poca memoria, ma prevedono un carico per il commit. Se Snapshot Debugger rileva che il server è in condizioni di carico elevato per la memoria, non verranno acquisiti snapshot. È possibile eliminare gli snapshot già acquisiti interrompendo la sessione di Snapshot Debugger e riprovando.
 
+::: moniker range=">= vs-2019"
 ## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: Debug di snapshot con più versioni di Visual Studio mi consente di visualizzare gli errori
 
-Visual Studio 2019 richiede una versione più recente dell'estensione del sito Snapshot Debugger nel servizio app di Azure.  Questa versione non è compatibile con la versione precedente dell'estensione del sito Snapshot Debugger usata da Visual Studio 2017.  Se si prova a collegare Snapshot Debugger in Visual Studio 2019 a un servizio app di Azure di cui è stato precedentemente eseguito il debug con Snapshot Debugger di Visual Studio 2017, verrà generato l'errore seguente:
+Visual Studio 2019 richiede una versione più recente dell'estensione del sito Snapshot Debugger nel servizio App di Azure.  Questa versione non è compatibile con la versione precedente dell'estensione del sito Snapshot Debugger usato da Visual Studio 2017.  Se si prova a collegare Snapshot Debugger di Visual Studio 2019 per servizio App di Azure a cui è stato precedentemente eseguito il debug da Snapshot Debugger di Visual Studio 2017, si otterrà l'errore seguente:
 
-![Estensione del sito Snapshot Debugger di VS 2019 non compatibile](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Estensione del sito Snapshot Debugger di VS 2019 non compatibile")
+![Estensione del sito Snapshot Debugger Visual Studio 2019 incompatibili](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "estensione del sito incompatibili Snapshot Debugger Visual Studio 2019")
 
-Viceversa, se si usa Visual Studio 2017 per collegare Snapshot Debugger a un servizio app di Azure di cui è stato precedentemente eseguito il debug da Snapshot Debugger in Visual Studio 2019, si riceverà l'errore seguente:
+Viceversa, se si usa Visual Studio 2017 per collegare il Debugger di Snapshot di un servizio App di Azure che è stato precedentemente eseguito il debug da Snapshot Debugger di Visual Studio 2019, si riceverà l'errore seguente:
 
-![Estensione del sito Snapshot Debugger di VS 2017 non compatibile](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Estensione del sito Snapshot Debugger di VS 2017 non compatibile")
+![Estensione del sito Snapshot Debugger non compatibile di Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "estensione del sito incompatibili Snapshot Debugger di Visual Studio 2017")
 
 Per risolvere questo problema, eliminare le impostazioni dell'app seguenti nel portale di Azure e collegare nuovamente Snapshot Debugger:
 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+::: moniker-end
 
 ## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: È necessario abilitare la registrazione di altre e si verificano problemi durante il debug di Snapshot
 
@@ -111,7 +189,7 @@ I log dell'agente sono disponibili nelle posizioni seguenti:
 I log di strumentazione sono disponibili nelle posizioni seguenti:
 
 - Servizi app:
-  - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.xml, gli eventi sono contrassegnati con <<Provider Name="Instrumentation Engine" //>> o "Production Breakpoints"
+  - La registrazione degli errori viene inviata automaticamente a D:\Home\LogFiles\eventlog.xml, gli eventi sono contrassegnati con `<Provider Name="Instrumentation Engine" />` o "Punti di interruzione di produzione"
 - Macchina virtuale/set di scalabilità di macchine virtuali:
   - Accedere alla macchina virtuale e aprire il Visualizzatore eventi.
   - Aprire la vista seguente: *I log di Windows > applicazione*.
