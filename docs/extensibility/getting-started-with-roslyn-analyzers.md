@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb224d1c84f9216ed303c919118af4997be2405c
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: d6a6f4123f72afd8c310e627a9da6759f4c4548a
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835900"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586966"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Iniziare con gli analizzatori di Roslyn
 
@@ -30,7 +30,6 @@ Con gli analizzatori di codice in tempo reale, basato sul progetto in Visual Stu
 [Analizzatore Roslyn reali](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md) che è anche possibile guardare come un [parlare](https://channel9.msdn.com/events/Build/2015/3-725)
 
 [Alcuni esempi su GitHub, raggruppati in tre tipi di analizzatori](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
-
 
 ## <a name="see-also"></a>Vedere anche
 
