@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255986"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586846"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Domande frequenti per il debug di snapshot in Visual Studio
 
@@ -70,92 +70,91 @@ Per servizio contenitore di AZURE:
 
 Per la scalabilità di macchine virtuali/macchina virtuale di set di rimuovere i pool NAT in ingresso e KeyVaults di estensione, certificati, Debugger remoto come indicato di seguito:
 
-1. Rimuovere l'estensione del Debugger remoto  
+1. Rimuovere l'estensione del Debugger remoto
 
-   Esistono diversi modi per disabilitare il Debugger remoto per macchine virtuali e set di scalabilità di macchine virtuali:  
+   Esistono diversi modi per disabilitare il Debugger remoto per macchine virtuali e set di scalabilità di macchine virtuali:
 
-      - Disabilitare il Debugger remoto tramite Cloud Explorer  
+      - Disabilitare il Debugger remoto tramite Cloud Explorer
 
-         - Cloud Explorer > risorsa di macchina virtuale > Disabilita debug (disabilitazione di debug non esiste per la scalabilità di macchine virtuali impostato in Cloud Explorer).  
+         - Cloud Explorer > risorsa di macchina virtuale > Disabilita debug (disabilitazione di debug non esiste per la scalabilità di macchine virtuali impostato in Cloud Explorer).
 
+      - Disabilitare il Debugger remoto con gli script o cmdlet di PowerShell
 
-      - Disabilitare il Debugger remoto con gli script o cmdlet di PowerShell  
+         Per la macchina virtuale:
 
-         Per la macchina virtuale:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Per set di scalabilità di macchine virtuali:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Per set di scalabilità di macchine virtuali:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Disabilitare il Debugger remoto tramite il portale di Azure
-         - Portale di Azure > di scalabilità di macchine virtuali/macchine virtuali imposta pannello della risorsa > estensioni  
-         - Disinstallare l'estensione Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-
+         - Portale di Azure > di scalabilità di macchine virtuali/macchine virtuali imposta pannello della risorsa > estensioni
+         - Disinstallare l'estensione Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
          > [!NOTE]
          > Set di scalabilità di macchine virtuali - portale non consente di rimuovere le porte DebuggerListener. È necessario usare Azure PowerShell. Di seguito sono riportate informazioni dettagliate.
-  
+
 2. Rimuovere i certificati e Azure Key Vault
 
-   Quando si installa l'estensione del Debugger remoto per la macchina virtuale o un set di scalabilità di macchine virtuali, i certificati client e server vengono creati per autenticare il client di Visual Studio con la macchina virtuale di Azure/set di scalabilità di macchine virtuali alle risorse.  
+   Quando si installa l'estensione del Debugger remoto per la macchina virtuale o un set di scalabilità di macchine virtuali, i certificati client e server vengono creati per autenticare il client di Visual Studio con la macchina virtuale di Azure/set di scalabilità di macchine virtuali alle risorse.
 
-   - Il certificato Client  
+   - Il certificato Client
 
-      Questo certificato è un certificato autofirmato che si trova nell'archivio certificati: / CurrentUser/My /  
+      Questo certificato è un certificato autofirmato che si trova nell'archivio certificati: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       È un modo per rimuovere il certificato dal computer tramite PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - Il certificato del Server
-      - L'identificazione personale certificato del server corrispondente viene distribuita come un segreto nell'insieme di credenziali di Azure. Visual Studio proverà a trovare o creare un Key Vault con prefisso MSVSAZ * nell'area corrispondente alla macchina virtuale o risorsa set di scalabilità di macchine virtuali. Set di scalabilità di macchine virtuali o una macchina virtuale tutte le risorse distribuite in tale area condividono pertanto l'insieme di credenziali stesso.  
-      - Per eliminare il segreto di identificazione personale certificato server, andare al portale di Azure e trovare l'insieme di credenziali MSVSAZ * nella stessa area che ospita la risorsa. Eliminare il segreto che debba essere contrassegnate con `remotedebugcert<<ResourceName>>`  
-      - È anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.  
+      - L'identificazione personale certificato del server corrispondente viene distribuita come un segreto nell'insieme di credenziali di Azure. Visual Studio proverà a trovare o creare un Key Vault con prefisso MSVSAZ * nell'area corrispondente alla macchina virtuale o risorsa set di scalabilità di macchine virtuali. Set di scalabilità di macchine virtuali o una macchina virtuale tutte le risorse distribuite in tale area condividono pertanto l'insieme di credenziali stesso.
+      - Per eliminare il segreto di identificazione personale certificato server, andare al portale di Azure e trovare l'insieme di credenziali MSVSAZ * nella stessa area che ospita la risorsa. Eliminare il segreto che debba essere contrassegnate con `remotedebugcert<<ResourceName>>`
+      - È anche necessario eliminare il segreto server dalla risorsa tramite PowerShell.
 
-      Per le macchine virtuali:  
+      Per le macchine virtuali:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Per set di scalabilità di macchine virtuali:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Rimuovere tutti i pool NAT in ingresso DebuggerListener (solo set di scalabilità di macchine virtuali)  
+      Per set di scalabilità di macchine virtuali:
 
-   Il Debugger remoto presenta i pool NAT in ingresso di DebuggerListener che vengono applicati al servizio di bilanciamento del carico del set di scalabilità.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Rimuovere tutti i pool NAT in ingresso DebuggerListener (solo set di scalabilità di macchine virtuali)
+
+   Il Debugger remoto presenta i pool NAT in ingresso di DebuggerListener che vengono applicati al servizio di bilanciamento del carico del set di scalabilità.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ Per la scalabilità di macchine virtuali/macchina virtuale di set di rimuovere i
 Per il servizio App:
 1. Disabilitare il Debugger di Snapshot tramite il portale di Azure per il servizio App.
 2. Portale di Azure > Pannello di risorse del servizio dell'applicazione > *le impostazioni dell'applicazione*
-3. Eliminare le impostazioni seguenti nel portale di Azure e salvare le modifiche. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Eliminare le impostazioni seguenti nel portale di Azure e salvare le modifiche.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Tutte le modifiche alle impostazioni dell'applicazione verranno avviato un riavvio dell'app. Per altre informazioni sulle impostazioni dell'applicazione, vedere [configurare un'app di servizio App nel portale di Azure](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Tutte le modifiche alle impostazioni dell'applicazione verranno avviato un riavvio dell'app. Per altre informazioni sulle impostazioni dell'applicazione, vedere [configurare un'app di servizio App nel portale di Azure](/azure/app-service/web-sites-configure).
 
 Per servizio contenitore di AZURE:
 1. Aggiornare il Dockerfile per rimuovere le sezioni relative ai [Visual Studio Snapshot Debugger in immagini Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ Esistono diversi modi per disabilitare il Debugger di Snapshot:
 
 - I cmdlet di PowerShell da [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Macchina virtuale:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    Set di scalabilità di macchine virtuali:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Macchina virtuale:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Set di scalabilità di macchine virtuali:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>Vedere anche
 
