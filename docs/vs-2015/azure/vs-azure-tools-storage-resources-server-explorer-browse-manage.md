@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 8f7044c44278410e1fc800e0e974847c090da0e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963157"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624159"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Esplorare e gestire le risorse di archiviazione usando Esplora server
 
@@ -76,7 +76,7 @@ Il contenuto di un contenitore BLOB viene visualizzato in una scheda nota come v
 
 1. Scegliere il contenitore BLOB in Cloud Explorer. Nella finestra del contenitore selezionare il pulsante **Carica BLOB**.
 
-1. Nella finestra di dialogo **Carica nuovo file** selezionare il pulsante **Sfoglia** per specificare il file da caricare e quindi immettere un nome di cartella nella casella **Cartella (facoltativa)**.
+1. Nella finestra di dialogo **Carica nuovo file** selezionare il pulsante **Sfoglia** per specificare il file da caricare e quindi immettere un nome di cartella nella casella **Cartella (facoltativa)** .
 
    ![Caricamento di un file in una cartella BLOB](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -96,7 +96,7 @@ Poiché le cartelle nei contenitori BLOB sono cartelle virtuali, non è possibil
 
 È possibile filtrare i BLOB visualizzati specificando un prefisso comune.
 
-Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** (**!**), vengono visualizzati solo i BLOB che iniziano con "hello".
+Se, ad esempio, si immette il prefisso **hello** nella casella di testo del filtro e quindi si seleziona il pulsante **Esegui** ( **!** ), vengono visualizzati solo i BLOB che iniziano con "hello".
 
 ![Campo Filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -185,7 +185,7 @@ La tabella è organizzata in entità (mostrate nelle righe) e proprietà (mostra
 
 In Progettazione tabelle aprire il menu di scelta rapida per un'entità (una singola riga) o una proprietà (una singola cella) e quindi selezionare **Modifica**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Aggiungere o modificare un'entità di tabella](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Le entità di una tabella non devono avere lo stesso set di proprietà (colonne). Tenere presenti le limitazioni seguenti relative alla visualizzazione e alla modifica dei dati della tabella:
 

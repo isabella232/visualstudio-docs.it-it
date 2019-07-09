@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808497"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624191"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procedura dettagliata: Usare le funzionalità dell'editor XML
 
@@ -30,7 +30,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
      Viene aperto un nuovo file nell'editor. Il file contiene una dichiarazione XML predefinita, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia (**...** ) sul **schemi** campo.
+3. Nella finestra delle proprietà del documento, fare clic sul pulsante Sfoglia ( **...** ) sul **schemi** campo.
 
      Il **schemi XSD** verrà visualizzata la finestra di dialogo.
 
@@ -58,7 +58,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
     - **Employee** per aggiungere l'elemento radice.
 
-2. Selezionare **<!-** per aggiungere un nodo di tipo comment e premere **invio**.
+2. Selezionare  **&lt;!-** per aggiungere un nodo di tipo comment e premere **invio**.
 
      L'editor inserisce un tag di fine comment e colloca il cursore tra i tag comment di inizio e di fine.
 
@@ -70,7 +70,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 5. Digitare `>` per chiudere il tag.
 
-6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Il **ToolTip** viene visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'ID'**.
+6. L'editor aggiunge il tag di fine. Il tag di fine viene aggiunto con una sottolineatura ondulata che indica un errore di convalida. Il **ToolTip** viene visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'ID'** .
 
 7. Tipo di `<` e selezionare **ID** dall'elenco dei membri. Digitare quindi `>`.
 
@@ -86,7 +86,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 10. Tornare al file XML e sostituire il **abc** testo con **123**.
 
-     La sottolineatura ondulata e **ToolTip** sotto il valore ID dell'elemento vengono cancellati. Il **ToolTip** per l'entità finale dipendente tag viene ora visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'la data di assunzione'**.
+     La sottolineatura ondulata e **ToolTip** sotto il valore ID dell'elemento vengono cancellati. Il **ToolTip** per l'entità finale dipendente tag viene ora visualizzato il messaggio: **L'elemento 'employee' presenta contenuto incompleto. Previsto 'la data di assunzione'** .
 
 11. Posizionare il cursore dopo il tag di fine di ID, digitare `<`, selezionare **Data assunzione** dall'elenco di membri, quindi digitare in `>`.
 
@@ -106,7 +106,7 @@ Nei passaggi della procedura dettagliata viene illustrato come creare un nuovo d
 
 1. Dal **File** dal menu **Salva con nome**.
 
-     Il **Salva File con nome** verrà visualizzata la finestra di dialogo. Il nome file predefinito è *"XMLFile1"*.
+     Il **Salva File con nome** verrà visualizzata la finestra di dialogo. Il nome file predefinito è *"XMLFile1"* .
 
 2. Immettere il nome del file e il percorso per il documento XML e fare clic su **salvare**.
 
