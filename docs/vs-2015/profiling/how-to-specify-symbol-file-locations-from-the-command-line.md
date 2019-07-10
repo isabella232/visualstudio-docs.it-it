@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436916"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692829"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare i percorsi di File di simboli dalla riga di comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procedura: Specificare i percorsi dei file di simboli dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, lo strumento da riga di comando VSPerfReport richiede l'accesso ai file di simboli (con estensione pdb) dei componenti profilati e ai file di sistema di Windows. I file di simboli vengono creati quando viene compilato un componente. Per altre informazioni, vedere [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport esegue automaticamente la ricerca dei file di simboli nei percorsi seguenti:  
@@ -48,7 +48,7 @@ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri
   
 2. Usare la sintassi seguente per impostare la variabile di ambiente **_NT_SYMBOL_PATH** o l'opzione /SymbolPath di VSPerfReport:  
   
-    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     dove *ArchivioLocale* è il percorso della directory locale creata.  
   

@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860393"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692108"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Eseguire il debug di app di Azure ASP.NET attive con Snapshot Debugger
 
@@ -65,17 +65,17 @@ In questa esercitazione si eseguono le attività seguenti:
 ::: moniker range=">=vs-2019"
 2. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare il servizio app di Azure in cui è distribuito il progetto e un account di archiviazione di Azure, quindi fare clic su **Collega**.
 
-      ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Selezionare la risorsa di Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Selezionare la risorsa di Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > La prima volta che si seleziona **Collega Snapshot Debugger**, viene richiesto di installare l'estensione del sito Snapshot Debugger nel servizio app di Azure. Questa installazione richiede un riavvio del servizio app di Azure.
+   > [!IMPORTANT]
+   > La prima volta che si seleziona **Collega Snapshot Debugger**, viene richiesto di installare l'estensione del sito Snapshot Debugger nel servizio app di Azure. Questa installazione richiede un riavvio del servizio app di Azure.
 
-  > [!NOTE]
-  > L'estensione del sito Application Insights supporta anche il debug di snapshot. Se viene visualizzato un messaggio di errore "estensione del sito non aggiornata", vedere i [suggerimenti per la risoluzione dei problemi e i problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per informazioni dettagliate sull'aggiornamento.
+   > [!NOTE]
+   > L'estensione del sito Application Insights supporta anche il debug di snapshot. Se viene visualizzato un messaggio di errore "estensione del sito non aggiornata", vedere i [suggerimenti per la risoluzione dei problemi e i problemi noti per il debug di snapshot](../debugger/debug-live-azure-apps-troubleshooting.md) per informazioni dettagliate sull'aggiornamento.
 
    Visual Studio è ora in modalità debug di snapshot.
    ![Modalità di debug snapshot](../debugger/media/snapshot-message.png)
