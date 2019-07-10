@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b4748cd71416ce4d3e9cce64826f1ec97ceef85
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994523"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692987"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estendere il DSL mediante MEF
 
@@ -129,7 +129,7 @@ Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è
 
    - Questo assembly è in genere un nome che termina con ". DSL.dll".
 
-   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **Dsl\bin\\\\** *
+   - Se si ha accesso al progetto DSL, è possibile trovare il file di assembly nella directory **Dsl\\bin\\\***
 
    - Se si ha accesso al file VSIX DSL, è possibile trovare l'assembly modificando l'estensione del file VSIX in "ZIP". Decomprimere il file con estensione zip.
 
@@ -157,7 +157,7 @@ Se si ha accesso a un DSL abilitati MEF creato dall'utente o un altro utente, è
 
    1. Nelle **vsixmanifest**, fare clic su **Aggiungi riferimento**
 
-   2. Nella finestra di dialogo, fare clic su **Payload aggiungere** e quindi individuare il file VSIX del linguaggio DSL. Il file VSIX viene compilato nella soluzione di DSL in * * DslPackage\bin\\\\* * *.
+   2. Nella finestra di dialogo, fare clic su **Payload aggiungere** e quindi individuare il file VSIX del linguaggio DSL. Il file VSIX viene compilato nella soluzione DSL, in **DslPackage\\bin\\\*** .
 
        Ciò consente agli utenti di installare il linguaggio DSL e l'estensione nello stesso momento. Se l'utente ha già installato il linguaggio DSL, solo l'estensione verrà installata.
 

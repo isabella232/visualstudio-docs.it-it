@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981676"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692347"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procedura dettagliata: Data binding complesso in un progetto a livello di documento
   Questa procedura dettagliata illustra le nozioni di base di data binding complesso in un progetto a livello di documento. È possibile associare più celle in un foglio di lavoro di Microsoft Office Excel a campi nel database Northwind di SQL Server.
@@ -174,7 +174,7 @@ ms.locfileid: "62981676"
 
 1. Selezionare una cella all'interno dell'oggetto elenco.
 
-    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco (**\\***) nella prima cella della nuova riga.
+    Verrà visualizzata una nuova riga nella parte inferiore dell'elenco, con un asterisco ( **\*** ) nella prima cella della nuova riga.
 
 2. Aggiungere le informazioni seguenti nella riga vuota.
 
