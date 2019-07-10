@@ -3,14 +3,14 @@ title: Impostare Visual Studio per Mac Tools per Unity
 description: Configurazione e installazione degli strumenti Unity per l'uso in Visual Studio per Mac
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: b9e033b765df4ae4396c011fe37939b4fc63e372
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1981141a01848dc7fac09913548f205a04ce618e
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809219"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692352"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>Impostare Visual Studio per Mac Tools per Unity
 
@@ -55,7 +55,7 @@ Se si ha già Unity 5.6.1 o versione successiva, ma non si ha Visual Studio per 
 
 L'estensione di Visual Studio per Mac Tools per Unity dovrebbe essere abilitata per impostazione predefinita, tuttavia è possibile verificarlo e controllare il numero della versione installata:
 
-1. Dal menu di Visual Studio scegliere **Estensioni...**.
+1. Dal menu di Visual Studio scegliere **Estensioni...** .
 
    ![Selezionare le estensioni](media/setup-vsmac-tools-unity-image1.png)
 
@@ -73,11 +73,11 @@ A partire da Unity 2018.1, Visual Studio deve essere l'editor di script esterno 
 
 2. Nella finestra di dialogo Preferences selezionare la scheda **External Tools**.
 
-3. Dall'elenco a discesa External Script Editor scegliere **Visual Studio**, se elencato, altrimenti selezionare **Browse... (Sfoglia...)**.
+3. Dall'elenco a discesa External Script Editor scegliere **Visual Studio**, se elencato, altrimenti selezionare **Browse... (Sfoglia...)** .
 
    ![Selezionare Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-4. Se si è selezionato **Browse...**, spostarsi sulla directory Applications e selezionare Visual Studio, quindi fare clic su **Open**.
+4. Se si è selezionato **Browse...** , spostarsi sulla directory Applications e selezionare Visual Studio, quindi fare clic su **Open**.
 
    ![Selezionare Open](media/setup-vsmac-tools-unity-image6.png)
 

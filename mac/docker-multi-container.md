@@ -1,15 +1,15 @@
 ---
 title: Esercitazione - Creare un'app multi-contenitore con Docker Compose
 description: Informazioni su come gestire più di un contenitore e consentire la comunicazione tra di essi in Visual Studio per Mac
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196106"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691711"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Creare un'app multi-contenitore con Docker Compose
 
@@ -82,14 +82,14 @@ Nella soluzione sono ora presenti due progetti ASP.NET, entrambi configurati con
    ```
 
 1. Nel file *index.cshtml* aggiungere una riga per visualizzare `ViewData["Message"]` in modo che il file abbia un aspetto simile al codice seguente:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Nella soluzione sono ora presenti due progetti ASP.NET, entrambi configurati con
       ```
 
 1. Nel progetto API Web aggiungere ora codice al controller Values in modo da personalizzare il messaggio restituito dall'API per la chiamata aggiunta da *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Nella soluzione sono ora presenti due progetti ASP.NET, entrambi configurati con
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Impostare il progetto `docker-compose` come progetto di avvio e selezionare **Esegui > Avvia debug**. Se tutto è configurato correttamente, viene visualizzato il messaggio "Salve da webfrontend e da webapi (con valore 1).":
 
 ![Soluzione con più contenitori Docker in esecuzione](media/docker-multicontainer-debug.png)

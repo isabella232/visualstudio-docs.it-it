@@ -1,17 +1,17 @@
 ---
 title: Refactoring del codice
 description: Ridefinizione del codice usando Visual Studio per Mac e le azioni rapide.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937852"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691294"
 ---
 # <a name="refactoring"></a>Refactoring
 
@@ -42,7 +42,7 @@ Le azioni rapide consentono di generare codice, effettuarne il refactoring o mod
 * Effettuare un refactoring (ad esempio impostare come inline una variabile temporanea)
 * Generare codice (ad esempio introdurre una variabile locale)
 
-È possibile applicare le azioni rapide usando le icone a forma di lampadina ![icona lampadina](media/quick-actions-light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/quick-actions-screwdriver-icon.png) oppure premendo **Opzione (⌥)**+**Invio** quando il cursore si trova su una riga di codice per il quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/quick-actions-error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
+È possibile applicare le azioni rapide usando le icone a forma di lampadina ![icona lampadina](media/quick-actions-light-bulb-icon.png) o di cacciavite ![icona cacciavite](media/quick-actions-screwdriver-icon.png) oppure premendo **Opzione (⌥)** +**Invio** quando il cursore si trova su una riga di codice per il quale è disponibile un'azione. Si noterà una lampadina di errore ![icona lampadina errore](media/quick-actions-error-light-bulb-icon.png) se è presente una sottolineatura ondulata rossa che indica un errore e in Visual Studio è disponibile una correzione per tale errore.
 
 È possibile che fornitori terzi offrano diagnostiche e suggerimenti personalizzati per qualsiasi linguaggio, ad esempio includendoli in SDK: le lampadine di Visual Studio si illumineranno in base a tali regole.
 
@@ -57,7 +57,7 @@ L'icona visualizzata quando è disponibile un'azione rapida indica il tipo di co
 
 - Le lampadine e i cacciavite vengono visualizzati nel margine sinistro dell'editor quando si sposta il punto di inserimento in una riga di codice per cui è disponibile un'azione rapida.
 
-- Premere **Opzione (⌥)**+**Invio** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
+- Premere **Opzione (⌥)** +**Invio** in un punto qualsiasi di una riga per visualizzare un elenco di azioni rapide e refactoring disponibili.
 
 ![Visualizzare le voci di contesto](media/refactoring-context-action.png)
 

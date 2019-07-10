@@ -7,17 +7,16 @@ ms.date: 06/28/2019
 ms.topic: conceptual
 description: Informazioni sui vantaggi inclusi nella sottoscrizione di Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: 27ec141156de16c4bca8862ed88f89731924d1af
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493739"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586981"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Vantaggi inclusi nella sottoscrizione di Visual Studio
 
 Le sottoscrizioni di Visual Studio (note in precedenza come abbonamenti MSDN) offrono il set di risorse più completo per creare, distribuire e gestire applicazioni di qualità nelle piattaforme e nei dispositivi preferiti, inclusi Windows, iOS, Android e Linux.  I vantaggi specifici variano in base al tipo di sottoscrizione disponibile.  Per offrire il massimo valore ai sottoscrittori, i vantaggi offerti cambiano periodicamente per poter proporre le tecnologie, il materiale di training e i vantaggi dei partner più recenti e utili.
-
 
 I vantaggi sono raggruppati in tre categorie nel [portale dei sottoscrittori](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 

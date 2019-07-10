@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697600"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692796"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inserimento di un pacchetto NuGet nel progetto
 
@@ -43,7 +43,7 @@ Quando la finestra viene visualizzata, carica un elenco di pacchetti dall'origin
 
 ![Elenco di pacchetti NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio  `azure`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante  **Aggiungi pacchetto**  per avviare l'installazione.
+Usare la casella di ricerca nell'angolo superiore destro per trovare un pacchetto specifico, ad esempio `azure`. Dopo aver trovato un pacchetto da usare, selezionarlo e fare clic sul pulsante **Aggiungi pacchetto** per avviare l'installazione.
 
 [Aggiungere un pacchetto NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
 
@@ -57,7 +57,7 @@ Dopo essere stato scaricato, il pacchetto verrà aggiunto al progetto. La soluzi
 
 Dopo che il pacchetto NuGet è stato aggiunto e i riferimenti del progetto sono stati aggiornati, è possibile programmare usando le API come si farebbe con qualsiasi riferimento del progetto.
 
-Assicurarsi di aggiungere le direttive `using` necessarie all'inizio del file:
+Assicurarsi di aggiungere le direttive `using` necessarie all'inizio del file:
 
 ```csharp
 using Newtonsoft.Json;
