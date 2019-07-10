@@ -2,15 +2,15 @@
 title: Tasti di scelta rapida predefiniti in Visual Studio per Mac
 description: Questo articolo elenca i tasti di scelta rapida predefiniti in Visual Studio per Mac
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09fd7ff678043e399ad37923956a61cbcf8ce80a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982711"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691441"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Tasti di scelta rapida predefiniti in Visual Studio per Mac
 
@@ -36,7 +36,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 
 |Comandi:|Scelte rapide da tastiera|
 |-|-|
-|Abilita o disabilita punto di interruzione|**⌥⌘/**, **⌘F9**|
+|Abilita o disabilita punto di interruzione|**⌥⌘/** , **⌘F9**|
 |Sospendi|**⌥⌘P**, **⌥⌘L5**|
 |Rimuovi tutti i punti di interruzione|**⇧⌘F9**|
 |Esecuzione fino al cursore|**⌘F10**|
@@ -45,7 +45,7 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 |Esegui istruzione|**⇧⌘I**, **⌘F11**|
 |Esci da istruzione/routine|**⇧⌘U**, **⇧⌘F11**|
 |Esegui istruzione/routine|**⇧⌘O**, **F10**|
-|Attiva/disattiva punto di interruzione|**⌘\\**, **F9**|
+|Attiva/disattiva punto di interruzione|**⌘\\** , **F9**|
 |Visualizza punti di interruzione|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -225,8 +225,8 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 |Mostra successivo|**⌥⌘↓**, **F8**|
 |Mostra precedente|**⌥⌘↑**, **⇧F8**|
 |Due colonne editor|**⌥⌘2**|
-|Zoom avanti|**⌘+**, **⌘=**|
-|Zoom indietro|**⌘-**, **⌘_**|
+|Zoom avanti|**⌘+** , **⌘=**|
+|Zoom indietro|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Window
 
@@ -244,8 +244,8 @@ Per accedere a vari controlli in Visual Studio per Mac, è possibile usare la sc
 |Nascondi altri|**⌥⌘H**|
 |Nascondi Visual Studio|**⌘H**|
 |Riduci a icona|**⌘M**|
-|Documento successivo|**⌘}**, **⌘F6**|
-|Documento precedente|**⌘{**, **⇧⌘F6**|
+|Documento successivo|**⌘}** , **⌘F6**|
+|Documento precedente|**⌘{** , **⇧⌘F6**|
 |Passa al documento successivo|**⌃⇥**|
 |Passa alla finestra ancorabile successiva|**⌃⌥⇥**|
 |Torna al documento precedente|**⌃⇧⇥**|

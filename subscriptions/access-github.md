@@ -7,12 +7,12 @@ ms.date: 04/15/2019
 ms.topic: conceptual
 description: Informazioni sul nuovo bundle di Visual Studio + GitHub
 searchscope: VS Subscription
-ms.openlocfilehash: 086314029561c7b0c14ac1d6ef09d7cb3a4d85ee
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 7871496cf427d3e610693391d80693852d71c64e
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945220"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586573"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introduzione alle sottoscrizioni di Visual Studio con GitHub Enterprise  
 
@@ -74,14 +74,13 @@ R:  Se si usa GitHub Enterprise Server, selezionare il collegamento **Supporto**
 
 R:  Insieme a una sottoscrizione di GitHub Enterprise si riceve una sottoscrizione completa di Visual Studio  che offre tutti i vantaggi inclusi in tali sottoscrizioni, ad esempio download di software, servizi cloud, supporto tecnico e vantaggi per i partner, esattamente come se la sottoscrizione fosse stata acquistata separatamente.
 
-
 ## <a name="support-resources"></a>Risorse di supporto
--  È possibile trovare risposte a domande su un'ampia gamma di argomenti relativi a GitHub in [GitHub Help](https://help.github.com/en) (Guida di GitHub).
--  Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
--  Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
--  Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
--  Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
-
+- È possibile trovare risposte a domande su un'ampia gamma di argomenti relativi a GitHub in [GitHub Help](https://help.github.com/en) (Guida di GitHub).
+- Ottenere assistenza da altri utenti di GitHub nel [GitHub Community Forum](https://github.community/) (forum della Community GitHub).
+- Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
+- Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
+- Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Se non si ha familiarità con GitHub, consultare i progetti divertenti e pratici del [GitHub Learning Lab](https://lab.github.com/) e gli utili suggerimenti proposti.

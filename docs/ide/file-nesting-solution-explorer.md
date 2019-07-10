@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309792"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587022"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Annidamento file in Esplora soluzioni
 
@@ -110,7 +110,8 @@ Si consideri l'esempio seguente:
 > [!NOTE]
 > - Se non si specificano le estensioni di file per la regola `pathSegment`, verrà applicata a tutte le estensioni di file. Ciò significa che qualsiasi file con lo stesso nome ed estensione di un altro file più un'estensione aggiuntiva al centro viene annidato nell'altro file.
 > - È possibile limitare l'effetto della regola `pathSegment` a specifiche estensioni di file specificandole nel modo seguente:
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [

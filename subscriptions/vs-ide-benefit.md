@@ -7,12 +7,12 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Informazioni su come scaricare e installare l'ambiente IDE di Visual Studio incluso nella sottoscrizione di Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5e836eac14cbf50abe79230444a4c8ee8c01643d
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1614df094c043c4b3a758409c1cff3c73b56abf6
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032862"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586939"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Uso del vantaggio di Visual Studio 2019
 
@@ -69,7 +69,6 @@ Per scaricare l'ambiente IDE:
 | Visual Studio Professional (Standard, cloud mensile) | VL, Azure, Retail                                       | Disponibile                                                            |  Sì          |
 | Visual Studio Test Professional (Standard)                         | VL, Retail                                              | Disponibile                                             |  Sì         |
 | MSDN Platforms (Standard)                                          | VL, Retail                                              | Non disponibile                                              |  N/D          |
-
 
 <sup>1</sup>  *Include:  Not for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  Non include: MCT Software & Services.*
 

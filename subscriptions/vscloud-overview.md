@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Noleggiare Visual Studio Professional o Visual Studio Enterprise su base mensile o annuale senza contratto a lungo termine.
 searchscope: VS Subscription
-ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 3dc72dbc801679e9baa4bc54b0343270d2f00a29
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465133"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586891"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acquistare sottoscrizioni cloud di Visual Studio Enterprise e Visual Studio Professional
 
@@ -103,7 +103,6 @@ R: Le sottoscrizioni annuali acquistate nel corso di un dato mese vengono addebi
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>D: Come si può ridurre il numero di sottoscrizioni per i clienti?
 
 R: L'amministratore può sempre ridurre il numero di sottoscrizioni visitando https://manage.visualstudio.com e seguendo le istruzioni disponibili in questo articolo. Il sistema *non* genererà un credito ripartito. Per ottenere un rimborso è necessario contattare il team di fatturazione di Azure.
-
 
 #### <a name="q-if-i-cancel-my-subscription-will-i-be-able-to-buy-another-annual-cloud-subscription-later"></a>D: Se si annulla la sottoscrizione, sarà possibile acquistare un'altra sottoscrizione cloud annuale in un secondo momento?
 R:  Anche se non sarà possibile acquistare un'altra sottoscrizione cloud annuale, sono disponibili molte opzioni per l'acquisto di sottoscrizioni di Visual Studio.  Per altre informazioni, visitare [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2def790511a69dc7b5cab8a5020f488e58b85db9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986923"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693005"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 
-I frammenti di codice, a volte indicati come  _modelli di codice_, sono utili per una programmazione efficiente poiché consentono di inserire e modificare blocchi di testo scritti in precedenza. L'uso di frammenti di codice può essere comodo per aggiungere rapidamente modelli comuni o anche per apprendere nuovi modelli, nel caso lo sviluppatore non sia sicuro della sintassi. Sono disponibili modelli per C#, F#, HTML, XML, Python e Razor.
+I frammenti di codice, a volte indicati come _modelli di codice_, sono utili per una programmazione efficiente poiché consentono di inserire e modificare blocchi di testo scritti in precedenza. L'uso di frammenti di codice può essere comodo per aggiungere rapidamente modelli comuni o anche per apprendere nuovi modelli, nel caso lo sviluppatore non sia sicuro della sintassi. Sono disponibili modelli per C#, F#, HTML, XML, Python e Razor.
 
 Questa sezione illustra come creare, inserire e usare frammenti nel codice.
 
@@ -30,7 +30,7 @@ Vi sono diversi modi per aggiungere frammenti di codice, alcuni dei quali sono d
 
   [![Frammenti di codice nella casella degli strumenti](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando di inserimento modelli** &ndash; Attualmente non è presente un tasto di scelta rapida predefinito per inserire un modello. Per crearne uno, spostarsi su **Visual Studio > Preferenze > Tasti di scelta rapida** e cercare `template`. In questo modo è possibile aggiungere il tasto di scelta rapida desiderato nel campo Modifica tasto di scelta rapida e fare clic su  **Applica**:
+- **Comando di inserimento modelli** &ndash; Attualmente non è presente un tasto di scelta rapida predefinito per inserire un modello. Per crearne uno, spostarsi su **Visual Studio > Preferenze > Tasti di scelta rapida** e cercare `template`. In questo modo è possibile aggiungere il tasto di scelta rapida desiderato nel campo Modifica tasto di scelta rapida e quindi fare clic su **Applica**:
 
   ![Comando di inserimento modello](media/source-editor-image15.png)
 

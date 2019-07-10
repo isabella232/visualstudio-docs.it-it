@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: eb0267f668121e4d56f113798b14810f3446b8cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 652ff7b0380fc03a3f9c8155a2f8696d9dfee5b9
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960608"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692365"
 ---
 # <a name="packagejson-configuration"></a>Configurazione di package.json
 
@@ -24,7 +24,9 @@ Se si sviluppa un'app Node.js con molti pacchetti npm, è probabile incorre in a
 
 Il sistema di controllo delle versioni dei pacchetti npm si attiene a regole molto precise. Il formato della versione è il seguente:
 
-    [major].[minor].[patch]
+```
+[major].[minor].[patch]
+```
 
 Supponiamo che l'app contenga un pacchetto con una versione 5.2.1. La versione principale è la 5, la versione secondaria è la 2 e la patch è la 1.
 

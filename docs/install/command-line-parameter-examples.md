@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 0f35348e6704ffa822ba5dee93ad930f209004e1
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614512"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586873"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Esempi di parametri della riga di comando per l'installazione di Visual Studio
 
@@ -70,17 +70,20 @@ Per gli elenchi dei carichi di lavoro e dei componenti che è possibile installa
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
-   ```PS
+
+   ```powershell
    $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
    ```
+
    oppure
-   ```PS
+
+   ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo
     $startInfo.FileName = "vs_enterprise.exe"
-    $startInfo.Arguments = "--all --quiet --wait" 
+    $startInfo.Arguments = "--all --quiet --wait"
     $process = New-Object System.Diagnostics.Process
     $process.StartInfo = $startInfo
-    $process.Start() 
+    $process.Start()
     $process.WaitForExit()
    ```
 

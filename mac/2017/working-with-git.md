@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986700"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692973"
 ---
 # <a name="working-with-git"></a>Uso di Git
 
@@ -59,7 +59,7 @@ Queste schede consentono le azioni seguenti:
 
 ## <a name="switching-branches"></a>Cambio di rami
 
-Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo  **Master** . Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
+Per impostazione predefinita, il primo ramo creato in un repository è denominato ramo **Master**. Tecnicamente non vi è alcuna differenza tra il ramo master e l'altro ma il ramo master viene più frequentemente considerato come ramo "attivo" o di "produzione" dai team di sviluppo.
 
 È possibile creare una linea di sviluppo indipendente, creando una diramazione del ramo master (o di qualsiasi altro ramo). Questo offre una nuova versione del ramo master in un determinato punto nel tempo, consentendo lo sviluppo indipendente di ciò che è "attivo". Questo uso dei rami è frequente per funzionalità nell'ambiente di sviluppo.
 
