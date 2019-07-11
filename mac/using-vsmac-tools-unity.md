@@ -3,14 +3,14 @@ title: Uso di Visual Studio per Mac Tools per Unity
 description: Questa guida spiega come usare l'estensione di Visual Studio per Mac Tools per Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966003"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692211"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Uso di Visual Studio per Mac Tools per Unity
 
@@ -26,7 +26,7 @@ In alternativa, Visual Studio per Mac può essere aperto senza aprire alcuno scr
 
 ## <a name="unity-documentation-access"></a>Accesso della documentazione di Unity
 
-Visual Studio per Mac Tools per Unity include un collegamento per accedere alla documentazione dell'API Unity. Per accedere alla documentazione dell'API Unity da Visual Studio per Mac, posizionare il cursore sull'API Unity per cui si desiderano informazioni e premere **command ⌘ + ‘**.
+Visual Studio per Mac Tools per Unity include un collegamento per accedere alla documentazione dell'API Unity. Per accedere alla documentazione dell'API Unity da Visual Studio per Mac, posizionare il cursore sull'API Unity per cui si desiderano informazioni e premere **command ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense per messaggi di Unity
 Il motore Unity trasmette i messaggi agli script MonoBehaviour, consentendo agli sviluppatori di scrivere codice che reagisce a messaggi quali OnMouseDown, OnTriggerEnter e così via. Poiché questi non sono metodi virtuali nella classe base MonoBehaviour, alcuni IDE quali MonoDevelop non dispongono della funzionalità di completamento del codice per i messaggi Unity.
@@ -61,7 +61,7 @@ Tuttavia, Visual Studio per Mac Tools per Unity estende la propria funzionalità
 
 ## <a name="adding-new-unity-files-and-folders"></a>Aggiunta di nuovi file e cartelle di Unity
 
-Sebbene sia sempre possibile aggiungere nuovi file a un progetto Unity nell'editor di Unity, Visual Studio per Mac consente di creare agevolmente nuovi script, shader e cartelle di Unity dall'interno di Visual Studio.
+Sebbene sia sempre possibile aggiungere nuovi file a un progetto Unity nell'editor di Unity, Visual Studio per Mac consente di creare agevolmente nuovi script, shader, struct, enumerazioni e cartelle di Unity dall'interno di Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Aggiungere un nuovo script C# MonoBehaviour
 
@@ -80,7 +80,7 @@ Per aggiungere una nuova cartella, **fare clic con il pulsante destro del mouse 
 Queste aggiunte vengono riflesse nella finestra del progetto dell'editor di Unity.
 
 ### <a name="to-rename-a-file-or-folder"></a>Per rinominare un file o una cartella
-**Fare clic con il pulsante destro del mouse** sull'elemento da rinominare nel riquadro Soluzione e selezionare **Rinomina...**.
+**Fare clic con il pulsante destro del mouse** sull'elemento da rinominare nel riquadro Soluzione e selezionare **Rinomina...** .
 
 > [!NOTE]
 > Se è presente un nuovo progetto Unity senza script e la cartella Assets non viene visualizzata nel riquadro Soluzione in Visual Studio per Mac, aggiungere uno script C# iniziale nell'editor di Unity.

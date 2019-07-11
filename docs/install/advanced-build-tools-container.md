@@ -11,16 +11,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d54ac2d7f58f7b5be768e1f431a53d83f5f8fe94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d14a02c70c0e4496c482940237054027e152a70
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943517"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552853"
 ---
 # <a name="advanced-example-for-containers"></a>Esempio avanzato per i contenitori
 
-Il Dockerfile di esempio in [Installare Build Tools in un contenitore](build-tools-container.md) usa sempre l'immagine [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) basata sull'immagine microsoft/windowsservercore più recente e il programma di installazione più recente di Visual Studio Build Tools. Se si pubblica questa immagine in un [registro Docker](https://azure.microsoft.com/services/container-registry) che viene reso disponibile per il pull, l'immagine potrebbe essere appropriata per molti scenari. Nella pratica, tuttavia, è più comune essere specifici in merito all'immagine di base usata, i file binari scaricati e le versioni degli strumenti installate.
+::: moniker range="vs-2017"
+
+Il Dockerfile di esempio in [Installare Build Tools in un contenitore](build-tools-container.md) usa sempre l'immagine [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) basata sull'immagine microsoft/windowsservercore più recente e il programma di installazione più recente di Visual Studio Build Tools. Se si pubblica questa immagine in un [registro Docker](https://azure.microsoft.com/services/container-registry) che viene reso disponibile per il pull, l'immagine potrebbe essere appropriata per molti scenari. Nella pratica, tuttavia, è più comune essere specifici in merito all'immagine di base usata, i file binari scaricati e le versioni degli strumenti installate.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Il Dockerfile di esempio in [Installare Build Tools in un contenitore](build-tools-container.md) usa sempre l'immagine [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) basata sull'immagine microsoft/windowsservercore più recente e il programma di installazione più recente di Visual Studio Build Tools. Se si pubblica questa immagine in un [registro Docker](https://azure.microsoft.com/services/container-registry) che viene reso disponibile per il pull, l'immagine potrebbe essere appropriata per molti scenari. Nella pratica, tuttavia, è più comune essere specifici in merito all'immagine di base usata, i file binari scaricati e le versioni degli strumenti installate.
+
+::: moniker-end
 
 Il Dockerfile di esempio seguente usa un tag di versione specifico dell'immagine microsoft/dotnet-framework. L'uso di un tag specifico per un'immagine di base è comune e rende più facile ricordare che per la creazione o la ricreazione delle immagini viene sempre usata la stessa base.
 
@@ -60,8 +70,8 @@ Nella directory di lavoro creare il "Dockerfile" con il seguente contenuto:
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:3eaa3ba18f45e6561f32d8dd927045413f1dd043d7d29fb581f5cb3c6f7d7481
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -106,8 +116,8 @@ CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 # escape=`
 
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
-ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+# You could also use the immutable tag @sha256:324e9ab7262331ebb16a4100d0fb1cfb804395a766e3bb1806c62989d1fc1326
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 FROM ${FROM_IMAGE}
 
 # Copy our Install script.
@@ -193,15 +203,16 @@ Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --n
 The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
 > docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
 
 ::: moniker-end
 
-After the last line finishes executing, open "%TEMP%\vslogs.zip" on your machine, or submit an issue on the [Developer Community](https://developercommunity.visualstudio.com) website.
+Al termine dell'esecuzione dell'ultima riga aprire "%TEMP%\vslogs.zip" nel computer o registrare un problema nel sito Web della [community di sviluppatori](https://developercommunity.visualstudio.com).
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## See also
+## <a name="see-also"></a>Vedere anche
 
-* [Install Build Tools into a Container](build-tools-container.md)
-* [Known Issues for Containers](build-tools-container-issues.md)
-* [Visual Studio Build Tools workload and component IDs](workload-component-id-vs-build-tools.md)
+* [Installare Build Tools in un contenitore](build-tools-container.md)
+* [Problemi noti dei contenitori](build-tools-container-issues.md)
+* [ID dei carichi di lavoro e dei componenti di Visual Studio Build Tools](workload-component-id-vs-build-tools.md)
