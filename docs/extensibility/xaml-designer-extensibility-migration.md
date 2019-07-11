@@ -1,17 +1,20 @@
 ---
 title: Migrazione di estensibilità di progettazione XAML
-ms.date: 04/17/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
 ms.author: lutzr
 manager: jillfra
+dev_langs:
+- csharp
+- vb
 monikerRange: vs-2019
-ms.openlocfilehash: f83c40a67dc36301816b2384242d790a9f776044
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447359"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784482"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migrazione di estensibilità di progettazione XAML
 
@@ -44,7 +47,7 @@ Mentre le librerie di controlli di terze parti compilate per il runtime di desti
 
 Non consente il modello di estendibilità della superficie di isolamento per le estensioni a dipendono le librerie di controlli effettivi e di conseguenza, le estensioni non possono fare riferimento ai tipi dalla libreria di controllo. Ad esempio, *MyLibrary.designtools.dll* non deve avere una dipendenza *MyLibrary. dll*.
 
-Queste dipendenze sono state più comuni durante la registrazione dei metadati per i tipi tramite le tabelle degli attributi. I tipi di codice di estensione che fa riferimento alle libreria di controlli direttamente tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) viene sostituito con le nuove API con i nomi dei tipi basati su stringa:
+Queste dipendenze sono state più comuni durante la registrazione dei metadati per i tipi tramite le tabelle degli attributi. I tipi di codice di estensione che fa riferimento alle libreria di controlli direttamente tramite [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) in Visual Basic) viene sostituito con le nuove API con i nomi dei tipi basati su stringa:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -68,6 +71,27 @@ public class AttributeTableProvider : IProvideAttributeTable
 }
 ```
 
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Metadata
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+<Assembly: ProvideMetadata(GetType(AttributeTableProvider))>
+
+Public Class AttributeTableProvider
+    Implements IProvideAttributeTable
+
+    Public ReadOnly Property AttributeTable As AttributeTable Implements IProvideAttributeTable.AttributeTable
+        Get
+            Dim builder As New AttributeTableBuilder
+            builder.AddCustomAttributes("MyLibrary.MyControl", New DescriptionAttribute(Strings.MyControlDescription))
+            builder.AddCustomAttributes("MyLibrary.MyControl", New FeatureAttribute(GetType(MyControlDefaultInitializer)))
+            Return builder.CreateTable()
+        End Get
+    End Property
+End Class
+```
+
 ## <a name="feature-providers-and-model-api"></a>Provider di funzionalità e API del modello
 
 Provider di funzionalità vengono implementati nell'assembly delle estensioni e caricati nel processo di Visual Studio. `FeatureAttribute` continueranno a fare riferimento ai tipi di provider di funzionalità usando direttamente [typeof](/dotnet/csharp/language-reference/keywords/typeof).
@@ -84,6 +108,16 @@ TypeDefinition buttonType = ModelFactory.ResolveType(
 if (type != null && buttonType != type.IsSubclassOf(buttonType))
 {
 }
+```
+
+```vb
+Dim type As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("MyLibrary.MyControl"))
+Dim buttonType As TypeDefinition = ModelFactory.ResolveType(
+    item.Context, New TypeIdentifier("System.Windows.Controls.Button"))
+If type?.IsSubclassOf(buttonType) Then
+
+End If
 ```
 
 API è stato rimosso dal set di API di estendibilità di superficie isolamento:
@@ -123,7 +157,7 @@ Le API che usano `TypeDefinition` invece di <xref:System.Type>:
 * `ModelService.Find(ModelItem startingItem, Predicate<Type> match)`
 * `ModelItem.ItemType`
 * `ModelProperty.AttachedOwnerType`
-* `ModelProperty.PropertyType
+* `ModelProperty.PropertyType`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type)`
 * `FeatureManager.CreateFeatureProviders(Type featureProviderType, Type type, Predicate<Type> match)`
 * `FeatureManager.InitializeFeatures(Type type)`
@@ -140,7 +174,7 @@ Le API che usano `ModelItem` invece di <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Noto come tipi primitivi `int`, `string`, o `Thickness` può essere passato all'API del modello come istanze di .NET Framework e verrà convertito in oggetto corrispondente nel processo di runtime di destinazione. Ad esempio:
+Noto come tipi primitivi `Int32`, `String`, o `Thickness` può essere passato all'API del modello come istanze di .NET Framework e verrà convertito in oggetto corrispondente nel processo di runtime di destinazione. Ad esempio:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -154,6 +188,20 @@ public class MyControlDefaultInitializer : DefaultInitializer
     base.InitializeDefaults(item);
   }
 }
+```
+
+```vb
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Features
+Imports Microsoft.VisualStudio.DesignTools.Extensibility.Model
+
+Public Class MyControlDefaultInitializer
+    Inherits DefaultInitializer
+
+    Public Overrides Sub InitializeDefaults(item As ModelItem)
+        item.Properties!Width.SetValue(800.0)
+        MyBase.InitializeDefaults(item)
+    End Sub
+End Class
 ```
 
 ## <a name="limited-support-for-designdll-extensions"></a>Supporto limitato per. Design. dll estensioni
