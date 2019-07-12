@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694986"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821303"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Risolvere i problemi di distribuzione di soluzioni Office
   Questo argomento contiene informazioni su come risolvere i problemi comuni che possono verificarsi durante la distribuzione di soluzioni Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694986"
 
 2. Nella pagina **Applicazione** scegliere **Informazioni assembly**.
 
-3. Nel primo **versione dell'Assembly** immettere un asterisco (\*), quindi scegliere il **OK** pulsante.
+3. Impostare il numero di revisione, il terzo campo, del **versione dell'Assembly**, a un carattere jolly (\*). Ad esempio, "1.0. *".  Quindi scegliere il **OK** pulsante.
 
    Dopo aver modificato la versione dell'assembly, è possibile continuare a firmare l'assembly con nome sicuro e Fusion caricherà la versione più recente della personalizzazione.
+
+ [!NOTE]
+> Partire da Visual Studio 2017, se è provare a usare i caratteri jolly nella versione di Assembly, un errore di compilazione verrà eseguita.  Questo avviene perché i caratteri jolly nella versione di assembly si interromperà la funzionalità di MSBuild deterministica. Verrà invitati a rimuovere i caratteri jolly dalla versione di assembly oppure disabilitare il determinismo.  Per altre informazioni sulla funzionalità deterministiche, vedere: [Proprietà di progetto MSBuild comuni](../msbuild/common-msbuild-project-properties.md) e [personalizzare la compilazione](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Installazione non riesce se l'URI contiene caratteri non US-ASCII
  Quando si pubblica una soluzione Office in un percorso HTTP/HTTPS/FTP, il percorso non può contenere caratteri Unicode non US-ASCII. Questi caratteri possono causare un comportamento incoerente nel programma di installazione. Usare caratteri US-ASCII per il percorso di installazione.

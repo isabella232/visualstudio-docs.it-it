@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433342"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825596"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creazione di un linguaggio specifico di dominio basato su Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 - Il `UI` progetto contiene un esempio reale di un controllo modulo associato per il linguaggio DSL. Tuttavia, non funzionerà dopo avere modificato la definizione DSL. Il `UI` progetto contiene:  
 
-    - Una classe di Windows Form denominata `ModelViewControl`.  
+  - Una classe di Windows Form denominata `ModelViewControl`.  
 
-    - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.  
+  - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.  
 
 ### <a name="about-the-ui-project"></a>Sul progetto dell'interfaccia utente  
  Quando si aggiorna il file di definizione DSL per definire il proprio DSL, è necessario aggiornare il controllo nel `UI` progetto per visualizzare il linguaggio DSL. A differenza di `Dsl` e `DslPackage` progetti, il codice di esempio `UI` progetto non viene generato da `DslDefinitionl.dsl`. È possibile aggiungere i file con estensione tt per generare il codice se si desidera, sebbene questa procedura non è descritta in questa procedura dettagliata.  
@@ -241,7 +241,7 @@ Un'istanza DSL, che mostra un'interfaccia utente Form di Windows ed Esplora mode
 
 1. Nella visualizzazione progettazione di FarmControl.cs, selezionare un campo semplice, ad esempio nome, dimensioni o IsOrganic.  
 
-2. Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)**.  
+2. Nella finestra Proprietà, espandere **DataBindings** e aprire **(avanzate)** .  
 
      Nel **formattazione e associazione avanzata** finestra di dialogo, sotto **modalità aggiornamento origine dati**, scegliere **OnPropertyChanged**.  
 

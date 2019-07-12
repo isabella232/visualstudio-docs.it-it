@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442975"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823182"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Modificare modelli e diagrammi UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ ms.locfileid: "63442975"
   
      \- oppure -  
   
-- Nel **Progettazione architettura** sulla barra degli strumenti, fare clic sul segno più (**+**) o meno (-) (**-**), oppure scegliere un livello di zoom.  
+- Nel **Progettazione architettura** sulla barra degli strumenti, fare clic sul segno più ( **+** ) o meno (-) ( **-** ), oppure scegliere un livello di zoom.  
   
 ## <a name="Searching"></a> Ricerca in un diagramma  
  La funzione di ricerca veloce troverà gli elementi in un diagramma. È necessario impostare **Cerca in:** al **documento corrente**.  
@@ -294,9 +294,9 @@ ms.locfileid: "63442975"
   
 - Fare doppio clic sull'elemento sia nel **Esplora modelli UML** o in un diagramma e quindi fare clic su **Elimina da modello**.  
   
-    - L'elemento viene eliminato da ogni diagramma in cui è visualizzato.  
-  
-    - Anche ogni relazione che termina in questo elemento viene eliminata anche dal modello.  
+  - L'elemento viene eliminato da ogni diagramma in cui è visualizzato.  
+
+  - Anche ogni relazione che termina in questo elemento viene eliminata anche dal modello.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Per eliminare una relazione dal modello  
   

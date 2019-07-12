@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075818"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824059"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Sostituire `Microsoft.VisualStudio.Shell.11.0` con la versione corrente della dll MPF.)
 
- Per visualizzare la finestra di dialogo, chiamare "**ShowModal ()**" nella classe failover **OpenFileDialog**. **ShowModal ()** imposta lo stato modale corretto nella shell, assicura la finestra di dialogo viene centrata nella finestra padre e così via.
+ Per visualizzare la finestra di dialogo, chiamare "**ShowModal ()** " nella classe failover **OpenFileDialog**. **ShowModal ()** imposta lo stato modale corretto nella shell, assicura la finestra di dialogo viene centrata nella finestra padre e così via.
 
  Il codice è indicato di seguito:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Le intestazioni di dimensioni maggiori (tipo di carattere ambiente 155% o superiore) possono essere colorate per questi scopi:
 
-    - Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
+  - Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
 
-    - Per attirare l'attenzione su un'area specifica
+  - Per attirare l'attenzione su un'area specifica
 
-    - Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
+  - Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
 
 - Colore nelle intestazioni deve sfruttare Visual Studio esistente marchio colori, principalmente il principale viola, & FF68217A.
 

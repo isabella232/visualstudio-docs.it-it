@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: ad20d4678c24458582f80cc819e6f6a651fb2790
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 751faa1d81ca93fce5f8dfa866327cc8787e27ef
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825962"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Registro delle modifiche (Visual Studio Tools per Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,89 +22,92 @@ ms.locfileid: "63443027"
 Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="23"></a>2.3
- Data rilascio: 14/07/2016
+
+Data rilascio: 14/07/2016
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Generale:**
 
-    - Aggiunta un'opzione per disabilitare i log della console Unity nell'elenco errori di Visual Studio.
+  - Aggiunta un'opzione per disabilitare i log della console Unity nell'elenco errori di Visual Studio.
 
-    - Aggiunta un'opzione per consentire la modifica delle proprietà del progetto generato.
+  - Aggiunta un'opzione per consentire la modifica delle proprietà del progetto generato.
 
 - **Debugger:**
 
-    - Aggiunti i visualizzatori stringa per testo, XML, HTML e JSON.
+  - Aggiunti i visualizzatori stringa per testo, XML, HTML e JSON.
 
 - **Procedure guidate:**
 
-    - Aggiunti i MonoBehaviour mancanti.
+  - Aggiunti i MonoBehaviour mancanti.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Generale:**
 
-    - Risolto un conflitto con ReSharper che impediva la visualizzazione di controlli all'interno delle impostazioni di Visual Studio.
+  - Risolto un conflitto con ReSharper che impediva la visualizzazione di controlli all'interno delle impostazioni di Visual Studio.
 
-    - Risolto un conflitto con Xamarin che impediva il debug in alcuni casi.
+  - Risolto un conflitto con Xamarin che impediva il debug in alcuni casi.
 
 - **Debugger:**
 
-    - Risolto un problema che causava il blocco di Visual Studio durante il debug.
+  - Risolto un problema che causava il blocco di Visual Studio durante il debug.
 
-    - Risolto un problema con i punti di interruzione di funzione in Visual Studio 2015.
+  - Risolto un problema con i punti di interruzione di funzione in Visual Studio 2015.
 
-    - Risolti diversi problemi di valutazione delle espressioni.
+  - Risolti diversi problemi di valutazione delle espressioni.
 
 ## <a name="22"></a>2.2
- Data rilascio: 04/02/2016
+
+Data rilascio: 04/02/2016
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Procedure guidate:**
 
-    - Aggiunta della ricerca intelligente nella procedura guidata **Implement Monobehaviour** .
+  - Aggiunta della ricerca intelligente nella procedura guidata **Implement Monobehaviour** .
 
-    - Le procedure guidate ora riconoscono il contesto. Ad esempio, i messaggi NetworkBehavior sono disponibili solo quando si lavora con NetworkBehavior.
+  - Le procedure guidate ora riconoscono il contesto. Ad esempio, i messaggi NetworkBehavior sono disponibili solo quando si lavora con NetworkBehavior.
 
-    - Aggiunta del supporto per i messaggi NetworkBehavior nelle procedure guidate.
+  - Aggiunta del supporto per i messaggi NetworkBehavior nelle procedure guidate.
 
 - **Interfaccia utente:**
 
-    - Aggiunta di un'opzione per configurare la visibilità dei messaggi MonoBehavior.
+  - Aggiunta di un'opzione per configurare la visibilità dei messaggi MonoBehavior.
 
-    - Rimozione delle pagine delle proprietà di Visual Studio non rilevanti per i progetti Unity.
+  - Rimozione delle pagine delle proprietà di Visual Studio non rilevanti per i progetti Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Generazione del progetto:**
 
-    - Correzione dei riferimenti a UnityEngine e UnityEditor in Unity 4.6.
+  - Correzione dei riferimenti a UnityEngine e UnityEditor in Unity 4.6.
 
-    - Correzione della generazione dei file di progetto in caso di esecuzione di Unity su OSX.
+  - Correzione della generazione dei file di progetto in caso di esecuzione di Unity su OSX.
 
-    - Correzione della gestione dei nomi di progetto contenenti caratteri cancelletto (#).
+  - Correzione della gestione dei nomi di progetto contenenti caratteri cancelletto (#).
 
-    - Limitazione dei progetti generati a C# 4.
+  - Limitazione dei progetti generati a C# 4.
 
 - **Debugger:**
 
-    - Risolto un problema relativo alla valutazione delle espressioni durante il debug all'interno di un coroutine Unity.
+  - Risolto un problema relativo alla valutazione delle espressioni durante il debug all'interno di un coroutine Unity.
 
-    - Risolto un problema che causava il blocco di Visual Studio durante il debug.
+  - Risolto un problema che causava il blocco di Visual Studio durante il debug.
 
 - **Interfaccia utente:**
 
-    - Risolto un problema di incompatibilità con l'estensione di Visual Studio [Tabs Studio](https://tabsstudio.com/) .
+  - Risolto un problema di incompatibilità con l'estensione di Visual Studio [Tabs Studio](https://tabsstudio.com/) .
 
 - **Programma di installazione:**
 
-    - Supporto dell'installazione a livello di computer di VSTU (installazione per tutti gli utenti) mediante la creazione di voci del Registro di sistema HKLM.
+  - Supporto dell'installazione a livello di computer di VSTU (installazione per tutti gli utenti) mediante la creazione di voci del Registro di sistema HKLM.
 
-    - Risoluzione dei problemi con la disinstallazione di VSTU quando viene installata la stessa versione di VSTU per più versioni diverse di Visual Studio. Ad esempio, quando sono installati sia VSTU **2015** 2.1.0.0 che VSTU **2013** 2.1.0.0.
+  - Risoluzione dei problemi con la disinstallazione di VSTU quando viene installata la stessa versione di VSTU per più versioni diverse di Visual Studio. Ad esempio, quando sono installati sia VSTU **2015** 2.1.0.0 che VSTU **2013** 2.1.0.0.
 
 ## <a name="21"></a>2.1
- Rilasciato in data 08.09.2015
+
+Rilasciato in data 08.09.2015
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -125,80 +128,81 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dei punti di interruzione dei passaggi in Visual Studio 2015.
 
 ## <a name="20"></a>2.0
- Rilasciato in data 20.07.2015
+
+Rilasciato in data 20.07.2015
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione con Unity:**
 
-    - Correzione della conversione dei simboli di debug creati con Visual Studio 2015 durante l'importazione di una DLL e dei relativi simboli di debug (PDB).
+  - Correzione della conversione dei simboli di debug creati con Visual Studio 2015 durante l'importazione di una DLL e dei relativi simboli di debug (PDB).
 
-    - Vengono generati sempre file MDB durante l'importazione di una DLL e dei relativi simboli di debug (PDB), tranne quando viene fornito anche un file MDB.
+  - Vengono generati sempre file MDB durante l'importazione di una DLL e dei relativi simboli di debug (PDB), tranne quando viene fornito anche un file MDB.
 
-    - Correzione dell'inquinamento della directory di progetto Unity con una directory obj.
+  - Correzione dell'inquinamento della directory di progetto Unity con una directory obj.
 
-    - Correzione della generazione di riferimenti a System.Xml.Link e System.Runtime.Serialization.
+  - Correzione della generazione di riferimenti a System.Xml.Link e System.Runtime.Serialization.
 
-    - Aggiunta del supporto di più sottoscrittori agli hook delle API di generazione di file di progetto.
+  - Aggiunta del supporto di più sottoscrittori agli hook delle API di generazione di file di progetto.
 
-    - Viene sempre completata la generazione di file di progetto anche quando uno dei file da generare è bloccato.
+  - Viene sempre completata la generazione di file di progetto anche quando uno dei file da generare è bloccato.
 
-    - Aggiunta del supporto dei caratteri jolly * nel filtro delle estensioni quando si specificano i file da includere nel progetto C#.
+  - Aggiunta del supporto dei caratteri jolly * nel filtro delle estensioni quando si specificano i file da includere nel progetto C#.
 
 - **Integrazione con Visual Studio:**
 
-    - Risolto un problema di compatibilità con Productivity Power Tools.
+  - Risolto un problema di compatibilità con Productivity Power Tools.
 
-    - Correzione della generazione di MonoBehavior nelle dichiarazioni di eventi e delegati.
+  - Correzione della generazione di MonoBehavior nelle dichiarazioni di eventi e delegati.
 
 - **Debugger:**
 
-    - Correzione di un blocco potenziale durante il debug.
+  - Correzione di un blocco potenziale durante il debug.
 
-    - Risolto un problema di mancata visualizzazione delle variabili locali in alcuni stack frame.
+  - Risolto un problema di mancata visualizzazione delle variabili locali in alcuni stack frame.
 
-    - Correzione del controllo delle matrici vuote.
+  - Correzione del controllo delle matrici vuote.
 
 ## <a name="20-preview-2"></a>2.0 Preview 2
- Rilasciato in data 02.04.2015
+Rilasciato in data 02.04.2015
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Esplora progetti Unity:**
 
-    - Ridenominazione automatica della classe quando si rinomina un file in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
+  - Ridenominazione automatica della classe quando si rinomina un file in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
 
-    - Selezione automatica dei nuovi script creati in Esplora progetti Unity.
+  - Selezione automatica dei nuovi script creati in Esplora progetti Unity.
 
-    - Rilevamento dello script attivo in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
+  - Rilevamento dello script attivo in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
 
-    - Doppia sincronizzazione di Esplora soluzioni di Visual Studio (vedere la finestra di dialogo **Opzioni** ).
+  - Doppia sincronizzazione di Esplora soluzioni di Visual Studio (vedere la finestra di dialogo **Opzioni** ).
 
-    - Adozione delle icone di Visual Studio in Esplora progetti Unity.
+  - Adozione delle icone di Visual Studio in Esplora progetti Unity.
 
 - **Debugger:**
 
-    - Possibilità di selezionare la destinazione di debug attiva da un elenco di destinazioni salvate o usate di recente (vedere la finestra di dialogo **Opzioni** ).
+  - Possibilità di selezionare la destinazione di debug attiva da un elenco di destinazioni salvate o usate di recente (vedere la finestra di dialogo **Opzioni** ).
 
-    - Creazione di punti di interruzione delle funzioni in metodi MonoBehavior e loro applicazione a più classi MonoBehavior.
+  - Creazione di punti di interruzione delle funzioni in metodi MonoBehavior e loro applicazione a più classi MonoBehavior.
 
-    - Supporto di Crea ID oggetto nel debugger.
+  - Supporto di Crea ID oggetto nel debugger.
 
-    - Supporto del numero di passaggi del punto di interruzione nel debugger.
+  - Supporto del numero di passaggi del punto di interruzione nel debugger.
 
-    - Supporto dell'interruzione in caso di eccezioni nel debugger (sperimentale. Vedere la finestra di dialogo **Opzioni** ).
+  - Supporto dell'interruzione in caso di eccezioni nel debugger (sperimentale. Vedere la finestra di dialogo **Opzioni** ).
 
-    - Supporto della creazione di oggetti e matrici durante la valutazione di espressioni nel debugger.
+  - Supporto della creazione di oggetti e matrici durante la valutazione di espressioni nel debugger.
 
-    - Supporto dei confronti Null durante la valutazione di espressioni nel debugger.
+  - Supporto dei confronti Null durante la valutazione di espressioni nel debugger.
 
-    - Possibilità di escludere membri obsoleti nelle finestre delle espressioni di controllo del debugger.
+  - Possibilità di escludere membri obsoleti nelle finestre delle espressioni di controllo del debugger.
 
 - **Programma di installazione:**
 
-    - Ottimizzazione della registrazione delle estensioni di Visual Studio Tools per Unity.
+  - Ottimizzazione della registrazione delle estensioni di Visual Studio Tools per Unity.
 
-    - Installazione del pacchetto Visual Studio Tools per Unity per Unity 5.
+  - Installazione del pacchetto Visual Studio Tools per Unity per Unity 5.
 
 - **Documentazione:** Miglioramento delle prestazioni di generazione della documentazione.
 
@@ -212,33 +216,33 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 - **Esplora progetti Unity:**
 
-    - Aggiornamento di Esplora progetti Unity dopo lo spostamento o la ridenominazione dei file in Esplora soluzioni di Visual Studio.
+  - Aggiornamento di Esplora progetti Unity dopo lo spostamento o la ridenominazione dei file in Esplora soluzioni di Visual Studio.
 
-    - Mantenimento delle selezioni quando i file vengono rinominati in Esplora progetti Unity.
+  - Mantenimento delle selezioni quando i file vengono rinominati in Esplora progetti Unity.
 
-    - Disattivazione dell'espansione e della compressione automatiche quando si fa doppio clic sui file in Esplora progetti Unity.
+  - Disattivazione dell'espansione e della compressione automatiche quando si fa doppio clic sui file in Esplora progetti Unity.
 
-    - Possibilità di visualizzare in Esplora progetti Unity i nuovi file selezionati.
+  - Possibilità di visualizzare in Esplora progetti Unity i nuovi file selezionati.
 
 - **Debugger:**
 
-    - Risoluzione di un possibile problema di blocco di Visual Studio durante la valutazione di espressioni nel debugger.
+  - Risoluzione di un possibile problema di blocco di Visual Studio durante la valutazione di espressioni nel debugger.
 
-    - Le chiamate dei metodi vengono sempre eseguite nel dominio corretto nel debugger.
+  - Le chiamate dei metodi vengono sempre eseguite nel dominio corretto nel debugger.
 
 - **Unity:**
 
-    - Correzione del percorso di UnityVS.OpenFile con Unity 5.
+  - Correzione del percorso di UnityVS.OpenFile con Unity 5.
 
-    - Correzione del percorso di pdb2mdb con Unity 5.
+  - Correzione del percorso di pdb2mdb con Unity 5.
 
-    - Correzione di una possibile eccezione durante la generazione dei file di progetto.
+  - Correzione di una possibile eccezione durante la generazione dei file di progetto.
 
-    - Correzione di un possibile problema di blocco durante l'esecuzione di Unity su OSX.
+  - Correzione di un possibile problema di blocco durante l'esecuzione di Unity su OSX.
 
-    - Gestione delle eccezioni interne.
+  - Gestione delle eccezioni interne.
 
-    - Invio dei log della console di Unity all'elenco degli errori di Visual Studio.
+  - Invio dei log della console di Unity all'elenco degli errori di Visual Studio.
 
 - **Documentazione:** Correzione della generazione della documentazione per la nuova documentazione di Unity.
 
@@ -249,7 +253,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - **Interfaccia utente:** Supporto dei temi di Visual Studio per il menu di scelta rapida e le icone.
 
 ## <a name="20-preview"></a>2.0 Preview
- Rilasciato in data 12.11.2014
+Rilasciato in data 12.11.2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -259,15 +263,15 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 - Miglioramento della visualizzazione dei valori durante il debug:
 
-    - Miglioramento della visualizzazione per ArrayLists, elenchi, tabelle hash e dizionari.
+  - Miglioramento della visualizzazione per ArrayLists, elenchi, tabelle hash e dizionari.
 
-    - Visualizzazione di membri non pubblici e statici come categorie in espressioni di controllo e visualizzazioni locali.
+  - Visualizzazione di membri non pubblici e statici come categorie in espressioni di controllo e visualizzazioni locali.
 
-    - Miglioramento della visualizzazione di SerializedProperty di Unity per valutare solo il campo del valore valido per la proprietà.
+  - Miglioramento della visualizzazione di SerializedProperty di Unity per valutare solo il campo del valore valido per la proprietà.
 
-    - Supporto di DebuggerDisplayAttribute per classi e struct.
+  - Supporto di DebuggerDisplayAttribute per classi e struct.
 
-    - Supporto di DebuggerTypeProxyAttribute.
+  - Supporto di DebuggerTypeProxyAttribute.
 
 - Inserimento dei metodi MonoBehaviour mediante le procedure guidate per rispettare le convenzioni per la scrittura di codice degli utenti.
 
@@ -288,7 +292,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Mancata registrazione del callback di log se non è necessario.
 
 ## <a name="192"></a>1.9.2
- Rilasciato in data 09.10.2014
+
+Rilasciato in data 09.10.2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -311,7 +316,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un bug per cui tutte le risorse venivano incluse nei file di progetto se il filtro delle estensioni era vuoto.
 
 ## <a name="191"></a>1.9.1
- Rilasciato in data 22.09.2014
+
+Rilasciato in data 22.09.2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -356,7 +362,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'apertura di script con VSTU nelle versioni a 64 bit di Unity.
 
 ## <a name="19"></a>1.9
- Rilasciato in data 29.07.2014
+
+Rilasciato in data 29.07.2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -404,7 +411,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 > Poiché C# è il linguaggio predominante nell'ecosistema Unity (le nuove risorse di esempio sono in C#, la documentazione di Unity sarà relativa a C# per impostazione predefinita), è stato rimosso il supporto tecnico di base per UnityScript e Boo in modo da concentrarsi meglio sull'esperienza in C#. Di conseguenza, le soluzioni VSTU sono ora solo in C# e vengono caricate molto più rapidamente.
 
 ## <a name="182"></a>1.8.2
- Rilasciato in data 07.01.2014
+
+Rilasciato in data 07.01.2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -431,7 +439,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Risoluzione di un problema di arresto anomalo in Unity quando l'assembly generato specifico della versione non è sincronizzato.
 
 ## <a name="181"></a>1.8.1
- Rilasciato in data 21.11.2013
+
+Rilasciato in data 21.11.2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -464,7 +473,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'apertura di script da Unity in modo da non confondere l'ordine ALT+TAB per Unity 4.2 e versioni successive.
 
 ## <a name="180"></a>1.8.0
- Rilasciato in data 24.09.2013
+
+Rilasciato in data 24.09.2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -505,7 +515,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della modifica dei valori booleani nella visualizzazione locale.
 
 ## <a name="122"></a>1.2.2
- Rilasciato in data 09.07.2013
+
+Rilasciato in data 09.07.2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -528,7 +539,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della gestione degli assembly di Unity 4.2 Beta.
 
 ## <a name="121"></a>1.2.1
- Rilasciato in data 09.04.2013
+
+Rilasciato in data 09.04.2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -541,7 +553,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'associazione dei punti di interruzione in alcune DLL esterne.
 
 ## <a name="12"></a>1.2
- Rilasciato in data 25.03.2013
+
+Rilasciato in data 25.03.2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -608,10 +621,10 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del bug UVS-11: Variabili locali nelle coroutine.
 
 ## <a name="11--beta-release"></a>1.1 - Versione beta
- Rilasciato in data 09.10.2014
+Rilasciato in data 09.10.2014
 
 ## <a name="1013"></a>1.0.13
- Rilasciato in data 21.01.2013
+Rilasciato in data 21.01.2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -634,7 +647,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della gestione di messaggi lunghi inviati da Unity a UnityVS. Prima di questa correzione, i messaggi lunghi potevano provocare l'arresto anomalo della parte di messaggistica di UnityVS. Di conseguenza, talvolta UnityVS non era in grado di aprire un file da Unity.
 
 ## <a name="1012"></a>1.0.12
- Rilasciato in data 03.01.2013
+Rilasciato in data 03.01.2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -653,7 +666,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un problema di un'API per cui il codice utente non poteva fare parte del gestore dei callback di log.
 
 ## <a name="1011"></a>1.0.11
- Rilasciato in data 28.11.2012
+Rilasciato in data 28.11.2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -684,7 +697,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'arresto anomalo quando non è possibile inserire l'icona nella barra di stato di Visual Studio.
 
 ## <a name="1010"></a>1.0.10
- Rilasciato in data 09.10.2012
+Rilasciato in data 09.10.2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -697,7 +710,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del modo in cui gli assembly vengono recuperati da Unity per evitare il blocco dei file e la confusione del processo di compilazione di Unity.
 
 ## <a name="109"></a>1.0.9
- Rilasciato in data 03.10.2012
+
+Rilasciato in data 03.10.2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -716,7 +730,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del bug UVS-21: Puntatore non valido durante la valutazione della chiamata di un metodo nell'API Math di Unity.
 
 ## <a name="108"></a>1.0.8
- Rilasciato in data 26.09.2012
+
+Rilasciato in data 26.09.2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -727,7 +742,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del modo in cui UnityVS viene registrato in Visual Studio 2010.
 
 ## <a name="107"></a>1.0.7
- Rilasciato in data 14.09.2012
+
+Rilasciato in data 14.09.2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -743,10 +759,11 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 > A causa del supporto di Visual Studio 2012, è stato necessario rinominare alcuni file e spostarne altri. Il pacchetto UnityVS per importare Unity si chiama ora UnityVS 2010 o UnityVS 2012, rispettivamente per Visual Studio 2010 e Visual Studio 2012. Per questa versione è anche necessario che i file di progetto di UnityVS vengano rigenerati.
 
 ## <a name="106---internal-build"></a>1.0.6 - Build interna
- Rilasciato in data 12.09.2012
+Rilasciato in data 12.09.2012
 
 ## <a name="105"></a>1.0.5
- Rilasciato in data 10.09.2012
+
+Rilasciato in data 10.09.2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -755,20 +772,22 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del rilevamento di istanze di Unity quando Unity è connesso al server delle risorse. Questo problema generava errori di apertura dei file da Unity e relativi alla connessione automatica del debugger di Visual Studio.
 
 ## <a name="104"></a>1.0.4
- Rilasciato in data 05.09.2012
+
+Rilasciato in data 05.09.2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - Conversione automatica dei simboli di debug in Unity.
 
-     Se nella cartella Asset è presente un assembly DLL .NET con il file PDB associato, è sufficiente importare l'assembly perché UnityVS converta il file PDB in un file di simboli di debug riconosciuto dal motore di script di Unity e perché sia possibile passare agli assembly .NET da UnityVS.
+    Se nella cartella Asset è presente un assembly DLL .NET con il file PDB associato, è sufficiente importare l'assembly perché UnityVS converta il file PDB in un file di simboli di debug riconosciuto dal motore di script di Unity e perché sia possibile passare agli assembly .NET da UnityVS.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - Correzione dell'arresto anomalo di UnityVS durante il debug, causato da eccezioni generate da metodi o proprietà all'interno di Unity.
 
 ## <a name="103"></a>1.0.3
- Rilasciato in data 04.09.2012
+
+Rilasciato in data 04.09.2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -783,7 +802,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un arresto anomalo casuale di Visual Studio provocato dalla barra di stato personalizzata.
 
 ## <a name="102"></a>1.0.2
- Rilasciato in data 30.08.2012
+
+Rilasciato in data 30.08.2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -794,7 +814,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un bug relativo al modo in cui gli assembly di script vengono recuperato da Unity con Unity 4 b7.
 
 ## <a name="101"></a>1.0.1
- Rilasciato in data 28.08.2012
+
+Rilasciato in data 28.08.2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -811,4 +832,4 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del completamento per le DLL all'interno della cartella Asset per UnityScript e Boo.
 
 ## <a name="10--initial-release"></a>1.0 - Versione iniziale
- Rilasciato in data 22.08.2012
+Rilasciato in data 22.08.2012

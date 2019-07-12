@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685336"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821972"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Scelta tra pacchetti VSPackage condivisi e con versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Versioni diverse di Visual Studio possono coesistere nello stesso computer. I pa
   
 - Rendere compatibili con più versioni del pacchetto VSPackage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Due modalità di esecuzione sono pertanto disponibili:  
   
-    - Limitare il pacchetto VSPackage per usare solo le funzionalità dalla versione meno recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportate.  
-  
-    - Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi che sono supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  - Limitare il pacchetto VSPackage per usare solo le funzionalità dalla versione meno recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supportate.  
+
+  - Programmare il pacchetto VSPackage per adattarsi alla versione di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] in cui è in esecuzione. Quindi, se le query per i servizi più recenti hanno esito negativo, il pacchetto VSPackage può offrire altri servizi che sono supportati nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Registrare il VSPackage in modo appropriato. Per altre informazioni, vedere [registrazione di pacchetti VSPackage](../extensibility/internals/vspackage-registration.md) e [registrazione di pacchetti VSPackage gestiti](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   

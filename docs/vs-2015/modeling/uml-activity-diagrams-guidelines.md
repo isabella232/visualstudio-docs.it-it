@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439731"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823571"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagrammi di attività UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
  È possibile specificare il modo in cui vengono archiviate le voci in un buffer impostando le proprietà del nodo oggetto:  
   
 - Impostare il **Ordering** proprietà:  
-  
-    - **Non ordinata** per specificare un ordine casuale o non specificato. (impostazione predefinita).  
-  
-    - **Ordinati** per specificare un ordine in base a una chiave specifica.  
-  
-    - **FIFO** per specificare un ordine di first in, First-Out.  
-  
-    - **LIFO** per specificare un ordine last-in, First-Out.  
-  
+
+  - **Non ordinata** per specificare un ordine casuale o non specificato. (impostazione predefinita).  
+
+  - **Ordinati** per specificare un ordine in base a una chiave specifica.  
+
+  - **FIFO** per specificare un ordine di first in, First-Out.  
+
+  - **LIFO** per specificare un ordine last-in, First-Out.  
+
 - Impostare il **limite superiore** proprietà per specificare il numero massimo di oggetti che possono essere contenuti nel buffer. Il valore predefinito è *, che significa che non esiste alcun limite.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Descrizione del flusso di dati con pin di input e di output  
@@ -317,7 +317,7 @@ In Visual Studio è possibile tracciare un diagramma di attività per descrivere
   
 - È possibile impostare il **Is Synchronous** proprietà dell'azione per indicare se l'attività attende il completamento dell'operazione.  
   
-    - Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima del completamento dell'operazione chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
+  - Se si imposta **Is Synchronous** su false, si indica che il flusso può continuare nell'azione successiva prima del completamento dell'operazione chiamata. È consigliabile evitare di definire pin di output o flussi di dati in uscita dall'azione.  
   
 ## <a name="Concurrent"></a> Flussi simultanei  
  È possibile usare la **nodo Fork** e il **nodo Join** per descrivere due o più thread di attività che possono essere eseguite nello stesso momento.  

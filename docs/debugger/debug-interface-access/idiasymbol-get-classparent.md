@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402167"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830575"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Recupera un riferimento all'elemento padre classe del simbolo.
@@ -43,7 +43,7 @@ HRESULT get_classParent ( 
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisito|DESCRIZIONE|
 |-----------------|-----------------|
 |Intestazione:|DIA2.h|
 |Version:|DIA SDK v7.0|

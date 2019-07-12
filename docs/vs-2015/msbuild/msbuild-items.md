@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038173"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821639"
 ---
 # <a name="msbuild-items"></a>Elementi MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Gli elementi MSBuild sono input nel sistema di compilazione e in genere rapprese
   
 - [Metadati degli elementi](#BKMK_ItemMetadata)  
   
-    - [Riferimento ai metadati degli elementi in un file di progetto](#BKMK_ReferencingItemMetadata)  
-  
-    - [Metadati noti degli elementi](#BKMK_WellKnownItemMetadata)  
-  
-    - [Trasformazione dei tipi di elemento tramite i metadati](#BKMK_Transforming)  
+  - [Riferimento ai metadati degli elementi in un file di progetto](#BKMK_ReferencingItemMetadata)  
+
+  - [Metadati noti degli elementi](#BKMK_WellKnownItemMetadata)  
+
+  - [Trasformazione dei tipi di elemento tramite i metadati](#BKMK_Transforming)  
   
 - [Definizioni degli elementi](#BKMK_ItemDefinitions)  
   
 - [Attributi per gli elementi in un ItemGroup di una destinazione](#BKMK_AttributesWithinTargets)  
   
-    - [Rimuovere un attributo](#BKMK_RemoveAttribute)  
-  
-    - [Attributo KeepMetadata](#BKMK_KeepMetadata)  
-  
-    - [Attributo RemoveMetadata](#BKMK_RemoveMetadata)  
-  
-    - [Attributo KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Rimuovere un attributo](#BKMK_RemoveAttribute)  
+
+  - [Attributo KeepMetadata](#BKMK_KeepMetadata)  
+
+  - [Attributo RemoveMetadata](#BKMK_RemoveMetadata)  
+
+  - [Attributo KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Creazione di elementi in un file di progetto  
  Si dichiarano gli elementi nel file di progetto come elementi figlio di un elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Il nome dell'elemento figlio è il tipo dell'elemento. L'attributo `Include` dell'elemento specifica gli elementi (i file) da includere con tale tipo di elemento. Ad esempio, il codice XML seguente crea un tipo di elemento denominato `Compile` che include due file.  

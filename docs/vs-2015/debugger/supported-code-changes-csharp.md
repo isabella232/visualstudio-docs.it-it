@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117655"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823534"
 ---
 # <a name="supported-code-changes-c"></a>Modifiche al codice supportate (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ La funzionalità Modifica e continuazione è in grado di gestire la maggior part
   
 - Debug di codice LINQ in determinate circostanze. Per altre informazioni, vedere [Debug LINQ](../debugger/debugging-linq.md).  
   
-    - Cattura di una variabile che non è stata catturata in precedenza.  
-  
-    - Modifica del tipo di espressione di query (ad esempio, select a = > Selezionare nuovo {A = un})  
-  
-    - Rimozione di un oggetto `where` che contiene un'istruzione attiva.  
-  
-    - Rimozione di un oggetto `let` che contiene un'istruzione attiva.  
-  
-    - Rimozione di un oggetto `join` che contiene un'istruzione attiva.  
-  
-    - Rimozione di un oggetto `orderby` che contiene un'istruzione attiva.  
+  - Cattura di una variabile che non è stata catturata in precedenza.  
+
+  - Modifica del tipo di espressione di query (ad esempio, select a = > Selezionare nuovo {A = un})  
+
+  - Rimozione di un oggetto `where` che contiene un'istruzione attiva.  
+
+  - Rimozione di un oggetto `let` che contiene un'istruzione attiva.  
+
+  - Rimozione di un oggetto `join` che contiene un'istruzione attiva.  
+
+  - Rimozione di un oggetto `orderby` che contiene un'istruzione attiva.  
   
 - Debug in modalità mista (nativo/gestito).  
   

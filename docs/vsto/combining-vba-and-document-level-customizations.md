@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447159"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826025"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinazione di VBA e le personalizzazioni a livello di documento
   È possibile usare il codice Visual Basic, Applications Edition (VBA) in un documento incluso in una personalizzazione a livello di documento per Microsoft Office Word o Microsoft Office Excel. È possibile chiamare codice VBA nel documento dall'assembly di personalizzazione oppure configurare il progetto in modo da consentire al codice VBA nel documento di chiamare il codice nell'assembly di personalizzazione.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - Il documento deve avere una delle estensioni di file seguenti:
 
-    - Per Word: *docm* o *doc*
+  - Per Word: *docm* o *doc*
 
-    - Per Excel: *xlsm*, *xltm*, *xls*, o *. xlt*
+  - Per Excel: *xlsm*, *xltm*, *xls*, o *. xlt*
 
 - Il documento deve già contenere un progetto VBA che include il codice VBA.
 

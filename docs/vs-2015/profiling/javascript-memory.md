@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704539"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825463"
 ---
 # <a name="javascript-memory"></a>Memoria JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
   
      Per altre informazioni su queste opzioni, vedere [Eseguire app da Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
-3. Nella barra dei menu scegliere **Debug** e quindi **Profiler prestazioni...**.  
+3. Nella barra dei menu scegliere **Debug** e quindi **Profiler prestazioni...** .  
   
      Per impostazione predefinita, viene analizzato il progetto di avvio corrente. Per modificare la destinazione di analisi, scegli **Cambia destinazione**.  
   
@@ -282,14 +282,14 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, ti aiuta a comprendere
   
   Per filtrare le informazioni sulle differenze tra gli snapshot, scegli uno dei filtri **Ambito** nella parte superiore delle visualizzazioni delle differenze.  
   
-- **Oggetti rimasti dallo snapshot #\<numero>**. Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.  
+- **Oggetti rimasti dallo snapshot #\<numero>** . Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.  
   
   > [!TIP]
   > Per mostrare le informazioni più utili in questo filtro, segui la procedura descritta in [Isolate a memory leak](#Isolate).  
   
-- **Oggetti aggiunti tra lo snapshot #\<numero> e #\<numero>**. Questo filtro mostra tutti gli oggetti aggiunti all'heap rispetto allo snapshot precedente.  
+- **Oggetti aggiunti tra lo snapshot #\<numero> e #\<numero>** . Questo filtro mostra tutti gli oggetti aggiunti all'heap rispetto allo snapshot precedente.  
   
-- **Tutti gli oggetti nello snapshot #\<numero>**. Con questa impostazione di filtro non viene escluso nessuno oggetto sull'heap.  
+- **Tutti gli oggetti nello snapshot #\<numero>** . Con questa impostazione di filtro non viene escluso nessuno oggetto sull'heap.  
   
   Per mostrare riferimenti a oggetti non corrispondenti al filtro **Ambito** corrente, selezionare **Mostra riferimenti non corrispondenti** nell'elenco delle impostazioni ![elenco a discesa Impostazioni in Memory Analyzer](../profiling/media/js-mem-settings.png "JS_Mem_Settings") nell'angolo in alto a destra del riquadro. Se abiliti questa impostazioni, i riferimenti non corrispondenti saranno visualizzati in testo grigio.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Cercare gli oggetti mantenuti inavvertitamente in memoria dopo che l'utente è passato a un'altra pagina, una causa comune dei problemi di memoria. Ad esempio:  
   
-    - L'uso non corretto della funzione [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) può causare questo problema.  
-  
-    - Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.  
-  
-    - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+  - L'uso non corretto della funzione [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) può causare questo problema.  
+
+  - Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.  
+
+  - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 - Guardare l'ultima parte di [questo video](http://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 su JavaScript Memory Analyzer.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Considerare la possibilità di modificare temporaneamente il codice per isolare i problemi. Può, ad esempio, essere necessario:  
   
-    - Usare i comandi per l'analizzatore di memoria, `console.takeSnapshot` e `performance.mark`. Per informazioni, vedere [Associate source code with memory usage data](#JSConsoleCommands).  
-  
-         Questi comandi consentono di isolare i problemi che non puoi isolare manualmente acquisendo uno snapshot heap.  
-  
-    - Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.  
-  
+  - Usare i comandi per l'analizzatore di memoria, `console.takeSnapshot` e `performance.mark`. Per informazioni, vedere [Associate source code with memory usage data](#JSConsoleCommands).  
+
+    Questi comandi consentono di isolare i problemi che non puoi isolare manualmente acquisendo uno snapshot heap.  
+
+  - Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.  
+
 ## <a name="see-also"></a>Vedere anche  
  [Procedura dettagliata: trovare una perdita di memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

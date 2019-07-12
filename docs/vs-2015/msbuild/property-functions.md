@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065181"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826182"
 ---
 # <a name="property-functions"></a>Funzioni delle proprietà
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
 - [Sintassi delle funzioni di proprietà](#BKMK_Syntax)  
   
-    - [Funzioni di proprietà stringa](#BKMK_String)  
-  
-    - [Funzioni di proprietà statiche](#BKMK_Static)  
-  
-    - [Chiamata di metodi di istanza su proprietà statiche](#BKMK_InstanceMethods)  
-  
-    - [Funzioni di proprietà MSBuild](#BKMK_PropertyFunctions)  
+  - [Funzioni di proprietà stringa](#BKMK_String)  
+
+  - [Funzioni di proprietà statiche](#BKMK_Static)  
+
+  - [Chiamata di metodi di istanza su proprietà statiche](#BKMK_InstanceMethods)  
+
+  - [Funzioni di proprietà MSBuild](#BKMK_PropertyFunctions)  
   
 - [Funzioni di proprietà annidate](#BKMK_Nested)  
   
@@ -188,7 +188,7 @@ In.NET Framework versioni 4 e 4.5, le funzioni di proprietà possono essere usat
   
  Di seguito è riportato un elenco di funzioni di proprietà MSBuild:  
   
-|Firma funzione|Description|  
+|Firma funzione|DESCRIZIONE|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Esegue l'addizione di due valori Double.|  
 |long Add(long a, long b)|Esegue l'addizione di due valori Long.|  

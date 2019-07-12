@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401087"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825626"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procedura dettagliata: Creare un passaggio di distribuzione personalizzato per progetti SharePoint
   Quando si distribuisce un progetto SharePoint, Visual Studio esegue una serie di passaggi di distribuzione in un ordine specifico. Visual Studio include numerosi passaggi di distribuzione predefinite, ma è anche possibile creare una propria.
@@ -29,9 +29,9 @@ ms.locfileid: "66401087"
 
 - Creazione di un'estensione di Visual Studio che esegue due attività principali:
 
-    - L'estensione di definire un passaggio di distribuzione personalizzato per aggiornare soluzioni SharePoint.
+  - L'estensione di definire un passaggio di distribuzione personalizzato per aggiornare soluzioni SharePoint.
 
-    - L'estensione crea un'estensione di progetto che definisce una nuova configurazione di distribuzione, ovvero una serie di passaggi di distribuzione che vengono eseguite per un determinato progetto. La nuova configurazione di distribuzione include il passaggio di distribuzione personalizzato e alcuni passaggi di distribuzione predefinite.
+  - L'estensione crea un'estensione di progetto che definisce una nuova configurazione di distribuzione, ovvero una serie di passaggi di distribuzione che vengono eseguite per un determinato progetto. La nuova configurazione di distribuzione include il passaggio di distribuzione personalizzato e alcuni passaggi di distribuzione predefinite.
 
 - Creare due comandi di SharePoint personalizzati che chiama l'assembly dell'estensione. I comandi di SharePoint sono metodi che possono essere chiamati dagli assembly di estensione per usare le API nel modello a oggetti server per SharePoint. Per altre informazioni, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
