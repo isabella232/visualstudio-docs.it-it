@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678869"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825657"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Impostazioni sincronizzate in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Per impostazione predefinita, quando si usa lo stesso account di personalizzazio
 
 - Le opzioni seguenti nelle pagine **Strumenti &#124; Opzioni**:
 
-    - Impostazioni del **tema** e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente**, **Generale**
+  - Impostazioni del **tema** e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente**, **Generale**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Tipi di carattere e colori**
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Tipi di carattere e colori**
 
-    - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente**, **Tastiera**
+  - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente**, **Tastiera**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente, Schede e Finestre**
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente, Schede e Finestre**
 
-    - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Avvio**
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente**, **Avvio**
 
-    - Tutte le impostazioni nelle pagine delle opzioni **Editor di testo**
+  - Tutte le impostazioni nelle pagine delle opzioni **Editor di testo**
 
 - Tutte le impostazioni nelle pagine delle opzioni di XAML Designer
 

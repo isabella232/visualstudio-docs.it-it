@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692547"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825887"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
   
 - Due <xref:System.Windows.Forms.Button> controlli.  
   
-    - Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.  
-  
-    - Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.  
+  - Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.  
+
+  - Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.  
   
 #### <a name="to-add-controls-to-the-form"></a>Per aggiungere controlli al form  
   
@@ -169,10 +169,10 @@ ADO.NET fornisce semplici metodi per lavorare con dati XML. In questa procedura 
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**ScrollBars**|**Verticale**|  
-    |`Button1`|**Name**|`ReadXmlButton`|  
-    ||**per**|`Read XML`|  
-    |`Button2`|**Name**|`ShowSchemaButton`|  
-    ||**per**|`Show Schema`|  
+    |`Button1`|**Nome**|`ReadXmlButton`|  
+    ||**Text**|`Read XML`|  
+    |`Button2`|**Nome**|`ShowSchemaButton`|  
+    ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Creare il set di dati thatreceives i dati XML  
  In questo passaggio si crea un nuovo set di dati denominato `authors`. Per altre informazioni sui set di dati, vedere [strumenti di set di dati in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  

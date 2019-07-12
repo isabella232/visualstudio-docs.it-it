@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441001"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823712"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammi livello: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,14 +96,14 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
 ## <a name="EditArchitecture"></a> Modificare livelli e dipendenze per visualizzare la progettazione desiderata  
  Per descrivere le modifiche da apportare al sistema o all'architettura desiderata, eseguire i passaggi seguenti per modificare il diagramma livello. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Visualizzare [miglioramento della struttura del codice](#Improving).  
   
-|**Per**|**Eseguire questi passaggi**|  
+|**To**|**Eseguire questi passaggi**|  
 |------------|-----------------------------|  
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza e quindi premere **Elimina**.|  
 |Modificare o limitare la direzione di una dipendenza|Impostare relativi **direzione** proprietà.|  
 |Creare nuove dipendenze|Usare la **Dependency** e **dipendenza bidirezionale** strumenti.<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, fare clic sui **puntatore** degli strumenti oppure premere la **ESC** chiave.|  
-|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
-|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|  
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|  
+|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|  
   
 ### <a name="Improving"></a> Miglioramento della struttura del codice  
  Le modifiche relative al refactoring sono miglioramenti che non influiscono sul comportamento dell'applicazione, ma contribuiscono a rendere il codice più semplice da modificare ed estendere nel futuro. Il codice ben strutturato è progettato in modo da facilitarne l'astrazione in un diagramma livello.  
@@ -134,7 +134,7 @@ Descrivere l'architettura dell'app ad alto livello creando *diagrammi livello* i
   
 - Cambiare i colori dei livelli e le dipendenze.  
   
-    - Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.  
+  - Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.  
   
 ## <a name="Validate"></a> Convalidare il codice rispetto al diagramma  
  Dopo avere modificato il diagramma, sarà possibile convalidarlo manualmente rispetto al codice in qualsiasi momento oppure automaticamente ogni volta che si esegue una compilazione locale o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

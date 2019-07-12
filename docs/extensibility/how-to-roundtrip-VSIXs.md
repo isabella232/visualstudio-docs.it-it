@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324891"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826039"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedura: Rendere compatibili con Visual Studio 2017 e Visual Studio 2015 le estensioni
 
@@ -57,8 +57,8 @@ Se il progetto contiene un *Project. JSON* file:
 * Prendere nota dei riferimenti nel *Project. JSON*.
 * Dal **Esplora soluzioni**, eliminare il *Project. JSON* file dal progetto. Questa procedura elimina le *Project. JSON* file e lo rimuove dal progetto.
 * Aggiungere che i riferimenti NuGet nuovamente al progetto:
-    * Fare clic sui **soluzione** e scegliere **Gestisci pacchetti NuGet per la soluzione**.
-    * Visual Studio crea automaticamente il *Packages. config* file automaticamente.
+  * Fare clic sui **soluzione** e scegliere **Gestisci pacchetti NuGet per la soluzione**.
+  * Visual Studio crea automaticamente il *Packages. config* file automaticamente.
 
 > [!NOTE]
 > Se il progetto contiene i pacchetti di EnvDTE, devono essere aggiunti con il pulsante destro facendo clic su **riferimenti** selezionando **aggiungere riferimento** e l'aggiunta del riferimento appropriato. Uso di pacchetti NuGet può creare errori durante il tentativo di compilare il progetto.
@@ -69,7 +69,7 @@ Se il progetto contiene un *Project. JSON* file:
 
 Per compilare e distribuire un VSIXv3 in Visual Studio 2015 e 2017, sono necessari i pacchetti NuGet seguenti:
 
-Versione | Strumenti predefiniti
+Version | Strumenti predefiniti
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool

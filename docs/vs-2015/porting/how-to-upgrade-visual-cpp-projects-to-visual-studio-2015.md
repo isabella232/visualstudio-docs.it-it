@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696422"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823285"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedura: Aggiornare i progetti Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Quando si apre per la prima volta un progetto Visual C++ creato in una versione 
 
 - Se il progetto (con estensione VCXPROJ) è stato creato in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)],  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] , sono disponibili due opzioni:
 
-    - È possibile ignorare l'aggiornamento. In [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] verrà caricato il progetto senza apportare alcuna modifica se è disponibile l'accesso agli strumenti di Visual C++ in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. È possibile fornire questo accesso installando la versione di Visual Studio con cui il progetto è stato creato nello stesso computer in cui è presente [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Per altre informazioni, vedere [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
+  - È possibile ignorare l'aggiornamento. In [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] verrà caricato il progetto senza apportare alcuna modifica se è disponibile l'accesso agli strumenti di Visual C++ in [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] con SP1, [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. È possibile fornire questo accesso installando la versione di Visual Studio con cui il progetto è stato creato nello stesso computer in cui è presente [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Per altre informazioni, vedere [Installing Visual Studio Versions Side-by-Side](../install/install-visual-studio-versions-side-by-side.md).
 
-    - È possibile aggiornare il progetto consentendo a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di apportare le modifiche descritte più avanti in questo argomento. Se si dispone di più di un progetto Visual C++ nella soluzione, è necessario aggiornali tutti.
+  - È possibile aggiornare il progetto consentendo a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] di apportare le modifiche descritte più avanti in questo argomento. Se si dispone di più di un progetto Visual C++ nella soluzione, è necessario aggiornali tutti.
 
-        > [!NOTE]
-        > Se si rifiuta l'aggiornamento alla prima richiesta, è possibile aggiornare il progetto in un secondo momento scegliendo **Aggiorna progetto VC++** dal menu **Progetto** . Se il comando non viene visualizzato, non è necessario alcun aggiornamento.
+    > [!NOTE]
+    > Se si rifiuta l'aggiornamento alla prima richiesta, è possibile aggiornare il progetto in un secondo momento scegliendo **Aggiorna progetto VC++** dal menu **Progetto** . Se il comando non viene visualizzato, non è necessario alcun aggiornamento.
 
 ## <a name="upgrading-a-visual-c-project"></a>Aggiornamento di un progetto Visual C++
  Se si consente a [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] di aggiornare automaticamente il progetto, vengono apportate queste modifiche:

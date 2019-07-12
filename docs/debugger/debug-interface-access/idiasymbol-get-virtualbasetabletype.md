@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: edbd1d8ae66e58611ab538cf0bfe695cb22b3412
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400875"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64793022"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Recupera il tipo di puntatore una tabella di base virtuale.
@@ -49,7 +49,7 @@ HRESULT get_virtualBaseTableType(
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisito|DESCRIZIONE|
 |-----------------|-----------------|
 |Intestazione:|DIA2.h|
 |Version:|DIA SDK v8.0|

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697616"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824834"
 ---
 # <a name="html-ui-responsiveness"></a>Velocità di risposta dell'interfaccia utente HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Visualizzare l'ora di inizio, la durata e l'ora di fine approssimative di un evento in una sequenza temporale e nella visualizzazione griglia. Il grafico dei dettagli della cronologia può mostrare periodi che variano da 30 millisecondi a 30 secondi nella visualizzazione griglia, a seconda dello stato di zoom. Per i valori di durata:  
   
-    - I tempi inclusivi rappresentano la durata dell'evento inclusi gli elementi figlio dell'evento. Questo valore compare per primo nella visualizzazione griglia.  
-  
-    - I tempi esclusivi rappresentano la durata dell'evento esclusi gli elementi figlio dell'evento. Questo valore compare tra parentesi nella visualizzazione griglia.  
+  - I tempi inclusivi rappresentano la durata dell'evento inclusi gli elementi figlio dell'evento. Questo valore compare per primo nella visualizzazione griglia.  
+
+  - I tempi esclusivi rappresentano la durata dell'evento esclusi gli elementi figlio dell'evento. Questo valore compare tra parentesi nella visualizzazione griglia.  
   
 - Espandere un evento nella gerarchia per visualizzare gli elementi figlio dell'evento. Gli elementi figlio dell'evento sono altri eventi generati dall'evento padre. Ad esempio, un evento DOM può avere listener di eventi che appaiono come elementi figlio. Un listener di eventi può avere generato altri eventi, ad esempio un evento layout.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Visualizza i dettagli per ogni evento nel riquadro dei dettagli (riquadro di destra). Le proprietà variano in base al particolare evento, come illustrato negli esempi seguenti:  
   
-    - Per timer, listener di eventi (eventi DOM) e callback dei frame di animazione, la proprietà **Funzione di callback** fornisce un collegamento al percorso del codice sorgente insieme al nome del gestore dell'evento o della funzione di callback.  
-  
-    - Per i timer, i listener di eventi (eventi DOM), gli eventi di layout e i callback dei fotogrammi di animazione, un riepilogo con codifica colori dell'evento selezionato e tutti i relativi elementi figlio sono visibili nella sezione **Riepilogo tempo inclusivo** (anello con codifica colori). Ogni sezione dell'immagine contraddistinta dal colore rappresenta un tipo di evento. Le descrizioni comandi forniscono il nome del tipo di evento.  
-  
-    > [!TIP]
-    > Il grafico dei dettagli della sequenza temporale e **Riepilogo tempo inclusivo** possono aiutarti a identificare aree per l'ottimizzazione. Se una di queste visualizzazioni mostra numeri elevati di piccole attività, l'evento può essere un candidato per l'ottimizzazione. È ad esempio possibile che un'app aggiorni gli elementi DOM molto frequentemente, con conseguente aumento del numero di eventi di layout e di analisi HTML. Puoi ottimizzare le prestazioni suddividendo in batch il lavoro.  
-  
+  - Per timer, listener di eventi (eventi DOM) e callback dei frame di animazione, la proprietà **Funzione di callback** fornisce un collegamento al percorso del codice sorgente insieme al nome del gestore dell'evento o della funzione di callback.  
+
+  - Per i timer, i listener di eventi (eventi DOM), gli eventi di layout e i callback dei fotogrammi di animazione, un riepilogo con codifica colori dell'evento selezionato e tutti i relativi elementi figlio sono visibili nella sezione **Riepilogo tempo inclusivo** (anello con codifica colori). Ogni sezione dell'immagine contraddistinta dal colore rappresenta un tipo di evento. Le descrizioni comandi forniscono il nome del tipo di evento.  
+
+  > [!TIP]
+  > Il grafico dei dettagli della sequenza temporale e **Riepilogo tempo inclusivo** possono aiutarti a identificare aree per l'ottimizzazione. Se una di queste visualizzazioni mostra numeri elevati di piccole attività, l'evento può essere un candidato per l'ottimizzazione. È ad esempio possibile che un'app aggiorni gli elementi DOM molto frequentemente, con conseguente aumento del numero di eventi di layout e di analisi HTML. Puoi ottimizzare le prestazioni suddividendo in batch il lavoro.  
+
 ### <a name="FilterTimelineDetails"></a> Filtrare i dettagli cronologia  
  Puoi filtrare la visualizzazione nei dettagli cronologia in base a un evento particolare selezionando **Filtra per evento** dal menu di scelta rapida per un evento specifico. Quando scegli questa opzione, l'ambito della sequenza temporale e della visualizzazione viene definito sull'evento selezionato. La selezione nel grafico dell'utilizzo della CPU definisce l'ambito sull'evento specifico.  
   

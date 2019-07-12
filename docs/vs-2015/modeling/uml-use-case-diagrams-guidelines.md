@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493663"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823830"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagrammi caso di utilizzo UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
     - I casi di utilizzo rappresentano le attività che gli attori eseguono con l'aiuto del sistema.  
   
-    - Rinominarli usando titoli che gli attori stessi potrebbero comprendere. Non usare i titoli correlati al codice. Ad esempio: **Ordinare pasto, pagamento pasto, recapitare pasto**.  
+    - Rinominarli usando titoli che gli attori stessi potrebbero comprendere. Non usare i titoli correlati al codice. Ad esempio:  **Ordinare pasto, pagamento pasto, recapitare pasto**.  
   
     - Iniziare con le transazioni principali, ad esempio **Ordinazione pasto**, lasciando finché successive interazioni più piccole, ad esempio **voce di Menu selezionare**.  
   
@@ -115,13 +115,13 @@ In Visual Studio, è possibile creare un *diagramma caso di utilizzo* per riepil
   
 - Creare **attori** per rappresentare le classi di persone, organizzazioni, altri sistemi, software o dispositivi che interagiscono con il sistema o sottosistema.  
   
-    - Per informazioni su come creare attori e altri elementi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Per ogni set distinto di obiettivi, identificare gli attori in base al tipo o al ruolo, anche se le persone fisiche o le entità potrebbero essere le stesse. Ad esempio, Ristorante e Cliente sono attori separati, anche se un dipendente del ristorante potrebbe talvolta essere un cliente.  
+  - Per informazioni su come creare attori e altri elementi, vedere [modelli e diagrammi UML modifica](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Per ogni set distinto di obiettivi, identificare gli attori in base al tipo o al ruolo, anche se le persone fisiche o le entità potrebbero essere le stesse. Ad esempio, Ristorante e Cliente sono attori separati, anche se un dipendente del ristorante potrebbe talvolta essere un cliente.  
   
 - Creare **casi d'uso** per ognuno degli obiettivi che ogni attore cerca di raggiungere con il sistema.  
   
-    - Denominare e descrivere i casi di utilizzo con parole che l'attore è in grado di comprendere, anziché termini di implementazione.  
+  - Denominare e descrivere i casi di utilizzo con parole che l'attore è in grado di comprendere, anziché termini di implementazione.  
   
 - Usare **associazioni** per collegare gli attori ai casi d'uso.  
   
