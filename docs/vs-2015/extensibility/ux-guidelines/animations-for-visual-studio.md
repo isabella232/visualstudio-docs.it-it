@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077251"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825362"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077251"
 
 - **Velocità e tempi sono importanti** per garantire che le transizioni sono naturale e veloce:
 
-    - Completare le transizioni animate entro mezzo secondo (500 millisecondi).
+  - Completare le transizioni animate entro mezzo secondo (500 millisecondi).
 
-    - Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente.
+  - Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente.
 
-    - Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.
+  - Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.
 
-    - Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.
+  - Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.
 
 - **Usare l'interpolazione lineare graduale** da uno stato a altro, fornendo un senso di movimento tranquilla e naturale
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077251"
 
 - **Quando viene visualizzato lo stato di avanzamento o lo stato** tramite animazione:
 
-    - Arrestare che mostra lo spostamento di stato di avanzamento durante il processo sottostante non viene raggiunto.
+  - Arrestare che mostra lo spostamento di stato di avanzamento durante il processo sottostante non viene raggiunto.
 
-    - Distinguere i processi indeterminati da determinato per processi.
+  - Distinguere i processi indeterminati da determinato per processi.
 
-    - Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.
+  - Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.
 
-    - Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo
+  - Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo
 
 #### <a name="do-not"></a>Non:
 
@@ -93,7 +93,7 @@ ms.locfileid: "60077251"
 
  La categoria Visualize include gli aspetti dei dati, relazioni, stato, struttura, sequenza e ora.
 
-##### <a name="data"></a>Dati
+##### <a name="data"></a>Data
  Vengono illustrate informazioni sulla variabile e complesse:
 
 - Spostarsi all'interno di visualizzazioni di informazioni, ad esempio grafici e diagrammi
@@ -126,9 +126,9 @@ ms.locfileid: "60077251"
 
 - Selezione e lo stato attivo utente
 
-- Stato
+- Avanzamento
 
-- Errori
+- Errors
 
 ##### <a name="structure"></a>Struttura
 
@@ -138,13 +138,13 @@ ms.locfileid: "60077251"
 
 - Ridurre e ingrandire, o espandere e comprimere
 
-##### <a name="sequence"></a>Sequence
+##### <a name="sequence"></a>Sequenza
 
 - Sequenza di presentazione
 
 - Capovolgimento tramite le immagini
 
-##### <a name="time"></a>Ora
+##### <a name="time"></a>Time
 
 - Mostra modifiche nel tempo, intervallo di tempo e screencast
 
@@ -326,7 +326,7 @@ ms.locfileid: "60077251"
 
 - Alla fine X e Y posizione: Interfaccia utente specifico
 
-- Tracciato di movimento: nessuno
+- Tracciato di movimento: Nessuna
 
 - Durata: versione autonoma di 200 millisecondi, quando usato come parte di una sequenza di animazione di combinazione di 100 millisecondi
 

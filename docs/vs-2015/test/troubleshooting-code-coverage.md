@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705898"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825882"
 ---
 # <a name="troubleshooting-code-coverage"></a>Risoluzione dei problemi di code coverage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Analisi  
  Verificare la finestra di output. Nell'elenco a discesa **Mostra output di** scegliere **Test**. Verificare se sono presenti avvisi o errori registrati.  
   
- Descrizione  
+ Spiegazione  
  L'analisi del code coverage viene effettuata mentre i test sono in esecuzione. Include solo gli assembly caricati in memoria quando i test vengono eseguiti. Se nessun test viene eseguito allora il code coverage non ha nulla da riportare.  
   
  Risoluzione  
@@ -53,7 +53,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Analisi  
  Aprire la cartella di destinazione della compilazione (in genere bin\debug) e verificare che per ogni assembly esista un file con estensione pdb nella stessa directory del file con estensione dll o exe.  
   
- Descrizione  
+ Spiegazione  
  Il motore di code coverage richiede che ogni assembly abbia un proprio file con estensione pdb associato accessibile durante l'esecuzione del test. Se non esiste alcun file con estensione pdb per un particolare assembly, tale assembly non verrà analizzato.  
   
  Il file con estensione pdb deve essere generato dalla stessa compilazione dei file con estensione dll o exe.  
@@ -67,7 +67,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Analisi  
  Determinare se il binario è stato sottoposto a qualche forma di ottimizzazione avanzata, come l'ottimizzazione PGO, o è stato instrumentato da uno strumento di profilatura come vsinstr.exe o vsperfmon.exe.  
   
- Descrizione  
+ Spiegazione  
  Se l'assembly è già stato instrumentato o ottimizzato da un altro strumento di profilatura, l'assembly viene omesso dall'analisi di code coverage.  
   
  L'analisi di code coverage non può essere eseguita su tali assembly.  
@@ -79,7 +79,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Analisi  
  Verificare che vengano eseguiti alcuni test sul codice gestito o C++.  
   
- Descrizione  
+ Spiegazione  
  L'analisi di code coverage in Visual Studio è disponibile solo nel codice gestito e nativo (C++). Se si utilizzano strumenti di terze parti, il codice può essere eseguito parzialmente o totalmente su una piattaforma diversa.  
   
  Risoluzione  
@@ -89,7 +89,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  Analisi  
  Verificare che l'assembly non venga caricato dalla cache delle immagini native.  
   
- Descrizione  
+ Spiegazione  
  Per motivi di prestazioni, gli assembly di immagini native non vengono analizzate. Per altre informazioni, vedere [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Risoluzione  
@@ -101,7 +101,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
   
  Di conseguenza, nessun code coverage verrà eseguito. La finestra di code coverage non viene visualizzata alla fine dell'esecuzione del test oppure vengono visualizzati risultati obsoleti.  
   
- Descrizione  
+ Spiegazione  
  È possibile eseguire gli unit test con un file personalizzato con estensione runsettings per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).  
   
  Risoluzione  
@@ -113,17 +113,17 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
   
 - **Errore di espressione regolare**  
   
-     Ogni stringa del file è un'espressione regolare. Rivederle singolarmente per individuare gli errori, in particolare cercare:  
-  
-    - Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`  
-  
-    - L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`  
+  Ogni stringa del file è un'espressione regolare. Rivederle singolarmente per individuare gli errori, in particolare cercare:  
+
+  - Parentesi non corrispondenti (...) o parentesi non precedute da un carattere di escape \\(...\\). Se si desidera trovare la corrispondenza con una parentesi nella stringa di ricerca, è necessario utilizzare caratteri di escape. Ad esempio, per trovare la corrispondenza con una funzione, usare `.*MyFunction\(double\)`  
+
+  - L'asterisco o il segno più all'inizio di un'espressione. Per cercare una stringa di caratteri, utilizzare un punto seguito da un asterisco: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>File personalizzato con estensione runsettings con esclusioni non corrette  
  Analisi  
  Se si utilizza un file personalizzato con estensione runsettings, assicurarsi di sia incluso nell'assembly.  
   
- Descrizione  
+ Spiegazione  
  È possibile eseguire gli unit test con un file personalizzato con estensione runsettings per configurare le opzioni di code coverage. Le opzioni consentono di includere o escludere i file. Per altre informazioni, vedere [Personalizzazione dell'analisi code coverage](../test/customizing-code-coverage-analysis.md).  
   
  Risoluzione  
@@ -143,7 +143,7 @@ Lo strumento di analisi della copertura del codice in Visual Studio raccoglie da
  In genere, questo si applica agli assembly caricati in modo statico.  
   
  Risoluzione  
- Nessuno.  
+ No.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Uso di code coverage per determinare la quantità di codice testato](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

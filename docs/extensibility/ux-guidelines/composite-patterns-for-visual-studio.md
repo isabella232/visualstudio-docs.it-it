@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335398"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824597"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 Pattern compositi combinano gli elementi di interazione e progettazione di configurazioni distinte. Alcuni dei modelli compositi più importanti in Visual Studio per quanto riguarda la coerenza includono:
@@ -226,7 +226,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 - **Sempre** tenta di creare un indicatore che riepiloga le informazioni che vengono resi disponibili. Si consiglia di fornire un conteggio del numero di elementi di dati disponibili (ad esempio, "3 riferimenti" anziché semplicemente "Riferimenti") o pensare a un altro modo per riepilogare i dati.
 
-    - In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
+  - In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
 
 - **Mai** aggiungere ulteriori indicatori rispetto a un utente può richiedere ragionevolmente per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono loro ambiente se richiedono overflow e altri controlli di gestione per spostarle nella visualizzazione.
 
@@ -235,11 +235,11 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 - **Sempre** richiedono all'utente di eseguire alcuni movimenti esplicito per aprire il contenuto aggiuntivo. I movimenti open comuni includono:
 
-    - **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
+  - **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
 
-    - **Comando esplicita:** presenter inline
+  - **Comando esplicita:** presenter inline
 
-    - **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
+  - **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
 
 - **Sempre** ignorare il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.
 

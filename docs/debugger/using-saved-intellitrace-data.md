@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746145"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825608"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando i dati di IntelliTrace salvati (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 
 - Se il file .iTrace viene associato a un elemento di lavoro Team Foundation Server, seguire questi passaggi nell'elemento di lavoro:
 
-    - In **Tutti i collegamenti**individuare il file .iTrace. Aprirlo.
+  - In **Tutti i collegamenti**individuare il file .iTrace. Aprirlo.
 
-         \- oppure -
+    \- oppure -
 
-    - In **Passaggi ripetizione bug**scegliere il collegamento **IntelliTrace** .
+  - In **Passaggi ripetizione bug**scegliere il collegamento **IntelliTrace** .
 
 > [!TIP]
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.
@@ -222,7 +222,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|
 |----------------|-------------------|
 |**ID**|Numero ID del thread|
-|**Name**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|
+|**Nome**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|
 |**Ora di inizio**|Ora di creazione del thread|
 |**Ora di fine**|Ora di completamento del thread|
 

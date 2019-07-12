@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566215"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821920"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leggere dati XML in un set di dati
 
@@ -119,9 +119,9 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
 
 - Due <xref:System.Windows.Forms.Button> controlli.
 
-    - Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.
+  - Un unico pulsante legge il file XML in set di dati e li visualizza nel <xref:System.Windows.Forms.DataGridView> controllo.
 
-    - Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.
+  - Un secondo pulsante consente di estrarre lo schema del set di dati e tramite un <xref:System.IO.StringWriter> li visualizza nel <xref:System.Windows.Forms.TextBox> controllo.
 
 ### <a name="to-add-controls-to-the-form"></a>Per aggiungere controlli al form
 
@@ -141,10 +141,10 @@ L'interfaccia utente per questa applicazione è costituita dagli elementi seguen
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Verticale**|
-    |`Button1`|**Name**|`ReadXmlButton`|
-    ||**per**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
-    ||**per**|`Show Schema`|
+    |`Button1`|**Nome**|`ReadXmlButton`|
+    ||**Text**|`Read XML`|
+    |`Button2`|**Nome**|`ShowSchemaButton`|
+    ||**Text**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Creare il set di dati che riceve i dati XML
 

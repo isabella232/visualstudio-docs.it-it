@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701190"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826185"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Creazione di applicazioni in lingue bidirezionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "65701190"
   
 - **Ordine di lettura da destra a sinistra** Per impostazione predefinita i controlli per l'immissione di testo usati in Visual Studio adottano l'ordine di lettura da sinistra a destra. Nella maggior parte dei casi è possibile cambiare l'ordine di lettura con operazioni standard di Windows. Ad esempio è possibile premere Ctrl+MAIUSC destro per impostare il supporto dell'ordine di lettura da destra a sinistra per i valori delle proprietà nella finestra Proprietà.  
   
-     Tuttavia, l'ordine di lettura da destra a sinistra non è supportato ovunque in Visual Studio. Le eccezioni sono le seguenti:  
-  
-    - Le caselle di controllo, gli elenchi a discesa e gli altri controlli delle finestre di dialogo di Visual Studio usano sempre l'ordine di lettura da sinistra a destra.  
-  
-    - L'editor di codice (e l'editor di testo) non supportano l'ordine di lettura da destra a sinistra. È possibile immettere il testo in una lingua bidirezionale, ma l'ordine di lettura è sempre da sinistra a destra.  
+  Tuttavia, l'ordine di lettura da destra a sinistra non è supportato ovunque in Visual Studio. Le eccezioni sono le seguenti:  
+
+  - Le caselle di controllo, gli elenchi a discesa e gli altri controlli delle finestre di dialogo di Visual Studio usano sempre l'ordine di lettura da sinistra a destra.  
+
+  - L'editor di codice (e l'editor di testo) non supportano l'ordine di lettura da destra a sinistra. È possibile immettere il testo in una lingua bidirezionale, ma l'ordine di lettura è sempre da sinistra a destra.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Denominazione di elementi con testo in arabo o ebraico  
  È possibile usare testo in arabo o ebraico per assegnare nomi a cartelle, variabili o altri oggetti. Quando si usa l'arabo è possibile usare qualsiasi carattere incluse le linee kashida e i segni diacritici.  

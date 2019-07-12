@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430330"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821996"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procedura dettagliata: Estendere Esplora Server per visualizzare le web part
   In Visual Studio, è possibile usare la **connessioni di SharePoint** nodo **Esplora Server** per visualizzare i componenti nei siti di SharePoint. Tuttavia **Esplora Server** non visualizza alcuni componenti per impostazione predefinita. In questa procedura dettagliata verrà illustrato come estendere **Esplora Server** in modo che venga visualizzato della raccolta Web Part in ciascuna connessa sito di SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430330"
 
 - Creazione di un'estensione di Visual Studio che estende **Esplora Server** nei modi seguenti:
 
-    - L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
+  - L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
 
-    - L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part da essa rappresentato. Il tipo di nodo include anche una voce di menu di scelta rapida personalizzati che è possibile usare come punto di partenza per l'esecuzione di altre attività correlate alla Web Part.
+  - L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part da essa rappresentato. Il tipo di nodo include anche una voce di menu di scelta rapida personalizzati che è possibile usare come punto di partenza per l'esecuzione di altre attività correlate alla Web Part.
 
 - Creare due comandi di SharePoint personalizzati che chiama l'assembly dell'estensione. I comandi di SharePoint sono metodi che possono essere chiamati dagli assembly di estensione per usare le API nel modello a oggetti server per SharePoint. In questa procedura dettagliata, è creare i comandi che recuperano informazioni di Web Part dal sito di SharePoint locale nel computer di sviluppo. Per altre informazioni, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430330"
 
     2. Nel **Aggiungi connessione SharePoint** finestra di dialogo immettere l'URL per il sito di SharePoint a cui si desidera connettersi, quindi scegliere il **OK** pulsante.
 
-         Per specificare il sito di SharePoint nel computer di sviluppo, immettere **http://localhost**.
+         Per specificare il sito di SharePoint nel computer di sviluppo, immettere **http://localhost** .
 
 3. Espandere il nodo di connessione del sito, che visualizza l'URL del sito, e quindi espandere un nodo del sito figlio (ad esempio, **sito del Team**).
 

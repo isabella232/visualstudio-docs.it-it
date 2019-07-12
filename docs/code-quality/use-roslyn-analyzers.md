@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676709"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821522"
 ---
 # <a name="use-roslyn-analyzers"></a>Usare gli analizzatori di Roslyn
 
@@ -110,40 +110,40 @@ Esistono diversi modi per eliminare le violazioni delle regole:
 
 - Dal **Analyze** menu
 
-   Selezionare **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi** nella barra dei menu per eliminare tutte le violazioni correnti. Ciò è talvolta detta "base".
+  Selezionare **Analyze** > **Esegui analisi del codice ed Elimina problemi attivi** nella barra dei menu per eliminare tutte le violazioni correnti. Ciò è talvolta detta "base".
 
 - Da **Esplora soluzioni**
 
-   Per eliminare una violazione **Esplora soluzioni**, impostare la gravità della regola **None**.
+  Per eliminare una violazione **Esplora soluzioni**, impostare la gravità della regola **None**.
 
 - Dal **editor set di regole**
 
-   Per eliminare una violazione da editor set di regole, deselezionare la casella accanto al relativo nome o impostare **azione** al **None**.
+  Per eliminare una violazione da editor set di regole, deselezionare la casella accanto al relativo nome o impostare **azione** al **None**.
 
 - Dal **editor di codice**
 
-   Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+ **.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
+  Per eliminare una violazione dall'editor di codice, posizionare il cursore nella riga di codice con la violazione e premere **Ctrl**+ **.** Per aprire la **azioni rapide** menu. Selezionare **sopprimere CAXXXX** > **nell'origine/nel File di eliminazione**.
 
-   ![Non visualizzare diagnostica dal menu Azioni rapide](media/suppress-diagnostic-from-editor.png)
+  ![Non visualizzare diagnostica dal menu Azioni rapide](media/suppress-diagnostic-from-editor.png)
 
 - Dal **elenco errori**
 
-   È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **Source/In In File di eliminazione**.
+  È possibile eliminare uno o molti dati diagnostici dalle **elenco errori** quelle che si desidera eliminare, selezionando e facendo clic e **Suppress** > **Source/In In File di eliminazione**.
 
-   - Se si eliminano **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
+  - Se si eliminano **nell'origine**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del C# [#pragma avviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable avviso](/dotnet/visual-basic/language-reference/directives/directives) direttiva che viene aggiunto al codice sorgente.
 
-      ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
+    ![Anteprima di aggiunta avviso #pragma nel file di codice](media/pragma-warning-preview.png)
 
-   - Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
+  - Se si seleziona **File di eliminazione**, il **Anteprima modifiche** della finestra si apre e Mostra un'anteprima del <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attributo che viene aggiunto al file le ulteriori eliminazioni globali.
 
-      ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
+    ![Anteprima di aggiunta attributo SuppressMessage per file di eliminazione](media/preview-changes-in-suppression-file.png)
 
-   Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
+  Nel **Anteprima modifiche** finestra di dialogo, seleziona **applica**.
 
-   > [!NOTE]
-   > Se non viene visualizzato il **Suppress** opzione di menu nel **Esplora soluzioni**, la violazione probabilmente proviene dalla compilazione e l'analisi non in tempo reale. Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornata con le origini corrente che possono essere eliminata dal **elenco errori**. Per escludere *compilare* diagnostica dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** a **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
-   >
-   > ![Filtro origine dell'elenco errori in Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Se non viene visualizzato il **Suppress** opzione di menu nel **Esplora soluzioni**, la violazione probabilmente proviene dalla compilazione e l'analisi non in tempo reale. Il **elenco errori** Visualizza diagnostica o regola violazioni, sia da analisi di codice in tempo reale e di compilazione. Poiché i dati di diagnostica di compilazione può essere non aggiornato, ad esempio, se è stato modificato il codice per correggere la violazione ma non sono state ricreate, Impossibile eliminare questi dati diagnostici dal **elenco errori**. Diagnostica di analisi in tempo reale o IntelliSense, sono sempre aggiornata con le origini corrente che possono essere eliminata dal **elenco errori**. Per escludere *compilare* diagnostica dalla selezione, passare il **elenco errori** filtro di origine dal **compilazione + IntelliSense** a **solo Intellisense**. Selezionare quindi i dati di diagnostica che si desidera eliminare e procedere come descritto in precedenza.
+  >
+  > ![Filtro origine dell'elenco errori in Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Utilizzo della riga di comando
 

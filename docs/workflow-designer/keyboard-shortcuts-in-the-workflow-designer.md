@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431893"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825516"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Tasti di scelta rapida di Progettazione flussi di lavoro
 
@@ -79,11 +79,11 @@ Per impostazione predefinita, i tasti predefinite per la modifica del testo di V
 
 - La modifica del mapping dei tasti di scelta rapida per i comandi seguenti non ha effetto. In caso di modifica di un'espressione, è possibile accedere a questi comandi solo mediante i tasti di scelta rapida predefiniti.
 
-   - Taglia
-   - Copia
-   - Incolla
-   - Seleziona tutto
-   - Annulla
-   - Ripristina
+  - Taglia
+  - Copia
+  - Incolla
+  - Seleziona tutto
+  - Annulla
+  - Ripristina
 
 - Per rimappare i tasti di scelta rapida per i comandi di modifica espressione all'interno di progettazione del flusso di lavoro in Visual Studio, modificare i collegamenti nell'ambito di progettazione del flusso di lavoro. Le modifiche apportate nell'Editor di testo ambito non si applicano automaticamente alla finestra di progettazione del flusso di lavoro. Se si desidera modificare il mapping dei collegamenti in entrambi gli ambiti, è necessario applicare le modifiche due volte, una volta per ogni ambito.

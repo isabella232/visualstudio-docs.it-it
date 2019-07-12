@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430172"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825619"
 ---
 # <a name="web-project-essentials"></a>Nozioni fondamentali sui progetti Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ I progetti Web creare applicazioni Web. È possibile usare un progetto Web per c
   
 - File di codice di origine aggiuntivi, ad esempio classi helper che non sono associati a una pagina Web specifica, si trovano nella cartella /App_Code sito Web.  
   
-    - Un progetto di sito Web (WSP) genera un file eseguibile per ogni pagina Web intelligente. File eseguibile aggiuntivi vengono generati da qualsiasi file di codice sorgente nella cartella /App_Code.  
+  - Un progetto di sito Web (WSP) genera un file eseguibile per ogni pagina Web intelligente. File eseguibile aggiuntivi vengono generati da qualsiasi file di codice sorgente nella cartella /App_Code.  
+
+  - Un progetto di applicazione Web (WAP) produce un unico file eseguibile che combina il codice per tutte le pagine Web intelligente, nonché tutti i file di origine nella cartella /App_Code.  
   
-    - Un progetto di applicazione Web (WAP) produce un unico file eseguibile che combina il codice per tutte le pagine Web intelligente, nonché tutti i file di origine nella cartella /App_Code.  
-  
-- Trova il file di soluzione per un progetto Web separatamente dal sito Web stesso. Per impostazione predefinita, i file della soluzione si trovano in \Documents and Settings\\*AccountUtente*documenti \My\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.  
+- Trova il file di soluzione per un progetto Web separatamente dal sito Web stesso. Per impostazione predefinita, i file della soluzione si trovano in \Documents and Settings\\*AccountUtente*documenti \My\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     > Se si desidera mantenere il file di soluzione con il sito Web, semplicemente spostarla in tale e riaprirlo.  
@@ -55,9 +55,9 @@ I progetti Web creare applicazioni Web. È possibile usare un progetto Web per c
   
 - Una pagina Web smart combina HTML con un linguaggio di programmazione lato server. Il server-side delle lingue viene chiamato linguaggio contenuto. Per supportare una lingua indipendente, è necessario implementare il sistema del progetto Web il <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> della famiglia di interfacce.  
   
-    - Per supportare il linguaggio contenuto in un editor, il servizio di linguaggio HTML necessario posticipare la visualizzazione di codice di linguaggio contenuto per un servizio di linguaggio contenuto.  
-  
-    - Gli indicatori di errore (smettono) è necessario creare sempre nel buffer primario dell'editor di codice.  
+  - Per supportare il linguaggio contenuto in un editor, il servizio di linguaggio HTML necessario posticipare la visualizzazione di codice di linguaggio contenuto per un servizio di linguaggio contenuto.  
+
+  - Gli indicatori di errore (smettono) è necessario creare sempre nel buffer primario dell'editor di codice.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Progetti Web](../../extensibility/internals/web-projects.md)

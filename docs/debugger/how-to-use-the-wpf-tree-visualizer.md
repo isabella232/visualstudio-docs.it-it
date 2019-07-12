@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906109"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821384"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedura: Usare il visualizzatore dell'albero di WPF
 È possibile utilizzare il visualizzatore dell'albero di WPF per esplorare la struttura ad albero visuale di un oggetto WPF e visualizzare le proprietà di dipendenza WPF per gli oggetti contenuti in tale albero. Per altre informazioni sulle strutture ad albero visuali, vedere [strutture ad albero in WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Per altre informazioni sulle proprietà di dipendenza, vedere [Cenni preliminari sulle proprietà di dipendenza](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà della** _nome_**:**  _Tipo_ riquadro a destra. Selezionare un oggetto qualsiasi nel **struttura ad albero visuale** riquadro e il **delle proprietà di** _nome_**:**_tipo_ riquadro è aggiornati automaticamente per mostrare le proprietà di quell'oggetto.
+ Quando si apre il Visualizzatore dell'albero di WPF, si vedranno due riquadri: il **struttura ad albero visuale** a sinistra e il **delle proprietà della** _nome_ **:**  _Tipo_ riquadro a destra. Selezionare un oggetto qualsiasi nel **struttura ad albero visuale** riquadro e il **delle proprietà di** _nome_ **:** _tipo_ riquadro è aggiornati automaticamente per mostrare le proprietà di quell'oggetto.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Per aprire il visualizzatore della struttura ad albero di WPF
 
@@ -40,21 +40,21 @@ ms.locfileid: "62906109"
 
 - Nel riquadro **Struttura ad albero visuale**, digitare la stringa da cercare nella casella **Cerca**.
 
-     Il visualizzatore della struttura ad albero di WPF troverà immediatamente il primo oggetto nella struttura ad albero visuale che corrisponde alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.
+  Il visualizzatore della struttura ad albero di WPF troverà immediatamente il primo oggetto nella struttura ad albero visuale che corrisponde alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.
 
-    - Per passare alla corrispondenza successiva all'interno della struttura ad albero visuale, fare clic su **Successiva**.
+  - Per passare alla corrispondenza successiva all'interno della struttura ad albero visuale, fare clic su **Successiva**.
 
-    - Per ritornare alla corrispondenza precedente, fare clic su **Prec**.
+  - Per ritornare alla corrispondenza precedente, fare clic su **Prec**.
 
-    - Per cancellare i criteri di ricerca, fare clic su **Cancella**.
+  - Per cancellare i criteri di ricerca, fare clic su **Cancella**.
 
 ### <a name="to-search-the-properties-list"></a>Per eseguire ricerche nell'elenco di proprietà
 
-- Nel **delle proprietà di** _nome_**:**_tipo_ riquadro, digitare la stringa da cercare nel **filtrare**finestra.
+- Nel **delle proprietà di** _nome_ **:** _tipo_ riquadro, digitare la stringa da cercare nel **filtrare**finestra.
 
-     Il visualizzatore della struttura ad albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.
+  Il visualizzatore della struttura ad albero di WPF troverà immediatamente le proprietà che corrispondono alla stringa digitata; nell'elenco sono visualizzate soltanto le proprietà corrispondenti alla stringa digitata. Digitare più caratteri per trovare una corrispondenza più accurata.
 
-    - Per cancellare i criteri di ricerca, fare clic su **Cancella**.
+  - Per cancellare i criteri di ricerca, fare clic su **Cancella**.
 
 ### <a name="to-close-the-visualizer"></a>Per chiudere il visualizzatore
 

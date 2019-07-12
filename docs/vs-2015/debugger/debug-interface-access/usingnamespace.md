@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: a8213aeba3d9b1b0577e7639725642d574189b1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434133"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64822419"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Alcuni simboli potrebbe essere definite dallo spazio dei nomi e successivamente 
 > [!NOTE]
 > Il tag del simbolo UsingNamespace viene visualizzato solo nel codice gestito.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
 |Proprietà|Tipo di dati|Descrizione|  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693540"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824553"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procedura dettagliata: Creare un'applicazione desktop WPF connessa a un servizio mobile di Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65693540"
   
 - Un account Microsoft Azure attivo.  
   
-    - È possibile iscriversi per un account di prova gratuito [qui](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - È possibile attivare i [benefici per sottoscrittori MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). La sottoscrizione MSDN offre ogni mese dei crediti che è possibile usare per i servizi di Azure a pagamento.  
+  - È possibile iscriversi per un account di prova gratuito [qui](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - È possibile attivare i [benefici per sottoscrittori MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). La sottoscrizione MSDN offre ogni mese dei crediti che è possibile usare per i servizi di Azure a pagamento.  
   
 ## <a name="create-a-project-and-add-references"></a>Creare un progetto e aggiungere i riferimenti  
  Il primo passaggio consiste nel creare un progetto WPF e aggiungere un pacchetto NuGet che consente di connettersi ai servizi mobili di Azure.  
@@ -561,7 +561,7 @@ ms.locfileid: "65693540"
   
      In questo modo viene chiamato il metodo **UpdateCheckedTodoItem** e viene rimosso l'elemento sia dall'elenco che dal database.  
   
-## <a name="next-steps"></a>Passaggi successivi  
+## <a name="next-steps"></a>Fasi successive  
  È stato completato un esempio abbastanza generico di un'applicazione desktop WPF con un back-end di Azure. Naturalmente, è probabile che un'applicazione reale sia molto più complessa, ma si applicano gli stessi concetti di base. Vedere [WPF in .NET Framework](https://msdn.microsoft.com/library/ms754130\(v=vs.100\).aspx).  
   
  È possibile rendere più interessante l'interfaccia utente mediante l'aggiunta di colore, forme, elementi grafici e persino animazioni. Vedere [Progettazione di XAML in Visual Studio e Blend per Visual Studio](../designers/designing-xaml-in-visual-studio.md).  

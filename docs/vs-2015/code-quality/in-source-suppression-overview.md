@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426611"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825994"
 ---
 # <a name="in-source-suppression-overview"></a>Panoramica dell'eliminazione nell'origine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. Gli ambiti supportati includono quanto segue:  
   
-    - Modulo  
-  
-    - Spazio dei nomi  
-  
-    - Risorsa  
-  
-    - Tipo  
-  
-    - Member  
+  - Modulo  
+
+  - Spazio dei nomi  
+
+  - Risorsa  
+
+  - Type  
+
+  - Member  
   
 - **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.  
   

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476586"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824512"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenario: Modificare la progettazione mediante gli strumenti di visualizzazione e modellazione
 
@@ -81,9 +81,9 @@ La tabella seguente descrive i ruoli che questi strumenti possono svolgere in di
 
 ||**Modellazione dei requisiti utente**|**Modellazione dei processi aziendali**|**Architettura e progettazione di sistemi**|**Visualizzazione ed esplorazione del codice**|**Verifica**|
 |------|-|-|-|-|-|
-|Diagramma DSL (Domain-Specific Language)|Yes|Yes|Yes|||
-|Diagramma delle dipendenze, la convalida dei livelli|||Yes|Yes|Yes|
-|Mappa codice|||Yes|Yes|Yes|
+|Diagramma DSL (Domain-Specific Language)|Yes|Sì|Yes|||
+|Diagramma delle dipendenze, la convalida dei livelli|||Yes|Sì|Yes|
+|Mappa codice|||Yes|Sì|Yes|
 |Progettazione classi (basata su codice)||||Yes||
 
 Per disegnare i diagrammi delle dipendenze, è necessario creare un progetto di modellazione come parte di una soluzione esistente o nuovo. Questi diagrammi devono essere creati nel progetto di modellazione.
@@ -355,27 +355,27 @@ Le caratteristiche principali di un diagramma classi sono le seguenti:
 
 - Tipi quali classi, interfacce ed enumerazioni:
 
-    - *Classe* : la definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche.
+  -           *Classe* : la definizione di oggetti che condividono caratteristiche strutturali o comportamentali specifiche.
 
-    - *Interfaccia* : la definizione di una parte del comportamento esternamente visibile di un oggetto.
+  -           *Interfaccia* : la definizione di una parte del comportamento esternamente visibile di un oggetto.
 
-    - *Enumerazione* : un classificatore che contiene un elenco di valori letterali.
+  -           *Enumerazione* : un classificatore che contiene un elenco di valori letterali.
 
 - *Attributi* : valori di un determinato tipo che descrivono ogni istanza di un *classificatore*. Un classificatore è un nome generale per tipi, componenti, casi d'uso e persino attori.
 
 - *Operazioni* : metodi o funzioni che possono essere eseguite dalle istanze di un classificatore.
 
-- *Associazione* : indica un tipo di relazione tra due classificatori.
+-           *Associazione* : indica un tipo di relazione tra due classificatori.
 
-  - *Aggregazione* : un'associazione che indica una proprietà condivisa tra classificatori.
+  -           *Aggregazione* : un'associazione che indica una proprietà condivisa tra classificatori.
 
-  - *Composizione* : un'associazione che indica una relazione di una parte con il tutto tra classificatori.
+  -           *Composizione* : un'associazione che indica una relazione di una parte con il tutto tra classificatori.
 
     Per mostrare aggregazioni o composizioni, impostare la proprietà **Aggregazione** su un'associazione. **Condiviso** mostra le aggregazioni e **Composito** mostra le composizioni
 
-- *Dipendenza* : indica che la modifica della definizione di un classificatore potrebbe comportare la modifica della definizione di un altro classificatore.
+-           *Dipendenza* : indica che la modifica della definizione di un classificatore potrebbe comportare la modifica della definizione di un altro classificatore.
 
-- *Generalizzazione* : indica che uno specifico classificatore eredita parte della definizione da un classificatore generale. *Realizzazione* : indica che una classe implementa le operazioni e gli attributi offerti da un'interfaccia.
+-           *Generalizzazione* : indica che uno specifico classificatore eredita parte della definizione da un classificatore generale.           *Realizzazione* : indica che una classe implementa le operazioni e gli attributi offerti da un'interfaccia.
 
      Per creare le relazioni, usare lo strumento **Ereditarietà** . In alternativa, una realizzazione può essere rappresentata come *simbolo*.
 
@@ -432,7 +432,7 @@ Un diagramma di dipendenza sono le seguenti funzionalità principali:
 
 - *Livelli* : descrivono gruppi logici di elementi.
 
-- *Collegamento* : un'associazione tra un livello e un elemento.
+-           *Collegamento* : un'associazione tra un livello e un elemento.
 
      Per creare livelli dagli elementi, trascinare gli elementi da Esplora soluzioni, da mappe codice, da Visualizzazione classi o da Visualizzatore oggetti. Per disegnare nuovi livelli e collegarli agli elementi, usare la casella degli strumenti o fare clic con il pulsante destro del mouse sulla superficie del diagramma per creare i livelli, quindi trascinare gli elementi su tali livelli.
 
@@ -446,7 +446,7 @@ Un diagramma di dipendenza sono le seguenti funzionalità principali:
 
     Per visualizzare gli elementi collegati a un livello, fare doppio clic la dipendenza e quindi fare clic su **Visualizza collegamenti** per aprire **Esplora livello**.
 
-- *Dipendenza* : indica che un livello può usare le funzionalità di un altro livello, ma non viceversa. *Dipendenza bidirezionale* : indica che un livello può usare le funzionalità di un altro livello e viceversa.
+-           *Dipendenza* : indica che un livello può usare le funzionalità di un altro livello, ma non viceversa.           *Dipendenza bidirezionale* : indica che un livello può usare le funzionalità di un altro livello e viceversa.
 
      Per visualizzare le dipendenze esistenti nel diagramma delle dipendenze, pulsante destro del mouse sulla superficie del diagramma e quindi fare clic su **genera dipendenze**. Per descrivere le dipendenze previste, disegnarne altre.
 

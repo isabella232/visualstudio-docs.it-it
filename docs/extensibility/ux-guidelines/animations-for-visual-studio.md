@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825234"
 ---
 # <a name="animations-for-visual-studio"></a>Animazioni per Visual Studio
 ## <a name="animation-fundamentals"></a>Nozioni fondamentali di animazione
@@ -25,13 +25,13 @@ Seguire queste regole per garantire gli stili di animazione coerente e facile da
 
 - **Velocità e tempi sono importanti** per garantire che le transizioni sono naturale e veloce:
 
-    - Completare le transizioni animate entro mezzo secondo (500 millisecondi).
+  - Completare le transizioni animate entro mezzo secondo (500 millisecondi).
 
-    - Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente. Guardare l'animazione in un ciclo e regolare l'intervallo di tempo fino a quando non mi sembra corretta.
+  - Le animazioni che si verificano spesso devono essere sufficientemente rapido che non interrompono del flusso di lavoro dell'utente. Guardare l'animazione in un ciclo e regolare l'intervallo di tempo fino a quando non mi sembra corretta.
 
-    - Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.
+  - Le animazioni non devono essere così rapida o jarring che è difficile da comprendere, ma non tanto lenta che rende uno impazienti per la transizione alla fine.
 
-    - Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.
+  - Usare la variabile temporizzazione per enfatizzare l'importanza. Ad esempio, quando si passa attraverso una sequenza di elementi in un diagramma classi, più veloci tramite le transizioni tra gli elementi quindi rallentare per concentrarsi sugli elementi importanti.
 
 - **Usare l'interpolazione lineare graduale** da uno stato a altro, fornendo un senso di movimento tranquilla e naturale.
 
@@ -47,13 +47,13 @@ Seguire queste regole per garantire gli stili di animazione coerente e facile da
 
 - **Quando viene visualizzato lo stato di avanzamento o lo stato** tramite animazione:
 
-    - Arrestare che mostra lo spostamento di stato di avanzamento quando non viene raggiunto il processo sottostante.
+  - Arrestare che mostra lo spostamento di stato di avanzamento quando non viene raggiunto il processo sottostante.
 
-    - Distinguere i processi indeterminati da determinato per processi.
+  - Distinguere i processi indeterminati da determinato per processi.
 
-    - Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.
+  - Assicurarsi che un'animazione abbia personali stati di completamento e non riuscite.
 
-    - Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo
+  - Riduci l'uso di animazioni di effetto che mostrano lo stato e assicurarsi che abbiano un valore reale, fornendo informazioni aggiuntive dell'utilizzo effettivo. Sono esempi le emergenze e modifiche allo stato temporaneo
 
 #### <a name="animation-donts"></a>Animazione cose:
 
@@ -91,7 +91,7 @@ Anche se gli oggetti tridimensionali possono essere spostati con il controllo ut
 
 La categoria Visualize include gli aspetti dei dati, relazioni, stato, struttura, sequenza e ora.
 
-##### <a name="data"></a>Dati
+##### <a name="data"></a>Data
 Vengono illustrate informazioni sulla variabile e complesse:
 
 - Spostarsi all'interno di visualizzazioni di informazioni, ad esempio grafici e diagrammi
@@ -124,9 +124,9 @@ Vengono illustrate informazioni sulla variabile e complesse:
 
 - Selezione e lo stato attivo utente
 
-- Stato
+- Avanzamento
 
-- Errori
+- Errors
 
 ##### <a name="structure"></a>Struttura
 
@@ -136,13 +136,13 @@ Vengono illustrate informazioni sulla variabile e complesse:
 
 - Ridurre e ingrandire, o espandere e comprimere
 
-##### <a name="sequence"></a>Sequence
+##### <a name="sequence"></a>Sequenza
 
 - Sequenza di presentazione
 
 - Capovolgimento tramite le immagini
 
-##### <a name="time"></a>Ora
+##### <a name="time"></a>Time
 
 - Mostra modifiche nel tempo, intervallo di tempo e screencast
 

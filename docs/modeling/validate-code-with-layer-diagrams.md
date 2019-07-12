@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971355"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824534"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Convalidare il codice con i diagrammi delle dipendenze
 
@@ -66,8 +66,8 @@ Convalida della dipendenza si verifica in tempo reale e gli errori vengono visua
 
 * Per abilitare l'analisi della soluzione completa quando si usa la convalida live delle dipendenze, aprire le impostazioni delle opzioni da barra color oro che viene visualizzato nei **elenco errori**.
 
-   - Se non si è interessati a visualizzare tutti i problemi dell'architettura della soluzione, è possibile ignorare in modo permanente la barra color oro.
-   - Se non si abilita analisi della soluzione completa, l'analisi viene eseguita solo per i file modificati.
+  - Se non si è interessati a visualizzare tutti i problemi dell'architettura della soluzione, è possibile ignorare in modo permanente la barra color oro.
+  - Se non si abilita analisi della soluzione completa, l'analisi viene eseguita solo per i file modificati.
 
 * Quando si aggiornano progetti per attivare la convalida in tempo reale, una finestra di dialogo Mostra lo stato di avanzamento della conversione.
 
@@ -162,7 +162,7 @@ Durante il processo di sviluppo, potrebbe essere necessario eliminare alcuni con
 
 Usare queste attività per gestire gli errori di convalida nel **elenco errori** finestra:
 
-|**Per**|**Seguire questi passaggi**|
+|**To**|**Seguire questi passaggi**|
 |-|-|
 |Eliminare gli errori selezionati durante la convalida|Fare doppio clic su uno o più errori selezionati, scegliere **Gestisci errori di convalida**, quindi fare clic su **Elimina errori**.<br /><br /> Gli errori eliminati vengono visualizzati come barrati. Alla successiva convalida, questi errori non saranno visualizzati.<br /><br /> Gli errori eliminati vengono registrati in un file con estensione suppressions per il corrispondente file di diagramma delle dipendenze.|
 |Interrompere l'eliminazione di errori selezionati|Fare doppio clic su selezionato eliminati gli errori, scegliere **Gestisci errori di convalida**, quindi fare clic su **Interrompi eliminazione errori**.<br /><br /> Alla successiva convalida, gli errori eliminati selezionati verranno visualizzati.|

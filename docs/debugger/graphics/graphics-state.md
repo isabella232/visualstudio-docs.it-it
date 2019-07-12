@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388622"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823768"
 ---
 # <a name="graphics-state"></a>Stato grafica
 La finestra Stato in Diagnostica grafica di Visual Studio consente di comprendere lo stato di grafica attivo al momento dell'evento corrente, ad esempio una chiamata di disegno.
@@ -36,11 +36,11 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
 
 - Nell'angolo superiore sinistro della finestra Stato, sotto la barra del titolo, scegliere il pulsante che corrisponde allo stile di visualizzazione da usare.
 
-    - **Mostra la visualizzazione stato di input API**
+  - **Mostra la visualizzazione stato di input API**
 
-    - **Mostra la visualizzazione stato logico**
+  - **Mostra la visualizzazione stato logico**
 
-    - **Mostra la visualizzazione stato bloccato**
+  - **Mostra la visualizzazione stato bloccato**
 
 > [!IMPORTANT]
 > È necessario bloccare lo stato nelle visualizzazioni **Stato di input API** o **Stato logico** perché sia mostrato nella **Visualizzazione stato bloccato**.
@@ -48,11 +48,11 @@ La finestra Stato in Diagnostica grafica di Visual Studio consente di comprender
 ### <a name="state-table-format"></a>Formato della tabella di stato
  La finestra Stato contiene diverse colonne di informazioni.
 
-|Colonna|Descrizione|
+|Colonna|DESCRIZIONE|
 |------------|-----------------|
-|Nome|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|
+|Name|Nome dell'elemento di stato. Se questo elemento rappresenta un'aggregazione di stati, può essere espanso per visualizzarlo.<br /><br /> In **Visualizzazione stato di input API** e **Visualizzazione stato logico**, i nomi sono rientrati per mostrare la relazione gerarchica tra gli stati.<br /><br /> In **Visualizzazione stato bloccato** vengono visualizzati i nomi completi in un elenco semplice.|
 |Value|Valore dell'elemento di stato.|
-|Tipo|Tipo dell'elemento di stato.|
+|Type|Tipo dell'elemento di stato.|
 
 ### <a name="changed-state"></a>Stato modificato
  Lo stato di grafica in genere viene modificato in modo incrementale tra chiamate di disegno successive e molti tipi di problemi di rendering sono causati da una modifica non corretta dello stato. Per semplificare l'individuazione dello stato modificato dopo la chiamata di disegno precedente, lo stato modificato è contrassegnato da un asterisco e visualizzato in rosso. Questo si applica non solo allo stato in sé, ma anche all'elemento di stato padre, in modo che sia possibile trovare più facilmente lo stato modificato al livello più elevato e quindi eseguire il drill-down ai dettagli.

@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432590"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822082"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
 |-----------------|--------------------|-------------------------------------------------|  
 |Directed Graph Shader Language|.dgsl|Visualizzazione, modifica|  
 |Shader HLSL (codice sorgente)|.hlsl|Esporta|  
-|Shader HLSL (bytecode)|.cso|Esporta|  
-|Intestazione C++ (matrice di bytecode HLSL)|h|Esporta|  
+|Shader HLSL (bytecode)|.cso|Esportazione|  
+|Intestazione C++ (matrice di bytecode HLSL)|h|Esportazione|  
   
 ## <a name="getting-started"></a>Introduzione  
  In questa sezione viene descritto come aggiungere uno shader DGSL al progetto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e vengono fornite informazioni introduttive di base.  
@@ -43,7 +43,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
 1. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto a cui si vuole aggiungere lo shader e quindi scegliere **Aggiungi**, **Nuovo elemento**.  
   
-2. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)**.  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)** .  
   
 3. Specificare il **Nome** del file shader e il **percorso** in cui crearlo.  
   
@@ -93,17 +93,17 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
 - Ecco come:  
   
-    - Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.  
-  
-    - Per rimuovere un nodo dal grafico, selezionarlo e premere CANC.  
-  
-    - Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.  
-  
-    - Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.  
-  
-    - Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.  
-  
-    - Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.  
+  - Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.  
+
+  - Per rimuovere un nodo dal grafico, selezionarlo e premere CANC.  
+
+  - Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.  
+
+  - Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.  
+
+  - Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.  
+
+  - Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.  
   
 ### <a name="previewing-shaders"></a>Visualizzare in anteprima gli shader  
  Per capire come uno shader apparirà nell'app, è possibile configurare il modo in cui l'effetto viene visualizzato in anteprima. Per approssimare la creazione di un'app, è possibile scegliere una forma di cui eseguire il rendering, configurare le trame e altri parametri di materiale, attivare l'animazione degli effetti basati sul tempo ed esaminare l'anteprima da angolature diverse.  
@@ -126,7 +126,7 @@ Questo documento descrive come usare la finestra di progettazione shader di [!IN
   
    Di seguito sono riportati i parametri di shader che è possibile modificare.  
   
-|Parametro|Proprietà|  
+|Parametro|Properties|  
 |---------------|----------------|  
 |**Trama 1** - **Trama 8**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Nome file**: percorso completo del file della trama associato a questo registro di trama.|  
 |**Ambiente materiale**|**Accesso**:                             **Pubblico** per consentire l'impostazione della proprietà dall'editor dei modelli. **Privato** in caso contrario.<br /><br /> **Valore**: Colore con riflessione diffuso del pixel corrente a causa di illuminazione indiretta, ovvero –.|  

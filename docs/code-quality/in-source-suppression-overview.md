@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825821"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821572"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Non visualizzare gli avvisi dell'analisi codice
 
@@ -67,17 +67,17 @@ Le proprietà dell'attributo includono:
 
 - **Ambito** -la destinazione in cui è stato eliminato l'avviso. Se la destinazione non è specificato, cui è impostata la destinazione dell'attributo. È supportato [ambiti](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) includono quanto segue:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -L'ambito deve eliminare gli avvisi per lo spazio dei nomi stesso. Non elimina gli avvisi per i tipi nello spazio dei nomi.
+  - `namespace` -L'ambito deve eliminare gli avvisi per lo spazio dei nomi stesso. Non elimina gli avvisi per i tipi nello spazio dei nomi.
 
-   - `namespaceanddescendants` -(Novità di Visual Studio 2019) questo ambito Elimina gli avvisi in uno spazio dei nomi e tutti i simboli relativi discendenti. Il `namespaceanddescendants` valore è valido solo per gli analizzatori di Roslyn e viene ignorato dall'analisi statica binario, in base al FxCop.
+  - `namespaceanddescendants` -(Novità di Visual Studio 2019) questo ambito Elimina gli avvisi in uno spazio dei nomi e tutti i simboli relativi discendenti. Il `namespaceanddescendants` valore è valido solo per gli analizzatori di Roslyn e viene ignorato dall'analisi statica binario, in base al FxCop.
 
 - **Destinazione** : un identificatore che consente di specificare la destinazione in cui è stato eliminato l'avviso. Deve contenere un nome di elemento completo.
 

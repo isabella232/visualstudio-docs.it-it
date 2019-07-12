@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680296"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825789"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gestire modelli e diagrammi nel controllo della versione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
   
 - Ogni diagramma viene archiviato in due file. Ad esempio, un diagramma classi ha:  
   
-    - **DiagramName.classdiagram** - Se questo file viene eliminato o danneggiato, il diagramma andrà perso, ma le classi e le associazioni in esso visualizzate rimangono nel modello e possono essere visualizzate in Esplora modelli UML.  
-  
-    - **DiagramName.classdiagram.layout** - Se questo file viene eliminato, le forme verranno comunque visualizzate nel diagramma, ma le loro dimensioni e posizioni andranno perse. Ogni file di layout è affiliato a un file di diagramma. Per visualizzarlo, fare clic su [+] accanto al file di diagramma in Esplora soluzioni.  
+  - **DiagramName.classdiagram** - Se questo file viene eliminato o danneggiato, il diagramma andrà perso, ma le classi e le associazioni in esso visualizzate rimangono nel modello e possono essere visualizzate in Esplora modelli UML.  
+
+  - **DiagramName.classdiagram.layout** - Se questo file viene eliminato, le forme verranno comunque visualizzate nel diagramma, ma le loro dimensioni e posizioni andranno perse. Ogni file di layout è affiliato a un file di diagramma. Per visualizzarlo, fare clic su [+] accanto al file di diagramma in Esplora soluzioni.  
   
 > [!NOTE]
 > È importante mantenere la coerenza tra i file. Ad esempio, se si usa il controllo del codice sorgente per eseguire il rollback delle modifiche in un file UML, è necessario eseguire contemporaneamente il rollback delle modifiche corrispondenti nei file con estensione *diagram e layout. Gli elementi rappresentati in una. \*file del diagramma verranno perse se non sono inoltre rappresentati in un file con estensione UML.  
@@ -55,9 +55,9 @@ Gestire versioni diverse dei progetti di modellazione e dei diagrammi, incluse l
   
 - Per garantire che venga modificato solo il pacchetto che si sta usando:  
   
-    - Impostare la proprietà **LinkedPackage** di una classe UML, di un componente o di un caso d'uso di un diagramma.  
-  
-    - In Esplora modelli UML trascinare un'attività o interazione nel pacchetto appena creato. Questo elemento verrà visualizzato in Esplora modelli UML quando si crea il primo nodo nel diagramma di sequenza o di attività.  
+  - Impostare la proprietà **LinkedPackage** di una classe UML, di un componente o di un caso d'uso di un diagramma.  
+
+  - In Esplora modelli UML trascinare un'attività o interazione nel pacchetto appena creato. Questo elemento verrà visualizzato in Esplora modelli UML quando si crea il primo nodo nel diagramma di sequenza o di attività.  
   
 - Per tenere traccia dei pacchetti, rinominare i file di pacchetto in modo che rispecchino i nomi dei pacchetti effettivi.  
   

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335389"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824569"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Strumenti di valutazione per Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Elenco di controllo per le proprie abilità per Visual Studio
@@ -49,11 +49,11 @@ ms.locfileid: "66335389"
 
 - Verificare che i pulsanti, i comandi e collegamenti ai comandi che avviano l'interfaccia utente per acquisire l'input dell'utente terminare con i puntini di sospensione **[...]** .
 
-     Esempi:
+  Esempi:
 
-    - Un **[avanzate...]**  pulsante in una finestra di dialogo.
+  - Un **[avanzate...]**  pulsante in una finestra di dialogo.
 
-    - Le opzioni di comando nel menu Strumenti (**strumenti > Opzioni**) non dovrebbe essere i puntini di sospensione, perché l'avvio la finestra di dialogo è lo scopo del comando.
+  - Le opzioni di comando nel menu Strumenti (**strumenti > Opzioni**) non dovrebbe essere i puntini di sospensione, perché l'avvio la finestra di dialogo è lo scopo del comando.
 
 - Verificare che l'interfaccia utente non contiene nessun abbreviazioni, ad eccezione di termini standard del settore. Ad esempio, HTML, né TCP/IP necessario pronunciata, anche se informazioni personali (informazioni personali) e memoria insufficiente (esaurito la memoria) deve.
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335389"
 
 - Se il campo è un campo obbligatorio che deve essere identificato come tali, verificare che:
 
-    - che lo sfondo è impostato su `Environment.ControlEditRequiredBackground` e primo piano è impostato su `Environment.ControlEditRequiredHintText`
+  - che lo sfondo è impostato su `Environment.ControlEditRequiredBackground` e primo piano è impostato su `Environment.ControlEditRequiredHintText`
 
-    - che vi sia all'interno del controllo che viene visualizzato come testo del suggerimento **"\<necessarie >"**
+  - che vi sia all'interno del controllo che viene visualizzato come testo del suggerimento **"\<necessarie >"**
 
 #### <a name="button-controls"></a>Controlli pulsante
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335389"
 
 - Verificare che siano usati i colori di Visual Studio:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Verificare che i collegamenti ipertestuali vengono visualizzati con alcun carattere di sottolineatura blu a meno che non incorporato in un paragrafo.
 

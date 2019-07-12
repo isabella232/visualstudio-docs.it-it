@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430419"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825794"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procedura dettagliata: Creare un'estensione di progetto SharePoint
   Questa procedura dettagliata illustra come creare un'estensione per i progetti SharePoint. È possibile utilizzare un'estensione di progetto per rispondere agli eventi a livello di progetto, ad esempio quando un progetto viene aggiunto, eliminato o rinominato. È anche possibile aggiungere proprietà personalizzate o rispondere quando la modifica di un valore di proprietà. A differenza delle estensioni dell'elemento del progetto, le estensioni di progetto non possono essere associate a un particolare tipo di progetto SharePoint. Quando si crea un'estensione di progetto, l'estensione viene caricata quando qualsiasi tipo di progetto SharePoint viene aperto in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430419"
 
 - Creazione di un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] estensione per i progetti SharePoint che esegue le operazioni seguenti:
 
-    - Aggiunge una proprietà di progetto personalizzato alla finestra Proprietà. La proprietà si applica a qualsiasi progetto SharePoint.
+  - Aggiunge una proprietà di progetto personalizzato alla finestra Proprietà. La proprietà si applica a qualsiasi progetto SharePoint.
 
-    - Usa il modello oggetto di progetto SharePoint per aggiungere una cartella mappata a un progetto.
+  - Usa il modello oggetto di progetto SharePoint per aggiungere una cartella mappata a un progetto.
 
-    - Usa il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modello a oggetti di automazione (DTE) per eliminare una cartella mappata dal progetto.
+  - Usa il [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modello a oggetti di automazione (DTE) per eliminare una cartella mappata dal progetto.
 
 - Creazione di un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacchetto Extension (VSIX) da distribuire assembly di estensioni per della proprietà progetto.
 

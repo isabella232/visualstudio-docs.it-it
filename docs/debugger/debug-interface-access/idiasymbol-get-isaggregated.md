@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400006"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830557"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Recupera un flag che specifica se il simbolo di dati fa parte di una funzione di aggregazione o una raccolta di simboli. il compilatore considererà i simboli aggregati come entità separate, ma sono in effetti parte di un singolo simbolo di dimensioni maggiori.

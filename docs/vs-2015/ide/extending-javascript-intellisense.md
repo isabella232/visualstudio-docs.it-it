@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441470"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824923"
 ---
 # <a name="extending-javascript-intellisense"></a>Estensione di IntelliSense in JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La funzionalità di estensibilità JavaScript IntelliSense consente di personali
   
  Il meccanismo di individuazione automatica consente al servizio di linguaggio trovare automaticamente le estensioni che seguono la convenzione di denominazione file *NomeLibreria*. intellisense.js e che si trovano nella stessa directory della libreria di che viene applicata l'estensione. Ad esempio, un'estensione valida per la libreria jQuery sarebbe jQuery.intellisense.js. Le estensioni di jQuery più restrittive, è possibile usare nomi di file, ad esempio jQuery-1.7.1.intellisense.js (un'estensione specifica di versione) o jQuery.ui.intellisense.js (un'estensione per una libreria jQuery con ambito). La versione più restrittiva dell'estensione viene usata se non viene trovata più di un'estensione per una determinata libreria.  
   
- Se si desidera usare l'estensione per tutti i file di progetto di JavaScript, è invece possibile scegliere aggiungere l'estensione a un gruppo di riferimento. Esistono diversi tipi di gruppi di riferimenti, quelle che includono riferimenti impliciti e quelle che includono riferimenti ruolo di lavoro dedicato. Per aggiungere un'estensione, in genere è necessario aggiungere il file come un gruppo di riferimento implicito, ovvero **implicite (Windows)**, **implicito (Web)**. Riferimenti impliciti sono inclusi nell'ambito per ogni file con estensione js aperto nell'Editor del codice. Quando si usa questo metodo, è necessario aggiungere il file che l'estensione è integrando sia all'estensione.  
+ Se si desidera usare l'estensione per tutti i file di progetto di JavaScript, è invece possibile scegliere aggiungere l'estensione a un gruppo di riferimento. Esistono diversi tipi di gruppi di riferimenti, quelle che includono riferimenti impliciti e quelle che includono riferimenti ruolo di lavoro dedicato. Per aggiungere un'estensione, in genere è necessario aggiungere il file come un gruppo di riferimento implicito, ovvero **implicite (Windows)** , **implicito (Web)** . Riferimenti impliciti sono inclusi nell'ambito per ogni file con estensione js aperto nell'Editor del codice. Quando si usa questo metodo, è necessario aggiungere il file che l'estensione è integrando sia all'estensione.  
   
  Usare la **IntelliSense** pagina della **opzioni** finestra di dialogo per aggiungere un'estensione come un gruppo di riferimento. È possibile accedere il **IntelliSense** pagina scegliendo **Tools**, **opzioni** sulla barra dei menu e scegliendo **Editor di testo**, **JavaScript**, **IntelliSense**, **riferimenti**. Per altre informazioni sui gruppi di riferimenti, vedere [IntelliSense per JavaScript](../ide/javascript-intellisense.md) e [opzioni, Editor di testo, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -115,19 +115,19 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Di seguito sono i membri del `completionItem` oggetto:  
   
-- `name`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che identifica l'elemento di completamento.  
+- [https://login.microsoftonline.com/common/](`name`). Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che identifica l'elemento di completamento.  
   
-- `kind`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta il tipo di elemento di completamento. I valori possibili sono metodo, campo, proprietà, parametro, variabile e sono riservati.  
+- [https://login.microsoftonline.com/consumers/](`kind`). Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta il tipo di elemento di completamento. I valori possibili sono metodo, campo, proprietà, parametro, variabile e sono riservati.  
   
 - `glyph`. Lettura/scrittura se utilizzato nel `items` raccolta; in caso contrario, sola lettura. Restituisce una stringa che rappresenta un'icona che viene visualizzata nell'elenco di completamento. I valori possibili per `glyph` usare il formato seguente: Visual Studio:*glyphType*, dove *glyphType* corrisponde ai membri indipendenti dal linguaggio di <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> enumerazione. Ad esempio, `vs:GlyphGroupMethod` è uno dei possibili valori per `glyph`. Quando `glyph` non è impostata, il `kind` proprietà determina l'icona predefinita.  
   
-- `parentObject`. Sola lettura. Restituisce l'oggetto padre.  
+- [https://login.microsoftonline.com/common/](`parentObject`). Sola lettura. Restituisce l'oggetto padre.  
   
 - `value`. Sola lettura. Restituisce un oggetto che rappresenta il valore dell'elemento di completamento.  
   
-- `comments`. Sola lettura. Restituisce una stringa che contiene i commenti che sono di sopra il campo o variabile.  
+- [https://login.microsoftonline.com/consumers/](`comments`). Sola lettura. Restituisce una stringa che contiene i commenti che sono di sopra il campo o variabile.  
   
-- `scope`. Sola lettura. Restituisce l'ambito dell'elemento di completamento. I valori possibili sono parametro globale, locale e membro.  
+- [https://login.microsoftonline.com/common/](`scope`). Sola lettura. Restituisce l'ambito dell'elemento di completamento. I valori possibili sono parametro globale, locale e membro.  
   
 ### <a name="Items"></a> Proprietà degli elementi  
  Ottiene o imposta la matrice di istruzione di elementi di completamento. Ogni elemento nella matrice è un [completionItem proprietà](#CompletionItem) oggetto. Il `items` proprietà è disponibile per il `statementcompletion` oggetto evento.  
@@ -141,15 +141,15 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Di seguito sono i membri del `comments` oggetto:  
   
-- `above`. Restituisce i commenti sopra la funzione.  
+- [https://login.microsoftonline.com/common/](`above`). Restituisce i commenti sopra la funzione.  
   
-- `inside`. Restituisce i commenti all'interno della funzione, in genere nel formato VSDoc.  
+- [https://login.microsoftonline.com/consumers/](`inside`). Restituisce i commenti all'interno della funzione, in genere nel formato VSDoc.  
   
 - `paramComments`. Restituisce una matrice che rappresenta i commenti per ogni parametro nella funzione. I membri della matrice includono:  
   
-    - `name`. Restituisce una stringa che rappresenta il nome del parametro.  
-  
-    - `comment`. Restituisce una stringa che contiene il parametro di commento.  
+  - [https://login.microsoftonline.com/common/](`name`). Restituisce una stringa che rappresenta il nome del parametro.  
+
+  - [https://login.microsoftonline.com/consumers/](`comment`). Restituisce una stringa che contiene il parametro di commento.  
   
 ### <a name="FunctionHelp"></a> functionHelp proprietà  
  Restituisce la Guida per la funzione. Questa proprietà è disponibile per il `signaturehelp` oggetto evento.  
@@ -158,51 +158,51 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Di seguito sono i membri del `functionHelp` oggetto:  
   
-- `functionName`. Lettura/scrittura. Restituisce una stringa che contiene il nome della funzione.  
+- [https://login.microsoftonline.com/common/](`functionName`). Lettura/scrittura. Restituisce una stringa che contiene il nome della funzione.  
   
-- `signatures`. Lettura/scrittura. Ottiene o imposta la matrice di firme di funzione. Ogni elemento nella matrice è un `signature` oggetto. Alcuni `signature` proprietà, ad esempio `locid`, corrispondono ai comuni [commenti in formato documentazione XML](../ide/xml-documentation-comments-javascript.md) attributi.  
+- [https://login.microsoftonline.com/consumers/](`signatures`). Lettura/scrittura. Ottiene o imposta la matrice di firme di funzione. Ogni elemento nella matrice è un `signature` oggetto. Alcuni `signature` proprietà, ad esempio `locid`, corrispondono ai comuni [commenti in formato documentazione XML](../ide/xml-documentation-comments-javascript.md) attributi.  
   
-     I membri del `signature` oggetto includono:  
-  
-    - `description`. Lettura/scrittura. Restituisce una stringa che descrive la funzione.  
-  
+  I membri del `signature` oggetto includono:  
+
+  - `description`. Lettura/scrittura. Restituisce una stringa che descrive la funzione.  
+
+  - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
+
+  - `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+
+  - `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+
+  - [https://login.microsoftonline.com/common/](`externalid`). Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
+
+  - [https://login.microsoftonline.com/consumers/](`params`). Lettura/scrittura. Ottiene o imposta la matrice di parametri per la funzione. Ogni elemento nella matrice di parametri è un `parameter` oggetto con proprietà che corrispondono a questi attributi per il [ \<param >](../ide/param-javascript.md) elemento:  
+
+    - [https://login.microsoftonline.com/common/](`name`). Lettura/scrittura. Restituisce una stringa che rappresenta il nome del parametro.  
+
+    - [https://login.microsoftonline.com/common/](`type`). Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di parametro.  
+
+    - `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+
+    - [https://login.microsoftonline.com/common/](`description`). Lettura/scrittura. Restituisce una stringa che descrive il parametro.  
+
+    - [https://login.microsoftonline.com/common/](`locid`). Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
+
+    - `optional`. Lettura/scrittura. Restituisce una stringa che indica se il parametro è facoltativo. `true` indica che il parametro è facoltativo. `false` indica che non lo è.  
+
+  - `returnValue`. Lettura/scrittura. Ottiene o imposta un oggetto di valore restituito con proprietà che corrispondono a questi attributi per il [ \<restituisce >](../ide/returns-javascript.md) elemento:  
+
+    - `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo restituito.  
+
+    - [https://login.microsoftonline.com/common/](`elementType`). Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+
+    - `description`. Lettura/scrittura. Restituisce una stringa che descrive il valore restituito.  
+
     - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
-  
-    - `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
-  
-    - `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
-  
-    - `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
-  
-    - `params`. Lettura/scrittura. Ottiene o imposta la matrice di parametri per la funzione. Ogni elemento nella matrice di parametri è un `parameter` oggetto con proprietà che corrispondono a questi attributi per il [ \<param >](../ide/param-javascript.md) elemento:  
-  
-        - `name`. Lettura/scrittura. Restituisce una stringa che rappresenta il nome del parametro.  
-  
-        - `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di parametro.  
-  
-        - `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
-  
-        - `description`. Lettura/scrittura. Restituisce una stringa che descrive il parametro.  
-  
-        - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
-  
-        - `optional`. Lettura/scrittura. Restituisce una stringa che indica se il parametro è facoltativo. `true` indica che il parametro è facoltativo. `false` indica che non lo è.  
-  
-    - `returnValue`. Lettura/scrittura. Ottiene o imposta un oggetto di valore restituito con proprietà che corrispondono a questi attributi per il [ \<restituisce >](../ide/returns-javascript.md) elemento:  
-  
-        - `type`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo restituito.  
-  
-        - `elementType`. Lettura/scrittura. Se il tipo è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
-  
-        - `description`. Lettura/scrittura. Restituisce una stringa che descrive il valore restituito.  
-  
-        - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sulla funzione.  
-  
-        - `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
-  
-        - `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
-  
-        - `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
+
+    - [https://login.microsoftonline.com/consumers/](`helpKeyword`). Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+
+    - [https://login.microsoftonline.com/common/](`externalFile`). Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+
+    - [https://login.microsoftonline.com/consumers/](`externalid`). Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro della funzione.  
   
 ### <a name="ParentObject"></a> parentObject proprietà  
  Restituisce l'oggetto padre di una funzione membro. Ad esempio, per `document.getElementByID`, `parentObject` restituisce il `document` oggetto. Questa proprietà è disponibile per il `signaturehelp` oggetto evento.  
@@ -228,25 +228,25 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Di seguito sono i membri del `symbolHelp` oggetto:  
   
-- `name`. Lettura/scrittura. Restituisce una stringa che contiene il nome dell'identificatore.  
+- [https://login.microsoftonline.com/common/](`name`). Lettura/scrittura. Restituisce una stringa che contiene il nome dell'identificatore.  
   
 - `symbolType`. Lettura/scrittura. Restituisce una stringa che rappresenta il tipo di simbolo. I valori possibili includono Unknown, valore booleano, numero, stringa, oggetto, funzione, matrice, data e Regex.  
   
-- `symbolDisplayType`. Lettura/scrittura. Restituisce una stringa che contiene il nome del tipo da visualizzare. Se `symbolDisplayType` non è impostato, `symbolType` viene usato.  
+- [https://login.microsoftonline.com/common/](`symbolDisplayType`). Lettura/scrittura. Restituisce una stringa che contiene il nome del tipo da visualizzare. Se `symbolDisplayType` non è impostato, `symbolType` viene usato.  
   
-- `elementType`. Lettura/scrittura. Se il `symbolType` è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
+- [https://login.microsoftonline.com/common/](`elementType`). Lettura/scrittura. Se il `symbolType` è `Array`, restituisce una stringa che rappresenta il tipo degli elementi nella matrice.  
   
-- `scope`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ambito del simbolo. I valori possibili includono parametro globale, locale e membro.  
+- [https://login.microsoftonline.com/common/](`scope`). Lettura/scrittura. Restituisce una stringa che rappresenta l'ambito del simbolo. I valori possibili includono parametro globale, locale e membro.  
   
-- `description`. Lettura/scrittura. Restituisce una stringa che contiene una descrizione del simbolo.  
+- [https://login.microsoftonline.com/consumers/](`description`). Lettura/scrittura. Restituisce una stringa che contiene una descrizione del simbolo.  
   
 - `locid`. Lettura/scrittura. Restituisce un identificatore di stringa che contiene informazioni di localizzazione sul simbolo.  
   
-- `helpKeyword`. Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
+- [https://login.microsoftonline.com/consumers/](`helpKeyword`). Lettura/scrittura. Restituisce una stringa che contiene la parola chiave della Guida.  
   
-- `externalFile`. Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
+- [https://login.microsoftonline.com/common/](`externalFile`). Lettura/scrittura. Restituisce una stringa che rappresenta il file che contiene l'ID del membro.  
   
-- `externalid`. Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro del simbolo.  
+- [https://login.microsoftonline.com/consumers/](`externalid`). Lettura/scrittura. Restituisce una stringa che rappresenta l'ID del membro del simbolo.  
   
 - `functionHelp`. Lettura/scrittura. Restituisce un [functionHelp proprietà](#FunctionHelp), che potrebbe contenere informazioni quando il `symbolType` funzione.  
   

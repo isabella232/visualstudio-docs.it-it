@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321362"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823815"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Novità di estendibilità di Visual Studio 2017
 
@@ -63,35 +63,35 @@ La maggior parte degli assembly principali di Visual Studio non vengono più ins
 
 * Assembly che sono stati installati solo nella Global Assembly Cache:
 
-   Questi assembly vengono ora installati sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* . Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
+  Questi assembly vengono ora installati sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> oppure *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* . Queste cartelle fanno parte di percorsi di probe del processo di Visual Studio.
 
 * Assembly che sono stati installati in un percorso probe non e Global Assembly Cache:
 
-   * La copia nella Global Assembly Cache è stata rimossa dal programma di installazione.
-   * Oggetto *pkgdef* file è stato aggiunto per specificare una voce di codebase dell'assembly.
+  * La copia nella Global Assembly Cache è stata rimossa dal programma di installazione.
+  * Oggetto *pkgdef* file è stato aggiunto per specificare una voce di codebase dell'assembly.
 
-      Ad esempio:
+    Ad esempio:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      In fase di esecuzione, il sottosistema di Visual Studio pkgdef unisce queste voci nel file di configurazione di runtime del processo di Visual Studio (sotto *[VSAPPDATA]\devenv.exe.config*) come [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementi. Questo è il modo consigliato per consentire il processo di Visual Studio a trovare l'assembly, in quanto evita la ricerca tramite percorsi di probe.
+    In fase di esecuzione, il sottosistema di Visual Studio pkgdef unisce queste voci nel file di configurazione di runtime del processo di Visual Studio (sotto *[VSAPPDATA]\devenv.exe.config*) come [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementi. Questo è il modo consigliato per consentire il processo di Visual Studio a trovare l'assembly, in quanto evita la ricerca tramite percorsi di probe.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reazione a questa modifica di rilievo
 
 * Se l'estensione è in esecuzione all'interno del processo di Visual Studio:
 
-   * Il codice sarà in grado di trovare gli assembly di base di Visual Studio.
-   * È consigliabile usare un *pkgdef* file per specificare un percorso agli assembly, se necessario.
+  * Il codice sarà in grado di trovare gli assembly di base di Visual Studio.
+  * È consigliabile usare un *pkgdef* file per specificare un percorso agli assembly, se necessario.
 
 * Se l'estensione è in esecuzione all'esterno del processo di Visual Studio:
 
-   Prendere in considerazione alla ricerca di assembly principali di Visual Studio sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> o *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* utilizzando il resolver di assembly o file di configurazione.
+  Prendere in considerazione alla ricerca di assembly principali di Visual Studio sotto <em>[INSTALLDIR] \Common7\IDE.\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies.</em> o *\Common7\IDE\PrivateAssemblies. [INSTALLDIR]* utilizzando il resolver di assembly o file di configurazione.
 
 ## <a name="change-reduce-registry-impact"></a>Modifica: Ridurre l'impatto del Registro di sistema
 

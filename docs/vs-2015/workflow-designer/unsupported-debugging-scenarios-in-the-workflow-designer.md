@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858186"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825228"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scenari di debug non supportati in Progettazione flussi di lavoro
 In Progettazione flussi di lavoro in [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] sono state aggiunte numerose e nuove funzionalità, ma sono ancora presenti alcuni scenari di debug non supportati. In questo documento vengono indicati gli scenari di debug non supportati in Progettazione flussi di lavoro.  
@@ -41,16 +41,16 @@ In Progettazione flussi di lavoro in [!INCLUDE[netfx40_short](../includes/netfx4
   
 - La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:  
   
-    - Condizione  
-  
-    - Numero di passaggi  
-  
-    - Quando raggiunto  
-  
-    - Funzione  
-  
-    - Dati  
-  
-    - Process  
-  
-    - Vai a disassembly
+  - Condizione  
+
+  - Numero di passaggi  
+
+  - Quando raggiunto  
+
+  - Funzione  
+
+  - Data  
+
+  - Process  
+
+  - Vai a disassembly

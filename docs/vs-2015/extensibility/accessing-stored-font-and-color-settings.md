@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403264"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821834"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>L'accesso a tipo di carattere archiviata e le impostazioni dei colori
+# <a name="accessing-stored-font-and-color-settings"></a>Accesso alle impostazioni di tipi di carattere e colori archiviate
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE) archivia le impostazioni modificate per i tipi di carattere e colori nel Registro di sistema. È possibile usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia per accedere a queste impostazioni.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Per avviare la persistenza dello stato dei tipi di carattere e colori  
- Le informazioni di carattere e colori vengono archiviate in base alla categoria nel percorso seguente del Registro di sistema: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versione di Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], dove  *\<CategoryGUID >* è il GUID della categoria.  
+ Le informazioni di carattere e colori vengono archiviate in base alla categoria nel percorso seguente del Registro di sistema: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<versione di Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], dove  *\<CategoryGUID >* è il GUID della categoria.  
   
  Pertanto, per avviare la persistenza, un pacchetto VSPackage deve:  
   
@@ -35,16 +35,16 @@ Il [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (
   
 - Usare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> metodo per aprire una categoria per essere resa persistente usando il GUID della categoria e un flag di modalità come argomenti.  
   
-     La modalità, specificata dal `fFlags` argomento, viene costruito dai valori di <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumerazione. Questa modalità consente di controllare:  
-  
-    - Le impostazioni che è possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.  
-  
-    - Tutte le impostazioni o solo quelle che gli utenti di modificare e sono recuperabili tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.  
-  
-    - Il modo di propagare le modifiche alle impostazioni dell'utente.  
-  
-    - Il formato dei valori di colore che vengono usati.  
-  
+  La modalità, specificata dal `fFlags` argomento, viene costruito dai valori di <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumerazione. Questa modalità consente di controllare:  
+
+  - Le impostazioni che è possibile accedere tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.  
+
+  - Tutte le impostazioni o solo quelle che gli utenti di modificare e sono recuperabili tramite il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaccia.  
+
+  - Il modo di propagare le modifiche alle impostazioni dell'utente.  
+
+  - Il formato dei valori di colore che vengono usati.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Usare la persistenza dello stato dei tipi di carattere e colori  
  Rendere persistenti i tipi di carattere e colori comporta:  
   

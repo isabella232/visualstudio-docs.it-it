@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f5edad198727ea33d3bf293fa0ee1baf3afb5b3b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319318"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823906"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedura: Eseguire la migrazione di progetti di estendibilità in Visual Studio 2017
 
@@ -62,8 +62,8 @@ Per assicurarsi che l'installazione dell'utente di Visual Studio ha tutti gli as
 * Modificare il file manifesto di estensione (in genere chiamati *vsixmanifest*).
 * Assicurarsi che `InstallationTarget` include 15.0.
 * Aggiungere i prerequisiti di installazione richiesti (come illustrato nell'esempio seguente).
-   * È consigliabile che specificare solo ID di componenti dei prerequisiti.
-   * Vedere la sezione alla fine di questo documento anche per [istruzioni per identificare gli ID componente](#find-component-ids).
+  * È consigliabile che specificare solo ID di componenti dei prerequisiti.
+  * Vedere la sezione alla fine di questo documento anche per [istruzioni per identificare gli ID componente](#find-component-ids).
 
 Esempio:
 
@@ -120,12 +120,12 @@ Potrebbe essere simile: *C:\Programmi\Microsoft file (x86) \Microsoft Visual Stu
 
 * Compilare il progetto VSIX.
 * Decomprimere il pacchetto VSIX generato.
-   * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]* .
-   * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
+  * Per impostazione predefinita, il file VSIX si trova all'interno *bin/Debug* oppure *bin/Release* come *VSIX [YourCustomExtension]* .
+  * Rinominare *VSIX* al *zip* visualizzare facilmente il contenuto.
 * Verificare l'esistenza di tre file:
-   * *extension.vsixmanifest*
-   * *manifest.json*
-   * *catalog.json*
+  * *extension.vsixmanifest*
+  * *manifest.json*
+  * *catalog.json*
 
 ## <a name="check-when-all-required-prerequisites-are-installed"></a>Controllare quando vengono installati tutti i prerequisiti obbligatori
 
@@ -140,12 +140,12 @@ Tentativo di installare l'estensione:
 
 ![Programma di installazione VSIX in Visual Studio 2017](media/vsixinstaller-vs-2017.png)
 
-* Facoltative: Per controllare le versioni precedenti di Visual Studio.
-   * Dimostri la compatibilità con le versioni precedenti.
-   * Dovrebbe funzionare per Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
-* Facoltative: Verificare che VSIX Installer versione controllo offre una vasta gamma di versioni.
-   * Include le versioni precedenti di Visual Studio (se installato).
-   * Include Visual Studio 2017.
+* Facoltativo: Per controllare le versioni precedenti di Visual Studio.
+  * Dimostri la compatibilità con le versioni precedenti.
+  * Dovrebbe funzionare per Visual Studio 2012, Visual Studio 2013, Visual Studio 2015.
+* Facoltativo: Verificare che VSIX Installer versione controllo offre una vasta gamma di versioni.
+  * Include le versioni precedenti di Visual Studio (se installato).
+  * Include Visual Studio 2017.
 
 Se recentemente è stato aperto Visual Studio, potrebbe essere visualizzata una finestra di dialogo simile alla seguente:
 
@@ -170,7 +170,7 @@ Quando si cercano le dipendenze, si noterà che è stato possibile eseguire il m
 
 Per fornire ulteriori indicazioni, sono stati identificati alcuni tipi di estensione più comuni e sui relativi prerequisiti suggerite:
 
-Tipo di estensione | Nome visualizzato | Id
+Tipo di estensione | Nome visualizzato | id
 --- | --- | ---
 Editor | Editor principale di Visual Studio | Microsoft.VisualStudio.Component.CoreEditor
 Roslyn | C# e Visual Basic | Microsoft.VisualStudio.Component.Roslyn.LanguageServices

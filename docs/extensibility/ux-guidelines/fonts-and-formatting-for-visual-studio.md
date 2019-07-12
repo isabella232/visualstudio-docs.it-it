@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335496"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824326"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Le intestazioni di dimensioni maggiori (tipo di carattere ambiente 155% o superiore) possono essere colorate per questi scopi:
 
-    - Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
+  - Per fornire l'impatto visivo alla firma dell'interfaccia utente di Visual Studio
 
-    - Per attirare l'attenzione su un'area specifica
+  - Per attirare l'attenzione su un'area specifica
 
-    - Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
+  - Per offrire una maggiore efficacia dal colore del testo standard ambiente/nero grigio scuro
 
 - Colore nelle intestazioni deve sfruttare Visual Studio esistente marchio colori, principalmente il principale viola, & FF68217A.
 
