@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527cb029374ae8246c827b057800b751c377d12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327829"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823878"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guida per il test dei plug-in del controllo del codice sorgente
 Questa sezione vengono fornite indicazioni per il test di controllo del codice sorgente del plug-in con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Viene fornita una panoramica completa di aree di test più comuni, nonché tra gli aspetti più complessi che possono causare problemi. Questa panoramica non intende essere un elenco completo dei test case.
@@ -53,43 +53,43 @@ Questa sezione vengono fornite indicazioni per il test di controllo del codice s
 
 - [Area di test 1: aggiungere o aprire elementi dal controllo del codice sorgente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    - Case 1a: Aggiungi soluzione al controllo del codice sorgente
+  - Case 1a: Aggiungi soluzione al controllo del codice sorgente
 
-    - Case 1b: Apri soluzione dal controllo del codice sorgente
+  - Case 1b: Apri soluzione dal controllo del codice sorgente
 
-    - Caso 1c: Aggiungi soluzione dal controllo del codice sorgente
+  - Caso 1c: Aggiungi soluzione dal controllo del codice sorgente
 
 - [Area di test 2: caricare dal controllo del codice sorgente](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Area di test 3: estrarre o annullare l'estrazione](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    - Caso 3: Check-Out / Annulla estrazione
+  - Caso 3: Check-Out / Annulla estrazione
 
-    - Case 3a: Estrai
+  - Case 3a: Estrai
 
-    - Case 3b: Estrazione disconnessa
+  - Case 3b: Estrazione disconnessa
 
-    - Caso 3C: Query Edit/Query Save (QEQS)
+  - Caso 3C: Query Edit/Query Save (QEQS)
 
-    - Caso 3d: Estrazione automatica
+  - Caso 3d: Estrazione automatica
 
-    - Case 3e: Annulla estrazione
+  - Case 3e: Annulla estrazione
 
 - [Area di test 4: archiviare](../../extensibility/internals/test-area-4-check-in.md)
 
-    - Case 4a: Elementi modificati
+  - Case 4a: Elementi modificati
 
-    - Case 4b: Aggiunta di file
+  - Case 4b: Aggiunta di file
 
-    - Caso 4c: Aggiunta di progetti
+  - Caso 4c: Aggiunta di progetti
 
 - [Area di test 5: modificare il controllo del codice sorgente](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    - Case 5a: Eseguire l'associazione
+  - Case 5a: Eseguire l'associazione
 
-    - Case 5b: annullamento del binding
+  - Case 5b: annullamento del binding
 
-    - Caso 5C: riassociazione
+  - Caso 5C: riassociazione
 
 - [Area di test 6: eliminare](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ Questa sezione vengono fornite indicazioni per il test di controllo del codice s
 
 - [Area di test 8: cambio di plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    - Case 8a: Modifiche automatico
+  - Case 8a: Modifiche automatico
 
-    - Case 8b: Modifica basati su soluzioni
+  - Case 8b: Modifica basati su soluzioni
 
 ## <a name="see-also"></a>Vedere anche
 - [Plug-in del controllo del codice sorgente](../../extensibility/source-control-plug-ins.md)

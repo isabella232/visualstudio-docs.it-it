@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746799"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821398"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Creare un linguaggio specifico di dominio di Windows basata su form
 
@@ -59,9 +59,9 @@ Il **Progettazione Windows Form minimo** modello DSL consente di creare un DSL m
 
 - Il `UI` progetto contiene un esempio reale di un controllo modulo associato per il linguaggio DSL. Tuttavia, non funzionerà dopo avere modificato la definizione DSL. Il `UI` progetto contiene:
 
-    - Una classe di Windows Form denominata `ModelViewControl`.
+  - Una classe di Windows Form denominata `ModelViewControl`.
 
-    - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
+  - Un file denominato `DataBinding.cs` che contiene una definizione parziale aggiuntiva di `ModelViewControl`. Per visualizzare il contenuto, in **Esplora soluzioni**, aprire il menu di scelta rapida per il file e scegliere **Visualizza codice**.
 
 ### <a name="about-the-ui-project"></a>Sul progetto dell'interfaccia utente
 

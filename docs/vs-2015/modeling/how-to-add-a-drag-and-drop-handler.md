@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690556"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825401"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: Aggiungere un gestore di trascinamento della selezione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "65690556"
   
 - Le prime due sezioni descrivono i metodi alternativi per definire un gestore movimenti:  
   
-    - [Definizione di gestori movimenti con metodi ShapeElement viene sottoposto a override](#overrideShapeElement). È possibile eseguire l'override di `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e di altri metodi.  
-  
-    - [Definizione di gestori movimenti con MEF](#MEF). Usare questo metodo se si vuole che gli sviluppatori di terze parti possano definire i propri gestori per il linguaggio DSL. Gli utenti possono scegliere di installare le estensioni di terze parti dopo aver installato il linguaggio DSL.  
+  - [Definizione di gestori movimenti con metodi ShapeElement viene sottoposto a override](#overrideShapeElement). È possibile eseguire l'override di `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e di altri metodi.  
+
+  - [Definizione di gestori movimenti con MEF](#MEF). Usare questo metodo se si vuole che gli sviluppatori di terze parti possano definire i propri gestori per il linguaggio DSL. Gli utenti possono scegliere di installare le estensioni di terze parti dopo aver installato il linguaggio DSL.  
   
 - [Come decodificare l'elemento trascinato](#extracting). Gli elementi possono essere trascinati da una finestra o dal desktop, oltre che da un linguaggio DSL.  
   

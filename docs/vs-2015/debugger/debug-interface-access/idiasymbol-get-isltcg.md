@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d355a05ba2d805349a84a842a00b699d6c1ef272
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "65696288"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
@@ -45,7 +45,7 @@ HRESULT get_iSLTCG(
   
 ## <a name="requirements"></a>Requisiti  
   
-|Requisito|Descrizione|  
+|Requisito|DESCRIZIONE|  
 |-----------------|-----------------|  
 |Intestazione:|DIA2.h|  
 |Version:|DIA SDK v8.0|  

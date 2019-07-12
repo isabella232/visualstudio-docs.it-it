@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406931"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821583"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Visualizzare i thread nel debugger di Visual Studio usando la finestra thread (C#, Visual Basic, C++)
 Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'applicazione che sta eseguendo il debug. Per istruzioni dettagliate su come usare il **thread** finestra, vedere [procedura dettagliata: Eseguire il debug usando la finestra thread](../debugger/how-to-use-the-threads-window.md).
@@ -48,7 +48,7 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
 
 - **Nome**: Identifica ogni thread in base al nome, se presente, o come \<No Name >.
 
-- **percorso**: Mostra in cui il thread è in esecuzione. È possibile espandere questo percorso per visualizzare lo stack di chiamate completo per il thread.
+- **Località**: Mostra in cui il thread è in esecuzione. È possibile espandere questo percorso per visualizzare lo stack di chiamate completo per il thread.
 
 - **Priorità**: Colonna avanzata (nascosta per impostazione predefinita) che consente di visualizzare la priorità o precedenza assegnata dal sistema per ogni thread.
 
@@ -101,9 +101,9 @@ Una freccia gialla indica il thread corrente (e la posizione del puntatore esecu
 
 - Seguire uno dei passaggi seguenti:
 
-    - Fare doppio clic su un thread.
+  - Fare doppio clic su un thread.
 
-    - Fare doppio clic su un thread e selezionare **Switch per Thread**.
+  - Fare doppio clic su un thread e selezionare **Switch per Thread**.
 
 ## <a name="group-and-sort-threads"></a>Raggruppare e ordinare i thread
  Quando si raggruppano i thread, nella tabella viene visualizzata un'intestazione per ogni gruppo. L'intestazione contiene una descrizione del gruppo, ad esempio **Thread di lavoro** o **Thread senza flag**, e un controllo albero. I thread membro di ciascuno gruppo appaiono sotto l'intestazione del gruppo. Se si desidera nascondere i thread membro di un gruppo, usare il controllo albero per comprimere il gruppo.

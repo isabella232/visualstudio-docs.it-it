@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417768"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823271"
 ---
 # <a name="model-your-app39s-architecture"></a>Modellare l'applicazione&#39;architettura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,9 +244,9 @@ Per garantire che il sistema software o l'applicazione soddisfi degli utenti esi
   
 - Modello delle parti principali e relative relazioni. Potrebbe trattarsi di classi o componenti e interfacce, con associazioni e dipendenze tra di loro. Gli elementi in genere rientrano in due categorie:  
   
-    - Elementi che lo sviluppatore deve replicare in ogni parte del codice in cui viene usato il modello. È possibile usare i tipi di modello per descriverli. Per altre informazioni, vedere [diagrammi caso d'uso UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Elementi che descrivono le classi di framework che lo sviluppatore deve usare.  
+  - Elementi che lo sviluppatore deve replicare in ogni parte del codice in cui viene usato il modello. È possibile usare i tipi di modello per descriverli. Per altre informazioni, vedere [diagrammi caso d'uso UML: informazioni di riferimento](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Elementi che descrivono le classi di framework che lo sviluppatore deve usare.  
   
 - Modello delle interazioni tra le parti, usando i diagrammi di sequenza o di attività.  
   

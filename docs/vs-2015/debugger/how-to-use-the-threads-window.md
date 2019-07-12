@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685326"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824252"
 ---
 # <a name="how-to-use-the-threads-window"></a>Procedura: Usare la finestra Thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 - Effettuare uno dei passaggi seguenti:  
   
-    - Fare doppio clic su un thread.  
-  
-    - Fare doppio clic su un thread e fare clic su **passa al Thread**.  
-  
-         La freccia gialla viene visualizzata accanto al nuovo thread attivo. Il contorno grigio di una freccia identifica il thread nel quale l'esecuzione si è interrotta nel debugger.  
+  - Fare doppio clic su un thread.  
+
+  - Fare doppio clic su un thread e fare clic su **passa al Thread**.  
+
+    La freccia gialla viene visualizzata accanto al nuovo thread attivo. Il contorno grigio di una freccia identifica il thread nel quale l'esecuzione si è interrotta nel debugger.  
   
 ## <a name="grouping-and-sorting-threads"></a>Raggruppamento e ordinamento dei thread  
  Quando si raggruppano i thread, nella tabella viene visualizzata un'intestazione per ogni gruppo. L'intestazione contiene una descrizione del gruppo, ad esempio "Thread di lavoro" o "Thread senza flag", e un controllo albero. I thread membro di ciascuno gruppo appaiono sotto l'intestazione del gruppo. Per nascondere i thread membro di un gruppo, è possibile usare il controllo albero per comprimere il gruppo.  
@@ -116,11 +116,11 @@ Nel **thread** finestra, è possibile esaminare e utilizzare i thread nell'appli
   
 - Nella barra degli strumenti nella parte superiore della finestra **Thread** passare alla casella **Cerca** e:  
   
-    - Digitare una stringa di ricerca, quindi premere INVIO.  
-  
-         \- oppure -  
-  
-    - Fare clic sull'elenco di riepilogo a discesa accanto al **ricerca** casella e selezionare una stringa di ricerca di una ricerca precedente.  
+  - Digitare una stringa di ricerca, quindi premere INVIO.  
+
+    \- oppure -  
+
+  - Fare clic sull'elenco di riepilogo a discesa accanto al **ricerca** casella e selezionare una stringa di ricerca di una ricerca precedente.  
   
 - (Facoltativo) Per includere lo stack di chiamate completo nella ricerca, selezionare **Cerca nello stack di chiamate**.  
   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15e0d305140e6e04464091df59432a2cd261796
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993484"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821932"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedura: Aggiungere un gestore di trascinamento della selezione
 
@@ -126,13 +126,13 @@ Per individuare i formati in cui sono disponibili le informazioni sull'origine d
 
 - <xref:System.Windows.Forms.IDataObject>  `Data` -Questa proprietà contiene le versioni serializzate degli oggetti di origine, in genere in più formati. Le funzioni più utili sono:
 
-    - getdataformats () - Elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
+  - getdataformats () - Elenca i formati in cui è possibile decodificare l'oggetto trascinato. Se, ad esempio, l'utente trascina un file dal desktop, i formati disponibili includono il nome file ("`FileNameW`").
 
-    - `diagramEventArgs.Data.GetData(format)` -Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
+  - `diagramEventArgs.Data.GetData(format)` -Decodifica l'oggetto trascinato nel formato specificato. Eseguire il cast dell'oggetto al tipo appropriato. Ad esempio:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [come inviare i riferimenti ModelBus in un'operazione di trascinamento](#to-send-an-object-from-a-source-dsl).
+    È anche possibile trasmettere oggetti, quali i riferimenti ModelBus, dall'origine nel formato personalizzato. Per altre informazioni, vedere [come inviare i riferimenti ModelBus in un'operazione di trascinamento](#to-send-an-object-from-a-source-dsl).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Usare questa proprietà se si desidera che gli utenti di trascinare gli elementi da un modello DSL o un modello UML. Un prototipo di gruppo di elementi contiene uno o più oggetti, collegamenti e i valori delle proprietà. Viene usato anche nelle operazioni Incolla e quando si aggiunge un elemento dalla casella degli strumenti. In un prototipo, gli oggetti e i tipi vengono identificati dal GUID. Ad esempio, questo codice consente all'utente di trascinare gli elementi della classe da un diagramma UML o da Esplora modelli UML:
 
@@ -574,6 +574,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Vedere anche
 
 - [Personalizzazione del comportamento di copia](../modeling/customizing-copy-behavior.md)
-- [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md)
+- [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

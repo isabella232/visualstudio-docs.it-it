@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433158"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825935"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definire un gestore modelli in un diagramma di modellazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,34 +282,34 @@ In Visual Studio è possibile definire i comandi eseguiti quando l'utente trasci
   
 - `ShapeElement target`. Forma o diagramma in cui l'utente ha trascinato un elemento.  
   
-     `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. In alternativa, eseguire il wrapping l'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).  
-  
-    - Per ottenere un oggetto `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Per ottenere l'elemento del modello di destinazione per l'operazione di trascinamento o di doppio clic:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         È possibile eseguire il cast di questo elemento in un tipo di elemento più specifico.  
-  
-    - Per ottenere l'archivio modelli UML che contiene il modello UML:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Per ottenere l'accesso all'host e al provider di servizi:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
+    `ShapeElement` è una classe nell'implementazione sottostante gli strumenti di modellazione UML. Per ridurre il rischio di porre il modello UML e i diagrammi in uno stato non coerente, evitare di usare i metodi di questa classe direttamente. In alternativa, eseguire il wrapping l'elemento in un `IShape`e quindi usare i metodi descritti in [visualizzare un modello UML nei diagrammi](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Per ottenere un oggetto `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Per ottenere l'elemento del modello di destinazione per l'operazione di trascinamento o di doppio clic:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Per ottenere l'archivio modelli UML che contiene il modello UML:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Per ottenere l'accesso all'host e al provider di servizi:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
 - `DiagramDragEventArgs eventArgs`. Questo parametro contiene il formato serializzato dell'oggetto di origine di un'operazione di trascinamento:  
   

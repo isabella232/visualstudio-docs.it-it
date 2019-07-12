@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089575"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823606"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
   
 - Effettuare uno dei passaggi indicati di seguito.  
   
-    - Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.  
-  
-    - Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.  
-  
+  - Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.  
+
+  - Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Per visualizzare lo stack di chiamate di un evento  
   
 - Nel grafico della sequenza temporale fare clic sulla barra dell'evento.  

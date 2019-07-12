@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445665"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823568"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammi di sequenza UML: Indicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 - Annotare le eccezioni o le alternative che potrebbero essere eseguite al posto della sequenza tipica visualizzata. Ad esempio, "Il cliente può ignorare il resto della sequenza".  
   
-    - Valutare l'uso dei frammenti come alternativa più formale rispetto a questo tipo di nota. Vedere [che descrive le strutture di controllo con frammenti](#Fragments)  
+  - Valutare l'uso dei frammenti come alternativa più formale rispetto a questo tipo di nota. Vedere [che descrive le strutture di controllo con frammenti](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Scelta dell'ambito del diagramma  
  È importante chiarire cosa si vuole visualizzare nel diagramma.  
@@ -372,13 +372,13 @@ In Visual Studio, è possibile creare un *diagramma di sequenza* per visualizzar
   
 - Fare clic sul messaggio che si desidera spostare e quindi fare clic su **passa a diagramma**.  
   
-     Visual Studio:  
-  
-    - Sostituisce con un utilizzo interazione il messaggio selezionato e tutti i messaggi sussidiari.  
-  
-    - Sposta i messaggi sostituiti in un nuovo diagramma di sequenza.  
-  
-    - Crea un collegamento tra l'utilizzo interazione e il nuovo diagramma di sequenza.  
+  Visual Studio:  
+
+  - Sostituisce con un utilizzo interazione il messaggio selezionato e tutti i messaggi sussidiari.  
+
+  - Sposta i messaggi sostituiti in un nuovo diagramma di sequenza.  
+
+  - Crea un collegamento tra l'utilizzo interazione e il nuovo diagramma di sequenza.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Per spostarsi sulla sequenza a cui fa riferimento un utilizzo interazione  
   

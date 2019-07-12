@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9865d917e24abf58bdcf63e8abb21370f223aad2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402306"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64806990"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 Restituisce un indicatore di una convenzione di chiamata di metodi.
@@ -43,7 +43,7 @@ HRESULT get_callingConvention ( 
 
 ## <a name="requirements"></a>Requisiti
 
-|Requisito|Descrizione|
+|Requisito|DESCRIZIONE|
 |-----------------|-----------------|
 |Intestazione:|DIA2.h|
 |Version:|DIA SDK v7.0|

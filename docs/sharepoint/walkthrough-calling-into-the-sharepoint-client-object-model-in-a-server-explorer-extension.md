@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835949"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824156"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procedura dettagliata: La chiamata nel modello a oggetti client SharePoint in un'estensione di Esplora Server
   Questa procedura dettagliata illustra come chiamare il modello a oggetti client SharePoint da un'estensione per il **connessioni di SharePoint** nodo **Esplora Server**. Per altre informazioni su come usare il modello a oggetti client SharePoint, vedere [chiamare i modelli a oggetti SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -27,9 +27,9 @@ ms.locfileid: "66835949"
 
 - Creazione di un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] estensione che consente di estendere il **connessioni di SharePoint** nodo del **Esplora Server** nei modi seguenti:
 
-    - L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
+  - L'estensione aggiunge un **raccolta Web Part** nodo in ogni nodo nel sito di SharePoint **Esplora Server**. Il nuovo nodo contiene i nodi figlio che rappresentano ogni Web Part nella raccolta di Web Part sul sito.
 
-    - L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part che rappresenta il nodo.
+  - L'estensione definisce un nuovo tipo di nodo che rappresenta un'istanza di Web Part. Questo nuovo tipo di nodo è la base per i nodi figlio sotto la nuova **raccolta Web Part** nodo. Il nuovo tipo di nodo di Web Part Visualizza le informazioni nel **proprietà** finestra sulla Web Part che rappresenta il nodo.
 
 - Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire l'estensione.
 

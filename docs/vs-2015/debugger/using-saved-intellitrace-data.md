@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684385"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823465"
 ---
 # <a name="using-saved-intellitrace-data"></a>Uso dei dati di IntelliTrace salvati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 - Se il file .iTrace viene associato a un elemento di lavoro Team Foundation Server, seguire questi passaggi nell'elemento di lavoro:  
   
-    - In **Tutti i collegamenti**individuare il file .iTrace. Aprirlo.  
-  
-         \- oppure -  
-  
-    - In **Passaggi ripetizione bug**scegliere il collegamento **IntelliTrace** .  
+  - In **Tutti i collegamenti**individuare il file .iTrace. Aprirlo.  
+
+        \- or -  
+
+  - In **Passaggi ripetizione bug**scegliere il collegamento **IntelliTrace** .  
   
 > [!TIP]
 > Se si chiude il file IntelliTrace durante il debug, è possibile riaprirlo facilmente. Scegliere **IntelliTrace** dal menu **Debug**, quindi selezionare **Mostra riepilogo log**. È inoltre possibile scegliere **Mostra riepilogo log** nella finestra **IntelliTrace** . Questo comando è disponibile solo se si esegue il debug con IntelliTrace.  
@@ -85,7 +85,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
   
 - Per ordinare i dati, selezionare un'intestazione di colonna.  
   
-- Per filtrare i dati, usare la casella di ricerca. La ricerca di testo normale funziona su tutte le colonne, ad eccezione di quelle dell'ora. È inoltre possibile filtrare le ricerche a una determinata colonna con un filtro per colonna. Digitare il nome della colonna senza spazi, due punti (**:**) e il valore di ricerca. Usare un punto e virgola (**;**) per aggiungere un'altra colonna e un altro valore di ricerca.  
+- Per filtrare i dati, usare la casella di ricerca. La ricerca di testo normale funziona su tutte le colonne, ad eccezione di quelle dell'ora. È inoltre possibile filtrare le ricerche a una determinata colonna con un filtro per colonna. Digitare il nome della colonna senza spazi, due punti ( **:** ) e il valore di ricerca. Usare un punto e virgola ( **;** ) per aggiungere un'altra colonna e un altro valore di ricerca.  
   
      Ad esempio, per trovare gli eventi di prestazioni con la parola "slow" nella colonna **Descrizione** , digitare:  
   
@@ -225,7 +225,7 @@ Passare a specifici punti nell'esecuzione di un'applicazione quando si avvia il 
 |**Colonna**|**Mostra**|  
 |----------------|-------------------|  
 |**ID**|Numero ID del thread|  
-|**Name**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|  
+|**Nome**|Nome del thread. I thread senza nome vengono visualizzati come "\<Nessun nome>".|  
 |**Ora di inizio**|Ora di creazione del thread|  
 |**Ora di fine**|Ora di completamento del thread|  
   

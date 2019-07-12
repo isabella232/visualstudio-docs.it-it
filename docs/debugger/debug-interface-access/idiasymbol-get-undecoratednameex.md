@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400551"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64783873"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera o parte di un nome non decorato per C++ decorati nome (collegamento).
@@ -52,7 +52,7 @@ HRESULT get_undecoratedNameEx( 
 > [!NOTE]
 > I nomi di flag non sono definiti in DIA SDK, pertanto è necessario aggiungere le dichiarazioni nel codice o usare i valori non elaborati.
 
-|Flag|Value|Descrizione|
+|Flag|Valore|Descrizione|
 |----------|-----------|-----------------|
 |UNDNAME_COMPLETE|0x0000|Abilita undecoration completo.|
 |UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Rimuove gli iniziali di caratteri di sottolineatura da parole chiave estese Microsoft.|

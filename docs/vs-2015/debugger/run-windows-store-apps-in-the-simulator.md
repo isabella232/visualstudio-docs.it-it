@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683539"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823849"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Eseguire applicazioni Windows Store nel simulatore
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,30 +55,30 @@ Il simulatore di Visual Studio per le app di Windows Store è un'applicazione de
  Imposta la modalità di interazione per i movimenti zoom indietro e avanti di due dita.  
   
 - ![Destinazione di simulatore due dita](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - La doppia icona di destinazione indica la posizione di due dita sullo schermo del dispositivo.  
-  
-    - Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.  
-  
-    - Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.  
-  
+
+  - La doppia icona di destinazione indica la posizione di due dita sullo schermo del dispositivo.  
+
+  - Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.  
+
+  - Ruota la rotellina del mouse avanti o indietro per modificare la distanza simulata delle due dita prima di eseguire il movimento zoom avanti o indietro.  
+
 - ![Avvicinare le dita, eseguire lo zoom avanti e destinazioni di rotazione](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.  
-  
-    - Premi il pulsante sinistro e ruota la rotellina del mouse in avanti (lontano da te) per fare zoom indietro.  
+
+  - Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per fare zoom avanti.  
+
+  - Premi il pulsante sinistro e ruota la rotellina del mouse in avanti (lontano da te) per fare zoom indietro.  
   
 ## <a name="object-rotation"></a>Rotazione di oggetti  
  Il pulsante **Rotazione emulazione tocco** imposta la modalità di interazione sui movimenti di rotazione usando due dita.  
   
 - Sposta il mouse per posizionare le icone sopra l'oggetto sullo schermo del dispositivo.  
   
-    - Ruota la rotellina del mouse avanti o indietro per modificare l'orientamento simulato delle due dita prima di ruotare l'oggetto.  
-  
+  - Ruota la rotellina del mouse avanti o indietro per modificare l'orientamento simulato delle due dita prima di ruotare l'oggetto.  
+
 - Premi il pulsante sinistro e ruota la rotellina indietro (verso di te) per ruotare l'oggetto in senso antiorario. Mente ruoti la rotella del mouse, una delle due icone di destinazione ruota intorno all'altra per indicare la dimensione relativa della rotazione.  
-  
-    - Premi il pulsante sinistro e ruota la rotellina del mouse avanti (lontano di te) per ruotare l'oggetto in senso orario.  
-  
+
+  - Premi il pulsante sinistro e ruota la rotellina del mouse avanti (lontano di te) per ruotare l'oggetto in senso orario.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Abilitare o disabilitare la modalità Sempre in primo piano  
  Puoi impostare la finestra del simulatore in modo che sia sempre in primo piano rispetto ad altre finestre. Il pulsante **Attiva/disattiva finestra in primo piano** abilita o disabilita la modalità **Sempre in primo piano** della finestra del simulatore.  
   

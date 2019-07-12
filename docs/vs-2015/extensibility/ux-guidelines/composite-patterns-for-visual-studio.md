@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55ba291135b41d534d8f91cae5d6257a26d4e34c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2cd3c16437829e9701a2354b4f40c557a654f466
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686489"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824107"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modelli compositi per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 - **Sempre** tenta di creare un indicatore che riepiloga le informazioni che vengono resi disponibili. Si consiglia di fornire un conteggio del numero di elementi di dati disponibili (ad esempio, "3 riferimenti" anziché semplicemente "Riferimenti") o pensare a un altro modo per riepilogare i dati.
 
-    - In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
+  - In casi in cui i dati per un indicatore non possono sempre essere calcolati e visualizzati immediatamente si consiglia di fornire commenti e suggerimenti progressivo come vengono calcolati i valori. Si consideri ad esempio di animazione delle modifiche che riflettono gli aggiornamenti ai dati disponibili, simili al modo in cui che viene aggiornato nel live tile di posta elettronica in Windows Phone come il numero di messaggi di posta elettronica non letta aumenta.
 
 - **Mai** aggiungere ulteriori indicatori rispetto a un utente può richiedere ragionevolmente per una determinata parte del contenuto. Gli indicatori di ambiente devono essere utili senza richiedere alcuna interazione da parte dell'utente. Gli indicatori di perdono loro ambiente se richiedono overflow e altri controlli di gestione per spostarle nella visualizzazione.
 
@@ -237,11 +237,11 @@ Pattern compositi combinano gli elementi di interazione e progettazione di confi
 
 - **Sempre** richiedono all'utente di eseguire alcuni movimenti esplicito per aprire il contenuto aggiuntivo. I movimenti open comuni includono:
 
-    - **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
+  - **Al passaggio del mouse:** le descrizioni comandi o contenuto informativo interattivo
 
-    - **Comando esplicita:** presenter inline
+  - **Comando esplicita:** presenter inline
 
-    - **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
+  - **Fare doppio clic sull'indicatore di ambiente:** Finestra popup CodeLens
 
 - **Sempre** ignorare il contenuto di dettaglio ogni volta che l'utente preme il tasto Esc.
 

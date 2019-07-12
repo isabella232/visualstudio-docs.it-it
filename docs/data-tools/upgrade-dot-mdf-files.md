@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565160"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821669"
 ---
 # <a name="upgrade-mdf-files"></a>Aggiornare i file con estensione mdf
 
@@ -95,9 +95,9 @@ Prima di aggiornare un database, considerare i criteri seguenti:
 
 - In Visual Studio, aprire il progetto senza l'aggiornamento.
 
-    - Per eseguire il progetto, selezionare la **F5** chiave.
+  - Per eseguire il progetto, selezionare la **F5** chiave.
 
-    - Per modificare il database, aprire il *mdf* del file in **Esplora soluzioni**, espandere il nodo in **Esplora Server** per lavorare con il database.
+  - Per modificare il database, aprire il *mdf* del file in **Esplora soluzioni**, espandere il nodo in **Esplora Server** per lavorare con il database.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Per rendere SQL Server Express il motore di database predefinito
 

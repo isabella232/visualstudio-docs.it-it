@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715219"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821361"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Strumenti di set di dati in Visual Studio
 
@@ -75,13 +75,13 @@ Visual Studio offre strumenti per semplificare l'utilizzo di set di dati. Il flu
 
 - Usare la **configurazione guidata TableAdapter** per specificare la query o stored procedure che consente di popolare il set di dati e le operazioni di database (update, delete e così via) da implementare. Per altre informazioni, vedere gli argomenti seguenti:
 
-    - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Compilare i set di dati usando oggetti TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Modificare i dati nei set di dati](../data-tools/edit-data-in-datasets.md)
+  - [Modificare i dati nei set di dati](../data-tools/edit-data-in-datasets.md)
 
-    - [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
+  - [Convalida dei dati nei set di dati](../data-tools/validate-data-in-datasets.md)
 
-    - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
+  - [Salvare i dati di nuovo nel database](../data-tools/save-data-back-to-the-database.md)
 
 - Eseguire query e cercare i dati nel set di dati. Per altre informazioni, vedere [eseguire query sui set di dati](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Abilita [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) sui dati in un <xref:System.Data.DataSet> oggetto. Per altre informazioni, vedere [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

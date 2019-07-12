@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342205"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824946"
 ---
 # <a name="command-implementation"></a>Implementazione del comando
 Per implementare un comando in un pacchetto VSPackage, è necessario eseguire le attività seguenti:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Se l'implementazione di uno dei due metodi riconosce il GUID e il comando, quindi il metodo deve impostare il campo flag dei comandi di ogni comando (nelle `prgCmds` parametro) con i seguenti <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> flag:
 
-    - `OLECMDF_SUPPORTED`: Il comando è supportato.
+  - `OLECMDF_SUPPORTED`: Il comando è supportato.
 
-    - `OLECMDF_INVISIBLE`: Il comando non deve essere visibile.
+  - `OLECMDF_INVISIBLE`: Il comando non deve essere visibile.
 
-    - `OLECMDF_LATCHED`: Il comando viene attivato e viene visualizzato per sono state controllate.
+  - `OLECMDF_LATCHED`: Il comando viene attivato e viene visualizzato per sono state controllate.
 
-    - `OLECMDF_ENABLED`: Il comando è abilitato.
+  - `OLECMDF_ENABLED`: Il comando è abilitato.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: Il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: Il comando deve essere nascosto quando viene visualizzato un menu di scelta rapida.
 
-    - `OLECMDF_NINCHED`: Il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).
+  - `OLECMDF_NINCHED`: Il comando è un controller di menu e non è abilitato, ma l'elenco di menu a discesa non è vuoto e è ancora disponibile. (Questo flag viene raramente utilizzato).
 
 - Se il comando è stato definito nel *vsct* file con il `TextChanges` flag, impostare i parametri seguenti:
 
-    - Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.
+  - Impostare il `rgwz` elemento del `pCmdText` parametro per il nuovo testo del comando.
 
-    - Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.
+  - Impostare il `cwActual` elemento del `pCmdText` parametro per la dimensione della stringa di comando.
 
 Inoltre, assicurarsi che il contesto corrente non è una funzione di automazione, a meno che il comando è concepito appositamente per la gestione delle funzioni di automazione.
 

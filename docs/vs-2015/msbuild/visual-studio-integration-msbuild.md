@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a1dbe6d96dd9e35b1bfac4a84fb1006c2b99c69
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683847"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825417"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrazione di Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. In **Esplora soluzioni**aprire il menu di scelta rapida per il progetto e scegliere **Scarica progetto**.  
   
-     Il progetto verrà contrassegnato come **(non disponibile)**.  
+     Il progetto verrà contrassegnato come **(non disponibile)** .  
   
-2. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>**.  
+2. In **Esplora soluzioni** aprire il menu di scelta rapida per il progetto non disponibile e scegliere **Modifica \<File progetto>** .  
   
      Il file del progetto verrà aperto nell'editor XML di Visual Studio.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Riferimenti dell'assembly:  
   
-     Il sistema di progetto chiama una destinazione con il nome noto `ResolveAssemblyReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `ReferencePath`. Ognuno di questi elementi deve avere una specifica dell'elemento (il valore dell'attributo `Include` di un elemento) che contiene il percorso completo del riferimento. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre ai nuovi metadati riportati di seguito:  
-  
-    - `CopyLocal`, che indica se l'assembly deve essere copiato nella cartella di output, impostato su true o false.  
-  
-    - `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.  
-  
-    - `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  Il sistema di progetto chiama una destinazione con il nome noto `ResolveAssemblyReferences`. Tale destinazione deve produrre elementi con il nome di tipi di elementi `ReferencePath`. Ognuno di questi elementi deve avere una specifica dell'elemento (il valore dell'attributo `Include` di un elemento) che contiene il percorso completo del riferimento. Gli elementi devono disporre di tutti i metadati derivati dagli elementi di input passati, oltre ai nuovi metadati riportati di seguito:  
+
+  - `CopyLocal`, che indica se l'assembly deve essere copiato nella cartella di output, impostato su true o false.  
+
+  - `OriginalItemSpec`, che contiene la specifica dell'elemento originale del riferimento.  
+
+  - `ResolvedFrom`, impostato su "{TargetFrameworkDirectory}" se è stato risolto dalla directory [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
 - Riferimenti COM:  
   

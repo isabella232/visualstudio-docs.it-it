@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd251ff10700df0ca01599b4247266d4375a4250
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746665"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821310"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace per Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -74,19 +74,19 @@ Di seguito sono riportati alcuni esempi sul modo in cui IntelliTrace semplifica 
 
 - L'applicazione ha danneggiato un file di dati, ma non si sa dove si è verificato l'evento.
 
-     Senza IntelliTrace, sarebbe necessario esaminare il codice per trovare tutti gli accessi possibili al file, inserire punti di interruzione in corrispondenza di tali accessi e quindi rieseguire l'applicazione per individuare dove si è verificato il problema. Con IntelliTrace è possibile vedere tutti gli eventi di accesso ai file raccolti e dettagli specifici sull'applicazione nel momento in cui si è verificato ciascun evento.
+  Senza IntelliTrace, sarebbe necessario esaminare il codice per trovare tutti gli accessi possibili al file, inserire punti di interruzione in corrispondenza di tali accessi e quindi rieseguire l'applicazione per individuare dove si è verificato il problema. Con IntelliTrace è possibile vedere tutti gli eventi di accesso ai file raccolti e dettagli specifici sull'applicazione nel momento in cui si è verificato ciascun evento.
 
 - Si verifica un'eccezione.
 
-     Senza IntelliTrace si ottiene un messaggio su un'eccezione ma non si dispone di molte informazioni sugli eventi che ne hanno causato la comparsa. È possibile esaminare lo stack di chiamate per individuare la catena che ha generato l'eccezione, ma non è possibile visualizzare la sequenza di eventi che si sono verificati durante tali chiamate. Con IntelliTrace è possibile esaminare gli eventi che si sono verificati prima dell'eccezione.
+  Senza IntelliTrace si ottiene un messaggio su un'eccezione ma non si dispone di molte informazioni sugli eventi che ne hanno causato la comparsa. È possibile esaminare lo stack di chiamate per individuare la catena che ha generato l'eccezione, ma non è possibile visualizzare la sequenza di eventi che si sono verificati durante tali chiamate. Con IntelliTrace è possibile esaminare gli eventi che si sono verificati prima dell'eccezione.
 
 - Un bug o un arresto anomalo si verifica in un'applicazione distribuita.
 
-     Per le app basate su Microsoft Azure, è possibile configurare la raccolta di dati IntelliTrace prima di pubblicare l'applicazione. Mentre l'applicazione è in esecuzione, IntelliTrace salva i dati in un file .iTrace. Visualizzare [eseguire il Debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+  Per le app basate su Microsoft Azure, è possibile configurare la raccolta di dati IntelliTrace prima di pubblicare l'applicazione. Mentre l'applicazione è in esecuzione, IntelliTrace salva i dati in un file .iTrace. Visualizzare [eseguire il Debug di un servizio Cloud pubblicato con IntelliTrace e Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
-     Per le app Web ASP.NET ospitate in IIS 7.0, 7.5 e 8.0 o le applicazioni SharePoint 2010 o SharePoint 2013, utilizzare Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012, per salvare i dati IntelliTrace in un file .iTrace.
+  Per le app Web ASP.NET ospitate in IIS 7.0, 7.5 e 8.0 o le applicazioni SharePoint 2010 o SharePoint 2013, utilizzare Microsoft Monitoring Agent, in modalità autonoma o con System Center 2012, per salvare i dati IntelliTrace in un file .iTrace.
 
-     Si tratta di un'opzione utile per diagnosticare problemi con le app in fase di distribuzione. Visualizzare [usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+  Si tratta di un'opzione utile per diagnosticare problemi con le app in fase di distribuzione. Visualizzare [usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ## <a name="WhatData"></a> Quali dati raccoglie IntelliTrace?
 
@@ -96,9 +96,9 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 
 - **Eventi del debugger**
 
-     IntelliTrace registra sempre gli eventi che si verificano nel debugger di Visual Studio. Ad esempio, l'avvio dell'applicazione è un evento del debugger. Altri eventi del debugger sono eventi di arresto, ossia quelli che interrompono l'esecuzione dell'applicazione, ad esempio il rilevamento di un punto di interruzione, il rilevamento di un punto di analisi o l'esecuzione di un comando di **esecuzione**.
+  IntelliTrace registra sempre gli eventi che si verificano nel debugger di Visual Studio. Ad esempio, l'avvio dell'applicazione è un evento del debugger. Altri eventi del debugger sono eventi di arresto, ossia quelli che interrompono l'esecuzione dell'applicazione, ad esempio il rilevamento di un punto di interruzione, il rilevamento di un punto di analisi o l'esecuzione di un comando di **esecuzione**.
 
-     Per impostazione predefinita, ai fini delle prestazioni, IntelliTrace non registra ogni possibile valore per un evento del debugger. Vengono invece registrati questi valori:
+  Per impostazione predefinita, ai fini delle prestazioni, IntelliTrace non registra ogni possibile valore per un evento del debugger. Vengono invece registrati questi valori:
 
   - Valori nella finestra **Variabili locali**. Per visualizzarli, mantenere aperta la finestra **Variabili locali**.
 
@@ -110,29 +110,29 @@ Per impostazione predefinita, IntelliTrace registra solo gli eventi di IntelliTr
 
 - **Eccezioni**
 
-     Tramite IntelliTrace vengono registrati il tipo di eccezione e il messaggio per questi tipi di eccezione:
+  Tramite IntelliTrace vengono registrati il tipo di eccezione e il messaggio per questi tipi di eccezione:
 
-    - Eccezioni gestite in cui l'eccezione viene generata e rilevata
+  - Eccezioni gestite in cui l'eccezione viene generata e rilevata
 
-    - Eccezioni non gestite
+  - Eccezioni non gestite
 
 - **Eventi .NET Framework**
 
-   Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Ad esempio, per un <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> evento, IntelliTrace raccoglie lo stato di casella di controllo e il testo.
+  Per impostazione predefinita, tramite IntelliTrace vengono registrati gli eventi .NET Framework più comuni. Ad esempio, per un <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> evento, IntelliTrace raccoglie lo stato di casella di controllo e il testo.
 
 - **Eventi delle applicazioni SharePoint 2010 e SharePoint 2013**
 
-     È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015 o versioni successive, una versione precedente di Visual Studio Ultimate, oppure [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) in esecuzione nel **traccia** modalità.
+  È possibile registrare eventi di profili utente e un subset di eventi del sistema di registrazione unificato per le applicazioni SharePoint 2010 e 2013 in esecuzione all'esterno di Visual Studio. È possibile salvare questi eventi in un file .iTrace. Richiede Visual Studio Enterprise 2015 o versioni successive, una versione precedente di Visual Studio Ultimate, oppure [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) in esecuzione nel **traccia** modalità.
 
-     Quando si apre il file .iTrace, immettere un ID di correlazione SharePoint per trovare la richiesta Web corrispondente, visualizzare gli eventi registrati e avviare il debug da un evento specifico. Se il file contiene eccezioni non gestite, è possibile scegliere un ID di correlazione per avviare il debug di un'eccezione.
+  Quando si apre il file .iTrace, immettere un ID di correlazione SharePoint per trovare la richiesta Web corrispondente, visualizzare gli eventi registrati e avviare il debug da un evento specifico. Se il file contiene eccezioni non gestite, è possibile scegliere un ID di correlazione per avviare il debug di un'eccezione.
 
-     Vedere:
+  Vedere:
 
-    - [Usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
+  - [Usare l'agente di raccolta autonomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [Usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)
+  - [Usare i dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)
 
-    - [Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [Procedura dettagliata: Debug di un'applicazione SharePoint tramite IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Acquisisci snapshot**
 

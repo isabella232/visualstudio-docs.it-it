@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430349"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825977"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procedura dettagliata: Estendere un tipo di elemento di progetto SharePoint
   È possibile usare la **Business Data Connectivity Model** elemento del progetto per creare un modello per il servizio di integrazione applicativa dei dati (BDC) in SharePoint. Per impostazione predefinita, quando si crea un modello utilizzando questo elemento del progetto, i dati nel modello non vengono visualizzati agli utenti. È anche necessario creare un elenco esterno in SharePoint per consentire agli utenti di visualizzare i dati.
@@ -28,9 +28,9 @@ ms.locfileid: "63430349"
 
 - Creazione di un'estensione di Visual Studio che esegue due attività principali:
 
-    - Genera un elenco esterno che consente di visualizzare i dati in un modello di integrazione applicativa dei dati. L'estensione utilizza il modello a oggetti per il sistema di progetto SharePoint per generare una *Elements* file che definisce l'elenco. Aggiunge anche il file al progetto in modo che venga distribuito insieme al modello di integrazione applicativa dei dati.
+  - Genera un elenco esterno che consente di visualizzare i dati in un modello di integrazione applicativa dei dati. L'estensione utilizza il modello a oggetti per il sistema di progetto SharePoint per generare una *Elements* file che definisce l'elenco. Aggiunge anche il file al progetto in modo che venga distribuito insieme al modello di integrazione applicativa dei dati.
 
-    - Aggiunge una voce di menu di scelta rapida per il **Business Data Connectivity Model** gli elementi nei **Esplora soluzioni**. Gli sviluppatori possono fare clic su questa voce di menu per generare un elenco esterno per il modello di integrazione applicativa dei dati.
+  - Aggiunge una voce di menu di scelta rapida per il **Business Data Connectivity Model** gli elementi nei **Esplora soluzioni**. Gli sviluppatori possono fare clic su questa voce di menu per generare un elenco esterno per il modello di integrazione applicativa dei dati.
 
 - Creazione di un pacchetto di Visual Studio Extension (VSIX) per distribuire l'assembly dell'estensione.
 

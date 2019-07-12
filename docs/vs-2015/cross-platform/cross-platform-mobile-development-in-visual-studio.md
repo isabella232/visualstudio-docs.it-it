@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698842"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824182"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Sviluppo di app per dispositivi mobili multipiattaforma in Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65698842"
 
 - [Compilare un'app per Android, iOS e Windows (.NET Framework)](#NET)
 
-    - [Creare un'unica base di codice per Android, iOS e Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Creare un'unica base di codice per Android, iOS e Windows](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Sviluppare per dispositivi Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Sviluppare per dispositivi Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Compilare un'app per Android, iOS e Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ ms.locfileid: "65698842"
 |[Informazioni sull'emulatore di Visual Studio per Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Creare un'unica base di codice per Android, iOS e Windows
- È possibile compilare app native per Windows, iOS e Android tramite C# o F# (Visual Basic non è attualmente supportato).  Per iniziare, installare Visual Studio 2015, selezionare l'opzione **Personalizzato** nel programma di installazione e selezionare la casella sotto **Sviluppo di app per dispositivi mobili multipiattaforma > C#/ .NET (Xamarin)**. È possibile iniziare anche con il [programma di installazione di Xamarin](https://www.xamarin.com/download), necessario per installare Xamarin per Visual Studio 2013.
+ È possibile compilare app native per Windows, iOS e Android tramite C# o F# (Visual Basic non è attualmente supportato).  Per iniziare, installare Visual Studio 2015, selezionare l'opzione **Personalizzato** nel programma di installazione e selezionare la casella sotto **Sviluppo di app per dispositivi mobili multipiattaforma > C#/ .NET (Xamarin)** . È possibile iniziare anche con il [programma di installazione di Xamarin](https://www.xamarin.com/download), necessario per installare Xamarin per Visual Studio 2013.
 
  Se è già stato installato Visual Studio 2015, eseguire il programma di installazione da **Pannello di controllo > Programmi e funzionalità** e selezionare la stessa opzione **Personalizzato** per Xamarin, come illustrato in precedenza.
 

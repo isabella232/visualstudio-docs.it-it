@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439926"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826252"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Debug ASP.NET: Requisiti di sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
   
 - Debug locale in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e l'applicazione Web vengono eseguiti nello stesso computer. Questo scenario presenta due varianti:  
   
-    - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede nel file system.  
-  
-    - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede in un sito Web IIS.  
+  - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede nel file system.  
+
+  - Il codice [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] risiede in un sito Web IIS.  
   
 - Il debug remoto in cui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è in esecuzione in un computer client ed esegue il debug di un'applicazione Web in esecuzione in un computer server remoto.  
   
@@ -44,7 +44,7 @@ In questo argomento vengono descritti i requisiti software e di sicurezza per gl
   
  Il nome del processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varia in base allo scenario di debug e alla versione di IIS. Per altre informazioni, vedere [Procedura: Trovare il nome del processo ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)**. Per altre informazioni, vedere [Procedura: Eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ È possibile modificare l'account utente con cui il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] viene eseguito modificando il file machine.config nel server su cui è in esecuzione IIS. Il modo migliore per eseguire questa operazione è usare **Gestione Internet Information Services (IIS)** . Per altre informazioni, vedere [Procedura: Eseguire il processo di lavoro con un account utente](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Se si modifica il processo di lavoro [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] affinché venga eseguito con il proprio account utente, non è necessario essere un amministratore nel server che esegue IIS.  
   

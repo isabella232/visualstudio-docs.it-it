@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407775"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824428"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Eseguire il Debug remoto di ASP.NET Core in IIS in Azure in Visual Studio
 
@@ -60,10 +60,10 @@ Non è supportato tra due computer connessi tramite un proxy di debug. Debug tra
 1. Creare una nuova applicazione ASP.NET Core.
 
     ::: moniker range=">=vs-2019"
-    In Visual Studio 2019, digitare **Ctrl + Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **modelli**, quindi scegliere **Crea nuova applicazione Web di ASP.NET Core** . Nella finestra di dialogo visualizzata, denominare il progetto **MyASPApp**, quindi scegliere **crea**. Scegliere quindi **applicazione Web (Model-View-Controller)**, quindi scegliere **crea**.
+    In Visual Studio 2019, digitare **Ctrl + Q** per aprire la casella di ricerca, digitare **asp.net**, scegliere **modelli**, quindi scegliere **Crea nuova applicazione Web di ASP.NET Core** . Nella finestra di dialogo visualizzata, denominare il progetto **MyASPApp**, quindi scegliere **crea**. Scegliere quindi **applicazione Web (Model-View-Controller)** , quindi scegliere **crea**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    In Visual Studio 2017, scegliere **File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**. Nella sezione modelli ASP.NET Core, selezionare **applicazione Web (Model-View-Controller)**. Assicurarsi che sia selezionato ASP.NET Core 2.1, che **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.
+    In Visual Studio 2017, scegliere **File > Nuovo > progetto**, quindi selezionare **Visual C# > Web > applicazione Web ASP.NET Core**. Nella sezione modelli ASP.NET Core, selezionare **applicazione Web (Model-View-Controller)** . Assicurarsi che sia selezionato ASP.NET Core 2.1, che **Abilita supporto Docker** non è selezionata e che **Authentication** è impostata su **Nessuna autenticazione**. Denominare il progetto **MyASPApp**.
     ::: moniker-end
 
 1. Aprire il file About.cshtml.cs e impostare un punto di interruzione il `OnGet` (metodo) (in modelli precedenti, aprire HomeController.cs invece e impostare il punto di interruzione il `About()` (metodo)).
@@ -108,9 +108,9 @@ Questo articolo include i passaggi di configurazione di una configurazione di ba
 
 * Se si desidera visualizzare la Guida per assicurarsi che l'app è configurata, distribuzione e in esecuzione correttamente in IIS in modo che è possibile eseguire il debug, seguire tutti i passaggi descritti in questo argomento.
 
-    * Prima di iniziare, seguire i passaggi descritti [installare e eseguire IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Prima di iniziare, seguire i passaggi descritti [installare e eseguire IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Quando si apre la porta 80 nel gruppo di sicurezza di rete, anche aprire il [correggere porta](#bkmk_openports) per il debugger remoto (4024 o 4022). In questo modo, non è necessario aprirlo in un secondo momento.
+  * Quando si apre la porta 80 nel gruppo di sicurezza di rete, anche aprire il [correggere porta](#bkmk_openports) per il debugger remoto (4024 o 4022). In questo modo, non è necessario aprirlo in un secondo momento.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Aggiornare le impostazioni di sicurezza del browser in Windows Server
 
@@ -251,7 +251,7 @@ Scaricare la versione di remote tools corrispondente alla versione di Visual Stu
 
 7. Scegliere **Connetti**.
 
-8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>**.
+8. Aprire il sito Web del computer remoto. In un browser passare a **http://\<nome computer remoto>** .
 
     Verrà visualizzata la pagina Web ASP.NET.
 9. Nell'applicazione ASP.NET in esecuzione, fare clic sul collegamento per il **sulle** pagina.

@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079012"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823620"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Testo dell'interfaccia utente e la Guida di Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -157,14 +157,14 @@ ms.locfileid: "60079012"
 
 ### <a name="common-terminology"></a>Terminologia comune
 
-|Termine|Descrizione|Commento|
+|Termine|Spiegazione|Commento|
 |----------|-----------------|-------------|
 |Accesso / disconnessione|Verbi usati come sinonimi con il web per la rappresentazione di autenticazione in una proprietà di web. All'interno di client, usiamo una volta come una nozione di primo livello per la firma da e verso la connessione utente IDE, che rappresenta un'identità di livello principale che fornisce funzionalità di livello superiore, ad esempio il roaming e gestione delle licenze che non sono disponibili con tutte le altre connessioni.|L'utente dell'IDE è l'unica funzionalità che dovrà rappresentare una richiesta di accesso / disconnessione verbo, perché rappresenta l'utente di primo livello dell'IDE.|
 |Connettere / disconnettere|Utilizzare in posizioni in cui una funzionalità mantiene una singola connessione a un servizio online.|Esplora server, in cui è possibile avere solo una connessione di Azure attiva alla volta, è riportato un esempio di connessione/disconnessione.|
 |Aggiungi o Rimuovi|Non distruttiva. Usare durante l'aggiunta o rimozione di un elemento da un elenco.|La finestra di dialogo Gestione connessione TFS elenco server è un esempio di Aggiungi/Rimuovi.|
 |Eliminare|Distruttive. Utilizzare questa opzione solo quando l'elemento viene rimosso verrà definitivamente eliminati o eliminati dal disco.|"Delete" in genere richiede un prompt dei comandi se il risultato è l'eliminazione di un file dal disco.|
 
-## <a name="error-messages"></a>Messaggi di errore
+## <a name="error-messages"></a>messaggi di errore
 
 ### <a name="overview"></a>Panoramica
  Si verificano errori. L'impostazione di limitazioni su ciò che l'utente può eseguire è ragionevole innanzitutto evitare che i messaggi di errore possibile impedire. Tuttavia, quando si verifica un errore, un messaggio di errore ben scritti possa fare molta strada verso la riduzione del rischio del problema. I messaggi di errore sono senza dubbio uno dei tipi più importanti della notifica all'utente che, in quanto sono sincroni e indicare un problema che deve essere risolto. I messaggi di errore mal lasciano gli utenti in propri per stabilire la causa degli errori e le possibili soluzioni.
@@ -193,11 +193,11 @@ ms.locfileid: "60079012"
 
 - Alcune domande da porsi durante la costruzione di un messaggio di errore:
 
-    - L'utente capisce come risolvere il problema con l'errore da solo?
+  - L'utente capisce come risolvere il problema con l'errore da solo?
 
-    - L'utente usa il vocabolario stesso a questo errore?
+  - L'utente usa il vocabolario stesso a questo errore?
 
-    - È ambiguo questo errore o condivisi in diverse situazioni? In questo caso, come guidano gli utenti per la soluzione che ideale?
+  - È ambiguo questo errore o condivisi in diverse situazioni? In questo caso, come guidano gli utenti per la soluzione che ideale?
 
 #### <a name="build-errors"></a>Errori di compilazione
  Poiché Visual Studio è uno strumento di sviluppo software, molti dei suoi componenti hanno una compilazione, conversione o la codifica di passaggio per convertire il lavoro degli sviluppatori in formato binario. Queste conversioni possono causare errori quando il compilatore non può elaborare i file creati in modo non corretto o quando le opzioni del compilatore non sono state impostate correttamente.
@@ -274,7 +274,7 @@ ms.locfileid: "60079012"
 
 - **Guida dell'interfaccia utente pulsanti** (deprecato). Un indicatore visibile nella barra del titolo che fornisce l'accesso per l'argomento della Guida F1 correlato.
 
-### <a name="text"></a>Testo
+### <a name="text"></a>Text
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Testo esplicativo e supplemento nelle finestre di dialogo
  Nelle finestre di dialogo che supportano attività complesse, potrebbe essere necessario per fornire testo informativo all'interno di interfaccia utente, spesso nella parte superiore della finestra di dialogo o quasi controlli complessi. Visualizzare [interfaccia utente di testo e la terminologia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) per informazioni dettagliate sulla scrittura di stile.

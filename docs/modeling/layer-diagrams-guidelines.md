@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936909"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824203"
 ---
 # <a name="dependency-diagrams-guidelines"></a>I diagrammi delle dipendenze: linee guida
 
@@ -102,14 +102,14 @@ In genere vengono visualizzate alcune dipendenze che non dovrebbero esistere. È
 
 Per descrivere le modifiche che si prevede di apportare al sistema o l'architettura desiderata, usare la procedura seguente per modificare il diagramma delle dipendenze. È anche possibile prendere in considerazione alcune modifiche relative al refactoring per migliorare la struttura del codice prima di estenderlo. Visualizzare [miglioramento della struttura del codice](#Improving).
 
-|**Per**|**Eseguire questi passaggi**|
+|**To**|**Eseguire questi passaggi**|
 |-|-|
 |Eliminare una dipendenza che non dovrebbe essere presente|Fare clic sulla dipendenza e quindi premere **Elimina**.|
 |Modificare o limitare la direzione di una dipendenza|Impostare relativi **direzione** proprietà.|
 |Creare nuove dipendenze|Usare la **Dependency** e **dipendenza bidirezionale** strumenti.<br /><br /> Per disegnare più dipendenze, fare doppio clic sullo strumento. Al termine, fare clic sui **puntatore** degli strumenti oppure premere la **ESC** chiave.|
-|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
-|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
-|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola (**;**) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non possono dipendere dagli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **dipendenze Namespace non è consentito** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
+|Specificare che gli elementi associati a un livello non devono appartenere agli spazi dei nomi specificati|Digitare gli spazi dei nomi del livello **Forbidden Namespaces** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
+|Specificare che gli artefatti associati a un livello non devono appartenere a uno degli spazi dei nomi specificati|Digitare lo spazio dei nomi del livello **Required Namespaces** proprietà. Usare un punto e virgola ( **;** ) per separare gli spazi dei nomi.|
 
 ### <a name="Improving"></a> Miglioramento della struttura del codice
 
@@ -141,7 +141,7 @@ Per semplificare l'identificazione di livelli e dipendenze o per esaminarli con 
 
 - Cambiare i colori dei livelli e le dipendenze.
 
-    - Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.
+  - Selezionare uno o più livelli o dipendenze, pulsante destro del mouse e quindi fare clic su **proprietà**. Nel **delle proprietà** finestra, modificare il **colore** proprietà.
 
 ## <a name="Validate"></a> Convalidare il codice rispetto al diagramma
 

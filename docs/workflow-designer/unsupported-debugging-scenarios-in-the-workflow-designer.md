@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747266"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825739"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Scenari di debug non supportati in Progettazione flussi di lavoro
 
@@ -41,16 +41,16 @@ La finestra di progettazione del flusso di lavoro non supporta i seguenti scenar
 
 - La finestra Punto di interruzione o il menu di scelta rapida non supporta le colonne o le opzioni seguenti per il debug del flusso di lavoro:
 
-    - Condizione
+  - Condizione
 
-    - Numero di passaggi
+  - Numero di passaggi
 
-    - Quando raggiunto
+  - Quando raggiunto
 
-    - Funzione
+  - Funzione
 
-    - Dati
+  - Data
 
-    - Process
+  - Process
 
-    - Vai a disassembly
+  - Vai a disassembly
