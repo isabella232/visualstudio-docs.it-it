@@ -1,6 +1,6 @@
 ---
 title: Annotazione di parametri di funzione e valori restituiti
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388550"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852174"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotazione di parametri di funzione e valori restituiti
 Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzione semplice, ovvero valori scalari e i puntatori alle strutture e classi e la maggior parte dei tipi di buffer.  Questo articolo illustra anche i modelli di uso comune per le annotazioni. Per le annotazioni aggiuntive che sono correlate alle funzioni, vedere [annotazione del comportamento della funzione](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
      Un puntatore a una matrice con terminazione null per i quali l'espressione `p`  -  `_Curr_` (vale a dire `p` meno `_Curr_`) è definito dallo standard del linguaggio appropriata.  Gli elementi precedenti a `p` non devono essere validi nello pre- stato di e deve essere valido in post stato di.
 
 ## <a name="optional-pointer-parameters"></a>Parametri di puntatore facoltativo
+
  Se un'annotazione del parametro puntatore include `_opt_`, indica che il parametro può essere null. In caso contrario, l'annotazione esegue la stessa della versione che non includa `_opt_`. Ecco un elenco del `_opt_` varianti delle annotazioni parametro puntatore:
 
 ||||
@@ -384,6 +388,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
    Il puntatore restituito punta a un buffer valido se la funzione ha esito positivo, o null se la funzione ha esito negativo. Questa annotazione è per un parametro di riferimento.
 
 ## <a name="output-reference-parameters"></a>Parametri di riferimento di output
+
  Un uso comune del parametro di riferimento è per i parametri di output.  Per i parametri di riferimento di output semplici, ad esempio, `int&`, ovvero`_Out_` fornisce la corretta semantica.  Tuttavia, quando il valore di output è un puntatore, ovvero ad esempio `int *&`: le annotazioni di puntatore equivalente, ad esempio `_Outptr_ int **` non forniscono la corretta semantica.  Per esprimere in modo conciso la semantica di riferimento dei parametri di output per i tipi di puntatore, utilizzare queste annotazioni composite:
 
  **Le annotazioni e descrizioni**
@@ -445,13 +450,62 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
      Risultato deve essere valido in post-stato di, ma può essere null in stato di post. Punta a un buffer valido di `s` byte di elementi validi.
 
 ## <a name="return-values"></a>Valori restituiti
+
  Il valore restituito di una funzione è simile a un `_Out_` parametro ma è un livello diverso di de-reference e non è necessario prendere in considerazione il concetto del puntatore al risultato.  Per le seguenti annotazioni, il valore restituito è l'oggetto con annotazione, ovvero un valore scalare, un puntatore a una struttura o un puntatore a un buffer. Queste annotazioni hanno la stessa semantica corrispondente `_Out_` annotazione.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Parametri della stringa di formato
+
+- `_Printf_format_string_` Indica che il parametro è una stringa di formato per l'uso in un `printf` espressione.
+
+     **Esempio**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Indica che il parametro è una stringa di formato per l'uso in un `scanf` espressione.
+
+     **Esempio**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Indica che il parametro è una stringa di formato per l'uso in un `scanf_s` espressione.
+
+     **Esempio**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Altre annotazioni comuni
+
  **Le annotazioni e descrizioni**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ Questo articolo descrive gli usi tipici di annotazioni per i parametri di funzio
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Risorse correlate
+
  [Blog del Team di analisi del codice](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Vedere anche

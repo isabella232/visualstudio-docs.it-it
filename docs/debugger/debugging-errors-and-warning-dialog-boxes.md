@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852090"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852220"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Finestre di dialogo di errore e di avviso per il debug
 Di seguito sono riportate le finestre di errore e di avviso che possono essere visualizzate quando si effettua il debug di un'applicazione.
@@ -37,6 +37,8 @@ Di seguito sono riportate le finestre di errore e di avviso che possono essere v
  [Finestra di dialogo Impossibile modificare il valore](../debugger/cannot-change-value-dialog-box.md)
 
  [Impossibile visualizzare il codice sorgente o il disassembly](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Servizi di memoria insufficiente del debugger](../debugger/error-debugger-services-no-memory.md)
 
  [Finestra di dialogo Eseguibile per la sessione di debug](../debugger/executable-for-debugging-session-dialog-box.md)
 
