@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338398"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852210"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Installazione all'esterno della cartella delle estensioni
+# <a name="install-outside-the-extensions-folder"></a>Eseguire l'installazione all'esterno della cartella delle estensioni
 
-A partire da Visual Studio 2017 e VSIX v3 (versione 3), è ora supportata per l'installazione di asset di estensione esternamente alla cartella delle estensioni. Attualmente, i percorsi seguenti vengono abilitati come percorsi di installazione valido (dove [INSTALLDIR] viene eseguito il mapping alla directory di installazione dell'istanza di Visual Studio):
+A partire da Visual Studio 2017 e VSIX v3 gli asset di estensione (versione 3), può essere installato esternamente alla cartella delle estensioni. Attualmente, i percorsi seguenti vengono abilitati come percorsi di installazione valido (dove [INSTALLDIR] viene eseguito il mapping alla directory di installazione dell'istanza di Visual Studio):
 
 * [INSTALLDIR]\MSBuild
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ A partire da Visual Studio 2017 e VSIX v3 (versione 3), è ora supportata per l'
 * \Licenses [INSTALLDIR]
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (solo supportati per Visual Studio 2017; deprecate per Visual Studio 2019 e versioni successive)
 
->**Nota:** Il formato VSIX non consente di installare di fuori della struttura di cartelle di installazione di Visual Studio.
+> [!NOTE]
+> Il formato VSIX non consente di installare esterno la struttura di cartelle di installazione di Visual Studio. 
 
 Per supportare l'installazione in queste directory, l'estensione VSIX deve essere installato "per ogni istanza per ogni macchina". Questa opzione può essere abilitata selezionando la casella di controllo "tutti gli utenti" nella finestra di progettazione Extension. vsixmanifest:
 
@@ -49,7 +50,8 @@ Verrà aggiunto alcuni metadati per il corrispondente `ProjectReference` proprie
  </ProjectReference>
 ```
 
->**Nota:** Se si preferisce, è possibile modificare direttamente il file con estensione csproj.
+> [!NOTE]
+> Se si preferisce, è possibile modificare direttamente il file con estensione csproj.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Come impostare un percorso secondario sotto l'elemento InstallRoot
 
