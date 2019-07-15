@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: Impossibile visualizzare il codice sorgente o il disassembly
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Memoria insufficiente per i servizi del debugger
+              href: error-debugger-services-no-memory.md
             - name: finestra di dialogo Eseguibile per la sessione di debug
               href: executable-for-debugging-session-dialog-box.md
             - name: Finestra di dialogo Modifica e continuazione (C++)
