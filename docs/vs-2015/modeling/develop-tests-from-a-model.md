@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692239"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823334"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "65692239"
   
 - Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:  
   
-    - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.  
-  
-    - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.  
+  - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.  
+
+  - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.  
   
 - Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.  
   
@@ -120,7 +120,7 @@ Assert (countAfter == countBefore = 1);
  I requisiti di prestazioni e gli altri requisiti di qualità del servizio possono essere indicati in commenti nei diagrammi caso di utilizzo, di attività o di sequenza e anch'essi possono essere collegati agli elementi di lavoro requisiti e ai relativi gruppi di test.  
   
 ### <a name="sequence-and-activity-diagrams-for-tests"></a>Diagrammi di sequenza e di attività per i test  
- Se i modelli di requisiti o di architettura includono i diagrammi di sequenza o di attività, è possibile scrivere test che seguono direttamente i diagrammi.   
+ Se i modelli di requisiti o di architettura includono i diagrammi di sequenza o di attività, è possibile scrivere test che seguono direttamente i diagrammi.  
   
  A volte è utile progettare test che scelgono dinamicamente percorsi diversi tramite i rami e i cicli del diagramma.  
   
@@ -134,7 +134,7 @@ Assert (countAfter == countBefore = 1);
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.  
   
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste  
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.  
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.  
   
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.  
   
