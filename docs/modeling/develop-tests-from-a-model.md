@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982650"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821956"
 ---
 # <a name="develop-tests-from-a-model"></a>Sviluppare test da un modello
 È possibile usare i requisiti e i modelli architetturali per organizzare i test del sistema e dei relativi componenti. Questa procedura consente di verificare che vengano testati i requisiti importanti per gli utenti e per altre parti interessate e di aggiornare rapidamente i test quando cambiano i requisiti. Se si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], è anche possibile gestire i collegamenti tra i modelli e i test.
@@ -46,9 +46,9 @@ ms.locfileid: "62982650"
 
 - Basare test distinti sulle clausole separate della postcondizione. Ad esempio, creare test distinti per notificare l'ordine al ristorante e per accettare il pagamento dal cliente. Questa separazione offre i vantaggi seguenti:
 
-    - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.
+  - Le modifiche dei diversi aspetti dei requisiti si verificano spesso indipendentemente. La creazione di test separati per i vari aspetti consente di aggiornare più facilmente i test se vengono modificati i requisiti.
 
-    - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.
+  - Se il piano di sviluppo implementa un aspetto del caso di utilizzo prima di un altro, è possibile abilitare i test separatamente in base all'avanzamento dello sviluppo.
 
 - Quando si progettano i test, separare la scelta dei dati di test dal codice o dallo script che determina se la postcondizione è stata raggiunta. Ad esempio, potrebbe essere un test di una funzione aritmetica semplice: Input 4; Verificare che l'output sia 2. Progettare invece lo script come: Scegliere un input. moltiplicare l'output per se stesso e verificare che il risultato è l'input originale. Questo stile consente di variare gli input del test senza modificare il corpo principale del test.
 
@@ -115,7 +115,7 @@ Assert (countAfter == countBefore = 1);
  In entrambi i casi è possibile stabilire una relazione tra gli elementi del modello e i test di sottosistema, in modo analogo all'operazione eseguita per stabilire una relazione tra il modello di requisiti e i test di sistema.
 
 ### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolare i componenti con interfacce fornite e richieste
- È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste.  Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
+ È utile identificare tutte le dipendenze che un componente ha con altre parti del sistema o con servizi esterni e rappresentarle come interfacce richieste. Questo esercizio comporta in genere una riprogettazione che lascia il componente molto più disaccoppiato e facilmente separabile dal resto della progettazione.
 
  Un vantaggio costituito da questa separazione è la possibilità di eseguire il test del componente sostituendo i servizi usati generalmente con oggetti fittizi. Si tratta di componenti configurati a scopo di test. Un componente fittizio fornisce l'interfaccia richiesta dal componente, rispondendo alle query con dati simulati. I componenti fittizi fanno parte di un test harness completo che è possibile connettere a tutte le interfacce del componente.
 
