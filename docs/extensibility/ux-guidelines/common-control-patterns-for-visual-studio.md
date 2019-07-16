@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312305"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890977"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Pattern di controllo comuni per Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controlli comuni
@@ -252,7 +252,7 @@ Evitare di pulsanti di comando nelle finestre degli strumenti, oppure se è nece
 
 ### <a name="common-buttons"></a>Pulsanti comuni
 
-#### <a name="text"></a>Testo
+#### <a name="text"></a>Text
 Seguire le linee guida di scrittura [interfaccia utente di testo e la terminologia](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Stile di visualizzazione
@@ -296,11 +296,12 @@ Linee guida per il pulsante:
 #### <a name="graphical-buttons"></a>Pulsanti con interfaccia grafici
 Alcuni pulsanti devono sempre usare un'immagine grafica e testo per liberare spazio ed evitare problemi di localizzazione non includere mai. Questi vengono spesso usati in altri elenchi ordinabili e selezioni di campo.
 
-> **Nota:** Gli utenti devono premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Mappa di `name` proprietà del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.
+> [!NOTE]
+> Gli utenti devono premere tab per questi pulsanti (non sono presenti chiavi di accesso), quindi, inserirli in un ordine ragionevole. Mappa di `name` proprietà del pulsante per l'azione che richiede in modo che gli screen reader interpretare correttamente l'azione sul pulsante.
 
 | Funzione | Button |
 | --- | --- |
-| Aggiunta | ![Graphical "Add" button](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
+| Aggiunta | ![Pulsante grafico "Aggiungi"](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703 08_ButtonAdd") |
 | Rimuovi | ![Pulsante grafico "Rimuovi"](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703 09_ButtonRemove") |
 | Aggiungi tutto | ![Pulsante grafico "Aggiungi tutto"](../../extensibility/ux-guidelines/media/070703-10_buttonaddall.png "070703 10_ButtonAddAll") |
 | Rimuovi tutto | ![Pulsante grafico "Rimuovi tutto"](../../extensibility/ux-guidelines/media/070703-11_buttonremoveall.png "070703 11_ButtonRemoveAll") |
@@ -387,4 +388,4 @@ Un controllo albero è un controllo complesso che contiene una visualizzazione s
 
 - **Maiusc + Tab:** Consente di spostarsi nella cella più vicino a sinistra.  All'inizio della riga, navigazione continua nella cella più a destra nella riga precedente.
 
-![A trid control in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705-6_Trid")<br />Un controllo albero in Visual Studio
+![Un controllo albero in Visual Studio](../../extensibility/ux-guidelines/media/070705-6_trid.png "070705 6_Trid")<br />Un controllo albero in Visual Studio

@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b689a3be22c9fec775cf42b9d26393a886174daf
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197511"
 ---
-# <a name="debugging-applications"></a>Debug di applicazioni 
+# <a name="debugging-applications"></a>Debug di applicazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nelle sezioni seguenti è trattato il debug per tipi specifici di applicazioni. Diversi tipi di applicazioni e linguaggi richiedono impostazioni e tecniche diverse e presentano problemi diversi che devono essere sottoposti a debug.  

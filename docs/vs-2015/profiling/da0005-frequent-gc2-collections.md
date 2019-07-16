@@ -1,5 +1,5 @@
 ---
-title: 'DA0005: raccolte GC2 frequenti | Microsoft Docs'
+title: 'DA0005: Raccolte GC2 frequenti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,13 +15,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5817943ebca51433e64ae3b549af76522992f018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158681"
 ---
-# <a name="da0005-frequent-gc2-collections"></a>DA0005: Collection GC2 frequenti
+# <a name="da0005-frequent-gc2-collections"></a>DA0005: Raccolte GC2 frequenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 RuleId|DA0005|  

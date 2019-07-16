@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8e69801797ed40c206f828499efb234a97791cb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: dd8a133623cdaa266591b7b23cba7fdc57ca284b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312672"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890580"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procedura dettagliata: Creare un'area di controllo di visualizzazione, i comandi e le impostazioni (guide di colonne)
 È possibile estendere l'editor di testo o codice di Visual Studio con i comandi e visualizzare gli effetti. Questo articolo illustra come iniziare a usare una funzionalità di estensione più diffusi, guide di colonne. Le guide di colonna sono visivamente chiara linee disegnate su visualizzazione dell'editor di testo che consentono di gestire il codice per la larghezza delle colonne specifiche. In particolare, codice formattato può essere importante per gli esempi si includere nei documenti, post di blog, o i report di bug.
@@ -28,7 +28,8 @@ In questa procedura dettagliata, è:
 
   È possibile provare una versione della funzionalità di guide di colonna con questa raccolta di Visual Studio[estensione](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).
 
-  **NOTA**: In questa procedura dettagliata, si incolla un elevato livello di codice in pochi file generati dai modelli di estensione di Visual Studio. Tuttavia, a breve in questa procedura dettagliata fa riferimento a una soluzione completa su GitHub con altri esempi di estensione. Il codice completo è leggermente diverso in quanto dispone le icone dei comandi reale invece di usare le icone generictemplate.
+  > [!NOTE]
+  > In questa procedura dettagliata, si incolla un elevato livello di codice in pochi file generati dai modelli di estensione di Visual Studio. Tuttavia, a breve in questa procedura dettagliata fa riferimento a una soluzione completa su GitHub con altri esempi di estensione. Il codice completo è leggermente diverso in quanto dispone le icone dei comandi reale invece di usare le icone generictemplate.
 
 ## <a name="get-started"></a>Introduzione
 A partire da Visual Studio 2015, non installare Visual Studio SDK dall'area download. È incluso come funzionalità facoltativa nel programma di installazione di Visual Studio. È anche possibile installare il SDK di Visual Studio in un secondo momento. Per altre informazioni, vedere [installare Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).

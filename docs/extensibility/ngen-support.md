@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02fe3ec6787eec0846f709ac65555260a3c03165
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66343980"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891109"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Supporto di Ngen in VSIX v3
 
@@ -55,9 +55,10 @@ Questo aggiungerà i metadati per il riferimento al progetto all'interno del pro
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**Nota:** Se si preferisce, è possibile modificare direttamente il file con estensione csproj.
+> [!NOTE]
+> Se si preferisce, è possibile modificare direttamente il file con estensione csproj.
 
 ## <a name="extra-information"></a>Informazioni aggiuntive
 

@@ -13,18 +13,18 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203493"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Tasti di scelta rapida (visualizzatore della Guida)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile spostarsi in Microsoft Help Viewer usando i tasti di scelta rapida elencati nella tabella seguente:  
   
-|Area|Tasto o combinazione di tasti|Operazione|  
+|Area|Tasto o combinazione di tasti|Azione|  
 |----------|---------------|------------|  
 |Applicazione generale|Spazio|Da usare al posto di INVIO ovunque ad eccezione dei campi di modifica.|  
 |Applicazione generale|F1|Aprire la Guida sull'elemento corrente dell'interfaccia utente.|  
@@ -44,7 +44,7 @@ ms.locfileid: "54755386"
 |Strumenti di spostamento|ALT+F<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+F|Visualizzare la scheda **Preferiti**.|  
 |Strumenti di spostamento|ALT+S<br /><br /> OPPURE<br /><br /> CTRL+E<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+S|Visualizzare la scheda **Cerca**.|  
 |Strumenti di spostamento|ALT+M<br /><br /> OPPURE<br /><br /> CTRL+MAIUSC+M|Visualizzare la scheda **Gestisci contenuto**.|  
-|Argomento|Tasto del menu di scelta rapida<br /><br /> OR<br /><br /> MAIUSC+F10|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|  
+|Argomento|Tasto del menu di scelta rapida<br /><br /> Oppure<br /><br /> MAIUSC+F10|Visualizzare il menu di scelta rapida per l'elemento corrente dell'interfaccia utente.|  
 |Argomento|Freccia SU|Scorrere verso l'inizio del documento una riga alla volta.|  
 |Argomento|Freccia GIÙ|Scorrere verso la fine del documento una riga alla volta.|  
 |Argomento|PGSU|Scorrere verso l'inizio del documento una schermata alla volta.|  

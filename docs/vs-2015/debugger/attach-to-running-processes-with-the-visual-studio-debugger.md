@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15b9921514f76d788430c1eda66603e9fc446361
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65702634"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891018"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Connessione a processi in esecuzione con il debugger di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,8 @@ ms.locfileid: "65702634"
 
    1. Digitare il nome nella casella di riepilogo **Qualificatore** .
 
-      >**Nota** se nei passaggi successivi, è possibile connettersi usando il nome del computer remoto, usare l'indirizzo IP. (Il numero di porta può essere visualizzato automaticamente dopo il processo di selezione. È possibile anche inserire manualmente. Nell'illustrazione seguente, 4020 è la porta predefinita per il debugger remoto.)
+      > [!NOTE]
+      > Se, nei passaggi successivi, è possibile connettersi usando il nome del computer remoto, usare l'indirizzo IP. (Il numero di porta può essere visualizzato automaticamente dopo il processo di selezione. È possibile anche inserire manualmente. Nell'illustrazione seguente, 4020 è la porta predefinita per il debugger remoto.)
 
    2. Fare clic sulla freccia a discesa della casella di riepilogo **Qualificatore** e selezionare il nome del computer dall'elenco a discesa.
 
@@ -126,7 +127,7 @@ Per alcuni tipi di app (ad esempio le app Windows Store), non collega direttamen
 |Debug di un'app gestita o nativa nel computer locale|Usare associa a processo o [debug standard](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Per accedere rapidamente la finestra di dialogo, utilizzare **CTRL + ALT + P** e quindi digitare la prima lettera del nome del processo.|
 |Eseguire il debug di App ASP.NET nel computer locale dopo l'avvio dell'app senza il debugger|Usare associa a processo|iiexpress.exe|Questo potrebbe essere utile per rendere l'app di caricare più veloce, ad esempio, ad esempio, la profilatura. |
 |Il debug remoto di ASP.NET 4 o 4.5 in un server IIS|Utilizzare gli strumenti remoti e connettersi al processo|w3wp.exe|Vedere [Remote Debugging ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Debug remoto di ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e connettersi al processo|dnx.exe|Per la distribuzione di app, vedere [pubblicazione su IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per eseguire il debug, vedere [Remote Debugging ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Debug remoto di ASP.NET Core in un server IIS|Utilizzare gli strumenti remoti e connettersi al processo|DNX.exe|Per la distribuzione di app, vedere [pubblicazione su IIS](https://docs.asp.net/en/latest/publishing/iis.html). Per eseguire il debug, vedere [Remote Debugging ASP.NET in un computer IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |Eseguire il debug di altri tipi di app supportati in un processo del server|Utilizzare gli strumenti remoti (se è remoto server) e associa a processo|Iexplore.exe o altri processi|Se necessario, utilizzare Gestione attività per identificare il processo. Visualizzare [debug remoto](../debugger/remote-debugging.md) e nelle sezioni successive di questo argomento|
 |Debug remoto di un'app desktop di Windows|F5 e remote Tools|N/D| Vedere [debug remoto](../debugger/remote-debugging.md)|
 |Un'app Windows universale (UWP), OneCore, HoloLens o IoT eseguire il debug remoto|Debug pacchetto dell'app installato|N/D|Usare **eseguire il Debug / altre destinazioni di Debug / Debug pacchetto dell'App installato** invece di **Connetti a processo**|

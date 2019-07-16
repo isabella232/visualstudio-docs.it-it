@@ -14,20 +14,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 84d0c1765a14f60363b71fcdec182d448cb4f112
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205538"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Raggruppa i progetti in modelli multiprogetto.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
- \<ProjectCollection>  
+ \<ProjectCollection >  
  \<SolutionFolder>  
   
 ## <a name="syntax"></a>Sintassi  
@@ -49,7 +49,7 @@ Raggruppa i progetti in modelli multiprogetto.
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|Elemento facoltativo.<br /><br /> Specifica il percorso del file .vstemplate di un progetto in un modello multiprogetto.|  
 |`SolutionFolder`|Elemento facoltativo.<br /><br /> Raggruppa i progetti in modelli multiprogetto.|  

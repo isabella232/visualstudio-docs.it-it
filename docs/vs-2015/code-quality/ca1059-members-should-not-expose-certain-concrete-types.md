@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200497"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: I membri non devono esporre tipi concreti specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "60103823"
 
 |Tipo concreto|Sostituzione|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> Tramite l'interfaccia consente di disaccoppiare il membro da un'implementazione specifica di un'origine dati XML.|
+|<xref:System.Xml.XPath.XPathDocument>|[https://login.microsoftonline.com/common/](<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>).<br /><br /> Tramite l'interfaccia consente di disaccoppiare il membro da un'implementazione specifica di un'origine dati XML.|
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, modificare il tipo concreto per l'interfaccia suggerita.

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d6c14a268ef58dec31f65fe73e176eac8f690d9c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157750"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menu di scelta rapida (XML Schema Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Le seguenti voci di menu di scelta rapida sono usate per eseguire ricerche speci
 ## <a name="node-type-file"></a>Tipo di nodo: File  
  Nella tabella seguente vengono descritte le opzioni disponibili per un nodo di file.  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |**Mostra tutti i riferimenti in ingresso**|Consente di individuare ed evidenziare tutti i file che specificano il file selezionato negli attributi `schemaLocation` delle istruzioni Import e Include.|  
 |**Mostra tutti i riferimenti in uscita**|Consente di individuare ed evidenziare gli elementi seguenti:<br /><br /> -Tutti gli spazi dei nomi specificati negli attributi dello spazio dei nomi di tutte le istruzioni import che non dispongono di `schemaLocation` attributo.<br />-Tutti i file specificati nel `schemaLocation` attributi di tutte le import e include istruzioni.|  
@@ -98,7 +98,7 @@ Le seguenti voci di menu di scelta rapida sono usate per eseguire ricerche speci
 ## <a name="node-type-attribute-group"></a>Tipo di nodo: Gruppo di attributi  
  Oltre alle opzioni del nodo globale descritte in precedenza, il menu di scelta rapida per i nodi del gruppo di attributi dispone delle opzioni seguenti:  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |**Vai a definizione**|Per i riferimenti consente di passare alla definizione effettiva dell'attributo.|  
 |**Mostra tutti i membri**|Consente di individuare ed evidenziare tutti i membri del gruppo di attributi.|  

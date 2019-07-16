@@ -12,11 +12,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4b68c9f4bbaed73603c46fc0beab77a308b8933d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203866"
 ---
 # <a name="adding-project-and-project-item-templates"></a>Aggiunta di modelli di progetto e di elementi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,10 +52,10 @@ Quando si creano tipi di progetto personalizzati, è necessario fornire supporto
  Elenca i CATID per gli oggetti che vengono utilizzati per estendere [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] sistemi di progetto.  
   
 ## <a name="related-sections"></a>Sezioni correlate  
- [Procedura: Apri editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Procedura: aprire gli editor specifici del progetto](../../extensibility/how-to-open-project-specific-editors.md)  
  Vengono fornite istruzioni dettagliate per l'apertura di un elemento intrinsecamente associato a un editor specifico per un progetto.  
   
- [Procedura: Aprire gli editor Standard](../../extensibility/how-to-open-standard-editors.md)  
+ [Procedura: aprire gli editor standard](../../extensibility/how-to-open-standard-editors.md)  
  Vengono fornite istruzioni dettagliate per l'apertura di un editor standard.  
   
  [Sottotipi di progetto](../../extensibility/internals/project-subtypes.md)  

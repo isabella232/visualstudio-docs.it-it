@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204085"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Procedura: Eliminare le notifiche di modifica di File
+# <a name="how-to-suppress-file-change-notifications"></a>Procedura: Eliminare le notifiche di modifica file
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando è stato modificato il file fisico che rappresenta il buffer di testo, consente di visualizzare una finestra di dialogo con il messaggio **si desidera salvare le modifiche apportate ai seguenti elementi?** Questo è noto come notifica di modifica di file. Se sono condividono molte modifiche al file, tuttavia, questa finestra di dialogo ripetutamente la visualizzazione può diventare rapidamente fastidiosa.  

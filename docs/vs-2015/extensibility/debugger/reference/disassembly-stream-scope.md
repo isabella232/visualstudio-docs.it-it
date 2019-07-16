@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0132aad5ad6e37e7bb811693afde7ebfe80b272d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198841"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE { 
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  DSS_HUGE  
  Specifica che il contesto del codice di disassemblaggio sarebbe generare più output di un client in genere è necessario recuperare in una singola chiamata.  
   

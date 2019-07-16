@@ -14,11 +14,11 @@ caps.latest.revision: 44
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f458d46395c3a902e62ba5dd4ac7d624c326700c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184893"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Aggiunta di un sottomenu a un menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,7 +126,7 @@ Questa procedura dettagliata si basa sulla dimostrazione [aggiunta di un Menu al
                 }  
     ```  
   
-3. Add SubItemCallback(). Questo è il metodo che viene chiamato quando viene selezionato il nuovo comando nel sottomenu.  
+3. Aggiungere SubItemCallback(). Questo è il metodo che viene chiamato quando viene selezionato il nuovo comando nel sottomenu.  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  

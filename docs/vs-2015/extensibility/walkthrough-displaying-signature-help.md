@@ -11,11 +11,11 @@ caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 280b5b517089ad9e5b38cb00dc9b14c68253d1e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202053"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Procedura dettagliata: Visualizzazione della funzionalità di supporto alla firma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,4 +247,4 @@ Supporto per la firma (detta anche *le informazioni sul parametro*) consente di 
 4. Dopo aver digitato la parentesi di apertura, si dovrebbe essere una descrizione comando che visualizza un elenco di due firme per i `add()` (metodo).  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

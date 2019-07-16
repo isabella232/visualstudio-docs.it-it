@@ -13,20 +13,20 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f5150cda1b1285132fd70cd7bd7fa4572121057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204251"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Elemento Hidden (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica se il modello viene visualizzato in entrambi i **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
- \<VSTemplate>  
- \<TemplateData>  
- \<Hidden>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Nascosto >  
   
 ## <a name="syntax"></a>Sintassi  
   

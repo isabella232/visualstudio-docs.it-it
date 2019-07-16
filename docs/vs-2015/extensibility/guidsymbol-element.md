@@ -12,11 +12,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f11ed48d9dcf961228957cf15db3815c00d14d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204227"
 ---
 # <a name="guidsymbol-element"></a>Elemento GuidSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,8 @@ Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|name|Obbligatorio. Nome del simbolo GUID.|  
-|predefinito|Obbligatorio. GUID del simbolo GUID.|  
+|name|Richiesto. Nome del simbolo GUID.|  
+|value|Richiesto. GUID del simbolo GUID.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
@@ -50,7 +50,7 @@ Il `GuidSymbol` elemento contiene il GUID della coppia GUID: ID che rappresenta 
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[Elemento Symbols](../extensibility/symbols-element.md)|Gruppi `GuidSymbol` elementi in un file con estensione vsct.|  
   
