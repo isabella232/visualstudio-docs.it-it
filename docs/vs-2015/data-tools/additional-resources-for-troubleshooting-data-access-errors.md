@@ -232,13 +232,13 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143089"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Risorse aggiuntive per la risoluzione degli errori di accesso dati
+# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Risorse aggiuntive per la risoluzione degli errori di accesso ai dati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 È possibile ottenere assistenza per la risoluzione dei problemi relativi a errori e avvisi nei forum pubblici MSDN (Microsoft Developer Network). La tabella seguente elenca i dati correlati ai forum disponibili sul sito Web MSDN.  

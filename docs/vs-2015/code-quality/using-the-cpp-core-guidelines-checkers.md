@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142066"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Uso dei correttori Linee guida di base di C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Linee guida di base di C++ sono un set di linee guida, regole e le procedure con
   
    ![Pagina delle proprietà per le impostazioni delle estensioni di analisi codice](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Per abilitare o disabilitare i set di regole C++ Core verificare, aprire il **pagine delle proprietà** finestra di dialogo per il progetto. Sotto **le proprietà di configurazione**, espandere **analisi del codice**, **estensioni**. Nell'elenco a discesa accanto al controllo **Abilita C++ Core controllare (rilascio)** oppure **Abilita C++ Core controllare (sperimentale)**, scegliere **Sì** oppure **No**. Scegli **OK** oppure **applica** per salvare le modifiche.  
+   Per abilitare o disabilitare i set di regole C++ Core verificare, aprire il **pagine delle proprietà** finestra di dialogo per il progetto. Sotto **le proprietà di configurazione**, espandere **analisi del codice**, **estensioni**. Nell'elenco a discesa accanto al controllo **Abilita C++ Core controllare (rilascio)** oppure **Abilita C++ Core controllare (sperimentale)** , scegliere **Sì** oppure **No**. Scegli **OK** oppure **applica** per salvare le modifiche.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Controllare i tipi, dei limiti e durate  
  Il pacchetto C++ Core controllare attualmente contiene controlli per la [indipendenza dai tipi](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [delimita safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), e [safety durata](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profili.  
@@ -89,19 +89,19 @@ int main()
   
   **1 >---inizio compilazione: Progetto: CoreCheckExample, configurazione: Eseguire il debug Win32:**  
 **----**  
-**1>  CoreCheckExample.cpp**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**1 > CoreCheckExample.cpp**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
-**1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
-**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)**  
+**1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
+**rojects\CoreCheckExample\Debug\CoreCheckExample.pdb (PDB completo)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp(6): avviso C26494: La variabile 'arr' è uninitializ**  
 **ed. inizializzare sempre un oggetto. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): warning C26485: Espressione 'arr': Non matrice da**  
+**ckexample\corecheckexample.cpp(7): avviso C26485: Espressione 'arr': Non matrice da**  
  **decay puntatore. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
-**========== Build: 1 completata, 0 non riuscite, 0 aggiornata, 0 ignorate ===** esistono linee guida di base di C++ che consentono di scrivere codice migliore e più sicuro. Tuttavia, se si dispone di un'istanza in cui non venga applicato una regola o un profilo, è facile eliminarlo direttamente nel codice. È possibile usare il `gsl::suppress` attributo per evitare che C++ Core controllare il rilevamento e creazione di report qualsiasi violazione di una regola in blocco di codice seguente. È possibile contrassegnare singole istruzioni per eliminare le regole specifiche. È anche possibile eliminare l'intero profilo limiti scrivendo `[[gsl::suppress(bounds)]]` senza includere un numero di regole specifici.  
+**=== Compilazione: 1 completata, 0 non riuscite, 0 aggiornata, 0 ignorate ===** esistono linee guida di base di C++ che consentono di scrivere codice migliore e più sicuro. Tuttavia, se si dispone di un'istanza in cui non venga applicato una regola o un profilo, è facile eliminarlo direttamente nel codice. È possibile usare il `gsl::suppress` attributo per evitare che C++ Core controllare il rilevamento e creazione di report qualsiasi violazione di una regola in blocco di codice seguente. È possibile contrassegnare singole istruzioni per eliminare le regole specifiche. È anche possibile eliminare l'intero profilo limiti scrivendo `[[gsl::suppress(bounds)]]` senza includere un numero di regole specifici.  
   
 ## <a name="use-the-guideline-support-library"></a>Usare la libreria di supporto delle linee guida  
  Il pacchetto Microsoft.CppCoreCheck NuGet installa anche un pacchetto che contiene l'implementazione Microsoft della libreria di supporto delle linee guida (GSL). Il GSL è anche disponibile in forma autonoma al [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Questa libreria è utile se si vuole seguire le linee guida di base. Il GSL include le definizioni che consentono di sostituire i costrutti soggetta a errori con alternative più sicure. Ad esempio, è possibile sostituire un `T*, length` coppia di parametri con il `span<T>` tipo. Il GSL è open source, pertanto se si desidera esaminare le origini di libreria, come commento o contribuire, il progetto è reperibile in [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).

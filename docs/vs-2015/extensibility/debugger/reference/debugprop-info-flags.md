@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 764d28972575e8da9ef499e6d33a4a4a1deb3b07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142998"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  DEBUGPROP_INFO_FULLNAME  
  Initialize/usare la `bstrFullName` campo.  
   
@@ -92,7 +92,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS { 
  Specifica che il campo del valore deve contenere il valore espanso automaticamente, se disponibile, per questo tipo di oggetto.  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
- Deprecato.  
+ Operazione deprecata.  
   
  DEBUGPROP_INFO_VALUE_RAW  
  Non restituiscono alcun valore beautified o i membri (vale a dire non formattare i valori).  
