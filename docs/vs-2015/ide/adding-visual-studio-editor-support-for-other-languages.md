@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148239"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Aggiunta del supporto di altri linguaggi all'editor di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ Informazioni su come l'editor di Visual Studio supporti la lettura e il passaggi
 
  In questo percorso di base aggiungere le cartelle seguenti, se applicabili alla propria situazione:
 
-|Nome cartella|Descrizione|
+|Nome cartella|DESCRIZIONE|
 |-----------------|-----------------|
-|\\*\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, **\Matlab**.|
+|\\ *\<nome linguaggio>*|Cartella del linguaggio. Sostituire  *\<nome linguaggio>* con il nome del linguaggio, ad esempio, **\Matlab**.|
 |\Syntaxes|Cartella della grammatica. Contiene i file della grammatica con estensione json per il linguaggio, ad esempio **Matlab.json**.|
 |\Snippets|Cartella dei frammenti. Contiene frammenti di codice per il linguaggio.|
 
- In Windows %userprofile% si risolve nel percorso c:\Users\\*\<nome utente>*. Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.
+ In Windows %userprofile% si risolve nel percorso c:\Users\\ *\<nome utente>* . Se nel sistema non esiste la cartella delle estensioni, è necessario crearla. Se la cartella esiste già, verrà nascosta.
 
- Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate: introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata nell'HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note sulla creazione della grammatica di un linguaggio e di un tema personalizzato per un bundle TextMate).
+ Per informazioni dettagliate su come creare grammatiche TextMate, vedere [TextMate: Introduzione al linguaggio grammatiche: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Introduzione alle grammatiche dei linguaggi: come aggiungere l'evidenziazione della sintassi del codice sorgente incorporata in HTML) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Note su come creare una grammatica di linguaggio e un tema personalizzato per un bundle TextMate).
 
 ## <a name="see-also"></a>Vedere anche
- [Visual Studio 2013 passare a miglioramenti](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [questa procedura dettagliata: creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura dettagliata: visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 passare a miglioramenti](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md) [procedura dettagliata: visualizzazione del completamento istruzioni](../extensibility/walkthrough-displaying-statement-completion.md)

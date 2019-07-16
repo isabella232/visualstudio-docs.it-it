@@ -11,22 +11,22 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1a5f419b3b4c55538e8aa46d5aefb3f7e21369be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192702"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementazione di un servizio di linguaggio Legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Per implementare un servizio di linguaggio tramite il framework di pacchetto gestito (MPF), è necessario derivare una classe dalla classe di <xref:Microsoft.VisualStudio.Package.LanguageService> classe e implementare i seguenti metodi astratti e le proprietà:  
   
-- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>   
+- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A>  
   
-- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>   
+- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>  
   
-- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>   
+- Metodo <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>  
   
 - Proprietà <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>  
   

@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 2f39bc76329ec891a6e239f7cd2ad816eea1979e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193360"
 ---
 # <a name="understanding-build-platforms"></a>Informazioni sulle piattaforme di compilazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,6 +37,6 @@ ms.locfileid: "54761946"
  Viene illustrato come configurare un progetto per più piattaforme di destinazione.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)   
+ [Procedura dettagliata: Compilazione di un'applicazione](../ide/walkthrough-building-an-application.md)   
  [Compilazione e pulizia di progetti e soluzioni in Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilazione e creazione](../ide/compiling-and-building-in-visual-studio.md)

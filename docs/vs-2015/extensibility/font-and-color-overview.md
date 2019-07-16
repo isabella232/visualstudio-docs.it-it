@@ -12,13 +12,13 @@ caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204351"
 ---
-# <a name="font-and-color-overview"></a>Tipo di carattere e colore Panoramica
+# <a name="font-and-color-overview"></a>Panoramica di tipi di carattere e colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo argomento vengono illustrate le impostazioni testo di carattere e colori nella [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente di sviluppo integrato (IDE). Introduce anche i concetti di categorie e di elementi visualizzati e descrive come i pacchetti VSPackage e l'editor principale di utilizzare gli attributi di testo.  

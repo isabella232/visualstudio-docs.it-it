@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 577b2691ed67751407621d5000ee9a8abec318df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192009"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IEnumCodePaths2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IEnumCodePaths2`.  
   
-|Metodo|Descrizione|  
+|Metodo|DESCRIZIONE|  
 |------------|-----------------|  
 |[avanti](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|Recupera un determinato numero di percorsi di codice in una sequenza di enumerazione.|  
 |[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|Ignora un determinato numero di percorsi di codice in una sequenza di enumerazione.|  

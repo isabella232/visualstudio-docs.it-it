@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201609"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Gli overload degli operatori hanno alternative con nome
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58967957"
 |+ (binario)|+|+ (binario)|Aggiunta|
 |+=|+=|+=|Aggiunta|
 |&|e|&|BitwiseAnd|
-|&=|And=|&=|BitwiseAnd|
+|&=|E =|&=|BitwiseAnd|
 |&#124;|Or|&#124;|BitwiseOr|
 |&#124;=|Or=|&#124;=|BitwiseOr|
 |--|N/D|--|Operatore di conversione|
@@ -70,20 +70,20 @@ ms.locfileid: "58967957"
 |* (binario)|*|*|Multiply|
 |*=|N/D|*=|Multiply|
 |~|not|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|N/D|>>=|RightShift|
+|>>|>>|>>|MAIUSC destro|
+=|N/D|>>=|MAIUSC destro|
 |-(binario)|-(binario)|-(binario)|Sottrai|
 |-=|N/D|-=|Sottrai|
 |true|IsTrue|N/D|IsTrue (proprietà)|
 |-(unario)|N/D|-|negate)|
-|+ (unario)|N/D|+|Plus|
+|+ (unario)|N/D|+|Segno più|
 |False|IsFalse|False|IsTrue (proprietà)|
 
  N/d = = non possono essere sottoposti a overload nella lingua selezionata.
 
  La regola controlla anche gli operatori di cast impliciti ed espliciti in un tipo (`SomeType`) tramite il controllo dei metodi denominati `ToSomeType` e `FromSomeType`.
 
- In C#, quando viene eseguito l'overload di un operatore binario, l'operatore di assegnazione corrispondente, se presente, viene anche in modo implicito l'overload.
+ In c#, quando viene eseguito l'overload di un operatore binario, l'operatore di assegnazione corrispondente, se presente, viene anche in modo implicito l'overload.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, implementare il metodo alternativo per l'operatore. il nome usando il nome alternativo consigliato.

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192747"
 ---
 # <a name="graphics-event-call-stack"></a>Stack di chiamate eventi di grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Stack di chiamate eventi di grafica in Analizzatore grafica di Visual Studio con
   
 |Colonna|Descrizione|  
 |------------|-----------------|  
-|**Name**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
+|**Nome**|Simbolo che identifica in modo univoco la funzione che contiene il sito di chiamata. Il simbolo di debug per la funzione viene visualizzato quando è disponibile; in caso contrario, viene visualizzato l'offset della funzione.|  
 |**File**|Nome del file di codice sorgente o di libreria contenente il sito di chiamata.|  
-|**Posizione**|Numero di riga del sito di chiamata.|  
+|**Location**|Numero di riga del sito di chiamata.|  
   
 ### <a name="links-to-graphics-objects"></a>Collegamenti a oggetti grafici  
  Per comprendere l'evento di grafica selezionato potrebbero essere necessarie informazioni sull'oggetto Direct3D a cui è associato. Nella finestra **Stack di chiamate eventi di grafica** è presente un collegamento a tali informazioni.  

@@ -11,11 +11,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 836b971963587aa89440c6e023ee255612d2a087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187952"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDebugProcessSecurity`.  
   
-|Metodo|Descrizione|  
+|Metodo|DESCRIZIONE|  
 |------------|-----------------|  
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|Ottiene il nome utente dal fornitore della porta.|  
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|Un utente viene avvisato che la connessione al processo di debug è unsafe.|  

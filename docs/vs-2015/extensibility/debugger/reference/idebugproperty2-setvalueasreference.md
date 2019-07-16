@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a94e3767ee05e39e847af27dc5999fa8bbbe2d44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193445"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ int SetValueAsReference(
 ## <a name="return-value"></a>Valore restituito  
  Se ha esito positivo, restituisce `S_OK`; in caso contrario, restituisce un errore di codice, in genere uno dei seguenti:  
   
-|Error|Descrizione|  
+|Errore|Descrizione|  
 |-----------|-----------------|  
 |`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Impostazione del valore da un riferimento non è supportato.|  
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|Il valore non può essere impostato come questa proprietà fa riferimento a un metodo.|  

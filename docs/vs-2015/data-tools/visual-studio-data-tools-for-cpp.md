@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
 ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146572"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Visual Studio Data Tools per C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ C++ nativo può spesso fornire prestazioni ottimali quando si accede a origini d
   
 4. Scaricare l'esempio di ODBC Windows SDK e decomprimerlo in una nuova posizione. In questo esempio mostra i comandi di base ODBC che consentono di connettersi a un database ed eseguire query e comandi. Altre informazioni su queste funzioni nel [Microsoft Open Database Connectivity (ODBC)](https://msdn.microsoft.com/library/windows/desktop/ms710252\(v=vs.85\).aspx). Quando si carica innanzitutto la soluzione (si trova nella cartella di C++), Visual Studio offre aggiornare la soluzione per la versione corrente di Visual Studio. Scegliere **Sì**.  
   
-5. Per usare il client nativo, è necessario il file di intestazione e il file di lib. Questi file contengono le funzioni e le definizioni specifiche per SQL Server, oltre a funzioni ODBC definite in SQL. h. Nelle **progetto** > **delle proprietà** > **cartelle VC + +**, aggiungere le seguenti directory di inclusione:  
+5. Per usare il client nativo, è necessario il file di intestazione e il file di lib. Questi file contengono le funzioni e le definizioni specifiche per SQL Server, oltre a funzioni ODBC definite in SQL. h. Nelle **progetto** > **delle proprietà** > **cartelle VC + +** , aggiungere le seguenti directory di inclusione:  
   
    **\<unità sistema >: \Programmi\Microsoft SQL Server\110\SDK\Include** e questa directory di libreria:  
   

@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 031d764b95aa0f292702dde6167e0be9826270bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196311"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Eseguire applicazioni Windows Store in un computer locale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows only](../Image/windows_only_content.png "windows_only_content")  
+Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Per eseguire il debug, test o analisi delle prestazioni su un'app Windows Store, puoi eseguire l'app sullo stesso computer che ospita Visual Studio. Se lo schermo del dispositivo è abilitato per il tocco, puoi verificare la funzionalità completa dell'app, altrimenti dovrai limitarti ai movimenti con il mouse e la tastiera.  
   

@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ffbefd03bccc215dd68c30bae3cebb28c85654d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204986"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ public struct tagPROGRAM_NODE_ARRAY {
 }  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  dwCount  
  Numero di oggetti nel `Members` matrice.  
   
- Membri  
+ Members  
  Matrice di [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) oggetti che descrivono i programmi richiesti.  
   
 ## <a name="remarks"></a>Note  

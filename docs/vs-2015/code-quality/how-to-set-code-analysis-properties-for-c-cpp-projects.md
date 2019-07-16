@@ -1,5 +1,5 @@
 ---
-title: 'Procedura: Impostare le proprietà di analisi codice per progetti C-c + + | Microsoft Docs'
+title: 'Procedura: Impostare le proprietà di analisi codice per C -C++ progetti | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -20,11 +20,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 4ebed266924861dac4bfc9e316a56907dbd11534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201310"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedura: Impostare le proprietà di analisi codice per progetti C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

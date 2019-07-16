@@ -11,13 +11,13 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 975e8624a6ffbfe0c5ae7544f2b978487465e34e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148015"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>L'accesso ai livelli di testo usando l'API Legacy
+# <a name="accessing-text-layers-by-using-the-legacy-api"></a>Accesso ai livelli di testo tramite l'API legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un livello di testo sono incluse in genere alcuni aspetti del layout del testo. Ad esempio, un livello "una funzione-tempo" nasconde il testo prima e dopo una funzione che contiene il punto di inserimento (il punto di inserimento di testo).  

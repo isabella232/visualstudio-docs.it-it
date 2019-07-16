@@ -13,11 +13,11 @@ caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 580d4d2432a957bae8c590b3590a11b1a0b5e84e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148533"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IDebugProgramNodeAttach2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Questa interfaccia implementa il metodo seguente:  
   
-|Metodo|Descrizione|  
+|Metodo|DESCRIZIONE|  
 |------------|-----------------|  
 |[OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)|Collega al programma associato oppure rinvia il processo di collegamento per il [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) (metodo).|  
   

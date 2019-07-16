@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1c79860f770a6b04a17786cfb281fc3c0e4dffda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196763"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Scelta dell'editor da usare per aprire un file in un progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Quando un utente apre un file in un progetto, l'ambiente passa attraverso un pro
   
  Il progetto file esterni attestazioni tutti i file che non sono richiesti da altri progetti. In questo modo, editor personalizzati possono aprire i documenti prima di aprirli editor standard. Se un file di attestazioni di un progetto di file esterni, l'ambiente chiama il <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> metodo per aprire il file con un editor standard. L'ambiente controlla l'elenco interno degli editor registrati per uno che gestisce i file RTF. Questo elenco si trova nel Registro di sistema la chiave seguente:  
   
- [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`>\Editors\\{<`editor factory guid`>}\Extensions]  
+ [HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<`version`> \Editors\\{<`editor factory guid`>} \Extensions]  
   
  L'ambiente controlla anche gli identificatori di classe nella chiave del HKEY_CLASSES_ROOT\CLSID per tutti gli oggetti che hanno la sottochiave DocObject. Se viene trovato l'estensione di file, una versione incorporata dell'applicazione, ad esempio Microsoft Word, viene creata sul posto in Visual Studio. Questi oggetti documento devono essere file compositi che implementano il <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> interfaccia oppure l'oggetto deve implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interfaccia.  
   

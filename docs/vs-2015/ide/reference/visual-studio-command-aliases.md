@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160888"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |[Comando Avvia](../../ide/reference/start-command.md)|V|Debug.Start|
 |[Comando Vai a](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Vai a parentesi graffa|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|?|Help.F1Help|
 |Modalità immediata|immed|Tools.ImmediateMode|
 |Inserisci file come testo|InsertFile|Edit.InsertFileAsText|
 |[Comando Elenca stack di chiamate](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -80,7 +80,7 @@ Gli alias consentono di immettere un comando nella casella **Trova/Comando** o n
 |Elimina riga|LineDel|Edit.LineDelete|
 |Elenca membri|ListMembers|Edit.ListMembers|
 |Finestra Variabili locali|Variabili locali|Debug.Locals|
-|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Registro|Tools.LogCommandWindowOutput|
+|[Comando Registra output finestra di comando](../../ide/reference/log-command-window-output-command.md)|Log|Tools.LogCommandWindowOutput|
 |Modalità indicatore nella finestra di comando|mark|Tools.CommandWindowMarkMode|
 |Memoria (finestra)|Memory Memory1|Debug.Memory1|
 |Finestra Memoria 2|Memory2|Debug.Memory2|

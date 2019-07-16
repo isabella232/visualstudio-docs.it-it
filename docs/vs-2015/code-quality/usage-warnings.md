@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 679c12eb99e3cad7486384999a2393e09dbd277f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142107"
 ---
 # <a name="usage-warnings"></a>avvisi di utilizzo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Avvisi di utilizzo supportano l'utilizzo corretto di .NET Framework.
 |[CA1801: Controllare i parametri inutilizzati](../code-quality/ca1801-review-unused-parameters.md)|Una firma di metodo include un parametro non utilizzato nel corpo del metodo.|  
 |[CA1806: Non ignorare i risultati dei metodi](../code-quality/ca1806-do-not-ignore-method-results.md)|Un nuovo oggetto viene creato, ma non viene mai utilizzato oppure viene chiamato un metodo che crea e restituisce una nuova stringa e la nuova stringa non viene mai utilizzata oppure un metodo COM o P/Invoke restituisce un HRESULT o un codice di errore che non viene mai utilizzato.|  
 |[CA1816: Chiamare GC. SuppressFinalize correttamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Un metodo che è un'implementazione di Dispose non chiama GC. SuppressFinalize; o un metodo che non è un'implementazione di Dispose chiama GC. SuppressFinalize; o un metodo chiama GC. SuppressFinalize e passa un valore diverso da this (Me in Visual Basic).|  
-|[CA2200: Eseguire il rethrow per conservare i dettagli dello stack](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Viene nuovamente generata un'eccezione e l'eccezione viene specificato in modo esplicito nell'istruzione throw. Se viene nuovamente generata un'eccezione, specificando l'eccezione nell'istruzione throw, l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso.|  
+|[CA2200: ESEGUIRE IL Eseguire il rethrow per conservare i dettagli dello stack](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Viene nuovamente generata un'eccezione e l'eccezione viene specificato in modo esplicito nell'istruzione throw. Se viene nuovamente generata un'eccezione, specificando l'eccezione nell'istruzione throw, l'elenco di chiamate al metodo tra il metodo originale che ha generato l'eccezione e il metodo corrente viene perso.|  
 |[CA2201: Non generare tipi di eccezione riservati](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Ciò rende difficile da rilevare ed eseguire il debug dell'errore originale.|  
 |[CA2202: Non eliminare oggetti più volte](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Un'implementazione di metodo contiene percorsi del codice che potrebbero comportare più chiamate a System.IDisposable.Dispose o a un equivalente di Dispose (ad esempio un metodo Close() per alcuni tipi) sullo stesso oggetto.|  
 |[CA2204: Valori letterali devono essere digitati correttamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|Una stringa letterale in un corpo del metodo contiene una o più parole che non sono riconosciute dalla libreria del correttore ortografico Microsoft.|  

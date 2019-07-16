@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194211"
 ---
 # <a name="mssccprjscc-file"></a>File MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Quando una soluzione di Visual Studio o un progetto viene inserito nel controllo
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Un'illustrazione del MSSCCPRJ. Formato di File di controllo del codice sorgente  
  Seguito è riportato un esempio del MSSCCPRJ. Formato di file di controllo del codice sorgente (i numeri di riga vengono forniti solo come guida e non devono essere incluse nel corpo del file):  
   
- [Line 1] `SCC = This is a Source Code Control file`  
+ [Riga 1] `SCC = This is a Source Code Control file`  
   
  [Line 2]  
   
- [Line 3] `[TestApp.sln]`  
+ [Riga 3] `[TestApp.sln]`  
   
- [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
+ [Riga 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Line 5] `SCC_Project_Name = "$/TestApp"`  
+ [Riga 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Line 6]  
+ [Riga 6]  
   
- [Line 7] `[TestApp.csproj]`  
+ [Riga 7] `[TestApp.csproj]`  
   
- [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
+ [Riga 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Line 9] `SCC_Project_Name = "$/TestApp"`  
+ [Riga 9] `SCC_Project_Name = "$/TestApp"`  
   
  La prima riga indica lo scopo del file e funge da firma per tutti i file di questo tipo. Questa riga dovrebbe essere esattamente come in tutti i MSSCCPRJ. File SCC:  
   

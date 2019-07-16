@@ -7,11 +7,11 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192645"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Il manifesto per lo strumento di codice è un'applicazione console che accetta u
 |/imageIdClass|Il nome del imageIdClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyImageIds. \<Lang Ext >|Facoltativo|  
 |/monikerClass|Il nome del monikerClass e il file associato creato dallo strumento. Per l'opzione di linguaggio C++, vengono generati solo i file con estensione h. Questo viene ignorato per il linguaggio VSCT.<br /><br /> Valore predefinito: \<Percorso del manifesto > \MyMonikers. \<Lang Ext >|Facoltativo|  
 |/classAccess|Il modificatore di accesso per il imageIdClass e il monikerClass. Assicurarsi che il modificatore di accesso è valido per il linguaggio specificato. Questo viene ignorato per l'opzione di linguaggio VSCT.<br /><br /> Valore predefinito: Public|Facoltativo|  
-|/namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. Either ‘.’ o ':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Valore predefinito: MyImages|Facoltativo|  
+|/Namespace|Lo spazio dei nomi definito all'interno del wrapper di codice. Questo viene ignorato per l'opzione di linguaggio VSCT. Entrambi '.' o ':: ' sono separatori di spazio dei nomi valido, indipendentemente dall'opzione di linguaggio scelto.<br /><br /> Valore predefinito: MyImages|Facoltativo|  
 |/noLogo|Impostazione di questo flag arresta prodotto e informazioni sul copyright di stampare le informazioni.|Facoltativo|  
 |/?|Stampare le informazioni della Guida.|Facoltativo|  
 |/help|Stampare le informazioni della Guida.|Facoltativo|  

@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203139"
 ---
 # <a name="test-area-7-share"></a>Area di test 7: Condividi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Questa area di test illustra gli elementi di condivisione tra località, tramite
 ## <a name="test-cases"></a>Test case  
  Di seguito sono specifici test case per l'area di test di condivisione.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Condividere un file da un progetto caricato nel controllo del codice sorgente in un altro progetto caricato|1.  Creare un nuovo progetto.<br />2.  Aggiungere un secondo progetto alla soluzione.<br />3.  Creare un file nel progetto secondo con un nome che non è presente nel primo progetto.<br />4.  Aggiungere la soluzione al controllo del codice sorgente.<br />5.  Selezionare il primo progetto.<br />6.  Aprire **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />7.  Condividere il file dal progetto secondo al primo progetto.<br />8.  Accettare **Estrai** se richiesto.|Comportamento previsto comune.|  
 |Condividere un file da un progetto a un altro|1.  Creare un nuovo progetto.<br />2.  Aggiungerlo al controllo del codice sorgente.<br />3.  Chiudere la soluzione.<br />4.  Creare un secondo progetto (nuova soluzione).<br />5.  Aggiungere la soluzione al controllo del codice sorgente.<br />6.  Selezionare il progetto.<br />7.  Aprire il **Share** finestra di dialogo (**File** -> **controllo del codice sorgente** -> **condivisione**).<br />8.  Condividere un file dal progetto precedentemente aggiunto al progetto aperto.<br />9. Accettare **Estrai** se richiesto.|Comportamento previsto comune.|  

@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b756da118943dd94bfd3bc5220dfc398c60e2a9e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58967287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196934"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Creazione di cartelle contenitore padre per le soluzioni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,8 +57,8 @@ Nell'API versione 1.2 del plug-in controllo di origine, un utente può specifica
   
 |Soluzione contiene|In percorsi su disco|Struttura del database predefinito|  
 |-----------------------|-----------------------|--------------------------------|  
-|sln1.sln<br /><br /> Web1<br /><br /> Web2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*/C/Web1<br /><br /> $/*user_choice*/Web2|  
-|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*/D/web1<br /><br /> $/*user_choice*/sln1/win1|  
+|sln1.sln<br /><br /> Web1<br /><br /> WEB2|C:\Solutions\sln1<br /><br /> C:\Inetpub\wwwroot\Web1<br /><br /> \\\server\wwwroot$\web2|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /C/Web1<br /><br /> $/*user_choice*/Web2|  
+|sln1.sln<br /><br /> Web1<br /><br /> Win1|C:\Solutions\sln1<br /><br /> D:\Inetpub\wwwroot\Web1<br /><br /> C:\solutions\sln1\Win1|$/*user_choice*/sln1<br /><br /> $/*user_choice*  /D/web1<br /><br /> $/*user_choice*/sln1/win1|  
   
  La cartella SUR e sottocartelle vengono create indipendentemente dal fatto che l'operazione è stata annullata o ha esito negativo a causa di un errore. Essi non vengono rimossi automaticamente in condizioni di errore o annullamento.  
   

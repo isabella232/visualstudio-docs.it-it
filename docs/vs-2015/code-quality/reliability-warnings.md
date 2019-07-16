@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 328e374a12b45c4a139d5e59c33be3a7bd74ac3d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142192"
 ---
 # <a name="reliability-warnings"></a>avvisi di affidabilità
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gli avvisi di affidabilità supportano affidabilità di libreria e applicazione,
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Regola|Descrizione|  
+|Regola|DESCRIZIONE|  
 |----------|-----------------|  
 |[CA2000: Eliminare gli oggetti prima di perdere l'ambito](../code-quality/ca2000-dispose-objects-before-losing-scope.md)|Poiché è possibile che si verifichi un evento eccezionale che impedisca l'esecuzione del finalizzatore di un oggetto, è opportuno eliminare in modo esplicito l'oggetto prima che tutti i riferimenti a tale oggetto siano esterni all'ambito.|  
 |[CA2001: Evitare chiamate a metodi problematici](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Un membro chiama un metodo potenzialmente pericoloso o problematico.|  

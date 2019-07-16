@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159638"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Creare elementi e relazioni nei modelli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
   
  In questa tabella è riepilogata le proprietà di elementi del modello comuni:  
   
-|Elemento da creare|Owner|  
+|Elemento da creare|Proprietario|  
 |---------------------------|-----------|  
 |`IActor, IUseCase, IComponent, IClass, IInterface, IEnumeration`<br /><br /> `IActivity, IInteraction`|`IPackage, IModel`|  
 |`IAttribute, IOperation`|`IClass, IInterface`|  

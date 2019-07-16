@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198255"
 ---
 # <a name="graph-view"></a>Visualizzazione grafico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
   
  Se l'area di progettazione è vuota, vengono visualizzati l'editor XML, XML Schema Explorer e la filigrana. Il *filigrana* è riportato un elenco di collegamenti a tutte le visualizzazioni di progettazione XSD.  
   
- ![XSD Designer; Graph View](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
+ ![Finestra di progettazione XSD; Visualizzazione grafico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
  Se il set di schemi contiene errori, alla fine dell'elenco viene visualizzato il testo seguente: : Usare l'elenco errori per visualizzare e correggere gli errori nel set di".  
   
@@ -59,7 +59,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
   
  Oltre alle opzioni comuni descritte in precedenza, nel menu di scelta rapida per gli elementi globali sono disponibili anche le opzioni seguenti:  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |**Aggiungi definizione di tipo**|Aggiunge il tipo base al diagramma.|  
 |**Aggiungere tutti i riferimenti**|Aggiunge tutti i nodi che fanno riferimento all'elemento e disegna frecce che indicano le relazioni tra loro.|  
@@ -94,7 +94,7 @@ Visualizzazione grafico fornisce una rappresentazione grafica dei nodi dello sch
 ## <a name="xsd-toolbar"></a>Barra degli strumenti XSD  
  I seguenti pulsanti della barra degli strumenti XSD sono abilitati quando la visualizzazione grafico è attiva.  
   
- ![XML Schema Designer Toolbar](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
+ ![Barra degli strumenti della finestra di progettazione di XML Schema](../xml-tools/media/xsdgraphviewtoolbar.gif "XSDGraphViewToolbar")  
   
 |Opzione|Descrizione|  
 |------------|-----------------|  

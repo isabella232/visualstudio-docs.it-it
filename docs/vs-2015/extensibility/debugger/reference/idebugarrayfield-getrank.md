@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5d0396718482c9ce90527155a3612160612f66d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198736"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ int GetRank(
  Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Il rango della matrice corrisponde al numero di dimensioni. In C++ e C#, le matrici multidimensionali sono in realtà le matrici di matrici e pertanto può essere considerate solo una matrice unidimensionale (e `GetRank` metodo restituirà sempre 1). Nelle [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], d'altra parte, le matrici multidimensionali sono gestite in modo diverso e il numero di dimensioni di una matrice di questo tipo riflette il numero di dimensioni (e `GetRank` metodo restituisce sempre il numero di dimensioni).  
+ Il rango della matrice corrisponde al numero di dimensioni. In C++ e c#, le matrici multidimensionali sono in realtà le matrici di matrici e pertanto può essere considerate solo una matrice unidimensionale (e `GetRank` metodo restituirà sempre 1). Nelle [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)], d'altra parte, le matrici multidimensionali sono gestite in modo diverso e il numero di dimensioni di una matrice di questo tipo riflette il numero di dimensioni (e `GetRank` metodo restituisce sempre il numero di dimensioni).  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177113"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modelli di applicazione per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "60040997"
 |**posizione**|Sempre posizionato all'interno del documento bene e non ancorare intorno ai bordi dell'IDE. È possibile essere "pull" in modo da spostarla separatamente dalla shell di principale.|In genere ancorate intorno ai bordi dell'IDE, ma può essere personalizzato per essere a virgola mobile, nascosta automaticamente (unpinned) o ancorato anche all'interno del documento.|Finestra mobile grande separato dall'IDE.|
 |**Commit modello**|*Commit ritardato*<br /><br /> Per salvare i dati in un documento, l'utente deve eseguire il comando File/Salva, Salva o Salva tutto. Una finestra del documento è presente il concetto dei dati all'interno di esso venga "scritto" quindi eseguito il commit a una delle Salva i comandi. Quando si chiude una finestra del documento, tutti i contenuti vengono salvati su disco o persi.|*Commit immediato*<br /><br /> Non vi è alcun Salva modello. Per finestre di strumento di controllo che assistono nella modifica di un file, il file deve essere aperto nell'editor attivo o nella finestra di progettazione e l'editor o finestra di progettazione è proprietario di salvataggio.|*Commit ritardato o controllo immediato*<br /><br /> In genere, una finestra di dialogo non modale grandi dimensioni richiede un'azione per eseguire il commit delle modifiche e consente un'operazione di "Annullamento", che il rollback di tutte le modifiche apportate all'interno della sessione di finestra di dialogo.  Questo consente di distinguere una finestra di dialogo non modale da una finestra degli strumenti in finestre degli strumenti dispongono sempre di un modello di commit immediato.|
 |**Visibilità**|*Aprire/creare (file) e Close*<br /><br /> Aprire una finestra del documento viene eseguita tramite l'apertura di un documento esistente o usare un modello per creare un nuovo documento. È presente alcun "Apri \<specifica dell'editor >" comando.|*Nascondere e mostrare*<br /><br /> Finestre degli strumenti a istanza singola possono essere nascoste o visualizzate. Contenuto e gli stati nella finestra degli strumenti persistono se nella visualizzazione o nascosto. Finestre degli strumenti a istanza multipla possono essere chiusa nonché nascoste. Quando viene chiusa una finestra degli strumenti a istanza multipla, viene eliminato il contenuto e lo stato all'interno della finestra degli strumenti.|*Avviato da un comando*<br /><br /> Le finestre di dialogo vengono avviate da un comando basato su attività.|
-|**Istanze**|*Multi-instance*<br /><br /> Numerosi editor possono essere aperti al momento stesso e modifica dei file diversi, anche se alcuni editor offre anche lo stesso file sia aperto in più di un editor (usando il **finestra > nuova finestra** comando).<br /><br /> Un singolo editor stia modificando uno o più file contemporaneamente (Progettazione progetti).|*Singolo o più istanze*<br /><br /> Contenuto cambia per riflettere contesto (ad esempio, il Visualizzatore di proprietà) o eseguire il push dello stato attivo/contesto altre finestre (elenco attività, Esplora soluzioni).<br /><br /> Finestre degli strumenti a istanza singola e a istanza multipla devono essere associate alla finestra del documento attivo, a meno che non esiste un motivo a.|*A istanza singola*|
+|**Istanze**|*Istanze multiple*<br /><br /> Numerosi editor possono essere aperti al momento stesso e modifica dei file diversi, anche se alcuni editor offre anche lo stesso file sia aperto in più di un editor (usando il **finestra > nuova finestra** comando).<br /><br /> Un singolo editor stia modificando uno o più file contemporaneamente (Progettazione progetti).|*Singolo o più istanze*<br /><br /> Contenuto cambia per riflettere contesto (ad esempio, il Visualizzatore di proprietà) o eseguire il push dello stato attivo/contesto altre finestre (elenco attività, Esplora soluzioni).<br /><br /> Finestre degli strumenti a istanza singola e a istanza multipla devono essere associate alla finestra del documento attivo, a meno che non esiste un motivo a.|*A istanza singola*|
 |**Esempi**|**Gli editor di testo**, ad esempio l'editor di codice<br /><br /> **Aree di progettazione**, ad esempio una finestra di progettazione di form o un'area di modellazione<br /><br /> **Layout simile alle finestre di dialogo di controllo**, ad esempio la finestra Progettazione manifesto|Il **Esplora soluzioni** fornisce una soluzione e progetti contenuti all'interno della soluzione<br /><br /> Il **Esplora Server** offre una visualizzazione gerarchica di connessioni server e dei dati che l'utente sceglie di aprire la finestra. Apertura di un oggetto dalla gerarchia di database, ad esempio una query, si apre una finestra del documento e consente all'utente di modificare la query.<br /><br /> Il **Visualizzatore proprietà** vengono visualizzate le proprietà per l'oggetto selezionato in una finestra del documento o un'altra finestra degli strumenti. Le proprietà vengono presentate in una visualizzazione griglia gerarchici o nei controlli di finestra di dialogo complessi e consentono all'utente di impostare i valori per tali proprietà.||
 
 ## <a name="BKMK_ToolWindows"></a> Finestre degli strumenti
@@ -103,17 +103,17 @@ ms.locfileid: "60040997"
 
 #### <a name="common-tool-windows-and-their-functions"></a>Finestre degli strumenti comuni e le relative funzioni
 
-|Tipo|Finestra degli strumenti|Funzione|
+|Type|Finestra degli strumenti|Funzione|
 |----------|-----------------|--------------|
 |**Gerarchia**|Esplora soluzioni|Un albero gerarchica che visualizza un elenco di documenti inclusi in progetti, file esterni e gli elementi della soluzione. La visualizzazione degli elementi all'interno dei progetti è definita dal pacchetto a cui appartiene il tipo di progetto (ad esempio, i tipi in base al riferimento, basata su directory o in modalità mista).|
 |**Gerarchia**|Visualizzazione classi|Un albero gerarchico delle classi e i vari elementi nel working set di documenti, indipendenti dei file stessi.|
 |**Gerarchia**|Esplora server|Un albero gerarchico che consente di visualizzare tutte le connessioni server e dei dati nella soluzione.|
 |**Gerarchia**|Struttura documento|La struttura gerarchica del documento attivo.|
-|**Griglia**|Proprietà|Una griglia che visualizza un elenco delle proprietà per l'oggetto selezionato, insieme ai controlli di selezione valore per modificare tali proprietà.|
+|**Griglia**|Properties|Una griglia che visualizza un elenco delle proprietà per l'oggetto selezionato, insieme ai controlli di selezione valore per modificare tali proprietà.|
 |**Griglia**|Elenco attività|Una griglia che consente all'utente di creare, modificare o eliminare attività e i commenti.|
-|**Content**|Help|Una finestra che consente agli utenti l'accesso ai diversi metodi di richiesta di supporto, dal "Ricerca per categorie?" video ai forum MSDN.|
-|**Content**|Guida dinamica|Una finestra degli strumenti che consente di visualizzare i collegamenti per gli argomenti applicabili alla selezione corrente.|
-|**Content**|Visualizzatore oggetti|Una pagina con frame due colonne con un elenco di componenti gerarchico di oggetti nel riquadro sinistro e dell'oggetto delle proprietà e metodi nella colonna destra.|
+|**Contenuto**|?|Una finestra che consente agli utenti l'accesso ai diversi metodi di richiesta di supporto, dal "Ricerca per categorie?" video ai forum MSDN.|
+|**Contenuto**|Guida dinamica|Una finestra degli strumenti che consente di visualizzare i collegamenti per gli argomenti applicabili alla selezione corrente.|
+|**Contenuto**|Visualizzatore oggetti|Una pagina con frame due colonne con un elenco di componenti gerarchico di oggetti nel riquadro sinistro e dell'oggetto delle proprietà e metodi nella colonna destra.|
 |**Finestra di dialogo**|Ricerca, ricerca avanzata|Una finestra di dialogo che consente all'utente di ricerca o Trova e Sostituisci nei file diversi all'interno della soluzione.|
 |**Altro**|Casella degli strumenti|La finestra degli strumenti utilizzata per archiviare gli elementi che verranno eliminati su superfici di progettazione, fornendo un'origine di trascinamento coerente per tutte le finestre di progettazione.|
 |**Altro**|Pagina iniziale|Portale dell'utente a Visual Studio, con accesso ai feed di notizie per gli sviluppatori, la Guida di Visual Studio e progetti recenti. Gli utenti possono anche creare pagine iniziali personalizzate copiando il file StartPage XAML dalla directory del file di programma "Common7\IDE\StartPages\" Visual Studio nella cartella StartPages nella directory dei documenti di Visual Studio, e quindi modificando sia il XAML manualmente o aprirlo in Visual Studio o un altro editor di codice.|
@@ -389,7 +389,7 @@ ms.locfileid: "60040997"
 |-----------------|-----------------------|
 |OK|INVIO|
 |Annulla|ESC|
-|Help|F1|
+|?|F1|
 
 #### <a name="imagery"></a>Immagini
  Utilizzare le immagini con parsimonia nelle finestre di dialogo. Non utilizzare icone grandi nelle finestre di dialogo si limita l'utilizzo massimo dello spazio. Usare immagini solo se sono una parte importante di trasmettere il messaggio all'utente, ad esempio le icone di avviso o stato animazioni.
@@ -481,10 +481,10 @@ ms.locfileid: "60040997"
 
   L'utente deve sempre essere in grado di determinare l'effetto di un'operazione di trascinamento e rilascio selezionando un elemento, trascinarlo nella posizione di destinazione e osservare che i seguenti puntatori del mouse viene visualizzata prima l'elemento viene eliminato:
 
-|Puntatore del mouse|Comando|Descrizione|
+|Puntatore del mouse|Comando|DESCRIZIONE|
 |-------------------|-------------|-----------------|
 |![Passare il mouse sull'icona "nessun rilascio"](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706 01_MouseNoDrop")|Nessun rilascio|Elemento non può essere rilasciato nella posizione specificata.|
-|![Mouse "copy" icon](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706-02_MouseCopy")|Copia|Elemento verrà copiato nel percorso di destinazione.|
+|![Icona "copia" del mouse](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706 02_MouseCopy")|Copia|Elemento verrà copiato nel percorso di destinazione.|
 |![Mouse "spostare" sull'icona](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706 03_MouseMove")|Move|Elemento verrà spostato nel percorso di destinazione.|
 |![Icona "Aggiungi riferimento" del mouse](../../extensibility/ux-guidelines/media/0706-04-mouseaddref.png "0706 04_MouseAddRef")|Aggiungi riferimento|Verrà aggiunto un riferimento all'elemento selezionato nel percorso di destinazione.|
 
@@ -493,55 +493,55 @@ ms.locfileid: "60040997"
 
 |||Elemento di origine: Collegamento/riferimento|Elemento di origine: Fisico elemento o sul file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Operazione|Move|Collegamento|
+|Nessun modificatore|Azione|Move|Collegamento|
 |Nessun modificatore|destinazione|Aggiunge il riferimento alla voce originale|Aggiunge il riferimento alla voce originale|
 |Nessun modificatore|Source|Elimina riferimento all'elemento originale|Mantiene l'elemento originale|
 |Nessun modificatore|Risultato|**DROPEFFECT_MOVE** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**DROPEFFECT_LINK** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
-|Maiusc + trascinamento|Operazione|Move|Nessun rilascio|
+|Maiusc + trascinamento|Azione|Move|Nessun rilascio|
 |Maiusc + trascinamento|destinazione|Aggiunge il riferimento alla voce originale|Nessun rilascio|
 |Maiusc + trascinamento|Source|Elimina riferimento all'elemento originale|Nessun rilascio|
 |Maiusc + trascinamento|Risultato|**DROPEFFECT_MOVE** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|Nessun rilascio|
-|CTRL + trascinare|Operazione|Copia|Nessun rilascio|
+|CTRL + trascinare|Azione|Copia|Nessun rilascio|
 |CTRL + trascinare|destinazione|Aggiunge il riferimento alla voce originale|Nessun rilascio|
 |CTRL + trascinare|Source|Mantiene il riferimento all'elemento originale|Nessun rilascio|
 |CTRL + trascinare|Risultato|**DROPEFFECT_COPY** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|Nessun rilascio|
-|CTRL + MAIUSC + trascinamento|Operazione|Collegamento|Collegamento|
+|CTRL + MAIUSC + trascinamento|Azione|Collegamento|Collegamento|
 |CTRL + MAIUSC + trascinamento|destinazione|Aggiunge il riferimento alla voce originale|Aggiunge il riferimento alla voce originale|
 |CTRL + MAIUSC + trascinamento|Source|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |CTRL + MAIUSC + trascinamento|Risultato|**DROPEFFECT_LINK** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**DROPEFFECT_LINK** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
 |CTRL + MAIUSC + trascinamento|Nota|Stesso comportamento di trascinamento e rilascio per tasti di scelta rapida in Windows Explorer.||
-|Taglia e Incolla|Operazione|Move|Collegamento|
+|Taglia e Incolla|Azione|Move|Collegamento|
 |Taglia e Incolla|destinazione|Aggiunge il riferimento alla voce originale|Aggiunge il riferimento alla voce originale|
 |Taglia e Incolla|Source|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |Taglia e Incolla|Risultato|Elemento rimane nella posizione originale nell'archiviazione|Elemento rimane nella posizione originale nell'archiviazione|
-|Copiare e incollare|Operazione|Copia|Collegamento|
+|Copiare e incollare|Azione|Copia|Collegamento|
 |Copiare e incollare|Source|Aggiunge il riferimento alla voce originale|Aggiunge il riferimento alla voce originale|
 |Copiare e incollare|Risultato|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
-|Copiare e incollare|Operazione|Elemento rimane nella posizione originale nell'archiviazione|Elemento rimane nella posizione originale nell'archiviazione|
+|Copiare e incollare|Azione|Elemento rimane nella posizione originale nell'archiviazione|Elemento rimane nella posizione originale nell'archiviazione|
 
 #### <a name="directory-based-projects"></a>Progetti basati su directory
  Nella tabella seguente sono riepilogate le operazioni di trascinamento e rilascio (nonché le operazioni Taglia/Copia/Incolla) che devono essere eseguite in base alla natura di chiavi di elemento e il modificatore di origine premuto per i progetti basati su directory di destinazione:
 
 |||Elemento di origine: Collegamento/riferimento|Elemento di origine: Fisico elemento o sul file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Operazione|Move|Move|
+|Nessun modificatore|Azione|Move|Move|
 |Nessun modificatore|destinazione|Elemento di copie da percorso di destinazione|Elemento di copie da percorso di destinazione|
 |Nessun modificatore|Source|Elimina riferimento all'elemento originale|Elimina riferimento all'elemento originale|
 |Nessun modificatore|Risultato|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
-|Maiusc + trascinamento|Operazione|Move|Move|
+|Maiusc + trascinamento|Azione|Move|Move|
 |Maiusc + trascinamento|destinazione|Elemento di copie da percorso di destinazione|Elemento di copie da percorso di destinazione|
 |Maiusc + trascinamento|Source|Elimina riferimento all'elemento originale|Elimina elemento dalla posizione originale|
 |Maiusc + trascinamento|Risultato|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
-|CTRL + trascinare|Operazione|Copia|Copia|
+|CTRL + trascinare|Azione|Copia|Copia|
 |CTRL + trascinare|destinazione|Elemento di copie da percorso di destinazione|Elemento di copie da percorso di destinazione|
 |CTRL + trascinare|Source|Mantiene il riferimento all'elemento originale|Mantiene il riferimento all'elemento originale|
 |CTRL + trascinare|Risultato|**Copia DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**Copia DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
 |CTRL + MAIUSC + trascinamento||Nessun rilascio|Nessun rilascio|
-|Taglia e Incolla|Operazione|Move|Move|
+|Taglia e Incolla|Azione|Move|Move|
 |Taglia e Incolla|destinazione|Elemento di copie da percorso di destinazione|Elemento di copie da percorso di destinazione|
 |Taglia e Incolla|Source|Elimina riferimento all'elemento originale|Elimina elemento dalla posizione originale|
 |Taglia e Incolla|Risultato|Elemento rimane nella posizione originale nell'archiviazione|Elemento viene eliminato dalla posizione originale nell'archiviazione|
-|Copiare e incollare|Operazione|Copia|Copia|
+|Copiare e incollare|Azione|Copia|Copia|
 |Copiare e incollare|destinazione|Aggiunge il riferimento alla voce originale|Elemento di copie da percorso di destinazione|
 |Copiare e incollare|Source|Mantiene l'elemento originale|Mantiene l'elemento originale|
 |Copiare e incollare|Risultato|Elemento rimane nella posizione originale nell'archiviazione|Elemento rimane in archiviazione di componenti aggiuntivi di percorso originale|
@@ -551,27 +551,27 @@ ms.locfileid: "60040997"
 
 |||Elemento di origine: Collegamento/riferimento|Elemento di origine: Fisico elemento o sul file system (CF_HDROP)|
 |-|-|----------------------------------|-------------------------------------------------------------|
-|Nessun modificatore|Operazione|Move|Move|
+|Nessun modificatore|Azione|Move|Move|
 |Nessun modificatore|destinazione|Aggiunge il riferimento alla voce originale|Elemento di copie da percorso di destinazione|
 |Nessun modificatore|Source|Elimina riferimento all'elemento originale|Elimina riferimento all'elemento originale|
 |Nessun modificatore|Risultato|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento viene eliminato dalla posizione originale nell'archiviazione|
-|Maiusc + trascinamento|Operazione|Move|Move|
+|Maiusc + trascinamento|Azione|Move|Move|
 |Maiusc + trascinamento|destinazione|Aggiunge il riferimento alla voce originale|Elemento di copie da percorso di destinazione|
 |Maiusc + trascinamento|Source|Elimina riferimento all'elemento originale|Elimina elemento dalla posizione originale|
 |Maiusc + trascinamento|Risultato|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**SPOSTARE DROPEFFECT_** viene restituito come azione da **:: Drop** e l'elemento viene eliminato dalla posizione originale nell'archiviazione|
-|CTRL + trascinare|Operazione|Copia|Copia|
+|CTRL + trascinare|Azione|Copia|Copia|
 |CTRL + trascinare|destinazione|Aggiunge il riferimento alla voce originale|Elemento di copie da percorso di destinazione|
 |CTRL + trascinare|Source|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |CTRL + trascinare|Risultato|**Copia DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**Copia DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
-|CTRL + MAIUSC + trascinamento|Operazione|Collegamento|Collegamento|
+|CTRL + MAIUSC + trascinamento|Azione|Collegamento|Collegamento|
 |CTRL + MAIUSC + trascinamento|destinazione|Aggiunge il riferimento alla voce originale|Aggiunto riferimento a elemento di origine originale|
 |CTRL + MAIUSC + trascinamento|Source|Mantiene il riferimento all'elemento originale|Mantiene l'elemento originale|
 |CTRL + MAIUSC + trascinamento|Risultato|**COLLEGAMENTO DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|**COLLEGAMENTO DROPEFFECT_** viene restituito come azione dal **:: Drop** e l'elemento rimane nella posizione originale nell'archiviazione|
-|Taglia e Incolla|Operazione|Move|Move|
+|Taglia e Incolla|Azione|Move|Move|
 |Taglia e Incolla|destinazione|Elemento di copie da percorso di destinazione|Elemento di copie da percorso di destinazione|
 |Taglia e Incolla|Source|Elimina riferimento all'elemento originale|Elimina elemento dalla posizione originale|
 |Taglia e Incolla|Risultato|Elemento rimane nella posizione originale nell'archiviazione|Elemento viene eliminato dalla posizione originale nell'archiviazione|
-|Copiare e incollare|Operazione|Copia|Copia|
+|Copiare e incollare|Azione|Copia|Copia|
 |Copiare e incollare|destinazione|Aggiunge il riferimento alla voce originale|Elemento di copie da percorso di destinazione|
 |Copiare e incollare|Source|Mantiene l'elemento originale|Mantiene l'elemento originale|
 |Copiare e incollare|Risultato|Elemento rimane nella posizione originale nell'archiviazione|Elemento rimane nella posizione originale nell'archiviazione|
