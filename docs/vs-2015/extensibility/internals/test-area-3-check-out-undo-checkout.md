@@ -14,11 +14,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155995"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Area di test 3: Check-Out / Annulla estrazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
 ### <a name="case-3a-check-out"></a>Case 3a: Estrai  
  Questa sezione è incentrata sull'operazione del comando estrazione.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Controllare Out esclusivo (COE) un progetto client|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrae l'intero progetto in modo esclusivo (**File**, **Estrai**).|Si verifica l'estrazione.|  
 |Estrazione esclusiva (COE) un File System o un progetto Web IIS locale|1.  Impostazione connessione di Server Web di condivisione nel File **degli strumenti**, **opzioni**, **progetti**, **impostazioni Web**.<br />2.  Creare un progetto Web.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrae l'intero progetto in modo esclusivo (**File**, **controllo del codice sorgente**, **Check Out**).|Si verifica l'estrazione.|  
@@ -78,7 +78,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 - **Condiviso Check Out** comando funziona.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Durante la disconnessione, estrarre un file e quindi connettersi per la sincronizzazione|1.  Disconnettere un progetto controllato presente nella finestra di dialogo Modifica controllo del codice sorgente (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**l).<br />2.  Estrarre un file.<br />3.  Fare clic su Estrai (disconnesso) nella finestra di dialogo di avviso.<br />4.  Modificare il file.<br />5.  Connettersi tramite la finestra di dialogo Modifica controllo del codice sorgente.<br />6.  Ottenere la versione più recente del file modificato.|Comportamento previsto comune|  
   
@@ -95,7 +95,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 - La copia locale della cartella o file di destinazione è scrivibile.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Modificare i file di testo che viene verificato|1.  Creare un nuovo progetto che contiene un file di testo.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Impostare **degli strumenti**, **opzioni**, **controllo del codice sorgente**, **consentono la modifica di sola lettura su disco dei file** a deselezionata.<br />4.  Impostare **Tools**, **opzioni**, **controllo del codice sorgente**, **Richiedi estrazione** nel **quando archiviato file sonomodificato** casella combinata.<br />5.  Impostare **degli strumenti**, **opzioni**, **controllo del codice sorgente**, **Richiedi estrazione** nel **quando archiviare i file vengono salvati** casella combinata.<br />6.  Aprire il file di testo nell'editor, provare a digitare il nuovo testo nel file. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />7.  Fare clic su **annullare** nel **Estrai per la modifica** nella finestra di dialogo. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />8.  Impostare **degli strumenti**, **opzioni**, **controllo del codice sorgente**, **consentono la modifica di sola lettura su disco dei file** a selezionato.<br />9. Aprire il file di progetto nell'editor, provare a digitare il nuovo testo nel file. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />10. Fare clic su **Edit** nel **Estrai per la modifica** nella finestra di dialogo. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />11. Modificare il file di testo e si tenterà di salvarlo.|`Result of step 6:`<br /><br /> Controllare se viene visualizzata la finestra di dialogo di modifica.<br /><br /> `Result of step 7:`<br /><br /> Il file rimane invariato.<br /><br /> `Result of step 9:`<br /><br /> Controllare se viene visualizzata la finestra di dialogo di modifica.<br /><br /> `Result of step 10:`<br /><br /> È possibile modificare il file di progetto in memoria.<br /><br /> `Result of step 11:`<br /><br /> Salva il Check-out nel salvataggio nella finestra di dialogo viene visualizzato.|  
 |Modificare un file di soluzione che viene archiviato|Ripetere i passaggi come descritto nella precedente di test, ma anziché modificare un file di testo, modificare soluzione modificando le proprietà della soluzione.|Uguale a test precedente|  
@@ -114,7 +114,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 - La copia locale della cartella o file di destinazione è scrivibile.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Estrazione invisibile all'utente per un file|1.  Impostare **Tools**, **opzioni**, **controllo del codice sorgente** al **Esegui checkout dei file automaticamente dal menu Modifica**.<br />2.  Creare un nuovo progetto con un file.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrarre il file.|File estratto automaticamente (senza interfaccia utente).|  
 |Estrazione invisibile all'utente per un progetto|1.  Impostare **Tools**, **opzioni**, **controllo del codice sorgente** al **Esegui checkout dei file automaticamente dal menu Modifica**.<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Estrarre il progetto.|File estratto automaticamente (senza interfaccia utente).|  
@@ -128,7 +128,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra gli elemen
   
 - Dopo l'accettazione dell'operazione di annullamento, le icone nel **Esplora soluzioni** vengono aggiornati per interessati i file e l'elemento viene rimosso dal **archiviazioni in sospeso** finestra.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Annullare l'estrazione di un singolo file che è stato estratto in modo esclusivo|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrae un file in modo esclusivo.<br />4.  Modificare il file.<br />5.  Annullare l'estrazione di (**File**, **controllo del codice sorgente**, **Annulla estrazione**).|Comportamento previsto comune.|  
 |Annullare l'estrazione di un singolo file che è stato estratto condiviso|1.  Creare un progetto client.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Estrarre un file condiviso.<br />4.  Modificare il file.<br />5.  Annullare l'estrazione di (**File**, **controllo del codice sorgente**, **Annulla estrazione**).|Comportamento previsto comune.|  

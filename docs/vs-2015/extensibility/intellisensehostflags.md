@@ -14,11 +14,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 12945998b215e9082591fad514bd9c16ab789405
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203884"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ enum IntellisenseHostFlags
   
 #### <a name="parameters"></a>Parametri  
   
-|Membri|Descrizione|  
+|Members|DESCRIZIONE|  
 |-------------|-----------------|  
 |`IHF_READONLYCONTEXT`|Buffer del contesto è di sola lettura.|  
 |`IHF_NOSEPARATESUBJECT`|Nessun testo dell'oggetto. Buffer del contesto contiene IntelliSense-target (implica `!IHF_READONLYCONTEXT`).|  

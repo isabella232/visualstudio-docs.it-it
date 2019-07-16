@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1ba3f95372774b811030244a20208edd6f226981
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153297"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ public struct BP_RESOLUTION_INFO { 
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  `dwFields`  
  Una raccolta di flag dal [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerazioni che specifica quali campi vengono compilate.  
   

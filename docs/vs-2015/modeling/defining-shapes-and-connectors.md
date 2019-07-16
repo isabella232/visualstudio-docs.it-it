@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181888"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definizione di forme e connettori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Per visualizzare le informazioni su un diagramma in un linguaggio specifico di d
   
   Sono disponibili i tipi di forme seguenti:  
   
-|Tipo di forma|Descrizione|  
+|Tipo di forma|DESCRIZIONE|  
 |----------------|-----------------|  
 |Forma geometrica|Forma rettangolare o ellittica di utilizzo generale. È possibile visualizzare elementi Decorator testo e icona in posizioni specifiche relative ai contorni della forma.<br /><br /> Per annidare forme all'interno delle forme geometriche, vedere [annidamento di forme](../modeling/nesting-shapes.md).|  
 |Forma Raggruppamento|Rettangolo contenente un'intestazione e raggruppamenti, come una classe UML. Ogni raggruppamento può contenere un elenco di righe di testo.<br /><br /> Le righe in genere rappresentano gli elementi incorporati nell'elemento rappresentato dalla forma. Per un esempio, creare un DSL dal modello di soluzione Diagramma classi.|  

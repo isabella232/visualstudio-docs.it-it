@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 168e4fa8e9865d83d42af5dcc59b51e66e480747
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142308"
 ---
 # <a name="globalization-warnings"></a>Avvisi di globalizzazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Avvisi di globalizzazione supportano applicazioni e librerie internazionalizzate
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Regola|Descrizione|  
+|Regola|DESCRIZIONE|  
 |----------|-----------------|  
 |[CA1300: Specificare MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Per visualizzare correttamente una finestra di messaggio per le impostazioni cultura che utilizzano un ordine di lettura da destra a sinistra, è necessario passare i membri RightAlign e RtlReading dell'enumerazione MessageBoxOptions al metodo Show.|  
 |[CA1301: Evitare tasti di scelta rapida duplicati](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Un tasto di scelta o tasto di scelta rapida consente l'accesso da tastiera a un controllo mediante ALT. Quando più controlli presentano tasti di scelta duplicati, il comportamento del tasto di scelta non è ben definito.|  
