@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 053647d48324f056148375bae9268b997ba8721f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145700"
 ---
 # <a name="vsgdbg-class"></a>Classe VsgDbg
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,12 +27,12 @@ Rappresenta un'interfaccia per il controllo a livello di codice del componente i
 class VsgDbg;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  Il `VsgDbg` classe supporta i seguenti membri.  
   
 ### <a name="public-constructors"></a>Costruttori pubblici  
   
-|Nome|Descrizione|  
+|Nome|DESCRIZIONE|  
 |----------|-----------------|  
 |[VsgDbg::VsgDbg (Costruttore)](../debugger/vsgdbg-vsgdbg-constructor.md)|Costruisce un'istanza di `VsgDbg` classe e, facoltativamente, Prepara il componente in-app di diagnostica della grafica per acquisire e registrare le informazioni grafiche attivamente.|  
 |[VsgDbg::~VsgDbg (distruttore)](../debugger/vsgdbg-tilde-vsgdbg-destructor.md)|Elimina un'istanza di `VsgDbg` classe.|  

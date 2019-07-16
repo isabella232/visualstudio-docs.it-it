@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180324"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ L'elemento KeyBinding specifica tasti di scelta rapida per i comandi.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|guid|Obbligatorio.|  
-|ID|Obbligatorio.|  
-|editor|Obbligatorio. Il GUID dell'editor indica il contesto di modifica per il quale sarà attiva questo tasto di scelta rapida. Il valore dell'ambito dell'associazione globale è "guidVSStd97".|  
-|key1|Obbligatorio. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
-|mod1|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
-|key2|Facoltativo. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
-|mod2|Facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
-|Emulatore|Facoltativo.|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Richiesto.|  
+|id|Richiesto.|  
+|editor|Richiesto. Il GUID dell'editor indica il contesto di modifica per il quale sarà attiva questo tasto di scelta rapida. Il valore dell'ambito dell'associazione globale è "guidVSStd97".|  
+|key1|Richiesto. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
+|MOD1|facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
+|key2|facoltativo. I valori validi includono tutti i caratteri alfanumerici possibile digitare e inoltre valori esadecimali a due cifre preceduti da 0 x e VK_constants.|  
+|MOD2|facoltativo. Qualsiasi combinazione di CTRL, ALT e MAIUSC separati da spazio.|  
+|Emulatore|facoltativo.|  
+|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |Padre||  
 |Annotazione||  

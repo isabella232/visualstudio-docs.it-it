@@ -13,19 +13,19 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a3da08450df7edf9046aaa926d89c182c91d03a7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194193"
 ---
 # <a name="name-element-visual-studio-templates"></a>Elemento Name (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica il nome del modello così come appare nel **nuovo progetto** oppure **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<Nome >  
   
 ## <a name="syntax"></a>Sintassi  
@@ -45,7 +45,7 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> ID di un GUID che specifica il pacchetto di Visual Studio.|  
+|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
 |`ID`|Attributo facoltativo, per scenari avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -58,7 +58,7 @@ Specifica il nome del modello così come appare nel **nuovo progetto** oppure **
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|  
   
 ## <a name="text-value"></a>Valore di testo  
- È necessario un valore di testo, a meno che il `Package` e `ID` vengono utilizzati gli attributi.  
+ È necessario un valore di testo, a meno che non si usino gli attributi `Package` e `ID`.  
   
  Il testo fornisce il nome del modello.  
   

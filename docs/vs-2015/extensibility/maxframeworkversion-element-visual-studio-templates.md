@@ -12,19 +12,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 4a1c27e42574429dbb6b2eaeb140db484bf29db5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194321"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>Elemento MaxFrameworkVersion (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica la versione massima di .NET Framework richiesto dal modello. Determina se il modello viene visualizzato nel **modelli** sezione del **Aggiungi nuovo progetto** della finestra di dialogo in base al valore selezionato nel **versioneFrameworkdidestinazione** finestra di **Aggiungi nuovo progetto** nella finestra di dialogo.  
   
- \<VSTemplate>  
- \<MaxFrameworkVersion>  
+ \<VSTemplate >  
+ \<MaxFrameworkVersion >  
   
 ## <a name="syntax"></a>Sintassi  
   

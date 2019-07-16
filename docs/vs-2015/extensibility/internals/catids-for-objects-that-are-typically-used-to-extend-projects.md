@@ -13,11 +13,11 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1cf5bd504bb5f7090dc07bea32e73333c0f182d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162093"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATID per gli oggetti che vengono in genere usati per estendere i progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ La tabella seguente elenca i CATID vengono utilizzati per estendere `Project` e 
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBFolderBrowseObject>|{932DC619-2EAA-4192-B7E6-3D15AD31DF49}|  
 |<xref:VSLangProj.PrjBrowseObjectCATID.prjCATIDVBReferenceBrowseObject>|{2289B812-8191-4e81-B7B3-174045AB0CB5}|  
   
-## <a name="visual-c-catids"></a>CATID di Visual C#  
+## <a name="visual-c-catids"></a>CATID di Visual c#  
  Il CATID seguenti possono essere utilizzate per estendere [!INCLUDE[csprcs](../../includes/csprcs-md.md)] visualizzare gli oggetti. Sono tutti definiti in VSLangProj.olb.  
   
 |Nome|GUID|  

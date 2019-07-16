@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bd60c855bacaf62beec47c9f977d0ab220ce7ca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145538"
 ---
 # <a name="tier-interactions-view"></a>Visualizzazione Interazioni tra livelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ## <a name="master-pane"></a>Riquadro master  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
-|**Name**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|  
+|**Nome**|- Per una riga di primo livello, nome del processo o della pagina Web profilata.<br />- Per una riga di connessione di database, nome del server che ospita il database.|  
 |**Database**|Nome del database (solo righe di connessione di database).|  
 |**Conteggio**|Numero totale di richieste generate dal processo, dalla pagina Web o dalla connessione di database.|  
 |**Tempo totale trascorso**|Tempo totale impiegato per l'esecuzione di una richiesta dal processo, dalla pagina Web o dalla connessione di database.|  
@@ -51,7 +51,7 @@ La profilatura delle interazioni tra livelli offre informazioni aggiuntive sui t
   
 ## <a name="database-connection-details-pane"></a>Riquadro Dettagli connessione database  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**Testo del comando**|Query SQL della richiesta.|  
 |**Conteggio query**|Numero di volte in cui è stata eseguita la query.|  

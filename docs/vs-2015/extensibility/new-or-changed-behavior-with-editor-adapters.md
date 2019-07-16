@@ -11,20 +11,20 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194184"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento nuovo o modificato con schede Editor
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento nuovo o modificato con gli adattatori di editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se si sta aggiornando il codice che è stato scritto in versioni precedenti dell'editor principale di Visual Studio e si prevede di usare l'editor schede (o gli shim) invece di usare la nuova API, è necessario considerare le seguenti differenze nel comportamento delle schede dell'editor Per quanto riguarda l'editor principale precedente.  
   
 ## <a name="features"></a>Funzionalità  
   
-#### <a name="using-setsite"></a>Using SetSite()  
+#### <a name="using-setsite"></a>Usando SetSite)  
  È necessario chiamare <xref:Microsoft.VisualStudio.OLE.Interop.IObjectWithSite.SetSite%2A> quando si creare buffer di testo, le visualizzazioni di testo e finestre del codice prima di eseguire altre operazioni su di essi. Tuttavia, ciò non è necessario se si usa la <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService> crearli, poiché i metodi Create () di questo servizio autonomamente chiamare <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.SetSite%2A>.  
   
 #### <a name="hosting-ivscodewindow-and-ivstextview-in-your-own-content"></a>Hosting oggetto IVsCodeWindow e IVsTextView nel proprio contenuto  
@@ -43,7 +43,7 @@ Se si sta aggiornando il codice che è stato scritto in versioni precedenti dell
  Modalità WPF è diversa dalla modalità Win32 in due modi. In primo luogo, la visualizzazione di testo può essere ospitata in un contesto WPF. È possibile accedere al riquadro WPF eseguendo il cast di <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> al <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElementPane> e la chiamata <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIElement.GetUIObject%2A>. Secondo, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWindowHandle%2A> comunque restituisce un oggetto HWND, ma questo HWND può essere usato solo per controllare la posizione e impostare lo stato attivo su di esso. È necessario utilizzare questo oggetto HWND per rispondere a un messaggio WM_PAINT, non perché non verranno influenzati, come l'editor consente di disegnare la finestra. Oggetto HWND è presente solo per agevolare la transizione al nuovo editor di codice tramite gli adapter. Si consiglia vivamente che non è consigliabile usare `VIF_NO_HWND_SUPPORT` se il componente richiede un oggetto HWND, a causa di limitazioni nell'HWND restituito da `GetWindowHandle` in questa modalità.  
   
 #### <a name="passing-arrays-as-parameters-in-native-code"></a>Passaggio di matrici come parametri nel codice nativo  
- Esistono molti metodi nell'API legacy editor che dispongono di parametri che includono una matrice e il relativo conteggio. Esempi sono:  
+ Esistono molti metodi nell'API legacy editor che dispongono di parametri che includono una matrice e il relativo conteggio. Alcuni esempi:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEx.AppendViewOnlyMarkerTypes%2A>  
   
@@ -57,7 +57,7 @@ Se si sta aggiornando il codice che è stato scritto in versioni precedenti dell
  È necessario chiamare l'adattatore del buffer sempre dal thread dell'interfaccia utente. L'adattatore del buffer è un oggetto gestito, che significa che la chiamata al suo interno dal codice gestito possono ignorare il marshalling COM e la chiamata verrà automaticamente effettuare il marshalling al thread dell'interfaccia utente.  Se si chiama l'adattatore del buffer da un thread in background, è necessario usare <xref:System.Windows.Threading.Dispatcher.Invoke%2A> o un metodo simile.  
   
 #### <a name="lockbuffer-methods"></a>Metodi LockBuffer  
- Tutti i metodi LockBuffer() sono deprecati. Esempi sono:  
+ Tutti i metodi LockBuffer() sono deprecati. Alcuni esempi:  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.LockBuffer%2A>  
   

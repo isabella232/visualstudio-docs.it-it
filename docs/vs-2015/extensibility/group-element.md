@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35c332682b609f6620f96cc8eb8499cca921d399
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204270"
 ---
 # <a name="group-element"></a>Elemento Group
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Definisce un gruppo di comandi di VSPackage.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|guid|Obbligatorio. GUID dell'identificatore di comando/ID GUID.|  
-|ID|Obbligatorio. ID dell'identificatore di comando/ID GUID.|  
-|priority|Facoltativo. Valore numerico che specifica la priorità.|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Richiesto. GUID dell'identificatore di comando/ID GUID.|  
+|id|Richiesto. ID dell'identificatore di comando/ID GUID.|  
+|priorità|facoltativo. Valore numerico che specifica la priorità.|  
+|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Facoltativo. L'elemento padre del pulsante.|  
+|Padre|facoltativo. L'elemento padre del pulsante.|  
 |Annotazione|Commento facoltativo.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[Elemento Groups](../extensibility/groups-element.md)|Contiene le voci che definiscono i gruppi di comandi di un pacchetto VSPackage.|  
   

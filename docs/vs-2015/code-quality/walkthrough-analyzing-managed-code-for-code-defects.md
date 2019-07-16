@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201141"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procedura dettagliata: Analisi del codice gestito per individuarne i difetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,19 +123,19 @@ In questa procedura dettagliata, si analizza un progetto gestito per i difetti d
   
        Ricompilare il progetto.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole del nome dello spazio dei nomi 'testCode' modificandolo in 'TestCode'.  
   
   - Modifica le maiuscole e minuscole dei nomi `testCode` a `TestCode`.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole di tipo nome "demo" modificandolo in "Demo".  
   
   - Modificare il nome del membro da `Demo`.  
   
-- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.  
+- [CA1709: Gli identificatori devono essere digitati correttamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft. Naming: Correggere le maiuscole e minuscole del membro nome 'item' modificandolo in 'Item'.  
   
   - Modificare il nome del membro da `Item`.  
   
-- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: Rinominare 'testCode.demo' per terminare con 'Exception'.  
+- [CA1710: Gli identificatori devono contenere il suffisso corretto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft. Naming: Rinominare 'testCode.demo' per terminare con 'Exception'.  
   
   - Modificare il nome della classe e i relativi costruttori in `DemoException`.  
   

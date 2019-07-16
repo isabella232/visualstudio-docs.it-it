@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: e554c7b97c2feac031510cfdd0894d29b4ba85eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151054"
 ---
 # <a name="create-an-android-native-activity-app"></a>Creare un'app NativeActivity di Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Quando si installa l'opzione Visual C++ per Sviluppo app per dispositivi mobili 
   
 1. Aprire Visual Studio. Nella barra dei menu scegliere **File**, **Nuovo**, **Progetto**.  
   
-2. Nella finestra di dialogo **Nuovo progetto** , in **Modelli**, selezionare **Visual C++**, **Multipiattaforma**, quindi scegliere il modello **Applicazione NativeActivity (Android)** .  
+2. Nella finestra di dialogo **Nuovo progetto** , in **Modelli**, selezionare **Visual C++** , **Multipiattaforma**, quindi scegliere il modello **Applicazione NativeActivity (Android)** .  
   
 3. Assegnare all'app un nome come `MyAndroidApp`e fare clic su **OK**.  
   

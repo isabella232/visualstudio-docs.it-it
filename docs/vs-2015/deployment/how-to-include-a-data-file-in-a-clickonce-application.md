@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9120a5b3cb60f6c607ed97ab2df24bb157c72371
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153773"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procedura: Includere un file di dati in un'applicazione ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
 2. Aggiornare il manifesto dell'applicazione all'elenco di file di dati.  
   
-    **mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0**  
+    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
   
     Per eseguire questa attività verrà ricreato l'elenco dei file nel manifesto dell'applicazione e genera anche automaticamente le firme hash.  
   
@@ -59,7 +59,7 @@ Ogni [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installata è assegn
   
     **Mage -u - appm manifesto dell'app del manifesto**  
   
-    **mage -s deployment manifest -cf certfile -pwd password**  
+    **manifesto della distribuzione -s di Mage cf - certfile - pwd password**  
   
 6. 
   

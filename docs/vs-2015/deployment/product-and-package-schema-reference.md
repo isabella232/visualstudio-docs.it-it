@@ -27,11 +27,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2fe0d270593ef526405b0be4cde8bc5da10af413
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188951"
 ---
 # <a name="product-and-package-schema-reference"></a>Riferimenti dello schema di prodotti e package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Oggetto *del file di prodotto* è un manifesto XML che descrive tutte le dipende
   
 |Elemento|Descrizione|Attributi|  
 |-------------|-----------------|----------------|  
-|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento di primo livello necessario per i file di prodotto.|nessuno|  
+|[\<Product> Element](../deployment/product-element-bootstrapper.md)|Elemento di primo livello necessario per i file di prodotto.|Nessuna|  
 |[\<Package> Element](../deployment/package-element-bootstrapper.md)|Elemento di primo livello obbligatorio per i file di pacchetto.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file di prodotto. Gli altri prodotti che questo prodotto consente di installare o dipende dalla fase.|nessuno|  
-|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze per eseguire nel computer locale durante l'installazione.|nessuno|  
-|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli per l'installazione come descritto dalla `InstallChecks`e segnala il pacchetto di installazione se il controllo non riuscire.|nessuno|  
-|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|nessuno|  
-|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate delle stringhe di errore e nome prodotto.|nessuno|  
+|[\<RelatedProducts> Element](../deployment/relatedproducts-element-bootstrapper.md)|Elemento facoltativo per i file di prodotto. Gli altri prodotti che questo prodotto consente di installare o dipende dalla fase.|Nessuna|  
+|[\<InstallChecks> Element](../deployment/installchecks-element-bootstrapper.md)|Elemento obbligatorio. Elenca i controlli delle dipendenze per eseguire nel computer locale durante l'installazione.|Nessuna|  
+|[\<Commands> Element](../deployment/commands-element-bootstrapper.md)|Elemento obbligatorio.  Esegue uno o più controlli per l'installazione come descritto dalla `InstallChecks`e segnala il pacchetto di installazione se il controllo non riuscire.|Nessuna|  
+|[\<PackageFiles> Element](../deployment/packagefiles-element-bootstrapper.md)|Elemento obbligatorio. Elenca i pacchetti che potrebbero essere installati da questo processo di installazione.|Nessuna|  
+|[\<Strings> Element](../deployment/strings-element-bootstrapper.md)|Elemento obbligatorio. Archivia le versioni localizzate delle stringhe di errore e nome prodotto.|Nessuna|  
   
 ## <a name="remarks"></a>Note  
  Lo schema del pacchetto viene usato da Setup.exe, un programma stub generato da attività di avvio automatico di MS Build contenente minimo per la logica a livello di codice proprio. Lo schema di cui si basa ogni aspetto del processo di installazione.  

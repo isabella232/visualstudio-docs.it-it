@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160174"
 ---
-# <a name="install-sql-server-sample-databases"></a>Installare SQL Server database di esempio
+# <a name="install-sql-server-sample-databases"></a>Installare i database di esempio di SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Database di esempio sono utili per la sperimentazione con query SQL e LINQ, Data Binding, la modellazione di Entity Framework e così via.  Ogni prodotto di database ha un proprio database di esempio. Northwind e AdventureWorks sono due database di esempio di SQL Server più diffusi.  

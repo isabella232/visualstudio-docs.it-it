@@ -13,11 +13,11 @@ caps.latest.revision: 42
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7f58e29797e9a7760aa0f48c68868199f51b3c92
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177433"
 ---
 # <a name="using-and-providing-services"></a>Uso e offerta di servizi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Un servizio è un contratto tra due pacchetti VSPackage. Un pacchetto VSPackage 
  [Nozioni fondamentali sui servizi](../extensibility/internals/service-essentials.md)  
  Visualizza gli elementi importanti di un servizio di Visual Studio.  
   
- [Procedura: Ottenere un servizio](../extensibility/how-to-get-a-service.md)  
+ [Procedura: ottenere un servizio](../extensibility/how-to-get-a-service.md)  
  Viene illustrato come richiedere (utilizzare) un servizio.  
   
- [Procedura: Fornire un servizio](../extensibility/how-to-provide-a-service.md)  
+ [Procedura: offrire un servizio](../extensibility/how-to-provide-a-service.md)  
  Viene spiegato come offrire un servizio.  
   
- [Procedura: Fornire un servizio asincrono di Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Procedura: offrire un servizio asincrono di Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Viene spiegato come offrire un servizio asincrono.  
   
- [Procedura: Risolvere i problemi di servizi](../extensibility/how-to-troubleshoot-services.md)  
+ [Procedura: risolvere i problemi relativi ai servizi](../extensibility/how-to-troubleshoot-services.md)  
  Vengono illustrati i problemi comuni e vengono presentate le soluzioni ad essi.  
   
 ## <a name="related-sections"></a>Sezioni correlate  

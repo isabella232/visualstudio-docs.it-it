@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 430c321c14226228b46bfb0e43f372851fb2a232
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161228"
 ---
 # <a name="graphics-log-document"></a>Documento log grafica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
  **Informazioni su Direct3D**  
  Riporta le informazioni relative alle funzionalità di hardware e driver della scheda video usata durante la sessione di acquisizione.  
   
-|Proprietà|Descrizione|  
+|Proprietà|DESCRIZIONE|  
 |--------------|-----------------|  
 |**Formato High Color 10 bit XR**|**True** se il formato High Color 10 bit XR è supportato; in caso contrario, **False**.|  
 |**DirectCompute CS 4.x**|**True** se Compute Shader 4.0 è supportato; in caso contrario, **False**.|  
@@ -72,7 +72,7 @@ Il documento di log della grafica è la registrazione degli eventi di grafica ch
 |**Memoria visualizzazione**|Quantità di memoria installata nella scheda video grafica.|  
 |**Nome driver**|Nome del driver della scheda video grafica.|  
 |**Versione driver**|Versione del driver della scheda video grafica.|  
-|**Name**|Nome della scheda video grafica.|  
+|**Nome**|Nome della scheda video grafica.|  
   
  **File esperimento**  
  Visualizza le informazioni relative al file esperimento associato alla sessione di acquisizione.  

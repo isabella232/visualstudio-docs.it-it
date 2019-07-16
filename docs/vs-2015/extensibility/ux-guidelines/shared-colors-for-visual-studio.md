@@ -9,11 +9,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154438"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colori condivisi per Visual Studio
 
@@ -36,7 +36,7 @@ Assicurarsi di usare correttamente i nomi di token:
 
 ## <a name="command-structures"></a>Strutture dei comandi
 
-### <a name="BKMK_CommandMenus"></a> Menus
+### <a name="BKMK_CommandMenus"></a> Menu
 
 I menu possono trovarsi in diverse posizioni all'interno di Visual Studio: barra dei menu principale, incorporata in finestre di documento o lo strumento, o sul pulsante destro del mouse in diversi punti dell'IDE. Le implementazioni dei menu associati ad altri elementi dell'interfaccia utente vengono descritte nella sezione relativa al rispettivo elemento. È preferibile usare sempre l'implementazione dei menu standard fornita dall'ambiente di Visual Studio. Tuttavia, in alcuni casi rari si potrebbe non avere accesso ai menu standard di Visual Studio. In questi casi, usare i nomi di token seguenti per garantire che l'interfaccia utente sia coerente con gli altri menu in Visual Studio.
 
@@ -78,7 +78,7 @@ Non usare...
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (testo)
 
@@ -94,9 +94,9 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -180,7 +180,7 @@ Non usare...
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (testo)
 
@@ -192,7 +192,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
 #### <a name="menu"></a>Menu
 
@@ -274,7 +274,7 @@ Non usare...
 
   `Environment.CommandBarSelectedBorder`
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -362,7 +362,7 @@ In generale, usare sempre l'implementazione della barra dei menu standard fornit
 
 ![Sulla barra dei comandi con linea rossa](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303 018_CommandBarRedline")
 
-![Overflow button redline](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+![Pulsante di overflow con linea rossa](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303 019_OverflowButtonRedline")
 
 Usare...
 Nelle posizioni in cui è necessaria una barra dei comandi incorporata, ma non è possibile usare l'implementazione della barra dei comandi standard di Visual Studio.
@@ -563,7 +563,7 @@ Non usare...
 > [!IMPORTANT]
 > Le caselle combinate sono simili agli elenchi a discesa, ma includono un'area di testo modificabile. Se la casella di riepilogo a discesa non contiene un'area di testo modificabile, usare i token di colore indicati in [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
-![Combo box redline](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Casella combinata con linea rossa](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")
 
 Usare…
 - Quando si compilano caselle combinate personalizzate.
@@ -615,7 +615,7 @@ Usare…
 
   `Environment.ComboBoxGlyph`
 
-  ![Combo box&#47;drop&#45;down list](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303-032_ComboBoxDropdownList")
+  ![Casella combinata&#47;drop&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303 032_ComboBoxDropdownList")
 
   **Elenco a discesa**
 
@@ -633,7 +633,7 @@ Usare…
 
   `Environment.ComboBoxPopupBorder`
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -691,7 +691,7 @@ Usare…
 
   `Environment.ComboBoxItemMouseOverBorder`
 
-  **Focused**
+  **Con stato attivo**
 
   Componente
 
@@ -799,7 +799,7 @@ Usare…
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (glifo)
 
@@ -810,7 +810,7 @@ Usare…
 > [!IMPORTANT]
 > Gli elenchi a discesa sono simili alle caselle combinate, ma non contengono aree di testo modificabili. Se l'elenco a discesa contiene un'area di testo modificabile, usare i token di colore indicati in [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
-![Drop&#45;down redline](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
+![Eliminare&#45;verso il basso con linea rossa](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")
 
 Usare…
 Quando si creano controlli elenco a discesa personalizzati.
@@ -854,13 +854,13 @@ Non usare...
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (glifo)
 
   `Environment.DropDownGlyph`
 
-  ![Drop&#45;down list](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303-045_DropdownList")
+  ![Eliminare&#45;elenco a discesa](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303 045_DropdownList")
 
   **Elenco a discesa**
 
@@ -882,7 +882,7 @@ Non usare...
 
   `Environment.DropShadowBackground`
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -1044,7 +1044,7 @@ Non usare...
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (testo)
 
@@ -1062,7 +1062,7 @@ Non usare...
 
   N/D
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -1197,7 +1197,7 @@ Per pulsanti che non hanno una funzionalità simile ai pulsanti "Altre opzioni" 
 
  `Environment.CommandBarOptionsGlyph`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -1345,7 +1345,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
  Impostato su trasparente
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -1438,7 +1438,7 @@ Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la she
 - Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.
 
 #### <a name="selected-tab"></a>Scheda selezionata
- **Focused**
+ **Con stato attivo**
 
  Componente
 
@@ -1523,7 +1523,7 @@ Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la she
 
  Impostato sullo stesso colore dello sfondo.
 
- **Hover**
+ **Passare il mouse**
 
  ![Scheda sfondo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-077-backgroundtabhover.png "0303 077_BackgroundTabHover")
 
@@ -1617,7 +1617,7 @@ Non usare...
 
   `Environment.FileTabProvisionalSelectedInactiveBorder`
 
-  **Scheda Anteprima sfondo: Default**
+  **Scheda Anteprima sfondo: Impostazione predefinita**
 
   Componente
 
@@ -1643,7 +1643,7 @@ Non usare...
 
   Impostato sullo stesso colore dello sfondo.
 
-  **Scheda Anteprima sfondo: Hover**
+  **Scheda Anteprima sfondo: Passare il mouse**
 
   Componente
 
@@ -1673,7 +1673,7 @@ Non usare...
 
 Il pulsante di overflow dei documenti è presente se ci sono uno o più documenti aperti, indipendentemente dal fatto che nella configurazione corrente sia disponibile spazio sufficiente da contenere tutte le schede dei documenti. Il menu a discesa di overflow dei documenti, controllato dai colori di **CommandBarMenu** (vedere [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), visualizza un elenco di tutti i documenti aperti, sia visibili sia nascosti, e il glifo di overflow cambia a seconda che tutti i documenti aperti siano o meno visualizzati nel canale delle schede.
 
-![Overflow redline](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+![Overflow con linea rossa](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303 083_OverflowRedline")
 
 Usare…
 Quando si crea un pulsante di overflow dei documenti personalizzato.
@@ -1691,7 +1691,7 @@ Non usare...
 
   Nome token: Category. Color
 
-  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303-084_Overflow")
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303 084_Overflow")
 
   **Pulsante di overflow dei documenti**
 
@@ -1707,7 +1707,7 @@ Non usare...
 
   N/D
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -1777,7 +1777,7 @@ In qualsiasi punto in cui si crea un'interfaccia utente che deve corrispondere a
  Non usare...
 Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.
 
- **Docked**
+ **Ancorata**
 
  Componente
 
@@ -1842,7 +1842,7 @@ In qualsiasi punto in cui si crea un'interfaccia utente che deve corrispondere a
  Non usare...
 Per qualsiasi interfaccia utente che non deve cambiare automaticamente se la shell include un aggiornamento del tema.
 
- **Focused**
+ **Con stato attivo**
 
  Componente
 
@@ -1926,7 +1926,7 @@ Non usare...
 
   ![Spostare il titolo della pulsante con stato attivo barra](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303 096_TitleBarButtonFocused")
 
-  **Focused**
+  **Con stato attivo**
 
   Sfondo
 
@@ -1956,7 +1956,7 @@ Non usare...
 
   N/D
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -1966,7 +1966,7 @@ Non usare...
 
   ![Pulsante della barra del titolo con stato attivo al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303 098_TitleBarButtonFocusedHover")
 
-  **Focused**
+  **Con stato attivo**
 
   Sfondo
 
@@ -2006,7 +2006,7 @@ Non usare...
 
   ![Spostare il titolo della barra sul pulsante con stato attivo e premuto](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303 100_TitleBarButtonFocusedPressed")
 
-  **Focused**
+  **Con stato attivo**
 
   Sfondo
 
@@ -2190,7 +2190,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
  `Environment.AutoHideTabBorder`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -2242,7 +2242,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
 - Per qualsiasi elemento che non deve corrispondere sempre all'interfaccia utente della casella di ricerca.
 
-  **Focused**
+  **Con stato attivo**
 
   Componente
 
@@ -2276,7 +2276,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (glifo Cerca)
 
@@ -2460,7 +2460,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Bordo
 
-  nessuno
+  Nessuna
 
   Separatore
 
@@ -2500,7 +2500,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (glifo)
 
@@ -2508,7 +2508,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Bordo
 
-  nessuno
+  Nessuna
 
   ![Elenco di ricerca&#45;verso il basso sul pulsante disabilitato](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303 123_SearchDropdownButtonDisabled")
 
@@ -2516,7 +2516,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Sfondo
 
-  nessuno
+  Nessuna
 
   Primo piano (glifo)
 
@@ -2524,7 +2524,7 @@ Per qualsiasi interfaccia utente che non deve automaticamente cambiare se la she
 
   Bordo
 
-  nessuno
+  Nessuna
 
 #### <a name="search-drop-down-lists"></a>Elenchi a discesa di ricerca
 
@@ -2582,7 +2582,7 @@ Usare…
 
   `SearchControl.PopupItemText`
 
-  ![Search check box](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303-126_SearchCheckbox")
+  ![Casella di controllo di ricerca](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303 126_SearchCheckbox")
 
   **Opzioni di ricerca (casella di controllo)**
 
@@ -2614,7 +2614,7 @@ Usare…
 
   `SearchControl.PopupSectionHeaderText`
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -2731,7 +2731,7 @@ Per qualsiasi elemento diverso da un collegamento ipertestuale.
 
  `Environment.PanelHyperlink`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -2792,7 +2792,7 @@ Per gli elementi dell'interfaccia utente che non sono simili a una barra informa
 
  ![Infobar](../../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")
 
- **Infobar**
+ **Barra informazioni**
 
  Sfondo
 
@@ -2850,7 +2850,7 @@ Quando si crea un'interfaccia utente che deve corrispondere alle barre di scorri
 
  `Environment.ScrollBarArrowGlyph`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -2956,9 +2956,9 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -2982,7 +2982,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
   **Trascinare su**
 
@@ -3008,7 +3008,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
   **selezionato**
 
@@ -3020,7 +3020,7 @@ Non usare...
 
   ![Con stato attivato di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303 151_TreeViewFocused")
 
-  **Focused**
+  **Con stato attivo**
 
   Sfondo
 
@@ -3056,7 +3056,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
   **Selezionato al passaggio del mouse**
 
@@ -3068,7 +3068,7 @@ Non usare...
 
   ![Con stato attivo al passaggio del mouse di visualizzazione ad albero](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303 153_TreeViewFocusedHover")
 
-  **Focused**
+  **Con stato attivo**
 
   Sfondo
 
@@ -3104,7 +3104,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
 ### <a name="button-controls"></a>Controlli pulsante
  ![Controllo pulsante con linea rossa](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303 155_ButtonControlRedline")
@@ -3151,7 +3151,7 @@ Per i pulsanti che verranno visualizzati su uno sfondo personalizzato che non fa
 
  `CommonControls.ButtonBorderDisabled`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -3187,7 +3187,7 @@ Per i pulsanti che verranno visualizzati su uno sfondo personalizzato che non fa
 
  `CommonControls.ButtonBorderPressed`
 
- **Focused**
+ **Con stato attivo**
 
  Componente
 
@@ -3232,7 +3232,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxBorder`
 
- Testo
+ Text
 
  `CommonControls.CheckBoxText`
 
@@ -3258,7 +3258,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxBorderDisabled`
 
- Testo
+ Text
 
  `CommonControls.CheckBoxTextDisabled`
 
@@ -3266,7 +3266,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxGlyphDisabled`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -3284,7 +3284,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxBorderHover`
 
- Testo
+ Text
 
  `CommonControls.CheckBoxTextHover`
 
@@ -3310,7 +3310,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxBorderPressed`
 
- Testo
+ Text
 
  `CommonControls.CheckBoxTextPressed`
 
@@ -3318,7 +3318,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxGlyphPressed`
 
- **Focused**
+ **Con stato attivo**
 
  Componente
 
@@ -3336,7 +3336,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
  `CommonControls.CheckBoxBorderFocused`
 
- Testo
+ Text
 
  `CommonControls.CheckBoxTextFocused`
 
@@ -3346,7 +3346,7 @@ Per qualsiasi interfaccia utente diversa da un controllo casella di controllo.
 
 ### <a name="drop-boxcombo-box-controls"></a>Controlli casella combinata/casella di riepilogo a discesa
 
-![Drop&#45;down&#47;combo box redline](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
+![Eliminare&#45;inattivo&#47;casella combinata con linea rossa](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303 167_DropDownComboBoxRedline")
 
 Usare…
 Per elenchi a discesa e caselle combinate che fanno parte dell'area dei documenti.
@@ -3374,7 +3374,7 @@ Non usare...
 
   `CommonControls.ComboBoxBorder`
 
-  Testo
+  Text
 
   `CommonControls.ComboBoxText`
 
@@ -3408,7 +3408,7 @@ Non usare...
 
   `CommonControls.ComboBoxBorderDisabled`
 
-  Testo
+  Text
 
   `CommonControls.ComboBoxTextDisabled`
 
@@ -3424,7 +3424,7 @@ Non usare...
 
   `CommonControls.ComboBoxGlyphBackgroundDisabled`
 
-  **Hover**
+  **Passare il mouse**
 
   Componente
 
@@ -3442,7 +3442,7 @@ Non usare...
 
   `CommonControls.ComboBoxBorderHover`
 
-  Testo
+  Text
 
   `CommonControls.ComboBoxTextHover`
 
@@ -3466,7 +3466,7 @@ Non usare...
 
   Nome token: Category. Color
 
-  ![Drop&#45;down&#47;combo box pressed](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")
+  ![Eliminare&#45;inattivo&#47;casella combinata premuta](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303 171_DropDownComboBoxPressed")
 
   Sfondo
 
@@ -3476,7 +3476,7 @@ Non usare...
 
   `CommonControls.ComboBoxBorderPressed`
 
-  Testo
+  Text
 
   `CommonControls.ComboBoxTextPressed`
 
@@ -3492,7 +3492,7 @@ Non usare...
 
   `CommonControls.ComboBoxGlyphBackgroundPressed`
 
-  **Focused**
+  **Con stato attivo**
 
   Componente
 
@@ -3500,7 +3500,7 @@ Non usare...
 
   Nome token: Category. Color
 
-  ![Drop&#45;down&#47;combo box focused](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")
+  ![Eliminare&#45;inattivo&#47;casella combinata con stato attivato](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303 172_DropDownComboBoxFocused")
 
   Sfondo
 
@@ -3510,7 +3510,7 @@ Non usare...
 
   `CommonControls.ComboBoxBorderFocused`
 
-  Testo
+  Text
 
   `CommonControls.ComboBoxTextFocused`
 
@@ -3534,7 +3534,7 @@ Non usare...
 
   Nome token: Category. Color
 
-  ![Drop&#45;down&#47;combo box text input](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")
+  ![Eliminare&#45;inattivo&#47;input di testo casella combinata](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303 173_DropDownComboBoxTextInput")
 
   Evidenziazione
 
@@ -3598,7 +3598,7 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
 
  Nome token: Category. Color
 
- Impostazione predefinita
+ Predefinito
 
  Sfondo
 
@@ -3661,7 +3661,7 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
 
  Nome token: Category. Color
 
- Impostazione predefinita
+ Predefinito
 
  Sfondo
 
@@ -3673,7 +3673,7 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
 
  Bordo
 
- nessuno
+ Nessuna
 
  Selezionato (attivo)
 
@@ -3687,7 +3687,7 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
 
  Bordo
 
- nessuno
+ Nessuna
 
  Selezionato (inattivo)
 
@@ -3701,7 +3701,7 @@ Per qualsiasi interfaccia utente diversa da un controllo tabulare o griglia.
 
  Bordo
 
- nessuno
+ Nessuna
 
 ## <a name="manifest-designer"></a>Finestra Progettazione manifesto
 
@@ -3737,7 +3737,7 @@ Non usare...
 
   Bordo
 
-  nessuno
+  Nessuna
 
   Riquadro descrizione
 
@@ -3776,7 +3776,7 @@ Non usare...
 ## <a name="tagging"></a>Assegnazione di tag
  Visual Studio supporta l'assegnazione di tag, che permette a un utente di dichiarare parole chiave da cercare per scopi di verifica. Ad esempio, i project manager e gli sviluppatori possono usare Team Foundation Server (TFS) per assegnare tag a elementi di lavoro. La tabella seguente indica i nomi di colore per il tag stesso e il glifo dell'icona di chiusura visualizzato negli stati corrispondenti al passaggio del mouse e alla selezione.
 
- ![Tagging redline](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303-176_TaggingRedline")
+ ![L'assegnazione di tag con linea rossa](../../extensibility/ux-guidelines/media/0303-176-taggingredline.png "0303 176_TaggingRedline")
 
  Usare…
 Per un'interfaccia utente che supporta l'assegnazione di tag.
@@ -3805,7 +3805,7 @@ Per qualsiasi altro tipo di interfaccia utente.
 
  ![Tag al passaggio del mouse](../../extensibility/ux-guidelines/media/0303-178-taghover.png "0303 178_TagHover")
 
- **Hover**
+ **Passare il mouse**
 
  Sfondo
 
@@ -3848,7 +3848,7 @@ Per qualsiasi altro tipo di interfaccia utente.
 
  Nome token: Category. Color
 
- ![Tag &#40;glyph&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303-181_TagGlyph")
+ ![Tag &#40;icona&#41;](../../extensibility/ux-guidelines/media/0303-181-tagglyph.png "0303 181_TagGlyph")
 
  **Predefinito (impostazione predefinita del tag)**
 
@@ -3860,7 +3860,7 @@ Per qualsiasi altro tipo di interfaccia utente.
 
  `Tag.TagHoverGlyph`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -3892,7 +3892,7 @@ Per qualsiasi altro tipo di interfaccia utente.
 
  Nome token: Category. Color
 
- ![Tag &#40;glyph&#41; pressed](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303-183_TagGlyphPressed")
+ ![Tag &#40;icona&#41; premuto](../../extensibility/ux-guidelines/media/0303-183-tagglyphpressed.png "0303 183_TagGlyphPressed")
 
  **Premuto (impostazione predefinita del tag)**
 
@@ -4107,7 +4107,7 @@ Per qualsiasi altro elemento diverso dall'interfaccia utente della casella degli
 
  Bordo
 
- nessuno
+ Nessuna
 
  Primo piano (glifo)
 
@@ -4117,7 +4117,7 @@ Per qualsiasi altro elemento diverso dall'interfaccia utente della casella degli
 
  `Environment.ToolboxContent`
 
- **Hover**
+ **Passare il mouse**
 
  Componente
 
@@ -4137,7 +4137,7 @@ Per qualsiasi altro elemento diverso dall'interfaccia utente della casella degli
 
  Bordo
 
- nessuno
+ Nessuna
 
  Primo piano (testo)
 
@@ -4201,7 +4201,7 @@ Per qualsiasi altro elemento diverso dall'interfaccia utente della casella degli
 
  Bordo
 
- nessuno
+ Nessuna
 
  Primo piano (glifo)
 

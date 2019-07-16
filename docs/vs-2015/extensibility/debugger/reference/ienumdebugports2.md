@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c30e42592af4d34765951b5e229555556c9b57b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155024"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ IEnumDebugPorts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IEnumDebugPorts2`.  
   
-|Metodo|Descrizione|  
+|Metodo|DESCRIZIONE|  
 |------------|-----------------|  
 |[avanti](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Recupera un determinato numero di porte in una sequenza di enumerazione.|  
 |[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Ignora un determinato numero di porte in una sequenza di enumerazione.|  

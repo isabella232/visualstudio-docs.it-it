@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160571"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Stringhe usate come chiavi per la ricerca di un plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Le stringhe seguenti sono le chiavi per l'accesso del Registro di sistema per tr
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
 |`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
-|`SCC_KEY`|SCC|  
+|`SCC_KEY`|CONTROLLO DEL CODICE SORGENTE|  
 |`SCC_FILE_SIGNATURE`|Un file di controllo del codice sorgente|  
 |`SCC_NSE`|Estensione Namespace|  
 |`SCC_NSE_PREFIX`|Prefisso Protocal|  

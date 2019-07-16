@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185947"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Procedura: Raccogliere dati di campionamento a livello di riga
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Il campionamento a livello di riga è una capacità del profiler che consente di
   
      oppure  
   
-- Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>**.  
+- Quando si avvia un'applicazione, digitare **VSPerfCmd /lineoff \<altri argomenti>** .  
   
 ## <a name="see-also"></a>Vedere anche  
  [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)  (Configurazione di sessioni di prestazioni)  

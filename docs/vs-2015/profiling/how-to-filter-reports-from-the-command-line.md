@@ -10,23 +10,23 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146012"
 ---
-# <a name="how-to-filter-reports-from-the-command-line"></a>Procedura: filtrare rapporti tramite la riga di comando
+# <a name="how-to-filter-reports-from-the-command-line"></a>Procedura: Filtrare report dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Usando le opzioni del comando **VSPerfReport** è possibile filtrare i report per un intervallo di tempo specifico del file dei dati di profilatura o limitare i dati a uno o più processi o thread. Per altre informazioni su questo comando, vedere [VSPerfReport](../profiling/vsperfreport.md).  
   
 |Opzioni|Descrizione|  
 |-------------|-----------------|  
-|**StartTime:**[*Valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|  
-|**EndTime:**[*Valore*]|Mostra solo i dati raccolti prima del valore (in millisecondi).|  
+|**StartTime:** [*Valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|  
+|**EndTime:** [*Valore*]|Mostra solo i dati raccolti prima del valore (in millisecondi).|  
 |**FilterFile:** `VSPFFile`|Specifica il percorso di un file di filtro generato dalla finestra **Visual Studio Performance Report**.|  
-|**MsFilter:**[*OraInizio,Durata*]|Mostra solo i dati di `StartTime` fino alla lunghezza di `Duration` (in millisecondi).|  
-|**Process:**[*IDprocesso*]|Mostra solo i dati del processo specificato.|  
-|**Thread:**[*IDthread*]|Mostra solo i dati del thread specificato.|  
-|**Thread:**[*IDthread,IDprocesso*]|Mostra solo i dati del thread specificato associato al processo specificato.|
+|**MsFilter:** [*OraInizio,Durata*]|Mostra solo i dati di `StartTime` fino alla lunghezza di `Duration` (in millisecondi).|  
+|**Process:** [*IDprocesso*]|Mostra solo i dati del processo specificato.|  
+|**Thread:** [*IDthread*]|Mostra solo i dati del thread specificato.|  
+|**Thread:** [*IDthread,IDprocesso*]|Mostra solo i dati del thread specificato associato al processo specificato.|

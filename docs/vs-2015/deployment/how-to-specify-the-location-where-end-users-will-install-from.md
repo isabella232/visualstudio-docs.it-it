@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159132"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Procedura: Specificare il percorso da cui gli utenti finali eseguiranno l'installazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Quando si pubblica un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] del
   
 2. Fare clic sulla scheda **Pubblica**.  
   
-3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato http://www.microsoft.com/ApplicationName, o un percorso UNC nel formato \\\Server\ApplicationName.  
+3. Nel campo URL di installazione, immettere il percorso di installazione tramite un URL completo nel formato http://www.microsoft.com/ApplicationName , o un percorso UNC nel formato \\ \Server\ApplicationName.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Specifica in cui vengono copiati i file di Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

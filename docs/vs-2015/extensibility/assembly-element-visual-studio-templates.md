@@ -14,22 +14,22 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10c894f3507ae760624b6ae18f785aae6016cd5e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184701"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica le informazioni relative a un assembly, che usa il modello per aggiungere un riferimento dell'assembly per i progetti.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<Riferimenti a >  
  \<Riferimento >  
- \<Assembly>  
+ \<Assembly >  
   
 ## <a name="syntax"></a>Sintassi  
   

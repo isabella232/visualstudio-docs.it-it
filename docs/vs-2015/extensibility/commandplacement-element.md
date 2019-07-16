@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43fd417c4d54c0ab57133cf6dbff2c770c1ffc45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184331"
 ---
 # <a name="commandplacement-element"></a>Elemento CommandPlacement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ L'elemento CommandPlacement Abilita i pulsanti, gruppi e i menu da includere in 
   
 ### <a name="attributes"></a>Attributi  
   
-|Attributo|Descrizione|  
+|Attributo|DESCRIZIONE|  
 |---------------|-----------------|  
-|guid|Obbligatorio. Il guid del set di comandi, come definito nel [elemento Symbols](../extensibility/symbols-element.md).|  
-|ID|Obbligatorio. L'id del menu, gruppo o comando per essere inserito, come definito nel `Symbols Element`.|  
-|priority|Obbligatorio. Determina la posizione dell'elemento visual nel relativo elemento padre.|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|GUID|Richiesto. Il guid del set di comandi, come definito nel [elemento Symbols](../extensibility/symbols-element.md).|  
+|id|Richiesto. L'id del menu, gruppo o comando per essere inserito, come definito nel `Symbols Element`.|  
+|priorità|Richiesto. Determina la posizione dell'elemento visual nel relativo elemento padre.|  
+|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Padre|Obbligatorio. Il menu o un gruppo che ospita l'elemento da inserire.|  
+|Padre|Richiesto. Il menu o un gruppo che ospita l'elemento da inserire.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   

@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180426"
 ---
 # <a name="nesting-projects"></a>Annidamento dei progetti
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Gli sviluppatori di applicazioni aziendali che usano il pacchetto di Visual Stud
   
  Annidamento di progetto non è una parte intrinseca di [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. È necessario scrivere il codice per abilitare la nidificazione e un sottoprogetto annidamento all'interno dei progetti figlio. Il progetto padre è un pacchetto VSPackage speciali o tipo di progetto creato e registrato con un proprio GUID che include il codice necessario per implementare la nidificazione di progetto.  
   
- Nell'esempio C# Example.Nested Project, è possibile trovare un esempio di progetti annidati.  
+ Nell'esempio c# Example.Nested Project, è possibile trovare un esempio di progetti annidati.  
   
 ## <a name="nested-projects-example"></a>Esempio di progetti annidati  
  ![Esplora i progetti annidati](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  

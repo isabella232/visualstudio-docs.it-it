@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177448"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Distribuire applicazioni Windows Store da Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Applies to Windows only](../Image/windows_only_content.png "windows_only_content")
+Si applica solo a Windows] (.. /Image/windows_only_content.png "windows_only_content")
 
  Usando la funzionalità di distribuzione di Visual Studio, puoi compilare e registrare app Windows Store create con Visual Studio su un dispositivo di destinazione. Il modo in cui viene registrata l'app è determinato dal tipo di dispositivo, ovvero se è locale o remoto:
 

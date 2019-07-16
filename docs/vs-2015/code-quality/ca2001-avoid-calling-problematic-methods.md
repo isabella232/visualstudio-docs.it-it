@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26f50580c8d29e24b25a9dad520a81d22a3dfc0c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189076"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: Evitare le chiamate a metodi problematici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "58966803"
 
  Una violazione di questa regola si verifica quando un membro chiama uno dei metodi seguenti.
 
-|Metodo|Descrizione|
+|Metodo|DESCRIZIONE|
 |------------|-----------------|
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|La chiamata a GC. Raccogli possono influire in modo significativo le prestazioni dell'applicazione ed sono solo raramente necessario. Per altre informazioni, vedere la [Mariani Rico](http://go.microsoft.com/fwlink/?LinkId=169256) post di blog su MSDN.|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e Resume sono state deprecate a causa del comportamento imprevedibile.  Usare altre classi nel <xref:System.Threading> dello spazio dei nomi, ad esempio <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>, e <xref:System.Threading.Semaphore> per sincronizzare i thread o proteggere le risorse.|

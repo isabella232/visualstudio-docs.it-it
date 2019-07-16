@@ -11,11 +11,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: b8ca68aec180c51a170fd6ecce58237a5b306705
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194388"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Gestione delle associazioni di file side-by-side
 
@@ -53,7 +53,7 @@ Se si desidera più pacchetti VSPackage side-by-side per usare la stessa estensi
 
   **Righe della tabella CustomAction che determinano la versione più recente di Visual Studio**
 
-  |Operazione|Tipo|Origine|destinazione|
+  |Azione|Type|Source|destinazione|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -61,7 +61,7 @@ Se si desidera più pacchetti VSPackage side-by-side per usare la stessa estensi
 
   **Righe della tabella InstallExecuteSequence che determinano la versione più recente di Visual Studio**
 
-  |Operazione|Condizione|Sequence|
+  |Azione|Condizione|Sequenza|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 E NON (DEVENV_EXE_2003 O DEVENV_EXE_2005)|410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 E NON DEVENV_EXE_2005|420|

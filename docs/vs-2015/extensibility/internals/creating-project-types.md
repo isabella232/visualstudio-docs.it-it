@@ -12,11 +12,11 @@ caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bbe65d1615603e4dc7546dbfe3530093c62528e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155037"
 ---
 # <a name="creating-project-types"></a>Creazione di tipi di progetto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58970023"
  [Decisioni di progettazione relative al tipo di progetto](../../extensibility/internals/project-type-design-decisions.md)  
  Illustra l'elemento, la persistenza del file di progetto e impegno meccanico sulle scelte di progettazione da prendere prima di creare un nuovo tipo di progetto.  
   
- [Elenco di controllo: Creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)  
+ [Elenco di controllo: creazione di nuovi tipi di progetto](../../extensibility/internals/checklist-creating-new-project-types.md)  
  Viene fornita una panoramica dei passaggi da seguire per creare un nuovo tipo di progetto che supporta attività di programmazione come la modifica del codice e la compilazione, creazione, debug e distribuzione di applicazioni nel progetto.  
   
  [Creazione di istanze di progetto tramite le factory di progetto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)  

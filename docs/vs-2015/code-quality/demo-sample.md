@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201426"
 ---
 # <a name="demo-sample"></a>Esempio dimostrativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 2. Nell'elenco ad albero **Tipo progetto** espandere **Altri linguaggi** se Visual C++ non è il linguaggio predefinito in Visual Studio.  
   
-3. Espandere **Visual C++**, quindi fare clic su **Generale**.  
+3. Espandere **Visual C++** , quindi fare clic su **Generale**.  
   
 4. In **Modelli** fare clic su **Progetto vuoto**.  
   
@@ -56,13 +56,13 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 3. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.  
   
-4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)**.  
+4. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e fare clic su **Libreria statica (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Aggiungere l'intestazione e il file di origine al progetto CodeDefects  
   
 1. In Esplora soluzioni espandere **CodeDefects**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
   
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)**.  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di intestazione (.h)** .  
   
 3. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
@@ -90,7 +90,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.  
   
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)**.  
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di C++ (.cpp)** .  
   
 7. Nella casella **Nome** digitare **Bug.cpp** e quindi fare clic su **Aggiungi**.  
   
@@ -170,13 +170,13 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 6. Nell'elenco **Generale** selezionare il testo nella colonna accanto a **Estensione di destinazione** e digitare **.lib**.  
   
-7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)**.  
+7. In **Impostazioni predefinite progetto** fare clic sulla colonna accanto a **Tipo configurazione** e quindi fare clic su **Libreria statica (.lib)** .  
   
 ### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Aggiungere il file di intestazione e il file di origine per il progetto Annotations  
   
 1. In Esplora soluzioni espandere **Annotations**, fare clic con il pulsante destro del mouse su **File di intestazione**, fare clic su **Aggiungi** e quindi fare clic su **Nuovo elemento**.  
   
-2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)**.  
+2. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **File di intestazione (.h)** .  
   
 3. Nella casella di testo **Nome** digitare **annotations.h** e quindi fare clic su **Aggiungi**.  
   
@@ -199,7 +199,7 @@ Le procedure seguenti illustrano come creare un esempio per la [Procedura dettag
   
 5. In Esplora soluzioni fare clic con il pulsante destro del mouse su **File di origine**, scegliere **Nuovo** e quindi fare clic su **Nuovo elemento**.  
   
-6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)**.  
+6. Nella finestra di dialogo **Aggiungi nuovo elemento** fare clic su **Codice** e quindi fare clic su **File di C++ (.cpp)** .  
   
 7. Nella casella di testo **Nome** digitare **annotations.cpp** e quindi fare clic su **Aggiungi**.  
   

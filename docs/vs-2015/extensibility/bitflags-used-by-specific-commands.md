@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184687"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Flag di bit usati da comandi specifici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="checked-out-flag"></a>Flag di stato estratto  
  Questo flag può essere impostato per entrambi i [SccAdd](../extensibility/sccadd-function.md) oppure [SccCheckin](../extensibility/scccheckin-function.md).  
   
-|Flag|Value|Descrizione|  
+|Flag|Valore|DESCRIZIONE|  
 |----------|-----------|-----------------|  
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Mantenere il file estratto.|  
   
@@ -42,7 +42,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="diff-flags"></a>Flag diff  
  Il [SccDiff](../extensibility/sccdiff-function.md) utilizza questi flag per definire l'ambito di un'operazione diff. Il `SCC_DIFF_QD_xxx` flag si escludono a vicenda. Se viene specificato uno di essi, quindi alcun feedback visivo non è necessario fornire. In un "diff veloce" (PC), il plug-in non determina come il file è diverso, solo se è diverso. Se nessuno di questi flag sono specificati, che viene eseguito un "diff visual"; le differenze tra file dettagliato vengono calcolate e visualizzate. Se il PC richiesto non è supportato, il plug-in passa al successivo quello più adatto. Ad esempio, se l'IDE richiede un checksum e il plug-in non è supportata, l'oggetto non del plug-in un full-contenuto, selezionare (comunque molto più velocemente una rappresentazione visiva).  
   
-|Flag|Value|Descrizione|  
+|Flag|Valore|DESCRIZIONE|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignora le maiuscole.|  
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignorare le differenze di spazio vuoto. **Nota:**  Il `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` flag sono facoltativi flag di bit.|  
@@ -86,7 +86,7 @@ Il comportamento di un numero di funzioni nell'API dei plug-in controllo di orig
 ## <a name="noption-values"></a>Valori nOption  
  Questi flag vengono utilizzati per il [SccSetOption](../extensibility/sccsetoption-function.md) nel `nOption` parametro.  
   
-|Flag|Value|Descrizione|  
+|Flag|Valore|DESCRIZIONE|  
 |----------|-----------|-----------------|  
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Impostare lo stato della coda di eventi.|  
 |`SCC_OPT_USERDATA`|0x00000002L|Specificare i dati utente per `SCC_OPT_NAMECHANGEPFN`.|  

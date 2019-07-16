@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183342"
 ---
 # <a name="customizing-the-editor"></a>Personalizzazione dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "54804819"
  [Procedura: Gestire le finestre dell'editor](../ide/how-to-manage-editor-windows.md)  
  Viene illustrato come modificare le finestre dell'editor.  
   
- [Procedura: Gestire le modalità dell'editor](../ide/how-to-manage-editor-modes.md)  
+ [Procedura: Gestire le modalità dell'editor](../ide/how-to-manage-editor-modes.md).  
  Viene illustrato come utilizzare la modalità a schermo intero e la modalità Spazio virtuale.  
   
 ## <a name="see-also"></a>Vedere anche  

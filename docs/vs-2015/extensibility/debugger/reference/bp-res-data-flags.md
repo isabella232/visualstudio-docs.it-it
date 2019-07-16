@@ -13,11 +13,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68d1c0705ae7d27bf281f5d65e9385228cd36bc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153336"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ public enum enum_BP_RES_DATA_FLAGS { 
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  BP_RES_DATA_EMULATED  
  Specifica che il punto di interruzione dei dati viene emulato.  
   

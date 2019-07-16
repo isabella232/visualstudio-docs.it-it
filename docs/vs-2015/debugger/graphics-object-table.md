@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161189"
 ---
 # <a name="graphics-object-table"></a>Tabella oggetti grafici
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,8 +40,8 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
 |Colonna|Descrizione|  
 |------------|-----------------|  
 |**Identificatore**|ID dell'oggetto.|  
-|**Name**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|  
-|**Type**|Tipo di oggetto.|  
+|**Nome**|Informazioni specifiche dell'applicazione impostate per l'oggetto con la funzione Direct3D `SetPrivateData`, in genere per fornire informazioni di identificazione aggiuntive su un oggetto.|  
+|**Tipo**|Tipo di oggetto.|  
 |**Active**|Visualizza "*" per un oggetto impostato per D3D10Device o D3D11DeviceContext durante il frame acquisito.<br /><br /> Corrisponde agli oggetti visualizzati come testo in grigio, ma fornisce una voce di colonna che è possibile usare per ordinare la tabella degli oggetti.|  
 |**Dimensione**|Dimensione dell'oggetto in byte.|  
 |**Format**|Formato dell'oggetto. Ad esempio, il formato di un oggetto trama o il modello di shader di un oggetto shader.|  
@@ -79,7 +79,7 @@ La Tabella oggetti grafici disponibile in Analisi grafica di Visual Studio conse
   
  Si può anche selezionare/deselezionare la casella di controllo **Mostra offset** per nascondere o visualizzare l'offset di ogni elemento del buffer.  
   
-|Tipo|Descrizione|  
+|Type|Descrizione|  
 |----------|-----------------|  
 |**float**|Valore a virgola mobile a 32 bit.|  
 |**float2**|Vettore che contiene due valori a virgola mobile a 32 bit.|  

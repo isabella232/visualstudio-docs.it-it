@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142335"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analisi del codice per gli avvisi del codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Lo strumento di analisi del codice gestito fornisce avvisi che indicano le viola
   
 |Elemento|Descrizione|  
 |----------|-----------------|  
-|Tipo|TypeName per la regola.|  
+|Type|TypeName per la regola.|  
 |CheckId|Identificatore univoco per la regola. CheckId e Category vengono usati per l'eliminazione di un avviso nell'origine.|  
 |Category|Categoria dell'avviso.|  
 |Modifica importante|Indica se la correzione di una violazione della regola è una modifica importante. Per modifica importante si intende che un assembly che presenta una dipendenza dalla destinazione che ha causato la violazione non verrà ricompilato con la nuova versione corretta o potrebbe non riuscire in fase di esecuzione a causa della modifica. Quando sono disponibili più correzioni e almeno una di esse è una modifica importante e una non la è, vengono specificati sia "Importante" che "Non importante".|  
 |Causa|Codice gestito specifico che ha fatto sì che la regola generasse un avviso.|  
-|Descrizione|Descrive i problemi alla base dell'avviso.|  
+|DESCRIZIONE|Descrive i problemi alla base dell'avviso.|  
 |Come correggere le violazioni|Spiega come modificare il codice sorgente per soddisfare la regola e impedire la generazione di un avviso.|  
 |Esclusione di avvisi|Descrive quando è possibile eliminare un avviso da questa regola.|  
 |Codice di esempio|Esempi che violano la regola ed esempi corretti che soddisfano la regola.|  

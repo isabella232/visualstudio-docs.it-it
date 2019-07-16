@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186845"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procedura dettagliata: Uso della diagnostica della grafica per eseguire il debug di un compute shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
     ![Log grafico in Visual Studio. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
-   Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. L'**Elenco eventi di grafica** contiene un evento per ogni chiamata DirectCompute e API Direct3D effettuata durante il frame attivo, ad esempio le chiamate API per eseguire un calcolo sulla GPU o per eseguire il rendering del dataset o dell'interfaccia utente. In questo caso, vengono presi in considerazione gli eventi `Dispatch` che rappresentano parti della simulazione eseguita nella GPU.   
+   Dopo aver selezionato un frame che dimostra il problema, è possibile usare l' **Elenco eventi di grafica** per diagnosticarlo. L'**Elenco eventi di grafica** contiene un evento per ogni chiamata DirectCompute e API Direct3D effettuata durante il frame attivo, ad esempio le chiamate API per eseguire un calcolo sulla GPU o per eseguire il rendering del dataset o dell'interfaccia utente. In questo caso, vengono presi in considerazione gli eventi `Dispatch` che rappresentano parti della simulazione eseguita nella GPU.  
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>Per trovare l'evento di invio per l'aggiornamento della simulazione  
   
@@ -93,7 +93,7 @@ Questa procedura dettagliata illustra come usare gli strumenti di diagnostica de
   
 4. Per arrestare il debug del compute shader, nella **Debug** sulla barra degli strumenti, scegliere **arresta debug** (tastiera: MAIUSC + F5).  
   
-5. Selezionare quindi il secondo evento `Dispatch` e avviare il debug del compute shader come nel passaggio precedente.   
+5. Selezionare quindi il secondo evento `Dispatch` e avviare il debug del compute shader come nel passaggio precedente.  
   
     ![Selezione il secondo evento di invio di El](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   

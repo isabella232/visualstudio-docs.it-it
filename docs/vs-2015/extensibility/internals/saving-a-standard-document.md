@@ -13,18 +13,18 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198074"
 ---
 # <a name="saving-a-standard-document"></a>Salvataggio di un documento standard
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L'ambiente gestisce il salvataggio, Salva con nome e salvare tutti i comandi. Quando un utente seleziona **salvare**, **Salva con nome**, o **Salva tutto** dal **File** dal menu o chiude la soluzione, causando un  **Salva tutto**, verifica quanto segue.  
   
- ![Standard Editor](../../extensibility/internals/media/public.gif "Public")  
+ ![Editor standard](../../extensibility/internals/media/public.gif "pubblico")  
 Salvare, Salva con nome e la gestione di un editor standard del comando Salva tutto  
   
  Questa procedura è descritta nei passaggi seguenti:  

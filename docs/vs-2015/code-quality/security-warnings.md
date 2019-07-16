@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 37347946f01a752fa6e656c61754fa2702a1f517
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142122"
 ---
 # <a name="security-warnings"></a>Avvisi di sicurezza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Regola|Descrizione|  
+|Regola|DESCRIZIONE|  
 |----------|-----------------|  
 |[CA2100: Esaminare le query SQL per le vulnerabilità di sicurezza](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Un metodo imposta la proprietà System.Data.IDbCommand.CommandText usando una stringa compilata da un argomento stringa nel metodo. La regola presuppone che l'argomento stringa contenga l'input dell'utente. Una stringa di comando SQL compilata da un input dell'utente è vulnerabile agli attacchi intrusivi nel codice SQL,|  
 |[CA2102: Intercettare le eccezioni non CLSCompliant nei gestori generali](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|In un membro di un assembly che non è contrassegnato con l'attributo RuntimeCompatibilityAttribute o che è contrassegnato con RuntimeCompatibility(WrapNonExceptionThrows = false) è incluso un blocco catch che gestisce System.Exception e che non contiene un blocco catch generale immediatamente successivo.|  
@@ -48,7 +48,7 @@ Gli avvisi di sicurezza supportano librerie e applicazioni più sicure. Questi a
 |[CA2116: I metodi APTCA devono chiamare solo metodi APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|Quando l'attributo APTCA (AllowPartiallyTrustedCallers) è presente su un assembly completamente attendibile e l'assembly esegue codice in un altro assembly che non consente chiamanti parzialmente attendibili, è possibile che si verifichi una violazione della sicurezza.|  
 |[CA2117: I tipi APTCA devono estendere solo tipi di base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|Quando l'attributo APTCA (AllowPartiallyTrustedCallers) è presente su un assembly completamente attendibile e un tipo nell'assembly eredita da un tipo che non consente chiamanti parzialmente attendibili, è possibile che si verifichi una violazione della sicurezza.|  
 |[CA2118: Esaminare la sintassi di SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|SuppressUnmanagedCodeSecurityAttribute consente di modificare il comportamento del sistema di sicurezza predefinito per i membri che eseguono codice non gestito mediante interoperabilità COM o chiamata al sistema operativo. Questo attributo viene principalmente usato per aumentare le prestazioni. L'aumento delle prestazioni, tuttavia, comporta notevoli rischi in termini di sicurezza.|  
-|[CA2119: Sealed i metodi che soddisfano interfacce private](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un'interfaccia interna (Friend in Visual Basic). Per correggere una violazione di questa regola, impedire che venga eseguito l'override del metodo esternamente all'assembly.|  
+|[CA2119: IMPOSTARE COME Sealed i metodi che soddisfano interfacce private](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Un tipo pubblico ereditabile fornisce un'implementazione di metodo sottoponibile a override di un'interfaccia interna (Friend in Visual Basic). Per correggere una violazione di questa regola, impedire che venga eseguito l'override del metodo esternamente all'assembly.|  
 |[CA2120: Proteggere i costruttori di serializzazione](../code-quality/ca2120-secure-serialization-constructors.md)|Questo tipo dispone di un costruttore che accetta un oggetto System.Runtime.Serialization.SerializationInfo e un oggetto System.Runtime.Serialization.StreamingContext (la firma del costruttore di serializzazione). Questo costruttore non è protetto da un controllo di sicurezza, ma uno o più costruttori regolari nel tipo sono protetti.|  
 |[CA2121: I costruttori statici devono essere privati](../code-quality/ca2121-static-constructors-should-be-private.md)|Il costruttore statico viene chiamato prima che venga creata la prima istanza del tipo o venga fatto riferimento a qualsiasi membro statico. Se un costruttore statico non è privato, può essere chiamato da codice esterno al sistema. A seconda delle operazioni eseguite nel costruttore, questa situazione può causare comportamenti imprevisti.|  
 |[CA2122: Non esporre in modo indiretto metodi con richieste di collegamento](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Un membro pubblico o protetto presenta richieste di collegamento e viene chiamato da un membro che non esegue alcun controllo della sicurezza. Una richiesta di collegamento controlla esclusivamente le autorizzazioni del chiamante immediato.|  

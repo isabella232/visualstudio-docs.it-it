@@ -13,11 +13,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f23290ebfadd1b6e3d34f808d5ea0ccccbb3c319
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200148"
 ---
 # <a name="scccheckout-function"></a>Funzione SccCheckout
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ SCCRTN SccCheckout (
  hWnd  
  [in] Handle per la finestra dell'IDE che il plug-in del controllo del codice sorgente è possibile utilizzare come padre per le finestre di dialogo che fornisce.  
   
- nFiles  
+ nFile  
  [in] Numero di file selezionati da estrarre.  
   
  lpFileNames  
@@ -54,7 +54,7 @@ SCCRTN SccCheckout (
  lpComment  
  [in] Commento da applicare a ognuno dei file selezionati in corso l'estrazione.  
   
- fOptions  
+ Opzioni  
  [in] Flag di comando (vedere [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md)).  
   
  pvOptions  

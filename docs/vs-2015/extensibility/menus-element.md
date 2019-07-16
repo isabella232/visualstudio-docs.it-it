@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 10e4a865774798792a386a4736058b0a5068db85
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194249"
 ---
 # <a name="menus-element"></a>Elemento Menus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,18 +39,18 @@ Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPac
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|Condizione|Facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condizione|facoltativo. Visualizzare [attributi condizionali](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[Elemento Menus](../extensibility/menus-element.md)|Definisce tutti i menu e barre degli strumenti che implementa un pacchetto VSPackage.|  
 |[Elemento Menu](../extensibility/menu-element.md)|Rappresenta un singolo menu o sulla barra degli strumenti.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[Elemento Commands](../extensibility/commands-element.md)|Rappresenta la raccolta di comandi nel pacchetto VSPackage.|  
   

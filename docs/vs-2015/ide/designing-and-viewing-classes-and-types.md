@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146163"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Progettazione e visualizzazione di classi e tipi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Con Progettazione classi di Visual Studio è possibile progettare, visualizzare 
   
  Di seguito sono riportate altre informazioni sulle operazioni che è possibile eseguire con i diagrammi classi:  
   
-- **Progettare**: cambiare il codice del progetto modificando il diagramma classi. Aggiungere nuovi elementi ed eliminare quelli non desiderati. Le modifiche verranno riflesse nel codice.  
+- **Progettazione**: cambiare il codice del progetto modificando il diagramma classi. Aggiungere nuovi elementi ed eliminare quelli non desiderati. Le modifiche verranno riflesse nel codice.  
   
 - **Visualizzare**: comprendere meglio la struttura del progetto visualizzando le classi del progetto in un diagramma. Personalizzare il diagramma in modo da potersi concentrare sui dettagli del progetto a cui si è più interessati. Salvare il diagramma da usare in seguito a scopo dimostrativo o come documentazione.  
   

@@ -16,18 +16,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f36480dc8ddaac3d9977155f2b1a7741ebe3ba1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155596"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando viene creato il file .exe, ogni simboli pubblici (a un simbolo di funzione e i dati minimo, ogni globale) vengano assegnato un `SymTagPublicSymbol` tag.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
 |Proprietà|Tipo di dati|Descrizione|  

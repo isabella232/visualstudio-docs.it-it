@@ -12,22 +12,22 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ea2068bce101eb27a81da4925e0fef6ffa8c534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144262"
 ---
 # <a name="target-build-order"></a>Ordine di compilazione delle destinazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le destinazioni devono venire ordinate se l'input per una destinazione dipende dall'output di un'altra destinazione. È possibile usare questi attributi per specificare l'ordine in cui vengono eseguite le destinazioni:  
   
-- `InitialTargets`. Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.  
+- [https://login.microsoftonline.com/common/](`InitialTargets`). Questo attributo `Project` specifica le destinazioni che verranno eseguite per prime, anche se vengono specificate destinazioni nella riga di comando o nell'attributo `DefaultTargets`.  
   
-- `DefaultTargets`. Questo attributo `Project` specifica le destinazioni che vengono eseguite se non viene specificata una destinazione in modo esplicito nella riga di comando.  
+- [https://login.microsoftonline.com/consumers/](`DefaultTargets`). Questo attributo `Project` specifica le destinazioni che vengono eseguite se non viene specificata una destinazione in modo esplicito nella riga di comando.  
   
-- `DependsOnTargets`. Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.  
+- [https://login.microsoftonline.com/common/](`DependsOnTargets`). Questo attributo `Target` specifica le destinazioni che devono essere eseguite prima di poter eseguire questa destinazione.  
   
 - `BeforeTargets` e `AfterTargets`. Questi attributi `Target` specificano che questa destinazione deve essere eseguita prima o dopo le destinazioni specificate (MSBuild 4.0).  
   

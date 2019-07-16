@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142476"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Eseguire l'override di Equals all'overload dell'operatore "uguale a"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58955796"
 ## <a name="rule-description"></a>Descrizione della regola
  L'operatore di uguaglianza deve essere un modo pratico sintatticamente per accedere alla funzionalità del <xref:System.Object.Equals%2A> (metodo). Se si implementa l'operatore di uguaglianza, la logica deve essere identica a quello di <xref:System.Object.Equals%2A>.
 
- Il compilatore C# genera un avviso se il codice viola questa regola.
+ Il compilatore c# genera un avviso se il codice viola questa regola.
 
 ## <a name="how-to-fix-violations"></a>Come correggere le violazioni
  Per correggere una violazione di questa regola, è necessario rimuovere l'implementazione dell'operatore di uguaglianza oppure eseguire l'override <xref:System.Object.Equals%2A> e dispone di due metodi restituiscono gli stessi valori. Se l'operatore di uguaglianza non introduce un comportamento incoerente, è possibile correggere la violazione, fornendo un'implementazione di <xref:System.Object.Equals%2A> che chiama il <xref:System.Object.Equals%2A> metodo nella classe di base.
@@ -63,7 +63,7 @@ ms.locfileid: "58955796"
  Questo esempio produce il seguente output:
 
  **a (1,1 [0]) = a e b = ([1] 2,2) sono uguali? No**
-**a == b ? No**
+**un = = b? No**
 **a1 e un oggetto sono uguali? Sì**
 **a1 = = una? Sì**
 **bcopy e b sono uguali? No**
@@ -81,7 +81,7 @@ ms.locfileid: "58955796"
  Questo esempio produce il seguente output:
 
  **a (1,1) = a e b = (2,2) sono uguali? No**
-**a == b ? No**
+**un = = b? No**
 **a1 e un oggetto sono uguali? Sì**
 **a1 = = una? Sì**
 **bcopy e b sono uguali? Sì**

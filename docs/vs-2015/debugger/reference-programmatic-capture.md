@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8cebeb7eb651c11b5f560b981df30213fc726c66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162252"
 ---
 # <a name="reference-programmatic-capture"></a>Riferimento (acquisizione a livello di codice)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Diagnostica della grafica supporta il controllo a livello di programmazione sull
   
 ### <a name="classes"></a>Classi  
   
-|Nome|Descrizione|  
+|Name|DESCRIZIONE|  
 |----------|-----------------|  
 |[VsgDbg Class](../debugger/vsgdbg-class.md)|Rappresenta l'interfaccia attraverso cui il componente in-app di diagnostica della grafica è controllato a livello di programmazione.|  
   
 ### <a name="preprocessor-symbols"></a>Simboli del preprocessore  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
 |[DONT_SAVE_VSGLOG_TO_TEMP](../debugger/dont-save-vsglog-to-temp.md)|Quando presente, definisce se il file di log di grafica viene salvato nella directory dei file temporanei dell'utente.|  
 |[VSG_DEFAULT_RUN_FILENAME](../debugger/vsg-default-run-filename.md)|Definisce il nome file predefinito del file di log di grafica.|  
@@ -39,7 +39,7 @@ Diagnostica della grafica supporta il controllo a livello di programmazione sull
   
 ## <a name="related-articles"></a>Articoli correlati  
   
-|Titolo|Descrizione|  
+|Titolo|DESCRIZIONE|  
 |-----------|-----------------|  
 |[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|Viene indicato come acquisire informazioni grafiche dall'app basata su DirectX per poter usare gli strumenti di diagnostica della grafica [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] per diagnosticare problemi di rendering.|  
 |[Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|Viene indicato come la diagnostica grafica consente di eseguire il debug degli errori di rendering nei giochi e nelle app DirectX.|

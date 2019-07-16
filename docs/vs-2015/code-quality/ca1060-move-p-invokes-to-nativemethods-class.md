@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: f47fa4326da9914171e5014decbd6d6923c2f02e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200475"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Spostare P/Invoke nella classe NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "58967784"
 
 ## <a name="nativemethods-example"></a>Esempio di NativeMethods
 
-### <a name="description"></a>Descrizione
+### <a name="description"></a>DESCRIZIONE
  Poiché il **NativeMethods** classe non deve essere contrassegnata utilizzando **SuppressUnmanagedCodeSecurityAttribute**, P/Invoke che vengono inseriti in essa richiederà **UnmanagedCode** autorizzazione. Poiché la maggior parte delle applicazioni eseguite dal computer locale ed eseguiti con attendibilità totale, ciò non costituisce generalmente un problema. Se si sviluppano librerie riutilizzabili, tuttavia, si consiglia di definire un **SafeNativeMethods** oppure **UnsafeNativeMethods** classe.
 
  L'esempio seguente mostra un' **Interaction. Beep** metodo che esegue il wrapping il **MessageBeep** funzione da user32.dll. Il **MessageBeep** P/Invoke viene inserito **NativeMethods** classe.

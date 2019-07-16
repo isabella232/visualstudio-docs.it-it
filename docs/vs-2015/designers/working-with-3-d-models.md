@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d5d52f517e40ff7f61db904b81104bf1940938d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187468"
 ---
 # <a name="working-with-3-d-models"></a>Utilizzo dei modelli tridimensionali
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

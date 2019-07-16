@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 02e2c7ee92ab138de7bee0d58835898f3bd0a58b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160613"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Funzioni API del plug-in del controllo del codice sorgente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ L'API dei plug-in del controllo origine fornisce le funzioni seguenti, che devon
   
 ## <a name="core-source-control-functions"></a>Funzioni di controllo di base origine  
   
-|Funzione|Descrizione|  
+|Funzione|DESCRIZIONE|  
 |--------------|-----------------|  
 |[SccAdd](../extensibility/sccadd-function.md)|Aggiunge una matrice di file specificato da nomi di percorso completo al sistema di controllo di origine.|  
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Consente di individuare i file già presenti nel sistema di controllo di origine e quindi rendere tali file che fanno parte del progetto corrente.|  
@@ -58,7 +58,7 @@ L'API dei plug-in del controllo origine fornisce le funzioni seguenti, che devon
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Funzioni che supportano la funzionalità aggiuntiva (versione 1.2 dell'API del plug-in del controllo di origine)  
  Questo gruppo di funzioni definisce le funzionalità aggiuntive incluse nella versione 1.2 dell'API dei plug-in controllo di origine. Forniscono l'accesso a funzionalità di controllo del codice sorgente e le funzionalità più avanzate.  
   
-|Funzione|Descrizione|  
+|Funzione|DESCRIZIONE|  
 |--------------|-----------------|  
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Avvia un'operazione batch.|  
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crea un sottoprogetto con il nome specificato in un progetto padre esistente.|  

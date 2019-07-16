@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1e708ffe796bfc9342bc20c3e7f20d5cf0d05058
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180295"
 ---
-# <a name="language-services-and-the-core-editor"></a>Servizi di linguaggio e l'Editor principale di
+# <a name="language-services-and-the-core-editor"></a>Servizi di linguaggio ed editor principale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Editor di Visual Studio sono spesso associati a un servizio di linguaggio. Tra le altre cose, un servizio di linguaggio fornisce la colorazione della sintassi, completamento delle istruzioni, IntelliSense e la formattazione del testo.  
@@ -27,7 +27,7 @@ Editor di Visual Studio sono spesso associati a un servizio di linguaggio. Tra l
   
  Per altre informazioni, vedere [determinare quale Editor viene aperto un File in un progetto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).  
   
-## <a name="language-services-and-the-core-editor"></a>Servizi di linguaggio e l'Editor principale di  
+## <a name="language-services-and-the-core-editor"></a>Servizi di linguaggio ed editor principale  
  Implementando un servizio di linguaggio, è possibile controllare la modalità di visualizzazione dei dati nella visualizzazione dei documenti. Un servizio di linguaggio fornisce informazioni e il comportamento specifico per una determinata lingua, ad esempio Visual C++. Quando si crea un buffer di testo e determinare l'estensione per il documento che si sta aprendo, buffer di testo determina il servizio di linguaggio associato a questa estensione del nome file da una chiave del Registro di sistema, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Editors \\\Extensions {YourLanguageService GUID}. Il pacchetto VSPackage standard caricamento procedure quindi carica il pacchetto VSPackage e viene creata un'istanza del servizio di linguaggio.  
   
  Nella figura seguente viene illustrato un servizio di linguaggio di base.  

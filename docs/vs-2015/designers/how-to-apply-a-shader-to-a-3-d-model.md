@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156333"
 ---
-# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procedura: Applicare uno Shader a un modello 3D
+# <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procedura: Applicare uno shader a un modello 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Questo documento illustra come usare l'editor dei modelli per applicare uno shader DGSL (Directed Graph Shader Language) a un modello 3D.  
@@ -40,7 +40,7 @@ Questo documento illustra come usare l'editor dei modelli per applicare uno shad
   
    ![Scena 3D che illustra l'effetto colore di base](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
-   Dopo aver applicato uno shader a un modello, è possibile aprirlo nella finestra di progettazione shader selezionando il modello e, nella finestra **Proprietà**, scegliendo il pulsante con i puntini di sospensione (**...** ) nella proprietà **(Avanzata)** del gruppo di proprietà **Effetto**.  
+   Dopo aver applicato uno shader a un modello, è possibile aprirlo nella finestra di progettazione shader selezionando il modello e, nella finestra **Proprietà**, scegliendo il pulsante con i puntini di sospensione ( **...** ) nella proprietà **(Avanzata)** del gruppo di proprietà **Effetto**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Creare un modello 3D di base](../designers/how-to-create-a-basic-3-d-model.md)   

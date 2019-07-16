@@ -14,18 +14,18 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c9708bb8c35e66199aaf3665883307e48a63c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193973"
 ---
 # <a name="project-element-visual-studio-templates"></a>Elemento Project (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica il file o directory da aggiungere al progetto.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<TemplateContent>  
  \<Project>  
   

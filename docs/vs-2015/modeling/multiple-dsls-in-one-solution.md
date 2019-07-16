@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159018"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Più soluzioni DSL in una soluzione unica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "60050140"
   
 2. Combinare i manifesti VSIX dei linguaggi specifici di dominio:  
   
-   1. Aprire _Progettovsix_**\source.extension.manifest**.  
+   1. Aprire _Progettovsix_ **\source.extension.manifest**.  
   
    2. Per ogni linguaggio DSL, scegliere **Aggiungi contenuto** e aggiungere:  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60050140"
   
 3. Compilare la soluzione.  
   
-   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _Progettovsix_**\bin\Debug.\\\*VSIX**.  
+   Il progetto VSIX risultante installerà entrambi i linguaggi specifici di dominio. È possibile testarli usando F5 oppure distribuire _Progettovsix_ **\bin\Debug.\\\*VSIX**.  
   
 ## <a name="see-also"></a>Vedere anche  
  [L'integrazione di modelli tramite Modelbus di Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

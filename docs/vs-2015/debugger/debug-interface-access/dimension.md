@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1b760d6a7808154b8daabe43d4cf6399c3b91977
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58963912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164340"
 ---
 # <a name="dimension"></a>Dimensione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ciascuna matrice di FORTRAN ha una dimensione che è identificata da un `SymTagDimension` simbolo.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.  
   
 |Proprietà|Tipo di dati|Descrizione|  

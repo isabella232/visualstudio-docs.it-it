@@ -15,18 +15,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce86a76e812618730a74151ee2b37fec90831f54
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197701"
 ---
 # <a name="annotation"></a>Annotazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un codice di programma di posizione può essere annotato con un `SymTagAnnotation` simbolo.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
 |Proprietà|Tipo di dati|Descrizione|  

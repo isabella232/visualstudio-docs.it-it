@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42faf8127c1ab70d3470aa497a0cdab6058060f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157255"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automazione per la configurazione e per gli oggetti SelectedItem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

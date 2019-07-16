@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187576"
 ---
-# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo 3D realistici
+# <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procedura dettagliata: Creazione di una palla da biliardo 3D realistica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 In questa procedura dettagliata viene illustrato come creare una palla da biliardo tridimensionale realistica utilizzando la Modalità progettazione shader e l'editor di immagini in [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L'aspetto tridimensionale della palla da biliardo viene raggiunto combinando diverse tecniche di shader con le risorse appropriate di trama.  

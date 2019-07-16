@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162651"
 ---
 # <a name="constant-nodes"></a>Nodi costanti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +28,21 @@ Nella modalità di progettazione shader, i nodi delle costanti rappresentano val
   
 ## <a name="constant-node-reference"></a>Riferimento per i nodi delle costanti  
   
-|Nodo|Dettagli|Proprietà|  
+|Nodo|Dettagli|Properties|  
 |----------|-------------|----------------|  
-|**Vettore fotocamera**|Vettore che si estende dal pixel corrente alla fotocamera nello spazio globale.<br /><br /> È possibile usare questo valore per calcolare i riflessi nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vettore dal pixel corrente alla fotocamera.|nessuno|  
+|**Vettore fotocamera**|Vettore che si estende dal pixel corrente alla fotocamera nello spazio globale.<br /><br /> È possibile usare questo valore per calcolare i riflessi nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vettore dal pixel corrente alla fotocamera.|Nessuna|  
 |**Costante colore**|Un valore costante di colore.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Valore di colore.|**Output**<br /> Valore di colore.|  
 |**Costante**|Un valore scalare costante.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> Valore scalare.|**Output**<br /> Valore scalare.|  
 |**Costante 2D**|Una costante di vettore a due componenti.<br /><br /> **Output**<br /><br /> `Output`: `float2`<br /> Valore di vettore.|**Output**<br /> Valore di vettore.|  
 |**Costante 3D**|Una costante di vettore a tre componenti.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Valore di vettore.|**Output**<br /> Valore di vettore.|  
 |**Costante 4D**|Una costante di vettore a quattro componenti.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Valore di colore.|**Output**<br /> Valore di vettore.|  
-|**Posizione normalizzata**|La posizione del pixel corrente, espressa in coordinate dispositivo normalizzate.<br /><br /> Le coordinate x e y hanno valori compresi nell'intervallo [-1, 1], la coordinata z ha un valore compreso nell'intervallo [0, 1], e il componente w contiene il valore della profondità punti nello spazio di visualizzazione. W non è normalizzato.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|nessuno|  
-|**Colore punto**|Il colore con riflessione diffusa del pixel corrente, ovvero una combinazione del colore del materiale con riflessione diffusa e degli attributi vertice del colore.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Colore con riflessione diffusa del pixel corrente.|nessuno|  
-|**Profondità punto**|La profondità del pixel corrente nello spazio di visualizzazione.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> La profondità del pixel corrente.|nessuno|  
-|**Profondità punto normalizzato**|La profondità del pixel corrente, espressa in coordinate dispositivo normalizzate.<br /><br /> Il risultato è un valore compreso nell'intervallo [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> La profondità del pixel corrente.|nessuno|  
-|**Posizione schermo**|La posizione del pixel corrente, espressa in coordinate dello schermo.<br /><br /> Le coordinate dello schermo dipendono dal riquadro di visualizzazione corrente. I componenti x e y contengono le coordinate dello schermo, il componente z contiene il valore della profondità normalizzata in un intervallo di [0, 1], e il componente w contiene il valore della profondità nello spazio di visualizzazione.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|nessuno|  
-|**Normale superficie**|La normale alla superficie del pixel corrente nello spazio dell'oggetto.<br /><br /> È possibile usare questo valore per calcolare i contributi dell'illuminazione e i riflessi nello spazio dell'oggetto.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> La normale alla superficie del pixel corrente.|nessuno|  
-|**Vettore fotocamera spazio tangente**|Vettore che si estende dal pixel corrente alla fotocamera nello spazio tangente.<br /><br /> È possibile usare questo valore per calcolare i riflessi nello spazio tangente.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vettore dal pixel corrente alla fotocamera.|nessuno|  
-|**Direzione luce spazio tangente**|Vettore che definisce la direzione in cui la luce è diffusa da una sorgente di luce nello spazio tangente del pixel corrente.<br /><br /> È possibile usare questo valore per calcolare l'illuminazione e i contributi speculari nello spazio tangente.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Il vettore dal pixel corrente a una sorgente di luce.|nessuno|  
-|**Normale globale**|La normale alla superficie del pixel corrente nello spazio globale.<br /><br /> È possibile usare questo valore per calcolare i contributi dell'illuminazione e i riflessi nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> La normale alla superficie del pixel corrente.|nessuno|  
-|**Posizione globale**|Posizione del pixel corrente nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|nessuno|
+|**Posizione normalizzata**|La posizione del pixel corrente, espressa in coordinate dispositivo normalizzate.<br /><br /> Le coordinate x e y hanno valori compresi nell'intervallo [-1, 1], la coordinata z ha un valore compreso nell'intervallo [0, 1], e il componente w contiene il valore della profondità punti nello spazio di visualizzazione. W non è normalizzato.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|Nessuna|  
+|**Colore punto**|Il colore con riflessione diffusa del pixel corrente, ovvero una combinazione del colore del materiale con riflessione diffusa e degli attributi vertice del colore.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> Colore con riflessione diffusa del pixel corrente.|Nessuna|  
+|**Profondità punto**|La profondità del pixel corrente nello spazio di visualizzazione.<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> La profondità del pixel corrente.|Nessuna|  
+|**Profondità punto normalizzato**|La profondità del pixel corrente, espressa in coordinate dispositivo normalizzate.<br /><br /> Il risultato è un valore compreso nell'intervallo [0, 1].<br /><br /> **Output**<br /><br /> `Output`: `float`<br /> La profondità del pixel corrente.|Nessuna|  
+|**Posizione schermo**|La posizione del pixel corrente, espressa in coordinate dello schermo.<br /><br /> Le coordinate dello schermo dipendono dal riquadro di visualizzazione corrente. I componenti x e y contengono le coordinate dello schermo, il componente z contiene il valore della profondità normalizzata in un intervallo di [0, 1], e il componente w contiene il valore della profondità nello spazio di visualizzazione.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|Nessuna|  
+|**Normale superficie**|La normale alla superficie del pixel corrente nello spazio dell'oggetto.<br /><br /> È possibile usare questo valore per calcolare i contributi dell'illuminazione e i riflessi nello spazio dell'oggetto.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> La normale alla superficie del pixel corrente.|Nessuna|  
+|**Vettore fotocamera spazio tangente**|Vettore che si estende dal pixel corrente alla fotocamera nello spazio tangente.<br /><br /> È possibile usare questo valore per calcolare i riflessi nello spazio tangente.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> Vettore dal pixel corrente alla fotocamera.|Nessuna|  
+|**Direzione luce spazio tangente**|Vettore che definisce la direzione in cui la luce è diffusa da una sorgente di luce nello spazio tangente del pixel corrente.<br /><br /> È possibile usare questo valore per calcolare l'illuminazione e i contributi speculari nello spazio tangente.<br /><br /> **Output:**<br /><br /> `Output`: `float3`<br /> Il vettore dal pixel corrente a una sorgente di luce.|Nessuna|  
+|**Normale globale**|La normale alla superficie del pixel corrente nello spazio globale.<br /><br /> È possibile usare questo valore per calcolare i contributi dell'illuminazione e i riflessi nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float3`<br /> La normale alla superficie del pixel corrente.|Nessuna|  
+|**Posizione globale**|Posizione del pixel corrente nello spazio globale.<br /><br /> **Output**<br /><br /> `Output`: `float4`<br /> La posizione del pixel corrente.|Nessuna|

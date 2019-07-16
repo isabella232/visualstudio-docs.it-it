@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b7667aac348a6f7b208786191c35afe86542862d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148223"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` devono essere file con estensione vsp o vsps validi.  
   
 ## <a name="symbol-files"></a>File di simboli  
- Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, VSPerfReport richiede l'accesso ai file di simboli (con estensione PDB) dei componenti profilati e ai file dei simboli di Windows. Per altre informazioni, vedere [Procedura: Specificare percorsi dei file di simboli tramite la riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+ Per visualizzare informazioni sui simboli quali i nomi delle funzioni e i numeri di riga, VSPerfReport richiede l'accesso ai file di simboli (con estensione PDB) dei componenti profilati e ai file dei simboli di Windows. Per altre informazioni, vedere [Procedura: Specificare i percorsi di File di simboli dalla riga di comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
 ## <a name="general-report-options"></a>Opzioni generali per i report  
  La tabella seguente descritte le opzioni di formattazione dei report generali e le opzioni per selezionare i dati da includere nel report.  
   
-|Opzioni|Descrizione|  
+|Opzioni|DESCRIZIONE|  
 |-------------|-----------------|  
 |**U**|L'output del report e l'output di console reindirizzato vengono scritti in formato Unicode. Deve essere la prima opzione specificata.|  
-|**Summary:**[*tipi*]|Crea uno o più tipi di report.<br /><br /> -   `All` - Vengono generati tutti i tipi di report.<br />-   `CallerCallee` - Relazioni padre-figlio tra le funzioni.<br />-   `Function` - Funzioni chiamate.<br />-   `CallTree` - Gerarchia delle funzioni chiamate.<br />-   `Counter` - Tutti i contrassegni insieme ai valori dei contatori delle prestazioni di Windows.<br />-   `Ip` - Istruzioni profilate.<br />-   `Life` - Durata degli oggetti allocati (disponibile quando sono stati raccolti dati sulle allocazioni).<br />-   `Line` - Dati di profilatura delle righe di codice sorgente.<br />-   `Header` - Il report contiene informazioni sull'intestazione di file.<br />-   `Mark` - Tutti i contrassegni.<br />-   `Module` - Moduli profilati.<br />-   `Process` - Processi profilati.<br />-   `Thread` - Thread profilati.<br />-   `Type` -Tipo allocati.<br />-   `Contention` - Conflitti di risorse.<br />-   `RuleWarnings` - Problemi relativi alle regole di prestazioni.<br />-   `ETW` - Tutti gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura. Il file di dati con estensione etl deve essere nella posizione originale o nella directory contenente il file con estensione vsp o vsps.|  
+|**Summary:** [*tipi*]|Crea uno o più tipi di report.<br /><br /> -   `All` - Vengono generati tutti i tipi di report.<br />-   `CallerCallee` - Relazioni padre-figlio tra le funzioni.<br />-   `Function` - Funzioni chiamate.<br />-   `CallTree` - Gerarchia delle funzioni chiamate.<br />-   `Counter` - Tutti i contrassegni insieme ai valori dei contatori delle prestazioni di Windows.<br />-   `Ip` - Istruzioni profilate.<br />-   `Life` - Durata degli oggetti allocati (disponibile quando sono stati raccolti dati sulle allocazioni).<br />-   `Line` - Dati di profilatura delle righe di codice sorgente.<br />-   `Header` - Il report contiene informazioni sull'intestazione di file.<br />-   `Mark` - Tutti i contrassegni.<br />-   `Module` - Moduli profilati.<br />-   `Process` - Processi profilati.<br />-   `Thread` - Thread profilati.<br />-   `Type` -Tipo allocati.<br />-   `Contention` - Conflitti di risorse.<br />-   `RuleWarnings` - Problemi relativi alle regole di prestazioni.<br />-   `ETW` - Tutti gli eventi ETW (Event Tracing for Windows) raccolti durante l'esecuzione della profilatura. Il file di dati con estensione etl deve essere nella posizione originale o nella directory contenente il file con estensione vsp o vsps.|  
 |**Xml**|Il report viene generato in formato XML.|  
 |**CallTrace**|Crea un elenco di ingressi e uscite da funzioni, eventi ETW e contrassegni.|  
 |**ClearPackedSymbols**|Rimuove i simboli precedentemente incorporati da un file di dati del profiler. Eseguire questo comando prima di eseguire PackSymbols una seconda volta.|  
@@ -72,14 +72,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
   
 |Opzioni|Descrizione|  
 |-------------|-----------------|  
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|  
-|**StartTime:**[*valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|  
-|**EndTime:**[*valore*]|Mostra solo i dati raccolti prima del valore (in millisecondi).|  
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|Mostra solo le chiamate di funzioni dell'applicazione dell'utente. Le chiamate di sistema vengono nascoste.<br /><br /> - Nessun parametro: nasconde tutte le funzioni di sistema.<br />-   `caller` - Mostra un livello di funzioni di sistema che chiamano funzioni dell'applicazione.<br />-   `callee` - Mostra un livello di funzioni di sistema che vengono chiamate da funzioni dell'applicazione dell'utente.|  
+|**StartTime:** [*valore*]|Mostra solo i dati raccolti dopo il valore (in millisecondi).|  
+|**EndTime:** [*valore*]|Mostra solo i dati raccolti prima del valore (in millisecondi).|  
 |**FilterFile:** `VSPFFile`|Specifica il percorso di un file di filtro generato dalla finestra Visual Studio Performance Report.|  
-|**MsFilter:**[*orainizio,durata*]|Mostra solo i dati da `starttime` fino alla durata `duration` (in millisecondi).|  
-|**Process:**[*pid*]|Mostra solo i dati del processo specificato.|  
-|**Thread:**[*idthread*]|Mostra solo i dati del thread specificato.|  
-|**Thread:**[*idthread,idprocesso*]|Mostra solo i dati del thread specificato associato al processo specificato.|  
+|**MsFilter:** [*orainizio,durata*]|Mostra solo i dati da `starttime` fino alla durata `duration` (in millisecondi).|  
+|**Process:** [*pid*]|Mostra solo i dati del processo specificato.|  
+|**Thread:** [*idthread*]|Mostra solo i dati del thread specificato.|  
+|**Thread:** [*idthread,idprocesso*]|Mostra solo i dati del thread specificato associato al processo specificato.|  
   
 ## <a name="difference-report-options"></a>Opzioni per i report sulle differenze  
  La tabella seguente descrive le opzioni per confrontare i file di report.  
@@ -87,9 +87,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opzioni|Descrizione|  
 |-------------|-----------------|  
 |**Diff**  `vspfile1 vspfile2`|Confrontare due file di report (con estensione vsp o vsps). Le opzioni Summary verranno ignorate quando si usa l'opzione Diff.|  
-|**Diff:**[*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  
-|**DiffTable:**[*nometabella*]|Usare questa tabella specifica per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni.|  
-|**DiffColumn:**[*nomecolonna*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|  
+|**Diff:** [*valore*]|Sotto questo valore di soglia la differenza tra due valori verrà ignorata. Inoltre, i nuovi dati con valori al di sotto della soglia non verranno visualizzati.|  
+|**DiffTable:** [*nometabella*]|Usare questa tabella specifica per confrontare i file. Per impostazione predefinita, viene usata la tabella delle funzioni.|  
+|**DiffColumn:** [*nomecolonna*]|Usare questa colonna specifica per confrontare i file. Per impostazione predefinita, viene usata la colonna percentuale campioni esclusivi.|  
 |**QueryDiffTables**|Elenco delle tabelle e delle colonne valide per i due file di report specificati.|  
   
 ## <a name="see-also"></a>Vedere anche  

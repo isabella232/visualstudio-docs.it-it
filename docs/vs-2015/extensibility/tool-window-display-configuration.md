@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58970237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186400"
 ---
-# <a name="tool-window-display-configuration"></a>Configurazione visualizzazione della finestra degli strumenti
+# <a name="tool-window-display-configuration"></a>Configurazione della visualizzazione della finestra degli strumenti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando un pacchetto VSPackage registra una finestra degli strumenti, la posizione predefinita, le dimensioni, stile di ancoraggio e altre informazioni sulla visibilità è specificato in valori facoltativi. Per ulteriori informazioni sulla registrazione della finestra degli strumenti, vedere [strumento Windows nel Registro di sistema](../extensibility/tool-windows-in-the-registry.md)  
@@ -37,11 +37,11 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
   
-|Nome|Tipo|Dati|Descrizione|  
+|NOME|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|Nome|REG_SZ|"Short name goes here"|Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel Registro di sistema.|  
+|Name|REG_SZ|"Short name goes here"|Nome breve che descrive la finestra degli strumenti. Utilizzato solo per riferimento nel Registro di sistema.|  
 |Float|REG_SZ|"X1, Y1, X2, Y2"|Quattro valori delimitati da virgole. X1, Y1 è le coordinate dell'angolo superiore sinistro della finestra degli strumenti. X2, Y2 sia le coordinate dell'angolo inferiore destro. Tutti i valori sono nelle coordinate dello schermo.|  
-|Stile|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Collegato"<br /><br /> "Schede"<br /><br /> "AlwaysFloat"|Una parola chiave specifica iniziale visualizzare lo stato della finestra degli strumenti.<br /><br /> "MDI" = ancorate con finestra MDI.<br /><br /> "Mobile" = mobile.<br /><br /> "Collegate" = collegata a un'altra finestra (specificata nella voce della finestra).<br /><br /> "Schede" = combinati con un'altra finestra degli strumenti.<br /><br /> "AlwaysFloat" = non può essere ancorata.<br /><br /> Per altre informazioni, vedere la sezione commenti riportata di seguito.|  
+|Style|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Collegato"<br /><br /> "Schede"<br /><br /> "AlwaysFloat"|Una parola chiave specifica iniziale visualizzare lo stato della finestra degli strumenti.<br /><br /> "MDI" = ancorate con finestra MDI.<br /><br /> "Mobile" = mobile.<br /><br /> "Collegate" = collegata a un'altra finestra (specificata nella voce della finestra).<br /><br /> "Schede" = combinati con un'altra finestra degli strumenti.<br /><br /> "AlwaysFloat" = non può essere ancorata.<br /><br /> Per altre informazioni, vedere la sezione commenti riportata di seguito.|  
 |Finestra|REG_SZ|*\<GUID>*|Il GUID di una finestra in cui la finestra degli strumenti può essere collegata o a schede. Il GUID può appartenere a uno dei propri windows o una delle finestre nel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |Orientamento|REG_SZ|"Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Basso"|Vedere la sezione commenti riportata di seguito.|  
 |DontForceCreate|REG_DWORD|0 o 1|Quando questa voce è presente e il relativo valore è diverso da zero, la finestra viene caricata, ma non immediatamente visualizzata.|  
@@ -86,10 +86,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:  
 ```  
   
-|Nome|Tipo|Dati|Descrizione|  
+|Name|Tipo|Dati|Descrizione|  
 |----------|----------|----------|-----------------|  
-|(Predefinito)|REG_SZ|nessuno|Lasciare vuoto.|  
-|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|Facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|  
+|(Predefinito)|REG_SZ|Nessuna|Lasciare vuoto.|  
+|*\<GUID>*|REG_DWORD o REG_SZ|0 o una stringa descrittiva.|facoltativo. Nome della voce deve essere il GUID di un comando che richiedono la visibilità. Il valore contiene solo una stringa informativa. In genere, il valore è un `reg_dword` impostato su 0.|  
   
 ### <a name="example"></a>Esempio  
   

@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a4e548f1f2b82a97206cdf41174a8c1c7d61e885
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200056"
 ---
 # <a name="sccgetversion-function"></a>Funzione SccGetVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ LONG SccGetVersion(void);
 ```  
   
 #### <a name="parameters"></a>Parametri  
- Nessuno.  
+ No.  
   
 ## <a name="return-value"></a>Valore restituito  
  Oggetto `LONG` tipo di dati che contiene il numero di versione dell'API di plug-in controllo di origine supportati:  
