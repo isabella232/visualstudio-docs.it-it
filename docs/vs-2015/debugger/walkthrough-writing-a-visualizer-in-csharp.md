@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688161"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890474"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procedura dettagliata: Scrittura di un visualizzatore in C\#
 
@@ -39,7 +39,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. Nel **File** menu, scegliere **New** e quindi fare clic su **nuovo progetto**.
 
-2. Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#**.
+2. Nel **nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#** .
 
 3. Nel **modelli** , scegliere **libreria di classi**.
 
@@ -196,7 +196,8 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 2. Modificare il nome di Program.cs in modo più significativo, ad esempio TestConsole.cs.
 
-    **Nota** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la dichiarazione di classe in base al nome del nuovo file TestConsole.cs modificata automaticamente.
+    > [!NOTE]
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la dichiarazione di classe in base al nome del nuovo file TestConsole.cs modificata automaticamente.
 
 3. In base TestConsole.cs, aggiungere il codice seguente per il `using` istruzioni:
 
@@ -234,7 +235,7 @@ Il codice del visualizzatore deve essere inserito in una DLL, che verrà letta d
 
 1. Nel **File** menu, scegliere **Add** e quindi fare clic su **nuovo progetto**.
 
-2. Nel **Aggiungi nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#**.
+2. Nel **Aggiungi nuovo progetto** nella finestra di dialogo **tipo di progetto**s, selezionare **Visual c#** .
 
 3. Nel **modelli** , scegliere **libreria di classi**.
 

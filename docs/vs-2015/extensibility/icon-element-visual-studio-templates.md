@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204009"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Elemento Icon (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica il percorso e il nome del file del file di immagine che funge da icona, che viene visualizzata in uno il **nuovo progetto** o nella **Aggiungi nuovo elemento** della finestra di dialogo per il modello.  
   
- \<VSTemplate>  
- \<TemplateData>  
- \<Icon>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Icona >  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -47,7 +47,7 @@ Specifica il percorso e il nome del file del file di immagine che funge da icona
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> ID di un GUID che specifica il pacchetto di Visual Studio.|  
+|`Package`|Attributo facoltativo, per scenari avanzati.<br /><br /> GUID che specifica l'ID del pacchetto di Visual Studio.|  
 |`ID`|Attributo facoltativo, per scenari avanzati.<br /><br /> Specifica l'ID di risorsa di Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
@@ -60,7 +60,7 @@ Specifica il percorso e il nome del file del file di immagine che funge da icona
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obbligatorio.<br /><br /> Classifica il modello in base alla categoria e definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento** .|  
   
 ## <a name="text-value"></a>Valore di testo  
- È necessario un valore di testo, a meno che il `Package` e `ID` vengono utilizzati gli attributi.  
+ È necessario un valore di testo, a meno che non si usino gli attributi `Package` e `ID`.  
   
  Il testo fornisce il percorso e il nome dell'icona del modello che verrà visualizzato nei **nuovo progetto** nella finestra di dialogo.  
   

@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201904"
 ---
 # <a name="creating-project-and-item-templates"></a>Creazione di modelli di progetti e di elementi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.m
   
  I modelli rappresentano un punto di partenza per cominciare la creazione di progetti o per espandere i progetti correnti. I modelli di progetto forniscono i file necessari per un determinato tipo di progetto, includono i riferimenti ad assembly standard e impostano le proprietà di progetto predefinite e le opzioni del compilatore. La complessità dei modelli di elemento può variare: da un singolo file vuoto con una corretta estensione di file fino a un elemento a più file contenente, ad esempio, file di codice sorgente con codice stub, file di informazioni sulla progettazione e risorse incorporate.  
   
- Oltre ai modelli installati disponibili nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** è possibile creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md) e [Procedura: Creare modelli di elementi](../ide/how-to-create-item-templates.md).  
+ Oltre ai modelli installati disponibili nelle finestre di dialogo **Nuovo progetto** e **Aggiungi nuovo elemento** è possibile creare modelli personalizzati o scaricare e usare modelli creati dalla community. Per altre informazioni, vedere [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md) e [come: Creare modelli di elementi](../ide/how-to-create-item-templates.md).  
   
 ## <a name="contents-of-a-template"></a>Contenuto di un modello  
  Tutti i modelli di progetto e i modelli di elemento, sia quelli installati con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sia quelli creati dall'utente, funzionano in base agli stessi principi e hanno contenuti simili. Tutti i modelli contengono gli elementi seguenti:  
@@ -47,7 +47,7 @@ I modelli di progetto e di elemento di [!INCLUDE[vsprvs](../includes/vsprvs-md.m
   Quando questi file vengono compressi in un file ZIP e inseriti nella cartella corretta, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] li visualizza automaticamente. I modelli di progetto sono disponibili nella sezione **Modelli personali** della finestra di dialogo **Nuovo progetto** e i modelli di elemento sono disponibili nella finestra di dialogo **Aggiungi nuovo elemento**. Per altre informazioni sulle cartelle dei modelli, vedere [Procedura: Individuare e organizzare modelli](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Starter kit  
- Gli starter kit sono modelli avanzati che possono essere condivisi con altri membri della community. Uno starter kit include esempi di codice compilabili, documentazione e altre risorse per facilitare l'apprendimento di nuovi strumenti e tecniche di programmazione durante la compilazione di applicazioni utili e reali. I contenuti e le procedure di base per gli starter kit sono identici a quelli dei modelli. Per altre informazioni, vedere [Procedura: Creare starter kit](../ide/how-to-create-starter-kits.md).  
+ Gli starter kit sono modelli avanzati che possono essere condivisi con altri membri della community. Uno starter kit include esempi di codice compilabili, documentazione e altre risorse per facilitare l'apprendimento di nuovi strumenti e tecniche di programmazione durante la compilazione di applicazioni utili e reali. I contenuti e le procedure di base per gli starter kit sono identici a quelli dei modelli. Per altre informazioni, vedere [Procedura: Creare Starter Kit](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Vedere anche  
  [Procedura: Creare modelli di progetto](../ide/how-to-create-project-templates.md)   

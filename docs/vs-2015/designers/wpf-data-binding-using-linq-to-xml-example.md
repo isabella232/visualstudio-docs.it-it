@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e5f92b616b33c95d9d1a7de71d2a5fe5c9026991
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148083"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Esempio di data binding WPF tramite LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Contenuto della sezione è incluso un esempio di WPF (Windows Presentation Found
   
 |Argomento|Descrizione|  
 |-----------|-----------------|  
-|[Procedura: Compilare ed eseguire l'esempio LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Sono contenute istruzioni dettagliate sulla creazione, il popolamento e la compilazione del progetto di Visual Studio per questo esempio.|  
+|[Procedura: compilare ed eseguire l'esempio LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md)|Sono contenute istruzioni dettagliate sulla creazione, il popolamento e la compilazione del progetto di Visual Studio per questo esempio.|  
 |[Procedura dettagliata: esempio LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)|Sono contenuti i file di origine primari per il progetto e una descrizione relativa all'utilizzo di LINQ to XML per il data binding all'interno di questo codice.|  
   
 ## <a name="see-also"></a>Vedere anche  

@@ -9,11 +9,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cb720589bc9bc31b7cf2a04b05559cb9c9d46961
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201987"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Procedura dettagliata: Implementazione di frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,4 +248,4 @@ ms.locfileid: "60117915"
   
 7. In un'altra parte del testo, digitare "test" e quindi premere TAB. Poiché "test" è il collegamento del frammento di codice, il frammento di codice deve essere inserito nuovamente.  
   
-## <a name="next-steps"></a>Passaggi successivi
+## <a name="next-steps"></a>Fasi successive

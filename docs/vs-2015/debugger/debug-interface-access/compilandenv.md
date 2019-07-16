@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9dfa9f1efa266a95e0580717b06cee4b9d2a7725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164439"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il compilatore può includere variabili di ambiente aggiuntive con simboli. È presente un `SymTagCompilandEnv` simbolo per ognuna di queste variabili.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente vengono illustrate le proprietà che sono valide per questo tipo di simbolo.  
   
 |Proprietà|Tipo di dati|Descrizione|  

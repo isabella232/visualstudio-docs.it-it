@@ -17,11 +17,11 @@ caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 18256996d829d34117caa11f4e581d8e54d738b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204045"
 ---
 # <a name="ide-constants"></a>Costanti dell'IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="editor-factory-flags"></a>Flag di Factory dell'editor  
   
-|Value|Descrizione|  
+|Value|DESCRIZIONE|  
 |-----------|-----------------|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Flag obsoleto combinato bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> (metodo).|  
 |[CEF.CloneFile](/dotnet/api/microsoft.visualstudio.vsconstants.cef?view=visualstudiosdk-2015)|Combinazione bit per bit come primo parametro del <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>, metodo, ciò indica la factory dell'editor deve eseguire le correzioni necessarie.|  
@@ -50,7 +50,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="visual-studio-errors"></a>Errori di Visual Studio  
   
-|Value|Descrizione|  
+|Value|DESCRIZIONE|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|Costante restituita dalle interfacce al comportamento asincrono quando l'oggetto in questione in già in uso|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|Un errore HRESULT specifico di Visual Studio per "dati del documento incompatibili".|  
@@ -66,7 +66,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="visual-studio-constants"></a>Costanti di Visual Studio  
   
-|Value|Descrizione|  
+|Valore|Descrizione|  
 |-----------|-----------------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|Un errore HRESULT specifico di Visual Studio e che indica "Progetto inoltrato".|  
 |<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|Una costante specifica di Visual Studio per un "marcatore della casella degli strumenti".|  
@@ -93,7 +93,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
 ## <a name="vsselelemid"></a>VSSELELEMID  
  Costanti usate per indicare un nuovo stato di selezione.  
   
-|Costante|Value|  
+|Costante|Valore|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|  
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|  
@@ -106,7 +106,7 @@ Il <xref:Microsoft.VisualStudio.VSConstants> classe fornisce le costanti che son
   
 ## <a name="component-selector-dialog-constants"></a>Costanti di finestra di dialogo del selettore componenti  
   
-|Costante|Value|  
+|Costante|Valore|  
 |--------------|-----------|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|  
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|  

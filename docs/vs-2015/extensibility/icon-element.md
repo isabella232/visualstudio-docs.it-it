@@ -12,11 +12,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ca5ced87596b5e40ae70e3faa06e58493da3d8ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203989"
 ---
 # <a name="icon-element"></a>Elemento Icon
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,18 +36,18 @@ L'attributo guid del tag icona è il guid di una mappa di bit definita.  L'attri
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|guid|Obbligatorio. Il guid di una mappa di bit definita.|  
-|ID|Obbligatorio. Consente di selezionare lo slot nella striscia di bitmap.|  
+|GUID|Richiesto. Il guid di una mappa di bit definita.|  
+|id|Richiesto. Consente di selezionare lo slot nella striscia di bitmap.|  
   
 ### <a name="child-elements"></a>Elementi figlio  
   
 |Elemento|Descrizione|  
 |-------------|-----------------|  
-|Nessuno.|Nessuno.|  
+|No.|No.|  
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[Elemento Buttons](../extensibility/buttons-element.md)||  
   

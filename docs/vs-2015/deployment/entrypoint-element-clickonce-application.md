@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ce9fcbddf54dff0ee8574d0c2a5a3df4d8b5c7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193500"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;punto di ingresso&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,34 +58,34 @@ Identifica l'assembly che deve essere eseguite quando questo [!INCLUDE[ndpteccli
   
  L'elemento `entryPoint` presenta l'attributo seguente:  
   
-|Attributo|Descrizione|  
+|Attributo|DESCRIZIONE|  
 |---------------|-----------------|  
-|`name`|Facoltativo. Questo valore non viene utilizzato da .NET Framework.|  
+|`name`|facoltativo. Questo valore non viene utilizzato da .NET Framework.|  
   
  `entryPoint` presenta gli elementi seguenti:  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
- Obbligatorio. Il ruolo del `assemblyIdentity` e relativi attributi sono definiti [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
+ Richiesto. Il ruolo del `assemblyIdentity` e relativi attributi sono definiti [ \<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-application.md).  
   
  Il `processorArchitecture` attributo di questo elemento e il `processorArchitecture` attributo definito nella `assemblyIdentity` altrove nell'applicazione manifesto deve corrispondere.  
   
 ## <a name="commandline"></a>commandLine  
- Obbligatorio. Deve essere un figlio di `entryPoint` elemento. Non dispone di alcun elemento figlio e ha gli attributi seguenti.  
+ Richiesto. Deve essere un figlio di `entryPoint` elemento. Non dispone di alcun elemento figlio e ha gli attributi seguenti.  
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`file`|Obbligatorio. Un riferimento locale all'assembly di avvio per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Questo valore non può contenere barra (/) o una barra rovesciata (\\) separatori del percorso.|  
-|`parameters`|Obbligatorio. Descrive l'azione da intraprendere con il punto di ingresso. È l'unico valore valido `run`; se viene fornita una stringa vuota, `run` presuppone.|  
+|`file`|Richiesto. Un riferimento locale all'assembly di avvio per il [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dell'applicazione. Questo valore non può contenere barra (/) o una barra rovesciata (\\) separatori del percorso.|  
+|`parameters`|Richiesto. Descrive l'azione da intraprendere con il punto di ingresso. È l'unico valore valido `run`; se viene fornita una stringa vuota, `run` presuppone.|  
   
 ## <a name="customhostrequired"></a>customHostRequired  
- Facoltativo. Se incluso, specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.  
+ facoltativo. Se incluso, specifica che la distribuzione contiene un componente che verrà distribuito all'interno di un host personalizzato e non è un'applicazione autonoma.  
   
  Se questo elemento è presente, il `assemblyIdentity` e `commandLine` elementi non possono essere presenti. In tal caso, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] genererà un errore di convalida durante l'installazione.  
   
  Questo elemento dispone di alcun attributo e nessun elemento figlio.  
   
 ## <a name="customux"></a>customUX  
- Facoltativo. Specifica che l'applicazione è installata e gestito da un programma di installazione personalizzato e non creare una voce di menu Start, scelta rapida o Aggiungi o Rimuovi voce di programmi.  
+ facoltativo. Specifica che l'applicazione è installata e gestito da un programma di installazione personalizzato e non creare una voce di menu Start, scelta rapida o Aggiungi o Rimuovi voce di programmi.  
   
 ```  
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />  

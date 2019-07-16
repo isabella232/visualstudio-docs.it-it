@@ -17,20 +17,20 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205436"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug di codice sorgente di .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Procedura: Eseguire il debug di codice sorgente .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La versione più recente di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornisce nuove funzionalità per [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] debug. Per eseguire il debug [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine, è necessario avere accesso ai simboli per il codice di debug. È anche necessario attivare l'esecuzione [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] origine.  
   
  È possibile abilitare [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] simboli nel download e l'esecuzione di **opzioni** nella finestra di dialogo. Quando si attiva il download dei simboli, è possibile scegliere di scaricarli immediatamente o attivare solo l'opzione per eseguire il download successivamente. Se non si esegue immediatamente il download, i simboli verranno scaricati la volta successiva che si avvia il debug dell'applicazione. È inoltre possibile scaricarli manualmente dal **moduli** finestra o il **Stack di chiamate** finestra.  
   
-### <a name="to-enable-net-framework-source-debugging"></a>Per attivare il debug di origine di .NET Framework   
+### <a name="to-enable-net-framework-source-debugging"></a>Per attivare il debug di origine di .NET Framework  
   
 1. Scegliere **Opzioni** dal menu **Strumenti**.  
   

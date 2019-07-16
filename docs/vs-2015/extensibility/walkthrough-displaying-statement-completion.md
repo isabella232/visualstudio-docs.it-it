@@ -11,11 +11,11 @@ caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202017"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procedura dettagliata: Visualizzazione del completamento di istruzioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,4 +204,4 @@ ms.locfileid: "60045018"
 4. Mentre si digita prima di tutto "a" e quindi "d", verrà visualizzato un elenco che contiene "addition" e "personalizzazione". Si noti che sia selezionata l'addizione. Quando si digita un'altra "d", l'elenco deve contenere solo "addition," che viene ora selezionato. È possibile eseguire il commit premendo il tasto Tab, barra spaziatrice o invio "addition" o ignorare l'elenco digitando Esc o qualsiasi altra chiave.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Procedura dettagliata: Collegamento di un tipo di contenuto a un'estensione di File](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procedura dettagliata: collegamento di un tipo di contenuto a un'estensione](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

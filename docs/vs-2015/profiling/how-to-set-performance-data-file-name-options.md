@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205790"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Opzioni di nome File di dati di set di prestazioni
+# <a name="how-to-set-performance-data-file-name-options"></a>Procedura: Impostare le opzioni relative ai nomi file di dati sulle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per impostazione predefinita, un file dei dati di profilatura (con estensione vsp) viene salvato con la sintassi seguente:  

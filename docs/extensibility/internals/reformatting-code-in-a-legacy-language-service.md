@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341334"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891131"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Riformattazione del codice in un servizio di linguaggio legacy
 
 In [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] codice sorgente può essere riformattato dal normalizzazione l'uso di spazi vuoti e i rientri. Può trattarsi di inserimento o rimozione spazi o tabulazioni all'inizio di ogni riga, aggiunta di nuove righe tra le righe o sostituendo gli spazi con tabulazioni o tabulazioni con spazi.
 
->**Nota:** Inserimento o l'eliminazione dei caratteri di nuova riga possono influire sui marcatori, ad esempio i punti di interruzione e segnalibri, ma aggiungendo o rimuovendo gli spazi o tabulazioni non influenza i marcatori.
+> [!NOTE]
+> Inserimento o l'eliminazione dei caratteri di nuova riga possono influire sui marcatori, ad esempio i punti di interruzione e segnalibri, ma aggiungendo o rimuovendo gli spazi o tabulazioni non influenza i marcatori.
 
 Gli utenti possono avviare un'operazione di riformattazione selezionando **Formatta selezione** o **Formatta documento** dal **avanzate** menu il **modifica**dal menu. Un'operazione di riformattazione può essere attivata anche quando viene inserito un frammento di codice o un carattere specifico. Ad esempio, quando si digita una parentesi graffa di chiusura in c#, tutto il contenuto tra la corrisponda parentesi graffa aperta e parentesi graffa di chiusura è rientrato automaticamente al livello appropriato.
 

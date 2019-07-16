@@ -12,11 +12,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 427a84b3dcda0471f5ec9d71883a5a8e859bb92d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176693"
 ---
 # <a name="taskscheduler-class---internal-members"></a>Classe TaskScheduler - Membri interni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ In questo argomento vengono descritti i membri interni del <xref:System.Threadin
        extends System.Object  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
   
 ### <a name="methods"></a>Metodi  
   
-|Nome|Descrizione|  
+|Name|Descrizione|  
 |----------|-----------------|  
 |[GetScheduledTasksForDebugger](../../extensibility/debugger/getscheduledtasksfordebugger-method.md)|Recupera una matrice di tutte le attività pianificate.|  
 |[GetTaskSchedulersForDebugger](../../extensibility/debugger/gettaskschedulersfordebugger-method.md)|Recupera una matrice di tutti <xref:System.Threading.Tasks.TaskScheduler> gli oggetti che sono attualmente attivi.|  
