@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6078f0fd90855c432b333fd5967367460d0a364e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200018"
 ---
 # <a name="sccpopulatedirlist-function"></a>Funzione SccPopulateDirList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ SCCRTN SccPopulateDirList(
  pvCallerData  
  [in] Valore che deve essere passato alla funzione di callback invariato.  
   
- fOptions  
+ Opzioni  
  [in] Una combinazione di valori che controllano il modo in cui vengono elaborate le directory (vedere la sezione "PopulateDirList flags" [flag di bit usati da comandi specifici](../extensibility/bitflags-used-by-specific-commands.md) per i valori possibili).  
   
 ## <a name="return-value"></a>Valore restituito  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f41aa8c074f724976adabaa99df0e8ca0064fa3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161549"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurare Windows Firewall per il debug remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,8 +88,8 @@ Questo argomento illustra come configurare il firewall per abilitare il debug re
 |||||  
 |-|-|-|-|  
 |**Porte**|**In ingresso/in uscita**|**Protocollo**|**Descrizione**|  
-|135, 139, 445|In uscita|TCP|Obbligatorio.|  
-|137, 138|In uscita|UDP|Obbligatorio.|  
+|135, 139, 445|In uscita|TCP|Richiesto.|  
+|137, 138|In uscita|UDP|Richiesto.|  
 |500, 4500|In uscita|UDP|Necessario se i criteri del dominio richiedono che la comunicazione di rete avvenga tramite IPSec.|  
 |80|In uscita|TCP|Richiesto per il debug di server Web.|  
   

@@ -10,11 +10,11 @@ author: conceptdev
 ms.author: crdun
 manager: jillfra
 ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150992"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizzare i file di progetto creati con VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ public class ProjectFileHook
 ```  
   
 ## <a name="see-also"></a>Vedere anche  
- [Esempio: Callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Esempio: callback di log](../cross-platform/share-the-unity-log-callback-with-vstu.md)

@@ -1,5 +1,5 @@
 ---
-title: Modifica e continuazione (Visual C#) | Microsoft Docs
+title: Modifica e continuazione (Visual c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,18 +20,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 027e713ccb966528d0468050df30e4265b574198
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151421"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifica e continuazione (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La funzionalità Modifica e continuazione per C# consente di apportare modifiche al codice in modalità di interruzione durante il debug. Le modifiche possono essere applicate senza terminare e riavviare la sessione di debug. In modalità di esecuzione l'editor del codice sorgente è di sola lettura.  
   
- La modalità Modifica e continuazione supporta la maggior parte delle modifiche che è necessario apportare durante una sessione di debug, con alcune eccezioni. Per altre informazioni, vedere [modifiche al codice supportate (C#)](../debugger/supported-code-changes-csharp.md).  
+ La modalità Modifica e continuazione supporta la maggior parte delle modifiche che è necessario apportare durante una sessione di debug, con alcune eccezioni. Per altre informazioni, vedere [modifiche al codice supportate (c#)](../debugger/supported-code-changes-csharp.md).  
   
  La modalità Modifica e continuazione è supportata per i progetti a 64 bit destinati a .NET Framework 4.5.1.  
   

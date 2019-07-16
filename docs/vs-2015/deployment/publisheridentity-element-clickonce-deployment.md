@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157637"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Contiene informazioni sull'editore che ha firmato questo manifesto della distrib
 ## <a name="elements-and-attributes"></a>Elementi e attributi  
  Il `publisherIdentity` elemento è obbligatorio per manifesti firmati. La tabella seguente illustra gli attributi di `publisherIdentity` supportato dall'elemento.  
   
-|Attributo|Descrizione|  
+|Attributo|DESCRIZIONE|  
 |---------------|-----------------|  
-|`name`|Obbligatorio. Descrive l'identità dell'entità pubblicata l'applicazione.|  
-|`issuerKeyHash`|Obbligatorio. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|  
+|`name`|Richiesto. Descrive l'identità dell'entità pubblicata l'applicazione.|  
+|`issuerKeyHash`|Richiesto. Contiene l'hash SHA-1 della chiave pubblica dell'autorità di certificazione.|  
   
 #### <a name="parameters"></a>Parametri  
   

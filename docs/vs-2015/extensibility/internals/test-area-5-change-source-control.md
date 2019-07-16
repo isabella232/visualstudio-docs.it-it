@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d79281e2fef6a7ae77a2ba6c8375f47dc6520b3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155989"
 ---
 # <a name="test-area-5-change-source-control"></a>Area di test 5: Modificare il controllo del codice sorgente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 ### <a name="case-5a-bind"></a>Case 5a: Eseguire l'associazione  
  Binding consente all'utente di aggiungere le informazioni sul controllo codice sorgente per i progetti selezionati e le soluzioni. L'utente è in genere viene richiesto di identificare un progetto nel controllo del codice sorgente in cui questi devono essere aggiunti. L'utente non può creare un nuovo progetto nel controllo del codice sorgente come parte di questa operazione (a contrasto elevato con Aggiungi al controllo del codice sorgente).  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Binding a percorso vuoto|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />4.  Fare clic su **disassociare**.<br />5.  Se viene visualizzata, accettare la finestra di dialogo di avviso.<br />6.  Selezionare tutti gli elementi.<br />7.  Fare clic su **associare**.<br />8.  Selezionare un percorso vuoto in un archivio di controllo di origine.<br />9. Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />10. Fare clic su **ontinua con le associazioni** nella finestra di dialogo di conferma.<br />11. Fare clic su **OK** nella finestra di dialogo di avviso se viene visualizzato.<br />12. Archivia i file. Se questo passaggio ha esito positivo, continuare con il passaggio successivo.<br />13. Aprire soluzioni dal controllo del codice sorgente in un nuovo percorso.|`Result from Step 12:`<br /><br /> Soluzioni e progetti sono associate a e scritti nella destinazione di nuovo nell'archivio delle versioni.<br /><br /> Vengono archiviati i file di soluzione e progetto.<br /><br /> Gerarchia del progetto archivio versione corrisponde alla gerarchia di cartelle del progetto su disco.<br /><br /> `Result from Step 13:`<br /><br /> Vengono scaricati tutti gli elementi di progetto.|  
 |Binding a percorso che è sincronizzato con client|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Creare un duplicato del progetto e soluzione nell'archivio delle versioni (condividere e creare un ramo se si usa [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />4.  Aprire **Modifica controllo del codice sorgente** finestra di dialogo (**File**, **controllo del codice sorgente**, **Modifica controllo del codice sorgente**).<br />5.  Dissocia tutti.<br />6.  Fare clic su **OK** per chiudere **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />7.  Riaprire **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />8.  Selezionare tutto.<br />9. Fare clic su **associare**.<br />10. Selezionare il percorso della soluzione e progetto sottoposto a branching (dal passaggio 3)<br />11. Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />12. Ottenere più recente in modo ricorsivo per tutti gli elementi.|Contenuto del file dopo get esattamente come prima get.|  
@@ -59,7 +59,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 ### <a name="case-5b-unbind"></a>Case 5b: annullamento del binding  
  Dissocia le informazioni sul controllo codice sorgente rimuove da progetti e la propria soluzione. La soluzione e progetti interessati si basano su una combinazione di selezione dell'utente e come gli elementi sono stati aggiunti al controllo del codice sorgente.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Annullamento del binding soluzione contenente un unico File System o progetto Web IIS locale e il progetto client|1.  Creare un File System o un progetto Web IIS locale.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aggiungere un nuovo progetto di client per la soluzione.<br />4.  Se richiesto, accettare controllare della soluzione.<br />5.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />6.  Fare clic su **disassociare**.<br />7.  Fare clic su **OK** per chiudere la finestra di dialogo.<br />8.  Tenta di estrarre soluzioni, progetti, elementi di soluzione, gli elementi del progetto.|Soluzioni e progetti non sono sotto controllo del codice sorgente.<br /><br /> Non vengono visualizzati i comandi di menu di controllo di origine.|  
 |Annullare l'associazione Cancel|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />4.  Fare clic su **disassociare tutti**.<br />5.  Fare clic su **Annulla**.|Soluzione consiste nel controllo del codice sorgente.|  
@@ -67,7 +67,7 @@ Quest'area del plug-in test di controllo del codice sorgente illustra la modific
 ### <a name="case-5c-rebind"></a>Caso 5C: riassociazione  
  Riassociazione è semplicemente una combinazione di separazione e bind, ovvero il processo di progetto o soluzione che era in precedenza nel controllo del codice sorgente ed è stato dissociato la riassociazione.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Riassociare la soluzione e progetti senza chiudere il **Modifica controllo del codice sorgente** nella finestra di dialogo|1.  Creare un progetto.<br />2.  Aggiungere la soluzione al controllo del codice sorgente.<br />3.  Aprire il **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />4.  Fare clic su **disassociare**.<br />5.  Selezionare tutte le righe.<br />6.  Fare clic su **associare**.<br />7.  Fare clic su **OK** per chiudere la **Modifica controllo del codice sorgente** nella finestra di dialogo.<br />8.  Se richiesto, accettare checkout.|Soluzioni e progetti sottoposti al controllo del codice sorgente.|  
 |Riassociare progetto solo senza chiudere **Modifica controllo del codice sorgente** nella finestra di dialogo|1.  Creare un progetto.<br />2.  Aggiungere solo il progetto all'uso di controllo di origine (File -> origine controllo -> Aggiungi progetti selezionati a controllo del codice sorgente.<br />3.  Aprire la finestra di dialogo Modifica controllo del codice sorgente.<br />4.  Rimuovere il binding solo il progetto.<br />5.  Eseguire l'associazione solo il progetto.|La soluzione rimane non controllata.<br /><br /> Progetto rimane controllato.|  

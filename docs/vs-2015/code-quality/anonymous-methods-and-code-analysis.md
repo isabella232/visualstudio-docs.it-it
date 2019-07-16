@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157059"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Metodi anonimi e analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Una classe può contenere un metodo anonimo inline che assegna un valore a un campo che contiene più costruttori. In questo caso, le metriche e avvisi associati con tutti i costruttori, a meno che tale costruttore concatenato a un altro costruttore nella stessa classe.  
   
- Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione della **anonymousMethod** deve essere generato in base **Class (int)** e **Class (String)** ma non rispetto **Class ()**.  
+ Ad esempio, nella classe seguente, gli avvisi che si trovano nella dichiarazione della **anonymousMethod** deve essere generato in base **Class (int)** e **Class (String)** ma non rispetto **Class ()** .  
   
 ```vb  
   

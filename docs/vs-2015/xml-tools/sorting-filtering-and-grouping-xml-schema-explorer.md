@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86c13f7c710e462e1edd45acbf68fa4642d3d422
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150674"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Ordinamento, filtro e raggruppamento (XML Schema Explorer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ In questo argomento vengono descritte le opzioni disponibili tramite il **opzion
   
 - **Mostra file di Schema**.  
   
-- **Mostra Compositor (sequence/choice/all)**.  
+- **Mostra Compositor (sequence/choice/all)** .  
   
 ## <a name="sorting-options"></a>Opzioni di ordinamento  
  Sono disponibili le seguenti opzioni di ordinamento. Il valore predefinito è **Ordina per tipo**. Le opzioni Ordina per non si applicano ai file e agli spazi dei nomi.  

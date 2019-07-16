@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176512"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procedura: Passare a un altro Thread durante il debug
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Procedura: Passare a un altro thread durante il debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando si esegue il debug di un'applicazione multithreading, è possibile utilizzare diversi metodi per cambiare contesto passando dal thread utilizzato a un altro thread.  

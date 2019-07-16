@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d665f51f2ec5d825dbac1533c82e3d15bf419ff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161813"
 ---
 # <a name="assertion-failed-dialog-box"></a>Asserzione non riuscita (finestra di dialogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Un'istruzione di asserzione specifica una condizione che ci si aspetta abbia val
   
 |Fare clic su|A|  
 |-----------|--------|  
-|Riprova|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|  
+|Retry|Effettuare il debug dell'asserzione o visualizzare la Guida relativa alle asserzioni.|  
 |Ignora|Ignorare l'asserzione e continuare l'esecuzione del programma.|  
 |Abort|Interrompere l'esecuzione del programma e terminare la sessione di debug.|  
   

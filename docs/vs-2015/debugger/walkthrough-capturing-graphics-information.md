@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68151466"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procedura dettagliata: Acquisizione di informazioni grafiche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Questa procedura dettagliata dimostra come usare Diagnostica grafica di [!INCLUD
   
   Ogni volta che si acquisiscono informazioni su un frame, Diagnostica grafica registra gli eventi di Direct3D e lo stato associato e aggiunge questi dati a un log di grafica. Per ogni sessione di Diagnostica grafica viene creato un nuovo log di grafica. Per informazioni sui log di grafica, vedere [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
-## <a name="next-steps"></a>Passaggi successivi  
+## <a name="next-steps"></a>Fasi successive  
  In questa procedura dettagliata è stato illustrato come acquisire informazioni grafiche manualmente. Come passaggio successivo, prendere in considerare questa opzione:  
   
 - Apprendere come analizzare le informazioni grafiche acquisite usando gli strumenti di Diagnostica grafica. Visualizzare [Panoramica](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  

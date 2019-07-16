@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4b31ac34627b244cb61b6fdb5c6ca214675ec045
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150848"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; elemento (applicazione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,10 +45,10 @@ Identifica un'estensione di file da associare all'applicazione.
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`extension`|Obbligatorio. L'estensione di file da associare all'applicazione.|  
-|`description`|Obbligatorio. Descrizione del tipo di file per l'utilizzo dalla shell.|  
-|`progid`|Obbligatorio. Nome che identifica il tipo di file.|  
-|`defaultIcon`|Obbligatorio. Specifica l'icona da utilizzare per i file con questa estensione. Il file di icona deve essere specificato utilizzando il [ \<file > elemento](../deployment/file-element-clickonce-application.md) all'interno di [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md) che contiene questo elemento.|  
+|`extension`|Richiesto. L'estensione di file da associare all'applicazione.|  
+|`description`|Richiesto. Descrizione del tipo di file per l'utilizzo dalla shell.|  
+|`progid`|Richiesto. Nome che identifica il tipo di file.|  
+|`defaultIcon`|Richiesto. Specifica l'icona da utilizzare per i file con questa estensione. Il file di icona deve essere specificato utilizzando il [ \<file > elemento](../deployment/file-element-clickonce-application.md) all'interno di [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md) che contiene questo elemento.|  
   
 ## <a name="remarks"></a>Note  
  Questo elemento deve includere un riferimento XML dello spazio dei nomi "urn: schemas-microsoft-v1". Se il `<fileAssociation>` viene usato l'elemento, deve essere specificato dopo il `<application>` elemento nel relativo elemento padre [ \<assembly > elemento](../deployment/assembly-element-clickonce-application.md).  

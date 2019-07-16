@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 37554c8ba72257ee78b219774425c7e8acb305a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156675"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Procedura: Impostare il nome di un thread in codice nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

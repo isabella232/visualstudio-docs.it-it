@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196856"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Progettazione di tabella comandi XML (. File Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ Un file XML comando table (vsct) descrive il layout e l'aspetto degli elementi d
   
  Durante lo sviluppo, è possibile per più progetti VSPackage venga creato e registrato nell'hive del Registro di sistema sperimentale che può provocare confusione confusione nell'IDE. Per risolvere questo problema, è possibile reimpostare l'hive sperimentale per le impostazioni predefinite per rimuovere registrati tutti i pacchetti VSPackage e le eventuali modifiche apportate all'IDE. Per reimpostare l'hive sperimentale, usare lo strumento CreateExpInstance.exe fornito con Visual Studio SDK. È possibile trovarlo in  
   
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **% PROGRAMMI (x86) %\Visual Studio \<versione > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Eseguire lo strumento da riga di comando **CreateExpInstance /Reset**. Tenere presente che questo strumento rimuove da hive sperimentale tutti i pacchetti VSPackage registrati che normalmente non vengono installati con [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   

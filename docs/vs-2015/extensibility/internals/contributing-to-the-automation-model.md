@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196990"
 ---
 # <a name="contributing-to-the-automation-model"></a>Aggiunta di elementi al modello di automazione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio offre un set di interfacce di automazione per la personalizzazione
  [Automazione per il codice](../../extensibility/internals/providing-automation-for-code.md)  
  Viene illustrato che la creazione di un modello di automazione per il codice non è obbligatorio. Tuttavia, in questo argomento che fornisce informazioni accurate nei modelli di codice viene fornito un collegamento.  
   
- [Procedura: Fornire l'automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Procedura: fornire l'automazione per Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Viene illustrato che l'automazione è una buona idea ogni volta che si desidera rendere disponibili gli oggetti di automazione in una finestra e l'ambiente non fornisce già un oggetto di automazione pronte all'uso. Viene illustrata l'automazione per le finestre dei documenti e finestre degli strumenti.  
   
  [Uso del modello di automazione](../../extensibility/internals/using-the-automation-model.md)  

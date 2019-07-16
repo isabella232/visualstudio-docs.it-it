@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196864"
 ---
 # <a name="delayed-document-loading"></a>Caricamento dei documenti ritardato
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Quando un utente riapre una soluzione di Visual Studio, è possibile che la magg
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> usando <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID6>.  
   
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>. Questo metodo restituisce un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> oggetto che include un valore per <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> se il documento non è ancora stato inizializzato.  
+- [https://login.microsoftonline.com/consumers/](<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A>). Questo metodo restituisce un <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> oggetto che include un valore per <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4> se il documento non è ancora stato inizializzato.  
   
   È possibile scoprire quando un documento è stato caricato, sottoscrivere l'evento RDT che viene generato quando un documento è completamente inizializzato. Esistono due possibilità:  
   
@@ -64,4 +64,4 @@ Quando un utente riapre una soluzione di Visual Studio, è possibile che la magg
 ## <a name="testing-extensions-to-see-if-they-force-initialization"></a>Le estensioni per vedere se sono forzare l'inizializzazione di test  
  Non vi è alcuna indicazione visibile per indicare se un documento è stato inizializzato, pertanto può essere difficile scoprire se l'estensione viene forzato l'inizializzazione. È possibile impostare una chiave del Registro di sistema che semplifica la verifica, perché causa il titolo di tutti i documenti non completamente inizializzata per contenere il testo `[Stub]` nel titolo.  
   
- Nelle **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, impostare **StubTabTitleFormatString** al  **{0} [Stub]**.
+ Nelle **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]** , impostare **StubTabTitleFormatString** al  **{0} [Stub]** .

@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150937"
 ---
 # <a name="import-an-xcode-project"></a>Importare un progetto XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
   
     ![Riquadro Destinazioni di destinazione della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Per ogni destinazione selezionata in **Destinazioni da importare**, la procedura guidata rileva automaticamente i file di codice C++ che possono essere suddivisi in un progetto di libreria statica distinto e li inserisce nella sezione **Elementi progetto C++**. Altro codice e altre risorse vengono mantenuti nella sezione **Elementi progetto XCode**. Al termine del processo di importazione, questi elementi diventano progetti di libreria statica e di applicazioni distinti in Visual Studio. Per impostazione predefinita, unit test e destinazioni dei framework non vengono suddivisi in progetti distinti dalla procedura guidata.  
+    Per ogni destinazione selezionata in **Destinazioni da importare**, la procedura guidata rileva automaticamente i file di codice C++ che possono essere suddivisi in un progetto di libreria statica distinto e li inserisce nella sezione **Elementi progetto C++** . Altro codice e altre risorse vengono mantenuti nella sezione **Elementi progetto XCode**. Al termine del processo di importazione, questi elementi diventano progetti di libreria statica e di applicazioni distinti in Visual Studio. Per impostazione predefinita, unit test e destinazioni dei framework non vengono suddivisi in progetti distinti dalla procedura guidata.  
   
     Per modificare i file contenuti in ogni progetto, usare i pulsanti Su e Giù. Quando si è soddisfatti con i file in ogni progetto, scegliere **Avanti** per continuare.  
   
@@ -54,7 +54,7 @@ Microsoft Visual C++ per lo sviluppo di app per dispositivi mobili multipiattafo
   
     ![Riquadro Proprietà globali della procedura guidata Importa da Xcode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Questi percorsi globali possono anche essere impostati nella finestra di dialogo **Opzioni** di Visual Studio. Per individuarli, scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Multipiattaforma**, **C++**, **iOS**, **Proprietà globali**.  
+    Questi percorsi globali possono anche essere impostati nella finestra di dialogo **Opzioni** di Visual Studio. Per individuarli, scegliere **Opzioni** dal menu **Strumenti**. Nella finestra di dialogo **Opzioni** espandere **Multipiattaforma**, **C++** , **iOS**, **Proprietà globali**.  
   
     Scegliere **Avanti** per continuare.  
   

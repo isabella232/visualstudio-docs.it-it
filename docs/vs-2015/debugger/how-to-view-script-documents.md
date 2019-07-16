@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189594"
 ---
 # <a name="how-to-view-script-documents"></a>Procedura: Visualizzare documenti script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Nelle versioni precedenti di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i file
   
  I file script sul lato client sono visibili solo in modalità di debug o in modalità interruzione. Vengono visualizzati nel nodo **Documenti script**.  
   
- I file script sul lato server sono sempre visibili. Vengono visualizzati nel nodo **\<Percorso sito Web>**. Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
+ I file script sul lato server sono sempre visibili. Vengono visualizzati nel nodo **\<Percorso sito Web>** . Il nome del nodo è simile a questo esempio: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Per visualizzare un documento script sul lato server  
   
-1. In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>**.  
+1. In **Esplora soluzioni** aprire il nodo **\<Percorso sito Web>** .  
   
 2. Fare doppio clic sul file script che si desidera visualizzare.  
   

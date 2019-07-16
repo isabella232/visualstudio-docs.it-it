@@ -12,13 +12,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160593"
 ---
-# <a name="starting-to-develop-visual-studio-extensions"></a>Iniziare a sviluppare estensioni di Visual Studio
+# <a name="starting-to-develop-visual-studio-extensions"></a>Sviluppo di estensioni di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario probabilmente alcune delle domande. Ne sono elencati alcune delle cause più comuni di seguito. Se le informazioni che si sta cercando non viene visualizzata, usare i pulsanti di commenti e suggerimenti (**questa pagina è stata utile?** nella parte inferiore della schermata) per richiedere che si desidera.
@@ -77,7 +77,7 @@ Se non hai mai scritto un'estensione di Visual Studio prima di, è necessario pr
 
 - Modello di progetto VSIX: [Introduzione al modello di progetto VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-- Visual Studio isolated shell: [Procedura dettagliata: Creazione di un'applicazione Shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Visual Studio isolated shell: [Procedura dettagliata: creazione di un'applicazione shell isolata di base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Come si ottiene l'estensione per l'aspetto di Visual Studio?
  Ottenere suggerimenti straordinari per progettazione dell'interfaccia utente per l'estensione nella [Visual Studio User Experience Guidelines](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

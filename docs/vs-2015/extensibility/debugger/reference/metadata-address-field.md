@@ -13,11 +13,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8c3f3697473a20a2f62f4209a0bdbae89c30b8e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181159"
 ---
 # <a name="metadataaddressfield"></a>METADATA_ADDRESS_FIELD
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ public struct METADATA_ADDRESS_FIELD {
  tokField  
  L'ID del token di campo.  
   
- [C++] `_mdToken` è un `typedef` un 32-bit `int`.  
+ [C++] `_mdToken` sia un `typedef` un 32-bit `int`.  
   
 ## <a name="remarks"></a>Note  
  Questa struttura è parte dell'unione nel [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struttura quando il `dwKind` campo il `DEBUG_ADDRESS_UNION` struttura è impostata su `ADDRESS_KIND_FIELD` (un valore compreso il [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumerazione).  

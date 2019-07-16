@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 00b39b91b0a776438199d1df3c212cb9fe40f338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155512"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Procedura: Rilocare binari instrumentati
+# <a name="how-to-relocate-instrumented-binaries"></a>Procedura: Rilocare file binari instrumentati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Durante la strumentazione, i probe vengono inseriti nel file binario per misurare le prestazioni dell'applicazione. Se si sceglie di rilocare il file binario instrumentato, una copia del file binario originale viene instrumentata e inserita nella posizione specificata. Questa opzione è utile se non si vuole che il profiler rinomini il file binario originale. Se il file binario non viene rilocato, la versione originale di tale file verrà sovrascritta.  

@@ -14,21 +14,21 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 96f816ff40b40f0de6b6f828996a64407b88f04e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164204"
 ---
 # <a name="functionargtype"></a>FunctionArgType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ogni parametro di una funzione è identificata da un `SymTagFunctionArgType` simbolo.  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Nella tabella seguente mostra ulteriori proprietà valida per questo tipo di simbolo.  
   
-|Proprietà|Tipo di dati|Descrizione|  
+|Proprietà|Tipo di dati|DESCRIZIONE|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Simboli per l'elemento padre FunctionType.|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID del simbolo classe padre.|  

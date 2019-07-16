@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6bd42c825cd45068e13178856e524268b426ec53
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194335"
 ---
 # <a name="message-enumerator"></a>Enumeratore di messaggio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ enum { 
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  SCC_MSG_RTN_CANCEL  
  Restituito dal callback per indicare l'annullamento.  
   

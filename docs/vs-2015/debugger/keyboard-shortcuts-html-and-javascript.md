@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: dedfc8e5be9b3410c978722518f50162bcd2b40b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58969088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199688"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Scelte rapide da tastiera (HTML e JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="general-shortcuts"></a>Tasti di scelta rapida generali  
  Questi tasti di scelta rapida funzionano per tutti gli strumenti delle app di Store scritte in HTML e JavaScript.  
   
-|Operazione|Collegamento|  
+|Azione|Collegamento|  
 |------------|--------------|  
 |Aggiornare l'app di Windows|CTRL+MAIUSC+R|  
 |Riavviare l'app di Windows|Ctrl+Maiusc+F5|  
@@ -41,7 +41,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="javascript-console-shortcuts"></a>Tasti di scelta rapida della Console JavaScript  
  Usa questi tasti di scelta rapida nella finestra Console JavaScript.  
   
-|Operazione|Collegamento|  
+|Azione|Collegamento|  
 |------------|--------------|  
 |Eseguire un comando della console|INVIO|  
 |Chiudere la console|ESC|  
@@ -50,7 +50,7 @@ Si applica a Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "
 ## <a name="dom-explorer-shortcuts"></a>Tasti di scelta rapida di DOM Explorer  
  Usa questi tasti di scelta rapida in DOM Explorer.  
   
-|Operazione|Collegamento|  
+|Azione|Collegamento|  
 |------------|--------------|  
 |Seleziona elemento|Ctrl+B|  
 |Visualizzare/nascondere le caselle evidenziate della pagina Web quando si usa **Seleziona elemento**|CTRL+MAIUSC+I|  

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b6b022281b043b512491c2fe6366a1393b67dacd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181333"
 ---
 # <a name="designing-user-interfaces"></a>Progettazione delle interfacce utente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,5 +29,5 @@ ms.locfileid: "54753828"
 |Icone standard disponibili per i programmi.|[The Visual Studio Image Library](../designers/the-visual-studio-image-library.md) (Libreria di immagini di Visual Studio)|  
   
 ## <a name="see-also"></a>Vedere anche  
- [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) (Procedura dettagliata: Creare un'applicazione semplice)  
+ [Procedura dettagliata: Creare una semplice applicazione](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   
  [The Visual Studio Image Library](../designers/the-visual-studio-image-library.md) (Libreria di immagini di Visual Studio)

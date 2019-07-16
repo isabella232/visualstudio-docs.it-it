@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176490"
 ---
 # <a name="how-to-export-a-shader"></a>Procedura: Esportare uno shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Questo documento illustra come usare la finestra di progettazione shader per esp
   
 #### <a name="to-export-a-shader"></a>Per esportare uno shader  
   
-1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file **Visual Shader Graph (.dgsl)**.  
+1. In [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aprire un file **Visual Shader Graph (.dgsl)** .  
   
-     Se non è disponibile un file **Visual Shader Graph (.dgsl)**, crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).  
+     Se non è disponibile un file **Visual Shader Graph (.dgsl)** , crearne uno come descritto in [Procedura: Creare uno shader con colore di base](../designers/how-to-create-a-basic-color-shader.md).  
   
 2. Nella barra degli strumenti **Progettazione shader** scegliere **Avanzate**, **Esporta**, **Esporta come**. Viene visualizzata la finestra di dialogo **Esporta shader**.  
   

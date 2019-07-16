@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176685"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli multiprogetto
+# <a name="how-to-create-multi-project-templates"></a>Procedura: Creare modelli per più progetti
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 I modelli multiprogetto fungono da contenitori per due o più progetti. Quando un progetto basato su un modello per più progetti viene creato nella finestra di dialogo **Nuovo progetto**, ogni progetto del modello viene aggiunto alla soluzione.  

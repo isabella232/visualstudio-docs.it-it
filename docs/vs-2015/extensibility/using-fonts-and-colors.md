@@ -15,13 +15,13 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177232"
 ---
-# <a name="using-fonts-and-colors"></a>Usando tipi di carattere e colori
+# <a name="using-fonts-and-colors"></a>Uso di tipi di carattere e colori
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce il supporto per l'utilizzo di tipi di carattere e colori per visualizzare il testo.  
@@ -41,7 +41,7 @@ Il [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornisce il supporto per l'uti
   
  Questo approccio richiede un pacchetto VSPackage implementare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interfaccia e interfacce correlate.  
   
- [Procedura: Accedere ai tipi di carattere incorporati e combinazione di colori](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Procedura: accedere ai tipi di carattere e alle combinazioni colori predefiniti](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Viene illustrato come definire e registrare una categoria, utilizzando i colori e tipi di carattere incorporati e avviare l'uso di caratteri fornita dal sistema e i colori.  
   
 ## <a name="reference"></a>Riferimenti  

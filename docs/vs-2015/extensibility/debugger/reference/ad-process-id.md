@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: ea06d8e007e2df88cb46c2f0e6dd4a79ebe711b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153634"
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ public struct AD_PROCESS_ID {
 };  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  `ProcessIdType`  
  Un valore compreso il [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md) enumerazione che specifica come interpretare il `ProcessId` unione (o, per il codice gestito, il membro della struttura da accedere).  
   

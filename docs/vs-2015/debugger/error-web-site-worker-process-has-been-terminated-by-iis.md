@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185468"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Errore: Il processo di lavoro del sito Web è stato terminato da IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ L'esecuzione del codice sul sito Web è stata interrotta dal debugger. Di conseg
   
    2. Nel **Pannello di controllo** scegliere **Passa alla visualizzazione classica**, se necessario, quindi fare doppio clic su **Strumenti di amministrazione**.  
   
-2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)**.  
+2. Nella finestra **Strumenti di amministrazione** fare doppio clic su **Gestione Internet Information Services (IIS)** .  
   
     Gestione IIS verrà aperto.  
   

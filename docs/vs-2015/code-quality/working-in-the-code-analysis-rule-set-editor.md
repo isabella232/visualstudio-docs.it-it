@@ -12,18 +12,18 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201130"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilizzo dell'editor set di regole di analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'editor set di regole di analisi del codice consente di specificare le regole incluse in un set di regole personalizzate e per specificare l'azione. È anche possibile specificare l'azione da intraprendere quando l'analisi del codice rileva una violazione della regola.  
   
-|Operazione|Descrizione|  
+|Azione|Descrizione|  
 |------------|-----------------|  
 |**Avviso**|Genera un avviso nel **elenco errori** finestra.|  
 |**Erroree**|Genera un errore nel **elenco errori** finestra.|  
@@ -42,7 +42,7 @@ L'editor set di regole di analisi del codice consente di specificare le regole i
   
  Nella tabella seguente vengono descritti i controlli sulla barra degli strumenti dell'editor set di regole.  
   
-|Controllo ToolBar|Descrizione|  
+|Controllo ToolBar|DESCRIZIONE|  
 |---------------------|-----------------|  
 |**Espandi tutto**|Vengono illustrate le regole in tutti i gruppi.|  
 |**Comprimi tutto**|Consente di nascondere le regole in tutti i gruppi.|  
@@ -60,11 +60,11 @@ L'editor set di regole di analisi del codice consente di specificare le regole i
   
  Nella tabella seguente vengono descritti i campi di un set di regole.  
   
-|Campo|Descrizione|  
+|Campo|DESCRIZIONE|  
 |-----------|-----------------|  
 |**ID**|L'identificatore della regola.|  
 |**Categoria**|Oltre alla loro l'appartenenza al set di regole, regole di analisi del codice vengono inoltre raggruppate per categoria. Per altre informazioni, vedere [analisi del codice per gli avvisi del codice gestito](../code-quality/code-analysis-for-managed-code-warnings.md).|  
-|**Name**|Il titolo della regola.|  
+|**Nome**|Il titolo della regola.|  
 |**Spazio dei nomi**|Lo spazio dei nomi della regola.|  
 |**Tipo di destinazione**|Indica se la regola è per nativo, gestito o codice di database.|  
 |**Azione**|L'azione eseguita quando la regola viene violata in un'esecuzione dell'analisi codice.<br /><br /> **Avviso** -genera un avviso.<br /><br /> **Errore** -verrà generato un errore.<br /><br /> **Nessuno** -disabilita la regola.<br /><br /> È possibile modificare il campo dell'azione. Impostare il valore su None è equivale a deselezionare la casella di controllo per la regola.|  

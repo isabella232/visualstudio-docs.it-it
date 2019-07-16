@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65f659b64b6a1e29e1e25ae344dd8033e631de09
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157762"
 ---
 # <a name="summary-view---resource-contention-view"></a>Visualizzazione Riepilogo: visualizzazione dei conflitti tra le risorse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
   
  L'opzione **Risorse con più conflitti** include i dati seguenti per ogni risorsa.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
-|**Name**|Nome della risorsa.|  
+|**Nome**|Nome della risorsa.|  
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|  
   
 ## <a name="most-contended-thread"></a>Thread con più conflitti  
@@ -43,8 +43,8 @@ La visualizzazione Riepilogo riporta informazioni sugli eventi dell'applicazione
   
  L'opzione **Thread con più conflitti** include i dati seguenti per ogni thread.  
   
-|Colonna|Description|  
+|Colonna|Descrizione|  
 |------------|-----------------|  
 |**ID**|L'identificatore del thread.|  
-|**Name**|Nome del processo proprietario del thread.|  
+|**Nome**|Nome del processo proprietario del thread.|  
 |**% conflitti**|Percentuale di tutti gli eventi di conflitto nei dati di profilatura che rappresentano conflitti per questa risorsa.|

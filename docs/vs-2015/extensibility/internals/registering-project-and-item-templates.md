@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58965565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185831"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrazione di modelli di progetto e di elementi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Nome|Tipo|Descrizione|  
+|Nome|Type|Descrizione|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nome predefinito di progetti di questo tipo.|  
 |DisplayName|REG_SZ|ID risorsa del nome da recuperare dalla DLL satellite registrato in pacchetti.|  
@@ -57,7 +57,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|Nome|Tipo|Descrizione|  
+|Nome|Type|Descrizione|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID risorsa per i modelli di elemento aggiunta.|  
 |TemplatesDir|REG_SZ|Percorso degli elementi di progetto visualizzato nella finestra di dialogo per la **Aggiungi nuovo elemento** procedura guidata.|  
@@ -67,7 +67,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 ### <a name="registering-file-filters"></a>La registrazione di filtri file  
  Facoltativamente, è possibile registrare i filtri che [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilizza quando richiesto, specificare i nomi file. Ad esempio, il [!INCLUDE[csprcs](../../includes/csprcs-md.md)] Filtra per il **Apri File** è la finestra di dialogo:  
   
- **File Visual C# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
+ **File Visual c# (\*cs,\*resx,\*Settings,\*XSD,\*WSDL);\*. cs,\*, RESX\*Settings,\*XSD,\*. WSDL)**  
   
  Per supportare la registrazione di più filtri, ogni filtro è registrato nella propria sottochiave in HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versione*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*sottochiave*>. Il nome della sottochiave è arbitrario. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignora il nome della sottochiave e utilizza solo i relativi valori.  
   
@@ -84,7 +84,7 @@ Tipi di progetto devono registrare le directory in cui si trovano i relativi mod
 "SortPriority"=dword:00000064  
 ```  
   
-|Nome|Tipo|Descrizione|  
+|Nome|Type|Descrizione|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Cerca nei file** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  
 |CommonOpenFilesFilter|REG_DWORD|Rende il filtro per uno dei filtri comuni nella **Apri File** nella finestra di dialogo. Filtri comuni sono elencati nell'elenco di filtri prima i filtri non è contrassegnato come comuni.|  

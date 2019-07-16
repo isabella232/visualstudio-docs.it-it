@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58966672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155708"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilazione di applicazioni ClickOnce dalla riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ In [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], è possibil
   
  "Destinazione" è un indicatore a MSBuild su come elaborare il comando. Le destinazioni principali sono la destinazione "build" e la destinazione "pubblica". La destinazione della compilazione è equivalente alla selezione della compilazione comando (o premendo F5) nell'IDE. Se si desidera solo creare il progetto, è possibile ottenere questo risultato digitando `msbuild`. Questo comando funziona perché la destinazione della compilazione è la destinazione predefinita per tutti i progetti generati da [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Ciò significa che non è necessario in modo esplicito specificare la destinazione della compilazione. Pertanto, la digitazione `msbuild` è la stessa operazione digitando `msbuild /target:build`.  
   
- Il `/target:publish` comando indica a MSBuild per richiamare la destinazione di pubblicazione. La destinazione di pubblicazione dipende dalla destinazione di compilazione. Ciò significa che l'operazione di pubblicazione è un superset dell'operazione di compilazione. Ad esempio, se si apporta una modifica a uno dei file di origine Visual Basic o C#, l'assembly corrispondente verrà rigenerato automaticamente dall'operazione di pubblicazione.  
+ Il `/target:publish` comando indica a MSBuild per richiamare la destinazione di pubblicazione. La destinazione di pubblicazione dipende dalla destinazione di compilazione. Ciò significa che l'operazione di pubblicazione è un superset dell'operazione di compilazione. Ad esempio, se si apporta una modifica a uno dei file di origine Visual Basic o c#, l'assembly corrispondente verrà rigenerato automaticamente dall'operazione di pubblicazione.  
   
  Per informazioni sulla generazione di una procedura completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuzione utilizzando lo strumento da riga di comando Mage.exe per creare le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto, vedere [procedura dettagliata: Distribuzione manuale di un'applicazione ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   

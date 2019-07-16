@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186245"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procedura: Tenere traccia del codice personalizzando la barra di scorrimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

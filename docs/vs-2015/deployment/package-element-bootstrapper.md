@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157691"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacchetto&gt; elemento (programma di avvio automatico)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,9 +148,9 @@ Il `Package` elemento è l'elemento XML di primo livello all'interno di un file 
   
 |Attributo|Descrizione|  
 |---------------|-----------------|  
-|`Culture`|Obbligatorio. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione.|  
-|`Name`|Obbligatorio. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`.|  
-|`LicenseAgreement`|Facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) o il formato RTF. (.rtf)|  
+|`Culture`|Richiesto. Definisce le impostazioni cultura per questo pacchetto, che determina la lingua da utilizzare. Questo attributo è una chiave nel `Strings` elemento, che elenca le stringhe specifiche delle impostazioni cultura per i nomi dei prodotti e i messaggi di errore durante l'installazione.|  
+|`Name`|Richiesto. Il nome del pacchetto visualizzato per lo sviluppatore all'interno di uno strumento, ad esempio [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Questo attributo è una chiave nel `Strings` elemento che deve contenere un `String` elemento con la `Name` e `Culture` proprietà impostate in modo che corrisponda il `Name` e `Culture` le proprietà di `Package`.|  
+|`LicenseAgreement`|facoltativo. Specifica il nome del file del pacchetto di distribuzione che contiene il contratto di licenza dell'utente finale (EULA).  Questo file può essere testo normale (con estensione txt) o il formato RTF. (.rtf)|  
   
 ## <a name="example"></a>Esempio  
  Esempio di codice seguente viene illustrato un file del pacchetto completo per la ridistribuzione di [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  

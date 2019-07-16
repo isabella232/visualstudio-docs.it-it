@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177014"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>I colori e stili per Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Classi helper e metodi per il codice gestito
  Per codice gestito, libreria di Framework di pacchetto gestito della shell (Microsoft.VisualStudio.Shell.12.0.dll) contiene una coppia di classi di helper agevolare l'uso di temi colori.
 
- I metodi di supporto nel **Microsoft.VisualStudio.Shell.VsColors** classe MPF includono **GetThemedGDIColor()** e **GetThemedWPFColor()**. Tali metodi helper restituiscono il valore del colore di una voce di tema come Drawing o Color, da usare in Windows Form o WPF UI.
+ I metodi di supporto nel **Microsoft.VisualStudio.Shell.VsColors** classe MPF includono **GetThemedGDIColor()** e **GetThemedWPFColor()** . Tali metodi helper restituiscono il valore del colore di una voce di tema come Drawing o Color, da usare in Windows Form o WPF UI.
 
 ```
 IVsUIShell5 shell5;
@@ -272,7 +272,7 @@ protected override void Dispose(bool disposing)
 ### <a name="system-color-set"></a>Set di colori di sistema
  La tabella in [Blog del Team WPF: Riferimento SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indica il set completo di nomi di colori di sistema e le corrispondenti tonalità visualizzate in ogni tema.
 
- Quando si applica questo set di colori per l'interfaccia utente, limitato *è previsto che perderai dettagli che erano presenti nei temi "normali"*. Ecco un esempio dell'interfaccia utente con colori grigi meno evidenti che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Quando viene utilizzata con la stessa finestra visualizzata in modalità a contrasto elevato, si noterà che tutti gli sfondi siano la stessa tonalità e i bordi di tali aree sono indicati dal bordo autonomo:
+ Quando si applica questo set di colori per l'interfaccia utente, limitato *è previsto che perderai dettagli che erano presenti nei temi "normali"* . Ecco un esempio dell'interfaccia utente con colori grigi meno evidenti che vengono usati per distinguere le aree all'interno di una finestra degli strumenti. Quando viene utilizzata con la stessa finestra visualizzata in modalità a contrasto elevato, si noterà che tutti gli sfondi siano la stessa tonalità e i bordi di tali aree sono indicati dal bordo autonomo:
 
  ![Finestra delle proprietà](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303 a_PropertiesWindow")
 
@@ -348,7 +348,7 @@ protected override void Dispose(bool disposing)
 
  Popolare il Registro di sistema con due valori:
 
-|Nome|Tipo|Dati|Descrizione|
+|nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|Creato da un GUID per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|Il GUID del servizio di VSPackage che supporta la categoria|
@@ -360,7 +360,7 @@ protected override void Dispose(bool disposing)
 
  Popolare il Registro di sistema con due valori:
 
-|Nome|Tipo|Dati|Descrizione|
+|nome|Tipo|Dati|Descrizione|
 |----------|----------|----------|-----------------|
 |Category|REG_SZ|GUID|Creato da un GUID per identificare la categoria|
 |Pacchetto|REG_SZ|GUID|Il GUID del servizio di VSPackage che supporta la categoria|

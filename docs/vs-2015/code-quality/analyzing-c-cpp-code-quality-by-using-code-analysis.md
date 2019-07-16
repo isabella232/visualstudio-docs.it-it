@@ -1,5 +1,5 @@
 ---
-title: Analisi della qualità del codice C-c + + tramite analisi del codice | Microsoft Docs
+title: Analisi C -C++ qualità del codice tramite analisi del codice | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: f7820947921e584d96d7f9e7299b70410b3d0587
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157134"
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>Verifica della qualità del codice C/C++ tramite analisi del codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

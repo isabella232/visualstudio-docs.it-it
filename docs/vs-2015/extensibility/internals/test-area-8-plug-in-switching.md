@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203116"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Area di test 8: Cambio di plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 #### <a name="expected-behavior"></a>Comportamento previsto  
  Quando un utente viene caricata una soluzione che si trova sotto controllo del codice sorgente, la soluzione viene automaticamente caricata e il plug-in del controllo del codice sorgente appropriato viene selezionata come corrente.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Modifica del plug-in controllo origine automatica|1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**.)<br />2.  Creare un nuovo progetto.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />5.  Accettare scaricamento soluzione richiesta.<br />6.  Riaprire la soluzione dal disco.|Soluzione è aperta.<br /><br /> Plug-in sottoposta a test è il controllo del codice sorgente corrente del plug-in.|  
   
@@ -50,7 +50,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 #### <a name="expected-behavior"></a>Comportamento previsto  
  La soluzione può avere il controllo del codice sorgente associato del plug-in modificato.  
   
-|Operazione|Passi del test|Per verificare i risultati previsti|  
+|Azione|Passi del test|Per verificare i risultati previsti|  
 |------------|----------------|--------------------------------|  
 |Modifica del plug-in per una soluzione|1.  Selezionare plug-nel test come corrente (**degli strumenti** -> **opzioni** -> **controllo del codice sorgente** -> **plug-in Selezione**).<br />2.  Creare un nuovo progetto e soluzione.<br />3.  Aggiungere la soluzione al controllo del codice sorgente.<br />4.  Dissociare la soluzione dal controllo del codice sorgente (usando il **Modifica controllo del codice sorgente** nella finestra di dialogo).<br />5.  Selezionare un altro plug-in (ad esempio, [!INCLUDE[vsvss](../../includes/vsvss-md.md)]).<br />6.  Ricaricare la soluzione dal disco se scaricato.<br />7.  Aggiungere la soluzione al controllo del codice sorgente.<br />8.  Dissociare la soluzione dal controllo del codice sorgente (tramite **Modifica controllo del codice sorgente** nella finestra di dialogo).<br />9. Selezione plug-in sottoposta a test nuovamente.<br />10. Ricaricare la soluzione dal disco se scaricato.<br />11. Associare la soluzione nel percorso originale (tramite il **Modifica controllo del codice sorgente** nella finestra di dialogo).|Soluzione viene aggiunta al controllo del codice sorgente usando il plug-in.|  
   

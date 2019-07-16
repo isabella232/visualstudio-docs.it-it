@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ef6e65c9d180119d9270c292e30e619d94836175
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154073"
 ---
 # <a name="collecting-additional-performance-data"></a>Raccolta di dati aggiuntivi relativi alle prestazioni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

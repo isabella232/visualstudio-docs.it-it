@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 58c5866e9aa78884aac89bbfab5894394116e79f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152188"
 ---
 # <a name="design-warnings"></a>Avvisi di progettazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Progettazione di avvisi supportano la conformità alle linee guida di progettazi
 |[CA1049: I tipi proprietari di risorse native devono essere disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)|I tipi che allocano risorse non gestite devono implementare IDisposable per consentire ai chiamanti di rilasciare quelle risorse su richiesta e ridurre la durata degli oggetti che le contengono.|  
 |[CA1050: Dichiarare i tipi negli spazi dei nomi](../code-quality/ca1050-declare-types-in-namespaces.md)|I tipi vengono dichiarati in spazi dei nomi per impedire conflitti di denominazione e per organizzare i tipi correlati in una gerarchia di oggetti.|  
 |[CA1051: Non dichiarare campi di istanza visibili](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)|L'utilizzo principale di un campo deve essere come dettaglio di implementazione. I campi devono essere privati o interni e devono essere esposti tramite proprietà.|  
-|[CA1052: I tipi statici devono essere sealed](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|Un tipo pubblico o protetto contiene solo membri statici e non è dichiarato con il modificatore NotInheritable (Visual Basic) o sealed (C#). Un tipo non adatto a essere ereditato deve essere contrassegnato utilizzando il modificatore sealed per impedire che venga utilizzato come tipo di base.|  
+|[CA1052: I tipi statici devono essere sealed](../code-quality/ca1052-static-holder-types-should-be-sealed.md)|Un tipo pubblico o protetto contiene solo membri statici e non è dichiarato con il modificatore NotInheritable (Visual Basic) o sealed (c#). Un tipo non adatto a essere ereditato deve essere contrassegnato utilizzando il modificatore sealed per impedire che venga utilizzato come tipo di base.|  
 |[CA1053: I tipi statici non devono avere costruttori](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)|Un tipo pubblico o annidato dichiara solo membri statici e presenta un costruttore predefinito pubblico o protetto. Il costruttore non è necessario perché la chiamata a membri statici non richiede un'istanza del tipo. A scopo di sicurezza e protezione, l'overload dei valori di stringa deve chiamare l'overload URI tramite l'argomento stringa.|  
 |[CA1054: I parametri URI non devono essere stringhe](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Se un metodo accetta una rappresentazione in forma di stringa di un URI, è necessario fornire un overload corrispondente che accetti un'istanza della classe URI che fornisce questi servizi in modo sicuro e protetto.|  
 |[CA1055: URI restituiscono valori non devono essere stringhe](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Questa regola presuppone che il metodo restituisca un URI. Una rappresentazione in forma di stringa di un URI è soggetta a errori di analisi e codifica e può creare vulnerabilità nella sicurezza. La classe System.Uri fornisce questi servizi in modo sicuro e protetto.|  

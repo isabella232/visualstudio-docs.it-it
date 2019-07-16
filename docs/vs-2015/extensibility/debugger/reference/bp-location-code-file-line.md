@@ -13,11 +13,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29fbb041a90118e7725ed3140e6583c7ac756a07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153476"
 ---
 # <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ typedef struct _BP_LOCATION_CODE_FILE_LINE { 
 } BP_LOCATION_CODE_FILE_LINE;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  `bstrContext`  
  Il contesto del punto di interruzione, in genere un nome di metodo o una funzione come visualizzato in uno stack di chiamate.  
   

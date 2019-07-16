@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3b77cfacf3dca2c2cc20d674f79929e9958a16d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58964877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155731"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; elemento (distribuzione ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ L'elemento di primo livello per il manifesto di distribuzione.
   
  L'elemento `assembly` presenta l'attributo seguente:  
   
-|Attributo|Descrizione|  
+|Attributo|DESCRIZIONE|  
 |---------------|-----------------|  
-|`manifestVersion`|Obbligatorio. Questo attributo deve essere impostato su `1.0`.|  
+|`manifestVersion`|Richiesto. Questo attributo deve essere impostato su `1.0`.|  
   
 ## <a name="example"></a>Esempio  
  L'esempio di codice seguente illustra un' `assembly` elemento in un manifesto di distribuzione per un'applicazione distribuita usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Questo esempio di codice è parte di un esempio più esaustivo disponibile per il [del manifesto della distribuzione ClickOnce](../deployment/clickonce-deployment-manifest.md) argomento.  

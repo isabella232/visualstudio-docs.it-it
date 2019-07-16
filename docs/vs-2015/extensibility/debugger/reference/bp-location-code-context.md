@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1d703a35c0b4e065bcf3515fe063c7620382666f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153488"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT { 
 } BP_LOCATION_CODE_CONTEXT;  
 ```  
   
-## <a name="members"></a>Membri  
+## <a name="members"></a>Members  
  pCodeContext  
  Il [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) che identifica la posizione del punto di interruzione nel codice.  
   

@@ -12,18 +12,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150338"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK del visualizzatore di concorrenza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con l'SDK del visualizzatore di concorrenza è possibile instrumentare il codice sorgente in modo che nel visualizzatore di concorrenza siano visualizzate informazioni aggiuntive. È possibile associare i dati aggiuntivi a fasi ed eventi nel codice. Queste visualizzazioni aggiuntive sono note come *marcatori*.  Per una procedura dettagliata introduttiva, vedere [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).(Introduzione all'SDK del visualizzatore di concorrenza).  
   
-## <a name="properties"></a>Proprietà  
+## <a name="properties"></a>Properties  
  Flag, span e messaggi hanno due proprietà: categoria e importanza. Nella finestra di dialogo [Impostazioni avanzate](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) è possibile usare queste proprietà per filtrare il set di marcatori visualizzati. Queste proprietà influiscono anche sulla rappresentazione visiva dei marcatori. Ad esempio, l'importanza è rappresentata dalla dimensione dei flag, mentre il colore viene usato per indicare la categoria.  
   
 ## <a name="basic-usage"></a>Utilizzo di base  

@@ -20,11 +20,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b800fbd2f39d75f110a059c70b87a203eb72e7d6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58955987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157679"
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>Procedura: Impostare il nome di un thread in codice gestito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

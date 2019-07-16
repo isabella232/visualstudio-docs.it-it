@@ -14,19 +14,19 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dd454873fb6a81e66efa99ed68007408f87ff824
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58955872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160502"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Specifica o meno il **Inserisci codice in file separati** casella di controllo è abilitata nel **Aggiungi nuovo elemento** nella finestra di dialogo.  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<SupportsCodeSeparation >  
   
 ## <a name="syntax"></a>Sintassi  

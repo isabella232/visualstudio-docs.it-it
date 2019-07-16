@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150665"
 ---
 # <a name="xml-schemas-dialog-box"></a>Finestra di dialogo Schemi XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Il **schemi XML** nella finestra di dialogo è possibile selezionare quali schem
  È possibile accedere la **schemi XML** finestra di dialogo facendo la **schemi** pulsante nella finestra delle proprietà del documento o selezionando **schemi** dal **XML** menu.  
   
 ## <a name="uielement-list"></a>Elenco UIElement  
- **Usare**  
+ **Uso**  
  Consente di selezionare la modalità di utilizzo di XML Schema.  
   
 - **Automatica**. Questo schema non è usato dal documento corrente ma è disponibile per l'associazione automatica. Se il documento XML dichiara uno spazio di nomi che corrisponde al `targetNamespace` di questo schema, lo schema viene automaticamente associato e incluso nel set di schemi.  

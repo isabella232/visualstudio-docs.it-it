@@ -14,11 +14,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155812"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Selezione e valuta nell'IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente di sviluppo integrat
 ## <a name="selection-context"></a>Contesto di selezione  
  Il [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalmente tiene traccia della valuta IDE nel proprio oggetto di contesto di selezione globale. Nella tabella seguente mostra gli elementi che costituiscono il contesto di selezione.  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |Gerarchia corrente.|In genere il progetto corrente. una gerarchia corrente di NULL indica che la soluzione nel suo complesso è corrente.|  
 |ID dell'elemento corrente|L'elemento selezionato all'interno della gerarchia corrente; Quando sono presenti le selezioni multiple in una finestra del progetto, possono esserci più elementi correnti.|  

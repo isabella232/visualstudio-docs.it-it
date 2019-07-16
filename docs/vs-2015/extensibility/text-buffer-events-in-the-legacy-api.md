@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58968581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186409"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Eventi nel Buffer di testo nell'API Legacy
+# <a name="text-buffer-events-in-the-legacy-api"></a>Eventi del buffer di testo nell'API legacy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Oggetto del buffer di testo genera vari eventi diversi che consentono di rispondere a situazioni diverse.  
@@ -27,7 +27,7 @@ Oggetto del buffer di testo genera vari eventi diversi che consentono di rispond
 ## <a name="text-buffer-interfaces"></a>Interfacce di Buffer di testo  
  Di seguito sono le interfacce implementate dall'oggetto del buffer di testo.  
   
-|Interfaccia|Descrizione|  
+|Interfaccia|DESCRIZIONE|  
 |---------------|-----------------|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Consente la creazione delle azioni composte (vale a dire, azioni che vengono raggruppate in un'unità di annullamento/ripristino singolo).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Abilita il salvataggio permanente dei dati del documento gestiti dal buffer di testo.|  
@@ -53,4 +53,4 @@ Oggetto del buffer di testo genera vari eventi diversi che consentono di rispond
   
 ## <a name="see-also"></a>Vedere anche  
  [L'accesso ai Buffer di testo usando l'API Legacy](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Procedura: Eseguire la registrazione per gli eventi nel Buffer di testo con l'API Legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Procedura: eseguire la registrazione per gli eventi del buffer di testo con l'API legacy](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
