@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204123"
 ---
-# <a name="how-to-register-editor-file-types"></a>Procedura: Registrare i tipi di File dell'Editor
+# <a name="how-to-register-editor-file-types"></a>Procedura: Registrare i tipi di file dell'editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il modo più semplice per registrare i tipi di file editor consiste nell'usare gli attributi di registrazione forniti come parte di [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] classi framework (MPF) del pacchetto gestito. Se si implementa il pacchetto in native [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], è anche possibile scrivere uno script del Registro di sistema che si registra un editor e agli interni associati.  

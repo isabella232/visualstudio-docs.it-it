@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824326"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891033"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Tipi di carattere e formattazione per Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> Il tipo di carattere ambiente
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formattazione di riferimento (ridimensionamento/mettere in grassetto)
  Alcune finestre di dialogo richiedono particolare testo in grassetto o una dimensione diversa da quella di tipo di carattere ambiente. In precedenza, i tipi di carattere maggiori di carattere ambiente fosse codificate come "`environment font +2`" o simili. Usando i frammenti di codice fornito supporterà i monitor ad alta risoluzione e assicurarsi che il testo di visualizzazione viene sempre visualizzata nel server di dimensioni corrette e peso (ad esempio, chiaro o Semilight).
 
-> **Nota: Prima di applicare la formattazione, verificare che si seguono le istruzioni disponibili nella [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Prima di applicare la formattazione, verificare che si seguono le istruzioni disponibili nella [stile del testo](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). * *
 
  Per ridimensionare il tipo di carattere ambiente, impostare lo stile del controllo TextBlock o etichetta come indicato. Ognuno di questi frammenti di codice, se usati correttamente, verrà generato il tipo di carattere corretto, incluse le varianti appropriate per le dimensioni e peso.
 
@@ -445,19 +446,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 14 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nel documento e dell'interfaccia utente<br />-Report<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 14pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 155%](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202 c_EF155")|
 
 #### <a name="133-environment-font"></a>Tipo di carattere ambiente 133%
 
 |||
 |-|-|
-|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 12 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|
+|**Utilizzo:**<br /><br /> -Più piccole sezioni in finestre di dialogo firma<br />-Sottotitoli inferiori nel documento e dell'interfaccia utente<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 12 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 133%](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202 d_EF133")|
 
 #### <a name="122-environment-font"></a>Tipo di carattere ambiente 122%
 
 |||
 |-|-|
-|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 11 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
+|**Utilizzo:**<br /><br /> -Intestazioni di sezione nelle finestre di dialogo firma<br />-Primi nodi nella visualizzazione ad albero<br />-Navigazione tramite tabulazione verticale<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:**<br /><br /> -Grassetto, corsivo o grassetto corsivo<br />-Usare per il corpo del testo<br />-Usare i controlli standard di Visual Studio<br />-Usare nelle finestre degli strumenti|**Viene visualizzata come:** 11 pt Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di intestazione del tipo di carattere ambiente 122%](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202 e_EF122")|
 
 #### <a name="environment-font--bold"></a>Tipo di carattere ambiente + grassetto
 
@@ -469,7 +470,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |||
 |-|-|
-|**Utilizzo:** Qualsiasi altro testo<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:** Corsivo in grassetto o corsivo|**Viene visualizzata come:** 9 pt Segoe UI<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|
+|**Utilizzo:** Qualsiasi altro testo<br /><br /> **Eseguire:** Caso d'uso di frase<br /><br /> **Non:** Corsivo in grassetto o corsivo|**Viene visualizzata come:** pt 9 Segoe interfaccia utente<br /><br /> **Esempio visivo:**<br /><br /> ![Esempio di tipo di carattere ambiente](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202 g_EF")|
 
 ### <a name="padding-and-spacing"></a>Spaziatura interna e la spaziatura
  Intestazioni richiedono spazio attorno a esse per concedere loro l'enfasi appropriato. Questo spazio varia a seconda delle dimensioni del punto e cos'altro è in prossimità di intestazione, ad esempio una regola orizzontale o di una riga di testo nel tipo di carattere ambiente.

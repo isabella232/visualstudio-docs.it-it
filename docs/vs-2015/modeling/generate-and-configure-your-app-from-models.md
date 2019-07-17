@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182847"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generare e configurare l'app da modelli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "60073488"
   
   Questo metodo può anche essere applicato in modo incrementale, ma ciò comporta maggiore impegno nelle fasi iniziali. Sarà infatti necessario scrivere il codice che leggerà il modello e configurare un framework che ne renda i valori accessibili alle parti variabili. La generalizzazione delle parti variabili è un approccio più dispendioso rispetto alla generazione di codice.  
   
-  Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche.  Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.  
+  Il livello di prestazioni garantito da un'applicazione generica è solitamente inferiore a quello delle controparti specifiche. Se le prestazioni sono cruciali, è opportuno che il piano del progetto includa una valutazione di questo rischio.  
   
 ## <a name="developing-a-derived-application"></a>Sviluppo di un'applicazione derivata  
  Per lo sviluppo di un'applicazione derivata potranno rivelarsi utili le linee guida descritte di seguito.  
@@ -72,7 +72,7 @@ ms.locfileid: "60073488"
   
 - **Generazione e interpretazione?** Se i requisiti per una particolare distribuzione sono destinati a cambiare di rado, generare il codice programma dal modello. Se è possibile che i requisiti cambino di frequente o che ne coesistano più varianti nella stessa distribuzione, scrivere l'applicazione in modo che possa leggere e interpretare un modello.  
   
-     Ad esempio, se si usa il modello del sito Web per sviluppare una serie di siti Web differenti e installati separatamente, sarà necessario generare il codice del sito dal modello.  Se, invece, si usa il modello per controllare un sito che cambia quotidianamente, sarà preferibile scrivere un server Web che legga il modello e che presenti il sito conformemente a tale modello.  
+     Ad esempio, se si usa il modello del sito Web per sviluppare una serie di siti Web differenti e installati separatamente, sarà necessario generare il codice del sito dal modello. Se, invece, si usa il modello per controllare un sito che cambia quotidianamente, sarà preferibile scrivere un server Web che legga il modello e che presenti il sito conformemente a tale modello.  
   
 - **UML o DSL?** Prendere in considerazione la creazione della notazione dei modelli tramite stereotipi per estendere UML. Definire un modello DSL se non si ha un diagramma UML appropriato. Evitare tuttavia di alterare la semantica standard di UML.  
   

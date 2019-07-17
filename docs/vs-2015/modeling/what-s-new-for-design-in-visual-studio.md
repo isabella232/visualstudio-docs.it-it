@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187127"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quali sono le novità relative alla progettazione in Visual Studio in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,12 +70,12 @@ Visual Studio 2015 è disponibile in diverse edizioni. Non tutte le forniscono i
 
 |**Funzionalità**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mappe codice**|Yes|Supporta solo la lettura e il filtraggio di mappe codice, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|-|
+|**Mappe codice**|Sì|Supporta solo la lettura e il filtraggio di mappe codice, aggiunta di nuovi nodi generici e la creazione di un grafico diretto da una selezione.|-|-|
 |**Diagrammi classi UML**|Yes|-|-|-|
-|**Diagrammi di sequenza UML**|Yes|-|-|-|
-|**Diagrammi caso d'uso UML**|Yes|-|-|-|
-|**Diagrammi attività UML**|Yes|-|-|-|
-|**Diagrammi dei componenti UML**|Yes|-|-|-|
-|**Diagrammi livello**|Yes|-|-|-|
-|**Grafici diretti** (diagrammi DGML)|Yes|Yes|-|-|
+|**Diagrammi di sequenza UML**|Sì|-|-|-|
+|**Diagrammi caso d'uso UML**|Sì|-|-|-|
+|**Diagrammi attività UML**|Sì|-|-|-|
+|**Diagrammi dei componenti UML**|Sì|-|-|-|
+|**Diagrammi livello**|Sì|-|-|-|
+|**Grafici diretti** (diagrammi DGML)|Sì|Yes|-|-|
 |**Clone di codice**|Yes|-|-|-|

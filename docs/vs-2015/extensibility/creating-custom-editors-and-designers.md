@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197417"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Creazione di finestre di progettazione ed editor personalizzati
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ L'ambiente di sviluppo integrato (IDE) di Visual Studio può ospitare diversi ti
      Se può essere incorporato, è necessario creare una finestra host per l'editor esterno e quindi chiamare il <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metodo e impostare il <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valore di enumerazione da `DP_External`. Se l'editor non può essere incorporato, l'IDE creerà automaticamente una finestra separata per tale.  
   
 ## <a name="in-this-section"></a>In questa sezione  
- [Procedura dettagliata: Creazione di un Editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Procedura dettagliata: creazione di un editor personalizzato](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Viene illustrato come creare un editor personalizzato.  
   
- [Procedura dettagliata: Aggiunta di funzionalità in un Editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Procedura dettagliata: aggiunta di funzionalità in un editor personalizzato](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Viene illustrato come aggiungere funzionalità a un editor personalizzato.  
   
  [Inizializzazione della finestra di progettazione e configurazione dei metadati](../extensibility/designer-initialization-and-metadata-configuration.md)  

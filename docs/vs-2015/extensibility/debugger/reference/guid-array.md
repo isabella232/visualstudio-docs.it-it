@@ -11,11 +11,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0465188cd44ad14ef3f7df9f5eda619a5ecb6d0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160107"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ public struct GUID_ARRAY
  dwCount  
  Numero di identificatori univoci nella matrice.  
   
- Membri  
+ Members  
  Matrice che contiene gli identificatori univoci.  
   
 ## <a name="remarks"></a>Note  

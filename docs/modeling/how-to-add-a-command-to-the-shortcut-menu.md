@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 372c30caa15ef8783aa1fead479087e7618e707b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442356"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890667"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedura: Aggiungere un comando al menu di scelta rapida
 
@@ -167,7 +167,8 @@ La classe del set di comandi è derivata da <xref:Microsoft.VisualStudio.Modelin
 
      `{ internal partial class Language1CommandSet { ...`
 
-     **Nota** se si usa il modello di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.
+     > [!NOTE]
+     > Se si usa il modello di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.
 
 Il codice del set di comandi deve in genere importare gli spazi dei nomi seguenti:
 
@@ -221,7 +222,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 I frammenti seguenti sono spesso utili nei metodi OnStatus:
 
-- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- [https://login.microsoftonline.com/common/](`this.CurrentSelection`). La forma su cui l'utente ha fatto clic con il pulsante destro del mouse è sempre inclusa in questo elenco. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
 - `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
 
@@ -330,11 +331,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Fare clic con il pulsante destro del mouse nel diagramma per verificare che il comando sia abilitato o disabilitato correttamente e visualizzato o nascosto in modo appropriato, a seconda dell'elemento selezionato.
 
-## <a name="troubleshoot"></a>Risolvere i problemi
+## <a name="troubleshoot"></a>Risolvere problemi
 
 **Comando non viene visualizzato nel menu:**
 
-- Il comando viene visualizzato solo nelle istanze di debug di Visual Studio, fino a quando si installa il pacchetto DSL. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md).
+- Il comando viene visualizzato solo nelle istanze di debug di Visual Studio, fino a quando si installa il pacchetto DSL. Per altre informazioni, vedere [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 - Assicurarsi che il codice di esempio sperimentale presenti l'estensione del nome file corretto per il DSL. Per controllare l'estensione del nome file, aprire DslDefinition.dsl nell'istanza principale di Visual Studio. In Esplora DSL, fare clic con il pulsante destro del mouse sul nodo Editor, quindi fare clic su Proprietà. Nella finestra Proprietà esaminare la proprietà FileExtension.
 
@@ -362,7 +363,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - [Scrittura di codice per personalizzare un linguaggio specifico di dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Procedura: Modificare un comando di menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [Distribuzione di soluzioni per un linguaggio specifico di dominio](../modeling/deploying-domain-specific-language-solutions.md)
+- [Distribuzione di soluzioni per un linguaggio specifico di dominio](msi-and-vsix-deployment-of-a-dsl.md)
 - [Codice di esempio: Elettrici](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

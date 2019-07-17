@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5aff88047d6b1f79544af927751d7a053eeda218
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152828"
 ---
 # <a name="event-descriptions"></a>Descrizioni di eventi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Ogni tipo di evento ha uno scopo specifico.
   
 ## <a name="events-and-the-reasons-for-their-use"></a>Gli eventi e i motivi per l'uso  
   
-|event|Descrizione|  
+|event|DESCRIZIONE|  
 |-----------|-----------------|  
 |Attivare gli eventi del documento|Si verificano quando il motore di debug (DE) richiede l'IDE per aprire o visualizzare un documento in primo piano.|  
 |Punto di interruzione associata o eventi di errore punto di interruzione|Inviato quando è associato un punto di interruzione o quando non è possibile associare un punto di interruzione e viene restituito un errore.|  

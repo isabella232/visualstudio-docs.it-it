@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: becbd47ca49f44a84a2f58be9f2185e3d61b099b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0ba4a5c52bf972236914c06ec9672653fbde9cea
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335329"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891050"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Immagini e icone per Visual Studio
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Uso di immagini in Visual Studio
@@ -23,7 +23,8 @@ ms.locfileid: "66335329"
 
 - **Le icone**. Immagini di piccole dimensioni che vengono visualizzati nei comandi, le gerarchie, modelli e così via. La dimensione di icona predefinita utilizzata in Visual Studio è un file 16x16 PNG. Icone generate automaticamente dal servizio image generano il formato XAML per il supporto HDPI.
 
-     **NOTA:** Mentre le immagini vengono usate nel sistema di menu, non è necessario creare un'icona per ogni comando. Consultare [menu e comandi per Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) per vedere se il comando deve visualizzare un'icona.
+    > [!NOTE]
+    > Mentre le immagini vengono usate nel sistema di menu, non è necessario creare un'icona per ogni comando. Consultare [menu e comandi per Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) per vedere se il comando deve visualizzare un'icona.
 
 - **Anteprime.** Immagini usate nell'area di anteprima di una finestra di dialogo, ad esempio la finestra di dialogo Nuovo progetto.
 
@@ -83,7 +84,7 @@ ms.locfileid: "66335329"
 |||
 |-|-|
 |**"Show"**|**"View"**|
-|![Show icon](../../extensibility/ux-guidelines/media/0404-07_show.png "0404-07_Show")|![Icona di visualizzazione](../../extensibility/ux-guidelines/media/0404-08_view.png "0404 08_View")|
+|![Mostra l'icona](../../extensibility/ux-guidelines/media/0404-07_show.png "0404 07_Show")|![Icona di visualizzazione](../../extensibility/ux-guidelines/media/0404-08_view.png "0404 08_View")|
 
  Il rivolta verso destra sottorappresentata sull'icona a forma deve rappresentare solo eseguire la ricerca, trovare e Sfoglia. La variante rivolta verso sinistra con il segno più o meno (-) deve rappresentare solo zoom avanti / zoom indietro.
 
@@ -114,7 +115,7 @@ ms.locfileid: "66335329"
 
  Icone di progetto sono in genere i file con estensione ico che contengono più dimensioni. La maggior parte delle 16x16 icone contengono gli stessi elementi. Le versioni di 32 x 32 includono informazioni dettagliate, incluso il tipo di progetto quando applicabile.
 
- ![Project icons in Visual Studio](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404-18_IconProjectThreeSizes")<br />Icone di progetto libreria di controlli Windows VB, 16 x 16 e 32 x 32
+ ![Icone in Visual Studio del progetto](../../extensibility/ux-guidelines/media/0404-18_iconprojectthreesizes.png "0404 18_IconProjectThreeSizes")<br />Icone di progetto libreria di controlli Windows VB, 16 x 16 e 32 x 32
 
  Centro di un'icona all'interno della cornice di pixel. Se ciò non è possibile, allineare l'icona nella parte superiore e/o a destra del frame.
 
@@ -268,7 +269,7 @@ ms.locfileid: "66335329"
 ### <a name="base-palette"></a>Tavolozza di base
  Tutte le icone standard contengono tre colori di base. Le icone non contengono alcun sfumature o ombreggiature, con una o due eccezioni per le icone dello strumento di 3D.
 
-|Utilizzo|Nome|Valore (con tema chiaro)|Campione|Esempio|
+|Utilizzo|Name|Valore (con tema chiaro)|Campione|Esempio|
 |-----------|----------|---------------------------|------------|-------------|
 |Sfondo/scuro|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Esempio di tavolozza di base](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|
 |In primo piano/leggera|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||
@@ -281,11 +282,11 @@ ms.locfileid: "66335329"
 #### <a name="action-modifiers"></a>Modificatori di azione
  I quattro colori riportato di seguito indicano i tipi di azioni necessarie per i modificatori di azione:
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Name|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Positivo|Visual Studio azione verde|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
-|Negativo|Visual Studio azione rosso|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
-|Lingua di sistema|Visual Studio azione blu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
+|Negativo|Visual Studio azione rosso|A1260D / 161,38,13|![Campione A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|
+|Lingua di sistema|Visual Studio azione blu|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |Crea/nuovo|Visual Studio azione arancione|C27D1A / 194,156,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 
 ##### <a name="examples"></a>Esempi
@@ -293,7 +294,7 @@ ms.locfileid: "66335329"
 
 |||||
 |-|-|-|-|
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Icona Esegui query](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Eseguire Query|![Tutti i passaggi icona Riproduci](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Riproduce tutti i passi|![Icona Aggiungi controllo](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Aggiungi controllo|
+|![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Esegui|![Icona Esegui query](../../extensibility/ux-guidelines/media/0405-04_executequery.png "0405 04_ExecuteQuery")<br />Eseguire Query|![Tutti i passaggi icona Riproduci](../../extensibility/ux-guidelines/media/0405-05_playallsteps.png "0405 05_PlayAllSteps")<br />Riproduce tutti i passi|![Icona Aggiungi controllo](../../extensibility/ux-guidelines/media/0405-06_addcontrol.png "0405 06_AddControl")<br />Aggiungi controllo|
 
  Rosso viene usato per i modificatori di azione negative, ad esempio "Delete", "Stop", "Annulla" e "Chiudi".
 
@@ -318,20 +319,20 @@ ms.locfileid: "66335329"
 
 ||||||
 |-|-|-|-|-|
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Esegui|![Stop icon](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405-19_Stop")<br />Arresta|![Icona di eliminazione](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Posizione precedente|
+|![Icona Esegui](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405 03_ActionModifierRun")<br />Esegui|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-19_stop.png "0405 19_Stop")<br />Arresto|![Icona di eliminazione](../../extensibility/ux-guidelines/media/0405-20_delete.png "0405 20_Delete")<br />Eliminare|![Icona Salva](../../extensibility/ux-guidelines/media/0405-21_save.png "0405 21_Save")<br />Salva|![Icona Esplora Indietro](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "0405 22_NavigateBack")<br />Posizione precedente|
 
 ### <a name="code-hierarchy-palette"></a>Riquadro gerarchia code
 
 #### <a name="folder"></a>Cartella
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|Esempio|
+|Utilizzo|NOME|Valore (tutti i temi)|Campione|Esempio|
 |-----------|----------|--------------------------|------------|-------------|
 |Cartelle|Cartella|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Icona della cartella colore](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|
 
 #### <a name="visual-studio-languages"></a>Linguaggi di Visual Studio
  Ogni i comuni linguaggi o piattaforme disponibili in Visual Studio è associato alcun colore. Vengono usati questi colori sull'icona di base, o sui modificatori di linguaggio che vengono visualizzati nell'angolo superiore destro delle icone composte.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Name|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |ASP, HTML, WPF|ASP HTML WPF blu|0095D7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|
 |C++|Viola CPP|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
@@ -339,7 +340,7 @@ ms.locfileid: "66335329"
 |CSS|Red CSS|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|
 |F#|FS viola|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|
 |JavaScript|JS arancione|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|
-|VB|VB Blue (blu azione di Visual Studio)|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
+|VB|VB Blue (blu azione di Visual Studio)|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |TypeScript|Servizi terminal arancione|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|
 |Python|PIA verde|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|
 
@@ -347,17 +348,17 @@ ms.locfileid: "66335329"
 
 |||||||
 |-|-|-|-|-|-|
-|![Visual Basic icon](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405-25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![JavaScript icon](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405-29_JavaScript")<br />JavaScript|![Icona di Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|
-|![Icona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![ASP icon](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405-33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
+|![Icona di Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icona](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Icona di JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Icona di Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|
+|![Icona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Icona di WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Icona di ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![CSS icon](../../extensibility/ux-guidelines/media/0405-34_css.png "0405-34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||
 
 #### <a name="intellisense"></a>IntelliSense
  Icone per IntelliSense utilizzano una tavolozza dei colori esclusivo. Tali colori vengono utilizzati per consentire agli utenti di distinguere rapidamente tra i diversi elementi nell'elenco popup di IntelliSense.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Utilizzo|NOME|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
 |Classe di evento,|Visual Studio azione arancione|C27D1A / 194,125,26|![Swatch C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|
 |Metodo di estensione, metodo, modulo, delegato|Visual Studio azione viola|652 90 D / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|
-|Campo, elemento di enumerazione, Macro, struttura, tipo di valore di unione, operatore, interfaccia|Visual Studio azione blu|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
+|Campo, elemento di enumerazione, Macro, struttura, tipo di valore di unione, operatore, interfaccia|Visual Studio azione blu|00539C / 0,83,156|![Campione 00539c](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|
 |Object|Visual Studio azione verde|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|
 |Costante, eccezioni, elemento di enumerazione, mappa, elemento della mappa, Namespace, modello di definizione dei tipi|In background (BG Visual Studio)|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|
 
@@ -371,10 +372,10 @@ ms.locfileid: "66335329"
 ### <a name="notifications"></a>Notifiche
  Le notifiche in Visual Studio vengono usate per indicare lo stato. La tavolozza di notifica utilizza i seguenti quattro colori, nonché le opzioni di riempimento colore nero o bianco in primo piano, per definire le notifiche con i seguenti livelli di stato.
 
-|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Utilizzo|Name|Valore (tutti i temi)|Campione|
 |-----------|----------|--------------------------|------------|
-|Stato: neutro|Notifica Blue (blu di Visual Studio)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
-|Stato: positiva|Notifica verde (verde Visual Studio)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
+|Stato: neutro|Notifica Blue (blu di Visual Studio)|1BA1E2 / 27,161,226|![Campione 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|
+|Stato: positiva|Notifica verde (verde Visual Studio)|339933 / 51,153,51|![Campione 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|
 |Stato: negativa|Notifica Red (rosso di Visual Studio)|E51400 / 229,20,0|![Swatch E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|
 |Stato: avviso|Notifica giallo (arancione Visual Studio)|FFCC00 / 255,204,0|![Swatch FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|
 |Riempimento di primo piano|Notifica nero (nero)|000000 / 0,0,0|![Swatch &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|
@@ -384,37 +385,37 @@ ms.locfileid: "66335329"
 
 |||||
 |-|-|-|-|
-|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Avviso|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Avviso|![Icona completato](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Operazione completata|![Stop icon](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405-47_Stop")<br />Arresta|
+|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-45_alert.png "0405 45_Alert")<br />Avviso|![Icona di avviso](../../extensibility/ux-guidelines/media/0405-48_warning.png "0405 48_Warning")<br />Avviso|![Icona completato](../../extensibility/ux-guidelines/media/0405-46_complete.png "0405 46_Complete")<br />Operazione completata|![Icona Arresta](../../extensibility/ux-guidelines/media/0405-47_stop.png "0405 47_Stop")<br />Arresto|
 
 ### <a name="visual-studio-online"></a>Visual Studio Online
  In generale, Visual Studio Online include funzionalità ospitate in un browser. Il colore varia in ambienti diversi, ma lo stile rimane invariato.
 
-|Raggruppa|Utilizzo|Nome|Valore (tutti i temi)|Campione|
+|Group|Utilizzo|Name|Valore (tutti i temi)|Campione|
 |-----------|-----------|----------|--------------------------|------------|
-|TFS|Sfondo|TFSO BG|656565/ 101, 101, 101|![Swatch 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
+|TFS|Sfondo|TFSO BG|656565/ 101, 101, 101|![Campione 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|
 |TFS|Contorno|TFSO OUT|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 |Napa|Sfondo|Bianco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 |Monaco|Sfondo|Bianco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
 |F12|Sfondo|Bianco|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|
-|F12|Normale|F12 Grey_Primary|555555 / 85, 85, 85|![Swatch 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|
+|F12|Normale|Grey_Primary F12|555555 / 85, 85, 85|![Campione 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|
 |F12|Passaggio del mouse|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|
-|F12|Disabilitato|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
+|F12|Disabled|LtGrey_Disabled F12|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|
 |F12|Dello sfondo al passaggio del mouse|Passare il mouse bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|
 |F12|Sfondo premuta|Bg premuto|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|
-|F12|Contorno|VS OUT|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|
+|F12|Contorno|VISUAL STUDIO OUT|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|
 |F12|Informazioni|Informazioni|00BCF2 / 0,188,242|![Campione 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|
 |F12|Avviso|Avviso|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|
-|F12|Errore / Negative|Error_Negative|E81123 / 232,17,35|![Swatch E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|
+|F12|Errore / Negative|Error_Negative|E81123 / 232,17,35|![Campione E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|
 |F12|Avviare / positivo|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|
 |F12|Tipo di interruzione|Tipo di interruzione|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|
 |F12|Contrassegno di eventi|Contrassegno di eventi|A51F00 / 165,31,0|![Swatch A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|
-|F12|Contrassegno utente|Contrassegno utente|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|
+|F12|Contrassegno utente|Contrassegno utente|F16220 / 241,98,32|![Campione F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|
 
 #### <a name="examples-of-visual-studio-online-icons"></a>Esempi di icone di Visual Studio Online
 
 |TFS Online||||
 |----------------|-|-|-|
-|![TFS Online team icon](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Team online|![TFS information icon](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405-50_TFSInformation")<br />Informazioni|![TFS history icon](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405-51_TFSHistory")<br />Cronologia|![TFS branch icon](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405-52_TFSBranch")<br />Branch|
+|![TFS Online team icon](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Team online|![Icona di informazioni TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Informazioni|![Icona cronologia TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Cronologia|![Icona del branch TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Branch|
 
 |Napa||||
 |----------|-|-|-|
@@ -422,7 +423,7 @@ ms.locfileid: "66335329"
 
 |Monaco||||
 |------------|-|-|-|
-|![Icona dei file Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />File|![Monaco Git icon](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405-58_MonacoGit")<br />Git|![Icona di ricerca Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Cerca|![Monaco text icon](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405-60_MonacoText")<br />Testo|
+|![Icona dei file Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />File|![Icona Git Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Icona di ricerca Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Cerca|![Icona di testo Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Text|
 
 |F12|||
 |---------|-|-|

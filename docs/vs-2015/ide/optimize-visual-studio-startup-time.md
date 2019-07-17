@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98d54f1e43090e8e1cacf8aecac9eebd18ffcbd7
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203796"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Ottimizzare il tempo di avvio di Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Se Visual Studio rileva un avvio lento, viene visualizzato un messaggio popup ch
 
 ![Gestisci prestazioni di Visual Studio -finestra popup](../ide/media/vside-perfdialog-popup.PNG "Gestisci prestazioni di Visual Studio - finestra popup")
 
-La finestra di dialogo **Gestisci prestazioni di Visual Studio** include due categorie: **Estensioni** e **Finestre degli strumenti**.
+Il **Gestisci prestazioni di Visual Studio** nella finestra di dialogo ha due categorie: **Le estensioni** e **dello strumento Windows**.
 
 ### <a name="control-extensions"></a>Controllare le estensioni
 Se un'estensione sta rallentando l'avvio di Visual Studio, essa viene visualizzata nella finestra di dialogo **Gestisci prestazioni di Visual Studio** quando si sceglie uno dei tipi di estensione. Se l'impatto sul tempo di avvio (indicato nella sezione **Impatto**) è eccessivamente elevato, è possibile scegliere di disabilitare sempre l'estensione all'avvio scegliendo il pulsante **Disabilita**. È possibile riabilitare l'estensione per le sessioni future mediante il Gestore estensioni o la finestra di dialogo Gestisci prestazioni di Visual Studio.
@@ -43,8 +43,8 @@ Oltre alle estensioni di avvio, è anche possibile disabilitare le estensioni ca
 ### <a name="control-tool-windows"></a>Controllare le finestre degli strumenti
 Se una finestra degli strumenti sta rallentando l'avvio di Visual Studio, è possibile scegliere di lasciare il comportamento predefinito (senza alcun vantaggio per la velocità di avvio) oppure ignorarlo scegliendo uno dei due comportamenti seguenti:
 
-- **Non visualizzare la finestra all'avvio:** se si sceglie questa opzione, la finestra degli strumenti specificata verrà sempre chiusa all'apertura di Visual Studio, anche se era stata lasciata aperta in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu.
-- **Nascondi automaticamente la finestra all'avvio:** se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, scegliendo questa opzione il gruppo della finestra degli strumenti viene compresso all'avvio per evitarne l'inizializzazione. Questa è una scelta ottimale se si usa spesso una finestra degli strumenti, poiché la finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
+- **Non visualizzare la finestra all'avvio:** Se si sceglie questa opzione, la finestra degli strumenti specificata verrà sempre chiusa all'apertura di Visual Studio, anche se lasciato aperto in una sessione precedente. È possibile aprire la finestra degli strumenti dal menu.
+- **Nascondi automaticamente la finestra all'avvio:** Se una finestra degli strumenti è stata lasciata aperta in una sessione precedente, questa opzione verrà compresso gruppo della finestra degli strumenti all'avvio per evitarne l'inizializzazione della finestra degli strumenti. Questa è una scelta ottimale se si usa spesso una finestra degli strumenti, poiché la finestra degli strumenti rimane disponibile senza compromettere il tempo di avvio di Visual Studio.
 
 ![Gestisci prestazioni di Visual Studio -finestre degli strumenti](../ide/media/vside-perfdialog-toolwindows.PNG "Gestisci prestazioni di Visual Studio - finestre degli strumenti")
 
