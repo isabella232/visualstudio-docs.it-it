@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 690ffff0aa31b90cea58997c982406a900299550
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957515"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826157"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Benvenuti all'IDE di Visual Studio | Python
 
@@ -27,16 +27,16 @@ L'*ambiente di sviluppo integrato (IDE)* di Visual Studio è un'area di avvio cr
 Questa immagine presenta Visual Studio con un progetto Python aperto e varie finestre degli strumenti di base che probabilmente verranno usate:
 
 - [**Esplora soluzioni**](../ide/solutions-and-projects-in-visual-studio.md) (in alto a destra) consente di visualizzare, esplorare e gestire i file del codice. **Esplora soluzioni** consente di organizzare il codice raggruppando i file in [soluzioni e progetti](/visualstudio/get-started/tutorial-projects-solutions).
-    - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
+  - Oltre a **Esplora soluzioni** è disponibile [**Ambienti Python**](managing-python-environments-in-visual-studio.md), in cui è possibile gestire i diversi interpreti Python installati nel computer.
 
-    ::: moniker range=">=vs-2019"
-    - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
-    ::: moniker-end
+  ::: moniker range=">=vs-2019"
+  - È anche possibile aprire ed eseguire codice Python in una cartella senza creare file di progetto e soluzione di Visual Studio. Per altre informazioni, vedere [Avvio rapido: Aprire ed eseguire il codice Python in una cartella](quickstart-05-python-visual-studio-open-folder.md).
+  ::: moniker-end
 
 - La [finestra dell'editor](../ide/writing-code-in-the-code-and-text-editor.md) (al centro), uno degli strumenti più utilizzati, visualizza il contenuto dei file. In questa finestra è possibile [modificare il codice Python](editing-python-code-in-visual-studio.md), spostarsi nella struttura del codice e impostare punti di interruzione durante le sessioni di debug. Con Python è anche possibile selezionare codice e premere CTRL+INVIO per eseguire il codice selezionato in una [finestra REPL interattiva](python-interactive-repl-in-visual-studio.md).
 
 - La finestra [Output](../ide/reference/output-window.md) (in basso al centro) è la finestra in cui Visual Studio invia le notifiche, ad esempio messaggi di errore e di debug, avvisi, messaggi di stato di pubblicazione e altro. Ogni messaggio viene visualizzato in una scheda separata.
-    - Una [finestra REPL interattiva di Python](python-interactive-repl-in-visual-studio.md) viene visualizzata nella stessa area della finestra Output.
+  - Una [finestra REPL interattiva di Python](python-interactive-repl-in-visual-studio.md) viene visualizzata nella stessa area della finestra Output.
 
 - [Team Explorer](/azure/devops/user-guide/work-team-explorer?view=vsts) (in basso a destra) consente di tenere traccia degli elementi di lavoro e di condividere il codice con altri utenti usando tecnologie di controllo della versione come [Git](https://git-scm.com/) e [Team Foundation Version Control (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts).
 
@@ -93,6 +93,10 @@ Le funzionalità più note di Visual Studio che offrono una maggiore produttivit
 
     A partire da Visual Studio 2019 è possibile aprire una cartella contenente codice Python per usufruire di funzionalità quali IntelliSense e debug, senza dover creare un progetto di Visual Studio per il codice.
 ::: moniker-end
+
+- [Collaborare usando Visual Studio](https://docs.microsoft.com/visualstudio/liveshare/use/vs)
+  
+    Visual Studio Live Share consente di modificare ed eseguire il debug in collaborazione con altri utenti in tempo reale, indipendentemente dal linguaggio di programmazione in uso o dai tipi di app che si sta creando. 
 
 - [Finestra REPL interattiva per Python](python-interactive-repl-in-visual-studio.md)
 
