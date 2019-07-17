@@ -3,17 +3,17 @@ title: Argomenti della riga di comando per Gestione contenuto della Guida
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824693"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825082"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argomenti della riga di comando per Gestione contenuto della Guida
 
@@ -56,7 +56,7 @@ La tabella seguente definisce le opzioni e gli argomenti che è possibile usare 
 |/skuId|No|Specifica il codice di riferimento del prodotto (SKU) dall'origine dell'installazione e filtra i libri identificati dall'opzione /SourceURI.|
 |/membership|No|-   **Minimum**: installa un set minimo del contenuto della Guida in base allo SKU specificato usando l'opzione /skuId. Il mapping tra lo SKU e il set del contenuto viene esposto nell'API del servizio.<br />-   **Recommended**: installa un set di libri consigliati per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file con estensione *msha*.<br />-   **Full**: installa l'intero set di libri per lo SKU specificato usando l'argomento /skuId. L'origine dell'installazione è l'API del servizio o il file con estensione *msha*.|
 |/locationpath|No|Specifica la cartella predefinita per il contenuto della Guida locale. Questa opzione deve essere usata solo per installare o rimuovere il contenuto. Se si specifica questa opzione, è necessario specificare anche l'opzione /silent.|
-|/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory *%Temp%*. **Importante:**  Per installare automaticamente il contenuto, è necessario usare file *CAB* con firma digitale, non file *mshc*.|
+|/silent|No|Installa o rimuove il contenuto della Guida senza chiedere conferma all'utente o visualizzare l'interfaccia utente, nemmeno l'icona nell'area di notifica dello stato. L'output viene registrato in un file nella directory *%Temp%* . **Importante:**  Per installare automaticamente il contenuto, è necessario usare file *CAB* con firma digitale, non file *mshc*.|
 |/launchingApp|No|Definisce il contesto dell'applicazione e del catalogo quando viene avviato il visualizzatore della Guida senza l'applicazione padre. Gli argomenti per questa opzione sono *CompanyName*, *ProductName* e *VersionNumber* (ad esempio `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Questa opzione è necessaria per l'installazione del contenuto con il parametro /silent.|
 |/wait *secondi*|No|Sospende le operazioni di installazione, disinstallazione e aggiornamento. Se un'operazione è già in corso per il catalogo, il processo attenderà il numero specificato di secondi per continuare. Usare 0 per restare in attesa in modo indefinito.|
 |/?|No|Elenca le opzioni e le relative descrizioni per lo strumento da riga di comando per Gestione contenuto della Guida.|

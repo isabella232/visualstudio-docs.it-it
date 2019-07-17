@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459197"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824619"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedura: Esportare una trama da usare con app Direct2D o Javascript
 
@@ -25,11 +25,11 @@ Questo documento illustra le attività seguenti:
 
 - Configurazione della pipeline di contenuti immagine per generare una trama che è possibile usare in un'app JavaScript o Direct2D.
 
-    - Generare un file con estensione *dds* compresso a blocchi.
+  - Generare un file con estensione *dds* compresso a blocchi.
 
-    - Generare il valore alfa premoltiplicato.
+  - Generare il valore alfa premoltiplicato.
 
-    - Disabilitare la generazione di mipmap.
+  - Disabilitare la generazione di mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Convenzioni di rendering in Direct2D
 
@@ -39,11 +39,11 @@ Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni 
 
 - La trama deve essere specificata in formato *dds*, usando uno dei formati di compressione a blocchi seguenti:
 
-   - Compressione BC1_UNORM
+  - Compressione BC1_UNORM
 
-   - Compressione BC2_UNORM
+  - Compressione BC2_UNORM
 
-   - Compressione BC3_UNORM
+  - Compressione BC3_UNORM
 
 - Le mipmap non sono supportate.
 
@@ -58,9 +58,9 @@ Le trame usate nel contesto di Direct2D devono essere conformi alle convenzioni 
    > [!NOTE]
    > Il formato di compressione specificato determina il formato del file generato dalla pipeline di contenuti immagine. Questo si differenzia dalla proprietà **Formato** dell'immagine di origine nell'editor di immagini, che determina il formato del file di immagine di origine così com'è archiviato su disco, ovvero il *formato di lavoro*. In genere, non è consigliabile usare un formato di lavoro compresso.
 
-4. Configurare la pipeline di contenuti immagine in modo da generare output che usa il valore alfa premoltiplicato. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale**, impostare la proprietà **Convert to pre-multiplied alpha format** (Converti in formato alfa premoltiplicato) su **Sì (/generatepremultipliedalpha)**.
+4. Configurare la pipeline di contenuti immagine in modo da generare output che usa il valore alfa premoltiplicato. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale**, impostare la proprietà **Convert to pre-multiplied alpha format** (Converti in formato alfa premoltiplicato) su **Sì (/generatepremultipliedalpha)** .
 
-5. Configurare la pipeline di contenuti immagine in modo che non generi mipmap. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)** > **Generale** impostare la proprietà **Genera MIP** su **No**.
+5. Configurare la pipeline di contenuti immagine in modo che non generi mipmap. Nella pagina **Proprietà di configurazione** > **Image Content Pipeline (Pipeline di contenuti immagine)**  > **Generale** impostare la proprietà **Genera MIP** su **No**.
 
 6. Fare clic sul pulsante **OK** .
 

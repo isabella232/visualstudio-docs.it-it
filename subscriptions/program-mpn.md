@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Dettagli su sottoscrizioni offerte, regole applicate e numero di sottoscrizioni disponibili in MPN.
-searchscope: VS Subscription
-ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 133b9561b6276329e17104b17f0687172b94a574
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805297"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250664"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Sottoscrizioni di Visual Studio offerte ai partner in Microsoft Partner Network (MPN)
 I partner che guadagnano una competenza o che acquistano Action Pack in MPN sono idonei per usare le sottoscrizioni di Visual Studio. Queste sottoscrizioni sono concesse in licenza per singolo utente e sono valide solo quando vengono assegnate a un utente denominato specifico che lavora per la società partner.
@@ -47,7 +46,7 @@ Indipendentemente dal numero di competenze ottenute da un partner, il numero di 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Sottoscrizioni per i partner che acquistano Action Pack
 I partner con una competenza non sono idonei per l'acquisto di Action Pack. Ogni partner può acquistare un solo Action Pack.
 
-Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professional (MPN)**. Visual Studio Professional (MPN) è un'offerta personalizzata senza un equivalente disponibile in commercio sul mercato. Ecco cosa include:
+Con Action Pack il partner ottiene **3 sottoscrizioni di Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) è un'offerta personalizzata senza un equivalente disponibile in commercio sul mercato. Ecco cosa include:
 - Visual Studio Professional - solo l'ultima versione
 - Windows Enterprise - solo l'ultima versione, da usare solo per sviluppo e test
 - Windows Server - solo l'ultima versione, da usare solo per sviluppo e test

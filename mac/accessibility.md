@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985267"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824453"
 ---
 # <a name="accessibility"></a>Accessibilità
 
@@ -62,9 +62,9 @@ I comandi di VoiceOver sono riportati in questa guida come **VO+*tasto***, dove 
 Per spostarsi all'interno dell'interfaccia utente di Visual Studio per Mac, usare le combinazioni di tasti seguenti:
 
 - **VO+DESTRA/SINISTRA**: spostarsi tra gli elementi dell'interfaccia utente
-    - VoiceOver pronuncerà l'etichetta e il tipo di controllo e descriverà come interagire con tale controllo.
+  - VoiceOver pronuncerà l'etichetta e il tipo di controllo e descriverà come interagire con tale controllo.
 - **VO+MAIUSC+GIÙ/SU**: passare a/da un elemento
-    - Una volta all'interno di un elemento, è possibile usare **VO+SINISTRA/DESTRA** per spostarsi tra gli elementi in esso contenuti.
+  - Una volta all'interno di un elemento, è possibile usare **VO+SINISTRA/DESTRA** per spostarsi tra gli elementi in esso contenuti.
 - **VO+BARRA SPAZIATRICE**: selezionare/interagire con un controllo
 - **VO+M**: interagire con la barra dei menu di Visual Studio per Mac
 

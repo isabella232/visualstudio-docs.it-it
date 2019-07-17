@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442247"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825675"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedura: Sospendere e riprendere la raccolta dei dati sulle prestazioni
 Dalla finestra pagina della sessione di profilatura è possibile controllare interattivamente la raccolta dei dati di profilatura.
@@ -31,11 +31,11 @@ Dalla finestra pagina della sessione di profilatura è possibile controllare int
 
 - Nella pagina della sessione di profilatura:
 
-    - Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.
+  - Scegliere **Sospendere la raccolta** per sospendere la raccolta dei dati.
 
-    - Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.
+  - Scegliere **Riprendere la raccolta** per riavviare la raccolta dei dati dopo che è stata sospesa.
 
-    - Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.
+  - Scegliere **Interrompere la profilatura** per terminare la sessione di profilatura e generare i rapporti.
 
 ## <a name="see-also"></a>Vedere anche
 - [Controllare la raccolta dati](../profiling/controlling-data-collection.md)

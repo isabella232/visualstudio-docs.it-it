@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950417"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824805"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizzare le impostazioni di Visual Studio in più computer
 
@@ -31,19 +31,19 @@ Per impostazione predefinita, vengono sincronizzate le impostazioni seguenti:
 
 - Le opzioni seguenti nelle pagine **Strumenti** > **Opzioni**:
 
-   - Impostazioni del tema e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente** > **Generale**.
+  - Impostazioni del tema e di maiuscole e minuscole nella barra dei menu nella pagina delle opzioni **Ambiente** > **Generale**.
 
-   - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Tipi di carattere e colori**.
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Tipi di carattere e colori**.
 
-   - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente** > **Tastiera**.
+  - Tutti i tasti di scelta rapida nella pagina delle opzioni **Ambiente** > **Tastiera**.
 
-   - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Schede e finestre**.
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Schede e finestre**.
 
-   - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Avvio**.
+  - Tutte le impostazioni nella pagina delle opzioni **Ambiente** > **Avvio**.
 
-   - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-quick-actions.md).
+  - Tutte le impostazioni nella pagina delle opzioni **Editor di testo**, ad esempio le [preferenze di stile per il codice](code-styles-and-code-cleanup.md).
 
-   - Tutte le impostazioni nelle pagine delle opzioni della **finestra di progettazione XAML**.
+  - Tutte le impostazioni nelle pagine delle opzioni della **finestra di progettazione XAML**.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Disattivare le impostazioni sincronizzate per un computer specifico
 

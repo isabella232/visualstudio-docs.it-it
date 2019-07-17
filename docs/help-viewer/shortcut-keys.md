@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975613"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821966"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Tasti di scelta rapida in Help Viewer
 
@@ -59,7 +59,7 @@ ms.locfileid: "62975613"
 |Argomento|**CTRL**+**TAB**|Passare da una scheda all'altra da sinistra a destra.|
 |Argomento|**CTRL**+**MAIUSC**+**TAB**|Passare da una scheda all'altra da destra a sinistra.|
 |Argomento|**CTRL**+**W**|Chiudere la scheda corrente.|
-|Argomento|**CTRL**+**_numero_**|Passare a una scheda specifica in cui **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
+|Argomento|**CTRL**+ **_numero_**|Passare a una scheda specifica in cui **_numero_** è compreso tra 1 e 9 e indica la scheda in sequenza.|
 |Argomento|**CTRL**+**ALT**+**F4**|Chiudere le altre schede del contenuto.|
 |Argomento|**CTRL**+**MAIUSC**+**segno più**|Aumentare lo zoom del 10%.|
 |Argomento|**CTRL**+**segno meno**|Ridurre lo zoom del 10%.|

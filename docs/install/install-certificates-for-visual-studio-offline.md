@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974735"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826289"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installare i certificati necessari per l'installazione offline di Visual Studio
 
@@ -135,20 +135,20 @@ Se si sta eseguendo lo scripting di distribuzione di Visual Studio in un ambient
 I tre file con estensione P12 in questa cartella contengono ognuno un certificato intermedio e un certificato radice. La maggior parte dei sistemi mantenuti aggiornati con Windows Update ha già installato questi certificati.
 
 * **ManifestSignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Code Signing PCA 2011**
-        * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
-    * Certificato radice: **Microsoft Root Certificate Authority 2011**
-        * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
+  * Certificato intermedio: **Microsoft Code Signing PCA 2011**
+    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+  * Certificato radice: **Microsoft Root Certificate Authority 2011**
+    * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **ManifestCounterSignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
-        * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
-    * Certificato radice: **Microsoft Root Certificate Authority 2010**
-        * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
+  * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
+    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+  * Certificato radice: **Microsoft Root Certificate Authority 2010**
+    * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **Vs_installer_opc. SignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Code Signing PCA**
-        * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
-    * Certificato radice: **Microsoft Root Certificate Authority**
-        * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
+  * Certificato intermedio: **Microsoft Code Signing PCA**
+    * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
+  * Certificato radice: **Microsoft Root Certificate Authority**
+    * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
 **Aggiornamento**: per Visual Studio 2017 versione 15.8 Preview 2 o versioni successive, il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema.
 
@@ -157,20 +157,20 @@ I tre file con estensione P12 in questa cartella contengono ognuno un certificat
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Code Signing PCA 2011**
-        * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
-    * Certificato radice: **Microsoft Root Certificate Authority 2011**
-        * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
+  * Certificato intermedio: **Microsoft Code Signing PCA 2011**
+    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+  * Certificato radice: **Microsoft Root Certificate Authority 2011**
+    * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **ManifestCounterSignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
-        * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
-    * Certificato radice: **Microsoft Root Certificate Authority 2010**
-        * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
+  * Certificato intermedio: **Microsoft Time-Stamp PCA 2010**
+    * Non richiesto Se presente, migliora le prestazioni in alcuni scenari.
+  * Certificato radice: **Microsoft Root Certificate Authority 2010**
+    * Obbligatorio per i sistemi Windows 7 Service Pack 1 in cui non sono installati gli ultimi aggiornamenti di Windows Updates.
 * **Vs_installer_opc. SignCertificates.p12** contiene:
-    * Certificato intermedio: **Microsoft Code Signing PCA**
-        * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
-    * Certificato radice: **Microsoft Root Certificate Authority**
-        * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
+  * Certificato intermedio: **Microsoft Code Signing PCA**
+    * Obbligatorio per tutti i sistemi. Si noti che i sistemi in tutti gli aggiornamenti sono stati applicati da Windows Update potrebbero non disporre di questo certificato.
+  * Certificato radice: **Microsoft Root Certificate Authority**
+    * Obbligatorio. Questo certificato viene fornito con i sistemi che eseguono Windows 7 o versione successiva.
 
 Il programma di installazione di Visual Studio richiede l'installazione dei soli certificati radice nel sistema.
 
@@ -188,7 +188,7 @@ Un modo per eseguire questa verifica nel sistema di installazione corrisponde al
   a. Fare clic su **File** e scegliere **Aggiungi/Rimuovi snap-in**.<br/>
   b. Fare doppio clic su **Certificati**, selezionare l'**account computer** e fare clic su **Avanti**.<br/>
   c. Selezionare **Computer locale**, fare clic su **Fine** e fare clic su **OK**.<br/>
-  d. Espandere **Certificati (computer locale)**.<br/>
+  d. Espandere **Certificati (computer locale)** .<br/>
   e. Espandere **Autorità di certificazione radice attendibili** e selezionare **Certificati**.<br/>
     * Controllare in questo elenco i certificati radice necessari.<br/>
 

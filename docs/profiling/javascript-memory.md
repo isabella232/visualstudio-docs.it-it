@@ -20,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d41fbe3233c3564af5cab93c8adfeaa7cc3bc24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: d210dba035c53ba5574bb470247db8b6714a5c97
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446299"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826104"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analizzare l'utilizzo della memoria di JavaScript nelle app UWP
 JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi dell'uso della memoria e il rilevamento delle perdite di memoria nelle app UWP create per Windows con JavaScript. Le app supportate includono le app di Windows universali.
@@ -255,14 +255,14 @@ JavaScript Memory Analyzer, disponibile in Visual Studio, favorisce l'analisi de
 
   Per filtrare le informazioni sulle differenze tra gli snapshot, scegli uno dei filtri **Ambito** nella parte superiore delle visualizzazioni delle differenze.
 
-- **Oggetti rimasti dallo snapshot #\<numero>**. Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.
+- **Oggetti rimasti dallo snapshot #\<numero>** . Questo filtro mostra la differenze tra gli oggetti aggiunti all'heap e quelli rimossi dall'heap rispetto allo snapshot della linea di base e allo snapshot precedente. Ad esempio, se il conteggio oggetti nel riepilogo dello snapshot indica +205 / -195, questo filtro consente di visualizzare i dieci oggetti che sono stati aggiunti ma non rimossi.
 
   > [!TIP]
   > Per mostrare le informazioni più utili in questo filtro, segui la procedura descritta in [Isolate a memory leak](#isolate-a-memory-leak).
 
-- **Oggetti aggiunti tra lo snapshot #\<numero> e #\<numero>**. Questo filtro mostra tutti gli oggetti aggiunti all'heap rispetto allo snapshot precedente.
+- **Oggetti aggiunti tra lo snapshot #\<numero> e #\<numero>** . Questo filtro mostra tutti gli oggetti aggiunti all'heap rispetto allo snapshot precedente.
 
-- **Tutti gli oggetti nello snapshot #\<numero>**. Con questa impostazione di filtro non viene escluso nessuno oggetto sull'heap.
+- **Tutti gli oggetti nello snapshot #\<numero>** . Con questa impostazione di filtro non viene escluso nessuno oggetto sull'heap.
 
   Per mostrare riferimenti a oggetti non corrispondenti al filtro **Ambito** corrente, selezionare **Mostra riferimenti non corrispondenti** nell'elenco delle impostazioni ![elenco a discesa Impostazioni in Memory Analyzer](../profiling/media/js_mem_settings.png "JS_Mem_Settings") nell'angolo in alto a destra del riquadro. Se abiliti questa impostazioni, i riferimenti non corrispondenti saranno visualizzati in testo grigio.
 
@@ -355,11 +355,11 @@ if (performance && performance.mark) {
 
 - Cercare gli oggetti mantenuti inavvertitamente in memoria dopo che l'utente è passato a un'altra pagina, una causa comune dei problemi di memoria. Ad esempio:
 
-    - L'uso non corretto della funzione [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) può causare questo problema.
+  - L'uso non corretto della funzione [URL.CreateObjectUrl](https://developer.mozilla.org/docs/Web/API/URL/createObjectURL) può causare questo problema.
 
-    - Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.
+  - Con alcuni oggetti viene fornito un metodo `dispose` , oltre a consigli per l'uso. Ad esempio, è necessario chiamare `dispose` in un oggetto [WinJS.Binding.List](/previous-versions/windows/apps/hh700774\(v\=win.10\)) se si chiama il metodo `createFiltered` dell'elenco e quindi si esce dalla pagina.
 
-    - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
+  - Potrebbe essere necessario rimuovere uno o più listener di eventi. Per altre informazioni, vedi [View DOM event listeners](/visualstudio/debugger/quickstart-debug-html-and-css).
 
 - Guardare l'ultima parte di [questo video](https://channel9.msdn.com/Events/Build/2013/3-316) della conferenza Build 2013 su JavaScript Memory Analyzer.
 
@@ -367,8 +367,8 @@ if (performance && performance.mark) {
 
 - Considerare la possibilità di modificare temporaneamente il codice per isolare i problemi. Può, ad esempio, essere necessario:
 
-    - Usare i comandi per l'analizzatore di memoria, `console.takeSnapshot` e `performance.mark`. Per informazioni, vedere [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).
+  - Usare i comandi per l'analizzatore di memoria, `console.takeSnapshot` e `performance.mark`. Per informazioni, vedere [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data).
 
-         Questi comandi consentono di isolare i problemi che non possono essere isolati acquisendo manualmente uno snapshot heap.
+    Questi comandi consentono di isolare i problemi che non possono essere isolati acquisendo manualmente uno snapshot heap.
 
-    - Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.
+  - Creare un oggetto test e analizzarlo nelle visualizzazioni di JavaScript Memory Analyzer, ad esempio la visualizzazione Tipi. Ad esempio, puoi collegare un oggetto di grandi dimensioni a un altro oggetto per vedere se un oggetto o un elemento specifico è stato sottoposto a Garbage Collection.

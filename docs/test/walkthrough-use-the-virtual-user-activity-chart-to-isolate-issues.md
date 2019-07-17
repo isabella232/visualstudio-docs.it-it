@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976214"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825778"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procedura dettagliata: Uso del grafico attività utente virtuale per isolare i problemi
 
@@ -30,9 +30,9 @@ Il Grafico attività utente virtuale consente di visualizzare l'attività degli 
 
 - Completare queste procedure:
 
-    - [Registrare ed eseguire un test prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+  - [Registrare ed eseguire un test prestazioni Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    - [Creare ed eseguire un test di carico](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Creare ed eseguire un test di carico](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Aprire la soluzione ColorWebApp creata nelle procedure dettagliate precedenti
 
@@ -69,7 +69,7 @@ Dopo aver eseguito il test di carico e raccolto i dati dell'attività utente vir
 
 3. Nello strumento **Zoom periodo di tempo** in **Grafico attività utente virtuale** regolare i dispositivi di scorrimento sinistro e destro fino a che entrambi non saranno vicini all'icona di violazione di soglia. In questo modo viene modificata la scala temporale nel **Grafico attività utente virtuale**
 
-4. In **Legenda dettagli** selezionare la casella di controllo per **(Evidenzia errori)**. Notare che l'utente virtuale che provocato la violazione di soglia è evidenziato.
+4. In **Legenda dettagli** selezionare la casella di controllo per **(Evidenzia errori)** . Notare che l'utente virtuale che provocato la violazione di soglia è evidenziato.
 
 5. Nel pannello **Risultati filtro** deselezionare le caselle di controllo per **Mostra risultati corretti** e **Errore HTTP** ma lasciare la casella di controllo **Errore regola di convalida** selezionata.
 
