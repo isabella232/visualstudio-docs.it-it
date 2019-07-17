@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fc263d7238166f4f381bac35f0482ca2433f7b33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150484"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDiaSectionContrib : IUnknown
 ## <a name="methods-in-vtable-order"></a>Metodi nell'ordine Vtable  
  Nella tabella seguente sono illustrati i metodi di `IDiaSectionContrib`.  
   
-|Metodo|Descrizione|  
+|Metodo|DESCRIZIONE|  
 |------------|-----------------|  
 |[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|Recupera un riferimento al simbolo di compilando che hanno contribuito di questa sezione.|  
 |[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|Recupera la parte della sezione dell'indirizzo del contributo.|  

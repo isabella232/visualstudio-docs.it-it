@@ -13,21 +13,21 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204341"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (estensione della Creazione guidata modelli di Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il nome completo della classe che implementa il `IWizard` interfaccia.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<WizardExtension >  
  ...  
- \<FullClassName>  
+ \<FullClassName >  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -46,7 +46,7 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
   
 ### <a name="parent-elements"></a>Elementi padre  
   
-|Elemento|Descrizione|  
+|Elemento|DESCRIZIONE|  
 |-------------|-----------------|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contiene gli elementi di registrazione per la creazione guidata modello di personalizzazione.|  
   
@@ -92,4 +92,4 @@ Il nome completo della classe che implementa il `IWizard` interfaccia.
 ## <a name="see-also"></a>Vedere anche  
  [Riferimenti allo schema dei modelli di Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Creazione di modelli di progetti e di elementi](../ide/creating-project-and-item-templates.md)   
- [Procedura: Usare le procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Procedura: usare procedure guidate con modelli di progetto](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -20,13 +20,13 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153841"
 ---
-# <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto di pacchetto
+# <a name="how-to-create-a-package-manifest"></a>Procedura: Creare un manifesto del pacchetto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Per distribuire i prerequisiti per l'applicazione, è possibile usare un pacchetto di programma di avvio automatico. Un pacchetto bootstrapper contiene un file manifesto singolo prodotto ma un manifesto di pacchetto per ogni impostazione locale. Le funzionalità condivise tra le versioni localizzate che devono essere inserite il manifesto del prodotto.  

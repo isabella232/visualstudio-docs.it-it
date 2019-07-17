@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199965"
 ---
 # <a name="the-text-template-transformation-process"></a>Processo di trasformazione del modello di testo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Il processo di trasformazione del modello testo accetta un file di modello di te
   
 |Componente|Descrizione|Personalizzabile (Sì/No)|  
 |---------------|-----------------|------------------------------|  
-|Motore|Il componente del motore consente di controllare il processo di trasformazione del modello testo|No.|  
+|Engine (Motore)|Il componente del motore consente di controllare il processo di trasformazione del modello testo|No.|  
 |Host|L'host è l'interfaccia tra il motore e l'ambiente utente. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] è un host del processo di trasformazione del testo.|Sì. È possibile scrivere un host personalizzato.|  
 |Processori di direttiva|Processori di direttiva sono classi che gestiscono le direttive nei modelli di testo. È possibile utilizzare le direttive per fornire dati a un modello di testo da un'origine di input.|Sì. È possibile scrivere processori di direttiva personalizzati|  
   

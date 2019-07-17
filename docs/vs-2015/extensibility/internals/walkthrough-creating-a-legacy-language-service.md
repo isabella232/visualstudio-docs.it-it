@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 56323447d1d4134939c8fd7550778d2c946bfe19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68144403"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>Procedura dettagliata: Creazione di un servizio di linguaggio legacy
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ Utilizzando le classi di linguaggio framework (MPF) di pacchetto gestito per imp
   
      È possibile usare qualsiasi nome desiderato. Queste procedure descritti in questa sezione presuppongono MyLanguagePackage come nome.  
   
-3. Selezionare [!INCLUDE[csprcs](../../includes/csprcs-md.md)] come il linguaggio e l'opzione per generare un nuovo file di chiave. Scegliere **Avanti**.  
+3. Selezionare [!INCLUDE[csprcs](../../includes/csprcs-md.md)] come il linguaggio e l'opzione per generare un nuovo file di chiave. Fare clic su **Avanti**.  
   
-4. Immettere le informazioni aziendali e pacchetto appropriate. Scegliere **Avanti**.  
+4. Immettere le informazioni aziendali e pacchetto appropriate. Fare clic su **Avanti**.  
   
-5. Selezionare **comando di Menu**. Scegliere **Avanti**.  
+5. Selezionare **comando di Menu**. Fare clic su **Avanti**.  
   
      Se non si intende supportare frammenti di codice, è possibile semplicemente fare clic su Fine e ignorare il passaggio successivo.  
   

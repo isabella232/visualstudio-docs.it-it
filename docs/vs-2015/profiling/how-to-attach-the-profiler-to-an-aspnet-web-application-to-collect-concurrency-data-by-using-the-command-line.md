@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179274"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedura: Connettere il Profiler a un'applicazione Web ASP.NET per raccogliere dati di concorrenza tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
    - L'opzione [/start](../profiling/start.md) consente di inizializzare il profiler per la raccolta dei dati su conflitti tra risorse.  
 
-   - L'opzione [/output](../profiling/output.md)**:**`OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).  
+   - L'opzione [/output](../profiling/output.md) **:** `OutputFile` è obbligatoria con **/start**. `OutputFile` specifica il nome e il percorso del file dei dati di profilatura (con estensione vsp).  
 
      È possibile usare qualsiasi opzione nella tabella seguente con l'opzione **/start**.  
 
    |                               Opzione                               |                                                                     Descrizione                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain\`]`UserName` |                           Specifica il dominio facoltativo e il nome utente dell'account a cui concedere l'accesso al profiler.                           |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain\`]`UserName` |                           Specifica il dominio facoltativo e il nome utente dell'account a cui concedere l'accesso al profiler.                           |
    |           [/crosssession](../profiling/crosssession.md)            |                                               Abilita la profilatura dei processi in altre sessioni di accesso.                                                |
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Specifica un contatore delle prestazioni di Windows per cui raccogliere i dati durante la profilatura.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Usare solo con **/wincounter**. Specifica il numero di millisecondi tra gli eventi di raccolta dei dati dei contatori delle prestazioni di Windows. Il valore predefinito è 500. |
@@ -49,7 +49,7 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
 2. Avviare l'applicazione ASP.NET nel modo usuale.  
 
-3. Connettere il profiler al processo di lavoro ASP.NET digitando il comando seguente: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
+3. Connettere il profiler al processo di lavoro ASP.NET digitando il comando seguente: **VSPerfCmd /attach:** `PID` [ **/targetclr:** `Version`]  
 
    - `PID` specifica l'ID o il nome del processo di lavoro ASP.NET. È possibile visualizzare gli ID di processo di tutti i processi in esecuzione in Gestione attività di Windows.  
 
@@ -64,9 +64,9 @@ Questo argomento descrive come usare gli strumenti da riga di comando disponibil
 
     |Opzione|Descrizione|  
     |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia (**/globalon**) o interrompe (**/globaloff**) la raccolta dei dati per tutti i processi.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia (**/processon**) o interrompe (**/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Avvia ( **/globalon**) o interrompe ( **/globaloff**) la raccolta dei dati per tutti i processi.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Avvia ( **/processon**) o interrompe ( **/processoff**) la raccolta dei dati per il processo specificato dall'ID di processo (`PID`).|  
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** inizia a raccogliere dati per il processo specificato dall'ID di processo (`PID`) o dal nome di processo (*ProcName*). **/detach** interrompe la raccolta dei dati per il processo specificato o per tutti i processi se non viene specificato un processo.|  
 
 ## <a name="ending-the-profiling-session"></a>Arresto della sessione di profilatura  
  Per terminare una sessione di profilatura, non deve essere in corso una raccolta di dati dal profiler. È possibile interrompere la raccolta dei dati da un'applicazione profilata con il metodo di concorrenza riavviando il processo di lavoro ASP.NET oppure richiamando l'opzione **VSPerfCmd /detach**. È quindi possibile richiamare l'opzione **VSPerfCmd /shutdown** per disattivare il profiler e chiudere il file di dati di profilatura. Il comando **VSPerfClrEnv /globaloff** cancella le variabili di ambiente di profilatura, ma la configurazione di sistema non viene reimpostata fino al riavvio del computer.  

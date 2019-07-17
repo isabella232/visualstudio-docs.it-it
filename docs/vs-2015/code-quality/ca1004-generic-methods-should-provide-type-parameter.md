@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 458817ee19269735be181e08ed12ee1ecdee329f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58967463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182631"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004: I metodi generici devono specificare parametri di tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
