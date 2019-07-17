@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569680"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825907"
 ---
 # <a name="compare-properties-and-items"></a>Confrontare proprietà ed elementi
 Le proprietà e gli elementi MSBuild vengono usati per passare informazioni ad attività, valutare condizioni e archiviare valori a cui poter fare riferimento nel file di progetto.
@@ -93,15 +93,15 @@ Non è tuttavia l'unico approccio. Quando si definisce una proprietà, una defin
 
 - Durante la fase di valutazione di una build:
 
-    - Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.
+  - Le proprietà vengono definite e modificate nell'ordine in cui vengono visualizzate. Vengono eseguite le funzioni di proprietà. I valori di proprietà nel formato $(PropertyName) vengono espansi all'interno di espressioni. Il valore della proprietà viene impostato sull'espressione espansa.
 
-    - Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.
+  - Le definizioni dell'elemento vengono definite e modificate nell'ordine in cui vengono visualizzate. Le funzioni di proprietà sono già state espanse all'interno di espressioni. I valori di metadati vengono impostati sulle espressioni espanse.
 
-    - I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.
+  - I tipi di elemento vengono definiti e modificati nell'ordine in cui vengono visualizzati. I valori di elemento nel formato @(ItemType) vengono espansi. Anche le trasformazioni degli elementi vengono espanse. Le funzioni di proprietà e i valori sono già stati espansi all'interno di espressioni. L'elenco di elementi e i valori di metadati vengono impostati sulle espressioni espanse.
 
 - Durante la fase di esecuzione di una build:
 
-    - Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.
+  - Le proprietà e gli elementi definiti all'interno di destinazione vengono valutati insieme nell'ordine in cui vengono visualizzati. Vengono eseguite le funzioni di proprietà e i valori della proprietà vengono espansi all'interno di espressioni. Anche i valori e le trasformazioni degli elementi vengono espansi. I valori di proprietà, i valori del tipo di elemento e i valori di metadati vengono impostati sulle espressioni espanse.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effetti meno evidenti dell'ordine di valutazione
 Nella fase di valutazione di una build la valutazione delle proprietà precede la valutazione degli elementi. È tuttavia possibile che le proprietà abbiano valori visualizzati che devono dipendere da valori elemento. Considerare lo script seguente.

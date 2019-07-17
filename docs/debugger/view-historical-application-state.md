@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676586"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825531"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Controllare gli stati precedenti delle app usando la funzionalità per tornare indietro di IntelliTrace in Visual Studio (Visual Studio Enterprise)
 
@@ -119,8 +119,8 @@ L'impatto sulle prestazioni generali dell'esecuzione delle istruzioni dipende da
 
 * Quando uno snapshot del processo dell'applicazione viene creato per un'applicazione che usa un file mappato alla memoria persistente, il processo con lo snapshot mantiene un blocco esclusivo sul file mappato alla memoria (anche dopo che il processo padre ha rilasciato il blocco). Altri processi sono comunque in grado di leggere, ma non di scrivere, nel file mappato alla memoria.
 
-    Soluzione alternativa:
-    * Cancellare tutti gli snapshot terminando la sessione di debug.
+  Soluzione alternativa:
+  * Cancellare tutti gli snapshot terminando la sessione di debug.
 
 * Durante il debug di un'applicazione cui processo ha un numero elevato di aree di memoria univoche, ad esempio un'applicazione che carica un numero elevato di DLL, l'esecuzione delle istruzioni con gli snapshot abilitati può risultare peggiorata. Questo problema verrà risolto in una versione futura di Windows. Se si riscontra questo problema, contattare Microsoft all'indirizzo stepback@microsoft.com.
 

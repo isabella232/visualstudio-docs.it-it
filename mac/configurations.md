@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 62f7f2a8ebdafcccc6082edce2c4a7f1d91ff48e
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693094"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826066"
 ---
 # <a name="understanding-build-configurations"></a>Informazioni sulle configurazioni della build
 
@@ -51,21 +51,21 @@ Alle attività diverse da `MainLauncher` è necessario aggiungere `Exported=true
 L'elenco seguente offre alcuni esempi di dati che possono essere inclusi nelle configurazioni di esecuzione:
 
 * Progetto .NET normale
-    * App di avvio alternativa
-    * Argomenti di avvio
-    * Directory di lavoro
-    * Variabili di ambiente
-    * Opzioni di runtime di Mono (da usare solo se in esecuzione in Mono)
+  * App di avvio alternativa
+  * Argomenti di avvio
+  * Directory di lavoro
+  * Variabili di ambiente
+  * Opzioni di runtime di Mono (da usare solo se in esecuzione in Mono)
 * Progetto Android
-    * Punto di ingresso (attività, servizio, ricevitore)
-    * Argomenti e dati di intent
+  * Punto di ingresso (attività, servizio, ricevitore)
+  * Argomenti e dati di intent
 * Progetto iOS
-    * Modalità (normale, recupero in background)
+  * Modalità (normale, recupero in background)
 * Progetto di estensione iOS
-    * App di avvio: predefinita o personalizzata
+  * App di avvio: predefinita o personalizzata
 * Progetto WatchKit
-    * Modalità (Glance, notifica)
-    * Payload di notifica
+  * Modalità (Glance, notifica)
+  * Payload di notifica
 
 ## <a name="see-also"></a>Vedere anche
 

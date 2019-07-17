@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: f7674a925a2fb70820c216557ef012484ffebbdf
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691677"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823168"
 ---
 # <a name="editor-behavior"></a>Comportamento dell'editor
 
@@ -22,9 +22,9 @@ ms.locfileid: "67691677"
 * La formattazione immediata del codice viene attivata all'inserimento dei caratteri, ad esempio un punto e virgola o una parentesi, in base alle preferenze di formattazione impostate.
 * È anche possibile scegliere di formattare il file quando lo si salva, per scrivere il codice nel modo desiderato e lasciare che sia l'IDE a formattare il codice in base alle preferenze impostate.
 * Il rientro può essere impostato su Nessuno, Rientro automatico o Rientro intelligente. Di seguito vengono descritte queste impostazioni:
-   * Nessuno: imposta il cursore all'inizio della riga successiva
-   * Rientro automatico: imposta il cursore sulla stessa colonna nella riga successiva
-   * Rientro intelligente: posiziona il rientro nella riga seguente in base al codice
+  * Nessuno: imposta il cursore all'inizio della riga successiva
+  * Rientro automatico: imposta il cursore sulla stessa colonna nella riga successiva
+  * Rientro intelligente: posiziona il rientro nella riga seguente in base al codice
 * Il comportamento relativo all'interruzione delle parole differisce a seconda del sistema operativo e ai fini dello spostamento, l'editor di testo deve essere in grado di riconoscere l'inizio o la fine delle parole. La formattazione può essere impostata su Unix o Windows.
 
 È anche possibile impostare regole di formattazione per XML, CSS, HTML e JSON.

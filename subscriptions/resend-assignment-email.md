@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 04/18/2018
 ms.topic: conceptual
 description: Informazioni su come inviare di nuovo l'assegnazione delle sottoscrizioni ai sottoscrittori da manage.visualstudio.com o VLSC
-searchscope: VS Subscription
-ms.openlocfilehash: 12348428304892d4a4bc248d94bb5d0b484c7684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77b449fd43e21d7b07a0c2580697ba78605e9c51
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951231"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784977"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Come inviare di nuovo i messaggi di posta elettronica di assegnazione delle sottoscrizioni nel portale di gestione delle sottoscrizioni di Visual Studio
 

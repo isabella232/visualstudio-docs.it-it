@@ -10,835 +10,875 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327347"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821341"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log delle modifiche (Visual Studio Tools per Unity, Windows)
+
 Registro delle modifiche di Visual Studio Tools per Unity.
 
 ## <a name="4110"></a>4.1.1.0
- Data di rilascio: 24 maggio 2019
+
+Data di rilascio: 24 maggio 2019
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - Aggiornamento dell'API MonoBehaviour alla versione 2019.1.
+  - Aggiornamento dell'API MonoBehaviour alla versione 2019.1.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione degli avvisi e degli errori per l'output quando è abilitata la compilazione leggera.
-    
-    - Correzione delle prestazioni per la compilazione leggera.
+  - Correzione degli avvisi e degli errori per l'output quando è abilitata la compilazione leggera.
+
+  - Correzione delle prestazioni per la compilazione leggera.
 
 ## <a name="4100"></a>4.1.0.0
- Data di rilascio: 21 maggio 2019
+
+Data di rilascio: 21 maggio 2019
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - Aggiunta del supporto per la nuova API batch per ricaricare i progetti più velocemente.
-    
-    - Disabilitazione della compilazione completa per i progetti Unity, a favore dell'uso di errori e avvisi IntelliSense. Indeed Unity crea una soluzione di Visual Studio con progetti di libreria di classi che rappresentano le operazioni eseguite internamente da Unity. Detto questo, il risultato della compilazione in Visual Studio non viene mai usato o acquisito da Unity perché la pipeline di compilazione è chiusa. La compilazione in Visual Studio utilizza inutilmente risorse. Se è necessaria una compilazione completa perché si usano strumenti o un programma di installazione che dipende da essa, è possibile disabilitare questa ottimizzazione: Strumenti/Opzioni/Tools for Unity/Disable the full build of projects (Strumenti per Unity/Disabilita compilazione completa dei progetti). 
+  - Aggiunta del supporto per la nuova API batch per ricaricare i progetti più velocemente.
 
-    - Visualizzazione automatica di Esplora progetti Unity quando viene caricato un progetto Unity. Esplora progetti Unity sarà ancorato accanto a Esplora soluzioni.
-    
-    - Aggiornamento del meccanismo di estrazione del nome di progetto con Unity 2019.x.
+  - Disabilitazione della compilazione completa per i progetti Unity, a favore dell'uso di errori e avvisi IntelliSense. Indeed Unity crea una soluzione di Visual Studio con progetti di libreria di classi che rappresentano le operazioni eseguite internamente da Unity. Detto questo, il risultato della compilazione in Visual Studio non viene mai usato o acquisito da Unity perché la pipeline di compilazione è chiusa. La compilazione in Visual Studio utilizza inutilmente risorse. Se è necessaria una compilazione completa perché si usano strumenti o un programma di installazione che dipende da essa, è possibile disabilitare questa ottimizzazione: Strumenti/Opzioni/Tools for Unity/Disable the full build of projects (Strumenti per Unity/Disabilita compilazione completa dei progetti).
 
-    - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella ```Packages```) e i pacchetti locali (incorporati nella cartella ```Packages```).
-    
+  - Visualizzazione automatica di Esplora progetti Unity quando viene caricato un progetto Unity. Esplora progetti Unity sarà ancorato accanto a Esplora soluzioni.
+
+  - Aggiornamento del meccanismo di estrazione del nome di progetto con Unity 2019.x.
+
+  - Aggiunta del supporto per i pacchetti Unity in Esplora progetti Unity. Sono visibili solo i pacchetti a cui viene fatto riferimento (usando il file manifest.json nella cartella ```Packages```) e i pacchetti locali (incorporati nella cartella ```Packages```).
+
 - **Project Generation:**
 
-    - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
+  - Mantenere le proprietà esterne durante l'elaborazione del file di soluzione.
 
 - **Valutazione:**
 
-    - Aggiunta del supporto per nomi completi di alias (solo lo spazio dei nomi globale per il momento). L'analizzatore di espressioni accetta quindi ora i tipi nel formato global::namespace.type.
-    
-    - Aggiunta del supporto per il formato ```pointer[index]```, semanticamente identico al formato ```*(pointer+index)``` per la dereferenziazione del puntatore.
+  - Aggiunta del supporto per nomi completi di alias (solo lo spazio dei nomi globale per il momento). L'analizzatore di espressioni accetta quindi ora i tipi nel formato global::namespace.type.
+
+  - Aggiunta del supporto per il formato ```pointer[index]```, semanticamente identico al formato ```*(pointer+index)``` per la dereferenziazione del puntatore.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione di problemi di dipendenza con Microsoft.VisualStudio.MPF.
-    
-    - Correzione del collegamento del lettore UWP, senza alcun progetto caricato.
-    
-    - Correzione dell'aggiornamento automatico del database degli asset quando Visual Studio non è ancora associato.
-    
-    - Correzione di problemi del tema con etichette e caselle di controllo.
-    
+  - Correzione di problemi di dipendenza con Microsoft.VisualStudio.MPF.
+
+  - Correzione del collegamento del lettore UWP, senza alcun progetto caricato.
+
+  - Correzione dell'aggiornamento automatico del database degli asset quando Visual Studio non è ancora associato.
+
+  - Correzione di problemi del tema con etichette e caselle di controllo.
+
 - **Debugger:**
 
-    - Correzione dell'esecuzione di istruzioni con i costruttori statici.
+  - Correzione dell'esecuzione di istruzioni con i costruttori statici.
 
 ## <a name="4005"></a>4.0.0.5
- Data di rilascio: 27 febbraio 2019
+
+Data di rilascio: 27 febbraio 2019
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione del rilevamento della versione di Visual Studio con il pacchetto di installazione.
+  - Correzione del rilevamento della versione di Visual Studio con il pacchetto di installazione.
 
-    - Rimozione degli assembly inutilizzati dal pacchetto di installazione.
+  - Rimozione degli assembly inutilizzati dal pacchetto di installazione.
 
 ## <a name="4004"></a>4.0.0.4
- Data di rilascio: 13 febbraio 2019
+
+Data di rilascio: 13 febbraio 2019
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - Aggiunta del supporto per rilevare correttamente i processi Unity durante l'installazione e per consentire al motore di installazione di gestire meglio i blocchi di file.
-    
-    - Aggiornamento dell'API ScriptableObject.
+  - Aggiunta del supporto per rilevare correttamente i processi Unity durante l'installazione e per consentire al motore di installazione di gestire meglio i blocchi di file.
+
+  - Aggiornamento dell'API ScriptableObject.
 
 ## <a name="4003"></a>4.0.0.3
- Data di rilascio: 31 gennaio 2019
+
+Data di rilascio: 31 gennaio 2019
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Project Generation:**
 
-    - I campi pubblici e serializzati non causeranno più avvisi. Sono stati soppressi automaticamente gli avvisi del compilatore CS0649 e IDE0051 nei progetti di Unity che creavano questi messaggi.
+  - I campi pubblici e serializzati non causeranno più avvisi. Sono stati soppressi automaticamente gli avvisi del compilatore CS0649 e IDE0051 nei progetti di Unity che creavano questi messaggi.
 
 - **Integrazione:**
 
-    - Miglioramento dell'esperienza utente per visualizzare le istanze dell'editor di Unity e del lettore (le finestre sono ora ridimensionabili, usano margini uniformi e visualizzano un controllo di ridimensionamento). Aggiunta di informazioni dall'ID del processo per gli editor di Unity.
-    
-    - Aggiornamento dell'API MonoBehaviour.
-    
+  - Miglioramento dell'esperienza utente per visualizzare le istanze dell'editor di Unity e del lettore (le finestre sono ora ridimensionabili, usano margini uniformi e visualizzano un controllo di ridimensionamento). Aggiunta di informazioni dall'ID del processo per gli editor di Unity.
+
+  - Aggiornamento dell'API MonoBehaviour.
+
 - **Valutazione:**
 
-    - Aggiunta del supporto per le funzioni locali.
-    
-    - Aggiunta del supporto per le pseudovariabili (identificatori di eccezione e oggetto).
+  - Aggiunta del supporto per le funzioni locali.
+
+  - Aggiunta del supporto per le pseudovariabili (identificatori di eccezione e oggetto).
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione di un problema con i temi e le immagini del moniker.
+  - Correzione di un problema con i temi e le immagini del moniker.
 
-    - Solo scrittura nella finestra di output durante il debug, durante l'aggiornamento automatico del database degli asset.
+  - Solo scrittura nella finestra di output durante il debug, durante l'aggiornamento automatico del database degli asset.
 
-    - Correzione dei ritardi dell'interfaccia utente con il filtraggio della procedura guidata MonoBehaviour.
-    
+  - Correzione dei ritardi dell'interfaccia utente con il filtraggio della procedura guidata MonoBehaviour.
+
 - **Debugger:**
 
-    - Correzione per la lettura di attributi personalizzati per argomenti denominati quando si usano versioni meno recenti del protocollo.
+  - Correzione per la lettura di attributi personalizzati per argomenti denominati quando si usano versioni meno recenti del protocollo.
 
 ## <a name="4002"></a>4.0.0.2
- Data di rilascio: 23 gennaio 2019
+
+Data di rilascio: 23 gennaio 2019
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione della generazione di build sperimentale.
+  - Correzione della generazione di build sperimentale.
 
-    - Correzione della gestione degli eventi del file di progetto per ridurre al minimo la pressione sul thread dell'interfaccia utente.
+  - Correzione della gestione degli eventi del file di progetto per ridurre al minimo la pressione sul thread dell'interfaccia utente.
 
-    - Correzione del provider di completamento con modifiche al testo in modalità batch.
-    
+  - Correzione del provider di completamento con modifiche al testo in modalità batch.
+
 - **Debugger:**
 
-    - Correzione della visualizzazione di messaggi di debug utente nel debugger collegato.
+  - Correzione della visualizzazione di messaggi di debug utente nel debugger collegato.
 
 ## <a name="4001"></a>4.0.0.1
- Data di rilascio: 10 dicembre 2018
+
+Data di rilascio: 10 dicembre 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Valutazione:**
 
-    - Sostituzione di NRefactory a favore di Roslyn per la valutazione delle espressioni.
+  - Sostituzione di NRefactory a favore di Roslyn per la valutazione delle espressioni.
 
-    - Aggiunta del supporto per i puntatori: dereferenziazione, cast e aritmetica dei puntatori (sono richiesti sia Unity 2018.2+ che il nuovo runtime).
+  - Aggiunta del supporto per i puntatori: dereferenziazione, cast e aritmetica dei puntatori (sono richiesti sia Unity 2018.2+ che il nuovo runtime).
 
-    - Aggiunta del supporto per la visualizzazione dei puntatori di matrici (come nel C++). In un'espressione per puntatori aggiungere una virgola e il numero di elementi che si vogliono visualizzare.
+  - Aggiunta del supporto per la visualizzazione dei puntatori di matrici (come nel C++). In un'espressione per puntatori aggiungere una virgola e il numero di elementi che si vogliono visualizzare.
 
-    - Aggiunta del supporto per i costrutti async.
+  - Aggiunta del supporto per i costrutti async.
 
 - **Integrazione:**
-    
-    - Aggiunta del supporto per l'aggiornamento automatico dei database degli asset Unity al momento del salvataggio. Questa funzionalità è abilitata per impostazione predefinita e verrà attivata una ricompilazione sul lato di Unity quando si salva uno script in Visual Studio. È possibile disabilitare questa funzionalità in Strumenti\Opzioni\Strumenti per Unity\Aggiorna il database degli asset di Unity durante il salvataggio.
+
+  - Aggiunta del supporto per l'aggiornamento automatico dei database degli asset Unity al momento del salvataggio. Questa funzionalità è abilitata per impostazione predefinita e verrà attivata una ricompilazione sul lato di Unity quando si salva uno script in Visual Studio. È possibile disabilitare questa funzionalità in Strumenti\Opzioni\Strumenti per Unity\Aggiorna il database degli asset di Unity durante il salvataggio.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione dell'attivazione del bridge quando Visual Studio non è selezionato come editor esterno preferito.
+  - Correzione dell'attivazione del bridge quando Visual Studio non è selezionato come editor esterno preferito.
 
-    - Correzione della valutazione delle espressioni con espressioni in formato non valido o non supportate.
+  - Correzione della valutazione delle espressioni con espressioni in formato non valido o non supportate.
 
 ## <a name="4000"></a>4.0.0.0
- Data di rilascio: 4 dicembre 2018
+
+Data di rilascio: 4 dicembre 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - Aggiunta del supporto per Visual Studio 2019 (è necessaria almeno la versione 2018.3 di Unity per poter usare Visual Studio 2019 come editor di script esterno).
+  - Aggiunta del supporto per Visual Studio 2019 (è necessaria almeno la versione 2018.3 di Unity per poter usare Visual Studio 2019 come editor di script esterno).
 
-    - Adozione del servizio immagini e del catalogo di Visual Studio, con supporto completo per ridimensionamento HDPI, immagini perfette al pixel e temi.
+  - Adozione del servizio immagini e del catalogo di Visual Studio, con supporto completo per ridimensionamento HDPI, immagini perfette al pixel e temi.
 
 ### <a name="deprecated-features"></a>Funzionalità deprecate
 
 - **Integrazione:**
 
-    - Da ora in poi, Visual Studio Tools per Unity supporterà solo Unity 5.2+ (con l'integrazione di Visual Studio predefinita di Unity).
+  - Da ora in poi, Visual Studio Tools per Unity supporterà solo Unity 5.2+ (con l'integrazione di Visual Studio predefinita di Unity).
 
-    - Da ora in poi, Visual Studio Tools per Unity supporterà solo Visual Studio 2015+.
+  - Da ora in poi, Visual Studio Tools per Unity supporterà solo Visual Studio 2015+.
 
-    - Rimozione del servizio di linguaggio, dell'elenco di errori e della barra di stato legacy.
-    
-    - Rimozione della procedura guidata rapida Monobehaviour (a favore del supporto dedicato di IntelliSense).
+  - Rimozione del servizio di linguaggio, dell'elenco di errori e della barra di stato legacy.
+
+  - Rimozione della procedura guidata rapida Monobehaviour (a favore del supporto dedicato di IntelliSense).
 
 ## <a name="3903"></a>3.9.0.3
- Data di rilascio: 28 novembre 2018
+
+Data di rilascio: 28 novembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione di problemi di ricaricamento dei progetti e di IntelliSense durante l'aggiunta o la rimozione degli script che si trovano nel primissimo progetto.
+  - Correzione di problemi di ricaricamento dei progetti e di IntelliSense durante l'aggiunta o la rimozione degli script che si trovano nel primissimo progetto.
 
 ## <a name="3902"></a>3.9.0.2
- Data di rilascio: 19 novembre 2018
+
+Data di rilascio: 19 novembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Debugger:**
 
-    - Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
+  - Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento di "Collega a Unity" o al riavvio del gioco.
 
 ## <a name="3901"></a>3.9.0.1
- Data di rilascio: 15 novembre 2018
+
+Data di rilascio: 15 novembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
+  - Correzione dell'attivazione del plug-in Unity quando veniva selezionato un altro editor predefinito.
 
 ## <a name="3900"></a>3.9.0.0
- Data di rilascio: 13 novembre 2018
+
+Data di rilascio: 13 novembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
+  - Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
 ## <a name="3807"></a>3.8.0.7
- Rilascio: 20 settembre 2018
+
+Rilascio: 20 settembre 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Debugger:**
 
-    - (Backporting dalla versione 3.9.0.2) Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento del collegamento a Unity o al riavvio del gioco.
+  - (Backporting dalla versione 3.9.0.2) Correzione di un deadlock nella libreria usata per comunicare con il motore di debugger di Unity, che blocca Visual Studio o Unity, in particolare al raggiungimento del collegamento a Unity o al riavvio del gioco.
 
 ## <a name="3806"></a>3.8.0.6
- Data di rilascio: 27 agosto 2018
+
+Data di rilascio: 27 agosto 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione di ricaricamento di progetti e soluzione.
+  - Correzione di ricaricamento di progetti e soluzione.
 
 ## <a name="3805"></a>3.8.0.5
- Data di rilascio: 20 agosto 2018
+
+Data di rilascio: 20 agosto 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione dell'eliminazione della sottoscrizione di monitoraggio del progetto.
+  - Correzione dell'eliminazione della sottoscrizione di monitoraggio del progetto.
 
 ## <a name="3804"></a>3.8.0.4
- Data di rilascio: 14 agosto 2018
+
+Data di rilascio: 14 agosto 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Valutazione:**
 
-    - Aggiunta del supporto per i valori del puntatore.
+  - Aggiunta del supporto per i valori del puntatore.
 
-    - Aggiunta del supporto per metodi generici.
+  - Aggiunta del supporto per metodi generici.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Ricarica rapida con modifica su più progetti.
+  - Ricarica rapida con modifica su più progetti.
 
 ## <a name="3803"></a>3.8.0.3
- Data di rilascio: 24 luglio 2018
+
+Data di rilascio: 24 luglio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - (Backporting dalla versione 3.9.0.0) Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
+  - (Backporting dalla versione 3.9.0.0) Eseguito il rollback della soluzione alternativa per un bug delle prestazioni di Unity che è stato risolto da Unity.
 
 ## <a name="3802"></a>3.8.0.2
- Data di rilascio: 7 luglio 2018
+
+Data di rilascio: 7 luglio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
+  - Soluzione alternativa temporanea per un bug delle prestazioni Unity: memorizzazione nella cache di MonoIsland durante la generazione di progetti.
 
 ## <a name="3801"></a>3.8.0.1
- Data di rilascio: 26 giugno 2018
+
+Data di rilascio: 26 giugno 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Debug:**
 
-    - Aggiunta del supporto per i comandi UserLog e UserBreak.
+  - Aggiunta del supporto per i comandi UserLog e UserBreak.
 
-    - Aggiunta del supporto di tipo-caricamento lazy (ottimizzazione della latenza del carico di rete e della risposta del debugger).
+  - Aggiunta del supporto di tipo-caricamento lazy (ottimizzazione della latenza del carico di rete e della risposta del debugger).
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Valutazione:**
 
-    - Ricerca metodo e valutazione dell'espressione dell'operatore binario migliorati.
+  - Ricerca metodo e valutazione dell'espressione dell'operatore binario migliorati.
 
 ## <a name="3800"></a>3.8.0.0
- Data di rilascio: 30 maggio 2018
+
+Data di rilascio: 30 maggio 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Debug:**
 
-    - Aggiunta del supporto per la visualizzazione delle variabili nei costrutti asincroni.
+  - Aggiunta del supporto per la visualizzazione delle variabili nei costrutti asincroni.
 
-    - Aggiunta del supporto per l'elaborazione di tipi nidificati quando si impostano i punti di interruzione, per impedire gli avvisi con i costrutti del compilatore.
+  - Aggiunta del supporto per l'elaborazione di tipi nidificati quando si impostano i punti di interruzione, per impedire gli avvisi con i costrutti del compilatore.
 
 - **Integrazione:**
 
-    - Aggiunta del supporto per le grammatiche di TextMate per Shader (il carico di lavoro C++ non è più necessario per la colorazione del codice di Shader).
+  - Aggiunta del supporto per le grammatiche di TextMate per Shader (il carico di lavoro C++ non è più necessario per la colorazione del codice di Shader).
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
+  - Non convertire più pdb portabili a mdb quando si usa il nuovo runtime di Unity.
 
 ## <a name="3701"></a>3.7.0.1
- Data di rilascio: 7 maggio 2018
+
+Data di rilascio: 7 maggio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Programma di installazione:**
 
-    - Correzione di un problema di dipendenza durante l'uso di build sperimentali.
+  - Correzione di un problema di dipendenza durante l'uso di build sperimentali.
 
 ## <a name="3700"></a>3.7.0.0
- Data di rilascio: 7 maggio 2018
+
+Data di rilascio: 7 maggio 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Debug:**
 
-    - Aggiunta del supporto per il debug orchestrato (debug di più lettori/editor con la stessa sessione di Visual Studio).
+  - Aggiunta del supporto per il debug orchestrato (debug di più lettori/editor con la stessa sessione di Visual Studio).
 
-    - Aggiunta del supporto per il debug del lettore USB Android.
+  - Aggiunta del supporto per il debug del lettore USB Android.
 
-    - Aggiunta del supporto per il debug del lettore UWP/IL2CPP.
+  - Aggiunta del supporto per il debug del lettore UWP/IL2CPP.
 
 - **Valutazione:**
 
-    - Aggiunta del supporto per gli identificatori esadecimali.
+  - Aggiunta del supporto per gli identificatori esadecimali.
 
-    - Miglioramento dell'esperienza di valutazione della finestra delle espressioni di controllo.
+  - Miglioramento dell'esperienza di valutazione della finestra delle espressioni di controllo.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione dell'utilizzo delle impostazioni di eccezione.
+  - Correzione dell'utilizzo delle impostazioni di eccezione.
 
 - **Project Generation:**
 
-    - Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
+  - Esclusione delle unità di compilazione di gestione pacchetti dalla generazione.
 
 ## <a name="3605"></a>3.6.0.5
- Data di rilascio: 13 marzo 2018
+
+Data di rilascio: 13 marzo 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Project Generation:**
 
-    - Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
+  - Aggiunta del supporto per il nuovo generatore di progetti in Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione della gestione degli stati danneggiati con progetti personalizzati.
+  - Correzione della gestione degli stati danneggiati con progetti personalizzati.
 
 - **Debugger:**
 
-    - Correzione dell'impostazione dell'istruzione successiva.
+  - Correzione dell'impostazione dell'istruzione successiva.
 
 ## <a name="3604"></a>3.6.0.4
- Data di rilascio: 5 marzo 2018
+
+Data di rilascio: 5 marzo 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Correzione del rilevamento della versione di Mono.
+  - Correzione del rilevamento della versione di Mono.
 
 - **Integrazione:**
 
-    - Correzione dei problemi di tempistica per l'attivazione di 2018.1 e plug-in.
+  - Correzione dei problemi di tempistica per l'attivazione di 2018.1 e plug-in.
 
 ## <a name="3603"></a>3.6.0.3
- Data di rilascio: 23 febbraio 2018
+
+Data di rilascio: 23 febbraio 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Project Generation:**
 
-    - Aggiunta del supporto per .NET Standard.
+  - Aggiunta del supporto per .NET Standard.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Correzione del rilevamento del framework di destinazione Unity.
+  - Correzione del rilevamento del framework di destinazione Unity.
 
 - **Debugger:**
 
-    - Correzione dell'interruzione per eccezioni generate al di fuori del codice utente.
+  - Correzione dell'interruzione per eccezioni generate al di fuori del codice utente.
 
 ## <a name="3602"></a>3.6.0.2
- Data di rilascio: 7 febbraio 2018
+
+Data di rilascio: 7 febbraio 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - Aggiornamento della superficie dell'API UnityMessage per 2017.3.
+  - Aggiornamento della superficie dell'API UnityMessage per 2017.3.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - I progetti vengono ricaricati solo per modifiche esterne (con limitazione).
+  - I progetti vengono ricaricati solo per modifiche esterne (con limitazione).
 
 ## <a name="3601"></a>3.6.0.1
- Data di rilascio: 24 gennaio 2018
+
+Data di rilascio: 24 gennaio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione della conversione automatica dei simboli di debug da pdb a mdb.
+  - Correzione della conversione automatica dei simboli di debug da pdb a mdb.
 
-    - Correzione della chiamata indiretta a EditorPrefs.GetBool con effetti sul controllo durante il tentativo di modifica delle dimensioni della matrice.
+  - Correzione della chiamata indiretta a EditorPrefs.GetBool con effetti sul controllo durante il tentativo di modifica delle dimensioni della matrice.
 
 ## <a name="3600"></a>3.6.0.0
- Data di rilascio: 10 gennaio 2018
+
+Data di rilascio: 10 gennaio 2018
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Project Generation:**
 
-    - Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
+  - Aggiunta del supporto per il modello di riferimento MonoIsland 2018.1.
 
 - **Valutazione:**
 
-    - Aggiunta del supporto per l'identificatore $exception.
+  - Aggiunta del supporto per l'identificatore $exception.
 
 - **Debugger:**
 
-    - Aggiunta del supporto per gli attributi DebuggerHidden/DebuggerStepThrough con il nuovo runtime di Unity.
+  - Aggiunta del supporto per gli attributi DebuggerHidden/DebuggerStepThrough con il nuovo runtime di Unity.
 
 - **Procedure guidate:**
 
-    - Introduzione della versione 'Latest' per le procedure guidate.
+  - Introduzione della versione 'Latest' per le procedure guidate.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - Correzione del calcolo del GUID di progetto per i progetti di lettore.
+  - Correzione del calcolo del GUID di progetto per i progetti di lettore.
 
 - **Debugger:**
 
-    - Correzione di una race condition nella gestione degli eventi di interruzione.
+  - Correzione di una race condition nella gestione degli eventi di interruzione.
 
 - **Procedure guidate:**
 
-    - Aggiornamento del contesto roslyn prima dell'inserimento del metodo.
+  - Aggiornamento del contesto roslyn prima dell'inserimento del metodo.
 
 ## <a name="3503"></a>3.5.0.3
- Data di rilascio: 9 gennaio 2018
+
+Data di rilascio: 9 gennaio 2018
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Correzione della conversione automatica dei simboli di debug da pdb a mdb.
+  - Correzione della conversione automatica dei simboli di debug da pdb a mdb.
 
 ## <a name="3502"></a>3.5.0.2
- Data di rilascio: 4 dicembre 2017
+
+Data di rilascio: 4 dicembre 2017
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Integrazione:**
 
-    - I progetti Unity vengono ora ricaricati automaticamente in Visual Studio quando si aggiunge o rimuove uno script da Unity.
+  - I progetti Unity vengono ora ricaricati automaticamente in Visual Studio quando si aggiunge o rimuove uno script da Unity.
 
 - **Debugger:**
 
-    - È stata aggiunta un'opzione che consente di eseguire il debug dell'editor di Unity tramite il debugger Mono condiviso da Xamarin e Visual Studio per Mac.
+  - È stata aggiunta un'opzione che consente di eseguire il debug dell'editor di Unity tramite il debugger Mono condiviso da Xamarin e Visual Studio per Mac.
 
-    - È stato aggiunto il supporto per i file di simboli di debug portatili.
+  - È stato aggiunto il supporto per i file di simboli di debug portatili.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione:**
 
-    - Sono stati corretti problemi relativi alle dipendenze di installazione.
+  - Sono stati corretti problemi relativi alle dipendenze di installazione.
 
-    - È stata corretta la mancata visualizzazione del menu della Guida dell'API di Unity.
+  - È stata corretta la mancata visualizzazione del menu della Guida dell'API di Unity.
 
 - **Project Generation:**
 
-    - È stata corretta la generazione di un progetto giocatore quando si lavora a un gioco UWP con il back-end IL2CPP/.NET 4.6.
+  - È stata corretta la generazione di un progetto giocatore quando si lavora a un gioco UWP con il back-end IL2CPP/.NET 4.6.
 
-    - È stato corretto il problema dell'aggiunta di estensioni dll in eccesso al nome del file di assembly.
+  - È stato corretto il problema dell'aggiunta di estensioni dll in eccesso al nome del file di assembly.
 
-    - È stato corretto l'utilizzo del livello di compatibilità di un'API di un progetto specifico anziché del livello di compatibilità globale.
+  - È stato corretto l'utilizzo del livello di compatibilità di un'API di un progetto specifico anziché del livello di compatibilità globale.
 
-    - Non forzare il flag Unity AllowAttachedDebuggingOfEditor Unity, il cui valore predefinito è ora 'true'.
+  - Non forzare il flag Unity AllowAttachedDebuggingOfEditor Unity, il cui valore predefinito è ora 'true'.
 
 ## <a name="3402"></a>3.4.0.2
- Data di rilascio: 19 settembre 2017
+
+Data di rilascio: 19 settembre 2017
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Project Generation:**
 
-    - Supporto aggiunto per le unità di compilazione assembly.json.
+  - Supporto aggiunto per le unità di compilazione assembly.json.
 
-    - La copia delle assembly dell'unità per la cartella del progetto è stata arrestata.
+  - La copia delle assembly dell'unità per la cartella del progetto è stata arrestata.
 
 - **Debugger:**
 
-    - Supporto aggiunto per l'impostazione dell'istruzione successiva con il nuovo runtime dell'unità.
+  - Supporto aggiunto per l'impostazione dell'istruzione successiva con il nuovo runtime dell'unità.
 
-    - Supporto aggiunto per il tipo di decimale con il nuovo runtime dell'unità.
+  - Supporto aggiunto per il tipo di decimale con il nuovo runtime dell'unità.
 
-    - Supporto aggiunto per le conversioni implicite/esplicite.
+  - Supporto aggiunto per le conversioni implicite/esplicite.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Valutazione:**
 
-    - Creazione della matrice di Fixed con dimensioni implicite.
+  - Creazione della matrice di Fixed con dimensioni implicite.
 
-    - Il compilatore di Fixed ha generato degli elementi con variabili locali.
+  - Il compilatore di Fixed ha generato degli elementi con variabili locali.
 
 - **Project Generation:**
 
-    - Riferimento di Fixed a Microsoft.CSharp per il livello API 4.6.
+  - Riferimento di Fixed a Microsoft.CSharp per il livello API 4.6.
 
 ## <a name="3302"></a>3.3.0.2
- Data di rilascio 15 agosto 2017
+
+Data di rilascio 15 agosto 2017
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Project Generation:**
 
-    - È stata corretta la generazione della soluzione Visual Studio in Unity 5.5 e versioni precedenti.
+  - È stata corretta la generazione della soluzione Visual Studio in Unity 5.5 e versioni precedenti.
 
 ## <a name="3300"></a>3.3.0.0
- Data di rilascio: 14 agosto 2017
+
+Data di rilascio: 14 agosto 2017
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Valutazione:**
 
-    - Supporto aggiunto per la creazione di struct con il nuovo runtime dell'unità.
+  - Supporto aggiunto per la creazione di struct con il nuovo runtime dell'unità.
 
-    - Supporto minimo aggiunto per i puntatori.
+  - Supporto minimo aggiunto per i puntatori.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Valutazione:**
 
-    - Chiamata del metodo di Fixed sulle primitive.
+  - Chiamata del metodo di Fixed sulle primitive.
 
-    - Valutazione del campo di Fixed con tipi contrassegnati con BeforeFieldInit.
+  - Valutazione del campo di Fixed con tipi contrassegnati con BeforeFieldInit.
 
-    - Chiamate non supportate di Fixed con operatori binari (sottrarre).
+  - Chiamate non supportate di Fixed con operatori binari (sottrarre).
 
-    - Problemi di Fixed quando si aggiungono elementi all'espressione di controllo di Visual Studio.
+  - Problemi di Fixed quando si aggiungono elementi all'espressione di controllo di Visual Studio.
 
 - **Project Generation:**
 
-    - Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
+  - Riferimenti ai nomi assembly di Fixed con i file mcs.rsp.
 
-    - Fixed è definito con i livelli di API.
+  - Fixed è definito con i livelli di API.
 
 ## <a name="3200"></a>3.2.0.0
- Data di rilascio: 10 maggio 2017
+
+Data di rilascio: 10 maggio 2017
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Programma di installazione:**
 
-    - Supporto aggiunto per la pulizia della cache MEF.
+  - Supporto aggiunto per la pulizia della cache MEF.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Editor di codice:**
 
-    - Classificazione/completamento di Fixed con gli attributi personalizzati.
+  - Classificazione/completamento di Fixed con gli attributi personalizzati.
 
-    - Sfarfallio di Fixed con messaggi di Unity.
+  - Sfarfallio di Fixed con messaggi di Unity.
 
 ## <a name="3100"></a>3.1.0.0
- Data di rilascio: 7 aprile 2017
+
+Data di rilascio: 7 aprile 2017
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Debugger:**
 
-    - Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
+  - Aggiunto il supporto per il nuovo runtime di Unity, compatibile con .NET 4.6 / C# 6.
 
 - **Project Generation:**
 
-    - Aggiunta del supporto per il profilo .NET 4.6.
+  - Aggiunta del supporto per il profilo .NET 4.6.
 
-    - Aggiunta del supporto per i file con estensione mcs.rsp.
+  - Aggiunta del supporto per i file con estensione mcs.rsp.
 
-    - Abilita sempre l'opzione di compilazione non sicura quando viene usato Unity 5.6.
+  - Abilita sempre l'opzione di compilazione non sicura quando viene usato Unity 5.6.
 
-    - Aggiunto il supporto per la generazione del progetto "Player" quando si usa la piattaforma Windows Store e il back-end il2cpp.
+  - Aggiunto il supporto per la generazione del progetto "Player" quando si usa la piattaforma Windows Store e il back-end il2cpp.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Editor di codice:**
 
-    - Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
+  - Corretta la posizione del cursore dopo l'inserimento del metodo con completamento automatico.
 
 - **Project Generation:**
 
-    - Eliminata la post-elaborazione della versione dell'assembly.
+  - Eliminata la post-elaborazione della versione dell'assembly.
 
 ## <a name="3001"></a>3.0.0.1
- Data di rilascio: 7 aprile 2017
+
+Data di rilascio: 7 aprile 2017
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>Questa versione include tutte le nuove funzionalità e correzioni di bug introdotte con la serie 2.8.x.
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 (3.0 anteprima) 3
- Data di rilascio: 25 gennaio 2017
+Data di rilascio: 25 gennaio 2017
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Generazione del progetto:**
 
-    - Corretta la regressione dove veniva fatto riferimento ai progetti Plugins due volte, prima come DLL binario e poi come riferimento al progetto.
+  - Corretta la regressione dove veniva fatto riferimento ai progetti Plugins due volte, prima come DLL binario e poi come riferimento al progetto.
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 (3.0 anteprima) 2
- Data di rilascio: 23 gennaio 2017
+Data di rilascio: 23 gennaio 2017
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Editor di codice:**
 
-    - Corretto un arresto anomalo all'avvio di una dichiarazione di attributo senza completamento parentesi graffa.
+  - Corretto un arresto anomalo all'avvio di una dichiarazione di attributo senza completamento parentesi graffa.
 
 - **Debugger:**
 
-    - Corretti i punti di interruzione delle funzioni con coroutine sotto il nuovo compilatore/runtime Unity.
+  - Corretti i punti di interruzione delle funzioni con coroutine sotto il nuovo compilatore/runtime Unity.
 
-    - Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
+  - Aggiunto un avviso in caso di punto di interruzione non associabile (quando non viene trovato alcun percorso di origine corrispondente).
 
 - **Project Generation:**
 
-    - Corretta la generazione di file csproj con caratteri speciali/localizzati.
+  - Corretta la generazione di file csproj con caratteri speciali/localizzati.
 
-    - Corretti i riferimenti esterni ad Asset, ad esempio Libreria (come Facebook SDK).
+  - Corretti i riferimenti esterni ad Asset, ad esempio Libreria (come Facebook SDK).
 
 - **Varie:**
 
-    - Aggiunto il controllo per impedire l'esecuzione di Unity durante l'installazione o la disinstallazione.
+  - Aggiunto il controllo per impedire l'esecuzione di Unity durante l'installazione o la disinstallazione.
 
-    - Eseguito il passaggio a https per l'uso della documentazione remota di Unity.
+  - Eseguito il passaggio a https per l'uso della documentazione remota di Unity.
 
 ## <a name="2800---30-preview"></a>2.8.0.0 (3.0 anteprima)
- Data di rilascio: 17 novembre 2016
+Data di rilascio: 17 novembre 2016
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Generale:**
 
-    - Aggiunto il supporto per l'installazione di Visual Studio 2017.
+  - Aggiunto il supporto per l'installazione di Visual Studio 2017.
 
-    - Aggiunto il supporto per l'estensione di Visual Studio 2017.
+  - Aggiunto il supporto per l'estensione di Visual Studio 2017.
 
-    - Aggiunto il supporto per la localizzazione.
+  - Aggiunto il supporto per la localizzazione.
 
 - **Editor di codice:**
 
-    - Aggiunto IntelliSense C# per i messaggi di Unity.
+  - Aggiunto IntelliSense C# per i messaggi di Unity.
 
-    - Aggiunta la colorazione del codice C# per i messaggi di Unity.
+  - Aggiunta la colorazione del codice C# per i messaggi di Unity.
 
 - **Debugger:**
 
-    - Aggiunto il supporto per le espressioni `is`, `as`, cast diretto, `default`, `new`.
+  - Aggiunto il supporto per le espressioni `is`, `as`, cast diretto, `default`, `new`.
 
-    - Aggiunto il supporto per le espressioni string concat.
+  - Aggiunto il supporto per le espressioni string concat.
 
-    - Aggiunto il supporto per la visualizzazione esadecimale di valori Integer.
+  - Aggiunto il supporto per la visualizzazione esadecimale di valori Integer.
 
-    - Aggiunto il supporto per la creazione di nuove variabili temporanee (istruzioni).
+  - Aggiunto il supporto per la creazione di nuove variabili temporanee (istruzioni).
 
-    - Aggiunto il supporto per le conversioni implicite di primitive.
+  - Aggiunto il supporto per le conversioni implicite di primitive.
 
-    - Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
+  - Aggiunti messaggi di errore più efficaci quando un tipo è previsto o non trovato.
 
 - **Project Generation:**
 
-    - Rimosso il suffisso CSharp dai nomi di progetto.
+  - Rimosso il suffisso CSharp dai nomi di progetto.
 
-    - Rimosso il riferimento a un file di destinazioni di MSBuild a livello di sistema.
+  - Rimosso il riferimento a un file di destinazioni di MSBuild a livello di sistema.
 
 - **Procedure guidate:**
 
-    - Aggiunto il supporto per i messaggi di Unity in tipi non Behaviour come Editor o EditorWindow.
+  - Aggiunto il supporto per i messaggi di Unity in tipi non Behaviour come Editor o EditorWindow.
 
-    - Eseguito il passaggio a Roslyn per inserire e formattare i messaggi di Unity.
+  - Eseguito il passaggio a Roslyn per inserire e formattare i messaggi di Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Debugger:**
 
-    - Risolto un bug con arresto anomalo di Unity durante la valutazione di tipi generici.
+  - Risolto un bug con arresto anomalo di Unity durante la valutazione di tipi generici.
 
-    - Corretta la gestione dei tipi nullable.
+  - Corretta la gestione dei tipi nullable.
 
-    - Corretta la gestione delle enumerazioni.
+  - Corretta la gestione delle enumerazioni.
 
-    - Corretta la gestione dei tipi di membro annidato.
+  - Corretta la gestione dei tipi di membro annidato.
 
-    - Corretto l'accesso all'indicizzatore raccolta.
+  - Corretto l'accesso all'indicizzatore raccolta.
 
-    - Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
+  - Corretto il supporto per il debug dei frame di iteratore con il nuovo compilatore C#.
 
 - **Project Generation:**
 
-    - Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
+  - Corretto il bug che impediva la compilazione quando si usava Unity Web Player.
 
-    - Corretto il bug che impediva la compilazione durante la compilazione di uno script con nome file con codifica Web.
+  - Corretto il bug che impediva la compilazione durante la compilazione di uno script con nome file con codifica Web.
 
 ## <a name="2300"></a>2.3.0.0
- Data di rilascio: 14 luglio 2016
+
+Data di rilascio: 14 luglio 2016
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Generale:**
 
-    - Aggiunta un'opzione per disabilitare i log della console Unity nell'elenco errori di Visual Studio.
+  - Aggiunta un'opzione per disabilitare i log della console Unity nell'elenco errori di Visual Studio.
 
-    - Aggiunta un'opzione per consentire la modifica delle proprietà del progetto generato.
+  - Aggiunta un'opzione per consentire la modifica delle proprietà del progetto generato.
 
 - **Debugger:**
 
-    - Aggiunti i visualizzatori stringa per testo, XML, HTML e JSON.
+  - Aggiunti i visualizzatori stringa per testo, XML, HTML e JSON.
 
 - **Procedure guidate:**
 
-    - Aggiunti i MonoBehaviour mancanti.
+  - Aggiunti i MonoBehaviour mancanti.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Generale:**
 
-    - Risolto un conflitto con ReSharper che impediva la visualizzazione di controlli all'interno delle impostazioni di Visual Studio.
+  - Risolto un conflitto con ReSharper che impediva la visualizzazione di controlli all'interno delle impostazioni di Visual Studio.
 
-    - Risolto un conflitto con Xamarin che impediva il debug in alcuni casi.
+  - Risolto un conflitto con Xamarin che impediva il debug in alcuni casi.
 
 - **Debugger:**
 
-    - Risolto un problema che causava il blocco di Visual Studio durante il debug.
+  - Risolto un problema che causava il blocco di Visual Studio durante il debug.
 
-    - Risolto un problema con i punti di interruzione di funzione in Visual Studio 2015.
+  - Risolto un problema con i punti di interruzione di funzione in Visual Studio 2015.
 
-    - Risolti diversi problemi di valutazione delle espressioni.
+  - Risolti diversi problemi di valutazione delle espressioni.
 
 ## <a name="2200"></a>2.2.0.0
- Data di rilascio: 4 febbraio 2016
+
+Data di rilascio: 4 febbraio 2016
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Procedure guidate:**
 
-    - Aggiunta della ricerca intelligente nella procedura guidata **Implement Monobehaviour** .
+  - Aggiunta della ricerca intelligente nella procedura guidata **Implement Monobehaviour** .
 
-    - Le procedure guidate ora riconoscono il contesto. Ad esempio, i messaggi NetworkBehavior sono disponibili solo quando si lavora con NetworkBehavior.
+  - Le procedure guidate ora riconoscono il contesto. Ad esempio, i messaggi NetworkBehavior sono disponibili solo quando si lavora con NetworkBehavior.
 
-    - Aggiunta del supporto per i messaggi NetworkBehavior nelle procedure guidate.
+  - Aggiunta del supporto per i messaggi NetworkBehavior nelle procedure guidate.
 
 - **Interfaccia utente:**
 
-    - Aggiunta di un'opzione per configurare la visibilità dei messaggi MonoBehavior.
+  - Aggiunta di un'opzione per configurare la visibilità dei messaggi MonoBehavior.
 
-    - Rimozione delle pagine delle proprietà di Visual Studio non rilevanti per i progetti Unity.
+  - Rimozione delle pagine delle proprietà di Visual Studio non rilevanti per i progetti Unity.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Generazione del progetto:**
 
-    - Correzione dei riferimenti a UnityEngine e UnityEditor in Unity 4.6.
+  - Correzione dei riferimenti a UnityEngine e UnityEditor in Unity 4.6.
 
-    - Correzione della generazione dei file di progetto in caso di esecuzione di Unity su OSX.
+  - Correzione della generazione dei file di progetto in caso di esecuzione di Unity su OSX.
 
-    - Correzione della gestione dei nomi di progetto contenenti caratteri cancelletto (#).
+  - Correzione della gestione dei nomi di progetto contenenti caratteri cancelletto (#).
 
-    - Limitazione dei progetti generati a C# 4.
+  - Limitazione dei progetti generati a C# 4.
 
 - **Debugger:**
 
-    - Risolto un problema relativo alla valutazione delle espressioni durante il debug all'interno di un coroutine Unity.
+  - Risolto un problema relativo alla valutazione delle espressioni durante il debug all'interno di un coroutine Unity.
 
-    - Risolto un problema che causava il blocco di Visual Studio durante il debug.
+  - Risolto un problema che causava il blocco di Visual Studio durante il debug.
 
 - **Interfaccia utente:**
 
-    - Risolto un problema di incompatibilità con l'estensione di Visual Studio [Tabs Studio](https://tabsstudio.com/) .
+  - Risolto un problema di incompatibilità con l'estensione di Visual Studio [Tabs Studio](https://tabsstudio.com/) .
 
 - **Programma di installazione:**
 
-    - Supporto dell'installazione a livello di computer di VSTU (installazione per tutti gli utenti) mediante la creazione di voci del Registro di sistema HKLM.
+  - Supporto dell'installazione a livello di computer di VSTU (installazione per tutti gli utenti) mediante la creazione di voci del Registro di sistema HKLM.
 
-    - Risoluzione dei problemi con la disinstallazione di VSTU quando viene installata la stessa versione di VSTU per più versioni diverse di Visual Studio. Ad esempio, quando sono installati sia VSTU **2015** 2.1.0.0 che VSTU **2013** 2.1.0.0.
+  - Risoluzione dei problemi con la disinstallazione di VSTU quando viene installata la stessa versione di VSTU per più versioni diverse di Visual Studio. Ad esempio, quando sono installati sia VSTU **2015** 2.1.0.0 che VSTU **2013** 2.1.0.0.
 
 ## <a name="2100"></a>2.1.0.0
- Data di rilascio: 8 settembre 2015
+
+Data di rilascio: 8 settembre 2015
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -859,80 +899,81 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dei punti di interruzione dei passaggi in Visual Studio 2015.
 
 ## <a name="2000"></a>2.0.0.0
- Data di rilascio: 20 luglio 2015
+
+Data di rilascio: 20 luglio 2015
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - **Integrazione con Unity:**
 
-    - Correzione della conversione dei simboli di debug creati con Visual Studio 2015 durante l'importazione di una DLL e dei relativi simboli di debug (PDB).
+  - Correzione della conversione dei simboli di debug creati con Visual Studio 2015 durante l'importazione di una DLL e dei relativi simboli di debug (PDB).
 
-    - Vengono generati sempre file MDB durante l'importazione di una DLL e dei relativi simboli di debug (PDB), tranne quando viene fornito anche un file MDB.
+  - Vengono generati sempre file MDB durante l'importazione di una DLL e dei relativi simboli di debug (PDB), tranne quando viene fornito anche un file MDB.
 
-    - Correzione dell'inquinamento della directory di progetto Unity con una directory obj.
+  - Correzione dell'inquinamento della directory di progetto Unity con una directory obj.
 
-    - Correzione della generazione di riferimenti a System.Xml.Link e System.Runtime.Serialization.
+  - Correzione della generazione di riferimenti a System.Xml.Link e System.Runtime.Serialization.
 
-    - Aggiunta del supporto di più sottoscrittori agli hook delle API di generazione di file di progetto.
+  - Aggiunta del supporto di più sottoscrittori agli hook delle API di generazione di file di progetto.
 
-    - Viene sempre completata la generazione di file di progetto anche quando uno dei file da generare è bloccato.
+  - Viene sempre completata la generazione di file di progetto anche quando uno dei file da generare è bloccato.
 
-    - Aggiunta del supporto dei caratteri jolly * nel filtro delle estensioni quando si specificano i file da includere nel progetto C#.
+  - Aggiunta del supporto dei caratteri jolly * nel filtro delle estensioni quando si specificano i file da includere nel progetto C#.
 
 - **Integrazione con Visual Studio:**
 
-    - Risolto un problema di compatibilità con Productivity Power Tools.
+  - Risolto un problema di compatibilità con Productivity Power Tools.
 
-    - Correzione della generazione di MonoBehavior nelle dichiarazioni di eventi e delegati.
+  - Correzione della generazione di MonoBehavior nelle dichiarazioni di eventi e delegati.
 
 - **Debugger:**
 
-    - Correzione di un blocco potenziale durante il debug.
+  - Correzione di un blocco potenziale durante il debug.
 
-    - Risolto un problema di mancata visualizzazione delle variabili locali in alcuni stack frame.
+  - Risolto un problema di mancata visualizzazione delle variabili locali in alcuni stack frame.
 
-    - Correzione del controllo delle matrici vuote.
+  - Correzione del controllo delle matrici vuote.
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 (2.0 anteprima) 2
- Data di rilascio: 2 aprile 2015
+Data di rilascio: 2 aprile 2015
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - **Esplora progetti Unity:**
 
-    - Ridenominazione automatica della classe quando si rinomina un file in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
+  - Ridenominazione automatica della classe quando si rinomina un file in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
 
-    - Selezione automatica dei nuovi script creati in Esplora progetti Unity.
+  - Selezione automatica dei nuovi script creati in Esplora progetti Unity.
 
-    - Rilevamento dello script attivo in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
+  - Rilevamento dello script attivo in Esplora progetti Unity (vedere la finestra di dialogo **Opzioni** ).
 
-    - Doppia sincronizzazione di Esplora soluzioni di Visual Studio (vedere la finestra di dialogo **Opzioni** ).
+  - Doppia sincronizzazione di Esplora soluzioni di Visual Studio (vedere la finestra di dialogo **Opzioni** ).
 
-    - Adozione delle icone di Visual Studio in Esplora progetti Unity.
+  - Adozione delle icone di Visual Studio in Esplora progetti Unity.
 
 - **Debugger:**
 
-    - Possibilità di selezionare la destinazione di debug attiva da un elenco di destinazioni salvate o usate di recente (vedere la finestra di dialogo **Opzioni** ).
+  - Possibilità di selezionare la destinazione di debug attiva da un elenco di destinazioni salvate o usate di recente (vedere la finestra di dialogo **Opzioni** ).
 
-    - Creazione di punti di interruzione delle funzioni in metodi MonoBehavior e loro applicazione a più classi MonoBehavior.
+  - Creazione di punti di interruzione delle funzioni in metodi MonoBehavior e loro applicazione a più classi MonoBehavior.
 
-    - Supporto di Crea ID oggetto nel debugger.
+  - Supporto di Crea ID oggetto nel debugger.
 
-    - Supporto del numero di passaggi del punto di interruzione nel debugger.
+  - Supporto del numero di passaggi del punto di interruzione nel debugger.
 
-    - Supporto dell'interruzione in caso di eccezioni nel debugger (sperimentale. Vedere la finestra di dialogo **Opzioni** ).
+  - Supporto dell'interruzione in caso di eccezioni nel debugger (sperimentale. Vedere la finestra di dialogo **Opzioni** ).
 
-    - Supporto della creazione di oggetti e matrici durante la valutazione di espressioni nel debugger.
+  - Supporto della creazione di oggetti e matrici durante la valutazione di espressioni nel debugger.
 
-    - Supporto dei confronti Null durante la valutazione di espressioni nel debugger.
+  - Supporto dei confronti Null durante la valutazione di espressioni nel debugger.
 
-    - Possibilità di escludere membri obsoleti nelle finestre delle espressioni di controllo del debugger.
+  - Possibilità di escludere membri obsoleti nelle finestre delle espressioni di controllo del debugger.
 
 - **Programma di installazione:**
 
-    - Ottimizzazione della registrazione delle estensioni di Visual Studio Tools per Unity.
+  - Ottimizzazione della registrazione delle estensioni di Visual Studio Tools per Unity.
 
-    - Installazione del pacchetto Visual Studio Tools per Unity per Unity 5.
+  - Installazione del pacchetto Visual Studio Tools per Unity per Unity 5.
 
 - **Documentazione:** Miglioramento delle prestazioni di generazione della documentazione.
 
@@ -946,33 +987,33 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 - **Esplora progetti Unity:**
 
-    - Aggiornamento di Esplora progetti Unity dopo lo spostamento o la ridenominazione dei file in Esplora soluzioni di Visual Studio.
+  - Aggiornamento di Esplora progetti Unity dopo lo spostamento o la ridenominazione dei file in Esplora soluzioni di Visual Studio.
 
-    - Mantenimento delle selezioni quando i file vengono rinominati in Esplora progetti Unity.
+  - Mantenimento delle selezioni quando i file vengono rinominati in Esplora progetti Unity.
 
-    - Disattivazione dell'espansione e della compressione automatiche quando si fa doppio clic sui file in Esplora progetti Unity.
+  - Disattivazione dell'espansione e della compressione automatiche quando si fa doppio clic sui file in Esplora progetti Unity.
 
-    - Possibilità di visualizzare in Esplora progetti Unity i nuovi file selezionati.
+  - Possibilità di visualizzare in Esplora progetti Unity i nuovi file selezionati.
 
 - **Debugger:**
 
-    - Risoluzione di un possibile problema di blocco di Visual Studio durante la valutazione di espressioni nel debugger.
+  - Risoluzione di un possibile problema di blocco di Visual Studio durante la valutazione di espressioni nel debugger.
 
-    - Le chiamate dei metodi vengono sempre eseguite nel dominio corretto nel debugger.
+  - Le chiamate dei metodi vengono sempre eseguite nel dominio corretto nel debugger.
 
 - **Unity:**
 
-    - Correzione del percorso di UnityVS.OpenFile con Unity 5.
+  - Correzione del percorso di UnityVS.OpenFile con Unity 5.
 
-    - Correzione del percorso di pdb2mdb con Unity 5.
+  - Correzione del percorso di pdb2mdb con Unity 5.
 
-    - Correzione di una possibile eccezione durante la generazione dei file di progetto.
+  - Correzione di una possibile eccezione durante la generazione dei file di progetto.
 
-    - Correzione di un possibile problema di blocco durante l'esecuzione di Unity su OSX.
+  - Correzione di un possibile problema di blocco durante l'esecuzione di Unity su OSX.
 
-    - Gestione delle eccezioni interne.
+  - Gestione delle eccezioni interne.
 
-    - Invio dei log della console di Unity all'elenco degli errori di Visual Studio.
+  - Invio dei log della console di Unity all'elenco degli errori di Visual Studio.
 
 - **Documentazione:** Correzione della generazione della documentazione per la nuova documentazione di Unity.
 
@@ -983,7 +1024,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - **Interfaccia utente:** Supporto dei temi di Visual Studio per il menu di scelta rapida e le icone.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 (2.0 anteprima)
- Data di rilascio: 12 novembre 2014
+Data di rilascio: 12 novembre 2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -993,15 +1034,15 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 
 - Miglioramento della visualizzazione dei valori durante il debug:
 
-    - Miglioramento della visualizzazione per ArrayLists, elenchi, tabelle hash e dizionari.
+  - Miglioramento della visualizzazione per ArrayLists, elenchi, tabelle hash e dizionari.
 
-    - Visualizzazione di membri non pubblici e statici come categorie in espressioni di controllo e visualizzazioni locali.
+  - Visualizzazione di membri non pubblici e statici come categorie in espressioni di controllo e visualizzazioni locali.
 
-    - Miglioramento della visualizzazione di SerializedProperty di Unity per valutare solo il campo del valore valido per la proprietà.
+  - Miglioramento della visualizzazione di SerializedProperty di Unity per valutare solo il campo del valore valido per la proprietà.
 
-    - Supporto di DebuggerDisplayAttribute per classi e struct.
+  - Supporto di DebuggerDisplayAttribute per classi e struct.
 
-    - Supporto di DebuggerTypeProxyAttribute.
+  - Supporto di DebuggerTypeProxyAttribute.
 
 - Inserimento dei metodi MonoBehaviour mediante le procedure guidate per rispettare le convenzioni per la scrittura di codice degli utenti.
 
@@ -1022,7 +1063,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Mancata registrazione del callback di log se non è necessario.
 
 ## <a name="1920"></a>1.9.2.0
- Data di rilascio: 9 ottobre 2014
+
+Data di rilascio: 9 ottobre 2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1045,7 +1087,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un bug per cui tutte le risorse venivano incluse nei file di progetto se il filtro delle estensioni era vuoto.
 
 ## <a name="1910"></a>1.9.1.0
- Data di rilascio: 22 settembre 2014
+
+Data di rilascio: 22 settembre 2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1090,7 +1133,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'apertura di script con VSTU nelle versioni a 64 bit di Unity.
 
 ## <a name="1900"></a>1.9.0.0
- Data di rilascio: 29 luglio 2014
+
+Data di rilascio: 29 luglio 2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1138,7 +1182,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 > Poiché C# è il linguaggio predominante nell'ecosistema Unity (le nuove risorse di esempio sono in C#, la documentazione di Unity sarà relativa a C# per impostazione predefinita), è stato rimosso il supporto tecnico di base per UnityScript e Boo in modo da concentrarsi meglio sull'esperienza in C#. Di conseguenza, le soluzioni VSTU sono ora solo in C# e vengono caricate molto più rapidamente.
 
 ## <a name="1820"></a>1.8.2.0
- Data di rilascio: 7 gennaio 2014
+
+Data di rilascio: 7 gennaio 2014
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1165,7 +1210,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Risoluzione di un problema di arresto anomalo in Unity quando l'assembly generato specifico della versione non è sincronizzato.
 
 ## <a name="1810"></a>1.8.1.0
- Data di rilascio: 21 novembre 2013
+
+Data di rilascio: 21 novembre 2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1198,7 +1244,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'apertura di script da Unity in modo da non confondere l'ordine ALT+TAB per Unity 4.2 e versioni successive.
 
 ## <a name="1800"></a>1.8.0.0
- Data di rilascio: 24 settembre 2013
+
+Data di rilascio: 24 settembre 2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1239,7 +1286,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della modifica dei valori booleani nella visualizzazione locale.
 
 ## <a name="1220"></a>1.2.2.0
- Data di rilascio: 9 luglio 2013
+
+Data di rilascio: 9 luglio 2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1262,7 +1310,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della gestione degli assembly di Unity 4.2 Beta.
 
 ## <a name="1210"></a>1.2.1.0
- Data di rilascio: 9 aprile 2013
+
+Data di rilascio: 9 aprile 2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1275,7 +1324,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'associazione dei punti di interruzione in alcune DLL esterne.
 
 ## <a name="1200"></a>1.2.0.0
- Data di rilascio: 25 marzo 2013
+
+Data di rilascio: 25 marzo 2013
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1342,10 +1392,10 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del bug UVS-11: Variabili locali nelle coroutine.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Versione beta
- Data di rilascio: 9 marzo 2013
+Data di rilascio: 9 marzo 2013
 
 ## <a name="10130"></a>1.0.13.0
- Data di rilascio: 21 gennaio 2013
+Data di rilascio: 21 gennaio 2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1368,7 +1418,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione della gestione di messaggi lunghi inviati da Unity a UnityVS. Prima di questa correzione, i messaggi lunghi potevano provocare l'arresto anomalo della parte di messaggistica di UnityVS. Di conseguenza, talvolta UnityVS non era in grado di aprire un file da Unity.
 
 ## <a name="10120"></a>1.0.12.0
- Data di rilascio: 3 gennaio 2013
+Data di rilascio: 3 gennaio 2013
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1387,7 +1437,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un problema di un'API per cui il codice utente non poteva fare parte del gestore dei callback di log.
 
 ## <a name="10110"></a>1.0.11.0
- Data di rilascio: 28 novembre 2012
+Data di rilascio: 28 novembre 2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1418,7 +1468,7 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione dell'arresto anomalo quando non è possibile inserire l'icona nella barra di stato di Visual Studio.
 
 ## <a name="10100"></a>1.0.10.0
- Data di rilascio: 9 ottobre 2012
+Data di rilascio: 9 ottobre 2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1431,7 +1481,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del modo in cui gli assembly vengono recuperati da Unity per evitare il blocco dei file e la confusione del processo di compilazione di Unity.
 
 ## <a name="1090"></a>1.0.9.0
- Data di rilascio: 3 ottobre 2012
+
+Data di rilascio: 3 ottobre 2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1450,7 +1501,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del bug UVS-21: Puntatore non valido durante la valutazione della chiamata di un metodo nell'API Math di Unity.
 
 ## <a name="1080"></a>1.0.8.0
- Data di rilascio: 26 settembre 2012
+
+Data di rilascio: 26 settembre 2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1461,7 +1513,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del modo in cui UnityVS viene registrato in Visual Studio 2010.
 
 ## <a name="1070"></a>1.0.7.0
- Data di rilascio: 14 settembre 2012
+
+Data di rilascio: 14 settembre 2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1477,10 +1530,11 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 > A causa del supporto di Visual Studio 2012, è stato necessario rinominare alcuni file e spostarne altri. Il pacchetto UnityVS per importare Unity si chiama ora UnityVS 2010 o UnityVS 2012, rispettivamente per Visual Studio 2010 e Visual Studio 2012. Per questa versione è anche necessario che i file di progetto di UnityVS vengano rigenerati.
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - Build interna
- Data di rilascio: 12 settembre 2012
+Data di rilascio: 12 settembre 2012
 
 ## <a name="1050"></a>1.0.5.0
- Data di rilascio: 10 settembre 2012
+
+Data di rilascio: 10 settembre 2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1489,20 +1543,22 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del rilevamento di istanze di Unity quando Unity è connesso al server delle risorse. Questo problema generava errori di apertura dei file da Unity e relativi alla connessione automatica del debugger di Visual Studio.
 
 ## <a name="1040"></a>1.0.4.0
- Data di rilascio: 5 settembre 2012
+
+Data di rilascio: 5 settembre 2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
 - Conversione automatica dei simboli di debug in Unity.
 
-     Se nella cartella Asset è presente un assembly DLL .NET con il file PDB associato, è sufficiente importare l'assembly perché UnityVS converta il file PDB in un file di simboli di debug riconosciuto dal motore di script di Unity e perché sia possibile passare agli assembly .NET da UnityVS.
+    Se nella cartella Asset è presente un assembly DLL .NET con il file PDB associato, è sufficiente importare l'assembly perché UnityVS converta il file PDB in un file di simboli di debug riconosciuto dal motore di script di Unity e perché sia possibile passare agli assembly .NET da UnityVS.
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
 - Correzione dell'arresto anomalo di UnityVS durante il debug, causato da eccezioni generate da metodi o proprietà all'interno di Unity.
 
 ## <a name="1030"></a>1.0.3.0
- Data di rilascio: 4 settembre 2012
+
+Data di rilascio: 4 settembre 2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1517,7 +1573,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un arresto anomalo casuale di Visual Studio provocato dalla barra di stato personalizzata.
 
 ## <a name="1020"></a>1.0.2.0
- Data di rilascio: 30 agosto 2012
+
+Data di rilascio: 30 agosto 2012
 
 ### <a name="bug-fixes"></a>Correzioni di bug
 
@@ -1528,7 +1585,8 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione di un bug relativo al modo in cui gli assembly di script vengono recuperato da Unity con Unity 4 b7.
 
 ## <a name="1010"></a>1.0.1.0
- Data di rilascio: 28 agosto 2012
+
+Data di rilascio: 28 agosto 2012
 
 ### <a name="new-features"></a>Nuove funzionalità
 
@@ -1545,4 +1603,4 @@ Registro delle modifiche di Visual Studio Tools per Unity.
 - Correzione del completamento per le DLL all'interno della cartella Asset per UnityScript e Boo.
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - Versione iniziale
- Data di rilascio: 22 agosto 2012
+Data di rilascio: 22 agosto 2012

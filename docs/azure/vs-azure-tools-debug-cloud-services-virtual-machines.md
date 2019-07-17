@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550720"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890644"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Debug di un servizio cloud o di una macchina virtuale di Azure in Visual Studio
 
@@ -39,7 +39,8 @@ L'emulatore simula il servizio di calcolo di Azure e viene eseguito nell'ambient
 
 3. È possibile eseguire l'applicazione un'istruzione alla volta selezionando i comandi del menu **Debug** e impostando punti di interruzione nel codice. Mentre si esegue l'applicazione un'istruzione alla volta nel debugger, i riquadri vengono aggiornati con lo stato corrente dell'applicazione. Quando si arresta il debug, la distribuzione dell'applicazione viene eliminata. Se l'applicazione include un ruolo Web e la proprietà dell'azione di avvio è stata impostata per l'avvio del Web browser, Visual Studio avvia l'applicazione Web nel browser. Se si modifica il numero di istanze di un ruolo nella configurazione del servizio, è necessario arrestare il servizio cloud e quindi riavviare il debug perché sia possibile eseguire il debug delle nuove istanze del ruolo.
 
-    **Nota:** quando si arresta l'esecuzione o il debug del servizio, l'emulatore di calcolo locale e l'emulatore di archiviazione non vengono arrestati. È necessario arrestarli in modo esplicito dall'area di notifica.
+    > [!NOTE]
+    > quando si arresta l'esecuzione o il debug del servizio, l'emulatore di calcolo locale e l'emulatore di archiviazione non vengono arrestati. È necessario arrestarli in modo esplicito dall'area di notifica.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Debug di un servizio cloud in Azure
 
@@ -145,7 +146,8 @@ I progetti ASP.NET di Visual Studio offrono un'opzione per creare una macchina v
 
     ![Finestra di dialogo Crea progetto Web ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Nota:** verrà chiesto di accedere all'account Azure, se non è ancora stato eseguito l'accesso.
+    > [!NOTE]
+    > verrà chiesto di accedere all'account Azure, se non è ancora stato eseguito l'accesso.
 
 3. Selezionare le varie impostazioni per la macchina virtuale e quindi scegliere **OK**. Per altre informazioni, vedere [Macchine virtuali](http://go.microsoft.com/fwlink/?LinkId=623033) .
 

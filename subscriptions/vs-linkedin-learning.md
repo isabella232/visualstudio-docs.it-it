@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Altre informazioni sul vantaggio LinkedIn Learning incluso come parte della sottoscrizione LinkedIn Premium inclusa nelle sottoscrizioni di Visual Studio selezionate.
-searchscope: VS Subscription
-ms.openlocfilehash: eee217bf15a89d24799997c926d598288cec5277
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 2ae1bd5442a062514525df3d1bada70eba71a81d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032851"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824804"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Vantaggio LinkedIn Learning nelle sottoscrizioni di Visual Studio
 
@@ -110,7 +109,7 @@ R:  No, l'offerta LinkedIn Learning è disponibile solo per i nuovi sottoscritto
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con LinkedIn Learning?  Vedere queste risorse:
-    - Assistenza per l'[uso di LinkedIn Learning](https://www.linkedin.com/help/learning).
-    - Supporto per domande di carattere generale su [LinkedIn](https://www.linkedin.com/help/linkedin) , ad esempio la creazione di account e profili e la gestione della rete.
+  - Assistenza per l'[uso di LinkedIn Learning](https://www.linkedin.com/help/learning).
+  - Supporto per domande di carattere generale su [LinkedIn](https://www.linkedin.com/help/linkedin) , ad esempio la creazione di account e profili e la gestione della rete.
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

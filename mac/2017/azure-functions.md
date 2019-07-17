@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933478"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824420"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduzione alle funzioni di Azure
 
@@ -96,7 +96,7 @@ I modelli di funzione consentono di creare rapidamente nuove funzioni usando i t
 3. Nella finestra di dialogo **Pubblica in Servizi app di Azure** è possibile selezionare un servizio app esistente o crearne uno nuovo facendo clic **Nuovo**.
 4. Nella finestra di dialogo **Crea nuovo servizio app** immettere le impostazioni:  ![Opzione di menu Pubblica in Azure](media/azure-functions-image7.png)
 
-    |Impostazione  |Description  |
+    |Impostazione  |DESCRIZIONE  |
     |---------|---------|
     |**Nome del servizio app**|Nome globalmente univoco che identifica la nuova app per le funzioni.|
     |**Sottoscrizione**|La sottoscrizione di Azure da usare.|
@@ -140,14 +140,14 @@ Un'altra impostazione importante che potrebbe essere necessario impostare è `FU
 ## <a name="available-function-templates"></a>Modelli di funzioni disponibili
 
 - **Trigger GitHub**: risponde a eventi che si verificano nei repository GitHub. Per altre informazioni, vedere l'[articolo di Funzioni di Azure su GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Commenter GitHub: funzione che viene eseguita e aggiunge un commento ogni volta che viene ricevuto un webhook GitHub per un problema o una richiesta pull.
-    - WebHook GitHub: funzione che viene eseguita ogni volta che viene ricevuto un webhook GitHub.
+  - Commenter GitHub: funzione che viene eseguita e aggiunge un commento ogni volta che viene ricevuto un webhook GitHub per un problema o una richiesta pull.
+  - WebHook GitHub: funzione che viene eseguita ogni volta che viene ricevuto un webhook GitHub.
 
 - **HTTP**: attivare l'esecuzione del codice usando una richiesta HTTP. Sono disponibili modelli espliciti per i seguenti trigger HTTP:
-    - Trigger HTTP
-    - Http GET CRUD
-    - Http POST CRUD
-    - Trigger HTTP con parametri
+  - Trigger HTTP
+  - Http GET CRUD
+  - Http POST CRUD
+  - Trigger HTTP con parametri
 
 - **Timer**: consente di eseguire attività di pulizia o altre attività batch in una pianificazione predefinita. Questo modello supporta due campi: un nome e una pianificazione, ovvero un'espressione CRON a sei campi. Per altre informazioni, vedere [l'articolo di Funzioni di Azure con timer](/azure/azure-functions/functions-create-scheduled-function)
 

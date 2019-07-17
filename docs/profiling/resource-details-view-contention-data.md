@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c4c3922f8f41f950ede7065e2e15ece07890ba6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797772"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825847"
 ---
 # <a name="resource-details-view---contention-data"></a>Visualizzazione Dettagli risorsa: dati sui conflitti
 La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale degli eventi di blocco causati dai conflitti relativi a una risorsa selezionata. Si verifica un evento di blocco quando un thread viene indotto a sospendere l'esecuzione perché un altro thread ha bloccato l'accesso alla risorsa.
@@ -36,9 +36,9 @@ La visualizzazione Dettagli risorsa presenta un grafico della sequenza temporale
 
 - Effettuare uno dei passaggi indicati di seguito.
 
-    - Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.
+  - Fare clic su **Zoom indietro** per tornare al livello di zoom precedente.
 
-    - Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.
+  - Fare clic su **Reimposta Zoom** per mostrare l'intera sequenza temporale nella visualizzazione.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Per visualizzare lo stack di chiamate di un evento
 

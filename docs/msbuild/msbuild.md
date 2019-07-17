@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437867"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823494"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] è una piattaforma per la compilazione di applicazioni. Questo motore, anche noto come MSBuild, fornisce un XML Schema per un file di progetto che controlla il modo in cui la piattaforma di compilazione elabora e compila il software. Visual Studio utilizza MSBuild, ma esso non dipende da Visual Studio. Richiamando *msbuild.exe* nel progetto o nel file della soluzione, è possibile orchestrare e compilare prodotti in ambienti in cui Visual Studio non è installato.
@@ -35,13 +35,13 @@ ms.locfileid: "63437867"
 
 - Si intende modificare il sistema di compilazione. Ad esempio, può essere necessario consentire le azioni seguenti:
 
-    - Pre-elabora i file prima che arrivino al compilatore.
+  - Pre-elabora i file prima che arrivino al compilatore.
 
-    - Copiare gli output di compilazione in un'altra posizione.
+  - Copiare gli output di compilazione in un'altra posizione.
 
-    - Creare file compressi dagli output di compilazione.
+  - Creare file compressi dagli output di compilazione.
 
-    - Eseguire un passaggio di post-elaborazione. Ad esempio, può essere utile contrassegnare un assembly con una versione diversa.
+  - Eseguire un passaggio di post-elaborazione. Ad esempio, può essere utile contrassegnare un assembly con una versione diversa.
 
 È possibile scrivere codice nell'IDE di Visual Studio ed eseguire le compilazioni tramite MSBuild. In alternativa, è possibile compilare il codice nell'IDE in un computer di sviluppo e usare una riga di comando di MSBuild per compilare il codice integrato da più sviluppatori.
 
@@ -168,7 +168,7 @@ Per altre informazioni, vedere [Multitargeting](../msbuild/msbuild-multitargetin
 
 ## <a name="see-also"></a>Vedere anche
 
-| Titolo | Description |
+| Titolo | DESCRIZIONE |
 | - | - |
 | [Procedura dettagliata: Creazione di un nuovo file di progetto MSBuild](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra come creare in modo incrementale un file di progetto di base usando soltanto un editor di testo. |
 | [Procedura dettagliata: Uso di MSBuild](../msbuild/walkthrough-using-msbuild.md) | Introduce i blocchi predefiniti di MSBuild e mostra come scrivere, modificare ed eseguire il debug di progetti MSBuild senza chiudere l'IDE di Visual Studio. |

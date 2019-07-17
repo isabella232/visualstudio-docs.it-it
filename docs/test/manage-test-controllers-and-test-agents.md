@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788752"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824233"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gestire i test controller e gli agenti di test
 
@@ -114,7 +114,7 @@ Per poter rimuovere un agente di test, è necessario che sia impostato sullo sta
 
 Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valori seguenti:
 
-|Status|Description|
+|Status|DESCRIZIONE|
 |-|-----------------|
 |Test in esecuzione|Esecuzione di test|
 |Pronto|Disponibile per l'esecuzione dei test o la raccolta di informazioni e dati di diagnostica|
@@ -140,7 +140,7 @@ Lo stato dell'agente di test può essere rappresentato da uno qualsiasi dei valo
 
 1. Modificare le seguenti proprietà dell'agente di test in base alle necessità:
 
-|Proprietà dell'agente di test|Description|
+|Proprietà dell'agente di test|DESCRIZIONE|
 |-|-----------------|
 |**Peso**|Consente di distribuire il carico quando si usano agenti di test con livelli diversi di prestazioni. Ad esempio, un agente di test con un peso pari a 100 riceve un carico doppio rispetto a uno con un peso di 50.|
 |**Commutazione IP**|Usato per configurare la commutazione IP. La commutazione IP consente a un agente di test di inviare richieste a un server usando un intervallo di indirizzi IP. In questo modo si simulano le chiamate provenienti da computer client diversi.<br /><br /> La commutazione IP è importante se il test di carico accede a una Web farm. La maggior parte dei servizi di bilanciamento del carico stabilisce un'affinità tra un client e un determinato server Web usando l'indirizzo IP del client. Se tutte le richieste sembrano provenire da un singolo client, il servizio di bilanciamento del carico non bilancia il carico. Per ottenere un buon bilanciamento del carico nella Web farm, verificare che le richieste provengano da un intervallo di indirizzi IP. **Nota:**  è possibile specificare una scheda di rete o usare **(Tutti non assegnati)** per selezionarne automaticamente una non in uso. <br /><br /> Per usare la funzionalità di commutazione IP, è necessario che il servizio agente di test di Visual Studio sia in esecuzione come utente del gruppo Administrators del computer in cui si trova l'agente. Questo utente viene selezionato durante l'installazione dell'agente, ma è possibile cambiarlo modificando le proprietà del servizio e riavviandolo.<br /><br /> Per verificare che la commutazione IP funzioni correttamente, abilitare la funzionalità di registrazione di IIS nel server Web e usarla per verificare che le richieste provengano dagli indirizzi IP configurati.|
@@ -186,25 +186,25 @@ Quando si aggiungono ruoli per l'applicazione alle impostazioni test per Visual 
 
 - Non sono disponibili agenti per il ruolo che deve eseguire i test. Non è possibile eseguire i test. È possibile effettuare una delle azioni seguenti e quindi rieseguire i test:
 
-    - È possibile attendere che un agente diventi disponibile per il ruolo affinché possano essere eseguiti i test.
+  - È possibile attendere che un agente diventi disponibile per il ruolo affinché possano essere eseguiti i test.
 
-    - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile riavviare l'agente in modo che risulti disponibile.
+  - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile riavviare l'agente in modo che risulti disponibile.
 
-    - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
+  - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
 
-    - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare gli altri agenti che si desidera usare.
+  - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare gli altri agenti che si desidera usare.
 
 - Non sono disponibili agenti per uno o più ruoli che eseguono adattatori dati di diagnostica. È possibile eseguire i test ma non l'adattatore dati di diagnostica. È possibile eseguire i test senza l'adattatore dati di diagnostica oppure effettuare una delle azioni seguenti e rieseguire i test:
 
-    - È possibile attendere che un agente diventi disponibile per i ruoli.
+  - È possibile attendere che un agente diventi disponibile per i ruoli.
 
-    - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile modificare lo stato dell'agente impostandolo su online scegliendo **Amministra controller test** dal menu **Test**. Potrebbe essere inoltre necessario riavviare l'agente se questo è stato disconnesso dal controller.
+  - Se sono presenti agenti attualmente offline utilizzabili per il ruolo, è possibile modificare lo stato dell'agente impostandolo su online scegliendo **Amministra controller test** dal menu **Test**. Potrebbe essere inoltre necessario riavviare l'agente se questo è stato disconnesso dal controller.
 
-    - Verificare che gli agenti che potrebbe essere necessario usare per l'esecuzione del test non siano occupati con altri test. È possibile controllare lo stato di qualsiasi agente scegliendo **Amministra controller test** dal menu **Test**.
+  - Verificare che gli agenti che potrebbe essere necessario usare per l'esecuzione del test non siano occupati con altri test. È possibile controllare lo stato di qualsiasi agente scegliendo **Amministra controller test** dal menu **Test**.
 
-    - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
+  - È possibile aggiungere al controller di test un altro agente con le proprietà corrette per il ruolo.
 
-    - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare altri agenti che si desidera usare.
+  - È possibile modificare le proprietà dell'agente per il ruolo nelle impostazioni di test in modo da abilitare altri agenti che si desidera usare.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Caricare test da assembly di test con firma ritardata
 

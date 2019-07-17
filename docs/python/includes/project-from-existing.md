@@ -1,11 +1,11 @@
 ---
 ms.topic: include
 ms.openlocfilehash: 47c390fbc7a6f84c25d4bde0317985bd149cae2f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260507"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68159593"
 ---
 1. Avviare Visual Studio e selezionare **File** > **Nuovo** > **Progetto**.
 

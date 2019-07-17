@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893008"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823862"
 ---
 # <a name="shader-designer"></a>Finestra di progettazione shader
 
@@ -52,7 +52,7 @@ In questa sezione viene descritto come aggiungere uno shader DGSL al progetto Vi
 
 2. In **Esplora soluzioni** aprire il menu di scelta rapida del progetto C++ a cui si vuole aggiungere lo shader e quindi scegliere **Aggiungi** > **Nuovo elemento**.
 
-3. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)**.
+3. Nella finestra di dialogo **Aggiungi nuovo elemento**, in **Installato**, selezionare **Grafica** e quindi selezionare **Visual Effect Graph (.dgsl)** .
 
    > [!NOTE]
    > Se non viene visualizzata la categoria **Grafica** nella finestra di dialogo **Aggiungi nuovo elemento** e il componente **Editor di immagini e modelli 3D** è installato, gli elementi grafici non sono supportati per il tipo di progetto.
@@ -81,7 +81,7 @@ Di seguito è illustrata la barra degli strumenti **Modalità progettazione shad
 
 Questa tabella descrive gli elementi disponibili nella barra degli strumenti **Modalità progettazione shader**, elencati nell'ordine di visualizzazione da sinistra verso destra.
 
-|Elemento della barra degli strumenti|Description|
+|Elemento della barra degli strumenti|DESCRIZIONE|
 |------------------|-----------------|
 |**Seleziona**|Consente l'interazione con i nodi e i bordi nel grafico. In questa modalità è possibile selezionare nodi per spostarli o eliminarli, nonché definire bordi o interromperli.|
 |**Panoramica**|Consente lo spostamento di un grafico shader relativo alla cornice della finestra. Per visualizzare una panoramica, selezionare un punto nell'area di progettazione e spostarlo nell'area circostante.<br /><br /> In modalità **Seleziona** è possibile tenere premuto **CTRL** per attivare temporaneamente la modalità **Panoramica**.|
@@ -109,17 +109,17 @@ Usare la modalità **Seleziona** per aggiungere, rimuovere, riposizionare, conne
 
 - Ecco come:
 
-   - Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.
+  - Per aggiungere un nodo al grafico, selezionarlo nella **casella degli strumenti** e spostarlo nell'area di progettazione.
 
-   - Per rimuovere un nodo dal grafico, selezionarlo e premere **CANC**.
+  - Per rimuovere un nodo dal grafico, selezionarlo e premere **CANC**.
 
-   - Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.
+  - Per riposizionare un nodo, selezionarlo e spostarlo in una nuova posizione.
 
-   - Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.
+  - Per collegare due nodi, spostare un terminale di output di un nodo in un terminale di input dell'altro nodo. Possono essere collegati solo terminali con tipi compatibili. Una linea tra i terminali mostra la connessione.
 
-   - Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.
+  - Per rimuovere una connessione, scegliere **Interrompi collegamenti** dal menu di scelta rapida di uno dei terminali connessi.
 
-   - Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.
+  - Per configurare le proprietà di un nodo, selezionare il nodo e nella finestra **Proprietà** specificare nuovi valori per le proprietà.
 
 ### <a name="preview-shaders"></a>Anteprima degli shader
 
@@ -182,8 +182,8 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 |Selezionare tutto|**CTRL**+**A**|
 |Eliminare la selezione corrente|**Eliminazione**|
 |Annullare la selezione corrente|**ESCAPE** (**ESC**)|
-|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> Segno più (**+**)|
-|Fare zoom indietro|**CTRL**+**Rotellina del mouse indietro**<br /><br /> Segno meno (**-**)|
+|Fare zoom avanti|**CTRL**+**Rotellina del mouse avanti**<br /><br /> Segno più ( **+** )|
+|Fare zoom indietro|**CTRL**+**Rotellina del mouse indietro**<br /><br /> Segno meno ( **-** )|
 |Fare una panoramica dell'area di progettazione verso l'alto|**Rotellina del mouse indietro**<br /><br /> **PGGIÙ**|
 |Fare una panoramica dell'area di progettazione verso il basso|**Rotellina del mouse avanti**<br /><br /> **PGSU**|
 |Fare una panoramica dell'area di progettazione verso sinistra|**MAIUSC**+**Rotellina del mouse indietro**<br /><br /> **Rotellina del mouse a sinistra**<br /><br /> **MAIUSC**+**PGGIÙ**|
@@ -199,7 +199,7 @@ Per altre informazioni su come esportare gli shader, vedere [Procedura: Esportar
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-|Titolo|Description|
+|Titolo|DESCRIZIONE|
 |-----------|-----------------|
 |[Uso di risorse 3D per giochi e app](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornisce una panoramica degli strumenti di Visual Studio a cui attingere per poter usare trame e immagini, modelli 3D ed effetti shader.|
 |[Image Editor](../designers/image-editor.md)|Descrive come usare l'editor di immagini di Visual Studio con trame e immagini.|

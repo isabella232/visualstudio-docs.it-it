@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio Visual Studio App Center nelle sottoscrizioni di Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 53b140bf425c184d62e4b4ff0af81b8ab8415021
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 1f57f6518c82c0eb60cbea9636c9973d2c9fd624
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032766"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826208"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center nelle sottoscrizioni di Visual Studio
 
@@ -67,7 +66,7 @@ A questo punto dovrebbe essere possibile accedere al portale di App Center e cre
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con App Center?
-    - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/).
-    - Vedere la [documentazione completa di App Center](/appcenter/)
+  - È possibile ottenere suggerimenti e risposte dal team di App Center in [App Center Help Center](https://intercom.help/appcenter/).
+  - Vedere la [documentazione completa di App Center](/appcenter/)
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).

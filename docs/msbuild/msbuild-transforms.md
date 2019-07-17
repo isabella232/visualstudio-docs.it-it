@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414691"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852178"
 ---
 # <a name="msbuild-transforms"></a>Trasformazioni di MSBuild
 Una trasformazione è una conversione uno-a-uno di un elenco di elementi in un altro. Oltre a consentire a un progetto di convertire gli elenchi di elementi, una trasformazione consente a una destinazione di identificare un mapping diretto tra gli input e gli output. Questo argomento descrive le trasformazioni e il relativo uso in [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] per compilare progetti in modo più efficiente.
@@ -63,7 +63,7 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ## <a name="example"></a>Esempio
 
-### <a name="description"></a>Description
+### <a name="description"></a>DESCRIZIONE
  L'esempio seguente illustra un file di progetto di [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] in cui vengono usate le trasformazioni. In questo esempio si presuppone che vi sia un solo file con estensione *xsd* nella directory *c:\sub0\sub1\sub2\sub3* e che la directory di lavoro sia *c:\sub0*.
 
 ### <a name="code"></a>Codice
@@ -92,11 +92,11 @@ Se, ad esempio, gli elementi contenuti nell'elenco @(RESXFile) sono *Form1.resx*
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

@@ -6,13 +6,12 @@ manager: lank
 ms.date: 10/31/2018
 ms.topic: conceptual
 description: Informazioni sull'anonimizzazione dei dati dei sottoscrittori quando viene perso l'accesso alle sottoscrizioni.
-searchscope: VS Subscription
-ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d4e4c5f2e1946a75a70ab4ddb49f000c951cd97
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946205"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783663"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimizzazione dei dati del sottoscrittore di Visual Studio
 

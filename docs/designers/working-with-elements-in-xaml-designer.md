@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844042"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823818"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Usare gli elementi nella finestra di progettazione XAML
 
@@ -43,15 +43,15 @@ Per modificare l'ordine dei livelli, effettuare una delle operazioni seguenti:
 
 - Fare clic con il pulsante destro del mouse nella finestra Struttura documento o nella tavola da disegno per cui si vuole modificare l'ordine dei livelli, scegliere **Ordina** e fare clic su una delle opzioni seguenti:
 
-   - **Porta in primo piano** per portare l'elemento davanti a tutti gli altri nell'ordine.
+  - **Porta in primo piano** per portare l'elemento davanti a tutti gli altri nell'ordine.
 
-   - **Porta avanti** per portare l'elemento avanti di un livello nell'ordine.
+  - **Porta avanti** per portare l'elemento avanti di un livello nell'ordine.
 
-   - **Porta indietro** per portare l'elemento indietro di un livello nell'ordine.
+  - **Porta indietro** per portare l'elemento indietro di un livello nell'ordine.
 
-   - **Porta in secondo piano** per portare l'elemento dietro tutti gli altri nell'ordine.
+  - **Porta in secondo piano** per portare l'elemento dietro tutti gli altri nell'ordine.
 
-   Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** maggiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
+  Modificare la proprietà **ZIndex** nella sezione **Layout** della finestra Proprietà. Per gli elementi che si sovrappongono, la proprietà **ZIndex** ha la precedenza sull'ordine degli elementi indicato nella finestra Struttura documento. Un elemento con un valore **ZIndex** maggiore viene visualizzato in primo piano quando gli elementi si sovrappongono.
 
 ## <a name="change-the-alignment-of-an-element"></a>Modificare l'allineamento di un elemento
 

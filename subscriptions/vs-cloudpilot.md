@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Informazioni sul vantaggio CloudPilot disponibile nelle sottoscrizioni di Visual Studio selezionate
-searchscope: VS Subscription
-ms.openlocfilehash: 38b857ee9ba385f3b7be12be725712f338b248f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 66de81b30d8eeb315353aa0b6aa37e75c50a19d6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032587"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825911"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Vantaggio CloudPilot nelle sottoscrizioni di Visual Studio
 
@@ -76,9 +75,9 @@ Non si è certi della sottoscrizione in uso?  Connettersi a [https://my.visualst
 
 ## <a name="support-resources"></a>Risorse di supporto
 - Serve aiuto con CloudPilot?  Vedere queste risorse:
-    - [Contattare UnifyCloud](https://www.unifycloud.com/contacts/) per eventuali domande sui prodotti UnifyCloud.
-    - [Manuale dell'utente di CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Inviare una richiesta di supporto](https://support.datacamp.com/hc/requests/new)
+  - [Contattare UnifyCloud](https://www.unifycloud.com/contacts/) per eventuali domande sui prodotti UnifyCloud.
+  - [Manuale dell'utente di CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Inviare una richiesta di supporto](https://support.datacamp.com/hc/requests/new)
 
 - Per assistenza per le vendite, le sottoscrizioni, gli account e la fatturazione per le sottoscrizioni di Visual Studio, contattare il [servizio di supporto per le sottoscrizioni](https://visualstudio.microsoft.com/subscriptions/support/) di Visual Studio.
 - Per domande sull'IDE di Visual Studio, Azure DevOps Services o altri prodotti e servizi Visual Studio,  visitare il [sito del supporto di Visual Studio](https://visualstudio.microsoft.com/support/).
