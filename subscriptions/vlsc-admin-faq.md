@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/13/2018
 ms.topic: conceptual
 description: Domande frequenti sulla migrazione dell'amministrazione del Volume License Service Center
-searchscope: VS Subscription
-ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34c5d2d287507699ebc47bdd7e4716838c408d07
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427975"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784757"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migrazione dell'amministrazione delle sottoscrizioni di Visual Studio
 

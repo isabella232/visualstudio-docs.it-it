@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Informazioni su come configurare l'account con pagamento in base al consumo di Azure.
-searchscope: VS Subscription
-ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa5cd98b1526f654a4bb2803e5b22dde72cb8fda
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948247"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784668"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurazione di una sottoscrizione per sviluppo/test con pagamento in base al consumo di Azure
 È possibile collaborare con il team nel cloud  creando più sottoscrizioni per sviluppo e test con pagamento in base al consumo, consentendo la collaborazione con altri sottoscrittori e garantendo allo stesso tempo l'isolamento tra i team e l'ambiente.  Sono disponibili tariffe orarie scontate esclusive per sviluppo/test e diritti speciali di uso del cloud per il software della sottoscrizione di Azure.
