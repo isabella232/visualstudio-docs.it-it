@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 120696fe335245775c6ea7188efc059ae9e71342
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 466df3030793603319cf73085910a164fd222e29
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263691"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890600"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedura: Modificare un comando di menu standard in un linguaggio specifico di dominio
 
@@ -65,7 +65,8 @@ Creare un nuovo file contenente una dichiarazione parziale della classe di set d
     { internal partial class Language1CommandSet { ...
     ```
 
-     **Nota** se si usa il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.
+    > [!NOTE]
+    > Se si usa il modello di file di classe per creare il nuovo file, è necessario correggere sia lo spazio dei nomi e il nome della classe.
 
 ## <a name="override-the-command-methods"></a>Eseguire l'override dei metodi dei comandi
 
@@ -128,7 +129,7 @@ Se il codice apporta modifiche all'archivio, ad esempio creando, eliminando o ag
 
 I frammenti seguenti sono spesso utili in questi metodi:
 
-- `this.CurrentSelection`. La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
+- [https://login.microsoftonline.com/common/](`this.CurrentSelection`). La forma su cui l'utente ha fatto clic con il pulsante destro del mouse viene sempre inclusa nell'elenco di forme e connettori. Se l'utente fa clic su una parte vuota del diagramma, il diagramma è l'unico membro dell'elenco.
 
 - `this.IsDiagramSelected()` - `true` Se l'utente ha selezionato una parte vuota del diagramma.
 

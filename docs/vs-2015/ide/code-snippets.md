@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188847"
 ---
 # <a name="code-snippets"></a>Frammenti di codice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Per inserire questo frammento di codice fare clic su **Inserisci frammento di codice** nel menu di scelta rapida della finestra del codice, scegliere **Visual C#**, quindi digitare `tryf` e premere il tasto TAB oppure è possibile digitare `tryf` e premere TAB + TAB.  
+ Per inserire questo frammento di codice fare clic su **Inserisci frammento di codice** nel menu di scelta rapida della finestra del codice, scegliere **Visual C#** , quindi digitare `tryf` e premere il tasto TAB oppure è possibile digitare `tryf` e premere TAB + TAB.  
   
  Un esempio di un frammento Racchiudi tra: in C++ il collegamento `if` può essere usato come frammento di inserimento o come frammento Racchiudi tra. Se si seleziona una riga di codice (ad esempio `return FALSE;`) e si fa clic su **Racchiudi tra**, quindi su **if**, il frammento viene espanso intorno alla riga:  
   
@@ -86,7 +86,7 @@ End Property
  È possibile aggiungere e rimuovere le directory del frammento di codice con i pulsanti **Aggiungi** e **Rimuovi** nella finestra di dialogo **Gestione frammenti di codice**. Per aggiungere singoli frammenti di codice usare il pulsante **Importa**.  
   
 ## <a name="see-also"></a>Vedere anche  
- [Walkthrough: Creating a Code Snippet](../ide/walkthrough-creating-a-code-snippet.md)  (Procedura dettagliata: Creazione di un frammento di codice)  
+ [Procedura dettagliata: Creazione di un frammento di codice](../ide/walkthrough-creating-a-code-snippet.md)   
  [Procedura: Distribuire frammenti di codice](../ide/how-to-distribute-code-snippets.md)   
  [Procedure consigliate per l'uso dei frammenti di codice](../ide/best-practices-for-using-code-snippets.md)   
  [Risoluzione dei problemi relativi ai frammenti di codice](../ide/troubleshooting-snippets.md)   
