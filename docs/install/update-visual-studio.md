@@ -2,7 +2,7 @@
 title: Aggiornare Visual Studio
 titleSuffix: ''
 description: Informazioni sulla procedura dettagliata di aggiornamento di Visual Studio alla versione più recente.
-ms.date: 06/19/2019
+ms.date: 07/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -10,17 +10,19 @@ ms.technology: vs-installation
 helpviewer_keywords:
 - update [Visual Studio]
 - change [Visual Studio]
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.ProductUpdates
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
+ms.openlocfilehash: 9ed8ce37351d8129107711e6fd079622050d6aa0
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67290652"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250563"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Aggiornare Visual Studio alla versione più recente
 
@@ -257,6 +259,27 @@ Ecco come aggiornare Visual&nbsp;Studio&nbsp;2019.
 1. Nella finestra di dialogo **Aggiornamento scaricato e pronto per l'installazione** scegliere **Aggiorna**.
 
    Visual Studio viene aggiornato, chiuso e quindi riaperto.
+
+## <a name="customize-update-settings"></a>Personalizzare le impostazioni di aggiornamento
+
+È possibile personalizzare le impostazioni di aggiornamento in Visual Studio in diversi modi, ad esempio modificando la modalità di installazione e selezionando i download automatici.
+
+Esistono due modalità di installazione tra cui scegliere:
+
+* **Installa durante il download**
+* **Scarica tutto, quindi installa**
+
+È anche possibile scegliere l'impostazione **Scarica automaticamente gli aggiornamenti** che consente il download degli aggiornamenti mentre il computer è inattivo.
+
+Ecco come:
+
+1. Nella barra dei menu scegliere **Strumenti** > **Opzioni**.
+
+2. Espandere **Ambiente** e quindi scegliere **Aggiornamenti prodotto**.
+
+    ![Impostazioni di aggiornamento in Visual Studio](media/vs-2019/update-settings-options.png)
+
+3. Scegliere la modalità di installazione e le opzioni di download automatico desiderate per gli aggiornamenti di Visual Studio.
 
 ::: moniker-end
 

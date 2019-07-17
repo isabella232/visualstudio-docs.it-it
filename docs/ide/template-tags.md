@@ -1,5 +1,6 @@
 ---
 title: Aggiungere o modificare tag nei modelli di progetto
+description: Informazioni su come aggiungere o modificare tag nei modelli di progetto in Visual Studio.
 ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
@@ -12,36 +13,36 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 4a5113fa7f420d58892e2737ec9196422486490e
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66038627"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891143"
 ---
 # <a name="add-tags-to-project-templates"></a>Aggiungere tag ai modelli di progetto
 
-A partire da [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) versione 16.1 Preview 2, è possibile aggiungere tag per il linguaggio, la piattaforma e il tipo di progetto ai modelli di progetto. I tag vengono usati in due posizioni nella finestra di dialogo Nuovo progetto:
+A partire da [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) versione 16.1 Preview 2, è possibile aggiungere tag per il linguaggio, la piattaforma e il tipo di progetto ai modelli di progetto. 
 
-- I tag vengono visualizzati sotto la descrizione del modello
+I tag vengono usati in due posizioni nella finestra di dialogo **Nuovo progetto**:
+
+- I tag vengono visualizzati sotto la descrizione del modello.
 
    ![Modello di progetto con i tag nella finestra di dialogo Nuovo progetto](media/npd-item-with-template-tags.png)
 
-- I tag consentono operazioni di ricerca e filtro per i modelli
+- I tag consentono operazioni di ricerca e filtro per i modelli.
 
    ![Ricerca e filtro nella finestra di dialogo Nuovo progetto](media/npd-search-and-filter.png)
 
-È possibile aggiungere tag aggiornando il file XML con estensione *vstemplate* usando i tag modello inclusi in Visual Studio o tramite la creazione di tag modello personalizzati. I tag modello vengono visualizzati solo nella finestra di dialogo Nuovo progetto di Visual Studio 2019. Non influiscono sul rendering del modello nelle versioni precedenti di Visual Studio.
+È possibile aggiungere tag aggiornando il file XML con estensione *vstemplate*. È possibile usare i tag modello inclusi in Visual Studio o creare tag modello personalizzati. I tag modello vengono visualizzati solo nella finestra di dialogo **Nuovo progetto** di Visual Studio 2019. I tag modello non influiscono sulla modalità di rendering del modello nelle versioni precedenti di Visual Studio.
 
 ## <a name="add-or-edit-tags"></a>Aggiungere o modificare tag
 
-È possibile aggiungere o modificare tag nel file XML *vstemplate* del modello di progetto nei casi seguenti:
+È possibile aggiungere o modificare tag nel file XML con estensione *vstemplate* del modello di progetto quando si esegue una delle azioni seguenti:
 
-* [Creazione di un nuovo modello di progetto](/visualstudio/ide/how-to-create-project-templates) tramite l'Esportazione guidata modelli
-
-* [Aggiornamento del modello di progetto esistente](/visualstudio/ide/how-to-update-existing-templates)
-
-* [Creazione di un nuovo modello di progetto VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+* [Creazione di un nuovo modello di progetto](/visualstudio/ide/how-to-create-project-templates) tramite l'Esportazione guidata modelli.
+* [Aggiornamento del modello di progetto esistente](/visualstudio/ide/how-to-update-existing-templates).
+* [Creazione di un nuovo modello di progetto VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
 
 ## <a name="syntax"></a>Sintassi
 
@@ -53,9 +54,9 @@ A partire da [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 
 ## <a name="attributes"></a>Attributi
 
-Gli attributi seguenti sono facoltativi e progettati per scenari utente avanzati.
+È possibile usare gli attributi facoltativi seguenti in scenari utente avanzati:
 
-|Attributo|Description|
+|Attributo|DESCRIZIONE|
 |---------------|-----------------|
 |`Package`|GUID che specifica l'ID del pacchetto di Visual Studio.|
 |`ID`|Specifica l'ID di risorsa di Visual Studio.|
@@ -76,21 +77,23 @@ Nessuno.
 
 ### <a name="parent-elements"></a>Elementi padre
 
-|Elemento|Description|
+|Elemento|DESCRIZIONE|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Obbligatorio) Classifica il modello in base alla categoria e ne definisce la modalità di visualizzazione nella finestra di dialogo **Nuovo progetto** o **Aggiungi nuovo elemento**.|
 
 ## <a name="text-value"></a>Valore di testo
 
-È necessario un valore di testo, a meno che non si usino gli attributi `Package` e `ID`.
+È richiesto un valore di testo, a meno che non si usino gli attributi `Package` e `ID`.
 
 Il testo fornisce il nome del modello.
 
 ## <a name="built-in-tags"></a>Tag predefiniti
 
-Visual Studio offre numerosi tag predefiniti che possono essere aggiunti per eseguire il rendering di una risorsa localizzata. L'elenco seguente include i tag predefiniti e i valori corrispondenti tra parentesi.
+Visual Studio offre un elenco di tag predefiniti. Quando si aggiunge un tag predefinito, il tag esegue il rendering di una risorsa localizzata. 
 
-| Linguaggio | Piattaforma | Tipo progetto |
+L'elenco seguente include i tag predefiniti disponibili in Visual Studio. I valori corrispondenti sono visualizzati tra parentesi.
+
+| Linguaggio | Piattaforma | Tipo di progetto |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -110,7 +113,7 @@ Visual Studio offre numerosi tag predefiniti che possono essere aggiunti per ese
 
 ## <a name="example"></a>Esempio
 
-L'esempio seguente mostra i metadati per un modello di progetto per un'applicazione Visual C#.
+L'esempio seguente mostra i metadati per un modello di progetto per un'applicazione Visual C#:
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -145,6 +148,6 @@ L'esempio seguente mostra i metadati per un modello di progetto per un'applicazi
 ## <a name="see-also"></a>Vedere anche
 
 - [Riferimenti allo schema dei modelli di Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Creazione di modelli di progetti e di elementi](/visualstudio/ide/creating-project-and-item-templates)
+- [Creare modelli di progetto e di elementi](/visualstudio/ide/creating-project-and-item-templates)
 - [Personalizzare modelli di progetto e modelli di elemento](/visualstudio/ide/customizing-project-and-item-templates)
 - [Introduzione al modello di progetto VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
