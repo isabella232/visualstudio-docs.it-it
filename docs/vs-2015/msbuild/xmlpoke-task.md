@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1ba57c1578bd69d71ed0abdac45907d937b89ecb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198965"
 ---
 # <a name="xmlpoke-task"></a>Attività XmlPoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Imposta i valori come specificato da una query XPath in un file XML.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `XmlPoke` .  
   
-|Parametro|Description|  
+|Parametro|DESCRIZIONE|  
 |---------------|-----------------|  
 |`Namespaces`|Parametro `String` facoltativo.<br /><br /> Specifica gli spazi dei nomi per i prefissi della query XPath.|  
 |`Query`|Parametro `String` facoltativo.<br /><br /> Specifica la query XPath.|  

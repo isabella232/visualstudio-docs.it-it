@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179324"
 ---
 # <a name="using-the-task-list"></a>Utilizzo dell'elenco attività
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

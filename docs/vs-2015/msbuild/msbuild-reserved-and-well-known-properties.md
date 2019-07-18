@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181086"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Proprietà riservate e note MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] è disponibile un se
 ## <a name="reserved-and-well-known-properties"></a>Proprietà riservate e proprietà note  
  Nella tabella seguente vengono descritte le proprietà predefinite di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Proprietà|Description|Riservata o nota|  
+|Proprietà|DESCRIZIONE|Riservata o nota|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Percorso assoluto della cartella in cui si trovano i file binari di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] attualmente in uso, ad esempio C:\Windows\Microsoft.Net\Framework\\*versionNumber*. Questa proprietà risulta utile quando è necessario fare riferimento ai file nella directory di [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> Non includere la barra rovesciata finale in questa proprietà.|Riservata|  
 |`MSBuildExtensionsPath`|Introdotta in .NET Framework 4: nessuna differenza tra i valori predefiniti di `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. È possibile impostare la variabile di ambiente `MSBUILDLEGACYEXTENSIONSPATH` su un valore non Null per abilitare il comportamento del valore predefinito di `MSBuildExtensionsPath` nelle versioni precedenti.<br /><br /> In .NET Framework 3.5 e versioni precedenti il valore predefinito di `MSBuildExtensionsPath` fa riferimento al percorso della sottocartella MSBuild nella cartella \Programmi\ o \Programmi (x86), in base al numero di bit del processo corrente. Ad esempio, per un processo a 32 bit in un computer a 64 bit, la proprietà fa riferimento alla cartella \Programmi (x86). Per un processo a 64 bit in un computer a 64 bit, questa proprietà fa riferimento alla cartella \Programmi.<br /><br /> Non includere la barra rovesciata finale in questa proprietà.<br /><br /> Questo percorso è ideale per contenere i file di destinazione personalizzati. È ad esempio possibile installare i file di destinazione in \Programmi\MSBuild\MyFiles\Northwind.targets, quindi importarli nei file di progetto usando il codice XML seguente:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Nota|  

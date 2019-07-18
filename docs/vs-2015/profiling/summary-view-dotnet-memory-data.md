@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 61fe6d3982828d1e2a8ae4aeaba3d89b1b75f4f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193322"
 ---
 # <a name="summary-view---net-memory-data"></a>Visualizzazione Riepilogo: dati di memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 ## <a name="functions-allocating-most-memory"></a>Funzioni che allocano molta memoria  
  Elenca le funzioni che hanno allocato il maggior numero di byte di memoria nell'esecuzione della profilatura.  
   
-|Colonna|Descrizione|  
+|Colonna|DESCRIZIONE|  
 |------------|-----------------|  
 |**Name**|Nome della funzione.|  
 |**% byte**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che sono stati allocati da questa funzione o da una funzione figlio chiamata da questa funzione.|  
@@ -37,7 +37,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 ## <a name="types-with-most-memory-allocated"></a>Tipi con molta memoria allocata  
  Elenca i tipi per cui è stato allocato il maggior numero di byte di memoria nell'esecuzione della profilatura.  
   
-|Colonna|Descrizione|  
+|Colonna|DESCRIZIONE|  
 |------------|-----------------|  
 |**Name**|Nome del tipo.|  
 |**% byte**|Percentuale di tutti i byte allocati nell'esecuzione della profilatura che sono stati allocati per questo tipo.|  
@@ -45,7 +45,7 @@ La visualizzazione Riepilogo riporta informazioni sui tipi e sulle funzioni .NET
 ## <a name="types-with-most-instances"></a>Tipi con molte istanze  
  Elenca i tipi creati più frequentemente nell'esecuzione della profilatura. stato  
   
-|Colonna|Descrizione|  
+|Colonna|DESCRIZIONE|  
 |------------|-----------------|  
 |**Name**|Nome del tipo.|  
 |**% istanze**|Percentuale del numero totale di oggetti .NET creati nell'esecuzione della profilatura corrispondenti a istanze di questo tipo.|  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 1705fd2b79f8b5044aa4ffa0b65801d6db6c7f33
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68198961"
 ---
 # <a name="xsltransformation-task"></a>Attività XslTransformation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Consente di trasformare un input XML tramite un XSLT o un XSLT compilato e di cr
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività `XslTransformation` .  
   
-|Parametro|Description|  
+|Parametro|DESCRIZIONE|  
 |---------------|-----------------|  
 |`OutputPaths`|Parametro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obbligatorio.<br /><br /> Specifica i file di output per la trasformazione XML.|  
 |`Parameters`|Parametro `String` facoltativo.<br /><br /> Specifica i parametri per il documento di input XSLT.|  

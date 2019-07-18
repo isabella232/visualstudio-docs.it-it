@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5a57f02a7c1b9845f4248daf2282b6f285f95489
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68193368"
 ---
 # <a name="toggle-breakpoint-command"></a>Comando Imposta/Rimuovi punto di interruzione
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Debug.ToggleBreakpoint [text]
   
 ## <a name="arguments"></a>Argomenti  
  `text`  
- Facoltativo. Se il testo viene specificato, la riga viene contrassegnata come punto di interruzione con nome. In caso contrario, la riga viene contrassegnata come punto di interruzione senza nome, analogamente a quanto accade quando si preme F9.  
+ facoltativo. Se il testo viene specificato, la riga viene contrassegnata come punto di interruzione con nome. In caso contrario, la riga viene contrassegnata come punto di interruzione senza nome, analogamente a quanto accade quando si preme F9.  
   
 ## <a name="example"></a>Esempio  
  Nell'esempio seguente il punto di interruzione corrente viene impostato/rimosso.  

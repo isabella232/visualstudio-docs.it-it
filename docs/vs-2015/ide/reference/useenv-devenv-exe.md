@@ -21,16 +21,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 48f1543bcecf64a37f98de3edddf2c57dbf46f5c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176913"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carica le variabili di ambiente nella finestra di dialogo **Directory di VC++**.  
+Avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carica le variabili di ambiente nella finestra di dialogo **Directory di VC++** .  
   
 ## <a name="syntax"></a>Sintassi  
   
@@ -39,7 +39,7 @@ Devenv /useenv
 ```  
   
 ## <a name="example"></a>Esempio  
- L'esempio seguente avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carica le variabili di ambiente nella finestra di dialogo **Directory di VC++**.  
+ L'esempio seguente avvia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carica le variabili di ambiente nella finestra di dialogo **Directory di VC++** .  
   
 ```  
 Devenv.exe /useenv  

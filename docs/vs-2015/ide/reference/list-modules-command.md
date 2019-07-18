@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7d24b081c20b5874d6daa57832136023ac678c0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199147"
 ---
 # <a name="list-modules-command"></a>Comando Elenca moduli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,31 +37,31 @@ Debug.ListModules [/Address:yes|no] [/Name:yes|no] [/Order:yes|no]
   
 #### <a name="parameters"></a>Parametri  
  /Address:`yes|no`  
- Facoltativo. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.  
+ facoltativo. Specifica se visualizzare gli indirizzi di memoria dei moduli. Il valore predefinito è `yes`.  
   
  /Name:`yes|no`  
- Facoltativo. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.  
+ facoltativo. Specifica se visualizzare i nomi dei moduli. Il valore predefinito è `yes`.  
   
  /Order:`yes|no`  
- Facoltativo. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.  
+ facoltativo. Specifica se visualizzare l'ordine dei moduli. Il valore predefinito è `no`.  
   
  /Path:`yes|no`  
- Facoltativo. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.  
+ facoltativo. Specifica se visualizzare i percorsi dei moduli. Il valore predefinito è `yes`.  
   
  /Process:`yes|no`  
- Facoltativo. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.  
+ facoltativo. Specifica se visualizzare i processi dei moduli. Il valore predefinito è `no`.  
   
  /SymbolFile:`yes|no`  
- Facoltativo. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.  
+ facoltativo. Specifica se visualizzare i file dei simboli dei moduli. Il valore predefinito è `no`.  
   
  /SymbolStatus:`yes|no`  
- Facoltativo. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.  
+ facoltativo. Specifica se visualizzare lo stato dei simboli dei moduli. Il valore predefinito è `yes`.  
   
  /Timestamp:`yes|no`  
- Facoltativo. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.  
+ facoltativo. Specifica se visualizzare il timestamp dei moduli. Il valore predefinito è `no`.  
   
  /Version:`yes|no`  
- Facoltativo. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.  
+ facoltativo. Specifica se visualizzare le versioni dei moduli. Il valore predefinito è `no`.  
   
 ## <a name="remarks"></a>Osservazioni  
   
