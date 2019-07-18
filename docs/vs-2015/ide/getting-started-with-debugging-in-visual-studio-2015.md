@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178036"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introduzione al debug in Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Visual Studio 2015 fornisce un potente set integrato di strumenti per il debug e
 
  Per iniziare, usare semplicemente **Debug** e **x86** rispettivamente come configurazione e piattaforma della build. Al termine dell'operazione di codifica e debug, modificare la configurazione su **Release** e impostare una piattaforma specifica come destinazione. Le versioni precedenti di Visual Studio specificavano una piattaforma predefinita **AnyCPU** per i progetti di codice .NET.
 
- Nota: quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile, Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto\>\\<configurazione\>\\<piattaforma\>**. Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
+ Nota: quando si compila il progetto, i valori di configurazione e piattaforma vengono usati anche per determinare il percorso della directory del progetto da creare per archiviare il file eseguibile, Solitamente, il percorso è **\<percorso-del-progetto>\\<nome-progetto\>\\<configurazione\>\\<piattaforma\>** . Ad esempio, un progetto con una configurazione di `Debug` e una piattaforma `x86` si troverebbe in `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Questa funzionalità è utile se si usano strumenti o script personalizzati per gestire questi file eseguibili compilati.
 
 ### <a name="building-your-code"></a>Compilazione del codice
  Dopo aver configurato la compilazione, è possibile passare alla compilazione effettiva del progetto. Il modo più semplice è premere F7, ma è anche possibile avviare la compilazione selezionando **Compila->Compila soluzione** dal menu principale.

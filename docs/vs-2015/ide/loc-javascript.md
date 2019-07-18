@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8029dc6282e7b5a4ff9075257bcb1b6213a4a6b4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186110"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;loc&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Specifica il percorso e il tipo del file sidecar che fornisce informazioni di In
   
 #### <a name="parameters"></a>Parametri  
  `filename`  
- Facoltativo. Il nome radice del file sidecar che contiene informazioni di localizzazione per le impostazioni cultura neutre. Quando Visual Studio cerca le informazioni di localizzazione, tenta di trovare una versione specifica della lingua di questo file. Ad esempio, se `filename` è jquery.xml, Visual Studio cerca la cartella specifica della lingua corretta (ad esempio JA) nello stesso percorso del file. js che contiene il `<loc>` elemento. Se individua la cartella di impostazioni cultura specifiche, verifica l'esistenza di un file jquery.xml in esso. Se non è possibile individuare il file corretto, ma usa le regole di percorso risorse gestite. Il valore predefinito per `filename` è il nome del file corrente, ma con estensione XML anziché. js.  
+ facoltativo. Il nome radice del file sidecar che contiene informazioni di localizzazione per le impostazioni cultura neutre. Quando Visual Studio cerca le informazioni di localizzazione, tenta di trovare una versione specifica della lingua di questo file. Ad esempio, se `filename` è jquery.xml, Visual Studio cerca la cartella specifica della lingua corretta (ad esempio JA) nello stesso percorso del file. js che contiene il `<loc>` elemento. Se individua la cartella di impostazioni cultura specifiche, verifica l'esistenza di un file jquery.xml in esso. Se non è possibile individuare il file corretto, ma usa le regole di percorso risorse gestite. Il valore predefinito per `filename` è il nome del file corrente, ma con estensione XML anziché. js.  
   
  `format`  
- Facoltativo. Il tipo di file sidecar utilizzato per la localizzazione. Usare `messagebundle` per specificare l'utilizzo di aggregazioni di messaggio definito dai metadati Ajax Open. `messagebundle` è il formato consigliato. Tuttavia, questo formato non è supportato in Microsoft Ajax o in file con estensione winmd. Usare `vsdoc` per specificare il formato di localizzazione .NET Framework standard che viene utilizzato da Microsoft Ajax e Windows Runtime. L'attributo è facoltativo. `vsdoc` rappresenta il formato predefinito.  
+ facoltativo. Il tipo di file sidecar utilizzato per la localizzazione. Usare `messagebundle` per specificare l'utilizzo di aggregazioni di messaggio definito dai metadati Ajax Open. `messagebundle` è il formato consigliato. Tuttavia, questo formato non è supportato in Microsoft Ajax o in file con estensione winmd. Usare `vsdoc` per specificare il formato di localizzazione .NET Framework standard che viene utilizzato da Microsoft Ajax e Windows Runtime. L'attributo è facoltativo. `vsdoc` rappresenta il formato predefinito.  
   
 ## <a name="remarks"></a>Osservazioni  
  Il `<loc>` deve essere presente l'elemento nella parte superiore del file nella stessa sezione di `<reference>` elemento. Le regole di utilizzo per il `<loc>` elemento sono gli stessi di `<reference>` elemento. Per altre informazioni, vedere la sezione "Riferimenti direttive" nella [JavaScript IntelliSense](../ide/javascript-intellisense.md).  

@@ -16,11 +16,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: da82cbd8426b1a9af08e27577cdb76ca4a64d2e2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148214"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ VSPerfCmd [/U] [/options]
   
  Le tabelle seguenti descrivono le opzioni dello strumento **VSPerfCmd.exe**.  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |**U**|L'output di console reindirizzato viene scritto come Unicode. Deve essere la prima opzione specificata.|  
 |[Start](../profiling/start.md) **:** `mode`|Avvia il servizio di profilatura nella modalità specificata.|  
@@ -59,7 +59,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sampling-method-options"></a>Opzioni del metodo di campionamento  
  Le opzioni seguenti sono disponibili solo quando si usa il metodo di campionamento per la profilatura.  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Eseguibile*|Avvia l'applicazione specificata e inizia la profilatura.|  
 |[Args](../profiling/args.md) **:** *Argomenti*|Specifica gli argomenti della riga di comando da passare all'applicazione avviata.|  
@@ -71,7 +71,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>Opzioni per l'intervallo di campionamento  
  Le opzioni seguenti specificano il tipo e la durata degli intervalli di campionamento. L'opzione predefinita è **Timer**. È possibile specificare anche un contatore CPU come intervallo tramite l'opzione **Counter**. Queste opzioni possono essere specificate solo con **Launch** o con la prima operazione **Attach** di una sessione di profilatura.  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[ **:** _n_]|Esegue il campionamento ogni n errori di pagina (valore predefinito=10).|  
 |[Sys](../profiling/sys-vsperfcmd.md)[ **:** _n_]|Esegue il campionamento ogni n chiamate di sistema (valore predefinito=10).|  
@@ -82,7 +82,7 @@ VSPerfCmd [/U] [/options]
   
  Le opzioni di amministrazione devono essere eseguite in un prompt dei comandi in esecuzione con credenziali amministrative.  
   
-|Opzione|Descrizione|  
+|Opzione|DESCRIZIONE|  
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Diritto*[ *Diritto*] \<*Utente*&#124;*Gruppo*>|Consente o nega l'accesso ai servizi di profilatura all'utente o al gruppo specificato.<br /><br /> `Right` può essere:<br /><br /> CrossSession: consente all'utente l'accesso al servizio per la profilatura tra sessioni.<br /><br /> SampleProfiling: consente all'utente di accedere al driver per abilitare la profilatura di campionamento. Usato anche per accedere alle informazioni di transizione del kernel durante la profilatura di traccia.<br /><br /> FullAccess: consente all'utente sia l'accesso CrossSession che l'accesso SampleProfiling.|  
 |**Admin:Security, List**|Elenca lo stato corrente dei servizi di profilatura e le autorizzazioni utente.|  

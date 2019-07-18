@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191566"
 ---
 # <a name="midl-task"></a>Attività MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Parametro **String** facoltativo.  
   
-     Elenco di opzioni della riga di comando. Ad esempio, **"**_/opzione1 /opzione2 /opzione#_". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività MIDL.  
+     Elenco di opzioni della riga di comando. Ad esempio, **"** _/opzione1 /opzione2 /opzione#_ ". Usare questo parametro per specificare le opzioni della riga di comando che non sono rappresentate da altri parametri dell'attività MIDL.  
   
      Per altre informazioni, vedere "MIDL Command-Line Reference" (Informazioni di riferimento sulla riga di comando MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -144,7 +144,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Se `true`, controlla che i valori di enumerazione siano compresi in un intervallo consentito.  
   
-     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando (**/?**) per midl.exe.  
+     Per altre informazioni, vedere l'opzione **/error enum** nella guida della riga di comando ( **/?** ) per midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ Esegue il wrapping dello strumento di compilazione Microsoft Interface Definitio
   
      Parametro **String[]** facoltativo.  
   
-     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]*.  
+     Specifica una o più *definizioni*, ovvero un nome e un valore facoltativo da passare al preprocessore C come in base alla direttiva `#define`. Il formato di ogni definizione è *nome[=valore]* .  
   
      Per altre informazioni, vedere l'opzione **/D** in "MIDL Command-Line Reference" (Riferimenti alla riga di comando di MIDL) nel sito Web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Vedere anche il parametro **UndefinePreprocessorDefinitions** in questa tabella.  
   
