@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49d25d49554c587bcaaba8ef09bac967d4b5599a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157369"
 ---
 # <a name="setenv-task"></a>Attività SetEnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Imposta o elimina il valore di una variabile di ambiente specificata.
 ## <a name="parameters"></a>Parametri  
  Nella tabella che segue vengono descritti i parametri dell'attività **SetEnv**.  
   
-|Parametro|Description|  
+|Parametro|DESCRIZIONE|  
 |---------------|-----------------|  
 |**Name**|Parametro **String** obbligatorio.<br /><br /> Nome di una variabile di ambiente.|  
 |**OutputEnvironmentVariable**|Parametro di output **String** facoltativo.<br /><br /> Contiene il valore assegnato alla variabile di ambiente specificata dal parametro **Name**.|  

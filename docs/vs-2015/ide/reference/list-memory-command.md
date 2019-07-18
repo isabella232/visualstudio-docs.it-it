@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199167"
 ---
 # <a name="list-memory-command"></a>Comando Elenca memoria
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,20 +36,20 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
   
 ## <a name="arguments"></a>Argomenti  
  `expression`  
- Facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.  
+ facoltativo. L'indirizzo di memoria da cui iniziare la visualizzazione della memoria.  
   
 ## <a name="switches"></a>Opzioni  
  /ANSI&#124;Unicode  
- Facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.  
+ facoltativo. Visualizza la memoria come caratteri corrispondenti ai byte di memoria, ANSI o Unicode.  
   
  /Count:`number`  
- Facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.  
+ facoltativo. Determina il numero di byte di memoria da visualizzare, a partire da `expression`.  
   
  /Format:`formattype`  
- Facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.  
+ facoltativo. Tipo di formato per la visualizzazione di informazioni sulla memoria nella finestra **Memoria**; può essere OneByte, TwoBytes, FourBytes, EightBytes, Float (32 bit) o Double (64 bit). Se viene usato il formato OneByte, `/Unicode` non è disponibile.  
   
  /Hex&#124;Signed&#124;Unsigned  
- Facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.  
+ facoltativo. Specifica il formato per la visualizzazione dei numeri: con segno, senza segno o esadecimale.  
   
 ## <a name="remarks"></a>Osservazioni  
  Invece di scrivere un comando **Debug.ListMemory** completo con tutte le opzioni, è possibile richiamare il comando tramite alias predefiniti con alcune opzioni preimpostate su valori specificati. Ad esempio, anziché immettere:  

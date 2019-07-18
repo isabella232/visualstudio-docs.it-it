@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fe9e8d3dbd1e7395287cd7241f1e6145dffca7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145391"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Uso di metodi di profilatura per raccogliere dati di prestazioni tramite la riga di comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

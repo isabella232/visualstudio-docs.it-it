@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d412cfa5a9b5e7e90aeac3ac6bbb530b0ef48ad0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157587"
 ---
 # <a name="diagnostic-namespace"></a>Spazio dei nomi diagnostic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +35,14 @@ namespace diagnostic;
   
 ### <a name="classes"></a>Classi  
   
-|nome|Descrizione|  
+|nome|DESCRIZIONE|  
 |----------|-----------------|  
 |[Classe marker_series](../profiling/marker-series-class.md)|Rappresenta un canale seriale di eventi generati da un singolo provider.|  
 |[Classe span](../profiling/span-class.md)|Definisce una fase dell'applicazione.|  
   
 ### <a name="enumerations"></a>Enumerazioni  
   
-|nome|Descrizione|  
+|nome|DESCRIZIONE|  
 |----------|-----------------|  
 |[Enumerazione marker_importance](../profiling/marker-importance-enumeration.md)|Rappresenta il livello di importanza di un marcatore del visualizzatore di concorrenza.|  
   

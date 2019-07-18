@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0efeb7fb0eb481d0b8d62ff4a9ebf9daad98c39f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147238"
 ---
 # <a name="blocking-time-profile-report"></a>Report del profilo di durata del blocco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ I rapporti profili contengono dati aggregati relativi al tempo di blocco per gli
 ## <a name="blocking-time-report-columns"></a>Colonne del rapporto del tempo di blocco  
  Nella tabella seguente sono riportate le colonne per ogni rapporto del tempo di blocco.  
   
-|Nome colonna|Descrizione|  
+|Nome colonna|DESCRIZIONE|  
 |-----------------|-----------------|  
 |nome|Nome della funzione per ogni livello dello stack di chiamate.|  
 |Istanze|Numero di istanze della chiamata di blocco per il periodo di tempo visibile.|  

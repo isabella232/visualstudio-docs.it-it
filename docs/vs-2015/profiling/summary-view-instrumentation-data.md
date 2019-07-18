@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157783"
 ---
 # <a name="summary-view---instrumentation-data"></a>Visualizzazione Riepilogo: dati di strumentazione
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
   
  Il **Percorso critico** include i dati seguenti per ogni funzione:  
   
-|Colonna|Descrizione|  
+|Colonna|DESCRIZIONE|  
 |------------|-----------------|  
 |**Name**|Nome della funzione.|  
 |**% tempo inclusivo trascorso**|Percentuale del tempo totale nei dati di profilatura dedicato dalla funzione all'esecuzione del codice nel corpo della funzione e nelle funzioni chiamate dalla funzione stessa.|  
@@ -42,7 +42,7 @@ La visualizzazione Riepilogo mostra informazioni sulle funzioni che influiscono 
   
  L'opzione **Funzioni con più lavoro individuale** include i dati seguenti per ogni funzione:  
   
-|Colonna|Descrizione|  
+|Colonna|DESCRIZIONE|  
 |------------|-----------------|  
 |**Name**|Nome della funzione.|  
 |**% tempo esclusivo**|Percentuale del tempo totale nei dati di profilatura dedicato dalla funzione all'esecuzione del codice nel corpo della funzione. Il tempo dedicato a funzioni chiamate dalla funzione non è incluso.|  

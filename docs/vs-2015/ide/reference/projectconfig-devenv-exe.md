@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68200905"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  Obbligatorio. Il percorso completo e il nome del file della soluzione.  
   
  /project `ProjName`  
- Facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
+ facoltativo. Il percorso e il nome del file di progetto nella soluzione. È possibile immettere il percorso relativo del file di progetto dalla cartella `SolutionName` il nome visualizzato del progetto o il percorso completo e il nome del file di progetto.  
   
  /projectconfig `ProjConfigName`  
- Facoltativo. Il nome della configurazione della build di un progetto da applicare al `/project` denominato.  
+ facoltativo. Il nome della configurazione della build di un progetto da applicare al `/project` denominato.  
   
 ## <a name="remarks"></a>Osservazioni  
   

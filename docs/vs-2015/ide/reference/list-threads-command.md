@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199116"
 ---
 # <a name="list-threads-command"></a>Comando Elenca thread
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Debug.ListThreads [index]
   
 ## <a name="arguments"></a>Argomenti  
  `index`  
- Facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.  
+ facoltativo. Seleziona un thread in base al relativo indice e lo contrassegna come thread corrente.  
   
 ## <a name="remarks"></a>Osservazioni  
  Quando specificato, l'argomento `index` contrassegna il thread indicato come thread corrente. Nell'elenco viene visualizzato un asterisco (*) accanto al thread corrente.  

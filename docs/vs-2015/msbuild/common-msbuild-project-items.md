@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160412"
 ---
 # <a name="common-msbuild-project-items"></a>Elementi di progetto MSBuild comuni
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="reference"></a>Riferimenti  
  Rappresenta un riferimento all'assembly (gestito) nel progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |HintPath|Stringa facoltativa. Percorso relativo o assoluto dell'assembly.|  
 |nome|Stringa facoltativa. Il nome visualizzato dell'assembly, ad esempio "System.Windows.Forms".|  
@@ -46,7 +46,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="comreference"></a>COMReference  
  Rappresenta un riferimento a un oggetto COM (non gestito) nel progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del componente|  
 |GUID|Stringa facoltativa. GUID per il componente, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="comfilereference"></a>COMFileReference  
  Rappresenta un elenco di librerie dei tipi per la destinazione ResolvedComreference.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |WrapperTool|Stringa facoltativa. Il nome dello strumento wrapper usato per il componente, ad esempio, "tlbimp".|  
   
 ### <a name="nativereference"></a>NativeReference  
  Rappresenta un file manifesto nativo o un riferimento a tale file.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |nome|Stringa obbligatoria. Il nome base del file manifesto.|  
 |HintPath|Stringa obbligatoria. Il percorso relativo del file manifesto.|  
@@ -74,7 +74,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="projectreference"></a>ProjectReference  
  Rappresenta un riferimento a un altro progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |nome|Stringa facoltativa. Nome visualizzato del riferimento.|  
 |Progetto|Stringa facoltativa. GUID per il riferimento, nel formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="compile"></a>Compile  
  Rappresenta i file di origine per il compilatore.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |AutoGen|Valore booleano facoltativo. Indica se il file è stato generato per il progetto dall'ambiente di sviluppo integrato (IDE) di [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
@@ -94,7 +94,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Rappresenta le risorse da incorporare nell'assembly generato.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
@@ -108,7 +108,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="content"></a>Content  
  Rappresenta file che non sono compilati nel progetto, ma possono essere incorporati o pubblicati con il progetto.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  
@@ -123,7 +123,7 @@ In [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], un elemento è un r
 ### <a name="none"></a>nessuno  
  Rappresenta i file che non hanno un ruolo nel processo di compilazione.  
   
-|Nome elemento|Description|  
+|Nome elemento|DESCRIZIONE|  
 |---------------|-----------------|  
 |DependentUpon|Stringa facoltativa. Specifica il file da cui questo file dipende per una compilazione corretta.|  
 |Generator|Stringa obbligatoria. Il nome di un generatore di file che viene eseguito sull'elemento.|  

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 27c4c8ac23e2524245107d9052642350e9db09d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163262"
 ---
 # <a name="symbol-path-command"></a>Comando Percorso simboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
   
 ## <a name="arguments"></a>Argomenti  
  `pathname`  
- Facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.  
+ facoltativo. Elenco di percorsi delimitato da punti e virgola usato dal debugger per la ricerca dei simboli.  
   
 ## <a name="remarks"></a>Osservazioni  
  Se non viene specificato un `pathname`, il comando elenca i percorsi dei simboli correnti.  
