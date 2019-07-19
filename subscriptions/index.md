@@ -7,12 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Sottoscrizioni di Visual studio
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784391"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315215"
 ---
 # <a name="visual-studio-subscriptions"></a>Sottoscrizioni di Visual Studio
 
@@ -193,7 +193,6 @@ Per rendere ancora più utile la sottoscrizione, a questa si aggiungono vantaggi
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (per aziende, tecnici e creativi)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (cloud, progettazione, dispositivi mobili e dati)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (data science e intelligenza artificiale)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Training Opsgility</a> (incentrato sul cloud)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Interventi di supporto tecnico professionale Microsoft</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Azure Advisory Chat</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Community di Azure</a></li>
