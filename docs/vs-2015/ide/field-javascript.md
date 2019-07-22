@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181270"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;field&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,49 +42,49 @@ Specifica le informazioni sulla documentazione, inclusa una descrizione, per un 
  Il nome del campo o membro. Quando la `<field>` elemento viene usato in una funzione del costruttore, `name` è obbligatorio e definisce il membro a cui viene applicato il tag. Quando il `<field>` elemento sta annotando direttamente un campo, questo attributo viene ignorato e il nome utilizzato da Visual Studio è il nome del campo effettivo nel codice sorgente.  
   
  `static`  
- Facoltativo. Specifica se il campo è un membro di funzione del costruttore o un membro dell'oggetto restituito dalla funzione del costruttore. Impostare su `true` trattare il campo come membro di funzione del costruttore. Impostare su `false` trattare il campo come membro dell'oggetto restituito dalla funzione del costruttore.  
+ facoltativo. Specifica se il campo è un membro di funzione del costruttore o un membro dell'oggetto restituito dalla funzione del costruttore. Impostare su `true` trattare il campo come membro di funzione del costruttore. Impostare su `false` trattare il campo come membro dell'oggetto restituito dalla funzione del costruttore.  
   
  `type`  
- Facoltativo. Il tipo di dati del campo. Il tipo può essere uno dei seguenti:  
+ facoltativo. Il tipo di dati del campo. Il tipo può essere uno dei seguenti:  
   
 - Un linguaggio ECMAScript digitare nella specifica ECMAScript 5, ad esempio `Number` e `Object`.  
   
-- Oggetto di un modello DOM, ad esempio `HTMLElement`, `Window`, e `Document`.  
+- Un oggetto DOM, ad esempio `HTMLElement`, `Window` e `Document`.  
   
-- Funzione del costruttore JavaScript.  
+- Una funzione costruttore JavaScript.  
   
   `integer`  
-  Facoltativo. Se `type` è `Number`, specifica se il campo è un numero intero. Impostare su `true` per indicare che il campo è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  facoltativo. Se `type` è `Number`, specifica se il campo è un numero intero. Impostare su `true` per indicare che il campo è un numero intero; in caso contrario, impostato su `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.  
   
   `domElement`  
-  Facoltativo. Questo attributo è deprecato. il `type` attributo ha la precedenza su questo attributo. Questo attributo specifica se il campo documentato è un elemento DOM. Impostare su `true` per specificare che il campo è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il campo documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  facoltativo. Questo attributo è deprecato. L'attributo `type` ha la precedenza su questo attributo. Questo attributo specifica se il campo documentato è un elemento DOM. Impostare su `true` per specificare che il campo è un elemento DOM; in caso contrario, impostato su `false`. Se il `type` attributo non è impostato e `domElement` è impostata su `true`, IntelliSense considera il campo documentato come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
   
   `mayBeNull`  
-  Facoltativo. Specifica se il campo documentato può essere impostato su null. Impostare su `true` per indicare che il campo può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  facoltativo. Specifica se il campo documentato può essere impostato su null. Impostare su `true` per indicare che il campo può essere impostato su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.  
   
   `elementType`  
-  Facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
+  facoltativo. Se `type` è `Array`, questo attributo specifica il tipo degli elementi nella matrice.  
   
   `elementInteger`  
-  Facoltativo. Se `type` viene `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi nella matrice sono numeri interi; in caso contrario, impostato su `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  facoltativo. Se `type` è `Array` e `elementType` è `Number`, questo attributo specifica se gli elementi nella matrice sono numeri interi. Impostare su `true` per indicare che gli elementi della matrice sono numeri interi; in alternativa impostare su `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.  
   
   `elementDomElement`  
-  Facoltativo. Questo attributo è deprecato. il `elementType` attributo ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in caso contrario, impostato su `false`. Se il `elementType` attributo non è impostato e `elementDomElement` è impostata su `true`, IntelliSense considera ogni elemento nella matrice come un `HTMLElement` durante l'esecuzione di completamento delle istruzioni.  
+  facoltativo. Questo attributo è deprecato. L'attributo `elementType` ha la precedenza su questo attributo. Se `type` è `Array`, questo attributo specifica se gli elementi nella matrice sono elementi DOM. Impostare su `true` per specificare che gli elementi sono elementi DOM; in alternativa impostare su `false`. Se l'attributo `elementType` non è impostato e `elementDomElement` è `true`, IntelliSense considera ogni elemento della matrice come un elemento `HTMLElement` durante l'esecuzione del completamento istruzioni.  
   
   `elementMayBeNull`  
-  Facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice possono essere impostati su null; in caso contrario, impostato su `false`. Il valore predefinito è `false`. Questo attributo non viene utilizzato da Visual Studio per fornire informazioni di IntelliSense.  
+  facoltativo. Se `type` è `Array`, specifica se gli elementi della matrice possono essere impostati su null. Impostare su `true` per indicare che gli elementi della matrice sono impostabili su null; in alternativa impostare su `false`. Il valore predefinito è `false`. Questo attributo non viene usato da Visual Studio per specificare informazioni IntelliSense.  
   
   `helpKeyword`  
-  Facoltativo. La parola chiave per la Guida F1.  
+  facoltativo. Parola chiave per Guida F1.  
   
   `locid`  
-  Facoltativo. L'identificatore per le informazioni di localizzazione sul campo. L'identificatore è un membro ID o corrisponde alla `name` valore in un bundle di messaggio definito dai metadati OpenAjax dell'attributo. Il tipo di identificatore dipende dal formato specificato nella [ \<loc >](../ide/loc-javascript.md) tag.  
+  facoltativo. L'identificatore per le informazioni di localizzazione sul campo. L'identificatore è un ID membro o corrisponde al valore dell'attributo `name` in un'aggregazione messaggi definita da metadati OpenAjax. Il tipo di identificatore dipende dal formato specificato nel tag [\<loc>](../ide/loc-javascript.md).  
   
   `value`  
-  Facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. Per `<field>`, questo attributo è supportato per le funzioni costruttore, ma non è supportato per i valori letterali di oggetto. È possibile usare questo attributo è per fornire informazioni sul tipo quando non è definito il tipo di campo. Ad esempio, è possibile usare `value=’1’` per considerare il tipo di campo sotto forma di numero.  
+  facoltativo. Specifica il codice che deve essere valutato per l'uso da IntelliSense anziché il codice della funzione. Per `<field>`, questo attributo è supportato per le funzioni costruttore, ma non è supportato per i valori letterali di oggetto. È possibile usare questo attributo è per fornire informazioni sul tipo quando non è definito il tipo di campo. Ad esempio, è possibile usare `value=’1’` per considerare il tipo di campo sotto forma di numero.  
   
   `description`  
-  Facoltativo. Una descrizione per il campo.  
+  facoltativo. Una descrizione per il campo.  
   
 ## <a name="remarks"></a>Osservazioni  
  Il `name` attributo è obbligatorio quando si esegue la documentazione di un campo in una funzione del costruttore. Per tutti gli altri scenari, tutti gli attributi per il `<field>` elemento sono facoltativi.  
@@ -92,7 +92,7 @@ Specifica le informazioni sulla documentazione, inclusa una descrizione, per un 
  Quando si esegue la documentazione di una funzione del costruttore, il `<field>` immediatamente prima della dichiarazione di campo deve essere presente l'elemento. Il `name` attributo deve corrispondere al nome di campo che viene usato nel codice sorgente. Per i membri di oggetto, il `name` attributo può essere omessa se la `<field>` elemento viene visualizzato immediatamente prima della dichiarazione di membro oggetto.  
   
 ## <a name="example"></a>Esempio  
- Esempio di codice seguente viene illustrato come utilizzare il `<field>` elemento.  
+ L'esempio di codice seguente illustra come usare l'elemento `<field>`.  
   
 ```javascript  
 // Use of <field> in an object definition.  
