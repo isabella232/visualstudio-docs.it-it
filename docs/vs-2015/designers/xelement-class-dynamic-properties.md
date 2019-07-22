@@ -10,20 +10,20 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1b6d4c2d7b83ede687e7335627770a5576003463
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148059"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Proprietà dinamiche della classe XElement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-In questa sezione vengono descritte le proprietà dinamiche della <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t] (<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->) classe.  
+Questa sezione descrive le proprietà dinamiche della classe <xref:System.Xml.Linq.XElement?displayProperty=fullName>[t](<!-- TODO: review code entity reference <xref:assetId:///t?qualifyHint=False&amp;autoUpgrade=True>  -->) classe.  
   
 ## <a name="in-this-section"></a>In questa sezione  
   
-|Argomento|Descrizione|  
+|Argomento|DESCRIZIONE|  
 |-----------|-----------------|  
 |[Attributo](../designers/attribute-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'attributo che corrisponde a un nome espanso specificato.|  
 |[Elemento](../designers/element-xelement-dynamic-property.md)|Ottiene un indicizzatore usato per recuperare l'elemento figlio che corrisponde a un nome espanso specificato.|  
