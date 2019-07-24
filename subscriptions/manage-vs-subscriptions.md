@@ -3,63 +3,19 @@ title: Gestire le sottoscrizioni di Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785094"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378076"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
 Il [portale per i sottoscrittori](https://my.visualstudio.com) di Visual Studio consente di gestire tutte le sottoscrizioni e le partecipazioni ai programmi in un'unica posizione. È possibile apportare modifiche al proprio profilo, usare tutti i vantaggi inclusi nelle sottoscrizioni e passare da una sottoscrizione all'altra in modo semplice e rapido.
-
-## <a name="signing-in-to-the-portal"></a>Accesso al portale
-
-Benvenuto nella sottoscrizione di Visual Studio!  Con la sottoscrizione, ottieni tutto il software e i vantaggi necessari per restare sempre aggiornato riguardo a ogni aspetto del codice, tra cui software, crediti mensili per Azure, strumenti per la collaborazione, corsi di formazione, supporto tecnico e altro ancora, ovvero tutto il meglio e tutte le novità di Microsoft. Per usare il portale, è necessario eseguire l'accesso.
-
-### <a name="first-time-access"></a>Primo accesso
-
-I passaggi per usare la sottoscrizione per la prima volta dipendono da come è stata ottenuta la sottoscrizione.
-
-#### <a name="microsoft-store"></a>Microsoft Store
-
-Se la sottoscrizione di Visual Studio è stata acquistata tramite Microsoft Store, la procedura di attivazione può essere avviata dalla **Pagina di conferma** o dal **messaggio di posta elettronica di conferma** del pagamento.
-
-1. Nella "Pagina di conferma" o nel "messaggio di posta elettronica di conferma" selezionare **Fare clic qui per accedere**. Si verrà reindirizzati a https://my.visualstudio.com/subscriptions/activate.
-2. Immettere l'indirizzo di posta elettronica che verrà usato per accedere al Portale sottoscrittore e fare clic su **Continua**.
-3. A seconda dell'indirizzo di posta elettronica, l'utente potrebbe essere reindirizzato alla pagina di accesso all'account Microsoft o alla pagina di accesso dell'azienda/istituto di istruzione.
-4. Immettere la password o completare i requisiti di accesso.
-5. Immettere il codice Product Key specificato nel messaggio di benvenuto o pagina di conferma e fare clic su **Attiva**.
-
-#### <a name="workschool-accounts"></a>Account aziendale o dell'istituto di istruzione
-
-Se la sottoscrizione è stata offerta dall'azienda o dall'istituto di istruzione, l'utente avrà ricevuto un messaggio di benvenuto.
-
-1. Visitare il [Portale sottoscrittore](https://my.visualstudio.com/)
-2. Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nel messaggio di posta elettronica di benvenuto al sottoscrittore. Se non si riceve il messaggio di posta elettronica di benvenuto, controllare nelle cartelle della posta indesiderata.
-3. Fare clic su **Continua**
-4. Si verrà reindirizzati alla pagina di accesso aziendale.
-5. Immettere la password.
-6. Fai clic su **Accedi**.
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
-
-Se è stata acquistata una sottoscrizione cloud mensile o annuale da Visual Studio Marketplace, visitare il [Portale sottoscrittore](https://my.visualstudio.com/) e accedere con l'account Microsoft (MSA) indicato al momento dell'acquisto della sottoscrizione.
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Uso di un account aziendale o dell'istituto di istruzione con un account Microsoft (MSA)
-
-Se l'organizzazione ha Azure Active Directory ma l'utente non possiede un account Azure Active Directory, potrebbe essere necessario usare le opzioni **personali** offerte durante il processo di accesso.
-
-1. Visitare il [Portale sottoscrittore](https://my.visualstudio.com)
-2. Immettere l'indirizzo di posta elettronica al quale è stata assegnata la nuova sottoscrizione di Visual Studio. Questo indirizzo viene anche indicato nella **Lettera di benvenuto** al sottoscrittore. Se il messaggio di benvenuto non è stato ricevuto, controllare nelle cartelle di posta indesiderata.
-3. Fare clic su **Continua**
-4. Si verrà reindirizzati a una **pagina di decisione**.  Selezionare **Account aziendale o dell'istituto di istruzione** se la sottoscrizione è assegnata a un account **aziendale o dell'istituto di istruzione** associato a un tenant di Azure Active Directory (AAD). Selezionare **Personale** se la sottoscrizione è associata a un indirizzo di posta elettronica **aziendale** ma è stata anche convertita in un account Microsoft (MSA) **personale**.
-5. Immettere la password
-6. Fai clic su **Accedi**
 
 ## <a name="managing-multiple-subscriptions"></a>Gestione di più sottoscrizioni
 
@@ -87,7 +43,6 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 ## <a name="renewing-my-subscriptions"></a>Rinnovo delle sottoscrizioni personali
 
 **Sottoscrizioni standard**
-
 - Microsoft Store: se una sottoscrizione è stata acquistata in [Microsoft Store](http://www.microsoft.com/store) è anche possibile rinnovarla in Microsoft Store.
 - Contratti multilicenza:  se la società acquista le sottoscrizioni tramite un contratto multilicenza, l'amministratore deve contattare un rivenditore per rinnovare le sottoscrizioni.
 
@@ -97,10 +52,8 @@ La sottoscrizione in uso verrà visualizzata chiaramente nell'intestazione di co
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft Partner Network](https://partner.microsoft.com/en-us)
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
-
-**Visual Studio Dev Essentials:**  Dev Essentials è un programma gratuito e le appartenenze non scadono.
+- [Microsoft Partner Network](https://partner.microsoft.com)
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
 ## <a name="transferring-subscriptions"></a>Trasferimento di sottoscrizioni
 
@@ -121,8 +74,6 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 4. Dopo aver completato le modifiche, fare clic su **Salva**.
 5. Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi.
 
-   > [!div class="mx-imgBorder"]
-   > ![Modifica delle informazioni sul profilo](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
 Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
@@ -131,7 +82,6 @@ Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i va
    > ![Impostazione delle preferenze](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Collegamento della propria sottoscrizione alle sottoscrizioni Azure DevOps Services o Azure esistenti
-
 Se si accede alla propria sottoscrizione tramite un account Microsoft personale (MSA) e si possiede una sottoscrizione che include Azure DevOps Services o Microsoft Azure tramite un account aziendale o dell'istituto di istruzione gestito da Azure, è possibile collegare le due sottoscrizioni. Si tratta di un "account alternativo" che consente di continuare a usare l'account Microsoft per accedere alla sottoscrizione e avere contemporaneamente accesso alle risorse esistenti di Azure, Azure DevOps Services o IDE associate agli account aziendali o dell'istituto di istruzione.
 
 Anche se gli account usano lo stesso indirizzo e-mail, è necessario aggiungere il proprio account aziendale o dell'istituto di istruzione per usare i vantaggi in entrambi gli account.
@@ -143,15 +93,11 @@ Per aggiungere un account alternativo:
 3. In **Collegamenti correlati** scegliere **Add alternate account** (Aggiungi account alternativo).
 4. Immettere l'indirizzo e-mail dell'account aziendale o dell'istituto di istruzione e fare clic su **Aggiungi**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Account alternativo](_img/manage-vs-subscriptions/alternate-account-resized.png)
-
 Dopo aver aggiunto un account alternativo, è possibile aggiornarlo o rimuoverlo in qualsiasi momento facendo clic sulla scheda **Sottoscrizioni** e scegliendo l'opzione appropriata nella sezione **Collegamenti correlati**.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>D: Se non si rinnova la sottoscrizione, per quanto tempo Microsoft mantiene i dati?
-
 R: A seconda del canale di acquisto, Microsoft archivia i dati dei clienti per periodi di tempo diversi.
 
 | Canale                                                | Durata (giorni) |

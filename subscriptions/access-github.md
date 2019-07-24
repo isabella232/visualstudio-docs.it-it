@@ -3,15 +3,15 @@ title: Bundle di Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni sul nuovo bundle di Visual Studio + GitHub
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783432"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377644"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introduzione alle sottoscrizioni di Visual Studio con GitHub Enterprise  
 
@@ -62,15 +62,12 @@ Se non si ha familiarità con GitHub, ecco alcune risorse che possono risultare 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="q--where-is-my-github-subscription"></a>D:  Dove si trova la sottoscrizione di GitHub?
-
 R:  Il processo di configurazione della sottoscrizione di GitHub può richiedere un po' di tempo.  Se l'attesa si protrae, è possibile contattare l'amministratore di GitHub.  È possibile che l'amministratore ci stia ancora lavorando o che abbia scelto di non assegnare una sottoscrizione di GitHub all'utente. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>D:  Come si contatta l'amministratore di GitHub?
-
 R:  Se si usa GitHub Enterprise Server, selezionare il collegamento **Supporto** in fondo al client per essere messi in contatto con l'amministratore.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>D: Con questa offerta si ottiene l'intera sottoscrizione di Visual Studio (Professional o Enterprise) oppure solo l'IDE?
-
 R:  Insieme a una sottoscrizione di GitHub Enterprise si riceve una sottoscrizione completa di Visual Studio  che offre tutti i vantaggi inclusi in tali sottoscrizioni, ad esempio download di software, servizi cloud, supporto tecnico e vantaggi per i partner, esattamente come se la sottoscrizione fosse stata acquistata separatamente.
 
 ## <a name="support-resources"></a>Risorse di supporto
@@ -81,5 +78,4 @@ R:  Insieme a una sottoscrizione di GitHub Enterprise si riceve una sottoscrizio
 - Ottenere [supporto tecnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) per GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Passaggi successivi
-
 Se non si ha familiarità con GitHub, consultare i progetti divertenti e pratici del [GitHub Learning Lab](https://lab.github.com/) e gli utili suggerimenti proposti.

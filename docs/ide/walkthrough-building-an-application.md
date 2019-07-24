@@ -3,17 +3,17 @@ title: "Procedura dettagliata: Creare un'applicazione"
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582944"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416895"
 ---
 # <a name="walkthrough-build-an-application"></a>Procedura dettagliata: Creare un'applicazione
 
@@ -35,13 +35,13 @@ Quando si crea una soluzione, le configurazioni della build di versione e di deb
 
    ![Menu Compila, comando Gestione configurazione](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Nell'elenco **Configurazione soluzione attiva** scegliere **\<Nuova...\>**.
+1. Nell'elenco **Configurazione soluzione attiva** scegliere **\<Nuova...\>** .
 
 1. Nella finestra di dialogo **Nuova configurazione soluzione** assegnare il nome `Test` alla nuova configurazione, copiare le impostazioni dalla configurazione **Debug** esistente e quindi scegliere **OK**.
 
    ![Finestra di dialogo Nuova configurazione soluzione](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Nell'elenco **Piattaforma soluzione attiva** scegliere **\<Nuova...\>**.
+1. Nell'elenco **Piattaforma soluzione attiva** scegliere **\<Nuova...\>** .
 
 1. Nella finestra di dialogo **Nuova piattaforma soluzione** scegliere **x64** e non copiare le impostazioni dalla piattaforma x86.
 
