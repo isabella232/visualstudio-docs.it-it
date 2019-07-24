@@ -2,17 +2,17 @@
 title: Novità delle sottoscrizioni di Visual Studio
 description: Informazioni sulle funzionalità nuove e aggiornate che è possibile usare per gestire le sottoscrizioni di Visual Studio.
 ms.custom: ''
-ms.date: 06/27/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891079"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377953"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novità delle sottoscrizioni di Visual Studio
 
@@ -43,6 +43,4 @@ Se l'organizzazione ha già sottoscrizioni di Visual Studio con GitHub Enterpris
 
 Per ora è tutto.
 
-## <a name="see-also"></a>Vedere anche
 
-* [Vantaggi per i sottoscrittori](subscriber-benefits.md)
