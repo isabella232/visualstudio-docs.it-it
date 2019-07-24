@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857838"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415745"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Eseguire il debug di servizi Azure Kubernetes Azure ASP.NET attivi con Snapshot Debugger
 
@@ -35,9 +35,9 @@ In questa esercitazione si eseguono le attività seguenti:
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-* Debugger di snapshot per servizi di Azure Kubernetes è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
+* Snapshot Debugger per i servizi di Azure Kubernetes è disponibile solo per Visual Studio 2019 Enterprise o versione successiva con il **carico di lavoro sviluppo di Azure**. (Nella scheda **Singoli componenti** in **Debug e test** > **Snapshot Debugger**.)
 
-    Se non è già installato, installarlo [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
+    Se non è già installato, installare [Visual Studio 2019 Enterprise Edition](https://visualstudio.microsoft.com/vs/).
 
 * La raccolta di snapshot è disponibile per le app Web dei servizi Azure Kubernetes seguenti:
   * Applicazioni ASP.NET Core in esecuzione in .NET Core 2.2 o versioni successive in Debian 9.
@@ -54,11 +54,14 @@ In questa esercitazione si eseguono le attività seguenti:
     > [!IMPORTANT]
     > Per eseguire il debug di snapshot, è necessario aprire la *stessa versione del codice sorgente* pubblicata nel servizio Kubernetes di Azure.
 
-1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare la risorsa del servizio Azure Kubernetes in cui è distribuita l'app Web e un account di archiviazione di Azure, quindi fare clic su **Collega**.
+1. Scegliere **Debug > Collega Snapshot Debugger**. Selezionare la risorsa del servizio Azure Kubernetes in cui è distribuita l'app Web e un account di archiviazione di Azure, quindi fare clic su **Collega**. Snapshot Debugger supporta anche il [servizio app Azure](debug-live-azure-applications.md) e le [macchine virtuali di Azure & i set di scalabilità di macchine virtuali](debug-live-azure-virtual-machines.md).
 
-      ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
+    ![Avviare Snapshot Debugger dal menu Debug](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Selezionare la risorsa di Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
+    ![Selezionare la risorsa di Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
+
+    > [!NOTE]
+    > (Visual Studio 2019 versione 16,2 e successive) Snapshot Debugger ha abilitato il supporto cloud di Azure. Assicurarsi che la risorsa di Azure e l'account di archiviazione di Azure selezionati si trovino nello stesso cloud. Per domande sulle configurazioni di [conformità di Azure](https://azure.microsoft.com/overview/trusted-cloud/) dell'organizzazione, contattare l'amministratore di Azure.
 
 Visual Studio è ora in modalità debug di snapshot.
 
@@ -70,7 +73,7 @@ Visual Studio è ora in modalità debug di snapshot.
 
 ## <a name="set-a-snappoint"></a>Impostare un punto di acquisizione snapshot
 
-1. Nell'editor del codice fare clic sul margine sinistro accanto a una riga di codice a cui si è interessati per impostare un punto di acquisizione snapshot. Assicurarsi che si tratti di codice che si è certi verrà eseguito.
+1. Nell'editor di codice fare clic sulla barra di navigazione a sinistra accanto a una riga di codice a cui si è interessati per impostare un ancoraggio. Verificare che il codice che si conosce verrà eseguito.
 
    ![Impostare un punto di acquisizione snapshot](../debugger/media/snapshot-set-snappoint.png)
 
@@ -81,23 +84,23 @@ Visual Studio è ora in modalità debug di snapshot.
     > [!TIP]
     > Non è possibile eseguire il codice passaggio per passaggio quando si visualizza uno snapshot, ma è possibile inserire più punti di acquisizione snapshot nel codice per seguire l'esecuzione in corrispondenza di righe diverse del codice. Se il codice include più punti di acquisizione snapshot, Snapshot Debugger si assicura che gli snapshot corrispondenti provengano dalla stessa sessione dell'utente finale. Snapshot Debugger esegue questa verifica anche se l'app è usata da molti utenti.
 
-## <a name="take-a-snapshot"></a>Acquisire uno snapshot
+## <a name="take-a-snapshot"></a>Creare uno snapshot
 
-Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno snapshot ogni volta che viene eseguita la riga di codice in cui si trova il punto di acquisizione snapshot. L'esecuzione può essere causata da una richiesta reale nel server. Per forzare il raggiungimento del punto di acquisizione snapshot, passare alla visualizzazione del browser del sito Web ed eseguire le eventuali azioni necessarie per raggiungere il punto di acquisizione snapshot.
+Una volta impostato un ancoraggio, è possibile generare manualmente uno snapshot selezionando la visualizzazione del sito Web e eseguendo la riga di codice contrassegnata o attendendo che gli utenti ne generino uno dall'utilizzo del sito.
 
 ## <a name="inspect-snapshot-data"></a>Esaminare i dati dello snapshot
 
 1. Quando viene raggiunto il punto di acquisizione snapshot, nella finestra Strumenti di diagnostica viene visualizzato uno snapshot. Per aprire questa finestra, scegliere **Debug > Finestre > Mostra strumenti di diagnostica**.
 
-   ![Aprire un punto di acquisizione snapshot](../debugger/media/snapshot-diagsession-window.png)
+    ![Aprire un punto di acquisizione snapshot](../debugger/media/snapshot-diagsession-window.png)
 
 1. Fare doppio clic sul punto di acquisizione snapshot per aprire lo snapshot nell'editor del codice.
 
-   ![Esaminare i dati dello snapshot](../debugger/media/snapshot-inspect-data.png)
+    ![Esaminare i dati dello snapshot](../debugger/media/snapshot-inspect-data.png)
 
-   Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le finestre **Variabili locali**, **Espressioni di controllo** e **Stack di chiamate** e anche valutare le espressioni.
+    Da questa visualizzazione, è possibile passare il mouse sulle variabili per visualizzare i suggerimenti dati, usare le finestre **Variabili locali**, **Espressioni di controllo** e **Stack di chiamate** e anche valutare le espressioni.
 
-    Il sito Web stesso è ancora attivo e l'operazione non ha effetti sugli utenti finali. Viene acquisito un solo snapshot per ogni punto di acquisizione snapshot per impostazione predefinita. Dopo l'acquisizione, il punto di acquisizione snapshot viene disattivato. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
+    Il sito Web stesso è ancora Live e gli utenti finali non sono interessati. Viene acquisito un solo snapshot per ogni punto di acquisizione snapshot per impostazione predefinita. Dopo l'acquisizione, il punto di acquisizione snapshot viene disattivato. Se si vuole acquisire un altro snapshot in corrispondenza del punto di acquisizione snapshot, è possibile riattivare il punto di acquisizione snapshot facendo clic su **Aggiorna raccolta**.
 
 È anche possibile aggiungere ulteriori punti di acquisizione snapshot all'app e attivarli con il pulsante **Aggiorna raccolta**.
 
@@ -105,7 +108,7 @@ Quando viene attivato un punto di acquisizione snapshot, verrà acquisito uno sn
 
 ## <a name="set-a-conditional-snappoint"></a>Impostare un punto di acquisizione snapshot condizionale
 
-Se è difficile ricreare uno stato specifico nell'app, valutare se l'uso di un punto di acquisizione snapshot condizionale può essere d'aiuto. I punti di acquisizione snapshot condizionali consentono di evitare l'esecuzione di uno snapshot fino a quando l'app passa allo stato desiderato, ad esempio quando una variabile ha un valore specifico che si vuole esaminare. È possibile impostare le condizioni usando espressioni, filtri o numeri di passaggi.
+Se è difficile ricreare un determinato stato nell'app, è consigliabile usare un ancoraggio condizionale. I ancoraggio condizionali consentono di controllare quando creare uno snapshot, ad esempio quando una variabile contiene un determinato valore che si desidera controllare. È possibile impostare le condizioni usando espressioni, filtri o numeri di passaggi.
 
 #### <a name="to-create-a-conditional-snappoint"></a>Per creare un punto di acquisizione snapshot condizionale
 
