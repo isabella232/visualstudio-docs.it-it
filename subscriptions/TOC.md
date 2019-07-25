@@ -18,7 +18,6 @@
 #### [Accedere con l'account aziendale o dell'istituto di istruzione](sign-in-work.md)
 #### [Accedere con GitHub](sign-in-github.md)
 #### [Identità alternative](vs-alternate-identity.md)
-#### [Accedere con alias](aliasing.md)
 #### [Problemi di accesso](sign-in-issues.md)
 #### [Anonimizzazioni dei dati dei sottoscrittori](anonymization.md)
 ### [Panoramica del portale delle sottoscrizioni](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Dimostrazioni Internet](internet-demos.md)
 ## Amministratori
 ### [Responsabilità degli amministratori](admin-responsibilities.md)
+#### [Inventario pre-produzione](admin-inventory.md)
+#### [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
+#### [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 ### [Contratti multilicenza](volume-license-admins.md)
 ### Onboarding dell'organizzazione
 #### [Onboarding dopo la migrazione](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Sovrassegnazioni](handle-overclaimed-license.md)
 #### [Utilizzo massimo](maximum-usage.md)
 #### [Sottoscrizioni scadute](handle-expired-license.md)
+#### [Sottoscrittori che usano alias](aliasing.md)
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 ## Risorse
