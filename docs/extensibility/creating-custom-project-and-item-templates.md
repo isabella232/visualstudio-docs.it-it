@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377764"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493126"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Creare modelli di progetto e di elemento personalizzati
 
@@ -35,7 +35,6 @@ Per gli scenari di creazione di modelli di base, è consigliabile usare l' **esp
      Il modello genera un file di classe, un'icona, un file con *estensione vstemplate* , un file di progetto modificabile denominato *ProjectTemplate. vbproj* o *ProjectTemplate. csproj*e alcuni file che vengono in genere generati da altri tipi di progetto, ad esempio il file resources. resx, un file *AssemblyInfo* e un file con *estensione Settings* . Ogni file di codice contiene le sostituzioni di parametro comuni laddove appropriato.
 
 ![Selezione progetto modello di progetto](media/project-template-selection.png)
-
 
 2. Aggiungere e rimuovere elementi dal progetto come richiesto per il progetto. Non rimuovere il file di progetto modificabile, il file *AssemblyInfo* o il file con *estensione vstemplate* .
 
