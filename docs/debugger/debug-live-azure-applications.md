@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415740"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493314"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Eseguire il debug di app di Azure ASP.NET attive con Snapshot Debugger
 
@@ -109,7 +109,6 @@ In questa esercitazione si eseguono le attività seguenti:
 ## <a name="take-a-snapshot"></a>Creare uno snapshot
 
 Una volta impostato un ancoraggio, è possibile generare manualmente uno snapshot selezionando la visualizzazione del sito Web e eseguendo la riga di codice contrassegnata o attendendo che gli utenti ne generino uno dall'utilizzo del sito.
-
 
 ## <a name="inspect-snapshot-data"></a>Esaminare i dati dello snapshot
 
