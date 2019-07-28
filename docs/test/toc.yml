@@ -54,9 +54,9 @@
       items:
         - name: 'Procedura dettagliata: Creare ed eseguire unit test per codice gestito'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Guida introduttiva: Sviluppo basato su test con Esplora test'
+        - name: 'Procedura dettagliata: Sviluppo basato su test'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Usare membri Microsoft.VisualStudio.TestTools.UnitTesting in unit test
+        - name: Usare l'API MSTest negli unit test
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Usare le classi Assert
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Creare uno unit test basato sui dati
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Procedura dettagliata: Usare un file di configurazione per definire un''origine dati'
+            - name: Usare un file di configurazione per definire un'origine dati
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Unit test per metodi generici
           href: unit-tests-for-generic-methods.md
-        - name: Configurare unit test destinati a una versione precedente di .NET Framework
+        - name: Configurare unit test per una versione precedente di .NET come destinazione
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Unit test per il codice C/C++
       items:
