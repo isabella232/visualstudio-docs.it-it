@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e27155cd6504ab66cf52c4ddb0659a84936037a0
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553949"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300582"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Passaggio 3: Usare i dati con Entity Framework
 
@@ -54,7 +54,7 @@ public class Game
 
 A questo punto è possibile procedere con la creazione delle pagine che verranno usate per gestire la libreria di giochi. Nonostante quello che si potrebbe immaginare, l'operazione è in effetti incredibilmente semplice. Prima di tutto è necessario decidere dove posizionare questa funzionalità nell'app. Aprire la cartella Pagine nel progetto Web e aggiungere una nuova cartella. Chiamarla *Games*.
 
-Fare ora clic con il pulsante destro del mouse sulla cartella Games e scegliere **Aggiungi** > **Nuovo elemento di scaffolding**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)**. CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
+Fare ora clic con il pulsante destro del mouse sulla cartella Games e scegliere **Aggiungi** > **Nuovo elemento di scaffolding**. Scegliere l'opzione **Pagine Razor che usano Entity Framework (CRUD)** . CRUD è l'acronimo d"Create, Read, Update, Delete" (Creare, leggere, aggiornare, eliminare) e questo modello creerà le pagine per ogni operazione (incluse una pagina per elencare tutti gli elementi e una pagina per visualizzare i dettagli di un elemento).
 
 ![ASP.NET Core di Visual Studio 2019 - Aggiungere pagine con scaffolding](media/vs-2019/vs2019-add-scaffold.png)
 
@@ -92,7 +92,7 @@ public static void Main(string[] args)
 
         try
         {
-            var context = services.GetRequiredService<SchoolContext>();
+            var context = services.GetRequiredService<AppDbContext>();
             context.Database.EnsureCreated();
         }
         catch (Exception ex)
@@ -105,6 +105,15 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
+Per risolvere i TypeName nel codice precedente, aggiungere le istruzioni using seguenti a *Program.cs* alla fine del blocco di istruzioni using esistente:
+
+```csharp
+using Microsoft.Extensions.DependencyInjection;
+using WebApplication1.Models;
+```
+
+Assicurarsi di usare il nome del progetto anziché WebApplication1 nel codice.
 
 La maggior parte del codice è destinata semplicemente alla gestione degli errori e per consentire l'accesso ad `AppDbContext` di EF Core prima dell'esecuzione dell'app. La riga importante è quella con `context.Database.EnsureCreated()`, che creerà il database se non esiste già. A questo punto l'app è pronta per l'esecuzione.
 

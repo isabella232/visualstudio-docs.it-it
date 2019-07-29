@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261994"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315241"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Esercitazione: Creare un progetto Node.js e un'app React in Visual Studio
 
@@ -72,7 +72,7 @@ webpack aggrega i file JavaScript per consentirne l'esecuzione in un browser. Pu
 
 * Il runtime di Node.js deve essere installato.
 
-    Questa esercitazione è stata sottoposta a test con la versione 8.11.2.
+    Questa esercitazione è stata testata con la versione 10.16.0.
 
     Se il runtime non è installato, installare la versione LTS dal sito Web [Node.js](https://nodejs.org/en/download/). In generale, Visual Studio rileva automaticamente il runtime di Node.js installato. Se non viene rilevato un runtime installato, è possibile usare la pagina delle proprietà per configurare il progetto in modo che faccia riferimento al runtime installato (dopo aver creato un progetto, fare clic con il pulsante destro del mouse sul nodo del progetto e scegliere **Proprietà**).
 
@@ -318,7 +318,19 @@ Nei passaggi precedenti è stato aggiunto al progetto *webpack-config.js*. Ora s
 
     ![Caricare i file modificati](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovamente il comando webpack.
+Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovamente il comando webpack. Per automatizzare questo passaggio, aggiungere uno script di compilazione per il transpile di JSX.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Aggiungere uno script di compilazione per il transpile di JSX
+
+Le versioni più recenti di Node.js richiedono uno script di compilazione. Anziché eseguire il transpile di JSX dalla riga di comando come illustrato nella sezione precedente, è possibile eseguire il transpile di JSX durante la compilazione da Visual Studio.
+
+* Aprire *package.json* e aggiungere la sezione seguente dopo la sezione `dependencies`:
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>Eseguire l'app
 
@@ -331,7 +343,7 @@ Ogni volta che si apportano modifiche ad *app.tsx* è necessario eseguire nuovam
     ![Selezionare Chrome come destinazione di debug](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Se Chrome è disponibile nel computer in uso ma non viene visualizzato come opzione, scegliere **Esplora con** dall'elenco a discesa delle destinazioni di debug e selezionare Chrome come destinazione browser predefinita (scegliere **Imposta come predefinito**).
+    Se Chrome è disponibile nel computer in uso ma non viene visualizzato come opzione, scegliere **Web browser (nomebrowser)**  > **Google Chrome** dall'elenco a discesa delle destinazioni di debug e selezionare Chrome come destinazione del browser predefinita.
 
 1. Per eseguire l'app, premere **F5** (**Debug** > **Avvia debug**) o fare clic sul pulsante con la freccia verde.
 

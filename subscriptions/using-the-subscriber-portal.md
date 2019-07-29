@@ -1,17 +1,17 @@
 ---
 title: Uso del portale per i sottoscrittori - http://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni su tutti i vantaggi disponibili nel portale per i sottoscrittori di Visual Studio
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784773"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377927"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Uso del portale per i sottoscrittori - my.visualstudio.com
 
@@ -51,3 +51,6 @@ Oltre ai singoli vantaggi disponibili nella categoria Supporto nella pagina Vant
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 Se è necessario rinnovare una sottoscrizione cloud di Visual Studio  o si vogliono scaricare le estensioni più recenti per la famiglia di prodotti Visual Studio,  Nel Marketplace è possibile trovare estensioni, strumenti e servizi per migliorare ulteriormente Azure DevOps, Azure DevOps Server e Visual Studio Code. È anche possibile diventare un editore e pubblicare estensioni personalizzate in Marketplace.
+
+## <a name="next-steps"></a>Passaggi successivi
+Accedere al portale all'indirizzo [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) per scoprirne i vantaggi.  È anche possibile ottenere altre informazioni sull'accesso al portale con l'[account Microsoft](sign-in-msa.md) (account del servizio gestito), con l'[account aziendale o dell'istituto di istruzione](sign-in-work.md) e persino con l'[account GitHub](sign-in-github.md). 

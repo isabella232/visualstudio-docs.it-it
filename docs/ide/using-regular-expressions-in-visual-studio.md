@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043580"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345725"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usare espressioni regolari in Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio usa le [espressioni regolari di .NET](/dotnet/standard/base-types/
 
 ## <a name="regular-expression-examples"></a>Esempi di espressioni regolari
 
-Le tabelle seguenti contengono alcuni caratteri, operatori, costrutti ed esempi di modelli di espressioni regolari. Per informazioni più complete, vedere [Linguaggio di espressioni regolari](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+La tabella seguente contiene alcuni caratteri, operatori, costrutti ed esempi di modelli di espressioni regolari. Per informazioni più complete, vedere [Linguaggio di espressioni regolari](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Scopo|Espressione|Esempio|
 |-------------|----------------|-------------|
@@ -45,7 +45,7 @@ Le tabelle seguenti contengono alcuni caratteri, operatori, costrutti ed esempi 
 |Ancorare la stringa di corrispondenza alla fine del file|$|`end$` trova "end" solo quando è visualizzato alla fine del file.|
 |Trovare la corrispondenza con qualsiasi carattere singolo in un set|[abc]|`b[abc]` trova "ba", "bb" e "bc".|
 |Trovare la corrispondenza con qualsiasi carattere in un intervallo di caratteri|[a-f]|`be[n-t]` trova "bet" in "between", "ben" in "beneath" e "bes" in "beside", ma non "below".|
-|Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]".|
+|Acquisire e numerare in modo implicito l'espressione racchiusa tra parentesi|()|`([a-z])X\1` trova "aXa" e "bXb", ma non "aXb". "\1" fa riferimento al primo gruppo di espressioni "[a-z]". Per altre informazioni, vedere [Gruppi Capture e criteri di sostituzione](#capture-groups-and-replacement-patterns). |
 |Invalidare una corrispondenza|(?!abc)|`real(?!ity)` trova "real" in "realty" e "really", ma non in "reality". Trova anche il secondo "real" (ma non il primo "real") in "realityreal".|
 |Trovare la corrispondenza con qualsiasi carattere non presente in un determinato set di caratteri. Per altre informazioni, vedere [Gruppo di caratteri negativi](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` trova "bef" in "before", "beh" in "behind" e "bel" in "below", ma non "beneath".|
 |Trovare la corrispondenza con l'espressione prima o dopo il simbolo|&#124;|`(sponge\|mud) bath` trova "sponge bath" e "mud bath".|

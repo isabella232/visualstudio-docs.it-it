@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965598"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416494"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Informazioni su progetti e soluzioni di Visual Basic
 
@@ -73,6 +73,8 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
+   ![Modello Soluzione vuota in Visual Studio 2019](../media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
 
    Viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
@@ -83,18 +85,43 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un progetto vuoto, quindi si aggiungono al progetto gli elementi necessari.
 
-1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+::: moniker range="vs-2017"
+
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
-1. Nel riquadro sinistro espandere **Visual Basic** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome **QuickDate** e scegliere **OK**.
+1. Nel riquadro sinistro espandere **Visual Basic** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)** . Assegnare al progetto il nome **QuickDate** e scegliere **OK**.
 
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
    > Se **Visual Basic** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il **carico di lavoro** *Sviluppo per desktop .NET* di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   >
+   > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer-vb.png)
 
-   ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer-vb.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+
+   Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
+
+1. Immettere il testo **vuoto** nella casella di ricerca nella parte superiore e quindi selezionare **Visual Basic** in **Linguaggio**.
+
+1. Selezionare il modello **Progetto vuoto (.NET Framework)** e quindi scegliere **Avanti**.
+
+1. Assegnare al progetto il nome **QuickDate** e quindi scegliere **Crea**.
+
+   Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
+
+   > [!NOTE]
+   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)** , è necessario installare il *carico di lavoro* **Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?** . Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   >
+   > ![Collegamento al programma di installazione in Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Aggiungere un elemento al progetto
 
@@ -132,13 +159,27 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
-   Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
+::: moniker range="Vs-2017"
 
-1. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)**. Assegnare al progetto il nome **QuickTest** e scegliere il pulsante **OK**.
+2. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)** . Assegnare al progetto il nome **QuickTest** e quindi scegliere **OK**.
 
    Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*.
 
    ![Esplora soluzioni di Visual Studio con due progetti](media/tutorial-projects-solution-explorer-vb.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Nella finestra di dialogo **Aggiungi un nuovo progetto** immettere il testo **unit test** nella casella di ricerca nella parte superiore e quindi selezionare **Visual Basic** in **Linguaggio**.
+
+3. Scegliere il modello **Progetto unit test (.NET Framework)** e quindi scegliere **Avanti**.
+
+4. Assegnare al progetto il nome **QuickTest** e quindi scegliere **Crea**.
+
+   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*.
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Aggiungere un riferimento al progetto
 
