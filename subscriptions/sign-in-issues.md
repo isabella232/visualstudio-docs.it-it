@@ -3,25 +3,23 @@ title: Problemi di accesso alle sottoscrizioni di Visual Studio | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 11/07/2018
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni sui problemi che potrebbero verificarsi durante l'accesso alle sottoscrizioni di Visual Studio
-ms.openlocfilehash: c0687d08503389826b4c23b6add2a56f68e6a483
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784946"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377809"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemi di accesso alle sottoscrizioni di Visual Studio
 Per usare la sottoscrizione di Visual Studio, è necessario eseguire prima l'accesso.  A seconda della sottoscrizione, è possibile che la configurazione sia stata eseguita con un account Microsoft (MSA) o un'identità di Azure Active Directory (AAD).  Questo articolo descrive alcuni dei problemi che potrebbero verificarsi durante l'accesso alla sottoscrizione.
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>Non è possibile creare gli account Microsoft (MSA) usando indirizzi di posta elettronica aziendali o dell'istituto di istruzione
-
 Quando il dominio di posta elettronica è configurato in Azure AD, non è più possibile creare un nuovo account personale Microsoft (MSA) usando un indirizzo di posta elettronica aziendale o dell'istituto di istruzione. Che cosa significa? Se l'organizzazione usa Office 365 o altri servizi aziendali Microsoft basati su Azure AD ed è stato aggiunto un nome di dominio al tenant di Azure AD, gli utenti non potranno più creare un nuovo account personale Microsoft usando un indirizzo di posta elettronica del dominio.
 
 ### <a name="why-was-this-change-made"></a>Perché è stata effettuata questa modifica?
-
 Un account personale Microsoft con indirizzo aziendale come nome utente presenta problemi per gli utenti finali e i reparti IT. Ad esempio:
 - È possibile che gli utenti considerino il loro account personale Microsoft conforme all'azienda e pensino di rispettare i criteri di conformità quando salvano un documento aziendale in OneDrive
 - Gli utenti che lasciano un'azienda solitamente perdono l'accesso all'indirizzo di posta elettronica aziendale. In questo caso, potrebbero non essere in grado di accedere all'account personale Microsoft se dimenticano la password. Tuttavia, il reparto IT potrebbe reimpostare la password e accedere all'account personale degli ex-dipendenti.
@@ -30,7 +28,6 @@ Un account personale Microsoft con indirizzo aziendale come nome utente presenta
 La situazione è particolarmente complicata per gli utenti che hanno due account con lo stesso indirizzo di posta elettronica (uno in Azure AD e un account Microsoft).
 
 ### <a name="what-does-this-experience-look-like"></a>Com'è questa esperienza?
-
 Se si tenta di registrarsi in un'app consumer Microsoft con un indirizzo di posta elettronica aziendale o dell'istituto di istruzione, verrà visualizzato il messaggio seguente.
 
    > [!div class="mx-imgBorder"]
@@ -48,12 +45,22 @@ Il blocco della registrazione descritto di seguito impedisce solo la creazione d
 > Se il proprio reparto IT ha richiesto di creare un account personale Microsoft con la posta elettronica aziendale o dell'istituto di istruzione, ad esempio per accedere a servizi aziendali Microsoft come Premier Support, rivolgersi al team di amministratori prima di rinominare l'account.
 
 ## <a name="deleting-a-sign-in-address-may-prevent-access-to-a-subscription"></a>L'eliminazione di un indirizzo di accesso può impedire l'accesso a una sottoscrizione
-
 Se si elimina una o più identità (MSA o AAD) associate alla sottoscrizione, è possibile che il rendering dei dati del sottoscrittore, inclusi nome utente e ID di accesso, venga eseguito in modo anonimo causando la perdita dell'accesso alla sottoscrizione.
 
 Per evitare effetti sull'accesso alla sottoscrizione, usare una delle tecniche seguenti.
 - Distribuire un solo sistema di gestione delle identità, MSA o AAD, ma non entrambi.
 - Associare le identità AAD e MSA tramite il tenant.
+
+## <a name="signing-in-may-fail-when-using-aliases"></a>L'accesso potrebbe non riuscire quando si usano gli alias
+A seconda del tipo di account usato per l'accesso, le sottoscrizioni disponibili potrebbero non essere visualizzate correttamente quando si accede a [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Una delle possibili cause è l'uso di "alias" o "nomi descrittivi" al posto dell'identità di accesso a cui è assegnata la sottoscrizione. Questa situazione viene chiamata "aliasing".
+
+### <a name="what-is-aliasing"></a>Il termine "aliasing"
+indica utenti che usano identità diverse per accedere a Windows (o al servizio Active Directory) e per accedere alla posta elettronica.
+
+L'aliasing può esistere quando un'azienda usa un servizio Microsoft Online per l'accesso alla directory, ad esempio JohnD@contoso.com, ma gli utenti accedono agli account di posta elettronica tramite alias o nomi descrittivi, ad esempio John.Doe@contoso.com. Per molti clienti che gestiscono le sottoscrizioni tramite Volume Licensing Service Center (VLSC), questo può causare errori durante l'esperienza di accesso perché l'indirizzo di posta elettronica fornito (John.Doe@contoso.com) non corrisponde all'indirizzo della directory (JohnD@contoso.com) richiesto per completare l'autenticazione tramite l'opzione "Account aziendale o dell'istituto di istruzione".
+
+### <a name="what-options-do-i-have"></a>Quali sono le opzioni a disposizione?
+Dal punto di vista dei sottoscrittori, è prima di tutto importante collaborare con l'amministratore per comprendere la configurazione delle identità della società. Se necessario, l'amministratore potrebbe dover aggiornare le impostazioni dell'account dal portale di amministrazione o potrebbe essere necessario creare un account Microsoft (MSA) usando l'indirizzo di posta elettronica aziendale. Prima di eseguire i passaggi per creare un account Microsoft, contattare l'amministratore per verificare se esistono criteri o problemi per questa azione. 
 
 ## <a name="next-steps"></a>Passaggi successivi
 - Scoprire come [collegare gli account MSA e AAD](/azure/active-directory/b2b/add-users-administrator) all'interno di AAD.

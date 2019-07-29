@@ -1,7 +1,7 @@
 ---
 title: Aggiornare Visual Studio secondo una baseline di manutenzione
 description: Informazioni su come aggiornare Visual Studio secondo una baseline di manutenzione.
-ms.date: 05/22/2019
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,16 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250322"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300539"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Aggiornare Visual Studio secondo una baseline di manutenzione
 
-Per Visual Studio 2019 verranno pubblicati aggiornamenti frequenti durante il [ciclo di vita del prodotto](/visualstudio/productinfo/release-rhythm#release-channel-updates). Gli aggiornamenti includeranno sia gli aggiornamenti di versione secondari (ad esempio, da 16.0 a 16.1) che potrebbero aggiungere nuovi componenti e funzionalità sia gli aggiornamenti di manutenzione (ad esempio, da 16.0.4 a 16.0.5) che contengono solo correzioni specifiche per problemi critici.
+Visual Studio viene aggiornato spesso durante il ciclo di vita del prodotto. Sono disponibili due tipi di aggiornamenti: 
+
+* **Aggiornamenti di versione minori**: ad esempio dalla versione 16.0 alla versione 16.1, con nuove funzionalità e nuovi componenti.  
+* **Aggiornamenti di servizio**: ad esempio dalla versione 16.0.4 alla versione 16.0.5, con le correzioni specifiche di problemi critici.
 
 Gli amministratori dell'organizzazione possono scegliere di mantenere i client su una baseline di manutenzione, supportata con gli aggiornamenti di manutenzione per un anno dopo il rilascio della baseline di manutenzione successiva.
 
@@ -34,7 +37,7 @@ Per iniziare a usare una baseline di manutenzione, scaricare un programma di boo
 > [!NOTE]
 > Prestare attenzione a distinguere tra il programma di bootstrap con versione fissa e i programmi di bootstrap standard. I programmi di bootstrap standard sono configurati per usare la versione più recente disponibile di Visual Studio e hanno un numero nel nome di file (ad esempio: vs_enterprise__123456789 123456789.exe) quando vengono scaricati da My.VisualStudio.com.
 
-Durante l'installazione, gli amministratori dell'organizzazione devono configurare i client per impedirne l'aggiornamento alla versione più recente. È possibile configurare i client in diversi modi:
+Durante l'installazione, gli amministratori dell'organizzazione devono configurare i client per impedirne l'aggiornamento alla versione più recente. Sono disponibili diversi modi per eseguire questa operazione:
 - [Modificare l'impostazione `channelUri` nel file di configurazione delle risposte](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) per usare un manifesto del canale nel layout o nella cartella locale.
 - [Modificare il valore channelUri tramite l'esecuzione della riga di comando](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) per usare un file inesistente.
 - [Impostare i criteri nel sistema client per disabilitare gli aggiornamenti](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating), per impedire l'aggiornamento automatico dei client.
@@ -59,7 +62,7 @@ Un'altra opzione per controllare gli aggiornamenti in un client consiste nel [di
 
 Quando diventa disponibile un aggiornamento per una baseline di manutenzione, vengono resi disponibili file del programma di bootstrap con versione fissa per l'aggiornamento di manutenzione da [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Gli amministratori che eseguono la distribuzione tramite un'installazione con layout di rete vorranno aggiornare la [posizione del layout](update-a-network-installation-of-visual-studio.md). I client installati da tale posizione riceveranno le notifiche per gli aggiornamenti. Se l'aggiornamento deve essere distribuito ai client, seguire [queste istruzioni](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Quando si modifica il file 'response.json' per un aggiornamento, non aggiungere altri carichi di lavoro, componenti o lingue. La gestione di queste impostazioni deve essere eseguita come una distribuzione di 'modifica' dopo aver aggiornato il prodotto.
+Gli amministratori che eseguono la distribuzione tramite un'installazione con layout di rete devono aggiornare la [posizione del layout](update-a-network-installation-of-visual-studio.md). I client installati da tale posizione riceveranno le notifiche per gli aggiornamenti. Se l'aggiornamento deve essere distribuito ai client, seguire [queste istruzioni](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Quando si modifica il file 'response.json' per un aggiornamento, non aggiungere altri carichi di lavoro, componenti o linguaggi. La gestione di queste impostazioni deve essere eseguita come una distribuzione di 'modifica' dopo aver aggiornato il prodotto.
 
 Nel caso di un'installazione basata su Internet, eseguire il nuovo programma di bootstrap con versione fissa con il parametro `--channelUri` che punta a un manifesto del canale inesistente nel client. Se l'aggiornamento viene distribuito in modalità non interattiva o passiva, usare due comandi separati:
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetCount | Microsoft Docs
+title: 'IDebugArrayObject:: GetCount | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 35cce37afc389501386ffec7b75b934e7933bc98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/26/2019
 ms.locfileid: "68197798"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
@@ -42,13 +42,13 @@ int GetCount(
   
 #### <a name="parameters"></a>Parametri  
  `pdwElements`  
- [out] Restituisce il conteggio.  
+ out Restituisce il conteggio.  
   
 ## <a name="return-value"></a>Valore restituito  
- Se l'operazione riesce, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
+ Se ha esito positivo, restituisce S_OK; in caso contrario, restituisce un codice di errore.  
   
 ## <a name="remarks"></a>Note  
- Questo metodo considera tutti gli elementi di un oggetto matrice come una matrice unidimensionale, anche se l'oggetto di matrice è multidimensionale. Si consideri ad esempio la matrice `myarray[3][2][6]`, questo metodo restituirà 36 nel `pdwElements` parametro. Usare la [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metodo per recuperare i singoli elementi uno alla volta.  
+ Questo metodo considera tutti gli elementi di un oggetto matrice come matrice unidimensionale, anche se l'oggetto matrice è multidimensionale. Ad esempio, `pdwElements` in base alla `myarray[3][2][6]`matrice, questo metodo restituisce 36 nel parametro. Usare il  Metodo [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) per recuperare i singoli elementi uno alla volta.  
   
 ## <a name="see-also"></a>Vedere anche  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

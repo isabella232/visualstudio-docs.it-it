@@ -1,6 +1,6 @@
 ---
 title: Introduzione a progetti e soluzioni
-ms.date: 12/11/2017
+ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 498f52a85f52206bf5c12a2d591ce169eb0775fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e473d6d1512488950188b1e1649542f0341f43
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943747"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415685"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Informazioni su progetti e soluzioni
 
@@ -49,13 +49,13 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 1. Aprire Visual Studio.
 
-1. Nella barra dei menu scegliere **File** > **Nuovo** > **Progetto**.
+1. Nella barra dei menu in alto scegliere **File** > **Nuovo** > **Progetto**.
 
    Verrà visualizzata la finestra di dialogo **Nuovo progetto** .
 
 1. Nel riquadro sinistro espandere **Altri tipi di progetti**, quindi scegliere **Soluzioni di Visual Studio**. Nel riquadro centrale scegliere il modello **Soluzione vuota**. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere il pulsante **OK**.
 
-   ![Modello Soluzione vuota in Visual Studio](media/tutorial-projects-new-solution.png)
+   ![Modello Soluzione vuota in Visual Studio 2017](media/tutorial-projects-new-solution.png)
 
    La **Pagina iniziale** si chiude e viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
 
@@ -69,6 +69,8 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 3. Nella pagina **Crea un nuovo progetto** immettere **soluzione vuota** nella casella di ricerca, selezionare il modello **Soluzione vuota** e quindi scegliere **Avanti**.
 
+   ![Modello Soluzione vuota in Visual Studio 2019](media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Assegnare alla soluzione il nome **QuickSolution**, quindi scegliere **Crea**.
 
    Viene visualizzata una soluzione in **Esplora soluzioni** sul lato destro della finestra di Visual Studio. **Esplora soluzioni** viene usato di frequente, per visualizzare il contenuto dei progetti.
@@ -79,18 +81,43 @@ Per iniziare si creerà una soluzione vuota. Una volta acquisita una conoscenza 
 
 A questo punto si aggiunge il primo progetto alla soluzione. Si inizia con un progetto vuoto, quindi si aggiungono al progetto gli elementi necessari.
 
-1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+::: moniker range="vs-2017"
+
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
    Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
 
-1. Nel riquadro sinistro espandere **Visual C#** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)**. Assegnare al progetto il nome **QuickDate** e scegliere **OK**.
+1. Nel riquadro sinistro espandere **Visual C#** e scegliere **Desktop di Windows**. Nel riquadro centrale scegliere il modello **Progetto vuoto (.NET Framework)** . Assegnare al progetto il nome **QuickDate** e quindi scegliere **OK**.
 
    Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
 
    > [!NOTE]
    > Se **Visual C#** non viene visualizzato nel riquadro sinistro della finestra di dialogo, è necessario installare il **carico di lavoro** *Sviluppo per desktop .NET* di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo facile per installare un nuovo carico di lavoro consiste nello scegliere il collegamento **Apri il programma di installazione di Visual Studio** nell'angolo in basso a sinistra della finestra di dialogo **Aggiungi nuovo progetto**. Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   >
+   > ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer.png)
 
-   ![Collegamento Apri il programma di installazione di Visual Studio](media/tutorial-projects-open-installer.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Nel menu di scelta rapida o nel menu a comparsa di **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
+
+   Viene visualizzata la finestra di dialogo **Aggiungi un nuovo progetto**.
+
+1. Immettere il testo **vuoto** nella casella di ricerca nella parte superiore e quindi selezionare **C#** in **Linguaggio**.
+
+1. Selezionare il modello **Progetto vuoto (.NET Framework)** e quindi scegliere **Avanti**.
+
+1. Assegnare al progetto il nome **QuickDate** e quindi scegliere **Crea**.
+
+   Il progetto QuickDate appare sotto la soluzione in **Esplora soluzioni**. Attualmente contiene un unico file con nome *App.config*.
+
+   > [!NOTE]
+   > Se non viene visualizzato il modello **Progetto vuoto (.NET Framework)** , è necessario installare il *carico di lavoro* **Sviluppo per desktop .NET** di Visual Studio. Visual Studio usa l'installazione basata sul carico di lavoro per installare solo i componenti necessari per il tipo di sviluppo scelto. Un modo semplice per installare un nuovo carico di lavoro quando si crea un nuovo progetto è scegliere il collegamento **Installa altri strumenti e funzionalità** visualizzato sotto **L'elemento cercato non è stato trovato?** . Dopo l'avvio del programma di installazione di Visual Studio, scegliere il carico di lavoro **Sviluppo per desktop .NET** e quindi il pulsante **Modifica**.
+   >
+   > ![Collegamento Apri il programma di installazione di Visual Studio](media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Aggiungere un elemento al progetto
 
@@ -100,7 +127,7 @@ Ora il progetto è vuoto. Aggiungiamo un file di codice.
 
    Viene aperta la finestra di dialogo **Aggiungi nuovo elemento**.
 
-1. Espandere **Elementi di Visual C#**, quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
+1. Espandere **Elementi di Visual C#** , quindi scegliere **Codice**. Nel riquadro centrale scegliere il modello dell'elemento **Classe**. Assegnare il nome **Calendar** alla classe e scegliere il pulsante **Aggiungi**.
 
    Il file *Calendar.cs* viene aggiunto al progetto. Il valore *cs* finale è l'estensione del nome file assegnata ai file di codice C#. Il file appare nella gerarchia visuale del progetto in **Esplora soluzioni** e il suo contenuto viene aperto nell'editor.
 
@@ -138,45 +165,69 @@ Ora si aggiungerà un progetto unit test alla soluzione. Questa volta si inizier
 
 1. Nel menu di scelta rapida o nel menu a comparsa **Soluzione 'QuickSolution'** in **Esplora soluzioni** scegliere **Aggiungi** > **Nuovo progetto**.
 
-   Verrà aperta la finestra di dialogo **Aggiungi nuovo progetto** .
+::: moniker range="vs-2017"
 
-1. Nel riquadro sinistro espandere **Visual Basic** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello di progetto **Progetto unit test (.NET Framework)**. Assegnare al progetto il nome **QuickTest** e scegliere il pulsante **OK**.
+2. Nel riquadro sinistro espandere **Visual C#** e scegliere la categoria **Test**. Nel riquadro centrale scegliere il modello **Progetto di test MSTest (.NET Core)** . Assegnare al progetto il nome **QuickTest** e quindi scegliere **OK**.
 
-   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.vb*. *vb* è l'estensione di nome file assegnata ai file di codice di Visual Basic.
+   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.cs*.
 
    ![Esplora soluzioni di Visual Studio con due progetti](media/tutorial-projects-solution-explorer.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Nella finestra di dialogo **Aggiungi un nuovo progetto** immettere il testo **unit test** nella casella di ricerca nella parte superiore e quindi selezionare **C#** in **Linguaggio**.
+
+3. Scegliere il modello **Progetto di test MSTest (.NET Core)** e quindi scegliere **Avanti**.
+
+4. Assegnare al progetto il nome **QuickTest** e quindi scegliere **Crea**.
+
+   Viene aggiunto un secondo progetto a **Esplora soluzioni** e nell'editor viene aperto un file con nome *UnitTest1.cs*.
+
+   ![Esplora soluzioni di Visual Studio con due progetti](media/vs-2019/tutorial-projects-solution-explorer.png)
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Aggiungere un riferimento al progetto
 
 Il nuovo progetto unit test verrà utilizzato per il test del metodo nel progetto **QuickDate**, pertanto è necessario aggiungere un riferimento a tale progetto. Questa operazione crea una *dipendenza di compilazione*, vale a dire che quando si crea la soluzione, **QuickDate** viene compilato prima di **QuickTest**.
 
-1. Scegliere il nodo **Riferimenti** nel progetto **QuickTest**, quindi nel menu di scelta rapida o nel menu a comparsa scegliere **Aggiungi riferimento**.
-
-   ![Menu Aggiungi riferimento](media/tutorial-projects-add-reference.png)
+1. Scegliere il nodo **Dipendenze** nel progetto **QuickTest**, quindi nel menu di scelta rapida o nel menu a comparsa scegliere **Aggiungi riferimento**.
 
    Viene visualizzata la finestra di dialogo **Gestione riferimenti**.
 
-1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi scegliere il pulsante **OK**.
+1. Nel riquadro sinistro espandere **Progetti** e scegliere **Soluzione**. Nel riquadro centrale selezionare la casella di controllo accanto a **QuickDate** e quindi scegliere **OK.
 
    Viene aggiunto un riferimento al progetto **QuickDate**.
 
+   ![Esplora soluzioni in Visual Studio 2019 con il riferimento al progetto](media/vs-2019/tutorial-projects-solution-explorer-reference.png)
+
 ## <a name="add-test-code"></a>Aggiungere codice di test
 
-1. Ora si aggiungerà codice di test al file di codice di Visual Basic. Sostituire il contenuto di *UnitTest1.vb* con il codice seguente.
+1. Ora si aggiungerà codice di test al file di codice di test C#. Sostituire il contenuto di *UnitTest1.cs* con il codice seguente:
 
-   ```vb
-   <TestClass()> Public Class UnitTest1
+   ```csharp
+   using System;
+   using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-       <TestMethod()> Public Sub TestGetCurrentDate()
-           Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate())
-       End Sub
-
-   End Class
+   namespace QuickTest
+   {
+       [TestClass]
+       public class UnitTest1
+       {
+           [TestMethod]
+           public void TestGetCurrentDate()
+           {
+               Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate());
+           }
+       }
+   }
    ```
 
    Sotto alcune parti del codice viene visualizzata una linea rossa ondulata. Per risolvere l'errore si imposterà il progetto di test come [assembly Friend](/dotnet/standard/assembly/friend-assemblies) del progetto **QuickDate**.
 
-1. Tornare al progetto **QuickDate**, aprire il file *Calendar.cs*, se non è già aperto, e aggiungere la seguente [istruzione using](/dotnet/csharp/language-reference/keywords/using-statement) e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> all'inizio del file per risolvere l'errore nel progetto di test.
+1. Nel progetto **QuickDate** aprire il file *Calendar.cs* se non è già aperto. Aggiungere l'[istruzione using](/dotnet/csharp/language-reference/keywords/using-statement) e l'attributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> seguenti nella parte superiore del file per risolvere l'errore nel progetto di test.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -196,9 +247,9 @@ La riga del file *Calendar.cs* contenente l'attributo <xref:System.Runtime.Compi
 
    Le *pagine proprietà* del progetto vengono aperte nella scheda **Applicazione**. Le pagine proprietà contengono varie impostazioni per il progetto. Si noti che il nome assembly del progetto **QuickTest** è di fatto "QuickTest". Se si desidera modificarlo, farlo qui. Se lo si modifica, quando si compila il progetto di test, il nome del file binario cambia da *QuickTest.dll* al nome scelto.
 
-   ![Proprietà di progetti](media/tutorial-projects-properties.png)
+   ![Proprietà di progetti](media/tutorial-projects-netcore-properties.png)
 
-1. Esplorare le altre schede delle pagine proprietà del progetto, quali **Compilazione** e **Impostazioni**. Queste schede variano a seconda del tipo di progetto.
+1. Esplorare le altre schede delle pagine delle proprietà del progetto, ad esempio **Compilazione** e **Debug**. Queste schede variano a seconda del tipo di progetto.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

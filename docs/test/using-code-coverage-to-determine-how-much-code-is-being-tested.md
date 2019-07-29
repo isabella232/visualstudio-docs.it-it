@@ -1,6 +1,6 @@
 ---
 title: Test di code coverage
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973080"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416451"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usare la funzionalità code coverage per determinare la quantità di codice testato
 
@@ -47,7 +47,7 @@ La funzionalità di code coverage è disponibile solo in Visual Studio Enterpris
 > [!TIP]
 > - Assicurarsi che l'ottimizzazione del compilatore sia disattivata
 > - Se si sta usando codice non gestito (nativo), usare una compilazione di debug
-> - Assicurarsi che vengano generati i file con estensione pdb (simbolo) per ogni assembly.
+> - Assicurarsi che vengano generati file con estensione pdb (simbolo) per ogni assembly
 
 Se non si ottengono i risultati previsti, vedere [Risolvere i problemi di code coverage](../test/troubleshooting-code-coverage.md). Ricordarsi di eseguire nuovamente il code coverage dopo aver aggiornato il codice. I risultati di code coverage e la colorazione del codice non vengono aggiornati automaticamente dopo aver modificato il codice o quando si eseguono i test.
 
@@ -55,9 +55,10 @@ Se non si ottengono i risultati previsti, vedere [Risolvere i problemi di code c
 
 Il code coverage viene conteggiato in *blocchi*. Un blocco è un frammento di codice con esattamente un solo punto di ingresso e di uscita.  Se il flusso di controllo del programma passa attraverso un blocco durante l'esecuzione di un test, il blocco viene considerato analizzato. Il numero di volte che il blocco viene utilizzato non influisce sul risultato.
 
-È inoltre possibile visualizzare i risultati in termini di righe scegliendo **Aggiungi/Rimuovi colonne** nell'intestazione della tabella. Se l'esecuzione del test analizza tutti i blocchi di codice in una riga di codice, viene conteggiata una sola riga. Quando una riga contiene blocchi di codice analizzati e non analizzati, viene conteggiata una riga parziale.
+È inoltre possibile visualizzare i risultati in termini di righe scegliendo **Aggiungi/Rimuovi colonne** nell'intestazione della tabella. Alcuni utenti preferiscono il conteggio delle righe in quanto le percentuali più corrispondono alla dimensione dei frammenti presenti nel codice sorgente. Un lungo blocco di calcolo verrebbe conteggiato come un singolo blocco anche se occupa più righe.
 
-Alcuni utenti preferiscono il conteggio delle righe in quanto le percentuali più corrispondono alla dimensione dei frammenti presenti nel codice sorgente. Un lungo blocco di calcolo verrebbe conteggiato come un singolo blocco anche se occupa più righe.
+> [!TIP]
+> Una riga di codice può contenere più di un blocco di codice. Se ciò si verifica e l'esecuzione del test analizza tutti i blocchi di codice nella riga, viene conteggiata una sola riga. Se vengono analizzati alcuni blocchi di codice, ma non tutti, la riga viene conteggiata come riga parziale.
 
 ## <a name="manage-code-coverage-results"></a>Gestire i risultati di code coverage
 

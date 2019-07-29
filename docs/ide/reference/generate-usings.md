@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531622"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416473"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Generare istruzioni using in Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Aggiungere istruzioni using mancanti in Visual Studio
 
 Questa generazione di codice si applica a:
 
@@ -28,7 +30,7 @@ Questa generazione di codice si applica a:
 
 **Perché?:** Dato che l'azione rapida aggiunge automaticamente le importazioni necessarie, non è necessario copiare manualmente le istruzioni `using` necessarie per il codice.
 
-## <a name="generate-usings-refactoring"></a>Refactoring per la generazione di istruzioni using
+## <a name="add-missing-usings-refactoring"></a>Refactoring per l'aggiunta di istruzioni using mancanti
 
 1. Copiare codice da un file e incollarlo in un nuovo file senza includere le istruzioni `using` necessarie. L'errore risultante è accompagnato da una correzione del codice che aggiunge le istruzioni `using` mancanti.
 

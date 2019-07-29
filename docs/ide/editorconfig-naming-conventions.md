@@ -10,18 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309828"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345700"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenzioni di denominazione .NET per EditorConfig
 
 Le convenzioni di denominazione riguardano la denominazione degli elementi di codice, ad esempio classi, proprietà e metodi. Ad esempio, è possibile specificare che i metodi pubblici devono essere scritti in lettere maiuscole o che i metodi asincroni devono terminare con "Async". È anche possibile applicare queste regole specificandole in un [file EDITORCONFIG](../ide/create-portable-custom-editor-options.md). Le violazioni delle regole di denominazione vengono visualizzate nell'**Elenco errori** o come suggerimento sotto il nome, a seconda della gravità scelta per la regola. Non è necessario compilare il progetto per visualizzare le violazioni.
-
-Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Per ogni convenzione di denominazione, è necessario specificare i simboli a cui viene applicata, uno stile di denominazione e un livello di gravità per l'applicazione della convenzione, usando le proprietà descritte di seguito. L'ordine delle proprietà non è importante.
 
@@ -174,6 +172,22 @@ error | Se questo stile non viene rispettato, viene visualizzato un errore del c
 
 > [!NOTE]
 > Non è necessario compilare il progetto per visualizzare le violazioni delle regole di denominazione. Vengono visualizzate quando il codice viene modificato, nell'**Elenco errori** o come suggerimento.
+
+## <a name="rule-order"></a>Ordine delle regole
+
+::: moniker range="vs-2017"
+
+Le convenzioni di denominazione devono essere ordinate dalla convenzione più specifica a quella meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+A partire da Visual Studio 2019 versione 16.2, l'ordine in base al quale sono definite le regole di denominazione in un file EditorConfig non è rilevante. Visual Studio ordina infatti automaticamente le regole di denominazione in base alla definizione delle regole stesse. L'[estensione EditorConfig Language Service](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) può analizzare un file EditorConfig e segnalare i casi in cui l'ordinamento delle regole nel file è diverso da quello che verrà usato dal compilatore in fase di esecuzione.
+
+Se si usa una versione precedente di Visual Studio, le convenzioni di denominazione devono essere ordinate dalla più specifica alla meno specifica nel file EditorConfig. La prima regola rilevata che può essere applicata è l'unica regola che viene applicata. Se tuttavia sono presenti più *proprietà* della regola con lo stesso nome, la proprietà con tale nome individuata più di recente ha la precedenza. Per altre informazioni, vedere [Gerarchia e precedenza dei file](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
+
+::: moniker-end
 
 ## <a name="default-naming-styles"></a>Stili di denominazione predefiniti
 
