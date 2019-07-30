@@ -1,12 +1,7 @@
 ---
-title: Inviare messaggi alla finestra di Output | Microsoft Docs
+title: Inviare messaggi alla finestra di output | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - diagnostic messages [C#]
 - System.Diagnostics.Debug class, Output window
@@ -26,27 +21,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47b563f58d08a732ec224bb8bbf47ad807c4e81d
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852138"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605386"
 ---
 # <a name="send-messages-to-the-output-window"></a>Inviare messaggi alla finestra di output
 
-È possibile scrivere messaggi in fase di esecuzione per il **Output** finestra utilizzando il <xref:System.Diagnostics.Debug> classe o il <xref:System.Diagnostics.Trace> classe, che fanno parte del <xref:System.Diagnostics> libreria di classi. Usare la <xref:System.Diagnostics.Debug> se si desidera solo output classe la *Debug* versione del programma. Usare la <xref:System.Diagnostics.Trace> classe se si desidera che l'output in entrambi il *eseguire il Debug* e *versione* versioni.
+È possibile scrivere messaggi di runtime nella finestra di **output** usando la <xref:System.Diagnostics.Debug> classe o la <xref:System.Diagnostics.Trace> <xref:System.Diagnostics> classe, che fa parte della libreria di classi. Utilizzare la <xref:System.Diagnostics.Debug> classe se si desidera solo l'output nella versione di *debug* del programma. Utilizzare la <xref:System.Diagnostics.Trace> classe se si desidera l'output in entrambe le versioni di *debug* e di *rilascio* .
 
 ## <a name="output-methods"></a>Metodi di output
  Le classi <xref:System.Diagnostics.Trace> e <xref:System.Diagnostics.Debug> forniscono i seguenti metodi di output:
 
 - Diversi metodi `Write`, che generano informazioni senza interrompere l'esecuzione. Questi metodi sostituiscono il metodo `Debug.Print` utilizzato nelle versioni precedenti di Visual Basic.
 
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metodi, che interrompono l'esecuzione e l'output informazioni se si verifica un errore di una condizione specificata. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per altre informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md).
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>metodi <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> e, che interrompono l'esecuzione e le informazioni di output se una condizione specificata ha esito negativo. Per impostazione predefinita, il metodo `Assert` visualizza le informazioni in una finestra di dialogo. Per altre informazioni, vedere [Asserzioni nel metodo gestito](../debugger/assertions-in-managed-code.md).
 
-- Il <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> e <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metodi, che interrompono sempre le informazioni di esecuzione e l'output. Per impostazione predefinita, i metodi `Fail` visualizzano le informazioni in una finestra di dialogo.
+- I <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> metodi <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> e, che interrompono sempre le informazioni di esecuzione e di output. Per impostazione predefinita, i metodi `Fail` visualizzano le informazioni in una finestra di dialogo.
 
-Il **Output** finestra può anche visualizzare le informazioni su:
+La finestra **output** consente inoltre di visualizzare informazioni su:
 
 - I moduli caricati o scaricati dal debugger.
 
