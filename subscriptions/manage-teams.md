@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Informazioni sulla responsabilità degli amministratori di gestire le sottoscrizioni per i team di grandi dimensioni e per i collaboratori esterni.
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420572"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493343"
 ---
 # <a name="large-teams-and-external-contractors"></a>Team di grandi dimensioni e collaboratori esterni
 Gli amministratori delle sottoscrizioni di Visual Studio sono responsabili di assicurarsi che ogni utente che interagisce con software di Visual Studio concesso in licenza disponga della licenza appropriata con la propria sottoscrizione di Visual Studio.
@@ -39,5 +39,3 @@ Altre informazioni sulle responsabilità degli amministratori:
 - [Inventario dell'ambiente di preproduzione](admin-inventory.md)
 - [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
 - Usare [Utilizzo massimo](maximum-usage.md) per tenere traccia degli impegni di acquisto
-
-

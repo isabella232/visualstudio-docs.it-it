@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Informazioni su come accedere alla sottoscrizione di Visual Studio con l'account Microsoft (MSA)
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315352"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493087"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Accesso alle sottoscrizioni di Visual Studio con l'account Microsoft (MSA)
 
@@ -27,9 +27,8 @@ Questo articolo illustra la procedura per l'accesso con l'account Microsoft (MSA
    > Questo indirizzo viene anche identificato nel messaggio di posta elettronica di benvenuto del sottoscrittore ricevuto al momento dell'acquisto della sottoscrizione o dell'iscrizione per Visual Studio Dev Essentials. In caso di problemi a individuare il messaggio di benvenuto, controllare le cartelle della posta indesiderata.
 
 3. Immettere la password.
-4. Fai clic su **Accedi**.
+4. Fare clic su **Accedi**.
 5. A questo punto, dovrebbe essere visualizzata la pagina "Vantaggi".
-
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>D:  Non è possibile accedere con l'account Microsoft (MSA).  
