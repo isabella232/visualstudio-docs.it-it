@@ -71,8 +71,9 @@
 #### [Video di onboarding](https://youtu.be/plSu6fpi7UI)
 ### Uso del portale di amministrazione
 #### [Panoramica](using-admin-portal.md)
-#### [Assegnare sottoscrizioni](assign-license.md)
-#### [Inviare di nuovo i messaggi di posta elettronica di assegnazione](resend-assignment-email.md)
+#### Assegnare sottoscrizioni
+##### [Aggiungere utenti singoli](assign-license.md)
+##### [Aggiungere più utenti](assign-license-bulk.md)
 #### [Modificare sottoscrizioni](edit-license.md)
 #### [Eliminare sottoscrizioni](delete-license.md)
 #### [Cercare una sottoscrizione](search-license.md)
@@ -84,7 +85,7 @@
 #### [Sottoscrittori con accesso tramite posta elettronica personale](personal-email-sign-ins.md)
 ### [Gestione di Visual Studio con GitHub Enterprise](assign-github.md)
 ## Risorse
-### [White paper sulle licenze di Visual Studio](https://aka.ms/vslicensing)
+### [White paper sulle licenze per Visual Studio](https://aka.ms/vslicensing)
 ### [Confrontare le opzioni e i prezzi delle sottoscrizioni](https://visualstudio.microsoft.com/vs/pricing)
 ### [Confrontare le funzionalità dell'IDE di Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Supporto per l'amministrazione e le sottoscrizioni di Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
