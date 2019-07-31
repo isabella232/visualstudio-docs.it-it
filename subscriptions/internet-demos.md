@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Informazioni sull'uso di codici Product Key per supportare dimostrazioni via Internet tramite Servizi terminal e abilitare l'accesso tramite Servizi Desktop remoto
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377979"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493379"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Dimostrazioni via Internet tramite Servizi terminal
 Con una sottoscrizione di Visual Studio è possibile offrire agli utenti finali l'accesso a dimostrazioni via Internet dei programmi tramite Servizi terminal (Windows Server 2003 o Windows Server 2008) o Servizi Desktop remoto (Windows Server 2008 R2 e versioni successive). In questo modo fino a 200 utenti anonimi potranno accedere contemporaneamente alla dimostrazione. La dimostrazione non deve contenere dati di produzione. I sottoscrittori di Visual Studio saranno autorizzati a illustrare le proprie applicazioni agli utenti finali. Questa dimostrazione via Internet mediante Servizi terminal (TS) e Servizi Desktop remoto (RDS) rappresenta l'unico scenario in cui gli utenti finali sprovvisti di sottoscrizione di Visual Studio potranno interagire con l'applicazione demo, mentre il software è concesso in licenza tramite sottoscrizione di Visual Studio.
@@ -38,4 +38,3 @@ Gli utenti finali possono connettersi per accedere alle applicazioni tramite Ser
 Per materiale sussidiario sulla distribuzione di Servizi Desktop remoto, vedere la serie di blog in più parti sulla **distribuzione di sessioni di Servizi Desktop remoto 2012** all'indirizzo https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 In caso di domande, visitare il [forum sui Servizi Desktop remoto Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-

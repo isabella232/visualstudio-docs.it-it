@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Informazioni su come sfruttare al meglio le sottoscrizioni di Visual Studio
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378076"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493350"
 ---
 # <a name="managing-subscriptions"></a>Gestione delle sottoscrizioni
 
@@ -73,7 +73,6 @@ Il portale delle sottoscrizioni consente di creare e gestire un profilo, semplif
 3. Nella scheda **Informazioni** è possibile modificare nome, indirizzo e-mail, paese/area geografica, immagine del profilo e preferenze di contatto. Nella scheda **Preferenze** è possibile selezionare le impostazioni preferite per lingua, criteri di data e ora, fuso orario e tema dell'interfaccia utente.
 4. Dopo aver completato le modifiche, fare clic su **Salva**.
 5. Fare clic sul pulsante **Indietro** del browser per tornare alla pagina Vantaggi.
-
 
 ### <a name="setting-communications-preferences"></a>Impostazione delle preferenze di comunicazione
 Se si vuole ricevere aggiornamenti periodici sulla propria sottoscrizione e i vantaggi disponibili, inclusa la newsletter mensile Sottoscrizioni di Visual Studio, [aggiornare le preferenze](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) selezionando la casella di controllo relativa alle sottoscrizioni di Visual Studio nel profilo personale di Visual Studio. È possibile modificare queste preferenze e annullare la sottoscrizione in qualsiasi momento. 
