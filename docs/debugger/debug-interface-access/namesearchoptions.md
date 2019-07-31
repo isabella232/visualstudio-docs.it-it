@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855145"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661827"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Specifica le opzioni di ricerca per i nomi dei simboli e file.
+Specifica le opzioni di ricerca per i nomi di simboli e file.
 
 ## <a name="syntax"></a>Sintassi
 
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementi
 `nsNone` Non è stata specificata alcuna opzione.
 
-`nsfCaseSensitive` Si applica una corrispondenza tra maiuscole e minuscole del nome.
+`nsfCaseSensitive`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole.
 
-`nsfCaseInsensitive` Si applica una corrispondenza tra maiuscole e minuscole del nome.
+`nsfCaseInsensitive`Applica una corrispondenza con il nome senza distinzione tra maiuscole e minuscole.
 
-`nsfFNameExt` I nomi vengono considerati percorsi e si applica una corrispondenza di nome nomefile. ext.
+`nsfFNameExt`Considera i nomi come percorsi e applica un nome nomefile. EXT corrispondente.
 
-`nsfRegularExpression` Si applica una corrispondenza tra nomi distinzione maiuscole/minuscole con un asterisco (*) e punti interrogativi (?) come caratteri jolly.
+`nsfRegularExpression`Applica una corrispondenza del nome con distinzione tra maiuscole e minuscole utilizzando asterischi (*) e punti interrogativi (?) come caratteri jolly. Altri caratteri di espressione regolare comuni non sono supportati.
 
-`nsfUndecoratedName` Si applica solo ai simboli che hanno entrambe non decorati e i nomi decorati.
+`nsfUndecoratedName`Si applica solo ai simboli con nomi non decorati e decorati.
 
 ## <a name="remarks"></a>Note
 I valori di questa enumerazione vengono passati ai metodi seguenti:
@@ -65,7 +65,7 @@ I valori di questa enumerazione vengono passati ai metodi seguenti:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisiti
-Intestazione: dia2.h
+Intestazione: dia2. h
 
 ## <a name="see-also"></a>Vedere anche
 - [Enumerazioni e strutture](../../debugger/debug-interface-access/enumerations-and-structures.md)
