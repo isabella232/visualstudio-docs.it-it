@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531535"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605409"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedura: Modificare i tipi di carattere e i colori per l'editor in Visual Studio
 
@@ -50,6 +50,5 @@ Nell'editor del codice è possibile modificare il tipo di carattere predefinito,
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni editor di testo](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Procedura: Modificare i tipi di carattere e i colori in Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

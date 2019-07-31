@@ -1,25 +1,27 @@
 ---
 title: Pagina Pubblica, Progettazione progetti
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968890"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461634"
 ---
 # <a name="publish-page-project-designer"></a>Pagina Pubblica, Progettazione progetti
+
 La pagina **Pubblica** della **Creazione progetti** consente di configurare le proprietà relative alla distribuzione ClickOnce.
 
  Per accedere alla pagina **Pubblica** , selezionare un nodo di progetto in **Esplora soluzioni**, quindi fare clic su **Proprietà** dal menu **Progetto**. In **Progettazione progetti** fare clic sulla scheda **Pubblica** .
@@ -28,13 +30,14 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
 > Alcune delle proprietà ClickOnce descritte possono essere impostate anche nella **Pubblicazione guidata** disponibile nel menu **Compila** oppure facendo clic sul pulsante **Pubblicazione guidata** nella pagina.
 
 ## <a name="uielement-list"></a>Elenco UIElement
+
  **Posizione cartella di pubblicazione**
 
- Specifica il percorso in cui l'applicazione viene pubblicata. Può essere un percorso di unità (`C:\deploy\myapplication`), una condivisione file (`\\server\myapplication`) o un server FTP (`ftp://ftp.microsoft.com/myapplication`). Si noti che il testo deve essere presente nella scheda **Posizione di pubblicazione** perché il pulsante Sfoglia (**...**) funzioni.
+ Specifica il percorso in cui l'applicazione viene pubblicata. Può essere un percorso di unità (`C:\deploy\myapplication`), una condivisione file (`\\server\myapplication`) o un server FTP (`ftp://ftp.microsoft.com/myapplication`). Si noti che il testo deve essere presente nella scheda **Posizione di pubblicazione** perché il pulsante Sfoglia ( **...** ) funzioni.
 
  **URL cartella di installazione**
 
- Facoltativo. Specifica un sito Web a cui gli utenti accedono per installare l'applicazione. Questa operazione è necessaria solo se si tratta di un percorso diverso da **Posizione di pubblicazione**, ad esempio quando l'applicazione viene pubblicata in un server di gestione temporanea.
+ facoltativo. Specifica un sito Web a cui gli utenti accedono per installare l'applicazione. Questa operazione è necessaria solo se si tratta di un percorso diverso da **Posizione di pubblicazione**, ad esempio quando l'applicazione viene pubblicata in un server di gestione temporanea.
 
  **Modalità di installazione e impostazioni**
 
@@ -66,7 +69,7 @@ La pagina **Pubblica** della **Creazione progetti** consente di configurare le p
 
  **Incrementa automaticamente revisione a ogni pubblicazione**
 
- Facoltativo. Quando questa opzione è selezionata (impostazione predefinita), la parte **Revisione** del numero di versione viene incrementata di un'unità ogni volta che viene pubblicata l'applicazione. In questo modo l'applicazione viene pubblicata come aggiornamento.
+ facoltativo. Quando questa opzione è selezionata (impostazione predefinita), la parte **Revisione** del numero di versione viene incrementata di un'unità ogni volta che viene pubblicata l'applicazione. In questo modo l'applicazione viene pubblicata come aggiornamento.
 
  **Pubblicazione guidata**
 

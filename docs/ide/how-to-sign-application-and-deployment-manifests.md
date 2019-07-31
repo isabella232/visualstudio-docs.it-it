@@ -1,6 +1,7 @@
 ---
 title: 'Procedura: Firmare manifesti di applicazione e distribuzione'
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -12,27 +13,27 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946921"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461594"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedura: Firmare manifesti di applicazione e distribuzione
 
 Se si vuole pubblicare un'applicazione tramite la distribuzione ClickOnce, i manifesti dell'applicazione e di distribuzione devono essere firmati con una coppia di chiavi pubblica/privata e tramite la tecnologia Authenticode. È possibile firmare i manifesti con un certificato dall'archivio certificati di Windows o un file di chiave.
 
- Per altre informazioni sulla distribuzione ClickOnce, vedere [ClickOnce security and deployment](../deployment/clickonce-security-and-deployment.md) (Sicurezza e distribuzione ClickOnce).
+Per altre informazioni sulla distribuzione ClickOnce, vedere [ClickOnce security and deployment](../deployment/clickonce-security-and-deployment.md) (Sicurezza e distribuzione ClickOnce).
 
- La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione *exe*. Per altre informazioni, vedere la sezione "Creazione di manifesti non firmati" di questo documento.
+La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su file con estensione *exe*. Per altre informazioni, vedere la sezione "Creazione di manifesti non firmati" di questo documento.
 
- Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Per informazioni sulla creazione dei file di chiave, vedere [Procedura: Creare una coppia di chiavi pubblica/privata](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio supporta solo file di chiave Scambio informazioni personali con estensione *pfx*. È possibile tuttavia selezionare altri tipi di certificati dall'archivio certificati di Windows dell'utente corrente, facendo clic su **Seleziona da archivio** nella pagina **Firma** delle proprietà del progetto.
@@ -84,7 +85,7 @@ La firma dei manifesti ClickOnce è facoltativa per le applicazioni basate su fi
 > [!IMPORTANT]
 > I manifesti non firmati possono semplificare lo sviluppo e test dell'applicazione. I manifesti non firmati tuttavia comportano notevoli rischi di sicurezza in un ambiente di produzione. È consigliabile usare i manifesti non firmati solo se l'applicazione ClickOnce viene eseguita nei computer all'interno di una rete intranet che è completamente isolata da internet o da altre origini di codice dannoso.
 
- Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati, a meno che uno o più file sono esplicitamente esclusi dall'hash creato. In altre parole, la pubblicazione dell'applicazione crea manifesti firmati se tutti i file sono inclusi nell'hash, anche quando la casella di controllo **Firma i manifesti ClickOnce** non è selezionata.
+Per impostazione predefinita, ClickOnce genera automaticamente manifesti firmati, a meno che uno o più file sono esplicitamente esclusi dall'hash creato. In altre parole, la pubblicazione dell'applicazione crea manifesti firmati se tutti i file sono inclusi nell'hash, anche quando la casella di controllo **Firma i manifesti ClickOnce** non è selezionata.
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Per generare manifesti non firmati e includere tutti i file nell'hash creato
 

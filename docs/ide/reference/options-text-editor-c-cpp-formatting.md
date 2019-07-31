@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817617"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461814"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opzioni, Editor di testo, C/C++, Formattazione
 
@@ -29,7 +29,7 @@ Usare queste pagine delle proprietà per modificare il comportamento predefinito
 
 ![Pagine delle proprietà di formattazione di C++](media/cpp-formatting.png)
 
-Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++**, quindi fare clic su **Formattazione**.
+Per accedere a questa pagina, nel riquadro sinistro della finestra di dialogo **Opzioni** espandere **Editor di testo** e **C/C++** , quindi fare clic su **Formattazione**.
 
 > [!NOTE]
 > I nomi o i percorsi visualizzati per alcuni elementi dell'interfaccia utente di Visual Studio nelle istruzioni seguenti potrebbero essere diversi nel computer in uso. La versione di Visual Studio in uso e le impostazioni configurate determinano questi elementi. Per altre informazioni, vedere [Personalizzare l'IDE di Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -56,7 +56,7 @@ la pagina include anche opzioni per la configurazione del supporto di [ClangForm
 
 Il supporto di ClangFormat è abilitato per impostazione predefinita. È possibile scegliere quali di queste convenzioni di formattazione comuni applicare a tutti i progetti: LLVM, Google, Chromium, Mozilla o WebKit. È anche possibile creare un file con estensione clang-format o _clang-format con una definizione di formato personalizzata. Se questo file è presente nella cartella di un progetto, Visual Studio lo usa per formattare tutti i file di codice sorgente contenuti nella cartella e nelle relative sottocartelle.
 
-Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)**.
+Per impostazione predefinita, Visual Studio esegue clangformat.exe in background e applica la formattazione durante la digitazione. È anche possibile specificare di eseguirlo solo per i comandi di formattazione richiamati manualmente **Formatta documento (CTRL+K, CTRL+D)** o **Formatta selezione (CTRL + K, CTRL + F)** .
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Pagine Rientro, Nuove righe, Spaziatura, Ritorno a capo
 

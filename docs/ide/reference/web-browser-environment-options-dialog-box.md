@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788954"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605621"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Finestra di dialogo Opzioni: Ambiente \> Web browser
 
@@ -65,6 +65,5 @@ Selezionare questa opzione per modificare le opzioni di Internet Explorer nella 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
 - [Generale, Ambiente, finestra di dialogo Opzioni](../../ide/reference/general-environment-options-dialog-box.md)
 - [Finestra di progettazione HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

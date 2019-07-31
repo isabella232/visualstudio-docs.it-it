@@ -2,19 +2,19 @@
 title: Frammenti di codice Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581760"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461628"
 ---
 # <a name="visual-c-code-snippets"></a>Frammenti di codice Visual C++
 
@@ -64,7 +64,7 @@ Sarà quindi possibile sostituire il valore 0 con la condizione corretta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Dove posso trovare un elenco completo dei frammenti di codice C++?
 
-È possibile trovare l'elenco completo dei frammenti di codice C++ selezionando **Gestione frammenti di codice** nel menu **Strumenti** e impostando il **Linguaggio** su **Visual C++**. Nella finestra seguente espandere **Visual C++**. Verranno visualizzati i nomi di tutti i frammenti di codice C++ in ordine alfabetico.
+È possibile trovare l'elenco completo dei frammenti di codice C++ selezionando **Gestione frammenti di codice** nel menu **Strumenti** e impostando il **Linguaggio** su **Visual C++** . Nella finestra seguente espandere **Visual C++** . Verranno visualizzati i nomi di tutti i frammenti di codice C++ in ordine alfabetico.
 
 I nomi della maggior parte dei frammenti di codice sono di chiara interpretazione, ma alcuni nomi potrebbero confondere.
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>Frammento distruttore (~)
 
-Il frammento distruttore (**~**) ha un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
+Il frammento distruttore ( **~** ) ha un comportamento diverso in contesti diversi. Se si inserisce questo frammento di codice all'interno di una classe, esso fornisce un distruttore per quella classe. Si consideri, ad esempio, il codice seguente:
 
 ```cpp
 class SomeClass {

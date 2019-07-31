@@ -1,6 +1,7 @@
 ---
 title: Finestra di dialogo Eventi di compilazione (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesBuildEvents
@@ -11,17 +12,17 @@ helpviewer_keywords:
 - Build Events dialog box
 - post-build events
 ms.assetid: 3a81a7c7-39f9-47a8-ba5a-b351227f380e
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1fb6c532016ce37c33766af05fac19eac252c99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb4cd0a46e5ab4cc9c3a9e00773818d536b84891
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791005"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461445"
 ---
 # <a name="build-events-dialog-box-visual-basic"></a>Finestra di dialogo Eventi di compilazione (Visual Basic)
 

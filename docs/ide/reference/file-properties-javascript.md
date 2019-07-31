@@ -1,6 +1,7 @@
 ---
 title: Proprietà file, JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,19 +21,20 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790648"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461836"
 ---
 # <a name="file-properties-javascript"></a>Proprietà file, JavaScript
+
 È possibile usare le proprietà file per indicare le operazioni che il sistema di progetto dovrà eseguire sui file. Ad esempio, è possibile impostare le proprietà file per indicare se un file deve essere aggiunto al pacchetto come file di risorse.
 
  È possibile selezionare qualunque file in Esplora soluzioni ed esaminare, quindi, le relative proprietà nella finestra Proprietà. I file JavaScript hanno quattro proprietà: **Copia nella directory di output**, **Azione pacchetto**, **Nome file** e **Percorso file**.

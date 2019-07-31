@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817923"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461375"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opzioni, Editor di testo, C/C++, Sperimentale
 

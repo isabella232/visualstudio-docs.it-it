@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747770"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493305"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Eseguire unit test con Esplora test
 
@@ -29,7 +29,7 @@ Visual Studio include i framework di unit test Microsoft sia per il codice gesti
 
 Quando si compila il progetto di test, i test vengono visualizzati in Esplora test. Se Esplora test non è visualizzato, scegliere **Test** dal menu di Visual Studio, quindi scegliere **Windows**e infine **Esplora test**.
 
-![Esplora unit test](../test/media/ute_failedpassednotrunsummary.png)
+![Esplora test](../test/media/ute_failedpassednotrunsummary.png)
 
 Quando si eseguono, si scrivono e si rieseguono i test, Esplora test mostra i risultati nei gruppi predefiniti **Test non superati**, **Test superati**, **Test ignorati** e **Test non eseguiti**. È possibile modificare la modalità con cui Esplora test raggruppa i test.
 
@@ -53,7 +53,7 @@ Mentre il test viene eseguito, la barra **Superato/Non superato** nella parte su
 
 ### <a name="run-tests-after-every-build"></a>Eseguire test dopo ogni compilazione
 
-|Button|Description|
+|Button|DESCRIZIONE|
 |-|-|
 |![Esecuzione dopo la compilazione](../test/media/ute_runafterbuild_btn.png)|Per eseguire gli unit test dopo ogni compilazione locale, scegliere **Test** dal menu standard e quindi scegliere **Esegui test dopo compilazione** sulla barra degli strumenti di **Esplora test**.|
 
@@ -100,7 +100,7 @@ Per modificare la modalità di organizzazione dei test, scegliere la freccia riv
 
 ### <a name="test-explorer-groups"></a>Gruppi di Esplora test
 
-|Gruppo|Description|
+|Gruppo|DESCRIZIONE|
 |-|-----------------|
 |**Durata**|Raggruppa i test in base al tempo di esecuzione: **Fast**, **Medium**, e **Slow** (Veloce, Medio e Lento).|
 |**Risultato**|Raggruppa i test in base ai risultati di esecuzione: **Test non superati**, **Test ignorati**, **Test superati**.|
@@ -115,7 +115,7 @@ Una tratto è in genere una coppia nome/valore di una categoria, ma può anche e
 
 Nel framework di unit test Microsoft per le app gestite, una coppia nome/valore di un tratto viene definita in un attributo  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Il framework di test contiene anche i tratti predefiniti seguenti:
 
-|Tratto|Description|
+|Tratto|DESCRIZIONE|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La categoria Owner è definita dal framework di unit test e richiede di specificare un valore di stringa relativo al proprietario.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La categoria Priority è definita dal framework di unit test e richiede di specificare un valore integer relativo alla priorità.|
@@ -145,7 +145,7 @@ Per filtrare in base a un criterio diverso:
 > [!NOTE]
 > Le ricerche non fanno distinzione tra maiuscole e minuscole e consentono di trovare la corrispondenza tra la stringa specificata e qualsiasi parte del valore del criterio.
 
-|Qualificatore|Description|
+|Qualificatore|DESCRIZIONE|
 |-|-----------------|
 |**Tratto**|Cerca le corrispondenze sia nel valore sia nella categoria dei tratti. La sintassi per specificare i valori e le categorie dei tratti è definita dal framework di unit test.|
 |**Progetto**|Cerca le corrispondenze nei nomi dei progetti di test.|
@@ -228,3 +228,4 @@ I test possono essere eseguiti da **Esplora test** facendo clic nell'editor di c
 
 - [Eseguire unit test del codice](../test/unit-test-your-code.md)
 - [Eseguire uno unit test come processo a 64 bit](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Domande frequenti su Esplora test](test-explorer-faq.md)
