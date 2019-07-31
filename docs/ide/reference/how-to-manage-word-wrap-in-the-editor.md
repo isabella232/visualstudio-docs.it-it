@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531609"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605437"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedura: Gestire il ritorno a capo automatico nell'editor
 
@@ -55,5 +55,4 @@ Se si ha familiarità con il ritorno a capo automatico in Notepad++, Sublime Tex
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Editor di testo (finestra di dialogo Opzioni)](../../ide/reference/text-editor-options-dialog-box.md)
 - [Funzionalità dell'editor del codice](../../ide/writing-code-in-the-code-and-text-editor.md)

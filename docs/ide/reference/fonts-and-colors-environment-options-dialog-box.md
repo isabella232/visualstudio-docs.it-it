@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790208"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605424"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Tipi di carattere e colori, Ambiente, finestra di dialogo Opzioni
 
@@ -99,7 +99,7 @@ Elenca gli elementi per cui è possibile modificare il colore di primo piano e s
 
 Alcuni degli elementi visualizzati includono:
 
-|Elemento visualizzato|Description|
+|Elemento visualizzato|DESCRIZIONE|
 |------------------|-----------------|
 |**Testo normale**|Testo nell'editor.|
 |**Testo selezionato**|Testo incluso nella selezione corrente quando l'editor ha lo stato attivo.|
@@ -253,6 +253,5 @@ Visualizza un esempio dello stile, della dimensione e della combinazione colori 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Finestra di dialogo Opzioni ambiente](../../ide/reference/environment-options-dialog-box.md)
 - [Finestra di dialogo Opzioni](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Procedura: Modificare tipi di carattere e colori](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
