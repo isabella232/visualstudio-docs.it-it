@@ -1,5 +1,5 @@
 ---
-title: Visualizzare le informazioni personalizzate utilizzando DebuggerDisplay | Microsoft Docs
+title: Visualizzare informazioni personalizzate con DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929612"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680593"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger gli elementi da visualizzare utilizzando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
-<xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indicare al debugger cosa visualizzare usando l'attributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+<xref:System.Diagnostics.DebuggerDisplayAttribute> controlla la modalità di visualizzazione di un oggetto, una proprietà o un campo nelle finestre delle variabili del debugger. Questo attributo può essere applicato a tipi, delegati, proprietà, campi e assembly. Se applicato a un tipo di base, l'attributo si applica anche a una sottoclasse.
 
 L'attributo `DebuggerDisplay` presenta un solo argomento, costituito da una stringa da visualizzare nella colonna del valore per le istanze del tipo. Questa stringa può contenere parentesi graffe (`{` e `}`). Il testo racchiuso tra due parentesi graffe viene valutato come un campo, una proprietà o un metodo.
 
@@ -32,7 +32,7 @@ La valutazione da parte del debugger di questa chiamata implicita a `ToString()`
 > Se la casella di controllo **Mostra struttura non elaborata degli oggetti nelle finestre delle variabili** è selezionata nella finestra di dialogo **Strumenti / Opzioni / Debug** , l'attributo `DebuggerDisplay` viene ignorato.
 
 > [!NOTE]
-> Per il codice nativo, questo attributo è supportato solo in C++codice /CLI.
+> Per il codice nativo, questo attributo è supportato solo C++nel codice/CLI.
 
 Nella tabella riportata di seguito vengono visualizzati alcuni utilizzi possibili dell'attributo `DebuggerDisplay` e alcuni output di esempio.
 
@@ -90,7 +90,7 @@ public sealed class MyClass
 }
 ```
 
-Il ", nq" suffisso indica l'analizzatore di espressioni per rimuovere le virgolette, la visualizzazione del valore finale (nq non = virgolette).
+Il suffisso ", NQ" indica all'analizzatore di espressioni di rimuovere le virgolette quando viene visualizzato il valore finale (NQ = nessuna virgoletta).
 
 ## <a name="example"></a>Esempio
 Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`, insieme a `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando è visualizzato in una finestra delle variabili del debugger, come la finestra **Espressioni di controllo** , produce un'espansione analoga alla seguente:
@@ -98,7 +98,7 @@ Nell'esempio di codice seguente viene illustrato l'utilizzo di `DebuggerDisplay`
 |**Name**|**Valore**|**Type**|
 |--------------|---------------|--------------|
 |Chiave|"three"|oggetto {string}|
-|Value|3|oggetto {int}|
+|Valore|3|oggetto {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
