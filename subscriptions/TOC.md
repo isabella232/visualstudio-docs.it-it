@@ -62,9 +62,7 @@
 #### [Inventario pre-produzione](admin-inventory.md)
 #### [Gestire team di grandi dimensioni e collaboratori esterni](manage-teams.md)
 #### [Tenere traccia delle assegnazioni degli utenti ed elaborare gli ordini](assignments-orders.md)
-### [Contratti multilicenza](volume-license-admins.md)
 ### Onboarding dell'organizzazione
-#### [Onboarding dopo la migrazione](post-migration-onboarding.md)
 #### [Migrazione dei clienti Open e Open License](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Sottoscrizioni cloud](cloud-admin.md)
