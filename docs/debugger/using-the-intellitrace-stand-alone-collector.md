@@ -1,6 +1,6 @@
 ---
-title: Tramite l'agente di raccolta autonomo IntelliTrace | Microsoft Docs
-ms.date: 11/04/2016
+title: Uso dell'agente di raccolta autonomo IntelliTrace | Microsoft Docs
+ms.date: 07/30/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 1e5219e6e3977be59d89b7835413092f1fbeb200
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746113"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680628"
 ---
-# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Tramite l'agente di raccolta autonomo IntelliTrace (C#, Visual Basic)
+# <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Uso dell'agente di raccolta autonomo IntelliTraceC#(, Visual Basic)
 
 L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati diagnostici di IntelliTrace per le app nei server di produzione o in altri ambienti senza installare Visual Studio nel computer di destinazione e senza cambiare l'ambiente del sistema di destinazione. L'agente di raccolta autonomo IntelliTrace funziona nelle app Web, SharePoint, WPF e Windows Form. Al termine della raccolta dei dati, eliminare semplicemente l'agente di raccolta per disinstallarlo.
 
- IntelliTrace in azione: [Raccogliendo e analizzando dati IntelliTrace in produzione per il debug (video di Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
+ Vedere IntelliTrace in azione: [Raccolta e analisi dei dati IntelliTrace in produzione per il debug (video Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
 > È anche possibile raccogliere gli stessi dati IntelliTrace per le app Web e SharePoint in esecuzione nei computer remoti usando **Microsoft Monitoring Agent** in modalità **Trace** .
 >
-> È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità**Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Visualizzare [uso di Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> È possibile raccogliere gli eventi relativi alle prestazioni nei dati IntelliTrace eseguendo l'agente in modalità **Monitor** . La modalità**Monitor** ha un impatto minore sulle prestazioni rispetto alla modalità **Traccia** o all' **IntelliTraccia stand-alone collector**. Microsoft Monitoring Agent non modifica l'ambiente del sistema di destinazione quando viene installato. Vedere [utilizzo del Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
 > L'agente di raccolta autonomo IntelliTrace non supporta gli snapshot di processo.
 
  **Requisiti**
 
-- .NET Framework 3.5, 4 o 4.5
+- .NET Framework 3,5 o versione successiva
 
 - Visual Studio Enterprise (ma non edizioni Professional o Community) in un computer di sviluppo o in un altro computer per aprire i file .iTrace
 
   > [!NOTE]
-  > Assicurarsi di salvare i file di simboli (PDB). Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Visualizzare [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
+  > Assicurarsi di salvare i file di simboli (PDB). Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
   **FAQ**
 
@@ -52,7 +52,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 ## <a name="WhatApps"></a> Quali app funzionano con l'agente di raccolta?
 
-- App Web ASP.NET ospitate in Internet Information Services (IIS) versione 7.0, 7.5 e 8.0
+- App Web ASP.NET ospitate in Internet Information Services (IIS) versione 7,0, 7,5, 8,0, 12,0 e 16,0
 
 - Applicazioni SharePoint 2010 e SharePoint 2013
 
@@ -80,9 +80,9 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 1. Nel server dell'app creare la directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
-2. Scaricare l'agente di raccolta dall'Area download Microsoft o dalla cartella di installazione di Visual Studio 2013 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
+2. Ottenere l'agente di raccolta dall' [area download Microsoft](https://visualstudio.microsoft.com/downloads/#intellitrace-standalone-collector-for-visual-studio-2019), [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=intellitrace%20standalone%20collector%20visual%20studio%202017)o dalla cartella di installazione di Visual Studio 2013 Update 3. [Agente di raccolta IntelliTrace per Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
-   - **Area download Microsoft**:
+   - **Area download Microsoft** o **My.VisualStudio.com**:
 
      1. Accanto a **IntelliTraceCollector.exe**, scegliere **carica**.
 
@@ -94,9 +94,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
    - **Cartella di installazione di Visual Studio**:
 
-     1. Copiare IntelliTraceCollection.cab dalla seguente cartella:
+     1. Copiare IntelliTracecollection. cab dalla cartella in cui è installato l'agente di raccolta, ad esempio:
 
-          **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **.. \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace**
+
+          oppure, per le versioni precedenti di Visual Studio:
+
+          **.. \Microsoft Visual Studio 12.0 \ Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
      2. Inserire IntelliTraceCollection.cab nella directory dell'agente di raccolta, ad esempio: **C:\IntelliTraceCollector**
 
@@ -234,7 +238,7 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
 2. Riprodurre il problema.
 
-3. Per creare un checkpoint del file. iTrace, usare questa sintassi:
+3. Per creare un checkpoint del file con estensione iTrace, usare questa sintassi:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
@@ -275,16 +279,16 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Aprire il file .iTrace in Visual Studio Enterprise
 
 > [!NOTE]
-> Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Visualizzare [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
+> Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
 1. Spostare il file .iTrace o copiarlo in un computer con Visual Studio Enterprise (ma non edizioni Professional o Community).
 
 2. Fare doppio clic sul file .iTrace all'esterno di Visual Studio oppure aprire il file da Visual Studio.
 
-     Visual Studio visualizza la pagina **Riepilogo di IntelliTrace** . Nella maggior parte delle sezioni è possibile esaminare gli eventi o altri elementi, scegliere un elemento e avviare il debug con IntelliTrace nel punto e nell'ora in cui si è verificato l'evento. Visualizzare [tramite dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
+     Visual Studio visualizza la pagina **Riepilogo di IntelliTrace** . Nella maggior parte delle sezioni è possibile esaminare gli eventi o altri elementi, scegliere un elemento e avviare il debug con IntelliTrace nel punto e nell'ora in cui si è verificato l'evento. Vedere [uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    > Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli nel computer di sviluppo. Visualizzare [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
+    > Per eseguire il debug con IntelliTrace ed eseguire il codice seguendo un'istruzione alla volta sono necessari i file di origine corrispondenti e i file di simboli nel computer di sviluppo. Vedere [diagnosticare i problemi dopo la distribuzione](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Come è possibile ottenere il maggior numero possibile di dati senza rallentare l'applicazione?
  IntelliTrace può raccogliere grandi quantità di dati: l'impatto sulle prestazioni dell'app dipende dai dati raccolti da IntelliTrace e dal tipo di codice analizzato. Vedere [Ottimizzazione della raccolta IntelliTrace nei server di produzione](http://go.microsoft.com/fwlink/?LinkId=255233).
@@ -371,13 +375,13 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
 
    Il tipo `Employee` ha i seguenti attributi: `Id`, `Name`e `HomeAddress`. Esiste una relazione di associazione tra `Employee` e il tipo `Address` .
 
-   ![Relazione tra dipendente e indirizzo](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
+   ![Relazione tra Employee e Address](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
    L'agente di raccolta registra i valori per `id`, `Employee.Id`, `Employee.Name` e l'oggetto `Employee` restituito dal metodo `AlterEmployee` . Tuttavia, l'agente di raccolta non registra le informazioni sull'oggetto `Address` , tranne quelle relative allo stato null o non null. L'agente di raccolta non registra neanche i dati relativi alle variabili locali nel metodo `AlterEmployee` a meno che altri metodi non usino tali variabili come parametri; in questo caso, vengono registrate come parametri del metodo.
 
 ## <a name="WhereElse"></a> In quali altre posizioni è possibile ottenere i dati IntelliTrace?
 
-È possibile ottenere i dati di IntelliTrace da una di IntelliTrace in Visual Studio Enterprise sessione di debug. Visualizzare [funzionalità IntelliTrace](../debugger/intellitrace-features.md).
+È possibile ottenere dati IntelliTrace da una sessione di debug IntelliTrace in Visual Studio Enterprise. Vedere [funzionalità di IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Dove è possibile ottenere altre informazioni?
  [Uso dei dati di IntelliTrace salvati](../debugger/using-saved-intellitrace-data.md)
@@ -397,4 +401,4 @@ L' **agente di raccolta autonomo IntelliTrace** consente di raccogliere i dati d
  [Debugger di Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
 ### <a name="videos"></a>Video
- [Video di Channel 9: La raccolta e analisi dei dati IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
+ [Video di Channel 9: Raccolta e analisi dei dati IntelliTrace](http://go.microsoft.com/fwlink/?LinkID=251851)
