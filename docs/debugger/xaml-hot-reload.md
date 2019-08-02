@@ -1,6 +1,6 @@
 ---
-title: Scrivere ed eseguire il debug di XAML tramite Ricarica hot XAML
-description: Ricaricare XAML a caldo o XAML, modifica e continuazione, consente di apportare modifiche al codice XAML durante l'esecuzione delle App
+title: Scrivere ed eseguire il debug di XAML usando il ricaricamento a caldo di XAML
+description: Il ricaricamento a caldo di XAML o la modifica e la continuazione di XAML consente di apportare modifiche al codice XAML durante l'esecuzione delle app
 ms.custom: ''
 ms.date: 02/28/2019
 ms.topic: conceptual
@@ -12,49 +12,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462150"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711218"
 ---
-# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrittura e debug del codice XAML in esecuzione con ricaricamento a caldo di XAML in Visual Studio
+# <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Scrivere ed eseguire il debug del codice XAML in esecuzione con il ricaricamento a caldo di XAML in Visual Studio
 
-Visual Studio XAML hot ricaricare consente di compilare l'app WPF o UWP dell'interfaccia utente, consentendo di apportare modifiche al codice XAML durante l'esecuzione dell'app. Questa funzionalità consente di compilare e testare il codice XAML con il vantaggio del contesto dati dell'app in esecuzione, lo stato di autenticazione e altre complessità del mondo reale che è difficile da simulare in fase di progettazione in modo incrementale.
+Il ricaricamento a caldo di XAML di Visual Studio consente di compilare l'interfaccia utente dell'app WPF o UWP consentendo di apportare modifiche al codice XAML durante l'esecuzione dell'app. Questa funzionalità consente di compilare e testare in modo incrementale il codice XAML con il vantaggio del contesto dei dati dell'app in esecuzione, dello stato di autenticazione e di altre complessità reali che è difficile simulare in fase di progettazione.
 
-Ricarica hot XAML risulta particolarmente utile in questi scenari:
+Il ricaricamento a caldo di XAML è particolarmente utile in questi scenari:
 
-* Risoluzione dei problemi dell'interfaccia utente disponibili nel codice XAML dopo che l'app è stato avviato in modalità di debug.
+* Correzione dei problemi dell'interfaccia utente rilevati nel codice XAML dopo l'avvio dell'app in modalità di debug.
 
-* La creazione di un nuovo componente dell'interfaccia utente per un'app che è in fase di sviluppo, sfruttando al contesto di runtime dell'app.
+* Creazione di un nuovo componente dell'interfaccia utente per un'app in fase di sviluppo, sfruttando al contempo il contesto di runtime dell'app.
 
-|Tipi di applicazioni supportate|Sistema operativo e strumenti|
+|Tipi di applicazioni supportati|Sistema operativo e strumenti|
 |-|-|-|
 |Windows Presentation Foundation (WPF) |.NET Framework 4.6+</br>Windows 7 e versioni successive |
-|App di Windows universale (UWP)|Windows 10 e versioni successive, con la [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
+|App di Windows universale (UWP)|Windows 10 e versioni successive, con [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Ricarica attivo di Visual Studio XAML è attualmente supportata solo quando si esegue l'applicazione in Visual Studio con il debugger collegato (**F5** oppure **Avvia debug**). Non è possibile abilitare questa esperienza utilizzando *Connetti a processo*.
+> Il ricaricamento a caldo in XAML di Visual Studio è attualmente supportato solo quando si esegue l'applicazione in Visual Studio con il debugger collegato (**F5** o **Avvia debug**). Non è possibile abilitare questa esperienza utilizzando *Connetti a processo*.
 
 ## <a name="known-limitations"></a>Limitazioni note
 
-Di seguito sono noti limitazioni di XAML a caldo ricarica. Per risolvere qualsiasi limitazione che si verifica, solamente l'arresto del debugger e quindi completare l'operazione.
+Di seguito sono riportate le limitazioni note del ricaricamento a caldo di XAML. Per aggirare le limitazioni che si verificano, arrestare il debugger, quindi completare l'operazione.
 
 |Limitazione|WPF|UWP|Note|
 |-|-|-|-|
-|Collegare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportato|Errore, vedere: *Verificare l'evento non è riuscita*|
-|Creazione di oggetti di risorse in un dizionario risorse, ad esempio quelli nella pagina o finestra dell'app o *App*|Non supportato|Supportato|Esempio: aggiunta di un ```SolidColorBrush``` in un dizionario risorse per l'utilizzo come un ```StaticResource```.</br>Nota: Risorse statiche, convertitori di tipi di stile e altri elementi scritti in un dizionario risorse possono essere applicato o utilizzato durante l'utilizzo di ricaricamento a caldo di XAML. Non è supportata solo la creazione della risorsa.</br> La modifica del dizionario risorse ```Source``` proprietà.| 
-|Aggiunta di nuovi controlli, le classi, windows o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|nessuno|
-|La gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|nessuno|
-|Modifica data binding, che usa l'estensione di markup {X:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non è supportato in Visual Studio 2017 o versioni precedenti|
+|Cablare gli eventi ai controlli durante l'esecuzione dell'app|Non supportato|Non supportate|Vedere errore: *Verifica evento non riuscita*|
+|Creazione di oggetti risorsa in un dizionario risorse, ad esempio quelli nella pagina/finestra o nel file *app. XAML* dell'app.|Non supportato|Supportato|Esempio: aggiunta di ```SolidColorBrush``` un oggetto a un dizionario risorse da utilizzare ```StaticResource```come.</br>Nota: È possibile applicare/utilizzare risorse statiche, convertitori di stile e altri elementi scritti in un dizionario risorse durante l'utilizzo del ricaricamento a caldo di XAML. Solo la creazione della risorsa non è supportata.</br> Modifica della proprietà del ```Source``` dizionario risorse.| 
+|Aggiunta di nuovi controlli, classi, finestre o altri file al progetto durante l'esecuzione dell'app|Non supportato|Non supportato|Nessuna|
+|Gestione dei pacchetti NuGet (aggiunta/rimozione/aggiornamento di pacchetti)|Non supportato|Non supportato|Nessuna|
+|Modifica data binding che usa l'estensione di markup {x:Bind}|N/D|Supportato in Visual Studio 2019 e versioni successive|Non supportato in Visual Studio 2017 o versioni precedenti|
 
-## <a name="error-messages"></a>Messaggi di errore
+## <a name="error-messages"></a>messaggi di errore
 
-È possibile imbattersi nei seguenti errori durante l'utilizzo di ricaricamento a caldo di XAML.
+È possibile che si verifichino gli errori seguenti durante l'utilizzo del ricaricamento a caldo di XAML.
 
 |Messaggio di errore|Descrizione|
 |-|-|-|
-|Verificare l'evento non è riuscita|Errore indica che si sta tentando di collegare un evento a uno dei controlli, che non è supportato durante l'esecuzione dell'applicazione.|
-|La funzionalità Modifica e continuazione di XAML non ha trovato elementi da aggiornare.|Errore si verifica quando si sta modificando XAML che a caldo ricaricare non è possibile aggiornare nell'app.</br> Questo errore può essere talvolta risolto usando l'app in esecuzione per passare a una vista in cui viene usato il XAML.</br> In alcuni casi, questo errore indica che la modifica specifica non può essere applicata finché non si riavvia la sessione di debug. |
-|Questa modifica non è supportata durante una sessione di debug.|Errore indica che la modifica desiderata non è supportata dal ricaricamento a caldo di XAML. Arrestare la sessione di debug, apportare la modifica e quindi riavviare la sessione di debug.|
+|Verifica evento non riuscita|Errore indica che si sta tentando di collegare un evento a uno dei controlli, che non è supportato mentre l'applicazione è in esecuzione.|
+|La funzionalità Modifica e continuazione di XAML non ha trovato elementi da aggiornare.|Si verifica un errore durante la modifica del codice XAML che non è possibile aggiornare nell'app.</br> Questo errore può talvolta essere risolto usando l'app in esecuzione per passare a una visualizzazione in cui viene usato il codice XAML.</br> In alcuni casi, questo errore indica che non è possibile applicare la modifica specifica fino a quando non si riavvia la sessione di debug. |
+|Questa modifica non è supportata durante una sessione di debug.|Errore indica che la modifica che si sta tentando di eseguire non è supportata dal ricaricamento a caldo di XAML. Arrestare la sessione di debug, apportare la modifica e quindi riavviare la sessione di debug.|
