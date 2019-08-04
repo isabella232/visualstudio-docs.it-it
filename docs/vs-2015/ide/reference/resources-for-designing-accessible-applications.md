@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 35e84dc3ae817ab3c5346d83fc5f37934a34e0f9
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65689581"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740169"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Risorse per la progettazione di applicazioni accessibili
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,21 +36,21 @@ Usare i collegamenti seguenti per trovare informazioni sulle tecnologie che supp
   
 ## <a name="windows-applications"></a>Applicazioni Windows  
   
-- [Procedura dettagliata: Creazione di un'applicazione basata su Windows accessibile](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) in questo argomento vengono fornite istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo Certified per Windows in un'applicazione Windows di esempio.  
+- [Procedura dettagliata: Creazione di un'applicazione](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) basata su Windows accessibile in questo argomento vengono fornite istruzioni dettagliate per includere i cinque requisiti di accessibilità per il logo Certified for Windows in un'applicazione Windows di esempio.  
   
-- **Guidelines for Keyboard User Interface Design** (Linee guida per la progettazione dell'interfaccia utente) In questo articolo tecnico viene illustrato come progettare un'interfaccia utente per un'applicazione Windows che gli utenti possono usare con la tastiera. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
+- [Guidelines for Keyboard User Interface Design](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design) (Linee guida per la progettazione dell'interfaccia utente) In questo articolo tecnico viene illustrato come progettare un'interfaccia utente per un'applicazione Windows che gli utenti possono usare con la tastiera.  
   
-- **Console Accessibility** (Accessibilità alla console) In questo articolo tecnico vengono descritti gli eventi e le API usati per esporre la console in Windows XP per gli strumenti di accessibilità. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
+- [Console Accessibility](/previous-versions/windows/desktop/dnacc/console-accessibility) (Accessibilità alla console) In questo articolo tecnico vengono descritti gli eventi e le API usati per esporre la console in Windows XP per gli strumenti di accessibilità. 
   
-## <a name="web-sites"></a>Siti Web  
+## <a name="web-sites"></a>Microsoft Azure  
   
-- [Procedura dettagliata: Linee guida di accessibilità per l'utilizzo di controlli immagine, i controlli Menu e AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) in questo argomento vengono fornite istruzioni dettagliate per includere i controlli di accessibilità in una pagina Web di esempio, nonché alcuni suggerimenti sulla progettazione di accessibilità per il Web.  
+- [Procedura dettagliata: Linee guida sull'accessibilità per l'utilizzo di controlli immagine, controlli](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) menu e AutoPostBack in questo argomento vengono fornite istruzioni dettagliate per includere i controlli accessibili in una pagina Web di esempio, nonché alcuni suggerimenti sulla progettazione dell'accessibilità per il Web.  
   
-- **Making Web Pages More Accessible** (Rendere le pagine Web più accessibili) In questo articolo sono elencati gli elementi HTML 3.2 accessibili e quelli che possono essere resi accessibili per l'uso nello sviluppo di siti Web. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
+- [Making Web Pages More Accessible](/previous-versions/windows/desktop/dnacc/making-web-pages-more-accessible) (Rendere le pagine Web più accessibili) In questo articolo sono elencati gli elementi HTML 3.2 accessibili e quelli che possono essere resi accessibili per l'uso nello sviluppo di siti Web. 
   
-- **Creating Accessible Web Pages with DHTML** (Creazione di pagine Web accessibili con DHTML) In questo articolo sono elencati gli elementi HTML 4.0 accessibili oltre a suggerimenti sulla progettazione Web accessibile. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
+- [Creating Accessible Web Pages with DHTML](/previous-versions//ms528445(v=vs.85)) (Creazione di pagine Web accessibili con DHTML) In questo articolo sono elencati gli elementi HTML 4.0 accessibili oltre a suggerimenti sulla progettazione Web accessibile. 
   
-- **Text Alternatives to Inaccessible Web Pages** (Alternative testuali alle pagine Web inaccessibili) In questo articolo tecnico viene illustrato come usare XML e XSLT per consentire più visualizzazioni della stessa pagina Web, ad esempio versioni di solo testo. Per altre informazioni, vedere [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+- [Text Alternatives to Inaccessible Web Pages](/previous-versions/windows/desktop/dnacc/text-alternatives-to-inaccessible-web-pages) (Alternative testuali alle pagine Web inaccessibili) In questo articolo tecnico viene illustrato come usare XML e XSLT per consentire più visualizzazioni della stessa pagina Web, ad esempio versioni di solo testo. 
   
 ### <a name="third-party-resources"></a>Risorse di terze parti  
   
